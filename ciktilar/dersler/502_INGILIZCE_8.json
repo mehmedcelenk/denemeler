@@ -1,0 +1,233 @@
+[
+  {
+    "id": 298,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "Sam : Can - - - -? Joey : There’s a bottle in the fridge. You can take it.",
+    "secenekler": {
+      "A": "I have the menu",
+      "B": "I have a glass of water",
+      "C": "you help me to make a cake",
+      "D": "you tell me the way to the kitchen"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 299,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Adam : There are lots of words that I don’t know their meanings in the paragraph. I need to - - - -. Leo : You can use Internet to find the meanings of the words.",
+    "secenekler": {
+      "A": "use a dictionary",
+      "B": "find my glasses",
+      "C": "donate my old books",
+      "D": "win the scholarship"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 300,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Bob was driving back home when he - - - - out of petrol.",
+    "secenekler": {
+      "A": "will run",
+      "B": "has run",
+      "C": "ran",
+      "D": "runs"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 301,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "When Jack went to the job - - - -, the manager asked him questions about the jobs he had before.",
+    "secenekler": {
+      "A": "advertisement",
+      "B": "complaint",
+      "C": "announcement",
+      "D": "interview"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 302,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "Peter : What can we do to protect the nature? Helen : We can - - - -.",
+    "secenekler": {
+      "A": "pollute the air and water",
+      "B": "increase the global warming",
+      "C": "use alternative energy sources",
+      "D": "stop using public transportation"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 303,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "William : - - - -? Claire : Virtual reality glasses and drone cameras.",
+    "secenekler": {
+      "A": "Do you have any rules about using technology",
+      "B": "Do you think technology helps us communicate with others",
+      "C": "How often do you use technological devices",
+      "D": "What kind of technological devices do you use"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 304,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "I don’t prefer using social media because it - - - -.",
+    "secenekler": {
+      "A": "wastes my time and energy",
+      "B": "makes communication faster and easier",
+      "C": "is more useful than to speak face to face",
+      "D": "is the best way to keep in touch with my friends"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 305,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "Good manners are important for everyone in society since it - - - -.",
+    "secenekler": {
+      "A": "leads to loneliness and stress",
+      "B": "helps people to develop social relations",
+      "C": "brings dishonesty and regrets in life",
+      "D": "serves no purpose in communication"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 306,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "I am really keen on learning about different cultures. I wish I - - - -.",
+    "secenekler": {
+      "A": "spent all my time at home",
+      "B": "went to the seaside with my family",
+      "C": "stayed under the sun for a long time",
+      "D": "travelled other countries more often"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 28,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 307,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "I’ve bought the smartphone at almost half-price - - - - it has high quality and remarkable features.",
+    "secenekler": {
+      "A": "although",
+      "B": "since",
+      "C": "otherwise",
+      "D": "as a result"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 308,
+    "ders_kodu": 502,
+    "ders": "İNGİLİZCE – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "- - - - is provided by the sun. It is an alternative energy source. It can produce electricity to houses, towns and cities.",
+    "secenekler": {
+      "A": "Climate change",
+      "B": "Solar power",
+      "C": "Air pollution",
+      "D": "Global warming"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  }
+]

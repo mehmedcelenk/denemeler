@@ -1,0 +1,233 @@
+[
+  {
+    "id": 166,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "Donald : What do you think about your future career? William : I haven’t decided yet, but I am interested in medicine. Donald : So, you can be a/an - - - -.",
+    "secenekler": {
+      "A": "alternative energy consultant",
+      "B": "smart-building technician",
+      "C": "bio-genetic engineer",
+      "D": "agricultural manager"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 16,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 167,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Bill Gates was - - - - and competitive so he reached his goals.",
+    "secenekler": {
+      "A": "ambitious",
+      "B": "pessimistic",
+      "C": "unconfident",
+      "D": "unpractical"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 16,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 168,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Joe is good at - - - - things such as broken toys and gadgets.",
+    "secenekler": {
+      "A": "planting",
+      "B": "baking",
+      "C": "knitting",
+      "D": "fixing"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 16,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 169,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "In the past, people used to use candles at home because - - - -.",
+    "secenekler": {
+      "A": "they didn’t have running water",
+      "B": "there wasn’t any electricity",
+      "C": "there weren’t mobile phones",
+      "D": "they didn’t have vacuum cleaners"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 16,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 170,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "Peter used to do sports to - - - -.",
+    "secenekler": {
+      "A": "speak foreign languages",
+      "B": "play a musical instrument",
+      "C": "see well",
+      "D": "keep fit"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 16,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 171,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "Ted was really hungry yesterday because he hadn’t eaten anything - - - - breakfast.",
+    "secenekler": {
+      "A": "ever",
+      "B": "yet",
+      "C": "since",
+      "D": "already"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 16,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 172,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "Sally Ride was really interested in space so she - - - - to become an astronaut.",
+    "secenekler": {
+      "A": "completed the flight training",
+      "B": "started to take the pictures of nature",
+      "C": "made researches in the field of handicrafts",
+      "D": "built many structures like mosques and bridges"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 16,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 173,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "When I checked my cell phone, I saw that Emma - - - - me twice.",
+    "secenekler": {
+      "A": "was calling",
+      "B": "will call",
+      "C": "had called",
+      "D": "calls"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 16,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 174,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "I wouldn’t have had the accident if I had - - - -.",
+    "secenekler": {
+      "A": "got a ticket for the concert",
+      "B": "driven more carefully",
+      "C": "missed the flight",
+      "D": "lifted a heavy box"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 175,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "Jack : My brother didn’t help me to study for my exams so I failed. Emma : If only - - - -.",
+    "secenekler": {
+      "A": "you had failed the exams",
+      "B": "you had helped your brother",
+      "C": "he had studied more for the exams",
+      "D": "he had helped you to pass the exams"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 176,
+    "ders_kodu": 244,
+    "ders": "İNGİLİZCE – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "• Jessica is afraid of being under water. • She is bad at board games and baking things. • She likes adventure in nature. Bu cümlelere göre, aşağıdakilerden hangisi Jessica için en uygun aktivitedir?",
+    "secenekler": {
+      "A": "Mountain climbing",
+      "B": "Playing chess",
+      "C": "Scuba-diving",
+      "D": "Cooking"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  }
+]

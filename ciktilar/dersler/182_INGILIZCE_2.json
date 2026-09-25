@@ -1,0 +1,233 @@
+[
+  {
+    "id": 639,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 1,
+    "soru": "Emma : Hello, - - - -? Waitress : For how many people, madam? Emma : For two. Waitress : This way, please. Here you are.",
+    "secenekler": {
+      "A": "what do you want to order",
+      "B": "do you have any free tables",
+      "C": "how would you like your steak",
+      "D": "do you take credit cards"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 640,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 2,
+    "soru": "Rebecca : How do French people dress? Emily : They - - - -.",
+    "secenekler": {
+      "A": "wear fashionable clothes",
+      "B": "are famous for Eiffel Tower",
+      "C": "celebrate Christmas and Easter",
+      "D": "are the centre of architecture"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 641,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 3,
+    "soru": "“- - - -” means more or less than a number or amount.",
+    "secenekler": {
+      "A": "Exactly",
+      "B": "Absolutely",
+      "C": "Approximately",
+      "D": "Properly"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 642,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 4,
+    "soru": "Chichen Itza is the second most - - - - archaeological site of Mexico today. Many people around the world come to see this historic place every year.",
+    "secenekler": {
+      "A": "located",
+      "B": "spent",
+      "C": "built",
+      "D": "visited"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 643,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 5,
+    "soru": "Thomas : What is the matter with you? Meg : I have got a flu. Thomas : You should - - - -.",
+    "secenekler": {
+      "A": "catch an infection",
+      "B": "go to the dermatologist",
+      "C": "drink lemon and mint tea",
+      "D": "have an emergency drill"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 644,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 6,
+    "soru": "When you see an accident, you must - - - -.",
+    "secenekler": {
+      "A": "call 112 immediately",
+      "B": "prepare a survival kit",
+      "C": "take a shelter under a table",
+      "D": "stay close to the ground"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 645,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 7,
+    "soru": "Donald moved to a new house and he had a - - - - to celebrate it with his friends.",
+    "secenekler": {
+      "A": "wedding ceremony",
+      "B": "housewarming party",
+      "C": "graduation party",
+      "D": "baby shower"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 646,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 8,
+    "soru": "Mike went to market to buy some food and drinks, but he forgot the - - - - at home so he could buy some of them.",
+    "secenekler": {
+      "A": "fun fair ticket",
+      "B": "invitation card",
+      "C": "shopping list",
+      "D": "sales slip"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 647,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 9,
+    "soru": "Julia : - - - -? Brad : I prefer watching TV only at weekends.",
+    "secenekler": {
+      "A": "What do you think about the educational side of TV",
+      "B": "What kind of programmes do you watch",
+      "C": "Do you have favourite programmes",
+      "D": "Do you watch TV every day"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 648,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 10,
+    "soru": "We shouldn’t - - - - all the news available on the Net. Some people create false content and serve it to the Net.",
+    "secenekler": {
+      "A": "rely on",
+      "B": "take off",
+      "C": "break out",
+      "D": "participate in"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 649,
+    "ders_kodu": 182,
+    "ders": "İNGİLİZCE – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 11,
+    "soru": "Janice : Where did you grow up? Sue : - - - -.",
+    "secenekler": {
+      "A": "From high school",
+      "B": "In a small village",
+      "C": "During 1990",
+      "D": "By plane"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  }
+]

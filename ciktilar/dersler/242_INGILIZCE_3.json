@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1222,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 1,
+    "soru": "Alice : - - - -? Betsy : In a flat with my sister.",
+    "secenekler": {
+      "A": "What is your favorite subject",
+      "B": "Where is your school",
+      "C": "Where do you stay",
+      "D": "What do you do"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1223,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 2,
+    "soru": "I like drawing pictures and I - - - - so I want to be a famous artist.",
+    "secenekler": {
+      "A": "am gifted in it",
+      "B": "am not interested in it",
+      "C": "think it is a tiring activity",
+      "D": "don’t want to spend my time on it"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1224,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 3,
+    "soru": "Nicole : How long is the trip? Michael : - - - -.",
+    "secenekler": {
+      "A": "With my business partner",
+      "B": "In the city centre",
+      "C": "For five days",
+      "D": "To London"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1225,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 4,
+    "soru": "Frank has a busy weekend plan. He - - - - next Saturday and Sunday.",
+    "secenekler": {
+      "A": "had dinner with his clients",
+      "B": "is going to attend a conference",
+      "C": "was meeting the regional sales manager",
+      "D": "takes the children to the swimming pool"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1226,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 5,
+    "soru": "Yesterday morning, I had a cup of dark coffee while I - - - - my favorite biscuits.",
+    "secenekler": {
+      "A": "eat",
+      "B": "will eat",
+      "C": "am eating",
+      "D": "was eating"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1227,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 6,
+    "soru": "In the past, people used to write and - - - - letters to communicate but now they use mobile phones.",
+    "secenekler": {
+      "A": "send",
+      "B": "visit",
+      "C": "bury",
+      "D": "ride"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1228,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 7,
+    "soru": "Teacher : - - - -? Sam : In İstanbul.",
+    "secenekler": {
+      "A": "When was Atatürk born",
+      "B": "What was Atatürk’s favorite book",
+      "C": "How old was Atatürk when he died",
+      "D": "Where was Atatürk’s military academy"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1229,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 8,
+    "soru": "Murat : - - - - when you were a child? Grandfather : Beştaş, çelik çomak, yüzük or kemik.",
+    "secenekler": {
+      "A": "How did you use to go to school",
+      "B": "What games did you use to play",
+      "C": "How did you use to get the news",
+      "D": "What type of music did you use to listen"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1230,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 9,
+    "soru": "Travel Agent : - - - -? John : I like seeing interesting buildings and landmarks of a country. Travel Agent : Sightseeing holiday is the best for you.",
+    "secenekler": {
+      "A": "What do you like doing on your holiday",
+      "B": "What is your favorite tourist attraction",
+      "C": "Which country do you want to visit most",
+      "D": "When would you like to travel"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1231,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 10,
+    "soru": "Ölüdeniz has the most beautiful scenery I - - - -.",
+    "secenekler": {
+      "A": "saw",
+      "B": "will see",
+      "C": "would see",
+      "D": "have ever seen"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1232,
+    "ders_kodu": 242,
+    "ders": "İNGİLİZCE – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 11,
+    "soru": "Your grandparents went to İstanbul last month, - - - - they?",
+    "secenekler": {
+      "A": "don’t",
+      "B": "didn’t",
+      "C": "haven’t",
+      "D": "won’t"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  }
+]

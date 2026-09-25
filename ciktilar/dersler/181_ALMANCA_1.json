@@ -1,0 +1,233 @@
+[
+  {
+    "id": 122,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "Das sind - - - - Stifte. (sie)",
+    "secenekler": {
+      "A": "seine",
+      "B": "deine",
+      "C": "meine",
+      "D": "ihre"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 123,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Annette malt gerne. Sie geht in die - - - -.",
+    "secenekler": {
+      "A": "Tanz-AG",
+      "B": "Kunst-AG",
+      "C": "Schwimm-AG",
+      "D": "Musik-AG"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 124,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Mein Vater ist 50 Jahre alt und meine Mutter 45. Meine Mutter ist - - - - als mein Vater.",
+    "secenekler": {
+      "A": "älter",
+      "B": "alt",
+      "C": "jünger",
+      "D": "jung"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 125,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "Das sind unsere Großeltern. - - - - Opa ist 70 Jahre alt. - - - - Oma ist 68 Jahre alt.",
+    "secenekler": {
+      "A": "Meine / Meiner",
+      "B": "Unser / Unsere",
+      "C": "Seine / Seinen",
+      "D": "Dir / Deine"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 126,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "A: Können wir heute Fußball spielen, Klaus? B: Nein, heute ist es zu spät. Wir können aber - - - - (Gelecek hafta) spielen.",
+    "secenekler": {
+      "A": "nächste Woche",
+      "B": "morgen Nachmittag",
+      "C": "diese Woche",
+      "D": "heute Nachmittag"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 127,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "A: Tschüs, Frau Aksoy. B: - - - -, Hüseyin. Bu diyalogda boş bırakılan yere aşağıdakilerden hangisi getirilemez?",
+    "secenekler": {
+      "A": "Bis bald",
+      "B": "Auf Wiedersehen",
+      "C": "Guten Tag",
+      "D": "Alles Gute"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 128,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "“Nationalität” sözcüğünün Türkçe karşılığı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Yaş",
+      "B": "İsim",
+      "C": "Dil",
+      "D": "Uyruk"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 129,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "Ich komme aus Ankara. Ich bin am 20.06.2005 in Ankara geboren. Ich wohne in Ankara, in der Hoşdere Strasse. Meine Telefonnummer ist 09352708635. Welche Information ist nicht angegeben?",
+    "secenekler": {
+      "A": "Name",
+      "B": "Geburtsdatum",
+      "C": "Geburtsort",
+      "D": "Handynummer"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 130,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "Welcher Tag ist am Wochenende?",
+    "secenekler": {
+      "A": "Donnerstag",
+      "B": "Mittwoch",
+      "C": "Sonntag",
+      "D": "Montag"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 131,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "Okul ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "In der Mensa können wir mittags essen und Pause machen.",
+      "B": "Im Direktorenzimmer können wir Experimente durchführen.",
+      "C": "Im Sprachlabor können wir Fremdsprachen lernen.",
+      "D": "In der Bibliothek können wir lesen und Bücher ausleihen."
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 132,
+    "ders_kodu": 181,
+    "ders": "ALMANCA – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "Heidi Müller ist sechsundvierzig Jahre alt. Sie ist Englischlehrerin. Sie spricht Deutsch, Englisch und Französisch. Sie hat zwei Kinder. Buna göre, aşağıdakilerden hangisine ulaşılamaz?",
+    "secenekler": {
+      "A": "Sie hat zwei Geschwister.",
+      "B": "Sie spricht drei Sprachen.",
+      "C": "Sie ist eine Lehrerin.",
+      "D": "Sie ist 46."
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1233,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 1,
+    "soru": "Die Menschen haben - - - - Kopf, - - - - Nase und zwei Füße.",
+    "secenekler": {
+      "A": "einen / eine",
+      "B": "eine / eine",
+      "C": "ein / ein",
+      "D": "einen / ein"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1234,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 2,
+    "soru": "A: Du bist krank. Was sollst du machen? B: Ich soll  - - - -.",
+    "secenekler": {
+      "A": "nicht zum Arzt gehen",
+      "B": "viel arbeiten",
+      "C": "mich ausruhen",
+      "D": "Kuchen essen"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1235,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 3,
+    "soru": "45 Euro 90 Euro 75 Euro Das Kleid ist - - - - als der Rock, aber - - - - als die Schuhe.",
+    "secenekler": {
+      "A": "teurer / billiger",
+      "B": "teuer / billig",
+      "C": "billigste / teuerste",
+      "D": "billig / teurer"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1236,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 4,
+    "soru": "Die Schuhe - - - - mir nicht, aber das blaue Hemd - - - - mir sehr.",
+    "secenekler": {
+      "A": "gefällt / gefällt",
+      "B": "gefallen / gefällt",
+      "C": "gefallen / gefallen",
+      "D": "gefällt / gefallen"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1237,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 5,
+    "soru": "A: - - - - schenkt der Lehrer einen Roman? B: Er schenkt es mir.",
+    "secenekler": {
+      "A": "Wem",
+      "B": "Wer",
+      "C": "Was",
+      "D": "Wie"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1238,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 6,
+    "soru": "A: - - - - Kleid gefällt dir? B: - - - - Rote hier.",
+    "secenekler": {
+      "A": "Welche / Der",
+      "B": "Welchen / Den",
+      "C": "Welcher / Die",
+      "D": "Welches / Das"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1239,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 7,
+    "soru": "Der Bus nach Marmaris fährt gleich los. Wir müssen uns - - - -.",
+    "secenekler": {
+      "A": "ankommen",
+      "B": "gefahren",
+      "C": "beeilen",
+      "D": "eingestiegen"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1240,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 8,
+    "soru": "“dunkel” sıfatının zıt anlamlısı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "eng",
+      "B": "hell",
+      "C": "bequem",
+      "D": "gemütlich"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1241,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 9,
+    "soru": "Ich bin Andreas. Ich wohne in einer großen Wohnung. Sie hat ein Wohnzimmer, ein Bad, drei Schlafzimmer und eine Küche. In meiner Wohnung gibt es auch ein Balkon und eine Garage. Das Wohnzimmer ist groß. Ich frühstücke meistens in der Küche, aber wenn das Wetter schön ist, frühstücke ich auf dem Balkon. Wie viele Zimmer gibt es in der Wohnung von Andreas?",
+    "secenekler": {
+      "A": "zwei",
+      "B": "drei",
+      "C": "vier",
+      "D": "fünf"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1242,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 10,
+    "soru": "Batuhan braucht neue Sportschuhe. Kaan sagt ihm: „Im Sportladen habe ich gestern tolle Sportschuhe gesehen. Batuhan möchte in den Sportladen gehen. Welche Frage kann Batuhan nach diesem Text nicht stellen?",
+    "secenekler": {
+      "A": "Was kosten die Schuhe?",
+      "B": "Wo macht Kaan Sport?",
+      "C": "Ist es ein großer Laden?",
+      "D": "Was gibt es in dem Sportladen?"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1243,
+    "ders_kodu": 242,
+    "ders": "ALMANCA – 3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 11,
+    "soru": "Was macht Şenay?",
+    "secenekler": {
+      "A": "Kitesurfen",
+      "B": "Klettern",
+      "C": "Fahrrad fahren",
+      "D": "Tauchen"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  }
+]

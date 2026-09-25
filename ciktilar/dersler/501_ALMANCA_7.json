@@ -1,0 +1,233 @@
+[
+  {
+    "id": 903,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 1,
+    "soru": "A: - - - - ißt du am Tag? B: Morgens, mittags und abends. Also dreimal am Tag.",
+    "secenekler": {
+      "A": "Wie viel",
+      "B": "Wie oft",
+      "C": "Warum",
+      "D": "Womit"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 904,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 2,
+    "soru": "A: - - - - Küche aus der Welt würdest du probieren? B: Ich würde gerne die italienische Küche probieren.",
+    "secenekler": {
+      "A": "Welcher",
+      "B": "Welches",
+      "C": "Welchem",
+      "D": "Welche"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 905,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 3,
+    "soru": "A: Wo findet die Party statt? B: - - - -.",
+    "secenekler": {
+      "A": "Im Restaurant",
+      "B": "Um 18 Uhr",
+      "C": "Mit Freunden",
+      "D": "Ohne Musik"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 906,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 4,
+    "soru": "A: Was hat der Gastgeber zum Essen - - - -? B: Mantı, Suppe und Salat.",
+    "secenekler": {
+      "A": "kaufen",
+      "B": "vorbereitet",
+      "C": "eingeladen",
+      "D": "kochen"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 907,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 5,
+    "soru": "Der Flug aus Berlin hat eine Stunde - - - -. (Gecikme)",
+    "secenekler": {
+      "A": "Verspätung",
+      "B": "Durchsage",
+      "C": "Anweisung",
+      "D": "Aufruf"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 908,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 6,
+    "soru": "Es ist ein Unfall passiert. Der Fahrer stellt den - - - - auf, um die anderen Fahrer zu warnen.",
+    "secenekler": {
+      "A": "Tankstelle",
+      "B": "Krankenhaus",
+      "C": "Kraftstoff",
+      "D": "Warndreieck"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 909,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 7,
+    "soru": "A: Kann mir - - - - helfen? B: Ja, gerne.",
+    "secenekler": {
+      "A": "jemand",
+      "B": "wer",
+      "C": "alle",
+      "D": "viele"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 910,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 8,
+    "soru": "Welches ist ein kaltes Gericht?",
+    "secenekler": {
+      "A": "Lahmacun",
+      "B": "Linsensuppe",
+      "C": "Grüner Salat",
+      "D": "Döner Kebap"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 911,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 9,
+    "soru": "Bu görseldeki ok işareti ile aşağıdakilerden hangisi anlatılmak istenmiştir?",
+    "secenekler": {
+      "A": "Bis zur Ampel fahren",
+      "B": "Umkehren",
+      "C": "Geradeaus fahren",
+      "D": "Nach links abbiegen"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 912,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi sıfat değildir?",
+    "secenekler": {
+      "A": "gefährlich",
+      "B": "fröhlich",
+      "C": "aufstehen",
+      "D": "lustig"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 913,
+    "ders_kodu": 501,
+    "ders": "ALMANCA – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 11,
+    "soru": "Bu ilanda, aşağıdakilerden hangisine yer verilmemiştir?",
+    "secenekler": {
+      "A": "Es ist ein Deutschkurs.",
+      "B": "Es ist für das Wintersemester.",
+      "C": "Es ist teuer.",
+      "D": "Man lernt Land und Leute kennen."
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 35,
+    "kontrol_gerekli": false
+  }
+]

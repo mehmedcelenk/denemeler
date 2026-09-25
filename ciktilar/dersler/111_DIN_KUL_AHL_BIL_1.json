@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "“Heveslerini tanrılaştıran kimseyi gördün mü?..” (Furkân suresi, 43. ayet) Bu ayette aşağıdaki tutum ve davranışlardan hangisi eleştirilmektedir?",
+    "secenekler": {
+      "A": "Bayağı arzulara uymak",
+      "B": "Körü körüne bağlanmak",
+      "C": "Öğrenmeye kapalı olmak",
+      "D": "Zan ile hareket etmek"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 2,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "I. Kur’an-ı Kerim mütevatir yolla günümüze ulaşmıştır. II. İlham, doğru bilgi edinme yollarından biridir. III. Salim duyular aldığı verileri akla aktarır. Numaralanmış bilgiler doğru (D) ya da yanlış (Y) olarak değerlendirildiğinde sıralama aşağıdakilerden hangisi olur? II III I",
+    "secenekler": {
+      "A": "D Y Y",
+      "B": "Y D Y",
+      "C": "D Y D",
+      "D": "D D Y"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 3,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Yaratılışı ve hayatı sadece akıl ve duyular ile anlamlandırmak insanı tatmin etmez. Bu nedenle akılla elde edilemeyen, duyuların ötesindeki bilgilere ancak doğru haber yoluyla ulaşılabilir. Bu metinde “doğru haber” ifadesi ile kastedilen aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Keşif",
+      "B": "Rüya",
+      "C": "Sezgi",
+      "D": "Vahiy"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 4,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "Bilim ve teknolojinin insanlığa faydası olduğu gibi zararı da bulunmaktadır. Bilginin elde edilmesi, kullanılması, uygulanması ve başkalarına aktarılması, kendine özgü birtakım ilke ve değerler içermelidir. Bu metinde asıl anlatılmak istenen aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Bilgi ahlakı",
+      "B": "Bilgiyi sevmek",
+      "C": "Bilgiyi paylaşmak",
+      "D": "Bilginin muhafazası"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 5,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "“... Müminler, sadece Allah’a dayanıp güvensinler.” (Teğâbun suresi, 13. ayet) Bu ayette aşağıdakilerden hangisi vurgulanmaktadır?",
+    "secenekler": {
+      "A": "Tevekkül",
+      "B": "Hidayet",
+      "C": "Adalet",
+      "D": "İnfak"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 6,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "“Bedeviler ‘İnandık.’ dediler. De ki: Siz iman etmediniz ama ‘Boyun eğdik.’ deyin. Henüz iman kalplerinize yerleşmedi…” (Hucurât suresi, 14. ayet) Bu ayette imanla ilgili aşağıdakilerden hangisi vurgulanmaktadır?",
+    "secenekler": {
+      "A": "Bilgi ile olan ilişkisi",
+      "B": "İkrarın yeterliliği",
+      "C": "Tasdike dayalı olması",
+      "D": "İnsanı huzura kavuşturması"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 7,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "“Kul bir hata işlerse kalbine siyah bir nokta konur. Şayet o, günahtan vazgeçer, tövbe edip Allah’a dönerse kalbi arınır. Eğer bunları yapmaz, günah ve hataya devam ederse siyah nokta büyür ve neticede bütün kalbini kaplar. Allah’ın, ‘Yaptıkları yüzünden kalpleri pas tutmuştur.’ diye anlattığı pas işte budur.” Bu hadiste “iman” ile aşağıdakilerden hangisi arasındaki ilişkiye değinilmiştir?",
+    "secenekler": {
+      "A": "Bilgi",
+      "B": "İkrar",
+      "C": "Tasdik",
+      "D": "Amel"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 8,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "“Allah sadece samimiyetle ve kendi rızası gözetilerek yapılan amelleri kabul eder.” Bu hadis ibadetlerin hangi yönüyle ilgilidir?",
+    "secenekler": {
+      "A": "Şekli",
+      "B": "İlkeleri",
+      "C": "Zamanı",
+      "D": "Faydaları"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 9,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "• “… Bilesiniz ki kalpler ancak Allah’ı anmakla huzur bulur.” (Ra’d suresi, 28. ayet) • “İnsanın başına bir sıkıntı gelince Rabb’ine yönelerek O’na yalvarır...” (Zümer suresi, 8. ayet) Bu ayetlerde “din” ile ilgili aşağıdakilerden hangisi vurgulanmaktadır?",
+    "secenekler": {
+      "A": "Ahlaki kurallar bütünüdür.",
+      "B": "Toplumu birleştiren bir unsurdur.",
+      "C": "Tarihin her döneminde vardır.",
+      "D": "İnsan ile Allah arasında irtibat yoludur."
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 10,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi ibadet kapsamında değerlendirilemez?",
+    "secenekler": {
+      "A": "İhtiyaç sahiplerine yardım etmek",
+      "B": "Giyimde gösterişi tercih etmek",
+      "C": "İnsanlara güzel örnek olmak",
+      "D": "Kötülükten uzak durmak"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 11,
+    "ders_kodu": 111,
+    "ders": "DİN KÜL. AHL. BİL. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "“Onların ne etleri ne de kanları Allah’a ulaşır; fakat sizin Allah’ın emirlerine olan bağlılığınız ona ulaşır...” (Hac suresi, 37. ayet) Bu ayetten aşağıdakilerden hangisine ulaşılamaz?",
+    "secenekler": {
+      "A": "Allah’a gönülden itaat edilmesi gerektiğine",
+      "B": "İbadetlerin Allah rızası için yapılmasının önemine",
+      "C": "Davranışlarda riyadan kaçınmak gerektiğine",
+      "D": "Kurban edilen hayvanlara merhametle yaklaşmanın önemine"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "id": 727,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 1,
+    "soru": "Der Fluss Rhein fließt - - - - die Stadt Köln.",
+    "secenekler": {
+      "A": "ins",
+      "B": "auf",
+      "C": "durch",
+      "D": "nach"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 728,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 2,
+    "soru": "Viele Touristen - - - - jedes Jahr den Kölner Dom.",
+    "secenekler": {
+      "A": "verbringt",
+      "B": "gesehen",
+      "C": "besucht",
+      "D": "besichtigen"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 729,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 3,
+    "soru": "Die Bibliothek ist im - - - - Stockwerk.",
+    "secenekler": {
+      "A": "einer",
+      "B": "zweiten",
+      "C": "vierte",
+      "D": "drei"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 730,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 4,
+    "soru": "Ich - - - - jeden Tag mit meinem Hund durch den Park.",
+    "secenekler": {
+      "A": "geht",
+      "B": "laufe",
+      "C": "mache",
+      "D": "kommt"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 731,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 5,
+    "soru": "A: Wie lange dauert die Stadtrundfahrt? B: - - - -.",
+    "secenekler": {
+      "A": "Sie ist zwanzig Jahre alt",
+      "B": "Es ist 13:00 Uhr",
+      "C": "Um zwei Uhr",
+      "D": "Zwei Stunden"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 732,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 6,
+    "soru": "Obst und Gemüse - - - - viele Vitamine.",
+    "secenekler": {
+      "A": "enthalten",
+      "B": "braucht",
+      "C": "essen",
+      "D": "schmeckt"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 733,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 7,
+    "soru": "A: - - - - möchtest du deine Eltern zum Frühstück einladen? B: Am Sonntag um zehn Uhr.",
+    "secenekler": {
+      "A": "Wen",
+      "B": "Wohin",
+      "C": "Warum",
+      "D": "Wann"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 734,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 8,
+    "soru": "Welches ist keine Himmelsrichtung?",
+    "secenekler": {
+      "A": "Wolken",
+      "B": "Norden",
+      "C": "Osten",
+      "D": "Westen"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 21,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 735,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 9,
+    "soru": "Aşağıdakilerden hangisi ayrılabilen fiildir?",
+    "secenekler": {
+      "A": "gehören",
+      "B": "bekommen",
+      "C": "aussteigen",
+      "D": "verbringen"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 21,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 736,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 10,
+    "soru": "Paul ist in einem Restaurant. Er isst kein Fleisch. Was kann er sich aus der Speisekarte bestellen?",
+    "secenekler": {
+      "A": "Spaghetti mit Käse.",
+      "B": "Hähnhen mit Zwibeln.",
+      "C": "Fisch mit Tomatensoße.",
+      "D": "Rindfleisch."
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 21,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 737,
+    "ders_kodu": 243,
+    "ders": "ALMANCA – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 11,
+    "soru": "Sie heißt Aylin. Sie ist eine Sportlerin. Sie muss gesund essen und viel Wasser trinken. Morgens isst sie Joghurt mit Obst. Zum Mittag isst sie Fisch mit Salat und abends isst sie nur Suppe. Welche Information nach dem Text ist falsch?",
+    "secenekler": {
+      "A": "Sie macht Sport.",
+      "B": "Sie isst morgens Joghurt mit Obst.",
+      "C": "Sie muss wenig Wasser trinken.",
+      "D": "Zum Abend isst sie nur Suppe."
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 21,
+    "kontrol_gerekli": false
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "id": 111,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "Carol : Where are you from? Emma : I am from - - - -.",
+    "secenekler": {
+      "A": "Russia",
+      "B": "German",
+      "C": "French",
+      "D": "Japanese"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 112,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Alice : Is this your book? Tim : No, - - - -.",
+    "secenekler": {
+      "A": "the book is mine",
+      "B": "I buy a book every week",
+      "C": "my book is at home",
+      "D": "I like reading books"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 113,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Ted likes going to theatre at weekends. It is his favorite - - - -.",
+    "secenekler": {
+      "A": "movie type",
+      "B": "martial art",
+      "C": "extreme sport",
+      "D": "leisure time activity"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 114,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "Donald : L et’s go and get a cup of coffee. Chasey : Why not? - - - -.",
+    "secenekler": {
+      "A": "It isn’t my thing",
+      "B": "It sounds great",
+      "C": "I hate drinking coffee",
+      "D": "There is no need"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 115,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "I - - - - go online because I dislike spending much time on the Internet.",
+    "secenekler": {
+      "A": "always",
+      "B": "often",
+      "C": "usually",
+      "D": "rarely"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 116,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "Amelia : Hi, Lily! What - - - -? Lily : I am studying for my English exam now.",
+    "secenekler": {
+      "A": "do you like doing",
+      "B": "are your plans",
+      "C": "are you doing",
+      "D": "do you do"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 117,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "Burcu wants to go to the Spanish course because she can’t - - - -.",
+    "secenekler": {
+      "A": "speak a foreign language",
+      "B": "swim well",
+      "C": "play the piano",
+      "D": "draw a picture"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 118,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "Lucy : Who is the most popular celebrity in Hollywood? Leo : I think Jack Nicholson because he is a born star. Lucy : Exactly! I - - - -.",
+    "secenekler": {
+      "A": "am not sure about that",
+      "B": "do not think so",
+      "C": "think vice versa",
+      "D": "totally agree"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 119,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "Sarah : How can I get to the cinema? Thomas : - - - -.",
+    "secenekler": {
+      "A": "The film starts at 9 p.m",
+      "B": "It is my favourite activity",
+      "C": "Take the first left, it is on your right",
+      "D": "There are five movies this weekend 10-11. sorularda görsele ve tabloya göre boş bırakılan yere/yerlere uygun gelen kelime ya da ifadeyi işaretleyiniz."
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 120,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "This picture means you mustn’t - - - -.",
+    "secenekler": {
+      "A": "waste water",
+      "B": "cut down trees",
+      "C": "hunt out of season",
+      "D": "recycle paper or plastic"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 121,
+    "ders_kodu": 181,
+    "ders": "İNGİLİZCE – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "AREA 1.539 square İSTANBUL kilometres 789 square NEW YORK kilometres İstanbul is - - - - than New York.",
+    "secenekler": {
+      "A": "larger",
+      "B": "faster",
+      "C": "cleaner",
+      "D": "colder"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  }
+]

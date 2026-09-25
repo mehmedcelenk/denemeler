@@ -1,0 +1,233 @@
+[
+  {
+    "id": 716,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 1,
+    "soru": "Lucy : Can you - - - -, please? Charles : Sure. What do you need? Lucy : Bread and milk.",
+    "secenekler": {
+      "A": "wash the car",
+      "B": "mop the floor",
+      "C": "take out the garbage",
+      "D": "do the grocery shopping"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 19,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 717,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 2,
+    "soru": "If parents don’t want their children to have problems in their lives, they should - - - -.",
+    "secenekler": {
+      "A": "make comparison between their children",
+      "B": "ridicule their children’s career ideas",
+      "C": "respect to their children’s decisions",
+      "D": "complicate their children’s lifestyle"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 19,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 718,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 3,
+    "soru": "Penny : Your stuffed dolma is delicious. Can you tell me how to cook it? Serap : Wait a minute, - - - -. Penny : OK. Thank you.",
+    "secenekler": {
+      "A": "I will give you the recipe",
+      "B": "it is a traditional dish",
+      "C": "I want to learn how to prepare it",
+      "D": "it is famous in Turkish cuisine"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 19,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 719,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 4,
+    "soru": "Simon : I have an Internet connection problem. I won’t be able to use the Internet today! Judy : You don’t have to use Internet for every activity. How about - - - -?",
+    "secenekler": {
+      "A": "playing online games",
+      "B": "meeting your friends",
+      "C": "checking your e-mails",
+      "D": "reading some blogs"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 19,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 720,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 5,
+    "soru": "Susan wore her new shoes - - - - she bought in Paris.",
+    "secenekler": {
+      "A": "who",
+      "B": "why",
+      "C": "where",
+      "D": "which"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 19,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 721,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 6,
+    "soru": "My sister lives far away from me. I wish she - - - - closer.",
+    "secenekler": {
+      "A": "lives",
+      "B": "lived",
+      "C": "had lived",
+      "D": "will live"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 722,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 7,
+    "soru": "Helen : When I talk to you, you watch TV and don’t listen to me. It annoys me. I wish you - - - -. Thomas : OK. I am sorry. It won’t happen again.",
+    "secenekler": {
+      "A": "stopped watching TV while I am talking to you",
+      "B": "watched the new programme which I liked very much",
+      "C": "talked about the programme that you are watching",
+      "D": "watched the famous talk show tonight"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 723,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 8,
+    "soru": "Emma : I need new clothes. How about - - - -? Robin : OK. Let’s buy new clothes for you.",
+    "secenekler": {
+      "A": "staying at home",
+      "B": "paying the bills",
+      "C": "going shopping",
+      "D": "eating out"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 724,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 9,
+    "soru": "Winter is - - - - season of the year in Türkiye.",
+    "secenekler": {
+      "A": "the coldest",
+      "B": "so cold",
+      "C": "colder",
+      "D": "cold"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 725,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 10,
+    "soru": "The Internet makes people’s lives easier. For example, it - - - -.",
+    "secenekler": {
+      "A": "leads people to become an Internet addict",
+      "B": "causes people waste a lot of time in front of computers",
+      "C": "helps people to research everything in minutes",
+      "D": "makes people more aggressive with violent games"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 726,
+    "ders_kodu": 243,
+    "ders": "İNGİLİZCE – 4",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 11,
+    "soru": "Chinese New Year is celebrated on the 23rd day of the 12th lunar month of the Chinese calendar in China. If you want to see the colorful decorations and a fascinating celebration, you can join it. Bu metinde aşağıdaki sorulardan hangisinin cevabı yoktur?",
+    "secenekler": {
+      "A": "What is the name of the festival?",
+      "B": "When is the festival celebrated?",
+      "C": "Where is the festival celebrated?",
+      "D": "What is eaten in the festival?"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 20,
+    "kontrol_gerekli": false
+  }
+]

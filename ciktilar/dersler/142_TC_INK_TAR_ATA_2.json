@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1134,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 1,
+    "soru": "Türkiye aşağıdaki devletlerden hangisi ile “kıta sahanlığı sorunu” yaşamaktadır?",
+    "secenekler": {
+      "A": "Yunanistan",
+      "B": "Bulgaristan",
+      "C": "Romanya",
+      "D": "Rusya"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1135,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 2,
+    "soru": "İkinci Dünya Savaşı’nda Müttefik Devletlerin, “Almanya’ya kabul ettirilecek barış şartlarını ve kendi nüfuz bölgelerini” belirledikleri konferans aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "San Remo",
+      "B": "Potsdam",
+      "C": "Moskova",
+      "D": "San Francisco"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1136,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 3,
+    "soru": "Aşağıdakilerden hangisi II. Dünya Savaşı’na Mihver Devletler grubunda katılmıştır?",
+    "secenekler": {
+      "A": "İtalya",
+      "B": "Fransa",
+      "C": "İngiltere",
+      "D": "SSCB"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1137,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 4,
+    "soru": "Aşağıdakilerden hangisi II. Dünya Savaşı’nda Müttefik Devletler tarafından gerçekleştirilmiştir?",
+    "secenekler": {
+      "A": "Pearl Harbor Baskını",
+      "B": "Barbarossa Harekâtı",
+      "C": "Stalingrad Kuşatması",
+      "D": "Normandiya Çıkarması"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1138,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 5,
+    "soru": "Aşağıdakilerden hangisi II. Dünya Savaşı’nın sonuçlarından değildir?",
+    "secenekler": {
+      "A": "Soğuk Savaş Dönemi’nin başlaması",
+      "B": "Nürnberg Mahkemelerinin kurulması",
+      "C": "Nazizm ideolojisinin güç kazanması",
+      "D": "Birleşmiş Milletler Teşkilatının kurulması"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1139,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 6,
+    "soru": "Aşağıdakilerden hangisi SSCB liderliğinde kurulan Doğu Bloku’nun oluşum süreci ile ilgili gelişmelerden değildir?",
+    "secenekler": {
+      "A": "Comecon’un kurulması",
+      "B": "Cominform’un kurulması",
+      "C": "Molotof Planı’nın yayımlanması",
+      "D": "Truman Doktrini’nin yayımlanması"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1140,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 7,
+    "soru": "Celal Bayar, Adnan Menderes, Refik Koraltan ve Fuat Köprülü tarafından kurulan siyasi parti aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Demokrat Parti",
+      "B": "Millî Kalkınma Partisi",
+      "C": "Türkiye İşçi ve Çiftçi Partisi",
+      "D": "Cumhuriyetçi Millet Partisi"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1141,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 8,
+    "soru": "Aşağıdakilerden hangisi II. Dünya Savaşı’ndan sonra Türkiye’de kültürel alanda yapılan çalışmalardandır?",
+    "secenekler": {
+      "A": "Sağlık Bakanlığının kurulması",
+      "B": "Devlet Tiyatroları Genel Müdürlüğünün kurulması",
+      "C": "Kamu İktisadi Teşekküllerinin kurulması",
+      "D": "İş Bankasının kurulması"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1142,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 9,
+    "soru": "Aşağıdakilerden hangisi İran-Irak Savaşı’nda tarafsız kalan devletlerdendir?",
+    "secenekler": {
+      "A": "Libya",
+      "B": "Suriye",
+      "C": "Türkiye",
+      "D": "Suudi Arabistan"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1143,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 10,
+    "soru": "Naim Süleymanoğlu’nun Türkiye’yi olimpiyatlarda temsil ettiği spor dalı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Halter",
+      "B": "Güreş",
+      "C": "Atletizm",
+      "D": "Boks"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1144,
+    "ders_kodu": 142,
+    "ders": "T.C. İNK. TAR. ATA. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 11,
+    "soru": "Nobel Kimya Ödülü’nü alan ilk Türk bilim insanı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Oktay Sinanoğlu",
+      "B": "Gazi Yaşargil",
+      "C": "Aziz Sancar",
+      "D": "Fuat Sezgin"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false
+  }
+]

@@ -1,0 +1,13 @@
+# Büyük PDF Arşivleri
+kaynak_pdfler/
+arsiv/
+scratch/
+
+# Python derleme ve önbellek
+__pycache__/
+*.pyc
+*.pyo
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db

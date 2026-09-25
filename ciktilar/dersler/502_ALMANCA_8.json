@@ -1,0 +1,233 @@
+[
+  {
+    "id": 309,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "Sie müssen den Schalter der Kamera auf “on” - - - -.",
+    "secenekler": {
+      "A": "überprüft",
+      "B": "gelegt",
+      "C": "gestellt",
+      "D": "stellen"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 310,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "A: Woher kommst du, Hakan? B: Ich komme aus der Post. Ich habe meinem Freund einen Brief - - - -.",
+    "secenekler": {
+      "A": "ausfüllen",
+      "B": "geschickt",
+      "C": "abgeben",
+      "D": "schreiben"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 311,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Früher haben die Menschen als - - - - Briefe geschrieben.",
+    "secenekler": {
+      "A": "telegrafieren",
+      "B": "Transport",
+      "C": "transportieren",
+      "D": "Kommunikationsmittel"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 312,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "Heutzutage ist es - - - - ohne Kommunikationsmittel zu leben. (İmkânsız)",
+    "secenekler": {
+      "A": "unmodern",
+      "B": "unerlaubt",
+      "C": "unmöglich",
+      "D": "unnötig"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 313,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "A: Hast du für dein Haus viel Geld - - - -? B: Ja, sehr viel.",
+    "secenekler": {
+      "A": "begegnet",
+      "B": "ausgegeben",
+      "C": "bezahlen",
+      "D": "bereiten"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 314,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "A: - - - - würdest du kein Geld ausgeben? B: Für teure Handys.",
+    "secenekler": {
+      "A": "Wofür",
+      "B": "Womit",
+      "C": "Woher",
+      "D": "Wohin"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 315,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "A: Ist dein Vater - - - - mit seinem Beruf? B: Ja, er mag seinen Beruf sehr.",
+    "secenekler": {
+      "A": "empfehlen",
+      "B": "mögen",
+      "C": "liebt",
+      "D": "zufrieden"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 316,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "Wenn ich reich wäre, - - - - ich mir eine große Villa kaufen.",
+    "secenekler": {
+      "A": "würde",
+      "B": "würdet",
+      "C": "würden",
+      "D": "würdest"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 317,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "Wenn das Wetter kühler - - - -, könnten die Kinder draußen spielen.",
+    "secenekler": {
+      "A": "würde",
+      "B": "wenn",
+      "C": "wäre",
+      "D": "hätte"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 318,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "“Display” sözcüğünün Türkçe karşılığı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Kulaklık",
+      "B": "Ekran",
+      "C": "Şarj aleti",
+      "D": "Hafıza kartı"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 319,
+    "ders_kodu": 502,
+    "ders": "ALMANCA – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "DIE POST Bu görseli, aşağıdakilerden hangisi doğru ifade etmektedir?",
+    "secenekler": {
+      "A": "Der Mann gibt das Paket bei der Post ab.",
+      "B": "Der Mann klebt den Paketschein auf das Paket.",
+      "C": "Der Mann legt die Geschenke ins Paket.",
+      "D": "Der Mann füllt den Paketschein aus."
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 29,
+    "kontrol_gerekli": false
+  }
+]

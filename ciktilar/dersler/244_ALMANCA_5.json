@@ -1,0 +1,233 @@
+[
+  {
+    "id": 177,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "Das - - - - des Pergamon Museums ist 1930. (Açılış yılı)",
+    "secenekler": {
+      "A": "Stadtteil",
+      "B": "Eröffnungsjahr",
+      "C": "Wahrzeichen",
+      "D": "Alter"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 178,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Sonja und Anja wollen in den Urlaub fahren. Sie haben schon ihre Koffer - - - -.",
+    "secenekler": {
+      "A": "angekommen",
+      "B": "angezogen",
+      "C": "eingestiegen",
+      "D": "eingepackt"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 179,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "A: Wovon erzählt Özlem? B: Sie erzählt von ihrer Reise, die sie - - - - Afrika gemacht hat.",
+    "secenekler": {
+      "A": "beim",
+      "B": "nach",
+      "C": "vom",
+      "D": "bei"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 180,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "A: - - - - müssen die Hausbewohner wöchentlich die Treppen reinigen? B: Zweimal die Woche.",
+    "secenekler": {
+      "A": "Wie oft",
+      "B": "Warum",
+      "C": "Womit",
+      "D": "Wie lange"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 181,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "A: Wie viel Kaution muss man für die Wohnung - - - -. B: 800 Euro.",
+    "secenekler": {
+      "A": "kosten",
+      "B": "bezahlt",
+      "C": "bezahlen",
+      "D": "gekostet"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 182,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "A: Was macht der Mann? B: Er steckt den Hausschlüssel - - - - Schloss.",
+    "secenekler": {
+      "A": "an der",
+      "B": "in das",
+      "C": "auf die",
+      "D": "unter die"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 183,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "A: Was macht der Schüler? B: Er legt seine Brille - - - - Bücher.",
+    "secenekler": {
+      "A": "auf die",
+      "B": "in das",
+      "C": "neben dem",
+      "D": "an der"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 184,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "Naim Süleymanoğlu und Halil Mutlu haben dreimal hintereinander beim Gewichtheben goldene Medaillen - - - -.",
+    "secenekler": {
+      "A": "gewinnt",
+      "B": "gewinnen",
+      "C": "gewinne",
+      "D": "gewonnen"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 185,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "Markus konnte diese Woche keine Tore - - - -.",
+    "secenekler": {
+      "A": "bleiben",
+      "B": "gewinnen",
+      "C": "schießen",
+      "D": "heben"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 17,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 186,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "Wir haben für eine Woche eine Reise nach Antalya geplant. Wir wollen schwimmen. Bu parçada, aşağıdaki sorulardan hangisinin cevabı yoktur?",
+    "secenekler": {
+      "A": "Wohin habt ihr eine Reise geplant?",
+      "B": "Wie lange dauert die Reise?",
+      "C": "Was wollt ihr machen?",
+      "D": "Wann habt ihr die Reise geplant?"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 187,
+    "ders_kodu": 244,
+    "ders": "ALMANCA – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "Welche Sportarten sind das?",
+    "secenekler": {
+      "A": "Rad fahren / Volleyball spielen",
+      "B": "Eislaufen / Fußball spielen",
+      "C": "Rudern / Fußball spielen",
+      "D": "Fechten / Volleyball spielen"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 18,
+    "kontrol_gerekli": false
+  }
+]

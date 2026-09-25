@@ -1,0 +1,233 @@
+[
+  {
+    "id": 650,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 1,
+    "soru": "Am Samstag bin ich im Supermarkt einkaufen gegangen und alles hat 120 Euro - - - -.",
+    "secenekler": {
+      "A": "bezahlt",
+      "B": "kosten",
+      "C": "magst",
+      "D": "gekostet"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 651,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 2,
+    "soru": "A: Welcher Monat ist im Frühling? B: Der Monat - - - -.",
+    "secenekler": {
+      "A": "März",
+      "B": "September",
+      "C": "Juli",
+      "D": "Januar"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 652,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 3,
+    "soru": "Meine Geschwister und ich wollen ein Geschenk für unseren Vater kaufen. Wir wollen ihm eine - - - - machen.",
+    "secenekler": {
+      "A": "Feiertag",
+      "B": "Traum",
+      "C": "Fest",
+      "D": "Überaschung"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 653,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 4,
+    "soru": "Man darf nicht im Park grillen. Grillen ist - - - -.",
+    "secenekler": {
+      "A": "telefoniert",
+      "B": "verboten",
+      "C": "fotografiert",
+      "D": "verkaufen"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 654,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 5,
+    "soru": "Ich heiße Murat und bin 16 Jahre alt. In den Ferien war ich in Berlin bei meinem Onkel. Berlin ist die Hauptstadt von Deutschland. Ich war vom 1. August bis zum 15. August dort. Wir haben mit meinem Onkel viele Sehenswürdigkeiten besichtigt. Berlin hat mir sehr gefallen. Wann war Murat in Berlin?",
+    "secenekler": {
+      "A": "Im Frühling.",
+      "B": "Im Sommer.",
+      "C": "Im Herbst.",
+      "D": "Im Winter."
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 655,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 6,
+    "soru": "Wir feiern Hülyas Geburtstag. Die Party ist am 10. Juni, in der Schillerstraße 14, um 18 Uhr. Bu parçada hangi sorunun cevabı yoktur?",
+    "secenekler": {
+      "A": "Was feiern sie?",
+      "B": "Wo feiern sie?",
+      "C": "Wann ist die Party?",
+      "D": "Wer kommt zur Party?"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 656,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 7,
+    "soru": "Welche Freizeitaktivität kann man nicht alleine machen?",
+    "secenekler": {
+      "A": "Rad fahren",
+      "B": "Musik hören",
+      "C": "Tischtennis spielen",
+      "D": "Wandern"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 657,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 8,
+    "soru": "Bu görsele göre, aşağıdakilerin hangisinde duygular doğru sıralanmıştır?",
+    "secenekler": {
+      "A": "lustig / traurig / ärgerlich",
+      "B": "traurig / ärgerlich / lustig",
+      "C": "ärgerlich / lustig / traurig",
+      "D": "traurig / lustig / ärgerlich"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 13,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 658,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 9,
+    "soru": "„7,38 Euro“ nun Almanca karşılığı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "achtunddreißig Euro sieben Cent",
+      "B": "sieben Euro dreiundachtzig Cent",
+      "C": "sieben Euro achtunddreißig Cent",
+      "D": "dreiundachtzig Euro siebzig Cent"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 14,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 659,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 10,
+    "soru": "Welches Obst fehlt im Bild?",
+    "secenekler": {
+      "A": "Zitrone",
+      "B": "Apfel",
+      "C": "Kirsche",
+      "D": "Banane"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 14,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 660,
+    "ders_kodu": 182,
+    "ders": "ALMANCA – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 11,
+    "soru": "Wo kann man keine Lebensmittel kaufen?",
+    "secenekler": {
+      "A": "Apotheke",
+      "B": "Metzgerei",
+      "C": "Supermarkt",
+      "D": "Gemüseladen"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 14,
+    "kontrol_gerekli": false
+  }
+]

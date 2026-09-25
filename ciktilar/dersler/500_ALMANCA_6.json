@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1387,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 1,
+    "soru": "Aysun will Ärztin werden, - - - - studiert sie Medizin.",
+    "secenekler": {
+      "A": "wenn",
+      "B": "deshalb",
+      "C": "darüber",
+      "D": "weil"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 33,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1388,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 2,
+    "soru": "A: Seit wann studiert dein Bruder an dieser Universität? B: Er ist noch neu. Er hat  - - - - einem Monat angefangen.",
+    "secenekler": {
+      "A": "vor",
+      "B": "an",
+      "C": "von",
+      "D": "am"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 33,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1389,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 3,
+    "soru": "A: Was schenkst du deiner Mutter und deinem Vater? B: Ich schenke meiner Mutter - - - - Halskette und meinem Vater - - - - Pullover.",
+    "secenekler": {
+      "A": "einen / ein",
+      "B": "eine / ein",
+      "C": "ein / eine",
+      "D": "eine / einen"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 33,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1390,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 4,
+    "soru": "A: Mit wie viel Jahren bist du - - - -? (Okula kayıt olma) B: Mit 6 Jahren.",
+    "secenekler": {
+      "A": "Schule gehen",
+      "B": "Schule besuchen",
+      "C": "eingeschult",
+      "D": "studieren"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 33,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1391,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 5,
+    "soru": "Beim - - - - ohne Brille bekommt Mesut Kopfschmerzen.",
+    "secenekler": {
+      "A": "liest",
+      "B": "Lesen",
+      "C": "gelesen",
+      "D": "lese"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 33,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1392,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 6,
+    "soru": "Nach dem Gymnasium hat Merve die Prüfung für das Studium - - - -.",
+    "secenekler": {
+      "A": "bestehen",
+      "B": "besuchen",
+      "C": "besucht",
+      "D": "bestanden"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 33,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1393,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 7,
+    "soru": "Welcher Arbeitsplatz ist das?",
+    "secenekler": {
+      "A": "Zahnarztpraxis",
+      "B": "Architekturbüro",
+      "C": "Apotheke",
+      "D": "Baustelle"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 33,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1394,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 8,
+    "soru": "Aşağıdakilerin hangisinde fiilin “Perfekt” hâli yanlış verilmiştir?",
+    "secenekler": {
+      "A": "gehen / ist gegangen",
+      "B": "schlafen / hat schlafen",
+      "C": "essen / hat gegessen",
+      "D": "verlieren / hat verloren"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 33,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1395,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 9,
+    "soru": "Frau Öztürk berät über die Rechtslage und verteidigt ihre Mandanten vor dem Gericht. Was ist sie von Beruf?",
+    "secenekler": {
+      "A": "Richterin",
+      "B": "Schauspielerin",
+      "C": "Rechtsanwältin",
+      "D": "Akademikerin"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 34,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1396,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 10,
+    "soru": "Welcher Beruf passt nicht zum “Krankenhaus”?",
+    "secenekler": {
+      "A": "Krankenschwester",
+      "B": "Arzt",
+      "C": "Krankenpfleger",
+      "D": "Architekt"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 34,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 1397,
+    "ders_kodu": 500,
+    "ders": "ALMANCA – 6",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 3,
+    "soru_no": 11,
+    "soru": "Nächste Woche ist Muttertag. Hakans  Mutter trägt gerne Schmuck, deswegen will Hakan seiner Mutter ein Schmuckstück schenken. Welches ist kein Schmuck?",
+    "secenekler": {
+      "A": "Eine Angel.",
+      "B": "Eine Halskette.",
+      "C": "Ein Ohrring.",
+      "D": "Ein Ring."
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum3.pdf",
+    "sayfa": 34,
+    "kontrol_gerekli": false
+  }
+]

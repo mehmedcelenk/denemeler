@@ -1,0 +1,233 @@
+[
+  {
+    "id": 595,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 1,
+    "soru": "Birinci Dünya Savaşı’nda taraf değiştirerek İtilaf Devletleri grubuna katılan devlet aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İtalya",
+      "B": "Romanya",
+      "C": "Sırbistan",
+      "D": "Japonya"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 8,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 596,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 2,
+    "soru": "Aşağıdakilerden hangisi Mustafa Kemal’in eğitim almak amacıyla bulunduğu şehirlerden değildir?",
+    "secenekler": {
+      "A": "Selanik",
+      "B": "Manastır",
+      "C": "İstanbul",
+      "D": "Sofya"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 8,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 597,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 3,
+    "soru": "• İnebolu’dan Kastamonu’ya cephane ve erzak taşırken Kastamonu yakınındaki kışlada donarak şehit olmuştur. • Kendi yorganını, taşıdığı cephanenin üstüne örtecek kadar fedakâr bir kişi olduğu bilinmektedir. Bu bilgiler, Millî Mücadele’nin kadın kahramanlarından hangisine aittir?",
+    "secenekler": {
+      "A": "Şerife Bacı",
+      "B": "Gördesli Makbule",
+      "C": "Kara Fatma",
+      "D": "Tayyar Rahmiye"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 8,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 598,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 4,
+    "soru": "Aşağıdakilerden hangisi Erzurum Kongresi’nde alınan kararlardandır?",
+    "secenekler": {
+      "A": "Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti, İstanbul Hükûmeti’nce tanınacaktır.",
+      "B": "İtilaf Devletleri ile yapılacak barış görüşmelerine Temsil Heyeti’nin de uygun gördüğü temsilciler gönderilecektir.",
+      "C": "Ulusal direnişin sesini duyuracak olan İrade-i Millîye adında bir gazete çıkarılacaktır.",
+      "D": "Mebusan Meclisinin derhâl toplanmasına ve hükûmet işlerinin meclisin denetimi altında yürütülmesine çalışılacaktır."
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 8,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 599,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 5,
+    "soru": "Aşağıdakilerden hangisi Amasya Genelgesi ile ilgili yanlış bir bilgidir?",
+    "secenekler": {
+      "A": "Sivas’ta millî bir kongrenin toplanması kararlaştırılmıştır.",
+      "B": "Milleti mücadeleye çağırdığı için ihtilal bildirisi özelliği gösterir.",
+      "C": "Kapitülasyonların kaldırılmasının gerekliliği vurgulanmıştır.",
+      "D": "Millî Mücadele’nin amacı, gerekçesi ve yöntemi açıklanmıştır."
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 8,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 600,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 6,
+    "soru": "Millî Mücadele Dönemi’nde aşağıdakilerden hangisinin sonucunda Türk ordusu Sakarya Nehri’nin doğusuna çekilmiştir?",
+    "secenekler": {
+      "A": "II. İnönü Muharebesi",
+      "B": "Kütahya-Eskişehir Muharebeleri",
+      "C": "Sakarya Meydan Muharebesi",
+      "D": "Başkomutanlık Meydan Muharebesi"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 8,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 601,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 7,
+    "soru": "Atatürk Orman Çiftliği ve Zirai Kredi Kooperatifleri hangi alanda çalışmalar yapması için kurulmuştur?",
+    "secenekler": {
+      "A": "Tarımsal",
+      "B": "Askerî",
+      "C": "Kültürel",
+      "D": "Siyasi"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 8,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 602,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 8,
+    "soru": "Türkiye’de her yıl 12-19 Aralık’ın “Tasarruf ve Yerli Malı Haftası” olarak kutlanmasına neden olan gelişme aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Birinci Beş Yıllık Sanayi Planı’nın uygulanması",
+      "B": "Millî Korunma Kanunu’nun çıkarılması",
+      "C": "1929 Dünya Ekonomik Bunalımı’nın yaşanması",
+      "D": "II. Dünya Savaşı’nın başlaması"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 8,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 603,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 9,
+    "soru": "Atatürk’ün “… Medeniyet yolunda başarı, yenileşmeye bağlıdır. Sosyal hayatta, ekonomik hayatta, ilim ve fen sahasında başarılı olmak için tek gelişme ve ilerleme yolu budur. Hayat ve geçime egemen olan kuralların zaman ile değişme, gelişme ve yenilenmesi zorunludur.” sözleri aşağıdaki ilkelerden hangisinin önemini vurgulamaktadır?",
+    "secenekler": {
+      "A": "İnkılapçılık",
+      "B": "Milliyetçilik",
+      "C": "Devletçilik",
+      "D": "Cumhuriyetçilik"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 604,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 10,
+    "soru": "İtalya’da Mussolini tarafından oluşturulan, otoriter devlet anlayışı üzerine kurulu siyasi ideolojiye verilen ad aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Komünizm",
+      "B": "Faşizm",
+      "C": "Kapitalizm",
+      "D": "Nazizm"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 605,
+    "ders_kodu": 141,
+    "ders": "T.C. İNK. TAR. ATA. – 1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 11,
+    "soru": "Aşağıdakilerden hangisi “Milletler Cemiyeti” ile ilgili yanlış bir bilgidir?",
+    "secenekler": {
+      "A": "Cenevre şehrinde kurulmuştur.",
+      "B": "Kurulma kararı Paris Barış Konferansı’nda alınmıştır.",
+      "C": "Wilson İlkeleri esas alınarak oluşturulmuştur.",
+      "D": "II. Dünya Savaşı’ndan sonra kurulmuştur."
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false
+  }
+]

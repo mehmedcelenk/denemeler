@@ -1,0 +1,233 @@
+[
+  {
+    "id": 529,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 1,
+    "soru": "Aşağıdaki devletlerden hangisi Avrupa kıtasında kurulmuştur?",
+    "secenekler": {
+      "A": "Abbasiler",
+      "B": "Fatımiler",
+      "C": "Anadolu Selçukluları",
+      "D": "Endülüs Emevileri"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 530,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 2,
+    "soru": "Anadolu’da ilk darulhadisin inşa edildiği şehir aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Muğla",
+      "B": "Sinop",
+      "C": "Çankırı",
+      "D": "Artvin"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 531,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 3,
+    "soru": "Aşağıdaki rasathanelerden hangisi Orta Asya’da kurulmuştur?",
+    "secenekler": {
+      "A": "Meraga",
+      "B": "Şemmâsiye",
+      "C": "Semerkant",
+      "D": "Kandilli"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 532,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 4,
+    "soru": "Aşağıdakilerden hangisi tarih alanında öne çıkan âlimlerdendir?",
+    "secenekler": {
+      "A": "Harizmi",
+      "B": "Taberi",
+      "C": "İbnu’l-Heysem",
+      "D": "Ebu Bekir Razi"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 533,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 5,
+    "soru": "Osmanlı Dönemi’nde ilk olarak modern kimyadan söz eden âlim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İshak Efendi",
+      "B": "Ebû Bekir Râzî",
+      "C": "Câbir bin Hayyân",
+      "D": "Uluğ Bey"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 534,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 6,
+    "soru": "İslamiyet öncesinde Hazar Türklerinin mensup olduğu dinler aşağıdakilerden hangisinde bir arada verilmiştir?",
+    "secenekler": {
+      "A": "Sabiilik - Mecusilik",
+      "B": "Budizm - Taoizm",
+      "C": "Zerdüştlük - Sihizm",
+      "D": "Hristiyanlık - Yahudilik"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 535,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 7,
+    "soru": "Önde gelen Türk mutasavvıflarının yetiştiği bölge aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Mısır",
+      "B": "Mağrib",
+      "C": "Horasan",
+      "D": "Balkanlar"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 536,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 8,
+    "soru": "Aşağıdakilerden hangisi diğerlerinden farklı alanda öne çıkan âlimlerden biridir?",
+    "secenekler": {
+      "A": "Maturidi",
+      "B": "Ahi Evran",
+      "C": "Yunus Emre",
+      "D": "Ahmet Yesevi"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 537,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 9,
+    "soru": "Aşağıdaki âlimlerden hangisinin “Fakrnâme” adlı bir eseri vardır?",
+    "secenekler": {
+      "A": "Ahi Evran",
+      "B": "Sarı Saltuk",
+      "C": "Hacı Bayram Veli",
+      "D": "Hoca Ahmet Yesevi"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 538,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi tasavvufi yorumlardandır?",
+    "secenekler": {
+      "A": "Rifailik",
+      "B": "Maturidilik",
+      "C": "Hanefilik",
+      "D": "Şafiîlik"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 539,
+    "ders_kodu": 117,
+    "ders": "DİN KÜL. AHL. BİL. – 7",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 11,
+    "soru": "Düştü Hüseyin sahrayı Kerbela’ya Cibril, var haber ver Sultan-ı Enbiya’ya Bu beyitte anlatılan olay aşağıdakilerden hangisiyle ilişkilendirilebilir?",
+    "secenekler": {
+      "A": "Musahiplik töreni",
+      "B": "Muharrem orucu",
+      "C": "Abdal Musa cemi",
+      "D": "Dardan indirme cemi"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "id": 540,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 1,
+    "soru": "İslam âlimlerine göre aşağıdakilerden hangisi kesinlikle yasaktır?",
+    "secenekler": {
+      "A": "Kan, doku ve organ nakli",
+      "B": "Haram maddelerle tedavi",
+      "C": "Ağır hastalara ötenazi uygulaması",
+      "D": "Ölüm sebebini tespit için otopsi yapılması"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 541,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 2,
+    "soru": "Aşağıdakilerden hangisinin yenilmesi İslam dinine göre yasak değildir?",
+    "secenekler": {
+      "A": "Azı dişi ile avlanan yırtıcılar",
+      "B": "Avını pençesiyle parçalayan kuşlar",
+      "C": "Putlar adına kurban edilen hayvanlar",
+      "D": "Denizden avlanarak çıkarılan balıklar"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 542,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 3,
+    "soru": "Dünyanın en kalabalık ikinci ülkesinin % 80’i bu dine mensuptur. Politeist bir dindir. Bu dinin en belirgin özelliklerinden biri de tenasüh inancıdır. Bu parçada sözü edilen din aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Konfüçyanizm",
+      "B": "Budizm",
+      "C": "Hinduizm",
+      "D": "Taoizm"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 543,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 4,
+    "soru": "Hinduizm’deki kast sisteminde “sudralar” aşağıdakilerden hangisini ifade eder?",
+    "secenekler": {
+      "A": "Kast dışında kalanları",
+      "B": "Soyluları",
+      "C": "Tüccarları",
+      "D": "İşçileri"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 3,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 544,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 5,
+    "soru": "Ruhsat, özel veya zor durumlarda güçlüğü ortadan kaldırmak amacıyla konulan geçici hükümlerdir. Buna göre, aşağıdakilerden hangisi ruhsat olarak değerlendirilemez?",
+    "secenekler": {
+      "A": "Helal gıdanın olmadığı durumlarda haramın tüketilmesi",
+      "B": "Hastalık durumlarında namazların oturarak kılınması",
+      "C": "Zor bir karar öncesinde bilenlere danışılması",
+      "D": "Su olmadığında teyemmüm alınması"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 545,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 6,
+    "soru": "İslam’ın, insan ve toplum hayatındaki değişme ve gelişmelere kayıtsız kalması düşünülemez. Bu sebeple İslam âlimlerinin dinin evrenselliğine uygun olarak bu değişim ve gelişmelerden kaynaklı sorunlara çözüm üretmesi beklenir. Bu açıklama aşağıdakilerden hangisinin önemini vurgulamaktadır?",
+    "secenekler": {
+      "A": "İçtihadın",
+      "B": "İbadetin",
+      "C": "İnfakın",
+      "D": "İhsanın"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 546,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 7,
+    "soru": "Budizm’in kurucusu Siddharta Gautama Sakyamuni’nin aydınlandığına inanılan yer aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ganj Nehri",
+      "B": "Bodhi ağacı",
+      "C": "Himalaya’nın tepesi",
+      "D": "Saranath Tapınağı"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 547,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 8,
+    "soru": "Ayin yeri “Vihara” olan din aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Konfüçyanizm",
+      "B": "Hinduizm",
+      "C": "Taoizm",
+      "D": "Budizm"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 548,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 9,
+    "soru": "• Barış ve huzur toplumunun, erdemli ve ahlaki örneklikle yönetilen bir devlet ve hiyerarşik bir toplum anlayışı ile mümkün olacağını savunur. • Tanrı için “Tien” ifadesini kullanır. Bu bilgiler aşağıdaki düşünürlerden hangisine aittir?",
+    "secenekler": {
+      "A": "Konfüçyüs",
+      "B": "Lao-Tzu",
+      "C": "Guru Nanak",
+      "D": "Mahatma Gandi"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 549,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 10,
+    "soru": "İyi bir yönetici, devlet işlerine en az müdahale edendir. Yöneticiler; daha az hırslı olmalı, daha az kontrol etmeli, ahlaklı olmalı ve insanlara baskı yapmamalıdır. Bu açıklama aşağıdaki düşüncelerden hangisine aittir?",
+    "secenekler": {
+      "A": "Yin ve Yang",
+      "B": "Wu wei",
+      "C": "Samsara",
+      "D": "Tao"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 550,
+    "ders_kodu": 118,
+    "ders": "DİN KÜL. AHL. BİL. – 8",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 2,
+    "soru_no": 11,
+    "soru": "I. Vedalar II. Mahabharata III. Ramayana Numaralanmış dinî metinlerden hangileri Hinduizm’in beşerî kaynaklı kutsal kitaplarındandır?",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum2.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  }
+]

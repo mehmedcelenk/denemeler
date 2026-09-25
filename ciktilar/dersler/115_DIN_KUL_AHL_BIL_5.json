@@ -1,0 +1,233 @@
+[
+  {
+    "id": 23,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "“Her canlı ölümü tadacaktır. Bir deneme olarak sizi hayırla da şerle de imtihan ederiz ve siz ancak bize döndürüleceksiniz.” (Enbiyâ suresi, 35. ayet) Bu ayetten hareketle “insan” ile ilgili aşağıdakilerden hangisi söylenemez?",
+    "secenekler": {
+      "A": "Amellerinin karşılığını görecektir.",
+      "B": "Kötülüğün temel kaynağıdır.",
+      "C": "Bir amaç için yaratılmıştır.",
+      "D": "Hayatının bir sonu vardır."
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 24,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "“Kendi yaratılışını unutarak bize karşı misal getirmeye kalkışıyor ve ‘Şu çürümüş kemikleri kim diriltecek?’ diyor. De ki: ‘Onları ilk defa var eden diriltecektir.’...” (Yâsin suresi, 78 ve 79. ayetler) Bu ayetlerde aşağıdakilerden hangisi vurgulanmaktadır?",
+    "secenekler": {
+      "A": "Haşr",
+      "B": "Ölüm",
+      "C": "Ba’s",
+      "D": "Mizan"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 25,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir kavramı ifade eder?",
+    "secenekler": {
+      "A": "Adn",
+      "B": "Naim",
+      "C": "Ravza",
+      "D": "Hutame"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 26,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "“Biz her peygamberi kendi kavminin diliyle gönderdik ki onlara Allah’ın emirlerini iyice açıklasın…” (İbrahim suresi, 4. ayet) Bu ayette altı çizili ifadeyle Hz. Muhammed’in (sav) aşağıdaki görevlerinden hangisi vurgulanmaktadır?",
+    "secenekler": {
+      "A": "Tebyin",
+      "B": "Temsil",
+      "C": "Tilavet",
+      "D": "Teşri"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 27,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "Bir sahabe, gece boyu sürekli namaz kılmaya, diğeri her gün oruç tutmaya, üçüncüsü de evlenmemeye karar verdi. Bunu haber alan Hz. Muhammed (sav), “Allah’a karşı en çok takva sahibi olanınız benim. Bununla birlikte ben bazen oruç tutar, bazen tutmam. Gecelerin bir kısmında uyurum. Ayrıca evli bir insanım. Siz de beni örnek alınız.” dedi. Bu hadis Hz. Muhammed’in (sav) aşağıdaki görevlerinden hangisine örnektir?",
+    "secenekler": {
+      "A": "Temsil",
+      "B": "Teşri",
+      "C": "Tebliğ",
+      "D": "Tebyin"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 5,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 28,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "Aşağıdakilerden hangisi Kütübisitte içinde yer alan eserlerdendir?",
+    "secenekler": {
+      "A": "Ahmed bin Hanbel’in Müsned’i",
+      "B": "İmam Malik’in Muvatta’sı",
+      "C": "Dârimî’nin Sünen’i",
+      "D": "Tirmizî’nin Sünen’i"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 5,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 29,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "Aşağıdaki eserlerden hangisi Süleyman Çelebi’ye aittir?",
+    "secenekler": {
+      "A": "Kutadgu Bilig",
+      "B": "Atabet’ül Hakayık",
+      "C": "Vesiletü’n-Necat",
+      "D": "Dîvân-ı Hikmet"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 5,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 30,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "İnkârdan imana eriştikten sonra yanlış yollara sapmadan Allah’ın koymuş olduğu sınırlar dâhilinde kalabilmek için insanın nefsiyle ve bazen de çevresiyle mücadele etmesi gerekir. Bu açıklamada aşağıdakilerden hangisine değinilmemiştir?",
+    "secenekler": {
+      "A": "Sırat-ı müstakim",
+      "B": "Tevekkül",
+      "C": "Hidayet",
+      "D": "Cihat"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 5,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 31,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "• Allah’ın gördüğünü bilerek her işini güzel yapmaktır. • Günahlardan sakınmaktır. • İçtenlikle Allah’ın rızasını gözetmektir. Bu açıklamalarda aşağıdaki kavramlardan hangisinin tanımına yer verilmemiştir?",
+    "secenekler": {
+      "A": "Takva",
+      "B": "Hidayet",
+      "C": "İhlas",
+      "D": "İhsan"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 5,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 32,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "Aşağıdaki ayetlerin hangisinde “dalalet” kavramından bahsedilmektedir?",
+    "secenekler": {
+      "A": "“Semud ve Lut kavimleri ile Eykeliler de peygamberlerini yalanlamışlardı. Onların hepsi doğru yoldan sapmış topluluklardır.” (Sâd suresi, 13. ayet)",
+      "B": "“Hâlbuki onlara, Allah’a kulluk etmeleri, Hanifler olarak O’na yürekten inanıp boyun eğmeleri, namaz kılmaları ve zekât vermeleri emredilmişti. Doğru din de işte budur.” (Beyyine suresi, 5. ayet)",
+      "C": "“Ey iman edenler! İçtenlikle ve kararlılık içinde Allah’a tövbe edin. Umulur ki Rabb’iniz kötülüklerinizi örter ve sizi içinden ırmaklar akan cennetlerine koyar…” (Tahrîm suresi, 8. ayet)",
+      "D": "“Takva sahiplerine vaat olunan cennetin özellikleri şöyledir: İçinden ırmaklar akar, yemişleri ve gölgesi süreklidir. İşte bu, günahtan çekinenlerin mutlu sonudur…” (Ra’d suresi, 35. ayet.)"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 5,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 33,
+    "ders_kodu": 115,
+    "ders": "DİN KÜL. AHL. BİL. – 5",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "Aşağıdaki kavramlardan hangisinin tanımı yanlıştır?",
+    "secenekler": {
+      "A": "Muhlis: İman ve ibadetlerinde samimi olan",
+      "B": "Muttaki: Allah’a itaatsizlikten sakınan",
+      "C": "Mukatele: Nefsini terbiye eden",
+      "D": "Muhsin: İşini iyi ve güzel yapan"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 5,
+    "kontrol_gerekli": false
+  }
+]

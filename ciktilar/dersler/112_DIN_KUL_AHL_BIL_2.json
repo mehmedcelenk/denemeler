@@ -1,0 +1,233 @@
+[
+  {
+    "id": 12,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "Süleymaniye Camii ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "İstanbul’da bulunmaktadır.",
+      "B": "Osmanlılar döneminde inşa edilmiştir.",
+      "C": "Mimar Kemâleddin’e ait bir eserdir.",
+      "D": "Hem maddi hem de manevi değer taşır."
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 13,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Hak ve hukuku korumak amacıyla gösterilen cesaretin erdem sayılabilmesi için kişinin çıkar beklentisi, kibir ve riyadan uzak durması gerekir. Bu metinde aşağıdakilerden hangisine değinilmemiştir?",
+    "secenekler": {
+      "A": "Şecaat",
+      "B": "Samimiyet",
+      "C": "İffet",
+      "D": "Adalet"
+    },
+    "dogru_cevap": "C",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 14,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "İslam medeniyeti, yeni tanıştığı toplumların tecrübe ve kazanımlarından yararlanmıştır. Bu durum, aşağıdakilerden hangisi ile doğrudan ilişkilidir?",
+    "secenekler": {
+      "A": "Topraklarını genişletme çabasıyla",
+      "B": "Farklılıkları zenginlik kabul etmesiyle",
+      "C": "Ticaret yollarını elinde tutmak istemesiyle",
+      "D": "İhtiyaçları karşılayan sistemler geliştirmesiyle"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 15,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "“Alışverişini tamamladıktan sonra, aldıklarını poşetlerinden çıkarıp bozulabilecekleri buzdolabına diğerlerini uygun dolaplara koyan” birinin davranışı aşağıdaki değerlerden hangisiyle ifade edilebilir?",
+    "secenekler": {
+      "A": "Hikmet",
+      "B": "Şecaat",
+      "C": "Adalet",
+      "D": "İffet"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 16,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "“Sadece Allah’a kulluk edilmelidir.” ifadesi aşağıdaki kavramlardan hangisiyle doğrudan ilişkilidir?",
+    "secenekler": {
+      "A": "Tevhit",
+      "B": "Adalet",
+      "C": "Nübüvvet",
+      "D": "Hakikat"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 17,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "“Farklı milletlerin birlikte yaşayarak veya katkı sağlayarak oluşturdukları her türlü faaliyet, müessese ve değerler” aşağıdakilerden hangisiyle adlandırılmaktadır?",
+    "secenekler": {
+      "A": "Ahlak",
+      "B": "Tarih",
+      "C": "Sosyoloji",
+      "D": "Medeniyet"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 18,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "“… Bir topluma olan kininiz sizi haksız davranmaya itmesin…” (Mâide suresi, 8. ayet) Bu ayette aşağıdakilerden hangisi vurgulanmaktadır?",
+    "secenekler": {
+      "A": "Dostluk",
+      "B": "Şecaat",
+      "C": "İffet",
+      "D": "Adalet"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 19,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "• Dîvân-ı Hikmet • Kutadgu Bilig • Dîvânü Lugâti’t-Türk Aşağıdakilerden hangisi bu eserlerden birinin yazarı değildir?",
+    "secenekler": {
+      "A": "İbn-i Haldun",
+      "B": "Yusuf Has Hacib",
+      "C": "Kaşgarlı Mahmut",
+      "D": "Hoca Ahmet Yesevi"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 20,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "Ezher Camii ve Medresesi aşağıdakilerin hangisi tarafından kurulmuştur?",
+    "secenekler": {
+      "A": "Fatımiler",
+      "B": "Osmanlılar",
+      "C": "Emeviler",
+      "D": "Selçuklular"
+    },
+    "dogru_cevap": "A",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 21,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "Halk arasında kullanılan “Hicaz’a gitmek” ifadesiyle kastedilen aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Namaz",
+      "B": "Hac",
+      "C": "Oruç",
+      "D": "Zekât"
+    },
+    "dogru_cevap": "B",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  },
+  {
+    "id": 22,
+    "ders_kodu": 112,
+    "ders": "DİN KÜL. AHL. BİL. – 2",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "“Kurtuba” şehri aşağıdaki devletlerden hangisine başkentlik yapmıştır?",
+    "secenekler": {
+      "A": "Osmanlı",
+      "B": "Babürler",
+      "C": "Büyük Selçuklu",
+      "D": "Endülüs Emevi"
+    },
+    "dogru_cevap": "D",
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 4,
+    "kontrol_gerekli": false
+  }
+]
