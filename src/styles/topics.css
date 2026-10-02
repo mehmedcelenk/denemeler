@@ -1,0 +1,341 @@
+/* Topic List */
+.drawer-topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.drawer-topic-item {
+  background: rgba(125, 125, 125, 0.04);
+  border: 1px solid var(--paper-border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.12s;
+}
+
+.drawer-topic-item:hover {
+  border-color: var(--brand-accent);
+  background: rgba(2, 132, 199, 0.08);
+}
+
+.drawer-topic-item.selected {
+  border-color: var(--brand-accent);
+  background: rgba(2, 132, 199, 0.14);
+  font-weight: 800;
+}
+
+.drawer-topic-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--paper-text);
+  line-height: 1.4;
+}
+
+.topic-ak {
+  font-weight: 600;
+  color: var(--paper-text-muted);
+}
+
+.topic-slash {
+  color: var(--brand-accent);
+  font-weight: 800;
+  margin: 0 4px;
+}
+
+.topic-sub {
+  font-weight: 750;
+  color: var(--paper-text);
+}
+
+.drawer-topic-badges-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.drawer-topic-badge {
+  background: var(--brand-accent);
+  color: #ffffff;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 10.5px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.drawer-topic-freq-badge {
+  background: rgba(2, 132, 199, 0.09);
+  color: var(--brand-accent);
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+body.dark-mode .drawer-topic-freq-badge {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.25);
+}
+
+/* ========================================================= */
+/* KOMPAKT DERS & KADEME SEÇİCİ DROPDOWN + IOS SWITCH        */
+/* ========================================================= */
+.drawer-select-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: var(--paper-subtle);
+  border: 1px solid var(--paper-border);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.subject-level-picker-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-slash {
+  color: var(--paper-text-muted);
+  font-size: 16px;
+  font-weight: 300;
+  user-select: none;
+}
+
+.custom-dropdown {
+  position: relative;
+}
+
+.dropdown-trigger-btn {
+  background: var(--paper-bg);
+  border: 1px solid var(--paper-border);
+  color: var(--paper-text);
+  padding: 6px 12px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.dropdown-trigger-btn:hover {
+  border-color: var(--brand-accent);
+  transform: translateY(-1px);
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.dropdown-menu-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 170px;
+  max-height: 260px;
+  overflow-y: auto;
+  background: var(--paper-bg);
+  border: 1px solid var(--paper-border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  z-index: 1050;
+  padding: 4px;
+  animation: confFadeIn 0.15s ease;
+}
+
+.dropdown-menu-item {
+  padding: 7px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--paper-text);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: background 0.12s;
+  user-select: none;
+}
+
+.dropdown-menu-item:hover {
+  background: rgba(125, 125, 125, 0.1);
+}
+
+.dropdown-menu-item.active {
+  background: var(--brand-accent);
+  color: #ffffff;
+}
+
+/* iOS Tarzı Kesişim Switch */
+.ios-switch-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.ios-switch-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--paper-text-muted);
+}
+
+.ios-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.ios-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ios-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--paper-border);
+  transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 20px;
+}
+
+.ios-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #ffffff;
+  transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.ios-switch input:checked + .ios-slider {
+  background-color: var(--brand-accent);
+}
+
+.ios-switch input:checked + .ios-slider:before {
+  transform: translateX(16px);
+}
+
+/* Kademe Çoklu Seçim Butonları (1 2 3 4...) */
+.level-chips-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.btn-level-chip {
+  min-width: 28px;
+  height: 28px;
+  padding: 0 7px;
+  border-radius: 6px;
+  border: 1px solid var(--paper-border);
+  background: var(--paper-bg);
+  color: var(--paper-text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.btn-level-chip:hover {
+  border-color: #10b981;
+  color: var(--paper-text);
+}
+
+.btn-level-chip.active {
+  background: #059669;
+  color: #ffffff;
+  border-color: #059669;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.45);
+  font-weight: 800;
+}
+
+body.dark-mode .btn-level-chip {
+  background: #1e293b;
+  border-color: #334155;
+  color: #94a3b8;
+}
+
+body.dark-mode .btn-level-chip:hover {
+  border-color: #34d399;
+  color: #f1f5f9;
+}
+
+body.dark-mode .btn-level-chip.active {
+  background: #10b981;
+  border-color: #10b981;
+  color: #0f172a;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
+}
+
+/* Rövanş Modu Aktifken Çekmece Pasif Bannerı */
+.drawer-library-banner {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1.5px dashed #059669;
+  border-radius: 12px;
+  padding: 24px 18px;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.library-banner-icon {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.library-banner-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--paper-text);
+  margin-bottom: 6px;
+}
+
+.library-banner-desc {
+  font-size: 12.5px;
+  color: var(--paper-text-muted);
+  line-height: 1.45;
+  max-width: 320px;
+  margin: 0 auto 16px auto;
+}
+
+
+

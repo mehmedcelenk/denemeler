@@ -1,0 +1,284 @@
+/* =========================================================
+   TDE EĞİTİMSEL ROZETLER & CAM KARTLAR
+   (Edebiyat Pusulası • Divan Glosarı)
+   ========================================================= */
+
+/* 1. METİN İÇİ İNTERAKTİF ROZETLER */
+.edeb-entity-badge {
+  display: inline;
+  padding: 1px 3px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-weight: 600;
+}
+
+.edeb-entity-badge.is-eser {
+  border-bottom: 2px dashed #f59e0b;
+  color: inherit;
+}
+
+.edeb-entity-badge.is-eser:hover {
+  background: rgba(245, 158, 11, 0.15);
+  color: #d97706;
+}
+
+.edeb-entity-badge.is-yazar {
+  border-bottom: 2px dashed #0284c7;
+  color: inherit;
+}
+
+.edeb-entity-badge.is-yazar:hover {
+  background: rgba(2, 132, 199, 0.15);
+  color: #0284c7;
+}
+
+.divan-vocab-badge {
+  display: inline;
+  padding: 1px 3px;
+  border-bottom: 2px dotted #8b5cf6;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.divan-vocab-badge:hover {
+  background: rgba(139, 92, 246, 0.15);
+  color: #7c3aed;
+}
+
+/* 2. EDEBİYAT PUSULASI HAP BİLGİ MİNİ BALONU */
+.edebiyat-mini-bubble {
+  width: 290px;
+  max-width: calc(100vw - 32px);
+  background: var(--paper-bg, #ffffff);
+  color: var(--paper-text, #0f172a);
+  border: 1px solid var(--paper-border, #cbd5e1);
+  border-radius: 12px;
+  box-shadow: 0 14px 35px -6px rgba(0, 0, 0, 0.22);
+  padding: 10px 12px;
+  box-sizing: border-box;
+  animation: edebCardIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+body.dark-mode .edebiyat-mini-bubble {
+  background: var(--paper-bg, #1e1f23);
+  border-color: var(--paper-border, #2d2f36);
+  color: var(--paper-text, #e3e5ea);
+}
+
+@keyframes edebCardIn {
+  from { opacity: 0; transform: translateY(6px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.edeb-bubble-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.edeb-bubble-title {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--paper-text, #0f172a);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: auto;
+}
+
+body.dark-mode .edeb-bubble-title {
+  color: #f8fafc;
+}
+
+.edeb-badge-tag {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.edeb-badge-tag.tag-eser {
+  background: rgba(245, 158, 11, 0.15);
+  color: #d97706;
+}
+
+.edeb-badge-tag.tag-yazar {
+  background: rgba(2, 132, 199, 0.15);
+  color: #0284c7;
+}
+
+body.dark-mode .edeb-badge-tag.tag-eser {
+  color: #fbbf24;
+}
+
+body.dark-mode .edeb-badge-tag.tag-yazar {
+  color: #38bdf8;
+}
+
+.edeb-btn-close {
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  color: var(--paper-text-muted, #64748b);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.edeb-btn-close:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--paper-text, #0f172a);
+}
+
+body.dark-mode .edeb-btn-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.edeb-fact-box {
+  background: rgba(0, 0, 0, 0.03);
+  border-left: 3px solid #2563eb;
+  border-radius: 0 8px 8px 0;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+body.dark-mode .edeb-fact-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-left-color: #3b82f6;
+}
+
+.edeb-fact-box:hover {
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.edeb-fact-label {
+  font-size: 10px;
+  font-weight: 800;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+}
+
+body.dark-mode .edeb-fact-label {
+  color: #60a5fa;
+}
+
+.edeb-fact-detail {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--paper-text, #0f172a);
+  line-height: 1.4;
+}
+
+body.dark-mode .edeb-fact-detail {
+  color: var(--paper-text, #e3e5ea);
+}
+
+.edeb-bubble-footer {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--paper-text-muted, #64748b);
+  text-align: center;
+  cursor: pointer;
+  padding-top: 4px;
+}
+
+.edeb-bubble-footer:hover {
+  color: #2563eb;
+}
+
+/* 3. DİVAN GLOSARI BALONU */
+.divan-glass-bubble {
+  width: 290px;
+  max-width: calc(100vw - 32px);
+  background: var(--paper-bg, #ffffff);
+  color: var(--paper-text, #0f172a);
+  border: 1px solid var(--paper-border, #cbd5e1);
+  border-radius: 12px;
+  box-shadow: 0 14px 35px -6px rgba(0, 0, 0, 0.22);
+  padding: 12px 14px;
+  box-sizing: border-box;
+  animation: edebCardIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+body.dark-mode .divan-glass-bubble {
+  background: var(--paper-bg, #1e1f23);
+  border-color: var(--paper-border, #2d2f36);
+  color: var(--paper-text, #e3e5ea);
+}
+
+.divan-bubble-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.divan-word-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #7c3aed;
+  text-transform: capitalize;
+}
+
+body.dark-mode .divan-word-title {
+  color: #a78bfa;
+}
+
+.divan-word-osmanlica {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 16px;
+  color: var(--paper-text, #0f172a);
+  direction: rtl;
+}
+
+body.dark-mode .divan-word-osmanlica {
+  color: #ffffff;
+}
+
+.divan-badge-koken {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  background: rgba(139, 92, 246, 0.12);
+  color: #7c3aed;
+  border-radius: 6px;
+  margin-right: auto;
+}
+
+body.dark-mode .divan-badge-koken {
+  color: #c4b5fd;
+}
+
+.divan-bubble-anlam {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.divan-bubble-mazmun {
+  font-size: 11px;
+  font-style: italic;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  color: var(--paper-text-muted, #64748b);
+}
+
+body.dark-mode .divan-bubble-mazmun {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--paper-text-muted, #8e94a0);
+}

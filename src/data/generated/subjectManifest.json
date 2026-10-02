@@ -1,0 +1,50 @@
+{
+  "DIN": {
+    "questionCount": 616,
+    "courseCount": 8
+  },
+  "FEL": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "TAR": {
+    "questionCount": 492,
+    "courseCount": 6
+  },
+  "COG": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "ING": {
+    "questionCount": 656,
+    "courseCount": 8
+  },
+  "SAG": {
+    "questionCount": 164,
+    "courseCount": 2
+  },
+  "FIZ": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "KIM": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "BIO": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "TDE": {
+    "questionCount": 656,
+    "courseCount": 8
+  },
+  "MAT": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "INK": {
+    "questionCount": 164,
+    "courseCount": 2
+  }
+}

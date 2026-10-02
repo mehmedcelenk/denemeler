@@ -1,0 +1,175 @@
+/* ========================================================= */
+/* 7. BASKI & PDF STİLLERİ (@media print)                    */
+/* ========================================================= */
+@media print {
+  @page {
+    size: A4;
+    margin: 8mm 10mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .top-center-badge-container,
+  .floating-console-container,
+  .drawer-overlay,
+  .pdf-dialog-overlay,
+  .btn-companion-icon,
+  .btn-page-key-toggle {
+    display: none !important;
+  }
+
+  .booklet-stream-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  .booklet-page {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    min-height: 280mm !important;
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .page-columns-body {
+    column-count: 2 !important;
+    column-gap: 28px !important;
+    column-rule: 1px solid #cbd5e1 !important;
+  }
+
+  .booklet-question {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .single-answer-banner {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-columns-body.cols-3,
+  .page-columns-body.cols-4 {
+    column-count: 2 !important;
+    column-gap: 24px !important;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .top-center-badge-container { gap: 5px; }
+  .top-center-pill { font-size: 11.5px; padding: 6px 11px; }
+  .top-prayer-pill { font-size: 11px; padding: 6px 9px; }
+  .prayer-text { font-size: 11px; }
+  .top-filter-label { display: none; }
+  .btn-top-filter { width: 28px; height: 28px; padding: 0; }
+  .btn-top-filter .filter-count-badge {
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    font-size: 8.5px;
+    padding: 1px 3.5px;
+  }
+  .booklet-stream-container { padding: calc(52px + var(--safe-top)) 6px calc(90px + var(--safe-bottom)) 6px; }
+  .booklet-page { padding: 20px 14px 16px 14px; min-height: auto; }
+  .page-columns-body.cols-1,
+  .page-columns-body.cols-2,
+  .page-columns-body.cols-3,
+  .page-columns-body.cols-4 {
+    column-count: 1 !important;
+    column-rule: none !important;
+  }
+
+  /* Mobil Çekmece X-Ekseni Ferahlatma */
+  .drawer-overlay {
+    padding: calc(6px + var(--safe-top)) 6px calc(10px + var(--safe-bottom)) 6px !important;
+    align-items: center !important;
+  }
+  .drawer-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 14px 10px !important;
+    gap: 10px !important;
+    border-radius: 14px !important;
+    max-height: 95vh !important;
+  }
+  .drawer-header {
+    padding-bottom: 6px !important;
+  }
+  .drawer-header h3 {
+    font-size: 15px !important;
+  }
+  .drawer-search-bar {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .drawer-search-input {
+    font-size: 12.5px !important;
+    padding: 8px 30px 8px 32px !important;
+  }
+  .drawer-subject-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px !important;
+    box-sizing: border-box !important;
+  }
+  .drawer-subj-card {
+    padding: 7px 8px !important;
+    gap: 7px !important;
+    min-width: 0 !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+  }
+  .drawer-subj-card > div {
+    min-width: 0 !important;
+    flex: 1 !important;
+    overflow: hidden !important;
+  }
+  .drawer-subj-icon {
+    font-size: 18px !important;
+    flex-shrink: 0 !important;
+  }
+  .drawer-subj-name {
+    font-size: 11.5px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.25 !important;
+  }
+  .drawer-subj-count {
+    font-size: 9.5px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  .drawer-courses-flow {
+    gap: 5px !important;
+  }
+  .btn-course-toggle {
+    padding: 5px 8px !important;
+    font-size: 11.5px !important;
+    border-radius: 6px !important;
+    gap: 4px !important;
+  }
+  .drawer-topic-item {
+    padding: 7px 9px !important;
+    gap: 6px !important;
+  }
+  .drawer-topic-name {
+    font-size: 11.5px !important;
+    line-height: 1.35 !important;
+    word-break: break-word !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+  .drawer-topic-badge {
+    font-size: 9.5px !important;
+    padding: 2px 5px !important;
+    flex-shrink: 0 !important;
+  }
+}

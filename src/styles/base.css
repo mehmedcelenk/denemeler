@@ -1,0 +1,84 @@
+/* ========================================================= */
+/* 1. DİJİTAL KAĞIT & AMBİYANS SİSTEMİ (DESIGN TOKENS)      */
+/* ========================================================= */
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --ambient-bg: #eceff3;
+  --paper-bg: #ffffff;
+  --paper-text: #0f172a;
+  --paper-text-muted: #64748b;
+  --paper-border: #cbd5e1;
+  --paper-rule: #cbd5e1;
+  --paper-shadow: 0 10px 35px -5px rgba(15, 23, 42, 0.12), 0 0 1px rgba(0,0,0,0.06);
+
+  --badge-bg: rgba(255, 255, 255, 0.72);
+  --badge-border: rgba(255, 255, 255, 0.65);
+  --badge-shadow: 0 8px 32px -4px rgba(15, 23, 42, 0.09), 0 2px 6px -1px rgba(15, 23, 42, 0.04), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+  --badge-hover-shadow: 0 12px 36px -4px rgba(15, 23, 42, 0.15), 0 4px 10px -2px rgba(15, 23, 42, 0.08), inset 0 1px 1px 0 rgba(255, 255, 255, 1);
+  --hud-bg: rgba(255, 255, 255, 0.85);
+  --hud-border: rgba(255, 255, 255, 0.70);
+  --hud-text: #0f172a;
+
+  --user-accent: #0284c7;
+  --user-accent-dark: #38bdf8;
+
+  --bubble-border: #334155;
+  --bubble-text: #0f172a;
+  --bubble-fill: var(--user-accent);
+  --bubble-fill-text: #ffffff;
+
+  --brand-accent: var(--user-accent);
+  --success-accent: #10b981;
+  --danger-accent: #ef4444;
+
+  --booklet-font-size: 13.5px;
+}
+
+body.dark-mode {
+  --ambient-bg: #151618;
+  --paper-bg: #1e1f23;
+  --paper-text: #e3e5ea;
+  --paper-text-muted: #8e94a0;
+  --paper-border: #2d2f36;
+  --paper-rule: #2d2f36;
+  --paper-shadow: 0 14px 45px -5px rgba(0, 0, 0, 0.6);
+
+  --badge-bg: rgba(28, 30, 35, 0.72);
+  --badge-border: rgba(255, 255, 255, 0.14);
+  --badge-shadow: 0 12px 36px -4px rgba(0, 0, 0, 0.55), 0 2px 8px -1px rgba(0, 0, 0, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
+  --badge-hover-shadow: 0 16px 42px -4px rgba(0, 0, 0, 0.70), 0 4px 12px -2px rgba(0, 0, 0, 0.45), inset 0 1px 1px 0 rgba(255, 255, 255, 0.28);
+  --hud-bg: rgba(26, 28, 32, 0.88);
+  --hud-border: rgba(255, 255, 255, 0.16);
+  --hud-text: #f0f2f5;
+
+  --bubble-border: #8e94a0;
+  --bubble-text: #f0f2f5;
+  --bubble-fill: var(--user-accent-dark);
+  --bubble-fill-text: #ffffff;
+
+  --brand-accent: var(--user-accent-dark);
+  --success-accent: #34d399;
+  --danger-accent: #f87171;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--ambient-bg);
+  color: var(--paper-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.2s, color 0.2s;
+}
+

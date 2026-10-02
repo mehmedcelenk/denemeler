@@ -1,0 +1,136 @@
+/* ========================================================= */
+/* FORMÜL PUSULASI & NOT BANNER STİLLERİ                     */
+/* ========================================================= */
+.btn-formula-icon {
+  color: var(--brand-accent) !important;
+}
+
+.btn-formula-icon.formula-active {
+  background: rgba(2, 132, 199, 0.18) !important;
+  border-color: var(--brand-accent) !important;
+}
+
+.single-formula-banner {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: var(--paper-bg);
+  border: 1.5px solid var(--brand-accent);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: formulaPopIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.08);
+}
+
+@keyframes formulaPopIn {
+  0% { opacity: 0; transform: scale(0.97) translateY(-4px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.formula-banner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formula-header-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--brand-accent);
+}
+
+.btn-formula-close {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--paper-text-muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.btn-formula-close:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--paper-text);
+}
+
+.formula-banner-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formula-card-item {
+  padding: 8px 10px;
+  background: rgba(2, 132, 199, 0.04);
+  border: 1px solid rgba(2, 132, 199, 0.15);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+body.dark-mode .formula-card-item {
+  background: rgba(56, 189, 248, 0.05);
+  border-color: rgba(56, 189, 248, 0.18);
+}
+
+.formula-card-title {
+  font-size: 11px;
+  font-weight: 750;
+  color: var(--paper-text);
+}
+
+.formula-card-math {
+  padding: 6px 0;
+  overflow-x: auto;
+  font-size: 13px;
+  color: var(--brand-accent);
+}
+
+.formula-card-desc {
+  font-size: 11px;
+  color: var(--paper-text-muted);
+  line-height: 1.4;
+}
+
+/* Zorluk Rozetleri (MVP için gizlendi, ileride gerçek öğrenci istatistikleriyle açılacak) */
+.q-difficulty-badge {
+  display: none !important;
+}
+
+.difficulty-kek {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+}
+
+.difficulty-orta {
+  background: rgba(2, 132, 199, 0.10);
+  color: #0284c7;
+}
+
+.difficulty-boss {
+  background: rgba(225, 29, 72, 0.12);
+  color: #e11d48;
+}
+
+body.dark-mode .difficulty-kek {
+  background: rgba(16, 185, 129, 0.20);
+  color: #34d399;
+}
+
+body.dark-mode .difficulty-orta {
+  background: rgba(2, 132, 199, 0.20);
+  color: #38bdf8;
+}
+
+body.dark-mode .difficulty-boss {
+  background: rgba(225, 29, 72, 0.20);
+  color: #fb7185;
+}

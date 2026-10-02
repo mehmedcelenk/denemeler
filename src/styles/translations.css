@@ -1,0 +1,226 @@
+/* Cümle Röntgeni (3 Ayrı Renkte Alt Çizgi: Özne=Mavi, Yüklem=Kırmızı, Nesne=Yeşil) */
+.xray-sub {
+  text-decoration: underline 2px #2563eb !important;
+  text-underline-offset: 3.5px !important;
+  text-decoration-skip-ink: none !important;
+}
+.xray-verb {
+  text-decoration: underline 2.5px #e11d48 !important;
+  text-underline-offset: 3.5px !important;
+  text-decoration-skip-ink: none !important;
+}
+.xray-obj {
+  text-decoration: underline 2px #059669 !important;
+  text-underline-offset: 3.5px !important;
+  text-decoration-skip-ink: none !important;
+}
+.xray-adv {
+  text-decoration: underline 2px #d97706 !important;
+  text-underline-offset: 3.5px !important;
+  text-decoration-skip-ink: none !important;
+}
+.xray-speaker {
+  font-weight: 700;
+  color: var(--paper-text-muted);
+  margin-right: 2px;
+}
+.xray-prompt {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+  text-decoration: none !important;
+}
+.no-xray-underlines .xray-sub,
+.no-xray-underlines .xray-verb,
+.no-xray-underlines .xray-obj,
+.no-xray-underlines .xray-adv {
+  text-decoration: none !important;
+}
+
+/* Sayfa Altı Röntgen Renk Açıklama Cetveli */
+.page-xray-footer-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 5px 12px;
+  margin: 4px 0 8px 0;
+  font-size: 11px;
+  color: var(--paper-text-muted);
+  border-top: 1px dashed var(--paper-border);
+  border-bottom: 1px dashed var(--paper-border);
+  background: color-mix(in srgb, var(--paper-text) 1.5%, transparent);
+  border-radius: 6px;
+}
+.xray-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.xray-legend-line {
+  display: inline-block;
+  width: 16px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Monokrom Düğmeler (TR, AR, Röntgen, Tuzak) */
+.btn-companion-icon.btn-text-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 0 4px;
+  min-width: 22px;
+  height: 22px;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+}
+.btn-companion-icon.btn-text-badge.active,
+.btn-companion-icon.btn-trap-toggle.active {
+  background: var(--brand-accent) !important;
+  color: #ffffff !important;
+  border-color: var(--brand-accent) !important;
+}
+
+/* MEB Tuzağı İzah Kartı */
+.single-trap-banner {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  padding: 10px 13px;
+  background: color-mix(in srgb, #f59e0b 8%, var(--paper-bg));
+  border: 1.5px solid color-mix(in srgb, #f59e0b 45%, var(--paper-border));
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--paper-text);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  animation: trapFadeIn 0.22s ease-out;
+}
+.trap-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #d97706;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+@keyframes trapFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Soru Çeviri Kartı (TR / AR Tıklandığında Sorunun Altında Açılır) */
+.q-translation-box {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: color-mix(in srgb, var(--brand-accent) 7%, var(--paper-bg));
+  border: 1.5px solid color-mix(in srgb, var(--brand-accent) 26%, var(--paper-border));
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--paper-text);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  animation: transSlideDown 0.18s ease-out;
+}
+@keyframes transSlideDown {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.trans-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.trans-lang-tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--brand-accent);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.trans-box-body {
+  white-space: pre-line;
+  color: var(--paper-text);
+}
+.trans-box-body.ar-text {
+  direction: rtl !important;
+  text-align: right !important;
+  font-family: 'Amiri', 'Traditional Arabic', serif, system-ui;
+  font-size: 14.5px;
+  line-height: 1.75;
+}
+
+/* Ses Çalarken Beliren STOP Düğmesi */
+.btn-companion-icon.btn-tts-icon.tts-playing {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  border-color: #dc2626 !important;
+  padding: 0 7px !important;
+  min-width: unset !important;
+  border-radius: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25) !important;
+  animation: ttsPulse 1.2s infinite ease-in-out;
+}
+.btn-companion-icon.btn-tts-icon.tts-playing svg {
+  fill: #ffffff !important;
+  stroke: none !important;
+}
+@keyframes ttsPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+.q-source-tag {
+  margin-left: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78em;
+  color: var(--paper-text-muted);
+  letter-spacing: 0.2px;
+}
+
+.q-stem-text {
+  font-size: 1em;
+  line-height: 1.45;
+  color: var(--paper-text);
+  margin-bottom: 8px;
+  text-align: justify;
+  word-break: break-word;
+  white-space: pre-line;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  transition: opacity 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.q-stem-text.stem-fading {
+  opacity: 0;
+}
+.q-stem-text.stem-ar-text {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: isolate !important;
+  font-family: 'Amiri', 'Traditional Arabic', 'Segoe UI', serif !important;
+  font-size: 1.08em !important;
+  line-height: 1.7 !important;
+}
+
+.q-optical-options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+

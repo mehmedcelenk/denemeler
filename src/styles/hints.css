@@ -1,0 +1,53 @@
+/* ========================================================= */
+/* PUSULA İPUCU VE HİNT BANNER STİLLERİ                      */
+/* ========================================================= */
+.btn-companion-icon.hint-revealed {
+  background: rgba(2, 132, 199, 0.14) !important;
+  border-color: var(--brand-accent) !important;
+  color: var(--brand-accent) !important;
+}
+
+.single-hint-banner {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: rgba(2, 132, 199, 0.06);
+  border-left: 3px solid var(--brand-accent);
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 11.5px;
+  line-height: 1.45;
+  animation: hintPopIn 0.15s ease;
+}
+
+body.dark-mode .single-hint-banner {
+  background: rgba(56, 189, 248, 0.08);
+  border-left-color: #38bdf8;
+}
+
+@keyframes hintPopIn {
+  0% { opacity: 0; transform: translateY(-4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hint-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: var(--brand-accent);
+  text-transform: uppercase;
+}
+
+body.dark-mode .hint-header {
+  color: #38bdf8;
+}
+
+.hint-content {
+  color: var(--paper-text);
+  font-weight: 550;
+}
+

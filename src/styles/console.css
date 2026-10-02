@@ -1,0 +1,240 @@
+/* ========================================================= */
+/* 4. SAĞ ALT KONSOL & 3 ÇİZGİLİ MENÜ BUTONU                */
+/* ========================================================= */
+.floating-console-container {
+  position: fixed;
+  bottom: calc(24px + var(--safe-bottom));
+  right: 24px;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.btn-square-console {
+  width: 48px;
+  height: 48px;
+  background: #0f172a;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+  transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+body.dark-mode .btn-square-console {
+  background: #25272d;
+  color: #f0f2f5;
+  border-color: #383a42;
+}
+
+.btn-square-console:hover {
+  transform: scale(1.06);
+}
+
+.console-menu-popup {
+  background: var(--hud-bg);
+  border: 1px solid var(--hud-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.28);
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  width: 236px;
+  animation: popUp 0.16s ease-out;
+}
+
+.console-menu-popup.open {
+  display: flex;
+}
+
+@keyframes popUp {
+  from { opacity: 0; transform: translateY(8px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* "EL ALİM" Modern Kufi Hat Başlığı */
+.console-al-alim {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--brand-accent);
+  padding: 4px 0 6px 0;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--hud-border);
+  margin-bottom: 2px;
+  user-select: none;
+}
+
+/* Hızlı Araçlar Çubuğu (Geri Al, Sıfırla, Zoom, Tam Ekran Yan Yana) */
+.console-tools-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  background: rgba(125, 125, 125, 0.08);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--hud-border);
+}
+
+.btn-tool-icon {
+  flex: 1;
+  height: 34px;
+  border-radius: 7px;
+  border: none;
+  background: transparent;
+  color: var(--hud-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  padding: 0;
+}
+
+.btn-tool-icon:hover {
+  background: rgba(125, 125, 125, 0.16);
+  color: var(--brand-accent);
+}
+
+.btn-tool-icon:active {
+  transform: scale(0.95);
+}
+
+/* Konsol Kontrol Grupları (Segmented Toggle) */
+.console-control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 2px 0;
+}
+
+.console-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.console-group-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--paper-text-muted);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.console-segmented-pill {
+  display: flex;
+  background: rgba(125, 125, 125, 0.08);
+  padding: 3px;
+  border-radius: 9px;
+  gap: 3px;
+  border: 1px solid var(--hud-border);
+}
+
+.btn-segmented-pill {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--paper-text-muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-segmented-pill:hover {
+  color: var(--hud-text);
+  background: rgba(125, 125, 125, 0.12);
+}
+
+.btn-segmented-pill.active {
+  background: var(--paper-bg);
+  color: var(--brand-accent);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  font-weight: 800;
+}
+
+body.dark-mode .btn-segmented-pill.active {
+  background: #2a2c33;
+  color: var(--brand-accent);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Vurgu Rengi Seçici (Accent Swatches) */
+.console-color-swatches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  background: rgba(125, 125, 125, 0.08);
+  padding: 5px 8px;
+  border-radius: 9px;
+  border: 1px solid var(--hud-border);
+}
+
+.btn-color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: var(--swatch-color);
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+  padding: 0;
+  position: relative;
+}
+
+.btn-color-swatch:hover {
+  transform: scale(1.18);
+}
+
+.btn-color-swatch.active {
+  transform: scale(1.15);
+  box-shadow: 0 0 0 2px var(--hud-bg), 0 0 0 4px var(--swatch-color);
+}
+
+.console-action-row {
+  background: none;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--hud-text);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  transition: background 0.12s;
+  text-align: left;
+  width: 100%;
+}
+
+.console-action-row:hover {
+  background: rgba(125, 125, 125, 0.12);
+}
+
+.console-divider {
+  height: 1px;
+  background: var(--hud-border);
+  margin: 2px 0;
+}
+

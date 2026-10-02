@@ -1,0 +1,249 @@
+/* ========================================================= */
+/* SÜRÜKLENEBİLİR MİNNACIK NAKİT NUMPAD (MICRO CALCULATOR)   */
+/* ========================================================= */
+.mini-calc-widget {
+  position: fixed;
+  bottom: 85px;
+  right: 25px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  user-select: none;
+  animation: calcPopIn 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes calcPopIn {
+  0% { opacity: 0; transform: scale(0.92) translateY(8px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Sayı sadece kendi boyutu kadar bir pill (bg) içinde */
+.mini-calc-display-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: var(--paper-bg);
+  border: 1.5px solid var(--paper-border);
+  border-radius: 12px;
+  padding: 4px 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  cursor: grab;
+  min-width: 44px;
+  max-width: 140px;
+  gap: 5px;
+  overflow: hidden;
+  transition: all 0.15s ease;
+}
+
+.mini-calc-display-pill:active {
+  cursor: grabbing;
+}
+
+.mini-calc-drag-handle {
+  font-size: 11px;
+  color: var(--paper-text-muted, #888);
+  opacity: 0.5;
+  margin-right: auto;
+  user-select: none;
+  cursor: grab;
+  letter-spacing: -1px;
+}
+
+.mini-calc-display-sub {
+  font-size: 10px;
+  color: var(--brand-accent);
+  font-weight: 800;
+  font-family: monospace;
+}
+
+.mini-calc-display-main {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--paper-text);
+  font-family: monospace;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Numpad Ana Gövdesi */
+.mini-calc-numpad-body {
+  background: var(--paper-bg);
+  border: 1.5px solid var(--paper-border);
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 6px;
+}
+
+/* 3x4 Panel Izgarası */
+.mini-calc-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 38px);
+  grid-template-rows: repeat(4, 32px);
+  gap: 4px;
+}
+
+.mini-calc-panel-ops {
+  border-left: 1px solid var(--paper-border);
+  padding-left: 6px;
+}
+
+.micro-calc-btn {
+  background: rgba(125, 125, 125, 0.08);
+  border: 1px solid var(--paper-border);
+  border-radius: 7px;
+  color: var(--paper-text);
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  user-select: none;
+}
+
+.micro-calc-btn:hover {
+  background: rgba(125, 125, 125, 0.18);
+  transform: translateY(-1px);
+}
+
+.micro-calc-btn:active {
+  transform: scale(0.92);
+}
+
+/* Change (⇄) Tuşu */
+.micro-btn-change {
+  background: rgba(2, 132, 199, 0.12);
+  color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.micro-btn-change:hover {
+  background: var(--brand-accent);
+  color: #ffffff;
+}
+
+/* İşlem Tuşları */
+.micro-btn-op {
+  color: var(--brand-accent);
+  font-weight: 800;
+  background: rgba(2, 132, 199, 0.08);
+  border-color: rgba(2, 132, 199, 0.2);
+}
+
+.micro-btn-op.is-active-op {
+  background: var(--brand-accent);
+  color: #ffffff;
+  border-color: var(--brand-accent);
+}
+
+/* Eşittir (=) */
+.micro-btn-equals {
+  background: var(--brand-accent);
+  color: #ffffff;
+  font-weight: 800;
+  border-color: var(--brand-accent);
+}
+
+/* Kırmızı Kapatma (✕) */
+.micro-btn-close {
+  background: rgba(225, 29, 72, 0.12);
+  color: #e11d48;
+  border-color: rgba(225, 29, 72, 0.3);
+  font-weight: 800;
+}
+
+.micro-btn-close:hover {
+  background: #e11d48;
+  color: #ffffff;
+}
+
+/* ========================================================= */
+/* BÜYÜK EKRAN / PC: İŞARETLER VE RAKAMLAR YAN YANA GÖRÜNÜR */
+/* ========================================================= */
+@media (min-width: 641px) {
+  .mini-calc-display-pill {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mini-calc-panel-num,
+  .mini-calc-panel-ops {
+    display: grid !important;
+  }
+
+  /* PC'de her şey görünür olduğundan ⇄ gizlenir */
+  .mini-calc-panel .micro-btn-change {
+    display: none !important;
+  }
+
+  /* PC'de 0 ve = tuşları boşalan alanı doldurarak genişler */
+  .mini-calc-panel-num .micro-calc-btn-zero {
+    grid-column: span 2;
+  }
+
+  .mini-calc-panel-ops .micro-btn-equals {
+    grid-column: span 2;
+  }
+}
+
+/* ========================================================= */
+/* MOBİL (≤640px): CİHAZ KÜÇÜK OLDUĞU İÇİN TEK PANEL GÖSTERİLİR */
+/* ========================================================= */
+@media (max-width: 640px) {
+  .mini-calc-widget {
+    right: 14px;
+    bottom: 80px;
+  }
+
+  .mini-calc-numpad-body {
+    display: block;
+    padding: 5px;
+  }
+
+  .mini-calc-panel-ops {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .mini-calc-widget.calc-mode-num .mini-calc-panel-ops {
+    display: none !important;
+  }
+
+  .mini-calc-widget.calc-mode-num .mini-calc-panel-num {
+    display: grid !important;
+  }
+
+  .mini-calc-widget.calc-mode-ops .mini-calc-panel-num {
+    display: none !important;
+  }
+
+  .mini-calc-widget.calc-mode-ops .mini-calc-panel-ops {
+    display: grid !important;
+  }
+
+  .mini-calc-panel .micro-btn-change {
+    display: flex !important;
+  }
+
+  .mini-calc-panel-num .micro-calc-btn-zero {
+    grid-column: span 1;
+  }
+
+  .mini-calc-panel-ops .micro-btn-equals {
+    grid-column: span 1;
+  }
+}
+

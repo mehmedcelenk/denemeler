@@ -11,3 +11,9 @@ __pycache__/
 # Sistem dosyaları
 .DS_Store
 Thumbs.db
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+playwright-report/
+test-results/

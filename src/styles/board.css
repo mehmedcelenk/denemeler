@@ -1,0 +1,204 @@
+/* =========================================================
+   AKILLI TAHTA & ODAK ÇALIŞMA ALANI (EXCALIDRAW SPACE)
+   ========================================================= */
+
+.board-space-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 950;
+  background-color: var(--ambient-bg, #eceff3);
+  background-image: radial-gradient(var(--paper-border, #cbd5e1) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
+  background-position: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  outline: none;
+  color: var(--paper-text, #0f172a);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: none;
+  cursor: default;
+}
+
+.board-space-overlay.is-space-panning {
+  cursor: grab !important;
+}
+
+.board-space-overlay.is-dragging {
+  cursor: grabbing !important;
+  user-select: none !important;
+}
+
+body.dark-mode .board-space-overlay {
+  background-color: var(--ambient-bg, #151618);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1.2px, transparent 1.2px);
+  color: var(--paper-text, #e3e5ea);
+}
+
+/* GENİŞ TAHTA ÇALIŞMA ALANI */
+.board-canvas-area {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: visible;
+  position: relative;
+}
+
+/* MERKEZİ SORU SAHNESİ KARTI */
+.board-question-stage {
+  width: 100%;
+  max-width: 640px;
+  background: var(--paper-bg, #ffffff);
+  color: var(--paper-text, #0f172a);
+  border: 1px solid var(--paper-border, #cbd5e1);
+  border-radius: 16px;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.15), 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 22px 26px;
+  box-sizing: border-box;
+  will-change: transform;
+  transform-origin: center center;
+  touch-action: auto;
+  user-select: auto;
+}
+
+body.dark-mode .board-question-stage {
+  background: var(--paper-bg, #1e1f23);
+  border-color: var(--paper-border, #2d2f36);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.65);
+  color: var(--paper-text, #e3e5ea);
+}
+
+.board-question-stage .btn-board-mode {
+  color: var(--brand-accent, #0284c7) !important;
+  opacity: 1 !important;
+  background: color-mix(in srgb, var(--brand-accent, #0284c7) 15%, transparent) !important;
+}
+
+/* ÜST SAĞ EYLEM ÇUBUĞU */
+.board-actions-bar {
+  position: fixed;
+  top: 18px;
+  right: 24px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* MERKEZE DÖN BUTONU */
+.btn-board-recenter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: var(--paper-bg, #ffffff);
+  color: var(--paper-text, #0f172a);
+  border: 1px solid var(--paper-border, #cbd5e1);
+  border-radius: 9999px;
+  font-size: 12.5px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-board-recenter:hover {
+  background: var(--brand-accent, #0284c7);
+  color: #ffffff;
+  border-color: var(--brand-accent, #0284c7);
+  transform: translateY(-1px);
+}
+
+body.dark-mode .btn-board-recenter {
+  background: var(--paper-bg, #1e1f23);
+  border-color: var(--paper-border, #2d2f36);
+  color: var(--paper-text, #e3e5ea);
+}
+
+body.dark-mode .btn-board-recenter:hover {
+  background: var(--brand-accent, #38bdf8);
+  color: #0f172a;
+}
+
+/* TAHTADAN ÇIKIŞ BUTONU */
+.btn-board-exit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: var(--paper-bg, #ffffff);
+  color: var(--paper-text, #0f172a);
+  border: 1px solid var(--paper-border, #cbd5e1);
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-board-exit:hover {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(239, 68, 68, 0.3);
+}
+
+body.dark-mode .btn-board-exit {
+  background: var(--paper-bg, #1e1f23);
+  border-color: var(--paper-border, #2d2f36);
+  color: var(--paper-text, #e3e5ea);
+}
+
+body.dark-mode .btn-board-exit:hover {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+/* TAHTA ALT HİNT ÇUBUĞU */
+.board-pan-hint {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: var(--paper-bg, #ffffff);
+  color: var(--paper-text-muted, #64748b);
+  border: 1px solid var(--paper-border, #cbd5e1);
+  border-radius: 9999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+body.dark-mode .board-pan-hint {
+  background: var(--paper-bg, #1e1f23);
+  border-color: var(--paper-border, #2d2f36);
+  color: var(--paper-text-muted, #8e94a0);
+}
+
