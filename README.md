@@ -1,3 +1,36 @@
+# AÖL Dijital Sınav Kitapçığı
+
+Web arayüzü özellik bazında modüllere ayrılmıştır. Başlangıç rehberi: [Mimari ve özellik haritası](docs/ARCHITECTURE.md). AI ile çalışırken proje kuralları [AGENTS.md](AGENTS.md) içindedir.
+
+## Yerel geliştirme
+
+Node.js 22.12 veya üzeri (22.x), npm ve veri üretimi için Python 3 gerekir.
+
+```bash
+npm ci
+npm run dev
+```
+
+Terminaldeki yerel adresi aç. `index.html` dosyasını doğrudan çift tıklamak yerine geliştirme sunucusunu kullan.
+
+```bash
+npm run check      # Kod, tip, mimari ve veri kontrolleri
+npm run build      # Kontroller + dist/ yayın çıktısı
+npm run test:e2e   # Build sonrasında tarayıcı akışları
+npm run preview   # Üretim çıktısını yerelde aç
+npm run data:build # İstenirse soru verilerini Python ile yeniden üret
+```
+
+Tarayıcı testleri Linux'ta `/usr/bin/google-chrome` varsa onu kullanır. Yoksa bir defa `npx playwright install chromium` çalıştır. Farklı Chrome yolu için `PLAYWRIGHT_CHROMIUM_EXECUTABLE` ortam değişkenini kullan.
+
+## Yayın
+
+Statik hosting'e **yalnızca `dist/` klasörünü** yayınla. Mevcut Surge alan adının `CNAME` dosyası build sırasında bu klasöre kopyalanır. Kaynak kök dizinini yayınlamak artık geliştirme kaynaklarını yayınlar ve doğru üretim akışı değildir.
+
+## Veri pipeline'ı ve arşiv
+
+Aşağıdaki bölüm PDF kaynaklarının ve master veritabanının açıklamasıdır. Master soru sayısı, web arayüzüne filtrelenerek aktarılan soru sayısından farklı olabilir.
+
 # MEB Açık Öğretim Lisesi (AÖL) Çıkmış Soru Veritabanı ve Pipeline
 
 Bu proje, Millî Eğitim Bakanlığı Açık Öğretim Lisesi sınav kitapçıklarındaki tüm soruları ve cevap anahtarlarını ayrıştırarak web uygulamaları, soru bankaları ve konu bazlı soru analizi için yapılandırılmış JSON veritabanına dönüştürür.
@@ -112,3 +145,4 @@ Tüm PDF'leri baştan sona yeniden işlemek ve tüm JSON'ları güncellemek içi
 python3 scripts/batch_parser.py
 ```
 
+# ortaklar
