@@ -164,7 +164,7 @@ def process_pdf(pdf_path, year_str, donem_no, oturum_no, global_start_id):
     return all_records, len(courses), current_id
 
 print('Testing 2023-2024 Dönem 2...')
-recs, nc, gid = process_pdf('/home/mehmedbaykan/codes/ortaklar/kaynak_pdfler/2023_2024/donem2/oturum1.pdf', '2023-2024', 2, 1, 1)
+recs, nc, gid = process_pdf('/home/mehmedbaykan/codes/ortaklar/docs/kaynak_pdfler/2023_2024/donem2/oturum1.pdf', '2023-2024', 2, 1, 1)
 print(f'Done! Found {nc} courses and {len(recs)} questions.')
 ans_mapped = sum(1 for r in recs if r['dogru_cevap'] is not None)
 print(f'Answers mapped: {ans_mapped} / {len(recs)}')

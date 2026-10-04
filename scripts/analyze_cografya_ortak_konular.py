@@ -138,10 +138,10 @@ def classify_question(q):
 
 # Run classification on all 4 courses
 courses = {
-    'COĞ-1': 'ciktilar/cografya/151_COGRAFYA_1.json',
-    'COĞ-2': 'ciktilar/cografya/152_COGRAFYA_2.json',
-    'COĞ-3': 'ciktilar/cografya/153_COGRAFYA_3.json',
-    'COĞ-4': 'ciktilar/cografya/154_COGRAFYA_4.json',
+    'COĞ-1': 'scripts/ciktilar/cografya/151_COGRAFYA_1.json',
+    'COĞ-2': 'scripts/ciktilar/cografya/152_COGRAFYA_2.json',
+    'COĞ-3': 'scripts/ciktilar/cografya/153_COGRAFYA_3.json',
+    'COĞ-4': 'scripts/ciktilar/cografya/154_COGRAFYA_4.json',
 }
 
 classified = defaultdict(lambda: defaultdict(list))
@@ -179,9 +179,9 @@ print("=========================================================================
 print(f"Toplam Soru Sayısı: {len(all_classified_qs)}")
 
 # Save Outputs
-os.makedirs('ciktilar/analiz', exist_ok=True)
+os.makedirs('scripts/ciktilar/analiz', exist_ok=True)
 
-with open('ciktilar/analiz/cografya_sorulari_etiketli.json', 'w', encoding='utf-8') as f:
+with open('scripts/ciktilar/analiz/cografya_sorulari_etiketli.json', 'w', encoding='utf-8') as f:
     json.dump(all_classified_qs, f, ensure_ascii=False, indent=2)
 
 grouped_output = []
@@ -208,10 +208,10 @@ for top, courses_list, tot in sorted(cross_topics, key=lambda x: -x[2]):
             })
     grouped_output.append(topic_data)
 
-with open('ciktilar/analiz/cografya_ortak_konu_kumeleri.json', 'w', encoding='utf-8') as f:
+with open('scripts/ciktilar/analiz/cografya_ortak_konu_kumeleri.json', 'w', encoding='utf-8') as f:
     json.dump(grouped_output, f, ensure_ascii=False, indent=2)
 
-report_path = 'ciktilar/analiz/COGRAFYA_ORTAK_KONULAR_RAPORU.md'
+report_path = 'scripts/ciktilar/analiz/COGRAFYA_ORTAK_KONULAR_RAPORU.md'
 with open(report_path, 'w', encoding='utf-8') as f:
     f.write("# 🎯 Coğrafya 1, 2, 3, 4 Sınavları Ortak Konu ve Kesişim Raporu\n\n")
     f.write("> **Amaç:** Farklı dönem ve seviyedeki (Coğ 1-4) öğrencileri aynı derslikte toplayıp ortak konuları anlatarak **bir taşla 4 kuş vurmak**.\n\n")

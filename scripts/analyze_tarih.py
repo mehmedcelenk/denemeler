@@ -120,7 +120,7 @@ def classify_tarih(q):
 
 # Tarih 1-6 + İnkılap 1-2
 tarih_codes = [131, 132, 133, 134, 137, 138, 141, 142]
-with open('ciktilar/tum_sorular.json') as fp:
+with open('scripts/ciktilar/tum_sorular.json') as fp:
     all_db = json.load(fp)
 
 tarih_qs = [r for r in all_db if r['ders_kodu'] in tarih_codes]
@@ -161,11 +161,11 @@ for topic_name, _ in TARIH_RULES:
 print("=" * 95)
 
 # Save Outputs
-os.makedirs('ciktilar/analiz', exist_ok=True)
-with open('ciktilar/analiz/tarih_sorulari_etiketli.json', 'w', encoding='utf-8') as f:
+os.makedirs('scripts/ciktilar/analiz', exist_ok=True)
+with open('scripts/ciktilar/analiz/tarih_sorulari_etiketli.json', 'w', encoding='utf-8') as f:
     json.dump(all_tagged, f, ensure_ascii=False, indent=2)
 
-report_path = 'ciktilar/analiz/TARIH_ORTAK_KONULAR_RAPORU.md'
+report_path = 'scripts/ciktilar/analiz/TARIH_ORTAK_KONULAR_RAPORU.md'
 with open(report_path, 'w', encoding='utf-8') as f:
     f.write("# 🏛️ Tarih (Tarih 1-6 & T.C. İnkılap Tarihi 1-2) Ortak Konu ve Kesişim Raporu\n\n")
     f.write("> **Amaç:** Tarih ve İnkılap Tarihi derslerinde ortak konularda öğrencileri tek sınıfta toplayarak **bir taşla 8 kuş vurmak**.\n\n")

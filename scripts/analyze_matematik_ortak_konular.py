@@ -121,14 +121,14 @@ def classify_mat(q):
     return "İleri Matematik (Trigonometri, Logaritma, Limit, Türev)"
 
 courses = {
-    'MAT-1': 'ciktilar/dersler/998_MATEMATIK_1.json',
-    'MAT-2': 'ciktilar/dersler/999_MATEMATIK_2.json',
-    'MAT-3': 'ciktilar/dersler/163_MATEMATIK_3.json',
-    'MAT-4': 'ciktilar/dersler/164_MATEMATIK_4.json',
-    'S.MAT-1': 'ciktilar/dersler/165_SECMELI_MATEMATIK_1.json',
-    'S.MAT-2': 'ciktilar/dersler/609_SECMELI_MATEMATIK_2_B.json',
-    'S.MAT-3': 'ciktilar/dersler/467_SECMELI_MATEMATIK_3.json',
-    'S.MAT-4': 'ciktilar/dersler/468_SECMELI_MATEMATIK_4.json',
+    'MAT-1': 'scripts/ciktilar/dersler/998_MATEMATIK_1.json',
+    'MAT-2': 'scripts/ciktilar/dersler/999_MATEMATIK_2.json',
+    'MAT-3': 'scripts/ciktilar/dersler/163_MATEMATIK_3.json',
+    'MAT-4': 'scripts/ciktilar/dersler/164_MATEMATIK_4.json',
+    'S.MAT-1': 'scripts/ciktilar/dersler/165_SECMELI_MATEMATIK_1.json',
+    'S.MAT-2': 'scripts/ciktilar/dersler/609_SECMELI_MATEMATIK_2_B.json',
+    'S.MAT-3': 'scripts/ciktilar/dersler/467_SECMELI_MATEMATIK_3.json',
+    'S.MAT-4': 'scripts/ciktilar/dersler/468_SECMELI_MATEMATIK_4.json',
 }
 
 classified = defaultdict(lambda: defaultdict(list))
@@ -145,9 +145,9 @@ for cname, cpath in courses.items():
         all_qs.append(q_copy)
 
 # Save Outputs
-os.makedirs('ciktilar/analiz', exist_ok=True)
+os.makedirs('scripts/ciktilar/analiz', exist_ok=True)
 
-with open('ciktilar/analiz/matematik_sorulari_etiketli.json', 'w', encoding='utf-8') as f:
+with open('scripts/ciktilar/analiz/matematik_sorulari_etiketli.json', 'w', encoding='utf-8') as f:
     json.dump(all_qs, f, ensure_ascii=False, indent=2)
 
 cross_topics = []
@@ -181,10 +181,10 @@ for top, courses_list, tot in sorted(cross_topics, key=lambda x: -x[2]):
             })
     grouped_output.append(topic_data)
 
-with open('ciktilar/analiz/matematik_ortak_konu_kumeleri.json', 'w', encoding='utf-8') as f:
+with open('scripts/ciktilar/analiz/matematik_ortak_konu_kumeleri.json', 'w', encoding='utf-8') as f:
     json.dump(grouped_output, f, ensure_ascii=False, indent=2)
 
-report_path = 'ciktilar/analiz/MATEMATIK_ORTAK_KONULAR_RAPORU.md'
+report_path = 'scripts/ciktilar/analiz/MATEMATIK_ORTAK_KONULAR_RAPORU.md'
 with open(report_path, 'w', encoding='utf-8') as f:
     f.write("# 📐 Matematik (MAT 1 - 4 & Seçmeli MAT 1 - 4) Ortak Konu ve Kesişim Raporu\n\n")
     f.write("> **Amaç:** Matematik 1, 2, 3, 4 ve Seçmeli Matematik derslerini alan öğrencileri ortak konularda tek sınıfta toplayarak **bir taşla birden fazla kuş vurmak**.\n\n")

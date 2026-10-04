@@ -1,5 +1,5 @@
 import { getTopicKey } from '../../shared/topic.ts';
-import { state } from '../../app/state.ts';
+import { state, onStateChange } from '../../app/state.ts';
 import { SUBJECTS, getCondensedCourseCode, matchesSubject } from '../../data/subjects.js';
 import { questionMatchesSearch } from '../../shared/search.ts';
 import { getAggregatedTopics } from '../subjects/topic-model.js';
@@ -102,3 +102,19 @@ export function updateTopBadge(customTitle) {
   if (emojiEl) emojiEl.textContent = badgeEmoji;
   if (textEl) textEl.textContent = titleStr;
 }
+
+onStateChange('booklet:refresh', () => {
+  updateBookletQuestions();
+});
+
+onStateChange('booklet:updated', (payload) => {
+  const customTitle = (payload && typeof payload === 'object' && 'customTitle' in payload)
+    ? payload.customTitle
+    : undefined;
+  updateTopBadge(customTitle);
+  const targetQid = (payload && typeof payload === 'object' && 'targetQid' in payload)
+    ? payload.targetQid
+    : undefined;
+  renderBookletPages(targetQid);
+});
+

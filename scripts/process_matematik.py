@@ -7,7 +7,7 @@ MATEMATİK (Matematik 1 - 4) Zorunlu Ortak Dersleri Analiz ve Temizleme Scripti
 - MEB Ortaöğretim Matematik Dersi Öğretim Programı ünite ve kazanım hiyerarşisi uygulanır.
 - Geometrideki kenar uzunluk çizgileri (|AB|) mutlak değerden kesin olarak ayrıştırılır.
 - Bozuk OCR formülleri ve mantık sembolleri tamir edilir.
-- Kesişim kümeleri taranır ve ciktilar/analiz/MATEMATIK_KONU_DENETIM_RAPORU.md üretilir.
+- Kesişim kümeleri taranır ve scripts/ciktilar/analiz/MATEMATIK_KONU_DENETIM_RAPORU.md üretilir.
 """
 
 import json
@@ -192,7 +192,7 @@ def main():
     print("📐 MATEMATİK DERSLERİ (MAT 1 - 4) KAZANIM VE SINIFLANDIRMA MOTORU")
     print("=" * 60)
 
-    with open('ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         all_questions = json.load(f)
 
     mat_questions = [q for q in all_questions if 'MATEMATİK' in q.get('ders', '')]
@@ -226,7 +226,7 @@ def main():
     print(f"✅ {repaired_count} soru için OCR ve formül tamiri yapıldı.")
 
     # 1. Özel Matematik çıktısını kaydet
-    out_mat_path = 'ciktilar/analiz/matematik_analizli_sorular_temiz.json'
+    out_mat_path = 'scripts/ciktilar/analiz/matematik_analizli_sorular_temiz.json'
     with open(out_mat_path, 'w', encoding='utf-8') as f:
         json.dump(processed_questions, f, ensure_ascii=False, indent=2)
     print(f"✅ {out_mat_path} kaydedildi.")
@@ -236,9 +236,9 @@ def main():
     updated_all.extend(processed_questions)
     updated_all.sort(key=lambda x: x['id'])
 
-    with open('ciktilar/analiz/tum_analizli_sorular_temiz.json', 'w', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json', 'w', encoding='utf-8') as f:
         json.dump(updated_all, f, ensure_ascii=False, indent=2)
-    print(f"✅ ciktilar/analiz/tum_analizli_sorular_temiz.json güncellendi.")
+    print(f"✅ scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json güncellendi.")
 
     # 3. Denetim Raporu Üret
     by_topic = defaultdict(list)
@@ -246,7 +246,7 @@ def main():
         key = f"{q['ana_konu']} / {q['alt_konu']}"
         by_topic[key].append(q)
 
-    report_path = 'ciktilar/analiz/MATEMATIK_KONU_DENETIM_RAPORU.md'
+    report_path = 'scripts/ciktilar/analiz/MATEMATIK_KONU_DENETIM_RAPORU.md'
     with open(report_path, 'w', encoding='utf-8') as f:
         f.write("# 📐 MEB AÖL Matematik (MAT 1 - 4) Konu ve Soru Denetim Raporu\n\n")
         f.write("> **Tarih:** Ekim 2026  \n")

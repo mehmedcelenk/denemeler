@@ -61,10 +61,10 @@ def generate_subject_report(json_path, output_md_path, subj_title):
     print(f"Rapor yazıldı: {output_md_path}")
 
 def generate_master_handbook():
-    path = 'ciktilar/analiz/HAP_ETUTLER_MASTER_REHBERI.md'
-    with open('ciktilar/analiz/cografya_hap_etut_paketleri.json') as f: cog = json.load(f)
-    with open('ciktilar/analiz/tde_hap_etut_paketleri.json') as f: tde = json.load(f)
-    with open('ciktilar/analiz/matematik_hap_etut_paketleri.json') as f: mat = json.load(f)
+    path = 'scripts/ciktilar/analiz/HAP_ETUTLER_MASTER_REHBERI.md'
+    with open('scripts/ciktilar/analiz/cografya_hap_etut_paketleri.json') as f: cog = json.load(f)
+    with open('scripts/ciktilar/analiz/tde_hap_etut_paketleri.json') as f: tde = json.load(f)
+    with open('scripts/ciktilar/analiz/matematik_hap_etut_paketleri.json') as f: mat = json.load(f)
     
     md = []
     md.append("# 🏆 AÖL & AÖİHL Ortak Alt Konulu 'Hap Etüt' Master El Kitabı\n")
@@ -97,9 +97,9 @@ def generate_master_handbook():
     print(f"Master rehber yazıldı: {path}")
 
 if __name__ == '__main__':
-    generate_subject_report('ciktilar/analiz/cografya_hap_etut_paketleri.json', 'ciktilar/analiz/COGRAFYA_ALT_KONULAR_RAPORU.md', 'Coğrafya (1-4)')
-    generate_subject_report('ciktilar/analiz/tde_hap_etut_paketleri.json', 'ciktilar/analiz/TDE_ALT_KONULAR_RAPORU.md', 'Türk Dili ve Edebiyatı (1-8)')
-    generate_subject_report('ciktilar/analiz/matematik_hap_etut_paketleri.json', 'ciktilar/analiz/MATEMATIK_ALT_KONULAR_RAPORU.md', 'Matematik (1-4)')
+    generate_subject_report('scripts/ciktilar/analiz/cografya_hap_etut_paketleri.json', 'scripts/ciktilar/analiz/COGRAFYA_ALT_KONULAR_RAPORU.md', 'Coğrafya (1-4)')
+    generate_subject_report('scripts/ciktilar/analiz/tde_hap_etut_paketleri.json', 'scripts/ciktilar/analiz/TDE_ALT_KONULAR_RAPORU.md', 'Türk Dili ve Edebiyatı (1-8)')
+    generate_subject_report('scripts/ciktilar/analiz/matematik_hap_etut_paketleri.json', 'scripts/ciktilar/analiz/MATEMATIK_ALT_KONULAR_RAPORU.md', 'Matematik (1-4)')
     generate_master_handbook()
     print("✅ Tüm Markdown raporları başarıyla oluşturuldu!")
 

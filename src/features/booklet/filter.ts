@@ -1,4 +1,4 @@
-import { state } from '../../app/state.ts';
+import { state, onStateChange } from '../../app/state.ts';
 import type { BookletFilterMode } from '../../shared/question-filter.ts';
 import { updateBookletQuestions } from './selection.js';
 import { matchesSubject } from '../../data/subjects.js';
@@ -62,5 +62,10 @@ export function updateFilterButtonsUI(): void {
     </button>
   `;
 }
+
+onStateChange('filter:updated', () => {
+  updateFilterButtonsUI();
+});
+
 
 

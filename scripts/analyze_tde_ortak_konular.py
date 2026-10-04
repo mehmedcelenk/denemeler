@@ -137,7 +137,7 @@ all_qs = []
 
 for i in range(1, 9):
     cname = f"TDE-{i}"
-    fpath = glob.glob(f"ciktilar/dersler/54{i}_*.json")[0]
+    fpath = glob.glob(f"scripts/ciktilar/dersler/54{i}_*.json")[0]
     with open(fpath, encoding='utf-8') as fp:
         qs = json.load(fp)
     for q in qs:
@@ -148,10 +148,10 @@ for i in range(1, 9):
         all_qs.append(q_copy)
 
 # Save Outputs
-os.makedirs('ciktilar/analiz', exist_ok=True)
+os.makedirs('scripts/ciktilar/analiz', exist_ok=True)
 
 # 1. Tagged questions
-with open('ciktilar/analiz/tde_sorulari_etiketli.json', 'w', encoding='utf-8') as f:
+with open('scripts/ciktilar/analiz/tde_sorulari_etiketli.json', 'w', encoding='utf-8') as f:
     json.dump(all_qs, f, ensure_ascii=False, indent=2)
 
 # 2. Topic clusters
@@ -186,11 +186,11 @@ for top, courses_list, tot in sorted(cross_topics, key=lambda x: -x[2]):
             })
     grouped_output.append(topic_data)
 
-with open('ciktilar/analiz/tde_ortak_konu_kumeleri.json', 'w', encoding='utf-8') as f:
+with open('scripts/ciktilar/analiz/tde_ortak_konu_kumeleri.json', 'w', encoding='utf-8') as f:
     json.dump(grouped_output, f, ensure_ascii=False, indent=2)
 
 # 3. Report
-report_path = 'ciktilar/analiz/TDE_ORTAK_KONULAR_RAPORU.md'
+report_path = 'scripts/ciktilar/analiz/TDE_ORTAK_KONULAR_RAPORU.md'
 with open(report_path, 'w', encoding='utf-8') as f:
     f.write("# 📚 Türk Dili ve Edebiyatı (TDE 1 - 8) Ortak Konu ve Kesişim Raporu\n\n")
     f.write("> **Amaç:** TDE-1'den TDE-8'e kadar farklı sınıflardaki öğrencileri ortak konularda tek sınıfta toplayarak **bir taşla 8 kuş vurmak**.\n\n")

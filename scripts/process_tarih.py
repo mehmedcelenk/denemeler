@@ -174,7 +174,7 @@ def classify_tarih(q):
     return defaults.get(ders, ('Genel Tarih', 'Tarihsel Gelişmeler'))
 
 # Load questions
-with open('ciktilar/tum_sorular.json', 'r', encoding='utf-8') as f:
+with open('scripts/ciktilar/tum_sorular.json', 'r', encoding='utf-8') as f:
     all_qs = json.load(f)
 
 tarih_qs = [q for q in all_qs if q['ders'].startswith('TARİH – ')]
@@ -203,10 +203,10 @@ for q in tarih_qs:
     })
 
 # Save Tarih analyzed
-with open('ciktilar/analiz/tarih_analizli_sorular_temiz.json', 'w', encoding='utf-8') as f:
+with open('scripts/ciktilar/analiz/tarih_analizli_sorular_temiz.json', 'w', encoding='utf-8') as f:
     json.dump(analyzed_tarih, f, ensure_ascii=False, indent=2)
 
-print('✅ ciktilar/analiz/tarih_analizli_sorular_temiz.json kaydedildi!')
+print('✅ scripts/ciktilar/analiz/tarih_analizli_sorular_temiz.json kaydedildi!')
 
 # Check subtopic counts & cross-course intersections
 from collections import defaultdict

@@ -264,31 +264,31 @@ def process_subject_atomics(input_json_path, atomic_rules, subtopic_fallback_dic
 if __name__ == '__main__':
     # 1. Coğrafya
     process_subject_atomics(
-        'ciktilar/analiz/cografya_alt_konular_etiketli.json',
+        'scripts/ciktilar/analiz/cografya_alt_konular_etiketli.json',
         COGRAFYA_ATOMIC_RULES,
         None,
-        'ciktilar/analiz/cografya_atomik_etiketli.json',
-        'ciktilar/analiz/cografya_atomik_paketleri.json',
+        'scripts/ciktilar/analiz/cografya_atomik_etiketli.json',
+        'scripts/ciktilar/analiz/cografya_atomik_paketleri.json',
         ("Genel Coğrafya Soru Tipi", "Soru kökündeki anahtar kelimeye ve coğrafi ilkelere dikkat edilerek şıklar elenir.")
     )
     
     # 2. TDE
     process_subject_atomics(
-        'ciktilar/analiz/tde_alt_konular_etiketli.json',
+        'scripts/ciktilar/analiz/tde_alt_konular_etiketli.json',
         TDE_ATOMIC_RULES,
         TDE_SUBTOPIC_FALLBACK,
-        'ciktilar/analiz/tde_atomik_etiketli.json',
-        'ciktilar/analiz/tde_atomik_paketleri.json',
+        'scripts/ciktilar/analiz/tde_atomik_etiketli.json',
+        'scripts/ciktilar/analiz/tde_atomik_paketleri.json',
         ("Paragrafta Ana Düşünce ve Asıl Anlatılmak İstenen", "Paragrafın ilk ve son cümlelerine odaklanılır; yazarın vermek istediği mesaj ana düşüncedir.")
     )
     
     # 3. Matematik
     process_subject_atomics(
-        'ciktilar/analiz/matematik_alt_konular_etiketli.json',
+        'scripts/ciktilar/analiz/matematik_alt_konular_etiketli.json',
         MATEMATIK_ATOMIC_RULES,
         None,
-        'ciktilar/analiz/matematik_atomik_etiketli.json',
-        'ciktilar/analiz/matematik_atomik_paketleri.json',
+        'scripts/ciktilar/analiz/matematik_atomik_etiketli.json',
+        'scripts/ciktilar/analiz/matematik_atomik_paketleri.json',
         ("Birinci Dereceden Denklem ve Sadeleştirme", "Bilinmeyenler bir tarafa, bilinenler diğer tarafa toplanarak x yalnız bırakılır.")
     )
     print("\n🚀 Tüm dersler için Hiyerarşik Atomik Konular başarıyla işlendi!")

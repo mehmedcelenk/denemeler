@@ -15,7 +15,7 @@
   <!-- 1. ÜST ORTA BAŞLIK HAPI & EZAN VAKTİ (MERKEZİ GRUP)       -->
   <!-- ========================================================= -->
   <div class="top-center-badge-container">
-    <button class="top-center-pill" id="topCenterBadge" onclick="openSubjectDrawer()" title="Ders ve Konu Değiştir">
+    <button class="top-center-pill" id="topCenterBadge" data-action="open-subject-drawer" title="Ders ve Konu Değiştir">
       <span class="badge-icon" id="badgeEmoji">📖</span>
       <span class="badge-text" id="badgeMainText">TDE 1</span>
       <span class="badge-caret">▾</span>
@@ -24,15 +24,15 @@
       <span class="prayer-text" id="prayerDisplayText">00:00:00</span>
     </div>
     <div class="top-filter-pill" id="topFilterPill">
-      <button class="btn-top-filter active" id="btnFilterAll" onclick="setBookletFilter('all')" title="Tüm Sorular (Klasik Mod)">
+      <button class="btn-top-filter active" id="btnFilterAll" data-action="set-booklet-filter" data-filter="all" title="Tüm Sorular (Klasik Mod)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
         <span class="top-filter-label">Tümü</span>
       </button>
-      <button class="btn-top-filter" id="btnFilterRematch" onclick="setBookletFilter('rematch')" title="Rövanşlar (Yanlışlar & Şüpheliler)">
+      <button class="btn-top-filter" id="btnFilterRematch" data-action="set-booklet-filter" data-filter="rematch" title="Rövanşlar (Yanlışlar & Şüpheliler)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/><path d="M14.5 6.5 18 3h3v3l-3.5 3.5"/><path d="m5 14 4 4"/><path d="m7 17-3 3"/><path d="m3 19 2 2"/></svg>
         <span class="top-filter-label">Rövanş</span>
       </button>
-      <button class="btn-top-filter" id="btnFilterStarred" onclick="setBookletFilter('starred')" title="Yıldızlılar (Favoriler)">
+      <button class="btn-top-filter" id="btnFilterStarred" data-action="set-booklet-filter" data-filter="starred" title="Yıldızlılar (Favoriler)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <span class="top-filter-label">Yıldızlı</span>
       </button>
@@ -50,8 +50,8 @@
       <span class="resume-text" id="resumeSessionText">Kaldığın yerden devam et</span>
     </div>
     <div class="resume-banner-actions">
-      <button class="btn-resume-confirm" onclick="resumeLastSession()">Devam Et →</button>
-      <button class="btn-resume-dismiss" onclick="dismissResumeBanner()" title="Kapat">✕</button>
+      <button class="btn-resume-confirm" data-action="resume-last-session">Devam Et →</button>
+      <button class="btn-resume-dismiss" data-action="dismiss-resume-banner" title="Kapat">✕</button>
     </div>
   </div>
 
@@ -63,11 +63,11 @@
   <!-- ========================================================= -->
   <div class="board-space-overlay" id="boardSpaceOverlay" style="display:none;" tabindex="-1">
     <div class="board-actions-bar">
-      <button class="btn-board-recenter" id="btnBoardRecenter" onclick="resetBoardPan()" title="Merkeze Dön (0)" style="display:none;">
+      <button class="btn-board-recenter" id="btnBoardRecenter" data-action="reset-board-pan" title="Merkeze Dön (0)" style="display:none;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
         <span>Merkeze Dön</span>
       </button>
-      <button class="btn-board-exit" onclick="closeBoardFocusMode()" title="Tahtadan Çık (Esc)">
+      <button class="btn-board-exit" data-action="close-board-focus" title="Tahtadan Çık (Esc)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         <span>Tahtadan Çık</span>
       </button>
@@ -83,7 +83,7 @@
   </div>
 
   <!-- Özel Test Zoom Sıfırlama Rozeti -->
-  <button class="booklet-zoom-indicator" id="bookletZoomIndicator" onclick="resetBookletCanvasZoom()" title="Ölçeği Sıfırla (100%)">
+  <button class="booklet-zoom-indicator" id="bookletZoomIndicator" data-action="reset-canvas-zoom" title="Ölçeği Sıfırla (100%)">
     <span>🔍 %100</span>
     <span style="opacity:0.6; font-size:10px;">✕</span>
   </button>
@@ -97,20 +97,21 @@
       <div class="console-al-alim" title="El-Alim (Her Şeyi Bilen)">العليم</div>
 
       <!-- Hızlı Araçlar: Geri Al, Sıfırla, Zoom-, Zoom+, Tam Ekran (Yan Yana, Yazısız) -->
+      <!-- Hızlı Araçlar: Geri Al, Sıfırla, Zoom-, Zoom+, Tam Ekran (Yan Yana, Yazısız) -->
       <div class="console-tools-bar">
-        <button class="btn-tool-icon" onclick="clearAllMarks()" title="Şıkları Sıfırla">
+        <button class="btn-tool-icon" data-action="clear-all-marks" title="Şıkları Sıfırla">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>
         </button>
-        <button class="btn-tool-icon" onclick="undoClearMarks()" id="btnUndoClear" title="Geri Al (Undo)" style="opacity:0.35;">
+        <button class="btn-tool-icon" data-action="undo-clear-marks" id="btnUndoClear" title="Geri Al (Undo)" style="opacity:0.35;">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"/></svg>
         </button>
-        <button class="btn-tool-icon" onclick="zoomOut()" title="Yazıyı Küçült (-)">
+        <button class="btn-tool-icon" data-action="zoom-out" title="Yazıyı Küçült (-)">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
         </button>
-        <button class="btn-tool-icon" onclick="zoomIn()" title="Yazıyı Büyüt (+)">
+        <button class="btn-tool-icon" data-action="zoom-in" title="Yazıyı Büyüt (+)">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
         </button>
-        <button class="btn-tool-icon" onclick="toggleFullscreenFocusMode()" id="btnFullscreenTool" title="Tam Ekran / Odak Modu">
+        <button class="btn-tool-icon" data-action="toggle-fullscreen" id="btnFullscreenTool" title="Tam Ekran / Odak Modu">
           <svg id="iconFullscreenSvg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
         </button>
       </div>
@@ -121,10 +122,10 @@
           <span class="console-group-label">Sütun Düzeni</span>
         </div>
         <div class="console-segmented-pill" id="columnTogglePill">
-          <button class="btn-segmented-pill" data-cols="1" onclick="setColumnCount(1)">1</button>
-          <button class="btn-segmented-pill active" data-cols="2" onclick="setColumnCount(2)">2</button>
-          <button class="btn-segmented-pill" data-cols="3" onclick="setColumnCount(3)">3</button>
-          <button class="btn-segmented-pill" data-cols="4" onclick="setColumnCount(4)">4</button>
+          <button class="btn-segmented-pill" data-action="set-column-count" data-cols="1">1</button>
+          <button class="btn-segmented-pill active" data-action="set-column-count" data-cols="2">2</button>
+          <button class="btn-segmented-pill" data-action="set-column-count" data-cols="3">3</button>
+          <button class="btn-segmented-pill" data-action="set-column-count" data-cols="4">4</button>
         </div>
       </div>
 
@@ -134,11 +135,11 @@
           <span class="console-group-label">Tema</span>
         </div>
         <div class="console-segmented-pill" id="themeTogglePill">
-          <button class="btn-segmented-pill active" data-theme="light" onclick="setThemeMode('light')">
+          <button class="btn-segmented-pill active" data-action="set-theme-mode" data-theme="light">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
             <span>Açık</span>
           </button>
-          <button class="btn-segmented-pill" data-theme="dark" onclick="setThemeMode('dark')">
+          <button class="btn-segmented-pill" data-action="set-theme-mode" data-theme="dark">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
             <span>Koyu</span>
           </button>
@@ -151,10 +152,10 @@
           <span class="console-group-label">Seslendirme (İngilizce)</span>
         </div>
         <div class="console-segmented-pill" id="ttsVoiceTogglePill">
-          <button class="btn-segmented-pill active" id="btnTTSVoiceMale" onclick="setTTSVoiceGender('male')" title="Erkek Seslendirmen">
+          <button class="btn-segmented-pill active" id="btnTTSVoiceMale" data-action="set-tts-gender" data-gender="male" title="Erkek Seslendirmen">
             <span>👨🏽 Erkek</span>
           </button>
-          <button class="btn-segmented-pill" id="btnTTSVoiceFemale" onclick="setTTSVoiceGender('female')" title="Kadın Seslendirmen">
+          <button class="btn-segmented-pill" id="btnTTSVoiceFemale" data-action="set-tts-gender" data-gender="female" title="Kadın Seslendirmen">
             <span>🧕🏽 Kadın</span>
           </button>
         </div>
@@ -166,12 +167,12 @@
           <span class="console-group-label">Vurgu Rengi</span>
         </div>
         <div class="console-color-swatches" id="colorSwatchesGroup">
-          <button class="btn-color-swatch active" data-color="blue" style="--swatch-color:#0284c7;" onclick="setAccentColor('blue')" title="Okyanus Mavisi"></button>
-          <button class="btn-color-swatch" data-color="emerald" style="--swatch-color:#059669;" onclick="setAccentColor('emerald')" title="Zümrüt Yeşili"></button>
-          <button class="btn-color-swatch" data-color="indigo" style="--swatch-color:#6366f1;" onclick="setAccentColor('indigo')" title="İndigo Moru"></button>
-          <button class="btn-color-swatch" data-color="amber" style="--swatch-color:#d97706;" onclick="setAccentColor('amber')" title="Kehribar Sarısı"></button>
-          <button class="btn-color-swatch" data-color="rose" style="--swatch-color:#e11d48;" onclick="setAccentColor('rose')" title="Gül Kızılı"></button>
-          <button class="btn-color-swatch" data-color="slate" style="--swatch-color:#475569;" onclick="setAccentColor('slate')" title="Grafit Nötr"></button>
+          <button class="btn-color-swatch active" data-action="set-accent-color" data-color="blue" style="--swatch-color:#0284c7;" title="Okyanus Mavisi"></button>
+          <button class="btn-color-swatch" data-action="set-accent-color" data-color="emerald" style="--swatch-color:#059669;" title="Zümrüt Yeşili"></button>
+          <button class="btn-color-swatch" data-action="set-accent-color" data-color="indigo" style="--swatch-color:#6366f1;" title="İndigo Moru"></button>
+          <button class="btn-color-swatch" data-action="set-accent-color" data-color="amber" style="--swatch-color:#d97706;" title="Kehribar Sarısı"></button>
+          <button class="btn-color-swatch" data-action="set-accent-color" data-color="rose" style="--swatch-color:#e11d48;" title="Gül Kızılı"></button>
+          <button class="btn-color-swatch" data-action="set-accent-color" data-color="slate" style="--swatch-color:#475569;" title="Grafit Nötr"></button>
         </div>
       </div>
 
@@ -179,20 +180,20 @@
 
 
       <!-- Hesap Makinesi Butonu -->
-      <button class="console-action-row" onclick="toggleMiniCalculator()">
+      <button class="console-action-row" data-action="toggle-calculator">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
         <span>Hesap Makinesi</span>
       </button>
 
       <!-- PDF / Yazdır Butonu (Lucide Printer SVG) -->
-      <button class="console-action-row" onclick="openPdfDialog()">
+      <button class="console-action-row" data-action="open-pdf-dialog">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
         <span>PDF / Yazdır...</span>
       </button>
     </div>
 
     <!-- 3 Çizgili Ana Menü Butonu (Hamburger) -->
-    <button class="btn-square-console" id="btnMasterConsole" onclick="toggleConsoleMenu()" title="Menü">
+    <button class="btn-square-console" id="btnMasterConsole" data-action="toggle-console-menu" title="Menü">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <line x1="4" y1="6" x2="20" y2="6"/>
         <line x1="4" y1="12" x2="20" y2="12"/>
@@ -216,19 +217,19 @@
   <!-- ========================================================= -->
   <!-- 4. DERS & KESİŞİM ÇEKMECESİ                              -->
   <!-- ========================================================= -->
-  <div class="drawer-overlay" id="drawerOverlay" onclick="handleDrawerOverlayClick(event)">
-    <div class="drawer-card" onclick="event.stopPropagation()">
+  <div class="drawer-overlay" id="drawerOverlay">
+    <div class="drawer-card">
       <div class="drawer-header">
         <h3>🎯 Ders & Soru Seçici</h3>
-        <button class="btn-close-drawer" onclick="closeSubjectDrawer()">✕</button>
+        <button class="btn-close-drawer" data-action="close-subject-drawer">✕</button>
       </div>
 
       <!-- KÜLLİ ARAMA ALANI (Alan Seçiminden Hemen Sonra) -->
       <div class="drawer-search-section">
         <div class="drawer-search-bar">
           <span class="drawer-search-icon">🔍</span>
-          <input type="text" id="drawerSearchInput" class="drawer-search-input" placeholder="Soru kökü veya şıklarda ara... (örn: üçgen, tanzimat, hücresel)" oninput="handleDrawerSearch(this.value)" autocomplete="off">
-          <button id="drawerSearchClearBtn" class="drawer-search-clear" onclick="clearDrawerSearch()" title="Aramayı Temizle">✕</button>
+          <input type="text" id="drawerSearchInput" class="drawer-search-input" placeholder="Soru kökü veya şıklarda ara... (örn: üçgen, tanzimat, hücresel)" autocomplete="off">
+          <button id="drawerSearchClearBtn" class="drawer-search-clear" data-action="clear-drawer-search" title="Aramayı Temizle">✕</button>
         </div>
       </div>
 
@@ -238,7 +239,7 @@
           <div style="font-size:12px; font-weight:700; color:var(--paper-text-muted);" id="lblSearchResultsHeader">
             Arama Sonuçları:
           </div>
-          <button class="cat-pill-btn" style="padding:4px 10px; font-size:11px;" id="btnLoadAllSearchResults" onclick="loadAllSearchResultsToBooklet()">
+          <button class="cat-pill-btn" style="padding:4px 10px; font-size:11px;" id="btnLoadAllSearchResults" data-action="load-all-search">
             Arama Testini Başlat →
           </button>
         </div>
@@ -252,7 +253,7 @@
         <div class="library-banner-desc">
           Rövanş ve yıldızlı sorular tüm branşlardan karışık olarak sunulur. Bu moddayken branş ve konu seçimi kilitlidir.
         </div>
-        <button class="cat-pill-btn" style="background:#059669; color:#fff; border-color:#059669; padding:8px 18px; font-size:12.5px; font-weight:700;" onclick="exitLibraryView(); closeSubjectDrawer();">
+        <button class="cat-pill-btn" style="background:#059669; color:#fff; border-color:#059669; padding:8px 18px; font-size:12.5px; font-weight:700;" data-action="exit-library-and-close-drawer">
           Standart Derse Dön
         </button>
       </div>
@@ -264,7 +265,7 @@
           <div class="subject-level-picker-group">
             <!-- Ders Dropdown -->
             <div class="custom-dropdown" id="subjectDropdownWrapper">
-              <button class="dropdown-trigger-btn" id="btnSubjectDropdownTrigger" onclick="toggleSubjectDropdown()" title="Ders Seç">
+              <button class="dropdown-trigger-btn" id="btnSubjectDropdownTrigger" data-action="toggle-subject-dropdown" title="Ders Seç">
                 <span id="selectedSubjIcon">📚</span>
                 <span id="selectedSubjShortName">TDE</span>
                 <span class="dropdown-arrow">▾</span>
@@ -282,7 +283,7 @@
           <div class="ios-switch-wrapper" id="intersectionSwitchWrapper" title="Açık: Kesişim (Ortak Konular) • Kapalı: Birleşim (Tüm Konular)">
             <span class="ios-switch-text">Kesişim</span>
             <label class="ios-switch">
-              <input type="checkbox" id="chkIntersectionSwitch" onchange="handleIntersectionToggle(this.checked)">
+              <input type="checkbox" id="chkIntersectionSwitch">
               <span class="ios-slider"></span>
             </label>
           </div>
@@ -290,7 +291,7 @@
 
         <!-- Hızlı Karışık Sınav Butonu -->
         <div style="margin-bottom:10px; display:flex; justify-content:flex-end;">
-          <button class="cat-pill-btn" style="padding:5px 12px; font-size:11px; background:var(--brand-accent); color:#fff; border-color:var(--brand-accent);" onclick="startInterleavedExam()" title="Seçili derslerden 20 soru karma deneme sınavı başlatır">
+          <button class="cat-pill-btn" style="padding:5px 12px; font-size:11px; background:var(--brand-accent); color:#fff; border-color:var(--brand-accent);" data-action="start-interleaved-exam" title="Seçili derslerden 20 soru karma deneme sınavı başlatır">
             🔀 Karışık Sınava Başla (20 Soru) →
           </button>
         </div>
@@ -301,7 +302,7 @@
             <div style="font-size:12px; font-weight:700; color:var(--paper-text-muted);" id="lblDrawerTopicHeader">
               Konu Başlıkları:
             </div>
-            <button class="cat-pill-btn" style="padding:4px 10px; font-size:11px;" id="btnLoadAllTopics" onclick="loadAllTopicsToBooklet()">
+            <button class="cat-pill-btn" style="padding:4px 10px; font-size:11px;" id="btnLoadAllTopics" data-action="load-all-topics">
               Tüm Soruları Yükle →
             </button>
           </div>
@@ -314,8 +315,8 @@
   <!-- ========================================================= -->
   <!-- 5. AKILLI PDF İNDİRME SEÇİM DİYALOĞU                     -->
   <!-- ========================================================= -->
-  <div class="pdf-dialog-overlay" id="pdfDialogOverlay" onclick="closePdfDialog()">
-    <div class="pdf-dialog-card" onclick="event.stopPropagation()">
+  <div class="pdf-dialog-overlay" id="pdfDialogOverlay">
+    <div class="pdf-dialog-card">
       <div class="pdf-dialog-title">🖨️ PDF & Yazdırma Seçenekleri</div>
 
       <div class="pdf-opt-group">
@@ -338,8 +339,8 @@
       </div>
 
       <div class="pdf-dialog-footer">
-        <button class="cat-pill-btn" onclick="closePdfDialog()">İptal</button>
-        <button class="btn-pdf-confirm" onclick="executePdfPrint()">
+        <button class="cat-pill-btn" data-action="close-pdf-dialog">İptal</button>
+        <button class="btn-pdf-confirm" data-action="execute-pdf-print">
           Yazdır / PDF Al →
         </button>
       </div>

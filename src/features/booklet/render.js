@@ -136,19 +136,9 @@ function renderPageChunkHtml(p, totalPages, badgeCode, columnClass) {
 
   const lucidePageEyeSvg = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`;
 
-  const hasEnglishInPage = pageSlice.some(q => (state.currentSubject === 'ING') || (q.ders && q.ders.includes('İNGİLİZCE')));
   const hasTdeInPage = pageSlice.some(q => (state.currentSubject === 'TDE') || (q.ders && q.ders.includes('TÜRK DİLİ')));
   let pageLegendHtml = '';
-  if (hasEnglishInPage) {
-    pageLegendHtml = `
-      <div class="page-xray-footer-legend">
-        <span class="xray-legend-item"><span class="xray-legend-line" style="background:#2563eb;"></span><strong>Özne</strong> (Subject)</span>
-        <span class="xray-legend-item"><span class="xray-legend-line" style="background:#e11d48;"></span><strong>Yüklem</strong> (Verb)</span>
-        <span class="xray-legend-item"><span class="xray-legend-line" style="background:#059669;"></span><strong>Nesne</strong> (Object)</span>
-        <span class="xray-legend-item"><span class="xray-legend-line" style="background:#d97706;"></span><strong>Zarf Tümleci</strong> (Adverbial)</span>
-      </div>
-    `;
-  } else if (hasTdeInPage) {
+  if (hasTdeInPage) {
     pageLegendHtml = `
       <div class="page-xray-footer-legend">
         <span class="xray-legend-item"><span class="xray-legend-line" style="background:#2563eb;"></span><strong>Özne</strong></span>

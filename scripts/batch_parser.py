@@ -185,7 +185,7 @@ def main():
     # Base directory (project root)
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     ciktilar_dir = os.path.join(base_dir, 'ciktilar')
-    kaynak_dir = os.path.join(base_dir, 'kaynak_pdfler')
+    kaynak_dir = os.path.join(base_dir, 'docs/kaynak_pdfler')
     
     # Directory setup
     os.makedirs(os.path.join(ciktilar_dir, 'donemler'), exist_ok=True)
@@ -207,7 +207,7 @@ def main():
     total_answers_mapped = 0
     
     for t_dir in term_dirs:
-        # e.g. kaynak_pdfler/2023_2024/donem1
+        # e.g. docs/kaynak_pdfler/2023_2024/donem1
         parts = t_dir.replace('\\', '/').split('/')
         year_folder = parts[-2] # 2023_2024
         donem_folder = parts[-1] # donem1
@@ -251,7 +251,7 @@ def main():
                 
     # Save course-specific files
     print("\n--------------------------------------------------")
-    print(f"Saving aggregated courses to ciktilar/dersler/ ...")
+    print(f"Saving aggregated courses to scripts/ciktilar/dersler/ ...")
     # Group by course code
     code_to_recs = defaultdict(list)
     code_to_name = {}
@@ -270,7 +270,7 @@ def main():
     
     # Save Coğrafya-specific outputs
     print("\n--------------------------------------------------")
-    print("Saving Coğrafya specific datasets to ciktilar/cografya/ ...")
+    print("Saving Coğrafya specific datasets to scripts/ciktilar/cografya/ ...")
     with open(os.path.join(ciktilar_dir, 'cografya', 'tum_cografya_sorulari.json'), 'w', encoding='utf-8') as f:
         json.dump(cografya_records, f, ensure_ascii=False, indent=2)
         

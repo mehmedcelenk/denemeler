@@ -9,8 +9,8 @@ test('Python veri üretimi arayüz dosyalarını değiştirmez', () => {
   const root = mkdtempSync(path.join(tmpdir(), 'aol-pipeline-'));
   try {
     cpSync('scripts', path.join(root, 'scripts'), { recursive: true });
-    mkdirSync(path.join(root, 'ciktilar/analiz'), { recursive: true });
-    cpSync('ciktilar/analiz/tum_analizli_sorular_temiz.json', path.join(root, 'ciktilar/analiz/tum_analizli_sorular_temiz.json'));
+    mkdirSync(path.join(root, 'scripts/ciktilar/analiz'), { recursive: true });
+    cpSync('scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json', path.join(root, 'scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json'));
     writeFileSync(path.join(root, 'index.html'), '<!-- kullanıcı arayüzü -->');
     mkdirSync(path.join(root, 'src'), { recursive: true });
     writeFileSync(path.join(root, 'src/main.js'), '// kullanıcı kodu');

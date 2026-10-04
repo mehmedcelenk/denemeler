@@ -1,7 +1,6 @@
-import { state } from '../../app/state.ts';
+import { state, notifyStateChange } from '../../app/state.ts';
 import type { Question } from '../../data/question.ts';
 import { renderQuestionCardHtml } from '../booklet/question-card.js';
-import { toggleSingleAnswerReveal } from '../answers/reveal.js';
 
 let activeBoardQuestionId: number | null = null;
 let panX = 0;
@@ -243,7 +242,7 @@ function handleBoardKeydown(e: KeyboardEvent): void {
   } else if (e.key === 'ArrowRight') {
     navigateBoardQuestion(1);
   } else if (e.key.toLowerCase() === 'c' && activeBoardQuestionId) {
-    toggleSingleAnswerReveal(activeBoardQuestionId);
+    notifyStateChange('answer:reveal', { questionId: activeBoardQuestionId });
   }
 }
 

@@ -13,7 +13,7 @@ def main():
     print("💎 AÖL DİJİTAL SINAV KİTAPÇIĞI DERLEYİCİSİ (SÜRÜM 3.4 - KREDİ & PUAN MOTORU)")
     print("=" * 60)
 
-    with open('ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         questions = json.load(f)
 
     # Resmî MEB AÖL Ders Kredileri Tablosu
@@ -105,16 +105,20 @@ def main():
         exam_counts[key] = exam_counts.get(key, 0) + 1
 
     existing_extra_fields = {}
-    ing_json_file = Path('data/subjects/ING.json')
-    if ing_json_file.exists():
-        try:
-            with open(ing_json_file, 'r', encoding='utf-8') as f_ing:
-                for item in json.load(f_ing):
-                    existing_extra_fields[item['id']] = {
-                        k: item[k] for k in ['soru', 'soru_tr', 'soru_ar', 'soru_xray'] if k in item
-                    }
-        except Exception as e:
-            print("Warning reading existing ING.json:", e)
+    subjects_dir = Path('data/subjects')
+    if subjects_dir.exists():
+        for sub_json in sorted(subjects_dir.glob('*.json')):
+            try:
+                with open(sub_json, 'r', encoding='utf-8') as f_sub:
+                    for item in json.load(f_sub):
+                        if 'id' in item:
+                            extras = {
+                                k: item[k] for k in ['soru', 'soru_tr', 'soru_ar', 'soru_xray'] if k in item
+                            }
+                            if extras:
+                                existing_extra_fields.setdefault(item['id'], {}).update(extras)
+            except Exception as e:
+                print(f"Warning reading existing {sub_json}:", e)
 
     cleaned_list = []
     for q in questions:

@@ -141,7 +141,7 @@ def main():
     print("🇹🇷 T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK İŞLEME VE ANALİZ MOTORU")
     print("=" * 60)
 
-    with open('ciktilar/tum_sorular.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/tum_sorular.json', 'r', encoding='utf-8') as f:
         all_raw = json.load(f)
 
     ink_raw = [q for q in all_raw if q.get('ders_kodu') in (141, 142)]
@@ -183,7 +183,7 @@ def main():
     print(f"Kademe Dağılımı: {dict(course_counts)}")
 
     # Kaydet
-    out_path = 'ciktilar/analiz/inkilap_analizli_sorular_temiz.json'
+    out_path = 'scripts/ciktilar/analiz/inkilap_analizli_sorular_temiz.json'
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(processed_questions, f, ensure_ascii=False, indent=2)
     print(f"✅ {out_path} dosyasına {len(processed_questions)} temiz soru yazıldı.")

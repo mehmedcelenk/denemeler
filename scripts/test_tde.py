@@ -138,7 +138,7 @@ all_qs = []
 
 for i in range(1, 9):
     cname = f"TDE-{i}"
-    fpath = glob.glob(f"ciktilar/dersler/54{i}_*.json")[0]
+    fpath = glob.glob(f"scripts/ciktilar/dersler/54{i}_*.json")[0]
     with open(fpath) as fp:
         qs = json.load(fp)
     for q in qs:

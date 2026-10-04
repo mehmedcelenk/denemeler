@@ -1,7 +1,7 @@
 import json, re, glob, os
 from collections import defaultdict
 
-with open('ciktilar/tum_sorular.json', encoding='utf-8') as f:
+with open('scripts/ciktilar/tum_sorular.json', encoding='utf-8') as f:
     all_questions = json.load(f)
 
 # Helper function
@@ -60,12 +60,12 @@ def run_topic_analysis(group_name, course_codes, topic_rules, default_topic, out
             cross_topics.append((top_name, active_courses, tot))
             
     # Save Tagged JSON
-    os.makedirs('ciktilar/analiz', exist_ok=True)
-    with open(f"ciktilar/analiz/{output_slug}_sorulari_etiketli.json", 'w', encoding='utf-8') as f:
+    os.makedirs('scripts/ciktilar/analiz', exist_ok=True)
+    with open(f"scripts/ciktilar/analiz/{output_slug}_sorulari_etiketli.json", 'w', encoding='utf-8') as f:
         json.dump(tagged_qs, f, ensure_ascii=False, indent=2)
         
     # Save Report
-    report_file = f"ciktilar/analiz/{output_slug.upper()}_ORTAK_KONULAR_RAPORU.md"
+    report_file = f"scripts/ciktilar/analiz/{output_slug.upper()}_ORTAK_KONULAR_RAPORU.md"
     with open(report_file, 'w', encoding='utf-8') as f:
         f.write(f"# 📖 {group_name} Ortak Konu ve Kesişim Raporu\n\n")
         f.write(f"> **Kapsam:** {len(qs)} Soru, {len(course_codes)} Zorunlu Ders, 8 Sınav Dönemi.\n\n")

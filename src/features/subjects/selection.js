@@ -1,10 +1,8 @@
-import { state } from '../../app/state.ts';
+import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { loadSubjectData } from '../../data/questions.js';
 import { SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
 import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.js';
 import { renderDrawerTopics } from './topics.js';
-import { updateBookletQuestions } from '../booklet/selection.js';
-import { updateFilterButtonsUI } from '../booklet/filter.ts';
 import { escapeHtml, escapeJs } from '../../shared/escape.ts';
 
 let selectionVersion = 0;
@@ -24,7 +22,7 @@ export async function setSubject(subj) {
   state.activeSearchFilter = '';
   state.drawerSearchTerm = '';
   state.bookletFilterMode = 'all';
-  updateFilterButtonsUI();
+  notifyStateChange('filter:updated');
   const input = document.getElementById('drawerSearchInput');
   if (input) input.value = '';
   const clearBtn = document.getElementById('drawerSearchClearBtn');
@@ -52,7 +50,7 @@ export async function setSubject(subj) {
   updateCourseModeToggleVisibility();
   renderDrawerSelectorBar();
   renderDrawerTopics();
-  updateBookletQuestions();
+  notifyStateChange('booklet:refresh');
   return true;
 }
 
@@ -161,7 +159,7 @@ export function toggleCourseLevel(courseName) {
   state.selectedTopicKey = null;
   renderDrawerSelectorBar();
   renderDrawerTopics();
-  updateBookletQuestions();
+  notifyStateChange('booklet:refresh');
 }
 
 export function handleIntersectionToggle(isChecked) {
@@ -185,4 +183,16 @@ if (typeof document !== 'undefined') {
     }
   });
 }
+
+onStateChange('drawer:topics-refresh', () => {
+  renderDrawerSelectorBar();
+});
+
+onStateChange('subject:select', async (payload) => {
+  if (payload && typeof payload === 'object' && 'subject' in payload && typeof payload.subject === 'string') {
+    await setSubject(payload.subject);
+  }
+});
+
+
 

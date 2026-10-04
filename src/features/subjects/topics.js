@@ -1,5 +1,5 @@
 import { getAggregatedTopics } from './topic-model.js';
-import { state } from '../../app/state.ts';
+import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { getCondensedCourseCode, getShortCourseName } from '../../data/subjects.js';
 import { updateBookletQuestions } from '../booklet/selection.js';
 import { updateFilterButtonsUI } from '../booklet/filter.ts';
@@ -98,6 +98,8 @@ export function selectTopicFromDrawer(topicKey) {
   updateFilterButtonsUI();
   closeSubjectDrawer();
   updateBookletQuestions();
+  notifyStateChange('filter:updated');
+  notifyStateChange('booklet:refresh');
 }
 
 export function loadAllTopicsToBooklet() {
@@ -118,4 +120,11 @@ export function loadAllTopicsToBooklet() {
 
   closeSubjectDrawer();
   updateBookletQuestions();
+  notifyStateChange('filter:updated');
+  notifyStateChange('booklet:refresh');
 }
+
+onStateChange('drawer:topics-refresh', () => {
+  renderDrawerTopics();
+});
+

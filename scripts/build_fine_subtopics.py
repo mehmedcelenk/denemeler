@@ -537,7 +537,7 @@ def classify_question(q, taxonomy, default_tuple):
     return default_tuple[0], default_tuple[1]
 
 def run_subject_analysis(subj_name, course_codes, taxonomy, default_tuple):
-    with open('ciktilar/tum_sorular.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/tum_sorular.json', 'r', encoding='utf-8') as f:
         all_qs = json.load(f)
         
     qs = [q for q in all_qs if q['ders_kodu'] in course_codes]
@@ -616,7 +616,7 @@ def run_subject_analysis(subj_name, course_codes, taxonomy, default_tuple):
     return tagged_qs, etut_paketleri
 
 if __name__ == '__main__':
-    os.makedirs('ciktilar/analiz', exist_ok=True)
+    os.makedirs('scripts/ciktilar/analiz', exist_ok=True)
     
     # 1. Coğrafya
     cog_tagged, cog_paketler = run_subject_analysis(
@@ -625,9 +625,9 @@ if __name__ == '__main__':
         COGRAFYA_SUBTOPICS,
         ("Genel Coğrafya", "Doğa ve İnsan Etkileşimi")
     )
-    with open('ciktilar/analiz/cografya_alt_konular_etiketli.json', 'w', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/cografya_alt_konular_etiketli.json', 'w', encoding='utf-8') as f:
         json.dump(cog_tagged, f, ensure_ascii=False, indent=2)
-    with open('ciktilar/analiz/cografya_hap_etut_paketleri.json', 'w', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/cografya_hap_etut_paketleri.json', 'w', encoding='utf-8') as f:
         json.dump(cog_paketler, f, ensure_ascii=False, indent=2)
 
     # 2. TDE
@@ -637,9 +637,9 @@ if __name__ == '__main__':
         TDE_SUBTOPICS,
         ("Paragrafta Anlam ve Anlatım", "Paragrafta Ana Düşünce, Konu ve Yardımcı Düşünceler")
     )
-    with open('ciktilar/analiz/tde_alt_konular_etiketli.json', 'w', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/tde_alt_konular_etiketli.json', 'w', encoding='utf-8') as f:
         json.dump(tde_tagged, f, ensure_ascii=False, indent=2)
-    with open('ciktilar/analiz/tde_hap_etut_paketleri.json', 'w', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/tde_hap_etut_paketleri.json', 'w', encoding='utf-8') as f:
         json.dump(tde_paketler, f, ensure_ascii=False, indent=2)
 
     # 3. Matematik
@@ -649,9 +649,9 @@ if __name__ == '__main__':
         MAT_SUBTOPICS,
         ("Denklem ve Eşitsizlikler", "Birinci Dereceden Denklemler ve Eşitsizlikler")
     )
-    with open('ciktilar/analiz/matematik_alt_konular_etiketli.json', 'w', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/matematik_alt_konular_etiketli.json', 'w', encoding='utf-8') as f:
         json.dump(mat_tagged, f, ensure_ascii=False, indent=2)
-    with open('ciktilar/analiz/matematik_hap_etut_paketleri.json', 'w', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/matematik_hap_etut_paketleri.json', 'w', encoding='utf-8') as f:
         json.dump(mat_paketler, f, ensure_ascii=False, indent=2)
 
     print("\n✅ Tüm 3 ders için Alt Konu ve Hap Etüt Paketleri başarıyla güncellendi!")

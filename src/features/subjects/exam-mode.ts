@@ -1,4 +1,4 @@
-import { state } from '../../app/state.ts';
+import { state, notifyStateChange } from '../../app/state.ts';
 import { SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { loadAllSubjectData } from '../../data/questions.js';
 import { renderBookletPages } from '../booklet/render.js';
@@ -128,4 +128,5 @@ export async function startInterleavedExam(): Promise<void> {
 
   updateTopBadge('🔀 Karışık Deneme Sınavı');
   renderBookletPages();
+  notifyStateChange('booklet:updated', { customTitle: '🔀 Karışık Deneme Sınavı' });
 }

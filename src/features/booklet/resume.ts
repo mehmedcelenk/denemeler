@@ -1,5 +1,4 @@
-import { state } from '../../app/state.ts';
-import { setSubject } from '../subjects/selection.js';
+import { state, notifyStateChange } from '../../app/state.ts';
 
 interface SessionSnapshot {
   subject: string;
@@ -54,7 +53,7 @@ export async function resumeLastSession(): Promise<void> {
   const snapshot = loadSessionSnapshot();
   dismissResumeBanner();
   if (snapshot && snapshot.subject) {
-    await setSubject(snapshot.subject);
+    notifyStateChange('subject:select', { subject: snapshot.subject });
     if (snapshot.questionId && typeof document !== 'undefined') {
       setTimeout(() => {
         const el = document.getElementById(`bq_${snapshot.questionId}`);

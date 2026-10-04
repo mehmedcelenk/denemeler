@@ -1,4 +1,4 @@
-import { state, type LibraryTab } from '../../app/state.ts';
+import { state, notifyStateChange, type LibraryTab } from '../../app/state.ts';
 import { loadSubjectData } from '../../data/questions.js';
 import { SUBJECTS } from '../../data/subjects.js';
 import { renderBookletPages } from '../booklet/render.js';
@@ -18,6 +18,7 @@ export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void
   state.libraryTab = tab;
 
   updateFilterButtonsUI();
+  notifyStateChange('filter:updated');
 
   const targetIds = tab === 'rematch' ? state.rematchQuestionIds : state.starredQuestionIds;
   const tabTitle = tab === 'rematch' ? 'Rövanşlar' : 'Yıldızlılar';
@@ -25,6 +26,7 @@ export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void
   if (targetIds.size === 0) {
     state.bookletQuestions = [];
     updateTopBadge();
+    notifyStateChange('booklet:updated');
     const container = document.getElementById('bookletPagesContainer');
     if (container) {
       const msg = tab === 'rematch'
@@ -53,6 +55,7 @@ export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void
 
   updateTopBadge();
   renderBookletPages();
+  notifyStateChange('booklet:updated');
 }
 
 export function switchLibraryTab(tab: LibraryTab): void {
@@ -65,5 +68,8 @@ export function exitLibraryView(): void {
   renderDrawerSelectorBar();
   renderDrawerTopics();
   updateBookletQuestions();
+  notifyStateChange('filter:updated');
+  notifyStateChange('drawer:topics-refresh');
+  notifyStateChange('booklet:refresh');
 }
 

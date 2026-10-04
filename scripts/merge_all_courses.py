@@ -3,7 +3,7 @@
 """
 merge_all_courses.py
 Tüm Zorunlu Ortak Kültür Derslerini (12 Branş, 56 Kademe, 4.716 Soru)
-ciktilar/analiz/tum_analizli_sorular_temiz.json içinde birleştirir ve tam doğrulama yapar.
+scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json içinde birleştirir ve tam doğrulama yapar.
 """
 
 import json
@@ -15,7 +15,7 @@ def main():
     print("=" * 60)
 
     # 1. Mevcut 8 branşın sorularını al
-    with open('ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         existing = json.load(f)
 
     # Temizle: İnkılap, Sağlık, Din, İngilizce varsa çıkar (zaten daha önce eklenmemişti ama idempotent olsun)
@@ -26,19 +26,19 @@ def main():
     print(f"Mevcut 8 temel branş soru sayısı: {len(base_questions)}")
 
     # 2. Yeni 4 branşı yükle
-    with open('ciktilar/analiz/inkilap_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/inkilap_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         ink_questions = json.load(f)
     print(f"Eklenen İnkılap Tarihi: {len(ink_questions)}")
 
-    with open('ciktilar/analiz/saglik_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/saglik_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         sag_questions = json.load(f)
     print(f"Eklenen Sağlık ve Trafik: {len(sag_questions)}")
 
-    with open('ciktilar/analiz/din_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/din_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         din_questions = json.load(f)
     print(f"Eklenen Din Kültürü: {len(din_questions)}")
 
-    with open('ciktilar/analiz/ingilizce_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/ingilizce_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         ing_questions = json.load(f)
     print(f"Eklenen İngilizce: {len(ing_questions)}")
 
@@ -103,7 +103,7 @@ def main():
         print(f"  ► {subj:35s}: {cnt} soru")
 
     # Dosyaya kaydet
-    out_file = 'ciktilar/analiz/tum_analizli_sorular_temiz.json'
+    out_file = 'scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json'
     with open(out_file, 'w', encoding='utf-8') as f:
         json.dump(all_questions, f, ensure_ascii=False, indent=2)
 

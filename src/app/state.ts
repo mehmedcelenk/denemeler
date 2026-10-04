@@ -55,3 +55,43 @@ export const state: AppState = {
   isLibraryMode: false,
   libraryTab: 'rematch',
 };
+
+export type StateEventType =
+  | 'booklet:updated'
+  | 'booklet:refresh'
+  | 'drawer:close'
+  | 'drawer:topics-refresh'
+  | 'filter:updated'
+  | 'subject:select'
+  | 'answer:reveal';
+
+type StateListener = (payload?: unknown) => void;
+const eventListeners = new Map<StateEventType, Set<StateListener>>();
+
+/** Belirli bir durum olayını dinler. Aboneliği iptal eden fonksiyon döner. */
+export function onStateChange(event: StateEventType, listener: StateListener): () => void {
+  let set = eventListeners.get(event);
+  if (!set) {
+    set = new Set();
+    eventListeners.set(event, set);
+  }
+  set.add(listener);
+  return () => {
+    set?.delete(listener);
+  };
+}
+
+/** Uygulama bileşenlerine durum değişikliği bildirimi gönderir. */
+export function notifyStateChange(event: StateEventType, payload?: unknown): void {
+  const set = eventListeners.get(event);
+  if (set) {
+    for (const listener of set) {
+      try {
+        listener(payload);
+      } catch (err) {
+        console.error(`[StateEvent:${event}]`, err);
+      }
+    }
+  }
+}
+

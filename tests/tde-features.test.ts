@@ -95,3 +95,20 @@ test('enrichTurkishSentenceXray doğrulanmış sorularda tam cümle röntgeni d�
   assert.ok(!q1462Html.includes('cumle-oge-banner'), 'HUD banner içermemeli');
   assert.ok(!q1462Html.includes('Çözüm Yolu'), 'Çözüm yolu kutusu içermemeli');
 });
+
+test('renderCardStem TDE sorusunda soru_xray varsa öncelikle onu kullanır', async () => {
+  const { renderCardStem } = await import('../src/features/booklet/card-body.ts');
+  const dummyQ = {
+    id: 99999,
+    ders: 'TÜRK DİLİ VE EDEBİYATI – 1',
+    soru: 'Orijinal soru metni.',
+    soru_xray: '<span class="xray-sub">Yazar</span> <span class="xray-verb">yazdı</span>.',
+    secenekler: { A: '1', B: '2', C: '3', D: '4' },
+    dogru_cevap: 'A' as const
+  };
+
+  const rendered = renderCardStem(dummyQ);
+  assert.ok(rendered.includes('class="xray-sub">Yazar</span>'), 'soru_xray içindeki özne etiketi render edilmeli');
+  assert.ok(rendered.includes('class="xray-verb">yazdı</span>'), 'soru_xray içindeki yüklem etiketi render edilmeli');
+});
+

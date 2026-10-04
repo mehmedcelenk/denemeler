@@ -63,10 +63,10 @@ def generate_atomic_subject_report(json_path, output_md_path, subj_title):
     print(f"Atomik Rapor yazıldı: {output_md_path}")
 
 def generate_master_atomic_handbook():
-    path = 'ciktilar/analiz/ATOMIK_TAKTIKLER_MASTER_REHBERI.md'
-    with open('ciktilar/analiz/cografya_atomik_paketleri.json') as f: cog = json.load(f)
-    with open('ciktilar/analiz/tde_atomik_paketleri.json') as f: tde = json.load(f)
-    with open('ciktilar/analiz/matematik_atomik_paketleri.json') as f: mat = json.load(f)
+    path = 'scripts/ciktilar/analiz/ATOMIK_TAKTIKLER_MASTER_REHBERI.md'
+    with open('scripts/ciktilar/analiz/cografya_atomik_paketleri.json') as f: cog = json.load(f)
+    with open('scripts/ciktilar/analiz/tde_atomik_paketleri.json') as f: tde = json.load(f)
+    with open('scripts/ciktilar/analiz/matematik_atomik_paketleri.json') as f: mat = json.load(f)
     
     md = []
     md.append("# 🚀 AÖL & AÖİHL 'Atomik Konular ve Sınav Taktikleri' Master El Kitabı\n")
@@ -109,9 +109,9 @@ def generate_master_atomic_handbook():
     print(f"Master Atomik Rehber yazıldı: {path}")
 
 if __name__ == '__main__':
-    generate_atomic_subject_report('ciktilar/analiz/cografya_atomik_paketleri.json', 'ciktilar/analiz/COGRAFYA_ATOMIK_KONULAR_RAPORU.md', 'Coğrafya (1-4)')
-    generate_atomic_subject_report('ciktilar/analiz/tde_atomik_paketleri.json', 'ciktilar/analiz/TDE_ATOMIK_KONULAR_RAPORU.md', 'Türk Dili ve Edebiyatı (1-8)')
-    generate_atomic_subject_report('ciktilar/analiz/matematik_atomik_paketleri.json', 'ciktilar/analiz/MATEMATIK_ATOMIK_KONULAR_RAPORU.md', 'Matematik (1-4)')
+    generate_atomic_subject_report('scripts/ciktilar/analiz/cografya_atomik_paketleri.json', 'scripts/ciktilar/analiz/COGRAFYA_ATOMIK_KONULAR_RAPORU.md', 'Coğrafya (1-4)')
+    generate_atomic_subject_report('scripts/ciktilar/analiz/tde_atomik_paketleri.json', 'scripts/ciktilar/analiz/TDE_ATOMIK_KONULAR_RAPORU.md', 'Türk Dili ve Edebiyatı (1-8)')
+    generate_atomic_subject_report('scripts/ciktilar/analiz/matematik_atomik_paketleri.json', 'scripts/ciktilar/analiz/MATEMATIK_ATOMIK_KONULAR_RAPORU.md', 'Matematik (1-4)')
     generate_master_atomic_handbook()
     print("✅ Tüm Atomik Markdown raporları başarıyla oluşturuldu!")
 

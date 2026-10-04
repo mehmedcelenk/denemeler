@@ -1,4 +1,4 @@
-import { state } from '../../app/state.ts';
+import { state, onStateChange } from '../../app/state.ts';
 
 export function toggleSingleAnswerReveal(qid) {
   const q = state.allData.find(item => item.id === qid);
@@ -52,3 +52,10 @@ export function togglePageKey(pageNum) {
   strip.style.display = isHidden ? 'flex' : 'none';
   if (lbl) lbl.textContent = isHidden ? 'Gizle' : 'Cevaplar';
 }
+
+onStateChange('answer:reveal', (payload) => {
+  if (payload && typeof payload === 'object' && 'questionId' in payload && typeof payload.questionId === 'number') {
+    toggleSingleAnswerReveal(payload.questionId);
+  }
+});
+

@@ -296,7 +296,7 @@ def main():
     print("🧪 KİMYA (Kimya 1 - 4) ÇIKMIŞ SORU VE KESİŞİM İŞLEME MOTORU")
     print("=" * 60)
 
-    with open('ciktilar/tum_sorular.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/tum_sorular.json', 'r', encoding='utf-8') as f:
         all_raw_questions = json.load(f)
 
     # Filtrele: Sadece zorunlu Kimya dersleri (KİMYA – 1, 2, 3, 4)
@@ -348,7 +348,7 @@ def main():
     print(f"Kademe Dağılımı: {dict(course_counts)}")
 
     # Çıktıyı kaydet
-    out_path = 'ciktilar/analiz/kimya_analizli_sorular_temiz.json'
+    out_path = 'scripts/ciktilar/analiz/kimya_analizli_sorular_temiz.json'
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(processed_questions, f, ensure_ascii=False, indent=2)
     print(f"✅ {out_path} dosyasına {len(processed_questions)} temiz soru yazıldı.")
@@ -384,7 +384,7 @@ def main():
         print()
 
     # Şimdi tum_analizli_sorular_temiz.json ile birleştir
-    with open('ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         existing_tum = json.load(f)
 
     # Varsa eski Kimya sorularını temizle, yenilerini ekle
@@ -394,7 +394,7 @@ def main():
     # ID'ye göre sırala
     existing_tum.sort(key=lambda x: x['id'])
 
-    with open('ciktilar/analiz/tum_analizli_sorular_temiz.json', 'w', encoding='utf-8') as f:
+    with open('scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json', 'w', encoding='utf-8') as f:
         json.dump(existing_tum, f, ensure_ascii=False, indent=2)
 
     total_by_subject = Counter()

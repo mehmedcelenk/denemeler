@@ -1,7 +1,7 @@
 # Büyük PDF Arşivleri
-kaynak_pdfler/
-arsiv/
-scratch/
+docs/kaynak_pdfler/
+docs/arsiv/
+scripts/scratch/
 
 # Python derleme ve önbellek
 __pycache__/

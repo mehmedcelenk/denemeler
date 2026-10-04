@@ -96,4 +96,129 @@ export function registerLegacyHandlers() {
     zoomIn,
     zoomOut,
   });
+  setupEventDelegation();
 }
+
+/** Statik HTML kontrolleri için merkezi tekil olay delegasyonu. */
+export function setupEventDelegation() {
+  if (typeof document === 'undefined') return;
+
+  document.addEventListener('click', (event) => {
+    if (event.target && event.target.id === 'drawerOverlay') {
+      closeSubjectDrawer();
+      return;
+    }
+    if (event.target && event.target.id === 'pdfDialogOverlay') {
+      closePdfDialog();
+      return;
+    }
+
+    const el = event.target && event.target.closest ? event.target.closest('[data-action]') : null;
+    if (!el) return;
+
+    const action = el.dataset.action;
+    switch (action) {
+      case 'open-subject-drawer':
+        openSubjectDrawer();
+        break;
+      case 'close-subject-drawer':
+        closeSubjectDrawer();
+        break;
+      case 'set-booklet-filter':
+        if (el.dataset.filter) setBookletFilter(el.dataset.filter);
+        break;
+      case 'resume-last-session':
+        resumeLastSession();
+        break;
+      case 'dismiss-resume-banner':
+        dismissResumeBanner();
+        break;
+      case 'reset-board-pan':
+        resetBoardPan();
+        break;
+      case 'close-board-focus':
+        closeBoardFocusMode();
+        break;
+      case 'reset-canvas-zoom':
+        resetBookletCanvasZoom();
+        break;
+      case 'clear-all-marks':
+        clearAllMarks();
+        break;
+      case 'undo-clear-marks':
+        undoClearMarks();
+        break;
+      case 'zoom-out':
+        zoomOut();
+        break;
+      case 'zoom-in':
+        zoomIn();
+        break;
+      case 'toggle-fullscreen':
+        toggleFullscreenFocusMode();
+        break;
+      case 'set-column-count':
+        if (el.dataset.cols) setColumnCount(Number(el.dataset.cols));
+        break;
+      case 'set-theme-mode':
+        if (el.dataset.theme) setThemeMode(el.dataset.theme);
+        break;
+      case 'set-tts-gender':
+        if (el.dataset.gender) setTTSVoiceGender(el.dataset.gender);
+        break;
+      case 'set-accent-color':
+        if (el.dataset.color) setAccentColor(el.dataset.color);
+        break;
+      case 'toggle-calculator':
+        toggleMiniCalculator();
+        break;
+      case 'open-pdf-dialog':
+        openPdfDialog();
+        break;
+      case 'close-pdf-dialog':
+        closePdfDialog();
+        break;
+      case 'execute-pdf-print':
+        executePdfPrint();
+        break;
+      case 'toggle-console-menu':
+        toggleConsoleMenu();
+        break;
+      case 'clear-drawer-search':
+        clearDrawerSearch();
+        break;
+      case 'load-all-search':
+        loadAllSearchResultsToBooklet();
+        break;
+      case 'exit-library-and-close-drawer':
+        exitLibraryView();
+        closeSubjectDrawer();
+        break;
+      case 'toggle-subject-dropdown':
+        toggleSubjectDropdown();
+        break;
+      case 'start-interleaved-exam':
+        startInterleavedExam();
+        break;
+      case 'load-all-topics':
+        loadAllTopicsToBooklet();
+        break;
+      default:
+        break;
+    }
+  });
+
+  document.addEventListener('input', (event) => {
+    if (event.target && event.target.id === 'drawerSearchInput') {
+      handleDrawerSearch(event.target.value);
+    }
+  });
+
+  document.addEventListener('change', (event) => {
+    if (event.target && event.target.id === 'chkIntersectionSwitch') {
+      handleIntersectionToggle(event.target.checked);
+    }
+  });
+}
+
+

@@ -123,10 +123,10 @@ def classify_mat(q):
 
 # Analyze Core Courses: Mat 1, 2, 3, 4
 courses = {
-    'MAT-1': 'ciktilar/dersler/998_MATEMATIK_1.json',
-    'MAT-2': 'ciktilar/dersler/999_MATEMATIK_2.json',
-    'MAT-3': 'ciktilar/dersler/163_MATEMATIK_3.json',
-    'MAT-4': 'ciktilar/dersler/164_MATEMATIK_4.json',
+    'MAT-1': 'scripts/ciktilar/dersler/998_MATEMATIK_1.json',
+    'MAT-2': 'scripts/ciktilar/dersler/999_MATEMATIK_2.json',
+    'MAT-3': 'scripts/ciktilar/dersler/163_MATEMATIK_3.json',
+    'MAT-4': 'scripts/ciktilar/dersler/164_MATEMATIK_4.json',
 }
 
 classified = defaultdict(lambda: defaultdict(list))

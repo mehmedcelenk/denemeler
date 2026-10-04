@@ -41,7 +41,7 @@ Başlangıçta kayıtlı tercihler okunur, ilk dersin JSON'u yüklenip doğrulan
 
 Python akışı:
 
-`ciktilar/analiz + scripts/*_data.py → build_webapp.py → data/subjects + src/data/generated`.
+`scripts/ciktilar/analiz + scripts/*_data.py → build_webapp.py → data/subjects + src/data/generated`.
 
 Arayüz kodu Python içinde tutulmaz. Veri güncellemesi HTML/CSS/JS dosyalarını yeniden yazmaz. `data/` ve `audio/` yolları korunmuştur; Vite build bu klasörleri ve `CNAME` dosyasını `dist/` içine kopyalar.
 

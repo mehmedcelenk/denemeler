@@ -1,4 +1,4 @@
-import { state } from '../../app/state.ts';
+import { state, notifyStateChange } from '../../app/state.ts';
 import { loadAllSubjectData } from '../../data/questions.js';
 import { SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
 import { trNormalize } from '../../shared/search.ts';
@@ -71,6 +71,7 @@ export async function handleDrawerSearch(val) {
     if (resultsContainer) resultsContainer.style.display = 'none';
     if (normalContainer) normalContainer.style.display = 'block';
     renderDrawerTopics();
+    notifyStateChange('drawer:topics-refresh');
   }
 }
 
@@ -92,6 +93,7 @@ export function clearDrawerSearch() {
   if (normalContainer) normalContainer.style.display = 'block';
 
   renderDrawerTopics();
+  notifyStateChange('drawer:topics-refresh');
 }
 
 export function renderSearchResults() {
@@ -212,6 +214,8 @@ export function loadAllSearchResultsToBooklet() {
   closeSubjectDrawer();
   updateTopBadge();
   renderBookletPages();
+  notifyStateChange('drawer:close');
+  notifyStateChange('booklet:updated');
 }
 
 export function loadSingleSearchQuestion(qid) {
@@ -226,6 +230,8 @@ export function loadSingleSearchQuestion(qid) {
   closeSubjectDrawer();
   updateTopBadge();
   renderBookletPages(qid);
+  notifyStateChange('drawer:close');
+  notifyStateChange('booklet:updated', { targetQid: qid });
 
   setTimeout(() => {
     const card = document.getElementById(`bq_${qid}`);
