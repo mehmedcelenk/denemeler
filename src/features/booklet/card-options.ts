@@ -32,10 +32,6 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
           rowClass += ' marked-incorrect';
         }
       }
-    } else if (userMark && !isUserCorrect && isCorrect) {
-      if (!isRematchOrMistakes) {
-        rowClass += ' revealed-correct';
-      }
     } else if (isRevealed && isCorrect) {
       rowClass += ' revealed-correct';
     }

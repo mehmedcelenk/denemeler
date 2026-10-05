@@ -2,7 +2,6 @@ import { state } from '../../app/state.ts';
 
 export const zoomScales = ['12px', '13.5px', '15px', '17px', '19.5px', '22.5px', '26px'];
 
-let bookletCanvasScale = 1.0;
 let panX = 0;
 let panY = 0;
 
@@ -16,30 +15,39 @@ function updateContainerTransform() {
   const container = document.getElementById('bookletPagesContainer');
   if (!container) return;
 
-  if (Math.abs(bookletCanvasScale - 1.0) < 0.02 && Math.abs(panX) < 1 && Math.abs(panY) < 1) {
+  if (Math.abs(state.canvasZoomScale - 1.0) < 0.02 && Math.abs(panX) < 1 && Math.abs(panY) < 1) {
     container.style.transform = '';
+    container.style.webkitFontSmoothing = 'antialiased';
+    container.style.mozOsxFontSmoothing = 'grayscale';
   } else {
-    container.style.transform = `translate(${Math.round(panX)}px, ${Math.round(panY)}px) scale(${bookletCanvasScale})`;
+    container.style.transform = `translate(${Math.round(panX)}px, ${Math.round(panY)}px) scale(${state.canvasZoomScale})`;
+    container.style.webkitFontSmoothing = 'unset';
+    container.style.mozOsxFontSmoothing = 'unset';
   }
 
   const indicator = document.getElementById('bookletZoomIndicator');
   if (indicator) {
-    if (Math.abs(bookletCanvasScale - 1.0) < 0.02 && Math.abs(panX) < 1 && Math.abs(panY) < 1) {
+    if (Math.abs(state.canvasZoomScale - 1.0) < 0.02 && Math.abs(panX) < 1 && Math.abs(panY) < 1) {
       indicator.classList.remove('active');
     } else {
       indicator.classList.add('active');
       const textSpan = indicator.querySelector('span:first-child');
       if (textSpan) {
-        textSpan.textContent = `🔍 %${Math.round(bookletCanvasScale * 100)}`;
+        textSpan.textContent = `🔍 %${Math.round(state.canvasZoomScale * 100)}`;
       }
     }
   }
 }
 
 export function resetBookletCanvasZoom() {
-  bookletCanvasScale = 1.0;
+  state.canvasZoomScale = 1.0;
   panX = 0;
   panY = 0;
+  updateContainerTransform();
+}
+
+export function setBookletCanvasScale(scale) {
+  state.canvasZoomScale = Math.min(2.5, Math.max(0.85, scale));
   updateContainerTransform();
 }
 
@@ -59,18 +67,18 @@ export function initBookletCanvasZoom() {
     const mouseY = e.clientY;
 
     const delta = -e.deltaY * 0.002;
-    const newScale = Math.min(2.5, Math.max(0.85, bookletCanvasScale + delta));
-    if (Math.abs(newScale - bookletCanvasScale) < 0.001) return;
+    const newScale = Math.min(2.5, Math.max(0.85, state.canvasZoomScale + delta));
+    if (Math.abs(newScale - state.canvasZoomScale) < 0.001) return;
 
-    const scaleRatio = newScale / bookletCanvasScale;
+    const scaleRatio = newScale / state.canvasZoomScale;
     panX = mouseX - scaleRatio * (mouseX - panX);
     panY = mouseY - scaleRatio * (mouseY - panY);
-    bookletCanvasScale = newScale;
+    state.canvasZoomScale = newScale;
 
-    if (Math.abs(bookletCanvasScale - 1.0) < 0.02) {
+    if (Math.abs(state.canvasZoomScale - 1.0) < 0.02) {
       panX = 0;
       panY = 0;
-      bookletCanvasScale = 1.0;
+      state.canvasZoomScale = 1.0;
     }
 
     updateContainerTransform();
@@ -82,7 +90,7 @@ export function initBookletCanvasZoom() {
       const t1 = e.touches[0];
       const t2 = e.touches[1];
       pinchStartDist = Math.hypot(t1.clientX - t2.clientX, t1.clientY - t2.clientY);
-      pinchStartScale = bookletCanvasScale;
+      pinchStartScale = state.canvasZoomScale;
       pinchStartCenter = {
         x: (t1.clientX + t2.clientX) / 2,
         y: (t1.clientY + t2.clientY) / 2
@@ -111,7 +119,7 @@ export function initBookletCanvasZoom() {
 
       panX = pinchStartPan.x + deltaX - (scaleRatio - 1) * (pinchStartCenter.x - pinchStartPan.x);
       panY = pinchStartPan.y + deltaY - (scaleRatio - 1) * (pinchStartCenter.y - pinchStartPan.y);
-      bookletCanvasScale = newScale;
+      state.canvasZoomScale = newScale;
 
       updateContainerTransform();
     }
@@ -157,15 +165,17 @@ export function toggleFullscreenFocusMode() {
   }
 }
 
-document.addEventListener('fullscreenchange', () => {
-  if (!document.fullscreenElement && document.body.classList.contains('fullscreen-focus-mode')) {
-    document.body.classList.remove('fullscreen-focus-mode');
-    const iconSvg = document.getElementById('iconFullscreenSvg');
-    if (iconSvg) {
-      iconSvg.innerHTML = `<path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>`;
+if (typeof document !== 'undefined') {
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement && document.body.classList.contains('fullscreen-focus-mode')) {
+      document.body.classList.remove('fullscreen-focus-mode');
+      const iconSvg = document.getElementById('iconFullscreenSvg');
+      if (iconSvg) {
+        iconSvg.innerHTML = `<path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>`;
+      }
     }
-  }
-});
+  });
+}
 
 export function toggleConsoleMenu() {
   const popup = document.getElementById('consoleMenuPopup');
@@ -210,12 +220,14 @@ export function zoomOut() {
   }
 }
 
-document.addEventListener('click', (e) => {
-  const popup = document.getElementById('consoleMenuPopup');
-  const masterBtn = document.getElementById('btnMasterConsole');
-  if (popup && popup.classList.contains('open')) {
-    if (!popup.contains(e.target) && !masterBtn.contains(e.target)) {
-      popup.classList.remove('open');
+if (typeof document !== 'undefined') {
+  document.addEventListener('click', (e) => {
+    const popup = document.getElementById('consoleMenuPopup');
+    const masterBtn = document.getElementById('btnMasterConsole');
+    if (popup && popup.classList.contains('open')) {
+      if (!popup.contains(e.target) && !masterBtn.contains(e.target)) {
+        popup.classList.remove('open');
+      }
     }
-  }
-});
+  });
+}

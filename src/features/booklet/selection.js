@@ -1,6 +1,6 @@
 import { getTopicKey } from '../../shared/topic.ts';
 import { state, onStateChange } from '../../app/state.ts';
-import { SUBJECTS, getCondensedCourseCode, matchesSubject } from '../../data/subjects.js';
+import { SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { questionMatchesSearch } from '../../shared/search.ts';
 import { getAggregatedTopics } from '../subjects/topic-model.js';
 import { renderBookletPages } from './render.js';
@@ -73,22 +73,7 @@ export function updateTopBadge(customTitle) {
   if (state.currentSubject) {
     const subjDef = SUBJECTS.find(s => s.id === state.currentSubject) || SUBJECTS[1];
     badgeEmoji = subjDef.icon;
-    const condensed = getCondensedCourseCode(state.selectedCourses, state.currentSubject);
-    const match = condensed.match(/^([A-ZÇĞİÖŞÜ]+)(\d+)$/);
-    if (match) {
-      const letters = match[1];
-      const digits = match[2].split('');
-      titleStr = digits.length > 1 ? `${letters} ${digits[0]}-${digits[digits.length - 1]}` : `${letters} ${digits[0]}`;
-    } else {
-      titleStr = condensed;
-    }
-
-    if (state.selectedTopicKey && state.selectedTopicKey !== 'Tüm Konular') {
-      const shortTopic = state.selectedTopicKey.length > 15
-        ? `${state.selectedTopicKey.substring(0, 13)}...`
-        : state.selectedTopicKey;
-      titleStr += ` · ${shortTopic}`;
-    }
+    titleStr = subjDef.name;
   } else {
     badgeEmoji = '🌐';
     titleStr = 'Tüm Branşlar';

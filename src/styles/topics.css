@@ -20,6 +20,11 @@
   transition: all 0.12s;
 }
 
+.drawer-topic-item.child-item {
+  margin-left: 12px;
+  border-left-width: 1px;
+}
+
 .drawer-topic-item:hover {
   border-color: var(--brand-accent);
   background: rgba(2, 132, 199, 0.08);
@@ -32,10 +37,64 @@
 }
 
 .drawer-topic-name {
+  flex: 1;
+  min-width: 0;
   font-size: 12.5px;
   font-weight: 700;
   color: var(--paper-text);
   line-height: 1.4;
+}
+
+.drawer-topic-group-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+.drawer-topic-group-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--paper-text);
+  opacity: 0.9;
+}
+
+.drawer-topic-group-count {
+  font-size: 10px;
+  color: var(--paper-text-muted);
+  opacity: 0.9;
+}
+
+.drawer-topic-dropdown-caret {
+  flex: 0 0 auto;
+  font-size: 12px;
+  color: var(--paper-text-muted);
+  opacity: 0.75;
+}
+
+.drawer-topic-course-breakdown {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.drawer-topic-group-body {
+  display: none;
+  margin-top: 6px;
+}
+
+.drawer-topic-group.open .drawer-topic-group-body {
+  display: block;
 }
 
 .topic-ak {
@@ -59,6 +118,7 @@
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
+  min-width: 0;
 }
 
 .drawer-topic-badge {
@@ -336,6 +396,4 @@ body.dark-mode .btn-level-chip.active {
   max-width: 320px;
   margin: 0 auto 16px auto;
 }
-
-
 

@@ -22,6 +22,7 @@ export interface AppState {
   revealedHints: Set<number>;
   currentColumnCount: number;
   zoomLevelIndex: number;
+  canvasZoomScale: number;
   currentSearchResults: { q: Question; matchedOption: { key: string; text: string } | null }[];
   waterStreak: number;
   starredQuestionIds: Set<number>;
@@ -48,6 +49,7 @@ export const state: AppState = {
   revealedHints: new Set(),
   currentColumnCount: 2,
   zoomLevelIndex: 1,
+  canvasZoomScale: 1,
   currentSearchResults: [],
   waterStreak: 0,
   starredQuestionIds: new Set(),
@@ -94,4 +96,3 @@ export function notifyStateChange(event: StateEventType, payload?: unknown): voi
     }
   }
 }
-

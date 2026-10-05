@@ -84,7 +84,7 @@ export function renderDrawerSelectorBar() {
   const chk = document.getElementById('chkIntersectionSwitch');
 
   if (iconEl) iconEl.textContent = subjDef.icon;
-  if (nameEl) nameEl.textContent = subjDef.id;
+  if (nameEl) nameEl.textContent = subjDef.name.toUpperCase();
 
   if (chipsContainer && state.currentSubject) {
     const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, state.currentSubject)).map(q => q.ders)));

@@ -111,6 +111,11 @@ body.dark-mode .optical-choice-row.revealed-correct .optical-bubble {
   word-break: break-word;
 }
 
+/* "Doğru Cevap: X + konu" şeridi devre dışı; doğru şık zaten şıklarda işaretleniyor. Geri açmak için bu kuralı sil. */
+.single-answer-banner {
+  display: none !important;
+}
+
 .single-answer-banner {
   margin-top: 10px;
   padding: 6px 10px;
@@ -291,3 +296,10 @@ body.dark-mode .optical-choice-row.revealed-correct .optical-bubble {
 }
 
 
+
+/* Geçici olarak devre dışı: formül notu butonu ve İngilizce ses butonları. Geri açmak için bu kuralı sil. */
+.btn-formula-icon,
+.btn-tts-icon,
+.btn-opt-tts {
+  display: none !important;
+}

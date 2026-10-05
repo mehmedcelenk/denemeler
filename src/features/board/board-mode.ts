@@ -1,10 +1,13 @@
 import { state, notifyStateChange } from '../../app/state.ts';
 import type { Question } from '../../data/question.ts';
 import { renderQuestionCardHtml } from '../booklet/question-card.js';
+import { setBookletCanvasScale } from '../appearance/layout.js';
 
 let activeBoardQuestionId: number | null = null;
 let panX = 0;
 let panY = 0;
+let pinchStartDist = 0;
+let pinchStartScale = 1;
 let isDragging = false;
 let isSpacePressed = false;
 let dragStartX = 0;
@@ -24,8 +27,9 @@ export function openBoardFocusMode(questionId: number, event?: Event): void {
   const overlay = document.getElementById('boardSpaceOverlay');
   if (!overlay) return;
 
-  // Eğer tahta zaten bu soru için açıksa, kazara çift tıklama/dokunmada tahtayı kapatma
+  // Tahta bu soru için zaten açıksa buton aç/kapa gibi çalışır (kazara çift tıklama koruması closeBoardFocusMode içinde)
   if (overlay.style.display === 'flex' && activeBoardQuestionId === questionId) {
+    closeBoardFocusMode();
     return;
   }
 
@@ -100,6 +104,10 @@ function attachBoardListeners(overlay: HTMLElement): void {
   overlay.addEventListener('pointerup', handleBoardPointerUp);
   overlay.addEventListener('pointercancel', handleBoardPointerUp);
   overlay.addEventListener('wheel', handleBoardWheel, { passive: false });
+  overlay.addEventListener('touchstart', handleBoardTouchStart, { passive: true });
+  overlay.addEventListener('touchmove', handleBoardTouchMove, { passive: false });
+  overlay.addEventListener('touchend', handleBoardTouchEnd);
+  overlay.addEventListener('touchcancel', handleBoardTouchEnd);
 }
 
 function detachBoardListeners(overlay: HTMLElement): void {
@@ -112,6 +120,10 @@ function detachBoardListeners(overlay: HTMLElement): void {
   overlay.removeEventListener('pointerup', handleBoardPointerUp);
   overlay.removeEventListener('pointercancel', handleBoardPointerUp);
   overlay.removeEventListener('wheel', handleBoardWheel);
+  overlay.removeEventListener('touchstart', handleBoardTouchStart);
+  overlay.removeEventListener('touchmove', handleBoardTouchMove);
+  overlay.removeEventListener('touchend', handleBoardTouchEnd);
+  overlay.removeEventListener('touchcancel', handleBoardTouchEnd);
 }
 
 function updateCanvasTransform(animate = false): void {
@@ -122,7 +134,7 @@ function updateCanvasTransform(animate = false): void {
 
   if (stage) {
     stage.style.transition = animate ? 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)' : 'none';
-    stage.style.transform = `translate3d(${panX}px, ${panY}px, 0)`;
+    stage.style.transform = `translate3d(${panX}px, ${panY}px, 0) scale(${state.canvasZoomScale})`;
   }
 
   if (overlay) {
@@ -204,6 +216,15 @@ function handleBoardPointerUp(e: PointerEvent): void {
 }
 
 function handleBoardWheel(e: WheelEvent): void {
+  const isZoomGesture = e.ctrlKey || e.metaKey;
+
+  if (isZoomGesture) {
+    e.preventDefault();
+    setBookletCanvasScale(state.canvasZoomScale - e.deltaY * 0.002);
+    updateCanvasTransform(false);
+    return;
+  }
+
   e.preventDefault();
   panX -= e.deltaX;
   panY -= e.deltaY;
@@ -213,6 +234,28 @@ function handleBoardWheel(e: WheelEvent): void {
   if (hint) {
     hint.style.opacity = '0';
   }
+}
+
+function handleBoardTouchStart(e: TouchEvent): void {
+  if (e.touches.length !== 2) return;
+  const [first, second] = Array.from(e.touches);
+  pinchStartDist = Math.hypot(first.clientX - second.clientX, first.clientY - second.clientY);
+  pinchStartScale = state.canvasZoomScale;
+  isDragging = false;
+  document.getElementById('boardSpaceOverlay')?.classList.remove('is-dragging');
+}
+
+function handleBoardTouchMove(e: TouchEvent): void {
+  if (e.touches.length !== 2 || pinchStartDist <= 0) return;
+  e.preventDefault();
+  const [first, second] = Array.from(e.touches);
+  const distance = Math.hypot(first.clientX - second.clientX, first.clientY - second.clientY);
+  setBookletCanvasScale(pinchStartScale * distance / pinchStartDist);
+  updateCanvasTransform(false);
+}
+
+function handleBoardTouchEnd(e: TouchEvent): void {
+  if (e.touches.length < 2) pinchStartDist = 0;
 }
 
 function handleBoardKeydown(e: KeyboardEvent): void {

@@ -65,6 +65,7 @@ body.dark-mode .board-space-overlay {
   box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.15), 0 4px 14px rgba(0, 0, 0, 0.05);
   padding: 22px 26px;
   box-sizing: border-box;
+  font-size: var(--booklet-font-size, 13.5px);
   will-change: transform;
   transform-origin: center center;
   touch-action: auto;
@@ -201,4 +202,3 @@ body.dark-mode .board-pan-hint {
   border-color: var(--paper-border, #2d2f36);
   color: var(--paper-text-muted, #8e94a0);
 }
-

@@ -1,23 +1,12 @@
 /* Cümle Röntgeni (3 Ayrı Renkte Alt Çizgi: Özne=Mavi, Yüklem=Kırmızı, Nesne=Yeşil) */
-.xray-sub {
-  text-decoration: underline 2px #2563eb !important;
-  text-underline-offset: 3.5px !important;
-  text-decoration-skip-ink: none !important;
-}
-.xray-verb {
-  text-decoration: underline 2.5px #e11d48 !important;
-  text-underline-offset: 3.5px !important;
-  text-decoration-skip-ink: none !important;
-}
-.xray-obj {
-  text-decoration: underline 2px #059669 !important;
-  text-underline-offset: 3.5px !important;
-  text-decoration-skip-ink: none !important;
-}
+/* Alt çizgiler geçici olarak kapalı. Açmak için aşağıdaki değerleri geri yükle:
+   sub: underline 2px #2563eb | verb: underline 2.5px #e11d48
+   obj: underline 2px #059669 | adv: underline 2px #d97706 (offset 3.5px, skip-ink none) */
+.xray-sub,
+.xray-verb,
+.xray-obj,
 .xray-adv {
-  text-decoration: underline 2px #d97706 !important;
-  text-underline-offset: 3.5px !important;
-  text-decoration-skip-ink: none !important;
+  text-decoration: none !important;
 }
 .xray-speaker {
   font-weight: 700;
@@ -39,6 +28,10 @@
 }
 
 /* Sayfa Altı Röntgen Renk Açıklama Cetveli */
+/* Renk açıklama cetveli geçici olarak kapalı. Geri açmak için bu kuralı sil. */
+.page-xray-footer-legend {
+  display: none !important;
+}
 .page-xray-footer-legend {
   display: flex;
   align-items: center;

@@ -103,20 +103,18 @@ function renderConfidencePickerUI(questionId: number, choice: Choice): void {
     picker.id = `confPicker_${questionId}`;
     picker.innerHTML = `
       <div class="conf-picker-title">
-        <span>🤔</span>
         <span>Cevabından emin misin?</span>
       </div>
       <div class="conf-picker-buttons">
         <button class="btn-conf-opt btn-conf-high" onclick="confirmConfidence('high')" title="Kesin Biliyorum (3x Damla)">
-          <span>😎 Eminim (+3)</span>
+          <span>Eminim (+3)</span>
         </button>
         <button class="btn-conf-opt btn-conf-mid" onclick="confirmConfidence('mid')" title="Yarı Yarıya (2x Damla)">
-          <span>🤞 Yarı Yarıya (+2)</span>
+          <span>Yarı Yarıya (+2)</span>
         </button>
         <button class="btn-conf-opt btn-conf-low" onclick="confirmConfidence('low')" title="Tahmin Ettim (Rövanşa Eklenir)">
-          <span>🎲 Tahmin (+1)</span>
+          <span>Tahmin (+1)</span>
         </button>
-        <button class="btn-conf-close" onclick="cancelConfidencePrompt(${questionId})" title="Kapat">✕</button>
       </div>
     `;
 
@@ -156,19 +154,9 @@ export function updateQuestionMarkUI(questionId: number, choice: Choice): void {
         } else {
           row.classList.add('marked-incorrect');
         }
-      } else if (!isCorrect && letter === correctChoice) {
-        // Yanlış cevap verildiğinde doğru şıkkı yeşil olarak rehberlik et
-        row.classList.add('revealed-correct');
       }
     });
   });
-
-  // Yanlış cevapta doğru cevap ve çözüm rehberliği bannerını aç
-  if (!isCorrect && correctChoice) {
-    document.querySelectorAll<HTMLElement>(`#banner_${questionId}`).forEach(bannerEl => {
-      bannerEl.style.display = 'flex';
-    });
-  }
 
   const undoBtn = document.getElementById('btnUndoClear');
   if (undoBtn) undoBtn.style.opacity = '1';
