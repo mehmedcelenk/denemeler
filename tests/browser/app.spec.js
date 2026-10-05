@@ -67,3 +67,82 @@ test('mobil genişlikte kitapçık açılır', async ({ page }) => {
   await expect(page.locator('#drawerSearchInput')).toBeVisible();
 });
 
+test('sorular A4 sayfalara sığar ve sayfa numaraları tutarlıdır', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.booklet-page').first()).toBeVisible();
+  await page.evaluate(() => document.fonts.ready);
+
+  const pagination = await page.locator('.booklet-page').evaluateAll(pages => ({
+    pageCount: pages.length,
+    questionCount: pages.reduce((total, page) => total + page.querySelectorAll('.booklet-question').length, 0),
+    pages: pages.map((page, index) => {
+      const bounds = page.getBoundingClientRect();
+      const body = page.querySelector('.page-columns-body');
+      const bodyBounds = body.getBoundingClientRect();
+      const cardsFit = [...body.querySelectorAll('.booklet-question')].every(card => {
+        const cardBounds = card.getBoundingClientRect();
+        return cardBounds.bottom <= bodyBounds.bottom + 1 && cardBounds.right <= bodyBounds.right + 1;
+      });
+      return {
+        width: bounds.width,
+        height: bounds.height,
+        cardsFit,
+        pageLabel: page.querySelector('.page-num-pill').textContent.trim(),
+        expectedPageLabel: `— SAYFA ${index + 1} / ${pages.length} —`,
+      };
+    }),
+  }));
+
+  expect(pagination.pageCount).toBeGreaterThan(1);
+  expect(pagination.questionCount).toBeGreaterThan(pagination.pageCount);
+  for (const pageDetails of pagination.pages) {
+    expect(pageDetails.width).toBeCloseTo(793.7, 0);
+    expect(pageDetails.height).toBeCloseTo(1122.5, 0);
+    expect(pageDetails.cardsFit).toBe(true);
+    expect(pageDetails.pageLabel).toBe(pageDetails.expectedPageLabel);
+  }
+
+  await page.evaluate(() => {
+    const container = document.getElementById('bookletPagesContainer');
+    window.__bookletRenderCount = 0;
+    const observer = new MutationObserver(records => {
+      for (const record of records) {
+        if (record.target === container && [...record.addedNodes].some(node =>
+          node instanceof HTMLElement
+          && node.classList.contains('booklet-page')
+          && !node.classList.contains('booklet-page-measuring'))) {
+          window.__bookletRenderCount++;
+        }
+      }
+    });
+    observer.observe(container, { childList: true });
+    document.dispatchEvent(new Event('booklet:layoutchange'));
+  });
+  await page.waitForTimeout(100);
+  expect(await page.evaluate(() => window.__bookletRenderCount)).toBe(1);
+});
+
+test('3 ve 4 sütun seçimi tüm ekran genişliklerinde uygulanır', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+  await expect(page.locator('.booklet-page').first()).toBeVisible();
+
+  for (const columns of [3, 4]) {
+    await page.evaluate(columns => window.setColumnCount(columns), columns);
+    await expect(page.locator('.page-columns-body').first()).toHaveClass(new RegExp(`cols-${columns}`));
+    await expect.poll(() => page.locator('.page-columns-body').first().evaluate(element =>
+      getComputedStyle(element).columnCount
+    )).toBe(String(columns));
+  }
+});
+
+test('sınav kaynağı etiketi soru kartı araç satırını daraltmaz', async ({ page }) => {
+  await page.goto('/');
+  const card = page.locator('.booklet-question').first();
+  const sourceTag = card.locator('.q-source-tag');
+  await expect(sourceTag).toBeVisible();
+  await expect(card.locator('.q-top-row .q-source-tag')).toHaveCount(0);
+  expect(await sourceTag.evaluate(tag =>
+    tag.previousElementSibling?.classList.contains('q-optical-options')
+  )).toBe(true);
+});

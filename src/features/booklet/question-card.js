@@ -1,4 +1,4 @@
-import { renderCardHeader } from './card-header.ts';
+import { renderCardHeader, renderCardSourceTag } from './card-header.ts';
 import { renderCardStem, renderSoonBanner } from './card-body.ts';
 import { renderCardOptions } from './card-options.ts';
 import { renderCardBanners } from './card-banners.ts';
@@ -23,6 +23,7 @@ export function renderQuestionCardHtml(q, globalIdx) {
       <div class="q-optical-options">
         ${renderCardOptions(q, isPassive)}
       </div>
+      ${renderCardSourceTag(q)}
       ${renderCardBanners(q, isPassive)}
     </div>
   `;

@@ -4,7 +4,7 @@
 @media print {
   @page {
     size: A4;
-    margin: 8mm 10mm;
+    margin: 0;
   }
 
   body {
@@ -28,18 +28,14 @@
   }
 
   .booklet-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
     border: none !important;
     box-shadow: none !important;
-    padding: 0 !important;
-    min-height: 280mm !important;
+    padding: 30px 34px 22px !important;
     page-break-after: always !important;
     break-after: page !important;
-  }
-
-  .page-columns-body {
-    column-count: 2 !important;
-    column-gap: 28px !important;
-    column-rule: 1px solid #cbd5e1 !important;
   }
 
   .booklet-question {
@@ -49,14 +45,6 @@
 
   .single-answer-banner {
     display: none !important;
-  }
-}
-
-@media (max-width: 900px) {
-  .page-columns-body.cols-3,
-  .page-columns-body.cols-4 {
-    column-count: 2 !important;
-    column-gap: 24px !important;
   }
 }
 
@@ -81,14 +69,6 @@
   }
   .booklet-stream-container { padding: calc(70px + var(--safe-top)) 6px calc(90px + var(--safe-bottom)) 6px; }
   .booklet-page { padding: 20px 14px 16px 14px; min-height: auto; }
-  .page-columns-body.cols-1,
-  .page-columns-body.cols-2,
-  .page-columns-body.cols-3,
-  .page-columns-body.cols-4 {
-    column-count: 1 !important;
-    column-rule: none !important;
-  }
-
   /* Mobil Çekmece X-Ekseni Ferahlatma */
   .drawer-overlay {
     padding: calc(6px + var(--safe-top)) 6px calc(10px + var(--safe-bottom)) 6px !important;

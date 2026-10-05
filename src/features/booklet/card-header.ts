@@ -101,9 +101,6 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
   const pointsStr = typeof q.puan === 'number' ? q.puan.toFixed(2) : '5.00';
   const krediStr = q.kredi ? String(q.kredi) : '2';
   const sinavSoruSayisiStr = q.sinav_soru_sayisi ? String(q.sinav_soru_sayisi) : '20';
-  const yearStr = q.yil ? q.yil.substring(2, 4) : '24';
-  const donemStr = q.donem ? String(q.donem) : '1';
-
   return `
     <div class="q-top-row">
       <span class="q-number">${globalIdx}.</span>
@@ -123,7 +120,14 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
       <button class="btn-companion-icon ${compassClass}" id="btnCompass_${q.id}" title="Pusula / İpucu Göster" onclick="toggleSingleHint(${q.id})" style="display:none;">
         ${lucideCompassSvg}
       </button>
-      <span class="q-source-tag">${escapeHtml(shortCourse)} • ${yearStr}-D${donemStr}</span>
     </div>
   `;
+}
+
+export function renderCardSourceTag(q: Question): string {
+  const shortCourse = getShortCourseName(q.ders);
+  const year = q.yil ? q.yil.substring(2, 4) : '24';
+  const term = q.donem ? String(q.donem) : '1';
+  const label = `${shortCourse} • ${year}-D${term}`;
+  return `<div class="q-source-tag" title="Sınav kaynağı: ${escapeHtml(label)}">${escapeHtml(label)}</div>`;
 }

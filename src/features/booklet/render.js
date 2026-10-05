@@ -3,12 +3,13 @@ import { getCondensedCourseCode } from '../../data/subjects.js';
 import { escapeHtml } from '../../shared/escape.ts';
 import { renderQuestionCardHtml } from './question-card.js';
 
-const QUESTIONS_PER_PAGE = 5;
-const INITIAL_PAGES_TO_RENDER = 4;
-let renderedPageCount = 0;
-let scrollObserver = null;
+let fontLayoutRefreshScheduled = false;
 
-export function renderBookletPages(targetQuestionId = null) {
+if (typeof document !== 'undefined') {
+  document.addEventListener('booklet:layoutchange', () => renderBookletPages());
+}
+
+export function renderBookletPages(_targetQuestionId = null) {
   const container = document.getElementById('bookletPagesContainer');
   if (!container) return;
 
@@ -19,7 +20,7 @@ export function renderBookletPages(targetQuestionId = null) {
           <div style="font-size:36px; margin-bottom:12px;">🏆</div>
           <div style="font-size:16px; font-weight:800; color:var(--paper-text); margin-bottom:6px;">Tebrikler! Bu derste rövanş bekleyen soru yok.</div>
           <div style="font-size:13px; line-height:1.5; margin-bottom:18px;">Yanlış yaptığınız veya tahminle bildiğiniz tüm soruları fethettiniz. Klasik modda yeni sorular çözebilirsiniz.</div>
-          <button class="btn-primary" onclick="setBookletFilter('all')" style="padding:9px 20px; font-size:12.5px; border-radius:10px; cursor:pointer; background:var(--brand-accent); color:#fff; border:none; font-weight:700;">🎮 Klasik Moda Dön</button>
+          <button class="btn-primary" onclick="setBookletFilter('all')" style="padding:9px 20px; font-size:12.5px; border-radius:10px; cursor:pointer; background:var(--brand-accent); color:#fff; border:none; font-weight:700;">📝 Klasik Moda Dön</button>
         </div>
       `;
     } else if (state.bookletFilterMode === 'starred') {
@@ -28,7 +29,7 @@ export function renderBookletPages(targetQuestionId = null) {
           <div style="font-size:36px; margin-bottom:12px;">⭐</div>
           <div style="font-size:16px; font-weight:800; color:var(--paper-text); margin-bottom:6px;">Henüz yıldızlı soru eklemediniz.</div>
           <div style="font-size:13px; line-height:1.5; margin-bottom:18px;">Soruların sağ üstündeki ⭐ ikonuna tıklayarak sınav öncesi tekrar etmek istediğiniz soruları buraya toplayabilirsiniz.</div>
-          <button class="btn-primary" onclick="setBookletFilter('all')" style="padding:9px 20px; font-size:12.5px; border-radius:10px; cursor:pointer; background:var(--brand-accent); color:#fff; border:none; font-weight:700;">🎮 Soruları Keşfet</button>
+          <button class="btn-primary" onclick="setBookletFilter('all')" style="padding:9px 20px; font-size:12.5px; border-radius:10px; cursor:pointer; background:var(--brand-accent); color:#fff; border:none; font-weight:700;">📝 Soruları Keşfet</button>
         </div>
       `;
     } else {
@@ -41,82 +42,66 @@ export function renderBookletPages(targetQuestionId = null) {
     return;
   }
 
-  const totalPages = Math.ceil(state.bookletQuestions.length / QUESTIONS_PER_PAGE);
   const columnClass = `cols-${state.currentColumnCount}`;
   const badgeCode = getCondensedCourseCode(state.selectedCourses, state.currentSubject);
+  const pageRanges = paginateQuestionRanges(container, badgeCode, columnClass);
+  container.innerHTML = pageRanges.map(({ start, end }, pageIndex) => {
+    const pageChunk = renderQuestionChunkHtml(start, end);
+    return renderPageHtml(pageChunk, badgeCode, columnClass, pageIndex + 1, pageRanges.length);
+  }).join('');
 
-  let initialPages = Math.min(INITIAL_PAGES_TO_RENDER, totalPages);
-  if (targetQuestionId) {
-    const targetIdx = state.bookletQuestions.findIndex(q => q.id === targetQuestionId);
-    if (targetIdx !== -1) {
-      initialPages = Math.max(initialPages, Math.ceil((targetIdx + 1) / QUESTIONS_PER_PAGE));
-      initialPages = Math.min(initialPages, totalPages);
-    }
-  }
-
-  renderedPageCount = initialPages;
-
-  let fullHtml = '';
-  for (let p = 0; p < renderedPageCount; p++) {
-    fullHtml += renderPageChunkHtml(p, totalPages, badgeCode, columnClass);
-  }
-
-  if (renderedPageCount < totalPages) {
-    fullHtml += `<div class="stream-lazy-sentinel" id="bookletStreamSentinel"></div>`;
-  }
-
-  container.innerHTML = fullHtml;
-  setupStreamScrollObserver(totalPages, badgeCode, columnClass);
-}
-
-function loadNextBookletPages(totalPages, badgeCode, columnClass) {
-  if (renderedPageCount >= totalPages) return;
-  const sentinel = document.getElementById('bookletStreamSentinel');
-
-  const nextCount = Math.min(renderedPageCount + 4, totalPages);
-  let appendHtml = '';
-  for (let p = renderedPageCount; p < nextCount; p++) {
-    appendHtml += renderPageChunkHtml(p, totalPages, badgeCode, columnClass);
-  }
-  renderedPageCount = nextCount;
-
-  if (sentinel) {
-    sentinel.insertAdjacentHTML('beforebegin', appendHtml);
-    if (renderedPageCount >= totalPages) {
-      sentinel.remove();
-    }
+  if (!fontLayoutRefreshScheduled && document.fonts) {
+    fontLayoutRefreshScheduled = true;
+    document.fonts.ready.then(() => {
+      if (container.isConnected) renderBookletPages();
+    });
   }
 }
 
-function setupStreamScrollObserver(totalPages, badgeCode, columnClass) {
-  if (typeof IntersectionObserver === 'undefined') return;
-  if (scrollObserver) {
-    scrollObserver.disconnect();
-    scrollObserver = null;
+function paginateQuestionRanges(container, badgeCode, columnClass) {
+  const stagingPage = document.createElement('div');
+  stagingPage.className = 'booklet-page booklet-page-measuring';
+  stagingPage.setAttribute('aria-hidden', 'true');
+  stagingPage.innerHTML = renderPageHtml({ questionsHtml: '', miniKeyHtml: '' }, badgeCode, columnClass, 1, 1);
+  stagingPage.querySelectorAll('[id]').forEach(element => element.removeAttribute('id'));
+  stagingPage.querySelector('.btn-page-key-toggle')?.removeAttribute('onclick');
+  container.appendChild(stagingPage);
+
+  const questionBody = stagingPage.querySelector('.page-columns-body');
+  const ranges = [];
+  let pageStart = 0;
+
+  try {
+    state.bookletQuestions.forEach((question, index) => {
+      const questionHtml = renderQuestionCardHtml(question, index + 1);
+      questionBody.insertAdjacentHTML('beforeend', questionHtml);
+      const hasPreviousQuestion = index > pageStart;
+      const bodyBounds = questionBody.getBoundingClientRect();
+      const questionBounds = questionBody.lastElementChild.getBoundingClientRect();
+      const isOverflowing = questionBounds.bottom > bodyBounds.bottom + 1
+        || questionBounds.right > bodyBounds.right + 1;
+
+      if (hasPreviousQuestion && isOverflowing) {
+        ranges.push({ start: pageStart, end: index });
+        pageStart = index;
+        questionBody.replaceChildren();
+        questionBody.insertAdjacentHTML('beforeend', questionHtml);
+      }
+    });
+  } finally {
+    stagingPage.remove();
   }
-  if (renderedPageCount >= totalPages) return;
 
-  const sentinel = document.getElementById('bookletStreamSentinel');
-  if (!sentinel) return;
-
-  scrollObserver = new IntersectionObserver((entries) => {
-    if (entries[0] && entries[0].isIntersecting) {
-      loadNextBookletPages(totalPages, badgeCode, columnClass);
-    }
-  }, { rootMargin: '600px' });
-
-  scrollObserver.observe(sentinel);
+  ranges.push({ start: pageStart, end: state.bookletQuestions.length });
+  return ranges;
 }
 
-function renderPageChunkHtml(p, totalPages, badgeCode, columnClass) {
-  const pageNum = p + 1;
-  const pageSlice = state.bookletQuestions.slice(p * QUESTIONS_PER_PAGE, (p + 1) * QUESTIONS_PER_PAGE);
-
+function renderQuestionChunkHtml(startIdx, endIdx) {
   let questionsHtml = '';
   let miniKeyHtml = '';
 
-  pageSlice.forEach((q, idxInPage) => {
-    const globalIdx = (p * QUESTIONS_PER_PAGE) + idxInPage + 1;
+  state.bookletQuestions.slice(startIdx, endIdx).forEach((q, idxInChunk) => {
+    const globalIdx = startIdx + idxInChunk + 1;
     questionsHtml += renderQuestionCardHtml(q, globalIdx);
 
     if (q.sekilli) {
@@ -134,9 +119,13 @@ function renderPageChunkHtml(p, totalPages, badgeCode, columnClass) {
     }
   });
 
-  const lucidePageEyeSvg = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`;
+  return { questionsHtml, miniKeyHtml };
+}
 
-  const hasTdeInPage = pageSlice.some(q => (state.currentSubject === 'TDE') || (q.ders && q.ders.includes('TÜRK DİLİ')));
+function renderPageHtml(pageChunk, badgeCode, columnClass, pageNum, totalPages) {
+  const lucidePageEyeSvg = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0-.696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`;
+
+  const hasTdeInPage = state.bookletQuestions.some(q => (state.currentSubject === 'TDE') || (q.ders && q.ders.includes('TÜRK DİLİ')));
   let pageLegendHtml = '';
   if (hasTdeInPage) {
     pageLegendHtml = `
@@ -161,15 +150,15 @@ function renderPageChunkHtml(p, totalPages, badgeCode, columnClass) {
         </div>
       </div>
 
-      <div class="page-columns-body ${columnClass}">
-        ${questionsHtml}
+      <div class="page-columns-body ${columnClass}" id="bookletQuestionBody_${pageNum}">
+        ${pageChunk.questionsHtml}
       </div>
 
       <div>
         ${pageLegendHtml}
         <div class="page-bottom-answer-strip" id="pageBottomKey_${pageNum}">
           <span style="font-weight:800; font-size:10px; margin-right:4px;">🔑 SAYFA ${pageNum} CEVAPLARI:</span>
-          ${miniKeyHtml}
+          ${pageChunk.miniKeyHtml}
         </div>
         <div class="page-footer-band">
           <button class="btn-page-key-toggle" onclick="togglePageKey(${pageNum})" title="Sayfa Cevaplarını Göster / Gizle">

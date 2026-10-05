@@ -179,9 +179,10 @@
 }
 
 .q-source-tag {
-  margin-left: auto;
+  margin-top: 5px;
+  text-align: right;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.78em;
+  font-size: 0.72em;
   color: var(--paper-text-muted);
   letter-spacing: 0.2px;
 }
@@ -216,4 +217,3 @@
   flex-direction: column;
   gap: 4px;
 }
-

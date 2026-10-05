@@ -11,6 +11,10 @@ let pinchStartCenter = { x: 0, y: 0 };
 let pinchStartPan = { x: 0, y: 0 };
 let lastTapTime = 0;
 
+function notifyBookletLayoutChange() {
+  document.dispatchEvent(new Event('booklet:layoutchange'));
+}
+
 function updateContainerTransform() {
   const container = document.getElementById('bookletPagesContainer');
   if (!container) return;
@@ -204,12 +208,14 @@ export function setColumnCount(n) {
     el.classList.remove('cols-1', 'cols-2', 'cols-3', 'cols-4');
     el.classList.add(`cols-${n}`);
   });
+  notifyBookletLayoutChange();
 }
 
 export function zoomIn() {
   if (state.zoomLevelIndex < zoomScales.length - 1) {
     state.zoomLevelIndex++;
     document.documentElement.style.setProperty('--booklet-font-size', zoomScales[state.zoomLevelIndex]);
+    notifyBookletLayoutChange();
   }
 }
 
@@ -217,6 +223,7 @@ export function zoomOut() {
   if (state.zoomLevelIndex > 0) {
     state.zoomLevelIndex--;
     document.documentElement.style.setProperty('--booklet-font-size', zoomScales[state.zoomLevelIndex]);
+    notifyBookletLayoutChange();
   }
 }
 
