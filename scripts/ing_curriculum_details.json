@@ -1,0 +1,299 @@
+{
+  "İNGİLİZCE – 1": {
+    "donem": 1,
+    "sinif": "9. Sınıf 1. Dönem",
+    "cefr": "A1.1",
+    "uniteler": [
+      {
+        "unite_no": 1,
+        "tema": "Theme 1: Studying Abroad",
+        "kazanimlar_ve_islevler": "Tanışma, kişisel bilgiler, ülkeler, milliyetler ve meslekleri ifade etme.",
+        "gramer_ve_yapilar": ["Subject Pronouns", "Possessive Adjectives", "Verb To Be", "Have/Has got"]
+      },
+      {
+        "unite_no": 2,
+        "tema": "Theme 2: My Environment",
+        "kazanimlar_ve_islevler": "Nesnelerin konumunu söyleme, ev tarif etme, adres/yön sorma.",
+        "gramer_ve_yapilar": ["Prepositions of Place", "There is / There are", "Demonstrative Pronouns"]
+      },
+      {
+        "unite_no": 3,
+        "tema": "Theme 3: Movies",
+        "kazanimlar_ve_islevler": "Film türleri, beğenileri ifade etme ve kişisel görüş bildirme.",
+        "gramer_ve_yapilar": ["Simple Present Tense (Like/Love/Hate + V-ing)", "Adjectives of Opinion"]
+      },
+      {
+        "unite_no": 4,
+        "tema": "Theme 4: Human in Nature",
+        "kazanimlar_ve_islevler": "Günlük rutinler, doğa, yetenekler ve hava durumu.",
+        "gramer_ve_yapilar": ["Simple Present (Routines)", "Can / Can't", "Adverbs of Frequency"]
+      },
+      {
+        "unite_no": 5,
+        "tema": "Theme 5: Inspirational People",
+        "kazanimlar_ve_islevler": "Fiziksel görünüş ve kişilik özelliklerini tarif etme, insanları kıyaslama.",
+        "gramer_ve_yapilar": ["Describing Appearance & Character", "Comparatives (-er / more)"]
+      }
+    ]
+  },
+  "İNGİLİZCE – 2": {
+    "donem": 2,
+    "sinif": "9. Sınıf 2. Dönem",
+    "cefr": "A1.2",
+    "uniteler": [
+      {
+        "unite_no": 6,
+        "tema": "Theme 6: Bridging Cultures",
+        "kazanimlar_ve_islevler": "Yiyecekler, mutfaklar, geleneksel giysiler ve miktar ifade etme.",
+        "gramer_ve_yapilar": ["Countable & Uncountable Nouns", "Quantifiers", "Would like / How about"]
+      },
+      {
+        "unite_no": 7,
+        "tema": "Theme 7: World Heritage",
+        "kazanimlar_ve_islevler": "Tarihi mekânlar, dünya mirası alanları ve geçmiş olaylar.",
+        "gramer_ve_yapilar": ["Simple Past (Was/Were)", "Simple Past Regular/Irregular Verbs"]
+      },
+      {
+        "unite_no": 8,
+        "tema": "Theme 8: Emergency and Health",
+        "kazanimlar_ve_islevler": "Sağlık sorunları, acil durumlar ve tavsiyeler.",
+        "gramer_ve_yapilar": ["Modals of Advice (Should)", "Modals of Obligation (Must)", "Imperatives"]
+      },
+      {
+        "unite_no": 9,
+        "tema": "Theme 9: Invitations and Celebrations",
+        "kazanimlar_ve_islevler": "Davet etme, teklifleri kabul/reddetme ve kutlama planlama.",
+        "gramer_ve_yapilar": ["Future Plans (Be going to)", "Making Offers & Suggestions"]
+      },
+      {
+        "unite_no": 10,
+        "tema": "Theme 10: Television and Music",
+        "kazanimlar_ve_islevler": "TV programları, müzik türleri ve gelecek tahminleri.",
+        "gramer_ve_yapilar": ["Future Predictions (Will)", "Preferences (Prefer, Would rather)"]
+      }
+    ]
+  },
+  "İNGİLİZCE – 3": {
+    "donem": 3,
+    "sinif": "10. Sınıf 1. Dönem",
+    "cefr": "A2.1",
+    "uniteler": [
+      {
+        "unite_no": 1,
+        "tema": "Theme 1: School Life",
+        "kazanimlar_ve_islevler": "Okul dersleri, çalışma alışkanlıkları ve anlık durumlar.",
+        "gramer_ve_yapilar": ["Simple Present vs. Present Continuous", "State Verbs"]
+      },
+      {
+        "unite_no": 2,
+        "tema": "Theme 2: Plans",
+        "kazanimlar_ve_islevler": "Gelecek planları, sözleşmeler ve randevular.",
+        "gramer_ve_yapilar": ["Will vs. Be Going To", "Present Continuous for Future"]
+      },
+      {
+        "unite_no": 3,
+        "tema": "Theme 3: Legendary Figures",
+        "kazanimlar_ve_islevler": "Biyografiler ve geçmişte hikâye anlatımı.",
+        "gramer_ve_yapilar": ["Simple Past vs. Past Continuous", "When / While"]
+      },
+      {
+        "unite_no": 4,
+        "tema": "Theme 4: Traditions",
+        "kazanimlar_ve_islevler": "Eski alışkanlıklar ve gelenekler.",
+        "gramer_ve_yapilar": ["Used to / Didn't use to"]
+      },
+      {
+        "unite_no": 5,
+        "tema": "Theme 5: Travel",
+        "kazanimlar_ve_islevler": "Seyahat deneyimleri ve tatil konaklama.",
+        "gramer_ve_yapilar": ["Present Perfect Tense (Ever, Never, Just, Already, Yet)"]
+      }
+    ]
+  },
+  "İNGİLİZCE – 4": {
+    "donem": 4,
+    "sinif": "10. Sınıf 2. Dönem",
+    "cefr": "A2.2",
+    "uniteler": [
+      {
+        "unite_no": 6,
+        "tema": "Theme 6: Helpful Tips",
+        "kazanimlar_ve_islevler": "Tavsiyeler, zorunluluklar ve kurallar.",
+        "gramer_ve_yapilar": ["Should, Ought to, Had better", "Must, Have to, Needn't"]
+      },
+      {
+        "unite_no": 7,
+        "tema": "Theme 7: Food and Festivals",
+        "kazanimlar_ve_islevler": "Yemek tarifleri, süreç anlatımı ve festivaller.",
+        "gramer_ve_yapilar": ["Passive Voice (Present & Past Passive)"]
+      },
+      {
+        "unite_no": 8,
+        "tema": "Theme 8: Digital Era",
+        "kazanimlar_ve_islevler": "İnternet, teknoloji ve koşul cümleleri.",
+        "gramer_ve_yapilar": ["Conditionals Type 1 & Type 2"]
+      },
+      {
+        "unite_no": 9,
+        "tema": "Theme 9: Modern Heroes and Heroines",
+        "kazanimlar_ve_islevler": "Modern rol modelleri ve niteleme.",
+        "gramer_ve_yapilar": ["Superlatives", "Relative Clauses (Who/Which/That)"]
+      },
+      {
+        "unite_no": 10,
+        "tema": "Theme 10: Shopping",
+        "kazanimlar_ve_islevler": "Alışveriş, fiyatlar ve belirsiz zamirler.",
+        "gramer_ve_yapilar": ["Indefinite Pronouns", "Comparatives & Superlatives"]
+      }
+    ]
+  },
+  "İNGİLİZCE – 5": {
+    "donem": 5,
+    "sinif": "11. Sınıf 1. Dönem",
+    "cefr": "B1.1",
+    "uniteler": [
+      {
+        "unite_no": 1,
+        "tema": "Theme 1: Future Jobs",
+        "kazanimlar_ve_islevler": "Geleceğin meslekleri ve iş başvuruları.",
+        "gramer_ve_yapilar": ["Future Tenses", "Agreeing/Disagreeing (So do I, Neither do I)"]
+      },
+      {
+        "unite_no": 2,
+        "tema": "Theme 2: Hobbies and Skills",
+        "kazanimlar_ve_islevler": "Hobiler, beceriler ve tercihler.",
+        "gramer_ve_yapilar": ["Gerunds & Infinitives", "Modals of Ability", "Prefer / Would rather"]
+      },
+      {
+        "unite_no": 3,
+        "tema": "Theme 3: Hard Times",
+        "kazanimlar_ve_islevler": "Tarihi olaylar ve geçmişteki öncelikli eylemler.",
+        "gramer_ve_yapilar": ["Past Perfect Tense (Had + V3)", "Time Clauses"]
+      },
+      {
+        "unite_no": 4,
+        "tema": "Theme 4: What a Life",
+        "kazanimlar_ve_islevler": "Hayat hikâyeleri ve pişmanlıklar.",
+        "gramer_ve_yapilar": ["Wish Clauses (I wish / If only)"]
+      },
+      {
+        "unite_no": 5,
+        "tema": "Theme 5: Back to the Past",
+        "kazanimlar_ve_islevler": "Geçmişte gerçekleşmemiş koşul durumları.",
+        "gramer_ve_yapilar": ["Conditionals Type 3 (Unreal Past)"]
+      }
+    ]
+  },
+  "İNGİLİZCE – 6": {
+    "donem": 6,
+    "sinif": "11. Sınıf 2. Dönem",
+    "cefr": "B1.2",
+    "uniteler": [
+      {
+        "unite_no": 6,
+        "tema": "Theme 6: Open Your Heart",
+        "kazanimlar_ve_islevler": "Duygular ve geçmişe yönelik çıkarımlar.",
+        "gramer_ve_yapilar": ["Past Modals of Deduction (Must/Can't/Might have V3)"]
+      },
+      {
+        "unite_no": 7,
+        "tema": "Theme 7: Facts About Turkey",
+        "kazanimlar_ve_islevler": "Türkiye'nin tarihi ve turistik yerleri.",
+        "gramer_ve_yapilar": ["Advanced Passive Voice"]
+      },
+      {
+        "unite_no": 8,
+        "tema": "Theme 8: Sports",
+        "kazanimlar_ve_islevler": "Ekstrem sporlar ve niteleme cümleleri.",
+        "gramer_ve_yapilar": ["Relative Clauses (Non-defining: Where, When, Whose)"]
+      },
+      {
+        "unite_no": 9,
+        "tema": "Theme 9: My Friends",
+        "kazanimlar_ve_islevler": "Arkadaşlık ilişkileri ve dolaylı anlatım.",
+        "gramer_ve_yapilar": ["Reported Speech (Statements & Questions)"]
+      },
+      {
+        "unite_no": 10,
+        "tema": "Theme 10: Values and Norms",
+        "kazanimlar_ve_islevler": "Toplumsal değerler ve zıtlık/sebep bağlaçları.",
+        "gramer_ve_yapilar": ["Contrast & Cause Connectors (Although, Despite, Because of)"]
+      }
+    ]
+  },
+  "İNGİLİZCE – 7": {
+    "donem": 7,
+    "sinif": "12. Sınıf 1. Dönem",
+    "cefr": "B2.1",
+    "uniteler": [
+      {
+        "unite_no": 1,
+        "tema": "Theme 1: Music",
+        "kazanimlar_ve_islevler": "Müzik türleri, ritim ve tercihler.",
+        "gramer_ve_yapilar": ["Preference Structures", "Adverbs of Degree"]
+      },
+      {
+        "unite_no": 2,
+        "tema": "Theme 2: Friendship",
+        "kazanimlar_ve_islevler": "Gerçek arkadaşlık ve karşılıklı zamirler.",
+        "gramer_ve_yapilar": ["Reciprocal Pronouns (Each other, One another)"]
+      },
+      {
+        "unite_no": 3,
+        "tema": "Theme 3: Human Rights",
+        "kazanimlar_ve_islevler": "İnsan hakları ve resmi edilgen yapı.",
+        "gramer_ve_yapilar": ["Formal Passive", "Obligation Modals"]
+      },
+      {
+        "unite_no": 4,
+        "tema": "Theme 4: Coming Soon",
+        "kazanimlar_ve_islevler": "Geleceğin teknolojisi ve süreçler.",
+        "gramer_ve_yapilar": ["Future Continuous", "Future Perfect"]
+      },
+      {
+        "unite_no": 5,
+        "tema": "Theme 5: Psychology",
+        "kazanimlar_ve_islevler": "İnsan davranışı ve ettirgen yapılar.",
+        "gramer_ve_yapilar": ["Causatives (Have/Get something done)"]
+      }
+    ]
+  },
+  "İNGİLİZCE – 8": {
+    "donem": 8,
+    "sinif": "12. Sınıf 2. Dönem",
+    "cefr": "B2.2",
+    "uniteler": [
+      {
+        "unite_no": 6,
+        "tema": "Theme 6: Favors",
+        "kazanimlar_ve_islevler": "Rica etme, yardım isteme ve nezaket.",
+        "gramer_ve_yapilar": ["Request Modals (Would you mind + V-ing)"]
+      },
+      {
+        "unite_no": 7,
+        "tema": "Theme 7: News Stories",
+        "kazanimlar_ve_islevler": "Haber raporlama ve aktarılan sözler.",
+        "gramer_ve_yapilar": ["Advanced Reported Speech & Reporting Verbs"]
+      },
+      {
+        "unite_no": 8,
+        "tema": "Theme 8: Alternative Energy",
+        "kazanimlar_ve_islevler": "Yenilenebilir enerji ve çevre çözümleri.",
+        "gramer_ve_yapilar": ["Passive Voice with Modals"]
+      },
+      {
+        "unite_no": 9,
+        "tema": "Theme 9: Technology",
+        "kazanimlar_ve_islevler": "Teknolojik inovasyon ve karmaşık cümleler.",
+        "gramer_ve_yapilar": ["Complex Sentence Structures", "Cause & Effect Connectors"]
+      },
+      {
+        "unite_no": 10,
+        "tema": "Theme 10: Manners",
+        "kazanimlar_ve_islevler": "Sosyal görgü kuralları ve geçmiş eleştirileri.",
+        "gramer_ve_yapilar": ["Past Modals of Criticism (Should have V3)"]
+      }
+    ]
+  }
+}
+
