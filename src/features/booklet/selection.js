@@ -47,6 +47,8 @@ export function updateBookletQuestions() {
   renderBookletPages();
 }
 
+import { updateTTSVoiceControlVisibility } from '../audio/audio.js';
+
 export function updateTopBadge(customTitle) {
   const emojiEl = document.getElementById('badgeEmoji');
   const textEl = document.getElementById('badgeMainText');
@@ -57,6 +59,15 @@ export function updateTopBadge(customTitle) {
     if (textEl) textEl.textContent = state.libraryTab === 'rematch' ? 'Rövanşlar' : 'Yıldızlılar';
     if (badgeBtn) {
       badgeBtn.title = state.libraryTab === 'rematch' ? 'Rövanşlar (Tüm Dersler)' : 'Yıldızlılar';
+    }
+    return;
+  }
+
+  if (state.activeSearchFilter) {
+    if (emojiEl) emojiEl.textContent = '🔍';
+    if (textEl) textEl.textContent = `Arama: "${state.activeSearchFilter}"`;
+    if (badgeBtn) {
+      badgeBtn.title = `Arama: "${state.activeSearchFilter}" • Toplam ${state.bookletQuestions.length} Soru`;
     }
     return;
   }
@@ -73,7 +84,7 @@ export function updateTopBadge(customTitle) {
   if (state.currentSubject) {
     const subjDef = SUBJECTS.find(s => s.id === state.currentSubject) || SUBJECTS[1];
     badgeEmoji = subjDef.icon;
-    titleStr = subjDef.name;
+    titleStr = subjDef.shortName || subjDef.id;
   } else {
     badgeEmoji = '🌐';
     titleStr = 'Tüm Branşlar';
@@ -86,6 +97,7 @@ export function updateTopBadge(customTitle) {
 
   if (emojiEl) emojiEl.textContent = badgeEmoji;
   if (textEl) textEl.textContent = titleStr;
+  updateTTSVoiceControlVisibility();
 }
 
 onStateChange('booklet:refresh', () => {

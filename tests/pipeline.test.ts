@@ -14,7 +14,7 @@ test('Python veri üretimi arayüz dosyalarını değiştirmez', () => {
     writeFileSync(path.join(root, 'index.html'), '<!-- kullanıcı arayüzü -->');
     mkdirSync(path.join(root, 'src'), { recursive: true });
     writeFileSync(path.join(root, 'src/main.js'), '// kullanıcı kodu');
-    const result = spawnSync('python3', [path.join(root, 'scripts/build_webapp.py')], { encoding: 'utf8' });
+    const result = spawnSync('python3', [path.join(root, 'scripts/core/build_webapp.py')], { encoding: 'utf8' });
     assert.equal(result.status, 0, result.stderr || result.stdout);
     assert.equal(readFileSync(path.join(root, 'index.html'), 'utf8'), '<!-- kullanıcı arayüzü -->');
     assert.equal(readFileSync(path.join(root, 'src/main.js'), 'utf8'), '// kullanıcı kodu');

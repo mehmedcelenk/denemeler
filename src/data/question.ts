@@ -1,13 +1,13 @@
 /** Frontend'in Python çıktısından beklediği veri sözleşmesi. */
-export const choices = ['A', 'B', 'C', 'D'] as const;
+export const choices = ['A', 'B', 'C', 'D', 'E'] as const;
 export type Choice = typeof choices[number];
-export type SubjectId = 'COG' | 'TDE' | 'MAT' | 'TAR' | 'INK' | 'KIM' | 'FIZ' | 'BIO' | 'FEL' | 'DIN' | 'SAG' | 'ING';
+export type SubjectId = 'COG' | 'TDE' | 'MAT' | 'TAR' | 'INK' | 'KIM' | 'FIZ' | 'BIO' | 'FEL' | 'DIN' | 'SAG' | 'ING' | 'AOF_HADIS' | 'AOF_ITAR' | 'AOF_AHLAK' | 'AOF_IBADET' | 'AOF_INANC';
 
 export interface Question {
   id: number;
   ders: string;
   soru: string;
-  secenekler: Record<Choice, string>;
+  secenekler: Partial<Record<Choice, string>> & Record<'A' | 'B' | 'C' | 'D', string>;
   dogru_cevap: Choice;
   ana_konu?: string;
   alt_konu?: string;
@@ -33,11 +33,13 @@ export function parseQuestions(value: unknown): Question[] {
   if (!Array.isArray(value)) throw new Error('Soru verisi bir liste olmalı.');
   const seen = new Set<number>();
   for (const [index, question] of value.entries()) {
+    const requiredChoices = ['A', 'B', 'C', 'D'] as const;
     if (!isRecord(question) || !Number.isSafeInteger(question.id)
       || typeof question.ders !== 'string' || typeof question.soru !== 'string'
       || !isRecord(question.secenekler)
-      || !choices.every(choice => typeof (question.secenekler as Record<string, unknown>)[choice] === 'string')
-      || !choices.includes(question.dogru_cevap as Choice)) {
+      || !requiredChoices.every(choice => typeof (question.secenekler as Record<string, unknown>)[choice] === 'string')
+      || !choices.includes(question.dogru_cevap as Choice)
+      || typeof (question.secenekler as Record<string, unknown>)[question.dogru_cevap as string] !== 'string') {
       throw new Error(`${index + 1}. sorunun veri biçimi geçersiz.`);
     }
     if (question.sekilli !== undefined && typeof question.sekilli !== 'boolean') {

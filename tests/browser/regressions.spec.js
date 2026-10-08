@@ -17,6 +17,11 @@ test('arama sonucu seçildiğinde soru vurgulanır', async ({ page }) => {
   await expect(page.locator(`#bq_${id}`)).toHaveCSS('outline-style', 'solid');
 });
 
+async function selectSubject(page, name) {
+  await page.locator('#btnSubjectDropdownTrigger').click();
+  await page.locator('.dropdown-menu-item').filter({ hasText: name }).click();
+}
+
 test('yavaş ders isteği son seçilen dersi değiştirmez', async ({ page }) => {
   let release;
   const blocked = new Promise(resolve => { release = resolve; });
@@ -30,9 +35,9 @@ test('yavaş ders isteği son seçilen dersi değiştirmez', async ({ page }) =>
   await page.goto('/');
   await expect(page.locator('.optical-choice-row').first()).toBeVisible();
   await page.locator('#topCenterBadge').click();
-  await page.locator('.drawer-subj-card').filter({ hasText: 'İngilizce' }).click();
+  await selectSubject(page, 'İngilizce');
   await requested;
-  await page.locator('.drawer-subj-card').filter({ hasText: 'Coğrafya' }).click();
+  await selectSubject(page, 'Coğrafya');
   await expect(page.locator('#badgeMainText')).toContainText('COĞ');
   const response = page.waitForResponse('**/data/subjects/ING.json');
   release();
@@ -49,11 +54,11 @@ test('ders yükleme hatasında önceki kitapçık korunur ve yeniden denenebilir
   await expect(page.locator('.optical-choice-row').first()).toBeVisible();
   await page.route('**/data/subjects/ING.json', route => route.fulfill({ status: 503, body: 'unavailable' }));
   await page.locator('#topCenterBadge').click();
-  await page.locator('.drawer-subj-card').filter({ hasText: 'İngilizce' }).click();
+  await selectSubject(page, 'İngilizce');
   await expect(page.locator('#drawerTopicList')).toContainText('Ders yüklenemedi');
   await expect(page.locator('#badgeMainText')).toContainText('TDE');
   await page.unroute('**/data/subjects/ING.json');
-  await page.locator('.drawer-subj-card').filter({ hasText: 'İngilizce' }).click();
+  await selectSubject(page, 'İngilizce');
   await expect(page.locator('#badgeMainText')).toContainText('İNG');
   expect(errors).toEqual([]);
 });
@@ -71,7 +76,7 @@ test('yavaş genel arama temizlendikten sonra sonuç panelini tekrar açmaz', as
   await page.goto('/');
   await expect(page.locator('.optical-choice-row').first()).toBeVisible();
   await page.locator('#topCenterBadge').click();
-  await page.locator('.drawer-subj-card.active').click();
+  await selectSubject(page, 'İngilizce');
   await page.locator('#drawerSearchInput').fill('roman');
   await requested;
   await page.locator('#drawerSearchClearBtn').click();

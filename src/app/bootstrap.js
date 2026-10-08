@@ -10,6 +10,9 @@ import { initTheme } from '../features/appearance/theme.js';
 import { initAccentColor } from '../features/appearance/accent.js';
 
 export async function startApp() {
+  if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  }
   loadSavedChoices();
   initTheme();
   initAccentColor();

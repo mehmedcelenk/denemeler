@@ -98,28 +98,39 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
   const isHintRevealed = state.revealedHints.has(q.id);
   const compassClass = isHintRevealed ? 'hint-revealed' : '';
 
+  const isExpanded = state.isFeaturesExpanded || (Boolean(state.expandedQuestionIds) && state.expandedQuestionIds.has(q.id));
+  const toggleIcon = isExpanded ? '‹' : '›';
+  const drawerClass = isExpanded ? 'q-features-drawer is-expanded' : 'q-features-drawer';
+
   const pointsStr = typeof q.puan === 'number' ? q.puan.toFixed(2) : '5.00';
   const krediStr = q.kredi ? String(q.kredi) : '2';
   const sinavSoruSayisiStr = q.sinav_soru_sayisi ? String(q.sinav_soru_sayisi) : '20';
   return `
     <div class="q-top-row">
-      <span class="q-number">${globalIdx}.</span>
-      ${soonBadge}
-      ${cefrBadgeHtml}
-      ${diffBadgeHtml}
-      <span class="q-point-pill" title="Ders Kredisi: ${krediStr} | Bir Sınavdaki Soru: ${sinavSoruSayisiStr}">${pointsStr} Puan</span>
-      ${speakerBtnHtml}
-      ${trBtnHtml}
-      ${arBtnHtml}
-      ${xrayBtnHtml}
-      ${formulaBtnHtml}
-      ${trapBtnHtml}
-      ${starBtnHtml}
-      ${eyeBtnHtml}
-      ${boardBtnHtml}
-      <button class="btn-companion-icon ${compassClass}" id="btnCompass_${q.id}" title="Pusula / İpucu Göster" onclick="toggleSingleHint(${q.id})" style="display:none;">
-        ${lucideCompassSvg}
+      <div class="q-header-meta">
+        <span class="q-number">${globalIdx}.</span>
+        ${soonBadge}
+        ${cefrBadgeHtml}
+        ${diffBadgeHtml}
+        <span class="q-point-pill" title="Ders Kredisi: ${krediStr} | Bir Sınavdaki Soru: ${sinavSoruSayisiStr}">${pointsStr} Puan</span>
+      </div>
+      <button class="btn-features-toggle" data-action="toggle-question-features" data-qid="${q.id}" title="Özellik Çubuğunu Aç/Kapat">
+        <span class="features-toggle-icon">${toggleIcon}</span>
       </button>
+      <div class="${drawerClass}">
+        ${speakerBtnHtml}
+        ${trBtnHtml}
+        ${arBtnHtml}
+        ${xrayBtnHtml}
+        ${formulaBtnHtml}
+        ${trapBtnHtml}
+        ${starBtnHtml}
+        ${eyeBtnHtml}
+        ${boardBtnHtml}
+        <button class="btn-companion-icon ${compassClass}" id="btnCompass_${q.id}" title="Pusula / İpucu Göster" onclick="toggleSingleHint(${q.id})" style="display:none;">
+          ${lucideCompassSvg}
+        </button>
+      </div>
     </div>
   `;
 }

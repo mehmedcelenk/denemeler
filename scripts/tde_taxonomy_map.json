@@ -1,0 +1,58 @@
+{
+  "1. TDE Giriş Ünitesi ve Dil Kapsamı": [
+    "1.1 Edebiyatın Bilimlerle İlişkisi (Tarih, Coğrafya, Felsefe, Psikoloji, Sosyoloji)",
+    "1.2 İletişim Ögeleri (Gönderici, Alıcı, İleti, Kanal, Bağlam, Dönüt)",
+    "1.3 Dilin Kullanımından Doğan Türler (Lehçe, Şive, Ağız, Argo, Jargon)"
+  ],
+  "2. Yazım ve Noktalama": [
+    "2.1 Yazım Kuralları (Büyük Harfler, Birleşik Kelimeler, Sayılar, Ekler '-de', '-ki', '-mi')",
+    "2.2 Noktalama İşaretleri (Nokta, Virgül, Noktalı Virgül, İki Nokta, Kesme, Tırnak, Üç Nokta, Ayraç)"
+  ],
+  "3. Dil Bilgisi (Sentaks ve Gramer)": [
+    "3.1 Sözcük Türleri (İsimler, Sıfatlar, Zamirler, Zarflar, Edat, Bağlaç, Ünlem)",
+    "3.2 Fiiller, Ek Fiil ve Fiilde Çatı",
+    "3.3 Fiilimsiler (İsim-Fiil, Sıfat-Fiil, Zarf-Fiil)",
+    "3.4 Cümlenin Ögeleri (Özne, Yüklem, Nesne, Dolaylı Tümleç, Zarf Tümleci)",
+    "3.5 Cümle Türleri (Yapısına, Anlamına, Yüklemin Türüne/Yerine Göre)",
+    "3.6 Anlatım Bozuklukları",
+    "3.7 Ses Bilgisi ve Ses Olayları"
+  ],
+  "4. Şiir Bilgisi ve Edebî Sanatlar": [
+    "4.1 Ahenk Unsurları ve Yapı (Ölçü, Nazım Birimi, Kafiye Türleri, Redif)",
+    "4.2 Şiir Türleri (Lirik, Epik, Didaktik, Pastoral, Satirik)",
+    "4.3 Edebî Sanatlar (Teşbih, İstiare, Mecazımürsel, Teşhis, İntak, Tenasüp, Tezat, Hüsn-i Talil vb.)"
+  ],
+  "5. Tiyatro ve Drama": [
+    "5.1 Geleneksel Türk Tiyatrosu (Karagöz, Orta Oyunu, Meddah, Köy Seyirlik Oyunları)",
+    "5.2 Tanzimat ve İlk Dönem Türk Tiyatrosu (Şair Evlenmesi ve İlk Oyunlar)",
+    "5.3 Modern Tiyatro ve Türleri (Cumhuriyet Dönemi Tiyatrosu; Trajedi, Komedi, Dram, Absürt)"
+  ],
+  "6. Öğretici Metinler ve Sözlü Anlatım": [
+    "6.1 Anı (Hatıra)",
+    "6.2 Gezi Yazısı",
+    "6.3 Biyografi ve Otobiyografi",
+    "6.4 Mektup ve Günlük",
+    "6.5 Gazete Çevresinde Gelişen Metinler (Makale, Fıkra/Köşe Yazısı, Deneme, Eleştiri, Sohbet, Mülakat, Röportaj)",
+    "6.6 Sözlü Anlatım Türleri (Söylev/Nutuk, Münazara, Panel, Açık Oturum)"
+  ],
+  "7. Hikâye ve Roman": [
+    "7.1 Hikâye Yapı Unsurları, Anlatıcı ve Bakış Açıları (Olay-Durum Hikâyesi, İlahi/Kahraman/Gözlemci, Küçürek Hikâye)",
+    "7.2 Anlatım Biçimleri ve Teknikleri (İç Konuşma, Bilinç Akışı, Geriye Dönüş, Özetleme)",
+    "7.3 Roman Türleri, Yapısı ve Dünya Edebiyatında Roman"
+  ],
+  "8. Edebî Dönemler, Akımlar ve Şiir/Edebiyat Gelenekleri": [
+    "8.1 İslamiyet Öncesi ve Geçiş Dönemi Türk Edebiyatı (Koşuk, Sagu, Sav; Kutadgu Bilig, Divanü Lugati't-Türk)",
+    "8.2 Destan ve Efsane (Doğal/Yapma Türk ve Dünya Destanları)",
+    "8.3 Halk Edebiyatı ve Âşık / Tasavvuf Şiiri",
+    "8.4 Divan Edebiyatı ve Nazım Şekilleri (Gazel, Kaside, Mesnevi, Şarkı, Rubai)",
+    "8.5 Tanzimat, Servet-i Fünun ve Fecr-i Âti Edebiyatı",
+    "8.6 Millî Edebiyat ve Kurtuluş Savaşı Dönemi Edebiyatı",
+    "8.7 Cumhuriyet Dönemi Edebiyatı ve Şiir Akımları (Saf Şiir, Garip/I. Yeni, İkinci Yeni, Toplumcu Gerçekçiler)",
+    "8.8 Edebî Akımlar (Klasisizm, Romantizm, Realizm, Natüralizm, Parnasizm, Sembolizm, Modernizm, Postmodernizm)"
+  ],
+  "9. Paragrafta Anlam ve Anlatım": [
+    "9.1 Sözcükte ve Cümlede Anlam / Kavramlar",
+    "9.2 Paragrafta Ana Düşünce, Konu ve Yardımcı Düşünceler",
+    "9.3 Anlatım Biçimleri ve Düşünceyi Geliştirme Yolları"
+  ]
+}

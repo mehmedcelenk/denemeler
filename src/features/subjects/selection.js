@@ -1,11 +1,29 @@
 import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { loadSubjectData } from '../../data/questions.js';
-import { SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
+import { AOIHL_SUBJECTS, AOF_SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
 import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.js';
 import { renderDrawerTopics } from './topics.js';
 import { escapeHtml, escapeJs } from '../../shared/escape.ts';
 
 let selectionVersion = 0;
+
+export async function setProgramMode(mode) {
+  state.programMode = mode;
+  const btnAoihl = document.getElementById('btnProgramAoihl');
+  const btnAof = document.getElementById('btnProgramAof');
+  if (btnAoihl) btnAoihl.classList.toggle('active', mode === 'AOIHL');
+  if (btnAof) btnAof.classList.toggle('active', mode === 'AOF');
+
+  if (mode === 'AOF') {
+    const isAofSubj = AOF_SUBJECTS.some(s => s.id === state.currentSubject);
+    const targetSubj = isAofSubj ? state.currentSubject : AOF_SUBJECTS[0].id;
+    await setSubject(targetSubj);
+  } else {
+    const isAoihlSubj = AOIHL_SUBJECTS.some(s => s.id === state.currentSubject);
+    const targetSubj = isAoihlSubj ? state.currentSubject : AOIHL_SUBJECTS[0].id;
+    await setSubject(targetSubj);
+  }
+}
 
 export async function setSubject(subj) {
   const version = ++selectionVersion;
@@ -13,7 +31,9 @@ export async function setSubject(subj) {
     await loadSubjectData(subj);
   } catch (error) {
     if (version !== selectionVersion) return false;
-    throw error;
+    const container = document.getElementById('drawerTopicList');
+    if (container) container.innerHTML = '<div style="padding:14px; text-align:center; color:var(--paper-text-muted); font-size:12px;">Ders yüklenemedi. Bağlantıyı kontrol edip tekrar deneyin.</div>';
+    return false;
   }
   if (version !== selectionVersion) return false;
 
@@ -42,7 +62,6 @@ export async function setSubject(subj) {
     return numA - numB;
   });
 
-  // Varsayılan olarak 1. kademeyi seç (ör: MAT-1, TDE-1)
   if (courses.length > 0) {
     state.selectedCourses.add(courses[0]);
   }
@@ -77,37 +96,66 @@ export function renderDrawerSelectorBar() {
   if (normalContainer) normalContainer.style.display = 'block';
   if (bannerContainer) bannerContainer.style.display = 'none';
 
-  const subjDef = SUBJECTS.find(s => s.id === state.currentSubject) || SUBJECTS[0];
+  const isAof = state.programMode === 'AOF';
+  const dropdownWrap = document.getElementById('subjectDropdownWrapper');
+  const slashEl = document.querySelector('.dropdown-slash');
+  const intersectionWrap = document.getElementById('intersectionSwitchWrapper');
+  const btnAoihl = document.getElementById('btnProgramAoihl');
+  const btnAof = document.getElementById('btnProgramAof');
+
+  if (btnAoihl) btnAoihl.classList.toggle('active', !isAof);
+  if (btnAof) btnAof.classList.toggle('active', isAof);
+
+  if (dropdownWrap) dropdownWrap.style.display = isAof ? 'none' : 'block';
+  if (slashEl) slashEl.style.display = isAof ? 'none' : 'inline';
+  if (intersectionWrap) intersectionWrap.style.display = isAof ? 'none' : 'flex';
+
+  const currentList = isAof ? AOF_SUBJECTS : AOIHL_SUBJECTS;
+  const subjDef = currentList.find(s => s.id === state.currentSubject) || currentList[0];
   const iconEl = document.getElementById('selectedSubjIcon');
   const nameEl = document.getElementById('selectedSubjShortName');
   const chipsContainer = document.getElementById('levelChipsContainer');
   const chk = document.getElementById('chkIntersectionSwitch');
 
   if (iconEl) iconEl.textContent = subjDef.icon;
-  if (nameEl) nameEl.textContent = subjDef.name.toUpperCase();
+  if (nameEl) nameEl.textContent = (subjDef.shortName || subjDef.name).toUpperCase();
 
-  if (chipsContainer && state.currentSubject) {
-    const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, state.currentSubject)).map(q => q.ders)));
-    courses.sort((a, b) => {
-      const numA = parseInt((a.match(/\d+$/) || [0])[0], 10);
-      const numB = parseInt((b.match(/\d+$/) || [0])[0], 10);
-      return numA - numB;
-    });
-
+  if (chipsContainer) {
     let chipsHtml = '';
-    courses.forEach(c => {
-      const isSel = state.selectedCourses.has(c);
-      const m = c.match(/\d+$/);
-      const num = m ? m[0] : c;
-      const short = getShortCourseName(c);
-      chipsHtml += `
-        <button type="button" class="btn-level-chip ${isSel ? 'active' : ''}" 
-                onclick="toggleCourseLevel('${escapeJs(c)}')" 
-                title="${escapeHtml(short)}">
-          ${escapeHtml(num)}
-        </button>
-      `;
-    });
+    if (isAof) {
+      AOF_SUBJECTS.forEach((s) => {
+        const isSel = (s.id === state.currentSubject);
+        chipsHtml += `
+          <button type="button" class="btn-level-chip ${isSel ? 'active' : ''}" 
+                  onclick="selectSubjectFromDropdown('${s.id}')" 
+                  title="${escapeHtml(s.name)}"
+                  style="padding:4px 10px; min-width:auto; font-size:11.5px; white-space:nowrap;">
+            ${s.icon} ${escapeHtml(s.shortName || s.name)}
+          </button>
+        `;
+      });
+    } else if (state.currentSubject) {
+      const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, state.currentSubject)).map(q => q.ders)));
+      courses.sort((a, b) => {
+        const numA = parseInt((a.match(/\d+$/) || [0])[0], 10);
+        const numB = parseInt((b.match(/\d+$/) || [0])[0], 10);
+        return numA - numB;
+      });
+
+      courses.forEach(c => {
+        const isSel = state.selectedCourses.has(c);
+        const m = c.match(/\d+$/);
+        const num = m ? m[0] : c;
+        const short = getShortCourseName(c);
+        chipsHtml += `
+          <button type="button" class="btn-level-chip ${isSel ? 'active' : ''}" 
+                  onclick="toggleCourseLevel('${escapeJs(c)}')" 
+                  title="${escapeHtml(short)}">
+            ${escapeHtml(num)}
+          </button>
+        `;
+      });
+    }
     chipsContainer.innerHTML = chipsHtml;
   }
 
@@ -127,8 +175,9 @@ export function toggleSubjectDropdown() {
     return;
   }
 
+  const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
   let html = '';
-  SUBJECTS.forEach(s => {
+  currentList.forEach(s => {
     const isAct = (s.id === state.currentSubject);
     html += `
       <div class="dropdown-menu-item ${isAct ? 'active' : ''}" onclick="selectSubjectFromDropdown('${s.id}')">

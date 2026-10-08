@@ -1,0 +1,67 @@
+{
+  "1. Tarih Bilimi ve İlk Çağ Medeniyetleri": [
+    "1.1 Tarih Bilimine Giriş, Yöntem, Kaynaklar ve Takvimler",
+    "1.2 İnsanlığın İlk Dönemleri, Tarih Öncesi Çağlar ve Arkeolojik Merkezler",
+    "1.3 Mezopotamya ve Mısır Medeniyetleri",
+    "1.4 Anadolu Medeniyetleri (Hitit, Frig, Lidya, Urartu, İyon)",
+    "1.5 Ege, Yunan, Doğu Akdeniz ve Roma Medeniyetleri"
+  ],
+  "2. Orta Çağ'da Dünya ve Türk Dünyası": [
+    "2.1 Orta Çağ Siyasi ve Sosyal Yapısı, Feodalite ve Ticaret Yolları",
+    "2.2 İlk Türk Devletleri ve Orta Asya Bozkır Kültürü (Hunlar ve Diğer Boylar)",
+    "2.3 Kök Türkler, Uygurlar ve Türk Devlet Teşkilatı (Kut, Töre, Orhun Yazıtları)"
+  ],
+  "3. İslam Medeniyeti ve Türk-İslam Devletleri": [
+    "3.1 İslamiyet'in Doğuşu, Hz. Muhammed ve Dört Halife Dönemi",
+    "3.2 Emeviler, Abbasiler ve İslam Kültür Medeniyeti",
+    "3.3 Türklerin İslamiyet'i Kabulü ve İlk Türk-İslam Devletleri (Karahanlı, Gazneli)",
+    "3.4 Büyük Selçuklu Devleti, Teşkilatı ve Kültür Medeniyeti"
+  ],
+  "4. Türkiye Selçukluları ve Anadolu Beylikleri": [
+    "4.1 Malazgirt Sonrası Anadolu ve I. Dönem Türk Beylikleri",
+    "4.2 Türkiye Selçuklu Devleti Siyaseti ve Haçlı Seferleri",
+    "4.3 Kösedağ Savaşı, Moğol İstilası ve II. Dönem Anadolu Beylikleri",
+    "4.4 Anadolu Selçuklu Medeniyeti, Ahilik ve Kültürel Hayat"
+  ],
+  "5. Beylikten Devlete Osmanlı Siyaseti ve Teşkilatı": [
+    "5.1 Kuruluş Dönemi Siyaseti ve Balkan Fetihleri (1302-1453)",
+    "5.2 Anadolu'da Türk Siyasi Birliği, Ankara Savaşı ve Fetret Devri",
+    "5.3 Osmanlı Askerî ve İdari Teşkilatı (Tımar ve Kapıkulu Sistemleri)",
+    "5.4 Kuruluş Dönemi Osmanlı Toplumu, Kültürü ve Kurumları"
+  ],
+  "6. Dünya Gücü Osmanlı ve Osmanlı Medeniyeti": [
+    "6.1 Fatih Sultan Mehmed Dönemi ve İstanbul'un Fethi",
+    "6.2 II. Bayezid ve Yavuz Sultan Selim Dönemi (Doğu Siyaseti ve Halifelik)",
+    "6.3 Kanuni Sultan Süleyman Dönemi, Seferler ve Denizler Hakimiyeti",
+    "6.4 Klasik Çağda Osmanlı Devlet Yönetimi, Saray ve Divan Teşkilatı",
+    "6.5 Klasik Dönem Osmanlı Toplum Yapısı, Hukuk, Vakıflar ve Şehir Hayatı"
+  ],
+  "7. Arayış Yılları ve Değişen Dünya Dengeleri (17-18. Yüzyıl)": [
+    "7.1 17. Yüzyıl Osmanlı Savaşları ve Antlaşmaları (Habsburglar, Safeviler, Lehistan, Rusya)",
+    "7.2 II. Viyana Kuşatması, Kutsal İttifak ve Karlofça Antlaşması",
+    "7.3 17. Yüzyıl İç İsyanları ve Islahat Çabaları (Celali İsyanları, Köprülüler)",
+    "7.4 Avrupa'daki Gelişmeler (Keşifler, Rönesans, Reform, Aydınlanma, Westphalia)",
+    "7.5 18. Yüzyıl Osmanlı Siyaseti ve Antlaşmaları (Kayıpları Telafi, Küçük Kaynarca, Yaş)",
+    "7.6 18. Yüzyıl Islahatları, Lale Devri ve Nizam-ı Cedit"
+  ],
+  "8. En Uzun Yüzyıl (19. ve 20. Yüzyıl Başı Osmanlı)": [
+    "8.1 Uluslararası İlişkilerde Denge Stratejisi, Milliyetçilik İsyanları ve Şark Meselesi",
+    "8.2 19. Yüzyıl Demokratikleşme Hareketleri ve Islahatlar (Sened-i İttifak'tan Meşrutiyet'e)",
+    "8.3 Dağılmayı Önleme Fikir Akımları ve 19. Yüzyıl Kültürel Hayatı",
+    "8.4 20. Yüzyıl Başlarında Osmanlı Devleti, Trablusgarp ve Balkan Savaşları"
+  ],
+  "9. Millî Mücadele ve T.C. İnkılap Tarihi": [
+    "9.1 Mustafa Kemal'in Hayatı, I. Dünya Savaşı ve Mondros Ateşkesi",
+    "9.2 Millî Mücadele'nin Hazırlık Dönemi, Kongreler ve I. TBMM'nin Açılışı",
+    "9.3 Millî Mücadele Muharebeler Dönemi, Antlaşmalar ve Lozan Barış Antlaşması",
+    "9.4 Atatürkçülük ve Türk İnkılabı (Siyasal, Hukuki, Eğitsel, Toplumsal, Ekonomik)",
+    "9.5 Atatürk İlkeleri ve Bütünleyici İlkeler",
+    "9.6 Atatürk Dönemi Türk Dış Politikası (1923-1938)"
+  ],
+  "10. Çağdaş Türk ve Dünya Tarihi": [
+    "10.1 İki Savaş Arası Dönem ve II. Dünya Savaşı (1918-1945)",
+    "10.2 Soğuk Savaş Dönemi ve Türkiye (1945-1960)",
+    "10.3 Yumuşama (Detant) Dönemi ve Bölgesel Çatışmalar (1960-1990)",
+    "10.4 Küreselleşen Dünya, İletişim Çağı ve 21. Yüzyılın Eşiğinde Türkiye ve Dünya"
+  ]
+}

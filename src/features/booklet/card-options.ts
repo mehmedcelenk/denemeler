@@ -3,18 +3,19 @@ import { escapeHtml } from '../../shared/escape.ts';
 import { renderMathText } from '../../shared/math-render.ts';
 import type { Question, Choice } from '../../data/question.ts';
 
-const CHOICES: Choice[] = ['A', 'B', 'C', 'D'];
-
-/** Soru için 4 optik şıkkı ve durum sınıflarını üretir. */
+/** Soru için optik şık kartlarını ve durum sınıflarını üretir. */
 export function renderCardOptions(q: Question, isPassive: boolean): string {
   const userMark = state.userMarkedChoices[q.id];
   const isRevealed = state.revealedAnswers.has(q.id);
   const isEnglish = (state.currentSubject === 'ING') || Boolean(q.ders && q.ders.includes('İNGİLİZCE'));
   const isMath = (state.currentSubject === 'MAT') || Boolean(q.ders && q.ders.includes('MATEMATİK'));
-  const isTde = (state.currentSubject === 'TDE') || Boolean(q.ders && q.ders.includes('TÜRK DİLİ'));
+
+  const availableChoices: Choice[] = (q.secenekler && q.secenekler['E'])
+    ? ['A', 'B', 'C', 'D', 'E']
+    : ['A', 'B', 'C', 'D'];
 
   let optHtml = '';
-  CHOICES.forEach(letter => {
+  availableChoices.forEach(letter => {
     const optText = (q.secenekler && q.secenekler[letter]) || '';
     const isMarked = (userMark === letter);
     const isCorrect = (q.dogru_cevap === letter);

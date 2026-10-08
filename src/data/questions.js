@@ -19,7 +19,7 @@ export async function loadSubjectData(subj) {
   const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
   const dataUrl = `${cleanBase}data/subjects/${subj}.json`;
 
-  const request = fetch(dataUrl, { cache: 'force-cache' })
+  const request = fetch(dataUrl, { cache: 'no-cache' })
     .then(async response => {
       if (!response.ok) throw new Error(`${subj} verisi yüklenemedi (${response.status})`);
       const text = await response.text();

@@ -32,6 +32,19 @@ export function updateTTSGenderUI() {
     const genderLabel = (ttsVoiceGender === 'male') ? 'Erkek Sesi' : 'Kadın Sesi';
     btn.title = `Soruyu Seslendir (${genderLabel} • Yavaş & Net) [Sağ Tık: Sesi Değiştir]`;
   });
+  updateTTSVoiceControlVisibility();
+}
+
+export function updateTTSVoiceControlVisibility() {
+  if (typeof document === 'undefined') return;
+  const row = document.getElementById('ttsVoiceControlGroup');
+  if (!row) return;
+
+  const isEnglishSubject = state.currentSubject === 'ING';
+  const hasEnglishQuestions = state.bookletQuestions.some(q => q.ders && q.ders.includes('İNGİLİZCE'));
+  const isVisible = isEnglishSubject || hasEnglishQuestions;
+
+  row.style.display = isVisible ? 'flex' : 'none';
 }
 
 export function toggleTTSVoiceGenderQuick(event) {

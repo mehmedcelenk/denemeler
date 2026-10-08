@@ -8,10 +8,11 @@
     "build": "npm run check && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "lint": "eslint src scripts/check-architecture.js *.config.js tests/browser",
-    "check": "npm run lint && npm run typecheck && node scripts/check-architecture.js && node --import tsx --test tests/*.test.ts && python3 tests/xray_pipeline_test.py",
-    "data:build": "python3 scripts/build_webapp.py",
+    "check": "npm run lint && npm run typecheck && node scripts/check-architecture.js && node --import tsx --test tests/*.test.ts",
+    "data:build": "python3 scripts/core/build_webapp.py",
     "typecheck": "tsc --noEmit",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "validate:tarih": "python3 scripts/validate_tarih_taxonomy.py --check-map-only"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",

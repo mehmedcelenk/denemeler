@@ -24,24 +24,35 @@ body.fullscreen-focus-mode .top-center-badge-container {
   pointer-events: none;
 }
 
-.top-center-pill {
+/* Tüm Üst Rozetlerin Ortak Temel Stilleri */
+.top-center-pill,
+.top-prayer-pill,
+.top-streak-pill,
+.top-view-pill,
+.top-filter-pill,
+.top-unified-pill {
   pointer-events: auto;
   background: var(--badge-bg);
   backdrop-filter: blur(20px) saturate(190%);
   -webkit-backdrop-filter: blur(20px) saturate(190%);
   border: 1px solid var(--badge-border);
   color: var(--paper-text);
-  padding: 8px 18px;
   border-radius: 9999px;
+  box-shadow: var(--badge-shadow);
+  user-select: none;
+  min-height: 38px;
+  flex: 0 0 auto;
+}
+
+.top-center-pill {
+  padding: 8px 18px;
   display: inline-flex;
   align-items: center;
   gap: 9px;
   font-size: 13.5px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: var(--badge-shadow);
   transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-  user-select: none;
   white-space: nowrap;
 }
 
@@ -83,21 +94,12 @@ body.fullscreen-focus-mode .top-center-badge-container {
 
 /* Ezan Vakti Rozeti */
 .top-prayer-pill {
-  pointer-events: auto;
-  background: var(--badge-bg);
-  backdrop-filter: blur(20px) saturate(190%);
-  -webkit-backdrop-filter: blur(20px) saturate(190%);
-  border: 1px solid var(--badge-border);
-  color: var(--paper-text);
   padding: 8px 14px;
-  border-radius: 9999px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 13px;
   font-weight: 700;
-  box-shadow: var(--badge-shadow);
-  user-select: none;
   white-space: nowrap;
   transition: all 0.2s ease;
 }
@@ -111,21 +113,12 @@ body.fullscreen-focus-mode .top-center-badge-container {
 
 /* Su Damlası Serisi Rozeti */
 .top-streak-pill {
-  pointer-events: auto;
-  background: var(--badge-bg);
-  backdrop-filter: blur(20px) saturate(190%);
-  -webkit-backdrop-filter: blur(20px) saturate(190%);
-  border: 1px solid var(--badge-border);
-  color: var(--paper-text);
   padding: 8px 12px;
-  border-radius: 9999px;
   display: inline-flex;
   align-items: center;
   gap: 5px;
   font-size: 13px;
   font-weight: 800;
-  box-shadow: var(--badge-shadow);
-  user-select: none;
   white-space: nowrap;
   transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
   color: #0284c7;
@@ -158,34 +151,19 @@ body.dark-mode .top-streak-pill {
   100% { transform: scale(1); }
 }
 
-/* İkonlu Üst Test Filtre / Oyun Modu Rozeti */
-.top-filter-pill {
-  pointer-events: auto;
-  background: var(--badge-bg);
-  backdrop-filter: blur(20px) saturate(190%);
-  -webkit-backdrop-filter: blur(20px) saturate(190%);
-  border: 1px solid var(--badge-border);
+/* İkonlu Üst Görünüm Modu & Birleşik Filtre Rozetleri */
+.top-view-pill,
+.top-filter-pill,
+.top-unified-pill {
   padding: 3px 4px;
-  border-radius: 9999px;
   display: inline-flex;
   align-items: center;
   gap: 3px;
-  box-shadow: var(--badge-shadow);
-  user-select: none;
 }
 
-.top-center-pill,
-.top-prayer-pill,
-.top-filter-pill,
-.top-streak-pill {
-  border: 1px solid var(--badge-border);
-  border-radius: 9999px;
-  box-shadow: var(--badge-shadow);
-  min-height: 38px;
-  flex: 0 0 auto;
-}
-
-.btn-top-filter {
+.btn-top-view,
+.btn-top-filter,
+.btn-top-unified {
   background: transparent;
   border: none;
   color: var(--paper-text-muted);
@@ -204,29 +182,37 @@ body.dark-mode .top-streak-pill {
   line-height: 1;
 }
 
-.btn-top-filter:hover {
+.btn-top-view:hover,
+.btn-top-filter:hover,
+.btn-top-unified:hover {
   background: rgba(125, 125, 125, 0.12);
   color: var(--paper-text);
 }
 
-.btn-top-filter.active {
+.btn-top-view.active,
+.btn-top-filter.active,
+.btn-top-unified.active {
   background: var(--brand-accent);
   color: #ffffff;
   box-shadow: 0 3px 12px rgba(2, 132, 199, 0.35);
   transform: scale(1.02);
 }
 
-.btn-top-filter#btnFilterRematch.active {
+.btn-top-filter#btnFilterRematch.active,
+.btn-top-unified[data-mode="rematch"].active {
   background: #e11d48;
   box-shadow: 0 3px 12px rgba(225, 29, 72, 0.38);
 }
 
-.btn-top-filter#btnFilterStarred.active {
+.btn-top-filter#btnFilterStarred.active,
+.btn-top-unified[data-mode="starred"].active {
   background: #d97706;
   box-shadow: 0 3px 12px rgba(217, 119, 6, 0.38);
 }
 
-.top-filter-label {
+.top-view-label,
+.top-filter-label,
+.top-unified-label {
   font-size: 11.5px;
   font-weight: 750;
   letter-spacing: 0.1px;
@@ -263,7 +249,6 @@ body.dark-mode #btnFilterStarred:not(.active) .filter-count-badge {
   color: #fbbf24;
 }
 
-
 /* Kaldığın Yerden Devam Et Bannerı */
 .resume-session-banner {
   position: fixed;
@@ -281,12 +266,10 @@ body.dark-mode #btnFilterStarred:not(.active) .filter-count-badge {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.14);
   animation: resumeSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 @keyframes resumeSlideUp {
   0% { opacity: 0; transform: translate(-50%, 20px); }
   100% { opacity: 1; transform: translate(-50%, 0); }
 }
-
 .resume-banner-content {
   display: flex;
   align-items: center;
@@ -295,13 +278,11 @@ body.dark-mode #btnFilterStarred:not(.active) .filter-count-badge {
   font-weight: 700;
   color: var(--paper-text);
 }
-
 .resume-banner-actions {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .btn-resume-confirm {
   background: var(--brand-accent);
   border: none;
@@ -313,11 +294,7 @@ body.dark-mode #btnFilterStarred:not(.active) .filter-count-badge {
   cursor: pointer;
   transition: opacity 0.15s;
 }
-
-.btn-resume-confirm:hover {
-  opacity: 0.9;
-}
-
+.btn-resume-confirm:hover { opacity: 0.9; }
 .btn-resume-dismiss {
   background: none;
   border: none;
@@ -328,7 +305,6 @@ body.dark-mode #btnFilterStarred:not(.active) .filter-count-badge {
   padding: 4px 6px;
   border-radius: 4px;
 }
-
 .btn-resume-dismiss:hover {
   color: var(--paper-text);
   background: rgba(0, 0, 0, 0.06);

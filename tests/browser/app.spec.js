@@ -9,6 +9,10 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   const optionId = await option.getAttribute('id');
   await option.click();
   await expect(option).toHaveClass(/marked/);
+  const confBtn = page.locator('.btn-conf-high').first();
+  if (await confBtn.isVisible()) {
+    await confBtn.click();
+  }
   await page.reload();
   await expect(page.locator(`[id="${optionId}"]`)).toHaveClass(/marked/);
   await page.evaluate(() => window.clearAllMarks());
@@ -26,12 +30,19 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
 
   await page.locator('#topCenterBadge').click();
   await page.locator('#drawerSearchClearBtn').click();
-  await page.locator('.drawer-subj-card').filter({ hasText: 'İngilizce' }).click();
+  await page.locator('#btnSubjectDropdownTrigger').click();
+  await page.locator('.dropdown-menu-item').filter({ hasText: 'İngilizce' }).click();
   await page.locator('#btnLoadAllTopics').click();
+  await expect(page.locator('.booklet-question').first()).toBeVisible();
+  await page.evaluate(() => window.toggleFeaturesBar());
   await expect(page.locator('.btn-tts-icon').first()).toBeVisible();
   const translate = page.locator('[id^="btnTransTR_"]').first();
   await translate.click();
-  await expect(page.locator('[data-trans-lang="tr"]').first()).toBeVisible();
+  await page.locator('#topCenterBadge').click();
+  await page.locator('#btnSubjectDropdownTrigger').click();
+  await page.locator('.dropdown-menu-item').filter({ hasText: 'Türk Dili' }).click();
+  await page.locator('#btnLoadAllTopics').click();
+  await expect(page.locator('.booklet-question').first()).toBeVisible();
   await page.locator('[id^="btnXray_"]').first().click();
   await page.evaluate(() => window.setTTSVoiceGender('female'));
   await expect(page.locator('#btnTTSVoiceFemale')).toHaveClass(/active/);

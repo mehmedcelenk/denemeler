@@ -46,5 +46,25 @@
   "INK": {
     "questionCount": 164,
     "courseCount": 2
+  },
+  "AOF_HADIS": {
+    "questionCount": 94,
+    "courseCount": 1
+  },
+  "AOF_ITAR": {
+    "questionCount": 87,
+    "courseCount": 1
+  },
+  "AOF_AHLAK": {
+    "questionCount": 94,
+    "courseCount": 1
+  },
+  "AOF_IBADET": {
+    "questionCount": 95,
+    "courseCount": 1
+  },
+  "AOF_INANC": {
+    "questionCount": 85,
+    "courseCount": 1
   }
 }

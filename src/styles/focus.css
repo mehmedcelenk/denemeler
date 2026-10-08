@@ -1,0 +1,327 @@
+/* ========================================================= */
+/* 🎯 SINIF / ODAK OTURUMU MİNİMALİST STİLLERİ              */
+/* ========================================================= */
+
+.top-focus-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--paper-bg);
+  border: 1px solid var(--paper-border);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--paper-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.top-focus-pill:hover {
+  border-color: var(--brand-accent);
+  transform: translateY(-1px);
+}
+
+.focus-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+/* Modal Overlay & Card */
+.focus-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.focus-modal-card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--paper-bg);
+  border: 1px solid var(--paper-border);
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.focus-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--paper-border);
+}
+
+.focus-modal-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--paper-text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-close-focus {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: var(--paper-text-muted);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.btn-close-focus:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.focus-modal-body {
+  padding: 24px;
+}
+
+/* Setup Cards */
+.focus-setup-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.focus-setup-card {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--paper-border);
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+}
+
+.focus-card-icon {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.focus-setup-card h4 {
+  margin: 0 0 6px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--paper-text);
+}
+
+.focus-setup-card p {
+  margin: 0 0 14px 0;
+  font-size: 12.5px;
+  color: var(--paper-text-muted);
+  line-height: 1.4;
+}
+
+.focus-setup-divider {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--paper-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Inputs & Buttons */
+.focus-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.focus-input-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--paper-border);
+  background: var(--paper-bg);
+  font-size: 13px;
+  color: var(--paper-text);
+  box-sizing: border-box;
+}
+
+.focus-btn-primary {
+  width: 100%;
+  padding: 10px 16px;
+  background: var(--brand-accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.focus-btn-primary:hover {
+  opacity: 0.9;
+}
+
+.focus-btn-secondary {
+  padding: 10px 16px;
+  background: transparent;
+  color: var(--paper-text-muted);
+  border: 1px solid var(--paper-border);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.focus-btn-danger {
+  width: 100%;
+  padding: 10px 16px;
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Teacher View */
+.focus-teacher-view {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.focus-code-banner {
+  background: rgba(2, 132, 199, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  padding: 14px;
+  border-radius: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--paper-text-muted);
+}
+
+.focus-code-big {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--brand-accent);
+  letter-spacing: 4px;
+}
+
+.focus-stats-bar {
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.stat-pill {
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.focus-student-list {
+  max-height: 220px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.focus-empty-state {
+  text-align: center;
+  padding: 24px 12px;
+  font-size: 13px;
+  color: var(--paper-text-muted);
+}
+
+.std-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--paper-border);
+}
+
+.std-row.status-blurred {
+  background: rgba(239, 68, 68, 0.06);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.std-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.std-info strong {
+  font-size: 13px;
+  color: var(--paper-text);
+}
+
+.std-solved {
+  font-size: 11px;
+  color: var(--paper-text-muted);
+}
+
+.std-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.std-badge.active {
+  color: #059669;
+  background: rgba(5, 150, 105, 0.1);
+}
+
+.std-badge.blurred {
+  color: #dc2626;
+  background: rgba(220, 38, 38, 0.1);
+
+}
+
+.std-badge.offline {
+  color: #6b7280;
+  background: rgba(107, 114, 128, 0.1);
+}
+
+.focus-connected-card {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.focus-status-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.focus-code-badge {
+  font-size: 14px;
+  color: var(--paper-text-muted);
+}
+
+.focus-desc {
+  font-size: 12.5px;
+  color: var(--paper-text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+

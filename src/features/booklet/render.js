@@ -10,8 +10,21 @@ if (typeof document !== 'undefined') {
 }
 
 export function renderBookletPages(_targetQuestionId = null) {
+  if (typeof document === 'undefined') return;
   const container = document.getElementById('bookletPagesContainer');
   if (!container) return;
+
+  if (state.contentViewMode === 'notes') {
+    container.innerHTML = `
+      <div style="background:var(--paper-bg); border:1px dashed var(--paper-border); padding:50px 20px; text-align:center; border-radius:16px; color:var(--paper-text-muted); max-width:540px; margin:40px auto; box-shadow:0 8px 30px rgba(0,0,0,0.04);">
+        <div style="font-size:38px; margin-bottom:12px;">📝</div>
+        <div style="font-size:17px; font-weight:800; color:var(--paper-text); margin-bottom:8px;">Ders Notları</div>
+        <div style="font-size:13px; line-height:1.6; margin-bottom:18px; color:var(--paper-text-muted);">Bu ders için özet konu notları hazırlanıyor. Çok yakında burada ders notları yer alacaktır.</div>
+        <button class="btn-primary" data-action="set-content-view" data-view="questions" style="padding:9px 20px; font-size:12.5px; border-radius:10px; cursor:pointer; background:var(--brand-accent); color:#fff; border:none; font-weight:700;">❓ Sorulara Dön</button>
+      </div>
+    `;
+    return;
+  }
 
   if (state.bookletQuestions.length === 0) {
     if (state.bookletFilterMode === 'rematch' || state.bookletFilterMode === 'incorrect') {

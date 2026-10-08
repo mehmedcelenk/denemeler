@@ -5,25 +5,27 @@ import { closePdfDialog, executePdfPrint, openPdfDialog } from '../features/prin
 import { closeSubjectDrawer, handleDrawerOverlayClick } from '../features/subjects/drawer-visibility.js';
 import { loadAllTopicsToBooklet, selectTopicFromDrawer } from '../features/subjects/topics.js';
 import { openSubjectDrawer } from '../features/subjects/drawer.js';
-import { setAccentColor } from '../features/appearance/accent.js';
-import { resetBookletCanvasZoom, setColumnCount, toggleConsoleMenu, toggleFullscreenFocusMode, zoomIn, zoomOut } from '../features/appearance/layout.js';
+import { setAccentColor, cycleAccentColor } from '../features/appearance/accent.js';
+import { resetBookletCanvasZoom, setColumnCount, cycleColumnCount, cycleZoomLevel, toggleConsoleMenu, toggleFeaturesBar, toggleQuestionFeatures, toggleFullscreenFocusMode, zoomIn, zoomOut } from '../features/appearance/layout.js';
 import { setCourseFilterMode } from '../features/subjects/filters.js';
 import { setTTSVoiceGender, speakSingleOption, toggleSpeakQuestion, toggleTTSVoiceGenderQuick } from '../features/audio/audio.js';
-import { setThemeMode } from '../features/appearance/theme.js';
+import { setThemeMode, toggleTheme } from '../features/appearance/theme.js';
 import { showVocabBubble } from '../features/english/vocabulary.js';
-import { switchSubjectFromDrawer, toggleCourseInDrawer, toggleSubjectDropdown, selectSubjectFromDropdown, toggleLevelDropdown, selectLevelFromDropdown, handleIntersectionToggle, toggleCourseLevel } from '../features/subjects/selection.js';
+import { switchSubjectFromDrawer, toggleCourseInDrawer, toggleSubjectDropdown, selectSubjectFromDropdown, toggleLevelDropdown, selectLevelFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
 import { toggleCalcMode, toggleMiniCalculator } from '../features/calculator/calculator.js';
 import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
 import { togglePageKey, toggleSingleAnswerReveal, toggleSingleHint } from '../features/answers/reveal.js';
 import { toggleFormulaNote } from '../features/formulas/formula-modal.ts';
 import { confirmConfidence, cancelConfidencePrompt } from '../features/answers/confidence.ts';
-import { setBookletFilter } from '../features/booklet/filter.ts';
+import { setBookletFilter, setUnifiedMode } from '../features/booklet/filter.ts';
+import { setContentViewMode } from '../features/booklet/view-mode.ts';
 import { resumeLastSession, dismissResumeBanner } from '../features/booklet/resume.ts';
 import { openLibraryView, switchLibraryTab, exitLibraryView } from '../features/library/library-drawer.ts';
 import { startInterleavedExam } from '../features/subjects/exam-mode.ts';
 import { toggleStarQuestionUI, handleRematchDontKnow } from '../features/library/library-actions.ts';
 import { openBoardFocusMode, closeBoardFocusMode, navigateBoardQuestion, handleBoardOverlayClick, resetBoardPan } from '../features/board/board-mode.ts';
 import { showEdebiKimlikKarti, showDivanBubble, hideTdePopups } from '../features/tde/edebiyat-pusulasi.ts';
+import { openFocusModal, closeFocusModal, startTeacherSession, exitFocusSession, submitStudentJoin, requestNotificationPermission } from '../features/focus/focus-session.ts';
 
 /** Eski HTML ve soru şablonlarındaki inline olayların tek bağlantı noktası. */
 export function registerLegacyHandlers() {
@@ -33,11 +35,16 @@ export function registerLegacyHandlers() {
     clearAllMarks,
     clearDrawerSearch,
     closeBoardFocusMode,
+    closeFocusModal,
     closePdfDialog,
     closeSubjectDrawer,
     confirmConfidence,
+    cycleAccentColor,
+    cycleColumnCount,
+    cycleZoomLevel,
     dismissResumeBanner,
     executePdfPrint,
+    exitFocusSession,
     exitLibraryView,
     handleBoardOverlayClick,
     handleDrawerOverlayClick,
@@ -52,9 +59,11 @@ export function registerLegacyHandlers() {
     hideTdePopups,
     openBoardFocusMode,
     openExamModal: startInterleavedExam,
+    openFocusModal,
     openLibraryView,
     openPdfDialog,
     openSubjectDrawer,
+    requestNotificationPermission,
     resetBoardPan,
     resetBookletCanvasZoom,
     resumeLastSession,
@@ -63,15 +72,20 @@ export function registerLegacyHandlers() {
     selectTopicFromDrawer,
     setAccentColor,
     setBookletFilter,
+    setContentViewMode,
     setColumnCount,
     setCourseFilterMode,
+    setProgramMode,
     setTTSVoiceGender,
     setThemeMode,
+    setUnifiedMode,
     showDivanBubble,
     showEdebiKimlikKarti,
     showVocabBubble,
     speakSingleOption,
     startInterleavedExam,
+    startTeacherSession,
+    submitStudentJoin,
     switchLibraryTab,
     switchSubjectFromDrawer,
     toggleCalcMode,
@@ -79,11 +93,13 @@ export function registerLegacyHandlers() {
     toggleCourseInDrawer,
     toggleCourseLevel,
     toggleCümleRöntgeni,
+    toggleFeaturesBar,
     toggleFormulaNote,
     toggleFullscreenFocusMode,
     toggleLevelDropdown,
     toggleMiniCalculator,
     togglePageKey,
+    toggleQuestionFeatures,
     toggleQuestionTranslation,
     toggleSingleAnswerReveal,
     toggleSingleHint,
@@ -91,6 +107,7 @@ export function registerLegacyHandlers() {
     toggleStarQuestionUI,
     toggleSubjectDropdown,
     toggleTTSVoiceGenderQuick,
+    toggleTheme,
     toggleTrapExplanation,
     undoClearMarks,
     zoomIn,
@@ -112,12 +129,22 @@ export function setupEventDelegation() {
       closePdfDialog();
       return;
     }
+    if (event.target && event.target.id === 'focusSessionOverlay') {
+      closeFocusModal();
+      return;
+    }
 
     const el = event.target && event.target.closest ? event.target.closest('[data-action]') : null;
     if (!el) return;
 
     const action = el.dataset.action;
     switch (action) {
+      case 'open-focus-modal':
+        openFocusModal();
+        break;
+      case 'close-focus-modal':
+        closeFocusModal();
+        break;
       case 'open-subject-drawer':
         openSubjectDrawer();
         break;
@@ -126,6 +153,9 @@ export function setupEventDelegation() {
         break;
       case 'set-booklet-filter':
         if (el.dataset.filter) setBookletFilter(el.dataset.filter);
+        break;
+      case 'set-content-view':
+        if (el.dataset.view) setContentViewMode(el.dataset.view);
         break;
       case 'resume-last-session':
         resumeLastSession();
@@ -153,6 +183,18 @@ export function setupEventDelegation() {
         break;
       case 'zoom-in':
         zoomIn();
+        break;
+      case 'cycle-column-count':
+        cycleColumnCount();
+        break;
+      case 'cycle-zoom-level':
+        cycleZoomLevel();
+        break;
+      case 'cycle-theme-mode':
+        toggleTheme();
+        break;
+      case 'cycle-accent-color':
+        cycleAccentColor();
         break;
       case 'toggle-fullscreen':
         toggleFullscreenFocusMode();
@@ -183,6 +225,15 @@ export function setupEventDelegation() {
         break;
       case 'toggle-console-menu':
         toggleConsoleMenu();
+        break;
+      case 'toggle-features-bar':
+        toggleFeaturesBar();
+        break;
+      case 'toggle-question-features':
+        if (el.dataset.qid) toggleQuestionFeatures(Number(el.dataset.qid));
+        break;
+      case 'set-unified-mode':
+        if (el.dataset.mode) setUnifiedMode(el.dataset.mode);
         break;
       case 'clear-drawer-search':
         clearDrawerSearch();

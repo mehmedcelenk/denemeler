@@ -4,15 +4,18 @@ import type { BookletFilterMode } from '../shared/question-filter.ts';
 export type { Choice, Question, SubjectId, BookletFilterMode };
 export type ConfidenceLevel = 'high' | 'mid' | 'low';
 export type LibraryTab = 'starred' | 'rematch';
+export type ContentViewMode = 'questions' | 'notes';
 
 export interface AppState {
   allData: Question[];
   currentSubject: SubjectId | null;
+  programMode: 'AOIHL' | 'AOF';
   selectedCourses: Set<string>;
   courseFilterMode: 'AND' | 'OR';
   selectedTopicKey: string | null;
   bookletQuestions: Question[];
   bookletFilterMode: BookletFilterMode;
+  contentViewMode: ContentViewMode;
   drawerSearchTerm: string;
   activeSearchFilter: string;
   userMarkedChoices: Record<number, Choice>;
@@ -29,17 +32,21 @@ export interface AppState {
   rematchQuestionIds: Set<number>;
   isLibraryMode: boolean;
   libraryTab: LibraryTab;
+  isFeaturesExpanded: boolean;
+  expandedQuestionIds: Set<number>;
 }
 
 /** Paylaşılan uygulama durumu. Özelliğe özel geçici durum ilgili modülde tutulur. */
 export const state: AppState = {
   allData: [],
   currentSubject: 'TDE',
+  programMode: 'AOIHL',
   selectedCourses: new Set(),
   courseFilterMode: 'OR',
   selectedTopicKey: null,
   bookletQuestions: [],
   bookletFilterMode: 'all',
+  contentViewMode: 'questions',
   drawerSearchTerm: '',
   activeSearchFilter: '',
   userMarkedChoices: {},
@@ -56,6 +63,8 @@ export const state: AppState = {
   rematchQuestionIds: new Set(),
   isLibraryMode: false,
   libraryTab: 'rematch',
+  isFeaturesExpanded: false,
+  expandedQuestionIds: new Set(),
 };
 
 export type StateEventType =
@@ -65,7 +74,8 @@ export type StateEventType =
   | 'drawer:topics-refresh'
   | 'filter:updated'
   | 'subject:select'
-  | 'answer:reveal';
+  | 'answer:reveal'
+  | 'view-mode:updated';
 
 type StateListener = (payload?: unknown) => void;
 const eventListeners = new Map<StateEventType, Set<StateListener>>();

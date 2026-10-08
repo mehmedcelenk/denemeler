@@ -186,6 +186,48 @@ export function toggleConsoleMenu() {
   popup.classList.toggle('open');
 }
 
+export function toggleQuestionFeatures(qId) {
+  const id = Number(qId);
+  if (isNaN(id)) return;
+  if (!state.expandedQuestionIds) state.expandedQuestionIds = new Set();
+  const currentlyExpanded = state.expandedQuestionIds.has(id);
+  if (currentlyExpanded) {
+    state.expandedQuestionIds.delete(id);
+  } else {
+    state.expandedQuestionIds.add(id);
+  }
+  const isNowExpanded = !currentlyExpanded;
+  const card = document.getElementById(`bq_${id}`);
+  if (card) {
+    const drawer = card.querySelector('.q-features-drawer');
+    const icon = card.querySelector('.btn-features-toggle .features-toggle-icon');
+    if (drawer) drawer.classList.toggle('is-expanded', isNowExpanded);
+    if (icon) icon.textContent = isNowExpanded ? '‹' : '›';
+  }
+}
+
+export function toggleFeaturesBar() {
+  state.isFeaturesExpanded = !state.isFeaturesExpanded;
+  updateFeaturesBarUI();
+}
+
+export function updateFeaturesBarUI() {
+  if (typeof document === 'undefined') return;
+  const isExpanded = Boolean(state.isFeaturesExpanded);
+  document.querySelectorAll('.q-features-drawer').forEach(el => {
+    el.classList.toggle('is-expanded', isExpanded);
+  });
+  document.querySelectorAll('.btn-features-toggle .features-toggle-icon').forEach(icon => {
+    icon.textContent = isExpanded ? '‹' : '›';
+  });
+}
+
+export function cycleColumnCount() {
+  const current = state.currentColumnCount || 2;
+  const next = (current % 4) + 1;
+  setColumnCount(next);
+}
+
 export function setColumnCount(n) {
   if (![1, 2, 3, 4].includes(n)) n = 2;
   state.currentColumnCount = n;
@@ -193,9 +235,12 @@ export function setColumnCount(n) {
     localStorage.setItem('aol_column_count', n);
   } catch (e) {}
 
-  document.querySelectorAll('#columnTogglePill .btn-segmented-pill').forEach(btn => {
-    btn.classList.toggle('active', parseInt(btn.dataset.cols, 10) === n);
-  });
+  const cycleBtn = document.getElementById('btnConsoleColumnCycle');
+  if (cycleBtn) {
+    const bars = '|'.repeat(n);
+    cycleBtn.innerHTML = `<span style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:12px; letter-spacing:-1px;">${bars}</span>`;
+    cycleBtn.title = `Sütun Düzeni: ${n} Sütun (Artırmak için tıkla)`;
+  }
 
   const container = document.getElementById('bookletPagesContainer');
   if (container) {
@@ -211,10 +256,27 @@ export function setColumnCount(n) {
   notifyBookletLayoutChange();
 }
 
+export function cycleZoomLevel() {
+  state.zoomLevelIndex = (state.zoomLevelIndex + 1) % zoomScales.length;
+  document.documentElement.style.setProperty('--booklet-font-size', zoomScales[state.zoomLevelIndex]);
+  updateZoomCycleUI();
+  notifyBookletLayoutChange();
+}
+
+export function updateZoomCycleUI() {
+  const zoomBtn = document.getElementById('btnConsoleZoomCycle');
+  if (zoomBtn) {
+    const scalePx = 11 + (state.zoomLevelIndex * 1.5);
+    zoomBtn.innerHTML = `<span style="font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:${scalePx}px; line-height:1;">A</span>`;
+    zoomBtn.title = `Yazı Boyutu: ${zoomScales[state.zoomLevelIndex]} (Değiştirmek için tıkla)`;
+  }
+}
+
 export function zoomIn() {
   if (state.zoomLevelIndex < zoomScales.length - 1) {
     state.zoomLevelIndex++;
     document.documentElement.style.setProperty('--booklet-font-size', zoomScales[state.zoomLevelIndex]);
+    updateZoomCycleUI();
     notifyBookletLayoutChange();
   }
 }
@@ -223,6 +285,7 @@ export function zoomOut() {
   if (state.zoomLevelIndex > 0) {
     state.zoomLevelIndex--;
     document.documentElement.style.setProperty('--booklet-font-size', zoomScales[state.zoomLevelIndex]);
+    updateZoomCycleUI();
     notifyBookletLayoutChange();
   }
 }

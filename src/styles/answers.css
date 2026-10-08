@@ -297,9 +297,4 @@ body.dark-mode .optical-choice-row.revealed-correct .optical-bubble {
 
 
 
-/* Geçici olarak devre dışı: formül notu butonu ve İngilizce ses butonları. Geri açmak için bu kuralı sil. */
-.btn-formula-icon,
-.btn-tts-icon,
-.btn-opt-tts {
-  display: none !important;
-}
+
