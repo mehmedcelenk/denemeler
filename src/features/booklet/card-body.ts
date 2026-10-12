@@ -2,6 +2,7 @@ import { state } from '../../app/state.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 import { renderMathText } from '../../shared/math-render.ts';
 import { enrichTurkishSentenceXray } from '../tde/cumle-xray.ts';
+import { enrichEnglishVocab } from '../english/vocabulary.js';
 import type { Question } from '../../data/question.ts';
 
 /** Soru kökünü dersin türüne göre (İngilizce sözlük, TDE röntgen, KaTeX matematik) zenginleştirir. */
@@ -12,7 +13,7 @@ export function renderCardStem(q: Question): string {
 
   let renderedStemText: string;
   if (isEnglish) {
-    renderedStemText = escapeHtml(q.soru);
+    renderedStemText = enrichEnglishVocab(q.soru_xray || q.soru);
   } else if (isTde) {
     renderedStemText = q.soru_xray || enrichTurkishSentenceXray(q.soru, q.id);
   } else if (isMath) {

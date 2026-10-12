@@ -1,6 +1,7 @@
 import { state } from '../../app/state.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 import { renderMathText } from '../../shared/math-render.ts';
+import { enrichEnglishVocab } from '../english/vocabulary.js';
 import type { Question, Choice } from '../../data/question.ts';
 
 /** Soru için optik şık kartlarını ve durum sınıflarını üretir. */
@@ -40,7 +41,9 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
     const clickHandler = isPassive ? '' : `onclick="handleSelectOpticalBubble(${q.id}, '${letter}')"`;
     const renderedOptContent = isMath
       ? renderMathText(optText)
-      : escapeHtml(optText);
+      : isEnglish
+        ? enrichEnglishVocab(optText)
+        : escapeHtml(optText);
 
     const optSpeakerBtn = (isEnglish && !isPassive && optText.trim()) ? `
       <button class="btn-opt-tts" title="Şıkkı Dinle" onclick="speakSingleOption(${q.id}, '${letter}', event)">
