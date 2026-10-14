@@ -1,7 +1,7 @@
 import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { loadSubjectData } from '../../data/questions.js';
 import { AOIHL_SUBJECTS, AOF_SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
-import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.js';
+import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.ts';
 import { renderDrawerTopics } from './topics.js';
 import { escapeHtml, escapeJs } from '../../shared/escape.ts';
 
@@ -43,14 +43,8 @@ export async function setSubject(subj) {
   state.drawerSearchTerm = '';
   state.bookletFilterMode = 'all';
   notifyStateChange('filter:updated');
-  const input = document.getElementById('drawerSearchInput');
-  if (input) input.value = '';
-  const clearBtn = document.getElementById('drawerSearchClearBtn');
-  if (clearBtn) clearBtn.style.display = 'none';
 
-  const resultsContainer = document.getElementById('drawerSearchResultsContainer');
   const normalContainer = document.getElementById('drawerNormalSelectorContainer');
-  if (resultsContainer) resultsContainer.style.display = 'none';
   if (normalContainer) normalContainer.style.display = 'block';
 
   state.selectedCourses.clear();

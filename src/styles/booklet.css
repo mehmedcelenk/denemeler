@@ -24,7 +24,8 @@ body.fullscreen-focus-mode .booklet-stream-container {
 .booklet-page {
   width: 100%;
   max-width: 210mm;
-  min-height: auto;
+  height: 297mm;
+  min-height: 297mm;
   flex: 0 0 auto;
   align-self: center;
   box-sizing: border-box;
@@ -71,7 +72,7 @@ body.fullscreen-focus-mode .booklet-stream-container {
 
 .page-columns-body {
   column-gap: 32px; column-rule: 1px solid var(--paper-rule);
-  flex: 1 1 auto; min-height: 0; column-fill: auto;
+  flex: 1 1 0; min-height: 0; column-fill: auto; overflow: hidden;
 }
 
 .page-columns-body.cols-1 { column-count: 1 !important; column-rule: none !important; max-width: 680px; margin: 0 auto; }

@@ -1,15 +1,30 @@
-import { state } from '../../app/state.ts';
-import { updateCourseModeToggleVisibility } from './filters.js';
+import { state, onStateChange } from '../../app/state.ts';
 import { renderSearchResults } from '../search/search.js';
 import { renderDrawerCourses } from './selection.js';
 import { renderDrawerTopics } from './topics.js';
 
-export function openSubjectDrawer() {
-  document.getElementById('drawerOverlay').classList.add('open');
+export function closeSubjectDrawer(): void {
+  const overlay = document.getElementById('drawerOverlay');
+  if (overlay) overlay.classList.remove('open');
+}
+
+export function handleDrawerOverlayClick(e: Event): void {
+  const target = e.target as HTMLElement | null;
+  if (target && target.id === 'drawerOverlay') {
+    closeSubjectDrawer();
+  }
+}
+
+import { setCourseFilterMode, updateCourseModeToggleVisibility } from './filters.ts';
+export { setCourseFilterMode, updateCourseModeToggleVisibility };
+
+export function openSubjectDrawer(): void {
+  const overlay = document.getElementById('drawerOverlay');
+  if (overlay) overlay.classList.add('open');
   updateCourseModeToggleVisibility();
 
-  const input = document.getElementById('drawerSearchInput');
-  const clearBtn = document.getElementById('drawerSearchClearBtn');
+  const input = document.getElementById('drawerSearchInput') as HTMLInputElement | null;
+  const clearBtn = document.getElementById('drawerSearchClearBtn') as HTMLElement | null;
   if (input) {
     input.value = state.activeSearchFilter || '';
     state.drawerSearchTerm = state.activeSearchFilter || '';
@@ -33,3 +48,6 @@ export function openSubjectDrawer() {
   }
 }
 
+onStateChange('drawer:close', () => {
+  closeSubjectDrawer();
+});

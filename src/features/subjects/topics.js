@@ -1,9 +1,7 @@
 import { getAggregatedTopics } from './topic-model.js';
 import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { getCondensedCourseCode, getShortCourseName } from '../../data/subjects.js';
-import { updateBookletQuestions } from '../booklet/selection.js';
 import { updateFilterButtonsUI } from '../booklet/filter.ts';
-import { closeSubjectDrawer } from './drawer-visibility.js';
 import { escapeHtml, escapeJs } from '../../shared/escape.ts';
 
 export function renderDrawerTopics() {
@@ -168,8 +166,7 @@ export function selectTopicFromDrawer(topicKey) {
   state.activeSearchFilter = '';
   state.bookletFilterMode = 'all';
   updateFilterButtonsUI();
-  closeSubjectDrawer();
-  updateBookletQuestions();
+  notifyStateChange('drawer:close');
   notifyStateChange('filter:updated');
   notifyStateChange('booklet:refresh');
 }
@@ -180,18 +177,7 @@ export function loadAllTopicsToBooklet() {
   state.drawerSearchTerm = '';
   state.bookletFilterMode = 'all';
   updateFilterButtonsUI();
-  const input = document.getElementById('drawerSearchInput');
-  if (input) input.value = '';
-  const clearBtn = document.getElementById('drawerSearchClearBtn');
-  if (clearBtn) clearBtn.style.display = 'none';
-
-  const resultsContainer = document.getElementById('drawerSearchResultsContainer');
-  const normalContainer = document.getElementById('drawerNormalSelectorContainer');
-  if (resultsContainer) resultsContainer.style.display = 'none';
-  if (normalContainer) normalContainer.style.display = 'block';
-
-  closeSubjectDrawer();
-  updateBookletQuestions();
+  notifyStateChange('drawer:close');
   notifyStateChange('filter:updated');
   notifyStateChange('booklet:refresh');
 }

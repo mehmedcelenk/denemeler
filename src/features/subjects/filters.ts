@@ -1,16 +1,15 @@
-import { state } from '../../app/state.ts';
-import { renderDrawerTopics } from './topics.js';
+import { state, notifyStateChange } from '../../app/state.ts';
 
-export function setCourseFilterMode(mode) {
+export function setCourseFilterMode(mode: 'OR' | 'AND'): void {
   state.courseFilterMode = mode;
-  const chk = document.getElementById('chkIntersectionSwitch');
+  const chk = document.getElementById('chkIntersectionSwitch') as HTMLInputElement | null;
   if (chk) {
     chk.checked = (mode === 'AND');
   }
-  renderDrawerTopics();
+  notifyStateChange('drawer:topics-refresh');
 }
 
-export function updateCourseModeToggleVisibility() {
+export function updateCourseModeToggleVisibility(): void {
   const wrapper = document.getElementById('intersectionSwitchWrapper');
   if (wrapper) {
     const isMulti = state.selectedCourses.size >= 2;

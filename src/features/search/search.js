@@ -2,8 +2,6 @@ import { state, notifyStateChange } from '../../app/state.ts';
 import { loadAllSubjectData } from '../../data/questions.js';
 import { SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
 import { trNormalize } from '../../shared/search.ts';
-import { renderDrawerTopics } from '../subjects/topics.js';
-import { closeSubjectDrawer } from '../subjects/drawer-visibility.js';
 import { escapeHtml } from '../../shared/escape.ts';
 
 export function highlightKeyword(text, term) {
@@ -68,7 +66,6 @@ export async function handleDrawerSearch(val) {
   } else {
     if (resultsContainer) resultsContainer.style.display = 'none';
     if (normalContainer) normalContainer.style.display = 'block';
-    renderDrawerTopics();
     notifyStateChange('drawer:topics-refresh');
   }
 }
@@ -90,7 +87,6 @@ export function clearDrawerSearch() {
   if (resultsContainer) resultsContainer.style.display = 'none';
   if (normalContainer) normalContainer.style.display = 'block';
 
-  renderDrawerTopics();
   notifyStateChange('drawer:topics-refresh');
 }
 
@@ -209,7 +205,6 @@ export function loadAllSearchResultsToBooklet() {
   if (state.currentSearchResults.length === 0) return;
   state.bookletQuestions = state.currentSearchResults.map(m => m.q);
   state.activeSearchFilter = state.drawerSearchTerm;
-  closeSubjectDrawer();
   notifyStateChange('drawer:close');
   notifyStateChange('booklet:updated');
 }
@@ -223,7 +218,6 @@ export function loadSingleSearchQuestion(qid) {
     state.bookletQuestions = [targetQ];
   }
   state.activeSearchFilter = state.drawerSearchTerm;
-  closeSubjectDrawer();
   notifyStateChange('drawer:close');
   notifyStateChange('booklet:updated', { targetQid: qid });
 

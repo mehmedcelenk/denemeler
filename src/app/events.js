@@ -1,9 +1,8 @@
 import { clearAllMarks, undoClearMarks, handleSelectOpticalBubble } from '../features/answers/marking.js';
 import { clearDrawerSearch, handleDrawerSearch, loadAllSearchResultsToBooklet, loadSingleSearchQuestion } from '../features/search/search.js';
 import { closePdfDialog, executePdfPrint, openPdfDialog } from '../features/print/print.js';
-import { closeSubjectDrawer, handleDrawerOverlayClick } from '../features/subjects/drawer-visibility.js';
+import { closeSubjectDrawer, handleDrawerOverlayClick, openSubjectDrawer, setCourseFilterMode } from '../features/subjects/drawer.ts';
 import { loadAllTopicsToBooklet, selectTopicFromDrawer } from '../features/subjects/topics.js';
-import { openSubjectDrawer } from '../features/subjects/drawer.js';
 import {
   setAccentColor,
   cycleAccentColor,
@@ -20,7 +19,6 @@ import {
   setThemeMode,
   toggleTheme,
 } from '../features/appearance/preferences.ts';
-import { setCourseFilterMode } from '../features/subjects/filters.js';
 import { showVocabBubble } from '../features/english/vocabulary.js';
 import { switchSubjectFromDrawer, toggleCourseInDrawer, toggleSubjectDropdown, selectSubjectFromDropdown, toggleLevelDropdown, selectLevelFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
 import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
@@ -239,12 +237,6 @@ export function setupEventDelegation() {
         break;
       default:
         break;
-    }
-  });
-
-  document.addEventListener('input', (event) => {
-    if (event.target && event.target.id === 'drawerSearchInput') {
-      handleDrawerSearch(event.target.value);
     }
   });
 
