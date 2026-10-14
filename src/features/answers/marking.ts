@@ -1,4 +1,4 @@
-import { state, onStateChange } from '../../app/state.ts';
+import { state, store, onStateChange } from '../../app/state.ts';
 import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from './explanation.ts';
 import { saveChoicesToStorage, loadSavedChoices } from './storage.ts';
 import { recordAnswerForCombo } from '../gamification/combo-toast.ts';
@@ -20,7 +20,7 @@ export function handleSelectOpticalBubble(qid: number, letter: Choice): void {
 
   // 1. Zaten nihai cevap verilmişse ve aynı şıkka tıklandıysa: Cevabı iptal et / sil
   if (alreadySubmitted === letter) {
-    delete state.userMarkedChoices[qid];
+    store.removeUserMarkedChoice(qid);
     delete pendingSelections[qid];
     saveChoicesToStorage();
     if (typeof document !== 'undefined') {
@@ -73,7 +73,7 @@ export function handleSelectOpticalBubble(qid: number, letter: Choice): void {
 
 /** Nihai cevabı işler ve UI'yi günceller */
 function applyFinalChoice(qid: number, choice: Choice): void {
-  state.userMarkedChoices[qid] = choice;
+  store.setUserMarkedChoice(qid, choice);
   saveChoicesToStorage();
 
   const q = state.bookletQuestions.find(item => item.id === qid)
@@ -142,7 +142,7 @@ export function clearAllMarks(): void {
   }
   if (Object.keys(state.userMarkedChoices).length === 0) return;
 
-  state.userMarkedChoices = {};
+  store.clearAllUserMarkedChoices();
   saveChoicesToStorage();
 
   document.querySelectorAll<HTMLElement>('.booklet-question').forEach(card => {

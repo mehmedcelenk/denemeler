@@ -120,7 +120,7 @@ export async function startInterleavedExam(): Promise<void> {
   const examQuestions = shuffled.slice(0, 20);
 
   state.currentSubject = null;
-  state.selectedTopicKey = null;
+  state.selectedTopicKeys.clear();
   state.isLibraryMode = false;
   state.bookletQuestions = examQuestions;
 

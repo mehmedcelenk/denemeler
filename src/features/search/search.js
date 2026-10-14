@@ -29,22 +29,29 @@ export function highlightKeyword(text, term) {
 }
 
 let searchVersion = 0;
+let drawerSearchTerm = '';
+let currentSearchResults = [];
+
+export function resetSearchState() {
+  drawerSearchTerm = '';
+  currentSearchResults = [];
+}
 
 export async function handleDrawerSearch(val) {
   const version = ++searchVersion;
   const subject = state.currentSubject;
   const term = val.trim();
   const isCurrent = () => version === searchVersion
-    && state.currentSubject === subject && state.drawerSearchTerm === term;
-  state.drawerSearchTerm = term;
-  state.currentSearchResults = [];
+    && state.currentSubject === subject && drawerSearchTerm === term;
+  drawerSearchTerm = term;
+  currentSearchResults = [];
   const clearBtn = document.getElementById('drawerSearchClearBtn');
-  if (clearBtn) clearBtn.style.display = state.drawerSearchTerm ? 'flex' : 'none';
+  if (clearBtn) clearBtn.style.display = drawerSearchTerm ? 'flex' : 'none';
 
   const resultsContainer = document.getElementById('drawerSearchResultsContainer');
   const normalContainer = document.getElementById('drawerNormalSelectorContainer');
 
-  if (state.drawerSearchTerm) {
+  if (drawerSearchTerm) {
     // Branş seçimi kaldırıldıysa arama tüm branşları kapsar; bu durumda
     // eksik branşları yalnızca arama gerektiğinde indir.
     const list = document.getElementById('drawerSearchResultsList');
@@ -72,8 +79,8 @@ export async function handleDrawerSearch(val) {
 
 export function clearDrawerSearch() {
   searchVersion++;
-  state.currentSearchResults = [];
-  state.drawerSearchTerm = '';
+  currentSearchResults = [];
+  drawerSearchTerm = '';
   const input = document.getElementById('drawerSearchInput');
   if (input) {
     input.value = '';
@@ -96,7 +103,7 @@ export function renderSearchResults() {
   const btnAll = document.getElementById('btnLoadAllSearchResults');
   if (!listEl) return;
 
-  const nTerm = trNormalize(state.drawerSearchTerm);
+  const nTerm = trNormalize(drawerSearchTerm);
   const matched = [];
 
   state.allData.forEach(q => {
@@ -129,7 +136,7 @@ export function renderSearchResults() {
     }
   });
 
-  state.currentSearchResults = matched;
+  currentSearchResults = matched;
 
   let scopeDesc = 'Tüm Branşlar';
   if (state.currentSubject) {
@@ -138,7 +145,7 @@ export function renderSearchResults() {
   }
 
   if (headerEl) {
-    headerEl.innerHTML = `Arama: <strong>"${escapeHtml(state.drawerSearchTerm)}"</strong> <span style="font-size:11px; opacity:0.8; font-weight:normal;">[${scopeDesc}]</span> (${matched.length} Soru)`;
+    headerEl.innerHTML = `Arama: <strong>"${escapeHtml(drawerSearchTerm)}"</strong> <span style="font-size:11px; opacity:0.8; font-weight:normal;">[${scopeDesc}]</span> (${matched.length} Soru)`;
   }
   if (btnAll) {
     btnAll.disabled = matched.length === 0;
@@ -148,7 +155,7 @@ export function renderSearchResults() {
   if (matched.length === 0) {
     listEl.innerHTML = `
       <div style="padding:22px; text-align:center; color:var(--paper-text-muted); font-size:12.5px;">
-        <strong>"${escapeHtml(state.drawerSearchTerm)}"</strong> ile eşleşen soru veya şık bulunamadı.<br>
+        <strong>"${escapeHtml(drawerSearchTerm)}"</strong> ile eşleşen soru veya şık bulunamadı.<br>
         <span style="font-size:11px; opacity:0.8;">Farklı bir arama terimi deneyebilir veya ders seçimini değiştirebilirsiniz.</span>
       </div>
     `;
@@ -165,7 +172,7 @@ export function renderSearchResults() {
     if (matchedOption) {
       optHtml = `
         <div class="result-matched-choice">
-          💡 Şıkta Geçiyor: <strong>${matchedOption.key})</strong> ${highlightKeyword(matchedOption.text, state.drawerSearchTerm)}
+          💡 Şıkta Geçiyor: <strong>${matchedOption.key})</strong> ${highlightKeyword(matchedOption.text, drawerSearchTerm)}
         </div>
       `;
     }
@@ -187,7 +194,7 @@ export function renderSearchResults() {
           <span class="result-badge-point">+${q.puan || 0} Puan</span>
         </div>
         <div class="result-card-stem">
-          ${highlightKeyword(shortSnippet, state.drawerSearchTerm)}
+          ${highlightKeyword(shortSnippet, drawerSearchTerm)}
         </div>
         ${optHtml}
       </div>
@@ -202,9 +209,9 @@ export function renderSearchResults() {
 }
 
 export function loadAllSearchResultsToBooklet() {
-  if (state.currentSearchResults.length === 0) return;
-  state.bookletQuestions = state.currentSearchResults.map(m => m.q);
-  state.activeSearchFilter = state.drawerSearchTerm;
+  if (currentSearchResults.length === 0) return;
+  state.bookletQuestions = currentSearchResults.map(m => m.q);
+  state.activeSearchFilter = drawerSearchTerm;
   notifyStateChange('drawer:close');
   notifyStateChange('booklet:updated');
 }
@@ -213,11 +220,11 @@ export function loadSingleSearchQuestion(qid) {
   const targetQ = state.allData.find(q => q.id === qid);
   if (!targetQ) return;
   
-  state.bookletQuestions = state.currentSearchResults.map(m => m.q);
+  state.bookletQuestions = currentSearchResults.map(m => m.q);
   if (state.bookletQuestions.length === 0) {
     state.bookletQuestions = [targetQ];
   }
-  state.activeSearchFilter = state.drawerSearchTerm;
+  state.activeSearchFilter = drawerSearchTerm;
   notifyStateChange('drawer:close');
   notifyStateChange('booklet:updated', { targetQid: qid });
 

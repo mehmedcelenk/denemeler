@@ -60,10 +60,8 @@ export async function setSubject(subj) {
   if (version !== selectionVersion) return false;
 
   state.currentSubject = subj;
-  state.selectedTopicKey = null;
   state.selectedTopicKeys.clear();
   state.activeSearchFilter = '';
-  state.drawerSearchTerm = '';
   state.bookletFilterMode = 'all';
   notifyStateChange('filter:updated');
 
@@ -297,7 +295,6 @@ export function toggleCourseLevel(courseName) {
     state.selectedCourses.add(courseName);
   }
 
-  state.selectedTopicKey = null;
   renderDrawerSelectorBar();
   renderDrawerTopics();
   notifyStateChange('booklet:refresh');

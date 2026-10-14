@@ -99,7 +99,7 @@ export function renderBookletPages(_targetQuestionId = null) {
       <div class="page-header-band">
         <div class="page-header-left">
           <span class="institution-name">T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM LİSESİ</span>
-          <span class="exam-name-title">${escapeHtml(state.selectedTopicKey || (state.selectedCourses.size > 1 ? 'ORTAK KAZANIMLAR KESİŞİM TESTİ' : 'DÖNEM ÇIKMIŞ SINAV SORULARI'))}</span>
+          <span class="exam-name-title">${escapeHtml((state.selectedTopicKeys.size === 1 ? Array.from(state.selectedTopicKeys)[0] : '') || (state.selectedCourses.size > 1 ? 'ORTAK KAZANIMLAR KESİŞİM TESTİ' : 'DÖNEM ÇIKMIŞ SINAV SORULARI'))}</span>
         </div>
         <div class="page-header-right">
           <span class="page-badge-code">${badgeCode} • ${state.bookletQuestions.length} SORU</span>

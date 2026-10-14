@@ -112,7 +112,7 @@ export function renderDrawerTopics() {
         const totalGroupQuestions = group.reduce((sum, item) => sum + item.count, 0);
 
         const nestedHtml = group.map((t) => {
-          const isSelected = state.selectedTopicKeys.has(t.key) || state.selectedTopicKey === t.key;
+          const isSelected = state.selectedTopicKeys.has(t.key);
           return `
             <div class="drawer-topic-item child-item ${isSelected ? 'selected' : ''}" data-select-topic="${escapeJs(t.key)}">
               <span class="tree-checkbox ${isSelected ? 'checked' : ''}" aria-hidden="true">${isSelected ? '✓' : ''}</span>
@@ -146,7 +146,7 @@ export function renderDrawerTopics() {
       }
 
       const t = group[0];
-      const isSelected = state.selectedTopicKeys.has(t.key) || state.selectedTopicKey === t.key;
+      const isSelected = state.selectedTopicKeys.has(t.key);
       let topicLabelHtml = '';
       if (t.ana_konu && t.alt_konu && t.ana_konu !== t.alt_konu) {
         topicLabelHtml = `<span class="topic-ak">${escapeHtml(t.ana_konu)}</span><span class="topic-slash">/</span><span class="topic-sub">${escapeHtml(t.alt_konu)}</span>`;
@@ -215,7 +215,6 @@ export function renderDrawerTopics() {
           if (allSel) state.selectedTopicKeys.delete(k);
           else state.selectedTopicKeys.add(k);
         });
-        state.selectedTopicKey = state.selectedTopicKeys.size === 1 ? Array.from(state.selectedTopicKeys)[0] : null;
         renderDrawerTopics();
       });
     });
@@ -231,7 +230,6 @@ export function renderDrawerTopics() {
           if (allSel) state.selectedTopicKeys.delete(k);
           else state.selectedTopicKeys.add(k);
         });
-        state.selectedTopicKey = state.selectedTopicKeys.size === 1 ? Array.from(state.selectedTopicKeys)[0] : null;
         renderDrawerTopics();
       });
     });
@@ -266,22 +264,17 @@ export function toggleTopicFromDrawer(topicKey) {
   } else {
     state.selectedTopicKeys.add(topicKey);
   }
-  state.selectedTopicKey = state.selectedTopicKeys.size === 1
-    ? Array.from(state.selectedTopicKeys)[0]
-    : null;
   renderDrawerTopics();
 }
 
 export function clearTopicSelection() {
   state.selectedTopicKeys.clear();
-  state.selectedTopicKey = null;
   renderDrawerTopics();
 }
 
 export function selectTopicFromDrawer(topicKey) {
   state.selectedTopicKeys.clear();
   state.selectedTopicKeys.add(topicKey);
-  state.selectedTopicKey = topicKey;
   state.activeSearchFilter = '';
   state.bookletFilterMode = 'all';
   updateFilterButtonsUI();
@@ -292,7 +285,6 @@ export function selectTopicFromDrawer(topicKey) {
 
 export function loadAllTopicsToBooklet() {
   state.activeSearchFilter = '';
-  state.drawerSearchTerm = '';
   state.bookletFilterMode = 'all';
   updateFilterButtonsUI();
   notifyStateChange('drawer:close');

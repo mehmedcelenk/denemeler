@@ -33,9 +33,7 @@ export function updateBookletQuestions() {
     }
     const qKey = getTopicKey(q);
     if (!validTopicKeys.has(qKey)) return false;
-    if (state.selectedTopicKeys.size > 0) {
-      if (!state.selectedTopicKeys.has(qKey)) return false;
-    } else if (state.selectedTopicKey && qKey !== state.selectedTopicKey) {
+    if (state.selectedTopicKeys.size > 0 && !state.selectedTopicKeys.has(qKey)) {
       return false;
     }
     if (state.activeSearchFilter && !questionMatchesSearch(q, state.activeSearchFilter)) return false;
@@ -113,14 +111,12 @@ export function updateTopBadge(customTitle) {
 
   if (state.selectedTopicKeys.size > 0) {
     titleStr += ` (${state.selectedTopicKeys.size} Konu)`;
-  } else if (state.selectedTopicKey) {
-    titleStr += ` (1 Konu)`;
   }
 
   if (badgeBtn) {
     const topicLabel = state.selectedTopicKeys.size > 0
       ? `${state.selectedTopicKeys.size} Konu`
-      : (state.selectedTopicKey || 'Tüm Konular');
+      : 'Tüm Konular';
     badgeBtn.title = `${titleStr} • ${topicLabel} • Toplam ${state.bookletQuestions.length} Soru`;
   }
 
