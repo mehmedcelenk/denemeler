@@ -3,8 +3,6 @@ import { loadSubjectData } from '../../data/questions.js';
 import { SUBJECTS } from '../../data/subjects.js';
 import { toggleConsoleMenu } from '../appearance/preferences.ts';
 import { updateFilterButtonsUI } from '../booklet/filter.ts';
-import { renderDrawerSelectorBar } from '../subjects/selection.js';
-import { renderDrawerTopics } from '../subjects/topics.js';
 
 export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void> {
   const popup = document.getElementById('consoleMenuPopup');
@@ -60,8 +58,6 @@ export function switchLibraryTab(tab: LibraryTab): void {
 export function exitLibraryView(): void {
   state.isLibraryMode = false;
   updateFilterButtonsUI();
-  renderDrawerSelectorBar();
-  renderDrawerTopics();
   notifyStateChange('filter:updated');
   notifyStateChange('drawer:topics-refresh');
   notifyStateChange('booklet:refresh');

@@ -75,7 +75,8 @@ export type StateEventType =
   | 'filter:updated'
   | 'subject:select'
   | 'answer:reveal'
-  | 'view-mode:updated';
+  | 'view-mode:updated'
+  | 'board:render-question';
 
 type StateListener = (payload?: unknown) => void;
 const eventListeners = new Map<StateEventType, Set<StateListener>>();

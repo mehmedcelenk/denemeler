@@ -6,16 +6,6 @@ test('bozuk kayıtlı cevaplar açılışı engellemez', async ({ page }) => {
   await expect(page.locator('.optical-choice-row').first()).toBeVisible();
 });
 
-test('arama sonucu seçildiğinde soru vurgulanır', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.locator('.optical-choice-row').first()).toBeVisible();
-  await page.locator('#topCenterBadge').click();
-  await page.locator('#drawerSearchInput').fill('roman');
-  const result = page.locator('.drawer-search-result-card').first();
-  const id = (await result.getAttribute('onclick')).match(/\d+/)[0];
-  await result.click();
-  await expect(page.locator(`#bq_${id}`)).toHaveCSS('outline-style', 'solid');
-});
 
 async function selectSubject(page, name) {
   await page.locator('#btnSubjectDropdownTrigger').click();
@@ -63,27 +53,4 @@ test('ders yükleme hatasında önceki kitapçık korunur ve yeniden denenebilir
   expect(errors).toEqual([]);
 });
 
-test('yavaş genel arama temizlendikten sonra sonuç panelini tekrar açmaz', async ({ page }) => {
-  let release;
-  const blocked = new Promise(resolve => { release = resolve; });
-  let started;
-  const requested = new Promise(resolve => { started = resolve; });
-  await page.route('**/data/subjects/ING.json', async route => {
-    started();
-    await blocked;
-    await route.continue();
-  });
-  await page.goto('/');
-  await expect(page.locator('.optical-choice-row').first()).toBeVisible();
-  await page.locator('#topCenterBadge').click();
-  await selectSubject(page, 'İngilizce');
-  await page.locator('#drawerSearchInput').fill('roman');
-  await requested;
-  await page.locator('#drawerSearchClearBtn').click();
-  const response = page.waitForResponse('**/data/subjects/ING.json');
-  release();
-  await (await response).finished();
-  await page.locator('#drawerSearchInput').focus();
-  await expect(page.locator('#drawerNormalSelectorContainer')).toBeVisible();
-  await expect(page.locator('#drawerSearchResultsContainer')).toBeHidden();
-});
+

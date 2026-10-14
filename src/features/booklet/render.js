@@ -1,7 +1,7 @@
 import { state, onStateChange } from '../../app/state.ts';
 import { getCondensedCourseCode } from '../../data/subjects.js';
 import { escapeHtml } from '../../shared/escape.ts';
-import { renderQuestionCardHtml } from './question-card.js';
+import { renderQuestionCardHtml } from './question-card.ts';
 
 let fontLayoutRefreshScheduled = false;
 
@@ -59,19 +59,11 @@ export function renderBookletPages(_targetQuestionId = null) {
 
   const columnClass = `cols-${state.currentColumnCount}`;
   const badgeCode = getCondensedCourseCode(state.selectedCourses, state.currentSubject);
-  const totalQuestions = state.bookletQuestions.length;
-  const CHUNK_SIZE = 10;
-  const totalChunks = Math.ceil(totalQuestions / CHUNK_SIZE);
-
-  let pagesHtml = '';
-  for (let i = 0; i < totalChunks; i++) {
-    const start = i * CHUNK_SIZE;
-    const end = Math.min(start + CHUNK_SIZE, totalQuestions);
+  const pageRanges = paginateQuestionRanges(container, badgeCode, columnClass);
+  container.innerHTML = pageRanges.map(({ start, end }, pageIndex) => {
     const pageChunk = renderQuestionChunkHtml(start, end);
-    pagesHtml += renderPageHtml(pageChunk, badgeCode, columnClass, i + 1, totalChunks);
-  }
-
-  container.innerHTML = pagesHtml;
+    return renderPageHtml(pageChunk, badgeCode, columnClass, pageIndex + 1, pageRanges.length);
+  }).join('');
 
   if (!fontLayoutRefreshScheduled && document.fonts) {
     fontLayoutRefreshScheduled = true;
@@ -79,6 +71,44 @@ export function renderBookletPages(_targetQuestionId = null) {
       if (container.isConnected) renderBookletPages();
     });
   }
+}
+
+function paginateQuestionRanges(container, badgeCode, columnClass) {
+  const stagingPage = document.createElement('div');
+  stagingPage.className = 'booklet-page booklet-page-measuring';
+  stagingPage.setAttribute('aria-hidden', 'true');
+  stagingPage.innerHTML = renderPageHtml({ questionsHtml: '', miniKeyHtml: '' }, badgeCode, columnClass, 1, 1);
+  stagingPage.querySelectorAll('[id]').forEach(element => element.removeAttribute('id'));
+  stagingPage.querySelector('.btn-page-key-toggle')?.removeAttribute('onclick');
+  container.appendChild(stagingPage);
+
+  const questionBody = stagingPage.querySelector('.page-columns-body');
+  const ranges = [];
+  let pageStart = 0;
+
+  try {
+    state.bookletQuestions.forEach((question, index) => {
+      const questionHtml = renderQuestionCardHtml(question, index + 1);
+      questionBody.insertAdjacentHTML('beforeend', questionHtml);
+      const hasPreviousQuestion = index > pageStart;
+      const bodyBounds = questionBody.getBoundingClientRect();
+      const questionBounds = questionBody.lastElementChild.getBoundingClientRect();
+      const isOverflowing = questionBounds.bottom > bodyBounds.bottom + 1
+        || questionBounds.right > bodyBounds.right + 1;
+
+      if (hasPreviousQuestion && isOverflowing) {
+        ranges.push({ start: pageStart, end: index });
+        pageStart = index;
+        questionBody.replaceChildren();
+        questionBody.insertAdjacentHTML('beforeend', questionHtml);
+      }
+    });
+  } finally {
+    stagingPage.remove();
+  }
+
+  ranges.push({ start: pageStart, end: state.bookletQuestions.length });
+  return ranges;
 }
 
 function renderQuestionChunkHtml(startIdx, endIdx) {

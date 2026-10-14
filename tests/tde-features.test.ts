@@ -97,7 +97,7 @@ test('enrichTurkishSentenceXray doğrulanmış sorularda tam cümle röntgeni d�
 });
 
 test('renderCardStem TDE sorusunda soru_xray varsa öncelikle onu kullanır', async () => {
-  const { renderCardStem } = await import('../src/features/booklet/card-body.ts');
+  const { renderCardStem } = await import('../src/features/booklet/question-card.ts');
   const dummyQ = {
     id: 99999,
     ders: 'TÜRK DİLİ VE EDEBİYATI – 1',

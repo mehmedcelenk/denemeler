@@ -1,6 +1,5 @@
 import { state, notifyStateChange } from '../../app/state.ts';
 import type { Question } from '../../data/question.ts';
-import { renderQuestionCardHtml } from '../booklet/question-card.js';
 import { setBookletCanvasScale } from '../appearance/preferences.ts';
 
 let activeBoardQuestionId: number | null = null;
@@ -320,9 +319,5 @@ function renderActiveBoardQuestion(): void {
   if (!q) return;
 
   const currentNum = (idx !== -1) ? (idx + 1) : 1;
-  const stage = document.getElementById('boardQuestionStage');
-  if (!stage) return;
-
-  // Soru birebir kitapçık kartı component'i olarak render edilir
-  stage.innerHTML = renderQuestionCardHtml(q, currentNum);
+  notifyStateChange('board:render-question', { q, currentNum });
 }

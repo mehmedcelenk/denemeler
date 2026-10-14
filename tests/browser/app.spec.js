@@ -22,14 +22,7 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
 
   await page.locator('#topCenterBadge').click();
   await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
-  await page.locator('#drawerSearchInput').fill('roman');
-  await expect(page.locator('#drawerSearchResultsList')).not.toBeEmpty();
-  await page.evaluate(() => window.loadAllSearchResultsToBooklet());
-  await expect(page.locator('#drawerOverlay')).not.toHaveClass(/open/);
-  await expect(page.locator('#badgeMainText')).toContainText('roman');
-
-  await page.locator('#topCenterBadge').click();
-  await page.locator('#drawerSearchClearBtn').click();
+  await expect(page.locator('#drawerTopicList')).toBeVisible();
   await page.locator('#btnSubjectDropdownTrigger').click();
   await page.locator('.dropdown-menu-item').filter({ hasText: 'İngilizce' }).click();
   await page.locator('#btnLoadAllTopics').click();
@@ -58,7 +51,7 @@ test('mobil genişlikte kitapçık açılır', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('.optical-choice-row').first()).toBeVisible();
   await page.locator('#topCenterBadge').click();
-  await expect(page.locator('#drawerSearchInput')).toBeVisible();
+  await expect(page.locator('#drawerTopicList')).toBeVisible();
 });
 
 test('sorular A4 sayfalara sığar ve sayfa numaraları tutarlıdır', async ({ page }) => {

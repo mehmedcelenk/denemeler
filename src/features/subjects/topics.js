@@ -91,12 +91,12 @@ export function renderDrawerTopics() {
 
       html += `
         <div class="drawer-topic-group ${expanded ? 'open' : ''}" data-topic-group="${escapeJs(parentKey)}">
-          <button type="button" class="drawer-topic-group-header" data-topic-toggle-group="${escapeJs(parentKey)}">
+          <button type="button" class="drawer-topic-group-header" data-topic-toggle-group="${escapeJs(parentKey)}" aria-expanded="${expanded ? 'true' : 'false'}">
             <span class="drawer-topic-group-title">
-              <span>${escapeHtml(parentLabel)}</span>
-              <span class="drawer-topic-group-count">(${group.reduce((sum, item) => sum + item.count, 0)} soru)</span>
+              <span class="drawer-topic-group-name">${escapeHtml(parentLabel)}</span>
+              <span class="drawer-topic-group-count">${group.reduce((sum, item) => sum + item.count, 0)} soru</span>
             </span>
-            <span class="drawer-topic-dropdown-caret">${expanded ? '▾' : '▸'}</span>
+            <span class="drawer-topic-dropdown-caret" aria-hidden="true">${expanded ? '▾' : '▸'}</span>
           </button>
           <div class="drawer-topic-group-body">
             ${nestedHtml}
@@ -117,7 +117,7 @@ export function renderDrawerTopics() {
     }
     let topicLabelHtml = '';
     if (t.ana_konu && t.alt_konu && t.ana_konu !== t.alt_konu) {
-      topicLabelHtml = `<span class="topic-ak">${escapeHtml(t.ana_konu)}</span> <span class="topic-slash">/</span> <span class="topic-sub">${escapeHtml(t.alt_konu)}</span>`;
+      topicLabelHtml = `<span class="topic-ak">${escapeHtml(t.ana_konu)}</span><span class="topic-slash">/</span><span class="topic-sub">${escapeHtml(t.alt_konu)}</span>`;
     } else {
       topicLabelHtml = `<span class="topic-sub">${escapeHtml(t.alt_konu || t.ana_konu)}</span>`;
     }
