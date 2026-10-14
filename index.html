@@ -138,14 +138,8 @@
         <button class="btn-tool-icon" data-action="toggle-fullscreen" id="btnFullscreenTool" title="Tam Ekran / Odak Modu" aria-label="Tam Ekran">
           <svg id="iconFullscreenSvg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
         </button>
-        <button class="btn-tool-icon" data-action="toggle-calculator" title="Hesap Makinesi" aria-label="Hesap Makinesi">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
-        </button>
         <button class="btn-tool-icon" data-action="open-pdf-dialog" title="PDF / Yazdır" aria-label="PDF / Yazdır">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
-        </button>
-        <button class="btn-tool-icon" data-action="open-focus-modal" title="Sınıf / Odak Oturumu" aria-label="Sınıf Oturumu">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
         </button>
       </div>
 
@@ -173,18 +167,6 @@
         <line x1="4" y1="18" x2="20" y2="18"/>
       </svg>
     </button>
-  </div>
-
-  <!-- ========================================================= -->
-  <!-- SÜRÜKLENEBİLİR MİNNACIK NAKİT NUMPAD (MICRO CALCULATOR)   -->
-  <!-- ========================================================= -->
-  <div class="mini-calc-widget calc-mode-num" id="miniCalcWidget" style="display:none;">
-    <div class="mini-calc-display-pill" id="miniCalcDisplayPill" title="Sürüklemek için basılı tutun">
-      <span class="mini-calc-drag-handle" aria-hidden="true">⋮⋮</span>
-      <span class="mini-calc-display-sub" id="calcSubDisplay"></span>
-      <span class="mini-calc-display-main" id="calcMainDisplay">0</span>
-    </div>
-    <div class="mini-calc-numpad-body" id="miniCalcGrid"></div>
   </div>
 
   <!-- ========================================================= -->
@@ -324,21 +306,6 @@
         <button class="btn-pdf-confirm" data-action="execute-pdf-print">
           Yazdır / PDF Al →
         </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================= -->
-  <!-- 6. SINIF / ODAK OTURUMU MODALI                             -->
-  <!-- ========================================================= -->
-  <div class="focus-modal-overlay" id="focusSessionOverlay" style="display:none;">
-    <div class="focus-modal-card">
-      <div class="focus-modal-header">
-        <h3>🏫 Sınıf / Odak Oturumu</h3>
-        <button class="btn-close-focus" data-action="close-focus-modal">✕</button>
-      </div>
-      <div class="focus-modal-body" id="focusModalBody">
-        <!-- Dinamik oturum içeriği -->
       </div>
     </div>
   </div>

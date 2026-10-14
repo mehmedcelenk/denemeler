@@ -52,24 +52,7 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator('body')).toHaveClass(/dark-mode/);
   await page.evaluate(() => window.setColumnCount(1));
   await page.evaluate(() => window.openPdfDialog());
-  await page.evaluate(() => window.toggleMiniCalculator());
-  await expect(page.locator('#calcPanelNum')).toBeVisible();
-  await expect(page.locator('#calcPanelOps')).toBeVisible();
-  await expect(page.locator('#calcPanelOps button[data-op="+"]')).toBeVisible();
-  await expect(page.locator('#calcPanelNum button:has-text("7")')).toBeVisible();
-  await expect(page.locator('#calcPanelNum .micro-btn-change')).toBeHidden();
   expect(errors).toEqual([]);
-});
-
-test('mobil ekranda hesap makinesinde işlemler başlangıçta gizlidir ve geçişle açılır', async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/');
-  await page.evaluate(() => window.toggleMiniCalculator());
-  await expect(page.locator('#calcPanelNum')).toBeVisible();
-  await expect(page.locator('#calcPanelOps')).toBeHidden();
-  await page.locator('#calcPanelNum .micro-btn-change').click();
-  await expect(page.locator('#calcPanelNum')).toBeHidden();
-  await expect(page.locator('#calcPanelOps')).toBeVisible();
 });
 
 test('mobil genişlikte kitapçık açılır', async ({ page }) => {

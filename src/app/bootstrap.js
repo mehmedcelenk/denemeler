@@ -5,7 +5,6 @@ import { updatePrayerCountdown } from '../features/prayer/prayer.js';
 import { updateTTSGenderUI } from '../features/audio/audio.js';
 import { initBookletCanvasZoom, setColumnCount, initTheme, initAccentColor } from '../features/appearance/preferences.ts';
 import { StorageKeys } from '../shared/storage-keys.ts';
-import { initDraggableCalculator } from '../features/calculator/calculator.js';
 import { loadSavedChoices } from '../features/answers/storage.js';
 
 export async function startApp() {
@@ -24,7 +23,6 @@ export async function startApp() {
     const container = document.getElementById('bookletPagesContainer');
     if (container) container.innerHTML = '<div style="max-width:620px; margin:60px auto; padding:28px; text-align:center; background:var(--paper-bg); border:1px solid var(--paper-border); border-radius:18px;"><strong>Veriler yüklenemedi.</strong><br><span style="display:block; margin-top:8px; color:var(--paper-text-muted);">Bağlantıyı kontrol edip sayfayı yeniden deneyin.</span></div>';
   }
-  initDraggableCalculator();
   updatePrayerCountdown();
   setInterval(updatePrayerCountdown, 1000);
 }

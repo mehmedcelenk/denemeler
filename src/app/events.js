@@ -1,4 +1,3 @@
-import { calcAction } from '../features/calculator/calculator.js';
 import { clearAllMarks, undoClearMarks, handleSelectOpticalBubble } from '../features/answers/marking.js';
 import { clearDrawerSearch, handleDrawerSearch, loadAllSearchResultsToBooklet, loadSingleSearchQuestion } from '../features/search/search.js';
 import { closePdfDialog, executePdfPrint, openPdfDialog } from '../features/print/print.js';
@@ -25,7 +24,6 @@ import { setCourseFilterMode } from '../features/subjects/filters.js';
 import { setTTSVoiceGender, speakSingleOption, toggleSpeakQuestion, toggleTTSVoiceGenderQuick } from '../features/audio/audio.js';
 import { showVocabBubble } from '../features/english/vocabulary.js';
 import { switchSubjectFromDrawer, toggleCourseInDrawer, toggleSubjectDropdown, selectSubjectFromDropdown, toggleLevelDropdown, selectLevelFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
-import { toggleCalcMode, toggleMiniCalculator } from '../features/calculator/calculator.js';
 import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
 import { togglePageKey, toggleSingleAnswerReveal, toggleSingleHint } from '../features/answers/reveal.js';
 import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from '../features/answers/explanation.ts';
@@ -39,17 +37,14 @@ import { startInterleavedExam } from '../features/subjects/exam-mode.ts';
 import { toggleStarQuestionUI, handleRematchDontKnow } from '../features/library/library-actions.ts';
 import { openBoardFocusMode, closeBoardFocusMode, navigateBoardQuestion, handleBoardOverlayClick, resetBoardPan } from '../features/board/board-mode.ts';
 import { showEdebiKimlikKarti, showDivanBubble, hideTdePopups } from '../features/tde/edebiyat-pusulasi.ts';
-import { openFocusModal, closeFocusModal, startTeacherSession, exitFocusSession, submitStudentJoin, requestNotificationPermission } from '../features/focus/focus-session.ts';
 
 /** Eski HTML ve soru şablonlarındaki inline olayların tek bağlantı noktası. */
 export function registerLegacyHandlers() {
   Object.assign(window, {
-    calcAction,
     cancelConfidencePrompt,
     clearAllMarks,
     clearDrawerSearch,
     closeBoardFocusMode,
-    closeFocusModal,
     closePdfDialog,
     closeSubjectDrawer,
     confirmConfidence,
@@ -58,7 +53,6 @@ export function registerLegacyHandlers() {
     cycleZoomLevel,
     dismissResumeBanner,
     executePdfPrint,
-    exitFocusSession,
     exitLibraryView,
     handleBoardOverlayClick,
     handleDrawerOverlayClick,
@@ -73,11 +67,9 @@ export function registerLegacyHandlers() {
     hideTdePopups,
     openBoardFocusMode,
     openExamModal: startInterleavedExam,
-    openFocusModal,
     openLibraryView,
     openPdfDialog,
     openSubjectDrawer,
-    requestNotificationPermission,
     resetBoardPan,
     resetBookletCanvasZoom,
     resumeLastSession,
@@ -100,11 +92,8 @@ export function registerLegacyHandlers() {
     speakSingleOption,
     hideAnswerExplanationBubble,
     startInterleavedExam,
-    startTeacherSession,
-    submitStudentJoin,
     switchLibraryTab,
     switchSubjectFromDrawer,
-    toggleCalcMode,
     toggleConsoleMenu,
     toggleCourseInDrawer,
     toggleCourseLevel,
@@ -113,7 +102,6 @@ export function registerLegacyHandlers() {
     toggleFormulaNote,
     toggleFullscreenFocusMode,
     toggleLevelDropdown,
-    toggleMiniCalculator,
     togglePageKey,
     toggleQuestionFeatures,
     toggleQuestionTranslation,
@@ -145,22 +133,12 @@ export function setupEventDelegation() {
       closePdfDialog();
       return;
     }
-    if (event.target && event.target.id === 'focusSessionOverlay') {
-      closeFocusModal();
-      return;
-    }
 
     const el = event.target && event.target.closest ? event.target.closest('[data-action]') : null;
     if (!el) return;
 
     const action = el.dataset.action;
     switch (action) {
-      case 'open-focus-modal':
-        openFocusModal();
-        break;
-      case 'close-focus-modal':
-        closeFocusModal();
-        break;
       case 'open-subject-drawer':
         openSubjectDrawer();
         break;
@@ -226,9 +204,6 @@ export function setupEventDelegation() {
         break;
       case 'set-accent-color':
         if (el.dataset.color) setAccentColor(el.dataset.color);
-        break;
-      case 'toggle-calculator':
-        toggleMiniCalculator();
         break;
       case 'open-pdf-dialog':
         openPdfDialog();
