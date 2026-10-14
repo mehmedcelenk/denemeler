@@ -2,6 +2,7 @@ import type { Choice, Question, SubjectId } from '../data/question.ts';
 import type { BookletFilterMode } from '../shared/question-filter.ts';
 
 export type { Choice, Question, SubjectId, BookletFilterMode };
+export type ConfidenceLevel = 'high' | 'mid' | 'low';
 export type LibraryTab = 'starred' | 'rematch';
 export type ContentViewMode = 'questions' | 'notes';
 
@@ -19,7 +20,7 @@ export interface AppState {
   drawerSearchTerm: string;
   activeSearchFilter: string;
   userMarkedChoices: Record<number, Choice>;
-  undoHistoryStack: Record<number, Choice>[];
+  userConfidences: Record<number, ConfidenceLevel>;
   revealedAnswers: Set<number>;
   revealedHints: Set<number>;
   currentColumnCount: number;
@@ -50,7 +51,7 @@ export const state: AppState = {
   drawerSearchTerm: '',
   activeSearchFilter: '',
   userMarkedChoices: {},
-  undoHistoryStack: [],
+  userConfidences: {},
   revealedAnswers: new Set(),
   revealedHints: new Set(),
   currentColumnCount: 2,

@@ -4,6 +4,8 @@ docs/arsiv/
 scripts/scratch/
 
 # Python derleme ve önbellek
+.venv/
+venv/
 __pycache__/
 *.pyc
 *.pyo

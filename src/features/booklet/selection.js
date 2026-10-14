@@ -7,7 +7,7 @@ import { renderBookletPages } from './render.js';
 import { filterQuestionsByMode } from '../../shared/question-filter.ts';
 
 export function updateBookletQuestions() {
-  if (!state.currentSubject) {
+  if (!state.currentSubject && state.selectedCourses.size === 0) {
     const base = state.activeSearchFilter
       ? state.allData.filter(q => questionMatchesSearch(q, state.activeSearchFilter))
       : state.allData;
@@ -26,11 +26,18 @@ export function updateBookletQuestions() {
   const validTopicKeys = new Set(getAggregatedTopics().map(t => t.key));
 
   const filtered = state.allData.filter(q => {
-    if (!matchesSubject(q, state.currentSubject)) return false;
-    if (!state.selectedCourses.has(q.ders)) return false;
+    if (state.selectedCourses.size > 0) {
+      if (!state.selectedCourses.has(q.ders)) return false;
+    } else if (state.currentSubject) {
+      if (!matchesSubject(q, state.currentSubject)) return false;
+    }
     const qKey = getTopicKey(q);
     if (!validTopicKeys.has(qKey)) return false;
-    if (state.selectedTopicKey && qKey !== state.selectedTopicKey) return false;
+    if (state.selectedTopicKeys.size > 0) {
+      if (!state.selectedTopicKeys.has(qKey)) return false;
+    } else if (state.selectedTopicKey && qKey !== state.selectedTopicKey) {
+      return false;
+    }
     if (state.activeSearchFilter && !questionMatchesSearch(q, state.activeSearchFilter)) return false;
     return true;
   });
@@ -79,7 +86,23 @@ export function updateTopBadge(customTitle) {
   let badgeEmoji = '📚';
   let titleStr = 'Tüm Dersler';
 
-  if (state.currentSubject) {
+  const activeSubjects = [];
+  const seenSubjectIds = new Set();
+  for (const c of state.selectedCourses) {
+    const s = SUBJECTS.find(subj => matchesSubject({ ders: c }, subj.id));
+    if (s && !seenSubjectIds.has(s.id)) {
+      seenSubjectIds.add(s.id);
+      activeSubjects.push(s);
+    }
+  }
+
+  if (activeSubjects.length === 1) {
+    badgeEmoji = activeSubjects[0].icon;
+    titleStr = activeSubjects[0].shortName || activeSubjects[0].id;
+  } else if (activeSubjects.length > 1) {
+    badgeEmoji = '📚';
+    titleStr = activeSubjects.map(s => s.shortName || s.id).join(' + ');
+  } else if (state.currentSubject) {
     const subjDef = SUBJECTS.find(s => s.id === state.currentSubject) || SUBJECTS[1];
     badgeEmoji = subjDef.icon;
     titleStr = subjDef.shortName || subjDef.id;
@@ -88,8 +111,16 @@ export function updateTopBadge(customTitle) {
     titleStr = 'Tüm Branşlar';
   }
 
+  if (state.selectedTopicKeys.size > 0) {
+    titleStr += ` (${state.selectedTopicKeys.size} Konu)`;
+  } else if (state.selectedTopicKey) {
+    titleStr += ` (1 Konu)`;
+  }
+
   if (badgeBtn) {
-    const topicLabel = state.selectedTopicKey || 'Tüm Konular';
+    const topicLabel = state.selectedTopicKeys.size > 0
+      ? `${state.selectedTopicKeys.size} Konu`
+      : (state.selectedTopicKey || 'Tüm Konular');
     badgeBtn.title = `${titleStr} • ${topicLabel} • Toplam ${state.bookletQuestions.length} Soru`;
   }
 

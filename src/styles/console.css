@@ -61,17 +61,15 @@ body.dark-mode .btn-square-console {
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* "EL ALİM" Modern Kufi Hat Başlığı */
+/* Besmele Modern Kufi Hat Başlığı */
 .console-al-alim {
   font-family: 'Noto Kufi Arabic', sans-serif;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 700;
   text-align: center;
   color: var(--brand-accent);
   padding: 4px 0 6px 0;
-  letter-spacing: 2px;
-  border-bottom: 1px solid var(--hud-border);
-  margin-bottom: 2px;
+  letter-spacing: 0.5px;
   user-select: none;
 }
 
@@ -87,6 +85,7 @@ body.dark-mode .btn-square-console {
 }
 
 .console-tools-bar { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.console-tools-grid.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .console-tools-grid.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .console-tools-grid.grid-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 
@@ -277,9 +276,7 @@ body.dark-mode .btn-segmented-pill.active {
 }
 
 .console-divider {
-  height: 1px;
-  background: var(--hud-border);
-  margin: 2px 0;
+  display: none;
 }
 
 .console-menu-popup #topPrayerPill {

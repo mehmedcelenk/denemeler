@@ -193,49 +193,60 @@
 /* Mobile Responsive */
 @media (max-width: 640px) {
   .top-center-badge-container {
-    top: calc(4px + var(--safe-top));
-    gap: 3px;
-    max-width: calc(100vw - 8px);
+    top: calc(8px + var(--safe-top));
+    gap: 6px;
+    max-width: calc(100vw - 12px);
   }
-  .top-center-pill { font-size: 10.5px; padding: 2px 7px; gap: 3px; max-width: 125px; }
-  .badge-icon { font-size: 12px; }
-  .badge-text { font-size: 10.5px; max-width: 75px; }
-  .badge-caret { font-size: 8.5px; }
-  .top-features-toggle-pill { padding: 0 7px; }
-  .features-toggle-icon { font-size: 13px; }
-  .top-prayer-pill { font-size: 9.5px; padding: 2px 5px; }
-  .prayer-text { font-size: 9.5px; }
-  .top-streak-pill { font-size: 9.5px; padding: 2px 5px; gap: 2px; }
-  .streak-icon { font-size: 10.5px; }
-  .streak-count { font-size: 9.5px; }
+  .top-center-pill { font-size: 14px; padding: 6px 14px; gap: 6px; max-width: 160px; }
+  .badge-icon { font-size: 18px; }
+  .badge-text { font-size: 14px; max-width: 100px; }
+  .badge-caret { font-size: 11px; }
+  .top-features-toggle-pill { padding: 0 10px; }
+  .features-toggle-icon { font-size: 16px; }
+  .top-prayer-pill { font-size: 13px; padding: 6px 10px; }
+  .prayer-text { font-size: 13px; }
+  .top-streak-pill { font-size: 13px; padding: 6px 10px; gap: 4px; }
+  .streak-icon { font-size: 15px; }
+  .streak-count { font-size: 13px; }
   .top-center-pill,
   .top-prayer-pill,
   .top-view-pill,
   .top-filter-pill,
   .top-unified-pill,
   .top-streak-pill,
-  .top-features-toggle-pill { min-height: 26px; }
-  .top-filter-label { display: none; }
+  .top-features-toggle-pill { min-height: 40px; }
+  .top-filter-label,
+  .top-unified-label,
+  .top-view-label { display: none !important; }
   .top-view-pill,
   .top-filter-pill,
-  .top-unified-pill { padding: 1.5px; gap: 1.5px; }
+  .top-unified-pill { padding: 4px; gap: 4px; }
   .btn-top-view,
-  .btn-top-unified { height: 20px; padding: 0 5px; font-size: 9.5px; gap: 2.5px; }
+  .btn-top-unified { height: 32px; width: 34px; padding: 0; font-size: 12px; justify-content: center; }
   .btn-top-view svg,
-  .btn-top-unified svg { width: 10px; height: 10px; }
-  .top-view-label,
-  .top-unified-label { font-size: 9.5px; }
-  .btn-top-filter { width: 22px; height: 20px; padding: 0; }
-  .btn-top-filter svg { width: 10px; height: 10px; }
+  .btn-top-unified svg { width: 18px; height: 18px; }
+  .btn-top-filter { width: 34px; height: 32px; padding: 0; }
+  .btn-top-filter svg { width: 18px; height: 18px; }
   .btn-top-filter .filter-count-badge {
     position: absolute;
     top: -4px;
     right: -5px;
-    font-size: 7.5px;
-    padding: 1px 3px;
+    font-size: 8.5px;
+    padding: 1px 4px;
   }
-  .booklet-stream-container { padding: calc(46px + var(--safe-top)) 6px calc(90px + var(--safe-bottom)) 6px; width: 100%; max-width: 100%; box-sizing: border-box; }
+  /* Mobilde Floating Menüde Sütun Butonu Gizleme */
+  #btnConsoleColumnCycle { display: none !important; }
+  .console-tools-grid.grid-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .booklet-stream-container { padding: calc(60px + var(--safe-top)) 6px calc(90px + var(--safe-bottom)) 6px; width: 100%; max-width: 100%; box-sizing: border-box; }
   .booklet-page { width: 100% !important; max-width: 100% !important; height: auto !important; min-height: auto !important; padding: 18px 12px 14px 12px; box-sizing: border-box; }
+  .page-columns-body,
+  .page-columns-body[class*="cols-"] {
+    column-count: 1 !important;
+    column-rule: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 16px 0 !important;
+  }
   /* Mobil Çekmece X-Ekseni Ferahlatma */
   .drawer-overlay {
     padding: calc(6px + var(--safe-top)) 6px calc(10px + var(--safe-bottom)) 6px !important;

@@ -1,11 +1,33 @@
 import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { loadSubjectData } from '../../data/questions.js';
-import { AOIHL_SUBJECTS, AOF_SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
+import { AOIHL_SUBJECTS, AOF_SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.ts';
 import { renderDrawerTopics } from './topics.js';
-import { escapeHtml, escapeJs } from '../../shared/escape.ts';
+import { renderSubjectRowsHtml } from './subject-rows.ts';
+import { escapeHtml } from '../../shared/escape.ts';
 
 let selectionVersion = 0;
+
+export function getActiveSubjects() {
+  const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
+  const list = [];
+  const seen = new Set();
+
+  for (const c of state.selectedCourses) {
+    const s = currentList.find(subj => matchesSubject({ ders: c }, subj.id));
+    if (s && !seen.has(s.id)) {
+      seen.add(s.id);
+      list.push(s);
+    }
+  }
+
+  if (list.length === 0) {
+    const fallback = currentList.find(s => s.id === state.currentSubject) || currentList[0];
+    list.push(fallback);
+  }
+
+  return list;
+}
 
 export async function setProgramMode(mode) {
   state.programMode = mode;
@@ -39,6 +61,7 @@ export async function setSubject(subj) {
 
   state.currentSubject = subj;
   state.selectedTopicKey = null;
+  state.selectedTopicKeys.clear();
   state.activeSearchFilter = '';
   state.drawerSearchTerm = '';
   state.bookletFilterMode = 'all';
@@ -67,6 +90,93 @@ export async function setSubject(subj) {
   return true;
 }
 
+export async function addSubjectRow(subjId) {
+  const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
+  const activeSubjs = getActiveSubjects();
+
+  let targetId = subjId;
+  if (!targetId) {
+    const nextSubj = currentList.find(s => !activeSubjs.some(act => act.id === s.id));
+    if (!nextSubj) return false;
+    targetId = nextSubj.id;
+  }
+
+  const version = ++selectionVersion;
+  try {
+    await loadSubjectData(targetId);
+  } catch (error) {
+    if (version !== selectionVersion) return false;
+    return false;
+  }
+  if (version !== selectionVersion) return false;
+
+  const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, targetId)).map(q => q.ders)));
+  courses.sort((a, b) => {
+    const numA = parseInt((a.match(/\d+$/) || [0])[0], 10);
+    const numB = parseInt((b.match(/\d+$/) || [0])[0], 10);
+    return numA - numB;
+  });
+
+  if (courses.length > 0) {
+    state.selectedCourses.add(courses[0]);
+  }
+
+  updateCourseModeToggleVisibility();
+  renderDrawerSelectorBar();
+  renderDrawerTopics();
+  notifyStateChange('booklet:refresh');
+  return true;
+}
+
+export function removeSubjectRow(subjId) {
+  const activeSubjs = getActiveSubjects();
+  if (activeSubjs.length <= 1) return;
+
+  const coursesToRemove = Array.from(state.selectedCourses).filter(c => matchesSubject({ ders: c }, subjId));
+  coursesToRemove.forEach(c => state.selectedCourses.delete(c));
+
+  const remaining = getActiveSubjects();
+  if (state.currentSubject === subjId && remaining.length > 0) {
+    state.currentSubject = remaining[0].id;
+  }
+
+  updateCourseModeToggleVisibility();
+  renderDrawerSelectorBar();
+  renderDrawerTopics();
+  notifyStateChange('booklet:refresh');
+}
+
+export async function switchRowSubject(oldSubjId, newSubjId) {
+  if (oldSubjId === newSubjId) return;
+  const version = ++selectionVersion;
+  try {
+    await loadSubjectData(newSubjId);
+  } catch (error) {
+    if (version !== selectionVersion) return;
+  }
+  if (version !== selectionVersion) return;
+
+  const coursesToRemove = Array.from(state.selectedCourses).filter(c => matchesSubject({ ders: c }, oldSubjId));
+  coursesToRemove.forEach(c => state.selectedCourses.delete(c));
+
+  const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, newSubjId)).map(q => q.ders)));
+  courses.sort((a, b) => {
+    const numA = parseInt((a.match(/\d+$/) || [0])[0], 10);
+    const numB = parseInt((b.match(/\d+$/) || [0])[0], 10);
+    return numA - numB;
+  });
+
+  if (courses.length > 0) {
+    state.selectedCourses.add(courses[0]);
+  }
+  state.currentSubject = newSubjId;
+
+  updateCourseModeToggleVisibility();
+  renderDrawerSelectorBar();
+  renderDrawerTopics();
+  notifyStateChange('booklet:refresh');
+}
+
 export function renderDrawerSubjects() {
   renderDrawerSelectorBar();
 }
@@ -91,77 +201,46 @@ export function renderDrawerSelectorBar() {
   if (bannerContainer) bannerContainer.style.display = 'none';
 
   const isAof = state.programMode === 'AOF';
-  const dropdownWrap = document.getElementById('subjectDropdownWrapper');
-  const slashEl = document.querySelector('.dropdown-slash');
-  const intersectionWrap = document.getElementById('intersectionSwitchWrapper');
+  const currentList = isAof ? AOF_SUBJECTS : AOIHL_SUBJECTS;
+  const activeSubjs = getActiveSubjects();
+  const rowsContainer = document.getElementById('drawerSubjectRowsContainer');
+  const addBtn = document.getElementById('btnAddSubjectRow');
+  const addBtnWrap = document.getElementById('addSubjectRowWrapper');
+  const btnIntersect = document.getElementById('btnIntersectionToggle');
+  const chk = document.getElementById('chkIntersectionSwitch');
+
   const btnAoihl = document.getElementById('btnProgramAoihl');
   const btnAof = document.getElementById('btnProgramAof');
-
   if (btnAoihl) btnAoihl.classList.toggle('active', !isAof);
   if (btnAof) btnAof.classList.toggle('active', isAof);
 
-  if (dropdownWrap) dropdownWrap.style.display = isAof ? 'none' : 'block';
-  if (slashEl) slashEl.style.display = isAof ? 'none' : 'inline';
-  if (intersectionWrap) intersectionWrap.style.display = isAof ? 'none' : 'flex';
-
-  const currentList = isAof ? AOF_SUBJECTS : AOIHL_SUBJECTS;
-  const subjDef = currentList.find(s => s.id === state.currentSubject) || currentList[0];
-  const iconEl = document.getElementById('selectedSubjIcon');
-  const nameEl = document.getElementById('selectedSubjShortName');
-  const chipsContainer = document.getElementById('levelChipsContainer');
-  const chk = document.getElementById('chkIntersectionSwitch');
-
-  if (iconEl) iconEl.textContent = subjDef.icon;
-  if (nameEl) nameEl.textContent = (subjDef.shortName || subjDef.name).toUpperCase();
-
-  if (chipsContainer) {
-    let chipsHtml = '';
-    if (isAof) {
-      AOF_SUBJECTS.forEach((s) => {
-        const isSel = (s.id === state.currentSubject);
-        chipsHtml += `
-          <button type="button" class="btn-level-chip ${isSel ? 'active' : ''}" 
-                  onclick="selectSubjectFromDropdown('${s.id}')" 
-                  title="${escapeHtml(s.name)}"
-                  style="padding:4px 10px; min-width:auto; font-size:11.5px; white-space:nowrap;">
-            ${s.icon} ${escapeHtml(s.shortName || s.name)}
-          </button>
-        `;
-      });
-    } else if (state.currentSubject) {
-      const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, state.currentSubject)).map(q => q.ders)));
-      courses.sort((a, b) => {
-        const numA = parseInt((a.match(/\d+$/) || [0])[0], 10);
-        const numB = parseInt((b.match(/\d+$/) || [0])[0], 10);
-        return numA - numB;
-      });
-
-      courses.forEach(c => {
-        const isSel = state.selectedCourses.has(c);
-        const m = c.match(/\d+$/);
-        const num = m ? m[0] : c;
-        const short = getShortCourseName(c);
-        chipsHtml += `
-          <button type="button" class="btn-level-chip ${isSel ? 'active' : ''}" 
-                  onclick="toggleCourseLevel('${escapeJs(c)}')" 
-                  title="${escapeHtml(short)}">
-            ${escapeHtml(num)}
-          </button>
-        `;
-      });
-    }
-    chipsContainer.innerHTML = chipsHtml;
+  if (rowsContainer) {
+    rowsContainer.innerHTML = renderSubjectRowsHtml(activeSubjs);
   }
 
+  const hasMore = currentList.length > activeSubjs.length;
+  if (addBtn) {
+    addBtn.style.display = hasMore ? 'inline-flex' : 'none';
+  }
+  if (addBtnWrap) {
+    addBtnWrap.style.display = hasMore ? 'block' : 'none';
+  }
+
+  const isAnd = (state.courseFilterMode === 'AND');
+  if (btnIntersect) {
+    btnIntersect.classList.toggle('active', isAnd);
+  }
   if (chk) {
-    chk.checked = (state.courseFilterMode === 'AND');
+    chk.checked = isAnd;
   }
 
   updateCourseModeToggleVisibility();
 }
 
-export function toggleSubjectDropdown() {
-  const menu = document.getElementById('subjectDropdownMenu');
+export function toggleSubjectDropdown(menuIdOrSubjId) {
+  const menu = (typeof menuIdOrSubjId === 'string' && document.getElementById(menuIdOrSubjId))
+    || (typeof menuIdOrSubjId === 'string' && document.getElementById(`subjectDropdownMenu_${menuIdOrSubjId}`))
+    || document.getElementById('subjectDropdownMenu');
   if (!menu) return;
 
   if (menu.style.display === 'block') {
@@ -169,12 +248,21 @@ export function toggleSubjectDropdown() {
     return;
   }
 
+  document.querySelectorAll('.dropdown-menu-list').forEach(m => {
+    if (m !== menu) m.style.display = 'none';
+  });
+
+  const activeSubjId = (typeof menuIdOrSubjId === 'string' && !menuIdOrSubjId.startsWith('subjectDropdownMenu'))
+    ? menuIdOrSubjId
+    : (menu.id.startsWith('subjectDropdownMenu_') ? menu.id.replace('subjectDropdownMenu_', '') : state.currentSubject);
+
   const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
   let html = '';
   currentList.forEach(s => {
-    const isAct = (s.id === state.currentSubject);
+    const isAct = (s.id === activeSubjId);
     html += `
-      <div class="dropdown-menu-item ${isAct ? 'active' : ''}" onclick="selectSubjectFromDropdown('${s.id}')">
+      <div class="dropdown-menu-item ${isAct ? 'active' : ''}" 
+           onclick="handleDropdownItemSelect('${s.id}', '${activeSubjId || ''}')">
         <span>${s.icon} ${escapeHtml(s.name)}</span>
         ${isAct ? '<span>✓</span>' : ''}
       </div>
@@ -184,10 +272,20 @@ export function toggleSubjectDropdown() {
   menu.style.display = 'block';
 }
 
+export async function handleDropdownItemSelect(newSubjId, oldSubjId) {
+  document.querySelectorAll('.dropdown-menu-list').forEach(m => {
+    m.style.display = 'none';
+  });
+
+  if (!oldSubjId || oldSubjId === state.currentSubject) {
+    await setSubject(newSubjId);
+  } else {
+    await switchRowSubject(oldSubjId, newSubjId);
+  }
+}
+
 export async function selectSubjectFromDropdown(subjId) {
-  const menu = document.getElementById('subjectDropdownMenu');
-  if (menu) menu.style.display = 'none';
-  await setSubject(subjId);
+  await handleDropdownItemSelect(subjId, '');
 }
 
 export function toggleCourseLevel(courseName) {
@@ -209,15 +307,13 @@ export function handleIntersectionToggle(isChecked) {
   setCourseFilterMode(isChecked ? 'AND' : 'OR');
 }
 
-// Dışarı tıklayınca ders dropdownını kapat
 if (typeof document !== 'undefined') {
   document.addEventListener('click', (e) => {
     const target = e.target;
-    const subjWrap = document.getElementById('subjectDropdownWrapper');
-    const subjMenu = document.getElementById('subjectDropdownMenu');
-
-    if (subjWrap && !subjWrap.contains(target) && subjMenu) {
-      subjMenu.style.display = 'none';
+    if (target && target.closest && !target.closest('.custom-dropdown')) {
+      document.querySelectorAll('.dropdown-menu-list').forEach(m => {
+        m.style.display = 'none';
+      });
     }
   });
 }
@@ -231,6 +327,3 @@ onStateChange('subject:select', async (payload) => {
     await setSubject(payload.subject);
   }
 });
-
-
-

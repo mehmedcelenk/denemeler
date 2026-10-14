@@ -180,7 +180,7 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
         : escapeHtml(optText);
 
     optHtml += `
-      <div class="${rowClass}" id="opt_${q.id}_${letter}" ${clickHandler}>
+      <div class="${rowClass}" id="opt_${q.id}_${letter}" data-letter="${letter}" ${clickHandler}>
         <div class="optical-bubble">${letter}</div>
         <div class="choice-text-content">${renderedOptContent}</div>
       </div>
@@ -242,9 +242,12 @@ export function renderCardBanners(q: Question, isPassive: boolean): string {
 export function renderQuestionCardHtml(q: Question, globalIdx: number): string {
   const isPassive = !!q.sekilli;
   const questionClass = isPassive ? 'booklet-question is-passive-question' : 'booklet-question';
+  const userMark = state.userMarkedChoices[q.id] || '';
+  const isRevealed = state.revealedAnswers.has(q.id);
+  const statusAttr = userMark ? `data-user-status="${userMark === q.dogru_cevap ? 'correct' : 'incorrect'}"` : '';
 
   return `
-    <div class="${questionClass}" id="bq_${q.id}">
+    <div class="${questionClass}" id="bq_${q.id}" data-qid="${q.id}" data-correct="${q.dogru_cevap}" data-user-mark="${userMark}" data-revealed="${isRevealed ? 'true' : 'false'}" ${statusAttr}>
       ${renderCardHeader(q, globalIdx, isPassive)}
       ${renderSoonBanner(isPassive)}
       <div class="q-stem-text" id="stem_${q.id}">${renderCardStem(q)}</div>

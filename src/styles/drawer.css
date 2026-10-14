@@ -38,12 +38,21 @@
   align-items: center;
   border-bottom: 1px solid var(--paper-border);
   padding-bottom: 12px;
+  position: relative;
 }
 
-.drawer-header h3 {
-  font-size: 17px;
+.drawer-header-brand {
+  font-size: 14px;
   font-weight: 800;
+  color: var(--paper-text);
   letter-spacing: -0.3px;
+  user-select: none;
+}
+
+.drawer-header #programToggleGroup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn-close-drawer {

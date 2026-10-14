@@ -8,8 +8,11 @@ export function getAggregatedTopics() {
   const examPeriods = new Set();
 
   state.allData.forEach(q => {
-    if (!matchesSubject(q, state.currentSubject)) return;
-    if (!state.selectedCourses.has(q.ders)) return;
+    if (state.selectedCourses.size > 0) {
+      if (!state.selectedCourses.has(q.ders)) return;
+    } else {
+      if (!matchesSubject(q, state.currentSubject)) return;
+    }
 
     if (q.yil && q.donem !== undefined) {
       examPeriods.add(`${q.yil}-D${q.donem}`);

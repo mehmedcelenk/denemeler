@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { state } from '../src/app/state.ts';
 import { addStreakPoints, resetOrDeductStreak } from '../src/features/gamification/streak.ts';
-import { promptConfidenceSelection, confirmConfidence } from '../src/features/answers/confidence.ts';
+import { handleSelectOpticalBubble } from '../src/features/answers/marking.ts';
 import type { Question } from '../src/data/question.ts';
 
 test('addStreakPoints ve resetOrDeductStreak puanları doğru günceller', () => {
@@ -17,7 +17,7 @@ test('addStreakPoints ve resetOrDeductStreak puanları doğru günceller', () =>
   assert.equal(state.waterStreak, 0, 'Seri 0 altına inmemeli');
 });
 
-test('confirmConfidence: Yüksek güvenli doğru cevap 3 damla puanı verir', () => {
+test('handleSelectOpticalBubble: İlk tıklama taslak bırakır, ikinci tıklama onaylar ve doğru cevapta seri artar', () => {
   const dummyQ: Question = {
     id: 88881,
     ders: 'MATEMATİK – 1',
@@ -28,18 +28,20 @@ test('confirmConfidence: Yüksek güvenli doğru cevap 3 damla puanı verir', ()
   state.allData = [dummyQ];
   state.bookletQuestions = [dummyQ];
   state.userMarkedChoices = {};
-  state.userConfidences = {};
   state.waterStreak = 0;
 
-  promptConfidenceSelection(88881, 'B');
-  confirmConfidence('high');
+  // 1. Tıklama: henüz nihai işaretleme kaydedilmez
+  handleSelectOpticalBubble(88881, 'B');
+  assert.equal(state.userMarkedChoices[88881], undefined, 'İlk tıklamada nihai cevap verilmemeli');
+  assert.equal(state.waterStreak, 0, 'İlk tıklamada seri değişmemeli');
 
-  assert.equal(state.userMarkedChoices[88881], 'B', 'Şık B olarak işaretlenmeli');
-  assert.equal(state.userConfidences[88881], 'high', 'Güven seviyesi high olmalı');
-  assert.equal(state.waterStreak, 3, 'Yüksek güvenli doğru cevap 3 damla vermeli');
+  // 2. Tıklama: aynı şıkka tekrar tıklandığında cevap onaylanır
+  handleSelectOpticalBubble(88881, 'B');
+  assert.equal(state.userMarkedChoices[88881], 'B', 'Şık B olarak nihai işaretlenmeli');
+  assert.equal(state.waterStreak, 1, 'Doğru cevap damla serisini artırmalı');
 });
 
-test('confirmConfidence: Tahmin ile doğru bilinen soru Rövanş sepetine eklenir', () => {
+test('handleSelectOpticalBubble: Yanlış cevap verildiğinde soru Rövanş sepetine eklenir', () => {
   const dummyQ: Question = {
     id: 88882,
     ders: 'İNGİLİZCE – 1',
@@ -50,14 +52,15 @@ test('confirmConfidence: Tahmin ile doğru bilinen soru Rövanş sepetine ekleni
   state.allData = [dummyQ];
   state.bookletQuestions = [dummyQ];
   state.userMarkedChoices = {};
-  state.userConfidences = {};
   state.rematchQuestionIds = new Set();
-  state.waterStreak = 0;
+  state.waterStreak = 5;
 
-  promptConfidenceSelection(88882, 'C');
-  confirmConfidence('low');
+  // Yanlış şık olan A şıkkına 2 kez tıkla
+  handleSelectOpticalBubble(88882, 'A');
+  handleSelectOpticalBubble(88882, 'A');
 
-  assert.equal(state.waterStreak, 1, 'Tahmin ile doğru 1 damla vermeli');
-  assert.ok(state.rematchQuestionIds.has(88882), 'Tahminle bilinen soru Rövanşlara alınmalı');
+  assert.equal(state.userMarkedChoices[88882], 'A', 'A şıkkı işaretlenmeli');
+  assert.ok(state.rematchQuestionIds.has(88882), 'Yanlış bilinen soru Rövanşlara alınmalı');
+  assert.equal(state.waterStreak, 4, 'Yanlış cevap seri puanını düşürmeli');
 });
 

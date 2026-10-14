@@ -9,10 +9,8 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   const optionId = await option.getAttribute('id');
   await option.click();
   await expect(option).toHaveClass(/marked/);
-  const confBtn = page.locator('.btn-conf-high').first();
-  if (await confBtn.isVisible()) {
-    await confBtn.click();
-  }
+  // İkinci kez tıklanarak cevap kesinleştirilir
+  await option.click();
   // Neden butonu DOM'da kesinlikle olmamalı
   expect(await page.locator('.btn-why-correct').count()).toBe(0);
   // Açıklama balonu (toast) görünür olmalı
@@ -21,8 +19,6 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator(`[id="${optionId}"]`)).toHaveClass(/marked/);
   await page.evaluate(() => window.clearAllMarks());
   await expect(page.locator('.optical-choice-row.marked')).toHaveCount(0);
-  await page.evaluate(() => window.undoClearMarks());
-  await expect(page.locator(`[id="${optionId}"]`)).toHaveClass(/marked/);
 
   await page.locator('#topCenterBadge').click();
   await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
@@ -58,63 +54,33 @@ test('mobil genişlikte kitapçık açılır', async ({ page }) => {
   await expect(page.locator('#drawerTopicList')).toBeVisible();
 });
 
-test('sorular A4 sayfalara sığar ve sayfa numaraları tutarlıdır', async ({ page }) => {
+test('sorular dikey akışta (stream) sorunsuz listelenir ve layout güncellemeleri çalışır', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('.booklet-page').first()).toBeVisible();
-  await page.evaluate(() => document.fonts.ready);
 
-  const pagination = await page.locator('.booklet-page').evaluateAll(pages => ({
-    pageCount: pages.length,
-    questionCount: pages.reduce((total, page) => total + page.querySelectorAll('.booklet-question').length, 0),
-    pages: pages.map((page, index) => {
-      const bounds = page.getBoundingClientRect();
-      const body = page.querySelector('.page-columns-body');
-      const bodyBounds = body.getBoundingClientRect();
-      const cardsFit = [...body.querySelectorAll('.booklet-question')].every(card => {
-        const cardBounds = card.getBoundingClientRect();
-        return cardBounds.bottom <= bodyBounds.bottom + 1 && cardBounds.right <= bodyBounds.right + 1;
-      });
-      return {
-        width: bounds.width,
-        height: bounds.height,
-        cardsFit,
-        pageLabel: page.querySelector('.page-num-pill').textContent.trim(),
-        expectedPageLabel: `— SAYFA ${index + 1} / ${pages.length} —`,
-      };
-    }),
-  }));
+  const questionCount = await page.locator('.booklet-question').count();
+  expect(questionCount).toBeGreaterThan(1);
 
-  expect(pagination.pageCount).toBeGreaterThan(1);
-  expect(pagination.questionCount).toBeGreaterThan(pagination.pageCount);
-  for (const pageDetails of pagination.pages) {
-    expect(pageDetails.width).toBeCloseTo(793.7, 0);
-    expect(pageDetails.height).toBeCloseTo(1122.5, 0);
-    expect(pageDetails.cardsFit).toBe(true);
-    expect(pageDetails.pageLabel).toBe(pageDetails.expectedPageLabel);
-  }
+  // Kartların dikey akışta görünür ve pozitif yüksekliğe sahip olduğunu doğrula
+  const allCardsRendered = await page.evaluate(() => {
+    const cards = document.querySelectorAll('.booklet-question');
+    return cards.length > 0 && Array.from(cards).every(c => c.getBoundingClientRect().height > 40);
+  });
+  expect(allCardsRendered).toBe(true);
 
+  // Toplam soru sayısı hapı mevcut olmalı
+  await expect(page.locator('.page-num-pill')).toContainText('TOPLAM');
+
+  // Layout değişiklik olayı akışı günceller
   await page.evaluate(() => {
-    const container = document.getElementById('bookletPagesContainer');
-    window.__bookletRenderCount = 0;
-    const observer = new MutationObserver(records => {
-      for (const record of records) {
-        if (record.target === container && [...record.addedNodes].some(node =>
-          node instanceof HTMLElement
-          && node.classList.contains('booklet-page')
-          && !node.classList.contains('booklet-page-measuring'))) {
-          window.__bookletRenderCount++;
-        }
-      }
-    });
-    observer.observe(container, { childList: true });
     document.dispatchEvent(new Event('booklet:layoutchange'));
   });
-  await page.waitForTimeout(100);
-  expect(await page.evaluate(() => window.__bookletRenderCount)).toBe(1);
+  await expect(page.locator('.booklet-question').first()).toBeVisible();
 });
 
-test('3 ve 4 sütun seçimi tüm ekran genişliklerinde uygulanır', async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
+test('3 ve 4 sütun seçimi masaüstünde uygulanır, mobilde her zaman 1 sütun kalır', async ({ page }) => {
+  // Masaüstünde sütun seçimi uygulanmalı
+  await page.setViewportSize({ width: 1200, height: 800 });
   await page.goto('/');
   await expect(page.locator('.booklet-page').first()).toBeVisible();
 
@@ -125,6 +91,12 @@ test('3 ve 4 sütun seçimi tüm ekran genişliklerinde uygulanır', async ({ pa
       getComputedStyle(element).columnCount
     )).toBe(String(columns));
   }
+
+  // Mobilde ise seçilen ayar ne olursa olsun her zaman 1 sütun olmalı
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect.poll(() => page.locator('.page-columns-body').first().evaluate(element =>
+    getComputedStyle(element).columnCount
+  )).toBe('1');
 });
 
 test('sınav kaynağı etiketi soru kartı araç satırını daraltmaz', async ({ page }) => {
@@ -137,3 +109,50 @@ test('sınav kaynağı etiketi soru kartı araç satırını daraltmaz', async (
     tag.previousElementSibling?.classList.contains('q-optical-options')
   )).toBe(true);
 });
+
+test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı günceller', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.booklet-question').first()).toBeVisible();
+
+  // Çekmeceyi aç
+  await page.locator('#topCenterBadge').click();
+  await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
+
+  // Başlıkta "sınavdasın." ve program butonlarının geldiğini doğrula
+  await expect(page.locator('.drawer-header-brand')).toContainText('sınavdasın.');
+  await expect(page.locator('.drawer-header #programToggleGroup')).toBeVisible();
+
+  // "+" butonu ile yeni ders satırı ekle
+  await page.locator('#btnAddSubjectRow').click();
+  await expect(page.locator('.drawer-subject-row')).toHaveCount(2);
+
+  // Konu klasörlerinin döküldüğünü doğrula
+  await expect(page.locator('.drawer-subject-folder')).toHaveCount(2);
+
+  // İlk konuyu seç (grup akordiyonunu aç ve alt konuyu tıkla)
+  await page.locator('.drawer-topic-group-header').first().click();
+  const topicItem = page.locator('.drawer-topic-item').first();
+  await expect(topicItem).toBeVisible();
+  await topicItem.click();
+  await expect(topicItem).toHaveClass(/selected/);
+
+  // İkinci konuyu da seç
+  const secondTopic = page.locator('.drawer-topic-item').nth(1);
+  if (await secondTopic.count() > 0) {
+    await secondTopic.click();
+    await expect(secondTopic).toHaveClass(/selected/);
+  }
+
+  // Aksiyon butonu metninin "Tümünü Aç" ve seçilen konu sayısını yansıttığını doğrula
+  await expect(page.locator('#btnLoadAllTopics')).toContainText('Tümünü Aç');
+
+  // Kitapçığa yükle
+  await page.locator('#btnLoadAllTopics').click();
+  await expect(page.locator('#drawerOverlay')).not.toHaveClass(/open/);
+
+  // Üst rozetin seçimi özetlediğini doğrula
+  await expect(page.locator('#badgeMainText')).toContainText('Konu');
+  await expect(page.locator('.booklet-question').first()).toBeVisible();
+});
+
+

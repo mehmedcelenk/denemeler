@@ -35,10 +35,16 @@ export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement 
   const bubble = document.createElement('div');
   bubble.id = 'activeExplanationBubble';
   bubble.className = 'answer-explanation-bubble';
+  bubble.setAttribute('popover', 'manual');
   bubble.innerHTML = `<span>${escapeHtml(q.dogru_nedeni)}</span>`;
 
   document.body.appendChild(bubble);
   activeExplanationEl = bubble;
+  try {
+    if (typeof bubble.showPopover === 'function') {
+      bubble.showPopover();
+    }
+  } catch {}
 
   // Konumlandırma: Dikeyde şıkkın üstü (veya altı)
   const rect = el.getBoundingClientRect();
@@ -55,33 +61,44 @@ export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement 
 
   bubble.style.top = top + 'px';
 
-  // Dinamik Yatay Konumlandırma (Taşmayı %100 Engelleyen Çözüm):
-  // Baloncuğun genişliğini al
+  // Yatay Kapsayıcı Sınırları (Sütun ve Soru Kartı Düzeyinde Taşma Önleme):
+  const questionCard = el.closest<HTMLElement>('.booklet-question');
+  const pageContainer = el.closest<HTMLElement>('.booklet-page') || document.body;
+
+  // Sınır olarak soru kartı veya sayfa sütun genişliğini baz al
+  const containerRect = questionCard
+    ? questionCard.getBoundingClientRect()
+    : pageContainer.getBoundingClientRect();
+
+  const containerLeft = containerRect.left + scrollLeft;
+  const containerRight = containerRect.right + scrollLeft;
+  const containerWidth = containerRect.width;
+
+  // Balon genişliği kart/sütun genişliğine dinamik uyarlansın (karttan asla geniş olamaz)
+  const maxAllowedWidth = Math.min(380, Math.max(220, containerWidth - 8));
+  bubble.style.maxWidth = `${maxAllowedWidth}px`;
+  bubble.style.width = 'max-content';
+
+  // Boyut ölçümü
   const bubbleRect = bubble.getBoundingClientRect();
-  const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
-  // Balon genişliği ekranı aşmasın
-  const maxBubbleWidth = Math.min(380, viewportWidth - 24);
-  bubble.style.maxWidth = `${maxBubbleWidth}px`;
-
-  // Varsayılan olarak oku sol köşeye yakın hizala (ok = sol kenardan 24px)
+  // Varsayılan olarak oku sol köşeye yakın tut (ABCD dairesinin üzerine)
   let bubbleLeft = targetCenterX - 24;
 
-  // Eğer sağa taşıyorsa, balonu sola çek (ekranda sağdan 12px boşluk bırak)
-  if (bubbleLeft + bubbleRect.width > viewportWidth - 12) {
-    bubbleLeft = viewportWidth - 12 - bubbleRect.width;
+  // Sağ sınır kontrolü (Soru kartının veya sütunun sağına taşamaz)
+  if (bubbleLeft + bubbleRect.width > containerRight - 4) {
+    bubbleLeft = containerRight - 4 - bubbleRect.width;
   }
 
-  // Eğer sola taşıyorsa, balonu sağa çek (ekranda soldan 12px boşluk bırak)
-  if (bubbleLeft < 12) {
-    bubbleLeft = 12;
+  // Sol sınır kontrolü (Soru kartının veya sütunun soluna taşamaz)
+  if (bubbleLeft < containerLeft + 4) {
+    bubbleLeft = containerLeft + 4;
   }
 
   bubble.style.left = `${bubbleLeft}px`;
 
-  // Sivri okun (arrow) balon üzerindeki sol pozisyonunu doğrudan ABCD dairesinin merkezine kilitle
-  // Okun balon sınırları dışına çıkmasını engelle (en az 12px, en çok balonGenisligi - 12px)
-  const arrowPos = Math.max(12, Math.min(bubbleRect.width - 12, targetCenterX - bubbleLeft));
+  // Sivri okun (arrow) balon üzerindeki yerini doğrudan ABCD dairesinin merkezine kilitle
+  const arrowPos = Math.max(14, Math.min(bubbleRect.width - 14, targetCenterX - bubbleLeft));
   bubble.style.setProperty('--arrow-left', `${arrowPos}px`);
 
   // Süre: 13.5 saniye (3 katı)
@@ -99,6 +116,11 @@ export function hideAnswerExplanationBubble(): void {
     activeExplanationTimeout = null;
   }
   if (activeExplanationEl) {
+    try {
+      if (typeof activeExplanationEl.hidePopover === 'function') {
+        activeExplanationEl.hidePopover();
+      }
+    } catch {}
     activeExplanationEl.remove();
     activeExplanationEl = null;
   }

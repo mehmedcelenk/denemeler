@@ -96,13 +96,12 @@
   <div class="floating-console-container">
     <!-- Konsol Menüsü -->
     <div class="console-menu-popup" id="consoleMenuPopup">
-      <div class="console-al-alim" title="El-Alim (Her Şeyi Bilen)">العليم</div>
+      <div class="console-al-alim" title="Bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
 
       <!-- Ezan Vakti Rozeti -->
       <div class="console-control-group">
         <div class="top-prayer-pill" id="topPrayerPill" title="Sonraki Ezana Kalan Süre">
           <span class="prayer-icon">⏳</span>
-          <span>Ezan Vakti: </span>
           <span class="prayer-text" id="prayerDisplayText">00:00:00</span>
         </div>
       </div>
@@ -163,8 +162,12 @@
   <div class="drawer-overlay" id="drawerOverlay">
     <div class="drawer-card">
       <div class="drawer-header">
-        <h3>🎯 Ders & Soru Seçici</h3>
-        <button class="btn-close-drawer" data-action="close-subject-drawer">✕</button>
+        <span class="drawer-header-brand">sınavdasın.</span>
+        <div class="console-segmented-pill" id="programToggleGroup">
+          <button type="button" class="btn-segmented-pill active" id="btnProgramAoihl" data-action="set-program-mode" data-program="AOIHL">AOİHL</button>
+          <button type="button" class="btn-segmented-pill" id="btnProgramAof" data-action="set-program-mode" data-program="AOF">AÖF</button>
+        </div>
+        <button class="btn-close-drawer" data-action="close-subject-drawer" title="Kapat">✕</button>
       </div>
 
       <!-- RÖVANŞ / KİTAPLIK MODU AKTİFKEN GÖRÜNEN PASİF BİLGİ KARTI -->
@@ -181,56 +184,32 @@
 
       <!-- NORMAL SEÇİM GÖRÜNÜMÜ -->
       <div id="drawerNormalSelectorContainer">
-        <!-- PROGRAM SEÇİCİ TOGGLE BUTTON (AOİHL / AÖF) -->
-        <div class="program-toggle-container" style="margin-bottom:12px; display:flex; justify-content:center;">
-          <div class="console-segmented-pill" id="programToggleGroup" style="display:inline-flex;">
-            <button type="button" class="btn-segmented-pill active" id="btnProgramAoihl" data-action="set-program-mode" data-program="AOIHL" style="padding:5px 16px; font-size:12px; font-weight:700;">AOİHL</button>
-            <button type="button" class="btn-segmented-pill" id="btnProgramAof" data-action="set-program-mode" data-program="AOF" style="padding:5px 16px; font-size:12px; font-weight:700;">AÖF</button>
-          </div>
-        </div>
+        <!-- Dinamik Ders & Dönem Satırları -->
+        <div class="drawer-subject-rows-container" id="drawerSubjectRowsContainer"></div>
 
-        <!-- Kompakt Ders Dropdown + Kademe Butonları (1 2 3 4...) + iOS Kesişim Switch -->
-        <div class="drawer-select-bar">
-          <div class="subject-level-picker-group">
-            <!-- Ders Dropdown -->
-            <div class="custom-dropdown" id="subjectDropdownWrapper">
-              <button class="dropdown-trigger-btn" id="btnSubjectDropdownTrigger" data-action="toggle-subject-dropdown" title="Ders Seç">
-                <span id="selectedSubjIcon">📚</span>
-                <span id="selectedSubjShortName">TDE</span>
-                <span class="dropdown-arrow">▾</span>
-              </button>
-              <div class="dropdown-menu-list" id="subjectDropdownMenu" style="display:none;"></div>
-            </div>
-
-            <span class="dropdown-slash">/</span>
-
-            <!-- Kademe Çoklu Seçim Butonları (1 2 3 4...) -->
-            <div class="level-chips-container" id="levelChipsContainer"></div>
-          </div>
-
-          <!-- iOS Tarzı Kesişim Aç/Kapa Switch (Varsayılan: Birleşim/Kapalı) -->
-          <div class="ios-switch-wrapper" id="intersectionSwitchWrapper" title="Açık: Kesişim (Ortak Konular) • Kapalı: Birleşim (Tüm Konular)">
-            <span class="ios-switch-text">Kesişim</span>
-            <label class="ios-switch">
-              <input type="checkbox" id="chkIntersectionSwitch">
-              <span class="ios-slider"></span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Hızlı Karışık Sınav Butonu -->
-        <div style="margin-bottom:10px; display:flex; justify-content:flex-end; gap:8px; align-items:center;">
-          <button class="cat-pill-btn" style="padding:4px 10px; font-size:11px;" id="btnLoadAllTopics" data-action="load-all-topics">
-        Tüm Soruları Yükle →
+        <!-- Aksiyon Satırı: Ders Ekle (Sol) | Tümünü Aç (Orta) | Kesişim (Sağ) -->
+        <div class="drawer-actions-row" id="drawerActionsRow">
+          <button type="button" class="btn-drawer-action btn-add-subject" id="btnAddSubjectRow" data-action="add-subject-row" title="Yeni Ders Ekle">
+            <span class="plus-icon">＋</span>
+            <span>Ders Ekle</span>
           </button>
+
+          <button type="button" class="btn-drawer-action btn-load-all" id="btnLoadAllTopics" data-action="load-all-topics" title="Tümünü Aç">
+            Tümünü Aç
+          </button>
+
+          <button type="button" class="btn-drawer-action btn-intersection-toggle" id="btnIntersectionToggle" data-action="toggle-intersection" title="Ortak Konular Kesişimi">
+            Kesişim
+          </button>
+          <input type="checkbox" id="chkIntersectionSwitch" style="display:none;">
         </div>
 
-        <!-- Konu Listesi -->
-        <div style="border-top:1px solid var(--paper-border); padding-top:12px; margin-top:12px;">
+        <!-- Konu Listesi (Klasör Ağacı) -->
+        <div class="drawer-topics-section">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-        <div style="font-size:12px; font-weight:700; color:var(--paper-text-muted);" id="lblDrawerTopicHeader">
-          Konu Başlıkları:
-        </div>
+            <div style="font-size:12px; font-weight:700; color:var(--paper-text-muted);" id="lblDrawerTopicHeader">
+              Konu Başlıkları:
+            </div>
           </div>
           <div class="drawer-topic-list" id="drawerTopicList"></div>
         </div>

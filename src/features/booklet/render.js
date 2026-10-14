@@ -3,8 +3,6 @@ import { getCondensedCourseCode } from '../../data/subjects.js';
 import { escapeHtml } from '../../shared/escape.ts';
 import { renderQuestionCardHtml } from './question-card.ts';
 
-let fontLayoutRefreshScheduled = false;
-
 if (typeof document !== 'undefined') {
   document.addEventListener('booklet:layoutchange', () => renderBookletPages());
   onStateChange('booklet:refresh', () => renderBookletPages());
@@ -59,85 +57,28 @@ export function renderBookletPages(_targetQuestionId = null) {
 
   const columnClass = `cols-${state.currentColumnCount}`;
   const badgeCode = getCondensedCourseCode(state.selectedCourses, state.currentSubject);
-  const pageRanges = paginateQuestionRanges(container, badgeCode, columnClass);
-  container.innerHTML = pageRanges.map(({ start, end }, pageIndex) => {
-    const pageChunk = renderQuestionChunkHtml(start, end);
-    return renderPageHtml(pageChunk, badgeCode, columnClass, pageIndex + 1, pageRanges.length);
-  }).join('');
 
-  if (!fontLayoutRefreshScheduled && document.fonts) {
-    fontLayoutRefreshScheduled = true;
-    document.fonts.ready.then(() => {
-      if (container.isConnected) renderBookletPages();
-    });
-  }
-}
-
-function paginateQuestionRanges(container, badgeCode, columnClass) {
-  const stagingPage = document.createElement('div');
-  stagingPage.className = 'booklet-page booklet-page-measuring';
-  stagingPage.setAttribute('aria-hidden', 'true');
-  stagingPage.innerHTML = renderPageHtml({ questionsHtml: '', miniKeyHtml: '' }, badgeCode, columnClass, 1, 1);
-  stagingPage.querySelectorAll('[id]').forEach(element => element.removeAttribute('id'));
-  stagingPage.querySelector('.btn-page-key-toggle')?.removeAttribute('onclick');
-  container.appendChild(stagingPage);
-
-  const questionBody = stagingPage.querySelector('.page-columns-body');
-  const ranges = [];
-  let pageStart = 0;
-
-  try {
-    state.bookletQuestions.forEach((question, index) => {
-      const questionHtml = renderQuestionCardHtml(question, index + 1);
-      questionBody.insertAdjacentHTML('beforeend', questionHtml);
-      const hasPreviousQuestion = index > pageStart;
-      const bodyBounds = questionBody.getBoundingClientRect();
-      const questionBounds = questionBody.lastElementChild.getBoundingClientRect();
-      const isOverflowing = questionBounds.bottom > bodyBounds.bottom + 1
-        || questionBounds.right > bodyBounds.right + 1;
-
-      if (hasPreviousQuestion && isOverflowing) {
-        ranges.push({ start: pageStart, end: index });
-        pageStart = index;
-        questionBody.replaceChildren();
-        questionBody.insertAdjacentHTML('beforeend', questionHtml);
-      }
-    });
-  } finally {
-    stagingPage.remove();
-  }
-
-  ranges.push({ start: pageStart, end: state.bookletQuestions.length });
-  return ranges;
-}
-
-function renderQuestionChunkHtml(startIdx, endIdx) {
   let questionsHtml = '';
   let miniKeyHtml = '';
 
-  state.bookletQuestions.slice(startIdx, endIdx).forEach((q, idxInChunk) => {
-    const globalIdx = startIdx + idxInChunk + 1;
-    questionsHtml += renderQuestionCardHtml(q, globalIdx);
-
+  state.bookletQuestions.forEach((q, idx) => {
+    const num = idx + 1;
+    questionsHtml += renderQuestionCardHtml(q, num);
     if (q.sekilli) {
       miniKeyHtml += `
         <div class="mini-key-cell" style="opacity:0.55;" title="Şekilli Soru - Yakında">
-          <span>${globalIdx}.</span> <strong style="font-size:9.5px; color:#b45309;">YAKINDA</strong>
+          <span>${num}.</span> <strong style="font-size:9.5px; color:#b45309;">YAKINDA</strong>
         </div>
       `;
     } else {
       miniKeyHtml += `
         <div class="mini-key-cell">
-          <span>${globalIdx}.</span> <strong>${q.dogru_cevap}</strong>
+          <span>${num}.</span> <strong>${q.dogru_cevap}</strong>
         </div>
       `;
     }
   });
 
-  return { questionsHtml, miniKeyHtml };
-}
-
-function renderPageHtml(pageChunk, badgeCode, columnClass, pageNum, totalPages) {
   const lucidePageEyeSvg = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0-.696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`;
 
   const hasTdeInPage = state.bookletQuestions.some(q => (state.currentSubject === 'TDE') || (q.ders && q.ders.includes('TÜRK DİLİ')));
@@ -153,34 +94,34 @@ function renderPageHtml(pageChunk, badgeCode, columnClass, pageNum, totalPages) 
     `;
   }
 
-  return `
-    <div class="booklet-page" id="page_${pageNum}">
+  container.innerHTML = `
+    <div class="booklet-page" id="page_1">
       <div class="page-header-band">
         <div class="page-header-left">
           <span class="institution-name">T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM LİSESİ</span>
           <span class="exam-name-title">${escapeHtml(state.selectedTopicKey || (state.selectedCourses.size > 1 ? 'ORTAK KAZANIMLAR KESİŞİM TESTİ' : 'DÖNEM ÇIKMIŞ SINAV SORULARI'))}</span>
         </div>
         <div class="page-header-right">
-          <span class="page-badge-code">${badgeCode} • SAYFA ${pageNum}</span>
+          <span class="page-badge-code">${badgeCode} • ${state.bookletQuestions.length} SORU</span>
         </div>
       </div>
 
-      <div class="page-columns-body ${columnClass}" id="bookletQuestionBody_${pageNum}">
-        ${pageChunk.questionsHtml}
+      <div class="page-columns-body ${columnClass}" id="bookletQuestionBody_1">
+        ${questionsHtml}
       </div>
 
       <div>
         ${pageLegendHtml}
-        <div class="page-bottom-answer-strip" id="pageBottomKey_${pageNum}">
-          <span style="font-weight:800; font-size:10px; margin-right:4px;">🔑 SAYFA ${pageNum} CEVAPLARI:</span>
-          ${pageChunk.miniKeyHtml}
+        <div class="page-bottom-answer-strip" id="pageBottomKey_1">
+          <span style="font-weight:800; font-size:10px; margin-right:4px;">🔑 CEVAP ANAHTARI:</span>
+          ${miniKeyHtml}
         </div>
         <div class="page-footer-band">
-          <button class="btn-page-key-toggle" onclick="togglePageKey(${pageNum})" title="Sayfa Cevaplarını Göster / Gizle">
+          <button class="btn-page-key-toggle" onclick="togglePageKey(1)" title="Cevap Anahtarını Göster / Gizle">
             ${lucidePageEyeSvg}
-            <span id="lblPageKey_${pageNum}">Cevaplar</span>
+            <span id="lblPageKey_1">Cevaplar</span>
           </button>
-          <span class="page-num-pill">— SAYFA ${pageNum} / ${totalPages} —</span>
+          <span class="page-num-pill">— TOPLAM ${state.bookletQuestions.length} SORU —</span>
           <span>AÖL KESİŞİM REHBERİ</span>
         </div>
       </div>

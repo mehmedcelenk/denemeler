@@ -1,6 +1,5 @@
 import {
   clearAllMarks,
-  undoClearMarks,
   handleSelectOpticalBubble,
   togglePageKey,
   toggleSingleAnswerReveal,
@@ -27,11 +26,10 @@ import {
   toggleTheme,
 } from '../features/appearance/preferences.ts';
 import { showVocabBubble } from '../features/english/vocabulary.js';
-import { toggleSubjectDropdown, selectSubjectFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
+import { toggleSubjectDropdown, selectSubjectFromDropdown, handleDropdownItemSelect, handleIntersectionToggle, toggleCourseLevel, setProgramMode, addSubjectRow, removeSubjectRow } from '../features/subjects/selection.js';
 import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
 import { showAnswerExplanationBubble } from '../features/answers/explanation.ts';
 import { toggleFormulaNote } from '../features/formulas/formula-modal.ts';
-import { confirmConfidence } from '../features/answers/confidence.ts';
 import { setBookletFilter, setUnifiedMode } from '../features/booklet/filter.ts';
 import { setContentViewMode } from '../features/booklet/view-mode.ts';
 import { resumeLastSession, dismissResumeBanner } from '../features/booklet/resume.ts';
@@ -39,12 +37,13 @@ import { exitLibraryView } from '../features/library/library-drawer.ts';
 import { startInterleavedExam } from '../features/subjects/exam-mode.ts';
 import { toggleStarQuestionUI } from '../features/library/library-actions.ts';
 import { openBoardFocusMode, closeBoardFocusMode, resetBoardPan } from '../features/board/board-mode.ts';
+import { state } from '../app/state.ts';
 import { showEdebiKimlikKarti, showDivanBubble, hideTdePopups } from '../features/tde/edebiyat-pusulasi.ts';
 
 /** Eski HTML ve soru şablonlarındaki inline olayların tek bağlantı noktası. */
 export function registerLegacyHandlers() {
   Object.assign(window, {
-    confirmConfidence,
+    handleDropdownItemSelect,
     handleSelectOpticalBubble,
     hideTdePopups,
     loadSingleSearchQuestion,
@@ -54,7 +53,10 @@ export function registerLegacyHandlers() {
     showDivanBubble,
     showEdebiKimlikKarti,
     showVocabBubble,
+    addSubjectRow,
+    removeSubjectRow,
     toggleCourseLevel,
+    toggleSubjectDropdown,
     toggleCümleRöntgeni,
     toggleFormulaNote,
     togglePageKey,
@@ -67,7 +69,6 @@ export function registerLegacyHandlers() {
 
   // E2E test kancaları
   window.clearAllMarks = clearAllMarks;
-  window.undoClearMarks = undoClearMarks;
   window.toggleFeaturesBar = toggleFeaturesBar;
   window.setThemeMode = setThemeMode;
   window.setColumnCount = setColumnCount;
@@ -124,9 +125,6 @@ export function setupEventDelegation() {
         break;
       case 'clear-all-marks':
         clearAllMarks();
-        break;
-      case 'undo-clear-marks':
-        undoClearMarks();
         break;
       case 'zoom-out':
         zoomOut();
@@ -198,8 +196,17 @@ export function setupEventDelegation() {
       case 'load-all-topics':
         loadAllTopicsToBooklet();
         break;
+      case 'toggle-intersection':
+        handleIntersectionToggle(state.courseFilterMode !== 'AND');
+        break;
       case 'set-program-mode':
         if (el.dataset.program) setProgramMode(el.dataset.program);
+        break;
+      case 'add-subject-row':
+        addSubjectRow();
+        break;
+      case 'remove-subject-row':
+        if (el.dataset.subject) removeSubjectRow(el.dataset.subject);
         break;
       default:
         break;
