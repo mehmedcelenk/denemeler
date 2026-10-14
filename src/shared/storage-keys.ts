@@ -6,7 +6,7 @@ export const StorageKeys = {
   THEME: 'aol_theme',
   ACCENT_COLOR: 'aol_accent_color',
   COLUMN_COUNT: 'aol_column_count',
-  SAVED_CHOICES: 'aol_saved_choices',
+  USER_CHOICES: 'aol_user_choices',
   STARRED_QUESTIONS: 'aol_starred_questions',
   REMATCH_QUESTIONS: 'aol_rematch_questions',
   WATER_STREAK: 'aol_water_streak',

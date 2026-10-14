@@ -84,3 +84,166 @@ body.dark-mode .btn-level-chip.active {
   max-width: 320px;
   margin: 0 auto 16px auto;
 }
+
+/* ========================================================= */
+/* KOMPAKT DERS & KADEME SEÇİCİ DROPDOWN + IOS SWITCH        */
+/* ========================================================= */
+.drawer-select-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: var(--paper-subtle);
+  border: 1px solid var(--paper-border);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.subject-level-picker-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-slash {
+  color: var(--paper-text-muted);
+  font-size: 16px;
+  font-weight: 300;
+  user-select: none;
+}
+
+.custom-dropdown {
+  position: relative;
+}
+
+.dropdown-trigger-btn {
+  background: var(--paper-bg);
+  border: 1px solid var(--paper-border);
+  color: var(--paper-text);
+  padding: 6px 12px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.dropdown-trigger-btn:hover {
+  border-color: var(--brand-accent);
+  transform: translateY(-1px);
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.dropdown-menu-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 170px;
+  max-height: 260px;
+  overflow-y: auto;
+  background: var(--paper-bg);
+  border: 1px solid var(--paper-border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  z-index: 1050;
+  padding: 4px;
+  animation: confFadeIn 0.15s ease;
+}
+
+.dropdown-menu-item {
+  padding: 7px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--paper-text);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: background 0.12s;
+  user-select: none;
+}
+
+.dropdown-menu-item:hover {
+  background: rgba(125, 125, 125, 0.1);
+}
+
+.dropdown-menu-item.active {
+  background: var(--brand-accent);
+  color: #ffffff;
+}
+
+/* iOS Tarzı Kesişim Switch */
+.ios-switch-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.ios-switch-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--paper-text-muted);
+}
+
+.ios-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.ios-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ios-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--paper-border);
+  transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 20px;
+}
+
+.ios-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #ffffff;
+  transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.ios-switch input:checked + .ios-slider {
+  background-color: var(--brand-accent);
+}
+
+.ios-switch input:checked + .ios-slider:before {
+  transform: translateX(16px);
+}
+

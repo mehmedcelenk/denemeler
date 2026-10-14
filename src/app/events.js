@@ -1,4 +1,11 @@
-import { clearAllMarks, undoClearMarks, handleSelectOpticalBubble } from '../features/answers/marking.js';
+import {
+  clearAllMarks,
+  undoClearMarks,
+  handleSelectOpticalBubble,
+  togglePageKey,
+  toggleSingleAnswerReveal,
+  toggleSingleHint,
+} from '../features/answers/marking.ts';
 import { clearDrawerSearch, handleDrawerSearch, loadAllSearchResultsToBooklet, loadSingleSearchQuestion } from '../features/search/search.js';
 import { closePdfDialog, executePdfPrint, openPdfDialog } from '../features/print/print.js';
 import { closeSubjectDrawer, handleDrawerOverlayClick, openSubjectDrawer, setCourseFilterMode } from '../features/subjects/drawer.ts';
@@ -22,7 +29,6 @@ import {
 import { showVocabBubble } from '../features/english/vocabulary.js';
 import { switchSubjectFromDrawer, toggleCourseInDrawer, toggleSubjectDropdown, selectSubjectFromDropdown, toggleLevelDropdown, selectLevelFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
 import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
-import { togglePageKey, toggleSingleAnswerReveal, toggleSingleHint } from '../features/answers/reveal.js';
 import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from '../features/answers/explanation.ts';
 import { toggleFormulaNote } from '../features/formulas/formula-modal.ts';
 import { confirmConfidence, cancelConfidencePrompt } from '../features/answers/confidence.ts';

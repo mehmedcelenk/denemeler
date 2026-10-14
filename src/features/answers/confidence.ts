@@ -2,7 +2,7 @@ import { state, type Choice, type ConfidenceLevel } from '../../app/state.ts';
 import { addStreakPoints, resetOrDeductStreak } from '../gamification/streak.ts';
 import { recordAnswerForCombo } from '../gamification/combo-toast.ts';
 import { addToRematch, removeFromRematch } from '../library/library-model.ts';
-import { saveChoicesToStorage } from './storage.js';
+import { saveChoicesToStorage } from './storage.ts';
 import { showAnswerExplanationBubble } from './explanation.ts';
 
 let activeConfidencePrompt: { questionId: number; choice: Choice } | null = null;

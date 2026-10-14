@@ -4,7 +4,7 @@ import { renderDrawerSubjects, setSubject } from '../features/subjects/selection
 import { updatePrayerCountdown } from '../features/prayer/prayer.js';
 import { initBookletCanvasZoom, initTheme, initAccentColor, setColumnCount } from '../features/appearance/preferences.ts';
 import { StorageKeys } from '../shared/storage-keys.ts';
-import { loadSavedChoices } from '../features/answers/storage.js';
+import { loadSavedChoices } from '../features/answers/marking.ts';
 
 export async function startApp() {
   if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
