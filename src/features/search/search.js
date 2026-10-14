@@ -3,7 +3,6 @@ import { loadAllSubjectData } from '../../data/questions.js';
 import { SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
 import { trNormalize } from '../../shared/search.ts';
 import { renderDrawerTopics } from '../subjects/topics.js';
-import { updateTopBadge } from '../booklet/selection.js';
 import { closeSubjectDrawer } from '../subjects/drawer-visibility.js';
 import { escapeHtml } from '../../shared/escape.ts';
 
@@ -211,9 +210,8 @@ export function loadAllSearchResultsToBooklet() {
   state.bookletQuestions = state.currentSearchResults.map(m => m.q);
   state.activeSearchFilter = state.drawerSearchTerm;
   closeSubjectDrawer();
-  updateTopBadge();
   notifyStateChange('drawer:close');
-  notifyStateChange('booklet:refresh');
+  notifyStateChange('booklet:updated');
 }
 
 export function loadSingleSearchQuestion(qid) {
@@ -226,9 +224,8 @@ export function loadSingleSearchQuestion(qid) {
   }
   state.activeSearchFilter = state.drawerSearchTerm;
   closeSubjectDrawer();
-  updateTopBadge();
   notifyStateChange('drawer:close');
-  notifyStateChange('booklet:refresh');
+  notifyStateChange('booklet:updated', { targetQid: qid });
 
   setTimeout(() => {
     const card = document.getElementById(`bq_${qid}`);

@@ -4,6 +4,7 @@ import { renderDrawerSubjects, setSubject } from '../features/subjects/selection
 import { updatePrayerCountdown } from '../features/prayer/prayer.js';
 import { updateTTSGenderUI } from '../features/audio/audio.js';
 import { initBookletCanvasZoom, setColumnCount, initTheme, initAccentColor } from '../features/appearance/preferences.ts';
+import { StorageKeys } from '../shared/storage-keys.ts';
 import { initDraggableCalculator } from '../features/calculator/calculator.js';
 import { loadSavedChoices } from '../features/answers/storage.js';
 
@@ -30,7 +31,7 @@ export async function startApp() {
 
 export async function initApp() {
   try {
-    const savedCols = localStorage.getItem('aol_column_count');
+    const savedCols = localStorage.getItem(StorageKeys.COLUMN_COUNT);
     if (savedCols) {
       state.currentColumnCount = parseInt(savedCols, 10) || 2;
     }

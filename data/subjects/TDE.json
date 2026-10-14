@@ -1992,7 +1992,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Metinde oyuncuların el-baş hareketleri (jest), kapı ve koltuk (dekor), karşılıklı konuşma (diyalog) vardır; giysiye dair bilgi (kostüm) verilmemiştir."
   },
   {
     "id": 1468,
@@ -2016,7 +2017,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Cumhuriyet Dönemi’nde tiyatro eseri yazan sanatçılardan biridir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Cumhuriyet Dönemi’nde tiyatro eseri yazan sanatçılardan biridir?</span>",
+    "dogru_nedeni": "Çünkü: Ahmet Kutsi Tecer Köşebaşı ve Koçyiğit Köroğlu gibi oyunlarıyla tanınan Cumhuriyet tiyatrocusudur; diğerleri Tanzimat ve Servet-i Fünun yazarıdır."
   },
   {
     "id": 1469,
@@ -2040,7 +2042,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">“Bir Şehit Mezadı” hikâyesi, hayat karşısında alınan birbirine zıt iki tavır ve iki değer üzerine kurulmuştur. Savaşa girmeden önce şiir ve aşk edebiyatı ile beslenen İstanbullu genç subay, savaş esnasında hakikati görür. Hikâye, bu bakımdan derin bir değişmeyi ifade eder. Hikâyenin sonu ile kutsal duygulara aykırı gibi görünen başlangıcı arasında tezat vardır. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki eleştiri türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">“Bir Şehit Mezadı” hikâyesi, hayat karşısında alınan birbirine zıt iki tavır ve iki değer üzerine kurulmuştur. Savaşa girmeden önce şiir ve aşk edebiyatı ile beslenen İstanbullu genç subay, savaş esnasında hakikati görür. Hikâye, bu bakımdan derin bir değişmeyi ifade eder. Hikâyenin sonu ile kutsal duygulara aykırı gibi görünen başlangıcı arasında tezat vardır. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki eleştiri türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Yazar sanatçının hayatını veya toplumu değil, doğrudan Bir Şehit Mezadı hikâyesinin yapısını ve tezatlarını incelemiştir."
   },
   {
     "id": 1470,
@@ -2064,7 +2067,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Yaşar Nabi Nayır: Halk ve divan edebiyatlarımızdan bugün için faydalanma imkânı var mıdır? Sabahattin Ali: Sanat, olmuş ve olacak her şeyden faydalanır. Bu materyali kullanacak olanlar, ayıklamayı bilen insanlar olmalıdır. Yaşar Nabi Nayır: Bugünkü roman ve şiirimizi beraber ele alınca hangisini üstün buluyorsunuz ve niçin? Sabahattin Ali: Bugünkü roman ve şiirimizi ele alınca şiirimizde tek tük ileri hamleler görüyoruz. Fakat romanda daha doğrusu epik sahada, üstüne düşen vazifeleri kısmen olsun yapmış bir eser ortada yoktur. Biraz acı ama bu böyle. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Yaşar Nabi Nayır: Halk ve divan edebiyatlarımızdan bugün için faydalanma imkânı var mıdır? Sabahattin Ali: Sanat, olmuş ve olacak her şeyden faydalanır. Bu materyali kullanacak olanlar, ayıklamayı bilen insanlar olmalıdır. Yaşar Nabi Nayır: Bugünkü roman ve şiirimizi beraber ele alınca hangisini üstün buluyorsunuz ve niçin? Sabahattin Ali: Bugünkü roman ve şiirimizi ele alınca şiirimizde tek tük ileri hamleler görüyoruz. Fakat romanda daha doğrusu epik sahada, üstüne düşen vazifeleri kısmen olsun yapmış bir eser ortada yoktur. Biraz acı ama bu böyle. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Yaşar Nabi Nayır'ın sanatçı Sabahattin Ali ile görüşüp sorular sorarak yanıtlarını aktardığı bir mülakat (röportaj) metnidir."
   },
   {
     "id": 1471,
@@ -2088,7 +2092,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-obj\" title=\"Nesne\">Virgül</span>, <span class=\"xray-adv\" title=\"Tümleç / Zarf\">tırnak içinde olmayan alıntı cümlelerden sonra</span> <span class=\"xray-verb\" title=\"Yüklem\">konur</span>.\n\n<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">virgül bu göreviyle</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-obj\" title=\"Nesne\">Virgül</span>, <span class=\"xray-adv\" title=\"Tümleç / Zarf\">tırnak içinde olmayan alıntı cümlelerden sonra</span> <span class=\"xray-verb\" title=\"Yüklem\">konur</span>.\n\n<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">virgül bu göreviyle</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: D seçeneğinde Cengiz Aytmatov'un Beyaz Gemi romanını okuyorum doğrudan alıntı cümlesidir ve tırnaksız verildiği için sonuna virgül konmuştur."
   },
   {
     "id": 1472,
@@ -2111,7 +2116,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Yalnız sözcüğü yalın kökünden türemiş doğru yazımdır; kaldı ki ayrı, hatta çift t ile, hiç kimse ayrı yazılmalıdır."
   },
   {
     "id": 1473,
@@ -2134,7 +2140,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Cümlede asansör değil, binme eylemi maskesiz yapılmalıdır; sözcük Asansöre maskesiz binmek yasaktır şeklinde yer almalıdır."
   },
   {
     "id": 1474,
@@ -2158,7 +2165,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Bir şehirde yaşayan şehir sakinlerinin, yaşadıkları yere karşı sorumlulukları vardır. Bu cümledeki anlatım bozukluğu,</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdakilerden hangisiyle</span> <span class=\"xray-verb\" title=\"Yüklem\">giderilebilir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Bir şehirde yaşayan şehir sakinlerinin, yaşadıkları yere karşı sorumlulukları vardır. Bu cümledeki anlatım bozukluğu,</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdakilerden hangisiyle</span> <span class=\"xray-verb\" title=\"Yüklem\">giderilebilir?</span>",
+    "dogru_nedeni": "Çünkü: Şehir sakinleri zaten bir şehirde yaşayan kişilerdir; Bir şehirde yaşayan sözü gereksiz sözcük kullanımından doğan duruluk kuralı ihlalidir."
   },
   {
     "id": 1893,
@@ -2181,7 +2189,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: İspanyol yazar Miguel de Cervantes'in Don Kişot eseri, dünya edebiyatında modern roman türünün ilk başarılı örneğidir."
   },
   {
     "id": 1894,
@@ -2205,7 +2214,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Millî Edebiyat Dönemi romanı ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Millî Edebiyat Dönemi romanı ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>",
+    "dogru_nedeni": "Çünkü: Millî Edebiyat Dönemi romanlarında İstanbul'un dışına çıkılmış, özellikle Anadolu köyleri ve Millî Mücadele işlenmiştir."
   },
   {
     "id": 1895,
@@ -2229,7 +2239,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Türk edebiyatında “roman” ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdaki eşleştirmelerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">doğrudur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Türk edebiyatında “roman” ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdaki eşleştirmelerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">doğrudur?</span>",
+    "dogru_nedeni": "Çünkü: Edebiyatımızda ilk tarihî roman Namık Kemal'in Cezmi adlı eseridir."
   },
   {
     "id": 1896,
@@ -2252,7 +2263,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Hacivat'ın semai okuyarak perdeye geldiği, of hay Hak diyerek perde gazelini okuduğu giriş bölümüne mukaddime denir."
   },
   {
     "id": 1897,
@@ -2276,7 +2288,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki eserlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Akif Paşa’ya aittir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki eserlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Akif Paşa’ya aittir?</span>",
+    "dogru_nedeni": "Çünkü: Tabsıra, Tanzimat öncesi devlet adamı ve şair Akif Paşa'nın siyasi hayatını anlattığı anı (hatıra) kitabıdır."
   },
   {
     "id": 1898,
@@ -2299,7 +2312,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Metinde olayın nerede (Avustralya), kim (öğrenciler) ve ne (cihaz) olduğu açıklanmış; tasarımın ne zaman yapıldığı belirtilmemiştir."
   },
   {
     "id": 1899,
@@ -2322,7 +2336,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Edebiyatımızdaki ilk Türkçe gezi yazısı kitabı Seydi Ali Reis'in Mir'âtü'l-Memâlik (Memleketler Aynası) adlı eseridir."
   },
   {
     "id": 1900,
@@ -2345,7 +2360,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Hoşgörü sözcüğü kalıplaşmış bir birleşik sözcük olup bitişik (hoşgörülü) yazılmalıdır."
   },
   {
     "id": 1901,
@@ -2368,7 +2384,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Şart ekinden (-sa) ve tekrarlı bağlaçlardan (da... da...) sonra virgül konmaz; II ve III. cümlelerde virgül gereksizdir."
   },
   {
     "id": 1902,
@@ -2392,7 +2409,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki cümlelerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">devrik bir isim cümlesidir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki cümlelerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">devrik bir isim cümlesidir?</span>",
+    "dogru_nedeni": "Çünkü: Çok merhametlidir yüklemi isim soyludur ve cümlenin başında/ortasında yer aldığı için devriktir."
   },
   {
     "id": 1903,
@@ -2416,7 +2434,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki cümlelerin hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yapı bakımından diğerlerinden farklıdır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki cümlelerin hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yapı bakımından diğerlerinden farklıdır?</span>",
+    "dogru_nedeni": "Çünkü: Seveceğini fiilimsisi aldığı için girişik birleşik cümledir; diğer seçeneklerde tek yargı bulunur ve basit yapılıdır."
   },
   {
     "id": 1904,
@@ -2439,7 +2458,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: İlk Türkçe sözlüklerden Lehçe-i Osmanî Ahmet Vefik Paşa'ya, Kâmûs-ı Türkî ise Şemsettin Sami'ye aittir."
   },
   {
     "id": 1905,
@@ -2463,7 +2483,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki parçaların hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">kahraman anlatıcı</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki parçaların hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">kahraman anlatıcı</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: Yazar kendi yaşadığı olayları ben ağzıyla (yanımdan, işaret ettim, geldim) birinci kişi olarak anlatmıştır."
   },
   {
     "id": 1906,
@@ -2487,7 +2508,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Sıkıntı verici bir film görmüş, eve dönüyordum hızlı hızlı. Sokak sessizdi, ıssızdı. İleride bir adam vardı. Bir apartmana bakarak “Saat on ikiye beş var!” diye bağırdı. Birilerini uyarıyor sanmıştım. Oysa adam yürümeye başlamıştı ve sesini dört bir yana yönelterek uyarısını sürdürüyordu: “Saat on ikiye beş var!” Sürekli, “Saat on ikiye beş var!” Üç beş pencere daha kararmıştı. Bu küçürek hikâye ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Sıkıntı verici bir film görmüş, eve dönüyordum hızlı hızlı. Sokak sessizdi, ıssızdı. İleride bir adam vardı. Bir apartmana bakarak “Saat on ikiye beş var!” diye bağırdı. Birilerini uyarıyor sanmıştım. Oysa adam yürümeye başlamıştı ve sesini dört bir yana yönelterek uyarısını sürdürüyordu: “Saat on ikiye beş var!” Sürekli, “Saat on ikiye beş var!” Üç beş pencere daha kararmıştı. Bu küçürek hikâye ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>",
+    "dogru_nedeni": "Çünkü: Küçürek (minimal) hikâyeler bilgi vermek veya öğretmek için değil; yoğun duygu, seziş ve anlık çağrışım uyandırmak için yazılır."
   },
   {
     "id": 1907,
@@ -2510,7 +2532,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Alışılmamış bağdaştırmalar, soyut imgeler ve dil bilgisi kurallarını esneten kapalı anlatım İkinci Yeni şiirinin özelliğidir."
   },
   {
     "id": 1908,
@@ -2533,7 +2556,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: İnsana ait olan mutluluğu duymama özelliği cansız bir varlığa (ağaca) aktarılarak teşhis (kişileştirme) yapılmıştır."
   },
   {
     "id": 1909,
@@ -2556,7 +2580,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Arif Nihat Asya toplumcu gerçekçi çizgide değil, millî-manevi değerleri ve bayrak temasını işleyen gelenekçi çizgidedir."
   },
   {
     "id": 1910,
@@ -2579,7 +2604,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Soru eki değil, olumsuzluk eki (-ma/-me) daralarak -mı/-mi olmuştur; fiile bitişik (yapmıyor) yazılmalıdır."
   },
   {
     "id": 1911,
@@ -2603,7 +2629,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Fobi ( ) insanların bir durum ( ) olgu veya canlı karşısında duyduklarıyla onların gündelik hayatını etkileyebilen ileri düzeydeki korku ( ) endişe ve kaçınma hâlidir ( ) Bu cümlede yay ayraçla gösterilen yerlere sırasıyla</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdaki noktalama işaretlerinden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">getirilmelidir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Fobi ( ) insanların bir durum ( ) olgu veya canlı karşısında duyduklarıyla onların gündelik hayatını etkileyebilen ileri düzeydeki korku ( ) endişe ve kaçınma hâlidir ( ) Bu cümlede yay ayraçla gösterilen yerlere sırasıyla</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdaki noktalama işaretlerinden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">getirilmelidir?</span>",
+    "dogru_nedeni": "Çünkü: Özneden sonra virgülle ayrılmış ögeler olduğu için Fobi'den sonra noktalı virg (;), eş görevli sözcükler arasına virgül (,) gelir."
   },
   {
     "id": 1912,
@@ -2627,7 +2654,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">“İşlemek” sözcüğü</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">“kayıtları düzgün olarak tutmak veya gereken yere aktarmak” anlamında</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">“İşlemek” sözcüğü</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">“kayıtları düzgün olarak tutmak veya gereken yere aktarmak” anlamında</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: A seçeneğinde malzemeleri bilgisayara işlemek, bilgileri kayıtlara geçirmek ve aktarmak anlamındadır."
   },
   {
     "id": 1913,
@@ -2651,7 +2679,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "I. <span class=\"xray-sub\" title=\"Özne\">Şimdi</span> <span class=\"xray-obj\" title=\"Nesne\">en ağır sorumluluklardan birini</span> <span class=\"xray-verb\" title=\"Yüklem\">üstleniyordu</span>. II. <span class=\"xray-sub\" title=\"Özne\">Ağır bir yemek kokusu</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">bütün odayı</span> <span class=\"xray-verb\" title=\"Yüklem\">kaplamıştı</span>. III. Sabahın bu saatinde kalkmak bana ağır geliyordu. IV. En ağır yükler günümüzde gemiler vasıtasıyla taşınıyor. “Ağır” sözcüğü\n\n<div class=\"xray-prompt\">numaralanmış cümlelerin hangisinde mecaz anlamıyla kullanılmamıştır?</div>"
+    "soru_xray": "I. <span class=\"xray-sub\" title=\"Özne\">Şimdi</span> <span class=\"xray-obj\" title=\"Nesne\">en ağır sorumluluklardan birini</span> <span class=\"xray-verb\" title=\"Yüklem\">üstleniyordu</span>. II. <span class=\"xray-sub\" title=\"Özne\">Ağır bir yemek kokusu</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">bütün odayı</span> <span class=\"xray-verb\" title=\"Yüklem\">kaplamıştı</span>. III. Sabahın bu saatinde kalkmak bana ağır geliyordu. IV. En ağır yükler günümüzde gemiler vasıtasıyla taşınıyor. “Ağır” sözcüğü\n\n<div class=\"xray-prompt\">numaralanmış cümlelerin hangisinde mecaz anlamıyla kullanılmamıştır?</div>",
+    "dogru_nedeni": "Çünkü: IV. cümledeki ağır sözcüğü tartıda çok çeken, kütlesi fazla olan nesneler için kullanılarak gerçek anlamını korumuştur."
   },
   {
     "id": 1914,
@@ -2674,7 +2703,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Geçmişte kız-erkek tüm çocukları kapsayan oğul sözcüğünün günümüzde sadece erkek evlat için kullanılması anlam daralmasıdır."
   },
   {
     "id": 1915,
@@ -2698,7 +2728,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">“bireyin iç dünyasını esas alan” sanatçılardan değildir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">“bireyin iç dünyasını esas alan” sanatçılardan değildir?</span>",
+    "dogru_nedeni": "Çünkü: Sabahattin Ali bireyin iç dünyasını değil, köy ve kasaba gerçekliğini işleyen toplumcu gerçekçi bir yazardır."
   },
   {
     "id": 1916,
@@ -2722,7 +2753,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Millî Edebiyat zevk ve anlayışıyla yazılan eserlerden biridir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Millî Edebiyat zevk ve anlayışıyla yazılan eserlerden biridir?</span>",
+    "dogru_nedeni": "Çünkü: Yakup Kadri'nin Kurtuluş Savaşı ve köylü-aydın çatışmasını anlatan Yaban romanı Millî Edebiyat anlayışının başyapıtıdır."
   },
   {
     "id": 1917,
@@ -2746,7 +2778,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçalardan hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">birinci kişi ağzıyla yazılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçalardan hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">birinci kişi ağzıyla yazılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: Anlatıcı kendi gözlemlerini birinci kişi (ben/toprak) ağzıyla aktarmıştır."
   },
   {
     "id": 1918,
@@ -2769,7 +2802,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Tiyatroda bir oyuncunun sahnede kendi kendine konuşmasına monolog denir."
   },
   {
     "id": 1919,
@@ -2793,7 +2827,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Türkçeyi ustalıkla kullanan sanatçı</span>, <span class=\"xray-obj\" title=\"Nesne\">konusunu Osmanlı tarihinden aldığı oyunlarıyla</span> <span class=\"xray-verb\" title=\"Yüklem\">tanındı</span>. Günün gerçekleriyle tarihî gerçekleri sanatın potasında eriterek okuyucuya sundu. “Deli İbrahim, IV. Murat, Kösem Sultan ve Sokrates Savunuyor” en tanınmış tiyatro eserleridir.\n\n<div class=\"xray-prompt\">Bu parçada sözü edilen sanatçı aşağıdakilerden hangisidir?</div>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Türkçeyi ustalıkla kullanan sanatçı</span>, <span class=\"xray-obj\" title=\"Nesne\">konusunu Osmanlı tarihinden aldığı oyunlarıyla</span> <span class=\"xray-verb\" title=\"Yüklem\">tanındı</span>. Günün gerçekleriyle tarihî gerçekleri sanatın potasında eriterek okuyucuya sundu. “Deli İbrahim, IV. Murat, Kösem Sultan ve Sokrates Savunuyor” en tanınmış tiyatro eserleridir.\n\n<div class=\"xray-prompt\">Bu parçada sözü edilen sanatçı aşağıdakilerden hangisidir?</div>",
+    "dogru_nedeni": "Çünkü: Osmanlı tarihini trajedi kalıbıyla sahneye taşıyan IV. Murat, Deli İbrahim ve Kösem Sultan oyunlarının yazarı Turan Oflazoğlu'dur."
   },
   {
     "id": 1920,
@@ -2817,7 +2852,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Okuyan için kitaplığının yanı başından daha rahat bir yer olabileceğini sanmıyorum. Ben kendi hesabıma, kitaplarımın arasında duyduğum rahatlığı hiçbir yerde duymamışımdır. Kitapların yenilerini de eskilerini de severim. Ama yenilere her zaman güven olmaz. Bizi aldattıkları da olur. Oysaki böyle bir şey eski kitaplarımızda görülmez. Onlar, eski arkadaşlar gibidir; değerleri belirmiş, yakınlıkları denenmiştir. Onlara çekinmeden dönebiliriz. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Okuyan için kitaplığının yanı başından daha rahat bir yer olabileceğini sanmıyorum. Ben kendi hesabıma, kitaplarımın arasında duyduğum rahatlığı hiçbir yerde duymamışımdır. Kitapların yenilerini de eskilerini de severim. Ama yenilere her zaman güven olmaz. Bizi aldattıkları da olur. Oysaki böyle bir şey eski kitaplarımızda görülmez. Onlar, eski arkadaşlar gibidir; değerleri belirmiş, yakınlıkları denenmiştir. Onlara çekinmeden dönebiliriz. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Yazar kitap sevgisini kanıtlama kaygısı gütmeden, samimi ve kişisel düşünceleriyle bir deneme olarak kaleme almıştır."
   },
   {
     "id": 1921,
@@ -2841,7 +2877,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">iyi bir hatipte bulunması gereken özelliklerden değildir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">iyi bir hatipte bulunması gereken özelliklerden değildir?</span>",
+    "dogru_nedeni": "Çünkü: Hatibin amacı dinleyiciyi etkilemektir; bu yüzden süslü ve kapalı dil yerine açık ve anlaşılır bir üslup kullanmalıdır."
   },
   {
     "id": 1922,
@@ -2865,7 +2902,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>",
+    "dogru_nedeni": "Çünkü: Kısaltmalara gelen ekler açılışa göre değil son harfin okunuşuna göre gelir; TTK'ye şeklinde yazılmalıdır."
   },
   {
     "id": 1923,
@@ -2888,7 +2926,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Şart ekinden (-sa), bağlaçlardan (ve) ve zarf-fiilden (-ken) sonra virgül konmaz; II. cümlede ama bağlacından önce virgül getirilebilir."
   },
   {
     "id": 1924,
@@ -2911,7 +2950,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Metinde piktogramların ne olduğu, tarihi ve anlaşılırlığı açıklanmış; günlük hayatta niçin sık karşılaşıldığı sorusu yanıtlanmamıştır."
   },
   {
     "id": 1925,
@@ -2935,7 +2975,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "I. <span class=\"xray-sub\" title=\"Özne\">Bu duyuş</span>, <span class=\"xray-obj\" title=\"Nesne\">beni</span> <span class=\"xray-verb\" title=\"Yüklem\">benden alır götürür</span>. II. <span class=\"xray-adv\" title=\"Tümleç / Zarf\">Sanki</span> <span class=\"xray-obj\" title=\"Nesne\">kapalı pencereler</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">ansızın</span> <span class=\"xray-verb\" title=\"Yüklem\">açılır</span>. III. Gecenin geç saatlerinde, her şeyin sustuğu, havanın durulduğu anlarda, bir köşeye çekilip şiir okurum. IV. Odaya ilkbahar meltemiyle birlikte taze bir ışık dolar. V. <span class=\"xray-sub\" title=\"Özne\">İçime dolan mısraların</span> <span class=\"xray-verb\" title=\"Yüklem\">kalp atışını duyarım</span>.\n\n<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Numaralanmış cümlelerle anlamlı bir paragraf oluşturulmak istenirse sıralama</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">olur?</span>"
+    "soru_xray": "I. <span class=\"xray-sub\" title=\"Özne\">Bu duyuş</span>, <span class=\"xray-obj\" title=\"Nesne\">beni</span> <span class=\"xray-verb\" title=\"Yüklem\">benden alır götürür</span>. II. <span class=\"xray-adv\" title=\"Tümleç / Zarf\">Sanki</span> <span class=\"xray-obj\" title=\"Nesne\">kapalı pencereler</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">ansızın</span> <span class=\"xray-verb\" title=\"Yüklem\">açılır</span>. III. Gecenin geç saatlerinde, her şeyin sustuğu, havanın durulduğu anlarda, bir köşeye çekilip şiir okurum. IV. Odaya ilkbahar meltemiyle birlikte taze bir ışık dolar. V. <span class=\"xray-sub\" title=\"Özne\">İçime dolan mısraların</span> <span class=\"xray-verb\" title=\"Yüklem\">kalp atışını duyarım</span>.\n\n<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Numaralanmış cümlelerle anlamlı bir paragraf oluşturulmak istenirse sıralama</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">olur?</span>",
+    "dogru_nedeni": "Çünkü: Paragraf genel durumla (III) başlar, içsel duyuş (V), duygunun etkisi (I), ardından pencerelerin açılması (II) ve ışığın dolmasıyla (IV) tamamlanır."
   },
   {
     "id": 2487,
@@ -2959,7 +3000,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Ben biliyorum. Sen artık odaların döşeniş tarzını hatta bu evi beğenmiyorsun... Uçmayı öğrenmiş bir serçe yavrusu gibi, gözün başka dallarda. Senin düşündüğün, kim bilir ne cici bir şeydir. Bizi misafir edeceğin odayı da unutmamışsındır, buna eminim. Bu kadarı bize... Bana yeter. Bu parçanın anlatımı ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Ben biliyorum. Sen artık odaların döşeniş tarzını hatta bu evi beğenmiyorsun... Uçmayı öğrenmiş bir serçe yavrusu gibi, gözün başka dallarda. Senin düşündüğün, kim bilir ne cici bir şeydir. Bizi misafir edeceğin odayı da unutmamışsındır, buna eminim. Bu kadarı bize... Bana yeter. Bu parçanın anlatımı ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>",
+    "dogru_nedeni": "Çünkü: Metinde anne ile evlat arasındaki duygusal bağ öykülenmiş ve benzetme yapılmıştır; somut kanıt sunan örnekleme yer almaz."
   },
   {
     "id": 2488,
@@ -2982,7 +3024,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Hikâye, şiir ve Karagöz güzel sanat/edebi metindir; makale ise estetik değil bilgi veren öğretici bir metindir."
   },
   {
     "id": 2489,
@@ -3005,7 +3048,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Sait Faik Abasıyanık olay (Maupassant) değil, durum/kesit (Çehov) tarzı hikâyeciliğin öncüsüdür."
   },
   {
     "id": 2490,
@@ -3028,7 +3072,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Şiir 11'li hece ölçüsüyle yazılmıştır; kuralsız ve ölçüsüz serbest nazım değildir."
   },
   {
     "id": 2491,
@@ -3051,7 +3096,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Hint edebiyatının Pançatantra eseri masalın ilk örneğidir; Doğu'da Binbir Gece Masalları, Batı'da ise La Fontaine öne çıkar."
   },
   {
     "id": 2492,
@@ -3074,7 +3120,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Şair takma adı mahlas/tapşırma, iki dize beyittir; bent en az üç dizeden oluşan bağımsız bölümdür, bu tanımlarda yer almaz."
   },
   {
     "id": 2493,
@@ -3097,7 +3144,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: II. cümlede dahi anlamındaki de bağlaçtır ve ayrı (önce de) yazılmalıdır."
   },
   {
     "id": 2494,
@@ -3120,7 +3168,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Sıralı soruların arasına virgül, soru öbeği bittiğinde noktalı virgül (;) ve cümle sonuna nokta (.) gelir."
   },
   {
     "id": 2495,
@@ -3143,7 +3192,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Limon papağanın özel adıdır (Özel), fıstık tür adıdır (Cins), Siirt ise şehir adıdır (Özel)."
   },
   {
     "id": 2496,
@@ -3166,7 +3216,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Birden sözcüğü kayboldu eylemini zaman/durum yönünden belirten bir zarftır, sıfat değildir."
   },
   {
     "id": 2497,
@@ -3190,7 +3241,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Ben, bin türlü ses ve uğultu arasında hep Yıldız Dağı’nın mağrur ve dumanlı başını düşünmüştüm. Bu cümlede</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdaki sözcük türlerinden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Ben, bin türlü ses ve uğultu arasında hep Yıldız Dağı’nın mağrur ve dumanlı başını düşünmüştüm. Bu cümlede</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdaki sözcük türlerinden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>",
+    "dogru_nedeni": "Çünkü: Cümlede edat (ilgeç) görevli bir sözcük yoktur; ve bağlaç, ben zamir, Yıldız Dağı sıfat/isimdir."
   },
   {
     "id": 2949,
@@ -3213,7 +3265,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Ayrıntılı geniş çevre ve karmaşık olay örgüsüne sahip kurgusal anlatı türü romandır."
   },
   {
     "id": 2950,
@@ -3237,7 +3290,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "Mizah oluşturmanın temel unsurlarından biri olan, metinler arasılık yoluyla aktarılan, metin yoluyla gülünç ve mizahi bir durum oluşturmayı amaçlayan anlatım tekniğidir. <span class=\"xray-sub\" title=\"Özne\">Yazar</span>, <span class=\"xray-obj\" title=\"Nesne\">önceden yazılan bir metni</span> <span class=\"xray-verb\" title=\"Yüklem\">gülünçleştirerek yeniden ele alır</span>.\n\n<div class=\"xray-prompt\">Bu parçada sözü edilen anlatım tekniği aşağıdakilerden hangisidir?</div>"
+    "soru_xray": "Mizah oluşturmanın temel unsurlarından biri olan, metinler arasılık yoluyla aktarılan, metin yoluyla gülünç ve mizahi bir durum oluşturmayı amaçlayan anlatım tekniğidir. <span class=\"xray-sub\" title=\"Özne\">Yazar</span>, <span class=\"xray-obj\" title=\"Nesne\">önceden yazılan bir metni</span> <span class=\"xray-verb\" title=\"Yüklem\">gülünçleştirerek yeniden ele alır</span>.\n\n<div class=\"xray-prompt\">Bu parçada sözü edilen anlatım tekniği aşağıdakilerden hangisidir?</div>",
+    "dogru_nedeni": "Çünkü: Başka bir metnin konusunu veya biçimini alaya alarak gülünçleştirme tekniğine parodi denir."
   },
   {
     "id": 2951,
@@ -3260,7 +3314,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Yurt dışında oynanan ilk piyesimiz Paydos ile Buzlar Çözülmeden oyunlarının yazarı Cevat Fehmi Başkut'tur."
   },
   {
     "id": 2952,
@@ -3284,7 +3339,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerin hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">komediyi trajediden ayıran özelliklerden değildir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerin hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">komediyi trajediden ayıran özelliklerden değildir?</span>",
+    "dogru_nedeni": "Çünkü: Komedi de trajedi gibi klasik tiyatroda manzum (şiir biçiminde) yazılır; manzum olma ortak özelliktir, ayırıcı değildir."
   },
   {
     "id": 2953,
@@ -3308,7 +3364,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Babacığım, Sabri Esat’ın odasından yazıyorum. Sınavlar bitti. Tam iki sertifikamı da alarak mezun oldum. Param olsa bu iyi haberi size telgraflardım. Paris’e hareket etmek için müfettişe yazdığım bir mektubun cevabını bekliyorum. Birkaç güne kadar gelir. Müsaadesiz hareket edenlere kızıyor. Yoksa hemen Paris’e giderdim. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki mektup türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Babacığım, Sabri Esat’ın odasından yazıyorum. Sınavlar bitti. Tam iki sertifikamı da alarak mezun oldum. Param olsa bu iyi haberi size telgraflardım. Paris’e hareket etmek için müfettişe yazdığım bir mektubun cevabını bekliyorum. Birkaç güne kadar gelir. Müsaadesiz hareket edenlere kızıyor. Yoksa hemen Paris’e giderdim. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki mektup türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Bir kimsenin babasına yazdığı aile içi duygu ve haberleşmeyi içeren metin özel mektuptur."
   },
   {
     "id": 2954,
@@ -3332,7 +3389,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">- - - - bloglar, üyelik sistemine sahiptir ve üyelerin yazdıkları gönderilerden meydana gelir. Bu cümlede boş bırakılan yere</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">getirilmelidir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">- - - - bloglar, üyelik sistemine sahiptir ve üyelerin yazdıkları gönderilerden meydana gelir. Bu cümlede boş bırakılan yere</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">getirilmelidir?</span>",
+    "dogru_nedeni": "Çünkü: Üyelerin ortaklaşa yazdığı ve paylaşımlarda bulunduğu internet günlüklerine topluluk blogu denir."
   },
   {
     "id": 2955,
@@ -3356,7 +3414,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>",
+    "dogru_nedeni": "Çünkü: Batı kökenli flüt sözcüğü ilk hecesinde ünlü olmadan (flüt) yazılmalıdır."
   },
   {
     "id": 2956,
@@ -3379,7 +3438,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Şart ekinden (-sa) sonra virgül konmaz; yoksa sözcüğünden sonraki virgül noktalama hatasıdır."
   },
   {
     "id": 2957,
@@ -3403,7 +3463,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">“duyulan geçmiş zamanın hikâyesi” ile çekimlenmiş bir fiil</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">“duyulan geçmiş zamanın hikâyesi” ile çekimlenmiş bir fiil</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>",
+    "dogru_nedeni": "Çünkü: Vermiştim fiili duyulan geçmiş zaman eki (-miş) ile ek fiilin hikâyesi (-ti) birleşerek oluşmuştur."
   },
   {
     "id": 2958,
@@ -3426,7 +3487,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Oraya yer bildiren işaret zamiri, kırmızı rengini bildiren niteleme sıfatı, defter ise tür adıdır (isim)."
   },
   {
     "id": 2959,
@@ -3449,7 +3511,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Sabahleyin eylemin zamanını (zaman zarfı) bildirir; fazla, biraz ve çok ise miktar (ölçü) zarfıdır."
   },
   {
     "id": 2960,
@@ -3472,7 +3535,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Türk halk edebiyatı; Anonim, Âşık ve Dinî-Tasavvufi olmak üzere üç ana kolda gelişmiştir."
   },
   {
     "id": 2961,
@@ -3496,7 +3560,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Dede Korkut Hikâyeleri ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Dede Korkut Hikâyeleri ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>",
+    "dogru_nedeni": "Çünkü: Dede Korkut Hikâyeleri 20. yüzyılda değil, 15. yüzyıl sonlarında Akkoyunlular döneminde yazıya geçirilmiştir."
   },
   {
     "id": 2962,
@@ -3519,7 +3584,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: İlyada ve Odysseia destanları Ruslara değil, Eski Yunan edebiyatına (Homeros) aittir."
   },
   {
     "id": 2963,
@@ -3542,7 +3608,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Otuz kuşun (Sîmurg) Kaf Dağı'na yaptığı tasavvufi yolculuğu anlatan mesnevi Gülşehrî'nin Mantıku't-Tayr adlı eseridir."
   },
   {
     "id": 2964,
@@ -3565,7 +3632,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Kasidelerin beyit sayısı 10-15 değil, genellikle 33 ile 99 beyit arasındadır (10-15 beyit gazele aittir)."
   },
   {
     "id": 2965,
@@ -3588,7 +3656,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Ey şûh hitabıyla seslenme (nida), bilir misin sorusuyla da soru sorma (istifham) sanatı yapılmıştır."
   },
   {
     "id": 2966,
@@ -3611,7 +3680,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Coğrafi yer adlarında ova, dağ, nehir sözcükleri büyük harfle başlar; Konya Ovası şeklinde yazılmalıdır."
   },
   {
     "id": 2967,
@@ -3635,7 +3705,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">noktalama yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">noktalama yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>",
+    "dogru_nedeni": "Çünkü: Tekrarlı bağlaçlar arasına (hem... hem) ve zarf-fiillerden sonra virgül konmaz; C seçeneğinde tırnak kullanımı ve noktalama tamdır."
   },
   {
     "id": 2968,
@@ -3659,7 +3730,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">zarf-fiil</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">zarf-fiil</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: Duyunca sözcüğündeki -ınca eki eylemin zamanını bildiren bir zarf-fiil (ulaç) ekidir."
   },
   {
     "id": 2969,
@@ -3683,7 +3755,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Yalancının evi</span> <span class=\"xray-verb\" title=\"Yüklem\">yanmış</span>, <span class=\"xray-sub\" title=\"Özne\">kimse</span> <span class=\"xray-verb\" title=\"Yüklem\">inanmamış</span>.\n\n<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdakilerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">bu cümledekiyle aynı türde bir tamlama</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Yalancının evi</span> <span class=\"xray-verb\" title=\"Yüklem\">yanmış</span>, <span class=\"xray-sub\" title=\"Özne\">kimse</span> <span class=\"xray-verb\" title=\"Yüklem\">inanmamış</span>.\n\n<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdakilerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">bu cümledekiyle aynı türde bir tamlama</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: Yalancının evi belirtili isim tamlamasıdır; C seçeneğindeki komşunun külü de belirtili isim tamlamasıdır."
   },
   {
     "id": 2970,
@@ -3706,7 +3779,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Anneannemin gül bahçesi zincirleme isim tamlamasıdır; cümlede sıfat tamlaması yer almaz."
   },
   {
     "id": 2971,
@@ -3729,7 +3803,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Bilinçaltını, rüyaları ve akıl dışı çağrışımları sanatın kaynağı sayan edebi akım sürrealizmdir (gerçeküstücülük)."
   },
   {
     "id": 2972,
@@ -3753,7 +3828,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "I. Durum hikâyelerinde serim, düğüm ve çözüm planına uyulur. II. <span class=\"xray-sub\" title=\"Özne\">Durum hikâyeleri</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">genellikle</span> <span class=\"xray-obj\" title=\"Nesne\">insan yaşamından kısa kesitler</span> <span class=\"xray-verb\" title=\"Yüklem\">sunar</span>. III. Olay hikâyelerinde kahramanlar türün el verdiği ölçüde tanıtılır. IV. Olay hikâyelerinde sonuç, okuyucunun hayal gücüne bırakılır. Olay ve durum hikâyeleri ile ilgili\n\n<span class=\"xray-sub\" title=\"Özne\">numaralanmış cümlelerden hangileri</span> <span class=\"xray-verb\" title=\"Yüklem\">doğrudur?</span>"
+    "soru_xray": "I. Durum hikâyelerinde serim, düğüm ve çözüm planına uyulur. II. <span class=\"xray-sub\" title=\"Özne\">Durum hikâyeleri</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">genellikle</span> <span class=\"xray-obj\" title=\"Nesne\">insan yaşamından kısa kesitler</span> <span class=\"xray-verb\" title=\"Yüklem\">sunar</span>. III. Olay hikâyelerinde kahramanlar türün el verdiği ölçüde tanıtılır. IV. Olay hikâyelerinde sonuç, okuyucunun hayal gücüne bırakılır. Olay ve durum hikâyeleri ile ilgili\n\n<span class=\"xray-sub\" title=\"Özne\">numaralanmış cümlelerden hangileri</span> <span class=\"xray-verb\" title=\"Yüklem\">doğrudur?</span>",
+    "dogru_nedeni": "Çünkü: Durum hikâyesi hayattan bir kesit sunar (II) ve olay hikâyesinde tipler elverdiğince tanıtılır (III) yargıları doğrudur."
   },
   {
     "id": 2973,
@@ -3777,7 +3853,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki parçaların hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">ilahi bakış açısı</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki parçaların hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">ilahi bakış açısı</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: Anlatıcı Cansu'nun aklından geçenleri ve iç dünyasını (düşünmediğini bile) bildiği için hâkim (ilahi) bakış açısıdır."
   },
   {
     "id": 2974,
@@ -3801,7 +3878,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Hecenin Beş Şairi’nden biridir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Hecenin Beş Şairi’nden biridir?</span>",
+    "dogru_nedeni": "Çünkü: Hecenin Beş Şairi (Beş Hececiler); Faruk Nafiz, Enis Behiç, Halit Fahri, Yusuf Ziya ve Orhan Seyfi'dir."
   },
   {
     "id": 2975,
@@ -3824,7 +3902,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Abdülhak Hamit'in Makber şiirinden alınan bu metin ağır, sanatlı ve Osmanlıca tamlamalarla yüklü bir dille yazılmıştır."
   },
   {
     "id": 2976,
@@ -3848,7 +3927,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">makalenin özelliklerinden değildir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">makalenin özelliklerinden değildir?</span>",
+    "dogru_nedeni": "Çünkü: Makaleler bilimsel, nesnel ve ciddi bir üslupla yazılır; samimi ve senli benli üslup deneme ve sohbete aittir."
   },
   {
     "id": 2977,
@@ -3872,7 +3952,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki eserlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Nurullah Ataç’a aittir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki eserlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Nurullah Ataç’a aittir?</span>",
+    "dogru_nedeni": "Çünkü: Dil Üzerine Söyleşiler ve Karalama Defteri deneme ve söyleşi ustası Nurullah Ataç'a aittir."
   },
   {
     "id": 2978,
@@ -3896,7 +3977,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>",
+    "dogru_nedeni": "Çünkü: Oysaki sözcüğü kalıplaşmış bir bağlaç olduğu için (SOMBAHÇEMİ kuralı gereği) bitişik yazılmalıdır."
   },
   {
     "id": 2979,
@@ -3919,7 +4001,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Özneden sonra virgül (,), açıklama öncesi iki nokta (:), örnekler bitmediği için üç nokta (...) ve soru cümlesi sonuna soru işareti (?) gelir."
   },
   {
     "id": 2980,
@@ -3943,7 +4026,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">nesne</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">nesne</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>",
+    "dogru_nedeni": "Çünkü: C seçeneğindeki varmış isim soylu bir yüklemdir; var olan ne sorusuna cevap veren bahçesi öznedir, nesne almamıştır."
   },
   {
     "id": 2981,
@@ -3967,7 +4051,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki cümlelerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">dolaylı tümleç ve yüklemden oluşmuştur?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki cümlelerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">dolaylı tümleç ve yüklemden oluşmuştur?</span>",
+    "dogru_nedeni": "Çünkü: Oturmuş (yüklem), Beyazıt Havuzu'nun kenarındaki kanepelerden birine (dolaylı tümleç / nereye?) ögelerinden oluşmuştur."
   },
   {
     "id": 2982,
@@ -3991,7 +4076,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçaların hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">diğerlerinden farklı bir bakış açısıyla yazılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçaların hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">diğerlerinden farklı bir bakış açısıyla yazılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: B seçeneği üçüncü kişi gözlemci bakış açısıyla yazılmıştır; A, C ve D seçenekleri birinci kişi (kahraman) anlatıcıdır."
   },
   {
     "id": 2983,
@@ -4014,7 +4100,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Kişinin fiziksel özellikleri (kınalı saç, buruşuk yüz, inci dişler) kelimelerle resmedilerek betimleme yapılmıştır."
   },
   {
     "id": 2984,
@@ -4038,7 +4125,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "Odada bir sükût başladı. <span class=\"xray-sub\" title=\"Özne\">Belkıs</span>, <span class=\"xray-adv\" title=\"Tümleç / Zarf\">o türlü</span> <span class=\"xray-verb\" title=\"Yüklem\">susuyordu</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">ki</span> <span class=\"xray-sub\" title=\"Özne\">Adnan</span> da <span class=\"xray-verb\" title=\"Yüklem\">sustu</span>. Bu sessizlik içinde Belkıs’ın çehresi teneffüsle buğulanmış cam gibi matlaşmış, altın göz bebekleri paslanmıştı. Ellerini yüzüne kapadı, hıçkıra hıçkıra ağlayarak çırpınan omuzlarıyla odadan çıktı. Adnan odada yalnız kalmıştı. <span class=\"xray-sub\" title=\"Özne\">Bahriye miralayı</span>, <span class=\"xray-obj\" title=\"Nesne\">ayağında sivri rugan pabuçlar</span>, <span class=\"xray-obj\" title=\"Nesne\">odaya</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">koşarak</span> <span class=\"xray-verb\" title=\"Yüklem\">girdi</span>. <span class=\"xray-sub\" title=\"Özne\">Adnan’ı</span> <span class=\"xray-verb\" title=\"Yüklem\">teselli etmek</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">telaşının içinde</span> <span class=\"xray-verb\" title=\"Yüklem\">hissizliğini kaybetmek</span> <span class=\"xray-verb\" title=\"Yüklem\">istiyordu</span>.\n\n<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Bu parçada</span> <span class=\"xray-sub\" title=\"Özne\">romanın aşağıdaki unsurlarından hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>"
+    "soru_xray": "Odada bir sükût başladı. <span class=\"xray-sub\" title=\"Özne\">Belkıs</span>, <span class=\"xray-adv\" title=\"Tümleç / Zarf\">o türlü</span> <span class=\"xray-verb\" title=\"Yüklem\">susuyordu</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">ki</span> <span class=\"xray-sub\" title=\"Özne\">Adnan</span> da <span class=\"xray-verb\" title=\"Yüklem\">sustu</span>. Bu sessizlik içinde Belkıs’ın çehresi teneffüsle buğulanmış cam gibi matlaşmış, altın göz bebekleri paslanmıştı. Ellerini yüzüne kapadı, hıçkıra hıçkıra ağlayarak çırpınan omuzlarıyla odadan çıktı. Adnan odada yalnız kalmıştı. <span class=\"xray-sub\" title=\"Özne\">Bahriye miralayı</span>, <span class=\"xray-obj\" title=\"Nesne\">ayağında sivri rugan pabuçlar</span>, <span class=\"xray-obj\" title=\"Nesne\">odaya</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">koşarak</span> <span class=\"xray-verb\" title=\"Yüklem\">girdi</span>. <span class=\"xray-sub\" title=\"Özne\">Adnan’ı</span> <span class=\"xray-verb\" title=\"Yüklem\">teselli etmek</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">telaşının içinde</span> <span class=\"xray-verb\" title=\"Yüklem\">hissizliğini kaybetmek</span> <span class=\"xray-verb\" title=\"Yüklem\">istiyordu</span>.\n\n<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Bu parçada</span> <span class=\"xray-sub\" title=\"Özne\">romanın aşağıdaki unsurlarından hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>",
+    "dogru_nedeni": "Çünkü: Metinde Belkıs ve Adnan'ın odada yaşadığı olay anlatılmış ancak olayın hangi zaman diliminde geçtiği belirtilmemiştir."
   },
   {
     "id": 2985,
@@ -4061,7 +4149,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Cumhuriyet tiyatrosunun kurumsallaşması ve modernleşmesinde Şehir Tiyatroları yöneticisi Muhsin Ertuğrul öncüdür."
   },
   {
     "id": 2986,
@@ -4085,7 +4174,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Cumhuriyet Dönemi Türk tiyatrosu ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Cumhuriyet Dönemi Türk tiyatrosu ile ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>",
+    "dogru_nedeni": "Çünkü: Türkiye'de ilk özel tiyatroyu Haldun Taner değil, 1955'te Küçük Sahne ile Muhsin Ertuğrul ve Dormen Tiyatrosu kurmuştur."
   },
   {
     "id": 2987,
@@ -4109,7 +4199,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Bugüne kadar okuduğum en mükemmel Türk romanıdır Ortadirek. Hiçbir romanımızda, belirli şartlar içinde yaşayan, belirli bir tarihsel ve sosyal zamanın, “Türk insanı”nın böylesine somut, böylesine derinliğine; tabiatın böylesine zengin, canlı, kıpır kıpır verildiğini hatırlamıyorum. Değişik olaylar ve kişiler karşısındaki tepkileriyle ve ana-oğul, gelin-kaynana, karı-koca ilişkileri içinde durmadan netleşen, ayrıntılarla beslenip ete kemiğe bürünerek ortaya çıkan üç insan, ilkel tarımsal üretim düzeyindeki Türk köylüsünü unutulmayacak bir biçimde somutlaştırmaktadır. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki eleştiri türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Bugüne kadar okuduğum en mükemmel Türk romanıdır Ortadirek. Hiçbir romanımızda, belirli şartlar içinde yaşayan, belirli bir tarihsel ve sosyal zamanın, “Türk insanı”nın böylesine somut, böylesine derinliğine; tabiatın böylesine zengin, canlı, kıpır kıpır verildiğini hatırlamıyorum. Değişik olaylar ve kişiler karşısındaki tepkileriyle ve ana-oğul, gelin-kaynana, karı-koca ilişkileri içinde durmadan netleşen, ayrıntılarla beslenip ete kemiğe bürünerek ortaya çıkan üç insan, ilkel tarımsal üretim düzeyindeki Türk köylüsünü unutulmayacak bir biçimde somutlaştırmaktadır. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki eleştiri türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Eleştirmen yazarın kişiliğini değil, doğrudan Yaşar Kemal'in Ortadirek romanının karakterlerini ve anlatım gücünü incelemiştir."
   },
   {
     "id": 2988,
@@ -4132,7 +4223,8 @@
     "sinav_soru_sayisi": 11,
     "puan": 0.45,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Yakup Kadri roman ve hikâyeleriyle tanınır; mülakat/röportaj türünde tanınmış bir eseri bulunmaz."
   },
   {
     "id": 2989,
@@ -4156,7 +4248,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>",
+    "dogru_nedeni": "Çünkü: A seçeneğinde yazım tamdır; birçok bitişik, güzel mi ayrı, İstanbul ili küçük harfle yazılmalıdır."
   },
   {
     "id": 2990,
@@ -4180,7 +4273,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">• Anıtkabir’i öğrencilerimizin tamamıyla ziyaret etmeliyiz, dedi. • Kırmızıya, maviye ve yeşile olan tutkusu resimlerinde kendini gösteriyordu. • Unuttuk, yaşadığımız onca şeyi unuttuk. Bu cümlelerde</span> <span class=\"xray-sub\" title=\"Özne\">virgülün aşağıdaki işlevlerinden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">• Anıtkabir’i öğrencilerimizin tamamıyla ziyaret etmeliyiz, dedi. • Kırmızıya, maviye ve yeşile olan tutkusu resimlerinde kendini gösteriyordu. • Unuttuk, yaşadığımız onca şeyi unuttuk. Bu cümlelerde</span> <span class=\"xray-sub\" title=\"Özne\">virgülün aşağıdaki işlevlerinden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yoktur?</span>",
+    "dogru_nedeni": "Çünkü: Metinlerde alıntı, eş görevli sözcükler ve sıralı cümleler vardır; tekrarlanan sözcükler arasına konan virgül işlevi yoktur."
   },
   {
     "id": 2991,
@@ -4204,7 +4298,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">anlatım bozukluğu</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">anlatım bozukluğu</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>",
+    "dogru_nedeni": "Çünkü: Neşeli ve şen eş anlamlı sözcüklerdir; ikisinin aynı cümlede kullanılması gereksiz sözcükten doğan anlatım bozukluğudur."
   },
   {
     "id": 2992,
@@ -4228,7 +4323,8 @@
     "puan": 0.45,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">özne-yüklem uyumsuzluğundan kaynaklanan bir anlatım bozukluğu</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">özne-yüklem uyumsuzluğundan kaynaklanan bir anlatım bozukluğu</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>",
+    "dogru_nedeni": "Çünkü: Cansız ve soyut varlıklar (bu tür duygular) çoğul özne olduğunda yüklem tekil olmalıdır (etkiler olmalı, etkilerler değil)."
   },
   {
     "id": 3377,
@@ -4252,7 +4348,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">• Dünya edebiyatındaki ilk başarılı örneği Miquel de Cervantes’in yazdığı “Don Kişot”tur. • Tanzimat Dönemi’nde teknik açıdan modern ve sağlam bir yapıya kavuşmuştur. • Millî Edebiyat Dönemi’nde sosyal ve millî konulara eğilim söz konusudur. Bu cümleler “roman türünün Türk ve dünya edebiyatındaki gelişimi” ile ilgili doğru (D)-yanlış (Y) olarak değerlendirildiğinde sıralama</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">olur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">• Dünya edebiyatındaki ilk başarılı örneği Miquel de Cervantes’in yazdığı “Don Kişot”tur. • Tanzimat Dönemi’nde teknik açıdan modern ve sağlam bir yapıya kavuşmuştur. • Millî Edebiyat Dönemi’nde sosyal ve millî konulara eğilim söz konusudur. Bu cümleler “roman türünün Türk ve dünya edebiyatındaki gelişimi” ile ilgili doğru (D)-yanlış (Y) olarak değerlendirildiğinde sıralama</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">olur?</span>",
+    "dogru_nedeni": "Çünkü: Türk romanı teknik açıdan Tanzimat'ta kusurludur (Y), asıl modern ve kusursuz teknik yapıya Servet-i Fünun'da kavuşmuştur."
   },
   {
     "id": 3378,
@@ -4276,7 +4373,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçalardan hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">kahraman bakış açısıyla yazılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçalardan hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">kahraman bakış açısıyla yazılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: B seçeneğinde anlatıcı kendi eylemlerini bekliyorum, uyuyuvereceğim şeklinde birinci kişi (ben) ağzıyla aktarmıştır."
   },
   {
     "id": 3379,
@@ -4300,7 +4398,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Müdafaa-yı Millîye’den heyecanla çıktım. Ankara İstasyonu’ndan gece dokuzda hareket ettim. Kompartımanda benimle beraber bir zabit vekili, üç muvazzaf zabit vardı. Tren, askere cephane götürüyordu. Ömrümde bu kadar sessiz, bu kadar havası kavi bir asker kitlesi içinde seyahat etmemiştim. Herkeste sonuna kadar yürümeye karar vermişlerin hâli vardı. Bu parça</span> <span class=\"xray-sub\" title=\"Özne\">için aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Müdafaa-yı Millîye’den heyecanla çıktım. Ankara İstasyonu’ndan gece dokuzda hareket ettim. Kompartımanda benimle beraber bir zabit vekili, üç muvazzaf zabit vardı. Tren, askere cephane götürüyordu. Ömrümde bu kadar sessiz, bu kadar havası kavi bir asker kitlesi içinde seyahat etmemiştim. Herkeste sonuna kadar yürümeye karar vermişlerin hâli vardı. Bu parça</span> <span class=\"xray-sub\" title=\"Özne\">için aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>",
+    "dogru_nedeni": "Çünkü: Metin üçüncü kişi gözlemciyle değil, çıktım, hareket ettim diyen kahraman (birinci kişi) anlatıcıyla yazılmıştır."
   },
   {
     "id": 3380,
@@ -4323,7 +4422,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Batı tarzındaki ilk Türk tiyatrosu Şinasi'nin Molière etkisindeki komedisi Şair Evlenmesi'dir."
   },
   {
     "id": 3381,
@@ -4346,7 +4446,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Hacivat'ın semai eşliğinde perdeye geldiği ve perde gazelini okuduğu Karagöz bölümü mukaddimedir (giriş)."
   },
   {
     "id": 3382,
@@ -4370,7 +4471,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki eserlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">anı (hatıra) türünde yazılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki eserlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">anı (hatıra) türünde yazılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: Yılanlı Kuyudan, Necip Fazıl Kısakürek'in hapishane anılarını anlattığı hatıra (anı) türündeki eseridir."
   },
   {
     "id": 3383,
@@ -4394,7 +4496,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">haber yazılarının özelliklerinden biridir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">haber yazılarının özelliklerinden biridir?</span>",
+    "dogru_nedeni": "Çünkü: Haber yazıları toplumu bilgilendirmek için 5N1K gibi belirli tekniklerle nesnel olarak yazılan öğretici metinlerdir."
   },
   {
     "id": 3384,
@@ -4418,7 +4521,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Çok dönemeçli yol çam ormanları arasından gitgide yükseliyor. Güzel bir göçmen köyü olan Erenköy’e geliyoruz. Eski Rumeli göçmenleri bunlar. Sonra Hisarlık’a varıyoruz. Geldik! Üstünde bulunduğumuz tepe, kazılardan çıkan topraklarla meydana gelmiş bir tümsektir. Karşımızda kocaman taşlardan bir sur görülüyor. Arkasında otlara, çalılıklara karışmış başka surlar, başka taş yığıntılar, inişli çıkışlı karmaşık bir manzara… İşte Troya harabeleri! Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Çok dönemeçli yol çam ormanları arasından gitgide yükseliyor. Güzel bir göçmen köyü olan Erenköy’e geliyoruz. Eski Rumeli göçmenleri bunlar. Sonra Hisarlık’a varıyoruz. Geldik! Üstünde bulunduğumuz tepe, kazılardan çıkan topraklarla meydana gelmiş bir tümsektir. Karşımızda kocaman taşlardan bir sur görülüyor. Arkasında otlara, çalılıklara karışmış başka surlar, başka taş yığıntılar, inişli çıkışlı karmaşık bir manzara… İşte Troya harabeleri! Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Yazar Erenköy, Hisarlık ve Troya harabelerine yaptığı yolculuğu izlenimleriyle anlatan bir gezi yazısı yazmıştır."
   },
   {
     "id": 3385,
@@ -4441,7 +4545,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Cennette bulunma hali bildirildiği için dahi anlamındaki bağlaç değil, bulunma durum eki (-de) bitişik (Cennette) yazılmalıdır."
   },
   {
     "id": 3386,
@@ -4465,7 +4570,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Göçebeliğin hafıza kaybıyla ilişkisi</span> <span class=\"xray-verb\" title=\"Yüklem\">var mı</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">( )</span> <span class=\"xray-verb\" title=\"Yüklem\">diye soruyorum kendime</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">( )</span> <span class=\"xray-sub\" title=\"Özne\">Yolu</span> <span class=\"xray-verb\" title=\"Yüklem\">toprak örtüyor</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">( )</span> <span class=\"xray-sub\" title=\"Özne\">toprağı</span> <span class=\"xray-verb\" title=\"Yüklem\">da güneş</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">( )</span>\n\n<div class=\"xray-prompt\">Bu parçada yay ayraçla gösterilen yerlere sırasıyla gelmesi gereken noktalama işaretleri aşağıdakilerin hangisinde verilmiştir?</div>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Göçebeliğin hafıza kaybıyla ilişkisi</span> <span class=\"xray-verb\" title=\"Yüklem\">var mı</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">( )</span> <span class=\"xray-verb\" title=\"Yüklem\">diye soruyorum kendime</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">( )</span> <span class=\"xray-sub\" title=\"Özne\">Yolu</span> <span class=\"xray-verb\" title=\"Yüklem\">toprak örtüyor</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">( )</span> <span class=\"xray-sub\" title=\"Özne\">toprağı</span> <span class=\"xray-verb\" title=\"Yüklem\">da güneş</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">( )</span>\n\n<div class=\"xray-prompt\">Bu parçada yay ayraçla gösterilen yerlere sırasıyla gelmesi gereken noktalama işaretleri aşağıdakilerin hangisinde verilmiştir?</div>",
+    "dogru_nedeni": "Çünkü: Alıntı cümleden sonra virgül (,), cümle sonuna nokta (.), sıralı cümle arasına virgül (,), sonuna nokta (.) gelir."
   },
   {
     "id": 3387,
@@ -4488,7 +4594,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: 2. Dünya Savaşı Türkiye'nin doğrudan girdiği veya Türk dilinin gramer yapısını kökten değiştiren bir olay değildir."
   },
   {
     "id": 3388,
@@ -4512,7 +4619,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "Ayağa fırlayıp odanın içinde gezinmeye başladı. Ne yaptığını bilmeden zangır zangır titreyen elleriyle kapının anahtarını çevirdi. <span class=\"xray-sub\" title=\"Özne\">Kapıyı</span> <span class=\"xray-verb\" title=\"Yüklem\">ardına kadar açtı</span>. Koridorun ortasında kara saçları alnına dökülmüş, beyaz önlüklü bir adam duruyordu. Soğuk havanın yüzüne çarpmasıyla kendine gelen Ömer, ona korkuyla baktı. Kısa boylu adam çatlak sesiyle “Merhaba Ömer ağabey!” dedi.\n\n<div class=\"xray-prompt\">Bu parçada hikâyenin yapı unsurlarından hangisine yer verilmemiştir?</div>"
+    "soru_xray": "Ayağa fırlayıp odanın içinde gezinmeye başladı. Ne yaptığını bilmeden zangır zangır titreyen elleriyle kapının anahtarını çevirdi. <span class=\"xray-sub\" title=\"Özne\">Kapıyı</span> <span class=\"xray-verb\" title=\"Yüklem\">ardına kadar açtı</span>. Koridorun ortasında kara saçları alnına dökülmüş, beyaz önlüklü bir adam duruyordu. Soğuk havanın yüzüne çarpmasıyla kendine gelen Ömer, ona korkuyla baktı. Kısa boylu adam çatlak sesiyle “Merhaba Ömer ağabey!” dedi.\n\n<div class=\"xray-prompt\">Bu parçada hikâyenin yapı unsurlarından hangisine yer verilmemiştir?</div>",
+    "dogru_nedeni": "Çünkü: Metinde fırlama eylemi (olay), oda ve koridor (mekân), Ömer ile beyaz önlüklü adam (kişiler) vardır; olayın zamanı belirtilmemiştir."
   },
   {
     "id": 3389,
@@ -4536,7 +4644,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">1980 sonrası Türk hikâyeciliğiyle ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yanlıştır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">1980 sonrası Türk hikâyeciliğiyle ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">yanlıştır?</span>",
+    "dogru_nedeni": "Çünkü: Peyami Safa, Sabahattin Ali ve Sadri Ertem 1980 sonrası değil, Cumhuriyet'in ilk ve orta dönem (1930-1950) yazarlarıdır."
   },
   {
     "id": 3390,
@@ -4559,7 +4668,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Şen (neşeli) ve hazin (hüzünlü) karşıt kavramları bir arada kullanılarak tezat (karşıtlık) sanatı yapılmıştır."
   },
   {
     "id": 3391,
@@ -4583,7 +4693,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">• Serbest nazımla yazmışlardır. • Gelecekçilik (fütürizm) akımından etkilenmişlerdir. • İçerikten çok biçime önem vermişlerdir. Bu cümleler “toplumcu gerçekçi şairler” ile ilgili doğru (D)-yanlış (Y) olarak değerlendirildiğinde sıralama</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">olur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">• Serbest nazımla yazmışlardır. • Gelecekçilik (fütürizm) akımından etkilenmişlerdir. • İçerikten çok biçime önem vermişlerdir. Bu cümleler “toplumcu gerçekçi şairler” ile ilgili doğru (D)-yanlış (Y) olarak değerlendirildiğinde sıralama</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">olur?</span>",
+    "dogru_nedeni": "Çünkü: Toplumcu gerçekçi şairler biçimden çok içeriğe, ideolojiye ve halkın sorunlarına önem vermişlerdir (3. yargı yanlıştır)."
   },
   {
     "id": 3392,
@@ -4606,7 +4717,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Şiir ölçü ve kafiyeden bağımsız serbest nazımla yazılmıştır; ahenk ölçüyle değil sözcük tekrarlarıyla sağlanmıştır."
   },
   {
     "id": 3393,
@@ -4630,7 +4742,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">yazım yanlışı</span> <span class=\"xray-verb\" title=\"Yüklem\">vardır?</span>",
+    "dogru_nedeni": "Çünkü: Zaman bildiren bu ayki sözündeki -ki sıfat yapan ektir ve bitişik (bu ayki) yazılmalıdır."
   },
   {
     "id": 3394,
@@ -4654,7 +4767,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Beethoven’dan beri en güzel senfoniyi ve onca operayı bestelemiş biri için Mozart’ın bir konçertosunu seslendirmek pek önemsiz bir şey, bir eğlenceydi. Bu cümlede virgül (,)</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki işlevlerinden hangisiyle</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Beethoven’dan beri en güzel senfoniyi ve onca operayı bestelemiş biri için Mozart’ın bir konçertosunu seslendirmek pek önemsiz bir şey, bir eğlenceydi. Bu cümlede virgül (,)</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki işlevlerinden hangisiyle</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: Virgül pek önemsiz bir şey ile bir eğlenceydi şeklindeki iki sıralı cümleyi (yargıyı) birbirinden ayırmıştır."
   },
   {
     "id": 3395,
@@ -4678,7 +4792,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">“hava” sözcüğü “içinde yaşanılan ve etkisinde kalınan ortam” anlamında</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Aşağıdaki cümlelerin hangisinde</span> <span class=\"xray-sub\" title=\"Özne\">“hava” sözcüğü “içinde yaşanılan ve etkisinde kalınan ortam” anlamında</span> <span class=\"xray-verb\" title=\"Yüklem\">kullanılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: Zafer havası sözü rüzgâr/iklim değil, ordunun içinde bulunduğu manevi ve psikolojik ortamı ifade eder."
   },
   {
     "id": 3396,
@@ -4701,7 +4816,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Kuş sözcüğünün yalnızca tek bir temel anlamı vardır; yol, dal ve gül gibi farklı anlamlara gelen sesteşi (eş seslisi) yoktur."
   },
   {
     "id": 3397,
@@ -4725,7 +4841,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">• Eserlerinde realist bakış açısını esas almışlardır. • Almanya’ya göç eden Türklerin karşılaştıkları sorunları anlatmışlardır. • Metinler arasılık ve üstkurmaca gibi birtakım yeni anlatım tekniklerini kullanmışlardır. Bu cümleler “millî edebiyat zevk ve anlayışını sürdüren romancılar” ile ilgili doğru (D)-yanlış (Y) olarak değerlendirildiğinde sıralama</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">olur?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">• Eserlerinde realist bakış açısını esas almışlardır. • Almanya’ya göç eden Türklerin karşılaştıkları sorunları anlatmışlardır. • Metinler arasılık ve üstkurmaca gibi birtakım yeni anlatım tekniklerini kullanmışlardır. Bu cümleler “millî edebiyat zevk ve anlayışını sürdüren romancılar” ile ilgili doğru (D)-yanlış (Y) olarak değerlendirildiğinde sıralama</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">olur?</span>",
+    "dogru_nedeni": "Çünkü: Millî Edebiyat anlayışını sürdürenler gerçekçidir (D); Almanya göçü toplumculara, üstkurmaca ise postmodernistlere aittir (Y-Y)."
   },
   {
     "id": 3398,
@@ -4749,7 +4866,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçalardan hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">kahraman bakış açısıyla yazılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçalardan hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">kahraman bakış açısıyla yazılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: B seçeneğindeki metin hissetmiştim, istiyordum şeklinde birinci kişi (kahraman anlatıcı) ağzıyla yazılmıştır."
   },
   {
     "id": 3399,
@@ -4773,7 +4891,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki eserlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Oğuz Atay’a ait değildir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki eserlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Oğuz Atay’a ait değildir?</span>",
+    "dogru_nedeni": "Çünkü: Gün Olur Asra Bedel Kırgız yazar Cengiz Aytmatov'a aittir; diğerleri Oğuz Atay'ın eserleridir."
   },
   {
     "id": 3400,
@@ -4796,7 +4915,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Edebiyatımızda ilk epik tiyatro örneği sayılan Keşanlı Ali Destanı Haldun Taner'e aittir."
   },
   {
     "id": 3401,
@@ -4820,7 +4940,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">(Eski Konya’da küçük bir meydan. Bu meydana, dikey olarak iki sokak inmektedir. Sokağın birincisinden Mevlana, ikincisinden Tebrizli Şems meydana doğru yürümektedir. İkisi de kendi kendilerine konuşur.) MEVLANA : Ben bir boşluktayım. ŞEMS : Ben birini arıyorum. MEVLANA : Biliyorum, beni bu boşluktan kurtaracak biri gelecek. Kimdir o? ŞEMS : E vet, ben birini arıyorum. Ama önce ben kimim? Niçin geldim ta buralara? MEVLANA : Bir yol gösterici mi, bir gönül yoldaşı mı? Bu parçayla ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">(Eski Konya’da küçük bir meydan. Bu meydana, dikey olarak iki sokak inmektedir. Sokağın birincisinden Mevlana, ikincisinden Tebrizli Şems meydana doğru yürümektedir. İkisi de kendi kendilerine konuşur.) MEVLANA : Ben bir boşluktayım. ŞEMS : Ben birini arıyorum. MEVLANA : Biliyorum, beni bu boşluktan kurtaracak biri gelecek. Kimdir o? ŞEMS : E vet, ben birini arıyorum. Ama önce ben kimim? Niçin geldim ta buralara? MEVLANA : Bir yol gösterici mi, bir gönül yoldaşı mı? Bu parçayla ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>",
+    "dogru_nedeni": "Çünkü: Metindeki yay ayraç içinde mekan ve yürüme durumu verilmiş; el-kol hareketi (jest) veya yüz ifadesi (mimik) belirtilmemiştir."
   },
   {
     "id": 3402,
@@ -4844,7 +4965,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Çok defa başıma gelmiştir. Oyun olsun diye kendi düşüncemin tam tersini savunayım derken kafam o tarafa öylesine kendini vermiş, bağlanmıştır ki kendi düşüncemi yersiz bulmaya başlayıp bırakmışımdır. Hangi düşünceye biraz meyletsem o yöne sürükleniveriyorum. Kendi içine bakan herkes de bunları söyler aşağı yukarı. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Çok defa başıma gelmiştir. Oyun olsun diye kendi düşüncemin tam tersini savunayım derken kafam o tarafa öylesine kendini vermiş, bağlanmıştır ki kendi düşüncemi yersiz bulmaya başlayıp bırakmışımdır. Hangi düşünceye biraz meyletsem o yöne sürükleniveriyorum. Kendi içine bakan herkes de bunları söyler aşağı yukarı. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Yazar kendi düşünce dünyasını ve fikir değişikliklerini samimi bir dille, kanıtlama amacı gütmeden deneme türünde aktarmıştır."
   },
   {
     "id": 3403,
@@ -4867,7 +4989,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Türk edebiyatında ilk hatip Orhun Yazıtları ile Bilge Kağan, Latin edebiyatında ise ünlü hatip Çiçero'dur."
   },
   {
     "id": 3404,
@@ -4890,7 +5013,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Birdenbire sözcüğü kalıplaşmış bir zarf olup bitişik (birdenbire) yazılmalıdır."
   },
   {
     "id": 3405,
@@ -4914,7 +5038,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "İnsanları sevmek lazım geldiğini, insanları sevince tabiatın sevileceğini, tabiatı sevince de yaşama sevinci duyulacağını bana kitaplar öğretmiştir. Hayır, ben artık insanları kitapların öğrettiği şekilde sevmiyorum. <span class=\"xray-verb\" title=\"Yüklem\">Sevmek istiyorum</span>, <span class=\"xray-verb\" title=\"Yüklem\">sevemiyorum</span>.\n\n<div class=\"xray-prompt\">Bu parçada virgülün (,) aşağıdaki işlevlerinden hangisinin kullanımı yoktur?</div>"
+    "soru_xray": "İnsanları sevmek lazım geldiğini, insanları sevince tabiatın sevileceğini, tabiatı sevince de yaşama sevinci duyulacağını bana kitaplar öğretmiştir. Hayır, ben artık insanları kitapların öğrettiği şekilde sevmiyorum. <span class=\"xray-verb\" title=\"Yüklem\">Sevmek istiyorum</span>, <span class=\"xray-verb\" title=\"Yüklem\">sevemiyorum</span>.\n\n<div class=\"xray-prompt\">Bu parçada virgülün (,) aşağıdaki işlevlerinden hangisinin kullanımı yoktur?</div>",
+    "dogru_nedeni": "Çünkü: Parçada eş görevli sözcükler, ret/onay (Hayır,) ve sıralı cümleler arasına virgül konmuştur; yüklemden uzak düşen özne için virgül kullanılmamıştır."
   },
   {
     "id": 3406,
@@ -4937,7 +5062,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Metnin ana fikri mühim olan sunuştur yani üsluptur cümlesinde belirtildiği gibi konunun değil, anlatış tarzının önemli olduğudur."
   },
   {
     "id": 3917,
@@ -4961,7 +5087,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Bir deniz kenarında mehtabı seyrediyorum. Dünya, kabuğuna çekilmiş bir salyangoz gibi duruyor ayaklarımın ucunda. Diz kırıp oturuyorum uçsuz bucaksız sahilin koynuna. Dilimde, buruşmuş sözlerin esrikliği, dalgaların dilinden suyun öyküsünü dinliyorum. Bu metinle ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Bir deniz kenarında mehtabı seyrediyorum. Dünya, kabuğuna çekilmiş bir salyangoz gibi duruyor ayaklarımın ucunda. Diz kırıp oturuyorum uçsuz bucaksız sahilin koynuna. Dilimde, buruşmuş sözlerin esrikliği, dalgaların dilinden suyun öyküsünü dinliyorum. Bu metinle ilgili</span> <span class=\"xray-sub\" title=\"Özne\">aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">söylenemez?</span>",
+    "dogru_nedeni": "Çünkü: Metin edebi ve şiirsel bir dille duyguları sezdirmek için yazılmıştır; okura nesnel bilgi verme amacı taşımaz."
   },
   {
     "id": 3918,
@@ -4984,7 +5111,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Şiirde yalnızlık duygusu coşkulu, içsel ve hüzünlü bir duygu tonuyla (lirik) işlenmiştir."
   },
   {
     "id": 3919,
@@ -5008,7 +5136,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Yazı, ölümü ortadan kaldıramayan insanoğlunun ölüme karşı bulabildiği tek çaredir. Çağlardan çağlara, ellerden ellere geçe geçe bütün tarihi aşıp gelir. Onda, insan hayatının her yaprağı üstünde gezen gözlerin ışıkları, düşünen kafaların gölgeleri bulunur. Yazı, sönüp gitmiş bir varlığın fotoğrafı gibidir. Ama donup kalmış, sessiz bir fotoğraf değil; konuşan, düşündüklerini anlatan, canlı ve sesli bir sinemadır. Onun içindir ki yazı, birçok olmazlıkları olur yapmıştır. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Yazı, ölümü ortadan kaldıramayan insanoğlunun ölüme karşı bulabildiği tek çaredir. Çağlardan çağlara, ellerden ellere geçe geçe bütün tarihi aşıp gelir. Onda, insan hayatının her yaprağı üstünde gezen gözlerin ışıkları, düşünen kafaların gölgeleri bulunur. Yazı, sönüp gitmiş bir varlığın fotoğrafı gibidir. Ama donup kalmış, sessiz bir fotoğraf değil; konuşan, düşündüklerini anlatan, canlı ve sesli bir sinemadır. Onun içindir ki yazı, birçok olmazlıkları olur yapmıştır. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Yazar yazının kalıcılığı ve insan hayatındaki yeri hakkındaki kişisel görüşlerini samimi bir deneme üslubuyla anlatmıştır."
   },
   {
     "id": 3920,
@@ -5032,7 +5161,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki metinlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">bilgi vermek amacıyla yazılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki metinlerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">bilgi vermek amacıyla yazılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: C seçeneğinde gölge boyunun Güneş'in konumuna göre değişimi bilimsel ve nesnel olarak açıklanmıştır."
   },
   {
     "id": 3921,
@@ -5055,7 +5185,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Bir kimseye nezaket göstermek, hal hatır sormak veya selam vermek amacıyla başla yapılan hareket selam almaktır."
   },
   {
     "id": 3922,
@@ -5078,7 +5209,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: A seçeneğinde arkadaşının kalbini kırmamak ve ilişkiyi korumak için beğenmediği kıyafete güzel demek tam bir beyaz yalan örneğidir."
   },
   {
     "id": 3923,
@@ -5101,7 +5233,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Metinde el ile göz duyuları algılama gücü ve kesinlik bakımından birbirleriyle kıyaslanmış (karşılaştırma) tır."
   },
   {
     "id": 3924,
@@ -5125,7 +5258,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Hiç</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">de</span> <span class=\"xray-sub\" title=\"Özne\">böyle büyük şeyler</span> <span class=\"xray-verb\" title=\"Yüklem\">düşündüğü</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">I yoktu</span> <span class=\"xray-verb\" title=\"Yüklem\">hâlbuki</span>. <span class=\"xray-sub\" title=\"Özne\">O</span>, <span class=\"xray-obj\" title=\"Nesne\">Beşiktaş’ın arka II mahallelerinden birinde bıraktığı minimini bir şeyi</span>, <span class=\"xray-obj\" title=\"Nesne\">onbeş gün evvel</span>, <span class=\"xray-obj\" title=\"Nesne\">bu III son sefere çıkacakları gün doğan oğlunu</span> <span class=\"xray-verb\" title=\"Yüklem\">düşünüyordu</span>. IV\n\n<div class=\"xray-prompt\">Bu parçada numaralanmış sözlerden hangisinin yazımı yanlıştır?</div>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Hiç</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">de</span> <span class=\"xray-sub\" title=\"Özne\">böyle büyük şeyler</span> <span class=\"xray-verb\" title=\"Yüklem\">düşündüğü</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">I yoktu</span> <span class=\"xray-verb\" title=\"Yüklem\">hâlbuki</span>. <span class=\"xray-sub\" title=\"Özne\">O</span>, <span class=\"xray-obj\" title=\"Nesne\">Beşiktaş’ın arka II mahallelerinden birinde bıraktığı minimini bir şeyi</span>, <span class=\"xray-obj\" title=\"Nesne\">onbeş gün evvel</span>, <span class=\"xray-obj\" title=\"Nesne\">bu III son sefere çıkacakları gün doğan oğlunu</span> <span class=\"xray-verb\" title=\"Yüklem\">düşünüyordu</span>. IV\n\n<div class=\"xray-prompt\">Bu parçada numaralanmış sözlerden hangisinin yazımı yanlıştır?</div>",
+    "dogru_nedeni": "Çünkü: Sayılar metin içerisinde (para tutarları ve saatler hariç) ayrı yazılır; on beş şeklinde yazılmalıdır."
   },
   {
     "id": 3925,
@@ -5148,7 +5282,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: III. cümlenin yüklemi bulunmadığından eksiltilidir ve sonuna üç nokta (…) konmalıdır; diğerlerinin sonuna nokta gelir."
   },
   {
     "id": 3926,
@@ -5171,7 +5306,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Kara Memiş ölümü göze alıp bayrak ve vatan için savaşa gitmek istemektedir; metinden kararlı, heyecanlı ve vatansever olduğu anlaşılır ama iyimserlik vurgulanmamıştır."
   },
   {
     "id": 4337,
@@ -5195,7 +5331,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Osmanzade Taib</span>, <span class=\"xray-adv\" title=\"Tümleç / Zarf\">zamanının ozanlarını sayarken</span> <span class=\"xray-obj\" title=\"Nesne\">Nedim’in adını</span> <span class=\"xray-verb\" title=\"Yüklem\">anmadı da ne oldu</span>! Kendisi, zamanına demir attı, Nedim’se günümüze dek geldi. Bugün Osmanzade Taib’in adı binde bir anılıyor, o da “şiir körü” olarak. Şu da var ki Nedim’e karşı o suçu işlemeseydi bugün hiç anılmazdı. Altı çizili sözün <div class=\"xray-prompt\">bu metinde kazandığı anlam aşağıdakilerden hangisidir?</div>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Osmanzade Taib</span>, <span class=\"xray-adv\" title=\"Tümleç / Zarf\">zamanının ozanlarını sayarken</span> <span class=\"xray-obj\" title=\"Nesne\">Nedim’in adını</span> <span class=\"xray-verb\" title=\"Yüklem\">anmadı da ne oldu</span>! Kendisi, zamanına demir attı, Nedim’se günümüze dek geldi. Bugün Osmanzade Taib’in adı binde bir anılıyor, o da “şiir körü” olarak. Şu da var ki Nedim’e karşı o suçu işlemeseydi bugün hiç anılmazdı. Altı çizili sözün <div class=\"xray-prompt\">bu metinde kazandığı anlam aşağıdakilerden hangisidir?</div>",
+    "dogru_nedeni": "Çünkü: Zamanına demir atmak sözü, geminin bir yere bağlanıp kalması gibi kendi yaşadığı dönemi aşamamak, çağlar sonrasına ulaşamamak demektir."
   },
   {
     "id": 4338,
@@ -5218,7 +5355,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Seher vaktinin kayaların başına pembe güllerden çelenk işlemesi insan dışı bir varlığa insani eylem verilerek yapılmış teşhistir (kişileştirme)."
   },
   {
     "id": 4339,
@@ -5241,7 +5379,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Dizedeki kelimelerin kökünde sadece tek ses (-r) benzerliği (yarım uyak) vardır; üç veya daha fazla ses benzerliğine dayanan zengin uyak yoktur."
   },
   {
     "id": 4340,
@@ -5265,7 +5404,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Toprak</span> <span class=\"xray-verb\" title=\"Yüklem\">güzel rengini kaybetti</span>. <span class=\"xray-sub\" title=\"Özne\">Yeşillikler</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">bir anda</span> <span class=\"xray-verb\" title=\"Yüklem\">sarardı</span>. <span class=\"xray-sub\" title=\"Özne\">Gürbüz ağaçlar</span> <span class=\"xray-verb\" title=\"Yüklem\">kupkuru bir iskelet hâline geldi</span>. <span class=\"xray-sub\" title=\"Özne\">İri boylu otlar</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">cüceleşti</span>, <span class=\"xray-verb\" title=\"Yüklem\">cılızlaştı</span>. Nihayet kayboldu. O nazlı, güzel çiçek denizi kurudu, şimdi ortada sonsuz bir çöl var. Sanki dünyanın vahşi sürüleri ayaklarıyla, dişleriyle, tırnaklarıyla burayı eştiler.\n\n<div class=\"xray-prompt\">Bu parçada ağır basan anlatım biçimi aşağıdakilerden hangisidir?</div>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Toprak</span> <span class=\"xray-verb\" title=\"Yüklem\">güzel rengini kaybetti</span>. <span class=\"xray-sub\" title=\"Özne\">Yeşillikler</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">bir anda</span> <span class=\"xray-verb\" title=\"Yüklem\">sarardı</span>. <span class=\"xray-sub\" title=\"Özne\">Gürbüz ağaçlar</span> <span class=\"xray-verb\" title=\"Yüklem\">kupkuru bir iskelet hâline geldi</span>. <span class=\"xray-sub\" title=\"Özne\">İri boylu otlar</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">cüceleşti</span>, <span class=\"xray-verb\" title=\"Yüklem\">cılızlaştı</span>. Nihayet kayboldu. O nazlı, güzel çiçek denizi kurudu, şimdi ortada sonsuz bir çöl var. Sanki dünyanın vahşi sürüleri ayaklarıyla, dişleriyle, tırnaklarıyla burayı eştiler.\n\n<div class=\"xray-prompt\">Bu parçada ağır basan anlatım biçimi aşağıdakilerden hangisidir?</div>",
+    "dogru_nedeni": "Çünkü: Yeşilliklerin sararması, ağaçların kuruması ve çölleşen tabiat kelimelerle resmedilerek betimleme yapılmıştır."
   },
   {
     "id": 4341,
@@ -5288,7 +5428,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Gelgeç sözcüğü kalıcı olmayan, geçici ve sürekliliği bulunmayan durumlar için kullanılır."
   },
   {
     "id": 4342,
@@ -5312,7 +5453,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçalardan hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">kahraman bakış açısıyla yazılmıştır?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdaki parçalardan hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">kahraman bakış açısıyla yazılmıştır?</span>",
+    "dogru_nedeni": "Çünkü: B seçeneğindeki metin bekliyorduk, kalabalığın ortasındaydım şeklinde birinci kişi (kahraman anlatıcı) ağzıyla yazılmıştır."
   },
   {
     "id": 4343,
@@ -5336,7 +5478,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Müzede sergilenen koleksiyon kadar, müze binası da gezenleri büyülüyor. Müze, Bakü Kalesi’nin giriş kapısına bakan meydanın yakınında bulunuyor. Nevruz kutlamaları bu meydanda ateş yakılarak başlatılıyor. Dört katlı binanın dış cephesi çinilerle, Azerbaycan edebiyatının altı ünlü şahsiyetinin heykelleriyle ve bazı yazarların büst ve tablolarıyla donatılmış. Hemen yakınındaki parklarda Azerbaycan Türkçesinin ünlü şairleri Sabir ve Nizami’nin görkemli heykelleri yükselmekte. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>"
+    "soru_xray": "<span class=\"xray-adv\" title=\"Tümleç / Zarf\">Müzede sergilenen koleksiyon kadar, müze binası da gezenleri büyülüyor. Müze, Bakü Kalesi’nin giriş kapısına bakan meydanın yakınında bulunuyor. Nevruz kutlamaları bu meydanda ateş yakılarak başlatılıyor. Dört katlı binanın dış cephesi çinilerle, Azerbaycan edebiyatının altı ünlü şahsiyetinin heykelleriyle ve bazı yazarların büst ve tablolarıyla donatılmış. Hemen yakınındaki parklarda Azerbaycan Türkçesinin ünlü şairleri Sabir ve Nizami’nin görkemli heykelleri yükselmekte. Bu parça</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">aşağıdaki metin türlerinden hangisine</span> <span class=\"xray-verb\" title=\"Yüklem\">örnektir?</span>",
+    "dogru_nedeni": "Çünkü: Yazar Bakü şehrinde gördüğü müzeyi, heykelleri ve meydanı izlenimleriyle tanıtan bir gezi yazısı kaleme almıştır."
   },
   {
     "id": 4344,
@@ -5359,7 +5502,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Dil adları büyük harfle başlar ancak yanındaki dil sözcüğü özel isim değildir, küçük harfle (Türk dilinin) yazılmalıdır."
   },
   {
     "id": 4345,
@@ -5382,7 +5526,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Parçada soru işareti bir şüpheyi değil, doğrudan bilir misiniz sorusunu sormak için gerçek soru anlamıyla kullanılmıştır."
   },
   {
     "id": 4346,
@@ -5406,7 +5551,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Yaşlı kadın</span>, <span class=\"xray-obj\" title=\"Nesne\">iplerle bağlı gözlüğünü</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">bir eliyle</span> <span class=\"xray-verb\" title=\"Yüklem\">tutarken</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">öbür eliyle</span> <span class=\"xray-obj\" title=\"Nesne\">lambayı</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">masaya</span> <span class=\"xray-verb\" title=\"Yüklem\">koyuyordu</span>. Gaz lambasının yağı bitmiş, camı is tutmuştu. Mutfaktaki gaz yağı şişesini getirmeye gitti kadın. Şişe, gazın yağıyla kirlenmiş, içi gözükmez hâle gelmişti. Odaya döndü, lambanın şişesini çıkarıp fitilin yanmış ucunu makasla kesti. Lambanın deposunu gaz yağıyla doldurdu.\n\n<div class=\"xray-prompt\">Bu parçada hikâyenin unsurlarından hangisi yoktur?</div>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Yaşlı kadın</span>, <span class=\"xray-obj\" title=\"Nesne\">iplerle bağlı gözlüğünü</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">bir eliyle</span> <span class=\"xray-verb\" title=\"Yüklem\">tutarken</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">öbür eliyle</span> <span class=\"xray-obj\" title=\"Nesne\">lambayı</span> <span class=\"xray-adv\" title=\"Tümleç / Zarf\">masaya</span> <span class=\"xray-verb\" title=\"Yüklem\">koyuyordu</span>. Gaz lambasının yağı bitmiş, camı is tutmuştu. Mutfaktaki gaz yağı şişesini getirmeye gitti kadın. Şişe, gazın yağıyla kirlenmiş, içi gözükmez hâle gelmişti. Odaya döndü, lambanın şişesini çıkarıp fitilin yanmış ucunu makasla kesti. Lambanın deposunu gaz yağıyla doldurdu.\n\n<div class=\"xray-prompt\">Bu parçada hikâyenin unsurlarından hangisi yoktur?</div>",
+    "dogru_nedeni": "Çünkü: Metinde yaşlı kadının lambayı temizlemesi (olay), yaşlı kadın (kişi), oda ve mutfak (mekân) yer almış; zaman unsuru belirtilmemiştir."
   },
   {
     "id": 4347,
@@ -5430,7 +5576,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Türk dilinin tarihî dönemlerinden değildir?</span>"
+    "soru_xray": "<span class=\"xray-sub\" title=\"Özne\">Aşağıdakilerden hangisi</span> <span class=\"xray-verb\" title=\"Yüklem\">Türk dilinin tarihî dönemlerinden değildir?</span>",
+    "dogru_nedeni": "Çünkü: Tanzimat bir edebiyat ve kültür dönemidir; Türkçenin Altay, İlk, Eski, Orta Türkçe gibi dil gelişim dönemlerinden biri değildir."
   },
   {
     "id": 4348,
@@ -5454,7 +5601,8 @@
     "puan": 0.5,
     "ipucu": "",
     "sekilli": false,
-    "soru_xray": "I. Göstermeye bağlı metin türlerindendir. II. Meddahlar veya âşıklar tarafından icra edilir. III. <span class=\"xray-sub\" title=\"Özne\">Olaylar</span> <span class=\"xray-obj\" title=\"Nesne\">nesirle</span>, <span class=\"xray-sub\" title=\"Özne\">duygular</span> <span class=\"xray-obj\" title=\"Nesne\">nazımla</span> <span class=\"xray-verb\" title=\"Yüklem\">ifade edilir</span>. IV. Söyleyeni bellidir. Halk hikâyeleriyle ilgili\n\n<span class=\"xray-sub\" title=\"Özne\">numaralanmış cümlelerden hangileri</span> <span class=\"xray-verb\" title=\"Yüklem\">doğrudur?</span>"
+    "soru_xray": "I. Göstermeye bağlı metin türlerindendir. II. Meddahlar veya âşıklar tarafından icra edilir. III. <span class=\"xray-sub\" title=\"Özne\">Olaylar</span> <span class=\"xray-obj\" title=\"Nesne\">nesirle</span>, <span class=\"xray-sub\" title=\"Özne\">duygular</span> <span class=\"xray-obj\" title=\"Nesne\">nazımla</span> <span class=\"xray-verb\" title=\"Yüklem\">ifade edilir</span>. IV. Söyleyeni bellidir. Halk hikâyeleriyle ilgili\n\n<span class=\"xray-sub\" title=\"Özne\">numaralanmış cümlelerden hangileri</span> <span class=\"xray-verb\" title=\"Yüklem\">doğrudur?</span>",
+    "dogru_nedeni": "Çünkü: Halk hikâyeleri meddah/âşıklarca anlatılır (II) ve olaylar nesir (düz yazı), duygular nazım (şiir) ile dile getirilir (III)."
   },
   {
     "id": 4349,
@@ -5477,7 +5625,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: İskendername Büyük İskender'in fetihlerini ve savaşlarını anlatan kahramanlık/epik konulu bir mesnevidir."
   },
   {
     "id": 4350,
@@ -5500,7 +5649,8 @@
     "sinav_soru_sayisi": 10,
     "puan": 0.5,
     "ipucu": "",
-    "sekilli": false
+    "sekilli": false,
+    "dogru_nedeni": "Çünkü: Aşk ve keder konusunu aruz ölçüsü ve beyitlerle, aa-ba uyak düzeniyle işleyen divan nazım biçimi gazeldir."
   },
   {
     "id": 4351,

@@ -1,4 +1,5 @@
 import { state } from '../../app/state.ts';
+import { StorageKeys } from '../../shared/storage-keys.ts';
 
 export const ACCENT_COLORS: Record<string, { light: string; dark: string }> = {
   blue:    { light: '#0284c7', dark: '#38bdf8' },
@@ -37,7 +38,7 @@ export function setAccentColor(colorKey: string) {
   if (!ACCENT_COLORS[colorKey]) colorKey = 'blue';
   currentAccent = colorKey;
   try {
-    localStorage.setItem('aol_accent_color', colorKey);
+    localStorage.setItem(StorageKeys.ACCENT_COLOR, colorKey);
   } catch {}
 
   const cfg = ACCENT_COLORS[colorKey];
@@ -55,7 +56,7 @@ export function setAccentColor(colorKey: string) {
 export function initAccentColor() {
   let color = 'blue';
   try {
-    const saved = localStorage.getItem('aol_accent_color');
+    const saved = localStorage.getItem(StorageKeys.ACCENT_COLOR);
     if (saved && ACCENT_COLORS[saved]) color = saved;
   } catch {}
   setAccentColor(color);
@@ -70,7 +71,7 @@ export function setThemeMode(mode: 'dark' | 'light') {
     document.body.classList.remove('dark-mode');
   }
   try {
-    localStorage.setItem('aol_theme', isDark ? 'dark' : 'light');
+    localStorage.setItem(StorageKeys.THEME, isDark ? 'dark' : 'light');
   } catch {}
 
   const btn = document.getElementById('btnConsoleThemeCycle');
@@ -85,7 +86,7 @@ export function setThemeMode(mode: 'dark' | 'light') {
 export function initTheme() {
   let theme: 'dark' | 'light' = 'light';
   try {
-    const saved = localStorage.getItem('aol_theme');
+    const saved = localStorage.getItem(StorageKeys.THEME);
     if (saved === 'dark') theme = 'dark';
   } catch {}
   setThemeMode(theme);
@@ -207,7 +208,7 @@ export function setColumnCount(n: number) {
   if (![1, 2, 3, 4].includes(n)) n = 2;
   state.currentColumnCount = n;
   try {
-    localStorage.setItem('aol_column_count', String(n));
+    localStorage.setItem(StorageKeys.COLUMN_COUNT, String(n));
   } catch {}
 
   const cycleBtn = document.getElementById('btnConsoleColumnCycle');
