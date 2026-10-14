@@ -16,8 +16,11 @@ export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement 
     || state.allData.find(item => item.id === qid);
   if (!q || !q.dogru_nedeni) return;
 
-  // Hedef element belirtilmemişse doğru cevabın şık satırını veya optik balonunu bul
-  let el = targetEl;
+  // Hedef element: Şık satırı verilmişse içindeki optik harf dairesini (.optical-bubble) seç
+  let el: HTMLElement | null = targetEl || null;
+  if (el && !el.classList.contains('optical-bubble')) {
+    el = el.querySelector<HTMLElement>('.optical-bubble') || el;
+  }
   if (!el && q.dogru_cevap) {
     el = document.querySelector<HTMLElement>(`#opt_${qid}_${q.dogru_cevap} .optical-bubble`)
       || document.querySelector<HTMLElement>(`#opt_${qid}_${q.dogru_cevap}`);
@@ -32,46 +35,62 @@ export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement 
   const bubble = document.createElement('div');
   bubble.id = 'activeExplanationBubble';
   bubble.className = 'answer-explanation-bubble';
-
-  // "Neden doğru?" başlığı olmadan, sadece doğrudan açıklama metni
   bubble.innerHTML = `<span>${escapeHtml(q.dogru_nedeni)}</span>`;
 
   document.body.appendChild(bubble);
   activeExplanationEl = bubble;
 
-  // İngilizce vocabulary.js konumlandırmasının 100% aynısı
+  // Konumlandırma: Dikeyde şıkkın üstü (veya altı)
   const rect = el.getBoundingClientRect();
   const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   let top = rect.top + scrollTop;
-  let left = rect.left + scrollLeft + (rect.width / 2);
+  const targetCenterX = rect.left + scrollLeft + (rect.width / 2);
 
-  if (rect.top < 65) {
+  if (rect.top < 70) {
     bubble.classList.add('bubble-below');
     top = rect.bottom + scrollTop;
   }
 
   bubble.style.top = top + 'px';
-  bubble.style.left = left + 'px';
 
+  // Dinamik Yatay Konumlandırma (Taşmayı %100 Engelleyen Çözüm):
+  // Baloncuğun genişliğini al
   const bubbleRect = bubble.getBoundingClientRect();
   const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-  const halfWidth = bubbleRect.width / 2;
-  let adjustedLeft = left;
-  if (adjustedLeft - halfWidth < 12) {
-    adjustedLeft = 12 + halfWidth;
-  } else if (adjustedLeft + halfWidth > viewportWidth - 12) {
-    adjustedLeft = viewportWidth - 12 - halfWidth;
-  }
-  bubble.style.left = adjustedLeft + 'px';
 
+  // Balon genişliği ekranı aşmasın
+  const maxBubbleWidth = Math.min(380, viewportWidth - 24);
+  bubble.style.maxWidth = `${maxBubbleWidth}px`;
+
+  // Varsayılan olarak oku sol köşeye yakın hizala (ok = sol kenardan 24px)
+  let bubbleLeft = targetCenterX - 24;
+
+  // Eğer sağa taşıyorsa, balonu sola çek (ekranda sağdan 12px boşluk bırak)
+  if (bubbleLeft + bubbleRect.width > viewportWidth - 12) {
+    bubbleLeft = viewportWidth - 12 - bubbleRect.width;
+  }
+
+  // Eğer sola taşıyorsa, balonu sağa çek (ekranda soldan 12px boşluk bırak)
+  if (bubbleLeft < 12) {
+    bubbleLeft = 12;
+  }
+
+  bubble.style.left = `${bubbleLeft}px`;
+
+  // Sivri okun (arrow) balon üzerindeki sol pozisyonunu doğrudan ABCD dairesinin merkezine kilitle
+  // Okun balon sınırları dışına çıkmasını engelle (en az 12px, en çok balonGenisligi - 12px)
+  const arrowPos = Math.max(12, Math.min(bubbleRect.width - 12, targetCenterX - bubbleLeft));
+  bubble.style.setProperty('--arrow-left', `${arrowPos}px`);
+
+  // Süre: 13.5 saniye (3 katı)
   activeExplanationTimeout = setTimeout(() => {
-    bubble.style.animation = 'vocabPopOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+    bubble.style.animation = 'explanationBubblePopOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
     setTimeout(() => {
       hideAnswerExplanationBubble();
     }, 180);
-  }, 4500);
+  }, 13500);
 }
 
 export function hideAnswerExplanationBubble(): void {

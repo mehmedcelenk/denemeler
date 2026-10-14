@@ -2,7 +2,6 @@ import type { Choice, Question, SubjectId } from '../data/question.ts';
 import type { BookletFilterMode } from '../shared/question-filter.ts';
 
 export type { Choice, Question, SubjectId, BookletFilterMode };
-export type ConfidenceLevel = 'high' | 'mid' | 'low';
 export type LibraryTab = 'starred' | 'rematch';
 export type ContentViewMode = 'questions' | 'notes';
 
@@ -13,13 +12,13 @@ export interface AppState {
   selectedCourses: Set<string>;
   courseFilterMode: 'AND' | 'OR';
   selectedTopicKey: string | null;
+  selectedTopicKeys: Set<string>;
   bookletQuestions: Question[];
   bookletFilterMode: BookletFilterMode;
   contentViewMode: ContentViewMode;
   drawerSearchTerm: string;
   activeSearchFilter: string;
   userMarkedChoices: Record<number, Choice>;
-  userConfidences: Record<number, ConfidenceLevel>;
   undoHistoryStack: Record<number, Choice>[];
   revealedAnswers: Set<number>;
   revealedHints: Set<number>;
@@ -44,13 +43,13 @@ export const state: AppState = {
   selectedCourses: new Set(),
   courseFilterMode: 'OR',
   selectedTopicKey: null,
+  selectedTopicKeys: new Set(),
   bookletQuestions: [],
   bookletFilterMode: 'all',
   contentViewMode: 'questions',
   drawerSearchTerm: '',
   activeSearchFilter: '',
   userMarkedChoices: {},
-  userConfidences: {},
   undoHistoryStack: [],
   revealedAnswers: new Set(),
   revealedHints: new Set(),
