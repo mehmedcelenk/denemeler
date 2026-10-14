@@ -3,43 +3,78 @@ import { state } from '../../app/state.ts';
 
 let activeExplanationEl: HTMLElement | null = null;
 let activeExplanationTimeout: ReturnType<typeof setTimeout> | null = null;
+let activeTargetEl: HTMLElement | null = null;
 
-export function showAnswerExplanationBubble(qid: number, triggerEl: HTMLElement, event?: Event): void {
-  if (event) {
-    event.stopPropagation();
-    event.preventDefault();
-  }
-
+/**
+ * Sorunun doğru şıkkına veya hedeflenen elemente sivri uçlu açıklama baloncuğu açar.
+ * İngilizce vocab-bubble mantığıyla %100 birebir aynı çalışır.
+ */
+export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement | null): void {
   hideAnswerExplanationBubble();
 
   const q = state.bookletQuestions.find(item => item.id === qid)
     || state.allData.find(item => item.id === qid);
   if (!q || !q.dogru_nedeni) return;
 
+  // Hedef element belirtilmemişse doğru cevabın şık satırını veya optik balonunu bul
+  let el = targetEl;
+  if (!el && q.dogru_cevap) {
+    el = document.querySelector<HTMLElement>(`#opt_${qid}_${q.dogru_cevap} .optical-bubble`)
+      || document.querySelector<HTMLElement>(`#opt_${qid}_${q.dogru_cevap}`);
+  }
+  if (!el) {
+    el = document.querySelector<HTMLElement>(`#bq_${qid}`);
+  }
+  if (!el) return;
+
+  activeTargetEl = el;
+
   const bubble = document.createElement('div');
   bubble.id = 'activeExplanationBubble';
   bubble.className = 'answer-explanation-bubble';
 
-  bubble.innerHTML = `
-    <div class="explanation-bubble-header">
-      <span class="explanation-bubble-icon">💡</span>
-      <span class="explanation-bubble-title">Neden Doğru?</span>
-      <button class="explanation-bubble-close" onclick="hideAnswerExplanationBubble(event)" title="Kapat">✕</button>
-    </div>
-    <div class="explanation-bubble-body">${escapeHtml(q.dogru_nedeni)}</div>
-  `;
+  // "Neden doğru?" başlığı olmadan, sadece doğrudan açıklama metni
+  bubble.innerHTML = `<span>${escapeHtml(q.dogru_nedeni)}</span>`;
 
   document.body.appendChild(bubble);
   activeExplanationEl = bubble;
 
-  positionExplanationBubble(triggerEl, bubble);
+  // İngilizce vocabulary.js konumlandırmasının 100% aynısı
+  const rect = el.getBoundingClientRect();
+  const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  let top = rect.top + scrollTop;
+  let left = rect.left + scrollLeft + (rect.width / 2);
+
+  if (rect.top < 65) {
+    bubble.classList.add('bubble-below');
+    top = rect.bottom + scrollTop;
+  }
+
+  bubble.style.top = top + 'px';
+  bubble.style.left = left + 'px';
+
+  const bubbleRect = bubble.getBoundingClientRect();
+  const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  const halfWidth = bubbleRect.width / 2;
+  let adjustedLeft = left;
+  if (adjustedLeft - halfWidth < 12) {
+    adjustedLeft = 12 + halfWidth;
+  } else if (adjustedLeft + halfWidth > viewportWidth - 12) {
+    adjustedLeft = viewportWidth - 12 - halfWidth;
+  }
+  bubble.style.left = adjustedLeft + 'px';
 
   activeExplanationTimeout = setTimeout(() => {
-    hideAnswerExplanationBubble();
-  }, 12000);
+    bubble.style.animation = 'vocabPopOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+    setTimeout(() => {
+      hideAnswerExplanationBubble();
+    }, 180);
+  }, 4500);
 }
 
-export function hideAnswerExplanationBubble(_event?: Event): void {
+export function hideAnswerExplanationBubble(): void {
   if (activeExplanationTimeout) {
     clearTimeout(activeExplanationTimeout);
     activeExplanationTimeout = null;
@@ -48,40 +83,15 @@ export function hideAnswerExplanationBubble(_event?: Event): void {
     activeExplanationEl.remove();
     activeExplanationEl = null;
   }
-}
-
-function positionExplanationBubble(triggerEl: HTMLElement, bubbleEl: HTMLElement): void {
-  const rect = triggerEl.getBoundingClientRect();
-  const bubbleRect = bubbleEl.getBoundingClientRect();
-
-  let left = rect.left + (rect.width / 2) - (bubbleRect.width / 2);
-  let top = rect.bottom + 8;
-
-  if (left < 14) left = 14;
-  if (left + bubbleRect.width > window.innerWidth - 14) {
-    left = window.innerWidth - bubbleRect.width - 14;
-  }
-
-  if (top + bubbleRect.height > window.innerHeight - 14) {
-    top = rect.top - bubbleRect.height - 8;
-    if (top < 14) top = 14;
-    bubbleEl.classList.add('bubble-above');
-  }
-
-  bubbleEl.style.position = 'fixed';
-  bubbleEl.style.left = `${left}px`;
-  bubbleEl.style.top = `${top}px`;
-  bubbleEl.style.zIndex = '99999';
+  activeTargetEl = null;
 }
 
 if (typeof document !== 'undefined') {
   document.addEventListener('click', (e) => {
     const target = e.target as HTMLElement | null;
     if (!target) return;
-    if (target.closest('.btn-why-correct, .answer-explanation-bubble')) {
-      return;
+    if (activeExplanationEl && !target.closest('.answer-explanation-bubble')) {
+      hideAnswerExplanationBubble();
     }
-    hideAnswerExplanationBubble();
   });
 }
-

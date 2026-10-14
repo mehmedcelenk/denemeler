@@ -21,7 +21,6 @@ import {
   toggleTheme,
 } from '../features/appearance/preferences.ts';
 import { setCourseFilterMode } from '../features/subjects/filters.js';
-import { setTTSVoiceGender, speakSingleOption, toggleSpeakQuestion, toggleTTSVoiceGenderQuick } from '../features/audio/audio.js';
 import { showVocabBubble } from '../features/english/vocabulary.js';
 import { switchSubjectFromDrawer, toggleCourseInDrawer, toggleSubjectDropdown, selectSubjectFromDropdown, toggleLevelDropdown, selectLevelFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
 import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
@@ -82,14 +81,12 @@ export function registerLegacyHandlers() {
     setColumnCount,
     setCourseFilterMode,
     setProgramMode,
-    setTTSVoiceGender,
     setThemeMode,
     setUnifiedMode,
     showAnswerExplanationBubble,
     showDivanBubble,
     showEdebiKimlikKarti,
     showVocabBubble,
-    speakSingleOption,
     hideAnswerExplanationBubble,
     startInterleavedExam,
     switchLibraryTab,
@@ -107,10 +104,8 @@ export function registerLegacyHandlers() {
     toggleQuestionTranslation,
     toggleSingleAnswerReveal,
     toggleSingleHint,
-    toggleSpeakQuestion,
     toggleStarQuestionUI,
     toggleSubjectDropdown,
-    toggleTTSVoiceGenderQuick,
     toggleTheme,
     toggleTrapExplanation,
     undoClearMarks,
@@ -198,9 +193,6 @@ export function setupEventDelegation() {
         break;
       case 'set-theme-mode':
         if (el.dataset.theme) setThemeMode(el.dataset.theme);
-        break;
-      case 'set-tts-gender':
-        if (el.dataset.gender) setTTSVoiceGender(el.dataset.gender);
         break;
       case 'set-accent-color':
         if (el.dataset.color) setAccentColor(el.dataset.color);

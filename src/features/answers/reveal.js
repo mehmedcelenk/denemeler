@@ -1,4 +1,5 @@
 import { state, onStateChange } from '../../app/state.ts';
+import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from './explanation.ts';
 
 export function toggleSingleAnswerReveal(qid) {
   const q = state.allData.find(item => item.id === qid);
@@ -7,6 +8,7 @@ export function toggleSingleAnswerReveal(qid) {
   const isRevealed = state.revealedAnswers.has(qid);
   if (isRevealed) {
     state.revealedAnswers.delete(qid);
+    hideAnswerExplanationBubble();
   } else {
     state.revealedAnswers.add(qid);
   }
@@ -24,6 +26,11 @@ export function toggleSingleAnswerReveal(qid) {
     document.querySelectorAll(`#opt_${qid}_${correctLetter}`).forEach(correctRow => {
       correctRow.classList.toggle('revealed-correct', !isRevealed);
     });
+
+    if (!isRevealed && q && q.dogru_nedeni) {
+      const targetOpt = document.querySelector(`#opt_${qid}_${correctLetter}`);
+      showAnswerExplanationBubble(qid, targetOpt);
+    }
   }
 }
 

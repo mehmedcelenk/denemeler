@@ -47,8 +47,6 @@ export function updateBookletQuestions() {
   renderBookletPages();
 }
 
-import { updateTTSVoiceControlVisibility } from '../audio/audio.js';
-
 export function updateTopBadge(customTitle) {
   const emojiEl = document.getElementById('badgeEmoji');
   const textEl = document.getElementById('badgeMainText');
@@ -97,7 +95,6 @@ export function updateTopBadge(customTitle) {
 
   if (emojiEl) emojiEl.textContent = badgeEmoji;
   if (textEl) textEl.textContent = titleStr;
-  updateTTSVoiceControlVisibility();
 }
 
 onStateChange('booklet:refresh', () => {

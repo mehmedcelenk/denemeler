@@ -46,8 +46,6 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await page.locator('#btnLoadAllTopics').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
   await page.locator('[id^="btnXray_"]').first().click();
-  await page.evaluate(() => window.setTTSVoiceGender('female'));
-  await expect(page.locator('#btnTTSVoiceFemale')).toHaveClass(/active/);
   await page.evaluate(() => window.setThemeMode('dark'));
   await expect(page.locator('body')).toHaveClass(/dark-mode/);
   await page.evaluate(() => window.setColumnCount(1));

@@ -2,8 +2,7 @@ import { loadSubjectData } from '../data/questions.js';
 import { state } from './state.ts';
 import { renderDrawerSubjects, setSubject } from '../features/subjects/selection.js';
 import { updatePrayerCountdown } from '../features/prayer/prayer.js';
-import { updateTTSGenderUI } from '../features/audio/audio.js';
-import { initBookletCanvasZoom, setColumnCount, initTheme, initAccentColor } from '../features/appearance/preferences.ts';
+import { initBookletCanvasZoom, initTheme, initAccentColor, setColumnCount } from '../features/appearance/preferences.ts';
 import { StorageKeys } from '../shared/storage-keys.ts';
 import { loadSavedChoices } from '../features/answers/storage.js';
 
@@ -14,7 +13,6 @@ export async function startApp() {
   loadSavedChoices();
   initTheme();
   initAccentColor();
-  updateTTSGenderUI();
   initBookletCanvasZoom();
   try {
     await initApp();

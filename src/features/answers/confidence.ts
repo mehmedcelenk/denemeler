@@ -3,6 +3,7 @@ import { addStreakPoints, resetOrDeductStreak } from '../gamification/streak.ts'
 import { recordAnswerForCombo } from '../gamification/combo-toast.ts';
 import { addToRematch, removeFromRematch } from '../library/library-model.ts';
 import { saveChoicesToStorage } from './storage.js';
+import { showAnswerExplanationBubble } from './explanation.ts';
 
 let activeConfidencePrompt: { questionId: number; choice: Choice } | null = null;
 
@@ -163,6 +164,13 @@ export function updateQuestionMarkUI(questionId: number, choice: Choice): void {
 
   const undoBtn = document.getElementById('btnUndoClear');
   if (undoBtn) undoBtn.style.opacity = '1';
+
+  // Doğru da yapılsa yanlış da yapılsa doğru şıkkın üzerine açıklama toast'ı aç
+  if (q && q.dogru_nedeni) {
+    const targetOpt = document.querySelector<HTMLElement>(`#opt_${questionId}_${correctChoice}`)
+      || document.querySelector<HTMLElement>(`#opt_${questionId}_${choice}`);
+    showAnswerExplanationBubble(questionId, targetOpt);
+  }
 }
 
 

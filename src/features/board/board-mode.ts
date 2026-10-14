@@ -1,7 +1,7 @@
 import { state, notifyStateChange } from '../../app/state.ts';
 import type { Question } from '../../data/question.ts';
 import { renderQuestionCardHtml } from '../booklet/question-card.js';
-import { setBookletCanvasScale } from '../appearance/layout.js';
+import { setBookletCanvasScale } from '../appearance/preferences.ts';
 
 let activeBoardQuestionId: number | null = null;
 let panX = 0;
