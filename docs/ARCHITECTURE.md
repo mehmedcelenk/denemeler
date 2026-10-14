@@ -23,6 +23,7 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Cevap işaretleme/geri alma | `src/features/answers/marking.js` |
 | Cevap ve ipucu gösterme | `src/features/answers/reveal.js` |
 | Cevapların kalıcı kaydı | `src/features/answers/storage.js` |
+| Seri ve kombo bildirimleri | `src/features/gamification/combo-toast.ts` & `src/shared/combo.ts` |
 | Ses/TTS | `src/features/audio/audio.js` |
 | Kelime balonu | `src/features/english/vocabulary.js` |
 | Çeviri/röntgen/tuzak açıklaması | `src/features/english/translations.js` |

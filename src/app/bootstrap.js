@@ -3,11 +3,9 @@ import { state } from './state.ts';
 import { renderDrawerSubjects, setSubject } from '../features/subjects/selection.js';
 import { updatePrayerCountdown } from '../features/prayer/prayer.js';
 import { updateTTSGenderUI } from '../features/audio/audio.js';
-import { initBookletCanvasZoom, setColumnCount } from '../features/appearance/layout.js';
+import { initBookletCanvasZoom, setColumnCount, initTheme, initAccentColor } from '../features/appearance/preferences.ts';
 import { initDraggableCalculator } from '../features/calculator/calculator.js';
 import { loadSavedChoices } from '../features/answers/storage.js';
-import { initTheme } from '../features/appearance/theme.js';
-import { initAccentColor } from '../features/appearance/accent.js';
 
 export async function startApp() {
   if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {

@@ -1,5 +1,6 @@
 import { state, type Choice, type ConfidenceLevel } from '../../app/state.ts';
 import { addStreakPoints, resetOrDeductStreak } from '../gamification/streak.ts';
+import { recordAnswerForCombo } from '../gamification/combo-toast.ts';
 import { addToRematch, removeFromRematch } from '../library/library-model.ts';
 import { saveChoicesToStorage } from './storage.js';
 
@@ -64,6 +65,8 @@ function applyChoiceWithConfidence(questionId: number, choice: Choice, confidenc
 
   if (q) {
     const isCorrect = (choice === q.dogru_cevap);
+    recordAnswerForCombo(isCorrect);
+
     if (isCorrect) {
       if (confidence === 'high') {
         addStreakPoints(3);

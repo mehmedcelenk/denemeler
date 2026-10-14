@@ -22,6 +22,7 @@ export interface Question {
   soru_tr?: string;
   soru_ar?: string;
   soru_xray?: string;
+  dogru_nedeni?: string;
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -51,11 +52,12 @@ export function parseQuestions(value: unknown): Question[] {
     const id = question.id as number;
     if (seen.has(id)) throw new Error(`Tekrarlanan soru kimliği: ${id}`);
     seen.add(id);
-    for (const key of ['ana_konu', 'alt_konu', 'ipucu', 'soru_tr', 'soru_ar', 'soru_xray', 'yil']) {
+    for (const key of ['ana_konu', 'alt_konu', 'ipucu', 'soru_tr', 'soru_ar', 'soru_xray', 'yil', 'dogru_nedeni']) {
       if (question[key] !== undefined && typeof question[key] !== 'string') {
         throw new Error(`${id}: ${key} metin olmalı.`);
       }
     }
+
     if (question.zorluk !== undefined && !['kek', 'orta', 'boss'].includes(question.zorluk as string)) {
       throw new Error(`${id}: zorluk değeri geçersiz.`);
     }

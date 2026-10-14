@@ -45,9 +45,12 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
         ? enrichEnglishVocab(optText)
         : escapeHtml(optText);
 
-    const optSpeakerBtn = (isEnglish && !isPassive && optText.trim()) ? `
-      <button class="btn-opt-tts" title="Şıkkı Dinle" onclick="speakSingleOption(${q.id}, '${letter}', event)">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+    // Şık seslendirme butonu kullanıcı isteğiyle geçici olarak devre dışı bırakıldı
+    const optSpeakerBtn = '';
+
+    const whyCorrectBtn = (isCorrect && q.dogru_nedeni) ? `
+      <button class="btn-why-correct" id="btnWhy_${q.id}" onclick="showAnswerExplanationBubble(${q.id}, this, event)" title="Neden Doğru? (Kazanım Açıklaması)">
+        <span>💡 Neden?</span>
       </button>
     ` : '';
 
@@ -55,10 +58,12 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
       <div class="${rowClass}" id="opt_${q.id}_${letter}" ${clickHandler}>
         <div class="optical-bubble">${letter}</div>
         <div class="choice-text-content">${renderedOptContent}</div>
+        ${whyCorrectBtn}
         ${optSpeakerBtn}
       </div>
     `;
   });
+
 
   return optHtml;
 }

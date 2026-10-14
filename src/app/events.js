@@ -5,16 +5,30 @@ import { closePdfDialog, executePdfPrint, openPdfDialog } from '../features/prin
 import { closeSubjectDrawer, handleDrawerOverlayClick } from '../features/subjects/drawer-visibility.js';
 import { loadAllTopicsToBooklet, selectTopicFromDrawer } from '../features/subjects/topics.js';
 import { openSubjectDrawer } from '../features/subjects/drawer.js';
-import { setAccentColor, cycleAccentColor } from '../features/appearance/accent.js';
-import { resetBookletCanvasZoom, setColumnCount, cycleColumnCount, cycleZoomLevel, toggleConsoleMenu, toggleFeaturesBar, toggleQuestionFeatures, toggleFullscreenFocusMode, zoomIn, zoomOut } from '../features/appearance/layout.js';
+import {
+  setAccentColor,
+  cycleAccentColor,
+  resetBookletCanvasZoom,
+  setColumnCount,
+  cycleColumnCount,
+  cycleZoomLevel,
+  toggleConsoleMenu,
+  toggleFeaturesBar,
+  toggleQuestionFeatures,
+  toggleFullscreenFocusMode,
+  zoomIn,
+  zoomOut,
+  setThemeMode,
+  toggleTheme,
+} from '../features/appearance/preferences.ts';
 import { setCourseFilterMode } from '../features/subjects/filters.js';
 import { setTTSVoiceGender, speakSingleOption, toggleSpeakQuestion, toggleTTSVoiceGenderQuick } from '../features/audio/audio.js';
-import { setThemeMode, toggleTheme } from '../features/appearance/theme.js';
 import { showVocabBubble } from '../features/english/vocabulary.js';
 import { switchSubjectFromDrawer, toggleCourseInDrawer, toggleSubjectDropdown, selectSubjectFromDropdown, toggleLevelDropdown, selectLevelFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
 import { toggleCalcMode, toggleMiniCalculator } from '../features/calculator/calculator.js';
 import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
 import { togglePageKey, toggleSingleAnswerReveal, toggleSingleHint } from '../features/answers/reveal.js';
+import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from '../features/answers/explanation.ts';
 import { toggleFormulaNote } from '../features/formulas/formula-modal.ts';
 import { confirmConfidence, cancelConfidencePrompt } from '../features/answers/confidence.ts';
 import { setBookletFilter, setUnifiedMode } from '../features/booklet/filter.ts';
@@ -79,10 +93,12 @@ export function registerLegacyHandlers() {
     setTTSVoiceGender,
     setThemeMode,
     setUnifiedMode,
+    showAnswerExplanationBubble,
     showDivanBubble,
     showEdebiKimlikKarti,
     showVocabBubble,
     speakSingleOption,
+    hideAnswerExplanationBubble,
     startInterleavedExam,
     startTeacherSession,
     submitStudentJoin,

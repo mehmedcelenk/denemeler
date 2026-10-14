@@ -295,6 +295,39 @@ body.dark-mode .optical-choice-row.revealed-correct .optical-bubble {
   background: rgba(125, 125, 125, 0.12);
 }
 
+/* 💡 Neden Doğru? Hap Bilgi Baloncuğu */
+.btn-why-correct {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  border-radius: 999px;
+  padding: 2px 7px;
+  font-size: 10.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.12s;
+  flex-shrink: 0;
+}
 
+.btn-why-correct:hover {
+  background: #059669;
+  color: #ffffff;
+  border-color: #059669;
+  transform: scale(1.04);
+}
 
+body.dark-mode .btn-why-correct {
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.35);
+}
+
+body.dark-mode .btn-why-correct:hover {
+  background: #10b981;
+  color: #0f172a;
+}
 

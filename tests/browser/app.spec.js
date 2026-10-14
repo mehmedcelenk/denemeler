@@ -35,8 +35,10 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await page.locator('#btnLoadAllTopics').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
   await page.evaluate(() => window.toggleFeaturesBar());
-  await expect(page.locator('.btn-tts-icon').first()).toBeVisible();
+  // Ses butonu geçici olarak devre dışı bırakıldı, TR çeviri butonu kontrol ediliyor
+  await expect(page.locator('[id^="btnTransTR_"]').first()).toBeVisible();
   const translate = page.locator('[id^="btnTransTR_"]').first();
+
   await translate.click();
   await page.locator('#topCenterBadge').click();
   await page.locator('#btnSubjectDropdownTrigger').click();

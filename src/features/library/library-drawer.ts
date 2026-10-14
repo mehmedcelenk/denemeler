@@ -1,9 +1,8 @@
 import { state, notifyStateChange, type LibraryTab } from '../../app/state.ts';
 import { loadSubjectData } from '../../data/questions.js';
 import { SUBJECTS } from '../../data/subjects.js';
-import { renderBookletPages } from '../booklet/render.js';
 import { updateBookletQuestions, updateTopBadge } from '../booklet/selection.js';
-import { toggleConsoleMenu } from '../appearance/layout.js';
+import { toggleConsoleMenu } from '../appearance/preferences.ts';
 import { updateFilterButtonsUI } from '../booklet/filter.ts';
 import { renderDrawerSelectorBar } from '../subjects/selection.js';
 import { renderDrawerTopics } from '../subjects/topics.js';
@@ -54,8 +53,7 @@ export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void
   state.bookletQuestions = selectedQuestions;
 
   updateTopBadge();
-  renderBookletPages();
-  notifyStateChange('booklet:updated');
+  notifyStateChange('booklet:refresh');
 }
 
 export function switchLibraryTab(tab: LibraryTab): void {

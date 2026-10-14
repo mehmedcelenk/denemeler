@@ -40,11 +40,8 @@ export function updateTTSVoiceControlVisibility() {
   const row = document.getElementById('ttsVoiceControlGroup');
   if (!row) return;
 
-  const isEnglishSubject = state.currentSubject === 'ING';
-  const hasEnglishQuestions = state.bookletQuestions.some(q => q.ders && q.ders.includes('İNGİLİZCE'));
-  const isVisible = isEnglishSubject || hasEnglishQuestions;
-
-  row.style.display = isVisible ? 'flex' : 'none';
+  // Ses kontrolleri geçici olarak devre dışı bırakıldı
+  row.style.display = 'none';
 }
 
 export function toggleTTSVoiceGenderQuick(event) {

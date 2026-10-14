@@ -1,0 +1,73 @@
+/* Doğru Cevap Neden Doğru? Açıklama Balonu */
+.answer-explanation-bubble {
+  width: 320px;
+  max-width: calc(100vw - 28px);
+  background: var(--paper-bg, #ffffff);
+  color: var(--paper-text, #0f172a);
+  border: 1.5px solid #059669;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px -4px rgba(5, 150, 105, 0.25), 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 10px 12px;
+  box-sizing: border-box;
+  animation: vocabPopIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+body.dark-mode .answer-explanation-bubble {
+  background: #1e293b;
+  border-color: #10b981;
+  color: #f1f5f9;
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.55);
+}
+
+.explanation-bubble-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed rgba(125, 125, 125, 0.2);
+}
+
+.explanation-bubble-icon {
+  font-size: 14px;
+}
+
+.explanation-bubble-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: #059669;
+  margin-right: auto;
+  letter-spacing: 0.2px;
+}
+
+body.dark-mode .explanation-bubble-title {
+  color: #34d399;
+}
+
+.explanation-bubble-close {
+  background: none;
+  border: none;
+  color: var(--paper-text-muted, #94a3b8);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explanation-bubble-close:hover {
+  color: var(--paper-text);
+  background: rgba(125, 125, 125, 0.15);
+}
+
+.explanation-bubble-body {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--paper-text);
+  line-height: 1.45;
+}
+

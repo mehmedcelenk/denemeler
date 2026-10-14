@@ -1,0 +1,119 @@
+/* ========================================================= */
+/* OYUNLAŞTIRMA SERİ TOAST BİLDİRİMİ (COMBO TOAST)           */
+/* Su & Toprak Temalı Palet                                  */
+/* ========================================================= */
+
+.combo-toast-container {
+  position: fixed;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px) scale(0.92);
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform, opacity;
+}
+
+.combo-toast-container.combo-toast-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.combo-toast-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  border: 1.5px solid transparent;
+}
+
+.combo-toast-icon {
+  font-size: 20px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+}
+
+.combo-toast-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.combo-toast-title {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.combo-toast-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.88;
+}
+
+/* 1. Su / Okyanus Temalı Seri (2'de 2 ... 5'te 5, Durdurulamıyor, Devam Ediyor) */
+.combo-toast-container.combo-water .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(240, 249, 255, 0.96), rgba(224, 242, 254, 0.94));
+  border-color: #0284c7;
+  color: #0369a1;
+  box-shadow: 0 8px 26px rgba(2, 132, 199, 0.28);
+}
+body.dark-mode .combo-toast-container.combo-water .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(8, 47, 73, 0.95), rgba(12, 74, 110, 0.95));
+  border-color: #38bdf8;
+  color: #e0f2fe;
+  box-shadow: 0 8px 26px rgba(2, 132, 199, 0.45);
+}
+
+/* 2. Toprağımsı / Doğal Koruma Teması ("Avans Verdi") */
+.combo-toast-container.combo-earth .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(254, 252, 246, 0.96), rgba(245, 238, 222, 0.94));
+  border-color: #a16207;
+  color: #78350f;
+  box-shadow: 0 8px 26px rgba(161, 98, 7, 0.22);
+}
+body.dark-mode .combo-toast-container.combo-earth .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(41, 28, 17, 0.95), rgba(69, 44, 24, 0.95));
+  border-color: #d97706;
+  color: #fef3c7;
+  box-shadow: 0 8px 26px rgba(217, 119, 6, 0.35);
+}
+
+/* 3. Seri Söndü / Sıfırlandı ("Buraya Kadar!") */
+.combo-toast-container.combo-broken .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.96), rgba(241, 245, 249, 0.94));
+  border-color: #94a3b8;
+  color: #475569;
+  box-shadow: 0 8px 24px rgba(71, 85, 105, 0.2);
+}
+body.dark-mode .combo-toast-container.combo-broken .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+  border-color: #64748b;
+  color: #cbd5e1;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.45);
+}
+
+@media (max-width: 640px) {
+  .combo-toast-container {
+    top: calc(52px + var(--safe-top));
+  }
+  .combo-toast-inner {
+    padding: 6px 14px;
+    gap: 8px;
+  }
+  .combo-toast-title {
+    font-size: 13px;
+  }
+  .combo-toast-subtitle {
+    font-size: 10px;
+  }
+  .combo-toast-icon {
+    font-size: 18px;
+  }
+}

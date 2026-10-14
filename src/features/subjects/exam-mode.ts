@@ -1,7 +1,6 @@
 import { state, notifyStateChange } from '../../app/state.ts';
 import { SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { loadAllSubjectData } from '../../data/questions.js';
-import { renderBookletPages } from '../booklet/render.js';
 import { updateTopBadge } from '../booklet/selection.js';
 import type { Question } from '../../data/question.ts';
 
@@ -127,6 +126,5 @@ export async function startInterleavedExam(): Promise<void> {
   state.bookletQuestions = examQuestions;
 
   updateTopBadge('🔀 Karışık Deneme Sınavı');
-  renderBookletPages();
-  notifyStateChange('booklet:updated', { customTitle: '🔀 Karışık Deneme Sınavı' });
+  notifyStateChange('booklet:refresh');
 }

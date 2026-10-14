@@ -18,8 +18,16 @@ export default defineConfig({
       },
       output: {
         entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name].[ext]',
+        manualChunks(id) {
+          if (id.includes('node_modules/katex')) {
+            return 'katex-vendor';
+          }
+          if (id.includes('MEB_VOCAB_DICT.json')) {
+            return 'vocab-dict';
+          }
+        },
       },
     },
   },
