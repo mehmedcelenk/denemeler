@@ -13,6 +13,10 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   if (await confBtn.isVisible()) {
     await confBtn.click();
   }
+  // Neden butonu DOM'da kesinlikle olmamalı
+  expect(await page.locator('.btn-why-correct').count()).toBe(0);
+  // Açıklama balonu (toast) görünür olmalı
+  await expect(page.locator('#activeExplanationBubble')).toBeVisible();
   await page.reload();
   await expect(page.locator(`[id="${optionId}"]`)).toHaveClass(/marked/);
   await page.evaluate(() => window.clearAllMarks());

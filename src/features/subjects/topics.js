@@ -64,6 +64,8 @@ export function renderDrawerTopics() {
     if (group.length > 1) {
       const expanded = group.some(t => state.selectedTopicKey === t.key);
       const parentLabel = parentKey || 'Genel';
+      const totalGroupQuestions = group.reduce((sum, item) => sum + item.count, 0);
+
       const nestedHtml = group.map((t) => {
         const isFull = (state.selectedCourses.size > 1 && Object.keys(t.courses).length === state.selectedCourses.size);
         const intersectionMark = (isFull && !isSingleCourse) ? '∩ ' : '';
@@ -71,20 +73,13 @@ export function renderDrawerTopics() {
         let courseBreakdown = '';
         if (state.selectedCourses.size > 1 && Object.keys(t.courses).length > 0) {
           const bParts = Object.entries(t.courses).map(([c, cnt]) => `${getShortCourseName(c)}: ${cnt}`);
-          courseBreakdown = ` <span class="drawer-topic-course-breakdown">(${bParts.join(', ')})</span>`;
+          courseBreakdown = ` <span class="drawer-topic-course-breakdown">${bParts.join(' · ')}</span>`;
         }
-        const freqBadgeHtml = t.avg_per_exam ? `
-          <span class="drawer-topic-freq-badge" title="Son ${t.period_count} sınavda ortalama ${t.avg_per_exam} soru gelmiştir.">
-            ~${t.avg_per_exam} soru/sınav
-          </span>
-        ` : '';
+
         return `
           <div class="drawer-topic-item child-item ${isSelected ? 'selected' : ''}" data-select-topic="${escapeJs(t.key)}">
             <span class="drawer-topic-name">${intersectionMark}${escapeHtml(t.alt_konu || t.ana_konu || 'Genel')}${courseBreakdown}</span>
-            <div class="drawer-topic-badges-group">
-              ${freqBadgeHtml}
-              <span class="drawer-topic-badge">${t.count} Soru</span>
-            </div>
+            <span class="drawer-topic-count-num">${t.count}</span>
           </div>
         `;
       }).join('');
@@ -94,9 +89,11 @@ export function renderDrawerTopics() {
           <button type="button" class="drawer-topic-group-header" data-topic-toggle-group="${escapeJs(parentKey)}" aria-expanded="${expanded ? 'true' : 'false'}">
             <span class="drawer-topic-group-title">
               <span class="drawer-topic-group-name">${escapeHtml(parentLabel)}</span>
-              <span class="drawer-topic-group-count">${group.reduce((sum, item) => sum + item.count, 0)} soru</span>
             </span>
-            <span class="drawer-topic-dropdown-caret" aria-hidden="true">${expanded ? '▾' : '▸'}</span>
+            <div class="drawer-topic-group-meta">
+              <span class="drawer-topic-count-num group-count">${totalGroupQuestions}</span>
+              <span class="drawer-topic-dropdown-caret" aria-hidden="true">${expanded ? '▾' : '▸'}</span>
+            </div>
           </button>
           <div class="drawer-topic-group-body">
             ${nestedHtml}
@@ -113,7 +110,7 @@ export function renderDrawerTopics() {
     let courseBreakdown = '';
     if (state.selectedCourses.size > 1 && Object.keys(t.courses).length > 0) {
       const bParts = Object.entries(t.courses).map(([c, cnt]) => `${getShortCourseName(c)}: ${cnt}`);
-      courseBreakdown = ` <span class="drawer-topic-course-breakdown">(${bParts.join(', ')})</span>`;
+      courseBreakdown = ` <span class="drawer-topic-course-breakdown">${bParts.join(' · ')}</span>`;
     }
     let topicLabelHtml = '';
     if (t.ana_konu && t.alt_konu && t.ana_konu !== t.alt_konu) {
@@ -121,19 +118,11 @@ export function renderDrawerTopics() {
     } else {
       topicLabelHtml = `<span class="topic-sub">${escapeHtml(t.alt_konu || t.ana_konu)}</span>`;
     }
-    const freqBadgeHtml = t.avg_per_exam ? `
-      <span class="drawer-topic-freq-badge" title="Son ${t.period_count} sınavda ortalama ${t.avg_per_exam} soru gelmiştir.">
-        ~${t.avg_per_exam} soru/sınav
-      </span>
-    ` : '';
 
     html += `
       <div class="drawer-topic-item ${isSelected ? 'selected' : ''}" data-select-topic="${escapeJs(t.key)}">
         <span class="drawer-topic-name">${intersectionMark}${topicLabelHtml}${courseBreakdown}</span>
-        <div class="drawer-topic-badges-group">
-          ${freqBadgeHtml}
-          <span class="drawer-topic-badge">${t.count} Soru</span>
-        </div>
+        <span class="drawer-topic-count-num">${t.count}</span>
       </div>
     `;
   });

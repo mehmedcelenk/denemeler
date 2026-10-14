@@ -6,10 +6,10 @@ import {
   toggleSingleAnswerReveal,
   toggleSingleHint,
 } from '../features/answers/marking.ts';
-import { clearDrawerSearch, handleDrawerSearch, loadAllSearchResultsToBooklet, loadSingleSearchQuestion } from '../features/search/search.js';
+import { clearDrawerSearch, loadAllSearchResultsToBooklet, loadSingleSearchQuestion } from '../features/search/search.js';
 import { closePdfDialog, executePdfPrint, openPdfDialog } from '../features/print/print.js';
-import { closeSubjectDrawer, handleDrawerOverlayClick, openSubjectDrawer, setCourseFilterMode } from '../features/subjects/drawer.ts';
-import { loadAllTopicsToBooklet, selectTopicFromDrawer } from '../features/subjects/topics.js';
+import { closeSubjectDrawer, openSubjectDrawer } from '../features/subjects/drawer.ts';
+import { loadAllTopicsToBooklet } from '../features/subjects/topics.js';
 import {
   setAccentColor,
   cycleAccentColor,
@@ -27,95 +27,52 @@ import {
   toggleTheme,
 } from '../features/appearance/preferences.ts';
 import { showVocabBubble } from '../features/english/vocabulary.js';
-import { switchSubjectFromDrawer, toggleCourseInDrawer, toggleSubjectDropdown, selectSubjectFromDropdown, toggleLevelDropdown, selectLevelFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
+import { toggleSubjectDropdown, selectSubjectFromDropdown, handleIntersectionToggle, toggleCourseLevel, setProgramMode } from '../features/subjects/selection.js';
 import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
-import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from '../features/answers/explanation.ts';
+import { showAnswerExplanationBubble } from '../features/answers/explanation.ts';
 import { toggleFormulaNote } from '../features/formulas/formula-modal.ts';
-import { confirmConfidence, cancelConfidencePrompt } from '../features/answers/confidence.ts';
+import { confirmConfidence } from '../features/answers/confidence.ts';
 import { setBookletFilter, setUnifiedMode } from '../features/booklet/filter.ts';
 import { setContentViewMode } from '../features/booklet/view-mode.ts';
 import { resumeLastSession, dismissResumeBanner } from '../features/booklet/resume.ts';
-import { openLibraryView, switchLibraryTab, exitLibraryView } from '../features/library/library-drawer.ts';
+import { exitLibraryView } from '../features/library/library-drawer.ts';
 import { startInterleavedExam } from '../features/subjects/exam-mode.ts';
-import { toggleStarQuestionUI, handleRematchDontKnow } from '../features/library/library-actions.ts';
-import { openBoardFocusMode, closeBoardFocusMode, navigateBoardQuestion, handleBoardOverlayClick, resetBoardPan } from '../features/board/board-mode.ts';
+import { toggleStarQuestionUI } from '../features/library/library-actions.ts';
+import { openBoardFocusMode, closeBoardFocusMode, resetBoardPan } from '../features/board/board-mode.ts';
 import { showEdebiKimlikKarti, showDivanBubble, hideTdePopups } from '../features/tde/edebiyat-pusulasi.ts';
 
 /** Eski HTML ve soru şablonlarındaki inline olayların tek bağlantı noktası. */
 export function registerLegacyHandlers() {
   Object.assign(window, {
-    cancelConfidencePrompt,
-    clearAllMarks,
-    clearDrawerSearch,
-    closeBoardFocusMode,
-    closePdfDialog,
-    closeSubjectDrawer,
     confirmConfidence,
-    cycleAccentColor,
-    cycleColumnCount,
-    cycleZoomLevel,
-    dismissResumeBanner,
-    executePdfPrint,
-    exitLibraryView,
-    handleBoardOverlayClick,
-    handleDrawerOverlayClick,
-    handleDrawerSearch,
-    handleIntersectionToggle,
-    handleRematchDontKnow,
     handleSelectOpticalBubble,
-    loadAllSearchResultsToBooklet,
-    loadAllTopicsToBooklet,
-    loadSingleSearchQuestion,
-    navigateBoardQuestion,
     hideTdePopups,
+    loadSingleSearchQuestion,
     openBoardFocusMode,
-    openExamModal: startInterleavedExam,
-    openLibraryView,
-    openPdfDialog,
-    openSubjectDrawer,
-    resetBoardPan,
-    resetBookletCanvasZoom,
-    resumeLastSession,
-    selectLevelFromDropdown,
     selectSubjectFromDropdown,
-    selectTopicFromDrawer,
-    setAccentColor,
-    setBookletFilter,
-    setContentViewMode,
-    setColumnCount,
-    setCourseFilterMode,
-    setProgramMode,
-    setThemeMode,
-    setUnifiedMode,
     showAnswerExplanationBubble,
     showDivanBubble,
     showEdebiKimlikKarti,
     showVocabBubble,
-    hideAnswerExplanationBubble,
-    startInterleavedExam,
-    switchLibraryTab,
-    switchSubjectFromDrawer,
-    toggleConsoleMenu,
-    toggleCourseInDrawer,
     toggleCourseLevel,
     toggleCümleRöntgeni,
-    toggleFeaturesBar,
     toggleFormulaNote,
-    toggleFullscreenFocusMode,
-    toggleLevelDropdown,
     togglePageKey,
-    toggleQuestionFeatures,
     toggleQuestionTranslation,
     toggleSingleAnswerReveal,
     toggleSingleHint,
     toggleStarQuestionUI,
-    toggleSubjectDropdown,
-    toggleTheme,
     toggleTrapExplanation,
-    undoClearMarks,
-    zoomIn,
-    zoomOut,
   });
+
+  // E2E test kancaları
+  window.clearAllMarks = clearAllMarks;
+  window.undoClearMarks = undoClearMarks;
+  window.toggleFeaturesBar = toggleFeaturesBar;
+  window.setThemeMode = setThemeMode;
+  window.setColumnCount = setColumnCount;
+  window.openPdfDialog = openPdfDialog;
+
   setupEventDelegation();
 }
 
@@ -240,6 +197,9 @@ export function setupEventDelegation() {
         break;
       case 'load-all-topics':
         loadAllTopicsToBooklet();
+        break;
+      case 'set-program-mode':
+        if (el.dataset.program) setProgramMode(el.dataset.program);
         break;
       default:
         break;

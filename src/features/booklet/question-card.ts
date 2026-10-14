@@ -81,17 +81,10 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
         ? enrichEnglishVocab(optText)
         : escapeHtml(optText);
 
-    const whyCorrectBtn = (isCorrect && q.dogru_nedeni) ? `
-      <button class="btn-why-correct" id="btnWhy_${q.id}" onclick="showAnswerExplanationBubble(${q.id}, this, event)" title="Neden Doğru? (Kazanım Açıklaması)">
-        <span>💡 Neden?</span>
-      </button>
-    ` : '';
-
     optHtml += `
       <div class="${rowClass}" id="opt_${q.id}_${letter}" ${clickHandler}>
         <div class="optical-bubble">${letter}</div>
         <div class="choice-text-content">${renderedOptContent}</div>
-        ${whyCorrectBtn}
       </div>
     `;
   });

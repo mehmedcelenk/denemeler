@@ -90,7 +90,13 @@ if (typeof document !== 'undefined') {
   document.addEventListener('click', (e) => {
     const target = e.target as HTMLElement | null;
     if (!target) return;
-    if (activeExplanationEl && !target.closest('.answer-explanation-bubble')) {
+    if (
+      activeExplanationEl &&
+      !target.closest('.answer-explanation-bubble') &&
+      !target.closest('.optical-choice-row') &&
+      !target.closest('[id^="btnEye_"]') &&
+      !target.closest('.btn-conf-opt')
+    ) {
       hideAnswerExplanationBubble();
     }
   });

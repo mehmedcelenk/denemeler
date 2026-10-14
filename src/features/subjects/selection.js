@@ -209,11 +209,6 @@ export function handleIntersectionToggle(isChecked) {
   setCourseFilterMode(isChecked ? 'AND' : 'OR');
 }
 
-export const switchSubjectFromDrawer = selectSubjectFromDropdown;
-export const toggleCourseInDrawer = toggleCourseLevel;
-export const toggleLevelDropdown = () => {};
-export const selectLevelFromDropdown = toggleCourseLevel;
-
 // Dışarı tıklayınca ders dropdownını kapat
 if (typeof document !== 'undefined') {
   document.addEventListener('click', (e) => {
