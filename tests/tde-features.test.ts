@@ -1,9 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { MEB_ESER_DICT } from '../src/features/tde/edebiyat-eser-dict.ts';
-import { MEB_YAZAR_DICT } from '../src/features/tde/edebiyat-yazar-dict.ts';
-import { MEB_DIVAN_GLOSAR } from '../src/features/tde/divan-glosar.ts';
+import { MEB_ESER_DICT, MEB_YAZAR_DICT, MEB_DIVAN_GLOSAR } from '../src/features/tde/edebiyat-dict.ts';
 import { enrichTdeContent, getEntityFacts } from '../src/features/tde/edebiyat-pusulasi.ts';
 import { parseTurkishSentenceElements, enrichTurkishSentenceXray } from '../src/features/tde/cumle-xray.ts';
 

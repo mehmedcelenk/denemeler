@@ -1,6 +1,5 @@
 import { escapeHtml } from '../../shared/escape.ts';
-import { MEB_ESER_DICT, MEB_YAZAR_DICT, type EserInfo, type YazarInfo } from './edebiyat-dict.ts';
-import { MEB_DIVAN_GLOSAR, type DivanWordEntry } from './divan-glosar.ts';
+import { MEB_ESER_DICT, MEB_YAZAR_DICT, MEB_DIVAN_GLOSAR, type EserInfo, type YazarInfo, type DivanWordEntry } from './edebiyat-dict.ts';
 
 let activePopoverEl: HTMLElement | null = null;
 const factIndexMap = new Map<string, number>();
