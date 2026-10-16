@@ -1,0 +1,131 @@
+/* ========================================================= */
+/* SARI FOSFORLU VURGULAYICI (HIGHLIGHTER) VE SEÇİM BALONU   */
+/* ========================================================= */
+
+.user-highlight {
+  background-color: #fef08a !important; /* Canlı sarı fosfor */
+  color: #1e293b !important;
+  border-radius: 3px;
+  padding: 1px 3px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.user-highlight:hover {
+  background-color: #fde047 !important;
+}
+
+/* Renk Çeşitleri */
+.user-highlight.hl-yellow {
+  background-color: #fef08a !important; /* Canlı sarı fosfor */
+  color: #1e293b !important;
+}
+
+.user-highlight.hl-yellow:hover {
+  background-color: #fde047 !important;
+}
+
+body.dark-mode .user-highlight.hl-yellow {
+  background-color: #854d0e !important;
+  color: #fef08a !important;
+}
+
+body.dark-mode .user-highlight.hl-yellow:hover {
+  background-color: #a16207 !important;
+}
+
+/* Kırmızı / Gül Kurusu Fosfor (Tuzak, dikkat, anahtar kelime için) */
+.user-highlight.hl-red {
+  background-color: #fecdd3 !important; /* Canlı gül/açık kırmızı */
+  color: #881337 !important;
+}
+
+.user-highlight.hl-red:hover {
+  background-color: #fda4af !important;
+}
+
+body.dark-mode .user-highlight.hl-red {
+  background-color: #9f1239 !important;
+  color: #ffe4e6 !important;
+}
+
+body.dark-mode .user-highlight.hl-red:hover {
+  background-color: #be123c !important;
+}
+
+/* Seçim Yapıldığında Metnin Üstünde Çıkan Mini E-Kitap Menüsü (Kutucuksuz / Sade Hap) */
+.selection-action-bubble {
+  position: absolute;
+  z-index: 10000;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  pointer-events: auto;
+  transform: translate(-50%, -100%) translateY(-6px);
+  animation: highlightPopIn 0.16s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.selection-action-bubble.bubble-below {
+  transform: translate(-50%, 0) translateY(6px);
+}
+
+.btn-highlight-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+.btn-highlight-action:hover,
+.btn-highlight-action:active {
+  transform: scale(1.05);
+}
+
+.btn-highlight-action.btn-hl-yellow {
+  background: #f59e0b;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .btn-highlight-action.btn-hl-yellow {
+  background: #d97706;
+  color: #ffffff;
+}
+
+.btn-highlight-action.btn-hl-red {
+  background: #e11d48;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .btn-highlight-action.btn-hl-red {
+  background: #be123c;
+  color: #ffffff;
+}
+
+@keyframes highlightPopIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%) translateY(-2px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -100%) translateY(-10px) scale(1);
+  }
+}

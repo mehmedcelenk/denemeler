@@ -1,5 +1,3 @@
-import rawFormulas from '../../data/generated/MEB_FORMULAS.json';
-
 export interface FormulaCard {
   id: string;
   title: string;
@@ -9,7 +7,7 @@ export interface FormulaCard {
   explanation: string;
 }
 
-export const FORMULA_DICTIONARY = rawFormulas as FormulaCard[];
+export const FORMULA_DICTIONARY: FormulaCard[] = [];
 
 /**
  * Bir soru metnine ve konusuna uyan formül kartlarını döndürür.

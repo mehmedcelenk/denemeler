@@ -36,6 +36,27 @@ export default defineConfig({
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
         const rawUrl = (req.url || '').split('?')[0];
+        if (rawUrl === '/api/ask-ai' && req.method === 'POST') {
+          let bodyStr = '';
+          req.on('data', chunk => { bodyStr += chunk; });
+          req.on('end', () => {
+            try {
+              const body = JSON.parse(bodyStr || '{}');
+              const topic = body.topic || body.subject || 'bu konu';
+              const userQuery = String(body.userQuery || '').trim();
+              res.statusCode = 200;
+              res.setHeader('Content-Type', 'application/json; charset=utf-8');
+              res.end(JSON.stringify({
+                reply: `Merhaba! Sorduğun "${userQuery}" ifadesi, ${topic} kapsamında dikkat etmen gereken temel bir noktadır.\n\nSoru kökündeki anahtar ipuçlarını şıklardaki kavramlarla eşleştirerek çeldirici seçenekleri kolayca eleyebilirsin.`,
+              }));
+            } catch {
+              res.statusCode = 400;
+              res.setHeader('Content-Type', 'application/json; charset=utf-8');
+              res.end(JSON.stringify({ error: 'Geçersiz JSON.' }));
+            }
+          });
+          return;
+        }
         const cleanUrl = rawUrl.replace(/^\//, '');
         if (cleanUrl.startsWith('data/') || cleanUrl.startsWith('audio/')) {
           const filePath = path.join(root, cleanUrl);
@@ -48,6 +69,33 @@ export default defineConfig({
             createReadStream(filePath).pipe(res);
             return;
           }
+        }
+        next();
+      });
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const rawUrl = (req.url || '').split('?')[0];
+        if (rawUrl === '/api/ask-ai' && req.method === 'POST') {
+          let bodyStr = '';
+          req.on('data', chunk => { bodyStr += chunk; });
+          req.on('end', () => {
+            try {
+              const body = JSON.parse(bodyStr || '{}');
+              const topic = body.topic || body.subject || 'bu konu';
+              const userQuery = String(body.userQuery || '').trim();
+              res.statusCode = 200;
+              res.setHeader('Content-Type', 'application/json; charset=utf-8');
+              res.end(JSON.stringify({
+                reply: `Merhaba! Sorduğun "${userQuery}" ifadesi, ${topic} kapsamında dikkat etmen gereken temel bir noktadır.\n\nSoru kökündeki anahtar ipuçlarını şıklardaki kavramlarla eşleştirerek çeldirici seçenekleri kolayca eleyebilirsin.`,
+              }));
+            } catch {
+              res.statusCode = 400;
+              res.setHeader('Content-Type', 'application/json; charset=utf-8');
+              res.end(JSON.stringify({ error: 'Geçersiz JSON.' }));
+            }
+          });
+          return;
         }
         next();
       });

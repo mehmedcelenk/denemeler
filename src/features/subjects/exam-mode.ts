@@ -1,4 +1,4 @@
-import { state, notifyStateChange } from '../../app/state.ts';
+import { state, store, notifyStateChange } from '../../app/state.ts';
 import { SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { loadAllSubjectData } from '../../data/questions.js';
 import type { Question } from '../../data/question.ts';
@@ -119,10 +119,10 @@ export async function startInterleavedExam(): Promise<void> {
   const shuffled = [...pool].sort(() => Math.random() - 0.5);
   const examQuestions = shuffled.slice(0, 20);
 
-  state.currentSubject = null;
-  state.selectedTopicKeys.clear();
-  state.isLibraryMode = false;
-  state.bookletQuestions = examQuestions;
+  store.setCurrentSubject(null);
+  store.clearSelectedTopicKeys();
+  store.setLibraryMode(false);
+  store.setBookletQuestions(examQuestions);
 
   notifyStateChange('booklet:updated', { customTitle: '🔀 Karışık Deneme Sınavı' });
 }

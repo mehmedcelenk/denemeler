@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { state } from '../src/app/state.ts';
+import { state, store } from '../src/app/state.ts';
 import { setContentViewMode } from '../src/features/booklet/view-mode.ts';
 
 test('setContentViewMode: Sorular ve Notlar görünümleri arasında geçiş yapar', () => {
-  state.contentViewMode = 'questions';
+  store.setContentViewMode('questions');
   assert.equal(state.contentViewMode, 'questions', 'Varsayılan görünüm sorular olmalı');
 
   setContentViewMode('notes');

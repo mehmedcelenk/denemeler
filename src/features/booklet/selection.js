@@ -1,5 +1,5 @@
 import { getTopicKey } from '../../shared/topic.ts';
-import { state, onStateChange } from '../../app/state.ts';
+import { state, store, onStateChange } from '../../app/state.ts';
 import { SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { questionMatchesSearch } from '../../shared/search.ts';
 import { getAggregatedTopics } from '../subjects/topic-model.js';
@@ -11,13 +11,13 @@ export function updateBookletQuestions() {
     const base = state.activeSearchFilter
       ? state.allData.filter(q => questionMatchesSearch(q, state.activeSearchFilter))
       : state.allData;
-    state.bookletQuestions = filterQuestionsByMode(
+    store.setBookletQuestions(filterQuestionsByMode(
       base,
       state.bookletFilterMode,
       state.userMarkedChoices,
       state.rematchQuestionIds,
       state.starredQuestionIds
-    );
+    ));
     updateTopBadge();
     renderBookletPages();
     return;
@@ -40,13 +40,13 @@ export function updateBookletQuestions() {
     return true;
   });
 
-  state.bookletQuestions = filterQuestionsByMode(
+  store.setBookletQuestions(filterQuestionsByMode(
     filtered,
     state.bookletFilterMode,
     state.userMarkedChoices,
     state.rematchQuestionIds,
     state.starredQuestionIds
-  );
+  ));
 
   updateTopBadge();
   renderBookletPages();

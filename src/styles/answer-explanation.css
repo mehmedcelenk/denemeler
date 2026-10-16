@@ -13,6 +13,9 @@
   line-height: 1.45;
   max-width: 380px;
   width: max-content;
+  overflow: visible !important;
+  max-height: none !important;
+  height: auto !important;
   pointer-events: none;
   transform: translateY(-6px) translateY(-100%);
   animation: explanationBubblePopIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;

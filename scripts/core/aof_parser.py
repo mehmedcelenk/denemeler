@@ -17,27 +17,32 @@ AOF_COURSES = [
     {
         'folder': 'HADİS TARİHİ VE USÜLÜ ARA SINAV',
         'code': 'AOF_HADIS',
-        'ders': 'HADİS TARİHİ VE USÜLÜ'
+        'ders': 'HADİS TARİHİ VE USÜLÜ',
+        'ders_kodu': 801
     },
     {
         'folder': 'İLK DÖNEM İSLAM TARİHİ ARA SINAV',
         'code': 'AOF_ITAR',
-        'ders': 'İLK DÖNEM İSLAM TARİHİ'
+        'ders': 'İLK DÖNEM İSLAM TARİHİ',
+        'ders_kodu': 802
     },
     {
         'folder': 'İSLAM AHLAK ESASLARI ARA SINAV',
         'code': 'AOF_AHLAK',
-        'ders': 'İSLAM AHLAK ESASLARI'
+        'ders': 'İSLAM AHLAK ESASLARI',
+        'ders_kodu': 803
     },
     {
         'folder': 'İSLAM İBADET ESASLARI ARA SINAV',
         'code': 'AOF_IBADET',
-        'ders': 'İSLAM İBADET ESASLARI'
+        'ders': 'İSLAM İBADET ESASLARI',
+        'ders_kodu': 804
     },
     {
         'folder': 'İSLAM İNANÇ ESASLARI ARA SINAV',
         'code': 'AOF_INANC',
-        'ders': 'İSLAM İNANÇ ESASLARI'
+        'ders': 'İSLAM İNANÇ ESASLARI',
+        'ders_kodu': 805
     }
 ]
 
@@ -52,7 +57,7 @@ def normalize_text(text):
     text = re.sub(r'[^\w\s]', '', text)
     return ' '.join(text.split())
 
-def parse_aof_folder(folder_path, course_name, global_start_id):
+def parse_aof_folder(folder_path, course_name, course_code, global_start_id):
     pdfs = sorted(glob.glob(os.path.join(folder_path, '*.pdf')))
     raw_questions = []
     current_id = global_start_id
@@ -175,7 +180,7 @@ def parse_aof_folder(folder_path, course_name, global_start_id):
             q_dict = {
                 'id': current_id,
                 'ders': course_name,
-                'ders_kodu': course_name,
+                'ders_kodu': course_code,
                 'yil': 'AÖF İlahiyat',
                 'donem': 'ARA',
                 'soru_no': len(unique_questions) + 1,
@@ -187,7 +192,6 @@ def parse_aof_folder(folder_path, course_name, global_start_id):
                 'kredi': 2,
                 'sinav_soru_sayisi': 20,
                 'puan': 0.1,
-                'ipucu': '',
                 'sekilli': False
             }
             unique_questions.append(q_dict)
@@ -203,7 +207,7 @@ def extract_all_aof_courses(base_id=20000):
         if not os.path.exists(path):
             print(f"Warning: {path} directory missing")
             continue
-        qs, curr_id = parse_aof_folder(path, c_info['ders'], curr_id)
+        qs, curr_id = parse_aof_folder(path, c_info['ders'], c_info.get('ders_kodu', 800), curr_id)
         res[c_info['code']] = qs
         print(f"  {c_info['ders']}: {len(qs)} soru ayıklandı.")
     return res

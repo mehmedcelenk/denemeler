@@ -241,8 +241,7 @@
   .booklet-page { width: 100% !important; max-width: 100% !important; height: auto !important; min-height: auto !important; padding: 18px 12px 14px 12px; box-sizing: border-box; }
   .page-columns-body,
   .page-columns-body[class*="cols-"] {
-    column-count: 1 !important;
-    column-rule: none !important;
+    grid-template-columns: 1fr !important;
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 0 16px 0 !important;

@@ -1,12 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { state } from '../src/app/state.ts';
+import { state, store } from '../src/app/state.ts';
 import { addStreakPoints, resetOrDeductStreak } from '../src/features/gamification/streak.ts';
 import { handleSelectOpticalBubble } from '../src/features/answers/marking.ts';
 import type { Question } from '../src/data/question.ts';
 
 test('addStreakPoints ve resetOrDeductStreak puanları doğru günceller', () => {
-  state.waterStreak = 0;
+  store.setWaterStreak(0, false);
   addStreakPoints(3);
   assert.equal(state.waterStreak, 3, 'Damla serisi 3 olmalı');
 
@@ -25,10 +25,10 @@ test('handleSelectOpticalBubble: İlk tıklama taslak bırakır, ikinci tıklama
     secenekler: { A: '1', B: '2', C: '3', D: '4' },
     dogru_cevap: 'B',
   };
-  state.allData = [dummyQ];
-  state.bookletQuestions = [dummyQ];
-  state.userMarkedChoices = {};
-  state.waterStreak = 0;
+  store.setAllData([dummyQ]);
+  store.setBookletQuestions([dummyQ]);
+  store.clearAllUserMarkedChoices(false);
+  store.setWaterStreak(0, false);
 
   // 1. Tıklama: henüz nihai işaretleme kaydedilmez
   handleSelectOpticalBubble(88881, 'B');
@@ -49,11 +49,11 @@ test('handleSelectOpticalBubble: Yanlış cevap verildiğinde soru Rövanş sepe
     secenekler: { A: 'Apple', B: 'Banana', C: 'Orange', D: 'Peach' },
     dogru_cevap: 'C',
   };
-  state.allData = [dummyQ];
-  state.bookletQuestions = [dummyQ];
-  state.userMarkedChoices = {};
-  state.rematchQuestionIds = new Set();
-  state.waterStreak = 5;
+  store.setAllData([dummyQ]);
+  store.setBookletQuestions([dummyQ]);
+  store.clearAllUserMarkedChoices(false);
+  store.setRematchQuestionIds([], false);
+  store.setWaterStreak(5, false);
 
   // Yanlış şık olan A şıkkına 2 kez tıkla
   handleSelectOpticalBubble(88882, 'A');
@@ -63,4 +63,3 @@ test('handleSelectOpticalBubble: Yanlış cevap verildiğinde soru Rövanş sepe
   assert.ok(state.rematchQuestionIds.has(88882), 'Yanlış bilinen soru Rövanşlara alınmalı');
   assert.equal(state.waterStreak, 4, 'Yanlış cevap seri puanını düşürmeli');
 });
-

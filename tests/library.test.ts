@@ -1,12 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { state } from '../src/app/state.ts';
+import { state, store } from '../src/app/state.ts';
 import { toggleStarQuestion, addToRematch, removeFromRematch } from '../src/features/library/library-model.ts';
 import { filterQuestionsByMode } from '../src/shared/question-filter.ts';
 import type { Question } from '../src/data/question.ts';
 
 test('toggleStarQuestion: Yıldız ekler ve kaldırır', () => {
-  state.starredQuestionIds = new Set();
+  store.setStarredQuestionIds([], false);
   toggleStarQuestion(101);
   assert.ok(state.starredQuestionIds.has(101), '101 yıldızlı olmalı');
 
@@ -15,7 +15,7 @@ test('toggleStarQuestion: Yıldız ekler ve kaldırır', () => {
 });
 
 test('addToRematch ve removeFromRematch: Rövanş sepetini yönetir', () => {
-  state.rematchQuestionIds = new Set();
+  store.setRematchQuestionIds([], false);
   addToRematch(202);
   assert.ok(state.rematchQuestionIds.has(202), '202 rövanşta olmalı');
 

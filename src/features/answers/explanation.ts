@@ -35,16 +35,10 @@ export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement 
   const bubble = document.createElement('div');
   bubble.id = 'activeExplanationBubble';
   bubble.className = 'answer-explanation-bubble';
-  bubble.setAttribute('popover', 'manual');
   bubble.innerHTML = `<span>${escapeHtml(q.dogru_nedeni)}</span>`;
 
   document.body.appendChild(bubble);
   activeExplanationEl = bubble;
-  try {
-    if (typeof bubble.showPopover === 'function') {
-      bubble.showPopover();
-    }
-  } catch {}
 
   // Konumlandırma: Dikeyde şıkkın üstü (veya altı)
   const rect = el.getBoundingClientRect();
@@ -116,11 +110,6 @@ export function hideAnswerExplanationBubble(): void {
     activeExplanationTimeout = null;
   }
   if (activeExplanationEl) {
-    try {
-      if (typeof activeExplanationEl.hidePopover === 'function') {
-        activeExplanationEl.hidePopover();
-      }
-    } catch {}
     activeExplanationEl.remove();
     activeExplanationEl = null;
   }

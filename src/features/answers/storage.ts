@@ -1,6 +1,6 @@
 import { parseSavedChoices } from '../../shared/saved-choices.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
-import { state } from '../../app/state.ts';
+import { state, store } from '../../app/state.ts';
 
 export function saveChoicesToStorage(): void {
   try {
@@ -10,6 +10,17 @@ export function saveChoicesToStorage(): void {
 
 export function loadSavedChoices(): void {
   try {
-    state.userMarkedChoices = parseSavedChoices(localStorage.getItem(StorageKeys.USER_CHOICES));
+    const parsed = parseSavedChoices(localStorage.getItem(StorageKeys.USER_CHOICES));
+    store.setUserMarkedChoices(parsed, false);
+  } catch {}
+  try {
+    const rawEliminated = localStorage.getItem(StorageKeys.ELIMINATED_CHOICES);
+    if (rawEliminated) {
+      const parsed = JSON.parse(rawEliminated);
+      if (parsed && typeof parsed === 'object') {
+        store.setEliminatedChoices(parsed, false);
+      }
+    }
   } catch {}
 }
+

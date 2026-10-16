@@ -1,4 +1,4 @@
-import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
+import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { loadSubjectData } from '../../data/questions.js';
 import { AOIHL_SUBJECTS, AOF_SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.ts';
@@ -30,7 +30,7 @@ export function getActiveSubjects() {
 }
 
 export async function setProgramMode(mode) {
-  state.programMode = mode;
+  store.setProgramMode(mode);
   const btnAoihl = document.getElementById('btnProgramAoihl');
   const btnAof = document.getElementById('btnProgramAof');
   if (btnAoihl) btnAoihl.classList.toggle('active', mode === 'AOIHL');
@@ -59,16 +59,14 @@ export async function setSubject(subj) {
   }
   if (version !== selectionVersion) return false;
 
-  state.currentSubject = subj;
-  state.selectedTopicKeys.clear();
-  state.activeSearchFilter = '';
-  state.bookletFilterMode = 'all';
+  store.setCurrentSubject(subj);
+  store.clearSelectedTopicKeys();
+  store.setActiveSearchFilter('');
+  store.setBookletFilterMode('all');
   notifyStateChange('filter:updated');
 
   const normalContainer = document.getElementById('drawerNormalSelectorContainer');
   if (normalContainer) normalContainer.style.display = 'block';
-
-  state.selectedCourses.clear();
 
   const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, subj)).map(q => q.ders)));
   courses.sort((a, b) => {
@@ -78,7 +76,9 @@ export async function setSubject(subj) {
   });
 
   if (courses.length > 0) {
-    state.selectedCourses.add(courses[0]);
+    store.setSelectedCourses([courses[0]]);
+  } else {
+    store.clearSelectedCourses();
   }
 
   updateCourseModeToggleVisibility();
@@ -116,7 +116,7 @@ export async function addSubjectRow(subjId) {
   });
 
   if (courses.length > 0) {
-    state.selectedCourses.add(courses[0]);
+    store.addSelectedCourse(courses[0]);
   }
 
   updateCourseModeToggleVisibility();
@@ -131,11 +131,11 @@ export function removeSubjectRow(subjId) {
   if (activeSubjs.length <= 1) return;
 
   const coursesToRemove = Array.from(state.selectedCourses).filter(c => matchesSubject({ ders: c }, subjId));
-  coursesToRemove.forEach(c => state.selectedCourses.delete(c));
+  coursesToRemove.forEach(c => store.removeSelectedCourse(c));
 
   const remaining = getActiveSubjects();
   if (state.currentSubject === subjId && remaining.length > 0) {
-    state.currentSubject = remaining[0].id;
+    store.setCurrentSubject(remaining[0].id);
   }
 
   updateCourseModeToggleVisibility();
@@ -155,7 +155,7 @@ export async function switchRowSubject(oldSubjId, newSubjId) {
   if (version !== selectionVersion) return;
 
   const coursesToRemove = Array.from(state.selectedCourses).filter(c => matchesSubject({ ders: c }, oldSubjId));
-  coursesToRemove.forEach(c => state.selectedCourses.delete(c));
+  coursesToRemove.forEach(c => store.removeSelectedCourse(c));
 
   const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, newSubjId)).map(q => q.ders)));
   courses.sort((a, b) => {
@@ -165,9 +165,9 @@ export async function switchRowSubject(oldSubjId, newSubjId) {
   });
 
   if (courses.length > 0) {
-    state.selectedCourses.add(courses[0]);
+    store.addSelectedCourse(courses[0]);
   }
-  state.currentSubject = newSubjId;
+  store.setCurrentSubject(newSubjId);
 
   updateCourseModeToggleVisibility();
   renderDrawerSelectorBar();
@@ -289,10 +289,10 @@ export async function selectSubjectFromDropdown(subjId) {
 export function toggleCourseLevel(courseName) {
   if (state.selectedCourses.has(courseName)) {
     if (state.selectedCourses.size > 1) {
-      state.selectedCourses.delete(courseName);
+      store.removeSelectedCourse(courseName);
     }
   } else {
-    state.selectedCourses.add(courseName);
+    store.addSelectedCourse(courseName);
   }
 
   renderDrawerSelectorBar();

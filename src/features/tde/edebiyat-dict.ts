@@ -1,6 +1,3 @@
-import rawEserDict from '../../data/generated/MEB_ESER_DICT.json';
-import rawYazarDict from '../../data/generated/MEB_YAZAR_DICT.json';
-import rawDivanDict from '../../data/generated/MEB_DIVAN_GLOSAR.json';
 
 export interface EserInfo {
   type: 'eser';
@@ -29,8 +26,8 @@ export interface DivanWordEntry {
   mazmun?: string;
 }
 
-export const MEB_ESER_DICT = rawEserDict as Record<string, EserInfo>;
-export const MEB_YAZAR_DICT = rawYazarDict as Record<string, YazarInfo>;
-export const MEB_DIVAN_GLOSAR = rawDivanDict as Record<string, DivanWordEntry>;
+export const MEB_ESER_DICT: Record<string, EserInfo> = {};
+export const MEB_YAZAR_DICT: Record<string, YazarInfo> = {};
+export const MEB_DIVAN_GLOSAR: Record<string, DivanWordEntry> = {};
 
 export type EdebiyatEntity = EserInfo | YazarInfo;

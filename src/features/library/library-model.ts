@@ -1,4 +1,4 @@
-import { state } from '../../app/state.ts';
+import { state, store } from '../../app/state.ts';
 
 const STARRED_KEY = 'aol_starred_questions';
 const REMATCH_KEY = 'aol_rematch_queue';
@@ -9,11 +9,11 @@ export function loadLibraryData(): void {
     if (rawStarred) {
       const arr = JSON.parse(rawStarred);
       if (Array.isArray(arr)) {
-        state.starredQuestionIds = new Set(arr.filter(Number.isSafeInteger));
+        store.setStarredQuestionIds(arr.filter(Number.isSafeInteger), false);
       }
     }
   } catch {
-    state.starredQuestionIds = new Set();
+    store.setStarredQuestionIds([], false);
   }
 
   try {
@@ -21,27 +21,23 @@ export function loadLibraryData(): void {
     if (rawRematch) {
       const arr = JSON.parse(rawRematch);
       if (Array.isArray(arr)) {
-        state.rematchQuestionIds = new Set(arr.filter(Number.isSafeInteger));
+        store.setRematchQuestionIds(arr.filter(Number.isSafeInteger), false);
       }
     }
   } catch {
-    state.rematchQuestionIds = new Set();
+    store.setRematchQuestionIds([], false);
   }
 
   updateLibraryBadgeUI();
 }
 
 export function saveStarred(): void {
-  try {
-    localStorage.setItem(STARRED_KEY, JSON.stringify(Array.from(state.starredQuestionIds)));
-  } catch {}
+  store.setStarredQuestionIds(state.starredQuestionIds, true);
   updateLibraryBadgeUI();
 }
 
 export function saveRematch(): void {
-  try {
-    localStorage.setItem(REMATCH_KEY, JSON.stringify(Array.from(state.rematchQuestionIds)));
-  } catch {}
+  store.setRematchQuestionIds(state.rematchQuestionIds, true);
   updateLibraryBadgeUI();
 }
 
@@ -51,26 +47,19 @@ export function saveLibraryToStorage(): void {
 }
 
 export function toggleStarQuestion(id: number): boolean {
-  let isStarred = false;
-  if (state.starredQuestionIds.has(id)) {
-    state.starredQuestionIds.delete(id);
-    isStarred = false;
-  } else {
-    state.starredQuestionIds.add(id);
-    isStarred = true;
-  }
-  saveStarred();
+  const isStarred = store.toggleStarredQuestion(id, true);
+  updateLibraryBadgeUI();
   return isStarred;
 }
 
 export function addToRematch(id: number): void {
-  state.rematchQuestionIds.add(id);
-  saveRematch();
+  store.addRematchQuestion(id, true);
+  updateLibraryBadgeUI();
 }
 
 export function removeFromRematch(id: number): void {
-  state.rematchQuestionIds.delete(id);
-  saveRematch();
+  store.removeRematchQuestion(id, true);
+  updateLibraryBadgeUI();
 }
 
 export function updateLibraryBadgeUI(): void {
@@ -82,4 +71,3 @@ export function updateLibraryBadgeUI(): void {
     badge.style.display = count > 0 ? 'inline-flex' : 'none';
   }
 }
-

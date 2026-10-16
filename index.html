@@ -53,6 +53,10 @@
     <div class="top-streak-pill" id="topStreakPill" title="Seri Puanı: Doğru cevaplarla güçlenir">
       <span class="streak-count" id="streakCountDisplay">0</span>
     </div>
+    <button type="button" class="top-room-pill" id="topRoomPill" style="display:none;" data-action="toggle-teacher-drawer" title="Sınıf Oturumu (Ayrılanlar Listesi)">
+      <span class="room-dot"></span>
+      <span class="room-pill-text"></span>
+    </button>
   </div>
 
   <!-- Kaldığın Yerden Devam Et Bildirim Kartı -->
@@ -139,6 +143,9 @@
         </button>
         <button class="btn-tool-icon" data-action="open-pdf-dialog" title="PDF / Yazdır" aria-label="PDF / Yazdır">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+        </button>
+        <button class="btn-tool-icon" data-action="open-room-modal" id="btnOpenRoomModal" title="Sınıf Oturumu" aria-label="Sınıf Oturumu">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </button>
       </div>
 
@@ -249,6 +256,102 @@
           Yazdır / PDF Al →
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 6. SINIF OTURUMU & AYRILANLAR PANELLERİ                  -->
+  <!-- ========================================================= -->
+  <!-- Sade Katılım/Oluşturma Modalı -->
+  <div class="room-modal-overlay" id="roomModalOverlay" style="display:none;">
+    <div class="room-modal-card">
+      <div class="room-modal-header">
+        <span class="room-modal-title">👥 Sınıf Oturumu</span>
+        <button class="btn-room-close" data-action="close-room-modal" title="Kapat">✕</button>
+      </div>
+      <div class="room-form-group">
+        <label class="room-form-label" for="roomInputUserName">Ad Soyad</label>
+        <input type="text" id="roomInputUserName" class="room-form-input" placeholder="Örn: Ali Yılmaz" autocomplete="name">
+      </div>
+      <div class="room-form-group">
+        <label class="room-form-label" for="roomInputRoomId">Oda Adı</label>
+        <input type="text" id="roomInputRoomId" class="room-form-input" placeholder="Örn: 12-A" autocomplete="off">
+      </div>
+      <div class="room-modal-actions">
+        <button type="button" class="btn-room-action btn-room-join" data-action="submit-room-join">Katıl</button>
+        <button type="button" class="btn-room-action btn-room-create" data-action="submit-room-create">Oluştur</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hoca Paneli: Akış & Durum Tablosu & Ayrıl Butonu -->
+  <div class="teacher-drawer-overlay" id="teacherDrawerOverlay" style="display:none;">
+    <div class="teacher-drawer-card">
+      <div class="teacher-drawer-header">
+        <div class="teacher-drawer-tabs">
+          <button type="button" class="btn-drawer-tab active" data-action="switch-room-tab" data-tab="feed">Akış</button>
+          <button type="button" class="btn-drawer-tab" data-action="switch-room-tab" data-tab="stats">Durum</button>
+        </div>
+        <button class="btn-room-close" data-action="close-teacher-drawer" title="Kapat">✕</button>
+      </div>
+
+      <!-- 1. Akış Sekmesi (Gelenler, Gidenler, El Kaldıranlar) -->
+      <div class="room-tab-content" id="roomTabContentFeed">
+        <div class="exit-log-list" id="teacherExitLogsList">
+          <div class="exit-log-empty">Henüz bir hareket yok.</div>
+        </div>
+      </div>
+
+      <!-- 2. Durum Sekmesi (Öğrenci Başına Doğru/Yanlış ve Soru Başına Süre) -->
+      <div class="room-tab-content" id="roomTabContentStats" style="display:none;">
+        <div class="room-stats-list" id="teacherStatsList">
+          <div class="exit-log-empty">Henüz soru çözen öğrenci yok.</div>
+        </div>
+        <!-- Toplu Duyuru / Mesaj Formu -->
+        <div class="room-announcement-box">
+          <input type="text" id="inputBroadcastMsg" class="room-form-input" placeholder="Sınıfa duyuru gönder..." autocomplete="off">
+          <button type="button" class="btn-send-announcement" data-action="send-broadcast-message">Gönder</button>
+        </div>
+      </div>
+
+      <!-- Hoca 3'lü Buton Grubu: Durdur, Ayrıl, Sonlandır -->
+      <div class="drawer-bottom-actions teacher-action-group">
+        <button type="button" class="btn-room-ctrl btn-pause-room" id="btnTogglePauseRoom" data-action="toggle-pause-room">⏸️ Durdur</button>
+        <button type="button" class="btn-room-ctrl btn-leave-room" data-action="leave-current-room">Ayrıl</button>
+        <button type="button" class="btn-room-ctrl btn-close-room" data-action="close-room-globally">Sonlandır</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Öğrenci Paneli: Sıralama, Hoca Çağırma & Oturumdan Ayrılma -->
+  <div class="student-drawer-overlay" id="studentDrawerOverlay" style="display:none;">
+    <div class="student-drawer-card">
+      <div class="student-drawer-header">
+        <span class="student-drawer-title" id="studentDrawerTitle">Sınıf Oturumu</span>
+        <button class="btn-room-close" data-action="close-student-drawer" title="Kapat">✕</button>
+      </div>
+      <div class="student-drawer-body">
+        <!-- Akıllı Sıralama Kartı -->
+        <div class="student-rank-badge" id="studentRankBadge">
+          <span class="rank-trophy">🏆</span>
+          <span class="rank-text" id="studentRankText">Hesaplanıyor...</span>
+        </div>
+        <button type="button" class="btn-call-teacher" id="btnCallTeacher" data-action="call-teacher-help" title="Hoca Çağır" aria-label="Hoca Çağır">
+          <span class="call-icon" style="font-size:22px; line-height:1;">✋</span>
+        </button>
+        <button type="button" class="btn-leave-room" data-action="leave-current-room">
+          Oturumdan Ayrıl
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Oturum Duraklatıldı (Pause / Mola) Perdesi -->
+  <div class="room-pause-overlay" id="roomPauseOverlay" style="display:none;">
+    <div class="room-pause-card">
+      <div class="pause-big-icon">⏸️</div>
+      <div class="pause-main-title">Oturum Duraklatıldı</div>
+      <div class="pause-sub-title">Mola veya dinleme modu aktif.</div>
     </div>
   </div>
 

@@ -1,5 +1,5 @@
 import { getAggregatedTopics } from './topic-model.js';
-import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
+import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { getCondensedCourseCode, matchesSubject, AOIHL_SUBJECTS, AOF_SUBJECTS } from '../../data/subjects.js';
 import { updateFilterButtonsUI } from '../booklet/filter.ts';
 import { escapeHtml, escapeJs } from '../../shared/escape.ts';
@@ -211,10 +211,12 @@ export function renderDrawerTopics() {
         });
         const gKeys = gTopics.map(t => t.key);
         const allSel = gKeys.every(k => state.selectedTopicKeys.has(k));
+        const nextKeys = new Set(state.selectedTopicKeys);
         gKeys.forEach(k => {
-          if (allSel) state.selectedTopicKeys.delete(k);
-          else state.selectedTopicKeys.add(k);
+          if (allSel) nextKeys.delete(k);
+          else nextKeys.add(k);
         });
+        store.setSelectedTopicKeys(nextKeys);
         renderDrawerTopics();
       });
     });
@@ -226,10 +228,12 @@ export function renderDrawerTopics() {
         const sTopics = topics.filter(t => Object.keys(t.courses).some(c => matchesSubject({ ders: c }, sId)));
         const sKeys = sTopics.map(t => t.key);
         const allSel = sKeys.every(k => state.selectedTopicKeys.has(k));
+        const nextKeys = new Set(state.selectedTopicKeys);
         sKeys.forEach(k => {
-          if (allSel) state.selectedTopicKeys.delete(k);
-          else state.selectedTopicKeys.add(k);
+          if (allSel) nextKeys.delete(k);
+          else nextKeys.add(k);
         });
+        store.setSelectedTopicKeys(nextKeys);
         renderDrawerTopics();
       });
     });
@@ -259,24 +263,19 @@ export function renderDrawerTopics() {
 }
 
 export function toggleTopicFromDrawer(topicKey) {
-  if (state.selectedTopicKeys.has(topicKey)) {
-    state.selectedTopicKeys.delete(topicKey);
-  } else {
-    state.selectedTopicKeys.add(topicKey);
-  }
+  store.toggleTopicKey(topicKey);
   renderDrawerTopics();
 }
 
 export function clearTopicSelection() {
-  state.selectedTopicKeys.clear();
+  store.clearSelectedTopicKeys();
   renderDrawerTopics();
 }
 
 export function selectTopicFromDrawer(topicKey) {
-  state.selectedTopicKeys.clear();
-  state.selectedTopicKeys.add(topicKey);
-  state.activeSearchFilter = '';
-  state.bookletFilterMode = 'all';
+  store.setSelectedTopicKeys([topicKey]);
+  store.setActiveSearchFilter('');
+  store.setBookletFilterMode('all');
   updateFilterButtonsUI();
   notifyStateChange('drawer:close');
   notifyStateChange('filter:updated');
@@ -284,8 +283,8 @@ export function selectTopicFromDrawer(topicKey) {
 }
 
 export function loadAllTopicsToBooklet() {
-  state.activeSearchFilter = '';
-  state.bookletFilterMode = 'all';
+  store.setActiveSearchFilter('');
+  store.setBookletFilterMode('all');
   updateFilterButtonsUI();
   notifyStateChange('drawer:close');
   notifyStateChange('filter:updated');

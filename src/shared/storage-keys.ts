@@ -12,6 +12,8 @@ export const StorageKeys = {
   WATER_STREAK: 'aol_water_streak',
   RESUME_STATE: 'aol_resume_state',
   TTS_GENDER: 'aol_tts_gender',
+  ELIMINATED_CHOICES: 'aol_eliminated_choices',
+  AI_EXPLANATIONS: 'aol_ai_explanations',
 } as const;
 
 export type StorageKey = typeof StorageKeys[keyof typeof StorageKeys];

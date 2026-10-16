@@ -7,6 +7,7 @@
 @import './formulas.css';
 @import './answers.css';
 @import './answer-explanation.css';
+@import './ai-tutor.css';
 @import './console.css';
 @import './drawer.css';
 @import './topics.css';
@@ -17,4 +18,7 @@
 @import './board.css';
 @import './tde.css';
 @import './combo.css';
+@import './highlights.css';
+@import './classroom.css';
+@import './classroom-extras.css';
 @import './responsive.css';

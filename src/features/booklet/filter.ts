@@ -1,4 +1,4 @@
-import { state, notifyStateChange, onStateChange, BookletFilterMode } from '../../app/state.ts';
+import { state, store, notifyStateChange, onStateChange, BookletFilterMode } from '../../app/state.ts';
 import { matchesSubject } from '../../data/subjects.js';
 import { Question } from '../../data/question.ts';
 import { updateBookletQuestions } from './selection.js';
@@ -8,15 +8,15 @@ export type UnifiedMode = 'all' | 'rematch' | 'starred' | 'notes';
 
 export function setUnifiedMode(mode: UnifiedMode): void {
   if (mode === 'notes') {
-    state.contentViewMode = 'notes';
+    store.setContentViewMode('notes');
     updateUnifiedToggleUI();
     notifyStateChange('view-mode:updated', 'notes');
     renderBookletPages();
   } else {
-    state.bookletFilterMode = mode;
-    state.isLibraryMode = false;
+    store.setBookletFilterMode(mode);
+    store.setLibraryMode(false);
     const viewChanged = state.contentViewMode !== 'questions';
-    state.contentViewMode = 'questions';
+    store.setContentViewMode('questions');
     updateUnifiedToggleUI();
     if (viewChanged) {
       notifyStateChange('view-mode:updated', 'questions');
@@ -28,10 +28,10 @@ export function setUnifiedMode(mode: UnifiedMode): void {
 }
 
 export function setBookletFilter(mode: BookletFilterMode): void {
-  state.bookletFilterMode = mode;
-  state.isLibraryMode = false;
+  store.setBookletFilterMode(mode);
+  store.setLibraryMode(false);
   if (state.contentViewMode === 'notes') {
-    state.contentViewMode = 'questions';
+    store.setContentViewMode('questions');
     notifyStateChange('view-mode:updated', 'questions');
   }
   updateUnifiedToggleUI();

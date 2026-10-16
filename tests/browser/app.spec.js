@@ -87,16 +87,18 @@ test('3 ve 4 sütun seçimi masaüstünde uygulanır, mobilde her zaman 1 sütun
   for (const columns of [3, 4]) {
     await page.evaluate(columns => window.setColumnCount(columns), columns);
     await expect(page.locator('.page-columns-body').first()).toHaveClass(new RegExp(`cols-${columns}`));
-    await expect.poll(() => page.locator('.page-columns-body').first().evaluate(element =>
-      getComputedStyle(element).columnCount
-    )).toBe(String(columns));
+    await expect.poll(() => page.locator('.page-columns-body').first().evaluate(element => {
+      const cols = getComputedStyle(element).gridTemplateColumns.trim().split(/\s+/);
+      return cols.length;
+    })).toBe(columns);
   }
 
   // Mobilde ise seçilen ayar ne olursa olsun her zaman 1 sütun olmalı
   await page.setViewportSize({ width: 390, height: 844 });
-  await expect.poll(() => page.locator('.page-columns-body').first().evaluate(element =>
-    getComputedStyle(element).columnCount
-  )).toBe('1');
+  await expect.poll(() => page.locator('.page-columns-body').first().evaluate(element => {
+    const cols = getComputedStyle(element).gridTemplateColumns.trim().split(/\s+/);
+    return cols.length;
+  })).toBe(1);
 });
 
 test('sınav kaynağı etiketi soru kartı araç satırını daraltmaz', async ({ page }) => {
@@ -154,5 +156,41 @@ test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı güncell
   await expect(page.locator('#badgeMainText')).toContainText('Konu');
   await expect(page.locator('.booklet-question').first()).toBeVisible();
 });
+
+test('AI Soru Asistanı: özellik çubuğundan soru sorulur, bildirim noktası F5 sonrası korunur ve kaydırılabilir balon açılır', async ({ page }) => {
+  await page.goto('/');
+  const firstCard = page.locator('.booklet-question:not(.is-passive-question)').first();
+  await expect(firstCard).toBeVisible();
+  const qid = await firstCard.getAttribute('data-qid');
+
+  // 1. Özellik çubuğunu aç ve AI butonuna tıkla
+  await firstCard.locator('[data-action="toggle-question-features"]').click();
+  const aiBtn = firstCard.locator(`#btnAiAsk_${qid}`);
+  await expect(aiBtn).toBeVisible();
+  await aiBtn.click();
+
+  // 2. Soru kutusuna metin yaz ve gönder
+  const askBox = firstCard.locator(`#aiAskBox_${qid}`);
+  await expect(askBox).toBeVisible();
+  const input = firstCard.locator(`#aiAskInput_${qid}`);
+  await input.fill('Tanzimat ne demek?');
+  await firstCard.locator(`[data-action="submit-ai-ask"]`).click();
+
+  // 3. Bildirim noktası (.has-ai-reply) ve kaydırılabilir balon (#activeAiReplyBubble) görünür olmalı
+  const qNum = firstCard.locator(`#qnum_${qid}`);
+  await expect(qNum).toHaveClass(/has-ai-reply/);
+  await expect(page.locator('#activeAiReplyBubble')).toBeVisible();
+  await expect(page.locator('#activeAiReplyBubble .ai-reply-scroll-body')).toContainText('Tanzimat ne demek?');
+
+  // 4. Sayfayı yenileyince (F5) bildirim noktası korunmalı ve tıklayınca balon açılıp dışarı tıklayınca kapanmalı
+  await page.reload();
+  const reloadedQNum = page.locator(`#qnum_${qid}`);
+  await expect(reloadedQNum).toHaveClass(/has-ai-reply/);
+  await reloadedQNum.click();
+  await expect(page.locator('#activeAiReplyBubble')).toBeVisible();
+  await page.locator('.page-header-band').first().click();
+  await expect(page.locator('#activeAiReplyBubble')).toHaveCount(0);
+});
+
 
 

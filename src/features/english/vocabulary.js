@@ -1,10 +1,9 @@
 import { escapeHtml } from '../../shared/escape.ts';
 
-import MEB_TRAPS_DICT from '../../data/generated/MEB_TRAPS_DICT.json';
-export { MEB_TRAPS_DICT };
+export const MEB_TRAPS_DICT = {};
 
-import MEB_VOCAB_DICT from '../../data/generated/MEB_VOCAB_DICT.json';
-export { MEB_VOCAB_DICT };
+import rawVocabDict from '../../data/generated/vocab_dict.json';
+export const MEB_VOCAB_DICT = rawVocabDict;
 
 export const CONTRACTIONS_BREAKDOWN = {
   "isn't": { tr: "değil", ar: "ليس", note: "is (-dır) + n't (olumsuzluk)" },

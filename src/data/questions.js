@@ -1,5 +1,5 @@
 import { parseQuestions } from './question.ts';
-import { state } from '../app/state.ts';
+import { store } from '../app/state.ts';
 import { SUBJECTS } from './subjects.js';
 
 import subjectManifest from './generated/subjectManifest.json';
@@ -30,7 +30,7 @@ export async function loadSubjectData(subj) {
     })
     .then(questions => {
       questions = parseQuestions(questions);
-      state.allData.push(...questions);
+      store.appendQuestions(questions);
       loadedSubjects.add(subj);
     })
     .finally(() => subjectLoadPromises.delete(subj));

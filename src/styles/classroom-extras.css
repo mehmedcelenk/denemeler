@@ -1,0 +1,229 @@
+/* Toplu Duyuru Kutusu */
+.room-announcement-box {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.room-announcement-box .room-form-input {
+  flex: 1;
+  padding: 7px 10px;
+  font-size: 12px;
+}
+
+.btn-send-announcement {
+  background: var(--brand-accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 11.5px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.btn-send-announcement:hover { opacity: 0.9; }
+
+/* Alt Aksiyonlar & Ayrıl Butonu */
+.drawer-bottom-actions {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--paper-border);
+}
+
+.btn-leave-room {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  width: 100%;
+}
+
+.btn-leave-room:hover { background: #ef4444; color: #fff; }
+
+/* Hoca 3'lü Buton Grubu */
+.teacher-action-group {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.btn-room-ctrl {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 11.5px;
+  font-weight: 750;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-pause-room {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.btn-pause-room:hover { background: #f59e0b; color: #fff; }
+
+.btn-close-room {
+  background: rgba(239, 68, 68, 0.14);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.btn-close-room:hover { background: #ef4444; color: #fff; }
+
+/* Öğrenci Yıldız Verme Butonu */
+.btn-star-student {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: transform 0.15s ease;
+}
+
+.btn-star-student:hover { transform: scale(1.3); }
+
+/* Öğrenci Sıralama Rozeti */
+.student-rank-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(2, 132, 199, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 750;
+  color: var(--brand-accent);
+}
+
+/* Pause (Mola) Perdesi */
+.room-pause-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: roomModalIn 0.25s ease;
+}
+
+.room-pause-card {
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pause-big-icon { font-size: 52px; animation: pausePulse 1.8s infinite ease-in-out; }
+.pause-main-title { font-size: 22px; font-weight: 800; letter-spacing: -0.3px; }
+.pause-sub-title { font-size: 13.5px; opacity: 0.75; font-weight: 500; }
+
+@keyframes pausePulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.75; }
+}
+
+/* Sol Üst GitHub / Supabase Tarzı Toast Bildirimleri */
+.room-toast-container {
+  position: fixed;
+  top: calc(14px + var(--safe-top));
+  left: 16px;
+  z-index: 10002;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.room-toast-card {
+  pointer-events: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 260px;
+  max-width: 340px;
+  padding: 10px 14px;
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  color: #f8fafc;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  animation: toastSlideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.25s ease;
+}
+
+.room-toast-card.hide {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+@keyframes toastSlideIn {
+  from { opacity: 0; transform: translateX(-24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.room-toast-icon { font-size: 16px; line-height: 1.3; }
+.room-toast-title { font-size: 12px; font-weight: 750; color: #ffffff; }
+.room-toast-msg { font-size: 11.5px; opacity: 0.82; color: #cbd5e1; margin-top: 2px; line-height: 1.35; }
+
+.student-drawer-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-call-teacher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border: 1.5px solid rgba(245, 158, 11, 0.35);
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-call-teacher:hover { background: #f59e0b; color: #fff; }
+.btn-call-teacher.called { background: #10b981; color: #fff; border-color: #10b981; }
+
+.btn-resolve-help {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  font-size: 11px;
+  font-weight: 750;
+  padding: 3px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: opacity 0.15s ease;
+}
+
+.btn-resolve-help:hover {
+  opacity: 0.85;
+}

@@ -4,6 +4,7 @@ import { saveChoicesToStorage, loadSavedChoices } from './storage.ts';
 import { recordAnswerForCombo } from '../gamification/combo-toast.ts';
 import { addStreakPoints, resetOrDeductStreak } from '../gamification/streak.ts';
 import { addToRematch, removeFromRematch } from '../library/library-model.ts';
+import { roomService } from '../classroom/room-service.ts';
 import type { Choice } from '../../data/question.ts';
 
 export { saveChoicesToStorage, loadSavedChoices };
@@ -82,6 +83,7 @@ function applyFinalChoice(qid: number, choice: Choice): void {
   if (q) {
     const isCorrect = (choice === q.dogru_cevap);
     recordAnswerForCombo(isCorrect);
+    roomService.logStudentAnswer(isCorrect);
 
     if (isCorrect) {
       addStreakPoints(1);
@@ -160,33 +162,31 @@ export function toggleSingleAnswerReveal(qid: number): void {
   const q = state.allData.find(item => item.id === qid);
   if (q && q.sekilli) return;
 
-  const isRevealed = state.revealedAnswers.has(qid);
-  if (isRevealed) {
-    state.revealedAnswers.delete(qid);
+  const wasRevealed = state.revealedAnswers.has(qid);
+  const isNowRevealed = store.toggleAnswerReveal(qid);
+  if (!isNowRevealed) {
     hideAnswerExplanationBubble();
-  } else {
-    state.revealedAnswers.add(qid);
   }
 
   const correctLetter = q ? q.dogru_cevap : null;
 
   document.querySelectorAll<HTMLElement>(`[data-qid="${qid}"]`).forEach(card => {
-    card.dataset.revealed = (!isRevealed) ? 'true' : 'false';
+    card.dataset.revealed = isNowRevealed ? 'true' : 'false';
   });
 
   document.querySelectorAll(`#btnEye_${qid}`).forEach(eyeBtn => {
-    eyeBtn.classList.toggle('revealed', !isRevealed);
+    eyeBtn.classList.toggle('revealed', isNowRevealed);
   });
   document.querySelectorAll(`#banner_${qid}`).forEach(bannerEl => {
-    (bannerEl as HTMLElement).style.display = !isRevealed ? 'flex' : 'none';
+    (bannerEl as HTMLElement).style.display = isNowRevealed ? 'flex' : 'none';
   });
 
   if (correctLetter) {
     document.querySelectorAll(`#opt_${qid}_${correctLetter}`).forEach(correctRow => {
-      correctRow.classList.toggle('revealed-correct', !isRevealed);
+      correctRow.classList.toggle('revealed-correct', isNowRevealed);
     });
 
-    if (!isRevealed && q && q.dogru_nedeni) {
+    if (!wasRevealed && q && q.dogru_nedeni) {
       const targetOpt = document.querySelector(`#opt_${qid}_${correctLetter}`) as HTMLElement | null;
       if (targetOpt) showAnswerExplanationBubble(qid, targetOpt);
     }
@@ -195,18 +195,13 @@ export function toggleSingleAnswerReveal(qid: number): void {
 
 /** Pusula / ipucu gösterip gizler. */
 export function toggleSingleHint(qid: number): void {
-  const isRevealed = state.revealedHints.has(qid);
-  if (isRevealed) {
-    state.revealedHints.delete(qid);
-  } else {
-    state.revealedHints.add(qid);
-  }
+  const isNowRevealed = store.toggleHintReveal(qid);
 
   document.querySelectorAll(`#btnCompass_${qid}`).forEach(compassBtn => {
-    compassBtn.classList.toggle('hint-revealed', !isRevealed);
+    compassBtn.classList.toggle('hint-revealed', isNowRevealed);
   });
   document.querySelectorAll(`#hint_${qid}`).forEach(hintEl => {
-    (hintEl as HTMLElement).style.display = !isRevealed ? 'flex' : 'none';
+    (hintEl as HTMLElement).style.display = isNowRevealed ? 'flex' : 'none';
   });
 }
 

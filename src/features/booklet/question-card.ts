@@ -16,6 +16,7 @@ const svgXray = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" str
 const svgTrap = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`;
 const svgBoard = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>`;
 const svgStar = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+const svgAiSparkles = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg>`;
 
 /** Soru kartının üst başlık satırını ve araç butonlarını üretir. */
 export function renderCardHeader(q: Question, globalIdx: number, isPassive: boolean): string {
@@ -78,14 +79,29 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
     </button>
   `;
 
+  const hasAiReply = Boolean(state.aiExplanations && state.aiExplanations[q.id]);
+  const isAiPending = Boolean(state.pendingAiQuestions && state.pendingAiQuestions.has(q.id));
+  const aiAskBtnHtml = isPassive ? '' : `
+    <button class="btn-companion-icon btn-ai-ask ${hasAiReply ? 'has-ai-reply' : ''}" id="btnAiAsk_${q.id}" data-action="toggle-ai-ask" data-qid="${q.id}" title="Yapay Zeka Öğretmene Sor">
+      ${svgAiSparkles}
+    </button>
+  `;
+
   const isExpanded = state.isFeaturesExpanded || (Boolean(state.expandedQuestionIds) && state.expandedQuestionIds.has(q.id));
   const pointsStr = typeof q.puan === 'number' ? q.puan.toFixed(2) : '5.00';
   const krediStr = q.kredi ? String(q.kredi) : '2';
 
+  const qNumClasses = ['q-number'];
+  if (hasAiReply) qNumClasses.push('has-ai-reply');
+  if (isAiPending) qNumClasses.push('is-ai-pending');
+
   return `
     <div class="q-top-row">
       <div class="q-header-meta">
-        <span class="q-number">${globalIdx}.</span>
+        <span class="${qNumClasses.join(' ')}" id="qnum_${q.id}" data-action="show-ai-reply" data-qid="${q.id}" title="${hasAiReply ? 'AI Öğretmen yanıtını görmek için dokun' : ''}">
+          <span class="q-ai-notify-dot" id="aidot_${q.id}"></span>
+          ${globalIdx}.
+        </span>
         ${soonBadge}
         ${cefrBadgeHtml}
         ${diffBadgeHtml}
@@ -100,6 +116,7 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
         ${xrayBtnHtml}
         ${formulaBtnHtml}
         ${trapBtnHtml}
+        ${aiAskBtnHtml}
         ${starBtnHtml}
         ${eyeBtnHtml}
         ${boardBtnHtml}
@@ -162,7 +179,12 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
     const isCorrect = (q.dogru_cevap === letter);
     const isUserCorrect = (userMark === q.dogru_cevap);
 
+    const isEliminated = Boolean(state.eliminatedChoices[q.id]?.includes(letter));
+
     let rowClass = 'optical-choice-row';
+    if (isEliminated) {
+      rowClass += ' eliminated';
+    }
     if (isMarked) {
       rowClass += ' marked';
       if (!isRematchOrMistakes) {
@@ -181,7 +203,7 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
 
     optHtml += `
       <div class="${rowClass}" id="opt_${q.id}_${letter}" data-letter="${letter}" ${clickHandler}>
-        <div class="optical-bubble">${letter}</div>
+        <div class="optical-bubble" data-qid="${q.id}" data-letter="${letter}" title="Basılı tut: Şıkkı ele / geri al">${letter}</div>
         <div class="choice-text-content">${renderedOptContent}</div>
       </div>
     `;
@@ -235,7 +257,16 @@ export function renderCardBanners(q: Question, isPassive: boolean): string {
     </div>
   `;
 
-  return `${hintHtml}${formulaBannerHtml}${trapBannerHtml}${answerBannerHtml}`;
+  const aiAskBoxHtml = isPassive ? '' : `
+    <div class="single-ai-ask-box" id="aiAskBox_${q.id}" style="display:none;">
+      <div class="ai-ask-input-row">
+        <input type="text" class="ai-ask-input" id="aiAskInput_${q.id}" data-qid="${q.id}" maxlength="250" placeholder="Bu soruda takıldığın yeri veya kavramı sor..." />
+        <button type="button" class="btn-ai-submit" data-action="submit-ai-ask" data-qid="${q.id}">Sor</button>
+      </div>
+    </div>
+  `;
+
+  return `${aiAskBoxHtml}${hintHtml}${formulaBannerHtml}${trapBannerHtml}${answerBannerHtml}`;
 }
 
 /** Tek bir sorunun tam kitapçık kartı HTML'ini üretir. */

@@ -31,6 +31,8 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Hesap makinesi | `src/features/calculator/calculator.js` |
 | Yazdırma/PDF | `src/features/print/print.js` |
 | Ezan sayacı | `src/features/prayer/prayer.js` |
+| Sınıf oturumu & odak takibi | `src/features/classroom/` |
+| AI Soru Asistanı ("Hocaya Sor") | `src/features/ai-tutor/ai-tutor.ts` & `functions/api/ask-ai.ts` |
 | CSS | `src/styles/` altında ilgili özellik dosyası |
 
 ## Çalışma akışı

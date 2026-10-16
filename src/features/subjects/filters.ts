@@ -1,7 +1,7 @@
-import { state, notifyStateChange } from '../../app/state.ts';
+import { state, store, notifyStateChange } from '../../app/state.ts';
 
 export function setCourseFilterMode(mode: 'OR' | 'AND'): void {
-  state.courseFilterMode = mode;
+  store.setCourseFilterMode(mode);
   const chk = document.getElementById('chkIntersectionSwitch') as HTMLInputElement | null;
   if (chk) {
     chk.checked = (mode === 'AND');

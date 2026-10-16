@@ -1,4 +1,4 @@
-import { state } from '../../app/state.ts';
+import { state, store } from '../../app/state.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 
 export const ACCENT_COLORS: Record<string, { light: string; dark: string }> = {
@@ -123,14 +123,14 @@ function updateContainerTransform() {
 }
 
 export function resetBookletCanvasZoom() {
-  state.canvasZoomScale = 1.0;
+  store.setCanvasZoomScale(1.0);
   panX = 0;
   panY = 0;
   updateContainerTransform();
 }
 
 export function setBookletCanvasScale(scale: number) {
-  state.canvasZoomScale = Math.min(2.5, Math.max(0.85, scale));
+  store.setCanvasZoomScale(scale);
   updateContainerTransform();
 }
 
@@ -153,7 +153,7 @@ export function initBookletCanvasZoom() {
     const scaleRatio = newScale / state.canvasZoomScale;
     panX = mouseX - scaleRatio * (mouseX - panX);
     panY = mouseY - scaleRatio * (mouseY - panY);
-    state.canvasZoomScale = newScale;
+    store.setCanvasZoomScale(newScale);
     updateContainerTransform();
   }, { passive: false });
 
@@ -191,7 +191,7 @@ export function initBookletCanvasZoom() {
       const scaleRatio = targetScale / pinchStartScale;
       panX = pinchStartCenter.x - scaleRatio * (pinchStartCenter.x - pinchStartPan.x) + panDx;
       panY = pinchStartCenter.y - scaleRatio * (pinchStartCenter.y - pinchStartPan.y) + panDy;
-      state.canvasZoomScale = targetScale;
+      store.setCanvasZoomScale(targetScale);
       updateContainerTransform();
     }
   }, { passive: false });
@@ -206,10 +206,7 @@ export function cycleColumnCount() {
 
 export function setColumnCount(n: number) {
   if (![1, 2, 3, 4].includes(n)) n = 2;
-  state.currentColumnCount = n;
-  try {
-    localStorage.setItem(StorageKeys.COLUMN_COUNT, String(n));
-  } catch {}
+  store.setColumnCount(n, true);
 
   const cycleBtn = document.getElementById('btnConsoleColumnCycle');
   if (cycleBtn) {
@@ -233,7 +230,8 @@ export function setColumnCount(n: number) {
 }
 
 export function cycleZoomLevel() {
-  state.zoomLevelIndex = (state.zoomLevelIndex + 1) % zoomScales.length;
+  const nextIdx = (state.zoomLevelIndex + 1) % zoomScales.length;
+  store.setZoomLevelIndex(nextIdx);
   document.documentElement.style.setProperty('--booklet-font-size', zoomScales[state.zoomLevelIndex]);
   updateZoomCycleUI();
   notifyBookletLayoutChange();
@@ -250,7 +248,7 @@ export function updateZoomCycleUI() {
 
 export function zoomIn() {
   if (state.zoomLevelIndex < zoomScales.length - 1) {
-    state.zoomLevelIndex++;
+    store.setZoomLevelIndex(state.zoomLevelIndex + 1);
     document.documentElement.style.setProperty('--booklet-font-size', zoomScales[state.zoomLevelIndex]);
     updateZoomCycleUI();
     notifyBookletLayoutChange();
@@ -259,7 +257,7 @@ export function zoomIn() {
 
 export function zoomOut() {
   if (state.zoomLevelIndex > 0) {
-    state.zoomLevelIndex--;
+    store.setZoomLevelIndex(state.zoomLevelIndex - 1);
     document.documentElement.style.setProperty('--booklet-font-size', zoomScales[state.zoomLevelIndex]);
     updateZoomCycleUI();
     notifyBookletLayoutChange();
@@ -297,14 +295,7 @@ export function toggleFullscreenFocusMode() {
 export function toggleQuestionFeatures(qId: number | string) {
   const id = Number(qId);
   if (isNaN(id)) return;
-  if (!state.expandedQuestionIds) state.expandedQuestionIds = new Set();
-  const currentlyExpanded = state.expandedQuestionIds.has(id);
-  if (currentlyExpanded) {
-    state.expandedQuestionIds.delete(id);
-  } else {
-    state.expandedQuestionIds.add(id);
-  }
-  const isNowExpanded = !currentlyExpanded;
+  const isNowExpanded = store.toggleQuestionExpanded(id);
   const card = document.getElementById(`bq_${id}`);
   if (card) {
     const drawer = card.querySelector('.q-features-drawer');
@@ -315,7 +306,7 @@ export function toggleQuestionFeatures(qId: number | string) {
 }
 
 export function toggleFeaturesBar() {
-  state.isFeaturesExpanded = !state.isFeaturesExpanded;
+  store.toggleFeaturesExpanded();
   updateFeaturesBarUI();
 }
 

@@ -60,16 +60,17 @@ body.fullscreen-focus-mode .booklet-stream-container {
 }
 
 .page-columns-body {
-  column-gap: 32px;
-  column-rule: 1px solid var(--paper-rule);
+  display: grid;
+  gap: 20px 32px;
   width: 100%;
   margin-bottom: 24px;
+  align-items: start;
 }
 
-.page-columns-body.cols-1 { column-count: 1 !important; column-rule: none !important; max-width: 680px; margin: 0 auto 24px auto; }
-.page-columns-body.cols-2 { column-count: 2 !important; column-gap: 32px !important; column-rule: 1px solid var(--paper-rule) !important; }
-.page-columns-body.cols-3 { column-count: 3 !important; column-gap: 22px !important; column-rule: 1px solid var(--paper-rule) !important; }
-.page-columns-body.cols-4 { column-count: 4 !important; column-gap: 16px !important; column-rule: 1px solid var(--paper-rule) !important; }
+.page-columns-body.cols-1 { grid-template-columns: 1fr !important; max-width: 680px; margin: 0 auto 24px auto; }
+.page-columns-body.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 20px 32px !important; }
+.page-columns-body.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 18px 22px !important; }
+.page-columns-body.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 16px 16px !important; }
 
 /* Soru Bloğu */
 .booklet-question {

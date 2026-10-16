@@ -1,19 +1,27 @@
 import { loadSubjectData } from '../data/questions.js';
-import { state } from './state.ts';
+import { state, store } from './state.ts';
 import { renderDrawerSubjects, setSubject } from '../features/subjects/selection.js';
 import { updatePrayerCountdown } from '../features/prayer/prayer.js';
 import { initBookletCanvasZoom, initTheme, initAccentColor, setColumnCount } from '../features/appearance/preferences.ts';
 import { StorageKeys } from '../shared/storage-keys.ts';
 import { loadSavedChoices } from '../features/answers/marking.ts';
+import { initChoiceElimination } from '../features/annotations/eliminate-choice.ts';
+import { initTextHighlighter } from '../features/annotations/highlighter.ts';
+import { initRoomFeature } from '../features/classroom/room-ui.ts';
+import { initAiTutor } from '../features/ai-tutor/ai-tutor.ts';
 
 export async function startApp() {
   if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(() => {});
   }
   loadSavedChoices();
+  initAiTutor();
   initTheme();
   initAccentColor();
   initBookletCanvasZoom();
+  initChoiceElimination();
+  initTextHighlighter();
+  initRoomFeature();
   try {
     await initApp();
   } catch (error) {
@@ -29,7 +37,7 @@ export async function initApp() {
   try {
     const savedCols = localStorage.getItem(StorageKeys.COLUMN_COUNT);
     if (savedCols) {
-      state.currentColumnCount = parseInt(savedCols, 10) || 2;
+      store.setColumnCount(parseInt(savedCols, 10) || 2, false);
     }
   } catch (e) {}
   setColumnCount(state.currentColumnCount);

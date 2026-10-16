@@ -6,6 +6,8 @@ export type SubjectId = 'COG' | 'TDE' | 'MAT' | 'TAR' | 'INK' | 'KIM' | 'FIZ' | 
 export interface Question {
   id: number;
   ders: string;
+  ders_kodu?: number;
+  soru_no?: number;
   soru: string;
   secenekler: Partial<Record<Choice, string>> & Record<'A' | 'B' | 'C' | 'D', string>;
   dogru_cevap: Choice;
@@ -61,7 +63,7 @@ export function parseQuestions(value: unknown): Question[] {
     if (question.zorluk !== undefined && !['kek', 'orta', 'boss'].includes(question.zorluk as string)) {
       throw new Error(`${id}: zorluk değeri geçersiz.`);
     }
-    for (const key of ['puan', 'kredi', 'sinav_soru_sayisi']) {
+    for (const key of ['puan', 'kredi', 'sinav_soru_sayisi', 'ders_kodu', 'soru_no']) {
       if (question[key] !== undefined && (typeof question[key] !== 'number' || !Number.isFinite(question[key]))) {
         throw new Error(`${id}: ${key} sonlu bir sayı olmalı.`);
       }

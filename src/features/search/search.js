@@ -1,4 +1,4 @@
-import { state, notifyStateChange } from '../../app/state.ts';
+import { state, store, notifyStateChange } from '../../app/state.ts';
 import { loadAllSubjectData } from '../../data/questions.js';
 import { SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
 import { trNormalize } from '../../shared/search.ts';
@@ -210,8 +210,8 @@ export function renderSearchResults() {
 
 export function loadAllSearchResultsToBooklet() {
   if (currentSearchResults.length === 0) return;
-  state.bookletQuestions = currentSearchResults.map(m => m.q);
-  state.activeSearchFilter = drawerSearchTerm;
+  store.setBookletQuestions(currentSearchResults.map(m => m.q));
+  store.setActiveSearchFilter(drawerSearchTerm);
   notifyStateChange('drawer:close');
   notifyStateChange('booklet:updated');
 }
@@ -220,11 +220,11 @@ export function loadSingleSearchQuestion(qid) {
   const targetQ = state.allData.find(q => q.id === qid);
   if (!targetQ) return;
   
-  state.bookletQuestions = currentSearchResults.map(m => m.q);
-  if (state.bookletQuestions.length === 0) {
-    state.bookletQuestions = [targetQ];
-  }
-  state.activeSearchFilter = drawerSearchTerm;
+  const questions = currentSearchResults.length > 0
+    ? currentSearchResults.map(m => m.q)
+    : [targetQ];
+  store.setBookletQuestions(questions);
+  store.setActiveSearchFilter(drawerSearchTerm);
   notifyStateChange('drawer:close');
   notifyStateChange('booklet:updated', { targetQid: qid });
 

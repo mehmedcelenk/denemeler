@@ -1,38 +1,31 @@
-import { state } from '../../app/state.ts';
+import { state, store } from '../../app/state.ts';
 
 const STREAK_KEY = 'aol_water_streak';
-const LAST_DATE_KEY = 'aol_last_streak_date';
 
 export function loadStreak(): number {
   try {
     const raw = localStorage.getItem(STREAK_KEY);
     const count = raw ? parseInt(raw, 10) || 0 : 0;
-    state.waterStreak = count;
+    store.setWaterStreak(count, false);
     updateStreakUI();
     return count;
   } catch {
-    state.waterStreak = 0;
+    store.setWaterStreak(0, false);
     return 0;
   }
 }
 
 export function saveStreak(): void {
-  try {
-    localStorage.setItem(STREAK_KEY, String(state.waterStreak));
-    const today = new Date().toISOString().split('T')[0];
-    localStorage.setItem(LAST_DATE_KEY, today);
-  } catch {}
+  store.setWaterStreak(state.waterStreak, true);
 }
 
 export function addStreakPoints(points: number): void {
-  state.waterStreak += points;
-  saveStreak();
+  store.addWaterStreak(points, true);
   updateStreakUI(true);
 }
 
 export function resetOrDeductStreak(deduct = 1): void {
-  state.waterStreak = Math.max(0, state.waterStreak - deduct);
-  saveStreak();
+  store.deductWaterStreak(deduct, true);
   updateStreakUI(false);
 }
 

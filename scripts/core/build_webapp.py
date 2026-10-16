@@ -121,7 +121,7 @@ def main():
                     for item in json.load(f_sub):
                         if 'id' in item:
                             extras = {
-                                k: item[k] for k in ['soru', 'soru_tr', 'soru_ar', 'soru_xray'] if k in item
+                                k: item[k] for k in ['soru', 'soru_tr', 'soru_ar', 'soru_xray', 'dogru_nedeni'] if k in item
                             }
                             if extras:
                                 existing_extra_fields.setdefault(item['id'], {}).update(extras)
@@ -137,9 +137,13 @@ def main():
         ipucu = get_hint_for_question(q)
         sekilli = is_visual_question(q)
 
+        course_name = q['ders']
+        if course_name.startswith('TÜRK DİLİ VE ED. –'):
+            course_name = course_name.replace('TÜRK DİLİ VE ED. –', 'TÜRK DİLİ VE EDEBİYATI –')
+
         q_dict = {
             'id': q['id'],
-            'ders': q['ders'],
+            'ders': course_name,
             'ders_kodu': q.get('ders_kodu', ''),
             'yil': q['yil'],
             'donem': str(q['donem']),
@@ -152,9 +156,10 @@ def main():
             'kredi': kredi,
             'sinav_soru_sayisi': sinav_soru_sayisi,
             'puan': puan,
-            'ipucu': ipucu,
             'sekilli': sekilli
         }
+        if ipucu:
+            q_dict['ipucu'] = ipucu
         if q['id'] in existing_extra_fields:
             q_dict.update(existing_extra_fields[q['id']])
         cleaned_list.append(q_dict)
@@ -206,8 +211,7 @@ def main():
     generated_dir.mkdir(parents=True, exist_ok=True)
     for name, value in {
         'subjectManifest': subject_manifest,
-        'MEB_TRAPS_DICT': MEB_TRAPS_DICT,
-        'MEB_VOCAB_DICT': MEB_VOCAB_DICT,
+        'vocab_dict': MEB_VOCAB_DICT,
     }.items():
         (generated_dir / f'{name}.json').write_text(
             json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'
