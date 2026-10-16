@@ -117,10 +117,22 @@
   --explanation-bubble-accent: var(--brand-accent);
   border-color: var(--brand-accent);
   pointer-events: auto;
-  max-height: 220px !important;
+  max-height: 230px !important;
   overflow: visible !important;
   padding: 0.55em 0.85em;
   gap: 6px;
+  z-index: 1005; /* Header badge (1000) üstünde temiz katman */
+  box-sizing: border-box;
+}
+
+.answer-explanation-bubble.ai-reply-bubble.bubble-below {
+  transform: translateY(0);
+  animation: aiBubblePopInBelow 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes aiBubblePopInBelow {
+  from { opacity: 0; transform: translateY(-4px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 body.dark-mode .answer-explanation-bubble.ai-reply-bubble {

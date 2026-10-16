@@ -124,11 +124,12 @@ export async function onRequestPost(context: {
   }
 
   const { data } = validation;
-  const apiKey = env?.GEMINI_API_KEY;
+  // Cloudflare Pages Functions ortamında değişken env içinde veya global process.env içinde olabilir
+  const apiKey = env?.GEMINI_API_KEY || (typeof process !== 'undefined' ? (process.env as Record<string, string | undefined>)?.GEMINI_API_KEY : undefined);
 
   if (!apiKey) {
     return jsonResponse({
-      reply: `Merhaba! Sorduğun "${data.userQuery}" noktası, ${data.topic || data.subject || 'bu konu'} kapsamında çok önemli bir kavramdır.\n\nSoruyu çözerken soru kökündeki anahtar kelimelerin altını çizerek şıklardaki kavramlarla eşleştirme yapabilirsin. Hangi iki şık arasında kaldığını düşünerek eleme yöntemini kullanmanı öneririm.`,
+      reply: `⚠️ [API Anahtarı Tanımlanmamış]: Cloudflare Pages Settings > Environment Variables altına "GEMINI_API_KEY" ekleyip ardından projeyi tekrar deploy etmelisiniz.\n\nSorduğunuz "${data.userQuery}" sorusu için şu an şablon yanıt gösterilmektedir.`,
     });
   }
 
@@ -155,7 +156,11 @@ export async function onRequestPost(context: {
     });
 
     if (!upstreamRes.ok) {
-      return jsonResponse({ error: 'Yapay zeka servisi şu anda yanıt veremedi.' }, 502);
+      const errText = await upstreamRes.text();
+      return jsonResponse({
+        error: `Yapay zeka servisi yanıt vermedi (${upstreamRes.status}): ${errText.slice(0, 150)}`,
+        reply: `⚠️ Gemini servisi yanıt veremedi (${upstreamRes.status}). API anahtarınızı veya kota durumunu kontrol ediniz.`,
+      }, 502);
     }
 
     const geminiJson = (await upstreamRes.json()) as {

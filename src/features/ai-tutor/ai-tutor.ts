@@ -144,22 +144,44 @@ export function showAiReplyBubble(qid: number, targetEl?: HTMLElement | null): v
   const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const targetCenterX = rect.left + scrollLeft + (rect.width / 2);
-  const isBelow = rect.top < 190;
-  if (isBelow) bubble.classList.add('bubble-below');
-  bubble.style.top = `${(isBelow ? rect.bottom : rect.top) + scrollTop}px`;
 
   const container = el.closest<HTMLElement>('.booklet-question') || el.closest<HTMLElement>('.booklet-page') || document.body;
   const cRect = container.getBoundingClientRect();
-  const maxW = Math.min(380, Math.max(220, cRect.width - 8));
-  bubble.style.maxWidth = `${maxW}px`;
-  bubble.style.width = `${maxW}px`;
-
-  const bRect = bubble.getBoundingClientRect();
   const cLeft = cRect.left + scrollLeft;
   const cRight = cRect.right + scrollLeft;
-  const bubbleLeft = Math.max(cLeft + 4, Math.min(cRight - 4 - bRect.width, targetCenterX - 24));
+
+  // Ekran (viewport) sınırlarına göre maksimum genişlik ve konum
+  const vpLeft = scrollLeft + 8;
+  const vpRight = scrollLeft + window.innerWidth - 8;
+  const maxW = Math.min(380, Math.max(200, Math.min(cRect.width - 8, window.innerWidth - 16)));
+  bubble.style.maxWidth = `${maxW}px`;
+  bubble.style.width = 'max-content';
+
+  const bRect = bubble.getBoundingClientRect();
+  const bubbleW = bRect.width || maxW;
+
+  // Sol-sağ sınırları hem kart/sütun hem viewport içinde tut
+  const minLeft = Math.max(cLeft + 4, vpLeft);
+  const maxLeft = Math.min(cRight - 4 - bubbleW, vpRight - bubbleW);
+  let bubbleLeft = targetCenterX - 24;
+  if (bubbleLeft > maxLeft) bubbleLeft = maxLeft;
+  if (bubbleLeft < minLeft) bubbleLeft = minLeft;
   bubble.style.left = `${bubbleLeft}px`;
-  bubble.style.setProperty('--arrow-left', `${Math.max(14, Math.min(bRect.width - 14, targetCenterX - bubbleLeft))}px`);
+
+  // Sivri oku doğrudan hedef elementin (soru numarası / nokta) merkezine kilitli tut
+  const arrowPos = Math.max(14, Math.min(bubbleW - 14, targetCenterX - bubbleLeft));
+  bubble.style.setProperty('--arrow-left', `${arrowPos}px`);
+
+  // Dikey konumlandırma: Soru numarası yukarıdaysa veya balon üstte ekran dışına taşacaksa alta aç
+  const estimatedH = 220;
+  const isBelow = rect.top < (estimatedH + 20) || (rect.top - estimatedH < 65);
+  if (isBelow) {
+    bubble.classList.add('bubble-below');
+    bubble.style.top = `${rect.bottom + scrollTop + 6}px`;
+  } else {
+    bubble.classList.remove('bubble-below');
+    bubble.style.top = `${rect.top + scrollTop - 6}px`;
+  }
 }
 
 export function hideAiReplyBubble(): void {
