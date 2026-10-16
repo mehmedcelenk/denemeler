@@ -105,19 +105,32 @@ export async function submitAiQuestion(qid: number): Promise<void> {
   if (box) box.style.display = 'none';
 
   const payload = buildZeroKnowledgePayload(q, rawQuery, state.currentSubject);
-  const fallbackReply = `Bu soruda "${q.alt_konu || q.ana_konu || 'ilgili konu'}" kavramına ve soru kökündeki anahtar ifadelere odaklanmalısın. Seçenekleri elerken kökün senden istediği temel özelliği karşılaştırarak ilerleyebilirsin.`;
   try {
     const res = await fetch('/api/ask-ai', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     });
-    const data = res.ok ? ((await res.json()) as { reply?: string }) : null;
-    const replyText = (data && typeof data.reply === 'string' && data.reply.trim()) ? data.reply.trim() : fallbackReply;
+    const data = (await res.json().catch(() => null)) as { reply?: string; error?: string } | null;
+    let replyText = '';
+    if (res.ok && data?.reply) {
+      replyText = data.reply.trim();
+    } else if (data?.reply) {
+      replyText = data.reply.trim();
+    } else if (data?.error) {
+      replyText = `⚠️ Hata (${res.status}): ${data.error}`;
+    } else {
+      replyText = `⚠️ Sunucu yanıtı alınamadı (HTTP ${res.status}). Cloudflare Functions yapılandırmasını kontrol ediniz.`;
+    }
     store.setAiExplanation(qid, { query: payload.userQuery, reply: replyText, updatedAt: Date.now() });
     if (input) input.value = '';
-  } catch {
-    store.setAiExplanation(qid, { query: payload.userQuery, reply: fallbackReply, updatedAt: Date.now() });
+  } catch (err: unknown) {
+    const errMessage = err instanceof Error ? err.message : String(err);
+    store.setAiExplanation(qid, {
+      query: payload.userQuery,
+      reply: `⚠️ Bağlantı hatası: ${errMessage}. Sunucuya erişilemedi.`,
+      updatedAt: Date.now(),
+    });
   } finally {
     store.setPendingAiQuestion(qid, false);
     syncAiQuestionDomState(qid);

@@ -101,7 +101,7 @@ export default defineConfig({
       });
     },
     closeBundle() {
-      for (const name of ['data', 'audio', 'CNAME', 'manifest.json', 'sw.js']) {
+      for (const name of ['data', 'audio', 'manifest.json', 'sw.js']) {
         if (existsSync(`${root}${name}`)) {
           cpSync(`${root}${name}`, `${root}dist/${name}`, { recursive: true });
         }
