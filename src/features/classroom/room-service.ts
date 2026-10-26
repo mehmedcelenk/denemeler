@@ -1,23 +1,39 @@
-import type { RoomFeedItem, RoomMessage, RoomParticipant, RoomState, StudentStats } from './types.ts';
+import type { RoomMessage, RoomMessagePayload, RoomMessageType, RoomState } from './types.ts';
 import { roomChannel } from './room-channel.ts';
-import { handleIncomingRoomMessage } from './message-handler.ts';
+import { addFeedItem, handleIncomingRoomMessage } from './message-handler.ts';
+import { clearRoomSession, loadRoomSession, saveRoomSession } from './session-store.ts';
+import { releaseScreenWakeLock, requestScreenWakeLock } from './wake-lock.ts';
 
 type Listener = (state: RoomState) => void;
+type ResumeCallback = () => void;
+
+const INITIAL_ROOM_STATE: RoomState = {
+  roomId: null,
+  userName: '',
+  isHost: false,
+  isPaused: false,
+  participants: [],
+  feedItems: [],
+  studentStats: {},
+  helpRequested: false,
+};
 
 class RoomService {
   private peerId: string = Math.random().toString(36).substring(2, 9);
-  private state: RoomState = {
-    roomId: null,
-    userName: '',
-    isHost: false,
-    isPaused: false,
-    participants: [],
-    feedItems: [],
-    studentStats: {},
-    helpRequested: false,
-  };
+  private state: RoomState = { ...INITIAL_ROOM_STATE };
   private listeners: Set<Listener> = new Set();
-  private heartbeatTimer: any = null;
+  private resumeListeners: Set<ResumeCallback> = new Set();
+  private heartbeatTimer: ReturnType<typeof setInterval> | null = null;
+  private syncDebounceTimer: ReturnType<typeof setTimeout> | null = null;
+  private answeredQuestions: Map<number, boolean> = new Map();
+
+  constructor() {
+    this.resetState();
+  }
+
+  getPeerId(): string {
+    return this.peerId;
+  }
 
   getState(): RoomState {
     return this.state;
@@ -29,12 +45,18 @@ class RoomService {
     return () => this.listeners.delete(listener);
   }
 
-  joinOrCreateRoom(roomId: string, userName: string, asHost: boolean): void {
+  onResume(callback: ResumeCallback): () => void {
+    this.resumeListeners.add(callback);
+    return () => this.resumeListeners.delete(callback);
+  }
+
+  joinOrCreateRoom(roomId: string, userName: string, asHost: boolean, savedPeerId?: string): void {
     const cleanRoom = roomId.trim().toUpperCase();
     const cleanName = userName.trim();
     if (!cleanRoom || !cleanName) return;
 
     this.leaveRoom();
+    if (savedPeerId) this.peerId = savedPeerId;
 
     const now = Date.now();
     this.state = {
@@ -43,229 +65,166 @@ class RoomService {
       isHost: asHost,
       isPaused: false,
       participants: [{ id: this.peerId, name: cleanName, isHost: asHost, joinedAt: now }],
-      feedItems: [{ id: `${now}_${this.peerId}`, type: 'JOIN', studentName: cleanName, timestamp: now }],
-      studentStats: {
-        [this.peerId]: { id: this.peerId, name: cleanName, correctCount: 0, incorrectCount: 0, joinedAt: now },
-      },
+      feedItems: [{ id: `${now}_${this.peerId}`, type: 'JOIN', studentId: this.peerId, studentName: cleanName, timestamp: now }],
+      studentStats: asHost ? {} : { [this.peerId]: { id: this.peerId, name: cleanName, correctCount: 0, incorrectCount: 0, joinedAt: now } },
       helpRequested: false,
     };
 
+    saveRoomSession({ peerId: this.peerId, roomId: cleanRoom, userName: cleanName, isHost: asHost, timestamp: now });
     roomChannel.connect(cleanRoom, (msg) => this.handleIncoming(msg));
-    roomChannel.send({
-      type: 'PEER_JOIN',
-      roomId: cleanRoom,
-      senderId: this.peerId,
-      senderName: cleanName,
-      isHost: asHost,
-      timestamp: now,
-    });
-
+    requestScreenWakeLock().catch(() => {});
+    this.emit('PEER_JOIN', undefined, now);
     this.notify();
     this.startHeartbeat();
   }
 
+  restoreSessionIfActive(): boolean {
+    const data = loadRoomSession();
+    if (data && data.roomId && data.userName && data.peerId) {
+      this.joinOrCreateRoom(data.roomId, data.userName, !!data.isHost, data.peerId);
+      return true;
+    }
+    return false;
+  }
+
   leaveRoom(): void {
     if (!this.state.roomId) return;
-
-    roomChannel.send({
-      type: 'PEER_LEAVE',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      timestamp: Date.now(),
-    });
-
+    releaseScreenWakeLock().catch(() => {});
+    this.emit('PEER_LEAVE');
     this.stopHeartbeat();
+    this.clearSyncDebounce();
+    clearRoomSession();
     roomChannel.disconnect();
-
-    this.state = {
-      roomId: null,
-      userName: '',
-      isHost: false,
-      isPaused: false,
-      participants: [],
-      feedItems: [],
-      studentStats: {},
-      helpRequested: false,
-    };
-
+    this.resetState();
     this.notify();
   }
 
-  // 1. Odayı Duraklatma / Devam Ettirme (Tüm sınıfta Pause perdesi açar/kapatır)
   togglePauseRoom(): void {
     if (!this.state.roomId || !this.state.isHost) return;
     this.state.isPaused = !this.state.isPaused;
     this.notify();
-
-    roomChannel.send({
-      type: 'ROOM_PAUSE',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      isHost: true,
-      timestamp: Date.now(),
-      payload: { isPaused: this.state.isPaused },
-    });
+    this.emit('ROOM_PAUSE', { isPaused: this.state.isPaused });
   }
 
-  // 2. Odayı Tamamen Sonlandırma (Herkesin ekranında oturumu kapatır)
   closeRoomGlobally(): void {
     if (!this.state.roomId || !this.state.isHost) return;
-
-    roomChannel.send({
-      type: 'ROOM_CLOSE',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      isHost: true,
-      timestamp: Date.now(),
-    });
-
+    this.emit('ROOM_CLOSE');
     this.leaveRoom();
   }
 
-  // 3. Öğrenciye Yıldız Verme
-  awardStarToStudent(studentName: string): void {
+  awardStarToStudent(studentIdOrName: string): void {
     if (!this.state.roomId || !this.state.isHost) return;
-
-    roomChannel.send({
-      type: 'AWARD_STAR',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      isHost: true,
-      timestamp: Date.now(),
-      payload: { studentName },
+    const target = this.state.participants.find((p) => p.id === studentIdOrName || p.name === studentIdOrName);
+    this.emit('AWARD_STAR', {
+      studentId: target?.id ?? studentIdOrName,
+      studentName: target?.name ?? studentIdOrName,
     });
   }
 
-  // 4. Tüm Sınıfa Toplu Anons Gönderme
   broadcastAnnouncement(text: string): void {
     const cleanText = text.trim();
     if (!this.state.roomId || !cleanText) return;
-
-    roomChannel.send({
-      type: 'BROADCAST_ANNOUNCEMENT',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      isHost: this.state.isHost,
-      timestamp: Date.now(),
-      payload: { text: cleanText },
-    });
+    this.emit('BROADCAST_ANNOUNCEMENT', { text: cleanText });
   }
 
   callTeacherHelp(): void {
-    if (!this.state.roomId) return;
+    if (!this.state.roomId || this.state.helpRequested) return;
     this.state.helpRequested = true;
     const now = Date.now();
-
-    this.state.feedItems.unshift({
-      id: `${now}_${this.peerId}_help`,
-      type: 'HELP_CALL',
-      studentName: this.state.userName,
-      timestamp: now,
-    });
+    addFeedItem(this.state.feedItems, { id: `${now}_${this.peerId}_help`, type: 'HELP_CALL', studentId: this.peerId, studentName: this.state.userName, timestamp: now });
     this.notify();
-
-    roomChannel.send({
-      type: 'HELP_CALL',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      isHost: this.state.isHost,
-      timestamp: now,
-    });
+    this.emit('HELP_CALL', undefined, now);
   }
 
-  resolveTeacherHelp(feedId: string, studentName: string): void {
+  resolveTeacherHelp(feedId: string, studentIdOrName: string): void {
     if (!this.state.roomId) return;
     const item = this.state.feedItems.find((f) => f.id === feedId);
     if (item) {
       item.resolved = true;
       this.notify();
     }
-    if (studentName === this.state.userName) {
+    if (studentIdOrName === this.peerId || studentIdOrName === this.state.userName) {
       this.state.helpRequested = false;
       this.notify();
     }
-
-    roomChannel.send({
-      type: 'HELP_RESOLVED',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      isHost: this.state.isHost,
-      timestamp: Date.now(),
-      payload: { feedId, studentName },
-    });
+    this.emit('HELP_RESOLVED', { feedId, studentId: studentIdOrName, studentName: studentIdOrName });
   }
 
   notifyFocusLost(): void {
     if (!this.state.roomId || this.state.isPaused) return;
+    const openLost = this.state.feedItems.find((f) => f.type === 'FOCUS_LOST' && f.studentId === this.peerId && !f.returnedAt);
+    if (openLost) return;
     const now = Date.now();
-
-    this.state.feedItems.unshift({
-      id: `${now}_${this.peerId}_lost`,
-      type: 'FOCUS_LOST',
-      studentName: this.state.userName,
-      timestamp: now,
-    });
+    addFeedItem(this.state.feedItems, { id: `${now}_${this.peerId}_lost`, type: 'FOCUS_LOST', studentId: this.peerId, studentName: this.state.userName, timestamp: now });
     this.notify();
-
-    roomChannel.send({
-      type: 'FOCUS_LOST',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      isHost: this.state.isHost,
-      timestamp: now,
-    });
+    this.emit('FOCUS_LOST', undefined, now);
   }
 
   notifyFocusRestored(): void {
     if (!this.state.roomId || this.state.isPaused) return;
     const now = Date.now();
-
-    const lastLost = this.state.feedItems.find(
-      (f) => f.type === 'FOCUS_LOST' && f.studentName === this.state.userName && !f.returnedAt
-    );
+    const lastLost = this.state.feedItems.find((f) => f.type === 'FOCUS_LOST' && f.studentId === this.peerId && !f.returnedAt);
     if (lastLost) {
       lastLost.returnedAt = now;
       this.notify();
     }
-
-    roomChannel.send({
-      type: 'FOCUS_RESTORED',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      isHost: this.state.isHost,
-      timestamp: now,
-    });
+    this.emit('FOCUS_RESTORED', undefined, now);
   }
 
-  logStudentAnswer(isCorrect: boolean): void {
-    if (!this.state.roomId) return;
+  logStudentAnswer(questionId: number, isCorrect: boolean): void {
+    if (!this.state.roomId || this.state.isHost) return;
+    const prev = this.answeredQuestions.get(questionId);
+    if (prev === isCorrect) return;
 
-    if (this.state.studentStats[this.peerId]) {
-      if (isCorrect) {
-        this.state.studentStats[this.peerId].correctCount++;
-      } else {
-        this.state.studentStats[this.peerId].incorrectCount++;
+    const stats = this.state.studentStats[this.peerId];
+    if (stats) {
+      if (prev === undefined) {
+        if (isCorrect) stats.correctCount++; else stats.incorrectCount++;
+      } else if (prev === false && isCorrect) {
+        stats.incorrectCount = Math.max(0, stats.incorrectCount - 1);
+        stats.correctCount++;
+      } else if (prev === true && !isCorrect) {
+        stats.correctCount = Math.max(0, stats.correctCount - 1);
+        stats.incorrectCount++;
       }
       this.notify();
     }
 
-    roomChannel.send({
-      type: 'STUDENT_ANSWER_LOG',
-      roomId: this.state.roomId,
-      senderId: this.peerId,
-      senderName: this.state.userName,
-      timestamp: Date.now(),
-      payload: { isCorrect },
-    });
+    this.answeredQuestions.set(questionId, isCorrect);
+    this.emit('STUDENT_ANSWER_LOG', { questionId, isCorrect, correctCount: stats?.correctCount ?? 0, incorrectCount: stats?.incorrectCount ?? 0 });
+  }
+
+  revokeStudentAnswer(questionId: number): void {
+    if (!this.state.roomId || this.state.isHost) return;
+    const prev = this.answeredQuestions.get(questionId);
+    if (prev === undefined) return;
+
+    const stats = this.state.studentStats[this.peerId];
+    if (stats) {
+      if (prev === true) stats.correctCount = Math.max(0, stats.correctCount - 1);
+      else stats.incorrectCount = Math.max(0, stats.incorrectCount - 1);
+      this.notify();
+    }
+
+    this.answeredQuestions.delete(questionId);
+    this.emit('STUDENT_ANSWER_LOG', { questionId, correctCount: stats?.correctCount ?? 0, incorrectCount: stats?.incorrectCount ?? 0 });
+  }
+
+  private emit(type: RoomMessageType, payload?: RoomMessagePayload, timestamp = Date.now()): void {
+    if (!this.state.roomId) return;
+    roomChannel.send({ type, roomId: this.state.roomId, senderId: this.peerId, senderName: this.state.userName, isHost: this.state.isHost, timestamp, payload });
+  }
+
+  private scheduleSyncBroadcast(): void {
+    if (this.syncDebounceTimer) return;
+    this.syncDebounceTimer = setTimeout(() => {
+      this.syncDebounceTimer = null;
+      this.broadcastRoomSync();
+    }, 150);
+  }
+
+  private broadcastRoomSync(): void {
+    this.emit('ROOM_SYNC', { participants: this.state.participants, studentStats: this.state.studentStats, isPaused: this.state.isPaused });
   }
 
   private handleIncoming(msg: RoomMessage): void {
@@ -280,15 +239,15 @@ class RoomService {
         feedItems: this.state.feedItems,
         studentStats: this.state.studentStats,
         helpRequested: this.state.helpRequested,
-        setHelpRequested: (val: boolean) => {
-          this.state.helpRequested = val;
-          this.notify();
-        },
+        setHelpRequested: (val: boolean) => { this.state.helpRequested = val; this.notify(); },
         setPaused: (val: boolean) => {
+          const wasPaused = this.state.isPaused;
           this.state.isPaused = val;
           this.notify();
+          if (wasPaused && !val) { for (const cb of this.resumeListeners) cb(); }
         },
         leaveRoom: () => this.leaveRoom(),
+        scheduleSyncBroadcast: () => this.scheduleSyncBroadcast(),
         notify: () => this.notify(),
       },
       msg
@@ -298,21 +257,10 @@ class RoomService {
   private startHeartbeat(): void {
     this.stopHeartbeat();
     this.heartbeatTimer = setInterval(() => {
-      if (this.state.roomId) {
-        roomChannel.send({
-          type: 'ROOM_SYNC',
-          roomId: this.state.roomId,
-          senderId: this.peerId,
-          senderName: this.state.userName,
-          isHost: this.state.isHost,
-          timestamp: Date.now(),
-          payload: {
-            participants: this.state.participants,
-            studentStats: this.state.studentStats,
-            isPaused: this.state.isPaused,
-          },
-        });
-      }
+      if (!this.state.roomId) return;
+      const hasAnyHost = this.state.participants.some((p) => p.isHost);
+      const isOldestPeer = this.state.participants[0]?.id === this.peerId;
+      if (this.state.isHost || (!hasAnyHost && isOldestPeer)) this.broadcastRoomSync();
     }, 15000);
   }
 
@@ -323,10 +271,20 @@ class RoomService {
     }
   }
 
-  private notify(): void {
-    for (const listener of this.listeners) {
-      listener(this.state);
+  private clearSyncDebounce(): void {
+    if (this.syncDebounceTimer) {
+      clearTimeout(this.syncDebounceTimer);
+      this.syncDebounceTimer = null;
     }
+  }
+
+  private resetState(): void {
+    this.answeredQuestions.clear();
+    this.state = { ...INITIAL_ROOM_STATE, participants: [], feedItems: [], studentStats: {} };
+  }
+
+  private notify(): void {
+    for (const listener of this.listeners) listener(this.state);
   }
 }
 

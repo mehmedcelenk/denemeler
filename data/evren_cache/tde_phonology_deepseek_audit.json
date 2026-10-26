@@ -1,0 +1,207 @@
+{
+  "total_audited": 1291,
+  "approved_count": 1109,
+  "discarded_count": 182,
+  "discarded_examples": [
+    {
+      "word": "değiştirerek",
+      "reason": "'değiş-' kökünde ve '-tir-erek' eklerinde MEB kapsamında ses olayı yoktur; kök içindeki harfler ses olayı sayılmaz."
+    },
+    {
+      "word": "değiştirilmeden",
+      "reason": "'değiş-' kökü ve '-tir-il-meden' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "değiştirir",
+      "reason": "'değiş-' kökü ve '-tir-ir' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "değiştirirse",
+      "reason": "'değiş-' kökü ve '-tir-ir-se' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "değiştirmesi",
+      "reason": "'değiş-' kökü ve '-tir-me-si' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "değiştirmişimdir",
+      "reason": "'değiş-' kökü ve '-tir-miş-im-dir' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "değiştiğinden",
+      "reason": "'değiş-' kökü ve '-tiğ-in-den' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "değiştiğini",
+      "reason": "'değiş-' kökü ve '-tiğ-in-i' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "dikkate",
+      "reason": "'dikkat' alıntı kelimesidir; '-e' eki gelirken ses olayı görülmez, kök içindeki harfler ses olayı sayılmaz."
+    },
+    {
+      "word": "dinlemeyeceği",
+      "reason": "'dinle-' kökü ve '-me-yeceğ-i' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "dinlendirebildiği",
+      "reason": "'dinlen-' kökü ve '-dir-ebil-diğ-i' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "direnmediğini",
+      "reason": "'diren-' kökü ve '-me-diğ-in-i' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "dizginleyemediği",
+      "reason": "'dizginle-' kökü ve '-ye-me-diğ-i' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "dizmişti",
+      "reason": "'diz-' kökü ve '-miş-ti' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "dolaşıldığında",
+      "reason": "'dolaş-' kökü ve '-ıl-dığ-ın-da' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "doldurmuştu",
+      "reason": "'doldur-' kökü ve '-muş-tu' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "donatılmıştır",
+      "reason": "'donat-' kökü ve '-ıl-mış-tır' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "doğduğu",
+      "reason": "'doğ-' kökü ve '-duğ-u' eklerinde ses olayı yoktur; kök içindeki harfler ses olayı sayılmaz."
+    },
+    {
+      "word": "doğmamıştı",
+      "reason": "'doğ-' kökü ve '-ma-mış-tı' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "doğmuştur",
+      "reason": "'doğ-' kökü ve '-muş-tur' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "durakladıktan",
+      "reason": "'duraksa-' kökü ve '-dık-tan' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duraklamıştım",
+      "reason": "'duraksa-' kökü ve '-mış-tı-m' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "durulduğu",
+      "reason": "'durul-' kökü ve '-duğ-u' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duyabileceği",
+      "reason": "'duy-' kökü ve '-abil-eceğ-i' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duyacağı",
+      "reason": "'duy-' kökü ve '-acağ-ı' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duyduğu",
+      "reason": "'duy-' kökü ve '-duğ-u' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duyduğum",
+      "reason": "'duy-' kökü ve '-duğ-um' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duyduğuma",
+      "reason": "'duy-' kökü ve '-duğ-um-a' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duyduğumuzda",
+      "reason": "'duy-' kökü ve '-duğ-umuz-da' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duymadığı",
+      "reason": "'duy-' kökü ve '-ma-dığ-ı' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duyumsadığını",
+      "reason": "'duyumsa-' kökü ve '-dığ-ın-ı' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "duyurmuştur",
+      "reason": "'duyur-' kökü ve '-muş-tur' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "döktüğünü",
+      "reason": "'dök-' kökü ve '-tüğ-ün-ü' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "döndüğüm",
+      "reason": "'dön-' kökü ve '-düğ-üm' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "döndüğünde",
+      "reason": "'dön-' kökü ve '-düğ-ün-de' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "döndüğünü",
+      "reason": "'dön-' kökü ve '-düğ-ün-ü' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "dönemeyeceğime",
+      "reason": "'dön-' kökü ve '-e-me-yeceğ-im-e' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "dönüştü",
+      "reason": "'dönüş-' kökü ve '-tü' ekinde ses olayı yoktur."
+    },
+    {
+      "word": "dönüştürebilirdi",
+      "reason": "'dönüş-' kökü ve '-tür-ebil-ir-di' eklerinde ses olayı yoktur."
+    },
+    {
+      "word": "bağlanmıştır",
+      "reason": "'bağ' kök + '-la-n-mış-tır' ekleri; kök içindeki 'ğ' ses olayı değildir, eklerde ses olayı yoktur."
+    },
+    {
+      "word": "bağrına",
+      "reason": "'bağır' kökündeki 'ı' düşmesi tarihî bir gelişmedir; MEB müfredatında 'bağır→bağrı' ünlü düşmesi olarak işlenmez, kök içi kabul edilir."
+    },
+    {
+      "word": "başardığını",
+      "reason": "'başar-' fiil kökü + '-dığını'; eklerde ses olayı yoktur."
+    },
+    {
+      "word": "başladığımda",
+      "reason": "'başla-' + '-dığımda'; eklerde ses olayı yoktur."
+    },
+    {
+      "word": "başladığından",
+      "reason": "'başla-' + '-dığından'; eklerde ses olayı yoktur."
+    },
+    {
+      "word": "başladığını",
+      "reason": "'başla-' + '-dığını'; eklerde ses olayı yoktur."
+    },
+    {
+      "word": "başlamıştı",
+      "reason": "'başla-' + '-mış-tı'; eklerde ses olayı yoktur."
+    },
+    {
+      "word": "başlamıştır",
+      "reason": "'başla-' + '-mış-tır'; eklerde ses olayı yoktur."
+    },
+    {
+      "word": "başlangıçtaki",
+      "reason": "'başla-' + '-ngıç-taki'; eklerde ses olayı yoktur."
+    },
+    {
+      "word": "başlanmıştır",
+      "reason": "'başla-' + '-n-mış-tır'; eklerde ses olayı yoktur."
+    },
+    {
+      "word": "başlattık",
+      "reason": "'başla-' + '-t-tık'; eklerde ses olayı yoktur."
+    }
+  ]
+}

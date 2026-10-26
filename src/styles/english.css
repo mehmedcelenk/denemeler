@@ -82,6 +82,28 @@
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--brand-accent) 30%, transparent);
 }
 
+.vocab-word.concept-word,
+.concept-word {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  font-weight: 550;
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  border-radius: 3px;
+  padding: 1px 3px;
+}
+body.dark-mode .vocab-word.concept-word,
+body.dark-mode .concept-word {
+  background-color: rgba(255, 255, 255, 0.14) !important;
+}
+.vocab-word.concept-word:hover,
+.concept-word:hover {
+  background-color: rgba(0, 0, 0, 0.14) !important;
+}
+body.dark-mode .vocab-word.concept-word:hover,
+body.dark-mode .concept-word:hover {
+  background-color: rgba(255, 255, 255, 0.22) !important;
+}
+
 .vocab-bubble {
   position: absolute;
   z-index: 99999;
@@ -90,34 +112,81 @@
   border: 1.5px solid var(--vocab-bubble-accent, var(--brand-accent));
   box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.22), 0 3px 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  padding: 0.45em 0.85em;
+  padding: 0.55em 0.85em;
   font-size: var(--booklet-font-size, 13px);
-  font-weight: 600;
-  white-space: nowrap;
+  font-weight: 500;
+  line-height: 1.45;
+  white-space: normal;
+  max-width: min(380px, calc(100vw - 32px));
+  width: max-content;
+  box-sizing: border-box;
   pointer-events: none;
   transform: translate(-50%, -100%) translateY(-6px);
   animation: vocabPopIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2px;
+  gap: 3px;
+  text-align: left;
 }
 .vocab-bubble-main {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  display: block;
+  font-weight: 600;
+  line-height: 1.45;
+  word-break: break-word;
+}
+.vocab-bubble-p {
+  margin: 0 0 8px 0;
+}
+.vocab-bubble-p:last-child {
+  margin-bottom: 0;
+}
+.vocab-bubble-list {
+  margin: 6px 0;
+  padding-left: 1.15em;
+  font-weight: 500;
+  font-size: 0.95em;
+  line-height: 1.38;
+}
+.vocab-bubble-list li {
+  margin-bottom: 4px;
+}
+.vocab-bubble-list li:last-child {
+  margin-bottom: 0;
+}
+.vocab-bubble-tip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--brand-accent) 10%, transparent);
+  border-left: 2.5px solid var(--brand-accent);
+  font-size: 0.92em;
+  font-weight: 600;
+  line-height: 1.38;
+}
+.vocab-bubble-tip:last-child {
+  margin-bottom: 0;
+}
+.vocab-bubble .katex {
+  font-size: 1.02em;
 }
 .vocab-bubble-sub {
-  font-size: 0.8em;
+  display: block;
+  font-size: 0.82em;
   font-weight: 500;
-  opacity: 0.75;
+  opacity: 0.82;
   font-style: italic;
+  line-height: 1.35;
+  margin-top: 3px;
+  border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+  padding-top: 3px;
+  word-break: break-word;
 }
 .vocab-bubble::after {
   content: '';
   position: absolute;
   bottom: -6px;
-  left: 50%;
+  left: var(--arrow-left, 50%);
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -131,6 +200,7 @@
 .vocab-bubble.bubble-below::after {
   top: -6px;
   bottom: auto;
+  left: var(--arrow-left, 50%);
   border-top: none;
   border-bottom: 6px solid var(--vocab-bubble-accent, var(--brand-accent));
 }
@@ -147,5 +217,49 @@ body.dark-mode .vocab-bubble {
 @keyframes vocabPopOut {
   from { opacity: 1; transform: translate(-50%, -100%) translateY(-6px) scale(1); }
   to { opacity: 0; transform: translate(-50%, -115%) scale(0.92); }
+}
+
+/* ========================================================= */
+/* Kelime Meali (Interlinear Word-by-Word Gloss)             */
+/* ========================================================= */
+ruby.interlinear-word {
+  ruby-position: under;
+  -webkit-ruby-position: after;
+  display: inline-ruby;
+  text-indent: 0;
+  vertical-align: baseline;
+}
+
+ruby.interlinear-word rt.interlinear-gloss {
+  display: ruby-text;
+  font-family: inherit;
+  font-size: 0.58em;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--paper-text-muted, #71717a);
+  opacity: 0.65;
+  user-select: none;
+  letter-spacing: -0.2px;
+}
+
+.has-interlinear .q-stem-text,
+.has-interlinear .choice-text-content,
+.print-interlinear .q-stem-text,
+.print-interlinear .choice-text-content {
+  line-height: 1.82 !important;
+}
+
+@media print {
+  ruby.interlinear-word rt.interlinear-gloss,
+  .interlinear-gloss {
+    color: #a8a8a8 !important;
+    opacity: 0.55 !important;
+    font-size: 6.2pt !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    letter-spacing: -0.2px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 }
 

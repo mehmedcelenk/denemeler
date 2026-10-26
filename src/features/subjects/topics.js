@@ -2,7 +2,19 @@ import { getAggregatedTopics } from './topic-model.js';
 import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { getCondensedCourseCode, matchesSubject, AOIHL_SUBJECTS, AOF_SUBJECTS } from '../../data/subjects.js';
 import { updateFilterButtonsUI } from '../booklet/filter.ts';
-import { escapeHtml, escapeJs } from '../../shared/escape.ts';
+import { getExamPeriodsForSelection, renderExamPeriodsHtml, selectExamPeriodFromDrawer } from './exam-periods.ts';
+import { renderTopicsTreeHtml } from './topics-tree.ts';
+
+let currentDrawerTab = 'periods';
+
+export function setDrawerTab(tab) {
+  currentDrawerTab = (tab === 'topics') ? 'topics' : 'periods';
+  renderDrawerTopics();
+}
+
+export function getCurrentDrawerTab() {
+  return currentDrawerTab;
+}
 
 export function renderDrawerTopics() {
   const container = document.getElementById('drawerTopicList');
@@ -14,8 +26,23 @@ export function renderDrawerTopics() {
     return;
   }
 
+  const isTde = state.currentSubject === 'TDE' || Array.from(state.selectedCourses).some(c => c.includes('EDEBİYAT') || c.includes('TÜRK DİLİ'));
+
+  const tabsContainer = document.getElementById('drawerViewModeTabs');
+  if (tabsContainer) {
+    tabsContainer.style.display = isTde ? 'inline-flex' : 'none';
+    const btnPeriods = tabsContainer.querySelector('[data-tab="periods"]');
+    const btnTopics = tabsContainer.querySelector('[data-tab="topics"]');
+    if (btnPeriods) btnPeriods.classList.toggle('active', currentDrawerTab === 'periods');
+    if (btnTopics) btnTopics.classList.toggle('active', currentDrawerTab === 'topics');
+  }
+
+  if (!isTde) {
+    currentDrawerTab = 'periods';
+  }
+
   if (!state.currentSubject && state.selectedCourses.size === 0) {
-    if (headerLbl) headerLbl.textContent = 'Konular:';
+    if (headerLbl) headerLbl.textContent = (currentDrawerTab === 'topics') ? 'Konular:' : 'Sınav Dönemleri:';
     if (allBtn) {
       allBtn.textContent = 'Bir Branş Seçin →';
       allBtn.onclick = null;
@@ -28,6 +55,37 @@ export function renderDrawerTopics() {
   }
   if (allBtn) allBtn.style.opacity = '1';
 
+  if (currentDrawerTab === 'periods') {
+    const examPeriods = getExamPeriodsForSelection();
+    if (headerLbl) {
+      headerLbl.textContent = state.selectedExamPeriod
+        ? `Seçili Sınav: ${state.selectedExamPeriod}`
+        : `Çıkmış Sınav Dönemleri (${examPeriods.length}):`;
+    }
+    if (allBtn) {
+      allBtn.textContent = state.selectedExamPeriod ? 'Tüm Dönemleri Aç' : 'Tümünü Aç';
+      allBtn.onclick = function() {
+        selectExamPeriodFromDrawer(null);
+      };
+    }
+    if (container) {
+      if (examPeriods.length === 0) {
+        container.innerHTML = '<div style="padding:14px; text-align:center; color:var(--paper-text-muted); font-size:12px;">Bu ders için sınav dönemi bulunamadı.</div>';
+      } else {
+        container.innerHTML = renderExamPeriodsHtml(examPeriods);
+        container.querySelectorAll('[data-select-exam-period]').forEach(el => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const periodKey = el.getAttribute('data-select-exam-period');
+            selectExamPeriodFromDrawer(periodKey || null);
+          });
+        });
+      }
+    }
+    return;
+  }
+
+  // Konular Sekmesi
   const topics = getAggregatedTopics();
   const isSingleCourse = (state.selectedCourses.size === 1);
   const courseCode = state.currentSubject ? getCondensedCourseCode(state.selectedCourses, state.currentSubject) : 'Dersler';
@@ -71,7 +129,6 @@ export function renderDrawerTopics() {
     return;
   }
 
-  const groupedBySubject = new Map();
   const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
   const activeSubjectList = currentList.filter(s => {
     for (const c of state.selectedCourses) {
@@ -80,118 +137,8 @@ export function renderDrawerTopics() {
     return state.selectedCourses.size === 0 && state.currentSubject === s.id;
   });
 
-  activeSubjectList.forEach(s => {
-    const subjTopics = topics.filter(t => Object.keys(t.courses).some(c => matchesSubject({ ders: c }, s.id)));
-    if (subjTopics.length > 0) {
-      groupedBySubject.set(s, subjTopics);
-    }
-  });
-
-  let html = '';
-  groupedBySubject.forEach((subjTopics, s) => {
-    const subjTotal = subjTopics.reduce((sum, t) => sum + t.count, 0);
-
-    const groupedTopics = new Map();
-    subjTopics.forEach((t) => {
-      const parentKey = (t.ana_konu && t.alt_konu && t.ana_konu !== t.alt_konu) ? t.ana_konu : (t.ana_konu || t.alt_konu || 'Genel');
-      const group = groupedTopics.get(parentKey) || [];
-      group.push(t);
-      groupedTopics.set(parentKey, group);
-    });
-
-    let innerHtml = '';
-    groupedTopics.forEach((group, parentKey) => {
-      const allGroupKeys = group.map(t => t.key);
-      const isAllGroupSelected = allGroupKeys.length > 0 && allGroupKeys.every(k => state.selectedTopicKeys.has(k));
-      const isPartialGroupSelected = !isAllGroupSelected && allGroupKeys.some(k => state.selectedTopicKeys.has(k));
-
-      if (group.length > 1) {
-        const hasSelectedChild = isAllGroupSelected || isPartialGroupSelected;
-        const expanded = hasSelectedChild;
-        const parentLabel = parentKey || 'Genel';
-        const totalGroupQuestions = group.reduce((sum, item) => sum + item.count, 0);
-
-        const nestedHtml = group.map((t) => {
-          const isSelected = state.selectedTopicKeys.has(t.key);
-          return `
-            <div class="drawer-topic-item child-item ${isSelected ? 'selected' : ''}" data-select-topic="${escapeJs(t.key)}">
-              <span class="tree-checkbox ${isSelected ? 'checked' : ''}" aria-hidden="true">${isSelected ? '✓' : ''}</span>
-              <span class="drawer-topic-name">${escapeHtml(t.alt_konu || t.ana_konu || 'Genel')}</span>
-              <span class="drawer-topic-count-num">${t.count} soru</span>
-            </div>
-          `;
-        }).join('');
-
-        innerHtml += `
-          <div class="drawer-topic-group ${expanded ? 'open' : ''}" data-topic-group="${escapeJs(parentKey)}">
-            <button type="button" class="drawer-topic-group-header" data-topic-toggle-group="${escapeJs(parentKey)}" aria-expanded="${expanded ? 'true' : 'false'}">
-              <span class="drawer-topic-group-title">
-                <span class="tree-checkbox ${isAllGroupSelected ? 'checked' : (isPartialGroupSelected ? 'partial' : '')}" 
-                      data-group-checkbox="${escapeJs(parentKey)}" aria-hidden="true">
-                  ${isAllGroupSelected ? '✓' : (isPartialGroupSelected ? '–' : '')}
-                </span>
-                <span class="drawer-topic-group-name">${escapeHtml(parentLabel)}</span>
-              </span>
-              <div class="drawer-topic-group-meta">
-                <span class="drawer-topic-count-num group-count">${totalGroupQuestions} soru</span>
-                <span class="drawer-topic-dropdown-caret" aria-hidden="true">${expanded ? '⌄' : '›'}</span>
-              </div>
-            </button>
-            <div class="drawer-topic-group-body">
-              ${nestedHtml}
-            </div>
-          </div>
-        `;
-        return;
-      }
-
-      const t = group[0];
-      const isSelected = state.selectedTopicKeys.has(t.key);
-      let topicLabelHtml = '';
-      if (t.ana_konu && t.alt_konu && t.ana_konu !== t.alt_konu) {
-        topicLabelHtml = `<span class="topic-ak">${escapeHtml(t.ana_konu)}</span><span class="topic-slash">/</span><span class="topic-sub">${escapeHtml(t.alt_konu)}</span>`;
-      } else {
-        topicLabelHtml = `<span class="topic-sub">${escapeHtml(t.alt_konu || t.ana_konu)}</span>`;
-      }
-
-      innerHtml += `
-        <div class="drawer-topic-item ${isSelected ? 'selected' : ''}" data-select-topic="${escapeJs(t.key)}">
-          <span class="tree-checkbox ${isSelected ? 'checked' : ''}" aria-hidden="true">${isSelected ? '✓' : ''}</span>
-          <span class="drawer-topic-name">${topicLabelHtml}</span>
-          <span class="drawer-topic-count-num">${t.count} soru</span>
-        </div>
-      `;
-    });
-
-    const allSubjKeys = subjTopics.map(t => t.key);
-    const isAllSubjSelected = allSubjKeys.length > 0 && allSubjKeys.every(k => state.selectedTopicKeys.has(k));
-    const isPartialSubjSelected = !isAllSubjSelected && allSubjKeys.some(k => state.selectedTopicKeys.has(k));
-
-    html += `
-      <div class="drawer-subject-folder open" data-subject-folder="${s.id}">
-        <button type="button" class="drawer-subject-folder-header" data-toggle-subject-folder="${s.id}">
-          <div class="folder-header-left">
-            <span class="tree-checkbox ${isAllSubjSelected ? 'checked' : (isPartialSubjSelected ? 'partial' : '')}"
-                  data-folder-checkbox="${s.id}" aria-hidden="true">
-              ${isAllSubjSelected ? '✓' : (isPartialSubjSelected ? '–' : '')}
-            </span>
-            <span>${s.icon}</span>
-            <span>${escapeHtml(s.name)}</span>
-          </div>
-          <div class="folder-header-right">
-            <span class="folder-count">${subjTotal} soru</span>
-            <span class="folder-caret">⌄</span>
-          </div>
-        </button>
-        <div class="drawer-subject-folder-body">
-          ${innerHtml}
-        </div>
-      </div>
-    `;
-  });
-
   if (container) {
-    container.innerHTML = html;
+    container.innerHTML = renderTopicsTreeHtml(topics, activeSubjectList, state.selectedTopicKeys);
 
     container.querySelectorAll('[data-select-topic]').forEach((el) => {
       el.addEventListener('click', (event) => {
@@ -216,6 +163,7 @@ export function renderDrawerTopics() {
           if (allSel) nextKeys.delete(k);
           else nextKeys.add(k);
         });
+        store.setSelectedExamPeriod(null);
         store.setSelectedTopicKeys(nextKeys);
         renderDrawerTopics();
       });
@@ -233,6 +181,7 @@ export function renderDrawerTopics() {
           if (allSel) nextKeys.delete(k);
           else nextKeys.add(k);
         });
+        store.setSelectedExamPeriod(null);
         store.setSelectedTopicKeys(nextKeys);
         renderDrawerTopics();
       });
@@ -263,6 +212,7 @@ export function renderDrawerTopics() {
 }
 
 export function toggleTopicFromDrawer(topicKey) {
+  store.setSelectedExamPeriod(null);
   store.toggleTopicKey(topicKey);
   renderDrawerTopics();
 }
@@ -273,6 +223,7 @@ export function clearTopicSelection() {
 }
 
 export function selectTopicFromDrawer(topicKey) {
+  store.setSelectedExamPeriod(null);
   store.setSelectedTopicKeys([topicKey]);
   store.setActiveSearchFilter('');
   store.setBookletFilterMode('all');

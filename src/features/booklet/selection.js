@@ -23,7 +23,8 @@ export function updateBookletQuestions() {
     return;
   }
 
-  const validTopicKeys = new Set(getAggregatedTopics().map(t => t.key));
+  const isTde = state.currentSubject === 'TDE' || Array.from(state.selectedCourses).some(c => c.includes('EDEBİYAT') || c.includes('TÜRK DİLİ'));
+  const validTopicKeys = isTde ? new Set(getAggregatedTopics().map(t => t.key)) : null;
 
   const filtered = state.allData.filter(q => {
     if (state.selectedCourses.size > 0) {
@@ -31,14 +32,28 @@ export function updateBookletQuestions() {
     } else if (state.currentSubject) {
       if (!matchesSubject(q, state.currentSubject)) return false;
     }
-    const qKey = getTopicKey(q);
-    if (!validTopicKeys.has(qKey)) return false;
-    if (state.selectedTopicKeys.size > 0 && !state.selectedTopicKeys.has(qKey)) {
-      return false;
+    if (state.selectedExamPeriod) {
+      const qPeriod = `${q.yil || ''} ${q.donem ? `${q.donem}. Dönem` : ''}`.trim();
+      if (qPeriod !== state.selectedExamPeriod) return false;
+    }
+    if (isTde && validTopicKeys) {
+      const qKey = getTopicKey(q);
+      if (!validTopicKeys.has(qKey)) return false;
+      if (state.selectedTopicKeys.size > 0 && !state.selectedTopicKeys.has(qKey)) {
+        return false;
+      }
     }
     if (state.activeSearchFilter && !questionMatchesSearch(q, state.activeSearchFilter)) return false;
     return true;
   });
+
+  if (state.selectedExamPeriod) {
+    filtered.sort((a, b) => {
+      const noA = Number(a.soru_no || 0);
+      const noB = Number(b.soru_no || 0);
+      return noA - noB;
+    });
+  }
 
   store.setBookletQuestions(filterQuestionsByMode(
     filtered,
@@ -109,7 +124,9 @@ export function updateTopBadge(customTitle) {
     titleStr = 'Tüm Branşlar';
   }
 
-  if (state.selectedTopicKeys.size > 0) {
+  if (state.selectedExamPeriod) {
+    titleStr += ` • ${state.selectedExamPeriod}`;
+  } else if (state.selectedTopicKeys.size > 0) {
     titleStr += ` (${state.selectedTopicKeys.size} Konu)`;
   }
 

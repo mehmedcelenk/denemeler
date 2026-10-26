@@ -11,7 +11,13 @@ export {
   zoomOut,
   toggleConsoleMenu,
   toggleFullscreenFocusMode,
+} from './preferences.ts';
+
+export {
   toggleQuestionFeatures,
   toggleFeaturesBar,
   updateFeaturesBarUI,
-} from './preferences.ts';
+  eliminateOneWrongChoice,
+  copyQuestionText,
+  toggleSpeakQuestion,
+} from '../booklet/features-bar.ts';

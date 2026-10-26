@@ -59,6 +59,38 @@
   border-color: var(--brand-accent);
 }
 
+.pdf-opt-group-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--paper-text-muted);
+}
+
+.pdf-checkbox-label {
+  background: rgba(125, 125, 125, 0.05);
+  border: 1px solid var(--paper-border);
+  padding: 10px 14px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--paper-text);
+  transition: all 0.12s;
+}
+
+.pdf-checkbox-label:hover {
+  border-color: var(--brand-accent);
+}
+
+.pdf-checkbox-label input[type="checkbox"] {
+  accent-color: var(--brand-accent);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
 .pdf-dialog-footer {
   display: flex;
   justify-content: flex-end;

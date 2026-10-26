@@ -9,6 +9,7 @@ import { initChoiceElimination } from '../features/annotations/eliminate-choice.
 import { initTextHighlighter } from '../features/annotations/highlighter.ts';
 import { initRoomFeature } from '../features/classroom/room-ui.ts';
 import { initAiTutor } from '../features/ai-tutor/ai-tutor.ts';
+import { initVoiceGender, initVoiceEngine } from '../features/audio/voice-gender.ts';
 
 export async function startApp() {
   if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
@@ -18,6 +19,8 @@ export async function startApp() {
   initAiTutor();
   initTheme();
   initAccentColor();
+  initVoiceGender();
+  initVoiceEngine();
   initBookletCanvasZoom();
   initChoiceElimination();
   initTextHighlighter();

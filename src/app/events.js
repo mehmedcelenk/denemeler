@@ -3,12 +3,11 @@ import {
   handleSelectOpticalBubble,
   togglePageKey,
   toggleSingleAnswerReveal,
-  toggleSingleHint,
 } from '../features/answers/marking.ts';
 import { clearDrawerSearch, loadAllSearchResultsToBooklet, loadSingleSearchQuestion } from '../features/search/search.js';
 import { closePdfDialog, executePdfPrint, openPdfDialog } from '../features/print/print.js';
 import { closeSubjectDrawer, openSubjectDrawer } from '../features/subjects/drawer.ts';
-import { loadAllTopicsToBooklet } from '../features/subjects/topics.js';
+import { loadAllTopicsToBooklet, setDrawerTab } from '../features/subjects/topics.js';
 import {
   setAccentColor,
   cycleAccentColor,
@@ -17,19 +16,26 @@ import {
   cycleColumnCount,
   cycleZoomLevel,
   toggleConsoleMenu,
-  toggleFeaturesBar,
-  toggleQuestionFeatures,
   toggleFullscreenFocusMode,
   zoomIn,
   zoomOut,
   setThemeMode,
   toggleTheme,
 } from '../features/appearance/preferences.ts';
+import {
+  toggleFeaturesBar,
+  toggleQuestionFeatures,
+  eliminateOneWrongChoice,
+  copyQuestionText,
+  toggleSpeakQuestion,
+  toggleGrammarLayer,
+} from '../features/booklet/features-bar.ts';
+import { cycleVoiceGender, cycleVoiceEngine } from '../features/audio/voice-gender.ts';
 import { showVocabBubble } from '../features/english/vocabulary.js';
 import { toggleSubjectDropdown, selectSubjectFromDropdown, handleDropdownItemSelect, handleIntersectionToggle, toggleCourseLevel, setProgramMode, addSubjectRow, removeSubjectRow } from '../features/subjects/selection.js';
-import { toggleCümleRöntgeni, toggleQuestionTranslation, toggleTrapExplanation } from '../features/english/translations.js';
+import { toggleQuestionTranslation } from '../features/english/translations.js';
+import { toggleQuestionMeal } from '../features/english/interlinear.ts';
 import { showAnswerExplanationBubble } from '../features/answers/explanation.ts';
-import { toggleFormulaNote } from '../features/formulas/formula-modal.ts';
 import { setBookletFilter, setUnifiedMode } from '../features/booklet/filter.ts';
 import { setContentViewMode } from '../features/booklet/view-mode.ts';
 import { resumeLastSession, dismissResumeBanner } from '../features/booklet/resume.ts';
@@ -57,14 +63,18 @@ export function registerLegacyHandlers() {
     removeSubjectRow,
     toggleCourseLevel,
     toggleSubjectDropdown,
-    toggleCümleRöntgeni,
-    toggleFormulaNote,
     togglePageKey,
     toggleQuestionTranslation,
+    toggleQuestionMeal,
     toggleSingleAnswerReveal,
-    toggleSingleHint,
     toggleStarQuestionUI,
-    toggleTrapExplanation,
+    eliminateOneWrongChoice,
+    copyQuestionText,
+    toggleSpeakQuestion,
+    toggleGrammarLayer,
+    cycleVoiceGender,
+    cycleVoiceEngine,
+    setDrawerTab,
   });
 
   // E2E test kancaları
@@ -73,6 +83,8 @@ export function registerLegacyHandlers() {
   window.setThemeMode = setThemeMode;
   window.setColumnCount = setColumnCount;
   window.openPdfDialog = openPdfDialog;
+  window.cycleVoiceEngine = cycleVoiceEngine;
+  window.cycleVoiceGender = cycleVoiceGender;
 
   setupEventDelegation();
 }
@@ -144,6 +156,12 @@ export function setupEventDelegation() {
       case 'cycle-accent-color':
         cycleAccentColor();
         break;
+      case 'cycle-tts-gender':
+        cycleVoiceGender();
+        break;
+      case 'cycle-tts-engine':
+        cycleVoiceEngine();
+        break;
       case 'toggle-fullscreen':
         toggleFullscreenFocusMode();
         break;
@@ -174,6 +192,39 @@ export function setupEventDelegation() {
       case 'toggle-question-features':
         if (el.dataset.qid) toggleQuestionFeatures(Number(el.dataset.qid));
         break;
+      case 'toggle-question-meal':
+        if (el.dataset.qid) toggleQuestionMeal(Number(el.dataset.qid), event);
+        break;
+      case 'toggle-xray-syntax':
+        if (el.dataset.qid) toggleGrammarLayer(Number(el.dataset.qid), 'syntax', event);
+        break;
+      case 'toggle-xray-pos':
+        if (el.dataset.qid) toggleGrammarLayer(Number(el.dataset.qid), 'pos', event);
+        break;
+      case 'toggle-xray-sound':
+        if (el.dataset.qid) toggleGrammarLayer(Number(el.dataset.qid), 'sound', event);
+        break;
+      case 'toggle-question-translation':
+        if (el.dataset.qid && el.dataset.lang) toggleQuestionTranslation(Number(el.dataset.qid), el.dataset.lang, event);
+        break;
+      case 'toggle-star-question':
+        if (el.dataset.qid) toggleStarQuestionUI(Number(el.dataset.qid), event);
+        break;
+      case 'open-board-focus':
+        if (el.dataset.qid) openBoardFocusMode(Number(el.dataset.qid), event);
+        break;
+      case 'toggle-answer-reveal':
+        if (el.dataset.qid) toggleSingleAnswerReveal(Number(el.dataset.qid));
+        break;
+      case 'eliminate-wrong-choice':
+        if (el.dataset.qid) eliminateOneWrongChoice(Number(el.dataset.qid));
+        break;
+      case 'copy-question-text':
+        if (el.dataset.qid) copyQuestionText(Number(el.dataset.qid));
+        break;
+      case 'speak-question':
+        if (el.dataset.qid) toggleSpeakQuestion(Number(el.dataset.qid), event);
+        break;
       case 'set-unified-mode':
         if (el.dataset.mode) setUnifiedMode(el.dataset.mode);
         break;
@@ -201,6 +252,9 @@ export function setupEventDelegation() {
         break;
       case 'set-program-mode':
         if (el.dataset.program) setProgramMode(el.dataset.program);
+        break;
+      case 'set-drawer-tab':
+        if (el.dataset.tab) setDrawerTab(el.dataset.tab);
         break;
       case 'add-subject-row':
         addSubjectRow();

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "tar3_divani_pervane",
+    "term": "Divan-ı Pervane (Pervaneci)",
+    "sayfa": 15,
+    "tanim": "Türkiye Selçuklu'ya özgü bu divan, tıpkı bugünün **Tapu Kadastro Müdürlüğü** gibi ülkedeki tüm toprakların (has, ikta) kaydını tutup hak edene dağıtırdı; başkanına 'Pervaneci' denirdi.\n💡 Sınav Şifresi: 'Pervane' = toprak kayıt defteri; sadece Türkiye Selçuklu'da var, diğer divanlarla karıştırma.",
+    "pattern": "^Divan-ı Pervane$|\\\\\\\\bdivan-ı pervane\\\\\\\\b|\\\\\\\\bpervaneci\\\\\\\\b"
+  },
+  {
+    "id": "tar3_divani_saltanat",
+    "term": "Divan-ı Saltanat",
+    "sayfa": 14,
+    "tanim": "Türkiye Selçuklu'da veziriazam başkanlığında toplanan, devletin **Bakanlar Kurulu** gibi en yüksek karar organı olan büyük meclistir.\n💡 Sınav Şifresi: 'Saltanat' = hükümet işleri; en üst divan, kararların alındığı yer.",
+    "pattern": "^Divan-ı Saltanat$|\\\\\\\\bdivan-ı saltanat\\\\\\\\b"
+  },
+  {
+    "id": "tar3_ilk_turk_beylikleri",
+    "term": "Malazgirt Sonrası I. Dönem Anadolu Beylikleri",
+    "sayfa": 20,
+    "tanim": "1071 Malazgirt sonrası Alparslan'ın '**Toprak fethedenin malıdır**' sözüyle Anadolu'ya yerleşen ilk Türk beylikleri: Saltuklular, Danişmentliler, Mengücekliler, Artuklular ve Çaka Beyliği.\n💡 Sınav Şifresi: 'İlk' = Malazgirt sonrası; kodlama **S-D-M-A-Ç** (Saltuk-Danişment-Mengücek-Artuk-Çaka).",
+    "pattern": "ilk türk beylikleri[a-zçğıöşü]*|anadolu’da ilk türk beylikleri|saltuklular|danişmentliler|mengücekliler|artuklular|çaka beyliği"
+  },
+  {
+    "id": "tar3_miryokefalon_savasi",
+    "term": "Miryokefalon Muharebesi (1176)",
+    "sayfa": 26,
+    "tanim": "1176'da II. Kılıç Arslan'ın Bizans'ı yendiği, Anadolu'nun **kesin olarak Türk yurdu** olduğunu tüm dünyaya tescilleyen savaştır; bu yüzden '**Yurttutan**' denir.\n💡 Sınav Şifresi: 'Yurttutan' = Miryokefalon; Anadolu'nun tapusu bu savaşla alındı.",
+    "pattern": "miryokefalon muharebesi|miryokefalon savaşı|miryokefalon"
+  },
+  {
+    "id": "tar3_yassicemen_savasi",
+    "term": "Yassıçemen Muharebesi (1230)",
+    "sayfa": 32,
+    "tanim": "1230'da I. Alaeddin Keykubad'ın Harzemşahları yendiği savaş; Harzemşahlar yıkılınca **Moğollarla Selçuklu arasındaki tampon bölge kalktı** ve Anadolu Moğol tehdidine açık hale geldi.\n💡 Sınav Şifresi: 'Tampon kalktı' = Yassıçemen; Harzemşah yıkıldı, Moğol yolu açıldı.",
+    "pattern": "yassıçemen muharebesi|yassıçemen savaşı|yassıçemen"
+  },
+  {
+    "id": "tar3_kosedag_savasi",
+    "term": "Kösedağ Savaşı (1243)",
+    "sayfa": 34,
+    "tanim": "1243'te Selçukluların Moğollara (İlhanlı) ağır yenilgisi; Anadolu istilaya açıldı, devlet **yıkılış sürecine** girdi ve **II. Dönem Türk Beylikleri** kuruldu.\n💡 Sınav Şifresi: 'Kösedağ = yıkılış + II. Beylikler'; Moğol galibiyeti, Selçuklu'nun sonunun başlangıcı.",
+    "pattern": "kösedağ savaşı|kösedağ muharebesi|kösedağ"
+  },
+  {
+    "id": "tar3_baba_ishak_isyani",
+    "term": "Baba İshak (Babailer) İsyanı (1240)",
+    "sayfa": 33,
+    "tanim": "1240'ta Baba İshak ve Baba İlyas önderliğinde çıkan, Anadolu'daki **ilk sosyo-dinî nitelikli Türkmen halk ayaklanması**; devletin zayıflığını ortaya koydu.\n💡 Sınav Şifresi: 'İlk halk isyanı' = Babailer; dinî + sosyal + Türkmen, üç anahtar kelime.",
+    "pattern": "baba ishak|baba ilyas|babailer isyanı"
+  },
+  {
+    "id": "tar3_ahilik_ve_ahi_evran",
+    "term": "Ahilik Teşkilatı ve Ahi Evran",
+    "sayfa": 42,
+    "tanim": "Ahi Evran'ın Kırşehir'de kurduğu; esnaf arasında **meslek ahlakı, dayanışma ve narh (fiyat) kontrolü** sağlayan, fütüvvet ruhuyla gerektiğinde vatan savunan sosyo-ekonomik teşkilattır — bugünün **esnaf odası + tüketici hakem heyeti** karışımı.\n💡 Sınav Şifresi: 'Ahi' = esnaf + ahlak + narh; kurucusu Ahi Evran, merkezi Kırşehir.",
+    "pattern": "^Ahî Evran$|^Ahi Evran$|\\\\\\\\bahilik teşkilatı\\\\\\\\b|\\\\\\\\bahilik\\\\\\\\b|\\\\\\\\bahi evran\\\\\\\\b"
+  },
+  {
+    "id": "tar3_anadolu_erenleri",
+    "term": "Anadolu Erenleri ve Gönül Sultanları",
+    "sayfa": 45,
+    "tanim": "Anadolu'nun Türkleşip İslamlaşmasında gönülleri fetheden mutasavvıflar: **Mevlânâ** (sevgi-hoşgörü), **Yunus Emre** (Türkçe ilahiler), **Hacı Bektâş-ı Velî** (Makâlât), Hacı Bayram-ı Velî ve Şeyh Edebâli.\n💡 Sınav Şifresi: 'Makâlât' = Hacı Bektâş; 'Türkçe ilahi' = Yunus; 'hoşgörü' = Mevlânâ.",
+    "pattern": "mevlânâ celâleddîn-î rumî|mevlana celaleddin|yunus emre|hacı bektâş-ı velî|hacı bektaş|şeyh edebâli|şeyh edebali"
+  },
+  {
+    "id": "tar3_koyunhisar_muharebesi",
+    "term": "Koyunhisar (Bafeus) Muharebesi (1302)",
+    "sayfa": 54,
+    "tanim": "1302'de Osman Bey'in Bizans tekfurlarını yendiği ilk savaş; Halil İnalcık'a göre **Osmanlı'nın gerçek kuruluş tarihi** bu savaştır.\n💡 Sınav Şifresi: 'İlk Osmanlı-Bizans savaşı' + 'gerçek kuruluş 1302' = Koyunhisar (Bafeus).",
+    "pattern": "koyunhisar muharebesi|koyunhisar savaşı|koyunhisar|bafeus"
+  },
+  {
+    "id": "tar3_halil_inalcik",
+    "term": "Prof. Dr. Halil İnalcık",
+    "sayfa": 55,
+    "tanim": "'**Tarihçilerin Şeyhi**' olarak anılan, Osmanlı'nın kuruluşunu **1302 Koyunhisar Zaferi**'ne dayandıran dünyaca ünlü Türk tarihçi.\n💡 Sınav Şifresi: 'Tarihçilerin Şeyhi' + '1302 kuruluş tezi' = Halil İnalcık.",
+    "pattern": "halil inalcık|halil inalcik"
+  },
+  {
+    "id": "tar3_istimalet_politikasi",
+    "term": "İstimâlet Politikası (Hoşgörü)",
+    "sayfa": 58,
+    "tanim": "Osmanlı'nın fethettiği Balkanlarda gayrimüslim halka **adalet, din-vicdan hürriyeti ve can-mal güvenliği** tanıdığı hoşgörü politikası; fetihlerin kalıcı olmasını sağladı — bugünün '**kazandırma yönetimi**' gibi.\n💡 Sınav Şifresi: 'İstimâlet' = hoşgörü + adalet; Balkanlarda kalıcılığın anahtarı, iskânla karıştırma.",
+    "pattern": "istimâlet politikası|istimalet politikası|istimâlet|adalet ve hoşgörü anlayışı"
+  },
+  {
+    "id": "tar3_iskan_politikasi",
+    "term": "İskân Politikası",
+    "sayfa": 57,
+    "tanim": "Osmanlı'nın fethettiği Balkan topraklarına Anadolu'dan **konargöçer Türkmen aileleri** yerleştirerek bölgeyi hem Türkleştirme hem de güvenli hale getirme projesidir; tıpkı bir oyun şirketinin yeni sunucuya **yerleşimci oyuncular** gönderip haritayı sahiplenmesi gibi.\n💡 Sınav Şifresi: **\"Konargöçer Türkmen aileleri\"** + **\"Balkanlar\"** + **\"Türkleşme ve güvenlik\"** üçlüsü; şıklarda 'sürgün' veya 'devşirme' ile karıştırma — iskân **gönüllü/teşvikli yerleştirme**dir.",
+    "pattern": "iskân politikası|iskan politikası|iskân|iskan"
+  },
+  {
+    "id": "tar3_timar_ve_cebelu",
+    "term": "Tımar Sistemi ve Cebelü",
+    "sayfa": 68,
+    "tanim": "Devlet arazisinin vergi gelirini, hizmet karşılığı asker ve memurlara bırakma sistemidir; tımar sahibi her **3-5 bin akçe** için savaşa hazır zırhlı atlı **'Cebelü'** besler — yani devlet maaş ödemez, **arazi geliriyle asker 'kiralar'**.\n💡 Sınav Şifresi: **\"3-5 bin akçe = 1 Cebelü\"** formülü ve **\"vergi geliri tahsisi\"** anahtarı; Kapıkulu (maaşlı/merkezî) ile karıştırma — Tımar **taşrada, toprak geliriyle** beslenir.",
+    "pattern": "^Cebelü$|\\\\\\\\btımar sahiplerinin\\\\\\\\b|\\\\\\\\bcebelü\\\\\\\\b|\\\\\\\\btımar sistemi\\\\\\\\b"
+  },
+  {
+    "id": "tar3_kapikulu_ocagi",
+    "term": "Kapıkulu Ocakları ve Yeniçeriler",
+    "sayfa": 72,
+    "tanim": "**I. Murad** döneminde **Pençik ve Devşirme** sistemiyle Hristiyan çocukların eğitilip dönüştürüldüğü, padişaha bağlı, **üç ayda bir 'Ulufe'** alan merkezî daimi ordudur; tıpkı devletin kendi bünyesinde yetiştirdiği **profesyonel özel kuvvetler** gibi.\n💡 Sınav Şifresi: **\"I. Murad + Devşirme + Ulufe (3 ayda bir)\"** üçlüsü; Tımar/Cebelü ile ayırt et — Kapıkulu **maaşlı ve merkezî**, Tımar **toprak gelirli ve taşralı**dır.",
+    "pattern": "kapıkulu ocakları|yeniçeri ocağı|devşirme sistemi|pençik sistemi|yeniçeri"
+  },
+  {
+    "id": "tar3_ali_kuscu",
+    "term": "Ali Kuşçu",
+    "sayfa": 80,
+    "tanim": "**Uluğ Bey'in öğrencisi**, Semerkant Rasathanesi'nin yöneticisi olup **Fatih'in davetiyle İstanbul'a** gelerek Ayasofya Medresesi başmüderrisi olan astronomi-matematik dehâsıdır; âdeta dönemin **NASA başbilimcisinin** Osmanlı'ya transfer edilmesi gibi.\n💡 Sınav Şifresi: **\"Uluğ Bey + Semerkant Rasathanesi + Fatih'in daveti + Ayasofya Medresesi\"** zinciri; Akşemsettin (tıp/hoca) ile karıştırma — Ali Kuşçu **astronomi-matematik**tir.",
+    "pattern": "ali kuşçu|ali kuscu"
+  },
+  {
+    "id": "tar3_aksamsettin",
+    "term": "Akşemsettin",
+    "sayfa": 82,
+    "tanim": "**Fatih'in hocası** ve İstanbul'un fethinin manevi mimarı olup **'Maddetü'l-Hayat'** eserinde mikropları tarif ederek mikrobiyolojinin öncüsü sayılan tıp bilginidir; sanki **mikroskobu 400 yıl önce keşfeden** bir bilim insanı gibi.\n💡 Sınav Şifresi: **\"Fatih'in hocası + fetih manevi mimarı + Maddetü'l-Hayat + mikrop\"** dörtlüsü; Ali Kuşçu (astronomi) ile karıştırma — Akşemsettin **tıp ve maneviyat**tır.",
+    "pattern": "akşemsettin|aksemsettin"
+  },
+  {
+    "id": "tar3_davudi_kayseri",
+    "term": "Dâvud-i Kayserî",
+    "sayfa": 78,
+    "tanim": "**Orhan Gazi** tarafından Osmanlı'nın ilk medresesi **İznik Orhaniyesi'ne** atanan, tarihteki **ilk müderris (ilk rektör)** ve İslam filozofudur; bir üniversitenin **kurucu rektörü** gibi düşün.\n💡 Sınav Şifresi: **\"Orhan Gazi + İznik Orhaniyesi + ilk müderris\"** üçlüsü; 'ilk' vurgusu kritik — diğer âlimlerle karıştırma, Dâvud-i Kayserî **kurumsal ilk**tir.",
+    "pattern": "dâvud-i kayseri|davud-i kayseri"
+  }
+]

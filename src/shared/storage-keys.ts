@@ -12,7 +12,9 @@ export const StorageKeys = {
   WATER_STREAK: 'aol_water_streak',
   RESUME_STATE: 'aol_resume_state',
   TTS_GENDER: 'aol_tts_gender',
+  TTS_ENGINE: 'aol_tts_engine',
   ELIMINATED_CHOICES: 'aol_eliminated_choices',
+  ELIMINATED_WRONG_CHOICES: 'aol_eliminated_wrong_choices',
   AI_EXPLANATIONS: 'aol_ai_explanations',
 } as const;
 

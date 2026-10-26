@@ -1,0 +1,11 @@
+{
+  "ders": "Kimya 2",
+  "subject": "KIM",
+  "donem": 2,
+  "sorumlu_sayfa_araligi": [
+    137,
+    287
+  ],
+  "toplam_sayfa": 151,
+  "kaynak_pdf": "kimya_2_2024.pdf"
+}

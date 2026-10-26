@@ -1,10 +1,11 @@
 /** Frontend'in Python çıktısından beklediği veri sözleşmesi. */
 export const choices = ['A', 'B', 'C', 'D', 'E'] as const;
 export type Choice = typeof choices[number];
-export type SubjectId = 'COG' | 'TDE' | 'MAT' | 'TAR' | 'INK' | 'KIM' | 'FIZ' | 'BIO' | 'FEL' | 'DIN' | 'SAG' | 'ING' | 'AOF_HADIS' | 'AOF_ITAR' | 'AOF_AHLAK' | 'AOF_IBADET' | 'AOF_INANC';
+export type SubjectId = 'COG' | 'TDE' | 'MAT' | 'TAR' | 'INK' | 'KIM' | 'FIZ' | 'BIO' | 'FEL' | 'DIN' | 'SAG' | 'ING' | 'KLM' | 'AOF_HADIS' | 'AOF_ITAR' | 'AOF_AHLAK' | 'AOF_IBADET' | 'AOF_INANC';
 
 export interface Question {
   id: number;
+  subject?: SubjectId;
   ders: string;
   ders_kodu?: number;
   soru_no?: number;
@@ -24,6 +25,7 @@ export interface Question {
   soru_tr?: string;
   soru_ar?: string;
   soru_xray?: string;
+  secenekler_xray?: Partial<Record<Choice, string>>;
   dogru_nedeni?: string;
 }
 
@@ -58,6 +60,9 @@ export function parseQuestions(value: unknown): Question[] {
       if (question[key] !== undefined && typeof question[key] !== 'string') {
         throw new Error(`${id}: ${key} metin olmalı.`);
       }
+    }
+    if (question.secenekler_xray !== undefined && !isRecord(question.secenekler_xray)) {
+      throw new Error(`${id}: secenekler_xray bir nesne olmalı.`);
     }
 
     if (question.zorluk !== undefined && !['kek', 'orta', 'boss'].includes(question.zorluk as string)) {

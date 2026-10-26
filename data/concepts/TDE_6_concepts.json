@@ -1,0 +1,366 @@
+[
+  {
+    "id": "tde6_roman",
+    "term": "Roman",
+    "sayfa": 162,
+    "tanim": "**9. Sınıf:** Olay örgüsü, kişi, zaman ve mekânla kurulan uzun kurgusal anlatı; tıpkı bir **dizinin sezonluk senaryosu** gibi geniş ve katmanlıdır.\n💡 Sınav Şifresi: \"Uzun + kurgusal + olay örgüsü\" üçlüsü romanı hikâyeden ayırır.\n---\n**10. Sınıf:** Dünyada **Don Kişot** (Cervantes) ile doğdu; bizde ilk çeviri roman **Telemak** (Yusuf Kâmil Paşa), ilk yerli roman **Taaşşuk-ı Talat ve Fitnat** (Şemsettin Sami), ilk edebî roman **İntibah** (Namık Kemal), ilk tarihî roman **Cezmi** (Namık Kemal), ilk realist roman **Araba Sevdası** (Recaizade Mahmut Ekrem) verildi; Millî Edebiyat'ta **Ateşten Gömlek** (Halide Edip) öne çıktı.\n💡 Sınav Şifresi: Dünya doğuşu = Don Kişot; ilk çeviri = Telemak; ilk yerli = Taaşşuk-ı Talat ve Fitnat; ilk edebî = İntibah; ilk tarihî = Cezmi; ilk realist = Araba Sevdası.\n---\n**11. Sınıf:** 1923-1980 arası Türk romanı; **toplumcu gerçekçi** Köy Enstitülü yazarlar (Yaşar Kemal, Fakir Baykurt, Kemal Tahir) ve modern teknikler (bilinç akışı, iç monolog, geriye dönüş) dönemi.\n💡 Sınav Şifresi: \"Köy Enstitüsü + toplumcu gerçekçilik\" bu dönemin kod adıdır; modern tekniklerle birlikte anılır.",
+    "pattern": "^Roman$|\\\\\\\\broman türü\\\\\\\\b|\\\\\\\\bromanı\\\\\\\\b|\\\\\\\\bromanlar\\\\\\\\b|\\\\\\\\bromancılığa\\\\\\\\b"
+  },
+  {
+    "id": "tde6_yasar_kemal",
+    "term": "Yaşar Kemal",
+    "sayfa": 166,
+    "tanim": "Çukurova ve Torosların **efsane anlatıcısı**; halk dilini destansı bir ritimle yoğuran toplumcu gerçekçi romancı. **İnce Memed** ile ağaya başkaldırıyı, **Teneke** ile Çukurova'yı anlattı; 1955'te **İnce Memed** ile Varlık Roman Armağanı'nı kazandı.\n💡 Sınav Şifresi: **İnce Memed** = ağaya başkaldırı; **Teneke** = Çukurova; \"Çukurova + efsane + halk dili\" üçlüsü Yaşar Kemal'i işaret eder.",
+    "pattern": "yaşar kemal|yasar kemal"
+  },
+  {
+    "id": "tde6_fakir_baykurt",
+    "term": "Fakir Baykurt",
+    "sayfa": 168,
+    "tanim": "Köy Enstitüsünden yetişen, köyün **içinden** konuşan yazar; ağalık ve sömürüyü köylünün diliyle anlatır. **Yılanların Öcü** ile ağa baskısını, **Tırpan** ile köy gerçeğini işledi; Burdur doğumludur.\n💡 Sınav Şifresi: **Yılanların Öcü** = ağa baskısı; **Tırpan** = köy gerçeği; \"Köy Enstitülü + Burdur\" ipucu Fakir Baykurt'u verir.",
+    "pattern": "fakir baykurt"
+  },
+  {
+    "id": "tde6_kemal_tahir",
+    "term": "Kemal Tahir",
+    "sayfa": 167,
+    "tanim": "Osmanlı tarihini ve cezaevi gerçeğini **tezli** bir bakışla romanlaştıran yazar; tarihe romancı gözüyle bakar. **Devlet Ana** ile Osmanlı kuruluşunu, **Yorgun Savaşçı** ile Kurtuluş Savaşı'nı işledi.\n💡 Sınav Şifresi: **Devlet Ana** = Osmanlı kuruluşu; **Yorgun Savaşçı** = Kurtuluş Savaşı; \"tezli tarihî roman\" denince Kemal Tahir.",
+    "pattern": "kemal tahir"
+  },
+  {
+    "id": "tde6_orhan_kemal",
+    "term": "Orhan Kemal",
+    "sayfa": 169,
+    "tanim": "Çukurova fabrikalarının, tarım işçilerinin ve kenar mahalle insanının **ustası**; ezilenin sesini sade bir dille anlatır. **Murtaza** ile bürokratik inadı, **Bereketli Topraklar Üzerinde** ile tarım işçisini işledi.\n💡 Sınav Şifresi: **Murtaza** = bürokratik inat; **Bereketli Topraklar Üzerinde** = tarım işçisi; \"Çukurova + fabrika + işçi\" üçlüsü Orhan Kemal.",
+    "pattern": "orhan kemal"
+  },
+  {
+    "id": "tde6_koy_enstitulu_yazarlar",
+    "term": "Köy Enstitülü Yazarlar",
+    "sayfa": 164,
+    "tanim": "1940'lı yıllarda **Köy Enstitülerinde** yetişip köyü içeriden anlatan kuşak; ağalık sömürüsünü bizzat yaşayarak yazdılar. **Fakir Baykurt, Mahmut Makal, Talip Apaydın** bu kuşağın önde gelen adlarıdır.\n💡 Sınav Şifresi: \"İçeriden anlatım\" anahtardır; Fakir Baykurt, Mahmut Makal, Talip Apaydın bu kuşağın adlarıdır.",
+    "pattern": "köy enstitülü yazarlar|köy çıkışlı, köy enstitülü"
+  },
+  {
+    "id": "tde6_bilinc_akisi",
+    "term": "Bilinç Akışı",
+    "sayfa": 175,
+    "tanim": "Karakterin zihninden geçenlerin **mantık süzgeci olmadan**, çağrışımlarla ve dil bilgisi kuralları hiçe sayılarak akıtılması; tıpkı bir **sosyal medya akışı** gibi düzensiz ve kesintisiz.\n💡 Sınav Şifresi: \"Noktalama yok + çağrışım + düzensiz\" üçlüsü bilinç akışını iç monologdan ayırır.",
+    "pattern": "^Bilinç akışı$|\\\\\\\\bbilinç akışı\\\\\\\\b"
+  },
+  {
+    "id": "tde6_ic_monolog",
+    "term": "İç Monolog",
+    "sayfa": 175,
+    "tanim": "Karakterin kendi kendine konuşması; ama **düzenli, mantıklı ve kurallı** cümlelerle — bilinç akışının \"terbiyeli\" kardeşi.\n💡 Sınav Şifresi: \"Kurallı + mantıklı + tek kişi\" = iç monolog; düzensizlik varsa bilinç akışıdır.",
+    "pattern": "^İç monolog$|\\\\\\\\biç monolog\\\\\\\\b"
+  },
+  {
+    "id": "tde6_ic_diyalog",
+    "term": "İç Diyalog",
+    "sayfa": 176,
+    "tanim": "Karakterin iç dünyasında **iki farklı benliğin** karşılıklı tartışması; sanki kafasının içinde bir **mahkeme salonu** kurulur.\n💡 Sınav Şifresi: \"İçeride iki ses + tartışma\" = iç diyalog; tek ses varsa iç monologdur.",
+    "pattern": "^İç diyalog$|\\\\\\\\biç diyalog\\\\\\\\b"
+  },
+  {
+    "id": "tde6_geriye_donus",
+    "term": "Geriye Dönüş (Flashback)",
+    "sayfa": 177,
+    "tanim": "Anlatının kronolojik akışını kesip geçmişe dönme; sinemadaki **flashback** sahnesi gibi karakterin çocukluğuna veya anısına ışınlanma.\n💡 Sınav Şifresi: \"Şimdiki zaman kesilir + geçmişe atlama\" = geriye dönüş; sadece hatırlama değil, sahne olarak göstermedir.",
+    "pattern": "geriye dönüş tekniği|geriye dönüş"
+  },
+  {
+    "id": "tde6_ozetleme",
+    "term": "Özetleme Tekniği",
+    "sayfa": 177,
+    "tanim": "Uzun bir zaman diliminin anlatıcı tarafından **ana hatlarıyla kısaca** aktarılması; GPS'in \"en kısa yol\" hesabı gibi süreci sıkıştırma.\n💡 Sınav Şifresi: \"Uzun zaman + kısa anlatım + anlatıcı özetler\" = özetleme; sahne gibi detaylı gösterim varsa özet değildir.",
+    "pattern": "özetleme tekniği"
+  },
+  {
+    "id": "tde6_bakis_acisi",
+    "term": "Bakış Açısı (Anlatıcı)",
+    "sayfa": 178,
+    "tanim": "Olayın **hangi konumdan** görüldüğünü belirleyen anlatıcı tutumu; kameranın hangi açıdan çektiği gibi düşün — hâkim, kahraman veya gözlemci.\n💡 Sınav Şifresi: **Hâkim** = her şeyi bilir; **Kahraman** = \"ben\" anlatır; **Gözlemci** = sadece gördüğünü aktarır.",
+    "pattern": "^Bakış açısı$|\\\\\\\\bbakış açısı[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde6_tiyatro",
+    "term": "Tiyatro",
+    "sayfa": 190,
+    "tanim": "**9. Sınıf:** Sahnede oyuncuların **hareket, jest, mimik ve konuşmalarıyla** bir olayı seyirci önünde **canlandırma** sanatıdır; yani 'canlı flashback' gibi düşün. Yazılı metin (dramatik metin) ile sahneleme (temsil) birbirinden ayrılır.\n---\n**10. Sınıf:** Geleneksel Türk tiyatrosu **Karagöz (gölge oyunu), Orta Oyunu (Kavuklu-Pişekâr) ve Meddah (tek kişilik anlatı)** üçlüsüdür; ilk yerli tiyatro eseri ise Şinasi'nin **Şair Evlenmesi**'dir (1859, ilk yerli oyun).\n---\n**11. Sınıf:** Cumhuriyet tiyatrosu **Muhsin Ertuğrul** öncülüğünde kurumsallaşır (Darülbedayi → Şehir Tiyatroları); **Ahmet Kutsi Tecer, Haldun Taner, Turan Oflazoğlu** çağdaş yazarlardır.\n💡 Sınav Şifresi: 'İlk yerli oyun = Şair Evlenmesi (Şinasi)', 'Kurumsallaşma = Muhsin Ertuğrul', 'Geleneksel üçlü = Karagöz-Orta Oyunu-Meddah'.",
+    "pattern": "^Tiyatro$|\\\\\\\\btiyatro türü\\\\\\\\b|\\\\\\\\btiyatrosu\\\\\\\\b|\\\\\\\\btiyatro eseri\\\\\\\\b"
+  },
+  {
+    "id": "tde6_muhsin_ertugrul",
+    "term": "Muhsin Ertuğrul",
+    "sayfa": 192,
+    "tanim": "Cumhuriyet tiyatrosunun **batılı anlamda kurucusu**; **Darülbedayi**'den yetişip **İstanbul Şehir Tiyatroları**nı kuran, Devlet Tiyatrolarının gelişimine öncülük eden yönetmen ve oyuncudur. 'Türk tiyatrosunun kurumsallaşması' denince akla gelen ilk isimdir.\n💡 Sınav Şifresi: 'Türk tiyatrosunun kurumsallaşması / Şehir Tiyatroları' = **Muhsin Ertuğrul**.",
+    "pattern": "muhsin ertuğrul|muhsin ertugrul"
+  },
+  {
+    "id": "tde6_ahmet_kutsi_tecer",
+    "term": "Ahmet Kutsi Tecer",
+    "sayfa": 194,
+    "tanim": "Folklorik ve millî motifleri sahneye taşıyan; **'Köşebaşı'** ve **'Koçyiğit Köroğlu'** oyunlarının yazarı, ayrıca **Âşık Veysel'i keşfedip** edebiyat dünyasına tanıtan şair-yazardır.\n💡 Sınav Şifresi: 'Âşık Veysel'i keşfeden' + 'Köşebaşı' = Ahmet Kutsi Tecer.",
+    "pattern": "ahmet kutsi tecer"
+  },
+  {
+    "id": "tde6_haldun_taner",
+    "term": "Haldun Taner",
+    "sayfa": 196,
+    "tanim": "**Epik tiyatro** ve **kabare** türünün Türk edebiyatındaki öncüsü; **'Keşanlı Ali Destanı'** (ilk epik tiyatro örneği) ve **'Gözlerimi Kaparım Vazifemi Yaparım'** oyunlarının yazarıdır.\n💡 Sınav Şifresi: 'Epik tiyatro + kabare' ve 'Keşanlı Ali Destanı' = Haldun Taner.",
+    "pattern": "haldun taner"
+  },
+  {
+    "id": "tde6_turgut_ozakman",
+    "term": "Turgut Özakman",
+    "sayfa": 197,
+    "tanim": "Töre ve aile çatışmalarını sahneleyen **'Ah Şu Gençler', 'Töre', 'Ocak'** oyunlarının yazarı; belgesel roman **'Şu Çılgın Türkler'** ile de tanınan oyun yazarı ve senaristtir.\n💡 Sınav Şifresi: 'Şu Çılgın Türkler' + 'Töre' = Turgut Özakman.",
+    "pattern": "turgut özakman|turgut ozakman"
+  },
+  {
+    "id": "tde6_orhan_asena",
+    "term": "Orhan Asena",
+    "sayfa": 198,
+    "tanim": "**'Türk tiyatrosunun Shakespeare'i'** olarak anılan; tarih ve mitolojiden beslenen **'Hürrem Sultan', 'Tohum ve Toprak', 'Atçalı Kel Mehmet'** oyunlarının yazarıdır.\n💡 Sınav Şifresi: 'Türk Shakespeare'i' + 'Hürrem Sultan' = Orhan Asena.",
+    "pattern": "orhan asena"
+  },
+  {
+    "id": "tde6_gungor_dilmen",
+    "term": "Güngör Dilmen",
+    "sayfa": 199,
+    "tanim": "**Mitolojik dramların** ve çağdaş yorumların ustası; **'Midas'ın Kulakları'** üçlemesi (Midas'ın Kulakları, Midas'ın Altınları, Midas'ın Kördüğümü) ve **'Ben Anadolu'** oyunlarının yazarıdır.\n💡 Sınav Şifresi: 'Midas'ın Kulakları' + 'Ben Anadolu' = Güngör Dilmen.",
+    "pattern": "güngör dilmen|gungor dilmen"
+  },
+  {
+    "id": "tde6_turan_oflazoglu",
+    "term": "Turan Oflazoğlu",
+    "sayfa": 200,
+    "tanim": "Osmanlı tarihini ve **hükümdar trajedilerini** sahneye aktaran; **'IV. Murat', 'Deli İbrahim', 'Kösem Sultan'** oyunlarının yazarı ve çevirmenidir.\n💡 Sınav Şifresi: 'Padişah trajedileri' (IV. Murat, Deli İbrahim, Kösem) = Turan Oflazoğlu.",
+    "pattern": "turan oflazoğlu|turan oflazoglu"
+  },
+  {
+    "id": "tde6_necati_cumali",
+    "term": "Necati Cumalı",
+    "sayfa": 201,
+    "tanim": "Ege kırsalını, tütün işçilerini ve töre çatışmalarını sahneye taşıyan; **'Nalınlar', 'Susuz Yaz', 'Derya Gülü'** oyunlarının yazarı, aynı zamanda şair ve romancıdır.\n💡 Sınav Şifresi: 'Ege + tütün işçisi + Susuz Yaz' = Necati Cumalı.",
+    "pattern": "necati cumalı|necati cumali"
+  },
+  {
+    "id": "tde6_refik_erduran",
+    "term": "Refik Erduran",
+    "sayfa": 202,
+    "tanim": "Toplumsal **hiciv** ve modern aile dramlarıyla tanınan; **'Cengiz Han'ın Bisikleti'** ve **'Karayar Köprüsü'** oyunlarının yazarıdır.\n💡 Sınav Şifresi: 'Cengiz Han'ın Bisikleti' (absürt-hiciv başlık) = Refik Erduran.",
+    "pattern": "refik erduran"
+  },
+  {
+    "id": "tde6_nezihe_araz",
+    "term": "Nezihe Araz",
+    "sayfa": 203,
+    "tanim": "Türk kadınının tarihsel ve toplumsal yerini sahneye aktaran; **'Bozkır Güzellemesi'** ve **'Afife Jale'** oyunlarının yazarı, aynı zamanda gazeteci ve yazardır.\n💡 Sınav Şifresi: 'Afife Jale' (ilk Müslüman kadın tiyatrocu) oyunu = Nezihe Araz.",
+    "pattern": "nezihe araz"
+  },
+  {
+    "id": "tde6_dincer_sumer",
+    "term": "Dinçer Sümer",
+    "sayfa": 204,
+    "tanim": "Cumhuriyet Dönemi tiyatro **oyuncusu, yönetmeni** ve **'Eski Fotoğraflar'** oyununun yazarıdır.\n💡 Sınav Şifresi: 'Eski Fotoğraflar' oyunu = Dinçer Sümer.",
+    "pattern": "dinçer sümer|dincer sumer"
+  },
+  {
+    "id": "tde6_oktay_arayici",
+    "term": "Oktay Arayıcı",
+    "sayfa": 205,
+    "tanim": "Cumhuriyet dönemi **toplumcu gerçekçi** çizgide yazan tiyatro yazarımızdır; **'Rumuz Goncagül'** oyununda halk hikâyesi kalıbını (meddah, gölge oyunu, orta oyunu geleneği) kullanırken, **'Bir Ölümün Toplumsal Anatomisi'** ile bir cinayeti toplumun büyüteci altına yatırır; tıpkı bir dedektifin tek olaydan yola çıkıp bütün şehri sorguya çekmesi gibi.\n💡 Sınav Şifresi: 'Rumuz Goncagül' + 'toplumsal anatomi' = **Oktay Arayıcı**. Diğer toplumcu tiyatrocularla (Turhan Oflazoğlu, Recep Bilginer, Haldun Taner) karıştırma; anahtar oyun adlarıdır.",
+    "pattern": "oktay arayıcı|oktay arayici"
+  },
+  {
+    "id": "tde6_kostum",
+    "term": "Kostüm (Tiyatro)",
+    "sayfa": 195,
+    "tanim": "Sahnede oyuncunun **üzerine giydiği** ve karakterin dönemini, mesleğini, mizacını seyirciye tek bakışta fısıldayan kıyafet bütünüdür; tıpkı bir dizide Fatih'i kavuğu ve kürküyle tanıman gibi.\n💡 Sınav Şifresi: 'Üzerine giyilen' = kostüm; 'sahneye kurulan' = dekor. Karıştırma: kostüm bedende, dekor mekânda.",
+    "pattern": "^Kostüm$|\\\\\\\\bkostüm\\\\\\\\b"
+  },
+  {
+    "id": "tde6_dekor",
+    "term": "Dekor (Tiyatro)",
+    "sayfa": 195,
+    "tanim": "Sahnedeki olayın **nerede ve hangi zamanda** geçtiğini seyirciye göstermek için kurulan eşya, aksesuar ve mekân düzenlemesidir; bir film setindeki 'mekân kurulumu' gibi.\n💡 Sınav Şifresi: 'Sahneyi döşeyen' = dekor; 'oyuncunun giydiği' = kostüm. Dekor mekânı, kostüm kişiyi anlatır.",
+    "pattern": "^Dekor$|\\\\\\\\bdekor\\\\\\\\b"
+  },
+  {
+    "id": "tde6_jest",
+    "term": "Jest",
+    "sayfa": 195,
+    "tanim": "Oyuncunun repliğini güçlendirmek için **el, kol ve gövdesiyle** yaptığı hareketlerdir; bir sunucunun konuşurken elleriyle havada çizdiği şekiller gibi.\n💡 Sınav Şifresi: Jest = **gövde/el-kol** hareketi; mimik = **yüz** hareketi. 'El-kol' görürsen jest, 'kaş-göz' görürsen mimik.",
+    "pattern": "^Jest$|\\\\\\\\bjest\\\\\\\\b"
+  },
+  {
+    "id": "tde6_mimik",
+    "term": "Mimik",
+    "sayfa": 195,
+    "tanim": "Oyuncunun sevinç, öfke, korku gibi duyguları **yüz kaslarıyla** seyirciye aktarmasıdır; bir emoji gibi ama canlı ve anlık.\n💡 Sınav Şifresi: Mimik = **yüz**; jest = **el-kol-gövde**. 'Yüz ifadesi' geçen şık mimiktir.",
+    "pattern": "^Mimik$|\\\\\\\\bmimik\\\\\\\\b"
+  },
+  {
+    "id": "tde6_diyalog",
+    "term": "Diyalog (Tiyatro)",
+    "sayfa": 195,
+    "tanim": "İki ya da daha çok kişinin sahnede **karşılıklı konuşmasıdır**; bir WhatsApp yazışmasının sesli ve yüz yüze hâli gibi.\n💡 Sınav Şifresi: 'Karşılıklı' = diyalog; 'tek kişi' = monolog. Sahnede iki kişi konuşuyorsa diyalog.",
+    "pattern": "^Diyalog$|\\\\\\\\bdiyalog hâlinde\\\\\\\\b|\\\\\\\\bdiyalog\\\\\\\\b"
+  },
+  {
+    "id": "tde6_monolog",
+    "term": "Monolog (Tiyatro)",
+    "sayfa": 195,
+    "tanim": "Oyuncunun sahnede **tek başına**, ya kendi kendine ya da seyirciye hitaben yaptığı uzun konuşmadır; bir vlog çekerken kameraya dert anlatan yayıncı gibi.\n💡 Sınav Şifresi: 'Tek kişi + uzun konuşma' = monolog. Hamlet'in 'Olmak ya da olmamak' tiradı klasik örnektir.",
+    "pattern": "^Monolog$|\\\\\\\\bmonolog\\\\\\\\b"
+  },
+  {
+    "id": "tde6_elestiri",
+    "term": "Eleştiri (Tenkit)",
+    "sayfa": 210,
+    "tanim": "10. Sınıf: Divan edebiyatında şairleri sıralayıp değerlendiren **tezkireler** ilk eleştiri sayılır; yani 'şairler sözlüğü' gibi.\n---\n11. Sınıf: Bir eseri ya da sanatçıyı **olumlu-olumsuz yönleriyle** inceleyip değerini ortaya koyan öğretici yazı türüdür; bir ürünün hem artısını hem eksisini yazan teknoloji incelemesi gibi. Tanzimat sonrası **tenkit** adıyla modern anlamına kavuşmuştur.\n💡 Sınav Şifresi: Divan'da 'tezkire' = ilk eleştiri; Tanzimat sonrası 'tenkit' = modern eleştiri. Anahtar: 'değerlendirme + olumlu/olumsuz'.",
+    "pattern": "^Eleştiri$|\\\\\\\\beleştiri türü\\\\\\\\b|\\\\\\\\beleştirmen\\\\\\\\b|\\\\\\\\beleştiri\\\\\\\\b"
+  },
+  {
+    "id": "tde6_esere_donuk_elestiri",
+    "term": "Esere Yönelik (Eseri Konu Alan) Eleştiri",
+    "sayfa": 212,
+    "tanim": "Sanatçıyı bir kenara bırakıp **sadece eserin dilini, kurgusunu ve estetik değerini** merkeze alan nesnel eleştiridir; bir telefonu sadece teknik özellikleriyle inceleyen test gibi.\n💡 Sınav Şifresi: 'Sanatçıyı bırak, esere bak' = esere dönük. Anahtar kelimeler: **nesnel, dil, kurgu, yapı**.",
+    "pattern": "eseri konu alan|esere yönelik|esere dönük"
+  },
+  {
+    "id": "tde6_sanatciya_donuk_elestiri",
+    "term": "Sanatçıya Yönelik Eleştiri",
+    "sayfa": 213,
+    "tanim": "Eseri **sanatçının hayatı, psikolojisi ve dünya görüşü** üzerinden okuyan eleştiridir; bir şarkıyı sanatçının biyografisini bilerek dinlemek gibi.\n💡 Sınav Şifresi: 'Biyografi + psikoloji + mizaç' = sanatçıya dönük. Eser değil, **sanatçının kendisi** merkezde.",
+    "pattern": "sanatçıya yönelik|sanatçıya dönük"
+  },
+  {
+    "id": "tde6_topluma_donuk_elestiri",
+    "term": "Topluma Yönelik (Sosyolojik) Eleştiri",
+    "sayfa": 214,
+    "tanim": "Eseri **doğduğu toplumun tarihî, ekonomik ve kültürel şartlarına** göre değerlendiren sosyolojik eleştiridir; bir diziyi çekildiği dönemin ruhuyla izlemek gibi.\n💡 Sınav Şifresi: 'Toplum + tarih + ekonomi' = sosyolojik eleştiri. Anahtar: **dönemin şartları**.",
+    "pattern": "topluma yönelik|topluma dönük"
+  },
+  {
+    "id": "tde6_okura_donuk_elestiri",
+    "term": "Okura Dönük (İzlenimci) Eleştiri",
+    "sayfa": 215,
+    "tanim": "Eleştirmenin eserin kendisinde bıraktığı **kişisel duygu ve izlenimleri** aktardığı öznel eleştiridir; bir filmi izledikten sonra 'bende şu hissi uyandırdı' diye yorum yapmak gibi.\n💡 Sınav Şifresi: 'Bende bıraktığı izlenim' = okura dönük/izlenimci. Anahtar: **öznel, duygu, intiba**.",
+    "pattern": "okura dönük|okura yönelik|izlenimci eleştiri"
+  },
+  {
+    "id": "tde6_tarihsel_elestiri",
+    "term": "Tarihsel Eleştiri",
+    "sayfa": 216,
+    "tanim": "Bir eseri **kendi çağının ruhuyla** yargılamaktır; tıpkı Fatih'in İstanbul fethini bugünün insan hakları ölçütleriyle değil, 1453'ün şartlarıyla anlamak gibi.\n💡 Sınav Şifresi: 'Dönemin şartları', 'üretildiği çağ', 'tarihsel bağlam' → tarihsel eleştiri.",
+    "pattern": "tarihsel eleştiri|tarihsel"
+  },
+  {
+    "id": "tde6_tezkire",
+    "term": "Tezkire",
+    "sayfa": 217,
+    "tanim": "Divan edebiyatının **'şairler ansiklopedisi'**dir; bugünkü biyografi sözlüklerinin ataları gibi, şairin hayatı + eserleri + edebî kişiliğini tek kalemde toplar.\n💡 Sınav Şifresi: 'Şair hayatları' + 'Divan edebiyatı' + 'biyografik' → tezkire (ilk eleştiri nüveleri).",
+    "pattern": "^Tezkireler$|^Tezkire$|\\\\\\\\btezkireler\\\\\\\\b|\\\\\\\\btezkire\\\\\\\\b"
+  },
+  {
+    "id": "tde6_mulakat",
+    "term": "Mülakat (Görüşme)",
+    "sayfa": 230,
+    "tanim": "Tanınmış bir kişiyle **yüz yüze soru-cevap** yaparak kamuoyunu bilgilendirme sanatıdır; tıpkı bir gazetecinin ünlü bir bilim insanıyla röportaj masasına oturması gibi. Sorular **önceden hazırlanır**, cevaplar **yazarın izlenimleriyle** sunulur.\n💡 Sınav Şifresi: 'Soru-cevap' + 'tanınmış kişi' + 'yüz yüze' + 'önceden hazırlık' → mülakat (görüşme).",
+    "pattern": "^Mülakat$|\\\\\\\\bmülakat türü\\\\\\\\b|\\\\\\\\bmülakat\\\\\\\\b"
+  },
+  {
+    "id": "tde6_rusen_esref",
+    "term": "Ruşen Eşref Ünaydın",
+    "sayfa": 232,
+    "tanim": "Türk edebiyatında mülakatın **kurucu ismi**; 'Diyorlar ki' ile edebiyatçıları, 'Anafartalar Kumandanı Mustafa Kemal ile Mülakat' ile de Atatürk'ü kamuoyuna tanıttı.\n💡 Sınav Şifresi: 'Diyorlar ki' + 'Anafartalar' + 'mülakat' → Ruşen Eşref Ünaydın.",
+    "pattern": "ruşen eşref ünaydın|ruşen eşref|rusen esref"
+  },
+  {
+    "id": "tde6_roportaj",
+    "term": "Röportaj",
+    "sayfa": 235,
+    "tanim": "Bir olayı **yerinde gezip gözlemleyerek**, fotoğraf-belgeyle süsleyip yazarın izlenimleriyle harmanlayan türdür; mülakattan farkı, sadece konuşmak değil **araştırıp yaşamaktır**.\n💡 Sınav Şifresi: 'Yerinde araştırma' + 'fotoğraf/belge' + 'izlenim' → röportaj (mülakattan ayrılır).",
+    "pattern": "^Röportaj$|\\\\\\\\bröportaj türü\\\\\\\\b|\\\\\\\\bröportaj\\\\\\\\b"
+  },
+  {
+    "id": "tde6_anlatim_bozuklugu",
+    "term": "Anlatım Bozuklukları",
+    "sayfa": 250,
+    "tanim": "Cümlenin **duruluk, açıklık ve doğruluk** ilkelerini bozan her türlü kusurdur; tıpkı bir yazılımın kod hatası gibi cümlenin çalışmasını engeller. İki ana grupta incelenir: **dil bilgisi kaynaklı** (özne-yüklem uyuşmazlığı, tümleç eksikliği) ve **anlam kaynaklı** (gereksiz sözcük, çelişen sözcükler, yanlış anlam/yer).\n💡 Sınav Şifresi: 'Duruluk' + 'açıklık' + 'doğruluk' + 'dil bilgisi/mantık hatası' → anlatım bozukluğu şemsiyesi.",
+    "pattern": "anlatım bozukluğu[a-zçğıöşü]*|anlatım bozukluk[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde6_kelimenin_yanlis_yerde",
+    "term": "Kelimenin Yanlış Yerde Kullanılması",
+    "sayfa": 252,
+    "tanim": "Sözcüğün cümlede **yerini şaşırmasıyla** anlamın kaymasıdır; 'Maskesiz asansöre binmek' deyince asansör maskesiz kalıyor!\n💡 Sınav Şifresi: 'Yer değiştirme' + 'anlam kayması/gülünç durum' → kelimenin yanlış yerde kullanımı.",
+    "pattern": "kelimenin yanlış yerde kullanılması"
+  },
+  {
+    "id": "tde6_kelimenin_yanlis_anlamda",
+    "term": "Kelimenin Yanlış Anlamda Kullanılması",
+    "sayfa": 253,
+    "tanim": "Yazılışı veya anlamı yakın iki sözcüğün **birbirinin yerine** kullanılmasıdır; 'etkilemek' yerine 'etkilenmek' demek gibi. **Karıştırılan sözcükler** (etki/etkileşim, az/azımsamak) veya **yanlış eşleştirmeler** bu gruba girer.\n💡 Sınav Şifresi: 'Yakın anlamlı sözcük' + 'birbiri yerine' + 'anlam kayması' → kelimenin yanlış anlamda kullanımı.",
+    "pattern": "kelimenin yanlış anlamda kullanılması"
+  },
+  {
+    "id": "tde6_gereksiz_sozcuk",
+    "term": "Gereksiz Sözcük Kullanımı",
+    "sayfa": 251,
+    "tanim": "Cümlede anlamı zaten var olan bir sözcüğün **tekrar edilmesiyle** duruluğun bozulmasıdır; 'yukarı çıktı' yerine 'yukarı yükseldi' demek gibi. **Eş anlamlı** veya **aynı anlamı pekiştiren** sözcüklerin birlikte kullanımı bu kusuru doğurur.\n💡 Sınav Şifresi: 'Eş anlamlı tekrar' + 'duruluk ihlali' + 'aynı anlamı pekiştirme' → gereksiz sözcük kullanımı.",
+    "pattern": "gereksiz sözcük kullanımı|cümleden atılarak"
+  },
+  {
+    "id": "tde6_celisen_sozcukler",
+    "term": "Çelişen Sözcüklerin Birlikte Kullanılması",
+    "sayfa": 254,
+    "tanim": "Aynı cümlede **kesinlik ve olasılık** gibi birbirini tutmayan ifadelerin yan yana gelmesidir; 'kesinlikle galiba gelecek' gibi.\n💡 Sınav Şifresi: 'Kesinlik + olasılık' veya 'az/çok' çelişkisi → çelişen sözcükler.",
+    "pattern": "çelişen sözcüklerin|çelişen sözlerin"
+  },
+  {
+    "id": "tde6_ozne_yuklem_uyusmazligi",
+    "term": "Özne-Yüklem Uyuşmazlığı",
+    "sayfa": 255,
+    "tanim": "Özne ile yüklemin **tekillik-çoğulluk, olumluluk-olumsuzluk veya kişi** bakımından tutmamasıdır; 'Kuşlar uçtu' doğru, 'Kuşlar uçtular' gereksiz çoğul gibi. **İnsan dışı çoğul özneler** yüklemi tekil olur; **insan çoğul özneler** ise çoğul yüklem alabilir.\n💡 Sınav Şifresi: 'Tekillik-çoğulluk' + 'kişi uyumu' + 'olumlu-olumsuz' + 'insan/insan dışı özne' → özne-yüklem uyuşmazlığı.",
+    "pattern": "özne-yüklem uyuşmazlığı|özne yüklem uyuşmazlığı"
+  },
+  {
+    "id": "tde6_tumlec_eksikligi",
+    "term": "Tümleç Eksikliği",
+    "sayfa": 256,
+    "tanim": "Sıralı/bağlı cümlelerde **dolaylı tümleç, zarf tümleci veya nesnenin** ortak kullanılamayıp eksik kalmasıdır; 'Ankara'ya gitti ve gördü' gibi (neyi gördü? nesne eksik). Tümleçlerin **her iki yükleme de uygun olması** gerekir.\n💡 Sınav Şifresi: 'Sıralı/bağlı cümle' + 'dolaylı/zarf tümleç veya nesne eksik' + 'ortak kullanılamama' → tümleç eksikliği.",
+    "pattern": "tümleç eksikliği|dolaylı tümleç eksikliği|zarf tümleci eksikliği"
+  },
+  {
+    "id": "tde6_nesne_eksikligi",
+    "term": "Nesne Eksikliği",
+    "sayfa": 257,
+    "tanim": "Sıralı cümlelerde **geçişli bir eylemin nesnesi ortak kullanılınca** ikinci cümle nesnesiz kalır ve anlatım \"havada kalır\"; tıpkı iki kardeşin tek montu dönüşümlü giymesi gibi, biri hep üşür. Bu, **anlatım bozukluğu** türlerinden biri olup cümlenin **öğe eksikliği** kaynaklıdır.\n💡 Sınav Şifresi: \"...okudu ve beğendi\" tipi cümlelerde **ikinci fiil geçişli olup nesnesiz kalıyorsa** nesne eksikliği ara; çözüm ikinci fiile \"onu/onları\" gibi bir **nesne eklemek**.",
+    "pattern": "nesne eksikliği"
+  },
+  {
+    "id": "tde6_yuklem_eksikligi",
+    "term": "Yüklem Eksikliği",
+    "sayfa": 258,
+    "tanim": "Farklı yargıları **tek yükleme bağlamak**, iki ayrı filmin fragmanını tek ekrana sığdırmak gibidir; seyirci hangi hikâyeyi izlediğini anlamaz. Özellikle **farklı zaman/kip veya farklı özne gerektiren** yargılar tek yükleme bağlanınca **anlatım bozukluğu** doğar.\n💡 Sınav Şifresi: \"Geldi ve gitti\" gibi **farklı zaman/kip taşıyan yargılar tek fiile yüklenmişse** yüklem eksikliği vardır; her yargıya **kendi yüklemini** ver.",
+    "pattern": "yüklem eksikliği"
+  },
+  {
+    "id": "tde6_tamlama_yanlisligi",
+    "term": "Tamlama Yanlışlığı",
+    "sayfa": 259,
+    "tanim": "**Sıfat tamlaması ile isim tamlamasını aynı tamlanana bağlamak**, bir arabaya hem benzin hem elektrik motoru takıp \"hibrit\" demek gibi uyumsuzdur (\"özel ve kamu kuruluşları\" → \"özel kuruluşlar ve kamu kuruluşları\"). Bu, **tamlayan-tamlanan uyumsuzluğundan** doğan bir **anlatım bozukluğudur**.\n💡 Sınav Şifresi: \"sıfat + ve + isim + tamlanan\" kalıbında **tamlayanların türü farklıysa** (biri sıfat biri isim) tamlama yanlışlığı; çözüm her tamlayana **uygun tamlanan eklemek**.",
+    "pattern": "tamlama yanlışlığı|tamlama hatası"
+  },
+  {
+    "id": "tde6_cati_uyusmazligi",
+    "term": "Çatı Uyuşmazlığı",
+    "sayfa": 260,
+    "tanim": "Sıralı cümlede **bir eylem etken, diğeri edilgen** olursa özne kimliği karışır; sanki bir sahne hem canlı yayında hem kayıttan aynı anda oynuyormuş gibi anlatım tökezler. Bu, **fiil çatısı uyumsuzluğundan** kaynaklanan bir **anlatım bozukluğudur**.\n💡 Sınav Şifresi: \"...yaptı ve yapıldı\" gibi **etken-edilgen karışımı** varsa çatı uyuşmazlığı; çatıları **aynı yöne çevirerek** (hepsi etken ya da hepsi edilgen) düzelt.",
+    "pattern": "çatı uyuşmazlığı|çatı uyuşmazlığından"
+  }
+]

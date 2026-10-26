@@ -1,0 +1,661 @@
+[
+  {
+    "id": 1,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+      "secenekler": {
+      "A": "Biyocoğrafya",
+      "B": "Turizm coğrafyası",
+      "C": "Tarım coğrafyası",
+      "D": "Yerleşme coğrafyası"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "A"
+  },
+  {
+    "id": 2,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Aşağıdakilerden hangisi dünyanın şeklinin küresel olmasının sonuçlarından biri değildir?",
+    "secenekler": {
+      "A": "Sıcaklığın ekvatordan kutuplara doğru azalması",
+      "B": "Denizlerin tuzluluk oranının kutuplara doğru azalması",
+      "C": "Kalıcı kar sınırının Ekvator’dan uzaklaştıkça deniz seviyesine doğru yaklaşması",
+      "D": "Yıl içinde gece ve gündüz sürelerinin değişmesi"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 3,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "K.K.N Y.D E O.D Güneş G.K.N Aşağıdaki tarihlerin hangisinde Dünya’nın yörüngedeki konumu görseldeki gibi olur?",
+    "secenekler": {
+      "A": "21 Aralık - 21 Mart",
+      "B": "21 Mart - 23 Eylül",
+      "C": "23 Eylül - 21 Haziran",
+      "D": "21 Haziran - 21 Aralık"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "B"
+  },
+  {
+    "id": 4,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "Aşağıdakilerden hangisi tek ortak saat kullanan ülkelere örnek gösterilebilir?",
+    "secenekler": {
+      "A": "Kanada",
+      "B": "ABD",
+      "C": "Rusya",
+      "D": "Belçika"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 5,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "Aşağıdakilerden hangisi küçük ölçekli haritaların özelliklerindendir?",
+    "secenekler": {
+      "A": "Geniş alanları göstermesi",
+      "B": "Ayrıntıyı daha iyi göstermesi",
+      "C": "Bozulma oranının az olması",
+      "D": "Paydasının küçük olması"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "A"
+  },
+  {
+    "id": 6,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "Aşağıdakilerden hangisi atmosferin özelliklerinden değildir?",
+    "secenekler": {
+      "A": "İçerisinde yaşam için gerekli olan gaz karışımının bulunması",
+      "B": "Dünya’nın aşırı ısınmasını ve soğumasını engellemesi",
+      "C": "Yerden yukarı çıkıldıkça giderek artan gaz yoğunluğuna sahip olması",
+      "D": "Güneş’ten gelen zararlı ışınları süzerek canlıları koruması"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 9,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "C"
+  },
+  {
+    "id": 7,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "Aşağıdakilerden hangisi Türkiye’de güneşlenme süresinin en kısa olduğu bölgedir?",
+    "secenekler": {
+      "A": "Ege",
+      "B": "Akdeniz",
+      "C": "Karadeniz",
+      "D": "İç Anadolu"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "C"
+  },
+  {
+    "id": 8,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "I. Sıcaklık II. Yer çekimi III. Gaz yoğunluğu Numaralanmış faktörlerden hangileri hava basıncını etkiler?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 9,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "Aşağıdakilerden hangisi sürekli rüzgârlardandır?",
+    "secenekler": {
+      "A": "Musonlar",
+      "B": "Alizeler",
+      "C": "Tropikal rüzgârlar",
+      "D": "Meltemler"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "B"
+  },
+  {
+    "id": 10,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "1 m 3 hava içerisinde bulunan su buharının ağırlığına (gram) mutlak nem denir. Buna göre, Türkiye’de mutlak nemin en az ve en fazla olduğu bölgeler aşağıdakilerin hangisinde sırasıyla verilmiştir?",
+    "secenekler": {
+      "A": "Güneydoğu Anadolu - Karadeniz",
+      "B": "Karadeniz - Akdeniz",
+      "C": "Marmara - İç Anadolu",
+      "D": "Akdeniz - Doğu Anadolu"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "A"
+  },
+  {
+    "id": 11,
+    "ders": "COĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "I IV II III Haritada numaralanmış yerlerin hangisinde Basra Termik Alçak Basıncı yaz mevsiminde daha fazla etkili olmaktadır?",
+    "secenekler": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "C"
+  },
+  {
+    "id": 12,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "Aşağıdakilerden hangisi su döngüsünde değişikliğe neden olur?",
+    "secenekler": {
+      "A": "Fabrika ve tesislerin atık sularının arıtılarak tekrar kullanılması",
+      "B": "Orman ve yeşil alanların korunması",
+      "C": "Güneşten gelen enerji miktarında ekstrem değişiklerin görülmesi",
+      "D": "Ekosistemin insan müdahalesine karşı koruma altına alınması"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "C"
+  },
+  {
+    "id": 13,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Aşağıdaki şehir ve bulunduğu ülke eşleştirmelerinden hangisi doğrudur?",
+    "secenekler": {
+      "A": "Essen - Almanya",
+      "B": "Paris - İngiltere",
+      "C": "Oxford - Fransa",
+      "D": "Kerkük - İran"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "A"
+  },
+  {
+    "id": 14,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Tarihsel kimliğini, kültürel özelliklerini koruyan, geleneksel üretim biçimlerini devam ettiren Gerze, Şavşat, Göynük ve Perşembe’nin ülkemizdeki örneklerinden bazıları olan şehir tipi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Dini Şehir",
+      "B": "Turizm Şehri",
+      "C": "Tarım Şehri",
+      "D": "Sakin Şehir"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 15,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "Aşağıdakilerden hangisi köy altı yerleşmelerinin genel özelliklerindendir?",
+    "secenekler": {
+      "A": "Geneli devamlı yerleşmelerdir.",
+      "B": "Nüfusları 2000 kişiden fazladır.",
+      "C": "Çoğunlukla toplu dokuya sahiptirler.",
+      "D": "Su kaynağına yakınlık kurulma yeri seçiminde dikkate alınan bir özelliktir."
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 16,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "Kahve tarımı günümüzde anavatanının dışında da yapılmakta ve üretimi dünya genelinde artmaktadır. Bu durumun temel sebebi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hasat ve nakliyesinin kolay olması",
+      "B": "Tarımına uygun iklim alanlarının fazla olması",
+      "C": "Kahveye olan talebin ve tüketimin sürekli artması",
+      "D": "Üretim alanlarında iş gücünün fazla olması"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "C"
+  },
+  {
+    "id": 17,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "Türkiye’de ormanlar; kâğıt, kereste ve mobilya sanayisinin ham maddesini oluşturmaktadır. Bunların yanında çeşitli yağlar (sığla yağı) elde edilmekte; kozmetik, ilaç ve inşaat sektöründe yararlanılmaktadır. Bu parçada ormanların hangi alandaki önemi üzerinde durulmuştur?",
+    "secenekler": {
+      "A": "Ekonomik",
+      "B": "Eğitim",
+      "C": "Sosyal",
+      "D": "Sağlık"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "A"
+  },
+  {
+    "id": 18,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "Sahip olduğu çok sayıdaki santrallerle yıllık yaklaşık 21 milyar kilowat-saat elektrik üreterek Türkiye hidroelektrik üretiminin neredeyse %45’ini sağlayan bölgesel kalkınma projesi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Doğu Anadolu Projesi",
+      "B": "Güneydoğu Anadolu Projesi",
+      "C": "Doğu Karadeniz Projesi",
+      "D": "Zonguldak, Bartın, Karabük Projesi"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 10,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "B"
+  },
+  {
+    "id": 19,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "Nadas yöntemi için aşağıdakilerden hangisi söylenemez?",
+    "secenekler": {
+      "A": "Toprak sürülür ancak bir yıl ekilmeyerek boş bırakılır.",
+      "B": "Özellikle kurak ve yarı kurak bölgelerde daha yaygındır.",
+      "C": "Tarımsal verimin düşmesi bu yönetimi zorunlu kılar.",
+      "D": "Modern tarım yöntemlerine ait bir uygulamadır."
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 20,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "Aşağıdakilerden hangisi yurdumuzda sulama imkânlarının ve sulanan alanların artmasının bir sonucudur?",
+    "secenekler": {
+      "A": "Besin ithalatının artması",
+      "B": "Tarımda verimin artması",
+      "C": "Yıl içinde tek tip ürün alınması",
+      "D": "Sanayi bitkileri ekiminin azalması"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "B"
+  },
+  {
+    "id": 21,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "Aşağıdaki tarım bitkilerinden hangisinin ekim alanları ve üretimi devlet kontrolü ve denetiminin dışındadır?",
+    "secenekler": {
+      "A": "Pamuk",
+      "B": "Haşhaş",
+      "C": "Anason",
+      "D": "Kenevir"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "A"
+  },
+  {
+    "id": 22,
+    "ders": "SCOĞ1",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "Türkiye’de aşağıdaki enerji kaynaklarından hangisi yetersizdir?",
+    "secenekler": {
+      "A": "Güneş",
+      "B": "Petrol",
+      "C": "Rüzgâr",
+      "D": "Su gücü"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "B"
+  },
+  {
+    "id": 23,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 1,
+    "soru": "• Tarımsal verimin azalması • Orman yangınlarının yaşanması • Yer altı sularının azalması • Kıtlık tehlikesinin oluşması Verilenlerin tamamı aşağıdaki ekstrem doğa olaylarından hangisinin sonucudur?",
+    "secenekler": {
+      "A": "Aşırı soğuklar",
+      "B": "Tsunami",
+      "C": "Meteor düşmesi",
+      "D": "Kuraklık"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 24,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 2,
+    "soru": "Aşağıdakilerin hangisinde ekonomik faaliyetin sosyal ve kültürel hayatı etkilediği söylenebilir?",
+    "secenekler": {
+      "A": "Maraton koşucusunun Dünya rekoru kırmak istemesi",
+      "B": "Heyelan tehlikesi olan yamaçlara istinat duvarı yapılması",
+      "C": "Turizm sektöründe çalışan kişinin yabancı dil öğrenmek istemesi",
+      "D": "Son dönemlerde ailelerin daha az çocuk sahibi olmak istemesi"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "C"
+  },
+  {
+    "id": 25,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 3,
+    "soru": "Türkiye’deki büyükşehir belediyesi statüsüne sahip iller işlevsel olarak yapılan sınıflamada hangi bölge türüne girer?",
+    "secenekler": {
+      "A": "Plan (Proje) Bölgeleri",
+      "B": "İstatistiksel Bölgeler",
+      "C": "Hizmet Bölgeleri",
+      "D": "Yönetim Bölgeleri"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 26,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 4,
+    "soru": "Aşağıdaki bölgelerimizin hangisinde dağların uzanış doğrultusu ve yüksekliği ulaşımı zorlaştırarak yol yapım maliyetlerini daha çok artırmaktadır?",
+    "secenekler": {
+      "A": "İç Anadolu",
+      "B": "Marmara",
+      "C": "Ege",
+      "D": "Doğu Anadolu"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "D"
+  },
+  {
+    "id": 27,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 5,
+    "soru": "Türkiye’nin deniz yolu ulaşımı için aşağıdakilerden hangisi söylenemez?",
+    "secenekler": {
+      "A": "Stratejik konumu denizciliğin gelişmesine engeldir.",
+      "B": "Hinterlandı geniş olan şehirlerimizde limanlar gelişmiştir.",
+      "C": "Ülkemizin ithalat ve ihracatında limanların payı yüksektir.",
+      "D": "Kabotaj Kanunu kıyı ve iç sularımızda denizcilik faaliyetini düzenlemiştir."
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "A"
+  },
+  {
+    "id": 28,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 6,
+    "soru": "Aşağıdaki ülkelerden hangisi Uzak Doğu ticaret bölgesinin önemli merkezlerindendir?",
+    "secenekler": {
+      "A": "Pakistan",
+      "B": "Güney Kore",
+      "C": "İran",
+      "D": "Azerbaycan"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "B"
+  },
+  {
+    "id": 29,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 7,
+    "soru": "Türkiye’de farklı ve fazla sayıda kültürel turistik değerin varlığı aşağıdakilerden hangisinin sonucudur?",
+    "secenekler": {
+      "A": "Nüfus artışının fazla olmasının",
+      "B": "Kırsal yerleşme sayısının fazla olmasının",
+      "C": "Çok farklı medeniyetlerin kurulup yıkılmasının",
+      "D": "Yer altı kaynak çeşitliliğince zengin olmasının"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "C"
+  },
+  {
+    "id": 30,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 8,
+    "soru": "Türkiye’nin zengin ormanları, bitki çeşitliliği ve endemik bitki türleri hangi turizm türünün gelişmesine imkân vermiştir?",
+    "secenekler": {
+      "A": "Termal",
+      "B": "Botanik",
+      "C": "Golf",
+      "D": "Kıyı"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 11,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "B"
+  },
+  {
+    "id": 31,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 9,
+    "soru": "Türkiye’de turizm sektörünün teşvik edilerek yatırımlarla hızlı büyümesinde aşağıdakilerden hangisinin etkisi yoktur?",
+    "secenekler": {
+      "A": "Döviz girdisi sağlamasının",
+      "B": "İstihdama katkı yapmasının",
+      "C": "Enerji ithalatını artırmasının",
+      "D": "Yabancı sermayeyi ülkeye çekmesinin"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "C"
+  },
+  {
+    "id": 32,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi Türk kültürel mirasları arasında yer almaz?",
+    "secenekler": {
+      "A": "Paskalya günü",
+      "B": "Nevruz kutlamaları",
+      "C": "Aşıklık geleneği",
+      "D": "Mevlevi Semah törenleri"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "A"
+  },
+  {
+    "id": 33,
+    "ders": "SCOĞ3",
+    "yil": "2023-2024",
+    "donem": 1,
+    "oturum": 1,
+    "soru_no": 11,
+    "soru": "M.Ö. 79 yılında İtalya’nın Pompei şehri aşağıdaki afetlerden hangisinin sonucunda büyük zarar görmüştür?",
+    "secenekler": {
+      "A": "Tsunami",
+      "B": "Volkanizma",
+      "C": "Deprem",
+      "D": "Tayfun"
+    },
+    "gorsel": null,
+    "kaynak_pdf": "oturum1.pdf",
+    "sayfa": 12,
+    "kontrol_gerekli": false,
+    "dogru_cevap": "B"
+  }
+]

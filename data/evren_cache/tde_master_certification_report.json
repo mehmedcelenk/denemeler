@@ -1,0 +1,19 @@
+{
+  "certification_status": "VERIFIED_99_PLUS",
+  "total_duration_seconds": 139.6,
+  "phase1_concepts": {
+    "refined_concepts": 360,
+    "total_concepts": 469
+  },
+  "phase2_phonology": {
+    "approved": 1080,
+    "discarded": 29
+  },
+  "phase3_questions": {
+    "perfect": 5,
+    "refined": 646,
+    "avg_score_before": 68.95,
+    "avg_score_after": 100.0
+  },
+  "total_questions_locked": 652
+}

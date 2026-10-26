@@ -9,7 +9,14 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Başlangıç akışı | `src/app/bootstrap.js` |
 | Paylaşılan durum | `src/app/state.ts` |
 | Soru veri biçimi/doğrulama | `src/data/question.ts` |
-| JSON yükleme/önbellek | `src/data/questions.js` |
+| Dijital ders kitabı & dönemsel ıstılah şeması | `src/data/textbook.ts` |
+| PDF ders kitabını Markdown/JSON'a çevirme | `scripts/core/pdf_to_book.py` & `scripts/core/evren_client.py` |
+| EVREN (SSYZ) GPU & AI Entegrasyon Rehberi | `docs/EVREN_ENTEGRASYON_REHBERI.md` |
+| EVREN İstemcisi & İteratif Kavram Denetimi | `scripts/core/evren_client.py` & `scripts/core/evren_iterative_audit_pipeline.py` |
+| MEB Kitap İndirme & Dönem Markdown Dilimleme | `scripts/core/download_all_courses.py` & `scripts/core/organize_course_folders.py` |
+| Hassas Kavram & Formül Katalogları | `scripts/core/*_precise_catalog.py` & `data/concepts/` |
+| JSON yükleme & Supabase Hibrit Fallback | `src/data/questions.js` & `src/data/supabase-client.ts` |
+| Supabase DDL Şeması & Toplu Aktarım | `supabase/schema.sql` & `scripts/core/sync_to_supabase.py` |
 | Ders adları/kodları | `src/data/subjects.js` |
 | Arama ekranı | `src/features/search/search.js` |
 | Türkçe arama eşleştirmesi | `src/shared/search.ts` |
@@ -19,13 +26,15 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Konu gruplama/kesişim | `src/features/subjects/topic-model.js` |
 | Konu listesi | `src/features/subjects/topics.js` |
 | Kitapçığa hangi sorular girecek? | `src/features/booklet/selection.js` |
-| Soru kartı, şıklar, sayfalama | `src/features/booklet/render.js` |
+| Soru kartı, şıklar, sayfalama | `src/features/booklet/render.js` & `src/features/booklet/question-card.ts` |
+| Soru Özellik Çubuğu & Şık Eleme | `src/features/booklet/features-bar.ts` |
 | Cevap işaretleme/geri alma | `src/features/answers/marking.js` |
 | Cevap ve ipucu gösterme | `src/features/answers/reveal.js` |
 | Cevapların kalıcı kaydı | `src/features/answers/storage.js` |
 | Seri ve kombo bildirimleri | `src/features/gamification/combo-toast.ts` & `src/shared/combo.ts` |
-| Ses/TTS | `src/features/audio/audio.js` |
+| Ses/TTS Motorları (1/2/3) & Spiker Cinsiyeti | `src/features/audio/speech-service.ts`, `speech-provider.ts` & `voice-gender.ts` |
 | Kelime balonu | `src/features/english/vocabulary.js` |
+| Kelime meali (satır arası çeviri) | `src/features/english/interlinear.ts` |
 | Çeviri/röntgen/tuzak açıklaması | `src/features/english/translations.js` |
 | Tema, vurgu rengi, sütun/zoom | `src/features/appearance/` |
 | Hesap makinesi | `src/features/calculator/calculator.js` |
@@ -44,7 +53,7 @@ Başlangıçta kayıtlı tercihler okunur, ilk dersin JSON'u yüklenip doğrulan
 
 Python akışı:
 
-`scripts/ciktilar/analiz + scripts/*_data.py → build_webapp.py → data/subjects + src/data/generated`.
+`data/raw_pipeline/ + scripts/*_data.py → build_webapp.py → data/subjects + src/data/generated`.
 
 Arayüz kodu Python içinde tutulmaz. Veri güncellemesi HTML/CSS/JS dosyalarını yeniden yazmaz. `data/` ve `audio/` yolları korunmuştur; Vite build bu klasörleri ve `CNAME` dosyasını `dist/` içine kopyalar.
 

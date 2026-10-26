@@ -1,0 +1,217 @@
+[
+  {
+    "id": "mat_onerme_ve_baglaclar",
+    "term": "Mantık: Önermeler ve Bileşik Bağlaçlar (∧, ∨, ⇒)",
+    "donemler": [
+      1
+    ],
+    "sayfa_by_donem": {
+      "1": 14
+    },
+    "tanim_by_donem": {
+      "1": "Kesin olarak **Doğru ($1$)** ya da **Yanlış ($0$)** hüküm bildiren cümlelere **önerme** denir (Harezmi'nin kurduğu bu $0\\text{-}1$ mantığı günümüz bilgisayar işlemcilerinin ve yapay zekânın temelidir).\n• **Ve ($p \\wedge q$):** Çarpma gibidir, yalnız $1 \\wedge 1 \\equiv 1$'dir.\n• **Veya ($p \\vee q$):** Toplama gibidir, yalnız $0 \\vee 0 \\equiv 0$'dır.\n• **İse ($p \\Rightarrow q$):** **100 Kuralı** $\\to$ Yalnız $1 \\Rightarrow 0 \\equiv 0$'dır!\n💡 Formül: $p \\Rightarrow q \\equiv p' \\vee q$, De Morgan: $(p \\vee q)' \\equiv p' \\wedge q'$. $n$ önerme için $2^n$ doğruluk durumu vardır."
+    },
+    "pattern": "önerme[a-zçğıöşü]*|doğruluk değer[a-zçğıöşü]*|totoloji[a-zçğıöşü]*|çelişki[a-zçğıöşü]*|ise bağlacı|ancak ve ancak|de morgan|bileşik önerme[a-zçğıöşü]*|denk önerme[a-zçğıöşü]*|[pqr]'?\\s*[⇒⇔∨∧⊻]"
+  },
+  {
+    "id": "mat_kumeler_ve_alt_kume",
+    "term": "Kümeler, Alt Küme ve Küme İşlemleri",
+    "donemler": [
+      1,
+      3
+    ],
+    "sayfa_by_donem": {
+      "1": 36,
+      "3": 54
+    },
+    "tanim_by_donem": {
+      "1": "Herkes tarafından aynı bilinen, iyi tanımlanmış nesneler topluluğuna **küme** denir. İki kümenin ortak elemanları **Kesişim ($A \\cap B$)**, tüm elemanlarının tek sofrada toplanması **Birleşim ($A \\cup B$)**'dir.\n💡 Formül: $n$ elemanlı kümenin **Alt küme sayısı $2^n$**, **Öz alt küme sayısı $2^n - 1$'dir**. Birleşim: $s(A \\cup B) = s(A) + s(B) - s(A \\cap B)$.",
+      "3": "**MAT 3 (Fonksiyon Kümeleri):** $f: A \\to B$ fonksiyonunda $A$ **tanım kümesi**, $B$ **değer kümesi**, elemanların eşleştiği $f(A)$ ise **görüntü kümesidir**.\n💡 Formül: $s(A)=m, s(B)=n$ ise $A$'dan $B$'ye fonksiyon sayısı $n^m$'dir."
+    },
+    "pattern": "alt küme[a-zçğıöşü]*|öz alt küme[a-zçğıöşü]*|evrensel küme[a-zçğıöşü]*|boş küme[a-zçğıöşü]*|fark kümesi|tanım kümesi|değer kümesi|görüntü kümesi|küme[a-zçğıöşü]*|kesişim[a-zçğıöşü]*|birleşim[a-zçğıöşü]*|s\\(a\\s*[∪∩\\-]\\s*b\\)|bilenlerin oluşturduğu"
+  },
+  {
+    "id": "mat_kartezyen_carpim",
+    "term": "Sıralı İkili ve Kartezyen Çarpım (A × B)",
+    "donemler": [
+      1
+    ],
+    "sayfa_by_donem": {
+      "1": 52
+    },
+    "tanim_by_donem": {
+      "1": "Sinema koltuğunun *(Sıra, Koltuk)* numarası gibi sırası önemli olan $(a, b)$ ikililerine **sıralı ikili**; ilk bileşeni $A$'dan, ikinci bileşeni $B$'den alınan tüm ikililerin kümesine **Kartezyen Çarpım ($A \\times B$)** denir.\n💡 Formül: $(a, b) = (c, d) \\Rightarrow a=c \\text{ ve } b=d$. Eleman sayısı: **$s(A \\times B) = s(A) \\cdot s(B)$**."
+    },
+    "pattern": "kartezyen çarpım[a-zçğıöşü]*|sıralı ikili[a-zçğıöşü]*|s\\(\\s*a\\s*[x×]\\s*b\\s*\\)|\\ba\\s*[x×]\\s*b\\b"
+  },
+  {
+    "id": "mat_sayi_kumeleri_ve_asal",
+    "term": "Sayı Kümeleri (ℕ, ℤ, ℚ, ℝ) ve Asal Sayılar",
+    "donemler": [
+      1
+    ],
+    "sayfa_by_donem": {
+      "1": 68
+    },
+    "tanim_by_donem": {
+      "1": "**Doğal sayılar ($\\mathbb{N}$)** $0, 1, 2\\dots$'den başlar; **Tam sayılar ($\\mathbb{Z}$)** negatifleri ($\\dots -2, -1$) de içerir. Yalnız $1$'e ve kendisine bölünebilen $1$'den büyük sayılara **Asal Sayı** ($2, 3, 5, 7, 11, 13\\dots$) denir.\n💡 Sınav Şifresi: En küçük ve **tek çift asal sayı $2$'dir**! Negatif tam sayılarda sıfıra yaklaştıkça sayı büyür (en büyük negatif tam sayı **$-1$'dir**)."
+    },
+    "pattern": "doğal sayı[a-zçğıöşü]*|tam sayı[a-zçğıöşü]*|asal sayı[a-zçğıöşü]*|aralarında asal|rasyonel sayı[a-zçğıöşü]*|irrasyonel sayı[a-zçğıöşü]*|gerçek sayı[a-zçğıöşü]*|reel sayı[a-zçğıöşü]*|toplama işlemine göre tersi|çarpma işlemine göre tersi"
+  },
+  {
+    "id": "mat_bolunebilme_kurallari",
+    "term": "Bölünebilme Kuralları (2, 3, 4, 5, 9, 10, 11)",
+    "donemler": [
+      1
+    ],
+    "sayfa_by_donem": {
+      "1": 76
+    },
+    "tanim_by_donem": {
+      "1": "Uzun bölme işlemi yapmadan bir sayının kalansız bölünüp bölünmediğini şıp diye bulma kurallarıdır:\n• **$5$ ile:** Son rakamı **$0$ veya $5$** olmalıdır; **$2$ ile:** Son rakamı çift olmalıdır.\n• **$3$ ve $9$ ile:** **Rakamları toplamı** $3$'ün veya $9$'un katı olmalıdır.\n💡 Sınav Şifresi: Önce **son basamağı** ilgilendiren kuraldan ($2, 5, 10$) başla, sonra rakamlar toplamına ($3$ veya $9$) geç!"
+    },
+    "pattern": "kalansız bölün[a-zçğıöşü]*|tam bölün[a-zçğıöşü]*|bölümünden kalan|ile bölündüğünde|basamaklı[a-zçğıöşü]*"
+  },
+  {
+    "id": "mat_ebob_ve_ekok",
+    "term": "EBOB ve EKOK (Periyodik Tekrar Problemleri)",
+    "donemler": [
+      1
+    ],
+    "sayfa_by_donem": {
+      "1": 86
+    },
+    "tanim_by_donem": {
+      "1": "**Büyük parçaları küçük eş parçalara** (çuvaldaki pirinci poşetlere, tarlayı parsellere) ayırıyorsak **EBOB**; **küçük parçaları birleştirip büyük nöbet/zil/lamba buluşması** arıyorsak **EKOK** kullanılır.\n💡 Formül: İki sayı için **$a \\cdot b = \\text{EBOB}(a, b) \\cdot \\text{EKOK}(a, b)$**. Aralarında asal iki sayının $\\text{EBOB}$'u $1$, $\\text{EKOK}$'u çarpımlarıdır!"
+    },
+    "pattern": "ebob[a-zçğıöşü]*|ekok[a-zçğıöşü]*|aralıklarla yanmaktadır|nöbet[a-zçğıöşü]*|birlikte yandıktan"
+  },
+  {
+    "id": "mat_mutlak_deger",
+    "term": "Mutlak Değer (|x|) ve Denklemleri",
+    "donemler": [
+      1
+    ],
+    "sayfa_by_donem": {
+      "1": 108
+    },
+    "tanim_by_donem": {
+      "1": "Bir sayının sayı doğrusunda $0$'a olan **uzaklığıdır**. Evimizden okula olan mesafe eksi olamayacağı için, mutlak değer **çamaşır makinesi** gibi içindeki negatif sayıyı da pozitif ($+$) çıkarır.\n💡 Kural: $|x| = a \\Rightarrow x = a \\text{ veya } x = -a$'dır. İçerisi negatifse ($x < 0$) dışarı çıkarken **önüne eksi ($-$) alarak** pozitifleşir ($|x| = -x$)."
+    },
+    "pattern": "mutlak değer[a-zçğıöşü]*|\\|\\s*[xyab0-9]\\s*[-+]\\s*[xyab0-9]\\s*\\||\\|\\s*-\\s*[xyab0-9]+\\s*\\|"
+  },
+  {
+    "id": "mat_uslu_ve_koklu",
+    "term": "Üslü ve Köklü İfadeler",
+    "donemler": [
+      1
+    ],
+    "sayfa_by_donem": {
+      "1": 122
+    },
+    "tanim_by_donem": {
+      "1": "**Üslü sayılarda** tabanlar aynıysa çarpımda üsler **toplanır** ($a^x \\cdot a^y = a^{x+y}$), bölümde **çıkarılır** ($a^x / a^y = a^{x-y}$). **Köklü sayılarda** ise $\\sqrt{a \\cdot b} = \\sqrt{a} \\cdot \\sqrt{b}$'dir.\n💡 Sınav Şifresi: $a^0 = 1$, negatif üs sayıyı takla attırır ($a^{-n} = \\frac{1}{a^n}$). Çift dereceli kökten sayı mutlak değerle çıkar: $\\sqrt{x^2} = |x|$!"
+    },
+    "pattern": "üslü ifade[a-zçğıöşü]*|köklü ifade[a-zçğıöşü]*|kareköklü|üslü sayı[a-zçğıöşü]*|köklü sayı[a-zçğıöşü]*|√"
+  },
+  {
+    "id": "mat_oran_oranti_ve_problemler",
+    "term": "Oran - Orantı ve Denklem Problemleri (Yaş, Yüzde, Karışım, Hız)",
+    "donemler": [
+      1,
+      2
+    ],
+    "sayfa_by_donem": {
+      "1": 98,
+      "2": 14
+    },
+    "tanim_by_donem": {
+      "1": "**Doğru orantılı** çokluklar bölünür ($\\frac{x}{y} = k$), **ters orantılı** çokluklar çarpılır ($x \\cdot y = k$).\n💡 Formül: Yol $= \\text{Hız} \\times \\text{Zaman}$ ($x = v \\cdot t$); Yaş farkı yıllar geçse de **asla değişmez**; Denklemlerde eşitsizlik negatif sayıyla çarpılırsa yön değiştirir!"
+    },
+    "pattern": "doğru orantı[a-zçğıöşü]*|ters orantı[a-zçğıöşü]*|orantı sabiti|aritmetik ortalama[a-zçğıöşü]*|medyan|ortanca|tepe değer|standart sapma|açıklık|yaşları toplamı|yaş[a-zçğıöşü]* oranı|karışım[a-zçğıöşü]*|tuz oranı|şeker oranı|çözüm kümesi|denklem[a-zçğıöşü]*|eşitsizli[kğ][a-zçğıöşü]*"
+  },
+  {
+    "id": "mat_ucgenler_pisagor_oklid",
+    "term": "Üçgenler: Açı-Kenar, Benzerlik, Pisagor ve Öklid",
+    "donemler": [
+      2
+    ],
+    "sayfa_by_donem": {
+      "2": 64
+    },
+    "tanim_by_donem": {
+      "2": "Üçgenin iç açıları toplamı $180^\\circ$, bir dış açı kendisine komşu olmayan **iki iç açının toplamıdır**. Dik üçgende $90^\\circ$'nin karşısındaki en uzun kenara **Hipotenüs** denir.\n💡 Formül: **Pisagor:** $a^2 + b^2 = c^2$ (Özel üçgenler: **$3\\text{-}4\\text{-}5$**, **$5\\text{-}12\\text{-}13$**, **$8\\text{-}15\\text{-}17$**, **$7\\text{-}24\\text{-}25$**). Dikten dik inerse **Öklid:** $h^2 = p \\cdot k$ (**Hamburgerin karesi patates kızartması!**)."
+    },
+    "pattern": "üçgen[a-zçğıöşü]*|hipotenüs[a-zçğıöşü]*|pisagor|öklid|thales|iç teğet çember|açıortay[a-zçğıöşü]*|kenarortay[a-zçğıöşü]*|ağırlık merkezi|benzerlik oranı|eşkenar üçgen|ikizkenar üçgen|dik üçgen"
+  },
+  {
+    "id": "mat_permutasyon_kombinasyon_olasilik",
+    "term": "Faktöriyel, Permütasyon (Sıralama), Kombinasyon (Seçme) ve Olasılık",
+    "donemler": [
+      3
+    ],
+    "sayfa_by_donem": {
+      "3": 14
+    },
+    "tanim_by_donem": {
+      "3": "Fotoğraf çekimi veya koltuğa oturma gibi **sıralama** önemliyse **Permütasyon $P(n, r)$**; nöbetçi, komisyon veya takım oluşturma gibi sadece **seçme** yapılıyorsa **Kombinasyon $C(n, r) = \\binom{n}{r}$** kullanılır.\n💡 Formül: $0! = 1$, $1! = 1$. $\\text{Olasılık } P(A) = \\frac{\\text{İstenen Durum Sayısı}}{\\text{Tüm Durumların Sayısı}}$ (Sonuç daima $0$ ile $1$ arasındadır)."
+    },
+    "pattern": "faktöriyel|permütasyon[a-zçğıöşü]*|kombinasyon[a-zçğıöşü]*|binom açılımı|olasılı[kğ][a-zçğıöşü]*|örnek uzay|madeni para|zar atıl[a-zçğıöşü]*|torbadan|kaç farklı şekilde"
+  },
+  {
+    "id": "mat_fonksiyonlar",
+    "term": "Fonksiyonlar (Bire Bir, Örten, Ters ve Bileşke Fonksiyon)",
+    "donemler": [
+      3
+    ],
+    "sayfa_by_donem": {
+      "3": 54
+    },
+    "tanim_by_donem": {
+      "3": "Fonksiyon bir **fabrika makinesi** gibidir: Tanım kümesinden aldığı her girdiyi ($x$) değer kümesinde **yalnız bir** çıktıya ($y = f(x)$) dönüştürür (Tanım kümesinde açıkta eleman kalamaz!).\n💡 Formül: Doğrusal fonksiyon $f(x) = ax + b$'nin tersi **$f^{-1}(x) = \\frac{x - b}{a}$**'dır. Bileşke: $(f \\circ g)(x) = f(g(x))$. Birim fonksiyon içi dışına eşit olandır: $I(x) = x$."
+    },
+    "pattern": "fonksiyon[a-zçğıöşü]*|bire\\s*bir|örten|içine fonksiyon|birim fonksiyon|sabit fonksiyon|doğrusal fonksiyon|ters fonksiyon|bileşke|f\\(x\\)|g\\(x\\)|\\(fog\\)|\\(gof\\)"
+  },
+  {
+    "id": "mat_polinom_ve_ozdeslik",
+    "term": "Polinomlar ve Çarpanlara Ayırma (Özdeşlikler)",
+    "donemler": [
+      3
+    ],
+    "sayfa_by_donem": {
+      "3": 112
+    },
+    "tanim_by_donem": {
+      "3": "$P(x)$ ifadesinin **polinom** olabilmesi için $x$'in üslerinin mutlaka **doğal sayı ($\\mathbb{N} = \\{0, 1, 2, \\dots\\}$)** olması gerekir ($x^{-2}$ veya $\\sqrt{x}$ polinom olamaz!).\n💡 Sınav Şifresi: **Sabit terim** için $x = 0$ yazılır $\\to P(0)$; **Katsayılar toplamı** için $x = 1$ yazılır $\\to P(1)$! İki kare farkı: $x^2 - y^2 = (x - y)(x + y)$."
+    },
+    "pattern": "polinom[a-zçğıöşü]*|başkatsayı[a-zçğıöşü]*|sabit terim[a-zçğıöşü]*|katsayılar toplamı|çarpanlarına ayrılmış|iki kare farkı|tam kare|özdeşli[kğ][a-zçğıöşü]*|p\\(x\\)"
+  },
+  {
+    "id": "mat_ikinci_derece_ve_karmasik",
+    "term": "İkinci Dereceden Denklemler, Diskriminant (Δ) ve Karmaşık Sayılar",
+    "donemler": [
+      4
+    ],
+    "sayfa_by_donem": {
+      "4": 14
+    },
+    "tanim_by_donem": {
+      "4": "$ax^2 + bx + c = 0$ denkleminde köklerin varlığını **Diskriminant ($\\Delta = b^2 - 4ac$)** belirler ($\\Delta > 0$ iki farklı gerçek kök, $\\Delta = 0$ çakışık/eşit kök, $\\Delta < 0$ gerçek kök yok, karmaşık kök vardır).\n💡 Formül: **Kökler Toplamı** $x_1 + x_2 = -\\frac{b}{a}$, **Kökler Çarpımı** $x_1 \\cdot x_2 = \\frac{c}{a}$. Karmaşık sayılarda **$i^2 = -1$**'dir; $z = a + bi$'nin eşleniği $\\bar{z} = a - bi$ (yalnız $i$'nin işareti değişir!)."
+    },
+    "pattern": "ikinci dereceden denklem[a-zçğıöşü]*|diskriminant[a-zçğıöşü]*|kökler toplamı|kökler çarpımı|gerçek kök[a-zçğıöşü]*|reel kök[a-zçğıöşü]*|çakışık kök|karmaşık sayı[a-zçğıöşü]*|sanal birim|eşleni[kğ][a-zçğıöşü]*|i²\\s*=\\s*-1"
+  },
+  {
+    "id": "mat_cokgen_dortgen_kati_cisim",
+    "term": "Çokgenler, Özel Dörtgenler ve Katı Cisimler (Prizma, Küp, Piramit)",
+    "donemler": [
+      4
+    ],
+    "sayfa_by_donem": {
+      "4": 68
+    },
+    "tanim_by_donem": {
+      "4": "$n$ kenarlı bir çokgenin **iç açıları toplamı $(n-2) \\cdot 180^\\circ$**, **dış açıları toplamı ise kenar sayısı kaç olursa olsun daima $360^\\circ$'dir**!\n💡 Formül: Düzgün çokgenin bir dış açısı $= \\frac{360^\\circ}{n}$. **Küp** ($a$ ayrıtlı): Hacim $= a^3$, Yüzey Alanı $= 6a^2$, Cisim Köşegeni $= a\\sqrt{3}$. **Dik Prizma Hacmi** $= \\text{Taban Alanı} \\times \\text{Yükseklik}$."
+    },
+    "pattern": "çokgen[a-zçğıöşü]*|düzgün beşgen|düzgün altıgen|düzgün sekizgen|dörtgen[a-zçğıöşü]*|paralelkenar[a-zçğıöşü]*|eşkenar dörtgen|yamu[kğ][a-zçğıöşü]*|deltoid|dikdörtgen[a-zçğıöşü]*|karenin|köşegen[a-zçğıöşü]*|prizma[a-zçğıöşü]*|pirami[td][a-zçğıöşü]*|küp[a-zçğıöşü]*|düzgün dörtyüzlü|yanal alan|cisim köşegeni"
+  }
+]

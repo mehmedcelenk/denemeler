@@ -4,8 +4,8 @@ import { readFileSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import type { Question } from '../src/data/question.ts';
 
-const TAXONOMY_PATH = 'scripts/tarih_taxonomy_map.json';
-const SCRIPT_PATH = 'scripts/validate_tarih_taxonomy.py';
+const TAXONOMY_PATH = 'scripts/taxonomy/tarih_taxonomy_map.json';
+const SCRIPT_PATH = 'scripts/taxonomy/validate_tarih_taxonomy.py';
 
 const FORBIDDEN_FALLBACK_TERMS = [
   'genel', 'saptanamadı', 'saptanamadi', 'fallback',

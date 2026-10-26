@@ -17,11 +17,8 @@ function safeStorageSet(key: string, value: string): void {
   } catch {}
 }
 
-export interface AiExplanationEntry {
-  readonly query: string;
-  readonly reply: string;
-  readonly updatedAt: number;
-}
+export interface AiExplanationMessage { readonly query: string; readonly reply: string; readonly updatedAt: number; }
+export interface AiExplanationEntry { readonly query: string; readonly reply: string; readonly updatedAt: number; readonly history?: readonly AiExplanationMessage[]; }
 
 export interface AppState {
   readonly allData: readonly Question[];
@@ -30,6 +27,7 @@ export interface AppState {
   readonly selectedCourses: ReadonlySet<string>;
   readonly courseFilterMode: 'AND' | 'OR';
   readonly selectedTopicKeys: ReadonlySet<string>;
+  readonly selectedExamPeriod: string | null;
   readonly bookletQuestions: readonly Question[];
   readonly bookletFilterMode: BookletFilterMode;
   readonly contentViewMode: ContentViewMode;
@@ -48,10 +46,12 @@ export interface AppState {
   readonly isFeaturesExpanded: boolean;
   readonly expandedQuestionIds: ReadonlySet<number>;
   readonly eliminatedChoices: Readonly<Record<number, readonly Choice[]>>;
+  readonly eliminatedWrongChoices: Readonly<Record<number, Choice>>;
   readonly aiExplanations: Readonly<Record<number, AiExplanationEntry>>;
   readonly pendingAiQuestions: ReadonlySet<number>;
+  readonly ttsVoiceGender: 'female' | 'male';
+  readonly ttsVoiceEngine: 1 | 2 | 3;
 }
-
 interface MutableAppState {
   allData: Question[];
   currentSubject: SubjectId | null;
@@ -59,6 +59,7 @@ interface MutableAppState {
   selectedCourses: Set<string>;
   courseFilterMode: 'AND' | 'OR';
   selectedTopicKeys: Set<string>;
+  selectedExamPeriod: string | null;
   bookletQuestions: Question[];
   bookletFilterMode: BookletFilterMode;
   contentViewMode: ContentViewMode;
@@ -77,8 +78,11 @@ interface MutableAppState {
   isFeaturesExpanded: boolean;
   expandedQuestionIds: Set<number>;
   eliminatedChoices: Record<number, Choice[]>;
+  eliminatedWrongChoices: Record<number, Choice>;
   aiExplanations: Record<number, AiExplanationEntry>;
   pendingAiQuestions: Set<number>;
+  ttsVoiceGender: 'female' | 'male';
+  ttsVoiceEngine: 1 | 2 | 3;
 }
 
 const _state: MutableAppState = {
@@ -88,6 +92,7 @@ const _state: MutableAppState = {
   selectedCourses: new Set(),
   courseFilterMode: 'OR',
   selectedTopicKeys: new Set(),
+  selectedExamPeriod: null,
   bookletQuestions: [],
   bookletFilterMode: 'all',
   contentViewMode: 'questions',
@@ -106,8 +111,11 @@ const _state: MutableAppState = {
   isFeaturesExpanded: false,
   expandedQuestionIds: new Set(),
   eliminatedChoices: {},
+  eliminatedWrongChoices: {},
   aiExplanations: {},
   pendingAiQuestions: new Set(),
+  ttsVoiceGender: 'female',
+  ttsVoiceEngine: 1,
 };
 
 /** Dışarıya açılan salt-okunur (Compile-Time Zırhlı) durum nesnesi */
@@ -151,30 +159,14 @@ export function notifyStateChange(event: StateEventType, payload?: unknown): voi
 
 /** Micro-Store: State mutasyonlarını tek merkezden yönetir ve kalıcı depolarla eşitler. */
 export const store = {
-  setProgramMode(mode: 'AOIHL' | 'AOF'): void {
-    _state.programMode = mode;
-  },
-  setCurrentSubject(subject: SubjectId | null): void {
-    _state.currentSubject = subject;
-  },
-  setSelectedCourses(courses: Iterable<string>): void {
-    _state.selectedCourses = new Set(courses);
-  },
-  addSelectedCourse(course: string): void {
-    _state.selectedCourses.add(course);
-  },
-  removeSelectedCourse(course: string): void {
-    _state.selectedCourses.delete(course);
-  },
-  clearSelectedCourses(): void {
-    _state.selectedCourses.clear();
-  },
-  setCourseFilterMode(mode: 'AND' | 'OR'): void {
-    _state.courseFilterMode = mode;
-  },
-  setSelectedTopicKeys(keys: Iterable<string>): void {
-    _state.selectedTopicKeys = new Set(keys);
-  },
+  setProgramMode(mode: 'AOIHL' | 'AOF'): void { _state.programMode = mode; },
+  setCurrentSubject(subject: SubjectId | null): void { _state.currentSubject = subject; },
+  setSelectedCourses(courses: Iterable<string>): void { _state.selectedCourses = new Set(courses); },
+  addSelectedCourse(course: string): void { _state.selectedCourses.add(course); },
+  removeSelectedCourse(course: string): void { _state.selectedCourses.delete(course); },
+  clearSelectedCourses(): void { _state.selectedCourses.clear(); },
+  setCourseFilterMode(mode: 'AND' | 'OR'): void { _state.courseFilterMode = mode; },
+  setSelectedTopicKeys(keys: Iterable<string>): void { _state.selectedTopicKeys = new Set(keys); },
   toggleTopicKey(topicKey: string): void {
     if (_state.selectedTopicKeys.has(topicKey)) {
       _state.selectedTopicKeys.delete(topicKey);
@@ -182,21 +174,12 @@ export const store = {
       _state.selectedTopicKeys.add(topicKey);
     }
   },
-  clearSelectedTopicKeys(): void {
-    _state.selectedTopicKeys.clear();
-  },
-  setBookletQuestions(questions: readonly Question[]): void {
-    _state.bookletQuestions = [...questions];
-  },
-  setBookletFilterMode(mode: BookletFilterMode): void {
-    _state.bookletFilterMode = mode;
-  },
-  setContentViewMode(mode: ContentViewMode): void {
-    _state.contentViewMode = mode;
-  },
-  setActiveSearchFilter(term: string): void {
-    _state.activeSearchFilter = term;
-  },
+  clearSelectedTopicKeys(): void { _state.selectedTopicKeys.clear(); },
+  setSelectedExamPeriod(period: string | null): void { _state.selectedExamPeriod = period; },
+  setBookletQuestions(questions: readonly Question[]): void { _state.bookletQuestions = [...questions]; },
+  setBookletFilterMode(mode: BookletFilterMode): void { _state.bookletFilterMode = mode; },
+  setContentViewMode(mode: ContentViewMode): void { _state.contentViewMode = mode; },
+  setActiveSearchFilter(term: string): void { _state.activeSearchFilter = term; },
   setUserMarkedChoice(qid: number, choice: Choice, persist = true): void {
     _state.userMarkedChoices[qid] = choice;
     if (persist) safeStorageSet(StorageKeys.USER_CHOICES, JSON.stringify(_state.userMarkedChoices));
@@ -241,6 +224,22 @@ export const store = {
     _state.eliminatedChoices = {};
     if (persist) safeStorageSet(StorageKeys.ELIMINATED_CHOICES, JSON.stringify(_state.eliminatedChoices));
   },
+  setEliminatedWrongChoice(qid: number, choice: Choice, persist = true): void {
+    _state.eliminatedWrongChoices[qid] = choice;
+    if (persist) safeStorageSet(StorageKeys.ELIMINATED_WRONG_CHOICES, JSON.stringify(_state.eliminatedWrongChoices));
+  },
+  removeEliminatedWrongChoice(qid: number, persist = true): void {
+    delete _state.eliminatedWrongChoices[qid];
+    if (persist) safeStorageSet(StorageKeys.ELIMINATED_WRONG_CHOICES, JSON.stringify(_state.eliminatedWrongChoices));
+  },
+  setEliminatedWrongChoices(map: Record<number, Choice>, persist = true): void {
+    _state.eliminatedWrongChoices = { ...map };
+    if (persist) safeStorageSet(StorageKeys.ELIMINATED_WRONG_CHOICES, JSON.stringify(_state.eliminatedWrongChoices));
+  },
+  clearAllEliminatedWrongChoices(persist = true): void {
+    _state.eliminatedWrongChoices = {};
+    if (persist) safeStorageSet(StorageKeys.ELIMINATED_WRONG_CHOICES, JSON.stringify(_state.eliminatedWrongChoices));
+  },
   setStarredQuestionIds(ids: Iterable<number>, persist = true): void {
     _state.starredQuestionIds = new Set(ids);
     if (persist) safeStorageSet(StorageKeys.STARRED_QUESTIONS, JSON.stringify(Array.from(_state.starredQuestionIds)));
@@ -278,62 +277,52 @@ export const store = {
       safeStorageSet(STREAK_DATE_KEY, new Date().toISOString().split('T')[0]);
     }
   },
-  addWaterStreak(points: number, persist = true): void {
-    this.setWaterStreak(_state.waterStreak + points, persist);
-  },
-  deductWaterStreak(deduct = 1, persist = true): void {
-    this.setWaterStreak(_state.waterStreak - deduct, persist);
-  },
+  addWaterStreak(points: number, persist = true): void { this.setWaterStreak(_state.waterStreak + points, persist); },
+  deductWaterStreak(deduct = 1, persist = true): void { this.setWaterStreak(_state.waterStreak - deduct, persist); },
   setColumnCount(n: number, persist = true): void {
     const valid = [1, 2, 3, 4].includes(n) ? n : 2;
     _state.currentColumnCount = valid;
     if (persist) safeStorageSet(StorageKeys.COLUMN_COUNT, String(valid));
   },
-  setZoomLevelIndex(idx: number): void {
-    _state.zoomLevelIndex = idx;
-  },
-  setCanvasZoomScale(scale: number): void {
-    _state.canvasZoomScale = Math.min(2.5, Math.max(0.85, scale));
-  },
+  setZoomLevelIndex(idx: number): void { _state.zoomLevelIndex = idx; },
+  setCanvasZoomScale(scale: number): void { _state.canvasZoomScale = Math.min(2.5, Math.max(0.85, scale)); },
   toggleFeaturesExpanded(): boolean {
     _state.isFeaturesExpanded = !_state.isFeaturesExpanded;
     return _state.isFeaturesExpanded;
   },
   toggleQuestionExpanded(id: number): boolean {
-    const isNowExpanded = !_state.expandedQuestionIds.has(id);
-    if (isNowExpanded) {
-      _state.expandedQuestionIds.add(id);
-    } else {
-      _state.expandedQuestionIds.delete(id);
-    }
-    return isNowExpanded;
+    const isNow = !_state.expandedQuestionIds.has(id);
+    if (isNow) _state.expandedQuestionIds.add(id); else _state.expandedQuestionIds.delete(id);
+    return isNow;
   },
   toggleAnswerReveal(qid: number): boolean {
-    const isNowRevealed = !_state.revealedAnswers.has(qid);
-    if (isNowRevealed) {
-      _state.revealedAnswers.add(qid);
-    } else {
-      _state.revealedAnswers.delete(qid);
-    }
-    return isNowRevealed;
+    const isNow = !_state.revealedAnswers.has(qid);
+    if (isNow) _state.revealedAnswers.add(qid); else _state.revealedAnswers.delete(qid);
+    return isNow;
   },
   toggleHintReveal(qid: number): boolean {
-    const isNowRevealed = !_state.revealedHints.has(qid);
-    if (isNowRevealed) {
-      _state.revealedHints.add(qid);
-    } else {
-      _state.revealedHints.delete(qid);
-    }
-    return isNowRevealed;
+    const isNow = !_state.revealedHints.has(qid);
+    if (isNow) _state.revealedHints.add(qid); else _state.revealedHints.delete(qid);
+    return isNow;
   },
-  appendQuestions(questions: readonly Question[]): void {
-    _state.allData.push(...questions);
-  },
-  setAllData(questions: readonly Question[]): void {
-    _state.allData = [...questions];
-  },
+  appendQuestions(questions: readonly Question[]): void { _state.allData.push(...questions); },
+  setAllData(questions: readonly Question[]): void { _state.allData = [...questions]; },
   setAiExplanation(qid: number, entry: AiExplanationEntry, persist = true): void {
     _state.aiExplanations[qid] = entry;
+    if (persist) safeStorageSet(StorageKeys.AI_EXPLANATIONS, JSON.stringify(_state.aiExplanations));
+  },
+  appendAiQuestionReply(qid: number, query: string, reply: string): void {
+    const prev = _state.aiExplanations[qid];
+    const past: AiExplanationMessage[] = [];
+    if (prev?.query && prev?.reply) {
+      past.push({ query: prev.query, reply: prev.reply, updatedAt: prev.updatedAt });
+      if (prev.history && Array.isArray(prev.history)) past.push(...prev.history);
+    }
+    _state.aiExplanations[qid] = { query, reply, updatedAt: Date.now(), history: past };
+    safeStorageSet(StorageKeys.AI_EXPLANATIONS, JSON.stringify(_state.aiExplanations));
+  },
+  clearAiExplanation(qid: number, persist = true): void {
+    delete _state.aiExplanations[qid];
     if (persist) safeStorageSet(StorageKeys.AI_EXPLANATIONS, JSON.stringify(_state.aiExplanations));
   },
   setAiExplanations(map: Record<number, AiExplanationEntry>, persist = true): void {
@@ -341,7 +330,14 @@ export const store = {
     if (persist) safeStorageSet(StorageKeys.AI_EXPLANATIONS, JSON.stringify(_state.aiExplanations));
   },
   setPendingAiQuestion(qid: number, isPending: boolean): void {
-    if (isPending) _state.pendingAiQuestions.add(qid);
-    else _state.pendingAiQuestions.delete(qid);
+    if (isPending) _state.pendingAiQuestions.add(qid); else _state.pendingAiQuestions.delete(qid);
+  },
+  setTtsVoiceGender(gender: 'female' | 'male', persist = true): void {
+    _state.ttsVoiceGender = gender;
+    if (persist) safeStorageSet(StorageKeys.TTS_GENDER, gender);
+  },
+  setTtsVoiceEngine(engine: 1 | 2 | 3, persist = true): void {
+    _state.ttsVoiceEngine = engine;
+    if (persist) safeStorageSet(StorageKeys.TTS_ENGINE, String(engine));
   },
 };

@@ -1,0 +1,310 @@
+[
+  {
+    "id": "tar1_tarih_bilimi",
+    "term": "Tarih Bilimi",
+    "sayfa": 12,
+    "tanim": "Tarih, geçmişteki insan topluluklarının izini **yer ve zaman** damgasıyla, **belgeye** dayanarak ve **neden-sonuç** zinciriyle süren bir dedektifliktir; tıpkı bir cinayet mahallinde delil toplayan polis gibi, geçmişin izlerini nesnel biçimde çözer.\n💡 Sınav Şifresi: 'Yer + zaman + belge + neden-sonuç + nesnel' beşlisi varsa Tarih Bilimi; biri eksikse (özellikle 'belge' veya 'nesnellik') tuzak şık.",
+    "pattern": "tarih bilimi[a-zçğıöşü]*|tarihsel bilgi[a-zçğıöşü]*|tarih araştırmalarında"
+  },
+  {
+    "id": "tar1_tarihsel_olay_olgu",
+    "term": "Tarihî Olay ve Olgu",
+    "sayfa": 15,
+    "tanim": "**Olay** bir fotoğraf karesidir (kısa, somut, başlangıç-bitişi belli: Malazgirt Savaşı); **olgu** ise o karelerden oluşan uzun bir film şerididir (soyut, süreç: Anadolu'nun Türkleşmesi).\n💡 Sınav Şifresi: 'Savaş, antlaşma, fetih, ölüm' → OLAY; 'göç, yayılış, Türkleşme, İslamlaşma, gelişme' → OLGU. Tek tarih varsa olay, süreç varsa olgu.",
+    "pattern": "tarihsel olgu[a-zçğıöşü]*|tarihî olgu[a-zçğıöşü]*|tarihî olay"
+  },
+  {
+    "id": "tar1_arastirma_basamaklari",
+    "term": "Tarih Araştırma Basamakları (5T)",
+    "sayfa": 18,
+    "tanim": "Tarihçi 5T ile çalışır: **Tarama** (kaynak bul) → **Tasnif** (sınıflandır) → **Tahlil** (çözümle) → **Tenkit** (eleştir, güvenilirliği test et) → **Terkip** (sentezle yaz); tıpkı bir dedektifin delil toplayıp, ayıklayıp, raporu yazması gibi.\n💡 Sınav Şifresi: Sıralama sorusunda 'T' harfleri: **Ta**rama-Ta**s**nif-**Ta**hlil-**Te**nkit-**Te**rkip. Tenkit (eleştiri) olmadan terkip (yazım) olmaz — en çok karıştırılan sıra budur.",
+    "pattern": "tarihî araştırmaların aşamaları|kaynaklara atıf yapılması|verileri analiz etme|verileri düzenleme|araştırma ve veri toplama"
+  },
+  {
+    "id": "tar1_epigrafi",
+    "term": "Epigrafi (Yazıt Bilimi)",
+    "sayfa": 22,
+    "tanim": "Epigrafi, taş, mermer ve metal **kitabeler** üzerindeki yazıları okuyan bilimdir; Orhun Kitabeleri'ni çözen dedektif gibi, dikili taşlardaki mesajı gün yüzüne çıkarır.\n💡 Sınav Şifresi: 'Kitabe, yazıt, taş, anıt, mezar taşı' → EPİGRAFİ. (Kâğıt belge değil, taşa kazınmış yazı!)",
+    "pattern": "^Epigrafi$|\\\\\\\\bepigrafi\\\\\\\\b|\\\\\\\\byazıt bilimi\\\\\\\\b"
+  },
+  {
+    "id": "tar1_numizmatik",
+    "term": "Nümizmatik (Meskukat / Para Bilimi)",
+    "sayfa": 23,
+    "tanim": "Nümizmatik, tarihte basılmış **para ve sikkeleri** inceleyerek devletin ekonomik gücünü, hükümdar adlarını ve sınırlarını okur; bir paranın üzerindeki yazı ve maden, o dönemin kimlik kartıdır.\n💡 Sınav Şifresi: 'Sikke, para, meskukat, madalyon' → NÜMİZMATİK. Ekonomik güç ve hükümdar tespiti sorularında bu şık.",
+    "pattern": "^Nümizmatik$|^Nümismatik$|\\\\\\\\bnümizmatik\\\\\\\\b|\\\\\\\\bnümismatik\\\\\\\\b|\\\\\\\\bmeskukat\\\\\\\\b"
+  },
+  {
+    "id": "tar1_paleografya",
+    "term": "Paleografya (Yazı Bilimi)",
+    "sayfa": 22,
+    "tanim": "Paleografya, eski **alfabeleri ve el yazılarını** çözen bilimdir; bugünkü harflerle okuyamadığın Göktürk veya Osmanlı metnini şifre çözer gibi açığa çıkarır.\n💡 Sınav Şifresi: 'Eski yazı, alfabe, el yazması belge' → PALEOGRAFYA. DİKKAT: Yazı olmayan (yazısız) dönemlerde kullanılamaz — bu tuzağı kaçırma.",
+    "pattern": "^Paleografya$|\\\\\\\\bpaleografya\\\\\\\\b"
+  },
+  {
+    "id": "tar1_arkeoloji",
+    "term": "Arkeoloji (Kazı Bilimi)",
+    "sayfa": 21,
+    "tanim": "Arkeoloji, toprak veya su altında kalmış **maddi kalıntıları kazıyla** çıkarır; yazının olmadığı devirlerin tek kurtarıcısıdır, çünkü taş ve kemik konuşur.\n💡 Sınav Şifresi: 'Kazı, kalıntı, alet, yazısız dönem' → ARKEOLOJİ. Yazısız devirlerin birincil kaynağıdır — bu ifadeyi görünce arkeolojiyi işaretle.",
+    "pattern": "^Arkeoloji$|\\\\\\\\barkeoloji\\\\\\\\b|\\\\\\\\barkeolojik kazı\\\\\\\\b|\\\\\\\\barkeolojik çalışma\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kronoloji",
+    "term": "Kronoloji (Zaman Bilimi)",
+    "sayfa": 21,
+    "tanim": "Kronoloji, olayları **zamana göre sıraya** dizer; GPS'in rotayı adım adım göstermesi gibi, tarihin zaman çizelgesini kurar ve neden-sonuç bağını görünür kılar.\n💡 Sınav Şifresi: 'Zaman, sıralama, tarih çizelgesi, takvim' → KRONOLOJİ. 'Hangi olay önce/sonra' tipi soruların anahtarı.",
+    "pattern": "^Kronoloji$|\\\\\\\\bkronoloji\\\\\\\\b|\\\\\\\\bölçülebilir zaman\\\\\\\\b"
+  },
+  {
+    "id": "tar1_filoloji",
+    "term": "Filoloji (Dil Bilimi)",
+    "sayfa": 23,
+    "tanim": "Filoloji, dillerin tarihsel gelişimini ve **kelime alışverişlerini** inceleyerek toplumların kökenini ve kültürel etkileşimini ortaya koyar; iki dil arasındaki ortak kelimeler, iki halkın akrabalık DNA'sıdır.\n💡 Sınav Şifresi: 'Dil, kelime, alfabe akrabalığı, kültürel etkileşim' → FİLOLOJİ. Paleografya (yazı okuma) ile karıştırma; filoloji DİLİN kendisini inceler.",
+    "pattern": "^Filoloji$|\\\\\\\\bfiloloji\\\\\\\\b|\\\\\\\\bdil bilimi\\\\\\\\b"
+  },
+  {
+    "id": "tar1_miladi_takvim",
+    "term": "Miladi Takvim",
+    "sayfa": 28,
+    "tanim": "Miladi Takvim **Güneş yılı** (365 gün 6 saat) esaslıdır ve başlangıcı **Hz. İsa'nın doğumu** kabul edilir; Türkiye'de **1 Ocak 1926**'dan beri kullanılır.\n💡 Sınav Şifresi: 'Güneş yılı + Hz. İsa + 1926' üçlüsü → MİLADİ. Türkiye'nin bugünkü resmî takvimidir; 'güneş' kelimesini görünce miladi/Celali ayrımına dikkat.",
+    "pattern": "^Miladi$|^Miladi takvim$|\\\\\\\\bmiladi takvim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bmiladi\\\\\\\\b|\\\\\\\\bgregoryen takvimi\\\\\\\\b"
+  },
+  {
+    "id": "tar1_hicri_takvim",
+    "term": "Hicri Takvim",
+    "sayfa": 27,
+    "tanim": "Hicri Takvim **Ay yılı** (354 gün) esaslıdır ve başlangıcı **Hz. Muhammed'in hicreti (622)** kabul edilir; **Hz. Ömer** Dönemi'nde oluşturulmuştur.\n💡 Sınav Şifresi: 'Ay yılı + 622 + Hz. Ömer' üçlüsü → HİCRİ. Türklerin kullandığı **tek ay yılı esaslı** takvimdir — bu ayrıntı sıkça sorulur.",
+    "pattern": "^Hicri$|^Hicri takvim$|\\\\\\\\bhicri takvim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bhicri\\\\\\\\b"
+  },
+  {
+    "id": "tar1_celali_takvim",
+    "term": "Celali Takvim",
+    "sayfa": 27,
+    "tanim": "Celali Takvim, **Büyük Selçuklu Sultanı Melikşah** adına **Ömer Hayyam** başkanlığındaki heyetçe hazırlanan **Güneş yılı** esaslı tarım ve maliye takvimidir.\n💡 Sınav Şifresi: 'Melikşah + Ömer Hayyam + Güneş yılı + maliye/tarım' dörtlüsü → CELALİ. Miladi ile karıştırma; Celali'de başlangıç Hz. İsa değil, Melikşah dönemidir.",
+    "pattern": "^Celali$|^Celali takvim$|\\\\\\\\bcelali takvim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bcelali\\\\\\\\b"
+  },
+  {
+    "id": "tar1_rumi_takvim",
+    "term": "Rumi Takvim",
+    "sayfa": 28,
+    "tanim": "Osmanlı'da **mali işlerdeki karışıklığı çözmek** için Güneş yılına geçilen, ama başlangıcı yine **Hicret (622)** olan melez takvimdir; yani 'yıl hesabı Güneş, milat hesabı Hicret'.\n💡 Sınav Şifresi: 'Mali işler + Güneş yılı + başlangıç Hicret' üçlüsü → Rumi Takvim. Hicri'den farkı Güneş yılı, Miladi'den farkı Hicret başlangıcı.",
+    "pattern": "^Rumi$|^Rumi takvim$|\\\\\\\\brumi takvim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\brumi\\\\\\\\b"
+  },
+  {
+    "id": "tar1_oniki_hayvanli_takvim",
+    "term": "12 Hayvanlı Türk Takvimi",
+    "sayfa": 26,
+    "tanim": "İslamiyet öncesi Türklerin **Güneş yılı** esaslı takvimidir; her yıl bir hayvan adıyla (Sıçan, Pars, Tavşan...) anılır ve **12 yılda bir döngü** tamamlanır — tıpkı bugün Çin burçları gibi.\n💡 Sınav Şifresi: '12 hayvan + Güneş yılı + İslamiyet öncesi' → 12 Hayvanlı Türk Takvimi. Hicri (Ay yılı) ve Rumi (Hicret başlangıçlı) ile karıştırma.",
+    "pattern": "12 hayvanlı türk takvimi|on iki hayvanlı türk takvimi|oniki hayvanlı"
+  },
+  {
+    "id": "tar1_gobeklitepe",
+    "term": "Göbeklitepe",
+    "sayfa": 36,
+    "tanim": "Şanlıurfa'da, günümüzden **12 bin yıl önce** dikilmiş 'T' biçimli taşlarıyla dünyanın bilinen **en eski anıtsal tapınak merkezi**; yani insanlığın 'önce yerleşti sonra tapındı' tezini tersine çeviren yer.\n💡 Sınav Şifresi: 'En eski tapınak + T biçimli dikilitaş + Şanlıurfa' → Göbeklitepe. Yerleşme değil, **tapınak** vurgusu ayırt ettirir.",
+    "pattern": "^Göbeklitepe$|\\\\\\\\bgöbeklitepe\\\\\\\\b|\\\\\\\\bgobeklitepe\\\\\\\\b"
+  },
+  {
+    "id": "tar1_catalhoyuk",
+    "term": "Çatalhöyük",
+    "sayfa": 38,
+    "tanim": "Konya Çumra'da, Neolitik Çağ'a ait **damdan girişli bitişik evleriyle** insanlığın ilk şehir yerleşmesi sayılan merkez; sokak yok, evler sırt sırta — adeta petek gibi.\n💡 Sınav Şifresi: 'Damdan girilen ev + ilk şehir + Konya' → Çatalhöyük. Göbeklitepe (tapınak) ve Çayönü (ilk köy) ile karıştırma.",
+    "pattern": "^Çatalhöyük$|\\\\\\\\bçatalhöyük\\\\\\\\b|\\\\\\\\bcatalhoyuk\\\\\\\\b"
+  },
+  {
+    "id": "tar1_canyonu",
+    "term": "Çayönü",
+    "sayfa": 37,
+    "tanim": "Diyarbakır Ergani'de, **tahıl üretimi ve hayvan evcilleştirmesiyle** Türkiye'nin ilk köy yerleşmesi sayılan, ayrıca **bakırın ilk işlendiği** alan — yani tarım devriminin Anadolu'daki mutfağı.\n💡 Sınav Şifresi: 'İlk köy + ilk bakır işçiliği + Diyarbakır' → Çayönü. Çatalhöyük 'ilk şehir', Çayönü 'ilk köy' — bu ayrım altın kural.",
+    "pattern": "^Çayönü$|\\\\\\\\bçayönü\\\\\\\\b|\\\\\\\\bcayonu\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kultepe",
+    "term": "Kültepe (Kaniş)",
+    "sayfa": 42,
+    "tanim": "Kayseri'de, Asur ticaret kolonileri sayesinde Mezopotamyalı tüccarların getirdiği **ilk çivi yazılı kil tabletlerin** bulunduğu, böylece **Anadolu'da Tarih Çağlarını başlatan** merkez.\n💡 Sınav Şifresi: 'Kayseri + ilk yazılı tablet + Anadolu'da tarih çağlarının başlangıcı' → Kültepe (Kaniş). Anadolu'da yazıyı başlatan yer olarak kodla.",
+    "pattern": "^Kültepe$|\\\\\\\\bkültepe\\\\\\\\b|\\\\\\\\bkultepe\\\\\\\\b|\\\\\\\\bkaniş\\\\\\\\b"
+  },
+  {
+    "id": "tar1_hacilar",
+    "term": "Hacılar",
+    "sayfa": 39,
+    "tanim": "Burdur yakınlarında, **etrafı surlarla çevrili** savunma mimarisi ve gelişmiş **seramik çanak çömlekleriyle** öne çıkan Neolitik-Kalkolitik yerleşme; yani 'malımı korumak için duvar ördüm' döneminin temsilcisi.\n💡 Sınav Şifresi: 'Burdur + sur + seramik' → Hacılar. Savunma duvarı ve çanak çömlek vurgusu diğerlerinden ayırır.",
+    "pattern": "^Hacılar$|\\\\\\\\bhacılar\\\\\\\\b|\\\\\\\\bhacilar\\\\\\\\b"
+  },
+  {
+    "id": "tar1_aslantepe",
+    "term": "Arslantepe (Aslantepe)",
+    "sayfa": 40,
+    "tanim": "Malatya'da, **kerpiç saray kompleksi, mühür baskıları ve tarihin en eski kılıçlarıyla** bürokrasi ve devletleşmenin ilk adımlarının görüldüğü höyük — adeta devletin 'kurumsallaşma' belgesi.\n💡 Sınav Şifresi: 'Malatya + mühür + en eski kılıç + saray' → Arslantepe. Mühür = bürokrasi, kılıç = ordu/savaş; bu iki anahtar kelime yeter.",
+    "pattern": "^Aslantepe$|^Arslantepe$|\\\\\\\\barslantepe\\\\\\\\b|\\\\\\\\baslantepe\\\\\\\\b"
+  },
+  {
+    "id": "tar1_tunc_cagi",
+    "term": "Tunç Çağı",
+    "sayfa": 44,
+    "tanim": "**Bakır ile kalayın karıştırılmasıyla tunç alaşımının** elde edildiği; ilk şehir devletlerinin, orduların ve surların ortaya çıktığı maden devri — yani 'daha sert metal, daha güçlü devlet' dönemi.\n💡 Sınav Şifresi: 'Bakır + kalay = tunç' formülü ve 'ilk şehir devletleri + surlar' → Tunç Çağı. Bakır (Kalkolitik) ve Demir Çağı ile karıştırma.",
+    "pattern": "^Tunç Çağı$|\\\\\\\\btunç çağı\\\\\\\\b|\\\\\\\\btunç devri\\\\\\\\b"
+  },
+  {
+    "id": "tar1_sumerler",
+    "term": "Sümerler",
+    "sayfa": 52,
+    "tanim": "MÖ 3200'de **çivi yazısını icat ederek Tarih Çağlarını başlatan**; 'Site' şehir devletleri, **Ziggurat** tapınakları ve tarihin ilk yazılı kanunlarıyla (Urkagina) tanınan Mezopotamya uygarlığı.\n💡 Sınav Şifresi: 'Çivi yazısı + Ziggurat + Site + Urkagina' dörtlüsü → Sümerler. Yazıyı bulan uygarlık olarak kodla; Babil (Hammurabi) ile kanun konusunda karıştırma.",
+    "pattern": "^Sümerler$|\\\\\\\\bsümerler\\\\\\\\b|\\\\\\\\bsümer\\\\\\\\b|\\\\\\\\bsümerlerin\\\\\\\\b"
+  },
+  {
+    "id": "tar1_asurlar",
+    "term": "Asurlar",
+    "sayfa": 55,
+    "tanim": "**Anadolu'ya yazıyı getiren** Mezopotamya uygarlığıdır; tüccarlar gibi Kültepe'de (Kaniş) ticaret kolonileri kurup **çivi yazısını** Anadolu'ya taşıdılar, başkent Ninova'da ise tarihin ilk kütüphanesini (Asurbanipal) açtılar.\n💡 Sınav Şifresi: \"Anadolu'ya yazıyı getiren\" + \"Kültepe/Kaniş\" + \"ilk kütüphane Ninova\" üçlüsü Asurları işaret eder; yazının Anadolu'ya gelişi = **Tarih Devirlerinin başlangıcı**.",
+    "pattern": "^Asur$|^Asurlar$|\\\\\\\\basur uygarlığı\\\\\\\\b|\\\\\\\\basurlar\\\\\\\\b|\\\\\\\\basur\\\\\\\\b"
+  },
+  {
+    "id": "tar1_babiller",
+    "term": "Babiller",
+    "sayfa": 54,
+    "tanim": "**Hammurabi Kanunları** ile tanınan Mezopotamya uygarlığıdır; \"**kısasa kısas**\" (göze göz, dişe diş) esasına dayanan bu sert kanunlar tarihin ilk anayasa niteliğindeki belgeleri sayılır, ayrıca **Babil Kulesi** ve **Asma Bahçeleri** ile ünlüdürler.\n💡 Sınav Şifresi: \"Kısasa kısas\" + \"Hammurabi\" + \"Babil Kulesi/Asma Bahçeleri\" = Babiller; kanunun **sertliği** onları Sümerlerin yumuşak Urgakina kanunlarından ayırt ettirir.",
+    "pattern": "^Babil$|^Babiller$|\\\\\\\\bbabiller\\\\\\\\b|\\\\\\\\bbabil\\\\\\\\b"
+  },
+  {
+    "id": "tar1_hititler",
+    "term": "Hititler",
+    "sayfa": 60,
+    "tanim": "Anadolu'nun ilk büyük devleti olan Hititler, **Hattuşaş (Çorum)** başkentli, kralın yanında **Pankuş meclisi** ve **Tavananna** adlı kraliçenin söz sahibi olduğu, tanrılara hesap vermek için **tarafsız 'Anal' (yıllık)** yazan ve Mısır'la **Kadeş** barışını imzalayan uygarlıktır. Tıpkı bir şirketin yönetim kurulu (Pankuş) ve denetçi raporları (Anal) gibi düşün: kral tek başına değil, meclis ve kayıtla yönetirdi.\n💡 Sınav Şifresi: 'Pankuş + Tavananna + Anal + Kadeş' dörtlüsünü görürsen şık Hititler'dir; Anal'ın 'tarafsız' olması diğerlerinden ayırt edici anahtardır.",
+    "pattern": "^Hitit$|^Hititler$|\\\\\\\\bhititler\\\\\\\\b|\\\\\\\\bhitit\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kades_antlasmasi",
+    "term": "Kadeş Antlaşması (MÖ 1280)",
+    "sayfa": 62,
+    "tanim": "Hititler ile Mısırlıların **Kuzey Suriye** egemenliği için yaptığı savaşın ardından MÖ 1280'de imzalanan, tarihte bilinen **ilk yazılı barış antlaşmasıdır**. Bugün iki ülkenin savaşı bitirip 'ortak bildiri' imzalaması gibi düşün; ama bu, tarihte ilk kez kâğıda dökülen barıştır.\n💡 Sınav Şifresi: 'İlk yazılı barış' + 'Hitit-Mısır' + 'Kuzey Suriye' üçlüsü Kadeş'i kodlar; 'ilk yazılı antlaşma' ifadesi asla başka kavrama gitmez.",
+    "pattern": "kadeş antlaşması|kades antlasmasi"
+  },
+  {
+    "id": "tar1_frigler",
+    "term": "Frigler",
+    "sayfa": 64,
+    "tanim": "Başkenti **Gordion (Ankara)** olan Frigler, tarım ve hayvancılığı korumak için **öküz öldürenin idam edildiği** sert yasalar çıkarmış, **Kibele** bereketiyle, **Fibula** çengelli iğnesiyle ve **Tapates** halılarıyla ünlenmiştir. Bugün tarımı korumak için ağır cezalar koyan devlet gibi: ekmeğin kaynağını korumak hayati sayılırdı.\n💡 Sınav Şifresi: 'Gordion + öküz idamı + Fibula + Tapates + Kibele' beşlisi Frigler'in parmak izidir; özellikle 'öküz öldürenin idamı' tek başına yeter.",
+    "pattern": "^Frigler$|^Frig$|\\\\\\\\bfrigler\\\\\\\\b|\\\\\\\\bfrig\\\\\\\\b"
+  },
+  {
+    "id": "tar1_lidyalilar",
+    "term": "Lidyalılar",
+    "sayfa": 66,
+    "tanim": "Başkenti **Sardes (Manisa)** olan Lidyalılar, **Efes'ten Mezopotamya'ya** uzanan **Kral Yolu**'nda ticaret yapmış ve tarihte **ilk kez madeni parayı (sikkeyi)** icat etmiştir. Bugün nasıl banka kartı hayatı kolaylaştırdıysa, o dönem de para takası kolaylaştıran devrimdi.\n💡 Sınav Şifresi: 'Sardes + Kral Yolu + ilk madeni para' üçlüsü Lidyalılar'ı verir; 'parayı ilk bulan' ifadesi başka uygarlığa gitmez.",
+    "pattern": "^Lidya$|^Lidyalılar$|\\\\\\\\blidyalılar\\\\\\\\b|\\\\\\\\blidya\\\\\\\\b"
+  },
+  {
+    "id": "tar1_urartular",
+    "term": "Urartular",
+    "sayfa": 68,
+    "tanim": "Başkenti **Tuşpa (Van)** olan Urartular, **taş işçiliği, kale mimarisi, maden işlemeciliği** ve **Şamran sulama kanalları** ile tanınan Doğu Anadolu uygarlığıdır. Bugün Van'da hâlâ akan o kanallar, onların 'su mühendisliği' mirasıdır.\n💡 Sınav Şifresi: 'Tuşpa + Van + kale + Şamran kanalı' dörtlüsü Urartular'ı kodlar; 'sulama kanalı' geçen şıkta gözün Urartu'ya gitmeli.",
+    "pattern": "^Urartu$|^Urartular$|\\\\\\\\burartular\\\\\\\\b|\\\\\\\\burartu\\\\\\\\b"
+  },
+  {
+    "id": "tar1_misir_medeniyeti",
+    "term": "Mısır Medeniyeti",
+    "sayfa": 72,
+    "tanim": "**Nil Nehri** çevresinde kurulan Mısır Medeniyeti; **Nom** adlı şehir devletleri, **Firavun** tanrı-kralları, **hieroglif** yazısı, **papirüs**, **mumyalama** sayesinde gelişen tıp/anatomi ve **güneş takvimi** ile özgün bir uygarlıktır. Nil'in düzenli taşması onlara hem tarım hem takvim hem de 'ölümden sonra yaşam' inancını (mumya) getirdi.\n💡 Sınav Şifresi: 'Nil + Nom + Firavun + hieroglif + papirüs + mumya + güneş takvimi' yedi haneli Mısır şifresidir; 'Nom' kelimesi Mısır'ı diğerlerinden ayırır.",
+    "pattern": "^Mısır$|\\\\\\\\bmısır medeniyeti\\\\\\\\b|\\\\\\\\bmısır uygarlığı\\\\\\\\b|\\\\\\\\bmısır\\\\\\\\b"
+  },
+  {
+    "id": "tar1_fenikeliler",
+    "term": "Fenikeliler",
+    "sayfa": 76,
+    "tanim": "Doğu Akdeniz kıyısında **deniz koloniciliği** yapan Fenikeliler, günümüz **Latin, Grek ve Kiril** alfabelerinin atası olan **22 harfli Fenike alfabesini** icat eden tüccar topluluktur. Bugün ticaret için herkesin anladığı ortak bir kod (emoji/alfabe) gibi düşün: harfler, ticaretin ortak diliydi.\n💡 Sınav Şifresi: '22 harf + alfabenin atası + deniz ticareti' üçlüsü Fenikeliler'i verir; 'alfabeyi bulan' ifadesi başka kavrama gitmez.",
+    "pattern": "^Fenikeliler$|\\\\\\\\bfenikeliler\\\\\\\\b|\\\\\\\\bfenike\\\\\\\\b"
+  },
+  {
+    "id": "tar1_ibraniler",
+    "term": "İbraniler",
+    "sayfa": 78,
+    "tanim": "İbraniler, tarihte **tek tanrılı ilahi dine (Musevilik)** inanan ilk topluluk olup kutsal kitapları **Tevrat**'a dayalı **ilk dinî hukuk sistemini** kurmuşlardır. Bugün anayasalarda 'din ve vicdan özgürlüğü' nasıl temel ilkeyse, onlar da hukuku tek tanrı inancıyla şekillendirdiler.\n💡 Sınav Şifresi: 'İlk tek tanrılı din + Tevrat + ilk dinî hukuk' üçlüsü İbraniler'i kodlar; 'Musevilik' kelimesi tek başına yeter.",
+    "pattern": "^İbrani$|^İbraniler$|\\\\\\\\bibraniler\\\\\\\\b|\\\\\\\\bibrani\\\\\\\\b"
+  },
+  {
+    "id": "tar1_persler_satrap",
+    "term": "Satrap / Satraplık (Pers İdaresi)",
+    "sayfa": 80,
+    "tanim": "Pers İmparatorluğu geniş topraklarını yönetmek için **Satraplık** adlı eyalet sistemi kurmuş, eyaletlerin başındaki valiye **Satrap** demiş ve **'Şahgözü'** adlı müfettişlerle denetlemiştir. Bugün devletin valileri ve teftiş kurulları gibi: merkezden uzak yerleri denetimle bağlı tutma modeli.\n💡 Sınav Şifresi: 'Satrap = vali, Satraplık = eyalet, Şahgözü = müfettiş' üçlü eşleştirmesi Pers idaresini kodlar; 'Şahgözü' kelimesi başka uygarlıkta geçmez.",
+    "pattern": "^Satrap$|\\\\\\\\bsatrap\\\\\\\\b|\\\\\\\\bsatraplık\\\\\\\\b"
+  },
+  {
+    "id": "tar1_sehir_devletleri",
+    "term": "İlk Çağ Şehir Devletleri (Polis / Site / Nom)",
+    "sayfa": 53,
+    "tanim": "İlk Çağ'da Yunan'da **Polis**, Mezopotamya'da **Site**, Mısır'da **Nom** denilen bağımsız şehir devletleri vardı; bunların varlığı **merkezi siyasi birliğin olmadığını** gösterir. Bugün her ilin kendi belediyesiyle yönetilmesi gibi ama aralarında üst bir devlet yok: her şehir kendi kralı.\n💡 Sınav Şifresi: 'Polis = Yunan, Site = Sümer, Nom = Mısır' eşleştirmesi + 'merkezi birliğin yokluğu' çıkarımı bu kavramın iki anahtarıdır.",
+    "pattern": "^Polis$|^Site$|^Nomo$|\\\\\\\\bşehir devletlerine\\\\\\\\b|\\\\\\\\bpolis\\\\\\\\b|\\\\\\\\bsite\\\\\\\\b|\\\\\\\\bnomo\\\\\\\\b"
+  },
+  {
+    "id": "tar1_roma_12_levha",
+    "term": "Roma Hukuku ve 12 Levha Kanunları",
+    "sayfa": 88,
+    "tanim": "Roma'da soylu **Patriciler** ile halk **Plepler** arasındaki sınıf çatışmasını önlemek için hazırlanan **12 Levha Kanunları**, modern Avrupa özel hukukunun temeli sayılan **ilk yazılı Roma kanunlarıdır**. Bugün anayasanın halka açık panolarda ilan edilmesi gibi: hukuku herkesin görebileceği hale getirmek.\n💡 Sınav Şifresi: 'Patrici-Plep çatışması + 12 Levha + ilk yazılı Roma kanunu' üçlüsü bu kavramı kodlar; '12 Levha' ifadesi Justinianus'tan ayırt edici anahtardır.",
+    "pattern": "12 levha kanunları|roma yasaları|roma hukuku"
+  },
+  {
+    "id": "tar1_justinianus_kanunlari",
+    "term": "Justinianus Kanunları",
+    "sayfa": 90,
+    "tanim": "Doğu Roma (Bizans) İmparatoru **Justinianus**, eski Roma yasalarını derleyip **Hristiyanlık ilkeleriyle** modernize ederek **Corpus Iuris Civilis** adlı külliyatı oluşturmuştur. Bugün eski kanunları güncel değerlere göre revize edip tek kitapta toplamak gibi: hem derleme hem güncelleme.\n💡 Sınav Şifresi: 'Justinianus + Corpus Iuris Civilis + Hristiyanlık ilkeleri' üçlüsü bu kavramı verir; '12 Levha' değil 'derleme/külliyat' vurgusu Justinianus'u ayırır.",
+    "pattern": "^Justinianus$|\\\\\\\\bjustinianus\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kavimler_gocu",
+    "term": "Kavimler Göçü (375)",
+    "sayfa": 98,
+    "tanim": "375'te **Kuzey Hunları**nın Batı'ya ittiği Germen kavimlerinin Roma topraklarına akın etmesiyle başlayan domino etkisi; Roma'yı ikiye böldü, Batı Roma'yı yıktı ve Avrupa'yı **Feodalite + Skolastik** karanlığına soktu.\n💡 Sınav Şifresi: **375** tarihi + **Hun** tetikleyici + sonuç zinciri: Roma bölünür → Batı Roma yıkılır → Feodalite doğar. 'Kavimler Göçü'nün başlatıcısı Hunlar, mağduru Germenler, fatura Roma'ya.",
+    "pattern": "kavimler göçü|kavimler gocu"
+  },
+  {
+    "id": "tar1_feodalite",
+    "term": "Feodalite (Derebeylik)",
+    "sayfa": 102,
+    "tanim": "Orta Çağ Avrupası'nda merkezi otorite çökünce **toprağın** güç kaynağı olduğu, **Lord-Süzeren** koruması karşılığı **Serf**in toprağa bağlandığı ve şatolar etrafında kapalı tarım ekonomisinin döndüğü derebeylik düzeni.\n💡 Sınav Şifresi: Anahtar üçlü: **Toprak + Lord-Vassal + Serf**. 'Merkezi krallık YOK, toprak = güç' denildi mi Feodalite; 'şato, kapalı ekonomi, serflik' kelimeleri de aynı kavramın imzası.",
+    "pattern": "^Feodalite$|\\\\\\\\bfeodalite\\\\\\\\b|\\\\\\\\bderebeylik\\\\\\\\b|\\\\\\\\bfief\\\\\\\\b|\\\\\\\\bserf\\\\\\\\b"
+  },
+  {
+    "id": "tar1_ipek_yolu_sogdlular",
+    "term": "İpek Yolu ve Soğdlular",
+    "sayfa": 106,
+    "tanim": "Çin'den Akdeniz'e uzanan **İpek Yolu**'nda kervan ticaretini ve tüccar kolonilerini yöneten en etkili İran kökenli topluluk **Soğdlular**dır; adeta Orta Çağ'ın 'küresel lojistik ağı' işletmecileriydi.\n💡 Sınav Şifresi: 'İpek Yolu tüccarı' sorusunda **Soğd** cevabı; 'İran kökenli, tüccar kolonileri kuran' ifadesi Soğdluları diğer kavimlerden ayıran kod.",
+    "pattern": "^Soğdlular$|^Soğd$|\\\\\\\\bsoğdlular\\\\\\\\b|\\\\\\\\bsoğd\\\\\\\\b|\\\\\\\\bipek yolu\\\\\\\\b"
+  },
+  {
+    "id": "tar1_ribat_kervansaray",
+    "term": "Ribat ve Kervansaray",
+    "sayfa": 110,
+    "tanim": "**Ribat**, ilk olarak **Karahanlılar**da sınır boylarında askerî güvenlik için kurulan kale; zamanla ticaret yollarında kervanların güvenliğini ve konaklamasını sağlayan kervansaraya dönüşen yapı.\n💡 Sınav Şifresi: Kurucu = **Karahanlılar**, ilk amaç = **askerî güvenlik (sınır)**, sonraki işlev = **ticaret + konaklama**. 'Ribat' denince Karahanlı + sınır kalesi; 'kervansaray' denince konaklama aklına gelsin.",
+    "pattern": "^Ribat$|^Kervansaray$|^Han$|^Bedesten$|\\\\\\\\bribat\\\\\\\\b|\\\\\\\\bkervansaray\\\\\\\\b|\\\\\\\\bbedesten\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kut_anlayisi",
+    "term": "Kut Anlayışı",
+    "sayfa": 116,
+    "tanim": "İlk Türk devletlerinde hükümdarlık yetkisinin **Gök Tengri** tarafından verildiğine inanılan **kut**; kan bağıyla tüm hanedan erkeklerine geçtiği için taht kavgalarının ve devletin bölünmesinin ana sebebi oldu.\n💡 Sınav Şifresi: **Kut = Gök Tengri vergisi + hanedanın tüm erkeklerine geçer** → sonuç: **taht kavgası ve bölünme**. 'Yönetme yetkisi ilahi kaynaklı' ifadesi kutun, 'her hanedan üyesinin hakkı' ifadesi kavganın şifresi.",
+    "pattern": "^Kut$|\\\\\\\\bkut anlayışı\\\\\\\\b|\\\\\\\\byönetme yetkisinin tanrı tarafından\\\\\\\\b|\\\\\\\\bmeşruiyetin kaynağı\\\\\\\\b"
+  },
+  {
+    "id": "tar1_tore",
+    "term": "Töre",
+    "sayfa": 118,
+    "tanim": "İlk Türk toplumlarında sosyal hayatı, adaleti ve idareyi düzenleyen **yazısız geleneksel hukuk** bütünü olan töre; **Hakan dahil herkes** uymak zorundaydı, bu yüzden 'hukuk devleti' fikrinin bozkır versiyonudur.\n💡 Sınav Şifresi: **Yazısız + geleneksel + Hakan bile uyar**. 'Hükümdarın üstünde kural' vurgusu töreyi diğer şıklardan ayırır; 'yazılı kanun' (Yasa, Kanunname) ile karıştırma.",
+    "pattern": "^Töre$|\\\\\\\\btöre hukuku\\\\\\\\b|\\\\\\\\btöre\\\\\\\\b"
+  },
+  {
+    "id": "tar1_ordu_millet",
+    "term": "Ordu-Millet Anlayışı",
+    "sayfa": 120,
+    "tanim": "Bozkır konargöçer Türk toplumunda **kadın-erkek ayrımı olmaksızın eli silah tutan herkesin** savaşçı sayıldığı, **paralı ordunun bulunmadığı** anlayış; yani milletin kendisi ordudur.\n💡 Sınav Şifresi: **Paralı ordu YOK + kadın-erkek herkes savaşçı**. 'Ücretli asker yok' ifadesi ordu-millet anlayışının kesin imzası; Roma'nın paralı lejyonlarıyla karşıtlık sınavda tuzak.",
+    "pattern": "ordu millet anlayışı|ordu-millet|ordu millet"
+  },
+  {
+    "id": "tar1_kurultay_toy",
+    "term": "Kurultay (Toy / Kengeş)",
+    "sayfa": 117,
+    "tanim": "İlk Türk devletlerinde siyasi, askerî, ekonomik ve töreye dair kararların görüşüldüğü; **boy beyleri, hanedan üyeleri ve Hatun**un katıldığı danışma ve yönetim meclisi (Toy/Kengeş).\n💡 Sınav Şifresi: Katılımcı üçlüsü: **Boy beyleri + Hanedan + Hatun**. 'Hatun'un katılımı' kurultayı diğer meclislerden ayıran altın anahtar; 'danışma + karar' işlevi de toy/kengeş eş anlamlısı.",
+    "pattern": "^Kurultay$|^Toy$|\\\\\\\\bkurultay\\\\\\\\b|\\\\\\\\btoy meclisi\\\\\\\\b|\\\\\\\\btoy\\\\\\\\b"
+  }
+]

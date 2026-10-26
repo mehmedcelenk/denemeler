@@ -1,32 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { MEB_ESER_DICT, MEB_YAZAR_DICT, MEB_DIVAN_GLOSAR } from '../src/features/tde/edebiyat-dict.ts';
-import { enrichTdeContent, getEntityFacts } from '../src/features/tde/edebiyat-pusulasi.ts';
 import { parseTurkishSentenceElements, enrichTurkishSentenceXray } from '../src/features/tde/cumle-xray.ts';
-
-test.skip('MEB_ESER_DICT tüm eserlerde yazar, tür ve ayrıştırıcı özellik içerir (Sözlük JSON silindiği için atlandı)', () => {
-  assert.ok(Object.keys(MEB_ESER_DICT).length >= 15, 'En az 15 başyapıt kayıtlı olmalı');
-});
-
-test.skip('MEB_YAZAR_DICT tüm yazarlarda dönem, unvan ve ayrıştırıcı özellik içerir (Sözlük JSON silindiği için atlandı)', () => {
-  assert.ok(Object.keys(MEB_YAZAR_DICT).length >= 10, 'En az 10 yazar kayıtlı olmalı');
-});
-
-test.skip('MEB_DIVAN_GLOSAR tüm kelimelerde güncel anlam, köken ve osmanlıca imla içerir (Sözlük JSON silindiği için atlandı)', () => {
-  assert.ok(Object.keys(MEB_DIVAN_GLOSAR).length >= 20, 'En az 20 arkaik kelime kayıtlı olmalı');
-});
-
-test.skip('enrichTdeContent eser, yazar ve divan kelimelerini doğru etiketler (Sözlük JSON silindiği için atlandı)', () => {
-  const sample = "Halit Ziya Uşaklıgil'in Mai ve Siyah romanında giryan gözler anlatılır.";
-  const enriched = enrichTdeContent(sample);
-  assert.ok(enriched.includes('class="edeb-entity-badge is-yazar"'));
-});
-
-test.skip('getEntityFacts MEB müfredatına uygun tekil hap bilgileri döner (Sözlük JSON silindiği için atlandı)', () => {
-  const yazarData = getEntityFacts('namık kemal');
-  assert.ok(yazarData);
-});
 
 test('parseTurkishSentenceElements soru köklerini İngilizce Röntgen ile aynı sınıflarla ayırır', () => {
   // Kullanıcının doğrudan örneği
@@ -72,4 +47,66 @@ test('renderCardStem TDE sorusunda soru_xray varsa öncelikle onu kullanır', as
   assert.ok(rendered.includes('class="xray-sub">Yazar</span>'), 'soru_xray içindeki özne etiketi render edilmeli');
   assert.ok(rendered.includes('class="xray-verb">yazdı</span>'), 'soru_xray içindeki yüklem etiketi render edilmeli');
 });
+
+test('renderCardHeader: çekmece varsayılan olarak kapalıdır (is-expanded içermez)', async () => {
+  const { renderCardHeader } = await import('../src/features/booklet/question-card.ts');
+  const { state } = await import('../src/app/state.ts');
+  state.isFeaturesExpanded = false;
+  state.expandedQuestionIds.clear();
+
+  const dummyQ = {
+    id: 88888,
+    ders: 'TÜRK DİLİ VE EDEBİYATI – 1',
+    soru: 'Örnek soru',
+    soru_xray: '<span class="pos-word pos-adj">güzel</span> bir gün',
+    secenekler: { A: '1', B: '2', C: '3', D: '4' },
+    dogru_cevap: 'A' as const
+  };
+
+  const headerHtml = renderCardHeader(dummyQ, 1, false);
+  // Çekmece başlangıçta kapalı olmalı, ancak açıldığında ÖZ, SF, ÜN butonları active gelecektir
+  assert.ok(!headerHtml.includes('q-features-drawer is-expanded'), 'Çekmece varsayılan olarak kapalı olmalı');
+  assert.ok(headerHtml.includes('class="q-features-drawer"'), 'Kapalı q-features-drawer sınıfı bulunmalı');
+  assert.ok(headerHtml.includes('features-toggle-icon">›<'), 'Açma oku › olmalı');
+  assert.ok(headerHtml.includes('btn-xray-syntax active'), 'ÖZ butonu aktif olmalı');
+  assert.ok(headerHtml.includes('btn-xray-pos active'), 'SF butonu aktif olmalı');
+  assert.ok(headerHtml.includes('btn-xray-sound active'), 'ÜN butonu aktif olmalı');
+});
+
+test('features-bar: toggleQuestionFeatures tek tıkla açar, ikinci tıkla kapatır', async () => {
+  const { store, state } = await import('../src/app/state.ts');
+  state.isFeaturesExpanded = false;
+  state.expandedQuestionIds.clear();
+
+  const isExpanded1 = store.toggleQuestionExpanded(77777);
+  assert.strictEqual(isExpanded1, true, 'İlk tıklamada açık (true) dönmeli');
+  assert.ok(state.expandedQuestionIds.has(77777), 'expandedQuestionIds içinde 77777 olmalı');
+
+  const isExpanded2 = store.toggleQuestionExpanded(77777);
+  assert.strictEqual(isExpanded2, false, 'İkinci tıklamada kapalı (false) dönmeli');
+  assert.ok(!state.expandedQuestionIds.has(77777), 'expandedQuestionIds içinde 77777 olmamalı');
+});
+
+test('CSS sözleşmesi: kavram balonlarında alt çizgi yoktur ve ses olayları emoji/ikon rozetleri içerir', async () => {
+  const fs = await import('node:fs');
+  const englishCss = fs.readFileSync('src/styles/english.css', 'utf-8');
+  const translationsCss = fs.readFileSync('src/styles/translations.css', 'utf-8');
+
+  // Kavram balonlarında alt çizgi kaldırılmış olmalı
+  assert.ok(englishCss.includes('.vocab-word.concept-word'), 'concept-word sınıfı mevcut olmalı');
+  assert.ok(englishCss.includes('text-decoration: none !important;'), 'text-decoration none olmalı');
+  assert.ok(englishCss.includes('border-bottom: none !important;'), 'border-bottom none olmalı');
+
+  // Ses olaylarında kırmızı dalgalı çizgi kaldırılmış olmalı
+  assert.ok(!translationsCss.includes('border-bottom: 2px wavy'), 'Wavy border-bottom kalmamış olmalı');
+  assert.ok(translationsCss.includes('border-bottom: none !important;'), 'border-bottom none olmalı');
+
+  // Pedagojik ikonlar (🪨, ☁️, 🤰, 🤏, 🍂, 🪂, 👄) bulunmalı
+  assert.ok(translationsCss.includes('content: "🪨";'), 'Benzeşme için taş emojisi olmalı');
+  assert.ok(translationsCss.includes('content: "☁️";'), 'Yumuşama için pamuk emojisi olmalı');
+  assert.ok(translationsCss.includes('content: "🤰";'), 'Türeme için hamile kadın emojisi olmalı');
+  assert.ok(translationsCss.includes('content: "🤏";'), 'Daralma için kıskaç emojisi olmalı');
+  assert.ok(translationsCss.includes('content: "🍂";'), 'Düşme için yaprak emojisi olmalı');
+});
+
 

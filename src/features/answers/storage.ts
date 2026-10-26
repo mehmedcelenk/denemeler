@@ -22,5 +22,14 @@ export function loadSavedChoices(): void {
       }
     }
   } catch {}
+  try {
+    const rawEliminatedWrong = localStorage.getItem(StorageKeys.ELIMINATED_WRONG_CHOICES);
+    if (rawEliminatedWrong) {
+      const parsed = JSON.parse(rawEliminatedWrong);
+      if (parsed && typeof parsed === 'object') {
+        store.setEliminatedWrongChoices(parsed, false);
+      }
+    }
+  } catch {}
 }
 

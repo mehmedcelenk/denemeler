@@ -1,0 +1,835 @@
+[
+  {
+    "id": "tde1_sifat",
+    "term": "Sıfat (Ön Ad)",
+    "sayfa": 102,
+    "tanim": "İsmin önüne park edip ona **renk, şekil, sayı, işaret** gibi bir 'etiket' yapıştıran sözcüktür; tıpkı bir mağazada ürünün önüne konan fiyat etiketi gibi, isim olmadan sıfat da olamaz.\n💡 Sınav Şifresi: İsme 'Nasıl?' → Niteleme; 'Hangi/Kaç/Kaçıncı?' → Belirtme. **Önünde isim yoksa sıfat değildir** — 'bu' tek başınaysa zamir, 'bu ev'de ise sıfattır.",
+    "pattern": "\\\\\\\\bsıfat[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bsifat[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bön ad[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_zamir",
+    "term": "Zamir (Adıl)",
+    "sayfa": 132,
+    "tanim": "İsmin **yedek oyuncusu**dur; sahneye isim çıkmadığında onun rolünü üstlenir ve ismin aldığı tüm çekim eklerini (hâl, iyelik, çoğul) alabilir.\n💡 Sınav Şifresi: 'Bu/Şu/O' + isim → sıfat; tek başına ismin yerine → zamir. **Çekim eki alabiliyorsa kesin zamirdir** ('bunu, ondan').",
+    "pattern": "\\\\\\\\bzamir[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\badıl[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\badil[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_edat",
+    "term": "Edat (İlgeç)",
+    "sayfa": 136,
+    "tanim": "Tek başına hiçbir şey ifade etmeyen ama iki kelime arasında **köprü** kuran sözcüktür; tıpkı GPS'in 'üzerinden, doğru, kadar' gibi yön tarifleri gibi, kendinden önceki sözcükle öbekleşip anlam kazanır.\n💡 Sınav Şifresi: Cümleden çıkarılınca **anlam bozulur** (bağlaçtan farkı budur). 'İçin, gibi, ile, kadar, göre, dolayı' → ezber liste.",
+    "pattern": "\\\\\\\\bedat[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bilgeç[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bilgec[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_zarf",
+    "term": "Zarf (Belirteç)",
+    "sayfa": 134,
+    "tanim": "Fiilin **kumanda kolu**dur; eylemin nasıl, ne zaman, ne kadar ve nereye yapıldığını ayarlar — tıpkı bir video oynatıcıda hız, ses ve zaman ayarlarını değiştirmek gibi.\n💡 Sınav Şifresi: Fiile/fiilimsiye sorulan **'Nasıl? Ne zaman? Ne kadar? Nereye?'** → zarf. Sıfatı da etkileyebilir ('çok güzel ev' → 'çok' zarf, 'güzel' sıfat).",
+    "pattern": "\\\\\\\\bzarf[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bbelirteç[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bbelirtec[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_baglac",
+    "term": "Bağlaç",
+    "sayfa": 138,
+    "tanim": "Eş görevli sözcükleri veya cümleleri birbirine **tutturucu bant** gibi yapıştıran sözcüktür; çıkarıldığında cümle yıkılmaz, sadece iki parça arası bağ gevşer.\n💡 Sınav Şifresi: Cümleden çıkarılınca **anlam tamamen bozulmaz** (edattan farkı budur). 'Ve, veya, ama, fakat, lakin, çünkü, de, ki' → bağlaç.",
+    "pattern": "\\\\\\\\bbağlaç[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bbaglac[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_unsuz_benzesmesi",
+    "term": "Ünsüz Benzeşmesi (Sertleşme)",
+    "sayfa": 142,
+    "tanim": "Sert ünsüzle biten kelimeye yumuşak ünsüzle başlayan ek gelince, ekin **sertleşerek** kelimeye ayak uydurmasıdır; tıpkı bir sert kayaya yumuşak topun çarpıp sertleşmesi gibi.\n💡 Sınav Şifresi: **'FISTIKÇI ŞAHAP'** (f, s, t, k, ç, ş, h, p) + 'c, d, g' eki → 'ç, t, k'ye dönüşür. Örn: simit-ci → simit**ç**i, 1923-de → 1923'**t**e.",
+    "pattern": "ünsüz benzeşmesi|ünsüz sertleşmesi|benzeşme kuralı"
+  },
+  {
+    "id": "tde1_unlem",
+    "term": "Ünlem",
+    "sayfa": 140,
+    "tanim": "Ani duyguların **patlama noktası**dır; sevinç, korku, öfke veya seslenmeyi tek kelimeyle dışa vurur — tıpkı bir maçta gol anında tribünlerden yükselen 'Goool!' çığlığı gibi.\n💡 Sınav Şifresi: 'Ey, hey, ah, of, vah, ya, bre' → ünlem. Cümle içinde **bağımsız** durur, cümle ögesi olmaz; seslenme ve duygu bildiren kelimelerdir.",
+    "pattern": "\\\\\\\\bünlem[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bunlem[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_isim",
+    "term": "İsim (Ad)",
+    "sayfa": 58,
+    "tanim": "Canlı-cansız her varlığı, kavramı ve durumu **parmağıyla işaret edip adlandıran** sözcüktür; tıpkı bir kütüphanede her kitaba barkod verilmesi gibi, her şeyin bir adı vardır.\n💡 Sınav Şifresi: İsme **'-ler, -i, -e, -de, -den, -in'** çekim ekleri gelebilir. 'Nasıl?' sorusuna cevap vermez (o sıfatın işi).",
+    "pattern": "\\\\\\\\bisim\\\\\\\\b|\\\\\\\\bisimler\\\\\\\\b|\\\\\\\\bismin\\\\\\\\b|\\\\\\\\badlar\\\\\\\\b"
+  },
+  {
+    "id": "tde1_basit_isim",
+    "term": "Basit İsim",
+    "sayfa": 58,
+    "tanim": "Hiç **yapım eki almamış**, kök hâlinde duran isimdir; tıpkı hiç işlem görmemiş ham madde gibi — 'ev, su, taş, yol' sadece çekim eki alabilir.\n💡 Sınav Şifresi: **Yapım eki yok** = basit. 'Evler' basit (sadece çekim eki '-ler'), 'evci' türemiş (yapım eki '-ci').",
+    "pattern": "\\\\\\\\bbasit isim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bbasit ad[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_turemis_isim",
+    "term": "Türemiş İsim",
+    "sayfa": 59,
+    "tanim": "Kök veya gövdeye **yapım eki** eklenerek yepyeni bir anlam kazanmış isimdir; tıpkı bir yapay zekâ modelinin verilerle eğitilip yeni bir yetenek kazanması gibi, kök de ekle dönüşür.\n💡 Sınav Şifresi: **Yapım eki var** = türemiş. 'Göz-lük, yol-cu, bil-gi, sev-gi' → kökten tamamen farklı yeni kavram.",
+    "pattern": "\\\\\\\\btüremiş isim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bturemis isim[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_birlesik_isim",
+    "term": "Birleşik İsim",
+    "sayfa": 59,
+    "tanim": "Birden çok sözcüğün **kalıplaşıp kaynaşarak** yeni tek bir varlığı karşıladığı isimdir; tıpkı 'Fatih Sultan Mehmet Köprüsü'nün iki yakayı tek yapıda birleştirmesi gibi.\n💡 Sınav Şifresi: **En az iki kelime + yeni anlam**. 'Hanımeli, aslanağzı, cumartesi, ilkbahar' → birleşik. Anlam kayması varsa kesin birleşiktir.",
+    "pattern": "\\\\\\\\bbirleşik isim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bbirlesik isim[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_topluluk_ismi",
+    "term": "Topluluk İsmi",
+    "sayfa": 60,
+    "tanim": "**'-ler/-lar' almadığı hâlde** zihinde birden çok varlığı canlandıran isimdir; tıpkı tek bir 'ordu' kelimesinin binlerce askeri temsil etmesi gibi, biçimce tekil ama anlamca çoğuldur.\n💡 Sınav Şifresi: **Tekil görünür, çoğul anlam taşır**. 'Ordu, orman, sürü, komisyon, meclis, halk, millet' → topluluk ismi. Çoğul eki alsa bile topluluk anlamı korunur ('ordular').",
+    "pattern": "\\\\\\\\btopluluk ismi[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\btopluluk ad[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_cogul_isim",
+    "term": "Çoğul İsim",
+    "sayfa": 60,
+    "tanim": "**-ler/-lar** ekiyle aynı türden birden fazla varlığı anlatan isimlerdir; tıpkı bir aile fotoğrafında tek kişi yerine tüm sülalenin görünmesi gibi.\n💡 Sınav Şifresi: \"-ler/-lar\" ekini gör → çoğul; ama \"Ali'ler\" gibi özel isme gelirse \"aile/topluluk\" anlamı katar, sayı çokluğu değil.",
+    "pattern": "\\\\\\\\bçoğul isim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bcogul isim[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_ozel_isim",
+    "term": "Özel İsim",
+    "sayfa": 61,
+    "tanim": "**Tek ve benzersiz** bir varlığa verilen addır; dünyada bir tane olan **TC kimlik numarası** gibi düşün — herkesin kendine ait.\n💡 Sınav Şifresi: Büyük harfle başlar; kişi, şehir, ülke, kurum, kitap, hayvan adları → özel. \"Ankara\", \"Fatih\", \"Kur'an\" gibi.",
+    "pattern": "\\\\\\\\bözel isim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bozel isim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bözel ad[a-zçğıöşü]*\\\\\\\\b|^Özel$"
+  },
+  {
+    "id": "tde1_cins_isim",
+    "term": "Cins İsim (Tür Adı)",
+    "sayfa": 61,
+    "tanim": "Aynı türden varlıkların **ortak adıdır**; \"insan\" deyince Ali de Ayşe de anlaşılır, tıpkı \"telefon\" deyince tüm markaların kapsanması gibi.\n💡 Sınav Şifresi: Baş harfi küçük; \"ağaç, kuş, şehir, kalem\" → cins. Özel ismin genel şemsiyesi.",
+    "pattern": "\\\\\\\\bcins isim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\btür adı[a-zçğıöşü]*\\\\\\\\b|^Cins$"
+  },
+  {
+    "id": "tde1_isim_tamlamasi",
+    "term": "İsim Tamlaması",
+    "sayfa": 62,
+    "tanim": "İki ismin **tamlayan-tamlanan** ilişkisiyle birbirini bütünlemesidir; GPS'te \"hedefin adresi\" gibi — biri yolu gösterir, diğeri varış noktasını belirler.\n💡 Sınav Şifresi: \"-in/-ın\" + \"-i/-ı\" ekleri (belirtili) veya eksiz+iyelik (belirtisiz). \"Kapının kolu\" = belirtili, \"çelik kapı\" = belirtisiz.",
+    "pattern": "isim tamlaması[a-zçğıöşü]*|ad tamlaması[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_lirik_siir",
+    "term": "Lirik Şiir",
+    "sayfa": 88,
+    "tanim": "**Aşk, ayrılık, hasret** gibi derin bireysel duyguları coşkuyla işleyen şiirdir; Yunus Emre'nin iç dünyasını dökmesi gibi.\n💡 Sınav Şifresi: \"Duygu yoğunluğu + bireysellik\" → lirik. Fuzûlî, Yunus, Karacaoğlan'ın aşk şiirleri.",
+    "pattern": "^Lirik$|\\\\\\\\blirik şiir[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\blirik \\\\\\\\(coşkulu\\\\\\\\)"
+  },
+  {
+    "id": "tde1_epik_siir",
+    "term": "Epik Şiir",
+    "sayfa": 90,
+    "tanim": "**Kahramanlık, savaş, yiğitlik** temalarını destansı bir coşkuyla anlatan şiirdir; Çanakkale destanı veya Dede Korkut hikâyeleri gibi.\n💡 Sınav Şifresi: \"Savaş + kahramanlık + millet\" üçlüsünü gör → epik. Köroğlu, destanlar, Mehmet Akif'in Çanakkale şiiri.",
+    "pattern": "^Epik$|\\\\\\\\bepik şiir[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bepik \\\\\\\\(destansı\\\\\\\\)"
+  },
+  {
+    "id": "tde1_pastoral_siir",
+    "term": "Pastoral Şiir",
+    "sayfa": 89,
+    "tanim": "**Kır, çoban, dağ, köy** yaşamını ve doğa güzelliklerini sade bir dille resmeden şiirdir; bir doğa belgeselinin şiir hâli gibi.\n💡 Sınav Şifresi: \"Doğa + köy + çoban\" → pastoral. Karacaoğlan'ın yayla şiirleri, \"Pastoral\" kelimesinin kökü \"pastör=çoban\".",
+    "pattern": "^Pastoral$|\\\\\\\\bpastoral şiir[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bpastoral \\\\\\\\(doğa\\\\\\\\)"
+  },
+  {
+    "id": "tde1_didaktik_siir",
+    "term": "Didaktik Şiir",
+    "sayfa": 91,
+    "tanim": "**Öğüt, ders veya bilgi** vermek amacıyla yazılan öğretici şiirdir; bir öğretmenin dersi şiirle anlatması gibi.\n💡 Sınav Şifresi: \"Öğretmek + nasihat\" → didaktik. Yusuf Has Hacip'in Kutadgu Bilig'i, fabllar, manzum nasihatler.",
+    "pattern": "^Didaktik$|\\\\\\\\bdidaktik şiir[a-zçğıöşü]*\\\\\\\\b|didaktik türde"
+  },
+  {
+    "id": "tde1_satirik_siir",
+    "term": "Satirik Şiir",
+    "sayfa": 92,
+    "tanim": "Kişi veya toplumun **kusurlarını mizah ve yergiyle** eleştiren şiirdir; sosyal medyadaki hicivli caps'lerin edebî hâli gibi.\n💡 Sınav Şifresi: \"Eleştiri + güldürme\" → satirik. Halkta \"taşlama\", divanda \"hicviye\". Neyzen Tevfik, Seyrani.",
+    "pattern": "^Satirik$|\\\\\\\\bsatirik şiir[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bsatirik \\\\\\\\(yergici\\\\\\\\)"
+  },
+  {
+    "id": "tde1_siir",
+    "term": "Şiir (Manzume)",
+    "sayfa": 66,
+    "tanim": "Duygu, hayal ve düşüncelerin **ahenkli dizeler** hâlinde estetik bir dille ifadesidir; kelimelerin bir orkestra gibi ritimle buluşması.\n💡 Sınav Şifresi: \"Ölçü + kafiye + dize\" üçlüsü → şiir. Düz yazıdan farkı: ahenk ve ritim.",
+    "pattern": "\\\\\\\\bşiir[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bmanzume[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_redif",
+    "term": "Redif",
+    "sayfa": 76,
+    "tanim": "Dize sonunda kafiyeden **sonra** gelen, yazılışı-anlamı-görevi **aynı** olan ek veya sözcük tekrarlarıdır; nakarattaki tekrar eden kelime gibi.\n💡 Sınav Şifresi: \"Kafiyeden sonra + aynı görev\" → redif. Sadece yazılış değil, ANLAM ve GÖREV de aynı olmalı.",
+    "pattern": "\\\\\\\\bredif[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_kafiye",
+    "term": "Kafiye (Uyak)",
+    "sayfa": 78,
+    "tanim": "Dize sonlarında **görevleri farklı** ses benzerlikleridir; iki farklı kelimenin son harflerinin kulağa hoş gelmesi gibi.\n💡 Sınav Şifresi: \"Ses benzerliği + farklı görev\" → kafiye. Redifle karıştırma: redifte görev aynı, kafiyede farklı.",
+    "pattern": "\\\\\\\\bkafiye[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\buyak[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_tam_kafiye",
+    "term": "Tam Kafiye",
+    "sayfa": 79,
+    "tanim": "Dize sonlarında **iki ses** (genelde bir ünlü + bir ünsüz) benzeşiyorsa tam kafiyedir; tıpkı iki mikroçipin aynı iki pinle birbirine kilitlenmesi gibi.\n💡 Sınav Şifresi: 'İki ses = tam' — ünlü+ünsüz ikilisi (ör. -an/-an) yakalarsan işaretle.",
+    "pattern": "tam kafiye[a-zçğıöşü]*|tam uyak[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_yarim_kafiye",
+    "term": "Yarım Kafiye",
+    "sayfa": 79,
+    "tanim": "Dize sonlarında yalnızca **tek bir ünsüz** benzeşiyorsa yarım kafiyedir; iki kapının sadece tek anahtarla açılması gibi en zayıf ses uyumudur.\n💡 Sınav Şifresi: 'Tek ünsüz = yarım' — sadece sessiz harf eşleşmesi varsa (ör. -k/-k) yarım kafiye.",
+    "pattern": "yarım kafiye[a-zçğıöşü]*|yarim kafiye[a-zçğıöşü]*|yarım uyak[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_zengin_kafiye",
+    "term": "Zengin Kafiye",
+    "sayfa": 80,
+    "tanim": "Dize sonlarında **üç veya daha fazla ses** benzeşiyorsa zengin kafiyedir; GPS'in üç uyduyla konum bulması gibi, ne kadar çok ses eşleşirse o kadar 'zengin' sayılır.\n💡 Sınav Şifresi: 'Üç ve fazlası = zengin' — ünlü+ünsüz+ünsüz gibi üçlü eşleşme (ör. -an/-an/-an değil, -âne/-âne) görürsen zengin.",
+    "pattern": "zengin kafiye[a-zçğıöşü]*|zengin uyak[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_cinasli_kafiye",
+    "term": "Cinaslı Kafiye",
+    "sayfa": 81,
+    "tanim": "Dize sonlarında **yazılışı aynı ama anlamı farklı** sesteş sözcüklerle yapılan kafiyedir; 'yüz' (surat) ile 'yüz' (sayı) gibi, aynı kelime iki farklı kimlikle karşımıza çıkar.\n💡 Sınav Şifresi: 'Aynı yazılış, farklı anlam' — sesteşlik (cinas) varsa işaretle; ses benzerliği değil anlam oyunu aranır.",
+    "pattern": "cinaslı kafiye[a-zçğıöşü]*|cinasli kafiye[a-zçğıöşü]*|cinaslı uyak[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_hece_olcusu",
+    "term": "Hece Ölçüsü",
+    "sayfa": 72,
+    "tanim": "Dizelerdeki **hece sayısının eşitliğine** dayanan, Yunus Emre'den türkülere uzanan **millî ölçümüzdür**; her dize aynı sayıda hece taşıyan eşit uzunlukta tuğlalar gibidir.\n💡 Sınav Şifresi: 'Hece say = eşitlik' — dizeleri parmakla say, hepsi aynı çıkıyorsa hece ölçüsü (7'li, 8'li, 11'li gibi).",
+    "pattern": "hece ölçüsü[a-zçğıöşü]*|hece olcusu[a-zçğıöşü]*|heceyle yazılmış"
+  },
+  {
+    "id": "tde1_aruz_olcusu",
+    "term": "Aruz Ölçüsü",
+    "sayfa": 73,
+    "tanim": "Hecelerin **açık (kısa) ve kapalı (uzun)** değerlerine göre kurulan, divan şiirinin ölçüsüdür; Harezmi'nin ritmik hesapları gibi heceleri uzun-kısa kalıplara dizer.\n💡 Sınav Şifresi: 'Açık-kapalı = aruz' — 'fâilâtün, mefâîlün' gibi kalıp adları görürsen aruz; hece sayısı değil hece değeri önemli.",
+    "pattern": "aruz ölçüsü[a-zçğıöşü]*|aruz olcusu[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_serbest_olcu",
+    "term": "Serbest Ölçü",
+    "sayfa": 74,
+    "tanim": "Hece sayısı ya da aruz kalıbı gibi **hiçbir ölçü kuralına bağlı kalmadan** yazılan çağdaş şiir tarzıdır; modern caz doğaçlaması gibi şair kendi ritmini kendisi kurar.\n💡 Sınav Şifresi: 'Kural yok = serbest' — dizelerde ne hece eşitliği ne kalıp varsa, düzensiz uzunluklar görürsen serbest ölçü.",
+    "pattern": "serbest ölçü[a-zçğıöşü]*|serbest olcu[a-zçğıöşü]*|serbest nazım"
+  },
+  {
+    "id": "tde1_bent",
+    "term": "Bent",
+    "sayfa": 71,
+    "tanim": "Şiirde **üç veya daha fazla dizenin** bir araya gelmesiyle oluşan bağımsız nazım birimidir; bir takımın üç-beş oyuncudan kurulması gibi esnek sayıda dize bir araya gelir.\n💡 Sınav Şifresi: 'Üç ve fazlası dize = bent' — dörtlükten farkı: sayı 3, 5, 6... olabilir; divan ve halk şiirinde kullanılır.",
+    "pattern": "\\\\\\\\bbent[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_beyit",
+    "term": "Beyit",
+    "sayfa": 69,
+    "tanim": "**İki dizeden** oluşan ve kendi içinde anlam bütünlüğü taşıyan divan nazım birimidir; iki kişilik bir diyalog gibi iki dize birbirini tamamlar.\n💡 Sınav Şifresi: 'İki dize = beyit' — divan şiirinin temel birimi; anlam genelde ikinci dizede tamamlanır (ör. gazel, kaside).",
+    "pattern": "\\\\\\\\bbeyit[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_dortluk",
+    "term": "Dörtlük",
+    "sayfa": 70,
+    "tanim": "**Dört dizeden** oluşan ve halk şiirinin temelini teşkil eden nazım birimidir; koşma, mani, türkü hep bu dörtlük kalıbı üzerine kurulur.\n💡 Sınav Şifresi: 'Dört dize = dörtlük' — halk şiiri (koşma, semai, varsağı) denince akla dörtlük gelir; beyitle karıştırma.",
+    "pattern": "\\\\\\\\bdörtlük[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bdortluk[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_dize",
+    "term": "Dize (Mısra)",
+    "sayfa": 68,
+    "tanim": "Şiirin **satır halindeki en küçük yapı ve ahenk birimidir**; bir binanın tek bir tuğlası gibi şiirin en küçük yapı taşıdır.\n💡 Sınav Şifresi: 'Satır = dize (mısra)' — 'mısra' ile eş anlamlı; beyit 2, dörtlük 4 dizeden oluşur.",
+    "pattern": "\\\\\\\\bdize[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bmısra[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bmisra[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_mahlas",
+    "term": "Mahlas",
+    "sayfa": 94,
+    "tanim": "Şairlerin şiirlerinde gerçek adları yerine kullandıkları **takma addır**; sosyal medyadaki kullanıcı adı gibi şairin edebiyat dünyasındaki kimliğidir (divan şiirinde genelde son beyitte geçer).\n💡 Sınav Şifresi: 'Takma ad = mahlas' — divan şiirinde son beyitte şairin kendini andığı isim; 'tapşırma' halk şiirindeki karşılığıdır.",
+    "pattern": "\\\\\\\\bmahlas[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_tapsirma",
+    "term": "Tapşırma",
+    "sayfa": 94,
+    "tanim": "Âşık, **son dörtlükte** adını/mahlasını söyleyerek eserin kendisine ait olduğunu imzalar; tıpkı bir ressamın tablosunun köşesine imza atması gibi.\n💡 Sınav Şifresi: \"Son dörtlük + şairin adı/mahlası\" → Tapşırma. Diğer dörtlüklerde ad geçmez, sadece sonda.",
+    "pattern": "\\\\\\\\btapşırma[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\btapsirma[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_soyleyici",
+    "term": "Söyleyici",
+    "sayfa": 96,
+    "tanim": "Şiirde konuşan **kurgusal ses**tir; şairin kendisi değil, sahnedeki oyuncu gibi düşünülmelidir.\n💡 Sınav Şifresi: \"Şair ≠ söyleyici\". Şiirdeki 'ben' her zaman gerçek şair değildir; kurgusal öznedir.",
+    "pattern": "\\\\\\\\bsöyleyici[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bsoyleyici[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_roman",
+    "term": "Roman",
+    "sayfa": 35,
+    "tanim": "Olayları **geniş ve ayrıntılı** bir kurguyla, kişi-zaman-mekân üçlüsüne bağlayarak anlatan **uzun** edebî türdür; bir dizinin sezonlarca süren detaylı anlatımı gibi.\n💡 Sınav Şifresi: \"Uzun + ayrıntılı + geniş zaman dilimi\" → Roman. Hikâyeden farkı: kapsam ve detay.",
+    "pattern": "\\\\\\\\broman[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_hikaye",
+    "term": "Hikâye (Öykü)",
+    "sayfa": 36,
+    "tanim": "Olayları kişi-zaman-mekâna bağlayarak anlatan **kısa** edebî türdür; romana göre tek bir olay/kesit üzerine yoğunlaşır, bir fotoğraf karesi gibi.\n💡 Sınav Şifresi: \"Kısa + tek olay/kesit\" → Hikâye. Romanın küçük kardeşi; detay az, kapsam dar.",
+    "pattern": "\\\\\\\\bhikâye[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bhikaye[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\böykü[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_masal",
+    "term": "Masal",
+    "sayfa": 110,
+    "tanim": "Zaman-mekân **belirsiz**, olağanüstü olay ve kahramanların yer aldığı, **tekerlemeyle** başlayan anonim halk anlatısıdır; 'Evvel zaman içinde...' diye başlayan büyülü dünya.\n💡 Sınav Şifresi: \"Tekerleme + belirsiz zaman/mekân + olağanüstülük + anonim\" → Masal. Dört şart birlikte aranır.",
+    "pattern": "\\\\\\\\bmasal[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_fabl",
+    "term": "Fabl",
+    "sayfa": 120,
+    "tanim": "Hayvan veya bitkilerin **konuşturulmasıyla** insanlara ahlaki ders veren **alegorik** anlatıdır; La Fontaine'in karga-tilki hikâyesi gibi.\n💡 Sınav Şifresi: \"Hayvan/bitki konuşur + ahlaki ders + alegori\" → Fabl. Kahramanlar insan değil, ders var.",
+    "pattern": "\\\\\\\\bfabl[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_makale",
+    "term": "Makale",
+    "sayfa": 39,
+    "tanim": "Bir tezi **kanıt ve belgeyle** savunan, **nesnel** dille yazılan bilimsel düşünce yazısıdır; bir bilim insanının laboratuvar raporu gibi soğukkanlı ve kanıta dayalı.\n💡 Sınav Şifresi: \"Kanıt + belge + nesnel dil + tez savunma\" → Makale. Denemeden farkı: kanıtlama zorunluluğu var.",
+    "pattern": "\\\\\\\\bmakale[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_deneme",
+    "term": "Deneme",
+    "sayfa": 38,
+    "tanim": "Yazarın bir konuda kişisel görüşlerini **kanıtlama zorunluluğu duymadan**, samimi ve serbest bir dille anlattığı türdür; bir arkadaşla sohbet eder gibi.\n💡 Sınav Şifresi: \"Kanıt yok + samimi + kişisel görüş + serbest\" → Deneme. Makaleden farkı: ispat kaygısı yok.",
+    "pattern": "\\\\\\\\bdeneme[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_fikra",
+    "term": "Fıkra (Köşe Yazısı)",
+    "sayfa": 40,
+    "tanim": "Gazete/dergilerde **güncel** konuların kanıtlama kaygısı güdülmeden samimi bir dille yorumlandığı **köşe yazısı**dır; sosyal medyadaki güncel yorum paylaşımı gibi.\n💡 Sınav Şifresi: \"Gazete + güncel konu + köşe yazısı + kanıt yok\" → Fıkra. Denemeden farkı: güncellik ve gazete mecrası.",
+    "pattern": "\\\\\\\\bfıkra[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bfikra[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bköşe yazısı\\\\\\\\b"
+  },
+  {
+    "id": "tde1_ani",
+    "term": "Anı (Hatıra)",
+    "sayfa": 142,
+    "tanim": "Kişinin **bizzat yaşadığı** ya da tanık olduğu olayları, aradan zaman geçtikten sonra **hafızasına dayanarak** anlattığı yazı türüdür; sinemadaki flashback (geri dönüş) sahnesi gibi.\n💡 Sınav Şifresi: \"Yaşanmış + tanık olunmuş + aradan zaman geçmiş + hafıza\" → Anı. Günlükten farkı: sonradan yazılır.",
+    "pattern": "^Anı$|\\\\\\\\banı türü\\\\\\\\b|\\\\\\\\banılar\\\\\\\\b|\\\\\\\\bhatıra[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_gezi_yazisi",
+    "term": "Gezi Yazısı",
+    "sayfa": 143,
+    "tanim": "Gezilip görülen yerlerin tarihî, coğrafi ve kültürel özelliklerinin edebî dille anlatıldığı türdür; bir vlog gibi ama yazılı ve edebî (eski adı **seyahatname**).\n💡 Sınav Şifresi: \"Gezilen yer + tarih/coğrafya/kültür + edebî dil\" → Gezi yazısı. Anahtar kelime: seyahatname.",
+    "pattern": "gezi yazısı[a-zçğıöşü]*|gezi yazisi[a-zçğıöşü]*|seyahatname[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_mulakat",
+    "term": "Mülakat (Görüşme)",
+    "sayfa": 144,
+    "tanim": "Alanında **uzman/tanınmış** kişilerle kamuoyunu aydınlatmak için yapılan **soru-cevap**lı görüşme türüdür; bir podcast röportajı gibi.\n💡 Sınav Şifresi: \"Uzman kişi + soru-cevap + kamuoyunu bilgilendirme\" → Mülakat. Anahtar: karşılıklı soru-cevap.",
+    "pattern": "\\\\\\\\bmülakat[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bmulakat[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_elestiri",
+    "term": "Eleştiri (Tenkit)",
+    "sayfa": 41,
+    "tanim": "Bir eserin **iyi ve kötü yanlarını** ortaya koyup değerini belirleyen, adeta esere **dijital puan veren** öğretici yazı türüdür.\n💡 Sınav Şifresi: 'İyi-kötü yanlarını ortaya koyma' + 'değer belirleme' = Eleştiri; sadece övmek veya sadece yermek eleştiri değildir.",
+    "pattern": "\\\\\\\\beleştiri[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\belestiri[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\btenkit[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_karagoz",
+    "term": "Karagöz (Gölge Oyunu)",
+    "sayfa": 128,
+    "tanim": "**Manda derisinden** yapılan tasvirlerin perde arkasından ışıkla yansıtılarak oynatıldığı, Osmanlı'nın **sinema öncesi animasyonu** sayılan geleneksel gölge oyunudur.\n💡 Sınav Şifresi: 'Manda derisi' + 'perde arkası' + 'ışık yansıtma' = Karagöz; perde önünde oynanan meddah ile karıştırma.",
+    "pattern": "\\\\\\\\bkaragöz[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bkaragoz[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_edebi_metin",
+    "term": "Edebî Metin",
+    "sayfa": 14,
+    "tanim": "**Estetik haz** amacıyla kurmaca bir dünyada oluşturulan, öznel ve **çağrışıma açık** edebiyat ürünüdür; tıpkı bir ressamın tuvaline duygusunu sızdırması gibi.\n💡 Sınav Şifresi: 'Estetik haz' + 'kurmaca' + 'öznel/çağrışım' = Edebî metin; bilgi verme amacı varsa öğretici metne kayar.",
+    "pattern": "edebî metin[a-zçğıöşü]*|edebi metin[a-zçğıöşü]*|sanatsal metin[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_ogretici_metin",
+    "term": "Öğretici Metin",
+    "sayfa": 15,
+    "tanim": "Okuyucuya **bilgi vermek, açıklamak veya kanıtlamak** amacıyla **nesnel** bir dille yazılan metinlerdir (makale, deneme, tarihî metin vb.); bir ders kitabı gibi.\n💡 Sınav Şifresi: 'Bilgi verme' + 'nesnel dil' + 'kanıtlama' = Öğretici metin; estetik haz ön plandaysa edebî metindir.",
+    "pattern": "öğretici metin[a-zçğıöşü]*|ogretici metin[a-zçğıöşü]*|bilgi verici metin[a-zçğıöşü]*|bilgi vermek amacıyla"
+  },
+  {
+    "id": "tde1_oykuleyici_anlatim",
+    "term": "Öyküleyici Anlatım (Öyküleme)",
+    "sayfa": 51,
+    "tanim": "Olayların **kişi, zaman ve mekâna** bağlanarak hareket halinde, **film şeridi gibi** aktarıldığı anlatım biçimidir.\n💡 Sınav Şifresi: 'Olay' + 'kişi-zaman-mekân' + 'hareket' = Öyküleme; duran bir manzara varsa betimlemeye kayar.",
+    "pattern": "öyküleyici anlatım[a-zçğıöşü]*|oykuleyici anlatim[a-zçğıöşü]*|^Öyküleyici$|\\\\\\\\böyküleme[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_betimleyici_anlatim",
+    "term": "Betimleyici Anlatım (Betimleme)",
+    "sayfa": 51,
+    "tanim": "Varlıkların **renk, biçim ve niteliklerinin** kelimelerle **resim çizer gibi** zihinde canlandırıldığı anlatım biçimidir; fotoğraf karesi gibi durur.\n💡 Sınav Şifresi: 'Renk-biçim-nitelik' + 'resim çizer gibi' = Betimleme; hareket/olay varsa öykülemeye kayar.",
+    "pattern": "betimleyici anlatım[a-zçğıöşü]*|^Betimleyici$|\\\\\\\\bbetimleme[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_aciklayici_anlatim",
+    "term": "Açıklayıcı Anlatım (Açıklama)",
+    "sayfa": 16,
+    "tanim": "Okuyucuya **bilgi vermek ve öğretmek** amacıyla kullanılan **nesnel** anlatım biçimidir; bir Wikipedia maddesi gibi tarafsız.\n💡 Sınav Şifresi: 'Bilgi verme' + 'öğretme' + 'nesnel' = Açıklama; yazar kendi görüşünü savunuyorsa tartışmacıya kayar.",
+    "pattern": "açıklayıcı anlatım[a-zçğıöşü]*|^Açıklayıcı$|\\\\\\\\baçıklama yapılmıştır\\\\\\\\b"
+  },
+  {
+    "id": "tde1_tartismaci_anlatim",
+    "term": "Tartışmacı Anlatım (Tartışma)",
+    "sayfa": 17,
+    "tanim": "Okuyucunun **yerleşik kanısını değiştirmek** veya kendi görüşünü kabul ettirmek amacıyla **soru-cevap** tekniğiyle kurulan anlatım biçimidir; bir avukatın savunması gibi.\n💡 Sınav Şifresi: 'Kanı değiştirme' + 'kabul ettirme' + 'soru-cevap' = Tartışma; sadece bilgi veriyorsa açıklamaya kayar.",
+    "pattern": "tartışmacı anlatım[a-zçğıöşü]*|^Tartışmacı$"
+  },
+  {
+    "id": "tde1_tanimlama",
+    "term": "Tanımlama",
+    "sayfa": 25,
+    "tanim": "**'Bu nedir?' veya 'Bu kimdir?'** sorusuna cevap veren, bir kavramın temel niteliklerini bildiren düşünceyi geliştirme yoludur; sözlük maddesi gibi.\n💡 Sınav Şifresi: 'Nedir/Kimdir?' sorusu + 'temel nitelik' = Tanımlama; örnek veriyorsa örneklendirmeye kayar.",
+    "pattern": "^Tanımlama$|\\\\\\\\btanımlama yapılmıştır\\\\\\\\b"
+  },
+  {
+    "id": "tde1_ornekleme",
+    "term": "Örneklendirme (Örnekleme)",
+    "sayfa": 25,
+    "tanim": "**Soyut bir düşünceyi somutlaştırmak** ve anlaşılır kılmak için örneklerden yararlanma yoludur; 'mesela', 'örneğin' ifadeleriyle belirir.\n💡 Sınav Şifresi: 'Soyutu somutlaştırma' + 'örneğin/mesela' = Örneklendirme; tanım yapıyorsa tanımlamaya kayar.",
+    "pattern": "^Örneklendirme$|^Örnekleme$|\\\\\\\\börneklemeye yer verilmiştir\\\\\\\\b"
+  },
+  {
+    "id": "tde1_tanik_gosterme",
+    "term": "Tanık Gösterme",
+    "sayfa": 26,
+    "tanim": "İleri sürülen düşünceyi inandırıcı kılmak için **alanında tanınan yetkin bir kişinin** görüşüne ve sözüne **doğrudan** yer verme yoludur; bir davada bilirkişi çağırmak gibi.\n💡 Sınav Şifresi: 'Yetkin kişi' + 'doğrudan alıntı' + 'inandırıcılık' = Tanık gösterme; sadece atasözü varsa 'atasözünden yararlanma' olur.",
+    "pattern": "^Tanık gösterme$|tanık gösterme[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_karsilastirma",
+    "term": "Karşılaştırma",
+    "sayfa": 26,
+    "tanim": "Birden çok varlık, kavram veya düşünce arasındaki **benzerlik ve farkları** ortaya koyma yoludur; iki telefonun özelliklerini yan yana koymak gibi.\n💡 Sınav Şifresi: 'Benzerlik' + 'fark' + 'en az iki varlık' = Karşılaştırma; tek varlığın nitelikleri varsa betimlemeye kayar.",
+    "pattern": "^Karşılaştırma$|karşılaştırma[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_teshis",
+    "term": "Teşhis (Kişileştirme)",
+    "sayfa": 124,
+    "tanim": "İnsana ait özellikleri (gülmek, ağlamak, küsmesin) insan dışındaki varlıklara verme sanatıdır; sanki rüzgâr \"iç çekiyor\", çiçek \"boynunu büküyor\".\n💡 Sınav Şifresi: \"İnsan dışına insan özelliği\" = teşhis; konuşma yoksa sadece teşhistir, konuşma varsa intakla birlikte gelir.",
+    "pattern": "^Teşhis$|\\\\\\\\bteşhis sanatı\\\\\\\\b|\\\\\\\\bkişileştirme[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_intak",
+    "term": "İntak (Konuşturma)",
+    "sayfa": 125,
+    "tanim": "İnsan dışındaki varlıkları konuşturma sanatıdır; tilkinin \"karga kardeş\" demesi gibi. Her intakta mutlaka teşhis de vardır ama her teşhiste intak yoktur.\n💡 Sınav Şifresi: \"Konuşma (tırnak içi söz)\" varsa intak; intak = teşhis + konuşturma, yani daha geniş olan.",
+    "pattern": "^İntak$|\\\\\\\\bintak sanatı\\\\\\\\b|\\\\\\\\bkonuşturma[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_tesbih",
+    "term": "Teşbih (Benzetme)",
+    "sayfa": 126,
+    "tanim": "Aralarında ilgi olan iki şeyden zayıf olanı güçlü olana benzetme sanatıdır; \"yiğit aslan gibi\" derken aslan güçlü, yiğit zayıf taraftır.\n💡 Sınav Şifresi: \"Gibi, kadar, sanki\" benzetme edatı + dört unsur (benzeyen, kendisine benzetilen, benzetme yönü, edat) varsa teşbih.",
+    "pattern": "^Teşbih$|^Benzetme$|\\\\\\\\bbenzetmeye yer verilmiştir\\\\\\\\b"
+  },
+  {
+    "id": "tde1_tezat",
+    "term": "Tezat (Karşıtlık)",
+    "sayfa": 128,
+    "tanim": "Birbirine zıt iki kavramı yan yana getirerek anlamı güçlendirme sanatıdır; \"ağlarım hatıra geldikçe gülüştüklerimiz\" gibi.\n💡 Sınav Şifresi: \"Zıt kelimeler bir arada\" (gece-gündüz, ağlamak-gülmek) görürsen tezat; karşıtlık = tezat.",
+    "pattern": "^Tezat$|\\\\\\\\btezat sanatı\\\\\\\\b|\\\\\\\\bkarşıtlık sanatı\\\\\\\\b"
+  },
+  {
+    "id": "tde1_husnutalil",
+    "term": "Hüsnütalil (Güzel Neden Bulma)",
+    "sayfa": 129,
+    "tanim": "Gerçek bir olayı hayali ve güzel bir nedene bağlama sanatıdır; \"gül, Peygamber'in terinden doğdu\" denmesi gibi.\n💡 Sınav Şifresi: \"Gerçek olay + hayali/güzel sebep\" = hüsnütalil; \"güzel neden bulma\" adı zaten şifredir.",
+    "pattern": "^Hüsnütalil$|\\\\\\\\bhüsnütalil\\\\\\\\b|\\\\\\\\bhüsn-i talil\\\\\\\\b"
+  },
+  {
+    "id": "tde1_mubalaga",
+    "term": "Mübalağa (Abartma)",
+    "sayfa": 127,
+    "tanim": "Bir durumu olduğundan çok büyük ya da çok küçük gösterme sanatıdır; \"bir of çeksem karşıki dağlar yıkılır\" gibi.\n💡 Sınav Şifresi: \"Abartma\" = mübalağa; ölçüsüz büyütme/küçültme varsa işaretle.",
+    "pattern": "^Mübalağa$|\\\\\\\\bmübalağa\\\\\\\\b|\\\\\\\\babartma sanatı\\\\\\\\b"
+  },
+  {
+    "id": "tde1_letaif_i_rivayat",
+    "term": "Letâif-i Rivâyat",
+    "sayfa": 52,
+    "tanim": "Ahmet Mithat Efendi'nin 1870'te yazdığı, Türk edebiyatındaki **ilk yerli hikâye serisi**dir; halkı eğitmek için kaleme alınmıştır.\n💡 Sınav Şifresi: \"İlk yerli hikâye serisi\" = Ahmet Mithat = Letâif-i Rivâyat; üçlü kodla aklında tut.",
+    "pattern": "letâif-i rivâyat[a-zçğıöşü]*|letaif-i rivayat[a-zçğıöşü]*|letaifi rivayat"
+  },
+  {
+    "id": "tde1_kucuk_seyler",
+    "term": "Küçük Şeyler",
+    "sayfa": 52,
+    "tanim": "Samipaşazade Sezai'nin 1891'de yazdığı, Türk edebiyatında **Batılı anlamdaki ilk modern gerçekçi hikâye** kitabıdır.\n💡 Sınav Şifresi: \"Batılı/modern ilk hikâye\" = Küçük Şeyler = Samipaşazade Sezai; Letâif ile karıştırma (o ilk yerli seridir).",
+    "pattern": "küçük şeyler|kucuk seyler"
+  },
+  {
+    "id": "tde1_decameron",
+    "term": "Decameron",
+    "sayfa": 54,
+    "tanim": "İtalyan Boccaccio'nun 14. yüzyılda yazdığı, **dünya edebiyatında ilk modern hikâye** kabul edilen eserdir; veba günlerinde anlatılan 100 hikâye.\n💡 Sınav Şifresi: \"Dünya edebiyatında ilk modern hikâye\" = Decameron = Boccaccio; İtalyan + 14. yy kodla.",
+    "pattern": "\\\\\\\\bdecameron\\\\\\\\b"
+  },
+  {
+    "id": "tde1_kelile_ve_dimne",
+    "term": "Kelile ve Dimne",
+    "sayfa": 122,
+    "tanim": "Hint filozofu Beydeba'nın Sanskritçe yazdığı, hayvan hikâyeleriyle ders veren **Doğu edebiyatının ilk fabl şaheseri**dir.\n💡 Sınav Şifresi: \"Doğu + fabl + Beydeba\" = Kelile ve Dimne; iki çakalın adıdır, unutma.",
+    "pattern": "kelile ve dimne|pançatantra"
+  },
+  {
+    "id": "tde1_binbir_gece",
+    "term": "Binbir Gece Masalları",
+    "sayfa": 115,
+    "tanim": "Şehrazat'ın hükümdar Şehriyar'a her gece bir masal anlatarak ölümden kurtulduğu, **Doğu'nun anonim masal külliyatı**dır.\n💡 Sınav Şifresi: \"Şehrazat + Şehriyar\" = Binbir Gece; anonim + masal + Doğu üçlüsü şifredir.",
+    "pattern": "binbir gece masalları|binbir gece"
+  },
+  {
+    "id": "tde1_gurbet_hikayeleri",
+    "term": "Gurbet Hikâyeleri",
+    "sayfa": 40,
+    "tanim": "Refik Halit Karay'ın sürgün yıllarında Anadolu ve Suriye/Lübnan gözlemlerini yansıttığı, **Maupassant tarzı (olay hikâyesi)** klasik kitabıdır.\n💡 Sınav Şifresi: \"Gurbet = sürgün + Anadolu\" = Refik Halit; Maupassant tarzı (olay) hikâye kodla.",
+    "pattern": "gurbet hikâyeleri|gurbet hikayeleri"
+  },
+  {
+    "id": "tde1_son_kuslar",
+    "term": "Son Kuşlar",
+    "sayfa": 43,
+    "tanim": "Sait Faik'in **Adalar'da yaşayan sıradan insanları, doğayı ve kuşları** anlattığı, olaydan çok **anlık bir kesiti** yakalayan durum hikâyeleri kitabı.\n💡 Sınav Şifresi: **Sait Faik + kuş/adalar/doğa** = 'Son Kuşlar'; 'olay değil kesit' vurgusu Çehov tarzının anahtarıdır.",
+    "pattern": "son kuşlar|son kuslar"
+  },
+  {
+    "id": "tde1_dede_korkut",
+    "term": "Dede Korkut Hikâyeleri",
+    "sayfa": 36,
+    "tanim": "**Destandan halk hikâyeciliğine geçişin ilk köprüsü** olan, **nazım-nesir karışık 12 hikâye + 1 önsöz**den oluşan Oğuz boylarının millî şaheseri.\n💡 Sınav Şifresi: **'12 hikâye + önsöz'** ve **'nazım-nesir karışık'** ifadeleri Dede Korkut'u diğer destanlardan ayıran kodlardır.",
+    "pattern": "dede korkut[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_gul_yetistiren_adam",
+    "term": "Gül Yetiştiren Adam",
+    "sayfa": 50,
+    "tanim": "Rasim Özdenören'in **geleneksel-manevi değerler ile modern yabancılaşma**nın çatışmasını bir gül metaforu üzerinden anlattığı romanı.\n💡 Sınav Şifresi: **Rasim Özdenören + gül + yabancılaşma** üçlüsü; 'Doğu-Batı çatışması' anahtar kavramdır.",
+    "pattern": "gül yetiştiren adam|gul yetistiren adam"
+  },
+  {
+    "id": "tde1_denize_acilan_kapi",
+    "term": "Denize Açılan Kapı",
+    "sayfa": 51,
+    "tanim": "Rasim Özdenören'in **tasavvufi ve varoluşsal arayış**ları işlediği hikâye kitabı; kapı ve deniz sembolleriyle iç dünyaya açılan bir yolculuk.\n💡 Sınav Şifresi: **Rasim Özdenören'in hikâye kitabı** = 'Denize Açılan Kapı'; romanıyla karıştırma, bu **hikâye**dir.",
+    "pattern": "denize açılan kapı|denize acilan kapi"
+  },
+  {
+    "id": "tde1_kaplumbaga_terbiyecisi",
+    "term": "Kaplumbağa Terbiyecisi",
+    "sayfa": 18,
+    "tanim": "Osman Hamdi Bey'in 1906'da yaptığı, **sabır ve eğitimi** kaplumbağalara terbiye veren bir figürle simgeleyen, Türk resminin en ikonik tablosu.\n💡 Sınav Şifresi: **Osman Hamdi Bey + 1906 + kaplumbağa** = sabır/eğitim sembolü; ressam adı sorulursa cevap kesin Osman Hamdi.",
+    "pattern": "kaplumbağa terbiyecisi|kaplumbaga terbiyecisi"
+  },
+  {
+    "id": "tde1_orhun_kitabeleri",
+    "term": "Orhun Kitabeleri (Göktürk Yazıtları)",
+    "sayfa": 33,
+    "tanim": "8. yüzyılda dikilen, **Türk adının geçtiği ilk yazılı belgeler** olan Tonyukuk, Kül Tigin ve Bilge Kağan abidelerinden oluşan Göktürk Yazıtları.\n💡 Sınav Şifresi: **'İlk yazılı belge' + 'Türk adı geçen ilk metin'** = Orhun; üç abide adı (Tonyukuk-Kül Tigin-Bilge Kağan) kodla.",
+    "pattern": "orhun kitabeleri|göktürk kitabeleri"
+  },
+  {
+    "id": "tde1_ahmet_mithat",
+    "term": "Ahmet Mithat Efendi",
+    "sayfa": 52,
+    "tanim": "Tanzimat 1. Dönem'in **halk için yazan** yazarı; 200'den fazla eserle okuma alışkanlığı kazandırmış, ilk yerli hikâye **'Letâif-i Rivâyat'**ın sahibi.\n💡 Sınav Şifresi: **'Halk için yazan / 200+ eser / Letâif-i Rivâyat'** üçlüsü Ahmet Mithat'ı işaret eder; 'ilk yerli hikâye' vurgusu kritik.",
+    "pattern": "ahmet mithat efendi|ahmet mithat"
+  },
+  {
+    "id": "tde1_samipasazade_sezai",
+    "term": "Samipaşazade Sezai",
+    "sayfa": 52,
+    "tanim": "Tanzimat 2. Dönem yazarı; **Batılı anlamda ilk hikâye 'Küçük Şeyler'** ve kölelik temalı **'Sergüzeşt'** romanının sahibi.\n💡 Sınav Şifresi: **'Küçük Şeyler' = Batılı ilk hikâye**, **'Sergüzeşt' = kölelik romanı**; iki eser adı da Samipaşazade Sezai'ye kilitlidir.",
+    "pattern": "samipaşazade sezai|samipasazade sezai"
+  },
+  {
+    "id": "tde1_omer_seyfettin",
+    "term": "Ömer Seyfettin",
+    "sayfa": 39,
+    "tanim": "Millî Edebiyat'ın **Maupassant tarzı (olay) hikâyeciliğinin kurucu ustası**; sürpriz sonlu, serim-düğüm-çözüm planına sıkı sıkıya bağlı hikâyeler yazar.\n💡 Sınav Şifresi: **'Maupassant tarzı / olay hikâyesi / sürpriz son'** = Ömer Seyfettin; Sait Faik'le (durum) karıştırma.",
+    "pattern": "ömer seyfettin|omer seyfettin"
+  },
+  {
+    "id": "tde1_sait_faik",
+    "term": "Sait Faik Abasıyanık",
+    "sayfa": 43,
+    "tanim": "Cumhuriyet Dönemi'nin **Çehov tarzı (durum) hikâyesinin** en büyük temsilcisi; serim-düğüm-çözüm planını bozar, günlük yaşamdan bir **kesit** sunar.\n💡 Sınav Şifresi: **'Durum hikâyesi / Çehov tarzı / kesit'** = Sait Faik; 'olay yok, an var' cümlesi onu Ömer Seyfettin'den ayırır.",
+    "pattern": "sait faik abasıyanık|sait faik"
+  },
+  {
+    "id": "tde1_refik_halit",
+    "term": "Refik Halit Karay",
+    "sayfa": 40,
+    "tanim": "Millî Edebiyat yazarı; **'Memleket Hikâyeleri'** ile Anadolu'yu, **'Gurbet Hikâyeleri'** ile Orta Doğu'yu hikâyeye taşıyan **olay hikâyesi** ustası.\n💡 Sınav Şifresi: **'Memleket + Gurbet'** ikilisi = Refik Halit; 'Anadolu'yu ilk kez hikâyeye taşıyan' ifadesi onun imzasıdır.",
+    "pattern": "refik halit karay|refik halit"
+  },
+  {
+    "id": "tde1_sabahattin_ali",
+    "term": "Sabahattin Ali",
+    "sayfa": 42,
+    "tanim": "Cumhuriyet Dönemi'nin **toplumcu gerçekçi** yazarı; Anadolu insanının dramını ve psikolojisini **'Değirmen'** ve **'Kamyon'** hikâyeleriyle işler.\n💡 Sınav Şifresi: **'Toplumcu gerçekçi + Anadolu insanı + Değirmen/Kamyon'** = Sabahattin Ali; 'Kürk Mantolu Madonna' romanı da onun imzasıdır.",
+    "pattern": "sabahattin ali"
+  },
+  {
+    "id": "tde1_boccaccio",
+    "term": "Giovanni Boccaccio",
+    "sayfa": 54,
+    "tanim": "**Decameron**'u yazan 14. yüzyıl İtalyan yazarı; veba salgınından kaçan 10 gencin 10 günde anlattığı 100 hikâyeyle dünya edebiyatında **ilk hikâye kitabının** mimarı oldu — tıpkı bir Netflix antolojisi gibi.\n💡 Sınav Şifresi: **İtalyan + Decameron + 100 hikâye** üçlüsü; 'ilk hikâye örneği' ifadesi görürsen Boccaccio'ya koş.",
+    "pattern": "\\\\\\\\bboccaccio\\\\\\\\b"
+  },
+  {
+    "id": "tde1_maupassant",
+    "term": "Guy de Maupassant",
+    "sayfa": 38,
+    "tanim": "Fransız yazar; hikâyeyi **serim-düğüm-çözüm** zincirine oturtarak 'olay hikâyesi'nin kurucusu oldu — yani başı, ortası ve finali belli bir film senaryosu gibi.\n💡 Sınav Şifresi: **Olay hikâyesi = Maupassant**, **durum hikâyesi = Çehov**; 'Fransız' ve 'olay zinciri' kelimeleri Maupassant'ı işaret eder.",
+    "pattern": "\\\\\\\\bmaupassant\\\\\\\\b"
+  },
+  {
+    "id": "tde1_cehov",
+    "term": "Anton Çehov",
+    "sayfa": 42,
+    "tanim": "Rus yazar; olay zinciri yerine **hayattan bir kesit** sunarak insanın iç dünyasını ve psikolojisini anlatan 'durum hikâyesi'nin kurucusu oldu — sanki bir fotoğraf karesi, film değil.\n💡 Sınav Şifresi: **Durum hikâyesi = Çehov**, **Rus** ve 'psikoloji/kesit' kelimeleri görürsen şıklardan Çehov'u seç.",
+    "pattern": "\\\\\\\\bçehov\\\\\\\\b|\\\\\\\\bcehov\\\\\\\\b"
+  },
+  {
+    "id": "tde1_beydeba",
+    "term": "Beydeba",
+    "sayfa": 122,
+    "tanim": "Hint filozofu; hayvanlar üzerinden insanlara ders veren **Kelile ve Dimne** ile dünya edebiyatının ilk fabl eserini kaleme aldı — tıpkı çocuklara masal üzerinden ahlak öğreten bir bilge gibi.\n💡 Sınav Şifresi: **Kelile ve Dimne + Hint + ilk fabl** üçlüsü; 'Beydeba' adı geçen şıkta mutlaka 'fabl' ve 'Hindistan' anahtar kelimeleri vardır.",
+    "pattern": "\\\\\\\\bbeydeba\\\\\\\\b"
+  },
+  {
+    "id": "tde1_la_fontaine",
+    "term": "La Fontaine",
+    "sayfa": 121,
+    "tanim": "17. yüzyıl Fransız şairi; hayvanları konuşturarak **manzum (şiir biçiminde) fabllar** yazdı ve insanlara ahlak dersi verdi — Ezop'un hikâyelerini şiire çeviren usta gibi.\n💡 Sınav Şifresi: **Manzum fabl = La Fontaine**, **Fransız + 17. yüzyıl**; 'şiir biçiminde fabl' ifadesi görürsen doğru cevap odur.",
+    "pattern": "la fontaine"
+  },
+  {
+    "id": "tde1_ezop",
+    "term": "Ezop",
+    "sayfa": 120,
+    "tanim": "Eski Yunan'da yaşamış masal ustası; tarihte **fabl türünün ilk anlatıcısı** kabul edilir — yani hayvanlara konuşturma geleneğinin atası.\n💡 Sınav Şifresi: **Ezop = ilk fabl anlatıcısı + Eski Yunan**; 'türün ilk temsilcisi' kalıbı görürsen Ezop'u işaretle.",
+    "pattern": "\\\\\\\\bezop\\\\\\\\b"
+  },
+  {
+    "id": "tde1_faruk_nafiz",
+    "term": "Faruk Nafiz Çamlıbel",
+    "sayfa": 88,
+    "tanim": "**Beş Hececiler**'in en güçlü şairi; 'Sanat' şiirinde Anadolu'yu savunarak **memleket edebiyatının** öncüsü, 'Han Duvarları' ile Anadolu'yu şiire taşıdı.\n💡 Sınav Şifresi: **Faruk Nafiz = Beş Hececiler + Sanat + Han Duvarları**; 'memleketçi şiir' ve 'hece ölçüsü' kelimeleri onu işaret eder.",
+    "pattern": "faruk nafiz çamlıbel|faruk nafiz"
+  },
+  {
+    "id": "tde1_necip_fazil",
+    "term": "Necip Fazıl Kısakürek",
+    "sayfa": 89,
+    "tanim": "Cumhuriyet şiirinin **'Kaldırımlar Şairi'**; mistik ve metafizik derinliği hece ölçüsüyle birleştirerek kendine has bir ses kurdu — sokakta yürürken bile ruhun derinliğini arayan bir şair gibi.\n💡 Sınav Şifresi: **Kaldırımlar = Necip Fazıl**; 'metafizik', 'mistik' ve 'Kaldırımlar Şairi' kalıpları doğrudan onu verir.",
+    "pattern": "necip fazıl kısakürek|necip fazıl"
+  },
+  {
+    "id": "tde1_halide_nusret",
+    "term": "Halide Nusret Zorlutuna",
+    "sayfa": 90,
+    "tanim": "Millî Edebiyat ve Cumhuriyet Dönemi'nin kadın şair-yazarı; **'Git Bahar'** şiiriyle ün kazandı — bahara 'git' diyerek duygularını dile getiren zarif bir kalem.\n💡 Sınav Şifresi: **Git Bahar = Halide Nusret**; 'kadın şair' ve 'Git Bahar' ikilisi görülürse şık kesin.",
+    "pattern": "halide nusret zorlutuna|halide nusret"
+  },
+  {
+    "id": "tde1_omer_bedrettin",
+    "term": "Ömer Bedrettin Uşaklı",
+    "sayfa": 91,
+    "tanim": "Cumhuriyet Dönemi şairi; **Anadolu sevgisi** ve **deniz temalı lirik şiirleriyle** tanınır — memleketin dağlarını ve denizlerini duyguyla yoğuran bir şair.\n💡 Sınav Şifresi: **Ömer Bedrettin = Anadolu + deniz + lirik**; 'deniz temalı şiir' ifadesi görülürse doğru cevap odur.",
+    "pattern": "ömer bedrettin uşaklı|omer bedrettin"
+  },
+  {
+    "id": "tde1_cografya",
+    "term": "Coğrafya",
+    "sayfa": 21,
+    "tanim": "Edebi eserlerde **mekân tasviri**, gezi yazıları ve **insan-çevre etkileşimini** inceleyen bilim dalı — bir romanın geçtiği şehri haritada canlandırmak gibi.\n💡 Sınav Şifresi: **Coğrafya = mekân + insan-çevre**; 'gezi yazısı' ve 'mekân tasviri' kelimeleri coğrafyayı işaret eder.",
+    "pattern": "^Coğrafya$|\\\\\\\\bcoğrafya bilimi\\\\\\\\b"
+  },
+  {
+    "id": "tde1_felsefe",
+    "term": "Felsefe",
+    "sayfa": 20,
+    "tanim": "Edebî eserlerin arkasındaki **düşünce sistemlerini**, varlık ve bilgi anlayışını inceleyen disiplin — bir romanın görünen buzdağının altındaki fikir dünyasını okumak gibi.\n💡 Sınav Şifresi: **Felsefe = varlık + bilgi + düşünce sistemi**; 'arka plan düşünce' ve 'varlık-bilgi' kalıpları felsefeyi verir.",
+    "pattern": "^Felsefe$|\\\\\\\\bfelsefe disiplini\\\\\\\\b"
+  },
+  {
+    "id": "tde1_sosyoloji",
+    "term": "Sosyoloji",
+    "sayfa": 20,
+    "tanim": "Edebiyatın toplumla bağını inceleyen bilimdir; tıpkı **İbn Haldun**'un 'Mukaddime'de toplumları çözümlemesi gibi, bir roman da döneminin sosyal yapısını yansıtır.\n💡 Sınav Şifresi: **Toplum + gelenek + sosyal değişim** üçlüsünü görüyorsan cevap Sosyoloji'dir; 'bireyin iç dünyası' derse Psikoloji'ye kayar.",
+    "pattern": "^Sosyoloji$|\\\\\\\\btoplum bilimi\\\\\\\\b"
+  },
+  {
+    "id": "tde1_psikoloji",
+    "term": "Psikoloji",
+    "sayfa": 20,
+    "tanim": "Edebî kahramanların **iç dünyasını, ruhsal tahlillerini ve davranış nedenlerini** çözen bilimdir; tıpkı bir dedektifin zanlının zihnine girmesi gibi.\n💡 Sınav Şifresi: **'İç dünya, ruh hâli, bilinçaltı, davranışın sebebi'** kelimeleri geçiyorsa Psikoloji; 'toplum' geçiyorsa Sosyoloji.",
+    "pattern": "^Psikoloji$|\\\\\\\\bruh bilimi\\\\\\\\b"
+  },
+  {
+    "id": "tde1_dil_bilimi",
+    "term": "Dil Bilimi (Lengüistik)",
+    "sayfa": 22,
+    "tanim": "Dilin **yapısını, kökenini ve kurallarını** bilimsel yöntemle inceleyen daldır; tıpkı bir yapay zekâ modelinin dilin gramerini milyonlarca cümleden çözmesi gibi.\n💡 Sınav Şifresi: **'Dilin yapısı, köken, ses-şekil-anlam, kural'** varsa Dil Bilimi; 'sözlü kültür ürünleri' varsa Folklor'a dikkat.",
+    "pattern": "^Dil bilimi$|dil bilimi[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_folklor",
+    "term": "Folklor (Halk Bilimi)",
+    "sayfa": 23,
+    "tanim": "Bir halkın **masal, türkü, efsane, gelenek** gibi sözlü kültür ürünlerini inceleyen bilimdir; **Yunus Emre**'nin dizelerinden Anadolu türkülerine kadar halkın hafızasıdır.\n💡 Sınav Şifresi: **'Sözlü kültür, gelenek, görenek, masal-türkü-efsane'** kelimeleri = Folklor; 'dilin kuralları' derse Dil Bilimi.",
+    "pattern": "^Folklor$|halk bilimi"
+  },
+  {
+    "id": "tde1_serim",
+    "term": "Serim",
+    "sayfa": 44,
+    "tanim": "Hikâye/romanın **giriş** bölümüdür; kişiler ve mekân tanıtılır, olay fitili yeni yanmaya başlar — tıpkı bir filmin ilk 10 dakikasında karakterlerin gösterilmesi gibi.\n💡 Sınav Şifresi: **'Tanıtım + giriş + olayın başlangıcı'** = Serim; çatışma/merak zirvesi derse Düğüm'e geç.",
+    "pattern": "^Serim$|\\\\\\\\bserim bölümü\\\\\\\\b"
+  },
+  {
+    "id": "tde1_dugum",
+    "term": "Düğüm",
+    "sayfa": 44,
+    "tanim": "Olayların **karmaşıklaştığı, merak ve çatışmanın zirveye çıktığı** gelişme bölümüdür; tıpkı bir dizinin sezon finalinde her şeyin iç içe geçmesi gibi.\n💡 Sınav Şifresi: **'Merak, çatışma, karmaşıklaşma, gelişme'** = Düğüm; 'sonuç/bitiş' derse Çözüm.",
+    "pattern": "^Düğüm$|\\\\\\\\bdüğüm bölümü\\\\\\\\b"
+  },
+  {
+    "id": "tde1_cozum",
+    "term": "Çözüm",
+    "sayfa": 44,
+    "tanim": "Merakın giderildiği, **çatışmaların sonuçlandığı bitiş** bölümüdür; tıpkı bir polisiye filmin finalinde katilin açıklanması gibi.\n💡 Sınav Şifresi: **'Sonuç, bitiş, merakın giderilmesi'** = Çözüm; 'tanıtım' derse Serim.",
+    "pattern": "^Çözüm$|\\\\\\\\bçözüm bölümü\\\\\\\\b"
+  },
+  {
+    "id": "tde1_doseme",
+    "term": "Döşeme",
+    "sayfa": 112,
+    "tanim": "Masalın başında dinleyiciyi ısıtan **tekerleme** bölümüdür: 'Bir varmış, bir yokmuş...' — tıpkı bir YouTuber'ın videoya 'Merhaba arkadaşlar!' diye girmesi gibi.\n💡 Sınav Şifresi: **'Tekerleme + giriş + dikkat çekme'** = Döşeme; masalın ana gövdesi derse Asıl Masal.",
+    "pattern": "^Döşeme$|\\\\\\\\bdöşeme bölümü\\\\\\\\b"
+  },
+  {
+    "id": "tde1_dilek",
+    "term": "Dilek",
+    "sayfa": 113,
+    "tanim": "Masalın sonunda iyilerin ödüllendirildiğini bildiren **iyi niyet temennisi**dir: 'Onlar ermiş muradına, biz çıkalım kerevetine.'\n💡 Sınav Şifresi: **'Muradına ermek, kerevet, iyi dilek'** = Dilek; ders veren kısım derse Öğüt.",
+    "pattern": "^Dilek$|\\\\\\\\bdilek bölümü\\\\\\\\b"
+  },
+  {
+    "id": "tde1_ogut",
+    "term": "Öğüt",
+    "sayfa": 114,
+    "tanim": "Fabl veya masalın sonunda verilen **ders**tir; tıpkı **Ahilik** geleneğinde ustaların çırağa 'hilesiz kazan, helal ye' öğüdü gibi.\n💡 Sınav Şifresi: **'Ders çıkarma, hisse, kıssadan hisse'** = Öğüt; 'iyi dilek' derse Dilek.",
+    "pattern": "^Öğüt$"
+  },
+  {
+    "id": "tde1_asil_masal",
+    "term": "Asıl Masal",
+    "sayfa": 113,
+    "tanim": "Döşemeden sonra olayların **serim-düğüm-çözüm** sırasıyla anlatıldığı masalın ana gövdesidir; tekerleme biter, hikâye başlar.\n💡 Sınav Şifresi: **'Ana gövde, olay örgüsü, serim-düğüm-çözüm'** = Asıl Masal; 'tekerleme' derse Döşeme.",
+    "pattern": "^Asıl Masal$"
+  },
+  {
+    "id": "tde1_kahraman_bakis_acisi",
+    "term": "Kahraman Bakış Açısı",
+    "sayfa": 46,
+    "tanim": "Olayların **1. tekil/çoğul şahıs (ben/biz)** ağzıyla bizzat kahraman tarafından anlatıldığı bakış açısıdır; tıpkı bir influencer'ın 'Bugün başıma şu geldi' diye anlatması gibi.\n💡 Sınav Şifresi: **'Ben/biz + kahramanın ağzından'** = Kahraman Bakış Açısı; 'o' varsa İlahi/Hâkim, 'gözlemci' varsa Gözlemci'ye kayar.",
+    "pattern": "kahraman bakış açısı"
+  },
+  {
+    "id": "tde1_hakim_bakis_acisi",
+    "term": "Hâkim (İlahî) Bakış Açısı",
+    "sayfa": 46,
+    "tanim": "Anlatıcının **her şeyi bilen bir tanrı** gibi kahramanların aklından geçenleri, geçmişini ve geleceğini okuduğu bakış açısıdır; tıpkı bir **GPS uydusunun** herkesin konumunu aynı anda görmesi gibi.\n💡 Sınav Şifresi: 'İç dünya + geçmiş + gelecek' üçlüsünü görebilen anlatıcı = Hâkim (İlahî) bakış; 'tanrısal/3. tekil' ifadeleri ayırt ettirir.",
+    "pattern": "hâkim bakış açısı|hakim bakış açısı|ilahî bakış açısı|ilahi bakış açısı"
+  },
+  {
+    "id": "tde1_gozlemci_bakis_acisi",
+    "term": "Gözlemci Bakış Açısı",
+    "sayfa": 47,
+    "tanim": "Anlatıcının bir **güvenlik kamerası** gibi sadece dışarıdan görüneni, duyulanı tarafsızca kaydettiği; kahramanların içine giremediği bakış açısıdır.\n💡 Sınav Şifresi: 'Kamera/gözlemci/tarafsız' + 'iç dünyayı bilemez' → Gözlemci bakış; hâkim bakışla karıştırma, burada zihin okuma YOK.",
+    "pattern": "gözlemci bakış açısı|müşahit bakış açısı"
+  },
+  {
+    "id": "tde1_yazim_kurallari",
+    "term": "Yazım Kuralları",
+    "sayfa": 42,
+    "tanim": "Sözcüklerin, eklerin ve özel adların **standart biçimde** yazılmasını sağlayan kurallar bütünüdür; tıpkı trafikte herkesin aynı şeritte gitmesini sağlayan **yol çizgileri** gibi.\n💡 Sınav Şifresi: 'Doğru yazım / bitişik-ayrı / büyük harf' sorularında TDK kılavuzu esas; noktalama sorusuyla karıştırma — burada işaret değil HARF düzeni var.",
+    "pattern": "yazım kural[a-zçğıöşü]*|yazım yanlış[a-zçğıöşü]*"
+  },
+  {
+    "id": "tde1_noktalama",
+    "term": "Noktalama İşaretleri",
+    "sayfa": 44,
+    "tanim": "Duygu ve düşünceleri açık ifade etmek, cümlenin yapısını ve **duraklama yerlerini** belirlemek için kullanılan işaretler bütünüdür; bir müzik parçasındaki **es ve vurgu işaretleri** gibi.\n💡 Sınav Şifresi: 'Duraklama + anlam belirginliği' → noktalama; 'harf/ek yazımı' → yazım kuralı. İkisini ayırt eden anahtar: işaret mi, harf mi?",
+    "pattern": "noktalama işaret[a-zçğıöşü]*|noktalama yanlış[a-zçğıöşü]*|noktalama işareti"
+  },
+  {
+    "id": "tde1_virgul",
+    "term": "Virgül",
+    "sayfa": 45,
+    "tanim": "Eş görevli kelimeleri, sıralı cümleleri ve aktarma cümlelerini ayıran; cümlede **kısa bir nefes molası** veren noktalama işaretidir.\n💡 Sınav Şifresi: 'Eş görevli sıralama' + 'sıralı cümle' + 'aktarma' üçlüsü = virgül; noktalı virgülle karıştırma — virgül eşitleri, noktalı virgül grupları ayırır.",
+    "pattern": "\\\\\\\\bvirgül[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde1_deyim",
+    "term": "Deyim",
+    "sayfa": 32,
+    "tanim": "Gerçek anlamından uzaklaşmış, **en az iki kelimeden** oluşan kalıplaşmış söz öbeğidir; 'pabucu dama atılmak' deyince kimse gerçekten pabuç aramaz.\n💡 Sınav Şifresi: 'Kalıplaşmış + mecaz + en az 2 kelime' → deyim; atasözünden farkı: deyim **öğüt vermez**, sadece durumu anlatır.",
+    "pattern": "^deyim$|\\\\\\\\bdeyimler\\\\\\\\b|\\\\\\\\bdeyimi\\\\\\\\b|\\\\\\\\bdeyimdir\\\\\\\\b"
+  },
+  {
+    "id": "tde1_atasozu",
+    "term": "Atasözü",
+    "sayfa": 32,
+    "tanim": "Uzun gözlem ve deneyimlerden süzülmüş, halkın ortak malı olan, **yol gösterici/öğüt verici** kalıplaşmış özlü sözdür; 'Damlaya damlaya göl olur' gibi.\n💡 Sınav Şifresi: 'Öğüt/yol gösterici + genel yargı + kalıplaşmış' → atasözü; deyimden farkı: atasözü **cümle değerinde ve öğüt verir**.",
+    "pattern": "^atasözü$|\\\\\\\\batasözleri\\\\\\\\b|\\\\\\\\batasözümüz\\\\\\\\b"
+  },
+  {
+    "id": "tde1_rasim_ozdenoren",
+    "term": "Rasim Özdenören",
+    "sayfa": 144,
+    "tanim": "Cumhuriyet Dönemi hikâye ve deneme yazarı; **Yedi Güzel Adam**'dan biri; 'Gül Yetiştiren Adam' romanı ve 'Ruhun Malzemeleri' denemeleriyle tanınır.\n💡 Sınav Şifresi: 'Yedi Güzel Adam + Gül Yetiştiren Adam + Ruhun Malzemeleri' üçlüsü → Rasim Özdenören; Nuri Pakdil, Sezai Karakoç'la karıştırma.",
+    "pattern": "rasim özdenören|rasim ozdenoren"
+  },
+  {
+    "id": "tde1_gul_yetistiren_adam",
+    "term": "Gül Yetiştiren Adam",
+    "sayfa": 144,
+    "tanim": "Rasim Özdenören'in **geleneksel-manevi değerler ile modern yabancılaşma**nın çatışmasını bir gül metaforu üzerinden anlattığı romanı.\n💡 Sınav Şifresi: **Rasim Özdenören + gül + yabancılaşma** üçlüsü; 'Doğu-Batı çatışması' anahtar kavramdır.",
+    "pattern": "gül yetiştiren adam"
+  },
+  {
+    "id": "tde1_turan_oflazoglu",
+    "term": "Turan Oflazoğlu",
+    "sayfa": 180,
+    "tanim": "Cumhuriyet Dönemi tiyatro yazarı; **tarihten esinlenen trajedileriyle** tanınır; IV. Murat, Deli İbrahim ve Genç Osman oyunlarının yazarıdır.\n💡 Sınav Şifresi: 'Tarihî trajedi + Osmanlı padişah oyunları (IV. Murat, Deli İbrahim, Genç Osman)' → Turan Oflazoğlu; 'şair tiyatro' deyince karıştırma.",
+    "pattern": "turan oflazoğlu|sultan murad|iv\\\\\\\\. murat"
+  },
+  {
+    "id": "tde1_ozel_cins_eslesmesi",
+    "term": "Özel ve Cins (Tür) İsimleri",
+    "sayfa": 61,
+    "tanim": "**Tek bir varlığa** verilen özel isimler (Ahmet, Ankara, Van Gölü) ile aynı türden varlıkların **ortak adı** olan cins isimlerinin (insan, şehir, göl) sınıflandırılmasıdır.\n💡 Sınav Şifresi: 'Tek varlık + büyük harf' → özel isim; 'türün tamamı + küçük harf' → cins isim. Cümlede büyük harfle başlaması özel yapmaz, dikkat!",
+    "pattern": "Özel - Cins - Özel|Cins - Özel - Cins|Cins - Cins - Özel|Özel - Özel - Cins"
+  }
+]

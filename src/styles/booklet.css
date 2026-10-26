@@ -202,6 +202,31 @@ body.dark-mode .q-soon-banner {
 .btn-companion-icon.btn-star-action:hover { opacity: 1; color: #eab308; }
 .btn-companion-icon.btn-star-action.is-starred { opacity: 1 !important; color: #eab308 !important; }
 .btn-companion-icon.btn-star-action.is-starred svg { fill: #eab308 !important; stroke: #eab308 !important; }
+.btn-companion-icon.copied { opacity: 1 !important; color: #10b981 !important; }
+.btn-companion-icon.btn-speech-question.is-loading {
+  opacity: 1 !important;
+  color: #f59e0b !important;
+  background: color-mix(in srgb, #f59e0b 16%, transparent);
+  animation: speech-loading 1s linear infinite;
+}
+
+.btn-companion-icon.btn-speech-question.is-speaking {
+  opacity: 1 !important;
+  color: var(--brand-accent) !important;
+  background: color-mix(in srgb, var(--brand-accent) 16%, transparent);
+  animation: speech-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes speech-loading {
+  0% { transform: rotate(0deg) scale(0.92); opacity: 0.6; }
+  50% { transform: rotate(180deg) scale(1.12); opacity: 1; }
+  100% { transform: rotate(360deg) scale(0.92); opacity: 0.6; }
+}
+
+@keyframes speech-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.18); opacity: 0.82; }
+}
 
 /* 4. DEDICATED BOOKLET CANVAS ZOOM */
 #bookletPagesContainer {

@@ -262,14 +262,16 @@ body.dark-mode .btn-level-chip.active {
 }
 
 .btn-load-all {
-  flex: 1;
-  padding: 0 14px;
+  height: 25px;
+  padding: 0 9px;
   background: var(--brand-accent);
   color: #ffffff;
   border: none;
-  font-size: 12.5px;
+  font-size: 11px;
   font-weight: 750;
-  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(2, 132, 199, 0.2);
+  white-space: nowrap;
 }
 
 .btn-load-all:hover {
@@ -278,6 +280,7 @@ body.dark-mode .btn-level-chip.active {
 }
 
 .btn-intersection-toggle {
+  display: none !important;
   padding: 0 12px;
   border: 1px solid var(--paper-border);
   background: transparent;

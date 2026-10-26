@@ -7,11 +7,15 @@ const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE
 
 export default defineConfig({
   testDir: './tests/browser',
+  outputDir: './tests/results',
   fullyParallel: false,
+  workers: 1,
+  timeout: 45000,
   use: {
     baseURL: 'http://127.0.0.1:4173',
     headless: true,
     launchOptions: { executablePath },
+    serviceWorkers: 'block',
   },
   webServer: {
     command: 'npm run preview -- --port 4173 --strictPort',

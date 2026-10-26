@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""MEB Tarih 5 (11. Sınıf 1. Dönem) Yüksek Hassasiyetli Kanonik Kavram ve Terim Sözlüğü."""
+
+from typing import Any, Dict, List, Tuple
+
+PRECISE_TAR5_CONCEPTS: List[Dict[str, Any]] = [
+    {
+        "id": "tar5_zitvatorok_antlasmasi",
+        "term": "Zitvatorok Antlaşması (1606)",
+        "sayfa": 18,
+        "tanim": "1606'da Osmanlı ile Avusturya arasında imzalanan bu antlaşmayla **Eğri ve Kanije Osmanlı'da kaldı**, ama Avusturya arşidükü protokolde padişaha **denk** sayıldı — yani 1533'teki Osmanlı siyasi üstünlüğü artık bitti. Tıpkı bir şirketin rakibini 'eşit ortak' kabul etmesi gibi, Osmanlı da Avusturya'yı masada denkleştirdi.\n💡 Sınav Şifresi: 'Arşidük = Padişah' eşitliği + '1533 üstünlüğünün bitişi' → Zitvatorok. Eğri-Kanije Osmanlı'da kalır, ama protokol eşitliği ilk kez verilir.",
+        "pattern": r"zitvatorok antlaşması|zitvatorok|kanije ve estergon kaleleri",
+    },
+    {
+        "id": "tar5_kasri_sirin_antlasmasi",
+        "term": "Kasr-ı Şirin Antlaşması (1639)",
+        "sayfa": 22,
+        "tanim": "IV. Murad'ın **Bağdat Seferi** sonrası 1639'da Safevilerle imzalanan antlaşma; **Bağdat Osmanlı'da, Revan (Erivan) İran'da** kaldı ve bugünkü Türkiye-İran sınırının büyük kısmını çizdi. Yani bu antlaşma, iki komşu arasındaki 'duvarın hattı' gibi asırlarca değişmedi.\n💡 Sınav Şifresi: 'Bağdat bizde, Revan onlarda' + 'bugünkü İran sınırı' → Kasr-ı Şirin. IV. Murad = Bağdat fatihi.",
+        "pattern": r"kasr-ı şirin|kasrı şirin|kasr-i sirin",
+    },
+    {
+        "id": "tar5_kerden_antlasmasi",
+        "term": "Kerden Antlaşması (1746 - II. Kasr-ı Şirin)",
+        "sayfa": 24,
+        "tanim": "1746'da İran ile imzalanan ve **Kasr-ı Şirin sınırlarını aynen teyit eden** barış antlaşmasıdır; bu yüzden '**II. Kasr-ı Şirin**' olarak da anılır. Yani iki ülke 'eski sözleşmeyi yeniden imzaladı' demiştir.\n💡 Sınav Şifresi: 'II. Kasr-ı Şirin' kodlaması → Kerden. Sınırı değiştirmez, sadece onaylar.",
+        "pattern": r"^Kerden$|\\\\bkerden antlaşması\\\\b|\\\\bkerden\\\\b",
+    },
+    {
+        "id": "tar5_cehrin_seferi",
+        "term": "Çehrin Seferi ve Bahçesaray Antlaşması (1678-1681)",
+        "sayfa": 26,
+        "tanim": "Merzifonlu Kara Mustafa Paşa'nın Rusya üzerine yaptığı **ilk Osmanlı askerî seferi** (Çehrin) ve ardından 1681'de imzalanan **Osmanlı-Rusya arasındaki ilk resmî barış antlaşması** (Bahçesaray). Yani iki imparatorluk ilk kez 'resmen el sıkıştı'.\n💡 Sınav Şifresi: 'Rusya ile İLK barış' + 'Çehrin Seferi' → Bahçesaray (1681). İlk askerî temas + ilk resmî antlaşma ikilisi.",
+        "pattern": r"^Çehrin$|\\\\bçehrin seferi\\\\b|\\\\bçehrin\\\\b|\\\\bcehrin\\\\b",
+    },
+    {
+        "id": "tar5_karlofca_antlasmasi",
+        "term": "Karlofça Antlaşması (1699)",
+        "sayfa": 30,
+        "tanim": "II. Viyana Kuşatması sonrası Kutsal İttifak'la 1699'da imzalanan antlaşma; **Macaristan ve Erdel kaybedildi**, Osmanlı Batı'da **ilk kez büyük çapta toprak kaybetti** ve **Gerileme Dönemi** başladı. Tıpkı bir dağcının zirveden ilk büyük düşüşü gibi, inişin başlangıç noktasıdır.\n💡 Sınav Şifresi: 'İlk büyük toprak kaybı' + 'Gerileme'nin başlangıcı' + 'Macaristan-Erdel gitti' → Karlofça (1699).",
+        "pattern": r"karlofça antlaşması|karlofça|karlofca",
+    },
+    {
+        "id": "tar5_prut_antlasmasi",
+        "term": "Prut Antlaşması (1711)",
+        "sayfa": 34,
+        "tanim": "1711'de Baltacı Mehmed Paşa'nın **Prut Nehri kıyısında Rus Çarı I. Petro'yu kuşatması** sonucu imzalanan antlaşma; **Azak Kalesi geri alındı** ve Karlofça kayıplarını telafi umudu doğdu. Yani Osmanlı 'kaybettiğim yerleri geri alabilirim' umudunu ilk kez burada tattı.\n💡 Sınav Şifresi: 'Prut'ta Petro kuşatıldı' + 'Azak geri alındı' → Prut (1711). Karlofça'nın ilk telafi sinyali.",
+        "pattern": r"^Prut$|\\\\bprut antlaşması\\\\b|\\\\bprut savaşı\\\\b|\\\\bprut\\\\b",
+    },
+    {
+        "id": "tar5_pasarofca_antlasmasi",
+        "term": "Pasarofça Antlaşması (1718)",
+        "sayfa": 36,
+        "tanim": "1718'de Avusturya ve Venedik'le imzalanan antlaşma; **Belgrad kaybedildi**, Osmanlı Batı'nın **askerî-teknik üstünlüğünü kabul edip savunmaya çekildi** ve **Lale Devri** başladı. Yani Osmanlı 'artık onlar daha güçlü, ben savunmada kalayım' diyerek kabullendi.\n💡 Sınav Şifresi: 'Belgrad gitti' + 'Lale Devri başladı' + 'savunmaya çekilme' → Pasarofça (1718).",
+        "pattern": r"^Pasarofça$|\\\\bpasarofça antlaşması\\\\b|\\\\bpasarofça\\\\b|\\\\bpasarofca\\\\b",
+    },
+    {
+        "id": "tar5_kucuk_kaynarca",
+        "term": "Küçük Kaynarca Antlaşması (1774)",
+        "sayfa": 40,
+        "tanim": "1774'te Rusya ile imzalanan ağır antlaşma; **Kırım bağımsız oldu** (ilk kez halkı Müslüman bir toprak kaybedildi), **ilk kez savaş tazminatı ödendi** ve Rusya'ya **Karadeniz'de serbest ticaret** ile **Ortodoksları koruma hakkı** verildi. Yani Rusya, Osmanlı'nın iç işlerine karışma kapısını ilk kez araladı.\n💡 Sınav Şifresi: 'Kırım bağımsız' + 'ilk tazminat' + 'Ortodoks himayesi' üçlüsü → Küçük Kaynarca (1774). En ağır antlaşma.",
+        "pattern": r"küçük kaynarca antlaşması|küçük kaynarca|kucuk kaynarca",
+    },
+    {
+        "id": "tar5_ekber_ve_ersed",
+        "term": "Ekber ve Erşed Sistemi",
+        "sayfa": 48,
+        "tanim": "I. Ahmed döneminde getirilen kural: tahta hanedanın **en yaşlı (ekber)** ve **en olgun/aklı başında (erşed)** üyesi geçer. Taht kavgalarını bitirdi ama **sancağa çıkışı kaldırıp Kafes usulünü** getirdiği için tecrübesiz padişahlar yetişti — yani 'kavga bitti ama tecrübe de bitti'.\n💡 Sınav Şifresi: 'Ekber = en yaşlı, Erşed = en olgun' + 'Kafes usulü' + 'tecrübesiz padişah' → Ekber-Erşed. Sancağa çıkışın kaldırılması bu sistemin sonucudur.",
+        "pattern": r"ekber ve erşed|ekber ve erşed uygulaması|ekber-i erşed",
+    },
+    {
+        "id": "tar5_yeniceri_isyanlari",
+        "term": "Yeniçeri (İstanbul / Merkez) İsyanları",
+        "sayfa": 52,
+        "tanim": "17. yüzyılda **cülus bahşişinin eksik ödenmesi** ve **ayarı düşük akçeyle ulufe verilmesi** yeniçerileri isyana sürükledi; sonuçta **Genç Osman şehit edildi** ve sık sık padişah-sadrazam değişti. Yani 'maaşı kesilen asker, patronunu değiştirir' mantığıyla İstanbul kaynıyordu.\n💡 Sınav Şifresi: 'Cülus bahşişi + ayarı düşük akçe' ikilisi → Yeniçeri isyanları. Genç Osman'ın şehit edilmesi bu isyanların en acı sonucudur.",
+        "pattern": r"yeniçeri isyanları[a-zçğıöşü]*|yeniçeri isyanı|istanbul isyanları",
+    },
+    {
+        "id": "tar5_koci_bey_risalesi",
+        "term": "Koçi Bey Risalesi",
+        "sayfa": 56,
+        "tanim": "17. yüzyılda **IV. Murad ve Sultan İbrahim'e sunulan**, rüşvet-iltimas-tımar ve yeniçeri ocaklarındaki bozulmaları tespit eden **ilk kapsamlı ıslahat raporu**. Yani devletin 'check-up raporu' gibi, hastalıkları tek tek yazdı.\n💡 Sınav Şifresi: 'İlk kapsamlı ıslahat raporu' + 'IV. Murad'a sunuldu' → Koçi Bey Risalesi. Rüşvet-iltimas-tımar bozulması üçlüsü.",
+        "pattern": r"koçi bey|koci bey",
+    },
+    {
+        "id": "tar5_martin_luther",
+        "term": "Martin Luther ve Reform",
+        "sayfa": 64,
+        "tanim": "Almanya'da Wittenberg Kilisesi kapısına astığı **95 maddelik bildiriyle** Katolik Kilisesi'nin **endüljans (cennetten arsa satma)** uygulamasına karşı çıkan ve **Protestanlık** mezhebini başlatan din adamı. Yani 'kilisenin kapısına ilan asarak' reformun fitilini yaktı.\n💡 Sınav Şifresi: '95 maddelik bildiri' + 'endüljans karşıtlığı' + 'Protestanlık' üçlüsü → Martin Luther. Wittenberg Kilisesi kapısı = Reform'un başlangıç sahnesi.",
+        "pattern": r"martin luther|protestanlık hareketini başlatan",
+    },
+    {
+        "id": "tar5_newton_yercekimi",
+        "term": "Isaac Newton",
+        "sayfa": 70,
+        "tanim": "Elmanın düşüşünü izleyerek **Evrensel Kütle Çekim Yasası**'nı bulan ve hareket yasalarıyla Klasik Fiziğin temelini atan İngiliz bilim insanı; tıpkı bir GPS uydusunun yerçekimini hesaplayıp konumunu bulması gibi, o da doğanın görünmez matematiğini çözdü.\n💡 Sınav Şifresi: **Elma + İngiliz + Kütle Çekim + Hareket Yasaları** — 'yerçekimini bulan adam' denince akla Newton gelir, Galileo veya Kopernik değil.",
+        "pattern": r"^Newton$|\\\\bnewton\\\\b|\\\\bevrensel çekim yasasını\\\\b",
+    },
+    {
+        "id": "tar5_hendesehane",
+        "term": "Hendesehâne (1734)",
+        "sayfa": 80,
+        "tanim": "I. Mahmud döneminde **Humbaracı Ahmet Paşa** (Comte de Bonneval) tarafından Üsküdar'da açılan, Osmanlı'nın **Batı tarzı ilk askerî mühendislik okulu**; bugünün mühendislik fakültelerinin atası gibi düşünülebilir.\n💡 Sınav Şifresi: **1734 + I. Mahmud + Humbaracı Ahmet Paşa + Üsküdar + Hendese (geometri/mühendislik)** — 'Batı tarzı ilk askerî mühendislik okulu' sorusunun tek cevabı.",
+        "pattern": r"^Hendesehane$|^Hendesehâne$|\\\\bhendesehane\\\\b|\\\\bhendesehâne\\\\b|\\\\bhumbaracı ahmet paşa\\\\b",
+    },
+    {
+        "id": "tar5_irad_i_cedit",
+        "term": "İrâd-ı Cedît Hazinesi",
+        "sayfa": 86,
+        "tanim": "III. Selim'in **Nizam-ı Cedit** ordusunun silah, üniforma ve maaş giderlerini karşılamak için devlet hazinesinden **ayrı** kurduğu özel gelir fonu; bugünün 'proje özel bütçesi' veya 'savunma sanayi fonu' gibi düşünülebilir.\n💡 Sınav Şifresi: **III. Selim + Nizam-ı Cedit ordusunun giderleri + ayrı hazine** — 'İrad-ı Cedid' kelimesi 'yeni irade/gelir' demek; sadece YENİ ORDUNUN masraflarına bakar, genel hazine değildir.",
+        "pattern": r"^İrad-ı Cedit$|^İrad-ı Cedid$|\\\\birad-ı cedit\\\\b|\\\\birad-ı cedid\\\\b|\\\\birâd-ı cedît\\\\b",
+    },
+    {
+        "id": "tar5_nizam_i_cedit",
+        "term": "Nizam-ı Cedit Dönemi",
+        "sayfa": 84,
+        "tanim": "III. Selim'in Osmanlı'yı her alanda **Batı standartlarına** taşımak için başlattığı yenilik hareketleri ve bu dönemde kurulan **Avrupaî modern ordu**; Akka'da Napolyon'u durdurarak gücünü kanıtlamıştır.\n💡 Sınav Şifresi: **III. Selim + Batılılaşma + Yeni Düzen + Akka'da Napolyon'u yenen ordu** — 'Nizam-ı Cedit' = 'Yeni Düzen'; II. Mahmud'un 'Nizam-ı Cedid'i kaldırıp Sekban-ı Cedid kurduğunu karıştırma.",
+        "pattern": r"nizam-ı cedit|nizam-ı cedid|nizâm-ı cedîd",
+    },
+]

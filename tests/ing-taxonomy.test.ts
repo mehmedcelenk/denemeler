@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 
-const TAXONOMY_PATH = 'scripts/ing_taxonomy_map.json';
-const SCRIPT_PATH = 'scripts/validate_ing_taxonomy.py';
+const TAXONOMY_PATH = 'scripts/taxonomy/ing_taxonomy_map.json';
+const SCRIPT_PATH = 'scripts/taxonomy/validate_ing_taxonomy.py';
 const QUESTIONS_PATH = 'data/subjects/ING.json';
 
 const FORBIDDEN_FALLBACK_TERMS = [

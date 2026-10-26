@@ -292,32 +292,3 @@ export function toggleFullscreenFocusMode() {
   }
 }
 
-export function toggleQuestionFeatures(qId: number | string) {
-  const id = Number(qId);
-  if (isNaN(id)) return;
-  const isNowExpanded = store.toggleQuestionExpanded(id);
-  const card = document.getElementById(`bq_${id}`);
-  if (card) {
-    const drawer = card.querySelector('.q-features-drawer');
-    const icon = card.querySelector('.btn-features-toggle .features-toggle-icon');
-    if (drawer) drawer.classList.toggle('is-expanded', isNowExpanded);
-    if (icon) icon.textContent = isNowExpanded ? '‹' : '›';
-  }
-}
-
-export function toggleFeaturesBar() {
-  store.toggleFeaturesExpanded();
-  updateFeaturesBarUI();
-}
-
-export function updateFeaturesBarUI() {
-  if (typeof document === 'undefined') return;
-  const isExpanded = Boolean(state.isFeaturesExpanded);
-  document.querySelectorAll('.q-features-drawer').forEach(el => {
-    el.classList.toggle('is-expanded', isExpanded);
-  });
-  document.querySelectorAll('.btn-features-toggle .features-toggle-icon').forEach(icon => {
-    icon.textContent = isExpanded ? '‹' : '›';
-  });
-}
-

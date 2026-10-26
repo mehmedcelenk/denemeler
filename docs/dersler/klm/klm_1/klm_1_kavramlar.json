@@ -1,0 +1,655 @@
+[
+  {
+    "id": "klm1_kelam_ilmi",
+    "term": "Kelam İlmi",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 12,
+    "tanim": "İslam dininin inanca ve davranışlara dair ilkelerini naslardan hareketle belirleyen ve akli yöntemlerle temellendirip destekleyen bir ilimdir.",
+    "baglam_farki": "Kelam, inanç esaslarını akli ve nakli delillerle ispatlayıp savunurken; akaid ve usûlü'd-din gibi ilimler daha çok inanç esaslarını açıklar, akli delillendirme yoluna gitmez.",
+    "sinav_ipucu": "Tanımı sorulur; 'akli yöntemlerle temellendirme' vurgusu çeldirici olarak akaid veya fıkıh ile karıştırılabilir.",
+    "aliases": [
+      "İlm-i Kelam",
+      "Akaid",
+      "Usûlü'd-din",
+      "İlm-i Tevhid",
+      "Fıkh-ı Ekber",
+      "İlm-i İstidlal ve Nazar"
+    ]
+  },
+  {
+    "id": "klm1_usul_i_selase",
+    "term": "Usûl-i Selâse",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 12,
+    "tanim": "İslam dininin iman esaslarının âlimler tarafından birleştirildiği üç başlık: tevhid, nübüvvet ve ahirete iman.",
+    "baglam_farki": "Âmentü'deki altı iman esasını üç temel başlıkta özetler; kelam ilminin tanımında bu üç esas özellikle zikredilir.",
+    "sinav_ipucu": "Üç esasın hangileri olduğu sorulur; 'salat, zekat, oruç' gibi ibadetler çeldirici olarak verilebilir.",
+    "aliases": [
+      "Üç Esas",
+      "Tevhid-Nübüvvet-Ahiret"
+    ]
+  },
+  {
+    "id": "klm1_tevhid",
+    "term": "Tevhid",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 12,
+    "tanim": "Allah'ın birliği, eşi ve benzerinin olmaması; kelam ilminin üç temel konusundan biri ve en önemlisidir.",
+    "baglam_farki": "Kelamda Allah'ın zatı, birliği ve sıfatlarıyla ilgili inanç esası olarak ele alınır; fıkıhta bir ibadet veya hüküm değildir.",
+    "sinav_ipucu": "Kelamın öncelikli konusu olarak sorulur; 'nübüvvet' veya 'ahiret' ile karıştırılabilir, ancak tevhid en önemli meseledir.",
+    "aliases": [
+      "Allah'ın Birliği",
+      "İlm-i Tevhid"
+    ]
+  },
+  {
+    "id": "klm1_nubuvvet",
+    "term": "Nübüvvet",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 13,
+    "tanim": "Peygamberliğin imkânını, diğer peygamberlerin risaletini, vahyi, ilahî kitapları ve Hz. Muhammed'in peygamberliğinin ispatını kapsayan kelamın ikinci temel konusu.",
+    "baglam_farki": "Kelamda peygamberliğin akli ve nakli delillerle ispatı ele alınır; fıkıhta peygamberlik bir hüküm kaynağı olarak değil, sünnet bağlamında incelenir.",
+    "sinav_ipucu": "Kelamın üç temel konusundan biri olarak sorulur; 'ahiret' veya 'tevhid' ile sıralama karıştırılabilir.",
+    "aliases": [
+      "Peygamberlik",
+      "Risalet"
+    ]
+  },
+  {
+    "id": "klm1_ahiret",
+    "term": "Ahiret",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 13,
+    "tanim": "İnsanların bu dünyadaki söz ve davranışlarından sorumlu oldukları, varlığı ve aşamaları hakkında deliller ortaya konan kelamın üçüncü temel konusu.",
+    "baglam_farki": "Kelamda ahiretin varlığı akli ve nakli delillerle ispatlanır; fıkıhta ahiret, amelî hükümlerin sonucu olarak ele alınır.",
+    "sinav_ipucu": "Kelamın temel konularından biri olarak sorulur; 'dünya hayatı' veya 'kader' çeldirici olabilir.",
+    "aliases": [
+      "Ahiret İnancı",
+      "Mead"
+    ]
+  },
+  {
+    "id": "klm1_tahkiki_iman",
+    "term": "Tahkikî İman",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 15,
+    "tanim": "Kişinin imanını taklit düzeyinden kurtarıp akli ve naklî delillerle desteklenmiş bir bilgiyle araştırma sonucu elde ettiği gerçek ve sağlam iman derecesi.",
+    "baglam_farki": "Taklidî imandan farklı olarak bilgiye ve delile dayanır; kelam ilminin amaçlarından biri bu iman derecesine ulaştırmaktır.",
+    "sinav_ipucu": "Kelamın amaçları arasında 'taklidi imandan tahkiki imana geçiş' olarak sorulur; 'taklit' veya 'icmali iman' çeldirici olabilir.",
+    "aliases": [
+      "Tahkik İman",
+      "Sağlam İman"
+    ]
+  },
+  {
+    "id": "klm1_havass_i_selime",
+    "term": "Havass-ı Selîme",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 18,
+    "tanim": "Herhangi bir etkenle kendisine ait özelliğini kaybetmemiş bulunan beş duyu: işitme, görme, koku alma, tatma ve dokunma.",
+    "baglam_farki": "Kelamda bilgi elde etme yollarından biri olarak kabul edilir; felsefede duyuların güvenilirliği tartışmalıyken kelamda sağlıklı duyular bilgi kaynağı sayılır.",
+    "sinav_ipucu": "Bilgi kaynakları sorusunda 'akl-ı selîm' ve 'haber-i sadık' ile birlikte sorulur; 'vehim' veya 'hayal' çeldirici olabilir.",
+    "aliases": [
+      "Sağlıklı Duyular",
+      "Beş Duyu"
+    ]
+  },
+  {
+    "id": "klm1_haber_i_sadik",
+    "term": "Haber-i Sadık",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 18,
+    "tanim": "Hem peygamberlerin haber verdiği vahiyler hem de mütevatir haber için kullanılan, kelamda bilgi elde etme yollarından biri.",
+    "baglam_farki": "Kelamda bilgi kaynağı olarak vahiy ve mütevatir haberi kapsar; fıkıhta haber-i sadık daha çok hadis usulü bağlamında ele alınır.",
+    "sinav_ipucu": "Bilgi kaynakları arasında sorulur; 'haber-i vahid' veya 'şüpheli haber' çeldirici olarak verilebilir.",
+    "aliases": [
+      "Doğru Haber",
+      "Vahiy ve Mütevatir Haber"
+    ]
+  },
+  {
+    "id": "klm1_kulli_ilim",
+    "term": "Külli İlim",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 20,
+    "tanim": "Gazzâlî’ye göre dinî ilimler içinde kelam ilmi külli ilimdir; fıkıh, usûl-i fıkıh, hadis ve tefsir gibi diğer ilimler ise cüzi ilimlerdir.",
+    "baglam_farki": "Kelam, dinî ilimlerin ilkelerini ispat görevini yüklenen en kapsamlı ilimdir; diğer dinî ilimler kelamın belirlediği temel çerçeve üzerine kurulur.",
+    "sinav_ipucu": "Gazzâlî’nin ilim tasnifinde kelamın 'külli', diğerlerinin 'cüz’i' olduğu sorulur; çeldirici olarak fıkıh veya tefsirin külli olduğu söylenebilir.",
+    "aliases": [
+      "Küllî İlim",
+      "Külli İlim (Kelam)"
+    ]
+  },
+  {
+    "id": "klm1_cuzi_ilim",
+    "term": "Cüz’i İlim",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 20,
+    "tanim": "Gazzâlî’ye göre fıkıh, usûl-i fıkıh, hadis ve tefsir gibi ilimler cüzi ilimlerdir; bunlar kelamın incelediği alanlardan özel bir konuyu ele alır.",
+    "baglam_farki": "Cüz’i ilimler, kelamın külli çerçevesi içinde belirli bir alanı inceler; kelam ise bütün dinî ilimlerin ilkelerini ispat eder.",
+    "sinav_ipucu": "Hangi ilimlerin cüz’i sayıldığı sorulur; çeldirici olarak kelamın da cüz’i ilimler arasında gösterilmesi verilebilir.",
+    "aliases": [
+      "Cüzî İlim",
+      "Cüz’i İlimler"
+    ]
+  },
+  {
+    "id": "klm1_esrefu_l_ulum",
+    "term": "Eşrefü’l-Ulûm",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 20,
+    "tanim": "Teftâzânî’nin kelam ilmini İslami ilimler içinde 'en önemli, en şerefli ilim' olarak nitelendirdiği ifadedir; kelamı şer’î hükümlerin esası ve dinî ilimlerin başı saymıştır.",
+    "baglam_farki": "Bu niteleme kelamın diğer dinî ilimlerin temeli ve dayanağı oluşunu vurgular; fıkıh veya hadis için kullanılmaz.",
+    "sinav_ipucu": "'Eşrefü’l-ulûm' ifadesinin hangi ilim ve hangi âlim için kullanıldığı sorulur; çeldirici olarak Gazzâlî veya fıkıh ilmi verilebilir.",
+    "aliases": [
+      "Eşrefu’l-Ulum",
+      "En şerefli ilim"
+    ]
+  },
+  {
+    "id": "klm1_haber_i_sadik_21",
+    "term": "Haber-i Sadık",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 21,
+    "tanim": "Kelamda insanın bilgi elde ettiği üç kaynaktan biri olan doğru haberdir; diğerleri havass-ı selîme (duyu organlarının verileri) ve akl-ı selîmdir.",
+    "baglam_farki": "Felsefeye göre bilgi kaynakları sadece beş duyu ve akıl iken kelamda doğru haber de bilgi kaynağıdır; vahiy bu kapsamda değerlendirilir.",
+    "sinav_ipucu": "Kelamın bilgi kaynakları sorulur; çeldirici olarak sadece akıl ve duyu (felsefi yaklaşım) veya sezgi verilebilir.",
+    "aliases": [
+      "Doğru haber",
+      "Haber-i Sâdık"
+    ]
+  },
+  {
+    "id": "klm1_havass_i_selime_21",
+    "term": "Havass-ı Selîme",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 21,
+    "tanim": "Kelamda bilgi kaynaklarından biri olan duyu organlarının sağlıklı verileridir.",
+    "baglam_farki": "Fizikî âlemle ilgili bilgilerde kelam duyu organlarının verilerini esas alır; ancak gayb alanında vahiy belirleyicidir.",
+    "sinav_ipucu": "Kelamın bilgi kaynakları eşleştirmesinde 'duyu organlarının verileri' olarak sorulur; çeldirici olarak 'akl-ı selîm' veya 'haber-i sadık' karıştırılabilir.",
+    "aliases": [
+      "Havass-ı Selîme",
+      "Sağlıklı duyular",
+      "Duyu organlarının verileri"
+    ]
+  },
+  {
+    "id": "klm1_akl_i_selim",
+    "term": "Akl-ı Selîm",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 22,
+    "tanim": "Kelam ilminin yöntemini dayandırdığı iki temel bilgi kaynağından biri olan selîm akıl; vahyin anlaşılması ve inanç esaslarının temellendirilmesinde kullanılan akıldır.",
+    "baglam_farki": "Kelamda akıl, vahyin yanında ve onunla uyumlu bir kaynaktır; felsefede ise tek başına belirleyici kabul edilir. Sahih nakil ile selîm akıl çatışmaz.",
+    "sinav_ipucu": "Kelamın yönteminde vahiy ile birlikte ikinci ana kaynağın ne olduğu sorulur; çeldirici olarak 'sezgi' veya 'sadece akıl' verilebilir.",
+    "aliases": [
+      "Akl-ı Selîm",
+      "Selîm akıl",
+      "Sağlıklı akıl"
+    ]
+  },
+  {
+    "id": "klm1_normatif_yontem",
+    "term": "Normatif Yöntem",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 23,
+    "tanim": "Kelam ilminin meselelere yaklaşımının normatif olması; inanç ve düşünceyle ilgili hususlarda kesin hükümler ve kurallar ortaya koymasıdır.",
+    "baglam_farki": "Kelam, betimleyici değil kural koyucu (normatif) bir disiplindir; 'Cennet ve cehennem haktır', 'İnanç esaslarını inkâr eden kâfir olur' gibi hüküm ifade eden önermeler bunun örneğidir.",
+    "sinav_ipucu": "Kelamın hangi yönüyle 'normatif' olduğu veya normatif önerme örneği sorulur; çeldirici olarak betimleyici/tasvir edici yaklaşım verilebilir.",
+    "aliases": [
+      "Normatif Yaklaşım",
+      "Normatiflik"
+    ]
+  },
+  {
+    "id": "klm1_temsil",
+    "term": "Temsil",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 1,
+    "sayfa": 23,
+    "tanim": "İki farklı şey arasındaki ortak bir özelliği bularak bunlardan birinin sahip olduğu özelliğin diğerinde de bulunduğu sonucuna ulaşma; görünene dayanarak görünmeyeni delillendirme yöntemidir.",
+    "baglam_farki": "Kelam âlimlerinin en fazla başvurduğu akıl yürütme yöntemlerinden biridir; varlıkların yaratılışındaki mükemmellikten hareketle evrenin düzenine ve Allah’ın varlığına ulaşmada kullanılır.",
+    "sinav_ipucu": "Kelamın kullandığı akıl yürütme yöntemleri (tümevarım ve temsil) sorulur; çeldirici olarak tümdengelim veya kıyas verilebilir.",
+    "aliases": [
+      "Temsil Yöntemi",
+      "Analoji"
+    ]
+  },
+  {
+    "id": "klm1_kadim",
+    "term": "Kadim (Ezelî)",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 30,
+    "tanim": "Varlığının bir başlangıç noktası olmaksızın diğer şeylerden önce mevcut olan ve yokluğu mümkün olmayan şey.",
+    "baglam_farki": "Kelamda sadece Allah ve sıfatları için kullanılan varlık kategorisidir; felsefedeki 'ezelî' kavramından farklı olarak yaratılmışlık içermez ve sadece ilahî zat için tahsis edilir.",
+    "sinav_ipucu": "Genellikle 'hâdis' ile karşılaştırmalı sorulur; 'yokluğu mümkün olmayan', 'başlangıcı olmayan' ifadeleriyle tanınır. Çeldirici olarak 'hâdis' veya 'mümkin' seçenekleri verilir.",
+    "aliases": [
+      "Ezelî",
+      "Kadîm"
+    ]
+  },
+  {
+    "id": "klm1_hadis",
+    "term": "Hâdis (Yaratılmış)",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 30,
+    "tanim": "Varlığının başlangıcı olan ve yoktan varlık sahasına çıkan şey.",
+    "baglam_farki": "Kelamda âlemi ve âlemdeki tüm varlıkları ifade eden kategori; felsefedeki 'mümkin' veya 'muhdes' kavramlarından farklı olarak doğrudan yaratılmışlık ve sonradanlık vurgusu taşır.",
+    "sinav_ipucu": "'Kadim' kavramının zıddı olarak sorulur; 'başlangıcı olan', 'yoktan var edilen' ifadeleriyle tanınır. Çeldirici olarak 'kadim' veya 'vacibü'l-vücud' seçenekleri verilir.",
+    "aliases": [
+      "Yaratılmış",
+      "Hâdis"
+    ]
+  },
+  {
+    "id": "klm1_alem",
+    "term": "Âlem",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 31,
+    "tanim": "Allah ve sıfatları dışında kalan her şey (küllü mâ sivallâh/mâsivâ).",
+    "baglam_farki": "Kelamda âlem, sadece fiziksel evren değil, Allah dışındaki tüm varlıkları kapsayan metafizik bir kategori olarak tanımlanır; 'deliller/işaretler' anlamına gelerek Allah'ın varlığına delil teşkil eder.",
+    "sinav_ipucu": "'Allah ve sıfatları dışında kalan her şey' tanımıyla sorulur; 'mâsivâ' eş anlamlısı olarak çeldirici yapılabilir. Ayrıca 'âlem' isminin 'delil' anlamına geldiği vurgulanır.",
+    "aliases": [
+      "Mâsivâ",
+      "Küllü mâ sivallâh"
+    ]
+  },
+  {
+    "id": "klm1_cevher",
+    "term": "Cevher (Atom)",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 32,
+    "tanim": "Maddenin temelini teşkil eden, sonlu ve sınırlı olan, her biri Allah tarafından yaratılmış bulunan bölünemez en küçük yapıtaşları.",
+    "baglam_farki": "Kelamcılar atom teorisini benimsemiş ancak onu mekanik işleyişten arındırarak her an yaratma olgusuna vurgu yapmışlardır; felsefedeki Demokritos atomculuğundan farklı olarak dinî temele dayanır.",
+    "sinav_ipucu": "'Maddenin bölünemez en küçük parçası' tanımıyla sorulur; 'araz' ile karşılaştırmalı çeldirici yapılır. Kelamcıların atomu yaratılışla ilişkilendirdiği vurgulanır.",
+    "aliases": [
+      "Atom",
+      "Cüz"
+    ]
+  },
+  {
+    "id": "klm1_araz",
+    "term": "Araz",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 32,
+    "tanim": "Atomların hareket, renk, şekil, tat, koku vb. akla gelebilecek her türlü niteliği; devamlılığı olmayıp her an Allah tarafından yaratılan nitelikler.",
+    "baglam_farki": "Kelamda arazlar sürekli yaratıma tabidir ve bağımsız varlıkları yoktur; felsefedeki 'araz' kavramından farklı olarak her an yeniden yaratılma vurgusuyla Allah'ın sürekli yaratıcılığına delil teşkil eder.",
+    "sinav_ipucu": "'Atomların nitelikleri', 'her an yaratılan', 'devamlılığı olmayan' ifadeleriyle sorulur; 'cevher' ile karıştırılarak çeldirici yapılır.",
+    "aliases": [
+      "Nitelik",
+      "Araz"
+    ]
+  },
+  {
+    "id": "klm1_hayy",
+    "term": "Hayy",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 32,
+    "tanim": "Kendisi için ölüm söz konusu olmayan, ezelî ve ebedî hayat sahibi, diri olan Allah.",
+    "baglam_farki": "Kelamda Allah'ın sıfatlarından biri olarak hayatın kaynağının yalnızca Allah olduğunu vurgular; materyalist hayat anlayışına karşı teolojik bir cevap niteliğindedir.",
+    "sinav_ipucu": "'Ölüm söz konusu olmayan', 'ezelî ve ebedî hayat sahibi' tanımıyla sorulur; 'Muhyî' ile karıştırılarak çeldirici yapılır. Hayatın kaynağı sorusunda doğru cevap olarak çıkar.",
+    "aliases": [
+      "Diri",
+      "Hayy"
+    ]
+  },
+  {
+    "id": "klm1_muhyi",
+    "term": "Muhyî",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 32,
+    "tanim": "Hayat ve can veren, dirilten anlamında Allah'ın ismi.",
+    "baglam_farki": "Kelamda can verme ve diriltme fiillerinin gerçek failinin yalnızca Allah olduğunu ifade eder; 'Hayy' sıfatıyla birlikte hayatın kaynağı ve devamının Allah'a bağlı olduğunu vurgular.",
+    "sinav_ipucu": "'Can veren', 'dirilten' anlamıyla sorulur; 'Hayy' ile karşılaştırmalı çeldirici yapılır. Ölü toprağın diriltilmesi örneğiyle ilişkilendirilir.",
+    "aliases": [
+      "Dirilten",
+      "Can veren"
+    ]
+  },
+  {
+    "id": "klm1_emanet",
+    "term": "Emanet",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 33,
+    "tanim": "Göklerin, yerin ve dağların yüklenmekten çekindiği, insanın yüklendiği sorumluluk.",
+    "baglam_farki": "Kelamda insanın akıl ve irade sahibi olarak Allah'a karşı sorumluluğunun temelini oluşturan ilahî bir yükümlülük; fıkıhtaki 'emanet' kavramından farklı olarak metafizik bir sorumluluk anlamı taşır.",
+    "sinav_ipucu": "Ahzab suresi 72. ayetle ilişkilendirilerek 'insanın yüklendiği sorumluluk' olarak sorulur; 'halifelik' ile karıştırılarak çeldirici yapılır.",
+    "aliases": [
+      "İlahî Emanet",
+      "Emanet"
+    ]
+  },
+  {
+    "id": "klm1_akl_i_selim_36",
+    "term": "Akl-ı Selim",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 36,
+    "tanim": "İnsanın doğru karar vermesini sağlayan, herhangi bir olumsuzluktan veya ortamın kötülüğünden etkilenmeyen, yaratılışındaki temizliği koruyan akıl.",
+    "baglam_farki": "Kelamda bilgi kaynağı olarak kabul edilen akıl, felsefedeki genel akıl kavramından farklı olarak vahiyle çelişmeyen ve onu anlamaya yardımcı olan 'selim' sıfatıyla nitelenir; fıkıhta ise akıl daha çok mükellefiyet şartı olarak ele alınır.",
+    "sinav_ipucu": "MEB sınavlarında 'Akl-ı selim' tanımı sorulur; çeldirici olarak 'akl-ı evvel', 'akl-ı faal' veya 'akl-ı müstefad' gibi felsefi terimler kullanılabilir. Ayrıca aklın dinî hükümleri belirlemede tek başına yeterli olmadığı vurgulanır.",
+    "aliases": [
+      "Selim akıl",
+      "Sağlıklı akıl"
+    ]
+  },
+  {
+    "id": "klm1_haber_i_sadik_37",
+    "term": "Haber-i Sadık",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 37,
+    "tanim": "Gerçeğe (vakıaya, realiteye) uygun olan haber; doğru haber.",
+    "baglam_farki": "Kelamda bilgi kaynağı olarak haber, özü itibariyle doğru veya yanlış olma ihtimali taşıdığından, 'sadık' sıfatıyla ancak doğru olan haberin bilgi kaynağı olabileceği belirtilir. Fıkıhta haber-i sadık yerine daha çok 'haber-i vahid' ve 'mütevatir' gibi rivayet tasnifleri öne çıkar.",
+    "sinav_ipucu": "MEB sınavlarında 'Haber-i sadık' tanımı ve kısımları (mütevatir haber, peygamberden gelen haber) sorulur; çeldirici olarak 'haber-i vahid', 'haber-i mevzu' veya 'haber-i mürsel' gibi terimler kullanılabilir. Vahyin haber-i sadık altında değerlendirildiği vurgulanır.",
+    "aliases": [
+      "Doğru haber",
+      "Sadık haber"
+    ]
+  },
+  {
+    "id": "klm1_havass_i_selime_38",
+    "term": "Havass-ı Selime",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 38,
+    "tanim": "Herhangi bir eksiklik ve kusuru bulunmayan, sağlam duyu organları.",
+    "baglam_farki": "Kelamda duyu organları, bilgi kaynağı olarak kabul edilir ve 'selime' sıfatıyla sağlam olanların zorunlu bilgi verdiği belirtilir. Felsefede duyuların yanılabilirliği daha fazla vurgulanırken, kelamcılar aklın duyu verilerini sağlamasını yaptığını kabul eder.",
+    "sinav_ipucu": "MEB sınavlarında 'Havass-ı selime' tanımı sorulur; çeldirici olarak 'havass-ı hamse' (beş duyu) veya 'his' gibi terimler kullanılabilir. Duyuların verdiği bilginin zorunlu ve kesin olduğu, ancak aklın sağlamasına ihtiyaç duyduğu vurgulanır.",
+    "aliases": [
+      "Sağlam duyular",
+      "Selim duyular"
+    ]
+  },
+  {
+    "id": "klm1_mutevatir_haber",
+    "term": "Mütevatir Haber",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 38,
+    "tanim": "Yalan üzerine birleşmelerini aklın imkânsız gördüğü bir topluluğun rivayet ettiği haber.",
+    "baglam_farki": "Kelamda haber-i sadığın bir kısmı olarak kabul edilir ve zorunlu bilgi ifade eder. Fıkıhta mütevatir haber daha çok hadis usulü bağlamında ele alınır ve kesinlik ifade ettiği kabul edilir.",
+    "sinav_ipucu": "MEB sınavlarında 'Mütevatir haber' tanımı ve şartları (çok sayıda insan tarafından nakledilmesi, yalan üzerine birleşmelerinin imkânsız olması) sorulur; çeldirici olarak 'haber-i vahid', 'haber-i meşhur' veya 'haber-i aziz' gibi terimler kullanılabilir.",
+    "aliases": [
+      "Mütevatir rivayet"
+    ]
+  },
+  {
+    "id": "klm1_zaruri_bilgi",
+    "term": "Zaruri (Bedihi) Bilgi",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 35,
+    "tanim": "Herhangi bir akıl yürütme veya delillendirmeye ihtiyaç duymadan, doğrudan doğruya zihinde oluşan ve reddedilmesi mümkün olmayan bilgi.",
+    "baglam_farki": "Kelamda bilginin oluşumu açısından yapılan tasnifte zaruri bilgi, duyular, akıl ve mütevatir haber ile elde edilen kesin bilgileri kapsar. Felsefede a priori bilgiye karşılık gelir; ancak kelamda dinî bilginin temellendirilmesinde de kullanılır.",
+    "sinav_ipucu": "MEB sınavlarında 'Zaruri bilgi' tanımı ve örnekleri (ateşin yakıcı olduğu, birin ikinin yarısı olduğu) sorulur; çeldirici olarak 'nazari bilgi', 'istidlali bilgi' veya 'kesbi bilgi' gibi terimler kullanılabilir. Batı düşüncesindeki karşılığının 'a priori' olduğu vurgulanır.",
+    "aliases": [
+      "Bedihi bilgi",
+      "Zorunlu bilgi"
+    ]
+  },
+  {
+    "id": "klm1_nazari_bilgi",
+    "term": "Nazari (İstidlâlî) Bilgi",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 35,
+    "tanim": "Ulaşılan veriler üzerine düşünerek, birtakım vasıtalara başvurarak ve delil getirerek oluşan bilgi.",
+    "baglam_farki": "Kelamda bilginin oluşumu açısından yapılan tasnifte nazari bilgi, akıl yürütme ve delillendirme ile elde edilen sonradan kazanılmış bilgidir. Felsefede a posteriori bilgiye karşılık gelir; kelamda ise genellikle kesbî/iktisabî bilgi olarak da adlandırılır.",
+    "sinav_ipucu": "MEB sınavlarında 'Nazari bilgi' tanımı ve örnekleri sorulur; çeldirici olarak 'zaruri bilgi', 'bedihi bilgi' veya 'a priori bilgi' gibi terimler kullanılabilir. Batı düşüncesindeki karşılığının 'a posteriori' olduğu vurgulanır.",
+    "aliases": [
+      "İstidlâlî bilgi",
+      "Kesbî bilgi",
+      "İktisabî bilgi"
+    ]
+  },
+  {
+    "id": "klm1_istikra",
+    "term": "İstikrâ (Tümevarım)",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 41,
+    "tanim": "Parçadan bütüne veya sonuçtan sebebe gidiş şeklindeki akıl yürütme yöntemi; tümevarım.",
+    "baglam_farki": "Kelamda akli delillere dayalı istidlâl yöntemlerinden biri olarak kullanılır; fıkıhtaki istikrâ (tümevarım) ile aynı mantıki işleve sahiptir ancak kelamda itikadi meselelerin temellendirilmesinde başvurulan akli delil türüdür.",
+    "sinav_ipucu": "MEB sınavlarında 'Parçadan bütüne gidiş' tanımıyla sorulur; çeldirici olarak 'tümdengelim (ta'lîl)' veya 'kıyas (temsîl)' seçenekleri verilir. Ayrıca 'Kelam bu bilgiye ulaşırken hangi yöntemi kullanmaz?' sorusunda 'rüya' çeldiricisiyle birlikte istikrâ'nın kullanıldığı bilinmelidir.",
+    "aliases": [
+      "Tümevarım",
+      "Endüksiyon"
+    ]
+  },
+  {
+    "id": "klm1_temsil_41",
+    "term": "Temsîl (Kıyas/Analoji)",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 41,
+    "tanim": "Parçadan parçaya gidiş; iki şey arasındaki benzerliğe dayanarak birisi hakkında verilen hükmü diğeri hakkında da verme şeklindeki akıl yürütme yöntemi.",
+    "baglam_farki": "Kelamda akli istidlâl yöntemlerinden biri olup fıkıhtaki kıyasla benzer mantıki yapıya sahiptir; ancak kelamda itikadi konuların açıklanmasında kullanılan analoji türüdür.",
+    "sinav_ipucu": "MEB sınavlarında 'Parçadan parçaya gidiş' veya 'iki şey arasındaki benzerliğe dayanarak hüküm verme' tanımıyla sorulur; çeldirici olarak 'tümevarım' veya 'tümdengelim' seçenekleri verilir. 'Kelam bu bilgiye ulaşırken hangi yöntemi kullanmaz?' sorusunda temsîl'in kullanıldığı, 'rüya'nın kullanılmadığı bilinmelidir.",
+    "aliases": [
+      "Kıyas",
+      "Analoji"
+    ]
+  },
+  {
+    "id": "klm1_vacib",
+    "term": "Vâcib",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 43,
+    "tanim": "Varlığı zâtının gereği olan, var olmak için bir sebebe muhtaç olmayan, yokluğu düşünülemeyen varlık.",
+    "baglam_farki": "Kelamda akli hükümlerden biri olup 'varlığı zorunlu olan' anlamındadır; fıkıhtaki 'vacip' (yapılması dinen emredilen) ile karıştırılmamalıdır. Kelamda vâcib li-zâtihî (Allah'ın zâtı) ve vâcib li-gayrihî (Allah'ın sıfatları) olarak ikiye ayrılır.",
+    "sinav_ipucu": "MEB sınavlarında 'Varlığı zorunlu olan, yokluğu düşünülemeyen varlık' tanımıyla sorulur; çeldirici olarak 'mümkin' veya 'mümteni' seçenekleri verilir. Doğru-yanlış sorularında 'Vacip varlık, varlığı zorunlu olmayan ve yokluğu düşünülebilen varlık demektir' ifadesi yanlıştır (cevap: Y). Ayrıca vâcib li-zâtihî özellikleri (ezelîlik, ebedîlik, bileşik olmama) sınavda çeldirici olarak çıkabilir.",
+    "aliases": [
+      "Zorunlu Varlık",
+      "Vâcib li-zâtihî",
+      "Vâcib li-gayrihî"
+    ]
+  },
+  {
+    "id": "klm1_mumkin",
+    "term": "Mümkin (Câiz)",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 44,
+    "tanim": "Varlığı veya yokluğu zâtının gereği olmayan, var olmak için bir sebebe muhtaç olan, var olması da yok olması da eşit derecede imkân dâhilinde bulunan varlık.",
+    "baglam_farki": "Kelamda akli hükümlerden biri olup 'olabilirlik' anlamındadır; Allah dışındaki tüm varlıklar mümkin kabul edilir. Felsefedeki 'mümkün' kavramıyla örtüşür ancak kelamda yaratılmışlık ve sebebe muhtaçlık vurgusu öne çıkar.",
+    "sinav_ipucu": "MEB sınavlarında 'Varlığı da yokluğu da eşit derecede imkân dâhilinde olan varlık' tanımıyla sorulur; çeldirici olarak 'vâcib' veya 'mümteni' seçenekleri verilir. Boşluk doldurma sorusunda 'Akli hükümler vâcib, ............. ve mümteni olmak üzere üç türlüdür' ifadesinde boşluğa 'mümkin' gelir. Ayrıca 'Allah dışındaki insan ve tabiat gibi her şey mümkin varlıklardır' bilgisi sınavda doğru-yanlış veya çoktan seçmeli olarak çıkabilir.",
+    "aliases": [
+      "Câiz",
+      "Mümkün"
+    ]
+  },
+  {
+    "id": "klm1_mumteni",
+    "term": "Mümteni (Muhâl/Müstahîl)",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 44,
+    "tanim": "Yokluğu zâtının gereği ve zorunlu olan, dış dünyada varlığı düşünülemeyen, varlığı ve gerçekleşmesi imkânsız olan.",
+    "baglam_farki": "Kelamda akli hükümlerden biri olup 'imkânsızlık' anlamındadır; mantıktaki 'muhâl' kavramıyla örtüşür. Kelamda özellikle Allah'ın varlığı ve sıfatları bağlamında 'ikinci bir ilâhın varlığı' veya 'Allah'ın eksiklik sıfatlarıyla nitelenmesi' gibi aklen imkânsız durumlar için kullanılır.",
+    "sinav_ipucu": "MEB sınavlarında 'Varlığı ve gerçekleşmesi imkânsız olan' tanımıyla sorulur; çeldirici olarak 'vâcib' veya 'mümkin' seçenekleri verilir. Örnek olarak 'ikinci bir ilâhın varlığı' veya 'parçanın bütünden büyük olması' verilir. 'Bir şey aynı anda hem siyah hem beyaz olamaz' gibi örnekler sınavda çeldirici olarak çıkabilir.",
+    "aliases": [
+      "Muhâl",
+      "Müstahîl",
+      "İmkânsız"
+    ]
+  },
+  {
+    "id": "klm1_itikadi_hukumler",
+    "term": "İtikadi Hükümler",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 42,
+    "tanim": "İslam'ın inanca ilişkin yönünü oluşturan ve amel (pratik ve uygulama) ile ilgili olmayan hükümler; özünde âmentüde ifade edilen altı esası kapsar.",
+    "baglam_farki": "Kelam ve akaid ilminin konusunu oluşturur; amelî hükümlerden (fıkıh) ve ahlaki hükümlerden (ahlak/tasavvuf) ayrılır. İtikadi hükümlerin kesinlik, açıklık, değişmezlik ve bölünmezlik özellikleri vardır.",
+    "sinav_ipucu": "MEB sınavlarında 'İtikadi hükümlerin özelliklerinden biri değildir?' sorusunda 'tarihsellik' çeldiricisi verilir (doğru cevap: tarihsellik değildir). Ayrıca 'İtikadi hükümlerin kat'î olması için ya Kur'an ayetine veya mütevatir hadise dayanması gerekir' bilgisi sınavda çıkabilir. Doğru-yanlış sorularında itikadi hükümlerin özellikleri (kesinlik, açıklık, değişmezlik, bölünmezlik) sorgulanır.",
+    "aliases": [
+      "Akaid Hükümleri",
+      "İnanç Hükümleri"
+    ]
+  },
+  {
+    "id": "klm1_akli_delil",
+    "term": "Aklî Delil",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 41,
+    "tanim": "Öncülleri akla dayanan delil; kesin olan akli delile burhân ve huccet de denir.",
+    "baglam_farki": "Kelamda naklî delillerin (ayet ve mütevatir hadis) yanında kullanılan, vahyin açıklanması, yorumlanması ve temellendirilmesinde başvurulan delil türüdür. Akli delillere dayanarak akıl yürütme (istidlâl) üç şekilde olur: tümdengelim, tümevarım ve kıyas.",
+    "sinav_ipucu": "MEB sınavlarında 'Öncülleri akla dayanan delil' tanımıyla sorulur; çeldirici olarak 'naklî delil' seçeneği verilir. 'Kesin olan akli delile ne ad verilir?' sorusunda 'burhân' veya 'huccet' cevabı aranır. Ayrıca 'Kelamcılar akli delilleri hangi amaçla kullanır?' sorusunda 'vahyin açıklanması, yorumlanması ve temellendirilmesi' cevabı çıkar.",
+    "aliases": [
+      "Burhân",
+      "Huccet"
+    ]
+  },
+  {
+    "id": "klm1_nakli_delil",
+    "term": "Naklî Delil",
+    "subject": "KLM",
+    "ders": "KELAM – 1",
+    "ders_kodu": 819,
+    "donem": 1,
+    "unite_no": 2,
+    "sayfa": 41,
+    "tanim": "Öncülleri ayet ve hadislere dayanan delil; dinî delil.",
+    "baglam_farki": "Kelamda itikadi meselelerde öncelikli olarak başvurulan delil türüdür; vahiy yoluyla gelen bu deliller esas alınır. İnanç sahasında mutlak hüküm ifade etmesi için hem varlığında şüphe olmaması hem de göstermek istediği mana açısından açık ve kesin olması gerekir; bu özellikte olan deliller muhkem ayetler ile muhkem-mütevatir hadislerdir.",
+    "sinav_ipucu": "MEB sınavlarında boşluk doldurma sorusunda 'Öncülleri, ayet ve hadislere dayanan delile ................... ya da dinî delil denir' ifadesinde boşluğa 'naklî' gelir. Ayrıca 'Bir inanç esası belirleyen ayet ve hadis hangi özellikleri taşımalıdır?' sorusunda 'muhkem ve mütevatir olma' cevabı aranır. Çeldirici olarak 'akli delil' seçeneği verilir.",
+    "aliases": [
+      "Dinî Delil"
+    ]
+  }
+]

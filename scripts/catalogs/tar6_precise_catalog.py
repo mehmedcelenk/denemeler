@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""MEB Tarih 6 (11. Sınıf 2. Dönem) Yüksek Hassasiyetli Kanonik Kavram ve Terim Sözlüğü."""
+
+from typing import Any, Dict, List, Tuple
+
+PRECISE_TAR6_CONCEPTS: List[Dict[str, Any]] = [
+    {
+        "id": "tar6_tanzimat_fermani",
+        "term": "Tanzimat Fermanı (Gülhane Hatt-ı Hümayunu - 1839)",
+        "sayfa": 95,
+        "tanim": "Sultan Abdülmecid'in 1839'da Mustafa Reşit Paşa'ya okuttuğu bu ferman, padişahın **kendi gücünün üstünde kanun** olduğunu ilk kez kabul ettiği 'demokrasiye ilk adım' belgesidir; tıpkı bir kralın 'artık ben de kurallara uyacağım' demesi gibi.\n💡 Sınav Şifresi: **Gülhane Hatt-ı Hümayunu = 1839 = Abdülmecid + Mustafa Reşit Paşa**. Ayrıt edici: **Meclis YOK** (sadece ferman), 'kanun üstünlüğü ilk kez'.",
+        "pattern": r"tanzimat fermanı|tanzimat fermani|gülhane hatt-ı hümayunu",
+    },
+    {
+        "id": "tar6_kanun_i_esasi",
+        "term": "Kanun-ı Esasî ve I. Meşrutiyet (1876)",
+        "sayfa": 105,
+        "tanim": "1876'da II. Abdülhamid'in ilan ettiği **ilk yazılı anayasa**; halk ilk kez sandıkla yönetime katıldı, Meclis-i Mebusan (seçilen) + Meclis-i Ayan (atanan) iki kanatlı bir parlamento kuruldu.\n💡 Sınav Şifresi: **1876 = Kanun-ı Esasî = I. Meşrutiyet = II. Abdülhamid**. Kodlama: **'İlk anayasa + ilk meclis'** — Mebusan seçilir, Ayan atanır.",
+        "pattern": r"^Kanun-ı Esasi$|^Kanun-ı Esasî$|\\\\bkanun-ı esasi\\\\b|\\\\bkanun-i esasi\\\\b|\\\\bmeşrutiyet yönetimine\\\\b|\\\\bmeşrutiyet\\\\b",
+    },
+    {
+        "id": "tar6_halepa_fermani",
+        "term": "Halepa Fermanı (1878)",
+        "sayfa": 110,
+        "tanim": "93 Harbi (1877-78 Osmanlı-Rus Savaşı) sonrası Girit Rumlarının isyanını dindirmek için 1878'de çıkarılan ferman; Girit'e **geniş özerklik + Rum vali + vergi muafiyeti** verildi, yani adeta 'yarı bağımsızlık' kapısı aralandı.\n💡 Sınav Şifresi: **Halepa = 1878 = Girit = 93 Harbi sonrası**. Anahtar: **'Rum vali atanması'** — Girit'in elden çıkışının ilk adımı.",
+        "pattern": r"halepa fermanı|halepa fermani|halepa",
+    },
+    {
+        "id": "tar6_paris_antlasmasi_kirim",
+        "term": "Paris Barış Antlaşması ve Kırım Savaşı (1853-1856)",
+        "sayfa": 115,
+        "tanim": "Rusya'ya karşı İngiltere-Fransa ile ittifak kurulan Kırım Savaşı (1853-56) sonunda imzalanan Paris Antlaşması'yla Osmanlı **ilk kez bir Avrupa devleti sayıldı**, toprak bütünlüğü garanti altına alındı ve **ilk dış borç** İngiltere'den alındı.\n💡 Sınav Şifresi: **Kırım Savaşı = ilk dış borç + ilk telgraf + ilk demiryolu**. Paris Antlaşması = **'Osmanlı Avrupalı sayıldı'** + toprak garantisi.",
+        "pattern": r"kırım savaşı|paris antlaşması|paris barış antlaşması",
+    },
+    {
+        "id": "tar6_denge_politikasi",
+        "term": "Denge Politikası",
+        "sayfa": 120,
+        "tanim": "19. yüzyılda gücü zayıflayan Osmanlı'nın, büyük devletlerin (İngiltere, Fransa, Rusya, Almanya) birbirleriyle çatışan çıkarlarını kullanarak ayakta kalma stratejisi; tıpkı iki kavgacı arkadaşın arasında kalıp ikisini de idare eden bir öğrenci gibi.\n💡 Sınav Şifresi: **'Büyük devletleri birbirine düşürüp hayatta kalma'**. Anahtar kelime: **çıkar çatışmasından yararlanma** — savaş değil, diplomasi.",
+        "pattern": r"denge politikası|denge siyaseti|denge stratejisi",
+    },
+    {
+        "id": "tar6_sark_meselesi",
+        "term": "Şark Meselesi (Doğu Sorunu)",
+        "sayfa": 122,
+        "tanim": "Avrupalıların Osmanlı'yı parçalama, topraklarını paylaşma ve Türkleri Avrupa'dan atma planlarına verilen isim; ilk kez **1815 Viyana Kongresi'nde Rus Çarı I. Aleksandr** tarafından diplomatik terim olarak kullanıldı.\n💡 Sınav Şifresi: **Şark Meselesi = 1815 Viyana Kongresi + Rus Çarı I. Aleksandr**. Anahtar: **'Osmanlı'yı parçalama projesi'** — Doğu Sorunu.",
+        "pattern": r"şark meselesi|sark meselesi|doğu sorunu",
+    },
+    {
+        "id": "tar6_yunan_projesi",
+        "term": "Grek (Yunan) Projesi",
+        "sayfa": 124,
+        "tanim": "Rus Çariçesi **II. Katerina** ile Avusturya İmparatoru **II. Joseph**'in gizlice hazırladığı plan; Osmanlı'yı paylaşıp **İstanbul merkezli bir Bizans (Grek) İmparatorluğu** kurmayı hedefliyordu.\n💡 Sınav Şifresi: **Katerina + Joseph = Grek Projesi = İstanbul merkezli Bizans**. Kodlama: **'İki II'li (II. Katerina + II. Joseph) → Bizans'ı diriltme'**.",
+        "pattern": r"yunan \\\\(grek\\\\) projesi|grek projesi|yunan projesi",
+    },
+    {
+        "id": "tar6_osmanlicilik",
+        "term": "Osmanlıcılık Fikir Akımı",
+        "sayfa": 130,
+        "tanim": "Genç Osmanlıların (Jön Türkler) savunduğu akım; dil, din, ırk farkı gözetmeden herkesi **eşit haklı 'Osmanlı vatandaşı'** sayarak devleti dağılmaktan kurtarma fikri — yani 'tek millet, tek bayrak' hayali.\n💡 Sınav Şifresi: **Osmanlıcılık = Genç Osmanlılar = 'eşit vatandaşlık'**. Ayrıt edici: **din/ırk farkı gözetmez** (İslamcılık ve Türkçülük'ten farkı budur).",
+        "pattern": r"^Osmanlıcılık$|\\\\bosmanlıcılık fikir akımı\\\\b|\\\\bosmanlıcılık\\\\b",
+    },
+    {
+        "id": "tar6_arnavutluk_bagimsizlik",
+        "term": "Arnavutluk'un Bağımsızlığı (1912)",
+        "sayfa": 135,
+        "tanim": "1912'de I. Balkan Savaşı kargaşasından yararlanıp Osmanlı'dan ayrılan **son Balkan devleti**; bu kopuşla birlikte 'herkes Osmanlı vatandaşı olur' hayali olan **Osmanlıcılık akımı tamamen çöktü**.\n💡 Sınav Şifresi: **Arnavutluk = 1912 = son ayrılan Balkan devleti = Osmanlıcılığın çöküşü**. Kodlama: **'Arnavut → Osmanlıcılığı bitirdi'**.",
+        "pattern": r"^Arnavutluk$|\\\\barnavutluk\\\\b|\\\\b1912-1913 balkan savaşlarından faydalanarak\\\\b",
+    },
+    {
+        "id": "tar6_esham_sistemi",
+        "term": "Esham-ı Cedide (İç Borçlanma)",
+        "sayfa": 140,
+        "tanim": "Devletin nakit ihtiyacını karşılamak için **iç borçlanma** yoluyla çıkardığı faizli hazine tahvilleri; yani devletin kendi vatandaşından 'ileride gelirden pay vereceğim' diyerek borç alması — bugünkü **devlet tahvili**nin Osmanlı versiyonu.\n💡 Sınav Şifresi: **Esham-ı Cedide = İÇ borçlanma** (dış değil!). Kodlama: **'Esham = hisse senedi gibi, halka satılan faizli kâğıt'** — Düyun-u Umumiye'ye giden yolun başı.",
+        "pattern": r"esham-ı cedide|esham sistemi|esham",
+    },
+]

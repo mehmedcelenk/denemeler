@@ -87,6 +87,7 @@ body.dark-mode .btn-square-console {
 .console-tools-bar { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .console-tools-grid.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .console-tools-grid.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.console-tools-grid.grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .console-tools-grid.grid-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 
 .btn-tool-icon {

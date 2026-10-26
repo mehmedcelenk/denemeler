@@ -10,9 +10,11 @@
     "lint": "eslint src scripts/check-architecture.js *.config.js tests/browser",
     "check": "npm run lint && npm run typecheck && node scripts/check-architecture.js && node --import tsx --test tests/*.test.ts",
     "data:build": "python3 scripts/core/build_webapp.py",
+    "book:build": "python3 scripts/core/pdf_to_book.py",
     "typecheck": "tsc --noEmit",
     "test:e2e": "playwright test",
-    "validate:tarih": "python3 scripts/validate_tarih_taxonomy.py --check-map-only"
+    "test:chaos": "node --import tsx scripts/core/evren-classroom-chaos.ts",
+    "validate:tarih": "python3 scripts/taxonomy/validate_tarih_taxonomy.py --check-map-only"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",

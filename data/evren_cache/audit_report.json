@@ -1,0 +1,11 @@
+[
+  {
+    "subject": "DIN",
+    "total_questions": 616,
+    "questions_with_bubble": 608,
+    "coverage_pct": 98.7,
+    "total_bubbles": 862,
+    "removed_noise_bubbles": 0,
+    "evren_newly_enriched": 16
+  }
+]

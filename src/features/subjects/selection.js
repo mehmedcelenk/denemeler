@@ -61,6 +61,7 @@ export async function setSubject(subj) {
 
   store.setCurrentSubject(subj);
   store.clearSelectedTopicKeys();
+  store.setSelectedExamPeriod(null);
   store.setActiveSearchFilter('');
   store.setBookletFilterMode('all');
   notifyStateChange('filter:updated');

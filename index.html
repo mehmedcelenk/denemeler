@@ -112,8 +112,8 @@
 
       <div class="console-divider"></div>
 
-      <!-- 1. Satır: Özel Tıkladıkça Değişen Görünüm Ayarları (Sütun, Font, Tema, Renk) -->
-      <div class="console-tools-grid grid-4">
+      <!-- 1. Satır: Özel Tıkladıkça Değişen Görünüm Ayarları (Sütun, Font, Tema, Renk, Ses Cinsiyeti, Ses Motoru) -->
+      <div class="console-tools-grid grid-6">
         <button class="btn-tool-icon" data-action="cycle-column-count" id="btnConsoleColumnCycle" title="Sütun Düzeni (1-4)" aria-label="Sütun Sayısı">
           <span style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:12px; letter-spacing:-1px;">||</span>
         </button>
@@ -125,6 +125,15 @@
         </button>
         <button class="btn-tool-icon" data-action="cycle-accent-color" id="btnConsoleColorCycle" title="Vurgu Rengi" aria-label="Vurgu Rengi">
           <span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:#0284c7; border:1.5px solid rgba(255,255,255,0.7); box-shadow:0 0 4px #0284c7;"></span>
+        </button>
+        <button class="btn-tool-icon" data-action="cycle-tts-gender" id="btnConsoleVoiceGenderCycle" title="Seslendirici: Kadın Sesi (Erkek sesine geçmek için tıkla)" aria-label="Seslendirici Cinsiyeti" style="color:#ec4899;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 15v7"/><path d="M9 19h6"/></svg>
+        </button>
+        <button class="btn-tool-icon" data-action="cycle-tts-engine" id="btnConsoleVoiceEngineCycle" title="Ses Motoru: 1 - Cihazın Doğal Sesi (Değiştirmek için tıkla)" aria-label="Ses Motoru Seçimi" style="color:#10b981;">
+          <span style="display:flex; align-items:center; justify-content:center; gap:2px; font-weight:800; font-size:11px; font-family:'JetBrains Mono', monospace;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></svg>
+            <span id="consoleVoiceEngineBadge" style="line-height:1;">1</span>
+          </span>
         </button>
       </div>
 
@@ -194,15 +203,11 @@
         <!-- Dinamik Ders & Dönem Satırları -->
         <div class="drawer-subject-rows-container" id="drawerSubjectRowsContainer"></div>
 
-        <!-- Aksiyon Satırı: Ders Ekle (Sol) | Tümünü Aç (Orta) | Kesişim (Sağ) -->
+        <!-- Aksiyon Satırı: Ders Ekle (Sol) | Kesişim (Sağ) -->
         <div class="drawer-actions-row" id="drawerActionsRow">
           <button type="button" class="btn-drawer-action btn-add-subject" id="btnAddSubjectRow" data-action="add-subject-row" title="Yeni Ders Ekle">
             <span class="plus-icon">＋</span>
             <span>Ders Ekle</span>
-          </button>
-
-          <button type="button" class="btn-drawer-action btn-load-all" id="btnLoadAllTopics" data-action="load-all-topics" title="Tümünü Aç">
-            Tümünü Aç
           </button>
 
           <button type="button" class="btn-drawer-action btn-intersection-toggle" id="btnIntersectionToggle" data-action="toggle-intersection" title="Ortak Konular Kesişimi">
@@ -211,11 +216,20 @@
           <input type="checkbox" id="chkIntersectionSwitch" style="display:none;">
         </div>
 
-        <!-- Konu Listesi (Klasör Ağacı) -->
+        <!-- Konu Listesi / Çıkmış Sınavlar -->
         <div class="drawer-topics-section">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; gap:8px;">
             <div style="font-size:12px; font-weight:700; color:var(--paper-text-muted);" id="lblDrawerTopicHeader">
-              Konu Başlıkları:
+              Çıkmış Sınav Dönemleri:
+            </div>
+            <div style="display:flex; align-items:center; gap:6px;">
+              <button type="button" class="btn-drawer-action btn-load-all" id="btnLoadAllTopics" data-action="load-all-topics" title="Tümünü Aç">
+                Tümünü Aç
+              </button>
+              <div class="console-segmented-pill drawer-view-mode-tabs" id="drawerViewModeTabs" style="display:none; padding:2px; gap:2px;">
+                <button type="button" class="btn-segmented-pill active" style="padding:2px 7px; font-size:11px;" data-action="set-drawer-tab" data-tab="periods">Dönemler</button>
+                <button type="button" class="btn-segmented-pill" style="padding:2px 7px; font-size:11px;" data-action="set-drawer-tab" data-tab="topics">Konular</button>
+              </div>
             </div>
           </div>
           <div class="drawer-topic-list" id="drawerTopicList"></div>
@@ -247,6 +261,14 @@
         <label class="pdf-radio-label">
           <input type="radio" name="pdfKeyLocation" value="none">
           <span>Cevap anahtarı ekleme (Öğrenci sınav modu)</span>
+        </label>
+      </div>
+
+      <div class="pdf-opt-group" id="pdfEnglishOptGroup" style="display:none;">
+        <div class="pdf-opt-group-title">İngilizce Seçenekleri:</div>
+        <label class="pdf-checkbox-label">
+          <input type="checkbox" id="chkPdfInterlinear" name="pdfInterlinear">
+          <span>Çevirili (Kelimelerin altında soluk meal)</span>
         </label>
       </div>
 

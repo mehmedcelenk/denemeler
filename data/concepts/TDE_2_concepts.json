@@ -1,0 +1,317 @@
+[
+  {
+    "id": "tde2_bilinc_akisi",
+    "term": "Bilinç Akışı",
+    "sayfa": 162,
+    "tanim": "Kahramanın aklından geçenlerin **çağrışım zinciriyle, süzgeçsiz, sırasız ve mantık gözetilmeden** peş peşe aktarılmasıdır; tıpkı bir sosyal medya akışını kaydırırken konudan konuya atlayan beynimiz gibi. Cümleler **yarım kalır, dil bilgisi kuralları çiğnenir**, noktalama düzensizdir.\n💡 Sınav Şifresi: **Mantık yok, çağrışım var** — cümleler yarım ve sıçramalıdır. İç monologla karıştırma: orada **düzgün ve kurallı** düşünme vardır.",
+    "pattern": "bilinç akışı|bilinc akisi"
+  },
+  {
+    "id": "tde2_ic_konusma",
+    "term": "İç Konuşma (İç Monolog)",
+    "sayfa": 163,
+    "tanim": "Kahramanın **kendi kendine, sessizce ama düzgün ve kurallı cümlelerle** konuşmasıdır; sanki içindeki ses bir sunucu gibi anlaşılır biçimde anlatır. Anlatıcı araya girmez, söz kahramana aittir.\n💡 Sınav Şifresi: **Dil bilgisi kurallı + mantıklı sıra + tek kişi** = iç monolog. Bilinç akışından farkı: burada cümleler **tam ve düzenlidir**; diyalogdan farkı: **karşılık yoktur**.",
+    "pattern": "iç konuşma|ic konusma|iç monolog"
+  },
+  {
+    "id": "tde2_ic_cozumleme",
+    "term": "İç Çözümleme",
+    "sayfa": 163,
+    "tanim": "Anlatıcının, kahramanın **iç dünyasını, duygu ve düşüncelerini üçüncü kişi ağzıyla** okuyucuya açıklamasıdır; sanki bir psikolog hastasını tahlil ediyor gibidir. Kahraman konuşmaz, **anlatıcı onun yerine konuşur**.\n💡 Sınav Şifresi: **Anlatıcı araya girer + 3. kişi ağzı + tahlil** = iç çözümleme. İç monologla karıştırma: orada **kahramanın kendi sesi** vardır, burada **anlatıcının sesi**.",
+    "pattern": "iç çözümleme|ic cozumleme"
+  },
+  {
+    "id": "tde2_geriye_donus",
+    "term": "Geriye Dönüş (Flashback)",
+    "sayfa": 164,
+    "tanim": "Olay akışının bir anda **kesilip geçmişe sıçramasıyla** kahramanın eski bir hatırasının anlatılmasıdır; tıpkı sinemadaki flashback sahnesi gibi. Anlatı zamanı ile olay zamanı arasında **kronoloji kırılması** olur.\n💡 Sınav Şifresi: **Kronoloji kırılır + geçmişe sıçrama** = geriye dönüş. Anahtar kelimeler: 'yıllar önce', 'hatırladı ki', 'bir zamanlar'. İleriye dönüşle karıştırma: orada **geleceğe** sıçranır.",
+    "pattern": "geriye dönüş|geriye donus|flashback"
+  },
+  {
+    "id": "tde2_ozetleme",
+    "term": "Özetleme Tekniği",
+    "sayfa": 165,
+    "tanim": "Uzun zaman diliminde geçen olayların **ana hatlarıyla, kısa ve yoğun biçimde** anlatılmasıdır; GPS'in 'en kısa yol' özelliği gibi uzun mesafeyi kestirmeden geçer. Detaylar atlanır, **zaman atlaması** belirgindir.\n💡 Sınav Şifresi: **Uzun zaman + kısa anlatım + detay yok** = özetleme. 'Böylece yıllar geçti', 'aradan aylar geçti' gibi **atlama cümleleri** anahtardır.",
+    "pattern": "^Özetleme$|özetleme tekniği"
+  },
+  {
+    "id": "tde2_parodi",
+    "term": "Parodi",
+    "sayfa": 166,
+    "tanim": "Ciddi bir eserin **biçim ve üslubunun alaya alınarak** yeniden yazılmasıdır; tıpkı korku filminin korkunç sahnesini komik efektlerle ti'ye almak gibi. Amaç **güldürmek ve eleştirmektir**.\n💡 Sınav Şifresi: **Alay + ciddi eserin bozulması** = parodi. Pastişten farkı: burada **amaç gülmek/alay etmek**, orada ise **saygılı üslup taklidi** vardır.",
+    "pattern": "^Parodi$|\\\\\\\\bparodi tekniği\\\\\\\\b"
+  },
+  {
+    "id": "tde2_pastis",
+    "term": "Pastiş",
+    "sayfa": 166,
+    "tanim": "Bir yazarın **üslubunun, dilinin ve tarzının birebir taklit edilerek** yeni eser yazılmasıdır; sanki bir ressamın Mona Lisa'yı kendi fırçasıyla ama aynı teknikle çizmesi gibi. Amaç **alay değil, o tarzda yazmaktır**.\n💡 Sınav Şifresi: **Üslup taklidi + alay yok** = pastiş. Parodiden farkı: burada **saygılı taklit** vardır; amaç güldürmek değil, **o üslubu sürdürmektir**.",
+    "pattern": "^Pastiş$|^Pastis$|\\\\\\\\bpastiş tekniği\\\\\\\\b"
+  },
+  {
+    "id": "tde2_diyalog",
+    "term": "Diyalog Tekniği",
+    "sayfa": 164,
+    "tanim": "İki veya daha fazla karakterin **karşılıklı konuşturulmasıdır**; tıpkı bir WhatsApp yazışması gibi sözler gidip gelir, karşılıklıdır. Konuşmalar **konuşma çizgisi (—) veya tırnak** içinde verilir.\n💡 Sınav Şifresi: **Karşılıklı konuşma + konuşma çizgisi/tırnak** = diyalog. İç monologla karıştırma: orada **tek kişi** konuşur, burada **en az iki kişi** karşılıklı konuşur.",
+    "pattern": "^Diyalog$|diyalog tekniği|karşılıklı konuşma"
+  },
+  {
+    "id": "tde2_tiyatro",
+    "term": "Tiyatro",
+    "sayfa": 188,
+    "tanim": "İnsan yaşamının **sahnede canlı olarak oynanarak** seyirciye sunulduğu sanattır; tıpkı bir maçın stadyumda canlı izlenmesi gibi, her gösterim **tek ve tekrarsızdır**. **Gösterme (gösterme sanatı)** esasına dayanır, anlatmaz.\n💡 Sınav Şifresi: **Sahne + seyirci + canlı oyun** = tiyatro. Anahtar: 'sahnelemek', 'perde', 'oyuncu'. Roman/hikâyeden farkı: **gösterme sanatıdır**, anlatmaz.",
+    "pattern": "\\\\\\\\btiyatro[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_kulis",
+    "term": "Kulis",
+    "sayfa": 190,
+    "tanim": "Sahnenin **arkasındaki, seyircinin görmediği gizli bölge** olup oyuncuların sahneye çıkmadan önce hazırlandığı yerdir; tıpkı bir futbolcunun maça çıkmadan önce soyunma odasında beklemesi gibi.\n💡 Sınav Şifresi: **Sahne arkası + hazırlık/bekleme yeri** = kulis. Sahne değil, **sahnenin gerisi** olduğunu unutma; suflörle karıştırma: kulis **mekândır**, suflör **kişidir**.",
+    "pattern": "^Kulis$|\\\\\\\\bkulis[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_suflor",
+    "term": "Suflör",
+    "sayfa": 190,
+    "tanim": "Sahnede rolünü unutan oyuncuya **fısıldayarak sözlerini hatırlatan** gizli yardımcıdır; tıpkı sınavda arkadaşının kulağına cevabı fısıldaması gibi ama seyirci duymaz. Genellikle **kulis veya sahne altındaki özel bölmeden** görev yapar.\n💡 Sınav Şifresi: **Fısıldayarak hatırlatma + seyirci duymaz** = suflör. Kulis (bekleme yeri) ile karıştırma: suflör **görevli kişidir**, kulis **mekândır**.",
+    "pattern": "^Suflör$|^Suflor$|\\\\\\\\bsuflör[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_tirat",
+    "term": "Tirat",
+    "sayfa": 191,
+    "tanim": "Bir oyuncunun sahnede **tek başına, kesintisiz ve coşkulu** biçimde yaptığı uzun konuşmadır; tıpkı bir mitingde kürsüye çıkıp tek nefeste ateşli bir konuşma yapmak gibi. Duygu yoğundur, **karşılık beklemez**.\n💡 Sınav Şifresi: **Tek kişi + uzun + coşkulu + kesintisiz** = tirat. Diyalogla karıştırma: burada **karşılık yok**, tek başına uzun nutuk vardır; iç monologla karıştırma: tirat **sahnede sesli** söylenir.",
+    "pattern": "^Tirat$|\\\\\\\\btirat[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_mimik",
+    "term": "Mimik",
+    "sayfa": 191,
+    "tanim": "**Yüz kaslarıyla** yapılan anlatım; sözün sustuğu yerde gözlerin, kaşların ve ağzın konuşmasıdır. Tıpkı bir **emoji** gibi, tek bir kaş kalkışı bile 'şaşırdım' der.\n💡 Sınav Şifresi: **Yüz** = mimik, **beden/el-kol** = jest. Karıştırma!",
+    "pattern": "^Mimik$|\\\\\\\\bmimik[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_jest",
+    "term": "Jest",
+    "sayfa": 191,
+    "tanim": "Anlatımı güçlendirmek için **el, kol ve başla** yapılan anlamlı hareketlerdir; sözün yanına konan görsel noktalama işaretidir. Fatih'in 'gemileri karadan yürütün' derken eliyle yön göstermesi gibi.\n💡 Sınav Şifresi: **El-kol-baş** hareketi = jest. Yüzle yapılanı mimikle karıştırma!",
+    "pattern": "^Jest$|\\\\\\\\bjest[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_dekor",
+    "term": "Dekor",
+    "sayfa": 192,
+    "tanim": "Sahnede oyunun geçtiği **yeri ve dönemi** canlandıran eşya ve panoların bütünüdür; bir film setindeki 'arka plan' gibi. Dizi çekimlerindeki yapay İstanbul sokakları gibi düşün.\n💡 Sınav Şifresi: **Sahnedeki çevre/eşya** = dekor. Oyuncunun üstündeki giysi ise kostüm!",
+    "pattern": "^Dekor$|\\\\\\\\bdekor[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_kostum",
+    "term": "Kostüm",
+    "sayfa": 192,
+    "tanim": "Oyuncunun canlandırdığı karakterin **kimliğini, dönemini ve statüsünü** yansıtan özel giysidir; bir kostüm partisinde 'kim olduğunu' anlatan kıyafet gibi.\n💡 Sınav Şifresi: **Oyuncunun üstündeki giysi** = kostüm. Sahnede çevreyi kuran eşya ise dekor!",
+    "pattern": "^Kostüm$|^Kostum$|\\\\\\\\bkostüm[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_biyografi",
+    "term": "Biyografi (Yaşam Öyküsü)",
+    "sayfa": 218,
+    "tanim": "Tanınmış bir kişinin hayatını **belgelere dayanarak, nesnel (tarafsız) bir tutumla ve üçüncü kişi ağzıyla ('o')** anlatan öğretici türdür; bir belgesel gibi dışarıdan anlatılır. **Kurgu değil, gerçek** esastır.\n💡 Sınav Şifresi: **'O' ağzı + belge + nesnellik** = biyografi. 'Ben' ağzıysa otobiyografi, roman gibi kurguysa biyografik roman!",
+    "pattern": "^Biyografi$|\\\\\\\\bbiyografi[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\byaşam öyküsü\\\\\\\\b"
+  },
+  {
+    "id": "tde2_otobiyografi",
+    "term": "Otobiyografi (Öz Yaşam Öyküsü)",
+    "sayfa": 220,
+    "tanim": "Kişinin **kendi hayatını, birinci tekil şahıs ('ben') ağzıyla** anlattığı türdür; sosyal medyada kendi hikâyesini anlatan bir 'ben anlatısı' gibi. Yazar ile anlatıcı **aynı kişidir**.\n💡 Sınav Şifresi: **'Ben' ağzı + yazar=anlatıcı** = otobiyografi. 'O' ağzı + belge = biyografi!",
+    "pattern": "^Otobiyografi$|\\\\\\\\botobiyografi[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\böz yaşam öyküsü\\\\\\\\b"
+  },
+  {
+    "id": "tde2_monografi",
+    "term": "Monografi",
+    "sayfa": 222,
+    "tanim": "Bir kişiyi, tek bir eseri veya özel bir konuyu **derinlemesine ve bilimsel** inceleyen araştırma yazısıdır; bir konuyu büyüteçle didik didik eden doktora tezi gibi.\n💡 Sınav Şifresi: **Tek konu + derinlemesine + bilimsel** = monografi. Yüzeysel tanıtım değil, 'mercek altına alma'!",
+    "pattern": "^Monografi$|\\\\\\\\bmonografi[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_tezkire",
+    "term": "Tezkire (Şuara Tezkiresi)",
+    "sayfa": 224,
+    "tanim": "Divan edebiyatında **şairlerin (ve kimi zaman devlet büyüklerinin) hayatlarını ve eserlerini** bir araya getiren geleneksel biyografi antolojisidir; bugünün 'ünlü şairler ansiklopedisi' gibi. En yaygını **şuara (şairler) tezkiresidir**.\n💡 Sınav Şifresi: **Divan + şairler + antoloji** = tezkire (şuara tezkiresi). Modern biyografi değil, geleneksel tür!",
+    "pattern": "\\\\\\\\btezkire[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bşuara tezkiresi\\\\\\\\b"
+  },
+  {
+    "id": "tde2_portre",
+    "term": "Portre",
+    "sayfa": 225,
+    "tanim": "Bir kişinin **dış görünüşünü (fiziksel portre)** veya **ruhsal/karakter özelliklerini (ruhi portre)** tasvir eden yazı türüdür; fotoğrafın kelimelerle çekilmiş hâli gibi. **Olay anlatmaz, kişiyi betimler.**\n💡 Sınav Şifresi: **Fiziksel = dış, ruhi = iç** portre. Hayat hikâyesi değil, sadece 'tasvir'!",
+    "pattern": "^Portre$|\\\\\\\\bfiziksel portre\\\\\\\\b|\\\\\\\\bruhi portre\\\\\\\\b"
+  },
+  {
+    "id": "tde2_mektup",
+    "term": "Mektup",
+    "sayfa": 244,
+    "tanim": "Uzaktaki kişi veya kurumlar arasında **haberleşmeyi ve duygu paylaşımını** sağlayan yazılı iletişim türüdür; eski zamanların 'WhatsApp'ı' gibi. **Hitap, imza ve tarih** gibi ögeleri taşır.\n💡 Sınav Şifresi: **Uzak + haberleşme + hitap** = mektup. Dijital ortamdaysa e-posta!",
+    "pattern": "^Mektup$|\\\\\\\\bmektup[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_eposta",
+    "term": "E-posta (Elektronik Posta)",
+    "sayfa": 246,
+    "tanim": "İnternet üzerinden **dijital ortamda** metin, görsel ve dosya göndermeyi sağlayan çağdaş mektup türüdür; mektubun torununun torunu.\n💡 Sınav Şifresi: **İnternet + dijital + dosya ekleme** = e-posta. Kâğıt-kalem işi değil!",
+    "pattern": "e-posta|elektronik posta"
+  },
+  {
+    "id": "tde2_gunluk",
+    "term": "Günlük (Günce)",
+    "sayfa": 268,
+    "tanim": "Kişinin yaşadıklarını ve duygularını **günü gününe, tarih belirterek** yazdığı samimi kişisel türdür; telefonun 'notlar' uygulamasına her akşam içini dökmesi gibi. **Yazar ile anlatıcı aynı kişidir.**\n💡 Sınav Şifresi: **Tarih + günü gününe + samimi 'ben'** = günlük. Anıdan farkı: anı sonradan, günlük o gün yazılır!",
+    "pattern": "^Günlük$|^Gunluk$|\\\\\\\\bgünce[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bgünlük türü\\\\\\\\b"
+  },
+  {
+    "id": "tde2_blog",
+    "term": "Blog (Web Günlüğü)",
+    "sayfa": 270,
+    "tanim": "İnternette kişisel düşüncelerini **en yeniden en eskiye doğru** paylaştığın dijital günlüktür; tıpkı Instagram'da en son fotoğrafın en üstte görünmesi gibi.\n💡 Sınav Şifresi: **Ters kronolojik sıra** + **web günlüğü** = Blog. 'En yeni en üstte' ifadesini görürsen gözün kapalı işaretle.",
+    "pattern": "^Blog$|\\\\\\\\bblog[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bweb günlüğü\\\\\\\\b"
+  },
+  {
+    "id": "tde2_haber_yazisi",
+    "term": "Haber Yazısı",
+    "sayfa": 248,
+    "tanim": "Güncel bir olayı **5N1K** (ne, nerede, ne zaman, nasıl, neden, kim) süzgecinden geçirip **tarafsız ve nesnel** dille aktaran medya yazısıdır; dedektif gibi sadece gerçeği raporlar, yorum katmaz. Haber yazısında **başlık, spot, giriş ve gövde** bölümleri bulunur.\n💡 Sınav Şifresi: **5N1K + nesnellik/tarafsızlık** = Haber. 'Yorum yok, sadece gerçek' vurgusu ayırt edici anahtardır; 'yorum katılmış' ifadesi geçerse haber değildir.",
+    "pattern": "^Haber yazısı$|haber yazısı[a-zçğıöşü]*|5n1k"
+  },
+  {
+    "id": "tde2_sohbet",
+    "term": "Sohbet (Söyleşi)",
+    "sayfa": 250,
+    "tanim": "Yazarın okuyucuyla **karşılıklı konuşuyormuş gibi** samimi, sıcak bir dille yazdığı, **konu bütünlüğü olmayan** yazıdır; tıpkı bir arkadaşınla çay içerken sohbet etmen gibi. Sohbetin **makaleden farkı** samimi üslubu ve okuyucuya soru sorarak onu konuşmaya katmasıdır.\n💡 Sınav Şifresi: **'Sanki karşısındakiyle konuşuyor'** + **samimi üslup** + **soru cümleleri** = Sohbet. 'Sen' hitabı ve 'diyebilirsiniz ki' kalıbı görülürse sohbettir; ciddi ve kanıtlayıcı üslup varsa makaledir.",
+    "pattern": "^Sohbet$|\\\\\\\\bsöyleşi[a-zçğıöşü]*\\\\\\\\b"
+  },
+  {
+    "id": "tde2_tecahuluarif",
+    "term": "Tecâhül-i Ârif (Bilmezden Gelme)",
+    "sayfa": 204,
+    "tanim": "Şairin **bildiği halde bilmezden gelerek** nükte yapmasıdır; tıpkı bir arkadaşının sürpriz partiyi bildiği halde 'Aa, ne partisi?' demesi gibi.\n💡 Sınav Şifresi: **'Bilmezden gelme'** + **nükte/şaşkınlık** = Tecâhül-i Ârif. 'Bilip de bilmiyormuş gibi yapma' kalıbını görünce işaretle.",
+    "pattern": "^Tecahülüarif$|tecâhül-i ârif|tecahulüarif|bilmezden gelme"
+  },
+  {
+    "id": "tde2_telmih",
+    "term": "Telmih (Hatırlatma)",
+    "sayfa": 205,
+    "tanim": "Söz arasında **herkesçe bilinen** tarihî bir olaya, efsaneye, kutsal kitaba veya ayet/hadise **üstü kapalı işaret** etme sanatıdır; tıpkı filmlerdeki flashback (geri dönüş) sahneleri gibi geçmişi hatırlatır. Telmihte **ayrıntı verilmez**, sadece hatırlatma yapılır.\n💡 Sınav Şifresi: **'Hatırlatma'** + **üstü kapalı gönderme** = Telmih. Açıkça anlatmaz, sadece ima eder; 'Kerbela', 'Ferhat', 'Yusuf' gibi isimler geçerse telmihtir. İki kavramın ayrıntılı anlatıldığı **teşbih** ile karıştırma.",
+    "pattern": "^Telmih$|\\\\\\\\btelmih sanatı\\\\\\\\b|\\\\\\\\bhatırlatma sanatı\\\\\\\\b"
+  },
+  {
+    "id": "tde2_tenasup",
+    "term": "Tenâsüp (Uygunluk)",
+    "sayfa": 206,
+    "tanim": "Anlamca **birbiriyle ilişkili** sözcüklerin (gül, bülbül, bahçe gibi) **zıtlık olmadan** bir arada kullanılmasıdır; tıpkı bir futbol takımının aynı formayla sahaya çıkması gibi uyum içindedir. Tenâsupta sözcükler **aynı anlam alanına** aittir.\n💡 Sınav Şifresi: **'Uygunluk'** + **ilişkili sözcükler bir arada** = Tenâsüp. Zıtlık varsa **tezat**, uyum varsa **tenâsüp**tür; 'gül-bülbül' uyum, 'gül-diken' zıtlıktır.",
+    "pattern": "^Tenâsüp$|^Tenasüp$|\\\\\\\\btenasüp sanatı\\\\\\\\b"
+  },
+  {
+    "id": "tde2_miratul_memalik",
+    "term": "Mir’atü’l-Memâlik",
+    "sayfa": 252,
+    "tanim": "Seydi Ali Reis'in **Hindistan'dan İstanbul'a** uzanan dönüş serüvenini anlattığı, Türk edebiyatının **ilk gezi yazısı** kabul edilen 16. yüzyıl şaheseridir. Eser, **Hint Okyanusu, Basra, Bağdat ve Anadolu** güzergâhını kapsar.\n💡 Sınav Şifresi: **Seydi Ali Reis** + **ilk gezi yazısı** + **16. yüzyıl** = Mir'atü'l-Memâlik. 'İlk gezi yazısı' ifadesi altın anahtardır; 'Memâlik' = ülkelerin aynası anlamındadır.",
+    "pattern": "mir’atü’l-memalik|miratül memalik|seydi ali reis"
+  },
+  {
+    "id": "tde2_suyu_arayan_adam",
+    "term": "Suyu Arayan Adam",
+    "sayfa": 222,
+    "tanim": "Şevket Süreyya Aydemir'in **kendi hayatını** (I. Dünya Savaşı, Orta Asya, Cumhuriyet'in kuruluşu) anlattığı ünlü **otobiyografi**sidir; tıpkı bir yönetmenin kendi hayatını film yapması gibi.\n💡 Sınav Şifresi: **Şevket Süreyya Aydemir** + **otobiyografi** = Suyu Arayan Adam. 'Kendi hayatını anlatma' vurgusu ayırt edicidir.",
+    "pattern": "suyu arayan adam|şevket süreyya aydemir"
+  },
+  {
+    "id": "tde2_adi_aylin",
+    "term": "Adı: Aylin",
+    "sayfa": 224,
+    "tanim": "Ayşe Kulin'in, **prenseslikten Amerikan ordusuna** uzanan sıra dışı bir hayatı anlattığı ünlü **biyografik romanı**dır. Eser, Aylin Devrimel'in gerçek yaşam öyküsünü roman tekniğiyle sunar.\n💡 Sınav Şifresi: **Ayşe Kulin** + **biyografik roman** + **prenseslikten Amerikan ordusuna** = Adı: Aylin. 'Sıra dışı hayat hikâyesi' kalıbı anahtardır; biyografi değil **biyografik roman** olduğunu unutma.",
+    "pattern": "adı: aylin|adi: aylin|ayşe kulin"
+  },
+  {
+    "id": "tde2_viran_daglar",
+    "term": "Viran Dağlar",
+    "sayfa": 168,
+    "tanim": "Necati Cumalı'nın **Balkan Savaşı ve Rumeli göçleri** dönemindeki tarihî ve insani dramları işlediği ünlü romanıdır. Eser, **93 Harbi'nden Cumhuriyet'e** uzanan süreçte Rumeli Türklerinin yaşadığı göç acısını anlatır.\n💡 Sınav Şifresi: **Necati Cumalı** + **Balkan Savaşı/Rumeli göçü** = Viran Dağlar. 'Göç dramı' ifadesiyle eşleştir; 'viran' = harap olmuş anlamıyla göçün yıkımını simgeler.",
+    "pattern": "viran dağlar|viran daglar|necati cumalı"
+  },
+  {
+    "id": "tde2_gazi_pasa",
+    "term": "Gazi Paşa",
+    "sayfa": 170,
+    "tanim": "Attilâ İlhan'ın **Millî Mücadele** yıllarını **Mustafa Kemal Atatürk merkezinde** anlattığı **nehir romanı**dır. Eser, Atatürk'ün Samsun'a çıkışından Cumhuriyet'in ilanına uzanan süreci kurgusal bir dille işler.\n💡 Sınav Şifresi: **Attilâ İlhan** + **Mustafa Kemal merkezli** + **nehir roman** = Gazi Paşa. 'Kurtuluş Savaşı + Atatürk' ikilisi anahtardır; nehir roman = aynı dönemi/geniş zamanı işleyen çok ciltli eser.",
+    "pattern": "gazi paşa|gazi pasa|attilâ ilhan"
+  },
+  {
+    "id": "tde2_cevat_fehmi",
+    "term": "Cevat Fehmi Başkut",
+    "sayfa": 194,
+    "tanim": "Cumhuriyet Dönemi tiyatro yazarı; **yurt dışında oyunu sahnelenen ilk Türk oyun yazarı** olup **'Paydos'**, **'Buzlar Çözülmeden'** ve **'Küçük Şehir'** eserlerinin sahibidir. Oyunlarında **toplumsal eleştiri** ve **hiciv** öne çıkar.\n💡 Sınav Şifresi: **Cevat Fehmi Başkut** + **Paydos** + **Buzlar Çözülmeden** + **yurt dışında sahnelenen ilk Türk oyunu**. 'Paydos' ismini görünce direkt bu yazarı işaretle; 'Buzlar Çözülmeden' bir **hiciv** oyunudur.",
+    "pattern": "cevat fehmi başkut|cevat fehmi"
+  },
+  {
+    "id": "tde2_turgut_ozakman",
+    "term": "Turgut Özakman",
+    "sayfa": 195,
+    "tanim": "**'Şu Çılgın Türkler'** ile Kurtuluş Savaşı'nı belge-roman tarzında anlatan, tiyatroda **'Töre'**, **'Pembe Evin Kaderi'** gibi oyunlarıyla tanınan Cumhuriyet Dönemi yazarı; adeta tarihi belgesel gibi kurgulayan bir **'tarih sevdalısı'** düşün.\n💡 Sınav Şifresi: 'Şu Çılgın Türkler' = Turgut Özakman; belge-roman + 'Töre' oyunu denince akla o gelir.",
+    "pattern": "turgut özakman|turgut ozakman"
+  },
+  {
+    "id": "tde2_orhan_asena",
+    "term": "Orhan Asena",
+    "sayfa": 196,
+    "tanim": "Tarihten ve mitolojiden esinlenen trajedileriyle **'Türk tiyatrosunun Shakespeare'i'** sayılan Cumhuriyet Dönemi oyun yazarı; **'Hürrem Sultan'**, **'Tohum ve Toprak'**, **'Kösem Sultan'** onun imzası.\n💡 Sınav Şifresi: 'Türk tiyatrosunun Shakespeare'i' + tarihî trajedi + 'Hürrem Sultan' = Orhan Asena; saray/kadın temalı trajedi denince bu kod.",
+    "pattern": "orhan asena"
+  },
+  {
+    "id": "tde2_vedat_nedim_tor",
+    "term": "Vedat Nedim Tör",
+    "sayfa": 197,
+    "tanim": "Cumhuriyet Dönemi oyun yazarı ve düşünürü; **'Kör'** ve **'İşsizler'** oyunlarıyla tanınır, aynı zamanda **Kadro dergisinin kurucularından** biridir.\n💡 Sınav Şifresi: 'Kör' + 'İşsizler' + Kadro dergisi = Vedat Nedim Tör; kısa adlı toplumsal oyunlar denince bu isme git.",
+    "pattern": "vedat nedim tör|vedat nedim tor"
+  },
+  {
+    "id": "tde2_falih_rifki_atay",
+    "term": "Falih Rıfkı Atay",
+    "sayfa": 254,
+    "tanim": "Atatürk'ün yakınındaki gazeteci-yazar; **'Çankaya'** anısı ve **'Zeytindağı'** ile Cumhuriyet'in tanığı bir kalem; ayrıca **'Ateş ve Güneş'**, **'Batış Yılları'** gibi anı-hatıra türünde eserler vermiştir.\n💡 Sınav Şifresi: 'Çankaya' (anı) + 'Zeytindağı' = Falih Rıfkı Atay; Atatürk'ün sofrasındaki gazeteci ve anı yazarı denince o.",
+    "pattern": "falih rıfkı atay|falih rifki atay|falih rıfkı"
+  },
+  {
+    "id": "tde2_memduh_sevket",
+    "term": "Memduh Şevket Esendal",
+    "sayfa": 172,
+    "tanim": "Türk edebiyatında **Çehov tarzı durum hikâyesinin** öncüsü; **'Ayaşlı ve Kiracıları'** romanı ve **'Otlakçı'** hikâyesiyle bilinir — olay değil, gündelik hayatın kesitini ve insanın iç dünyasını anlatır.\n💡 Sınav Şifresi: 'Çehov tarzı' + 'Ayaşlı ve Kiracıları' = Memduh Şevket Esendal; durum hikâyesi denince bu isim.",
+    "pattern": "memduh şevket esendal|memduh şevket"
+  },
+  {
+    "id": "tde2_is_fiili",
+    "term": "İş (Kılış) Fiili",
+    "sayfa": 174,
+    "tanim": "Öznenin kendi iradesiyle yaptığı ve bir nesneyi etkilediği eylem; fiile **'neyi/kimi'** sorusunu sorunca cevap alıyorsan bu bir iş (kılış) fiilidir (okumak, kırmak, yazmak).\n💡 Sınav Şifresi: 'Neyi/kimi' sorusuna cevap veren + iradeye bağlı = İŞ (KILIŞ) fiili; nesne alıyorsa kılış.",
+    "pattern": "^İş$|iş fiili|kılış fiili"
+  },
+  {
+    "id": "tde2_durum_fiili",
+    "term": "Durum Fiili",
+    "sayfa": 174,
+    "tanim": "Öznenin iradesiyle olan ama **nesne almayan** fiil; 'neyi/kimi' sorusuna cevap vermez, sadece bir hâli anlatır (uyumak, oturmak, gülmek, ağlamak).\n💡 Sınav Şifresi: İrade var + nesne yok = DURUM fiili; 'neyi' sorusuna cevap vermiyorsa durum.",
+    "pattern": "^Durum$|durum fiili"
+  },
+  {
+    "id": "tde2_olus_fiili",
+    "term": "Oluş Fiili",
+    "sayfa": 175,
+    "tanim": "Öznenin iradesi **dışında**, zamanla kendiliğinden gerçekleşen değişim; doğa olayları ve bozulmalar bu gruptadır (sararmak, paslanmak, bayatlamak, büyümek).\n💡 Sınav Şifresi: İrade YOK + zamanla değişim = OLUŞ fiili; 'kendiliğinden oldu' diyorsan oluş.",
+    "pattern": "oluş fiili|olus fiili"
+  },
+  {
+    "id": "tde2_yer_yon_zarfi",
+    "term": "Yer-Yön Zarfı",
+    "sayfa": 176,
+    "tanim": "Fiilin yönünü belirten, **hal eki almadan** yalın kullanılan sözcükler (içeri, dışarı, yukarı, aşağı, ileri, geri); 'içeriye' dersen isim olur, 'içeri' dersen zarftır.\n💡 Sınav Şifresi: Yalın hal + yön bildiriyorsa = yer-yön ZARFI; '-e/-de/-den' eki alırsa isim olur, dikkat!",
+    "pattern": "yer-yön|yer yön zarfı"
+  }
+]

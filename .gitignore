@@ -1,6 +1,8 @@
 # Büyük PDF Arşivleri
 docs/kaynak_pdfler/
 docs/arsiv/
+docs/dersler/**/*_sorumlu.pdf
+*_sorumlu.pdf
 scripts/scratch/
 
 # Python derleme ve önbellek
@@ -17,6 +19,12 @@ Thumbs.db
 # Frontend dependencies and build output
 node_modules/
 dist/
+# Test çıktıları
 playwright-report/
 test-results/
+tests/results/
 .aider*
+.env
+.env.*
+!.env.example
+

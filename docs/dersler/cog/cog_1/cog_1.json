@@ -1,0 +1,11 @@
+{
+  "ders": "Coğrafya 1",
+  "subject": "COG",
+  "donem": 1,
+  "sorumlu_sayfa_araligi": [
+    1,
+    120
+  ],
+  "toplam_sayfa": 120,
+  "kaynak_pdf": "cografya_1_2024.pdf"
+}

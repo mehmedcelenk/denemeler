@@ -1,6 +1,7 @@
-import { state, store, type AiExplanationEntry } from '../../app/state.ts';
+import { state, store, type AiExplanationEntry, type AiExplanationMessage } from '../../app/state.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 import { escapeHtml } from '../../shared/escape.ts';
+import { formatAiMarkdown } from '../../shared/simple-markdown.ts';
 import type { Question } from '../../data/question.ts';
 
 let activeAiBubbleEl: HTMLElement | null = null;
@@ -13,10 +14,16 @@ export interface SafeAiAskPayload {
   readonly subject: string;
   readonly topic: string;
   readonly userQuery: string;
+  readonly history?: ReadonlyArray<{ readonly query: string; readonly reply: string }>;
 }
 
 /** Zero-Knowledge Garantisi: dogru_cevap ve dogru_nedeni ASLA yüke dahil edilmez. */
-export function buildZeroKnowledgePayload(q: Question, userQuery: string, fallbackSubject?: string | null): SafeAiAskPayload {
+export function buildZeroKnowledgePayload(
+  q: Question,
+  userQuery: string,
+  fallbackSubject?: string | null,
+  history?: ReadonlyArray<{ readonly query: string; readonly reply: string }>,
+): SafeAiAskPayload {
   const choices: Record<string, string> = {
     A: String(q.secenekler?.A || '').slice(0, 500),
     B: String(q.secenekler?.B || '').slice(0, 500),
@@ -30,6 +37,7 @@ export function buildZeroKnowledgePayload(q: Question, userQuery: string, fallba
     subject: String(q.ders || fallbackSubject || ''),
     topic: String(q.alt_konu || q.ana_konu || ''),
     userQuery: userQuery.trim().slice(0, 250),
+    history: (history && history.length > 0) ? history : undefined,
   };
 }
 
@@ -47,10 +55,23 @@ export function loadSavedAiExplanations(): void {
       if (!Number.isInteger(qid) || qid <= 0 || !v || typeof v !== 'object') continue;
       const item = v as Record<string, unknown>;
       if (typeof item.query === 'string' && item.query.trim() && typeof item.reply === 'string' && item.reply.trim()) {
+        const history: AiExplanationMessage[] = [];
+        if (Array.isArray(item.history)) {
+          for (const h of item.history) {
+            if (h && typeof h === 'object' && typeof h.query === 'string' && typeof h.reply === 'string') {
+              history.push({
+                query: h.query.trim().slice(0, 250),
+                reply: String(h.reply).trim(),
+                updatedAt: typeof h.updatedAt === 'number' ? h.updatedAt : Date.now(),
+              });
+            }
+          }
+        }
         valid[qid] = {
           query: item.query.trim().slice(0, 250),
           reply: item.reply.trim(),
           updatedAt: typeof item.updatedAt === 'number' && Number.isFinite(item.updatedAt) ? item.updatedAt : Date.now(),
+          history: history.length > 0 ? history : undefined,
         };
       }
     }
@@ -64,11 +85,101 @@ export function toggleAiAskBox(qid: number): void {
   const box = document.getElementById(`aiAskBox_${qid}`);
   if (!box) return;
   const isHidden = box.style.display === 'none' || !box.style.display;
-  box.style.display = isHidden ? 'block' : 'none';
+  box.style.display = isHidden ? 'flex' : 'none';
   if (isHidden) {
     (document.getElementById(`aiAskInput_${qid}`) as HTMLInputElement | null)?.focus();
-    if (state.aiExplanations[qid]) showAiReplyBubble(qid);
+    renderInlineChatReply(qid);
   }
+}
+
+const svgLucideTrash = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>';
+const svgAstrolabe = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="3.2" r="1.7"/><path d="M10 5.4c.6-.3 1.3-.4 2-.4s1.4.1 2 .4"/><circle cx="12" cy="13.5" r="7.5"/><circle cx="12" cy="13.5" r="4.2"/><line x1="6.8" y1="18.7" x2="17.2" y2="8.3"/><circle cx="12" cy="13.5" r="1" fill="currentColor"/></svg>';
+
+export function cleanAiReplyText(raw: string): string {
+  return raw ? raw.replace(/^(?:💡\s*)?(?:\*|_)?(?:Numûne-i Hiyel|Numune-i Hiyel|Hiyel|AI Öğretmen|İpucu)\s*(?:\*|_)?:\s*(?:\*|_)?/i, '').trim() : '';
+}
+
+/** Belirli bir soruyu (en yeni veya geçmişteki) siler */
+export function deleteAiTurn(qid: number, turnIdx = -1): void {
+  const entry = state.aiExplanations[qid];
+  if (!entry) return;
+
+  if (turnIdx === -1) {
+    if (entry.history && entry.history.length > 0) {
+      const nextActive = entry.history[0];
+      const remaining = entry.history.slice(1);
+      store.setAiExplanation(qid, {
+        query: nextActive.query,
+        reply: nextActive.reply,
+        updatedAt: nextActive.updatedAt || Date.now(),
+        history: remaining.length > 0 ? remaining : undefined,
+      });
+    } else {
+      store.clearAiExplanation(qid);
+    }
+  } else if (entry.history && entry.history[turnIdx]) {
+    const newHistory = [...entry.history];
+    newHistory.splice(turnIdx, 1);
+    store.setAiExplanation(qid, {
+      ...entry,
+      history: newHistory.length > 0 ? newHistory : undefined,
+    });
+  }
+
+  syncAiQuestionDomState(qid);
+  renderInlineChatReply(qid);
+}
+
+/** Soru altındaki chat kartını günceller veya render eder */
+export function renderInlineChatReply(qid: number): void {
+  if (typeof document === 'undefined') return;
+  const card = document.getElementById(`aiChatReply_${qid}`);
+  const entry = state.aiExplanations[qid];
+  if (!card) return;
+  if (!entry) {
+    card.style.display = 'none';
+    card.innerHTML = '';
+    return;
+  }
+  card.style.display = 'flex';
+
+  const historyHtml = (entry.history && entry.history.length > 0)
+    ? `
+      <div class="ai-chat-history-stack">
+        ${entry.history.map((hist, idx) => `
+          <details class="ai-history-turn" id="aiHist_${qid}_${idx}">
+            <summary class="ai-history-turn-summary">
+              <button type="button" class="btn-bubble-delete" data-action="delete-ai-turn" data-qid="${qid}" data-turn-idx="${idx}" title="Bu Soruyu Sil" aria-label="Bu Soruyu Sil">
+                ${svgLucideTrash}
+              </button>
+              <span class="ai-chat-bubble ai-bubble-user is-history-bubble">
+                <span class="ai-bubble-text">${escapeHtml(hist.query)}</span>
+                <span class="ai-bubble-chevron">›</span>
+              </span>
+            </summary>
+            <div class="ai-chat-bubble ai-bubble-bot is-history-reply">
+              <div class="ai-bot-content">${formatAiMarkdown(cleanAiReplyText(hist.reply))}</div>
+            </div>
+          </details>
+        `).join('')}
+      </div>
+    `
+    : '';
+
+  card.innerHTML = `
+    <div class="ai-user-bubble-row">
+      <button type="button" class="btn-bubble-delete" data-action="delete-ai-turn" data-qid="${qid}" data-turn-idx="-1" title="Bu Soruyu Sil" aria-label="Bu Soruyu Sil">
+        ${svgLucideTrash}
+      </button>
+      <div class="ai-chat-bubble ai-bubble-user">
+        <span class="ai-bubble-text">${escapeHtml(entry.query)}</span>
+      </div>
+    </div>
+    <div class="ai-chat-bubble ai-bubble-bot">
+      <div class="ai-bot-content">${formatAiMarkdown(cleanAiReplyText(entry.reply))}</div>
+    </div>
+    ${historyHtml}
+  `;
 }
 
 function syncAiQuestionDomState(qid: number): void {
@@ -78,7 +189,7 @@ function syncAiQuestionDomState(qid: number): void {
   document.querySelectorAll<HTMLElement>(`#qnum_${qid}`).forEach(el => {
     el.classList.toggle('has-ai-reply', hasReply);
     el.classList.toggle('is-ai-pending', isPending);
-    el.title = hasReply ? 'AI Öğretmen yanıtını görmek için dokun' : '';
+    el.title = hasReply ? 'Numûne-i Hiyel yanıtını açıp kapatmak için dokun' : '';
   });
   document.querySelectorAll<HTMLElement>(`#btnAiAsk_${qid}`).forEach(btn => {
     btn.classList.toggle('has-ai-reply', hasReply);
@@ -101,10 +212,60 @@ export async function submitAiQuestion(qid: number): Promise<void> {
   lastCooldownAt.set(qid, now);
   store.setPendingAiQuestion(qid, true);
   syncAiQuestionDomState(qid);
-  const box = document.getElementById(`aiAskBox_${qid}`);
-  if (box) box.style.display = 'none';
 
-  const payload = buildZeroKnowledgePayload(q, rawQuery, state.currentSubject);
+  const existingEntry = state.aiExplanations[qid];
+  const historyForPayload: Array<{ query: string; reply: string }> = [];
+  if (existingEntry) {
+    if (existingEntry.history && Array.isArray(existingEntry.history)) {
+      const pastChronological = [...existingEntry.history].reverse();
+      for (const h of pastChronological) historyForPayload.push({ query: h.query, reply: h.reply });
+    }
+    historyForPayload.push({ query: existingEntry.query, reply: existingEntry.reply });
+  }
+
+  // Yeni soruyu en üstte göster; önceki soruları altta '>' akordeon olarak topla
+  const card = document.getElementById(`aiChatReply_${qid}`);
+  if (card) {
+    card.style.display = 'flex';
+    const pendingHistory: Array<{ query: string; reply: string }> = [];
+    if (existingEntry) {
+      pendingHistory.push({ query: existingEntry.query, reply: existingEntry.reply });
+      if (existingEntry.history) pendingHistory.push(...existingEntry.history);
+    }
+    const historyHtml = pendingHistory.length > 0
+      ? `
+        <div class="ai-chat-history-stack">
+          ${pendingHistory.map((hist, idx) => `
+            <details class="ai-history-turn" id="aiHistPending_${qid}_${idx}">
+              <summary class="ai-history-turn-summary">
+                <span class="ai-chat-bubble ai-bubble-user is-history-bubble">
+                  <span class="ai-bubble-text">${escapeHtml(hist.query)}</span>
+                  <span class="ai-bubble-chevron">›</span>
+                </span>
+              </summary>
+              <div class="ai-chat-bubble ai-bubble-bot is-history-reply">
+                ${formatAiMarkdown(hist.reply)}
+              </div>
+            </details>
+          `).join('')}
+        </div>
+      `
+      : '';
+
+    card.innerHTML = `
+      <div class="ai-user-bubble-row">
+        <div class="ai-chat-bubble ai-bubble-user is-pending">
+          <span class="ai-bubble-text">${escapeHtml(rawQuery)}</span>
+        </div>
+      </div>
+      <div class="ai-chat-bubble ai-bubble-bot is-loading">
+        <span class="ai-loading-spinner">${svgAstrolabe}</span> Numûne-i Hiyel düşünüyor...
+      </div>
+      ${historyHtml}
+    `;
+  }
+
+  const payload = buildZeroKnowledgePayload(q, rawQuery, state.currentSubject, historyForPayload);
   try {
     const res = await fetch('/api/ask-ai', {
       method: 'POST',
@@ -113,94 +274,28 @@ export async function submitAiQuestion(qid: number): Promise<void> {
     });
     const data = (await res.json().catch(() => null)) as { reply?: string; error?: string } | null;
     let replyText = '';
-    if (res.ok && data?.reply) {
-      replyText = data.reply.trim();
-    } else if (data?.reply) {
-      replyText = data.reply.trim();
+    if (data?.reply) {
+      replyText = cleanAiReplyText(data.reply);
     } else if (data?.error) {
       replyText = `⚠️ Hata (${res.status}): ${data.error}`;
     } else {
       replyText = `⚠️ Sunucu yanıtı alınamadı (HTTP ${res.status}). Cloudflare Functions yapılandırmasını kontrol ediniz.`;
     }
-    store.setAiExplanation(qid, { query: payload.userQuery, reply: replyText, updatedAt: Date.now() });
+    store.appendAiQuestionReply(qid, payload.userQuery, replyText);
     if (input) input.value = '';
   } catch (err: unknown) {
     const errMessage = err instanceof Error ? err.message : String(err);
-    store.setAiExplanation(qid, {
-      query: payload.userQuery,
-      reply: `⚠️ Bağlantı hatası: ${errMessage}. Sunucuya erişilemedi.`,
-      updatedAt: Date.now(),
-    });
+    store.appendAiQuestionReply(qid, payload.userQuery, `⚠️ Bağlantı hatası: ${errMessage}. Sunucuya erişilemedi.`);
   } finally {
     store.setPendingAiQuestion(qid, false);
     syncAiQuestionDomState(qid);
-    if (document.getElementById(`qnum_${qid}`)) showAiReplyBubble(qid);
+    renderInlineChatReply(qid);
   }
 }
 
-/** Soru numarasının üzerinde/altında kaydırılabilir AI açıklama baloncuğu açar. */
-export function showAiReplyBubble(qid: number, targetEl?: HTMLElement | null): void {
-  hideAiReplyBubble();
-  if (typeof document === 'undefined') return;
-  const entry = state.aiExplanations[qid];
-  const el = targetEl || document.getElementById(`qnum_${qid}`) || document.querySelector<HTMLElement>(`#bq_${qid} .q-number`);
-  if (!entry || !el) return;
-
-  const bubble = document.createElement('div');
-  bubble.id = 'activeAiReplyBubble';
-  bubble.className = 'answer-explanation-bubble ai-reply-bubble';
-  bubble.innerHTML = `<div class="ai-reply-header"><span class="ai-reply-title">✨ AI Öğretmen Rehberi</span><button type="button" class="ai-reply-close" data-action="close-ai-reply" aria-label="Kapat">✕</button></div><div class="ai-reply-scroll-body"><div class="ai-reply-query">“${escapeHtml(entry.query)}”</div><div class="ai-reply-text">${escapeHtml(entry.reply).replace(/\n/g, '<br>')}</div></div>`;
-  document.body.appendChild(bubble);
-  activeAiBubbleEl = bubble;
-
-  const rect = el.getBoundingClientRect();
-  const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  const targetCenterX = rect.left + scrollLeft + (rect.width / 2);
-
-  const container = el.closest<HTMLElement>('.booklet-question') || el.closest<HTMLElement>('.booklet-page') || document.body;
-  const cRect = container.getBoundingClientRect();
-  const cLeft = cRect.left + scrollLeft;
-  const cRight = cRect.right + scrollLeft;
-
-  // Ekran (viewport) sınırlarına göre maksimum genişlik ve konum
-  const vpLeft = scrollLeft + 8;
-  const vpRight = scrollLeft + window.innerWidth - 8;
-  const maxW = Math.min(380, Math.max(200, Math.min(cRect.width - 8, window.innerWidth - 16)));
-  bubble.style.maxWidth = `${maxW}px`;
-  bubble.style.width = 'max-content';
-
-  const bRect = bubble.getBoundingClientRect();
-  const bubbleW = bRect.width || maxW;
-
-  // Sol-sağ sınırları hem kart/sütun hem viewport içinde tut
-  const minLeft = Math.max(cLeft + 4, vpLeft);
-  const maxLeft = Math.min(cRight - 4 - bubbleW, vpRight - bubbleW);
-  let bubbleLeft = targetCenterX - 24;
-  if (bubbleLeft > maxLeft) bubbleLeft = maxLeft;
-  if (bubbleLeft < minLeft) bubbleLeft = minLeft;
-  bubble.style.left = `${bubbleLeft}px`;
-
-  // Sivri oku doğrudan hedef elementin (soru numarası / nokta) merkezine kilitli tut
-  const arrowPos = Math.max(14, Math.min(bubbleW - 14, targetCenterX - bubbleLeft));
-  bubble.style.setProperty('--arrow-left', `${arrowPos}px`);
-
-  // Dikey konumlandırma: Soru numarası yukarıdaysa veya balon üstte ekran dışına taşacaksa alta aç
-  const estimatedH = 220;
-  const isBelow = rect.top < (estimatedH + 20) || (rect.top - estimatedH < 65);
-  if (isBelow) {
-    bubble.classList.add('bubble-below');
-    bubble.style.top = `${rect.bottom + scrollTop + 6}px`;
-  } else {
-    bubble.classList.remove('bubble-below');
-    bubble.style.top = `${rect.top + scrollTop - 6}px`;
-  }
-}
-
-export function hideAiReplyBubble(): void {
-  activeAiBubbleEl?.remove();
-  activeAiBubbleEl = null;
-}
+/** Geriye dönük uyumluluk: Balon yerine doğrudan soru altındaki chat alanını açar */
+export function showAiReplyBubble(qid: number): void { toggleAiAskBox(qid); }
+export function hideAiReplyBubble(): void { activeAiBubbleEl?.remove(); activeAiBubbleEl = null; }
 
 export function initAiTutor(): void {
   loadSavedAiExplanations();
@@ -214,9 +309,30 @@ export function initAiTutor(): void {
     const qid = Number(actionEl?.dataset.qid);
     if (action === 'toggle-ai-ask' && qid) { toggleAiAskBox(qid); return; }
     if (action === 'submit-ai-ask' && qid) { void submitAiQuestion(qid); return; }
-    if (action === 'show-ai-reply' && qid && state.aiExplanations[qid]) { showAiReplyBubble(qid, actionEl); return; }
-    if (action === 'close-ai-reply') { hideAiReplyBubble(); return; }
-    if (activeAiBubbleEl && !target.closest('.ai-reply-bubble')) hideAiReplyBubble();
+    if (action === 'use-ai-chip' && qid) {
+      const prompt = actionEl?.dataset.prompt || '';
+      const input = document.getElementById(`aiAskInput_${qid}`) as HTMLInputElement | null;
+      if (input) input.value = prompt;
+      void submitAiQuestion(qid);
+      return;
+    }
+    if (action === 'show-ai-reply' && qid) { toggleAiAskBox(qid); return; }
+    if (action === 'delete-ai-turn' && qid) {
+      e.stopPropagation(); e.preventDefault();
+      const turnIdx = actionEl?.dataset.turnIdx !== undefined ? Number(actionEl.dataset.turnIdx) : -1;
+      deleteAiTurn(qid, turnIdx);
+      return;
+    }
+    if (action === 'clear-ai-chat' && qid) {
+      e.stopPropagation(); e.preventDefault(); deleteAiTurn(qid, -1); return;
+    }
+    if ((action === 'close-ai-chat' || action === 'close-ai-box') && qid) {
+      const box = document.getElementById(`aiAskBox_${qid}`);
+      if (box) box.style.display = 'none';
+      const card = document.getElementById(`aiChatReply_${qid}`);
+      if (card) card.style.display = 'none';
+      return;
+    }
   });
   document.addEventListener('keydown', (e) => {
     const target = e.target as HTMLElement | null;

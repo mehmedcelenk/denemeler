@@ -1,0 +1,106 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""MEB Coğrafya 1 (9. Sınıf 1. Dönem) Yüksek Hassasiyetli Kanonik Kavram ve Terim Sözlüğü."""
+
+from typing import Any, Dict, List, Tuple
+
+PRECISE_COG1_CONCEPTS: List[Dict[str, Any]] = [
+    {
+        "id": "cog1_fiziki_cografya",
+        "term": "Fiziki Coğrafya ve Alt Dalları",
+        "sayfa": 14,
+        "tanim": "Doğanın **kendi başına** yazdığı senaryoyu (yer şekilleri, iklim, sular, canlılar, haritalar) inceleyen coğrafya dalıdır; insan faktörü yoktur, sadece doğa vardır.\n💡 Sınav Şifresi: 'İnsan' kelimesi geçiyorsa fiziki değil; **Jeomorfoloji-Klimatoloji-Hidrografya-Biyocoğrafya-Kartografya** beşlisini ezberle, 'Karto'yu görünce harita aklına gelsin.",
+        "pattern": r"fiziki coğrafya[a-zçğıöşü]*|biyocoğrafya|klimatoloji|jeomorfoloji|hidrografya|kartografya",
+    },
+    {
+        "id": "cog1_beseri_cografya",
+        "term": "Beşerî ve Ekonomik Coğrafya",
+        "sayfa": 16,
+        "tanim": "İnsanın doğayla **kurduğu ilişkiyi** ve geçim kaygısını (nüfus, yerleşme, tarım, sanayi, turizm, ulaşım, ticaret) inceleyen daldır; yani 'insan ne yapıyor?' sorusunun cevabıdır.\n💡 Sınav Şifresi: İçinde **nüfus, yerleşme, ekonomi** geçen her şık beşerîdir; 'doğal ortam' vurgusu varsa fiziki coğrafyaya kayar, dikkat.",
+        "pattern": r"beşerî coğrafya|beseri cografya|turizm coğrafyası|tarım coğrafyası|yerleşme coğrafyası|nüfus coğrafyası",
+    },
+    {
+        "id": "cog1_dunyanin_sekli",
+        "term": "Dünya'nın Şekli (Geoit ve Küresel)",
+        "sayfa": 24,
+        "tanim": "Dünya tam yuvarlak değil, **kutuplardan basık Ekvator'dan şişkin** bir 'geoit'tir; bu yüzden Güneş ışınları Ekvator'a dik, kutuplara eğik gelir ve sıcaklık kutuplara doğru azalır.\n💡 Sınav Şifresi: **'Ekvator'dan kutuplara gidildikçe...'** diye başlayan her soruda cevap geoit sonucudur: sıcaklık ↓, tuzluluk ↓, kalıcı kar sınırı ↓, yerçekimi ↑.",
+        "pattern": r"dünyanın şeklinin küresel|dünya'nın şekli|geoit|kalıcı kar sınırı|denizlerin tuzluluk oranı",
+    },
+    {
+        "id": "cog1_eksen_egikligi_mevsimler",
+        "term": "Eksen Eğikliği ve Yıllık Hareket",
+        "sayfa": 28,
+        "tanim": "Dünya'nın ekseni **23°27'** eğik olduğu için Güneş etrafında dolanırken farklı yarım küreler farklı açıyla ışın alır; işte bu yüzden **mevsimler** ve değişen gece-gündüz süreleri ortaya çıkar.\n💡 Sınav Şifresi: **Mevsimlerin tek sebebi eksen eğikliğidir**, Dünya'nın Güneş'e yaklaşması değil! 'Dönenceler ve aydınlanma çemberi' ifadesini görünce eksen eğikliği + yıllık hareket işaretle.",
+        "pattern": r"yıl içinde gece ve gündüz sürelerinin|eksen eğikliği|yıllık hareket|mevsimlerin oluşumu|21 haziran|21 aralık|21 mart|23 eylül|ekinoks",
+    },
+    {
+        "id": "cog1_ortak_saat_yerel_saat",
+        "term": "Yerel Saat ve Ortak (Ulusal) Saat",
+        "sayfa": 34,
+        "tanim": "Yerel saat her meridyenin kendi **gerçek** saatidir; ortak saat ise ülkenin **tek bir meridyene** göre belirlediği resmî saattir. Doğu-batı geniş ülkeler (Rusya, ABD, Kanada) çok saat dilimi kullanırken, dar ülkeler (Belçika, Hollanda) tek saatle idare eder.\n💡 Sınav Şifresi: **Genişlik = çok saat dilimi**, **darlık = tek saat**. 'Rusya-ABD-Kanada' üçlüsünü görünce 'çok ortak saat', 'Belçika-Hollanda' görünce 'tek ortak saat' kodla.",
+        "pattern": r"tek ortak saat kullanan|ortak saat|yerel saat|uluslararası saat dilimi",
+    },
+    {
+        "id": "cog1_kucuk_olcekli_harita",
+        "term": "Küçük Ölçekli Haritalar",
+        "sayfa": 44,
+        "tanim": "Paydası **büyük** (1/500.000'den küçük), yani küçültme oranı fazla olan haritalardır; Dünya ve kıta gibi dev alanları gösterir ama **ayrıntıyı kaybeder**, bozulma artar.\n💡 Sınav Şifresi: **'Payda büyük = ölçek küçük = alan geniş = ayrıntı az = hata çok'** zincirini kur; 'Dünya/kıta haritası' görünce küçük ölçek işaretle.",
+        "pattern": r"küçük ölçekli harita[a-zçğıöşü]*|küçük ölçekli",
+    },
+    {
+        "id": "cog1_buyuk_olcekli_harita",
+        "term": "Büyük Ölçekli Haritalar",
+        "sayfa": 42,
+        "tanim": "Paydası **küçük** (1/200.000'e kadar), küçültme oranı az olan haritalardır; ilçe ve köy gibi dar alanları **ayrıntılı** gösterir, hata oranı düşüktür (plan ve topoğrafya haritaları).\n💡 Sınav Şifresi: **'Payda küçük = ölçek büyük = alan dar = ayrıntı çok = hata az'**; 'plan, topoğrafya, kadastro' kelimeleri büyük ölçeğin parolasıdır.",
+        "pattern": r"büyük ölçekli harita[a-zçğıöşü]*|büyük ölçekli",
+    },
+    {
+        "id": "cog1_izohips_yontemi",
+        "term": "İzohips (Eş Yükselti Eğrileri)",
+        "sayfa": 48,
+        "tanim": "Aynı yükseltideki noktaları birleştiren **kapalı eğrilerdir**; eğriler sıklaşırsa eğim artar (falez, hızlı akarsu), seyrekleşirse eğim azalır (ova, yavaş akarsu).\n💡 Sınav Şifresi: **'Sık = sarp = hızlı', 'seyrek = düz = yavaş'**; eğrilerin 'V' yaptığı yer akarsu vadisi, iç içe kapalı halkalar zirve/çukurluk demektir.",
+        "pattern": r"^İzohips$|\\\\bizohips[a-zçğıöşü]*\\\\b|\\\\beş yükselti eğrisi\\\\b|\\\\bfalez\\\\b",
+    },
+    {
+        "id": "cog1_atmosfer_ve_katmanlari",
+        "term": "Atmosferin Özellikleri ve Katmanları",
+        "sayfa": 60,
+        "tanim": "Dünya'yı saran **gaz küre**; canlıya nefes, yeryüzüne yorgan olur, zararlı ışınları süzer. Yerden yükseldikçe gaz yoğunluğu azalır: **Troposfer → Stratosfer → Mezosfer → Termosfer**.\n💡 Sınav Şifresi: **Hava olayları = Troposfer**, **ozon tabakası = Stratosfer**; 'gaz yoğunluğu azalır' ifadesi basıncın da azalacağının şifresidir.",
+        "pattern": r"atmosferin özellikleri[a-zçğıöşü]*|atmosferin katmanları|troposfer|stratosfer|ozonosfer",
+    },
+    {
+        "id": "cog1_guneslenme_suresi",
+        "term": "Güneşlenme Süresi (Türkiye)",
+        "sayfa": 68,
+        "tanim": "Günün **güneşli geçen saat** miktarıdır; Türkiye'de bulut ve yağışın bol olduğu **Karadeniz'de en kısa**, açık gökyüzünün hüküm sürdüğü **Güneydoğu Anadolu ve Akdeniz'de en uzundur**.\n💡 Sınav Şifresi: **'Bulut çok = güneş az'**; Karadeniz'i görünce 'en kısa', Güneydoğu-Akdeniz'i görünce 'en uzun' eşleştir, tersini yapma.",
+        "pattern": r"güneşlenme süresinin en kısa|güneşlenme süresi",
+    },
+    {
+        "id": "cog1_hava_basinci_faktorleri",
+        "term": "Hava Basıncını Etkileyen Faktörler",
+        "sayfa": 76,
+        "tanim": "Atmosferdeki gazların yeryüzüne uyguladığı ağırlıktır; **sıcaklık artınca hava genleşir ve basınç düşer** (ters orantı), yerçekimi ve gaz yoğunluğu artınca basınç artar (doğru orantı).\n💡 Sınav Şifresi: **'Sıcak = hafif = alçak basınç', 'soğuk = ağır = yüksek basınç'**; 'sıcaklıkla basınç ters orantılıdır' cümlesi soruların anahtarıdır.",
+        "pattern": r"hava basıncını etkileyen|hava basıncı|basınç merkezleri|alçak basınç|yüksek basınç",
+    },
+    {
+        "id": "cog1_surekli_ruzgarlar",
+        "term": "Sürekli Rüzgârlar (Alizeler, Batı, Kutup)",
+        "sayfa": 82,
+        "tanim": "Sürekli basınç kuşakları arasında **yıl boyu aynı yönde** esen rüzgârlardır: 30°'den Ekvator'a **Alizeler**, 30°'den 60°'ye **Batı Rüzgârları**, kutuplardan 60°'ye **Kutup Rüzgârları**.\n💡 Sınav Şifresi: **'Alize Ekvator'a, Batı 60'a, Kutup 60'a'**; orta kuşak karalarının batısına yağış bırakan rüzgâr **Batı Rüzgârları**dır, bu eşleştirme sıkça sorulur.",
+        "pattern": r"sürekli rüzgârlar[a-zçğıöşü]*|alizeler|batı rüzgârları|kutup rüzgârları|alize",
+    },
+    {
+        "id": "cog1_ruzgar_cesitleri_meltem_muson",
+        "term": "Meltem ve Muson Rüzgârları",
+        "sayfa": 84,
+        "tanim": "**Meltem**, günlük ısınma farkıyla esen \"günlük\" rüzgâr (gündüz denizden karaya, gece karadan denize); **muson** ise kıta ile okyanus arasındaki yıllık farkla esen \"mevsimlik\" dev rüzgâr — tıpkı yazın serinlemek için açılan klima gibi, yaz musonu da denizden karaya nem taşıyıp bol yağış bırakır.\n💡 Sınav Şifresi: \"Günlük = Meltem, Mevsimlik = Muson\"; musonda yaz musonu = yağış, kış musonu = kuraklık.",
+        "pattern": r"^Musonlar$|^Meltemler$|\\\\bmuson rüzgârları\\\\b|\\\\bmeltem rüzgârları\\\\b|\\\\bmuson\\\\b|\\\\bmeltem\\\\b",
+    },
+    {
+        "id": "cog1_mutlak_ve_bagil_nem",
+        "term": "Mutlak Nem ve Bağıl Nem",
+        "sayfa": 92,
+        "tanim": "**Mutlak nem**, 1 m³ havadaki su buharının gramıdır (\"ne kadar su var\"); **bağıl nem** ise bu suyun havanın taşıyabileceğinin yüzdesidir (\"doygunluğa ne kadar yakın\") — tıpkı bir sürahinin içindeki su (mutlak) ile doluluk oranı (bağıl) gibi.\n💡 Sınav Şifresi: Mutlak nem = sıcaklık + kıyı (Akdeniz'de fazla); Bağıl nem = yağış ihtimali (Karadeniz'de en yüksek).",
+        "pattern": r"mutlak nem|bağıl nem|maksimum nem|su buharının ağırlığına",
+    },
+]

@@ -1,0 +1,11 @@
+{
+  "ders": "Fizik 2",
+  "subject": "FIZ",
+  "donem": 2,
+  "sorumlu_sayfa_araligi": [
+    145,
+    272
+  ],
+  "toplam_sayfa": 128,
+  "kaynak_pdf": "fizik_2_2024.pdf"
+}

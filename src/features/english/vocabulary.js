@@ -1,4 +1,5 @@
 import { escapeHtml } from '../../shared/escape.ts';
+import { formatConceptBubbleHtml } from '../../shared/math-render.ts';
 
 export const MEB_TRAPS_DICT = {};
 
@@ -72,6 +73,54 @@ export let activeVocabTimeout = null;
 
 export let activeVocabWordEl = null;
 
+/**
+ * Ayraca (|) tıklandığında önceki kelime öbeğini ve ögenin adını kesir formatında üretir.
+ */
+function renderJunctionFraction(el, trText) {
+  const match = trText.match(/(?:⬅\s*(?:&lt;b&gt;|<b>)?Önceki:?(?:&lt;\/b&gt;|<\/b>)?\s*)([^<&]+)/i);
+  let leftRole = match ? match[1].trim() : '';
+  if (!leftRole) {
+    const title = el.getAttribute('title') || '';
+    const titleMatch = title.match(/Öge Sınırı:\s*([^|]+)/i);
+    leftRole = titleMatch ? titleMatch[1].trim() : 'Öge';
+  }
+
+  let prevText = '';
+  let node = el.previousSibling;
+  while (node) {
+    if (node.nodeType === 3) {
+      prevText = node.textContent + prevText;
+    } else if (node.nodeType === 1) {
+      if (node.classList && node.classList.contains('xray-junction')) {
+        break;
+      }
+      prevText = node.textContent + prevText;
+    }
+    node = node.previousSibling;
+  }
+  const sentParts = prevText.split(/(?<=[.?!•])\s+/);
+  let segment = sentParts[sentParts.length - 1].trim();
+  segment = segment.replace(/^[•\s]+/, '').replace(/[,;]+$/, '').trim();
+
+  let roleColor = '#2563eb';
+  if (leftRole.includes('Özne')) roleColor = '#2563eb';
+  else if (leftRole.includes('Yüklem')) roleColor = '#e11d48';
+  else if (leftRole.includes('Nesne')) roleColor = '#059669';
+  else if (leftRole.includes('Zarf')) roleColor = '#d97706';
+  else if (leftRole.includes('Dolaylı') || leftRole.includes('Tümleç') || leftRole.includes('Yer')) roleColor = '#4f46e5';
+
+  return {
+    roleColor,
+    html: `
+      <div class="xray-fraction-card">
+        <div class="xray-fraction-phrase">${escapeHtml(segment || '...')}</div>
+        <div class="xray-fraction-bar" style="background:${roleColor};"></div>
+        <div class="xray-fraction-role" style="color:${roleColor};">${escapeHtml(leftRole)}</div>
+      </div>
+    `
+  };
+}
+
 export function showVocabBubble(el, event) {
   if (event) {
     event.stopPropagation();
@@ -95,8 +144,14 @@ export function showVocabBubble(el, event) {
   bubble.id = 'activeVocabBubble';
   bubble.className = 'vocab-bubble';
 
+  const isJunction = el.classList.contains('xray-junction');
+  let junctionData = null;
   let grammarColor = null;
-  if (el.closest('.xray-sub')) grammarColor = '#2563eb';
+
+  if (isJunction) {
+    junctionData = renderJunctionFraction(el, trText);
+    grammarColor = junctionData.roleColor;
+  } else if (el.closest('.xray-sub')) grammarColor = '#2563eb';
   else if (el.closest('.xray-verb')) grammarColor = '#e11d48';
   else if (el.closest('.xray-obj')) grammarColor = '#059669';
   else if (el.closest('.xray-adv')) grammarColor = '#d97706';
@@ -108,14 +163,31 @@ export function showVocabBubble(el, event) {
   }
 
   let mainContent = '';
-  if (trText && arText) {
+  let subContent = '';
+
+  if (isJunction && junctionData) {
+    mainContent = junctionData.html;
+    subContent = ''; // Ayracın balonunda ampule veya alt notlara gerek yok
+  } else if (trText && arText) {
     mainContent = `<span class="vocab-bubble-main"><span>${escapeHtml(trText)}</span> <span style="opacity:0.4; font-weight:400;">|</span> <span dir="rtl" style="font-family:'Amiri','Segoe UI',serif;">${escapeHtml(arText)}</span></span>`;
   } else {
-    mainContent = `<span class="vocab-bubble-main"><span>${escapeHtml(trText || arText)}</span></span>`;
+    const rawVal = trText || arText;
+    const parts = rawVal.split(/\s*---+\s*/);
+    if (parts.length > 1) {
+      const renderedParts = parts
+        .map((p, idx) => {
+          const isLatest = idx === parts.length - 1;
+          const style = isLatest ? 'font-weight:600;' : 'opacity:0.85; font-size:0.92em; font-weight:500;';
+          return `<div style="${style}">${formatConceptBubbleHtml(p.trim())}</div>`;
+        })
+        .join('<div class="vocab-bubble-divider" style="margin:5px 0; border-top:1px dashed color-mix(in srgb, currentColor 25%, transparent);"></div>');
+      mainContent = `<span class="vocab-bubble-main">${renderedParts}</span>`;
+    } else {
+      mainContent = `<span class="vocab-bubble-main">${formatConceptBubbleHtml(rawVal)}</span>`;
+    }
   }
 
-  let subContent = '';
-  if (noteText) {
+  if (!isJunction && noteText) {
     subContent = `<span class="vocab-bubble-sub">${escapeHtml(noteText)}</span>`;
   }
 
@@ -127,26 +199,45 @@ export function showVocabBubble(el, event) {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   let top = rect.top + scrollTop;
-  let left = rect.left + scrollLeft + (rect.width / 2);
+  const targetCenterX = rect.left + scrollLeft + (rect.width / 2);
 
-  if (rect.top < 50) {
+  if (rect.top < 65) {
     bubble.classList.add('bubble-below');
     top = rect.bottom + scrollTop;
   }
 
   bubble.style.top = top + 'px';
-  bubble.style.left = left + 'px';
+
+  // Kapsayıcı (Soru kartı veya sayfa sütunu) sınırlarına göre genişliği sınırla
+  const questionCard = el.closest('.booklet-question');
+  const containerRect = questionCard ? questionCard.getBoundingClientRect() : document.body.getBoundingClientRect();
+  const containerLeft = containerRect.left + scrollLeft;
+  const containerRight = containerRect.right + scrollLeft;
+  const maxAllowedWidth = Math.min(380, Math.max(220, containerRect.width - 16));
+  bubble.style.maxWidth = `${maxAllowedWidth}px`;
 
   const bubbleRect = bubble.getBoundingClientRect();
-  const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   const halfWidth = bubbleRect.width / 2;
-  let adjustedLeft = left;
-  if (adjustedLeft - halfWidth < 12) {
-    adjustedLeft = 12 + halfWidth;
-  } else if (adjustedLeft + halfWidth > viewportWidth - 12) {
-    adjustedLeft = viewportWidth - 12 - halfWidth;
+
+  // Balon merkezini hedefin üstüne koy, ancak kart sınırlarında kenetle
+  let adjustedLeft = targetCenterX;
+  const minLeft = containerLeft + halfWidth + 8;
+  const maxLeft = containerRight - halfWidth - 8;
+
+  if (adjustedLeft < minLeft) {
+    adjustedLeft = minLeft;
+  } else if (adjustedLeft > maxLeft) {
+    adjustedLeft = maxLeft;
   }
   bubble.style.left = adjustedLeft + 'px';
+
+  // Sivri oku doğrudan tıklanan kelimenin merkezine kilitle
+  const arrowPos = Math.max(14, Math.min(bubbleRect.width - 14, targetCenterX - (adjustedLeft - halfWidth)));
+  bubble.style.setProperty('--arrow-left', `${arrowPos}px`);
+
+  // Uzun kavramlar için daha geniş okuma süresi (9 saniye)
+  const isLongText = (trText.length + noteText.length) > 30;
+  const timeoutMs = isLongText ? 9000 : 2800;
 
   activeVocabTimeout = setTimeout(() => {
     bubble.style.animation = 'vocabPopOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
@@ -157,7 +248,7 @@ export function showVocabBubble(el, event) {
         activeVocabWordEl = null;
       }
     }, 180);
-  }, 2600);
+  }, timeoutMs);
 }
 
 if (typeof document !== 'undefined') {

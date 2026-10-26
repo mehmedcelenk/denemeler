@@ -1,8 +1,14 @@
 import { state } from '../../app/state.ts';
 import { toggleConsoleMenu } from '../appearance/layout.js';
+import { applyInterlinearToBooklet, isEnglishQuestion } from '../english/interlinear.ts';
 
 export function openPdfDialog() {
   toggleConsoleMenu();
+  const isEnglish = (state.currentSubject === 'ING') || state.bookletQuestions.some(isEnglishQuestion);
+  const engGroup = document.getElementById('pdfEnglishOptGroup');
+  if (engGroup) {
+    engGroup.style.display = isEnglish ? 'block' : 'none';
+  }
   document.getElementById('pdfDialogOverlay').classList.add('open');
 }
 
@@ -12,7 +18,13 @@ export function closePdfDialog() {
 
 export function executePdfPrint() {
   const loc = document.querySelector('input[name="pdfKeyLocation"]:checked').value;
+  const chkInterlinear = document.getElementById('chkPdfInterlinear');
+  const printWithInterlinear = Boolean(chkInterlinear && chkInterlinear.checked);
   closePdfDialog();
+
+  if (printWithInterlinear) {
+    applyInterlinearToBooklet(true);
+  }
 
   const strips = document.querySelectorAll('.page-bottom-answer-strip');
   if (loc === 'bottom') {
@@ -61,5 +73,8 @@ export function executePdfPrint() {
   setTimeout(() => {
     const sep = document.getElementById('separateAnswerPage');
     if (sep) sep.remove();
+    if (printWithInterlinear) {
+      applyInterlinearToBooklet(false);
+    }
   }, 1000);
 }

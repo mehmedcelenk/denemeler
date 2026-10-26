@@ -1,0 +1,91 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""MEB Sağlık Bilgisi ve Trafik Kültürü (1–2) Dönem Bazlı Atomik ve Sınav Şifreli Kavram Katalogu."""
+
+from typing import Any, Dict, List
+
+PRECISE_SAG_CONCEPTS: List[Dict[str, Any]] = [
+    # ==========================================
+    # SAĞLIK 1: SAĞLIK HİZMETLERİ, BESLENME VE BAĞIMLILIK (ATOMİK)
+    # ==========================================
+    {
+        "id": "sag_saglik_basamaklari",
+        "term": "Koruyucu ve Tedavi Edici Sağlık Hizmetleri Basamakları (1., 2., 3. Basamak)",
+        "donemler": [1],
+        "sayfa_by_donem": {1: 16},
+        "tanim_by_donem": {
+            1: (
+                "Hastalanmadan önce yapılan aşı ve temiz su denetimi **Koruyucu Sağlık**; sakatlık sonrası uyum **Rehabilitasyon**'dur. Tedavi basamakları:\n"
+                "• **1. Basamak:** Mahallemizdeki **Aile Sağlığı Merkezleri (Aile Hekimi)**.\n"
+                "• **2. Basamak:** Yataklı **Devlet ve Özel Hastaneler**.\n"
+                "• **3. Basamak:** İleri teknoloji **Eğitim ve Araştırma Hastaneleri, Üniversite ve Kanser (Onkoloji) Hastaneleri**.\n"
+                "💡 Sınav Şifresi: İlk başvurulan yer **1. Basamak (Aile Hekimi)**; en üst uzmanlık ve araştırma merkezi **3. Basamak**'tır!"
+            ),
+        },
+        "pattern": r"koruyucu sağlık[a-zçğıöşü]*|tedavi edici[a-zçğıöşü]*|rehabilitasyon[a-zçğıöşü]*|aile sağlığı merkez[a-zçğıöşü]*|aile hekim[a-zçğıöşü]*|birinci basamak|ikinci basamak|üçüncü basamak|sağlık hakkı[a-zçğıöşü]*|erişilebilirlik|kabul edilebilirlik|vektör[a-zçğıöşü]*|zoonoz|kuş gribi|kuduz|bulaşıcı hastalı[kğ][a-zçğıöşü]*|hijyen[a-zçğıöşü]*|diş ipi|ağız ve diş",
+    },
+    {
+        "id": "sag_bki_ve_beslenme",
+        "term": "Beden Kitle İndeksi (BKİ) ve Obezite",
+        "donemler": [1],
+        "sayfa_by_donem": {1: 42},
+        "tanim_by_donem": {
+            1: (
+                "Kişinin kilosunun boyuna göre sağlıklı aralıkta olup olmadığını gösteren ölçüttür.\n"
+                "💡 Formül: $\\text{BKİ} = \\frac{\\text{Kilo (kg)}}{\\text{Boyun Karesi (m}^2\\text{)}}$ — Sonuç $18,5\\text{–}24,9$ arası **Normal**, $25\\text{–}29,9$ **Fazla Kilolu**, **$30$ ve üzeri ise Obez (Şişman)** kabul edilir!"
+            ),
+        },
+        "pattern": r"beden kitle indeksi|\bbki\b|obezite[a-zçğıöşü]*|şişmanlı[kğ][a-zçğıöşü]*|fiziksel aktivite[a-zçğıöşü]*|ergenlik[a-zçğıöşü]*",
+    },
+    {
+        "id": "sag_zorbalik_ve_destek_hatlari",
+        "term": "Akran/Siber Zorbalık, Bağımlılık ve Resmi Destek Hatları",
+        "donemler": [1],
+        "sayfa_by_donem": {1: 58},
+        "tanim_by_donem": {
+            1: (
+                "Güçlü olanın zayıf olana **kasıtlı ve sürekli** zarar vermesine **Akran Zorbalığı** (dijital ortamda yapılırsa **Siber Zorbalık**) denir.\n"
+                "💡 Sınav Şifresi: **Alo 183** $\\to$ Aile, Kadın, Çocuk ve **Şiddet Mağdurları** Destek Hattı; **Alo 171** $\\to$ Sigara Bırakma; **Alo 191** $\\to$ Uyuşturucu ile Mücadele; **Alo 114** $\\to$ Zehir Danışma (**Yeşilay** bağımlılıkla savaşır)."
+            ),
+        },
+        "pattern": r"akran zorbalı[kğ][a-zçğıöşü]*|siber zorbalı[kğ][a-zçğıöşü]*|zorbalı[kğ][a-zçğıöşü]*|bağımlılı[kğ][a-zçğıöşü]*|teknoloji bağımlılı[kğ][a-zçğıöşü]*|yeşilay|alo 183|alo 171|alo 191|alo 114|şiddet mağdur[a-zçğıöşü]*",
+    },
+
+    # ==========================================
+    # SAĞLIK 1: İLK YARDIM (ATOMİK)
+    # ==========================================
+    {
+        "id": "sag_ilk_yardim_ve_heimlich",
+        "term": "İlk Yardım (KBK), Heimlich Manevrası, Koma ve Turnike",
+        "donemler": [1],
+        "sayfa_by_donem": {1: 76},
+        "tanim_by_donem": {
+            1: (
+                "Olay yerinde **ilaçsız** yapılan hayat kurtarıcı müdahaledir (**KBK:** **K**oruma $\\to$ **B**ildirme $112$ $\\to$ **K**urtarma).\n"
+                "• **Heimlich Manevrası:** Boğazı **tam tıkanan** (nefes alamayan, konuşamayan, ellerini boynuna götüren) kişiye arkadan sarılarak karına bası uygulanmasıdır.\n"
+                "• **Koma Pozisyonu:** Bilinci kapalı ama **nefes ve nabzı olan** hastanın **yarı yüzükoyun-yan** yatırılmasıdır.\n"
+                "💡 Sınav Şifresi: Yetişkinde kalp masajı: **$30$ Kalp Basısı / $2$ Suni Solunum**; Uzuv kopmasında **Turnike**; Şok pozisyonunda bacaklar **$30\\text{ cm}$ yukarı** kaldırılır!"
+            ),
+        },
+        "pattern": r"ilk yardım[a-zçğıöşü]*|kalp masajı|yapay solunum|suni solunum|temel yaşam desteği|koma pozisyonu|şok pozisyonu|heimlich manevrası|tam tıkanma|kısmi tıkanma|turnike|atardamar kanama[a-zçğıöşü]*|burkulma|kırık|çıkık|112 acil",
+    },
+
+    # ==========================================
+    # SAĞLIK 2: TRAFİK KÜLTÜRÜ VE KURALLARI (ATOMİK)
+    # ==========================================
+    {
+        "id": "sag_trafik_gecis_ve_kurallar",
+        "term": "Trafik Adabı, Geçiş Üstünlüğü, Takip Mesafesi ve Şerit Kuralları",
+        "donemler": [2],
+        "sayfa_by_donem": {2: 106},
+        "tanim_by_donem": {
+            2: (
+                "Trafikte kendimizi karşıdaki sürücü veya yayanın yerine koymaya **Empati** denir.\n"
+                "• **Geçiş Üstünlüğü Sırası:** **1) Cankurtaran (Ambulans) $\\to$ 2) İtfaiye $\\to$ 3) Polis $\\to$ 4) Sivil Savunma** (**CİPS** şifresi!).\n"
+                "• **Takip Mesafesi:** Hızın ($\\text{km/sa}$) **yarısı** kadar metredir ($2$ saniye / $88\\text{-}89$ kuralı).\n"
+                "💡 Sınav Şifresi: Köprü, tünel, tepe üstü, dönemeç, yaya ve okul geçitlerinde **öndeki araç sollanmaz**! Ağır vasıtalar (**çekici**, kamyon) en sağ şeritten gider; ticari sürücüler kesintisiz en fazla **$4,5$ saat** araç kullanabilir!"
+            ),
+        },
+        "pattern": r"trafik[a-zçğıöşü]*|empati|fahri trafik|şeri[td][a-zçğıöşü]*|bölünmüş yol[a-zçğıöşü]*|önündeki aracı geçme[a-zçğıöşü]*|dönemeç[a-zçğıöşü]*|yaya geçi[td][a-zçğıöşü]*|okul geçi[td][a-zçğıöşü]*|hemzemin geçi[td]|kavşa[kğ][a-zçğıöşü]*|takip mesafesi|geçiş üstünlüğü|geçiş hakkı|emniyet kemeri|hava yastığı|çekici|kamyonet|4,5 saat|kesintisiz.*araç kullanan|deniz yolu|demir yolu|hava yolu|kara yolu",
+    },
+]

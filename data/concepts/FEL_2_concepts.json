@@ -1,0 +1,65 @@
+[
+  {
+    "id": "fel2_varlik_anlayislari",
+    "term": "Varlık Anlayışları (İdealizm, Materyalizm, Düalizm, Oluş)",
+    "sayfa": 98,
+    "tanim": "Varlığın özü nedir sorusuna dört farklı cevap: **İdealizm** 'her şey ruhtur' der (Platon'un mağara alegorisi gibi), **Materyalizm** 'her şey maddedir' der (Demokritos'un atomları gibi), **Düalizm** 'ikisi de var' der (Descartes'in zihin-beden ayrımı), **Oluş** ise 'hiçbir şey sabit değil' der (Herakleitos'un nehri gibi).\n💡 Sınav Şifresi: Platon/Hegel→İdea, Demokritos/Marx→Madde, Descartes→İkisi, Herakleitos→Değişim, Gorgias→Yokluk (Nihilizm). 'Aynı ırmakta iki kez yıkanılmaz' = Oluş'un kesin işareti.",
+    "pattern": "idealizm|materyalizm|düalizm|oluş felsefesi|aynı ırmakta iki kez yıkanılmaz|nihilizm|hiçbir şey yoktur, var olsa da"
+  },
+  {
+    "id": "fel2_bilgi_ogretileri",
+    "term": "Bilgi Kuramları (Empirizm, Kritisizm, Pragmatizm, Rasyonalizm)",
+    "sayfa": 114,
+    "tanim": "Bilgi nereden gelir? **Rasyonalizm** 'akıldan' der (doğuştan fikirler), **Empirizm** 'deneyden' der (Locke'un boş levha/tabula rasa'sı), **Kritisizm** 'ikisinin birleşiminden' der (Kant: algı+kavram), **Pragmatizm** ise 'işe yarayan doğrudur' der (James, Dewey).\n💡 Sınav Şifresi: 'Tabula rasa' → Empirizm (Locke). 'Algısız kavramlar boş, kavramsız algılar kördür' → Kant/Kritisizm. 'Fayda/yarar' kelimesi geçiyorsa → Pragmatizm.",
+    "pattern": "pragmatizm|empirizm|kritisizm|deneyim ve aklın birleşimidir|algısız kavramlar boş|tabula rasa|doğru bilgiye ulaşmak mümkün müdür"
+  },
+  {
+    "id": "fel2_dogruluk_olcutleri",
+    "term": "Doğruluk Ölçütleri ve Apaçıklık",
+    "sayfa": 122,
+    "tanim": "Bir bilginin doğru olup olmadığını nasıl anlarız? **Uygunluk** (nesnesine uyuyor mu), **Tutarlılık** (kendi içinde çelişkisiz mi), **Tümel Uzlaşım** (herkes onaylıyor mu), **Yarar** (işe yarıyor mu) ve **Apaçıklık** (kuşku duyulamayacak kadar net mi) ölçütleriyle test ederiz.\n💡 Sınav Şifresi: 'Çelişkisizlik' → Tutarlılık. 'Çoğunluk onayı' → Tümel Uzlaşım. 'Kuşku duyulmaz/net' → Apaçıklık (Descartes'ın 'açık ve seçik' kavramı).",
+    "pattern": "apaçıklık|tümel uzlaşım|bilginin güvenilirliği|doğruluk ölçütleri"
+  },
+  {
+    "id": "fel2_paradigma_ve_bilim",
+    "term": "Paradigma (Thomas Kuhn) ve Sözde Bilim",
+    "sayfa": 134,
+    "tanim": "**Paradigma** (Kuhn), bir dönemin bilim insanlarının ortak kabul ettiği düşünce çerçevesidir — tıpkı bir işletim sisteminin tüm uygulamaları şekillendirmesi gibi; **sözde bilim** ise test edilemeyen, yanlışlanamayan iddialardır (astroloji, numeroloji).\n💡 Sınav Şifresi: Kuhn + 'ortak inanç/yöntem çerçevesi' → Paradigma. 'Yanlışlanamaz/test edilemez' → Sözde Bilim. Astroloji ve numeroloji sınavda sözde bilim örneğidir.",
+    "pattern": "\\\\\\\\bparadigma\\\\\\\\b|sözde bilim|numeroloji|thomas kuhn|etkinlik olarak bilim"
+  },
+  {
+    "id": "fel2_ahlaki_ozgurluk_ve_akımlar",
+    "term": "Ahlaki Özgürlük (Determinizm, Fatalizm, Otodeterminizm)",
+    "sayfa": 146,
+    "tanim": "İnsan özgür mü? **Determinizm** 'hayır, nedenler zinciri var' der, **Fatalizm** 'hayır, kader önceden yazıldı' der, **İndeterminizm** 'evet, tamamen özgür' der, **Otodeterminizm** ise 'kendini eğittikçe özgürleşir' der.\n💡 Sınav Şifresi: 'Kaderci' → Fatalizm. 'Neden-sonuç zorunluluğu' → Determinizm. 'Kendini geliştirdikçe özgürleşme' → Otodeterminizm (ahlaki olgunlaşma vurgusu).",
+    "pattern": "determinizm|fatalizm|indeterminizm|otodeterminizm|belirlenimcilik"
+  },
+  {
+    "id": "fel2_hedonizm_ve_odev_ahlaki",
+    "term": "Hedonizm, Utilitarizm ve Kant'ın Ödev Ahlakı",
+    "sayfa": 152,
+    "tanim": "Ahlakın ölçüsü ne? **Hedonizm** 'haz' der (Epiküros), **Utilitarizm** 'en çok kişiye en çok fayda' der (Bentham, Mill), **Kant'ın Ödev Ahlakı** ise 'sonuca bakma, sadece ödeve uy ve iyi niyetle yap' der (Kategorik Buyruk).\n💡 Sınav Şifresi: 'Haz' → Hedonizm. 'En yüksek fayda/çoğunluk mutluluğu' → Utilitarizm. 'Koşulsuz buyruk/sonuç değil niyet' → Kant. Kant'ta 'ödev' ve 'iyi irade' anahtar kelimelerdir.",
+    "pattern": "hedonizm|utilitarizm|ödev ahlakı|ödeve uygun|kategorik buyruk|kant'ın"
+  },
+  {
+    "id": "fel2_tanri_anlayislari",
+    "term": "Tanrı Anlayışları (Teizm, Deizm, Panteizm, Panenteizm)",
+    "sayfa": 168,
+    "tanim": "Tanrı-evren ilişkisi: **Teizm** 'yarattı ve müdahale eder' der, **Deizm** 'yarattı ama karışmaz, doğa kanunlarına bıraktı' der (kurulmuş saat gibi), **Panteizm** 'Tanrı=evren' der (Spinoza), **Panenteizm** 'evren Tanrı'da ama Tanrı evreni aşar' der.\n💡 Sınav Şifresi: 'Vahiy/mucize yok, akıl yeter' → Deizm. 'Tanrı ile evren aynı' → Panteizm (Spinoza). 'Her şey Tanrı'da ama Tanrı aşkın' → Panenteizm. Teizm'de müdahale vardır.",
+    "pattern": "panteizm|panenteizm|monoteizm|\\\\\\\\bteizm\\\\\\\\b|\\\\\\\\bdeizm\\\\\\\\b|\\\\\\\\bagnostisizm\\\\\\\\b|\\\\\\\\bateizm\\\\\\\\b|kötülük argümanı"
+  },
+  {
+    "id": "fel2_toplum_sozlesmesi_siyaset",
+    "term": "Toplum Sözleşmesi ve Siyaset Felsefesi",
+    "sayfa": 182,
+    "tanim": "İnsanlar doğa durumundan nasıl topluma geçti? **Hobbes** 'insan insanın kurdudur, güçlü devlet şart' der, **Locke** 'mülkiyet ve özgürlük korunmalı' der, **Rousseau** 'genel irade egemen olmalı' der; yönetim biçimleri ise monarşi, teokrasi, aristokrasi ve demokrasidir.\n💡 Sınav Şifresi: 'İnsan insanın kurdudur' → Hobbes. 'Mülkiyet/yaşam/özgürlük' → Locke. 'Genel irade/halk egemenliği' → Rousseau. Tek kişi→Monarşi, din→Teokrasi, soylular→Aristokrasi, halk→Demokrasi.",
+    "pattern": "toplum sözleşmesi|doğa hâlinde|teokrasi|aristokrasi|meşruiyet|siyaset felsefesi"
+  },
+  {
+    "id": "fel2_sanat_kuramlari",
+    "term": "Sanat Kuramları (Taklit, Yaratma, Oyun Olarak Sanat)",
+    "sayfa": 194,
+    "tanim": "Sanat nedir? **Taklit (Mimesis)** 'doğanın yansımasıdır' der (Platon, Aristoteles), **Yaratma** 'sanatçının özgün hayal gücüdür' der (Croce), **Oyun** ise 'insanı kaygılardan arındıran özgür etkinliktir' der (Schiller).\n💡 Sınav Şifresi: 'Mimesis/doğanın yansıması' → Taklit kuramı. 'Özgün hayal gücü/sezgi' → Yaratma (Croce). 'Günlük kaygılardan arınma/özgür oyun' → Schiller.",
+    "pattern": "sanat bir yansıma|sanat bir oyun|mimesis|estetik değer|sanat felsefesi"
+  }
+]

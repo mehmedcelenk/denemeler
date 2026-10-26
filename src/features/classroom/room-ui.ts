@@ -4,6 +4,9 @@ import { initFocusTracker } from './focus-tracker.ts';
 import { calculateStudentRank } from './ranking.ts';
 
 let isInitialized = false;
+let renderScheduled = false;
+let lastHeavyRenderAt = 0;
+let trailingRenderTimer: ReturnType<typeof setTimeout> | null = null;
 
 export function initRoomFeature(): void {
   if (isInitialized || typeof document === 'undefined') return;
@@ -11,53 +14,67 @@ export function initRoomFeature(): void {
 
   initFocusTracker();
   setupRoomEvents();
+  roomService.restoreSessionIfActive();
 
   roomService.subscribe((state) => {
+    // Kritik bildirim ve durum çubukları anında güncellenir
     updateTopRoomPill(state);
-    updateTeacherFeed(state);
-    updateTeacherStats(state);
-    updateStudentDrawer(state);
     updatePauseOverlay(state);
+    updateStudentDrawer(state);
+
+    // 100 öğrencili sınıfta eşzamanlı soru çözümleri ve akış bildirimleri DOM'u dondurmasın diye
+    // liste yenilemeleri 120ms'lik throttle penceresiyle toplu (batched) çizilir.
+    scheduleHeavyListRender();
   });
+}
+
+function scheduleHeavyListRender(): void {
+  const now = Date.now();
+  const elapsed = now - lastHeavyRenderAt;
+
+  if (elapsed >= 120 && !renderScheduled) {
+    lastHeavyRenderAt = now;
+    const current = roomService.getState();
+    updateTeacherFeed(current);
+    updateTeacherStats(current);
+    return;
+  }
+
+  if (trailingRenderTimer) return;
+  renderScheduled = true;
+  trailingRenderTimer = setTimeout(() => {
+    trailingRenderTimer = null;
+    renderScheduled = false;
+    lastHeavyRenderAt = Date.now();
+    const latest = roomService.getState();
+    updateTeacherFeed(latest);
+    updateTeacherStats(latest);
+  }, Math.max(20, 120 - elapsed));
 }
 
 function updateTopRoomPill(state: RoomState): void {
   const pill = document.getElementById('topRoomPill');
   if (!pill) return;
-
-  if (!state.roomId) {
-    pill.style.display = 'none';
-    return;
-  }
-
-  pill.style.display = 'inline-flex';
+  pill.style.display = state.roomId ? 'inline-flex' : 'none';
+  if (!state.roomId) return;
   const textEl = pill.querySelector('.room-pill-text');
-  if (textEl) {
-    textEl.textContent = `${state.roomId} • 👥 ${state.participants.length}`;
-  }
+  if (textEl) textEl.textContent = `${state.roomId} • 👥 ${state.participants.length}`;
 }
 
 function updatePauseOverlay(state: RoomState): void {
   const overlay = document.getElementById('roomPauseOverlay');
-  if (overlay) {
-    overlay.style.display = state.roomId && state.isPaused ? 'flex' : 'none';
-  }
-
+  if (overlay) overlay.style.display = state.roomId && state.isPaused ? 'flex' : 'none';
   const btnPause = document.getElementById('btnTogglePauseRoom');
-  if (btnPause) {
-    btnPause.textContent = state.isPaused ? '▶️ Devam Et' : '⏸️ Durdur';
-  }
+  if (btnPause) btnPause.textContent = state.isPaused ? '▶️ Devam Et' : '⏸️ Durdur';
 }
 
 function updateTeacherFeed(state: RoomState): void {
   const listEl = document.getElementById('teacherExitLogsList');
   if (!listEl) return;
-
   if (state.feedItems.length === 0) {
     listEl.innerHTML = '<div class="exit-log-empty">Henüz bir hareket yok.</div>';
     return;
   }
-
   listEl.innerHTML = state.feedItems.map((item) => renderFeedRow(item)).join('');
 }
 
@@ -95,7 +112,7 @@ function renderFeedRow(item: RoomFeedItem): string {
       statusText = 'hoca çağırdı!';
       rowClass = 'row-warning';
       if (!item.resolved) {
-        actionBtn = `<button type="button" class="btn-resolve-help" data-action="resolve-help" data-id="${item.id}" data-name="${escapeHtml(item.studentName)}" title="Gidildi / Tamamlandı">Tamam ✓</button>`;
+        actionBtn = `<button type="button" class="btn-resolve-help" data-action="resolve-help" data-id="${item.id}" data-student-id="${item.studentId}" data-name="${escapeHtml(item.studentName)}" title="Gidildi / Tamamlandı">Tamam ✓</button>`;
       } else {
         statusText = 'hoca ilgilendi ✓';
         rowClass = 'row-success';
@@ -136,7 +153,7 @@ function renderStudentStatRow(s: StudentStats): string {
       <span class="stat-correct" title="Doğru Sayısı">🟢 ${s.correctCount}</span>
       <span class="stat-incorrect" title="Yanlış Sayısı">🔴 ${s.incorrectCount}</span>
       <span class="stat-pace" title="Soru Başına Ortalama Süre">⏱️ ${pace} dk</span>
-      <button type="button" class="btn-star-student" data-action="award-star" data-name="${escapeHtml(s.name)}" title="Öğrenciye Yıldız Gönder">⭐</button>
+      <button type="button" class="btn-star-student" data-action="award-star" data-id="${s.id}" data-name="${escapeHtml(s.name)}" title="Öğrenciye Yıldız Gönder">⭐</button>
     </div>
   </div>`;
 }
@@ -149,7 +166,7 @@ function updateStudentDrawer(state: RoomState): void {
 
   const rankTextEl = document.getElementById('studentRankText');
   if (rankTextEl && state.roomId) {
-    const { rank, total } = calculateStudentRank(state.userName, state.studentStats);
+    const { rank, total } = calculateStudentRank(roomService.getPeerId(), state.studentStats);
     rankTextEl.textContent = `Sıralaman: ${rank}. / ${total} kişi`;
   }
 
@@ -276,13 +293,13 @@ function setupRoomEvents(): void {
         roomService.callTeacherHelp();
         break;
       case 'resolve-help':
-        if (actionEl.dataset.id && actionEl.dataset.name) {
-          roomService.resolveTeacherHelp(actionEl.dataset.id, actionEl.dataset.name);
+        if (actionEl.dataset.id && (actionEl.dataset.studentId || actionEl.dataset.name)) {
+          roomService.resolveTeacherHelp(actionEl.dataset.id, actionEl.dataset.studentId || actionEl.dataset.name || '');
         }
         break;
       case 'award-star':
-        if (actionEl.dataset.name) {
-          roomService.awardStarToStudent(actionEl.dataset.name);
+        if (actionEl.dataset.id || actionEl.dataset.name) {
+          roomService.awardStarToStudent(actionEl.dataset.id || actionEl.dataset.name || '');
         }
         break;
       case 'send-broadcast-message': {

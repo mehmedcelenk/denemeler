@@ -6,14 +6,18 @@ Arayüzün kaynak dosyalarını değiştirmez.
 
 import json
 import re
+import sys
 from pathlib import Path
 
 def main():
+    root_dir = Path(__file__).resolve().parents[2]
+    if str(root_dir) not in sys.path:
+        sys.path.insert(0, str(root_dir))
     print("=" * 60)
     print("💎 AÖL DİJİTAL SINAV KİTAPÇIĞI DERLEYİCİSİ (SÜRÜM 3.4 - KREDİ & PUAN MOTORU)")
     print("=" * 60)
 
-    with open('scripts/ciktilar/analiz/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
+    with open('data/raw_pipeline/tum_analizli_sorular_temiz.json', 'r', encoding='utf-8') as f:
         questions = json.load(f)
 
     # Resmî MEB AÖL Ders Kredileri Tablosu
@@ -30,7 +34,8 @@ def main():
         'FİZİK': 2,
         'KİMYA': 2,
         'BİYOLOJİ': 2,
-        'DİN KÜLTÜRÜ': 2
+        'DİN KÜLTÜRÜ': 2,
+        'KELAM': 2
     }
 
     def get_course_credit(course_name):
@@ -99,12 +104,15 @@ def main():
             MEB_TRAPS_DICT = {}
 
     try:
-        from scripts.meb_vocab_data import MEB_VOCAB_DICT
+        from scripts.taxonomy.meb_vocab_data import MEB_VOCAB_DICT
     except (ImportError, ModuleNotFoundError):
         try:
-            from meb_vocab_data import MEB_VOCAB_DICT
+            from taxonomy.meb_vocab_data import MEB_VOCAB_DICT
         except (ImportError, ModuleNotFoundError):
-            MEB_VOCAB_DICT = {}
+            try:
+                from meb_vocab_data import MEB_VOCAB_DICT
+            except (ImportError, ModuleNotFoundError):
+                MEB_VOCAB_DICT = {}
 
     # Bir sınav oturumundaki soru sayısını dinamik tespit et: (yil, donem, ders) -> soru adedi
     exam_counts = {}
@@ -177,12 +185,51 @@ def main():
         if 'DİN KÜLTÜRÜ' in course_name: return 'DIN'
         if 'SAĞLIK' in course_name: return 'SAG'
         if 'İNGİLİZCE' in course_name: return 'ING'
+        if 'KELAM' in course_name: return 'KLM'
         raise ValueError(f'Bilinmeyen ders: {course_name}')
 
     data_by_subject = {}
     for question in cleaned_list:
         subject_id = subject_id_for_course(question['ders'])
         data_by_subject.setdefault(subject_id, []).append(question)
+
+    # İmam Hatip Meslek / Kelam sorularını ekle
+    try:
+        kelam_questions = []
+        for kelam_fname in ['819_KELAM_1.json', '820_KELAM_2.json']:
+            kelam_path = Path('data/raw_pipeline/kelam') / kelam_fname
+            if kelam_path.exists():
+                with open(kelam_path, 'r', encoding='utf-8') as f_k:
+                    k_data = json.load(f_k)
+                    for q in k_data:
+                        k_key = (q['yil'], str(q['donem']), q['ders'])
+                        k_exam_cnt = exam_counts.get(k_key, 10)
+                        k_kredi = get_course_credit(q['ders'])
+                        k_puan = round(k_kredi / k_exam_cnt, 2)
+                        k_dict = {
+                            'id': q['id'],
+                            'ders': q['ders'],
+                            'ders_kodu': q.get('ders_kodu', 819 if '1' in q['ders'] else 820),
+                            'yil': q['yil'],
+                            'donem': str(q['donem']),
+                            'soru_no': q['soru_no'],
+                            'soru': q['soru'],
+                            'secenekler': q['secenekler'],
+                            'dogru_cevap': q['dogru_cevap'],
+                            'ana_konu': 'Kelam',
+                            'alt_konu': 'Genel',
+                            'kredi': k_kredi,
+                            'sinav_soru_sayisi': k_exam_cnt,
+                            'puan': k_puan,
+                            'sekilli': is_visual_question(q)
+                        }
+                        if q['id'] in existing_extra_fields:
+                            k_dict.update(existing_extra_fields[q['id']])
+                        kelam_questions.append(k_dict)
+        if kelam_questions:
+            data_by_subject['KLM'] = kelam_questions
+    except Exception as e:
+        print("Warning: Failed to load Kelam questions:", e)
 
     # AÖF İlahiyat sorularını da ekle
     try:

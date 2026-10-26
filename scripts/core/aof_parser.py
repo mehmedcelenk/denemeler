@@ -15,31 +15,31 @@ WATERMARK_WORDS = {
 
 AOF_COURSES = [
     {
-        'folder': 'HADİS TARİHİ VE USÜLÜ ARA SINAV',
+        'folder': 'aof_ilahiyat/hadis_tarihi_ve_usulu',
         'code': 'AOF_HADIS',
         'ders': 'HADİS TARİHİ VE USÜLÜ',
         'ders_kodu': 801
     },
     {
-        'folder': 'İLK DÖNEM İSLAM TARİHİ ARA SINAV',
+        'folder': 'aof_ilahiyat/ilk_donem_islam_tarihi',
         'code': 'AOF_ITAR',
         'ders': 'İLK DÖNEM İSLAM TARİHİ',
         'ders_kodu': 802
     },
     {
-        'folder': 'İSLAM AHLAK ESASLARI ARA SINAV',
+        'folder': 'aof_ilahiyat/islam_ahlak_esaslari',
         'code': 'AOF_AHLAK',
         'ders': 'İSLAM AHLAK ESASLARI',
         'ders_kodu': 803
     },
     {
-        'folder': 'İSLAM İBADET ESASLARI ARA SINAV',
+        'folder': 'aof_ilahiyat/islam_ibadet_esaslari',
         'code': 'AOF_IBADET',
         'ders': 'İSLAM İBADET ESASLARI',
         'ders_kodu': 804
     },
     {
-        'folder': 'İSLAM İNANÇ ESASLARI ARA SINAV',
+        'folder': 'aof_ilahiyat/islam_inanc_esaslari',
         'code': 'AOF_INANC',
         'ders': 'İSLAM İNANÇ ESASLARI',
         'ders_kodu': 805

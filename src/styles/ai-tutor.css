@@ -55,147 +55,292 @@
   background: color-mix(in srgb, var(--brand-accent) 14%, transparent);
 }
 
-/* Soru Altı Kompakt Sorma Kutusu */
+/* Soru Altı Kompakt Sorma Kutusu (Dış çerçevesiz, iç içe butonlu, chat akışlı) */
 .single-ai-ask-box {
   margin-top: 8px;
-  padding: 6px 8px;
-  background: color-mix(in srgb, var(--brand-accent) 6%, var(--paper-bg));
-  border: 1px solid color-mix(in srgb, var(--brand-accent) 30%, var(--paper-border));
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   animation: hintPopIn 0.15s ease;
 }
 
-.ai-ask-input-row {
+.ai-ask-row {
   display: flex;
   align-items: center;
   gap: 6px;
   width: 100%;
 }
 
-.ai-ask-input {
+.btn-ai-box-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--paper-text-muted);
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-ai-box-close:hover {
+  background: color-mix(in srgb, var(--paper-text) 8%, transparent);
+  color: var(--paper-text);
+}
+
+.ai-ask-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
   flex: 1;
   min-width: 0;
-  font-family: inherit;
-  font-size: 11.5px;
-  padding: 5px 9px;
-  border-radius: 6px;
-  border: 1px solid var(--paper-border);
   background: var(--paper-bg);
-  color: var(--paper-text);
-  outline: none;
+  border: 1px solid var(--paper-border);
+  border-radius: 9999px;
+  padding: 2px 3px 2px 12px;
+  box-sizing: border-box;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.ai-ask-input:focus {
+.ai-ask-input-wrap:focus-within {
   border-color: var(--brand-accent);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--brand-accent) 18%, transparent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--brand-accent) 20%, transparent);
+}
+
+.ai-ask-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: var(--paper-text);
+  font-family: inherit;
+  font-size: 12px;
+  padding: 6px 4px;
+  outline: none;
+}
+
+.ai-ask-input::placeholder {
+  color: var(--paper-text-muted);
+  opacity: 0.8;
 }
 
 .btn-ai-submit {
   background: var(--brand-accent);
   color: #ffffff;
   border: none;
-  border-radius: 6px;
-  padding: 5px 11px;
+  border-radius: 9999px;
+  padding: 5px 12px;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 750;
   cursor: pointer;
   flex-shrink: 0;
+  line-height: 1.2;
   transition: filter 0.15s ease, transform 0.1s ease;
 }
 
 .btn-ai-submit:hover {
-  filter: brightness(1.08);
+  filter: brightness(1.1);
 }
 
 .btn-ai-submit:active {
-  transform: scale(0.97);
+  transform: scale(0.96);
 }
 
-/* Kaydırılabilir AI Açıklama Balonu (.ai-reply-bubble) */
-.answer-explanation-bubble.ai-reply-bubble {
-  --explanation-bubble-accent: var(--brand-accent);
-  border-color: var(--brand-accent);
-  pointer-events: auto;
-  max-height: 230px !important;
-  overflow: visible !important;
-  padding: 0.55em 0.85em;
+/* WhatsApp Tarzı Soru Altına Doğrudan Akan AI Yanıt Kartı */
+/* Minimalist WhatsApp Tarzı Sade Sohbet Akışı (UI gürültüsü yok, odak koruma) */
+.ai-chat-reply-card {
+  display: flex;
+  flex-direction: column;
   gap: 6px;
-  z-index: 1005; /* Header badge (1000) üstünde temiz katman */
+  padding: 4px 0 2px 0;
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  line-height: 1.5;
+  animation: hintPopIn 0.16s ease;
+}
+
+.ai-user-bubble-row,
+.ai-history-turn-summary {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 6px !important;
+  width: 100% !important;
+}
+
+.ai-user-bubble-row .btn-bubble-delete,
+.ai-history-turn-summary .btn-bubble-delete {
+  margin: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+.ai-user-bubble-row .ai-bubble-user,
+.ai-history-turn-summary .ai-bubble-user {
+  margin: 0 !important;
+}
+
+.btn-bubble-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--paper-text-muted);
+  opacity: 0.55;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: opacity 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-bubble-delete:hover {
+  opacity: 1;
+  color: #ef4444;
+  background: color-mix(in srgb, #ef4444 10%, transparent);
+}
+
+/* Balonlar (Kullanıcı Sağda, Bot Solda) */
+.ai-chat-bubble {
+  word-break: break-word;
   box-sizing: border-box;
 }
 
-.answer-explanation-bubble.ai-reply-bubble.bubble-below {
-  transform: translateY(0);
-  animation: aiBubblePopInBelow 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-@keyframes aiBubblePopInBelow {
-  from { opacity: 0; transform: translateY(-4px) scale(0.96); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-body.dark-mode .answer-explanation-bubble.ai-reply-bubble {
-  border-color: var(--brand-accent);
-}
-
-.ai-reply-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid color-mix(in srgb, var(--brand-accent) 22%, transparent);
-}
-
-.ai-reply-title {
-  font-size: 10.5px;
-  font-weight: 800;
-  letter-spacing: 0.3px;
-  color: var(--brand-accent);
-  text-transform: uppercase;
-}
-
-.ai-reply-close {
-  background: none;
-  border: none;
-  color: var(--paper-text-muted);
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 1;
-  padding: 2px 5px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-
-.ai-reply-close:hover {
-  background: rgba(125, 125, 125, 0.15);
+.ai-bubble-user {
+  max-width: 84%;
+  background: color-mix(in srgb, var(--brand-accent) 18%, var(--paper-bg));
   color: var(--paper-text);
+  border: 1px solid color-mix(in srgb, var(--brand-accent) 30%, transparent);
+  border-radius: 13px 13px 2px 13px;
+  padding: 5px 11px;
+  font-weight: 550;
+  font-size: 11.5px;
 }
 
-.ai-reply-scroll-body {
-  max-height: 185px;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding-right: 4px;
+body.dark-mode .ai-bubble-user {
+  background: color-mix(in srgb, var(--brand-accent) 26%, #1e293b);
+}
+
+.ai-bubble-bot {
+  align-self: flex-start;
+  margin-right: auto;
+  max-width: 96%;
+  background: color-mix(in srgb, var(--paper-text) 4%, var(--paper-bg));
+  color: var(--paper-text);
+  border: 1px solid color-mix(in srgb, var(--paper-border) 80%, transparent);
+  border-radius: 13px 13px 13px 2px;
+  padding: 8px 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+body.dark-mode .ai-bubble-bot {
+  background: color-mix(in srgb, var(--paper-text) 6%, #182234);
+}
+
+/* Önceki Sorular: Yalnızca sağda soru balonu ve yanında '>' */
+.ai-chat-history-stack {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  scrollbar-width: thin;
+  margin-top: 4px;
 }
 
-.ai-reply-query {
-  font-size: 11px;
-  font-weight: 700;
-  font-style: italic;
-  color: var(--paper-text-muted);
+.ai-history-turn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.ai-reply-text {
+.ai-history-turn-summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  outline: none;
+}
+
+.ai-history-turn-summary::-webkit-details-marker {
+  display: none;
+}
+
+.ai-bubble-user.is-history-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.ai-bubble-user.is-history-bubble:hover {
+  opacity: 1;
+  border-color: var(--brand-accent);
+}
+
+.ai-bubble-chevron {
+  display: inline-block;
   font-size: 12px;
-  line-height: 1.48;
-  color: var(--paper-text);
-  word-break: break-word;
+  font-weight: 800;
+  color: var(--brand-accent);
+  transition: transform 0.18s ease;
 }
 
+.ai-history-turn[open] .ai-bubble-chevron {
+  transform: rotate(90deg);
+}
+
+.ai-bubble-bot.is-history-reply {
+  margin-top: 4px;
+}
+
+.ai-quick-chips { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; padding: 2px 0; }
+.ai-chip-btn {
+  background: transparent;
+  color: var(--paper-text-muted);
+  border: 1px solid color-mix(in srgb, var(--paper-border) 80%, transparent);
+  border-radius: 9999px;
+  padding: 2px 8px;
+  font-size: 10.5px;
+  font-weight: 550;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.ai-chip-btn:hover {
+  color: var(--paper-text);
+  border-color: var(--brand-accent);
+  background: color-mix(in srgb, var(--brand-accent) 8%, transparent);
+}
+
+.ai-bubble-user.is-pending {
+  opacity: 0.75;
+}
+
+.ai-bubble-bot.is-loading {
+  font-style: italic;
+  opacity: 0.85;
+  font-size: 11.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* AI Markdown Typography */
+.ai-bubble-bot p { margin: 3px 0; }
+.ai-bubble-bot ul.ai-md-list, .ai-bubble-bot ol.ai-md-list { margin: 4px 0 4px 18px; padding: 0; list-style-type: disc; }
+.ai-bubble-bot li { margin: 2px 0; }
+.ai-bubble-bot strong { color: var(--paper-text); font-weight: 750; }
+.ai-bubble-bot em { font-style: italic; }
+.ai-bubble-bot blockquote { margin: 4px 0; padding-left: 8px; border-left: 2px solid var(--brand-accent); font-style: italic; opacity: 0.9; }
+.ai-md-code { background: rgba(125, 125, 125, 0.15); padding: 1px 4px; border-radius: 3px; font-family: monospace; font-size: 11px; }
+.ai-loading-spinner { display: inline-flex; align-items: center; animation: aiAstrolabeSpin 2s infinite linear; color: var(--brand-accent); transform-origin: 50% 56.25%; }
+@keyframes aiAstrolabeSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -3,6 +3,7 @@ export type FeedEventType = 'JOIN' | 'LEAVE' | 'FOCUS_LOST' | 'HELP_CALL';
 export interface RoomFeedItem {
   id: string;
   type: FeedEventType;
+  studentId: string;
   studentName: string;
   timestamp: number;
   returnedAt?: number;
@@ -38,6 +39,20 @@ export type RoomMessageType =
   | 'AWARD_STAR'
   | 'BROADCAST_ANNOUNCEMENT';
 
+export interface RoomMessagePayload {
+  participants?: RoomParticipant[];
+  studentStats?: Record<string, StudentStats>;
+  isPaused?: boolean;
+  isCorrect?: boolean;
+  questionId?: number;
+  correctCount?: number;
+  incorrectCount?: number;
+  feedId?: string;
+  studentId?: string;
+  studentName?: string;
+  text?: string;
+}
+
 export interface RoomMessage {
   type: RoomMessageType;
   roomId: string;
@@ -45,7 +60,7 @@ export interface RoomMessage {
   senderName: string;
   isHost?: boolean;
   timestamp: number;
-  payload?: any;
+  payload?: RoomMessagePayload;
 }
 
 export interface RoomState {

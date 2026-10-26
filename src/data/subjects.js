@@ -12,7 +12,8 @@ export const AOIHL_SUBJECTS = [
   { id: 'FEL', name: 'Felsefe', shortName: 'FEL', icon: '🦉', cat: 'sozel', kredi: 2 },
   { id: 'DIN', name: 'Din Kültürü', shortName: 'DİN', icon: '🧎', cat: 'kultur', kredi: 2 },
   { id: 'SAG', name: 'Sağlık & Trafik', shortName: 'SAĞ', icon: '🚑', cat: 'kultur', kredi: 1 },
-  { id: 'ING', name: 'İngilizce', shortName: 'İNG', icon: '🌐', cat: 'kultur', kredi: 4 }
+  { id: 'ING', name: 'İngilizce', shortName: 'İNG', icon: '🌐', cat: 'kultur', kredi: 4 },
+  { id: 'KLM', name: 'Kelam', shortName: 'KLM', icon: '📖', cat: 'ilahiyat', kredi: 2 }
 ];
 
 export const AOF_SUBJECTS = [
@@ -38,6 +39,7 @@ export function matchesSubject(q, subj) {
   if (subj === 'DIN') return q.ders.includes('DİN KÜLTÜRÜ');
   if (subj === 'SAG') return q.ders.includes('SAĞLIK');
   if (subj === 'ING') return q.ders.includes('İNGİLİZCE');
+  if (subj === 'KLM') return q.ders.includes('KELAM');
   if (subj === 'AOF_HADIS') return q.ders.includes('HADİS');
   if (subj === 'AOF_ITAR') return q.ders.includes('İLK DÖNEM İSLAM TARİHİ');
   if (subj === 'AOF_AHLAK') return q.ders.includes('AHLAK');
@@ -52,6 +54,7 @@ export function getShortCourseName(c) {
           .replace('İSLAM AHLAK ESASLARI', 'AHLÂK')
           .replace('İSLAM İBADET ESASLARI', 'İBADET')
           .replace('İSLAM İNANÇ ESASLARI', 'İNANÇ')
+          .replace('KELAM', 'KLM')
           .replace('TÜRK DİLİ VE EDEBİYATI', 'TDE')
           .replace('TÜRK DİLİ VE ED.', 'TDE')
           .replace('T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK', 'İNK')
@@ -86,6 +89,7 @@ export function getCondensedCourseCode(coursesSet, subjId) {
     'ING': 'İNG',
     'INK': 'İNK',
     'SAG': 'SAĞ',
+    'KLM': 'KLM',
     'AOF_HADIS': 'HADİS',
     'AOF_ITAR': 'İS.TAR',
     'AOF_AHLAK': 'AHLÂK',

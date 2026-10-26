@@ -79,20 +79,7 @@ export function renderBookletPages(_targetQuestionId = null) {
     }
   });
 
-  const lucidePageEyeSvg = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0-.696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`;
-
-  const hasTdeInPage = state.bookletQuestions.some(q => (state.currentSubject === 'TDE') || (q.ders && q.ders.includes('TÜRK DİLİ')));
-  let pageLegendHtml = '';
-  if (hasTdeInPage) {
-    pageLegendHtml = `
-      <div class="page-xray-footer-legend">
-        <span class="xray-legend-item"><span class="xray-legend-line" style="background:#2563eb;"></span><strong>Özne</strong></span>
-        <span class="xray-legend-item"><span class="xray-legend-line" style="background:#e11d48;"></span><strong>Yüklem</strong></span>
-        <span class="xray-legend-item"><span class="xray-legend-line" style="background:#059669;"></span><strong>Nesne</strong></span>
-        <span class="xray-legend-item"><span class="xray-legend-line" style="background:#d97706;"></span><strong>Tümleç / Zarf</strong></span>
-      </div>
-    `;
-  }
+  const lucidePageEyeSvg = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`;
 
   container.innerHTML = `
     <div class="booklet-page" id="page_1">
@@ -111,7 +98,6 @@ export function renderBookletPages(_targetQuestionId = null) {
       </div>
 
       <div>
-        ${pageLegendHtml}
         <div class="page-bottom-answer-strip" id="pageBottomKey_1">
           <span style="font-weight:800; font-size:10px; margin-right:4px;">🔑 CEVAP ANAHTARI:</span>
           ${miniKeyHtml}

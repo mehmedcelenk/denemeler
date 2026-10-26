@@ -24,6 +24,7 @@ export function handleSelectOpticalBubble(qid: number, letter: Choice): void {
     store.removeUserMarkedChoice(qid);
     delete pendingSelections[qid];
     saveChoicesToStorage();
+    roomService.revokeStudentAnswer(qid);
     if (typeof document !== 'undefined') {
       document.querySelectorAll<HTMLElement>(`[data-qid="${qid}"]`).forEach(card => {
         card.dataset.userMark = '';
@@ -83,7 +84,7 @@ function applyFinalChoice(qid: number, choice: Choice): void {
   if (q) {
     const isCorrect = (choice === q.dogru_cevap);
     recordAnswerForCombo(isCorrect);
-    roomService.logStudentAnswer(isCorrect);
+    roomService.logStudentAnswer(qid, isCorrect);
 
     if (isCorrect) {
       addStreakPoints(1);
@@ -142,19 +143,37 @@ export function clearAllMarks(): void {
   for (const key of Object.keys(pendingSelections)) {
     delete pendingSelections[Number(key)];
   }
-  if (Object.keys(state.userMarkedChoices).length === 0) return;
+  store.clearAllEliminatedWrongChoices();
+  const hasDom = typeof document !== 'undefined';
+  if (hasDom) {
+    document.querySelectorAll('.btn-eliminate-wrong').forEach(btn => {
+      btn.classList.remove('active');
+      btn.setAttribute('title', 'Bir Yanlış Şıkkı Ele');
+    });
+  }
+
+  if (Object.keys(state.userMarkedChoices).length === 0) {
+    if (hasDom) {
+      document.querySelectorAll('.optical-choice-row').forEach(el => {
+        el.classList.remove('marked-incorrect');
+      });
+    }
+    return;
+  }
 
   store.clearAllUserMarkedChoices();
   saveChoicesToStorage();
 
-  document.querySelectorAll<HTMLElement>('.booklet-question').forEach(card => {
-    card.dataset.userMark = '';
-    delete card.dataset.userStatus;
-  });
+  if (hasDom) {
+    document.querySelectorAll<HTMLElement>('.booklet-question').forEach(card => {
+      card.dataset.userMark = '';
+      delete card.dataset.userStatus;
+    });
 
-  document.querySelectorAll('.optical-choice-row').forEach(el => {
-    el.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
-  });
+    document.querySelectorAll('.optical-choice-row').forEach(el => {
+      el.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
+    });
+  }
 }
 
 /** Tek bir sorunun doğru cevabını gösterir veya gizler. */
