@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Cuma namazıyla mükellef olan bir müslümanın cuma saatinde alışveriş yapmasının dini hükmü aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Dolaylı (li-gayrihi) haram",
+      "B": "Doğrudan (haram li-zatihi) haram",
+      "C": "Tahrimen mekruh",
+      "D": "Tenzihen mekruh",
+      "E": "Müfsit"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Cuma Namazı"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Aşağıdakilerden hangisi ibadetlerin kısımlara ayrıldığı çeşitlerden biri değildir?",
+    "secenekler": {
+      "A": "Herkesin sorumlu olup olmamasına göre",
+      "B": "Vakte bağlı olup olmamasına göre",
+      "C": "Bedenle ve malla yapılmasına göre",
+      "D": "Miktarının az çok olmasına göre",
+      "E": "Yapılması istenen fiilin belirli olup olmamasına göre"
+    },
+    "ana_konu": "İbadet Kavramı",
+    "alt_konu": "İbadetlerin Sınıflandırılması"
+  },
+  {
+    "soru_no": 3,
+    "soru": "İbadetler ile ilgili olarak \"kazâ\" teriminin tanımı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Bir ibadeti vakti içinde tekrarlamaktır.",
+      "B": "Bir ibadeti terk etmektir.",
+      "C": "Bir ibadeti vakti girmeden yerine getirmektir.",
+      "D": "Bir ibadeti vakti çıktıktan sonra tam olarak yerine getirmektir.",
+      "E": "Bir ibadeti vaktinde yapmaktır."
+    },
+    "ana_konu": "İbadet Kavramı",
+    "alt_konu": "Eda, Kazâ ve Kaza Kavramları"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Allah’ın mükelleflerden bir fiili yapıp yapmamalarını istemesi veya mükellefi bu fiiller arasında serbest bırakmasına ne ad verilir?",
+    "secenekler": {
+      "A": "Vaz’î hükümler",
+      "B": "Mutlak hükümler",
+      "C": "Teklifî hükümler",
+      "D": "Mukayyed hükümler",
+      "E": "Kifâî hükümler"
+    },
+    "ana_konu": "İbadet Kavramı",
+    "alt_konu": "Hüküm Türleri (Teklifi ve Vaz'i)"
+  },
+  {
+    "soru_no": 5,
+    "soru": "İstisnaî hallerde başvurulan, abdest ve gusül yerine geçen sembolik, manevi ve hükmi temizliğe ne ad verilir?",
+    "secenekler": {
+      "A": "Teyemmüm",
+      "B": "Gusül",
+      "C": "Abdest",
+      "D": "Mesh",
+      "E": "Normal duş"
+    },
+    "ana_konu": "Temizlik (Taharet)",
+    "alt_konu": "Teyemmüm"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Temiz olmayan bir maddenin affedilebilen miktarıyla namaz kılmanın hükmü aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Mendup",
+      "B": "Haram",
+      "C": "Fasit",
+      "D": "Bâtıl",
+      "E": "Mekruh"
+    },
+    "ana_konu": "Temizlik (Taharet)",
+    "alt_konu": "Necasetten Taharet"
+  },
+  {
+    "soru_no": 7,
+    "soru": "“Beden, elbise ve namaz kılınacak yerlerden hakiki pisliklerin giderilmesi” tanımı aşağıdakilerden hangi kavram ile ifade edilmektedir?",
+    "secenekler": {
+      "A": "İstikbâl-i kıble",
+      "B": "Necâsetten tahâret",
+      "C": "Setr-i avret",
+      "D": "Hadesten tahâret",
+      "E": "Tezkiye"
+    },
+    "ana_konu": "Temizlik (Taharet)",
+    "alt_konu": "Necasetten Taharet"
+  },
+  {
+    "soru_no": 8,
+    "soru": "Hayız ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Üç günden az, on günden çok gelen kan “istihâza” kanıdır.",
+      "B": "Şâfiilere göre hayız bir gün bir geceden az olamaz.",
+      "C": "Şâfiilere göre hayız 15 günden fazla olamaz.",
+      "D": "Hanefilere göre hayız üç gün üç geceden az olamaz.",
+      "E": "Hanefilere göre hayız 10 günden fazla olabilir."
+    },
+    "ana_konu": "Temizlik (Taharet)",
+    "alt_konu": "Özür Halleri (Hayız ve Nifas)"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Namazın farz olmasının sebebi ve edasının şartı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hadesten tahâret",
+      "B": "Necâsetten tahâret",
+      "C": "Setr-i avret",
+      "D": "Allah’ın emretmesi",
+      "E": "Vakit"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Farz Olma Sebebi ve Şartları"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi Hanefîler’e göre başlamış bir namazı bozan durumlardan biri değildir?",
+    "secenekler": {
+      "A": "Namazda konuşmak",
+      "B": "Rükû ve secdede tesbihleri terk etmek",
+      "C": "Namazda bayılmak",
+      "D": "Namazda kahkaha ile gülmek",
+      "E": "Namazda kıbleden başka bir tarafa yönelmek"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazı Bozan Şeyler"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Aşağıdakilerden hangisi Hanefî mezhebine göre namazın sünnetlerinden biridir?",
+    "secenekler": {
+      "A": "Bayram namazlarında üçer ilâve tekbir almak",
+      "B": "Tek başına kılınan akşam namazında kıraati açıktan yapmak",
+      "C": "Namazın son oturuşunda Hz. Peygamber (s.a.s)’e salât-ü selâm okumak",
+      "D": "Vitirde kunût duasını okumak",
+      "E": "Dört rek‘atlı farz namazın ilk oturuşunda tahiyyatı okumak"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Sünnetleri"
+  },
+  {
+    "soru_no": 12,
+    "soru": "Şâfiî mezhebine göre aşağıdaki ifadelerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "İmama uyan kişinin sesli ve sessiz namazlarda Fâtiha sûresini okumayıp susması vaciptir.",
+      "B": "Cemaat sesli namazlarda Fâtiha sûresini okumaz, imamı dinler.",
+      "C": "İmama uyan kişinin sessiz namazlarda Fâtiha sûresini okuması farzdır.",
+      "D": "Namazda zamm-ı sûre okumak farzdır.",
+      "E": "Namazda ta‘dil-i erkân vaciptir."
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Mezhepler Arası Farklılıklar (Şafiî Mezhebi)"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Bayram namazlarının hükmü ve kılınışı ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "Bayram namazlarında hutbe namazdan önce okunur.",
+      "B": "Şâfiî mezhebine göre bayram namazı vaciptir.",
+      "C": "Mâlikî mezhebinde bayram namazı farzdır.",
+      "D": "Hanefî mezhebinde bayram namazları vaciptir.",
+      "E": "Hanefî mezhebine göre bayram namazına yetişemeyen kimse, tek başına bayram namazını kılabilir."
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Bayram Namazları"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Sünnet namazlar hakkında aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Sünnet namazlar tek başına cemaatsiz kılınır.",
+      "B": "Peygamber’in ara sıra terk ettiği sünnetlere gayri müekked sünnet adı verilir.",
+      "C": "Sünnet namazların sadece ilk rekatında kıraat farzdır.",
+      "D": "Sünnet namazlar Hz. Peygamber’e bağlılığın göstergesi olup terk edilmesi hoş karşılanmaz.",
+      "E": "Hanefiler’e göre başlanılmış bir sünnet bozulduğunda kazası vaciptir."
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Sünnet Namazlar"
+  },
+  {
+    "soru_no": 15,
+    "soru": "Yolcu namazı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Mâlikîler’e göre yolcunun namazlarını kısaltarak kılması sünnet-i müekkededir.",
+      "B": "Şâfiîler’e göre yolcu, namazlarını kısaltıp kısaltmamakta serbesttir.",
+      "C": "Hanefîler’e göre yolcunun namazlarını kısaltarak kılması vaciptir.",
+      "D": "Hanefîler’e göre yolcular, yolculukta kılamadıkları namazların kazasını kısaltarak kılarlar.",
+      "E": "Yolcu olan kişi, yolcu olmayan imama uyamaz."
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Yolcu Namazı (Seferi Namaz)"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Aşağıdakilerden hangisi vacip namazlardan biri değildir?",
+    "secenekler": {
+      "A": "Tavaf namazı",
+      "B": "Teheccüd namazı",
+      "C": "Vitir namazı",
+      "D": "Nezir namazı",
+      "E": "Bayram namazı"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Vacip Namazlar"
+  },
+  {
+    "soru_no": 17,
+    "soru": "Fitre ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "Fitre yükümlülüğünün başlangıç vakti bayram sabahı imsak vaktinin girmesidir.",
+      "B": "Fitrenin fakir olan anneye verilmesi daha sevaptır.",
+      "C": "Küçük çocuklar için fitre verilmez.",
+      "D": "Evli bir erkek, eşinin fitresini vermekle yükümlüdür.",
+      "E": "Fitreyi bayramda vermeyenler daha sonra iki kat verirler."
+    },
+    "ana_konu": "Zekat ve Sadaka",
+    "alt_konu": "Fıtır Sadakası (Fitre)"
+  },
+  {
+    "soru_no": 18,
+    "soru": "I. Abdest esnasında hata ile boğaza su kaçması\nII. Unutarak su içmek\nIII. Orucun bozulduğunu zannederek yiyip içmek\nIV. Yutmadan, yemeğin tadına bakmak\n\nYukarıdakilerden hangileri orucu bozup sadece kazayı gerektiren durumlar arasında yer alır?",
+    "secenekler": {
+      "A": "I ve III",
+      "B": "I ve IV",
+      "C": "II ve III",
+      "D": "II ve IV",
+      "E": "II, III ve IV"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucu Bozan Durumlar ve Kazâ/Keffaret"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Aşağıdakilerden hangisi orucun edâsının farz olmasının şartlarındandır?",
+    "secenekler": {
+      "A": "Reşid olmak",
+      "B": "Hasta olmamak",
+      "C": "Aklını yitirmiş olmak",
+      "D": "Büluğa ermemiş olmak",
+      "E": "Yolcu olmak"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucun Farz Olma Şartları"
+  },
+  {
+    "soru_no": 20,
+    "soru": "Aşağıdakilerden hangisi orucun kazasını gerektiren hallerden biri değildir?",
+    "secenekler": {
+      "A": "Tehdit altında orucu bozmak",
+      "B": "Hata ile bir şey yemek veya içmek",
+      "C": "Orucun bozulduğunu zannederek yiyip içmek",
+      "D": "Oruçlu iken uyumak",
+      "E": "Keyif verici maddeler kullanmak"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucu Bozan Durumlar ve Kazâ/Keffaret"
+  }
+]

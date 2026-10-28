@@ -71,6 +71,17 @@ body.dark-mode {
   -webkit-tap-highlight-color: transparent;
 }
 
+html, body {
+  touch-action: manipulation;
+}
+
+/* Mobilde dokunulduğunda iOS Safari/WebKit'in sayfayı otomatik zoom yapmasını engeller */
+@media (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
 body {
   background: var(--ambient-bg);
   color: var(--paper-text);

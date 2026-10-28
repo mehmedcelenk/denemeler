@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Aşağıdakilerden hangisi imanın geçerli olması için gereken şartlardan biri değildir?",
+    "secenekler": {
+      "A": "İman, ümitsizlik anıyla sınırlı olmamalıdır.",
+      "B": "İman eden kişide dinin esas hükümlerini yok sayan bir davranış bulunmamalıdır.",
+      "C": "İman eden kişi her gün imanını tazelemelidir.",
+      "D": "İman eden kişi dini hükümlerin tamamını kabul etmelidir.",
+      "E": "İman eden kişi alçakgönüllü olmalıdır."
+    },
+    "ana_konu": "İman",
+    "alt_konu": "İmanın Şartları ve Geçerliliği"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Aşağıdakilerden hangisi iman-amel arasında ilişkiyi daha geniş tanımlayan ve imanın, tasdik, ikrar ve İslam’ın amel rükünlerini yerine getirmek şeklinde yorumlayan mezheplerden biri değildir?",
+    "secenekler": {
+      "A": "Mu'tezile",
+      "B": "Hâriciyye",
+      "C": "Eşariyye",
+      "D": "Şîa",
+      "E": "Selefiyye"
+    },
+    "ana_konu": "İman-Amel İlişkisi",
+    "alt_konu": "Mezheplerin İman-Amel Tanımları"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Allah’ın birliğine, O’nun sonsuz güç ve kudret sahibi olduğuna, Hz. Peygamber’in O’nun gönderdiği son elçi olduğuna şeksiz şüphesiz inanmaya ------- denir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "tafsili iman",
+      "B": "geleneksel iman",
+      "C": "dönüşümsel iman",
+      "D": "taklidi iman",
+      "E": "icmali iman"
+    },
+    "ana_konu": "İman",
+    "alt_konu": "İman Türleri (İcmali ve Tafsili İman)"
+  },
+  {
+    "soru_no": 4,
+    "soru": "İslam düşüncesinde iman kavramının terim anlamı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hz. Peygamber’in vahiy yoluyla getirdiği tüm hususlarda tereddütsüz tasdik etmek ve getirdiklerine inanmaktır.",
+      "B": "Allah’ın ilâhî kanunlarını inceleyerek uygulamaktır.",
+      "C": "Hz. Peygamber’in getirdiği hususları aklî süzgeçten geçirdikten sonra inanmaktır.",
+      "D": "Hz. Peygamber’in getirdiği hususları sadece tatbik etmektir.",
+      "E": "Allah’ın koyduğu kanunlar ile beşeri kanunları mezcetmektir."
+    },
+    "ana_konu": "İman",
+    "alt_konu": "İmanın Tanımı ve Kapsamı"
+  },
+  {
+    "soru_no": 5,
+    "soru": "Aşağıdakilerden hangisi İslam inancının temel niteliklerinden biri değildir?",
+    "secenekler": {
+      "A": "Mutedildir.",
+      "B": "Vicdana hitap eder.",
+      "C": "Fıtrîdir.",
+      "D": "Akla uygundur.",
+      "E": "Uzlaşmacıdır."
+    },
+    "ana_konu": "İslam İnanç Esasları",
+    "alt_konu": "İslam İnanç Sisteminin Özellikleri"
+  },
+  {
+    "soru_no": 6,
+    "soru": "İslâm dininin diğer insanlarla ilişkilerini düzenleyen, davranışlarla ilgili değerler alanı hangi kavramla ifade edilmektedir?",
+    "secenekler": {
+      "A": "Muamelât",
+      "B": "İtikâd",
+      "C": "İbadet",
+      "D": "Tabîi bilimler",
+      "E": "Teorik bilimler"
+    },
+    "ana_konu": "Din ve Ahlak",
+    "alt_konu": "Dinin Temel Alanları (İtikad, İbadet, Muamelat)"
+  },
+  {
+    "soru_no": 7,
+    "soru": "İslam itikad esaslarının “tecezzi kabul etmemesi” ne anlama gelmektedir?",
+    "secenekler": {
+      "A": "Açık olması",
+      "B": "İnkar edilememesi",
+      "C": "Sabit kalması",
+      "D": "Bölünmemesi",
+      "E": "Değişmesi"
+    },
+    "ana_konu": "İman Esasları",
+    "alt_konu": "İman Esaslarının Bütünlüğü"
+  },
+  {
+    "soru_no": 8,
+    "soru": "Hz. Aişe’ye sorulduğunda Hz. Peygamber için “O’nun ahlakı Kur’an ahlakı idi.” demiştir. Bu ifade İslam ahlak ilkelerinin hangi yönünde işaret etmektedir?",
+    "secenekler": {
+      "A": "Sadece Hz. Peygamber tarafından yerine getirebileceğine",
+      "B": "Ahlakî ilkelerin yaşanmasının zorluğuna",
+      "C": "Ahlakî ilkelerin göreceliliğine",
+      "D": "Ahlakî ilkelerin sorgulanamazlığına",
+      "E": "Ahlakî ilkelerin Kur’an ve Sünnet’e dayandığına"
+    },
+    "ana_konu": "İslam Ahlakı",
+    "alt_konu": "Peygamberin Ahlakı ve Kaynağı"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Allah’ın varlığının sonunun olmamasıdır. O’nun varlığı sonsuza kadar devam eder. O, fâni ve ölümlü değildir. O’ndan başka her şey, yok olmaya mahkûmdur. Yukarıdaki paragrafta hakkında bilgi verilen tenzîhî sıfat aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hayat",
+      "B": "Kıdem",
+      "C": "Kıyam bi-nefsihi",
+      "D": "Bekâ",
+      "E": "Vahdâniyet"
+    },
+    "ana_konu": "Allah'ın Sıfatları",
+    "alt_konu": "Tenzîhî Sıfatlar (Bekâ)"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Mâturîdîler'in yaratmayı izah etmek için ayrı bir sıfat olarak kabul ettiği, Eş'arîler'in ise irade ve kudreti yeterli görerek reddettiği sıfat aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Kelam",
+      "B": "Hayat",
+      "C": "Basar",
+      "D": "Sem",
+      "E": "Tekvin"
+    },
+    "ana_konu": "Allah'ın Sıfatları",
+    "alt_konu": "Zâtî ve Subûtî Sıfatlar Tartışmaları (Tekvin)"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Mu'tezile ile Ehl-i sünnet arasında en ciddi tartışmaların yaşandığı ilahî sıfat aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Vahdaniyet",
+      "B": "Beka",
+      "C": "Kelam",
+      "D": "Hayat",
+      "E": "İrade"
+    },
+    "ana_konu": "Kelam İlmi",
+    "alt_konu": "Kelam Tartışmaları (Kelam Sıfatı)"
+  },
+  {
+    "soru_no": 12,
+    "soru": "“Hiçbir şey onun benzeri değildir” (eş-Şûrâ 42/11) ayeti hangi ilahî sıfata işaret etmektedir?",
+    "secenekler": {
+      "A": "Muhâlefetün lil-havâdis",
+      "B": "Kıyam bi-nefsihi",
+      "C": "Vücud",
+      "D": "Vahdaniyet",
+      "E": "Kıdem"
+    },
+    "ana_konu": "Allah'ın Sıfatları",
+    "alt_konu": "Tenzîhî Sıfatlar (Muhalefetün lil-havâdis)"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Meleklere iman ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Fiziki olarak görünmeyen varlıklardır.",
+      "B": "Hz. Adem’den önce de yaşadıkları bilinmektedir.",
+      "C": "Yeme içme gibi insani fiillerde bulunmazlar.",
+      "D": "Meleklerin varlığına iman itikad esasları arasında yer almaz.",
+      "E": "Kur’an ve hadislerde meleklerin özellikleri ve görevleri sıralanmıştır."
+    },
+    "ana_konu": "Meleklere İman",
+    "alt_konu": "Meleklerin Özellikleri ve İman Esasları"
+  },
+  {
+    "soru_no": 14,
+    "soru": "------- mezhebinin çoğunluğu, meleklerin Allah’a yakın olmaları ve nefsin isteklerinden yoksun bulunmaları nedeniyle peygamberlerden ve diğer insanlardan üstün olduğunu savunmuştur. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "Şia",
+      "B": "Mu'tezile",
+      "C": "Ehl-i Sünnet",
+      "D": "Mâtürîdiyye",
+      "E": "Ehl-i Hadis"
+    },
+    "ana_konu": "Meleklere İman",
+    "alt_konu": "Meleklerin Konumu Hakkında Mezhep Görüşleri"
+  },
+  {
+    "soru_no": 15,
+    "soru": "Aşağıdakilerden hangisi ismi Kur'an'da yer alan meleklerden biri değildir?",
+    "secenekler": {
+      "A": "Kirâmen Kâtibîn",
+      "B": "Mukarrebûn",
+      "C": "Cebrâil",
+      "D": "Münker Nekir",
+      "E": "Hârut Mârut"
+    },
+    "ana_konu": "Meleklere İman",
+    "alt_konu": "Kur'an'da Adı Geçen Melekler"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Meleklerin yaratılış gayesi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "İnsanları iyiliğe teşvik etmek",
+      "B": "Evren yasalarına müdahale etmek",
+      "C": "Alemin işleyişinde görevli olmak",
+      "D": "İnsanlara manevî destek sağlamak",
+      "E": "İlahî mesajı insanlara iletmek"
+    },
+    "ana_konu": "Meleklere İman",
+    "alt_konu": "Meleklerin Görevleri ve Yaratılış Gayesi"
+  },
+  {
+    "soru_no": 17,
+    "soru": "I. Hz. Peygamber Kur’an’ı lafız ve mana olarak telakki etmiş ve öylece tebliğ etmiştir.\nII. Vahyin mahiyeti Allah ve peygamberleri arasında nübüvvetin bir sırrı olarak kalmıştır.\nIII. Kur’an'da vahyin korunmuşluğuna dair bir ifade bulunmamaktadır.\nVahyin mahiyeti hakkında yukarıda verilen bilgilerden hangisi/hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Vahiy",
+    "alt_konu": "Vahyin Mahiyeti ve Korunması"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Kur’an-ı Kerim'i çoğaltarak çeşitli İslam ülkelerine gönderen halife aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hz. Ebu Bekir",
+      "B": "Hz. Ömer",
+      "C": "Hz. Osman",
+      "D": "Hz. Ali",
+      "E": "Hz. Hasan"
+    },
+    "ana_konu": "Kur'an'a İman",
+    "alt_konu": "Kur'an'ın Toplanması ve Çoğaltılması"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Tevrat'ın Hz. Musa’nın vefatından sonra İsrailoğullarının Sina dağından ayrılıp Kenan ülkesine girme sürecini anlatan bölümü aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Levililer",
+      "B": "A’dât",
+      "C": "Tesniye",
+      "D": "Hurûc",
+      "E": "Tekvin"
+    },
+    "ana_konu": "Kitaplara İman",
+    "alt_konu": "Tevrat'ın İçeriği ve Bölümleri"
+  },
+  {
+    "soru_no": 20,
+    "soru": "İncil hakkında aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Hıristiyan kutsal kitabında İsa'ya vahyedilen İncil'den söz edilmiştir.",
+      "B": "Hıristiyanlara göre kutsal ruh tarafından ilham edilmiş Tanrı kelamıdır.",
+      "C": "Yeni ahit metinleri İsa'nın biyografisidir.",
+      "D": "Şifahî olarak nakledilen metinler daha sonra yazıya geçirilmiştir.",
+      "E": "Yeni ahid 27 kitaptan oluşmaktadır."
+    },
+    "ana_konu": "Kitaplara İman",
+    "alt_konu": "İncil ve Yeni Ahit"
+  }
+]

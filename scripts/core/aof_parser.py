@@ -202,7 +202,20 @@ def parse_aof_folder(folder_path, course_name, course_code, global_start_id):
 def extract_all_aof_courses(base_id=20000):
     curr_id = base_id
     res = {}
+    data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data', 'subjects')
     for c_info in AOF_COURSES:
+        json_path = os.path.join(data_dir, f"{c_info['code']}.json")
+        if os.path.exists(json_path) and os.path.getsize(json_path) > 1000:
+            import json
+            try:
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    qs = json.load(f)
+                if len(qs) >= 20:
+                    res[c_info['code']] = qs
+                    print(f"  {c_info['ders']}: {len(qs)} soru temiz JSON'dan yüklendi.")
+                    continue
+            except Exception:
+                pass
         path = os.path.join('docs/kaynak_pdfler', c_info['folder'])
         if not os.path.exists(path):
             print(f"Warning: {path} directory missing")

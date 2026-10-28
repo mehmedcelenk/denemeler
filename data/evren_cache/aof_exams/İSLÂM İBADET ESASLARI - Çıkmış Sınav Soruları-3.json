@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Allah’a olan teslimiyeti, bağlılığı ve kullukta bulunulmasını ifade eden kavram aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ubûdiyet",
+      "B": "Zikir",
+      "C": "Taabbüd",
+      "D": "Amel",
+      "E": "Tetavvu"
+    },
+    "ana_konu": "İbadetin Tanımı ve Kavramları",
+    "alt_konu": "İbadet Kavramı"
+  },
+  {
+    "soru_no": 2,
+    "soru": "I. Ezan\nII. Kamet\nIII. Sabah namazının sünneti\nIV. İkindi namazının sünneti\nYukarıdakilerden hangisi/hangileri müekked sünnetlerdendir?",
+    "secenekler": {
+      "A": "Yalnız III",
+      "B": "Yalnız IV",
+      "C": "I ve II",
+      "D": "I, II ve III",
+      "E": "II, III ve IV"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Sünnetleri"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Aşağıdakilerden hangisi kifâî ibadet türlerindendir?",
+    "secenekler": {
+      "A": "Beş vakit namaz",
+      "B": "Oruç",
+      "C": "Hac",
+      "D": "Kefaretler",
+      "E": "Cenaze namazı"
+    },
+    "ana_konu": "İbadetin Türleri",
+    "alt_konu": "Kifâî İbadetler"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Aşağıdakilerden hangisi sistematik ve şekle bağlı ibadetlerden biri değildir?",
+    "secenekler": {
+      "A": "Oruç tutmak",
+      "B": "Yoksullara yardım",
+      "C": "Namaz kılmak",
+      "D": "İtikafa girmek",
+      "E": "Kurban kesmek"
+    },
+    "ana_konu": "İbadetin Türleri",
+    "alt_konu": "Şekle Bağlı İbadetler"
+  },
+  {
+    "soru_no": 5,
+    "soru": "I. Abdesti bozan ve guslü gerektiren durumlar\nII. Teyemmüme başvurmaya sebep olan mazeretin ortadan kalkması\nIII. Teyemmümle namaz kılan kimsenin namaz esnasında suyu görmesi\nYukarıdakilerden hangisi/hangileri teyemmümü bozan durumlardandır?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Taharet",
+    "alt_konu": "Teyemmüm"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Aşağıdakilerden hangisi dört sünnî fıkıh mezhebinin ittifakla kabul ettiği abdestin farzlarından biri değildir?",
+    "secenekler": {
+      "A": "Niyet etmek",
+      "B": "Başı meshetmek",
+      "C": "Kolları dirseklerle birlikte yıkamak",
+      "D": "Yüzü yıkamak",
+      "E": "Ayakları topuklarla birlikte yıkamak"
+    },
+    "ana_konu": "Taharet",
+    "alt_konu": "Abdestin Farzları"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Fıkıh literatüründe maddi temizliği ifade etmek için kullanılan kavram aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Tezkiye",
+      "B": "İstihâza",
+      "C": "Hades",
+      "D": "Taharet",
+      "E": "Nifas"
+    },
+    "ana_konu": "Taharet",
+    "alt_konu": "Taharet Kavramı"
+  },
+  {
+    "soru_no": 8,
+    "soru": "“Beden, elbise ve namaz kılınacak yerlerden hakiki pisliklerin giderilmesi” olarak tanımlanan kavram aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Tezkiye",
+      "B": "İstikbâl-i kıble",
+      "C": "Hadesten tahâret",
+      "D": "Setr-i avret",
+      "E": "Necâsetten tahâret"
+    },
+    "ana_konu": "Taharet",
+    "alt_konu": "Necasetten Taharet"
+  },
+  {
+    "soru_no": 9,
+    "soru": "• Erkeklerin beş vakit farz ve cuma namazında ezan okuması ve kâmet getirmesi\n• Kıyamda sağ eli sol el üzerine koymak\n• Fâtiha’dan sonra içinden “âmîn” demek\n• Namazın sonunda selam verirken yüzü önce sağ tarafa, sonra da sol tarafa çevirmek\nNamaz ile ilgili yukarıda verilenlerin hükmü nedir?",
+    "secenekler": {
+      "A": "Rükün",
+      "B": "Edep",
+      "C": "Sünnet",
+      "D": "Şart",
+      "E": "Vacip"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Sünnetleri"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Resûlullah (s.a.) buyurmuştur ki: “Ne dersiniz, sizden birisinin kapısının önünde bir ırmak bulunsa da, her gün beş defa onda yıkansa, kendisinde kir namına bir şey kalır mı? Sahâbîler: “Hayır” dediler. Bunun üzerine Resûlullah (s.a.) buyurdu ki: İşte beş vakit namaz da bunun gibidir.”\nYukarıda verilen hadiste namazın hangi yönünden bahsedilmiştir?",
+    "secenekler": {
+      "A": "Kişiyi günahlardan temizlemesi",
+      "B": "Zorluk ve sıkıntılara karşı insanı teselli etmesi",
+      "C": "Nimetlere şükür etme vesilesi olması",
+      "D": "En mükemmel zikir olması",
+      "E": "Kişiyi Allah'a yaklaştırması"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Hikmeti ve Faydaları"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Aşağıdakilerden hangisi namazın rükünleri arasında yer almaz?",
+    "secenekler": {
+      "A": "Kıyam",
+      "B": "Kıraat",
+      "C": "Kâmet",
+      "D": "Sücûd",
+      "E": "Kuûd"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Rükünleri"
+  },
+  {
+    "soru_no": 12,
+    "soru": "Aşağıdakilerden hangisi Hanefîler’e göre başlamış bir namazı bozan durumlardan biri değildir?",
+    "secenekler": {
+      "A": "Namazda bayılmak",
+      "B": "Namazda kahkaha ile gülmek",
+      "C": "Rükû ve secdede tesbihleri terk etmek",
+      "D": "Namazda kıbleden başka bir tarafa yönelmek",
+      "E": "Namazda konuşmak"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazı Bozan Durumlar"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Aşağıdakilerden hangisi revâtib namazlardan biridir?",
+    "secenekler": {
+      "A": "Evvâbîn namazı",
+      "B": "Kuşluk namazı",
+      "C": "Akşam namazının sünneti",
+      "D": "Tahiyyetü'l-mescid namazı",
+      "E": "Tesbih namazı"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Nafile Namazlar"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Fıkıhta secde ayetlerinin okunmasından dolayı yapılan secdeye ------- adı verilir.\nYukarıdaki cümlede boşluk bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "sehiv secdesi",
+      "B": "tilâvet secdesi",
+      "C": "şükür secdesi",
+      "D": "vücup secdesi",
+      "E": "kıraat secdesi"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Secde-i Tilavet"
+  },
+  {
+    "soru_no": 15,
+    "soru": "I. Farzın te'hîri\nII. Vacibin terki\nIII. Farzın terki\nIV. Mekruhun yapılması\nYukarıdakilerden hangisi/hangileri sehiv secdesi gerektiren durumlardandır?",
+    "secenekler": {
+      "A": "Yalnız II",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I, II ve IV"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Sehiv Secdesi"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Namazların cem edilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "Şafiilere göre cem için bir gerekçe aranmaz.",
+      "B": "Hanefilere göre hacıların Arafat ve Müzdelife’de yaptıkları cem dışında cem yapılamaz.",
+      "C": "Arafat’ta yapılan cem’e, cem-i te’hîr denir.",
+      "D": "Kur’an-ı Kerim’de cem yapılacağı açıkça ifade edilmiştir.",
+      "E": "Sûrî cem, peş peşe olan iki farklı namazın, ilk namazın vaktinde kılınması demektir."
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazların Cem Edilmesi"
+  },
+  {
+    "soru_no": 17,
+    "soru": "I. Niyet etmek\nII. Sadaka vermek\nIII. İftar yemeği vermek\nIV. Mukîm olmak\nV. İ'tikafa girmek\nYukarıdakilerden hangileri orucun sünnetlerindendir?",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "I, II ve IV",
+      "D": "II, III ve IV",
+      "E": "II, III ve V"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucun Sünnetleri"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Aşağıdakilerden hangisi orucu bozup sadece kazâ gerektiren durumlardan biridir?",
+    "secenekler": {
+      "A": "Hata ile birşey yemek veya içmek",
+      "B": "Yutmadan yemeğin tadına bakmak",
+      "C": "Şekersiz sakız çiğnemek",
+      "D": "Diş fırçalamak",
+      "E": "Kan vermek"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucu Bozan Durumlar"
+  },
+  {
+    "soru_no": 19,
+    "soru": "I. Niyet etmek\nII. Akıllı olmak\nIII. Ergin olmak\nIV. Hayız ve nifastan temizlenmiş olmak\nYukarıdakilerden hangisi/hangileri orucun farz olmasının şartlarındandır?",
+    "secenekler": {
+      "A": "Yalnız III",
+      "B": "Yalnız IV",
+      "C": "I ve IV",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucun Farz Olma Şartları"
+  },
+  {
+    "soru_no": 20,
+    "soru": "İtikafla ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "İ‘tikâfın sahih olması için ona niyet edilmesi şarttır.",
+      "B": "İ‘tikâfta bulunan kimse yeme, içme, uyku gibi ihtiyaçlarını mescidin içinde uygun bir yerde giderir.",
+      "C": "İ‘tikâfın sahih olması için guslü gerektirecek bir halin olmaması şarttır.",
+      "D": "İ‘tikâfta konuşma yasağı vardır.",
+      "E": "İ‘tikâfa girilecek mescit, en azından içinde vakit namazları cemaatle kılınan bir mescit olmalıdır."
+    },
+    "ana_konu": "İtikaf",
+    "alt_konu": "İtikafın Şartları ve Hükümleri"
+  }
+]

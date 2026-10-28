@@ -1,4 +1,4 @@
-import type { RoomMessage, RoomMessagePayload, RoomMessageType, RoomState } from './types.ts';
+import type { FocusLossReason, RoomMessage, RoomMessagePayload, RoomMessageType, RoomState } from './types.ts';
 import { roomChannel } from './room-channel.ts';
 import { addFeedItem, handleIncomingRoomMessage } from './message-handler.ts';
 import { clearRoomSession, loadRoomSession, saveRoomSession } from './session-store.ts';
@@ -64,9 +64,9 @@ class RoomService {
       userName: cleanName,
       isHost: asHost,
       isPaused: false,
-      participants: [{ id: this.peerId, name: cleanName, isHost: asHost, joinedAt: now }],
+      participants: [{ id: this.peerId, name: cleanName, isHost: asHost, joinedAt: now, lastSeenAt: now }],
       feedItems: [{ id: `${now}_${this.peerId}`, type: 'JOIN', studentId: this.peerId, studentName: cleanName, timestamp: now }],
-      studentStats: asHost ? {} : { [this.peerId]: { id: this.peerId, name: cleanName, correctCount: 0, incorrectCount: 0, joinedAt: now } },
+      studentStats: asHost ? {} : { [this.peerId]: { id: this.peerId, name: cleanName, correctCount: 0, incorrectCount: 0, joinedAt: now, exitCount: 0, totalAwayMs: 0, lastSeenAt: now, isOnline: true } },
       helpRequested: false,
     };
 
@@ -150,25 +150,48 @@ class RoomService {
     this.emit('HELP_RESOLVED', { feedId, studentId: studentIdOrName, studentName: studentIdOrName });
   }
 
-  notifyFocusLost(): void {
+  notifyFocusLost(reason: FocusLossReason = 'APP_SWITCH', timestamp = Date.now()): void {
     if (!this.state.roomId || this.state.isPaused) return;
     const openLost = this.state.feedItems.find((f) => f.type === 'FOCUS_LOST' && f.studentId === this.peerId && !f.returnedAt);
     if (openLost) return;
-    const now = Date.now();
-    addFeedItem(this.state.feedItems, { id: `${now}_${this.peerId}_lost`, type: 'FOCUS_LOST', studentId: this.peerId, studentName: this.state.userName, timestamp: now });
+
+    const stats = this.state.studentStats[this.peerId];
+    if (stats) {
+      stats.exitCount = (stats.exitCount || 0) + 1;
+    }
+
+    addFeedItem(this.state.feedItems, { id: `${timestamp}_${this.peerId}_lost`, type: 'FOCUS_LOST', studentId: this.peerId, studentName: this.state.userName, timestamp, reason });
     this.notify();
-    this.emit('FOCUS_LOST', undefined, now);
+    this.emit('FOCUS_LOST', { reason }, timestamp);
   }
 
-  notifyFocusRestored(): void {
+  notifyFocusRestored(durationMs: number = 0, timestamp = Date.now()): void {
     if (!this.state.roomId || this.state.isPaused) return;
-    const now = Date.now();
     const lastLost = this.state.feedItems.find((f) => f.type === 'FOCUS_LOST' && f.studentId === this.peerId && !f.returnedAt);
     if (lastLost) {
-      lastLost.returnedAt = now;
-      this.notify();
+      lastLost.returnedAt = timestamp;
     }
-    this.emit('FOCUS_RESTORED', undefined, now);
+    const stats = this.state.studentStats[this.peerId];
+    if (stats && durationMs > 0) {
+      stats.totalAwayMs = (stats.totalAwayMs || 0) + durationMs;
+    }
+    this.notify();
+    this.emit('FOCUS_RESTORED', { durationMs }, timestamp);
+  }
+
+  notifySuspiciousAct(actType: 'COPY_TEXT', details: string): void {
+    if (!this.state.roomId || this.state.isHost) return;
+    const now = Date.now();
+    addFeedItem(this.state.feedItems, {
+      id: `${now}_${this.peerId}_suspicious`,
+      type: 'SUSPICIOUS_COPY',
+      studentId: this.peerId,
+      studentName: this.state.userName,
+      timestamp: now,
+      details,
+    });
+    this.notify();
+    this.emit('SUSPICIOUS_ACT', { actType, details }, now);
   }
 
   logStudentAnswer(questionId: number, isCorrect: boolean): void {
@@ -258,10 +281,41 @@ class RoomService {
     this.stopHeartbeat();
     this.heartbeatTimer = setInterval(() => {
       if (!this.state.roomId) return;
-      const hasAnyHost = this.state.participants.some((p) => p.isHost);
-      const isOldestPeer = this.state.participants[0]?.id === this.peerId;
-      if (this.state.isHost || (!hasAnyHost && isOldestPeer)) this.broadcastRoomSync();
-    }, 15000);
+      const now = Date.now();
+
+      if (this.state.isHost) {
+        // Hoca: Odayı senkronize et ve 22 sn'dir sinyal vermeyen öğrencileri kontrol et (Watchdog)
+        this.checkOfflineStudents(now);
+        this.broadcastRoomSync();
+      } else {
+        // Öğrenci: Hocaya hafif kalp atışı sinyali gönder
+        this.emit('STUDENT_HEARTBEAT', undefined, now);
+      }
+    }, 10000);
+  }
+
+  private checkOfflineStudents(now: number): void {
+    let changed = false;
+    for (const [id, stats] of Object.entries(this.state.studentStats)) {
+      const lastSeen = stats.lastSeenAt || stats.joinedAt;
+      const isCurrentlyOnline = (now - lastSeen) < 22000;
+      if (stats.isOnline !== isCurrentlyOnline) {
+        stats.isOnline = isCurrentlyOnline;
+        changed = true;
+        if (!isCurrentlyOnline) {
+          addFeedItem(this.state.feedItems, {
+            id: `${now}_${id}_disconnect`,
+            type: 'DISCONNECTED',
+            studentId: id,
+            studentName: stats.name,
+            timestamp: now,
+          });
+        }
+      }
+    }
+    if (changed) {
+      this.notify();
+    }
   }
 
   private stopHeartbeat(): void {

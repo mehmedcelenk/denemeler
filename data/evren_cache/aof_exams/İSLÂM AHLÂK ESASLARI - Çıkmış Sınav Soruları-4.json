@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Ahlâkiliğin “varlığını”, ahlâki terim ve kavramlar ile ahlâki önermelerin anlamı ve birbiri ile irtibatını, bunların nasıl temellendirildiğini inceleyen bilim dalı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ahlak sosyolojisi",
+      "B": "Adabı muaşeret",
+      "C": "Ahlak felsefesi",
+      "D": "Kelam",
+      "E": "Ahlak psikolojisi"
+    },
+    "ana_konu": "Ahlak Kavramı ve Disiplinleri",
+    "alt_konu": "Ahlak Felsefesinin Tanımı ve Kapsamı"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Bir insandan ahlaklı diye bahsedebilmenin en önemli göstergesi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ahlaki eylemlerinin özgür iradeye dayanıyor olması",
+      "B": "İyilikleri gerçekleştirmeyi ve kötülüklerden uzak durmayı karakter haline getirmiş olması",
+      "C": "Müslüman olması",
+      "D": "Tüm davranışlarında iyi niyete sahip olması",
+      "E": "Tüm davranışlarında yararı gözetmesi"
+    },
+    "ana_konu": "Ahlak Kavramı ve Disiplinleri",
+    "alt_konu": "Ahlaklı Olmanın Kriterleri"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Ölümün bir son olmayıp mükafat ve cezanın verileceği yeni bir hayatın başlangıcı olduğunun bilincinde olmak ve hesap gününü dikkate alarak tüm davranışlarımıza çeki düzen vermek hangi iman esasının ahlaki boyutunu oluşturur?",
+    "secenekler": {
+      "A": "Peygamberlere iman",
+      "B": "Kitab'a iman",
+      "C": "Allah'ın varlığı ve birliğine iman",
+      "D": "Meleklere iman",
+      "E": "Ahiret gününe iman"
+    },
+    "ana_konu": "İslam Ahlakının Temelleri",
+    "alt_konu": "İman Esaslarının Ahlaki Boyutu"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Bir kimsenin hayatında etkin olan veya bir toplumda genel kabul görmüş davranış düzenine ne ad verilir?",
+    "secenekler": {
+      "A": "Ahlak",
+      "B": "Felsefe",
+      "C": "Hukuk",
+      "D": "Tutum",
+      "E": "Din"
+    },
+    "ana_konu": "Ahlak Kavramı ve Disiplinleri",
+    "alt_konu": "Ahlak Kavramının Tanımı"
+  },
+  {
+    "soru_no": 5,
+    "soru": "Davranış düzenleri arasında makul bir tercih yapılamayacağını iddia eden, insanların bütün kararlarının nihai olarak eşdeğer olduğunu savunan tavra ne ad verilir?",
+    "secenekler": {
+      "A": "Ahlaki görecelik",
+      "B": "Pozitivizm",
+      "C": "Duyguculuk",
+      "D": "Sezgicilik",
+      "E": "Nihilizm"
+    },
+    "ana_konu": "Ahlak Teorileri",
+    "alt_konu": "Ahlaki Görecelik ve Nihilizm"
+  },
+  {
+    "soru_no": 6,
+    "soru": "I. Akıl ve nakil\nII. Felsefi eserler\nIII. Edebi eserler\nIV. Siyasetnameler\n\nYukarıdakilerden hangileri İslam ahlakının ana kaynaklarındandır?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve III",
+      "C": "I ve IV",
+      "D": "II ve III",
+      "E": "II, III ve IV"
+    },
+    "ana_konu": "İslam Ahlakının Kaynakları",
+    "alt_konu": "İslam Ahlakının Ana Kaynakları"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Aşağıdakilerden hangisi İslam ahlakına kaynaklık eden tasavvufi eserlerden biridir?",
+    "secenekler": {
+      "A": "Ebu Bekir Razi - Tıbbu'r-Ruhani",
+      "B": "Buhari - el Edebü'l-Müfred",
+      "C": "Nasıruddin Tusi - Ahlak-ı Nasıri",
+      "D": "Maverdi - Edebü'd-Dünya ve'd-Din",
+      "E": "Abdullah b. Mübarek - Kitabu'z-Zühd ve'r-Rekaik"
+    },
+    "ana_konu": "İslam Ahlakının Kaynakları",
+    "alt_konu": "Tasavvufi Ahlak Eserleri"
+  },
+  {
+    "soru_no": 8,
+    "soru": "Hz. Muhammed'in bütün insanlık için \"yeni bir varoluş\" imkanı sağlaması, onun Kuran-ı Kerim'in de onayladığı hangi özelliğiyle ilgilidir?",
+    "secenekler": {
+      "A": "Güvenilir oluşu",
+      "B": "Alemlere rahmet oluşu",
+      "C": "Son peygamber oluşu",
+      "D": "İnsan-ı kamil oluşu",
+      "E": "Üsve-i hasene oluşu"
+    },
+    "ana_konu": "İslam Ahlakının Kaynakları",
+    "alt_konu": "Hz. Peygamber'in Ahlaki Örnekliği"
+  },
+  {
+    "soru_no": 9,
+    "soru": "İslam filozofları ve mutasavvıfların ahlak alanında yazdıkları eserler ne tür bir ahlak teorisinin diliyle kaleme alınmıştır?",
+    "secenekler": {
+      "A": "Ödevci",
+      "B": "Yararcı",
+      "C": "Teolojik",
+      "D": "Karakterci",
+      "E": "Kuralcı"
+    },
+    "ana_konu": "Ahlak Teorileri",
+    "alt_konu": "İslam Düşüncesinde Ahlak Teorileri"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi ahlak teorisi geliştiren düşünürlerin dikkate aldığı sorulardan biri değildir?",
+    "secenekler": {
+      "A": "İnsan nedir?",
+      "B": "İyi ve kötü fiiller nelerdir?",
+      "C": "Bir fiili iyi veya kötü yapan özellikler nelerdir?",
+      "D": "Varlığın doğası nedir?",
+      "E": "İyiyi gerçekleştirmek için insan ne yapmalıdır?"
+    },
+    "ana_konu": "Ahlak Teorileri",
+    "alt_konu": "Ahlak Teorisinin Temel Soruları"
+  },
+  {
+    "soru_no": 11,
+    "soru": "İslam filozoflarına göre ahlak ve erdemlerden bahsedebilmenin ön şartı nedir?",
+    "secenekler": {
+      "A": "Meleke",
+      "B": "İstitaat",
+      "C": "İrade hürriyeti",
+      "D": "Karakter",
+      "E": "Erdem"
+    },
+    "ana_konu": "Ahlak Teorileri",
+    "alt_konu": "İslam Filozoflarında Ahlakın Temeli"
+  },
+  {
+    "soru_no": 12,
+    "soru": "------- ahlâk teorilerinin ortak özelliği, bunların ahlâki davranışları önermeler, emir ve yasaklar veya iyi ve kötü fiillerin tasviri şeklinde ifade etmeleridir. İslâm düşünürleri arasında genellikle hadisçi, müfessir, fukaha ve kelamcıların ahlâk alanında telif ettikleri eserler bu kategoride incelenebilir.\n\nYukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "Kuralcı",
+      "B": "Fütürist",
+      "C": "Gaybcı",
+      "D": "Karakterci",
+      "E": "Hadisci"
+    },
+    "ana_konu": "Ahlak Teorileri",
+    "alt_konu": "Kuralcı (Deontolojik) Ahlak Teorileri"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Tasavvufun ileri gelenlerine göre hem dinin hem de aklın reddettiği bütün kötü huyların ve çirkin davranışların kaynağı nedir?",
+    "secenekler": {
+      "A": "Kötü terbiye ve eğitim",
+      "B": "Erdemsiz toplum",
+      "C": "Nefis",
+      "D": "Ebeveyn",
+      "E": "Mizaç"
+    },
+    "ana_konu": "Tasavvuf ve Ahlak",
+    "alt_konu": "Nefis Kavramı ve Kötü Huyların Kaynağı"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Varlığın ve her türlü kemalin kaynağı, Cenab-ı Hakk’dır. Cenab-ı Hakk’ın güzel isimleri vardır. Bu güzel isimler bütün mevcudatta, her türde bir cihetten taayyün ederken, insan türünde bir bütün olarak ancak sonsuz ve sınırsızın, “Mutlak olanın mukayyedde (sınırlı olanda) taayyünü (tikel bir varlık şeklinde ortaya çıkması)” olarak taayyün eder.\n\nYukarıdaki paragrafta yer alan \"Mutlak olanın mukayyedde taayyünü\" ifadesinin İslam ahlakı bağlamında karşılığı olan kavram aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "el-Esmaü'l-Hüsna",
+      "B": "Dirayet",
+      "C": "Hilafet",
+      "D": "Tevhid",
+      "E": "Hayr"
+    },
+    "ana_konu": "Tasavvuf ve Ahlak",
+    "alt_konu": "İnsan-ı Kamil ve Hilafet Kavramı"
+  },
+  {
+    "soru_no": 15,
+    "soru": "\"Aklı, dini, nesli, nefsi ve malı muhafaza etmek\" biçiminde dile getirilen, dinin ana gayelerini ifade eden terim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Maslahat-ı diniyye",
+      "B": "Amel-i salih",
+      "C": "Saadet-i dareyn",
+      "D": "Makasıdu'ş-Şeria",
+      "E": "Muhafaza-i diniyye"
+    },
+    "ana_konu": "İslam Hukuku ve Ahlak",
+    "alt_konu": "Makasıdu'ş-Şeria (Şeriatın Amaçları)"
+  },
+  {
+    "soru_no": 16,
+    "soru": "İnsanın hangi fiili yapacağına ve neyi tercih edeceğine kendisinin karar vermesine ne ad verilir?",
+    "secenekler": {
+      "A": "Sorumluluk",
+      "B": "Vazife",
+      "C": "Yaptırım",
+      "D": "İrade özgürlüğü",
+      "E": "Nefse zulüm"
+    },
+    "ana_konu": "Ahlak Kavramı ve Disiplinleri",
+    "alt_konu": "İrade ve Özgürlük"
+  },
+  {
+    "soru_no": 17,
+    "soru": "Üstünlük sağlama güdüsünden kaynaklanan bir erdemdir. Çoğu zaman bu güdüye öfke gücü denmektedir.\n\nYukarıda verilen bilgiye göre bu güçten kaynaklanan erdeme ne ad verilir?",
+    "secenekler": {
+      "A": "Hikmet",
+      "B": "İffet",
+      "C": "Adalet",
+      "D": "Basiret",
+      "E": "Cesaret"
+    },
+    "ana_konu": "Erdem Ahlakı",
+    "alt_konu": "Temel Erdemler ve Güçler"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Kolay öğrenme, ezberleme, iyi anlama, iyi düşünme gibi erdemler hangi temel erdemin kapsamına girmektedir?",
+    "secenekler": {
+      "A": "Emanet",
+      "B": "Hikmet",
+      "C": "İffet",
+      "D": "Adalet",
+      "E": "Şecaat"
+    },
+    "ana_konu": "Erdem Ahlakı",
+    "alt_konu": "Hikmet Erdemi"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Aşağıdakilerin hangisi fazilet ahlakı içerisinde yer alan dört temel erdemden biridir?",
+    "secenekler": {
+      "A": "Müsamaha",
+      "B": "Zeka",
+      "C": "Tevekkül",
+      "D": "Merhamet",
+      "E": "Adalet"
+    },
+    "ana_konu": "Erdem Ahlakı",
+    "alt_konu": "Dört Temel Erdem"
+  },
+  {
+    "soru_no": 20,
+    "soru": "Adalet erdemini bilgelik, yiğitlik, ölçülülük ve cömertlikten oluşan dört erdemin toplumda gerçekleşmesinin teminatı olarak gören İslam filozofu aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "İbn Rüşd",
+      "C": "Kindi",
+      "D": "Farabi",
+      "E": "İbn Arabi"
+    },
+    "ana_konu": "İslam Ahlak Düşüncesi Tarihi",
+    "alt_konu": "Farabi'nin Ahlak Görüşü"
+  }
+]

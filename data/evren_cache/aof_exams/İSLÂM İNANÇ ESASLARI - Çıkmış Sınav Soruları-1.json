@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "\"Tafsîlî iman\" ile kastedilen aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ayrıntılı bir şekilde tek tek iman esaslarına açık ve geniş bir şekilde inanmak",
+      "B": "Allah’ın sonsuz güç ve kudret sahibi olduğuna şeksiz şüphesiz inanmak",
+      "C": "Allah’ı, O’nun elçisini ve vahyini toptan kabul etmek",
+      "D": "Tevhid kelimesini kalben kabul edip dillendirmek",
+      "E": "Şehâdet kelimesini kalben kabul edip dillendirmek"
+    },
+    "ana_konu": "İman Kavramı",
+    "alt_konu": "İmanın Türleri (İcmali ve Tafsili İman)"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Allah’ın birliğine, O’nun sonsuz güç ve kudret sahibi olduğuna, Hz. Peygamber’in O’nun gönderdiği son elçi olduğuna şeksiz şüphesiz inanmaya ------- denir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "tafsili iman",
+      "B": "taklidi iman",
+      "C": "icmali iman",
+      "D": "dönüşümsel iman",
+      "E": "geleneksel iman"
+    },
+    "ana_konu": "İman Kavramı",
+    "alt_konu": "İmanın Türleri (İcmali ve Tafsili İman)"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Muharref dinin tanımı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Allah tarafından gönderilip orijinalliğini koruyan dinlerdir.",
+      "B": "İlahi kaynaklı olmayıp insanların aklî çıkarımlarıyla ortaya çıkan dinlerdir.",
+      "C": "Allah tarafından gönderilen somut bilgilerdir.",
+      "D": "İlahi vahye dayanmakla birlikte Allah’tan geldiği şekli korunamayan dinlerdir.",
+      "E": "Kutsal kitabı bulunmayan dinlerdir."
+    },
+    "ana_konu": "Din Kavramı",
+    "alt_konu": "Din Türleri (Muharref Dinler)"
+  },
+  {
+    "soru_no": 4,
+    "soru": "İman tanımını “İnanılması gereken inanç esaslarını kalbin tasdiki olmaksızın, dil ile ikrar etmek yeterlidir” şeklinde yapan mezhep aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Zeydiyye",
+      "B": "Eş’ariyye",
+      "C": "Mürcie",
+      "D": "Mâturidiyye",
+      "E": "Hâriciyye"
+    },
+    "ana_konu": "Kelam Mezhepleri",
+    "alt_konu": "İman-Amel İlişkisi ve Mürcie"
+  },
+  {
+    "soru_no": 5,
+    "soru": "“De ki: Doğru iseniz delillerinizi getirin.” (el-Bakara 2/111) ayeti ile inanç esaslarının hangi özelliğine vurgu yapılmaktadır?",
+    "secenekler": {
+      "A": "Kesin bilgi verişi",
+      "B": "Açıklık ve sadelik",
+      "C": "Zorlama olmayışı",
+      "D": "Bütünlük",
+      "E": "Sabitlik"
+    },
+    "ana_konu": "İnanç Esasları",
+    "alt_konu": "İnanç Esaslarının Özellikleri"
+  },
+  {
+    "soru_no": 6,
+    "soru": "İslam dini ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Hadislerde İslam kelimesi “Allah’ın insanlığa gönderdiği son din” anlamı öne çıkmaktadır.",
+      "B": "İslam, sözlükte: “kurtuluşa ermek, teslim olmak, barış yapmak” anlamlarına gelmektedir.",
+      "C": "İslam dini Hz. Adem’le başlamış sayılır.",
+      "D": "İslam dini inanç, amel ve ahlak ilkelerinden oluşur.",
+      "E": "İslam dini içerisinde vahiy ürünü unsurlardan ziyade insan ürünü uygulamalar yer almaktadır."
+    },
+    "ana_konu": "İslam Dini",
+    "alt_konu": "İslam'ın Tanımı ve Özellikleri"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Aşağıdakilerden hangisi inanç esaslarının özelliklerinden değildir?",
+    "secenekler": {
+      "A": "İnanç esasları zamana ve toplumlara göre değişmez.",
+      "B": "İnanç esasları tecezzi kabul etmez.",
+      "C": "İnanç esaslarında zorlama yoktur.",
+      "D": "İnanç esaslarının bir kısmı sadece Peygamberler tarafından anlaşılır.",
+      "E": "İnanç esasları kesinlik ifade eder."
+    },
+    "ana_konu": "İnanç Esasları",
+    "alt_konu": "İnanç Esaslarının Özellikleri"
+  },
+  {
+    "soru_no": 8,
+    "soru": "Bir şeye gönül bağlamak, düğüm atmışçasına kesinlikle inanmak ve bütünüyle benimsemeye ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "âfâk",
+      "B": "itikat",
+      "C": "burhân-ı temanü",
+      "D": "gaye",
+      "E": "enfüs"
+    },
+    "ana_konu": "İman Kavramı",
+    "alt_konu": "İman ve İtikat Kavramları"
+  },
+  {
+    "soru_no": 9,
+    "soru": "İrade sıfatı aşağıdakilerden hangisini ifade eder?",
+    "secenekler": {
+      "A": "Allah’ın kudret sahibi olmasını",
+      "B": "Allah’ın dilemesi ve istemesini",
+      "C": "Allah’ın tek olmasını",
+      "D": "Allah’ın sonradan yaratılan varlıklara benzememesini",
+      "E": "Allah’ın varlığının başlangıçsız olmasını"
+    },
+    "ana_konu": "Allah'a İman",
+    "alt_konu": "Allah'ın Zati ve Sübuti Sıfatları"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Allah’ın varlığını ispatlayan deliller hakkında aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Hudûs delili her yaratılmışın bir yaratıcıya muhtaç olduğundan hareketle Allah’ın varlığını ispatlayan bir delildir.",
+      "B": "Hudûs delili Allah’ın varlığını ispatlayan en kuvvetli delil türüdür.",
+      "C": "Dinî tecrübe delili insanın şahsî tecrübesiyle edindiği bir delil türüdür.",
+      "D": "Teleolojik delil gaye ve nizam delili olarak bilinmektedir.",
+      "E": "İmkân delili daha çok İslam filozofları tarafından kullanılmıştır."
+    },
+    "ana_konu": "Allah'a İman",
+    "alt_konu": "Allah'ın Varlığının İspatı (Deliller)"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Aşağıdakilerden hangisi Allah’ın sübûtî sıfatlarındandır?",
+    "secenekler": {
+      "A": "Vahdâniyet",
+      "B": "Kıdem",
+      "C": "Muhâlefetün li’l-havâdis",
+      "D": "Kudret",
+      "E": "Kıyam bi nefsihi"
+    },
+    "ana_konu": "Allah'a İman",
+    "alt_konu": "Allah'ın Zati ve Sübuti Sıfatları"
+  },
+  {
+    "soru_no": 12,
+    "soru": "İslam’da Allah’ın varlığını ispat için yapılan tüm faaliyetlere ne ad verilir?",
+    "secenekler": {
+      "A": "İsbât-ı vâcib",
+      "B": "Beka",
+      "C": "Akıl yürütme",
+      "D": "Sıfat",
+      "E": "Takva"
+    },
+    "ana_konu": "Allah'a İman",
+    "alt_konu": "Allah'ın Varlığının İspatı (Deliller)"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Meleklere iman ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Hz. Adem’den önce de yaşadıkları bilinmektedir.",
+      "B": "Yeme içme gibi insani fiillerde bulunmazlar.",
+      "C": "Kur’an ve hadislerde meleklerin özellikleri ve görevleri sıralanmıştır.",
+      "D": "Fiziki olarak görünmeyen varlıklardır.",
+      "E": "Meleklerin varlığına iman itikad esasları arasında yer almaz."
+    },
+    "ana_konu": "Meleklere İman",
+    "alt_konu": "Meleklerin Varlığı ve Özellikleri"
+  },
+  {
+    "soru_no": 14,
+    "soru": "I. Mukarrebûn melekleri ulûhiyet makamına en yakın meleklerdir.\nII. Hafaza ve kirâmen katibîn melekleri insanları koruyan ve onların iyi ve kötü fiillerini kaydeden meleklerdir.\nIII. Tabiat olaylarıyla görevli melek Mikâil’dir.\n\nMeleklerle ilgili yukarıda verilen bilgilerden hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Meleklere İman",
+    "alt_konu": "Meleklerin Görevleri ve Sınıflandırılması"
+  },
+  {
+    "soru_no": 15,
+    "soru": "Mukarrebûn meleklerinin görevi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Müminlere manevi ve maddi destek vermek",
+      "B": "Allah’ın huzurunda bulunup sürekli ona ibadet etmek",
+      "C": "Tabiat olaylarını yönetmek",
+      "D": "İnsanların günah ve sevaplarını yazmak",
+      "E": "İnsanlara güzel duygular hissettirmek"
+    },
+    "ana_konu": "Meleklere İman",
+    "alt_konu": "Meleklerin Görevleri ve Sınıflandırılması"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Aşağıdakilerden hangisi cinlerin özelliklerinden biri değildir?",
+    "secenekler": {
+      "A": "Yiyip içebilmeleri",
+      "B": "Evlenebilmeleri",
+      "C": "Çoğalabilmeleri",
+      "D": "Geleceği bilmeleri",
+      "E": "Doğup ölebilmeleri"
+    },
+    "ana_konu": "Gayb Âlemi",
+    "alt_konu": "Cinler"
+  },
+  {
+    "soru_no": 17,
+    "soru": "Kur’an-ı Kerim hakkında aşağıdaki bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Kur’an kendinden önceki kitapları tasdik etmekte ve doğrulamaktadır.",
+      "B": "Kur’an Peygamberimizden hiçbir değişikliğe uğramadan tevatür yolu ile bize ulaşmıştır.",
+      "C": "Kur’an Hz. Osman zamanında bir araya getirilmiştir.",
+      "D": "Kur’an hem lafız hem de manası bakımından mûcizdir.",
+      "E": "Kur’an yirmiiki yılı aşkın bir süre içerisinde vahyolunmuştur."
+    },
+    "ana_konu": "Kitaplara İman",
+    "alt_konu": "Kur'an-ı Kerim'in Özellikleri ve Mushaf Haline Getirilmesi"
+  },
+  {
+    "soru_no": 18,
+    "soru": "I. Hz. Peygamber Kur’an’ı lafız ve mana olarak telakki etmiş ve öylece tebliğ etmiştir.\nII. Vahyin mahiyeti Allah ve peygamberleri arasında nübüvvetin bir sırrı olarak kalmıştır.\nIII. Kur’anda vahyin korunmuşluğuna dair bir ifade bulunmamaktadır.\n\nVahyin mahiyeti hakkında yukarıda verilen bilgilerden hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Vahiy",
+    "alt_konu": "Vahyin Mahiyeti ve Korunması"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Tevrat'ın indirildiği peygamber aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hz. Musa (a.s)",
+      "B": "Hz. Yakub (a.s)",
+      "C": "Hz. Davud (a.s)",
+      "D": "Hz. Muhammed (a.s)",
+      "E": "Hz. İsa (a.s)"
+    },
+    "ana_konu": "Kitaplara İman",
+    "alt_konu": "İlahi Kitaplar"
+  },
+  {
+    "soru_no": 20,
+    "soru": "Vahiy teriminin tanımı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Peygamberlerin zihninde, gönlünde oluşan ilâhi bilgidir.",
+      "B": "Gaybın bilgisidir.",
+      "C": "Metafizik âlemden fizik dünyaya gelen bilgidir.",
+      "D": "Meleklerin peygambere bildirdiği bilgidir.",
+      "E": "Allah’ın peygamberlerine dilediği bilgileri doğrudan veya bir vasıtayla gizlice bildirmesidir."
+    },
+    "ana_konu": "Vahiy",
+    "alt_konu": "Vahyin Tanımı"
+  }
+]

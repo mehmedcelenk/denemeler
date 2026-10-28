@@ -32,11 +32,11 @@ export function setSupabaseConfigOverride(config: SupabaseConfig | null): void {
 }
 
 function getEnv(): ImportMetaEnv {
-  if (typeof import.meta !== 'undefined') {
-    const meta = import.meta as unknown as CustomImportMeta;
-    return meta.env ?? {};
-  }
-  return {};
+  return {
+    VITE_SUPABASE_URL: import.meta.env?.VITE_SUPABASE_URL,
+    VITE_SUPABASE_ANON_KEY: import.meta.env?.VITE_SUPABASE_ANON_KEY,
+    BASE_URL: import.meta.env?.BASE_URL,
+  };
 }
 
 export function getSupabaseConfig(): SupabaseConfig | null {

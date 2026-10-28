@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "İbadetlerin sadece Allah rızası için ve dünyevi bir menfaat düşünmeden yapılmasına ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "taat",
+      "B": "kurbet",
+      "C": "telbiye",
+      "D": "taabbüd",
+      "E": "tezkiye"
+    },
+    "ana_konu": "İbadetin Tanımı ve Mahiyeti",
+    "alt_konu": "İbadetin Kavramsal Çerçevesi"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Gayr-i müekked sünnetin tanımı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hz. Peygamber’in yapılmasını tavsiye ettiği sünnettir.",
+      "B": "Hz. Peygamber’in çok defa edâ edip, bazen terk ettiği sünnettir.",
+      "C": "Hz. Peygamber’in hayatında bir kere yaptığı sünnettir.",
+      "D": "Hz. Peygamber’in devamlı yaptığı sünnettir.",
+      "E": "Hz. Peygamber’in hayatının sonlarında yaptığı sünnettir."
+    },
+    "ana_konu": "İbadetlerin Hukuki Değerleri",
+    "alt_konu": "Sünnet Türleri"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Her bir mükellefin sorumlu ve yükümlü olduğu ibadetlere ne ad verilir?",
+    "secenekler": {
+      "A": "Müstehap",
+      "B": "Aynî",
+      "C": "Kifâî",
+      "D": "Mubah",
+      "E": "Nâfile"
+    },
+    "ana_konu": "İbadetlerin Hukuki Değerleri",
+    "alt_konu": "Farz Türleri (Aynî ve Kifâî)"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Yüce Allah’ın, mükelleflerin hepsi için bütün durumlarda yani meşakkat, zaruret ve ihtiyaç gibi geçici bir sebebe bağlı olmaksızın bağlayıcı olmak üzere ilkten koyduğu hükümlere ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "edâ",
+      "B": "mendup",
+      "C": "zevâid sünnet",
+      "D": "azîmet",
+      "E": "ruhsat"
+    },
+    "ana_konu": "İbadetlerin Hukuki Değerleri",
+    "alt_konu": "Azîmet ve Ruhsat"
+  },
+  {
+    "soru_no": 5,
+    "soru": "Aşağıdakilerden hangisinin içinde bulunduğu durum abdesti bozmaz?",
+    "secenekler": {
+      "A": "Aynı abdestle birkaç vakit namaz kılanın",
+      "B": "Mesh süresi dolanın",
+      "C": "Namaz vakti çıkan özürlünün",
+      "D": "Uykusu gelip uzanarak uyuyanın",
+      "E": "Suyu bulan teyemmümlünün"
+    },
+    "ana_konu": "Taharet (Temizlik)",
+    "alt_konu": "Abdesti Bozan Haller"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Özellik ve tabii durumunu koruyan, içine özelliğini değiştirecek başka maddelerin karışmadığı sulara ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "durgun su",
+      "B": "akarsu",
+      "C": "mutlak su",
+      "D": "mukayyet su",
+      "E": "kullanılmış su"
+    },
+    "ana_konu": "Taharet (Temizlik)",
+    "alt_konu": "Suların Hükümleri"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Aşağıdakilerden hangisi abdestin sünnetlerinden biri değildir?",
+    "secenekler": {
+      "A": "Yüzü yıkamak",
+      "B": "Besmele ile başlamak",
+      "C": "Uzuvları üçer defa yıkamak",
+      "D": "Dişleri fırçalamak",
+      "E": "Boynu mesh etmek"
+    },
+    "ana_konu": "Taharet (Temizlik)",
+    "alt_konu": "Abdestin Farz ve Sünnetleri"
+  },
+  {
+    "soru_no": 8,
+    "soru": "İstisnaî hallerde başvurulan, abdest ve gusül yerine geçen sembolik, manevi ve hükmi temizliğe ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "hades",
+      "B": "gusül",
+      "C": "teyemmüm",
+      "D": "abdest",
+      "E": "mesh"
+    },
+    "ana_konu": "Taharet (Temizlik)",
+    "alt_konu": "Teyemmüm"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Fıkıhta, namaz kılan kişinin, Kur’ân’ın ayetlerinden bir miktarını kendisinin işitebileceği şekilde okumasına ne ad verilir?",
+    "secenekler": {
+      "A": "Rükû",
+      "B": "Kıyam",
+      "C": "Ka'de-i ahire",
+      "D": "Kıraat",
+      "E": "İftitah tekbiri"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Rükünleri"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi namazı bozan durumlardan biridir?",
+    "secenekler": {
+      "A": "Rükû ve secdede tesbihleri terk etmek",
+      "B": "Yemek sofrası hazırken namaza başlamak",
+      "C": "Geçerli bir özrü olmaksızın öksürmeye çalışmak",
+      "D": "Başkasına ait bir yerde sahibinin iznini almadan namaz kılmak",
+      "E": "Namazda birinin verdiği selamı el ve baş işaretiyle almak"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazı Bozan Haller"
+  },
+  {
+    "soru_no": 11,
+    "soru": "I. Sübhanekeyi okumak\nII. İlk ve son oturuşlarda tahiyyatı okumak\nIII. Ta'dîl-i erkâna riayet etmek\nIV. İftitah tekbirinde elleri yukarı kaldırmak\nYukarıdakilerden hangileri namazın sünnetlerindendir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve IV",
+      "D": "I, II ve III",
+      "E": "II, III ve IV"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Sünnetleri"
+  },
+  {
+    "soru_no": 12,
+    "soru": "Aşağıdakilerden hangisi namazın rükûnlarından biri değildir?",
+    "secenekler": {
+      "A": "Secde",
+      "B": "Vakit",
+      "C": "Kıyam",
+      "D": "Kıraat",
+      "E": "Rükû"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Rükünleri ve Şartları"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Kur’ân’da secde âyetlerinin okunması veya işitilmesi sebebiyle yapılan secdeye ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "sehiv secdesi",
+      "B": "hamd secdesi",
+      "C": "namaz secdesi",
+      "D": "şükür secdesi",
+      "E": "tilâvet secdesi"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Secde-i Tilavet"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Yolcu namazı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Yolcu olan kişi, yolcu olmayan imama uyamaz.",
+      "B": "Şâfiîler’e göre yolcu, namazlarını kısaltıp kısaltmamakta serbesttir.",
+      "C": "Hanefîler’e göre yolcunun namazlarını kısaltarak kılması vaciptir.",
+      "D": "Hanefîler’e göre yolcular, yolculukta kılamadıkları namazların kazasını kısaltarak kılarlar.",
+      "E": "Mâlikîler’e göre yolcunun namazlarını kısaltarak kılması sünnet-i müekkededir."
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Yolcu Namazı"
+  },
+  {
+    "soru_no": 15,
+    "soru": "I. Farzın te'hîri\nII. Vacibin terki\nIII. Farzın terki\nIV. Mekruhun yapılması\nYukarıdakilerden hangileri sehiv secdesi gerektiren durumlardandır?",
+    "secenekler": {
+      "A": "Yanlız II",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I, II ve IV"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Sehiv Secdesi"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Öğle ve ikindi namazlarının birleştirilerek öğle vaktinde kılınmasına ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "cem-i takdîm",
+      "B": "sâhib-i tertib",
+      "C": "cem’u’s-salâteyn",
+      "D": "cem-i te’hîr",
+      "E": "cem-i sûrî"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazların Cem Edilmesi"
+  },
+  {
+    "soru_no": 17,
+    "soru": "Aşağıdakilerden hangisi orucu bozup kazâyı gerektiren durumlardan biridir?",
+    "secenekler": {
+      "A": "Diş fırçalamak",
+      "B": "Yutmadan yemeğin tadına bakmak",
+      "C": "Şekersiz sakız çiğnemek",
+      "D": "Orucun bozulduğunu zannederek yiyip içmek",
+      "E": "Kan vermek"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucu Bozan Haller"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Aşağıdakilerden hangisi orucun farz olmasının şartlarından biridir?",
+    "secenekler": {
+      "A": "Loğusalık halinde olmamak",
+      "B": "Seferi olmamak",
+      "C": "Sağlıklı olmak",
+      "D": "Yaşlı olmak",
+      "E": "Müslüman olmak"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucun Farz Olma Şartları"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Aşağıdakilerden hangisi orucu bozan durumlardan biri değildir?",
+    "secenekler": {
+      "A": "Akşam güneş batmadan önce yanlışlıkla okunan ezan sebebiyle bir şey yemek veya içmek",
+      "B": "Hata ile bir şey yemek veya içmek",
+      "C": "İsteyerek ağız dolusu kusmak",
+      "D": "Dişler arasında kalmış nohut tanesi kadar veya ondan biraz büyükçe bir şeyi yemek",
+      "E": "Unutarak bir şey yemek veya içmek"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucu Bozmayan Haller"
+  },
+  {
+    "soru_no": 20,
+    "soru": "I. Niyet etmek\nII. Sadaka vermek\nIII. İftar yemeği vermek\nIV. İ'tikafa girmek\nYukarıdakilerden hangileri orucun sünnetlerindendir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve IV",
+      "D": "I, II ve IV",
+      "E": "II, III ve IV"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucun Sünnetleri"
+  }
+]

@@ -109,4 +109,49 @@ test('CSS sözleşmesi: kavram balonlarında alt çizgi yoktur ve ses olayları 
   assert.ok(translationsCss.includes('content: "🍂";'), 'Düşme için yaprak emojisi olmalı');
 });
 
+test('extractGrammarLabels: dil bilgisi tıklamalarında doğrudan kompakt etiketleri üretir', async () => {
+  const { extractGrammarLabels, getGrammarColor } = await import('../src/features/english/grammar-bubble.ts');
+
+  // 1. Salt Sıfat (pos-adj)
+  const fakeAdj = {
+    classList: { contains: (c: string) => c === 'pos-word' || c === 'pos-adj' }
+  } as unknown as HTMLElement;
+  const r1 = extractGrammarLabels(fakeAdj, '<b>Niteleme Sıfatı</b>: Detaylı açıklama...', 'Niteleme Sıfatı');
+  assert.deepStrictEqual(r1, { posLabel: 'Niteleme Sıfatı', soundLabel: '' });
+  assert.strictEqual(getGrammarColor(fakeAdj), 'var(--pos-adj)');
+
+  // 2. Salt Ses Olayı (sound-word)
+  const fakeSound = {
+    classList: { contains: (c: string) => c === 'sound-word' }
+  } as unknown as HTMLElement;
+  const r2 = extractGrammarLabels(fakeSound, '🔊 <b>Ünlü Düşmesi</b>: Açıklama...', 'Ünlü Düşmesi');
+  assert.deepStrictEqual(r2, { posLabel: '', soundLabel: '🍂 Ünlü Düşmesi' });
+  assert.strictEqual(getGrammarColor(fakeSound), 'var(--pos-edat)');
+
+  // 3. Hem Sıfat Tamlaması hem Ses Olayı (has-sound + pos-tamlama)
+  const fakeBoth = {
+    classList: { contains: (c: string) => c === 'pos-word' || c === 'has-sound' || c === 'pos-tamlama' }
+  } as unknown as HTMLElement;
+  const trTextBoth = '<b>Belgisiz Sıfat Tamlaması</b>: Açıklama\n💡 Şifre: ...\n🔊 <b>Ünlü Düşmesi (yanlışlık):</b> Detay...';
+  const r3 = extractGrammarLabels(fakeBoth, trTextBoth, 'Belgisiz Sıfat Tamlaması');
+  assert.deepStrictEqual(r3, { posLabel: 'Belgisiz Sıfat Tamlaması', soundLabel: '🍂 Ünlü Düşmesi' });
+  assert.strictEqual(getGrammarColor(fakeBoth), 'var(--pos-tamlama)');
+
+  // 4. Zarf-Fiil (pos-verbal) altı çizik rengi var(--pos-verbal) ile tam eşleşir
+  const fakeVerbal = {
+    classList: { contains: (c: string) => c === 'pos-word' || c === 'pos-verbal' }
+  } as unknown as HTMLElement;
+  const rVerbal = extractGrammarLabels(fakeVerbal, '<b>Zarf-Fiil</b>: Açıklama', 'Zarf-Fiil');
+  assert.deepStrictEqual(rVerbal, { posLabel: 'Zarf-Fiil', soundLabel: '' });
+  assert.strictEqual(getGrammarColor(fakeVerbal), 'var(--pos-verbal)');
+
+  // 5. Dil bilgisi olmayan kavram kelimesinde null dönmeli
+  const fakeConcept = {
+    classList: { contains: (c: string) => c === 'vocab-word' || c === 'concept-word' }
+  } as unknown as HTMLElement;
+  const r4 = extractGrammarLabels(fakeConcept, 'Roman açıklaması', 'TDE 4 • Roman');
+  assert.strictEqual(r4, null);
+});
+
+
 

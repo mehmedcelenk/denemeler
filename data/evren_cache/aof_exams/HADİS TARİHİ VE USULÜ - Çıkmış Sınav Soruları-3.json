@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Hadislerde bulunan ve sadece uzmanların anlayabileceği kusurların tespiti ile ilgilenen ilim dalı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Esbâbu vurûdi'l-hadis",
+      "B": "İhtilâfu'l-hadis",
+      "C": "Garîbu'l-hadis",
+      "D": "Fıkhu'l-hadis",
+      "E": "İlelü'l-hadis"
+    },
+    "ana_konu": "Hadis İlimleri",
+    "alt_konu": "Hadis Usulü İlimleri"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Peygamberler görevleri ile ilgili hata yapmaktan, Allah tarafından korunmuşlardır. Bu özellikleri gereği onlar hata yaptıklarında Allah tarafından uyarılmış ve hatalarından en kısa zamanda dönmeleri ve tövbe etmeleri sağlanmıştır. Yukarıdaki paragrafta peygamberlerde bulunması gereken özelliklerden hangisi açıklanmıştır?",
+    "secenekler": {
+      "A": "İsmet",
+      "B": "Fetânet",
+      "C": "Sıdk",
+      "D": "Teblîğ",
+      "E": "Emânet"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Peygamberlerin Sıfatları"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Hadis metinlerindeki az kullanılan, yaygın olmayan ve anlaşılamayan ibareleri (lafızları) konu edinen ve bunları açıklamaya çalışan ilim dalı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İlmu'r-ricâl",
+      "B": "İhtilâfu'l-hadis",
+      "C": "Garîbu'l-hadis",
+      "D": "Esbâbu vurûdi'l-hadis",
+      "E": "İlelü'l-hadis"
+    },
+    "ana_konu": "Hadis İlimleri",
+    "alt_konu": "Hadis Metni İlimleri"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Hadis râvîleri hakkında, hadis rivayetine ehil olup olmadıklarını belirlemeye yönelik gerekli her türlü bilgiyi derlemek, korumak ve değerlendirmek amacıyla ortaya çıkan ilim dalı hangisidir?",
+    "secenekler": {
+      "A": "Esbâbü vürûdi'l-hadis",
+      "B": "Cerh ve tadil",
+      "C": "İhtilâfu'l-hadis",
+      "D": "Garibu'l-hadis",
+      "E": "İlelü'l-hadis"
+    },
+    "ana_konu": "Hadis İlimleri",
+    "alt_konu": "Râvî İlimleri"
+  },
+  {
+    "soru_no": 5,
+    "soru": "Aşağıdakilerden hangisi hadislerin güvenilirliğini sağlamak için benimsenen ilke veya yöntemlerden biri değildir?",
+    "secenekler": {
+      "A": "Yazılı kaynaklardan rivayet etme",
+      "B": "Hadisi ilk duyandan almaya çalışma",
+      "C": "Raviye yemin ettirme",
+      "D": "Hadisi Kur'an ile karşılaştırma",
+      "E": "Raviden şahit isteme"
+    },
+    "ana_konu": "Hadis Usulü",
+    "alt_konu": "Rivayet Yöntemleri ve İlkeleri"
+  },
+  {
+    "soru_no": 6,
+    "soru": "------- hadisin onu rivayet eden kimselerin isimlerinin sırayla zikredildiği kısmıdır. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "Sened",
+      "B": "Metin",
+      "C": "Kitâbet",
+      "D": "Tedvin",
+      "E": "Tasnif"
+    },
+    "ana_konu": "Hadis Usulü",
+    "alt_konu": "Hadis Kavramları"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Daha önce değişik yazı malzemelerine kaydedilerek veya ezberlenerek koruma altına alınmış olan hadislerin kitaplar (defterler) içinde toplandığı döneme ne ad verilir?",
+    "secenekler": {
+      "A": "Rivâyet",
+      "B": "Tesbit",
+      "C": "Tasnif",
+      "D": "Dirâyet",
+      "E": "Tedvin"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadislerin Yazılı Dönemi"
+  },
+  {
+    "soru_no": 8,
+    "soru": "I. Hadis kitâbetini yasaklayan hadislerin yanında buna izin verilen hadisler de mevcuttur.\nII. Kur'an ile karışma endişesi hadislerin yazılmasındaki çekincelerden biridir.\nIII. Hadislerin yazıldığını gösteren herhangi yazılı bir vesika (belge) bulunmamaktadır.\n\nHadislerin yazılması ile ilgili yukarıdaki yargılardan hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadislerin Yazılması (Tedvin)"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Aşağıdakilerden hangisi hadislerin tasnif edilmesindeki amaçlardan biri değildir?",
+    "secenekler": {
+      "A": "Hadislerin yok olmaktan korunması",
+      "B": "Sünnetin Müslüman toplumda bir geleneğe dönüşmesine destek olmak",
+      "C": "Hadislerin düzenli ve kullanılabilir hale gelmesi",
+      "D": "Sünnet arşivi oluşturma çabası",
+      "E": "Mezhepler arasında yaşanan ayrılıkların giderilmesi"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadislerin Tasnifi"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi hadislerin râvilerine göre tasnif edildiği eser türlerinden biridir?",
+    "secenekler": {
+      "A": "Musannef",
+      "B": "Sünen",
+      "C": "Mu'cem",
+      "D": "Câmi",
+      "E": "Muvatta"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadis Eser Türleri"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Aşağıdakilerden hangisi Kütüb-i sitte içerisinde yer alan dört Sünen yazarından biri değildir?",
+    "secenekler": {
+      "A": "Tirmizî",
+      "B": "Dârekutnî",
+      "C": "Ebû Dâvûd",
+      "D": "Nesâî",
+      "E": "İbn Mâce"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Kütüb-i Sitte"
+  },
+  {
+    "soru_no": 12,
+    "soru": "I. Hadisler ravi ve konulara göre sınıflandırılmıştır.\nII. Hicrî ikinci asır tasnifin altın çağı olarak nitelendirilmektedir.\nIII. Mihne tasnif faaliyeti üzerinde etkili olmuştur.\n\nHadis tasnifi ile ilgili yukarıdaki yargılardan hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadislerin Tasnifi"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Daha önce telif edilen herhangi bir hadis kitabında bulunan hadislerin, kitap sahibinin senedinden başka senedlerle rivâyet edilmesiyle meydana getirilen eser türü aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Etrâf",
+      "B": "Zevâid",
+      "C": "Cem",
+      "D": "Müstedrek",
+      "E": "Müstahrec"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadis Eser Türleri"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Hadislerin baş tarafından bir kısmı zikredilmek suretiyle sahâbe adına veya hadis metinlerine göre alfabetik olarak düzenlenen eserler ------- olarak isimlendirilmektedir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "etrâf",
+      "B": "müstedrek",
+      "C": "şerh",
+      "D": "zevâid",
+      "E": "müstahrec"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadis Eser Türleri"
+  },
+  {
+    "soru_no": 15,
+    "soru": "Hadisçiler tarafından herhangi bir hadis kitabının bir başka hadis eseri veya eserleriyle karşılaştırılıp birincisinin ikincisinden fazla olarak ihtiva ettiği hadisleri bir araya getiren eserler derlenmiştir. Yukarıdaki paragrafta sözü edilen kitaplar hangi tür içerisinde değerlendirilmektedir?",
+    "secenekler": {
+      "A": "Müstahrec",
+      "B": "Müstedrek",
+      "C": "Tahric",
+      "D": "Zevâid",
+      "E": "Etrâf"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadis Eser Türleri"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Buhari ve Müslim'in şartlarına uyduğu halde eserlerine almadıkları hadisleri \"el-Müstedrek ale's-Sahîhayn\" adlı eserinde derleyen müellif aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Rezîn b. Muâviye",
+      "B": "Dârekutnî",
+      "C": "İbnü'l-Esîr",
+      "D": "Hâkim en-Nîsâbûrî",
+      "E": "Ebû Nuaym"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Önemli Hadis Eserleri ve Müellifleri"
+  },
+  {
+    "soru_no": 17,
+    "soru": "Aşağıdakilerden hangisi Osmanlı medrese ve dârülhadislerinde okutulan hadis kitaplarından biri değildir?",
+    "secenekler": {
+      "A": "Meşâriku'l-envâr",
+      "B": "Mecmau'z-zevâid",
+      "C": "Mesâbîhu's-sünne",
+      "D": "Sahih-i Müslim",
+      "E": "Sahih-i Buhârî"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Osmanlı Dönemi Hadis Çalışmaları"
+  },
+  {
+    "soru_no": 18,
+    "soru": "I. Zebidî'nin Sahih-i Buhârî muhtasarı tercüme ve şerh edilmiştir.\nII. Riyâzü's-sâlihîn Diyanet İşleri Başkanlığı tarafından tercüme edilmiştir.\nIII. Sahihi-i Müslim'in önemli bir şerhi Zâkir Kadiri Ugan tarafından yazılmıştır.\n\nCumhuriyet dönemi hadis çalışmaları ile ilgili yukarıdaki yargılardan hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve III",
+      "D": "I ve II",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Cumhuriyet Dönemi Hadis Çalışmaları"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Buhârî ve Müslim’in Sahîh’lerindeki ortak rivayetlerden oluşan \"el-Lü’lü’ü ve’l-mercân fîme’ttefaka ‘aleyhi’ş-Şeyhân\" adlı eserin yazarı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Mustafa Sıbâî",
+      "B": "Ahmed Muhammed Şâkir",
+      "C": "Muhammed Fuâd Abdülbâkî",
+      "D": "Abdülfettâh Ebû Gudde",
+      "E": "Tâhir b. Sâlih el-Cezâirî"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Önemli Hadis Eserleri ve Müellifleri"
+  },
+  {
+    "soru_no": 20,
+    "soru": "\"Râmûzü’l-ehâdîs\" isimli eserin müellifi olan Osmanlı dönemi alimi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İbn Melek",
+      "B": "Gümüşhânevî",
+      "C": "İmam Birgivî",
+      "D": "Yusufefendizâde",
+      "E": "Zâhid el-Kevserî"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Osmanlı Dönemi Hadis Çalışmaları"
+  }
+]

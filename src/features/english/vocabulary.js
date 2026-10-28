@@ -1,5 +1,6 @@
 import { escapeHtml } from '../../shared/escape.ts';
 import { formatConceptBubbleHtml } from '../../shared/math-render.ts';
+import { getGrammarColor, getPosColor, extractGrammarLabels, renderJunctionFraction } from './grammar-bubble.ts';
 
 export const MEB_TRAPS_DICT = {};
 
@@ -73,54 +74,6 @@ export let activeVocabTimeout = null;
 
 export let activeVocabWordEl = null;
 
-/**
- * Ayraca (|) tıklandığında önceki kelime öbeğini ve ögenin adını kesir formatında üretir.
- */
-function renderJunctionFraction(el, trText) {
-  const match = trText.match(/(?:⬅\s*(?:&lt;b&gt;|<b>)?Önceki:?(?:&lt;\/b&gt;|<\/b>)?\s*)([^<&]+)/i);
-  let leftRole = match ? match[1].trim() : '';
-  if (!leftRole) {
-    const title = el.getAttribute('title') || '';
-    const titleMatch = title.match(/Öge Sınırı:\s*([^|]+)/i);
-    leftRole = titleMatch ? titleMatch[1].trim() : 'Öge';
-  }
-
-  let prevText = '';
-  let node = el.previousSibling;
-  while (node) {
-    if (node.nodeType === 3) {
-      prevText = node.textContent + prevText;
-    } else if (node.nodeType === 1) {
-      if (node.classList && node.classList.contains('xray-junction')) {
-        break;
-      }
-      prevText = node.textContent + prevText;
-    }
-    node = node.previousSibling;
-  }
-  const sentParts = prevText.split(/(?<=[.?!•])\s+/);
-  let segment = sentParts[sentParts.length - 1].trim();
-  segment = segment.replace(/^[•\s]+/, '').replace(/[,;]+$/, '').trim();
-
-  let roleColor = '#2563eb';
-  if (leftRole.includes('Özne')) roleColor = '#2563eb';
-  else if (leftRole.includes('Yüklem')) roleColor = '#e11d48';
-  else if (leftRole.includes('Nesne')) roleColor = '#059669';
-  else if (leftRole.includes('Zarf')) roleColor = '#d97706';
-  else if (leftRole.includes('Dolaylı') || leftRole.includes('Tümleç') || leftRole.includes('Yer')) roleColor = '#4f46e5';
-
-  return {
-    roleColor,
-    html: `
-      <div class="xray-fraction-card">
-        <div class="xray-fraction-phrase">${escapeHtml(segment || '...')}</div>
-        <div class="xray-fraction-bar" style="background:${roleColor};"></div>
-        <div class="xray-fraction-role" style="color:${roleColor};">${escapeHtml(leftRole)}</div>
-      </div>
-    `
-  };
-}
-
 export function showVocabBubble(el, event) {
   if (event) {
     event.stopPropagation();
@@ -146,7 +99,7 @@ export function showVocabBubble(el, event) {
 
   const isJunction = el.classList.contains('xray-junction');
   let junctionData = null;
-  let grammarColor = null;
+  let grammarColor = getGrammarColor(el);
 
   if (isJunction) {
     junctionData = renderJunctionFraction(el, trText);
@@ -159,13 +112,28 @@ export function showVocabBubble(el, event) {
   if (grammarColor) {
     bubble.style.borderColor = grammarColor;
     bubble.style.setProperty('--vocab-bubble-accent', grammarColor);
-    bubble.style.boxShadow = `0 10px 28px -4px ${grammarColor}40, 0 3px 8px rgba(0,0,0,0.12)`;
+    bubble.style.boxShadow = grammarColor.startsWith('var(')
+      ? '0 6px 20px -2px rgba(0, 0, 0, 0.28), 0 2px 6px rgba(0, 0, 0, 0.12)'
+      : `0 10px 28px -4px ${grammarColor}40, 0 3px 8px rgba(0,0,0,0.12)`;
   }
 
   let mainContent = '';
   let subContent = '';
+  const grammarLabels = extractGrammarLabels(el, trText, noteText);
 
-  if (isJunction && junctionData) {
+  if (grammarLabels) {
+    bubble.classList.add('vocab-bubble-compact');
+    const items = [];
+    if (grammarLabels.posLabel) {
+      const posColor = getPosColor(el);
+      items.push(`<span class="vocab-grammar-pos" style="color:${posColor};">${escapeHtml(grammarLabels.posLabel)}</span>`);
+    }
+    if (grammarLabels.soundLabel) {
+      items.push(`<span class="vocab-grammar-sound" style="color:var(--pos-edat);">${escapeHtml(grammarLabels.soundLabel)}</span>`);
+    }
+    mainContent = `<div class="vocab-grammar-row">${items.join('<span class="vocab-grammar-sep">•</span>')}</div>`;
+    subContent = '';
+  } else if (isJunction && junctionData) {
     mainContent = junctionData.html;
     subContent = ''; // Ayracın balonunda ampule veya alt notlara gerek yok
   } else if (trText && arText) {
@@ -187,7 +155,7 @@ export function showVocabBubble(el, event) {
     }
   }
 
-  if (!isJunction && noteText) {
+  if (!grammarLabels && !isJunction && noteText) {
     subContent = `<span class="vocab-bubble-sub">${escapeHtml(noteText)}</span>`;
   }
 
@@ -235,9 +203,9 @@ export function showVocabBubble(el, event) {
   const arrowPos = Math.max(14, Math.min(bubbleRect.width - 14, targetCenterX - (adjustedLeft - halfWidth)));
   bubble.style.setProperty('--arrow-left', `${arrowPos}px`);
 
-  // Uzun kavramlar için daha geniş okuma süresi (9 saniye)
+  // Kompakt dil bilgisi rozetleri için 3.5 saniye, uzun kavramlar için 9 saniye
   const isLongText = (trText.length + noteText.length) > 30;
-  const timeoutMs = isLongText ? 9000 : 2800;
+  const timeoutMs = grammarLabels ? 3500 : (isLongText ? 9000 : 2800);
 
   activeVocabTimeout = setTimeout(() => {
     bubble.style.animation = 'vocabPopOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards';

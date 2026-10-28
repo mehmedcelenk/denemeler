@@ -29,6 +29,15 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
 
   const timestamp = Number.isFinite(msg.timestamp) && msg.timestamp > 0 ? msg.timestamp : Date.now();
   const existingPeer = ctx.participants.find((p) => p.id === senderId);
+  if (existingPeer) {
+    existingPeer.lastSeenAt = timestamp;
+  }
+  const existingStats = ctx.studentStats[senderId];
+  if (existingStats) {
+    existingStats.lastSeenAt = timestamp;
+    existingStats.isOnline = true;
+  }
+
   // Doğrulanmış Hoca Kontrolü: Katılımcı listesinde kayıtlı ve isHost: true ise veya odada henüz hiç kimse yoksa
   const isSenderHost = existingPeer ? existingPeer.isHost : (!ctx.participants.some((p) => p.isHost) && !!msg.isHost);
 
@@ -44,6 +53,7 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
           name: senderName,
           isHost: allowedAsHost,
           joinedAt: timestamp,
+          lastSeenAt: timestamp,
         });
       }
       // Hoca hiçbir zaman studentStats tablosuna eklenmez
@@ -54,6 +64,10 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
           correctCount: 0,
           incorrectCount: 0,
           joinedAt: timestamp,
+          exitCount: 0,
+          totalAwayMs: 0,
+          lastSeenAt: timestamp,
+          isOnline: true,
         };
       }
       addFeedItem(ctx.feedItems, {
@@ -73,6 +87,12 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
       break;
     }
 
+    case 'STUDENT_HEARTBEAT': {
+      // Kalp atışı alındı, son görülme ve çevrimiçi durumu yukarıda tazelendi
+      ctx.notify();
+      break;
+    }
+
     case 'ROOM_SYNC': {
       // Yalnızca hoca veya lider düğümün ROOM_SYNC paketleri kabul edilir
       if (!isSenderHost && ctx.participants.some((p) => p.isHost)) return;
@@ -85,6 +105,7 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
               name: (inc.name || 'Öğrenci').slice(0, 60),
               isHost: !!inc.isHost,
               joinedAt: Number.isFinite(inc.joinedAt) ? inc.joinedAt : Date.now(),
+              lastSeenAt: Number.isFinite(inc.lastSeenAt) ? inc.lastSeenAt : Date.now(),
             });
           }
         }
@@ -97,6 +118,8 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
           const existing = ctx.studentStats[id];
           const incomingCorrect = Number.isFinite(stats?.correctCount) && stats.correctCount >= 0 ? stats.correctCount : 0;
           const incomingIncorrect = Number.isFinite(stats?.incorrectCount) && stats.incorrectCount >= 0 ? stats.incorrectCount : 0;
+          const incomingExits = Number.isFinite(stats?.exitCount) && stats.exitCount >= 0 ? stats.exitCount : 0;
+          const incomingAwayMs = Number.isFinite(stats?.totalAwayMs) && stats.totalAwayMs >= 0 ? stats.totalAwayMs : 0;
 
           if (!existing) {
             ctx.studentStats[id] = {
@@ -105,10 +128,16 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
               correctCount: incomingCorrect,
               incorrectCount: incomingIncorrect,
               joinedAt: Number.isFinite(stats?.joinedAt) ? stats.joinedAt : Date.now(),
+              exitCount: incomingExits,
+              totalAwayMs: incomingAwayMs,
+              lastSeenAt: Number.isFinite(stats?.lastSeenAt) ? stats.lastSeenAt : Date.now(),
+              isOnline: true,
             };
           } else if (id !== ctx.peerId) {
             existing.correctCount = Math.max(existing.correctCount, incomingCorrect);
             existing.incorrectCount = Math.max(existing.incorrectCount, incomingIncorrect);
+            existing.exitCount = Math.max(existing.exitCount, incomingExits);
+            existing.totalAwayMs = Math.max(existing.totalAwayMs, incomingAwayMs);
           }
         }
       }
@@ -137,6 +166,14 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
       const openLost = ctx.feedItems.find(
         (f) => f.type === 'FOCUS_LOST' && f.studentId === senderId && !f.returnedAt
       );
+      const reason = msg.payload?.reason === 'SCREEN_LOCK' ? 'SCREEN_LOCK' : 'APP_SWITCH';
+
+      // İhlal sayacını artır
+      const stats = ctx.studentStats[senderId];
+      if (stats) {
+        stats.exitCount = (stats.exitCount || 0) + 1;
+      }
+
       if (!openLost) {
         addFeedItem(ctx.feedItems, {
           id: `${timestamp}_${senderId}_lost`,
@@ -144,6 +181,7 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
           studentId: senderId,
           studentName: senderName,
           timestamp,
+          reason,
         });
         ctx.notify();
       }
@@ -154,10 +192,34 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
       const lastLost = ctx.feedItems.find(
         (f) => f.type === 'FOCUS_LOST' && f.studentId === senderId && !f.returnedAt
       );
+      const durationMs = Number.isFinite(msg.payload?.durationMs) && (msg.payload?.durationMs ?? 0) > 0
+        ? (msg.payload?.durationMs ?? 0)
+        : (lastLost ? Math.max(0, timestamp - lastLost.timestamp) : 0);
+
+      const stats = ctx.studentStats[senderId];
+      if (stats && durationMs > 0) {
+        stats.totalAwayMs = (stats.totalAwayMs || 0) + durationMs;
+      }
+
       if (lastLost) {
         lastLost.returnedAt = timestamp;
         ctx.notify();
       }
+      break;
+    }
+
+    case 'SUSPICIOUS_ACT': {
+      // Şüpheli işlem bildirimi (örn. soru metni kopyalama)
+      const details = typeof msg.payload?.details === 'string' ? msg.payload.details.slice(0, 80) : '';
+      addFeedItem(ctx.feedItems, {
+        id: `${timestamp}_${senderId}_suspicious`,
+        type: 'SUSPICIOUS_COPY',
+        studentId: senderId,
+        studentName: senderName,
+        timestamp,
+        details,
+      });
+      ctx.notify();
       break;
     }
 
@@ -180,7 +242,6 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     }
 
     case 'HELP_RESOLVED': {
-      // Yalnızca hoca yardım çağrısını çözebilir
       if (!isSenderHost && ctx.participants.some((p) => p.isHost)) return;
 
       const isTargetStudent = msg.payload?.studentId
@@ -199,7 +260,6 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     }
 
     case 'ROOM_PAUSE': {
-      // YETKİ KORUMASI: Yalnızca hoca odayı duraklatabilir veya devam ettirebilir
       if (!isSenderHost) return;
       const paused = !!msg.payload?.isPaused;
       ctx.setPaused(paused);
@@ -207,7 +267,6 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     }
 
     case 'ROOM_CLOSE': {
-      // YETKİ KORUMASI: Sıradan bir öğrenci odayı sonlandıramaz
       if (!isSenderHost) return;
       showRoomToast('Oturum Kapatıldı', 'Hoca tarafından oturum sonlandırıldı.', '🛑');
       ctx.leaveRoom();
@@ -215,7 +274,6 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     }
 
     case 'AWARD_STAR': {
-      // YETKİ KORUMASI: Yalnızca hoca yıldız verebilir
       if (!isSenderHost) return;
       const isTarget = msg.payload?.studentId
         ? msg.payload.studentId === ctx.peerId
@@ -228,7 +286,6 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     }
 
     case 'BROADCAST_ANNOUNCEMENT': {
-      // YETKİ KORUMASI: Yalnızca hoca tüm sınıfa genel anons yapabilir
       if (!isSenderHost) return;
       const text = typeof msg.payload?.text === 'string' ? msg.payload.text.trim().slice(0, 280) : '';
       if (text) {
@@ -245,6 +302,10 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
           correctCount: 0,
           incorrectCount: 0,
           joinedAt: timestamp,
+          exitCount: 0,
+          totalAwayMs: 0,
+          lastSeenAt: timestamp,
+          isOnline: true,
         };
       }
 
@@ -257,8 +318,6 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
         Number.isFinite(msg.payload.correctCount) &&
         Number.isFinite(msg.payload.incorrectCount)
       ) {
-        // MATEMATİKSEL SIÇRAMA KALKANI:
-        // Konsoldan sahte paketle doğru/yanlış sayısı tek bir mesajda +1'den fazla artıramaz!
         const rawCorrect = Math.max(0, msg.payload.correctCount);
         const rawIncorrect = Math.max(0, msg.payload.incorrectCount);
 

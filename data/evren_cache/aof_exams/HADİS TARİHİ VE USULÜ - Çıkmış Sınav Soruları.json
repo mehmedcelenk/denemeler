@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Hadislerin hangi sebeplere yönelik olarak ortaya çıktığını konu edinen hadis ilmi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İhtilâfü’l-hadîs",
+      "B": "Ğarîbü’l-Hadîs",
+      "C": "Tabakât",
+      "D": "İlelü’l-Hadîs",
+      "E": "Esbabü'l Vürûdi’l-Hadîs"
+    },
+    "ana_konu": "Hadis İlimleri",
+    "alt_konu": "Hadislerin Vürud Sebepleri"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Az kullanıldığı, yaygın olmadığı ya da manası kapalı olduğu için anlaşılması zor olan kelimeler ve bunları konu edinen, bu kelimelerle ilgili Arapça dilbilimcilerinin ifadelerinden, eski Arap şairlerinin şiirlerinden örnekler verilerek sözü edilen kelimenin hadislerdeki anlamı ve edebî incelikleri ortaya konulan ilim dalıdır. Yukarıda tanımı verilen hadis ilmi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Rical",
+      "B": "Esbabü Vürudi'l Hadis",
+      "C": "İlelü'l Hadis",
+      "D": "Ğarîb'ül Hadis",
+      "E": "İhtilafü'l Hadis"
+    },
+    "ana_konu": "Hadis İlimleri",
+    "alt_konu": "Hadislerdeki Garip Kelimeler"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Peygamberlerin, peygamberlik görevleri ile ilgili konularda hata yapmaktan Allah tarafından korunmuş olmalarına ne ad verilir?",
+    "secenekler": {
+      "A": "Fetanet",
+      "B": "İsmet",
+      "C": "Emanet",
+      "D": "Tezkiye",
+      "E": "Bi’set"
+    },
+    "ana_konu": "Hz. Peygamber ve Sünnet",
+    "alt_konu": "Peygamberlerin Sıfatları"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Aşağıdakilerden hangisi hadislerin güvenilirliklerini sağlamaya yönelik uygulanan yaklaşımlardan biri değildir?",
+    "secenekler": {
+      "A": "Hadisi genellikle yazılı kaynaklardan elde etme",
+      "B": "Hadis rivayetini azaltma",
+      "C": "Hadis rivayet edenden şahit isteme",
+      "D": "Hadisin râvilerini inceleme",
+      "E": "Hadis rivayet edene yemin ettirme"
+    },
+    "ana_konu": "Hadis Usulü",
+    "alt_konu": "Hadislerin Korunması ve Rivayet Yöntemleri"
+  },
+  {
+    "soru_no": 5,
+    "soru": "------- hadisin onu rivayet eden kimselerin isimlerinin sırayla zikredildiği kısmıdır. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "Tedvin",
+      "B": "Kitâbet",
+      "C": "Sened",
+      "D": "Tasnif",
+      "E": "Metin"
+    },
+    "ana_konu": "Hadis Usulü",
+    "alt_konu": "Hadisin Unsurları (Sened ve Metin)"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Aşağıdakilerden hangisi Hz. Peygamber'in (s.a.s) sözlerini yaymak için yaptıklarından biri değildir?",
+    "secenekler": {
+      "A": "Tek tek insanlarla görüşüp konuşmak",
+      "B": "Sözlerinin duyurulmasını istemek",
+      "C": "Yanlış anlaşılır endişesiyle kalabalık ortamlarda konuşmamak",
+      "D": "Toplumların ileri gelenlerine mektuplar yazmak",
+      "E": "Bilginin anlatılmasını teşvik etmek"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hz. Peygamber Döneminde Hadislerin Yayılması"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Aşağıdakilerden hangisi mu’cemlerin özelliklerinden biri değildir?",
+    "secenekler": {
+      "A": "Hadislerin ilk râvilerine göre tasnif edilmesi",
+      "B": "Sahabe ismine göre tasnif edilmesi",
+      "C": "Alfabetik olarak tasnif edilmesi",
+      "D": "Kitap yazarının hocalarına göre tasnif edilmesi",
+      "E": "Hadisin tamamını değil bir kısmını vermek suretiyle tasnif edilmesi"
+    },
+    "ana_konu": "Hadis Kaynakları",
+    "alt_konu": "Mu'cemler"
+  },
+  {
+    "soru_no": 8,
+    "soru": "Aşağıdakilerden hangisi Kütüb-i Sitte'de yer alan kitapların yazarlarından biri değildir?",
+    "secenekler": {
+      "A": "Buhârî",
+      "B": "Müslim",
+      "C": "Ebû Dâvûd",
+      "D": "Dârimî",
+      "E": "İbn Mâce"
+    },
+    "ana_konu": "Hadis Kaynakları",
+    "alt_konu": "Kütüb-i Sitte"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Hanbelî Mezhebinin kurucu imamı olan Ahmed b. Hanbel'in hadisleri tasnif ettiği eseri aşağıdaki hadis kitabı türlerinden hangisi içinde kabul edilir?",
+    "secenekler": {
+      "A": "Câmi",
+      "B": "Muvatta",
+      "C": "Sünen",
+      "D": "Musannef",
+      "E": "Müsned"
+    },
+    "ana_konu": "Hadis Kaynakları",
+    "alt_konu": "Müsned Türü Eserler"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi hadislerin tasnifinin amaçlarından biri değildir?",
+    "secenekler": {
+      "A": "Sünneti tahriften koruma",
+      "B": "Hz. Peygamber’e isnad edilen merfû hadislerle, mevkûf ve maktu’ rivayetleri birbirinden ayırma",
+      "C": "Bütün hadisleri içeren bir veritabanı oluşturma",
+      "D": "Sünnetin devamlılığını sürdürme",
+      "E": "Hadisle ilgilenenlere kullanım kolaylığı sağlama"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Hadislerin Tasnif Edilmesi"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Önceki dönemdeki bir müellifin şartlarına uyduğu halde kitabına almadığı hadisleri toplamak suretiyle onun eksikliklerini tamamlayan kitaplara ne ad verilir?",
+    "secenekler": {
+      "A": "Tahric",
+      "B": "Etraf",
+      "C": "Zevâid",
+      "D": "Cem’",
+      "E": "Müstedrek"
+    },
+    "ana_konu": "Hadis Kaynakları",
+    "alt_konu": "Tamamlayıcı Eserler (Müstedrek)"
+  },
+  {
+    "soru_no": 12,
+    "soru": "Hadislerin baş tarafından bir kısmı zikredilmek suretiyle sahâbe adına veya hadis metinlerine göre alfabetik olarak düzenlenen eserler ------- diye isimlendirilmektedir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "şerh",
+      "B": "zevâid",
+      "C": "etrâf",
+      "D": "istidrâk",
+      "E": "tahric"
+    },
+    "ana_konu": "Hadis Kaynakları",
+    "alt_konu": "Etraf Eserleri"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Bir hadisin veya bir kitaptaki hadislerin temel hadis kaynaklarındaki yerlerini tespit ederek değişik açılardan tenkidini ve değerlendirmesini yapmaya ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "zevâid",
+      "B": "tahric",
+      "C": "müstedrek",
+      "D": "etraf",
+      "E": "cem’"
+    },
+    "ana_konu": "Hadis Usulü",
+    "alt_konu": "Tahric"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Hadis isnad sisteminin güvenilir olduğunu savunan akımı başlatan oryantalist kimdir?",
+    "secenekler": {
+      "A": "Josef Horovitz",
+      "B": "Maxime Rodinson",
+      "C": "Gustave Le Bon",
+      "D": "Henry Lammens",
+      "E": "Macdonald"
+    },
+    "ana_konu": "Hadis ve Oryantalizm",
+    "alt_konu": "Oryantalistlerin Hadis Eleştirisi"
+  },
+  {
+    "soru_no": 15,
+    "soru": "Hadisle ilgili ------- eseriyle Gümüşhânevî; zamanın ihtiyaçlarına göre yeni hadis kitapları tasnif etmek ve hadislerin sıhhat ve mânâ bakımlarından yeniden değerlendirmesini yapmak gibi iki önemli tavır sergilemiştir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "Te'nîbû'l-hatîb",
+      "B": "Râmûzü’l-ehâdîs",
+      "C": "Keşfü'l-hafâ",
+      "D": "el-Kevserü'l-cârî",
+      "E": "en-Nüketü’t-tarîfe"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Osmanlı Dönemi Hadis Çalışmaları"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Osmanlı hadis müderrislerinin hadis sahasında çok miktarda ve çok çeşitli eserler vermedikleri görülür. Aşağıdakilerden hangisi bu durumun sebeplerinden biri değildir?",
+    "secenekler": {
+      "A": "Osmanlı eğitim sisteminin fıkıh-kelâm merkezli olması",
+      "B": "Hadis geleneğinin diğer bölgelere oranla Anadolu'ya daha geç gelmesi",
+      "C": "Osmanlı döneminin ilmî açıdan bir olgunluk ve özümseme dönemi olması",
+      "D": "Âlimler üzerindeki sosyal motivasyonun diğer bölgelerden daha güçlü olması",
+      "E": "Medrese mezunlarının ağırlıklı olarak idareciliğe hazırlanması"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Osmanlı Dönemi Hadis Çalışmaları"
+  },
+  {
+    "soru_no": 17,
+    "soru": "Hz. Peygamber’in (s.a.v) mucizelerini konu edinen çalışmalara ne ad verilir?",
+    "secenekler": {
+      "A": "Fedâil",
+      "B": "Hasâis",
+      "C": "Delâil",
+      "D": "Şemâil",
+      "E": "Menâkıb"
+    },
+    "ana_konu": "Hadis Konuları",
+    "alt_konu": "Hz. Peygamber'in Özellikleri ve Mucizeleri"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Aşağıdaki sahabilerden hangisi aşere-i mübeşşeredendir?",
+    "secenekler": {
+      "A": "Saîd b. Zeyd",
+      "B": "Ebû Hureyre",
+      "C": "Enes b. Mâlik",
+      "D": "Abdullah b. Ömer",
+      "E": "Abdullah b. Zübeyr"
+    },
+    "ana_konu": "Sahabe",
+    "alt_konu": "Aşere-i Mübeşşere"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Aşağıdakilerden hangisi Osmanlı dârulhadîslerinde ders metni olarak okutulan eserlerden biri değildir?",
+    "secenekler": {
+      "A": "Sahîhu’l-Buhârî",
+      "B": "Sahîhu Müslim",
+      "C": "Mesâbîhu’s-sünne",
+      "D": "Cem‘u’l-fevâid",
+      "E": "Meşâriku’l-envâr"
+    },
+    "ana_konu": "Hadis Tarihi",
+    "alt_konu": "Osmanlı Dârulhadîsleri ve Müfredat"
+  },
+  {
+    "soru_no": 20,
+    "soru": "Aşağıdakilerden hangisi halk arasında meşhur olan haberlerin bir araya getirilerek derlendiği en önemli kaynaklardan biridir?",
+    "secenekler": {
+      "A": "el-Makâsıdu’l-hasene",
+      "B": "Tenvîrü’l-havâlik",
+      "C": "Fethu’l-bârî",
+      "D": "Riyâzü’s-sâlihîn",
+      "E": "Mesâbîhu’s-sünne"
+    },
+    "ana_konu": "Hadis Kaynakları",
+    "alt_konu": "Meşhur Hadisler ve Derlemeler"
+  }
+]

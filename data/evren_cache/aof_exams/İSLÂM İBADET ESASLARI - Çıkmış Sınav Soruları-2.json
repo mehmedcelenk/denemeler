@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Aşağıdakilerden hangisi kifâî ibadet türlerindendir?",
+    "secenekler": {
+      "A": "Oruç",
+      "B": "Kefaretler",
+      "C": "Beş vakit namaz",
+      "D": "Cenaze namazı",
+      "E": "Hac"
+    },
+    "ana_konu": "İbadetin Tanımı ve Türleri",
+    "alt_konu": "Kifâî ve Aynî İbadetler"
+  },
+  {
+    "soru_no": 2,
+    "soru": "İbadetlerin sadece Allah rızası için ve dünyevi bir menfaat düşünmeden yapılmasına ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "taabbüd",
+      "B": "kurbet",
+      "C": "telbiye",
+      "D": "taat",
+      "E": "tezkiye"
+    },
+    "ana_konu": "İbadetin Tanımı ve Türleri",
+    "alt_konu": "İbadetin Özellikleri"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Allah’ın mükelleflerden bir fiili yapıp yapmamalarını istemesi veya mükellefi bu fiiller arasında serbest bırakmasına ne ad verilir?",
+    "secenekler": {
+      "A": "Teklifî hükümler",
+      "B": "Vaz’î hükümler",
+      "C": "Mutlak hükümler",
+      "D": "Kifâî hükümler",
+      "E": "Mukayyed hükümler"
+    },
+    "ana_konu": "İbadetin Tanımı ve Türleri",
+    "alt_konu": "Hüküm Kavramı"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Yüce Allah’ın, mükelleflerin hepsi için bütün durumlarda yani meşakkat, zaruret ve ihtiyaç gibi geçici bir sebebe bağlı olmaksızın bağlayıcı olmak üzere ilkten koyduğu hükümlerdir. Yukarıda tanımı verilen kavram aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Azimet",
+      "B": "Rükün",
+      "C": "Farz",
+      "D": "Haram",
+      "E": "Şart"
+    },
+    "ana_konu": "İbadetin Tanımı ve Türleri",
+    "alt_konu": "Azimet ve Ruhsat"
+  },
+  {
+    "soru_no": 5,
+    "soru": "I. Abdesti bozan durumlar teyemmümü de bozar.\nII. Teyemmümle namaz kılan kimsenin namaz esnasında suyu görmesiyle teyemmümü bozulur.\nIII. Hastalık sebebiyle teyemmüm yapan kişi iyileşse bile teyemmümü geçerlidir.\nTeyemmüm hakkında yukarıda verilen bilgilerden hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Taharet",
+    "alt_konu": "Teyemmüm"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Hadesi gidermek maksadıyla temiz toprak veya toprak cinsi sayılan bir maddeye elleri sürüp yüzü ve iki kolu meshetmeye ne ad verilir?",
+    "secenekler": {
+      "A": "Gusül",
+      "B": "Teyemmüm",
+      "C": "Abdest",
+      "D": "Necaset",
+      "E": "Taharet"
+    },
+    "ana_konu": "Taharet",
+    "alt_konu": "Teyemmüm"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Hayız ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Hanefilere göre hayız üç gün üç geceden az olamaz.",
+      "B": "Üç günden az, on günden çok gelen kan “istihâza” kanıdır.",
+      "C": "Hanefilere göre hayız 10 günden fazla olabilir.",
+      "D": "Şâfiilere göre hayız bir gün bir geceden az olamaz.",
+      "E": "Şâfiilere göre hayız 15 günden fazla olamaz."
+    },
+    "ana_konu": "Taharet",
+    "alt_konu": "Özür Halleri (Hayız, Nifas, İstihaza)"
+  },
+  {
+    "soru_no": 8,
+    "soru": "“Beden, elbise ve namaz kılınacak yerlerden hakiki pisliklerin giderilmesi” tanımı aşağıdakilerden hangi kavram ile ifade edilmektedir?",
+    "secenekler": {
+      "A": "İstikbâl-i kıble",
+      "B": "Tezkiye",
+      "C": "Necâsetten tahâret",
+      "D": "Hadesten tahâret",
+      "E": "Setr-i avret"
+    },
+    "ana_konu": "Taharet",
+    "alt_konu": "Necasetten Taharet"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Aşağıdakilerden hangisi Hanefîler’e göre başlamış bir namazı bozan durumlardan biri değildir?",
+    "secenekler": {
+      "A": "Namazda konuşmak",
+      "B": "Namazda kıbleden başka bir tarafa yönelmek",
+      "C": "Namazda kahkaha ile gülmek",
+      "D": "Namazda bayılmak",
+      "E": "Rükû ve secdede tesbihleri terk etmek"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazı Bozan Şeyler"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi namazın tekrar edilmesini gerektiren durumlardan biridir?",
+    "secenekler": {
+      "A": "Akşam namazının üçüncü rekâtında ruku yapılmaması",
+      "B": "Namaza başlarken ellerin kulaklara kadar kaldırılmaması",
+      "C": "Bayram namazlarına mahsus üçer ilâve tekbir alınmaması",
+      "D": "Üç ve dört rek‘atlı namazların ikinci rek‘atının sonunda oturulmaması",
+      "E": "Öğle namazının üçüncü rekâtında Fâtiha suresinin okunmaması"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Rükün ve Vacipleri"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Aşağıdakilerden hangisi namaz kılmanın yasaklandığı mekruh vakitlere örnektir?",
+    "secenekler": {
+      "A": "İkinci fecrin yani fecr-i sâdığın doğmasından güneşin doğacağı zamana kadar olan vakit",
+      "B": "İkindi namazının farzı kılındıktan sonra güneşin batımına kadar geçen süre içerisinde",
+      "C": "Güneş battıktan sonra batı ufkundaki beyazlık kaybolana kadar",
+      "D": "Güneş doğmasından bir veya iki mızrak boyu yükselmesine kadar olan vakit",
+      "E": "Cuma namazında hatip hutbeye çıktığı zaman"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Vakitleri"
+  },
+  {
+    "soru_no": 12,
+    "soru": "Fıkıhta, namaz kılan kişinin, Kur’ân’ın ayetlerinden bir miktarını kendisinin işitebileceği şekilde okumasına ne ad verilir?",
+    "secenekler": {
+      "A": "Kıyam",
+      "B": "Ka'de-i ahire",
+      "C": "Rükû",
+      "D": "İftitah tekbiri",
+      "E": "Kıraat"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Namazın Rükünleri"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Fıkıhta secde ayetlerinin okunmasından dolayı yapılan secdeye ------- adı verilir. Yukarıdaki cümlede boşluk bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "sehiv secdesi",
+      "B": "tilâvet secdesi",
+      "C": "şükür secdesi",
+      "D": "vücup secdesi",
+      "E": "kıraat secdesi"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Secde Türleri"
+  },
+  {
+    "soru_no": 14,
+    "soru": "I. Herhangi bir namazda bir farzın te'hîr edilmesi\nII. Herhangi bir namazda vacibin sehven terk edilmesi\nIII. Herhangi bir namazda bir farzın kasden terk edilmesi\nYukarılerden hangileri sehiv secdesi gerektirir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Sehiv Secdesi"
+  },
+  {
+    "soru_no": 15,
+    "soru": "Sünnet namazlar hakkında aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Sünnet namazlar teravih namazı dışında tek başına cemaatsiz kılınır.",
+      "B": "Peygamber’in ara sıra terk ettiği sünnetlere gayri müekked sünnet adı verilir.",
+      "C": "Hanefiler’e göre başlanılmış bir sünnet bozulduğunda kazası vaciptir.",
+      "D": "Sünnet namazların sadece ilk rekatında kıraat farzdır.",
+      "E": "Sünnet namazlar Hz. Peygamber’e bağlılığın göstergesi olup terk edilmesi hoş karşılanmaz."
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Sünnet Namazlar"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Vitir namazı ve kunut duası ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Vitir namazı, sadece ramazan ayında cemaatle kılınır ve imam bu namazı açıktan kıldırır.",
+      "B": "Hanefîler’e göre normal şartlarda vitirden başka namazlarda kunût duası okunmaz.",
+      "C": "Vitir namazı tek başına da kılınsa cemaatle de kılınsa hem imam hem de cemaat kunutu içinden okur.",
+      "D": "İmam Mâlik ve Şâfiî’ye göre her zaman sabah namazlarının farzında ikinci rek‘atın rükû‘undan sonra ayakta kunût duası okunur.",
+      "E": "Sabah namazında okunan kunût Mâlikîler’e göre sünnet, Şâfiîler’e göre ise farzdır."
+    },
+    "ana_konu": "Namaz",
+    "alt_konu": "Vitir Namazı ve Kunut"
+  },
+  {
+    "soru_no": 17,
+    "soru": "I. Niyet etmek\nII. Sadaka vermek\nIII. İftar yemeği vermek\nIV. İ'tikafa girmek\nYukarıdakilerden hangileri orucun sünnetlerindendir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve IV",
+      "D": "I, II ve IV",
+      "E": "II, III ve IV"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucun Sünnetleri"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Aşağıdakilerden hangisi orucun kazasını gerektiren hallerden biri değildir?",
+    "secenekler": {
+      "A": "Hata ile bir şey yemek veya içmek",
+      "B": "Orucun bozulduğunu zannederek yiyip içmek",
+      "C": "Tehdit altında orucu bozmak",
+      "D": "Oruçlu iken uyumak",
+      "E": "Keyif verici maddeler kullanmak"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucu Bozan Haller"
+  },
+  {
+    "soru_no": 19,
+    "soru": "I. Akıllı olmak\nII. Müslüman olmak\nIII. Reşit olmak\nYukarıda belirtilen şartlardan hangileri orucun farz olmasının şartlarındandır?",
+    "secenekler": {
+      "A": "I, II ve III",
+      "B": "I ve II",
+      "C": "Yalnız I",
+      "D": "I ve III",
+      "E": "Yalnız II"
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Orucun Farz Olma Şartları"
+  },
+  {
+    "soru_no": 20,
+    "soru": "Ramazan orucu ile ilgili aşağıdaki bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Vaktinde tutulmayan orucun kazası için belirli bir vakit tayin edilmemiştir.",
+      "B": "Oruç tutmak istemeyenler fidye ödeyerek mükellefiyetten kurtulabilir.",
+      "C": "Hayız ve nifas hali oruca engel durumlardandır.",
+      "D": "Mazereti olmadan Ramazan orucu tutmamak büyük bir günahtır.",
+      "E": "Emziren kadın oruç tutmayıp sonradan kaza edebilir."
+    },
+    "ana_konu": "Oruç",
+    "alt_konu": "Ramazan Orucu"
+  }
+]

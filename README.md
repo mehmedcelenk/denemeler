@@ -1,6 +1,6 @@
 # AÖL Dijital Sınav Kitapçığı
 
-Web arayüzü özellik bazında modüllere ayrılmıştır. Başlangıç rehberi: [Mimari ve özellik haritası](docs/ARCHITECTURE.md). AI ile çalışırken proje kuralları [AGENTS.md](AGENTS.md) içindedir.
+Web arayüzü özellik bazında modüllere ayrılmıştır. Başlangıç rehberi: [Mimari ve özellik haritası](docs/ARCHITECTURE.md). AI ile çalışırken proje kuralları [AGENTS.md](Bİ%20KLASÖR/AGENTS.md) içindedir.
 
 ## Yerel geliştirme
 

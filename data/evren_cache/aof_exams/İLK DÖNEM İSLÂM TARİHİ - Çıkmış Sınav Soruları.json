@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Kuzey Arabistan’da kurulan devletlerden Nabatîler’in başkenti aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hire",
+      "B": "San'a",
+      "C": "Palmyra",
+      "D": "Petra",
+      "E": "Dımaşk"
+    },
+    "ana_konu": "İslam Öncesi Arap Yarımadası",
+    "alt_konu": "Arap Yarımadası'ndaki Siyasi Yapılar"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Kâbe ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Kâbe ilk defa Hz. İbrahim ve oğlu Hz. İsmail tarafından inşa edilmiştir.",
+      "B": "Beytullah, el-Beytü’l-atîk, el-Beytü’l-harâm gibi isimlerle de anılır.",
+      "C": "Kur’ân-ı Kerîm’de Hz. İbrahim ve oğlu Hz. İsmail’in Kâbe’yi inşa ettiklerinden bahsedilir.",
+      "D": "Hicr (veya Hicru İsmail) adı verilen kısım Kâbe’ye dahildir.",
+      "E": "İslâm’dan önce Kâbe ve hac hizmetlerini bir süre Huzâa kabilesi yürütmüştür."
+    },
+    "ana_konu": "İslam Öncesi Arap Yarımadası",
+    "alt_konu": "Mekke ve Kâbe'nin Tarihi"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Câhiliye döneminde Mekke’de ordu kumandanlığını ve kafile başkanlığını ifade etmek için ------- terimi kullanılmaktaydı. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "sikâye",
+      "B": "sidâne",
+      "C": "dârünnedve",
+      "D": "kıyâde",
+      "E": "rifade"
+    },
+    "ana_konu": "İslam Öncesi Arap Yarımadası",
+    "alt_konu": "Cahiliye Dönemi Mekke Yönetimi ve Toplumsal Yapı"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Tarıma elverişli olmadığı için ekonomik hayatın temelini ticaretin oluşturduğu Mekke’de “sûk” (çoğulu esvâk) adı verilen çarşı ve pazar yerleri bulunmaktaydı. Aşağıdakilerden hangisi Mekke’deki en eski ve en büyük çarşı ve pazar yerlerinden biridir?",
+    "secenekler": {
+      "A": "Müşakkar",
+      "B": "Hubâşe",
+      "C": "Hazvere",
+      "D": "Ukâz",
+      "E": "Hacûn"
+    },
+    "ana_konu": "İslam Öncesi Arap Yarımadası",
+    "alt_konu": "Mekke'nin Ekonomik Hayatı ve Ticaret"
+  },
+  {
+    "soru_no": 5,
+    "soru": "Hz. Peygamber’in (s.a.s) çocukluk dönemi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Hz. Peygamber’in babaannesi Fâtıma bint Amr’dır.",
+      "B": "Hz. Peygamber’in sütannesi Halîme İslâm dönemine yetişmemiştir.",
+      "C": "Abdullah, Şeymâ ve Üneyse Hz. Peygamber’in süt kardeşleridir.",
+      "D": "Hz. Peygamber sekiz yaşında iken dedesi Abdülmuttalib vefat etmiştir.",
+      "E": "Hz. Peygamber çocukluğunda annesi Âmine ile birlikte babasının Medine’deki mezarını ziyaret etmiştir."
+    },
+    "ana_konu": "Hz. Muhammed'in Hayatı",
+    "alt_konu": "Doğumu ve Çocukluk Dönemi"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Peygamber Efendimiz’in annesi Âmine, Kureyş kabilesinin ------- koluna mensuptur. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "Benî Sehm",
+      "B": "Benî Mahzûm",
+      "C": "Benî Hâşim",
+      "D": "Benî Ümeyye",
+      "E": "Benî Zühre"
+    },
+    "ana_konu": "Hz. Muhammed'in Hayatı",
+    "alt_konu": "Ailesi ve Soy Kütüğü"
+  },
+  {
+    "soru_no": 7,
+    "soru": "İslâm’dan önce Mekke’deki haksızlıklara son vermek, şehrin hac ve ticaret için yeniden emniyetli hale gelmesini sağlamak amacıyla kurulan, Hz. Peygamber’in de katıldığı cemiyetin adı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hilfü’l-Fudûl",
+      "B": "Hilfü’l-Mutayyebîn",
+      "C": "Hilfü’l-Ahlâf",
+      "D": "Hilfü Le‘akati’d-dem",
+      "E": "Hilfü’r-Ribâb"
+    },
+    "ana_konu": "İslam Öncesi Arap Yarımadası",
+    "alt_konu": "Cahiliye Dönemi Toplumsal Kurumlar"
+  },
+  {
+    "soru_no": 8,
+    "soru": "Kabe'nin tamiri sırasında Kureyşliler malzeme yetersizliği nedeniyle Kâbe’nin bir kısmını bina dışında bırakmak zorunda kaldılar. Ancak bina dışında kalan bu alanın da Kâbe’ye dahil olduğunu göstermek için göğüs hizasında yarım daire şekline bir duvar ile çevirdiler. Buna göre, Kâbe’den sayılan bu alana ne ad verilir?",
+    "secenekler": {
+      "A": "Mültezem",
+      "B": "Hicr (Hicru İsmail)",
+      "C": "Rüknül-Yemânî",
+      "D": "Şâzervan",
+      "E": "Yemâni"
+    },
+    "ana_konu": "İslam Öncesi Arap Yarımadası",
+    "alt_konu": "Kâbe'nin Tarihi ve Yapısı"
+  },
+  {
+    "soru_no": 9,
+    "soru": "İkinci Akabe biatının sonuçları ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "Habeşistan’a hicret etmiş bütün Müslümanlar geri çağrılmıştır.",
+      "B": "Mekkelilerle Medineliler arasında ticari anlaşma yapılmıştır.",
+      "C": "Akabe körfezine yabancı gemilerin girişine izin verilmiştir.",
+      "D": "Hz. Peygamber’in müşriklerle görüşmeleri yasaklanmıştır.",
+      "E": "Hz. Peygamber’in Medine’ye hicretinin önü açılmıştır."
+    },
+    "ana_konu": "Hz. Muhammed'in Hayatı",
+    "alt_konu": "Akabe Biatları ve Hicret Süreci"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Müşrikler, Hz. Peygamber’e (s.a.s) yönelik baskılarıyla İslâm’ın Mekke’de taraftar bulmasına engel olamayınca Hâşimoğullarına karşı ekonomik ve sosyal boykot uygulamaya karar verdiler. Aşağıdakilerden hangisi uygulanan boykotun amaçlarından biridir?",
+    "secenekler": {
+      "A": "Hz. Hatice’nin mallarına el koymak",
+      "B": "Ebû Tâlib’in müşriklere de maddi destek vermesini sağlamak",
+      "C": "Hz. Peygamber’i yalnızlaştırmak",
+      "D": "Hz. Peygamber’in Mekke’den hicret etmesini sağlamak",
+      "E": "Müslümanların Habeşistan’dan geri gelmesini sağlamak"
+    },
+    "ana_konu": "Hz. Muhammed'in Hayatı",
+    "alt_konu": "Mekke Dönemi Mücadeleler ve Boykotlar"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Hz. Peygamber’i, (s.a.s) Medine’ye hicretinden hemen sonra Mescide bitişik bir ev yapılıncaya kadar evinde misafir eden sahabi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Salim b. Avf",
+      "B": "Sa’d b. Muaz",
+      "C": "Sa’d b. Ubade",
+      "D": "Zeyd b. Sabit",
+      "E": "Ebû Eyyûb el-Ensârî"
+    },
+    "ana_konu": "Hz. Muhammed'in Hayatı",
+    "alt_konu": "Medine Dönemi ve İlk Yerleşim"
+  },
+  {
+    "soru_no": 12,
+    "soru": "Hz. Peygamber’in Medine’ye hicreti sırasında Hz. Ebû Bekir’in yanısıra ------- de kafilede bulunuyordu. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru olarak tamamlar?",
+    "secenekler": {
+      "A": "Bilâl-i Habeşi",
+      "B": "Ca‘fer b. Ebû Tâlib",
+      "C": "Âmir b. Füheyre",
+      "D": "Hz. Ali",
+      "E": "Zeyd b. Hârise"
+    },
+    "ana_konu": "Hz. Muhammed'in Hayatı",
+    "alt_konu": "Hicret Olayı"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Aşağıdakilerden hangisi Medine Sözleşmesi'ne taraf olan kabilelerden biri değildir?",
+    "secenekler": {
+      "A": "Kudaa",
+      "B": "Evs",
+      "C": "Hazrec",
+      "D": "Benî Kaynukâ'",
+      "E": "Benî Kurayza"
+    },
+    "ana_konu": "Medine Dönemi",
+    "alt_konu": "Medine Sözleşmesi ve Toplumsal Yapı"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Aşağıdakilerden hangisi Hicret esnasında Medine’de yaşayan kabilelerden biri değildir?",
+    "secenekler": {
+      "A": "Evs",
+      "B": "Benî Nadîr",
+      "C": "Benî Temîm",
+      "D": "Benî Kaynuka",
+      "E": "Hazrec"
+    },
+    "ana_konu": "Medine Dönemi",
+    "alt_konu": "Medine'nin Demografik Yapısı"
+  },
+  {
+    "soru_no": 15,
+    "soru": "Hz. Peygamber Medine’de Müslümanlar ve Yahudiler arasında, karşılıklı güven içinde birlikte yaşamayı ve şehrin ortak savunmasını öngören Medine Belgesi'ni imzalamıştır. Aşağıdakilerden hangisi Medine Belgesi'nin maddeleri arasında yer almaz?",
+    "secenekler": {
+      "A": "Taraflar inanç ve ibadet hürriyetine, mal ve can güvenliğine sahip olacaktır.",
+      "B": "Medine dışında yapılacak savaşlarda taraflar birbirine yardımcı olacaktır.",
+      "C": "Şehrin savunması için yapılacak savaş masrafları taraflarca ortak karşılanacaktır.",
+      "D": "Taraflardan biri diğeri aleyhine üçüncü bir tarafla ittifak yapmayacaktır.",
+      "E": "Taraflar arasında yaşanacak anlaşmazlıklarda Hz. Muhammed hakem olacaktır."
+    },
+    "ana_konu": "Medine Dönemi",
+    "alt_konu": "Medine Sözleşmesi'nin İçeriği"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Aşağıdakilerden hangisi hicretten sonra Medine’de muhacirlerle ensar arasında yapılan kardeşlik akdinin (muâhât) sonuçlarından biri değildir?",
+    "secenekler": {
+      "A": "Mekkeli müslümanların ticaretteki tecrübesi çalışma hayatına olumlu katkılar sağladı.",
+      "B": "Muhacirlerle Medineli Müslümanlar birbirilerini daha yakından tanıyıp kaynaştılar.",
+      "C": "Hz. Peygamber döneminde düzenlenen gazve ve seriyyelerde dayanışmayı sağladı.",
+      "D": "Medineye hicret etmiş Mekkeli müslümanların barınma sorunu çözüldü.",
+      "E": "Medine’de yaşayan kabileler arasında rekabeti ve düşmanlığı artırdı."
+    },
+    "ana_konu": "Medine Dönemi",
+    "alt_konu": "Muhacir-Ensar Kardeşliği"
+  },
+  {
+    "soru_no": 17,
+    "soru": "Hz. Peygamber ile Mekke müşrikleri arasında yapılan Hudeybiye Antlaşması’nı müşrikler adına ------- imzalamıştır. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru olarak tamamlar?",
+    "secenekler": {
+      "A": "Süheyl b. Amr",
+      "B": "Urve b. Mesûd",
+      "C": "Huleys",
+      "D": "Büdeyl b. Verkâ",
+      "E": "Ebû Süfyân"
+    },
+    "ana_konu": "Medine Dönemi",
+    "alt_konu": "Hudeybiye Antlaşması"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Bizanslıların Medîne’ye saldırı için savaş hazırlığı yaptığı, Suriye’deki Hristiyan Arap kabilelerinin de onlara katıldığı haberinin alınması üzerine düzenlenen sefer aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Tâif Kuşatması",
+      "B": "Mûte Seferi",
+      "C": "Mekke’nin Fethi",
+      "D": "Tebük Gazvesi",
+      "E": "Huneyn Gazvesi"
+    },
+    "ana_konu": "Medine Dönemi",
+    "alt_konu": "Hz. Peygamber'in Gazveleri"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Hudeybiye Antlaşması’ndan sonra Hz. Peygamber ve beraberindeki Müslümanların hicri yedinci yılın Zilkade ayında yaptıkları umreye ne ad verilir?",
+    "secenekler": {
+      "A": "Umretü's-Sena",
+      "B": "Umretü’l-Kazâ",
+      "C": "Müellefe-i Kulûb",
+      "D": "Umretü'l-Vefa",
+      "E": "Futûhu’l-Büldân"
+    },
+    "ana_konu": "Medine Dönemi",
+    "alt_konu": "Hudeybiye Sonrası Gelişmeler"
+  },
+  {
+    "soru_no": 20,
+    "soru": "Vedâ Haccı’nın Haccetü’l-İslâm olarak isimlendirilmesinin sebebi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Sayıları 140.000’e ulaşan büyük bir kalabalığın hacda hazır bulunması",
+      "B": "Hz. Peygamber’in hac esnasında ashâbıyla vedalaşması",
+      "C": "Hz. Peygamber’in hac ibadetinin bütün hüküm ve rükünlerini açıklamış ve uygulamış olması",
+      "D": "Hz. Peygamber’in ilk ve tek haccı olması",
+      "E": "İslâm ahkâmının hac ibadetiyle tamamlanmış olması"
+    },
+    "ana_konu": "Medine Dönemi",
+    "alt_konu": "Veda Haccı ve Veda Hutbesi"
+  }
+]

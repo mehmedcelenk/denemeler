@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Bir kimsenin hayatında etkin olan veya bir toplumda genel kabul görmüş davranış düzenine ne ad verilir?",
+    "secenekler": {
+      "A": "Tutum",
+      "B": "Din",
+      "C": "Ahlak",
+      "D": "Felsefe",
+      "E": "Hukuk"
+    },
+    "ana_konu": "Ahlak Kavramı ve Tanımı",
+    "alt_konu": "Ahlakın Tanımı ve Kapsamı"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Davranış düzeninin toplum tarafından benimsenmiş olması yönüyle fert üzerindeki tesirini ele almaya ne ad verilir?",
+    "secenekler": {
+      "A": "Etik kurallar",
+      "B": "Din felsefesi",
+      "C": "Ahlâk felsefesi",
+      "D": "Ahlak sosyolojisi",
+      "E": "Tasavvuf"
+    },
+    "ana_konu": "Ahlak Disiplinleri",
+    "alt_konu": "Ahlak Sosyolojisi"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Peygamberlerin insanlığa öğrettikleri hayat düzenine genel olarak ne ad verilir?",
+    "secenekler": {
+      "A": "Hukuk",
+      "B": "Din",
+      "C": "Din felsefesi",
+      "D": "Ahlak felsefesi",
+      "E": "Felsefe"
+    },
+    "ana_konu": "Din ve Ahlak İlişkisi",
+    "alt_konu": "Dinin Tanımı ve İşlevi"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Hz. Peygamber (s.a.s) kendi hayatında gerçekleştirdiği fiiller ve dile getirdiği ahlaki ilke ve kurallar ile etrafındaki insanlara aşağıdakilerden hangisini sağlamıştır?",
+    "secenekler": {
+      "A": "Sınıfsal farklılıkları",
+      "B": "Eski düzenin devamını",
+      "C": "Yeni bir varoluş imkânını",
+      "D": "Maddi refahı",
+      "E": "Rahat bir hayatı"
+    },
+    "ana_konu": "Hz. Peygamber'in Ahlaki Örnekliği",
+    "alt_konu": "Hz. Peygamber'in Ahlaki Etkisi"
+  },
+  {
+    "soru_no": 5,
+    "soru": "Aşağıdakilerden hangisi mutezile öğretisindeki beş esas prensipten biri değildir?",
+    "secenekler": {
+      "A": "Adalet",
+      "B": "Menzile beyne’l-menzileteyn",
+      "C": "İstitaat",
+      "D": "Tevhid",
+      "E": "Vaad"
+    },
+    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "alt_konu": "Mutezile'nin Beş Esası"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Peygamber Efendimiz'i (s.a.s) işaret eden ve onda insanlar için “üsve-i hasene” (en güzel örnek) olduğu belirtilen ayet aşağıdaki surelerin hangisinde yer alır?",
+    "secenekler": {
+      "A": "Bakara",
+      "B": "Araf",
+      "C": "Yasin",
+      "D": "Yunus",
+      "E": "Ahzab"
+    },
+    "ana_konu": "Hz. Peygamber'in Ahlaki Örnekliği",
+    "alt_konu": "Üsve-i Hasene Kavramı ve Ayetler"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Davranış düzenleri arasında makul bir tercih yapılamayacağını iddia eden, insanların bütün kararlarının nihai olarak eşdeğer olduğunu savunan tavra ne ad verilir?",
+    "secenekler": {
+      "A": "Ahlaki görecelik",
+      "B": "Nihilizm",
+      "C": "Sezgicilik",
+      "D": "Duyguculuk",
+      "E": "Pozitivizm"
+    },
+    "ana_konu": "Ahlak Felsefesi Akımları",
+    "alt_konu": "Ahlaki Görecelik"
+  },
+  {
+    "soru_no": 8,
+    "soru": "\"İnsan, fiillerinin yaratıcısı değildir. Hayır ve şerrin yaratıcısı Allah’tır. Şerrin Allah tarafından yaratılması bir zulüm sayılamaz, zira fiiller Allah’a nispetle bir değer taşımaz. Değerler de fiillerin değişmez nitelikleri değildir. İyi ve kötü, Allah’ın emir ve yasaklarıyla belirlenir.\" Yukarıda verilen görüş aşağıdaki mezheplerden hangisine aittir?",
+    "secenekler": {
+      "A": "Eş'ari",
+      "B": "Maturidi",
+      "C": "Mutezile",
+      "D": "Mürcie",
+      "E": "Kerramiye"
+    },
+    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "alt_konu": "Eş'ari Ahlak Teorisi"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Ahlâkın temel kavramlarını, ilkelerini ve kurallarını temellendiren düzenli ve tutarlı açıklamalara ne ad verilir?",
+    "secenekler": {
+      "A": "Ahlâk teorisi",
+      "B": "İzahat",
+      "C": "Kavramsal analiz",
+      "D": "Prensip",
+      "E": "Fikri teemmül"
+    },
+    "ana_konu": "Ahlak Teorileri",
+    "alt_konu": "Ahlak Teorisinin Tanımı"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Hem dinin hem de aklın reddettiği bütün kötü huyların ve çirkin davranışların kaynağını \"nefis\" olarak gören ahlâk teorisi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Eş’ari ahlâk teorisi",
+      "B": "Maturidî ahlâk teorisi",
+      "C": "Tasavvufî ahlâk teorisi",
+      "D": "Mu’tezilenin ahlâk teorisi",
+      "E": "Felsefi ahlâk teorisi"
+    },
+    "ana_konu": "Tasavvuf ve Ahlak",
+    "alt_konu": "Tasavvufi Ahlak Teorisi ve Nefis"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Bu mezhebin ahlâk teorisinde insan fiilleri, yaratma yönünden Allah’a, kazanma yönünden kişiye ait olup, insan hür iradesiyle bunları seçmekte ve eyleme dönüştürmektedir. Bu durumda Allah’ın fiilleri, insanın seçmesi sonunda yarattığı anlaşılmaktadır. İnsanın ahlâki sorumluluğu da ondaki bu seçme hürriyetinden kaynaklanmaktadır. Yukarıdaki paragrafta hangi mezhebin ahlak teorisinden bahsedilmektedir?",
+    "secenekler": {
+      "A": "Mu’tezile",
+      "B": "Cebriye",
+      "C": "Caferi",
+      "D": "Maturidî",
+      "E": "Kaderiye"
+    },
+    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "alt_konu": "Maturidi Ahlak Teorisi"
+  },
+  {
+    "soru_no": 12,
+    "soru": "\"Ahlâki değerler mutlaktır, bu değerler fiillerin değişmez nitelikleridir. Akıl ve din fiillere değer yüklemez, yalnızca onlarda zaten bulunan nitelikleri açığa çıkarır. Böylece aklın iyi ve kötü, görev ve sorumluluk konularında ulaştığı bilgiler kesindir.\" Yukarıda verilen görüş aşağıdaki mezheplerden hangisine aittir?",
+    "secenekler": {
+      "A": "Maturidi",
+      "B": "Cebri",
+      "C": "Murcie",
+      "D": "Mutezile",
+      "E": "Eş'ari"
+    },
+    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "alt_konu": "Mutezile Ahlak Teorisi"
+  },
+  {
+    "soru_no": 13,
+    "soru": "İnsan sorumluluklarını yerine getirmediğinde veya kararlarında hayrın tahakkuk etmemesi durumunda karşılaştığı ilk yaptırıma ne ad verilir?",
+    "secenekler": {
+      "A": "Vicdan azabı",
+      "B": "Hukuki cezalar",
+      "C": "Ahiret azabı",
+      "D": "Kabir azabı",
+      "E": "Kınama cezası"
+    },
+    "ana_konu": "Ahlaki Sorumluluk ve Yaptırım",
+    "alt_konu": "Vicdan ve Ahlaki Yaptırım"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Ahlâk ilmi ve felsefesinin konusu aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Peygamberlerin söylemleri",
+      "B": "İnsan fiilleri",
+      "C": "Sahabe hayatları",
+      "D": "Vacip davranışlar",
+      "E": "Peygamber hayatları"
+    },
+    "ana_konu": "Ahlak Felsefesinin Konusu",
+    "alt_konu": "Ahlak Felsefesinin Tanımı ve Konusu"
+  },
+  {
+    "soru_no": 15,
+    "soru": "İslam ahlak literatüründe insanın hangi fiili yapacağına ve neyi tercih edeceğine kendisinin karar verebilmesi imkânına ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "kaza",
+      "B": "kader",
+      "C": "saik",
+      "D": "irade hürriyeti",
+      "E": "niyet"
+    },
+    "ana_konu": "İrade ve Sorumluluk",
+    "alt_konu": "İrade Hürriyeti"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Aşağıdaki ifadelerden hangisi insanın ahlaki şuuru açısından muhtaç bir varlık olduğunun farkında olmasıyla bağdaşmaz?",
+    "secenekler": {
+      "A": "İnsan, ancak diğer insanları koruyarak kendini muhafaza edebilir.",
+      "B": "İnsan, bir mahluk olduğu için muhtaç bir varlıktır.",
+      "C": "İnsanın diğer insanların desteğiyle varlığını sürdürmesi asli bir durumdur.",
+      "D": "İnsan, sadece maddi olarak değil ahlaken de hidayete muhtaç bir varlıktır.",
+      "E": "Eşref-i mahlukat olan insan müstağni bir varlık olarak kendine yeterlidir."
+    },
+    "ana_konu": "İnsan ve Ahlak",
+    "alt_konu": "İnsanın Ahlaki Muhtaçlığı"
+  },
+  {
+    "soru_no": 17,
+    "soru": "Aşağıdakilerden hangisi adalet erdemine dâhil olan erdemlerden biri değildir?",
+    "secenekler": {
+      "A": "Sadâkat",
+      "B": "Kerem",
+      "C": "Vefâ",
+      "D": "Ülfet",
+      "E": "Mükâfat"
+    },
+    "ana_konu": "Erdemler",
+    "alt_konu": "Adalet Erdemi ve Alt Erdemleri"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Üstünlük sağlama güdüsünden kaynaklanan bir erdemdir. Çoğu zaman bu güdüye öfke gücü denmektedir. Bu güçten kaynaklanan erdeme ne ad verilir?",
+    "secenekler": {
+      "A": "Adalet",
+      "B": "Cesaret",
+      "C": "Basiret",
+      "D": "Hikmet",
+      "E": "İffet"
+    },
+    "ana_konu": "Erdemler",
+    "alt_konu": "Cesaret Erdemi"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Aşağıdakilerden hangisi Kur’an’da güzel ahlâk veya fazilet için kullanılan kavramlardan biri değildir?",
+    "secenekler": {
+      "A": "Hasene",
+      "B": "Ameli Salih",
+      "C": "Hidayet",
+      "D": "Sıdk",
+      "E": "Fıtrat"
+    },
+    "ana_konu": "Kur'an'da Ahlak Kavramları",
+    "alt_konu": "Kur'an'da Ahlakla İlgili Kavramlar"
+  },
+  {
+    "soru_no": 20,
+    "soru": "İslâm filozoflarından İbn Rüşd’e göre, ------- erdemi, bilgelik, yiğitlik ve ölçülülükten (iffet) ve cömertlikten oluşan diğer dört erdemin toplumda gerçekleşmesinin teminatıdır. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "tevazu",
+      "B": "hikmet",
+      "C": "cesaret",
+      "D": "sebat",
+      "E": "adalet"
+    },
+    "ana_konu": "İslam Felsefesinde Ahlak",
+    "alt_konu": "İbn Rüşd'ün Ahlak Görüşü"
+  }
+]

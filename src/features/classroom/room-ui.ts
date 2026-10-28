@@ -2,6 +2,7 @@ import { roomService } from './room-service.ts';
 import type { RoomFeedItem, RoomState, StudentStats } from './types.ts';
 import { initFocusTracker } from './focus-tracker.ts';
 import { calculateStudentRank } from './ranking.ts';
+import { openRoomModal, closeRoomModal, handleJoinClick, handleCreateClick } from './room-modal.ts';
 
 let isInitialized = false;
 let renderScheduled = false;
@@ -17,13 +18,9 @@ export function initRoomFeature(): void {
   roomService.restoreSessionIfActive();
 
   roomService.subscribe((state) => {
-    // Kritik bildirim ve durum çubukları anında güncellenir
     updateTopRoomPill(state);
     updatePauseOverlay(state);
     updateStudentDrawer(state);
-
-    // 100 öğrencili sınıfta eşzamanlı soru çözümleri ve akış bildirimleri DOM'u dondurmasın diye
-    // liste yenilemeleri 120ms'lik throttle penceresiyle toplu (batched) çizilir.
     scheduleHeavyListRender();
   });
 }
@@ -63,9 +60,14 @@ function updateTopRoomPill(state: RoomState): void {
 
 function updatePauseOverlay(state: RoomState): void {
   const overlay = document.getElementById('roomPauseOverlay');
-  if (overlay) overlay.style.display = state.roomId && state.isPaused ? 'flex' : 'none';
+  // ÖNEMLİ DÜZELTME: Pause perdesi sadece ÖĞRENCİDE açılır, hocanın ekranını ASLA kapatmaz!
+  if (overlay) {
+    overlay.style.display = state.roomId && state.isPaused && !state.isHost ? 'flex' : 'none';
+  }
   const btnPause = document.getElementById('btnTogglePauseRoom');
-  if (btnPause) btnPause.textContent = state.isPaused ? '▶️ Devam Et' : '⏸️ Durdur';
+  if (btnPause) {
+    btnPause.textContent = state.isPaused ? '▶️ Devam Et' : '⏸️ Durdur';
+  }
 }
 
 function updateTeacherFeed(state: RoomState): void {
@@ -95,15 +97,27 @@ function renderFeedRow(item: RoomFeedItem): string {
       icon = '⚪';
       statusText = 'ayrıldı';
       break;
+    case 'DISCONNECTED':
+      icon = '⚡';
+      statusText = 'bağlantısı koptu (çevrimdışı)';
+      rowClass = 'row-danger';
+      break;
+    case 'SUSPICIOUS_COPY':
+      icon = '📋';
+      statusText = item.details ? `soru kopyaladı: ${escapeHtml(item.details)}` : 'soru metnini kopyaladı';
+      rowClass = 'row-warning';
+      break;
     case 'FOCUS_LOST':
       if (item.returnedAt) {
         icon = '🔄';
         const returnedTime = formatTime(item.returnedAt);
-        statusText = `ayrıldı, geri döndü (${returnedTime})`;
+        const diffSec = Math.round((item.returnedAt - item.timestamp) / 1000);
+        statusText = `ayrıldı, geri döndü (${diffSec} sn sonra - ${returnedTime})`;
         rowClass = 'row-warning';
       } else {
-        icon = '🚨';
-        statusText = 'uygulamadan ayrıldı';
+        const reasonBadge = item.reason === 'SCREEN_LOCK' ? '📱 Ekran kapandı/kilitlendi' : '🚨 Uygulamadan ayrıldı';
+        icon = item.reason === 'SCREEN_LOCK' ? '📱' : '🚨';
+        statusText = reasonBadge;
         rowClass = 'row-danger';
       }
       break;
@@ -147,8 +161,20 @@ function renderStudentStatRow(s: StudentStats): string {
   const elapsedMinutes = Math.max(0.2, (Date.now() - s.joinedAt) / 60000);
   const pace = totalSolved > 0 ? (elapsedMinutes / totalSolved).toFixed(1) : '-';
 
+  const exitCount = s.exitCount || 0;
+  const awaySec = Math.round((s.totalAwayMs || 0) / 1000);
+  const awayStr = awaySec >= 60 ? `${Math.floor(awaySec / 60)}d ${awaySec % 60}s` : `${awaySec}s`;
+  const violationBadge = exitCount > 0
+    ? `<span class="stat-violation" style="color:#ef4444; font-weight:700;" title="Toplam ${exitCount} kez ayrıldı (Dışarıda: ${awayStr})">🚨 ${exitCount} çıkış (${awayStr})</span>`
+    : `<span class="stat-clean" style="color:#10b981;" title="Hiç ayrılmadı">🛡️ 0 ihlal</span>`;
+
+  const onlineDot = s.isOnline !== false ? '🟢' : '⚪ (Koptu)';
+
   return `<div class="student-stat-row">
-    <span class="stat-name">${escapeHtml(s.name)}</span>
+    <div style="display:flex; flex-direction:column; gap:2px;">
+      <span class="stat-name">${onlineDot} ${escapeHtml(s.name)}</span>
+      <div style="font-size:0.82em;">${violationBadge}</div>
+    </div>
     <div class="stat-badges">
       <span class="stat-correct" title="Doğru Sayısı">🟢 ${s.correctCount}</span>
       <span class="stat-incorrect" title="Yanlış Sayısı">🔴 ${s.incorrectCount}</span>
@@ -184,10 +210,7 @@ function updateStudentDrawer(state: RoomState): void {
 
 function formatTime(timestamp: number): string {
   const d = new Date(timestamp);
-  const hh = String(d.getHours()).padStart(2, '0');
-  const mm = String(d.getMinutes()).padStart(2, '0');
-  const ss = String(d.getSeconds()).padStart(2, '0');
-  return `${hh}:${mm}:${ss}`;
+  return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}:${String(d.getSeconds()).padStart(2, '0')}`;
 }
 
 function escapeHtml(text: string): string {
@@ -198,21 +221,14 @@ function escapeHtml(text: string): string {
     .replace(/"/g, '&quot;');
 }
 
-import { openRoomModal, closeRoomModal, handleJoinClick, handleCreateClick } from './room-modal.ts';
-
 export function toggleRoomDrawer(): void {
   const state = roomService.getState();
   if (!state.roomId) return;
 
-  if (state.isHost) {
-    const drawer = document.getElementById('teacherDrawerOverlay');
-    if (!drawer) return;
-    drawer.style.display = drawer.style.display === 'flex' ? 'none' : 'flex';
-  } else {
-    const drawer = document.getElementById('studentDrawerOverlay');
-    if (!drawer) return;
-    drawer.style.display = drawer.style.display === 'flex' ? 'none' : 'flex';
-  }
+  const targetId = state.isHost ? 'teacherDrawerOverlay' : 'studentDrawerOverlay';
+  const drawer = document.getElementById(targetId);
+  if (!drawer) return;
+  drawer.style.display = drawer.style.display === 'flex' ? 'none' : 'flex';
 }
 
 export function closeTeacherDrawer(): void {

@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Din ile ahlak arasındaki ilişkiye dair aşağıdaki ifadelerin hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Din ile ahlak arasında zorunlu bir bağlantı vardır.",
+      "B": "Dindar bir insanın ahlaksız olması çelişkilidir.",
+      "C": "Ahlak dinin tamamlayıcı unsurudur.",
+      "D": "Ahlak dinin kaynağı ve dayanağıdır.",
+      "E": "Dindar bir insanın ahlaksız olması tutarsızdır."
+    },
+    "ana_konu": "Din ve Ahlak İlişkisi",
+    "alt_konu": "Din-Ahlak Bağlantısı"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Peygamberlerin insanlığa öğrettikleri hayat düzenine genel olarak ne ad verilir?",
+    "secenekler": {
+      "A": "Gelenek",
+      "B": "Din",
+      "C": "Ahlak",
+      "D": "Töre",
+      "E": "Kanun"
+    },
+    "ana_konu": "Ahlak Kavramı ve Tanımı",
+    "alt_konu": "Ahlakın Kaynakları"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Davranış düzenini fertlerin iç dünyalarını dikkate alarak ele alan disiplin aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ahlak felsefesi",
+      "B": "Ahlak sosyolojisi",
+      "C": "Ahlak antropolojisi",
+      "D": "Ahlak ilmi",
+      "E": "Ahlak psikolojisi"
+    },
+    "ana_konu": "Ahlak Disiplinleri",
+    "alt_konu": "Ahlak Psikolojisi"
+  },
+  {
+    "soru_no": 4,
+    "soru": "İslam ahlakında ahlaki eğitimin esas amacı tam olarak aşağıdakilerin hangisidir?",
+    "secenekler": {
+      "A": "Ahlaklı davranmayı meleke ya da karakter haline getirmek",
+      "B": "Allah'a ve Rasulullah'a itaati temin etmek",
+      "C": "İyi ve kötü fiilleri tespit edip öğretmek",
+      "D": "İyiliği tavsiye etmek, kötülükten sakındırmak",
+      "E": "Ahlakı ilmileştirmek"
+    },
+    "ana_konu": "Ahlaki Eğitim",
+    "alt_konu": "Ahlaki Eğitimin Amacı"
+  },
+  {
+    "soru_no": 5,
+    "soru": "\"Biz seni alemlere rahmet olarak gönderdik.\" (Enbiya/21:107) ayetinde Hz. Peygamber'in (s.a.s) alemlere rahmet olarak gönderilmesi ile kastedilen anlam aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Merhamet etmek",
+      "B": "Varoluş imkânı",
+      "C": "Acımak",
+      "D": "Yenilik",
+      "E": "Üsve-i hasene"
+    },
+    "ana_konu": "Hz. Peygamber'in Ahlaki Örnekliği",
+    "alt_konu": "Üsve-i Hasene"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Nakli veya şeriatı güneşe, aklı da göze benzeterek güneşsiz gözün göremeyeceğini, göz olmadan da güneşin bir işe yaramayacağını söyleyerek nakil ile akıl arasında zorunlu ve anlamlı bir ilişki kuran İslam düşünürü kimdir?",
+    "secenekler": {
+      "A": "İbn Rüşd",
+      "B": "Farabi",
+      "C": "Gazali",
+      "D": "Maturidi",
+      "E": "Kindi"
+    },
+    "ana_konu": "Akıl ve Nakil İlişkisi",
+    "alt_konu": "İslam Düşünürlerinin Görüşleri"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Davranış düzenleri arasında makul bir tercih yapılamayacağını iddia eden, insanların bütün kararlarının nihai olarak eşdeğer veya değersiz olduğunu savunan tavra ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "idealizm",
+      "B": "sezgicilik",
+      "C": "duyguculuk",
+      "D": "ahlaki görecelik",
+      "E": "mükemmeliyetçilik"
+    },
+    "ana_konu": "Ahlaki Görüşler",
+    "alt_konu": "Ahlaki Görecelik"
+  },
+  {
+    "soru_no": 8,
+    "soru": "İslam ahlakında aklın kaynak değeri ve rolü, aşağıdakilerin hangisinde doğru olarak izah edilmiştir?",
+    "secenekler": {
+      "A": "Ehl-i Sünnetin oluşumu ve gelişimi",
+      "B": "Nakilden bağımsız ahlaki değerlerin idraki ve temellendirilmesi",
+      "C": "Naklin anlaşılması ve İslam ahlakının ilim haline getirilmesi",
+      "D": "Temel kaynak Kur'an'ın doğru anlaşılması",
+      "E": "Doğru davranış ve kuralların tespiti"
+    },
+    "ana_konu": "Aklın Rolü",
+    "alt_konu": "Akıl ve Nakil"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Aşağıdakilerden hangisi Mutezile öğretisinin beş esas ilkesinden (usul-u hamse) biri değildir?",
+    "secenekler": {
+      "A": "Adalet",
+      "B": "Tevhid",
+      "C": "Menzile beyne'l-menzileteyn",
+      "D": "Vaad ve va'id",
+      "E": "İçtihad"
+    },
+    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "alt_konu": "Mutezile Ahlakı"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Bu mezhebin ahlâk teorisinde insan fiilleri, yaratma yönünden Allah’a, kazanma yönünden kişiye ait olup, insan hür iradesiyle bunları seçmekte ve eyleme dönüştürmektedir. Bu durumda Allah’ın fiilleri, insanın seçmesi sonunda yarattığı anlaşılmaktadır. İnsanın ahlâki sorumluluğu da ondaki bu seçme hürriyetinden kaynaklanmaktadır. Yukarıdaki paragrafta hangi mezhebin ahlak teorisinden bahsedilmektedir?",
+    "secenekler": {
+      "A": "Cebriye",
+      "B": "Mu’tezile",
+      "C": "Kaderiye",
+      "D": "Maturidî",
+      "E": "Caferi"
+    },
+    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "alt_konu": "Maturidi Ahlakı"
+  },
+  {
+    "soru_no": 11,
+    "soru": "Aşağıdaki ifadelerin hangisi Mutezilenin ahlak teorisi açısından doğrudur?",
+    "secenekler": {
+      "A": "Ahlaki iyiye ilişkin bilgi zorunlu bilgi sınıfına girer.",
+      "B": "Bir fiilin nihai anlamda kötülüğünün ölçüsü acı ve ıstırap değil ilahi iradedir.",
+      "C": "Allah adil olmakla birlikte insanlara zulmedebilir.",
+      "D": "İnsan istitaat sahibi değildir.",
+      "E": "Ahlaki değerler görelidir."
+    },
+    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "alt_konu": "Mutezile Ahlakı"
+  },
+  {
+    "soru_no": 12,
+    "soru": "Hem dinin hem de aklın reddettiği bütün kötü huyların ve çirkin davranışların kaynağını \"nefis\" olarak gören ahlâk teorisi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Maturidî ahlâk teorisi",
+      "B": "Felsefi ahlâk teorisi",
+      "C": "Mu’tezilenin ahlâk teorisi",
+      "D": "Eş’ari ahlâk teorisi",
+      "E": "Tasavvufî ahlâk teorisi"
+    },
+    "ana_konu": "Tasavvuf ve Ahlak",
+    "alt_konu": "Nefs Kavramı"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Ahlaki hayatta özgürlüğün önemi aşağıdakilerin hangisinde doğru olarak ifade edilmiştir?",
+    "secenekler": {
+      "A": "İnsan fiillerinde özgür olmazsa ruh sağlığını kaybedebilir.",
+      "B": "İnsan ancak sınırsız bir özgürlükle ahlaki karakter edinebilir.",
+      "C": "İnsani fiillerin ahlaki değer kazanabilmesi ve insanın fiillerinden sorumlu olabilmesi ancak özgürlükle mümkündür.",
+      "D": "İnsan özgürlükle aklını kullanabilir.",
+      "E": "İnsanın özgürce gerçekleştirdiği fiiller anlamlı olur."
+    },
+    "ana_konu": "İrade ve Sorumluluk",
+    "alt_konu": "Ahlaki Özgürlük"
+  },
+  {
+    "soru_no": 14,
+    "soru": "İnsanda tezahür eden bir davranışın ahlakın konusu olabilmesi için insanın kendisinde bulunması gereken en temel yeti aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İrade hürriyeti",
+      "B": "İman",
+      "C": "Mantık",
+      "D": "Hayat",
+      "E": "Akıl"
+    },
+    "ana_konu": "Ahlakın Konusu",
+    "alt_konu": "İrade ve Sorumluluk"
+  },
+  {
+    "soru_no": 15,
+    "soru": "İslam ahlakında \"mutlak hayr\"ın anlamı aşağıdakilerin hangisinde doğru olarak verilmiştir?",
+    "secenekler": {
+      "A": "İman ve ihlas sahibi olmak",
+      "B": "Zekat ve sadaka vermek",
+      "C": "Temel erdemlere sahip olmak",
+      "D": "Varlığı muhafaza etmek ve geliştirmek",
+      "E": "İbadetleri kamilen eda etmek"
+    },
+    "ana_konu": "Ahlaki Değerler",
+    "alt_konu": "Mutlak Hayır"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Ahlâk ilmi ve felsefesinin konusu aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İnsan fiilleri",
+      "B": "Peygamberlerin söylemleri",
+      "C": "Vacip davranışlar",
+      "D": "Peygamber hayatları",
+      "E": "Sahabe hayatları"
+    },
+    "ana_konu": "Ahlak Kavramı ve Tanımı",
+    "alt_konu": "Ahlakın Konusu"
+  },
+  {
+    "soru_no": 17,
+    "soru": "İslam ahlak filozoflarının eserlerinde ahlak, ev idaresi ve siyaset ilmi aşağıdaki hikmet türlerinden hangisinin altında yer alır?",
+    "secenekler": {
+      "A": "Nazari hikmet",
+      "B": "Ameli hikmet",
+      "C": "Felsefi hikmet",
+      "D": "Dini hikmet",
+      "E": "Tasavvufi hikmet"
+    },
+    "ana_konu": "İslam Ahlak Felsefesi",
+    "alt_konu": "Ameli Hikmet"
+  },
+  {
+    "soru_no": 18,
+    "soru": "Tevazu, hangi temel erdemin altına ya da kapsamına girer?",
+    "secenekler": {
+      "A": "Cömertlik",
+      "B": "Cesaret",
+      "C": "Hikmet",
+      "D": "Adalet",
+      "E": "İffet"
+    },
+    "ana_konu": "Temel Erdemler",
+    "alt_konu": "İffet ve Tevazu"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Aşağıdakilerden hangisi Kur’an’da güzel ahlâk veya fazilet için kullanılan kavramlardan biri değildir?",
+    "secenekler": {
+      "A": "İhsan",
+      "B": "Sıdk",
+      "C": "Fıtrat",
+      "D": "Hidâyet",
+      "E": "Hasene"
+    },
+    "ana_konu": "Kur'an'da Ahlak Kavramları",
+    "alt_konu": "Ahlaki Kavramlar"
+  },
+  {
+    "soru_no": 20,
+    "soru": "------- insanların birbirleri ile olan irtibatlarını, bağımlılıklarını fark ederek, bunu şuurlu bir bağ haline getirmelerini ifade eder. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler": {
+      "A": "İffet",
+      "B": "Şefkat",
+      "C": "Ülfet",
+      "D": "Tevekkül",
+      "E": "Ünsiyet"
+    },
+    "ana_konu": "Sosyal Ahlak",
+    "alt_konu": "İnsan İlişkileri"
+  }
+]

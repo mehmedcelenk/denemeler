@@ -1,0 +1,262 @@
+[
+  {
+    "soru_no": 1,
+    "soru": "Hz. Peygamber'in sahabe tarafından söylenen sözleri ve yapılan davranışları onaylaması veya karşı çıkmaması şeklinde ortaya çıkan sünnet türü aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Takrirî sünnet",
+      "B": "Fiilî sünnet",
+      "C": "Kavlî sünnet",
+      "D": "Cibillî sünnet",
+      "E": "Vasfi sünnet"
+    },
+    "ana_konu": "Sünnet Kavramı ve Türleri",
+    "alt_konu": "Takrirî Sünnet"
+  },
+  {
+    "soru_no": 2,
+    "soru": "Hadislerde bulunan ve sadece uzmanların anlayabileceği kusurların tespiti ile ilgilenen ilim dalı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İhtilâfu'l-hadis",
+      "B": "Garîbu'l-hadis",
+      "C": "Fıkhu'l-hadis",
+      "D": "İlelü'l-hadis",
+      "E": "Esbâbu vurûdi'l-hadis"
+    },
+    "ana_konu": "Hadis İlimleri",
+    "alt_konu": "İlelü'l-Hadis"
+  },
+  {
+    "soru_no": 3,
+    "soru": "Hadis metinlerindeki az kullanılan, yaygın olmayan ve anlaşılamayan ibareleri (lafızları) konu edinen ve bunları açıklamaya çalışan ilim dalı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Esbâbu vurûdi'l-hadis",
+      "B": "İlmu'r-ricâl",
+      "C": "İhtilâfu'l-hadis",
+      "D": "İlelü'l-hadis",
+      "E": "Garîbu'l-hadis"
+    },
+    "ana_konu": "Hadis İlimleri",
+    "alt_konu": "Garîbu'l-Hadis"
+  },
+  {
+    "soru_no": 4,
+    "soru": "Aşağıdakilerden hangisi mütekaddimûn dönemi hadis usûlü eserlerinden biridir?",
+    "secenekler": {
+      "A": "Tevcîhu'n-nazar",
+      "B": "Nuhbetü'l-fiker",
+      "C": "el-Kifâye fî ilmi'r-rivâye",
+      "D": "Tedrîbu'r-râvî",
+      "E": "Nüzhetü'n-nazar"
+    },
+    "ana_konu": "Hadis Usûlü Tarihi",
+    "alt_konu": "Mütekaddimûn Dönemi Usûl Eserleri"
+  },
+  {
+    "soru_no": 5,
+    "soru": "Halîfe Ömer b. Abdülazîz, idaresi altındaki muhtelif bölgelerin yöneticilerine mektuplar göndererek bölgelerinde bilinen hadislerin yazılıp gönderilmesini emretmiş, bunun üzerine de hadisler defter defter yazılıp halifelik merkezine gönderilmiştir. Ömer b. Abdülaziz döneminde sistematik bir şekilde uygulanan bu derleme faaliyeti hangi kavram ile ifade edilmektedir?",
+    "secenekler": {
+      "A": "İsnâd",
+      "B": "Tedvîn",
+      "C": "Tasnîf",
+      "D": "Cerh ve ta'dîl",
+      "E": "Tahrîç"
+    },
+    "ana_konu": "Hadislerin Yazılması ve Derlenmesi",
+    "alt_konu": "Tedvîn Dönemi"
+  },
+  {
+    "soru_no": 6,
+    "soru": "Aşağıdakilerden hangisi hadislerin yazıldığına dair delil olabilecek belgelerden (kaynaklardan) biri değildir?",
+    "secenekler": {
+      "A": "İmtiyâz belgeleri",
+      "B": "Medine sözleşmesi",
+      "C": "Vahiy kâtiplerinin yazılı belgeleri",
+      "D": "Nüfus sayım tutanağı",
+      "E": "Dine çağrı mektupları"
+    },
+    "ana_konu": "Hadislerin Yazılması",
+    "alt_konu": "Hz. Peygamber Döneminde Yazılı Belgeler"
+  },
+  {
+    "soru_no": 7,
+    "soru": "Hadisi ilk rivâyet eden yani mevcut en eski râvîsinden almak (dinlemek) için farklı beldelere yapılan yolculuklar hangi kavram ile ifade edilmektedir?",
+    "secenekler": {
+      "A": "İsnâd",
+      "B": "Usûl",
+      "C": "Tadil",
+      "D": "Kitâbet",
+      "E": "Rihle"
+    },
+    "ana_konu": "Hadis Rivayet Yöntemleri",
+    "alt_konu": "Rihle (Hadis Yolculuğu)"
+  },
+  {
+    "soru_no": 8,
+    "soru": "Aşağıdakilerden hangisi sahabenin hadis rivâyetinde güvenilirliği sağlamak amacıyla uyguladığı önlemlerden biri değildir?",
+    "secenekler": {
+      "A": "Hadisi ilk duyandan almaya çalışma",
+      "B": "Yazılı kaynaklar dışında gelen rivâyetleri almama",
+      "C": "Hadis rivâyet edenden şâhit isteme",
+      "D": "Hadis rivâyetini azaltma",
+      "E": "Hadis rivâyet edene yemin ettirme"
+    },
+    "ana_konu": "Sahabe Dönemi Hadis Rivayeti",
+    "alt_konu": "Sahabenin Rivayet Tedbirleri"
+  },
+  {
+    "soru_no": 9,
+    "soru": "Ale'l-ebvâb sisteminde tasnif edilmiştir. Câmi türünün en önemli çalışmalarındandır. Günümüze Firebrî rivâyeti ile ulaşmıştır. İshak b. Râhûye'nin isteği ile müellif tarafından yazılmaya başlanmıştır. Üzerine en çok şerh yapılan çalışmadır. Yukarıdaki paragrafta hakkında bilgi verilen eser aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Sahih-i Buhârî",
+      "B": "Sünen-i Nesâî",
+      "C": "Müsned-i Ahmed b. Hanbel",
+      "D": "Sahih-i Müslim",
+      "E": "Sünen-i Tirmizî"
+    },
+    "ana_konu": "Temel Hadis Kaynakları",
+    "alt_konu": "Sahih-i Müslim"
+  },
+  {
+    "soru_no": 10,
+    "soru": "Tasnif edebiyatı içerisinde bulunan Hz. Peygamber'in savaşlarına dair rivâyetlerin derlendiği eserlere ne ad verilir?",
+    "secenekler": {
+      "A": "Kitâbu'z-zühd",
+      "B": "Kitâbu'l-fedâil",
+      "C": "Kitâbu'l-âdâb",
+      "D": "Kitâbu'l-imân",
+      "E": "Kitâbu'l-megâzî"
+    },
+    "ana_konu": "Hadis Tasnif Türleri",
+    "alt_konu": "Megâzî Kitapları"
+  },
+  {
+    "soru_no": 11,
+    "soru": "I. Ale'l-ebvâb türü eserlerdir.\nII. Türün en önemli müellifi Taberânî'dir.\nIII. Hadis alınan hocalara göre tasnif edilen Mu'cem'ler \"mu'cemü'ş-şüyûh\" olarak da isimlendirilir.\nMu'cem'ler ile ilgili yukarıdaki yargılardan hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Hadis Tasnif Türleri",
+    "alt_konu": "Mu'cemler"
+  },
+  {
+    "soru_no": 12,
+    "soru": "Tedvîn faaliyetiyle bir araya toplanan hadislerin belirli bir sistematik çerçevesinde râvîlerine ve konularına göre gruplandırılarak daha kullanışlı hale getirilmesi amaçlanmıştır. Bu faaliyet hadis tarihinde hangi aşamayı temsil etmektedir?",
+    "secenekler": {
+      "A": "Tesbit",
+      "B": "Tasnif",
+      "C": "Şerh",
+      "D": "Kitâbet",
+      "E": "Cem"
+    },
+    "ana_konu": "Hadislerin Derlenmesi",
+    "alt_konu": "Tasnif Dönemi"
+  },
+  {
+    "soru_no": 13,
+    "soru": "Daha önce telif edilen herhangi bir hadis kitabında bulunan hadislerin, teker teker ele alınarak kitap sahibinin senedinden başka bir senedle rivâyet edilmesiyle meydana getirilen eser türlerine ne ad verilir?",
+    "secenekler": {
+      "A": "Müstedrek",
+      "B": "Zevâid",
+      "C": "Müstahreç",
+      "D": "Etrâf",
+      "E": "Derleme"
+    },
+    "ana_konu": "Hadis Tasnif Türleri",
+    "alt_konu": "Müstahrec"
+  },
+  {
+    "soru_no": 14,
+    "soru": "Hadislerin baş tarafından bir kısmı zikredilmek suretiyle sahâbe adına veya hadis metinlerine göre alfabetik olarak düzenlenen eserlere ne ad verilir?",
+    "secenekler": {
+      "A": "Etraf",
+      "B": "Tahric",
+      "C": "Müstedrek",
+      "D": "Zevâid",
+      "E": "Cem’"
+    },
+    "ana_konu": "Hadis Tasnif Türleri",
+    "alt_konu": "Etrâf"
+  },
+  {
+    "soru_no": 15,
+    "soru": "I. Belli bir kitap üzerine şerh yazan ilk isim Hattâbî'dir.\nII. Nevevî, Müslim'e şerh yazarken esere bab başlıkları da koymuştur.\nIII. Üzerine en fazla şerh yazılan eser Sahih-i Müslim'dir.\nHadis şerhçiliği ile ilgili yukarıdaki yargılardan hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Hadis Şerhçiliği",
+    "alt_konu": "Şerh Geleneği ve Önemli Şerhler"
+  },
+  {
+    "soru_no": 16,
+    "soru": "Hadisçiler tarafından herhangi bir hadis kitabının bir başka hadis eseri veya eserleriyle karşılaştırılıp birincisinin ikincisinden fazla olarak ihtiva ettiği hadisleri bir araya getiren eserler derlenmiştir. Yukarıdaki paragrafta sözü edilen kitaplar hangi tür içerisinde değerlendirilmektedir?",
+    "secenekler": {
+      "A": "Zevâid",
+      "B": "Müstedrek",
+      "C": "Tahric",
+      "D": "Müstahrec",
+      "E": "Etrâf"
+    },
+    "ana_konu": "Hadis Tasnif Türleri",
+    "alt_konu": "Zevâid"
+  },
+  {
+    "soru_no": 17,
+    "soru": "\"Râmûzü’l-ehâdîs\" isimli eserin müellifi olan Osmanlı dönemi alimi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Zâhid el-Kevserî",
+      "B": "Gümüşhânevî",
+      "C": "Yusufefendizâde",
+      "D": "İmam Birgivî",
+      "E": "İbn Melek"
+    },
+    "ana_konu": "Osmanlı Dönemi Hadis Çalışmaları",
+    "alt_konu": "Osmanlı Hadis Alimleri ve Eserleri"
+  },
+  {
+    "soru_no": 18,
+    "soru": "I. Sünnet, her yerde ve her zaman geçerlidir\nII. Sünnet içeriği açısından mutlak(ideal) sünnet ve yaşayan sünnet şeklinde ikiye ayrılır\nIII. Hadisler teknik hadis, tarihi/biyografik hadis ve dînî hadis olarak kategorize edilir.\nFazlurrahman'ın sünnet anlayışı ile ilgili yukarıda verilen yargılarından hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Modern Dönem Hadis Tartışmaları",
+    "alt_konu": "Fazlurrahman'ın Sünnet Anlayışı"
+  },
+  {
+    "soru_no": 19,
+    "soru": "Diyanet İşleri Başkanlığı, Türk milletinin dinini öğrenebileceği bir Sahîh-i Buhârî Muhasarı’nı tercüme ve şerh ettirerek yeni alfabe ile Türkçeye kazandırma amacıyla Babanzâde Ahmed Naim’i görevlendirmiştir. Ahmed Naim’in başlayıp ancak üç cildini tamamlayabildiği eser Kâmil Miras tarafından tamamlanmış ve Diyanet İşleri Başkanlığı tarafından 1928–1949 yılları arasında 12 cilt olarak basılmıştır. Yukarıdaki bahsedilen çalışmaya kaynak olan Sahih-i Buhârî muhtasarı kime aittir?",
+    "secenekler": {
+      "A": "İbn Hacer el-Askalânî",
+      "B": "Nevevî",
+      "C": "Ahmed Ziyâeddîn Gümüşhânevî",
+      "D": "Molla Gürânî",
+      "E": "Murtaza ez-Zebîdî"
+    },
+    "ana_konu": "Türkiye'de Hadis Çalışmaları",
+    "alt_konu": "Cumhuriyet Dönemi Hadis Tercümeleri"
+  },
+  {
+    "soru_no": 20,
+    "soru": "I. İlk dârülhadis İznik'te kurulmuştur.\nII. Dârülhadislerde İmam Mâlik'in Muvatta'ı temel ders kaynağı idi.\nIII. Molla Gürânî, Sahih-i Buhârî üzerine şerh yazmıştır.\nOsmanlı döneminde hadis ilminde yaşanan gelişmelerle ilgili yukarıdaki yargılardan hangileri doğrudur?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ana_konu": "Osmanlı Dönemi Hadis Çalışmaları",
+    "alt_konu": "Osmanlı'da Dârülhadisler ve Eğitim"
+  }
+]
