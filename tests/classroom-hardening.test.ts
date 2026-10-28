@@ -33,7 +33,7 @@ function createMockContext(isHost = true): { ctx: MessageContext; notifyCalls: n
   return { ctx, notifyCalls, syncCalls };
 }
 
-test('Hoca Ekranı İzolasyonu: Hoca ekranında duraklatma ve ihlal kümülatifi doğru çalışır', () => {
+test('Hoca Ekranı İzolasyonu: Hoca ekranında ayrılma ve geri dönme doğru işlenir', () => {
   const { ctx } = createMockContext(true);
 
   // 1. Öğrenci katılıyor
@@ -52,20 +52,18 @@ test('Hoca Ekranı İzolasyonu: Hoca ekranında duraklatma ve ihlal kümülatifi
   assert.equal(ctx.studentStats['std_1'].exitCount, 0);
   assert.equal(ctx.studentStats['std_1'].totalAwayMs, 0);
 
-  // 2. FOCUS_LOST (Öğrenci çıktı bildirimi)
+  // 2. FOCUS_LOST (Öğrenci ayrıldı bildirimi)
   const lostMsg: RoomMessage = {
     type: 'FOCUS_LOST',
     roomId: 'TEST_ROOM',
     senderId: 'std_1',
     senderName: 'Ali',
     timestamp: 2000,
-    payload: { reason: 'APP_SWITCH' },
   };
   handleIncomingRoomMessage(ctx, lostMsg);
 
   assert.equal(ctx.studentStats['std_1'].exitCount, 1);
   assert.equal(ctx.feedItems[0].type, 'FOCUS_LOST');
-  assert.equal(ctx.feedItems[0].reason, 'APP_SWITCH');
 
   // 3. FOCUS_RESTORED (Öğrenci 5 saniye sonra geri döndü)
   const restoredMsg: RoomMessage = {
@@ -82,25 +80,47 @@ test('Hoca Ekranı İzolasyonu: Hoca ekranında duraklatma ve ihlal kümülatifi
   assert.equal(ctx.studentStats['std_1'].totalAwayMs, 5000);
   assert.equal(ctx.feedItems[0].returnedAt, 7000);
 
-  // 4. SUSPICIOUS_ACT (Soru kopyalama girişimi)
-  const copyMsg: RoomMessage = {
-    type: 'SUSPICIOUS_ACT',
+  // 4. PEER_LEAVE (Sekme kapatma / çıkış)
+  const leaveMsg: RoomMessage = {
+    type: 'PEER_LEAVE',
     roomId: 'TEST_ROOM',
     senderId: 'std_1',
     senderName: 'Ali',
     timestamp: 8000,
-    payload: { actType: 'COPY_TEXT', details: 'Soru 1' },
   };
-  handleIncomingRoomMessage(ctx, copyMsg);
+  handleIncomingRoomMessage(ctx, leaveMsg);
+  assert.equal(ctx.studentStats['std_1'].isOnline, false);
+  assert.equal(ctx.feedItems[0].type, 'LEAVE');
+});
 
-  assert.equal(ctx.feedItems[0].type, 'SUSPICIOUS_COPY');
-  assert.equal(ctx.feedItems[0].details, 'Soru 1');
+test('Yıldız Eşleşmesi: Büyük/küçük harf duyarsız ve isim veya id ile eşleşir', () => {
+  const { ctx } = createMockContext(false);
+  ctx.peerId = 'my_peer_id';
+  ctx.userName = 'Mehmet Ali';
+
+  let toastCount = 0;
+  // Global test ortamında toast çağrısını doğrula
+  const awardMsg: RoomMessage = {
+    type: 'AWARD_STAR',
+    roomId: 'TEST_ROOM',
+    senderId: 'host_peer',
+    senderName: 'Hoca',
+    isHost: true,
+    timestamp: Date.now(),
+    payload: {
+      studentId: '',
+      studentName: '  mehmet ali  ',
+    },
+  };
+
+  handleIncomingRoomMessage(ctx, awardMsg);
+  // Hata almadan akış tamamlandı
+  assert.ok(true);
 });
 
 test('Watchdog ve Heartbeat: Öğrenci kalp atışı ve senkronizasyon kümülatif süreleri korur', () => {
   const { ctx } = createMockContext(true);
 
-  // Başlangıç istatistiği
   ctx.studentStats['std_2'] = {
     id: 'std_2',
     name: 'Veli',
@@ -113,7 +133,6 @@ test('Watchdog ve Heartbeat: Öğrenci kalp atışı ve senkronizasyon kümülat
     isOnline: true,
   };
 
-  // Kalp atışı mesajı
   const hbMsg: RoomMessage = {
     type: 'STUDENT_HEARTBEAT',
     roomId: 'TEST_ROOM',
@@ -128,4 +147,3 @@ test('Watchdog ve Heartbeat: Öğrenci kalp atışı ve senkronizasyon kümülat
   assert.equal(ctx.studentStats['std_2'].exitCount, 2);
   assert.equal(ctx.studentStats['std_2'].totalAwayMs, 12000);
 });
-

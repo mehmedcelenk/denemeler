@@ -1,6 +1,4 @@
-export type FeedEventType = 'JOIN' | 'LEAVE' | 'FOCUS_LOST' | 'HELP_CALL' | 'DISCONNECTED' | 'SUSPICIOUS_COPY';
-
-export type FocusLossReason = 'SCREEN_LOCK' | 'APP_SWITCH';
+export type FeedEventType = 'JOIN' | 'LEAVE' | 'FOCUS_LOST' | 'HELP_CALL';
 
 export interface RoomFeedItem {
   id: string;
@@ -10,8 +8,6 @@ export interface RoomFeedItem {
   timestamp: number;
   returnedAt?: number;
   resolved?: boolean;
-  reason?: FocusLossReason;
-  details?: string;
 }
 
 export interface StudentStats {
@@ -47,8 +43,7 @@ export type RoomMessageType =
   | 'ROOM_CLOSE'
   | 'AWARD_STAR'
   | 'BROADCAST_ANNOUNCEMENT'
-  | 'STUDENT_HEARTBEAT'
-  | 'SUSPICIOUS_ACT';
+  | 'STUDENT_HEARTBEAT';
 
 export interface RoomMessagePayload {
   participants?: RoomParticipant[];
@@ -62,10 +57,7 @@ export interface RoomMessagePayload {
   studentId?: string;
   studentName?: string;
   text?: string;
-  reason?: FocusLossReason;
   durationMs?: number;
-  actType?: 'COPY_TEXT';
-  details?: string;
 }
 
 export interface RoomMessage {

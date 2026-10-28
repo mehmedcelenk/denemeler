@@ -78,6 +78,10 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
         timestamp,
       });
 
+      if (ctx.isHost) {
+        showRoomToast('Katılım', `${senderName} katıldı.`, '🟢');
+      }
+
       const hasAnyHost = ctx.participants.some((p) => p.isHost);
       const isOldestPeer = ctx.participants[0]?.id === ctx.peerId;
       if (ctx.isHost || (!hasAnyHost && isOldestPeer)) {
@@ -88,13 +92,11 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     }
 
     case 'STUDENT_HEARTBEAT': {
-      // Kalp atışı alındı, son görülme ve çevrimiçi durumu yukarıda tazelendi
       ctx.notify();
       break;
     }
 
     case 'ROOM_SYNC': {
-      // Yalnızca hoca veya lider düğümün ROOM_SYNC paketleri kabul edilir
       if (!isSenderHost && ctx.participants.some((p) => p.isHost)) return;
 
       if (msg.payload && Array.isArray(msg.payload.participants)) {
@@ -151,13 +153,15 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     case 'PEER_LEAVE': {
       const idx = ctx.participants.findIndex((p) => p.id === senderId);
       if (idx !== -1) ctx.participants.splice(idx, 1);
-      addFeedItem(ctx.feedItems, {
-        id: `${timestamp}_${senderId}_leave`,
-        type: 'LEAVE',
-        studentId: senderId,
-        studentName: senderName,
-        timestamp,
-      });
+      const stats = ctx.studentStats[senderId];
+      if (stats) {
+        stats.isOnline = false;
+        stats.exitCount = (stats.exitCount || 0) + 1;
+      }
+      addFeedItem(ctx.feedItems, { id: `${timestamp}_${senderId}_leave`, type: 'LEAVE', studentId: senderId, studentName: senderName, timestamp });
+      if (ctx.isHost) {
+        showRoomToast('Ayrıldı', `${senderName} ayrıldı.`, '⚪');
+      }
       ctx.notify();
       break;
     }
@@ -166,9 +170,7 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
       const openLost = ctx.feedItems.find(
         (f) => f.type === 'FOCUS_LOST' && f.studentId === senderId && !f.returnedAt
       );
-      const reason = msg.payload?.reason === 'SCREEN_LOCK' ? 'SCREEN_LOCK' : 'APP_SWITCH';
 
-      // İhlal sayacını artır
       const stats = ctx.studentStats[senderId];
       if (stats) {
         stats.exitCount = (stats.exitCount || 0) + 1;
@@ -181,8 +183,10 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
           studentId: senderId,
           studentName: senderName,
           timestamp,
-          reason,
         });
+        if (ctx.isHost) {
+          showRoomToast('Ayrıldı', `${senderName} uygulamadan ayrıldı.`, '⚪');
+        }
         ctx.notify();
       }
       break;
@@ -197,29 +201,21 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
         : (lastLost ? Math.max(0, timestamp - lastLost.timestamp) : 0);
 
       const stats = ctx.studentStats[senderId];
-      if (stats && durationMs > 0) {
-        stats.totalAwayMs = (stats.totalAwayMs || 0) + durationMs;
+      if (stats) {
+        stats.isOnline = true;
+        if (durationMs > 0) {
+          stats.totalAwayMs = (stats.totalAwayMs || 0) + durationMs;
+        }
       }
 
       if (lastLost) {
         lastLost.returnedAt = timestamp;
+        if (ctx.isHost) {
+          const sec = Math.round(durationMs / 1000);
+          showRoomToast('Geri Döndü', `${senderName} geri döndü (${sec} sn).`, '🟢');
+        }
         ctx.notify();
       }
-      break;
-    }
-
-    case 'SUSPICIOUS_ACT': {
-      // Şüpheli işlem bildirimi (örn. soru metni kopyalama)
-      const details = typeof msg.payload?.details === 'string' ? msg.payload.details.slice(0, 80) : '';
-      addFeedItem(ctx.feedItems, {
-        id: `${timestamp}_${senderId}_suspicious`,
-        type: 'SUSPICIOUS_COPY',
-        studentId: senderId,
-        studentName: senderName,
-        timestamp,
-        details,
-      });
-      ctx.notify();
       break;
     }
 
@@ -236,6 +232,9 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
           timestamp,
           resolved: false,
         });
+        if (ctx.isHost) {
+          showRoomToast('Yardım Çağrısı', `${senderName} el kaldırdı! ✋`, '✋');
+        }
         ctx.notify();
       }
       break;
@@ -246,7 +245,7 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
 
       const isTargetStudent = msg.payload?.studentId
         ? msg.payload.studentId === ctx.peerId
-        : msg.payload?.studentName === ctx.userName;
+        : msg.payload?.studentName?.trim().toLowerCase() === ctx.userName.trim().toLowerCase();
 
       if (isTargetStudent) {
         ctx.setHelpRequested(false);
@@ -275,9 +274,12 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
 
     case 'AWARD_STAR': {
       if (!isSenderHost) return;
-      const isTarget = msg.payload?.studentId
-        ? msg.payload.studentId === ctx.peerId
-        : msg.payload?.studentName === ctx.userName;
+      const myId = ctx.peerId.trim();
+      const myName = ctx.userName.trim().toLowerCase();
+      const targetId = (msg.payload?.studentId || '').trim();
+      const targetName = (msg.payload?.studentName || '').trim().toLowerCase();
+
+      const isTarget = (targetId && targetId === myId) || (targetName && targetName === myName);
 
       if (isTarget) {
         showRoomToast('Tebrikler!', 'Hocandan yıldız aldın! ⭐', '🌟');

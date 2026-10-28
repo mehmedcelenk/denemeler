@@ -60,7 +60,6 @@ function updateTopRoomPill(state: RoomState): void {
 
 function updatePauseOverlay(state: RoomState): void {
   const overlay = document.getElementById('roomPauseOverlay');
-  // ÖNEMLİ DÜZELTME: Pause perdesi sadece ÖĞRENCİDE açılır, hocanın ekranını ASLA kapatmaz!
   if (overlay) {
     overlay.style.display = state.roomId && state.isPaused && !state.isHost ? 'flex' : 'none';
   }
@@ -96,16 +95,7 @@ function renderFeedRow(item: RoomFeedItem): string {
     case 'LEAVE':
       icon = '⚪';
       statusText = 'ayrıldı';
-      break;
-    case 'DISCONNECTED':
-      icon = '⚡';
-      statusText = 'bağlantısı koptu (çevrimdışı)';
       rowClass = 'row-danger';
-      break;
-    case 'SUSPICIOUS_COPY':
-      icon = '📋';
-      statusText = item.details ? `soru kopyaladı: ${escapeHtml(item.details)}` : 'soru metnini kopyaladı';
-      rowClass = 'row-warning';
       break;
     case 'FOCUS_LOST':
       if (item.returnedAt) {
@@ -115,9 +105,8 @@ function renderFeedRow(item: RoomFeedItem): string {
         statusText = `ayrıldı, geri döndü (${diffSec} sn sonra - ${returnedTime})`;
         rowClass = 'row-warning';
       } else {
-        const reasonBadge = item.reason === 'SCREEN_LOCK' ? '📱 Ekran kapandı/kilitlendi' : '🚨 Uygulamadan ayrıldı';
-        icon = item.reason === 'SCREEN_LOCK' ? '📱' : '🚨';
-        statusText = reasonBadge;
+        icon = '⚪';
+        statusText = 'ayrıldı';
         rowClass = 'row-danger';
       }
       break;
@@ -168,7 +157,7 @@ function renderStudentStatRow(s: StudentStats): string {
     ? `<span class="stat-violation" style="color:#ef4444; font-weight:700;" title="Toplam ${exitCount} kez ayrıldı (Dışarıda: ${awayStr})">🚨 ${exitCount} çıkış (${awayStr})</span>`
     : `<span class="stat-clean" style="color:#10b981;" title="Hiç ayrılmadı">🛡️ 0 ihlal</span>`;
 
-  const onlineDot = s.isOnline !== false ? '🟢' : '⚪ (Koptu)';
+  const onlineDot = s.isOnline !== false ? '🟢' : '⚪ (Ayrıldı)';
 
   return `<div class="student-stat-row">
     <div style="display:flex; flex-direction:column; gap:2px;">
@@ -315,7 +304,15 @@ function setupRoomEvents(): void {
         break;
       case 'award-star':
         if (actionEl.dataset.id || actionEl.dataset.name) {
-          roomService.awardStarToStudent(actionEl.dataset.id || actionEl.dataset.name || '');
+          const btn = actionEl as HTMLButtonElement;
+          const origText = btn.textContent;
+          btn.textContent = '⭐ Gönderildi';
+          btn.disabled = true;
+          setTimeout(() => {
+            btn.textContent = origText;
+            btn.disabled = false;
+          }, 1200);
+          roomService.awardStarToStudent(actionEl.dataset.id || '', actionEl.dataset.name || '');
         }
         break;
       case 'send-broadcast-message': {

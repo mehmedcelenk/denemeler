@@ -1,17 +1,14 @@
 import { roomService } from './room-service.ts';
 import { handleVisibilityChangeForWakeLock } from './wake-lock.ts';
-import type { FocusLossReason } from './types.ts';
 
 let isListening = false;
 let isCurrentlyLost = false;
 let pollIntervalTimer: ReturnType<typeof setInterval> | null = null;
 let graceTimer: ReturnType<typeof setTimeout> | null = null;
 let focusLostStartTimestamp: number = 0;
-let lastHeartbeatRafTime: number = 0;
-let detectedReason: FocusLossReason = 'APP_SWITCH';
 
-// 4 saniyelik tolerans penceresi (anlık bildirim kaydırması, klavye açılması vb. yanlış alarmları önler)
-const GRACE_PERIOD_MS = 4000;
+// Sayfa yenileme (F5/Reload) anındaki anlık sıçramayı yutacak kadar (1.2 saniye)
+const RELOAD_GRACE_PERIOD_MS = 1200;
 
 export function initFocusTracker(): void {
   if (isListening || typeof document === 'undefined') return;
@@ -35,13 +32,13 @@ export function initFocusTracker(): void {
       triggerPotentialFocusRestored();
     });
 
-    window.addEventListener('pagehide', () => {
-      triggerPotentialFocusLoss();
+    // Sekme kapatılırken veya sayfadan çıkılırken anında kesin ayrılma bildirimi
+    window.addEventListener('beforeunload', () => {
+      handleImmediateUnload();
     });
 
-    // Soru kopyalama tespiti (Şüpheli hareket)
-    document.addEventListener('copy', (e) => {
-      handleCopyAttempt(e);
+    window.addEventListener('pagehide', () => {
+      handleImmediateUnload();
     });
 
     // Mola bittiğinde öğrenci dışarıdaysa anında yakala
@@ -49,7 +46,7 @@ export function initFocusTracker(): void {
       checkFocusAfterResume();
     });
 
-    // Mobil ve tabletlerde split-screen / floating window kontrolü (her 2 sn yoklama)
+    // Mobil ve tabletlerde split-screen / floating window kontrolü (her 1.5 sn yoklama)
     pollIntervalTimer = setInterval(() => {
       const state = roomService.getState();
       if (!state.roomId || state.isPaused) return;
@@ -60,49 +57,26 @@ export function initFocusTracker(): void {
       } else if (!document.hidden && (!isUnfocused || typeof document.hasFocus !== 'function') && (isCurrentlyLost || graceTimer)) {
         triggerPotentialFocusRestored();
       }
-    }, 2000);
-
-    // Arka plan JS dondurma / ekran kilitlenmesi tespiti için hafif kalp atışı
-    startRafHeartbeat();
+    }, 1500);
   }
 }
 
-function startRafHeartbeat(): void {
-  if (typeof window === 'undefined') return;
-  const loop = (now: number) => {
-    lastHeartbeatRafTime = now;
-    requestAnimationFrame(loop);
-  };
-  requestAnimationFrame(loop);
-}
-
-function detectLossReason(): FocusLossReason {
-  // Eğer ekran kapandıysa / telefon uykuya girdiyse requestAnimationFrame hemen dondurulur
-  // ve uyanırken geçen süre sıçrar. Sekme değiştirildiğinde ise Chrome RAF'ı saniyede 1 çağırır.
-  if (typeof document !== 'undefined' && document.hidden) {
-    return 'APP_SWITCH';
-  }
-  return 'APP_SWITCH';
-}
-
-function handleCopyAttempt(e: ClipboardEvent): void {
+function handleImmediateUnload(): void {
   const state = roomService.getState();
-  if (!state.roomId || state.isHost) return;
-
-  const target = e.target as HTMLElement | null;
-  const isQuestionArea = target?.closest('.question-card, .stem-box, .q-text, #bookletMain');
-  if (isQuestionArea) {
-    const selection = window.getSelection()?.toString().trim() || '';
-    const details = selection ? `"${selection.slice(0, 40)}..."` : 'Soru metni kopyalandı';
-    roomService.notifySuspiciousAct('COPY_TEXT', details);
+  if (!state.roomId) return;
+  if (graceTimer) {
+    clearTimeout(graceTimer);
+    graceTimer = null;
   }
+  // Sekme kapandığında soket kapanmadan hemen önce PEER_LEAVE sinyalini gönder
+  roomService.leaveRoom();
 }
 
 export function checkFocusAfterResume(): void {
   if (typeof document === 'undefined') return;
   const isUnfocused = typeof document.hasFocus === 'function' ? !document.hasFocus() : false;
   if (document.hidden || isUnfocused) {
-    triggerPotentialFocusLoss(true); // mola bittiğinde toleranssız anında tetikle
+    triggerPotentialFocusLoss(true);
   }
 }
 
@@ -110,7 +84,6 @@ function triggerPotentialFocusLoss(immediate: boolean = false): void {
   const state = roomService.getState();
   if (!state.roomId || state.isPaused || isCurrentlyLost) return;
 
-  detectedReason = detectLossReason();
   const lostAt = Date.now();
 
   if (immediate) {
@@ -124,7 +97,7 @@ function triggerPotentialFocusLoss(immediate: boolean = false): void {
   graceTimer = setTimeout(() => {
     graceTimer = null;
     confirmFocusLoss(focusLostStartTimestamp);
-  }, GRACE_PERIOD_MS);
+  }, RELOAD_GRACE_PERIOD_MS);
 }
 
 function confirmFocusLoss(lostAt: number): void {
@@ -132,11 +105,11 @@ function confirmFocusLoss(lostAt: number): void {
   if (!state.roomId || state.isPaused || isCurrentlyLost) return;
 
   isCurrentlyLost = true;
-  roomService.notifyFocusLost(detectedReason, lostAt);
+  roomService.notifyFocusLost(lostAt);
 }
 
 function triggerPotentialFocusRestored(): void {
-  // Eğer 4 sn tolerans dolmadan geri döndüyse alarmı iptal et
+  // Eğer reload / 1.2 sn içinde geri döndüyse alarmı iptal et
   if (graceTimer) {
     clearTimeout(graceTimer);
     graceTimer = null;

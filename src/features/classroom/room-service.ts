@@ -1,8 +1,9 @@
-import type { FocusLossReason, RoomMessage, RoomMessagePayload, RoomMessageType, RoomState } from './types.ts';
+import type { RoomMessage, RoomMessagePayload, RoomMessageType, RoomState } from './types.ts';
 import { roomChannel } from './room-channel.ts';
 import { addFeedItem, handleIncomingRoomMessage } from './message-handler.ts';
 import { clearRoomSession, loadRoomSession, saveRoomSession } from './session-store.ts';
 import { releaseScreenWakeLock, requestScreenWakeLock } from './wake-lock.ts';
+import { showRoomToast } from './toast.ts';
 
 type Listener = (state: RoomState) => void;
 type ResumeCallback = () => void;
@@ -112,12 +113,13 @@ class RoomService {
     this.leaveRoom();
   }
 
-  awardStarToStudent(studentIdOrName: string): void {
+  awardStarToStudent(studentId: string, studentName: string): void {
     if (!this.state.roomId || !this.state.isHost) return;
-    const target = this.state.participants.find((p) => p.id === studentIdOrName || p.name === studentIdOrName);
+    const cleanId = studentId.trim();
+    const cleanName = studentName.trim();
     this.emit('AWARD_STAR', {
-      studentId: target?.id ?? studentIdOrName,
-      studentName: target?.name ?? studentIdOrName,
+      studentId: cleanId,
+      studentName: cleanName,
     });
   }
 
@@ -150,7 +152,7 @@ class RoomService {
     this.emit('HELP_RESOLVED', { feedId, studentId: studentIdOrName, studentName: studentIdOrName });
   }
 
-  notifyFocusLost(reason: FocusLossReason = 'APP_SWITCH', timestamp = Date.now()): void {
+  notifyFocusLost(timestamp = Date.now()): void {
     if (!this.state.roomId || this.state.isPaused) return;
     const openLost = this.state.feedItems.find((f) => f.type === 'FOCUS_LOST' && f.studentId === this.peerId && !f.returnedAt);
     if (openLost) return;
@@ -160,9 +162,9 @@ class RoomService {
       stats.exitCount = (stats.exitCount || 0) + 1;
     }
 
-    addFeedItem(this.state.feedItems, { id: `${timestamp}_${this.peerId}_lost`, type: 'FOCUS_LOST', studentId: this.peerId, studentName: this.state.userName, timestamp, reason });
+    addFeedItem(this.state.feedItems, { id: `${timestamp}_${this.peerId}_lost`, type: 'FOCUS_LOST', studentId: this.peerId, studentName: this.state.userName, timestamp });
     this.notify();
-    this.emit('FOCUS_LOST', { reason }, timestamp);
+    this.emit('FOCUS_LOST', undefined, timestamp);
   }
 
   notifyFocusRestored(durationMs: number = 0, timestamp = Date.now()): void {
@@ -177,21 +179,6 @@ class RoomService {
     }
     this.notify();
     this.emit('FOCUS_RESTORED', { durationMs }, timestamp);
-  }
-
-  notifySuspiciousAct(actType: 'COPY_TEXT', details: string): void {
-    if (!this.state.roomId || this.state.isHost) return;
-    const now = Date.now();
-    addFeedItem(this.state.feedItems, {
-      id: `${now}_${this.peerId}_suspicious`,
-      type: 'SUSPICIOUS_COPY',
-      studentId: this.peerId,
-      studentName: this.state.userName,
-      timestamp: now,
-      details,
-    });
-    this.notify();
-    this.emit('SUSPICIOUS_ACT', { actType, details }, now);
   }
 
   logStudentAnswer(questionId: number, isCorrect: boolean): void {
@@ -284,32 +271,33 @@ class RoomService {
       const now = Date.now();
 
       if (this.state.isHost) {
-        // Hoca: Odayı senkronize et ve 22 sn'dir sinyal vermeyen öğrencileri kontrol et (Watchdog)
+        // Hoca: Odayı senkronize et ve 18 sn'dir sinyal vermeyen öğrencileri ayrıldı olarak işaretle
         this.checkOfflineStudents(now);
         this.broadcastRoomSync();
       } else {
         // Öğrenci: Hocaya hafif kalp atışı sinyali gönder
         this.emit('STUDENT_HEARTBEAT', undefined, now);
       }
-    }, 10000);
+    }, 8000);
   }
 
   private checkOfflineStudents(now: number): void {
     let changed = false;
     for (const [id, stats] of Object.entries(this.state.studentStats)) {
       const lastSeen = stats.lastSeenAt || stats.joinedAt;
-      const isCurrentlyOnline = (now - lastSeen) < 22000;
+      const isCurrentlyOnline = (now - lastSeen) < 18000;
       if (stats.isOnline !== isCurrentlyOnline) {
         stats.isOnline = isCurrentlyOnline;
         changed = true;
         if (!isCurrentlyOnline) {
           addFeedItem(this.state.feedItems, {
-            id: `${now}_${id}_disconnect`,
-            type: 'DISCONNECTED',
+            id: `${now}_${id}_offline`,
+            type: 'LEAVE',
             studentId: id,
             studentName: stats.name,
             timestamp: now,
           });
+          showRoomToast('Öğrenci Ayrıldı', `${stats.name} oturumdan ayrıldı.`, '⚪');
         }
       }
     }
