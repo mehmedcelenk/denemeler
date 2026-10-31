@@ -11,7 +11,7 @@ const storageKeysPath = path.join(root, 'shared', 'storage-keys.ts');
 const storageGatewayPath = path.join(root, 'app', 'storage.ts');
 const CORE_FEATURES = new Set(['answers', 'booklet', 'subjects', 'appearance']);
 const PLUGINS = new Set([
-  'classroom', 'gamification', 'library', 'english', 'audio', 'ai-tutor',
+  'classroom', 'gamification', 'library', 'english',
   'tde', 'formulas', 'board', 'print', 'prayer', 'annotations', 'search',
 ]);
 

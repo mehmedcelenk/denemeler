@@ -36,8 +36,6 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Cevap ve ipucu gösterme | `src/features/answers/marking.ts` |
 | Cevapların kalıcı kaydı | `src/features/answers/storage.ts` |
 | Seri ve kombo bildirimleri | `src/features/gamification/combo-toast.ts` & `src/shared/combo.ts` |
-| Ses/TTS Motorları (1/2/3) & Spiker Cinsiyeti | `src/features/audio/speech-service.ts`, `providers/` & `voice-gender.ts`; `speech-provider.ts` uyumlu dışa aktarım noktasıdır |
-| Edge TTS route ve sağlayıcıları | `functions/api/tts.ts` & `edge/tts-providers.ts` (yardımcılar route dizininin dışındadır) |
 | Kelime balonu | `src/features/english/vocabulary.js` |
 | Kelime meali (satır arası çeviri) | `src/features/english/interlinear.ts` |
 | Çeviri/röntgen/tuzak açıklaması | `src/features/english/translations.js` |
@@ -46,7 +44,6 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Ezan sayacı | `src/features/prayer/prayer.js` |
 | Sınıf oturumu & odak takibi | `src/features/classroom/room-service.ts`, `message-handlers/`, `offline-students.ts` & `teacher-view.ts` |
 | Tahta görünümü & etkileşimleri | `src/features/board/board-mode.ts` & `board-view.ts` |
-| AI Soru Asistanı ("Hocaya Sor") | `src/features/ai-tutor/ai-tutor.ts` & `functions/api/ask-ai.ts` |
 | CSS | `src/styles/` altında ilgili özellik dosyası; büyük stil girişleri sıralı `@import` ile bileşen parçalarını yükler |
 
 ## Çalışma akışı

@@ -203,42 +203,6 @@ test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı güncell
   await expect(page.locator('.booklet-question').first()).toBeVisible();
 });
 
-test('AI Soru Asistanı: özellik çubuğundan soru sorulur, bildirim noktası F5 sonrası korunur ve kaydırılabilir balon açılır', async ({ page }) => {
-  await page.goto('/');
-  const firstCard = page.locator('.booklet-question:not(.is-passive-question)').first();
-  await expect(firstCard).toBeVisible();
-  const qid = await firstCard.getAttribute('data-qid');
-
-  // 1. Özellik çubuğunu aç ve AI butonuna tıkla
-  await firstCard.locator('[data-action="toggle-question-features"]').click();
-  const aiBtn = firstCard.locator(`#btnAiAsk_${qid}`);
-  await expect(aiBtn).toBeVisible();
-  await aiBtn.click();
-
-  // 2. Soru kutusuna metin yaz ve gönder
-  const askBox = firstCard.locator(`#aiAskBox_${qid}`);
-  await expect(askBox).toBeVisible();
-  const input = firstCard.locator(`#aiAskInput_${qid}`);
-  await input.fill('Tanzimat ne demek?');
-  await firstCard.locator(`[data-action="submit-ai-ask"]`).click();
-
-  // 3. Bildirim noktası (.has-ai-reply) ve soru altı chat yanıt kartı görünür olmalı
-  const qNum = firstCard.locator(`#qnum_${qid}`);
-  await expect(qNum).toHaveClass(/has-ai-reply/, { timeout: 15000 });
-  const chatCard = firstCard.locator(`#aiChatReply_${qid}`);
-  await expect(chatCard).toBeVisible();
-  await expect(chatCard.locator('.ai-bubble-user')).toContainText('Tanzimat ne demek?');
-
-  // 4. Sayfayı yenileyince (F5) bildirim noktası korunmalı ve soru numarasına tıklayınca soru altındaki AI sohbet alanı açılmalı
-  await page.reload();
-  const reloadedQNum = page.locator(`#qnum_${qid}`);
-  await expect(reloadedQNum).toHaveClass(/has-ai-reply/);
-  await reloadedQNum.click();
-  const reloadedChatCard = page.locator(`#aiChatReply_${qid}`);
-  await expect(reloadedChatCard).toBeVisible();
-  await expect(reloadedChatCard.locator('.ai-bubble-user')).toContainText('Tanzimat ne demek?');
-});
-
 test('feature bar sayfa açılışında kapalıdır ve tek tıkla açılıp tek tıkla kapanır', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('.booklet-question').first()).toBeVisible();

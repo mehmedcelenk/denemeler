@@ -19,5 +19,4 @@ export {
   updateFeaturesBarUI,
   eliminateOneWrongChoice,
   copyQuestionText,
-  toggleSpeakQuestion,
 } from '../booklet/features-bar.ts';

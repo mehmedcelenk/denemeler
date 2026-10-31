@@ -14,7 +14,6 @@ import {
 const svgEye = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`;
 const svgBoard = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>`;
 const svgStar = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
-const svgAstrolabe = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="3.2" r="1.7"/><path d="M10 5.4c.6-.3 1.3-.4 2-.4s1.4.1 2 .4"/><circle cx="12" cy="13.5" r="7.5"/><circle cx="12" cy="13.5" r="4.2"/><line x1="6.8" y1="18.7" x2="17.2" y2="8.3"/><circle cx="12" cy="13.5" r="1" fill="currentColor"/></svg>`;
 const svgEliminate = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>`;
 const svgCopy = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`;
 /** Soru kartının üst başlık satırını ve araç butonlarını üretir. */
@@ -73,27 +72,14 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
     </button>
   `;
 
-  const hasAiReply = Boolean(state.aiExplanations && state.aiExplanations[q.id]);
-  const isAiPending = Boolean(state.pendingAiQuestions && state.pendingAiQuestions.has(q.id));
-  const aiAskBtnHtml = isPassive ? '' : `
-    <button class="btn-companion-icon btn-ai-ask ${hasAiReply ? 'has-ai-reply' : ''}" id="btnAiAsk_${q.id}" data-action="toggle-ai-ask" data-qid="${q.id}" title="Numûne-i Hiyel">
-      ${svgAstrolabe}
-    </button>
-  `;
-
   const isExpanded = Boolean(state.isFeaturesExpanded) || (Boolean(state.expandedQuestionIds) && state.expandedQuestionIds.has(q.id));
   const pointsStr = typeof q.puan === 'number' ? q.puan.toFixed(2) : '5.00';
   const krediStr = q.kredi ? String(q.kredi) : '2';
 
-  const qNumClasses = ['q-number'];
-  if (hasAiReply) qNumClasses.push('has-ai-reply');
-  if (isAiPending) qNumClasses.push('is-ai-pending');
-
   return `
     <div class="q-top-row">
       <div class="q-header-meta">
-        <span class="${qNumClasses.join(' ')}" id="qnum_${q.id}" data-action="show-ai-reply" data-qid="${q.id}" title="${hasAiReply ? 'Numûne-i Hiyel yanıtını görmek için dokun' : ''}">
-          <span class="q-ai-notify-dot" id="aidot_${q.id}"></span>
+        <span class="q-number" id="qnum_${q.id}">
           ${globalIdx}.
         </span>
         ${soonBadge}
@@ -108,7 +94,6 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
         ${toolbarExtraHtml}
         ${grammarTogglesHtml}
         ${eliminateWrongBtnHtml}
-        ${aiAskBtnHtml}
         ${starBtnHtml}
         ${copyBtnHtml}
         ${eyeBtnHtml}
@@ -218,37 +203,12 @@ export function renderCardBanners(q: Question, isPassive: boolean): string {
     ? `${escapeHtml(q.ana_konu)} <span class="topic-slash">/</span> ${escapeHtml(q.alt_konu)}`
     : escapeHtml(q.alt_konu || q.ana_konu || '');
 
-  const answerBannerHtml = `
+  return `
     <div class="single-answer-banner" id="banner_${q.id}" style="display:${bannerDisplay};">
       <span>Doğru Cevap: <strong style="color:var(--brand-accent); font-size:13px;">${q.dogru_cevap}</strong></span>
       <span style="opacity:0.85; font-size:10.5px;">${topicLabel}</span>
     </div>
   `;
-
-  const aiAskBoxHtml = isPassive ? '' : `
-    <div class="single-ai-ask-box" id="aiAskBox_${q.id}" style="display:none;">
-      <div class="ai-ask-row">
-        <div class="ai-ask-input-wrap">
-          <input type="text" class="ai-ask-input" id="aiAskInput_${q.id}" data-qid="${q.id}" maxlength="250" placeholder="Numûne-i Hiyel'e danış (kilit kavram, yöntem)..." />
-          <button type="button" class="btn-ai-submit" data-action="submit-ai-ask" data-qid="${q.id}">Sor</button>
-        </div>
-        <button type="button" class="btn-ai-box-close" data-action="close-ai-box" data-qid="${q.id}" title="Kapat" aria-label="Kapat">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-      </div>
-      <div class="ai-quick-chips">
-        <button type="button" class="ai-chip-btn" data-action="use-ai-chip" data-qid="${q.id}" data-prompt="Kilit kavram ne?">Kilit kavram ne?</button>
-        <button type="button" class="ai-chip-btn" data-action="use-ai-chip" data-qid="${q.id}" data-prompt="Çeldirici nerede?">Çeldirici nerede?</button>
-        <button type="button" class="ai-chip-btn" data-action="use-ai-chip" data-qid="${q.id}" data-prompt="Soru benden ne istiyor?">Soru ne istiyor?</button>
-        <button type="button" class="ai-chip-btn" data-action="use-ai-chip" data-qid="${q.id}" data-prompt="Kısa konu özeti">Kısa konu özeti</button>
-        <button type="button" class="ai-chip-btn" data-action="use-ai-chip" data-qid="${q.id}" data-prompt="Çözüm yöntemi">Çözüm yöntemi</button>
-        <button type="button" class="ai-chip-btn" data-action="use-ai-chip" data-qid="${q.id}" data-prompt="Neye dikkat etmeliyim?">Neye dikkat etmeli?</button>
-      </div>
-      <div class="ai-chat-reply-card" id="aiChatReply_${q.id}" style="display:none;"></div>
-    </div>
-  `;
-
-  return `${aiAskBoxHtml}${answerBannerHtml}`;
 }
 
 /** Tek bir sorunun tam kitapçık kartı HTML'ini üretir. */

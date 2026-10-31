@@ -158,24 +158,6 @@ export async function copyQuestionText(qId: number | string, event?: Event): Pro
 }
 
 /**
- * Soru metnini ve şıklarını sesli olarak okur veya çalıyorsa durdurur.
- */
-export async function toggleSpeakQuestion(qId: number | string, event?: Event): Promise<boolean> {
-  if (event) {
-    event.stopPropagation();
-    event.preventDefault();
-  }
-  const id = Number(qId);
-  if (isNaN(id)) return false;
-
-  const q = state.bookletQuestions.find(item => item.id === id) || state.allData.find(item => item.id === id);
-  if (!q) return false;
-
-  notifyStateChange('audio:speak', q);
-  return true;
-}
-
-/**
  * Test: Türkçe dil bilgisi röntgen katmanlarını (syntax, pos, sound) bağımsız açar / kapatır.
  */
 export function toggleGrammarLayer(qId: number | string, layer: 'syntax' | 'pos' | 'sound', event?: Event): void {

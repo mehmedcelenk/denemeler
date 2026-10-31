@@ -8,7 +8,6 @@ export type StateEventType =
   | 'answer:marked'
   | 'answer:revoked'
   | 'answer:reveal'
-  | 'audio:speak'
   | 'print:before'
   | 'print:after'
   | 'view-mode:updated'
