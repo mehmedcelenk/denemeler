@@ -1,0 +1,191 @@
+/* ========================================================= */
+/* 7. BASKI & PDF STİLLERİ (@media print)                    */
+/* ========================================================= */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  /* 1. Renk Değişkenlerini Tam Siyah-Beyaz Baskıya Zorla */
+  :root, body, body.dark-mode {
+    --ambient-bg: #ffffff !important;
+    --paper-bg: #ffffff !important;
+    --paper-text: #000000 !important;
+    --paper-text-muted: #111111 !important;
+    --paper-border: #000000 !important;
+    --paper-rule: #000000 !important;
+    --bubble-border: #000000 !important;
+    --bubble-text: #000000 !important;
+    --hud-bg: transparent !important;
+    --hud-text: #000000 !important;
+    --brand-accent: #000000 !important;
+  }
+
+  /* 2. PDF Rasterizasyon (Silikleşme/Fuzzy) ve Katman Oluşumunu Engelle */
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  #bookletPagesContainer,
+  .booklet-stream-container,
+  .booklet-page,
+  .booklet-question,
+  .page-columns-body,
+  .page-header-band,
+  .page-footer-band,
+  .optical-choice-row,
+  .optical-bubble,
+  .choice-text-content,
+  .stem-card,
+  .stem-text,
+  .katex,
+  .katex-display,
+  div, p, span, strong, em, h1, h2, h3, h4, h5, h6 {
+    will-change: auto !important;
+    transform: none !important;
+  }
+
+  /* 3. Tüm Metinleri Saf Net Siyah Vector Tipografiye Ayarla */
+  body,
+  .booklet-page,
+  .booklet-question,
+  .q-number,
+  .stem-card,
+  .stem-text,
+  .choice-text-content,
+  .institution-name,
+  .exam-name-title,
+  .page-header-band,
+  .page-footer-band,
+  .page-badge-code,
+  .page-num-pill,
+  .mini-key-cell,
+  .katex,
+  .katex *,
+  p, span, strong, em, div {
+    color: #000000 !important;
+    opacity: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: geometricPrecision !important;
+  }
+
+  /* 4. Ekran Elemanlarını Gizle */
+  .top-center-badge-container,
+  .floating-console-container,
+  .drawer-overlay,
+  .pdf-dialog-overlay,
+  .btn-companion-icon,
+  .btn-page-key-toggle,
+  .q-soon-badge,
+  .q-soon-banner,
+  .booklet-zoom-indicator,
+  .single-answer-banner {
+    display: none !important;
+  }
+
+  /* 5. A4 Kitapçık Yapısı ve Kenarlıklar */
+  .booklet-stream-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  .booklet-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    padding: 30px 34px 22px !important;
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .booklet-question {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .page-header-band {
+    border-bottom: 2px solid #000000 !important;
+  }
+
+  .page-footer-band {
+    border-top: 1px solid #000000 !important;
+  }
+
+  .page-columns-body.cols-2,
+  .page-columns-body.cols-3,
+  .page-columns-body.cols-4 {
+    column-rule: 1px solid #666666 !important;
+  }
+
+  /* 6. Optik Şıklar ve İşaretlemeler */
+  .optical-choice-row {
+    background: transparent !important;
+    opacity: 1 !important;
+  }
+
+  .optical-bubble {
+    border: 1.5px solid #000000 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    opacity: 1 !important;
+  }
+
+  .optical-choice-row.marked .optical-bubble,
+  .optical-choice-row.marked-correct .optical-bubble,
+  .optical-choice-row.marked-incorrect .optical-bubble,
+  .optical-choice-row.revealed-correct .optical-bubble {
+    background: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  .optical-choice-row.marked-correct,
+  .optical-choice-row.marked-incorrect,
+  .optical-choice-row.revealed-correct {
+    background: transparent !important;
+  }
+
+  /* 7. Rozetler, Röntgen & Sözlük Vurguları */
+  .edeb-entity-badge,
+  .divan-vocab-badge,
+  .xray-sub,
+  .xray-verb,
+  .xray-obj,
+  .xray-adv,
+  .xray-speaker {
+    color: #000000 !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+  }
+
+  .single-formula-banner,
+  .single-trap-banner,
+  .edebiyat-mini-bubble,
+  .divan-glass-bubble {
+    color: #000000 !important;
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    opacity: 1 !important;
+  }
+}

@@ -1,4 +1,6 @@
 import { state, notifyStateChange } from '../../app/state.ts';
+import { readJson, writeJson } from '../../app/storage.ts';
+import { StorageKeys } from '../../shared/storage-keys.ts';
 
 interface SessionSnapshot {
   subject: string;
@@ -6,30 +8,22 @@ interface SessionSnapshot {
   timestamp: number;
 }
 
-const STORAGE_KEY = 'aol_last_session';
+function isSessionSnapshot(value: unknown): value is SessionSnapshot {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
+  const snapshot = value as Record<string, unknown>;
+  return typeof snapshot.subject === 'string'
+    && typeof snapshot.timestamp === 'number'
+    && (snapshot.questionId === undefined || typeof snapshot.questionId === 'number');
+}
 
 export function saveSessionSnapshot(subject: string, questionId?: number): void {
   if (!subject) return;
-  try {
-    const snapshot: SessionSnapshot = {
-      subject,
-      questionId,
-      timestamp: Date.now(),
-    };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
-  } catch (e) {
-    console.error('Oturum kaydedilemedi:', e);
-  }
+  const snapshot: SessionSnapshot = { subject, questionId, timestamp: Date.now() };
+  if (!writeJson(StorageKeys.RESUME_STATE, snapshot)) console.error('Oturum kaydedilemedi.');
 }
 
 export function loadSessionSnapshot(): SessionSnapshot | null {
-  try {
-    const data = localStorage.getItem(STORAGE_KEY);
-    if (!data) return null;
-    return JSON.parse(data) as SessionSnapshot;
-  } catch (e) {
-    return null;
-  }
+  return readJson(StorageKeys.RESUME_STATE, isSessionSnapshot, null);
 }
 
 export function initResumeBanner(): void {

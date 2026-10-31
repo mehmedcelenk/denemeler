@@ -89,8 +89,14 @@ test('features-bar: toggleQuestionFeatures tek tıkla açar, ikinci tıkla kapat
 
 test('CSS sözleşmesi: kavram balonlarında alt çizgi yoktur ve ses olayları emoji/ikon rozetleri içerir', async () => {
   const fs = await import('node:fs');
+  const { preprocessCSS, resolveConfig } = await import('vite');
+  const cssConfig = await resolveConfig({ configFile: false, envDir: false }, 'build');
   const englishCss = fs.readFileSync('src/styles/english.css', 'utf-8');
-  const translationsCss = fs.readFileSync('src/styles/translations.css', 'utf-8');
+  const { code: translationsCss } = await preprocessCSS(
+    fs.readFileSync('src/styles/translations.css', 'utf-8'),
+    'src/styles/translations.css',
+    cssConfig,
+  );
 
   // Kavram balonlarında alt çizgi kaldırılmış olmalı
   assert.ok(englishCss.includes('.vocab-word.concept-word'), 'concept-word sınıfı mevcut olmalı');

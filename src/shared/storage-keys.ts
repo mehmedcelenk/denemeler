@@ -8,9 +8,12 @@ export const StorageKeys = {
   COLUMN_COUNT: 'aol_column_count',
   USER_CHOICES: 'aol_user_choices',
   STARRED_QUESTIONS: 'aol_starred_questions',
-  REMATCH_QUESTIONS: 'aol_rematch_questions',
+  REMATCH_QUESTIONS: 'aol_rematch_queue',
   WATER_STREAK: 'aol_water_streak',
-  RESUME_STATE: 'aol_resume_state',
+  LAST_STREAK_DATE: 'aol_last_streak_date',
+  RESUME_STATE: 'aol_last_session',
+  CLASSROOM_SESSION: 'aol_classroom_session',
+  CLASSROOM_CHANNEL_PREFIX: 'aol_room_',
   TTS_GENDER: 'aol_tts_gender',
   TTS_ENGINE: 'aol_tts_engine',
   ELIMINATED_CHOICES: 'aol_eliminated_choices',
@@ -18,5 +21,7 @@ export const StorageKeys = {
   AI_EXPLANATIONS: 'aol_ai_explanations',
 } as const;
 
-export type StorageKey = typeof StorageKeys[keyof typeof StorageKeys];
+type FixedStorageKey = typeof StorageKeys[keyof typeof StorageKeys];
+export type ClassroomSyncStorageKey = `sync_${typeof StorageKeys.CLASSROOM_CHANNEL_PREFIX}${string}`;
+export type StorageKey = FixedStorageKey | ClassroomSyncStorageKey;
 

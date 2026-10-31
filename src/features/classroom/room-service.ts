@@ -1,23 +1,13 @@
+import { INITIAL_ROOM_STATE } from './initial-state.ts';
 import type { RoomMessage, RoomMessagePayload, RoomMessageType, RoomState } from './types.ts';
 import { roomChannel } from './room-channel.ts';
 import { addFeedItem, handleIncomingRoomMessage } from './message-handler.ts';
 import { clearRoomSession, loadRoomSession, saveRoomSession } from './session-store.ts';
 import { releaseScreenWakeLock, requestScreenWakeLock } from './wake-lock.ts';
-import { showRoomToast } from './toast.ts';
+import { checkOfflineStudents } from './offline-students.ts';
 
 type Listener = (state: RoomState) => void;
 type ResumeCallback = () => void;
-
-const INITIAL_ROOM_STATE: RoomState = {
-  roomId: null,
-  userName: '',
-  isHost: false,
-  isPaused: false,
-  participants: [],
-  feedItems: [],
-  studentStats: {},
-  helpRequested: false,
-};
 
 class RoomService {
   private peerId: string = Math.random().toString(36).substring(2, 9);
@@ -272,38 +262,13 @@ class RoomService {
 
       if (this.state.isHost) {
         // Hoca: Odayı senkronize et ve 18 sn'dir sinyal vermeyen öğrencileri ayrıldı olarak işaretle
-        this.checkOfflineStudents(now);
+        if (checkOfflineStudents(this.state, now)) this.notify();
         this.broadcastRoomSync();
       } else {
         // Öğrenci: Hocaya hafif kalp atışı sinyali gönder
         this.emit('STUDENT_HEARTBEAT', undefined, now);
       }
     }, 8000);
-  }
-
-  private checkOfflineStudents(now: number): void {
-    let changed = false;
-    for (const [id, stats] of Object.entries(this.state.studentStats)) {
-      const lastSeen = stats.lastSeenAt || stats.joinedAt;
-      const isCurrentlyOnline = (now - lastSeen) < 18000;
-      if (stats.isOnline !== isCurrentlyOnline) {
-        stats.isOnline = isCurrentlyOnline;
-        changed = true;
-        if (!isCurrentlyOnline) {
-          addFeedItem(this.state.feedItems, {
-            id: `${now}_${id}_offline`,
-            type: 'LEAVE',
-            studentId: id,
-            studentName: stats.name,
-            timestamp: now,
-          });
-          showRoomToast('Öğrenci Ayrıldı', `${stats.name} oturumdan ayrıldı.`, '⚪');
-        }
-      }
-    }
-    if (changed) {
-      this.notify();
-    }
   }
 
   private stopHeartbeat(): void {

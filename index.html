@@ -175,7 +175,7 @@
   <!-- ========================================================= -->
   <!-- 4. DERS & KESİŞİM ÇEKMECESİ                              -->
   <!-- ========================================================= -->
-  <div class="drawer-overlay" id="drawerOverlay">
+  <div class="drawer-overlay" id="drawerOverlay" data-action="close-subject-drawer" data-action-self="true">
     <div class="drawer-card">
       <div class="drawer-header">
         <span class="drawer-header-brand">sınavdasın.</span>
@@ -213,7 +213,7 @@
           <button type="button" class="btn-drawer-action btn-intersection-toggle" id="btnIntersectionToggle" data-action="toggle-intersection" title="Ortak Konular Kesişimi">
             Kesişim
           </button>
-          <input type="checkbox" id="chkIntersectionSwitch" style="display:none;">
+          <input type="checkbox" id="chkIntersectionSwitch" data-action="toggle-intersection" data-action-event="change" style="display:none;">
         </div>
 
         <!-- Konu Listesi / Çıkmış Sınavlar -->
@@ -241,7 +241,7 @@
   <!-- ========================================================= -->
   <!-- 5. AKILLI PDF İNDİRME SEÇİM DİYALOĞU                     -->
   <!-- ========================================================= -->
-  <div class="pdf-dialog-overlay" id="pdfDialogOverlay">
+  <div class="pdf-dialog-overlay" id="pdfDialogOverlay" data-action="close-pdf-dialog" data-action-self="true">
     <div class="pdf-dialog-card">
       <div class="pdf-dialog-title">🖨️ PDF & Yazdırma Seçenekleri</div>
 

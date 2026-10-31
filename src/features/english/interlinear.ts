@@ -1,5 +1,6 @@
 import { state } from '../../app/state.ts';
 import { escapeHtml } from '../../shared/escape.ts';
+import { isEnglishQuestion } from '../../shared/english-utils.ts';
 import type { Question } from '../../data/question.ts';
 import { MEB_VOCAB_DICT, CONTRACTIONS_BREAKDOWN, enrichEnglishVocab } from './vocabulary.js';
 
@@ -73,11 +74,6 @@ export function renderInterlinearText(rawText: string): string {
     const escapedGloss = escapeHtml(gloss);
     return `<ruby class="interlinear-word">${escapedWord}<rt class="interlinear-gloss">${escapedGloss}</rt></ruby>`;
   });
-}
-
-/** Bir sorunun İngilizce dersine ait olup olmadığını belirler. */
-export function isEnglishQuestion(q: Question): boolean {
-  return (state.currentSubject === 'ING') || Boolean(q.ders && q.ders.includes('İNGİLİZCE'));
 }
 
 /**

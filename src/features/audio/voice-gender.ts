@@ -4,6 +4,7 @@
  */
 
 import { state, store } from '../../app/state.ts';
+import { readString } from '../../app/storage.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 import { speechService } from './speech-service.ts';
 
@@ -86,18 +87,12 @@ export function cycleVoiceGender(): 'female' | 'male' {
 }
 
 /**
- * Kayıtlı tercihi localStorage'dan yükler ve butonu ilk durumuna getirir.
+ * Kayıtlı tercihi tarayıcı deposundan yükler ve butonu ilk durumuna getirir.
  */
 export function initVoiceGender(): void {
   let savedGender: 'female' | 'male' = 'female';
-  try {
-    if (typeof localStorage !== 'undefined') {
-      const val = localStorage.getItem(StorageKeys.TTS_GENDER);
-      if (val === 'male' || val === 'female') {
-        savedGender = val;
-      }
-    }
-  } catch {}
+  const val = readString(StorageKeys.TTS_GENDER);
+  if (val === 'male' || val === 'female') savedGender = val;
   setVoiceGender(savedGender, false);
 }
 
@@ -134,17 +129,11 @@ export function cycleVoiceEngine(): VoiceEngineId {
 }
 
 /**
- * Kayıtlı motor tercihini localStorage'dan yükler ve butonu ilk durumuna getirir.
+ * Kayıtlı motor tercihini tarayıcı deposundan yükler ve butonu ilk durumuna getirir.
  */
 export function initVoiceEngine(): void {
   let savedEngine: VoiceEngineId = 1;
-  try {
-    if (typeof localStorage !== 'undefined') {
-      const val = Number(localStorage.getItem(StorageKeys.TTS_ENGINE));
-      if (val === 1 || val === 2 || val === 3) {
-        savedEngine = val as VoiceEngineId;
-      }
-    }
-  } catch {}
+  const val = Number(readString(StorageKeys.TTS_ENGINE));
+  if (val === 1 || val === 2 || val === 3) savedEngine = val;
   setVoiceEngine(savedEngine, false);
 }

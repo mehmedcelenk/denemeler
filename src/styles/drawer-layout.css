@@ -1,0 +1,169 @@
+/* ========================================================= */
+/* 5. DERS & KONU ÇEKMECESİ (DRAWER MODAL)                   */
+/* ========================================================= */
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: calc(20px + var(--safe-top)) 16px 20px 16px;
+}
+
+.drawer-overlay.open {
+  display: flex;
+}
+
+.drawer-card {
+  background: var(--paper-bg);
+  border: 1px solid var(--paper-border);
+  border-radius: 16px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--paper-border);
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.drawer-header-brand {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--paper-text);
+  letter-spacing: -0.3px;
+  user-select: none;
+}
+
+.drawer-header #programToggleGroup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-close-drawer {
+  background: rgba(125, 125, 125, 0.1);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--paper-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 12 Subject Grid */
+.drawer-subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px;
+}
+
+.drawer-subj-card {
+  background: rgba(125, 125, 125, 0.05);
+  border: 1.5px solid var(--paper-border);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.15s;
+}
+
+.drawer-subj-card:hover {
+  border-color: var(--brand-accent);
+  transform: translateY(-1px);
+}
+
+.drawer-subj-card.active {
+  background: rgba(2, 132, 199, 0.12);
+  border-color: var(--brand-accent);
+}
+
+.drawer-subj-icon {
+  font-size: 20px;
+}
+
+.drawer-subj-name {
+  font-size: 12.5px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.drawer-subj-count {
+  font-size: 10.5px;
+  color: var(--paper-text-muted);
+}
+
+/* Kademeler Flow */
+.drawer-courses-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.btn-course-toggle {
+  background: rgba(125, 125, 125, 0.08);
+  border: 1px solid var(--paper-border);
+  color: var(--paper-text);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s;
+}
+
+.btn-course-toggle.selected {
+  background: var(--paper-text);
+  color: var(--paper-bg);
+  border-color: var(--paper-text);
+}
+
+/* Kesişim / Birleşim Mod Düğmeleri */
+.btn-mode-toggle {
+  background: rgba(125, 125, 125, 0.08);
+  border: 1px solid var(--paper-border);
+  color: var(--paper-text-muted);
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.btn-mode-toggle:hover {
+  color: var(--paper-text);
+  border-color: var(--brand-accent);
+}
+
+.btn-mode-toggle.active {
+  background: var(--brand-accent);
+  color: #ffffff;
+  border-color: var(--brand-accent);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+}

@@ -61,7 +61,10 @@ export async function handleDrawerSearch(val) {
     if (normalContainer) normalContainer.style.display = 'none';
     if (list) list.textContent = 'Sorular yükleniyor…';
     try {
-      if (!subject) await loadAllSubjectData();
+      if (!subject) {
+        const questions = await loadAllSubjectData();
+        store.appendQuestions(questions);
+      }
     } catch {
       if (isCurrent() && list) list.textContent = 'Sorular yüklenemedi. Bağlantınızı kontrol edip aramayı yeniden deneyin.';
       return;

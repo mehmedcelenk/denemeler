@@ -1,7 +1,6 @@
 import { state, store, notifyStateChange } from '../../app/state.ts';
 import { matchesSubject } from '../../data/subjects.js';
 import { escapeHtml, escapeJs } from '../../shared/escape.ts';
-import { updateFilterButtonsUI } from '../booklet/filter.ts';
 
 export interface ExamPeriodInfo {
   key: string;
@@ -48,7 +47,6 @@ export function selectExamPeriodFromDrawer(periodKey: string | null): void {
   store.clearSelectedTopicKeys();
   store.setActiveSearchFilter('');
   store.setBookletFilterMode('all');
-  updateFilterButtonsUI();
   notifyStateChange('drawer:close');
   notifyStateChange('filter:updated');
   notifyStateChange('booklet:refresh');

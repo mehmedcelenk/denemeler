@@ -6,28 +6,10 @@ import { renderDrawerTopics } from './topics.js';
 import { renderSubjectRowsHtml } from './subject-rows.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 
+import { getActiveSubjects, getSubjectCourses } from './selection-model.ts';
+export { getActiveSubjects } from './selection-model.ts';
+
 let selectionVersion = 0;
-
-export function getActiveSubjects() {
-  const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
-  const list = [];
-  const seen = new Set();
-
-  for (const c of state.selectedCourses) {
-    const s = currentList.find(subj => matchesSubject({ ders: c }, subj.id));
-    if (s && !seen.has(s.id)) {
-      seen.add(s.id);
-      list.push(s);
-    }
-  }
-
-  if (list.length === 0) {
-    const fallback = currentList.find(s => s.id === state.currentSubject) || currentList[0];
-    list.push(fallback);
-  }
-
-  return list;
-}
 
 export async function setProgramMode(mode) {
   store.setProgramMode(mode);
@@ -50,7 +32,8 @@ export async function setProgramMode(mode) {
 export async function setSubject(subj) {
   const version = ++selectionVersion;
   try {
-    await loadSubjectData(subj);
+    const questions = await loadSubjectData(subj);
+    store.appendQuestions(questions);
   } catch (error) {
     if (version !== selectionVersion) return false;
     const container = document.getElementById('drawerTopicList');
@@ -69,12 +52,7 @@ export async function setSubject(subj) {
   const normalContainer = document.getElementById('drawerNormalSelectorContainer');
   if (normalContainer) normalContainer.style.display = 'block';
 
-  const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, subj)).map(q => q.ders)));
-  courses.sort((a, b) => {
-    const numA = parseInt((a.match(/\d+$/) || [0])[0], 10);
-    const numB = parseInt((b.match(/\d+$/) || [0])[0], 10);
-    return numA - numB;
-  });
+  const courses = getSubjectCourses(subj);
 
   if (courses.length > 0) {
     store.setSelectedCourses([courses[0]]);
@@ -102,19 +80,15 @@ export async function addSubjectRow(subjId) {
 
   const version = ++selectionVersion;
   try {
-    await loadSubjectData(targetId);
+    const questions = await loadSubjectData(targetId);
+    store.appendQuestions(questions);
   } catch (error) {
     if (version !== selectionVersion) return false;
     return false;
   }
   if (version !== selectionVersion) return false;
 
-  const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, targetId)).map(q => q.ders)));
-  courses.sort((a, b) => {
-    const numA = parseInt((a.match(/\d+$/) || [0])[0], 10);
-    const numB = parseInt((b.match(/\d+$/) || [0])[0], 10);
-    return numA - numB;
-  });
+  const courses = getSubjectCourses(targetId);
 
   if (courses.length > 0) {
     store.addSelectedCourse(courses[0]);
@@ -149,7 +123,8 @@ export async function switchRowSubject(oldSubjId, newSubjId) {
   if (oldSubjId === newSubjId) return;
   const version = ++selectionVersion;
   try {
-    await loadSubjectData(newSubjId);
+    const questions = await loadSubjectData(newSubjId);
+    store.appendQuestions(questions);
   } catch (error) {
     if (version !== selectionVersion) return;
   }
@@ -158,12 +133,7 @@ export async function switchRowSubject(oldSubjId, newSubjId) {
   const coursesToRemove = Array.from(state.selectedCourses).filter(c => matchesSubject({ ders: c }, oldSubjId));
   coursesToRemove.forEach(c => store.removeSelectedCourse(c));
 
-  const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, newSubjId)).map(q => q.ders)));
-  courses.sort((a, b) => {
-    const numA = parseInt((a.match(/\d+$/) || [0])[0], 10);
-    const numB = parseInt((b.match(/\d+$/) || [0])[0], 10);
-    return numA - numB;
-  });
+  const courses = getSubjectCourses(newSubjId);
 
   if (courses.length > 0) {
     store.addSelectedCourse(courses[0]);

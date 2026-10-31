@@ -1,32 +1,50 @@
-import { state, store } from '../../app/state.ts';
+import {
+  state,
+  store,
+  onStateChange,
+  type AnswerMarkedPayload,
+} from '../../app/state.ts';
+import { readJson } from '../../app/storage.ts';
+import { StorageKeys } from '../../shared/storage-keys.ts';
 
-const STARRED_KEY = 'aol_starred_questions';
-const REMATCH_KEY = 'aol_rematch_queue';
+function isArray(value: unknown): value is unknown[] {
+  return Array.isArray(value);
+}
+
+function isSafeInteger(value: unknown): value is number {
+  return typeof value === 'number' && Number.isSafeInteger(value);
+}
+
+let initialized = false;
+
+function isAnswerMarkedPayload(value: unknown): value is AnswerMarkedPayload {
+  if (!value || typeof value !== 'object') return false;
+  const candidate = value as Partial<AnswerMarkedPayload>;
+  return Number.isSafeInteger(candidate.qid)
+    && typeof candidate.isCorrect === 'boolean';
+}
+
+export function initLibrary(): void {
+  if (initialized) return;
+  initialized = true;
+
+  onStateChange('answer:marked', (payload) => {
+    if (!isAnswerMarkedPayload(payload)) return;
+    if (payload.isCorrect) {
+      if (state.rematchQuestionIds.has(payload.qid)) {
+        removeFromRematch(payload.qid);
+      }
+    } else {
+      addToRematch(payload.qid);
+    }
+  }, 40);
+}
 
 export function loadLibraryData(): void {
-  try {
-    const rawStarred = localStorage.getItem(STARRED_KEY);
-    if (rawStarred) {
-      const arr = JSON.parse(rawStarred);
-      if (Array.isArray(arr)) {
-        store.setStarredQuestionIds(arr.filter(Number.isSafeInteger), false);
-      }
-    }
-  } catch {
-    store.setStarredQuestionIds([], false);
-  }
-
-  try {
-    const rawRematch = localStorage.getItem(REMATCH_KEY);
-    if (rawRematch) {
-      const arr = JSON.parse(rawRematch);
-      if (Array.isArray(arr)) {
-        store.setRematchQuestionIds(arr.filter(Number.isSafeInteger), false);
-      }
-    }
-  } catch {
-    store.setRematchQuestionIds([], false);
-  }
+  const starred = readJson(StorageKeys.STARRED_QUESTIONS, isArray, []).filter(isSafeInteger);
+  store.setStarredQuestionIds(starred, false);
+  const rematch = readJson(StorageKeys.REMATCH_QUESTIONS, isArray, []).filter(isSafeInteger);
+  store.setRematchQuestionIds(rematch, false);
 
   updateLibraryBadgeUI();
 }

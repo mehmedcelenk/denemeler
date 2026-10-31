@@ -1,10 +1,6 @@
-import { state, store, onStateChange } from '../../app/state.ts';
+import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from './explanation.ts';
 import { saveChoicesToStorage, loadSavedChoices } from './storage.ts';
-import { recordAnswerForCombo } from '../gamification/combo-toast.ts';
-import { addStreakPoints, resetOrDeductStreak } from '../gamification/streak.ts';
-import { addToRematch, removeFromRematch } from '../library/library-model.ts';
-import { roomService } from '../classroom/room-service.ts';
 import type { Choice } from '../../data/question.ts';
 
 export { saveChoicesToStorage, loadSavedChoices };
@@ -24,7 +20,7 @@ export function handleSelectOpticalBubble(qid: number, letter: Choice): void {
     store.removeUserMarkedChoice(qid);
     delete pendingSelections[qid];
     saveChoicesToStorage();
-    roomService.revokeStudentAnswer(qid);
+    notifyStateChange('answer:revoked', { qid });
     if (typeof document !== 'undefined') {
       document.querySelectorAll<HTMLElement>(`[data-qid="${qid}"]`).forEach(card => {
         card.dataset.userMark = '';
@@ -83,18 +79,7 @@ function applyFinalChoice(qid: number, choice: Choice): void {
 
   if (q) {
     const isCorrect = (choice === q.dogru_cevap);
-    recordAnswerForCombo(isCorrect);
-    roomService.logStudentAnswer(qid, isCorrect);
-
-    if (isCorrect) {
-      addStreakPoints(1);
-      if (state.rematchQuestionIds.has(qid)) {
-        removeFromRematch(qid);
-      }
-    } else {
-      resetOrDeductStreak(1);
-      addToRematch(qid);
-    }
+    notifyStateChange('answer:marked', { qid, choice, isCorrect });
   }
 
   updateQuestionMarkUI(qid, choice);

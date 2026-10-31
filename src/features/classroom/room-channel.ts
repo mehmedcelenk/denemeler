@@ -1,7 +1,18 @@
 import type { RoomMessage } from './types.ts';
+import { remove, writeJson } from '../../app/storage.ts';
 import { getSupabaseConfig } from '../../data/supabase-client.ts';
+import { StorageKeys, type ClassroomSyncStorageKey } from '../../shared/storage-keys.ts';
 
 type MessageHandler = (msg: RoomMessage) => void;
+type ClassroomChannelName = `${typeof StorageKeys.CLASSROOM_CHANNEL_PREFIX}${string}`;
+
+function createChannelName(roomId: string): ClassroomChannelName {
+  return `${StorageKeys.CLASSROOM_CHANNEL_PREFIX}${roomId.trim().toUpperCase()}`;
+}
+
+function createSyncKey(channelName: ClassroomChannelName): ClassroomSyncStorageKey {
+  return `sync_${channelName}`;
+}
 
 interface PhoenixEnvelope {
   topic?: string;
@@ -23,14 +34,14 @@ class RoomChannel {
   private isConnecting: boolean = false;
   private wsPendingQueue: RoomMessage[] = [];
   private wsRefCounter: number = 1;
-  private channelName: string = '';
+  private channelName: ClassroomChannelName | '' = '';
   private handlers: Set<MessageHandler> = new Set();
   private storageListener: ((e: StorageEvent) => void) | null = null;
   private seenMessages: Map<string, number> = new Map();
 
   connect(roomId: string, onMessage: MessageHandler): void {
     this.disconnect();
-    this.channelName = `aol_room_${roomId.trim().toUpperCase()}`;
+    this.channelName = createChannelName(roomId);
     this.handlers.add(onMessage);
 
     if (typeof BroadcastChannel !== 'undefined') {
@@ -42,7 +53,7 @@ class RoomChannel {
       };
     }
 
-    // Farklı pencereler / iframe'ler için localStorage yedek köprüsü
+    // Farklı pencereler / iframe'ler için tarayıcı depolama yedek köprüsü
     this.storageListener = (e: StorageEvent) => {
       if (e.key === `sync_${this.channelName}` && e.newValue) {
         try {
@@ -67,11 +78,9 @@ class RoomChannel {
       } catch {}
     }
 
-    if (typeof localStorage !== 'undefined') {
-      try {
-        localStorage.setItem(`sync_${this.channelName}`, JSON.stringify(msg));
-        setTimeout(() => localStorage.removeItem(`sync_${this.channelName}`), 100);
-      } catch {}
+    if (this.channelName) {
+      const syncKey = createSyncKey(this.channelName);
+      if (writeJson(syncKey, msg)) setTimeout(() => remove(syncKey), 100);
     }
 
     this.sendOverRealtimeSocket(msg);

@@ -1,6 +1,6 @@
-import { state } from '../../app/state.ts';
+import { state, notifyStateChange } from '../../app/state.ts';
 import { toggleConsoleMenu } from '../appearance/layout.js';
-import { applyInterlinearToBooklet, isEnglishQuestion } from '../english/interlinear.ts';
+import { isEnglishQuestion } from '../../shared/english-utils.ts';
 
 export function openPdfDialog() {
   toggleConsoleMenu();
@@ -23,7 +23,7 @@ export function executePdfPrint() {
   closePdfDialog();
 
   if (printWithInterlinear) {
-    applyInterlinearToBooklet(true);
+    notifyStateChange('print:before');
   }
 
   const strips = document.querySelectorAll('.page-bottom-answer-strip');
@@ -74,7 +74,7 @@ export function executePdfPrint() {
     const sep = document.getElementById('separateAnswerPage');
     if (sep) sep.remove();
     if (printWithInterlinear) {
-      applyInterlinearToBooklet(false);
+      notifyStateChange('print:after');
     }
   }, 1000);
 }

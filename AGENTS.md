@@ -13,7 +13,7 @@
 ## Değişiklik sınırları
 - Bir özellik `src/features/<özellik>/` altında yaşar. Saf ortak fonksiyonlar `src/shared/`, veri yükleme ve sözleşmeler `src/data/` içindedir.
 - Mevcut modül JavaScript olabilir. Yeni veri/iş mantığını strict TypeScript ile yaz. Dokunulan JS modülünü TypeScript'e taşımak, ancak görev kapsamına uyuyorsa uygundur. `any`, `@ts-ignore` veya denetimleri kapatarak hataları gizleme.
-- Kaynak JS/TS/CSS dosyası en fazla 350 satır. Satırları sıkıştırarak sınırı aşma; sorumluluklarına göre böl. Üretilen JSON bu sınırın dışındadır.
+- Kaynak JS/TS/CSS dosyası en fazla 300 satır. Satırları sıkıştırarak sınırı aşma; sorumluluklarına göre böl. Üretilen JSON bu sınırın dışındadır.
 - Döngüsel import ekleme. `shared` katmanı `features` veya `app` katmanına bağımlı olamaz.
 - Paylaşılan state yalnızca `src/app/state.ts` içinde tanımlanır. Geçici, özelliğe özel durum ilgili modülde kalır. Yeni global değişken ekleme.
 - `src/app/events.js` mevcut inline HTML olayları için uyumluluk sınırıdır. Yeni arayüz olaylarında `addEventListener` kullan. Mevcut inline fonksiyonların isimlerini değiştirirken bu dosyayı da güncelle.

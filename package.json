@@ -11,7 +11,7 @@
     "check": "npm run lint && npm run typecheck && node scripts/check-architecture.js && node --import tsx --test tests/*.test.ts",
     "data:build": "python3 scripts/core/build_webapp.py",
     "book:build": "python3 scripts/core/pdf_to_book.py",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc --project tsconfig.functions.json",
     "test:e2e": "playwright test",
     "test:chaos": "node --import tsx scripts/core/evren-classroom-chaos.ts",
     "validate:tarih": "python3 scripts/taxonomy/validate_tarih_taxonomy.py --check-map-only"

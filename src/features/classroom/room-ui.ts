@@ -1,8 +1,11 @@
+import { updateTeacherFeed, updateTeacherStats } from './teacher-view.ts';
+import { registerActions } from '../../app/actions.ts';
 import { roomService } from './room-service.ts';
-import type { RoomFeedItem, RoomState, StudentStats } from './types.ts';
+import type { RoomState } from './types.ts';
 import { initFocusTracker } from './focus-tracker.ts';
 import { calculateStudentRank } from './ranking.ts';
 import { openRoomModal, closeRoomModal, handleJoinClick, handleCreateClick } from './room-modal.ts';
+import { initRoomAnswerEvents } from './room-answer-events.ts';
 
 let isInitialized = false;
 let renderScheduled = false;
@@ -10,6 +13,7 @@ let lastHeavyRenderAt = 0;
 let trailingRenderTimer: ReturnType<typeof setTimeout> | null = null;
 
 export function initRoomFeature(): void {
+  initRoomAnswerEvents();
   if (isInitialized || typeof document === 'undefined') return;
   isInitialized = true;
 
@@ -69,110 +73,6 @@ function updatePauseOverlay(state: RoomState): void {
   }
 }
 
-function updateTeacherFeed(state: RoomState): void {
-  const listEl = document.getElementById('teacherExitLogsList');
-  if (!listEl) return;
-  if (state.feedItems.length === 0) {
-    listEl.innerHTML = '<div class="exit-log-empty">Henüz bir hareket yok.</div>';
-    return;
-  }
-  listEl.innerHTML = state.feedItems.map((item) => renderFeedRow(item)).join('');
-}
-
-function renderFeedRow(item: RoomFeedItem): string {
-  const timeStr = formatTime(item.timestamp);
-  let icon = 'ℹ️';
-  let statusText = '';
-  let rowClass = '';
-  let actionBtn = '';
-
-  switch (item.type) {
-    case 'JOIN':
-      icon = '🟢';
-      statusText = 'katıldı';
-      rowClass = 'row-success';
-      break;
-    case 'LEAVE':
-      icon = '⚪';
-      statusText = 'ayrıldı';
-      rowClass = 'row-danger';
-      break;
-    case 'FOCUS_LOST':
-      if (item.returnedAt) {
-        icon = '🔄';
-        const returnedTime = formatTime(item.returnedAt);
-        const diffSec = Math.round((item.returnedAt - item.timestamp) / 1000);
-        statusText = `ayrıldı, geri döndü (${diffSec} sn sonra - ${returnedTime})`;
-        rowClass = 'row-warning';
-      } else {
-        icon = '⚪';
-        statusText = 'ayrıldı';
-        rowClass = 'row-danger';
-      }
-      break;
-    case 'HELP_CALL':
-      icon = '✋';
-      statusText = 'hoca çağırdı!';
-      rowClass = 'row-warning';
-      if (!item.resolved) {
-        actionBtn = `<button type="button" class="btn-resolve-help" data-action="resolve-help" data-id="${item.id}" data-student-id="${item.studentId}" data-name="${escapeHtml(item.studentName)}" title="Gidildi / Tamamlandı">Tamam ✓</button>`;
-      } else {
-        statusText = 'hoca ilgilendi ✓';
-        rowClass = 'row-success';
-      }
-      break;
-  }
-
-  return `<div class="exit-log-row ${rowClass}" id="feed_${item.id}">
-    <span class="exit-log-bullet">${icon}</span>
-    <span class="exit-log-name">${escapeHtml(item.studentName)}</span>
-    <span class="exit-log-status">${statusText}</span>
-    <span class="exit-log-time">(${timeStr})</span>
-    ${actionBtn}
-  </div>`;
-}
-
-function updateTeacherStats(state: RoomState): void {
-  const listEl = document.getElementById('teacherStatsList');
-  if (!listEl) return;
-
-  const statsList = Object.values(state.studentStats);
-  if (statsList.length === 0) {
-    listEl.innerHTML = '<div class="exit-log-empty">Henüz soru çözen öğrenci yok.</div>';
-    return;
-  }
-
-  listEl.innerHTML = statsList.map((s) => renderStudentStatRow(s)).join('');
-}
-
-function renderStudentStatRow(s: StudentStats): string {
-  const totalSolved = s.correctCount + s.incorrectCount;
-  const elapsedMinutes = Math.max(0.2, (Date.now() - s.joinedAt) / 60000);
-  const pace = totalSolved > 0 ? (elapsedMinutes / totalSolved).toFixed(1) : '-';
-
-  const exitCount = s.exitCount || 0;
-  const awaySec = Math.round((s.totalAwayMs || 0) / 1000);
-  const awayStr = awaySec >= 60 ? `${Math.floor(awaySec / 60)}d ${awaySec % 60}s` : `${awaySec}s`;
-  const violationBadge = exitCount > 0
-    ? `<span class="stat-violation" style="color:#ef4444; font-weight:700;" title="Toplam ${exitCount} kez ayrıldı (Dışarıda: ${awayStr})">🚨 ${exitCount} çıkış (${awayStr})</span>`
-    : `<span class="stat-clean" style="color:#10b981;" title="Hiç ayrılmadı">🛡️ 0 ihlal</span>`;
-
-  const onlineDot = s.isOnline !== false ? '🟢' : '⚪ (Ayrıldı)';
-
-  return `<div class="student-stat-row">
-    <div style="display:flex; flex-direction:column; gap:2px;">
-      <span class="stat-name">${onlineDot} ${escapeHtml(s.name)}</span>
-      <div style="font-size:0.82em;">${violationBadge}</div>
-    </div>
-    <div class="stat-badges">
-      <span class="stat-correct" title="Doğru Sayısı">🟢 ${s.correctCount}</span>
-      <span class="stat-incorrect" title="Yanlış Sayısı">🔴 ${s.incorrectCount}</span>
-      <span class="stat-pace" title="Soru Başına Ortalama Süre">⏱️ ${pace} dk</span>
-      <button type="button" class="btn-star-student" data-action="award-star" data-id="${s.id}" data-name="${escapeHtml(s.name)}" title="Öğrenciye Yıldız Gönder">⭐</button>
-    </div>
-  </div>`;
-}
-
 function updateStudentDrawer(state: RoomState): void {
   const titleEl = document.getElementById('studentDrawerTitle');
   if (titleEl && state.roomId) {
@@ -195,19 +95,6 @@ function updateStudentDrawer(state: RoomState): void {
       btnCall.title = 'Hoca Çağır';
     }
   }
-}
-
-function formatTime(timestamp: number): string {
-  const d = new Date(timestamp);
-  return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}:${String(d.getSeconds()).padStart(2, '0')}`;
-}
-
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
 }
 
 export function toggleRoomDrawer(): void {
@@ -247,98 +134,58 @@ function handleTabSwitch(tabName: string): void {
 
 function setupRoomEvents(): void {
   if (typeof document === 'undefined') return;
-
-  document.addEventListener('click', (event) => {
-    const target = event.target as HTMLElement | null;
-    if (!target) return;
-
-    if (target.id === 'roomModalOverlay') {
-      closeRoomModal();
-      return;
-    }
-    if (target.id === 'teacherDrawerOverlay') {
-      closeTeacherDrawer();
-      return;
-    }
-    if (target.id === 'studentDrawerOverlay') {
-      closeStudentDrawer();
-      return;
-    }
-
-    const actionEl = target.closest('[data-action]') as HTMLElement | null;
-    if (!actionEl) return;
-
-    const action = actionEl.dataset.action;
-    switch (action) {
-      case 'open-room-modal':
-        openRoomModal();
-        break;
-      case 'close-room-modal':
-        closeRoomModal();
-        break;
-      case 'submit-room-join':
-        handleJoinClick();
-        break;
-      case 'submit-room-create':
-        handleCreateClick();
-        break;
-      case 'toggle-teacher-drawer':
-        toggleRoomDrawer();
-        break;
-      case 'close-teacher-drawer':
-        closeTeacherDrawer();
-        break;
-      case 'close-student-drawer':
-        closeStudentDrawer();
-        break;
-      case 'switch-room-tab':
-        if (actionEl.dataset.tab) handleTabSwitch(actionEl.dataset.tab);
-        break;
-      case 'call-teacher-help':
-        roomService.callTeacherHelp();
-        break;
-      case 'resolve-help':
-        if (actionEl.dataset.id && (actionEl.dataset.studentId || actionEl.dataset.name)) {
-          roomService.resolveTeacherHelp(actionEl.dataset.id, actionEl.dataset.studentId || actionEl.dataset.name || '');
-        }
-        break;
-      case 'award-star':
-        if (actionEl.dataset.id || actionEl.dataset.name) {
-          const btn = actionEl as HTMLButtonElement;
-          const origText = btn.textContent;
-          btn.textContent = '⭐ Gönderildi';
-          btn.disabled = true;
-          setTimeout(() => {
-            btn.textContent = origText;
-            btn.disabled = false;
-          }, 1200);
-          roomService.awardStarToStudent(actionEl.dataset.id || '', actionEl.dataset.name || '');
-        }
-        break;
-      case 'send-broadcast-message': {
-        const input = document.getElementById('inputBroadcastMsg') as HTMLInputElement;
-        if (input && input.value.trim()) {
-          roomService.broadcastAnnouncement(input.value.trim());
-          input.value = '';
-        }
-        break;
+  registerActions({
+    'open-room-modal': () => openRoomModal(),
+    'close-room-modal': () => closeRoomModal(),
+    'submit-room-join': () => handleJoinClick(),
+    'submit-room-create': () => handleCreateClick(),
+    'toggle-teacher-drawer': () => toggleRoomDrawer(),
+    'close-teacher-drawer': () => closeTeacherDrawer(),
+    'close-student-drawer': () => closeStudentDrawer(),
+    'switch-room-tab': el => {
+      if (el.dataset.tab) handleTabSwitch(el.dataset.tab);
+    },
+    'call-teacher-help': () => roomService.callTeacherHelp(),
+    'resolve-help': el => {
+      if (el.dataset.id && (el.dataset.studentId || el.dataset.name)) {
+        roomService.resolveTeacherHelp(el.dataset.id, el.dataset.studentId || el.dataset.name || '');
       }
-      case 'toggle-pause-room':
-        roomService.togglePauseRoom();
-        break;
-      case 'close-room-globally':
-        if (confirm('Tüm sınıf için oturumu sonlandırmak istediğinize emin misiniz?')) {
-          roomService.closeRoomGlobally();
-          closeTeacherDrawer();
-        }
-        break;
-      case 'leave-current-room':
-        roomService.leaveRoom();
+    },
+    'award-star': el => {
+      if (!(el instanceof HTMLButtonElement) || !(el.dataset.id || el.dataset.name)) return;
+      const originalText = el.textContent;
+      el.textContent = '⭐ Gönderildi';
+      el.disabled = true;
+      setTimeout(() => {
+        el.textContent = originalText;
+        el.disabled = false;
+      }, 1200);
+      roomService.awardStarToStudent(el.dataset.id || '', el.dataset.name || '');
+    },
+    'send-broadcast-message': () => {
+      const input = document.getElementById('inputBroadcastMsg') as HTMLInputElement | null;
+      if (input && input.value.trim()) {
+        roomService.broadcastAnnouncement(input.value.trim());
+        input.value = '';
+      }
+    },
+    'toggle-pause-room': () => roomService.togglePauseRoom(),
+    'close-room-globally': () => {
+      if (confirm('Tüm sınıf için oturumu sonlandırmak istediğinize emin misiniz?')) {
+        roomService.closeRoomGlobally();
         closeTeacherDrawer();
-        closeStudentDrawer();
-        break;
-      default:
-        break;
-    }
+      }
+    },
+    'leave-current-room': () => {
+      roomService.leaveRoom();
+      closeTeacherDrawer();
+      closeStudentDrawer();
+    },
+  });
+  document.addEventListener('click', event => {
+    if (!(event.target instanceof HTMLElement)) return;
+    if (event.target.id === 'roomModalOverlay') closeRoomModal();
+    if (event.target.id === 'teacherDrawerOverlay') closeTeacherDrawer();
+    if (event.target.id === 'studentDrawerOverlay') closeStudentDrawer();
   });
 }

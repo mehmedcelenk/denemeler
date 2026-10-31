@@ -33,6 +33,23 @@ function createMockContext(isHost = true): { ctx: MessageContext; notifyCalls: n
   return { ctx, notifyCalls, syncCalls };
 }
 
+test('mesaj tablosu bilinmeyen ve prototip isimli paketleri yok sayar', () => {
+  const { ctx } = createMockContext();
+  for (const type of ['UNKNOWN', '__proto__', 'constructor', 'toString']) {
+    const message = {
+      type,
+      roomId: 'TEST_ROOM',
+      senderId: 'unknown_peer',
+      senderName: 'Anonim',
+      timestamp: 1000,
+    } as unknown as RoomMessage;
+    assert.doesNotThrow(() => handleIncomingRoomMessage(ctx, message));
+  }
+  assert.equal(ctx.participants.length, 1);
+  assert.equal(ctx.feedItems.length, 0);
+  assert.deepEqual(ctx.studentStats, {});
+});
+
 test('Hoca Ekranı İzolasyonu: Hoca ekranında ayrılma ve geri dönme doğru işlenir', () => {
   const { ctx } = createMockContext(true);
 

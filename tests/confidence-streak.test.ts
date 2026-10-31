@@ -2,8 +2,15 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { state, store } from '../src/app/state.ts';
 import { addStreakPoints, resetOrDeductStreak } from '../src/features/gamification/streak.ts';
+import { initGamification } from '../src/features/gamification/init.ts';
+import { initLibrary } from '../src/features/library/library-model.ts';
+import { initRoomFeature } from '../src/features/classroom/room-ui.ts';
 import { handleSelectOpticalBubble } from '../src/features/answers/marking.ts';
 import type { Question } from '../src/data/question.ts';
+
+initGamification();
+initRoomFeature();
+initLibrary();
 
 test('addStreakPoints ve resetOrDeductStreak puanları doğru günceller', () => {
   store.setWaterStreak(0, false);

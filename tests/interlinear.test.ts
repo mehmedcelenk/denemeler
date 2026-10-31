@@ -4,10 +4,13 @@ import {
   cleanGloss,
   getWordTurkishGloss,
   renderInterlinearText,
-  isEnglishQuestion,
 } from '../src/features/english/interlinear.ts';
+import { initEnglish } from '../src/features/english/init.ts';
+import { isEnglishQuestion } from '../src/shared/english-utils.ts';
 import { renderCardHeader, renderCardStem, renderQuestionCardHtml } from '../src/features/booklet/question-card.ts';
 import type { Question } from '../src/data/question.ts';
+
+initEnglish();
 
 const mockEngQuestion: Question = {
   id: 8881,
@@ -63,7 +66,7 @@ test('renderInterlinearText: kelimeleri interlinear ruby etiketiyle sarar ve HTM
   assert.ok(output.includes('<ruby class="interlinear-word">usually<rt class="interlinear-gloss">genellikle</rt></ruby>'));
 });
 
-test('isEnglishQuestion: ders adına veya state bilgisine göre İngilizceyi tespit eder', () => {
+test('isEnglishQuestion: ders adına göre İngilizceyi tespit eder', () => {
   assert.equal(isEnglishQuestion(mockEngQuestion), true);
   assert.equal(isEnglishQuestion({
     id: 9992,

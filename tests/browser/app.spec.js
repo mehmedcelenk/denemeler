@@ -17,7 +17,9 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator('#activeExplanationBubble')).toBeVisible();
   await page.reload();
   await expect(page.locator(`[id="${optionId}"]`)).toHaveClass(/marked/);
-  await page.evaluate(() => window.clearAllMarks());
+  await page.locator('#btnMasterConsole').click();
+  await page.locator('[data-action="clear-all-marks"]').click();
+  await page.locator('#btnMasterConsole').click();
   await expect(page.locator('.optical-choice-row.marked')).toHaveCount(0);
 
   await page.locator('#topCenterBadge').click();
@@ -25,9 +27,10 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator('#drawerTopicList')).toBeVisible();
   await page.locator('#btnSubjectDropdownTrigger').click();
   await page.locator('.dropdown-menu-item').filter({ hasText: 'İngilizce' }).click();
+  await expect(page.locator('[id^="btnMeal_"]').first()).toBeAttached();
   await page.locator('#btnLoadAllTopics').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
-  await page.evaluate(() => window.toggleFeaturesBar());
+  await page.locator('[data-action="toggle-question-features"]').first().click();
   await expect(page.locator('[id^="btnMeal_"]').first()).toBeVisible();
   const mealBtn = page.locator('[id^="btnMeal_"]').first();
   await mealBtn.click();
@@ -44,14 +47,26 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await page.locator('#topCenterBadge').click();
   await page.locator('#btnSubjectDropdownTrigger').click();
   await page.locator('.dropdown-menu-item').filter({ hasText: 'Türk Dili' }).click();
+  await expect(page.locator('[id^="btnMeal_"]')).toHaveCount(0);
   await page.locator('#btnLoadAllTopics').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
+  await page.locator('[data-action="toggle-question-features"]').first().click();
   await page.locator('[id^="btnEliminateWrong_"]').first().click();
   await expect(page.locator('.optical-choice-row.marked-incorrect').first()).toBeVisible();
-  await page.evaluate(() => window.setThemeMode('dark'));
+  await page.locator('#btnMasterConsole').click();
+  await page.locator('[data-action="cycle-theme-mode"]').click();
   await expect(page.locator('body')).toHaveClass(/dark-mode/);
-  await page.evaluate(() => window.setColumnCount(1));
-  await page.evaluate(() => window.openPdfDialog());
+  for (let i = 0; i < 3; i++) {
+    await page.locator('[data-action="cycle-column-count"]').click();
+  }
+  await expect(page.locator('.page-columns-body').first()).toHaveClass(/cols-1/);
+  await page.locator('[data-action="open-pdf-dialog"]').click();
+  await expect(page.locator('#pdfDialogOverlay')).toHaveClass(/open/);
+  // İçeriğe tıklama arka planın kapatma eylemini tetiklememeli.
+  await page.locator('#pdfDialogOverlay .pdf-dialog-title').click();
+  await expect(page.locator('#pdfDialogOverlay')).toHaveClass(/open/);
+  await page.locator('button[data-action="close-pdf-dialog"]').click();
+  await expect(page.locator('#pdfDialogOverlay')).not.toHaveClass(/open/);
   expect(errors).toEqual([]);
 });
 
@@ -93,14 +108,16 @@ test('3 ve 4 sütun seçimi masaüstünde uygulanır, mobilde her zaman 1 sütun
   await page.goto('/');
   await expect(page.locator('.booklet-page').first()).toBeVisible();
 
+  await page.locator('#btnMasterConsole').click();
   for (const columns of [3, 4]) {
-    await page.evaluate(columns => window.setColumnCount(columns), columns);
+    await page.locator('[data-action="cycle-column-count"]').click();
     await expect(page.locator('.page-columns-body').first()).toHaveClass(new RegExp(`cols-${columns}`));
     await expect.poll(() => page.locator('.page-columns-body').first().evaluate(element => {
       const cols = getComputedStyle(element).gridTemplateColumns.trim().split(/\s+/);
       return cols.length;
     })).toBe(columns);
   }
+  await page.locator('#btnMasterConsole').click();
 
   // Mobilde ise seçilen ayar ne olursa olsun her zaman 1 sütun olmalı
   await page.setViewportSize({ width: 390, height: 844 });
@@ -144,6 +161,21 @@ test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı güncell
   // Konular sekmesine geç ve konu klasörlerinin döküldüğünü doğrula
   await page.locator('[data-tab="topics"]').click();
   await expect(page.locator('.drawer-subject-folder')).toHaveCount(2);
+
+  // Change delegasyonu kontrolün sabit ID'sine bağımlı olmamalı.
+  const intersection = page.locator('input[data-action="toggle-intersection"]');
+  await intersection.evaluate(input => {
+    input.id = 'intersection-registry-test';
+    input.checked = true;
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+  });
+  await expect(page.locator('#lblDrawerTopicHeader')).toContainText('Ortak ∩');
+  await intersection.evaluate(input => {
+    input.checked = false;
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+    input.id = 'chkIntersectionSwitch';
+  });
+  await expect(page.locator('#lblDrawerTopicHeader')).not.toContainText('Ortak ∩');
 
   // İlk konuyu seç (grup akordiyonunu aç ve alt konuyu tıkla)
   await page.locator('.drawer-topic-group-header').first().click();

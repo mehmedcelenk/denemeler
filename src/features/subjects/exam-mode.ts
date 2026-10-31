@@ -23,7 +23,8 @@ export async function openExamModal(): Promise<void> {
     container.innerHTML = '<div style="padding:20px; text-align:center; color:var(--paper-text-muted);">Dersler yükleniyor...</div>';
   }
 
-  await loadAllSubjectData();
+  const questions = await loadAllSubjectData();
+  store.appendQuestions(questions);
 
   // Tüm derslerin alt kademelerini bul ve varsayılan olarak seçili yap
   selectedExamCourses.clear();

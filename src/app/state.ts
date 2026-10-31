@@ -1,89 +1,12 @@
 import type { Choice, Question, SubjectId } from '../data/question.ts';
 import type { BookletFilterMode } from '../shared/question-filter.ts';
 import { StorageKeys } from '../shared/storage-keys.ts';
+import * as storage from './storage.ts';
 
-export type { Choice, Question, SubjectId, BookletFilterMode };
-export type LibraryTab = 'starred' | 'rematch';
-export type ContentViewMode = 'questions' | 'notes';
-
-const REMATCH_STORAGE_KEY = 'aol_rematch_queue';
-const STREAK_DATE_KEY = 'aol_last_streak_date';
-
-function safeStorageSet(key: string, value: string): void {
-  try {
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem(key, value);
-    }
-  } catch {}
-}
-
-export interface AiExplanationMessage { readonly query: string; readonly reply: string; readonly updatedAt: number; }
-export interface AiExplanationEntry { readonly query: string; readonly reply: string; readonly updatedAt: number; readonly history?: readonly AiExplanationMessage[]; }
-
-export interface AppState {
-  readonly allData: readonly Question[];
-  readonly currentSubject: SubjectId | null;
-  readonly programMode: 'AOIHL' | 'AOF';
-  readonly selectedCourses: ReadonlySet<string>;
-  readonly courseFilterMode: 'AND' | 'OR';
-  readonly selectedTopicKeys: ReadonlySet<string>;
-  readonly selectedExamPeriod: string | null;
-  readonly bookletQuestions: readonly Question[];
-  readonly bookletFilterMode: BookletFilterMode;
-  readonly contentViewMode: ContentViewMode;
-  readonly activeSearchFilter: string;
-  readonly userMarkedChoices: Readonly<Record<number, Choice>>;
-  readonly revealedAnswers: ReadonlySet<number>;
-  readonly revealedHints: ReadonlySet<number>;
-  readonly currentColumnCount: number;
-  readonly zoomLevelIndex: number;
-  readonly canvasZoomScale: number;
-  readonly waterStreak: number;
-  readonly starredQuestionIds: ReadonlySet<number>;
-  readonly rematchQuestionIds: ReadonlySet<number>;
-  readonly isLibraryMode: boolean;
-  readonly libraryTab: LibraryTab;
-  readonly isFeaturesExpanded: boolean;
-  readonly expandedQuestionIds: ReadonlySet<number>;
-  readonly eliminatedChoices: Readonly<Record<number, readonly Choice[]>>;
-  readonly eliminatedWrongChoices: Readonly<Record<number, Choice>>;
-  readonly aiExplanations: Readonly<Record<number, AiExplanationEntry>>;
-  readonly pendingAiQuestions: ReadonlySet<number>;
-  readonly ttsVoiceGender: 'female' | 'male';
-  readonly ttsVoiceEngine: 1 | 2 | 3;
-}
-interface MutableAppState {
-  allData: Question[];
-  currentSubject: SubjectId | null;
-  programMode: 'AOIHL' | 'AOF';
-  selectedCourses: Set<string>;
-  courseFilterMode: 'AND' | 'OR';
-  selectedTopicKeys: Set<string>;
-  selectedExamPeriod: string | null;
-  bookletQuestions: Question[];
-  bookletFilterMode: BookletFilterMode;
-  contentViewMode: ContentViewMode;
-  activeSearchFilter: string;
-  userMarkedChoices: Record<number, Choice>;
-  revealedAnswers: Set<number>;
-  revealedHints: Set<number>;
-  currentColumnCount: number;
-  zoomLevelIndex: number;
-  canvasZoomScale: number;
-  waterStreak: number;
-  starredQuestionIds: Set<number>;
-  rematchQuestionIds: Set<number>;
-  isLibraryMode: boolean;
-  libraryTab: LibraryTab;
-  isFeaturesExpanded: boolean;
-  expandedQuestionIds: Set<number>;
-  eliminatedChoices: Record<number, Choice[]>;
-  eliminatedWrongChoices: Record<number, Choice>;
-  aiExplanations: Record<number, AiExplanationEntry>;
-  pendingAiQuestions: Set<number>;
-  ttsVoiceGender: 'female' | 'male';
-  ttsVoiceEngine: 1 | 2 | 3;
-}
+export type * from './state-types.ts';
+import type { AppState, MutableAppState, LibraryTab, ContentViewMode, AiExplanationEntry, AiExplanationMessage } from './state-types.ts';
+export { onStateChange, notifyStateChange } from './state-events.ts';
+export type { StateEventType } from './state-events.ts';
 
 const _state: MutableAppState = {
   allData: [],
@@ -121,42 +44,6 @@ const _state: MutableAppState = {
 /** Dışarıya açılan salt-okunur (Compile-Time Zırhlı) durum nesnesi */
 export const state: AppState = _state;
 
-export type StateEventType =
-  | 'booklet:updated'
-  | 'booklet:refresh'
-  | 'drawer:close'
-  | 'drawer:topics-refresh'
-  | 'filter:updated'
-  | 'subject:select'
-  | 'answer:reveal'
-  | 'view-mode:updated'
-  | 'board:render-question';
-
-type StateListener = (payload?: unknown) => void;
-const eventListeners = new Map<StateEventType, Set<StateListener>>();
-
-export function onStateChange(event: StateEventType, listener: StateListener): () => void {
-  let set = eventListeners.get(event);
-  if (!set) {
-    set = new Set();
-    eventListeners.set(event, set);
-  }
-  set.add(listener);
-  return () => { set?.delete(listener); };
-}
-
-export function notifyStateChange(event: StateEventType, payload?: unknown): void {
-  const set = eventListeners.get(event);
-  if (!set) return;
-  for (const listener of set) {
-    try {
-      listener(payload);
-    } catch (err) {
-      console.error(`[StateEvent:${event}]`, err);
-    }
-  }
-}
-
 /** Micro-Store: State mutasyonlarını tek merkezden yönetir ve kalıcı depolarla eşitler. */
 export const store = {
   setProgramMode(mode: 'AOIHL' | 'AOF'): void { _state.programMode = mode; },
@@ -182,19 +69,19 @@ export const store = {
   setActiveSearchFilter(term: string): void { _state.activeSearchFilter = term; },
   setUserMarkedChoice(qid: number, choice: Choice, persist = true): void {
     _state.userMarkedChoices[qid] = choice;
-    if (persist) safeStorageSet(StorageKeys.USER_CHOICES, JSON.stringify(_state.userMarkedChoices));
+    if (persist) storage.writeJson(StorageKeys.USER_CHOICES, _state.userMarkedChoices);
   },
   removeUserMarkedChoice(qid: number, persist = true): void {
     delete _state.userMarkedChoices[qid];
-    if (persist) safeStorageSet(StorageKeys.USER_CHOICES, JSON.stringify(_state.userMarkedChoices));
+    if (persist) storage.writeJson(StorageKeys.USER_CHOICES, _state.userMarkedChoices);
   },
   clearAllUserMarkedChoices(persist = true): void {
     _state.userMarkedChoices = {};
-    if (persist) safeStorageSet(StorageKeys.USER_CHOICES, JSON.stringify(_state.userMarkedChoices));
+    if (persist) storage.writeJson(StorageKeys.USER_CHOICES, _state.userMarkedChoices);
   },
   setUserMarkedChoices(choices: Record<number, Choice>, persist = true): void {
     _state.userMarkedChoices = { ...choices };
-    if (persist) safeStorageSet(StorageKeys.USER_CHOICES, JSON.stringify(_state.userMarkedChoices));
+    if (persist) storage.writeJson(StorageKeys.USER_CHOICES, _state.userMarkedChoices);
   },
   toggleEliminatedChoice(qid: number, choice: Choice, persist = true): boolean {
     const list = _state.eliminatedChoices[qid] || [];
@@ -213,36 +100,36 @@ export const store = {
       _state.eliminatedChoices[qid] = [...list, choice];
       isNowEliminated = true;
     }
-    if (persist) safeStorageSet(StorageKeys.ELIMINATED_CHOICES, JSON.stringify(_state.eliminatedChoices));
+    if (persist) storage.writeJson(StorageKeys.ELIMINATED_CHOICES, _state.eliminatedChoices);
     return isNowEliminated;
   },
   setEliminatedChoices(eliminated: Record<number, Choice[]>, persist = true): void {
     _state.eliminatedChoices = { ...eliminated };
-    if (persist) safeStorageSet(StorageKeys.ELIMINATED_CHOICES, JSON.stringify(_state.eliminatedChoices));
+    if (persist) storage.writeJson(StorageKeys.ELIMINATED_CHOICES, _state.eliminatedChoices);
   },
   clearAllEliminatedChoices(persist = true): void {
     _state.eliminatedChoices = {};
-    if (persist) safeStorageSet(StorageKeys.ELIMINATED_CHOICES, JSON.stringify(_state.eliminatedChoices));
+    if (persist) storage.writeJson(StorageKeys.ELIMINATED_CHOICES, _state.eliminatedChoices);
   },
   setEliminatedWrongChoice(qid: number, choice: Choice, persist = true): void {
     _state.eliminatedWrongChoices[qid] = choice;
-    if (persist) safeStorageSet(StorageKeys.ELIMINATED_WRONG_CHOICES, JSON.stringify(_state.eliminatedWrongChoices));
+    if (persist) storage.writeJson(StorageKeys.ELIMINATED_WRONG_CHOICES, _state.eliminatedWrongChoices);
   },
   removeEliminatedWrongChoice(qid: number, persist = true): void {
     delete _state.eliminatedWrongChoices[qid];
-    if (persist) safeStorageSet(StorageKeys.ELIMINATED_WRONG_CHOICES, JSON.stringify(_state.eliminatedWrongChoices));
+    if (persist) storage.writeJson(StorageKeys.ELIMINATED_WRONG_CHOICES, _state.eliminatedWrongChoices);
   },
   setEliminatedWrongChoices(map: Record<number, Choice>, persist = true): void {
     _state.eliminatedWrongChoices = { ...map };
-    if (persist) safeStorageSet(StorageKeys.ELIMINATED_WRONG_CHOICES, JSON.stringify(_state.eliminatedWrongChoices));
+    if (persist) storage.writeJson(StorageKeys.ELIMINATED_WRONG_CHOICES, _state.eliminatedWrongChoices);
   },
   clearAllEliminatedWrongChoices(persist = true): void {
     _state.eliminatedWrongChoices = {};
-    if (persist) safeStorageSet(StorageKeys.ELIMINATED_WRONG_CHOICES, JSON.stringify(_state.eliminatedWrongChoices));
+    if (persist) storage.writeJson(StorageKeys.ELIMINATED_WRONG_CHOICES, _state.eliminatedWrongChoices);
   },
   setStarredQuestionIds(ids: Iterable<number>, persist = true): void {
     _state.starredQuestionIds = new Set(ids);
-    if (persist) safeStorageSet(StorageKeys.STARRED_QUESTIONS, JSON.stringify(Array.from(_state.starredQuestionIds)));
+    if (persist) storage.writeJson(StorageKeys.STARRED_QUESTIONS, Array.from(_state.starredQuestionIds));
   },
   toggleStarredQuestion(id: number, persist = true): boolean {
     const isNowStarred = !_state.starredQuestionIds.has(id);
@@ -251,20 +138,20 @@ export const store = {
     } else {
       _state.starredQuestionIds.delete(id);
     }
-    if (persist) safeStorageSet(StorageKeys.STARRED_QUESTIONS, JSON.stringify(Array.from(_state.starredQuestionIds)));
+    if (persist) storage.writeJson(StorageKeys.STARRED_QUESTIONS, Array.from(_state.starredQuestionIds));
     return isNowStarred;
   },
   setRematchQuestionIds(ids: Iterable<number>, persist = true): void {
     _state.rematchQuestionIds = new Set(ids);
-    if (persist) safeStorageSet(REMATCH_STORAGE_KEY, JSON.stringify(Array.from(_state.rematchQuestionIds)));
+    if (persist) storage.writeJson(StorageKeys.REMATCH_QUESTIONS, Array.from(_state.rematchQuestionIds));
   },
   addRematchQuestion(id: number, persist = true): void {
     _state.rematchQuestionIds.add(id);
-    if (persist) safeStorageSet(REMATCH_STORAGE_KEY, JSON.stringify(Array.from(_state.rematchQuestionIds)));
+    if (persist) storage.writeJson(StorageKeys.REMATCH_QUESTIONS, Array.from(_state.rematchQuestionIds));
   },
   removeRematchQuestion(id: number, persist = true): void {
     _state.rematchQuestionIds.delete(id);
-    if (persist) safeStorageSet(REMATCH_STORAGE_KEY, JSON.stringify(Array.from(_state.rematchQuestionIds)));
+    if (persist) storage.writeJson(StorageKeys.REMATCH_QUESTIONS, Array.from(_state.rematchQuestionIds));
   },
   setLibraryMode(isLibrary: boolean, tab: LibraryTab = 'rematch'): void {
     _state.isLibraryMode = isLibrary;
@@ -273,8 +160,8 @@ export const store = {
   setWaterStreak(streak: number, persist = true): void {
     _state.waterStreak = Math.max(0, streak);
     if (persist) {
-      safeStorageSet(StorageKeys.WATER_STREAK, String(_state.waterStreak));
-      safeStorageSet(STREAK_DATE_KEY, new Date().toISOString().split('T')[0]);
+      storage.writeString(StorageKeys.WATER_STREAK, String(_state.waterStreak));
+      storage.writeString(StorageKeys.LAST_STREAK_DATE, new Date().toISOString().split('T')[0]);
     }
   },
   addWaterStreak(points: number, persist = true): void { this.setWaterStreak(_state.waterStreak + points, persist); },
@@ -282,7 +169,7 @@ export const store = {
   setColumnCount(n: number, persist = true): void {
     const valid = [1, 2, 3, 4].includes(n) ? n : 2;
     _state.currentColumnCount = valid;
-    if (persist) safeStorageSet(StorageKeys.COLUMN_COUNT, String(valid));
+    if (persist) storage.writeString(StorageKeys.COLUMN_COUNT, String(valid));
   },
   setZoomLevelIndex(idx: number): void { _state.zoomLevelIndex = idx; },
   setCanvasZoomScale(scale: number): void { _state.canvasZoomScale = Math.min(2.5, Math.max(0.85, scale)); },
@@ -305,11 +192,18 @@ export const store = {
     if (isNow) _state.revealedHints.add(qid); else _state.revealedHints.delete(qid);
     return isNow;
   },
-  appendQuestions(questions: readonly Question[]): void { _state.allData.push(...questions); },
+  appendQuestions(questions: readonly Question[]): void {
+    const knownIds = new Set(_state.allData.map(question => question.id));
+    for (const question of questions) {
+      if (knownIds.has(question.id)) continue;
+      _state.allData.push(question);
+      knownIds.add(question.id);
+    }
+  },
   setAllData(questions: readonly Question[]): void { _state.allData = [...questions]; },
   setAiExplanation(qid: number, entry: AiExplanationEntry, persist = true): void {
     _state.aiExplanations[qid] = entry;
-    if (persist) safeStorageSet(StorageKeys.AI_EXPLANATIONS, JSON.stringify(_state.aiExplanations));
+    if (persist) storage.writeJson(StorageKeys.AI_EXPLANATIONS, _state.aiExplanations);
   },
   appendAiQuestionReply(qid: number, query: string, reply: string): void {
     const prev = _state.aiExplanations[qid];
@@ -319,25 +213,25 @@ export const store = {
       if (prev.history && Array.isArray(prev.history)) past.push(...prev.history);
     }
     _state.aiExplanations[qid] = { query, reply, updatedAt: Date.now(), history: past };
-    safeStorageSet(StorageKeys.AI_EXPLANATIONS, JSON.stringify(_state.aiExplanations));
+    storage.writeJson(StorageKeys.AI_EXPLANATIONS, _state.aiExplanations);
   },
   clearAiExplanation(qid: number, persist = true): void {
     delete _state.aiExplanations[qid];
-    if (persist) safeStorageSet(StorageKeys.AI_EXPLANATIONS, JSON.stringify(_state.aiExplanations));
+    if (persist) storage.writeJson(StorageKeys.AI_EXPLANATIONS, _state.aiExplanations);
   },
   setAiExplanations(map: Record<number, AiExplanationEntry>, persist = true): void {
     _state.aiExplanations = { ...map };
-    if (persist) safeStorageSet(StorageKeys.AI_EXPLANATIONS, JSON.stringify(_state.aiExplanations));
+    if (persist) storage.writeJson(StorageKeys.AI_EXPLANATIONS, _state.aiExplanations);
   },
   setPendingAiQuestion(qid: number, isPending: boolean): void {
     if (isPending) _state.pendingAiQuestions.add(qid); else _state.pendingAiQuestions.delete(qid);
   },
   setTtsVoiceGender(gender: 'female' | 'male', persist = true): void {
     _state.ttsVoiceGender = gender;
-    if (persist) safeStorageSet(StorageKeys.TTS_GENDER, gender);
+    if (persist) storage.writeString(StorageKeys.TTS_GENDER, gender);
   },
   setTtsVoiceEngine(engine: 1 | 2 | 3, persist = true): void {
     _state.ttsVoiceEngine = engine;
-    if (persist) safeStorageSet(StorageKeys.TTS_ENGINE, String(engine));
+    if (persist) storage.writeString(StorageKeys.TTS_ENGINE, String(engine));
   },
 };

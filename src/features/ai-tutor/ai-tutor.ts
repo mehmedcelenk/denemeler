@@ -1,4 +1,5 @@
 import { state, store, type AiExplanationEntry, type AiExplanationMessage } from '../../app/state.ts';
+import { readJson } from '../../app/storage.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 import { formatAiMarkdown } from '../../shared/simple-markdown.ts';
@@ -6,7 +7,10 @@ import type { Question } from '../../data/question.ts';
 
 let activeAiBubbleEl: HTMLElement | null = null;
 const lastCooldownAt = new Map<number, number>();
-let isTutorInitialized = false;
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+}
 
 export interface SafeAiAskPayload {
   readonly stem: string;
@@ -41,42 +45,36 @@ export function buildZeroKnowledgePayload(
   };
 }
 
-/** Kayıtlı AI açıklamalarını localStorage'dan doğrular ve yükler. */
+/** Kayıtlı AI açıklamalarını tarayıcı deposundan doğrular ve yükler. */
 export function loadSavedAiExplanations(): void {
-  try {
-    if (typeof localStorage === 'undefined') return;
-    const raw = localStorage.getItem(StorageKeys.AI_EXPLANATIONS);
-    if (!raw) return;
-    const parsed: unknown = JSON.parse(raw);
-    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return;
-    const valid: Record<number, AiExplanationEntry> = {};
-    for (const [k, v] of Object.entries(parsed as Record<string, unknown>)) {
-      const qid = Number(k);
-      if (!Number.isInteger(qid) || qid <= 0 || !v || typeof v !== 'object') continue;
-      const item = v as Record<string, unknown>;
-      if (typeof item.query === 'string' && item.query.trim() && typeof item.reply === 'string' && item.reply.trim()) {
-        const history: AiExplanationMessage[] = [];
-        if (Array.isArray(item.history)) {
-          for (const h of item.history) {
-            if (h && typeof h === 'object' && typeof h.query === 'string' && typeof h.reply === 'string') {
-              history.push({
-                query: h.query.trim().slice(0, 250),
-                reply: String(h.reply).trim(),
-                updatedAt: typeof h.updatedAt === 'number' ? h.updatedAt : Date.now(),
-              });
-            }
+  const parsed = readJson(StorageKeys.AI_EXPLANATIONS, isRecord, {});
+  const valid: Record<number, AiExplanationEntry> = {};
+  for (const [k, v] of Object.entries(parsed)) {
+    const qid = Number(k);
+    if (!Number.isInteger(qid) || qid <= 0 || !v || typeof v !== 'object') continue;
+    const item = v as Record<string, unknown>;
+    if (typeof item.query === 'string' && item.query.trim() && typeof item.reply === 'string' && item.reply.trim()) {
+      const history: AiExplanationMessage[] = [];
+      if (Array.isArray(item.history)) {
+        for (const h of item.history) {
+          if (h && typeof h === 'object' && typeof h.query === 'string' && typeof h.reply === 'string') {
+            history.push({
+              query: h.query.trim().slice(0, 250),
+              reply: String(h.reply).trim(),
+              updatedAt: typeof h.updatedAt === 'number' ? h.updatedAt : Date.now(),
+            });
           }
         }
-        valid[qid] = {
-          query: item.query.trim().slice(0, 250),
-          reply: item.reply.trim(),
-          updatedAt: typeof item.updatedAt === 'number' && Number.isFinite(item.updatedAt) ? item.updatedAt : Date.now(),
-          history: history.length > 0 ? history : undefined,
-        };
       }
+      valid[qid] = {
+        query: item.query.trim().slice(0, 250),
+        reply: item.reply.trim(),
+        updatedAt: typeof item.updatedAt === 'number' && Number.isFinite(item.updatedAt) ? item.updatedAt : Date.now(),
+        history: history.length > 0 ? history : undefined,
+      };
     }
-    store.setAiExplanations(valid, false);
-  } catch {}
+  }
+  store.setAiExplanations(valid, false);
 }
 
 /** Soru altındaki AI sorma kutusunu açar/kapatır; kayıtlı yanıt varsa balonu da gösterir. */
@@ -296,51 +294,4 @@ export async function submitAiQuestion(qid: number): Promise<void> {
 /** Geriye dönük uyumluluk: Balon yerine doğrudan soru altındaki chat alanını açar */
 export function showAiReplyBubble(qid: number): void { toggleAiAskBox(qid); }
 export function hideAiReplyBubble(): void { activeAiBubbleEl?.remove(); activeAiBubbleEl = null; }
-
-export function initAiTutor(): void {
-  loadSavedAiExplanations();
-  if (isTutorInitialized || typeof document === 'undefined') return;
-  isTutorInitialized = true;
-  document.addEventListener('click', (e) => {
-    const target = e.target as HTMLElement | null;
-    if (!target) return;
-    const actionEl = target.closest<HTMLElement>('[data-action]');
-    const action = actionEl?.dataset.action;
-    const qid = Number(actionEl?.dataset.qid);
-    if (action === 'toggle-ai-ask' && qid) { toggleAiAskBox(qid); return; }
-    if (action === 'submit-ai-ask' && qid) { void submitAiQuestion(qid); return; }
-    if (action === 'use-ai-chip' && qid) {
-      const prompt = actionEl?.dataset.prompt || '';
-      const input = document.getElementById(`aiAskInput_${qid}`) as HTMLInputElement | null;
-      if (input) input.value = prompt;
-      void submitAiQuestion(qid);
-      return;
-    }
-    if (action === 'show-ai-reply' && qid) { toggleAiAskBox(qid); return; }
-    if (action === 'delete-ai-turn' && qid) {
-      e.stopPropagation(); e.preventDefault();
-      const turnIdx = actionEl?.dataset.turnIdx !== undefined ? Number(actionEl.dataset.turnIdx) : -1;
-      deleteAiTurn(qid, turnIdx);
-      return;
-    }
-    if (action === 'clear-ai-chat' && qid) {
-      e.stopPropagation(); e.preventDefault(); deleteAiTurn(qid, -1); return;
-    }
-    if ((action === 'close-ai-chat' || action === 'close-ai-box') && qid) {
-      const box = document.getElementById(`aiAskBox_${qid}`);
-      if (box) box.style.display = 'none';
-      const card = document.getElementById(`aiChatReply_${qid}`);
-      if (card) card.style.display = 'none';
-      return;
-    }
-  });
-  document.addEventListener('keydown', (e) => {
-    const target = e.target as HTMLElement | null;
-    if (e.key === 'Enter' && target?.classList.contains('ai-ask-input')) {
-      e.preventDefault();
-      const qid = Number(target.dataset.qid);
-      if (qid) void submitAiQuestion(qid);
-    }
-  });
-}
 

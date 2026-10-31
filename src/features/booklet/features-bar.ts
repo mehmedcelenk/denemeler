@@ -1,6 +1,5 @@
-import { state, store } from '../../app/state.ts';
+import { state, store, notifyStateChange } from '../../app/state.ts';
 import type { Choice } from '../../data/question.ts';
-import { speechService } from '../audio/speech-service.ts';
 
 /**
  * Tek bir sorunun özellik çubuğunu açar / kapatır.
@@ -172,7 +171,8 @@ export async function toggleSpeakQuestion(qId: number | string, event?: Event): 
   const q = state.bookletQuestions.find(item => item.id === id) || state.allData.find(item => item.id === id);
   if (!q) return false;
 
-  return speechService.toggleQuestion(q);
+  notifyStateChange('audio:speak', q);
+  return true;
 }
 
 /**

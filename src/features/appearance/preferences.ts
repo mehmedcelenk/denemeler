@@ -1,4 +1,5 @@
 import { state, store } from '../../app/state.ts';
+import { readString, writeString } from '../../app/storage.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 
 export const ACCENT_COLORS: Record<string, { light: string; dark: string }> = {
@@ -37,9 +38,7 @@ export function cycleAccentColor() {
 export function setAccentColor(colorKey: string) {
   if (!ACCENT_COLORS[colorKey]) colorKey = 'blue';
   currentAccent = colorKey;
-  try {
-    localStorage.setItem(StorageKeys.ACCENT_COLOR, colorKey);
-  } catch {}
+  writeString(StorageKeys.ACCENT_COLOR, colorKey);
 
   const cfg = ACCENT_COLORS[colorKey];
   document.documentElement.style.setProperty('--user-accent', cfg.light);
@@ -55,10 +54,8 @@ export function setAccentColor(colorKey: string) {
 
 export function initAccentColor() {
   let color = 'blue';
-  try {
-    const saved = localStorage.getItem(StorageKeys.ACCENT_COLOR);
-    if (saved && ACCENT_COLORS[saved]) color = saved;
-  } catch {}
+  const saved = readString(StorageKeys.ACCENT_COLOR);
+  if (saved && ACCENT_COLORS[saved]) color = saved;
   setAccentColor(color);
 }
 
@@ -70,9 +67,7 @@ export function setThemeMode(mode: 'dark' | 'light') {
   } else {
     document.body.classList.remove('dark-mode');
   }
-  try {
-    localStorage.setItem(StorageKeys.THEME, isDark ? 'dark' : 'light');
-  } catch {}
+  writeString(StorageKeys.THEME, isDark ? 'dark' : 'light');
 
   const btn = document.getElementById('btnConsoleThemeCycle');
   if (btn) {
@@ -85,10 +80,7 @@ export function setThemeMode(mode: 'dark' | 'light') {
 
 export function initTheme() {
   let theme: 'dark' | 'light' = 'light';
-  try {
-    const saved = localStorage.getItem(StorageKeys.THEME);
-    if (saved === 'dark') theme = 'dark';
-  } catch {}
+  if (readString(StorageKeys.THEME) === 'dark') theme = 'dark';
   setThemeMode(theme);
 }
 

@@ -2,7 +2,6 @@ import { state, store, notifyStateChange, type LibraryTab } from '../../app/stat
 import { loadSubjectData } from '../../data/questions.js';
 import { SUBJECTS } from '../../data/subjects.js';
 import { toggleConsoleMenu } from '../appearance/preferences.ts';
-import { updateFilterButtonsUI } from '../booklet/filter.ts';
 
 export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void> {
   const popup = document.getElementById('consoleMenuPopup');
@@ -12,7 +11,6 @@ export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void
 
   store.setLibraryMode(true, tab);
 
-  updateFilterButtonsUI();
   notifyStateChange('filter:updated');
 
   const targetIds = tab === 'rematch' ? state.rematchQuestionIds : state.starredQuestionIds;
@@ -38,9 +36,10 @@ export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void
   }
 
   // Tüm derslerin verilerini yükle (Gerekiyorsa)
-  for (const s of Object.keys(SUBJECTS)) {
+  for (const subject of SUBJECTS) {
     try {
-      await loadSubjectData(s);
+      const questions = await loadSubjectData(subject.id);
+      store.appendQuestions(questions);
     } catch {}
   }
 
@@ -56,7 +55,6 @@ export function switchLibraryTab(tab: LibraryTab): void {
 
 export function exitLibraryView(): void {
   store.setLibraryMode(false);
-  updateFilterButtonsUI();
   notifyStateChange('filter:updated');
   notifyStateChange('drawer:topics-refresh');
   notifyStateChange('booklet:refresh');

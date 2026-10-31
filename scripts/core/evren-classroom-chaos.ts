@@ -1,25 +1,8 @@
-import { readFileSync, existsSync } from 'node:fs';
-import path from 'node:path';
+import { loadEnvKey } from './chaos-env.ts';
 import assert from 'node:assert/strict';
 import { handleIncomingRoomMessage } from '../../src/features/classroom/message-handler.ts';
 import { calculateStudentRank } from '../../src/features/classroom/ranking.ts';
-import type { RoomFeedItem, RoomParticipant, StudentStats } from '../../src/features/classroom/types.ts';
-
-function loadEnvKey(keyName: string): string {
-  if (process.env[keyName]) return process.env[keyName]!;
-  const envPath = path.resolve(process.cwd(), '.env');
-  if (!existsSync(envPath)) return '';
-  const content = readFileSync(envPath, 'utf8');
-  for (const line of content.split('\n')) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith('#') || !trimmed.includes('=')) continue;
-    const [k, ...v] = trimmed.split('=');
-    if (k.trim() === keyName) {
-      return v.join('=').trim().replace(/^['"]|['"]$/g, '');
-    }
-  }
-  return '';
-}
+import type { RoomFeedItem, RoomParticipant, StudentStats, RoomMessage } from '../../src/features/classroom/types.ts';
 
 interface SimulatedDevice {
   id: string;
@@ -43,7 +26,7 @@ async function runRedTeamFuzzingSuite(): Promise<void> {
 
   const roomId = 'HACK-RESILIENT-99';
   const now = Date.now();
-  const networkListeners: Array<(msg: any) => void> = [];
+  const networkListeners: Array<(msg: unknown) => void> = [];
 
   function createDevice(id: string, name: string, isHost: boolean): SimulatedDevice {
     const dev: SimulatedDevice = {
@@ -59,7 +42,7 @@ async function runRedTeamFuzzingSuite(): Promise<void> {
       syncBroadcastCount: 0,
     };
 
-    networkListeners.push((msg: any) => {
+    networkListeners.push((msg: unknown) => {
       handleIncomingRoomMessage(
         {
           peerId: dev.id,
@@ -77,16 +60,16 @@ async function runRedTeamFuzzingSuite(): Promise<void> {
           scheduleSyncBroadcast: () => { dev.syncBroadcastCount++; },
           notify: () => {},
         },
-        msg
+        msg as RoomMessage
       );
     });
 
     return dev;
   }
 
-  function broadcastNetwork(senderId: string, msg: any) {
+  function broadcastNetwork(senderId: string, msg: unknown) {
     for (const listener of networkListeners) {
-      listener({ ...msg, senderId, roomId });
+      listener({ ...((msg ?? {}) as Record<string, unknown>), senderId, roomId });
     }
   }
 
@@ -166,8 +149,8 @@ async function runRedTeamFuzzingSuite(): Promise<void> {
     { correctCount: Infinity, incorrectCount: -Infinity },
     { correctCount: 999999, incorrectCount: 0 },
     { correctCount: -500, incorrectCount: -100 },
-    { correctCount: 'hack' as any, incorrectCount: {} as any },
-    { correctCount: null as any, incorrectCount: undefined as any },
+    { correctCount: 'hack', incorrectCount: {} },
+    { correctCount: null, incorrectCount: undefined },
   ];
 
   for (const poison of mathPoisonPayloads) {
@@ -293,7 +276,7 @@ async function runRedTeamFuzzingSuite(): Promise<void> {
       });
 
       if (response.ok) {
-        const data = (await response.json()) as any;
+        const data = await response.json() as { choices?: { message?: { content?: string } }[] };
         console.log('\n🛡️  EVREN SİBER GÜVENLİK VE DAYANIKLILIK KARNESİ:');
         console.log(data.choices?.[0]?.message?.content || 'Onaylandı.');
       }

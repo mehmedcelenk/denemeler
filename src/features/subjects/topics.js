@@ -1,7 +1,6 @@
 import { getAggregatedTopics } from './topic-model.js';
 import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { getCondensedCourseCode, matchesSubject, AOIHL_SUBJECTS, AOF_SUBJECTS } from '../../data/subjects.js';
-import { updateFilterButtonsUI } from '../booklet/filter.ts';
 import { getExamPeriodsForSelection, renderExamPeriodsHtml, selectExamPeriodFromDrawer } from './exam-periods.ts';
 import { renderTopicsTreeHtml } from './topics-tree.ts';
 
@@ -227,7 +226,6 @@ export function selectTopicFromDrawer(topicKey) {
   store.setSelectedTopicKeys([topicKey]);
   store.setActiveSearchFilter('');
   store.setBookletFilterMode('all');
-  updateFilterButtonsUI();
   notifyStateChange('drawer:close');
   notifyStateChange('filter:updated');
   notifyStateChange('booklet:refresh');
@@ -236,7 +234,6 @@ export function selectTopicFromDrawer(topicKey) {
 export function loadAllTopicsToBooklet() {
   store.setActiveSearchFilter('');
   store.setBookletFilterMode('all');
-  updateFilterButtonsUI();
   notifyStateChange('drawer:close');
   notifyStateChange('filter:updated');
   notifyStateChange('booklet:refresh');

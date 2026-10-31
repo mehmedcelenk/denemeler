@@ -1,0 +1,183 @@
+.xray-vag {
+  display: inline;
+  background-color: transparent !important;
+  border-bottom: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cümle Ögesi Ayrım Çizgisi (Kavşak) */
+.xray-junction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4px;
+  padding: 0 2px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+  vertical-align: baseline;
+  transition: all 0.15s ease;
+  background: transparent;
+}
+.xray-junction:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.15);
+}
+.xray-j-code {
+  display: none !important;
+}
+.xray-pipe {
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 1.05em;
+  opacity: 1;
+  transition: all 0.15s ease;
+  line-height: 1;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.7), 0 0 2px rgba(0, 0, 0, 0.4);
+}
+body.dark-mode .xray-pipe {
+  text-shadow: none;
+}
+.xray-junction:hover .xray-pipe {
+  color: #ffffff !important;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
+}
+
+/* Tıklanabilir Sözcük Türleri: Sadece altı çizili (Fosforsuz) */
+.pos-word {
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-radius: 2px;
+  background-color: transparent !important;
+  padding: 0;
+  margin: 0;
+}
+.pos-word.concept-word,
+.concept-word .pos-word,
+.concept-word {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+:root {
+  --pos-adj: #2563eb; --pos-pron: #9333ea; --pos-adv: #d97706; --pos-verbal: #059669;
+  --pos-edat: #e11d48; --pos-conj: #0d9488; --pos-noun: #9a3412; --pos-tamlama: #4338ca;
+}
+body.dark-mode {
+  --pos-adj: #60a5fa; --pos-pron: #c084fc; --pos-adv: #fbbf24; --pos-verbal: #34d399;
+  --pos-edat: #fb7185; --pos-conj: #2dd4bf; --pos-noun: #fb923c; --pos-tamlama: #818cf8;
+}
+
+.pos-word.pos-adj { border-bottom: 2px solid var(--pos-adj); }
+.pos-word.pos-pron { border-bottom: 2px dotted var(--pos-pron); }
+.pos-word.pos-adv { border-bottom: 2px solid var(--pos-adv); }
+.pos-word.pos-verbal { border-bottom: 2px solid var(--pos-verbal); }
+.pos-word.pos-edat { border-bottom: 2px dashed var(--pos-edat); }
+.pos-word.pos-conj { border-bottom: 2px dotted var(--pos-conj); }
+.pos-word.pos-noun { border-bottom: 2px solid var(--pos-noun); }
+.pos-word.pos-tamlama { border-bottom: 2px dashed var(--pos-tamlama); }
+.pos-word:hover { background-color: rgba(0, 0, 0, 0.05) !important; }
+body.dark-mode .pos-word:hover { background-color: rgba(255, 255, 255, 0.08) !important; }
+.pos-tag { display: none !important; }
+
+/* Ses Olayları: Alt Çizgisiz, Sevimli Mini İkon / Emojicikli Mikro Rozet */
+.sound-spark { display: none !important; }
+.sound-word { cursor: pointer; transition: all 0.15s ease; border-radius: 2px; background-color: transparent !important; border-bottom: none !important; padding: 0; margin: 0; position: relative; }
+.pos-word.has-sound { cursor: pointer; transition: all 0.15s ease; border-radius: 2px; background-color: transparent !important; padding: 0; margin: 0; position: relative; }
+.sound-word:hover,
+.pos-word.has-sound:hover { background-color: rgba(225, 29, 72, 0.08) !important; }
+body.dark-mode .sound-word:hover,
+body.dark-mode .pos-word.has-sound:hover { background-color: rgba(225, 29, 72, 0.16) !important; }
+
+.sound-word::after,
+.pos-word.has-sound::after {
+  display: inline-block;
+  font-size: 0.74em;
+  vertical-align: super;
+  margin-left: 1.5px;
+  opacity: 0.95;
+  line-height: 1;
+  font-family: system-ui, -apple-system, sans-serif;
+  user-select: none;
+  content: "✨";
+}
+.sound-word[data-note*="Benzeşme"]::after, .pos-word.has-sound[data-tr*="Benzeşme"]::after { content: "🪨"; }
+.sound-word[data-note*="Yumuşama"]::after, .pos-word.has-sound[data-tr*="Yumuşama"]::after { content: "☁️"; }
+.sound-word[data-note*="Türeme"]::after, .pos-word.has-sound[data-tr*="Türeme"]::after { content: "🤰"; }
+.sound-word[data-note*="Daralma"]::after, .pos-word.has-sound[data-tr*="Daralma"]::after { content: "🤏"; }
+.sound-word[data-note*="Ünlü Düşmesi"]::after, .pos-word.has-sound[data-tr*="Ünlü Düşmesi"]::after { content: "🍂"; }
+.sound-word[data-note*="Ünsüz Düşmesi"]::after, .pos-word.has-sound[data-tr*="Ünsüz Düşmesi"]::after { content: "🪂"; }
+.sound-word[data-note*="N-M"]::after, .pos-word.has-sound[data-tr*="N-M"]::after { content: "👄"; }
+.sound-word[data-note*="Benzeşme"][data-note*="Yumuşama"]::after, .pos-word.has-sound[data-tr*="Benzeşme"][data-tr*="Yumuşama"]::after { content: "🪨☁️"; }
+.sound-word[data-note*="Düşmesi"][data-note*="Yumuşama"]::after, .pos-word.has-sound[data-tr*="Düşmesi"][data-tr*="Yumuşama"]::after { content: "🍂☁️"; }
+.sound-word[data-note*="Düşmesi"][data-note*="Benzeşme"]::after, .pos-word.has-sound[data-tr*="Düşmesi"][data-tr*="Benzeşme"]::after { content: "🍂🪨"; }
+
+/* Dil Bilgisi Katmanlarını Bağımsız Gizleme / Gösterme */
+.booklet-question.hide-syntax .xray-junction { display: none !important; }
+.booklet-question.hide-pos .pos-word { border-bottom: none !important; }
+.booklet-question.hide-sound .sound-word::after,
+.booklet-question.hide-sound .pos-word.has-sound::after { display: none !important; }
+
+/* Test Butonları Renkleri */
+.btn-companion-icon.btn-text-badge.btn-xray-syntax.active { background: #2563eb !important; border-color: #2563eb !important; color: #fff !important; }
+.btn-companion-icon.btn-text-badge.btn-xray-pos.active { background: #7c3aed !important; border-color: #7c3aed !important; color: #fff !important; }
+.btn-companion-icon.btn-text-badge.btn-xray-sound.active { background: #e11d48 !important; border-color: #e11d48 !important; color: #fff !important; }
+
+.xray-speaker {
+  font-weight: 700;
+  color: var(--paper-text-muted);
+  margin-right: 2px;
+}
+.xray-prompt {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+  text-decoration: none !important;
+}
+.no-xray-underlines .xray-sub,
+.no-xray-underlines .xray-verb,
+.no-xray-underlines .xray-obj,
+.no-xray-underlines .xray-adv {
+  text-decoration: none !important;
+}
+
+/* Cümle Ögesi Kesir Balonu */
+.xray-fraction-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+  min-width: 130px;
+  text-align: center;
+}
+.xray-fraction-phrase {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--paper-text, #0f172a);
+  line-height: 1.4;
+  text-align: center;
+  padding: 1px 4px;
+  max-width: 320px;
+  word-break: break-word;
+}
+body.dark-mode .xray-fraction-phrase {
+  color: #f1f5f9;
+}
+.xray-fraction-bar {
+  width: 90%;
+  height: 2px;
+  margin: 5px 0;
+  border-radius: 2px;
+  opacity: 0.85;
+}
+.xray-fraction-role {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 1px 4px;
+}

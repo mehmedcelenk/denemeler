@@ -1,13 +1,48 @@
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import ts from 'typescript';
 
 const errors = [];
 const warnings = [];
 const graph = new Map();
-const root = path.resolve('src');
+const projectRoot = path.resolve('.');
+const root = path.join(projectRoot, 'src');
+const storageKeysPath = path.join(root, 'shared', 'storage-keys.ts');
+const storageGatewayPath = path.join(root, 'app', 'storage.ts');
+const CORE_FEATURES = new Set(['answers', 'booklet', 'subjects', 'appearance']);
+const PLUGINS = new Set([
+  'classroom', 'gamification', 'library', 'english', 'audio', 'ai-tutor',
+  'tde', 'formulas', 'board', 'print', 'prayer', 'annotations', 'search',
+]);
 
-// 1. src/ dizinini tara ve AST ile bağımlılık grafını kur
+function hasAolStringLiteral(ast) {
+  let found = false;
+  function visit(node) {
+    if (
+      (ts.isStringLiteral(node)
+        || ts.isNoSubstitutionTemplateLiteral(node)
+        || ts.isTemplateHead(node)
+        || ts.isTemplateMiddle(node)
+        || ts.isTemplateTail(node))
+      && node.text.includes('aol_')
+    ) {
+      found = true;
+      return;
+    }
+    ts.forEachChild(node, visit);
+  }
+  visit(ast);
+  return found;
+}
+
+function checkSourceSize(file, source) {
+  const lines = source.trimEnd().split('\n').length;
+  if (lines > 300) {
+    errors.push(`📏 [Dosya Boyutu] ${path.relative(projectRoot, file)}: ${lines} satır (üst sınır: 300 satır).`);
+  }
+}
+
+// 1. Uygulama ve edge dizinlerini tara ve AST ile bağımlılık grafını kur
 function scan(dir) {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
     const file = path.join(dir, entry.name);
@@ -15,12 +50,14 @@ function scan(dir) {
     if (!/\.(js|ts|css)$/.test(file)) continue;
 
     const source = readFileSync(file, 'utf8');
-    const lines = source.trimEnd().split('\n').length;
-    const relFile = path.relative(root, file);
+    const relFile = path.relative(projectRoot, file);
 
-    // Kural 2: Aşırı büyük dosyalar (WARNING)
-    if (lines > 350) {
-      warnings.push(`📏 [Dosya Boyutu] ${relFile}: ${lines} satır (önerilen sınır: 350 satır).`);
+    // Kural 2: Dosya boyutu üst sınırı (ERROR)
+    checkSourceSize(file, source);
+
+    // Kural 9: Tarayıcı kalıcılığına yalnızca merkezi kapı erişebilir
+    if (file !== storageGatewayPath && /\blocalStorage\b/.test(source)) {
+      errors.push(`💾 [Kalıcılık Kapısı] ${relFile}: localStorage yalnızca src/app/storage.ts içinde kullanılabilir.`);
     }
 
     if (file.endsWith('.css')) continue;
@@ -34,6 +71,11 @@ function scan(dir) {
 
     const ast = ts.createSourceFile(file, source, ts.ScriptTarget.Latest, true);
     const dependencies = [];
+
+    // Kural 8: Kalıcı depolama anahtarlarının tek kaynağı
+    if (file !== storageKeysPath && hasAolStringLiteral(ast)) {
+      errors.push(`🗝️ [Depolama Anahtarı] ${relFile}: 'aol_' literali yalnızca src/shared/storage-keys.ts içinde tanımlanabilir.`);
+    }
 
     for (const node of ast.statements) {
       if (!ts.isImportDeclaration(node)) continue;
@@ -57,11 +99,32 @@ function scan(dir) {
         if (file.startsWith(path.join(root, 'data') + path.sep) && /[/\\]features[/\\]/.test(target)) {
           errors.push(`🏗️ [Katman İhlali] ${relFile} -> ${spec}: data katmanı features katmanına bağımlı olamaz.`);
         }
+        if (file.startsWith(path.join(root, 'data') + path.sep) && /[/\\]app[/\\]/.test(target)) {
+          errors.push(`🏗️ [Katman İhlali] ${relFile} -> ${spec}: data katmanı app katmanına bağımlı olamaz.`);
+        }
+
+        // Kural 10: Çekirdek, silinebilir eklentileri doğrudan import edemez
+        const fileFeatureMatch = relFile.match(/^src[/\\]features[/\\]([^/\\]+)/);
+        const targetRel = path.relative(projectRoot, target);
+        const targetFeatureMatch = targetRel.match(/^src[/\\]features[/\\]([^/\\]+)/);
+        if (
+          file.startsWith(path.join(root, 'app') + path.sep)
+          && file !== path.join(root, 'app', 'bootstrap.js')
+          && targetFeatureMatch
+          && PLUGINS.has(targetFeatureMatch[1])
+        ) {
+          errors.push(`🧩 [Uygulama İzolasyonu] ${relFile} -> ${spec}: eklentiler app katmanına yalnızca bootstrap.js üzerinden bağlanabilir.`);
+        }
+        if (
+          fileFeatureMatch
+          && targetFeatureMatch
+          && CORE_FEATURES.has(fileFeatureMatch[1])
+          && PLUGINS.has(targetFeatureMatch[1])
+        ) {
+          errors.push(`🧩 [Jenga İzolasyonu] ${relFile} -> ${spec}: çekirdek '${fileFeatureMatch[1]}' eklenti '${targetFeatureMatch[1]}' modülünü doğrudan import edemez.`);
+        }
 
         // Kural 6: Cross-coupling (WARNING)
-        const fileFeatureMatch = relFile.match(/^features[/\\]([^/\\]+)/);
-        const targetRel = path.relative(root, target);
-        const targetFeatureMatch = targetRel.match(/^features[/\\]([^/\\]+)/);
         if (fileFeatureMatch && targetFeatureMatch && fileFeatureMatch[1] !== targetFeatureMatch[1]) {
           const featA = fileFeatureMatch[1];
           const featB = targetFeatureMatch[1];
@@ -82,12 +145,32 @@ function scan(dir) {
 }
 
 scan(root);
+scan(path.join(projectRoot, 'functions'));
+if (existsSync('edge')) scan(path.join(projectRoot, 'edge'));
+
+// Test ve bakım kaynakları da aynı satır payını korur; uygulama kuralları bunlara uygulanmaz.
+function checkAdditionalSourceSizes(dir) {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) checkAdditionalSourceSizes(file);
+    else if (/\.(js|ts|css)$/.test(file)) checkSourceSize(file, readFileSync(file, 'utf8'));
+  }
+}
+for (const dir of ['tests', 'scripts']) {
+  if (existsSync(dir)) checkAdditionalSourceSizes(path.join(projectRoot, dir));
+}
+for (const entry of readdirSync(projectRoot, { withFileTypes: true })) {
+  if (entry.isFile() && /\.(js|ts|css)$/.test(entry.name)) {
+    const file = path.join(projectRoot, entry.name);
+    checkSourceSize(file, readFileSync(file, 'utf8'));
+  }
+}
 
 // Kural 1: Döngüsel import tespiti (ERROR)
 const done = new Set();
 function visit(file, stack = []) {
   if (stack.includes(file)) {
-    errors.push(`🔄 [Döngüsel Bağımlılık] ${[...stack.slice(stack.indexOf(file)), file].map(p => path.relative(root, p)).join(' -> ')}`);
+    errors.push(`🔄 [Döngüsel Bağımlılık] ${[...stack.slice(stack.indexOf(file)), file].map(p => path.relative(projectRoot, p)).join(' -> ')}`);
     return;
   }
   if (done.has(file)) return;

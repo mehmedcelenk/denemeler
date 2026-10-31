@@ -1,18 +1,13 @@
 import { state, store } from '../../app/state.ts';
-
-const STREAK_KEY = 'aol_water_streak';
+import { readString } from '../../app/storage.ts';
+import { StorageKeys } from '../../shared/storage-keys.ts';
 
 export function loadStreak(): number {
-  try {
-    const raw = localStorage.getItem(STREAK_KEY);
-    const count = raw ? parseInt(raw, 10) || 0 : 0;
-    store.setWaterStreak(count, false);
-    updateStreakUI();
-    return count;
-  } catch {
-    store.setWaterStreak(0, false);
-    return 0;
-  }
+  const raw = readString(StorageKeys.WATER_STREAK);
+  const count = raw ? parseInt(raw, 10) || 0 : 0;
+  store.setWaterStreak(count, false);
+  updateStreakUI();
+  return count;
 }
 
 export function saveStreak(): void {
