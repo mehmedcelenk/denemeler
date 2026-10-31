@@ -19,7 +19,7 @@
 - `src/app/events.js` mevcut inline HTML olayları için uyumluluk sınırıdır. Yeni arayüz olaylarında `addEventListener` kullan. Mevcut inline fonksiyonların isimlerini değiştirirken bu dosyayı da güncelle.
 - `index.html` uygulama kabuğudur. Buraya script/style blokları veya veri gömme.
 - `scripts/build_webapp.py` yalnızca `data/subjects/` ve `src/data/generated/` üretir; arayüz kaynaklarını üretmez.
-- Üretilen veriyi elle düzeltmek yerine veri üretim kaynağını bul. Kullanıcının mevcut JSON/ses değişikliklerini koru.
+- Üretilen veriyi elle düzeltmek yerine veri üretim kaynağını bul. Kullanıcının mevcut JSON değişikliklerini koru.
 - Soru metinlerini HTML'e koyarken `escapeHtml` kullan. Röntgen HTML'i mevcut üretim zincirinden gelir; dış kaynaklı HTML için bu güveni varsayma.
 - `aol_*` localStorage anahtarlarını ve soru kimliklerini değiştirirken eski kullanıcı verisine geçiş planı yap.
 

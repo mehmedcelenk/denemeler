@@ -51,13 +51,13 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 `index.html → src/main.js → olay bağlantıları → startApp()`.
 Başlangıçta kayıtlı tercihler okunur, ilk dersin JSON'u yüklenip doğrulanır ve kitapçık çizilir. `src/data/questions.js` yalnızca doğrulanmış soruları döndürür; çağıran uygulama/özellik modülü bunları `store.appendQuestions` ile state'e ekler. Diğer ders verileri ihtiyaç oldukça yüklenir. Tekrarlanan eşzamanlı yüklemeler aynı promise'i kullanır.
 
-Çekirdek özellikler (`answers`, `booklet`, `subjects`, `appearance`) silinebilir eklentileri doğrudan import etmez. Cevap yan etkileri `app/state-events.ts` olaylarıyla, soru kartı uzantıları `booklet/card-hooks.ts` kancalarıyla bağlanır; eklentiler kayıtlarını `app/bootstrap.js` içindeki kendi `init*` fonksiyonlarında yapar. Ortak değişkenlerin tek kaynağı `app/state.ts` dosyasıdır. Ses oynatıcının geçici durumu kendi modülünde tutulur. Kalıcılık işlemleri yalnızca `app/storage.ts` üzerinden yürür; `shared` saf yardımcıları uygulamayı başlatmaz ve DOM'a bağlı değildir.
+Çekirdek özellikler (`answers`, `booklet`, `subjects`, `appearance`) silinebilir eklentileri doğrudan import etmez. Cevap yan etkileri `app/state-events.ts` olaylarıyla, soru kartı uzantıları `booklet/card-hooks.ts` kancalarıyla bağlanır; eklentiler kayıtlarını `app/bootstrap.js` içindeki kendi `init*` fonksiyonlarında yapar. Ortak değişkenlerin tek kaynağı `app/state.ts` dosyasıdır. Kalıcılık işlemleri yalnızca `app/storage.ts` üzerinden yürür; `shared` saf yardımcıları uygulamayı başlatmaz ve DOM'a bağlı değildir.
 
 Python akışı:
 
 `data/raw_pipeline/ + scripts/*_data.py → build_webapp.py → data/subjects + src/data/generated`.
 
-Arayüz kodu Python içinde tutulmaz. Veri güncellemesi HTML/CSS/JS dosyalarını yeniden yazmaz. `data/` ve `audio/` yolları korunmuştur; Vite build çalışma anında gereken verileri ve varlıkları `dist/` içine kopyalar.
+Arayüz kodu Python içinde tutulmaz. Veri güncellemesi HTML/CSS/JS dosyalarını yeniden yazmaz. `data/` yolu korunmuştur; Vite build çalışma anında gereken verileri ve varlıkları `dist/` içine kopyalar.
 
 ## Bir değişikliği AI ile yaptırmak
 
@@ -81,4 +81,4 @@ Arayüz kodu Python içinde tutulmaz. Veri güncellemesi HTML/CSS/JS dosyaların
 
 Kitapçık render fonksiyonu halen HTML şablonu üretir. Yeni bir kart türü veya daha karmaşık bölüm eklenirse ayrı renderer'a çıkar. React ihtiyacı ileride değerlendirilirken veri sözleşmeleri ve saf yardımcılar yeniden kullanılabilir.
 
-Bu düzen AI değişikliklerini kontrol edilebilir hale getirir; otomatik kontroller her olası davranış hatasını tespit etmez. Özellikle sesin gerçekten duyulması ve fiziksel yazdırma ayrıca kullanıcı cihazında kontrol gerektirir.
+Bu düzen AI değişikliklerini kontrol edilebilir hale getirir; otomatik kontroller her olası davranış hatasını tespit etmez. Özellikle fiziksel yazdırma ayrıca kullanıcı cihazında kontrol gerektirir.
