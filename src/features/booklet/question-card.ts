@@ -106,6 +106,14 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
 /** Sınav kaynağı etiketini üretir. */
 export function renderCardSourceTag(q: Question): string {
   const shortCourse = getShortCourseName(q.ders);
+  if (q.sinav_kodu) {
+    const label = `${shortCourse} • ${q.sinav_kodu}`;
+    return `<div class="q-source-tag" title="Sınav: ${escapeHtml(label)}">${escapeHtml(label)}</div>`;
+  }
+  if (q.yil === 'AÖF Alıştırma Soruları') {
+    const label = `${shortCourse} • ${q.donem || 'Alıştırma'}`;
+    return `<div class="q-source-tag" title="Sınav: ${escapeHtml(label)}">${escapeHtml(label)}</div>`;
+  }
   const year = q.yil ? q.yil.substring(2, 4) : '24';
   const term = q.donem ? String(q.donem) : '1';
   const label = `${shortCourse} • ${year}-D${term}`;

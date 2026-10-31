@@ -3,6 +3,7 @@ import { state, store, onStateChange } from '../../app/state.ts';
 import { SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { questionMatchesSearch } from '../../shared/search.ts';
 import { getAggregatedTopics } from '../subjects/topic-model.js';
+import { getExamPeriodKey } from '../subjects/exam-periods.ts';
 import { renderBookletPages } from './render.js';
 import { filterQuestionsByMode } from '../../shared/question-filter.ts';
 
@@ -33,7 +34,7 @@ export function updateBookletQuestions() {
       if (!matchesSubject(q, state.currentSubject)) return false;
     }
     if (state.selectedExamPeriod) {
-      const qPeriod = `${q.yil || ''} ${q.donem ? `${q.donem}. Dönem` : ''}`.trim();
+      const qPeriod = getExamPeriodKey(q);
       if (qPeriod !== state.selectedExamPeriod) return false;
     }
     if (isTde && validTopicKeys) {

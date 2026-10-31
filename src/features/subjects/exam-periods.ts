@@ -8,6 +8,20 @@ export interface ExamPeriodInfo {
   count: number;
 }
 
+export function getExamPeriodKey(q: { yil?: string; donem?: string | number; sinav_kodu?: string }): string {
+  if (q.sinav_kodu) {
+    return `${q.yil ? `${q.yil} ` : ''}(${q.sinav_kodu})`.trim();
+  }
+  if (q.yil === 'AÖF Alıştırma Soruları') {
+    return `AÖF Alıştırma Soruları ${q.donem ? `(${q.donem})` : ''}`.trim();
+  }
+  if (!q.donem) return q.yil || '';
+  if (/^\d+$/.test(String(q.donem))) {
+    return `${q.yil || ''} ${q.donem}. Dönem`.trim();
+  }
+  return `${q.yil || ''} ${q.donem}`.trim();
+}
+
 export function getExamPeriodsForSelection(): ExamPeriodInfo[] {
   const map = new Map<string, number>();
 
@@ -18,7 +32,7 @@ export function getExamPeriodsForSelection(): ExamPeriodInfo[] {
       if (!matchesSubject(q, state.currentSubject)) return;
     }
 
-    const key = `${q.yil || ''} ${q.donem ? `${q.donem}. Dönem` : ''}`.trim();
+    const key = getExamPeriodKey(q);
     if (!key) return;
     map.set(key, (map.get(key) || 0) + 1);
   });
@@ -29,14 +43,7 @@ export function getExamPeriodsForSelection(): ExamPeriodInfo[] {
   });
 
   list.sort((a, b) => {
-    const partsA = a.key.split(' ');
-    const partsB = b.key.split(' ');
-    const yilA = partsA[0] || '';
-    const yilB = partsB[0] || '';
-    if (yilA !== yilB) return yilB.localeCompare(yilA);
-    const donemA = parseInt(partsA[1] || '0', 10);
-    const donemB = parseInt(partsB[1] || '0', 10);
-    return donemB - donemA;
+    return b.key.localeCompare(a.key, 'tr', { numeric: true });
   });
 
   return list;

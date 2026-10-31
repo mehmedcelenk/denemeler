@@ -1,0 +1,163 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""AÖF İlk Dönem İslâm Tarihi 4. Ünite Kavramları."""
+
+from typing import Any, Dict, List
+
+UNIT4_CONCEPTS: List[Dict[str, Any]] = [
+    {
+        "id": "itar_evs_ve_hazrec",
+        "term": "Evs ve Hazrec Kabileleri (Ensâr)",
+        "unite_no": 4,
+        "tanim": "Yesrib'in yerli Arap kabileleridir. İslâm öncesinde aralarındaki Buâs Savaşı ile yıpranmışken, İslâm ile barışıp Hz. Peygamber'e kucak açmış ve 'Ensâr' (Yardımcılar) adını almışlardır.\n💡 Sınav Şifresi: Medine'nin yerli kabileleri + Buâs Savaşı $\\to$ **Evs ve Hazrec (Ensâr)**.",
+        "pattern": r"evs ve hazrec|evs kabilesi|hazrec kabilesi|\bevs\b|\bhazre[çc]\b|bu[aâ]s savaşı|\bens[aâ]r[a-zçğıöşü]*",
+    },
+    {
+        "id": "itar_muvahat",
+        "term": "Muvâhât (Muhacir - Ensar Kardeşliği)",
+        "unite_no": 4,
+        "tanim": "Hicretten sonra Hz. Peygamber'in Enes b. Mâlik'in evinde Mekkeli muhacirler ile Medineli ensar arasında kurduğu din kardeşliği bağıdır. Ensar mallarını ve evlerini muhacirlerle bölüşmüştür.\n💡 Sınav Şifresi: Muhacir ile Ensar arasında ilan edilen dinî kardeşlik bağı = **Muvâhât**.",
+        "pattern": r"muv[aâ]h[aâ]t[a-zçğıöşü]*|muhacir-ensar kardeşliği|kardeşleşme[a-zçğıöşü]*|enes bin m[aâ]lik[’'‘]in evi|enes b\.\s*m[aâ]lik",
+    },
+    {
+        "id": "itar_medine_vesikasi",
+        "term": "Medine Vesikası (Medine Sözleşmesi)",
+        "unite_no": 4,
+        "tanim": "Hz. Peygamber'in hicretin ilk yılında Muhacirler, Ensar ve Medine Yahudileri arasında akdettiği; ortak savunma, inanç özgürlüğü ve Hz. Muhammed'in hakemliğini öngören ilk yazılı anayasadır.\n💡 Sınav Şifresi: Dünyanın ilk yazılı anayasası + Yahudilerle ortak savunma metni = **Medine Vesikası**.",
+        "pattern": r"medine ves[iî]kas[ıi][a-zçğıöşü]*|medine sözleşmesi[a-zçğıöşü]*|medine anayasas[ıi][a-zçğıöşü]*|medine belgesi[a-zçğıöşü]*|yazılı anayasa|bağımsız bir isl[aâ]m devletinin kuruluşu|hazırlanan sözleşme",
+    },
+    {
+        "id": "itar_suffe",
+        "term": "Suffe ve Ehl-i Suffe",
+        "unite_no": 4,
+        "tanim": "Mescid-i Nebevî'nin arka kısmında inşa edilen; evi ve ailesi olmayan kimsesiz muhacirlerin barındığı ve devamlı ilim tahsil ettiği yatılı mektep/gölgeliktir. Ebû Hüreyre buranın önde gelen talebelerindendir.\n💡 Sınav Şifresi: Mescid-i Nebevî arkasındaki ilim talebeleri ve kimsesizler yurdu = **Suffe**.",
+        "pattern": r"\bsuffe\b|ehl-i suffe|ash[aâ]b-ı suffe",
+    },
+    {
+        "id": "itar_mescid_i_nebevi",
+        "term": "Mescid-i Nebevî",
+        "unite_no": 4,
+        "tanim": "Hz. Peygamber'in Medine'de inşa ettiği; ibadet, devlet idaresi, elçi kabulleri (Üstüvânetü'l-Vüfûd), yargılama, hastane ve eğitim gibi çok yönlü fonksiyon ifa eden merkezî mescittir.\n💡 Sınav Şifresi: Kasvâ devesinin çöktüğü arsada kurulan idare ve ibadet merkezi = **Mescid-i Nebevî**.",
+        "pattern": r"mescid-i nebev[iî][a-zçğıöşü]*|mescidi nebevi[a-zçğıöşü]*|devesinin c[öo]kt[üu][gğ][üu]|devesi c[öo]kt[üu]",
+    },
+    {
+        "id": "itar_kible_degisimi",
+        "term": "Kıblenin Değişmesi",
+        "unite_no": 4,
+        "tanim": "Hicretin 16-17. ayında Bakara 144. âyetle Müslümanların namaz kıblesinin Kudüs'teki Mescid-i Aksâ'dan Mekke'deki Kâbe'ye çevrilmesidir (Mescid-i Kıbleteyn).\n💡 Sınav Şifresi: Mescid-i Aksâ'dan Kâbe'ye yöneliş = **Kıblenin Değişmesi**.",
+        "pattern": r"kıblenin değişmesi[a-zçğıöşü]*|kıble değişimi|mescid-i kıbleteyn",
+    },
+    {
+        "id": "itar_gazve_ve_seriyye",
+        "term": "Gazve ve Seriyye",
+        "unite_no": 4,
+        "tanim": "Hz. Peygamber'in bizzat kumandanlık ettiği askerî harekâtlara **Gazve** (yaklaşık 27 adet); bizzat katılmayıp bir sahâbî kumandasında gönderdiği askerî birliklere **Seriyye** denir.\n💡 Sınav Şifresi: Peygamber'in katıldığı = **Gazve**; Sahabî kumandasındaki birlik = **Seriyye**.",
+        "pattern": r"gazve ve seriyye|\bgazve[a-zçğıöşü]*|\bseriyye[a-zçğıöşü]*|kumandası altında gönderdiği askerî birlik",
+    },
+    {
+        "id": "itar_bedir_gazvesi",
+        "term": "Bedir Gazvesi (624 / H. 2)",
+        "unite_no": 4,
+        "tanim": "Müslümanların Mekkeli müşriklere karşı kazandığı ilk büyük zaferdir. Ebû Cehil öldürülmüş, okur-yazar esirler 10 Müslümana okuma-yazma öğretmeleri karşılığında serbest bırakılmıştır.\n💡 Sınav Şifresi: İlk zafer + Ebû Cehil'in ölümü + 10 kişiye okuma yazma fidyesi = **Bedir Gazvesi**.",
+        "pattern": r"\bbedir\b|bedir savaşı[a-zçğıöşü]*|bedir savasi[a-zçğıöşü]*|bedir gazvesi[a-zçğıöşü]*",
+    },
+    {
+        "id": "itar_beni_kaynuka",
+        "term": "Benî Kaynukâ Gazvesi",
+        "unite_no": 4,
+        "tanim": "Bedir zaferini kabullenemeyip pazar yerinde Müslüman bir kadına hakaret ederek Medine Sözleşmesi'ni çiğneyen, kuyumculukla uğraşan ve Medine'den ilk sürülen Yahudi kabilesidir.\n💡 Sınav Şifresi: Kuyumculukla uğraşan ve ilk sürülen Yahudi kabilesi = **Benî Kaynukâ**.",
+        "pattern": r"ben[iî] kaynuk[aâ][a-zçğıöşü]*|kaynuk[aâ][a-zçğıöşü]*|kuyumculukla uğraşan yahudi",
+    },
+    {
+        "id": "itar_uhud_ve_ayneyn",
+        "term": "Uhud Gazvesi ve Ayneyn (Okçular) Tepesi",
+        "unite_no": 4,
+        "tanim": "625 (H. 3) yılında Bedir'in intikamı için yapılan savaştır. Ayneyn Tepesi'ndeki 50 okçunun yerini terk etmesiyle Hâlid b. Velîd arkadan kuşatmış; Hz. Hamza şehit olmuş, düşman Hamrâülesed'e kadar takip edilmiştir.\n💡 Sınav Şifresi: Okçular Tepesi (Ayneyn) + Hz. Hamza'nın şehadeti + Hamrâülesed takibi = **Uhud Gazvesi**.",
+        "pattern": r"\buhud\b|uhud savaşı[a-zçğıöşü]*|uhud savasi[a-zçğıöşü]*|uhud gazvesi[a-zçğıöşü]*|ayneyn[a-zçğıöşü]*|okçular tepesi|hamr[aâ][üu]lesed",
+    },
+    {
+        "id": "itar_reci_ve_birimaune",
+        "term": "Recî' Vak'ası ve Bi'r-i Maûne",
+        "unite_no": 4,
+        "tanim": "İslâm'ı ve Kur'an'ı öğretmek üzere kabilelere gönderilen muallim sahabîlerin kalleşçe pusuya düşürülerek şehit edildiği facialardır. Bi'r-i Maûne'de 70 Ehl-i Suffe muallimi şehit olmuştur.\n💡 Sınav Şifresi: İslâm davetçisi hafızların şehit edildiği pusular = **Recî' Vak'ası ve Bi'r-i Maûne**.",
+        "pattern": r"rec[iî][’'‘] vak[‘'’]as[ıi]|bi[’'‘]r-i ma[uû]ne|bir-i maune",
+    },
+    {
+        "id": "itar_beni_nadir",
+        "term": "Benî Nadîr Gazvesi",
+        "unite_no": 4,
+        "tanim": "Hz. Peygamber kale duvarı dibindeyken üzerine değirmen taşı atarak suikast girişiminde bulunan ve sözleşmeyi ihlal eden Benî Nadîr Yahudilerinin kuşatılarak Hayber'e sürgün edilmesidir.\n💡 Sınav Şifresi: Peygamber'e suikast teşebbüsü + Hayber'e sürgün = **Benî Nadîr**.",
+        "pattern": r"ben[iî] nad[iî]r[a-zçğıöşü]*|nad[iî]r kabilesi",
+    },
+    {
+        "id": "itar_hendek_gazvesi",
+        "term": "Hendek Gazvesi (Ahzâb, 627 / H. 5)",
+        "unite_no": 4,
+        "tanim": "Müşrikler, Hayber Yahudileri ve bedevî kabilelerin birleşerek (Ahzâb) Medine'yi kuşattığı savaştır. Selmân-ı Fârisî'nin önerisiyle hendek kazılmış, Nuaym b. Mes'ûd'un hilesi ve fırtına ile kuşatma bozulmuştur.\n💡 Sınav Şifresi: Selmân-ı Fârisî'nin hendeği + Nuaym b. Mes'ûd'un taktiği = **Hendek (Ahzâb)**.",
+        "pattern": r"\bhendek\b|hendek savaşı[a-zçğıöşü]*|hendek savasi[a-zçğıöşü]*|hendek gazvesi[a-zçğıöşü]*|ahz[aâ]b gazvesi|selm[aâ]n-ı f[aâ]ris[iî]|nuaym b\.\s*mes[‘'’][uû]d",
+    },
+    {
+        "id": "itar_beni_kurayza",
+        "term": "Benî Kurayza Gazvesi",
+        "unite_no": 4,
+        "tanim": "Hendek kuşatmasında Müslümanları arkadan vurup müşriklerle işbirliği yapan son Medine Yahudi kabilesidir. Hendek sonrasında kuşatılmış, Sa'd b. Muâz'ın Tevrat hükmüyle cezalandırılmışlardır.\n💡 Sınav Şifresi: Hendek'te ihanet + Sa'd b. Muâz'ın hakemliği = **Benî Kurayza**.",
+        "pattern": r"ben[iî] kurayza[a-zçğıöşü]*|\bkurayza\b|kurayza kabilesi",
+    },
+    {
+        "id": "itar_beni_mustalik",
+        "term": "Benî Mustalik (Müreysî') Gazvesi ve İfk Hadisesi",
+        "unite_no": 4,
+        "tanim": "Huzâa kolu Mustalikoğullarına karşı yapılan seferdir. Dönüşte münafıkların Hz. Âişe'ye iftira attığı İfk Hadisesi yaşanmış (Nûr Sûresi ile temize çıkmıştır) ve Teyemmüm âyeti nâzil olmuştur.\n💡 Sınav Şifresi: İfk hadisesi + Teyemmüm âyeti = **Benî Mustalik (Müreysî') Gazvesi**.",
+        "pattern": r"ben[iî] mustalik[a-zçğıöşü]*|m[üu]reys[iî][’'‘]?|ifk hadisesi[a-zçğıöşü]*",
+    },
+    {
+        "id": "itar_savas_izni",
+        "term": "Cihad ve Savaş İzni (Hac 22/39-41)",
+        "unite_no": 4,
+        "tanim": "Hicretin 2. yılında indirilen Hac Sûresi 39. âyetle zulme ve haksız saldırıya uğrayan, yurtlarından çıkarılan Müslümanlara nefis müdafaası için ilk kez savaşma ruhsatı verilmiştir.\n💡 Sınav Şifresi: Müslümanlara ilk savaş izninin verilmesi = **Hac 22/39-41**.",
+        "pattern": r"savaş izni|hac 22/39-41",
+    },
+    {
+        "id": "itar_yesrib_medine",
+        "term": "Yesrib (Medînetü'n-Nebî)",
+        "unite_no": 4,
+        "tanim": "Hicretten önce şehrin adı kınama ve fesat anlamına gelen 'Yesrib' idi. Hz. Peygamber bu ismi güzel ve hoş anlamına gelen Tâbe / Tayyibe ve Medînetü'n-Nebî (Peygamber Şehri) olarak değiştirmiştir.\n💡 Sınav Şifresi: Eski adı fesat/kınama olan Yesrib $\\to$ **Medine / Tâbe**.",
+        "pattern": r"yesrib[a-zçğıöşü]*|medinet[üu][’'‘]n-neb[iî]|tayyibe\b",
+    },
+    {
+        "id": "itar_erken_gazveler_seriyyeler",
+        "term": "Erken Gazveler ve Seriyyeler (Batn-ı Nahle, Sevîk, Bedrü'l-Ûlâ, Karede)",
+        "unite_no": 4,
+        "tanim": "Hicretin ilk iki yılında Kureyş kervanlarını baskı altına almak için düzenlenen harekâtlardır: İlk esir ve ganimetin alındığı **Batn-ı Nahle**; Ebû Süfyân'ın un çuvallarını atıp kaçtığı **Sevîk**; Kürz takibindeki **Bedrü'l-Ûlâ**; Kureyş kervan yolunu kesen **Karede Seriyyesi**.\n💡 Sınav Şifresi: Un çuvalları = **Sevîk**; İlk ganimet/esir = **Batn-ı Nahle**.",
+        "pattern": r"batn-ı nahle|bedr[üu][’'‘\s-]?l-[uû]l[aâ]|sev[iî]k gazvesi|\bsev[iî]k\b|karede seriyyesi|\bkarede\b",
+    },
+    {
+        "id": "itar_mubareze",
+        "term": "Mübâreze (Savaş Öncesi Teke Tek Çarpışma)",
+        "unite_no": 4,
+        "tanim": "Eski Arap ve İslâm savaşlarında toplu hücum başlamadan önce, iki ordunun en usta cengâverlerinin er meydanına çıkarak teke tek vuruşması geleneğidir. Bedir'de Hz. Ali, Hz. Hamza ve Ubeyde b. Hâris müşrik şampiyonlarını devirmiştir.\n💡 Sınav Şifresi: Savaş öncesi er meydanında teke tek vuruşma = **Mübâreze**.",
+        "pattern": r"\bm[üu]b[aâ]reze\b|m[üu]bareze[a-zçğıöşü]*",
+    },
+    {
+        "id": "itar_sad_bin_muaz",
+        "term": "Sa'd b. Muâz (Evs Reisi ve Kurayza Hakemi)",
+        "unite_no": 4,
+        "tanim": "Evs kabilesinin reisi. Hendek Savaşı'nda yaralanmış; Hendek'te Müslümanlara ihanet eden Benî Kurayza Yahudilerinin muhakemesinde iki tarafın rızasıyla hakem seçilmiş ve Tevrat hükmüyle hüküm vermiştir. Vefatında Arş'ın titrediği rivayet edilir.\n💡 Sınav Şifresi: Evs reisi + Benî Kurayza hakemi = **Sa'd b. Muâz**.",
+        "pattern": r"sa[‘'’]d b\.\s*mu[aâ]z|sad bin muaz",
+    },
+    {
+        "id": "itar_medine_onderleri",
+        "term": "Medineli Öncü Sahâbîler (Sa'd b. Ubâde, Zeyd b. Sâbit)",
+        "unite_no": 4,
+        "tanim": "Medine İslâm toplumunun temel taşları: Hazrec kabilesinin seyyidi **Sa'd b. Ubâde**; Hz. Peygamber'in Medine'de evinde misafir kaldığı **Ebû Eyyûb el-Ensârî**; vahiy kâtibi ve Kur'an'ı toplayan heyetin başkanı **Zeyd b. Sâbit**.\n💡 Sınav Şifresi: Hazrec reisi = **Sa'd b. Ubâde**; Vahiy kâtibi = **Zeyd b. Sâbit**.",
+        "pattern": r"sa[’'‘]d b\.\s*ub[aâ]de|zeyd b\.\s*s[aâ]bit|eb[uû] eyy[uû]b el-ens[aâ]r[iî]|s[aâ]lim b\.\s*avf",
+    },
+    {
+        "id": "itar_asere_i_mubessere",
+        "term": "Sahabe Önderleri (Ebû Ubeyde, Abdurrahman b. Avf, Muâz b. Cebel)",
+        "unite_no": 4,
+        "tanim": "İslâm öncüleridir: 'Ümmetin Emini' lakaplı **Ebû Ubeyde b. Cerrâh**; cömertliğiyle bilinen tüccar sahâbî **Abdurrahman b. Avf**; helal-haramı en iyi bilen, Yemen muallimi ve kadısı **Muâz b. Cebel**.\n💡 Sınav Şifresi: Eminü'l-Ümme = **Ebû Ubeyde b. Cerrâh**; Yemen kadısı/muallimi = **Muâz b. Cebel**.",
+        "pattern": r"eb[uû] ubeyde b\.\s*cerr[aâ]h|ebu ubeyde[a-zçğıöşü]*|abdurrahman b\.\s*avf|mu[aâ]z b\.\s*cebel|muaz b\.\s*cebel",
+    },
+]
+

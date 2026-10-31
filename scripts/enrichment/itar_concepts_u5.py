@@ -1,0 +1,156 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""AÖF İlk Dönem İslâm Tarihi 5. Ünite Kavramları."""
+
+from typing import Any, Dict, List
+
+UNIT5_CONCEPTS: List[Dict[str, Any]] = [
+    {
+        "id": "itar_hudeybiye",
+        "term": "Hudeybiye Barış Antlaşması (628 / H. 6)",
+        "unite_no": 5,
+        "tanim": "Kureyş ile imzalanan 10 yıllık barış antlaşmasıdır. Rıdvân Biatı yapılmış; Kureyş İslâm Devleti'ni resmen tanımış, Müslümanların umreyi ertesi yıl yapması (Umretü'l-Kazâ) kararlaştırılmıştır.\n💡 Sınav Şifresi: 10 yıl barış + Rıdvân Biatı + İslâm'ın resmen tanınması = **Hudeybiye Antlaşması**.",
+        "pattern": r"\bhudeybiye\b|hudeybiye antlaşmas[ıi][a-zçğıöşü]*|hudeybiye barış[ıi][a-zçğıöşü]*|hudeybiye anlaşmas[ıi][a-zçğıöşü]*|r[ıi]dv[aâ]n biat[ıi][a-zçğıöşü]*",
+    },
+    {
+        "id": "itar_davet_mektuplari",
+        "term": "Hükümdarlara Davet Mektupları",
+        "unite_no": 5,
+        "tanim": "Hudeybiye barış ortamında Hz. Peygamber'in Bizans (Herakleios), Sâsânî (Hüsrev), Mısır (Mukavkıs) ve Habeş (Necâşî) krallarına gönderdiği İslâm'a davet mektuplarıdır.\n💡 Sınav Şifresi: Gümüş mühür ('Muhammedün Resûlullah') ile çevre imparatorluklara gönderilen tebliğ = **Davet Mektupları**.",
+        "pattern": r"davet mektup[a-zçğıöşü]*|hükümdarlara davet|hükümdarları isl[aâ]m[’'‘]a davet",
+    },
+    {
+        "id": "itar_hayberin_fethi",
+        "term": "Hayber'in Fethi (628 / H. 7)",
+        "unite_no": 5,
+        "tanim": "Yahudilerin askerî ve siyasî üssü olan kaleler zincirinin fethedilmesidir. Hz. Ali kalenin kapısını sökerek zaferi getirmiş; araziler ürünün yarısı karşılığı yerlilere bırakılmıştır (haraç arazisi).\n💡 Sınav Şifresi: Yahudilerin siyasî gücünün kırılması + Hz. Ali'nin fethi = **Hayber'in Fethi**.",
+        "pattern": r"\bhayber\b|hayber[’'‘]in fethi[a-zçğıöşü]*|hayber fethi|hayber gazvesi[a-zçğıöşü]*|yahudilerin arap yarımadasında siyasi bir güç|yahudilerin.*siyasi.*güç",
+    },
+    {
+        "id": "itar_umretul_kaza",
+        "term": "Umretü'l-Kazâ (Kaza Umresi, 629 / H. 7)",
+        "unite_no": 5,
+        "tanim": "Hudeybiye şartı uyarınca Müslümanların bir yıl sonra silahsız olarak Mekke'ye gidip 3 gün boyunca Kâbe'yi ziyaret ederek eda ettikleri kaza umresidir.\n💡 Sınav Şifresi: Hudeybiye'den bir yıl sonra 3 günlük umre ziyareti = **Umretü'l-Kazâ**.",
+        "pattern": r"umret[üu][’'‘\s-]?l-kaz[aâ][a-zçğıöşü]*|kaza umresi[a-zçğıöşü]*",
+    },
+    {
+        "id": "itar_mute_savasi",
+        "term": "Mûte Savaşı (629 / H. 8)",
+        "unite_no": 5,
+        "tanim": "Busrâ emîrine giden İslâm elçisinin şehit edilmesi üzerine Bizans ordusuna karşı yapılan ilk savaştır. Zeyd, Câfer ve Abdullah b. Revâha şehit olmuş; Hâlid b. Velîd'e 'Seyfullah' (Allah'ın Kılıcı) lakabı verilmiştir.\n💡 Sınav Şifresi: Bizans'la ilk savaş + 3 komutanın şehadeti + Hâlid b. Velîd (Seyfullah) = **Mûte Savaşı**.",
+        "pattern": r"\bm[uû]te\b|m[uû]te savaşı[a-zçğıöşü]*|mute savasi[a-zçğıöşü]*|m[uû]te gazvesi|mûte seferi",
+    },
+    {
+        "id": "itar_mekkenin_fethi",
+        "term": "Mekke'nin Fethi (630 / H. 8)",
+        "unite_no": 5,
+        "tanim": "Kureyş'in Hudeybiye'yi bozması üzerine 20 Ramazan 8'de İslâm ordusunun kan dökmeden Mekke'ye girmesi, Kâbe'yi putlardan temizlemesi ve Hz. Peygamber'in genel af ilan etmesidir.\n💡 Sınav Şifresi: 20 Ramazan 8 + putların temizlenmesi + intikam yok, genel bağışlama = **Mekke'nin Fethi**.",
+        "pattern": r"mekke[’'‘]nin fethi[a-zçğıöşü]*|mekkenin fethi|mekke fethi",
+    },
+    {
+        "id": "itar_huneyn_gazvesi",
+        "term": "Huneyn Gazvesi ve Evtâs Savaşı",
+        "unite_no": 5,
+        "tanim": "Mekke fethinden sonra Hevâzin ve Sakîf kabilelerinin saldırısına karşı yapılan savaştır. Müslümanlar sayı çokluğuna güvenip başlangıçta pusuya düşmüşse de Hz. Peygamber'in sebatıyla kesin zafer kazanılmıştır.\n💡 Sınav Şifresi: Hevâzin ve Sakîf kabileleri + sayı çokluğuna güvenme ve pusu = **Huneyn Gazvesi**.",
+        "pattern": r"\bhuneyn\b|huneyn savaşı[a-zçğıöşü]*|huneyn savasi[a-zçğıöşü]*|huneyn gazvesi[a-zçğıöşü]*|evt[aâ]s savaşı",
+    },
+    {
+        "id": "itar_taif_kusatmasi",
+        "term": "Tâif Kuşatması",
+        "unite_no": 5,
+        "tanim": "Huneyn hezimetinden sonra Sakîf kabilesinin sığındığı müstahkem Tâif kalesinin mancınıklarla kuşatılmasıdır. Kuşatma kaldırılmış, kısa süre sonra Tâifliler kendileri gelip Müslüman olmuştur.\n💡 Sınav Şifresi: Sakîf'in müstahkem kalesine mancınıkla yapılan kuşatma = **Tâif Kuşatması**.",
+        "pattern": r"\bt[aâ]if\b|t[aâ]if kuşatmas[ıi][a-zçğıöşü]*|taif kusatmasi",
+    },
+    {
+        "id": "itar_tebuk_gazvesi",
+        "term": "Tebük Gazvesi (Gazvetü'l-Usre)",
+        "unite_no": 5,
+        "tanim": "Bizans ordusunun saldıracağı haberi üzerine yaz sıcağında ve kıtlıkta ('Sâatü'l-Usre') Suriye sınırına düzenlenen son gazvedir. Hz. Ebû Bekir bütün malını vermiştir; Cizye âyeti uygulanmıştır.\n💡 Sınav Şifresi: Gazvetü'l-Usre (Zorluk Seferi) + Bizans'a karşı son gazve = **Tebük Gazvesi**.",
+        "pattern": r"\bteb[üu]k\b|teb[üu]k gazvesi[a-zçğıöşü]*|teb[üu]k seferi[a-zçğıöşü]*|gazvet[üu][’'‘]l-usre|s[aâ]at[üu][’'‘]l-usre|bizanslıların med[iî]ne[’'‘]ye saldırı",
+    },
+    {
+        "id": "itar_mescid_i_dirar",
+        "term": "Mescid-i Dırâr",
+        "unite_no": 5,
+        "tanim": "Münafıkların Müslümanları bölmek ve Bizans ile gizli irtibat kurmak amacıyla Kubâ Mescidi yakınında inşa ettikleri, Tebük dönüşü Hz. Peygamber'in emriyle yıktırılan fitne mescididir.\n💡 Sınav Şifresi: Münafıkların tefrika merkezi + Tebük dönüşü yıktırılan yapı = **Mescid-i Dırâr**.",
+        "pattern": r"mescid-i d[ıi]r[aâ]r[a-zçğıöşü]*|mescidi d[ıi]rar",
+    },
+    {
+        "id": "itar_senetul_vufud",
+        "term": "Senetü'l-Vüfûd (Elçiler Yılı, H. 9)",
+        "unite_no": 5,
+        "tanim": "Mekke'nin fethi ve Tebük zaferinden sonra Arap kabile heyetlerinin bölük bölük Medine'ye gelerek Hz. Peygamber'e biat edip İslâm'ı kabul ettikleri 630-631 yılıdır.\n💡 Sınav Şifresi: Arabistan kabilelerinin heyetlerle Medine'ye akın ettiği yıl = **Senetü'l-Vüfûd**.",
+        "pattern": r"senet[üu][’'‘]l-v[üu]f[uû]d|elçiler yılı|elciler yili",
+    },
+    {
+        "id": "itar_veda_hacci_ve_hutbesi",
+        "term": "Vedâ Haccı ve Vedâ Hutbesi (632 / H. 10)",
+        "unite_no": 5,
+        "tanim": "Hz. Peygamber'in 140.000 sahabiyle eda ettiği ilk ve tek haccı ile Arafat'ta can, mal ve kadın haklarını, ırkçılık ve faizin kaldırılmasını ilan eden evrensel insan hakları beyannamesidir.\n💡 Sınav Şifresi: Haccetü'l-İslâm + Haccetü'l-Belâğ + Evrensel insan hakları = **Vedâ Haccı ve Hutbesi**.",
+        "pattern": r"ved[aâ] hacc[ıi][a-zçğıöşü]*|ved[aâ] hutbesi[a-zçğıöşü]*|hac ibadeti|hac ibadetini niteleyen|632 yılında tamamladığı hac",
+    },
+    {
+        "id": "itar_vefat_ve_ravza",
+        "term": "Hz. Peygamber'in Vefatı ve Ravza-i Mutahhara",
+        "unite_no": 5,
+        "tanim": "Hz. Peygamber 13 Rebîülevvel 11 (8 Haziran 632) Pazartesi günü vefat etmiş; peygamberlerin vefat ettiği yere defnedilmesi sünnetiyle Hz. Âişe'nin odasına defnedilmiştir (Ravza-i Mutahhara).\n💡 Sınav Şifresi: 632 yılı + Refîk-i A'lâ + Hz. Âişe'nin odası = **Ravza-i Mutahhara**.",
+        "pattern": r"ref[iî]k-i a[‘'’`]l[aâ]|ravza-i mutahhara[a-zçğıöşü]*|ravzai mutahhara|vefat etmiştir|kaç yılında vefat",
+    },
+    {
+        "id": "itar_cizye",
+        "term": "Cizye Âyeti (Tevbe 29)",
+        "unite_no": 5,
+        "tanim": "İslâm devletinde yaşayan Ehl-i Kitap gayrimüslimlerden (zimmî) can, mal ve inanç güvenliği ile askerlikten muafiyet karşılığında alınan baş vergisidir. Tebük Seferi'nde uygulanmıştır.\n💡 Sınav Şifresi: Tebük Seferi'nde nâzil olup Ehl-i Kitap'a uygulanan baş vergisi = **Cizye**.",
+        "pattern": r"\bcizye[a-zçğıöşü]*|tevbe 29",
+    },
+    {
+        "id": "itar_halid_bin_velid",
+        "term": "Hâlid b. Velîd (Seyfullah)",
+        "unite_no": 5,
+        "tanim": "Kureyş'in askeri dâhisi. Hudeybiye barış ortamında Müslüman olmuş; Mûte Savaşı'nda 3 komutanın şehadetinin ardından sancağı alarak orduyu imhadan kurtarmış ve Hz. Peygamber kendisine 'Seyfullah' demiştir.\n💡 Sınav Şifresi: Mûte kahramanı + Allah'ın Kılıcı = **Hâlid b. Velîd (Seyfullah)**.",
+        "pattern": r"h[aâ]lid b\.\s*vel[iî]d|halid bin velid|\bseyfullah\b",
+    },
+    {
+        "id": "itar_abdullah_bin_revaha",
+        "term": "Abdullah b. Revâha (Şâirü Resûlillâh)",
+        "unite_no": 5,
+        "tanim": "Hz. Peygamber'in Ensâr şairi. Akabe biatlarında bulunmuş, şiirleriyle İslâm'ı savunmuştur. Mûte Savaşı'nda Zeyd ve Câfer'in ardından 3. ordu kumandanı olarak şehit düşmüştür.\n💡 Sınav Şifresi: Mûte'nin 3. şehit kumandanı + Peygamber'in şairi = **Abdullah b. Revâha**.",
+        "pattern": r"abdullah b\.\s*rev[aâ]h[aâ]|abdullah bin revaha",
+    },
+    {
+        "id": "itar_ebu_sufyan",
+        "term": "Ebû Süfyân b. Harb",
+        "unite_no": 5,
+        "tanim": "Ümeyyeoğulları reisi. Uhud ve Hendek'te müşrik ordularının başkumandanıydı. Mekke fethinden hemen önce Müslüman olmuş, Hz. Peygamber onun evine sığınanlara emân vermiştir.\n💡 Sınav Şifresi: Uhud ve Hendek müşrik başkumandanı + fetihte evi emân kılınan lider = **Ebû Süfyân**.",
+        "pattern": r"eb[uû] s[üu]fy[aâ]n[a-zçğıöşü]*|ebu sufyan[a-zçğıöşü]*",
+    },
+    {
+        "id": "itar_suheyl_bin_amr",
+        "term": "Süheyl b. Amr (Kureyş Hatibi)",
+        "unite_no": 5,
+        "tanim": "Kureyş'in meşhur hatibi. Hudeybiye Barış Antlaşması'nda müşriklerin baş delegesi olarak müzakereleri yürütmüştür. Mekke'nin fethinde Müslüman olmuştur.\n💡 Sınav Şifresi: Hudeybiye'de müşriklerin baş delegesi ve hatibi = **Süheyl b. Amr**.",
+        "pattern": r"s[üu]heyl b\.\s*amr|suheyl bin amr|urve b\.\s*mes[‘'’]?[uû]d|b[üu]deyl b\.\s*verk[aâ]",
+    },
+    {
+        "id": "itar_muellefe_i_kulub",
+        "term": "Müellefe-i Kulûb (Kalpleri Isındırılanlar)",
+        "unite_no": 5,
+        "tanim": "İslâm'a yeni girmiş veya girmesi umulan, kalpleri İslâm'a ısındırılmak istenen nüfuzlu kimselerdir. Huneyn ganimetlerinin taksiminde Hz. Peygamber Kureyş ve bedevî reislerine bol pay vermiştir.\n💡 Sınav Şifresi: Huneyn ganimetleriyle kalpleri İslâm'a ısındırılan reisler = **Müellefe-i Kulûb**.",
+        "pattern": r"m[üu]ellefe[ -]i kul[uû]b[a-zçğıöşü]*|m[üu]ellefe-i kulub[a-zçğıöşü]*",
+    },
+    {
+        "id": "itar_haccetul_islam",
+        "term": "Haccetü'l-İslâm ve Vedâ Haccı İsimleri",
+        "unite_no": 5,
+        "tanim": "Hz. Peygamber'in tek haccına verilen isimlerdir: İslâm farzını yerine getirdiği için **Haccetü'l-İslâm**; tebliği tamamladığı için **Haccetü'l-Belâğ**; dîn kemale erdiği için **Haccetü'l-Kemâl / Haccetü't-Tamâm** denilmiştir.\n💡 Sınav Şifresi: Haccetü'l-İslâm = Haccetü'l-Belâğ = Haccetü't-Tamâm = **Vedâ Haccı**.",
+        "pattern": r"haccet[üu][’'‘\s-]?l-kem[aâ]l|haccet[üu][’'‘\s-]?t-tam[aâ]m|haccet[üu][’'‘\s-]?l-bel[aâ][gğ]|haccet[üu][’'‘\s-]?l-isl[aâ]m",
+    },
+    {
+        "id": "itar_fedek_ve_fey",
+        "term": "Fedek Arazisi ve Fey Malı",
+        "unite_no": 5,
+        "tanim": "Hayber fethinden sonra savaş yapılmadan barış yoluyla teslim olan Yahudi yerleşimidir. Savaşsız alındığı için ganimet değil, doğrudan Peygamber'in tasarrufuna ait **Fey** statüsündedir.\n💡 Sınav Şifresi: Savaşsız teslim olup Fey statüsünde olan arazi = **Fedek**.",
+        "pattern": r"\bfedek\b|fedek arazisi|fey geliri",
+    },
+]
+

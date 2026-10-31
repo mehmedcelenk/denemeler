@@ -1,5 +1,6 @@
 import { state, store, notifyStateChange } from '../../app/state.ts';
 import type { Choice } from '../../data/question.ts';
+import { getExamPeriodKey } from '../subjects/exam-periods.ts';
 
 /**
  * Tek bir sorunun özellik çubuğunu açar / kapatır.
@@ -113,7 +114,7 @@ export async function copyQuestionText(qId: number | string, event?: Event): Pro
 
   const lines: string[] = [];
   const course = q.ders ? q.ders.trim() : 'AÖL';
-  const examInfo = [q.yil ? `${q.yil}` : '', q.donem ? `${q.donem}. Dönem` : ''].filter(Boolean).join(' ');
+  const examInfo = getExamPeriodKey(q);
   lines.push(`📖 ${course}${examInfo ? ` (${examInfo})` : ''} - Soru #${id}:`);
   lines.push('');
   lines.push(q.soru.trim());

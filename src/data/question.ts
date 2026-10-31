@@ -16,6 +16,8 @@ export interface Question {
   alt_konu?: string;
   yil?: string;
   donem?: string | number;
+  sinav_kodu?: string;
+  sinav_adi?: string;
   puan?: number;
   kredi?: number;
   sinav_soru_sayisi?: number;
@@ -56,7 +58,7 @@ export function parseQuestions(value: unknown): Question[] {
     const id = question.id as number;
     if (seen.has(id)) throw new Error(`Tekrarlanan soru kimliği: ${id}`);
     seen.add(id);
-    for (const key of ['ana_konu', 'alt_konu', 'ipucu', 'soru_tr', 'soru_ar', 'soru_xray', 'yil', 'dogru_nedeni']) {
+    for (const key of ['ana_konu', 'alt_konu', 'ipucu', 'soru_tr', 'soru_ar', 'soru_xray', 'yil', 'dogru_nedeni', 'sinav_kodu', 'sinav_adi']) {
       if (question[key] !== undefined && typeof question[key] !== 'string') {
         throw new Error(`${id}: ${key} metin olmalı.`);
       }
