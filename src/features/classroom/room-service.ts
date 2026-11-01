@@ -30,6 +30,8 @@ class RoomService {
     return this.state;
   }
 
+  isHost(): boolean { return this.state.isHost; }
+
   subscribe(listener: Listener): () => void {
     this.listeners.add(listener);
     listener(this.state);

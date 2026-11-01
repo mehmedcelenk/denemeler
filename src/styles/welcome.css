@@ -1,0 +1,274 @@
+.welcome-portal {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: calc(28px + var(--safe-top)) 18px calc(96px + var(--safe-bottom));
+}
+
+.welcome-portal[hidden],
+.welcome-dialog-backdrop[hidden] {
+  display: none;
+}
+
+.welcome-card {
+  width: min(100%, 460px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.welcome-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.welcome-bismillah {
+  margin: 0 0 -4px;
+  color: var(--paper-text-muted);
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+  letter-spacing: 0;
+  opacity: 0.75;
+  user-select: none;
+}
+
+.welcome-header h1 {
+  color: var(--paper-text);
+  font-size: clamp(38px, 12vw, 56px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.065em;
+}
+
+.welcome-program-toggle {
+  width: 100%;
+  max-width: 330px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--paper-border);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--paper-bg) 64%, transparent);
+}
+
+.welcome-program-toggle button {
+  min-height: 40px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--paper-text-muted);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.welcome-program-toggle button.active {
+  background: var(--paper-bg);
+  color: var(--brand-accent);
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.1);
+}
+
+.welcome-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.welcome-action-row {
+  width: 100%;
+  height: 64px;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 15px;
+  border: 1px solid var(--paper-border);
+  border-radius: 16px;
+  background: var(--paper-bg);
+  color: var(--paper-text);
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.07);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+button.welcome-action-row {
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+button.welcome-action-row:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand-accent);
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.12);
+}
+
+.welcome-action-icon {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  flex: 0 0 24px;
+  place-items: center;
+  color: var(--brand-accent);
+}
+
+.welcome-action-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+.welcome-action-label {
+  flex: 1;
+}
+
+.welcome-action-arrow {
+  margin-left: auto;
+  color: var(--brand-accent);
+  font-size: 20px;
+}
+
+.welcome-multiplayer-label {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.welcome-multiplayer-row input {
+  width: 100%;
+  min-width: 54px;
+  height: 38px;
+  flex: 1;
+  padding: 0 10px;
+  border: 1px solid var(--paper-border);
+  border-radius: 10px;
+  outline: none;
+  background: color-mix(in srgb, var(--ambient-bg) 54%, var(--paper-bg));
+  color: var(--paper-text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.welcome-multiplayer-row input:focus,
+.welcome-name-dialog input:focus {
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-accent) 15%, transparent);
+}
+
+.welcome-room-submit {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  flex: 0 0 38px;
+  place-items: center;
+  border: 0;
+  border-radius: 10px;
+  background: var(--brand-accent);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.welcome-form-error {
+  color: var(--danger-accent);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.welcome-form-error:empty {
+  display: none;
+}
+
+.welcome-portal.is-busy {
+  cursor: progress;
+}
+
+.welcome-portal.is-busy button {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+body.welcome-active .top-center-badge-container,
+body.welcome-active #bookletPagesContainer,
+body.welcome-active #resumeSessionBanner,
+body.welcome-active #bookletZoomIndicator {
+  display: none !important;
+}
+
+.console-welcome-actions {
+  display: grid;
+  gap: 5px;
+}
+
+.console-nav-action {
+  width: 100%;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  border: 1px solid var(--hud-border);
+  border-radius: 9px;
+  background: rgba(125, 125, 125, 0.08);
+  color: var(--hud-text);
+  font-size: 11px;
+  font-weight: 750;
+  text-align: left;
+  cursor: pointer;
+}
+
+.console-nav-action:hover:not(:disabled) {
+  border-color: var(--brand-accent);
+  color: var(--brand-accent);
+}
+
+.console-nav-action:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.console-nav-action svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body.welcome-active [data-action="welcome-home"],
+body.welcome-active [data-action="cycle-column-count"],
+body.welcome-active [data-action="cycle-zoom-level"] {
+  display: none;
+}
+
+@media (max-width: 390px) {
+  .welcome-action-row {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+
+  .welcome-multiplayer-label {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button.welcome-action-row {
+    transition: none;
+  }
+}

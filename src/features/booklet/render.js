@@ -39,9 +39,9 @@ export function renderBookletPages(_targetQuestionId = null) {
     } else if (state.bookletFilterMode === 'starred') {
       container.innerHTML = `
         <div style="background:var(--paper-bg); border:1px dashed var(--paper-border); padding:50px 20px; text-align:center; border-radius:16px; color:var(--paper-text-muted); max-width:540px; margin:40px auto; box-shadow:0 8px 30px rgba(0,0,0,0.04);">
-          <div style="font-size:36px; margin-bottom:12px;">⭐</div>
-          <div style="font-size:16px; font-weight:800; color:var(--paper-text); margin-bottom:6px;">Henüz yıldızlı soru eklemediniz.</div>
-          <div style="font-size:13px; line-height:1.5; margin-bottom:18px;">Soruların sağ üstündeki ⭐ ikonuna tıklayarak sınav öncesi tekrar etmek istediğiniz soruları buraya toplayabilirsiniz.</div>
+          <div style="font-size:36px; margin-bottom:12px;">🔖</div>
+          <div style="font-size:16px; font-weight:800; color:var(--paper-text); margin-bottom:6px;">Henüz soru kaydetmediniz.</div>
+          <div style="font-size:13px; line-height:1.5; margin-bottom:18px;">Soruların sağ üstündeki kaydet ikonuna tıklayarak sınav öncesi tekrar etmek istediğiniz soruları buraya toplayabilirsiniz.</div>
           <button class="btn-primary" data-action="set-booklet-filter" data-filter="all" style="padding:9px 20px; font-size:12.5px; border-radius:10px; cursor:pointer; background:var(--brand-accent); color:#fff; border:none; font-weight:700;">📝 Soruları Keşfet</button>
         </div>
       `;

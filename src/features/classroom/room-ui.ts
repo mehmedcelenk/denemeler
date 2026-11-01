@@ -6,6 +6,7 @@ import { initFocusTracker } from './focus-tracker.ts';
 import { calculateStudentRank } from './ranking.ts';
 import { openRoomModal, closeRoomModal, handleJoinClick, handleCreateClick } from './room-modal.ts';
 import { initRoomAnswerEvents } from './room-answer-events.ts';
+import { initClassroomCardHook } from './card-hook.ts';
 
 let isInitialized = false;
 let renderScheduled = false;
@@ -14,6 +15,7 @@ let trailingRenderTimer: ReturnType<typeof setTimeout> | null = null;
 
 export function initRoomFeature(): void {
   initRoomAnswerEvents();
+  initClassroomCardHook();
   if (isInitialized || typeof document === 'undefined') return;
   isInitialized = true;
 

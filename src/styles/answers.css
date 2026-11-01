@@ -15,6 +15,30 @@
   background: rgba(125, 125, 125, 0.08);
 }
 
+.answer-rate-warning {
+  position: fixed;
+  top: calc(72px + var(--safe-top));
+  left: 50%;
+  z-index: 2600;
+  padding: 8px 14px;
+  border: 1px solid var(--paper-border);
+  border-radius: 999px;
+  background: var(--paper-bg);
+  color: var(--paper-text);
+  box-shadow: var(--paper-shadow);
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -8px);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.answer-rate-warning.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 .optical-choice-row.eliminated {
   opacity: 0.42;
   transition: opacity 0.18s ease;

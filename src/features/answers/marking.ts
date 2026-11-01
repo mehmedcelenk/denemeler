@@ -1,6 +1,7 @@
 import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from './explanation.ts';
 import { saveChoicesToStorage, loadSavedChoices } from './storage.ts';
+import { canMarkAnswer } from './rate-limit.ts';
 import type { Choice } from '../../data/question.ts';
 
 export { saveChoicesToStorage, loadSavedChoices };
@@ -12,6 +13,7 @@ const pendingSelections: Record<number, Choice> = {};
 export function handleSelectOpticalBubble(qid: number, letter: Choice): void {
   const targetQ = state.allData.find(x => x.id === qid);
   if (targetQ && targetQ.sekilli) return; // Görselli/şekilli soru pasif, tıklanamaz
+  if (!canMarkAnswer(qid)) return;
 
   const alreadySubmitted = state.userMarkedChoices[qid];
 

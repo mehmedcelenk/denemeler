@@ -13,7 +13,9 @@ export function toggleStarQuestionUI(questionId: number, event?: Event): void {
   const isStarred = state.starredQuestionIds.has(questionId);
   document.querySelectorAll(`#btnStar_${questionId}`).forEach(btn => {
     btn.classList.toggle('is-starred', isStarred);
-    btn.setAttribute('title', isStarred ? 'Yıldızı Kaldır' : 'Soruyu Yıldızla (Favorilere Ekle)');
+    const label = isStarred ? 'Kaydı Kaldır' : 'Soruyu Kaydet';
+    btn.setAttribute('title', label);
+    btn.setAttribute('aria-label', label);
   });
 
   const starredCountEl = document.getElementById('libStarredCount');

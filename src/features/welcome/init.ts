@@ -1,0 +1,208 @@
+import { registerActions } from '../../app/actions.ts';
+import { state, store } from '../../app/state.ts';
+import { readString, writeString } from '../../app/storage.ts';
+import type { SubjectId } from '../../data/question.ts';
+import { StorageKeys } from '../../shared/storage-keys.ts';
+import {
+  focusRoomInput,
+  getDialogUserName,
+  getWelcomeRoomId,
+  hideWelcomePortal,
+  hideNameDialog,
+  renderWelcomePortal,
+  setWelcomeBusy,
+  setWelcomeProgram,
+  showNameDialog,
+  showNameError,
+  showWelcomeError,
+  showWelcomePortal,
+  updateResumeAction,
+  type ProgramMode,
+} from './welcome-view.ts';
+
+const DEFAULT_SUBJECTS: Readonly<Record<ProgramMode, SubjectId>> = {
+  AOIHL: 'TDE',
+  AOF: 'AOF_HADIS',
+};
+
+let initialized = false;
+
+interface WelcomeSession {
+  readonly subject: string;
+  readonly questionId?: number;
+}
+
+export interface WelcomeDependencies {
+  readonly closeSubjectDrawer: () => void;
+  readonly dismissResumeBanner: () => void;
+  readonly getSavedSession: () => WelcomeSession | null;
+  readonly joinRoom: (roomId: string, userName: string) => void;
+  readonly loadSubject: (subject: string) => Promise<boolean>;
+  readonly openSubjectDrawer: () => void;
+  readonly setUnifiedMode: (mode: 'all' | 'rematch') => void;
+}
+
+let dependencies: WelcomeDependencies;
+let pendingRoomId: string | null = null;
+
+function hasSavedSession(): boolean {
+  return dependencies.getSavedSession() !== null;
+}
+
+async function loadProgramSubject(): Promise<boolean> {
+  return dependencies.loadSubject(DEFAULT_SUBJECTS[state.programMode]);
+}
+
+async function runWelcomeTransition(action: () => Promise<void>): Promise<void> {
+  setWelcomeBusy(true);
+  showWelcomeError();
+  try {
+    await action();
+  } catch (error) {
+    console.error('[Welcome]', error);
+    showWelcomeError('Ders yüklenemedi. Bağlantını kontrol edip yeniden dene.');
+  } finally {
+    setWelcomeBusy(false);
+  }
+}
+
+async function startSinglePlayer(): Promise<void> {
+  await runWelcomeTransition(async () => {
+    if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
+    dependencies.setUnifiedMode('all');
+    hideWelcomePortal();
+    dependencies.openSubjectDrawer();
+  });
+}
+
+async function startRematch(): Promise<void> {
+  await runWelcomeTransition(async () => {
+    if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
+    dependencies.setUnifiedMode('rematch');
+    hideWelcomePortal();
+  });
+}
+
+async function connectToRoom(roomId: string, userName: string): Promise<void> {
+  await runWelcomeTransition(async () => {
+    if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
+    dependencies.setUnifiedMode('all');
+    dependencies.joinRoom(roomId, userName);
+    pendingRoomId = null;
+    hideWelcomePortal();
+  });
+}
+
+async function joinRoom(): Promise<void> {
+  const roomId = getWelcomeRoomId();
+  if (!roomId) {
+    showWelcomeError('Katılmak istediğin oda adını yaz.');
+    focusRoomInput();
+    return;
+  }
+
+  const savedName = readString(StorageKeys.USER_NAME)?.trim();
+  if (savedName) {
+    await connectToRoom(roomId, savedName);
+    return;
+  }
+
+  pendingRoomId = roomId;
+  showNameDialog();
+}
+
+async function confirmUserName(): Promise<void> {
+  const userName = getDialogUserName();
+  if (!userName) {
+    showNameError('Devam etmek için adınızı yazın.');
+    document.getElementById('welcomeNameInput')?.focus();
+    return;
+  }
+  if (!pendingRoomId) {
+    hideNameDialog();
+    return;
+  }
+
+  writeString(StorageKeys.USER_NAME, userName);
+  hideNameDialog();
+  await connectToRoom(pendingRoomId, userName);
+}
+
+function cancelUserName(): void {
+  pendingRoomId = null;
+  hideNameDialog();
+  focusRoomInput();
+}
+
+function returnHome(): void {
+  dependencies.closeSubjectDrawer();
+  dependencies.dismissResumeBanner();
+  updateResumeAction(hasSavedSession());
+  pendingRoomId = null;
+  hideNameDialog();
+  showWelcomeError();
+  showWelcomePortal();
+}
+
+async function resumeSavedSession(): Promise<void> {
+  const snapshot = dependencies.getSavedSession();
+  const subject = snapshot?.subject ?? DEFAULT_SUBJECTS[state.programMode];
+
+  await runWelcomeTransition(async () => {
+    if (!await dependencies.loadSubject(subject)) throw new Error('Saved subject could not be loaded.');
+    dependencies.setUnifiedMode('all');
+    dependencies.dismissResumeBanner();
+    hideWelcomePortal();
+    requestAnimationFrame(() => {
+      const question = snapshot?.questionId === undefined
+        ? document.querySelector<HTMLElement>('.booklet-question')
+        : document.getElementById(`bq_${snapshot.questionId}`);
+      question?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    });
+  });
+}
+
+function bindWelcomeInputs(): void {
+  const roomInput = document.getElementById('welcomeRoomId');
+  roomInput?.addEventListener('input', () => showWelcomeError());
+  roomInput?.addEventListener('keydown', event => {
+    if (event.key === 'Enter') void joinRoom();
+  });
+  const nameInput = document.getElementById('welcomeNameInput');
+  nameInput?.addEventListener('input', () => showNameError());
+  nameInput?.addEventListener('keydown', event => {
+    if (event.key === 'Enter') void confirmUserName();
+    if (event.key === 'Escape') cancelUserName();
+  });
+}
+
+export function initWelcome(welcomeDependencies: WelcomeDependencies): void {
+  if (initialized || typeof document === 'undefined') return;
+  initialized = true;
+  dependencies = welcomeDependencies;
+
+  renderWelcomePortal({
+    programMode: state.programMode,
+    canResume: hasSavedSession(),
+  });
+  bindWelcomeInputs();
+  registerActions({
+    'welcome-set-program': element => {
+      const mode = element.dataset.program;
+      if (mode !== 'AOIHL' && mode !== 'AOF') return;
+      store.setProgramMode(mode);
+      setWelcomeProgram(mode);
+    },
+    'welcome-start-rematch': () => startRematch(),
+    'welcome-start-single': () => startSinglePlayer(),
+    'welcome-join-room': () => joinRoom(),
+    'welcome-confirm-name': () => confirmUserName(),
+    'welcome-cancel-name': () => cancelUserName(),
+    'welcome-home': () => returnHome(),
+    'welcome-resume': () => resumeSavedSession(),
+  });
+  showWelcomePortal();
+}

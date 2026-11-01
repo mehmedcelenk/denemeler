@@ -74,10 +74,10 @@ export function updateTopBadge(customTitle) {
   const badgeBtn = document.getElementById('topCenterBadge');
 
   if (state.isLibraryMode) {
-    if (emojiEl) emojiEl.textContent = state.libraryTab === 'rematch' ? '⚔️' : '⭐';
-    if (textEl) textEl.textContent = state.libraryTab === 'rematch' ? 'Rövanşlar' : 'Yıldızlılar';
+    if (emojiEl) emojiEl.textContent = state.libraryTab === 'rematch' ? '⚔️' : '🔖';
+    if (textEl) textEl.textContent = state.libraryTab === 'rematch' ? 'Rövanşlar' : 'Kaydedilenler';
     if (badgeBtn) {
-      badgeBtn.title = state.libraryTab === 'rematch' ? 'Rövanşlar (Tüm Dersler)' : 'Yıldızlılar';
+      badgeBtn.title = state.libraryTab === 'rematch' ? 'Rövanşlar (Tüm Dersler)' : 'Kaydedilen Sorular';
     }
     return;
   }

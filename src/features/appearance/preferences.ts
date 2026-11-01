@@ -45,9 +45,9 @@ export function setAccentColor(colorKey: string) {
   document.documentElement.style.setProperty('--user-accent-dark', cfg.dark);
 
   const btn = document.getElementById('btnConsoleColorCycle');
+  const svg = btn?.querySelector('svg');
+  if (svg) svg.style.color = cfg.light;
   if (btn) {
-    const hex = cfg.light;
-    btn.innerHTML = `<span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:${hex}; border:1.5px solid rgba(255,255,255,0.7); box-shadow:0 0 4px ${hex};"></span>`;
     btn.title = `Vurgu Rengi: ${colorKey} (Değiştirmek için tıkla)`;
   }
 }
@@ -71,9 +71,8 @@ export function setThemeMode(mode: 'dark' | 'light') {
 
   const btn = document.getElementById('btnConsoleThemeCycle');
   if (btn) {
-    btn.innerHTML = isDark
-      ? `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>`
-      : `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>`;
+    const label = btn.querySelector('span');
+    if (label) label.textContent = isDark ? 'Tema: Koyu' : 'Tema: Açık';
     btn.title = isDark ? 'Koyu Tema (Açık Temaya Geç)' : 'Açık Tema (Koyu Temaya Geç)';
   }
 }
@@ -202,8 +201,8 @@ export function setColumnCount(n: number) {
 
   const cycleBtn = document.getElementById('btnConsoleColumnCycle');
   if (cycleBtn) {
-    const bars = '|'.repeat(n);
-    cycleBtn.innerHTML = `<span style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:12px; letter-spacing:-1px;">${bars}</span>`;
+    const label = cycleBtn.querySelector('span');
+    if (label) label.textContent = `Sütun Düzeni: ${n}`;
     cycleBtn.title = `Sütun Düzeni: ${n} Sütun (Artırmak için tıkla)`;
   }
 
@@ -232,8 +231,8 @@ export function cycleZoomLevel() {
 export function updateZoomCycleUI() {
   const zoomBtn = document.getElementById('btnConsoleZoomCycle');
   if (zoomBtn) {
-    const scalePx = 11 + (state.zoomLevelIndex * 1.5);
-    zoomBtn.innerHTML = `<span style="font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:${scalePx}px; line-height:1;">A</span>`;
+    const label = zoomBtn.querySelector('span');
+    if (label) label.textContent = `Yazı Boyutu: ${zoomScales[state.zoomLevelIndex]}`;
     zoomBtn.title = `Yazı Boyutu: ${zoomScales[state.zoomLevelIndex]} (Değiştirmek için tıkla)`;
   }
 }

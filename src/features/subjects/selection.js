@@ -2,6 +2,7 @@ import { state, store, onStateChange, notifyStateChange } from '../../app/state.
 import { loadSubjectData } from '../../data/questions.js';
 import { AOIHL_SUBJECTS, AOF_SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.ts';
+import { saveSessionSnapshot } from '../booklet/resume.ts';
 import { renderDrawerTopics } from './topics.js';
 import { renderSubjectRowsHtml } from './subject-rows.ts';
 import { escapeHtml } from '../../shared/escape.ts';
@@ -43,6 +44,7 @@ export async function setSubject(subj) {
   if (version !== selectionVersion) return false;
 
   store.setCurrentSubject(subj);
+  saveSessionSnapshot(subj);
   store.clearSelectedTopicKeys();
   store.setSelectedExamPeriod(null);
   store.setActiveSearchFilter('');

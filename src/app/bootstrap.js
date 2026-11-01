@@ -1,7 +1,5 @@
-import { loadSubjectData } from '../data/questions.js';
 import { state, store } from './state.ts';
 import { readString } from './storage.ts';
-import { renderDrawerSubjects, setSubject } from '../features/subjects/selection.js';
 import { updatePrayerCountdown } from '../features/prayer/prayer.js';
 import { initBookletCanvasZoom, initTheme, initAccentColor, setColumnCount } from '../features/appearance/preferences.ts';
 import { StorageKeys } from '../shared/storage-keys.ts';
@@ -22,7 +20,12 @@ import { initSearch } from '../features/search/init.ts';
 import { initTde } from '../features/tde/init.ts';
 import { initGamification } from '../features/gamification/init.ts';
 import { loadStreak } from '../features/gamification/streak.ts';
-import { initResumeBanner } from '../features/booklet/resume.ts';
+import { dismissResumeBanner, initResumeBanner, loadSessionSnapshot } from '../features/booklet/resume.ts';
+import { initWelcome } from '../features/welcome/init.ts';
+import { setUnifiedMode } from '../features/booklet/filter.ts';
+import { roomService } from '../features/classroom/room-service.ts';
+import { closeSubjectDrawer, openSubjectDrawer } from '../features/subjects/drawer.ts';
+import { setSubject } from '../features/subjects/selection.js';
 
 export async function startApp() {
   initAnswers();
@@ -50,23 +53,25 @@ export async function startApp() {
   initRoomFeature();
   initLibrary();
   try {
-    await initApp();
+    initApp();
+    initWelcome({
+      closeSubjectDrawer,
+      dismissResumeBanner,
+      getSavedSession: loadSessionSnapshot,
+      joinRoom: (roomId, userName) => roomService.joinOrCreateRoom(roomId, userName, false),
+      loadSubject: setSubject,
+      openSubjectDrawer,
+      setUnifiedMode,
+    });
   } catch (error) {
     console.error(error);
-    const container = document.getElementById('bookletPagesContainer');
-    if (container) container.innerHTML = '<div style="max-width:620px; margin:60px auto; padding:28px; text-align:center; background:var(--paper-bg); border:1px solid var(--paper-border); border-radius:18px;"><strong>Veriler yüklenemedi.</strong><br><span style="display:block; margin-top:8px; color:var(--paper-text-muted);">Bağlantıyı kontrol edip sayfayı yeniden deneyin.</span></div>';
   }
   updatePrayerCountdown();
   setInterval(updatePrayerCountdown, 1000);
 }
 
-export async function initApp() {
+export function initApp() {
   const savedCols = readString(StorageKeys.COLUMN_COUNT);
   if (savedCols) store.setColumnCount(parseInt(savedCols, 10) || 2, false);
   setColumnCount(state.currentColumnCount);
-
-  const questions = await loadSubjectData('TDE');
-  store.appendQuestions(questions);
-  renderDrawerSubjects();
-  await setSubject('TDE');
 }

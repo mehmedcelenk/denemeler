@@ -1,26 +1,99 @@
 import { test, expect } from '@playwright/test';
+import { StorageKeys } from '../../src/shared/storage-keys.ts';
+
+async function enterSinglePlayer(page) {
+  await page.locator('[data-action="welcome-start-single"]').click();
+  await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
+  await expect(page.locator('.booklet-question').first()).toBeVisible();
+  await page.locator('.btn-close-drawer[data-action="close-subject-drawer"]').click();
+}
+
+async function openSinglePlayer(page) {
+  await page.goto('/');
+  await enterSinglePlayer(page);
+}
+
+test('karşılama portalı ilk açılışı sade tutar ve program seçimini derse taşır', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+
+  await expect(page.locator('#welcomePortal')).toBeVisible();
+  await expect(page.locator('#welcomePortal h1')).toHaveText('AOFİHL');
+  await expect(page.locator('.welcome-kicker')).toHaveCount(0);
+  await expect(page.locator('#welcomeUserName')).toHaveCount(0);
+  await expect(page.locator('#bookletPagesContainer')).toBeHidden();
+  await expect(page.locator('.booklet-question')).toHaveCount(0);
+  await expect(page.locator('.top-center-badge-container')).toBeHidden();
+  await expect(page.locator('#btnResumeLastSession')).toBeEnabled();
+  const actionHeights = await page.locator('.welcome-action-row').evaluateAll(rows =>
+    rows.map(row => row.getBoundingClientRect().height)
+  );
+  expect(new Set(actionHeights).size).toBe(1);
+
+  await page.locator('#welcomePortal [data-program="AOF"]').click();
+  await expect(page.locator('#welcomePortal [data-program="AOF"]')).toHaveClass(/active/);
+  await page.locator('[data-action="welcome-start-single"]').click();
+  await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
+  await expect(page.locator('#btnProgramAof')).toHaveCount(0);
+  await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || 'null')?.subject, StorageKeys.RESUME_STATE)).toBe('AOF_HADIS');
+  await expect(page.locator('.top-center-badge-container')).toBeVisible();
+
+  await page.locator('.btn-close-drawer[data-action="close-subject-drawer"]').click();
+  await page.locator('#btnMasterConsole').click();
+  await page.locator('[data-action="welcome-home"]').click();
+  await expect(page.locator('#welcomePortal')).toBeVisible();
+  await expect(page.locator('.top-center-badge-container')).toBeHidden();
+});
+
+test('çok oyunculu giriş adı saklar ve odaya öğrenci olarak katılır', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#welcomeRoomId').fill('12-a');
+  await page.locator('[data-action="welcome-join-room"]').click();
+  await expect(page.locator('#welcomeNameDialog')).toBeVisible();
+  await page.locator('#welcomeNameInput').fill('Ali');
+  await page.locator('[data-action="welcome-confirm-name"]').click();
+
+  await expect(page.locator('#welcomePortal')).toBeHidden();
+  await expect(page.locator('#topRoomPill')).toBeVisible();
+  await expect(page.locator('#topRoomPill')).toContainText('12-A');
+  await expect.poll(() => page.evaluate(
+    key => localStorage.getItem(key),
+    StorageKeys.USER_NAME
+  )).toBe('Ali');
+
+  await page.locator('#btnMasterConsole').click();
+  await page.locator('[data-action="welcome-home"]').click();
+  await page.locator('#welcomeRoomId').fill('13-b');
+  await page.locator('[data-action="welcome-join-room"]').click();
+  await expect(page.locator('#welcomeNameDialog')).toBeHidden();
+  await expect(page.locator('#topRoomPill')).toContainText('13-B');
+});
 
 test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', async ({ page }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.goto('/');
-  await expect(page.locator('.optical-choice-row').first()).toBeVisible();
+  await openSinglePlayer(page);
   const option = page.locator('.optical-choice-row').first();
   const optionId = await option.getAttribute('id');
+  await page.locator('.booklet-question').first().evaluate(card => { card.dataset.openedAt = String(Date.now()); });
+  await option.click();
+  await expect(page.locator('#answerRateWarning')).toContainText('Yakalandın.');
+  await expect(option).not.toHaveClass(/marked/);
+  await page.waitForTimeout(3600);
+  await expect(page.locator('#answerRateWarning')).toContainText(/Yakalandın\. 4:5[0-9]/);
+  await page.evaluate(key => localStorage.removeItem(key), StorageKeys.ANSWER_LOCK_UNTIL);
   await option.click();
   await expect(option).toHaveClass(/marked/);
-  // İkinci kez tıklanarak cevap kesinleştirilir
+  await page.waitForTimeout(3600);
   await option.click();
-  // Neden butonu DOM'da kesinlikle olmamalı
   expect(await page.locator('.btn-why-correct').count()).toBe(0);
-  // Açıklama balonu (toast) görünür olmalı
   await expect(page.locator('#activeExplanationBubble')).toBeVisible();
   await page.reload();
+  await enterSinglePlayer(page);
   await expect(page.locator(`[id="${optionId}"]`)).toHaveClass(/marked/);
   await page.locator('#btnMasterConsole').click();
-  await page.locator('[data-action="clear-all-marks"]').click();
+  await expect(page.locator('[data-action="open-pdf-dialog"]')).toContainText('PDF / Yazdır');
   await page.locator('#btnMasterConsole').click();
-  await expect(page.locator('.optical-choice-row.marked')).toHaveCount(0);
 
   await page.locator('#topCenterBadge').click();
   await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
@@ -72,14 +145,13 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
 
 test('mobil genişlikte kitapçık açılır', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/');
-  await expect(page.locator('.optical-choice-row').first()).toBeVisible();
+  await openSinglePlayer(page);
   await page.locator('#topCenterBadge').click();
   await expect(page.locator('#drawerTopicList')).toBeVisible();
 });
 
 test('sorular dikey akışta (stream) sorunsuz listelenir ve layout güncellemeleri çalışır', async ({ page }) => {
-  await page.goto('/');
+  await openSinglePlayer(page);
   await expect(page.locator('.booklet-page').first()).toBeVisible();
 
   const questionCount = await page.locator('.booklet-question').count();
@@ -105,7 +177,7 @@ test('sorular dikey akışta (stream) sorunsuz listelenir ve layout güncellemel
 test('3 ve 4 sütun seçimi masaüstünde uygulanır, mobilde her zaman 1 sütun kalır', async ({ page }) => {
   // Masaüstünde sütun seçimi uygulanmalı
   await page.setViewportSize({ width: 1200, height: 800 });
-  await page.goto('/');
+  await openSinglePlayer(page);
   await expect(page.locator('.booklet-page').first()).toBeVisible();
 
   await page.locator('#btnMasterConsole').click();
@@ -128,7 +200,7 @@ test('3 ve 4 sütun seçimi masaüstünde uygulanır, mobilde her zaman 1 sütun
 });
 
 test('sınav kaynağı etiketi soru kartı araç satırını daraltmaz', async ({ page }) => {
-  await page.goto('/');
+  await openSinglePlayer(page);
   const card = page.locator('.booklet-question').first();
   const sourceTag = card.locator('.q-source-tag');
   await expect(sourceTag).toBeVisible();
@@ -139,16 +211,14 @@ test('sınav kaynağı etiketi soru kartı araç satırını daraltmaz', async (
 });
 
 test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı günceller', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.locator('.booklet-question').first()).toBeVisible();
+  await openSinglePlayer(page);
 
   // Çekmeceyi aç
   await page.locator('#topCenterBadge').click();
   await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
 
-  // Başlıkta "sınavdasın." ve program butonlarının geldiğini doğrula
-  await expect(page.locator('.drawer-header-brand')).toContainText('sınavdasın.');
-  await expect(page.locator('.drawer-header #programToggleGroup')).toBeVisible();
+  await expect(page.locator('.drawer-header-brand')).toHaveText('AOFİHL');
+  await expect(page.locator('.drawer-header #programToggleGroup')).toHaveCount(0);
 
   // TDE'de varsayılan olarak Dönemler sekmesinin ve çıkmış sınavların açıldığını doğrula
   await expect(page.locator('[data-tab="periods"]')).toHaveClass(/active/);
@@ -204,8 +274,7 @@ test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı güncell
 });
 
 test('feature bar sayfa açılışında kapalıdır ve tek tıkla açılıp tek tıkla kapanır', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.locator('.booklet-question').first()).toBeVisible();
+  await openSinglePlayer(page);
 
   // 1. Sayfa ilk açıldığında hiçbir soru çekmecesi açık gelmemeli (0 adet is-expanded)
   const openDrawers = await page.locator('.q-features-drawer.is-expanded').count();

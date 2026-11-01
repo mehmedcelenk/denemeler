@@ -1,5 +1,7 @@
 @import 'katex/dist/katex.min.css';
 @import './base.css';
+@import './welcome.css';
+@import './welcome-dialog.css';
 @import './header.css';
 @import './booklet.css';
 @import './english.css';

@@ -199,9 +199,9 @@ body.dark-mode .q-soon-banner {
   opacity: 1; color: var(--brand-accent); background: color-mix(in srgb, var(--brand-accent) 12%, transparent);
 }
 
-.btn-companion-icon.btn-star-action:hover { opacity: 1; color: #eab308; }
-.btn-companion-icon.btn-star-action.is-starred { opacity: 1 !important; color: #eab308 !important; }
-.btn-companion-icon.btn-star-action.is-starred svg { fill: #eab308 !important; stroke: #eab308 !important; }
+.btn-companion-icon.btn-star-action:hover { opacity: 1; color: var(--brand-accent); }
+.btn-companion-icon.btn-star-action.is-starred { opacity: 1 !important; color: var(--brand-accent) !important; }
+.btn-companion-icon.btn-star-action.is-starred svg { fill: currentColor !important; stroke: currentColor !important; }
 .btn-companion-icon.copied { opacity: 1 !important; color: #10b981 !important; }
 .btn-companion-icon.btn-speech-question.is-loading {
   opacity: 1 !important;

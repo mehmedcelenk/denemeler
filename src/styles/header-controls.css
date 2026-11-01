@@ -53,8 +53,8 @@
 
 .btn-top-filter#btnFilterStarred.active,
 .btn-top-unified[data-mode="starred"].active {
-  background: #d97706;
-  box-shadow: 0 3px 12px rgba(217, 119, 6, 0.38);
+  background: #059669;
+  box-shadow: 0 3px 12px rgba(5, 150, 105, 0.38);
 }
 
 .top-view-label,
@@ -86,14 +86,16 @@ body.dark-mode #btnFilterRematch:not(.active) .filter-count-badge {
   color: #fb7185;
 }
 
-#btnFilterStarred:not(.active) .filter-count-badge {
-  background: rgba(217, 119, 6, 0.16);
-  color: #d97706;
+#btnFilterStarred:not(.active) .filter-count-badge,
+.btn-top-unified[data-mode="starred"]:not(.active) .filter-count-badge {
+  background: rgba(5, 150, 105, 0.16);
+  color: #059669;
 }
 
-body.dark-mode #btnFilterStarred:not(.active) .filter-count-badge {
-  background: rgba(245, 158, 11, 0.22);
-  color: #fbbf24;
+body.dark-mode #btnFilterStarred:not(.active) .filter-count-badge,
+body.dark-mode .btn-top-unified[data-mode="starred"]:not(.active) .filter-count-badge {
+  background: rgba(16, 185, 129, 0.22);
+  color: #34d399;
 }
 
 /* Kaldığın Yerden Devam Et Bannerı */

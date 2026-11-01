@@ -11,14 +11,12 @@ import {
   renderToolbarExtraHooks,
 } from './card-hooks.ts';
 
-const svgEye = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`;
 const svgBoard = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>`;
-const svgStar = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+const svgBookmark = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>`;
 const svgEliminate = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>`;
 const svgCopy = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`;
 /** Soru kartının üst başlık satırını ve araç butonlarını üretir. */
 export function renderCardHeader(q: Question, globalIdx: number, isPassive: boolean): string {
-  const isRevealed = state.revealedAnswers.has(q.id);
   const soonBadge = isPassive ? '<span class="q-soon-badge">🔒 Yakında</span>' : '';
   const isTde = (state.currentSubject === 'TDE') || Boolean(q.ders && q.ders.includes('TÜRK DİLİ'));
   const headerExtraHtml = renderHeaderExtraHooks(q);
@@ -46,13 +44,6 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
     </button>
   `;
 
-  const eyeClass = isRevealed ? 'revealed' : '';
-  const eyeBtnHtml = isPassive ? '' : `
-    <button class="btn-companion-icon ${eyeClass}" id="btnEye_${q.id}" data-action="toggle-answer-reveal" data-qid="${q.id}" title="Cevabı Göster / Gizle">
-      ${svgEye}
-    </button>
-  `;
-
   const boardBtnHtml = `
     <button class="btn-companion-icon btn-board-mode" id="btnBoard_${q.id}" data-action="open-board-focus" data-qid="${q.id}" title="Akıllı Tahta Modu">
       ${svgBoard}
@@ -60,9 +51,10 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
   `;
 
   const isStarred = Boolean(state.starredQuestionIds && state.starredQuestionIds.has(q.id));
+  const saveButtonLabel = isStarred ? 'Kaydı Kaldır' : 'Soruyu Kaydet';
   const starBtnHtml = `
-    <button class="btn-companion-icon btn-star-action ${isStarred ? 'is-starred' : ''}" id="btnStar_${q.id}" data-action="toggle-star-question" data-qid="${q.id}" title="${isStarred ? 'Yıldızı Kaldır' : 'Soruyu Yıldızla'}">
-      ${svgStar}
+    <button class="btn-companion-icon btn-star-action ${isStarred ? 'is-starred' : ''}" id="btnStar_${q.id}" data-action="toggle-star-question" data-qid="${q.id}" title="${saveButtonLabel}" aria-label="${saveButtonLabel}">
+      ${svgBookmark}
     </button>
   `;
 
@@ -96,7 +88,6 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
         ${eliminateWrongBtnHtml}
         ${starBtnHtml}
         ${copyBtnHtml}
-        ${eyeBtnHtml}
         ${boardBtnHtml}
       </div>
     </div>
@@ -230,9 +221,10 @@ export function renderQuestionCardHtml(q: Question, globalIdx: number): string {
   const userMark = state.userMarkedChoices[q.id] || '';
   const isRevealed = state.revealedAnswers.has(q.id);
   const statusAttr = userMark ? `data-user-status="${userMark === q.dogru_cevap ? 'correct' : 'incorrect'}"` : '';
+  const openedAt = Date.now();
 
   return `
-    <div class="${questionClass}" id="bq_${q.id}" data-qid="${q.id}" data-correct="${q.dogru_cevap}" data-user-mark="${userMark}" data-revealed="${isRevealed ? 'true' : 'false'}" ${statusAttr}>
+    <div class="${questionClass}" id="bq_${q.id}" data-qid="${q.id}" data-opened-at="${openedAt}" data-correct="${q.dogru_cevap}" data-user-mark="${userMark}" data-revealed="${isRevealed ? 'true' : 'false'}" ${statusAttr}>
       ${renderCardHeader(q, globalIdx, isPassive)}
       ${renderSoonBanner(isPassive)}
       <div class="q-stem-text" id="stem_${q.id}">${stemHtml}</div>

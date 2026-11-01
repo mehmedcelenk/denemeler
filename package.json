@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "npm run check && vite build",
+    "deploy:surge": "npm run build && npx --yes surge@0.54.0 dist ortaklar.surge.sh",
     "preview": "vite preview --host 127.0.0.1",
     "lint": "eslint src scripts/check-architecture.js *.config.js tests/browser",
     "check": "npm run lint && npm run typecheck && node scripts/check-architecture.js && node --import tsx --test tests/*.test.ts",

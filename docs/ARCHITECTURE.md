@@ -9,6 +9,7 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | İstek | Başlangıç dosyası |
 |---|---|
 | Başlangıç akışı | `src/app/bootstrap.js` |
+| Karşılama portalı ve giriş akışları | `src/features/welcome/init.ts`, `welcome-view.ts` & `src/styles/welcome.css` |
 | `data-action` kaydı ve olay delegasyonu | `src/app/actions.ts`, `src/app/events.js` & özelliklerin `init.ts` modülleri |
 | Paylaşılan durum, tipler ve olay omurgası | `src/app/state.ts`, `state-types.ts` & `state-events.ts` |
 | Kalıcı depolamanın merkezi kapısı | `src/app/storage.ts`; anahtar sözlüğü: `src/shared/storage-keys.ts` |

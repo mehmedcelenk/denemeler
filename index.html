@@ -15,7 +15,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dist/assets/styles.css">
 </head>
-<body>
+<body class="welcome-active">
+
+  <section class="welcome-portal" id="welcomePortal" aria-label="Karşılama ekranı"></section>
 
   <!-- ========================================================= -->
   <!-- 1. ÜST ORTA BAŞLIK HAPI & EZAN VAKTİ (MERKEZİ GRUP)       -->
@@ -41,9 +43,9 @@
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/><path d="M14.5 6.5 18 3h3v3l-3.5 3.5"/><path d="m5 14 4 4"/><path d="m7 17-3 3"/><path d="m3 19 2 2"/></svg>
         <span class="top-unified-label">Rövanş</span>
       </button>
-      <button class="btn-top-unified" id="btnUnifiedStarred" data-action="set-unified-mode" data-mode="starred" title="Yıldızlılar (Favoriler)">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <span class="top-unified-label">Yıldızlı</span>
+      <button class="btn-top-unified" id="btnUnifiedStarred" data-action="set-unified-mode" data-mode="starred" title="Kaydedilen Sorular">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="top-unified-label">Kayıtlı</span>
       </button>
       <button class="btn-top-unified" id="btnUnifiedNotes" data-action="set-unified-mode" data-mode="notes" title="Ders Notları">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
@@ -100,75 +102,45 @@
   <div class="floating-console-container">
     <!-- Konsol Menüsü -->
     <div class="console-menu-popup" id="consoleMenuPopup">
-      <div class="console-al-alim" title="Bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+      <nav class="console-welcome-actions" aria-label="Oturum menüsü">
+        <button type="button" class="console-nav-action" data-action="welcome-home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+          <span>Ana Sayfa</span>
+        </button>
+        <button type="button" class="console-nav-action" id="btnResumeLastSession" data-action="welcome-resume">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 3 14 9-14 9z"/></svg>
+          <span>Kaldığın Yerden Devam Et</span>
+        </button>
+        <button type="button" class="console-nav-action" data-action="cycle-column-count" id="btnConsoleColumnCycle" title="Sütun Düzeni (1-4)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 3v18"/></svg>
+          <span>Sütun Düzeni</span>
+        </button>
+        <button type="button" class="console-nav-action" data-action="cycle-zoom-level" id="btnConsoleZoomCycle" title="Yazı Boyutu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+          <span>Yazı Boyutu</span>
+        </button>
+        <button type="button" class="console-nav-action" data-action="cycle-theme-mode" id="btnConsoleThemeCycle" title="Tema (Açık/Koyu)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <span>Tema</span>
+        </button>
+        <button type="button" class="console-nav-action" data-action="cycle-accent-color" id="btnConsoleColorCycle" title="Vurgu Rengi">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2a10 10 0 0 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-.9-.5-1.3-.3-.3-.5-.8-.5-1.2a2 2 0 0 1 2-2h2.1a5 5 0 0 0 4.9-5A8.5 8.5 0 0 0 12 2Z"/></svg>
+          <span>Vurgu Rengi</span>
+        </button>
+        <button type="button" class="console-nav-action" data-action="open-pdf-dialog" title="PDF / Yazdır">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+          <span>PDF / Yazdır</span>
+        </button>
+      </nav>
 
-      <!-- Ezan Vakti Rozeti -->
-      <div class="console-control-group">
-        <div class="top-prayer-pill" id="topPrayerPill" title="Sonraki Ezana Kalan Süre">
-          <span class="prayer-icon">⏳</span>
-          <span class="prayer-text" id="prayerDisplayText">00:00:00</span>
-        </div>
+      <div class="top-prayer-pill" id="topPrayerPill" title="Sonraki Ezana Kalan Süre">
+        <span class="prayer-text" id="prayerDisplayText">00:00:00</span>
       </div>
-
-      <div class="console-divider"></div>
-
-      <!-- 1. Satır: Özel Tıkladıkça Değişen Görünüm Ayarları (Sütun, Font, Tema, Renk, Ses Cinsiyeti, Ses Motoru) -->
-      <div class="console-tools-grid grid-6">
-        <button class="btn-tool-icon" data-action="cycle-column-count" id="btnConsoleColumnCycle" title="Sütun Düzeni (1-4)" aria-label="Sütun Sayısı">
-          <span style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:12px; letter-spacing:-1px;">||</span>
-        </button>
-        <button class="btn-tool-icon" data-action="cycle-zoom-level" id="btnConsoleZoomCycle" title="Yazı Boyutu (A)" aria-label="Yazı Boyutu">
-          <span style="font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:12.5px; line-height:1;">A</span>
-        </button>
-        <button class="btn-tool-icon" data-action="cycle-theme-mode" id="btnConsoleThemeCycle" title="Tema (Açık/Koyu)" aria-label="Tema">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-        </button>
-        <button class="btn-tool-icon" data-action="cycle-accent-color" id="btnConsoleColorCycle" title="Vurgu Rengi" aria-label="Vurgu Rengi">
-          <span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:#0284c7; border:1.5px solid rgba(255,255,255,0.7); box-shadow:0 0 4px #0284c7;"></span>
-        </button>
-        <button class="btn-tool-icon" data-action="cycle-tts-gender" id="btnConsoleVoiceGenderCycle" title="Seslendirici: Kadın Sesi (Erkek sesine geçmek için tıkla)" aria-label="Seslendirici Cinsiyeti" style="color:#ec4899;">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 15v7"/><path d="M9 19h6"/></svg>
-        </button>
-        <button class="btn-tool-icon" data-action="cycle-tts-engine" id="btnConsoleVoiceEngineCycle" title="Ses Motoru: 1 - Cihazın Doğal Sesi (Değiştirmek için tıkla)" aria-label="Ses Motoru Seçimi" style="color:#10b981;">
-          <span style="display:flex; align-items:center; justify-content:center; gap:2px; font-weight:800; font-size:11px; font-family:'JetBrains Mono', monospace;">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></svg>
-            <span id="consoleVoiceEngineBadge" style="line-height:1;">1</span>
-          </span>
-        </button>
-      </div>
-
-      <div class="console-divider"></div>
-
-      <!-- 2. Satır: Statik Eylem Araçları -->
-      <div class="console-tools-grid grid-6">
-        <button class="btn-tool-icon" data-action="clear-all-marks" title="Şıkları Sıfırla" aria-label="Şıkları Sıfırla">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>
-        </button>
-        <button class="btn-tool-icon" data-action="undo-clear-marks" id="btnUndoClear" title="Geri Al (Undo)" aria-label="Geri Al" style="opacity:0.35;">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"/></svg>
-        </button>
-        <button class="btn-tool-icon" data-action="toggle-fullscreen" id="btnFullscreenTool" title="Tam Ekran / Odak Modu" aria-label="Tam Ekran">
-          <svg id="iconFullscreenSvg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
-        </button>
-        <button class="btn-tool-icon" data-action="open-pdf-dialog" title="PDF / Yazdır" aria-label="PDF / Yazdır">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
-        </button>
-        <button class="btn-tool-icon" data-action="open-room-modal" id="btnOpenRoomModal" title="Sınıf Oturumu" aria-label="Sınıf Oturumu">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </button>
-      </div>
-
-
-      <div class="console-divider"></div>
     </div>
 
-    <!-- 3 Çizgili Ana Menü Butonu (Hamburger) -->
-    <button class="btn-square-console" id="btnMasterConsole" data-action="toggle-console-menu" title="Menü">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="4" y1="6" x2="20" y2="6"/>
-        <line x1="4" y1="12" x2="20" y2="12"/>
-        <line x1="4" y1="18" x2="20" y2="18"/>
-      </svg>
+    <!-- Ana Menü Butonu -->
+    <button class="btn-square-console" id="btnMasterConsole" data-action="toggle-console-menu" title="Menü" aria-label="Menü">
+      <span class="console-btn-text">ME<br>NÜ</span>
     </button>
   </div>
 
@@ -178,11 +150,7 @@
   <div class="drawer-overlay" id="drawerOverlay" data-action="close-subject-drawer" data-action-self="true">
     <div class="drawer-card">
       <div class="drawer-header">
-        <span class="drawer-header-brand">sınavdasın.</span>
-        <div class="console-segmented-pill" id="programToggleGroup">
-          <button type="button" class="btn-segmented-pill active" id="btnProgramAoihl" data-action="set-program-mode" data-program="AOIHL">AOİHL</button>
-          <button type="button" class="btn-segmented-pill" id="btnProgramAof" data-action="set-program-mode" data-program="AOF">AÖF</button>
-        </div>
+        <span class="drawer-header-brand">AOFİHL</span>
         <button class="btn-close-drawer" data-action="close-subject-drawer" title="Kapat">✕</button>
       </div>
 
@@ -191,7 +159,7 @@
         <div class="library-banner-icon">⚔️</div>
         <div class="library-banner-title">Rövanş Modu Aktif</div>
         <div class="library-banner-desc">
-          Rövanş ve yıldızlı sorular tüm branşlardan karışık olarak sunulur. Bu moddayken branş ve konu seçimi kilitlidir.
+          Rövanş ve kaydedilen sorular tüm branşlardan karışık olarak sunulur. Bu moddayken branş ve konu seçimi kilitlidir.
         </div>
         <button class="cat-pill-btn" style="background:#059669; color:#fff; border-color:#059669; padding:8px 18px; font-size:12.5px; font-weight:700;" data-action="exit-library-and-close-drawer">
           Standart Derse Dön

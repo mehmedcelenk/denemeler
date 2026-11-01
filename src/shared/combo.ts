@@ -20,6 +20,17 @@ export interface ComboEvent {
   badgeClass: 'combo-water' | 'combo-earth' | 'combo-broken';
 }
 
+const COMBO_TITLES: Readonly<Record<number, string>> = {
+  2: 'Temiz başlangıç',
+  3: 'Aynen böyle',
+  4: 'Gözünden kaçmıyor',
+  5: 'Üstad',
+};
+
+function getComboTitle(streak: number, randomFn: () => number): string {
+  return COMBO_TITLES[streak] ?? (randomFn() < 0.5 ? 'Durdurulamıyor' : 'Maşallah');
+}
+
 /**
  * Verilen durum ve cevap sonucuna göre bir sonraki kombo durumunu hesaplar.
  * randomFn: Deterministik testler için isteğe bağlı rastgele sayı üreteci (varsayılan: Math.random)
@@ -33,19 +44,13 @@ export function evaluateCombo(
     const nextStreak = state.currentStreak + 1;
 
     if (state.hasGrace) {
-      // "Avans verdi" durumundayken doğru bildi:
-      // Bazen "Devam Ediyor", bazen "Durdurulamıyor"
-      const pickUnstoppable = nextStreak >= 5 ? randomFn() < 0.5 : false;
-      const title = pickUnstoppable ? 'Durdurulamıyor! 🌊' : 'Devam Ediyor! 💧';
-      const subtitle = `${nextStreak}'de ${nextStreak}`;
-
       return {
         nextState: { currentStreak: nextStreak, hasGrace: false },
         event: {
           type: 'grace_saved',
-          title,
-          subtitle,
-          icon: pickUnstoppable ? '🌊' : '💧',
+          title: getComboTitle(nextStreak, randomFn),
+          subtitle: `${nextStreak}'de ${nextStreak}`,
+          icon: nextStreak >= 6 ? '🌊' : '💧',
           badgeClass: 'combo-water',
         },
       };
@@ -59,45 +64,14 @@ export function evaluateCombo(
       };
     }
 
-    // 2 .. 5 arası standart sayım: 2'de 2 ... 5'te 5
-    if (nextStreak >= 2 && nextStreak <= 5) {
-      const label = `${nextStreak}'de ${nextStreak}`;
-      return {
-        nextState: { currentStreak: nextStreak, hasGrace: false },
-        event: {
-          type: 'combo',
-          title: label,
-          subtitle: nextStreak >= 4 ? 'Su Gibi Akıyor! 💧' : 'Harika Seri! ✨',
-          icon: nextStreak >= 4 ? '🌊' : '💧',
-          badgeClass: 'combo-water',
-        },
-      };
-    }
-
-    // 6 ve 7 serisi: Bazen "6'da 6" / "7'de 7", bazen doğrudan "Durdurulamıyor!"
-    if (nextStreak === 6 || nextStreak === 7) {
-      const pickUnstoppable = randomFn() < 0.5;
-      const title = pickUnstoppable ? 'Durdurulamıyor! 🌊' : `${nextStreak}'de ${nextStreak}`;
-      return {
-        nextState: { currentStreak: nextStreak, hasGrace: false },
-        event: {
-          type: pickUnstoppable ? 'unstoppable' : 'combo',
-          title,
-          subtitle: pickUnstoppable ? `${nextStreak}'de ${nextStreak} • Çağlayan Gibi!` : 'Durdurulamıyor! 🌊',
-          icon: '🌊',
-          badgeClass: 'combo-water',
-        },
-      };
-    }
-
-    // 8 ve üzeri: Kesin Durdurulamıyor
+    const title = getComboTitle(nextStreak, randomFn);
     return {
       nextState: { currentStreak: nextStreak, hasGrace: false },
       event: {
-        type: 'unstoppable',
-        title: 'Durdurulamıyor! 🌊',
-        subtitle: `${nextStreak}'de ${nextStreak} • Tsunami Etkisi!`,
-        icon: '🌊',
+        type: nextStreak >= 6 && title === 'Durdurulamıyor' ? 'unstoppable' : 'combo',
+        title,
+        subtitle: `${nextStreak}'de ${nextStreak}`,
+        icon: nextStreak >= 6 ? '🌊' : '💧',
         badgeClass: 'combo-water',
       },
     };
