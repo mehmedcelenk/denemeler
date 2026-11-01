@@ -31,9 +31,8 @@ function renderFeedRow(item: RoomFeedItem): string {
     case 'FOCUS_LOST':
       if (item.returnedAt) {
         icon = '🔄';
-        const returnedTime = formatTime(item.returnedAt);
         const diffSec = Math.round((item.returnedAt - item.timestamp) / 1000);
-        statusText = `ayrıldı, geri döndü (${diffSec} sn sonra - ${returnedTime})`;
+        statusText = `yeniden katıldı (${diffSec} sn sonra)`;
         rowClass = 'row-warning';
       } else {
         icon = '⚪';

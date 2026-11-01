@@ -1,0 +1,19 @@
+/* ========================================================= */
+/* SINIF OTURUMU - HOCA ROZETİ & PANEL TAMAMLAYICILARI       */
+/* ========================================================= */
+
+.room-pill-offline {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 1px 7px;
+  border-radius: 9999px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  font-weight: 700;
+  font-size: 11px;
+  margin-left: 5px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+

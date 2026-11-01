@@ -2,21 +2,90 @@ import type { RoomMessageType } from '../types.ts';
 import type { RoomMessageHandler } from './context.ts';
 import { showRoomToast } from '../toast.ts';
 
+function isOlderPeer(aJoinedAt: number, aId: string, bJoinedAt: number, bId: string): boolean {
+  if (aJoinedAt !== bJoinedAt) return aJoinedAt < bJoinedAt;
+  return aId.localeCompare(bId) < 0;
+}
+
 export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHandler>> = {
   ROOM_SYNC: (ctx, incoming) => {
-    const { msg, isSenderHost } = incoming;
-    if (!isSenderHost && ctx.participants.some((p) => p.isHost)) return;
+    const { msg, senderId, senderName, timestamp, isSenderHost } = incoming;
+    const incomingList = Array.isArray(msg.payload?.participants) ? msg.payload.participants : [];
+    const incomingHost = incomingList.find((p) => p && p.isHost) || (msg.isHost
+      ? { id: senderId, name: senderName, isHost: true, joinedAt: msg.payload?.joinedAt ?? timestamp }
+      : undefined);
+
+    if (ctx.isHost) {
+      if (incomingHost && incomingHost.id !== ctx.peerId) {
+        const myPeer = ctx.participants.find((p) => p.id === ctx.peerId);
+        const myJoinedAt = myPeer?.joinedAt ?? timestamp;
+        const theirJoinedAt = Number.isFinite(incomingHost.joinedAt) ? incomingHost.joinedAt : timestamp;
+
+        if (isOlderPeer(theirJoinedAt, incomingHost.id, myJoinedAt, ctx.peerId)) {
+          // Karşıdaki Host benden daha kıdemli -> kendimi öğrenciye düşür ve onun senkronizasyonunu kabul et
+          ctx.demoteToStudent();
+          for (const p of ctx.participants) {
+            p.isHost = p.id === incomingHost.id;
+          }
+          delete ctx.studentStats[incomingHost.id];
+        } else {
+          // Ben daha kıdemli Host'um -> karşı tarafı öğrenci olarak kaydet ve gerçek durumu yayınla
+          const existing = ctx.participants.find((p) => p.id === senderId);
+          if (existing) {
+            existing.isHost = false;
+          } else {
+            ctx.participants.push({
+              id: senderId,
+              name: senderName,
+              isHost: false,
+              joinedAt: theirJoinedAt,
+              lastSeenAt: timestamp,
+            });
+          }
+          if (!ctx.studentStats[senderId]) {
+            ctx.studentStats[senderId] = {
+              id: senderId,
+              name: senderName,
+              correctCount: 0,
+              incorrectCount: 0,
+              joinedAt: theirJoinedAt,
+              exitCount: 0,
+              totalAwayMs: 0,
+              lastSeenAt: timestamp,
+              isOnline: true,
+            };
+          }
+          ctx.scheduleSyncBroadcast();
+          ctx.notify();
+          return;
+        }
+      } else {
+        return;
+      }
+    }
+
+    if (!isSenderHost && !incomingHost && ctx.participants.some((p) => p.isHost)) return;
 
     if (msg.payload && Array.isArray(msg.payload.participants)) {
+      const winnerHostId = incomingHost?.id;
       for (const inc of msg.payload.participants) {
-        if (inc && typeof inc.id === 'string' && !ctx.participants.some((p) => p.id === inc.id)) {
+        if (!inc || typeof inc.id !== 'string') continue;
+        const cleanId = inc.id.slice(0, 50);
+        const existing = ctx.participants.find((p) => p.id === cleanId);
+        const peerIsHost = winnerHostId ? cleanId === winnerHostId : !!inc.isHost;
+        if (!existing) {
           ctx.participants.push({
-            id: inc.id.slice(0, 50),
+            id: cleanId,
             name: (inc.name || 'Öğrenci').slice(0, 60),
-            isHost: !!inc.isHost,
+            isHost: peerIsHost,
             joinedAt: Number.isFinite(inc.joinedAt) ? inc.joinedAt : Date.now(),
             lastSeenAt: Number.isFinite(inc.lastSeenAt) ? inc.lastSeenAt : Date.now(),
           });
+        } else {
+          existing.isHost = peerIsHost;
+        }
+        if (peerIsHost) {
+          delete ctx.studentStats[cleanId];
         }
       }
     }
@@ -41,7 +110,7 @@ export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHan
             exitCount: incomingExits,
             totalAwayMs: incomingAwayMs,
             lastSeenAt: Number.isFinite(stats?.lastSeenAt) ? stats.lastSeenAt : Date.now(),
-            isOnline: true,
+            isOnline: stats?.isOnline ?? true,
           };
         } else if (id !== ctx.peerId) {
           existing.correctCount = Math.max(existing.correctCount, incomingCorrect);

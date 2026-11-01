@@ -53,6 +53,9 @@ export interface RoomMessagePayload {
   questionId?: number;
   correctCount?: number;
   incorrectCount?: number;
+  exitCount?: number;
+  totalAwayMs?: number;
+  joinedAt?: number;
   feedId?: string;
   studentId?: string;
   studentName?: string;

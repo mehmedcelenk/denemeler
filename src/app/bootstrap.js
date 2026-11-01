@@ -24,6 +24,7 @@ import { dismissResumeBanner, initResumeBanner, loadSessionSnapshot } from '../f
 import { initWelcome } from '../features/welcome/init.ts';
 import { setUnifiedMode } from '../features/booklet/filter.ts';
 import { roomService } from '../features/classroom/room-service.ts';
+import { loadRoomSession } from '../features/classroom/session-store.ts';
 import { closeSubjectDrawer, openSubjectDrawer } from '../features/subjects/drawer.ts';
 import { setSubject } from '../features/subjects/selection.js';
 
@@ -54,15 +55,18 @@ export async function startApp() {
   initLibrary();
   try {
     initApp();
+    const activeRoom = loadRoomSession();
+    const hasActiveRoom = Boolean(activeRoom && activeRoom.roomId);
+
     initWelcome({
       closeSubjectDrawer,
       dismissResumeBanner,
       getSavedSession: loadSessionSnapshot,
-      joinRoom: (roomId, userName) => roomService.joinOrCreateRoom(roomId, userName, false),
+      joinRoom: (roomId, userName) => roomService.joinOrCreateRoom(roomId, userName, true),
       loadSubject: setSubject,
       openSubjectDrawer,
       setUnifiedMode,
-    });
+    }, { autoShow: !hasActiveRoom });
   } catch (error) {
     console.error(error);
   }

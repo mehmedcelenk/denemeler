@@ -15,6 +15,12 @@ export function openRoomModal(): void {
   if (roomInput && !roomInput.value && curState.roomId) {
     roomInput.value = curState.roomId;
   }
+  if (roomInput && !roomInput.dataset.uppercaseBound) {
+    roomInput.dataset.uppercaseBound = 'true';
+    roomInput.addEventListener('input', () => {
+      roomInput.value = roomInput.value.toLocaleUpperCase('tr-TR');
+    });
+  }
 
   if (nameInput) setTimeout(() => nameInput.focus(), 80);
 }

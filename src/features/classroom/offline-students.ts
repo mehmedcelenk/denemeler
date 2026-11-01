@@ -18,7 +18,9 @@ export function checkOfflineStudents(state: RoomState, now: number): boolean {
           studentName: stats.name,
           timestamp: now,
         });
-        showRoomToast('Öğrenci Ayrıldı', `${stats.name} oturumdan ayrıldı.`, '⚪');
+        if (state.isHost) {
+          showRoomToast('Öğrenci Ayrıldı', `${stats.name} oturumdan ayrıldı.`, '⚪');
+        }
       }
     }
   }

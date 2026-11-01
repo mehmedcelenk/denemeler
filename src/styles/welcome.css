@@ -158,6 +158,7 @@ button.welcome-action-row:hover {
   color: var(--paper-text);
   font-size: 16px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .welcome-multiplayer-row input:focus,
@@ -176,7 +177,7 @@ button.welcome-action-row:hover {
   border-radius: 10px;
   background: var(--brand-accent);
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   cursor: pointer;
 }
@@ -252,8 +253,22 @@ body.welcome-active #bookletZoomIndicator {
 
 body.welcome-active [data-action="welcome-home"],
 body.welcome-active [data-action="cycle-column-count"],
-body.welcome-active [data-action="cycle-zoom-level"] {
-  display: none;
+body.welcome-active [data-action="cycle-zoom-level"],
+body.in-room [data-action="welcome-home"],
+body:not(.in-room) .console-nav-leave-room {
+  display: none !important;
+}
+
+.console-nav-action.console-nav-leave-room {
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.28);
+  background: rgba(239, 68, 68, 0.06);
+}
+
+.console-nav-action.console-nav-leave-room:hover:not(:disabled) {
+  border-color: #ef4444;
+  color: #dc2626;
+  background: rgba(239, 68, 68, 0.12);
 }
 
 @media (max-width: 390px) {

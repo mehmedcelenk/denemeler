@@ -12,6 +12,7 @@ export interface MessageContext {
   helpRequested: boolean;
   setHelpRequested: (val: boolean) => void;
   setPaused: (val: boolean) => void;
+  demoteToStudent: () => void;
   leaveRoom: () => void;
   scheduleSyncBroadcast: () => void;
   notify: () => void;

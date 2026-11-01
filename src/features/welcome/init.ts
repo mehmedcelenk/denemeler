@@ -3,6 +3,7 @@ import { state, store } from '../../app/state.ts';
 import { readString, writeString } from '../../app/storage.ts';
 import type { SubjectId } from '../../data/question.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
+import { roomService } from '../classroom/room-service.ts';
 import {
   focusRoomInput,
   getDialogUserName,
@@ -144,7 +145,13 @@ function returnHome(): void {
   showWelcomePortal();
 }
 
-async function resumeSavedSession(): Promise<void> {
+export interface WelcomeOptions {
+  readonly autoShow?: boolean;
+}
+
+export { hideWelcomePortal, showWelcomePortal } from './welcome-view.ts';
+
+export async function resumeSavedSession(): Promise<void> {
   const snapshot = dependencies.getSavedSession();
   const subject = snapshot?.subject ?? DEFAULT_SUBJECTS[state.programMode];
 
@@ -167,7 +174,12 @@ async function resumeSavedSession(): Promise<void> {
 
 function bindWelcomeInputs(): void {
   const roomInput = document.getElementById('welcomeRoomId');
-  roomInput?.addEventListener('input', () => showWelcomeError());
+  roomInput?.addEventListener('input', () => {
+    if (roomInput instanceof HTMLInputElement) {
+      roomInput.value = roomInput.value.toLocaleUpperCase('tr-TR');
+    }
+    showWelcomeError();
+  });
   roomInput?.addEventListener('keydown', event => {
     if (event.key === 'Enter') void joinRoom();
   });
@@ -179,7 +191,10 @@ function bindWelcomeInputs(): void {
   });
 }
 
-export function initWelcome(welcomeDependencies: WelcomeDependencies): void {
+export function initWelcome(
+  welcomeDependencies: WelcomeDependencies,
+  options: WelcomeOptions = {}
+): void {
   if (initialized || typeof document === 'undefined') return;
   initialized = true;
   dependencies = welcomeDependencies;
@@ -204,5 +219,11 @@ export function initWelcome(welcomeDependencies: WelcomeDependencies): void {
     'welcome-home': () => returnHome(),
     'welcome-resume': () => resumeSavedSession(),
   });
-  showWelcomePortal();
+
+  if (roomService.getState().roomId || options.autoShow === false) {
+    hideWelcomePortal();
+    void resumeSavedSession();
+  } else {
+    showWelcomePortal();
+  }
 }

@@ -25,8 +25,8 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     existingStats.isOnline = true;
   }
 
-  // Doğrulanmış Hoca Kontrolü: Katılımcı listesinde kayıtlı ve isHost: true ise veya odada henüz hiç kimse yoksa
-  const isSenderHost = existingPeer ? existingPeer.isHost : (!ctx.participants.some((p) => p.isHost) && !!msg.isHost);
+  // Gönderen katılımcı listesinde kayıtlıysa mevcut rolünü, değilse mesajdaki isHost değerini baz al
+  const isSenderHost = existingPeer ? existingPeer.isHost : !!msg.isHost;
 
   const handler = Object.hasOwn(hostMessageHandlers, msg.type)
     ? hostMessageHandlers[msg.type]

@@ -7,8 +7,8 @@ let pollIntervalTimer: ReturnType<typeof setInterval> | null = null;
 let graceTimer: ReturnType<typeof setTimeout> | null = null;
 let focusLostStartTimestamp: number = 0;
 
-// Sayfa yenileme (F5/Reload) anındaki anlık sıçramayı yutacak kadar (1.2 saniye)
-const RELOAD_GRACE_PERIOD_MS = 1200;
+// Sayfa yenileme (F5/Reload) anındaki anlık kopmalarda hemen ayrıldı paniği yaratmamak için 1 sn tolerans
+const RELOAD_GRACE_PERIOD_MS = 1000;
 
 export function initFocusTracker(): void {
   if (isListening || typeof document === 'undefined') return;
@@ -32,15 +32,6 @@ export function initFocusTracker(): void {
       triggerPotentialFocusRestored();
     });
 
-    // Sekme kapatılırken veya sayfadan çıkılırken anında kesin ayrılma bildirimi
-    window.addEventListener('beforeunload', () => {
-      handleImmediateUnload();
-    });
-
-    window.addEventListener('pagehide', () => {
-      handleImmediateUnload();
-    });
-
     // Mola bittiğinde öğrenci dışarıdaysa anında yakala
     roomService.onResume(() => {
       checkFocusAfterResume();
@@ -59,17 +50,6 @@ export function initFocusTracker(): void {
       }
     }, 1500);
   }
-}
-
-function handleImmediateUnload(): void {
-  const state = roomService.getState();
-  if (!state.roomId) return;
-  if (graceTimer) {
-    clearTimeout(graceTimer);
-    graceTimer = null;
-  }
-  // Sekme kapandığında soket kapanmadan hemen önce PEER_LEAVE sinyalini gönder
-  roomService.leaveRoom();
 }
 
 export function checkFocusAfterResume(): void {
@@ -109,7 +89,7 @@ function confirmFocusLoss(lostAt: number): void {
 }
 
 function triggerPotentialFocusRestored(): void {
-  // Eğer reload / 1.2 sn içinde geri döndüyse alarmı iptal et
+  // Eğer reload / 1 sn içinde geri döndüyse alarmı iptal et
   if (graceTimer) {
     clearTimeout(graceTimer);
     graceTimer = null;

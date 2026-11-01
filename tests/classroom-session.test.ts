@@ -109,6 +109,7 @@ test('100 Kişilik Sınıf Ölçeklenebilirlik Testi: N x N mesaj patlamasını 
     helpRequested: false,
     setHelpRequested: () => {},
     setPaused: () => {},
+    demoteToStudent: () => {},
     leaveRoom: () => {},
     scheduleSyncBroadcast: () => {
       hostSyncScheduleCount++;

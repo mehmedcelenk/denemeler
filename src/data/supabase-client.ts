@@ -184,20 +184,27 @@ export async function fetchLocalSubjectJson(
   return parseQuestions(json);
 }
 
+let supabaseQuestionsUnavailable = false;
+
 export async function fetchQuestionsWithFallback(
   subject: SubjectId | string,
   options?: { baseUrl?: string; timeoutMs?: number }
 ): Promise<Question[]> {
   const timeoutMs = options?.timeoutMs ?? 5000;
 
-  if (isSupabaseAvailable()) {
+  if (isSupabaseAvailable() && !supabaseQuestionsUnavailable) {
     try {
       const questions = await fetchQuestionsFromSupabase(subject, timeoutMs);
       if (Array.isArray(questions) && questions.length > 0) {
         return questions;
       }
     } catch (error) {
-      console.warn(`[Supabase] ${subject} soruları veritabanından çekilemedi, yerel JSON yedeğine geçiliyor:`, error);
+      if (error instanceof Error && error.message.includes('404')) {
+        supabaseQuestionsUnavailable = true;
+        console.info(`[Supabase] Veritabanında 'questions' tablosu bulunamadı, yerel JSON verileri kullanılıyor.`);
+      } else {
+        console.warn(`[Supabase] ${subject} soruları veritabanından çekilemedi, yerel JSON yedeğine geçiliyor:`, error);
+      }
     }
   }
 

@@ -24,6 +24,9 @@ export function initRoomFeature(): void {
   roomService.restoreSessionIfActive();
 
   roomService.subscribe((state) => {
+    if (typeof document !== 'undefined') {
+      document.body.classList.toggle('in-room', !!state.roomId);
+    }
     updateTopRoomPill(state);
     updatePauseOverlay(state);
     updateStudentDrawer(state);
@@ -55,13 +58,41 @@ function scheduleHeavyListRender(): void {
   }, Math.max(20, 120 - elapsed));
 }
 
+function escapeHtml(text: string): string {
+  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
 function updateTopRoomPill(state: RoomState): void {
   const pill = document.getElementById('topRoomPill');
   if (!pill) return;
   pill.style.display = state.roomId ? 'inline-flex' : 'none';
   if (!state.roomId) return;
   const textEl = pill.querySelector('.room-pill-text');
-  if (textEl) textEl.textContent = `${state.roomId} • 👥 ${state.participants.length}`;
+  if (!textEl) return;
+
+  const safeRoomId = escapeHtml(state.roomId);
+
+  if (state.isHost) {
+    const students = Object.values(state.studentStats);
+    const totalStudents = students.length;
+    const openFocusLostIds = new Set(
+      state.feedItems
+        .filter((f) => f.type === 'FOCUS_LOST' && !f.returnedAt)
+        .map((f) => f.studentId)
+    );
+    const offlineCount = students.filter(
+      (s) => !s.isOnline || openFocusLostIds.has(s.id)
+    ).length;
+    const activeCount = Math.max(0, totalStudents - offlineCount);
+
+    if (offlineCount > 0) {
+      textEl.innerHTML = `${safeRoomId} • 👥 ${activeCount} <span class="room-pill-offline">🔴 ${offlineCount}</span>`;
+    } else {
+      textEl.innerHTML = `${safeRoomId} • 👥 ${totalStudents}`;
+    }
+  } else {
+    textEl.innerHTML = `${safeRoomId} • 👥 ${state.participants.length}`;
+  }
 }
 
 function updatePauseOverlay(state: RoomState): void {
@@ -154,7 +185,7 @@ function setupRoomEvents(): void {
       }
     },
     'award-star': el => {
-      if (!(el instanceof HTMLButtonElement) || !(el.dataset.id || el.dataset.name)) return;
+      if (!roomService.isHost() || !(el instanceof HTMLButtonElement) || !(el.dataset.id || el.dataset.name)) return;
       const originalText = el.textContent;
       el.textContent = '⭐ Gönderildi';
       el.disabled = true;
@@ -165,14 +196,19 @@ function setupRoomEvents(): void {
       roomService.awardStarToStudent(el.dataset.id || '', el.dataset.name || '');
     },
     'send-broadcast-message': () => {
+      if (!roomService.isHost()) return;
       const input = document.getElementById('inputBroadcastMsg') as HTMLInputElement | null;
       if (input && input.value.trim()) {
         roomService.broadcastAnnouncement(input.value.trim());
         input.value = '';
       }
     },
-    'toggle-pause-room': () => roomService.togglePauseRoom(),
+    'toggle-pause-room': () => {
+      if (!roomService.isHost()) return;
+      roomService.togglePauseRoom();
+    },
     'close-room-globally': () => {
+      if (!roomService.isHost()) return;
       if (confirm('Tüm sınıf için oturumu sonlandırmak istediğinize emin misiniz?')) {
         roomService.closeRoomGlobally();
         closeTeacherDrawer();
@@ -182,6 +218,8 @@ function setupRoomEvents(): void {
       roomService.leaveRoom();
       closeTeacherDrawer();
       closeStudentDrawer();
+      document.getElementById('consoleMenuPopup')?.classList.remove('open');
+      document.querySelector<HTMLElement>('[data-action="welcome-home"]')?.click();
     },
   });
   document.addEventListener('click', event => {

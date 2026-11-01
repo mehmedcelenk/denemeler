@@ -141,6 +141,7 @@
 }
 
 .room-form-input:focus { border-color: var(--brand-accent); }
+#roomInputRoomId { text-transform: uppercase; }
 
 .room-modal-actions {
   display: flex;

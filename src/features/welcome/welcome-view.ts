@@ -49,9 +49,9 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
         </button>
         <div class="welcome-action-row welcome-multiplayer-row">
           <span class="welcome-action-icon">${usersIcon}</span>
-          <label class="welcome-multiplayer-label" for="welcomeRoomId">Çok Oyunculu</label>
-          <input id="welcomeRoomId" type="text" maxlength="24" autocomplete="off" autocapitalize="characters" placeholder="Oda Adı" aria-label="Oda adı">
-          <button type="button" class="welcome-room-submit" data-action="welcome-join-room" aria-label="Odaya katıl veya oda oluştur">→</button>
+          <label class="welcome-multiplayer-label" for="welcomeRoomId">Çevrim İçi:</label>
+          <input id="welcomeRoomId" type="text" maxlength="24" autocomplete="off" autocapitalize="characters" placeholder="Oda adı" aria-label="Oda adı">
+          <button type="button" class="welcome-room-submit" data-action="welcome-join-room" aria-label="Odaya katıl">→</button>
         </div>
       </div>
       <p class="welcome-form-error" id="welcomeFormError" role="alert" aria-live="polite"></p>
@@ -103,7 +103,7 @@ export function setWelcomeProgram(mode: ProgramMode): void {
 
 export function getWelcomeRoomId(): string {
   const input = document.getElementById('welcomeRoomId');
-  return input instanceof HTMLInputElement ? input.value.trim() : '';
+  return input instanceof HTMLInputElement ? input.value.trim().toLocaleUpperCase('tr-TR') : '';
 }
 
 export function getDialogUserName(): string {

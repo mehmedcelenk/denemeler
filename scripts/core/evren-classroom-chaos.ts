@@ -56,6 +56,7 @@ async function runRedTeamFuzzingSuite(): Promise<void> {
           helpRequested: dev.helpRequested,
           setHelpRequested: (val: boolean) => { dev.helpRequested = val; },
           setPaused: (val: boolean) => { dev.isPaused = val; },
+          demoteToStudent: () => { dev.isHost = false; },
           leaveRoom: () => {},
           scheduleSyncBroadcast: () => { dev.syncBroadcastCount++; },
           notify: () => {},
