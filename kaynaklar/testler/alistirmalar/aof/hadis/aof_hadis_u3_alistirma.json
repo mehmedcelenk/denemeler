@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "I. SünenlerII. Ale’r ricalIII. MusanneflerIV. Cami’lerV. Tartışma ve Reddiye kitaplarıHangisi konularına göre düzenlenmiş hadis kitabı türlerindendir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, III, IV ve V",
+      "D": "I, II, V",
+      "E": "Hepsi"
+    },
+    "ans": "C",
+    "solution": "Ale’r rical ravilerine göre düzenlenmiş kitap türleridir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Hangi kelime Arapçada bir araya getiren, toplayan anlamında kullanılmıştır?",
+    "secenekler": {
+      "A": "Sünen",
+      "B": "Muvatta",
+      "C": "Musannef",
+      "D": "Mu’cem",
+      "E": "Cami"
+    },
+    "ans": "E",
+    "solution": "Sünen sünnetler anlamına gelir. Muvatta üzerinde çok yürünmüş yoldur. Musannef tasnif edilmiş\n         demektir. Mu’cem ise alfabetik olarak sıralanmış anlamına gelir ."
+  },
+  {
+    "q_num": 3,
+    "stem": "Sünnet karşıtları ve sünnetten sapanlar için kullanılan ifade aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ehlü’l-Bid‘a",
+      "B": "Ehlü’l-Hadîs",
+      "C": "Ehlü’s-Sünne",
+      "D": "Muhaddisler",
+      "E": "Müsteşrik"
+    },
+    "ans": "A",
+    "solution": "Ehlü’s-Sünne, Ehlü’l-Hadîs diye isimlendiren hadisçiler kendilerini İslam toplumunun sünnet\n         çizgisinde devamından sorumlu bir grup olarak görüyorlardı. Gerek yazdıkları müstakil konulu\n         reddiyelerde ve tartışma kitaplarında gerekse çok konulu büyük kitapların ilgili bölümlerinde, iman\n         amel ilişkisi, Allah’ın sıfatları, kader gibi ilmî ve fikrî tartışma konularında Ehlü’l-Bid‘a dedikleri\n         sünnet karşıtlarına ve sünnetten sapanlara karşı, derledikleri ve tasnif ettikleri hadislerle cevaplar\n         vermeyi dahası onların etkinliklerini zayıflatarak Sünnet’in etkinliğini artırmayı amaçlamışlardır."
+  },
+  {
+    "q_num": 4,
+    "stem": "Müsned, Arapça’da, bir yere veya birine dayandırılan şey anlamına gelir. Müsned türü eserlerde hadisler, hadisin ilk râvîsi olan sahâbîlere göre sıralanmaktadırlar. Aşağıdakilerden hangisi günümüze kadar ulaşmış Müsned türü eserler veren müelliflerdendir?",
+    "secenekler": {
+      "A": "Ma‘mer b. Râşid el-Ezdî",
+      "B": "Abdullah b. Vehb",
+      "C": "Rebî‘ b. Habîb el-Basrî",
+      "D": "Vekî’b. el-Cerrâh",
+      "E": "Muhammed b. Hârûn er-Rûyânî"
+    },
+    "ans": "E",
+    "solution": "Müsnedler genellikle hicrî üçüncü asır başlarından itibaren yazılmaya başlanmışlardır ve\n         müelliflerinin ismiyle anılırlar. Hadis tarihinde yüz elli civarında müsned türü hadis kitabı yazılmıştır.\n         Bunlardan günümüze ulaşıp basılmış olanları şu müelliflere aittir:\n         Abdullah b. el-Mübârek (ö.181/797)\n         Ebu Bekr Abdullah b. Zübeyr b. Îsâ el-Humeydî (ö.219/834)\n         Ebu’l-Hasen Ali b. Ca‘d el-Cevherî (ö.230/844)\n         Ebu Bekr Abdullah b. Muhammed b. Ebû Şeybe (ö.235/867)\n         İshak b. Râhûye (ö.238/852)\n         Halîfe b. Hayyât (ö.240/854)\n         Ahmed b. Hanbel (ö.241/855)\n         Abd b. Humeyd (ö.249/863)\n         Ahmed b. Amr el-Bezzâr (ö.292/904)\n         Ebû Ya’lâ Ahmed b. Ali el-Mevsılî (ö.307/919)\n         Muhammed b. Hârûn er-Rûyânî (ö.307/919)\n         Ebû Avâne Yakub b. İshak el-İsferâyînî (ö.316/928)"
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi Tasnif’in amaçlarından değildir?",
+    "secenekler": {
+      "A": "Hadislerin kaybolmaktan ve yok olmaktan korunması.",
+      "B": "Hadisleri düzenli, sistemli, kolay kullanılır hale getirilmesi.",
+      "C": "Hadislerin sınıflandırılması.",
+      "D": "Hadislerin tek bir kitap altında toplanması.",
+      "E": "Hadislerin korunması."
+    },
+    "ans": "D",
+    "solution": "Hadislerin tek bir kitap haline getirilmesi söz konusu değildir."
+  },
+  {
+    "q_num": 6,
+    "stem": "Hadis râvîlerinin hayat hikâyeleri, güvenilir olup olmadıklarına dair yazılan kitaplara ne ad verilir?",
+    "secenekler": {
+      "A": "Muvatta",
+      "B": "Sünenler",
+      "C": "Câmî",
+      "D": "Ricâl",
+      "E": "Zühd"
+    },
+    "ans": "D",
+    "solution": "Hadis râvîlerinin hayat hikâyeleri, güvenilir olup olmadıklarına dair yazılan kitaplara ricâl kitapları\n         denir. Bu konudaki kaynak ve temel kitaplar da Tasnif döneminde yazılmıştır. Fakat ricâl kitaplarının\n         yazımı ileriki asırlarda da devam etmiştir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdakilerden hangisinde yazılış yöntemlerine göre Hadis kitabı türleri doğru biçimde verilmiştir?",
+    "secenekler": {
+      "A": "Konularına Göre - Râvîlerine Göre",
+      "B": "Râvîlerine Göre - Tarihine Göre",
+      "C": "Tarihine Göre - İçeriğine Göre",
+      "D": "Râvîlerine Göre - Yazarına Göre",
+      "E": "Yazarına Göre - Tarihine Göre"
+    },
+    "ans": "A",
+    "solution": "Hadisleri bir araya getiren hadis kitapları yazılış yöntemlerine göre iki ana gruba ayrılır:\n         Konularına göre dü zenlenmiş olanlar.\n         Râvîlerine göre dü zenlenmiş olanlar"
+  },
+  {
+    "q_num": 8,
+    "stem": "I. Kitâbü’l-ferâiz II. Kitâbü’l-menâkıb III. Kitabü’l-cihâd IV. Kitâbü’l-Fiten V. Kitabü’ş-şemâil Yukarıda yer alan kitaplardan hangileri hicri üçüncü yüzyılda yazılmıştır?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "IV ve V",
+      "D": "II, III, IV ve V",
+      "E": "I ve IV"
+    },
+    "ans": "C",
+    "solution": "Kitâbü’l-ferâiz, Kitâbü’l-menâkıb ve Kitabü’l-cihâd hicri ikinci yüzyılda yazılan kitaplardır. Kitâbü’l-\n         Fiten ve Kitabü’ş-şemâil ise hicri üçüncü yüzyılda kaleme alındığınmıştır."
+  },
+  {
+    "q_num": 9,
+    "stem": "Hangisi ahlâk hadisleri ile ilgilidir?",
+    "secenekler": {
+      "A": "Fedâil",
+      "B": "Muâmelât",
+      "C": "Ukûbât",
+      "D": "Imân",
+      "E": "İbadetler"
+    },
+    "ans": "A",
+    "solution": "Ahkâm hadisleri dendiğinde ibadetler, muâmelât ve ukûbât konularındaki hadisler kastedilir. İman\n         da ahkâm konularına dahil edilmektedir. Ahlâk konuları ise fedâil ve edeb başlıkları altında ele alınır."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdaki seçeneklerde gösterilen kitap türlerinden hangisi Malik b. Enes’e aittir?",
+    "secenekler": {
+      "A": "Sünen",
+      "B": "Müsned",
+      "C": "Musannef",
+      "D": "El-Cami",
+      "E": "Muvatta"
+    },
+    "ans": "E",
+    "solution": "Imâ m Mâ lik’in meclisine ü ç yıl devam etmiş ve Malik’in Muvatta’ isimli eserinin ö nemli râ vı ̂lerinden\n         birisi olmuştur."
+  }
+]

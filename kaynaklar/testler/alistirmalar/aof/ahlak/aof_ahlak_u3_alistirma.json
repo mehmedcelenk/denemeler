@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Tasavvufta hürriyet, felsefe ve kelamda ele alındığı şeklinden farklı olarak aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Araçtır",
+      "B": "Gayedir",
+      "C": "Hareket noktasıdır",
+      "D": "Bahsi söz konusu değildir",
+      "E": "Yok hükmündedir"
+    },
+    "ans": "B",
+    "solution": "Tasavvufta hürriyet, felsefe ve kelamda ele alındığı şekliyle ahlâkın hareket noktası değil, gayesidir.\n         Tasavvufi ahlâkta nefsin arzu ve isteklerine karşı verilmesi istenen mücadele insanın hürriyetiyle\n         ilişkilendirilir. İnsanın ahlâki mükemmelliğe ulaşması ve Allah’a yakınlaşmasını önleyen bedeni ve\n         dünyevi arzuların kurtulma mücadelesi aynı zamanda iradeyi hür kılma çabasıdır. İnsanın şuurunu\n         meşgul eden, Allah’tan başka her şeyin hürriyeti kısıtladığını düşünen bazı büyük sufiler cennet\n         nimetlerini arzulamayı bile gerçek hürriyete aykırı görmüşlerdir. Asıl hürriyet kulun üzerinde\n         Allah’tan başka hiçbir şeyin etkili olmamasıdır. Gerçek hürriyet Allah’a tam kul olmaktır.\n         Tasavvuftaki “fakr” makamı hürriyeti de ihtiva eder. Zira fakr, insanın hiçbir şeye sahip olmaması\n         değil, hiçbir şeyin insana sahip olmamasıdır. Bu bakımdan hürriyet ahlâkın hareket noktası değil,\n         gayesidir. Doğru cevap B'dir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdakilerden hangisi insanın yaratılış sebebi de olan insanı bütün varlıklardan ayıran asıl özelliğidir?",
+    "secenekler": {
+      "A": "İyi ve kötüyü idrak gücüdür.",
+      "B": "Cismani ve ruhani gücüdür.",
+      "C": "Akıl ve hakikatları idrak gücüdür.",
+      "D": "Saf ve temiz olma gücüdür.",
+      "E": "Ruhani melekelerin gücüdür."
+    },
+    "ans": "C",
+    "solution": "İnsan akıllı bir varlıktır. İnsanı bütün varlıklardan ayıran asıl özelliği onun yaratılış sebebi de olan aklı\n         ve hakikatleri idrak gücüdür."
+  },
+  {
+    "q_num": 3,
+    "stem": "Ahlâ k teorileri geliştiren dü şünü rler bazı temel soruları dikkate alarak gö rü şlerini ortaya koymuşlardır. Aşağıdakilerden hangisi sözü edilen temel sorulardan değildir?",
+    "secenekler": {
+      "A": "Iyi ve kö tü ﬁiller nelerdir?",
+      "B": "Bir ﬁili iyi veya kö tü yapan ö zellikler nelerdir?",
+      "C": "Hangi sebeplerden dolayı iyi davranışlar tercih edilir, kö tü davranışlardan da kaçınılır?",
+      "D": "Iyiyi gerçekleştirmek için insan ne yapmalıdır?",
+      "E": "İnsan ne ile yaşar?"
+    },
+    "ans": "E",
+    "solution": "Ahlâ k teorileri geliştiren dü şünü rler şu temel soruları dikkate alarak gö rü şlerini ortaya koymuşlardır.\n                1. Insan nedir? 2. Iyi ve kö tü ﬁiller nelerdir? 3. Bir ﬁili iyi veya kö tü yapan ö zellikler nelerdir? 4. Hangi\n                sebeplerden dolayı iyi davranışlar tercih edilir, kö tü davranışlardan da kaçınılır? 5. Iyiyi\n                gerçekleştirmek için insan ne yapmalıdır? insan ne ile yaşar sorusu temel sorulardan değildir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Ahlaki fitleri kendinden iyi ve kötü olanlar ve bir ihtiyaca, duruma, başlangıç veya sonuca göre iyi veya kötü olanlar diye ikiye ayıran kimdir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "Farabi",
+      "C": "Maturidi",
+      "D": "İbn sina",
+      "E": "Eş'ari"
+    },
+    "ans": "C",
+    "solution": "Söz konusu görüşün sahibi Maturidi'dir."
+  },
+  {
+    "q_num": 5,
+    "stem": "Filozoflara göre hakikatin nihai belirleyicisi kim veya nedir?",
+    "secenekler": {
+      "A": "İyilik",
+      "B": "Akıl",
+      "C": "İnsan fiilleri",
+      "D": "Tanrı",
+      "E": "Kader"
+    },
+    "ans": "B",
+    "solution": "Filozoflara göre hakikatin nihai belirleyicisi akıldır."
+  },
+  {
+    "q_num": 6,
+    "stem": "Maturidi’nin ahlâk teorisinde ahlâki fiiller kaç kısma ayrılır?",
+    "secenekler": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "ans": "B",
+    "solution": "Maturidi’nin ahlâk teorisinde ahlâki fiiller ikiye ayrılır: 1. kendinde iyi veya kötü olanlar; 2. bir\n         ihtiyaca, duruma, başlangıç ya da sonuca göre iyi veya kötü olanlar."
+  },
+  {
+    "q_num": 7,
+    "stem": "Hangisi nefs' in çeşitli seviyelerde güçlerinden değildir?",
+    "secenekler": {
+      "A": "Bitkisel seviyede beslenme",
+      "B": "Büyüme ve üreme güçleri",
+      "C": "Hayvani seviyede hareket etme",
+      "D": "İdrak güçleri",
+      "E": "Hikmet"
+    },
+    "ans": "E",
+    "solution": "İslâm felsefesinde de insan, nefis ve bedenden oluşan bir varlıktır. Asıl olan nefs olup bunun da\n         çeşitli seviyelerde güçleri vardır. Bunlar bitkisel seviyede beslenme, büyüme ve üreme güçleri;\n         hayvani seviyede hareket etme ve idrak güçleri; insani seviyede de düşünme ve bilme güçleridir. Bu\n         güçler\n         arasında hiyerarşik bir düzen mevcut olup bir alttaki üsttekine hizmet eder. Düşünme ve bilme gücü\n         başlangıçta bir kabiliyet olup, bir takım basamaklardan geçtikten sonra kendisi için mümkün olan en\n         yüksek dereceye ulaşır."
+  },
+  {
+    "q_num": 8,
+    "stem": "“Ahlâk nedir” sorusundan önce aranan soru nedir?",
+    "secenekler": {
+      "A": "Doğa nedir?",
+      "B": "Evren nedir?",
+      "C": "Allah nedir?",
+      "D": "İnsan nedir?",
+      "E": "Akıl nedir?"
+    },
+    "ans": "D",
+    "solution": "Çoğu Müslüman düşünürün yaptığı gibi felsefede de “ahlâk nedir” sorusundan önce “insan nedir”\n         sorusuna cevap aranır."
+  },
+  {
+    "q_num": 9,
+    "stem": "Nasslarda günah veya kötülük olarak ifade edilen terim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Salihat",
+      "B": "Hayır",
+      "C": "Seyyiat",
+      "D": "Kıst",
+      "E": "Birr"
+    },
+    "ans": "C",
+    "solution": "Nasslarda “doğru” ve “yanlış” için pek çok terim kullanılır: hayır, birr,\n         kıst, iksat, adl, hakk, ma’rûf ve takva. Doğru fiiller genelde “salihat”; yanlış\n         ve günah fiiller de seyyiat olarak isimlendirilir. Seyyiat ise günah ve kötülük\n         terimiyle ifade edilir. Doğru cevap C'dir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Maturudi mezhebi ahlaki değerler konusunda aşağıdaki mezheplerden hangisine daha yakındır?",
+    "secenekler": {
+      "A": "Kalenderi",
+      "B": "Cebriye",
+      "C": "Caferi",
+      "D": "Eş'ari",
+      "E": "Mu'tezile"
+    },
+    "ans": "E",
+    "solution": "Ehl-i Sünnet’in itikadi mezheplerinden ikincisini teşkil eden Maturidiyye’nin\n         kurucusu Ebu Mansur el-Maturidi gerek Mu’tezili gerekse Eş’arî ahlâk\n         teorilerinin yüz yüze kaldığı problemlere karşılık getirdiği izah tarzı ile\n         kendine has orijinal bir ahlâk teorisi geliştirmiştir. Maturidi, ahlâki\n         sorumluluk ve yükümlülüğün temellendirilmesinde Eş’ari’ye, ahlâki değerler\n         konusunda da Mu’tezile’ye yakın görünür. Doğru cevap E'dir."
+  }
+]

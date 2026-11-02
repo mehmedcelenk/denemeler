@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Allah inancı insanda doğuştan varolan bir özelliktir. Kur’ân-ı Kerîm’de yaratılış anında varolan bu duygu “fıtrat” kavramı ile ifade edilir. Söz konusu anlam hangi ayette geçmektedir?",
+    "secenekler": {
+      "A": "Rûm 30/60",
+      "B": "Neml 31/32",
+      "C": "Bakara 2/3",
+      "D": "En’âm 6/33",
+      "E": "Hûd 11/59"
+    },
+    "ans": "A",
+    "solution": "Rûm 30/60"
+  },
+  {
+    "q_num": 2,
+    "stem": "“İyi bilin ki, halis din yalnız Allah’ındır. O’nu bırakıp da başka dostlar edinenler, “Biz onlara sadece, bizi Allah’a daha çok yaklaştırsınlar diye ibadet ediyoruz” diyorlar. Şüphesiz Allah, ayrılığa düştükleri şeyler konusunda aralarında hüküm verecektir. Şüphesiz Allah, yalancı ve nankör olanları doğru yola iletmez” meali hangi ayete aittir.",
+    "secenekler": {
+      "A": "ez-Zümer 39/3",
+      "B": "el-En’âm 6/33",
+      "C": "Hûd 11/59",
+      "D": "en-Neml 31/32",
+      "E": "el-Bakara 2/3"
+    },
+    "ans": "A",
+    "solution": "ez-Zümer 39/3"
+  },
+  {
+    "q_num": 3,
+    "stem": "Evrenin yaratılmış olduğu ve her yaratılmışın da bir yaratıcıya muhtaç olduğundan hareketle Allah’ın varlığını ispata çalışan delile ne ad verilir?",
+    "secenekler": {
+      "A": "Hudûs delili",
+      "B": "İmkân delili",
+      "C": "Gaye delili",
+      "D": "Nizam delili",
+      "E": "Ahlâk delili"
+    },
+    "ans": "A",
+    "solution": "Hudûs delili"
+  },
+  {
+    "q_num": 4,
+    "stem": "“De ki O Allah birdir. O Samed’dir. Doğurmamıştır, doğrulmamıştır. Hiçbir şey O’na denk değildir” meali hangi ayete aittir?",
+    "secenekler": {
+      "A": "el-İhlâs 112/1-4",
+      "B": "el-A‘râf 7/143",
+      "C": "el-Enbiyâ 21/22",
+      "D": "el-İsrâ 17/42",
+      "E": "el-Mü’minûn 23/91"
+    },
+    "ans": "A",
+    "solution": "el-İhlâs 112/1-5"
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi Allah'ın Zati isimlerinden biridir?",
+    "secenekler": {
+      "A": "el-Adl",
+      "B": "el-Evvel",
+      "C": "el-Hakem",
+      "D": "el-Fettah",
+      "E": "el-Halik"
+    },
+    "ans": "B",
+    "solution": "Islâ m â limleri esmâ -i hü snâ listesinde bulunan isimleri çeşitli şekillerde sınıﬂandırmışlardır.\n                Bunlardan zâ tı ̂ isimler; mutlak manada Allah’ın zatını ilgilendiren; el-Evvel, es-Samed, el-Kuddü s, el-\n                Celı ̂l gibi isimlerdir. Kâ inati ilgilendirenler ise, tabiatın yaratılışına ve işleyişine temas eden; el-Hâ lik,\n                el-Bâ rı ̂ ve el-Musavvir vb. manalardır. Esmâ -i hü snâ dan insanla ilgili olan ilâ hı ̂ isimler ise; el-Adl, el-\n                Hakem ve el-Fettâ h gibi insana yö nelik olanlardır."
+  },
+  {
+    "q_num": 6,
+    "stem": "İslâm düşüncesinde İmkân delili olarak bilinen delil aşağıdaki alimlerden hangisi tarafından kullanılmıştır?",
+    "secenekler": {
+      "A": "Gazzâlî",
+      "B": "İbn Rüşd",
+      "C": "Farabi",
+      "D": "İbn Teymiyye",
+      "E": "İbnü’l-Kayyim"
+    },
+    "ans": "C",
+    "solution": "Farabi ve İbn Sina tarafından tam olarak ortaya konulan İmkân delili, Şehristani’den itibaren kelâm\n         bilginleri tarafından da kullanılmaya başlanmıştır.\n\n                Doğru yanıt c seçeneğidir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Allah’ın varlığını bir bilgi meselesi olmaktan çok erdemli bir hayatın ön şartı olarak ele alan delil aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Fıtrat delili",
+      "B": "Gaye ve Nizam Delili",
+      "C": "İmkân Delili",
+      "D": "Hudûs Delili",
+      "E": "Ahlak delili"
+    },
+    "ans": "E",
+    "solution": "Allah’ın varlığını bir bilgi meselesi olmaktan çok erdemli bir hayatın ön şartı olarak ele alan delil\n         ahlak delilidir. Doğru yanıt e seçeneğidir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Afak ve enfüs ile ilgili aşağıda yazılanlardan hangisi doğrudur?",
+    "secenekler": {
+      "A": "Allah’ın varolması, yokluğunun düşünülmemesidir.",
+      "B": "Allah’ın varlığının sonunun olmamasıdır. O, fâni ve ölümlü değildir.",
+      "C": "İnsanın kendisi dışındaki harici alem ve iç dünyası, beden ve ruh alemidir.",
+      "D": "Allah’ın kendisiyle kâim olması ve bu hususta başkasına ihtiyaç duymamasıdır.",
+      "E": "O, gizli-açık, yakın-uzak, küçük-büyük her şeyden sonsuz ve sınırsız olan ilmiyle haberdardır."
+    },
+    "ans": "C",
+    "solution": "Kuran’da çoğunlukla, âlemin yaratılmışlığını ve düzenli işleyişini öne çıkaran bir ispat yöntemi göze\n         çarpmaktadır. Her ne kadar öncüllere dayalı bir sistem içinde verilmese de tabiattan hareket eden\n         (kozmolojik) ve varlıklardaki gayeliliği vurgulayan (teleolojik) delilleri Kur’an’da bulmak mümkündür.\n         Böylece kendiliğinden meydana gelmesi imkânsız olan evrenin ve onun varlıkları arasındaki uyum\n         Allah’ın varlığına delil kılınmaktadır. Kur’an’da “âfâk ve enfüs” olarak ifade edilen, dış ve iç âlemin\n         varlıkları arasında görülen düzen, ahenk ve güzellik yüce bir yaratıcının varlığına en açık delil olarak\n         sunulmaktadır."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdakilerden hangisi Mu’tezile mezhebinin Allah’ın sıfatları hakkında görüşlerini açıklar?",
+    "secenekler": {
+      "A": "İlim, irade ve kudret sıfatını yaratma için yeterli görmüşlerdir.",
+      "B": "Sübûtî sıfatları kendi içinde zâtî ve fiilî sıfatlar olmak üzere ikiye ayırmışlardır.",
+      "C": "Kudret sıfatından ayrı bir tekvîn (yaratma) sıfatının varlığını savunmuşlardır.",
+      "D": "Allah’ın sıfatlarının O’nun zâtından ayrılabileceğini söylemişlerdir.",
+      "E": "Allah’ın zatından bağımsız sıfatlarının olmasını doğru bulmamışlardır."
+    },
+    "ans": "E",
+    "solution": "Sıfatlar konusunda âlimler arasında bazı ihtilaflar yaşanmıştır. Bunlardan biri, sübûtî sıfatların tasnifi\n         konusunda gündeme gelmiştir. Mâtürîdîler kudret sıfatından ayrı bir tekvîn (yaratma) sıfatının\n         varlığını savunurlarken, Eş’arîler ilim, irade ve kudret sıfatını yaratma için yeterli görmüşlerdir. Şîa\n         âlimleri ise sübûtî sıfatları kendi içinde zâtî ve fiilî sıfatlar olmak üzere ikiye ayırmışlardır. Sıfatlar\n         konusunda en büyük fikir ayrılığı ise Allah’ın zâtıyla sıfatlarının ne tür bir ilişki içinde olduğunu izah\n         noktasında yaşanmıştır. Mu’tezile mezhebi tevhid anlayışlarının bir gereği olarak, Allah’ta çokluk\n         yaratacağı endişesiyle Allah’ın sıfatlarını O’nun zâtından ayrılmayan manalar olarak görmüştür. Bu\n         nedenle onlar, Allah’ın zatından bağımsız sıfatlarının olmasını doğru bulmamışlardır. Eş’arî ve\n         Mâturidî mezhepleri ise Allah’ın sıfatlarının O’nun zâtından ayrılabileceğini ancak bu durumun tam\n         manada bir bağımsızlık doğurmayacağını belirtmişlerdir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Allah’ın es-Semî olduğunu söylediğimizde O’nun hangi özelliğinden bahsediyor oluruz?",
+    "secenekler": {
+      "A": "O, tek ve bir olandır.",
+      "B": "O, gücü her şeye yetendir.",
+      "C": "O, her şeyi görendir.",
+      "D": "O, her şeyi hakkıyla bilendir.",
+      "E": "O, her şeyi işitendir."
+    },
+    "ans": "E",
+    "solution": "Semî‘: Yüce Allah’ın her şeyi işitmesidir. Allah’ın tüm sıfatlarında olduğu gibi işitme sıfatı da kemal\n         derecesindedir. O, hiçbir vasıta ve şarta bağlı olmaksızın ve hiçbir engele takılmaksızın her şeyi\n         işitir. İnsanlar ise sadece duyma eşikleri içinde bulunan sesleri işitebildikleri gibi bunun için bazı\n         organlara ihtiyaç duyarlar. “Şüphesiz Allah, işitendir, bilendir” (el-Bakara 2/181)."
+  }
+]

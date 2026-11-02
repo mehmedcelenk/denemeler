@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Ülkemizde ikindi namazı vakti aşağıdakilerden hangisi esas alınarak belirlenir?",
+    "secenekler": {
+      "A": "Tağlis",
+      "B": "Asr-ı sani",
+      "C": "İstiva",
+      "D": "İbrad",
+      "E": "Asr-ı evveli"
+    },
+    "ans": "E",
+    "solution": "Ülkemizde ikindi namazı vakti asr-ı evvel esas alınarak belirlenir. doğru cevap E'dir"
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdakilerden hangisi Cuma namazının farz olma şartları arasında değildir?",
+    "secenekler": {
+      "A": "Erkek olmak",
+      "B": "Sağlıklı olmak",
+      "C": "Kadın olmak",
+      "D": "Hür olmak",
+      "E": "Mukim olmak"
+    },
+    "ans": "C",
+    "solution": "Kadın olmak cuma namazının farz olma şartları arasında yoktur. Yani cuma namazı kadınlara farz\n         değildir. Doğru cevap C'dir"
+  },
+  {
+    "q_num": 3,
+    "stem": "Aşağıdakilerden hangisi vacip namazlar arasındadır?",
+    "secenekler": {
+      "A": "Teravih namazı",
+      "B": "Vitir namazı",
+      "C": "Cuma namazı",
+      "D": "Kuşluk namazı",
+      "E": "Teheccüd namazı"
+    },
+    "ans": "B",
+    "solution": "Vitir namazı vacip olan namazlar arasındadır ve doğru cevap B'dir"
+  },
+  {
+    "q_num": 4,
+    "stem": "Aşağıdakilerden hangisi Cuma Namazının sahih olmasının şartlarından biri değildir?",
+    "secenekler": {
+      "A": "Vakit",
+      "B": "Hutbe",
+      "C": "Mukim olmak",
+      "D": "Cemaat",
+      "E": "Genel izin"
+    },
+    "ans": "C",
+    "solution": "Mukîm olmak. Cuma namazı, cuma namazı kılınan yerde ikamet eden\n\n                kimselere farzdır. Cuma Namazının farz olmasının şartlarından biridir."
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi sehiv secdesi ile ilgili olarak doğrudur?",
+    "secenekler": {
+      "A": "Namazda bir farzın sehven terk edilmesi durumunda yapılır.",
+      "B": "Bir sünnetin kasten terk edilmesi durumunda yapılır.",
+      "C": "Gerekli durumlarda sehiv secdesi yapmak farzdır.",
+      "D": "Sehiv secdesi gerekli olan durumlarda yapılmaz ise namaz borcu devam eder.",
+      "E": "Sehiv secdesi bir vacibin terk edilmesi durumunda yapılır."
+    },
+    "ans": "E",
+    "solution": "Sehiv secdesi, yanılarak (sehven) farzın te’hîr’inden (geciktirilmesinden) veya vacibin terk ve te’hîr\n         edilmesinden dolayı namazda meydana gelen eksiklikleri telâfi etmek ve namazı tamamlamak için\n         namazın sonunda yapılan secdeleri ifade eder. Herhangi bir namazda bir farzın kasten (bilerek)\n         veya sehven (yanılarak) terk edilmesi, o namazın iade edilmesini yani yeniden kılınmasını gerektirir.\n         Çünkü bir farz eksikliği telâfi etmek için sehiv secdesi yeterli olmaz. Sehiv secdesi sadece bir vacibin\n         sehven (yanılarak) terk edilmesi veya bir farzın geciktirilmesi halinde yapılır. Kendisine sehiv secdesi\n         vacip olup onu yerine getirmeyen bir kişinin namaz borcu düşer."
+  },
+  {
+    "q_num": 6,
+    "stem": "Günlük farz namazları toplam kaç rek‘attır?",
+    "secenekler": {
+      "A": "17",
+      "B": "21",
+      "C": "23",
+      "D": "25",
+      "E": "30"
+    },
+    "ans": "A",
+    "solution": "Günlük farz namazların rek‘at sayıları; sabah iki, öğle dört, ikindi dört, akşam üç ve yatsı dört olmak\n         üzere toplam on yedi rek‘at olarak Peygamberimiz’in uygulamalarıyla sabit olmuştur."
+  },
+  {
+    "q_num": 7,
+    "stem": "Vitir namazı hangi tür namazlardan olup kaç rekat kılınır?",
+    "secenekler": {
+      "A": "Farz, 2 rekat",
+      "B": "Mendub, 3 rekat",
+      "C": "Sünnet, 2 rekat",
+      "D": "Nafile, 3 rekat",
+      "E": "Vacip, 3 rekat"
+    },
+    "ans": "E",
+    "solution": "Vitir kelimesi sözlükte çiftin karşıtı olan tek anlamına gelir. Vitir namazı vacip olup üç rek’attır. Vitir\n         namazının vakti yatsı vaktidir, ancak ondan sonra kılınır."
+  },
+  {
+    "q_num": 8,
+    "stem": "Gece namazına kalkılması ve bunların belli bir vakit içinde edâ edilmesi emredilmişken aynı sûrenin 20. ayetinde, Yüce Allah’ın bu hususta yaşanan zorluklardan dolayı müminleri bu namazdan bağışladığı bildirililen sure hangisidir?",
+    "secenekler": {
+      "A": "el-Müzzemmil",
+      "B": "el-A‘lâ",
+      "C": "el-Kıyâme",
+      "D": "el-‘Alak",
+      "E": "el-Müddessir"
+    },
+    "ans": "A",
+    "solution": "Kaynaklarda, Mekke döneminde beş vakit namaz farz kılınmadan önce sabah ve akşam olmak üzere\n         ikişer rek‘at halinde iki vakit namaz kılındığı belirtilmektedir. Bu iki vakit namazın dışında el-\n         Müzzemmil\n         sûresinin ilk ayetleriyle gece namazına kalkılması ve bunların belli bir vakit içinde edâ edilmesi\n         emredilmişken aynı sûrenin 20. ayetinde, Yüce Allah’ın bu hususta yaşanan zorluklardan dolayı\n         müminleri bu namazdan bağışladığı bildirilmiştir."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdaki namazlardan hangisi vacip değildir?",
+    "secenekler": {
+      "A": "Vitir",
+      "B": "Cenaze",
+      "C": "Tavaf",
+      "D": "Nezir",
+      "E": "Bayram"
+    },
+    "ans": "B",
+    "solution": "Vitir, bayram namazları yanı sıra tavaf, nezir namazları da vaciptir. Cenaze namazı ise farz-ı\n         kifâyedir. Doğru cevap B’dir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdakilerden hangisi dünya ve âhiret itibariyle şehid hükmündedir?",
+    "secenekler": {
+      "A": "Ateşte yanan",
+      "B": "Eşkıya tarafından öldürülen",
+      "C": "Salgın hastalıktan ölen",
+      "D": "Suda boğulan",
+      "E": "Doğum esnasında ölen"
+    },
+    "ans": "B",
+    "solution": "Dünya ve âhiret itibariyle şehid: Bunlar kâmil anlamda şehittirler. Bunlar, savaşta öldürülen yahut\n         eşkıya tarafından öldürülen Müslüman kişilerdir.\n\n                Âhiret itibariyle şehid: Savaş meydanında yaralandıktan veya eşkıya tarafından vurulduktan sonra\n                yer, içer, konuşur, tedavi görür yahut bir namaz vakti geçer ve ondan sonra ölürse, bu kişi, âhiret\n                itibariyle şehittir ve âhirette de büyük sevaba nail olacaktır. Bu kısım şehitler, yıkanır, kefenlenir ve\n                namazları kılınarak defnedilirler. Ateşte yanan, salgın bir hastalıkta ölen, suda boğulan, doğum\n                esnasında ölen, ilim yolculuğunda ölen, nafakasını temin ederken ölen, deprem, sel baskını gibi\n                doğal afetler esnasında ölen, haksız yere öldürülen ve benzeri hallerde ölen veya öldürülen kimseler\n                de hükmen şehit sayılırlar. Doğru cevap B’dir."
+  }
+]

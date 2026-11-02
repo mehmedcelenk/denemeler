@@ -1,0 +1,578 @@
+[
+  {
+    "original_name": "HAD-MUELLI-4913_hanefi_hadis_usulune_giris_1.pdf",
+    "target_path": "kaynaklar/notlar/kitaplar/aof/hadis/aof_hadis_hanefi_hadis_usulune_giris_ders_kitabi.pdf",
+    "subject": "hadis",
+    "category": "kitaplar",
+    "unit": null,
+    "md5": "9cb3ec4375c94ac54fb85b4e845d0d80"
+  },
+  {
+    "original_name": "HADİS TARİHİ VE USULÜ - Ünite Özeti - Ünite 1-1.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/hadis/aof_hadis_u1_ozet.pdf",
+    "subject": "hadis",
+    "category": "ozetler",
+    "unit": 1,
+    "md5": "9473cb2a209471244f669f280b543381"
+  },
+  {
+    "original_name": "HADİS TARİHİ VE USULÜ - Ünite Özeti - Ünite 2.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/hadis/aof_hadis_u2_ozet.pdf",
+    "subject": "hadis",
+    "category": "ozetler",
+    "unit": 2,
+    "md5": "46e9da81ec830640eea0d7260b59b496"
+  },
+  {
+    "original_name": "HADİS TARİHİ VE USULÜ - Ünite Özeti - Ünite 3.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/hadis/aof_hadis_u3_ozet.pdf",
+    "subject": "hadis",
+    "category": "ozetler",
+    "unit": 3,
+    "md5": "0a54375f7235c7647159530508908fca"
+  },
+  {
+    "original_name": "HADİS TARİHİ VE USULÜ - Ünite Özeti - Ünite 4.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/hadis/aof_hadis_u4_ozet.pdf",
+    "subject": "hadis",
+    "category": "ozetler",
+    "unit": 4,
+    "md5": "013661709e923c0c2050446ac6871b0b"
+  },
+  {
+    "original_name": "HADİS TARİHİ VE USULÜ - Ünite Özeti - Ünite 5.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/hadis/aof_hadis_u5_ozet.pdf",
+    "subject": "hadis",
+    "category": "ozetler",
+    "unit": 5,
+    "md5": "980770eb11faaf5669124176e769ce67"
+  },
+  {
+    "original_name": "ILH101U_Cikmis-Yaz-Okulu_674129.pdf",
+    "target_path": "kaynaklar/testler/cikmislar/aof/inanc/aof_inanc_cikmis_yaz_okulu_sinavi.pdf",
+    "subject": "inanc",
+    "category": "cikmislar",
+    "unit": null,
+    "md5": "fdcffce2ceaaefc5e903b7456b4604e7"
+  },
+  {
+    "original_name": "ILH101U_Unite-Ozetleri_674093.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/inanc/aof_inanc_u1_ozet.pdf",
+    "subject": "inanc",
+    "category": "ozetler",
+    "unit": 1,
+    "md5": "52ac62d913d239f3a2b536a02ed66ff8"
+  },
+  {
+    "original_name": "download-1.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/inanc/aof_inanc_u1_sorularla_ogrenelim_qa.pdf",
+    "subject": "inanc",
+    "category": "klasik_sorular",
+    "unit": 1,
+    "md5": "58ce9c5eead0f9e69524b71e1a897afa"
+  },
+  {
+    "original_name": "download-10.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/inanc/aof_inanc_u2_alistirma_testi.pdf",
+    "subject": "inanc",
+    "category": "alistirmalar",
+    "unit": 2,
+    "md5": "8ad9c9f01f3677ff19afb4ce354d8548"
+  },
+  {
+    "original_name": "download-11.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/inanc/aof_inanc_u3_alistirma_testi.pdf",
+    "subject": "inanc",
+    "category": "alistirmalar",
+    "unit": 3,
+    "md5": "74e23ec8dcc8b5290d37698c5f68ded5"
+  },
+  {
+    "original_name": "download-12.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/inanc/aof_inanc_u4_alistirma_testi.pdf",
+    "subject": "inanc",
+    "category": "alistirmalar",
+    "unit": 4,
+    "md5": "7e9c3cecdc6be4462ad7f326538fe6c2"
+  },
+  {
+    "original_name": "download-13.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/inanc/aof_inanc_u5_alistirma_testi.pdf",
+    "subject": "inanc",
+    "category": "alistirmalar",
+    "unit": 5,
+    "md5": "757e0c67d457f78be9b96850a1a670dd"
+  },
+  {
+    "original_name": "download-15.pdf",
+    "target_path": "kaynaklar/testler/denemeler/aof/inanc/aof_inanc_vize_deneme_sinavi_1.pdf",
+    "subject": "inanc",
+    "category": "denemeler",
+    "unit": null,
+    "md5": "25d31445b9ba915d1c86748ad52996c6"
+  },
+  {
+    "original_name": "download-16.pdf",
+    "target_path": "kaynaklar/testler/denemeler/aof/ibadet/aof_ibadet_vize_deneme_sinavi.pdf",
+    "subject": "ibadet",
+    "category": "denemeler",
+    "unit": null,
+    "md5": "5510fff5df8429f4ddf6ee28eefd1d4d"
+  },
+  {
+    "original_name": "download-17.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ibadet/aof_ibadet_u1_sorularla_ogrenelim_qa.pdf",
+    "subject": "ibadet",
+    "category": "klasik_sorular",
+    "unit": 1,
+    "md5": "ebafe2ef21b5fea0dad1c608fe272a6b"
+  },
+  {
+    "original_name": "download-18.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ibadet/aof_ibadet_u2_sorularla_ogrenelim_qa.pdf",
+    "subject": "ibadet",
+    "category": "klasik_sorular",
+    "unit": 2,
+    "md5": "e9c91e36d421567f026a6374b2550f3e"
+  },
+  {
+    "original_name": "download-19.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ibadet/aof_ibadet_u3_sorularla_ogrenelim_qa.pdf",
+    "subject": "ibadet",
+    "category": "klasik_sorular",
+    "unit": 3,
+    "md5": "2e3324a225d9f2babd71edf49f30efe7"
+  },
+  {
+    "original_name": "download-2.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/inanc/aof_inanc_u1_alistirma_testi.pdf",
+    "subject": "inanc",
+    "category": "alistirmalar",
+    "unit": 1,
+    "md5": "eaac8d4137a921b890d8f11dac60f429"
+  },
+  {
+    "original_name": "download-20.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ibadet/aof_ibadet_u4_sorularla_ogrenelim_qa.pdf",
+    "subject": "ibadet",
+    "category": "klasik_sorular",
+    "unit": 4,
+    "md5": "1f9e84a28308f3f2730eeb1cb8b25b72"
+  },
+  {
+    "original_name": "download-21.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ibadet/aof_ibadet_u5_sorularla_ogrenelim_qa.pdf",
+    "subject": "ibadet",
+    "category": "klasik_sorular",
+    "unit": 5,
+    "md5": "b9f3488ffb46fe5ed3462387ed1d9421"
+  },
+  {
+    "original_name": "download-22.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ibadet/aof_ibadet_u1_alistirma_testi.pdf",
+    "subject": "ibadet",
+    "category": "alistirmalar",
+    "unit": 1,
+    "md5": "f61374bc7aa31253e2f4fbe8984d2f8d"
+  },
+  {
+    "original_name": "download-23.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ibadet/aof_ibadet_u2_alistirma_testi.pdf",
+    "subject": "ibadet",
+    "category": "alistirmalar",
+    "unit": 2,
+    "md5": "d55d700f97de56b15771481539ecab9e"
+  },
+  {
+    "original_name": "download-24.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ibadet/aof_ibadet_u3_alistirma_testi.pdf",
+    "subject": "ibadet",
+    "category": "alistirmalar",
+    "unit": 3,
+    "md5": "bf6e5cd359f77208db0e493d571cec5a"
+  },
+  {
+    "original_name": "download-25.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ibadet/aof_ibadet_u4_alistirma_testi.pdf",
+    "subject": "ibadet",
+    "category": "alistirmalar",
+    "unit": 4,
+    "md5": "3cc794a62125bd117f8d121aed419704"
+  },
+  {
+    "original_name": "download-26.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ibadet/aof_ibadet_u5_alistirma_testi.pdf",
+    "subject": "ibadet",
+    "category": "alistirmalar",
+    "unit": 5,
+    "md5": "805c4f830c842e0759fc773875f26e3a"
+  },
+  {
+    "original_name": "download-27.pdf",
+    "target_path": "kaynaklar/testler/denemeler/aof/ahlak/aof_ahlak_vize_deneme_sinavi.pdf",
+    "subject": "ahlak",
+    "category": "denemeler",
+    "unit": null,
+    "md5": "6e50043e4385a03f40d34006cc25629a"
+  },
+  {
+    "original_name": "download-28.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ahlak/aof_ahlak_u1_sorularla_ogrenelim_qa.pdf",
+    "subject": "ahlak",
+    "category": "klasik_sorular",
+    "unit": 1,
+    "md5": "7c3bab30142448ed18bf8069241204a8"
+  },
+  {
+    "original_name": "download-29.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ahlak/aof_ahlak_u2_sorularla_ogrenelim_qa.pdf",
+    "subject": "ahlak",
+    "category": "klasik_sorular",
+    "unit": 2,
+    "md5": "17e822031af155fdfe162578c3dd28f6"
+  },
+  {
+    "original_name": "download-3.pdf",
+    "target_path": "kaynaklar/testler/denemeler/aof/inanc/aof_inanc_vize_deneme_sinavi_2.pdf",
+    "subject": "inanc",
+    "category": "denemeler",
+    "unit": null,
+    "md5": "e16350f7eb0db12f676f20c2d3d94ab6"
+  },
+  {
+    "original_name": "download-30.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ahlak/aof_ahlak_u3_sorularla_ogrenelim_qa.pdf",
+    "subject": "ahlak",
+    "category": "klasik_sorular",
+    "unit": 3,
+    "md5": "36682b6683534ea22f503b833ca867a3"
+  },
+  {
+    "original_name": "download-31.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ahlak/aof_ahlak_u4_sorularla_ogrenelim_qa.pdf",
+    "subject": "ahlak",
+    "category": "klasik_sorular",
+    "unit": 4,
+    "md5": "64eab7b607cd14657084a5c596e76c84"
+  },
+  {
+    "original_name": "download-32.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/ahlak/aof_ahlak_u5_sorularla_ogrenelim_qa.pdf",
+    "subject": "ahlak",
+    "category": "klasik_sorular",
+    "unit": 5,
+    "md5": "7b9652aefe4bc852f0f6967bc526a3f3"
+  },
+  {
+    "original_name": "download-33.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ahlak/aof_ahlak_u1_alistirma_testi.pdf",
+    "subject": "ahlak",
+    "category": "alistirmalar",
+    "unit": 1,
+    "md5": "1c15d182185af203a91ba4c2bfdc2c81"
+  },
+  {
+    "original_name": "download-34.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ahlak/aof_ahlak_u2_alistirma_testi.pdf",
+    "subject": "ahlak",
+    "category": "alistirmalar",
+    "unit": 2,
+    "md5": "49330f9ebecfa210ddbeaf4367ee7f4b"
+  },
+  {
+    "original_name": "download-35.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ahlak/aof_ahlak_u3_alistirma_testi.pdf",
+    "subject": "ahlak",
+    "category": "alistirmalar",
+    "unit": 3,
+    "md5": "b7ab8bb6590eabfcca27f30ab0cc1e52"
+  },
+  {
+    "original_name": "download-36.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ahlak/aof_ahlak_u4_alistirma_testi.pdf",
+    "subject": "ahlak",
+    "category": "alistirmalar",
+    "unit": 4,
+    "md5": "7ed771059ab28cf3f5ebee75be098fe6"
+  },
+  {
+    "original_name": "download-37.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/ahlak/aof_ahlak_u5_alistirma_testi.pdf",
+    "subject": "ahlak",
+    "category": "alistirmalar",
+    "unit": 5,
+    "md5": "2d674e5dbbaf3d04278877d0ea1c90ba"
+  },
+  {
+    "original_name": "download-38.pdf",
+    "target_path": "kaynaklar/testler/denemeler/aof/itar/aof_itar_vize_deneme_sinavi.pdf",
+    "subject": "itar",
+    "category": "denemeler",
+    "unit": null,
+    "md5": "b97c7661b0fedbf83ed7a6d9c7481c1f"
+  },
+  {
+    "original_name": "download-39.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/itar/aof_itar_u1_sorularla_ogrenelim_qa.pdf",
+    "subject": "itar",
+    "category": "klasik_sorular",
+    "unit": 1,
+    "md5": "981dd753d86f80c73d7cb77a5d0886b9"
+  },
+  {
+    "original_name": "download-40.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/itar/aof_itar_u2_sorularla_ogrenelim_qa.pdf",
+    "subject": "itar",
+    "category": "klasik_sorular",
+    "unit": 2,
+    "md5": "aa58cd6ea3331c04211072d716b98a92"
+  },
+  {
+    "original_name": "download-41.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/itar/aof_itar_u3_sorularla_ogrenelim_qa.pdf",
+    "subject": "itar",
+    "category": "klasik_sorular",
+    "unit": 3,
+    "md5": "57b5e503210878387713cb00f5f38b61"
+  },
+  {
+    "original_name": "download-42.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/itar/aof_itar_u4_sorularla_ogrenelim_qa.pdf",
+    "subject": "itar",
+    "category": "klasik_sorular",
+    "unit": 4,
+    "md5": "7354b0d5471b3a9cc451e10447d50cb0"
+  },
+  {
+    "original_name": "download-43.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/hadis/aof_hadis_u1_alistirma_testi.pdf",
+    "subject": "hadis",
+    "category": "alistirmalar",
+    "unit": 1,
+    "md5": "d511a549c486d6b9c13271cb08d1f12d"
+  },
+  {
+    "original_name": "download-44.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/hadis/aof_hadis_u2_alistirma_testi.pdf",
+    "subject": "hadis",
+    "category": "alistirmalar",
+    "unit": 2,
+    "md5": "1122c55c0178fd8110bdcb01a72fc188"
+  },
+  {
+    "original_name": "download-45.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/hadis/aof_hadis_u3_alistirma_testi.pdf",
+    "subject": "hadis",
+    "category": "alistirmalar",
+    "unit": 3,
+    "md5": "53e06f3ff1efd19a623459aff5ac25c7"
+  },
+  {
+    "original_name": "download-46.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/hadis/aof_hadis_u4_alistirma_testi.pdf",
+    "subject": "hadis",
+    "category": "alistirmalar",
+    "unit": 4,
+    "md5": "b68944cade8f3cc3e566cd3b738df982"
+  },
+  {
+    "original_name": "download-47.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/hadis/aof_hadis_u5_alistirma_testi.pdf",
+    "subject": "hadis",
+    "category": "alistirmalar",
+    "unit": 5,
+    "md5": "9f708dc64147bf184e8953eb551b64e4"
+  },
+  {
+    "original_name": "download-48.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/hadis/aof_hadis_u1_sorularla_ogrenelim_qa.pdf",
+    "subject": "hadis",
+    "category": "klasik_sorular",
+    "unit": 1,
+    "md5": "1c3c54ed0e6cbfb9ce198bc3924fb13a"
+  },
+  {
+    "original_name": "download-49.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/hadis/aof_hadis_u2_sorularla_ogrenelim_qa.pdf",
+    "subject": "hadis",
+    "category": "klasik_sorular",
+    "unit": 2,
+    "md5": "ea0be7c43bb8de4e567f71fd18e521cb"
+  },
+  {
+    "original_name": "download-5.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/inanc/aof_inanc_u2_sorularla_ogrenelim_qa.pdf",
+    "subject": "inanc",
+    "category": "klasik_sorular",
+    "unit": 2,
+    "md5": "f544b45b291afdc41f12c62b975101d8"
+  },
+  {
+    "original_name": "download-50.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/hadis/aof_hadis_u3_sorularla_ogrenelim_qa.pdf",
+    "subject": "hadis",
+    "category": "klasik_sorular",
+    "unit": 3,
+    "md5": "66230395d8b0cd411416ea119a9d4de5"
+  },
+  {
+    "original_name": "download-51.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/hadis/aof_hadis_u4_sorularla_ogrenelim_qa.pdf",
+    "subject": "hadis",
+    "category": "klasik_sorular",
+    "unit": 4,
+    "md5": "2dbe83879f7d1153697642bd0e7303da"
+  },
+  {
+    "original_name": "download-52.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/hadis/aof_hadis_u5_sorularla_ogrenelim_qa.pdf",
+    "subject": "hadis",
+    "category": "klasik_sorular",
+    "unit": 5,
+    "md5": "586c373b0af086c12c7171ceca5ff6e4"
+  },
+  {
+    "original_name": "download-6.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/inanc/aof_inanc_u3_sorularla_ogrenelim_qa.pdf",
+    "subject": "inanc",
+    "category": "klasik_sorular",
+    "unit": 3,
+    "md5": "5b2a3e38ab341578dc019adb5723e4ee"
+  },
+  {
+    "original_name": "download-7.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/inanc/aof_inanc_u4_sorularla_ogrenelim_qa.pdf",
+    "subject": "inanc",
+    "category": "klasik_sorular",
+    "unit": 4,
+    "md5": "777acddfdab76d13c7a4e40de14a5702"
+  },
+  {
+    "original_name": "download-8.pdf",
+    "target_path": "kaynaklar/testler/klasik_sorular/aof/inanc/aof_inanc_u5_sorularla_ogrenelim_qa.pdf",
+    "subject": "inanc",
+    "category": "klasik_sorular",
+    "unit": 5,
+    "md5": "866aa2a545e4b70dd7857d7ab266ac4d"
+  },
+  {
+    "original_name": "download-9.pdf",
+    "target_path": "kaynaklar/testler/alistirmalar/aof/inanc/aof_inanc_u1_alistirma_testi.pdf",
+    "subject": "inanc",
+    "category": "alistirmalar",
+    "unit": 1,
+    "md5": "23303b5ea55d1c29f585643a95e3068f"
+  },
+  {
+    "original_name": "İSLÂM AHLÂK ESASLARI - Ünite Özeti - Ünite 1.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ahlak/aof_ahlak_u1_ozet.pdf",
+    "subject": "ahlak",
+    "category": "ozetler",
+    "unit": 1,
+    "md5": "1a93b7518248538ae3a515aa4e069e59"
+  },
+  {
+    "original_name": "İSLÂM AHLÂK ESASLARI - Ünite Özeti - Ünite 2.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ahlak/aof_ahlak_u2_ozet.pdf",
+    "subject": "ahlak",
+    "category": "ozetler",
+    "unit": 2,
+    "md5": "974e8b41614141475cdd6379d76ad24a"
+  },
+  {
+    "original_name": "İSLÂM AHLÂK ESASLARI - Ünite Özeti - Ünite 3.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ahlak/aof_ahlak_u3_ozet.pdf",
+    "subject": "ahlak",
+    "category": "ozetler",
+    "unit": 3,
+    "md5": "b7173937f661c6d2e3dd54067bd0d74d"
+  },
+  {
+    "original_name": "İSLÂM AHLÂK ESASLARI - Ünite Özeti - Ünite 4.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ahlak/aof_ahlak_u4_ozet.pdf",
+    "subject": "ahlak",
+    "category": "ozetler",
+    "unit": 4,
+    "md5": "080fe2a34c57bfbe056ba73b40db4815"
+  },
+  {
+    "original_name": "İSLÂM AHLÂK ESASLARI - Ünite Özeti - Ünite 5.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ahlak/aof_ahlak_u5_ozet.pdf",
+    "subject": "ahlak",
+    "category": "ozetler",
+    "unit": 5,
+    "md5": "62a3c9b46b804cbaecd1f49697f0a056"
+  },
+  {
+    "original_name": "İSLÂM İBADET ESASLARI - Ünite Özeti - Ünite 1.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ibadet/aof_ibadet_u1_ozet.pdf",
+    "subject": "ibadet",
+    "category": "ozetler",
+    "unit": 1,
+    "md5": "515597904f9e8e40ec26eb5d96c303ba"
+  },
+  {
+    "original_name": "İSLÂM İBADET ESASLARI - Ünite Özeti - Ünite 2.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ibadet/aof_ibadet_u2_ozet.pdf",
+    "subject": "ibadet",
+    "category": "ozetler",
+    "unit": 2,
+    "md5": "28a1a61e10ca2ffc071798c29f8013d2"
+  },
+  {
+    "original_name": "İSLÂM İBADET ESASLARI - Ünite Özeti - Ünite 3-1.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ibadet/aof_ibadet_u3_ozet.pdf",
+    "subject": "ibadet",
+    "category": "ozetler",
+    "unit": 3,
+    "md5": "4324ba09c251fdde289e2c418d78ce11"
+  },
+  {
+    "original_name": "İSLÂM İBADET ESASLARI - Ünite Özeti - Ünite 4-1.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ibadet/aof_ibadet_u4_ozet.pdf",
+    "subject": "ibadet",
+    "category": "ozetler",
+    "unit": 4,
+    "md5": "c2f721500d045f82a8b4a40a0f88d28c"
+  },
+  {
+    "original_name": "İSLÂM İBADET ESASLARI - Ünite Özeti - Ünite 5-1.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/ibadet/aof_ibadet_u5_ozet.pdf",
+    "subject": "ibadet",
+    "category": "ozetler",
+    "unit": 5,
+    "md5": "05a081c05461998e8d295251669ddfc2"
+  },
+  {
+    "original_name": "İSLÂM İNANÇ ESASLARI - Ünite Özeti - Ünite 2.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/inanc/aof_inanc_u2_ozet.pdf",
+    "subject": "inanc",
+    "category": "ozetler",
+    "unit": 2,
+    "md5": "4be6d918ae737dc16ca3af249a7c8c40"
+  },
+  {
+    "original_name": "İSLÂM İNANÇ ESASLARI - Ünite Özeti - Ünite 3.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/inanc/aof_inanc_u3_ozet.pdf",
+    "subject": "inanc",
+    "category": "ozetler",
+    "unit": 3,
+    "md5": "48d2b1b8c5fbd0c1fa5e0464cd57026d"
+  },
+  {
+    "original_name": "İSLÂM İNANÇ ESASLARI - Ünite Özeti - Ünite 4.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/inanc/aof_inanc_u4_ozet.pdf",
+    "subject": "inanc",
+    "category": "ozetler",
+    "unit": 4,
+    "md5": "50af28781bf6ec42c687fb17b661f63c"
+  },
+  {
+    "original_name": "İSLÂM İNANÇ ESASLARI - Ünite Özeti - Ünite 5.pdf",
+    "target_path": "kaynaklar/notlar/ozetler/aof/inanc/aof_inanc_u5_ozet.pdf",
+    "subject": "inanc",
+    "category": "ozetler",
+    "unit": 5,
+    "md5": "6922694d1bf1fb247cb40a80fdf816c1"
+  }
+]

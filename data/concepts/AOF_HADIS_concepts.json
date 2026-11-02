@@ -1,0 +1,222 @@
+[
+  {
+    "id": "hadis_sunnet",
+    "term": "Sünnet",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.",
+    "sifre": "Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).",
+    "pattern": "\\bsünnet\\b|\\bsünneti\\b|\\bsünnete\\b"
+  },
+  {
+    "id": "hadis_kavli_sunnet",
+    "term": "Kavlî Sünnet",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "Hz. Peygamber’in bizzat söylediği mübarek sözleridir.",
+    "sifre": "Hz. Peygamber’in sözleri = Kavlî Sünnet (Örn: Ameller niyetlere göredir).",
+    "pattern": "\\bkavlî sünnet\\b|\\bkavli sünnet\\b"
+  },
+  {
+    "id": "hadis_fiili_sunnet",
+    "term": "Fiilî Sünnet",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "Hz. Peygamber’in ibadet ve muamelelerdeki bizzat uyguladığı davranış ve eylemleridir.",
+    "sifre": "Hz. Peygamber’in eylemleri/uygulamaları = Fiilî Sünnet (Namaz kılma, hac yapma şekli).",
+    "pattern": "\\bfiilî sünnet\\b|\\bfiili sünnet\\b"
+  },
+  {
+    "id": "hadis_takriri_sunnet",
+    "term": "Takrîrî Sünnet",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "Sahabenin yaptığı davranışları Hz. Peygamber’in görmesi/duyması halinde susarak veya açıkça onaylamasıdır.",
+    "sifre": "Sessiz kalma + onaylama + karşı çıkmama = Takrîrî Sünnet.",
+    "pattern": "\\btakrîrî sünnet\\b|\\btakriri sünnet\\b|\\btakrir\\b|\\btakrîr\\b"
+  },
+  {
+    "id": "hadis_teblig",
+    "term": "Tebliğ",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "Allah’tan alınan vahyin hiçbir eksiltme ve artırma yapılmadan insanlara ulaştırılması görevidir.",
+    "sifre": "Vahyi eksiksiz ulaştırma = Tebliğ (Mâide 67).",
+    "pattern": "\\btebliğ\\b|\\bteblig\\b"
+  },
+  {
+    "id": "hadis_tebyin_beyan",
+    "term": "Tebyîn (Beyân)",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "Hz. Peygamber’in Kur’an’daki kapalı (mücmel) hükümleri açıklaması ve detaylandırmasıdır.",
+    "sifre": "Kur’an’ı açıklama ve detaylandırma = Tebyîn / Beyân (Nahl 44).",
+    "pattern": "\\btebyîn\\b|\\btebyin\\b|\\bbeyân\\b|\\bbeyan\\b"
+  },
+  {
+    "id": "hadis_tezkiye",
+    "term": "Tezkiye",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "İnsanları şirk, günah ve kötü ahlaktan arındırma, manevi yönden temizleme vazifesidir.",
+    "sifre": "Manevi arındırma + kötü huylardan temizleme = Tezkiye (Cuma 2).",
+    "pattern": "\\btezkiye\\b"
+  },
+  {
+    "id": "hadis_senet_isnad",
+    "term": "Senet (İsnad)",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.",
+    "sifre": "Râvîler zinciri/silsilesi = Senet / İsnad.",
+    "pattern": "\\bsenett?e?\\b|\\bisnad\\b|\\bisnâd\\b|\\brâvîler zinciri\\b"
+  },
+  {
+    "id": "hadis_metin",
+    "term": "Metin",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 1,
+    "tanim": "Senedin bittiği yerde başlayan ve hadisin asıl içeriğini oluşturan söz veya haber kısmıdır.",
+    "sifre": "Hadisin söz/içerik kısmı = Metin.",
+    "pattern": "\\bmetin\\b|\\bhadis metni\\b|\\bmetninde\\b"
+  },
+  {
+    "id": "hadis_sahife_sadika",
+    "term": "es-Sahîfetü’s-Sâdıka",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 2,
+    "tanim": "Abdullah b. Amr b. el-Âs’ın bizzat Hz. Peygamber’in izniyle yazdığı ilk hadis mecmuasıdır.",
+    "sifre": "Abdullah b. Amr + Peygamber izniyle yazılan ilk sahife = es-Sahîfetü’s-Sâdıka.",
+    "pattern": "es-sahîfetü[’\\']s-sâdıka|sahifetü[’\\']s-sadıka|sahife-i sadıka"
+  },
+  {
+    "id": "hadis_tedvin",
+    "term": "Tedvîn",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 2,
+    "tanim": "Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.",
+    "sifre": "Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.",
+    "pattern": "\\btedvîn\\b|\\btedvin\\b|\\btedvini\\b"
+  },
+  {
+    "id": "hadis_ibn_sihab_zuhri",
+    "term": "İbn Şihâb ez-Zührî",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 2,
+    "tanim": "Ömer b. Abdülazîz’in emriyle hadisleri ilk defa resmi olarak toplayıp tedvin eden büyük âlimdir.",
+    "sifre": "Hadisleri ilk resmi tedvin eden âlim = İbn Şihâb ez-Zührî.",
+    "pattern": "ibn şihâb ez-zührî|ibn şihab|ez-zührî|ez-zühri"
+  },
+  {
+    "id": "hadis_tasnif",
+    "term": "Tasnîf",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 3,
+    "tanim": "Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.",
+    "sifre": "Sınıflandırma ve bölümlere ayırma = Tasnîf.",
+    "pattern": "\\btasnîf\\b|\\btasnif\\b|\\btasnifi\\b"
+  },
+  {
+    "id": "hadis_musned",
+    "term": "Müsned",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 3,
+    "tanim": "Hadisleri konularına göre değil, rivayet eden sahabîlerin isimlerine göre (ale’r-ricâl) sıralayan eser türüdür.",
+    "sifre": "Sahabe adına göre sıralı = Müsned (En meşhuru: Ahmed b. Hanbel).",
+    "pattern": "\\bmüsned\\b|\\bmüsnedi\\b"
+  },
+  {
+    "id": "hadis_cami",
+    "term": "Câmi’",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 3,
+    "tanim": "Dinin tüm ana konularını (inanç, ibadet, ahlak, siyer, tefsir, fiten, adab, menakıb - 8 ana bölüm) içeren kapsamlı eserdir.",
+    "sifre": "Tüm dini konuları içeren 8 ana bölümlü hadis eseri = Câmi’ (Buhârî, Müslim).",
+    "pattern": "\\bcâmi’\\b|\\bcami\\b|\\bcamiu[’\\']s-sahih\\b"
+  },
+  {
+    "id": "hadis_sunen",
+    "term": "Sünen",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 3,
+    "tanim": "Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.",
+    "sifre": "Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).",
+    "pattern": "\\bsünen\\b|\\bsüneni\\b"
+  },
+  {
+    "id": "hadis_kutub_sitte",
+    "term": "Kütüb-i Sitte",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 3,
+    "tanim": "İslam dünyasında en güvenilir kabul edilen altı hadis kitabıdır (Buhârî, Müslim, Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).",
+    "sifre": "Altı Temel Hadis Kitabı = Kütüb-i Sitte.",
+    "pattern": "kütüb-i sitte|kutub-i sitte|kütüb-i sitte\\'ye"
+  },
+  {
+    "id": "hadis_sahihayn",
+    "term": "Sahîhayn",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 3,
+    "tanim": "Hadis edebiyatının en sahih iki kitabı olan Sahîh-i Buhârî ve Sahîh-i Müslim’e verilen ortak isimdir.",
+    "sifre": "Buhârî + Müslim = Sahîhayn (İki Sahih).",
+    "pattern": "\\bsahîhayn\\b|\\bsahihayn\\b"
+  },
+  {
+    "id": "hadis_cerh_tadil",
+    "term": "Cerh ve Ta’dîl",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 4,
+    "tanim": "Râvîlerin dindarlık (adalet) ve hafıza/koruma (zabt) yönünden güvenilir olup olmadıklarını inceleyen ilim dalıdır.",
+    "sifre": "Cerh (kusur bulma/red) + Ta’dîl (güvenilir ilan etme) = Cerh ve Ta’dîl.",
+    "pattern": "cerh ve ta’dîl|cerh ve ta\\'dil|cerh ve tadil|cerh|ta’dîl"
+  },
+  {
+    "id": "hadis_garibul_hadis",
+    "term": "Garîbü’l-Hadîs",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 4,
+    "tanim": "Hadis metinlerinde geçen az kullanılan, nadir ve anlaşılması güç kelimeleri açıklayan ilimdir.",
+    "sifre": "Nadir ve yabancı kelimeleri açıklayan hadis ilmi = Garîbü’l-Hadîs.",
+    "pattern": "garîbü’l-hadîs|garibul hadis|garîbül hadis"
+  },
+  {
+    "id": "hadis_ihtilaful_hadis",
+    "term": "İhtilâfü’l-Hadîs",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 4,
+    "tanim": "İlk bakışta birbiriyle çelişkili veya zıt gibi görünen hadisleri uzlaştırma ve çözme ilmidir.",
+    "sifre": "Çelişkili görünen hadisleri uzlaştırma = İhtilâfü’l-Hadîs (veya Müşkilü’l-Hadîs).",
+    "pattern": "ihtilâfü’l-hadîs|ihtilaful hadis|müşkilü’l-hadis"
+  },
+  {
+    "id": "hadis_esbabu_vurud",
+    "term": "Esbâbü Vürûdi’l-Hadîs",
+    "subject": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "unite_no": 4,
+    "tanim": "Hadislerin hangi olay, soru veya sebep üzerine söylendiğini araştıran ilimdir.",
+    "sifre": "Hadisin söylenme sebebi/bağlamı = Esbâbü Vürûdi’l-Hadîs.",
+    "pattern": "esbâbü vürûdi’l-hadîs|esbabu vurud|vürud sebebi|vürûd"
+  }
+]

@@ -15,14 +15,20 @@
       "E": "Dindar bir insanın ahlaksız olması tutarsızdır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Din ve Ahlak İlişkisi",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Din-Ahlak Bağlantısı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Din ile <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> arasındaki ilişkiye dair aşağıdaki ifadelerin hangisi yanlıştır?",
+    "secenekler_xray": {
+      "A": "Din ile <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> arasında zorunlu bir bağlantı vardır.",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> dinin tamamlayıcı unsurudur.",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> dinin kaynağı ve dayanağıdır."
+    }
   },
   {
     "id": 21001,
@@ -40,14 +46,17 @@
       "E": "Kanun"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Ahlak Kavramı ve Tanımı",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Ahlakın Kaynakları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span>"
+    }
   },
   {
     "id": 21002,
@@ -65,14 +74,21 @@
       "E": "Ahlak psikolojisi"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Ahlak Disiplinleri",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Ahlak Psikolojisi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> felsefesi",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> sosyolojisi",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> antropolojisi",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> ilmi",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> psikolojisi"
+    }
   },
   {
     "id": 21003,
@@ -90,7 +106,7 @@
       "E": "Ahlakı ilmileştirmek"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Ahlaki Eğitim",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Ahlaki Eğitimin Amacı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -115,7 +131,7 @@
       "E": "Üsve-i hasene"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hz. Peygamber'in Ahlaki Örnekliği",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
     "alt_konu": "Üsve-i Hasene",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -140,7 +156,7 @@
       "E": "Kindi"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Akıl ve Nakil İlişkisi",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "İslam Düşünürlerinin Görüşleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -165,7 +181,7 @@
       "E": "mükemmeliyetçilik"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Ahlaki Görüşler",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Ahlaki Görecelik",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -190,7 +206,7 @@
       "E": "Doğru davranış ve kuralların tespiti"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Aklın Rolü",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Akıl ve Nakil",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -215,7 +231,7 @@
       "E": "İçtihad"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Mutezile Ahlakı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -240,14 +256,15 @@
       "E": "Caferi"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Maturidi Ahlakı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Bu mezhebin <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorisinde insan fiilleri, yaratma yönünden Allah’a, kazanma yönünden kişiye ait olup, insan hür iradesiyle bunları seçmekte ve eyleme dönüştürmektedir. Bu durumda Allah’ın fiilleri, insanın seçmesi sonunda yarattığı anlaşılmaktadır. İnsanın ahlâki sorumluluğu da ondaki bu seçme hürriyetinden kaynaklanmaktadır. Yukarıdaki paragrafta hangi mezhebin <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisinden bahsedilmektedir?"
   },
   {
     "id": 21010,
@@ -265,14 +282,15 @@
       "E": "Ahlaki değerler görelidir."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Mutezile Ahlakı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdaki ifadelerin hangisi Mutezilenin <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisi açısından doğrudur?"
   },
   {
     "id": 21011,
@@ -290,14 +308,23 @@
       "E": "Tasavvufî ahlâk teorisi"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Tasavvuf ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Nefs Kavramı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Hem dinin hem de aklın reddettiği bütün kötü huyların ve çirkin davranışların kaynağını \"nefis\" olarak gören <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorisi aşağıdakilerden hangisidir?",
+    "secenekler_xray": {
+      "A": "Maturidî <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorisi",
+      "B": "Felsefi <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorisi",
+      "C": "Mu’tezilenin <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorisi",
+      "D": "Eş’ari <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorisi",
+      "E": "Tasavvufî <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorisi"
+    },
+    "dogru_nedeni": "İSLAM AHLAK ESASLARI (İslâm ve Ahlâk): Doğru yanıt E seçeneğidir. Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir."
   },
   {
     "id": 21012,
@@ -315,7 +342,7 @@
       "E": "İnsanın özgürce gerçekleştirdiği fiiller anlamlı olur."
     },
     "dogru_cevap": "C",
-    "ana_konu": "İrade ve Sorumluluk",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Ahlaki Özgürlük",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -340,7 +367,7 @@
       "E": "Akıl"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Ahlakın Konusu",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "İrade ve Sorumluluk",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -365,14 +392,18 @@
       "E": "İbadetleri kamilen eda etmek"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Ahlaki Değerler",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Mutlak Hayır",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "İman ve <span class=\"vocab-word concept-word\" data-tr=\"Tüm amelleri, ibadetleri ve ahlaki davranışları sadece ve sadece Allah rızası için yapmak, riya ve gösterişten arındırmaktır.\n💡 Sınav Şifresi: Yalnızca Allah rızası için amel = İhlâs (Zıttı: Riya).\" data-note=\"İSLAM AHLAK ESASLARI Ünite 5 • İhlâs\" onclick=\"showVocabBubble(this, event)\">ihlas</span> sahibi olmak",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">Temel erdemler</span>e sahip olmak"
+    }
   },
   {
     "id": 21015,
@@ -390,14 +421,15 @@
       "E": "Sahabe hayatları"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Ahlak Kavramı ve Tanımı",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Ahlakın Konusu",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span> ilmi ve felsefesinin konusu aşağıdakilerden hangisidir?"
   },
   {
     "id": 21016,
@@ -415,14 +447,15 @@
       "E": "Tasavvufi hikmet"
     },
     "dogru_cevap": "B",
-    "ana_konu": "İslam Ahlak Felsefesi",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Ameli Hikmet",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "İslam <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> filozoflarının eserlerinde <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span>, ev idaresi ve siyaset ilmi aşağıdaki hikmet türlerinden hangisinin altında yer alır?"
   },
   {
     "id": 21017,
@@ -440,21 +473,25 @@
       "E": "İffet"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Temel Erdemler",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "İffet ve Tevazu",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Alçak gönüllü olmak, hakkı kabul etmek ve insanlara karşı kibir ve üstünlük taslamamaktır.\n💡 Sınav Şifresi: Alçak gönüllülük = Tevâzu (Zıttı: Kibir).\" data-note=\"İSLAM AHLAK ESASLARI Ünite 5 • Tevâzu\" onclick=\"showVocabBubble(this, event)\">Tevazu</span>, hangi temel erdemin altına ya da kapsamına girer?",
+    "secenekler_xray": {
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">İffet</span>"
+    }
   },
   {
     "id": 21018,
     "ders": "İSLAM AHLAK ESASLARI",
     "ders_kodu": 803,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
     "soru_no": 19,
     "soru": "Aşağıdakilerden hangisi Kur’an’da güzel ahlâk veya fazilet için kullanılan kavramlardan biri değildir?",
     "secenekler": {
@@ -465,14 +502,16 @@
       "E": "Hasene"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Kur'an'da Ahlak Kavramları",
-    "alt_konu": "Ahlaki Kavramlar",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "soru_xray": "Aşağıdakilerden hangisi Kur’an’da güzel <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> veya fazilet için kullanılan kavramlardan biri değildir?",
+    "dogru_nedeni": "Kur’an’da güzel ahlâk veya fazilet için hasene, hidâyet, sıdk, amel-i salih\n         ve ihsan gibi pek çok kavramın kullanıldığı dikkati çekmektedir."
   },
   {
     "id": 21019,
@@ -490,14 +529,17 @@
       "E": "Ünsiyet"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Sosyal Ahlak",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
     "alt_konu": "İnsan İlişkileri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">İffet</span>"
+    }
   },
   {
     "id": 21020,
@@ -515,14 +557,20 @@
       "E": "Ahlak dinin tamamlayıcı unsurudur."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Din ve Ahlak İlişkisi",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Din-Ahlak Bağlantısı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Din ile <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> arasındaki ilişkiye dair aşağıdaki ifadelerden hangisi yanlıştır?",
+    "secenekler_xray": {
+      "A": "Din ile <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> arasında zorunlu bir bağlantı vardır.",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> dinin kaynağı ve dayanağıdır.",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> dinin tamamlayıcı unsurudur."
+    }
   },
   {
     "id": 21021,
@@ -540,14 +588,17 @@
       "E": "Salih amel"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Ahlak Kavramları",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Temel Ahlaki Kavramlar",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span>"
+    }
   },
   {
     "id": 21022,
@@ -565,14 +616,18 @@
       "E": "İyiliği emretmek kötülükten sakındırmak"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Ahlak Eğitimi",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Ahlak Eğitiminin Amacı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> eğitimi ve ilminin asli amacı ve vazifesi aşağıdakilerden hangisidir?",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> teorilerini ve pratiklerini geliştirmek ve öğretmek"
+    }
   },
   {
     "id": 21023,
@@ -590,7 +645,7 @@
       "E": "Allah'ın varlığı ve birliğine iman"
     },
     "dogru_cevap": "A",
-    "ana_konu": "İman Esasları ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Ahiret İnancının Ahlaki Boyutu",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -615,14 +670,15 @@
       "E": "Eşari"
     },
     "dogru_cevap": "C",
-    "ana_konu": "İslam Ahlak Düşüncesi Tarihi",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Önemli Ahlak Filozofları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerin hangisi İslam <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> filozoflarından biridir?"
   },
   {
     "id": 21025,
@@ -640,7 +696,7 @@
       "E": "İbn Arabi'nin Futuhat-ı Mekkiyye'si"
     },
     "dogru_cevap": "C",
-    "ana_konu": "İslam Ahlak Kaynakları",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Tasavvuf ve Ahlak Eserleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -665,14 +721,15 @@
       "E": "İnsan davranışlarını düzenleyen kurallar bütünüdür."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Ahlak Tanımları",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Filozofların Ahlak Tanımları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Farabi, İbn Sina ve Gazali’nin ortak <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> tarifine göre ahlakın tanımı aşağıdakilerin hangisidir?"
   },
   {
     "id": 21027,
@@ -690,7 +747,7 @@
       "E": "Caferi"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Eşari Mezhebi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -715,7 +772,7 @@
       "E": "Kınama cezası"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Ahlaki Sorumluluk ve Yaptırımlar",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Vicdan ve Ahlaki Yaptırım",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -740,7 +797,7 @@
       "E": "İnsan ancak sınırsız bir özgürlükle ahlaki karakter edinebilir."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Ahlaki Sorumluluk ve Özgürlük",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Özgürlüğün Ahlaki Önemi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -765,7 +822,7 @@
       "E": "İnsanın varlıklar içindeki en akıllı yaratık olmasıyla"
     },
     "dogru_cevap": "B",
-    "ana_konu": "İnsan Kavramı ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "İnsanın Konumu (Halifelik)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -790,7 +847,7 @@
       "E": "İnsanlara yardım etmek ve dayanışma içinde olmak"
     },
     "dogru_cevap": "E",
-    "ana_konu": "İslam Ahlak Düşüncesi Tarihi",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Azizüddin Nesefi ve Ahlak",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -815,14 +872,17 @@
       "E": "Adalet"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Erdemler (Faziletler)",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Adalet Erdemi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">İffet</span>"
+    }
   },
   {
     "id": 21033,
@@ -840,7 +900,7 @@
       "E": "Arzu gücü"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Erdemler (Faziletler)",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Cesaret Erdemi ve Nefis Güçleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -865,7 +925,7 @@
       "E": "İyi ve kötü fiilleri tespit edip öğretmek"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Ahlak Eğitimi",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Ahlaki Eğitimin Amacı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -890,7 +950,7 @@
       "E": "Muhlis"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Ahlak Kavramları",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Temel Ahlaki Kavramlar",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -915,14 +975,15 @@
       "E": "II, III ve IV"
     },
     "dogru_cevap": "C",
-    "ana_konu": "İslam Ahlak Tarihi",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Klasik Ahlak Eserleri ve Konuları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Ahlaki davranışın kuralları\nII. Ahlaki eğitimin amacı\nIII. Ahlaki kuralların nasıl uygulanacağı\nIV. <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> din ilişkisindeki temel sorunlar\n\nKlasik <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> eserlerinde ele alınan temel sorunlar yukarıdakilerden hangileridir?"
   },
   {
     "id": 21037,
@@ -940,14 +1001,20 @@
       "E": "Ahlak ilmi"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Ahlak İlimleri",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Ahlak İlmihali",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Görevi, genel <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> ilkeleri ve kurallarını sistematik ve anlaşılır bir şekilde ortaya koyarak, bunların yeni yetişen nesillere öğretilmesini kolaylaştırmak olan ilim dalı aşağıdakilerden hangisidir?",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> felsefesi",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> teorisi",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> ilmi"
+    }
   },
   {
     "id": 21038,
@@ -965,7 +1032,7 @@
       "E": "İnsan seçimlerinde özgür değil zorunludur."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Kelam ve Ahlak",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Gazali'nin Ahlak Görüşü",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -990,14 +1057,15 @@
       "E": "Yunus Emre"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Tasavvuf ve Ahlak",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Tasavvufi Ahlak Eserleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Tasavvufi <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> eserlerinden \"el-Futuhat el-Mekkiyye\" hangi düşünüre aittir?"
   },
   {
     "id": 21040,
@@ -1015,7 +1083,7 @@
       "E": "Naklin anlaşılması ve İslam ahlakının ilim haline getirilmesi"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Ahlak Kaynakları",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Aklın Rolü",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1040,14 +1108,15 @@
       "E": "Bir fiili iyi veya kötü yapan özellikler nelerdir?"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Ahlak Teorileri",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Ahlak Felsefesinin Temel Soruları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisi geliştiren düşünürlerin dikkate aldığı sorulardan biri değildir?"
   },
   {
     "id": 21042,
@@ -1065,14 +1134,21 @@
       "E": "Mutezili ahlak teorisi"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Ahlak Teorileri",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Karakter Etiği",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "Kelami <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisi",
+      "B": "Nassi <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisi",
+      "C": "Karakterci <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisi",
+      "D": "Kuralcı <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisi",
+      "E": "Mutezili <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisi"
+    }
   },
   {
     "id": 21043,
@@ -1090,14 +1166,18 @@
       "E": "Ahlâk teorisi"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Ahlak Teorileri",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Ahlak Teorisinin Tanımı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span> teorisi"
+    },
+    "dogru_nedeni": "İSLAM AHLAK ESASLARI (İslâm ve Ahlâk): Doğru yanıt E seçeneğidir. Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir."
   },
   {
     "id": 21044,
@@ -1115,7 +1195,7 @@
       "E": "Haysiyet"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Ahlaki Sorumluluk",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "İrade ve Sorumluluk",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1140,7 +1220,7 @@
       "E": "Hayra yatkın olmasına"
     },
     "dogru_cevap": "A",
-    "ana_konu": "İnsan ve Ahlak",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Seçme Özgürlüğü (İhtiyar)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1165,7 +1245,7 @@
       "E": "Dürüstlük"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Erdemler",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Adalet Erdeminin Alt Dalları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1190,14 +1270,17 @@
       "E": "Tevazu"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Erdemler",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Hikmet Erdemi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Alçak gönüllü olmak, hakkı kabul etmek ve insanlara karşı kibir ve üstünlük taslamamaktır.\n💡 Sınav Şifresi: Alçak gönüllülük = Tevâzu (Zıttı: Kibir).\" data-note=\"İSLAM AHLAK ESASLARI Ünite 5 • Tevâzu\" onclick=\"showVocabBubble(this, event)\">Tevazu</span>"
+    }
   },
   {
     "id": 21048,
@@ -1215,7 +1298,7 @@
       "E": "İbn Arabi"
     },
     "dogru_cevap": "D",
-    "ana_konu": "İslam Düşünürleri",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Endülüslü Düşünürler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1240,14 +1323,19 @@
       "E": "Ahlak psikolojisi"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Ahlak Kavramı ve Disiplinleri",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Ahlak Felsefesinin Tanımı ve Kapsamı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> sosyolojisi",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> felsefesi",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> psikolojisi"
+    }
   },
   {
     "id": 21050,
@@ -1265,7 +1353,7 @@
       "E": "Tüm davranışlarında yararı gözetmesi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Ahlak Kavramı ve Disiplinleri",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Ahlaklı Olmanın Kriterleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1290,14 +1378,17 @@
       "E": "Din"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Ahlak Kavramı ve Disiplinleri",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Ahlak Kavramının Tanımı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span>"
+    }
   },
   {
     "id": 21052,
@@ -1315,7 +1406,7 @@
       "E": "II, III ve IV"
     },
     "dogru_cevap": "A",
-    "ana_konu": "İslam Ahlakının Kaynakları",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
     "alt_konu": "İslam Ahlakının Ana Kaynakları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1340,14 +1431,17 @@
       "E": "Abdullah b. Mübarek - Kitabu'z-Zühd ve'r-Rekaik"
     },
     "dogru_cevap": "E",
-    "ana_konu": "İslam Ahlakının Kaynakları",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Tasavvufi Ahlak Eserleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "C": "Nasıruddin Tusi - <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span>-ı Nasıri"
+    }
   },
   {
     "id": 21054,
@@ -1365,7 +1459,7 @@
       "E": "Üsve-i hasene oluşu"
     },
     "dogru_cevap": "B",
-    "ana_konu": "İslam Ahlakının Kaynakları",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
     "alt_konu": "Hz. Peygamber'in Ahlaki Örnekliği",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1390,14 +1484,15 @@
       "E": "Kuralcı"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Ahlak Teorileri",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "İslam Düşüncesinde Ahlak Teorileri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "İslam filozofları ve mutasavvıfların <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> alanında yazdıkları eserler ne tür bir <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> teorisinin diliyle kaleme alınmıştır?"
   },
   {
     "id": 21056,
@@ -1415,14 +1510,15 @@
       "E": "Erdem"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Ahlak Teorileri",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "İslam Filozoflarında Ahlakın Temeli",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "İslam filozoflarına göre <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> ve erdemlerden bahsedebilmenin ön şartı nedir?"
   },
   {
     "id": 21057,
@@ -1440,14 +1536,15 @@
       "E": "Hadisci"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Ahlak Teorileri",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Kuralcı (Deontolojik) Ahlak Teorileri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "------- <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorilerinin ortak özelliği, bunların ahlâki davranışları önermeler, emir ve yasaklar veya iyi ve kötü fiillerin tasviri şeklinde ifade etmeleridir. İslâm düşünürleri arasında genellikle hadisçi, müfessir, fukaha ve kelamcıların <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> alanında telif ettikleri eserler bu kategoride incelenebilir.\n\nYukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?"
   },
   {
     "id": 21058,
@@ -1465,7 +1562,7 @@
       "E": "Mizaç"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Tasavvuf ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Nefis Kavramı ve Kötü Huyların Kaynağı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1490,14 +1587,17 @@
       "E": "Hayr"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Tasavvuf ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "İnsan-ı Kamil ve Hilafet Kavramı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "el-Esmaü'l-<span class=\"vocab-word concept-word\" data-tr=\"Bir fiilin ahlaken iyi (hüsn / güzel) veya kötü (kubuh / çirkin) olmasıdır. Eş’arîlere göre vahiy belirler; Mu’tezile’ye göre akıl da idrak edebilir.\n💡 Sınav Şifresi: İyilik (Hüsn) + Kötülük (Kubuh) = Hüsn ve Kubuh meselesi.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 3 • Hüsn ve Kubuh\" onclick=\"showVocabBubble(this, event)\">Hüsn</span>a"
+    }
   },
   {
     "id": 21060,
@@ -1515,7 +1615,7 @@
       "E": "Muhafaza-i diniyye"
     },
     "dogru_cevap": "D",
-    "ana_konu": "İslam Hukuku ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Makasıdu'ş-Şeria (Şeriatın Amaçları)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1528,8 +1628,8 @@
     "id": 21061,
     "ders": "İSLAM AHLAK ESASLARI",
     "ders_kodu": 803,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
     "soru_no": 62,
     "soru": "İnsanın hangi fiili yapacağına ve neyi tercih edeceğine kendisinin karar vermesine ne ad verilir?",
     "secenekler": {
@@ -1540,14 +1640,15 @@
       "E": "Nefse zulüm"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Ahlak Kavramı ve Disiplinleri",
-    "alt_konu": "İrade ve Özgürlük",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "İnsanın hür olması, irade özgürlüğü olarak ifade edilir. İrade özgürlüğü, genel olarak, insanın hangi\n         fiili yapacağına ve neyi tercih edeceğine kendisinin karar verebilmesi imkânı olarak tanımlanabilir.\n         İnsan, diğer canlılardan farklı olarak, neyi yapıp neyi yapmayacağına kendisi karar verebilir; bu\n         imkân insanın insan olmasının ön şartıdır. Doğru cevap C'dir."
   },
   {
     "id": 21062,
@@ -1565,14 +1666,17 @@
       "E": "Cesaret"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Erdem Ahlakı",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Temel Erdemler ve Güçler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">İffet</span>"
+    }
   },
   {
     "id": 21063,
@@ -1590,14 +1694,18 @@
       "E": "Şecaat"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Erdem Ahlakı",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Hikmet Erdemi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">İffet</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">Şecaat</span>"
+    }
   },
   {
     "id": 21064,
@@ -1615,7 +1723,7 @@
       "E": "Adalet"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Erdem Ahlakı",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Dört Temel Erdem",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1640,7 +1748,7 @@
       "E": "İbn Arabi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "İslam Ahlak Düşüncesi Tarihi",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Farabi'nin Ahlak Görüşü",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1665,14 +1773,18 @@
       "E": "Tasavvuf"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Ahlak Disiplinleri",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "Ahlak Sosyolojisi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span> felsefesi",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> sosyolojisi"
+    }
   },
   {
     "id": 21067,
@@ -1690,7 +1802,7 @@
       "E": "Rahat bir hayatı"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hz. Peygamber'in Ahlaki Örnekliği",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Hz. Peygamber'in Ahlaki Etkisi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1715,7 +1827,7 @@
       "E": "Vaad"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "ana_konu": "İslâm Ahlâk Teorileri",
     "alt_konu": "Mutezile'nin Beş Esası",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1740,7 +1852,7 @@
       "E": "Ahzab"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hz. Peygamber'in Ahlaki Örnekliği",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Üsve-i Hasene Kavramı ve Ayetler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1765,7 +1877,7 @@
       "E": "Kerramiye"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Eş'ari Ahlak Teorisi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1790,7 +1902,7 @@
       "E": "Eş'ari"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Kelam Mezhepleri ve Ahlak",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Mutezile Ahlak Teorisi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1815,7 +1927,7 @@
       "E": "Kınama cezası"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Ahlaki Sorumluluk ve Yaptırım",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "Vicdan ve Ahlaki Yaptırım",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1840,14 +1952,15 @@
       "E": "niyet"
     },
     "dogru_cevap": "D",
-    "ana_konu": "İrade ve Sorumluluk",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
     "alt_konu": "İrade Hürriyeti",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "İslam <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> literatüründe insanın hangi fiili yapacağına ve neyi tercih edeceğine kendisinin karar verebilmesi imkânına ------- adı verilir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?"
   },
   {
     "id": 21074,
@@ -1865,7 +1978,7 @@
       "E": "Eşref-i mahlukat olan insan müstağni bir varlık olarak kendine yeterlidir."
     },
     "dogru_cevap": "E",
-    "ana_konu": "İnsan ve Ahlak",
+    "ana_konu": "İslâm ve Ahlâk",
     "alt_konu": "İnsanın Ahlaki Muhtaçlığı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1890,7 +2003,7 @@
       "E": "Mükâfat"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Erdemler",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
     "alt_konu": "Adalet Erdemi ve Alt Erdemleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1903,8 +2016,8 @@
     "id": 21076,
     "ders": "İSLAM AHLAK ESASLARI",
     "ders_kodu": 803,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
     "soru_no": 77,
     "soru": "İslâm filozoflarından İbn Rüşd’e göre, ------- erdemi, bilgelik, yiğitlik ve ölçülülükten (iffet) ve cömertlikten oluşan diğer dört erdemin toplumda gerçekleşmesinin teminatıdır. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
     "secenekler": {
@@ -1915,13 +2028,1753 @@
       "E": "adalet"
     },
     "dogru_cevap": "E",
-    "ana_konu": "İslam Felsefesinde Ahlak",
-    "alt_konu": "İbn Rüşd'ün Ahlak Görüşü",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "soru_xray": "İslâm filozoflarından İbn Rüşd’e göre, ------- erdemi, bilgelik, yiğitlik ve ölçülülükten (<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">iffet</span>) ve cömertlikten oluşan diğer dört erdemin toplumda gerçekleşmesinin teminatıdır. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Alçak gönüllü olmak, hakkı kabul etmek ve insanlara karşı kibir ve üstünlük taslamamaktır.\n💡 Sınav Şifresi: Alçak gönüllülük = Tevâzu (Zıttı: Kibir).\" data-note=\"İSLAM AHLAK ESASLARI Ünite 5 • Tevâzu\" onclick=\"showVocabBubble(this, event)\">tevazu</span>"
+    },
+    "dogru_nedeni": "İslâm filozoflarından İbn Rüşd’e göre, adalet erdemi, bilgelik, yiğitlik ve ölçülülükten (iffet) ve\n         cömertlikten oluşan diğer dört erdemin toplumda gerçekleşmesinin teminatıdır. Ona göre, ahlâk ile\n         hukuk arasında zorunlu bir bağlantı vardır. Doğru cevap E dir."
+  },
+  {
+    "id": 21077,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 78,
+    "soru": "İslamiyet’te Amel ne demektir?",
+    "secenekler": {
+      "A": "Uygulama",
+      "B": "Doktrin",
+      "C": "Ayet",
+      "D": "Sünnet",
+      "E": "Farz"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Müslümanlıkta amel uygulama demektir yani sadece lafta değil yaşantıdada emirleri yerine getirmek gerekir."
+  },
+  {
+    "id": 21078,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 79,
+    "soru": "Müslümanın davranış düzenine esas teşkil eden veya davranırken tabi olduğu kurallar neyi kasteder?",
+    "secenekler": {
+      "A": "İslâm felsefesini",
+      "B": "İslâm fıtratını",
+      "C": "İslâm ahlâkını",
+      "D": "İslâm egosunu",
+      "E": "İslâm şartlarını"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Bu çerçevede İslâm ahlâkı denildiğinde, müslümanın davranış düzenine esas teşkil eden veya davranırken tabi olduğu kurallar kastedilmekte; bu kurallar ise öncelikle Kur’an-ı Kerim olmak üzere, Hadis kitaplarında derlenmiş olan Hz. Peygamber’den ve Hz. Peygamber hakkındaki rivayetlerde bulunmaktadır. Bunlara ek olarak daha sonra yaşamış olan sahabe, tabiin, tebeü’t-tabi’in yanında İslâm tarihinde toplum nezdinde kabul görmüş önemli âlim ve zahidlerin hayatları, önemli devlet adamlarının iyi olarak kabul edilen fiilleri de, özellikle çocukların ahlâki eğitimi söz konusu olduğunda, müracaat edilen kaynaklar arasındadır. Bu yönden muhtelif menakıb kitaplarının da ahlâk literatüründen sayılması gerekmektedir."
+  },
+  {
+    "id": 21079,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 80,
+    "soru": "“Din samimiyettir”, “ ben güzel ahlâkı tamamlamak için gönderildim” ve “sen yüksek bir ahlâk üzeresin” sözü neyi ifade eder?",
+    "secenekler": {
+      "A": "Dini ifade eder",
+      "B": "Din ile ahlâk arasındaki derin irtibatı ifade eder",
+      "C": "Din ile beşer arasındaki derin irtibatı ifade eder",
+      "D": "Ahlâkı ifade eder",
+      "E": "Din ile ahlâk arasındaki derin uçurumu ifade eder"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "“Din samimiyettir”, “ ben güzel ahlâkı tamamlamak için gönderildim” ve “sen yüksek bir ahlâk üzeresin” ifadeleri, din ile ahlâk arasındaki derin irtibatı ifade etmek için yeterlidir.",
+    "soru_xray": "“Din samimiyettir”, “ ben güzel ahlâkı tamamlamak için gönderildim” ve “sen yüksek bir <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> üzeresin” sözü neyi ifade eder?",
+    "secenekler_xray": {
+      "B": "Din ile <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> arasındaki derin irtibatı ifade eder",
+      "E": "Din ile <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> arasındaki derin uçurumu ifade eder"
+    }
+  },
+  {
+    "id": 21080,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 81,
+    "soru": "Davranış düzeninin ilkelerinin neler olduğu ve bunlar arasında da bir düzenin olup olmadığını; varsa bunun keyfiyetini ele alan aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ahlâk Felsefesi",
+      "B": "Ahlâk Sosyolojisi",
+      "C": "Ahlâk Psikolojisi",
+      "D": "Etik",
+      "E": "İslam Ahlâkı"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Davranış düzeninin ilkelerinin neler olduğu ve bunlar arasında da bir düzenin olup olmadığını; varsa bunun keyfiyetini ele alan ahlâk felsefesidir",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span> Felsefesi",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span> Sosyolojisi",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span> Psikolojisi"
+    }
+  },
+  {
+    "id": 21081,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 82,
+    "soru": "Aşağıdakilerden hangisi, ahlâk kavramını doğru tanımlar?",
+    "secenekler": {
+      "A": "Ortam",
+      "B": "Teyit etmek",
+      "C": "Yöneliş",
+      "D": "Davranış düzeni",
+      "E": "Muhtelif bağlam"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Ahlâk, davranış düzenidir. Her insan az veya çok bir düzen içerisinde hayatını sürdürdüğü, daha doğrusu sürdürmek zorunda olduğu için, ahlâk insan hayatının zorunlu bir boyutu, eskiden denildiği gibi “mütemmim cüzü” veya “tamamlayıcı parçası” dır. Doğru cevap D seçeneğidir.",
+    "soru_xray": "Aşağıdakilerden hangisi, <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> kavramını doğru tanımlar?"
+  },
+  {
+    "id": 21082,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 83,
+    "soru": "\"Ahlak insan hayatının mütemmim cüzüdür.\" cümlesinde \"mütemmim cüzü\" ile kast edilen aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Temel itkisi",
+      "B": "Yasaklayıcı boyutu",
+      "C": "Doğal sonucu",
+      "D": "En derin ruhsal boyutu",
+      "E": "Tamamlayıcı parçası"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Burada \"mütemmim cüzü\" \"tamamlayıcı parçası\" anlamındadır. Doğru cevap E şıkkıdır.",
+    "soru_xray": "\"<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> insan hayatının mütemmim cüzüdür.\" cümlesinde \"mütemmim cüzü\" ile kast edilen aşağıdakilerden hangisidir?"
+  },
+  {
+    "id": 21083,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 84,
+    "soru": "İnsanda iyilik cihetini anlamayı ve kabul etmeyi sağlayacak bir yatkınığın olması durumu aşağıdakilerden hangisi ile tanımlanır?",
+    "secenekler": {
+      "A": "Hakk",
+      "B": "İhtiyar",
+      "C": "Sahih iman",
+      "D": "Sevk eden",
+      "E": "Bizzat hayır"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "İnsanda iyilik cihetini anlamayı ve kabul etmeyi sağlayacak bir yatkınığın olması gerekir. Bu yatkınlığın adı \"İhtiyar\" dır. İhtiyâr hayrı, iyiyi, varlığa yakın olanı tercihe yatkınlık anlamına gelmektedir. Bu yatkınlık, insanda söylenen sözü, bir hitabı anlama konusunda önceden bulunan bir hazırlığa, hazır bulunan, ona verilmiş bir kabiliyete delalet etmektedir. Hüsn-i ihtiyar, insandaki bu yatkınlığın etkin olması, insanın kendisine ulaşan ilahi hidayet ile kendindeki hayır cihetini keşfetmesi anlamına gelmektedir. Doğru cevap B şıkkıdır."
+  },
+  {
+    "id": 21084,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 85,
+    "soru": "Aşağıdakilerden hangisi iyi ve kötü fiillerin neler olduğunu öğrendiğimiz kaynaklardan biri değildir?",
+    "secenekler": {
+      "A": "Hadis kitapları",
+      "B": "Fütüvvetname türü eserler",
+      "C": "Adab kitapları",
+      "D": "Ruznameler",
+      "E": "Menakib kitapları"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Ruznameler, iyi ve kötü fiillerin neler olduğunu öğrendiğimizi kaynaklardan biri değildir. ruznameler günlük anlamındadır."
+  },
+  {
+    "id": 21085,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 86,
+    "soru": "\"Hakiki din insanların uydurduğu birbirine muhalif hayali kurgular değil, hakiki Yaratıcıyı tanımak O'nun kanun ve emirlerine uygun davranmayı görev edinmektir\" diyen kimdir?",
+    "secenekler": {
+      "A": "Ahmed Naim",
+      "B": "Farabi",
+      "C": "Elmalılı Hamdi Yazır",
+      "D": "Nurettin Topçu",
+      "E": "Abdullah Draz"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Söz konusu sözü meşhur tefsir müellifi Elmalılı Hamdi Yazır söylemiştir."
+  },
+  {
+    "id": 21086,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 87,
+    "soru": "Dinin ahlak ile irtibatıyla ilgili genel olarak kaç tür anlayış gelişmiştir?",
+    "secenekler": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "iki anlayış gelişmiştir. 1. faziletlerin kazanılması ve faziletli olma olarak ahlak, 2. kurallı yaşama ve bu kurallara uygun davranma olarak ahlak.",
+    "soru_xray": "Dinin <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> ile irtibatıyla ilgili genel olarak kaç tür anlayış gelişmiştir?"
+  },
+  {
+    "id": 21087,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 88,
+    "soru": "“Nakil akla hareket alanı açmış, akıl da nakle etkin olma yollarını geliştirmiştir. Nakil ve aklı buluşturup telif eden ise, tevatür olmuştur” sözü hangi düşünüre aittir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "Elmalı",
+      "C": "Yunus",
+      "D": "Mevlana",
+      "E": "Arvasi"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Gazali’nin dediğine denk düşerek, nakil akla hareket alanı açmış, akıl da nakle etkin olma yollarını geliştirmiş. Nakil ve aklı buluşturup telif eden ise, tevatür olmuştur."
+  },
+  {
+    "id": 21088,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 89,
+    "soru": "Hz. Peygamber’in İslâm ahlâkındaki kaynak konumunu keşfedebilmek için hangi konuyu dikkate almak gerekir?",
+    "secenekler": {
+      "A": "Varlık kaynağı veya varoluş imkânı",
+      "B": "Olgu-değer ilişkisi meselesini",
+      "C": "Fiiller ve dile getirdiği ahlâki ilke ve kurallar",
+      "D": "Yeni bir varoluş imkanı",
+      "E": "Gerçek ve yaşanmış olan"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Hz. Peygamber’in İslâm ahlâkındaki kaynak konumunu keşfedebilmek için son zamanlarda ahlâk felsefesinde özellikle tartışılan bir konuyu, olgudeğer ilişkisi meselesini, dikkate almak ve bu çerçevede Hz. Peygamber’in bir fiili gerçekleştirmiş olmasının, nasıl olup ta, hangi gerekçelerle ahlâki bir ideali, yani olması gerekeni ifade edebildiğini açıklamak gerekmektedir."
+  },
+  {
+    "id": 21089,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 90,
+    "soru": "Ahlak ilmine ilişkin olarak rivayetlerin ve verilerin anlaşılması aşamasına ne denir?",
+    "secenekler": {
+      "A": "Tasnif",
+      "B": "Tafsil",
+      "C": "Tahsil",
+      "D": "Tedkik",
+      "E": "Tahkik"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Rivayetlerin ve verilerin anlaşılması aşamasına tahsil edilmesi denilmektedir.",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> ilmine ilişkin olarak rivayetlerin ve verilerin anlaşılması aşamasına ne denir?"
+  },
+  {
+    "id": 21090,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 91,
+    "soru": "Bütün ahlâk felsefelerinin temel sorusu aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İnsana faydacı bir yaşam koşulu sunma",
+      "B": "Geçmiş felsefi akımlar ile bağlarını koparma",
+      "C": "Gelecek ile ilgili tahminde bulunma",
+      "D": "İnsanlar arasında davranış düzenini mümkün kılan ilke",
+      "E": "Dinler arasındaki benzerlikleri bulma"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Her bir insanda insan olması bakımından belirli bir davranış düzeni içinde hayatını sürdürmesini sağlayan müşterek bir ilkenin olması gerektiği kabul edildiğinde, bu ilkenin tahakkuk edip etmediği ve nihayet, bu ilkenin hangi ilke olduğu sorusu ortaya çıkar. Hemen hemen bütün ahlâk felsefelerinin temel sorusu budur: İnsanlar arasında davranış düzenini mümkün kılan ilke nedir? Veya hangi ilke insanların hayatlarını belirli bir düzen içinde sürdürmesini mümkün, gerekli, hatta zorunlu kılmaktadır. Doğru cevap D'dır.",
+    "soru_xray": "Bütün <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> felsefelerinin temel sorusu aşağıdakilerden hangisidir?"
+  },
+  {
+    "id": 21091,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 92,
+    "soru": "İslam ahlakının (davranışların) temel kaynağı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Kuran",
+      "B": "Sünnet",
+      "C": "Sahabe hayatı",
+      "D": "Tasavvuf",
+      "E": "Hanefilik"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Bu davranış düzeninde sırasıyla Kur’an-ı Kerim, Hz. Peygamber’in uygulamaları ve sahabenin buna fiilî ve kavlî (sözlü) şahadetinin muhtelif cihetlerden kaynak değeri vardır. Bunun yanında bütün Müslümanların tarih boyunca bu kaynakların verili şartlarda nasıl uygulanacağı ve ne gibi neticeler ortaya çıkardığı hususunda gösterdiği gayret ve bu verileri hem nakil, hem tasnif hem de üst bir dil oluşturarak makul bir şekilde uygulama pratiğinin de, sonraki nesiller için kaynak değeri vardır."
+  },
+  {
+    "id": 21092,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 93,
+    "soru": "İnsanların iyi ya da kötü davranışları ilk olarak öğrendikleri birim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Aile",
+      "B": "Toplum",
+      "C": "Okul",
+      "D": "Üniversite",
+      "E": "Kişini kendi vicdanı"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "İnsanın doğumundan itibaren nasıl yetiştiğini ve elde ettiği bilgileri, -buna iyi ve kötü davranışların bilgisi de dahildir-, nasıl elde ettiğine bakacak olursak, insanın iyi ve kötü hakkındaki bilgilerini esas itibariyle naklen elde ettiğini fark ederiz. İnsan iyi ve kötü hakkındaki bilgilerini önce ailesinden sonra da ait olduğu toplumdan ve toplumsal eğitim kurumlarından elde eder. Ancak sadece burada kalmaz; öğrenirken ve öğrendikten sonra kendisi de elde ettiği bu malumat üzerinde düşünür ve bununla ilgili olarak kendi kanaatini ve tavrını geliştirir. Doğru cevap A'dır."
+  },
+  {
+    "id": 21093,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 94,
+    "soru": "\"havas-ı selime\" aşağıdakilerden hangisine karşılık gelmektedir?",
+    "secenekler": {
+      "A": "Selim akıl",
+      "B": "Güzel ahlak",
+      "C": "İdrak melekesi",
+      "D": "Beş duyu",
+      "E": "Düşünme yetisi"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "İnsanın sahip olduğu havas-ı selime (beş duyu) ile, bütün insanlarda müşterek olan bir cisim algısına sahip olması ve bu algı üzerinden diğerleri ile irtibatını ve iletişimini sağlayıp muhafaza etmesi gibi, doğruluk, insanların dokunulmazlığı, mülkiyete saygı gibi temel ahlâki kuralların da, insan topluluklarının devamı için ve devamı sebebiyle, ahlâki makuliyetin esasını teşkil ettiğini söyleyebiliriz. Doğru cevap D'dir.",
+    "secenekler_xray": {
+      "B": "Güzel <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span>"
+    }
+  },
+  {
+    "id": 21094,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 95,
+    "soru": "\"Rivayet (hadis) re'ysiz, re'y de rivayet olmadan olamaz\" diyen kimdir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "İbn Haldun",
+      "C": "Muhammed eş-Şeybani",
+      "D": "Farabi",
+      "E": "İbn Sina"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Bu söz Muhammed Eş-Şeybani'ye aittir."
+  },
+  {
+    "id": 21095,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 96,
+    "soru": "İslam ahlakının önemli eserlerinden olan İhya isimli eserin yazarı kimdir?",
+    "secenekler": {
+      "A": "Abdullah b. Mübarek",
+      "B": "Ahmed b. Hanbel",
+      "C": "Buhari",
+      "D": "Maverdi",
+      "E": "Gazali"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Gazali’nin \"Ihya\" isimli eseri Islâ m ahlâ kının ö nemli kaynaklarından biridir. Doğru cevap E'dir."
+  },
+  {
+    "id": 21096,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 97,
+    "soru": "Ahlâki konularda Kur’an-ı Kerim’in muhatabı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İnsan",
+      "B": "Melek",
+      "C": "Nebat",
+      "D": "Şeytan",
+      "E": "Hayvanlar"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm Ahlâkının Kaynakları",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "İnsan bir bütün olarak K. Kerim’in muhatabıdır. Bu, ahlâk söz konusu olduğunda, insanın bütün yönlerini talep eden K. Kerim’in talebinin sadece bir cihetini teşkil etmektedir."
+  },
+  {
+    "id": 21097,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 98,
+    "soru": "Tasavvufta hürriyet, felsefe ve kelamda ele alındığı şeklinden farklı olarak aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Araçtır",
+      "B": "Gayedir",
+      "C": "Hareket noktasıdır",
+      "D": "Bahsi söz konusu değildir",
+      "E": "Yok hükmündedir"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Tasavvufta hürriyet, felsefe ve kelamda ele alındığı şekliyle ahlâkın hareket noktası değil, gayesidir. Tasavvufi ahlâkta nefsin arzu ve isteklerine karşı verilmesi istenen mücadele insanın hürriyetiyle ilişkilendirilir. İnsanın ahlâki mükemmelliğe ulaşması ve Allah’a yakınlaşmasını önleyen bedeni ve dünyevi arzuların kurtulma mücadelesi aynı zamanda iradeyi hür kılma çabasıdır. İnsanın şuurunu meşgul eden, Allah’tan başka her şeyin hürriyeti kısıtladığını düşünen bazı büyük sufiler cennet nimetlerini arzulamayı bile gerçek hürriyete aykırı görmüşlerdir. Asıl hürriyet kulun üzerinde Allah’tan başka hiçbir şeyin etkili olmamasıdır. Gerçek hürriyet Allah’a tam kul olmaktır. Tasavvuftaki “fakr” makamı hürriyeti de ihtiva eder. Zira fakr, insanın hiçbir şeye sahip olmaması değil, hiçbir şeyin insana sahip olmamasıdır. Bu bakımdan hürriyet ahlâkın hareket noktası değil, gayesidir. Doğru cevap B'dir."
+  },
+  {
+    "id": 21098,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 99,
+    "soru": "Aşağıdakilerden hangisi insanın yaratılış sebebi de olan insanı bütün varlıklardan ayıran asıl özelliğidir?",
+    "secenekler": {
+      "A": "İyi ve kötüyü idrak gücüdür.",
+      "B": "Cismani ve ruhani gücüdür.",
+      "C": "Akıl ve hakikatları idrak gücüdür.",
+      "D": "Saf ve temiz olma gücüdür.",
+      "E": "Ruhani melekelerin gücüdür."
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "İnsan akıllı bir varlıktır. İnsanı bütün varlıklardan ayıran asıl özelliği onun yaratılış sebebi de olan aklı ve hakikatleri idrak gücüdür."
+  },
+  {
+    "id": 21099,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 100,
+    "soru": "Ahlâ k teorileri geliştiren dü şünü rler bazı temel soruları dikkate alarak gö rü şlerini ortaya koymuşlardır. Aşağıdakilerden hangisi sözü edilen temel sorulardan değildir?",
+    "secenekler": {
+      "A": "Iyi ve kö tü ﬁiller nelerdir?",
+      "B": "Bir ﬁili iyi veya kö tü yapan ö zellikler nelerdir?",
+      "C": "Hangi sebeplerden dolayı iyi davranışlar tercih edilir, kö tü davranışlardan da kaçınılır?",
+      "D": "Iyiyi gerçekleştirmek için insan ne yapmalıdır?",
+      "E": "İnsan ne ile yaşar?"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Ahlâ k teorileri geliştiren dü şünü rler şu temel soruları dikkate alarak gö rü şlerini ortaya koymuşlardır. 1. Insan nedir? 2. Iyi ve kö tü ﬁiller nelerdir? 3. Bir ﬁili iyi veya kö tü yapan ö zellikler nelerdir? 4. Hangi sebeplerden dolayı iyi davranışlar tercih edilir, kö tü davranışlardan da kaçınılır? 5. Iyiyi gerçekleştirmek için insan ne yapmalıdır? insan ne ile yaşar sorusu temel sorulardan değildir."
+  },
+  {
+    "id": 21100,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 101,
+    "soru": "Ahlaki fitleri kendinden iyi ve kötü olanlar ve bir ihtiyaca, duruma, başlangıç veya sonuca göre iyi veya kötü olanlar diye ikiye ayıran kimdir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "Farabi",
+      "C": "Maturidi",
+      "D": "İbn sina",
+      "E": "Eş'ari"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Söz konusu görüşün sahibi Maturidi'dir."
+  },
+  {
+    "id": 21101,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 102,
+    "soru": "Filozoflara göre hakikatin nihai belirleyicisi kim veya nedir?",
+    "secenekler": {
+      "A": "İyilik",
+      "B": "Akıl",
+      "C": "İnsan fiilleri",
+      "D": "Tanrı",
+      "E": "Kader"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Filozoflara göre hakikatin nihai belirleyicisi akıldır."
+  },
+  {
+    "id": 21102,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 103,
+    "soru": "Maturidi’nin ahlâk teorisinde ahlâki fiiller kaç kısma ayrılır?",
+    "secenekler": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Maturidi’nin ahlâk teorisinde ahlâki fiiller ikiye ayrılır: 1. kendinde iyi veya kötü olanlar; 2. bir ihtiyaca, duruma, başlangıç ya da sonuca göre iyi veya kötü olanlar.",
+    "soru_xray": "Maturidi’nin <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> teorisinde ahlâki fiiller kaç kısma ayrılır?"
+  },
+  {
+    "id": 21103,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 104,
+    "soru": "Hangisi nefs' in çeşitli seviyelerde güçlerinden değildir?",
+    "secenekler": {
+      "A": "Bitkisel seviyede beslenme",
+      "B": "Büyüme ve üreme güçleri",
+      "C": "Hayvani seviyede hareket etme",
+      "D": "İdrak güçleri",
+      "E": "Hikmet"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "İslâm felsefesinde de insan, nefis ve bedenden oluşan bir varlıktır. Asıl olan nefs olup bunun da çeşitli seviyelerde güçleri vardır. Bunlar bitkisel seviyede beslenme, büyüme ve üreme güçleri; hayvani seviyede hareket etme ve idrak güçleri; insani seviyede de düşünme ve bilme güçleridir. Bu güçler arasında hiyerarşik bir düzen mevcut olup bir alttaki üsttekine hizmet eder. Düşünme ve bilme gücü başlangıçta bir kabiliyet olup, bir takım basamaklardan geçtikten sonra kendisi için mümkün olan en yüksek dereceye ulaşır."
+  },
+  {
+    "id": 21104,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 105,
+    "soru": "“Ahlâk nedir” sorusundan önce aranan soru nedir?",
+    "secenekler": {
+      "A": "Doğa nedir?",
+      "B": "Evren nedir?",
+      "C": "Allah nedir?",
+      "D": "İnsan nedir?",
+      "E": "Akıl nedir?"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Çoğu Müslüman düşünürün yaptığı gibi felsefede de “ahlâk nedir” sorusundan önce “insan nedir” sorusuna cevap aranır.",
+    "soru_xray": "“<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span> nedir” sorusundan önce aranan soru nedir?"
+  },
+  {
+    "id": 21105,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 106,
+    "soru": "Nasslarda günah veya kötülük olarak ifade edilen terim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Salihat",
+      "B": "Hayır",
+      "C": "Seyyiat",
+      "D": "Kıst",
+      "E": "Birr"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Nasslarda “doğru” ve “yanlış” için pek çok terim kullanılır: hayır, birr, kıst, iksat, adl, hakk, ma’rûf ve takva. Doğru fiiller genelde “salihat”; yanlış ve günah fiiller de seyyiat olarak isimlendirilir. Seyyiat ise günah ve kötülük terimiyle ifade edilir. Doğru cevap C'dir."
+  },
+  {
+    "id": 21106,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 107,
+    "soru": "Maturudi mezhebi ahlaki değerler konusunda aşağıdaki mezheplerden hangisine daha yakındır?",
+    "secenekler": {
+      "A": "Kalenderi",
+      "B": "Cebriye",
+      "C": "Caferi",
+      "D": "Eş'ari",
+      "E": "Mu'tezile"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Ehl-i Sünnet’in itikadi mezheplerinden ikincisini teşkil eden Maturidiyye’nin kurucusu Ebu Mansur el-Maturidi gerek Mu’tezili gerekse Eş’arî ahlâk teorilerinin yüz yüze kaldığı problemlere karşılık getirdiği izah tarzı ile kendine has orijinal bir ahlâk teorisi geliştirmiştir. Maturidi, ahlâki sorumluluk ve yükümlülüğün temellendirilmesinde Eş’ari’ye, ahlâki değerler konusunda da Mu’tezile’ye yakın görünür. Doğru cevap E'dir."
+  },
+  {
+    "id": 21107,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 108,
+    "soru": "I. Allah'ın sıfatlarının insanda görünmesi II. Allah'ın isimlerinin insanda görünmesi III. İnsanın iradeli bir varlık olması Yukarıdakilerden hangisi insanın Allah'ın halifesi olduğu savını destekleyen ifadeler arasında yer alır?",
+    "secenekler": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "I, II",
+      "E": "I, II, III"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Cenab-ı Hakk’ın güzel isimleri vardır. Bu güzel isimler bütün mevcudatta, her türde bir cihetten ta’ayyün ederken, insan türünde bir bütün olarak ancak sonsuz ve sınırsızın, “Mutlak olanın mukayyedde (sınırlı olanda) taayyünü (tikel bir varlık şeklinde ortaya çıkması)” olarak taayyün eder. Bu taayyüne, yani Allah’ın isim ve sıfatlarının insanda görünür hale gelmesi, insanın yer yüzündeki ve diğer varlıklar içindeki konumunu belirler. Bu konuma kısaca “hilafet” denilir ki, insan türü bu cihetten Allah’ın yeryüzündeki halifesidir. İnsanın halife olmasının en önemli ön şartı, insandaki irade ve ihtiyardır. Cenab-ı Hakk mutlak anlamı ile irade sahibidir; O’nun iradesine küllî veya mutlak irade denir. Doğru cevap E'dır."
+  },
+  {
+    "id": 21108,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 109,
+    "soru": "\"İnsan, varlıkların en şereflisidir; eşref-i mahlûkattır\" ifadesinin dayandığı temel aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Dini bir yaşantısının olması",
+      "B": "Allah'ın isim ve sıfatlarının onda tecelli etmesi",
+      "C": "Dünya düzeninde yön veren ana etken olması",
+      "D": "Öldükten sonra diriltilecek olması",
+      "E": "Dini ve kültürü nesilden nesile aktarması"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "İnsan Allah’ın isim ve sıfatlarının tecelligahıdır. İnsanın hayatında Cenab-ı Hakk’ın isimleri ve sıfatları tecelli eder. Bu sebeple de insan, varlıkların en şereflisidir; eşref-i mahlûkattır. İnsan yine bu sebeple, kendi başına, kendinde değerlidir; varlık, her şey, onda ve onunla anlamını bulur. İnsanda en değerli olan, Hakk’ın nazargâhı olan kalbidir. Doğru B'dir"
+  },
+  {
+    "id": 21109,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 110,
+    "soru": "\"İnsanın hangi fiili yapacağına ve neyi tercih edeceğine kendisinin karar verebilmesi imkânı\" tanımı aşağıdakilerden hangisi ile daha yakından ilgilidir?",
+    "secenekler": {
+      "A": "İnsanın yeryüzündeki halife olması",
+      "B": "Eşref-i mahlûkat",
+      "C": "İrade özgürlüğü",
+      "D": "Ahiret İnancı",
+      "E": "Kader İnancı"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "İnsanın hür olması, irade özgürlüğü olarak ifade edilir. İrade özgürlüğü, genel olarak, insanın hangi fiili yapacağına ve neyi tercih edeceğine kendisinin karar verebilmesi imkânı olarak tanımlanabilir. İnsan, diğer canlılardan farklı olarak, neyi yapıp neyi yapmayacağına kendisi karar verebilir; bu imkân insanın insan olmasının ön şartıdır. Doğru cevap C'dir."
+  },
+  {
+    "id": 21110,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 111,
+    "soru": "Muhtaç bir varlık olan insanın ihtiyaçları dikkate alındığında aşağıdakilerden hangisi farklı bir kategoride ele alınabilir?",
+    "secenekler": {
+      "A": "Sağlıklı bir beden",
+      "B": "İnsani bir çevre",
+      "C": "Zihin sağlığı",
+      "D": "Allah'ın hidayeti",
+      "E": "Yaşamı öğreneceği bir çevre"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "İnsanın muhtaç bir varlık olmasını, doğumundan itibaren hayatını takip ederek daha yakından görebiliriz. İnsan doğduğu andan itibaren nefes almaya, gıdaya ve korunmaya, elbise ve konuta muhtaçtır. Bunların yanında kendisini himaye edecek insanlara, kendisine dili öğretecek, daha doğrusu bütün boyutları ve içeriği ile yaşamayı öğretecek insanlara muhtaçtır. Anne baba, akrabalar, komşular, toplumdaki bütün kurumlar ve bu kurumların işlerken tabi olduğu kurallar, her bir insanın ihtiyaçları arasında bulunmaktadır. Aslında insanın ihtiyaçları oldukça fazladır. Bunların hepsini saymak neredeyse mümkün değildir. Kısaca insanın bir bedene, bedenin canlılığını muhafaza edebileceği fiziki bir çevreye, kendisini sıradan bir canlı olmaktan çıkarıp insan olarak yetiştirecek insani bir çevreye ihtiyacı vardır. İnsan bunlar olmadan varlığını sürdüremez. Ancak insanın bütün bunların ötesinde, kendisini ve bütün bu karşılıkları ile birlikte ihtiyaçlarını da yaratan Cenab-ı Hakk’ın bütün bunları mümkün kıldığının farkında olmaya da ihtiyacı vardır. Bunun da ötesinde her şeyin yaratıcısı ve yöneticisi olan Cenab-ı Hakk’ın hidayetine de ihtiyacı vardır. Bu ihtiyaç özellikle insanın verili şartların ötesine geçip, kendisinde bulunan ihtiyarı, yani hayırlı olana yatkınlığı, daha da güçlendirip geliştirmek ve kendi varoluşunu mükemmelleştirmesi cihetinde ortaya çıkmaktadır. Doğru cevap D'dir."
+  },
+  {
+    "id": 21111,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 112,
+    "soru": "Aşağıdakilerden hangisi insanların kendisine put edinerek ona tapınması, insanları haksız yere öldürmesi ile irtibatlı olarak büyük ve küçük günah işlemesine verilen isimdir?",
+    "secenekler": {
+      "A": "Zulüm",
+      "B": "İbret",
+      "C": "Nefis",
+      "D": "Azap emri",
+      "E": "Seyr ü süluk"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Kur’an-ı Kerim’deki pek çok ayet-i kerimede nefse zulüm, insanların büyük ve küçük günah işlemesi ile irtibatlı olarak kullanılmıştır."
+  },
+  {
+    "id": 21112,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 113,
+    "soru": "İslam ahlakında vazifeye dair verilen ifadelerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Dışarıdan insana yüklenen bir mecburiyettir.",
+      "B": "İnsanda bulunan hayr hissinin etkinleşmesidir.",
+      "C": "İnsanın kendisini gerçekleştirmesi yönünde bir görev üstlenmesidir.",
+      "D": "Hürriyet vazifeyi nefy etmez.",
+      "E": "Vazife hürriyeti nefy etmez."
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Islâ m ahlâ kında vazife çok ö nemlidir. Ancak vazife dışarıdan insana yü klenen bir “mecburiyet” değ il, insanın kendisinde bulunan hayr hissinin etkinleşmesi ve insanın kendisini gerçekleştirmesi yö nü nde bir gö rev ü stlenmesidir. Ç ünkü hü rriyet, Mü slü man olmanın, daha doğ rusu insanın gerçekleştirdiğ i ﬁillerin ahlâ ki değ er taşıması ve sorumluluğ u için zorunludur. Islâ m ahlâ kında vazife, hü rriyeti nefy etmeden (olumsuzlamadan), hü rriyet de vazifeyi nefy etmeden muhafaza edilmiştir. Amaç vazifeyi kendi iradesiyle, ö zgü r iradesiyle ü stlenen insanların yetişmesidir. Klasik ahlâ k eserlerinin amacı, sadece iyi ve kö tü hakkında malumat vermek değ il, iyi ve kö tü nü n bilgisini insanlara ulaştırarak, insanların kendi iradeleri ile iyi davranışları gerçekleştirmeleri ve kö tü davranışlardan da uzak durmalarına yardımcı olmak, insanları ahlâ ki cihetten yetiştirmek, onların ahlâ kını gü zelleştirmektir. Buna göre doğru cevap A'dır."
+  },
+  {
+    "id": 21113,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 114,
+    "soru": "Ahlaki varlık olarak insanın mü temmim cü zü nedir?",
+    "secenekler": {
+      "A": "Vazife",
+      "B": "Hilafet",
+      "C": "Hürriyet",
+      "D": "Sorumluluk",
+      "E": "Yaptırım"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Hü rriyet Islâ m ahlâ kının, daha doğ rusu ahlâ ki varlık olarak insanın mü temmim cü zü dü r (mü temmim cü z=bü tü nü oluşturan tamamlayıcı parça). Ozgü rlü k, ilk bakışta, insanın istediğ ini tercih edebilmesi ve yapabilmesi imkâ nıdır. Bu imkâ n insanın istemesini tanımlayan şartlar içinde ortaya çıktığ ı için, hep verili şartlar içinde tahakkuk eder. Doğru cevap C'dir."
+  },
+  {
+    "id": 21114,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 115,
+    "soru": "Halifetutullah fi'l-arz kimdir?",
+    "secenekler": {
+      "A": "Melek",
+      "B": "Cin",
+      "C": "Şeytan",
+      "D": "İnsan",
+      "E": "Hz. Muhammed"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Allah'ın yeryüzündeki halifesi anlamına gelen Halifetullah fi'l-arz kelimesi insana izafe edilir."
+  },
+  {
+    "id": 21115,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 116,
+    "soru": "I. İnsan kendi kendine zulmedebilir II. Allah da kullarına zulmedebilir III. İnsan yanılabilir bir varlıktır IV. İnsan başkalarına da zulmeder bu ifadelerden hangisi veya hangileri yanlıştır?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Allah'ın kullarına zulmetmesi mevzu bahis olamaz. nitekim bir hadis-i kutside allah zulmü kendi zatına haram kılmıştır."
+  },
+  {
+    "id": 21116,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 117,
+    "soru": "İyi ve kötü anlamına gelen sözcükleri ikişerli grup haline getirirsek hangisi açıkta kalır?",
+    "secenekler": {
+      "A": "birr",
+      "B": "münker",
+      "C": "nefs",
+      "D": "ism",
+      "E": "maruf"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "bu durumda nefs sözcüğü açıkta kalır."
+  },
+  {
+    "id": 21117,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 118,
+    "soru": "\"Kur’â n’ın anlam bü tü nlü ğ ü nde iman (inanç-varlık) kavramı, ‘__________, ve _____________ kavramları birbirine bağ lıdır.\" Boşluklara gelmesi gereken ifadeler hangileridir?",
+    "secenekler": {
+      "A": "ibadet / salih amel",
+      "B": "fazilet / vicdan",
+      "C": "adalet / fazilet",
+      "D": "iffet / bilgelik",
+      "E": "ilm / salih amel"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Islâ m dü şüncesi dindarlık ile ahlak arasındaki irtibatı keşfederken, varlık- bilgi-değ er dü zlemlerinde son derece tutarlı ve dayanıklı algılama biçimi ortaya koymuştur. Bir başka ifadeyle Kur’â n’ın anlam bü tü nlü ğünde iman (inanç-varlık) kavramı, ‘ilm (bilgi), ve salih amel (ahlâ k-eylem) kavramları ö ylesine birbirine bağ lıdır ki, bunlar birbirini hem besleyen hem de gerektiren boyutlardır. Oyle ki bu dü şünce modunda bilgi (‘ilm), hikmet, adalet ve hakikati içinde barındıran, çok katmanlı bir kavramdır. Bu çerçevede adaletin bilgi ile ilişkisi şu şekilde ifade edilebilir: Insanın yaratıklar aleminde doğ ru ve bu yü zden uygun yerini ve yaratıcısı ile olan doğ ru irtibatını bilmesi adalettir. Adalet, insanın kâ inattaki konumu ile ilgili bilgisinden kopuk değ ildir.",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.\n💡 Sınav Şifresi: Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 4 • Dört Temel Fazilet (Erdem)\" onclick=\"showVocabBubble(this, event)\">iffet</span> / bilgelik"
+    }
+  },
+  {
+    "id": 21118,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 119,
+    "soru": "I. Ölçülü olmak II. Kanaat III. Sebat IV. Tevazu V. Fedakarlık VI. Tevekkül Yukarıdakilerden hangileri cesaret erdeminin kapsamına giren erdemlerdendir?",
+    "secenekler": {
+      "A": "I,V,VI",
+      "B": "I,III,IV",
+      "C": "II,III,VI",
+      "D": "III,IV,V",
+      "E": "I,II,V,VI"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Cesaret erdeminin kapsamına giren erdemler: 1. Olgun nefs 2. Olayları cesur karşılama 3. Yü ksek gayret 4. Sebat 5. Yumuşak huyluluk 6. Olçülü olmak 7. Yü reklilik 8. Dayanıklılık,katlanmak 9. Tevazu 10. Onur duygusu 11. Yufka yü reklilik (Rikkat) Buna göre doğru cevap B'dir.",
+    "soru_xray": "I. Ölçülü olmak II. Kanaat III. Sebat IV. <span class=\"vocab-word concept-word\" data-tr=\"Alçak gönüllü olmak, hakkı kabul etmek ve insanlara karşı kibir ve üstünlük taslamamaktır.\n💡 Sınav Şifresi: Alçak gönüllülük = Tevâzu (Zıttı: Kibir).\" data-note=\"İSLAM AHLAK ESASLARI Ünite 5 • Tevâzu\" onclick=\"showVocabBubble(this, event)\">Tevazu</span> V. Fedakarlık VI. Tevekkül Yukarıdakilerden hangileri cesaret erdeminin kapsamına giren erdemlerdendir?"
+  },
+  {
+    "id": 21119,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 120,
+    "soru": "Aşağıdaki durumlardan hangisinde uyuyan bir vicdandan söz edilebilir?",
+    "secenekler": {
+      "A": "İyi ve kötü arasındaki çizginin ayrımı kesinleşmesi",
+      "B": "İyi ve kötü arasındaki çizginin kaybolmaya başlaması",
+      "C": "Fazilet, rezilet ve vicdan üçgenini iyi belirliyorsa",
+      "D": "Bir insanın, iyilik yaptığında sevinç, kötülük yaptığında üzüntü duyabilmesi",
+      "E": "Bir insanın nefsini temiz tutabilmesi"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "İyilik ve kötülüğü kişinin vicdanında meydana getirdiği etkiye göre tayin etmiştir. Hz. Muhammed, “bir insan, iyilik yaptığında sevinç, kötülük yaptığında üzüntü duyabiliyorsa, artık o gerçekten mü’mindir” diyerek, hakîkî insan alametlerini de söylemiştir. İyi ve kötü arasındaki çizginin ayrımı kesinleştikçe, uyanık bir vicdandan; buradaki ayrım kaybolmaya başladıkça, hatta neyin iyi olduğu konusunda kesin bir fikir oluşturulamıyorsa, uyuyan bir vicdandan söz edilebilir. Doğru cevap B'dir."
+  },
+  {
+    "id": 21120,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 121,
+    "soru": "İslâm filozoflarından İbn Rüşd’e göre, adalet erdemi aşağıdaki erdemlerden hangisinin toplumda gerçekleşmesinin teminatı sayılmaz?",
+    "secenekler": {
+      "A": "Yiğitlik",
+      "B": "Cömertlik",
+      "C": "Ölçülülük",
+      "D": "Bilgelik",
+      "E": "Cesaret"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
+    "alt_konu": "Ünite 5",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "İslâm filozoflarından İbn Rüşd’e göre, adalet erdemi, bilgelik, yiğitlik ve ölçülülükten (iffet) ve cömertlikten oluşan diğer dört erdemin toplumda gerçekleşmesinin teminatıdır. Ona göre, ahlâk ile hukuk arasında zorunlu bir bağlantı vardır. Doğru cevap E dir."
+  },
+  {
+    "id": 21121,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 122,
+    "soru": "Yusuf Has Hâcib hikâyesinde saadeti temsil eden veziri neye benzetiyor?",
+    "secenekler": {
+      "A": "Güneş",
+      "B": "Yıldız",
+      "C": "Uzay",
+      "D": "Ay",
+      "E": "Rüzgar"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Doğruluğu” temsil eden hükümdar Gün Doğdu devamlı parlaklığı ve herkesi aydınlatmasından dolayı güneşe benzetilir. “Saadeti” temsil eden vezir ise aya benzetilir. Doğru cevap D'dir."
+  },
+  {
+    "id": 21122,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 123,
+    "soru": "\"El ahlak ve's-siyer fi mudavati'n-nufus\" adlı eser kime aittir?",
+    "secenekler": {
+      "A": "Kinalızade Ali",
+      "B": "Nasiruddin et-Tusi",
+      "C": "İbn Hazm",
+      "D": "Farabi",
+      "E": "İbn Sina"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Söz konusu Ahlak kitabı İbn Hazm'a aittir.",
+    "soru_xray": "\"El <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> ve's-siyer fi mudavati'n-nufus\" adlı eser kime aittir?"
+  },
+  {
+    "id": 21123,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 124,
+    "soru": "Aşağıdakilerden hangisi Kur’an’da güzel ahlâk veya fazilet için kullanılan kavramlardan değildir?",
+    "secenekler": {
+      "A": "Fıtrat",
+      "B": "Hasene",
+      "C": "Hidâyet",
+      "D": "Sıdk",
+      "E": "İhsan"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
+    "alt_konu": "Ünite 5",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Kur’an’da güzel ahlâk veya fazilet için hasene, hidâyet, sıdk, amel-i salih ve ihsan gibi pek çok kavramın kullanıldığı dikkati çekmektedir.",
+    "soru_xray": "Aşağıdakilerden hangisi Kur’an’da güzel <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> veya fazilet için kullanılan kavramlardan değildir?"
+  },
+  {
+    "id": 21124,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 125,
+    "soru": "Kur’anda, sevginin imanla aynı anlamda kullanıldığı sure aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Yasin",
+      "B": "Rahman",
+      "C": "Meryem",
+      "D": "Bakara",
+      "E": "Fussilet"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Sözünü ettiğimiz iman ve güvenin diğer adı sevgidir. Bir başka ifadeyle inanmak, sevmektir. Zaten sağlıklı bir kişi olabilmenin en iyi göstergelerinden biri üretmek (ekip- biçmek) ve toprağın yeşerteceğine güven yani sevgidir. Bunun için Kur’an, sevgiyi imanla aynı anlamda kullanmıştır (Meryem/19: 96): “İman edip iyi davranışlarda bulunanlara gelince, onlar için çok merhametli olan Allah, (gönüllerde) bir sevgi yaratacaktır.”"
+  },
+  {
+    "id": 21125,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 126,
+    "soru": "Insanların birbirleri ile olan irtibatlarını, bağımlılıklarını fark ederek, bunu şuurlu bir bağ haline getirmelerini ifade eden terim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ülfet",
+      "B": "Şakî",
+      "C": "Ünsiyet",
+      "D": "Nefsâniyye",
+      "E": "Tevekkül"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Ünsiyet alışkanlıktan öte, insanların birbirleri ile olan irtibatlarını, bağımlılıklarını fark ederek, bunu şuurlu bir bağ haline getirmelerini ifade eder. İnsanlar arasındaki ünsiyetin ortaya çıkması, nefretin tam zıddıdır; insan tabiatında olanın, ona uygun bir şekilde ve onu güçlendirerek etkin olmasıdır."
+  },
+  {
+    "id": 21126,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 127,
+    "soru": "Aşağıdakilerden hangisi Kur'an'da güzel ahlak için kullanılan ifadelerden biri değildir?",
+    "secenekler": {
+      "A": "Hasene",
+      "B": "Sıdk",
+      "C": "Amel-i salih",
+      "D": "İhsan",
+      "E": "Ülfet"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Kur’an’da gü zel ahlâ k veya fazilet için hasene, hidâ yet, sıdk, amel-i salih ve ihsan gibi pek çok kavramın kullanıldığ ı dikkati çekmektedir. Ulfet, uzlaşma,kaynaşma demektir. Doğru cevap E'dir.",
+    "soru_xray": "Aşağıdakilerden hangisi Kur'an'da güzel <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlak</span> için kullanılan ifadelerden biri değildir?"
+  },
+  {
+    "id": 21127,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 128,
+    "soru": "Hz. Peygamber’in gerçekleştirdiği fiillerin (=olan, olgu), diğer insanlar için olması gerekeni (=değer) teşkil ettiğini anlaşılır bir şekilde ortaya koymamız neyi ifade eder?",
+    "secenekler": {
+      "A": "Soy-değer ilişkisini",
+      "B": "Olgu-soy ilişkisini",
+      "C": "Amaç-sonuç ilişkisini",
+      "D": "Olgu-değer ilişkisini",
+      "E": "Neden-sonuç ilişkisini"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Bu çerçevede bizim olgu-değer ilişkisini ele almamız ve nasıl olup ta Hz. Peygamber’in gerçekleştirdiği fiillerin (=olan, olgu), diğer insanlar için olması gerekeni (=değer) teşkil ettiğini anlaşılır bir şekilde ortaya koymamız gerekmektedir."
+  },
+  {
+    "id": 21128,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 129,
+    "soru": "Bir ibadeti veya fiili yaparken estetik zevk tarafını da dikkate almaya ne denir?",
+    "secenekler": {
+      "A": "Ahlâk",
+      "B": "Etik",
+      "C": "Âdâbıyla yapmak",
+      "D": "Ahlâk İlmi",
+      "E": "İhtiyar"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Bir ibadeti veya fiili yaparken estetik zevk tarafını da dikkate almaya, o fiili “âdâbıyla yapmak” denir.",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlâk</span> İlmi"
+    }
+  },
+  {
+    "id": 21129,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 130,
+    "soru": "\"Bir insanın ahlâkı, onun hayat düzenidir; kendi hayatında etkin olan ilke ve kurallardır\" ifadesinden hareketle aşağıdakilerden hangisine varılabilir?",
+    "secenekler": {
+      "A": "Ahlak teorik bilgiler bütünüdür",
+      "B": "Ahlakın temelinde teslimiyet vardır",
+      "C": "Ahlak toplumlara göre farklılaşabilir",
+      "D": "Ahlak zaruri durumlarda esnetilebilir",
+      "E": "Ahlak pratik bilgiler bütünüdür"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Ahlâk kendinde teorik (nazari) değil pratiktir (amelidir). Bir insanın ahlâkı, onun hayat düzenidir; kendi hayatında etkin olan ilke ve kurallardır. Ahlâk, hakiki manası ile insanların hayatlarındadır; kitaplarda değil. Ahlâki ilke ve kuralları anlatan bir kitap, “ahlâk” değil, “ahlâk hakkında” kitaptır. O kitapta anlatılan ilke ve kurallar, bir insan tarafından üstlenildiğinde, o insanın ahlâkı olur. Doğru cevap E'dir.",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> teorik bilgiler bütünüdür",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> toplumlara göre farklılaşabilir",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> zaruri durumlarda esnetilebilir",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> pratik bilgiler bütünüdür"
+    }
+  },
+  {
+    "id": 21130,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 131,
+    "soru": "\"Hz. Peygamber'in hayatı müslümanlara güzel örnek olmuştur\" Yukarıdaki cümlede \"güzel örnek\" yerine aşağıdakilerden hangisi kullanılabilir?",
+    "secenekler": {
+      "A": "Bid'at",
+      "B": "Ashab",
+      "C": "Aşere-i Mübeşşere",
+      "D": "Usve hasene",
+      "E": "Sırat-ı Müstekim"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "\"Usve hasene\" güzel örnek anlamındadır. Doğru cevap D şıkkıdır."
+  },
+  {
+    "id": 21131,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 132,
+    "soru": "İnsanın halife olmasının en önemli ön şartı nedir?",
+    "secenekler": {
+      "A": "Ahlaki bir varlık olması",
+      "B": "Aklını kullanabilmesi",
+      "C": "Eşref-i mahlukat olması",
+      "D": "Ahlaki otonomiye sahip olması",
+      "E": "Sahip olduğu irade ve ihtiyar"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Insanın halife olmasının en ö nemli ö n şartı, insandaki irade ve ihtiyardır. Cenab-ı Hakk mutlak anlamı ile irade sahibidir; O’nun iradesine kü llı ̂ veya mutlak irade denir. Buna karşılık insanın iradesi mutlak değ ildir; insan sü rekli verili şartlarda ve alternatiﬂer arasından tercih imkanına sahiptir ki, bu onun iradesinin mutlak olmadığ ını, sahip olduğ u imkanlarla sınırlı olduğ unu gö stermektedir. Doğru cevap E'dir."
+  },
+  {
+    "id": 21132,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 133,
+    "soru": "İnsanın hangi ﬁili yapacağ ına ve neyi tercih edeceğ ine kendisinin karar vermesine ne denir?",
+    "secenekler": {
+      "A": "İrade özgürlüğü",
+      "B": "Vazife",
+      "C": "Sorumluluk",
+      "D": "Yaptırım",
+      "E": "Nefse zulüm"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Insanın hü r olması, irade ö zgü rlü ğü olarak ifade edilir. Irade ö zgü rlü ğü, genel olarak, insanın hangi ﬁili yapacağ ına ve neyi tercih edeceğ ine kendisinin karar verebilmesi imkanı olarak tanımlanabilir. Insan, diğ er canlılardan farklı olarak, neyi yapıp neyi yapmayacağ ına kendisi karar verebilir; bu imkan insanın insan olmasının ö n şartıdır. Doğru cevap A'dır."
+  },
+  {
+    "id": 21133,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 134,
+    "soru": "Aşağıdakilerden hangisi adalet erdemine dahil olan erdemlerden biri değildir?",
+    "secenekler": {
+      "A": "İbadet",
+      "B": "Sadakat",
+      "C": "Vefa",
+      "D": "Ülfet",
+      "E": "Vakar"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Adalet erdemine dahil olan erdemler: a) Sadakat b) Ulfet(uzlaşma,kaynaşma) c) Vefa d) Ş efkat e) Yakınlarıyla ilgilenmek, f) Mü kâ fat g) Mü şterek işlerde insaf ve itidal ü zerine davranmak h) Herkese karşı dü rü st davranmak i) Yakın ve dostlarının sevgisini kazanmak j) Teslim (her şeyi ile ilâ hı ̂ iradeye dayanmak) k) Tevekkü l l) Ibadet Buna göre doğru cevap E'dir."
+  },
+  {
+    "id": 21134,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 135,
+    "soru": "\"Yusuf Has Hacip'in Kutadgu Bilig adlı eserinde _______ - ________ ve _______ ilişkisi öne çıkmaktadır.\" Boşluklara gelmesi gereken ifadeler hangileridir?",
+    "secenekler": {
+      "A": "mutluluk-erdem-bilgi",
+      "B": "mutluluk-adalet-bilgi",
+      "C": "erdem-adalet-kanaat",
+      "D": "akıl-sabır-saadet",
+      "E": "mutluluk-tevazu-kanaat"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Erdemlerin amacı saadeti yakalamaktır. Bir başka ifadeyle erdemler mutluluğ a ulaştırmada araçlardır. Ahlâ k ve hukukun hedeﬁ de budur. Hatta siyaset bilimi de bu gayeye hizmet eder. Erdemli bir toplum, dahası erdemli bir hü kü mdarı Islâ m ahlâ kı ekseninde yorumlayan Yusuf Has Hacib’in Kutadgu Bilig (Mutluluk Bilgisi) isimli eseri konumuzun bir tü r tatbiki yö nü nü temsil edeceğ i için, bu bağ lamda onun dü şüncesini somut ö rnek olması bakımından alabiliriz. Mutluluk Bilgisi’nde mutluluk-erdem ve bilgi ilişkisi ö ne çıkmaktadır. Doğru cevap A'dır.",
+    "secenekler_xray": {
+      "E": "mutluluk-<span class=\"vocab-word concept-word\" data-tr=\"Alçak gönüllü olmak, hakkı kabul etmek ve insanlara karşı kibir ve üstünlük taslamamaktır.\n💡 Sınav Şifresi: Alçak gönüllülük = Tevâzu (Zıttı: Kibir).\" data-note=\"İSLAM AHLAK ESASLARI Ünite 5 • Tevâzu\" onclick=\"showVocabBubble(this, event)\">tevazu</span>-kanaat"
+    }
+  },
+  {
+    "id": 21135,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 136,
+    "soru": "Aşağıdakilerden hangisi meşru bir davranış değildir?",
+    "secenekler": {
+      "A": "başkalarının malını izinsiz almak",
+      "B": "nimetlerden istifade etmek",
+      "C": "herkes için yararlı olanı tercih etmek",
+      "D": "nimetlerin tadını çıkarmak",
+      "E": "ahlaki kuralları kayıtsız şartsız uygulamak"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "başkalarının malını izinsiz almak meşru bir davranış değildir."
+  },
+  {
+    "id": 21136,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 137,
+    "soru": "Müslüman filozoflarca felsefeye genelde verilen ad hangisidir?",
+    "secenekler": {
+      "A": "Nazariyat",
+      "B": "Cedel",
+      "C": "Hikmet",
+      "D": "Cebir",
+      "E": "Akliyat"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm Ahlâk Teorileri",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Müslüman filozoflar felsefeye hikmet ismi vermişlerdir"
+  },
+  {
+    "id": 21137,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 138,
+    "soru": "İslam dininde rivayetlerin ve verilerin anlaşılması aşamasına verilen isim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Tasnif",
+      "B": "Tahsil",
+      "C": "Tedkik",
+      "D": "Tahkik",
+      "E": "Tahkir"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Rivayetlerin ve verilerin anlaşılması aşamasına tahsil edilmesi denilmektedir."
+  },
+  {
+    "id": 21138,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 139,
+    "soru": "Ahlak ilminde verilerin ve rivayetlerin anlaşılması aşamasına ne denir?",
+    "secenekler": {
+      "A": "Tasnif",
+      "B": "Tafsil",
+      "C": "Tahsil",
+      "D": "Tedkik",
+      "E": "Tahkik"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Ahlak ilminin vazifesi uygulamaya refakat ederken ortaya çıkan imkanları kullanarak, yeni durumları değ erlendirme, yeni bir durumda hangi kuralların etkin olacağ ı ve bu kuralların nasıl uygulanacağ ını belirleme noktasında ortaya çıkmaktadır. Bunu klasik dil şu şekilde ifade etmektedir: Bü tü n bu rivayetler ve veriler belirli kriterler çerçevesinde ö nce tasnif edilir, sonra bunlar belirli bir dü zen içerisinde, fasıllara ayrılarak tafsil edilir; ancak bu ilim olmak için yetmez; bunun için bü tü n bu verilerin ve rivayetlerin anlaşılması da gerekmektedir. Rivayetlerin ve verilerin anlaşılması aşamasına tahsil edilmesi denilmektedir. Ve nihayet anlaşılmış olan rivayet ve veriler mevcut durum dikkate alınarak, ortaya çıkan sorunları kavramak ve çözmek için kullanılır. Bunun yapılabilmesi için bunların bu cihetten ele alınması ve tedkik edilmesi gerekmektedir. Bü tü n bu aşamalar belirli bir yö ntemi ihtiva etmektedir ve bu yö nteme de kısaca tahkik denilmektedir. Doğru cevap C'dir.",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span> ilminde verilerin ve rivayetlerin anlaşılması aşamasına ne denir?"
+  },
+  {
+    "id": 21139,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 140,
+    "soru": "Eş’ariliğe göre hayır ve şerrin yaratıcısı kimdir?",
+    "secenekler": {
+      "A": "Allah",
+      "B": "Hem insan hem Allah",
+      "C": "İnsan",
+      "D": "Melek ve şeytan",
+      "E": "Şeytan"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm ve Ahlâk",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Eş’ari’ye göre insan, fiillerinin yaratıcısı değildir. Hayır ve şerrin yaratıcısı Allah’tır."
+  },
+  {
+    "id": 21140,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 141,
+    "soru": "İslâm felsefesinde , “nefiste yerleşik olan melekeler” şeklinde tarif edilen kavram nedir?",
+    "secenekler": {
+      "A": "Ahlak",
+      "B": "İnsan",
+      "C": "Akıl",
+      "D": "Sevgi",
+      "E": "Hoşgörü"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İslâm Ahlâkının Temel Kavramları",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "İslâm felsefesinde ahlâk, “nefiste yerleşik olan melekeler” şeklinde tarif edilir.",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">Ahlak</span>"
+    }
+  },
+  {
+    "id": 21141,
+    "ders": "İSLAM AHLAK ESASLARI",
+    "ders_kodu": 803,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 142,
+    "soru": "İslâm ahlâk düşüncesinde adalet ile vahdet kavramları arasında derin bir bağlantı kuran düşünür aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Haris el-Muhasibi",
+      "B": "İbn Miskeveyh",
+      "C": "İbn Sina",
+      "D": "Gazali",
+      "E": "Maturidi"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İslâm Ahlâkının Bireysel Boyutu (Faziletler)",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Adalet, bütün aşırılıkların ortası ve genel olarak rezîlet demek olan aşırılıklardan kurtulmayı sağlayan bir erdem olduğu için bütün erdemlerin en tam olanı ve adeta ortak olanıdır. İslâm Ahlâkçılarından İbn Miskeveyh bunun için olmalı ki, “adalet” ve “vahdet” kavramı arasındaki derin bağlantıya işaret etmektedir. Çünkü varlıkta birlik yetkinliği ve tamlığı dolayısıyla erdemi; çokluk, başkalık ve kargaşa ise istikrarsızlık, eksiklik, dolayısıyla rezileti gösterir.",
+    "soru_xray": "İslâm <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.\n💡 Sınav Şifresi: Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.\" data-note=\"İSLAM AHLAK ESASLARI Ünite 1 • Ahlâk\" onclick=\"showVocabBubble(this, event)\">ahlâk</span> düşüncesinde adalet ile vahdet kavramları arasında derin bir bağlantı kuran düşünür aşağıdakilerden hangisidir?"
   }
 ]

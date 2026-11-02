@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Yukarıdaki diyaloğu okuyarak aşağıdaki hangi soru cevaplanamaz?",
+    "secenekler": {
+      "A": "Hasta kendini nasıl hissediyor?",
+      "B": "Leyla kimdir?",
+      "C": "Doktor kimdir?",
+      "D": "Hemşire kimdir?",
+      "E": "Hemşire nerelidir?"
+    },
+    "ans": "C",
+    "solution": ""
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdaki fillerden hangisi muzari formdadır?",
+    "secenekler": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "ans": "E",
+    "solution": "‫ ﻳﺬﻫﺐ‬fiili 3 harften fazladır, başına fiili muzari yapan -ye (‫ )ي‬harfi gelmiştir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Yukarıdaki ifadeye verilebilecek karşılık aşağıdakilerin hangisinde vardır?",
+    "secenekler": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "ans": "A",
+    "solution": "Sorudan verilen ifade \"Merhaba Ahmet, nasılsın?\" anlamına gelmektedir. Ve bu soruya\n         verilebilecek yanıt A seçeneğinde \"İyiyim, teşekkür ederim, sen nasılsın?\" olarak\n         verilmiştir."
+  },
+  {
+    "q_num": 4,
+    "stem": "ُ ُ ‫ﻮ ﻳ َﻜ ْﺘ‬ ‫ﺐ‬ َ ‫ﻫ‬ ُ cümlesinin çevirisi hangisidir?",
+    "secenekler": {
+      "A": "o ikisi yazıyor, yazar",
+      "B": "siz yazarsınız, yazarsınız",
+      "C": "o yazdı, yazdı",
+      "D": "onlar yazıyorlar, yazarlar",
+      "E": "o yazıyor, yazar"
+    },
+    "ans": "E",
+    "solution": "Muzâri fiil çekimiyle kurulmuş cümlenin çevirisi \"o yazıyor, yazar\"dır."
+  },
+  {
+    "q_num": 5,
+    "stem": "\"Bu senin kalemin mi? cümlesindeki aidiyeti bildirmek için nesnenin hangi mansûb muttasıl zamiri alması gerekir?",
+    "secenekler": {
+      "A": "‫ك‬",
+      "B": "‫ي‬",
+      "C": "‫ﻢ‬ ْ ُ‫ﻛ‬",
+      "D": "‫ﻧ َﺎ‬",
+      "E": "‫ﻤﺎ‬ َ ُ‫ﻛ‬ َ veya ‫ك‬"
+    },
+    "ans": "A",
+    "solution": "Bu senin kalemin mi? cümlesindeki aidiyeti bildirmek için nesnenin ‫ك‬      ِ bitişik\n         nesne zamiri alması gerekir."
+  },
+  {
+    "q_num": 6,
+    "stem": "‫ﻚ؟‬ ِ ‫ ? ﻣﺎ ﻣﻬﻨﺘ‬sorusunun cevabı aşağıdakilerden hangisi olabilir?",
+    "secenekler": {
+      "A": "‫أﻧﺎ ﻓﺎ ﻃ ﻤ ﺔ‬",
+      "B": "‫ﻤ ﻬﺎ‬ ُ ‫ﺳ‬ ْ ‫ﻣﺎ ا‬",
+      "C": "‫ﺣﺒ ًﺎ‬َ ‫ﻣْﺮ‬ َ",
+      "D": "‫ﻓﺘ ِﻜ ُﻢ‬ َ ‫ﺮ‬ ِ ‫ﻌ‬َ ‫ﺖ ﺑ ِﻤ‬ ْ ‫ﺸﺮ‬ ُ ‫ﻓ‬ َ َ‫ﺗ‬",
+      "E": "‫ﺿﺔ‬ َ ‫ﻤﺮ‬ َ ‫ﻣ‬ُ ‫أﻧﺎ‬"
+    },
+    "ans": "E",
+    "solution": "‫ﻚ‬\n         ِ ‫ ? ﻣﺎ ﻣﻬﻨﺘ‬cümlesi mesleği sormaktadır, haliyle cevabı ‫ﺿﺔ‬\n                                                                  َ ‫ﻤﺮ‬\n                                                                     َ ‫ﻣ‬\n                                                                       ُ ‫( أﻧﺎ‬ben (kadın) hemşireyim)\n         cümlesidir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Yukarıdaki tabloyla ilgili olarak aşağıdakilerin hangisi söylenemez?",
+    "secenekler": {
+      "A": "Sülâsi fiillerin mâzi- muzâri formları 6 farklı şekilde gelir.",
+      "B": "Aynu'l fiili mazide fetha, muzaride damme olan fiiller 1. kalıptır.",
+      "C": "Aynu'l fiili mazide fetha, muzaride kesra olan fiiller 2. kalıptır.",
+      "D": "Mâzî bir sülâsî fiil, muzâri’ye çevrilirken başına ‫( ﻳـــ‬ye) harfi getirilir.",
+      "E": "Mâzî ve muzâri fiillerde \"aynu’l-fiil\"in harekeleri 1., 2. ve 4. kalıplarda aynıdır."
+    },
+    "ans": "E",
+    "solution": "Mâzî ve muzâri fiillerde \"aynu’l-fiil\"in hareketleri 3., 5. ve 6. kalıplarda aynıdır.\n\n                3.kalıp fetha fetha, 5. kalıp damme damme,6.kalıp kesra kesra"
+  },
+  {
+    "q_num": 8,
+    "stem": "Aşağıda verilen bitişik nesne zamirlerinin anlamlarıyla eşleşmesi doğru olarak hangi şıkta verilmiştir?",
+    "secenekler": {
+      "A": "1d, 2a, 3c, 4b, 5e",
+      "B": "1c, 2a, 3b, 4e, 5d",
+      "C": "1e, 2b, 3a, 4d, 5c",
+      "D": "1b, 2c, 3e, 4d, 5a",
+      "E": "1a, 2e, 3d, 4c, 5b"
+    },
+    "ans": "B",
+    "solution": ""
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdaki fillerden hangisi muzari formdadır?",
+    "secenekler": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "ans": "E",
+    "solution": "‫ ﻳﺬﻫﺐ‬fiili 3 harften fazladır, başına fiili muzari yapan -ye (‫ )ي‬harfi gelmiştir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Yukarıdaki ifadeye verilebilecek karşılık aşağıdakilerin hangisinde vardır?",
+    "secenekler": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "ans": "A",
+    "solution": "Sorudan verilen ifade \"Merhaba Ahmet, nasılsın?\" anlamına gelmektedir. Ve bu soruya\n         verilebilecek yanıt A seçeneğinde \"İyiyim, teşekkür ederim, sen nasılsın?\" olarak\n         verilmiştir."
+  }
+]

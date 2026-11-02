@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Arapça birinci tekil şahıs zamirinin yazılışı hangisinde doğru verilmiştir?",
+    "secenekler": {
+      "A": "‫اﻧ َﺎ‬",
+      "B": "‫أ َﻧﺎ‬",
+      "C": "‫إﻧﺎ‬",
+      "D": "‫أن‬",
+      "E": "‫ن‬ َ ‫أ‬"
+    },
+    "ans": "B",
+    "solution": "Arapça birinci tekil şahıs zamirinin yazılışı ‫( أ َﻧﺎ‬ene)'dir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Hangi seçenekteki zamir, hem eril hem de dişil özne/özneler için ortak kullanılan bir zamir değildir?",
+    "secenekler": {
+      "A": "‫ﻫ ﻤﺎ‬ ُ",
+      "B": "‫أ َﻧ ْﺘ ُﻤﺎ‬",
+      "C": "‫ﻲ‬َ ‫ﻫ‬ ِ",
+      "D": "‫ﻦ‬ ُ ْ َ‫ﻧ‬ ‫ﺤ‬",
+      "E": "‫أ َﻧﺎ‬"
+    },
+    "ans": "C",
+    "solution": "A ve B şıklarında yer alan ‫ ﻫُﻤﺎ‬ve ‫ أﻧ ْﺘ ُﻤﺎ‬zamirleri hem eril hem de dişil özneler için ortak kullanılan\n         zamirlerdir.\n\n                D ve E şıklarında yer alan ‫ﻦ‬\n                                           ُ ‫ﺤ‬\n                                             ْ َ ‫ ﻧ‬ve ‫ أﻧﺎ‬zamirleri de hem eril hem de dişil için kullanılır.‫ أﻧﺎ‬ve ‫ﻦ‬\n                                                                                                                    ُ ‫ﺤ‬\n                                                                                                                      ْ َ ‫ ﻧ‬birinci\n                şahıs(mutekellim) zamirleridir. Bunlarda cinsiyet ayrımı söz konusu değildir. Hem eril hem de dişil\n                özneler için ortaktır.\n\n                C şıkkında yer alan ‫ ﻫﻲ‬zamiri ise sadece dişil özne için kullanılan bir zamirdir. Eril için kullanılamaz."
+  },
+  {
+    "q_num": 3,
+    "stem": "Aşağıdaki ifadelerden hangisi uyruk (bir ülke vatandaşlığı) ifade etmez?",
+    "secenekler": {
+      "A": "‫ﺻﻴﻨ ِﻴﺔ‬ ِ ‫أﻧﺎ‬",
+      "B": "‫رﻳ ﺔ‬ِ ‫ﺳﻮ‬ ُ ‫ﺖ‬ ِ ْ ‫أﻧ‬",
+      "C": "‫ﻓﻠ ِﺴﻄِﻴﻨ ِﻴﺔ‬ ِ ‫ﻫﻲ‬ ِ",
+      "D": "‫أﻧﺎ ﻃَﺒ ِﻴﺒ َﺔ‬",
+      "E": "‫ﻫﻲ أ ُْردُﻧ ِﻴﺔ‬ ِ"
+    },
+    "ans": "D",
+    "solution": "D şıkkı; Çünkü (‫ )أﻧﺎ ﻃَﺒﻴﺒﺔ‬cümlesi \"ben bir doktorum\" anlamına geliyor."
+  },
+  {
+    "q_num": 4,
+    "stem": "Arapçada eril-dişil konusunda aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Görünüşü eril olsa da Arapçada duyuşa göre dişil olan sözcükler vardır.",
+      "B": "Arapçada sözcükler yapıları bakımından eril ve dişil olarak ayrılırlar.",
+      "C": "Eril için Arapçada muzekker (‫ )ﻣﺬﻛﺮ‬ifadesi kullanılır.",
+      "D": "Dişil için Arapçada muennes(‫ )ﻣﺆﻧﺚ‬ifadesi kullanılır.",
+      "E": "Arapçada ‫ ﻛ ِﺘﺎب‬kelimesi semâî muennestir."
+    },
+    "ans": "E",
+    "solution": "Arapçada sözcükler yapıları bakımından eril ve dişil olarak ayrılırlar.\n\n                Eril için Arapçada muzekker, dişil için muennes ifadesi kullanılır.\n\n                Sonu dişil te’si ile biten sözcükler dişil kabul edilir.\n\n                Arapçada dişil te'si ile biten sözcükler dışında semâi muennes adı verilen yapıları itibariyle eril\n                ancak dişil bir kelime gibi kullanılan sözcükler vardır.‫ ﺷﻤﺲ دار‬kelimeleri semâi muennestir. ‫ﻛﺘﺎب‬\n                kelimesi ise eril bir kelimedir."
+  },
+  {
+    "q_num": 5,
+    "stem": "\"‫ﻗ ﻲ‬ ِ ‫ﻋَﺮا‬ ِ ‫\" ﻫ ﻞ ﻋﻠ ﻲ‬ Yukarıdaki cümlenin Türkçe karşılığı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ali Iraklı.",
+      "B": "Hayır, Ali Iraklı.",
+      "C": "Ali öğretmen mi?",
+      "D": "Ali Iraklı mı?",
+      "E": "Ali Iraktadır."
+    },
+    "ans": "D",
+    "solution": "\"‫ﻗﻲ‬\n           ِ ‫ﻋَﺮا‬\n                ِ ‫ \"ﻫﻞ ﻋﻠﻲ‬cümlesinde \"Ali Iraklı mı?\" diye soru sorulmuştur."
+  },
+  {
+    "q_num": 6,
+    "stem": "َ َ ‫ \"ﻛ َﺘ‬fiilinin ikinci çoğul şahıs eril olarak mazi fiil çekimi aşağıdakilerden \"‫ﺐ‬ hangisidir?",
+    "secenekler": {
+      "A": "‫ﻦ‬ّ ُ ‫ﻛ َﺘ َﺒ ْﺘ‬",
+      "B": "‫ﻛ َﺘﺒﺘﻢ‬ ْ ُ ْ َ",
+      "C": "‫ﻛ َﺘﺒﻦ‬ َ ْ َ",
+      "D": "َ ‫ﻛ َﺘﺒﺘﻤﺎ‬ ُ ْ َ",
+      "E": "‫ﻛ َﺘﺒﻮا‬ ُ َ ْ ُ ‫ﻛ َﺘ َﺒ ْﺘ‬: İkinci çoğul şahıs eril mazi fiil çekimi"
+    },
+    "ans": "B",
+    "solution": "‫ﻢ‬\n\n                ّ ُ ‫ﻛ َﺘ َﺒ ْﺘ‬: İkinci çoğul şahıs dişil mazi fiil çekimi\n                ‫ﻦ‬\n\n                َ ْ ‫ﻛ َﺘ َﺒ‬: Üçüncü çoğul şahıs dişil mazi fiil çekimi\n                ‫ﻦ‬\n               َ ‫ﻛ َﺘ َﺒ ْﺘ ُﻤﺎ‬: İkinci ikil şahıs mazi fiil çekimi\n\n                ‫ﻛ َﺘ َﺒ ُﻮا‬: Üçüncü çoğul şahıs eril mazi fiil çekimidir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Sıkça kullanılan fiil ve anlamları aşağıdaki eşleştirmelerinden hangisinde yanlıştır?",
+    "secenekler": {
+      "A": "‫ﻢ‬ َ ِ ‫ﻋﻠ‬ َ - bildi",
+      "B": "‫ج‬َ ‫ﺧَﺮ‬ َ - çıktı",
+      "C": "‫ﻞ‬ َ ‫ﺧ‬ َ َ‫ د‬- girdi",
+      "D": "‫ﺢ‬ َ َ ‫ﻓﺘ‬ َ - açtı",
+      "E": "‫ب‬ َ ‫ﺮ‬ ِ ‫ﺷ‬ َ - işitti"
+    },
+    "ans": "E",
+    "solution": "‫ب‬\n         َ ‫ﺮ‬ َ (şeribe) işitti değil, içti demektir.\n           ِ ‫ﺷ‬"
+  },
+  {
+    "q_num": 8,
+    "stem": "Aşağıdakilerden hangisi üçüncü çoğul şahıs eril zamiridir?",
+    "secenekler": {
+      "A": "‫ﻮ‬ َ ‫ﻫ‬ ُ",
+      "B": "‫ﻢ‬ ْ ‫ﻫ‬ ُ",
+      "C": "‫ﻢ‬ َ ْ ُ ‫أﻧ ْﺘ‬",
+      "D": "‫ﻫﻦ‬ ُ",
+      "E": "‫ﻫ ﻤﺎ‬ ُ"
+    },
+    "ans": "B",
+    "solution": "B şıkkı doğrudur. Üçüncü çoğul şahıs eril zamiri (‫ﻫﻢ‬\n                                                            ُ ) dur.\n\n                (‫ﻮ‬\n                 َ ‫ﻫ‬\n                   ُ ) tekil eril\n\n                (‫ﻢ‬       َ\n                 ْ ُ ‫ )أﻧ ْﺘ‬ikinci çoğl şahıs eril\n                (‫ﻫﻦ‬\n                  ُ ) üçüncü çoğul şahıs dişil\n\n                ( ‫ﻫ ﻤﺎ‬\n                     ُ ) ikinci şahıs ikil"
+  },
+  {
+    "q_num": 9,
+    "stem": "Arapçada eril-dişil konusu ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "‫ دار‬kelimesi yapısı itibariyle eril görünse de Araplar bu kelimeyi dişil olarak kullanırlar.",
+      "B": "Semâî muennesler yapıları itibariyle dişildir ancak eril gibi kullanılırlar.",
+      "C": "Eril için Arapçada muzekker ifadesi kullanılır.",
+      "D": "Dişil için Arapçada muennes ifadesi kullanılır.",
+      "E": "Semâî muennesler yapıları itibariyle erildir, ancak dişil gibi kullanılırlar."
+    },
+    "ans": "B",
+    "solution": "Arapçada tüm sözcükler yapıları bakımından eril ve dişil olarak ayrılırlar.\n\n                Eril için Arapçada muzekker, dişil için muennes ifadesi kullanılır.\n\n                Sonu dişil te’si (kapalı te) ile biten sözcükler dişil kabul edilir.\n\n                Arapçada dişil te’si ile biten sözcükler dışında “semâî muennes” adı verilen, yapıları itibariyle\n                eril olan, ancak dişil bir kelime gibi kullanılan sözcükler de vardır. ‫ﻤﺲ‬           َ (şems) güneş; ‫دار‬\n                                                                                                  ْ ‫ﺷ‬\n                (dâr) ev kelimeleri yapıları itibariyle eril görünseler de Araplar bu kelimeleri dişil olarak\n                kullanagelmişlerdir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdaki Arapça fiil ve Türkçe karşılığı eşleştirmelerinden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "‫ﺐ‬ َ َ‫ ذ َﻫ‬gitti َ َ ‫ﺟﻠ‬",
+      "B": "‫ﺲ‬ َ oturdu",
+      "C": "‫ج‬َ ‫ﺧَﺮ‬ َ çıktı",
+      "D": "‫ﺐ‬ َ َ ‫ ﻛ َﺘ‬gördü",
+      "E": "‫ب‬ َ ِ‫ﺷﺮ‬ َ içti َ َ ‫ )ﻛ َﺘ‬anlamı YAZDI olmalıdır."
+    },
+    "ans": "D",
+    "solution": "Seçeneklerde D hariç hepsi doğrudur. D şıkkındaki fiilin (‫ﺐ‬"
+  }
+]

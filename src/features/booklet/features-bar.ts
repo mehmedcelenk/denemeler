@@ -10,13 +10,14 @@ export function toggleQuestionFeatures(qId: number | string): void {
   if (isNaN(id)) return;
   const isNowExpanded = store.toggleQuestionExpanded(id);
   if (typeof document === 'undefined') return;
-  const card = document.getElementById(`bq_${id}`);
-  if (card) {
+
+  // Hem kitapçıktaki hem tuvaldeki (akıllı tahta) ilgili kartları senkron güncelle
+  document.querySelectorAll<HTMLElement>(`[data-qid="${id}"]`).forEach(card => {
     const drawer = card.querySelector('.q-features-drawer');
     const icon = card.querySelector('.btn-features-toggle .features-toggle-icon');
     if (drawer) drawer.classList.toggle('is-expanded', isNowExpanded);
     if (icon) icon.textContent = isNowExpanded ? '‹' : '›';
-  }
+  });
 }
 
 /**
@@ -56,19 +57,21 @@ export function eliminateOneWrongChoice(qId: number | string, event?: Event): vo
   if (!q || q.sekilli) return;
 
   const hasDom = typeof document !== 'undefined';
-  const btn = hasDom ? document.getElementById(`btnEliminateWrong_${id}`) : null;
   const currentEliminated = state.eliminatedWrongChoices[id];
 
   // Zaten bir yanlış şık elenmişse, butona tekrar tıklamak elemeyi geri alır (toggle)
   if (currentEliminated) {
     store.removeEliminatedWrongChoice(id);
-    const row = hasDom ? document.getElementById(`opt_${id}_${currentEliminated}`) : null;
-    if (row && state.userMarkedChoices[id] !== currentEliminated) {
-      row.classList.remove('marked-incorrect');
-    }
-    if (btn) {
-      btn.classList.remove('active');
-      btn.setAttribute('title', 'Bir Yanlış Şıkkı Ele');
+    if (hasDom) {
+      document.querySelectorAll<HTMLElement>(`#opt_${id}_${currentEliminated}`).forEach(row => {
+        if (state.userMarkedChoices[id] !== currentEliminated) {
+          row.classList.remove('marked-incorrect');
+        }
+      });
+      document.querySelectorAll<HTMLElement>(`#btnEliminateWrong_${id}`).forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('title', 'Bir Yanlış Şıkkı Ele');
+      });
     }
     return;
   }
@@ -88,13 +91,14 @@ export function eliminateOneWrongChoice(qId: number | string, event?: Event): vo
 
   store.setEliminatedWrongChoice(id, choiceToEliminate);
 
-  const row = hasDom ? document.getElementById(`opt_${id}_${choiceToEliminate}`) : null;
-  if (row) {
-    row.classList.add('marked-incorrect');
-  }
-  if (btn) {
-    btn.classList.add('active');
-    btn.setAttribute('title', `Elenen Yanlış Şık: ${choiceToEliminate} (Geri almak için tıkla)`);
+  if (hasDom) {
+    document.querySelectorAll<HTMLElement>(`#opt_${id}_${choiceToEliminate}`).forEach(row => {
+      row.classList.add('marked-incorrect');
+    });
+    document.querySelectorAll<HTMLElement>(`#btnEliminateWrong_${id}`).forEach(btn => {
+      btn.classList.add('active');
+      btn.setAttribute('title', `Elenen Yanlış Şık: ${choiceToEliminate} (Geri almak için tıkla)`);
+    });
   }
 }
 
@@ -143,8 +147,7 @@ export async function copyQuestionText(qId: number | string, event?: Event): Pro
   }
 
   if (typeof document !== 'undefined') {
-    const btn = document.getElementById(`btnCopy_${id}`);
-    if (btn) {
+    document.querySelectorAll<HTMLElement>(`#btnCopy_${id}`).forEach(btn => {
       const originalTitle = btn.getAttribute('title') || 'Soruyu Kopyala';
       btn.classList.add('copied');
       btn.setAttribute('title', success ? 'Kopyalandı! ✓' : 'Kopyalanamadı');
@@ -152,7 +155,7 @@ export async function copyQuestionText(qId: number | string, event?: Event): Pro
         btn.classList.remove('copied');
         btn.setAttribute('title', originalTitle);
       }, 1600);
-    }
+    });
   }
 
   return success;
@@ -169,17 +172,17 @@ export function toggleGrammarLayer(qId: number | string, layer: 'syntax' | 'pos'
   const id = Number(qId);
   if (isNaN(id) || typeof document === 'undefined') return;
 
-  const card = document.getElementById(`bq_${id}`);
-  if (!card) return;
-
   const className = `hide-${layer}`;
-  const isNowHidden = card.classList.toggle(className);
+  let isNowHidden = false;
+
+  document.querySelectorAll<HTMLElement>(`[data-qid="${id}"]`).forEach(card => {
+    isNowHidden = card.classList.toggle(className);
+  });
 
   const btnId = layer === 'syntax' ? `btnXraySyntax_${id}` : layer === 'pos' ? `btnXrayPos_${id}` : `btnXraySound_${id}`;
-  const btn = document.getElementById(btnId);
-  if (btn) {
+  document.querySelectorAll<HTMLElement>(`#${btnId}`).forEach(btn => {
     btn.classList.toggle('active', !isNowHidden);
-  }
+  });
 }
 
 

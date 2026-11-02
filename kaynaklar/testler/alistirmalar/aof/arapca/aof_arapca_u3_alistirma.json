@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdakilerden hangisi \"Öğretmen, doktoru durakta buldu.\" cümlesinin Arapça karşılığıdır?",
+    "secenekler": {
+      "A": ".َ‫ت اﻟﺪواء‬ ِ ‫ﻤ ﺮ ﺿﺎ‬َ ‫ﻤ‬ ُ ‫ﺐ ﻣ ﻦ اﻟ‬ُ ‫ﺧ ﺬ َ اﻟ ﻄﺒﻴ‬ َ َ‫أ‬",
+      "B": ".‫ت‬ِ ‫ﺔ إﻟﻰ اﻟﻤﻌﻠ ّﻤﺎ‬ ً ‫ﺐ ر ﺳﺎﻟ‬ ُ ‫ﺐ اﻟ ﻄﺎﻟ‬ َ َ ‫ﻛ َﺘ‬",
+      "C": ".‫ﺟﺪَ اﻟﻄّﺒﻴﺐ اﻟﻤﺮﻳﺾ ﻓﻲ اﻟﻤﻮﻗﻒ‬ َ ‫و‬ َ",
+      "D": ".‫ﺟ ﺪ َ ا ﻟ ﻤ ﻌ ﻠ ﻢ ا ﻟ ﻄ ﺒ ﻴ ﺐ ﻓ ﻲ ا ﻟ ﻤ ﻮ ﻗ ﻒ‬ َ ‫و‬ َ",
+      "E": ".‫ت‬ ِ ‫ﻤّﺮﺿﺎ‬َ ‫ﻤ‬ُ ‫ﺐ اﻟ‬ ُ ‫ف اﻟ ﻄﺒﻴ‬ َ ‫ﻋَﺮ‬َ"
+    },
+    "ans": "D",
+    "solution": ""
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdakilerden hangisi bir yiyecek değildir?",
+    "secenekler": {
+      "A": "‫ﺧﺒ ْﺰ‬ ُ",
+      "B": "‫ﺟﺒ ْﻦ‬ ُ",
+      "C": "‫ﻋﺴﻞ‬ َ",
+      "D": "‫َزﻳﺘﻮن‬",
+      "E": "‫اﻟ ﺸﺎ ي‬"
+    },
+    "ans": "E",
+    "solution": "‫ اﻟﺸﺎي‬çay demektir ve bu bir içecektir."
+  },
+  {
+    "q_num": 3,
+    "stem": "‫ﻫ ﻤﺎ ؟‬ ُ ‫ﻦ‬ ْ ‫ﻣ‬ َ :‫ﺤ ﻤ ﺪ‬ َ ‫ﻣ‬ ُ ِ ‫ﻌﻠ ّﻤﺎ‬ .‫ن ﻣ ﻦ ﻣ ﺼ ﺮ‬ َ ‫ﻣ‬ ُ ‫ﻫ ﻤﺎ‬ ُ :‫ﺳﻠ ِﻴﻢ‬ َ ‫ﻫ ﻦ؟‬ ُ ‫ﻦ‬ ْ ‫ﻣ‬ َ ‫ و‬:‫ﻣ ﺤ ﻤ ﺪ‬ .‫ﻌ ﺮا ق‬ ِ ‫ت ﻣ ﻦ اﻟ‬ ٌ ‫ﻫﻦ ﻃﺎﻟ ِﺒﺎ‬ َ :‫ﺳﻠﻴ ﻢ‬ ِ ‫ﻌﻠ ّﻤﺎ‬ ‫ن اﻵن؟‬ َ ‫ﻤ‬ ُ ‫ﻦ اﻟ‬ َ ‫ أﻳ‬:‫ﻣ ﺤ ﻤ ﺪ‬ ‫ت؟‬ ُ ‫ﻦ اﻟ ﻄﺎﻟﺒﺎ‬ َ ‫ وأﻳ‬.‫ﻒ‬ ّ ‫ﺼ‬ ّ ‫ ﻫ ﻤﺎ ﻓ ﻲ اﻟ‬:‫ﺳﻠﻴ ﻢ‬ .‫ﺔ‬ َ ‫ﺤ ﺪﻳ‬ ِ ‫ﻘ‬ َ ‫ﻦ ﻓ ﻲ اﻟ‬ ّ ‫ﻫ‬ ُ :‫ﻤ ﺪ‬ ّ ‫ﻣﺤ‬ Yukarıdaki diyaloğu okuyarak aşağıdaki sorulardan hangisi cevaplanamaz?",
+    "secenekler": {
+      "A": "Kaç öğretmen var?",
+      "B": "Kaç erkek öğrenci var?",
+      "C": "Mısırlı olanlar kim?",
+      "D": "Öğretmenler nerede?",
+      "E": "Öğrenciler nerede?"
+    },
+    "ans": "B",
+    "solution": "Muhammet: O ikisi kim?\n\n                Selim: O ikisi Mısırlı iki öğretmen.\n\n                Muhammet: Onlar (kızlar) kim?\n\n                Selim: Onlar Iraklı kız öğrenciler.\n\n                Muhammet: İki öğretmen şimdi nerede?\n\n                Selim: O ikisi sınıfta. Kız öğrenciler nerede?\n\n                Muhammet: Onlar bahçede."
+  },
+  {
+    "q_num": 4,
+    "stem": "Aşağıdakilerden hangisi harfi cer değildir?",
+    "secenekler": {
+      "A": "‫ﻦ‬ ْ ‫ﻣ‬ِ",
+      "B": "‫ﻋﻠ ﻰ‬",
+      "C": "‫إﻟ ﻰ‬",
+      "D": "‫ﻦ‬ ْ ‫ﻣ‬ َ",
+      "E": "‫ﻓﻲ‬"
+    },
+    "ans": "D",
+    "solution": "Harf-i cerler Türkçedeki bulunma (-de, -da), ayrılma (-den, -dan), yönelme (-e, -a) durum ekleri\n         yerinde veya “ile”, “üzerinde” gibi anlamlarda kullanılan harf veya harf öbekleridir.\n         Örnek:\n         ‫ﻦ‬\n         ْ ‫ﻣ‬\n           ِ : den, ‫ﻋﻠﻰ‬: üzerinde, ‫إﻟﻰ‬: -e, ‫ﻓﻲ‬: -de, -da.\n\n                ‫ﻦ‬\n                ْ ‫ﻣ‬\n                  َ : Kim? demektir. Harfi cer değil, soru edatıdır."
+  },
+  {
+    "q_num": 5,
+    "stem": "Tekil kelimelerin i'râbı ile harekelerin eşleşmeleri hangi şıkta doğru olarak verilmiştir?1. Merfû 2. Mansûb 3. Mecrûr / a. kesra b. damme c. fetha",
+    "secenekler": {
+      "A": "1b, 2c, 3a",
+      "B": "1a, 2b, 3c",
+      "C": "1c, 2b, 3a",
+      "D": "1a, 2c, 3 b",
+      "E": "1b, 2a, 3c"
+    },
+    "ans": "A",
+    "solution": "Tekil kelimelerin i‘râbı (yani merfûluk, mansûbluk ve mecrûrluk durumları)\n                hareke ile belirlenir. Tekil bir kelimenin son harfi: a. Merfû durumda, damme\n                b. Mansûb durumda, fetha c. Mecrûr durumda, kesra ile harekelenir. Bir\n                başka deyişle ref (merfûluk) alâmeti damme, nasb (mansûbluk) alâmeti\n                fetha, cer (mecrûrluk) alâmeti kesra’dır."
+  },
+  {
+    "q_num": 6,
+    "stem": "Aşağıda verilen bilgilerden hangileri doğrudur? i. Tekil isimlerin i‘râbı hareke ile, ancak ikil kelimelerin i‘râbı hareke yerine harf ile yapılır. ii. Arapçada bir sözcük sonuna âni veya eyni eki alarak ikile dönüştürülür. iii. Arapçada çoğullar dörde ayrılır. iv. Düzenli eril çoğul, tekil ismin sonuna ûne veya îne ekleri getirilerek yapılır. v. Düzenli dişil çoğul, tekil dişil sözcüğün sonuna ât eki getirilerek yapılan çoğuldur.",
+    "secenekler": {
+      "A": "i, iii, v",
+      "B": "ii, iv, v",
+      "C": "i, ii, iv",
+      "D": "ii, iii, iv, v",
+      "E": "i, ii, iv, v"
+    },
+    "ans": "E",
+    "solution": "Sadece iii. yanliştir çünkü Arapçada çoğullar üçe ayrılırlar. 1. Düzenli Eril\n                Çoğul 2. Düzenli Dişil Çoğul 3. Düzensiz Çoğul (Cem‘u’t-Teksîr)"
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdakilerden hangisi \"Öğretmen, doktoru durakta buldu.\" cümlesinin Arapça karşılığıdır?",
+    "secenekler": {
+      "A": ".َ‫ت اﻟﺪواء‬ ِ ‫ﻤ ﺮ ﺿﺎ‬ َ ‫ﻤ‬ ُ ‫ﺐ ﻣ ﻦ اﻟ‬ ُ ‫ﺧ ﺬ َ اﻟ ﻄﺒﻴ‬َ َ‫أ‬",
+      "B": ".‫ت‬ِ ‫ﺔ إﻟﻰ اﻟﻤﻌﻠ ّﻤﺎ‬ ً ‫ﺐ ر ﺳﺎﻟ‬ ُ ‫ﺐ اﻟ ﻄﺎﻟ‬ َ َ ‫ﻛ َﺘ‬",
+      "C": ".‫ﺟﺪَ اﻟﻄّﺒﻴﺐ اﻟﻤﺮﻳﺾ ﻓﻲ اﻟﻤﻮﻗﻒ‬ َ ‫و‬ َ",
+      "D": ".‫ﺟ ﺪ َ ا ﻟ ﻤ ﻌ ﻠ ﻢ ا ﻟ ﻄ ﺒ ﻴ ﺐ ﻓ ﻲ ا ﻟ ﻤ ﻮ ﻗ ﻒ‬ َ َ‫و‬",
+      "E": ".‫ت‬ ِ ‫ﻤّﺮﺿﺎ‬ ‫ﻤ‬ َ ُ ‫ﻟ‬ ‫ا‬ ‫ﺐ‬ ُ ‫ﻴ‬ ‫ﺒ‬ ‫ﻄ‬ ‫ﻟ‬ ‫ا‬ ‫ف‬ َ ‫ﺮ‬َ ‫ﻋ‬ َ"
+    },
+    "ans": "D",
+    "solution": ""
+  },
+  {
+    "q_num": 8,
+    "stem": "ً َ ‫ر ﺳﺎﻟ‬ .‫ﺔ‬ ِ ‫ﺐ‬ َ ‫ﻛ َﺘ‬ ٌ ِ ‫ﺐ ﻃﺎﻟ‬ َ َ ‫ﺮ ﺳﺎﻟ‬ .‫ﺔ‬ ُ ِ ‫ﺐ اﻟﻄّﺎﻟ‬ ِ ‫ﺐ اﻟ‬ َ ‫ﻛ َﺘ‬ Verilen iki cümlenin arasındaki fark nedir?",
+    "secenekler": {
+      "A": "Birisinde dolaylı tümleç vardır.",
+      "B": "Cümlelerde geçen mektup sayıları farklıdır.",
+      "C": "2. cümlede ikil kelime vardır \"öğrenciler\".",
+      "D": "2. cümle tevinlidir.",
+      "E": "İlk cümlenin nesnesi belirsizdir."
+    },
+    "ans": "E",
+    "solution": "1. (Öğrenci mektubu yazdı.)\n\n                2. (Bir öğrenci bir mektup yazdı.)\n\n                Yukarıdaki örnekte görüldüğü üzere, tenvîn sadece belirsizlik göstergesidir.\n                İ‘râbda alâmet aranırken sadece ana harekeye bakılır; çünkü tenvîn, ya iki\n                damme’dir, ya iki fetha’dır, ya da iki kesra’dır. Bu harekelerin iki veya tek\n                olmasının önemi yoktur."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdaki bilgilerden hangileri doğrudur? i. Arapça bir sözcük sonuna âni veya eyni eki alarak ikile dönüştürülür. ii. İkillerde ref alâmeti eliftir. iii. ikillerde nasb alâmeti nûndur. iv. ikillerde cer alâmeti yoktur. v. Eğer kelime dişil te’si ile bitiyorsa kapalı te açılır, sonra ikillik ekleri kullanılır.",
+    "secenekler": {
+      "A": "i,iv",
+      "B": "iii,v",
+      "C": "ii,iii",
+      "D": "i, iii, iv",
+      "E": "i, ii, v"
+    },
+    "ans": "E",
+    "solution": "Arapçada bir sözcük sonuna âni veya eyni eki alarak ikile dönüştürülür.\n                Eğer kelime kapalı te (dişil te’si) ile bitiyorsa kapalı te açılır, sonra bu ekler\n                kullanılır. Kelime cümle içerisinde merfûluğu gerektiren bir konumdaysa âni\n                eki, mansûb veya mecrûr konumdaysa eyni eki alır. İkillerde ref alâmeti elif\n                , nasb ve cer alâmeti ye ’dir. Nûn her üç durumun ortak harfi olduğundan\n                belirleyici etkisi yoktur, alâmette zikredilmez."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdakilerden hangisi harfi cer değildir?",
+    "secenekler": {
+      "A": "‫ﻦ‬ ْ ‫ﻣ‬ِ",
+      "B": "‫ﻋﻠ ﻰ‬",
+      "C": "‫إﻟ ﻰ‬",
+      "D": "‫ﻦ‬ ْ ‫ﻣ‬ َ",
+      "E": "‫ﻓﻲ‬"
+    },
+    "ans": "D",
+    "solution": "Harf-i cerler Türkçedeki bulunma (-de, -da), ayrılma (-den, -dan), yönelme (-e, -a) durum ekleri\n         yerinde veya “ile”, “üzerinde” gibi anlamlarda kullanılan harf veya harf öbekleridir.\n         Örnek:\n         ‫ﻦ‬\n         ْ ‫ﻣ‬\n           ِ : den, ‫ﻋﻠﻰ‬: üzerinde, ‫إﻟﻰ‬: -e, ‫ﻓﻲ‬: -de, -da.\n\n                ‫ﻦ‬\n                ْ ‫ﻣ‬\n                  َ : Kim? demektir. Harfi cer değil, soru edatıdır."
+  }
+]

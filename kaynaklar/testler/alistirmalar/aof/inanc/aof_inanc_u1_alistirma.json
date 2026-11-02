@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "“İtaat, ceza, mükâfat, örf, adet, hüküm, tutulan yol ve usul” anlamlarına gelen terim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İman",
+      "B": "Din",
+      "C": "İbadet",
+      "D": "Farz",
+      "E": "İnanç"
+    },
+    "ans": "B",
+    "solution": "Temel anlam olarak dinin; itaat, ceza, mükâfat, örf, adet, hüküm, tutulan yol ve usul kelimeleriyle\n         karşılandığı ifade edilir. Doğru cevap B’dir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdakilerden kelimelerden hangisi temel anlam olarak din kelimesinin karşıladığı ifadelerden biri değildir?",
+    "secenekler": {
+      "A": "İtaat",
+      "B": "Usul",
+      "C": "Örf",
+      "D": "Tutulan yol",
+      "E": "Hayat"
+    },
+    "ans": "E",
+    "solution": "Din bilginleri genellikle din kelimesinin Arapça deyn kökünden bir mastar veya isim olduğunu kabul\n         ederler. Temel anlam olarak dinin; itaat, ceza, mükâfat, örf, adet, hüküm, tutulan yol ve usul\n         kelimeleriyle karşılandığı ifade edilir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Bir kişinin çevresindeki kişilere bakarak, hiçbir araştırma yapmadan inanmasına ne denir?",
+    "secenekler": {
+      "A": "İkrar",
+      "B": "Tafsili iman",
+      "C": "İcmali iman",
+      "D": "Taklidi iman",
+      "E": "Tahkiki iman"
+    },
+    "ans": "D",
+    "solution": "Bir kimsenin çevresindeki ana, baba, kardeş, komşu, hoca ve değer verdiği diğer kişilere bakarak,\n         hiçbir araştırma yapmadan inanmasına taklit, bu tür imana da taklidî iman denir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Aşağıdakilerden hangisi dinin insanlar için önemini ifade eden bir cümle olamaz?",
+    "secenekler": {
+      "A": "Din, insanın bencil duygularını kontrol ettiği için önemlidir.",
+      "B": "Din, daha iyi bir birey oluşturmaya çalıştığı için önemlidir.",
+      "C": "Din, insanın güç ve hürriyetini sona erdirdiği için önemlidir.",
+      "D": "Din, insanların mutluluğunu temin ettiği için önemlidir.",
+      "E": "Din, insanların sınırlarını bildirdiği için önemlidir."
+    },
+    "ans": "C",
+    "solution": "Din insana hem bireysel isteklerinin ortaya çıkmasında hem de madde karşısında eğilmemesinde ilk\n         elden yardım eder. Kişi varlığı gereği bencil duyguların esiri olmaya yatkındır. Bu duyguların\n         törpülenmesi din sayesinde mümkün olur. Yine birey, sonsuz bir hürriyet ve sınırsız bir gücün elinde\n         bulunmasını arzu eder. Din bu isteklerin de bir sınırı olduğu duygusunu insanlara hatırlatarak ancak\n         sonsuz isteklerin sonsuz olan varlığa teslimiyetle mümkün olacağını bildirir. Dinin insanlara yaptığı\n         telkinler daha iyi bir birey oluşturmaya yönelik olması nedeniyle, insanın yaratıklar önünde ve tabiat\n         olayları karşısında şaşkınlıktan kurtulmasını ve dehşete düşmesini önlemeyi amaçladığı için\n         önemlidir."
+  },
+  {
+    "q_num": 5,
+    "stem": "İslam âlimlerine göre dinin sınıflandırılması nasıl yapılmıştır?",
+    "secenekler": {
+      "A": "Hak ve batıl",
+      "B": "Semavi ve beşeri",
+      "C": "Semavi ve batıl",
+      "D": "Şüpheli dinler ve beşeri",
+      "E": "İlkel ve milli dinler"
+    },
+    "ans": "A",
+    "solution": "İslam âlimleri genelde hak ve batıl din şeklinde bir sınıflama yapmışlardır. Diğer çeldiricilerdeki\n         kavramlar ise sSemavi ve beşeri dinlerin kaynağına bakılarak yapılan sınıflamadır. Şüpheli dinler\n         Mecusiler ve Maniheistler için kullanılmaktadır. İlkel ve milli dinler ise tek tanrılı ve çok tanrılı\n         sınıflamaya göre yapılmıştır."
+  },
+  {
+    "q_num": 6,
+    "stem": "İslam dini ne anlama gelmektedir?",
+    "secenekler": {
+      "A": "Tabiat olaylarındaki gizli güç",
+      "B": "Peygamberlerin meydana getirdiği bir din",
+      "C": "Barış ve hoşgörünün Peygamberler ile yayılması",
+      "D": "İlk Peygamber Hz. Âdem’den son peygamber Hz. Muhammed’e kadar bütün peygamberlerin getirdiği hak dinlerin genel adı İslâm’dır",
+      "E": "Hz. Muhammed’in getirdiği bir inanç sistemi"
+    },
+    "ans": "D",
+    "solution": "İlk Peygamber Hz. Âdem’den son peygamber Hz. Muhammed’e kadar bütün peygamberlerin\n         getirdiği hak dinlerin genel adı İslâm’dır."
+  },
+  {
+    "q_num": 7,
+    "stem": "İmanda olması gereken şartlar aşağıdakilerden hangisi ya da hangileridir? I. Kabul II. İkrar III. İstisna",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "Yalnız III",
+      "D": "I ve II",
+      "E": "I ve III"
+    },
+    "ans": "D",
+    "solution": "İmanda kesin kabul ve ikrar yani dışavurum aranır, ayrıca bilgi, akıl, istidlal ve tefekkürün iman\n         eylemindeki ağırlıklı payı göz ardı edilmemelidir."
+  },
+  {
+    "q_num": 8,
+    "stem": "İslam dinine, insana sevk ettiği inanç esaslarını araştırıp, delil, akıl, tefekkür ve düşünceye dayandırarak iman eden kişiye verilen isim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Mukallit",
+      "B": "Muhakkik",
+      "C": "Müşrik",
+      "D": "Mü'min",
+      "E": "Müslim"
+    },
+    "ans": "B",
+    "solution": "İslam dini, insana sevk ettiği inanç esaslarını araştırıp, delil, akıl, tefekkür ve\n         düşünceye dayandırarak iman etmesine önem vermiştir. Böyle iman türüne\n         tahkikî iman, bu imanâ sahip kişiye de muhakkik adı verilmiştir"
+  },
+  {
+    "q_num": 9,
+    "stem": "I. Tasdik II. İkrar III. Bilgi IV. Amel V. Zan Yukarıdakilerden hangisi veya hangileri, farklı İslam âlimlerine göre kişinin iman etmiş olup olmadığının göstergeleri arasında yer alır?",
+    "secenekler": {
+      "A": "III ve V",
+      "B": "I, II ve IV",
+      "C": "I, II, III ve IV",
+      "D": "Yalnız V",
+      "E": "I, III, IV ve V"
+    },
+    "ans": "C",
+    "solution": "İman öncelikle kalbin tasdik etmesi, yani onaylamasıdır. İkrar, içten hissedilenlerin dil ile ifade\n         edilmesine denir. Kişinin kalben kabul ettiği iman esaslarını dışa vurmasının önemi bellidir. İmanın\n         oluşumunda bilginin önemi inkâr edilemez. İnsanın bilgi edinme kaynakları beş duyu, doğru haber\n         ve akıldır. İmanın bu yolların her biriyle olan bağlantısı da bilinmektedir. İnsanda oluşan imanın\n         bilgiden sonra gerçekleştiği ve onun üzerine bina edildiği zaman değerli olduğu söylenmelidir. İslam\n         düşüncesinde iman konusunda yapılan değerlendirmelerden biri de İslam’da emredilmiş ibadet veya\n         taat türünden birinin veya yasaklanmış bir emrin yapılmaması, yani amellerin yerine getirilmesi\n         şeklindeki tanımıdır."
+  },
+  {
+    "q_num": 10,
+    "stem": "İman ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "İmanın en kısa ve kestirme yolu, tevhid veya şehâdet kelimelerini kalben kabul edip dillendirmesidir.",
+      "B": "İman olmadan amel kurtuluşa götürmez",
+      "C": "İçinde bulunulan toplumun çıkarları söz konusu olduğunda helal ve haram hususunda yapılan yanlışları hoş görmek.",
+      "D": "Allah’ın birliğine, O’nun sonsuz güç ve kudret sahibi olduğuna, Hz. Peygamber’in O’nun gönderdiği son elçi olduğuna şeksiz şüphesiz inanmak imandan gelir.",
+      "E": "İman kapısından giren insan Allah katında en değerli kimselerden olmuştur."
+    },
+    "ans": "C",
+    "solution": "Her zaman, koşulsuz şartsız helal ve haram hususunda titizlik göstermek gerekir."
+  }
+]

@@ -15,14 +15,23 @@
       "E": "Vasfi sünnet"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Sünnet Kavramı ve Türleri",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Takrirî Sünnet",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Hz. Peygamber'in sahabe tarafından söylenen sözleri ve yapılan davranışları onaylaması veya karşı çıkmaması şeklinde ortaya çıkan <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">sünnet</span> türü aşağıdakilerden hangisidir?",
+    "secenekler_xray": {
+      "A": "Takrirî <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">sünnet</span>",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Hz. Peygamber’in ibadet ve muamelelerdeki bizzat uyguladığı davranış ve eylemleridir.\n💡 Sınav Şifresi: Hz. Peygamber’in eylemleri/uygulamaları = Fiilî Sünnet (Namaz kılma, hac yapma şekli).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Fiilî Sünnet\" onclick=\"showVocabBubble(this, event)\">Fiilî sünnet</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Hz. Peygamber’in bizzat söylediği mübarek sözleridir.\n💡 Sınav Şifresi: Hz. Peygamber’in sözleri = Kavlî Sünnet (Örn: Ameller niyetlere göredir).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Kavlî Sünnet\" onclick=\"showVocabBubble(this, event)\">Kavlî sünnet</span>",
+      "D": "Cibillî <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">sünnet</span>",
+      "E": "Vasfi <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">sünnet</span>"
+    },
+    "dogru_nedeni": "HADİS TARİHİ VE USÜLÜ (Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar): Doğru yanıt A seçeneğidir. Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir."
   },
   {
     "id": 20001,
@@ -40,7 +49,7 @@
       "E": "Esbâbu vurûdi'l-hadis"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis İlimleri",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "İlelü'l-Hadis",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -65,7 +74,7 @@
       "E": "Garîbu'l-hadis"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis İlimleri",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Garîbu'l-Hadis",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -90,7 +99,7 @@
       "E": "Nüzhetü'n-nazar"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Usûlü Tarihi",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Mütekaddimûn Dönemi Usûl Eserleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -115,21 +124,28 @@
       "E": "Tahrîç"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadislerin Yazılması ve Derlenmesi",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
     "alt_konu": "Tedvîn Dönemi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.\n💡 Sınav Şifresi: Râvîler zinciri/silsilesi = Senet / İsnad.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Senet (İsnad)\" onclick=\"showVocabBubble(this, event)\">İsnâd</span>",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.\n💡 Sınav Şifresi: Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • Tedvîn\" onclick=\"showVocabBubble(this, event)\">Tedvîn</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnîf</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Râvîlerin dindarlık (adalet) ve hafıza/koruma (zabt) yönünden güvenilir olup olmadıklarını inceleyen ilim dalıdır.\n💡 Sınav Şifresi: Cerh (kusur bulma/red) + Ta’dîl (güvenilir ilan etme) = Cerh ve Ta’dîl.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 4 • Cerh ve Ta’dîl\" onclick=\"showVocabBubble(this, event)\">Cerh</span> ve ta'dîl"
+    },
+    "dogru_nedeni": "HADİS TARİHİ VE USÜLÜ (Hadis İlmi: Temel Kavramları ve Alt Dalları): Doğru yanıt B seçeneğidir. Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir."
   },
   {
     "id": 20005,
     "ders": "HADİS TARİHİ VE USÜLÜ",
     "ders_kodu": 801,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
     "soru_no": 6,
     "soru": "Aşağıdakilerden hangisi hadislerin yazıldığına dair delil olabilecek belgelerden (kaynaklardan) biri değildir?",
     "secenekler": {
@@ -140,14 +156,15 @@
       "E": "Dine çağrı mektupları"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadislerin Yazılması",
-    "alt_konu": "Hz. Peygamber Döneminde Yazılı Belgeler",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Değişik yazı malzemelerine kaydedilerek veya ezberlenerek koruma altına alınmış olan hadislerin\n         kitaplar (dîvânlar) içinde toplanmasına tedvin denir. Hicrî 1. asrın sonlarından 2. asrın 1. veya 2.\n         Çeyreğine kadar süren bir zaman dilimi tedvin dönemi olarak adlandırılır. Aslında değişik sahâbîlerin\n         bildikleri hadisleri onlardan toplayıp yazma faaliyeti daha eskilere dayanır. Abdullah b. Abbâs’ın,\n         sahâbîleri tek tek dolaşarak onlardan sorup öğrendiği hadisleri, yanında taşıdığı yazı malzemelerine\n         yazdığı nakledilir. Bu da bir nevi tedvîn yani toplamadır. Ancak burada tedvînle daha değişik bir\n         durum kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir “kitap/dîvân” içinde\n         toplanmalarıdır. Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe Ömer b. Abdülazîz\n         (halifeliği h. 99-101) olmuştur."
   },
   {
     "id": 20006,
@@ -165,14 +182,17 @@
       "E": "Rihle"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Rivayet Yöntemleri",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Rihle (Hadis Yolculuğu)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.\n💡 Sınav Şifresi: Râvîler zinciri/silsilesi = Senet / İsnad.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Senet (İsnad)\" onclick=\"showVocabBubble(this, event)\">İsnâd</span>"
+    }
   },
   {
     "id": 20007,
@@ -190,7 +210,7 @@
       "E": "Hadis rivâyet edene yemin ettirme"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Sahabe Dönemi Hadis Rivayeti",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
     "alt_konu": "Sahabenin Rivayet Tedbirleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -215,14 +235,20 @@
       "E": "Sünen-i Tirmizî"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Temel Hadis Kaynakları",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Sahih-i Müslim",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Ale'l-ebvâb sisteminde <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edilmiştir. Câmi türünün en önemli çalışmalarındandır. Günümüze Firebrî rivâyeti ile ulaşmıştır. İshak b. Râhûye'nin isteği ile müellif tarafından yazılmaya başlanmıştır. Üzerine en çok şerh yapılan çalışmadır. Yukarıdaki paragrafta hakkında bilgi verilen eser aşağıdakilerden hangisidir?",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.\n💡 Sınav Şifresi: Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sünen\" onclick=\"showVocabBubble(this, event)\">Sünen</span>-i Nesâî",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Hadisleri konularına göre değil, rivayet eden sahabîlerin isimlerine göre (ale’r-ricâl) sıralayan eser türüdür.\n💡 Sınav Şifresi: Sahabe adına göre sıralı = Müsned (En meşhuru: Ahmed b. Hanbel).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Müsned\" onclick=\"showVocabBubble(this, event)\">Müsned</span>-i Ahmed b. Hanbel",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.\n💡 Sınav Şifresi: Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sünen\" onclick=\"showVocabBubble(this, event)\">Sünen</span>-i Tirmizî"
+    }
   },
   {
     "id": 20009,
@@ -240,14 +266,15 @@
       "E": "Kitâbu'l-megâzî"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Tasnif Türleri",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Megâzî Kitapları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span> edebiyatı içerisinde bulunan Hz. Peygamber'in savaşlarına dair rivâyetlerin derlendiği eserlere ne ad verilir?"
   },
   {
     "id": 20010,
@@ -265,14 +292,15 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Tasnif Türleri",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Mu'cemler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Ale'l-ebvâb türü eserlerdir.\nII. Türün en önemli müellifi Taberânî'dir.\nIII. Hadis alınan hocalara göre <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edilen Mu'cem'ler \"mu'cemü'ş-şüyûh\" olarak da isimlendirilir.\nMu'cem'ler ile ilgili yukarıdaki yargılardan hangileri doğrudur?"
   },
   {
     "id": 20011,
@@ -290,14 +318,18 @@
       "E": "Cem"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadislerin Derlenmesi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Tasnif Dönemi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.\n💡 Sınav Şifresi: Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • Tedvîn\" onclick=\"showVocabBubble(this, event)\">Tedvîn</span> faaliyetiyle bir araya toplanan hadislerin belirli bir sistematik çerçevesinde râvîlerine ve konularına göre gruplandırılarak daha kullanışlı hale getirilmesi amaçlanmıştır. Bu faaliyet hadis tarihinde hangi aşamayı temsil etmektedir?",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span>"
+    }
   },
   {
     "id": 20012,
@@ -315,7 +347,7 @@
       "E": "Derleme"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Tasnif Türleri",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Müstahrec",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -340,7 +372,7 @@
       "E": "Cem’"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Tasnif Türleri",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Etrâf",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -365,7 +397,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Şerhçiliği",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Şerh Geleneği ve Önemli Şerhler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -390,7 +422,7 @@
       "E": "Etrâf"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Tasnif Türleri",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Zevâid",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -415,7 +447,7 @@
       "E": "İbn Melek"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Osmanlı Dönemi Hadis Çalışmaları",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Osmanlı Hadis Alimleri ve Eserleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -440,14 +472,15 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Modern Dönem Hadis Tartışmaları",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Fazlurrahman'ın Sünnet Anlayışı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">Sünnet</span>, her yerde ve her zaman geçerlidir\nII. <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">Sünnet</span> içeriği açısından mutlak(ideal) sünnet ve yaşayan sünnet şeklinde ikiye ayrılır\nIII. Hadisler teknik hadis, tarihi/biyografik hadis ve dînî hadis olarak kategorize edilir.\nFazlurrahman'ın sünnet anlayışı ile ilgili yukarıda verilen yargılarından hangileri doğrudur?"
   },
   {
     "id": 20018,
@@ -465,7 +498,7 @@
       "E": "Murtaza ez-Zebîdî"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Türkiye'de Hadis Çalışmaları",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Cumhuriyet Dönemi Hadis Tercümeleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -490,7 +523,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Osmanlı Dönemi Hadis Çalışmaları",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Osmanlı'da Dârülhadisler ve Eğitim",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -515,14 +548,20 @@
       "E": "Tezkiye"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Usulü",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Temel Kavramlar",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Allah’tan alınan vahyin hiçbir eksiltme ve artırma yapılmadan insanlara ulaştırılması görevidir.\n💡 Sınav Şifresi: Vahyi eksiksiz ulaştırma = Tebliğ (Mâide 67).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebliğ\" onclick=\"showVocabBubble(this, event)\">Tebliğ</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Hz. Peygamber’in Kur’an’daki kapalı (mücmel) hükümleri açıklaması ve detaylandırmasıdır.\n💡 Sınav Şifresi: Kur’an’ı açıklama ve detaylandırma = Tebyîn / Beyân (Nahl 44).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebyîn (Beyân)\" onclick=\"showVocabBubble(this, event)\">Tebyin</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Hz. Peygamber’in Kur’an’daki kapalı (mücmel) hükümleri açıklaması ve detaylandırmasıdır.\n💡 Sınav Şifresi: Kur’an’ı açıklama ve detaylandırma = Tebyîn / Beyân (Nahl 44).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebyîn (Beyân)\" onclick=\"showVocabBubble(this, event)\">Beyan</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"İnsanları şirk, günah ve kötü ahlaktan arındırma, manevi yönden temizleme vazifesidir.\n💡 Sınav Şifresi: Manevi arındırma + kötü huylardan temizleme = Tezkiye (Cuma 2).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tezkiye\" onclick=\"showVocabBubble(this, event)\">Tezkiye</span>"
+    }
   },
   {
     "id": 20021,
@@ -540,14 +579,20 @@
       "E": "Ahbar"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Usulü",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Hadis Yapısı (İsnad ve Metin)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Hadiste nakledilen içerik anlamına gelir. <span class=\"vocab-word concept-word\" data-tr=\"Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.\n💡 Sınav Şifresi: Râvîler zinciri/silsilesi = Senet / İsnad.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Senet (İsnad)\" onclick=\"showVocabBubble(this, event)\">İsnad</span> zincirinin peşinden gelen Hz. Peygamber’in sözleri ve davranışlarını ifade eden kısımdır. Yukarıda tanımlanan kavram aşağıdakilerden hangisidir?",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.\n💡 Sınav Şifresi: Râvîler zinciri/silsilesi = Senet / İsnad.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Senet (İsnad)\" onclick=\"showVocabBubble(this, event)\">İsnad</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Senedin bittiği yerde başlayan ve hadisin asıl içeriğini oluşturan söz veya haber kısmıdır.\n💡 Sınav Şifresi: Hadisin söz/içerik kısmı = Metin.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Metin\" onclick=\"showVocabBubble(this, event)\">Metin</span>"
+    },
+    "dogru_nedeni": "HADİS TARİHİ VE USÜLÜ (Hadis İlmi: Temel Kavramları ve Alt Dalları): Doğru yanıt D seçeneğidir. Senedin bittiği yerde başlayan ve hadisin asıl içeriğini oluşturan söz veya haber kısmıdır."
   },
   {
     "id": 20022,
@@ -565,7 +610,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
     "alt_konu": "Hadislerin Tesbit Dönemi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -590,7 +635,7 @@
       "E": "Hadis rivayetini azaltma"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Usulü",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
     "alt_konu": "Hadislerin Korunması Yöntemleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -615,14 +660,15 @@
       "E": "II, III ve IV"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Sünenler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Daha çok ahkâm hadisleri bulunmaktadır.\nII. Sıklıkla mevkuf ve maktu hadislere yer verilir.\nIII. Tirmizî'nin el-Câmi's-sahih'i de <span class=\"vocab-word concept-word\" data-tr=\"Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.\n💡 Sınav Şifresi: Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sünen\" onclick=\"showVocabBubble(this, event)\">sünen</span> türüne dahil edilmiştir.\nIV. <span class=\"vocab-word concept-word\" data-tr=\"İslam dünyasında en güvenilir kabul edilen altı hadis kitabıdır (Buhârî, Müslim, Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\n💡 Sınav Şifresi: Altı Temel Hadis Kitabı = Kütüb-i Sitte.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Kütüb-i Sitte\" onclick=\"showVocabBubble(this, event)\">Kütüb-i sitte</span>'deki sünenlere \"es-Sünenü'l-erbea\" denilir.\n\nSünenler ile ilgili yukarıdaki yargılarından hangisi/hangileri doğrudur?"
   },
   {
     "id": 20025,
@@ -640,7 +686,7 @@
       "E": "Muvatta’lar"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Konularına Göre Tasnif Edilen Eserler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -665,14 +711,18 @@
       "E": "Şerh"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Hadislerin Tasnifi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Hadis tarihinde <span class=\"vocab-word concept-word\" data-tr=\"Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.\n💡 Sınav Şifresi: Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • Tedvîn\" onclick=\"showVocabBubble(this, event)\">tedvîn</span> faaliyetiyle bir araya toplanan hadislerin daha kullanışlı hale getirilmesi için râvîlerine ve konularına göre gruplandırılmasına ne ad verilir?",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span>"
+    }
   },
   {
     "id": 20027,
@@ -690,7 +740,7 @@
       "E": "Müstedrek"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Eser Türleri (Müstahrec)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -715,7 +765,7 @@
       "E": "Müstedrek"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Eser Türleri (Zevaid)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -740,14 +790,15 @@
       "E": "Riyâzü’s-sâlihîn"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Seçme Hadis Kitapları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Nevevî, bu kitabıyla âyet ve hadisleri esas alarak fert, aile ve toplum planında uyulması gereken prensipleri ortya koymayı amaçlamıştır. Kitaptaki hadislerin büyük çoğunluğu <span class=\"vocab-word concept-word\" data-tr=\"İslam dünyasında en güvenilir kabul edilen altı hadis kitabıdır (Buhârî, Müslim, Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\n💡 Sınav Şifresi: Altı Temel Hadis Kitabı = Kütüb-i Sitte.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Kütüb-i Sitte\" onclick=\"showVocabBubble(this, event)\">Kütüb-i sitte</span>’den alınmıştır. Yukarıdaki paragrafta hakkında bilgi verilen eser aşağıdakilerden hangisidir?"
   },
   {
     "id": 20030,
@@ -765,7 +816,7 @@
       "E": "Ahmed Muhammed Şâkir"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Modern Dönem Hadis Çalışmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -790,14 +841,15 @@
       "E": "Kezzâb râvî teorisi"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Usulü",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Oryantalizm ve Hadis",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Oryantalistler tarafından ortaya atılan \"belirli bir <span class=\"vocab-word concept-word\" data-tr=\"Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.\n💡 Sınav Şifresi: Râvîler zinciri/silsilesi = Senet / İsnad.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Senet (İsnad)\" onclick=\"showVocabBubble(this, event)\">isnad</span> kümesinin merkezinde kendisiyle birlikte tarîklere ayrılmanın ilk başladığı yerde bulunan kişi (râvî) hadis uydurmanın merkezinde yer almaktadır\" tezine ne ad verilir?"
   },
   {
     "id": 20032,
@@ -815,7 +867,7 @@
       "E": "Mebâriku’l-ezhâr"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Osmanlı Dönemi Hadis Çalışmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -840,7 +892,7 @@
       "E": "Sahih-i Müslim"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Osmanlı Dönemi Hadis Eğitimi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -865,7 +917,7 @@
       "E": "Emânet"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Peygamberlerin Sıfatları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -890,21 +942,25 @@
       "E": "İlelü'l-hadis"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadis İlimleri",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Râvî İlimleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "Esbâbü <span class=\"vocab-word concept-word\" data-tr=\"Hadislerin hangi olay, soru veya sebep üzerine söylendiğini araştıran ilimdir.\n💡 Sınav Şifresi: Hadisin söylenme sebebi/bağlamı = Esbâbü Vürûdi’l-Hadîs.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 4 • Esbâbü Vürûdi’l-Hadîs\" onclick=\"showVocabBubble(this, event)\">vürûd</span>i'l-hadis",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Râvîlerin dindarlık (adalet) ve hafıza/koruma (zabt) yönünden güvenilir olup olmadıklarını inceleyen ilim dalıdır.\n💡 Sınav Şifresi: Cerh (kusur bulma/red) + Ta’dîl (güvenilir ilan etme) = Cerh ve Ta’dîl.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 4 • Cerh ve Ta’dîl\" onclick=\"showVocabBubble(this, event)\">Cerh ve tadil</span>"
+    }
   },
   {
     "id": 20036,
     "ders": "HADİS TARİHİ VE USÜLÜ",
     "ders_kodu": 801,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
     "soru_no": 37,
     "soru": "Aşağıdakilerden hangisi hadislerin güvenilirliğini sağlamak için benimsenen ilke veya yöntemlerden biri değildir?",
     "secenekler": {
@@ -915,14 +971,14 @@
       "E": "Raviden şahit isteme"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Usulü",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Rivayet Yöntemleri ve İlkeleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)"
   },
   {
     "id": 20037,
@@ -940,14 +996,19 @@
       "E": "Tasnif"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Usulü",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Hadis Kavramları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Senedin bittiği yerde başlayan ve hadisin asıl içeriğini oluşturan söz veya haber kısmıdır.\n💡 Sınav Şifresi: Hadisin söz/içerik kısmı = Metin.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Metin\" onclick=\"showVocabBubble(this, event)\">Metin</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.\n💡 Sınav Şifresi: Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • Tedvîn\" onclick=\"showVocabBubble(this, event)\">Tedvin</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span>"
+    }
   },
   {
     "id": 20038,
@@ -965,14 +1026,18 @@
       "E": "Tedvin"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Hadislerin Yazılı Dönemi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.\n💡 Sınav Şifresi: Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • Tedvîn\" onclick=\"showVocabBubble(this, event)\">Tedvin</span>"
+    }
   },
   {
     "id": 20039,
@@ -990,7 +1055,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
     "alt_konu": "Hadislerin Yazılması (Tedvin)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1015,14 +1080,18 @@
       "E": "Mezhepler arasında yaşanan ayrılıkların giderilmesi"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Hadislerin Tasnifi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi hadislerin <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edilmesindeki amaçlardan biri değildir?",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">Sünnet</span> arşivi oluşturma çabası"
+    }
   },
   {
     "id": 20041,
@@ -1040,14 +1109,18 @@
       "E": "Muvatta"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Hadis Eser Türleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi hadislerin râvilerine göre <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edildiği eser türlerinden biridir?",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.\n💡 Sınav Şifresi: Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sünen\" onclick=\"showVocabBubble(this, event)\">Sünen</span>"
+    }
   },
   {
     "id": 20042,
@@ -1065,14 +1138,15 @@
       "E": "İbn Mâce"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Kütüb-i Sitte",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"İslam dünyasında en güvenilir kabul edilen altı hadis kitabıdır (Buhârî, Müslim, Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\n💡 Sınav Şifresi: Altı Temel Hadis Kitabı = Kütüb-i Sitte.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Kütüb-i Sitte\" onclick=\"showVocabBubble(this, event)\">Kütüb-i sitte</span> içerisinde yer alan dört <span class=\"vocab-word concept-word\" data-tr=\"Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.\n💡 Sınav Şifresi: Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sünen\" onclick=\"showVocabBubble(this, event)\">Sünen</span> yazarından biri değildir?"
   },
   {
     "id": 20043,
@@ -1090,14 +1164,15 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Hadislerin Tasnifi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Hadisler ravi ve konulara göre sınıflandırılmıştır.\nII. Hicrî ikinci asır tasnifin altın çağı olarak nitelendirilmektedir.\nIII. Mihne <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> faaliyeti üzerinde etkili olmuştur.\n\nHadis <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnifi</span> ile ilgili yukarıdaki yargılardan hangileri doğrudur?"
   },
   {
     "id": 20044,
@@ -1115,7 +1190,7 @@
       "E": "Müstahrec"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Hadis Eser Türleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1140,14 +1215,15 @@
       "E": "Ebû Nuaym"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Önemli Hadis Eserleri ve Müellifleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Buhari ve Müslim'in şartlarına uyduğu halde eserlerine almadıkları hadisleri \"el-Müstedrek ale's-<span class=\"vocab-word concept-word\" data-tr=\"Hadis edebiyatının en sahih iki kitabı olan Sahîh-i Buhârî ve Sahîh-i Müslim’e verilen ortak isimdir.\n💡 Sınav Şifresi: Buhârî + Müslim = Sahîhayn (İki Sahih).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sahîhayn\" onclick=\"showVocabBubble(this, event)\">Sahîhayn</span>\" adlı eserinde derleyen müellif aşağıdakilerden hangisidir?"
   },
   {
     "id": 20046,
@@ -1165,7 +1241,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Cumhuriyet Dönemi Hadis Çalışmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1190,14 +1266,18 @@
       "E": "Esbabü'l Vürûdi’l-Hadîs"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis İlimleri",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Hadislerin Vürud Sebepleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"İlk bakışta birbiriyle çelişkili veya zıt gibi görünen hadisleri uzlaştırma ve çözme ilmidir.\n💡 Sınav Şifresi: Çelişkili görünen hadisleri uzlaştırma = İhtilâfü’l-Hadîs (veya Müşkilü’l-Hadîs).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 4 • İhtilâfü’l-Hadîs\" onclick=\"showVocabBubble(this, event)\">İhtilâfü’l-hadîs</span>",
+      "E": "Esbabü'l <span class=\"vocab-word concept-word\" data-tr=\"Hadislerin hangi olay, soru veya sebep üzerine söylendiğini araştıran ilimdir.\n💡 Sınav Şifresi: Hadisin söylenme sebebi/bağlamı = Esbâbü Vürûdi’l-Hadîs.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 4 • Esbâbü Vürûdi’l-Hadîs\" onclick=\"showVocabBubble(this, event)\">Vürûd</span>i’l-Hadîs"
+    }
   },
   {
     "id": 20048,
@@ -1215,7 +1295,7 @@
       "E": "İhtilafü'l Hadis"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis İlimleri",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Hadislerdeki Garip Kelimeler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1240,14 +1320,17 @@
       "E": "Bi’set"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hz. Peygamber ve Sünnet",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Peygamberlerin Sıfatları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"İnsanları şirk, günah ve kötü ahlaktan arındırma, manevi yönden temizleme vazifesidir.\n💡 Sınav Şifresi: Manevi arındırma + kötü huylardan temizleme = Tezkiye (Cuma 2).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tezkiye\" onclick=\"showVocabBubble(this, event)\">Tezkiye</span>"
+    }
   },
   {
     "id": 20050,
@@ -1265,7 +1348,7 @@
       "E": "Hadis rivayet edene yemin ettirme"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Usulü",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
     "alt_konu": "Hadislerin Korunması ve Rivayet Yöntemleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1290,7 +1373,7 @@
       "E": "Bilginin anlatılmasını teşvik etmek"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Hz. Peygamber Döneminde Hadislerin Yayılması",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1315,14 +1398,21 @@
       "E": "Hadisin tamamını değil bir kısmını vermek suretiyle tasnif edilmesi"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Mu'cemler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "Hadislerin ilk râvilerine göre <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edilmesi",
+      "B": "Sahabe ismine göre <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edilmesi",
+      "C": "Alfabetik olarak <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edilmesi",
+      "D": "Kitap yazarının hocalarına göre <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edilmesi",
+      "E": "Hadisin tamamını değil bir kısmını vermek suretiyle <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> edilmesi"
+    }
   },
   {
     "id": 20053,
@@ -1340,14 +1430,15 @@
       "E": "İbn Mâce"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Kütüb-i Sitte",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"İslam dünyasında en güvenilir kabul edilen altı hadis kitabıdır (Buhârî, Müslim, Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\n💡 Sınav Şifresi: Altı Temel Hadis Kitabı = Kütüb-i Sitte.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Kütüb-i Sitte\" onclick=\"showVocabBubble(this, event)\">Kütüb-i Sitte</span>'de yer alan kitapların yazarlarından biri değildir?"
   },
   {
     "id": 20054,
@@ -1365,14 +1456,20 @@
       "E": "Müsned"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Müsned Türü Eserler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Hanbelî Mezhebinin kurucu imamı olan Ahmed b. Hanbel'in hadisleri <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> ettiği eseri aşağıdaki hadis kitabı türlerinden hangisi içinde kabul edilir?",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.\n💡 Sınav Şifresi: Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sünen\" onclick=\"showVocabBubble(this, event)\">Sünen</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Hadisleri konularına göre değil, rivayet eden sahabîlerin isimlerine göre (ale’r-ricâl) sıralayan eser türüdür.\n💡 Sınav Şifresi: Sahabe adına göre sıralı = Müsned (En meşhuru: Ahmed b. Hanbel).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Müsned\" onclick=\"showVocabBubble(this, event)\">Müsned</span>"
+    },
+    "dogru_nedeni": "HADİS TARİHİ VE USÜLÜ (Hadis İlmi: Temel Kavramları ve Alt Dalları): Doğru yanıt E seçeneğidir. Hadisleri konularına göre değil, rivayet eden sahabîlerin isimlerine göre (ale’r-ricâl) sıralayan eser türüdür."
   },
   {
     "id": 20055,
@@ -1390,14 +1487,18 @@
       "E": "Hadisle ilgilenenlere kullanım kolaylığı sağlama"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Hadislerin Tasnif Edilmesi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">Sünneti</span> tahriften koruma",
+      "B": "Hz. Peygamber’e <span class=\"vocab-word concept-word\" data-tr=\"Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.\n💡 Sınav Şifresi: Râvîler zinciri/silsilesi = Senet / İsnad.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Senet (İsnad)\" onclick=\"showVocabBubble(this, event)\">isnad</span> edilen merfû hadislerle, mevkûf ve maktu’ rivayetleri birbirinden ayırma"
+    }
   },
   {
     "id": 20056,
@@ -1415,7 +1516,7 @@
       "E": "Müstedrek"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
     "alt_konu": "Tamamlayıcı Eserler (Müstedrek)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1440,7 +1541,7 @@
       "E": "cem’"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadis Usulü",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Tahric",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1465,14 +1566,15 @@
       "E": "Macdonald"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis ve Oryantalizm",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Oryantalistlerin Hadis Eleştirisi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Hadis <span class=\"vocab-word concept-word\" data-tr=\"Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.\n💡 Sınav Şifresi: Râvîler zinciri/silsilesi = Senet / İsnad.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Senet (İsnad)\" onclick=\"showVocabBubble(this, event)\">isnad</span> sisteminin güvenilir olduğunu savunan akımı başlatan oryantalist kimdir?"
   },
   {
     "id": 20059,
@@ -1490,14 +1592,15 @@
       "E": "en-Nüketü’t-tarîfe"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Osmanlı Dönemi Hadis Çalışmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Hadisle ilgili ------- eseriyle Gümüşhânevî; zamanın ihtiyaçlarına göre yeni hadis kitapları <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">tasnif</span> etmek ve hadislerin sıhhat ve mânâ bakımlarından yeniden değerlendirmesini yapmak gibi iki önemli tavır sergilemiştir. Yukarıdaki cümlede boş bırakılan yeri aşağıdakilerden hangisi doğru şekilde tamamlar?"
   },
   {
     "id": 20060,
@@ -1515,7 +1618,7 @@
       "E": "Medrese mezunlarının ağırlıklı olarak idareciliğe hazırlanması"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Osmanlı Dönemi Hadis Çalışmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1540,7 +1643,7 @@
       "E": "Menâkıb"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Hadis Konuları",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
     "alt_konu": "Hz. Peygamber'in Özellikleri ve Mucizeleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1565,7 +1668,7 @@
       "E": "Abdullah b. Zübeyr"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Sahabe",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
     "alt_konu": "Aşere-i Mübeşşere",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1590,7 +1693,7 @@
       "E": "Meşâriku’l-envâr"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Hadis Tarihi",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
     "alt_konu": "Osmanlı Dârulhadîsleri ve Müfredat",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1615,7 +1718,7 @@
       "E": "Mesâbîhu’s-sünne"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Hadis Kaynakları",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
     "alt_konu": "Meşhur Hadisler ve Derlemeler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1623,5 +1726,1359 @@
     "sekilli": false,
     "sinav_kodu": "1.1.1",
     "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+  },
+  {
+    "id": 20065,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 66,
+    "soru": "Aşağıdakilerden hangisi İslami İlimler ile ilgili doğru bir bilgi değildir?",
+    "secenekler": {
+      "A": "İslam Dini’nin temel iki kaynağı olan Kur’an ve Hz. Peygamber’in sünnetine dayanırlar.",
+      "B": "İslam Dini’ni dışarıdan ve tarafsız olarak incelerler.",
+      "C": "İslam Dini’nin ilkeleri doğrultusunda oluşmuş, Müslümanlar tarafından geliştirilmişlerdir.",
+      "D": "Müslümanlar’ın dînî açıdan sorumluluklarını ortaya koyarlar.",
+      "E": "Müslümanların anlam dünyalarını, değer yargılarını, hayat anlayışlarını biçimlendirirler."
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "İslami ilimler İslam Dini’nin temel iki kaynağı olan Kur’an ve Hz. Peygamber’in sünnetine yani uygulamalarına dayanırlar. Dolayısıyla bu ilimler, İslam Dini’nin ilkeleri doğrultusunda oluşmuş, Müslümanlar tarafından geliştirilmiş, İslam Dini’ne içeriden bakan ilimlerdir. İslamî İlimler, İslam Dini’ni dışarıdan ve tarafsız olarak incelemezler. Müslümanlar’ın dînî açıdan sorumluluklarını ortaya koyan, kural koyucu (normatif) ve bağlayıcı nitelikte ilim dallarıdır. Müslümanların anlam dünyalarını, değer yargılarını, hayat anlayışlarını biçimlendirirler."
+  },
+  {
+    "id": 20066,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 67,
+    "soru": "Ara sıra ve gelişigüzel yapılan şeylere değil, adet niteliğinde, devamlı ve sürekli, aynı zamanda bilinçli davranışları ifade eder, tanımı hangi kavrama aittir?",
+    "secenekler": {
+      "A": "Tasavvuf",
+      "B": "Sünnet",
+      "C": "Hadis",
+      "D": "Süre",
+      "E": "Tefsir"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Sünnet kelimesi Ara sıra ve gelişigüzel yapılan şeylere değil, âdet niteliğinde, devamlı ve sürekli, aynı zamanda bilinçli davranışları ifade eder.",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">Sünnet</span>"
+    }
+  },
+  {
+    "id": 20067,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 68,
+    "soru": "İnsanların kötü huylardan, günahlardan, kötülüklerden temizlenmesi, arındırılmasına ne denir?",
+    "secenekler": {
+      "A": "Tezkiye",
+      "B": "İsmet",
+      "C": "Tebliğ",
+      "D": "Kavli Sünnet",
+      "E": "Ahbar"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "İnsanların kötü huylardan, günahlardan, kötülüklerden temizlenmesi, arındırılmasına Tezkiye denir.",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"İnsanları şirk, günah ve kötü ahlaktan arındırma, manevi yönden temizleme vazifesidir.\n💡 Sınav Şifresi: Manevi arındırma + kötü huylardan temizleme = Tezkiye (Cuma 2).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tezkiye\" onclick=\"showVocabBubble(this, event)\">Tezkiye</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Allah’tan alınan vahyin hiçbir eksiltme ve artırma yapılmadan insanlara ulaştırılması görevidir.\n💡 Sınav Şifresi: Vahyi eksiksiz ulaştırma = Tebliğ (Mâide 67).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebliğ\" onclick=\"showVocabBubble(this, event)\">Tebliğ</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Hz. Peygamber’in bizzat söylediği mübarek sözleridir.\n💡 Sınav Şifresi: Hz. Peygamber’in sözleri = Kavlî Sünnet (Örn: Ameller niyetlere göredir).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Kavlî Sünnet\" onclick=\"showVocabBubble(this, event)\">Kavli Sünnet</span>"
+    }
+  },
+  {
+    "id": 20068,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 69,
+    "soru": "I. Meğâzî II. Siyer III. Şemail IV. Delâil Yukarıdakilerden hangisi / hangileri Peygamberimizi konu edinen ilimlerdendir?",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "Sadece II",
+      "E": "Hepsi"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Peygamberimizi konu edinen ilimler Meğâzî, Siyer, Şemail ve Delâildir."
+  },
+  {
+    "id": 20069,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 70,
+    "soru": "Hadisler arasındaki ihtilâfın giderilmesinde kullanılan ve “şer’î bir hükmün daha sonra gelen şer’î bir delille kaldırılması” şeklinde ifade edilen yöntem aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Cem‘ ve te’lîf",
+      "B": "Tercih",
+      "C": "Tevakkuf",
+      "D": "Nesh",
+      "E": "Mensûh"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Hadisler arasındaki ihtilâfın giderilmesinde dört temel yöntem vardır: Bu yöntemlerden nesh; Arapça’da yok etmek, ortadan kaldırmak, nakletmek anlamlarına gelir. İslâmî ilimlerde nesh’in tanımı: “Şer’î bir hükmün daha sonra gelen şer’î bir delille kaldırılması” şeklindedir. Yürürlükten kaldırılan önceki hükme mensûh, öncekini yürürlükten kaldıran sonraki hükme nâsih denir. Nesh konusu değişik problemleri olan geniş bir konudur. Detaylarında âlimler arasında tartışmalar vardır. Sadece hadis ilmini değil, tefsir ve fıkıh ilmini de ilgilendirir. Hadiste nesh konusu muhaddisler tarafından müstakil kitapların yazıldığı çok önemli bir konudur. Bu nedenle hadis ilminin alt dalı sayılabilir. Fakat İhtilâfü’l-hadîs ilmi içinde değerlendirilmesi daha doğrudur."
+  },
+  {
+    "id": 20070,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 71,
+    "soru": "Hz. Peygamber’in temel görevleri, Tebliğ; Beyân/Tebyîn; Tezkiye’ dir. Bu üç görev birbirinin devamı ve tamamlayıcısı niteliğindedir. Üçünün de en son amacı nedir?",
+    "secenekler": {
+      "A": "İnsanlara temizliği öğretmek",
+      "B": "İnsanların arındırılmasıdır",
+      "C": "Vahyi eksiksiz olarak insanlara bildirmek",
+      "D": "Vahyi düzenleyerek insanlara bildirmek",
+      "E": "İndirilen kitabı, ümmetine açıklaması"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Bu üç görev birbirinin devamı ve tamamlayıcısı niteliğindedir. Üçünün de en son amacı insanların arındırılmasıdır. Bu da Peygamberin sünnetinin amacının, manevi yönden arınmış bireyler ve onlardan meydana gelen bir toplum oluşturmak olduğu anlamına gelir.",
+    "soru_xray": "Hz. Peygamber’in temel görevleri, <span class=\"vocab-word concept-word\" data-tr=\"Allah’tan alınan vahyin hiçbir eksiltme ve artırma yapılmadan insanlara ulaştırılması görevidir.\n💡 Sınav Şifresi: Vahyi eksiksiz ulaştırma = Tebliğ (Mâide 67).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebliğ\" onclick=\"showVocabBubble(this, event)\">Tebliğ</span>; <span class=\"vocab-word concept-word\" data-tr=\"Hz. Peygamber’in Kur’an’daki kapalı (mücmel) hükümleri açıklaması ve detaylandırmasıdır.\n💡 Sınav Şifresi: Kur’an’ı açıklama ve detaylandırma = Tebyîn / Beyân (Nahl 44).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebyîn (Beyân)\" onclick=\"showVocabBubble(this, event)\">Beyân</span>/<span class=\"vocab-word concept-word\" data-tr=\"Hz. Peygamber’in Kur’an’daki kapalı (mücmel) hükümleri açıklaması ve detaylandırmasıdır.\n💡 Sınav Şifresi: Kur’an’ı açıklama ve detaylandırma = Tebyîn / Beyân (Nahl 44).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebyîn (Beyân)\" onclick=\"showVocabBubble(this, event)\">Tebyîn</span>; <span class=\"vocab-word concept-word\" data-tr=\"İnsanları şirk, günah ve kötü ahlaktan arındırma, manevi yönden temizleme vazifesidir.\n💡 Sınav Şifresi: Manevi arındırma + kötü huylardan temizleme = Tezkiye (Cuma 2).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tezkiye\" onclick=\"showVocabBubble(this, event)\">Tezkiye</span>’ dir. Bu üç görev birbirinin devamı ve tamamlayıcısı niteliğindedir. Üçünün de en son amacı nedir?"
+  },
+  {
+    "id": 20071,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 72,
+    "soru": "I. Tebliğ II. Beyan III. Tezkiye IV. Tesfir Yukarıdakilerden hangileri Hz. Peygamber'in görevlerindendir?",
+    "secenekler": {
+      "A": "I-II-III",
+      "B": "I-II-IV",
+      "C": "II-III-IV",
+      "D": "I-IV",
+      "E": "II-IV"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Cevap A'dır.",
+    "soru_xray": "I. <span class=\"vocab-word concept-word\" data-tr=\"Allah’tan alınan vahyin hiçbir eksiltme ve artırma yapılmadan insanlara ulaştırılması görevidir.\n💡 Sınav Şifresi: Vahyi eksiksiz ulaştırma = Tebliğ (Mâide 67).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebliğ\" onclick=\"showVocabBubble(this, event)\">Tebliğ</span> II. <span class=\"vocab-word concept-word\" data-tr=\"Hz. Peygamber’in Kur’an’daki kapalı (mücmel) hükümleri açıklaması ve detaylandırmasıdır.\n💡 Sınav Şifresi: Kur’an’ı açıklama ve detaylandırma = Tebyîn / Beyân (Nahl 44).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tebyîn (Beyân)\" onclick=\"showVocabBubble(this, event)\">Beyan</span> III. <span class=\"vocab-word concept-word\" data-tr=\"İnsanları şirk, günah ve kötü ahlaktan arındırma, manevi yönden temizleme vazifesidir.\n💡 Sınav Şifresi: Manevi arındırma + kötü huylardan temizleme = Tezkiye (Cuma 2).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Tezkiye\" onclick=\"showVocabBubble(this, event)\">Tezkiye</span> IV. Tesfir Yukarıdakilerden hangileri Hz. Peygamber'in görevlerindendir?"
+  },
+  {
+    "id": 20072,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 73,
+    "soru": "\"Hadislerin başındaki râvî silsilesini gösteren isimlerden oluşan râvîler zincirine _____ denir\". Yukardaki cümleyi tamamlayan en uygun ifade aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Sünnet",
+      "B": "İsnad",
+      "C": "Mendup",
+      "D": "Eser",
+      "E": "Metin"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Cevap B",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">Sünnet</span>",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Hadisi Hz. Peygamber’e kadar ulaştıran râvîler zinciridir.\n💡 Sınav Şifresi: Râvîler zinciri/silsilesi = Senet / İsnad.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Senet (İsnad)\" onclick=\"showVocabBubble(this, event)\">İsnad</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Senedin bittiği yerde başlayan ve hadisin asıl içeriğini oluşturan söz veya haber kısmıdır.\n💡 Sınav Şifresi: Hadisin söz/içerik kısmı = Metin.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Metin\" onclick=\"showVocabBubble(this, event)\">Metin</span>"
+    }
+  },
+  {
+    "id": 20073,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 74,
+    "soru": "Peygamberimizi konu edinen diğer ilimler aşağıdaki şıkların hangisinde doğru verilmiştir?",
+    "secenekler": {
+      "A": "Meğâzî, ta‘dîl, Mecrûh, Şemâil",
+      "B": "Meğâzî, Siyer, Şemâil, Delâil",
+      "C": "Meğâzî, Şemâil, Rivâyet, Delâil",
+      "D": "Meğâzî, Delâil, Fezâil, Mecrûh",
+      "E": "Meğâzî, Fezâil, Delâl, Ta’dîl"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Meğâzî, Arapça savaş anlamına gelen (ğ-z-v) kökünden türemiş bir kelimedir. İslam tarihinin erken dönemlerinde oluşmuş bir ilim dalıdır. Siyer, Peygamberimizin sadece savaşlarıyla değil, hayatının bütün yönleriyle ilgilenir. Şemâil, Peygamberimizin fiziksel özellikleriyle yani dış görünüşüyle ve ahlâkî vasıflarıyla ilgilenir, o konudaki verileri, bilgileri toplar ve değerlendirir. Delâil, Peygamberimizin mucizelerini konu edinir.",
+    "secenekler_xray": {
+      "E": "Meğâzî, Fezâil, Delâl, <span class=\"vocab-word concept-word\" data-tr=\"Râvîlerin dindarlık (adalet) ve hafıza/koruma (zabt) yönünden güvenilir olup olmadıklarını inceleyen ilim dalıdır.\n💡 Sınav Şifresi: Cerh (kusur bulma/red) + Ta’dîl (güvenilir ilan etme) = Cerh ve Ta’dîl.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 4 • Cerh ve Ta’dîl\" onclick=\"showVocabBubble(this, event)\">Ta’dîl</span>"
+    }
+  },
+  {
+    "id": 20074,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 75,
+    "soru": "Sünnet terimi ile ilgili aşağıdaki bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Devamlı ve sürekli davranışları ifade eder.",
+      "B": "Ara sıra yapılan bilinçsiz davranışları da kapsar.",
+      "C": "Hz. Peygamber’in yolu ve hayat tarzıdır.",
+      "D": "Âdet niteliği kazanmış davranışları ifade eder.",
+      "E": "Yaptırım gücü ve bağlayıcılığı kişilere ve ortama göre değişebilir."
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Sünnet kelimesi ara sıra ve gelişigüzel yapılan şeyleri değil, âdet niteliğinde, devamlı ve sürekli, aynı zamanda bilinçli davranışları ifade eder. Dolayısıyla arasıra yapılan ve bilinçsiz davranışlar sünnet anlamının dışında kalır.",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">Sünnet</span> terimi ile ilgili aşağıdaki bilgilerden hangisi yanlıştır?"
+  },
+  {
+    "id": 20075,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 76,
+    "soru": "I. Hadis Rivayetini Azaltma II. Hadis Rivâyet Edenden Şâhid İsteme III. Hadis Rivayet Edene Yemin Ettirme Yukarıdakilerin hangisi / hangileri hadislerin naklinde dikkat edilen husus / hususlardır?",
+    "secenekler": {
+      "A": "Sadece I",
+      "B": "Sadece II",
+      "C": "Sadece III",
+      "D": "I ve III",
+      "E": "Hepsi"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Gerçekte Müslümanlıkta her konuda doğruluğa, dürüstlüğe verilen önem, bilinen bir husustur. Pek çok ayet ve hadiste, doğrudan veya dolaylı olarak bunlara teşvikler yapılmış, yalan-dolan ise şiddetle yasaklanmıştır. Basit dünyevi işlerde bile durum böyle olunca dinin iki temel kaynağından biri olan hadislerin naklinde daha titiz davranılmasının gerekli görüleceği açıktır. Yukarıdaki maddelerin hepsi dikkat edilen hususlardır."
+  },
+  {
+    "id": 20076,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 77,
+    "soru": "Hadis öğreniminin güvenilirliği için hadis rivayetinin azaltılmasının sebebi hangisi olabilir?",
+    "secenekler": {
+      "A": "Şahid eksikliği",
+      "B": "Hadislerin sayısının az olması",
+      "C": "Hadis aktarımının tehlikeli olması",
+      "D": "Hata yapma riski",
+      "E": "Hadis rivayet eden kişilerin azalması"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Bazı sahabiler, Hz. Peygamber’in buyurduğu gibi rivayet edememe, başka bir ifadeyle rivayette hata yapma endişesiyle hadis rivayetinden kaçmışlar, mümkün olduğu kadar az hadis rivayet etmeye çalışmışlardır."
+  },
+  {
+    "id": 20077,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 78,
+    "soru": "Hadislerin kitaplarda ilk önce nasıl bir düzen içinde toplandıkları tahmin edilmektedir?",
+    "secenekler": {
+      "A": "Ravilerin fazilet sırasına konması",
+      "B": "Konu ve ravilerin rast gele yazılması",
+      "C": "Önce kısa hadisler, sonra uzun hadislerin yazılması",
+      "D": "Aynı konudaki hadislerin uygulama sırasına göre kaydedilmesi",
+      "E": "Herkesin rivayet ettiği hadisleri ayrı bir bölümde toplanması"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Hadislerin kitaplarda ilk olarak rast gale yazıldığı tahmin edilmektedir."
+  },
+  {
+    "id": 20078,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 79,
+    "soru": "Erkekle kadının zamanı belirlenen bir sü reye kadar, yani geçici olarak aralarında kıyılan nikâha ne denir?",
+    "secenekler": {
+      "A": "Belediye Nikâhı",
+      "B": "Mut‘a Nikâhı",
+      "C": "İmam Nikâhı",
+      "D": "Geçici Nikâh",
+      "E": "Anlaşmalı Nikâh"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Mut‘a nikâhı, erkekle kadının zamanı belirlenen bir süreye kadar, yani geçici olarak aralarında kıyılan nikâha denir. İslâm’ın ilk yıllarında Hz. Peygamber buna izin vermiş, ancak Hayber’in fethinden sonra kesin olarak yasaklamıştır."
+  },
+  {
+    "id": 20079,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 80,
+    "soru": "Aşağıdakilerden hangisi hadislerin bir kitap/divân içinde toplanmaları anlamına gelir?",
+    "secenekler": {
+      "A": "Tedvîn",
+      "B": "Tesbit",
+      "C": "Tasnif",
+      "D": "Mütekaddimûn",
+      "E": "Tâlimatnâme"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 2",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Değişik yazı malzemelerine kaydedilerek veya ezberlenerek koruma altına alınmış olan hadislerin kitaplar (dîvânlar) içinde toplanmasına tedvin denir. Hicrî 1. asrın sonlarından 2. asrın 1. veya 2. Çeyreğine kadar süren bir zaman dilimi tedvin dönemi olarak adlandırılır. Aslında değişik sahâbîlerin bildikleri hadisleri onlardan toplayıp yazma faaliyeti daha eskilere dayanır. Abdullah b. Abbâs’ın, sahâbîleri tek tek dolaşarak onlardan sorup öğrendiği hadisleri, yanında taşıdığı yazı malzemelerine yazdığı nakledilir. Bu da bir nevi tedvîn yani toplamadır. Ancak burada tedvînle daha değişik bir durum kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir “kitap/dîvân” içinde toplanmalarıdır. Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe Ömer b. Abdülazîz (halifeliği h. 99-101) olmuştur.",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.\n💡 Sınav Şifresi: Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • Tedvîn\" onclick=\"showVocabBubble(this, event)\">Tedvîn</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span>"
+    }
+  },
+  {
+    "id": 20080,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 81,
+    "soru": "Geniş kapsamlı ve bir “kitap/dîvân” içinde toplanarak, devlet eliyle ilk olarak hadisleri derleme faaliyeti başlatan kimdir?",
+    "secenekler": {
+      "A": "Ömer b. Abdülazîz",
+      "B": "Abdullah b. Abbâs",
+      "C": "İbn Şihâb ez-Zührî",
+      "D": "Abdullah b. Ömer",
+      "E": "Enes b. Mâlik"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Tedvînle daha değişik bir durum kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir “kitap/dîvân” içinde toplanmalarıdır. Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe Ömer b. Abdülazîz (halifeliği h. 99-101) olmuştu.",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Ömer b. Abdülazîz’in emriyle hadisleri ilk defa resmi olarak toplayıp tedvin eden büyük âlimdir.\n💡 Sınav Şifresi: Hadisleri ilk resmi tedvin eden âlim = İbn Şihâb ez-Zührî.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • İbn Şihâb ez-Zührî\" onclick=\"showVocabBubble(this, event)\">İbn Şihâb ez-Zührî</span>"
+    }
+  },
+  {
+    "id": 20081,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 82,
+    "soru": "Aşağıdakilerden hangisi Hadislerin sınıflandırılmasına verilen addır?",
+    "secenekler": {
+      "A": "Tesbît",
+      "B": "Tasnif",
+      "C": "Tedvin",
+      "D": "Tevhid",
+      "E": "Divan"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Hadisler önce yazılı ve sözlü olarak koruma ve kayıt altına alınmaya çalışılmış (tesbît), sonra bunlar belli kitaplar içinde bir ayaya toplanmış (tedvîn), ardından da bu kitaplardaki hadislerin sınıflandırılması (tasnîf) yoluna gidilmiştir.",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.\n💡 Sınav Şifresi: Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • Tedvîn\" onclick=\"showVocabBubble(this, event)\">Tedvin</span>"
+    }
+  },
+  {
+    "id": 20082,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 83,
+    "soru": "Aşağıdaki eylemlerden hangisi kişi öldükten sonra da amel defterinin kapanmamasını sağlayan üç amelden biridir?",
+    "secenekler": {
+      "A": "Birisini Müslüman yapmış olmak",
+      "B": "Geride faydalı ilim bırakmak",
+      "C": "Namaz kılmış olmak",
+      "D": "Zekat vermiş olmak",
+      "E": "Öğretmenlik yapmak"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Genel olarak ilim öğrenme veöğretmenin önemine dikkat çekmiş ve bunlara teşvikte bulunmuştur. Hz. Peygamber’in bu konudaki adislerinden öğreniyoruz ki, ilim öğrenmek her Müslüman’a farzdır. Kişi üstünlüğünü ilmiyle sürdürebilir. Geriye bırakılan faydalı ilim, ölümünden sonra insanın amel defterinin açık kalmasına sebep olan üç şeyden biridir. İnsan ilim öğrenme yolunda olduğu sürece Allah yolunda demektir."
+  },
+  {
+    "id": 20083,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 84,
+    "soru": "Aşağıdakilerden hangisi hadisi rivayet eden kimselerin sırasıyla zikredildiği kısmıdır?",
+    "secenekler": {
+      "A": "Sema",
+      "B": "er-Rıhle fî talebi’l-hadîs",
+      "C": "Şahid",
+      "D": "Sened",
+      "E": "Sille"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Hadis râvîlerinin bu şekilde incelenmeye başlamasına, aynı hadisi farklı yerlerde, farklı hocalardan biraz değişik şekilde almış olan kimselerin bu durumu; “Falan râvî şöyle dedi, filan râvî şöyle dedi...” diyerek anlatması eklenince hadis rivayetinde sened kullanımı ortaya çıktı. Sened, hadisin, onu rivayet eden kimselerin isimlerinin sırayla zikredildiği kısmıdır. Kullanılan şekliyle, yani her bir râvînin bir önceki râvînin (hocasının) ismini vererek ilk kaynağa varan (muttasıl) şekliyle Müslümanlara has olan sened kullanımı, hadisin güvenilirliğini sağlamak için ortaya çıkarılmıştı."
+  },
+  {
+    "id": 20084,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 85,
+    "soru": "Aşağıdakilerden hangisi hadislerin yazılı olarak toplandığı dönemdir?",
+    "secenekler": {
+      "A": "İspat",
+      "B": "Mütekaddimun",
+      "C": "Tesbit",
+      "D": "Tasnif",
+      "E": "Tedvin"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "alt_konu": "Ünite 2",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Aslında değişik sahâbîlerin bildikleri hadisleri onlardan toplayıp yazma faaliyeti daha eskilere dayanır. Abdullah b. Abbâs’ın, sahâbîleri tek tek dolaşarak onlardan sorup öğrendiği hadisleri, yanında taşıdığı yazı malzemelerine yazdığı nakledilir. Bu da bir nevi tedvîn yani toplamadır. Ancak burada tedvînle daha değişik bir durum kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir “kitap/dîvân” içinde toplanmalarıdır. Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe Ömer b. Abdülazîz (halifeliği h. 99- 101) olmuştu.",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Emevi Halifesi Ömer b. Abdülazîz’in emriyle hadislerin resmi olarak toplanıp yazıya geçirilmesidir.\n💡 Sınav Şifresi: Ömer b. Abdülazîz + İbn Şihâb ez-Zührî = Resmi Hadis Tedvîni.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 2 • Tedvîn\" onclick=\"showVocabBubble(this, event)\">Tedvin</span>"
+    }
+  },
+  {
+    "id": 20085,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 86,
+    "soru": "I. SünenlerII. Ale’r ricalIII. MusanneflerIV. Cami’lerV. Tartışma ve Reddiye kitaplarıHangisi konularına göre düzenlenmiş hadis kitabı türlerindendir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, III, IV ve V",
+      "D": "I, II, V",
+      "E": "Hepsi"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Ale’r rical ravilerine göre düzenlenmiş kitap türleridir.",
+    "soru_xray": "I. SünenlerII. Ale’r ricalIII. MusanneflerIV. <span class=\"vocab-word concept-word\" data-tr=\"Dinin tüm ana konularını (inanç, ibadet, ahlak, siyer, tefsir, fiten, adab, menakıb - 8 ana bölüm) içeren kapsamlı eserdir.\n💡 Sınav Şifresi: Tüm dini konuları içeren 8 ana bölümlü hadis eseri = Câmi’ (Buhârî, Müslim).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Câmi’\" onclick=\"showVocabBubble(this, event)\">Cami</span>’lerV. Tartışma ve Reddiye kitaplarıHangisi konularına göre düzenlenmiş hadis kitabı türlerindendir?"
+  },
+  {
+    "id": 20086,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 87,
+    "soru": "Hangi kelime Arapçada bir araya getiren, toplayan anlamında kullanılmıştır?",
+    "secenekler": {
+      "A": "Sünen",
+      "B": "Muvatta",
+      "C": "Musannef",
+      "D": "Mu’cem",
+      "E": "Cami"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Sünen sünnetler anlamına gelir. Muvatta üzerinde çok yürünmüş yoldur. Musannef tasnif edilmiş demektir. Mu’cem ise alfabetik olarak sıralanmış anlamına gelir .",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.\n💡 Sınav Şifresi: Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sünen\" onclick=\"showVocabBubble(this, event)\">Sünen</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Dinin tüm ana konularını (inanç, ibadet, ahlak, siyer, tefsir, fiten, adab, menakıb - 8 ana bölüm) içeren kapsamlı eserdir.\n💡 Sınav Şifresi: Tüm dini konuları içeren 8 ana bölümlü hadis eseri = Câmi’ (Buhârî, Müslim).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Câmi’\" onclick=\"showVocabBubble(this, event)\">Cami</span>"
+    }
+  },
+  {
+    "id": 20087,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 88,
+    "soru": "Sünnet karşıtları ve sünnetten sapanlar için kullanılan ifade aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ehlü’l-Bid‘a",
+      "B": "Ehlü’l-Hadîs",
+      "C": "Ehlü’s-Sünne",
+      "D": "Muhaddisler",
+      "E": "Müsteşrik"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Ehlü’s-Sünne, Ehlü’l-Hadîs diye isimlendiren hadisçiler kendilerini İslam toplumunun sünnet çizgisinde devamından sorumlu bir grup olarak görüyorlardı. Gerek yazdıkları müstakil konulu reddiyelerde ve tartışma kitaplarında gerekse çok konulu büyük kitapların ilgili bölümlerinde, iman amel ilişkisi, Allah’ın sıfatları, kader gibi ilmî ve fikrî tartışma konularında Ehlü’l-Bid‘a dedikleri sünnet karşıtlarına ve sünnetten sapanlara karşı, derledikleri ve tasnif ettikleri hadislerle cevaplar vermeyi dahası onların etkinliklerini zayıflatarak Sünnet’in etkinliğini artırmayı amaçlamışlardır.",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte yol, âdet, çığır, hayat tarzı demektir. Terim olarak Hz. Peygamber’in söz, fiil ve takrirleridir.\n💡 Sınav Şifresi: Sözlük: Yol/âdet. Terim: Hz. Peygamber’in söz, fiil ve onayları (kavlî, fiilî, takrîrî).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 1 • Sünnet\" onclick=\"showVocabBubble(this, event)\">Sünnet</span> karşıtları ve sünnetten sapanlar için kullanılan ifade aşağıdakilerden hangisidir?"
+  },
+  {
+    "id": 20088,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 89,
+    "soru": "Müsned, Arapça’da, bir yere veya birine dayandırılan şey anlamına gelir. Müsned türü eserlerde hadisler, hadisin ilk râvîsi olan sahâbîlere göre sıralanmaktadırlar. Aşağıdakilerden hangisi günümüze kadar ulaşmış Müsned türü eserler veren müelliflerdendir?",
+    "secenekler": {
+      "A": "Ma‘mer b. Râşid el-Ezdî",
+      "B": "Abdullah b. Vehb",
+      "C": "Rebî‘ b. Habîb el-Basrî",
+      "D": "Vekî’b. el-Cerrâh",
+      "E": "Muhammed b. Hârûn er-Rûyânî"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Müsnedler genellikle hicrî üçüncü asır başlarından itibaren yazılmaya başlanmışlardır ve müelliflerinin ismiyle anılırlar. Hadis tarihinde yüz elli civarında müsned türü hadis kitabı yazılmıştır. Bunlardan günümüze ulaşıp basılmış olanları şu müelliflere aittir: Abdullah b. el-Mübârek (ö.181/797) Ebu Bekr Abdullah b. Zübeyr b. Îsâ el-Humeydî (ö.219/834) Ebu’l-Hasen Ali b. Ca‘d el-Cevherî (ö.230/844) Ebu Bekr Abdullah b. Muhammed b. Ebû Şeybe (ö.235/867) İshak b. Râhûye (ö.238/852) Halîfe b. Hayyât (ö.240/854) Ahmed b. Hanbel (ö.241/855) Abd b. Humeyd (ö.249/863) Ahmed b. Amr el-Bezzâr (ö.292/904) Ebû Ya’lâ Ahmed b. Ali el-Mevsılî (ö.307/919) Muhammed b. Hârûn er-Rûyânî (ö.307/919) Ebû Avâne Yakub b. İshak el-İsferâyînî (ö.316/928)",
+    "soru_xray": "<span class=\"vocab-word concept-word\" data-tr=\"Hadisleri konularına göre değil, rivayet eden sahabîlerin isimlerine göre (ale’r-ricâl) sıralayan eser türüdür.\n💡 Sınav Şifresi: Sahabe adına göre sıralı = Müsned (En meşhuru: Ahmed b. Hanbel).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Müsned\" onclick=\"showVocabBubble(this, event)\">Müsned</span>, Arapça’da, bir yere veya birine dayandırılan şey anlamına gelir. <span class=\"vocab-word concept-word\" data-tr=\"Hadisleri konularına göre değil, rivayet eden sahabîlerin isimlerine göre (ale’r-ricâl) sıralayan eser türüdür.\n💡 Sınav Şifresi: Sahabe adına göre sıralı = Müsned (En meşhuru: Ahmed b. Hanbel).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Müsned\" onclick=\"showVocabBubble(this, event)\">Müsned</span> türü eserlerde hadisler, hadisin ilk râvîsi olan sahâbîlere göre sıralanmaktadırlar. Aşağıdakilerden hangisi günümüze kadar ulaşmış Müsned türü eserler veren müelliflerdendir?"
+  },
+  {
+    "id": 20089,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 90,
+    "soru": "Aşağıdakilerden hangisi Tasnif’in amaçlarından değildir?",
+    "secenekler": {
+      "A": "Hadislerin kaybolmaktan ve yok olmaktan korunması.",
+      "B": "Hadisleri düzenli, sistemli, kolay kullanılır hale getirilmesi.",
+      "C": "Hadislerin sınıflandırılması.",
+      "D": "Hadislerin tek bir kitap altında toplanması.",
+      "E": "Hadislerin korunması."
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Hadislerin tek bir kitap haline getirilmesi söz konusu değildir.",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Toplanan hadislerin konularına (ale’l-ebvâb) veya râvîlerine (ale’r-ricâl) göre sınıflandırılmasıdır.\n💡 Sınav Şifresi: Sınıflandırma ve bölümlere ayırma = Tasnîf.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Tasnîf\" onclick=\"showVocabBubble(this, event)\">Tasnif</span>’in amaçlarından değildir?"
+  },
+  {
+    "id": 20090,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 91,
+    "soru": "Hadis râvîlerinin hayat hikâyeleri, güvenilir olup olmadıklarına dair yazılan kitaplara ne ad verilir?",
+    "secenekler": {
+      "A": "Muvatta",
+      "B": "Sünenler",
+      "C": "Câmî",
+      "D": "Ricâl",
+      "E": "Zühd"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Hadis râvîlerinin hayat hikâyeleri, güvenilir olup olmadıklarına dair yazılan kitaplara ricâl kitapları denir. Bu konudaki kaynak ve temel kitaplar da Tasnif döneminde yazılmıştır. Fakat ricâl kitaplarının yazımı ileriki asırlarda da devam etmiştir."
+  },
+  {
+    "id": 20091,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 92,
+    "soru": "Aşağıdakilerden hangisinde yazılış yöntemlerine göre Hadis kitabı türleri doğru biçimde verilmiştir?",
+    "secenekler": {
+      "A": "Konularına Göre - Râvîlerine Göre",
+      "B": "Râvîlerine Göre - Tarihine Göre",
+      "C": "Tarihine Göre - İçeriğine Göre",
+      "D": "Râvîlerine Göre - Yazarına Göre",
+      "E": "Yazarına Göre - Tarihine Göre"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Hadisleri bir araya getiren hadis kitapları yazılış yöntemlerine göre iki ana gruba ayrılır: Konularına göre dü zenlenmiş olanlar. Râvîlerine göre dü zenlenmiş olanlar"
+  },
+  {
+    "id": 20092,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 93,
+    "soru": "I. Kitâbü’l-ferâiz II. Kitâbü’l-menâkıb III. Kitabü’l-cihâd IV. Kitâbü’l-Fiten V. Kitabü’ş-şemâil Yukarıda yer alan kitaplardan hangileri hicri üçüncü yüzyılda yazılmıştır?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "IV ve V",
+      "D": "II, III, IV ve V",
+      "E": "I ve IV"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Kitâbü’l-ferâiz, Kitâbü’l-menâkıb ve Kitabü’l-cihâd hicri ikinci yüzyılda yazılan kitaplardır. Kitâbü’l- Fiten ve Kitabü’ş-şemâil ise hicri üçüncü yüzyılda kaleme alındığınmıştır."
+  },
+  {
+    "id": 20093,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 94,
+    "soru": "Hangisi ahlâk hadisleri ile ilgilidir?",
+    "secenekler": {
+      "A": "Fedâil",
+      "B": "Muâmelât",
+      "C": "Ukûbât",
+      "D": "Imân",
+      "E": "İbadetler"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Ahkâm hadisleri dendiğinde ibadetler, muâmelât ve ukûbât konularındaki hadisler kastedilir. İman da ahkâm konularına dahil edilmektedir. Ahlâk konuları ise fedâil ve edeb başlıkları altında ele alınır."
+  },
+  {
+    "id": 20094,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 95,
+    "soru": "Aşağıdaki seçeneklerde gösterilen kitap türlerinden hangisi Malik b. Enes’e aittir?",
+    "secenekler": {
+      "A": "Sünen",
+      "B": "Müsned",
+      "C": "Musannef",
+      "D": "El-Cami",
+      "E": "Muvatta"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Imâ m Mâ lik’in meclisine ü ç yıl devam etmiş ve Malik’in Muvatta’ isimli eserinin ö nemli râ vı ̂lerinden birisi olmuştur.",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Yalnızca fıkıh/ahkâm konularına göre tertip edilmiş ve ahkâm hadislerini içeren eserlerdir.\n💡 Sınav Şifresi: Yalnızca fıkıh / ahkâm konularına göre = Sünen (Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sünen\" onclick=\"showVocabBubble(this, event)\">Sünen</span>",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Hadisleri konularına göre değil, rivayet eden sahabîlerin isimlerine göre (ale’r-ricâl) sıralayan eser türüdür.\n💡 Sınav Şifresi: Sahabe adına göre sıralı = Müsned (En meşhuru: Ahmed b. Hanbel).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Müsned\" onclick=\"showVocabBubble(this, event)\">Müsned</span>",
+      "D": "El-<span class=\"vocab-word concept-word\" data-tr=\"Dinin tüm ana konularını (inanç, ibadet, ahlak, siyer, tefsir, fiten, adab, menakıb - 8 ana bölüm) içeren kapsamlı eserdir.\n💡 Sınav Şifresi: Tüm dini konuları içeren 8 ana bölümlü hadis eseri = Câmi’ (Buhârî, Müslim).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Câmi’\" onclick=\"showVocabBubble(this, event)\">Cami</span>"
+    }
+  },
+  {
+    "id": 20095,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 96,
+    "soru": "Aşağıdaki kitaplardan hangisi temek hadis kaynaklarını tamamlamak amacıyla yazılmıştır?",
+    "secenekler": {
+      "A": "El-Müsnedü’l-müstahrec ala Sahihi’l-İmam Müslim",
+      "B": "El-Cem’byne’s-sahihayn",
+      "C": "Şuabü’l-iman",
+      "D": "El-Camiu’s-sağir",
+      "E": "Ziyadetü’l-Cami"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "El-Müsnedü’l-müstahrec ala Sahihi’l-İmam Müslim Tamamlayıcı nitelikteki eserlerdendir.",
+    "secenekler_xray": {
+      "B": "El-Cem’byne’s-<span class=\"vocab-word concept-word\" data-tr=\"Hadis edebiyatının en sahih iki kitabı olan Sahîh-i Buhârî ve Sahîh-i Müslim’e verilen ortak isimdir.\n💡 Sınav Şifresi: Buhârî + Müslim = Sahîhayn (İki Sahih).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sahîhayn\" onclick=\"showVocabBubble(this, event)\">sahihayn</span>",
+      "E": "Ziyadetü’l-<span class=\"vocab-word concept-word\" data-tr=\"Dinin tüm ana konularını (inanç, ibadet, ahlak, siyer, tefsir, fiten, adab, menakıb - 8 ana bölüm) içeren kapsamlı eserdir.\n💡 Sınav Şifresi: Tüm dini konuları içeren 8 ana bölümlü hadis eseri = Câmi’ (Buhârî, Müslim).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Câmi’\" onclick=\"showVocabBubble(this, event)\">Cami</span>"
+    }
+  },
+  {
+    "id": 20096,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 97,
+    "soru": "“Riyazü ’s-sâlihîn” isimli eserle ilgili aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "3000 adet hadis bulunmaktadır.",
+      "B": "Ayet ve hadisleri esas alarak fert, aile ve toplum planında uyulması gereken prensipleri ortaya koymayı amaçlamıştır.",
+      "C": "İyiliğe teşvik eden kötülüklerden sakındıran hadisleri bir araya getirmiştir.",
+      "D": "500 adet hadis bulunmaktadır.",
+      "E": "Zevâid türünde yazılmıştır."
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "“Riyazü ’s-sâlihîn” isimli eserde 1900 civarında hadis bulunmaktadır. Nevevî, bu kitabıyla âyet ve hadisleri esas alarak fert, aile ve toplum planında uyulması gereken prensipleri ortya koymayı amaçlamıştır."
+  },
+  {
+    "id": 20097,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 98,
+    "soru": "Belli bir kitabı esas alarak yapılan ilk şerh çalışması hangi eser üzerinden yapılmıştır?",
+    "secenekler": {
+      "A": "Buhârî’nin Sahih’i",
+      "B": "Ebu’l-Velîd el-Bâcî’nin el-Mü nteka’sı",
+      "C": "Aclûnî’nin Keşfu’lhafâ’sı",
+      "D": "Hâkim en-Nîsâbûrî’nin el-Mü stedrek’i",
+      "E": "Beyhakî’nin Şuabu’l-imân ’ı"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Belli bir kitabı esas alan ilk şerh çalışması hicrî dördü ncü asırda Hattâbî (ö. 388/998) tarafından Buhârî’nin Sahih’i ü zerine yapılmıştır."
+  },
+  {
+    "id": 20098,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 99,
+    "soru": "Hangisi Tirmizî’nin “el-Câmiu’s-sahih” i hakkında yapılan şerhler arasında yer alır?",
+    "secenekler": {
+      "A": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si",
+      "B": "Azimâbâdî’nin “Avnü’l-ma’bûd” u",
+      "C": "Sehârenfûrî’nin “Bezlü’l-mechûd fî halli Ebî Dâvûd” u",
+      "D": "Mâzerî’nin “el-Mu’lim bi fevâidi Müslim” i",
+      "E": "Kastallânî’nin “rşâdü’ s-sârî” si"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si Tirmizî’nin “el-Câmiu’s-sahih” i hakkında yapılan şerhler arasında en tanınanıdır. Azimâbâdî’nin “Avnü’l-ma’bûd” u ve Sehârenfûrî’nin “Bezlü’l- mechûd fî halli Ebî Dâvûd” u Ebû Dâvûd’un “es-Sünen” i hakkındaki en önemli şerhlerdendir. Mâzerî’nin “el-Mu’lim bi fevâidi Müslim” i Müslim’in el-Câmiu’s-sahîh’iyle ilgili ilk şerhtir. Kastallânî’nin “Irşâdü’ s-sârî” sinde ise isimli şerhinde başlangıçta Ibn Hacer’in “Hedyü’s-sârî” isimli mukaddimesi özetlenmektedir."
+  },
+  {
+    "id": 20099,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 100,
+    "soru": "“Kütüb-i sitte” de adı geçen râvilerin hemen hepsini ihtiva eden ilk çalışma hangisidir?",
+    "secenekler": {
+      "A": "Cemmâilî’nin “el-Kemâl fî esmâi’r-ricâl” i",
+      "B": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si",
+      "C": "Muhammed b. Hilfe b. Ömer el-Übbî’nin “Ikmâlü Ikmâli’l-Mu’lim” i",
+      "D": "Ibn Hacer’in “Hedyü’s-sârî” si",
+      "E": "Ibn Abdilberr’in “el-Istizkâr” ı"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "“Kütüb-i sitte”de adı geçen râvilerin hemen hepsini ihtiva eden ilk çalışma Cemmâilî’nin “el-Kemâl fî esmâi’r-ricâl” isimli eseridir. Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si Tirmizî’nin “el-Câmiu’s sahih” i hakkındadır, Muhammed b. Hilfe b. Ömer el-Übbî’nin “Ikmâlü Ikmâli’l-Mu’lim” i müslim şerhlerindendir. Ibn Hacer’ in “Hedyü’s-sârî” sine Kastallânî’nin “Irşâdü’s-sârî” isimli şerhinde yer verilmektedir. Ibn Abdilberr’in “el-Istizkâr”ı ise muvatta şerhlerindendir.",
+    "soru_xray": "“<span class=\"vocab-word concept-word\" data-tr=\"İslam dünyasında en güvenilir kabul edilen altı hadis kitabıdır (Buhârî, Müslim, Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce).\n💡 Sınav Şifresi: Altı Temel Hadis Kitabı = Kütüb-i Sitte.\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Kütüb-i Sitte\" onclick=\"showVocabBubble(this, event)\">Kütüb-i sitte</span>” de adı geçen râvilerin hemen hepsini ihtiva eden ilk çalışma hangisidir?"
+  },
+  {
+    "id": 20100,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 101,
+    "soru": "Buhârî ve Müslim tarafından sahih hadisleri bir eserde toplama faaliyeti ilk defa hangi asırda başlatılmıştı?",
+    "secenekler": {
+      "A": "Birinci asırda",
+      "B": "İkinci asırda",
+      "C": "Üçüncü asırda",
+      "D": "Dördüncü asırda",
+      "E": "Beşinci asırda"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa üçüncü asırda Buhârî ve Müslim tarafından başlatılmıştı. Buhârî eserinin ismindeki “elmuhtasar” ifadesiyle sahih hadislerin tamamını bir araya getirmediğini belirtmekteydi. Müslim de bu hususu eserinde açıkça ifade etmekteydi. Dolayısıyla Buhârî ve Müslim’in el-Câmiu’s-sahîh’leri sahih hadislerin tamamını ihtiva etmemekteydi."
+  },
+  {
+    "id": 20101,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 102,
+    "soru": "Esas aldıkları eserdeki rivâyetleri, başka isnadlarını tespit etmek suretiyle kuvvetlendiren çalışmalara hangisi denmektedir?",
+    "secenekler": {
+      "A": "Müstahrec",
+      "B": "Zevâid",
+      "C": "Kütüb-i erbaa",
+      "D": "Müstedrek",
+      "E": "Sahîhayn"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Müstahrec, daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri, teker teker ele alarak kitap sahibinin senedinden başka bir senedle rivâyet etmek suretiyle meydana getirilen hadis kitabıdır. Müstahrecler, esas aldıkları eserdeki rivâyetleri, başka isnadlarını tespit etmek suretiyle kuvvetlendiren çalışmalardır. Esas alınan müellifin rivâyet ettiği hadislerin lafızlarıyla müstahrec yazarının rivâyet ettiği hadislerin lafızlarında ve mânasında mutlak uygunluk şart değildir. Genellikle söz konusu iki eserdeki hadisler arasında lafız farklılıklarının olduğu görülür.",
+    "secenekler_xray": {
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Hadis edebiyatının en sahih iki kitabı olan Sahîh-i Buhârî ve Sahîh-i Müslim’e verilen ortak isimdir.\n💡 Sınav Şifresi: Buhârî + Müslim = Sahîhayn (İki Sahih).\" data-note=\"HADİS TARİHİ VE USÜLÜ Ünite 3 • Sahîhayn\" onclick=\"showVocabBubble(this, event)\">Sahîhayn</span>"
+    }
+  },
+  {
+    "id": 20102,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 103,
+    "soru": "Aşağıdaki eser türlerinden hangisi kişiyi iyiliğe teşvik edip kötülükten uzaklaştırmak amacıyla derlenmiş hadislerden oluşmaktadır?",
+    "secenekler": {
+      "A": "et-Terğîb ve’t-terhîb",
+      "B": "ihtilâfü’l-hadis",
+      "C": "Keşfu’l-hafâ",
+      "D": "Riyâzü’s-sâlihîn",
+      "E": "el-Makâsıdü’l-hasene"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Terğîb iyiliğe teşvik, terhîb ise kötülükten sakındırmak demektir. Münzirî et-Terğîb ve’t-terhîb isimli eserinde iyiliğe teşvik eden kötülüklerden sakındıran hadisleri bir araya getirmiştir. Müellif her konunun, terğîb ve terhîb (teşvik ve uyarı) yönlerini dile getiren hadisleri iki grupta toplamak suretiyle önce terğîb sonra terhîbi ilgilendiren hadisleri vermiştir."
+  },
+  {
+    "id": 20103,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 104,
+    "soru": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa kaçıncı asırda başlatılmıştır?",
+    "secenekler": {
+      "A": "Birinci asırda",
+      "B": "İkinci asırda",
+      "C": "Üçüncü asırda",
+      "D": "Dördüncü asırda",
+      "E": "Beşinci asırda"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa üçüncü asırda Buhârî ve Müslim tarafından başlatılmıştı. Buhârî eserinin ismindeki “el-muhtasar” ifadesiyle sahih hadislerin tamamını bir araya getirmediğini belirtmekteydi. Müslim de bu hususu eserinde açıkça ifade etmekteydi."
+  },
+  {
+    "id": 20104,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 105,
+    "soru": "Hicri 322’de Mekke’de vefat eden Hz. Peygamber’in mektuplarını ilk toplayan kişi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hasan el- Basrî",
+      "B": "Vecîhuddin el-Mâlikî",
+      "C": "Ebu Cafer ed- Deybülî",
+      "D": "Seyyid Refîuddin es-Safevî eş-Şîrâzî",
+      "E": "Şeyh Ali el-Muttakî"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Hind bölgesinde yetişen muhaddislerden biri de Ebu Cafer ed-Deybülî’dir. Deybül bugün Pakistan sınırlarında bulunan Karaçi yakınlarında bir yerleşim merkezidir. Hicri 322’de Mekke’de vefat eden Deybülî, Hz. Peygamber’in mektuplarını ilk toplayan kişi olarak bilinmektedir."
+  },
+  {
+    "id": 20105,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 106,
+    "soru": "Aşağıdakilerden hangisi Arap dünyasında hadis ilmi ile ilgilenen önemli şahsiyetlerden değildir?",
+    "secenekler": {
+      "A": "Muhammed Habibullah eş-Şinkiti",
+      "B": "Muhammed Fuad Abdülbaki",
+      "C": "Abdülfettah Ebû Gudde",
+      "D": "Ebû Musa Necîh es-Sindî",
+      "E": "Muhammed b. Ca‘fer el-Kettânî"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Ebû Musa Necîh es-Sindî Hınd alt kıtasında hadis ilmi ile ilgilenen şahıslardandır."
+  },
+  {
+    "id": 20106,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 107,
+    "soru": "Kânûnî devrinde 1557’de yapılan Dârulhadîsi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Süleymaniye Dârulhadîsi",
+      "B": "Edirne Dârulhadîsi",
+      "C": "İstanbul Dârulhadîsi",
+      "D": "Beyazıt Dârulhadîsi",
+      "E": "Mısır Dârulhadîsi"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "II. Bayezid döneminde 1485 yılında Amasya’da yaptırılan Abdullah Paşa Dârulhadîsi ile Kânûnî devrinde 1557’de yapılan Süleymaniye Dârulhadîsi önemli kurumlardır. Özellikle Edirne ve Süleymaniye Dârulhadîsleri Osmanlı üst düzey yöneticilerinin hem yetiştirildiği hem de yönetim hiyerarşisinde görev üstlendikleri yerlerdir. Bu asırda Seydî Çelebi’nin ( ö. 932/1525) kaleme aldığı Mustahrec mine’l-Buhârî adlı hadis kitabı siyaset konuludur. Molla Lütfi de (ö. 901/1495) Ta‘lîka ale’l-Câm‘i’ssahîh adlı bir hadis kitabı telif etmiştir."
+  },
+  {
+    "id": 20107,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 108,
+    "soru": "I. Dinîve Gayrî Dinî Rivayetler II. Sahîh-i Mü slim ve Tercü mesi III. Bü lûğu'l-Merâm Terceme ve Şerhi Yukardakilerden hangisi veya hangileri Türkiye Cumhuriyeti’nde yapılan Hadis çalışmalarındandır?",
+    "secenekler": {
+      "A": "I",
+      "B": "II",
+      "C": "I - II",
+      "D": "I - II - III",
+      "E": "III"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Belirtilen eserlerin tamamı Türkiye’de Cumhuriyet dönemi sonrasında yapılmış Hadis çalışmalarındandır."
+  },
+  {
+    "id": 20108,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 109,
+    "soru": "Osmanlı dârulhadîsi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "İlk olarak Orhan Gazi devrinde kurulmuştur.",
+      "B": "Osmanlı’nın egemen olduğu her yere açılmıştır.",
+      "C": "Edirne Dârulhadîsi’ni Molla Gürânî yaptırmıştır.",
+      "D": "Murad devrinde Abdullah Paşa Dârulhadîsi yaptırılmıştır.",
+      "E": "Seydî Çelebi, burada en çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazmıştır."
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Osmanlı’nın egemen olduğu her yere açılmıştır. İlk Osmanlı dârulhadîsi I. Murad devrinde kurulmuştur. Edirne Dârulhadîsi’ni II. Murad yaptırmıştır. Abdullah Paşa Dârulhadîsi II. Beyezid devrinde yaptırılmıştır. Ibn Melek burada en çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazmıştır."
+  },
+  {
+    "id": 20109,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 110,
+    "soru": "İlk Osmanlı dârulhadîsinin hangi padişah zamanında yapılmıştır?",
+    "secenekler": {
+      "A": "II. Bayezid",
+      "B": "Yavuz Sultan Selim",
+      "C": "I. Murad",
+      "D": "Fatih Sultan Mehmet",
+      "E": "II. Murat"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "İlk Osmanlı dârulhadîsinin I. Murad devrinde İznik’te Çandarlı Hayreddin Paşa (ö. 789/1387) tarafından yaptırıldığı kabul edilir."
+  },
+  {
+    "id": 20110,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 111,
+    "soru": "Hadislerin büyük bir kısmının uydurma olduğunu ilk defa kim iddia etmiştir?",
+    "secenekler": {
+      "A": "Aloys Sprenger",
+      "B": "Reinhart Dozy",
+      "C": "William Muir",
+      "D": "Goldziher",
+      "E": "Joseph Schacht"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "G. H. A. Juynboll’ün belirttiğine göre, hadislerin büyük bir kısmının uydurma olduğunu ilk defa Avusturyalı oryantalist Aloys Sprenger iddia etmiştir. Juynboll, Sprenger’in Sahîh-i Buhârî’deki hadislerin en az yarısının sahihliğini kabul eden Reinhart Dozy, Weil ve William Muir’den daha şüpheci olduğunu ifade etmiştir."
+  },
+  {
+    "id": 20111,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 112,
+    "soru": "I. Hadis geleneği diğer bölgelere oranla Anadolu’ya daha geç gelmiştir. II. Osmanlıda âlimler üzerindeki idârî motivasyon, diğer bölgelerden çok daha güçlüdür. Dolayısıyla hadisle meşgul olanlar bu alanda yeterliliklerini ispatlamaya yetecek tarzda çalışmalarla yetinmişlerdir. III. Osmanlıda egemen mezhep olarak Hanefîliğin kabul edilmesi ekoller arasındaki rekabetin oluşmasını ve tabiatıyla farklı eserlerin yazımını azaltmıştır. Yukarıdaki maddelerden hangisi /hangileri Osmanlının hadis sahasında çok miktarda ve çok çeşitli eserler vermediklerinin sebepleri arasındadır?",
+    "secenekler": {
+      "A": "Sadece I",
+      "B": "Sadece II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "Hepsi"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Osmanlı hadis müderrisleri incelendiği zaman, hadis sahasında çok miktarda ve çok çeşitli eserler vermedikleri görülür. Bu durumun Osmanlı eğitim sistemindeki fıkıh-kelâm merkezlilikten ve medrese mezunlarının ağırlıklı olarak idareciliğe hazırlanmasından kaynaklandığı söylenebilir."
+  },
+  {
+    "id": 20112,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 113,
+    "soru": "Hind’de hadisin yayılmasında en çok kimin emeğinin geçtiği bilinmektedir?",
+    "secenekler": {
+      "A": "Şeyh Abdülhak b. Seyfuddin elBuhârî ed-Dehlevî.",
+      "B": "Ali el-Muttakî",
+      "C": "Şeyh Muhammed Tahir el-Fettenî",
+      "D": "Seyyid Refîuddin es-Safevî eş-Şîrâzî",
+      "E": "Şeyh Nureddin Ahmed eş-Şîrâzî"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Hind’de hadisin yayılmasında en çok Şeyh Abdülhak b. Seyfuddin elBuhârî ed-Dehlevî’nin emeğinin geçtiği anlaşılmaktadır. Onun bu husuta “O, hadis ilmini Hind’de ilk yayan kimsedir!” denilecek kadar büyük hizmeti olmuştu. Şeyh Abdülhak 958/1551’de Delhi’de doğmuştu."
+  },
+  {
+    "id": 20113,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 114,
+    "soru": "Osmanlı medreselerinde en çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l- envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazan aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İbn Hacer el-Askalânî",
+      "B": "İzzeddin Abdüllatif",
+      "C": "Molla Gürânî",
+      "D": "Seydî Çelebi",
+      "E": "Molla Lütfi"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Yakın Dönem Hadis Çalışmaları",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "İlk Osmanlı dârulhadîsinin I. Murad devrinde İznik’te Çandarlı Hayreddin Paşa (ö. 789/1387) tarafından yaptırıldığı kabul edilir. Bu asrın en önde gelen ismi İbn Melek diye tanınan İzzeddin Abdüllatif’tir (ö. 797/1394). Tire’de müderrislik yapan İbn Melek Osmanlı medreselerinde en çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazmıştır. Doğru cevap B'dir."
+  },
+  {
+    "id": 20351,
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "ders_kodu": 801,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 1,
+    "soru": "Müstahrec nedir?",
+    "secenekler": {
+      "A": "Daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri teker teker ele alarak kitap sahibinin senedinden başka bir senedle rivayet etmek suretiyle meydana getirilen hadis kitabıdır.",
+      "B": "Müellifin şartlarına uyduğu halde kitabına almadığı hadisleri toplamak suretiyle onun eksikliklerini tamamlayan kitaptır.",
+      "C": "Tüm hadislerin bir araya getirilerek tekrardan yazıldığı kitaptır.",
+      "D": "Sadece Hz. Peygamberim söylediği hadislerdir.",
+      "E": "Hz. Peygamber ve sahabelerinin söylediği hadislerin sınıflandırıldığı kitaptır."
+    },
+    "dogru_cevap": "A",
+    "dogru_nedeni": "Müstahrec ( ‫) اﻟﻤﺴﺘﺨﺮج‬, Daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri teker\n         teker ele alarak kitap sahibinin senedinden başka bir senedle rivayet etmek suretiyle meydana\n         getirilen hadis kitabıdır.",
+    "ana_konu": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 5,
+    "sekilli": false,
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)"
   }
 ]

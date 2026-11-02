@@ -6,7 +6,7 @@ import {
   toggleGrammarLayer,
   toggleQuestionFeatures,
 } from './features-bar.ts';
-import { setBookletFilter, setUnifiedMode } from './filter.ts';
+import { setBookletFilter, setUnifiedMode, toggleUnifiedDropdown } from './filter.ts';
 import { setContentViewMode } from './view-mode.ts';
 import { dismissResumeBanner, resumeLastSession } from './resume.ts';
 
@@ -31,6 +31,7 @@ export function initBooklet(): void {
         setUnifiedMode(mode);
       }
     },
+    'toggle-unified-dropdown': () => toggleUnifiedDropdown(),
     'resume-last-session': () => resumeLastSession(),
     'dismiss-resume-banner': () => dismissResumeBanner(),
     'toggle-features-bar': () => toggleFeaturesBar(),

@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdakilerden hangisi orucu bozmayan fakat mekruh olan davranışlardan birisi değildir?",
+    "secenekler": {
+      "A": "Genç oruçlunun eşini öpmesi",
+      "B": "Diş fırçalamak",
+      "C": "Yemeği yutmadan sadece tadına bakmak",
+      "D": "Şekersiz sakız çiğnemek",
+      "E": "Ağır işlerde çalışmak"
+    },
+    "ans": "B",
+    "solution": "Orucu Bozmayan Fakat Mekruh Olan Davranışlar\n         Orucu bozulma tehlikesi ile karşı karşıya getirebilecek davranışlar mekruhtur, bunlardan kaçınmakta\n         yarar vardır. Mesela abdest esnasında ağız çalkalanırken boğaz kısmının iyice ıslanması için aşırı\n         hassasiyet gösterildiği takdirde suyun boğaza kaçma tehlikesi vardır. Öyleyse oruçlunun, ağzını\n         çalkalarken boğazını tamamen ıslatmaya çalışması mekruhtur. Bu esnada boğaza su kaçarsa oruç\n         bozulur. Burna su çekmedeki aşırı hassasiyet de aynıdır. Oruçluya mekruh olan diğer hallerin bir\n         kısmı şöyle sıralanabilir:\n         1. Genç oruçlunun eşini öpmesi, kucaklaması, ona sarılması.\n         2. Yemeği yutmadan sadece tadına bakmak.\n         3. Şekersiz sakız çiğnemek.\n         4. Ağır işlerde çalışmak.\n         5. Oruçluya yakışmayan davranışlarda bulunmak.\n\n                Diş fırçalamak veya misvak kullanmak ise orucu bozmayan, mekruh da olmayan hallerdendir. Doğru\n                cevap B'dir."
+  },
+  {
+    "q_num": 2,
+    "stem": "I. Vaktinde tutulmayan Ramazan orucunun kazası farz değildir. II. Eksik ya da hatalı davranıştan ötürü tutulan keffâret oruçları farzdır. III. Ramazan orucu, gerekli şartları taşıyan her Müslümana farzdır. Yukarıdakilerden hangisi ya da hangileri farz oruçlarla ilgili doğru kabul edilmektedir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "ans": "D",
+    "solution": "Ramazan ayında oruç tutmak, şartlarını taşıyan her Mü slü mana farzdır. Kendisine oruç farz olan bir\n                Mü slü man bu ay içinde herhangi bir gü nü oruçsuz geçirmişse onu daha sonra tutar. Ayrıca keﬀâ ret\n                oruçları da farzdır. Bazı hatalı veya eksik davranışlardan dolayı Mü slü manlardan bir miktar oruç\n                tutmaları istenir. Bu oruçlara keﬀâ ret orucu denir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Bir kudsî hadiste ifade edildiğ ine göre Allah “Insanoğ lunun her ameli kendisi içindir fakat oruç bundan hariçtir; o, benim içindir ve onun karşılığ ını ben vereceğ im” buyurur. Bu hadisin devamında Hz. Peygamberin orucu neye benzettiği aşağıda verilen seçeneklerin hangisinde doğru olarak verilmiştir?",
+    "secenekler": {
+      "A": "Mızrak",
+      "B": "Güneş",
+      "C": "Kalkan",
+      "D": "Demir",
+      "E": "Ok"
+    },
+    "ans": "C",
+    "solution": "Hadisin devamında oruç, kalkana benzetilir (Buhârî, “ Savm”, 2). Kalkan, sahibini muhtemel\n         tehlikelerden koruduğ u gibi oruç da oruçluyu çeşitli kötülüklerden ve günahlardan korur. Yalnız\n         bunun için orucun sırf yeme-içmeyi terk etmekten ibaret kalmaması, oruçlunun davranışlarına da\n         yansıması gerekir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Aşağıdakilerden hangisi keffaret gerektirecek durumlardan biri değildir?",
+    "secenekler": {
+      "A": "Bile bile sigara içmek",
+      "B": "Cinsi münasebette bulunmak",
+      "C": "İsteyerek ilaç yutmak",
+      "D": "Abdest alırken boğazına veya burna su çekerken genzine hata ile suyun kaçması",
+      "E": "Enfiye çekmek"
+    },
+    "ans": "D",
+    "solution": "Abdest alırken boğazına veya burna su çekerken genzine hata ile suyun kaçması orucu bozup,\n         kazayı gerektiren bir durumdur."
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdaki durumların hangisinde oruç bozulur?",
+    "secenekler": {
+      "A": "Diş fırçalamak",
+      "B": "Makyaj yapmak",
+      "C": "Yıkanmak",
+      "D": "Dişe ilaç konulması",
+      "E": "İçine duman çekmek"
+    },
+    "ans": "E",
+    "solution": "Herhangi bir dumanı içine çekmek veya kaçınması mümkün olduğu halde kaçınmayarak solumak\n         orucu bozar. Kaza gerektiren bir durumdur."
+  },
+  {
+    "q_num": 6,
+    "stem": "Aşağıdakilerden hangisi orucu bozulma tehlikesi ile karşı karşıya getirebilecek mekruh davranışlardan biridir?",
+    "secenekler": {
+      "A": "Orucu bozan bir davranışı unutarak yapmak",
+      "B": "Makyaj yapmak",
+      "C": "Ağır işlerde çalışmak",
+      "D": "İstemeyerek toz veya duman yutmak",
+      "E": "Krem kullanmak"
+    },
+    "ans": "C",
+    "solution": "Ağır işlerde çalışmak ve oruçlunun sağlığını bozacak veya kendisini zayıf düşürecek işler yapması\n         mekruhtur. Eğer vücudu zayıf düşürecekse kan aldırmak da böyledir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Oruçluların gireceği cennet kapısı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Salat",
+      "B": "Reyyan",
+      "C": "Eymen",
+      "D": "Af",
+      "E": "Zikir"
+    },
+    "ans": "B",
+    "solution": "Hz. Peygamber’in bildirdiğine göre cennete girecek insanlar dünyadaki önemli amellerine göre\n         değişik kapılardan hatta bazıları bu kapıların her birinden ayrı ayrı davet edilecektir. O kapılardan\n         biri de oruçluların girişine ayrılmış olan “Rayyân” kapısıdır. Bu kapı, onlar girdikten sonra\n         kapatılacak, başkaları oradan giremeyecektir. Doğru cevap B’dir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Allah’ın rızâsını kazanma niyetiyle çoğunlukla ramazan ayının son on gününde bir mescitte kalmak aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İhram",
+      "B": "İ’tikâf",
+      "C": "Eid",
+      "D": "Akefe",
+      "E": "Fitr"
+    },
+    "ans": "B",
+    "solution": "İslâm öncesi Mekke toplumunca da bilinen i‘tikâf, Hz. Peygamber’in uygulamalarıyla sünnet vasfı\n         kazanmıştır. İ’tikâf, Arapça’da tenha bir yerde kalmak, bir şeye bağlanmak gibi anlamları bulunan\n         “‘akefe” ﬁilinden türetilmiştir ve kelimenin farklı türevleri Kur'ân-ı Kerim’de dokuz âyette\n         kullanılmıştır. İslâmî literatürde i’tikâf, “Bir mescitte Allah’ın rızâsını kazanma niyetiyle bir süre\n         kalmak” anlamında kullanılır ve farklı görüşlere göre bu tarife, kalınacak sürenin miktarı, mescidin\n         mahiyeti ve orada kalan kişinin oruçlu olması gibi diğer unsurlar ilave edilir.\n\n                Hz. Peygamber çoğunlukla ramazan ayının son on gününde Mescid-i Nebevî’de i‘tikâfa girer, yani\n                günün bütün saatlerini orada geçirirdi. Kendisine bu maksatla mescit içinde bir çadır kurulduğu,\n                zorunlu ihtiyaçları dışında mescitten çıkmadığı bilinmektedir. Doğru cevap B’dir."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdaki bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Bir fındığı kabuklu haliyle yutmak orucu bozar.",
+      "B": "Sahur vaktinde yemek yiyerek oruca hazırlanmak sünnettir.",
+      "C": "Diş dolgusu yaptırmak orucu bozar.",
+      "D": "Oruçlu iken uyuyana rüya (ihtilam) sonucu gusül gerekmesi orucu bozmaz.",
+      "E": "Oruçlunun iftar vakti olduğunu zannederek iftardan biraz önce su içmesi orucu bozar."
+    },
+    "ans": "C",
+    "solution": "Dişe dolgu yaptırmak orucu bozmaz. Doğru seçenejk C'dir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdaki seçeneklerin hangisinde oruç ibadetinin nasıl olması gerektiğini ifade eden bir hadis yer almaktadır?",
+    "secenekler": {
+      "A": "\"İnsanoğlunun her ameli kendisi içindir fakat oruç bundan hariçtir; o, benim içindir ve onun karşılığını ben vereceğim.”",
+      "B": "“Yalan söylemeyi ve sahtekarlığı terk etmeyen oruçlu bilmelidir ki Allah’ın onun yeme-içme fiillerini terk etmesine ihtiyacı yoktur.”",
+      "C": "“Kim Allah yolunda bir gün oruç tutarsa, Allah o günden dolayı onun yüzünü cehennemden yetmiş yıllık mesafe kadar uzaklaştırır.”",
+      "D": "“Ramazan ayını inanmış olarak ve sırf Allah için oruçlu geçiren kimsenin geçmiş günahları bağışlanır.”",
+      "E": "“Kim bir oruçluya iftar ettirirse ona o oruçlunun sevabı kadar sevap olur. Bu, oruçlunun sevabından hiç bir şey de eksiltmez.”"
+    },
+    "ans": "B",
+    "solution": "B seçeneği dışındaki seçeneklerde orucun fazileti ve oruç tutanların alacağı sevaplardan\n         bahsedilmektedir. D seçeneğnde ise orucun nasıl tutulması gerektiği ifade edilmektedir."
+  }
+]

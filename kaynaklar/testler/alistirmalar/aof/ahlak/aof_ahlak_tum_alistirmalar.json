@@ -1,0 +1,652 @@
+[
+  {
+    "q_num": 1,
+    "stem": "İslamiyet’te Amel ne demektir?",
+    "secenekler": {
+      "A": "Uygulama",
+      "B": "Doktrin",
+      "C": "Ayet",
+      "D": "Sünnet",
+      "E": "Farz"
+    },
+    "ans": "A",
+    "solution": "Müslümanlıkta amel uygulama demektir yani sadece lafta değil yaşantıdada emirleri yerine\n         getirmek gerekir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Müslümanın davranış düzenine esas teşkil eden veya davranırken tabi olduğu kurallar neyi kasteder?",
+    "secenekler": {
+      "A": "İslâm felsefesini",
+      "B": "İslâm fıtratını",
+      "C": "İslâm ahlâkını",
+      "D": "İslâm egosunu",
+      "E": "İslâm şartlarını"
+    },
+    "ans": "C",
+    "solution": "Bu çerçevede İslâm ahlâkı denildiğinde, müslümanın davranış düzenine\n         esas teşkil eden veya davranırken tabi olduğu kurallar kastedilmekte; bu\n         kurallar ise öncelikle Kur’an-ı Kerim olmak üzere, Hadis kitaplarında\n         derlenmiş olan Hz. Peygamber’den ve Hz. Peygamber hakkındaki\n         rivayetlerde bulunmaktadır. Bunlara ek olarak daha sonra yaşamış olan\n         sahabe, tabiin, tebeü’t-tabi’in yanında İslâm tarihinde toplum nezdinde kabul\n         görmüş önemli âlim ve zahidlerin hayatları, önemli devlet adamlarının iyi\n         olarak kabul edilen fiilleri de, özellikle çocukların ahlâki eğitimi söz konusu\n         olduğunda, müracaat edilen kaynaklar arasındadır. Bu yönden muhtelif\n         menakıb kitaplarının da ahlâk literatüründen sayılması gerekmektedir."
+  },
+  {
+    "q_num": 3,
+    "stem": "“Din samimiyettir”, “ ben güzel ahlâkı tamamlamak için gönderildim” ve “sen yüksek bir ahlâk üzeresin” sözü neyi ifade eder?",
+    "secenekler": {
+      "A": "Dini ifade eder",
+      "B": "Din ile ahlâk arasındaki derin irtibatı ifade eder",
+      "C": "Din ile beşer arasındaki derin irtibatı ifade eder",
+      "D": "Ahlâkı ifade eder",
+      "E": "Din ile ahlâk arasındaki derin uçurumu ifade eder"
+    },
+    "ans": "B",
+    "solution": "“Din samimiyettir”, “ ben güzel ahlâkı tamamlamak için gönderildim” ve\n         “sen yüksek bir ahlâk üzeresin” ifadeleri, din ile ahlâk arasındaki derin\n         irtibatı ifade etmek için yeterlidir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Davranış düzeninin ilkelerinin neler olduğu ve bunlar arasında da bir düzenin olup olmadığını; varsa bunun keyfiyetini ele alan aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ahlâk Felsefesi",
+      "B": "Ahlâk Sosyolojisi",
+      "C": "Ahlâk Psikolojisi",
+      "D": "Etik",
+      "E": "İslam Ahlâkı"
+    },
+    "ans": "A",
+    "solution": "Davranış düzeninin ilkelerinin neler olduğu ve bunlar arasında da bir düzenin olup olmadığını; varsa\n         bunun keyfiyetini ele alan ahlâk felsefesidir"
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi, ahlâk kavramını doğru tanımlar?",
+    "secenekler": {
+      "A": "Ortam",
+      "B": "Teyit etmek",
+      "C": "Yöneliş",
+      "D": "Davranış düzeni",
+      "E": "Muhtelif bağlam"
+    },
+    "ans": "D",
+    "solution": "Ahlâk, davranış düzenidir. Her insan az veya çok bir düzen içerisinde hayatını sürdürdüğü, daha\n         doğrusu sürdürmek zorunda olduğu için, ahlâk insan hayatının zorunlu bir boyutu, eskiden denildiği\n         gibi “mütemmim cüzü” veya “tamamlayıcı parçası” dır. Doğru cevap D seçeneğidir."
+  },
+  {
+    "q_num": 6,
+    "stem": "\"Ahlak insan hayatının mütemmim cüzüdür.\" cümlesinde \"mütemmim cüzü\" ile kast edilen aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Temel itkisi",
+      "B": "Yasaklayıcı boyutu",
+      "C": "Doğal sonucu",
+      "D": "En derin ruhsal boyutu",
+      "E": "Tamamlayıcı parçası"
+    },
+    "ans": "E",
+    "solution": "Burada \"mütemmim cüzü\" \"tamamlayıcı parçası\" anlamındadır."
+  },
+  {
+    "q_num": 7,
+    "stem": "İnsanda iyilik cihetini anlamayı ve kabul etmeyi sağlayacak bir yatkınığın olması durumu aşağıdakilerden hangisi ile tanımlanır?",
+    "secenekler": {
+      "A": "Hakk",
+      "B": "İhtiyar",
+      "C": "Sahih iman",
+      "D": "Sevk eden",
+      "E": "Bizzat hayır"
+    },
+    "ans": "B",
+    "solution": "İnsanda iyilik cihetini anlamayı ve kabul etmeyi sağlayacak bir yatkınığın olması gerekir. Bu\n         yatkınlığın adı \"İhtiyar\" dır. İhtiyâr hayrı, iyiyi, varlığa yakın olanı tercihe yatkınlık anlamına\n         gelmektedir. Bu yatkınlık, insanda söylenen sözü, bir hitabı anlama konusunda önceden bulunan bir\n         hazırlığa, hazır bulunan, ona verilmiş bir kabiliyete delalet etmektedir. Hüsn-i ihtiyar, insandaki\n         bu yatkınlığın etkin olması, insanın kendisine ulaşan ilahi hidayet ile kendindeki hayır cihetini\n         keşfetmesi anlamına gelmektedir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Aşağıdakilerden hangisi iyi ve kötü fiillerin neler olduğunu öğrendiğimiz kaynaklardan biri değildir?",
+    "secenekler": {
+      "A": "Hadis kitapları",
+      "B": "Fütüvvetname türü eserler",
+      "C": "Adab kitapları",
+      "D": "Ruznameler",
+      "E": "Menakib kitapları"
+    },
+    "ans": "D",
+    "solution": "Ruznameler, iyi ve kötü fiillerin neler olduğunu öğrendiğimizi kaynaklardan biri değildir. ruznameler\n         günlük anlamındadır."
+  },
+  {
+    "q_num": 9,
+    "stem": "\"Hakiki din insanların uydurduğu birbirine muhalif hayali kurgular değil, hakiki Yaratıcıyı tanımak O'nun kanun ve emirlerine uygun davranmayı görev edinmektir\" diyen kimdir?",
+    "secenekler": {
+      "A": "Ahmed Naim",
+      "B": "Farabi",
+      "C": "Elmalılı Hamdi Yazır",
+      "D": "Nurettin Topçu",
+      "E": "Abdullah Draz"
+    },
+    "ans": "C",
+    "solution": "Söz konusu sözü meşhur tefsir müellifi Elmalılı Hamdi Yazır söylemiştir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Dinin ahlak ile irtibatıyla ilgili genel olarak kaç tür anlayış gelişmiştir?",
+    "secenekler": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "ans": "B",
+    "solution": "iki anlayış gelişmiştir. 1. faziletlerin kazanılması ve faziletli olma olarak ahlak, 2. kurallı yaşama ve\n         bu kurallara uygun davranma olarak ahlak."
+  },
+  {
+    "q_num": 1,
+    "stem": "“Nakil akla hareket alanı açmış, akıl da nakle etkin olma yollarını geliştirmiştir. Nakil ve aklı buluşturup telif eden ise, tevatür olmuştur” sözü hangi düşünüre aittir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "Elmalı",
+      "C": "Yunus",
+      "D": "Mevlana",
+      "E": "Arvasi"
+    },
+    "ans": "A",
+    "solution": "Gazali’nin dediğine denk düşerek, nakil akla hareket alanı açmış, akıl da nakle etkin olma yollarını\n         geliştirmiş. Nakil ve aklı buluşturup telif eden ise, tevatür olmuştur."
+  },
+  {
+    "q_num": 2,
+    "stem": "Hz. Peygamber’in İslâm ahlâkındaki kaynak konumunu keşfedebilmek için hangi konuyu dikkate almak gerekir?",
+    "secenekler": {
+      "A": "Varlık kaynağı veya varoluş imkânı",
+      "B": "Olgu-değer ilişkisi meselesini",
+      "C": "Fiiller ve dile getirdiği ahlâki ilke ve kurallar",
+      "D": "Yeni bir varoluş imkanı",
+      "E": "Gerçek ve yaşanmış olan"
+    },
+    "ans": "B",
+    "solution": "Hz. Peygamber’in İslâm ahlâkındaki kaynak konumunu keşfedebilmek için son zamanlarda ahlâk\n         felsefesinde özellikle tartışılan bir konuyu, olgudeğer ilişkisi meselesini, dikkate almak ve bu\n         çerçevede Hz. Peygamber’in bir fiili gerçekleştirmiş olmasının, nasıl olup ta, hangi gerekçelerle\n         ahlâki bir ideali, yani olması gerekeni ifade edebildiğini açıklamak gerekmektedir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Ahlak ilmine ilişkin olarak rivayetlerin ve verilerin anlaşılması aşamasına ne denir?",
+    "secenekler": {
+      "A": "Tasnif",
+      "B": "Tafsil",
+      "C": "Tahsil",
+      "D": "Tedkik",
+      "E": "Tahkik"
+    },
+    "ans": "C",
+    "solution": "Rivayetlerin ve verilerin anlaşılması aşamasına tahsil edilmesi denilmektedir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Bütün ahlâk felsefelerinin temel sorusu aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İnsana faydacı bir yaşam koşulu sunma",
+      "B": "Geçmiş felsefi akımlar ile bağlarını koparma",
+      "C": "Gelecek ile ilgili tahminde bulunma",
+      "D": "İnsanlar arasında davranış düzenini mümkün kılan ilke",
+      "E": "Dinler arasındaki benzerlikleri bulma"
+    },
+    "ans": "D",
+    "solution": "Her bir insanda insan olması bakımından belirli bir davranış düzeni içinde hayatını sürdürmesini\n         sağlayan müşterek bir ilkenin olması gerektiği kabul edildiğinde, bu ilkenin tahakkuk edip etmediği\n         ve nihayet, bu ilkenin hangi ilke olduğu sorusu ortaya çıkar. Hemen hemen bütün ahlâk\n         felsefelerinin temel sorusu budur: İnsanlar arasında davranış düzenini mümkün kılan ilke nedir?\n         Veya hangi ilke insanların hayatlarını belirli bir düzen içinde sürdürmesini mümkün, gerekli, hatta\n         zorunlu kılmaktadır. Doğru cevap D'dır."
+  },
+  {
+    "q_num": 5,
+    "stem": "İslam ahlakının (davranışların) temel kaynağı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Kuran",
+      "B": "Sünnet",
+      "C": "Sahabe hayatı",
+      "D": "Tasavvuf",
+      "E": "Hanefilik"
+    },
+    "ans": "A",
+    "solution": "Bu davranış düzeninde sırasıyla Kur’an-ı Kerim, Hz. Peygamber’in uygulamaları ve sahabenin buna\n         fiilî ve kavlî (sözlü) şahadetinin muhtelif cihetlerden kaynak değeri vardır. Bunun yanında bütün\n         Müslümanların tarih boyunca bu kaynakların verili şartlarda nasıl uygulanacağı ve ne gibi neticeler\n         ortaya çıkardığı hususunda gösterdiği gayret ve bu verileri hem nakil, hem tasnif hem de üst bir dil\n         oluşturarak makul bir şekilde uygulama pratiğinin de, sonraki nesiller için kaynak değeri vardır.\n         Doğru cevap A'dır."
+  },
+  {
+    "q_num": 6,
+    "stem": "İnsanların iyi ya da kötü davranışları ilk olarak öğrendikleri birim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Aile",
+      "B": "Toplum",
+      "C": "Okul",
+      "D": "Üniversite",
+      "E": "Kişini kendi vicdanı"
+    },
+    "ans": "A",
+    "solution": "İnsanın doğumundan itibaren nasıl yetiştiğini ve elde ettiği bilgileri, -buna iyi ve kötü davranışların\n         bilgisi de dahildir-, nasıl elde ettiğine bakacak olursak, insanın iyi ve kötü hakkındaki bilgilerini esas\n         itibariyle naklen elde ettiğini fark ederiz. İnsan iyi ve kötü hakkındaki bilgilerini önce ailesinden\n         sonra da ait olduğu toplumdan ve toplumsal eğitim kurumlarından elde eder. Ancak sadece burada\n         kalmaz; öğrenirken ve öğrendikten sonra kendisi de elde ettiği bu malumat üzerinde düşünür ve\n         bununla ilgili olarak kendi kanaatini ve tavrını geliştirir. Doğru cevap A'dır."
+  },
+  {
+    "q_num": 7,
+    "stem": "\"havas-ı selime\" aşağıdakilerden hangisine karşılık gelmektedir?",
+    "secenekler": {
+      "A": "Selim akıl",
+      "B": "Güzel ahlak",
+      "C": "İdrak melekesi",
+      "D": "Beş duyu",
+      "E": "Düşünme yetisi"
+    },
+    "ans": "D",
+    "solution": "İnsanın sahip olduğu havas-ı selime (beş duyu) ile, bütün insanlarda müşterek olan bir cisim algısına\n         sahip olması ve bu algı üzerinden diğerleri ile irtibatını ve iletişimini sağlayıp muhafaza etmesi gibi,\n         doğruluk, insanların dokunulmazlığı, mülkiyete saygı gibi temel ahlâki kuralların da, insan\n         topluluklarının devamı için ve devamı sebebiyle, ahlâki makuliyetin esasını teşkil ettiğini\n         söyleyebiliriz. Doğru cevap D'dir."
+  },
+  {
+    "q_num": 8,
+    "stem": "\"Rivayet (hadis) re'ysiz, re'y de rivayet olmadan olamaz\" diyen kimdir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "İbn Haldun",
+      "C": "Muhammed eş-Şeybani",
+      "D": "Farabi",
+      "E": "İbn Sina"
+    },
+    "ans": "C",
+    "solution": "Bu söz Muhammed Eş-Şeybani'ye aittir."
+  },
+  {
+    "q_num": 9,
+    "stem": "İslam ahlakının önemli eserlerinden olan İhya isimli eserin yazarı kimdir?",
+    "secenekler": {
+      "A": "Abdullah b. Mübarek",
+      "B": "Ahmed b. Hanbel",
+      "C": "Buhari",
+      "D": "Maverdi",
+      "E": "Gazali"
+    },
+    "ans": "E",
+    "solution": "Gazali’nin \"Ihya\" isimli eseri Islâ m ahlâ kının ö nemli kaynaklarından biridir. Doğru cevap E'dir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Ahlâki konularda Kur’an-ı Kerim’in muhatabı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İnsan",
+      "B": "Melek",
+      "C": "Nebat",
+      "D": "Şeytan",
+      "E": "Hayvanlar"
+    },
+    "ans": "A",
+    "solution": "İnsan bir bütün olarak K. Kerim’in muhatabıdır. Bu, ahlâk söz konusu olduğunda, insanın bütün\n         yönlerini talep eden K. Kerim’in talebinin sadece bir cihetini teşkil etmektedir."
+  },
+  {
+    "q_num": 1,
+    "stem": "Tasavvufta hürriyet, felsefe ve kelamda ele alındığı şeklinden farklı olarak aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Araçtır",
+      "B": "Gayedir",
+      "C": "Hareket noktasıdır",
+      "D": "Bahsi söz konusu değildir",
+      "E": "Yok hükmündedir"
+    },
+    "ans": "B",
+    "solution": "Tasavvufta hürriyet, felsefe ve kelamda ele alındığı şekliyle ahlâkın hareket noktası değil, gayesidir.\n         Tasavvufi ahlâkta nefsin arzu ve isteklerine karşı verilmesi istenen mücadele insanın hürriyetiyle\n         ilişkilendirilir. İnsanın ahlâki mükemmelliğe ulaşması ve Allah’a yakınlaşmasını önleyen bedeni ve\n         dünyevi arzuların kurtulma mücadelesi aynı zamanda iradeyi hür kılma çabasıdır. İnsanın şuurunu\n         meşgul eden, Allah’tan başka her şeyin hürriyeti kısıtladığını düşünen bazı büyük sufiler cennet\n         nimetlerini arzulamayı bile gerçek hürriyete aykırı görmüşlerdir. Asıl hürriyet kulun üzerinde\n         Allah’tan başka hiçbir şeyin etkili olmamasıdır. Gerçek hürriyet Allah’a tam kul olmaktır.\n         Tasavvuftaki “fakr” makamı hürriyeti de ihtiva eder. Zira fakr, insanın hiçbir şeye sahip olmaması\n         değil, hiçbir şeyin insana sahip olmamasıdır. Bu bakımdan hürriyet ahlâkın hareket noktası değil,\n         gayesidir. Doğru cevap B'dir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdakilerden hangisi insanın yaratılış sebebi de olan insanı bütün varlıklardan ayıran asıl özelliğidir?",
+    "secenekler": {
+      "A": "İyi ve kötüyü idrak gücüdür.",
+      "B": "Cismani ve ruhani gücüdür.",
+      "C": "Akıl ve hakikatları idrak gücüdür.",
+      "D": "Saf ve temiz olma gücüdür.",
+      "E": "Ruhani melekelerin gücüdür."
+    },
+    "ans": "C",
+    "solution": "İnsan akıllı bir varlıktır. İnsanı bütün varlıklardan ayıran asıl özelliği onun yaratılış sebebi de olan aklı\n         ve hakikatleri idrak gücüdür."
+  },
+  {
+    "q_num": 3,
+    "stem": "Ahlâ k teorileri geliştiren dü şünü rler bazı temel soruları dikkate alarak gö rü şlerini ortaya koymuşlardır. Aşağıdakilerden hangisi sözü edilen temel sorulardan değildir?",
+    "secenekler": {
+      "A": "Iyi ve kö tü ﬁiller nelerdir?",
+      "B": "Bir ﬁili iyi veya kö tü yapan ö zellikler nelerdir?",
+      "C": "Hangi sebeplerden dolayı iyi davranışlar tercih edilir, kö tü davranışlardan da kaçınılır?",
+      "D": "Iyiyi gerçekleştirmek için insan ne yapmalıdır?",
+      "E": "İnsan ne ile yaşar?"
+    },
+    "ans": "E",
+    "solution": "Ahlâ k teorileri geliştiren dü şünü rler şu temel soruları dikkate alarak gö rü şlerini ortaya koymuşlardır.\n                1. Insan nedir? 2. Iyi ve kö tü ﬁiller nelerdir? 3. Bir ﬁili iyi veya kö tü yapan ö zellikler nelerdir? 4. Hangi\n                sebeplerden dolayı iyi davranışlar tercih edilir, kö tü davranışlardan da kaçınılır? 5. Iyiyi\n                gerçekleştirmek için insan ne yapmalıdır? insan ne ile yaşar sorusu temel sorulardan değildir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Ahlaki fitleri kendinden iyi ve kötü olanlar ve bir ihtiyaca, duruma, başlangıç veya sonuca göre iyi veya kötü olanlar diye ikiye ayıran kimdir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "Farabi",
+      "C": "Maturidi",
+      "D": "İbn sina",
+      "E": "Eş'ari"
+    },
+    "ans": "C",
+    "solution": "Söz konusu görüşün sahibi Maturidi'dir."
+  },
+  {
+    "q_num": 5,
+    "stem": "Filozoflara göre hakikatin nihai belirleyicisi kim veya nedir?",
+    "secenekler": {
+      "A": "İyilik",
+      "B": "Akıl",
+      "C": "İnsan fiilleri",
+      "D": "Tanrı",
+      "E": "Kader"
+    },
+    "ans": "B",
+    "solution": "Filozoflara göre hakikatin nihai belirleyicisi akıldır."
+  },
+  {
+    "q_num": 6,
+    "stem": "Maturidi’nin ahlâk teorisinde ahlâki fiiller kaç kısma ayrılır?",
+    "secenekler": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "ans": "B",
+    "solution": "Maturidi’nin ahlâk teorisinde ahlâki fiiller ikiye ayrılır: 1. kendinde iyi veya kötü olanlar; 2. bir\n         ihtiyaca, duruma, başlangıç ya da sonuca göre iyi veya kötü olanlar."
+  },
+  {
+    "q_num": 7,
+    "stem": "Hangisi nefs' in çeşitli seviyelerde güçlerinden değildir?",
+    "secenekler": {
+      "A": "Bitkisel seviyede beslenme",
+      "B": "Büyüme ve üreme güçleri",
+      "C": "Hayvani seviyede hareket etme",
+      "D": "İdrak güçleri",
+      "E": "Hikmet"
+    },
+    "ans": "E",
+    "solution": "İslâm felsefesinde de insan, nefis ve bedenden oluşan bir varlıktır. Asıl olan nefs olup bunun da\n         çeşitli seviyelerde güçleri vardır. Bunlar bitkisel seviyede beslenme, büyüme ve üreme güçleri;\n         hayvani seviyede hareket etme ve idrak güçleri; insani seviyede de düşünme ve bilme güçleridir. Bu\n         güçler\n         arasında hiyerarşik bir düzen mevcut olup bir alttaki üsttekine hizmet eder. Düşünme ve bilme gücü\n         başlangıçta bir kabiliyet olup, bir takım basamaklardan geçtikten sonra kendisi için mümkün olan en\n         yüksek dereceye ulaşır."
+  },
+  {
+    "q_num": 8,
+    "stem": "“Ahlâk nedir” sorusundan önce aranan soru nedir?",
+    "secenekler": {
+      "A": "Doğa nedir?",
+      "B": "Evren nedir?",
+      "C": "Allah nedir?",
+      "D": "İnsan nedir?",
+      "E": "Akıl nedir?"
+    },
+    "ans": "D",
+    "solution": "Çoğu Müslüman düşünürün yaptığı gibi felsefede de “ahlâk nedir” sorusundan önce “insan nedir”\n         sorusuna cevap aranır."
+  },
+  {
+    "q_num": 9,
+    "stem": "Nasslarda günah veya kötülük olarak ifade edilen terim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Salihat",
+      "B": "Hayır",
+      "C": "Seyyiat",
+      "D": "Kıst",
+      "E": "Birr"
+    },
+    "ans": "C",
+    "solution": "Nasslarda “doğru” ve “yanlış” için pek çok terim kullanılır: hayır, birr,\n         kıst, iksat, adl, hakk, ma’rûf ve takva. Doğru fiiller genelde “salihat”; yanlış\n         ve günah fiiller de seyyiat olarak isimlendirilir. Seyyiat ise günah ve kötülük\n         terimiyle ifade edilir. Doğru cevap C'dir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Maturudi mezhebi ahlaki değerler konusunda aşağıdaki mezheplerden hangisine daha yakındır?",
+    "secenekler": {
+      "A": "Kalenderi",
+      "B": "Cebriye",
+      "C": "Caferi",
+      "D": "Eş'ari",
+      "E": "Mu'tezile"
+    },
+    "ans": "E",
+    "solution": "Ehl-i Sünnet’in itikadi mezheplerinden ikincisini teşkil eden Maturidiyye’nin\n         kurucusu Ebu Mansur el-Maturidi gerek Mu’tezili gerekse Eş’arî ahlâk\n         teorilerinin yüz yüze kaldığı problemlere karşılık getirdiği izah tarzı ile\n         kendine has orijinal bir ahlâk teorisi geliştirmiştir. Maturidi, ahlâki\n         sorumluluk ve yükümlülüğün temellendirilmesinde Eş’ari’ye, ahlâki değerler\n         konusunda da Mu’tezile’ye yakın görünür. Doğru cevap E'dir."
+  },
+  {
+    "q_num": 1,
+    "stem": "I. Allah'ın sıfatlarının insanda görünmesi II. Allah'ın isimlerinin insanda görünmesi III. İnsanın iradeli bir varlık olması Yukarıdakilerden hangisi insanın Allah'ın halifesi olduğu savını destekleyen ifadeler arasında yer alır?",
+    "secenekler": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "I, II",
+      "E": "I, II, III"
+    },
+    "ans": "E",
+    "solution": "Cenab-ı Hakk’ın güzel isimleri vardır. Bu güzel isimler bütün mevcudatta, her türde bir cihetten\n         ta’ayyün ederken, insan türünde bir bütün olarak ancak sonsuz ve sınırsızın, “Mutlak olanın\n         mukayyedde (sınırlı olanda) taayyünü (tikel bir varlık şeklinde ortaya çıkması)” olarak taayyün eder.\n         Bu taayyüne, yani Allah’ın isim ve sıfatlarının insanda görünür hale gelmesi, insanın yer yüzündeki\n         ve diğer varlıklar içindeki konumunu belirler. Bu konuma kısaca “hilafet” denilir ki, insan türü bu\n         cihetten Allah’ın yeryüzündeki halifesidir. İnsanın halife olmasının en önemli ön şartı, insandaki irade\n         ve ihtiyardır. Cenab-ı Hakk mutlak anlamı ile irade sahibidir; O’nun iradesine küllî veya mutlak irade\n         denir. Doğru cevap E'dır."
+  },
+  {
+    "q_num": 2,
+    "stem": "\"İnsan, varlıkların en şereflisidir; eşref-i mahlûkattır\" ifadesinin dayandığı temel aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Dini bir yaşantısının olması",
+      "B": "Allah'ın isim ve sıfatlarının onda tecelli etmesi",
+      "C": "Dünya düzeninde yön veren ana etken olması",
+      "D": "Öldükten sonra diriltilecek olması",
+      "E": "Dini ve kültürü nesilden nesile aktarması"
+    },
+    "ans": "B",
+    "solution": "İnsan Allah’ın isim ve sıfatlarının tecelligahıdır. İnsanın hayatında Cenab-ı Hakk’ın isimleri ve sıfatları\n         tecelli eder. Bu sebeple de insan, varlıkların en şereflisidir; eşref-i mahlûkattır. İnsan yine bu\n         sebeple, kendi başına, kendinde değerlidir; varlık, her şey, onda ve onunla anlamını bulur. İnsanda\n         en değerli olan, Hakk’ın nazargâhı olan kalbidir. Doğru B'dir"
+  },
+  {
+    "q_num": 3,
+    "stem": "\"İnsanın hangi fiili yapacağına ve neyi tercih edeceğine kendisinin karar verebilmesi imkânı\" tanımı aşağıdakilerden hangisi ile daha yakından ilgilidir?",
+    "secenekler": {
+      "A": "İnsanın yeryüzündeki halife olması",
+      "B": "Eşref-i mahlûkat",
+      "C": "İrade özgürlüğü",
+      "D": "Ahiret İnancı",
+      "E": "Kader İnancı"
+    },
+    "ans": "C",
+    "solution": "İnsanın hür olması, irade özgürlüğü olarak ifade edilir. İrade özgürlüğü, genel olarak, insanın hangi\n         fiili yapacağına ve neyi tercih edeceğine kendisinin karar verebilmesi imkânı olarak tanımlanabilir.\n         İnsan, diğer canlılardan farklı olarak, neyi yapıp neyi yapmayacağına kendisi karar verebilir; bu\n         imkân insanın insan olmasının ön şartıdır. Doğru cevap C'dir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Muhtaç bir varlık olan insanın ihtiyaçları dikkate alındığında aşağıdakilerden hangisi farklı bir kategoride ele alınabilir?",
+    "secenekler": {
+      "A": "Sağlıklı bir beden",
+      "B": "İnsani bir çevre",
+      "C": "Zihin sağlığı",
+      "D": "Allah'ın hidayeti",
+      "E": "Yaşamı öğreneceği bir çevre"
+    },
+    "ans": "D",
+    "solution": "İnsanın muhtaç bir varlık olmasını, doğumundan itibaren hayatını takip ederek daha yakından\n         görebiliriz. İnsan doğduğu andan itibaren nefes almaya, gıdaya ve korunmaya, elbise ve konuta\n         muhtaçtır. Bunların yanında kendisini himaye edecek insanlara, kendisine dili öğretecek, daha\n         doğrusu bütün boyutları ve içeriği ile yaşamayı öğretecek insanlara muhtaçtır. Anne baba,\n         akrabalar, komşular, toplumdaki bütün kurumlar ve bu kurumların işlerken tabi olduğu kurallar, her\n         bir insanın ihtiyaçları arasında bulunmaktadır. Aslında insanın ihtiyaçları oldukça fazladır. Bunların\n         hepsini saymak neredeyse mümkün değildir. Kısaca insanın bir bedene, bedenin canlılığını\n         muhafaza edebileceği fiziki bir çevreye, kendisini sıradan bir canlı olmaktan çıkarıp insan olarak\n         yetiştirecek insani bir çevreye ihtiyacı vardır. İnsan bunlar olmadan varlığını sürdüremez. Ancak\n         insanın bütün bunların ötesinde, kendisini ve bütün bu karşılıkları ile birlikte ihtiyaçlarını\n         da yaratan Cenab-ı Hakk’ın bütün bunları mümkün kıldığının farkında olmaya da ihtiyacı\n         vardır. Bunun da ötesinde her şeyin yaratıcısı ve yöneticisi olan Cenab-ı Hakk’ın\n         hidayetine de ihtiyacı vardır. Bu ihtiyaç özellikle insanın verili şartların ötesine geçip,\n         kendisinde bulunan ihtiyarı, yani hayırlı olana yatkınlığı, daha da güçlendirip geliştirmek\n         ve kendi varoluşunu mükemmelleştirmesi cihetinde ortaya çıkmaktadır. Doğru cevap D'dir."
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi insanların kendisine put edinerek ona tapınması, insanları haksız yere öldürmesi ile irtibatlı olarak büyük ve küçük günah işlemesine verilen isimdir?",
+    "secenekler": {
+      "A": "Zulüm",
+      "B": "İbret",
+      "C": "Nefis",
+      "D": "Azap emri",
+      "E": "Seyr ü süluk"
+    },
+    "ans": "A",
+    "solution": "Kur’an-ı Kerim’deki pek çok ayet-i kerimede nefse zulüm, insanların büyük ve küçük günah işlemesi\n         ile irtibatlı olarak kullanılmıştır."
+  },
+  {
+    "q_num": 6,
+    "stem": "İslam ahlakında vazifeye dair verilen ifadelerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Dışarıdan insana yüklenen bir mecburiyettir.",
+      "B": "İnsanda bulunan hayr hissinin etkinleşmesidir.",
+      "C": "İnsanın kendisini gerçekleştirmesi yönünde bir görev üstlenmesidir.",
+      "D": "Hürriyet vazifeyi nefy etmez.",
+      "E": "Vazife hürriyeti nefy etmez."
+    },
+    "ans": "A",
+    "solution": "Islâ m ahlâ kında vazife çok ö nemlidir. Ancak vazife dışarıdan insana yü klenen bir “mecburiyet” değ il,\n                insanın kendisinde bulunan hayr hissinin etkinleşmesi ve insanın kendisini gerçekleştirmesi yö nü nde\n                bir gö rev ü stlenmesidir. Ç ünkü hü rriyet, Mü slü man olmanın, daha doğ rusu insanın gerçekleştirdiğ i\n                ﬁillerin ahlâ ki değ er taşıması ve sorumluluğ u için zorunludur. Islâ m ahlâ kında vazife, hü rriyeti nefy\n                etmeden (olumsuzlamadan), hü rriyet de vazifeyi nefy etmeden muhafaza edilmiştir. Amaç vazifeyi\n                kendi iradesiyle, ö zgü r iradesiyle ü stlenen insanların yetişmesidir. Klasik ahlâ k eserlerinin amacı,\n                sadece iyi ve kö tü hakkında malumat vermek değ il, iyi ve kö tü nü n bilgisini insanlara ulaştırarak,\n                insanların kendi iradeleri ile iyi davranışları gerçekleştirmeleri ve kö tü davranışlardan da uzak\n                durmalarına yardımcı olmak, insanları ahlâ ki cihetten yetiştirmek, onların ahlâ kını gü zelleştirmektir.\n                Buna göre doğru cevap A'dır."
+  },
+  {
+    "q_num": 7,
+    "stem": "Ahlaki varlık olarak insanın mü temmim cü zü nedir?",
+    "secenekler": {
+      "A": "Vazife",
+      "B": "Hilafet",
+      "C": "Hürriyet",
+      "D": "Sorumluluk",
+      "E": "Yaptırım"
+    },
+    "ans": "C",
+    "solution": "Hü rriyet Islâ m ahlâ kının, daha doğ rusu ahlâ ki varlık olarak insanın mü temmim cü zü dü r (mü temmim\n                cü z=bü tü nü oluşturan tamamlayıcı parça). Ozgü rlü k, ilk bakışta, insanın istediğ ini tercih edebilmesi\n                ve yapabilmesi imkâ nıdır. Bu imkâ n insanın istemesini tanımlayan şartlar içinde ortaya çıktığ ı için,\n                hep verili şartlar içinde tahakkuk eder. Doğru cevap C'dir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Halifetutullah fi'l-arz kimdir?",
+    "secenekler": {
+      "A": "Melek",
+      "B": "Cin",
+      "C": "Şeytan",
+      "D": "İnsan",
+      "E": "Hz. Muhammed"
+    },
+    "ans": "D",
+    "solution": "Allah'ın yeryüzündeki halifesi anlamına gelen Halifetullah fi'l-arz kelimesi insana izafe edilir."
+  },
+  {
+    "q_num": 9,
+    "stem": "I. İnsan kendi kendine zulmedebilir II. Allah da kullarına zulmedebilir III. İnsan yanılabilir bir varlıktır IV. İnsan başkalarına da zulmeder bu ifadelerden hangisi veya hangileri yanlıştır?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "ans": "B",
+    "solution": "Allah'ın kullarına zulmetmesi mevzu bahis olamaz. nitekim bir hadis-i kutside allah zulmü kendi\n         zatına haram kılmıştır."
+  },
+  {
+    "q_num": 10,
+    "stem": "İyi ve kötü anlamına gelen sözcükleri ikişerli grup haline getirirsek hangisi açıkta kalır?",
+    "secenekler": {
+      "A": "birr",
+      "B": "münker",
+      "C": "nefs",
+      "D": "ism",
+      "E": "maruf"
+    },
+    "ans": "C",
+    "solution": "bu durumda nefs sözcüğü açıkta kalır."
+  },
+  {
+    "q_num": 1,
+    "stem": "\"Kur’â n’ın anlam bü tü nlü ğ ü nde iman (inanç-varlık) kavramı, ‘__________, ve _____________ kavramları birbirine bağ lıdır.\" Boşluklara gelmesi gereken ifadeler hangileridir?",
+    "secenekler": {
+      "A": "ibadet / salih amel",
+      "B": "fazilet / vicdan",
+      "C": "adalet / fazilet",
+      "D": "iffet / bilgelik",
+      "E": "ilm / salih amel"
+    },
+    "ans": "E",
+    "solution": "Islâ m dü şüncesi dindarlık ile ahlak arasındaki irtibatı keşfederken, varlık- bilgi-değ er dü zlemlerinde\n                son derece tutarlı ve dayanıklı algılama biçimi ortaya koymuştur. Bir başka ifadeyle Kur’â n’ın anlam\n                bü tü nlü ğünde iman (inanç-varlık) kavramı, ‘ilm (bilgi), ve salih amel (ahlâ k-eylem) kavramları\n                ö ylesine birbirine bağ lıdır ki, bunlar birbirini hem besleyen hem de gerektiren boyutlardır. Oyle ki bu\n                dü şünce modunda bilgi (‘ilm), hikmet, adalet ve hakikati içinde barındıran, çok katmanlı bir\n                kavramdır. Bu çerçevede adaletin bilgi ile ilişkisi şu şekilde ifade edilebilir: Insanın yaratıklar\n                aleminde doğ ru ve bu yü zden uygun yerini ve yaratıcısı ile olan doğ ru irtibatını bilmesi adalettir.\n                Adalet, insanın kâ inattaki konumu ile ilgili bilgisinden kopuk değ ildir."
+  },
+  {
+    "q_num": 2,
+    "stem": "I. Ölçülü olmak II. Kanaat III. Sebat IV. Tevazu V. Fedakarlık VI. Tevekkül Yukarıdakilerden hangileri cesaret erdeminin kapsamına giren erdemlerdendir?",
+    "secenekler": {
+      "A": "I,V,VI",
+      "B": "I,III,IV",
+      "C": "II,III,VI",
+      "D": "III,IV,V",
+      "E": "I,II,V,VI"
+    },
+    "ans": "B",
+    "solution": "Cesaret erdeminin kapsamına giren erdemler:\n\n                   1. Olgun nefs\n\n                   2. Olayları cesur karşılama\n\n                   3. Yü ksek gayret\n\n                   4. Sebat\n\n                   5. Yumuşak huyluluk\n\n                   6. Olçülü olmak\n\n                   7. Yü reklilik\n\n                   8. Dayanıklılık,katlanmak\n\n                   9. Tevazu\n\n                 10. Onur duygusu\n\n                 11. Yufka yü reklilik (Rikkat)\n\n                Buna göre doğru cevap B'dir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Aşağıdaki durumlardan hangisinde uyuyan bir vicdandan söz edilebilir?",
+    "secenekler": {
+      "A": "İyi ve kötü arasındaki çizginin ayrımı kesinleşmesi",
+      "B": "İyi ve kötü arasındaki çizginin kaybolmaya başlaması",
+      "C": "Fazilet, rezilet ve vicdan üçgenini iyi belirliyorsa",
+      "D": "Bir insanın, iyilik yaptığında sevinç, kötülük yaptığında üzüntü duyabilmesi",
+      "E": "Bir insanın nefsini temiz tutabilmesi"
+    },
+    "ans": "B",
+    "solution": "İyilik ve kötülüğü kişinin vicdanında meydana getirdiği etkiye göre tayin etmiştir. Hz. Muhammed,\n         “bir insan, iyilik yaptığında sevinç, kötülük yaptığında üzüntü duyabiliyorsa, artık o gerçekten\n         mü’mindir” diyerek, hakîkî insan alametlerini de söylemiştir. İyi ve kötü arasındaki çizginin ayrımı\n         kesinleştikçe, uyanık bir vicdandan; buradaki ayrım kaybolmaya başladıkça, hatta neyin iyi olduğu\n         konusunda kesin bir fikir oluşturulamıyorsa, uyuyan bir vicdandan söz edilebilir. Doğru cevap B'dir."
+  },
+  {
+    "q_num": 4,
+    "stem": "İslâm filozoflarından İbn Rüşd’e göre, adalet erdemi aşağıdaki erdemlerden hangisinin toplumda gerçekleşmesinin teminatı sayılmaz?",
+    "secenekler": {
+      "A": "Yiğitlik",
+      "B": "Cömertlik",
+      "C": "Ölçülülük",
+      "D": "Bilgelik",
+      "E": "Cesaret"
+    },
+    "ans": "E",
+    "solution": "İslâm filozoflarından İbn Rüşd’e göre, adalet erdemi, bilgelik, yiğitlik ve ölçülülükten (iffet) ve\n         cömertlikten oluşan diğer dört erdemin toplumda gerçekleşmesinin teminatıdır. Ona göre, ahlâk ile\n         hukuk arasında zorunlu bir bağlantı vardır. Doğru cevap E dir."
+  },
+  {
+    "q_num": 5,
+    "stem": "Yusuf Has Hâcib hikâyesinde saadeti temsil eden veziri neye benzetiyor?",
+    "secenekler": {
+      "A": "Güneş",
+      "B": "Yıldız",
+      "C": "Uzay",
+      "D": "Ay",
+      "E": "Rüzgar"
+    },
+    "ans": "D",
+    "solution": "Doğruluğu” temsil eden hükümdar Gün Doğdu devamlı parlaklığı ve herkesi aydınlatmasından\n         dolayı güneşe benzetilir. “Saadeti” temsil eden vezir ise aya benzetilir. Doğru cevap D'dir."
+  },
+  {
+    "q_num": 6,
+    "stem": "\"El ahlak ve's-siyer fi mudavati'n-nufus\" adlı eser kime aittir?",
+    "secenekler": {
+      "A": "Kinalızade Ali",
+      "B": "Nasiruddin et-Tusi",
+      "C": "İbn Hazm",
+      "D": "Farabi",
+      "E": "İbn Sina"
+    },
+    "ans": "C",
+    "solution": "Söz konusu Ahlak kitabı İbn Hazm'a aittir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdakilerden hangisi Kur’an’da güzel ahlâk veya fazilet için kullanılan kavramlardan değildir?",
+    "secenekler": {
+      "A": "Fıtrat",
+      "B": "Hasene",
+      "C": "Hidâyet",
+      "D": "Sıdk",
+      "E": "İhsan"
+    },
+    "ans": "A",
+    "solution": "Kur’an’da güzel ahlâk veya fazilet için hasene, hidâyet, sıdk, amel-i salih\n         ve ihsan gibi pek çok kavramın kullanıldığı dikkati çekmektedir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Kur’anda, sevginin imanla aynı anlamda kullanıldığı sure aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Yasin",
+      "B": "Rahman",
+      "C": "Meryem",
+      "D": "Bakara",
+      "E": "Fussilet"
+    },
+    "ans": "C",
+    "solution": "Sözünü ettiğimiz iman ve güvenin diğer adı sevgidir. Bir başka ifadeyle\n         inanmak, sevmektir. Zaten sağlıklı bir kişi olabilmenin en iyi göstergelerinden biri üretmek (ekip-\n         biçmek) ve toprağın yeşerteceğine güven\n         yani sevgidir. Bunun için Kur’an, sevgiyi imanla aynı anlamda kullanmıştır\n         (Meryem/19: 96):\n         “İman edip iyi davranışlarda bulunanlara gelince, onlar için çok\n         merhametli olan Allah, (gönüllerde) bir sevgi yaratacaktır.”"
+  },
+  {
+    "q_num": 9,
+    "stem": "Insanların birbirleri ile olan irtibatlarını, bağımlılıklarını fark ederek, bunu şuurlu bir bağ haline getirmelerini ifade eden terim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ülfet",
+      "B": "Şakî",
+      "C": "Ünsiyet",
+      "D": "Nefsâniyye",
+      "E": "Tevekkül"
+    },
+    "ans": "C",
+    "solution": "Ünsiyet alışkanlıktan öte, insanların birbirleri ile olan irtibatlarını, bağımlılıklarını\n         fark ederek, bunu şuurlu bir bağ haline getirmelerini ifade eder. İnsanlar\n         arasındaki ünsiyetin ortaya çıkması, nefretin tam zıddıdır; insan tabiatında\n         olanın, ona uygun bir şekilde ve onu güçlendirerek etkin olmasıdır."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdakilerden hangisi Kur'an'da güzel ahlak için kullanılan ifadelerden biri değildir?",
+    "secenekler": {
+      "A": "Hasene",
+      "B": "Sıdk",
+      "C": "Amel-i salih",
+      "D": "İhsan",
+      "E": "Ülfet"
+    },
+    "ans": "E",
+    "solution": "Kur’an’da gü zel ahlâ k veya fazilet için hasene, hidâ yet, sıdk, amel-i salih ve ihsan gibi pek çok\n                kavramın kullanıldığ ı dikkati çekmektedir. Ulfet, uzlaşma,kaynaşma demektir. Doğru cevap E'dir."
+  }
+]

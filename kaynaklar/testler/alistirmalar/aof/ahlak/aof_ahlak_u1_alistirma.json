@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "İslamiyet’te Amel ne demektir?",
+    "secenekler": {
+      "A": "Uygulama",
+      "B": "Doktrin",
+      "C": "Ayet",
+      "D": "Sünnet",
+      "E": "Farz"
+    },
+    "ans": "A",
+    "solution": "Müslümanlıkta amel uygulama demektir yani sadece lafta değil yaşantıdada emirleri yerine\n         getirmek gerekir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Müslümanın davranış düzenine esas teşkil eden veya davranırken tabi olduğu kurallar neyi kasteder?",
+    "secenekler": {
+      "A": "İslâm felsefesini",
+      "B": "İslâm fıtratını",
+      "C": "İslâm ahlâkını",
+      "D": "İslâm egosunu",
+      "E": "İslâm şartlarını"
+    },
+    "ans": "C",
+    "solution": "Bu çerçevede İslâm ahlâkı denildiğinde, müslümanın davranış düzenine\n         esas teşkil eden veya davranırken tabi olduğu kurallar kastedilmekte; bu\n         kurallar ise öncelikle Kur’an-ı Kerim olmak üzere, Hadis kitaplarında\n         derlenmiş olan Hz. Peygamber’den ve Hz. Peygamber hakkındaki\n         rivayetlerde bulunmaktadır. Bunlara ek olarak daha sonra yaşamış olan\n         sahabe, tabiin, tebeü’t-tabi’in yanında İslâm tarihinde toplum nezdinde kabul\n         görmüş önemli âlim ve zahidlerin hayatları, önemli devlet adamlarının iyi\n         olarak kabul edilen fiilleri de, özellikle çocukların ahlâki eğitimi söz konusu\n         olduğunda, müracaat edilen kaynaklar arasındadır. Bu yönden muhtelif\n         menakıb kitaplarının da ahlâk literatüründen sayılması gerekmektedir."
+  },
+  {
+    "q_num": 3,
+    "stem": "“Din samimiyettir”, “ ben güzel ahlâkı tamamlamak için gönderildim” ve “sen yüksek bir ahlâk üzeresin” sözü neyi ifade eder?",
+    "secenekler": {
+      "A": "Dini ifade eder",
+      "B": "Din ile ahlâk arasındaki derin irtibatı ifade eder",
+      "C": "Din ile beşer arasındaki derin irtibatı ifade eder",
+      "D": "Ahlâkı ifade eder",
+      "E": "Din ile ahlâk arasındaki derin uçurumu ifade eder"
+    },
+    "ans": "B",
+    "solution": "“Din samimiyettir”, “ ben güzel ahlâkı tamamlamak için gönderildim” ve\n         “sen yüksek bir ahlâk üzeresin” ifadeleri, din ile ahlâk arasındaki derin\n         irtibatı ifade etmek için yeterlidir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Davranış düzeninin ilkelerinin neler olduğu ve bunlar arasında da bir düzenin olup olmadığını; varsa bunun keyfiyetini ele alan aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ahlâk Felsefesi",
+      "B": "Ahlâk Sosyolojisi",
+      "C": "Ahlâk Psikolojisi",
+      "D": "Etik",
+      "E": "İslam Ahlâkı"
+    },
+    "ans": "A",
+    "solution": "Davranış düzeninin ilkelerinin neler olduğu ve bunlar arasında da bir düzenin olup olmadığını; varsa\n         bunun keyfiyetini ele alan ahlâk felsefesidir"
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi, ahlâk kavramını doğru tanımlar?",
+    "secenekler": {
+      "A": "Ortam",
+      "B": "Teyit etmek",
+      "C": "Yöneliş",
+      "D": "Davranış düzeni",
+      "E": "Muhtelif bağlam"
+    },
+    "ans": "D",
+    "solution": "Ahlâk, davranış düzenidir. Her insan az veya çok bir düzen içerisinde hayatını sürdürdüğü, daha\n         doğrusu sürdürmek zorunda olduğu için, ahlâk insan hayatının zorunlu bir boyutu, eskiden denildiği\n         gibi “mütemmim cüzü” veya “tamamlayıcı parçası” dır. Doğru cevap D seçeneğidir."
+  },
+  {
+    "q_num": 6,
+    "stem": "\"Ahlak insan hayatının mütemmim cüzüdür.\" cümlesinde \"mütemmim cüzü\" ile kast edilen aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Temel itkisi",
+      "B": "Yasaklayıcı boyutu",
+      "C": "Doğal sonucu",
+      "D": "En derin ruhsal boyutu",
+      "E": "Tamamlayıcı parçası"
+    },
+    "ans": "E",
+    "solution": "Burada \"mütemmim cüzü\" \"tamamlayıcı parçası\" anlamındadır."
+  },
+  {
+    "q_num": 7,
+    "stem": "İnsanda iyilik cihetini anlamayı ve kabul etmeyi sağlayacak bir yatkınığın olması durumu aşağıdakilerden hangisi ile tanımlanır?",
+    "secenekler": {
+      "A": "Hakk",
+      "B": "İhtiyar",
+      "C": "Sahih iman",
+      "D": "Sevk eden",
+      "E": "Bizzat hayır"
+    },
+    "ans": "B",
+    "solution": "İnsanda iyilik cihetini anlamayı ve kabul etmeyi sağlayacak bir yatkınığın olması gerekir. Bu\n         yatkınlığın adı \"İhtiyar\" dır. İhtiyâr hayrı, iyiyi, varlığa yakın olanı tercihe yatkınlık anlamına\n         gelmektedir. Bu yatkınlık, insanda söylenen sözü, bir hitabı anlama konusunda önceden bulunan bir\n         hazırlığa, hazır bulunan, ona verilmiş bir kabiliyete delalet etmektedir. Hüsn-i ihtiyar, insandaki\n         bu yatkınlığın etkin olması, insanın kendisine ulaşan ilahi hidayet ile kendindeki hayır cihetini\n         keşfetmesi anlamına gelmektedir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Aşağıdakilerden hangisi iyi ve kötü fiillerin neler olduğunu öğrendiğimiz kaynaklardan biri değildir?",
+    "secenekler": {
+      "A": "Hadis kitapları",
+      "B": "Fütüvvetname türü eserler",
+      "C": "Adab kitapları",
+      "D": "Ruznameler",
+      "E": "Menakib kitapları"
+    },
+    "ans": "D",
+    "solution": "Ruznameler, iyi ve kötü fiillerin neler olduğunu öğrendiğimizi kaynaklardan biri değildir. ruznameler\n         günlük anlamındadır."
+  },
+  {
+    "q_num": 9,
+    "stem": "\"Hakiki din insanların uydurduğu birbirine muhalif hayali kurgular değil, hakiki Yaratıcıyı tanımak O'nun kanun ve emirlerine uygun davranmayı görev edinmektir\" diyen kimdir?",
+    "secenekler": {
+      "A": "Ahmed Naim",
+      "B": "Farabi",
+      "C": "Elmalılı Hamdi Yazır",
+      "D": "Nurettin Topçu",
+      "E": "Abdullah Draz"
+    },
+    "ans": "C",
+    "solution": "Söz konusu sözü meşhur tefsir müellifi Elmalılı Hamdi Yazır söylemiştir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Dinin ahlak ile irtibatıyla ilgili genel olarak kaç tür anlayış gelişmiştir?",
+    "secenekler": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "ans": "B",
+    "solution": "iki anlayış gelişmiştir. 1. faziletlerin kazanılması ve faziletli olma olarak ahlak, 2. kurallı yaşama ve\n         bu kurallara uygun davranma olarak ahlak."
+  }
+]

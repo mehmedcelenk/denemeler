@@ -1,9 +1,11 @@
 import { readString, remove, writeString } from '../../app/storage.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 
-const MIN_READ_MS = 3500;
-const BAN_MS = 5 * 60 * 1000;
-let lastMarkAt = 0;
+const MIN_READ_MS = 1000; // Soru ekrana geldikten sonra minimum insan algı eşiği (1 saniye)
+const MIN_QUESTION_GAP_MS = 600; // Farklı sorular arasındaki seri spam eşiği (0.6 saniye)
+const BAN_MS = 1 * 60 * 1000; // 1 dakika ceza süresi
+let lastInteractedQid: number | null = null;
+let lastInteractionAt = 0;
 let displayedLockUntil = 0;
 let countdownTimer: ReturnType<typeof setInterval> | null = null;
 
@@ -47,6 +49,12 @@ function getLockUntil(): number {
   return Number.isFinite(value) ? value : 0;
 }
 
+function applyPenalty(now: number): void {
+  const nextLockUntil = now + BAN_MS;
+  writeString(StorageKeys.ANSWER_LOCK_UNTIL, String(nextLockUntil));
+  showLockNotice(nextLockUntil);
+}
+
 export function canMarkAnswer(qid: number): boolean {
   if (typeof document === 'undefined') return true;
   const now = Date.now();
@@ -60,13 +68,24 @@ export function canMarkAnswer(qid: number): boolean {
 
   const card = document.getElementById(`bq_${qid}`);
   const openedAt = Number(card?.dataset.openedAt ?? 0);
-  if (now - Math.max(openedAt, lastMarkAt) < MIN_READ_MS) {
-    const nextLockUntil = now + BAN_MS;
-    writeString(StorageKeys.ANSWER_LOCK_UNTIL, String(nextLockUntil));
-    showLockNotice(nextLockUntil);
+
+  // 1. Soru kartı ekranda henüz MIN_READ_MS kadar durmadıysa (okumadan çok hızlı tıklama)
+  if (openedAt > 0 && now - openedAt < MIN_READ_MS) {
+    applyPenalty(now);
     return false;
   }
-  lastMarkAt = now;
+
+  // 2. Farklı bir sorudan bu soruya seri spam geçiş kontrolü (insanüstü seri tıklama)
+  if (lastInteractedQid !== null && lastInteractedQid !== qid) {
+    if (now - lastInteractionAt < MIN_QUESTION_GAP_MS) {
+      applyPenalty(now);
+      return false;
+    }
+  }
+
+  // Aynı soru içinde çift tıklama (onaylama), şık değiştirme veya seçim düzeltme serbesttir
+  lastInteractedQid = qid;
+  lastInteractionAt = now;
   return true;
 }
 

@@ -1,0 +1,139 @@
+[
+  {
+    "q_num": 1,
+    "stem": "I. Hadis Rivayetini Azaltma II. Hadis Rivâyet Edenden Şâhid İsteme III. Hadis Rivayet Edene Yemin Ettirme Yukarıdakilerin hangisi / hangileri hadislerin naklinde dikkat edilen husus / hususlardır?",
+    "secenekler": {
+      "A": "Sadece I",
+      "B": "Sadece II",
+      "C": "Sadece III",
+      "D": "I ve III",
+      "E": "Hepsi"
+    },
+    "ans": "E",
+    "solution": "Gerçekte Müslümanlıkta her konuda doğruluğa, dürüstlüğe verilen önem, bilinen bir husustur. Pek\n         çok ayet ve hadiste, doğrudan veya dolaylı olarak bunlara teşvikler yapılmış, yalan-dolan ise\n         şiddetle yasaklanmıştır. Basit dünyevi işlerde bile durum böyle olunca dinin iki temel kaynağından\n         biri olan hadislerin naklinde daha titiz davranılmasının gerekli görüleceği açıktır. Yukarıdaki\n         maddelerin hepsi dikkat edilen hususlardır."
+  },
+  {
+    "q_num": 2,
+    "stem": "Hadis öğreniminin güvenilirliği için hadis rivayetinin azaltılmasının sebebi hangisi olabilir?",
+    "secenekler": {
+      "A": "Şahid eksikliği",
+      "B": "Hadislerin sayısının az olması",
+      "C": "Hadis aktarımının tehlikeli olması",
+      "D": "Hata yapma riski",
+      "E": "Hadis rivayet eden kişilerin azalması"
+    },
+    "ans": "D",
+    "solution": "Bazı sahabiler, Hz. Peygamber’in buyurduğu gibi rivayet edememe, başka bir ifadeyle rivayette hata\n         yapma endişesiyle hadis rivayetinden kaçmışlar, mümkün olduğu kadar az hadis rivayet etmeye\n         çalışmışlardır."
+  },
+  {
+    "q_num": 3,
+    "stem": "Hadislerin kitaplarda ilk önce nasıl bir düzen içinde toplandıkları tahmin edilmektedir?",
+    "secenekler": {
+      "A": "Ravilerin fazilet sırasına konması",
+      "B": "Konu ve ravilerin rast gele yazılması",
+      "C": "Önce kısa hadisler, sonra uzun hadislerin yazılması",
+      "D": "Aynı konudaki hadislerin uygulama sırasına göre kaydedilmesi",
+      "E": "Herkesin rivayet ettiği hadisleri ayrı bir bölümde toplanması"
+    },
+    "ans": "B",
+    "solution": "Hadislerin kitaplarda ilk olarak rast gale yazıldığı tahmin edilmektedir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Erkekle kadının zamanı belirlenen bir sü reye kadar, yani geçici olarak aralarında kıyılan nikâha ne denir?",
+    "secenekler": {
+      "A": "Belediye Nikâhı",
+      "B": "Mut‘a Nikâhı",
+      "C": "İmam Nikâhı",
+      "D": "Geçici Nikâh",
+      "E": "Anlaşmalı Nikâh"
+    },
+    "ans": "B",
+    "solution": "Mut‘a nikâhı, erkekle kadının zamanı belirlenen bir süreye kadar, yani geçici olarak aralarında\n         kıyılan nikâha denir. İslâm’ın ilk yıllarında Hz. Peygamber buna izin vermiş, ancak Hayber’in\n         fethinden sonra kesin olarak yasaklamıştır."
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi hadislerin bir kitap/divân içinde toplanmaları anlamına gelir?",
+    "secenekler": {
+      "A": "Tedvîn",
+      "B": "Tesbit",
+      "C": "Tasnif",
+      "D": "Mütekaddimûn",
+      "E": "Tâlimatnâme"
+    },
+    "ans": "A",
+    "solution": "Değişik yazı malzemelerine kaydedilerek veya ezberlenerek koruma altına alınmış olan hadislerin\n         kitaplar (dîvânlar) içinde toplanmasına tedvin denir. Hicrî 1. asrın sonlarından 2. asrın 1. veya 2.\n         Çeyreğine kadar süren bir zaman dilimi tedvin dönemi olarak adlandırılır. Aslında değişik sahâbîlerin\n         bildikleri hadisleri onlardan toplayıp yazma faaliyeti daha eskilere dayanır. Abdullah b. Abbâs’ın,\n         sahâbîleri tek tek dolaşarak onlardan sorup öğrendiği hadisleri, yanında taşıdığı yazı malzemelerine\n         yazdığı nakledilir. Bu da bir nevi tedvîn yani toplamadır. Ancak burada tedvînle daha değişik bir\n         durum kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir “kitap/dîvân” içinde\n         toplanmalarıdır. Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe Ömer b. Abdülazîz\n         (halifeliği h. 99-101) olmuştur."
+  },
+  {
+    "q_num": 6,
+    "stem": "Geniş kapsamlı ve bir “kitap/dîvân” içinde toplanarak, devlet eliyle ilk olarak hadisleri derleme faaliyeti başlatan kimdir?",
+    "secenekler": {
+      "A": "Ömer b. Abdülazîz",
+      "B": "Abdullah b. Abbâs",
+      "C": "İbn Şihâb ez-Zührî",
+      "D": "Abdullah b. Ömer",
+      "E": "Enes b. Mâlik"
+    },
+    "ans": "A",
+    "solution": "Tedvînle daha değişik bir durum kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir\n         “kitap/dîvân” içinde toplanmalarıdır. Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe\n         Ömer b. Abdülazîz (halifeliği h. 99-101) olmuştu."
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdakilerden hangisi Hadislerin sınıflandırılmasına verilen addır?",
+    "secenekler": {
+      "A": "Tesbît",
+      "B": "Tasnif",
+      "C": "Tedvin",
+      "D": "Tevhid",
+      "E": "Divan"
+    },
+    "ans": "B",
+    "solution": "Hadisler önce yazılı ve sözlü olarak koruma ve kayıt altına alınmaya çalışılmış (tesbît), sonra bunlar\n         belli kitaplar içinde bir ayaya toplanmış (tedvîn), ardından da bu kitaplardaki hadislerin\n         sınıflandırılması (tasnîf) yoluna gidilmiştir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Aşağıdaki eylemlerden hangisi kişi öldükten sonra da amel defterinin kapanmamasını sağlayan üç amelden biridir?",
+    "secenekler": {
+      "A": "Birisini Müslüman yapmış olmak",
+      "B": "Geride faydalı ilim bırakmak",
+      "C": "Namaz kılmış olmak",
+      "D": "Zekat vermiş olmak",
+      "E": "Öğretmenlik yapmak"
+    },
+    "ans": "B",
+    "solution": "Genel olarak ilim öğrenme veöğretmenin önemine dikkat çekmiş ve bunlara teşvikte bulunmuştur.\n         Hz. Peygamber’in bu konudaki adislerinden öğreniyoruz ki, ilim öğrenmek her Müslüman’a farzdır.\n         Kişi üstünlüğünü ilmiyle sürdürebilir. Geriye bırakılan faydalı ilim, ölümünden sonra insanın amel\n         defterinin açık kalmasına sebep olan üç şeyden biridir. İnsan ilim öğrenme yolunda olduğu sürece\n         Allah yolunda demektir."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdakilerden hangisi hadisi rivayet eden kimselerin sırasıyla zikredildiği kısmıdır?",
+    "secenekler": {
+      "A": "Sema",
+      "B": "er-Rıhle fî talebi’l-hadîs",
+      "C": "Şahid",
+      "D": "Sened",
+      "E": "Sille"
+    },
+    "ans": "D",
+    "solution": "Hadis râvîlerinin bu şekilde incelenmeye başlamasına, aynı hadisi farklı yerlerde, farklı hocalardan\n         biraz değişik şekilde almış olan kimselerin bu durumu; “Falan râvî şöyle dedi, filan râvî şöyle dedi...”\n         diyerek anlatması eklenince hadis rivayetinde sened kullanımı ortaya çıktı. Sened, hadisin, onu\n         rivayet eden kimselerin isimlerinin sırayla zikredildiği kısmıdır. Kullanılan şekliyle, yani her bir\n         râvînin bir önceki râvînin (hocasının) ismini vererek ilk kaynağa varan (muttasıl)\n         şekliyle Müslümanlara has olan sened kullanımı, hadisin güvenilirliğini sağlamak için ortaya\n         çıkarılmıştı."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdakilerden hangisi hadislerin yazılı olarak toplandığı dönemdir?",
+    "secenekler": {
+      "A": "İspat",
+      "B": "Mütekaddimun",
+      "C": "Tesbit",
+      "D": "Tasnif",
+      "E": "Tedvin"
+    },
+    "ans": "A",
+    "solution": "Aslında değişik sahâbîlerin bildikleri hadisleri onlardan toplayıp yazma\n         faaliyeti daha eskilere dayanır. Abdullah b. Abbâs’ın, sahâbîleri tek tek\n         dolaşarak onlardan sorup öğrendiği hadisleri, yanında taşıdığı yazı malzemelerine yazdığı nakledilir.\n         Bu da bir nevi tedvîn yani toplamadır. Ancak burada tedvînle daha değişik bir durum\n         kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir “kitap/dîvân” içinde toplanmalarıdır.\n         Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe Ömer b. Abdülazîz (halifeliği h. 99-"
+  },
+  {
+    "q_num": 101,
+    "stem": "olmuştu. Doğru cevap E şıkkıdır.",
+    "secenekler": {},
+    "ans": "E",
+    "solution": ""
+  }
+]

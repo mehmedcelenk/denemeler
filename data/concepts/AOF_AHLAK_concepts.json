@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ahlak_kavrami",
+    "term": "Ahlâk",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 1,
+    "tanim": "Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.",
+    "sifre": "Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.",
+    "pattern": "\\bahlâk\\b|\\bahlak\\b|\\bhulk\\b|\\bseciyye\\b"
+  },
+  {
+    "id": "ahlak_kaynaklari",
+    "term": "İslâm Ahlâkının Kaynakları",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "Kur’an-ı Kerim ve Hz. Peygamber’in sünnetidir; akıl ve vicdan ise bu kaynakları kavrayan ve onaylayan melekelerdir.",
+    "sifre": "Temel iki kaynak: Kur’an ve Sünnet.",
+    "pattern": "ahlâkın kaynakları|ahlakın kaynakları"
+  },
+  {
+    "id": "ahlak_husun_kubuh",
+    "term": "Hüsn ve Kubuh",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 3,
+    "tanim": "Bir fiilin ahlaken iyi (hüsn / güzel) veya kötü (kubuh / çirkin) olmasıdır. Eş’arîlere göre vahiy belirler; Mu’tezile’ye göre akıl da idrak edebilir.",
+    "sifre": "İyilik (Hüsn) + Kötülük (Kubuh) = Hüsn ve Kubuh meselesi.",
+    "pattern": "hüsn ve kubuh|husun ve kubuh|hüsn|kubuh"
+  },
+  {
+    "id": "ahlak_dort_temel_erdem",
+    "term": "Dört Temel Fazilet (Erdem)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 4,
+    "tanim": "İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.",
+    "sifre": "Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.",
+    "pattern": "hikmet, şecaat|şecaat|iffet|faziletler|temel erdemler"
+  },
+  {
+    "id": "ahlak_ihlas",
+    "term": "İhlâs",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 5,
+    "tanim": "Tüm amelleri, ibadetleri ve ahlaki davranışları sadece ve sadece Allah rızası için yapmak, riya ve gösterişten arındırmaktır.",
+    "sifre": "Yalnızca Allah rızası için amel = İhlâs (Zıttı: Riya).",
+    "pattern": "\\bihlâs\\b|\\bihlas\\b|\\briyâ\\b|\\briya\\b"
+  },
+  {
+    "id": "ahlak_tevazu",
+    "term": "Tevâzu",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 5,
+    "tanim": "Alçak gönüllü olmak, hakkı kabul etmek ve insanlara karşı kibir ve üstünlük taslamamaktır.",
+    "sifre": "Alçak gönüllülük = Tevâzu (Zıttı: Kibir).",
+    "pattern": "\\btevâzu\\b|\\btevazu\\b|\\bkibir\\b"
+  }
+]

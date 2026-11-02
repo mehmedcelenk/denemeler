@@ -15,14 +15,15 @@
       "E": "Müfsit"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Cuma Namazı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Cuma namazıyla <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span> olan bir müslümanın cuma saatinde alışveriş yapmasının dini hükmü aşağıdakilerden hangisidir?"
   },
   {
     "id": 21501,
@@ -40,7 +41,7 @@
       "E": "Yapılması istenen fiilin belirli olup olmamasına göre"
     },
     "dogru_cevap": "D",
-    "ana_konu": "İbadet Kavramı",
+    "ana_konu": "İbadet",
     "alt_konu": "İbadetlerin Sınıflandırılması",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -65,7 +66,7 @@
       "E": "Bir ibadeti vaktinde yapmaktır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "İbadet Kavramı",
+    "ana_konu": "Oruç",
     "alt_konu": "Eda, Kazâ ve Kaza Kavramları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -90,14 +91,15 @@
       "E": "Kifâî hükümler"
     },
     "dogru_cevap": "C",
-    "ana_konu": "İbadet Kavramı",
+    "ana_konu": "İbadet",
     "alt_konu": "Hüküm Türleri (Teklifi ve Vaz'i)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Allah’ın <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span>lerden bir fiili yapıp yapmamalarını istemesi veya <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span>i bu fiiller arasında serbest bırakmasına ne ad verilir?"
   },
   {
     "id": 21504,
@@ -115,14 +117,18 @@
       "E": "Normal duş"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Temizlik (Taharet)",
+    "ana_konu": "Temizlik",
     "alt_konu": "Teyemmüm",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.\n💡 Sınav Şifresi: Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Teyemmüm\" onclick=\"showVocabBubble(this, event)\">Teyemmüm</span>"
+    },
+    "dogru_nedeni": "İSLAM İBADET ESASLARI (Temizlik): Doğru yanıt A seçeneğidir. Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir."
   },
   {
     "id": 21505,
@@ -140,7 +146,7 @@
       "E": "Mekruh"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Temizlik (Taharet)",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Necasetten Taharet",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -153,8 +159,8 @@
     "id": 21506,
     "ders": "İSLAM İBADET ESASLARI",
     "ders_kodu": 804,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
     "soru_no": 7,
     "soru": "“Beden, elbise ve namaz kılınacak yerlerden hakiki pisliklerin giderilmesi” tanımı aşağıdakilerden hangi kavram ile ifade edilmektedir?",
     "secenekler": {
@@ -165,14 +171,21 @@
       "E": "Tezkiye"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Temizlik (Taharet)",
-    "alt_konu": "Necasetten Taharet",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.\n💡 Sınav Şifresi: 6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Şartları (Dışındakiler)\" onclick=\"showVocabBubble(this, event)\">İstikbâl-i kıble</span>",
+      "B": "Necâsetten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.\n💡 Sınav Şifresi: 6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Şartları (Dışındakiler)\" onclick=\"showVocabBubble(this, event)\">Setr-i avret</span>",
+      "D": "Hadesten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>"
+    },
+    "dogru_nedeni": "Temizlenme (tezkiye) ise daha çok ahlak ve tasavvuf ilminin konusudur. Buna göre kavram\n         olarak temizlik (tahâret), hakiki pisliklerin giderilmesi ve hükmi kirliliklerin kaldırılmasıdır. Hükmi\n         temizlik aynı zamanda maddi temizliği de kapsamaktadır. Beden, elbise ve namaz kılınacak yerden\n         hakiki pisliklerin giderilmesine “necâsetten tahâret” denilir. Abdestsizlik, cünüplük, hayız (aybaşı)\n         ve nifas (loğusalık) durumlarında insanda meydana geldiği düşünülen pisliklerin kaldırılmasına ise\n         “hadesten tahâret” adı verilir."
   },
   {
     "id": 21507,
@@ -190,7 +203,7 @@
       "E": "Hanefilere göre hayız 10 günden fazla olabilir."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Temizlik (Taharet)",
+    "ana_konu": "Temizlik",
     "alt_konu": "Özür Halleri (Hayız ve Nifas)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -215,14 +228,19 @@
       "E": "Vakit"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Farz Olma Sebebi ve Şartları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "Hadesten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>",
+      "B": "Necâsetten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.\n💡 Sınav Şifresi: 6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Şartları (Dışındakiler)\" onclick=\"showVocabBubble(this, event)\">Setr-i avret</span>"
+    }
   },
   {
     "id": 21509,
@@ -240,14 +258,17 @@
       "E": "Namazda kıbleden başka bir tarafa yönelmek"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazı Bozan Şeyler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Rükû</span> ve secdede tesbihleri terk etmek"
+    }
   },
   {
     "id": 21510,
@@ -265,14 +286,17 @@
       "E": "Dört rek‘atlı farz namazın ilk oturuşunda tahiyyatı okumak"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Sünnetleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "Tek başına kılınan akşam namazında <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">kıraat</span>i açıktan yapmak"
+    }
   },
   {
     "id": 21511,
@@ -290,7 +314,7 @@
       "E": "Namazda ta‘dil-i erkân vaciptir."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Mezhepler Arası Farklılıklar (Şafiî Mezhebi)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -315,7 +339,7 @@
       "E": "Hanefî mezhebine göre bayram namazına yetişemeyen kimse, tek başına bayram namazını kılabilir."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Bayram Namazları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -340,14 +364,17 @@
       "E": "Hanefiler’e göre başlanılmış bir sünnet bozulduğunda kazası vaciptir."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Sünnet Namazlar",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "C": "Sünnet namazların sadece ilk rekatında <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">kıraat</span> farzdır."
+    }
   },
   {
     "id": 21514,
@@ -365,7 +392,7 @@
       "E": "Yolcu olan kişi, yolcu olmayan imama uyamaz."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Yolcu Namazı (Seferi Namaz)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -378,8 +405,8 @@
     "id": 21515,
     "ders": "İSLAM İBADET ESASLARI",
     "ders_kodu": 804,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
     "soru_no": 16,
     "soru": "Aşağıdakilerden hangisi vacip namazlardan biri değildir?",
     "secenekler": {
@@ -390,14 +417,15 @@
       "E": "Bayram namazı"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Namaz",
-    "alt_konu": "Vacip Namazlar",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Vitir namazı vacip olan namazlar arasındadır ve doğru cevap B'dir"
   },
   {
     "id": 21516,
@@ -415,14 +443,17 @@
       "E": "Fitreyi bayramda vermeyenler daha sonra iki kat verirler."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Zekat ve Sadaka",
+    "ana_konu": "İbadet",
     "alt_konu": "Fıtır Sadakası (Fitre)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "Fitre yükümlülüğünün başlangıç vakti bayram sabahı <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">imsak</span> vaktinin girmesidir."
+    }
   },
   {
     "id": 21517,
@@ -447,7 +478,8 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Abdest esnasında hata ile boğaza su kaçması\nII. Unutarak su içmek\nIII. <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">Orucun</span> bozulduğunu zannederek yiyip içmek\nIV. Yutmadan, yemeğin tadına bakmak\n\nYukarıdakilerden hangileri orucu bozup sadece kazayı gerektiren durumlar arasında yer alır?"
   },
   {
     "id": 21518,
@@ -472,7 +504,8 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> edâsının farz olmasının şartlarındandır?"
   },
   {
     "id": 21519,
@@ -497,7 +530,11 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> kazasını gerektiren hallerden biri değildir?",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">Orucun</span> bozulduğunu zannederek yiyip içmek"
+    }
   },
   {
     "id": 21520,
@@ -515,14 +552,18 @@
       "E": "Hac"
     },
     "dogru_cevap": "D",
-    "ana_konu": "İbadetin Tanımı ve Türleri",
+    "ana_konu": "İbadet",
     "alt_konu": "Kifâî ve Aynî İbadetler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi kifâî <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span> türlerindendir?",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">Oruç</span>"
+    }
   },
   {
     "id": 21521,
@@ -540,7 +581,7 @@
       "E": "tezkiye"
     },
     "dogru_cevap": "A",
-    "ana_konu": "İbadetin Tanımı ve Türleri",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "İbadetin Özellikleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -565,14 +606,15 @@
       "E": "Şart"
     },
     "dogru_cevap": "A",
-    "ana_konu": "İbadetin Tanımı ve Türleri",
+    "ana_konu": "İbadet",
     "alt_konu": "Azimet ve Ruhsat",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Yüce Allah’ın, <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span>lerin hepsi için bütün durumlarda yani meşakkat, zaruret ve ihtiyaç gibi geçici bir sebebe bağlı olmaksızın bağlayıcı olmak üzere ilkten koyduğu hükümlerdir. Yukarıda tanımı verilen kavram aşağıdakilerden hangisidir?"
   },
   {
     "id": 21523,
@@ -590,14 +632,15 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Taharet",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Teyemmüm",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Abdesti bozan durumlar teyemmümü de bozar.\nII. Teyemmümle namaz kılan kimsenin namaz esnasında suyu görmesiyle teyemmümü bozulur.\nIII. Hastalık sebebiyle <span class=\"vocab-word concept-word\" data-tr=\"Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.\n💡 Sınav Şifresi: Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Teyemmüm\" onclick=\"showVocabBubble(this, event)\">teyemmüm</span> yapan kişi iyileşse bile teyemmümü geçerlidir.\n<span class=\"vocab-word concept-word\" data-tr=\"Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.\n💡 Sınav Şifresi: Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Teyemmüm\" onclick=\"showVocabBubble(this, event)\">Teyemmüm</span> hakkında yukarıda verilen bilgilerden hangileri doğrudur?"
   },
   {
     "id": 21524,
@@ -615,14 +658,20 @@
       "E": "Taharet"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Taharet",
+    "ana_konu": "Temizlik",
     "alt_konu": "Teyemmüm",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.\n💡 Sınav Şifresi: Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Teyemmüm\" onclick=\"showVocabBubble(this, event)\">Teyemmüm</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Necaset</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Taharet</span>"
+    },
+    "dogru_nedeni": "İSLAM İBADET ESASLARI (Taharet): Doğru yanıt B seçeneğidir. Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir."
   },
   {
     "id": 21525,
@@ -640,7 +689,7 @@
       "E": "Öğle namazının üçüncü rekâtında Fâtiha suresinin okunmaması"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Rükün ve Vacipleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -665,7 +714,7 @@
       "E": "Cuma namazında hatip hutbeye çıktığı zaman"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Vakitleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -690,14 +739,20 @@
       "E": "Kıraat"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Rükünleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıyam</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Rükû</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">İftitah tekbiri</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıraat</span>"
+    }
   },
   {
     "id": 21528,
@@ -715,14 +770,18 @@
       "E": "kıraat secdesi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Secde Türleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">sehiv secdesi</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">kıraat</span> secdesi"
+    }
   },
   {
     "id": 21529,
@@ -740,14 +799,15 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Sehiv Secdesi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Herhangi bir namazda bir farzın te'hîr edilmesi\nII. Herhangi bir namazda vacibin sehven terk edilmesi\nIII. Herhangi bir namazda bir farzın kasden terk edilmesi\nYukarılerden hangileri <span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">sehiv secdesi</span> gerektirir?"
   },
   {
     "id": 21530,
@@ -765,14 +825,17 @@
       "E": "Sabah namazında okunan kunût Mâlikîler’e göre sünnet, Şâfiîler’e göre ise farzdır."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Vitir Namazı ve Kunut",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "D": "İmam Mâlik ve Şâfiî’ye göre her zaman sabah namazlarının farzında ikinci rek‘atın <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">rükû</span>‘undan sonra ayakta kunût duası okunur."
+    }
   },
   {
     "id": 21531,
@@ -797,7 +860,8 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Niyet etmek\nII. Sadaka vermek\nIII. <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">İftar</span> yemeği vermek\nIV. İ'tikafa girmek\nYukarıdakilerden hangileri <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> sünnetlerindendir?"
   },
   {
     "id": 21532,
@@ -822,7 +886,8 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Akıllı olmak\nII. Müslüman olmak\nIII. Reşit olmak\nYukarıda belirtilen şartlardan hangileri <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> farz olmasının şartlarındandır?"
   },
   {
     "id": 21533,
@@ -847,7 +912,12 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "Vaktinde tutulmayan <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> kazası için belirli bir vakit tayin edilmemiştir.",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">Oruç</span> tutmak istemeyenler fidye ödeyerek <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span>iyetten kurtulabilir.",
+      "E": "Emziren kadın <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> tutmayıp sonradan kaza edebilir."
+    }
   },
   {
     "id": 21534,
@@ -865,7 +935,7 @@
       "E": "Tetavvu"
     },
     "dogru_cevap": "A",
-    "ana_konu": "İbadetin Tanımı ve Kavramları",
+    "ana_konu": "İbadet",
     "alt_konu": "İbadet Kavramı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -890,7 +960,7 @@
       "E": "II, III ve IV"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Sünnetleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -915,14 +985,17 @@
       "E": "Kurban kesmek"
     },
     "dogru_cevap": "B",
-    "ana_konu": "İbadetin Türleri",
+    "ana_konu": "İbadet",
     "alt_konu": "Şekle Bağlı İbadetler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">Oruç</span> tutmak"
+    }
   },
   {
     "id": 21537,
@@ -940,7 +1013,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Taharet",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Teyemmüm",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -965,7 +1038,7 @@
       "E": "Ayakları topuklarla birlikte yıkamak"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Taharet",
+    "ana_konu": "Temizlik",
     "alt_konu": "Abdestin Farzları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -990,14 +1063,18 @@
       "E": "Nifas"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Taharet",
+    "ana_konu": "Temizlik",
     "alt_konu": "Taharet Kavramı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Hades</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Taharet</span>"
+    }
   },
   {
     "id": 21540,
@@ -1015,14 +1092,20 @@
       "E": "Necâsetten tahâret"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Taharet",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Necasetten Taharet",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.\n💡 Sınav Şifresi: 6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Şartları (Dışındakiler)\" onclick=\"showVocabBubble(this, event)\">İstikbâl-i kıble</span>",
+      "C": "Hadesten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.\n💡 Sınav Şifresi: 6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Şartları (Dışındakiler)\" onclick=\"showVocabBubble(this, event)\">Setr-i avret</span>",
+      "E": "Necâsetten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>"
+    }
   },
   {
     "id": 21541,
@@ -1040,14 +1123,15 @@
       "E": "Vacip"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Namazın Sünnetleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "• Erkeklerin beş vakit farz ve cuma namazında ezan okuması ve kâmet getirmesi\n• <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıyam</span>da sağ eli sol el üzerine koymak\n• Fâtiha’dan sonra içinden “âmîn” demek\n• Namazın sonunda selam verirken yüzü önce sağ tarafa, sonra da sol tarafa çevirmek\nNamaz ile ilgili yukarıda verilenlerin hükmü nedir?"
   },
   {
     "id": 21542,
@@ -1065,7 +1149,7 @@
       "E": "Kişiyi Allah'a yaklaştırması"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Hikmeti ve Faydaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1090,14 +1174,20 @@
       "E": "Kuûd"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Rükünleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">namazın rükünleri</span> arasında yer almaz?",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıyam</span>",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıraat</span>"
+    },
+    "dogru_nedeni": "Namazın Rükünleri: * İftitâh Tekbiri *Kıyam *Kıraat *Rükû *Secde *Ka‘de-i ahîre"
   },
   {
     "id": 21544,
@@ -1115,7 +1205,7 @@
       "E": "Tesbih namazı"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Nafile Namazlar",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1140,14 +1230,15 @@
       "E": "I, II ve IV"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Sehiv Secdesi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Farzın te'hîri\nII. Vacibin terki\nIII. Farzın terki\nIV. Mekruhun yapılması\nYukarıdakilerden hangisi/hangileri <span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">sehiv secdesi</span> gerektiren durumlardandır?"
   },
   {
     "id": 21546,
@@ -1165,7 +1256,7 @@
       "E": "Sûrî cem, peş peşe olan iki farklı namazın, ilk namazın vaktinde kılınması demektir."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazların Cem Edilmesi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1197,14 +1288,15 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Niyet etmek\nII. Sadaka vermek\nIII. <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">İftar</span> yemeği vermek\nIV. Mukîm olmak\nV. İ'tikafa girmek\nYukarıdakilerden hangileri <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> sünnetlerindendir?"
   },
   {
     "id": 21548,
     "ders": "İSLAM İBADET ESASLARI",
     "ders_kodu": 804,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
     "soru_no": 49,
     "soru": "Aşağıdakilerden hangisi orucu bozup sadece kazâ gerektiren durumlardan biridir?",
     "secenekler": {
@@ -1216,13 +1308,14 @@
     },
     "dogru_cevap": "A",
     "ana_konu": "Oruç",
-    "alt_konu": "Orucu Bozan Durumlar",
+    "alt_konu": "Ünite 5 Alıştırmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Orucu Bozmayan Fakat Mekruh Olan Davranışlar\n         Orucu bozulma tehlikesi ile karşı karşıya getirebilecek davranışlar mekruhtur, bunlardan kaçınmakta\n         yarar vardır. Mesela abdest esnasında ağız çalkalanırken boğaz kısmının iyice ıslanması için aşırı\n         hassasiyet gösterildiği takdirde suyun boğaza kaçma tehlikesi vardır. Öyleyse oruçlunun, ağzını\n         çalkalarken boğazını tamamen ıslatmaya çalışması mekruhtur. Bu esnada boğaza su kaçarsa oruç\n         bozulur. Burna su çekmedeki aşırı hassasiyet de aynıdır. Oruçluya mekruh olan diğer hallerin bir\n         kısmı şöyle sıralanabilir:\n         1. Genç oruçlunun eşini öpmesi, kucaklaması, ona sarılması.\n         2. Yemeği yutmadan sadece tadına bakmak.\n         3. Şekersiz sakız çiğnemek.\n         4. Ağır işlerde çalışmak.\n         5. Oruçluya yakışmayan davranışlarda bulunmak.\n\n                Diş fırçalamak veya misvak kullanmak ise orucu bozmayan, mekruh da olmayan hallerdendir. Doğru\n                cevap B'dir."
   },
   {
     "id": 21549,
@@ -1247,7 +1340,8 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Niyet etmek\nII. Akıllı olmak\nIII. Ergin olmak\nIV. Hayız ve nifastan temizlenmiş olmak\nYukarıdakilerden hangisi/hangileri <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> farz olmasının şartlarındandır?"
   },
   {
     "id": 21550,
@@ -1265,7 +1359,7 @@
       "E": "İ‘tikâfa girilecek mescit, en azından içinde vakit namazları cemaatle kılınan bir mescit olmalıdır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "İtikaf",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "İtikafın Şartları ve Hükümleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1290,14 +1384,15 @@
       "E": "Akıllı olma"
     },
     "dogru_cevap": "C",
-    "ana_konu": "İbadet ve Mükellefiyet",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Mükellefiyet Şartları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi ibadetlerle <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span> olabilmek için gereken şartlardan biri değildir?"
   },
   {
     "id": 21552,
@@ -1315,21 +1410,24 @@
       "E": "Tilavet secdesi"
     },
     "dogru_cevap": "A",
-    "ana_konu": "İbadet Türleri",
+    "ana_konu": "İbadet",
     "alt_konu": "Farz-ı Ayn ve Farz-ı Kifaye",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">Sehiv secdesi</span>"
+    }
   },
   {
     "id": 21553,
     "ders": "İSLAM İBADET ESASLARI",
     "ders_kodu": 804,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
     "soru_no": 54,
     "soru": "Hz. Peygamber’in insan olması itibariyle yaptığı, dini tebliğ maksadı taşımayan insanî davranışlarıdır. Mükellef bu nevi sünnetleri, Hz. Peygamber’e olan sevgisi ve bağlılığından ötürü ve Resûlüllah’ın yolunu takip etmek niyetiyle yaparsa sevap kazanmış olur. Bu gibi sünnetleri terkeden ise, kötü bir davranışta bulunmuş olmaz, kınama ve cezalandırılmayı da haketmez. Yukarıdaki paragrafta sünnetin hangi çeşidi açıklanmıştır?",
     "secenekler": {
@@ -1340,14 +1438,16 @@
       "E": "Takrîrî sünnet"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Sünnet Kavramı",
-    "alt_konu": "Sünnetin Çeşitleri",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "soru_xray": "Hz. Peygamber’in insan olması itibariyle yaptığı, dini tebliğ maksadı taşımayan insanî davranışlarıdır. <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">Mükellef</span> bu nevi sünnetleri, Hz. Peygamber’e olan sevgisi ve bağlılığından ötürü ve Resûlüllah’ın yolunu takip etmek niyetiyle yaparsa sevap kazanmış olur. Bu gibi sünnetleri terkeden ise, kötü bir davranışta bulunmuş olmaz, kınama ve cezalandırılmayı da haketmez. Yukarıdaki paragrafta sünnetin hangi çeşidi açıklanmıştır?",
+    "dogru_nedeni": "Vacip; Allah veya Resulü tarafından yapılması kesin olarak istenilen ancak dayanağı farz kadar kesin\n         olmayan fiillerdir. Gayr-ı müekked sünnet: Hz. Peygamber’in çok defa edâ edip, bazen terkettiği\n         sünnetlerdir. İkindi ve yatsı namazlarının ilk sünnetleri gibi. Gayr-ı müekked sünnetlere, “müstehab”\n         veya “mendub” adı da verilir. Farz-ı ayn: Mükellef olan her Müslümanın kendisinin yerine getirmesi\n         gerekli olan farzlardır. Bir kısım mükellefin yapmasıyla diğerlerinden yükümlülük kalkmaz. Beş vakit\n         namaz ve ramazan orucu böyledir. Sünnet-i zevâid: Hz. Peygamber’in insan olması itibariyle yaptığı,\n         dini tebliğ maksadı taşımayan, normal insanî davranışlarıdır. Bunlara âdet sünneti de denir. Mesela,\n         Hz. Peygamber’in beyaz elbise giymesi, saç ve sakalını kınalaması, yeme, içme gibi hususlardaki\n         alışkanlıkları zevâid sünnettir."
   },
   {
     "id": 21554,
@@ -1365,7 +1465,7 @@
       "E": "I, III ve V"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Taharet",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Abdestin Farzları ve Sünnetleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1390,7 +1490,7 @@
       "E": "mutlak su"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Taharet",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Suların Çeşitleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1415,14 +1515,17 @@
       "E": "maddi ve hakiki temizlik"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Taharet",
+    "ana_konu": "Temizlik",
     "alt_konu": "Hades ve Necaset",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">necaset</span>"
+    }
   },
   {
     "id": 21557,
@@ -1440,14 +1543,18 @@
       "E": "Namaz esnasında birinin verdiği selamı el veya baş işaretiyle almak"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazda Mekruh Olan Şeyler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "İkinci rek‘attaki <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">kıraat</span>i birinci rek‘attaki <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">kıraat</span>ten daha uzun okumak",
+      "C": "Cemaatle kılınan namazda imamdan önce <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">rükû</span> veya secdeye gitmek"
+    }
   },
   {
     "id": 21558,
@@ -1465,7 +1572,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namaz Vakitleri ve Mekruh Vakitler",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1490,14 +1597,20 @@
       "E": "Kıyam"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Rükünleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi namazın <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">rükû</span>nlarından biri değildir?",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıraat</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Rükû</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıyam</span>"
+    }
   },
   {
     "id": 21560,
@@ -1515,7 +1628,7 @@
       "E": "Hanefî mezhebine göre bayram namazına yetişemeyen kimse tek başına bayram namazını kılar."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Bayram Namazları",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1540,14 +1653,18 @@
       "E": "Telafi secdesi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Sehiv Secdesi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">Sehiv secdesi</span>"
+    },
+    "dogru_nedeni": "İSLAM İBADET ESASLARI (Namaz; Genel Esaslar): Doğru yanıt B seçeneğidir. Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir."
   },
   {
     "id": 21562,
@@ -1565,7 +1682,7 @@
       "E": "II, III ve IV"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Cuma Namazı",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1597,14 +1714,19 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "B": "Emziren kadın <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> tutmayıp sonradan kaza edebilir.",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">Oruç</span> tutmak istemeyenler fidye ödeyerek <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span>iyetten kurtulabilir.",
+      "E": "Vaktinde tutulmayan <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> kazası için belirli bir vakit tayin edilmemiştir."
+    }
   },
   {
     "id": 21564,
     "ders": "İSLAM İBADET ESASLARI",
     "ders_kodu": 804,
-    "yil": "1.1 Vizeler",
-    "donem": "1.1.1",
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
     "soru_no": 65,
     "soru": "Aşağıdakilerden hangisi orucu bozmayan fakat mekruh olan davranışlardan biri değildir?",
     "secenekler": {
@@ -1622,7 +1744,7 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)"
   },
   {
     "id": 21565,
@@ -1647,7 +1769,8 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Akıllı olmak\nII. Sağlıklı olmak\nIII. Mukîm olmak\nIV. Müslüman olmak\nV. Bâliğ (ergin) olmak\nYukarıdakilerden hangileri <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> edasının farz olmasının şartlarındandır?"
   },
   {
     "id": 21566,
@@ -1665,7 +1788,7 @@
       "E": "İ‘tikâf niyetiyle bir mescitte bulunan kimse, oradan ancak zorunlu ihtiyaçlarını karşılamak için çıkabilir."
     },
     "dogru_cevap": "A",
-    "ana_konu": "İtikaf",
+    "ana_konu": "İbadet",
     "alt_konu": "İtikafın Hükümleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1690,7 +1813,7 @@
       "E": "Hz. Peygamber’in hayatının sonlarında yaptığı sünnettir."
     },
     "dogru_cevap": "B",
-    "ana_konu": "İbadetlerin Hukuki Değerleri",
+    "ana_konu": "İbadet",
     "alt_konu": "Sünnet Türleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1715,14 +1838,15 @@
       "E": "Nâfile"
     },
     "dogru_cevap": "B",
-    "ana_konu": "İbadetlerin Hukuki Değerleri",
+    "ana_konu": "İbadet",
     "alt_konu": "Farz Türleri (Aynî ve Kifâî)",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Her bir <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span>in sorumlu ve yükümlü olduğu ibadetlere ne ad verilir?"
   },
   {
     "id": 21569,
@@ -1740,7 +1864,7 @@
       "E": "Suyu bulan teyemmümlünün"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Taharet (Temizlik)",
+    "ana_konu": "Temizlik",
     "alt_konu": "Abdesti Bozan Haller",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1765,7 +1889,7 @@
       "E": "Boynu mesh etmek"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Taharet (Temizlik)",
+    "ana_konu": "Temizlik",
     "alt_konu": "Abdestin Farz ve Sünnetleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1790,14 +1914,17 @@
       "E": "Namazda birinin verdiği selamı el ve baş işaretiyle almak"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazı Bozan Haller",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Rükû</span> ve secdede tesbihleri terk etmek"
+    }
   },
   {
     "id": 21572,
@@ -1815,14 +1942,15 @@
       "E": "II, III ve IV"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazın Sünnetleri",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "I. Sübhanekeyi okumak\nII. İlk ve son oturuşlarda tahiyyatı okumak\nIII. Ta'dîl-i erkâna riayet etmek\nIV. <span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">İftitah tekbiri</span>nde elleri yukarı kaldırmak\nYukarıdakilerden hangileri namazın sünnetlerindendir?"
   },
   {
     "id": 21573,
@@ -1840,14 +1968,17 @@
       "E": "tilâvet secdesi"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Özel Hükümler",
     "alt_konu": "Secde-i Tilavet",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">sehiv secdesi</span>"
+    }
   },
   {
     "id": 21574,
@@ -1865,7 +1996,7 @@
       "E": "cem-i sûrî"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Namaz",
+    "ana_konu": "Namaz: Genel Esaslar",
     "alt_konu": "Namazların Cem Edilmesi",
     "kredi": 2,
     "sinav_soru_sayisi": 20,
@@ -1897,7 +2028,10 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">Orucun</span> bozulduğunu zannederek yiyip içmek"
+    }
   },
   {
     "id": 21576,
@@ -1922,7 +2056,8 @@
     "puan": 0.1,
     "sekilli": false,
     "sinav_kodu": "1.1.1",
-    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+    "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> farz olmasının şartlarından biridir?"
   },
   {
     "id": 21577,
@@ -1948,5 +2083,1810 @@
     "sekilli": false,
     "sinav_kodu": "1.1.1",
     "sinav_adi": "1. Sınıf 1. Dönem Ara Sınavı (Vize)"
+  },
+  {
+    "id": 21578,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 79,
+    "soru": "I. Bedeni ibadet – Hac II. Mali ibadet – Zekât III. Ayni ibadet – Beş vakit namaz IV. Vakte bağlı ibadet – Fıtır sadakası Yukarıda verilmiş olan ibadet türü ve ibadet eşleştirmelerinden hangileri doğru eşleştirilmiştir?",
+    "secenekler": {
+      "A": "Yalnız III",
+      "B": "I ve II",
+      "C": "I, III ve IV",
+      "D": "II, III ve IV",
+      "E": "I, II, III ve IV"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Malî ve bedenî ibadet: Yerine getirilmesi için aynı anda hem mal hem de sağlıklı bir beden gerektiren ibadetlerdir. Bunun başlıca örneği hacdır. Malî ibadet: Ağırlıklı olarak malla yapılan, sorumlu tutulabilmek için belli bir mal varlığı gerektiren ibadetlerdir. Zengin sayılan Müslüman mükelleflerin zorunlu olarak vermesi gereken zekât ve her Müslümanın kendi imkânına göre gönüllü olarak verdiği sadaka şeklindeki yardımlar bu kısımda yer alır. Aynî ibadet: Mükelleflerin her biri tarafından bizzat yerine getirilmesi gereken ibadetlerdir. Vakte bağlı ibadet: Yerine getirilmesi için dinin belli bir vakit tayin ettiği ibadetlerdir. Beş vakit namaz, oruç ve zekât böyledir. Vakte bağlı olmaları dolayısıyla bunlara “mukayyed ibadet” adı verilir. Ramazan orucu, fıtır sadakası, hac ve beş vakit namaz bu tür ibadetlerdendir. Bu açıdan incelendiğinde Hac ibadeti hem bedeni hem de mali ibadet olması nedeniyle doğru cevap I eşleştirmesi dışındakilerin yer aldığı D seçeneğidir.",
+    "soru_xray": "I. Bedeni <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span> – Hac II. Mali <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span> – Zekât III. Ayni ibadet – Beş vakit namaz IV. Vakte bağlı ibadet – Fıtır sadakası Yukarıda verilmiş olan ibadet türü ve ibadet eşleştirmelerinden hangileri doğru eşleştirilmiştir?"
+  },
+  {
+    "id": 21579,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 80,
+    "soru": "Aşağıdaki ibadetlerden hangisini yapan kişi ibadet türü olarak en az üç sınıf içerisinde yer alan bir ibadeti gerçekleştirmiş sayılmaz?",
+    "secenekler": {
+      "A": "Hac",
+      "B": "Oruç",
+      "C": "Zekat",
+      "D": "Kaza namazı",
+      "E": "Beş vakit namaz"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Hac ibadeti, bedeni ve mali bir ibadet olmasının yanında vakte bağlı bir ibadettir. Oruç ise bedeni ibadet ve ayni ibadet olmasının yanı sıra vakte bağlı bir ibadet türüdür. Zekat, hem mali bir ibadettir hem ayni ibadettir, ayrıca miktarı belli olan bir ibadet türüdür. Beş vakit namaz da ayni ibadet, vakti belli olan ibadet ve bedeni ibadet gibi birçok sınıf içerisinde yer almaktadır. Kaza namazı ise namaz olması itibariyle bedeni ibadet olmakla beraber vakitten bağımsız ibadet sınıfında bir ibadettir.",
+    "soru_xray": "Aşağıdaki ibadetlerden hangisini yapan kişi <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span> türü olarak en az üç sınıf içerisinde yer alan bir ibadeti gerçekleştirmiş sayılmaz?",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">Oruç</span>"
+    }
+  },
+  {
+    "id": 21580,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 81,
+    "soru": "Hz. Peygamber’in insan olması itibariyle yaptığı, dini tebliğ maksadı taşımayan, normal insanî davranışlarına ne denilmektedir?",
+    "secenekler": {
+      "A": "Vacip",
+      "B": "Mendub",
+      "C": "Müstehab",
+      "D": "Farz-ı ayn",
+      "E": "Sünnet-i zevaid"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Vacip; Allah veya Resulü tarafından yapılması kesin olarak istenilen ancak dayanağı farz kadar kesin olmayan fiillerdir. Gayr-ı müekked sünnet: Hz. Peygamber’in çok defa edâ edip, bazen terkettiği sünnetlerdir. İkindi ve yatsı namazlarının ilk sünnetleri gibi. Gayr-ı müekked sünnetlere, “müstehab” veya “mendub” adı da verilir. Farz-ı ayn: Mükellef olan her Müslümanın kendisinin yerine getirmesi gerekli olan farzlardır. Bir kısım mükellefin yapmasıyla diğerlerinden yükümlülük kalkmaz. Beş vakit namaz ve ramazan orucu böyledir. Sünnet-i zevâid: Hz. Peygamber’in insan olması itibariyle yaptığı, dini tebliğ maksadı taşımayan, normal insanî davranışlarıdır. Bunlara âdet sünneti de denir. Mesela, Hz. Peygamber’in beyaz elbise giymesi, saç ve sakalını kınalaması, yeme, içme gibi hususlardaki alışkanlıkları zevâid sünnettir."
+  },
+  {
+    "id": 21581,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 82,
+    "soru": "İnanarak, samimiyetle, iyi niyetle ve dü nyaya ait bir menfaat beklemeden yapılan ibadete ne ad verilmektedir?",
+    "secenekler": {
+      "A": "Tâat",
+      "B": "Kurbet",
+      "C": "Taabbüd",
+      "D": "Ubûdiyet",
+      "E": "Zikir"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Bir davranışın ibadet olabilmesi için, inanılarak, samimiyetle, iyi niyetle ve dü nyaya ait bir menfaat beklemeden yapılması gerekir. Buna taabbü d anlayışı denilir. Tâ at, emri benimseyip yerine getirmek demektir. Buna iteat da denir. Ister belli bir niyetle isterse niyetsiz yapılsın, yapılmasından dolayı sevap kazanılan herhangi bir iş demektir. Yakınlık anlamına gelen kurbet ise, insanı manevı ̂ olarak Yü ce Allah’a yaklaştıran her bir gü zel iş anlamındadır. Dinı ̂ literatü rdeki “ubû diyet” kavramı ise insanın Allah’a olan teslimiyetini, bağ lılığ ını ve kullukta bulunmasını ifade etmektedir."
+  },
+  {
+    "id": 21582,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 83,
+    "soru": "Aşağıdaki seçeneklerden hangisi ibadet çeşitlerinden biri değildir?",
+    "secenekler": {
+      "A": "Beden ve malla yapılmasına göre",
+      "B": "Herkesin sorumlu olup olmamasına göre",
+      "C": "Vakte bağlı olup olmamasına göre",
+      "D": "Mükellefin yaşadığı yere göre",
+      "E": "Miktarının belli olup olmamasına göre"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Mükellefin yasadığı yere göre. Doğru cevap D'dir.",
+    "soru_xray": "Aşağıdaki seçeneklerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span> çeşitlerinden biri değildir?",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">Mükellef</span>in yaşadığı yere göre"
+    }
+  },
+  {
+    "id": 21583,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 84,
+    "soru": "Aşağıdakilerden hangisi bütün nimetlerine karşı Allah'a minnettarlık bildirmek anlamına gelmektedir?",
+    "secenekler": {
+      "A": "Zikir",
+      "B": "Fikir",
+      "C": "Şükür",
+      "D": "İbadet",
+      "E": "Zekât"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Allah’ın emirlerine iteat edip yasaklarından kaçmak da ibadettir. Bu anlamda ibadetin zikir, fikir ve şükür olmak üzere üç boyutu vardır. İbadetin zikir boyutu, Allah inancını zihinde canlı tutmak, O’nu anmak ve varlığını benliğinde duyabilmektir. Fikir boyutu, Allah’ın sıfatları ve evrende yarattığı eşsiz eserleri hakkında düşünmektir. Şükür ise, bütün bu nimetlerine karşı minnettarlığını bildirmektir.",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">İbadet</span>"
+    }
+  },
+  {
+    "id": 21584,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 85,
+    "soru": "Aşağıdakilerden hangisi dinin, tek bir belirleme yapmaksızın, mükellefi bir kaç seçenekten birini yapmakta serbest bıraktığı ibadetler olarak ifade edilmektedir?",
+    "secenekler": {
+      "A": "Aynî ibadet",
+      "B": "Vakte bağlı ibadet",
+      "C": "Miktarı belli ibadet",
+      "D": "Belirli olan ibadet",
+      "E": "Muhayyer ibadet"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Muhayyer ibadet: Dinin, tek bir belirleme yapmadan, mükellefi bir kaç seçenekten birini yapmakta serbest bıraktığı ibadetlerdir. Mükellefin verilen seçenekler arasından yerine getireceği ibadeti seçme hakkı bulunması sebebiyle bu ibadetlere “muhayyer ibadet” de denir. Mesela, yemin keffâreti böyle bir ibadettir.",
+    "soru_xray": "Aşağıdakilerden hangisi dinin, tek bir belirleme yapmaksızın, <span class=\"vocab-word concept-word\" data-tr=\"Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).\n💡 Sınav Şifresi: Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • Ef’âl-i Mükellefîn\" onclick=\"showVocabBubble(this, event)\">mükellef</span>i bir kaç seçenekten birini yapmakta serbest bıraktığı ibadetler olarak ifade edilmektedir?",
+    "secenekler_xray": {
+      "A": "Aynî <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span>",
+      "B": "Vakte bağlı <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span>",
+      "C": "Miktarı belli <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span>",
+      "D": "Belirli olan <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span>",
+      "E": "Muhayyer <span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span>"
+    }
+  },
+  {
+    "id": 21585,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 86,
+    "soru": "Ubûdiyet, kulluk etmek, tapmak gibi kelimelerle de ifade edilen ve her şeyin yaratıcısı olan Allah’a içten gelerek ve gönüllü olarak yönelmek, boyun eğmek ve iteat etmek eyleminin karşılığı aşağıdaki kavramlardan hangisidir?",
+    "secenekler": {
+      "A": "İman",
+      "B": "İbadet",
+      "C": "Kuran",
+      "D": "Mutlak yemin",
+      "E": "Fevr yemini"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Dinî bir terim olarak ibadetin genel anlamı, her şeyin yaratıcısı olan Allah’a içten gelerek ve gönüllü olarak yönelmek, boyun eğmek ve iteat etmektir. Türkçemizde ibadet, kulluk etmek ve tapmak kelimeleriyle de ifade edilmektedir. Dinî literatürdeki “ubûdiyet” kavramı ise insanın Allah’a olan teslimiyetini, bağlılığını ve kullukta bulunmasını ifade etmektedir.",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">İbadet</span>"
+    }
+  },
+  {
+    "id": 21586,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 87,
+    "soru": "İbadetle yükümlü ve sorumlu olabilmek için gerekli olan “akıl ve beden bakımından belli bir olgunluğa erişmiş olma” şartına ne ad verilir?",
+    "secenekler": {
+      "A": "Akil ve bâliğ olmak",
+      "B": "Akıllı ve ergin olmak",
+      "C": "Ehliyet",
+      "D": "Akıl ve temyiz sahibi olmak",
+      "E": "Güç ve imkâna sahip olmak"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "İbadetle yükümlü ve sorumlu olan kimselere “mükellef” yani yükümlü denir. Yükümlü olabilmek için akıl ve beden bakımından belli bir olgunluğa erişmek gerekir. Buna âkil ve bâliğ olma şartı denilir. Mükellef olabilmek için akıllı ve ergin olmak gerekir. Bunun yanında mükellef olma ile ilgili başka bir kavram da ehliyettir. Ehliyet, kişinin dinî ve hukukî bakımdan sorumluluk taşımaya elverişli olmasıdır. Bu durumda olan kimseler artık kendi iradeleriyle hareket edebilecek olgunluğa eriştikleri için yaptıkları fiillerden, söz ve davranışlardan da kendileri sorumlu olurlar. Yaptıkları iyi işlerin sevap ve mükâfatı, kötü işlerin ise günah ve cezası kendilerine ait olur. Dinin emir ve yasaklarına muhatap olacak ehliyete sahip olmak için bir takım şartlar vardır. Yaşıyor olmak bunların başında gelir. Diğer bir şart, akıl ve temyiz sahibi olmaktır. Temyiz, iyiyi kötüden, yararlıyı zararlıdan ayırt etme özelliğidir. Bunlar yanında teklif edilen dinî yükümlülüğü yerine getirecek güç ve imkâna sahip olmak da gereklidir."
+  },
+  {
+    "id": 21587,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 1",
+    "soru_no": 88,
+    "soru": "Müstehab ile ilgili olarak verilen aşağıdaki bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Güzel görülen, sevimli ve tercih edilen amel demektir",
+      "B": "Hz. Peygamber’in bazan işleyip, bazan terk ettiği, İslâm âlimlerinin dinî bakımdan uygun ve güzel bulup işlediği işlere denir.",
+      "C": "Hz. Peygamber’in farz ve vacip kapsamı dışında kalan yani kesin ve bağlayıcı olmayan ancak tavsiye ve örnek olma niteliği taşıyan söz ve fiillerinin genel adıdır.",
+      "D": "Sabah namazının, ortalık aydınlanıncaya (isfâr) kadar kılınması müstehab’a örnek olabilir.",
+      "E": "Müstehabın yapılmasında sevap vardır, terkeden ise ağır ceza hak etmiş olur."
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 1)",
+    "dogru_nedeni": "Müstehab, güzel görülen, sevimli ve tercih edilen amel demektir. Hz. Peygamber’in bazan işleyip, bazan terk ettiği, İslâm âlimlerinin dinî bakımdan uygun ve güzel bulup işlediği işlere “müstehab” denir. Nâfile namaz ve oruçların bir kısmı bu niteliktedir. İbadetlerin yapılışında; farz, vacip ve sünnetlerin dışında kalan bazı davranışlar müstehabtır. Sabah namazının, ortalık aydınlanıncaya (isfâr) kadar, sıcak mevsimde öğle namazının serin vakte (ibrâd) kadar geciktirilerek kılınması, akşam namazında ise acele edilmesi müstehaba örnek verilebilir. Müstehabın yapılmasında sevap vardır, terkinde ise kınama yoktur. Soruda yanlış seçenek sorulduğu için E şıkkı yanlıştır."
+  },
+  {
+    "id": 21588,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 89,
+    "soru": "“Sünnet olmak, etek tıraşı olmak, tırnak kesmek, koltuk altı kıllarını temizlemek, bıyıkları kısaltmak, sakalları uzatmak, misvak kullanmak, burna su çekmek, parmak boğumlarını yıkamak ve su ile tahâretlenmek fıtrattandır” Yukarıda verilen hadisin anlamı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Temizlik evrensel ve insana ait bir değer ve özelliktir.",
+      "B": "Sadece Müslüman olanlar bu eylemleri gerçekleştirmelidir.",
+      "C": "Bu uygulamalar İslamiyette farzdır ve yerine getirilmesi mecburidir.",
+      "D": "Manen kirli olan madden de kirli sayılmaktadır.",
+      "E": "Haftada bir kez boy abdesti almak ve beden temizliği yapmak şarttır."
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Hz. Peygamber’in bu hususları fıtrata bağlamasından anlaşılmaktadır ki, temizlik evrensel ve insana ait bir değer ve özelliktir. Bu hadisin vermek istediği temel mesajlardan biri şudur: İnsana temizlik yaraşır, insanlığının farkında olan temiz olmak zorundadır."
+  },
+  {
+    "id": 21589,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 90,
+    "soru": "Beden, elbise ve namaz kılınacak yerden hakiki pisliklerin giderilmesine İslami Fıkıh dilinde ne ad verilir?",
+    "secenekler": {
+      "A": "Hadesten tahâret",
+      "B": "Nezâfet",
+      "C": "Tahâret",
+      "D": "Necâsetten tahâret",
+      "E": "Tezkiye"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Namaz: Genel Esaslar",
+    "alt_konu": "Ünite 2",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Temizlenme (tezkiye) ise daha çok ahlak ve tasavvuf ilminin konusudur. Buna göre kavram olarak temizlik (tahâret), hakiki pisliklerin giderilmesi ve hükmi kirliliklerin kaldırılmasıdır. Hükmi temizlik aynı zamanda maddi temizliği de kapsamaktadır. Beden, elbise ve namaz kılınacak yerden hakiki pisliklerin giderilmesine “necâsetten tahâret” denilir. Abdestsizlik, cünüplük, hayız (aybaşı) ve nifas (loğusalık) durumlarında insanda meydana geldiği düşünülen pisliklerin kaldırılmasına ise “hadesten tahâret” adı verilir.",
+    "secenekler_xray": {
+      "A": "Hadesten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Tahâret</span>",
+      "D": "Necâsetten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>"
+    }
+  },
+  {
+    "id": 21590,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 91,
+    "soru": "Hanefi mezhebine göre abdestin farzı kaçtır?",
+    "secenekler": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Abdestin farzı 4'tür: Yüzü yıkamak, kolları dirseklerle birlikte yıkamak, başı meshetmek ve ayaykları topuklarla birlikte yıkamak. Abdestin bu dört farzında sünni fıkıh mezhepleri görüş birliği etmiş, ancak Hanefiler dışındaki üç mezhep bu farzlara başkalarını da eklemiştir.Doğru cevap D'dir."
+  },
+  {
+    "id": 21591,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 92,
+    "soru": "Çaylak, doğan gibi yırtıcı kuşların artığı olan sular İslam Fıkhı açısından aşağıdaki su gruplarından hangisine dâhildir?",
+    "secenekler": {
+      "A": "Temiz ve temizleyici özellik taşıyan sular",
+      "B": "Temiz ve temizleyici olmakla birlikte kullanılması mekruh olan sular",
+      "C": "Temiz fakat temizleyici olmayan sular",
+      "D": "Temiz ve temizleyici olmayan sular",
+      "E": "Temizliğinde şüphe bulunan sular"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Temiz ve temizleyici olmakla birlikte kullanılması mekruh olan sular: Tavuk ve ördeğin, kedi gibi eti yenmeyen ve evde bulunması câiz olan evcil hayvanların (köpek böyle değildir), çaylak, doğan gibi yırtıcı kuşların artığı olan sular bu gruba dâhildir. Evcil hayvanlara tanınan bu istisna, sakınılmasının imkânsızlığından ötürü, Hz. Peygamber tarafından getirilmiştir. Doğru cevap B'dir."
+  },
+  {
+    "id": 21592,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 93,
+    "soru": "Aşağıdakilerden hangisi sünnî fıkıh mezheplerinden Hanefîler’e göre abdestin farzları arasında yer almaz?",
+    "secenekler": {
+      "A": "Yüzü yıkamak.",
+      "B": "Kolları dirseklerle birlikte yıkamak.",
+      "C": "Başın tamamını meshetmek.",
+      "D": "Suyun abdest azalarına ulaşmasını sağlamak.",
+      "E": "Ayakları topuklarla birlikte yıkamak."
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Abdestin farzları, bir fiilin abdest sayılabilmesi için onda bulunması zorunlu olan ana unsurları ifade eder. İlgili ayette de zikredildiği üzere abdestin farzları dörttür: 1. Yüzü yıkamak. 2. Kolları dirseklerle birlikte yıkamak. 3. Başı meshetmek. 4. Ayakları topuklarla birlikte yıkamak. Abdestin bu dört farzında sünnî fıkıh mezhepleri görüş birliği etmişlerdir. Ancak Hanefîler’in dışındaki üç mezhep bu farzlara başkalarını da eklemişlerdir. Ancak Hanefilere göre başın dörtte birini el içinin ıslaklığıyla meshedilmesi yeterlidir. Doğru cevap C'dir."
+  },
+  {
+    "id": 21593,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 94,
+    "soru": "Sözlükte, bir işe yönelmek, bir şeyi kastetmek gibi anlamlara gelen kelime aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Tavaf",
+      "B": "Mazmaza",
+      "C": "İstinşak",
+      "D": "Necis",
+      "E": "Teyemmüm"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Gusülde ağzı su ile yıkamak (mazmaza), burna su çekmek (istinşak), necis pis anlamlarına gelir.Teyemmüm ise sözlükte, bir işe yönelmek, bir şeyi kastetmek gibi anlamlara gelir. Doğru cevap E'dir.",
+    "secenekler_xray": {
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.\n💡 Sınav Şifresi: Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Teyemmüm\" onclick=\"showVocabBubble(this, event)\">Teyemmüm</span>"
+    }
+  },
+  {
+    "id": 21594,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 95,
+    "soru": "Aşağıdakilerden hangisi İslam'da hedeflenen ideal temizliğin üçüncü aşamasında temizlenmesi gerekenler arasına girmez?",
+    "secenekler": {
+      "A": "Gusül",
+      "B": "Gıybet",
+      "C": "Haram yeme",
+      "D": "Haset",
+      "E": "Hırs"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "İslamiyette hedeflenen ideal temizliğin üç aşaması vardır. Birinci aşama, beden, elbise ve çevre temizliği şeklinde ifade edilebilecek olan maddi temizliktir. Bu temizlik, ibadetlerin önşartı olarak ve onlara hazırlık olduğu için aynı zamanda ibadet kapsamında değerlendirilmiştir. İkinci aşamada abdest ve gusül gibi esasen ibadet amaçlı temizlik gelmektedir. İbadetlerden alınması gereken haz ve Allah ile iletişim kurabilmek büyük ölçüde bu temizliklere bağlı olduğu için bunlar yerine getirilmeden ibadete başlanılamaz. Üçüncü aşamada kişinin azalarını gıybet, yalan, haram yeme, haset, kibir, hırs ve gösteriş gibi kötü huylardan temizlemesini hedefleyen ahlakî ve manevi temizlik gelir. Gusül bunların arasında yer almadığı için cevap A'dır."
+  },
+  {
+    "id": 21595,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 96,
+    "soru": "Hristiyanlarda gusül (büyük abdest) ve abdest yoktur. Dinsel anlamda su ile yıkanmaya sadece bu dine yeni girenlerin kutsal suya batırılması olarak bakılır. Hristiyanlıktaki bu ritüel hangi seçenekte doğru olarak verilmiştir?",
+    "secenekler": {
+      "A": "Hades",
+      "B": "Taharet",
+      "C": "Necaset",
+      "D": "Vaftiz",
+      "E": "Haç çıkarma"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Hristiyanlıktaki dinsel yıkanmaya 'Vaftiz' ya da 'vaftiz etme' denir. Doğru cevap 'D'",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Hades</span>",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Taharet</span>",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Necaset</span>"
+    }
+  },
+  {
+    "id": 21596,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 97,
+    "soru": "I. Kanaması durmuş yara II. Eti yenmeyen hayvanın salyası III. İnsan dışkısı IV. Sarhoş edici içkiler V. Pişmiş soğan ve sarımsak Yukarıdakilerden hangileri dinen ve fıkhen necis sayılan maddeler arasında yer almaktadır?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve V",
+      "C": "II ve IV",
+      "D": "II, III ve V",
+      "E": "II, III ve IV"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)",
+    "dogru_nedeni": "Dinen ve fıkhen necis sayılan maddeler ana hatlarıyla şöyledir: Akan kan, domuz eti, sarhoş edici içkiler, insan idrarı, dışkısı, ağız dolusu kusmuğu, eti yenmeyen hayvanların salyası, eti, idrar ve dışkısı necistir. Dolayısıyla II, III ve IV'teki maddeler necistir."
+  },
+  {
+    "id": 21597,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 98,
+    "soru": "Aşağıdaki terimlerden hangisi cemaatle kılınan namazda imama uyan kişi için kullanılan terimlerden biri değildir?",
+    "secenekler": {
+      "A": "Münferid",
+      "B": "Muktedî",
+      "C": "Me’mûm",
+      "D": "Müttebi",
+      "E": "Mü'tem"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Cevap A olmalıdır. Münferid, namazı tek başına kılan kişiye denir."
+  },
+  {
+    "id": 21598,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 99,
+    "soru": "Namaz kelimesinin Arapça karşılığı hangisidir?",
+    "secenekler": {
+      "A": "siyam",
+      "B": "sucûd",
+      "C": "salât",
+      "D": "musalli",
+      "E": "mendub"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Namaz, Farsça bir kelime olup Arapça karşılığı “salât”tır. Salât, sözlükte dua etmek, yal​varmak, rahmet etmek gibi anlamlara gelir."
+  },
+  {
+    "id": 21599,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 100,
+    "soru": "Bayram namazları hangi kategoriye girer?",
+    "secenekler": {
+      "A": "farz namazları",
+      "B": "sünnet namazları",
+      "C": "vacip namazları",
+      "D": "nafile namazlar",
+      "E": "müstehab namazlar"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Yatsı namazından sonra kılınan üç rekât vitir namazı ile ramazan ve kurban bayramlarında ikişer rek‘at kılınan bayram namazları vacip namazlardır."
+  },
+  {
+    "id": 21600,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 101,
+    "soru": "Cemaatle kılınan namazda kendisine uyulan kişiye imâm ve bu kişinin görevine de imâmet denir. İmama uyma fiili için aşağıdaki terim veya terimlerden hangisi kullanılmaktadır. I. İttibâ II. Müdrik III. Lâhik IV. İktidâ V. Mümeyyiz",
+    "secenekler": {
+      "A": "I-II",
+      "B": "II-III-IV",
+      "C": "IV-V",
+      "D": "I-IV",
+      "E": "II-IV-V"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "İmama uymaya “iktidâ”, “ittibâ” adı verilir."
+  },
+  {
+    "id": 21601,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 102,
+    "soru": "Namaz kılan kişiye ne denir?",
+    "secenekler": {
+      "A": "Musallî",
+      "B": "Salât",
+      "C": "Tekbîr",
+      "D": "Kıyam",
+      "E": "Ku‘ûd"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Namaz, Farsça bir kelime olup Arapça karşılığ ı “salâ t”tır. Salâ t, sö zlü kte dua etmek, yalvarmak, rahmet etmek gibi anlamlara gelir. Dinı ̂ bir terim olarak salâ t (namaz) “tekbı ̂r” ile başlayıp “selam” ile tamamlanan belirli hareket ve sö zlerden oluşan ibadeti ifade eder. Namaz kılan kişiye “musallı ̂” denir. Doğru cevap A'dır.",
+    "secenekler_xray": {
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıyam</span>"
+    }
+  },
+  {
+    "id": 21602,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 103,
+    "soru": "Hangisi namaza başlamadan önce yerine getirilmesi gereken şartlardan biri değildir?",
+    "secenekler": {
+      "A": "Hadesten tahâret,",
+      "B": "Necâsetten tahâret,",
+      "C": "Setr-i avret,",
+      "D": "İstikbâl-i kıble",
+      "E": "Ka‘de-i ahı ̂re"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Namaza başlamadan önce yerine getirilmesi gereken şartlar vardır ki, bunlar hadesten tahâret, necâsetten tahâret, setr-i avret, istikbâl-i kıble, vakit ve niyetten ibarettir. Ka‘de-i ahı ̂re (Son Oturuş) namazın rükünlarındandır. Doğru cevap E'dir.",
+    "secenekler_xray": {
+      "A": "Hadesten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>,",
+      "B": "Necâsetten <span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">tahâret</span>,",
+      "C": "<span class=\"vocab-word concept-word\" data-tr=\"Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.\n💡 Sınav Şifresi: 6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Şartları (Dışındakiler)\" onclick=\"showVocabBubble(this, event)\">Setr-i avret</span>,",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.\n💡 Sınav Şifresi: 6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Şartları (Dışındakiler)\" onclick=\"showVocabBubble(this, event)\">İstikbâl-i kıble</span>"
+    }
+  },
+  {
+    "id": 21603,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 104,
+    "soru": "Temkin süresi de eklendiğinde güneşin doğuşundan itibaren yaklaşık kaç dakika kadar namaz kılınmamalıdır?",
+    "secenekler": {
+      "A": "30-40",
+      "B": "40-50",
+      "C": "50-60",
+      "D": "60-70",
+      "E": "70-80"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Bazı vakitler vardır ki, bu vakitlerde namaz kılmak yasaklanmıştır. Bu vakitlere “ mekruh vakitler” veya “kerâhet vakti” denir. Bunlardan birisi güneşin bir veya iki mızrak boyu yani beş derece yükselmesidir. Güneşin doğuşundan itibaren yaklaşık otuz dakika sürer. Temkin süresi de buna eklenirse, güneşin doğuşundan itibaren yaklaşık 40-50 dakika kadar bir süre namaz kılınmamalıdır. Bu süreden sonra kerâhet vakti çıkmış olur. Artık istenilen nâfile veya kazâ namazları kılınabilir. Dolayısıyla, doğru cevap B seçeneğidir."
+  },
+  {
+    "id": 21604,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 105,
+    "soru": "Yatsı namazından sonra kılınan üç rekât vitir namazı ile ramazan ve kurban bayramlarında ikişer rek‘at kılınan bayram namazları '_______________'dır. Boşluğa gelmesi gereken uygun ifade aşağıdaki seçeneklerin hangisinde yer almaktadır?",
+    "secenekler": {
+      "A": "Vacip namazlar",
+      "B": "Farz namazlar",
+      "C": "Nafile namazlar",
+      "D": "Sünnet namazlar",
+      "E": "Şükür namazlar"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)",
+    "dogru_nedeni": "Yatsı namazından sonra kılınan üç rekât vitir namazı ile ramazan ve kurban bayramlarında ikişer rek‘at kılınan bayram namazları vacip namazlardır."
+  },
+  {
+    "id": 21605,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 106,
+    "soru": "Aşağıdaki seçeneklerin hangisinde namazı bozan durumlardan herhangi birine yer verilmemiştir?",
+    "secenekler": {
+      "A": "Bayılmak",
+      "B": "Kahkaha atmak",
+      "C": "Yemek ve içmek",
+      "D": "Hapşırmak",
+      "E": "Konuşmak"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Namazda isteği dışında hapşırmak namazı bozmaz."
+  },
+  {
+    "id": 21606,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 107,
+    "soru": "Ülkemizde ikindi namazı vakti aşağıdakilerden hangisi esas alınarak belirlenir?",
+    "secenekler": {
+      "A": "Tağlis",
+      "B": "Asr-ı sani",
+      "C": "İstiva",
+      "D": "İbrad",
+      "E": "Asr-ı evveli"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Ülkemizde ikindi namazı vakti asr-ı evvel esas alınarak belirlenir. doğru cevap E'dir"
+  },
+  {
+    "id": 21607,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 108,
+    "soru": "Aşağıdakilerden hangisi Cuma namazının farz olma şartları arasında değildir?",
+    "secenekler": {
+      "A": "Erkek olmak",
+      "B": "Sağlıklı olmak",
+      "C": "Kadın olmak",
+      "D": "Hür olmak",
+      "E": "Mukim olmak"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Kadın olmak cuma namazının farz olma şartları arasında yoktur. Yani cuma namazı kadınlara farz değildir. Doğru cevap C'dir"
+  },
+  {
+    "id": 21608,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 109,
+    "soru": "Aşağıdakilerden hangisi vacip namazlar arasındadır?",
+    "secenekler": {
+      "A": "Teravih namazı",
+      "B": "Vitir namazı",
+      "C": "Cuma namazı",
+      "D": "Kuşluk namazı",
+      "E": "Teheccüd namazı"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Namaz: Özel Hükümler",
+    "alt_konu": "Ünite 4",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Vitir namazı vacip olan namazlar arasındadır ve doğru cevap B'dir"
+  },
+  {
+    "id": 21609,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 110,
+    "soru": "Aşağıdakilerden hangisi Cuma Namazının sahih olmasının şartlarından biri değildir?",
+    "secenekler": {
+      "A": "Vakit",
+      "B": "Hutbe",
+      "C": "Mukim olmak",
+      "D": "Cemaat",
+      "E": "Genel izin"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Mukîm olmak. Cuma namazı, cuma namazı kılınan yerde ikamet eden kimselere farzdır. Cuma Namazının farz olmasının şartlarından biridir."
+  },
+  {
+    "id": 21610,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 111,
+    "soru": "Aşağıdakilerden hangisi sehiv secdesi ile ilgili olarak doğrudur?",
+    "secenekler": {
+      "A": "Namazda bir farzın sehven terk edilmesi durumunda yapılır.",
+      "B": "Bir sünnetin kasten terk edilmesi durumunda yapılır.",
+      "C": "Gerekli durumlarda sehiv secdesi yapmak farzdır.",
+      "D": "Sehiv secdesi gerekli olan durumlarda yapılmaz ise namaz borcu devam eder.",
+      "E": "Sehiv secdesi bir vacibin terk edilmesi durumunda yapılır."
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Sehiv secdesi, yanılarak (sehven) farzın te’hîr’inden (geciktirilmesinden) veya vacibin terk ve te’hîr edilmesinden dolayı namazda meydana gelen eksiklikleri telâfi etmek ve namazı tamamlamak için namazın sonunda yapılan secdeleri ifade eder. Herhangi bir namazda bir farzın kasten (bilerek) veya sehven (yanılarak) terk edilmesi, o namazın iade edilmesini yani yeniden kılınmasını gerektirir. Çünkü bir farz eksikliği telâfi etmek için sehiv secdesi yeterli olmaz. Sehiv secdesi sadece bir vacibin sehven (yanılarak) terk edilmesi veya bir farzın geciktirilmesi halinde yapılır. Kendisine sehiv secdesi vacip olup onu yerine getirmeyen bir kişinin namaz borcu düşer.",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">sehiv secdesi</span> ile ilgili olarak doğrudur?",
+    "secenekler_xray": {
+      "C": "Gerekli durumlarda <span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">sehiv secdesi</span> yapmak farzdır.",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">Sehiv secdesi</span> gerekli olan durumlarda yapılmaz ise namaz borcu devam eder.",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.\n💡 Sınav Şifresi: Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).\" data-note=\"İSLAM İBADET ESASLARI Ünite 4 • Sehiv Secdesi\" onclick=\"showVocabBubble(this, event)\">Sehiv secdesi</span> bir vacibin terk edilmesi durumunda yapılır."
+    }
+  },
+  {
+    "id": 21611,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 112,
+    "soru": "Günlük farz namazları toplam kaç rek‘attır?",
+    "secenekler": {
+      "A": "17",
+      "B": "21",
+      "C": "23",
+      "D": "25",
+      "E": "30"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Günlük farz namazların rek‘at sayıları; sabah iki, öğle dört, ikindi dört, akşam üç ve yatsı dört olmak üzere toplam on yedi rek‘at olarak Peygamberimiz’in uygulamalarıyla sabit olmuştur."
+  },
+  {
+    "id": 21612,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 113,
+    "soru": "Vitir namazı hangi tür namazlardan olup kaç rekat kılınır?",
+    "secenekler": {
+      "A": "Farz, 2 rekat",
+      "B": "Mendub, 3 rekat",
+      "C": "Sünnet, 2 rekat",
+      "D": "Nafile, 3 rekat",
+      "E": "Vacip, 3 rekat"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Vitir kelimesi sözlükte çiftin karşıtı olan tek anlamına gelir. Vitir namazı vacip olup üç rek’attır. Vitir namazının vakti yatsı vaktidir, ancak ondan sonra kılınır."
+  },
+  {
+    "id": 21613,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 114,
+    "soru": "Gece namazına kalkılması ve bunların belli bir vakit içinde edâ edilmesi emredilmişken aynı sûrenin 20. ayetinde, Yüce Allah’ın bu hususta yaşanan zorluklardan dolayı müminleri bu namazdan bağışladığı bildirililen sure hangisidir?",
+    "secenekler": {
+      "A": "el-Müzzemmil",
+      "B": "el-A‘lâ",
+      "C": "el-Kıyâme",
+      "D": "el-‘Alak",
+      "E": "el-Müddessir"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Kaynaklarda, Mekke döneminde beş vakit namaz farz kılınmadan önce sabah ve akşam olmak üzere ikişer rek‘at halinde iki vakit namaz kılındığı belirtilmektedir. Bu iki vakit namazın dışında el- Müzzemmil sûresinin ilk ayetleriyle gece namazına kalkılması ve bunların belli bir vakit içinde edâ edilmesi emredilmişken aynı sûrenin 20. ayetinde, Yüce Allah’ın bu hususta yaşanan zorluklardan dolayı müminleri bu namazdan bağışladığı bildirilmiştir."
+  },
+  {
+    "id": 21614,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 115,
+    "soru": "Aşağıdaki namazlardan hangisi vacip değildir?",
+    "secenekler": {
+      "A": "Vitir",
+      "B": "Cenaze",
+      "C": "Tavaf",
+      "D": "Nezir",
+      "E": "Bayram"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Vitir, bayram namazları yanı sıra tavaf, nezir namazları da vaciptir. Cenaze namazı ise farz-ı kifâyedir. Doğru cevap B’dir."
+  },
+  {
+    "id": 21615,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 4",
+    "soru_no": 116,
+    "soru": "Aşağıdakilerden hangisi dünya ve âhiret itibariyle şehid hükmündedir?",
+    "secenekler": {
+      "A": "Ateşte yanan",
+      "B": "Eşkıya tarafından öldürülen",
+      "C": "Salgın hastalıktan ölen",
+      "D": "Suda boğulan",
+      "E": "Doğum esnasında ölen"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Namaz; Özel Hükümler",
+    "alt_konu": "Ünite 4 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 4)",
+    "dogru_nedeni": "Dünya ve âhiret itibariyle şehid: Bunlar kâmil anlamda şehittirler. Bunlar, savaşta öldürülen yahut eşkıya tarafından öldürülen Müslüman kişilerdir. Âhiret itibariyle şehid: Savaş meydanında yaralandıktan veya eşkıya tarafından vurulduktan sonra yer, içer, konuşur, tedavi görür yahut bir namaz vakti geçer ve ondan sonra ölürse, bu kişi, âhiret itibariyle şehittir ve âhirette de büyük sevaba nail olacaktır. Bu kısım şehitler, yıkanır, kefenlenir ve namazları kılınarak defnedilirler. Ateşte yanan, salgın bir hastalıkta ölen, suda boğulan, doğum esnasında ölen, ilim yolculuğunda ölen, nafakasını temin ederken ölen, deprem, sel baskını gibi doğal afetler esnasında ölen, haksız yere öldürülen ve benzeri hallerde ölen veya öldürülen kimseler de hükmen şehit sayılırlar. Doğru cevap B’dir."
+  },
+  {
+    "id": 21616,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 117,
+    "soru": "Aşağıdakilerden hangisi orucu bozmayan fakat mekruh olan davranışlardan birisi değildir?",
+    "secenekler": {
+      "A": "Genç oruçlunun eşini öpmesi",
+      "B": "Diş fırçalamak",
+      "C": "Yemeği yutmadan sadece tadına bakmak",
+      "D": "Şekersiz sakız çiğnemek",
+      "E": "Ağır işlerde çalışmak"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Orucu Bozmayan Fakat Mekruh Olan Davranışlar Orucu bozulma tehlikesi ile karşı karşıya getirebilecek davranışlar mekruhtur, bunlardan kaçınmakta yarar vardır. Mesela abdest esnasında ağız çalkalanırken boğaz kısmının iyice ıslanması için aşırı hassasiyet gösterildiği takdirde suyun boğaza kaçma tehlikesi vardır. Öyleyse oruçlunun, ağzını çalkalarken boğazını tamamen ıslatmaya çalışması mekruhtur. Bu esnada boğaza su kaçarsa oruç bozulur. Burna su çekmedeki aşırı hassasiyet de aynıdır. Oruçluya mekruh olan diğer hallerin bir kısmı şöyle sıralanabilir: 1. Genç oruçlunun eşini öpmesi, kucaklaması, ona sarılması. 2. Yemeği yutmadan sadece tadına bakmak. 3. Şekersiz sakız çiğnemek. 4. Ağır işlerde çalışmak. 5. Oruçluya yakışmayan davranışlarda bulunmak. Diş fırçalamak veya misvak kullanmak ise orucu bozmayan, mekruh da olmayan hallerdendir. Doğru cevap B'dir."
+  },
+  {
+    "id": 21617,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 118,
+    "soru": "I. Vaktinde tutulmayan Ramazan orucunun kazası farz değildir. II. Eksik ya da hatalı davranıştan ötürü tutulan keffâret oruçları farzdır. III. Ramazan orucu, gerekli şartları taşıyan her Müslümana farzdır. Yukarıdakilerden hangisi ya da hangileri farz oruçlarla ilgili doğru kabul edilmektedir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Ramazan ayında oruç tutmak, şartlarını taşıyan her Mü slü mana farzdır. Kendisine oruç farz olan bir Mü slü man bu ay içinde herhangi bir gü nü oruçsuz geçirmişse onu daha sonra tutar. Ayrıca keﬀâ ret oruçları da farzdır. Bazı hatalı veya eksik davranışlardan dolayı Mü slü manlardan bir miktar oruç tutmaları istenir. Bu oruçlara keﬀâ ret orucu denir."
+  },
+  {
+    "id": 21618,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 119,
+    "soru": "Bir kudsî hadiste ifade edildiğ ine göre Allah “Insanoğ lunun her ameli kendisi içindir fakat oruç bundan hariçtir; o, benim içindir ve onun karşılığ ını ben vereceğ im” buyurur. Bu hadisin devamında Hz. Peygamberin orucu neye benzettiği aşağıda verilen seçeneklerin hangisinde doğru olarak verilmiştir?",
+    "secenekler": {
+      "A": "Mızrak",
+      "B": "Güneş",
+      "C": "Kalkan",
+      "D": "Demir",
+      "E": "Ok"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Hadisin devamında oruç, kalkana benzetilir (Buhârî, “ Savm”, 2). Kalkan, sahibini muhtemel tehlikelerden koruduğ u gibi oruç da oruçluyu çeşitli kötülüklerden ve günahlardan korur. Yalnız bunun için orucun sırf yeme-içmeyi terk etmekten ibaret kalmaması, oruçlunun davranışlarına da yansıması gerekir.",
+    "soru_xray": "Bir kudsî hadiste ifade edildiğ ine göre Allah “Insanoğ lunun her ameli kendisi içindir fakat <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> bundan hariçtir; o, benim içindir ve onun karşılığ ını ben vereceğ im” buyurur. Bu hadisin devamında Hz. Peygamberin orucu neye benzettiği aşağıda verilen seçeneklerin hangisinde doğru olarak verilmiştir?"
+  },
+  {
+    "id": 21619,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 120,
+    "soru": "Aşağıdakilerden hangisi keffaret gerektirecek durumlardan biri değildir?",
+    "secenekler": {
+      "A": "Bile bile sigara içmek",
+      "B": "Cinsi münasebette bulunmak",
+      "C": "İsteyerek ilaç yutmak",
+      "D": "Abdest alırken boğazına veya burna su çekerken genzine hata ile suyun kaçması",
+      "E": "Enfiye çekmek"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Abdest alırken boğazına veya burna su çekerken genzine hata ile suyun kaçması orucu bozup, kazayı gerektiren bir durumdur."
+  },
+  {
+    "id": 21620,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 121,
+    "soru": "Aşağıdaki durumların hangisinde oruç bozulur?",
+    "secenekler": {
+      "A": "Diş fırçalamak",
+      "B": "Makyaj yapmak",
+      "C": "Yıkanmak",
+      "D": "Dişe ilaç konulması",
+      "E": "İçine duman çekmek"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Herhangi bir dumanı içine çekmek veya kaçınması mümkün olduğu halde kaçınmayarak solumak orucu bozar. Kaza gerektiren bir durumdur.",
+    "soru_xray": "Aşağıdaki durumların hangisinde <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> bozulur?"
+  },
+  {
+    "id": 21621,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 122,
+    "soru": "Aşağıdakilerden hangisi orucu bozulma tehlikesi ile karşı karşıya getirebilecek mekruh davranışlardan biridir?",
+    "secenekler": {
+      "A": "Orucu bozan bir davranışı unutarak yapmak",
+      "B": "Makyaj yapmak",
+      "C": "Ağır işlerde çalışmak",
+      "D": "İstemeyerek toz veya duman yutmak",
+      "E": "Krem kullanmak"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Ağır işlerde çalışmak ve oruçlunun sağlığını bozacak veya kendisini zayıf düşürecek işler yapması mekruhtur. Eğer vücudu zayıf düşürecekse kan aldırmak da böyledir."
+  },
+  {
+    "id": 21622,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 123,
+    "soru": "Oruçluların gireceği cennet kapısı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Salat",
+      "B": "Reyyan",
+      "C": "Eymen",
+      "D": "Af",
+      "E": "Zikir"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Hz. Peygamber’in bildirdiğine göre cennete girecek insanlar dünyadaki önemli amellerine göre değişik kapılardan hatta bazıları bu kapıların her birinden ayrı ayrı davet edilecektir. O kapılardan biri de oruçluların girişine ayrılmış olan “Rayyân” kapısıdır. Bu kapı, onlar girdikten sonra kapatılacak, başkaları oradan giremeyecektir. Doğru cevap B’dir."
+  },
+  {
+    "id": 21623,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 124,
+    "soru": "Allah’ın rızâsını kazanma niyetiyle çoğunlukla ramazan ayının son on gününde bir mescitte kalmak aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İhram",
+      "B": "İ’tikâf",
+      "C": "Eid",
+      "D": "Akefe",
+      "E": "Fitr"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "İslâm öncesi Mekke toplumunca da bilinen i‘tikâf, Hz. Peygamber’in uygulamalarıyla sünnet vasfı kazanmıştır. İ’tikâf, Arapça’da tenha bir yerde kalmak, bir şeye bağlanmak gibi anlamları bulunan “‘akefe” ﬁilinden türetilmiştir ve kelimenin farklı türevleri Kur'ân-ı Kerim’de dokuz âyette kullanılmıştır. İslâmî literatürde i’tikâf, “Bir mescitte Allah’ın rızâsını kazanma niyetiyle bir süre kalmak” anlamında kullanılır ve farklı görüşlere göre bu tarife, kalınacak sürenin miktarı, mescidin mahiyeti ve orada kalan kişinin oruçlu olması gibi diğer unsurlar ilave edilir. Hz. Peygamber çoğunlukla ramazan ayının son on gününde Mescid-i Nebevî’de i‘tikâfa girer, yani günün bütün saatlerini orada geçirirdi. Kendisine bu maksatla mescit içinde bir çadır kurulduğu, zorunlu ihtiyaçları dışında mescitten çıkmadığı bilinmektedir. Doğru cevap B’dir.",
+    "secenekler_xray": {
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Bir mescidde ibadet niyetiyle belirli bir süre kalarak dünyevi meşgalelerden uzaklaşmaktır (Ramazan’ın son 10 gününde sünnet-i müekkededir).\n💡 Sınav Şifresi: Camiye kapanıp ibadete çekilme = İ’tikâf.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • İ’tikâf\" onclick=\"showVocabBubble(this, event)\">İ’tikâf</span>"
+    }
+  },
+  {
+    "id": 21624,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 125,
+    "soru": "Aşağıdaki bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Bir fındığı kabuklu haliyle yutmak orucu bozar.",
+      "B": "Sahur vaktinde yemek yiyerek oruca hazırlanmak sünnettir.",
+      "C": "Diş dolgusu yaptırmak orucu bozar.",
+      "D": "Oruçlu iken uyuyana rüya (ihtilam) sonucu gusül gerekmesi orucu bozmaz.",
+      "E": "Oruçlunun iftar vakti olduğunu zannederek iftardan biraz önce su içmesi orucu bozar."
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "Dişe dolgu yaptırmak orucu bozmaz. Doğru seçenejk C'dir.",
+    "secenekler_xray": {
+      "E": "Oruçlunun <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">iftar</span> vakti olduğunu zannederek iftardan biraz önce su içmesi orucu bozar."
+    }
+  },
+  {
+    "id": 21625,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 5",
+    "soru_no": 126,
+    "soru": "Aşağıdaki seçeneklerin hangisinde oruç ibadetinin nasıl olması gerektiğini ifade eden bir hadis yer almaktadır?",
+    "secenekler": {
+      "A": "\"İnsanoğlunun her ameli kendisi içindir fakat oruç bundan hariçtir; o, benim içindir ve onun karşılığını ben vereceğim.”",
+      "B": "“Yalan söylemeyi ve sahtekarlığı terk etmeyen oruçlu bilmelidir ki Allah’ın onun yeme-içme fiillerini terk etmesine ihtiyacı yoktur.”",
+      "C": "“Kim Allah yolunda bir gün oruç tutarsa, Allah o günden dolayı onun yüzünü cehennemden yetmiş yıllık mesafe kadar uzaklaştırır.”",
+      "D": "“Ramazan ayını inanmış olarak ve sırf Allah için oruçlu geçiren kimsenin geçmiş günahları bağışlanır.”",
+      "E": "“Kim bir oruçluya iftar ettirirse ona o oruçlunun sevabı kadar sevap olur. Bu, oruçlunun sevabından hiç bir şey de eksiltmez.”"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 5",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 5)",
+    "dogru_nedeni": "B seçeneği dışındaki seçeneklerde orucun fazileti ve oruç tutanların alacağı sevaplardan bahsedilmektedir. D seçeneğnde ise orucun nasıl tutulması gerektiği ifade edilmektedir.",
+    "soru_xray": "Aşağıdaki seçeneklerin hangisinde <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> ibadetinin nasıl olması gerektiğini ifade eden bir hadis yer almaktadır?",
+    "secenekler_xray": {
+      "A": "\"İnsanoğlunun her ameli kendisi içindir fakat <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> bundan hariçtir; o, benim içindir ve onun karşılığını ben vereceğim.”",
+      "C": "“Kim Allah yolunda bir gün <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> tutarsa, Allah o günden dolayı onun yüzünü cehennemden yetmiş yıllık mesafe kadar uzaklaştırır.”",
+      "E": "“Kim bir oruçluya <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">iftar</span> ettirirse ona o oruçlunun sevabı kadar sevap olur. Bu, oruçlunun sevabından hiç bir şey de eksiltmez.”"
+    }
+  },
+  {
+    "id": 21626,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 127,
+    "soru": "Aşağıdakilerden hangisi “ibadet” sözcüğünü karşılayan anlamlardan birisi değildir?",
+    "secenekler": {
+      "A": "Boğun eğme",
+      "B": "İteat",
+      "C": "Hakkını arama",
+      "D": "Tapma",
+      "E": "Kulluk"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Arapça bir kelime olan “ibadet” sözlükte “boyun eğme, alçak gönüllü olma, iteat, kulluk, tapma, tapınma” gibi anlamlara gelir. Dinî bir terim olarak ibadetin genel anlamı, her şeyin yaratıcısı olan Allah’a içten gelerek ve gönüllü olarak yönelmek, boyun eğmek ve iteat etmektir.",
+    "soru_xray": "Aşağıdakilerden hangisi “<span class=\"vocab-word concept-word\" data-tr=\"Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.\n💡 Sınav Şifresi: Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.\" data-note=\"İSLAM İBADET ESASLARI Ünite 1 • İbadet\" onclick=\"showVocabBubble(this, event)\">ibadet</span>” sözcüğünü karşılayan anlamlardan birisi değildir?"
+  },
+  {
+    "id": 21627,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 128,
+    "soru": "Günlük farz namazlar, sabah , öğle , ikindi , akşam ve yatsı olmak üzere bir günde toplam kaç rekâttır?",
+    "secenekler": {
+      "A": "40 Rekât",
+      "B": "37 Rekât",
+      "C": "27 Rekât",
+      "D": "20 Rekât",
+      "E": "17 Rekât"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Namaz: Genel Esaslar",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Günlük farz namazlar, sabah iki, öğle dört, ikindi dört, akşam üç ve yatsı dört olmak üzere bir günde toplam on yedi rekâttır."
+  },
+  {
+    "id": 21628,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 129,
+    "soru": "Aşağıdaki namazların hangisi için iki kez ezan okunur?",
+    "secenekler": {
+      "A": "Cenaze",
+      "B": "Bayram",
+      "C": "Teravih",
+      "D": "Cuma",
+      "E": "Tesbih"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Namaz: Genel Esaslar",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Sadece cuma namazı için iki ezan okunur. Dolayısıyla, doğru cevap D seçeneğidir."
+  },
+  {
+    "id": 21629,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 130,
+    "soru": "Aşağıdakilerden hangisi namaz kılan kişinin, Kur’ân’ın ayetlerinden bir miktarını kendisinin işitebileceği şekilde okumasını ifade eder?",
+    "secenekler": {
+      "A": "Kıyam",
+      "B": "İftitâh Tekbiri",
+      "C": "Ka‘de-i ahire",
+      "D": "Secde",
+      "E": "Kıraat"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Namaz: Genel Esaslar",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Kıraat, sözlükte okumak demektir. Fıkıhta ise, namaz kılan kişinin, Kur’ân’ın ayetlerinden bir miktarını kendisinin işitebileceği şekilde okumasını ifade eder. Kıraat namazın bir rüknü olup farzdır.",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıyam</span>",
+      "E": "<span class=\"vocab-word concept-word\" data-tr=\"İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).\n💡 Sınav Şifresi: 6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.\" data-note=\"İSLAM İBADET ESASLARI Ünite 3 • Namazın Rükünleri (İçindekiler)\" onclick=\"showVocabBubble(this, event)\">Kıraat</span>"
+    }
+  },
+  {
+    "id": 21630,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 131,
+    "soru": "Aşağıdaki durumlardan hangisinde namazı bozmak caizdir?",
+    "secenekler": {
+      "A": "Acıkmak",
+      "B": "Telefonun çalması",
+      "C": "Uykunun gelmesi",
+      "D": "Yangın çıkması",
+      "E": "Ürpermek"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Namaz: Genel Esaslar",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Hiç şüphesiz, namaz kılanın kendisi veya başkası için can ve mal kaybının veya tehlikesinin söz konusu olduğu durumlarda başlanılmış bir ibadetin bozulması vacip olur. Mesela, bir yangını söndürmek, kalp krizi geçirmekte olan birini tedavi etmek veya onu hastaneye götürmek, boğulmakta olan birini kurtarmak, yırtıcı bir hayvanı savmak için namazı bozmak gibi. Hatta bu gibi hallerde namazın kazâya bırakılmasında da bir günah bulunmamaktadır. Cemaate katılmak veya malı çalmakta olan hırsıza engel olmak ve benzeri durumlar için namazı bozmak ise müstehaptır. Namazın bozulmasının câiz olduğuna, çocuğunun başına bir tehlike gelmesinden endişelen veya yemeğin yanmasından korkan birisinin namazını bozması örnek olarak gösterilebilir."
+  },
+  {
+    "id": 21631,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 132,
+    "soru": "Aşağıdaki namazların hangisinde ezan ve kamet okunmaz?",
+    "secenekler": {
+      "A": "İkindi namazı",
+      "B": "Bayram namazı",
+      "C": "Kaza namazı",
+      "D": "Sabah namazı",
+      "E": "Yatsı namazı"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Namaz: Genel Esaslar",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Bayram namazları, ikişer rek‘attır. Cemaatle kılınır ve kıraat açıktan yapılır. Ezan ve kâmet okunmaz."
+  },
+  {
+    "id": 21632,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 133,
+    "soru": "Aşağıdakilerden hangisi nafile namazlardan biri değildir?",
+    "secenekler": {
+      "A": "İstihâre Namazı",
+      "B": "Tahiyyyetü’l-Mescid",
+      "C": "Kuşluk (Duhâ) Namazı",
+      "D": "Teheccüd Namazı",
+      "E": "Teravih"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Namaz: Genel Esaslar",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Terâvih namazının hükmü sünnet-i müekkededir. Tahiyyyetü’l-Mescid, Kuşluk (Duhâ) Namazı, Teheccüd Namazı, İstihâre Namazı nafile namazlardır. Doğru yanıt E'dir."
+  },
+  {
+    "id": 21633,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 134,
+    "soru": "Güneş doğup kerâhet vakti çıktıktan sonra istivâ vaktine kadar kılınan naﬁle namaz aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Tahiyyyetü’l-Mescid",
+      "B": "Teheccüd",
+      "C": "Küsûf",
+      "D": "Kuşluk",
+      "E": "İstihâre"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Namaz: Genel Esaslar",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Kuşluk (Duhâ) Namazı: Güneş doğup kerâhet vakti çıktıktan sonra istivâ vaktine kadar iki, dört, sekiz veya on iki rek’at namaz kılmak müstehaptır. Bu, Hz. Peygamber’in ﬁili ile sâbittir. Kuşluk namazının sekiz rek’at kılınması daha faziletlidir. Bu ibadet işrâk namazı olarak da bilinir. Doğru cevap D’dir."
+  },
+  {
+    "id": 21634,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 135,
+    "soru": "Aşağıdaki tıbbi müdahale ve tedavilerden hangisi orucun bozulmasına yol açar?",
+    "secenekler": {
+      "A": "Oruçlunun dişine ilaç koyulması",
+      "B": "Oruçluya kan verilmesi",
+      "C": "Oruçlunun kulağına ilaç damlatılması",
+      "D": "Oruçlunun cildindeki yüzeysel yaralara ilaç koyulması",
+      "E": "Oruçlunun burnuna ilaç damlatılması"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Oruçlunun kan vermesi orucu bozmaz ancak oruçlu kişiye kan verilmesi orucu bozar. Diğer seçeneklerdeki tedavi ve tıbbi müdahaleler orucu bozmaz.",
+    "soru_xray": "Aşağıdaki tıbbi müdahale ve tedavilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">orucun</span> bozulmasına yol açar?"
+  },
+  {
+    "id": 21635,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 136,
+    "soru": "Aşağıdakilerden hangisi haram oruçlardır?",
+    "secenekler": {
+      "A": "Şaban ayının on beşinci günü tutulan oruç",
+      "B": "Ramazan Bayramının ilk günü tutulan oruç",
+      "C": "Hakkında herhangi bir rivayet bulunmayan günlerde sevap niyetine tutulan oruç",
+      "D": "Recep ayının beşinci günü tutulan oruç",
+      "E": "Şevval ayında altı gün tutulan oruç"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Ramazan bayramının ilk günü ve kurban bayramının dört günü oruç tutmak, Müslümanların bayramına katılmamak, ona karşı çıkmak şeklinde değerlendirilir. Bunun için İslâm âlimlerinin çoğunluğuna göre o günlerin oruçlu geçirilmesi haramdır. Hanefî mezhebindeki hâkim görüşe göre ise bu günlerde oruç tutulması tahrîmen mekruhtur.",
+    "secenekler_xray": {
+      "A": "Şaban ayının on beşinci günü tutulan <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span>",
+      "B": "Ramazan Bayramının ilk günü tutulan <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span>",
+      "C": "Hakkında herhangi bir rivayet bulunmayan günlerde sevap niyetine tutulan <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span>",
+      "D": "Recep ayının beşinci günü tutulan <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span>",
+      "E": "Şevval ayında altı gün tutulan <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span>"
+    }
+  },
+  {
+    "id": 21636,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 137,
+    "soru": "Hanefilere göre hayızın en az süresi ……………, en uzun süresi ise ………. gecedir. Noktalı yerleri doldurunuz.",
+    "secenekler": {
+      "A": "Hayızın en az süresi üç gün üç gece, en uzun süresi ise on gün on gecedir.",
+      "B": "Hayızın en az süresi iki gün iki gece, en uzun süresi ise on gün on gecedir.",
+      "C": "Hayızın en az süresi dört gün dört gece, en uzun süresi ise on gün on gecedir.",
+      "D": "Hayızın en az süresi üç gün üç gece, en uzun süresi ise yedi gün yedi gecedir.",
+      "E": "Hayızın en az süresi üç gün üç gece, en uzun süresi ise beş gün beş gecedir."
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Haneﬁlere göre hayızın en az süresi üç gün üç gece, en uzun süresi ise on gün on gecedir. Üç günden az, on günden çok gelen kan “istihâza” kanıdır."
+  },
+  {
+    "id": 21637,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 138,
+    "soru": "Aşağıdakilerden hangisi teyemmüm almanın sebeplerinden biri olamaz?",
+    "secenekler": {
+      "A": "Suyun yürüyerek veya vasıtayla kolayca gidilip dönülecek bir mesafeden daha uzakta olması",
+      "B": "Su yolunda bir tehlikenin varlığı",
+      "C": "Parayla su satın alma imkânının olmayışı",
+      "D": "Var olan suyu kullanmanın sağlık açısından tehlikeli oluşu",
+      "E": "Toprakla abdets almayı daha çok sevmek"
+    },
+    "dogru_cevap": "E",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Abdest veya gusle yetecek miktarda suyun bulunmaması. Suyu kullanmayı engelleyen ﬁilî bir durumun veya suyu kullanmamak için dinen geçerli bir mazeretin bulunması.",
+    "soru_xray": "Aşağıdakilerden hangisi <span class=\"vocab-word concept-word\" data-tr=\"Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.\n💡 Sınav Şifresi: Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Teyemmüm\" onclick=\"showVocabBubble(this, event)\">teyemmüm</span> almanın sebeplerinden biri olamaz?"
+  },
+  {
+    "id": 21638,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 139,
+    "soru": "İçine temiz bir maddenin katılmasıyla tabii özellik ve niteliğini kaybeden mutlak sulara veya tabii bir oluşumla meydana gelip özel bir isimle anılan sulara ne ad verilir?",
+    "secenekler": {
+      "A": "Mukayyet su",
+      "B": "Mutlak su",
+      "C": "Durgun su",
+      "D": "Temiz ve temizleyici olmayan su",
+      "E": "Temiz ve temizleyici özellik taşıyan su"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Namaz: Özel Hükümler",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Mutlak su: Özellik ve tabii durumunu koruyan, içine özelliğini değiştirecek başka maddelerin karışmadığı sudur. Kar, yağmur, göl, ırmak, deniz, kaynak ve kuyu suları bu grupta yer alır. Mukayyet su: İçine temiz bir maddenin katılmasıyla tabii özellik ve niteliğini kaybeden mutlak sulara veya tabii bir oluşumla meydana gelip özel bir isimle anılan sulara bu ad verilir. Meyve suyu, gül suyu, maden suyu birer mukayyet su örneğidir. C,D ve E seçenekleri de bu tanıma uymadığından cevap A'dır."
+  },
+  {
+    "id": 21639,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 140,
+    "soru": "Aşağıdakilerden hangisi nifaz ile ilgili olarak yanlış verilmiş bir bilgidir?",
+    "secenekler": {
+      "A": "Hayızlı kadın gibi loğusa da maddeten temiz sayılır",
+      "B": "Loğusalığın en kısa süresi için bir sınır yoktur",
+      "C": "Nifasın başlangıcı, el ayak gibi organları belirmiş bir çocuğun dünyaya gelmesiyle başlar",
+      "D": "Loğusalığın en uzun süresi hanefilere göre altmış gündür.",
+      "E": "Henüz organları belirmemiş bir düşükten dolayı nifas hükümleri uygulanmaz"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Nifas, doğumun arkasından gelen kandır. Bu kanın gelmesiyle kadında bazı ibadetleri yapmaya engel olan hükmi kirlilik (hades) durumu oluşur. Dilimizde bu duruma loğusalık, nifas halindeki kadına da loğusa denir. Hayızlı kadın gibi loğusa da maddeten temiz sayılır. Dolayısıyla onun da, bedeni, artığı, teri ve pişirdiği temizdir. Loğusalığın en kısa süresi için bir sınır yoktur. Bir gün bile sürebilir. Bu süreyi belirleyen bir ayet veya hadis olmadığından, loğusalığın var olduğu süre dikkate alınır. Bu süre de kadınlara göre değişebilir. Hanefilere göre en uzun süresi kırk, Şâfiîlere göre ise altmış gündür. Azami süreden sonra gelen kan istihâza kanı sayılır. Nifasın başlangıcı, el ayak gibi organları belirmiş bir çocuğun dünyaya gelmesiyle başlar. Henüz organları belirmemiş bir düşükten dolayı nifas hükümleri uygulanmaz. D seçeneğinde Hanefilere göre altmış gün dendiği için cevap D dir."
+  },
+  {
+    "id": 21640,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 141,
+    "soru": "Kadınların hayızlı iken yapamadıkları namaz ve oruç ibadetleri ile ilgili fıkıhçılar nasıl hüküm vermişlerdir?",
+    "secenekler": {
+      "A": "Namaz vakitleri ve oruç günleri birebir kaza edilir.",
+      "B": "Namaz vakitlerinin yarısı oruç günlerinin iki katı kaza edilir.",
+      "C": "Namaz vakitleri bir misliyle, oruç günleri de gün başına 30 adet kaza gerektirir.",
+      "D": "Namaz vakitleri kaza edilmez, oruç günleri kaza edilir.",
+      "E": "Namaz vakitleri bire bir kaza edilir, oruç günleri kaza edilmez."
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Oruç",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "dogru_nedeni": "Kadınlar hayızlı iken özürlü olarak kabul edilmiş, adet dönemleri bitene kadar namaz ve oruç ibadetleri yasaklanmıştır. Bu ibadetlerden namazın sonradan kazası gerekmez iken oruç günleri adedince başka zaman (oruç tutulması yasak günler haricinde) kaza edilebilir. Doğru yanıt 'D'",
+    "soru_xray": "Kadınların hayızlı iken yapamadıkları namaz ve <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> ibadetleri ile ilgili fıkıhçılar nasıl hüküm vermişlerdir?",
+    "secenekler_xray": {
+      "A": "Namaz vakitleri ve <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> günleri birebir kaza edilir.",
+      "B": "Namaz vakitlerinin yarısı <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> günlerinin iki katı kaza edilir.",
+      "C": "Namaz vakitleri bir misliyle, <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> günleri de gün başına 30 adet kaza gerektirir.",
+      "D": "Namaz vakitleri kaza edilmez, <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> günleri kaza edilir.",
+      "E": "Namaz vakitleri bire bir kaza edilir, <span class=\"vocab-word concept-word\" data-tr=\"Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.\n💡 Sınav Şifresi: İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.\" data-note=\"İSLAM İBADET ESASLARI Ünite 5 • Oruç (Savm)\" onclick=\"showVocabBubble(this, event)\">oruç</span> günleri kaza edilmez."
+    }
+  },
+  {
+    "id": 21641,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Vize Deneme Sınavı",
+    "donem": "1",
+    "soru_no": 142,
+    "soru": "Aşağıdaki kelimelerden hangisi hükmi kirlilik halini ifade etmektedir?",
+    "secenekler": {
+      "A": "Hades",
+      "B": "Tahâret",
+      "C": "Nezâfet",
+      "D": "Teyemmüm",
+      "E": "Necâset"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "İbadet",
+    "alt_konu": "Ünite 1",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 0.1,
+    "sekilli": false,
+    "sinav_kodu": "1.1.1",
+    "sinav_adi": "AÖF Vize Deneme Sınavı",
+    "secenekler_xray": {
+      "A": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Hades</span>",
+      "B": "<span class=\"vocab-word concept-word\" data-tr=\"Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.\n💡 Sınav Şifresi: Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Tahâret (Temizlik)\" onclick=\"showVocabBubble(this, event)\">Tahâret</span>",
+      "D": "<span class=\"vocab-word concept-word\" data-tr=\"Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.\n💡 Sınav Şifresi: Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.\" data-note=\"İSLAM İBADET ESASLARI Ünite 2 • Teyemmüm\" onclick=\"showVocabBubble(this, event)\">Teyemmüm</span>"
+    }
+  },
+  {
+    "id": 21850,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 2",
+    "soru_no": 10,
+    "soru": "I. Suyu bol kullanmak II. Gusle besmele ve niyet ile başlamak III. Gusül esnasında konuşmak IV. Namaz abdesti gibi abdest almak V. Bedenin herhangi bir yerinde kir ve pislik varsa onu gidermek Yukarıdakilerden hangileri guslün belli başlı sünnet ve âdâpları arasında yer almaktadır?",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "II ve IV",
+      "C": "II, IV ve V",
+      "D": "I, II ve IV",
+      "E": "III, IV ve V"
+    },
+    "dogru_cevap": "C",
+    "dogru_nedeni": "Guslün belli başlı sünnet ve âdâpları şunlardır: Gusle besmele ve niyet ile\n         başlamak, öncelikle elleri ve avret yerini yıkamak, bedenin herhangi bir\n         yerinde kir ve pislik varsa onu gidermek, sonra namaz abdesti gibi abdest\n         almak, abdestten sonra önce üç defa başa, sonra sağ, sonra sol omuza üçer\n         defa su dökmek, sonra diğer uzuvları yıkamak, her defasında bedeni iyice\n         ovuşturmak, her azayı üçer defa yıkamak, suyu ölçülü kullanmak, yıkanırken\n         avret yerlerini örtmek, gusül esnasında konuşmamak.",
+    "ana_konu": "Temizlik",
+    "alt_konu": "Ünite 2 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 5,
+    "sekilli": false,
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 2)"
+  },
+  {
+    "id": 21851,
+    "ders": "İSLAM İBADET ESASLARI",
+    "ders_kodu": 804,
+    "yil": "AÖF Alıştırma Soruları",
+    "donem": "Ünite 3",
+    "soru_no": 10,
+    "soru": "Aşağıdakilerden hangisi Ku'ud için doğrudur?",
+    "secenekler": {
+      "A": "Oturup tahiyyat okumaktır.",
+      "B": "Oturup yere kapanmak ve üç kere sübhâne rabbiye’l-a‘lâ demektir.",
+      "C": "Ayakta iken eğilip üç kere sübhâne rabbiye’l-azîm demektir.",
+      "D": "Kur’ân’dan Fâtiha sûresini ve buna ilâve olarak bir sûre veya birkaç ayet okumaktır.",
+      "E": "Kıbleye karşı el bağlayıp ayakta durmak"
+    },
+    "dogru_cevap": "A",
+    "dogru_nedeni": "Ku‘ûd oturup tahiyyat okumaktır ki bu namazın sonunda, bir de her iki rek’atın\n                sonunda olur.",
+    "ana_konu": "Namaz; Genel Esaslar",
+    "alt_konu": "Ünite 3 Alıştırmaları",
+    "kredi": 2,
+    "sinav_soru_sayisi": 20,
+    "puan": 5,
+    "sekilli": false,
+    "sinav_adi": "AÖF Alıştırma Soruları (Ünite 3)"
   }
 ]

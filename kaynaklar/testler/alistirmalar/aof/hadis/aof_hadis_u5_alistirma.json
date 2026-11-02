@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Hicri 322’de Mekke’de vefat eden Hz. Peygamber’in mektuplarını ilk toplayan kişi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hasan el- Basrî",
+      "B": "Vecîhuddin el-Mâlikî",
+      "C": "Ebu Cafer ed- Deybülî",
+      "D": "Seyyid Refîuddin es-Safevî eş-Şîrâzî",
+      "E": "Şeyh Ali el-Muttakî"
+    },
+    "ans": "C",
+    "solution": "Hind bölgesinde yetişen muhaddislerden biri de Ebu Cafer ed-Deybülî’dir. Deybül bugün Pakistan\n         sınırlarında bulunan Karaçi yakınlarında bir yerleşim merkezidir. Hicri 322’de Mekke’de vefat eden\n         Deybülî, Hz. Peygamber’in mektuplarını ilk toplayan kişi olarak bilinmektedir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdakilerden hangisi Arap dünyasında hadis ilmi ile ilgilenen önemli şahsiyetlerden değildir?",
+    "secenekler": {
+      "A": "Muhammed Habibullah eş-Şinkiti",
+      "B": "Muhammed Fuad Abdülbaki",
+      "C": "Abdülfettah Ebû Gudde",
+      "D": "Ebû Musa Necîh es-Sindî",
+      "E": "Muhammed b. Ca‘fer el-Kettânî"
+    },
+    "ans": "D",
+    "solution": "Ebû Musa Necîh es-Sindî Hınd alt kıtasında hadis ilmi ile ilgilenen şahıslardandır."
+  },
+  {
+    "q_num": 3,
+    "stem": "Kânûnî devrinde 1557’de yapılan Dârulhadîsi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Süleymaniye Dârulhadîsi",
+      "B": "Edirne Dârulhadîsi",
+      "C": "İstanbul Dârulhadîsi",
+      "D": "Beyazıt Dârulhadîsi",
+      "E": "Mısır Dârulhadîsi"
+    },
+    "ans": "A",
+    "solution": "II. Bayezid döneminde 1485 yılında Amasya’da yaptırılan Abdullah Paşa Dârulhadîsi ile Kânûnî\n         devrinde 1557’de yapılan Süleymaniye Dârulhadîsi önemli kurumlardır. Özellikle Edirne ve\n         Süleymaniye Dârulhadîsleri Osmanlı üst düzey yöneticilerinin hem yetiştirildiği hem de yönetim\n         hiyerarşisinde görev üstlendikleri yerlerdir. Bu asırda Seydî Çelebi’nin ( ö. 932/1525) kaleme aldığı\n         Mustahrec mine’l-Buhârî adlı hadis kitabı siyaset konuludur. Molla Lütfi de (ö. 901/1495) Ta‘lîka\n         ale’l-Câm‘i’ssahîh adlı bir hadis kitabı telif etmiştir."
+  },
+  {
+    "q_num": 4,
+    "stem": "I. Dinîve Gayrî Dinî Rivayetler II. Sahîh-i Mü slim ve Tercü mesi III. Bü lûğu'l-Merâm Terceme ve Şerhi Yukardakilerden hangisi veya hangileri Türkiye Cumhuriyeti’nde yapılan Hadis çalışmalarındandır?",
+    "secenekler": {
+      "A": "I",
+      "B": "II",
+      "C": "I - II",
+      "D": "I - II - III",
+      "E": "III"
+    },
+    "ans": "D",
+    "solution": "Belirtilen eserlerin tamamı Türkiye’de Cumhuriyet dönemi sonrasında yapılmış Hadis\n         çalışmalarındandır."
+  },
+  {
+    "q_num": 5,
+    "stem": "Osmanlı dârulhadîsi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "İlk olarak Orhan Gazi devrinde kurulmuştur.",
+      "B": "Osmanlı’nın egemen olduğu her yere açılmıştır.",
+      "C": "Edirne Dârulhadîsi’ni Molla Gürânî yaptırmıştır.",
+      "D": "Murad devrinde Abdullah Paşa Dârulhadîsi yaptırılmıştır.",
+      "E": "Seydî Çelebi, burada en çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazmıştır."
+    },
+    "ans": "B",
+    "solution": "Osmanlı’nın egemen olduğu her yere açılmıştır. İlk Osmanlı dârulhadîsi I. Murad devrinde\n         kurulmuştur. Edirne Dârulhadîsi’ni II. Murad yaptırmıştır. Abdullah Paşa Dârulhadîsi II. Beyezid\n         devrinde yaptırılmıştır. Ibn Melek burada en çok okunan hadis kitaplarından olan Sâgânî’nin\n         Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazmıştır."
+  },
+  {
+    "q_num": 6,
+    "stem": "İlk Osmanlı dârulhadîsinin hangi padişah zamanında yapılmıştır?",
+    "secenekler": {
+      "A": "II. Bayezid",
+      "B": "Yavuz Sultan Selim",
+      "C": "I. Murad",
+      "D": "Fatih Sultan Mehmet",
+      "E": "II. Murat"
+    },
+    "ans": "C",
+    "solution": "İlk Osmanlı dârulhadîsinin I. Murad devrinde İznik’te Çandarlı Hayreddin Paşa (ö. 789/1387)\n         tarafından yaptırıldığı kabul edilir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Hadislerin büyük bir kısmının uydurma olduğunu ilk defa kim iddia etmiştir?",
+    "secenekler": {
+      "A": "Aloys Sprenger",
+      "B": "Reinhart Dozy",
+      "C": "William Muir",
+      "D": "Goldziher",
+      "E": "Joseph Schacht"
+    },
+    "ans": "A",
+    "solution": "G. H. A. Juynboll’ün belirttiğine göre, hadislerin büyük bir kısmının uydurma olduğunu ilk defa\n         Avusturyalı oryantalist Aloys Sprenger iddia etmiştir. Juynboll, Sprenger’in Sahîh-i Buhârî’deki\n         hadislerin en az yarısının sahihliğini kabul eden Reinhart Dozy, Weil ve William Muir’den daha\n         şüpheci olduğunu ifade etmiştir."
+  },
+  {
+    "q_num": 8,
+    "stem": "I. Hadis geleneği diğer bölgelere oranla Anadolu’ya daha geç gelmiştir. II. Osmanlıda âlimler üzerindeki idârî motivasyon, diğer bölgelerden çok daha güçlüdür. Dolayısıyla hadisle meşgul olanlar bu alanda yeterliliklerini ispatlamaya yetecek tarzda çalışmalarla yetinmişlerdir. III. Osmanlıda egemen mezhep olarak Hanefîliğin kabul edilmesi ekoller arasındaki rekabetin oluşmasını ve tabiatıyla farklı eserlerin yazımını azaltmıştır. Yukarıdaki maddelerden hangisi /hangileri Osmanlının hadis sahasında çok miktarda ve çok çeşitli eserler vermediklerinin sebepleri arasındadır?",
+    "secenekler": {
+      "A": "Sadece I",
+      "B": "Sadece II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "Hepsi"
+    },
+    "ans": "E",
+    "solution": "Osmanlı hadis müderrisleri incelendiği zaman, hadis sahasında çok miktarda ve çok çeşitli eserler\n         vermedikleri görülür. Bu durumun Osmanlı eğitim sistemindeki fıkıh-kelâm merkezlilikten ve\n         medrese mezunlarının ağırlıklı olarak idareciliğe hazırlanmasından kaynaklandığı söylenebilir."
+  },
+  {
+    "q_num": 9,
+    "stem": "Hind’de hadisin yayılmasında en çok kimin emeğinin geçtiği bilinmektedir?",
+    "secenekler": {
+      "A": "Şeyh Abdülhak b. Seyfuddin elBuhârî ed-Dehlevî.",
+      "B": "Ali el-Muttakî",
+      "C": "Şeyh Muhammed Tahir el-Fettenî",
+      "D": "Seyyid Refîuddin es-Safevî eş-Şîrâzî",
+      "E": "Şeyh Nureddin Ahmed eş-Şîrâzî"
+    },
+    "ans": "A",
+    "solution": "Hind’de hadisin yayılmasında en çok Şeyh Abdülhak b. Seyfuddin elBuhârî ed-Dehlevî’nin emeğinin\n         geçtiği anlaşılmaktadır. Onun bu husuta “O, hadis ilmini Hind’de ilk yayan kimsedir!” denilecek\n         kadar büyük hizmeti olmuştu. Şeyh Abdülhak 958/1551’de Delhi’de doğmuştu."
+  },
+  {
+    "q_num": 10,
+    "stem": "Osmanlı medreselerinde en çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l- envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazan aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İbn Hacer el-Askalânî",
+      "B": "İzzeddin Abdüllatif",
+      "C": "Molla Gürânî",
+      "D": "Seydî Çelebi",
+      "E": "Molla Lütfi"
+    },
+    "ans": "B",
+    "solution": "İlk Osmanlı dârulhadîsinin I. Murad devrinde İznik’te Çandarlı Hayreddin Paşa (ö. 789/1387)\n         tarafından yaptırıldığı kabul edilir. Bu asrın en önde gelen ismi İbn Melek diye tanınan İzzeddin\n         Abdüllatif’tir (ö. 797/1394). Tire’de müderrislik yapan İbn Melek Osmanlı medreselerinde en\n         çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli\n         şerhini yazmıştır. Doğru cevap B'dir."
+  }
+]

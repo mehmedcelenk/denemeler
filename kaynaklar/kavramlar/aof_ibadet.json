@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ibadet_kavrami",
+    "term": "İbadet",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.",
+    "sifre": "Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.",
+    "pattern": "\\bibadet\\b|\\bibâdet\\b|\\bibadettir\\b"
+  },
+  {
+    "id": "ibadet_efali_mukellefin",
+    "term": "Ef’âl-i Mükellefîn",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).",
+    "sifre": "Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.",
+    "pattern": "ef’âl-i mükellefîn|efali mükellefin|mükellef"
+  },
+  {
+    "id": "ibadet_taharet",
+    "term": "Tahâret (Temizlik)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.",
+    "sifre": "Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.",
+    "pattern": "\\btahâret\\b|\\btaharet\\b|\\bhades\\b|\\bnecaset\\b"
+  },
+  {
+    "id": "ibadet_teyemmum",
+    "term": "Teyemmüm",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.",
+    "sifre": "Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.",
+    "pattern": "\\bteyemmüm\\b|\\bteyemmum\\b"
+  },
+  {
+    "id": "ibadet_namaz_sartlari",
+    "term": "Namazın Şartları (Dışındakiler)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.",
+    "sifre": "6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.",
+    "pattern": "namazın şartları|namazın farzları|setr-i avret|istikbâl-i kıble"
+  },
+  {
+    "id": "ibadet_namaz_rukunleri",
+    "term": "Namazın Rükünleri (İçindekiler)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).",
+    "sifre": "6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.",
+    "pattern": "namazın rükünleri|iftitah tekbiri|kıyam|kıraat|rükû|ka’de-i ahîre"
+  },
+  {
+    "id": "ibadet_sehiv_secdesi",
+    "term": "Sehiv Secdesi",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 4,
+    "tanim": "Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.",
+    "sifre": "Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).",
+    "pattern": "sehiv secdesi|yanılma secdesi"
+  },
+  {
+    "id": "ibadet_oruc",
+    "term": "Oruç (Savm)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 5,
+    "tanim": "Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.",
+    "sifre": "İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.",
+    "pattern": "\\boruç\\b|\\borucun\\b|\\bsavm\\b|\\bimsak\\b|\\biftar\\b"
+  },
+  {
+    "id": "ibadet_itikaf",
+    "term": "İ’tikâf",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 5,
+    "tanim": "Bir mescidde ibadet niyetiyle belirli bir süre kalarak dünyevi meşgalelerden uzaklaşmaktır (Ramazan’ın son 10 gününde sünnet-i müekkededir).",
+    "sifre": "Camiye kapanıp ibadete çekilme = İ’tikâf.",
+    "pattern": "\\bi’tikâf\\b|\\bitikaf\\b"
+  }
+]

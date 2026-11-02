@@ -52,23 +52,23 @@
     "courseCount": 2
   },
   "AOF_HADIS": {
-    "questionCount": 65,
+    "questionCount": 115,
     "courseCount": 1
   },
   "AOF_ITAR": {
-    "questionCount": 131,
+    "questionCount": 152,
     "courseCount": 1
   },
   "AOF_AHLAK": {
-    "questionCount": 77,
+    "questionCount": 142,
     "courseCount": 1
   },
   "AOF_IBADET": {
-    "questionCount": 78,
+    "questionCount": 144,
     "courseCount": 1
   },
   "AOF_INANC": {
-    "questionCount": 77,
+    "questionCount": 159,
     "courseCount": 1
   }
 }

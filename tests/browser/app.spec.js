@@ -62,7 +62,7 @@ test('çok oyunculu giriş adı saklar ve odaya öğrenci olarak katılır', asy
   )).toBe('Ali');
 
   await page.locator('#btnMasterConsole').click();
-  await page.locator('[data-action="welcome-home"]').click();
+  await page.locator('.console-nav-leave-room').click();
   await page.locator('#welcomeRoomId').fill('13-b');
   await page.locator('[data-action="welcome-join-room"]').click();
   await expect(page.locator('#welcomeNameDialog')).toBeHidden();
@@ -80,11 +80,11 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator('#answerRateWarning')).toContainText('Yakalandın.');
   await expect(option).not.toHaveClass(/marked/);
   await page.waitForTimeout(3600);
-  await expect(page.locator('#answerRateWarning')).toContainText(/Yakalandın\. 4:5[0-9]/);
+  await expect(page.locator('#answerRateWarning')).toContainText(/Yakalandın\. 0:5[0-9]/);
   await page.evaluate(key => localStorage.removeItem(key), StorageKeys.ANSWER_LOCK_UNTIL);
   await option.click();
   await expect(option).toHaveClass(/marked/);
-  await page.waitForTimeout(3600);
+  // Çift tıklama: Aynı şıkka ikinci tıklamada yapay gecikme olmadan nihai seçim onaylanır
   await option.click();
   expect(await page.locator('.btn-why-correct').count()).toBe(0);
   await expect(page.locator('#activeExplanationBubble')).toBeVisible();

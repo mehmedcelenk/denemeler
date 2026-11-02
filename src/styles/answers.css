@@ -76,19 +76,28 @@
   touch-action: manipulation;
 }
 
+/* 1. Tıklama: Taslak Seçim (Kullanıcı henüz onaylamadı, kafa karıştırmayan nötr kurşun kalem grisi) */
 .optical-choice-row.marked {
-  background: color-mix(in srgb, var(--brand-accent) 12%, transparent);
+  background: rgba(100, 116, 139, 0.10);
+  border-radius: 8px;
 }
 
 body.dark-mode .optical-choice-row.marked {
-  background: color-mix(in srgb, var(--brand-accent) 18%, transparent);
+  background: rgba(148, 163, 184, 0.14);
 }
 
 .optical-choice-row.marked .optical-bubble {
-  background: var(--bubble-fill);
-  border-color: var(--bubble-fill);
-  color: var(--bubble-fill-text);
-  box-shadow: 0 0 0 0.14em var(--paper-bg), 0 0 0 0.28em var(--bubble-fill);
+  background: #64748b;
+  border-color: #64748b;
+  color: #ffffff;
+  box-shadow: 0 0 0 0.14em var(--paper-bg), 0 0 0 0.28em #64748b;
+}
+
+body.dark-mode .optical-choice-row.marked .optical-bubble {
+  background: #94a3b8;
+  border-color: #94a3b8;
+  color: #0f172a;
+  box-shadow: 0 0 0 0.14em var(--paper-bg), 0 0 0 0.28em #94a3b8;
 }
 
 /* Doğru İşaretleme (D) */

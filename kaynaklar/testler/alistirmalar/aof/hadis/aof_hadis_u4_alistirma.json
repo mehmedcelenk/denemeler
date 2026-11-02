@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Müstahrec nedir?",
+    "secenekler": {
+      "A": "Daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri teker teker ele alarak kitap sahibinin senedinden başka bir senedle rivayet etmek suretiyle meydana getirilen hadis kitabıdır.",
+      "B": "Müellifin şartlarına uyduğu halde kitabına almadığı hadisleri toplamak suretiyle onun eksikliklerini tamamlayan kitaptır.",
+      "C": "Tüm hadislerin bir araya getirilerek tekrardan yazıldığı kitaptır.",
+      "D": "Sadece Hz. Peygamberim söylediği hadislerdir.",
+      "E": "Hz. Peygamber ve sahabelerinin söylediği hadislerin sınıflandırıldığı kitaptır."
+    },
+    "ans": "A",
+    "solution": "Müstahrec ( ‫) اﻟﻤﺴﺘﺨﺮج‬, Daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri teker\n         teker ele alarak kitap sahibinin senedinden başka bir senedle rivayet etmek suretiyle meydana\n         getirilen hadis kitabıdır."
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdaki kitaplardan hangisi temek hadis kaynaklarını tamamlamak amacıyla yazılmıştır?",
+    "secenekler": {
+      "A": "El-Müsnedü’l-müstahrec ala Sahihi’l-İmam Müslim",
+      "B": "El-Cem’byne’s-sahihayn",
+      "C": "Şuabü’l-iman",
+      "D": "El-Camiu’s-sağir",
+      "E": "Ziyadetü’l-Cami"
+    },
+    "ans": "A",
+    "solution": "El-Müsnedü’l-müstahrec ala Sahihi’l-İmam Müslim Tamamlayıcı nitelikteki eserlerdendir."
+  },
+  {
+    "q_num": 3,
+    "stem": "“Riyazü ’s-sâlihîn” isimli eserle ilgili aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "3000 adet hadis bulunmaktadır.",
+      "B": "Ayet ve hadisleri esas alarak fert, aile ve toplum planında uyulması gereken prensipleri ortaya koymayı amaçlamıştır.",
+      "C": "İyiliğe teşvik eden kötülüklerden sakındıran hadisleri bir araya getirmiştir.",
+      "D": "500 adet hadis bulunmaktadır.",
+      "E": "Zevâid türünde yazılmıştır."
+    },
+    "ans": "B",
+    "solution": "“Riyazü ’s-sâlihîn” isimli eserde 1900 civarında hadis bulunmaktadır. Nevevî, bu kitabıyla âyet ve\n         hadisleri esas alarak fert, aile ve toplum planında uyulması gereken prensipleri ortya koymayı\n         amaçlamıştır."
+  },
+  {
+    "q_num": 4,
+    "stem": "Belli bir kitabı esas alarak yapılan ilk şerh çalışması hangi eser üzerinden yapılmıştır?",
+    "secenekler": {
+      "A": "Buhârî’nin Sahih’i",
+      "B": "Ebu’l-Velîd el-Bâcî’nin el-Mü nteka’sı",
+      "C": "Aclûnî’nin Keşfu’lhafâ’sı",
+      "D": "Hâkim en-Nîsâbûrî’nin el-Mü stedrek’i",
+      "E": "Beyhakî’nin Şuabu’l-imân ’ı"
+    },
+    "ans": "A",
+    "solution": "Belli bir kitabı esas alan ilk şerh çalışması hicrî dördü ncü asırda Hattâbî (ö. 388/998) tarafından\n         Buhârî’nin Sahih’i ü zerine yapılmıştır."
+  },
+  {
+    "q_num": 5,
+    "stem": "Hangisi Tirmizî’nin “el-Câmiu’s-sahih” i hakkında yapılan şerhler arasında yer alır?",
+    "secenekler": {
+      "A": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si",
+      "B": "Azimâbâdî’nin “Avnü’l-ma’bûd” u",
+      "C": "Sehârenfûrî’nin “Bezlü’l-mechûd fî halli Ebî Dâvûd” u",
+      "D": "Mâzerî’nin “el-Mu’lim bi fevâidi Müslim” i",
+      "E": "Kastallânî’nin “rşâdü’ s-sârî” si"
+    },
+    "ans": "A",
+    "solution": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si Tirmizî’nin “el-Câmiu’s-sahih” i hakkında yapılan\n         şerhler arasında en tanınanıdır. Azimâbâdî’nin “Avnü’l-ma’bûd” u ve Sehârenfûrî’nin “Bezlü’l-\n         mechûd fî halli Ebî Dâvûd” u Ebû Dâvûd’un “es-Sünen” i hakkındaki en önemli şerhlerdendir.\n         Mâzerî’nin “el-Mu’lim bi fevâidi Müslim” i Müslim’in el-Câmiu’s-sahîh’iyle ilgili ilk şerhtir.\n         Kastallânî’nin “Irşâdü’ s-sârî” sinde ise isimli şerhinde başlangıçta Ibn Hacer’in “Hedyü’s-sârî” isimli\n         mukaddimesi özetlenmektedir."
+  },
+  {
+    "q_num": 6,
+    "stem": "“Kütüb-i sitte” de adı geçen râvilerin hemen hepsini ihtiva eden ilk çalışma hangisidir?",
+    "secenekler": {
+      "A": "Cemmâilî’nin “el-Kemâl fî esmâi’r-ricâl” i",
+      "B": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si",
+      "C": "Muhammed b. Hilfe b. Ömer el-Übbî’nin “Ikmâlü Ikmâli’l-Mu’lim” i",
+      "D": "Ibn Hacer’in “Hedyü’s-sârî” si",
+      "E": "Ibn Abdilberr’in “el-Istizkâr” ı"
+    },
+    "ans": "A",
+    "solution": "“Kütüb-i sitte”de adı geçen râvilerin hemen hepsini ihtiva eden ilk çalışma Cemmâilî’nin “el-Kemâl fî\n         esmâi’r-ricâl” isimli eseridir. Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si Tirmizî’nin “el-Câmiu’s\n         sahih” i hakkındadır, Muhammed b. Hilfe b. Ömer el-Übbî’nin “Ikmâlü Ikmâli’l-Mu’lim” i müslim\n         şerhlerindendir. Ibn Hacer’ in “Hedyü’s-sârî” sine Kastallânî’nin “Irşâdü’s-sârî” isimli şerhinde yer\n         verilmektedir. Ibn Abdilberr’in “el-Istizkâr”ı ise muvatta şerhlerindendir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Buhârî ve Müslim tarafından sahih hadisleri bir eserde toplama faaliyeti ilk defa hangi asırda başlatılmıştı?",
+    "secenekler": {
+      "A": "Birinci asırda",
+      "B": "İkinci asırda",
+      "C": "Üçüncü asırda",
+      "D": "Dördüncü asırda",
+      "E": "Beşinci asırda"
+    },
+    "ans": "C",
+    "solution": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa üçüncü asırda Buhârî ve Müslim\n         tarafından başlatılmıştı. Buhârî eserinin ismindeki “elmuhtasar” ifadesiyle sahih hadislerin tamamını\n         bir araya getirmediğini belirtmekteydi. Müslim de bu hususu eserinde açıkça ifade etmekteydi.\n         Dolayısıyla Buhârî ve Müslim’in el-Câmiu’s-sahîh’leri sahih hadislerin tamamını ihtiva etmemekteydi."
+  },
+  {
+    "q_num": 8,
+    "stem": "Esas aldıkları eserdeki rivâyetleri, başka isnadlarını tespit etmek suretiyle kuvvetlendiren çalışmalara hangisi denmektedir?",
+    "secenekler": {
+      "A": "Müstahrec",
+      "B": "Zevâid",
+      "C": "Kütüb-i erbaa",
+      "D": "Müstedrek",
+      "E": "Sahîhayn"
+    },
+    "ans": "A",
+    "solution": "Müstahrec, daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri, teker teker ele\n         alarak kitap sahibinin senedinden başka bir senedle rivâyet etmek suretiyle meydana getirilen hadis\n         kitabıdır. Müstahrecler, esas aldıkları eserdeki rivâyetleri, başka isnadlarını tespit etmek suretiyle\n         kuvvetlendiren çalışmalardır. Esas alınan müellifin rivâyet ettiği hadislerin lafızlarıyla müstahrec\n         yazarının rivâyet ettiği hadislerin lafızlarında ve mânasında mutlak uygunluk şart değildir. Genellikle\n         söz konusu iki eserdeki hadisler arasında lafız farklılıklarının olduğu görülür."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdaki eser türlerinden hangisi kişiyi iyiliğe teşvik edip kötülükten uzaklaştırmak amacıyla derlenmiş hadislerden oluşmaktadır?",
+    "secenekler": {
+      "A": "et-Terğîb ve’t-terhîb",
+      "B": "ihtilâfü’l-hadis",
+      "C": "Keşfu’l-hafâ",
+      "D": "Riyâzü’s-sâlihîn",
+      "E": "el-Makâsıdü’l-hasene"
+    },
+    "ans": "A",
+    "solution": "Terğîb iyiliğe teşvik, terhîb ise kötülükten sakındırmak demektir. Münzirî et-Terğîb ve’t-terhîb isimli\n         eserinde iyiliğe teşvik eden kötülüklerden sakındıran hadisleri bir araya getirmiştir. Müellif her\n         konunun, terğîb ve terhîb (teşvik ve uyarı) yönlerini dile getiren hadisleri iki grupta toplamak\n         suretiyle önce terğîb sonra terhîbi ilgilendiren hadisleri vermiştir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa kaçıncı asırda başlatılmıştır?",
+    "secenekler": {
+      "A": "Birinci asırda",
+      "B": "İkinci asırda",
+      "C": "Üçüncü asırda",
+      "D": "Dördüncü asırda",
+      "E": "Beşinci asırda"
+    },
+    "ans": "C",
+    "solution": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa üçüncü asırda Buhârî ve Müslim\n         tarafından başlatılmıştı. Buhârî eserinin ismindeki “el-muhtasar” ifadesiyle sahih hadislerin\n         tamamını bir araya getirmediğini belirtmekteydi. Müslim de bu hususu eserinde açıkça ifade\n         etmekteydi."
+  }
+]

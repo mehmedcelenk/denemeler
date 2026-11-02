@@ -1,0 +1,44 @@
+{
+  "hadis": {
+    "Ünite 1": "Hadis İlmi: Temel Kavramları ve Alt Dalları",
+    "Ünite 2": "Hadislerin Korunması ve Kayıt Altına Alınması",
+    "Ünite 3": "Hadislerin Tasnifi ve Temel Hadis Kitapları",
+    "Ünite 4": "Temel Hadis Kaynakları Üzerine Yapılan Çalışmalar",
+    "Ünite 5": "Yakın Dönem Hadis Çalışmaları"
+  },
+  "inanc": {
+    "Ünite 1": "Din ve İnanç",
+    "Ünite 2": "İslâm Dini ve İnancı",
+    "Ünite 3": "Allah İnancı",
+    "Ünite 4": "Melek İnancı",
+    "Ünite 5": "Kutsal Kitap İnancı"
+  },
+  "ibadet": {
+    "Ünite 1": "İbadet",
+    "Ünite 2": "Temizlik",
+    "Ünite 3": "Namaz; Genel Esaslar",
+    "Ünite 4": "Namaz; Özel Hükümler",
+    "Ünite 5": "Oruç"
+  },
+  "ahlak": {
+    "Ünite 1": "İslâm ve Ahlâk",
+    "Ünite 2": "İslâm Ahlâkının Kaynakları",
+    "Ünite 3": "İslâm Ahlâk Teorileri",
+    "Ünite 4": "İslâm Ahlâkının Temel Kavramları",
+    "Ünite 5": "İslâm Ahlâkının Bireysel Boyutu 1: Güzel Ahlâk(Faziletler)"
+  },
+  "itar": {
+    "Ünite 1": "İslâm Öncesi Arabistan ve Araplarda Dinî, Sosyo-Kültürel Hayat",
+    "Ünite 2": "Hz. Muhammed’in Peygamberlik Öncesi Hayatı",
+    "Ünite 3": "İslâm’ın Mekke Dönemi",
+    "Ünite 4": "İslam’ın Medine Dönemi I: Hudeybiye’ye Kadar",
+    "Ünite 5": "İslâm’ın Medine Dönemi II: Hudeybiye ve Sonrası"
+  },
+  "arapca": {
+    "Ünite 2": "Arapçada Fiiller",
+    "Ünite 1": "Ayrık Özne Zamirleri",
+    "Ünite 3": "Arapçada İsimler (Tekil-İkil-Çoğul)",
+    "Ünite 4": "Arapçada Fiil Cümlesi",
+    "Ünite 5": "Arapçada İsim Cümlesi"
+  }
+}

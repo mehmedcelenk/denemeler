@@ -1,0 +1,848 @@
+[
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 1,
+    "soru": "İnsanın inanç yoluyla bir çıkış yolu bulma ihtiyacı nasıl doğmuştur?",
+    "cevap": "Kendi ihtiyaçlarını karşılamakta zaman zaman düştüğü çaresizlik durumu insana inanç yoluyla bir çıkış yolu bulma ihtiyacını doğurmuş ve gereksinim ilk çağlardan beri hep var olagelmiştir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 2,
+    "soru": "Din kelimesinin Türkçe karşılığı hangi anlamlara gelmektedir?",
+    "cevap": "Din bilginleri genellikle din kelimesinin Arapça deyn kökünden bir mastar veya isim olduğunu kabul ederler. Temel anlam olarak dinin; itaat, ceza, mükâfat, örf, adet, hüküm, tutulan yol ve usul kelimeleriyle karşılandığı ifade edilir. Bu kelimenin Türkçe karşılığının borç ve yükümlülük anlamlarında olduğu düşünüldüğünde, kişinin varlığını meydana getiren, kendisinin ödemekle yükümlü olduğu varlığa duyduğu minnet ve iç bağlılığı, yani itaati ifade ettiği ortaya çıkmaktadır.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 3,
+    "soru": "İslam âlimleri tarafından muharref din adı verilen dinler hangileridir?",
+    "cevap": "İlâhi vahye dayanmakla birlikte Allah’tan geldiği şeklini koruyamamış Yahudilik ve Hıristiyanlık gibi dinlere de muharref din adını vermişlerdir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 4,
+    "soru": "Dinler için, kutsal kitaplarının bulunup bulunmamasına göre yapılan tasnifler hangileridir?",
+    "cevap": "Kutsal kitaplarının bulunup bulunmamasına göre yapılan tasniflerde de Ehl-i kitap Yahudi ve Hıristiyanları, kitabı olduğu şüpheli dinler de Mecûsiler ve Maniheistleri ifade etmek için kullanılmıştır.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 5,
+    "soru": "İslam’ın Mekke’de nazil olan ayetlerinin din kelimesine yükledikleri etkin anlamlar nelerdir?",
+    "cevap": "İnsanın sadece Allah’a kulluk etmesi ve O’na ortak koşmaması Mekke’de nazil olan ayetlerin din kelimesine yükledikleri etkin anlamlardır.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 6,
+    "soru": "İslam’ın Medine döneminde din kelimesi anlam olarak nasıl bir değişim göstermiştir?",
+    "cevap": "İslam’ın Medine döneminde din anlam olarak, tevhid kavramından bir dine mensup olan insan topluluğuna (ümmet) geçmiştir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 7,
+    "soru": "Dinî hükümlerin kaynağı nedir?",
+    "cevap": "Din, Allah tarafından konulur. O’ndan başkasının din oluşturma hakkı yoktur. Bu sebeple dinî hükümlerin kaynağı da Allah’tır.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 8,
+    "soru": "İlk Peygamber Hz. Âdem’den son peygamber Hz. Muhammed’e kadar bütün peygamberlerin getirdiği hak dinlerin genel adı nedir?",
+    "cevap": "İlk Peygamber Hz. Âdem’den son peygamber Hz. Muhammed’e kadar bütün peygamberlerin getirdiği hak dinlerin genel adı İslâm’dır.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 9,
+    "soru": "İnanç kelimesi Türkçe’de hangi anlamlara gelir?",
+    "cevap": "İnanç Türkçe’de “Bir düşünceye gönülden bağlanmak, Allah’a veya bir dine inanma, birine duyulan güven duygusu, bir kimse ya da şeyin doğruluğunu, büyüklüğünü ve gücünü sarsılmaz bir duygu ile benimsemek” anlamına gelir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 10,
+    "soru": "İnanç kelimesinin Arapça karşılıkları nelerdir?",
+    "cevap": "Arapça karşılığı iman ve itikattır.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 11,
+    "soru": "İslam düşüncesinde bir terim olarak iman kelimesi ne anlama gelmektedir?",
+    "cevap": "İslam düşüncesinde bir terim olarak iman “Hz. Peygamberin vahiy yoluyla getirdiği tüm hususlarda tereddütsüz tasdik etmek ve getirdiklerine inanmak” demektir. “Allah’tan alıp din adına tebliğ ettikleri kesin inanç ilkelerinde peygamberleri tasdik etmek ve onlara inanmak” şeklinde de tarif edilmektedir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 12,
+    "soru": "Mü’min, Müslim ve Müslüman kavramlarının anlamları nelerdir?",
+    "cevap": "İslam düşüncesinde bir terim olarak iman “Hz. Peygamberin vahiy yoluyla getirdiği tüm hususlarda tereddütsüz tasdik etmek ve getirdiklerine inanmak” demektir. “Allah’tan alıp din adına tebliğ ettikleri kesin inanç ilkelerinde peygamberleri tasdik etmek ve onlara inanmak” şeklinde de tarif edilmektedir. Bu inancı benimseyen kişiye mü’min dendiği gibi, inancın gereklerini tam bir teslimiyetle yerine getiren kişiye de Müslim denir. Bunun Farsça’dan geçen çoğul ifadesine de Müslüman denir. 13. “Bedevîler inandık dediler. De ki, siz (gerçekte) iman etmediniz, ama teslim olduk deyin. İman kalplerinize yerleşmedi” (el-Hucurât 49/14) ayeti hangi duruma delil olarak gösterilmektedir? Cevap: Yine başka bir âyette konu edildiği üzere kıtlık yıllarından birinde bir grup Medine’ye gelerek Hz. Peygamber’e inandıklarını söylemişlerdir. Hz. Peygamber de onların bu hallerinden etkilenmiş ve onlara hazineden yardımda bulunmuştu. Onların bu hali âyette tahlil edilerek bu kabilenin kalben iman etmediği, sadece dilleriyle böyle bir söz söyledikleri haber verilmektedir. Bu durumdan hareketle akâid âlimlerinin büyük çoğunluğu iman etmenin kalple gerçekleştiğini ileri sürerler ve delil olarak bu ayeti gösterirler: “Bedevîler inandık dediler. De ki, siz (gerçekte) iman etmediniz, ama teslim olduk deyin. İman kalplerinize yerleşmedi” (el-Hucurât 49/14).",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 14,
+    "soru": "İkrar kelimesi ne anlama gelmektedir?",
+    "cevap": "İkrar, içten hissedilenlerin dil ile ifade edilmesine denir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 15,
+    "soru": "Kur’ân’da, “Ey iman edenler ve sâlih amel işleyenler” şeklindeki birçok ayet (meselâ bk. el-Bakara 2/277, Yunus 10/9, Hûd 11/23) neyi yansıtmakta ve iman-amel bir arada zikredilmekle ne işaret edilmektedir?",
+    "cevap": "Her şeyden önce Kur’ân’da, “Ey iman edenler ve sâlih amel işleyenler” şeklinde birçok ayet mevcuttur (meselâ bk. el-Bakara 2/277, Yunus 10/9, Hûd 11/23). Bunlar iman ve amel bütünlüğünü yansıtmakta ve ikisi bir arada zikredilmek suretiyle iman ve amelin birbirini tamamlayan unsurlar olarak görülmektedir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 16,
+    "soru": "İnanılması gereken konuları sadece bilmek iman etmek için yeterli midir, sorusunu evet şeklinde cevaplayan mezheplerin görüşleri ve bu görüşe karşı çıkan mezheplerin görüşleri nelerdir?",
+    "cevap": "İslam âlimleri bilginin, insan hayatındaki lüzumunu önemsemişlerdir. Bilgisiz insanla bilgili olanın arasındaki uçurumu en iyi anlatan onlardır. Ancak burada söz konusu olan husus, inanılması gereken konuları sadece bilmek iman etmek için yeterli midir, sorusudur. Bu soruyu evet diye cevaplayan Cehmiyye ve Neccâriyye mezhepleridir. Onlara göre kişinin iman esaslarını sadece bilmesi mümin olması için yeterlidir. Matüridî ve Mu’tezilî âlimler ise bunun yeterli olmadığını ve eğer bu yeterli olsaydı her âlimin mümin olması gerekeceğini söyleyerek onları eleştirmişlerdir. Her âlimin mümin olması ilkesi benimsenirse nitelik aranmaksızın bütün bilginlerin mümin olması gerekecektir",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 17,
+    "soru": "İslâm dininde bir kimsenin mümin olabilmesi için yeterli olanlar nelerdir?",
+    "cevap": "İslâm dininde bir kimsenin mümin olabilmesi için tevhid veya şehâdet kelimelerini kalben kabul edip dillendirmesi yeterlidir. Bu imanın en kısa ve kestirme yoludur. Tevhid yani “Lâ ilâhe illallah Muhammedün Rasûlullah yani Allahtan başka ilah yoktur. Muhammed O’nun resûlüdür” veya şehâdet yani “eşhedü en lâ ilâhe illallah ve eşhedü enne Muhammeden abduhû ve rasûluh yani Ben Allah’tan başka ilah olmadığına ve Muhammed’in O’nun kulu ve resûlu olduğuna şahitlik ederim” sözlerini inanarak söylemek mümin olmanın kapısını açmak demektir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 18,
+    "soru": "İman ile ilgili olarak Hz. Peygamber’in Cibril hadisinde (Müslim, “İman”, 1) belirttiği hususlar nelerdir?",
+    "cevap": "İkinci derecede Hz. Peygamber’in Cibril hadisinde (Müslim, “İman”, 1) belirttiği hususlara açık ve net şekilde inanmaktır. Bu hadis çerçevesinde, Allah’a, O’nun meleklerine, kitaplarına, peygamberlerine, âhiret gününe, öldükten sonra tekrar dirilmeye, cennet ve cehennemin mevcudiyetine, orada insanların durumuna göre karşılık bulup sevap veya azap göreceklerine, Allah’ın bütün evreni ve bu arada insan davranışlarını düzenlemekte etkin güç olduğuna; kaza ve kadere ayrıntılı olarak iman etmektir.",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 1,
+    "unit_title": "Din ve İnanç",
+    "question_no": 19,
+    "soru": "Taklidî iman ve mukallit nedir?",
+    "cevap": "Bir kimsenin çevresindeki ana, baba, kardeş, komşu, hoca ve değer verdiği diğer kişilere bakarak, hiçbir araştırma yapmadan inanmasına taklit, bu tür imana da taklidî iman denir. Böyle bir kişiye de mukallit adı verilir. 20. İmanın geçerli olmasının şartları nelerdir? Cevap: İmanın geçerli olmasının şartları şöyle sıralanabilir:1. İman son nefeste veya ihtimallerin tükendiği ümitsizlik (ye’s) anıyla sınırlı olmamalıdır. Bu kimselerin imanının kabul olunmayacağı hem ayetlerde hem de hadislerde belirtilmiştir: “Azabımızı gördükleri vakit imanları kendilerine fayda vermeyecektir” (el-Mü’min 40/85) ayeti ile “Güneş batıdan doğmadıkça kıyamet kopmaz. Güneş batıdan doğup insanlar bunu görünce toptan iman edecekler fakat önceden iman etmemiş kişilerin imanlarının artık kendilerine fayda vermediği zamandır” (Buhârî, “Fiten”, 25; “Rikak”, 40) hadisi ümitsizlik halinde iman etmenin geçersizliğini bildirmektedir. Akıl ve beden sağlığı yerindeyken, karar ve davranışları kendi irade ve kontrolünde bulunurken iman etmeyenin çaresizlik halinde buna yeltenmesi iç dünyasının tam olarak yansıtmayabilir. Allah Teâlâ, gerçek ve samimi olan davranışları kabul eder.2. Kişide mümin niteliğinin devam etmesi için dinin esas ve hükümlerini yok sayan veya yalan ve sahteliğe kaçan bir davranış sergilememelidir. Dini hükümler hafife alınmamalı, alay konusu yapılmamalı ve üzerinde ulu orta konuşulmamalıdır. Mümin, kesin inanç esaslarını veya farz olduğu bilinen hususlardan birini inkâr etmemelidir. Kötü bir alışkanlık olarak devam ettiği içki içmeye besmele ile başlamak veya namazın, orucun farz olduğunu inkâr etmek gibi.3. Hz. Peygamberin getirdiği dini hükümlerin tamamını hiç yüksünmeden bir bütünlük içinde kabul etmelidir. İslam’ın inanç ve ibadetleri arasında bir ayırım yapmadığı gibi ahlâk ve muamelat hükümleri arasında da bir ayırım yapmamalıdır. Dinî gerekleri yerine getirirken büyüklük göstermemeli, gururla dini esaslardan birini veya birkaçını inkâr sayılabilecek bir inanç veya davranış içinde olmamalıdır. İlahî emir ve hikmet gereği gönderilen dinî esasların hepsini severek ve isteyerek yerine getirmelidir.4. Mümin olan kimse alçakgönüllü olmalı, Allah’ın azabı bana isabet etmez, diye düşünmemelidir. İbadet ve taatim yerinde, Allah benden daha iyi kul mu bulacak? gibi düşünmemelidir. Allah tarafından hiç kimsenin yaptığı zayi edilmeden münasip karşılık verileceğinin idraki içinde davranmalı, azabından emin olmamalıdır. Buna mukabil, Allah’ın rahmetinden ümit kesmemelidir. Benim kurtuluş ümidim kalmadı gibi düşüncelere kapılmamalı ve Allah’ın kullarına merhametinin çok olduğunu unutmamalıdır. Ayetlerde kulun durumu ne kadar ümitsiz olursa olsun Allah’ın onu af edebileceğini hatırlanmalıdır. Nitekim bir âyette “ De ki: Ey kendi nefisleri aleyhine haddi aşan kullar! Allah’ın rahmetinden ümit kesmeyin. Çünkü Allah bütün günahları bağışlar. Şüphesiz O, çok bağışlayan ve çok esirgeyendir” (ez-Zümer 39/53) denilmektedir Sıra-(Soruid) 1-(4040377) 2-(4040378) 3-(4040379) 4-(4040380) 5-(4040381) 6-(4040382) 7-(4040383) 8-(4040384) 9-(4040385) 10-(4040386) 11-(4040387) 12-(4040388) 13(4040389) 14-(4040390) 15-(4040392) 16-(4040391) 17-(4040393) 18-(4040394) 19-(4040395) 20-(4040396)",
+    "source_pdf": "aof_inanc_u1_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 1,
+    "soru": "Allah’ın insanlık için önerdiği tek din hangi dindir?",
+    "cevap": "Allah’ın insanlık için önerdiği tek din İslâm’dır.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 2,
+    "soru": "İslâm kelimesi sözlükte hangi anlama gelmektedir?",
+    "cevap": "Arapça aslı silm veya selm olan İslâm, sözlükte: “kurtuluşa ermek, boyun eğmek, teslim olmak, barış yapmak” anlamlarına gelmektedir.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 3,
+    "soru": "Hadislerde İslâm kelimesinin hangi anlamı ön plana çıkarılmaktadır?",
+    "cevap": "Kur’ân’da olduğu gibi hadislerde de İslâm kelimesi geçmekte ve “Allah’ın insanlığa gönderdiği son din” anlamı ön plana çıkarılmaktadır.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 4,
+    "soru": "Hadislerde, İslâm’ın bir din olarak insan fıtratına en uygun ve insanlığın devam eden doğruyu algılama sağduyusuna en elverişli bir din olduğuna dikkat çekilmektedir. Burada fıtrat kelimesiyle kast edilen nedir?",
+    "cevap": "Burada fıtrat kelimesiyle Allah’ın insanı yarattığında iç dünyasına yerleştirdiği yaratıcısını tanıma kabiliyeti kast edilmektedir.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 5,
+    "soru": "İslâm dini genel iskelet olarak incelendiği üç başlık nelerdir?",
+    "cevap": "1. İslâm dininin inançla (itikat) ilgili hükümleri,2. İslâm dininin davranışlarla (muâmelât) ilgili hükümleri,3. İslâm dininin ahlâkla ilgili hükümleri,",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 6,
+    "soru": "İnanç konuları temel olarak ne ile belirlenir?",
+    "cevap": "İnanç konuları temel olarak peygamberlere indirilen vahiyle belirlenir.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 7,
+    "soru": "Aslî ve fer’î esaslar ne anlama gelmektedir?",
+    "cevap": "İnançla ilgili hükümlere aslî, yapıp etmelerle yani ibadet ve muamelâtla ilgili olanlarına fer’î esaslar denir.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 8,
+    "soru": "Allah Teâlâ’nın kulları hakkında belirlediği hükümler İslâm dininde üç ana başlık altında incelenir. Bunlar başlıklar hangileridir?",
+    "cevap": "Allah Teâlâ’nın kulları hakkında belirlediği hükümler İslâm dininde üç ana başlık altında incelenir. Bunlar; itikâdî, amelî ve ahlâkî hükümlerdir.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 9,
+    "soru": "İslâm dininde inanç esaslarının çıkarıldığı kaynak nelerdir?",
+    "cevap": "İnanç esaslarının çıkarıldığı kaynak, Kur’ân’ın ve Hz. Peygamber’in varlığı kesin olan hadisleridir.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 10,
+    "soru": "“Allah katındaki dereceni öğrenmek istiyorsan kalbinde Allah’a ne kadar yer ayırdığına bak” şeklindeki meşhur söz kültürümüzde hangi husus hakkında söylenmektedir?",
+    "cevap": "İnanç esaslarını benimsemenin şekli hakkında kültürde de söylenecek birçok husus mevcut olmakla birlikte şu meşhur sözü aktarmak yeterli olacaktır: “Allah katındaki dereceni öğrenmek istiyorsan kalbinde Allah’a ne kadar yer ayırdığına bak”.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 11,
+    "soru": "Tarih içinde süzülüp gelen inanç esaslarıyla ilgili temel özellikler kelâm ilminde birkaç noktada özetlenmiştir. Bu özellikler hangileridir?",
+    "cevap": "Tarih içinde süzülüp gelen inanç esaslarıyla ilgili temel özellikler kelâm ilminde birkaç noktada özetlenmiştir. Bu özellikler kesinlik, değişmezlik, açıklık ve bölünmezlik olarak sıralanmaktadır.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 12,
+    "soru": "“Kur’ân’a ister inanın ister inanmayın.” (el-İsrâ 7/107) “De ki: Hak, Rabbinizdendir. Öyle ise dileyen iman etsin, dileyen inkâr etsin” (el-Kehf 18/29). Bu ayetler inanç esaslarından hangisine işaret etmektedir?",
+    "cevap": "İnanç esaslarında zorlama yoktur. Kişinin, Hz. Peygamber’in getirdiği inanç esaslarına zorlanması ve dolayısıyla neticesinde bir karşılık beklemesi söz konusu değildir. İtikat esaslarını kabullenmek veya kabullenmemek kişilerin kendi sorumluluğu dâhilindedir. Kur’ân, bu konudaki tavrını net bir şekilde ortaya koymuştur: “Kur’ân’a ister inanın ister inanmayın.” (el-İsrâ 7/107) “De ki: Hak, Rabbinizdendir. Öyle ise dileyen iman etsin, dileyen inkâr etsin” (el-Kehf 18/29). 13. İnanç esasları kesin bilgi verir ve yakîn ifade ederler. Bu durumda Kur’ân ve mütevâtir sünnet hakkında şek ve şüphe ne gibi olumsuz durumlara yol açabilir? Cevap: İnanç esasları kesin bilgi verir ve yakîn ifade ederler. Kur’ân ve mütevâtir sünnette yer almış olması hasebiyle verdikleri bilgiden şüphe edilmez. Şek ve şüphe burada inkâr ve küfür sayılır.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 14,
+    "soru": "İslâm inanç sistemi kalp ve vicdana hitap etmenin yanında başka nelere yer vermektedir?",
+    "cevap": "İslâm inanç sistemi kalp ve vicdana hitap etmenin yanında kesin delillere ve açık akıl yürütmelere yer verir.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 15,
+    "soru": "İslâm dininde; bir Hıristiyan’ın teslis akidesini izah etmesi, bir Yahudi’nin de milli tanrı anlayışınıanlaşılır hale getirmesi gibi güç durumların benzerlerine yol açacak karmaşıklık ve muğlâklığın olmaması İslâm inanç esaslarının hangi özelliğiyle açıklanabilir?",
+    "cevap": "İnanç esasları açık ve sadedir. Ne istediği apaçık, ayan beyan ve nettir. Muhatabın bunları algılamada bir problemi olmayacak niteliktedir, müphem ve muğlâk değildir. Emredilen de yasaklanan da gayet açık bir şekilde belirtilmiştir. Hâlbuki bir Hıristiyan’ın teslis akidesini izah etmesi, bir Yahudi’nin de milli tanrı anlayışını anlaşılır hale getirmesi oldukça güçtür. Dolayısıyla diğer inanç sistemlerinde görülen karmaşıklık ve muğlâklık İslâm inanç esaslarında yoktur.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 16,
+    "soru": "Kur’ân-ı Kerim’de Yahudilere hitaben “Yoksa siz kitabın bir kısmına inanıp bir kısmını inkâr mı ediyorsunuz! Sizden öyle davrananların cezası dünya hayatında rüsvalık, kıyamet gününde ise en şiddetli azaba itilmektir” (el-Bakara 2/85) denilmek suretiyle inanç esaslarıyla ilgili olarak neye dikkat çekilmiştir?",
+    "cevap": "Kur’ân-ı Kerim’de Yahudilere hitaben “Yoksa siz kitabın bir kısmına inanıp bir kısmını inkâr mı ediyorsunuz! Sizden öyle davrananların cezası dünya hayatında rüsvalık, kıyamet gününde ise en şiddetli azaba itilmektir” (el-Bakara 2/85) denilmek suretiyle inanç esasında bölünmeye yer olmadığına dikkat çekilmiştir",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 17,
+    "soru": "Hz. Peygamber “Kim hakkımızda olmayan bir şeyi uydurursa merduttur.”(Buhârî, “Sulh”, 5) diyerek hangi girişimlere kapıları kapatmıştır.",
+    "cevap": "İnanç esaslarına beşerî müdahale yapılamaz, ilave veya eksiltme yapma imkânı yoktur, böyle bir girişim daima geçersizdir. Hz. Peygamber “Kim hakkımızda olmayan bir şeyi uydurursa merduttur.”(Buhârî, “Sulh”, 5) diyerek bu tür girişimlere kapıları kapatmıştır.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 18,
+    "soru": "İbadetlerin yapılış şekli nelere dayanır?",
+    "cevap": "İbadetler de inanç esasları gibi dinin değişmez ilkeleridir. Yapılış şekilleri fiilî mütevâtir sünnete dayanır.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 19,
+    "soru": "İslâm dininin “muamelât” diye adlandırılan insandan insana yapılan ve karşılıklı ilişkileri içeren hükümleri hangi ilkeye dayanmaktadır?",
+    "cevap": "İslâm dininin “muamelât” diye adlandırılan insandan insana yapılan ve karşılıklı ilişkileri içeren hükümleri adalet ilkesine dayanmaktadır.",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 2,
+    "unit_title": "İslam Dini ve İnancı",
+    "question_no": 20,
+    "soru": "Müminlerin kendilerine emredilen iman ve amel ilkeleri doğrultusunda yaşamaları ve böylece erdemin hâkim olduğu bir toplum meydana getirmeleri için kendilerine neyi örnek almaları gereklidir?",
+    "cevap": "Müminler kendilerine emredilen iman ve amel ilkeleri doğrultusunda yaşayacaklar ve böylece erdemin hâkim olduğu bir toplum meydana getireceklerdir. Kendi arzu ve heveslerinin peşinden koşmayacaklar ve kötü örnek olmayacaklardır. Kendilerine bu konuda Hz. Peygamber’in sünnetini ve yaşayışını örnek alacaklar ve onun önderliğinde dünyevî istek ve hazcılıktan mümkün olduğunca uzak duracaklardır. Sıra-(Soruid) 1-(4040356) 2-(4040358) 3-(4040359) 4-(4040360) 5-(4040361) 6-(4040362) 7-(4040363) 8-(4040364) 9-(4040365) 10-(4040366) 11-(4040367) 12-(4040368) 13(4040369) 14-(4040370) 15-(4040371) 16-(4040372) 17-(4040373) 18-(4040374) 19-(4040375) 20-(4040376)",
+    "source_pdf": "aof_inanc_u2_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 1,
+    "soru": "Allah inancı insanda doğuştan varolan bir özelliktir. Kur’ân-ı Kerîm’de yaratılış anında varolan bu duygu hangi kavram ile ifade edilir?",
+    "cevap": "“Fıtrat” kavramı ile ifade edilir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 2,
+    "soru": "İslam’da Allah’ın varlığını ispatlamak için yapılan tüm faaliyetlere ne ad verilir?",
+    "cevap": "“İsbât-ı vâcip” adı verilir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 3,
+    "soru": "Allah'ın varlığını açıklamaya çalışan delillerden \"Hudûs Delili\" nedir? Kısaca açıklayınız.",
+    "cevap": "Hudûs delili, evrenin yaratılmış olduğu ve her yaratılmışın da bir yaratıcıya muhtaç olduğundan hareketle Allah’ın varlığını ispata çalışan bir delildir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 4,
+    "soru": "“Rabbiniz gökleri ve yeri altı günde yaratan, sonra arşa hükmeden, gündüzü durmadan kovalayan gece ile bürüyen; güneşi, ayı, yıldızları hepsini buyruğuna boyun eğdirerek var eden Allah’tır. Bilin ki yaratma da emr de O’na aittir” (elA‘râf 7/54). ayeti Allah'ın varlığını kanıtlayan hangi delile temas eder?",
+    "cevap": "Hudûs Delili",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 5,
+    "soru": "Hudûs delilinin ilk defa kimler tarafından kullanıldığı bilinmektedir?",
+    "cevap": "Mu’tezile kelâmcıları tarafından",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 6,
+    "soru": "Hudûs deliline zayıf delil olduğu yönünde eleştiriler yönelten İslam filozofları kimlerdir?",
+    "cevap": "İbn Rüşd ve İbn Sina gibi İslam filozofları",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 7,
+    "soru": "Zorunlu (vâcib) varlık nedir? Kısaca açıklayınız.",
+    "cevap": "Varlığı kendinden olan ve varolmak için bir başkasına muhtaç olmayan varlıktır. Bu özellik sadece Allah’ta mevcuttur.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 8,
+    "soru": "Zorunsuz (mümkün) varlık nedir? Kısaca açıklayınız.",
+    "cevap": "Mümkün varlık kendi kendisini var edici güce sahip olmayan ve var olmak için bir başkasına ihtiyaç duyan varlıktır. Bu nedenle varlık ve yokluğu birbirine eşit olan mümkün varlığın meydana gelmesi için, onun varlığını yokluğuna tercih edecek bir gücün olması zorunludur. Çünkü mümkün olan varlıklar, kendi kendilerinin varlık sebebi olamazlar. Kâinatı oluşturan canlılar da mümkün statüsündedir. Bu nedenle bu nesnelerin var olmaları bir varlığın onları tercih ederek var etmesine bağlıdır.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 9,
+    "soru": "Allah'ın varlığını kanıtlayan delillerden olan, temelde evrende bir düzenin olduğu ve bu düzendeki her varlığın belirli bir gayeye yönelik olarak yaratıldığı öncülünden hareket eden ve bu düzenin kendiliğinden meydana gelemeyeceği dolayısıyla da bir yapıcısının olması gerektiği sonucuna ulaşan delile ne ad verilir?",
+    "cevap": "Gaye ve Nizam Delili adı verilir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 10,
+    "soru": "Hangi İslam filozofu Gaye ve Nizam delilini \"hikmet ve inâyet delili\" olarak tanımlamıştır?",
+    "cevap": "İbn Rüşd",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 11,
+    "soru": "El-Evvel, es-Samed, el-Kuddüs, el-Celîl gibi isimler Allah'ın hangi tür isimlerindendir?",
+    "cevap": "Zâtî isimler, diğer bir ifade ile mutlak manada Allah’ın zatını ilgilendiren isimlerdir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 12,
+    "soru": "Selbî sıfatların hedefi nedir?",
+    "cevap": "Selbî sıfatların hedefi her türlü şirk şâibesini bertaraf ederek tevhid inancını tam manasıyla ispat etmek, yaratanla yaratılan arasında ortak bir noktanın bulunmadığını akıllara ve gönüllere yerleştirmektir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 13,
+    "soru": "Allah'ın selbî/ tenzihî sıfatlarından olan \"muhâlefetün li’l-havâdis\" ne anlama gelir?",
+    "cevap": "Allah’ın sonradan olan yaratıklara benzememesidir. Allah statü olarak yaratılmışlık özelliği taşıyan her şeyden uzaktır. “Hiçbir şey onun benzeri değildir” (eş-Şûrâ 42/11).",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 14,
+    "soru": "Allah'ın selbî/ tenzihî sıfatlarından olan \"kıyam binefsihî\" ne anlama gelir?",
+    "cevap": "Allah’ın kendisiyle kâim olması ve bu hususta başkasına ihtiyaç duymamasıdır. 15. Allah'ın selbî/ tenzihî sıfatlarından olan \"kıdem\" ne anlama gelir? Cevap: Allah’ın varlığının başlangıcının olmamasıdır.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 16,
+    "soru": "Allah'ın selbî/ tenzihî sıfatlarından olan \"beka\" ne anlama gelir?",
+    "cevap": "Allah’ın varlığının sonunun olmamasıdır.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 17,
+    "soru": "Allah'ın sübûtî sıfatlarından olan \"Semî\" ne anlama gelir?",
+    "cevap": "Yüce Allah’ın her şeyi işitmesidir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 18,
+    "soru": "Allah'ın sübûtî sıfatlarından olan \"Basîr\" ne anlama gelir?",
+    "cevap": "Allah’ın her şeyi görmesidir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 19,
+    "soru": "Allah'ın sübûtî sıfatlarından olan \"irade\" ne anlama gelir?",
+    "cevap": "Allah’ın dilemesi ve istemesi anlamına gelir.",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 3,
+    "unit_title": "Allah İnancı",
+    "question_no": 20,
+    "soru": "Allah'ın sübûtî sıfatlarından olan \"ilim\" ne anlama gelir?",
+    "cevap": "Allah Teâlâ’nın bilme sıfatıdır. O, gizli-açık, yakın-uzak, küçük-büyük her şeyden sonsuz ve sınırsız olan ilmiyle haberdardır. Sıra-(Soruid) 1-(4040337) 2-(4040338) 3-(4040339) 4-(4040340) 5-(4040341) 6-(4040342) 7-(4040343) 8-(4040344) 9-(4040345) 10-(4040346) 11-(4040347) 12-(4040348) 13(4040349) 14-(4040350) 15-(4040351) 16-(4040352) 17-(4040353) 18-(4040354) 19-(4040355) 20-(4040357)",
+    "source_pdf": "aof_inanc_u3_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 1,
+    "soru": "Bir terim olarak melek nedir? Tanımlayınız.",
+    "cevap": "Allah tarafından yaratılan, çeşitli şekillerde görünebilen, zor işlere güç yetirme özelliğine sahip, ancak iyi nitelikte işler yapabilen, erkeklik ve dişilik vasıfları bulunmayan ve Allah’a itaatten ayrılmayan nurani varlıkların adıdır.",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 2,
+    "soru": "Ayet ve hadislerde geçen ifadelerden hareketle meleklerin özellikleri nelerdir? Sıralayınız.",
+    "cevap": "Ayet ve hadislerde geçen ifadelerden hareketle meleklerin özelliklerini şu şekilde sıralamak mümkündür:1. Melekler nurdan yaratılmış varlıklardır.2. Meleklerde erkeklik ve dişilik özelliği yoktur.3. Melekler, yorulma, usanma vb. bedensel özelliklerden arınmışlardır.4. Melekler; Allah’a isyan etmeyen, O’nun emrinden dışarı çıkmayan, kendileri için öngörülen görevleri eksiksiz yapan ve asla günah işlemeyen varlıklardır.5. Melekler son derece güçlü ve üstün özelliklere sahip varlıklardır.6. Bir ayette meleklerin kanatları olduğu belirtilmektedir. 7. Normal şartlarda gözle görünmeyen melekler, Allah’ın emir ve izni ile çeşitli şekillere girebilmektedirler.8. Melekler de diğer varlıklar gibi gaybı bilemezler.",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 3,
+    "soru": "Allah tarafından meleklere verilen görevler nelerdir? Sıralayınız.",
+    "cevap": "Allah tarafından meleklere verilen görevleri şöylece sıralamak mümkündür: a. Allah’ı hamd ile yüceltmekb. Peygamber’e salat ve selam getirmekc. Müminlere âhirette şefaat etmek ve insanlara dünyada hayır duada bulunmakd. İnsanları iyi işlere sevketmek, onları korumak amacıyla takip etmeke. Peygamberlere vahiy getirmekf. Peygamberlere ve müminlere maddî ve manevî destek olmakg. İnsanların yaptıklarını kaydetmekh. Tabiatın yönetimi ve ilâhî kanunların icrasıyla meşgul olmakı. İlâhî cezaları yerine getirmek",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 4,
+    "soru": "Kur’an’da âhirette müminleri selamlayarak karşılayacak olan cennet bekçilerinden (er-Ra‘d 13/23-24) ve cehennemlikleri korkutan görevli meleklerden (ez-Zümer 39/71-72) bahsedilmektedir. Bunlara genel olarak ne ad verilmiştir?",
+    "cevap": "Bunlara genel olarak “hâzin” adı verilmiştir",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 5,
+    "soru": "Cehennem bekçilerini temsil eden melek bir âyette hangi isimle anılmıştır?",
+    "cevap": "Mâlik",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 6,
+    "soru": "Cehennemde görevli meleklere ne ad verilir?",
+    "cevap": "Zebânî",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 7,
+    "soru": "Kur’an’da adı ya da vazifesi belirtilen meleklerden en önde gelenleri literatürde “dört büyük melek” olarak da zikredilen meleklerin isimleri nedir? Sıralayınız.",
+    "cevap": "Cebrâil Mikâil Azrâil İsrâfi",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 8,
+    "soru": "Eceli gelenlerin ruhunu kabzetmekle görevli olan meleğin özel adı nedir?",
+    "cevap": "Azrâil ise eceli gelenlerin ruhunu kabzetmekle görevli olan meleğin özel adıdır.",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 9,
+    "soru": "Tabiat olaylarıyla görevli meleğin adı nedir?",
+    "cevap": "Mikâil",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 10,
+    "soru": "İnsanları koruyan ve onların iyi ve kötü fiillerini kaydeden melekler hangi isimlerle anılır?",
+    "cevap": "Hafaza ve Kirâmen Kâtibîn Melekleri: Bu melekler insanları koruyan ve onların iyi ve kötü fiillerini kaydeden meleklerdir. Kur’ân’da bu melekler; koruyanlar, izleyenler, yazıcı elçiler, karşı karşıya olan iki melek, gözetleyip yazmaya hazır olanlar ve değerli yazıcılar şeklinde çeşitli ifadelerle nitelenmektedirler (bk. ez-Zuhruf 43/80; er-Ra‘d 13/10-11; Kâf 50/18; el-En‘âm 6/61).",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 11,
+    "soru": "Kur’an’da adı geçen ve Bâbil halkını imtihan etmek ve onları sihir konusunda bilinçlendirmek için gönderildiği belirtilen meleklerin isimleri nedir?",
+    "cevap": "Hârût-Mârût",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 12,
+    "soru": "Kabirde sorgu işi ile görevli olan melekler hangi isimle anılır?",
+    "cevap": "Münker-Nekîr 13. Allah tarafından melekler dışında, duyu organlarıyla algılanmayan başka latîf varlıkların bulunduğu Kur’ân’da bildirilmektedir. Bu zümre hangi varlıklardan oluşmaktadır? Cevap: Cinlerden ve şeytanlardan",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 14,
+    "soru": "Cin kelimesi ne anlama gelir? Açıklayınız.",
+    "cevap": "Sözlükte “örtme, gizleme” manasına gelen “cenne” fiilinden türeyen cin kelimesi, duyularla idrak edilemeyen ve insanlar gibi ilahî emirlere uymakla yükümlü tutulan varlık türünün adıdır.",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 15,
+    "soru": "Kur’ân-ı Kerim’de genel olarak cinlerle ilgili hangi bilgiler verilmektedir?",
+    "cevap": "Cinler de insanlar gibi Allah’a kulluk etmeleri için yaratılmıştır. Cinlere de peygamber gönderilmiş, bir kısmı iman etmiş, bir kısmı kâfir olarak kalmıştır. Son Peygamber olan Hz. Muhammed, insanlara olduğu gibi cinlere de Allah’tan aldığı emirleri iletmiştir. Cinler insanlara nispetle daha üstün bir güce sahiptirler. Meselâ kısa sürede uzun mesafeleri katedebilir, insanlarca görülmedikleri halde insanları görebilir, insanların bilmediği bazı hususları bilebilirler. Fakat geleceği (gayb) onlar da bilemezler. Cinler gökteki meleklerin konuşmalarından gizlice haber almak isterlerse de buna imkân verilmez. Cinler insanlarda olduğu gibi evlenip çoğalırlar, doğar, ölür, yer ve içerler. İblis de cinlerdendir ve onun insanların yanı sıra cinlerden de yardımcıları vardır. Bazı cinler, Hz. Süleyman’ın emrine girerek ordusunda hizmet görmüş, mabet, heykel, büyük çanak ve kazan gibi bazı nesnelerin yapımında insanlarla birlikte çalışmışlardır. Kur’an’da el-Cin (72/128) adıyla müstakil bir sure bulunmakta ve burada cinlerin kendi aralarında yaptıkları konuşmaların Peygambere vahyolunduğu bildirilmektedir.",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 16,
+    "soru": "Hadislerde de cinlerle ilgili hangi bilgiler verilmektedir?",
+    "cevap": "Her insanın yanında bir cin bulunduğu, bunların müminlere vesvese vermeye çalışırlarken, Kur’an okunan yerde bu etkilerini kaybettikleri bildirilmektedir. Ayrıca hadislerde Hz. Peygamberin cinlerle konuştuğu ifade edilmektedir.",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 17,
+    "soru": "Ateşten yaratılan, insanları saptırmaya çalışan, azgın, kibirli ve gözle görülmeyen ruhanî varlık hangi isimle anılır?",
+    "cevap": "Şeytan",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 18,
+    "soru": "Kur’ân-ı Kerîm’de bu manada geçen İblis kelimesinden iki önemli olay etrafında bahsedilmektedir. Bu olayları anlatınız.",
+    "cevap": "Kur’ân-ı Kerîm’de bu manada geçen İblis kelimesinden iki önemli olay etrafında bahsedilmektedir. Bunlardan ilki, Hz. Adem’in yaratılması sırasında meleklerin Adem’e secde etmesinin emredilmesi, ancak buna karşılık İblis adındaki varlığın kibirlenerek bu emre itaatsizlik etmesi ve bu sebeple Allah’ın rahmetinden kovulmasıdır. Diğeri ise İblis’in Cennet’te Adem ve Havva’yı kandırarak yasak meyveden yemelerini temin etmesi ve bunun üzerine onların Cennet’ten kovularak yeryüzüne inmelerine sebep olmasıdır",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 19,
+    "soru": "Kur’ân-ı Kerîm’de \"cin şeytanları\" ifadesi hangi anlamda kullanılmıştır?",
+    "cevap": "Müminlerin yanında bulunarak onlara vesvese vermeye çalışan cinler anlamında kullanılmıştır",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 4,
+    "unit_title": "Melek İnancı",
+    "question_no": 20,
+    "soru": "Kur’ân-ı Kerîm’de “insan şeytanları\" ifadesi hangi anlamda kullanılmıştır?",
+    "cevap": "“İnsan şeytanları “insan şeytanları\" e insanlara vesvese veren, onlara küfür telkin eden, azgın ve aldatıcı kişilere işaret etmektedir. Sıra-(Soruid) 1-(4040417) 2-(4040418) 3-(4040419) 4-(4040420) 5-(4040421) 6-(4040422) 7-(4040423) 8-(4040424) 9-(4040425) 10-(4040428) 11-(4040426) 12-(4040427) 13(4040429) 14-(4040430) 15-(4040431) 16-(4040432) 17-(4040433) 18-(4040434) 19-(4040435) 20-(4040436)",
+    "source_pdf": "aof_inanc_u4_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 1,
+    "soru": "Kitaplara imanı tanımlayınız.",
+    "cevap": "Kitaplara imanı, Allah Taâlâ tarafından bazı peygamberlere kitaplar vahyolunduğuna ve bu kitaplarda bulunan şeylerin hepsinin doğru ve hak olduğuna inanmak veya Allah’ın peygamberlere inanç, ibadet, ahlâkın yanı sıra birey ve toplumla ilgili hükümler içeren metinler vahyettiğine kesin olarak iman etmek diye tanımlamak mümkündür.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 2,
+    "soru": "Allah’ın kendi iradesini çeşitli yollarla seçmiş olduğu peygamberlere bildirmesine ne ad verilir?",
+    "cevap": "Vahiy denir.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 3,
+    "soru": "Vahyi terim olarak tanımlayınız.",
+    "cevap": "Vahyi terim olarak, Allah’ın, peygamberlerine dilediği bilgileri doğrudan veya bir vasıta ile kendisinden geldiğine şüphe edilmeyecek şekilde ve alışılmamış bir tarzda gizlice bildirmesi diye tanımlamak mümkündür.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 4,
+    "soru": "İlahi hitabın şekilleri nelerdir? Sıralayınız.",
+    "cevap": "Doğrudan Vahyetme Perde Arkasından Konuşmak Elçi ile Vahiy",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 5,
+    "soru": "Suhûf nedir? Açıklayınız.",
+    "cevap": "Suhûf sahife kelimesinin çoğulu olup yazılı kâğıt parçaları anlamına gelmektedir.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 6,
+    "soru": "Hz. Musa’ya indirilen kitabın adı nedir?",
+    "cevap": "Tevrat",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 7,
+    "soru": "Tevrat'ın kelime anlamı nedir?",
+    "cevap": "Tevrat kanun, şeriat anlamlarına gelir.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 8,
+    "soru": "Yahudilerin kutsal metni Tanah’ın ilk bölümünü oluşturan Tevrat beş bölümden meydana gelmektedir. Bu bölümlerin isimleri nelerdir? Sıralayınız.",
+    "cevap": "Tekvin (Yaratılış)Hurûc (Çıkış)LevililerA‘dât (Sayılar)Tesniye",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 9,
+    "soru": "Yahudiliğin kutsal kitabını Hıristiyanlar nasıl isimlendirir?",
+    "cevap": "Yahudiliğin kutsal kitabını Hıristiyanlar Eski Ahid (Old Testament) diye isimlendirirler.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 10,
+    "soru": "Yahudilerim ise kendi kutsal yazılarını ifade etmek için kullandıkları kelime nedir?",
+    "cevap": "Tanah",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 11,
+    "soru": "Yahudilerin kutsal metni Tanah’ın ilk bölümünü oluşturan Tevrat'ın beş bölümünden biri olan ve ibadetler, dinî ayin ve bayramlar, günahların kefareti, yiyecekler, kurbanlar, evlilik gibi konulara ait hükümleri konu eden bölümün adı nedir?",
+    "cevap": "Levililer",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 12,
+    "soru": "Yahudilerin kutsal metni Tanah’ın ilk bölümünü oluşturan Tevrat'ın beş bölümünden biri olan ve i İsrâiloğulları’nın çöldeki hayatları, Hz. Musa’nın vefatından sonra onların Sina dağından ayrılıp Kenan ülkesine girmeleri sürecini ele alan bölümün adı nedir?",
+    "cevap": "A‘dât (Sayılar)",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 13,
+    "soru": "Zebûr n Allah tarafından hangi peygambere indirilmiştir?",
+    "cevap": "Müslümanların Allah tarafından Hz. Dâvûd’a Zebûr isimli bir kitabın indirildiğine inanmaları gerekir. 14. Son üçyüz yıldır Hırsitiyan araştırmacılar tarafından Kitâb-ı Mukaddes’in metnine yönelik gerçekleştirilen çalışmalar neticesinde Tanah (Eski Ahid) kitaplarının pek çok nüshasının bulunduğu ve Tevrat’ın dahi farklı kaynaklardan derlendiği ileri sürülmüştür. Julius Welhausen (ö. 1918) Tevrat’ın kaynaklarına ilişkin görüşünü açıklayınız. Cevap: Julius Welhausen (ö. 1918) Tevrat’ın, J harfi ile temsil edilen Yahvist (Milâttan önce X. yüzyıla dayanmaktadır), E harfi ile temsil edilen Elohist (m.ö. IX. yüzyıl), D harfi ile temsil edilen Tesniye (m.ö. VIII. yüzyıl), P harfi ile temsil edilen Din adamları (m.ö. VI. yüzyıl) şeklinde dört kaynağının bulunduğunu ileri sürmüştür.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 15,
+    "soru": "Yahudiliğin kutsal kitabı olan Tanah’ı oluşturan kitapların liste halinde resmen onaylanması da (kanonizasyon) ne zaman gerçekleşmiştir?",
+    "cevap": "Milâttan sonra 90-100 yıllarında toplanan Jamnia Sinodu’nda gerçekleşmiştir.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 16,
+    "soru": "Hıristiyanlığın ilk çağlarında birbirini tutmayan yüzlerce farklı İncîl ortaya çıktı. Her grup ve toplumun kendine has bir İncil’i bulunmaktaydı. Buna göre Yunanistan’daki Hıristiyanlar hangi İncil'i kullanmışlardır?",
+    "cevap": "Luka İncili",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 17,
+    "soru": "Hıristiyanlığın ilk çağlarında birbirini tutmayan yüzlerce farklı İncîl ortaya çıktı. Her grup ve toplumun kendine has bir İncil’i bulunmaktaydı. Buna göre Suriye’deki Hıristiyanlar hangi İncil'i kullanmışlardır?",
+    "cevap": "Matta İncili",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 18,
+    "soru": "Hıristiyanlığın ilk çağlarında birbirini tutmayan yüzlerce farklı İncîl ortaya çıktı. Her grup ve toplumun kendine has bir İncil’i bulunmaktaydı. Buna göre Roma’daki Hıristiyanlar hangi İncil'i kullanmışlardır?",
+    "cevap": "Markos İncili",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 19,
+    "soru": "Yeni Ahid’i oluşturan kitaplar aynı zamanda ortaya çıkmış ve aynı tarihte yazılmış olmayıp, uzun süre şifahî olarak nakledilmiş, daha sonra yazıya geçirilmiştir. Markos’un İncîli hangi yıllara tarihlendirilmiştir?",
+    "cevap": "Markos’un İncîli 65-70'li yıllara tarihlendirilmiştir.",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  },
+  {
+    "course": "inanc",
+    "unit_no": 5,
+    "unit_title": "Kutsal Kitap İnancı",
+    "question_no": 20,
+    "soru": "Yeni Ahid kitaplarının resmen tanınması (kanonizasyon) süreci nasıl gerçekleşmiştir? Açıklayınız.",
+    "cevap": "Yeni Ahid kitaplarının resmen tanınması (kanonizasyon) süreci de uzun bir süreyi kapsamaktadır. İlk dönem hıristiyanlar kutsal kitap olarak Eski Ahid metinlerini kullanmışlardır. Kilise babalarının yazılarından anlaşıldığına göre ikinci asrın ilk yıllarında Hıristiyanların bulunduğu farklı bölgelerde farklı İnciller kullanılıyordu. IV. asrın ikinci yarısında Grek kiliselerinde muhtelif listeler hazırlanmıştır. Bunlardan bir kısmı Yuhanna’nın dışındaki kitapları kendi listelerine almış, bir kısmı ise Vahiy kitabını da listelerine katmıştır. Grek kilisesinde Yeni Ahid’in listesi IV. yüzyılın ikinci yarısında tespit edilmiştir. Vahiy kitabıyla ilgili tartışmalar da VII. asra kadar devam etmiştir. Nihaî olarak ise 8 Nisan 1546’da Trente Konsili’nde Yeni Ahid’e ait liste bugünkü şekliyle resmen ilân edilmiştir. Sıra-(Soruid) 1-(4040437) 2-(4040438) 3-(4040439) 4-(4040440) 5-(4040441) 6-(4040442) 7-(4040443) 8-(4040444) 9-(4040445) 10-(4040446) 11-(4040455) 12-(4040456) 13(4040447) 14-(4040453) 15-(4040454) 16-(4040449) 17-(4040450) 18-(4040451) 19-(4040452) 20-(4040448)",
+    "source_pdf": "aof_inanc_u5_sorularla_ogrenelim_qa.pdf"
+  }
+]

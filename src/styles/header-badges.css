@@ -29,8 +29,7 @@ body.fullscreen-focus-mode .top-center-badge-container {
 .top-prayer-pill,
 .top-streak-pill,
 .top-view-pill,
-.top-filter-pill,
-.top-unified-pill {
+.top-filter-pill {
   pointer-events: auto;
   background: var(--badge-bg);
   backdrop-filter: blur(10px);

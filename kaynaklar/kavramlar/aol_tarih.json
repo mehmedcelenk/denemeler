@@ -1,0 +1,968 @@
+[
+  {
+    "id": "tar1_tarih_bilimi",
+    "term": "Tarih Bilimi",
+    "sayfa": 12,
+    "tanim": "Tarih, geçmişteki insan topluluklarının izini **yer ve zaman** damgasıyla, **belgeye** dayanarak ve **neden-sonuç** zinciriyle süren bir dedektifliktir; tıpkı bir cinayet mahallinde delil toplayan polis gibi, geçmişin izlerini nesnel biçimde çözer.\n💡 Sınav Şifresi: 'Yer + zaman + belge + neden-sonuç + nesnel' beşlisi varsa Tarih Bilimi; biri eksikse (özellikle 'belge' veya 'nesnellik') tuzak şık.",
+    "pattern": "tarih bilimi[a-zçğıöşü]*|tarihsel bilgi[a-zçğıöşü]*|tarih araştırmalarında"
+  },
+  {
+    "id": "tar1_tarihsel_olay_olgu",
+    "term": "Tarihî Olay ve Olgu",
+    "sayfa": 15,
+    "tanim": "**Olay** bir fotoğraf karesidir (kısa, somut, başlangıç-bitişi belli: Malazgirt Savaşı); **olgu** ise o karelerden oluşan uzun bir film şerididir (soyut, süreç: Anadolu'nun Türkleşmesi).\n💡 Sınav Şifresi: 'Savaş, antlaşma, fetih, ölüm' → OLAY; 'göç, yayılış, Türkleşme, İslamlaşma, gelişme' → OLGU. Tek tarih varsa olay, süreç varsa olgu.",
+    "pattern": "tarihsel olgu[a-zçğıöşü]*|tarihî olgu[a-zçğıöşü]*|tarihî olay"
+  },
+  {
+    "id": "tar1_arastirma_basamaklari",
+    "term": "Tarih Araştırma Basamakları (5T)",
+    "sayfa": 18,
+    "tanim": "Tarihçi 5T ile çalışır: **Tarama** (kaynak bul) → **Tasnif** (sınıflandır) → **Tahlil** (çözümle) → **Tenkit** (eleştir, güvenilirliği test et) → **Terkip** (sentezle yaz); tıpkı bir dedektifin delil toplayıp, ayıklayıp, raporu yazması gibi.\n💡 Sınav Şifresi: Sıralama sorusunda 'T' harfleri: **Ta**rama-Ta**s**nif-**Ta**hlil-**Te**nkit-**Te**rkip. Tenkit (eleştiri) olmadan terkip (yazım) olmaz — en çok karıştırılan sıra budur.",
+    "pattern": "tarihî araştırmaların aşamaları|kaynaklara atıf yapılması|verileri analiz etme|verileri düzenleme|araştırma ve veri toplama"
+  },
+  {
+    "id": "tar1_epigrafi",
+    "term": "Epigrafi (Yazıt Bilimi)",
+    "sayfa": 22,
+    "tanim": "Epigrafi, taş, mermer ve metal **kitabeler** üzerindeki yazıları okuyan bilimdir; Orhun Kitabeleri'ni çözen dedektif gibi, dikili taşlardaki mesajı gün yüzüne çıkarır.\n💡 Sınav Şifresi: 'Kitabe, yazıt, taş, anıt, mezar taşı' → EPİGRAFİ. (Kâğıt belge değil, taşa kazınmış yazı!)",
+    "pattern": "^Epigrafi$|\\\\\\\\bepigrafi\\\\\\\\b|\\\\\\\\byazıt bilimi\\\\\\\\b"
+  },
+  {
+    "id": "tar1_numizmatik",
+    "term": "Nümizmatik (Meskukat / Para Bilimi)",
+    "sayfa": 23,
+    "tanim": "Nümizmatik, tarihte basılmış **para ve sikkeleri** inceleyerek devletin ekonomik gücünü, hükümdar adlarını ve sınırlarını okur; bir paranın üzerindeki yazı ve maden, o dönemin kimlik kartıdır.\n💡 Sınav Şifresi: 'Sikke, para, meskukat, madalyon' → NÜMİZMATİK. Ekonomik güç ve hükümdar tespiti sorularında bu şık.",
+    "pattern": "^Nümizmatik$|^Nümismatik$|\\\\\\\\bnümizmatik\\\\\\\\b|\\\\\\\\bnümismatik\\\\\\\\b|\\\\\\\\bmeskukat\\\\\\\\b"
+  },
+  {
+    "id": "tar1_paleografya",
+    "term": "Paleografya (Yazı Bilimi)",
+    "sayfa": 22,
+    "tanim": "Paleografya, eski **alfabeleri ve el yazılarını** çözen bilimdir; bugünkü harflerle okuyamadığın Göktürk veya Osmanlı metnini şifre çözer gibi açığa çıkarır.\n💡 Sınav Şifresi: 'Eski yazı, alfabe, el yazması belge' → PALEOGRAFYA. DİKKAT: Yazı olmayan (yazısız) dönemlerde kullanılamaz — bu tuzağı kaçırma.",
+    "pattern": "^Paleografya$|\\\\\\\\bpaleografya\\\\\\\\b"
+  },
+  {
+    "id": "tar1_arkeoloji",
+    "term": "Arkeoloji (Kazı Bilimi)",
+    "sayfa": 21,
+    "tanim": "Arkeoloji, toprak veya su altında kalmış **maddi kalıntıları kazıyla** çıkarır; yazının olmadığı devirlerin tek kurtarıcısıdır, çünkü taş ve kemik konuşur.\n💡 Sınav Şifresi: 'Kazı, kalıntı, alet, yazısız dönem' → ARKEOLOJİ. Yazısız devirlerin birincil kaynağıdır — bu ifadeyi görünce arkeolojiyi işaretle.",
+    "pattern": "^Arkeoloji$|\\\\\\\\barkeoloji\\\\\\\\b|\\\\\\\\barkeolojik kazı\\\\\\\\b|\\\\\\\\barkeolojik çalışma\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kronoloji",
+    "term": "Kronoloji (Zaman Bilimi)",
+    "sayfa": 21,
+    "tanim": "Kronoloji, olayları **zamana göre sıraya** dizer; GPS'in rotayı adım adım göstermesi gibi, tarihin zaman çizelgesini kurar ve neden-sonuç bağını görünür kılar.\n💡 Sınav Şifresi: 'Zaman, sıralama, tarih çizelgesi, takvim' → KRONOLOJİ. 'Hangi olay önce/sonra' tipi soruların anahtarı.",
+    "pattern": "^Kronoloji$|\\\\\\\\bkronoloji\\\\\\\\b|\\\\\\\\bölçülebilir zaman\\\\\\\\b"
+  },
+  {
+    "id": "tar1_filoloji",
+    "term": "Filoloji (Dil Bilimi)",
+    "sayfa": 23,
+    "tanim": "Filoloji, dillerin tarihsel gelişimini ve **kelime alışverişlerini** inceleyerek toplumların kökenini ve kültürel etkileşimini ortaya koyar; iki dil arasındaki ortak kelimeler, iki halkın akrabalık DNA'sıdır.\n💡 Sınav Şifresi: 'Dil, kelime, alfabe akrabalığı, kültürel etkileşim' → FİLOLOJİ. Paleografya (yazı okuma) ile karıştırma; filoloji DİLİN kendisini inceler.",
+    "pattern": "^Filoloji$|\\\\\\\\bfiloloji\\\\\\\\b|\\\\\\\\bdil bilimi\\\\\\\\b"
+  },
+  {
+    "id": "tar1_miladi_takvim",
+    "term": "Miladi Takvim",
+    "sayfa": 28,
+    "tanim": "Miladi Takvim **Güneş yılı** (365 gün 6 saat) esaslıdır ve başlangıcı **Hz. İsa'nın doğumu** kabul edilir; Türkiye'de **1 Ocak 1926**'dan beri kullanılır.\n💡 Sınav Şifresi: 'Güneş yılı + Hz. İsa + 1926' üçlüsü → MİLADİ. Türkiye'nin bugünkü resmî takvimidir; 'güneş' kelimesini görünce miladi/Celali ayrımına dikkat.",
+    "pattern": "^Miladi$|^Miladi takvim$|\\\\\\\\bmiladi takvim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bmiladi\\\\\\\\b|\\\\\\\\bgregoryen takvimi\\\\\\\\b"
+  },
+  {
+    "id": "tar1_hicri_takvim",
+    "term": "Hicri Takvim",
+    "sayfa": 27,
+    "tanim": "Hicri Takvim **Ay yılı** (354 gün) esaslıdır ve başlangıcı **Hz. Muhammed'in hicreti (622)** kabul edilir; **Hz. Ömer** Dönemi'nde oluşturulmuştur.\n💡 Sınav Şifresi: 'Ay yılı + 622 + Hz. Ömer' üçlüsü → HİCRİ. Türklerin kullandığı **tek ay yılı esaslı** takvimdir — bu ayrıntı sıkça sorulur.",
+    "pattern": "^Hicri$|^Hicri takvim$|\\\\\\\\bhicri takvim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bhicri\\\\\\\\b"
+  },
+  {
+    "id": "tar1_celali_takvim",
+    "term": "Celali Takvim",
+    "sayfa": 27,
+    "tanim": "Celali Takvim, **Büyük Selçuklu Sultanı Melikşah** adına **Ömer Hayyam** başkanlığındaki heyetçe hazırlanan **Güneş yılı** esaslı tarım ve maliye takvimidir.\n💡 Sınav Şifresi: 'Melikşah + Ömer Hayyam + Güneş yılı + maliye/tarım' dörtlüsü → CELALİ. Miladi ile karıştırma; Celali'de başlangıç Hz. İsa değil, Melikşah dönemidir.",
+    "pattern": "^Celali$|^Celali takvim$|\\\\\\\\bcelali takvim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\bcelali\\\\\\\\b"
+  },
+  {
+    "id": "tar1_rumi_takvim",
+    "term": "Rumi Takvim",
+    "sayfa": 28,
+    "tanim": "Osmanlı'da **mali işlerdeki karışıklığı çözmek** için Güneş yılına geçilen, ama başlangıcı yine **Hicret (622)** olan melez takvimdir; yani 'yıl hesabı Güneş, milat hesabı Hicret'.\n💡 Sınav Şifresi: 'Mali işler + Güneş yılı + başlangıç Hicret' üçlüsü → Rumi Takvim. Hicri'den farkı Güneş yılı, Miladi'den farkı Hicret başlangıcı.",
+    "pattern": "^Rumi$|^Rumi takvim$|\\\\\\\\brumi takvim[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\brumi\\\\\\\\b"
+  },
+  {
+    "id": "tar1_oniki_hayvanli_takvim",
+    "term": "12 Hayvanlı Türk Takvimi",
+    "sayfa": 26,
+    "tanim": "İslamiyet öncesi Türklerin **Güneş yılı** esaslı takvimidir; her yıl bir hayvan adıyla (Sıçan, Pars, Tavşan...) anılır ve **12 yılda bir döngü** tamamlanır — tıpkı bugün Çin burçları gibi.\n💡 Sınav Şifresi: '12 hayvan + Güneş yılı + İslamiyet öncesi' → 12 Hayvanlı Türk Takvimi. Hicri (Ay yılı) ve Rumi (Hicret başlangıçlı) ile karıştırma.",
+    "pattern": "12 hayvanlı türk takvimi|on iki hayvanlı türk takvimi|oniki hayvanlı"
+  },
+  {
+    "id": "tar1_gobeklitepe",
+    "term": "Göbeklitepe",
+    "sayfa": 36,
+    "tanim": "Şanlıurfa'da, günümüzden **12 bin yıl önce** dikilmiş 'T' biçimli taşlarıyla dünyanın bilinen **en eski anıtsal tapınak merkezi**; yani insanlığın 'önce yerleşti sonra tapındı' tezini tersine çeviren yer.\n💡 Sınav Şifresi: 'En eski tapınak + T biçimli dikilitaş + Şanlıurfa' → Göbeklitepe. Yerleşme değil, **tapınak** vurgusu ayırt ettirir.",
+    "pattern": "^Göbeklitepe$|\\\\\\\\bgöbeklitepe\\\\\\\\b|\\\\\\\\bgobeklitepe\\\\\\\\b"
+  },
+  {
+    "id": "tar1_catalhoyuk",
+    "term": "Çatalhöyük",
+    "sayfa": 38,
+    "tanim": "Konya Çumra'da, Neolitik Çağ'a ait **damdan girişli bitişik evleriyle** insanlığın ilk şehir yerleşmesi sayılan merkez; sokak yok, evler sırt sırta — adeta petek gibi.\n💡 Sınav Şifresi: 'Damdan girilen ev + ilk şehir + Konya' → Çatalhöyük. Göbeklitepe (tapınak) ve Çayönü (ilk köy) ile karıştırma.",
+    "pattern": "^Çatalhöyük$|\\\\\\\\bçatalhöyük\\\\\\\\b|\\\\\\\\bcatalhoyuk\\\\\\\\b"
+  },
+  {
+    "id": "tar1_canyonu",
+    "term": "Çayönü",
+    "sayfa": 37,
+    "tanim": "Diyarbakır Ergani'de, **tahıl üretimi ve hayvan evcilleştirmesiyle** Türkiye'nin ilk köy yerleşmesi sayılan, ayrıca **bakırın ilk işlendiği** alan — yani tarım devriminin Anadolu'daki mutfağı.\n💡 Sınav Şifresi: 'İlk köy + ilk bakır işçiliği + Diyarbakır' → Çayönü. Çatalhöyük 'ilk şehir', Çayönü 'ilk köy' — bu ayrım altın kural.",
+    "pattern": "^Çayönü$|\\\\\\\\bçayönü\\\\\\\\b|\\\\\\\\bcayonu\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kultepe",
+    "term": "Kültepe (Kaniş)",
+    "sayfa": 42,
+    "tanim": "Kayseri'de, Asur ticaret kolonileri sayesinde Mezopotamyalı tüccarların getirdiği **ilk çivi yazılı kil tabletlerin** bulunduğu, böylece **Anadolu'da Tarih Çağlarını başlatan** merkez.\n💡 Sınav Şifresi: 'Kayseri + ilk yazılı tablet + Anadolu'da tarih çağlarının başlangıcı' → Kültepe (Kaniş). Anadolu'da yazıyı başlatan yer olarak kodla.",
+    "pattern": "^Kültepe$|\\\\\\\\bkültepe\\\\\\\\b|\\\\\\\\bkultepe\\\\\\\\b|\\\\\\\\bkaniş\\\\\\\\b"
+  },
+  {
+    "id": "tar1_hacilar",
+    "term": "Hacılar",
+    "sayfa": 39,
+    "tanim": "Burdur yakınlarında, **etrafı surlarla çevrili** savunma mimarisi ve gelişmiş **seramik çanak çömlekleriyle** öne çıkan Neolitik-Kalkolitik yerleşme; yani 'malımı korumak için duvar ördüm' döneminin temsilcisi.\n💡 Sınav Şifresi: 'Burdur + sur + seramik' → Hacılar. Savunma duvarı ve çanak çömlek vurgusu diğerlerinden ayırır.",
+    "pattern": "^Hacılar$|\\\\\\\\bhacılar\\\\\\\\b|\\\\\\\\bhacilar\\\\\\\\b"
+  },
+  {
+    "id": "tar1_aslantepe",
+    "term": "Arslantepe (Aslantepe)",
+    "sayfa": 40,
+    "tanim": "Malatya'da, **kerpiç saray kompleksi, mühür baskıları ve tarihin en eski kılıçlarıyla** bürokrasi ve devletleşmenin ilk adımlarının görüldüğü höyük — adeta devletin 'kurumsallaşma' belgesi.\n💡 Sınav Şifresi: 'Malatya + mühür + en eski kılıç + saray' → Arslantepe. Mühür = bürokrasi, kılıç = ordu/savaş; bu iki anahtar kelime yeter.",
+    "pattern": "^Aslantepe$|^Arslantepe$|\\\\\\\\barslantepe\\\\\\\\b|\\\\\\\\baslantepe\\\\\\\\b"
+  },
+  {
+    "id": "tar1_tunc_cagi",
+    "term": "Tunç Çağı",
+    "sayfa": 44,
+    "tanim": "**Bakır ile kalayın karıştırılmasıyla tunç alaşımının** elde edildiği; ilk şehir devletlerinin, orduların ve surların ortaya çıktığı maden devri — yani 'daha sert metal, daha güçlü devlet' dönemi.\n💡 Sınav Şifresi: 'Bakır + kalay = tunç' formülü ve 'ilk şehir devletleri + surlar' → Tunç Çağı. Bakır (Kalkolitik) ve Demir Çağı ile karıştırma.",
+    "pattern": "^Tunç Çağı$|\\\\\\\\btunç çağı\\\\\\\\b|\\\\\\\\btunç devri\\\\\\\\b"
+  },
+  {
+    "id": "tar1_sumerler",
+    "term": "Sümerler",
+    "sayfa": 52,
+    "tanim": "MÖ 3200'de **çivi yazısını icat ederek Tarih Çağlarını başlatan**; 'Site' şehir devletleri, **Ziggurat** tapınakları ve tarihin ilk yazılı kanunlarıyla (Urkagina) tanınan Mezopotamya uygarlığı.\n💡 Sınav Şifresi: 'Çivi yazısı + Ziggurat + Site + Urkagina' dörtlüsü → Sümerler. Yazıyı bulan uygarlık olarak kodla; Babil (Hammurabi) ile kanun konusunda karıştırma.",
+    "pattern": "^Sümerler$|\\\\\\\\bsümerler\\\\\\\\b|\\\\\\\\bsümer\\\\\\\\b|\\\\\\\\bsümerlerin\\\\\\\\b"
+  },
+  {
+    "id": "tar1_asurlar",
+    "term": "Asurlar",
+    "sayfa": 55,
+    "tanim": "**Anadolu'ya yazıyı getiren** Mezopotamya uygarlığıdır; tüccarlar gibi Kültepe'de (Kaniş) ticaret kolonileri kurup **çivi yazısını** Anadolu'ya taşıdılar, başkent Ninova'da ise tarihin ilk kütüphanesini (Asurbanipal) açtılar.\n💡 Sınav Şifresi: \"Anadolu'ya yazıyı getiren\" + \"Kültepe/Kaniş\" + \"ilk kütüphane Ninova\" üçlüsü Asurları işaret eder; yazının Anadolu'ya gelişi = **Tarih Devirlerinin başlangıcı**.",
+    "pattern": "^Asur$|^Asurlar$|\\\\\\\\basur uygarlığı\\\\\\\\b|\\\\\\\\basurlar\\\\\\\\b|\\\\\\\\basur\\\\\\\\b"
+  },
+  {
+    "id": "tar1_babiller",
+    "term": "Babiller",
+    "sayfa": 54,
+    "tanim": "**Hammurabi Kanunları** ile tanınan Mezopotamya uygarlığıdır; \"**kısasa kısas**\" (göze göz, dişe diş) esasına dayanan bu sert kanunlar tarihin ilk anayasa niteliğindeki belgeleri sayılır, ayrıca **Babil Kulesi** ve **Asma Bahçeleri** ile ünlüdürler.\n💡 Sınav Şifresi: \"Kısasa kısas\" + \"Hammurabi\" + \"Babil Kulesi/Asma Bahçeleri\" = Babiller; kanunun **sertliği** onları Sümerlerin yumuşak Urgakina kanunlarından ayırt ettirir.",
+    "pattern": "^Babil$|^Babiller$|\\\\\\\\bbabiller\\\\\\\\b|\\\\\\\\bbabil\\\\\\\\b"
+  },
+  {
+    "id": "tar1_hititler",
+    "term": "Hititler",
+    "sayfa": 60,
+    "tanim": "Anadolu'nun ilk büyük devleti olan Hititler, **Hattuşaş (Çorum)** başkentli, kralın yanında **Pankuş meclisi** ve **Tavananna** adlı kraliçenin söz sahibi olduğu, tanrılara hesap vermek için **tarafsız 'Anal' (yıllık)** yazan ve Mısır'la **Kadeş** barışını imzalayan uygarlıktır. Tıpkı bir şirketin yönetim kurulu (Pankuş) ve denetçi raporları (Anal) gibi düşün: kral tek başına değil, meclis ve kayıtla yönetirdi.\n💡 Sınav Şifresi: 'Pankuş + Tavananna + Anal + Kadeş' dörtlüsünü görürsen şık Hititler'dir; Anal'ın 'tarafsız' olması diğerlerinden ayırt edici anahtardır.",
+    "pattern": "^Hitit$|^Hititler$|\\\\\\\\bhititler\\\\\\\\b|\\\\\\\\bhitit\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kades_antlasmasi",
+    "term": "Kadeş Antlaşması (MÖ 1280)",
+    "sayfa": 62,
+    "tanim": "Hititler ile Mısırlıların **Kuzey Suriye** egemenliği için yaptığı savaşın ardından MÖ 1280'de imzalanan, tarihte bilinen **ilk yazılı barış antlaşmasıdır**. Bugün iki ülkenin savaşı bitirip 'ortak bildiri' imzalaması gibi düşün; ama bu, tarihte ilk kez kâğıda dökülen barıştır.\n💡 Sınav Şifresi: 'İlk yazılı barış' + 'Hitit-Mısır' + 'Kuzey Suriye' üçlüsü Kadeş'i kodlar; 'ilk yazılı antlaşma' ifadesi asla başka kavrama gitmez.",
+    "pattern": "kadeş antlaşması|kades antlasmasi"
+  },
+  {
+    "id": "tar1_frigler",
+    "term": "Frigler",
+    "sayfa": 64,
+    "tanim": "Başkenti **Gordion (Ankara)** olan Frigler, tarım ve hayvancılığı korumak için **öküz öldürenin idam edildiği** sert yasalar çıkarmış, **Kibele** bereketiyle, **Fibula** çengelli iğnesiyle ve **Tapates** halılarıyla ünlenmiştir. Bugün tarımı korumak için ağır cezalar koyan devlet gibi: ekmeğin kaynağını korumak hayati sayılırdı.\n💡 Sınav Şifresi: 'Gordion + öküz idamı + Fibula + Tapates + Kibele' beşlisi Frigler'in parmak izidir; özellikle 'öküz öldürenin idamı' tek başına yeter.",
+    "pattern": "^Frigler$|^Frig$|\\\\\\\\bfrigler\\\\\\\\b|\\\\\\\\bfrig\\\\\\\\b"
+  },
+  {
+    "id": "tar1_lidyalilar",
+    "term": "Lidyalılar",
+    "sayfa": 66,
+    "tanim": "Başkenti **Sardes (Manisa)** olan Lidyalılar, **Efes'ten Mezopotamya'ya** uzanan **Kral Yolu**'nda ticaret yapmış ve tarihte **ilk kez madeni parayı (sikkeyi)** icat etmiştir. Bugün nasıl banka kartı hayatı kolaylaştırdıysa, o dönem de para takası kolaylaştıran devrimdi.\n💡 Sınav Şifresi: 'Sardes + Kral Yolu + ilk madeni para' üçlüsü Lidyalılar'ı verir; 'parayı ilk bulan' ifadesi başka uygarlığa gitmez.",
+    "pattern": "^Lidya$|^Lidyalılar$|\\\\\\\\blidyalılar\\\\\\\\b|\\\\\\\\blidya\\\\\\\\b"
+  },
+  {
+    "id": "tar1_urartular",
+    "term": "Urartular",
+    "sayfa": 68,
+    "tanim": "Başkenti **Tuşpa (Van)** olan Urartular, **taş işçiliği, kale mimarisi, maden işlemeciliği** ve **Şamran sulama kanalları** ile tanınan Doğu Anadolu uygarlığıdır. Bugün Van'da hâlâ akan o kanallar, onların 'su mühendisliği' mirasıdır.\n💡 Sınav Şifresi: 'Tuşpa + Van + kale + Şamran kanalı' dörtlüsü Urartular'ı kodlar; 'sulama kanalı' geçen şıkta gözün Urartu'ya gitmeli.",
+    "pattern": "^Urartu$|^Urartular$|\\\\\\\\burartular\\\\\\\\b|\\\\\\\\burartu\\\\\\\\b"
+  },
+  {
+    "id": "tar1_misir_medeniyeti",
+    "term": "Mısır Medeniyeti",
+    "sayfa": 72,
+    "tanim": "**Nil Nehri** çevresinde kurulan Mısır Medeniyeti; **Nom** adlı şehir devletleri, **Firavun** tanrı-kralları, **hieroglif** yazısı, **papirüs**, **mumyalama** sayesinde gelişen tıp/anatomi ve **güneş takvimi** ile özgün bir uygarlıktır. Nil'in düzenli taşması onlara hem tarım hem takvim hem de 'ölümden sonra yaşam' inancını (mumya) getirdi.\n💡 Sınav Şifresi: 'Nil + Nom + Firavun + hieroglif + papirüs + mumya + güneş takvimi' yedi haneli Mısır şifresidir; 'Nom' kelimesi Mısır'ı diğerlerinden ayırır.",
+    "pattern": "^Mısır$|\\\\\\\\bmısır medeniyeti\\\\\\\\b|\\\\\\\\bmısır uygarlığı\\\\\\\\b|\\\\\\\\bmısır\\\\\\\\b"
+  },
+  {
+    "id": "tar1_fenikeliler",
+    "term": "Fenikeliler",
+    "sayfa": 76,
+    "tanim": "Doğu Akdeniz kıyısında **deniz koloniciliği** yapan Fenikeliler, günümüz **Latin, Grek ve Kiril** alfabelerinin atası olan **22 harfli Fenike alfabesini** icat eden tüccar topluluktur. Bugün ticaret için herkesin anladığı ortak bir kod (emoji/alfabe) gibi düşün: harfler, ticaretin ortak diliydi.\n💡 Sınav Şifresi: '22 harf + alfabenin atası + deniz ticareti' üçlüsü Fenikeliler'i verir; 'alfabeyi bulan' ifadesi başka kavrama gitmez.",
+    "pattern": "^Fenikeliler$|\\\\\\\\bfenikeliler\\\\\\\\b|\\\\\\\\bfenike\\\\\\\\b"
+  },
+  {
+    "id": "tar1_ibraniler",
+    "term": "İbraniler",
+    "sayfa": 78,
+    "tanim": "İbraniler, tarihte **tek tanrılı ilahi dine (Musevilik)** inanan ilk topluluk olup kutsal kitapları **Tevrat**'a dayalı **ilk dinî hukuk sistemini** kurmuşlardır. Bugün anayasalarda 'din ve vicdan özgürlüğü' nasıl temel ilkeyse, onlar da hukuku tek tanrı inancıyla şekillendirdiler.\n💡 Sınav Şifresi: 'İlk tek tanrılı din + Tevrat + ilk dinî hukuk' üçlüsü İbraniler'i kodlar; 'Musevilik' kelimesi tek başına yeter.",
+    "pattern": "^İbrani$|^İbraniler$|\\\\\\\\bibraniler\\\\\\\\b|\\\\\\\\bibrani\\\\\\\\b"
+  },
+  {
+    "id": "tar1_persler_satrap",
+    "term": "Satrap / Satraplık (Pers İdaresi)",
+    "sayfa": 80,
+    "tanim": "Pers İmparatorluğu geniş topraklarını yönetmek için **Satraplık** adlı eyalet sistemi kurmuş, eyaletlerin başındaki valiye **Satrap** demiş ve **'Şahgözü'** adlı müfettişlerle denetlemiştir. Bugün devletin valileri ve teftiş kurulları gibi: merkezden uzak yerleri denetimle bağlı tutma modeli.\n💡 Sınav Şifresi: 'Satrap = vali, Satraplık = eyalet, Şahgözü = müfettiş' üçlü eşleştirmesi Pers idaresini kodlar; 'Şahgözü' kelimesi başka uygarlıkta geçmez.",
+    "pattern": "^Satrap$|\\\\\\\\bsatrap\\\\\\\\b|\\\\\\\\bsatraplık\\\\\\\\b"
+  },
+  {
+    "id": "tar1_sehir_devletleri",
+    "term": "İlk Çağ Şehir Devletleri (Polis / Site / Nom)",
+    "sayfa": 53,
+    "tanim": "İlk Çağ'da Yunan'da **Polis**, Mezopotamya'da **Site**, Mısır'da **Nom** denilen bağımsız şehir devletleri vardı; bunların varlığı **merkezi siyasi birliğin olmadığını** gösterir. Bugün her ilin kendi belediyesiyle yönetilmesi gibi ama aralarında üst bir devlet yok: her şehir kendi kralı.\n💡 Sınav Şifresi: 'Polis = Yunan, Site = Sümer, Nom = Mısır' eşleştirmesi + 'merkezi birliğin yokluğu' çıkarımı bu kavramın iki anahtarıdır.",
+    "pattern": "^Polis$|^Site$|^Nomo$|\\\\\\\\bşehir devletlerine\\\\\\\\b|\\\\\\\\bpolis\\\\\\\\b|\\\\\\\\bsite\\\\\\\\b|\\\\\\\\bnomo\\\\\\\\b"
+  },
+  {
+    "id": "tar1_roma_12_levha",
+    "term": "Roma Hukuku ve 12 Levha Kanunları",
+    "sayfa": 88,
+    "tanim": "Roma'da soylu **Patriciler** ile halk **Plepler** arasındaki sınıf çatışmasını önlemek için hazırlanan **12 Levha Kanunları**, modern Avrupa özel hukukunun temeli sayılan **ilk yazılı Roma kanunlarıdır**. Bugün anayasanın halka açık panolarda ilan edilmesi gibi: hukuku herkesin görebileceği hale getirmek.\n💡 Sınav Şifresi: 'Patrici-Plep çatışması + 12 Levha + ilk yazılı Roma kanunu' üçlüsü bu kavramı kodlar; '12 Levha' ifadesi Justinianus'tan ayırt edici anahtardır.",
+    "pattern": "12 levha kanunları|roma yasaları|roma hukuku"
+  },
+  {
+    "id": "tar1_justinianus_kanunlari",
+    "term": "Justinianus Kanunları",
+    "sayfa": 90,
+    "tanim": "Doğu Roma (Bizans) İmparatoru **Justinianus**, eski Roma yasalarını derleyip **Hristiyanlık ilkeleriyle** modernize ederek **Corpus Iuris Civilis** adlı külliyatı oluşturmuştur. Bugün eski kanunları güncel değerlere göre revize edip tek kitapta toplamak gibi: hem derleme hem güncelleme.\n💡 Sınav Şifresi: 'Justinianus + Corpus Iuris Civilis + Hristiyanlık ilkeleri' üçlüsü bu kavramı verir; '12 Levha' değil 'derleme/külliyat' vurgusu Justinianus'u ayırır.",
+    "pattern": "^Justinianus$|\\\\\\\\bjustinianus\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kavimler_gocu",
+    "term": "Kavimler Göçü (375)",
+    "sayfa": 98,
+    "tanim": "375'te **Kuzey Hunları**nın Batı'ya ittiği Germen kavimlerinin Roma topraklarına akın etmesiyle başlayan domino etkisi; Roma'yı ikiye böldü, Batı Roma'yı yıktı ve Avrupa'yı **Feodalite + Skolastik** karanlığına soktu.\n💡 Sınav Şifresi: **375** tarihi + **Hun** tetikleyici + sonuç zinciri: Roma bölünür → Batı Roma yıkılır → Feodalite doğar. 'Kavimler Göçü'nün başlatıcısı Hunlar, mağduru Germenler, fatura Roma'ya.",
+    "pattern": "kavimler göçü|kavimler gocu"
+  },
+  {
+    "id": "tar1_feodalite",
+    "term": "Feodalite (Derebeylik)",
+    "sayfa": 102,
+    "tanim": "Orta Çağ Avrupası'nda merkezi otorite çökünce **toprağın** güç kaynağı olduğu, **Lord-Süzeren** koruması karşılığı **Serf**in toprağa bağlandığı ve şatolar etrafında kapalı tarım ekonomisinin döndüğü derebeylik düzeni.\n💡 Sınav Şifresi: Anahtar üçlü: **Toprak + Lord-Vassal + Serf**. 'Merkezi krallık YOK, toprak = güç' denildi mi Feodalite; 'şato, kapalı ekonomi, serflik' kelimeleri de aynı kavramın imzası.",
+    "pattern": "^Feodalite$|\\\\\\\\bfeodalite\\\\\\\\b|\\\\\\\\bderebeylik\\\\\\\\b|\\\\\\\\bfief\\\\\\\\b|\\\\\\\\bserf\\\\\\\\b"
+  },
+  {
+    "id": "tar1_ipek_yolu_sogdlular",
+    "term": "İpek Yolu ve Soğdlular",
+    "sayfa": 106,
+    "tanim": "Çin'den Akdeniz'e uzanan **İpek Yolu**'nda kervan ticaretini ve tüccar kolonilerini yöneten en etkili İran kökenli topluluk **Soğdlular**dır; adeta Orta Çağ'ın 'küresel lojistik ağı' işletmecileriydi.\n💡 Sınav Şifresi: 'İpek Yolu tüccarı' sorusunda **Soğd** cevabı; 'İran kökenli, tüccar kolonileri kuran' ifadesi Soğdluları diğer kavimlerden ayıran kod.",
+    "pattern": "^Soğdlular$|^Soğd$|\\\\\\\\bsoğdlular\\\\\\\\b|\\\\\\\\bsoğd\\\\\\\\b|\\\\\\\\bipek yolu\\\\\\\\b"
+  },
+  {
+    "id": "tar1_ribat_kervansaray",
+    "term": "Ribat ve Kervansaray",
+    "sayfa": 110,
+    "tanim": "**Ribat**, ilk olarak **Karahanlılar**da sınır boylarında askerî güvenlik için kurulan kale; zamanla ticaret yollarında kervanların güvenliğini ve konaklamasını sağlayan kervansaraya dönüşen yapı.\n💡 Sınav Şifresi: Kurucu = **Karahanlılar**, ilk amaç = **askerî güvenlik (sınır)**, sonraki işlev = **ticaret + konaklama**. 'Ribat' denince Karahanlı + sınır kalesi; 'kervansaray' denince konaklama aklına gelsin.",
+    "pattern": "^Ribat$|^Kervansaray$|^Han$|^Bedesten$|\\\\\\\\bribat\\\\\\\\b|\\\\\\\\bkervansaray\\\\\\\\b|\\\\\\\\bbedesten\\\\\\\\b"
+  },
+  {
+    "id": "tar1_kut_anlayisi",
+    "term": "Kut Anlayışı",
+    "sayfa": 116,
+    "tanim": "İlk Türk devletlerinde hükümdarlık yetkisinin **Gök Tengri** tarafından verildiğine inanılan **kut**; kan bağıyla tüm hanedan erkeklerine geçtiği için taht kavgalarının ve devletin bölünmesinin ana sebebi oldu.\n💡 Sınav Şifresi: **Kut = Gök Tengri vergisi + hanedanın tüm erkeklerine geçer** → sonuç: **taht kavgası ve bölünme**. 'Yönetme yetkisi ilahi kaynaklı' ifadesi kutun, 'her hanedan üyesinin hakkı' ifadesi kavganın şifresi.",
+    "pattern": "^Kut$|\\\\\\\\bkut anlayışı\\\\\\\\b|\\\\\\\\byönetme yetkisinin tanrı tarafından\\\\\\\\b|\\\\\\\\bmeşruiyetin kaynağı\\\\\\\\b"
+  },
+  {
+    "id": "tar1_tore",
+    "term": "Töre",
+    "sayfa": 118,
+    "tanim": "İlk Türk toplumlarında sosyal hayatı, adaleti ve idareyi düzenleyen **yazısız geleneksel hukuk** bütünü olan töre; **Hakan dahil herkes** uymak zorundaydı, bu yüzden 'hukuk devleti' fikrinin bozkır versiyonudur.\n💡 Sınav Şifresi: **Yazısız + geleneksel + Hakan bile uyar**. 'Hükümdarın üstünde kural' vurgusu töreyi diğer şıklardan ayırır; 'yazılı kanun' (Yasa, Kanunname) ile karıştırma.",
+    "pattern": "^Töre$|\\\\\\\\btöre hukuku\\\\\\\\b|\\\\\\\\btöre\\\\\\\\b"
+  },
+  {
+    "id": "tar1_ordu_millet",
+    "term": "Ordu-Millet Anlayışı",
+    "sayfa": 120,
+    "tanim": "Bozkır konargöçer Türk toplumunda **kadın-erkek ayrımı olmaksızın eli silah tutan herkesin** savaşçı sayıldığı, **paralı ordunun bulunmadığı** anlayış; yani milletin kendisi ordudur.\n💡 Sınav Şifresi: **Paralı ordu YOK + kadın-erkek herkes savaşçı**. 'Ücretli asker yok' ifadesi ordu-millet anlayışının kesin imzası; Roma'nın paralı lejyonlarıyla karşıtlık sınavda tuzak.",
+    "pattern": "ordu millet anlayışı|ordu-millet|ordu millet"
+  },
+  {
+    "id": "tar1_kurultay_toy",
+    "term": "Kurultay (Toy / Kengeş)",
+    "sayfa": 117,
+    "tanim": "İlk Türk devletlerinde siyasi, askerî, ekonomik ve töreye dair kararların görüşüldüğü; **boy beyleri, hanedan üyeleri ve Hatun**un katıldığı danışma ve yönetim meclisi (Toy/Kengeş).\n💡 Sınav Şifresi: Katılımcı üçlüsü: **Boy beyleri + Hanedan + Hatun**. 'Hatun'un katılımı' kurultayı diğer meclislerden ayıran altın anahtar; 'danışma + karar' işlevi de toy/kengeş eş anlamlısı.",
+    "pattern": "^Kurultay$|^Toy$|\\\\\\\\bkurultay\\\\\\\\b|\\\\\\\\btoy meclisi\\\\\\\\b|\\\\\\\\btoy\\\\\\\\b"
+  },
+  {
+    "id": "tar2_orhun_kitabeleri",
+    "term": "Orhun Kitabeleri (Göktürk Yazıtları)",
+    "sayfa": 125,
+    "tanim": "Türk adının geçtiği **ilk Türkçe yazılı belgeler** olup, Bilge Kağan, Kül Tigin ve Tonyukuk adına dikilmiş; devlet yönetimini anlatan birer **siyasetname** niteliğindedir. Tıpkı bir milletin hafızasını kaydeden **USB bellek** gibi, Türk tarihini geleceğe taşımışlardır.\n💡 Sınav Şifresi: **'Türk adı ilk kez'** + **'Türkçe yazılı belge'** + **'Vilhelm Thomsen 1893'te çözdü'** üçlüsü bu kavramı diğerlerinden ayırır.",
+    "pattern": "orhun kitabeleri[a-zçğıöşü]*|göktürk yazıtları|orhun yazıtları|göktürk kitabeleri"
+  },
+  {
+    "id": "tar2_orta_asya_gocleri",
+    "term": "Orta Asya Türk Göçleri",
+    "sayfa": 127,
+    "tanim": "Kuraklık, otlak yetersizliği ve nüfus artışı gibi **iktisadi**; Çin-Moğol baskısı ve bağımsız yaşama arzusu gibi **siyasi** nedenlerle Orta Asya'dan dünyaya yayılan büyük göç dalgasıdır. Tıpkı bir **GPS'in rota değiştirmesi** gibi, Türkler yaşam şartları değişince yön değiştirmiştir.\n💡 Sınav Şifresi: Nedenlerde **'kuraklık + otlak + nüfus'** (iktisadi) ile **'Çin baskısı + bağımsızlık'** (siyasi) ayrımını yakala; soru 'hangi neden' diye soruyorsa bu ayrım şarttır.",
+    "pattern": "türklerin orta asya’dan göç|orta asya'dan göç|orta asya göçleri"
+  },
+  {
+    "id": "tar2_ulus_sistemi",
+    "term": "Ülüş Sistemi",
+    "sayfa": 130,
+    "tanim": "Gök Tengri'nin kağana ve millete bağışladığı **iktisadi kısmet ve bereketin adil paylaşımı** ilkesidir; devlet gelirleri ve topraklar hanedan üyeleri ile boylar arasında bölüştürülür. Tıpkı bir **şirketin kâr paylaşımı (temettü)** gibi, devlet zenginliği herkese pay edilirdi.\n💡 Sınav Şifresi: **'Gök Tengri bağışı'** + **'adil paylaşım'** + **'hanedan ve boylara dağıtım'** ifadeleri Ülüş'ü işaret eder; sakın 'veraset' (tahta geçme) ile karıştırma.",
+    "pattern": "ülüş sistemi|ülüş"
+  },
+  {
+    "id": "tar2_kursat_isyani",
+    "term": "Kürşat İsyanı (639)",
+    "sayfa": 132,
+    "tanim": "I. Kök Türk yıkıldıktan sonra Çin esaretindeki Türkleri bağımsızlığa kavuşturmak için **39 arkadaşıyla Çin sarayını basan** Kürşat'ın destansı bağımsızlık hareketidir. Tıpkı bir **siber saldırı ekibinin** düşman merkezine sızması gibi, küçük bir grupla büyük bir direniş başlatmıştır.\n💡 Sınav Şifresi: **'39 arkadaş'** + **'Çin sarayı'** + **'639'** üçlüsü Kürşat İsyanı'nın kesin kodudur.",
+    "pattern": "^Kürşat$|^Kürşad$|\\\\\\\\bkürşat isyanı\\\\\\\\b|\\\\\\\\bkürşat\\\\\\\\b|\\\\\\\\bkürşad\\\\\\\\b"
+  },
+  {
+    "id": "tar2_tonyukuk",
+    "term": "Vezir Tonyukuk (Aparam)",
+    "sayfa": 133,
+    "tanim": "II. Kök Türk (Kutluk) Devleti'nin kurucularından, bağımsızlık mücadelesini organize eden bilge vezirdir; **'Türklerin Bismarck'ı'** olarak anılır ve **adına ilk yazıt dikilen** devlet adamıdır. Tıpkı bir **baş stratejist** gibi, devletin arkasındaki akıl olmuştur.\n💡 Sınav Şifresi: **'Türklerin Bismarck'ı'** + **'Aparam'** + **'kendi adına yazıt diktiren ilk kişi'** ifadeleri Tonyukuk'u kesin ayırt eder.",
+    "pattern": "^Tonyukuk$|\\\\\\\\btonyukuk\\\\\\\\b"
+  },
+  {
+    "id": "tar2_bumin_kagan",
+    "term": "Bumin Kağan (İl Kağan)",
+    "sayfa": 131,
+    "tanim": "552'de Avar egemenliğine son vererek **Ötüken merkezli I. Kök Türk Devleti'ni** kuran ve **'Türk' adını ilk kez devlet adı olarak** kullanan kurucu hakandır. Tıpkı bir **startup'ı kuran CEO** gibi, markayı (Türk adını) tescil ettirmiştir.\n💡 Sınav Şifresi: **'552'** + **'Avar egemenliğine son'** + **'Türk adını ilk kez devlet adı yapan'** üçlüsü Bumin Kağan'ın imzasıdır.",
+    "pattern": "^Bumin Kağan$|\\\\\\\\bbumin kağan\\\\\\\\b|\\\\\\\\bbumin\\\\\\\\b"
+  },
+  {
+    "id": "tar2_mukan_kagan",
+    "term": "Mukan Kağan",
+    "sayfa": 132,
+    "tanim": "I. Kök Türk'e en parlak dönemini yaşatan; **İpek Yolu hakimiyeti** için Ak Hunlara karşı Sasanilerle, Sasanilere karşı Bizans'la **ittifak kuran** büyük kağandır. Tıpkı bir **diplomasi satrancı** oynar gibi, düşmanının düşmanıyla iş birliği yapmıştır.\n💡 Sınav Şifresi: **'İpek Yolu'** + **'Ak Hunlara karşı Sasaniler'** + **'Sasanilere karşı Bizans'** üçlü ittifak zinciri Mukan Kağan'ı işaret eder.",
+    "pattern": "^Mukan Kağan$|\\\\\\\\bmukan kağan\\\\\\\\b|\\\\\\\\bmukan\\\\\\\\b"
+  },
+  {
+    "id": "tar2_ikili_teskilat",
+    "term": "İkili Teşkilat (Doğu-Batı Yönetimi)",
+    "sayfa": 135,
+    "tanim": "Geniş toprakların yönetimini kolaylaştırmak için devletin **Doğu (asıl kağan)** ve **Batı (Yabgu)** olarak ikiye ayrılarak yönetilmesi geleneğidir. Tıpkı bir **şirketin merkez ve şube yönetimi** gibi, doğu merkez, batı ise bağlı şube konumundadır.\n💡 Sınav Şifresi: **'Doğu = asıl kağan'** + **'Batı = Yabgu'** eşleştirmesi bu kavramın kalbidir; Yabgu'nun kağana **bağlı** olduğunu unutma.",
+    "pattern": "ikili teşkilat|ikili yönetim|doğu-batı"
+  },
+  {
+    "id": "tar2_cahiliye_ve_panayirlar",
+    "term": "Cahiliye Dönemi ve Panayırlar (Ukaz)",
+    "sayfa": 142,
+    "tanim": "İslamiyet öncesi Arap Yarımadası'nda **putperestlik, kan davaları ve kadın haklarının yok sayıldığı** dönemdir; **Ukaz** gibi haram aylarda kurulan panayırlarda kabileler hem ticaret yapar hem **şiir yarışmalarıyla** kültürel etkileşimde bulunurdu. Tıpkı bir **festival + ticaret fuarı** karışımı gibi, savaşın durduğu aylarda kültür ve ticaret buluşurdu.\n💡 Sınav Şifresi: **'Haram aylar'** + **'Ukaz panayırı'** + **'şiir yarışması'** üçlüsü Cahiliye panayırlarını tanımlar; 'haram ay = savaşın yasak olduğu ay' kodunu unutma.",
+    "pattern": "hicaz bölgesinde düzenlenen panayırlar|ukaz panayırı|cahiliye dönemi"
+  },
+  {
+    "id": "tar2_arap_yarimadasi",
+    "term": "Arap Yarımadası (Hicaz)",
+    "sayfa": 140,
+    "tanim": "Asya, Afrika ve Avrupa'nın **kesişiminde** yer alan; **Mekke, Medine ve Taif** şehirlerini barındıran, İslamiyet'in doğduğu coğrafi bölgedir. Tıpkı bir **kavşak noktası** gibi, üç kıtanın ticaret ve kültür yollarını birleştirir.\n💡 Sınav Şifresi: **'Üç kıtanın kesişimi'** + **'Mekke-Medine-Taif'** üçlüsü Arap Yarımadası'nı tanımlar; Hicaz bölgesinin bu üç şehri kapsadığını unutma.",
+    "pattern": "arap yarımadası|arap yarimadasi|hicaz bölgesi"
+  },
+  {
+    "id": "tar2_mescidi_nebevi",
+    "term": "Mescid-i Nebevî ve Ravza-i Mutahhara",
+    "sayfa": 146,
+    "tanim": "Hz. Muhammed'in hicretten sonra Medine'de inşa ettiği; **ibadet, devlet işleri ve eğitim (Suffe)** merkezi olan mescittir. Kabrinin bulunduğu bölüme **'Ravza-i Mutahhara' (Cennet Bahçesi)** denir. Tıpkı bir **parlamento + üniversite + cami** kompleksi gibi, devletin kalbi burada atardı.\n💡 Sınav Şifresi: **'Suffe = eğitim'** + **'Ravza-i Mutahhara = kabir bölümü'** eşleştirmesi bu kavramın anahtarıdır; Mescid-i Nebevî'nin **çok işlevli** yapısını vurgula.",
+    "pattern": "mescid-i nebevi[a-zçğıöşü]*|ravza-i mutahhara|suffe"
+  },
+  {
+    "id": "tar2_hz_ebubekir",
+    "term": "Hz. Ebubekir Dönemi (632-634)",
+    "sayfa": 150,
+    "tanim": "İlk halife dönemidir (632-634); **Ridde Savaşları** ile dinden dönenler ve sahte peygamberlerle mücadele edilmiş, **Kur'an ilk kez Mushaf hâline** getirilmiş ve Suriye fethi için Bizans'la **Ecnâdeyn Savaşı** yapılmıştır. Tıpkı bir **kurucu CEO'nun ilk icraatları** gibi, devletin temel taşlarını atmıştır.\n💡 Sınav Şifresi: **'Ridde Savaşları'** + **'Kur'an'ın Mushaf hâline getirilmesi'** + **'Ecnâdeyn'** üçlüsü Hz. Ebubekir dönemine kilitlenir; 'ilk halife' kodunu da unutma.",
+    "pattern": "hz\\\\\\\\. ebu bekir|hz\\\\\\\\. ebubekir|ecnâdeyn|ecnadeyn|ridde savaşları"
+  },
+  {
+    "id": "tar2_hz_omer",
+    "term": "Hz. Ömer Dönemi (634-644)",
+    "sayfa": 152,
+    "tanim": "İslam Devleti'nin **imparatorluğa dönüştüğü** dönem: Sasani yıkıldı, Suriye-Mısır-Kudüs fethedildi; **Hicri takvim, kadılık ve Beytü'l-mal** kuruldu. Tıpkı bir devletin kurumsallaşırken kimlik kartı (takvim), mahkemesi (kadılık) ve bankası (Beytü'l-mal) açması gibi.\n💡 Sınav Şifresi: **Hicri takvim + kadılık + Beytü'l-mal = Hz. Ömer**. Sasani'nin yıkılışı (Kadisiye-Nihavend) da bu döneme ait.",
+    "pattern": "hz\\\\\\\\. ömer|kadisiye|celûlâ|celula|nihavend|yermük"
+  },
+  {
+    "id": "tar2_hz_osman",
+    "term": "Hz. Osman Dönemi (644-656)",
+    "sayfa": 156,
+    "tanim": "**İlk İslam donanmasının** kurulduğu (Zatü's-Savari), Kıbrıs'ın alındığı ve **Kur'an'ın çoğaltılıp eyaletlere dağıtıldığı** dönem. Kur'an'ın standart kopyalarını çoğaltıp dağıtmak, bugün bir yazılımın tüm sunuculara eşzamanlı kurulması gibidir.\n💡 Sınav Şifresi: **Donanma + Kıbrıs + Kur'an'ın çoğaltılması = Hz. Osman**. 'Zatü's-Savari' adını görürsen direkt işaretle.",
+    "pattern": "hz\\\\\\\\. osman|kuran'ın çoğaltılması|zatü's-savari"
+  },
+  {
+    "id": "tar2_hz_ali",
+    "term": "Hz. Ali Dönemi (656-661)",
+    "sayfa": 158,
+    "tanim": "**İç karışıklıklar dönemi**: Cemel Vakası, Sıffîn Savaşı ve Hakem Olayı yaşandı; İslam dünyasında ilk kez **Şii-Emevi-Harici** siyasi ayrılıkları doğdu. Bir ailenin miras kavgasıyla üç ayrı kola bölünmesi gibi.\n💡 Sınav Şifresi: **Cemel + Sıffîn + Hakem = Hz. Ali**. 'İlk siyasi ayrılıklar/fırkalar' ifadesi bu dönemin imzasıdır.",
+    "pattern": "hz\\\\\\\\. ali|sıffîn|sıffin|hakem olayı|cemel vakası"
+  },
+  {
+    "id": "tar2_emeviler_mevali",
+    "term": "Emeviler ve Mevali Politikası",
+    "sayfa": 162,
+    "tanim": "**Şam merkezli**, hilafeti **saltanata** çeviren hanedan; Arap olmayan Müslümanlara **'Mevali' (ikinci sınıf)** muamelesi yaptıkları için Türklerin İslam'a girişini geciktirdiler. Kulübe üyelik aidatı gibi: Müslüman olsan da 'asil üye' değilsen tam hak alamıyorsun.\n💡 Sınav Şifresi: **Mevali = Arap olmayan Müslüman**. 'Türklerin İslam'a girişini geciktiren' ifadesi Emevileri işaret eder.",
+    "pattern": "^Emeviler$|\\\\\\\\bemeviler\\\\\\\\b|\\\\\\\\bmevali\\\\\\\\b|\\\\\\\\bmevâli\\\\\\\\b|\\\\\\\\bendülüs emevileri\\\\\\\\b"
+  },
+  {
+    "id": "tar2_abbasiler_hosgoru",
+    "term": "Abbasiler ve Beytü'l-Hikme",
+    "sayfa": 166,
+    "tanim": "**Bağdat merkezli**, Emevilerin Arap ırkçılığına son verip **ümmetçi-hoşgörülü** politika izleyen devlet; Türkler için **Avasım** sınır şehirleri ve **Samarra** askerî kenti kuruldu, **Beytü'l-Hikme** bilim merkezi açıldı. Beytü'l-Hikme, dönemin 'üniversite + kütüphane + araştırma merkezi' kompleksidir.\n💡 Sınav Şifresi: **Beytü'l-Hikme + Samarra + Avasım = Abbasiler**. 'Hoşgörü/ümmetçi politika' ayırt edici anahtardır.",
+    "pattern": "^Abbasiler$|\\\\\\\\babbasiler\\\\\\\\b|\\\\\\\\bbeytü’l hikme\\\\\\\\b|\\\\\\\\bbeytül hikme\\\\\\\\b|\\\\\\\\bavasım\\\\\\\\b|\\\\\\\\bsamarra\\\\\\\\b"
+  },
+  {
+    "id": "tar2_talas_savasi",
+    "term": "Talas Savaşı (751)",
+    "sayfa": 170,
+    "tanim": "**751'de** Abbasiler ile Çinliler arasında yapılan, **Karluk Türklerinin Abbasileri desteklemesiyle** Çin'in yenildiği savaş; Türklerin **kitleler hâlinde İslam'a girişini** sağladı ve **kağıt üretimi Çin dışına** taşındı. Kağıdın yayılması, bilginin internet gibi sınırları aşmasıdır.\n💡 Sınav Şifresi: **Talas = Karluk desteği + kitlevi İslam + kağıdın yayılması**. 'Kağıt' kelimesini görürsen Talas'ı işaretle.",
+    "pattern": "talas savaşı|talas savasi"
+  },
+  {
+    "id": "tar2_islam_parasi_dinar",
+    "term": "Dinar ve Dirhem (İslam Parası)",
+    "sayfa": 164,
+    "tanim": "İlk kez **Emevi Halifesi Abdülmelik** tarafından bastırılan İslam paraları: **Dinar altın**, **dirhem gümüş**. Bugünkü 'banknot + madeni para' ikilisinin altın-gümüş versiyonu gibi düşün.\n💡 Sınav Şifresi: **Dinar = altın, Dirhem = gümüş**. 'İlk İslam parası = Abdülmelik (Emevi)' kodla.",
+    "pattern": "^Dinar$|\\\\\\\\bdinar\\\\\\\\b|\\\\\\\\bdirhem\\\\\\\\b"
+  },
+  {
+    "id": "tar2_karahanlilar",
+    "term": "Karahanlılar (Afrasiyapoğulları)",
+    "sayfa": 174,
+    "tanim": "Orta Asya'da kurulan **ilk Müslüman Türk devleti** (Satuk Buğra Han İslam'ı kabul etti); **resmî dili Türkçe**, ribat-kervansaraylar, ilk posta ve hastane teşkilatı; **Kutadgu Bilig** ve **Divanü Lugati't-Türk** bu dönemde yazıldı. Türkçeyi resmî dil yapmak, devletin 'resmî dil' ayarını Türkçeye çekmesidir.\n💡 Sınav Şifresi: **İlk Müslüman Türk devleti + Türkçe resmî dil + Kutadgu Bilig = Karahanlılar**. 'İlk' kelimesi bu kavramın anahtarıdır.",
+    "pattern": "^Karahanlılar$|\\\\\\\\bkarahanlılar\\\\\\\\b|\\\\\\\\bkarahanlı\\\\\\\\b|\\\\\\\\bsatuk buğra han\\\\\\\\b"
+  },
+  {
+    "id": "tar2_gazneliler",
+    "term": "Gazneliler",
+    "sayfa": 178,
+    "tanim": "**Alp Tigin** tarafından Gazne merkezli kurulan devlet; **Sultan Mahmut** Hindistan'a **17 sefer** düzenledi ve Abbasi halifesinden tarihte **ilk kez 'Sultan' unvanını** aldı. Bir komutanın başarılarıyla generallikten mareşalliğe yükselmesi gibi.\n💡 Sınav Şifresi: **17 sefer + ilk 'Sultan' unvanı = Gazneliler**. 'Hindistan seferleri' geçiyorsa Gazne'yi işaretle.",
+    "pattern": "^Gazneliler$|\\\\\\\\bgazneliler\\\\\\\\b|\\\\\\\\bgazneli mahmut\\\\\\\\b|\\\\\\\\bgazneli\\\\\\\\b"
+  },
+  {
+    "id": "tar2_memlukler_ayncalut",
+    "term": "Memlûkler ve Ayn Calut Savaşı (1260)",
+    "sayfa": 182,
+    "tanim": "Mısır'da kurulan, **'başarılı her komutan sultan olabilir'** ilkesiyle hanedan kuralını yıkan devlet; **1260 Ayn Calut'ta Baybars** komutasında **Moğolları ilk kez** yendi. Şirkette liyakat esaslı terfi sistemi gibi: koltuk babadan oğula değil, başarıya gider.\n💡 Sınav Şifresi: **Ayn Calut = Moğolları ilk yenen + Baybars + Memlûkler**. 'Liyakat/komutan sultan olur' ifadesi Memlûk imzasıdır.",
+    "pattern": "^Memlûkler$|^Memlukler$|\\\\\\\\bmemlûkler\\\\\\\\b|\\\\\\\\bmemlukler\\\\\\\\b|\\\\\\\\bayncalut savaşı\\\\\\\\b|\\\\\\\\bayn calut\\\\\\\\b"
+  },
+  {
+    "id": "tar2_tolunogullari_ihsidiler",
+    "term": "Mısır'da Kurulan Türk Devletleri (Tolunoğulları / İhşidiler)",
+    "sayfa": 180,
+    "tanim": "Mısır'da kurulan iki Türk devleti: **Tolunoğulları** (Mısır'daki **ilk Türk devleti**, Tolunoğlu Ahmet Camii) ve **İhşidiler/Akşitler** (**Hicaz ile Mekke-Medine'ye hâkim olan ilk Türk devleti**). İki kardeş şirketin biri Mısır'da kurulur, diğeri kutsal topraklara uzanır.\n💡 Sınav Şifresi: **Mısır'da ilk Türk devleti = Tolunoğulları; Hicaz'a hâkim ilk Türk devleti = İhşidiler**. 'İlk' sıfatlarını devletle eşleştir.",
+    "pattern": "^Tolunoğulları$|^İhşidiler$|\\\\\\\\btolunoğulları\\\\\\\\b|\\\\\\\\bihşidiler\\\\\\\\b|\\\\\\\\bakşitler\\\\\\\\b"
+  },
+  {
+    "id": "tar2_malazgirt_savasi",
+    "term": "Malazgirt Meydan Muharebesi (1071)",
+    "sayfa": 188,
+    "tanim": "**1071'de** Sultan **Alparslan** ile Bizans İmparatoru **Romen Diyojen** arasında yapılan, Türklerin zaferiyle **Anadolu'nun kapılarını açan** ve **Türkiye tarihini başlatan** savaş. Bir binanın ana kapısını açan anahtar gibi: Anadolu'nun kilidi Malazgirt'te kırıldı.\n💡 Sınav Şifresi: **1071 + Alparslan + Romen Diyojen = Malazgirt**. 'Anadolu'nun kapıları / Türkiye tarihinin başlangıcı' ifadesi direkt bu savaşı işaret eder.",
+    "pattern": "malazgirt meydan muharebesi|malazgirt savaşı|malazgirt"
+  },
+  {
+    "id": "tar2_dandanakan_savasi",
+    "term": "Dandanakan Savaşı (1040)",
+    "sayfa": 186,
+    "tanim": "1040'ta Tuğrul ve Çağrı Beyler komutasındaki Selçukluların Gazneli Mesut'u yendiği savaş, **Büyük Selçuklu Devleti'nin resmen kurulduğu** ve Gaznelilerin yıkılış sürecine girdiği dönüm noktasıdır — tıpkı bir start-up'ın ilk büyük yatırımcıyı yenip şirketleşmesi gibi.\n💡 Sınav Şifresi: **1040 + Dandanakan = Kuruluş**. Gazneli Mesut yenildi, Tuğrul-Çağrı kazandı; 'kuruluş' kelimesini görünce bu savaşı işaretle.",
+    "pattern": "dandanakan savaşı|dandanakan"
+  },
+  {
+    "id": "tar2_nizamiye_medreseleri",
+    "term": "Nizamiye Medreseleri ve Nizamülmülk",
+    "sayfa": 192,
+    "tanim": "Büyük Selçuklu Veziri **Nizamülmülk**'ün Bağdat'ta kurduğu, dönemin en büyük üniversitesi sayılan ve **İmam Gazali** gibi âlimlerin ders verdiği; Şii Fatımi ve Batıni propagandasına karşı **Sünni inancı** savunan eğitim kurumudur — adeta Selçuklu'nun 'fikri savunma kalkanı'.\n💡 Sınav Şifresi: **Nizamülmülk kurdu + İmam Gazali ders verdi + Sünni inanç + Fatımi/Batıni'ye karşı**. 'Medrese' kelimesini görünce bu üçlüyü hatırla.",
+    "pattern": "nizamiye medreseleri|nizamiye medresesi|nizamülmülk|nizamulmulk"
+  },
+  {
+    "id": "tar2_divani_arz",
+    "term": "Divan-ı Arz (Askerî Divan)",
+    "sayfa": 196,
+    "tanim": "Büyük Selçuklu'da **ordunun** ihtiyaç, maaş (Bistegani), kayıt ve savaşa hazırlık işlerini yürüten divandır; başkanı **Emir-i Arz**'dır — devletin 'askerî lojistik ve İK departmanı' gibi.\n💡 Sınav Şifresi: **Arz = Ordu**. Başkanı **Emir-i Arz**. 'Asker/maaş/lojistik' geçen soruda bu divanı seç.",
+    "pattern": "^Divan-ı Arz$|\\\\\\\\bdivan-ı arz\\\\\\\\b|\\\\\\\\bdivan-ı ceyş\\\\\\\\b|\\\\\\\\bemir-i arz\\\\\\\\b"
+  },
+  {
+    "id": "tar2_divani_istifa",
+    "term": "Divan-ı İstifa (Maliye Divanı)",
+    "sayfa": 196,
+    "tanim": "Büyük Selçuklu'da devletin tüm **gelir-gider**, vergi toplama ve maliye işlerini yürüten divandır; başkanı **Müstevfi**'dir — devletin 'hazine ve muhasebe departmanı'.\n💡 Sınav Şifresi: **İstifa = Maliye**. Başkanı **Müstevfi**. 'Vergi/gelir-gider/bütçe' kelimesi geçiyorsa bu divan.",
+    "pattern": "^Divan-ı İstifa$|\\\\\\\\bdivan-ı istifa\\\\\\\\b|\\\\\\\\bmüstevfi\\\\\\\\b"
+  },
+  {
+    "id": "tar2_divani_insa",
+    "term": "Divan-ı İnşa / Tuğra (Yazışma Divanı)",
+    "sayfa": 196,
+    "tanim": "Devletin iç-dış **resmî yazışmalarını** yürüten ve ferman-beratlara hükümdarın **tuğrasını** çeken divandır; başkanı **Tuğrai** veya **Münşi**'dir — devletin 'yazı işleri ve diplomasi kalemi'.\n💡 Sınav Şifresi: **İnşa = Yazışma + Tuğra**. Başkanı **Tuğrai/Münşi**. 'Ferman, berat, tuğra, diplomasi' kelimeleri bu divanı işaret eder.",
+    "pattern": "^Divan-ı İnşa$|^Divan-ı Tuğra$|\\\\\\\\bdivan-ı inşa\\\\\\\\b|\\\\\\\\bdivan-ı tuğra\\\\\\\\b|\\\\\\\\btuğrai\\\\\\\\b"
+  },
+  {
+    "id": "tar2_divani_israf",
+    "term": "Divan-ı İşraf (Denetim Divanı)",
+    "sayfa": 196,
+    "tanim": "Devletin idari ve mali işlerinin **kanunlara uygun** yürütülüp yürütülmediğini denetleyen **teftiş** divanıdır; başkanı **Müşrif**'tir — devletin 'iç denetim/kontrol birimi'.\n💡 Sınav Şifresi: **İşraf = Denetim/Teftiş**. Başkanı **Müşrif**. 'Denetim, teftiş, kontrol' kelimesi = bu divan.",
+    "pattern": "^Divan-ı İşraf$|\\\\\\\\bdivan-ı işraf\\\\\\\\b|\\\\\\\\bmüşrif\\\\\\\\b"
+  },
+  {
+    "id": "tar2_divani_berid",
+    "term": "Divan-ı Berid (Haberleşme ve İstihbarat)",
+    "sayfa": 197,
+    "tanim": "Devlet içindeki **haberleşme, posta ve gizli istihbarat** faaliyetlerini yürüten divandır — Selçuklu'nun 'MİT + PTT'si' bir arada.\n💡 Sınav Şifresi: **Berid = Haberleşme + İstihbarat**. 'Posta, haber, gizli bilgi, istihbarat' kelimeleri bu divanı verir.",
+    "pattern": "^Divan-ı Berid$|\\\\\\\\bdivan-ı berid\\\\\\\\b"
+  },
+  {
+    "id": "tar2_selcuklu_hukuku",
+    "term": "Selçuklu Hukuku (Kadı ve Emir-i Dad)",
+    "sayfa": 198,
+    "tanim": "Selçuklu'da **şeri davalara Kadı** (başı Kadıü'l-Kudat), **örfi ve devlet güvenliği** davalarına **Emir-i Dad**, **askerî davalara** ise **Kadıasker (Kadı-ı Leşker)** bakardı — üç ayrı mahkeme türü gibi.\n💡 Sınav Şifresi: **Şeri=Kadı / Örfi-Devlet=Emir-i Dad / Askerî=Kadıasker**. Üçlü eşleştirmeyi ezberle; soruda hangi dava türü geçiyorsa o görevliyi seç.",
+    "pattern": "^Kadı$|^Emir-i Dad$|\\\\\\\\bemir-i dad\\\\\\\\b|\\\\\\\\bşeri hukuk ile ilgili davalara\\\\\\\\b|\\\\\\\\bkadıü'l-kudat\\\\\\\\b"
+  },
+  {
+    "id": "tar2_hacibul_huccab",
+    "term": "Hâcibü'l-Hüccâb (Baş Hacip)",
+    "sayfa": 195,
+    "tanim": "Hükümdar ile halk ve divan üyeleri arasındaki **iletişimi** sağlayan, **saray protokolü ve güvenliğini** düzenleyen en yetkili saray görevlisidir — adeta 'sarayın genel sekreteri + güvenlik şefi'.\n💡 Sınav Şifresi: **Hâcibü'l-Hüccâb = Baş Hacip = Protokol + Saray Güvenliği + Hükümdarla İletişim**. 'En yetkili saray görevlisi' ifadesi bu unvanı verir.",
+    "pattern": "hâcibü’l-hüccâb|hacibü'l-hüccab|hâcib|hacip"
+  },
+  {
+    "id": "tar3_divani_pervane",
+    "term": "Divan-ı Pervane (Pervaneci)",
+    "sayfa": 15,
+    "tanim": "Türkiye Selçuklu'ya özgü bu divan, tıpkı bugünün **Tapu Kadastro Müdürlüğü** gibi ülkedeki tüm toprakların (has, ikta) kaydını tutup hak edene dağıtırdı; başkanına 'Pervaneci' denirdi.\n💡 Sınav Şifresi: 'Pervane' = toprak kayıt defteri; sadece Türkiye Selçuklu'da var, diğer divanlarla karıştırma.",
+    "pattern": "^Divan-ı Pervane$|\\\\\\\\bdivan-ı pervane\\\\\\\\b|\\\\\\\\bpervaneci\\\\\\\\b"
+  },
+  {
+    "id": "tar3_divani_saltanat",
+    "term": "Divan-ı Saltanat",
+    "sayfa": 14,
+    "tanim": "Türkiye Selçuklu'da veziriazam başkanlığında toplanan, devletin **Bakanlar Kurulu** gibi en yüksek karar organı olan büyük meclistir.\n💡 Sınav Şifresi: 'Saltanat' = hükümet işleri; en üst divan, kararların alındığı yer.",
+    "pattern": "^Divan-ı Saltanat$|\\\\\\\\bdivan-ı saltanat\\\\\\\\b"
+  },
+  {
+    "id": "tar3_ilk_turk_beylikleri",
+    "term": "Malazgirt Sonrası I. Dönem Anadolu Beylikleri",
+    "sayfa": 20,
+    "tanim": "1071 Malazgirt sonrası Alparslan'ın '**Toprak fethedenin malıdır**' sözüyle Anadolu'ya yerleşen ilk Türk beylikleri: Saltuklular, Danişmentliler, Mengücekliler, Artuklular ve Çaka Beyliği.\n💡 Sınav Şifresi: 'İlk' = Malazgirt sonrası; kodlama **S-D-M-A-Ç** (Saltuk-Danişment-Mengücek-Artuk-Çaka).",
+    "pattern": "ilk türk beylikleri[a-zçğıöşü]*|anadolu’da ilk türk beylikleri|saltuklular|danişmentliler|mengücekliler|artuklular|çaka beyliği"
+  },
+  {
+    "id": "tar3_miryokefalon_savasi",
+    "term": "Miryokefalon Muharebesi (1176)",
+    "sayfa": 26,
+    "tanim": "1176'da II. Kılıç Arslan'ın Bizans'ı yendiği, Anadolu'nun **kesin olarak Türk yurdu** olduğunu tüm dünyaya tescilleyen savaştır; bu yüzden '**Yurttutan**' denir.\n💡 Sınav Şifresi: 'Yurttutan' = Miryokefalon; Anadolu'nun tapusu bu savaşla alındı.",
+    "pattern": "miryokefalon muharebesi|miryokefalon savaşı|miryokefalon"
+  },
+  {
+    "id": "tar3_yassicemen_savasi",
+    "term": "Yassıçemen Muharebesi (1230)",
+    "sayfa": 32,
+    "tanim": "1230'da I. Alaeddin Keykubad'ın Harzemşahları yendiği savaş; Harzemşahlar yıkılınca **Moğollarla Selçuklu arasındaki tampon bölge kalktı** ve Anadolu Moğol tehdidine açık hale geldi.\n💡 Sınav Şifresi: 'Tampon kalktı' = Yassıçemen; Harzemşah yıkıldı, Moğol yolu açıldı.",
+    "pattern": "yassıçemen muharebesi|yassıçemen savaşı|yassıçemen"
+  },
+  {
+    "id": "tar3_kosedag_savasi",
+    "term": "Kösedağ Savaşı (1243)",
+    "sayfa": 34,
+    "tanim": "1243'te Selçukluların Moğollara (İlhanlı) ağır yenilgisi; Anadolu istilaya açıldı, devlet **yıkılış sürecine** girdi ve **II. Dönem Türk Beylikleri** kuruldu.\n💡 Sınav Şifresi: 'Kösedağ = yıkılış + II. Beylikler'; Moğol galibiyeti, Selçuklu'nun sonunun başlangıcı.",
+    "pattern": "kösedağ savaşı|kösedağ muharebesi|kösedağ"
+  },
+  {
+    "id": "tar3_baba_ishak_isyani",
+    "term": "Baba İshak (Babailer) İsyanı (1240)",
+    "sayfa": 33,
+    "tanim": "1240'ta Baba İshak ve Baba İlyas önderliğinde çıkan, Anadolu'daki **ilk sosyo-dinî nitelikli Türkmen halk ayaklanması**; devletin zayıflığını ortaya koydu.\n💡 Sınav Şifresi: 'İlk halk isyanı' = Babailer; dinî + sosyal + Türkmen, üç anahtar kelime.",
+    "pattern": "baba ishak|baba ilyas|babailer isyanı"
+  },
+  {
+    "id": "tar3_ahilik_ve_ahi_evran",
+    "term": "Ahilik Teşkilatı ve Ahi Evran",
+    "sayfa": 42,
+    "tanim": "Ahi Evran'ın Kırşehir'de kurduğu; esnaf arasında **meslek ahlakı, dayanışma ve narh (fiyat) kontrolü** sağlayan, fütüvvet ruhuyla gerektiğinde vatan savunan sosyo-ekonomik teşkilattır — bugünün **esnaf odası + tüketici hakem heyeti** karışımı.\n💡 Sınav Şifresi: 'Ahi' = esnaf + ahlak + narh; kurucusu Ahi Evran, merkezi Kırşehir.",
+    "pattern": "^Ahî Evran$|^Ahi Evran$|\\\\\\\\bahilik teşkilatı\\\\\\\\b|\\\\\\\\bahilik\\\\\\\\b|\\\\\\\\bahi evran\\\\\\\\b"
+  },
+  {
+    "id": "tar3_anadolu_erenleri",
+    "term": "Anadolu Erenleri ve Gönül Sultanları",
+    "sayfa": 45,
+    "tanim": "Anadolu'nun Türkleşip İslamlaşmasında gönülleri fetheden mutasavvıflar: **Mevlânâ** (sevgi-hoşgörü), **Yunus Emre** (Türkçe ilahiler), **Hacı Bektâş-ı Velî** (Makâlât), Hacı Bayram-ı Velî ve Şeyh Edebâli.\n💡 Sınav Şifresi: 'Makâlât' = Hacı Bektâş; 'Türkçe ilahi' = Yunus; 'hoşgörü' = Mevlânâ.",
+    "pattern": "mevlânâ celâleddîn-î rumî|mevlana celaleddin|yunus emre|hacı bektâş-ı velî|hacı bektaş|şeyh edebâli|şeyh edebali"
+  },
+  {
+    "id": "tar3_koyunhisar_muharebesi",
+    "term": "Koyunhisar (Bafeus) Muharebesi (1302)",
+    "sayfa": 54,
+    "tanim": "1302'de Osman Bey'in Bizans tekfurlarını yendiği ilk savaş; Halil İnalcık'a göre **Osmanlı'nın gerçek kuruluş tarihi** bu savaştır.\n💡 Sınav Şifresi: 'İlk Osmanlı-Bizans savaşı' + 'gerçek kuruluş 1302' = Koyunhisar (Bafeus).",
+    "pattern": "koyunhisar muharebesi|koyunhisar savaşı|koyunhisar|bafeus"
+  },
+  {
+    "id": "tar3_halil_inalcik",
+    "term": "Prof. Dr. Halil İnalcık",
+    "sayfa": 55,
+    "tanim": "'**Tarihçilerin Şeyhi**' olarak anılan, Osmanlı'nın kuruluşunu **1302 Koyunhisar Zaferi**'ne dayandıran dünyaca ünlü Türk tarihçi.\n💡 Sınav Şifresi: 'Tarihçilerin Şeyhi' + '1302 kuruluş tezi' = Halil İnalcık.",
+    "pattern": "halil inalcık|halil inalcik"
+  },
+  {
+    "id": "tar3_istimalet_politikasi",
+    "term": "İstimâlet Politikası (Hoşgörü)",
+    "sayfa": 58,
+    "tanim": "Osmanlı'nın fethettiği Balkanlarda gayrimüslim halka **adalet, din-vicdan hürriyeti ve can-mal güvenliği** tanıdığı hoşgörü politikası; fetihlerin kalıcı olmasını sağladı — bugünün '**kazandırma yönetimi**' gibi.\n💡 Sınav Şifresi: 'İstimâlet' = hoşgörü + adalet; Balkanlarda kalıcılığın anahtarı, iskânla karıştırma.",
+    "pattern": "istimâlet politikası|istimalet politikası|istimâlet|adalet ve hoşgörü anlayışı"
+  },
+  {
+    "id": "tar3_iskan_politikasi",
+    "term": "İskân Politikası",
+    "sayfa": 57,
+    "tanim": "Osmanlı'nın fethettiği Balkan topraklarına Anadolu'dan **konargöçer Türkmen aileleri** yerleştirerek bölgeyi hem Türkleştirme hem de güvenli hale getirme projesidir; tıpkı bir oyun şirketinin yeni sunucuya **yerleşimci oyuncular** gönderip haritayı sahiplenmesi gibi.\n💡 Sınav Şifresi: **\"Konargöçer Türkmen aileleri\"** + **\"Balkanlar\"** + **\"Türkleşme ve güvenlik\"** üçlüsü; şıklarda 'sürgün' veya 'devşirme' ile karıştırma — iskân **gönüllü/teşvikli yerleştirme**dir.",
+    "pattern": "iskân politikası|iskan politikası|iskân|iskan"
+  },
+  {
+    "id": "tar3_timar_ve_cebelu",
+    "term": "Tımar Sistemi ve Cebelü",
+    "sayfa": 68,
+    "tanim": "Devlet arazisinin vergi gelirini, hizmet karşılığı asker ve memurlara bırakma sistemidir; tımar sahibi her **3-5 bin akçe** için savaşa hazır zırhlı atlı **'Cebelü'** besler — yani devlet maaş ödemez, **arazi geliriyle asker 'kiralar'**.\n💡 Sınav Şifresi: **\"3-5 bin akçe = 1 Cebelü\"** formülü ve **\"vergi geliri tahsisi\"** anahtarı; Kapıkulu (maaşlı/merkezî) ile karıştırma — Tımar **taşrada, toprak geliriyle** beslenir.",
+    "pattern": "^Cebelü$|\\\\\\\\btımar sahiplerinin\\\\\\\\b|\\\\\\\\bcebelü\\\\\\\\b|\\\\\\\\btımar sistemi\\\\\\\\b"
+  },
+  {
+    "id": "tar3_kapikulu_ocagi",
+    "term": "Kapıkulu Ocakları ve Yeniçeriler",
+    "sayfa": 72,
+    "tanim": "**I. Murad** döneminde **Pençik ve Devşirme** sistemiyle Hristiyan çocukların eğitilip dönüştürüldüğü, padişaha bağlı, **üç ayda bir 'Ulufe'** alan merkezî daimi ordudur; tıpkı devletin kendi bünyesinde yetiştirdiği **profesyonel özel kuvvetler** gibi.\n💡 Sınav Şifresi: **\"I. Murad + Devşirme + Ulufe (3 ayda bir)\"** üçlüsü; Tımar/Cebelü ile ayırt et — Kapıkulu **maaşlı ve merkezî**, Tımar **toprak gelirli ve taşralı**dır.",
+    "pattern": "kapıkulu ocakları|yeniçeri ocağı|devşirme sistemi|pençik sistemi|yeniçeri"
+  },
+  {
+    "id": "tar3_ali_kuscu",
+    "term": "Ali Kuşçu",
+    "sayfa": 80,
+    "tanim": "**Uluğ Bey'in öğrencisi**, Semerkant Rasathanesi'nin yöneticisi olup **Fatih'in davetiyle İstanbul'a** gelerek Ayasofya Medresesi başmüderrisi olan astronomi-matematik dehâsıdır; âdeta dönemin **NASA başbilimcisinin** Osmanlı'ya transfer edilmesi gibi.\n💡 Sınav Şifresi: **\"Uluğ Bey + Semerkant Rasathanesi + Fatih'in daveti + Ayasofya Medresesi\"** zinciri; Akşemsettin (tıp/hoca) ile karıştırma — Ali Kuşçu **astronomi-matematik**tir.",
+    "pattern": "ali kuşçu|ali kuscu"
+  },
+  {
+    "id": "tar3_aksamsettin",
+    "term": "Akşemsettin",
+    "sayfa": 82,
+    "tanim": "**Fatih'in hocası** ve İstanbul'un fethinin manevi mimarı olup **'Maddetü'l-Hayat'** eserinde mikropları tarif ederek mikrobiyolojinin öncüsü sayılan tıp bilginidir; sanki **mikroskobu 400 yıl önce keşfeden** bir bilim insanı gibi.\n💡 Sınav Şifresi: **\"Fatih'in hocası + fetih manevi mimarı + Maddetü'l-Hayat + mikrop\"** dörtlüsü; Ali Kuşçu (astronomi) ile karıştırma — Akşemsettin **tıp ve maneviyat**tır.",
+    "pattern": "akşemsettin|aksemsettin"
+  },
+  {
+    "id": "tar3_davudi_kayseri",
+    "term": "Dâvud-i Kayserî",
+    "sayfa": 78,
+    "tanim": "**Orhan Gazi** tarafından Osmanlı'nın ilk medresesi **İznik Orhaniyesi'ne** atanan, tarihteki **ilk müderris (ilk rektör)** ve İslam filozofudur; bir üniversitenin **kurucu rektörü** gibi düşün.\n💡 Sınav Şifresi: **\"Orhan Gazi + İznik Orhaniyesi + ilk müderris\"** üçlüsü; 'ilk' vurgusu kritik — diğer âlimlerle karıştırma, Dâvud-i Kayserî **kurumsal ilk**tir.",
+    "pattern": "dâvud-i kayseri|davud-i kayseri"
+  },
+  {
+    "id": "tar4_fatih_sultan_mehmed",
+    "term": "Fatih Sultan Mehmed (II. Mehmed)",
+    "sayfa": 90,
+    "tanim": "**1453'te İstanbul'u fethederek Orta Çağ'ı kapatıp Yeni Çağ'ı açan** ve Karadeniz'i adeta bir **Türk gölüne** çeviren dahi padişah; tıpkı bir satranç ustası gibi hem karada hem denizde hamle üstüne hamle yapmıştır.\n💡 Sınıf Şifresi: **'Fatih' = fetih + çağ kapatan**; Trabzon, Sinop, Kırım, Bosna, Mora → **Karadeniz Türk gölü**.",
+    "pattern": "^Fatih$|^II\\\\\\\\. Mehmet$|^II\\\\\\\\. Mehmed$|\\\\\\\\bfatih sultan mehmet\\\\\\\\b|\\\\\\\\bfatih sultan mehmed\\\\\\\\b|\\\\\\\\bfatih ünvanı\\\\\\\\b|\\\\\\\\bfatih unvanı\\\\\\\\b"
+  },
+  {
+    "id": "tar4_istanbulun_fethi_sonuclari",
+    "term": "İstanbul'un Fethi ve Sonuçları (1453)",
+    "sayfa": 92,
+    "tanim": "Bizans yıkıldı, **şahi toplar feodaliteyi (derebeyliği) Avrupa'da çatlattı**, İpek ve Boğazlar ticareti Osmanlı'ya geçti; İtalya'ya kaçan bilginler ise **Rönesans'ı ateşleyen kıvılcım** oldu.\n💡 Sınav Şifresi: **'Top → feodalite çöküşü'**, **'bilgin kaçışı → Rönesans'**, **'Boğazlar + İpek → Osmanlı'** üçlüsünü ezberle.",
+    "pattern": "istanbul’un fethi|istanbul'un fethi|büyük toplar ile en güçlü surların"
+  },
+  {
+    "id": "tar4_turnadag_savasi",
+    "term": "Turnadağ Savaşı (1515)",
+    "sayfa": 102,
+    "tanim": "Yavuz'un **Dulkadiroğulları Beyliği'ne son verdiği** savaş; böylece Anadolu Türk siyasi birliği **kesin ve tam olarak** tamamlandı, tıpkı bir yapbozun son parçasının yerine oturması gibi.\n💡 Sınav Şifresi: **'Turnadağ = son beylik = Anadolu birliği TAMAM'**; 'kesin' kelimesi görürsen Turnadağ.",
+    "pattern": "turnadağ savaşı|turnadağ|dulkadiroğulları|anadolu türk siyasi birliğinin kesin"
+  },
+  {
+    "id": "tar4_ridaniye_ve_mercidabik",
+    "term": "Mercidabık ve Ridaniye Savaşları (Memlûklerin Yıkılışı)",
+    "sayfa": 104,
+    "tanim": "Yavuz'un Mısır Seferi'nde **Memlûkleri yıktığı** iki zafer (1516-1517); Suriye, Filistin, Mısır, Hicaz Osmanlı'ya katıldı, **halifelik ve Kutsal Emanetler** İstanbul'a taşındı, Baharat Yolu denetim altına alındı.\n💡 Sınav Şifresi: **'Mercidabık = Suriye kapısı', 'Ridaniye = Mısır + halifelik'**; halifelik sorusunun cevabı hep Yavuz-Mısır.",
+    "pattern": "mercidabık|ridaniye|memlûk devleti|suriye, filistin, mısır ve hicaz"
+  },
+  {
+    "id": "tar4_preveze_deniz_zaferi",
+    "term": "Preveze Deniz Zaferi (1538)",
+    "sayfa": 110,
+    "tanim": "**Barbaros Hayreddin Paşa'nın** Andrea Doria komutasındaki Haçlı donanmasını bozguna uğrattığı (1538) ve Akdeniz'i **kesin olarak Türk gölü** yapan büyük zafer; bugün hâlâ **Donanma Günü** olarak kutlanır.\n💡 Sınav Şifresi: **'Preveze = Barbaros = Akdeniz Türk gölü'**; 'kesin' + 'Barbaros' kelimeleri bir aradaysa Preveze.",
+    "pattern": "preveze deniz savaşı|preveze deniz zaferi|preveze|barbaros hayreddin"
+  },
+  {
+    "id": "tar4_inebahti_deniz_savasi",
+    "term": "İnebahtı Deniz Muharebesi (1571)",
+    "sayfa": 114,
+    "tanim": "Kıbrıs'ın fethine misilleme olarak Haçlıların **Osmanlı donanmasını İnebahtı Körfezi'nde yaktığı** ağır mağlubiyet (1571); yalnızca **Kılıç Ali Paşa** filosunu kurtarmayı başarmıştır.\n💡 Sınav Şifresi: **'İnebahtı = MAĞLUBİYET + Kılıç Ali Paşa kurtardı'**; 'donanma yakıldı' ifadesi görürsen İnebahtı.",
+    "pattern": "inebahtı deniz muharebesi|inebahtı deniz savaşı|inebahtı"
+  },
+  {
+    "id": "tar4_cografi_kesifler_ve_del_kano",
+    "term": "Coğrafi Keşifler ve Macellan - Del Kano",
+    "sayfa": 120,
+    "tanim": "Macellan Filipinler'de ölünce seyahati tamamlayıp **Dünya'nın yuvarlaklığını fiilen kanıtlayan** denizci **Del Kano**'dur; tıpkı bir bayrak yarışında son koşucunun ipi göğüslemesi gibi.\n💡 Sınav Şifresi: **'Macellan başladı, Del Kano bitirdi'**; 'Dünya yuvarlak' sorusunun cevabı Del Kano.",
+    "pattern": "del kano|macellan ile birlikte|macellan|del cano"
+  },
+  {
+    "id": "tar4_topkapi_sarayi_harem",
+    "term": "Topkapı Sarayı ve Harem",
+    "sayfa": 130,
+    "tanim": "Fatih'in yaptırdığı **yönetim merkezi Topkapı Sarayı'nda** padişahın ailesinin ve cariyelerin yaşadığı, **yüksek terbiye aldığı özel bölüm**; adeta sarayın 'iç bahçesi' gibidir.\n💡 Sınav Şifresi: **'Harem = aile + cariye + terbiye'**, **'Topkapı = Fatih + yönetim merkezi'**; harem sorusu hep 'özel yaşam alanı' der.",
+    "pattern": "^Harem$|\\\\\\\\btopkapı sarayı’ndaki “harem”\\\\\\\\b|\\\\\\\\bharem bölümü\\\\\\\\b|\\\\\\\\bharem\\\\\\\\b"
+  },
+  {
+    "id": "tar4_enderun_mektebi",
+    "term": "Enderun Mektebi",
+    "sayfa": 132,
+    "tanim": "Saray içindeki **iç okul**; devşirme sisteminden gelen üstün yetenekli çocukların **devlet adamı, vezir, komutan ve sanatçı** olarak yetiştirildiği elit eğitim kurumu; Osmanlı'nın 'yetenek akademisi' gibidir.\n💡 Sınav Şifresi: **'Enderun = iç okul + devşirme + elit yetiştirme'**; 'saray içi okul' ifadesi görürsen Enderun.",
+    "pattern": "^Enderun Mektebi$|^Enderun$|\\\\\\\\benderun mektebi\\\\\\\\b|\\\\\\\\benderun\\\\\\\\b"
+  },
+  {
+    "id": "tar4_reisulkuttab",
+    "term": "Reisülküttâb",
+    "sayfa": 136,
+    "tanim": "Divan'da **kâtiplerin başı** iken zamanla devletler arası yazışmaları yürüten ve **Osmanlı'nın Hariciye (Dışişleri) Bakanı** hâline gelen bürokrat; bugünün 'dışişleri müsteşarı' gibi düşünülebilir.\n💡 Sınav Şifresi: **'Reisülküttâb = kâtiplerin başı → dışişleri'**; 'yazışma + dış ilişki' kelimeleri bir aradaysa Reisülküttâb.",
+    "pattern": "^Reisülküttâb$|^Reisülküttab$|\\\\\\\\breisülküttâb\\\\\\\\b|\\\\\\\\breisülküttab\\\\\\\\b"
+  },
+  {
+    "id": "tar4_sadrazam",
+    "term": "Sadrazam (Veziriazam)",
+    "sayfa": 134,
+    "tanim": "Padişahtan sonra **devletin en yetkili kişisi**; padişahın **mutlak vekili ve mührünün taşıyıcısı**, ordu başında sefere çıktığında **'Serdar-ı Ekrem'** unvanını alan hükümet başkanı.\n💡 Sınav Şifresi: **'Sadrazam = mühür + vekil + Serdar-ı Ekrem'**; 'padişah mührü' ifadesi görürsen Sadrazam.",
+    "pattern": "^Sadrazam$|^Veziriazam$|\\\\\\\\bsadrazam\\\\\\\\b|\\\\\\\\bveziriazam\\\\\\\\b|\\\\\\\\bserdar-ı ekrem\\\\\\\\b"
+  },
+  {
+    "id": "tar4_kazasker",
+    "term": "Kazasker (Kadıasker)",
+    "sayfa": 135,
+    "tanim": "Divan'da **adalet ve eğitim işlerine bakan**, taşradaki **kadı ve müderrislerin atama-görevden alma** işlemlerini yürüten **ilmiye sınıfı reisi**; bugünün 'adalet + eğitim bakanı' karışımı gibidir.\n💡 Sınav Şifresi: **'Kazasker = kadı + müderris atama + ilmiye reisi'**; 'adalet ve eğitim' kelimeleri bir aradaysa Kazasker.",
+    "pattern": "^Kazasker$|\\\\\\\\bkazasker\\\\\\\\b|\\\\\\\\bkadıasker\\\\\\\\b"
+  },
+  {
+    "id": "tar4_defterdar",
+    "term": "Defterdar",
+    "sayfa": 135,
+    "tanim": "Osmanlı'nın **maliye bakanı** gibi düşün: bütçeyi hazırlayan, gelir-gideri kaydeden ve hazineyi yöneten en üst düzey maliye bürokratıdır (bugünün Hazine ve Maliye Bakanı + Merkez Bankası başkanı karışımı).\n💡 Sınav Şifresi: **\"Bütçe + hazine + gelir-gider kaydı\"** üçlüsünü görüyorsan cevap Defterdar; Nişancı ile karıştırma, o tuğra çeker.",
+    "pattern": "^Defterdar$|\\\\\\\\bdefterdar\\\\\\\\b|\\\\\\\\bhazineyi ilgilendiren konularda\\\\\\\\b"
+  },
+  {
+    "id": "tar4_nisanci",
+    "term": "Nişancı",
+    "sayfa": 136,
+    "tanim": "Devletin **noter + tapu kadastro müdürü** gibi çalışır: ferman ve beratlara padişahın **tuğrasını** çeker, fethedilen toprakların **tahririni** yapıp tımar defterlerini tutar.\n💡 Sınav Şifresi: **\"Tuğra çekmek\"** ve **\"tahrir/tımar defteri\"** anahtar kelimeleri → Nişancı. Defterdar maliye, Nişancı yazı-tuğra-kayıt işi.",
+    "pattern": "^Nişancı$|\\\\\\\\bnişancı\\\\\\\\b|\\\\\\\\btuğra çeken\\\\\\\\b"
+  },
+  {
+    "id": "tar4_dirlik_topraklari",
+    "term": "Dirlik Toprakları (Has, Zeamet, Tımar)",
+    "sayfa": 145,
+    "tanim": "Geliri devlet görevlilerine **maaş yerine** tahsis edilen mirî topraklardır; büyükten küçüğe **Has (100 bin akçe üstü – hanedan/vezirler) → Zeamet (20-100 bin – orta kademe) → Tımar (3-20 bin – askerler)** şeklinde üç kademedir. Öşrî toprak ise mülk arazidir, dirlik değildir.\n💡 Sınav Şifresi: Akçe sıralaması **\"Has > Zeamet > Tımar\"**; en üst Has, en alt Tımar. \"Mülk arazi\" denince dirlik değil **Öşür**.",
+    "pattern": "dirlik toprakları[a-zçğıöşü]*|has, zeamet|dirlik arazisi"
+  },
+  {
+    "id": "tar4_lonca_teskilati",
+    "term": "Lonca Teşkilatı",
+    "sayfa": 150,
+    "tanim": "Osmanlı şehirlerindeki esnafın **Ahilik geleneğinden** gelen meslek örgütüdür: **çırak → kalfa → usta** yetiştirir, üretimi ve **narhı (fiyatı)** denetler.\n💡 Sınav Şifresi: **\"Çırak-kalfa-usta\"** ve **\"narh\"** kelimeleri → Lonca. Ahilik'in şehirli-esnaf versiyonu olarak kodla.",
+    "pattern": "^Lonca Teşkilatı$|^Lonca$|\\\\\\\\blonca teşkilatı\\\\\\\\b|\\\\\\\\blonca\\\\\\\\b"
+  },
+  {
+    "id": "tar4_millet_kavrami",
+    "term": "Osmanlı Millet Sistemi",
+    "sayfa": 155,
+    "tanim": "Osmanlı toplumu **ırk veya dil** esasına göre değil, **din ve mezhep** aidiyetine göre cemaatlere (Müslümanlar, Ortodoks, Ermeni, Yahudi) ayrılarak yönetilirdi; bu hoşgörü sistemi her cemaate kendi dini ve hukuki işlerinde özerklik tanırdı.\n💡 Sınav Şifresi: **\"Din/mezhep esası\"** → Millet Sistemi. \"Irk/dil esası\" şıkkı tuzaktır, Osmanlı'da millet = din demektir.",
+    "pattern": "^Millet$|\\\\\\\\bosmanlı millet sistemi\\\\\\\\b|\\\\\\\\bmillet sistemi\\\\\\\\b"
+  },
+  {
+    "id": "tar5_zitvatorok_antlasmasi",
+    "term": "Zitvatorok Antlaşması (1606)",
+    "sayfa": 18,
+    "tanim": "1606'da Osmanlı ile Avusturya arasında imzalanan bu antlaşmayla **Eğri ve Kanije Osmanlı'da kaldı**, ama Avusturya arşidükü protokolde padişaha **denk** sayıldı — yani 1533'teki Osmanlı siyasi üstünlüğü artık bitti. Tıpkı bir şirketin rakibini 'eşit ortak' kabul etmesi gibi, Osmanlı da Avusturya'yı masada denkleştirdi.\n💡 Sınav Şifresi: 'Arşidük = Padişah' eşitliği + '1533 üstünlüğünün bitişi' → Zitvatorok. Eğri-Kanije Osmanlı'da kalır, ama protokol eşitliği ilk kez verilir.",
+    "pattern": "zitvatorok antlaşması|zitvatorok|kanije ve estergon kaleleri"
+  },
+  {
+    "id": "tar5_kasri_sirin_antlasmasi",
+    "term": "Kasr-ı Şirin Antlaşması (1639)",
+    "sayfa": 22,
+    "tanim": "IV. Murad'ın **Bağdat Seferi** sonrası 1639'da Safevilerle imzalanan antlaşma; **Bağdat Osmanlı'da, Revan (Erivan) İran'da** kaldı ve bugünkü Türkiye-İran sınırının büyük kısmını çizdi. Yani bu antlaşma, iki komşu arasındaki 'duvarın hattı' gibi asırlarca değişmedi.\n💡 Sınav Şifresi: 'Bağdat bizde, Revan onlarda' + 'bugünkü İran sınırı' → Kasr-ı Şirin. IV. Murad = Bağdat fatihi.",
+    "pattern": "kasr-ı şirin|kasrı şirin|kasr-i sirin"
+  },
+  {
+    "id": "tar5_kerden_antlasmasi",
+    "term": "Kerden Antlaşması (1746 - II. Kasr-ı Şirin)",
+    "sayfa": 24,
+    "tanim": "1746'da İran ile imzalanan ve **Kasr-ı Şirin sınırlarını aynen teyit eden** barış antlaşmasıdır; bu yüzden '**II. Kasr-ı Şirin**' olarak da anılır. Yani iki ülke 'eski sözleşmeyi yeniden imzaladı' demiştir.\n💡 Sınav Şifresi: 'II. Kasr-ı Şirin' kodlaması → Kerden. Sınırı değiştirmez, sadece onaylar.",
+    "pattern": "^Kerden$|\\\\\\\\bkerden antlaşması\\\\\\\\b|\\\\\\\\bkerden\\\\\\\\b"
+  },
+  {
+    "id": "tar5_cehrin_seferi",
+    "term": "Çehrin Seferi ve Bahçesaray Antlaşması (1678-1681)",
+    "sayfa": 26,
+    "tanim": "Merzifonlu Kara Mustafa Paşa'nın Rusya üzerine yaptığı **ilk Osmanlı askerî seferi** (Çehrin) ve ardından 1681'de imzalanan **Osmanlı-Rusya arasındaki ilk resmî barış antlaşması** (Bahçesaray). Yani iki imparatorluk ilk kez 'resmen el sıkıştı'.\n💡 Sınav Şifresi: 'Rusya ile İLK barış' + 'Çehrin Seferi' → Bahçesaray (1681). İlk askerî temas + ilk resmî antlaşma ikilisi.",
+    "pattern": "^Çehrin$|\\\\\\\\bçehrin seferi\\\\\\\\b|\\\\\\\\bçehrin\\\\\\\\b|\\\\\\\\bcehrin\\\\\\\\b"
+  },
+  {
+    "id": "tar5_karlofca_antlasmasi",
+    "term": "Karlofça Antlaşması (1699)",
+    "sayfa": 30,
+    "tanim": "II. Viyana Kuşatması sonrası Kutsal İttifak'la 1699'da imzalanan antlaşma; **Macaristan ve Erdel kaybedildi**, Osmanlı Batı'da **ilk kez büyük çapta toprak kaybetti** ve **Gerileme Dönemi** başladı. Tıpkı bir dağcının zirveden ilk büyük düşüşü gibi, inişin başlangıç noktasıdır.\n💡 Sınav Şifresi: 'İlk büyük toprak kaybı' + 'Gerileme'nin başlangıcı' + 'Macaristan-Erdel gitti' → Karlofça (1699).",
+    "pattern": "karlofça antlaşması|karlofça|karlofca"
+  },
+  {
+    "id": "tar5_prut_antlasmasi",
+    "term": "Prut Antlaşması (1711)",
+    "sayfa": 34,
+    "tanim": "1711'de Baltacı Mehmed Paşa'nın **Prut Nehri kıyısında Rus Çarı I. Petro'yu kuşatması** sonucu imzalanan antlaşma; **Azak Kalesi geri alındı** ve Karlofça kayıplarını telafi umudu doğdu. Yani Osmanlı 'kaybettiğim yerleri geri alabilirim' umudunu ilk kez burada tattı.\n💡 Sınav Şifresi: 'Prut'ta Petro kuşatıldı' + 'Azak geri alındı' → Prut (1711). Karlofça'nın ilk telafi sinyali.",
+    "pattern": "^Prut$|\\\\\\\\bprut antlaşması\\\\\\\\b|\\\\\\\\bprut savaşı\\\\\\\\b|\\\\\\\\bprut\\\\\\\\b"
+  },
+  {
+    "id": "tar5_pasarofca_antlasmasi",
+    "term": "Pasarofça Antlaşması (1718)",
+    "sayfa": 36,
+    "tanim": "1718'de Avusturya ve Venedik'le imzalanan antlaşma; **Belgrad kaybedildi**, Osmanlı Batı'nın **askerî-teknik üstünlüğünü kabul edip savunmaya çekildi** ve **Lale Devri** başladı. Yani Osmanlı 'artık onlar daha güçlü, ben savunmada kalayım' diyerek kabullendi.\n💡 Sınav Şifresi: 'Belgrad gitti' + 'Lale Devri başladı' + 'savunmaya çekilme' → Pasarofça (1718).",
+    "pattern": "^Pasarofça$|\\\\\\\\bpasarofça antlaşması\\\\\\\\b|\\\\\\\\bpasarofça\\\\\\\\b|\\\\\\\\bpasarofca\\\\\\\\b"
+  },
+  {
+    "id": "tar5_kucuk_kaynarca",
+    "term": "Küçük Kaynarca Antlaşması (1774)",
+    "sayfa": 40,
+    "tanim": "1774'te Rusya ile imzalanan ağır antlaşma; **Kırım bağımsız oldu** (ilk kez halkı Müslüman bir toprak kaybedildi), **ilk kez savaş tazminatı ödendi** ve Rusya'ya **Karadeniz'de serbest ticaret** ile **Ortodoksları koruma hakkı** verildi. Yani Rusya, Osmanlı'nın iç işlerine karışma kapısını ilk kez araladı.\n💡 Sınav Şifresi: 'Kırım bağımsız' + 'ilk tazminat' + 'Ortodoks himayesi' üçlüsü → Küçük Kaynarca (1774). En ağır antlaşma.",
+    "pattern": "küçük kaynarca antlaşması|küçük kaynarca|kucuk kaynarca"
+  },
+  {
+    "id": "tar5_ekber_ve_ersed",
+    "term": "Ekber ve Erşed Sistemi",
+    "sayfa": 48,
+    "tanim": "I. Ahmed döneminde getirilen kural: tahta hanedanın **en yaşlı (ekber)** ve **en olgun/aklı başında (erşed)** üyesi geçer. Taht kavgalarını bitirdi ama **sancağa çıkışı kaldırıp Kafes usulünü** getirdiği için tecrübesiz padişahlar yetişti — yani 'kavga bitti ama tecrübe de bitti'.\n💡 Sınav Şifresi: 'Ekber = en yaşlı, Erşed = en olgun' + 'Kafes usulü' + 'tecrübesiz padişah' → Ekber-Erşed. Sancağa çıkışın kaldırılması bu sistemin sonucudur.",
+    "pattern": "ekber ve erşed|ekber ve erşed uygulaması|ekber-i erşed"
+  },
+  {
+    "id": "tar5_yeniceri_isyanlari",
+    "term": "Yeniçeri (İstanbul / Merkez) İsyanları",
+    "sayfa": 52,
+    "tanim": "17. yüzyılda **cülus bahşişinin eksik ödenmesi** ve **ayarı düşük akçeyle ulufe verilmesi** yeniçerileri isyana sürükledi; sonuçta **Genç Osman şehit edildi** ve sık sık padişah-sadrazam değişti. Yani 'maaşı kesilen asker, patronunu değiştirir' mantığıyla İstanbul kaynıyordu.\n💡 Sınav Şifresi: 'Cülus bahşişi + ayarı düşük akçe' ikilisi → Yeniçeri isyanları. Genç Osman'ın şehit edilmesi bu isyanların en acı sonucudur.",
+    "pattern": "yeniçeri isyanları[a-zçğıöşü]*|yeniçeri isyanı|istanbul isyanları"
+  },
+  {
+    "id": "tar5_koci_bey_risalesi",
+    "term": "Koçi Bey Risalesi",
+    "sayfa": 56,
+    "tanim": "17. yüzyılda **IV. Murad ve Sultan İbrahim'e sunulan**, rüşvet-iltimas-tımar ve yeniçeri ocaklarındaki bozulmaları tespit eden **ilk kapsamlı ıslahat raporu**. Yani devletin 'check-up raporu' gibi, hastalıkları tek tek yazdı.\n💡 Sınav Şifresi: 'İlk kapsamlı ıslahat raporu' + 'IV. Murad'a sunuldu' → Koçi Bey Risalesi. Rüşvet-iltimas-tımar bozulması üçlüsü.",
+    "pattern": "koçi bey|koci bey"
+  },
+  {
+    "id": "tar5_martin_luther",
+    "term": "Martin Luther ve Reform",
+    "sayfa": 64,
+    "tanim": "Almanya'da Wittenberg Kilisesi kapısına astığı **95 maddelik bildiriyle** Katolik Kilisesi'nin **endüljans (cennetten arsa satma)** uygulamasına karşı çıkan ve **Protestanlık** mezhebini başlatan din adamı. Yani 'kilisenin kapısına ilan asarak' reformun fitilini yaktı.\n💡 Sınav Şifresi: '95 maddelik bildiri' + 'endüljans karşıtlığı' + 'Protestanlık' üçlüsü → Martin Luther. Wittenberg Kilisesi kapısı = Reform'un başlangıç sahnesi.",
+    "pattern": "martin luther|protestanlık hareketini başlatan"
+  },
+  {
+    "id": "tar5_newton_yercekimi",
+    "term": "Isaac Newton",
+    "sayfa": 70,
+    "tanim": "Elmanın düşüşünü izleyerek **Evrensel Kütle Çekim Yasası**'nı bulan ve hareket yasalarıyla Klasik Fiziğin temelini atan İngiliz bilim insanı; tıpkı bir GPS uydusunun yerçekimini hesaplayıp konumunu bulması gibi, o da doğanın görünmez matematiğini çözdü.\n💡 Sınav Şifresi: **Elma + İngiliz + Kütle Çekim + Hareket Yasaları** — 'yerçekimini bulan adam' denince akla Newton gelir, Galileo veya Kopernik değil.",
+    "pattern": "^Newton$|\\\\\\\\bnewton\\\\\\\\b|\\\\\\\\bevrensel çekim yasasını\\\\\\\\b"
+  },
+  {
+    "id": "tar5_hendesehane",
+    "term": "Hendesehâne (1734)",
+    "sayfa": 80,
+    "tanim": "I. Mahmud döneminde **Humbaracı Ahmet Paşa** (Comte de Bonneval) tarafından Üsküdar'da açılan, Osmanlı'nın **Batı tarzı ilk askerî mühendislik okulu**; bugünün mühendislik fakültelerinin atası gibi düşünülebilir.\n💡 Sınav Şifresi: **1734 + I. Mahmud + Humbaracı Ahmet Paşa + Üsküdar + Hendese (geometri/mühendislik)** — 'Batı tarzı ilk askerî mühendislik okulu' sorusunun tek cevabı.",
+    "pattern": "^Hendesehane$|^Hendesehâne$|\\\\\\\\bhendesehane\\\\\\\\b|\\\\\\\\bhendesehâne\\\\\\\\b|\\\\\\\\bhumbaracı ahmet paşa\\\\\\\\b"
+  },
+  {
+    "id": "tar5_irad_i_cedit",
+    "term": "İrâd-ı Cedît Hazinesi",
+    "sayfa": 86,
+    "tanim": "III. Selim'in **Nizam-ı Cedit** ordusunun silah, üniforma ve maaş giderlerini karşılamak için devlet hazinesinden **ayrı** kurduğu özel gelir fonu; bugünün 'proje özel bütçesi' veya 'savunma sanayi fonu' gibi düşünülebilir.\n💡 Sınav Şifresi: **III. Selim + Nizam-ı Cedit ordusunun giderleri + ayrı hazine** — 'İrad-ı Cedid' kelimesi 'yeni irade/gelir' demek; sadece YENİ ORDUNUN masraflarına bakar, genel hazine değildir.",
+    "pattern": "^İrad-ı Cedit$|^İrad-ı Cedid$|\\\\\\\\birad-ı cedit\\\\\\\\b|\\\\\\\\birad-ı cedid\\\\\\\\b|\\\\\\\\birâd-ı cedît\\\\\\\\b"
+  },
+  {
+    "id": "tar5_nizam_i_cedit",
+    "term": "Nizam-ı Cedit Dönemi",
+    "sayfa": 84,
+    "tanim": "III. Selim'in Osmanlı'yı her alanda **Batı standartlarına** taşımak için başlattığı yenilik hareketleri ve bu dönemde kurulan **Avrupaî modern ordu**; Akka'da Napolyon'u durdurarak gücünü kanıtlamıştır.\n💡 Sınav Şifresi: **III. Selim + Batılılaşma + Yeni Düzen + Akka'da Napolyon'u yenen ordu** — 'Nizam-ı Cedit' = 'Yeni Düzen'; II. Mahmud'un 'Nizam-ı Cedid'i kaldırıp Sekban-ı Cedid kurduğunu karıştırma.",
+    "pattern": "nizam-ı cedit|nizam-ı cedid|nizâm-ı cedîd"
+  },
+  {
+    "id": "tar6_tanzimat_fermani",
+    "term": "Tanzimat Fermanı (Gülhane Hatt-ı Hümayunu - 1839)",
+    "sayfa": 95,
+    "tanim": "Sultan Abdülmecid'in 1839'da Mustafa Reşit Paşa'ya okuttuğu bu ferman, padişahın **kendi gücünün üstünde kanun** olduğunu ilk kez kabul ettiği 'demokrasiye ilk adım' belgesidir; tıpkı bir kralın 'artık ben de kurallara uyacağım' demesi gibi.\n💡 Sınav Şifresi: **Gülhane Hatt-ı Hümayunu = 1839 = Abdülmecid + Mustafa Reşit Paşa**. Ayrıt edici: **Meclis YOK** (sadece ferman), 'kanun üstünlüğü ilk kez'.",
+    "pattern": "tanzimat fermanı|tanzimat fermani|gülhane hatt-ı hümayunu"
+  },
+  {
+    "id": "tar6_kanun_i_esasi",
+    "term": "Kanun-ı Esasî ve I. Meşrutiyet (1876)",
+    "sayfa": 105,
+    "tanim": "1876'da II. Abdülhamid'in ilan ettiği **ilk yazılı anayasa**; halk ilk kez sandıkla yönetime katıldı, Meclis-i Mebusan (seçilen) + Meclis-i Ayan (atanan) iki kanatlı bir parlamento kuruldu.\n💡 Sınav Şifresi: **1876 = Kanun-ı Esasî = I. Meşrutiyet = II. Abdülhamid**. Kodlama: **'İlk anayasa + ilk meclis'** — Mebusan seçilir, Ayan atanır.",
+    "pattern": "^Kanun-ı Esasi$|^Kanun-ı Esasî$|\\\\\\\\bkanun-ı esasi\\\\\\\\b|\\\\\\\\bkanun-i esasi\\\\\\\\b|\\\\\\\\bmeşrutiyet yönetimine\\\\\\\\b|\\\\\\\\bmeşrutiyet\\\\\\\\b"
+  },
+  {
+    "id": "tar6_halepa_fermani",
+    "term": "Halepa Fermanı (1878)",
+    "sayfa": 110,
+    "tanim": "93 Harbi (1877-78 Osmanlı-Rus Savaşı) sonrası Girit Rumlarının isyanını dindirmek için 1878'de çıkarılan ferman; Girit'e **geniş özerklik + Rum vali + vergi muafiyeti** verildi, yani adeta 'yarı bağımsızlık' kapısı aralandı.\n💡 Sınav Şifresi: **Halepa = 1878 = Girit = 93 Harbi sonrası**. Anahtar: **'Rum vali atanması'** — Girit'in elden çıkışının ilk adımı.",
+    "pattern": "halepa fermanı|halepa fermani|halepa"
+  },
+  {
+    "id": "tar6_paris_antlasmasi_kirim",
+    "term": "Paris Barış Antlaşması ve Kırım Savaşı (1853-1856)",
+    "sayfa": 115,
+    "tanim": "Rusya'ya karşı İngiltere-Fransa ile ittifak kurulan Kırım Savaşı (1853-56) sonunda imzalanan Paris Antlaşması'yla Osmanlı **ilk kez bir Avrupa devleti sayıldı**, toprak bütünlüğü garanti altına alındı ve **ilk dış borç** İngiltere'den alındı.\n💡 Sınav Şifresi: **Kırım Savaşı = ilk dış borç + ilk telgraf + ilk demiryolu**. Paris Antlaşması = **'Osmanlı Avrupalı sayıldı'** + toprak garantisi.",
+    "pattern": "kırım savaşı|paris antlaşması|paris barış antlaşması"
+  },
+  {
+    "id": "tar6_denge_politikasi",
+    "term": "Denge Politikası",
+    "sayfa": 120,
+    "tanim": "19. yüzyılda gücü zayıflayan Osmanlı'nın, büyük devletlerin (İngiltere, Fransa, Rusya, Almanya) birbirleriyle çatışan çıkarlarını kullanarak ayakta kalma stratejisi; tıpkı iki kavgacı arkadaşın arasında kalıp ikisini de idare eden bir öğrenci gibi.\n💡 Sınav Şifresi: **'Büyük devletleri birbirine düşürüp hayatta kalma'**. Anahtar kelime: **çıkar çatışmasından yararlanma** — savaş değil, diplomasi.",
+    "pattern": "denge politikası|denge siyaseti|denge stratejisi"
+  },
+  {
+    "id": "tar6_sark_meselesi",
+    "term": "Şark Meselesi (Doğu Sorunu)",
+    "sayfa": 122,
+    "tanim": "Avrupalıların Osmanlı'yı parçalama, topraklarını paylaşma ve Türkleri Avrupa'dan atma planlarına verilen isim; ilk kez **1815 Viyana Kongresi'nde Rus Çarı I. Aleksandr** tarafından diplomatik terim olarak kullanıldı.\n💡 Sınav Şifresi: **Şark Meselesi = 1815 Viyana Kongresi + Rus Çarı I. Aleksandr**. Anahtar: **'Osmanlı'yı parçalama projesi'** — Doğu Sorunu.",
+    "pattern": "şark meselesi|sark meselesi|doğu sorunu"
+  },
+  {
+    "id": "tar6_yunan_projesi",
+    "term": "Grek (Yunan) Projesi",
+    "sayfa": 124,
+    "tanim": "Rus Çariçesi **II. Katerina** ile Avusturya İmparatoru **II. Joseph**'in gizlice hazırladığı plan; Osmanlı'yı paylaşıp **İstanbul merkezli bir Bizans (Grek) İmparatorluğu** kurmayı hedefliyordu.\n💡 Sınav Şifresi: **Katerina + Joseph = Grek Projesi = İstanbul merkezli Bizans**. Kodlama: **'İki II'li (II. Katerina + II. Joseph) → Bizans'ı diriltme'**.",
+    "pattern": "yunan \\\\\\\\(grek\\\\\\\\) projesi|grek projesi|yunan projesi"
+  },
+  {
+    "id": "tar6_osmanlicilik",
+    "term": "Osmanlıcılık Fikir Akımı",
+    "sayfa": 130,
+    "tanim": "Genç Osmanlıların (Jön Türkler) savunduğu akım; dil, din, ırk farkı gözetmeden herkesi **eşit haklı 'Osmanlı vatandaşı'** sayarak devleti dağılmaktan kurtarma fikri — yani 'tek millet, tek bayrak' hayali.\n💡 Sınav Şifresi: **Osmanlıcılık = Genç Osmanlılar = 'eşit vatandaşlık'**. Ayrıt edici: **din/ırk farkı gözetmez** (İslamcılık ve Türkçülük'ten farkı budur).",
+    "pattern": "^Osmanlıcılık$|\\\\\\\\bosmanlıcılık fikir akımı\\\\\\\\b|\\\\\\\\bosmanlıcılık\\\\\\\\b"
+  },
+  {
+    "id": "tar6_arnavutluk_bagimsizlik",
+    "term": "Arnavutluk'un Bağımsızlığı (1912)",
+    "sayfa": 135,
+    "tanim": "1912'de I. Balkan Savaşı kargaşasından yararlanıp Osmanlı'dan ayrılan **son Balkan devleti**; bu kopuşla birlikte 'herkes Osmanlı vatandaşı olur' hayali olan **Osmanlıcılık akımı tamamen çöktü**.\n💡 Sınav Şifresi: **Arnavutluk = 1912 = son ayrılan Balkan devleti = Osmanlıcılığın çöküşü**. Kodlama: **'Arnavut → Osmanlıcılığı bitirdi'**.",
+    "pattern": "^Arnavutluk$|\\\\\\\\barnavutluk\\\\\\\\b|\\\\\\\\b1912-1913 balkan savaşlarından faydalanarak\\\\\\\\b"
+  },
+  {
+    "id": "tar6_esham_sistemi",
+    "term": "Esham-ı Cedide (İç Borçlanma)",
+    "sayfa": 140,
+    "tanim": "Devletin nakit ihtiyacını karşılamak için **iç borçlanma** yoluyla çıkardığı faizli hazine tahvilleri; yani devletin kendi vatandaşından 'ileride gelirden pay vereceğim' diyerek borç alması — bugünkü **devlet tahvili**nin Osmanlı versiyonu.\n💡 Sınav Şifresi: **Esham-ı Cedide = İÇ borçlanma** (dış değil!). Kodlama: **'Esham = hisse senedi gibi, halka satılan faizli kâğıt'** — Düyun-u Umumiye'ye giden yolun başı.",
+    "pattern": "esham-ı cedide|esham sistemi|esham"
+  }
+]

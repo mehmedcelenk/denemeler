@@ -90,50 +90,53 @@ export function toggleQuestionMeal(qId: number | string, event?: Event): void {
   const q = state.bookletQuestions.find(item => item.id === id) || state.allData.find(item => item.id === id);
   if (!q) return;
 
-  const card = document.getElementById(`bq_${id}`);
-  const btn = document.getElementById(`btnMeal_${id}`);
-  const stem = document.getElementById(`stem_${id}`);
-  if (!card) return;
-
   const isCurrentlyActive = activeMealQuestionIds.has(id);
+  const targetCards = document.querySelectorAll<HTMLElement>(`[data-qid="${id}"]`);
+  if (targetCards.length === 0) return;
 
   if (isCurrentlyActive) {
     activeMealQuestionIds.delete(id);
-    card.classList.remove('has-interlinear');
-    if (btn) {
+    targetCards.forEach(card => {
+      card.classList.remove('has-interlinear');
+      const stem = card.querySelector<HTMLElement>(`#stem_${id}`);
+      if (stem) {
+        stem.innerHTML = enrichEnglishVocab(q.soru_xray || q.soru);
+      }
+      ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
+        const optChoice = (q.secenekler as Record<string, string>)[letter];
+        if (optChoice) {
+          const textContent = card.querySelector(`#opt_${id}_${letter} .choice-text-content`);
+          if (textContent) {
+            textContent.innerHTML = enrichEnglishVocab(optChoice);
+          }
+        }
+      });
+    });
+    document.querySelectorAll<HTMLElement>(`#btnMeal_${id}`).forEach(btn => {
       btn.classList.remove('active');
       btn.setAttribute('title', 'Kelime Meali (Alt Çeviri) Aç');
-    }
-    if (stem) {
-      stem.innerHTML = enrichEnglishVocab(q.soru_xray || q.soru);
-    }
-    ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
-      const optChoice = (q.secenekler as Record<string, string>)[letter];
-      if (optChoice) {
-        const textContent = card.querySelector(`#opt_${id}_${letter} .choice-text-content`);
-        if (textContent) {
-          textContent.innerHTML = enrichEnglishVocab(optChoice);
-        }
-      }
     });
   } else {
     activeMealQuestionIds.add(id);
-    card.classList.add('has-interlinear');
-    if (btn) {
+    targetCards.forEach(card => {
+      card.classList.add('has-interlinear');
+      const stem = card.querySelector<HTMLElement>(`#stem_${id}`);
+      if (stem) {
+        stem.innerHTML = renderInterlinearText(q.soru_xray || q.soru);
+      }
+      ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
+        const optChoice = (q.secenekler as Record<string, string>)[letter];
+        if (optChoice) {
+          const textContent = card.querySelector(`#opt_${id}_${letter} .choice-text-content`);
+          if (textContent) {
+            textContent.innerHTML = renderInterlinearText(optChoice);
+          }
+        }
+      });
+    });
+    document.querySelectorAll<HTMLElement>(`#btnMeal_${id}`).forEach(btn => {
       btn.classList.add('active');
       btn.setAttribute('title', 'Kelime Mealini Kapat');
-    }
-    if (stem) {
-      stem.innerHTML = renderInterlinearText(q.soru_xray || q.soru);
-    }
-    ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
-      const optChoice = (q.secenekler as Record<string, string>)[letter];
-      if (optChoice) {
-        const textContent = card.querySelector(`#opt_${id}_${letter} .choice-text-content`);
-        if (textContent) {
-          textContent.innerHTML = renderInterlinearText(optChoice);
-        }
-      }
     });
   }
 }

@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdakilerden hangisi İslami İlimler ile ilgili doğru bir bilgi değildir?",
+    "secenekler": {
+      "A": "İslam Dini’nin temel iki kaynağı olan Kur’an ve Hz. Peygamber’in sünnetine dayanırlar.",
+      "B": "İslam Dini’ni dışarıdan ve tarafsız olarak incelerler.",
+      "C": "İslam Dini’nin ilkeleri doğrultusunda oluşmuş, Müslümanlar tarafından geliştirilmişlerdir.",
+      "D": "Müslümanlar’ın dînî açıdan sorumluluklarını ortaya koyarlar.",
+      "E": "Müslümanların anlam dünyalarını, değer yargılarını, hayat anlayışlarını biçimlendirirler."
+    },
+    "ans": "B",
+    "solution": "İslami ilimler İslam Dini’nin temel iki kaynağı olan Kur’an ve Hz. Peygamber’in sünnetine yani\n         uygulamalarına dayanırlar. Dolayısıyla bu ilimler, İslam Dini’nin ilkeleri doğrultusunda oluşmuş,\n         Müslümanlar tarafından geliştirilmiş, İslam Dini’ne içeriden bakan ilimlerdir. İslamî İlimler, İslam\n         Dini’ni dışarıdan ve tarafsız olarak incelemezler. Müslümanlar’ın dînî açıdan sorumluluklarını ortaya\n         koyan, kural koyucu (normatif) ve bağlayıcı nitelikte ilim dallarıdır. Müslümanların anlam\n         dünyalarını, değer yargılarını, hayat anlayışlarını biçimlendirirler."
+  },
+  {
+    "q_num": 2,
+    "stem": "Ara sıra ve gelişigüzel yapılan şeylere değil, adet niteliğinde, devamlı ve sürekli, aynı zamanda bilinçli davranışları ifade eder, tanımı hangi kavrama aittir?",
+    "secenekler": {
+      "A": "Tasavvuf",
+      "B": "Sünnet",
+      "C": "Hadis",
+      "D": "Süre",
+      "E": "Tefsir"
+    },
+    "ans": "B",
+    "solution": "Sünnet kelimesi Ara sıra ve gelişigüzel yapılan şeylere değil, âdet niteliğinde, devamlı ve sürekli,\n         aynı zamanda bilinçli davranışları ifade eder."
+  },
+  {
+    "q_num": 3,
+    "stem": "İnsanların kötü huylardan, günahlardan, kötülüklerden temizlenmesi, arındırılmasına ne denir?",
+    "secenekler": {
+      "A": "Tezkiye",
+      "B": "İsmet",
+      "C": "Tebliğ",
+      "D": "Kavli Sünnet",
+      "E": "Ahbar"
+    },
+    "ans": "A",
+    "solution": "İnsanların kötü huylardan, günahlardan, kötülüklerden temizlenmesi, arındırılmasına Tezkiye denir."
+  },
+  {
+    "q_num": 4,
+    "stem": "I. Meğâzî II. Siyer III. Şemail IV. Delâil Yukarıdakilerden hangisi / hangileri Peygamberimizi konu edinen ilimlerdendir?",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "Sadece II",
+      "E": "Hepsi"
+    },
+    "ans": "E",
+    "solution": "Peygamberimizi konu edinen ilimler Meğâzî, Siyer, Şemail ve Delâildir."
+  },
+  {
+    "q_num": 5,
+    "stem": "Hadisler arasındaki ihtilâfın giderilmesinde kullanılan ve “şer’î bir hükmün daha sonra gelen şer’î bir delille kaldırılması” şeklinde ifade edilen yöntem aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Cem‘ ve te’lîf",
+      "B": "Tercih",
+      "C": "Tevakkuf",
+      "D": "Nesh",
+      "E": "Mensûh"
+    },
+    "ans": "D",
+    "solution": "Hadisler arasındaki ihtilâfın giderilmesinde dört temel yöntem vardır: Bu yöntemlerden nesh;\n         Arapça’da yok etmek, ortadan kaldırmak, nakletmek anlamlarına gelir. İslâmî ilimlerde nesh’in\n         tanımı: “Şer’î bir hükmün daha sonra gelen şer’î bir delille kaldırılması” şeklindedir. Yürürlükten\n         kaldırılan önceki hükme mensûh, öncekini yürürlükten kaldıran sonraki hükme nâsih denir. Nesh\n         konusu değişik problemleri olan geniş bir konudur. Detaylarında âlimler arasında tartışmalar vardır.\n         Sadece hadis ilmini değil, tefsir ve fıkıh ilmini de ilgilendirir. Hadiste nesh konusu muhaddisler\n         tarafından müstakil kitapların yazıldığı çok önemli bir konudur. Bu nedenle hadis ilminin alt dalı\n         sayılabilir. Fakat İhtilâfü’l-hadîs ilmi içinde değerlendirilmesi daha doğrudur."
+  },
+  {
+    "q_num": 6,
+    "stem": "Hz. Peygamber’in temel görevleri, Tebliğ; Beyân/Tebyîn; Tezkiye’ dir. Bu üç görev birbirinin devamı ve tamamlayıcısı niteliğindedir. Üçünün de en son amacı nedir?",
+    "secenekler": {
+      "A": "İnsanlara temizliği öğretmek",
+      "B": "İnsanların arındırılmasıdır",
+      "C": "Vahyi eksiksiz olarak insanlara bildirmek",
+      "D": "Vahyi düzenleyerek insanlara bildirmek",
+      "E": "İndirilen kitabı, ümmetine açıklaması"
+    },
+    "ans": "B",
+    "solution": "Bu üç görev birbirinin devamı ve tamamlayıcısı niteliğindedir. Üçünün de en son amacı insanların\n         arındırılmasıdır. Bu da Peygamberin sünnetinin amacının, manevi yönden arınmış bireyler ve\n         onlardan meydana gelen bir toplum oluşturmak olduğu anlamına gelir."
+  },
+  {
+    "q_num": 7,
+    "stem": "I. Tebliğ II. Beyan III. Tezkiye IV. Tesfir Yukarıdakilerden hangileri Hz. Peygamber'in görevlerindendir?",
+    "secenekler": {
+      "A": "I-II-III",
+      "B": "I-II-IV",
+      "C": "II-III-IV",
+      "D": "I-IV",
+      "E": "II-IV"
+    },
+    "ans": "A",
+    "solution": "Cevap A'dır."
+  },
+  {
+    "q_num": 8,
+    "stem": "\"Hadislerin başındaki râvî silsilesini gösteren isimlerden oluşan râvîler zincirine _____ denir\". Yukardaki cümleyi tamamlayan en uygun ifade aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Sünnet",
+      "B": "İsnad",
+      "C": "Mendup",
+      "D": "Eser",
+      "E": "Metin"
+    },
+    "ans": "B",
+    "solution": "Cevap B"
+  },
+  {
+    "q_num": 9,
+    "stem": "Peygamberimizi konu edinen diğer ilimler aşağıdaki şıkların hangisinde doğru verilmiştir?",
+    "secenekler": {
+      "A": "Meğâzî, ta‘dîl, Mecrûh, Şemâil",
+      "B": "Meğâzî, Siyer, Şemâil, Delâil",
+      "C": "Meğâzî, Şemâil, Rivâyet, Delâil",
+      "D": "Meğâzî, Delâil, Fezâil, Mecrûh",
+      "E": "Meğâzî, Fezâil, Delâl, Ta’dîl"
+    },
+    "ans": "B",
+    "solution": "Meğâzî, Arapça savaş anlamına gelen (ğ-z-v) kökünden türemiş bir kelimedir. İslam tarihinin erken\n         dönemlerinde oluşmuş bir ilim dalıdır. Siyer, Peygamberimizin sadece savaşlarıyla değil, hayatının\n         bütün yönleriyle ilgilenir. Şemâil, Peygamberimizin fiziksel özellikleriyle yani dış görünüşüyle ve\n         ahlâkî vasıflarıyla ilgilenir, o konudaki verileri, bilgileri toplar ve değerlendirir. Delâil,\n         Peygamberimizin mucizelerini konu edinir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Sünnet terimi ile ilgili aşağıdaki bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Devamlı ve sürekli davranışları ifade eder.",
+      "B": "Ara sıra yapılan bilinçsiz davranışları da kapsar.",
+      "C": "Hz. Peygamber’in yolu ve hayat tarzıdır.",
+      "D": "Âdet niteliği kazanmış davranışları ifade eder.",
+      "E": "Yaptırım gücü ve bağlayıcılığı kişilere ve ortama göre değişebilir."
+    },
+    "ans": "B",
+    "solution": "Sünnet kelimesi ara sıra ve gelişigüzel yapılan şeyleri değil, âdet niteliğinde, devamlı ve sürekli,\n         aynı zamanda bilinçli davranışları ifade eder. Dolayısıyla arasıra yapılan ve bilinçsiz davranışlar\n         sünnet anlamının dışında kalır."
+  }
+]

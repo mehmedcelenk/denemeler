@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdakilerden hangisi bir Müslümanın inanç sisteminin temelini oluşturur?",
+    "secenekler": {
+      "A": "Peygamberlere inanma",
+      "B": "Meleklere inanma",
+      "C": "Kitaplara inanma",
+      "D": "Allah'ın varlığına ve birliğine inanma",
+      "E": "Ahiret gününe inanma"
+    },
+    "ans": "D",
+    "solution": "İslâm’ın her şeyden önce tevhid dini olması sebebiyle en önemli yönü, evrende Allah’tan başka\n         hiçbir varlığı mabut olarak kabul etmemektir. Bu imani esas İslam'ın inanç sistemini oluşturur."
+  },
+  {
+    "q_num": 2,
+    "stem": "İslam dininde ibadet ve muamelâtla ilgili olan hükümlere ne ad verilir?",
+    "secenekler": {
+      "A": "Aslî esaslar",
+      "B": "fer’î esaslar",
+      "C": "Ahlâk esasları",
+      "D": "İtikat esasları",
+      "E": "Tevhit"
+    },
+    "ans": "B",
+    "solution": "islam dininde inançla ilgili hükümlere aslî, yapıp etmelerle yani ibadet ve muamelâtla ilgili olanlarına\n         fer’î esaslar denir."
+  },
+  {
+    "q_num": 3,
+    "stem": "I. İtikâdî hükümler II. Amelî hükümler III. Ahlâkî hükümler İslamın olabilmesi için yukarıda verilenlerden hangilerinin olması gerekir?",
+    "secenekler": {
+      "A": "I",
+      "B": "I-II",
+      "C": "I-III",
+      "D": "II-III",
+      "E": "I-II-III"
+    },
+    "ans": "E",
+    "solution": "Allah Teâlâ’nın kulları hakkında belirlediği hükümler İslâm dininde üç ana başlık altında incelenir.\n         Bunlar; itikâdî, amelî ve ahlâkî hükümlerdir. Bu hükümlerin tamamı bir bütün olarak İslâm’ı\n         meydana getirir. Doğru cevap E'dir."
+  },
+  {
+    "q_num": 4,
+    "stem": "İslam dininin sadece inanç esasları değil aynı zamanda davranışlarla yani amelle ilgili hükümleri de vardır. Bu hükümlere ne denir?",
+    "secenekler": {
+      "A": "Muamelat esasları",
+      "B": "Ahlâkla ilgili hükümleri",
+      "C": "İnançla ilgili hükümleri",
+      "D": "itikat hükümleri",
+      "E": "Hadis"
+    },
+    "ans": "A",
+    "solution": "İslâm dininin sadece inanç esasları değil aynı zamanda davranışlarla yani amelle ilgili hükümleri de\n         vardır. Muamelat esasları denilen bu hükümler daha çok fıkıh ilmini ilgilendirir. Doğru cevap A'dır."
+  },
+  {
+    "q_num": 5,
+    "stem": "I. İbadetler Allah Teâlâ tarafından farz kılınır. II. Hz. Peygamber’in gösterdiği gibi yapılır. III. Kimse ilave ve eksiltme yapamaz. IV. Hz. Peygamber ibadetlerin kaynağıdır. Yukarıda ibadet ile verilenlerden hangileri doğrudur?",
+    "secenekler": {
+      "A": "I-II",
+      "B": "II-IV",
+      "C": "I-III",
+      "D": "I-II-III",
+      "E": "I-III-IV"
+    },
+    "ans": "D",
+    "solution": "Dinî metinler aynı zamanda ibadetlerin kaynağıdır. Hz. Peygamber ibadetlerin kaynağıdır önermesi\n         yanlıştır."
+  },
+  {
+    "q_num": 6,
+    "stem": "Aşağıdaki ilimlerden hangisi muamelat esaslarıyla ilgilenir?",
+    "secenekler": {
+      "A": "Fıkıh",
+      "B": "Kelam",
+      "C": "Hadis",
+      "D": "Tefsir",
+      "E": "Siyer"
+    },
+    "ans": "A",
+    "solution": "İslâm dininin sadece inanç esasları değil aynı zamanda davranışlarla yani amelle ilgili hükümleri de\n         vardır. Muamelat esasları denilen bu hükümler daha çok fıkıh ilmini ilgilendirir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Şeytanın apaçık düşman olduğu hususu hangi ayette yer almaktadır?",
+    "secenekler": {
+      "A": "Bakara 2/208",
+      "B": "Enbiyâ 21/94",
+      "C": "Fâtiha 1/4",
+      "D": "Mâide 5/5",
+      "E": "Nisâ 4/124"
+    },
+    "ans": "A",
+    "solution": "“Ey\n         iman edenler! Hep birden huzur ortamına girin. Sakın şeytanın adımlarına tabi\n         olmayın. Çünkü o, sizin apaçık düşmanınızdır” (el-Bakara 2/208). Doğru cevap A'dır."
+  },
+  {
+    "q_num": 8,
+    "stem": "İslam kelimesinin anlamında bulunmayan özellik aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Barış yapmak",
+      "B": "Teslim olmak",
+      "C": "Kurtuluşa ermek",
+      "D": "Boyun eğmek",
+      "E": "Baş kaldırmak"
+    },
+    "ans": "E",
+    "solution": "İslam kelimesinin baş kaldırmak gibi bir anlamı yoktur"
+  },
+  {
+    "q_num": 9,
+    "stem": "Bir dinin esasını o dinin hangi boyutu oluşturur?",
+    "secenekler": {
+      "A": "İnanç",
+      "B": "Muamelat",
+      "C": "İbadet",
+      "D": "Örf",
+      "E": "Ahlak"
+    },
+    "ans": "A",
+    "solution": "bir dinin esasını o dinin inanç boyutu oluşturur."
+  },
+  {
+    "q_num": 10,
+    "stem": "1 - Bölünmezlik 2 - Çıkarcılık 3 - Değişmezlik 4 - Kesinlik 5 - Karmaşıklık Yukarılardan hangileri kelam ilmine göre inanç esaslarıyla ilgili temel özellikler arasında yer alır?",
+    "secenekler": {
+      "A": "1-2-3",
+      "B": "1-3-4",
+      "C": "3-4-5",
+      "D": "2-5",
+      "E": "1-2-3-4"
+    },
+    "ans": "B",
+    "solution": "Bölünmezlik, değişmezlik ve kesinlik kelam ilminde inanç esasları ile ilgili temel özelliklerdendir."
+  }
+]

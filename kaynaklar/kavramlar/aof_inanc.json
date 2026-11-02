@@ -1,0 +1,132 @@
+[
+  {
+    "id": "inanc_iman",
+    "term": "İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Sözlükte güvenmek, tasdik etmek demektir. Dini terim olarak Hz. Peygamber’in Allah’tan getirdiği kesin esasları kalpten tasdik edip kabul etmektir.",
+    "sifre": "Sözlük: Güven/tasdik. Dini tanım: Kalp ile tasdik + dil ile ikrar.",
+    "pattern": "\\biman\\b|\\bîmân\\b|\\bimandır\\b"
+  },
+  {
+    "id": "inanc_icmali_iman",
+    "term": "İcmâlî İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "İnanılması gereken şeylere toptan, ana hatlarıyla ve özet olarak inanmaktır (Kelime-i Şehadet/Tevhid gibi).",
+    "sifre": "Toptan / özet inanma = İcmâlî İman.",
+    "pattern": "\\bicmâlî iman\\b|\\bicmali iman\\b|\\bicmali\\b"
+  },
+  {
+    "id": "inanc_tafsili_iman",
+    "term": "Tafsîlî İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "İnanç esaslarına ve dini hükümlere tek tek, ayrıntılı ve delilleriyle birlikte inanmaktır.",
+    "sifre": "Ayrıntılı / tek tek inanma = Tafsîlî İman.",
+    "pattern": "\\btafsîlî iman\\b|\\btafsili iman\\b|\\btafsili\\b"
+  },
+  {
+    "id": "inanc_taklidi_iman",
+    "term": "Taklîdî İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Delillere dayanmadan, ana-baba veya çevreden görerek edinilen imandır. Geçerlidir fakat şüpheye açıktır.",
+    "sifre": "Delilsiz çevre/anne-baba taklidi = Taklîdî İman.",
+    "pattern": "\\btaklîdî iman\\b|\\btaklidi iman\\b"
+  },
+  {
+    "id": "inanc_tahkiki_iman",
+    "term": "Tahkîkî İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Bilgiye, akli ve nakli delillere, araştırmaya ve derin tefekküre dayanan sarsılmaz imandır.",
+    "sifre": "Delil + araştırma + sarsılmaz şuur = Tahkîkî İman.",
+    "pattern": "\\btahkîkî iman\\b|\\btahkiki iman\\b"
+  },
+  {
+    "id": "inanc_tevhid",
+    "term": "Tevhid",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Allah’ın zâtında, sıfatlarında, fiillerinde ve mabud oluşunda tek, eşsiz ve benzersiz olduğuna inanmaktır.",
+    "sifre": "Birleme + şirkten uzaklaşma = Tevhid (Lâ ilâhe illallâh).",
+    "pattern": "\\btevhid\\b|\\btevhîd\\b|\\btevhit\\b"
+  },
+  {
+    "id": "inanc_zati_sifatlar",
+    "term": "Zâtî Sıfatlar",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Sadece Allah’ın zâtına mahsus olan, yaratıklara verilmesi mümkün olmayan altı sıfattır: Vücûd, Kıdem, Bekâ, Vahdâniyyet, Muhâlefetün li’l-Havâdis, Kıyâm bi-Nefsihî.",
+    "sifre": "Vücud, Kıdem, Beka, Vahdaniyyet, Muhalefetün lil-havadis, Kıyâm bi-nefsihi = 6 Zâtî Sıfat.",
+    "pattern": "zâtî sıfatlar|zati sıfatlar|zâtî sıfat"
+  },
+  {
+    "id": "inanc_subuti_sifatlar",
+    "term": "Subûtî Sıfatlar",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Varlığı zorunlu olan ve benzerleri sınırlı olarak yaratıklarda da tecelli eden kemal sıfatlarıdır: Hayat, İlim, Semî’, Basar, İrâde, Kudret, Kelâm, Tekvîn (8 sıfat).",
+    "sifre": "Hayat, İlim, Semi, Basar, İrade, Kudret, Kelam, Tekvin = 8 Subûtî Sıfat.",
+    "pattern": "subûtî sıfatlar|subuti sıfatlar|subûtî sıfat"
+  },
+  {
+    "id": "inanc_muhalefetun_lilhavadis",
+    "term": "Muhâlefetün li’l-Havâdis",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Allah’ın sonradan yaratılan varlıklara hiçbir şekilde benzememesidir.",
+    "sifre": "Yaratılmışlara benzememek = Muhâlefetün li’l-Havâdis (Zâtî sıfat).",
+    "pattern": "muhâlefetün li[’\\']l-havâdis|muhalefetün lil-havadis|muhalefetun lil havadis"
+  },
+  {
+    "id": "inanc_kiyam_bi_nefsihi",
+    "term": "Kıyâm bi-Nefsihî",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Allah’ın varlığının kendinden olması, var olmak ve varlığını sürdürmek için hiçbir şeye, zamana veya mekana muhtaç olmamasıdır.",
+    "sifre": "Hiçbir şeye muhtaç olmamak, kendi kendine var olmak = Kıyâm bi-Nefsihî (Zâtî sıfat).",
+    "pattern": "kıyâm bi-nefsihî|kiyam bi-nefsihi|kıyam bi nefsihi"
+  },
+  {
+    "id": "inanc_melekler",
+    "term": "Meleklere İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Nurdan yaratılmış, cinsiyetleri olmayan, yiyip içmeyen, günah işlemeyen ve daima Allah’a itaat eden nurani varlıklara inanmaktır.",
+    "sifre": "Nurdan yaratılma + cinsiyetsizlik + günahsız itaat = Melekler.",
+    "pattern": "\\bmelekler\\b|\\bmeleklere iman\\b|\\bcebrâil\\b|\\bmîkâil\\b|\\bisrâfîl\\b|\\bazrâil\\b"
+  },
+  {
+    "id": "inanc_kiramen_katibin",
+    "term": "Kirâmen Kâtibîn",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "İnsanın sağında ve solunda bulunup sevap ve günahlarını yazan değerli yazıcı meleklerdir.",
+    "sifre": "Amelleri yazan melekler = Kirâmen Kâtibîn.",
+    "pattern": "kirâmen kâtibîn|kiramen katibin"
+  },
+  {
+    "id": "inanc_vahiy",
+    "term": "Vahiy",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "Allah’ın peygamberlerine dilediği emir ve hükümleri gizli ve süratli bir yolla bildirmesidir.",
+    "sifre": "Gizli ve süratli bildiri = Vahiy.",
+    "pattern": "\\bvahiy\\b|\\bvahiydir\\b|\\bvahye\\b"
+  }
+]

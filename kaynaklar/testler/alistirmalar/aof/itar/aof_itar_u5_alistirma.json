@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Hac ibadeti ne zaman farz kılınmıştır?",
+    "secenekler": {
+      "A": "629",
+      "B": "630",
+      "C": "631",
+      "D": "627",
+      "E": "628"
+    },
+    "ans": "C",
+    "solution": "Hac, hicretin 9. yılında (631) farz kılındı. Doğru cevap C'dir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Tebük Gazvesi, Müslümanlar ile hangi ülke arasında gerçeklemiştir?",
+    "secenekler": {
+      "A": "İran",
+      "B": "Mısır",
+      "C": "Suriye hıristiyanları",
+      "D": "Arap kabileleri",
+      "E": "Bizanslılar"
+    },
+    "ans": "E",
+    "solution": "Tebük Gazvesi’nin sebebi, Bizanslılar’ın Medîne’ye saldırı için savaş hazırlığı yaptığı, Suriye’deki\n         hıristiyan Arap kabilelerinin de onlara katıldığı haberinin alınmasıdır. Doğru cevap E'dir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Aşağıdakilerden hangisi Hz. Peygamber’in Vedâ Haccı’nda özetlediği temel ilkeler arasında değildir?",
+    "secenekler": {
+      "A": "İnsan hayatının, malının ve namusunun mukaddes olduğu",
+      "B": "Arapların diğer soylardan daha üstün olduğu",
+      "C": "İçki, kumar, faiz ve kan davası gibi bütün kötü âdetlerinin kaldırıldığı",
+      "D": "Mü'minlerin kardeş olduğu",
+      "E": "Erkeklerin kadınlar üzerinde, kadınların da erkekler üzerinde hakları olduğu"
+    },
+    "ans": "B",
+    "solution": "Hz. Peygamber, vasiyeti özelliğini taşıyan ve en önemli hususları dile getirdiği bu hutbesinde, insan\n         hayatının, malının ve namusunun mukaddes ve dokunulmaz olduğunu beyan etmiş; can, mal ve ırz\n         emniyetinin önemini açıklamıştır. Toplum düzenini bozan, can, mal ve ırz emniyetini ortadan\n         kaldıran Câhiliye devrinin içki, kumar, faiz ve kan davası gibi bütün kötü âdetlerinin kaldırıldığını bir\n         kere daha ilan etmiştir. Bu yanlış inançların yerine insanların insan olma açısından eşit olduklarını,\n         bütün insanların Hz. Adem'den, onun ise topraktan yaratıldığını hatırlatmıştır. Mü'minlerin kardeş\n         olduğunu; erkeklerin kadınlar üzerinde hakları olduğu gibi, kadınların da erkekler üzerinde hakları\n         bulunduğunu vurgulamak suretiyle toplumda dirlik ve düzeni sağlayan üstün değerleri dile\n         getirmiştir. Kısaca insanlığın birinci derecede dikkate alması gereken temel ilkeleri özetlemiştir.\n         Doğru cevap B'dir."
+  },
+  {
+    "q_num": 4,
+    "stem": "..................'in fethi ile Yahudilerin Arap yarımadasında siyasi bir güç olmaları sonra erdi. Mali güçleri zayıfladı. Paragraftaki boşluğa hangisi getirilmelidir?",
+    "secenekler": {
+      "A": "Mekke",
+      "B": "Fedek",
+      "C": "Suriye",
+      "D": "Tebük",
+      "E": "Hayber"
+    },
+    "ans": "E",
+    "solution": "Paragraftaki boşluğa Hayber getirilmelidir"
+  },
+  {
+    "q_num": 5,
+    "stem": "Bağımsız bir İslam devletinin kuruluşu aşağıdakilerden hangisiyle gerçekleştirilmiştir?",
+    "secenekler": {
+      "A": "Medine sözleşmesi",
+      "B": "Hudeybiye antlaşması",
+      "C": "Hayber'in fethi",
+      "D": "Hendek gazvesi",
+      "E": "Mekke'nin fethi"
+    },
+    "ans": "A",
+    "solution": "Hz. Peygamber, hicretin ilk yılında gerçekleştirdiği hukukî düzenleme ve hayata geçirdiği Medine\n         sözleşmesiyle, Medine’de bağımsız bir İslâm devleti kurdu. Doğru cevap A'dır."
+  },
+  {
+    "q_num": 6,
+    "stem": "Hz. Peygamber veda hutbesinde aşağıdakilerden hangisine değinmemiştir?",
+    "secenekler": {
+      "A": "Faiz",
+      "B": "Kadın hakkı",
+      "C": "Farz ibadetler",
+      "D": "Beslenme",
+      "E": "Irkçılık"
+    },
+    "ans": "D",
+    "solution": "Açıkça beslenmeden bahsedilmemiştir. Doğru cevap D'dir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdakilerden hangisi Hz. Ali'nin bayramın birinci günü Minâ'da Tevbe sûresinin ilk âyetlerini okuduktan sonra, Hz. Muhammedin emriyle müşriklere açıkladığı ültimatom maddelerinden birisi değildir?",
+    "secenekler": {
+      "A": "Müşrikler bu seneden sonra Kâbe'ye yaklaştırılmayacaktır.",
+      "B": "Kâbe'yi çıplak tavaf etmek artık yasaklanmıştır.",
+      "C": "Mü'minlerden başkası cennete giremeyecektir.",
+      "D": "Önceden yapılmış olan andlaşmalar, süresi doluncaya kadar bozulmayacaktır.",
+      "E": "Antlaşmaların süresi bittikten sonra da,can güvenlikleri korunmaya devam edecektir."
+    },
+    "ans": "E",
+    "solution": "Hz. Ali bayramın birinci günü Minâ'da Tevbe sûresinin ilk âyetlerini okuduktan sonra müşriklere dört\n         maddelik şu ültimatomu açıkladı:\n\n                   1. Müşrikler bu seneden sonra Kâbe'ye yaklaştırılmayacaktır.\n                   2. Kâbe'yi çıplak tavaf etmek artık yasaklanmıştır.\n                   3. Mü'minlerden başkası cennete giremeyecektir.\n                   4. Önceden yapılmış olan andlaşmalar, süresi doluncaya kadar bozulmayacak, daha sonra\n                      Müslüman olmadıkları takdirde can güvenlikleri kalkacaktır."
+  },
+  {
+    "q_num": 8,
+    "stem": "Cizye ayeti ilk defa ne zaman uygulanmıştır?",
+    "secenekler": {
+      "A": "Bedir",
+      "B": "Uhud",
+      "C": "Hendek",
+      "D": "Taif",
+      "E": "Tebük"
+    },
+    "ans": "E",
+    "solution": "bu ayet tebük seferi zamanında 630 yılında inmiştir ve yahudilerle hristiyanlara uygulanmıştır."
+  },
+  {
+    "q_num": 9,
+    "stem": "Hz. Muhammed kaç yılında vefat etmiştir?",
+    "secenekler": {
+      "A": "630",
+      "B": "631",
+      "C": "632",
+      "D": "633",
+      "E": "634"
+    },
+    "ans": "C",
+    "solution": "632"
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdakilerden hangisi Hz. Muhammed'in 632 yılında tamamladığı hac ibadetini niteleyen sıfatlardan birisi değildir?",
+    "secenekler": {
+      "A": "Vedâ Haccı",
+      "B": "Haccetü'l-İslâm",
+      "C": "Haccetü'l-Belâğ",
+      "D": "Haccetü'l-kemal ve't-tamam",
+      "E": "Haccetü'l mukaddes"
+    },
+    "ans": "E",
+    "solution": "Hz. Peygamber bir daha hac yapamadığı ve haccı esnasında ashâbıyla\n         vedalaştığı için bu haccına “Vedâ Haccı” denilmiştir. Daha ziyade bu isimle\n         meşhur olmakla birlikte, Hz. Peygamber’in ilk ve tek haccı olması\n         dolayısıyla “Haccetü'l-İslâm”, hac esnasında hac ibâdetinin bütün\n         hükümlerini ve rükünlerini açıklamış ve uygulamış olması bakımından\n         “Haccetü'l-Belâğ”, İslâm ahkamının hac ibâdetiyle tamamlanmış olması\n         dolayısıyla da “Haccetü'l-kemal ve't-tamam” adları verilmiştir."
+  }
+]

@@ -1,0 +1,744 @@
+[
+  {
+    "id": "itar_darunnedve",
+    "term": "Dârünnedve (Kureyş Şehir Meclisi)",
+    "unite_no": 1,
+    "tanim": "Kusay b. Kilâb tarafından Kâbe'nin kuzeyine yaptırılan, Kureyş kabilesinin savaş, barış, nikâh, ticaret ve siyasî meseleleri görüşüp karara bağladığı asiller/istişare meclisidir.\n💡 Sınav Şifresi: Kusay b. Kilâb + parlamento / kabileler meclisi = **Dârünnedve**.",
+    "pattern": "\\bd[aâ]r[üu][’'‘\\s-]?n-?nedve[a-zçğıöşü]*|[dD]ârünnedve|[dD]arunnedve"
+  },
+  {
+    "id": "itar_sidane_hicabe",
+    "term": "Sidâne (Hicâbe / Kâbe Muhafızlığı)",
+    "unite_no": 1,
+    "tanim": "Kâbe'nin bakımı, örtüsünün korunması, kapısının ve anahtarlarının muhafazası ile ziyaretçilere açılması vazifesidir. Kusay'dan sonra Abdüddâroğullarına verilmiştir.\n💡 Sınav Şifresi: Kâbe kapısı, anahtarları, örtüsü ve bakımı = **Sidâne (Hicâbe)**.",
+    "pattern": "\\bsid[aâ]ne[a-zçğıöşü]*|\\bhic[aâ]be[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_sikaye",
+    "term": "Sikâye (Hacılara Su Dağıtma)",
+    "unite_no": 1,
+    "tanim": "Hac mevsiminde Mekke'ye gelen hacıların su ve zemzem ihtiyacını karşılama vazifesidir. İslâm öncesinde Hz. Peygamber'in dedesi Abdülmuttalib, fetihten sonra da amcası Hz. Abbas yürütmüştür.\n💡 Sınav Şifresi: Hacılara su ve zemzem temini = **Sikâye**.",
+    "pattern": "\\bsik[aâ]ye[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_rifade",
+    "term": "Rifâde (Hacıları Doyurma ve Ağırlama)",
+    "unite_no": 1,
+    "tanim": "Mekke'ye gelen fakir ve kimsesiz hacıları ağırlamak ve yiyecek ihtiyaçlarını karşılamak üzere Kureyşlilerden toplanan yardımlarla oluşturulan iaşe/doyurma fonudur.\n💡 Sınav Şifresi: Hacılara yemek verme ve ağırlama = **Rifâde**.",
+    "pattern": "\\brif[aâ]de[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_liva",
+    "term": "Livâ (Sancaktarlık)",
+    "unite_no": 1,
+    "tanim": "Savaş zamanında orduya ait kabile sancağının muhafazası ve taşınması vazifesidir. Kusay b. Kilâb bu görevi oğlu Abdüddâr'a vermiştir.\n💡 Sınav Şifresi: Ordu sancağını muhafaza etme = **Livâ**.",
+    "pattern": "\\bliv[aâ]\\b|liva[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_kiyade",
+    "term": "Kıyâde (Ordu Kumandanlığı ve Kafile Başkanlığı)",
+    "unite_no": 1,
+    "tanim": "Mekke ordusuna savaşta kumandanlık etme ve büyük ticaret kervanlarının başkanlığını yürütme görevidir.\n💡 Sınav Şifresi: Ordu kumandanlığı ve kafile başkanlığı = **Kıyâde**.",
+    "pattern": "\\bk[ıi]y[aâ]de[a-zçğıöşü]*|ordu kumandanlığ[ıi]|kafile başkanlığ[ıi]"
+  },
+  {
+    "id": "itar_eshurul_hurum",
+    "term": "Eşhürü'l-Hurum (Haram Aylar: Zilkâde, Zilhicce, Muharrem, Receb)",
+    "unite_no": 1,
+    "tanim": "Câhiliye Araplarında savaşın ve kan dökmenin kesinlikle yasak olduğu dört kutsal aydır: Zilkâde, Zilhicce, Muharrem ve Receb.\n💡 Sınav Şifresi: Zilkâde, Zilhicce, Muharrem ve Receb = **Eşhürü'l-Hurum** (Ramazan haram aylardan değildir!).",
+    "pattern": "eşhürü[’'‘]l-hurum[a-zçğıöşü]*|eshuru[’'‘]l-hurum[a-zçğıöşü]*|haram aylar[a-zçğıöşü]*|kutsal aylar[a-zçğıöşü]*|\\bzilk[aâ]de\\b|\\bzilhicce\\b|\\bmuharrem\\b|\\brece[bp]\\b"
+  },
+  {
+    "id": "itar_ficar_savaslari",
+    "term": "Ficâr Savaşları",
+    "unite_no": 1,
+    "tanim": "Haram aylarda (Eşhürü'l-Hurum) kural ve yasakları çiğneyerek yapılan savaşlardır. Günah işlendiği için bu adı almıştır; Hz. Peygamber gençliğinde amcalarıyla bu savaşa katılmıştır.\n💡 Sınav Şifresi: Haram aylarda yapılan savaşlar = **Ficâr Savaşları**.",
+    "pattern": "fic[aâ]r savaş[a-zçğıöşü]*|ficar savas[a-zçğıöşü]*|eyy[aâ]mü[’'‘]l-fic[aâ]r[a-zçğıöşü]*|\\bfic[aâ]r\\b"
+  },
+  {
+    "id": "itar_panayirlar",
+    "term": "Panayırlar ve Pazarlar (Ukâz, Mecenne, Zülmecâz, Hubâşe, Hazvere)",
+    "unite_no": 1,
+    "tanim": "Câhiliye döneminde hac mevsimi ve haram aylarda kurulan; ticaret, diplomasi ve şiir yarışmalarının merkezi olan fuarlardır. En büyüğü Ukâz'dır; Mekke'nin içindeki baş pazar ise Hazvere idi.\n💡 Sınav Şifresi: Zilkâde'de Ukâz $\\to$ Mecenne $\\to$ Zilhicce'de Zülmecâz = **Arap Panayırları**; Mekke içi pazar = **Hazvere**.",
+    "pattern": "\\buk[aâ]z[a-zçğıöşü]*|\\bmecenne[a-zçğıöşü]*|\\bzülmec[aâ]z[a-zçğıöşü]*|\\bzulmecaz[a-zçğıöşü]*|\\bhub[aâ]şe[a-zçğıöşü]*|\\bhazvere\\b|\\bm[üu]şakkar\\b|\\bhac[uû]n\\b|esv[aâ]k[üu][’'‘]l-[‘']?arab"
+  },
+  {
+    "id": "itar_haniflik",
+    "term": "Hanîflik (Tevhid İnancı)",
+    "unite_no": 1,
+    "tanim": "Putperestliği ve şirki reddedip Hz. İbrahim'in tebliğ ettiği tevhid dinine bağlı kalan kimselerin inancıdır. Varaka b. Nevfel ve Zeyd b. Amr b. Nüfeyl başlıca hanîflerdir.\n💡 Sınav Şifresi: Puta tapmayan, tek Allah inancına bağlı kalanlar = **Hanîf**.",
+    "pattern": "\\bhan[iî]f[a-zçğıöşü]*|\\bhan[iî]flik[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_putlar",
+    "term": "Câhiliye Putları (Hübel, Lât, Menât, Uzzâ, İsâf, Nâile)",
+    "unite_no": 1,
+    "tanim": "Müşriklerin Allah ile aracı saydıkları putlardır. Kâbe'nin baş putu kırmızı akik taşından yapılan **Hübel**; Sakîf'in putu **Lât**, Nahle'deki **Uzzâ**, Kudeyd'deki **Menât** idi.\n💡 Sınav Şifresi: Kâbe'deki en büyük put = **Hübel**; Kibele bir Arap putu değildir!",
+    "pattern": "\\bh[üu]bel[a-zçğıöşü]*|\\bl[aâ]t\\b|\\bmen[aâ]t[a-zçğıöşü]*|\\buzz[aâ][a-zçğıöşü]*|is[aâ]f ve n[aâ]ile[a-zçğıöşü]*|\\bkibele\\b"
+  },
+  {
+    "id": "itar_kabile_tasnifi",
+    "term": "Arap Kabile Tasnifi (Âribe, Müsta'ribe, Bâide, Bâkıye)",
+    "unite_no": 1,
+    "tanim": "Araplar üçe ayrılır: Yok olan eski kavimler (**Arab-ı Bâide**: Âd, Semûd); asıl Kahtânî Arapları (**Arab-ı Âribe**); Hz. İsmail soyundan gelip sonradan Araplaşan Adnânîler (**Arab-ı Müsta'ribe / Mütearribe**).\n💡 Sınav Şifresi: Hz. İsmail soyu + sonradan Araplaşan Adnânîler = **Arab-ı Müsta'ribe (Mütearribe)**.",
+    "pattern": "arab-ı m[üu]sta[‘'’`]ribe|arab-ı m[üu]tearribe|m[üu]sta[‘'’`]ribe|m[üu]tearribe|arab-ı [aâ]ribe|arab-ı b[aâ]ide|arab-ı b[aâ]k[iî]ye|arab-ı terk[iî]be|adn[aâ]n[iî]ler|ismailîler|sonradan araplaşan|araplaşan kabile[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_mevali",
+    "term": "Mevâlî (Azatlı Köleler)",
+    "unite_no": 1,
+    "tanim": "Efendisi tarafından azat edilmiş ancak kabileyle velâ (himaye) bağı devam eden kimselerdir. Câhiliyede köle ile tam hür eşraf arasında bir sosyal sınıftı.\n💡 Sınav Şifresi: Câhiliye ve İslâm'da azat edilmiş köleler = **Mevâlî**.",
+    "pattern": "\\bmev[aâ]l[iî][a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_bedevi_hadari",
+    "term": "Bedevî ve Hadarî Hayat",
+    "unite_no": 1,
+    "tanim": "Çöl ve vahalarda konargöçer çadırlarda yaşayanlara **Bedevî** (ehlü'l-veber); köy ve şehirlerde yerleşik kerpiç evlerde yaşayanlara **Hadarî** (ehlü'l-meder) denirdi.\n💡 Sınav Şifresi: Göçebe = **Bedevî**; Şehirli/yerleşik = **Hadarî**.",
+    "pattern": "\\bbedev[iî][a-zçğıöşü]*|\\bhadar[iî][a-zçğıöşü]*|ehlü[’'‘]l-veber|ehlü[’'‘]l-meder"
+  },
+  {
+    "id": "itar_cahiliye_devletleri",
+    "term": "İslâm Öncesi Devletler ve Merkezler (Maîn, Sebe, Himyer, Gassân, Lahm/Hîre, Tedmür, Petra)",
+    "unite_no": 1,
+    "tanim": "Güney Arabistan'da **Maînliler**, Me'rib seddini yapan **Sebeliler** ve Yahudi kralı Zû Nüvâs ile bilinen **Himyerîler**; Kuzeyde Bizans müttefiki **Gassânîler**, Sâsânî müttefiki **Lahmîler (Hîre)**, **Tedmürlüler (Palmyra)** ve **Nabatîler (Petra)** kurulmuştur.\n💡 Sınav Şifresi: Uhdûd çukurlarında Hristiyanları yakan = **Zû Nüvâs (Himyerîler)**; Sâsânî müttefiki = **Lahmîler (Hîre)**.",
+    "pattern": "ma[iî]nliler[a-zçğıöşü]*|sebeliler[a-zçğıöşü]*|himyer[iî]ler[a-zçğıöşü]*|gass[aâ]n[iî]ler[a-zçğıöşü]*|lahm[iî]ler[a-zçğıöşü]*|nabat[iî]ler[a-zçğıöşü]*|tedm[üu]rl[üu]ler[a-zçğıöşü]*|\\bhire\\b|\\bsan[‘'’]a\\b|\\bpalmyra\\b|\\bpetra\\b|\\bd[ıi]maşk\\b|z[uû] n[üu]v[aâ]s[a-zçğıöşü]*|uhd[uû]d[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_harem_ve_emin_belde",
+    "term": "Harem Bölgesi ve el-Beledü'l-Emîn",
+    "unite_no": 1,
+    "tanim": "Kâbe ve Mekke çevresini kapsayan; bitkilerinin koparılması, hayvanlarının avlanması ve kan dökülmesi haram kılınan güvenli bölgedir. Kur'an'da Mekke 'el-Beledü'l-Emîn' olarak adlandırılmıştır.\n💡 Sınav Şifresi: Şehrin dokunulmazlığı ve güvenlikli oluşu = **Harem / el-Beledü'l-Emîn**.",
+    "pattern": "el-beled[üu][’'‘]l-em[iî]n|el-beled[üu][’'‘]l-har[aâ]m|harem bölgesi|harem beldesi|güvenli bir belde"
+  },
+  {
+    "id": "itar_kusay_bin_kilab",
+    "term": "Kusay b. Kilâb (Mekke'nin Kurucusu)",
+    "unite_no": 1,
+    "tanim": "Dağınık yaşayan Kureyş kollarını birleştirip Mekke'ye yerleştiren, Kâbe'yi tamir eden, Dârünnedve'yi kuran ve Kâbe hizmetlerini düzenleyen Kureyş lideridir.\n💡 Sınav Şifresi: Dağınık Kureyş'i toplayan + Dârünnedve'yi kuran = **Kusay b. Kilâb**.",
+    "pattern": "kusay b\\.\\s*kil[aâ]b|kusay bin kil[aâ]b|\\bkusay\\b"
+  },
+  {
+    "id": "itar_hasim_bin_abdimenaf",
+    "term": "Hâşim b. Abdümenâf ve İlâf (Kervan Güvenliği)",
+    "unite_no": 1,
+    "tanim": "Hz. Peygamber'in büyük dedesi olup Mekke ticaretini dışa açan, Bizans ve çevre hükümdarlarla güvenlik anlaşmaları (İlâf) yaparak Şam'a ticaret kervanlarının emniyetle gitmesini sağlayan liderdir.\n💡 Sınav Şifresi: Şam kervan yolu anlaşmaları + ticaretin dışa açılması = **Hâşim b. Abdümenâf (İlâf)**.",
+    "pattern": "h[aâ]şim b\\.\\s*abd[üu]men[aâ]f|hasim b\\.\\s*abdimenaf|[iî]l[aâ]f\\b|ticaret kervanlar[a-zçğıöşü]*|kervan ticareti"
+  },
+  {
+    "id": "itar_kabe_ve_beytullah",
+    "term": "Kâbe (Beytullah)",
+    "unite_no": 1,
+    "tanim": "Yeryüzünde Allah'a ibadet maksadıyla yapılan ilk mâbeddir (Âl-i İmrân 96). Hz. İbrahim ve oğlu Hz. İsmail tarafından temelleri üzerine yeniden inşa edilmiştir.\n💡 Sınav Şifresi: Yeryüzündeki ilk mâbed + Beytullah / Beyt-i Atîk = **Kâbe**.",
+    "pattern": "\\bk[aâ]be[a-zçğıöşü]*|beytullah|ilk m[aâ]bed"
+  },
+  {
+    "id": "itar_zemzem",
+    "term": "Zemzem Kuyusu",
+    "unite_no": 1,
+    "tanim": "Hz. Hâcer ve oğlu Hz. İsmail susuzluktan çaresiz kaldığında Cebrâil vasıtasıyla fışkıran mukaddes sudur. Kaybolan kuyuyu Hz. Peygamber'in dedesi Abdülmuttalib yeniden bulup kazmıştır.\n💡 Sınav Şifresi: Hz. İsmail mucizesi + Abdülmuttalib'in yeniden kazdığı kuyu = **Zemzem**.",
+    "pattern": "\\bzemzem[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_esvak_suk",
+    "term": "Sûk ve Esvâk (Mekke Pazarları)",
+    "unite_no": 1,
+    "tanim": "Mekke ve çevresinde kurulan çarşı ve pazar yerleridir (çoğulu esvâk). Mekke içi meşhur çarşı Hazvere idi; panayırlar ise şehir dışındaki büyük fuarlardı.\n💡 Sınav Şifresi: Câhiliyede çarşı ve pazar = **Sûk (çoğulu Esvâk)**.",
+    "pattern": "\\bs[uû]k\\b|esv[aâ]k[a-zçğıöşü]*|çarşı ve pazar|pazar yerleri"
+  },
+  {
+    "id": "itar_cahiliye_toplumu",
+    "term": "Câhiliye Dönemi ve Toplumsal Yapı",
+    "unite_no": 1,
+    "tanim": "İslâm öncesi Arap toplumunda tevhid inancının unutulduğu, putperestliğin, kabile taassubunun (asabiyet), kan davalarının ve ahlakî çöküntünün hâkim olduğu dönemdir.\n💡 Sınav Şifresi: Şirk + asabiyet (kabilecilik) + kan davası = **Câhiliye Dönemi**.",
+    "pattern": "c[aâ]hiliye d[öo]nemi[a-zçğıöşü]*|c[aâ]hiliyye d[öo]nemi[a-zçğıöşü]*|c[aâ]hiliye[a-zçğıöşü]*|c[aâ]hiliyye[a-zçğıöşü]*|dini hayat|dinî hayat"
+  },
+  {
+    "id": "itar_kureys_ve_kollari",
+    "term": "Kureyş Kabilesi ve Kolları (Benî Hâşim, Ümeyye, Mahzûm, Zühre, Sehm)",
+    "unite_no": 1,
+    "tanim": "Hz. Peygamber'in mensup olduğu Adnânî kabilesidir. Başlıca kolları Benî Hâşim, Benî Ümeyye, Benî Mahzûm, Benî Zühre, Benî Sehm ve Benî Teym'dir.\n💡 Sınav Şifresi: Hz. Muhammed'in annesi Âmine **Benî Zühre**, babası Abdullah **Benî Hâşim** kolundandır.",
+    "pattern": "\\bkureyş[a-zçğıöşü]*|ben[iî] h[aâ]şim|ben[iî] z[üu]hre|ben[iî] mahz[uû]m|ben[iî] [üu]meyye|ben[iî] sehm|ben[iî] teym|ben[iî] m[üu]drike|huzeyme o[gğ]ullar[ıi]|abd[üu]men[aâ]f o[gğ]ullar[ıi]"
+  },
+  {
+    "id": "itar_mekke_sehri",
+    "term": "Mekke Şehri (Ümmü'l-Kurâ)",
+    "unite_no": 1,
+    "tanim": "Hicaz bölgesinde yer alan, tarıma elverişli olmadığı için ticaret ve hac merkezi olarak gelişen, Kâbe'yi barındıran kutsal şehir ve İslâm'ın doğduğu merkezdir (Ümmü'l-Kurâ).\n💡 Sınav Şifresi: Şehirlerin anası (Ümmü'l-Kurâ) + ticaret ve hac merkezi = **Mekke**.",
+    "pattern": "\\bmekke\\b|mekke[’'‘]?[a-zçğıöşü]*|mekke şehri|ümm[üu][’'‘]l-kur[aâ]"
+  },
+  {
+    "id": "itar_kabe_bolumleri",
+    "term": "Kâbe'nin Bölümleri (Şâzervan, Mültezem, Rüknü'l-Yemânî)",
+    "unite_no": 1,
+    "tanim": "Kâbe'nin mimari unsurlarıdır: Temel eteğindeki kavisli mermer çıkıntı **Şâzervan**; Kâbe kapısı ile Hacerülesved arasındaki dua mahalli **Mültezem**; güneybatı köşesi **Rüknü'l-Yemânî**'dir.\n💡 Sınav Şifresi: Mermer çıkıntı = **Şâzervan**; Kapı ile Hacerülesved arası = **Mültezem**; Yemen köşesi = **Rüknü'l-Yemânî**.",
+    "pattern": "\\bş[aâ]zervan\\b|\\bm[üu]ltezem\\b|r[üu]kn[üu][’'‘\\s-]?l-yem[aâ]n[iî]|yem[aâ]n[iî]\\b"
+  },
+  {
+    "id": "itar_cahiliye_ittifaklari",
+    "term": "Câhiliye İttifakları (Hilfü'l-Mutayyebîn, Hilfü'l-Ahlâf, Hilfü Le'akati'd-dem)",
+    "unite_no": 1,
+    "tanim": "Kusay'ın vefatından sonra Kâbe görevleri ve kabile rekabeti için kurulan ittifaklardır: Koku tasına el batıran Abdümenâf yanlıları **Hilfü'l-Mutayyebîn**; kan yalayıp ant içen Abdüddâr yanlıları **Hilfü'l-Ahlâf / Le'akati'd-dem**.\n💡 Sınav Şifresi: Koku tasına el batıranlar = **Mutayyebîn**; Kan yalayanlar = **Le'akati'd-dem / Ahlâf**.",
+    "pattern": "hilf[üu][’'‘\\s-]?l-mutayyeb[iî]n|mutayyeb[iî]n|hilf[üu][’'‘\\s-]?l-ahl[aâ]f|ahl[aâ]f\\b|le[‘'’]akati[’'‘]d-dem|hilf[üu][’'‘\\s-]?r-rib[aâ]b"
+  },
+  {
+    "id": "itar_amr_bin_luhay",
+    "term": "Amr b. Luhay (Câhiliye Putperestliğinin Başlatıcısı)",
+    "unite_no": 1,
+    "tanim": "Huzâa kabilesinin reisi olup Suriye'nin Belkâ bölgesinden Mekke'ye **Hübel** putunu getirerek Kâbe'ye diken ve Arap Yarımadası'nda tevhid inancını bozup putperestliği başlatan kimsedir.\n💡 Sınav Şifresi: Hübel putunu Mekke'ye getirip putperestliği başlatan Huzâalı = **Amr b. Luhay**.",
+    "pattern": "amr b\\.\\s*luhay|amr bin luhay"
+  },
+  {
+    "id": "itar_eyyamul_arab",
+    "term": "Eyyâmü'l-Arab (Arap Kabile Savaşları Günleri)",
+    "unite_no": 1,
+    "tanim": "İslâm öncesi Câhiliye döneminde Arap kabileleri arasında mera, su kaynakları, asabiyet ve gurur yüzünden meydana gelen kanlı kabile savaşlarına verilen genel addır (Arapların Günleri).\n💡 Sınav Şifresi: Câhiliye kabile savaşları günleri = **Eyyâmü'l-Arab**.",
+    "pattern": "eyy[aâ]m[üu][’'‘\\s-]?l-arab|eyamu[’'‘]l-arap|arapların savaş günleri"
+  },
+  {
+    "id": "itar_fil_vakasi",
+    "term": "Fil Vak'ası (Âmü'l-Fîl)",
+    "unite_no": 2,
+    "tanim": "Yemen Valisi Ebrehe'nin Kâbe'yi yıkmak amacıyla fillerle Mekke'ye saldırması ve Yüce Allah'ın Ebâbil kuşlarıyla orduyu helak etmesi olayıdır. Araplar bu yılı takvim başlangıcı saymıştır.\n💡 Sınav Şifresi: Hicret öncesi tarih belirlemede referans alınan olay = **Fil Vak'ası (Fîl Sûresi)**.",
+    "pattern": "fil vak[‘'’]as[ıi][a-zçğıöşü]*|[aâ]m[üu][’'‘]l-f[iî]l|ebrehe[a-zçğıöşü]*|fil s[uû]resi[a-zçğıöşü]*|hicri takvimden önce tarih belirleme"
+  },
+  {
+    "id": "itar_hilful_fudul",
+    "term": "Hilfü'l-Fudûl (Erdemliler İttifakı)",
+    "unite_no": 2,
+    "tanim": "Âs b. Vâil'in Yemenli tüccarın hakkını gasbetmesi üzerine, Abdullah b. Cüd'ân'ın evinde toplanıp zulme uğrayan herkesin hakkını savunmaya ant içen cemiyettir. Hz. Peygamber 20 yaşında katılmıştır.\n💡 Sınav Şifresi: Abdullah b. Cüd'ân'ın evi + haksızlığa uğrayanı koruma yemini = **Hilfü'l-Fudûl**.",
+    "pattern": "hilf[üu][’'‘\\s-]?l-fud[uû]l[a-zçğıöşü]*|erdemliler ittifak[ıi][a-zçğıöşü]*|erdemli insanların yemini|haksızlıklara son vermek|zulme uğrayan"
+  },
+  {
+    "id": "itar_rahip_bahira",
+    "term": "Râhip Bahîrâ ve Busrâ Seyahati",
+    "unite_no": 2,
+    "tanim": "Hz. Peygamber 12 yaşındayken amcası Ebû Tâlib ile gittiği Şam kervanında, Busrâ manastırındaki Hristiyan rahip Bahîrâ onun sırtındaki peygamberlik mührünü ve alâmetlerini teşhis etmiştir.\n💡 Sınav Şifresi: Busrâ + 12 yaş ticaret seyahati + peygamberlik mührü = **Râhip Bahîrâ**.",
+    "pattern": "r[aâ]hip bah[iî]r[aâ][a-zçğıöşü]*|bah[iî]r[aâ][a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_kabe_hakemligi",
+    "term": "Kâbe Hakemliği ve Hacerülesved",
+    "unite_no": 2,
+    "tanim": "35 yaşında Kâbe tamirinde Hacerülesved'i yerine koyma şerefi yüzünden kabileler arasındaki savaşı, taşı cübbesine koyup kabile reisleriyle birlikte taşıtarak adaletle çözen hakemliktir.\n💡 Sınav Şifresi: 35 yaş + Kâbe tamiri + Hacerülesved'in yerleştirilmesi = **Kâbe Hakemliği**.",
+    "pattern": "k[aâ]be hakemli[gğ]i[a-zçğıöşü]*|hacer[üu]lesved[a-zçğıöşü]*|hacer-i esved[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_tahannus_hira",
+    "term": "Tahannüs İbadeti ve Hira Mağarası",
+    "unite_no": 2,
+    "tanim": "Hz. Peygamber'in ilk vahiyden önce Ramazan aylarında Hira Mağarası'na çekilerek günahlardan arınma, tefekkür ve Hz. İbrahim'in tevhid inancı doğrultusunda yaptığı ibadettir.\n💡 Sınav Şifresi: Hira'da tefekkür ve uzlet ibadeti = **Tahannüs**.",
+    "pattern": "tahann[üu]s[a-zçğıöşü]*|hira ma[gğ]aras[ıi][a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_sutanne_halime",
+    "term": "Sütanne Halîme ve Benî Sa'd",
+    "unite_no": 2,
+    "tanim": "Sağlıklı büyümesi ve fasih Arapça öğrenmesi amacıyla Hz. Peygamber'in Hevâzin kabilesinin Benî Sa'd b. Bekir koluna mensup Halîme bint Ebû Züeyb'e emanet edilmesidir.\n💡 Sınav Şifresi: Fasih Arapça + Sa'd b. Bekir kabilesi = **Sütanne Halîme**.",
+    "pattern": "hal[iî]me bint[a-zçğıöşü]*|hal[iî]me[a-zçğıöşü]*|ben[iî] sa[‘'’]d b\\.\\s*bekir|sütanne[a-zçğıöşü]*|süt anne[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_ebva_vefati",
+    "term": "Ebvâ ve Hz. Âmine'nin Vefatı",
+    "unite_no": 2,
+    "tanim": "Hz. Peygamber 6 yaşındayken Medine'deki akraba ziyaretinden dönerken annesi Âmine'nin hastalanıp vefat ettiği ve defnedildiği Mekke-Medine arasındaki menzildir.\n💡 Sınav Şifresi: 6 yaş + Âmine'nin vefat ettiği yer = **Ebvâ**.",
+    "pattern": "ebv[aâ]\\b|ebva[a-zçğıöşü]*|annesi nerede hastalan[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_hz_hatice",
+    "term": "Hz. Hatice (Tâhire)",
+    "unite_no": 2,
+    "tanim": "Hz. Peygamber'in ilk eşi, ilk Müslüman ve müminlerin annesidir. İffet ve dürüstlüğünden dolayı Câhiliyede 'Tâhire' lakabıyla anılmıştır. Ticaret kervanlarını Hz. Peygamber'e emanet etmiş, 25 yıl evli kalmışlardır.\n💡 Sınav Şifresi: Tâhire lakaplı ilk mümin ve en büyük destekçi = **Hz. Hatice**.",
+    "pattern": "hz\\.\\s*hatice|\\bhatice[a-zçğıöşü]*|\\bt[aâ]hire\\b|\\btacire\\b"
+  },
+  {
+    "id": "itar_hicr_hatim",
+    "term": "Hicr (Hatîm / Kâbe Taşması)",
+    "unite_no": 2,
+    "tanim": "Kâbe'nin kuzeybatı duvarı önündeki yarım daire şeklindeki duvardır. 605 yılındaki tamirde helal malzeme yetmediği için Kâbe binasına dahil edilemeyip dışarıda bırakılmıştır.\n💡 Sınav Şifresi: Malzeme yetersizliğinden Kâbe dışında kalan kutsal alan = **Hicr (Hatîm)**.",
+    "pattern": "\\bhicr\\b|hat[iî]m\\b"
+  },
+  {
+    "id": "itar_peygamberin_cocukluk_ve_gencligi",
+    "term": "Hz. Peygamber'in Çocukluk ve Gençliği",
+    "unite_no": 2,
+    "tanim": "Hz. Peygamber Fil Yılı'nda Mekke'de doğmuş, 4 yaşına kadar sütanne yanında, 6 yaşına kadar annesi Âmine ile, 8 yaşına kadar dedesi Abdülmuttalib ile, ardından amcası Ebû Tâlib himayesinde büyümüştür.\n💡 Sınav Şifresi: Anne Âmine (6 yaş) $\\to$ Dede Abdülmuttalib (8 yaş) $\\to$ Amca Ebû Tâlib = **Himaye Sıralaması**.",
+    "pattern": "çocukluk dönemi|gençlik yıllar[ıi]|nerede doğmuştur|doğum tarihi|kutlu doğum"
+  },
+  {
+    "id": "itar_abdulmuttalib",
+    "term": "Abdülmuttalib (Şeybe b. Hâşim)",
+    "unite_no": 2,
+    "tanim": "Hz. Peygamber'in dedesi ve Kureyş reisi. Zemzem kuyusunu yeniden kazmış, Fil Vak'ası'nda Ebrehe'ye karşı Kâbe'yi savunmuştur. Doğumundan 8 yaşına kadar Peygamberimizi himaye etmiştir.\n💡 Sınav Şifresi: Zemzem'i çıkaran + 8 yaşına kadar Peygamber'i büyüten dede = **Abdülmuttalib**.",
+    "pattern": "abd[üu]lmuttalib[a-zçğıöşü]*|abdulmuttalip[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_ebu_talib",
+    "term": "Ebû Tâlib (Abdümenâf b. Abdülmuttalib)",
+    "unite_no": 2,
+    "tanim": "Hz. Peygamber'in amcası, Hz. Ali'nin babası. 8 yaşından itibaren vefatına kadar yeğenini canı pahasına himaye etmiş; Şam ticaret seyahatinde yanında götürmüş, Kureyş boykotunda Hâşimoğullarının başında direnmiştir.\n💡 Sınav Şifresi: 8 yaşından peygamberlik sonrasına dek en sadık hâmisi olan amca = **Ebû Tâlib**.",
+    "pattern": "eb[uû] t[aâ]lib[a-zçğıöşü]*|ebu talip[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_fatima_bint_esed",
+    "term": "Fâtıma bint Esed",
+    "unite_no": 2,
+    "tanim": "Ebû Tâlib'in eşi ve Hz. Ali'nin annesidir. Hz. Peygamber'e çocukluğunda öz annesi gibi şefkat göstermiş; Peygamberimiz onun hakkında 'Annemden sonraki annemdi' buyurarak Medine'de vefat ettiğinde kendi gömleğini ona kefen yapmıştır.\n💡 Sınav Şifresi: Peygamber'in 'Annemden sonraki annem' dediği amcasının eşi = **Fâtıma bint Esed**.",
+    "pattern": "f[aâ]t[ıi]ma bint esed"
+  },
+  {
+    "id": "itar_zeyd_bin_harise",
+    "term": "Zeyd b. Hârise",
+    "unite_no": 2,
+    "tanim": "Hz. Hatice'nin Peygamberimize hediye ettiği, Peygamberimizin azat edip evlat edindiği (Zeyd b. Muhammed) ilk Müslüman köledir. Kur'an'da adı açıkça geçen tek sahâbîdir (Ahzâb 37). Tâif'te siper olmuş, Mûte Savaşı'nın ilk şehit kumandanıdır.\n💡 Sınav Şifresi: Kur'an'da adı geçen tek sahabi + Mûte kumandanı = **Zeyd b. Hârise**.",
+    "pattern": "zeyd b\\.\\s*h[aâ]rise|zeyd bin h[aâ]rise"
+  },
+  {
+    "id": "itar_varaka_bin_nevfel",
+    "term": "Varaka b. Nevfel",
+    "unite_no": 2,
+    "tanim": "Hz. Hatice'nin amcasının oğlu olup putperestliği reddeden Hanîflerden ve kutsal metinleri bilen Hristiyan bilgindir. İlk vahiy sonrası Hz. Peygamber'i dinleyip ona gelenin 'Nâmûs-ı Ekber' (Cebrâil) olduğunu müjdelemiştir.\n💡 Sınav Şifresi: İlk vahyi tasdik eden Hristiyan Hanîf bilgin = **Varaka b. Nevfel**.",
+    "pattern": "varaka b\\.\\s*nevfel|varaka bin nevfel|\\bvaraka\\b"
+  },
+  {
+    "id": "itar_usame_bin_zeyd",
+    "term": "Üsâme b. Zeyd",
+    "unite_no": 2,
+    "tanim": "Zeyd b. Hârise'nin oğlu olup 'Hıbbü Resûlillâh' (Resûlullah'ın sevgilisi) unvanıyla tanınan genç sahâbîdir. Hz. Peygamber vefatından önce hazırladığı Bizans ordusuna henüz 18 yaşındayken başkumandan tayin etmiştir.\n💡 Sınav Şifresi: Peygamber'in vefat döşeğinde ordu komutanı tayin ettiği genç = **Üsâme b. Zeyd**.",
+    "pattern": "[üu]s[aâ]me bin zeyd|[üu]s[aâ]me b\\.\\s*zeyd"
+  },
+  {
+    "id": "itar_ilk_vahiy",
+    "term": "İlk Vahiy ve Alak Sûresi",
+    "unite_no": 3,
+    "tanim": "610 yılı Ramazan ayında Hira Mağarası'nda Cebrâil vasıtasıyla indirilen 'Yaratan Rabbinin adıyla oku!' nidasıyla başlayan Alak Sûresi'nin ilk 5 âyetidir. Vahyin bir süre kesilmesine **Fetret-i Vahy** denir.\n💡 Sınav Şifresi: 610 + Hira + Cebrâil + İkra' = **İlk Vahiy**; Kesintiye uğraması = **Fetret-i Vahy**.",
+    "pattern": "ilk vahiy[a-zçğıöşü]*|alak s[uû]resi[a-zçğıöşü]*|fetret-i vahy[a-zçğıöşü]*|fetret[üu][’'‘]l-vahy"
+  },
+  {
+    "id": "itar_darul_erkam",
+    "term": "Dârü'l-Erkam (İlk Karargâh ve Tebliğ Merkezi)",
+    "unite_no": 3,
+    "tanim": "Erkam b. Ebi'l-Erkam'ın Safâ Tepesi eteğindeki evi olup, gizli davet döneminde Müslümanların toplanıp ibadet ettikleri, Hz. Hamza ve Hz. Ömer'in Müslüman olduğu ilk eğitim merkezidir.\n💡 Sınav Şifresi: Safâ eteğindeki gizli tebliğ karargâhı / Dârü'l-İslâm = **Dârü'l-Erkam**.",
+    "pattern": "d[aâ]r[üu][’'‘\\s-]?l-erkam[a-zçğıöşü]*|[dD]ârülerkam|[dD]arulerkam|erkam b\\.\\s*ebi[’'‘]l-erkam"
+  },
+  {
+    "id": "itar_habesistan_hicreti",
+    "term": "Habeşistan Hicretleri",
+    "unite_no": 3,
+    "tanim": "Müşriklerin işkencelerine karşı 615 ve 616 yıllarında adil Hristiyan hükümdar Necâşî Ashame'nin ülkesine yapılan iki kafilelik hicrettir. Câfer b. Ebî Tâlib Necâşî'ye Meryem Sûresi'ni okumuştur.\n💡 Sınav Şifresi: İlk hicret yurdu + adil hükümdar Necâşî Ashame = **Habeşistan Hicreti**.",
+    "pattern": "habeşistan[a-zçğıöşü]*|nec[aâ]ş[iî][a-zçğıöşü]*|necaşi[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_kureys_ambargosu",
+    "term": "Şi'b-i Ebî Tâlib (Boykot ve Ambargo)",
+    "unite_no": 3,
+    "tanim": "Kureyş müşriklerinin Hz. Peygamber'i kendilerine teslim etmeyen Hâşimoğulları ve Müslümanlara karşı 3 yıl boyunca (616-619) uyguladığı evlilik, ticaret ve görüşme yasağı içeren tecrittir.\n💡 Sınav Şifresi: 3 yıl süren tecrit ve açlık ablukası = **Şi'b-i Ebî Tâlib (Ambargo)**.",
+    "pattern": "şi[‘'`]b-i eb[iî] t[aâ]lib[a-zçğıöşü]*|ambargo[a-zçğıöşü]*|boykot[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_huzun_yili",
+    "term": "Hüzün Yılı (Senetü'l-Hüzn)",
+    "unite_no": 3,
+    "tanim": "Ambargonun kalkmasından kısa bir süre sonra (620 yılında) Hz. Peygamber'i müşriklere karşı koruyan amcası Ebû Tâlib ile en büyük destekçisi eşi Hz. Hatice'nin peş peşe vefat ettiği yıldır.\n💡 Sınav Şifresi: Ebû Tâlib + Hz. Hatice'nin vefatı = **Senetü'l-Hüzn (Hüzün Yılı)**.",
+    "pattern": "h[üu]z[üu]n y[ıi]l[ıi][a-zçğıöşü]*|senet[üu][’'‘]l-h[üu]zn[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_taif_yolculugu",
+    "term": "Tâif Yolculuğu ve Addâs",
+    "unite_no": 3,
+    "tanim": "Hz. Peygamber'in Zeyd b. Hârise ile destek aramak için gittiği Tâif'te Sakîflilerce taşlanması, Addâs'ın Müslüman olması ve Mut'im b. Adî himayesinde Mekke'ye dönebilmesidir.\n💡 Sınav Şifresi: Sakîf kabilesinin taşlaması + köle Addâs + Mut'im b. Adî güvencesi = **Tâif Yolculuğu**.",
+    "pattern": "t[aâ]if yolculu[gğ][uü][a-zçğıöşü]*|t[aâ]if seferi[a-zçğıöşü]*|add[aâ]s\\b|mut[‘'`]im b\\.\\s*[‘'`]?ad[iî]"
+  },
+  {
+    "id": "itar_isra_ve_mirac",
+    "term": "İsrâ ve Mi'râc Mucizesi",
+    "unite_no": 3,
+    "tanim": "Hz. Peygamber'in Mescid-i Harâm'dan Kudüs'teki Mescid-i Aksâ'ya gece yürütülmesi (İsrâ) ve semaya yükseltilerek beş vakit namazın farz kılındığı ilahî tecellidir (Mi'râc).\n💡 Sınav Şifresi: Kudüs'e gece yürüyüşü = **İsrâ**; semaya yükseliş ve 5 vakit namaz = **Mi'râc**.",
+    "pattern": "isr[aâ] ve mi[‘'’]r[aâ]c|\\bisr[aâ][a-zçğıöşü]*|\\bmi[‘'’]r[aâ]c[a-zçğıöşü]*|mescid-i aks[aâ]|gece yolculu[gğ][uü]"
+  },
+  {
+    "id": "itar_akabe_biatlari",
+    "term": "Akabe Biatları (1. ve 2. Akabe)",
+    "unite_no": 3,
+    "tanim": "621'deki 1. Akabe'de 12 Medineli biat etmiş ('Kadınlar Biatı') ve Mus'ab b. Umeyr muallim gönderilmiştir. 622'deki 2. Akabe'de 75 Medineli Peygamber'i savunmaya ant içmiştir ('Savaş Biatı').\n💡 Sınav Şifresi: İlk Medineli öğretmen = **Mus'ab b. Umeyr**; Savunma ve hicret daveti = **2. Akabe Biatı**.",
+    "pattern": "akabe biat[a-zçğıöşü]*|birinci akabe|ikinci akabe"
+  },
+  {
+    "id": "itar_hicret_sevr",
+    "term": "Hicret ve Sevr Mağarası",
+    "unite_no": 3,
+    "tanim": "622'de Hz. Peygamber ve Hz. Ebû Bekir'in Medine'ye hicretidir. Sevr Mağarası'nda 3 gün gizlenmişler, Kubâ'da ilk mescidi inşa etmişler ve Ranûnâ'da ilk cuma namazını kılmışlardır.\n💡 Sınav Şifresi: Mağaradaki iki kişiden ikincisi = **Hz. Ebû Bekir (Sevr)**; İlk mescid = **Kubâ**.",
+    "pattern": "sevr ma[gğ]aras[ıi][a-zçğıöşü]*|\\bhicret\\b|hicret[a-zçğıöşü]*|göç etme[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_musrikler_ve_sirk",
+    "term": "Şirk ve Mekkeli Müşrikler",
+    "unite_no": 3,
+    "tanim": "Allah'ın varlığını kabul etmekle birlikte putları O'na ortak koşan ve şefaatçi edinen inançtır. Müşrikler kabilecilik taassubu, statü ve Kâbe gelirlerini kaybetme korkusuyla İslâm'a direnmiştir.\n💡 Sınav Şifresi: Allah'a ortak koşma = **Şirk / Müşrik**.",
+    "pattern": "müşrik[a-zçğıöşü]*|musrik[a-zçğıöşü]*|\\bşirk\\b"
+  },
+  {
+    "id": "itar_acik_davet",
+    "term": "Açık Davet ve Safâ Çağrısı",
+    "unite_no": 3,
+    "tanim": "'Sana emrolunanı açıkça bildir' (Hicr 94) ve 'En yakın akrabanı uyar' (Şuarâ 214) âyetlerinin ardından Hz. Peygamber'in Safâ Tepesi'ne çıkarak Kureyş'i alenen İslâm'a davet etmesidir.\n💡 Sınav Şifresi: Safâ Tepesi'nden aleni çağrı = **Açık Davet**.",
+    "pattern": "açık davet|aleni davet|safâ tepesi|safa tepesi|tebliğe kulak verme"
+  },
+  {
+    "id": "itar_ebu_cehil",
+    "term": "Ebû Cehil (Amr b. Hişâm)",
+    "unite_no": 3,
+    "tanim": "Mahzûmoğulları reisi, İslâm davetinin Mekke'deki baş düşmanı. Asıl adı Amr b. Hişâm iken düşmanlığı yüzünden Müslümanlarca 'Cehâletin Babası' (Ebû Cehil) denmiştir. Bedir Gazvesi'nde öldürülmüştür.\n💡 Sınav Şifresi: İslâm'ın baş düşmanı + Mahzûm reisi + Bedir'de öldürülen lider = **Ebû Cehil**.",
+    "pattern": "eb[uû] cehil[a-zçğıöşü]*|ebu cehil[a-zçğıöşü]*|amr b\\.\\s*hiş[aâ]m"
+  },
+  {
+    "id": "itar_ebu_leheb",
+    "term": "Ebû Leheb (Abdüluzzâ b. Abdülmuttalib)",
+    "unite_no": 3,
+    "tanim": "Hz. Peygamber'in öz amcası olmasına rağmen açık davetten itibaren en şiddetli muhalefeti yürüten ve Kur'an-ı Kerim'de Tebbet Sûresi ile elleri kurusun diye lânetlenen tek müşriktir.\n💡 Sınav Şifresi: Tebbet Sûresi ile kınanan öz amca = **Ebû Leheb**.",
+    "pattern": "eb[uû] leheb[a-zçğıöşü]*|ebu leheb[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_musab_bin_umeyr",
+    "term": "Mus'ab b. Umeyr (İslâm'ın İlk Muallimi)",
+    "unite_no": 3,
+    "tanim": "Kureyş'in zengin genciyken Müslüman olup her şeyden vazgeçen sahabi. 1. Akabe Biatı'ndan sonra Medine'ye ilk muallim olarak gönderilmiş, şehrin Müslüman olmasını sağlamış; Uhud'da sancaktarken şehit düşmüştür.\n💡 Sınav Şifresi: Medine'nin ilk muallimi + Uhud şehidi sancaktar = **Mus'ab b. Umeyr**.",
+    "pattern": "mus[‘'`]ab b\\.\\s*umeyr|musab bin umeyr"
+  },
+  {
+    "id": "itar_bilal_i_habesi",
+    "term": "Bilâl-i Habeşî (İslâm'ın İlk Müezzini)",
+    "unite_no": 3,
+    "tanim": "İslâm'ın ilk müezzini. Ümeyye b. Halef'in kızgın çöl taşları altında yaptığı işkencelere karşı 'Ehad! Ehad!' diyerek direnmiş, Hz. Ebû Bekir tarafından azat edilmiştir. Mekke fethinde Kâbe üstünde ilk ezanı okumuştur.\n💡 Sınav Şifresi: İlk müezzin + 'Ehad Ehad' direnişi + Kâbe'de ilk ezan = **Bilâl-i Habeşî**.",
+    "pattern": "bil[aâ]l-i habeş[iî][a-zçğıöşü]*|bilal[iî] habeşi[a-zçğıöşü]*|\\bbil[aâ]l\\b"
+  },
+  {
+    "id": "itar_cafer_bin_ebi_talib",
+    "term": "Câfer b. Ebî Tâlib (Zü'l-Cenâheyn)",
+    "unite_no": 3,
+    "tanim": "Hz. Ali'nin ağabeyi. Habeşistan hicretinde muhacirlerin sözcüsü olmuş, Kral Necâşî'nin huzurunda Meryem Sûresi'ni okumuştur. Mûte Savaşı'nda iki kolu kesilerek şehit düşmüş ('Zü'l-Cenâheyn') unvanını almıştır.\n💡 Sınav Şifresi: Habeşistan sözcüsü + Meryem Sûresi + Mûte kumandanı = **Câfer b. Ebî Tâlib**.",
+    "pattern": "c[aâ]fer b\\.\\s*eb[iî] t[aâ]lib|cafer bin ebi talib|c[aâ]fer b\\.\\s*eb[uû] talib|z[üu][’'‘]l-cen[aâ]heyn"
+  },
+  {
+    "id": "itar_musrik_elebaslari",
+    "term": "Müşrik Elebaşları (Ümeyye b. Halef, Utbe, Şeybe, Nadr b. Hâris)",
+    "unite_no": 3,
+    "tanim": "Mekke'de İslâm davetini bastırmak için çalışan müşrik liderleridir: Bilâl'in efendisi **Ümeyye b. Halef**, İran efsaneleri anlatıp Kur'an'ı karalayan **Nadr b. el-Hâris**, Kureyş hatibi **Utbe b. Rebîa** ve kardeşi **Şeybe**.\n💡 Sınav Şifresi: İran masallarıyla Kur'an'ı karalayan = **Nadr b. el-Hâris**; Bilâl'in işkencecisi = **Ümeyye b. Halef**.",
+    "pattern": "[üu]meyye b\\.\\s*halef|nadr b\\.\\s*el-h[aâ]ris|utbe b\\.\\s*reb[iî]a|utbe ve şeybe|as b\\.\\s*v[aâ]il|vel[iî]d b\\.\\s*mug[iî]re"
+  },
+  {
+    "id": "itar_kuba_ve_ranuna",
+    "term": "Kubâ Mescidi ve Ranûnâ (İlk Cuma)",
+    "unite_no": 3,
+    "tanim": "Hicret güzergâhında inşa edilen kutsal mekanlardır: İslâm tarihinde inşa edilen ilk mescid olan **Kubâ Mescidi** ve Hz. Peygamber'in Medine'ye girerken ilk Cuma namazını kıldırdığı **Ranûnâ Vadisi (Mescid-i Cuma)**.\n💡 Sınav Şifresi: İlk mescid = **Kubâ**; İlk Cuma namazı = **Ranûnâ (Mescid-i Cuma)**.",
+    "pattern": "mescid-i cuma|mescid-i cum[‘'’]a|ran[uû]n[aâ][a-zçğıöşü]*|kub[aâ] mescidi[a-zçğıöşü]*|\\bkub[aâ]\\b"
+  },
+  {
+    "id": "itar_sureler",
+    "term": "Önemli Sûreler (Kâfirûn, Mâûn, Kureyş, Fîl, İhlâs)",
+    "unite_no": 3,
+    "tanim": "İlk Dönem İslâm Tarihi olaylarıyla doğrudan irtibatlı Kur'an sûreleridir: Şirkten berî oluşu ilan eden **Kâfirûn**, yetim ve yoksulu doyurmayı emreden **Mâûn**, kervan güvenliğini anlatan **Kureyş**, Ebrehe ordusunu anlatan **Fîl** sûresidir.\n💡 Sınav Şifresi: Müşriklerin uzlaşma teklifine ret = **Kâfirûn**; Mekke kervanları = **Kureyş Sûresi**.",
+    "pattern": "k[aâ]fir[uû]n s[uû]resi|m[aâ]un s[uû]resi|kureyş s[uû]resi|kurayş s[uû]resi|f[iî]l s[uû]resi|fatiha s[uû]resi|ihlas s[uû]resi"
+  },
+  {
+    "id": "itar_evs_ve_hazrec",
+    "term": "Evs ve Hazrec Kabileleri (Ensâr)",
+    "unite_no": 4,
+    "tanim": "Yesrib'in yerli Arap kabileleridir. İslâm öncesinde aralarındaki Buâs Savaşı ile yıpranmışken, İslâm ile barışıp Hz. Peygamber'e kucak açmış ve 'Ensâr' (Yardımcılar) adını almışlardır.\n💡 Sınav Şifresi: Medine'nin yerli kabileleri + Buâs Savaşı $\\to$ **Evs ve Hazrec (Ensâr)**.",
+    "pattern": "evs ve hazrec|evs kabilesi|hazrec kabilesi|\\bevs\\b|\\bhazre[çc]\\b|bu[aâ]s savaşı|\\bens[aâ]r[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_muvahat",
+    "term": "Muvâhât (Muhacir - Ensar Kardeşliği)",
+    "unite_no": 4,
+    "tanim": "Hicretten sonra Hz. Peygamber'in Enes b. Mâlik'in evinde Mekkeli muhacirler ile Medineli ensar arasında kurduğu din kardeşliği bağıdır. Ensar mallarını ve evlerini muhacirlerle bölüşmüştür.\n💡 Sınav Şifresi: Muhacir ile Ensar arasında ilan edilen dinî kardeşlik bağı = **Muvâhât**.",
+    "pattern": "muv[aâ]h[aâ]t[a-zçğıöşü]*|muhacir-ensar kardeşliği|kardeşleşme[a-zçğıöşü]*|enes bin m[aâ]lik[’'‘]in evi|enes b\\.\\s*m[aâ]lik"
+  },
+  {
+    "id": "itar_medine_vesikasi",
+    "term": "Medine Vesikası (Medine Sözleşmesi)",
+    "unite_no": 4,
+    "tanim": "Hz. Peygamber'in hicretin ilk yılında Muhacirler, Ensar ve Medine Yahudileri arasında akdettiği; ortak savunma, inanç özgürlüğü ve Hz. Muhammed'in hakemliğini öngören ilk yazılı anayasadır.\n💡 Sınav Şifresi: Dünyanın ilk yazılı anayasası + Yahudilerle ortak savunma metni = **Medine Vesikası**.",
+    "pattern": "medine ves[iî]kas[ıi][a-zçğıöşü]*|medine sözleşmesi[a-zçğıöşü]*|medine anayasas[ıi][a-zçğıöşü]*|medine belgesi[a-zçğıöşü]*|yazılı anayasa|bağımsız bir isl[aâ]m devletinin kuruluşu|hazırlanan sözleşme"
+  },
+  {
+    "id": "itar_suffe",
+    "term": "Suffe ve Ehl-i Suffe",
+    "unite_no": 4,
+    "tanim": "Mescid-i Nebevî'nin arka kısmında inşa edilen; evi ve ailesi olmayan kimsesiz muhacirlerin barındığı ve devamlı ilim tahsil ettiği yatılı mektep/gölgeliktir. Ebû Hüreyre buranın önde gelen talebelerindendir.\n💡 Sınav Şifresi: Mescid-i Nebevî arkasındaki ilim talebeleri ve kimsesizler yurdu = **Suffe**.",
+    "pattern": "\\bsuffe\\b|ehl-i suffe|ash[aâ]b-ı suffe"
+  },
+  {
+    "id": "itar_mescid_i_nebevi",
+    "term": "Mescid-i Nebevî",
+    "unite_no": 4,
+    "tanim": "Hz. Peygamber'in Medine'de inşa ettiği; ibadet, devlet idaresi, elçi kabulleri (Üstüvânetü'l-Vüfûd), yargılama, hastane ve eğitim gibi çok yönlü fonksiyon ifa eden merkezî mescittir.\n💡 Sınav Şifresi: Kasvâ devesinin çöktüğü arsada kurulan idare ve ibadet merkezi = **Mescid-i Nebevî**.",
+    "pattern": "mescid-i nebev[iî][a-zçğıöşü]*|mescidi nebevi[a-zçğıöşü]*|devesinin c[öo]kt[üu][gğ][üu]|devesi c[öo]kt[üu]"
+  },
+  {
+    "id": "itar_kible_degisimi",
+    "term": "Kıblenin Değişmesi",
+    "unite_no": 4,
+    "tanim": "Hicretin 16-17. ayında Bakara 144. âyetle Müslümanların namaz kıblesinin Kudüs'teki Mescid-i Aksâ'dan Mekke'deki Kâbe'ye çevrilmesidir (Mescid-i Kıbleteyn).\n💡 Sınav Şifresi: Mescid-i Aksâ'dan Kâbe'ye yöneliş = **Kıblenin Değişmesi**.",
+    "pattern": "kıblenin değişmesi[a-zçğıöşü]*|kıble değişimi|mescid-i kıbleteyn"
+  },
+  {
+    "id": "itar_gazve_ve_seriyye",
+    "term": "Gazve ve Seriyye",
+    "unite_no": 4,
+    "tanim": "Hz. Peygamber'in bizzat kumandanlık ettiği askerî harekâtlara **Gazve** (yaklaşık 27 adet); bizzat katılmayıp bir sahâbî kumandasında gönderdiği askerî birliklere **Seriyye** denir.\n💡 Sınav Şifresi: Peygamber'in katıldığı = **Gazve**; Sahabî kumandasındaki birlik = **Seriyye**.",
+    "pattern": "gazve ve seriyye|\\bgazve[a-zçğıöşü]*|\\bseriyye[a-zçğıöşü]*|kumandası altında gönderdiği askerî birlik"
+  },
+  {
+    "id": "itar_bedir_gazvesi",
+    "term": "Bedir Gazvesi (624 / H. 2)",
+    "unite_no": 4,
+    "tanim": "Müslümanların Mekkeli müşriklere karşı kazandığı ilk büyük zaferdir. Ebû Cehil öldürülmüş, okur-yazar esirler 10 Müslümana okuma-yazma öğretmeleri karşılığında serbest bırakılmıştır.\n💡 Sınav Şifresi: İlk zafer + Ebû Cehil'in ölümü + 10 kişiye okuma yazma fidyesi = **Bedir Gazvesi**.",
+    "pattern": "\\bbedir\\b|bedir savaşı[a-zçğıöşü]*|bedir savasi[a-zçğıöşü]*|bedir gazvesi[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_beni_kaynuka",
+    "term": "Benî Kaynukâ Gazvesi",
+    "unite_no": 4,
+    "tanim": "Bedir zaferini kabullenemeyip pazar yerinde Müslüman bir kadına hakaret ederek Medine Sözleşmesi'ni çiğneyen, kuyumculukla uğraşan ve Medine'den ilk sürülen Yahudi kabilesidir.\n💡 Sınav Şifresi: Kuyumculukla uğraşan ve ilk sürülen Yahudi kabilesi = **Benî Kaynukâ**.",
+    "pattern": "ben[iî] kaynuk[aâ][a-zçğıöşü]*|kaynuk[aâ][a-zçğıöşü]*|kuyumculukla uğraşan yahudi"
+  },
+  {
+    "id": "itar_uhud_ve_ayneyn",
+    "term": "Uhud Gazvesi ve Ayneyn (Okçular) Tepesi",
+    "unite_no": 4,
+    "tanim": "625 (H. 3) yılında Bedir'in intikamı için yapılan savaştır. Ayneyn Tepesi'ndeki 50 okçunun yerini terk etmesiyle Hâlid b. Velîd arkadan kuşatmış; Hz. Hamza şehit olmuş, düşman Hamrâülesed'e kadar takip edilmiştir.\n💡 Sınav Şifresi: Okçular Tepesi (Ayneyn) + Hz. Hamza'nın şehadeti + Hamrâülesed takibi = **Uhud Gazvesi**.",
+    "pattern": "\\buhud\\b|uhud savaşı[a-zçğıöşü]*|uhud savasi[a-zçğıöşü]*|uhud gazvesi[a-zçğıöşü]*|ayneyn[a-zçğıöşü]*|okçular tepesi|hamr[aâ][üu]lesed"
+  },
+  {
+    "id": "itar_reci_ve_birimaune",
+    "term": "Recî' Vak'ası ve Bi'r-i Maûne",
+    "unite_no": 4,
+    "tanim": "İslâm'ı ve Kur'an'ı öğretmek üzere kabilelere gönderilen muallim sahabîlerin kalleşçe pusuya düşürülerek şehit edildiği facialardır. Bi'r-i Maûne'de 70 Ehl-i Suffe muallimi şehit olmuştur.\n💡 Sınav Şifresi: İslâm davetçisi hafızların şehit edildiği pusular = **Recî' Vak'ası ve Bi'r-i Maûne**.",
+    "pattern": "rec[iî][’'‘] vak[‘'’]as[ıi]|bi[’'‘]r-i ma[uû]ne|bir-i maune"
+  },
+  {
+    "id": "itar_beni_nadir",
+    "term": "Benî Nadîr Gazvesi",
+    "unite_no": 4,
+    "tanim": "Hz. Peygamber kale duvarı dibindeyken üzerine değirmen taşı atarak suikast girişiminde bulunan ve sözleşmeyi ihlal eden Benî Nadîr Yahudilerinin kuşatılarak Hayber'e sürgün edilmesidir.\n💡 Sınav Şifresi: Peygamber'e suikast teşebbüsü + Hayber'e sürgün = **Benî Nadîr**.",
+    "pattern": "ben[iî] nad[iî]r[a-zçğıöşü]*|nad[iî]r kabilesi"
+  },
+  {
+    "id": "itar_hendek_gazvesi",
+    "term": "Hendek Gazvesi (Ahzâb, 627 / H. 5)",
+    "unite_no": 4,
+    "tanim": "Müşrikler, Hayber Yahudileri ve bedevî kabilelerin birleşerek (Ahzâb) Medine'yi kuşattığı savaştır. Selmân-ı Fârisî'nin önerisiyle hendek kazılmış, Nuaym b. Mes'ûd'un hilesi ve fırtına ile kuşatma bozulmuştur.\n💡 Sınav Şifresi: Selmân-ı Fârisî'nin hendeği + Nuaym b. Mes'ûd'un taktiği = **Hendek (Ahzâb)**.",
+    "pattern": "\\bhendek\\b|hendek savaşı[a-zçğıöşü]*|hendek savasi[a-zçğıöşü]*|hendek gazvesi[a-zçğıöşü]*|ahz[aâ]b gazvesi|selm[aâ]n-ı f[aâ]ris[iî]|nuaym b\\.\\s*mes[‘'’][uû]d"
+  },
+  {
+    "id": "itar_beni_kurayza",
+    "term": "Benî Kurayza Gazvesi",
+    "unite_no": 4,
+    "tanim": "Hendek kuşatmasında Müslümanları arkadan vurup müşriklerle işbirliği yapan son Medine Yahudi kabilesidir. Hendek sonrasında kuşatılmış, Sa'd b. Muâz'ın Tevrat hükmüyle cezalandırılmışlardır.\n💡 Sınav Şifresi: Hendek'te ihanet + Sa'd b. Muâz'ın hakemliği = **Benî Kurayza**.",
+    "pattern": "ben[iî] kurayza[a-zçğıöşü]*|\\bkurayza\\b|kurayza kabilesi"
+  },
+  {
+    "id": "itar_beni_mustalik",
+    "term": "Benî Mustalik (Müreysî') Gazvesi ve İfk Hadisesi",
+    "unite_no": 4,
+    "tanim": "Huzâa kolu Mustalikoğullarına karşı yapılan seferdir. Dönüşte münafıkların Hz. Âişe'ye iftira attığı İfk Hadisesi yaşanmış (Nûr Sûresi ile temize çıkmıştır) ve Teyemmüm âyeti nâzil olmuştur.\n💡 Sınav Şifresi: İfk hadisesi + Teyemmüm âyeti = **Benî Mustalik (Müreysî') Gazvesi**.",
+    "pattern": "ben[iî] mustalik[a-zçğıöşü]*|m[üu]reys[iî][’'‘]?|ifk hadisesi[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_savas_izni",
+    "term": "Cihad ve Savaş İzni (Hac 22/39-41)",
+    "unite_no": 4,
+    "tanim": "Hicretin 2. yılında indirilen Hac Sûresi 39. âyetle zulme ve haksız saldırıya uğrayan, yurtlarından çıkarılan Müslümanlara nefis müdafaası için ilk kez savaşma ruhsatı verilmiştir.\n💡 Sınav Şifresi: Müslümanlara ilk savaş izninin verilmesi = **Hac 22/39-41**.",
+    "pattern": "savaş izni|hac 22/39-41"
+  },
+  {
+    "id": "itar_yesrib_medine",
+    "term": "Yesrib (Medînetü'n-Nebî)",
+    "unite_no": 4,
+    "tanim": "Hicretten önce şehrin adı kınama ve fesat anlamına gelen 'Yesrib' idi. Hz. Peygamber bu ismi güzel ve hoş anlamına gelen Tâbe / Tayyibe ve Medînetü'n-Nebî (Peygamber Şehri) olarak değiştirmiştir.\n💡 Sınav Şifresi: Eski adı fesat/kınama olan Yesrib $\\to$ **Medine / Tâbe**.",
+    "pattern": "yesrib[a-zçğıöşü]*|medinet[üu][’'‘]n-neb[iî]|tayyibe\\b"
+  },
+  {
+    "id": "itar_erken_gazveler_seriyyeler",
+    "term": "Erken Gazveler ve Seriyyeler (Batn-ı Nahle, Sevîk, Bedrü'l-Ûlâ, Karede)",
+    "unite_no": 4,
+    "tanim": "Hicretin ilk iki yılında Kureyş kervanlarını baskı altına almak için düzenlenen harekâtlardır: İlk esir ve ganimetin alındığı **Batn-ı Nahle**; Ebû Süfyân'ın un çuvallarını atıp kaçtığı **Sevîk**; Kürz takibindeki **Bedrü'l-Ûlâ**; Kureyş kervan yolunu kesen **Karede Seriyyesi**.\n💡 Sınav Şifresi: Un çuvalları = **Sevîk**; İlk ganimet/esir = **Batn-ı Nahle**.",
+    "pattern": "batn-ı nahle|bedr[üu][’'‘\\s-]?l-[uû]l[aâ]|sev[iî]k gazvesi|\\bsev[iî]k\\b|karede seriyyesi|\\bkarede\\b"
+  },
+  {
+    "id": "itar_mubareze",
+    "term": "Mübâreze (Savaş Öncesi Teke Tek Çarpışma)",
+    "unite_no": 4,
+    "tanim": "Eski Arap ve İslâm savaşlarında toplu hücum başlamadan önce, iki ordunun en usta cengâverlerinin er meydanına çıkarak teke tek vuruşması geleneğidir. Bedir'de Hz. Ali, Hz. Hamza ve Ubeyde b. Hâris müşrik şampiyonlarını devirmiştir.\n💡 Sınav Şifresi: Savaş öncesi er meydanında teke tek vuruşma = **Mübâreze**.",
+    "pattern": "\\bm[üu]b[aâ]reze\\b|m[üu]bareze[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_sad_bin_muaz",
+    "term": "Sa'd b. Muâz (Evs Reisi ve Kurayza Hakemi)",
+    "unite_no": 4,
+    "tanim": "Evs kabilesinin reisi. Hendek Savaşı'nda yaralanmış; Hendek'te Müslümanlara ihanet eden Benî Kurayza Yahudilerinin muhakemesinde iki tarafın rızasıyla hakem seçilmiş ve Tevrat hükmüyle hüküm vermiştir. Vefatında Arş'ın titrediği rivayet edilir.\n💡 Sınav Şifresi: Evs reisi + Benî Kurayza hakemi = **Sa'd b. Muâz**.",
+    "pattern": "sa[‘'’]d b\\.\\s*mu[aâ]z|sad bin muaz"
+  },
+  {
+    "id": "itar_medine_onderleri",
+    "term": "Medineli Öncü Sahâbîler (Sa'd b. Ubâde, Zeyd b. Sâbit)",
+    "unite_no": 4,
+    "tanim": "Medine İslâm toplumunun temel taşları: Hazrec kabilesinin seyyidi **Sa'd b. Ubâde**; Hz. Peygamber'in Medine'de evinde misafir kaldığı **Ebû Eyyûb el-Ensârî**; vahiy kâtibi ve Kur'an'ı toplayan heyetin başkanı **Zeyd b. Sâbit**.\n💡 Sınav Şifresi: Hazrec reisi = **Sa'd b. Ubâde**; Vahiy kâtibi = **Zeyd b. Sâbit**.",
+    "pattern": "sa[’'‘]d b\\.\\s*ub[aâ]de|zeyd b\\.\\s*s[aâ]bit|eb[uû] eyy[uû]b el-ens[aâ]r[iî]|s[aâ]lim b\\.\\s*avf"
+  },
+  {
+    "id": "itar_asere_i_mubessere",
+    "term": "Sahabe Önderleri (Ebû Ubeyde, Abdurrahman b. Avf, Muâz b. Cebel)",
+    "unite_no": 4,
+    "tanim": "İslâm öncüleridir: 'Ümmetin Emini' lakaplı **Ebû Ubeyde b. Cerrâh**; cömertliğiyle bilinen tüccar sahâbî **Abdurrahman b. Avf**; helal-haramı en iyi bilen, Yemen muallimi ve kadısı **Muâz b. Cebel**.\n💡 Sınav Şifresi: Eminü'l-Ümme = **Ebû Ubeyde b. Cerrâh**; Yemen kadısı/muallimi = **Muâz b. Cebel**.",
+    "pattern": "eb[uû] ubeyde b\\.\\s*cerr[aâ]h|ebu ubeyde[a-zçğıöşü]*|abdurrahman b\\.\\s*avf|mu[aâ]z b\\.\\s*cebel|muaz b\\.\\s*cebel"
+  },
+  {
+    "id": "itar_hudeybiye",
+    "term": "Hudeybiye Barış Antlaşması (628 / H. 6)",
+    "unite_no": 5,
+    "tanim": "Kureyş ile imzalanan 10 yıllık barış antlaşmasıdır. Rıdvân Biatı yapılmış; Kureyş İslâm Devleti'ni resmen tanımış, Müslümanların umreyi ertesi yıl yapması (Umretü'l-Kazâ) kararlaştırılmıştır.\n💡 Sınav Şifresi: 10 yıl barış + Rıdvân Biatı + İslâm'ın resmen tanınması = **Hudeybiye Antlaşması**.",
+    "pattern": "\\bhudeybiye\\b|hudeybiye antlaşmas[ıi][a-zçğıöşü]*|hudeybiye barış[ıi][a-zçğıöşü]*|hudeybiye anlaşmas[ıi][a-zçğıöşü]*|r[ıi]dv[aâ]n biat[ıi][a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_davet_mektuplari",
+    "term": "Hükümdarlara Davet Mektupları",
+    "unite_no": 5,
+    "tanim": "Hudeybiye barış ortamında Hz. Peygamber'in Bizans (Herakleios), Sâsânî (Hüsrev), Mısır (Mukavkıs) ve Habeş (Necâşî) krallarına gönderdiği İslâm'a davet mektuplarıdır.\n💡 Sınav Şifresi: Gümüş mühür ('Muhammedün Resûlullah') ile çevre imparatorluklara gönderilen tebliğ = **Davet Mektupları**.",
+    "pattern": "davet mektup[a-zçğıöşü]*|hükümdarlara davet|hükümdarları isl[aâ]m[’'‘]a davet"
+  },
+  {
+    "id": "itar_hayberin_fethi",
+    "term": "Hayber'in Fethi (628 / H. 7)",
+    "unite_no": 5,
+    "tanim": "Yahudilerin askerî ve siyasî üssü olan kaleler zincirinin fethedilmesidir. Hz. Ali kalenin kapısını sökerek zaferi getirmiş; araziler ürünün yarısı karşılığı yerlilere bırakılmıştır (haraç arazisi).\n💡 Sınav Şifresi: Yahudilerin siyasî gücünün kırılması + Hz. Ali'nin fethi = **Hayber'in Fethi**.",
+    "pattern": "\\bhayber\\b|hayber[’'‘]in fethi[a-zçğıöşü]*|hayber fethi|hayber gazvesi[a-zçğıöşü]*|yahudilerin arap yarımadasında siyasi bir güç|yahudilerin.*siyasi.*güç"
+  },
+  {
+    "id": "itar_umretul_kaza",
+    "term": "Umretü'l-Kazâ (Kaza Umresi, 629 / H. 7)",
+    "unite_no": 5,
+    "tanim": "Hudeybiye şartı uyarınca Müslümanların bir yıl sonra silahsız olarak Mekke'ye gidip 3 gün boyunca Kâbe'yi ziyaret ederek eda ettikleri kaza umresidir.\n💡 Sınav Şifresi: Hudeybiye'den bir yıl sonra 3 günlük umre ziyareti = **Umretü'l-Kazâ**.",
+    "pattern": "umret[üu][’'‘\\s-]?l-kaz[aâ][a-zçğıöşü]*|kaza umresi[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_mute_savasi",
+    "term": "Mûte Savaşı (629 / H. 8)",
+    "unite_no": 5,
+    "tanim": "Busrâ emîrine giden İslâm elçisinin şehit edilmesi üzerine Bizans ordusuna karşı yapılan ilk savaştır. Zeyd, Câfer ve Abdullah b. Revâha şehit olmuş; Hâlid b. Velîd'e 'Seyfullah' (Allah'ın Kılıcı) lakabı verilmiştir.\n💡 Sınav Şifresi: Bizans'la ilk savaş + 3 komutanın şehadeti + Hâlid b. Velîd (Seyfullah) = **Mûte Savaşı**.",
+    "pattern": "\\bm[uû]te\\b|m[uû]te savaşı[a-zçğıöşü]*|mute savasi[a-zçğıöşü]*|m[uû]te gazvesi|mûte seferi"
+  },
+  {
+    "id": "itar_mekkenin_fethi",
+    "term": "Mekke'nin Fethi (630 / H. 8)",
+    "unite_no": 5,
+    "tanim": "Kureyş'in Hudeybiye'yi bozması üzerine 20 Ramazan 8'de İslâm ordusunun kan dökmeden Mekke'ye girmesi, Kâbe'yi putlardan temizlemesi ve Hz. Peygamber'in genel af ilan etmesidir.\n💡 Sınav Şifresi: 20 Ramazan 8 + putların temizlenmesi + intikam yok, genel bağışlama = **Mekke'nin Fethi**.",
+    "pattern": "mekke[’'‘]nin fethi[a-zçğıöşü]*|mekkenin fethi|mekke fethi"
+  },
+  {
+    "id": "itar_huneyn_gazvesi",
+    "term": "Huneyn Gazvesi ve Evtâs Savaşı",
+    "unite_no": 5,
+    "tanim": "Mekke fethinden sonra Hevâzin ve Sakîf kabilelerinin saldırısına karşı yapılan savaştır. Müslümanlar sayı çokluğuna güvenip başlangıçta pusuya düşmüşse de Hz. Peygamber'in sebatıyla kesin zafer kazanılmıştır.\n💡 Sınav Şifresi: Hevâzin ve Sakîf kabileleri + sayı çokluğuna güvenme ve pusu = **Huneyn Gazvesi**.",
+    "pattern": "\\bhuneyn\\b|huneyn savaşı[a-zçğıöşü]*|huneyn savasi[a-zçğıöşü]*|huneyn gazvesi[a-zçğıöşü]*|evt[aâ]s savaşı"
+  },
+  {
+    "id": "itar_taif_kusatmasi",
+    "term": "Tâif Kuşatması",
+    "unite_no": 5,
+    "tanim": "Huneyn hezimetinden sonra Sakîf kabilesinin sığındığı müstahkem Tâif kalesinin mancınıklarla kuşatılmasıdır. Kuşatma kaldırılmış, kısa süre sonra Tâifliler kendileri gelip Müslüman olmuştur.\n💡 Sınav Şifresi: Sakîf'in müstahkem kalesine mancınıkla yapılan kuşatma = **Tâif Kuşatması**.",
+    "pattern": "\\bt[aâ]if\\b|t[aâ]if kuşatmas[ıi][a-zçğıöşü]*|taif kusatmasi"
+  },
+  {
+    "id": "itar_tebuk_gazvesi",
+    "term": "Tebük Gazvesi (Gazvetü'l-Usre)",
+    "unite_no": 5,
+    "tanim": "Bizans ordusunun saldıracağı haberi üzerine yaz sıcağında ve kıtlıkta ('Sâatü'l-Usre') Suriye sınırına düzenlenen son gazvedir. Hz. Ebû Bekir bütün malını vermiştir; Cizye âyeti uygulanmıştır.\n💡 Sınav Şifresi: Gazvetü'l-Usre (Zorluk Seferi) + Bizans'a karşı son gazve = **Tebük Gazvesi**.",
+    "pattern": "\\bteb[üu]k\\b|teb[üu]k gazvesi[a-zçğıöşü]*|teb[üu]k seferi[a-zçğıöşü]*|gazvet[üu][’'‘]l-usre|s[aâ]at[üu][’'‘]l-usre|bizanslıların med[iî]ne[’'‘]ye saldırı"
+  },
+  {
+    "id": "itar_mescid_i_dirar",
+    "term": "Mescid-i Dırâr",
+    "unite_no": 5,
+    "tanim": "Münafıkların Müslümanları bölmek ve Bizans ile gizli irtibat kurmak amacıyla Kubâ Mescidi yakınında inşa ettikleri, Tebük dönüşü Hz. Peygamber'in emriyle yıktırılan fitne mescididir.\n💡 Sınav Şifresi: Münafıkların tefrika merkezi + Tebük dönüşü yıktırılan yapı = **Mescid-i Dırâr**.",
+    "pattern": "mescid-i d[ıi]r[aâ]r[a-zçğıöşü]*|mescidi d[ıi]rar"
+  },
+  {
+    "id": "itar_senetul_vufud",
+    "term": "Senetü'l-Vüfûd (Elçiler Yılı, H. 9)",
+    "unite_no": 5,
+    "tanim": "Mekke'nin fethi ve Tebük zaferinden sonra Arap kabile heyetlerinin bölük bölük Medine'ye gelerek Hz. Peygamber'e biat edip İslâm'ı kabul ettikleri 630-631 yılıdır.\n💡 Sınav Şifresi: Arabistan kabilelerinin heyetlerle Medine'ye akın ettiği yıl = **Senetü'l-Vüfûd**.",
+    "pattern": "senet[üu][’'‘]l-v[üu]f[uû]d|elçiler yılı|elciler yili"
+  },
+  {
+    "id": "itar_veda_hacci_ve_hutbesi",
+    "term": "Vedâ Haccı ve Vedâ Hutbesi (632 / H. 10)",
+    "unite_no": 5,
+    "tanim": "Hz. Peygamber'in 140.000 sahabiyle eda ettiği ilk ve tek haccı ile Arafat'ta can, mal ve kadın haklarını, ırkçılık ve faizin kaldırılmasını ilan eden evrensel insan hakları beyannamesidir.\n💡 Sınav Şifresi: Haccetü'l-İslâm + Haccetü'l-Belâğ + Evrensel insan hakları = **Vedâ Haccı ve Hutbesi**.",
+    "pattern": "ved[aâ] hacc[ıi][a-zçğıöşü]*|ved[aâ] hutbesi[a-zçğıöşü]*|hac ibadeti|hac ibadetini niteleyen|632 yılında tamamladığı hac"
+  },
+  {
+    "id": "itar_vefat_ve_ravza",
+    "term": "Hz. Peygamber'in Vefatı ve Ravza-i Mutahhara",
+    "unite_no": 5,
+    "tanim": "Hz. Peygamber 13 Rebîülevvel 11 (8 Haziran 632) Pazartesi günü vefat etmiş; peygamberlerin vefat ettiği yere defnedilmesi sünnetiyle Hz. Âişe'nin odasına defnedilmiştir (Ravza-i Mutahhara).\n💡 Sınav Şifresi: 632 yılı + Refîk-i A'lâ + Hz. Âişe'nin odası = **Ravza-i Mutahhara**.",
+    "pattern": "ref[iî]k-i a[‘'’`]l[aâ]|ravza-i mutahhara[a-zçğıöşü]*|ravzai mutahhara|vefat etmiştir|kaç yılında vefat"
+  },
+  {
+    "id": "itar_cizye",
+    "term": "Cizye Âyeti (Tevbe 29)",
+    "unite_no": 5,
+    "tanim": "İslâm devletinde yaşayan Ehl-i Kitap gayrimüslimlerden (zimmî) can, mal ve inanç güvenliği ile askerlikten muafiyet karşılığında alınan baş vergisidir. Tebük Seferi'nde uygulanmıştır.\n💡 Sınav Şifresi: Tebük Seferi'nde nâzil olup Ehl-i Kitap'a uygulanan baş vergisi = **Cizye**.",
+    "pattern": "\\bcizye[a-zçğıöşü]*|tevbe 29"
+  },
+  {
+    "id": "itar_halid_bin_velid",
+    "term": "Hâlid b. Velîd (Seyfullah)",
+    "unite_no": 5,
+    "tanim": "Kureyş'in askeri dâhisi. Hudeybiye barış ortamında Müslüman olmuş; Mûte Savaşı'nda 3 komutanın şehadetinin ardından sancağı alarak orduyu imhadan kurtarmış ve Hz. Peygamber kendisine 'Seyfullah' demiştir.\n💡 Sınav Şifresi: Mûte kahramanı + Allah'ın Kılıcı = **Hâlid b. Velîd (Seyfullah)**.",
+    "pattern": "h[aâ]lid b\\.\\s*vel[iî]d|halid bin velid|\\bseyfullah\\b"
+  },
+  {
+    "id": "itar_abdullah_bin_revaha",
+    "term": "Abdullah b. Revâha (Şâirü Resûlillâh)",
+    "unite_no": 5,
+    "tanim": "Hz. Peygamber'in Ensâr şairi. Akabe biatlarında bulunmuş, şiirleriyle İslâm'ı savunmuştur. Mûte Savaşı'nda Zeyd ve Câfer'in ardından 3. ordu kumandanı olarak şehit düşmüştür.\n💡 Sınav Şifresi: Mûte'nin 3. şehit kumandanı + Peygamber'in şairi = **Abdullah b. Revâha**.",
+    "pattern": "abdullah b\\.\\s*rev[aâ]h[aâ]|abdullah bin revaha"
+  },
+  {
+    "id": "itar_ebu_sufyan",
+    "term": "Ebû Süfyân b. Harb",
+    "unite_no": 5,
+    "tanim": "Ümeyyeoğulları reisi. Uhud ve Hendek'te müşrik ordularının başkumandanıydı. Mekke fethinden hemen önce Müslüman olmuş, Hz. Peygamber onun evine sığınanlara emân vermiştir.\n💡 Sınav Şifresi: Uhud ve Hendek müşrik başkumandanı + fetihte evi emân kılınan lider = **Ebû Süfyân**.",
+    "pattern": "eb[uû] s[üu]fy[aâ]n[a-zçğıöşü]*|ebu sufyan[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_suheyl_bin_amr",
+    "term": "Süheyl b. Amr (Kureyş Hatibi)",
+    "unite_no": 5,
+    "tanim": "Kureyş'in meşhur hatibi. Hudeybiye Barış Antlaşması'nda müşriklerin baş delegesi olarak müzakereleri yürütmüştür. Mekke'nin fethinde Müslüman olmuştur.\n💡 Sınav Şifresi: Hudeybiye'de müşriklerin baş delegesi ve hatibi = **Süheyl b. Amr**.",
+    "pattern": "s[üu]heyl b\\.\\s*amr|suheyl bin amr|urve b\\.\\s*mes[‘'’]?[uû]d|b[üu]deyl b\\.\\s*verk[aâ]"
+  },
+  {
+    "id": "itar_muellefe_i_kulub",
+    "term": "Müellefe-i Kulûb (Kalpleri Isındırılanlar)",
+    "unite_no": 5,
+    "tanim": "İslâm'a yeni girmiş veya girmesi umulan, kalpleri İslâm'a ısındırılmak istenen nüfuzlu kimselerdir. Huneyn ganimetlerinin taksiminde Hz. Peygamber Kureyş ve bedevî reislerine bol pay vermiştir.\n💡 Sınav Şifresi: Huneyn ganimetleriyle kalpleri İslâm'a ısındırılan reisler = **Müellefe-i Kulûb**.",
+    "pattern": "m[üu]ellefe[ -]i kul[uû]b[a-zçğıöşü]*|m[üu]ellefe-i kulub[a-zçğıöşü]*"
+  },
+  {
+    "id": "itar_haccetul_islam",
+    "term": "Haccetü'l-İslâm ve Vedâ Haccı İsimleri",
+    "unite_no": 5,
+    "tanim": "Hz. Peygamber'in tek haccına verilen isimlerdir: İslâm farzını yerine getirdiği için **Haccetü'l-İslâm**; tebliği tamamladığı için **Haccetü'l-Belâğ**; dîn kemale erdiği için **Haccetü'l-Kemâl / Haccetü't-Tamâm** denilmiştir.\n💡 Sınav Şifresi: Haccetü'l-İslâm = Haccetü'l-Belâğ = Haccetü't-Tamâm = **Vedâ Haccı**.",
+    "pattern": "haccet[üu][’'‘\\s-]?l-kem[aâ]l|haccet[üu][’'‘\\s-]?t-tam[aâ]m|haccet[üu][’'‘\\s-]?l-bel[aâ][gğ]|haccet[üu][’'‘\\s-]?l-isl[aâ]m"
+  },
+  {
+    "id": "itar_fedek_ve_fey",
+    "term": "Fedek Arazisi ve Fey Malı",
+    "unite_no": 5,
+    "tanim": "Hayber fethinden sonra savaş yapılmadan barış yoluyla teslim olan Yahudi yerleşimidir. Savaşsız alındığı için ganimet değil, doğrudan Peygamber'in tasarrufuna ait **Fey** statüsündedir.\n💡 Sınav Şifresi: Savaşsız teslim olup Fey statüsünde olan arazi = **Fedek**.",
+    "pattern": "\\bfedek\\b|fedek arazisi|fey geliri"
+  }
+]

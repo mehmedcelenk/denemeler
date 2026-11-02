@@ -1,0 +1,130 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdakilerden hangisi .‫ﻢ‬ ْ ‫ﻫ‬ ِ ‫ﺪ‬ ِ ‫ﺟﻠ َﺴﻮا ﻋﻠﻰ ﻣﻘﺎ‬ ِ ‫ﻋ‬ َ ‫ﺼﻒ و‬ ّ ‫ﺧﻠ ﻮا إﻟ ﻰ اﻟ‬ َ َ‫ د‬cümlesinin Türkçe tercümesidir?",
+    "secenekler": {
+      "A": "Öğrenciler okula gittiler.",
+      "B": "Öğretmen öğrencilere sınıfa dedi.",
+      "C": "Sınıfa girdiler ve sıralarına oturdular.",
+      "D": "Sonra derslerini yazdılar.",
+      "E": "Derste birlikte resim yaptılar."
+    },
+    "ans": "C",
+    "solution": ""
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdakilerden hangisi (‫ )ﻣﺎذا ﺗ َﺎ ْﻛﻞ؟‬sorusunun cevabı olamaz?",
+    "secenekler": {
+      "A": "‫ﻟ َﺤﻢ‬",
+      "B": "‫ﺣﻠﻴ ﺐ‬ َ",
+      "C": "ّ ‫أ ُُر‬ ‫ز‬",
+      "D": "‫ﺳﻠ ﻄ ﺔ‬ َ",
+      "E": "‫ﺣﻠ ْﻮى‬ َ"
+    },
+    "ans": "B",
+    "solution": "a- lahm- et\n\n                 b- halib- süt (yemek fiili ile kullanılmaz, içmek fiili ile kullanılabilir)\n\n                 c- uruzz- pilav\n\n                 d- salata- salata\n\n                 e- halvâ- tatlı"
+  },
+  {
+    "q_num": 3,
+    "stem": "Aşağıda karışık verilen cümlelerden bir diyalog oluşturmak için doğru sıra nasıl olmalıdır? I. II. III. IV. V. VI.",
+    "secenekler": {
+      "A": "I-II-III-IV-V-VI",
+      "B": "III-I-V-VI-II-IV",
+      "C": "II-IV-I-III-V-VI",
+      "D": "IV-V-II-I-III-VI",
+      "E": "VI-V-IV-III-II-I"
+    },
+    "ans": "B",
+    "solution": "Köyde neler gördün? (III)\n\n\n                                                                          Çiftlikte hayvanları gördüm, inekleri, koyunları,\n                tavukları. (I)\n\n\n                                            Ata bindin mi? (V)\n\n\n                                                                     Evet, ata bindim. At hızlı koşuyor. (VI)\n\n\n                                          Daha neler yaptın? (II)\n\n\n\n                                                                           Dedemle tarlalara gittim, çalıştık,\n\n                yorulduk sonra ağaçların altında oturduk ve köydeki sulardan içtik. (IV)\n\n                Doğru yanıt B'dir."
+  },
+  {
+    "q_num": 4,
+    "stem": "‫ﺟﺔ‬ َ ‫ دَﺟﺎ‬sözcüğü hangi çiftlik hayvanının Arapça adıdır?",
+    "secenekler": {
+      "A": "inek",
+      "B": "tavuk",
+      "C": "koyun",
+      "D": "keçi",
+      "E": "ördek"
+    },
+    "ans": "B",
+    "solution": ""
+  },
+  {
+    "q_num": 5,
+    "stem": "Yukarıda verilen zamirlerin doğru sıralaması aşağıdakilerden hangisinde verilmiştir?",
+    "secenekler": {
+      "A": "i. gâib ii. muhâtab iii. muhataba iv. mutekelim v. gâibe",
+      "B": "i. mutekelim ii. muhâtab iii. muhataba iv. gâibe v. gâib",
+      "C": "i. mutekelim ii. muhataba iii. muhâtab iv. gâib v. gâibe"
+    },
+    "ans": "E",
+    "solution": ""
+  },
+  {
+    "q_num": 6,
+    "stem": "Aşağıdaki cümlelerden hangisinde fâ'il mef'ûlden önce gelmiştir?",
+    "secenekler": {
+      "A": "ُ‫ﻮﻟ َﺪ‬ َ ‫ﻃََﺮقَ اﻟﺒﺎ‬ َ ‫ب اﻟ‬",
+      "B": "َ‫ﻬﻮة‬ َ ‫ب ا ﻷ م اﻟ‬ ْ ‫ﻘ‬ ُ ‫ﺸَﺮ‬ْ َ‫ﺗ‬",
+      "C": "‫ن‬ ِ ‫ﻦ اﻟ ﻄﺒﻴﺒﺎ‬ ِ ْ ‫ﻀﻴ‬ َ ‫ﺤ ﺺ اﻟ ﻤ ﺮﻳ‬ َ َ ‫ﻓ‬",
+      "D": "‫ﻞ‬ ُ ‫ﺐ اﻟ ﻄ ﻔ‬ َ ‫ب اﻟ ﺤﻠﻴ‬ َ ‫ﺮ‬ِ ‫ﺷ‬َ",
+      "E": "‫ﺔ‬ُ ‫ﻤ‬ َ ‫ﻤ ﻌﻠ‬ُ ‫ت اﻟ‬ِ ‫ﺖ اﻟﻄﺎﻟ ِﺒﺎ‬ ْ ‫ﻓ‬َ ‫ﻋَﺮ‬ َ"
+    },
+    "ans": "B",
+    "solution": "Fiil cümlesinin yapısı normalde fiil+fâ‘il+mef‘ûl biçimindedir. Burada fiilin\n                başta kullanılma zorunluluğu olduğunu (eğer cümle fiil cümlesi olacaksa)\n                biliyorsunuz. Fâ‘ilin yeri normalde fiilden hemen sonradır. Bununla birlikte\n                fâ‘il ile mef‘ûl, bazen vurguya bağlı olarak yer değiştirebilirler.\n\n                A şıkkında harekelerden mefûlun önce, fâilin sonra geldiğini anlarız. (Mefûl\n                olan el-bâbe kelimesi fetha ile mansûbdur, fâil olan el-veledu kelimesi\n                damme ile merfûdur.)\n\n                C şıkkında fâilin sonda geldiğini mefûlun mansub (el-maridayni kelimesi\n                ikildir ve ye ile mansûbdur), fâilin merfû olduğundan anlarız (et-tabîbâni\n                kelimesi fâildir ve elif ile merfûddur.)\n\n                D şıkkında da meful olan kelime fetha ile mansûbdur.\n\n                E şıkkında ise mefûl olan et-tâlibâti kelimesi kesra ile mansubdur. Çünkü\n                düzenli dişil çoğuldur.\n\n                Sadece B şıkkında fâil olan el-ummu kelimesi(harekesi dammedir, fâil\n                olduğunu anlamdan da çıkarmak mümkündür) mefûlden önce gelmiştir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdaki cümlerlerden hangisinde fiilin fâ'ili \"nûnu’n-nisve\" durumundadır? َ",
+    "secenekler": {
+      "A": "‫ﺐ‬ ُ ُ ‫أﻛ ْﺘ‬",
+      "B": "‫ﺐ‬ ُ ُ ‫ﻳ َﻜ ْﺘ‬",
+      "C": "‫ﻦ‬ َ ْ ‫ﻳ َﻜ ْﺘ ُﺒ‬",
+      "D": "‫ﻦ‬ َ ‫ﺗ َﻜ ْﺘ ُﺒﻴ‬",
+      "E": "‫ن‬ َ ‫ﻳ َﻜ ْﺘ ُﺒﻮ‬"
+    },
+    "ans": "C",
+    "solution": "‫ﺐ‬ُ ُ ‫( ﻳ َﻜ ْﺘ‬yazıyor) fiilinde, gizli zamir olan (‫ﻮ‬ َ ‫ﻫ‬                ُ ُ ‫( ﺗ َﻜ ْﺘ‬yazıyor)\n                                                                 ُ : o-erkek-) ve‫ﺐ‬\n         fiilinde, gizli zamir olan (‫ﻲ‬       َ ‫ﻫ‬\n                                               ِ : o - kadın-)  fâ‘il  durumundadır.\n                         َ                                              َ\n                ‫ﺐ‬ُ ُ ‫( أﻛ ْﺘ‬yazıyorum) fiilinde, gizli zamir olan (‫أﻧﺎ‬: ben) ve‫ﺐ‬  ُ ُ ‫( ﻧ َﻜ ْﺘ‬yazıyoruz)\n                fiilinde, gizli zamir olan (‫ﻦ‬   ُ ‫ﺤ‬\n                                                  ْ َ ‫ﻧ‬: biz) fâ‘il durumundadır.\n\n                َ ‫( ﻳ َﻜ ْﺘ ُﺒﻮ‬onlar yazıyorlar) fiilinde, vâvu’l-cemâ‘a (çoğul vâvı) fâ‘il\n                ‫ن‬\n                durumundadır.\n\n                َ ْ ‫( ﻳ َﻜ ْﺘ ُﺒ‬onlar yazıyorlar) fiilinde, nûnu’n-nisve (kadınlar nûnu) fâ‘il\n                ‫ﻦ‬\n                durumundadır.\n\n                َ ‫( ﺗ َﻜ ْﺘ ُﺒﻴ‬yazıyorsun) fiilinde, yâu’l muhataba fâ‘il durumundadır.\n                ‫ﻦ‬\n\n                َ ْ ‫( ﺗ َﻜ ْﺘ ُﺒ‬yazıyorsunuz) fiilinde, nûnu’n-nisve (kadınlar nûnu) fâ‘il\n                ‫ﻦ‬\n                durumundadır."
+  },
+  {
+    "q_num": 8,
+    "stem": "Aşağıdakilerden hangisi bir hayvan değildir?",
+    "secenekler": {
+      "A": "‫ﺣ ﻤﺎ ر‬ ِ",
+      "B": "َ ‫ﻏﻨ َﻢ‬",
+      "C": "‫ﻋ ﻄﻠ ﺔ‬ ُ",
+      "D": "‫ﻘﺮة‬ َ َ‫ﺑ‬",
+      "E": "‫ﺣ ﺼﺎ ن‬ ِ"
+    },
+    "ans": "C",
+    "solution": "a- himar -eşek\n\n                b- ganem- koyun\n\n                c- Utla- tatil anlamına gelir.\n\n                d- bakara - inek\n\n                e- hisân- at"
+  },
+  {
+    "q_num": 9,
+    "stem": "Fiil, kendisinden sonra gelen fâ‘ilinin özelliklerine bağlı olarak şekillenir. Aşağıda verilenlerden hangisi/hangileri doğrudur? I. Fâ‘il erilse fiil de eril; fâ‘il dişilse, fiil de dişil yapıda kullanılır. II. Fâ‘il açık bir isim ise fiil tekillik, ikillik, çoğulluk, erillik ve dişillik bakımından fâ‘ile uygun çekimiyle kullanılır. III. Fâ‘il açık bir isim olarak değil de gizli özne veya bitişik zamir olarak geliyorsa fiil daima 3. tekil şahıs yapısında kullanılır.",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "Yalnız III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "ans": "A",
+    "solution": "I. maddede verilen bilgi doğruyken II ve III. maddelerde verilen bilgiler\n                doğru değildir. Bu bilgiler aşağıdaki gibi düzeltilebilir.\n\n                Fâ‘il açık bir isim ise fiil daima 3. tekil şahıs yapısında kullanılır.\n\n                Fâ‘il açık bir isim olarak değil de gizli özne veya bitişik zamir olarak\n                geliyorsa fiil tekillik, ikillik, çoğulluk, erillik ve dişillik bakımından fâ‘ile\n                uygun çekimiyle kullanılır.\n\n                Doğru yanıt A'dır."
+  },
+  {
+    "q_num": 10,
+    "stem": "cümlesinin analiziyle ilgili aşağıda verilenlerden hangisi/hangileri doğrudur? I. Mâzî fiil, 3. tekil şahıs, eril. II. Nesne (mef‘ûl), mansûb, nasb alâmeti sondaki fetha. III. Özne (fâ‘il), merfû, ref alâmeti sondaki damme.",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "Yalnız III",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "ans": "E",
+    "solution": "yani \"kapıyı genç kız açtı\". Tercümesinden de anlaşılacağı\n                üzere I. maddede verilen eril ifadesi doğru değil, mâzî fiil, 3. tekil şahıs, dişil\n                olarak düzeltilmelidir. Ancak II. ve III. maddede verilen bilgiler doğrudur.\n                Dolayısıyla doğru yanıt E'dir."
+  }
+]

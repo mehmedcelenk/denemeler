@@ -1,0 +1,659 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdakilerden hangisi İslami İlimler ile ilgili doğru bir bilgi değildir?",
+    "secenekler": {
+      "A": "İslam Dini’nin temel iki kaynağı olan Kur’an ve Hz. Peygamber’in sünnetine dayanırlar.",
+      "B": "İslam Dini’ni dışarıdan ve tarafsız olarak incelerler.",
+      "C": "İslam Dini’nin ilkeleri doğrultusunda oluşmuş, Müslümanlar tarafından geliştirilmişlerdir.",
+      "D": "Müslümanlar’ın dînî açıdan sorumluluklarını ortaya koyarlar.",
+      "E": "Müslümanların anlam dünyalarını, değer yargılarını, hayat anlayışlarını biçimlendirirler."
+    },
+    "ans": "B",
+    "solution": "İslami ilimler İslam Dini’nin temel iki kaynağı olan Kur’an ve Hz. Peygamber’in sünnetine yani\n         uygulamalarına dayanırlar. Dolayısıyla bu ilimler, İslam Dini’nin ilkeleri doğrultusunda oluşmuş,\n         Müslümanlar tarafından geliştirilmiş, İslam Dini’ne içeriden bakan ilimlerdir. İslamî İlimler, İslam\n         Dini’ni dışarıdan ve tarafsız olarak incelemezler. Müslümanlar’ın dînî açıdan sorumluluklarını ortaya\n         koyan, kural koyucu (normatif) ve bağlayıcı nitelikte ilim dallarıdır. Müslümanların anlam\n         dünyalarını, değer yargılarını, hayat anlayışlarını biçimlendirirler."
+  },
+  {
+    "q_num": 2,
+    "stem": "Ara sıra ve gelişigüzel yapılan şeylere değil, adet niteliğinde, devamlı ve sürekli, aynı zamanda bilinçli davranışları ifade eder, tanımı hangi kavrama aittir?",
+    "secenekler": {
+      "A": "Tasavvuf",
+      "B": "Sünnet",
+      "C": "Hadis",
+      "D": "Süre",
+      "E": "Tefsir"
+    },
+    "ans": "B",
+    "solution": "Sünnet kelimesi Ara sıra ve gelişigüzel yapılan şeylere değil, âdet niteliğinde, devamlı ve sürekli,\n         aynı zamanda bilinçli davranışları ifade eder."
+  },
+  {
+    "q_num": 3,
+    "stem": "İnsanların kötü huylardan, günahlardan, kötülüklerden temizlenmesi, arındırılmasına ne denir?",
+    "secenekler": {
+      "A": "Tezkiye",
+      "B": "İsmet",
+      "C": "Tebliğ",
+      "D": "Kavli Sünnet",
+      "E": "Ahbar"
+    },
+    "ans": "A",
+    "solution": "İnsanların kötü huylardan, günahlardan, kötülüklerden temizlenmesi, arındırılmasına Tezkiye denir."
+  },
+  {
+    "q_num": 4,
+    "stem": "I. Meğâzî II. Siyer III. Şemail IV. Delâil Yukarıdakilerden hangisi / hangileri Peygamberimizi konu edinen ilimlerdendir?",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "Sadece II",
+      "E": "Hepsi"
+    },
+    "ans": "E",
+    "solution": "Peygamberimizi konu edinen ilimler Meğâzî, Siyer, Şemail ve Delâildir."
+  },
+  {
+    "q_num": 5,
+    "stem": "Hadisler arasındaki ihtilâfın giderilmesinde kullanılan ve “şer’î bir hükmün daha sonra gelen şer’î bir delille kaldırılması” şeklinde ifade edilen yöntem aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Cem‘ ve te’lîf",
+      "B": "Tercih",
+      "C": "Tevakkuf",
+      "D": "Nesh",
+      "E": "Mensûh"
+    },
+    "ans": "D",
+    "solution": "Hadisler arasındaki ihtilâfın giderilmesinde dört temel yöntem vardır: Bu yöntemlerden nesh;\n         Arapça’da yok etmek, ortadan kaldırmak, nakletmek anlamlarına gelir. İslâmî ilimlerde nesh’in\n         tanımı: “Şer’î bir hükmün daha sonra gelen şer’î bir delille kaldırılması” şeklindedir. Yürürlükten\n         kaldırılan önceki hükme mensûh, öncekini yürürlükten kaldıran sonraki hükme nâsih denir. Nesh\n         konusu değişik problemleri olan geniş bir konudur. Detaylarında âlimler arasında tartışmalar vardır.\n         Sadece hadis ilmini değil, tefsir ve fıkıh ilmini de ilgilendirir. Hadiste nesh konusu muhaddisler\n         tarafından müstakil kitapların yazıldığı çok önemli bir konudur. Bu nedenle hadis ilminin alt dalı\n         sayılabilir. Fakat İhtilâfü’l-hadîs ilmi içinde değerlendirilmesi daha doğrudur."
+  },
+  {
+    "q_num": 6,
+    "stem": "Hz. Peygamber’in temel görevleri, Tebliğ; Beyân/Tebyîn; Tezkiye’ dir. Bu üç görev birbirinin devamı ve tamamlayıcısı niteliğindedir. Üçünün de en son amacı nedir?",
+    "secenekler": {
+      "A": "İnsanlara temizliği öğretmek",
+      "B": "İnsanların arındırılmasıdır",
+      "C": "Vahyi eksiksiz olarak insanlara bildirmek",
+      "D": "Vahyi düzenleyerek insanlara bildirmek",
+      "E": "İndirilen kitabı, ümmetine açıklaması"
+    },
+    "ans": "B",
+    "solution": "Bu üç görev birbirinin devamı ve tamamlayıcısı niteliğindedir. Üçünün de en son amacı insanların\n         arındırılmasıdır. Bu da Peygamberin sünnetinin amacının, manevi yönden arınmış bireyler ve\n         onlardan meydana gelen bir toplum oluşturmak olduğu anlamına gelir."
+  },
+  {
+    "q_num": 7,
+    "stem": "I. Tebliğ II. Beyan III. Tezkiye IV. Tesfir Yukarıdakilerden hangileri Hz. Peygamber'in görevlerindendir?",
+    "secenekler": {
+      "A": "I-II-III",
+      "B": "I-II-IV",
+      "C": "II-III-IV",
+      "D": "I-IV",
+      "E": "II-IV"
+    },
+    "ans": "A",
+    "solution": "Cevap A'dır."
+  },
+  {
+    "q_num": 8,
+    "stem": "\"Hadislerin başındaki râvî silsilesini gösteren isimlerden oluşan râvîler zincirine _____ denir\". Yukardaki cümleyi tamamlayan en uygun ifade aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Sünnet",
+      "B": "İsnad",
+      "C": "Mendup",
+      "D": "Eser",
+      "E": "Metin"
+    },
+    "ans": "B",
+    "solution": "Cevap B"
+  },
+  {
+    "q_num": 9,
+    "stem": "Peygamberimizi konu edinen diğer ilimler aşağıdaki şıkların hangisinde doğru verilmiştir?",
+    "secenekler": {
+      "A": "Meğâzî, ta‘dîl, Mecrûh, Şemâil",
+      "B": "Meğâzî, Siyer, Şemâil, Delâil",
+      "C": "Meğâzî, Şemâil, Rivâyet, Delâil",
+      "D": "Meğâzî, Delâil, Fezâil, Mecrûh",
+      "E": "Meğâzî, Fezâil, Delâl, Ta’dîl"
+    },
+    "ans": "B",
+    "solution": "Meğâzî, Arapça savaş anlamına gelen (ğ-z-v) kökünden türemiş bir kelimedir. İslam tarihinin erken\n         dönemlerinde oluşmuş bir ilim dalıdır. Siyer, Peygamberimizin sadece savaşlarıyla değil, hayatının\n         bütün yönleriyle ilgilenir. Şemâil, Peygamberimizin fiziksel özellikleriyle yani dış görünüşüyle ve\n         ahlâkî vasıflarıyla ilgilenir, o konudaki verileri, bilgileri toplar ve değerlendirir. Delâil,\n         Peygamberimizin mucizelerini konu edinir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Sünnet terimi ile ilgili aşağıdaki bilgilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Devamlı ve sürekli davranışları ifade eder.",
+      "B": "Ara sıra yapılan bilinçsiz davranışları da kapsar.",
+      "C": "Hz. Peygamber’in yolu ve hayat tarzıdır.",
+      "D": "Âdet niteliği kazanmış davranışları ifade eder.",
+      "E": "Yaptırım gücü ve bağlayıcılığı kişilere ve ortama göre değişebilir."
+    },
+    "ans": "B",
+    "solution": "Sünnet kelimesi ara sıra ve gelişigüzel yapılan şeyleri değil, âdet niteliğinde, devamlı ve sürekli,\n         aynı zamanda bilinçli davranışları ifade eder. Dolayısıyla arasıra yapılan ve bilinçsiz davranışlar\n         sünnet anlamının dışında kalır."
+  },
+  {
+    "q_num": 1,
+    "stem": "I. Hadis Rivayetini Azaltma II. Hadis Rivâyet Edenden Şâhid İsteme III. Hadis Rivayet Edene Yemin Ettirme Yukarıdakilerin hangisi / hangileri hadislerin naklinde dikkat edilen husus / hususlardır?",
+    "secenekler": {
+      "A": "Sadece I",
+      "B": "Sadece II",
+      "C": "Sadece III",
+      "D": "I ve III",
+      "E": "Hepsi"
+    },
+    "ans": "E",
+    "solution": "Gerçekte Müslümanlıkta her konuda doğruluğa, dürüstlüğe verilen önem, bilinen bir husustur. Pek\n         çok ayet ve hadiste, doğrudan veya dolaylı olarak bunlara teşvikler yapılmış, yalan-dolan ise\n         şiddetle yasaklanmıştır. Basit dünyevi işlerde bile durum böyle olunca dinin iki temel kaynağından\n         biri olan hadislerin naklinde daha titiz davranılmasının gerekli görüleceği açıktır. Yukarıdaki\n         maddelerin hepsi dikkat edilen hususlardır."
+  },
+  {
+    "q_num": 2,
+    "stem": "Hadis öğreniminin güvenilirliği için hadis rivayetinin azaltılmasının sebebi hangisi olabilir?",
+    "secenekler": {
+      "A": "Şahid eksikliği",
+      "B": "Hadislerin sayısının az olması",
+      "C": "Hadis aktarımının tehlikeli olması",
+      "D": "Hata yapma riski",
+      "E": "Hadis rivayet eden kişilerin azalması"
+    },
+    "ans": "D",
+    "solution": "Bazı sahabiler, Hz. Peygamber’in buyurduğu gibi rivayet edememe, başka bir ifadeyle rivayette hata\n         yapma endişesiyle hadis rivayetinden kaçmışlar, mümkün olduğu kadar az hadis rivayet etmeye\n         çalışmışlardır."
+  },
+  {
+    "q_num": 3,
+    "stem": "Hadislerin kitaplarda ilk önce nasıl bir düzen içinde toplandıkları tahmin edilmektedir?",
+    "secenekler": {
+      "A": "Ravilerin fazilet sırasına konması",
+      "B": "Konu ve ravilerin rast gele yazılması",
+      "C": "Önce kısa hadisler, sonra uzun hadislerin yazılması",
+      "D": "Aynı konudaki hadislerin uygulama sırasına göre kaydedilmesi",
+      "E": "Herkesin rivayet ettiği hadisleri ayrı bir bölümde toplanması"
+    },
+    "ans": "B",
+    "solution": "Hadislerin kitaplarda ilk olarak rast gale yazıldığı tahmin edilmektedir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Erkekle kadının zamanı belirlenen bir sü reye kadar, yani geçici olarak aralarında kıyılan nikâha ne denir?",
+    "secenekler": {
+      "A": "Belediye Nikâhı",
+      "B": "Mut‘a Nikâhı",
+      "C": "İmam Nikâhı",
+      "D": "Geçici Nikâh",
+      "E": "Anlaşmalı Nikâh"
+    },
+    "ans": "B",
+    "solution": "Mut‘a nikâhı, erkekle kadının zamanı belirlenen bir süreye kadar, yani geçici olarak aralarında\n         kıyılan nikâha denir. İslâm’ın ilk yıllarında Hz. Peygamber buna izin vermiş, ancak Hayber’in\n         fethinden sonra kesin olarak yasaklamıştır."
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi hadislerin bir kitap/divân içinde toplanmaları anlamına gelir?",
+    "secenekler": {
+      "A": "Tedvîn",
+      "B": "Tesbit",
+      "C": "Tasnif",
+      "D": "Mütekaddimûn",
+      "E": "Tâlimatnâme"
+    },
+    "ans": "A",
+    "solution": "Değişik yazı malzemelerine kaydedilerek veya ezberlenerek koruma altına alınmış olan hadislerin\n         kitaplar (dîvânlar) içinde toplanmasına tedvin denir. Hicrî 1. asrın sonlarından 2. asrın 1. veya 2.\n         Çeyreğine kadar süren bir zaman dilimi tedvin dönemi olarak adlandırılır. Aslında değişik sahâbîlerin\n         bildikleri hadisleri onlardan toplayıp yazma faaliyeti daha eskilere dayanır. Abdullah b. Abbâs’ın,\n         sahâbîleri tek tek dolaşarak onlardan sorup öğrendiği hadisleri, yanında taşıdığı yazı malzemelerine\n         yazdığı nakledilir. Bu da bir nevi tedvîn yani toplamadır. Ancak burada tedvînle daha değişik bir\n         durum kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir “kitap/dîvân” içinde\n         toplanmalarıdır. Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe Ömer b. Abdülazîz\n         (halifeliği h. 99-101) olmuştur."
+  },
+  {
+    "q_num": 6,
+    "stem": "Geniş kapsamlı ve bir “kitap/dîvân” içinde toplanarak, devlet eliyle ilk olarak hadisleri derleme faaliyeti başlatan kimdir?",
+    "secenekler": {
+      "A": "Ömer b. Abdülazîz",
+      "B": "Abdullah b. Abbâs",
+      "C": "İbn Şihâb ez-Zührî",
+      "D": "Abdullah b. Ömer",
+      "E": "Enes b. Mâlik"
+    },
+    "ans": "A",
+    "solution": "Tedvînle daha değişik bir durum kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir\n         “kitap/dîvân” içinde toplanmalarıdır. Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe\n         Ömer b. Abdülazîz (halifeliği h. 99-101) olmuştu."
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdakilerden hangisi Hadislerin sınıflandırılmasına verilen addır?",
+    "secenekler": {
+      "A": "Tesbît",
+      "B": "Tasnif",
+      "C": "Tedvin",
+      "D": "Tevhid",
+      "E": "Divan"
+    },
+    "ans": "B",
+    "solution": "Hadisler önce yazılı ve sözlü olarak koruma ve kayıt altına alınmaya çalışılmış (tesbît), sonra bunlar\n         belli kitaplar içinde bir ayaya toplanmış (tedvîn), ardından da bu kitaplardaki hadislerin\n         sınıflandırılması (tasnîf) yoluna gidilmiştir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Aşağıdaki eylemlerden hangisi kişi öldükten sonra da amel defterinin kapanmamasını sağlayan üç amelden biridir?",
+    "secenekler": {
+      "A": "Birisini Müslüman yapmış olmak",
+      "B": "Geride faydalı ilim bırakmak",
+      "C": "Namaz kılmış olmak",
+      "D": "Zekat vermiş olmak",
+      "E": "Öğretmenlik yapmak"
+    },
+    "ans": "B",
+    "solution": "Genel olarak ilim öğrenme veöğretmenin önemine dikkat çekmiş ve bunlara teşvikte bulunmuştur.\n         Hz. Peygamber’in bu konudaki adislerinden öğreniyoruz ki, ilim öğrenmek her Müslüman’a farzdır.\n         Kişi üstünlüğünü ilmiyle sürdürebilir. Geriye bırakılan faydalı ilim, ölümünden sonra insanın amel\n         defterinin açık kalmasına sebep olan üç şeyden biridir. İnsan ilim öğrenme yolunda olduğu sürece\n         Allah yolunda demektir."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdakilerden hangisi hadisi rivayet eden kimselerin sırasıyla zikredildiği kısmıdır?",
+    "secenekler": {
+      "A": "Sema",
+      "B": "er-Rıhle fî talebi’l-hadîs",
+      "C": "Şahid",
+      "D": "Sened",
+      "E": "Sille"
+    },
+    "ans": "D",
+    "solution": "Hadis râvîlerinin bu şekilde incelenmeye başlamasına, aynı hadisi farklı yerlerde, farklı hocalardan\n         biraz değişik şekilde almış olan kimselerin bu durumu; “Falan râvî şöyle dedi, filan râvî şöyle dedi...”\n         diyerek anlatması eklenince hadis rivayetinde sened kullanımı ortaya çıktı. Sened, hadisin, onu\n         rivayet eden kimselerin isimlerinin sırayla zikredildiği kısmıdır. Kullanılan şekliyle, yani her bir\n         râvînin bir önceki râvînin (hocasının) ismini vererek ilk kaynağa varan (muttasıl)\n         şekliyle Müslümanlara has olan sened kullanımı, hadisin güvenilirliğini sağlamak için ortaya\n         çıkarılmıştı."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdakilerden hangisi hadislerin yazılı olarak toplandığı dönemdir?",
+    "secenekler": {
+      "A": "İspat",
+      "B": "Mütekaddimun",
+      "C": "Tesbit",
+      "D": "Tasnif",
+      "E": "Tedvin"
+    },
+    "ans": "A",
+    "solution": "Aslında değişik sahâbîlerin bildikleri hadisleri onlardan toplayıp yazma\n         faaliyeti daha eskilere dayanır. Abdullah b. Abbâs’ın, sahâbîleri tek tek\n         dolaşarak onlardan sorup öğrendiği hadisleri, yanında taşıdığı yazı malzemelerine yazdığı nakledilir.\n         Bu da bir nevi tedvîn yani toplamadır. Ancak burada tedvînle daha değişik bir durum\n         kastedilmektedir ki bu, hadislerin daha geniş kapsamlı ve bir “kitap/dîvân” içinde toplanmalarıdır.\n         Böyle bir faaliyeti devlet eliyle ilk olarak başlatan kimse, Halîfe Ömer b. Abdülazîz (halifeliği h. 99-"
+  },
+  {
+    "q_num": 101,
+    "stem": "olmuştu. Doğru cevap E şıkkıdır.",
+    "secenekler": {},
+    "ans": "E",
+    "solution": ""
+  },
+  {
+    "q_num": 1,
+    "stem": "I. SünenlerII. Ale’r ricalIII. MusanneflerIV. Cami’lerV. Tartışma ve Reddiye kitaplarıHangisi konularına göre düzenlenmiş hadis kitabı türlerindendir?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, III, IV ve V",
+      "D": "I, II, V",
+      "E": "Hepsi"
+    },
+    "ans": "C",
+    "solution": "Ale’r rical ravilerine göre düzenlenmiş kitap türleridir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Hangi kelime Arapçada bir araya getiren, toplayan anlamında kullanılmıştır?",
+    "secenekler": {
+      "A": "Sünen",
+      "B": "Muvatta",
+      "C": "Musannef",
+      "D": "Mu’cem",
+      "E": "Cami"
+    },
+    "ans": "E",
+    "solution": "Sünen sünnetler anlamına gelir. Muvatta üzerinde çok yürünmüş yoldur. Musannef tasnif edilmiş\n         demektir. Mu’cem ise alfabetik olarak sıralanmış anlamına gelir ."
+  },
+  {
+    "q_num": 3,
+    "stem": "Sünnet karşıtları ve sünnetten sapanlar için kullanılan ifade aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ehlü’l-Bid‘a",
+      "B": "Ehlü’l-Hadîs",
+      "C": "Ehlü’s-Sünne",
+      "D": "Muhaddisler",
+      "E": "Müsteşrik"
+    },
+    "ans": "A",
+    "solution": "Ehlü’s-Sünne, Ehlü’l-Hadîs diye isimlendiren hadisçiler kendilerini İslam toplumunun sünnet\n         çizgisinde devamından sorumlu bir grup olarak görüyorlardı. Gerek yazdıkları müstakil konulu\n         reddiyelerde ve tartışma kitaplarında gerekse çok konulu büyük kitapların ilgili bölümlerinde, iman\n         amel ilişkisi, Allah’ın sıfatları, kader gibi ilmî ve fikrî tartışma konularında Ehlü’l-Bid‘a dedikleri\n         sünnet karşıtlarına ve sünnetten sapanlara karşı, derledikleri ve tasnif ettikleri hadislerle cevaplar\n         vermeyi dahası onların etkinliklerini zayıflatarak Sünnet’in etkinliğini artırmayı amaçlamışlardır."
+  },
+  {
+    "q_num": 4,
+    "stem": "Müsned, Arapça’da, bir yere veya birine dayandırılan şey anlamına gelir. Müsned türü eserlerde hadisler, hadisin ilk râvîsi olan sahâbîlere göre sıralanmaktadırlar. Aşağıdakilerden hangisi günümüze kadar ulaşmış Müsned türü eserler veren müelliflerdendir?",
+    "secenekler": {
+      "A": "Ma‘mer b. Râşid el-Ezdî",
+      "B": "Abdullah b. Vehb",
+      "C": "Rebî‘ b. Habîb el-Basrî",
+      "D": "Vekî’b. el-Cerrâh",
+      "E": "Muhammed b. Hârûn er-Rûyânî"
+    },
+    "ans": "E",
+    "solution": "Müsnedler genellikle hicrî üçüncü asır başlarından itibaren yazılmaya başlanmışlardır ve\n         müelliflerinin ismiyle anılırlar. Hadis tarihinde yüz elli civarında müsned türü hadis kitabı yazılmıştır.\n         Bunlardan günümüze ulaşıp basılmış olanları şu müelliflere aittir:\n         Abdullah b. el-Mübârek (ö.181/797)\n         Ebu Bekr Abdullah b. Zübeyr b. Îsâ el-Humeydî (ö.219/834)\n         Ebu’l-Hasen Ali b. Ca‘d el-Cevherî (ö.230/844)\n         Ebu Bekr Abdullah b. Muhammed b. Ebû Şeybe (ö.235/867)\n         İshak b. Râhûye (ö.238/852)\n         Halîfe b. Hayyât (ö.240/854)\n         Ahmed b. Hanbel (ö.241/855)\n         Abd b. Humeyd (ö.249/863)\n         Ahmed b. Amr el-Bezzâr (ö.292/904)\n         Ebû Ya’lâ Ahmed b. Ali el-Mevsılî (ö.307/919)\n         Muhammed b. Hârûn er-Rûyânî (ö.307/919)\n         Ebû Avâne Yakub b. İshak el-İsferâyînî (ö.316/928)"
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi Tasnif’in amaçlarından değildir?",
+    "secenekler": {
+      "A": "Hadislerin kaybolmaktan ve yok olmaktan korunması.",
+      "B": "Hadisleri düzenli, sistemli, kolay kullanılır hale getirilmesi.",
+      "C": "Hadislerin sınıflandırılması.",
+      "D": "Hadislerin tek bir kitap altında toplanması.",
+      "E": "Hadislerin korunması."
+    },
+    "ans": "D",
+    "solution": "Hadislerin tek bir kitap haline getirilmesi söz konusu değildir."
+  },
+  {
+    "q_num": 6,
+    "stem": "Hadis râvîlerinin hayat hikâyeleri, güvenilir olup olmadıklarına dair yazılan kitaplara ne ad verilir?",
+    "secenekler": {
+      "A": "Muvatta",
+      "B": "Sünenler",
+      "C": "Câmî",
+      "D": "Ricâl",
+      "E": "Zühd"
+    },
+    "ans": "D",
+    "solution": "Hadis râvîlerinin hayat hikâyeleri, güvenilir olup olmadıklarına dair yazılan kitaplara ricâl kitapları\n         denir. Bu konudaki kaynak ve temel kitaplar da Tasnif döneminde yazılmıştır. Fakat ricâl kitaplarının\n         yazımı ileriki asırlarda da devam etmiştir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdakilerden hangisinde yazılış yöntemlerine göre Hadis kitabı türleri doğru biçimde verilmiştir?",
+    "secenekler": {
+      "A": "Konularına Göre - Râvîlerine Göre",
+      "B": "Râvîlerine Göre - Tarihine Göre",
+      "C": "Tarihine Göre - İçeriğine Göre",
+      "D": "Râvîlerine Göre - Yazarına Göre",
+      "E": "Yazarına Göre - Tarihine Göre"
+    },
+    "ans": "A",
+    "solution": "Hadisleri bir araya getiren hadis kitapları yazılış yöntemlerine göre iki ana gruba ayrılır:\n         Konularına göre dü zenlenmiş olanlar.\n         Râvîlerine göre dü zenlenmiş olanlar"
+  },
+  {
+    "q_num": 8,
+    "stem": "I. Kitâbü’l-ferâiz II. Kitâbü’l-menâkıb III. Kitabü’l-cihâd IV. Kitâbü’l-Fiten V. Kitabü’ş-şemâil Yukarıda yer alan kitaplardan hangileri hicri üçüncü yüzyılda yazılmıştır?",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "IV ve V",
+      "D": "II, III, IV ve V",
+      "E": "I ve IV"
+    },
+    "ans": "C",
+    "solution": "Kitâbü’l-ferâiz, Kitâbü’l-menâkıb ve Kitabü’l-cihâd hicri ikinci yüzyılda yazılan kitaplardır. Kitâbü’l-\n         Fiten ve Kitabü’ş-şemâil ise hicri üçüncü yüzyılda kaleme alındığınmıştır."
+  },
+  {
+    "q_num": 9,
+    "stem": "Hangisi ahlâk hadisleri ile ilgilidir?",
+    "secenekler": {
+      "A": "Fedâil",
+      "B": "Muâmelât",
+      "C": "Ukûbât",
+      "D": "Imân",
+      "E": "İbadetler"
+    },
+    "ans": "A",
+    "solution": "Ahkâm hadisleri dendiğinde ibadetler, muâmelât ve ukûbât konularındaki hadisler kastedilir. İman\n         da ahkâm konularına dahil edilmektedir. Ahlâk konuları ise fedâil ve edeb başlıkları altında ele alınır."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdaki seçeneklerde gösterilen kitap türlerinden hangisi Malik b. Enes’e aittir?",
+    "secenekler": {
+      "A": "Sünen",
+      "B": "Müsned",
+      "C": "Musannef",
+      "D": "El-Cami",
+      "E": "Muvatta"
+    },
+    "ans": "E",
+    "solution": "Imâ m Mâ lik’in meclisine ü ç yıl devam etmiş ve Malik’in Muvatta’ isimli eserinin ö nemli râ vı ̂lerinden\n         birisi olmuştur."
+  },
+  {
+    "q_num": 1,
+    "stem": "Müstahrec nedir?",
+    "secenekler": {
+      "A": "Daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri teker teker ele alarak kitap sahibinin senedinden başka bir senedle rivayet etmek suretiyle meydana getirilen hadis kitabıdır.",
+      "B": "Müellifin şartlarına uyduğu halde kitabına almadığı hadisleri toplamak suretiyle onun eksikliklerini tamamlayan kitaptır.",
+      "C": "Tüm hadislerin bir araya getirilerek tekrardan yazıldığı kitaptır.",
+      "D": "Sadece Hz. Peygamberim söylediği hadislerdir.",
+      "E": "Hz. Peygamber ve sahabelerinin söylediği hadislerin sınıflandırıldığı kitaptır."
+    },
+    "ans": "A",
+    "solution": "Müstahrec ( ‫) اﻟﻤﺴﺘﺨﺮج‬, Daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri teker\n         teker ele alarak kitap sahibinin senedinden başka bir senedle rivayet etmek suretiyle meydana\n         getirilen hadis kitabıdır."
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdaki kitaplardan hangisi temek hadis kaynaklarını tamamlamak amacıyla yazılmıştır?",
+    "secenekler": {
+      "A": "El-Müsnedü’l-müstahrec ala Sahihi’l-İmam Müslim",
+      "B": "El-Cem’byne’s-sahihayn",
+      "C": "Şuabü’l-iman",
+      "D": "El-Camiu’s-sağir",
+      "E": "Ziyadetü’l-Cami"
+    },
+    "ans": "A",
+    "solution": "El-Müsnedü’l-müstahrec ala Sahihi’l-İmam Müslim Tamamlayıcı nitelikteki eserlerdendir."
+  },
+  {
+    "q_num": 3,
+    "stem": "“Riyazü ’s-sâlihîn” isimli eserle ilgili aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "3000 adet hadis bulunmaktadır.",
+      "B": "Ayet ve hadisleri esas alarak fert, aile ve toplum planında uyulması gereken prensipleri ortaya koymayı amaçlamıştır.",
+      "C": "İyiliğe teşvik eden kötülüklerden sakındıran hadisleri bir araya getirmiştir.",
+      "D": "500 adet hadis bulunmaktadır.",
+      "E": "Zevâid türünde yazılmıştır."
+    },
+    "ans": "B",
+    "solution": "“Riyazü ’s-sâlihîn” isimli eserde 1900 civarında hadis bulunmaktadır. Nevevî, bu kitabıyla âyet ve\n         hadisleri esas alarak fert, aile ve toplum planında uyulması gereken prensipleri ortya koymayı\n         amaçlamıştır."
+  },
+  {
+    "q_num": 4,
+    "stem": "Belli bir kitabı esas alarak yapılan ilk şerh çalışması hangi eser üzerinden yapılmıştır?",
+    "secenekler": {
+      "A": "Buhârî’nin Sahih’i",
+      "B": "Ebu’l-Velîd el-Bâcî’nin el-Mü nteka’sı",
+      "C": "Aclûnî’nin Keşfu’lhafâ’sı",
+      "D": "Hâkim en-Nîsâbûrî’nin el-Mü stedrek’i",
+      "E": "Beyhakî’nin Şuabu’l-imân ’ı"
+    },
+    "ans": "A",
+    "solution": "Belli bir kitabı esas alan ilk şerh çalışması hicrî dördü ncü asırda Hattâbî (ö. 388/998) tarafından\n         Buhârî’nin Sahih’i ü zerine yapılmıştır."
+  },
+  {
+    "q_num": 5,
+    "stem": "Hangisi Tirmizî’nin “el-Câmiu’s-sahih” i hakkında yapılan şerhler arasında yer alır?",
+    "secenekler": {
+      "A": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si",
+      "B": "Azimâbâdî’nin “Avnü’l-ma’bûd” u",
+      "C": "Sehârenfûrî’nin “Bezlü’l-mechûd fî halli Ebî Dâvûd” u",
+      "D": "Mâzerî’nin “el-Mu’lim bi fevâidi Müslim” i",
+      "E": "Kastallânî’nin “rşâdü’ s-sârî” si"
+    },
+    "ans": "A",
+    "solution": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si Tirmizî’nin “el-Câmiu’s-sahih” i hakkında yapılan\n         şerhler arasında en tanınanıdır. Azimâbâdî’nin “Avnü’l-ma’bûd” u ve Sehârenfûrî’nin “Bezlü’l-\n         mechûd fî halli Ebî Dâvûd” u Ebû Dâvûd’un “es-Sünen” i hakkındaki en önemli şerhlerdendir.\n         Mâzerî’nin “el-Mu’lim bi fevâidi Müslim” i Müslim’in el-Câmiu’s-sahîh’iyle ilgili ilk şerhtir.\n         Kastallânî’nin “Irşâdü’ s-sârî” sinde ise isimli şerhinde başlangıçta Ibn Hacer’in “Hedyü’s-sârî” isimli\n         mukaddimesi özetlenmektedir."
+  },
+  {
+    "q_num": 6,
+    "stem": "“Kütüb-i sitte” de adı geçen râvilerin hemen hepsini ihtiva eden ilk çalışma hangisidir?",
+    "secenekler": {
+      "A": "Cemmâilî’nin “el-Kemâl fî esmâi’r-ricâl” i",
+      "B": "Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si",
+      "C": "Muhammed b. Hilfe b. Ömer el-Übbî’nin “Ikmâlü Ikmâli’l-Mu’lim” i",
+      "D": "Ibn Hacer’in “Hedyü’s-sârî” si",
+      "E": "Ibn Abdilberr’in “el-Istizkâr” ı"
+    },
+    "ans": "A",
+    "solution": "“Kütüb-i sitte”de adı geçen râvilerin hemen hepsini ihtiva eden ilk çalışma Cemmâilî’nin “el-Kemâl fî\n         esmâi’r-ricâl” isimli eseridir. Ebû Bekir Ibnü’l-Arabî’nin “Ârizatü’l-ahvezî” si Tirmizî’nin “el-Câmiu’s\n         sahih” i hakkındadır, Muhammed b. Hilfe b. Ömer el-Übbî’nin “Ikmâlü Ikmâli’l-Mu’lim” i müslim\n         şerhlerindendir. Ibn Hacer’ in “Hedyü’s-sârî” sine Kastallânî’nin “Irşâdü’s-sârî” isimli şerhinde yer\n         verilmektedir. Ibn Abdilberr’in “el-Istizkâr”ı ise muvatta şerhlerindendir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Buhârî ve Müslim tarafından sahih hadisleri bir eserde toplama faaliyeti ilk defa hangi asırda başlatılmıştı?",
+    "secenekler": {
+      "A": "Birinci asırda",
+      "B": "İkinci asırda",
+      "C": "Üçüncü asırda",
+      "D": "Dördüncü asırda",
+      "E": "Beşinci asırda"
+    },
+    "ans": "C",
+    "solution": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa üçüncü asırda Buhârî ve Müslim\n         tarafından başlatılmıştı. Buhârî eserinin ismindeki “elmuhtasar” ifadesiyle sahih hadislerin tamamını\n         bir araya getirmediğini belirtmekteydi. Müslim de bu hususu eserinde açıkça ifade etmekteydi.\n         Dolayısıyla Buhârî ve Müslim’in el-Câmiu’s-sahîh’leri sahih hadislerin tamamını ihtiva etmemekteydi."
+  },
+  {
+    "q_num": 8,
+    "stem": "Esas aldıkları eserdeki rivâyetleri, başka isnadlarını tespit etmek suretiyle kuvvetlendiren çalışmalara hangisi denmektedir?",
+    "secenekler": {
+      "A": "Müstahrec",
+      "B": "Zevâid",
+      "C": "Kütüb-i erbaa",
+      "D": "Müstedrek",
+      "E": "Sahîhayn"
+    },
+    "ans": "A",
+    "solution": "Müstahrec, daha önce telif edilen herhangi bir hadis kitabında bulunan hadisleri, teker teker ele\n         alarak kitap sahibinin senedinden başka bir senedle rivâyet etmek suretiyle meydana getirilen hadis\n         kitabıdır. Müstahrecler, esas aldıkları eserdeki rivâyetleri, başka isnadlarını tespit etmek suretiyle\n         kuvvetlendiren çalışmalardır. Esas alınan müellifin rivâyet ettiği hadislerin lafızlarıyla müstahrec\n         yazarının rivâyet ettiği hadislerin lafızlarında ve mânasında mutlak uygunluk şart değildir. Genellikle\n         söz konusu iki eserdeki hadisler arasında lafız farklılıklarının olduğu görülür."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdaki eser türlerinden hangisi kişiyi iyiliğe teşvik edip kötülükten uzaklaştırmak amacıyla derlenmiş hadislerden oluşmaktadır?",
+    "secenekler": {
+      "A": "et-Terğîb ve’t-terhîb",
+      "B": "ihtilâfü’l-hadis",
+      "C": "Keşfu’l-hafâ",
+      "D": "Riyâzü’s-sâlihîn",
+      "E": "el-Makâsıdü’l-hasene"
+    },
+    "ans": "A",
+    "solution": "Terğîb iyiliğe teşvik, terhîb ise kötülükten sakındırmak demektir. Münzirî et-Terğîb ve’t-terhîb isimli\n         eserinde iyiliğe teşvik eden kötülüklerden sakındıran hadisleri bir araya getirmiştir. Müellif her\n         konunun, terğîb ve terhîb (teşvik ve uyarı) yönlerini dile getiren hadisleri iki grupta toplamak\n         suretiyle önce terğîb sonra terhîbi ilgilendiren hadisleri vermiştir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa kaçıncı asırda başlatılmıştır?",
+    "secenekler": {
+      "A": "Birinci asırda",
+      "B": "İkinci asırda",
+      "C": "Üçüncü asırda",
+      "D": "Dördüncü asırda",
+      "E": "Beşinci asırda"
+    },
+    "ans": "C",
+    "solution": "Sadece sahih hadisleri bir eserde toplama faaliyeti ilk defa üçüncü asırda Buhârî ve Müslim\n         tarafından başlatılmıştı. Buhârî eserinin ismindeki “el-muhtasar” ifadesiyle sahih hadislerin\n         tamamını bir araya getirmediğini belirtmekteydi. Müslim de bu hususu eserinde açıkça ifade\n         etmekteydi."
+  },
+  {
+    "q_num": 1,
+    "stem": "Hicri 322’de Mekke’de vefat eden Hz. Peygamber’in mektuplarını ilk toplayan kişi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hasan el- Basrî",
+      "B": "Vecîhuddin el-Mâlikî",
+      "C": "Ebu Cafer ed- Deybülî",
+      "D": "Seyyid Refîuddin es-Safevî eş-Şîrâzî",
+      "E": "Şeyh Ali el-Muttakî"
+    },
+    "ans": "C",
+    "solution": "Hind bölgesinde yetişen muhaddislerden biri de Ebu Cafer ed-Deybülî’dir. Deybül bugün Pakistan\n         sınırlarında bulunan Karaçi yakınlarında bir yerleşim merkezidir. Hicri 322’de Mekke’de vefat eden\n         Deybülî, Hz. Peygamber’in mektuplarını ilk toplayan kişi olarak bilinmektedir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdakilerden hangisi Arap dünyasında hadis ilmi ile ilgilenen önemli şahsiyetlerden değildir?",
+    "secenekler": {
+      "A": "Muhammed Habibullah eş-Şinkiti",
+      "B": "Muhammed Fuad Abdülbaki",
+      "C": "Abdülfettah Ebû Gudde",
+      "D": "Ebû Musa Necîh es-Sindî",
+      "E": "Muhammed b. Ca‘fer el-Kettânî"
+    },
+    "ans": "D",
+    "solution": "Ebû Musa Necîh es-Sindî Hınd alt kıtasında hadis ilmi ile ilgilenen şahıslardandır."
+  },
+  {
+    "q_num": 3,
+    "stem": "Kânûnî devrinde 1557’de yapılan Dârulhadîsi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Süleymaniye Dârulhadîsi",
+      "B": "Edirne Dârulhadîsi",
+      "C": "İstanbul Dârulhadîsi",
+      "D": "Beyazıt Dârulhadîsi",
+      "E": "Mısır Dârulhadîsi"
+    },
+    "ans": "A",
+    "solution": "II. Bayezid döneminde 1485 yılında Amasya’da yaptırılan Abdullah Paşa Dârulhadîsi ile Kânûnî\n         devrinde 1557’de yapılan Süleymaniye Dârulhadîsi önemli kurumlardır. Özellikle Edirne ve\n         Süleymaniye Dârulhadîsleri Osmanlı üst düzey yöneticilerinin hem yetiştirildiği hem de yönetim\n         hiyerarşisinde görev üstlendikleri yerlerdir. Bu asırda Seydî Çelebi’nin ( ö. 932/1525) kaleme aldığı\n         Mustahrec mine’l-Buhârî adlı hadis kitabı siyaset konuludur. Molla Lütfi de (ö. 901/1495) Ta‘lîka\n         ale’l-Câm‘i’ssahîh adlı bir hadis kitabı telif etmiştir."
+  },
+  {
+    "q_num": 4,
+    "stem": "I. Dinîve Gayrî Dinî Rivayetler II. Sahîh-i Mü slim ve Tercü mesi III. Bü lûğu'l-Merâm Terceme ve Şerhi Yukardakilerden hangisi veya hangileri Türkiye Cumhuriyeti’nde yapılan Hadis çalışmalarındandır?",
+    "secenekler": {
+      "A": "I",
+      "B": "II",
+      "C": "I - II",
+      "D": "I - II - III",
+      "E": "III"
+    },
+    "ans": "D",
+    "solution": "Belirtilen eserlerin tamamı Türkiye’de Cumhuriyet dönemi sonrasında yapılmış Hadis\n         çalışmalarındandır."
+  },
+  {
+    "q_num": 5,
+    "stem": "Osmanlı dârulhadîsi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "İlk olarak Orhan Gazi devrinde kurulmuştur.",
+      "B": "Osmanlı’nın egemen olduğu her yere açılmıştır.",
+      "C": "Edirne Dârulhadîsi’ni Molla Gürânî yaptırmıştır.",
+      "D": "Murad devrinde Abdullah Paşa Dârulhadîsi yaptırılmıştır.",
+      "E": "Seydî Çelebi, burada en çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazmıştır."
+    },
+    "ans": "B",
+    "solution": "Osmanlı’nın egemen olduğu her yere açılmıştır. İlk Osmanlı dârulhadîsi I. Murad devrinde\n         kurulmuştur. Edirne Dârulhadîsi’ni II. Murad yaptırmıştır. Abdullah Paşa Dârulhadîsi II. Beyezid\n         devrinde yaptırılmıştır. Ibn Melek burada en çok okunan hadis kitaplarından olan Sâgânî’nin\n         Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazmıştır."
+  },
+  {
+    "q_num": 6,
+    "stem": "İlk Osmanlı dârulhadîsinin hangi padişah zamanında yapılmıştır?",
+    "secenekler": {
+      "A": "II. Bayezid",
+      "B": "Yavuz Sultan Selim",
+      "C": "I. Murad",
+      "D": "Fatih Sultan Mehmet",
+      "E": "II. Murat"
+    },
+    "ans": "C",
+    "solution": "İlk Osmanlı dârulhadîsinin I. Murad devrinde İznik’te Çandarlı Hayreddin Paşa (ö. 789/1387)\n         tarafından yaptırıldığı kabul edilir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Hadislerin büyük bir kısmının uydurma olduğunu ilk defa kim iddia etmiştir?",
+    "secenekler": {
+      "A": "Aloys Sprenger",
+      "B": "Reinhart Dozy",
+      "C": "William Muir",
+      "D": "Goldziher",
+      "E": "Joseph Schacht"
+    },
+    "ans": "A",
+    "solution": "G. H. A. Juynboll’ün belirttiğine göre, hadislerin büyük bir kısmının uydurma olduğunu ilk defa\n         Avusturyalı oryantalist Aloys Sprenger iddia etmiştir. Juynboll, Sprenger’in Sahîh-i Buhârî’deki\n         hadislerin en az yarısının sahihliğini kabul eden Reinhart Dozy, Weil ve William Muir’den daha\n         şüpheci olduğunu ifade etmiştir."
+  },
+  {
+    "q_num": 8,
+    "stem": "I. Hadis geleneği diğer bölgelere oranla Anadolu’ya daha geç gelmiştir. II. Osmanlıda âlimler üzerindeki idârî motivasyon, diğer bölgelerden çok daha güçlüdür. Dolayısıyla hadisle meşgul olanlar bu alanda yeterliliklerini ispatlamaya yetecek tarzda çalışmalarla yetinmişlerdir. III. Osmanlıda egemen mezhep olarak Hanefîliğin kabul edilmesi ekoller arasındaki rekabetin oluşmasını ve tabiatıyla farklı eserlerin yazımını azaltmıştır. Yukarıdaki maddelerden hangisi /hangileri Osmanlının hadis sahasında çok miktarda ve çok çeşitli eserler vermediklerinin sebepleri arasındadır?",
+    "secenekler": {
+      "A": "Sadece I",
+      "B": "Sadece II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "Hepsi"
+    },
+    "ans": "E",
+    "solution": "Osmanlı hadis müderrisleri incelendiği zaman, hadis sahasında çok miktarda ve çok çeşitli eserler\n         vermedikleri görülür. Bu durumun Osmanlı eğitim sistemindeki fıkıh-kelâm merkezlilikten ve\n         medrese mezunlarının ağırlıklı olarak idareciliğe hazırlanmasından kaynaklandığı söylenebilir."
+  },
+  {
+    "q_num": 9,
+    "stem": "Hind’de hadisin yayılmasında en çok kimin emeğinin geçtiği bilinmektedir?",
+    "secenekler": {
+      "A": "Şeyh Abdülhak b. Seyfuddin elBuhârî ed-Dehlevî.",
+      "B": "Ali el-Muttakî",
+      "C": "Şeyh Muhammed Tahir el-Fettenî",
+      "D": "Seyyid Refîuddin es-Safevî eş-Şîrâzî",
+      "E": "Şeyh Nureddin Ahmed eş-Şîrâzî"
+    },
+    "ans": "A",
+    "solution": "Hind’de hadisin yayılmasında en çok Şeyh Abdülhak b. Seyfuddin elBuhârî ed-Dehlevî’nin emeğinin\n         geçtiği anlaşılmaktadır. Onun bu husuta “O, hadis ilmini Hind’de ilk yayan kimsedir!” denilecek\n         kadar büyük hizmeti olmuştu. Şeyh Abdülhak 958/1551’de Delhi’de doğmuştu."
+  },
+  {
+    "q_num": 10,
+    "stem": "Osmanlı medreselerinde en çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l- envâr’ı üzerine Mebâriku’l-ezhâr isimli şerhini yazan aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İbn Hacer el-Askalânî",
+      "B": "İzzeddin Abdüllatif",
+      "C": "Molla Gürânî",
+      "D": "Seydî Çelebi",
+      "E": "Molla Lütfi"
+    },
+    "ans": "B",
+    "solution": "İlk Osmanlı dârulhadîsinin I. Murad devrinde İznik’te Çandarlı Hayreddin Paşa (ö. 789/1387)\n         tarafından yaptırıldığı kabul edilir. Bu asrın en önde gelen ismi İbn Melek diye tanınan İzzeddin\n         Abdüllatif’tir (ö. 797/1394). Tire’de müderrislik yapan İbn Melek Osmanlı medreselerinde en\n         çok okunan hadis kitaplarından olan Sâgânî’nin Meşâriku’l-envâr’ı üzerine Mebâriku’l-ezhâr isimli\n         şerhini yazmıştır. Doğru cevap B'dir."
+  }
+]

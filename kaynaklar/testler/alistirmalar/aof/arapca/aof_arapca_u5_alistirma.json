@@ -1,0 +1,130 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdaki cümleyle eşleşen görsel hangisidir?",
+    "secenekler": {
+      "A": "",
+      "B": "",
+      "C": ""
+    },
+    "ans": "C",
+    "solution": ""
+  },
+  {
+    "q_num": 2,
+    "stem": "Aşağıdaki cümlelerden hangisi isim cümlesinin aşağıda verilen formuna uymaz?",
+    "secenekler": {
+      "A": ".‫ﺟ ﻞ‬ ُ ‫ﻓﻲ اﻟﺒﻴﺖ َر‬",
+      "B": ".‫ر د‬ ِ ‫اﻟ ﺠ ﻮ ﺑﺎ‬",
+      "C": ".‫ﻬ ﺪ و ن‬ ِ ‫ﻣ ﺠﺘ‬ ُ ‫ب‬ ُ ‫اﻟ ﻄ ﻼ‬",
+      "D": ".‫ﻣ ﻔ ﻴ ﺪ‬ ُ ُ‫ب‬ ‫ﺎ‬ ‫ﺘ‬ ‫ﻜ‬ ‫اﻟ‬",
+      "E": ".‫ﻌ ﺔ‬َ ‫ﺳ ﺮﻳ‬ َ ‫ت‬ُ ‫اﻟﺴﻴ ّﺎرا‬"
+    },
+    "ans": "A",
+    "solution": "A şıkkında belirsiz mubteda sona kalmış, şibih cümle formundaki haber öne\n                .geçmiştir"
+  },
+  {
+    "q_num": 3,
+    "stem": "Aşağıdaki cümlelerden hangisi haber-mubteda ilişkisi açısından diğerlerinden farklıdır?",
+    "secenekler": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "ans": "B",
+    "solution": "B şıkkı dışındaki tüm cümlelerde mubteda belirsiz olduğu için haber\n                mubteda dan önce gelmiştir. Ama B şıkkında \"kitap \" sözcüğü belirlidir ve\n                cümle başındadır."
+  },
+  {
+    "q_num": 4,
+    "stem": "‫س ﺷﻴ ﻤﺎء ؟‬ ُ ‫ﻣﺎ ذا ﺗ ﺪ ر‬ Aşağıdakilerden hangisi verilen cümleye karşılık olabilir? ّ ّ ‫س اﻟ ﻄ‬",
+    "secenekler": {
+      "A": ".‫ﺐ‬ ُ ‫ ﻫﻮ ﻳﺪر‬İsmail tıp okuyor.",
+      "B": ".‫ﺐ ﻣ ﻦ اﻟ ﺠﺎ ﻣ ﻌ ﺔ‬ ٌ ‫ﻪ ﻗ ﺮﻳ‬ ُ ‫ ﺳ ﻜﻨ‬،‫ﻧ ﻌ ﻢ‬ Evet, yurdu ü niversiteye yakın.",
+      "C": ".‫ ﺑﻴﺘ ﻬ ﻢ ﺑ ﻌﻴ ﺪ ٌ ﻋ ﻦ اﻟ ﺠﺎ ﻣ ﻌ ﺔ‬،‫ﻻ‬ Hayır, evleri ü niversiteye uzak.",
+      "D": ".‫ﻊ أﻫﻠ ِﻬﺎ ﻓﻲ إزﻣﻴﺮ‬ َ ‫ﻦﻣ‬ ُ ‫ﻫ ﻲ ﺗ ﺴﻜ‬ Ailesiyle birlikte İzmir’de oturuyor",
+      "E": ".‫س ا ﻟ ﻬ ﻨ ﺪ ﺳ ﺔ‬ ُ ‫ﻫ ﻲ ﺗﺪر‬ Şeyma mü hendislik okuyor."
+    },
+    "ans": "E",
+    "solution": "cümlesinde\" Seyma ne okuyor?\" sorusu soruluyor.\n\n\n                A seçeneğindeki            \"İsmail tıp okuyor.\" anlamına gelmekte ve bu\n                sorunun yanıtı olamamaktadır.\n\n\n                B seçeneğindeki                   \"Evet, yurdu ü niversiteye yakın.\"\n                anlamına gelmekte ve başka bir sorunun yanıtı olmaktadır.\n\n                C seçeneğindeki                  \"Hayır, evleri ü niversiteye uzak.\"\n                anlamına gelmekte ve yine başka bir sorunun yanıtı olmaktadır.\n\n\n                D seçeneğindeki                        Şeyma'nın nerede oturduğu sorusuna\n                yanıt olan \"Ailesiyle birlikte İzmir’de oturuyor\" anlamına gelmektedir.\n\n\n                E seçeneğindeki              \"Şeyma mü hendislik okuyor.\" anlamına\n                gelmekte ve sorumuzun karşılığı olmaktadır."
+  },
+  {
+    "q_num": 5,
+    "stem": "Yukarıdaki resimde yer alan sorunun cevabı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "‫و را ء‬ َ",
+      "B": "‫ﻦ‬َ ْ ‫ﻴ‬َ ‫ﺑ‬",
+      "C": "‫أ ﻣﺎ م‬",
+      "D": "‫ﺧﻞ‬ ِ ‫دا‬",
+      "E": "‫ﺧﺎ ر ج‬"
+    },
+    "ans": "B",
+    "solution": ""
+  },
+  {
+    "q_num": 6,
+    "stem": "Aşağıdakilerden hangisi “Okul eve yakındır.” cümlesinin Arapça karşılığıdır?",
+    "secenekler": {
+      "A": "َ ْ ‫ﺧﻠ‬ ‫ﻒ اﻟﺒ َﻴ ْﺖ‬ َ ‫ﺤ ﺪﻳ ﻘ ﺔ‬ َ ‫اﻟ‬",
+      "B": "‫ﻊ ﻗ ﺮﻳ ﺐ ﻣ ﻦ اﻟﺒﻴ ﺖ‬ ُ َ ‫ﺼﻨ‬ ْ ‫ﻤ‬َ ‫اﻟـ‬",
+      "C": "‫ﺔ ﻗﺮﻳﺒ َﺔ ﻣﻦ اﻟﺤﺪﻳﻘﺔ‬ ُ ‫ﺳ‬َ ‫ﻤﺪَْر‬ َ ‫اﻟـ‬",
+      "D": "‫ﺔ ﻗﺮﻳﺒ َﺔ ﻣﻦ اﻟـﺒ َﻴ ْﺖ‬ُ ‫ﺳ‬ َ ‫ﻤﺪَْر‬ َ ‫اﻟـ‬",
+      "E": "‫ﺔ ﺑﻌﻴﺪَة ﻋﻦ اﻟـﺒ َﻴ ْﺖ‬ُ ‫ﺳ‬ َ ‫ﻤﺪَْر‬ َ ‫اﻟـ‬"
+    },
+    "ans": "D",
+    "solution": "Arapçada (‫ )اﻟﻤﺪرﺳﺔ‬kelimesi okul, (‫ )اﻟﺒﻴﺖ‬kelimesi ise ev anlamına gelir.\n                Yakın kelimesi ise (‫ )ﻗﺮﻳﺐ‬dir. Bir yere yakın olmak (...‫ )ﻗﺮﻳﺐ ﻣﻦ‬ile ifade\n                edilir.\"Okul eve yakındır.\" cümlesinin karşılığı:\n\n                ( ‫ﺔ ﻗ ﺮﻳﺒ ﺔ ﻣ ﻦ اﻟﺒﻴ ﺖ‬\n                                     ُ ‫ﺳ‬\n                                       َ ‫ﻤﺪْر‬\n                                            َ ‫ )اﻟـ‬şeklinde gelir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Aşağıdakilerden hangisinde haber \"Şibih cümle\" değildir?",
+    "secenekler": {
+      "A": "‫ﺢ‬ ٌ ‫ﺟ‬ِ ‫ﺐ ﻧﺎ‬ ُ ِ ‫اﻟ ﻄﺎﻟ‬",
+      "B": "‫وﻟ ﺔ‬ ِ ‫ﻢ ﻋﻠ ﻰ اﻟ ﻄﺎ‬ ُ ‫ﻘﻠ‬ َ ‫اﻟ‬",
+      "C": "‫ﺐ ﻓ ﻲ اﻟﺒﻴ ﺖ‬ ُ ‫اﻟ ﻄﺎﻟ‬",
+      "D": "‫م اﻟـ ﺤ ﺪﻳ ﻘ ﺔ‬ َ ‫اﻟـ ﺴﻴﺎ ر ة ُ أ ﻣﺎ‬",
+      "E": "‫ﻤ ﻔﺘﺎ ح ﺗ ﺤ ﺖ اﻟ ﻜﺘﺎ ب‬ ِ ‫اﻟـ‬"
+    },
+    "ans": "A",
+    "solution": "A şıkkındaki cümle \"Erkek öğrenci başarılıdır.\" anlamına geliyor ve burada\n                haber tek bir kelimeden oluşuyor, câr mecrûr veya zarf şeklinde olmadığı\n                için şibih cümle değildir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Aşağıdaki cümlelerden hangisi haber-mubteda ilişkisi açısından diğerlerinden farklıdır?",
+    "secenekler": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "ans": "B",
+    "solution": "B şıkkı dışındaki tüm cümlelerde mubteda belirsiz olduğu için haber\n                mubteda dan önce gelmiştir. Ama B şıkkında \"kitap \" sözcüğü belirlidir ve\n                cümle başındadır."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdakilerden hangisi yer zarfıdır?",
+    "secenekler": {
+      "A": "‫إ ِﻟﻰ‬",
+      "B": "‫ﻋﻠ ﻰ‬",
+      "C": "‫ﻣﻦ‬ ِ",
+      "D": "َ ‫ﻋﻨ ﺪ‬ ِ",
+      "E": "‫ﻋﻦ‬ َ"
+    },
+    "ans": "D",
+    "solution": "Bu bölümde ele alınan harf-i cerler şunlardır:\n\n                َ /‫ﻦ‬\n                ‫ك‬  ْ ‫ﻋ‬\n                     َ /‫ل‬\n                        ِ /‫ب‬\n                           ِ / ‫ ﻋﻠ ﻰ‬/ ‫ ﻓ ﻲ‬/‫إﻟ ﻰ‬/ ‫ﻦ‬\n                                                 ْ ‫ﻣ‬\n                                                   ِ\n\n                Sadece D şeçeneğinde yer alan ‫ﻋﻨﺪ‬\n                                                ِ bu listede bulunmaz. Çünkü yer zarfıdır.\n                Bu zarf \"yanında\" anlamı verir."
+  },
+  {
+    "q_num": 10,
+    "stem": "............... ‫ت‬ ُ ‫اﻟﻄﺎﻟ ِﺒﺎ‬ Yukarıdaki cümlede boş bırakılan yere gelmesi uygun olan “haber” aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "‫ت‬ ٌ ‫ﺟ ﺤﺎ‬ ِ ‫ﻧﺎ‬",
+      "B": "‫ﺔ‬ ٌ ‫ﺤ‬ َ ‫ﺟ‬ِ ‫ﻧﺎ‬",
+      "C": "‫ﺢ‬ٌ ‫ﺟ‬ ِ ‫ﻧﺎ‬",
+      "D": "‫ن‬ ِ ‫ﺟ ﺤﺘﺎ‬ َ ‫ﻧ َﺎ‬",
+      "E": "‫ﻦ‬ ِ ْ ‫ﺤﺘﻴ‬ َ ‫ﺟ‬ ِ ‫ﻧﺎ‬"
+    },
+    "ans": "A",
+    "solution": "Bu soruda mubteda veriliyor ve haber soruluyor. Mubteda cem muennes\n                sâlim (düzenli dişil çoğul) bir kelime olduğuna göre haberin de sayı ve\n                cinsiyet bakımından mubtedaya uygun gelmesi gerektiği kuralından\n                hareketle A şıkkının doğru olduğu görülür.\n\n                Mubteda \"kız öğrenciler\" anlamındadır. Haber \"başarılı\" anlamındaki\n                kelimenin kız öğrenciler için uygun sayı ve cinsiyete göre getirilmiş şekli\n                olan (‫ﺟﺤﺎت‬\n                         ِ ‫ )ﻧﺎ‬kelimesi olmalıdır."
+  }
+]

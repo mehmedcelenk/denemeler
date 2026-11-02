@@ -19,8 +19,8 @@ test('sync_to_supabase.py --dry-run: kavramları doğrular', () => {
     encoding: 'utf8',
   });
   assert.equal(result.status, 0, result.stderr || result.stdout);
-  assert.ok(result.stdout.includes('Kavramlar: 959 kayıt hazırlandı'));
-  assert.ok(result.stdout.includes('Paket 1/5'));
+  assert.ok(result.stdout.includes('Kavramlar: 1029 kayıt hazırlandı'));
+  assert.ok(result.stdout.includes('Paket 1/6'));
 });
 
 test('sync_to_supabase.py: kimlik bilgisi olmadan canlı modda çalıştırıldığında güvenle reddeder', () => {

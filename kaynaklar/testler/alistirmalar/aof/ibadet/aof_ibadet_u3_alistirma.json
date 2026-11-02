@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdaki terimlerden hangisi cemaatle kılınan namazda imama uyan kişi için kullanılan terimlerden biri değildir?",
+    "secenekler": {
+      "A": "Münferid",
+      "B": "Muktedî",
+      "C": "Me’mûm",
+      "D": "Müttebi",
+      "E": "Mü'tem"
+    },
+    "ans": "A",
+    "solution": "Cevap A olmalıdır. Münferid, namazı tek başına kılan kişiye denir."
+  },
+  {
+    "q_num": 2,
+    "stem": "Namaz kelimesinin Arapça karşılığı hangisidir?",
+    "secenekler": {
+      "A": "siyam",
+      "B": "sucûd",
+      "C": "salât",
+      "D": "musalli",
+      "E": "mendub"
+    },
+    "ans": "C",
+    "solution": "Namaz, Farsça bir kelime olup Arapça karşılığı “salât”tır. Salât, sözlükte dua etmek, yal​varmak,\n         rahmet etmek gibi anlamlara gelir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Bayram namazları hangi kategoriye girer?",
+    "secenekler": {
+      "A": "farz namazları",
+      "B": "sünnet namazları",
+      "C": "vacip namazları",
+      "D": "nafile namazlar",
+      "E": "müstehab namazlar"
+    },
+    "ans": "C",
+    "solution": "Yatsı namazından sonra kılınan üç rekât vitir namazı ile ramazan ve kurban bayramlarında ikişer\n         rek‘at kılınan bayram namazları vacip namazlardır."
+  },
+  {
+    "q_num": 4,
+    "stem": "Cemaatle kılınan namazda kendisine uyulan kişiye imâm ve bu kişinin görevine de imâmet denir. İmama uyma fiili için aşağıdaki terim veya terimlerden hangisi kullanılmaktadır. I. İttibâ II. Müdrik III. Lâhik IV. İktidâ V. Mümeyyiz",
+    "secenekler": {
+      "A": "I-II",
+      "B": "II-III-IV",
+      "C": "IV-V",
+      "D": "I-IV",
+      "E": "II-IV-V"
+    },
+    "ans": "D",
+    "solution": "İmama uymaya “iktidâ”, “ittibâ” adı verilir."
+  },
+  {
+    "q_num": 5,
+    "stem": "Namaz kılan kişiye ne denir?",
+    "secenekler": {
+      "A": "Musallî",
+      "B": "Salât",
+      "C": "Tekbîr",
+      "D": "Kıyam",
+      "E": "Ku‘ûd"
+    },
+    "ans": "A",
+    "solution": "Namaz, Farsça bir kelime olup Arapça karşılığ ı “salâ t”tır. Salâ t, sö zlü kte dua etmek, yalvarmak,\n                rahmet etmek gibi anlamlara gelir. Dinı ̂ bir terim olarak salâ t (namaz) “tekbı ̂r” ile başlayıp “selam”\n                ile tamamlanan belirli hareket ve sö zlerden oluşan ibadeti ifade eder. Namaz kılan kişiye “musallı ̂”\n                denir. Doğru cevap A'dır."
+  },
+  {
+    "q_num": 6,
+    "stem": "Hangisi namaza başlamadan önce yerine getirilmesi gereken şartlardan biri değildir?",
+    "secenekler": {
+      "A": "Hadesten tahâret,",
+      "B": "Necâsetten tahâret,",
+      "C": "Setr-i avret,",
+      "D": "İstikbâl-i kıble",
+      "E": "Ka‘de-i ahı ̂re"
+    },
+    "ans": "E",
+    "solution": "Namaza başlamadan önce yerine getirilmesi gereken şartlar vardır ki, bunlar hadesten tahâret,\n         necâsetten tahâret, setr-i avret, istikbâl-i kıble, vakit ve niyetten ibarettir.\n\n                Ka‘de-i ahı ̂re (Son Oturuş) namazın rükünlarındandır. Doğru cevap E'dir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Temkin süresi de eklendiğinde güneşin doğuşundan itibaren yaklaşık kaç dakika kadar namaz kılınmamalıdır?",
+    "secenekler": {
+      "A": "30-40",
+      "B": "40-50",
+      "C": "50-60",
+      "D": "60-70",
+      "E": "70-80"
+    },
+    "ans": "B",
+    "solution": "Bazı vakitler vardır ki, bu vakitlerde namaz kılmak yasaklanmıştır. Bu vakitlere “ mekruh vakitler”\n         veya “kerâhet vakti” denir. Bunlardan birisi güneşin bir veya iki mızrak boyu yani beş derece\n         yükselmesidir. Güneşin doğuşundan itibaren yaklaşık otuz dakika sürer. Temkin süresi de buna\n         eklenirse, güneşin doğuşundan itibaren yaklaşık 40-50 dakika kadar bir süre namaz kılınmamalıdır.\n         Bu süreden sonra kerâhet vakti çıkmış olur. Artık istenilen nâfile veya kazâ namazları kılınabilir.\n         Dolayısıyla, doğru cevap B seçeneğidir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Yatsı namazından sonra kılınan üç rekât vitir namazı ile ramazan ve kurban bayramlarında ikişer rek‘at kılınan bayram namazları '_______________'dır. Boşluğa gelmesi gereken uygun ifade aşağıdaki seçeneklerin hangisinde yer almaktadır?",
+    "secenekler": {
+      "A": "Vacip namazlar",
+      "B": "Farz namazlar",
+      "C": "Nafile namazlar",
+      "D": "Sünnet namazlar",
+      "E": "Şükür namazlar"
+    },
+    "ans": "A",
+    "solution": "Yatsı namazından sonra kılınan üç rekât vitir namazı ile ramazan ve kurban bayramlarında ikişer\n         rek‘at kılınan bayram namazları vacip namazlardır."
+  },
+  {
+    "q_num": 9,
+    "stem": "Aşağıdaki seçeneklerin hangisinde namazı bozan durumlardan herhangi birine yer verilmemiştir?",
+    "secenekler": {
+      "A": "Bayılmak",
+      "B": "Kahkaha atmak",
+      "C": "Yemek ve içmek",
+      "D": "Hapşırmak",
+      "E": "Konuşmak"
+    },
+    "ans": "D",
+    "solution": "Namazda isteği dışında hapşırmak namazı bozmaz."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdakilerden hangisi Ku'ud için doğrudur?",
+    "secenekler": {
+      "A": "Oturup tahiyyat okumaktır.",
+      "B": "Oturup yere kapanmak ve üç kere sübhâne rabbiye’l-a‘lâ demektir.",
+      "C": "Ayakta iken eğilip üç kere sübhâne rabbiye’l-azîm demektir.",
+      "D": "Kur’ân’dan Fâtiha sûresini ve buna ilâve olarak bir sûre veya birkaç ayet okumaktır.",
+      "E": "Kıbleye karşı el bağlayıp ayakta durmak"
+    },
+    "ans": "A",
+    "solution": "Ku‘ûd oturup tahiyyat okumaktır ki bu namazın sonunda, bir de her iki rek’atın\n                sonunda olur."
+  }
+]

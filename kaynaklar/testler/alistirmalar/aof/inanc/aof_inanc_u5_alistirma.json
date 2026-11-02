@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "Aşağıdakilerden hangisi Tevrat'ta ibadetler, dinî ayin ve bayramlar, günahların kefareti, yiyecekler, kurbanlar ve evlilik gibi konulara ait hükümlerin yer aldığı bölümdür?",
+    "secenekler": {
+      "A": "Levililer",
+      "B": "Tekvin",
+      "C": "Hurûc",
+      "D": "A‘dât",
+      "E": "Tesniye"
+    },
+    "ans": "A",
+    "solution": "Levililer: İbadetler, dinî ayin ve bayramlar, günahların kefareti, yiyecekler, kurbanlar ve evlilik gibi\n         konulara ait hükümleri konu eder."
+  },
+  {
+    "q_num": 2,
+    "stem": "Hz. Îsâ'nın konuştuğu dil aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ârâmîce",
+      "B": "Grekçe",
+      "C": "Gürcüce",
+      "D": "Farsça",
+      "E": "İtalyanca"
+    },
+    "ans": "A",
+    "solution": "Hz. Îsâ Ârâmîce konuştuğu halde İnciller ve Yeni Ahid’in diğer kitaplarının hepsi Grekçe’dir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Yahudilerin kutsal metni Tanah’ın ilk bö lü mü nü oluşturan Tevrat beş bö lü mden meydana gelmektedir. Aşağıdakilerden hangisi bu bölümlerden değildir?",
+    "secenekler": {
+      "A": "Neviîm",
+      "B": "Tekvin",
+      "C": "A'dat",
+      "D": "Tesniye",
+      "E": "Huruc"
+    },
+    "ans": "A",
+    "solution": "Neviîm, Tevratın değil ana kitap Tanah'ın alt kitabıdır."
+  },
+  {
+    "q_num": 4,
+    "stem": "Isrâ iloğ ulları’nı Mısır’dan çıkarmak ü zere Hz. Musa’nın Rab Yahova tarafından gö revlendirilişi, onları Firavun’un zulmü nden kurtararak Mısır’dan çıkarması, Hz. Mû sâ ’nın Sı̂nâ dağ ında Rab Yahova’dan On Emir’i alma- sından bahseden tevratın bölümü hangisidir?",
+    "secenekler": {
+      "A": "Tekvin",
+      "B": "Huruc",
+      "C": "Levililer",
+      "D": "A'dat",
+      "E": "Tesniye"
+    },
+    "ans": "B",
+    "solution": "Huruc (Çıkış) Isrâ iloğ ulları’nı Mısır’dan çıkarmak ü zere Hz. Musa’nın Rab Yahova tarafından\n                gö revlendirilişi, onları Firavun’un zulmü nden kurtararak Mısır’dan çıkarması, Hz. Mû sâ ’nın Sı ̂nâ\n                dağ ında Rab Yahova’dan On Emir’i almasından bahseder"
+  },
+  {
+    "q_num": 5,
+    "stem": "Aşağıdakilerden hangisi Allah’ın peygamberlerine gönderdiği ilahi kitapların adlarından biri değildir?",
+    "secenekler": {
+      "A": "Tekvin",
+      "B": "Tevrat",
+      "C": "Zebur",
+      "D": "İncil",
+      "E": "Kur’an"
+    },
+    "ans": "A",
+    "solution": "Tekvin; Tevrat’ın evrenin ve ilk insanın yaratılışından, Hz. Âdem’ ve Havva’nın işlediği ilk suçtan,\n         onların yeryüzüne inişlerinden, Hz. Nuh, İbrahim ve İsrailoğullarının Mısır’a girişlerinden ve oradaki\n         hayatlarından bahseden bölümünün adıdır."
+  },
+  {
+    "q_num": 6,
+    "stem": "Allah’ın Cibril aracılığıyla peygamberlere indirdiği ilahi kitapların sonuncusu aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Yeni Ahid",
+      "B": "İncil",
+      "C": "Kur’an",
+      "D": "Tevrat",
+      "E": "Zebur"
+    },
+    "ans": "C",
+    "solution": "İlâhî kitapların sonuncusu olan Kur’ân-ı Kerîm Peygamberimiz Hz. Muhammed (SAV)’e indirilmiş,\n         Peygamberimizden de hiçbir değişikliğe ve bozulmaya uğra​madan tevatür yoluyla bize kadar\n         ulaşmıştır. Doğru cevap C’dir."
+  },
+  {
+    "q_num": 7,
+    "stem": "Trente Konsili’nde (1546) tespit edilen şekliyle Yeni Ahid, Matta, Markos, Luka ve Yuhanna’ya göre İnciller kaç kitaptan meydana gelmektedirler?",
+    "secenekler": {
+      "A": "11",
+      "B": "19",
+      "C": "23",
+      "D": "27",
+      "E": "31"
+    },
+    "ans": "D",
+    "solution": "Trente Konsili'nde (1546) tespit edilen şekliyle Yeni Ahid, Matta, Markos, Luka ve Yuhanna’ya göre\n         İnciller, Resullerin İşleri, Pavlus’un Mektupları (14), Genel Mektuplar (7) ve Yuhanna’nın Vahyi olmak\n         üzere toplam yirmiyedi kitaptan meydana gelmektedir."
+  },
+  {
+    "q_num": 8,
+    "stem": "Kur'an-ı Kerim'i diğer kutsal kitaplardan ayıran en önemli özelliği aşağıdakilerden hangisidir ?",
+    "secenekler": {
+      "A": "Son kutsal kitap olması",
+      "B": "Mekke'de indirilmiş olması",
+      "C": "En uzun kitap olması",
+      "D": "Hiç değiştirilmeden günümüze kadar ulaşması",
+      "E": "Müslümanlara indirilmiş olması"
+    },
+    "ans": "D",
+    "solution": "Hz. Muhammed peygamberlerin sonuncusu, Kur’ân-ı Kerîm de ilâhî kitapların sonuncusudur. Kur’an,\n         Hz. Muhammed’in nübüvvetini doğrulayan en büyük mucizedir. Önceki peygamberlere gönderilen\n         kutsal kitapların aksine Kur’an\n         günümüze kadar hiçbir değişikliğe uğramadan ve tahrif edilmeden gelmiştir ve\n         kıyamete kadar bu özelliğini koruyacaktır. Kur’an’ın getirdiği mesaj evrensel olup\n         kıyamete kadar geçerlidir"
+  },
+  {
+    "q_num": 9,
+    "stem": "Kur’an-ı Kerim ayetleri, hangi dönemde bir araya getirilmiştir?",
+    "secenekler": {
+      "A": "Hz. Muhammed dönemi",
+      "B": "Hz. Ebu Bekir dönemi",
+      "C": "Hz. Ömer dönemi",
+      "D": "Hz. Osman dönemi",
+      "E": "Hz. Ali dönemi"
+    },
+    "ans": "B",
+    "solution": "Hz. Ebû Bekir'in hilâfeti döneminde Kur'ân-ı Kerîm vahiy kâtibi Zeyd b. Sâbit tarafından çok hassas\n         prensipler çerçevesinde bir araya getirilmiş ancak çoğaltılmamıştı. Üçüncü halife Hz. Osman hicrî 25\n         yılında Zeyd b. Sabit, Abdullah b. Zübeyr, Saîd b. el-Âs ve Abdurrahman b. Hâris'ten oluşan bir\n         heyete daha önce biraraya getirilmiş olan Kur’an’ı istinsah ettirmeye başlamıştır. Dolayısıyla, doğru\n         cevap B seçeneğidir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Aşağıdakilerden hangisi vahiy ile ilgili yanlış bir açıklamadır?",
+    "secenekler": {
+      "A": "Allah’in kendi iradesini çeşitli yollarla seçmiş olduğu peygamberlere bildirmesine vahiy denilmektedir.",
+      "B": "Tanrı’dan insana yönlendirilmiş olan bu ilişki aşkın/ilahi bir mahiyete sahiptir.",
+      "C": "Fizik dünyadan metafizik aleme bilgi akışını sağlayan bu iletişimin mahiyeti, zamanı ve şekli tamamen Allah’ın iradesiyle belirlenmiştir.",
+      "D": "Vahyi terim olarak, Allah’ın, peygamberlerine dilediği bilgileri doğrudan veya bir vasıta ile kendisinden geldiğine şüphe edilmeyecek şekilde ve alışılmamış bir tarzda gizlice bildirmesi diye tanımlamak mümkündür.",
+      "E": "Kur’an’da vahiy olayını dile getiren değişik fiiller ve ifade tarzları kullanılır. Ancak bir tecrübe olarak vahyin mahiyetiyle ilgili bilgilere rastlanmamaktadır."
+    },
+    "ans": "C",
+    "solution": "Vahiy, metafizik âlemden fizik dünyaya bilgi akışını sağlar."
+  }
+]

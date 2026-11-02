@@ -1,0 +1,132 @@
+[
+  {
+    "q_num": 1,
+    "stem": "“Nakil akla hareket alanı açmış, akıl da nakle etkin olma yollarını geliştirmiştir. Nakil ve aklı buluşturup telif eden ise, tevatür olmuştur” sözü hangi düşünüre aittir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "Elmalı",
+      "C": "Yunus",
+      "D": "Mevlana",
+      "E": "Arvasi"
+    },
+    "ans": "A",
+    "solution": "Gazali’nin dediğine denk düşerek, nakil akla hareket alanı açmış, akıl da nakle etkin olma yollarını\n         geliştirmiş. Nakil ve aklı buluşturup telif eden ise, tevatür olmuştur."
+  },
+  {
+    "q_num": 2,
+    "stem": "Hz. Peygamber’in İslâm ahlâkındaki kaynak konumunu keşfedebilmek için hangi konuyu dikkate almak gerekir?",
+    "secenekler": {
+      "A": "Varlık kaynağı veya varoluş imkânı",
+      "B": "Olgu-değer ilişkisi meselesini",
+      "C": "Fiiller ve dile getirdiği ahlâki ilke ve kurallar",
+      "D": "Yeni bir varoluş imkanı",
+      "E": "Gerçek ve yaşanmış olan"
+    },
+    "ans": "B",
+    "solution": "Hz. Peygamber’in İslâm ahlâkındaki kaynak konumunu keşfedebilmek için son zamanlarda ahlâk\n         felsefesinde özellikle tartışılan bir konuyu, olgudeğer ilişkisi meselesini, dikkate almak ve bu\n         çerçevede Hz. Peygamber’in bir fiili gerçekleştirmiş olmasının, nasıl olup ta, hangi gerekçelerle\n         ahlâki bir ideali, yani olması gerekeni ifade edebildiğini açıklamak gerekmektedir."
+  },
+  {
+    "q_num": 3,
+    "stem": "Ahlak ilmine ilişkin olarak rivayetlerin ve verilerin anlaşılması aşamasına ne denir?",
+    "secenekler": {
+      "A": "Tasnif",
+      "B": "Tafsil",
+      "C": "Tahsil",
+      "D": "Tedkik",
+      "E": "Tahkik"
+    },
+    "ans": "C",
+    "solution": "Rivayetlerin ve verilerin anlaşılması aşamasına tahsil edilmesi denilmektedir."
+  },
+  {
+    "q_num": 4,
+    "stem": "Bütün ahlâk felsefelerinin temel sorusu aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İnsana faydacı bir yaşam koşulu sunma",
+      "B": "Geçmiş felsefi akımlar ile bağlarını koparma",
+      "C": "Gelecek ile ilgili tahminde bulunma",
+      "D": "İnsanlar arasında davranış düzenini mümkün kılan ilke",
+      "E": "Dinler arasındaki benzerlikleri bulma"
+    },
+    "ans": "D",
+    "solution": "Her bir insanda insan olması bakımından belirli bir davranış düzeni içinde hayatını sürdürmesini\n         sağlayan müşterek bir ilkenin olması gerektiği kabul edildiğinde, bu ilkenin tahakkuk edip etmediği\n         ve nihayet, bu ilkenin hangi ilke olduğu sorusu ortaya çıkar. Hemen hemen bütün ahlâk\n         felsefelerinin temel sorusu budur: İnsanlar arasında davranış düzenini mümkün kılan ilke nedir?\n         Veya hangi ilke insanların hayatlarını belirli bir düzen içinde sürdürmesini mümkün, gerekli, hatta\n         zorunlu kılmaktadır. Doğru cevap D'dır."
+  },
+  {
+    "q_num": 5,
+    "stem": "İslam ahlakının (davranışların) temel kaynağı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Kuran",
+      "B": "Sünnet",
+      "C": "Sahabe hayatı",
+      "D": "Tasavvuf",
+      "E": "Hanefilik"
+    },
+    "ans": "A",
+    "solution": "Bu davranış düzeninde sırasıyla Kur’an-ı Kerim, Hz. Peygamber’in uygulamaları ve sahabenin buna\n         fiilî ve kavlî (sözlü) şahadetinin muhtelif cihetlerden kaynak değeri vardır. Bunun yanında bütün\n         Müslümanların tarih boyunca bu kaynakların verili şartlarda nasıl uygulanacağı ve ne gibi neticeler\n         ortaya çıkardığı hususunda gösterdiği gayret ve bu verileri hem nakil, hem tasnif hem de üst bir dil\n         oluşturarak makul bir şekilde uygulama pratiğinin de, sonraki nesiller için kaynak değeri vardır.\n         Doğru cevap A'dır."
+  },
+  {
+    "q_num": 6,
+    "stem": "İnsanların iyi ya da kötü davranışları ilk olarak öğrendikleri birim aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Aile",
+      "B": "Toplum",
+      "C": "Okul",
+      "D": "Üniversite",
+      "E": "Kişini kendi vicdanı"
+    },
+    "ans": "A",
+    "solution": "İnsanın doğumundan itibaren nasıl yetiştiğini ve elde ettiği bilgileri, -buna iyi ve kötü davranışların\n         bilgisi de dahildir-, nasıl elde ettiğine bakacak olursak, insanın iyi ve kötü hakkındaki bilgilerini esas\n         itibariyle naklen elde ettiğini fark ederiz. İnsan iyi ve kötü hakkındaki bilgilerini önce ailesinden\n         sonra da ait olduğu toplumdan ve toplumsal eğitim kurumlarından elde eder. Ancak sadece burada\n         kalmaz; öğrenirken ve öğrendikten sonra kendisi de elde ettiği bu malumat üzerinde düşünür ve\n         bununla ilgili olarak kendi kanaatini ve tavrını geliştirir. Doğru cevap A'dır."
+  },
+  {
+    "q_num": 7,
+    "stem": "\"havas-ı selime\" aşağıdakilerden hangisine karşılık gelmektedir?",
+    "secenekler": {
+      "A": "Selim akıl",
+      "B": "Güzel ahlak",
+      "C": "İdrak melekesi",
+      "D": "Beş duyu",
+      "E": "Düşünme yetisi"
+    },
+    "ans": "D",
+    "solution": "İnsanın sahip olduğu havas-ı selime (beş duyu) ile, bütün insanlarda müşterek olan bir cisim algısına\n         sahip olması ve bu algı üzerinden diğerleri ile irtibatını ve iletişimini sağlayıp muhafaza etmesi gibi,\n         doğruluk, insanların dokunulmazlığı, mülkiyete saygı gibi temel ahlâki kuralların da, insan\n         topluluklarının devamı için ve devamı sebebiyle, ahlâki makuliyetin esasını teşkil ettiğini\n         söyleyebiliriz. Doğru cevap D'dir."
+  },
+  {
+    "q_num": 8,
+    "stem": "\"Rivayet (hadis) re'ysiz, re'y de rivayet olmadan olamaz\" diyen kimdir?",
+    "secenekler": {
+      "A": "Gazali",
+      "B": "İbn Haldun",
+      "C": "Muhammed eş-Şeybani",
+      "D": "Farabi",
+      "E": "İbn Sina"
+    },
+    "ans": "C",
+    "solution": "Bu söz Muhammed Eş-Şeybani'ye aittir."
+  },
+  {
+    "q_num": 9,
+    "stem": "İslam ahlakının önemli eserlerinden olan İhya isimli eserin yazarı kimdir?",
+    "secenekler": {
+      "A": "Abdullah b. Mübarek",
+      "B": "Ahmed b. Hanbel",
+      "C": "Buhari",
+      "D": "Maverdi",
+      "E": "Gazali"
+    },
+    "ans": "E",
+    "solution": "Gazali’nin \"Ihya\" isimli eseri Islâ m ahlâ kının ö nemli kaynaklarından biridir. Doğru cevap E'dir."
+  },
+  {
+    "q_num": 10,
+    "stem": "Ahlâki konularda Kur’an-ı Kerim’in muhatabı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "İnsan",
+      "B": "Melek",
+      "C": "Nebat",
+      "D": "Şeytan",
+      "E": "Hayvanlar"
+    },
+    "ans": "A",
+    "solution": "İnsan bir bütün olarak K. Kerim’in muhatabıdır. Bu, ahlâk söz konusu olduğunda, insanın bütün\n         yönlerini talep eden K. Kerim’in talebinin sadece bir cihetini teşkil etmektedir."
+  }
+]

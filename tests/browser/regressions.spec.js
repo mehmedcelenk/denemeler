@@ -33,8 +33,10 @@ test('soru kaydetme yer imi ve kaydetme diliyle çalışır', async ({ page }) =
     { key: StorageKeys.STARRED_QUESTIONS, id: questionId }
   )).toBe(true);
 
+  await page.locator('#btnUnifiedTrigger').click();
   await expect(page.locator('#btnUnifiedStarred .top-unified-label')).toHaveText('Kayıtlı');
   await page.locator('#btnUnifiedStarred').click();
+  await expect(page.locator('#btnUnifiedTrigger .top-unified-label')).toHaveText('Kayıtlı');
   await expect(page.locator(`.booklet-question[data-qid="${questionId}"]`)).toBeVisible();
 });
 
@@ -63,7 +65,7 @@ test('hamburger menüsü sade, etiketli ve welcome durumuna duyarlıdır', async
   await page.locator('[data-action="cycle-accent-color"]').click();
   await expect(page.locator('#btnConsoleColorCycle svg')).toHaveCSS('color', 'rgb(5, 150, 105)');
   const labels = ['Ana Sayfa', 'Kaldığın Yerden Devam Et', 'Sütun Düzeni: 3', 'Yazı Boyutu: 15px', 'Tema: Koyu', 'Vurgu Rengi', 'PDF / Yazdır'];
-  await expect(page.locator('.console-nav-action')).toHaveText(labels);
+  await expect(page.locator('.console-nav-action:visible')).toHaveText(labels);
 });
 
 test('mevcut rövanş, kaldığı yer ve seri kayıtları açılışta korunur', async ({ page }) => {
