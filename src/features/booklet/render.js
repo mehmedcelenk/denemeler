@@ -9,6 +9,31 @@ if (typeof document !== 'undefined') {
   onStateChange('booklet:updated', () => renderBookletPages());
 }
 
+function getBookletHeaderMeta(programMode, selectedCoursesSize, selectedTopicKeys) {
+  let institution = 'T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM LİSESİ';
+  let defaultTitle = 'DÖNEM ÇIKMIŞ SINAV SORULARI';
+  let footerName = 'AÖL KESİŞİM REHBERİ';
+
+  if (programMode === 'AOIHL') {
+    institution = 'T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM İMAM HATİP LİSESİ';
+    defaultTitle = 'DÖNEM ÇIKMIŞ SINAV SORULARI';
+    footerName = 'AÖİHL KESİŞİM REHBERİ';
+  } else if (programMode === 'AOF') {
+    institution = 'ANADOLU ÜNİVERSİTESİ • AÇIKÖĞRETİM FAKÜLTESİ';
+    defaultTitle = 'AÖF ÇIKMIŞ SINAV SORULARI';
+    footerName = 'AÖF İLAHİYAT REHBERİ';
+  } else if (['TYT', 'AYT', 'YDT'].includes(programMode)) {
+    institution = 'ÖSYM • YÜKSEKÖĞRETİM KURUMLARI SINAVI';
+    defaultTitle = `${programMode} ÇIKMIŞ SINAV SORULARI`;
+    footerName = `CENKS ${programMode} REHBERİ`;
+  }
+
+  const topicTitle = selectedTopicKeys.size === 1 ? Array.from(selectedTopicKeys)[0] : '';
+  const examTitle = topicTitle || (selectedCoursesSize > 1 ? 'ORTAK KAZANIMLAR KESİŞİM TESTİ' : defaultTitle);
+
+  return { institution, examTitle, footerName };
+}
+
 export function renderBookletPages(_targetQuestionId = null) {
   if (typeof document === 'undefined') return;
   const container = document.getElementById('bookletPagesContainer');
@@ -57,6 +82,7 @@ export function renderBookletPages(_targetQuestionId = null) {
 
   const columnClass = `cols-${state.currentColumnCount}`;
   const badgeCode = getCondensedCourseCode(state.selectedCourses, state.currentSubject);
+  const headerMeta = getBookletHeaderMeta(state.programMode, state.selectedCourses.size, state.selectedTopicKeys);
 
   let questionsHtml = '';
   let miniKeyHtml = '';
@@ -85,8 +111,8 @@ export function renderBookletPages(_targetQuestionId = null) {
     <div class="booklet-page" id="page_1">
       <div class="page-header-band">
         <div class="page-header-left">
-          <span class="institution-name">T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM LİSESİ</span>
-          <span class="exam-name-title">${escapeHtml((state.selectedTopicKeys.size === 1 ? Array.from(state.selectedTopicKeys)[0] : '') || (state.selectedCourses.size > 1 ? 'ORTAK KAZANIMLAR KESİŞİM TESTİ' : 'DÖNEM ÇIKMIŞ SINAV SORULARI'))}</span>
+          <span class="institution-name">${escapeHtml(headerMeta.institution)}</span>
+          <span class="exam-name-title">${escapeHtml(headerMeta.examTitle)}</span>
         </div>
         <div class="page-header-right">
           <span class="page-badge-code">${badgeCode} • ${state.bookletQuestions.length} SORU</span>
@@ -108,7 +134,7 @@ export function renderBookletPages(_targetQuestionId = null) {
             <span id="lblPageKey_1">Cevaplar</span>
           </button>
           <span class="page-num-pill">— TOPLAM ${state.bookletQuestions.length} SORU —</span>
-          <span>AÖL KESİŞİM REHBERİ</span>
+          <span>${escapeHtml(headerMeta.footerName)}</span>
         </div>
       </div>
     </div>

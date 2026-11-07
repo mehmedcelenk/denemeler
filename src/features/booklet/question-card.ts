@@ -105,6 +105,13 @@ export function renderCardSourceTag(q: Question): string {
     const label = `${shortCourse} • ${q.donem || 'Alıştırma'}`;
     return `<div class="q-source-tag" title="Sınav: ${escapeHtml(label)}">${escapeHtml(label)}</div>`;
   }
+  const isYks = ['TYT', 'AYT', 'YDT'].includes(state.programMode) || ['TYT', 'AYT', 'YDT'].includes(q.sinav_adi || '');
+  if (isYks) {
+    const examYear = q.yil || '2024';
+    const examName = q.sinav_adi || state.programMode;
+    const label = `${shortCourse} • ${examYear} ${examName}`;
+    return `<div class="q-source-tag" title="Sınav: ${escapeHtml(label)}">${escapeHtml(label)}</div>`;
+  }
   const year = q.yil ? q.yil.substring(2, 4) : '24';
   const term = q.donem ? String(q.donem) : '1';
   const label = `${shortCourse} • ${year}-D${term}`;

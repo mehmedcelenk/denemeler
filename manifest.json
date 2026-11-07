@@ -1,7 +1,7 @@
 {
-  "name": "Cenk — Dijital Sınav Kitapçığı",
-  "short_name": "Cenk",
-  "description": "Cenk — Dijital Sınav ve Soru Kitapçığı (AÖL, AÖF, YKS)",
+  "name": "Cenks — Dijital Sınav Kitapçığı",
+  "short_name": "Cenks",
+  "description": "Cenks — Dijital Sınav ve Soru Kitapçığı (AÖL, AÖF, YKS)",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "any",

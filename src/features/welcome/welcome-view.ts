@@ -26,7 +26,7 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
     <div class="welcome-card">
       <header class="welcome-header">
         <p class="welcome-bismillah" lang="ar" dir="rtl">بسم الله</p>
-        <h1>CENK</h1>
+        <h1>CENKS</h1>
         <div class="welcome-program-toggle" role="group" aria-label="Program seçimi">
           <button type="button" data-action="welcome-set-program" data-program="AOIHL" aria-pressed="false">AOİHL</button>
           <button type="button" data-action="welcome-set-program" data-program="AOF" aria-pressed="false">AÖF</button>

@@ -18,7 +18,7 @@ test('karşılama portalı ilk açılışı sade tutar ve program seçimini ders
   await page.goto('/');
 
   await expect(page.locator('#welcomePortal')).toBeVisible();
-  await expect(page.locator('#welcomePortal h1')).toHaveText('CENK');
+  await expect(page.locator('#welcomePortal h1')).toHaveText('CENKS');
   await expect(page.locator('.welcome-kicker')).toHaveCount(0);
   await expect(page.locator('#welcomeUserName')).toHaveCount(0);
   await expect(page.locator('#bookletPagesContainer')).toBeHidden();
@@ -217,7 +217,7 @@ test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı güncell
   await page.locator('#topCenterBadge').click();
   await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
 
-  await expect(page.locator('.drawer-header-brand')).toHaveText('CENK');
+  await expect(page.locator('.drawer-header-brand')).toHaveText('CENKS');
   await expect(page.locator('.drawer-header #programToggleGroup')).toHaveCount(0);
 
   // TDE'de varsayılan olarak Dönemler sekmesinin ve çıkmış sınavların açıldığını doğrula
