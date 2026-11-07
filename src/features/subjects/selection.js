@@ -1,33 +1,24 @@
 import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { loadSubjectData } from '../../data/questions.js';
-import { AOIHL_SUBJECTS, AOF_SUBJECTS, matchesSubject } from '../../data/subjects.js';
+import { matchesSubject } from '../../data/subjects.js';
 import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.ts';
 import { saveSessionSnapshot } from '../booklet/resume.ts';
 import { renderDrawerTopics } from './topics.js';
 import { renderSubjectRowsHtml } from './subject-rows.ts';
-import { escapeHtml } from '../../shared/escape.ts';
+import { getProgramSubjectList, getActiveSubjects, getSubjectCourses } from './selection-model.ts';
+import { closeAllSubjectDropdowns } from './dropdown.ts';
 
-import { getActiveSubjects, getSubjectCourses } from './selection-model.ts';
 export { getActiveSubjects } from './selection-model.ts';
+export { toggleSubjectDropdown } from './dropdown.ts';
 
 let selectionVersion = 0;
 
 export async function setProgramMode(mode) {
   store.setProgramMode(mode);
-  const btnAoihl = document.getElementById('btnProgramAoihl');
-  const btnAof = document.getElementById('btnProgramAof');
-  if (btnAoihl) btnAoihl.classList.toggle('active', mode === 'AOIHL');
-  if (btnAof) btnAof.classList.toggle('active', mode === 'AOF');
-
-  if (mode === 'AOF') {
-    const isAofSubj = AOF_SUBJECTS.some(s => s.id === state.currentSubject);
-    const targetSubj = isAofSubj ? state.currentSubject : AOF_SUBJECTS[0].id;
-    await setSubject(targetSubj);
-  } else {
-    const isAoihlSubj = AOIHL_SUBJECTS.some(s => s.id === state.currentSubject);
-    const targetSubj = isAoihlSubj ? state.currentSubject : AOIHL_SUBJECTS[0].id;
-    await setSubject(targetSubj);
-  }
+  const currentList = getProgramSubjectList(mode);
+  const isCurrentInList = currentList.some(s => s.id === state.currentSubject);
+  const targetSubj = isCurrentInList ? state.currentSubject : currentList[0].id;
+  await setSubject(targetSubj);
 }
 
 export async function setSubject(subj) {
@@ -54,10 +45,11 @@ export async function setSubject(subj) {
   const normalContainer = document.getElementById('drawerNormalSelectorContainer');
   if (normalContainer) normalContainer.style.display = 'block';
 
+  const isYks = state.programMode === 'TYT' || state.programMode === 'AYT' || state.programMode === 'YDT';
   const courses = getSubjectCourses(subj);
 
   if (courses.length > 0) {
-    store.setSelectedCourses([courses[0]]);
+    store.setSelectedCourses(isYks ? courses : [courses[0]]);
   } else {
     store.clearSelectedCourses();
   }
@@ -70,7 +62,7 @@ export async function setSubject(subj) {
 }
 
 export async function addSubjectRow(subjId) {
-  const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
+  const currentList = getProgramSubjectList();
   const activeSubjs = getActiveSubjects();
 
   let targetId = subjId;
@@ -135,10 +127,15 @@ export async function switchRowSubject(oldSubjId, newSubjId) {
   const coursesToRemove = Array.from(state.selectedCourses).filter(c => matchesSubject({ ders: c }, oldSubjId));
   coursesToRemove.forEach(c => store.removeSelectedCourse(c));
 
+  const isYks = state.programMode === 'TYT' || state.programMode === 'AYT' || state.programMode === 'YDT';
   const courses = getSubjectCourses(newSubjId);
 
   if (courses.length > 0) {
-    store.addSelectedCourse(courses[0]);
+    if (isYks) {
+      courses.forEach(c => store.addSelectedCourse(c));
+    } else {
+      store.addSelectedCourse(courses[0]);
+    }
   }
   store.setCurrentSubject(newSubjId);
 
@@ -146,10 +143,6 @@ export async function switchRowSubject(oldSubjId, newSubjId) {
   renderDrawerSelectorBar();
   renderDrawerTopics();
   notifyStateChange('booklet:refresh');
-}
-
-export function renderDrawerSubjects() {
-  renderDrawerSelectorBar();
 }
 
 export function renderDrawerCourses() {
@@ -171,19 +164,13 @@ export function renderDrawerSelectorBar() {
   if (normalContainer) normalContainer.style.display = 'block';
   if (bannerContainer) bannerContainer.style.display = 'none';
 
-  const isAof = state.programMode === 'AOF';
-  const currentList = isAof ? AOF_SUBJECTS : AOIHL_SUBJECTS;
+  const currentList = getProgramSubjectList();
   const activeSubjs = getActiveSubjects();
   const rowsContainer = document.getElementById('drawerSubjectRowsContainer');
   const addBtn = document.getElementById('btnAddSubjectRow');
   const addBtnWrap = document.getElementById('addSubjectRowWrapper');
   const btnIntersect = document.getElementById('btnIntersectionToggle');
   const chk = document.getElementById('chkIntersectionSwitch');
-
-  const btnAoihl = document.getElementById('btnProgramAoihl');
-  const btnAof = document.getElementById('btnProgramAof');
-  if (btnAoihl) btnAoihl.classList.toggle('active', !isAof);
-  if (btnAof) btnAof.classList.toggle('active', isAof);
 
   if (rowsContainer) {
     rowsContainer.innerHTML = renderSubjectRowsHtml(activeSubjs);
@@ -208,45 +195,8 @@ export function renderDrawerSelectorBar() {
   updateCourseModeToggleVisibility();
 }
 
-export function toggleSubjectDropdown(menuIdOrSubjId) {
-  const menu = (typeof menuIdOrSubjId === 'string' && document.getElementById(menuIdOrSubjId))
-    || (typeof menuIdOrSubjId === 'string' && document.getElementById(`subjectDropdownMenu_${menuIdOrSubjId}`))
-    || document.getElementById('subjectDropdownMenu');
-  if (!menu) return;
-
-  if (menu.style.display === 'block') {
-    menu.style.display = 'none';
-    return;
-  }
-
-  document.querySelectorAll('.dropdown-menu-list').forEach(m => {
-    if (m !== menu) m.style.display = 'none';
-  });
-
-  const activeSubjId = (typeof menuIdOrSubjId === 'string' && !menuIdOrSubjId.startsWith('subjectDropdownMenu'))
-    ? menuIdOrSubjId
-    : (menu.id.startsWith('subjectDropdownMenu_') ? menu.id.replace('subjectDropdownMenu_', '') : state.currentSubject);
-
-  const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
-  let html = '';
-  currentList.forEach(s => {
-    const isAct = (s.id === activeSubjId);
-    html += `
-      <div class="dropdown-menu-item ${isAct ? 'active' : ''}" 
-           onclick="handleDropdownItemSelect('${s.id}', '${activeSubjId || ''}')">
-        <span>${s.icon} ${escapeHtml(s.name)}</span>
-        ${isAct ? '<span>✓</span>' : ''}
-      </div>
-    `;
-  });
-  menu.innerHTML = html;
-  menu.style.display = 'block';
-}
-
 export async function handleDropdownItemSelect(newSubjId, oldSubjId) {
-  document.querySelectorAll('.dropdown-menu-list').forEach(m => {
-    m.style.display = 'none';
-  });
+  closeAllSubjectDropdowns();
 
   if (!oldSubjId || oldSubjId === state.currentSubject) {
     await setSubject(newSubjId);
@@ -275,17 +225,6 @@ export function toggleCourseLevel(courseName) {
 
 export function handleIntersectionToggle(isChecked) {
   setCourseFilterMode(isChecked ? 'AND' : 'OR');
-}
-
-if (typeof document !== 'undefined') {
-  document.addEventListener('click', (e) => {
-    const target = e.target;
-    if (target && target.closest && !target.closest('.custom-dropdown')) {
-      document.querySelectorAll('.dropdown-menu-list').forEach(m => {
-        m.style.display = 'none';
-      });
-    }
-  });
 }
 
 onStateChange('drawer:topics-refresh', () => {

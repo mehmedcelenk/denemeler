@@ -46,7 +46,7 @@ export const state: AppState = _state;
 
 /** Micro-Store: State mutasyonlarını tek merkezden yönetir ve kalıcı depolarla eşitler. */
 export const store = {
-  setProgramMode(mode: 'AOIHL' | 'AOF'): void { _state.programMode = mode; },
+  setProgramMode(mode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT'): void { _state.programMode = mode; },
   setCurrentSubject(subject: SubjectId | null): void { _state.currentSubject = subject; },
   setSelectedCourses(courses: Iterable<string>): void { _state.selectedCourses = new Set(courses); },
   addSelectedCourse(course: string): void { _state.selectedCourses.add(course); },

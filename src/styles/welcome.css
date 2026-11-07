@@ -49,9 +49,8 @@
 
 .welcome-program-toggle {
   width: 100%;
-  max-width: 330px;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  max-width: 380px;
+  display: flex;
   gap: 4px;
   padding: 4px;
   border: 1px solid var(--paper-border);
@@ -60,14 +59,18 @@
 }
 
 .welcome-program-toggle button {
+  flex: 1 1 0;
+  min-width: 0;
   min-height: 40px;
+  padding: 0 2px;
   border: 0;
   border-radius: 10px;
   background: transparent;
   color: var(--paper-text-muted);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .welcome-program-toggle button.active {

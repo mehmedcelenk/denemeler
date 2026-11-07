@@ -21,7 +21,7 @@ export interface AiExplanationEntry { readonly query: string; readonly reply: st
 export interface AppState {
   readonly allData: readonly Question[];
   readonly currentSubject: SubjectId | null;
-  readonly programMode: 'AOIHL' | 'AOF';
+  readonly programMode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT';
   readonly selectedCourses: ReadonlySet<string>;
   readonly courseFilterMode: 'AND' | 'OR';
   readonly selectedTopicKeys: ReadonlySet<string>;
@@ -53,7 +53,7 @@ export interface AppState {
 export interface MutableAppState {
   allData: Question[];
   currentSubject: SubjectId | null;
-  programMode: 'AOIHL' | 'AOF';
+  programMode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT';
   selectedCourses: Set<string>;
   courseFilterMode: 'AND' | 'OR';
   selectedTopicKeys: Set<string>;

@@ -7,11 +7,8 @@ interface WelcomeViewOptions {
   readonly canResume: boolean;
 }
 
-const swordIcon = `
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 17.5-8-8M13 19l6-6m-3 3 4 4m-1 1 2-2M9.5 14.5 5 19m2-2-3 3m10.5-13.5L18 3h3v3l-3.5 3.5M9.5 9.5 6 6H3V3h3l7.5 7.5"/></svg>
-`;
-const userIcon = `
-  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>
+const studyIcon = `
+  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
 `;
 const usersIcon = `
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -28,23 +25,21 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
   portal.innerHTML = `
     <div class="welcome-card">
       <header class="welcome-header">
-        <p class="welcome-bismillah" lang="ar" dir="rtl">بسم الله الرحمن الرحيم</p>
-        <h1>AOFİHL</h1>
+        <p class="welcome-bismillah" lang="ar" dir="rtl">بسم الله</p>
+        <h1>CENK</h1>
         <div class="welcome-program-toggle" role="group" aria-label="Program seçimi">
           <button type="button" data-action="welcome-set-program" data-program="AOIHL" aria-pressed="false">AOİHL</button>
-          <button type="button" data-action="welcome-set-program" data-program="AOF" aria-pressed="false">AÖF İlahiyat</button>
+          <button type="button" data-action="welcome-set-program" data-program="AOF" aria-pressed="false">AÖF</button>
+          <button type="button" data-action="welcome-set-program" data-program="TYT" aria-pressed="false">TYT</button>
+          <button type="button" data-action="welcome-set-program" data-program="AYT" aria-pressed="false">AYT</button>
+          <button type="button" data-action="welcome-set-program" data-program="YDT" aria-pressed="false">YDT</button>
         </div>
       </header>
 
       <div class="welcome-actions">
-        <button type="button" class="welcome-action-row" data-action="welcome-start-rematch">
-          <span class="welcome-action-icon">${swordIcon}</span>
-          <span class="welcome-action-label">Rövanşlar</span>
-          <span class="welcome-action-arrow" aria-hidden="true">→</span>
-        </button>
         <button type="button" class="welcome-action-row" data-action="welcome-start-single">
-          <span class="welcome-action-icon">${userIcon}</span>
-          <span class="welcome-action-label">Tek Oyunculu</span>
+          <span class="welcome-action-icon">${studyIcon}</span>
+          <span class="welcome-action-label">Soru Çöz</span>
           <span class="welcome-action-arrow" aria-hidden="true">→</span>
         </button>
         <div class="welcome-action-row welcome-multiplayer-row">

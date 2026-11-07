@@ -13,7 +13,7 @@
   .features-toggle-icon { font-size: 16px; }
   .top-prayer-pill { font-size: 13px; padding: 6px 10px; }
   .prayer-text { font-size: 13px; }
-  .top-streak-pill { font-size: 13px; padding: 6px 10px; gap: 4px; }
+  .top-streak-pill { font-size: 13px; padding: 2px 4px; border: none; background: transparent; }
   .streak-icon { font-size: 15px; }
   .streak-count { font-size: 13px; }
   .top-center-pill,
@@ -21,17 +21,12 @@
   .top-view-pill,
   .top-filter-pill,
   .top-unified-pill,
-  .top-streak-pill,
   .top-features-toggle-pill { min-height: 40px; }
   .top-filter-label,
-  .top-unified-label,
   .top-view-label { display: none !important; }
-  .top-view-pill,
-  .top-filter-pill { padding: 4px; gap: 4px; }
-  .btn-top-view,
-  .btn-top-unified:not(.btn-top-unified-trigger) { height: 32px; width: 34px; padding: 0; font-size: 12px; justify-content: center; }
-  .btn-top-unified-trigger { width: auto !important; height: 38px !important; padding: 6px 14px !important; }
-  .btn-top-unified-trigger .top-unified-label { display: inline !important; }
+  .btn-top-unified:not(.btn-top-unified-trigger):not(.unified-dropdown-item) .top-unified-label { display: none !important; }
+  .btn-top-unified-trigger .top-unified-label,
+  .unified-dropdown-item .top-unified-label { display: inline !important; }
   .btn-top-view svg,
   .btn-top-unified:not(.btn-top-unified-trigger) svg { width: 18px; height: 18px; }
   .btn-top-filter { width: 34px; height: 32px; padding: 0; }
@@ -80,6 +75,15 @@
 }
 
 @media (max-width: 480px) {
-  .top-center-pill .badge-text,
+  .top-center-pill { max-width: 140px; padding: 6px 10px; gap: 5px; }
+  .top-center-pill .badge-text {
+    display: inline-block !important;
+    max-width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12.5px;
+    font-weight: 700;
+  }
   .top-center-pill .badge-caret { display: none; }
 }

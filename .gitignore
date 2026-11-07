@@ -3,6 +3,8 @@ docs/kaynak_pdfler/
 docs/arsiv/
 docs/dersler/**/*_sorumlu.pdf
 *_sorumlu.pdf
+kaynaklar/yks/*.pdf
+kaynaklar/yks/
 scripts/scratch/
 
 # Python derleme ve önbellek

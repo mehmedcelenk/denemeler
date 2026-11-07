@@ -24,6 +24,9 @@ import {
 const DEFAULT_SUBJECTS: Readonly<Record<ProgramMode, SubjectId>> = {
   AOIHL: 'TDE',
   AOF: 'AOF_HADIS',
+  TYT: 'TYT_TURKCE',
+  AYT: 'AYT_MAT',
+  YDT: 'YDT_ING',
 };
 
 let initialized = false;
@@ -207,7 +210,7 @@ export function initWelcome(
   registerActions({
     'welcome-set-program': element => {
       const mode = element.dataset.program;
-      if (mode !== 'AOIHL' && mode !== 'AOF') return;
+      if (mode !== 'AOIHL' && mode !== 'AOF' && mode !== 'TYT' && mode !== 'AYT' && mode !== 'YDT') return;
       store.setProgramMode(mode);
       setWelcomeProgram(mode);
     },

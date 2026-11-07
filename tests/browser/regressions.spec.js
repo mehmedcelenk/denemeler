@@ -42,7 +42,7 @@ test('soru kaydetme yer imi ve kaydetme diliyle çalışır', async ({ page }) =
 
 test('hamburger menüsü sade, etiketli ve welcome durumuna duyarlıdır', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('.welcome-bismillah')).toHaveText('بسم الله الرحمن الرحيم');
+  await expect(page.locator('.welcome-bismillah')).toHaveText('بسم الله');
   await page.locator('#btnMasterConsole').click();
   await expect(page.locator('[data-action="welcome-home"]')).toBeHidden();
   await expect(page.locator('[data-action="cycle-column-count"]')).toBeHidden();
@@ -87,7 +87,10 @@ test('mevcut rövanş, kaldığı yer ve seri kayıtları açılışta korunur',
   await expect(page.locator('.booklet-question[data-qid="969"]')).toBeVisible();
   await page.locator('#btnMasterConsole').click();
   await page.locator('[data-action="welcome-home"]').click();
-  await page.locator('[data-action="welcome-start-rematch"]').click();
+  await page.locator('[data-action="welcome-start-single"]').click();
+  await page.locator('.btn-close-drawer[data-action="close-subject-drawer"]').click();
+  await page.locator('#btnUnifiedTrigger').click();
+  await page.locator('#btnUnifiedRematch').click();
   await expect(page.locator('.booklet-question[data-qid="969"]')).toBeVisible();
   await expect(page.locator('#streakCountDisplay')).toHaveText('7');
   const stableKeys = [StorageKeys.REMATCH_QUESTIONS, StorageKeys.WATER_STREAK, StorageKeys.LAST_STREAK_DATE];
@@ -117,13 +120,13 @@ test('yavaş ders isteği son seçilen dersi değiştirmez', async ({ page }) =>
   await selectSubject(page, 'İngilizce');
   await requested;
   await selectSubject(page, 'Coğrafya');
-  await expect(page.locator('#badgeMainText')).toContainText('COĞ');
+  await expect(page.locator('#badgeMainText')).toContainText('Coğrafya');
   const response = page.waitForResponse('**/data/subjects/ING.json');
   release();
   await response;
   // İstek tamamlandıktan sonraki kullanıcı eylemiyle kalan seçimi kontrol et.
   await page.locator('#btnLoadAllTopics').click();
-  await expect(page.locator('#badgeMainText')).toContainText('COĞ');
+  await expect(page.locator('#badgeMainText')).toContainText('Coğrafya');
 });
 
 test('ders yükleme hatasında önceki kitapçık korunur ve yeniden denenebilir', async ({ page }) => {
@@ -134,10 +137,10 @@ test('ders yükleme hatasında önceki kitapçık korunur ve yeniden denenebilir
   await page.locator('#topCenterBadge').click();
   await selectSubject(page, 'İngilizce');
   await expect(page.locator('#drawerTopicList')).toContainText('Ders yüklenemedi');
-  await expect(page.locator('#badgeMainText')).toContainText('TDE');
+  await expect(page.locator('#badgeMainText')).toContainText('Türk Dili');
   await page.unroute('**/data/subjects/ING.json');
   await selectSubject(page, 'İngilizce');
-  await expect(page.locator('#badgeMainText')).toContainText('İNG');
+  await expect(page.locator('#badgeMainText')).toContainText('İngilizce');
   expect(errors).toEqual([]);
 });
 

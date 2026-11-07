@@ -1,8 +1,23 @@
 import { state } from '../../app/state.ts';
-import { AOIHL_SUBJECTS, AOF_SUBJECTS, matchesSubject } from '../../data/subjects.js';
+import {
+  AOIHL_SUBJECTS,
+  AOF_SUBJECTS,
+  TYT_SUBJECTS,
+  AYT_ALL_SUBJECTS,
+  YDT_SUBJECTS,
+  matchesSubject,
+} from '../../data/subjects.js';
+
+export function getProgramSubjectList(programMode = state.programMode) {
+  if (programMode === 'AOF') return AOF_SUBJECTS;
+  if (programMode === 'TYT') return TYT_SUBJECTS;
+  if (programMode === 'AYT') return AYT_ALL_SUBJECTS;
+  if (programMode === 'YDT') return YDT_SUBJECTS;
+  return AOIHL_SUBJECTS;
+}
 
 export function getActiveSubjects() {
-  const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
+  const currentList = getProgramSubjectList();
   const list = [];
   const seen = new Set();
 

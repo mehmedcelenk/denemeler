@@ -110,32 +110,38 @@ export function updateTopBadge(customTitle) {
     }
   }
 
+  const getCleanSubjectName = (subj) => {
+    if (!subj) return 'Dersler';
+    return (subj.name || subj.id).replace(/^(TYT|AYT|YDT)\s+/, '');
+  };
+
   if (activeSubjects.length === 1) {
     badgeEmoji = activeSubjects[0].icon;
-    titleStr = activeSubjects[0].shortName || activeSubjects[0].id;
+    titleStr = getCleanSubjectName(activeSubjects[0]);
   } else if (activeSubjects.length > 1) {
     badgeEmoji = '📚';
-    titleStr = activeSubjects.map(s => s.shortName || s.id).join(' + ');
+    titleStr = activeSubjects.map(s => getCleanSubjectName(s)).join(' + ');
   } else if (state.currentSubject) {
     const subjDef = SUBJECTS.find(s => s.id === state.currentSubject) || SUBJECTS[1];
     badgeEmoji = subjDef.icon;
-    titleStr = subjDef.shortName || subjDef.id;
+    titleStr = getCleanSubjectName(subjDef);
   } else {
     badgeEmoji = '🌐';
-    titleStr = 'Tüm Branşlar';
+    titleStr = 'Tüm Dersler';
   }
 
+  let tooltipStr = titleStr;
   if (state.selectedExamPeriod) {
-    titleStr += ` • ${state.selectedExamPeriod}`;
+    tooltipStr += ` • ${state.selectedExamPeriod}`;
   } else if (state.selectedTopicKeys.size > 0) {
-    titleStr += ` (${state.selectedTopicKeys.size} Konu)`;
+    tooltipStr += ` (${state.selectedTopicKeys.size} Konu)`;
   }
 
   if (badgeBtn) {
     const topicLabel = state.selectedTopicKeys.size > 0
       ? `${state.selectedTopicKeys.size} Konu`
       : 'Tüm Konular';
-    badgeBtn.title = `${titleStr} • ${topicLabel} • Toplam ${state.bookletQuestions.length} Soru`;
+    badgeBtn.title = `${tooltipStr} • ${topicLabel} • Toplam ${state.bookletQuestions.length} Soru`;
   }
 
   if (emojiEl) emojiEl.textContent = badgeEmoji;

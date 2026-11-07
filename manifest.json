@@ -1,7 +1,7 @@
 {
-  "name": "AÖL Dijital Sınav Kitapçığı",
-  "short_name": "AÖL Kitapçık",
-  "description": "AÖL Dijital Sınav ve Sınıf Odak Kitapçığı",
+  "name": "Cenk — Dijital Sınav Kitapçığı",
+  "short_name": "Cenk",
+  "description": "Cenk — Dijital Sınav ve Soru Kitapçığı (AÖL, AÖF, YKS)",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "any",

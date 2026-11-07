@@ -1,7 +1,12 @@
 /** Frontend'in Python çıktısından beklediği veri sözleşmesi. */
 export const choices = ['A', 'B', 'C', 'D', 'E'] as const;
 export type Choice = typeof choices[number];
-export type SubjectId = 'COG' | 'TDE' | 'MAT' | 'TAR' | 'INK' | 'KIM' | 'FIZ' | 'BIO' | 'FEL' | 'DIN' | 'SAG' | 'ING' | 'KLM' | 'AOF_HADIS' | 'AOF_ITAR' | 'AOF_AHLAK' | 'AOF_IBADET' | 'AOF_INANC';
+export type SubjectId =
+  | 'COG' | 'TDE' | 'MAT' | 'TAR' | 'INK' | 'KIM' | 'FIZ' | 'BIO' | 'FEL' | 'DIN' | 'SAG' | 'ING' | 'KLM'
+  | 'AOF_HADIS' | 'AOF_ITAR' | 'AOF_AHLAK' | 'AOF_IBADET' | 'AOF_INANC'
+  | 'TYT_TURKCE' | 'TYT_MAT' | 'TYT_TAR' | 'TYT_COG' | 'TYT_FEL' | 'TYT_DIN' | 'TYT_FIZ' | 'TYT_KIM' | 'TYT_BIO'
+  | 'AYT_MAT' | 'AYT_FIZ' | 'AYT_KIM' | 'AYT_BIO' | 'AYT_EDB' | 'AYT_TAR1' | 'AYT_COG1' | 'AYT_TAR2' | 'AYT_COG2' | 'AYT_FEL' | 'AYT_DIN'
+  | 'YDT_ING';
 
 export interface Question {
   id: number;

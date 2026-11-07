@@ -70,5 +70,89 @@
   "AOF_INANC": {
     "questionCount": 159,
     "courseCount": 1
+  },
+  "TYT_TURKCE": {
+    "questionCount": 357,
+    "courseCount": 1
+  },
+  "TYT_TAR": {
+    "questionCount": 43,
+    "courseCount": 1
+  },
+  "TYT_COG": {
+    "questionCount": 41,
+    "courseCount": 1
+  },
+  "TYT_FEL": {
+    "questionCount": 70,
+    "courseCount": 1
+  },
+  "TYT_MAT": {
+    "questionCount": 311,
+    "courseCount": 1
+  },
+  "TYT_FIZ": {
+    "questionCount": 52,
+    "courseCount": 1
+  },
+  "TYT_KIM": {
+    "questionCount": 52,
+    "courseCount": 1
+  },
+  "TYT_BIO": {
+    "questionCount": 51,
+    "courseCount": 1
+  },
+  "TYT_DIN": {
+    "questionCount": 41,
+    "courseCount": 1
+  },
+  "AYT_MAT": {
+    "questionCount": 273,
+    "courseCount": 1
+  },
+  "AYT_FIZ": {
+    "questionCount": 108,
+    "courseCount": 1
+  },
+  "AYT_KIM": {
+    "questionCount": 94,
+    "courseCount": 1
+  },
+  "AYT_BIO": {
+    "questionCount": 109,
+    "courseCount": 1
+  },
+  "AYT_EDB": {
+    "questionCount": 214,
+    "courseCount": 1
+  },
+  "AYT_TAR1": {
+    "questionCount": 69,
+    "courseCount": 1
+  },
+  "AYT_COG1": {
+    "questionCount": 51,
+    "courseCount": 1
+  },
+  "AYT_TAR2": {
+    "questionCount": 76,
+    "courseCount": 1
+  },
+  "AYT_COG2": {
+    "questionCount": 97,
+    "courseCount": 1
+  },
+  "AYT_FEL": {
+    "questionCount": 26,
+    "courseCount": 1
+  },
+  "AYT_DIN": {
+    "questionCount": 46,
+    "courseCount": 1
+  },
+  "YDT_ING": {
+    "questionCount": 629,
+    "courseCount": 1
   }
 }

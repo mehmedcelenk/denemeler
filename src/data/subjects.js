@@ -1,5 +1,3 @@
-
-
 export const AOIHL_SUBJECTS = [
   { id: 'COG', name: 'Coğrafya', shortName: 'COĞ', icon: '🗺️', cat: 'sozel', kredi: 2 },
   { id: 'TDE', name: 'Türk Dili ve Ed.', shortName: 'TDE', icon: '📚', cat: 'sozel', kredi: 5 },
@@ -24,27 +22,119 @@ export const AOF_SUBJECTS = [
   { id: 'AOF_INANC', name: 'İslam İnanç Esasları', shortName: 'İnanç Esasları', icon: '✨', cat: 'ilahiyat', kredi: 2 }
 ];
 
-export const SUBJECTS = [...AOIHL_SUBJECTS, ...AOF_SUBJECTS];
+export const TYT_SUBJECTS = [
+  { id: 'TYT_TURKCE', name: 'TYT Türkçe', shortName: 'TÜRKÇE', icon: '📚', cat: 'sozel', kredi: 1 },
+  { id: 'TYT_MAT', name: 'TYT Matematik', shortName: 'MAT', icon: '📐', cat: 'sayisal', kredi: 1 },
+  { id: 'TYT_TAR', name: 'TYT Tarih', shortName: 'TARİH', icon: '🏺', cat: 'sozel', kredi: 1 },
+  { id: 'TYT_COG', name: 'TYT Coğrafya', shortName: 'COĞ', icon: '🗺️', cat: 'sozel', kredi: 1 },
+  { id: 'TYT_FEL', name: 'TYT Felsefe', shortName: 'FEL', icon: '🦉', cat: 'sozel', kredi: 1 },
+  { id: 'TYT_DIN', name: 'TYT Din Kültürü', shortName: 'DİN', icon: '🧎', cat: 'kultur', kredi: 1 },
+  { id: 'TYT_FIZ', name: 'TYT Fizik', shortName: 'FİZ', icon: '⚡', cat: 'sayisal', kredi: 1 },
+  { id: 'TYT_KIM', name: 'TYT Kimya', shortName: 'KİM', icon: '🧪', cat: 'sayisal', kredi: 1 },
+  { id: 'TYT_BIO', name: 'TYT Biyoloji', shortName: 'BİY', icon: '🧬', cat: 'sayisal', kredi: 1 }
+];
+
+export const AYT_SAY_SUBJECTS = [
+  { id: 'AYT_MAT', name: 'AYT Matematik', shortName: 'MAT', icon: '📐', cat: 'sayisal', kredi: 1, track: 'say' },
+  { id: 'AYT_FIZ', name: 'AYT Fizik', shortName: 'FİZ', icon: '⚡', cat: 'sayisal', kredi: 1, track: 'say' },
+  { id: 'AYT_KIM', name: 'AYT Kimya', shortName: 'KİM', icon: '🧪', cat: 'sayisal', kredi: 1, track: 'say' },
+  { id: 'AYT_BIO', name: 'AYT Biyoloji', shortName: 'BİY', icon: '🧬', cat: 'sayisal', kredi: 1, track: 'say' }
+];
+
+export const AYT_EA_SUBJECTS = [
+  { id: 'AYT_MAT', name: 'AYT Matematik', shortName: 'MAT', icon: '📐', cat: 'sayisal', kredi: 1, track: 'ea' },
+  { id: 'AYT_EDB', name: 'AYT Türk Dili ve Ed.', shortName: 'EDB', icon: '📚', cat: 'sozel', kredi: 1, track: 'ea' },
+  { id: 'AYT_TAR1', name: 'AYT Tarih-1', shortName: 'TAR-1', icon: '🏺', cat: 'sozel', kredi: 1, track: 'ea' },
+  { id: 'AYT_COG1', name: 'AYT Coğrafya-1', shortName: 'COĞ-1', icon: '🗺️', cat: 'sozel', kredi: 1, track: 'ea' }
+];
+
+export const AYT_SOZ_SUBJECTS = [
+  { id: 'AYT_EDB', name: 'AYT Türk Dili ve Ed.', shortName: 'EDB', icon: '📚', cat: 'sozel', kredi: 1, track: 'soz' },
+  { id: 'AYT_TAR1', name: 'AYT Tarih-1', shortName: 'TAR-1', icon: '🏺', cat: 'sozel', kredi: 1, track: 'soz' },
+  { id: 'AYT_COG1', name: 'AYT Coğrafya-1', shortName: 'COĞ-1', icon: '🗺️', cat: 'sozel', kredi: 1, track: 'soz' },
+  { id: 'AYT_TAR2', name: 'AYT Tarih-2', shortName: 'TAR-2', icon: '📜', cat: 'sozel', kredi: 1, track: 'soz' },
+  { id: 'AYT_COG2', name: 'AYT Coğrafya-2', shortName: 'COĞ-2', icon: '🌍', cat: 'sozel', kredi: 1, track: 'soz' },
+  { id: 'AYT_FEL', name: 'AYT Felsefe Grubu', shortName: 'FEL', icon: '🦉', cat: 'sozel', kredi: 1, track: 'soz' },
+  { id: 'AYT_DIN', name: 'AYT Din Kültürü', shortName: 'DİN', icon: '🧎', cat: 'kultur', kredi: 1, track: 'soz' }
+];
+
+export const AYT_ALL_SUBJECTS = [
+  { id: 'AYT_MAT', name: 'AYT Matematik', shortName: 'MAT', icon: '📐', cat: 'sayisal', kredi: 1 },
+  { id: 'AYT_FIZ', name: 'AYT Fizik', shortName: 'FİZ', icon: '⚡', cat: 'sayisal', kredi: 1 },
+  { id: 'AYT_KIM', name: 'AYT Kimya', shortName: 'KİM', icon: '🧪', cat: 'sayisal', kredi: 1 },
+  { id: 'AYT_BIO', name: 'AYT Biyoloji', shortName: 'BİY', icon: '🧬', cat: 'sayisal', kredi: 1 },
+  { id: 'AYT_EDB', name: 'AYT Türk Dili ve Ed.', shortName: 'EDB', icon: '📚', cat: 'sozel', kredi: 1 },
+  { id: 'AYT_TAR1', name: 'AYT Tarih-1', shortName: 'TAR-1', icon: '🏺', cat: 'sozel', kredi: 1 },
+  { id: 'AYT_COG1', name: 'AYT Coğrafya-1', shortName: 'COĞ-1', icon: '🗺️', cat: 'sozel', kredi: 1 },
+  { id: 'AYT_TAR2', name: 'AYT Tarih-2', shortName: 'TAR-2', icon: '📜', cat: 'sozel', kredi: 1 },
+  { id: 'AYT_COG2', name: 'AYT Coğrafya-2', shortName: 'COĞ-2', icon: '🌍', cat: 'sozel', kredi: 1 },
+  { id: 'AYT_FEL', name: 'AYT Felsefe Grubu', shortName: 'FEL', icon: '🦉', cat: 'sozel', kredi: 1 },
+  { id: 'AYT_DIN', name: 'AYT Din Kültürü', shortName: 'DİN', icon: '🧎', cat: 'kultur', kredi: 1 }
+];
+
+export const YDT_SUBJECTS = [
+  { id: 'YDT_ING', name: 'YDT İngilizce', shortName: 'İNGİLİZCE', icon: '🌐', cat: 'kultur', kredi: 1 }
+];
+
+export const SUBJECTS = [
+  ...AOIHL_SUBJECTS,
+  ...AOF_SUBJECTS,
+  ...TYT_SUBJECTS,
+  ...AYT_ALL_SUBJECTS,
+  ...YDT_SUBJECTS
+];
 
 export function matchesSubject(q, subj) {
-  if (subj === 'COG') return q.ders.includes('COĞRAFYA');
-  if (subj === 'TDE') return q.ders.includes('TÜRK DİLİ') || q.ders.includes('EDEBİYAT');
-  if (subj === 'MAT') return q.ders.includes('MATEMATİK');
-  if (subj === 'TAR') return q.ders.includes('TARİH') && !q.ders.includes('İNKILAP') && !q.ders.includes('İSLAM');
-  if (subj === 'INK') return q.ders.includes('İNKILAP');
-  if (subj === 'KIM') return q.ders.includes('KİMYA');
-  if (subj === 'FIZ') return q.ders.includes('FİZİK');
-  if (subj === 'BIO') return q.ders.includes('BİYOLOJİ');
-  if (subj === 'FEL') return q.ders.includes('FELSEFE');
-  if (subj === 'DIN') return q.ders.includes('DİN KÜLTÜRÜ');
-  if (subj === 'SAG') return q.ders.includes('SAĞLIK');
-  if (subj === 'ING') return q.ders.includes('İNGİLİZCE');
-  if (subj === 'KLM') return q.ders.includes('KELAM');
-  if (subj === 'AOF_HADIS') return q.ders.includes('HADİS');
-  if (subj === 'AOF_ITAR') return q.ders.includes('İLK DÖNEM İSLAM TARİHİ');
-  if (subj === 'AOF_AHLAK') return q.ders.includes('AHLAK');
-  if (subj === 'AOF_IBADET') return q.ders.includes('İBADET');
-  if (subj === 'AOF_INANC') return q.ders.includes('İNANÇ');
+  if (!q || !q.ders) return false;
+  const d = q.ders;
+
+  // YKS branş eşleşmeleri
+  if (subj === 'TYT_TURKCE') return d === 'TYT TÜRKÇE';
+  if (subj === 'TYT_MAT') return d === 'TYT MATEMATİK';
+  if (subj === 'TYT_TAR') return d === 'TYT TARİH';
+  if (subj === 'TYT_COG') return d === 'TYT COĞRAFYA';
+  if (subj === 'TYT_FEL') return d === 'TYT FELSEFE';
+  if (subj === 'TYT_DIN') return d === 'TYT DİN KÜLTÜRÜ';
+  if (subj === 'TYT_FIZ') return d === 'TYT FİZİK';
+  if (subj === 'TYT_KIM') return d === 'TYT KİMYA';
+  if (subj === 'TYT_BIO') return d === 'TYT BİYOLOJİ';
+
+  if (subj === 'AYT_MAT') return d === 'AYT MATEMATİK';
+  if (subj === 'AYT_FIZ') return d === 'AYT FİZİK';
+  if (subj === 'AYT_KIM') return d === 'AYT KİMYA';
+  if (subj === 'AYT_BIO') return d === 'AYT BİYOLOJİ';
+  if (subj === 'AYT_EDB') return d === 'AYT TÜRK DİLİ VE EDEBİYATI';
+  if (subj === 'AYT_TAR1') return d === 'AYT TARİH-1';
+  if (subj === 'AYT_COG1') return d === 'AYT COĞRAFYA-1';
+  if (subj === 'AYT_TAR2') return d === 'AYT TARİH-2';
+  if (subj === 'AYT_COG2') return d === 'AYT COĞRAFYA-2';
+  if (subj === 'AYT_FEL') return d === 'AYT FELSEFE GRUBU';
+  if (subj === 'AYT_DIN') return d === 'AYT DİN KÜLTÜRÜ';
+
+  if (subj === 'YDT_ING') return d === 'YDT İNGİLİZCE';
+
+  // YKS sorularının AÖL ve AÖF ile karışmasını engelle
+  if (d.startsWith('TYT') || d.startsWith('AYT') || d.startsWith('YDT')) return false;
+
+  // AÖL & AÖF
+  if (subj === 'COG') return d.includes('COĞRAFYA');
+  if (subj === 'TDE') return d.includes('TÜRK DİLİ') || d.includes('EDEBİYAT');
+  if (subj === 'MAT') return d.includes('MATEMATİK');
+  if (subj === 'TAR') return d.includes('TARİH') && !d.includes('İNKILAP') && !d.includes('İSLAM');
+  if (subj === 'INK') return d.includes('İNKILAP');
+  if (subj === 'KIM') return d.includes('KİMYA');
+  if (subj === 'FIZ') return d.includes('FİZİK');
+  if (subj === 'BIO') return d.includes('BİYOLOJİ');
+  if (subj === 'FEL') return d.includes('FELSEFE');
+  if (subj === 'DIN') return d.includes('DİN KÜLTÜRÜ');
+  if (subj === 'SAG') return d.includes('SAĞLIK');
+  if (subj === 'ING') return d.includes('İNGİLİZCE');
+  if (subj === 'KLM') return d.includes('KELAM');
+  if (subj === 'AOF_HADIS') return d.includes('HADİS');
+  if (subj === 'AOF_ITAR') return d.includes('İLK DÖNEM İSLAM TARİHİ');
+  if (subj === 'AOF_AHLAK') return d.includes('AHLAK');
+  if (subj === 'AOF_IBADET') return d.includes('İBADET');
+  if (subj === 'AOF_INANC') return d.includes('İNANÇ');
   return true;
 }
 
@@ -54,7 +144,7 @@ export function getShortCourseName(c) {
           .replace('İSLAM AHLAK ESASLARI', 'AHLÂK')
           .replace('İSLAM İBADET ESASLARI', 'İBADET')
           .replace('İSLAM İNANÇ ESASLARI', 'İNANÇ')
-          .replace('KELAM', 'KLM')
+          .replace('AYT TÜRK DİLİ VE EDEBİYATI', 'AYT EDB')
           .replace('TÜRK DİLİ VE EDEBİYATI', 'TDE')
           .replace('TÜRK DİLİ VE ED.', 'TDE')
           .replace('T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK', 'İNK')
@@ -77,28 +167,21 @@ export function getCondensedCourseCode(coursesSet, subjId) {
   if (list.length === 0) return subjId;
 
   const prefixMap = {
-    'MAT': 'MAT',
-    'TDE': 'TDE',
-    'TAR': 'TAR',
-    'COG': 'COĞ',
-    'FIZ': 'FİZ',
-    'KIM': 'KİM',
-    'BIO': 'BİY',
-    'FEL': 'FEL',
-    'DIN': 'DİN',
-    'ING': 'İNG',
-    'INK': 'İNK',
-    'SAG': 'SAĞ',
-    'KLM': 'KLM',
-    'AOF_HADIS': 'HADİS',
-    'AOF_ITAR': 'İS.TAR',
-    'AOF_AHLAK': 'AHLÂK',
-    'AOF_IBADET': 'İBADET',
-    'AOF_INANC': 'İNANÇ'
+    'MAT': 'MAT', 'TDE': 'TDE', 'TAR': 'TAR', 'COG': 'COĞ',
+    'FIZ': 'FİZ', 'KIM': 'KİM', 'BIO': 'BİY', 'FEL': 'FEL',
+    'DIN': 'DİN', 'ING': 'İNG', 'INK': 'İNK', 'SAG': 'SAĞ', 'KLM': 'KLM',
+    'AOF_HADIS': 'HADİS', 'AOF_ITAR': 'İS.TAR', 'AOF_AHLAK': 'AHLÂK',
+    'AOF_IBADET': 'İBADET', 'AOF_INANC': 'İNANÇ',
+    'TYT_TURKCE': 'TYT TÜRKÇE', 'TYT_MAT': 'TYT MAT', 'TYT_TAR': 'TYT TAR',
+    'TYT_COG': 'TYT COĞ', 'TYT_FEL': 'TYT FEL', 'TYT_DIN': 'TYT DİN',
+    'TYT_FIZ': 'TYT FİZ', 'TYT_KIM': 'TYT KİM', 'TYT_BIO': 'TYT BİY',
+    'AYT_MAT': 'AYT MAT', 'AYT_FIZ': 'AYT FİZ', 'AYT_KIM': 'AYT KİM',
+    'AYT_BIO': 'AYT BİY', 'AYT_EDB': 'AYT EDB', 'AYT_TAR1': 'AYT TAR-1',
+    'AYT_COG1': 'AYT COĞ-1', 'AYT_TAR2': 'AYT TAR-2', 'AYT_COG2': 'AYT COĞ-2',
+    'AYT_FEL': 'AYT FEL', 'AYT_DIN': 'AYT DİN', 'YDT_ING': 'YDT İNG'
   };
 
   const prefix = prefixMap[subjId] || subjId;
-  
   const digits = list.map(c => {
     const m = c.match(/\d+$/);
     return m ? parseInt(m[0], 10) : 0;

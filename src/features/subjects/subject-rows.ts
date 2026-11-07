@@ -10,30 +10,33 @@ export interface SubjectItem {
 }
 
 export function renderSubjectRowsHtml(activeSubjs: SubjectItem[]): string {
+  const isYks = state.programMode === 'TYT' || state.programMode === 'AYT' || state.programMode === 'YDT';
   let rowsHtml = '';
   activeSubjs.forEach((s, idx) => {
     const isPrimary = (idx === 0);
-    const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, s.id)).map(q => q.ders)));
-    courses.sort((a, b) => {
-      const numA = parseInt((a.match(/\d+$/) || ['0'])[0], 10);
-      const numB = parseInt((b.match(/\d+$/) || ['0'])[0], 10);
-      return numA - numB;
-    });
-
     let levelChipsHtml = '';
-    courses.forEach(c => {
-      const isSel = state.selectedCourses.has(c);
-      const m = c.match(/\d+$/);
-      const num = m ? m[0] : c;
-      const short = getShortCourseName(c);
-      levelChipsHtml += `
-        <button type="button" class="btn-level-chip ${isSel ? 'active' : ''}" 
-                onclick="toggleCourseLevel('${escapeJs(c)}')" 
-                title="${escapeHtml(short)}">
-          ${escapeHtml(num)}
-        </button>
-      `;
-    });
+    if (!isYks) {
+      const courses = Array.from(new Set(state.allData.filter(q => matchesSubject(q, s.id)).map(q => q.ders)));
+      courses.sort((a, b) => {
+        const numA = parseInt((a.match(/\d+$/) || ['0'])[0], 10);
+        const numB = parseInt((b.match(/\d+$/) || ['0'])[0], 10);
+        return numA - numB;
+      });
+
+      courses.forEach(c => {
+        const isSel = state.selectedCourses.has(c);
+        const m = c.match(/\d+$/);
+        const num = m ? m[0] : c;
+        const short = getShortCourseName(c);
+        levelChipsHtml += `
+          <button type="button" class="btn-level-chip ${isSel ? 'active' : ''}" 
+                  onclick="toggleCourseLevel('${escapeJs(c)}')" 
+                  title="${escapeHtml(short)}">
+            ${escapeHtml(num)}
+          </button>
+        `;
+      });
+    }
 
     const dropdownId = isPrimary ? 'subjectDropdownWrapper' : `subjectDropdownWrapper_${s.id}`;
     const triggerId = isPrimary ? 'btnSubjectDropdownTrigger' : `btnSubjectDropdownTrigger_${s.id}`;
@@ -56,11 +59,13 @@ export function renderSubjectRowsHtml(activeSubjs: SubjectItem[]): string {
           </div>
         </div>
 
+        ${!isYks ? `
         <span class="row-slash">/</span>
 
         <div class="row-level-chips" id="${chipsContainerId}">
           ${levelChipsHtml}
         </div>
+        ` : ''}
 
         ${activeSubjs.length > 1 ? `
           <button type="button" class="btn-remove-subject-row" 
