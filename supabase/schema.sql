@@ -32,7 +32,6 @@ CREATE TABLE IF NOT EXISTS questions (
     sinav_soru_sayisi SMALLINT,                       -- Dönem sınavındaki soru adedi (örn: 10 veya 20)
     ipucu TEXT,                                       -- Soruya özel ipucu metni
     sekilli BOOLEAN NOT NULL DEFAULT false,           -- Görsel/şekilli soru bayrağı
-    zorluk TEXT,                                      -- 'kek', 'orta', 'boss'
     soru_tr TEXT,                                     -- İngilizce sorular için Türkçe çeviri
     soru_ar TEXT,                                     -- Kelam/AÖF için Arapça orijinal metin
     soru_xray TEXT,                                   -- Kavram balonlu & dil bilgisi ayrıştırılmış HTML
@@ -42,7 +41,6 @@ CREATE TABLE IF NOT EXISTS questions (
     updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
 
     CONSTRAINT chk_dogru_cevap CHECK (dogru_cevap IN ('A', 'B', 'C', 'D', 'E')),
-    CONSTRAINT chk_zorluk CHECK (zorluk IS NULL OR zorluk IN ('kek', 'orta', 'boss')),
     CONSTRAINT chk_soru_not_empty CHECK (length(btrim(soru)) > 0),
     CONSTRAINT chk_secenekler_valid CHECK (
         jsonb_typeof(secenekler) = 'object' AND
@@ -85,7 +83,6 @@ CREATE TABLE IF NOT EXISTS concepts (
     sayfa SMALLINT,                                   -- MEB PDF sayfa numarası
     tanim TEXT NOT NULL,                              -- Pedagojik tanım & sınav şifresi
     baglam_farki TEXT,                                -- Diğer dönemlerle anlam/bağlam farkı
-    sinav_ipucu TEXT,                                 -- MEB sınav tuzağı / püf noktası / şifresi
     pattern TEXT,                                     -- Röntgen regex eşleştirme deseni
     aliases JSONB NOT NULL DEFAULT '[]'::jsonb,       -- Eş anlamlı veya alternatif terimler listesi
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),

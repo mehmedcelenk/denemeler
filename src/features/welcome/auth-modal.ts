@@ -49,6 +49,7 @@ export function showAuthModal(mode: 'signin' | 'signup' = 'signin', notice = '')
   if (!dialog) return;
   dialog.hidden = false;
 
+  const emailInput = document.getElementById('authEmailInput') as HTMLInputElement | null;
   const title = document.getElementById('authDialogTitle');
   const submitBtn = document.getElementById('btnAuthSubmit');
   const toggleBtn = document.getElementById('btnAuthToggleMode');
@@ -64,11 +65,13 @@ export function showAuthModal(mode: 'signin' | 'signup' = 'signin', notice = '')
     if (submitBtn) submitBtn.textContent = 'Giriş Yap →';
     if (toggleBtn) toggleBtn.textContent = 'Hesabın yok mu? Kayıt Ol';
     if (nameRow) nameRow.hidden = true;
+    if (emailInput) emailInput.placeholder = 'Kullanıcı adı veya E-posta';
   } else {
     if (title) title.textContent = 'Yeni Hesap Oluştur';
     if (submitBtn) submitBtn.textContent = 'Kayıt Ol →';
     if (toggleBtn) toggleBtn.textContent = 'Zaten hesabın var mı? Giriş Yap';
     if (nameRow) nameRow.hidden = false;
+    if (emailInput) emailInput.placeholder = 'E-posta adresiniz';
   }
 
   requestAnimationFrame(() => {
@@ -89,16 +92,21 @@ export function toggleAuthMode(): void {
 export async function submitAuth(): Promise<void> {
   const emailInput = document.getElementById('authEmailInput') as HTMLInputElement | null;
   const passInput = document.getElementById('authPasswordInput') as HTMLInputElement | null;
-  const nameInput = document.getElementById('authNameInput') as HTMLInputElement | null;
+  const userInput = document.getElementById('authUsernameInput') as HTMLInputElement | null;
   const errorEl = document.getElementById('authDialogError');
   const submitBtn = document.getElementById('btnAuthSubmit') as HTMLButtonElement | null;
 
-  const email = emailInput?.value.trim() || '';
+  const identifier = emailInput?.value.trim() || '';
   const password = passInput?.value || '';
-  const displayName = nameInput?.value.trim() || '';
+  const username = userInput?.value.trim() || '';
 
-  if (!email || !password) {
-    if (errorEl) errorEl.textContent = 'Lütfen e-posta ve şifrenizi girin.';
+  if (authMode === 'signup') {
+    if (!username || !identifier || !password) {
+      if (errorEl) errorEl.textContent = 'Lütfen kullanıcı adı, e-posta ve şifrenizi girin.';
+      return;
+    }
+  } else if (!identifier || !password) {
+    if (errorEl) errorEl.textContent = 'Lütfen kullanıcı adı/e-posta ve şifrenizi girin.';
     return;
   }
 
@@ -110,8 +118,8 @@ export async function submitAuth(): Promise<void> {
 
   try {
     const res = authMode === 'signin'
-      ? await signInWithEmail(email, password)
-      : await signUpWithEmail(email, password, displayName);
+      ? await signInWithEmail(identifier, password)
+      : await signUpWithEmail(identifier, password, username, username);
 
     if (res.error || !res.data) {
       if (errorEl) errorEl.textContent = res.error || 'İşlem başarısız.';

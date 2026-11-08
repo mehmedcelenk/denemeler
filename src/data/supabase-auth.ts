@@ -3,6 +3,7 @@ import { getSupabaseConfig } from './supabase-client.ts';
 export interface AuthUser {
   id: string;
   email?: string;
+  username?: string;
   displayName?: string;
 }
 
@@ -33,6 +34,7 @@ function parseUserFromGoTrue(raw: Record<string, unknown>): AuthUser {
   return {
     id: String(raw.id || ''),
     email: typeof raw.email === 'string' ? raw.email : undefined,
+    username: typeof meta.username === 'string' ? meta.username : undefined,
     displayName: typeof meta.display_name === 'string' ? meta.display_name : undefined,
   };
 }
@@ -52,6 +54,7 @@ function parseSessionFromGoTrue(raw: Record<string, unknown>): AuthSession | nul
 export async function signUpWithEmail(
   email: string,
   password: string,
+  username?: string,
   displayName?: string,
   timeoutMs = 6000
 ): Promise<AuthResponse<AuthSession>> {
@@ -72,7 +75,10 @@ export async function signUpWithEmail(
       body: JSON.stringify({
         email,
         password,
-        data: { display_name: displayName || '' },
+        data: {
+          username: username || '',
+          display_name: displayName || username || '',
+        },
       }),
       signal: controller.signal,
     });
@@ -92,12 +98,32 @@ export async function signUpWithEmail(
 }
 
 export async function signInWithEmail(
-  email: string,
+  identifier: string,
   password: string,
   timeoutMs = 6000
 ): Promise<AuthResponse<AuthSession>> {
   const config = getSupabaseConfig();
   if (!config) return { data: null, error: 'Supabase yapılandırılmamış.' };
+
+  let targetEmail = identifier.trim();
+  if (!targetEmail.includes('@')) {
+    try {
+      const rpcRes = await fetch(`${config.url}/rest/v1/rpc/find_email_by_identifier`, {
+        method: 'POST',
+        headers: {
+          apikey: config.anonKey,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ identifier: targetEmail }),
+      });
+      if (rpcRes.ok) {
+        const found = await rpcRes.json();
+        if (typeof found === 'string' && found.includes('@')) {
+          targetEmail = found;
+        }
+      }
+    } catch {}
+  }
 
   const endpoint = `${config.url}/auth/v1/token?grant_type=password`;
   const controller = new AbortController();
@@ -110,7 +136,7 @@ export async function signInWithEmail(
         apikey: config.anonKey,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email: targetEmail, password }),
       signal: controller.signal,
     });
 

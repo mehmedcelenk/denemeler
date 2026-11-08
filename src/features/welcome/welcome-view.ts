@@ -71,9 +71,9 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
         <h2 id="authDialogTitle">Hesabına Giriş Yap</h2>
         <p id="authDialogNotice">İlerlemeni buluta kaydet ve cihazların arasında senkronize et.</p>
         <div id="authNameRow" hidden>
-          <input id="authNameInput" type="text" maxlength="40" autocomplete="name" placeholder="Adınız (isteğe bağlı)" aria-label="Adınız">
+          <input id="authUsernameInput" type="text" maxlength="30" autocomplete="username" placeholder="Kullanıcı Adınız (örn: ali55)" aria-label="Kullanıcı Adı">
         </div>
-        <input id="authEmailInput" type="email" autocomplete="email" placeholder="E-posta adresiniz" aria-label="E-posta">
+        <input id="authEmailInput" type="text" autocomplete="username email" placeholder="Kullanıcı adı veya E-posta" aria-label="Kullanıcı adı veya E-posta">
         <input id="authPasswordInput" type="password" autocomplete="current-password" placeholder="Şifreniz" aria-label="Şifre">
         <p class="welcome-name-error" id="authDialogError" role="alert" aria-live="polite"></p>
         <button type="button" class="welcome-name-confirm" id="btnAuthSubmit" data-action="welcome-submit-auth">Giriş Yap →</button>

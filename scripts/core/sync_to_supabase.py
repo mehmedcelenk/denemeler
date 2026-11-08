@@ -170,7 +170,6 @@ def prepare_questions(subjects: Optional[List[str]] = None) -> List[Dict[str, An
                 'sinav_soru_sayisi': int(q['sinav_soru_sayisi']) if q.get('sinav_soru_sayisi') is not None else None,
                 'ipucu': q.get('ipucu'),
                 'sekilli': bool(q.get('sekilli', False)),
-                'zorluk': q.get('zorluk'),
                 'soru_tr': q.get('soru_tr'),
                 'soru_ar': q.get('soru_ar'),
                 'soru_xray': q.get('soru_xray'),
@@ -208,7 +207,6 @@ def prepare_concepts() -> List[Dict[str, Any]]:
                 'sayfa': item.get('sayfa'),
                 'tanim': str(item.get('tanim', '')).strip(),
                 'baglam_farki': item.get('baglam_farki'),
-                'sinav_ipucu': item.get('sinav_ipucu'),
                 'pattern': item.get('pattern'),
                 'aliases': item.get('aliases', [])
             })
@@ -276,7 +274,7 @@ def prepare_question_concepts(questions: List[Dict[str, Any]], concepts: List[Di
 def main():
     parser = argparse.ArgumentParser(description='AÖL Kitapçık Supabase Toplu Veri Senkronizasyonu')
     parser.add_argument('--dry-run', action='store_true', help='Veritabanına yazmadan sadece kontrol yapar.')
-    parser.add_argument('--table', default='all', choices=['all', 'subjects', 'questions', 'concepts', 'ai_explanations', 'question_concepts'],
+    parser.add_argument('--table', default='all', choices=['all', 'subjects', 'questions', 'concepts', 'question_concepts'],
                         help='Aktarılacak tabloyu seçin (varsayılan: all).')
     parser.add_argument('--subjects', default=None, help='Ders kodları filtresi (örn: KLM,DIN,MAT).')
     parser.add_argument('--batch-size', type=int, default=200, help='PostgREST paket boyutu (varsayılan: 200).')
@@ -325,11 +323,6 @@ def main():
         links_data = prepare_question_concepts(questions_data, concepts_data)
         print(f'📦 Soru-Kavram İlişkileri: {len(links_data)} eşleşme hazırlandı.')
         syncer.sync_table('question_concepts', links_data)
-
-    if args.table in ('all', 'ai_explanations'):
-        ai_data = prepare_ai_explanations()
-        print(f'📦 AI Açıklamaları: {len(ai_data)} kayıt hazırlandı.')
-        syncer.sync_table('ai_explanations', ai_data)
 
     print('\n✅ Senkronizasyon işlemi başarıyla tamamlandı!')
 
