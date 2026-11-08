@@ -21,6 +21,7 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | MEB Kitap İndirme & Dönem Markdown Dilimleme | `scripts/core/download_all_courses.py` & `scripts/core/organize_course_folders.py` |
 | Hassas Kavram & Formül Katalogları | `scripts/core/*_precise_catalog.py` & `data/concepts/` |
 | JSON yükleme & Supabase Hibrit Fallback | `src/data/questions.js` & `src/data/supabase-client.ts` |
+| Supabase Auth, Oturum & Bulut İlerleme Eşitleme | `src/data/supabase-auth.ts` & `src/features/welcome/auth-modal.ts` |
 | Supabase DDL Şeması & Toplu Aktarım | `supabase/schema.sql` & `scripts/core/sync_to_supabase.py` |
 | Ders adları/kodları | `src/data/subjects.js` |
 | Arama ekranı | `src/features/search/search.js` |

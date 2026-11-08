@@ -1,11 +1,7 @@
 import type { RoomMessageType } from '../types.ts';
 import type { RoomMessageHandler } from './context.ts';
 import { showRoomToast } from '../toast.ts';
-
-function isOlderPeer(aJoinedAt: number, aId: string, bJoinedAt: number, bId: string): boolean {
-  if (aJoinedAt !== bJoinedAt) return aJoinedAt < bJoinedAt;
-  return aId.localeCompare(bId) < 0;
-}
+import { isOlderPeer } from './helpers.ts';
 
 export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHandler>> = {
   ROOM_SYNC: (ctx, incoming) => {
@@ -22,14 +18,12 @@ export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHan
         const theirJoinedAt = Number.isFinite(incomingHost.joinedAt) ? incomingHost.joinedAt : timestamp;
 
         if (isOlderPeer(theirJoinedAt, incomingHost.id, myJoinedAt, ctx.peerId)) {
-          // Karşıdaki Host benden daha kıdemli -> kendimi öğrenciye düşür ve onun senkronizasyonunu kabul et
           ctx.demoteToStudent();
           for (const p of ctx.participants) {
             p.isHost = p.id === incomingHost.id;
           }
           delete ctx.studentStats[incomingHost.id];
         } else {
-          // Ben daha kıdemli Host'um -> karşı tarafı öğrenci olarak kaydet ve gerçek durumu yayınla
           const existing = ctx.participants.find((p) => p.id === senderId);
           if (existing) {
             existing.isHost = false;
@@ -68,9 +62,11 @@ export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHan
 
     if (msg.payload && Array.isArray(msg.payload.participants)) {
       const winnerHostId = incomingHost?.id;
+      const incomingIds = new Set<string>();
       for (const inc of msg.payload.participants) {
         if (!inc || typeof inc.id !== 'string') continue;
         const cleanId = inc.id.slice(0, 50);
+        incomingIds.add(cleanId);
         const existing = ctx.participants.find((p) => p.id === cleanId);
         const peerIsHost = winnerHostId ? cleanId === winnerHostId : !!inc.isHost;
         if (!existing) {
@@ -82,10 +78,17 @@ export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHan
             lastSeenAt: Number.isFinite(inc.lastSeenAt) ? inc.lastSeenAt : Date.now(),
           });
         } else {
+          existing.name = (inc.name || existing.name).slice(0, 60);
           existing.isHost = peerIsHost;
         }
         if (peerIsHost) {
           delete ctx.studentStats[cleanId];
+        }
+      }
+      for (let i = ctx.participants.length - 1; i >= 0; i--) {
+        const p = ctx.participants[i];
+        if (p.id !== ctx.peerId && !incomingIds.has(p.id)) {
+          ctx.participants.splice(i, 1);
         }
       }
     }
@@ -112,11 +115,15 @@ export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHan
             lastSeenAt: Number.isFinite(stats?.lastSeenAt) ? stats.lastSeenAt : Date.now(),
             isOnline: stats?.isOnline ?? true,
           };
-        } else if (id !== ctx.peerId) {
-          existing.correctCount = Math.max(existing.correctCount, incomingCorrect);
-          existing.incorrectCount = Math.max(existing.incorrectCount, incomingIncorrect);
+        } else {
+          existing.name = (stats?.name || existing.name).slice(0, 60);
           existing.exitCount = Math.max(existing.exitCount, incomingExits);
           existing.totalAwayMs = Math.max(existing.totalAwayMs, incomingAwayMs);
+          if (id !== ctx.peerId) {
+            existing.correctCount = Math.max(existing.correctCount, incomingCorrect);
+            existing.incorrectCount = Math.max(existing.incorrectCount, incomingIncorrect);
+            existing.isOnline = stats?.isOnline ?? existing.isOnline;
+          }
         }
       }
     }

@@ -643,7 +643,7 @@
     "id": 52150,
     "ders": "AYT TARİH-2",
     "soru_no": 33,
-    "soru": "",
+    "soru": "Tarihî kaynaklar, birinci ve ikinci el olarak ayrılmasının yanı sıra yazılı ve sözlü kaynaklar olarak da sınıflandırılmaktadır.\n\nBuna göre tarihî bir olayın aydınlatılmasında yararlanılan\n\nI. mitler,\n\nII. destanlar,\n\nIII. kil tabletler\n\ngibi ürünlerden hangileri sözlü kaynaklar arasında yer almaz?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -663,7 +663,7 @@
     "id": 52151,
     "ders": "AYT TARİH-2",
     "soru_no": 34,
-    "soru": "",
+    "soru": "Kadir, takvim yapraklarını incelerken 2025 yılında Ramazan ayının 1 Mart'ta başladığını görmüş ancak bir önceki yılda Ramazan'ın başlangıcının 11 Mart'a denk geldiğini hatırlamış ve bu farkın nedenini merak edip öğretmenine sormuştur.\n\nÖğretmenin hicri takvim hakkında verdiği\n\nI. bir yılın 354 gün 8 saat olması,\n\nII. bir yılda 12 ay bulunması,\n\nIII. başlangıç olarak 622 yılının kabul edilmesi\n\nbilgilerinden hangileri bu farkı açıklar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -683,7 +683,7 @@
     "id": 52152,
     "ders": "AYT TARİH-2",
     "soru_no": 35,
-    "soru": "",
+    "soru": "1968 yılında Firavun Tutankamon'un mumyasının röntgen filmi çekilmiş ve kafasına aldığı sert bir darbeyle öldüğü tezi öne sürülmüştür. 2005'te ise Tutankamon'un mumyası bilgisayarlı tomografi cihazıyla üç boyutlu olarak tekrar incelenmiştir. Bu inceleme sonunda firavunun daha önce iddia edildiği gibi darbeyle öldürülmediği, kırılan bacağının kangrene dönüşmesi sonucu öldüğü tespit edilmiştir.\n\nBuna göre tarih bilimiyle ilgili\n\nI. Teknolojik gelişmeler tarihî bilginin oluşturulmasında rol oynar.\n\nII. Tarihî bilgiler yeni yöntemler ve yorumlar ışığında değişebilir.\n\nIII. Tarihin yararlandığı bilimler, sosyal bilimler ile sınırlıdır.\n\nyargılarından hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -703,7 +703,7 @@
     "id": 52153,
     "ders": "AYT TARİH-2",
     "soru_no": 36,
-    "soru": "",
+    "soru": "• Konya'nın Çumra ilçesinin 10 km güneydoğusunda yer alır.\n\n• MÖ 7000'li yıllardan kalma bir yerleşim yeridir.\n\n• Neolitik Çağ'a ait buluntulara rastlanmıştır.\n\n• Penceresiz ve girişleri çatıdan olan kerpiç evler bulunmaktadır.\n\nTarih öncesi döneme ait bu yerleşim yeri, aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Alacahöyük",
       "B": "Göbeklitepe",
@@ -723,7 +723,7 @@
     "id": 52154,
     "ders": "AYT TARİH-2",
     "soru_no": 37,
-    "soru": "",
+    "soru": "Göçebe Türklerde bozkır hayatı içerisinde, taşınabilir mesken ihtiyacına cevap verdiği söylenebilecek unsur aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Kurgan",
       "B": "Tuğ",
@@ -732,7 +732,7 @@
       "E": "Ongun"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -743,7 +743,7 @@
     "id": 52155,
     "ders": "AYT TARİH-2",
     "soru_no": 38,
-    "soru": "",
+    "soru": "İslamiyet öncesi dönemde Orta Asya'da kurulan Türk devletleri hakkında bilgi almak isteyen bir araştırmacının, aşağıdakilerden hangisinin kaynaklarından faydalanması beklenir?",
     "secenekler": {
       "A": "Babil",
       "B": "Mısır",
@@ -752,7 +752,7 @@
       "E": "Hitit"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -763,7 +763,7 @@
     "id": 52156,
     "ders": "AYT TARİH-2",
     "soru_no": 39,
-    "soru": "",
+    "soru": "Kök Türk Devleti'nin yıkılmasının ardından Karadeniz'in kuzeyi ve Kafkaslar Bölgesi'nde kurulan ve yönetici zümresi Musevi olan Türk devleti, aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Avar",
       "B": "İkinci Kök Türk",
@@ -772,7 +772,7 @@
       "E": "Hazar"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -783,7 +783,7 @@
     "id": 52157,
     "ders": "AYT TARİH-2",
     "soru_no": 40,
-    "soru": "",
+    "soru": "Göktürklere karşı sık sık ayaklanan, Uygurlar Dönemi'nde uğradıkları baskılar üzerine batıya göç eden ve Karahanlı Devleti'nin kuruluşunda rol oynayan Türk topluluğu aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Avarlar",
       "B": "Kıpçaklar",
@@ -792,7 +792,7 @@
       "E": "Peçenekler"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -803,7 +803,7 @@
     "id": 52158,
     "ders": "AYT TARİH-2",
     "soru_no": 41,
-    "soru": "",
+    "soru": "Bögü Kağan'dan (759-779) sonra başa geçen Uygur kağanlarının çoğu, Göktürk hükümdarlarının unvanlarında yer alan \"Gök Tengride kut bulmuş\" ibaresi yerine, \"Ay Tengride kut bulmuş\" ibaresini kullanmışlardır.\n\nUygur kağanlarının unvanlarında \"Ay Tengride kut bulmuş\" ibaresinin kullanılmasının nedeni aşağıdaki inançlardan hangisiyle ilgilidir?",
     "secenekler": {
       "A": "Maniheizm",
       "B": "Şamanizm",
@@ -812,7 +812,7 @@
       "E": "Zerdüstlük"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -823,7 +823,7 @@
     "id": 52159,
     "ders": "AYT TARİH-2",
     "soru_no": 42,
-    "soru": "",
+    "soru": "Tarihçi Jordanes; \"Muncuk'un oğlu, bütün kahraman kavimlerin hâkimi, sen tek başına daha önce hiç kimsenin yapamadığı tarzda Hunların ve Cermenlerin ülkesinde hüküm sürdün. İmparatorluğu korku içinde bıraktın, onların şehirlerini zapt ettin. Onların hepsi senin kölen olmadan önce onların yalvarışlarına acıdın ve onlardan yıllık vergi aldın.\" demiştir.\n\nBu ifadelerde söz edilen hükümdar aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Attila",
       "B": "Mete",
@@ -832,7 +832,7 @@
       "E": "Bumin"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -843,7 +843,7 @@
     "id": 52160,
     "ders": "AYT TARİH-2",
     "soru_no": 43,
-    "soru": "",
+    "soru": "Orta Asya'da hakanın çadırında boy beyleri ve hakanın eşinin de bulunduğu bir mecliste, Gök Tengri'nin hakana siyasi ve iktisadi güç bağışladığı anlayışı dile getirilerek devlet ve toplum hayatıyla ilgili konular görüşülmüştür. Hakan, bir sonraki toplantının halkın da katılacağı ve yiyip içeceği bir şölen şeklinde yapılmasına karar vermiştir.\n\nBu parçada İslamiyet öncesi Türklerin devlet yönetimi ve toplumsal yaşayışıyla ilgili aşağıdaki kavramlardan hangisinin karşılığı yoktur?",
     "secenekler": {
       "A": "Kurgan",
       "B": "Kurultay",
@@ -863,7 +863,7 @@
     "id": 52161,
     "ders": "AYT TARİH-2",
     "soru_no": 44,
-    "soru": "",
+    "soru": "Emevilerle mücadele ederek onların Orta Asya'da hâkimiyet kurmasını engelleyen Türk topluluğu bulunmakla birlikte, Abbasiler Dönemi'nde Çinliler ile Araplar arasında yapılan Talas Savaşı'nda İslam ordusuna destek veren Türk topluluğu da vardır.\n\nBu parçada sözü edilen Türk toplulukları sırasıyla aşağıdakilerin hangisinde verilmiştir?",
     "secenekler": {
       "A": "Avarlar - Peçenekler",
       "B": "Türgişler - Karluklar",
@@ -883,7 +883,7 @@
     "id": 52162,
     "ders": "AYT TARİH-2",
     "soru_no": 45,
-    "soru": "",
+    "soru": "İlk Türk devletleriyle ilgili konu anlatan bir öğretmenin, öğrencilerine yönelttiği aşağıdaki sorulardan hangisinin cevabı \"Uygurlar\"dır?",
     "secenekler": {
       "A": "Tonyukuk'un vezirlik görevinde bulunduğu Türk devleti hangisidir?",
       "B": "İstanbul'u iki kez kuşatma altına alan Türk topluluğu hangisidir?",
@@ -903,7 +903,7 @@
     "id": 52163,
     "ders": "AYT TARİH-2",
     "soru_no": 46,
-    "soru": "",
+    "soru": "Türklerin İslamiyet'i Kabulü ve İlk Türk İslam Devletleri\n\nAşağıdakilerden hangisi, Büyük Selçuklu Devleti'nin hüküm sürdüğü yıllarda, ortaya çıkan kollarından biri değildir?",
     "secenekler": {
       "A": "Irak",
       "B": "Kirman",
@@ -923,7 +923,7 @@
     "id": 52164,
     "ders": "AYT TARİH-2",
     "soru_no": 47,
-    "soru": "",
+    "soru": "Karahanlılar düzenli bir posta teşkilatı kurmuş, kervansaraylar ve hastaneler inşa etmişlerdir. Bunların yanında Türk-İslam kültürüne ait yazılı eserler de ortaya koymuşlardır.\n\nBu bilgiye dayanarak Karahanlılar ile ilgili aşağıdakilerden hangisine ulaşılamaz?",
     "secenekler": {
       "A": "Ticareti geliştirmek istediklerine",
       "B": "Haberleşmeye önem verdiklerine",
@@ -943,7 +943,7 @@
     "id": 52165,
     "ders": "AYT TARİH-2",
     "soru_no": 48,
-    "soru": "",
+    "soru": "Âşıkpaşazâde Tarihi'nde Germiyan'dan gelip pazar bacını toplama hakkını almak isteyen biri ile Osman Gazi arasında şu konuşmalar geçmektedir:\n\nOsman Gazi: Bac nedir?\n\nGermiyanlı: Pazara getirilen her bir şeyden aldığım akçedir.\n\nOsman Gazi: Hey adam! Senin bu pazara gelenden alacağın mı var da bunlardan akçe istersin?\n\nOsman Gazi'nin bu tepkisi üzerine etrafındakiler ona \"Bu töredir ve gelenektir bütün memleketlerde bunun padişahların adına alınması âdettir.\" dediler. Bunun üzerine Osman Gazi de kabul etti.\n\nÂşıkpaşazâde Tarihi'nde geçen bu ifadeler Osmanlı Devleti'nde görülen aşağıdaki iktisadi-mali uygulamaların hangisinin kapsamındadır?",
     "secenekler": {
       "A": "Örfi vergi",
       "B": "Müsadere",
@@ -963,7 +963,7 @@
     "id": 52166,
     "ders": "AYT TARİH-2",
     "soru_no": 49,
-    "soru": "",
+    "soru": "Timar sisteminin;\n\nI. tarım üretiminde istikrarın gözetilmesi,\n\nII. dirlik alanlarında güvenliğin sağlanması,\n\nIII. taşrada nüfuzlu ailelerin desteklenmesi\n\nhedeflerinden hangilerine yönelik olduğu savunulabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -983,7 +983,7 @@
     "id": 52167,
     "ders": "AYT TARİH-2",
     "soru_no": 50,
-    "soru": "",
+    "soru": "Osmanlı Devleti'nde Klasik Dönem'in sonunda aşağıdakilerden hangisinin, merkezî hazinenin masraflarını artırdığı söylenebilir?",
     "secenekler": {
       "A": "Konargöçerlerin yerleşik hayata geçirilmesinin",
       "B": "Taşrada dirliklerin sayısının artırılmasının",
@@ -1003,7 +1003,7 @@
     "id": 52168,
     "ders": "AYT TARİH-2",
     "soru_no": 51,
-    "soru": "",
+    "soru": "Kadir, takvim yapraklarını incelerken 2025 yılında Ramazan ayının 1 Mart'ta başladığını görmüş ancak bir önceki yılda Ramazan'ın başlangıcının 11 Mart'a denk geldiğini hatırlamış ve bu farkın nedenini merak edip öğretmenine sormuştur.\n\nÖğretmenin hicri takvim hakkında verdiği\n\nI. bir yılın 354 gün 8 saat olması,\n\nII. bir yılda 12 ay bulunması,\n\nIII. başlangıç olarak 622 yılının kabul edilmesi\n\nbilgilerinden hangileri bu farkı açıklar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1023,7 +1023,7 @@
     "id": 52169,
     "ders": "AYT TARİH-2",
     "soru_no": 52,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi Kanuni Sultan Süleyman Dönemi'nde Osmanlı Devleti'nin, Avrupalılar karşısında üstünlük sağlamasında etkili olan gelişmelerden biri değildir?",
     "secenekler": {
       "A": "Osmanlıların Akdeniz'de deneyimli korsanlarla iş birliği yapması",
       "B": "Osmanlı Devleti'nin Fransa'ya kapitülasyonlar vermesi",
@@ -1043,7 +1043,7 @@
     "id": 52170,
     "ders": "AYT TARİH-2",
     "soru_no": 53,
-    "soru": "",
+    "soru": "\"Bundan sonra Avrupa, kendi yasalarına göre hareket eden, kendi siyasal ve ekonomik çıkarlarını izleyen, serbestlik içinde ittifaklar kuran ve bozan, savaş ile barış arasında, güç dengesi kurallarına göre durum değiştiren, elçi gönderip kabul eden bağımsız ve özgür devletlerden oluşacaktır. Devletlerin üzerinde, onların ilişkilerini düzenleyen herhangi bir üstün otorite yoktur.\"\n\nVestfalya Antlaşması'ndan alıntılanan bu ifadeler dikkate alındığında aşağıdakilerden hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Katolik kilisesinin gücünü giderek artırdığına",
       "B": "Devletler arası ilişkilerde yeni bir dönem başladığına",
@@ -1063,7 +1063,7 @@
     "id": 52171,
     "ders": "AYT TARİH-2",
     "soru_no": 54,
-    "soru": "",
+    "soru": "Osmanlı Devleti'nde IV. Murat döneminde yaşamış olan; siyasi, sosyal ve ekonomik sorunlarla ilgili yazdığı eserinde devlet kurumlarında bozulmaların bulunduğunu ve timar sistemine geçmişteki karakterinin kazandırılması gerektiğini ileri süren devlet adamı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Köprülü Fazıl Ahmet Paşa",
       "B": "Kâtip Çelebi",
@@ -1083,7 +1083,7 @@
     "id": 52172,
     "ders": "AYT TARİH-2",
     "soru_no": 55,
-    "soru": "",
+    "soru": "Kadir, takvim yapraklarını incelerken 2025 yılında Ramazan ayının 1 Mart'ta başladığını görmüş ancak bir önceki yılda Ramazan'ın başlangıcının 11 Mart'a denk geldiğini hatırlamış ve bu farkın nedenini merak edip öğretmenine sormuştur.\n\nÖğretmenin hicri takvim hakkında verdiği\n\nI. bir yılın 354 gün 8 saat olması,\n\nII. bir yılda 12 ay bulunması,\n\nIII. başlangıç olarak 622 yılının kabul edilmesi\n\nbilgilerinden hangileri bu farkı açıklar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1103,7 +1103,7 @@
     "id": 52173,
     "ders": "AYT TARİH-2",
     "soru_no": 56,
-    "soru": "",
+    "soru": "XVIII. yüzyılda İngiltere'de başlayan ve daha sonra diğer Avrupa ülkelerine yayılan Sanayi Devrimi'nin sonuçları arasında aşağıdakilerden hangisi gösterilemez?",
     "secenekler": {
       "A": "Pazar rekabetinin artması",
       "B": "Seri üretime geçilmesi",
@@ -1123,7 +1123,7 @@
     "id": 52174,
     "ders": "AYT TARİH-2",
     "soru_no": 57,
-    "soru": "",
+    "soru": "Filistin'i işgal eden Napolyon'u Akkâ'da mağlup ederek önemli bir başarı elde eden Nizam-ı Cedit ordusu aşağıdaki Osmanlı padişahlarından hangisi tarafından kurulmuştur?",
     "secenekler": {
       "A": "II. Abdülhamit",
       "B": "III. Selim",
@@ -1143,7 +1143,7 @@
     "id": 52175,
     "ders": "AYT TARİH-2",
     "soru_no": 58,
-    "soru": "",
+    "soru": "Avrupa'da 1848 İhtilalleri sonrasında Avusturya ve Rusya'ya karşı ayaklanan Macarlar ve Lehler Osmanlı Devleti tarafından korunmuş ve bu koruma politikası uluslararası bir soruna yol açmıştır.\n\nSözü edilen uluslararası sorun aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Boğazlar Sorunu",
       "B": "Mülteciler Sorunu",
@@ -1152,7 +1152,7 @@
       "E": "Doğu Sorunu"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Uluslararası İlişkilerde Denge Stratejisi (1774-1914)",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1163,7 +1163,7 @@
     "id": 52176,
     "ders": "AYT TARİH-2",
     "soru_no": 59,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi Avrupalı devletlerin isteğiyle 1841 yılında, Londra Boğazlar Antlaşması'nın imzalanma nedenlerinden biri olarak gösterilemez?",
     "secenekler": {
       "A": "Avusturya'nın, Rusya ile Balkanlarda nüfuz mücadelesine girmesi",
       "B": "Rusya'nın Akdeniz'de güç kazanmasının, İngiltere ve Fransa'nın ekonomik ve siyasi çıkarlarına ters düşmesi",
@@ -1172,7 +1172,7 @@
       "E": "Mehmet Ali Paşa İsyanı'nın da etkisiyle Osmanlı Devleti'nin Avrupalı devletlerin desteğini araması"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Uluslararası İlişkilerde Denge Stratejisi (1774-1914)",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1183,7 +1183,7 @@
     "id": 52177,
     "ders": "AYT TARİH-2",
     "soru_no": 60,
-    "soru": "",
+    "soru": "Osmanlı Devleti'nde, II. Meşrutiyet'in ilanından saltanatın kaldırılmasına kadar (1908-1922) geçen on dört yıl içinde İstanbul'da yirmi dört hükümet kurulmuştur.\n\nBu bilgiden hareketle, Osmanlı Devleti'nin sözü edilen dönemiyle ilgili olarak aşağıdakilerden hangisi söylenebilir?",
     "secenekler": {
       "A": "Kanunuesasi'nin yürürlükten kaldırıldığı",
       "B": "Padişahların sıklıkla değiştiği",
@@ -1192,7 +1192,7 @@
       "E": "Ülke yönetiminde istikrarsızlığın yaşandığı"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "II. Meşrutiyet Dönemi",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1203,7 +1203,7 @@
     "id": 52178,
     "ders": "AYT TARİH-2",
     "soru_no": 61,
-    "soru": "",
+    "soru": "Osmanlı Devleti'nin Tanzimat Fermanı'nı ilan ederek aşağıdakilerden hangisini amaçladığı söylenemez?",
     "secenekler": {
       "A": "Anayasayı ilan ederek parlamenter bir sisteme geçmeyi",
       "B": "Farklı dinlere mensup Osmanlı tebaası arasında birlik sağlamayı",
@@ -1212,7 +1212,7 @@
       "E": "Avrupalı devletlerin, ülkenin iç işlerine karışmasını engellemeyi"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Tanzimat Fermanı",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1223,7 +1223,7 @@
     "id": 52179,
     "ders": "AYT TARİH-2",
     "soru_no": 62,
-    "soru": "",
+    "soru": "I. Ben size taarruz emretmiyorum, ölmeyi emrediyorum.\n\nII. Hattı müdafaa yoktur, sathı müdafaa vardır. O satıh bütün vatandır.\n\nIII. Ordular ilk hedefiniz Akdeniz'dir. İleri!\n\nIV. Geldikleri gibi giderler.\n\nMustafa Kemal Atatürk'ün birtakım olaylar ve gelişmeler karşısında söylemiş olduğu bu sözlerin kronolojik sıralaması aşağıdakilerin hangisinde doğru olarak verilmiştir?",
     "secenekler": {
       "A": "I - IV - II - III",
       "B": "I - IV - III - II",
@@ -1243,7 +1243,7 @@
     "id": 52180,
     "ders": "AYT TARİH-2",
     "soru_no": 63,
-    "soru": "",
+    "soru": "Mustafa Kemal'in \"Minnet borcum var, bana yeni bir ufuk açtı.\" diyerek tarih öğretmeni Kolağası Mehmet Tevfik Efendi'nin etkisinden söz ettiği ve Namık Kemal ile Tevfik Fikret'in eserlerini okuyarak vatan ve hürriyet fikirlerini geliştirdiği okul aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Harbiye",
       "B": "Manastır Askerî İdadisi",
@@ -1263,7 +1263,7 @@
     "id": 52181,
     "ders": "AYT TARİH-2",
     "soru_no": 64,
-    "soru": "",
+    "soru": "Bulgaristan'ın Birinci Dünya Savaşı'ndan çekilmesi üzerine \"Tamamen yok olmaktansa İstanbul ve Anadolu'da küçük fakat yine de bir devlet olarak kalmak daha iyidir.\" düşüncesiyle hareket eden Osmanlı Hükûmeti, elinde kalan toprakları korumak amacıyla aşağıdakilerden hangisini gerçekleştirmiştir?",
     "secenekler": {
       "A": "Reval Görüşmelerine katılmıştır.",
       "B": "İttihat ve Terakki Cemiyetini kurmuştur.",
@@ -1283,7 +1283,7 @@
     "id": 52182,
     "ders": "AYT TARİH-2",
     "soru_no": 65,
-    "soru": "",
+    "soru": "Aşağıda Osmanlı Devleti'nin Trakya sınırına ait bir harita verilmiştir. Haritada Osmanlı Devleti'nin Trakya'daki sınırı kırmızı renkle gösterilmiştir. Osmanlı Devleti'nin kırmızı renkle gösterilen sınırı, aşağıdakilerden hangisinin bir sonucu olarak belirlenmiştir?",
     "secenekler": {
       "A": "Brest-Litovsk Antlaşması'nın imzalanmasının",
       "B": "Birinci Balkan Savaşı'nın kaybedilmesinin",
@@ -1303,7 +1303,7 @@
     "id": 52183,
     "ders": "AYT TARİH-2",
     "soru_no": 66,
-    "soru": "",
+    "soru": "Birinci Dünya Savaşı sırasında İngiltere tarafından desteklenen Şerif Hüseyin'in isyanı üzerine Medine'ye gönderilen Fahreddin Paşa, kısıtlı imkânlara rağmen şehri müdafaa etmiş, Mondros Ateşkes Antlaşması'nın imzalanmasından sonra mütareke hükümlerine uymayarak şehri savunmaya devam etmiştir.\n\nHakkında bilgiler verilen bu cephe aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Kanal Cephesi",
       "B": "Hicaz Cephesi",
@@ -1323,7 +1323,7 @@
     "id": 52184,
     "ders": "AYT TARİH-2",
     "soru_no": 67,
-    "soru": "",
+    "soru": "Sivas Kongresi'ne katılan delegelerin İttihat ve Terakki Fırkasının yeniden canlandırılmasına çalışılmayacağı ve var olan siyasi partilerden hiçbirinin siyasi emellerine hizmet edilmeyeceği konusunda yemin etmelerinin amacı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Mustafa Kemal Paşa'nın başkanlığı konusundaki tartışmaları önlemek",
       "B": "Yeni partilerin kurulması için uygun zemin oluşturmak",
@@ -1343,7 +1343,7 @@
     "id": 52185,
     "ders": "AYT TARİH-2",
     "soru_no": 68,
-    "soru": "",
+    "soru": "Millî Mücadele Dönemi'nde, Bizans İmparatorluğu'nu yeniden kurmak amacıyla faaliyet gösteren cemiyet aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Makabi",
       "B": "Mavri Mira",
@@ -1363,7 +1363,7 @@
     "id": 52186,
     "ders": "AYT TARİH-2",
     "soru_no": 69,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi, İngiltere'nin Doğu Akdeniz politikasının Fransa tarafından eskisi kadar desteklenmediğini gösteren bir gelişmedir?",
     "secenekler": {
       "A": "Amiral Bristol Raporu'nun hazırlanması",
       "B": "Ankara İtilafnamesi'nin imzalanması",
@@ -1383,7 +1383,7 @@
     "id": 52187,
     "ders": "AYT TARİH-2",
     "soru_no": 70,
-    "soru": "",
+    "soru": "Mustafa Kemal Paşa, 19 Kasım 1918 tarihinde Vakit gazetesine verdiği demeçte; \"Millet ve memleketimizin pek muhtaç olduğu sulhü kararlaştıracak hükümetin, Meclisi Mebusanımıza dayanması kati bir zorunluluktur.\" demiştir.\n\nMustafa Kemal Paşa'nın bu demeciyle aşağıdakilerden hangisini amaçladığı söylenebilir?",
     "secenekler": {
       "A": "Saltanat Şûrası'nın toplanmasını",
       "B": "Hükûmetin imzalayacağı antlaşmanın her durumda desteklenmesini",
@@ -1403,7 +1403,7 @@
     "id": 52188,
     "ders": "AYT TARİH-2",
     "soru_no": 71,
-    "soru": "",
+    "soru": "Aşağıdaki haberlerden hangisinin, Hâkimiyet-i Millîye gazetesinde yer alması beklenemez?",
     "secenekler": {
       "A": "Bugün kutlu bir gün, Büyük Millet Meclisi açıldı!",
       "B": "Rauf Bey dün Mondros Mütarekesi'ni imzaladı.",
@@ -1423,7 +1423,7 @@
     "id": 52189,
     "ders": "AYT TARİH-2",
     "soru_no": 72,
-    "soru": "",
+    "soru": "Bir tarih öğretmeni, Batı Cephesi'ndeki savaşları anlatırken şu bilgiyi vermiştir: \"Yunanların harekete geçtiği sırada TBMM Hükûmeti bir yandan Pontus çetelerinin saldırıları diğer yandan Koçgiri Aşireti'nin isyanı ile uğraşmak zorundaydı.\" Öğretmenin, hakkında bilgi verdiği savaş aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Birinci İnönü",
       "B": "İkinci İnönü",
@@ -1443,7 +1443,7 @@
     "id": 52190,
     "ders": "AYT TARİH-2",
     "soru_no": 73,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi Millî Mücadele Dönemi'nde faaliyet gösteren Temsil Heyeti'nin özelliklerinden biridir?",
     "secenekler": {
       "A": "İstanbul Hükûmeti'nin isteğiyle kurulmuştur.",
       "B": "TBMM ile uyum içerisinde çalışmıştır.",
@@ -1463,7 +1463,7 @@
     "id": 52191,
     "ders": "AYT TARİH-2",
     "soru_no": 74,
-    "soru": "",
+    "soru": "16 Mart 1921 tarihinde TBMM Hükûmeti ile Sovyet Rusya arasında imzalanan Moskova Antlaşması'yla ilgili aşağıdakilerden hangisi söylenebilir?",
     "secenekler": {
       "A": "Sovyet Rusya'nın Anadolu'ya asker göndermesi kabul edilmiştir.",
       "B": "Sovyet Rusya'nın Misakımillî'yi tanıması gerçekleşmiştir.",
@@ -1483,7 +1483,7 @@
     "id": 52192,
     "ders": "AYT TARİH-2",
     "soru_no": 75,
-    "soru": "",
+    "soru": "Mustafa Kemal Paşa Başkomutan sıfatıyla \"Hattı müdafaa yoktur, satı müdafaa vardır. O satıh bütün vatandır. Vatanın her karış toprağı vatandaşın kanıyla sulanmadıkça terk olunamaz.\" şeklindeki ifadeyi aşağıdaki savaşlardan hangisinde kullanmıştır?",
     "secenekler": {
       "A": "Büyük Taarruz",
       "B": "Sakarya",
@@ -1503,7 +1503,7 @@
     "id": 52193,
     "ders": "AYT TARİH-2",
     "soru_no": 76,
-    "soru": "",
+    "soru": "Amasya Genelgesi'nde yer alan \"Bütün illerin her sancağından, halkın güvenini kazanmış üç temsilcinin hemen yola çıkarılması gerekmektedir. Her olasılığa karşı bu durum millî bir sır gibi tutulmalı ve temsilciler gerekli görülen yerlerde kimliklerini gizleyerek gelmelidir.\" ifadeleri aşağıdakilerden hangisi için kullanılmıştır?",
     "secenekler": {
       "A": "Osmanlı Mebusan Meclisinde yer alacak mebuslar",
       "B": "Sultanahmet mitingine katılacak sivil ve askerî görevliler",
@@ -1523,7 +1523,7 @@
     "id": 52194,
     "ders": "AYT TARİH-2",
     "soru_no": 77,
-    "soru": "",
+    "soru": "Millî Mücadele yıllarında Birinci ve İkinci İnönü Muharebelerinde kazanılan zaferlerle ortaya çıkan iyimser hava, Kütahya-Eskişehir Muharebesi sonucu yerini kısmî bir karamsarlığa bırakmıştır. Türk ordusunun Sakarya Nehri'nin doğusuna çekildiği bu dönemde Yunan ordusu yeni bir saldırı hazırlığına girişmiştir.\n\nYunan saldırısına karşı Türk tarafının hazırlıklar yaptığı bu sırada, aşağıdakilerden hangisi gündeme gelmiştir?",
     "secenekler": {
       "A": "Ali Fuat Paşa'nın Moskova'ya elçi olarak atanması",
       "B": "Ankara Müftüsü Rıfat (Börekçi) Efendi'den mücadele için fetva alınması",
@@ -1543,7 +1543,7 @@
     "id": 52195,
     "ders": "AYT TARİH-2",
     "soru_no": 78,
-    "soru": "",
+    "soru": "18 Eylül 1922'de Anadolu'nun düşman işgalinden tümüyle temizlenmesi sonrasında Mustafa Kemal Paşa'nın teklifiyle Fevzi (Çakmak) Paşa'ya üstün hizmetlerinden dolayı \"mareşallik\" rütbesi verilmiştir.\n\nFevzi (Çakmak) Paşa'ya bu rütbe aşağıdaki hizmetlerinin hangisi üzerine verilmiştir?",
     "secenekler": {
       "A": "İstanbul'un işgal edilmesi üzerine TBMM'ye katılması",
       "B": "Birinci Dünya Savaşı sırasında önemli görevler üstlenmesi",
@@ -1563,7 +1563,7 @@
     "id": 52196,
     "ders": "AYT TARİH-2",
     "soru_no": 79,
-    "soru": "",
+    "soru": "Osmanlı Hükûmeti'nin Millî Mücadele aleyhindeki faaliyetlerini önlemek isteyen Heyet-i Temsiliye, Sivas Kongresi sonrasında aşağıdakilerden hangisinin gerçekleşmesi için çaba sarf etmiştir?",
     "secenekler": {
       "A": "Kâzım Karabekir Paşa'nın XV. Kolordunun Komutanı olması",
       "B": "Mustafa Kemal Paşa'nın resmî görevinden ve askerlikten istifa ederek sine-i millete dönmesi",
@@ -1583,7 +1583,7 @@
     "id": 52197,
     "ders": "AYT TARİH-2",
     "soru_no": 80,
-    "soru": "",
+    "soru": "Mustafa Kemal Paşa \"İtiraf etmek lazımdır ki bu yetki büyük bir yetkidir. Meclisin yetkisidir ki bana veriyor. Böyle olmakla beraber, üç ay sonra elbette ya yenilersiniz veya yürürlükten kaldırırsınız.\" sözleriyle ifade ettiği yetkiyi, aşağıdaki görevlerden hangisine getirilmesiyle almıştır?",
     "secenekler": {
       "A": "Ataşemiliterliğe",
       "B": "Başkomutanlığa",
@@ -1603,7 +1603,7 @@
     "id": 52198,
     "ders": "AYT TARİH-2",
     "soru_no": 81,
-    "soru": "",
+    "soru": "Millî Mücadele yıllarında Osmanlı Hükûmetinin, Heyet-i Temsiliyeye karşı politikasını değiştirmesi ve Amasya Görüşmesi'ne temsilci göndermesi aşağıdaki gelişmelerden hangisinin bir sonucu olarak gerçekleşmiştir?",
     "secenekler": {
       "A": "Heyet-i Temsiliyenin Ankara'ya gelmesinin",
       "B": "İstanbul'un resmen işgal edilmesinin",
@@ -1612,7 +1612,7 @@
       "E": "Osmanlı Mebusan Meclisinin toplanmasının"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Millî Mücadele",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1623,7 +1623,7 @@
     "id": 52199,
     "ders": "AYT TARİH-2",
     "soru_no": 82,
-    "soru": "",
+    "soru": "Kadir, takvim yapraklarını incelerken 2025 yılında Ramazan ayının 1 Mart'ta başladığını görmüş ancak bir önceki yılda Ramazan'ın başlangıcının 11 Mart'a denk geldiğini hatırlamış ve bu farkın nedenini merak edip öğretmenine sormuştur.\n\nÖğretmenin hicri takvim hakkında verdiği\n\nI. bir yılın 354 gün 8 saat olması,\n\nII. bir yılda 12 ay bulunması,\n\nIII. başlangıç olarak 622 yılının kabul edilmesi\n\nbilgilerinden hangileri bu farkı açıklar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1643,7 +1643,7 @@
     "id": 52200,
     "ders": "AYT TARİH-2",
     "soru_no": 83,
-    "soru": "",
+    "soru": "Sivas Kongresi'nden sonra Temsil Heyeti, öncelikli olarak Damat Ferit Paşa'nın istifasının sağlanması, İstanbul Hükûmeti'ne kongre kararlarının kabul ettirilmesi ve Mebusan Meclisinin bir an evvel toplanması için çalışmalara başlamıştır. Bu amaçla Damat Ferit Paşa'nın istifası için İstanbul üzerinde baskı kurulmuş hatta meşru bir hükümet iş başına gelinceye kadar İstanbul ile Anadolu arasında her türlü haberleşmenin kesilmesine karar verilmiştir. Baskılara dayanamayan Damat Ferit Paşa görevinden istifa etmek zorunda kalmıştır.\n\nTemsil Heyeti'nin bu çabalarıyla ilgili olarak aşağıdakilerden hangisi söylenebilir?",
     "secenekler": {
       "A": "İstanbul'da Anadolu Hareketi'ne ılımlı yaklaşan bir hükümetin istendiği",
       "B": "Halifelik makamının kaldırılması için siyasi hazırlıkların yapıldığı",
@@ -1652,7 +1652,7 @@
       "E": "Ankara'da millî iradeye dayanan yeni bir meclisin toplanmasının savunulduğu"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Millî Mücadele",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1663,7 +1663,7 @@
     "id": 52201,
     "ders": "AYT TARİH-2",
     "soru_no": 84,
-    "soru": "",
+    "soru": "Mustafa Kemal Paşa, Haziran 1921'de Fransız devlet adamı Franklin Bouillon ile yaptığı görüşmede \"Bu antlaşma Türk milleti için öyle bir idam kararnamesidir ki onun bir dost ağzından çıkmamasını isteriz. Görüşmemiz sırasında dahi bu antlaşmayı ağzıma almak istemem. Bu antlaşmayı kafalarından çıkarmayan milletlerle itimat esasına dayanan muamelelere girişemeyiz. Bizim için böyle bir antlaşma yoktur.\" ifadelerini kullanmıştır.\n\nBuna göre Mustafa Kemal Paşa'nın bahsettiği antlaşma aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Ankara Antlaşması",
       "B": "Sevr Antlaşması",
@@ -1672,7 +1672,7 @@
       "E": "Moskova Antlaşması"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Millî Mücadele",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1683,7 +1683,7 @@
     "id": 52202,
     "ders": "AYT TARİH-2",
     "soru_no": 85,
-    "soru": "",
+    "soru": "Cumhuriyet'in ilanından sonra Mustafa Kemal Atatürk'ün cumhurbaşkanı seçilmesiyle başlayan yeni dönemde Türkiye Cumhuriyeti'nin ilk Başbakanı ve ilk Meclis Başkanı aşağıdakilerin hangisinde verilmiştir?",
     "secenekler": {
       "A": "İsmet İnönü - Ali Fethi Okyar",
       "B": "Ali Fethi Okyar - Rauf Orbay",
@@ -1692,7 +1692,7 @@
       "E": "Rauf Orbay - İsmet İnönü"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Atatürkçülük ve Türk İnkılabı",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1703,7 +1703,7 @@
     "id": 52203,
     "ders": "AYT TARİH-2",
     "soru_no": 86,
-    "soru": "",
+    "soru": "1930 yılında çıkarılan Umumi Hıfzıssıhha Kanunu'yla vatandaşlara; kolera, veba, çiçek, kızamık, kuduz, sıtma gibi hastalıkları yerel yönetimlere bildirme mecburiyeti getirilmiş ve devlet tarafından karşılanmak suretiyle bu gibi hastalıkların tedavisinin parasız yapılması için kararlar alınmıştır. Bu bilgiden hareketle aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Koruyucu sağlık hizmetleri konusuna önem verildiği",
       "B": "Salgın hastalıklarla mücadelede halktan katkı beklendiği",
@@ -1712,7 +1712,7 @@
       "E": "Sosyal devlet anlayışına uygun hareket edildiği"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Atatürkçülük ve Türk İnkılabı",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1723,7 +1723,7 @@
     "id": 52204,
     "ders": "AYT TARİH-2",
     "soru_no": 87,
-    "soru": "",
+    "soru": "Atatürk İlkeleri, Atatürkçü düşünce sisteminin esaslarını belirlemek ve hayata geçirmek için oluşturulmuştur. Türk inkılabı ise Atatürk İlkeleri'nin uygulamaya dönüşmüş şeklidir. Buna göre, aşağıdaki ilke ve inkılap eşleştirmelerinden hangisi yanlıştır?",
     "secenekler": {
       "A": "Cumhuriyetçilik - Saltanatın kaldırılması",
       "B": "Halkçılık - Soyadı Kanunu'nun kabul edilmesi",
@@ -1732,7 +1732,7 @@
       "E": "Devletçilik - Birinci Beş Yıllık Sanayi Planı'nın uygulanması"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Atatürkçülük ve Türk İnkılabı",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1743,7 +1743,7 @@
     "id": 52205,
     "ders": "AYT TARİH-2",
     "soru_no": 88,
-    "soru": "",
+    "soru": "Türk kadınının 1930'da belediye, 1933'te muhtarlık ve 1934'te milletvekili seçimlerine katılma hakkı kazanması; I. Cumhuriyetçilik, II. Devletçilik, III. İnkılapçılık ilkelerinden hangileriyle ilişkilidir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "I ve II",
@@ -1752,7 +1752,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Atatürkçülük ve Türk İnkılabı",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1763,7 +1763,7 @@
     "id": 52206,
     "ders": "AYT TARİH-2",
     "soru_no": 89,
-    "soru": "",
+    "soru": "Türkiye'de ekonomiyle ilgili yapılan aşağıdaki yasal düzenlemelerden hangisi, Atatürk Dönemi'nde gerçekleştirilmemiştir?",
     "secenekler": {
       "A": "Yol Mükellefiyeti Kanunu",
       "B": "Teşvik-i Sanayi Kanunu",
@@ -1772,7 +1772,7 @@
       "E": "Türk Ticaret Kanunu"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Atatürkçülük ve Türk İnkılabı",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1783,7 +1783,7 @@
     "id": 52207,
     "ders": "AYT TARİH-2",
     "soru_no": 90,
-    "soru": "",
+    "soru": "1921 Anayasası'nın bazı maddeleri aşağıda verilmiştir:\n\n• Hâkimiyet kayıtsız şartsız milletindir. Yönetim şekli, halkın mukadderatını bizzat ve fiilî olarak yönetmesi ilkesine dayanır.\n\n• Yürütme kudreti ve yasama yetkisi, milletin tek ve gerçek temsilcisi olan Büyük Millet Meclisinde belirir ve toplanır.\n\n• Türkiye Devleti, Büyük Millet Meclisi tarafından idare olunur ve hükümeti \"Türkiye Büyük Millet Meclisi Hükûmeti\" adını taşır.\n\nBu maddelere göre 1921 Anayasası ile ilgili aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Cumhuriyet rejimine geçişte önemli bir aşamadır.",
       "B": "Güçler ayrılığını esas almaktadır.",
@@ -1803,7 +1803,7 @@
     "id": 52208,
     "ders": "AYT TARİH-2",
     "soru_no": 91,
-    "soru": "",
+    "soru": "17 Şubat-4 Mart 1923 tarihleri arasında İzmir'de düzenlenen Türkiye İktisat Kongresi'nde yapılan bazı öneriler ve alınan kararlar aşağıda verilmiştir:\n\n• Demir yolları inşasının hükümetçe bir programa bağlanması\n\n• Koruyucu gümrük tarifelerinin kabulü ve bu konudaki dış müdahalelerin reddedilmesi\n\n• Günlük çalışma süresinin azami sekiz saatle sınırlandırılması\n\n• Ham maddesi yurt içinden temin edilebilen sanayi tesislerinin kurulmasına ağırlık verilmesi\n\n• Türk limanlarına kabotaj hakkının tanınması\n\nBu öneriler ve kararlar göz önünde bulundurulduğunda aşağıdakilerden hangisinin amaçlandığı söylenemez?",
     "secenekler": {
       "A": "Tarımsal ürünlerin ithalatının özendirilmesi",
       "B": "Millî ve yerli bir deniz ticareti ağının kurulması",
@@ -1823,7 +1823,7 @@
     "id": 52209,
     "ders": "AYT TARİH-2",
     "soru_no": 92,
-    "soru": "",
+    "soru": "Aşağıdaki gelişmelerden hangisi Mustafa Kemal Paşa'nın, 10. Yıl Nutku'nda \"Az zamanda çok ve büyük işler yaptık.\" ifadesini kullandığı dönemde henüz gerçekleşmemiştir?",
     "secenekler": {
       "A": "Kadınlara milletvekili seçme ve seçilme hakkının tanınması",
       "B": "Türk Medeni Kanunu'nun yürürlüğe girmesi",
@@ -1843,7 +1843,7 @@
     "id": 52210,
     "ders": "AYT TARİH-2",
     "soru_no": 93,
-    "soru": "",
+    "soru": "Kadir, takvim yapraklarını incelerken 2025 yılında Ramazan ayının 1 Mart'ta başladığını görmüş ancak bir önceki yılda Ramazan'ın başlangıcının 11 Mart'a denk geldiğini hatırlamış ve bu farkın nedenini merak edip öğretmenine sormuştur.\n\nÖğretmenin hicri takvim hakkında verdiği\n\nI. bir yılın 354 gün 8 saat olması,\n\nII. bir yılda 12 ay bulunması,\n\nIII. başlangıç olarak 622 yılının kabul edilmesi\n\nbilgilerinden hangileri bu farkı açıklar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1863,7 +1863,7 @@
     "id": 52211,
     "ders": "AYT TARİH-2",
     "soru_no": 94,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi savaşa fiilen girilmemesine rağmen İkinci Dünya Savaşı'nın Türk ekonomisini olumsuz etkilemesinin nedenlerinden biri değildir?",
     "secenekler": {
       "A": "Yaklaşık bir milyon kişinin silahaltına alınması",
       "B": "Yeni sanayi işletmelerinin açılmasının ertelenmesi",
@@ -1872,7 +1872,7 @@
       "E": "Yabancı devletlerin ambargo uygulaması"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "II. Dünya Savaşı Sürecinde Türkiye ve Dünya",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1883,7 +1883,7 @@
     "id": 52212,
     "ders": "AYT TARİH-2",
     "soru_no": 95,
-    "soru": "",
+    "soru": "İkinci Dünya Savaşı sırasında ABD ve İngiltere tarafından 6 Haziran 1944'te başlatılan ve Alman ordusuna büyük bir darbe vurularak başta Fransa olmak üzere bütün Avrupa'nın kısa sürede işgalden kurtarılmasında etkili olan saldırı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Küba Krizi",
       "B": "Pearl Harbor Baskını",
@@ -1892,7 +1892,7 @@
       "E": "Normandiya Çıkarması"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "II. Dünya Savaşı Sürecinde Türkiye ve Dünya",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1903,7 +1903,7 @@
     "id": 52213,
     "ders": "AYT TARİH-2",
     "soru_no": 96,
-    "soru": "",
+    "soru": "1968 yılında Firavun Tutankamon'un mumyasının röntgen filmi çekilmiş ve kafasına aldığı sert bir darbeyle öldüğü tezi öne sürülmüştür. 2005'te ise Tutankamon'un mumyası bilgisayarlı tomografi cihazıyla üç boyutlu olarak tekrar incelenmiştir. Bu inceleme sonunda firavunun daha önce iddia edildiği gibi darbeyle öldürülmediği, kırılan bacağının kangrene dönüşmesi sonucu öldüğü tespit edilmiştir.\n\nBuna göre tarih bilimiyle ilgili\n\nI. Teknolojik gelişmeler tarihî bilginin oluşturulmasında rol oynar.\n\nII. Tarihî bilgiler yeni yöntemler ve yorumlar ışığında değişebilir.\n\nIII. Tarihin yararlandığı bilimler, sosyal bilimler ile sınırlıdır.\n\nyargılarından hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1923,7 +1923,7 @@
     "id": 52214,
     "ders": "AYT TARİH-2",
     "soru_no": 97,
-    "soru": "",
+    "soru": "ABD; Orta Doğu'nun SSCB'nin kontrolüne girmesini engellemek ve bölge halkını kendi yanına çekmek için Orta Doğu ülkelerine ekonomik ve askerî yardım yapmak, bu ülkelere komünist bloktan bir saldırı gelmesi hâlinde silahlı kuvvetleriyle onları savunmak amacıyla çalışmalar yapmış, böylece Orta Doğu ile ilişkilerini geliştirmiştir.\n\nBu politikaların dayanağı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Balfour Deklarasyonu",
       "B": "Eisenhower Doktrini",
@@ -1932,7 +1932,7 @@
       "E": "Schuman Bildirgesi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "II. Dünya Savaşı Sonrasında Türkiye ve Dünya",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1943,7 +1943,7 @@
     "id": 52215,
     "ders": "AYT TARİH-2",
     "soru_no": 98,
-    "soru": "",
+    "soru": "Sayın Başbakan,\n\nKıbrıs'a yapılacak olan Türk müdahaleleri Türk-Yunan kuvvetleri arasında askerî bir çatışmaya sebep olabilir. [...] NATO'nun rızası olmadan Türkiye'nin girişeceği bir hareket sonunda doğabilecek bir Sovyet müdahalesine karşı müttefiklerin Türkiye'yi savunma konusunu müzakere etmedikleri kanaatindeyim. Türkiye ile aramızda mevcut bulunan askerî yardımın, maksatlarının dışında kullanılması için hükümetinizin ABD'den onay alması gerekmektedir.\n\nABD Başkanı Johnson'ın Türkiye Cumhuriyeti Başbakanı İsmet İnönü'ye yazdığı bu mektupta yer alan ifadeler de dikkate alındığında aşağıdakilerden hangisine ulaşılamaz?",
     "secenekler": {
       "A": "Türkiye'nin Kuzey Atlantik Paktı üyesi olduğuna",
       "B": "Sovyetler Birliği'nin Kıbrıs Sorunu'nu takip ettiğine",
@@ -1952,7 +1952,7 @@
       "E": "ABD'nin Kıbrıs'ta iki devletli yönetim istediğine"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "21. Yüzyılın Eşiğinde Türkiye ve Dünya",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1963,7 +1963,7 @@
     "id": 52216,
     "ders": "AYT TARİH-2",
     "soru_no": 99,
-    "soru": "",
+    "soru": "Kadir, takvim yapraklarını incelerken 2025 yılında Ramazan ayının 1 Mart'ta başladığını görmüş ancak bir önceki yılda Ramazan'ın başlangıcının 11 Mart'a denk geldiğini hatırlamış ve bu farkın nedenini merak edip öğretmenine sormuştur.\n\nÖğretmenin hicri takvim hakkında verdiği\n\nI. bir yılın 354 gün 8 saat olması,\n\nII. bir yılda 12 ay bulunması,\n\nIII. başlangıç olarak 622 yılının kabul edilmesi\n\nbilgilerinden hangileri bu farkı açıklar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",

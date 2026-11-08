@@ -22,5 +22,6 @@ test('StorageKeys tarayıcıda kullanılan tam anahtar değerlerini korur', () =
     ELIMINATED_CHOICES: 'aol_eliminated_choices',
     ELIMINATED_WRONG_CHOICES: 'aol_eliminated_wrong_choices',
     AI_EXPLANATIONS: 'aol_ai_explanations',
+    AUTH_SESSION: 'aol_auth_session',
   });
 });

@@ -20,13 +20,13 @@ export function handleIncomingRoomMessage(ctx: MessageContext, msg: RoomMessage)
     existingPeer.lastSeenAt = timestamp;
   }
   const existingStats = ctx.studentStats[senderId];
-  if (existingStats) {
+  if (existingStats && msg.type !== 'PEER_LEAVE' && msg.type !== 'FOCUS_LOST') {
     existingStats.lastSeenAt = timestamp;
-    existingStats.isOnline = true;
   }
 
-  // Gönderen katılımcı listesinde kayıtlıysa mevcut rolünü, değilse mesajdaki isHost değerini baz al
-  const isSenderHost = existingPeer ? existingPeer.isHost : !!msg.isHost;
+  const knownHost = ctx.participants.find((p) => p.isHost);
+  const isSenderHost = existingPeer?.isHost
+    || (!!msg.isHost && (!knownHost || knownHost.id === senderId));
 
   const handler = Object.hasOwn(hostMessageHandlers, msg.type)
     ? hostMessageHandlers[msg.type]

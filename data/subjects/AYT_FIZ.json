@@ -3,7 +3,7 @@
     "id": 51350,
     "ders": "AYT FİZİK",
     "soru_no": 1,
-    "soru": "",
+    "soru": "Ahmet'in bahçedeki kulübesinden kaçan köpeği önce 100 m kuzeydoğu (KD) yönüne, sonra 60 m batı yönüne yatay düzlemde doğrusal olarak gidiyor. Köpeğinin kaçtığını gören Ahmet ise bu sırada onu aramak için kulübenin bulunduğu noktadan 60 m batı yönüne doğru koşarak vişne ağacının yanında duruyor. Şekilde verilen yön okuna göre yatay düzlemde hareket eden Ahmet'in, köpeğinin gittiği noktaya ulaşması için vişne ağacının yanından koşması gereken en yakın mesafe ve yön aşağıdakilerin hangisinde doğrudur?",
     "secenekler": {
       "A": "$50\\sqrt{2}$ m; Kuzey",
       "B": "60 m; Kuzeybatı (KB)",
@@ -12,7 +12,7 @@
       "E": "$100\\sqrt{2}$ m; Kuzeydoğu (KD)"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Vektörler",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -23,7 +23,7 @@
     "id": 51351,
     "ders": "AYT FİZİK",
     "soru_no": 2,
-    "soru": "",
+    "soru": "Aynı yatay düzlemde bir tren yere göre batı yönünde 15 m/s'lik sabit hızla, bir motosiklet ise yere göre kuzey yönünde 15 m/s'lik sabit hızla hareket etmektedir. Bu bilgiye dayanarak, motosiklet sürücüsüne göre trenin hızının büyüklüğü ve yönü aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "15 m/s; güneybatı",
       "B": "30 m/s; kuzeybatı",
@@ -32,7 +32,7 @@
       "E": "30 m/s; kuzeydoğu"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Bağıl Hareket",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -43,7 +43,7 @@
     "id": 51352,
     "ders": "AYT FİZİK",
     "soru_no": 3,
-    "soru": "",
+    "soru": "Yatay düzlemde ve şekilde belirtilen yönde sabit hızla gitmekte olan üstü açık vagon üzerinde duran Selami, elindeki küçük bir topu hava direncinin ihmal edildiği ortamda, kendine göre düşey doğrultuda yukarıya doğru atmıştır. Şekildeki K noktasında ayakta duran bir gözlemci ise bu olayı izlemektedir. Buna göre, durgun gözlemci top elden çıkıp hareketinin tepe noktasına varıncaya kadar geçen sürede topun izlediği yolu aşağıdakilerden hangisi gibi görür?",
     "secenekler": {
       "A": "Düşey doğrultuda düz bir çizgi (parabol değil)",
       "B": "Vagonun hareket yönüne ters yönde eğik bir parabol",
@@ -52,7 +52,7 @@
       "E": "Düşey doğrultuda aşağı yönde düz bir çizgi"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Bağıl Hareket",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -123,7 +123,7 @@
     "id": 51356,
     "ders": "AYT FİZİK",
     "soru_no": 7,
-    "soru": "",
+    "soru": "Bir yüzme yarışında Levent ve Mert, yatay doğrultularını değiştirmeden sırasıyla yere göre $3\\vec{v}$ ve $2\\vec{v}$ sabit hızlarıyla aynı yönde şekildeki gibi hareket etmektedir. Antrenör Sarp ise havuzun kenarında yarışmacılarla aynı yönde yere göre $\\vec{v}$ sabit hızıyla hareket ederek bu yarışı takip etmektedir. (Şekilde Levent, Mert ve Sarp aynı yönde hareket ederken gösterilmiştir.) Bu yarışta Levent, Mert ve Sarp'ın bağıl hızlarıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "Sarp'ın Levent'e göre hızı ile Sarp'ın Mert'e göre hızı eşittir.",
       "B": "Sarp'ın Levent'e göre ve Sarp'ın Mert'e göre hızlarının büyüklükleri eşittir.",
@@ -143,7 +143,7 @@
     "id": 51357,
     "ders": "AYT FİZİK",
     "soru_no": 8,
-    "soru": "",
+    "soru": "Özdeş K ve L sandıkları, yer çekimi ivmesinin $10 \\text{ m/s}^2$ olarak kabul edildiği ortamda yatay düzleme paralel, esnemeyen iplerle şekillerdeki gibi sabit, özdeş ve ağırlıksız makaralar yardımıyla çekilmektedir. K sandığı, $W_1$ ve $W_2$ ağırlıklı tuğlalar kullanılarak; L sandığı ise $F_1$ ve $F_2$ kuvvetlerinin etkisinde hareket ettiriliyor. (Şekilde K sandığı makara sistemiyle $W_1$ ve $W_2$ ağırlıklarına bağlı, L sandığı ise $F_1$ ve $F_2$ kuvvetleriyle çekilmektedir.) Sürtünmeler ihmal edildiğine göre, L sandığının ivmesi $a_L = 5 \\text{ m/s}^2$ ise K sandığının ivmesi kaç $\\text{m/s}^2$dir?",
     "secenekler": {
       "A": "1",
       "B": "2",
@@ -163,7 +163,7 @@
     "id": 51358,
     "ders": "AYT FİZİK",
     "soru_no": 9,
-    "soru": "",
+    "soru": "Kütleleri $m$, $m$ ve $2m$ olan sırasıyla K, L ve N tuğlalarına şekilde gösterildiği gibi yatay $\\vec{F}$, $2\\vec{F}$ ve $\\vec{F}$ kuvvetleri yer çekimi ivmesinin sabit olduğu ortamda uygulanmaktadır. (Şekilde düşey bir duvar ve yatay yer vardır. K tuğlesi duvara temas edecek şekilde, L tuğlası K'nın önünde, N tuğlası L'nin önünde olacak şekilde yatay zeminde dizilmiştir. K'ya duvara doğru $\\vec{F}$, L'ye duvara doğru $2\\vec{F}$, N'ye duvara doğru $\\vec{F}$ kuvveti uygulanmaktadır.) Tuğlalar hareket etmeden durduklarına göre, duvar yüzeyinin K, L ve N tuğlalarına uyguladığı statik sürtünme kuvvetlerinin büyüklükleri $f_K$, $f_L$ ve $f_N$ arasındaki ilişki nedir?",
     "secenekler": {
       "A": "$f_K > f_L = f_N$",
       "B": "$f_K = f_L > f_N$",
@@ -183,7 +183,7 @@
     "id": 51359,
     "ders": "AYT FİZİK",
     "soru_no": 10,
-    "soru": "",
+    "soru": "Kütleleri sırasıyla $m$, $2m$ ve $3m$ olan küp şeklindeki K, L ve M blokları sürtünmesiz yatay düzlem üzerinde şekilde gösterildiği gibi uygulanan yatay kuvvete rağmen hareketsiz durmaktadır. (Şekilde düşey bir duvar ve yatay düzlem vardır. M bloğu duvara temas edecek şekilde, L bloğu M'nin önünde, K bloğu L'nin önünde olacak şekilde dizilmiştir. K bloğuna duvara doğru yatay bir kuvvet uygulanmaktadır.) Buna göre K bloğunun L bloğuna uyguladığı temas kuvvetinin büyüklüğü $F$ ise düşey doğrultudaki duvarın M bloğuna uyguladığı temas kuvvetinin büyüklüğü kaç $F$'dir?",
     "secenekler": {
       "A": "$\\frac{1}{4}$",
       "B": "$\\frac{1}{2}$",
@@ -203,7 +203,7 @@
     "id": 51360,
     "ders": "AYT FİZİK",
     "soru_no": 11,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -223,7 +223,7 @@
     "id": 51361,
     "ders": "AYT FİZİK",
     "soru_no": 12,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -243,7 +243,7 @@
     "id": 51362,
     "ders": "AYT FİZİK",
     "soru_no": 13,
-    "soru": "",
+    "soru": "Üzerindekilerle birlikte kütlesi $0{,}8\\ \\text{kg}$ olan tepsi ile kütlesi $0{,}4\\ \\text{kg}$ olan meyve suyu kutusu, sürtünmesi ihmal edilen yatay bir masa üzerinde şekildeki gibi bitişik durmaktadır. Ali, eliyle tepsiye yatay ve sabit bir kuvvet uygulayarak onu sola doğru iter. Bu kuvvetin etkisiyle tepsi ve meyve suyu kutusu birlikte hareket eder. (Şekilde yatay masa üzerinde bitişik duran tepsi ve meyve suyu kutusu; tepsiye soldan sağa doğru yatay bir kuvvet uygulanmakta ve düzenek sola doğru hareket etmektedir.) Meyve suyu kutusunun $5\\ \\text{m/s}^2$ ivmeyle hareket ettiği bilindiğine göre Ali'nin tepsiye uyguladığı kuvvetin büyüklüğü kaç newtondur?",
     "secenekler": {
       "A": "$12$",
       "B": "$8$",
@@ -263,7 +263,7 @@
     "id": 51363,
     "ders": "AYT FİZİK",
     "soru_no": 14,
-    "soru": "",
+    "soru": "Sürtünmelerin ihmal edildiği ortamda bir balonu şişirerek yatay düzlemdeki arabaya şekildeki gibi yapıştıran bir öğrenci, pipeti balonun ağzına sıkıca bağlayarak hava çıkışına engel oluyor. Durmakta olan düzenekteki pipetten hava çıkışı sağlandığında araba hareket etmeye başlıyor. Bir süre sonra balondaki hava tamamen bitiyor. (Şekilde yatay zemin üzerinde bir araba, arabanın üzerinde balon ve balonun ağzına bağlı pipet bulunmaktadır. Yatay doğrultuda I ve II olmak üzere iki yön işaretlenmiştir.) Buna göre balondan hava çıkışı varken ve balondan hava çıkışı bittikten sonra araba ile ilgili aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "Balondan hava çıkışı varken: I yönünde hızlanır. — Balondan hava çıkışı bittikten sonra: I yönünde sabit hızla hareket eder.",
       "B": "Balondan hava çıkışı varken: I yönünde hızlanır. — Balondan hava çıkışı bittikten sonra: I yönünde yavaşlar.",
@@ -283,7 +283,7 @@
     "id": 51364,
     "ders": "AYT FİZİK",
     "soru_no": 15,
-    "soru": "",
+    "soru": "Ahmet, bir ipin ucuna bağladığı taşı düşey düzlemde şekildeki gibi çembersel yörüngede döndürürken, bir anda ip koparak taştan ayrılıyor. Şekilde düşey düzlemde çembersel bir yörünge üzerinde I, II, III, IV ve V noktaları işaretlenmiştir; I noktası yörüngenin en üst noktası, III noktası en alt noktası, II ve IV noktaları yatay çapın uçları, V noktası ise yörünge üzerinde II ile I arasında bir noktadır. İpin koptuğu andan taşın yere düştüğü ana kadar taşın hız ve ivme vektörleri birbirine paralel olduğuna göre, şekildeki I, II, III, IV ve V noktalarının hangilerinde ip kopmuş olabilir?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız V",
@@ -292,7 +292,7 @@
       "E": "II ve V"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -303,7 +303,7 @@
     "id": 51365,
     "ders": "AYT FİZİK",
     "soru_no": 16,
-    "soru": "",
+    "soru": "Başlangıçta ($t = 0$ anında) yan yana durmaktayken doğrusal yatay bir yolda harekete başlayan K ve L otomobillerine ait hız-zaman grafiği şekilde görülmektedir. Grafikte yatay eksen zamanı, düşey eksen hızı göstermektedir; K otomobilinin hız-zaman grafiği başlangıçta artan, sonra azalan bir eğri olup $t = 30\\text{ s}$ anında sıfıra düşmektedir. L otomobilinin hız-zaman grafiği ise sürekli artan bir doğru şeklindedir. K ve L otomobillerinin hareketi ile ilgili,\n\nI. K otomobili önce hızlanmış daha sonra yavaşlayıp durmuştur.\n\nII. K otomobili 30. saniyede başlangıç konumuna geri dönmüştür.\n\nIII. 30. saniyede L otomobili K otomobilinden daha ileridedir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -312,7 +312,7 @@
       "E": "I ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -323,7 +323,7 @@
     "id": 51366,
     "ders": "AYT FİZİK",
     "soru_no": 17,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -332,7 +332,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -343,7 +343,7 @@
     "id": 51367,
     "ders": "AYT FİZİK",
     "soru_no": 18,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -363,7 +363,7 @@
     "id": 51368,
     "ders": "AYT FİZİK",
     "soru_no": 19,
-    "soru": "",
+    "soru": "İstanbul Boğazı'nda akıntının olmadığı, rüzgârsız bir günde, bir vapur yere göre 3 m/s hızla yatay doğrultuda gidiyor. Vapurun güvertesinde duran Ahsen, elindeki simit parçasını vapura göre 10 m/s hızla düşey doğrultuda yukarı doğru fırlatıyor. Bu simit parçası fırlatıldıktan 0,6 saniye sonra bir martı tarafından yakalanıyor.\n\nHava direnci ihmal edildiğine göre martı tarafından yakalanmadan hemen önce simit parçasının yere göre hızının büyüklüğü kaç m/s'dir? (Yer çekimi ivmesinin büyüklüğünü 10 m/s$^2$ alınız.)",
     "secenekler": {
       "A": "3",
       "B": "4",
@@ -383,7 +383,7 @@
     "id": 51369,
     "ders": "AYT FİZİK",
     "soru_no": 20,
-    "soru": "",
+    "soru": "Hava direncinin ihmal edildiği bir ortamda noktasal K ve L cisimleri yerden sırasıyla $2h$ ve $h$ yüksekliklerinden yatay doğrultuda $v_K$ ve $v_L$ ilk hızları ile atıldıklarında, şekildeki yolları izleyerek P noktasına düşüyor.\n\nŞekilde K cismi yerden $2h$ yükseklikten, L cismi yerden $h$ yükseklikten yatay olarak atılmakta ve her ikisi de aynı P noktasına düşmektedir.\n\nBuna göre, K ve L cisimlerinin ilk hızlarının büyüklükleri oranı $\\frac{v_K}{v_L}$ kaçtır?",
     "secenekler": {
       "A": "$\\frac{1}{4}$",
       "B": "$\\frac{1}{\\sqrt{2}}$",
@@ -403,7 +403,7 @@
     "id": 51370,
     "ders": "AYT FİZİK",
     "soru_no": 21,
-    "soru": "",
+    "soru": "Bir öğrenci hava direncinin ihmal edildiği ortamda, yerden belirli bir açıyla yukarıya doğru fırlatılan noktasal bir cismin fırlatma sonrası hareketi hakkında topladığı bilgilerden yararlanarak aşağıdaki tabloyu hazırlamıştır.\n\n| | Değişkenler | Cisim Yükselirken | Cisim Alçalırken |\n|---|---|---|---|\n| I | cismin ivme vektörünün yönü | yukarı | aşağı |\n| II | cismin hızının yatay bileşeninin büyüklüğü | değişmez | değişmez |\n| III | cismin hızının düşey bileşeninin büyüklüğü | artar | azalır |\n| IV | cismin toplam mekanik enerjisi | değişmez | değişmez |\n\nÖğrencinin hazırladığı tablodaki değişkenler ve bu değişkenlerle ilgili bilgileri içeren satırlardan hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "I ve II",
@@ -423,7 +423,7 @@
     "id": 51371,
     "ders": "AYT FİZİK",
     "soru_no": 22,
-    "soru": "",
+    "soru": "Bir sporcu elindeki topu, yere göre $10\\ \\text{m/s}$'lik bir süratle ve yatayla $53^\\circ$ açı yapacak hızla şekildeki gibi atıyor. (Şekilde sporcu topu eğik atışla, yatayla $53^\\circ$ açı yapacak şekilde fırlatmaktadır.)\n\nBu sporcu, topu yere düşmeden ve attığı pozisyonda yakaladığına göre, sporcunun topu atma ve tutma anları arasındaki ortalama hızının büyüklüğü kaç m/s'dir?\n\n(Hava sürtünmesi ihmal edilecektir. Yer çekimi ivmesini $10\\ \\text{m/s}^2$ alınız. $\\sin 53^\\circ = 0{,}8$ ; $\\cos 53^\\circ = 0{,}6$)",
     "secenekler": {
       "A": "2,4",
       "B": "4,8",
@@ -443,7 +443,7 @@
     "id": 51372,
     "ders": "AYT FİZİK",
     "soru_no": 23,
-    "soru": "",
+    "soru": "Hava direncinin ihmal edildiği ortamda bir golf oyuncusu, basamağın kenarına yerleştirdiği topa şekilde gösterildiği gibi K, L ve M doğrultularında ilk hız kazandıracak biçimde vurmaktadır. (Şekilde top, bir basamağın kenarından K, L ve M doğrultularında, farklı eğimlerle fırlatılmaktadır.)\n\nOyuncunun, topa verdiği ilk hızın üç durumda da aynı büyüklükte olduğu bilindiğine göre K, L ve M doğrultularında fırlatılan topun yere çarpma anındaki süratleri $v_K$, $v_L$ ve $v_M$ arasındaki ilişki aşağıdakilerin hangisinde doğru olarak verilmiştir?",
     "secenekler": {
       "A": "$v_K > v_L > v_M$",
       "B": "$v_M > v_L > v_K$",
@@ -463,7 +463,7 @@
     "id": 51373,
     "ders": "AYT FİZİK",
     "soru_no": 24,
-    "soru": "",
+    "soru": "Batıya doğru $1\\ \\text{m/s}$ hızla uçmakta olan şekildeki karga, ağzındaki cevizi yatay yolda doğuya doğru $20\\ \\text{m/s}$ sabit hızla hareket eden bir arabanın ön tamponuna çarptırarak kırıyor. Karganın cevizi bıraktığı anda cevizin arabanın tamponuna olan düşey uzaklığının $20\\ \\text{m}$ ve yatay uzaklığının $L$ olduğu biliniyor. (Şekilde: karga batıya $1\\ \\text{m/s}$ hızla uçuyor, araba doğuya $20\\ \\text{m/s}$ hızla hareket ediyor; cevizin arabanın tamponuna düşey uzaklığı $20\\ \\text{m}$, yatay uzaklığı $L$ olarak gösterilmiştir.) Hava direnci ihmal edildiğine göre $L$ kaç m'dir? (Yer çekimi ivmesi $10\\ \\text{m/s}^2$ alınacaktır.)",
     "secenekler": {
       "A": "20",
       "B": "21",
@@ -483,7 +483,7 @@
     "id": 51374,
     "ders": "AYT FİZİK",
     "soru_no": 25,
-    "soru": "",
+    "soru": "İrem çocuk parkında oynarken ray üzerinde duran yeterince küçük bir oyuncak arabayı iterek hedefteki balonu patlatmaya çalışıyor. Oyunda ucunda iğne bulunan arabanın, İrem'in verdiği ilk hızla, önce $1$ metre çaplı çembersel rayda bir tam tur atması ve sonra $2{,}4$ metre yükseklikteki balona ulaşması gerekmektedir. (Şekilde: yatay zeminde $1\\ \\text{m}$ çaplı çembersel ray, yerden $2{,}4\\ \\text{m}$ yükseklikte balon ve ray üzerinde araba gösterilmiştir.) Balonun patlaması için arabanın en az $1\\ \\text{m/s}$ hızla balona çarpması gerektiğine göre, İrem'in oyuncak arabaya kazandırması gereken ilk hızın büyüklüğü en az kaç m/s olmalıdır? (Yer çekimi ivmesi $10\\ \\text{m/s}^2$ dir, sürtünmeler ihmal edilmektedir.)",
     "secenekler": {
       "A": "4",
       "B": "5",
@@ -503,7 +503,7 @@
     "id": 51375,
     "ders": "AYT FİZİK",
     "soru_no": 26,
-    "soru": "",
+    "soru": "Kütlesi ihmal edilen ve esneklik sınırı aşılmayan bir yayın esneklik potansiyel enerjisi;\n\n• masanın üzerine konularak büyüklüğü $F$ olan bir kuvvet ile Şekil I'deki gibi sıkıştırıldığında $U_1$,\n\n• iki elin arasına alınarak büyüklüğü $F$ olan kuvvetlerle Şekil II'deki gibi sıkıştırıldığında $U_2$,\n\n• iki elin arasına alınarak büyüklüğü $F$ olan kuvvetlerle Şekil III'teki gibi gerildiğinde $U_3$\n\nolmaktadır.\n\nŞekil I'de yay bir ucu sabit masaya dayalı olarak diğer ucundan $F$ büyüklüğünde tek kuvvetle sıkıştırılmaktadır. Şekil II'de yay iki elin arasında olup her iki ucundan birbirine doğru $F$ büyüklüğünde kuvvetlerle sıkıştırılmaktadır. Şekil III'te ise yay iki elin arasında olup her iki ucundan birbirinden uzağa doğru $F$ büyüklüğünde kuvvetlerle gerilmektedir.\n\nÜç durumda da sistem dengede olduğu anda $U_1$, $U_2$ ve $U_3$ arasındaki ilişki aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$U_2 > U_1 > U_3$",
       "B": "$U_3 > U_2 > U_1$",
@@ -523,7 +523,7 @@
     "id": 51376,
     "ders": "AYT FİZİK",
     "soru_no": 27,
-    "soru": "",
+    "soru": "Karpuz dolu bir kamyon, manav tezgâhına şekildeki gibi yanaşıyor. O sırada yoldan geçen Ahmet ve Altay, manavın işini kolaylaştırmak için karpuzları kasanın en üst kısmından aynı şekilde ilk hızsız bıraktığında tezgâha ulaştıracak farklı uzunluktaki K, L düzeneklerini tasarlıyorlar. Karpuzların boyutu düzeneklerle karşılaştırıldığında ihmal edilecek kadar küçük olup sürtünmeler önemsizdir.\n\nK ve L düzeneklerinden ayrı ayrı tezgâha ulaşan iki özdeş karpuzun\n\nI. tezgâha ulaştıkları andaki süratleri,\n\nII. tezgâha ulaşma süreleri,\n\nIII. yer çekimi kuvvetinin üzerlerinde yaptığı toplam işler\n\nniceliklerinden hangileri kesinlikle aynıdır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -543,7 +543,7 @@
     "id": 51377,
     "ders": "AYT FİZİK",
     "soru_no": 28,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -552,7 +552,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -563,7 +563,7 @@
     "id": 51378,
     "ders": "AYT FİZİK",
     "soru_no": 29,
-    "soru": "",
+    "soru": "Bir çarpışma testi için cansız manken emniyet kemeri takılmadan otomobilin sürücü koltuğuna yerleştirilmiştir. Bu otomobil, yatay bir yolda $10\\ \\text{m/s}$'lik sabit hızla giderken duvara çarptığında $0{,}1$ saniyede durabilmektedir. Bu esnada, kütlesi $80\\ \\text{kg}$ olan manken, direksiyonun kollarına uyguladığı tepki kuvveti ve vücuduna etkiyen sürtünme kuvvetleri yardımıyla durabilmektedir.\n\nMankenin çarpışma esnasında otomobile göre hareketsiz kalabilmesi için, ortalama itme (impuls) kuvveti en az kaç newton olmalıdır?",
     "secenekler": {
       "A": "$8$",
       "B": "$80$",
@@ -572,7 +572,7 @@
       "E": "$80000$"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "İtme ve Çizgisel Momentum",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -583,7 +583,7 @@
     "id": 51379,
     "ders": "AYT FİZİK",
     "soru_no": 30,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -592,7 +592,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -603,7 +603,7 @@
     "id": 51380,
     "ders": "AYT FİZİK",
     "soru_no": 31,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -612,7 +612,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -623,7 +623,7 @@
     "id": 51381,
     "ders": "AYT FİZİK",
     "soru_no": 32,
-    "soru": "",
+    "soru": "Esnek olmayan çarpışmalarla ilgili yapılan bir deneyde oyun hamurundan yapılmış $1\\ \\text{kg}$'lık bir blok kullanılmıştır. Yatay zeminde duran bu bloğa doğru yatay olarak $3\\ \\text{m/s}$ ilk hızla özdeş $0{,}1\\ \\text{kg}$'lık demir bilyeler aynı anda atılmış ve bu bilyeler bloğa saplanmıştır. İçindeki bilyelerle beraber blok sürtünmesiz yatay zeminde $2\\ \\text{m/s}$ hızla harekete geçmiştir.\n\nBuna göre bloğa kaç adet demir bilye saplanmıştır?",
     "secenekler": {
       "A": "5",
       "B": "10",
@@ -643,7 +643,7 @@
     "id": 51382,
     "ders": "AYT FİZİK",
     "soru_no": 33,
-    "soru": "",
+    "soru": "Sürtünmelerin ihmal edildiği ortamda, O noktasından $V_0$ ilk hızıyla ve $\\theta$ eğim açısıyla fırlatılan noktasal sayılabilecek $m$ kütleli bir cismin yaptığı eğik atış hareketinin yörüngesi şekildeki gibidir. Şekilde O noktasından başlayan parabolik bir yörünge üzerinde, yörüngenin çıkış kolunda K noktası, tepe noktasında L noktası ve iniş kolunda M noktası işaretlenmiştir.\n\nCismin yörüngesi üzerine şekildeki gibi konumlandırılan K, L, M noktalarında sahip olduğu çizgisel momentumlarının büyüklükleri sırasıyla $P_K$, $P_L$, $P_M$ dir.\n\nBuna göre $P_K$, $P_L$ ve $P_M$ arasındaki ilişki aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$P_K < P_L < P_M$",
       "B": "$P_L < P_K < P_M$",
@@ -663,7 +663,7 @@
     "id": 51383,
     "ders": "AYT FİZİK",
     "soru_no": 34,
-    "soru": "",
+    "soru": "P noktasından geçen bir mil etrafında sürtünmesiz yatay düzlemde kolayca dönebilen, eşit bölmelendirilmiş ve ağırlığı ihmal edilen katı çubuk, şekilde gösterildiği gibi, kendisine dik olarak uygulanan $F_K$ ve $F_L$ kuvvetlerinin etkisiyle dengede durmaktadır. Şekilde çubuk eşit bölmelere ayrılmış olup P dönme noktası çubuğun sol ucundan itibaren ikinci bölme çizgisindedir; $F_K$ kuvveti çubuğun sol ucuna, $F_L$ kuvveti ise çubuğun sağ ucuna dik olarak zıt yönlerde etki etmektedir.\n\n$F_K$ kuvvetinin P noktasına göre çubuğa uyguladığı torkun büyüklüğü $\\tau$ olduğuna göre, $F_L$ kuvvetinin P noktasına göre çubuğa uyguladığı torkun büyüklüğü kaç $\\tau$'dur?",
     "secenekler": {
       "A": "$\\frac{1}{3}$",
       "B": "$\\frac{2}{3}$",
@@ -683,7 +683,7 @@
     "id": 51384,
     "ders": "AYT FİZİK",
     "soru_no": 35,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -703,7 +703,7 @@
     "id": 51385,
     "ders": "AYT FİZİK",
     "soru_no": 36,
-    "soru": "",
+    "soru": "Oğuz'la Bilgehan, O ekseni etrafında sürtünmesiz dönebilen, hareketsiz bir kapıyı zıt yönlerde iterek inatlaşmaktadır. Oğuz kapıya O ekseninden $40\\ \\text{cm}$ uzaktaki L noktasından bir kuvvet uygulayarak kapatmaya, Bilgehan ise O ekseninden $120\\ \\text{cm}$ uzaktaki K noktasından $5\\ \\text{N}$'lik bir kuvvet uygulayarak açmaya çalışmaktadır. Oğuz ve Bilgehan aynı anda ve kapı düzlemine dik kuvvet uyguladıklarına göre kapının hareketsiz kalması için Oğuz'un uygulaması gereken kuvvet kaç N'dir?",
     "secenekler": {
       "A": "15",
       "B": "20",
@@ -723,7 +723,7 @@
     "id": 51386,
     "ders": "AYT FİZİK",
     "soru_no": 37,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -743,7 +743,7 @@
     "id": 51387,
     "ders": "AYT FİZİK",
     "soru_no": 38,
-    "soru": "",
+    "soru": "Başlangıçta ($t = 0$ anında) yan yana durmaktayken doğrusal yatay bir yolda harekete başlayan K ve L otomobillerine ait hız-zaman grafiği şekilde görülmektedir. Grafikte yatay eksen zamanı, düşey eksen hızı göstermektedir; K otomobilinin hız-zaman grafiği başlangıçta artan, sonra azalan bir eğri olup $t = 30\\text{ s}$ anında sıfıra düşmektedir. L otomobilinin hız-zaman grafiği ise sürekli artan bir doğru şeklindedir. K ve L otomobillerinin hareketi ile ilgili,\n\nI. K otomobili önce hızlanmış daha sonra yavaşlayıp durmuştur.\n\nII. K otomobili 30. saniyede başlangıç konumuna geri dönmüştür.\n\nIII. 30. saniyede L otomobili K otomobilinden daha ileridedir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -752,7 +752,7 @@
       "E": "I ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -763,7 +763,7 @@
     "id": 51388,
     "ders": "AYT FİZİK",
     "soru_no": 39,
-    "soru": "",
+    "soru": "Ali içi tuğla dolu olan ve toplam $G$ ağırlığındaki bir kovayı şekilde gösterilen ip-makara sistemi ile kaldırmaya çalışmaktadır. Ali esnemeyen ve kütlesi ihmal edilen ipe $F$ büyüklüğünde kuvvet uygulamakta, bu da bütün çabasına rağmen kovayı hareket ettirmek için yeterli olmamaktadır. İp çekilirken yerin kovaya uyguladığı normal kuvvetin büyüklüğü sıfırdan farklıdır ve $N$ ile gösterilmektedir.\n\nŞekil: Sabit bir makara tavana asılmıştır. İp, makaranın üzerinden geçmektedir; ipin bir ucu yerde duran kovaya bağlı, diğer ucunu Ali yukarı doğru $F$ kuvvetiyle çekmektedir. Kova yerde durmakta olup yerin kovaya uyguladığı normal kuvvet $N$'dir.\n\nMakarayla ip arasındaki sürtünme ihmal edildiğine göre aşağıdakilerden hangisi $G$, $F$ ve $N$ arasındaki ilişkiyi doğru ifade eder?",
     "secenekler": {
       "A": "$F = G - N$",
       "B": "$F = G + N$",
@@ -783,7 +783,7 @@
     "id": 51389,
     "ders": "AYT FİZİK",
     "soru_no": 40,
-    "soru": "",
+    "soru": "Fizik laboratuvarında metallerin elektriksel olarak yüklenmesi ile ilgili deneyler yapan bir öğrenci, yarıçapları birbirinden farklı olan nötr iki demir bilyeyi, yalıtkan bir eldiven kullanarak tutmaktadır. Öğrenci, sağ elinde tuttuğu bilyeyi elektriksel olarak yükleyerek sol elindeki bilyeye dokundurur.\n\nBilyeler arasında yük transferi bittikten sonra bilyeler için;\n\nI. Üzerlerindeki net yük miktarları birbirine eşittir.\n\nII. Yüzeylerindeki elektriksel potansiyeller birbirine eşittir.\n\nIII. Aynı cins elektriksel yükle yüklenmişlerdir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -792,7 +792,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektriksel Potansiyel",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -803,7 +803,7 @@
     "id": 51390,
     "ders": "AYT FİZİK",
     "soru_no": 41,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -823,7 +823,7 @@
     "id": 51391,
     "ders": "AYT FİZİK",
     "soru_no": 42,
-    "soru": "",
+    "soru": "Aynı doğrultu üzerindeki eşit aralıklı K, L, M, N ve P noktalarından K ve M noktalarına pozitif, P noktasına ise negatif elektrik yüklü noktasal cisimler sabitlenmiş olup bu cisimlerin yük miktarı birbirine eşittir. Buna göre L noktasında oluşan elektriksel potansiyelin, N noktasında oluşan elektriksel potansiyele oranı $V_L / V_N$ kaçtır?",
     "secenekler": {
       "A": "1",
       "B": "2",
@@ -843,7 +843,7 @@
     "id": 51392,
     "ders": "AYT FİZİK",
     "soru_no": 43,
-    "soru": "",
+    "soru": "Şekilde kesikli çizgilerle temsil edilen eş potansiyel yüzeyler; $V$, $2V$, $3V$, $4V$ ve $5V$ potansiyeline sahiptir. K noktasından L noktasına şekildeki yolu izleyerek götürülen $+2q$ elektrik yüküne sahip noktasal cisim üzerinde yapılan iş $W$ kadardır. Buna göre $+q$ elektrik yüküne sahip başka bir noktasal cisim M noktasından N noktasına şekildeki yolu izleyerek taşındığında bu cisim üzerinde yapılan iş kaç $W$ olur?",
     "secenekler": {
       "A": "$-0,5$",
       "B": "$-1$",
@@ -863,7 +863,7 @@
     "id": 51393,
     "ders": "AYT FİZİK",
     "soru_no": 44,
-    "soru": "",
+    "soru": "Başlangıçta ($t = 0$ anında) yan yana durmaktayken doğrusal yatay bir yolda harekete başlayan K ve L otomobillerine ait hız-zaman grafiği şekilde görülmektedir. Grafikte yatay eksen zamanı, düşey eksen hızı göstermektedir; K otomobilinin hız-zaman grafiği başlangıçta artan, sonra azalan bir eğri olup $t = 30\\text{ s}$ anında sıfıra düşmektedir. L otomobilinin hız-zaman grafiği ise sürekli artan bir doğru şeklindedir. K ve L otomobillerinin hareketi ile ilgili,\n\nI. K otomobili önce hızlanmış daha sonra yavaşlayıp durmuştur.\n\nII. K otomobili 30. saniyede başlangıç konumuna geri dönmüştür.\n\nIII. 30. saniyede L otomobili K otomobilinden daha ileridedir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -872,7 +872,7 @@
       "E": "I ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -883,7 +883,7 @@
     "id": 51394,
     "ders": "AYT FİZİK",
     "soru_no": 45,
-    "soru": "",
+    "soru": "Yer çekiminin ihmal edildiği bir ortamda, sayfa düzleminde sağ tarafa doğru yönlenmiş düzgün bir elektrik alan oluşturulmuştur. Pozitif yüklü $q_K$ parçacığı ile negatif yüklü $q_L$ parçacığı şekillerde gösterildiği gibi alana dik bir şekilde $v$ hızıyla gönderilmiştir. Buna göre, bu parçacıkların elektrik alan içerisindeki hareketleri aşağıdakilerin hangisinde doğru gösterilmiştir?",
     "secenekler": {
       "A": "Şekilde $+q_K$ parçacığı sağa doğru saparak, $-q_L$ parçacığı sola doğru saparak hareket eder.",
       "B": "Şekilde $+q_K$ parçacığı sola doğru saparak, $-q_L$ parçacığı sağa doğru saparak hareket eder.",
@@ -903,7 +903,7 @@
     "id": 51395,
     "ders": "AYT FİZİK",
     "soru_no": 46,
-    "soru": "",
+    "soru": "Karpuz dolu bir kamyon, manav tezgâhına şekildeki gibi yanaşıyor. O sırada yoldan geçen Ahmet ve Altay, manavın işini kolaylaştırmak için karpuzları kasanın en üst kısmından aynı şekilde ilk hızsız bıraktığında tezgâha ulaştıracak farklı uzunluktaki K, L düzeneklerini tasarlıyorlar. Karpuzların boyutu düzeneklerle karşılaştırıldığında ihmal edilecek kadar küçük olup sürtünmeler önemsizdir.\n\nK ve L düzeneklerinden ayrı ayrı tezgâha ulaşan iki özdeş karpuzun\n\nI. tezgâha ulaştıkları andaki süratleri,\n\nII. tezgâha ulaşma süreleri,\n\nIII. yer çekimi kuvvetinin üzerlerinde yaptığı toplam işler\n\nniceliklerinden hangileri kesinlikle aynıdır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -923,7 +923,7 @@
     "id": 51396,
     "ders": "AYT FİZİK",
     "soru_no": 47,
-    "soru": "",
+    "soru": "Bir mıknatısın içerisinde şekildeki gibi bir DC kaynağına bağlı sürtünmesiz ve yatay duran iletken rayların üzerinde serbestçe hareket edebilen alüminyum çubuk görülmektedir. Akı değişimlerinden dolayı meydana gelen etkiler ihmal edilmektedir. Şekilde bir mıknatısın kutupları arasında yatay konumda iletken raylar ve bu raylar üzerinde duran alüminyum çubuk, çubuğa bağlı bir DC kaynağı ve anahtar gösterilmektedir. Raylar üzerinde I ve II olmak üzere iki hareket yönü işaretlenmiştir. Anahtar kapatılınca alüminyum çubuğun ray üzerindeki ilk hareketi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "Hareket etmez.",
       "B": "I yönünde hızlanarak hareket eder.",
@@ -932,7 +932,7 @@
       "E": "I yönünde sabit hızla hareket eder."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Manyetizma ve Elektromanyetik İndüklenme",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -943,7 +943,7 @@
     "id": 51397,
     "ders": "AYT FİZİK",
     "soru_no": 48,
-    "soru": "",
+    "soru": "Şekilleri ve boyutları aynı olan bir mıknatıs ile manyetik alanla etkileşmeyen bir silgi, şekildeki gibi kütle merkezleri yerden aynı yükseklikte olacak biçimde bir alüminyum bileziğin üzerinde tutulmaktadır. Silgi ile yeterince büyük manyetik alan oluşturan mıknatıs aynı anda serbest düşmeye bırakıldığında, yan yüzeyi yere dik ve yalıtkan ayaklarla sabitlenmiş bilezikte bir akım oluştuğu gözleniyor. Şekilde yatay konumda yalıtkan ayaklarla sabitlenmiş bir alüminyum bilezik, bileziğin üzerinde yan yana duran bir mıknatıs ve bir silgi, ayrıca yer düzlemi gösterilmektedir. Silgi ve mıknatısın; düşey doğrultuda ve dönmeden yere doğru düşerken, bileziğin içinden geçtikten hemen sonraki yerden yüksekliği ile ilgili aşağıdakilerden hangisi doğrudur? (Sürtünmeler ve Yerküre'nin manyetik alanı ihmal edilecektir.)",
     "secenekler": {
       "A": "Mıknatıs, silgiye göre daha yüksektedir.",
       "B": "Mıknatıs ve silgi aynı yüksekliktedir.",
@@ -952,7 +952,7 @@
       "E": "Mıknatıs ve silginin kütlelerine göre sonuç değişir."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Manyetizma ve Elektromanyetik İndüklenme",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -963,7 +963,7 @@
     "id": 51398,
     "ders": "AYT FİZİK",
     "soru_no": 49,
-    "soru": "",
+    "soru": "Başlangıçta nötr olan iletken KL çubuğu, sayfa düzlemine dik ve içeri doğru yönelmiş sabit $\\vec{B}$ manyetik alan bölgesinde sabit $\\vec{v}$ hızı ile şekilde gösterilen doğrultuda hareket etmektedir. Şekilde manyetik alan sayfa düzlemine dik ve içeri doğru ($\\otimes$) olarak, KL çubuğu ise sayfa düzleminde sağa doğru $\\vec{v}$ hızıyla hareket ederken gösterilmektedir. Buna göre, çubuğun K ve L uçlarındaki elektrik yük dağılımıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "K: $+$, L: $-$",
       "B": "K: $-$, L: $+$",
@@ -983,7 +983,7 @@
     "id": 51399,
     "ders": "AYT FİZİK",
     "soru_no": 50,
-    "soru": "",
+    "soru": "Bir pil, elektrik iletkenliği yeterince büyük olan bir demir bilye, bir bobin, bir anahtar ve iletken bakır malzemeler kullanılarak şekildeki gibi bir düzenek oluşturulmuş ve yalıtkan bir kabın içerisine konulmuştur. Bu düzenekte sadece demir bilye, bobin ile bakır yuva arasında düşey doğrultuda hareket edebilmektedir. Diğer bileşenler ise yalıtkan kaba sabitlenmiştir. Şekilde bobin üstte, bakır yuva altta olacak şekilde düşey doğrultuda konumlanmış; demir bilye bobin ile bakır yuva arasındaki boşlukta hareket edebilmektedir. Buna göre devredeki anahtar kapatıldıktan sonra, demir bilyenin hareketine ilişkin aşağıdaki yargılardan hangisi doğru olabilir?",
     "secenekler": {
       "A": "Bobin ile bakır yuva arasında periyodik olarak yukarı-aşağı hareket eder.",
       "B": "Pil doğru akım kaynağı olduğu için hareketsiz kalır.",
@@ -1003,7 +1003,7 @@
     "id": 51400,
     "ders": "AYT FİZİK",
     "soru_no": 51,
-    "soru": "",
+    "soru": "Parçacıkların bazı özellikleri hakkında bilgi edinebilmek için düzgün elektrik ve manyetik alandaki hareketleri incelenir. Bunun için uygulanan elektrik veya manyetik alan, yatay doğrultuda olabileceği gibi sayfa düzlemine dik doğrultuda da olabilir. Sayfa düzlemine dik ve düzlemden içeri doğru olan yön $\\otimes$ sembolü ile gösterilirken sayfa düzlemine dik ve düzlemden dışarı doğru olan yön ise $\\odot$ sembolü ile gösterilir.\n\nŞekildeki pozitif yüklü parçacık, her bir bölgede düzgün ve sabit olan elektrik ve manyetik alandan sadece birinin olduğu bilinen; I. Bölge'den doğrusal bir yörünge izleyerek II. Bölge'ye gelmiş ve II. Bölge'de çembersel bir yörünge çizmiştir. (Şekilde pozitif yüklü parçacık soldan sağa doğru I. Bölge'ye girmekte, I. Bölge'de doğrusal yörünge izleyerek II. Bölge'ye geçmekte ve II. Bölge'de çembersel yörünge çizmektedir.)\n\nSürtünmeler ve kütle çekim alanı önemsiz olduğuna göre I. ve II. Bölgelerdeki alanın türü ve alan çizgilerinin yönü aşağıdakilerden hangisi olabilir?",
     "secenekler": {
       "A": "I. Bölge: Elektrik alan $\\rightarrow$, II. Bölge: Manyetik alan $\\odot$",
       "B": "I. Bölge: Elektrik alan $\\leftarrow$, II. Bölge: Manyetik alan $\\otimes$",
@@ -1012,7 +1012,7 @@
       "E": "I. Bölge: Elektrik alan $\\rightarrow$, II. Bölge: Manyetik alan $\\otimes$"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektrik ve Manyetik Alanlar",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1023,7 +1023,7 @@
     "id": 51401,
     "ders": "AYT FİZİK",
     "soru_no": 52,
-    "soru": "",
+    "soru": "Başlangıçta ($t = 0$ anında) yan yana durmaktayken doğrusal yatay bir yolda harekete başlayan K ve L otomobillerine ait hız-zaman grafiği şekilde görülmektedir. Grafikte yatay eksen zamanı, düşey eksen hızı göstermektedir; K otomobilinin hız-zaman grafiği başlangıçta artan, sonra azalan bir eğri olup $t = 30\\text{ s}$ anında sıfıra düşmektedir. L otomobilinin hız-zaman grafiği ise sürekli artan bir doğru şeklindedir. K ve L otomobillerinin hareketi ile ilgili,\n\nI. K otomobili önce hızlanmış daha sonra yavaşlayıp durmuştur.\n\nII. K otomobili 30. saniyede başlangıç konumuna geri dönmüştür.\n\nIII. 30. saniyede L otomobili K otomobilinden daha ileridedir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1032,7 +1032,7 @@
       "E": "I ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1043,7 +1043,7 @@
     "id": 51402,
     "ders": "AYT FİZİK",
     "soru_no": 53,
-    "soru": "",
+    "soru": "Kütleleri eşit K, L, M ve N parçacıkları sayfa düzlemine dik doğrultuda ve düzgün bir manyetik alana girdiğinde birim karelerle gösterilen bölgede şekildeki yolları izlemiştir. Şekilde manyetik alan bölgesine giren parçacıklardan K ve M'nin yolları düz (sapmadan) ilerlerken, L ve N'nin yolları birim kareler üzerinde zıt yönlere doğru kıvrılmaktadır. Buna göre K, L, M ve N parçacıklarının elektriksel yük durumlarıyla ilgili aşağıdaki eşleştirmelerden hangisi doğru olabilir?",
     "secenekler": {
       "A": "K: nötr, L: +, M: nötr, N: nötr",
       "B": "K: +, L: nötr, M: -, N: +",
@@ -1063,7 +1063,7 @@
     "id": 51403,
     "ders": "AYT FİZİK",
     "soru_no": 54,
-    "soru": "",
+    "soru": "Yüklü parçacıkların hareket yönü, elektrik veya manyetik alan ile etkileştiklerinde değişebilir. Bu elektrik veya manyetik alan, sayfa düzleminde uygulanabileceği gibi sayfa düzlemine dik ve düzlemden içeriye veya dışarıya doğru da olabilir. Şekilde görüldüğü gibi $v_0$ ilk hızına sahip bir elektron I. bölgeden, ortadaki kırmızı bölgeye girmiştir. Türü ve yönü bilinmeyen düzgün bir alan ile etkileştikten sonra elektron IV. bölgeye doğru yön değiştirmiştir. Şekilde I. bölgeden sağa doğru $v_0$ hızıyla giren elektron, ortadaki kırmızı bölgede saparak IV. bölgeye (aşağı yönde) doğru yön değiştirmiştir. Tüm bölgeler aynı düzlemde olduğuna göre kırmızı bölgedeki alanın türü ve yönü ile ilgili aşağıdakilerden hangisi doğru olabilir?",
     "secenekler": {
       "A": "Düzleme paralel doğrultuda, yönü II. bölgeden IV. bölgeye doğru olan bir elektrik alan",
       "B": "Düzleme paralel doğrultuda, yönü II. bölgeden IV. bölgeye doğru olan manyetik alan",
@@ -1083,7 +1083,7 @@
     "id": 51404,
     "ders": "AYT FİZİK",
     "soru_no": 55,
-    "soru": "",
+    "soru": "Boyutları şekilde verilen K, L ve M yüzeylerinden K kare, L daire ve M dikdörtgen biçimindedir. Bu üç yüzeyden L ve M düzgün manyetik alanın içine alana dik yönde, K ise manyetik alan doğrultusuyla $30^{\\circ}$ açı yapacak şekilde yerleştirilmiştir. (Şekilde K kenar uzunluğu $2r$ olan kare, L yarıçapı $r$ olan daire, M kenar uzunlukları $2r$ ve $r$ olan dikdörtgen biçimindedir.) K, L ve M yüzeylerinden geçen manyetik akıların büyüklükleri sırasıyla $\\Phi_K, \\Phi_L, \\Phi_M$ arasındaki ilişki aşağıdakilerden hangisidir? $(\\sin 30^{\\circ} = \\cos 60^{\\circ} = \\frac{1}{2}, \\pi = 3 \\text{ alınız.})$",
     "secenekler": {
       "A": "$\\Phi_K > \\Phi_L > \\Phi_M$",
       "B": "$\\Phi_K > \\Phi_L = \\Phi_M$",
@@ -1092,7 +1092,7 @@
       "E": "$\\Phi_M > \\Phi_K > \\Phi_L$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Manyetik Akı",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1103,7 +1103,7 @@
     "id": 51405,
     "ders": "AYT FİZİK",
     "soru_no": 56,
-    "soru": "",
+    "soru": "Elektronik bir müzik çalarda şarkı çalındığı esnada müzik çaların ses sinyali çıkışında, farklı frekans değerlerine sahip ve üst üste binmiş çok sayıda alternatif gerilim oluşmaktadır. Böyle bir müzik çaların ses sinyali çıkışı ile hoparlör arasına A ve B uçları arası boş bırakılacak biçimde bir devre şekildeki gibi bağlanmıştır. (Şekilde müzik çaların çıkışı A ve B uçlarına, hoparlör ise A ve B uçları arasına paralel bağlanmıştır; A ve B uçları arasında boş bir bağlantı noktası bulunmaktadır.) Bu devrenin, bas sesleri oluşturan düşük frekanslı sinyallere karşı daha büyük, tiz sesleri oluşturan yüksek frekanslı sinyallere karşı daha küçük direnç oluşturarak; bas seslerin şiddetini tiz seslere göre daha yüksek oranda azaltması istenmektedir. Bunun için devrenin A ve B uçları arasına sadece bir devre elemanı bağlanacaktır. Buna göre devrenin A ve B uçları arasına; I. bobin, II. reosta, III. kondansatör devre elemanlarından hangileri bağlanabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1112,7 +1112,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Alternatif Akım",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1123,7 +1123,7 @@
     "id": 51406,
     "ders": "AYT FİZİK",
     "soru_no": 57,
-    "soru": "",
+    "soru": "Elektrik enerjisinin santrallerden mesken ve sanayi bölgesi gibi tüketim alanlarına yüksek gerilim altında taşınmasının temel nedeni aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Enerji kaybını azaltmak",
       "B": "Aktarım sırasında gerilim düşmelerini önlemek",
@@ -1143,7 +1143,7 @@
     "id": 51407,
     "ders": "AYT FİZİK",
     "soru_no": 58,
-    "soru": "",
+    "soru": "Bilinmeyen K, L ve M devre elemanlarının türünün belirlenmesi amacıyla yapılan deneylerde her bir devre elemanının uçları arasına genliği sabit, frekansı değiştirilebilen alternatif gerilim uygulanarak devre elemanının direncindeki (empedansındaki) değişim ölçülmüştür.\n\nK, L ve M ile ayrı ayrı yapılan deneylerde uygulanan gerilimin frekansı artırıldığında;\n\n• K'nin direncinin arttığı,\n\n• L'nin direncinin değişmediği,\n\n• M'nin direncinin azaldığı\n\ngözlenmiştir.\n\nBuna göre K, L ve M devre elemanlarının türü ile ilgili aşağıdaki eşleştirmelerden hangisi kesinlikle doğrudur?",
     "secenekler": {
       "A": "K: Direnç, L: Sığaç, M: Bobin",
       "B": "K: Bobin, L: Sığaç, M: Direnç",
@@ -1163,7 +1163,7 @@
     "id": 51408,
     "ders": "AYT FİZİK",
     "soru_no": 59,
-    "soru": "",
+    "soru": "Fizik laboratuvarında metallerin elektriksel olarak yüklenmesi ile ilgili deneyler yapan bir öğrenci, yarıçapları birbirinden farklı olan nötr iki demir bilyeyi, yalıtkan bir eldiven kullanarak tutmaktadır. Öğrenci, sağ elinde tuttuğu bilyeyi elektriksel olarak yükleyerek sol elindeki bilyeye dokundurur.\n\nBilyeler arasında yük transferi bittikten sonra bilyeler için;\n\nI. Üzerlerindeki net yük miktarları birbirine eşittir.\n\nII. Yüzeylerindeki elektriksel potansiyeller birbirine eşittir.\n\nIII. Aynı cins elektriksel yükle yüklenmişlerdir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1172,7 +1172,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektriksel Potansiyel",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1183,7 +1183,7 @@
     "id": 51409,
     "ders": "AYT FİZİK",
     "soru_no": 60,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1192,7 +1192,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1203,27 +1203,28 @@
     "id": 51410,
     "ders": "AYT FİZİK",
     "soru_no": 61,
-    "soru": "",
+    "soru": "Bir direnç, bir sığaç ve bilinmeyen bir devre elemanı bir alternatif gerilim kaynağına bağlanarak şekildeki devre oluşturuluyor. Alternatif gerilimin frekansının belirli bir değerinde bu devre sadece saf dirençten oluşmuş gibi davranıp devre akımının en büyük değeri aldığı gözlemleniyor. Buna göre devredeki bilinmeyen devre elemanı aşağıdakilerden hangisi olabilir?",
     "secenekler": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "Yalnız direnç",
+      "B": "Yalnız bobin",
+      "C": "Yalnız sığaç",
+      "D": "Direnç ve sığaç",
+      "E": "Sığaç ve diyot"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Alternatif Akım",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": true,
     "puan": 1.0,
-    "kredi": 1
+    "kredi": 1,
+    "dogru_nedeni": "Devrenin sadece saf dirençten oluşmuş gibi davranması (rezonans durumu), sığacın kapasitif reaktansı ile bobinin indüktif reaktansının birbirini yok etmesiyle (XL = XC) mümkündür. Dolayısıyla bilinmeyen eleman bobindir."
   },
   {
     "id": 51411,
     "ders": "AYT FİZİK",
     "soru_no": 62,
-    "soru": "",
+    "soru": "Şekilde doğru akım kaynağına bağlı K transformatörü ile alternatif akım kaynağına bağlı L transformatörü görülmektedir. K transformatöründeki primer devreden sabit $i$ akımı, L transformatörüne bağlı primer devreden etkin değeri $i$ olan alternatif akım geçerken transformatörlerin sekonder devrelerindeki $V_{AB}$ ve $V_{CD}$ gerilimleri voltmetrelerle ölçülmektedir. Buna göre, transformatörlerin sekonder gerilimleriyle ilgili olarak aşağıdakilerden hangisi doğrudur? (Şekildeki sarım sayıları gerçek değerleriyle orantılıdır.)",
     "secenekler": {
       "A": "$V_{AB}$ gerilimi primerindeki gerilimden büyüktür; $V_{CD}$ gerilimi primerindeki gerilimden küçüktür.",
       "B": "$V_{AB}$ gerilimi primerindeki gerilimden küçüktür; $V_{CD}$ gerilimi sıfırdır.",
@@ -1232,7 +1233,7 @@
       "E": "$V_{AB}$ gerilimi sıfırdır; $V_{CD}$ gerilimi primerindeki gerilimden küçüktür."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Transformatörler",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1243,7 +1244,7 @@
     "id": 51412,
     "ders": "AYT FİZİK",
     "soru_no": 63,
-    "soru": "",
+    "soru": "Elektrik santrallerinde üretilen elektrik enerjisi, uzun iletim hatları üzerinden taşınarak evlerimize ulaştırılmaktadır. Bu süreçte enerji kaybının az olması için enerji iletim hatları üzerinden geçen akımın, olabildiğince düşük olması gerekmektedir. Bunun sağlanabilmesi için şekilde basitçe gösterildiği gibi, santralde üretilen elektrik enerjisinin gerilim değeri $T_1$ transformatörü ile akım küçük bir değerde olacak şekilde değiştirilir. İletim hattının diğer ucundaki $T_2$ transformatörü ile de gerilim, evlerimizde kullanabileceğimiz nihai $220\\text{ V}$ değerine dönüştürülür. Bu dönüşüm işlemlerinde kullanılan $T_1$ transformatörünün primer ile sekonder sarım sayıları (sırasıyla $N_{1p}$ ile $N_{1s}$) ve $T_2$ transformatörünün primer ile sekonder sarım sayıları (sırasıyla $N_{2p}$ ile $N_{2s}$) arasındaki ilişkiler aşağıdakilerin hangisinde bir arada doğru olarak verilmiştir?",
     "secenekler": {
       "A": "$N_{1p} < N_{1s}$ ve $N_{2p} < N_{2s}$",
       "B": "$N_{1p} < N_{1s}$ ve $N_{2p} > N_{2s}$",
@@ -1252,7 +1253,7 @@
       "E": "$N_{1p} = N_{1s}$ ve $N_{2p} = N_{2s}$"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Transformatörler",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1263,7 +1264,7 @@
     "id": 51413,
     "ders": "AYT FİZİK",
     "soru_no": 64,
-    "soru": "",
+    "soru": "Elektrikli bir ev aleti, boşta olan 1 ve 2 numaralı kablolarına 110 V değişken gerilim uygulandığında çalışmaktadır. Bu ev aleti, boştaki 3 ve 4 numaralı kabloları arasında etkin gerilim değeri 220 V olan bir prize; K, L, M ve N uçları boşta olan bir transformatör kullanılarak, uygun şekilde bağlanıp çalıştırılmak isteniyor. Transformatörün sarım sayıları biri diğerinin iki katı olacak biçimde şekildeki gibidir.\n\nŞekilde: Solda elektrikli ev aleti üzerinde 1 ve 2 numaralı kablolar, sağda priz üzerinde 3 ve 4 numaralı kablolar bulunmaktadır. Ortada K, L, M ve N uçları boşta olan bir transformatör yer almakta olup sarım sayılarından biri diğerinin iki katıdır.\n\nBuna göre elektrikli ev aletinin doğru çalışabilmesi için transformatörün K, L, M ve N kablo uçları; 1, 2, 3 ve 4 kablolarının hangileriyle birbirine bağlanmalıdır?",
     "secenekler": {
       "A": "K-1, L-2, M-3, N-4",
       "B": "K-1, L-3, M-2, N-4",
@@ -1283,7 +1284,7 @@
     "id": 51414,
     "ders": "AYT FİZİK",
     "soru_no": 65,
-    "soru": "",
+    "soru": "Başlangıçta ($t = 0$ anında) yan yana durmaktayken doğrusal yatay bir yolda harekete başlayan K ve L otomobillerine ait hız-zaman grafiği şekilde görülmektedir. Grafikte yatay eksen zamanı, düşey eksen hızı göstermektedir; K otomobilinin hız-zaman grafiği başlangıçta artan, sonra azalan bir eğri olup $t = 30\\text{ s}$ anında sıfıra düşmektedir. L otomobilinin hız-zaman grafiği ise sürekli artan bir doğru şeklindedir. K ve L otomobillerinin hareketi ile ilgili,\n\nI. K otomobili önce hızlanmış daha sonra yavaşlayıp durmuştur.\n\nII. K otomobili 30. saniyede başlangıç konumuna geri dönmüştür.\n\nIII. 30. saniyede L otomobili K otomobilinden daha ileridedir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1292,7 +1293,7 @@
       "E": "I ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1303,7 +1304,7 @@
     "id": 51415,
     "ders": "AYT FİZİK",
     "soru_no": 66,
-    "soru": "",
+    "soru": "Esnek olmayan, yeterince sağlam bir iple sıkıca bağlanarak tavana asılan bir bilye, şekildeki gibi direnç kuvvetlerinin ihmal edildiği ortamda A ve B noktaları arasında salınım hareketi yapmaktadır. Bilyenin yörüngenin en alt noktası olan O noktasından herhangi bir geçişi sırasında bilyeye etkiyen net kuvvetin $F_{net}$, bilyenin merkezcil ivmesinin $a$ ve çizgisel hızının $v$ olduğu biliniyor.\n\nBuna göre; $F_{net}$, $a$ ve $v$'nin yönü aşağıdakilerden hangisi gibi olabilir?",
     "secenekler": {
       "A": "$F_{net}$ ve $a$ O noktasına (yukarı), $v$ yatay (hareket yönünde)",
       "B": "$F_{net}$ ve $a$ O noktasına (yukarı), $v$ yatay (hareket yönüne zıt)",
@@ -1312,7 +1313,7 @@
       "E": "$F_{net}$ yukarı, $a$ aşağı, $v$ yatay (hareket yönünde)"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Düzgün Çembersel Hareket",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1323,7 +1324,7 @@
     "id": 51416,
     "ders": "AYT FİZİK",
     "soru_no": 67,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1332,7 +1333,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1343,7 +1344,7 @@
     "id": 51417,
     "ders": "AYT FİZİK",
     "soru_no": 68,
-    "soru": "",
+    "soru": "Aleyna, sabit açısal hızla hareket eden şekildeki dönme dolabın kabinlerinden birinin içinde oturmaktadır.\n\nAleyna'nın bulunduğu kabin; A, B, C ve D noktalarından geçerken Aleyna'ya etki eden merkezcil kuvvetlerin büyüklükleri sırasıyla $F_A$, $F_B$, $F_C$ ve $F_D$ olmaktadır.\n\nAleyna'nın kütle merkezinin, dönme eksenine olan uzaklığının daima sabit kaldığı bilindiğine göre $F_A$, $F_B$, $F_C$ ve $F_D$ arasındaki ilişki aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$F_A = F_B = F_C = F_D$",
       "B": "$F_A > F_C > F_B = F_D$",
@@ -1352,7 +1353,7 @@
       "E": "$F_C > F_A > F_B = F_D$"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Düzgün Çembersel Hareket",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1363,7 +1364,7 @@
     "id": 51418,
     "ders": "AYT FİZİK",
     "soru_no": 69,
-    "soru": "",
+    "soru": "Karpuz dolu bir kamyon, manav tezgâhına şekildeki gibi yanaşıyor. O sırada yoldan geçen Ahmet ve Altay, manavın işini kolaylaştırmak için karpuzları kasanın en üst kısmından aynı şekilde ilk hızsız bıraktığında tezgâha ulaştıracak farklı uzunluktaki K, L düzeneklerini tasarlıyorlar. Karpuzların boyutu düzeneklerle karşılaştırıldığında ihmal edilecek kadar küçük olup sürtünmeler önemsizdir.\n\nK ve L düzeneklerinden ayrı ayrı tezgâha ulaşan iki özdeş karpuzun\n\nI. tezgâha ulaştıkları andaki süratleri,\n\nII. tezgâha ulaşma süreleri,\n\nIII. yer çekimi kuvvetinin üzerlerinde yaptığı toplam işler\n\nniceliklerinden hangileri kesinlikle aynıdır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1383,7 +1384,7 @@
     "id": 51419,
     "ders": "AYT FİZİK",
     "soru_no": 70,
-    "soru": "",
+    "soru": "Fizik laboratuvarında metallerin elektriksel olarak yüklenmesi ile ilgili deneyler yapan bir öğrenci, yarıçapları birbirinden farklı olan nötr iki demir bilyeyi, yalıtkan bir eldiven kullanarak tutmaktadır. Öğrenci, sağ elinde tuttuğu bilyeyi elektriksel olarak yükleyerek sol elindeki bilyeye dokundurur.\n\nBilyeler arasında yük transferi bittikten sonra bilyeler için;\n\nI. Üzerlerindeki net yük miktarları birbirine eşittir.\n\nII. Yüzeylerindeki elektriksel potansiyeller birbirine eşittir.\n\nIII. Aynı cins elektriksel yükle yüklenmişlerdir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1392,7 +1393,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektriksel Potansiyel",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1403,7 +1404,7 @@
     "id": 51420,
     "ders": "AYT FİZİK",
     "soru_no": 71,
-    "soru": "",
+    "soru": "Lunaparka giden Altay, $\\omega$ açısal sürati ile saat ibresi yönünde dönen bir hedef tahtasına arka arkaya K, L ve M oklarını atıyor. Okların hedef tahtası üzerindeki konumları şekildeki gibi oluyor ve hedef tahtası açısal sürati değişmeden hareketine devam ediyor. Şekilde hedef tahtası üzerinde K oku merkeze en yakın, L oku orta uzaklıkta, M oku merkeze en uzak konumdadır.\n\nBuna göre K, L, M oklarının çizgisel süratleri sırasıyla $v_K, v_L, v_M$ ile açısal süratleri sırasıyla $\\omega_K, \\omega_L, \\omega_M$ arasındaki ilişkiler aşağıdakilerin hangisinde doğrudur?",
     "secenekler": {
       "A": "Çizgisel sürat: $v_K = v_L = v_M$ — Açısal sürat: $\\omega_K = \\omega_L = \\omega_M$",
       "B": "Çizgisel sürat: $v_M > v_L > v_K$ — Açısal sürat: $\\omega_M > \\omega_L > \\omega_K$",
@@ -1423,7 +1424,7 @@
     "id": 51421,
     "ders": "AYT FİZİK",
     "soru_no": 72,
-    "soru": "",
+    "soru": "Sürtünmesiz yatay düzlemde bir ipin ucuna bağlı düzgün çembersel hareket yapan bir cam bilye ile bir yayın ucuna bağlı basit harmonik hareket yapan bir demir bilyenin hareketleri karşılaştırılmaktadır. Her iki bilye de periyodik hareket yapmaktadır.\n\nBuna göre bu iki bilyenin,\n\nI. Süratleri daima sabittir.\n\nII. İvmeleri daima hıza diktir.\n\nIII. Bir periyotluk zamanda net kuvvetin bilyeler üzerine yaptığı iş sıfırdır.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1443,7 +1444,7 @@
     "id": 51422,
     "ders": "AYT FİZİK",
     "soru_no": 73,
-    "soru": "",
+    "soru": "O merkezli ve farklı yarıçaplarda üç farklı düzgün çembersel koşu parkuruna sahip bir stadyumda K, L ve M kulvarları bulunmaktadır. Bu parkurlarda yarışacak olan Kardelen, Lale ve Menekşe sırasıyla K, L ve M kulvarlarında şekilde gösterilen çizgilerden başlayarak ok yönünde bitiş çizgisine kadar koşacaktır. Şekilde O merkezli üç eş merkezli çembersel parkur görülmektedir; K en içte, L ortada, M en dıştadır. Tüm koşucular aynı bitiş çizgisinde yarışı tamamlar. Bu yarışta aynı anda ve sabit süratle koşmaya başladıkları kabul edilen üç koşucudan; Kardelen ve Lale'nin aynı anda, Menekşe'nin ise onlardan sonra bitiş çizgisine ulaştığı bilinmektedir. Sabit süratle hareket eden bu koşucuların O merkezine göre açısal hızlarının büyüklükleri sırasıyla $w_K$, $w_L$ ve $w_M$ nin arasındaki ilişki aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$w_K > w_L > w_M$",
       "B": "$w_K = w_L > w_M$",
@@ -1463,7 +1464,7 @@
     "id": 51423,
     "ders": "AYT FİZİK",
     "soru_no": 74,
-    "soru": "",
+    "soru": "Bir astronot, yeryüzünden fırlatılan bir roketin taşıdığı kapsül ile uzay yolculuğuna başlamıştır. • Kapsül, fırlatıldıktan yaklaşık 10 dakika sonra geçici bir süreliğine, yerden yaklaşık 200 km yükseklikteki K çembersel yörüngesinde hareket etmeye başlamıştır. • Fırlatılışından yaklaşık 36 saat sonra da kapsül, motorlarını çalıştırarak yörünge yarıçapını yükseltmiş ve Yerküre'den yaklaşık 400 km yükseklikteki L yörüngesinde çembersel hareket yapmaya başlamıştır. • Daha sonra da bu kapsül, yer seviyesinden aynı yükseklikteki bir başka yörüngede çembersel hareket yapmakta olan Uluslararası Uzay İstasyonu (ISS) ile kenetlenerek uzay aracı ile birlikte yine yaklaşık 400 km yükseklikteki M yörüngesinde çembersel hareket yapmaya devam etmiştir. Her üç yörüngede de kapsül, Yerküre'nin uyguladığı kütle çekim kuvveti etkisinde düzgün çembersel hareket yaptığına göre K, L ve M yörüngelerinde kapsülün ortalama süratleri sırasıyla $v_K$, $v_L$ ve $v_M$ arasındaki ilişki aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$v_K = v_L = v_M$",
       "B": "$v_K > v_L > v_M$",
@@ -1483,7 +1484,7 @@
     "id": 51424,
     "ders": "AYT FİZİK",
     "soru_no": 75,
-    "soru": "",
+    "soru": "Kütlesi $1000\\ \\text{kg}$ olan boyutları önemsiz bir otomobil, eğrilik yarıçapı $50\\ \\text{m}$ olan çember yayı biçimindeki bir yolun üzerinden şekildeki gibi $10\\ \\text{m/s}$'lik sabit süratle geçmektedir. (Şekilde otomobil, tepe noktası yukarı bakan çember yayı biçimindeki tümseğin en yüksek noktasındadır.) Buna göre yerin en yüksek noktasındayken otomobilin yola uyguladığı kuvvetin büyüklüğünün ağırlığına oranı kaçtır? (Yer çekimi ivmesinin büyüklüğünü $10\\ \\text{m/s}^2$ alınız.)",
     "secenekler": {
       "A": "$\\frac{4}{5}$",
       "B": "$1$",
@@ -1492,7 +1493,7 @@
       "E": "$4$"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Dönerek Öteleme Hareketi",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1503,7 +1504,7 @@
     "id": 51425,
     "ders": "AYT FİZİK",
     "soru_no": 76,
-    "soru": "",
+    "soru": "Karpuz dolu bir kamyon, manav tezgâhına şekildeki gibi yanaşıyor. O sırada yoldan geçen Ahmet ve Altay, manavın işini kolaylaştırmak için karpuzları kasanın en üst kısmından aynı şekilde ilk hızsız bıraktığında tezgâha ulaştıracak farklı uzunluktaki K, L düzeneklerini tasarlıyorlar. Karpuzların boyutu düzeneklerle karşılaştırıldığında ihmal edilecek kadar küçük olup sürtünmeler önemsizdir.\n\nK ve L düzeneklerinden ayrı ayrı tezgâha ulaşan iki özdeş karpuzun\n\nI. tezgâha ulaştıkları andaki süratleri,\n\nII. tezgâha ulaşma süreleri,\n\nIII. yer çekimi kuvvetinin üzerlerinde yaptığı toplam işler\n\nniceliklerinden hangileri kesinlikle aynıdır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1523,7 +1524,7 @@
     "id": 51426,
     "ders": "AYT FİZİK",
     "soru_no": 77,
-    "soru": "",
+    "soru": "Fizik laboratuvarında metallerin elektriksel olarak yüklenmesi ile ilgili deneyler yapan bir öğrenci, yarıçapları birbirinden farklı olan nötr iki demir bilyeyi, yalıtkan bir eldiven kullanarak tutmaktadır. Öğrenci, sağ elinde tuttuğu bilyeyi elektriksel olarak yükleyerek sol elindeki bilyeye dokundurur.\n\nBilyeler arasında yük transferi bittikten sonra bilyeler için;\n\nI. Üzerlerindeki net yük miktarları birbirine eşittir.\n\nII. Yüzeylerindeki elektriksel potansiyeller birbirine eşittir.\n\nIII. Aynı cins elektriksel yükle yüklenmişlerdir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1532,7 +1533,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektriksel Potansiyel",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1543,7 +1544,7 @@
     "id": 51427,
     "ders": "AYT FİZİK",
     "soru_no": 78,
-    "soru": "",
+    "soru": "Buz pisti üzerinde bulunan Faruk, dik bir pozisyonda ve ellerini iki yana açarak, ağırlık merkezinden geçen düşey bir eksen etrafında sabit açısal hız ile dönmektedir.\n\nFaruk, ellerini vücuduna doğru yaklaştırdıkça düşey dönme eksenine göre açısal momentumu ile eylemsizlik momenti ilk duruma göre nasıl değişir? (Sürtünmeler ihmal edilecektir.)",
     "secenekler": {
       "A": "Açısal momentumu: Artar, Eylemsizlik momenti: Değişmez",
       "B": "Açısal momentumu: Azalır, Eylemsizlik momenti: Artar",
@@ -1552,7 +1553,7 @@
       "E": "Açısal momentumu: Değişmez, Eylemsizlik momenti: Azalır"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Açısal Momentum",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1563,7 +1564,7 @@
     "id": 51428,
     "ders": "AYT FİZİK",
     "soru_no": 79,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1572,7 +1573,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1583,7 +1584,7 @@
     "id": 51429,
     "ders": "AYT FİZİK",
     "soru_no": 80,
-    "soru": "",
+    "soru": "Yerküre, Güneş etrafında birbirlerine uyguladıkları kütle çekim kuvveti nedeniyle belirli bir yörünge izlemektedir. Her yıl bu yörünge üzerinde Yerküre'nin Güneş'e en yakın olduğu gün 3 Ocak'tır.\n\nGüneş dışındaki diğer gök cisimlerinin etkisinin ihmal edildiği durumda;\n\nI. Yerküre'nin çizgisel hızı,\n\nII. Yerküre'nin Güneş'e göre açısal momentumu,\n\nIII. Yerküre'ye Güneş tarafından uygulanan kütle çekim kuvveti\n\nbüyüklüklerinden hangileri 3 Ocak'ta, 3 Haziran'dakinden daha büyüktür?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -1592,7 +1593,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Kütle Çekim Kuvveti",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1603,7 +1604,7 @@
     "id": 51430,
     "ders": "AYT FİZİK",
     "soru_no": 81,
-    "soru": "",
+    "soru": "Ekvator düzlemindeki bir çembersel yörüngede Yerküre'nin dönme hareketi ile aynı yönde dolanan bir televizyon uydusu, Türkiye'de herhangi bir yerde sabit bulunan birine göre doğuya doğru hareket etmektedir. Yeryüzündeki televizyon antenlerinin bu uydudan kesintisiz olarak sinyal almaları için uydunun, Türkiye'de herhangi bir yerde sabit bulunan birine göre gökyüzündeki konumunun hep aynı kalması gerekmektedir.\n\nUydu ile ilgili bu sorunun düzeltilmesi için aşağıdakilerden hangisi yapılmalıdır?",
     "secenekler": {
       "A": "Uydunun kütlesi azaltılarak tekrar aynı yarıçaplı çembersel yörüngede dolanması sağlanmalıdır.",
       "B": "Uydunun kütlesi artırılarak tekrar aynı yarıçaplı çembersel yörüngede dolanması sağlanmalıdır.",
@@ -1612,7 +1613,7 @@
       "E": "Uydunun aynı yarıçaplı yörüngede fakat Yerküre'nin kendi ekseni etrafındaki dönme yönüne ters yönde dolanması sağlanmalıdır."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kütle Çekim Kuvveti",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1623,7 +1624,7 @@
     "id": 51431,
     "ders": "AYT FİZİK",
     "soru_no": 82,
-    "soru": "",
+    "soru": "Yerküre, Güneş etrafında birbirlerine uyguladıkları kütle çekim kuvveti nedeniyle belirli bir yörünge izlemektedir. Her yıl bu yörünge üzerinde Yerküre'nin Güneş'e en yakın olduğu gün 3 Ocak'tır.\n\nGüneş dışındaki diğer gök cisimlerinin etkisinin ihmal edildiği durumda;\n\nI. Yerküre'nin çizgisel hızı,\n\nII. Yerküre'nin Güneş'e göre açısal momentumu,\n\nIII. Yerküre'ye Güneş tarafından uygulanan kütle çekim kuvveti\n\nbüyüklüklerinden hangileri 3 Ocak'ta, 3 Haziran'dakinden daha büyüktür?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -1632,7 +1633,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kütle Çekim Kuvveti",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1643,7 +1644,7 @@
     "id": 51432,
     "ders": "AYT FİZİK",
     "soru_no": 83,
-    "soru": "",
+    "soru": "Yerküre'ye Güneş dışındaki gök cisimlerinin uyguladığı kuvvetlerin açısal momentuma ve hıza olan etkisinin ihmal edildiği durumda Yerküre, Güneş'in uyguladığı kütle çekim kuvvetinin etkisiyle şekildeki gibi eliptik bir yörüngede dolanmaktadır. (Şekilde Güneş odaklı eliptik bir yörünge üzerinde A ve B konumları işaretlenmiştir.) Yerküre, A veya B konumundayken Güneş'in merkezine olan uzaklığı sırasıyla $r_1$ ve $r_2$'dir. $r_1$ uzaklığı $r_2$ uzaklığından büyüktür.\n\nBuna göre Yerküre A veya B konumundayken Güneş-Yerküre sisteminin açısal momentumunun büyüklükleri sırasıyla $L_A$ ve $L_B$, Yerküre'nin çizgisel hızının büyüklükleri sırasıyla $v_A$ ve $v_B$ arasındaki ilişkiler aşağıdakilerin hangisinde doğrudur?",
     "secenekler": {
       "A": "Açısal momentum: $L_A > L_B$; Çizgisel hız: $v_A = v_B$",
       "B": "Açısal momentum: $L_A = L_B$; Çizgisel hız: $v_A > v_B$",
@@ -1663,7 +1664,7 @@
     "id": 51433,
     "ders": "AYT FİZİK",
     "soru_no": 84,
-    "soru": "",
+    "soru": "Bir gezegenin halkaları kendi yörüngelerinde dolanan birçok parçacıktan oluşmuştur. Şekilde bu gezegenin etrafında dolanan özdeş K ve M parçacıklarından gezegene daha yakın bir yörüngedeki K parçacığı ile daha uzak bir yörüngedeki M parçacığının konumları gösterilmiştir. K ve M parçacıklarının yörüngeleri çembersel kabul edilmiştir. (Şekilde gezegen merkezli iki çembersel yörünge görülmektedir; iç yörüngede K parçacığı, dış yörüngede M parçacığı yer almaktadır.) Buna göre K parçacığının aşağıdaki niceliklerinden hangisi M parçacığınınkinden daha küçüktür?",
     "secenekler": {
       "A": "Çizgisel sürati",
       "B": "Yörünge periyodu",
@@ -1672,7 +1673,7 @@
       "E": "Gezegenin uyguladığı kütle çekim kuvvetinin büyüklüğü"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Gök Mekaniği / Dairesel Yörünge",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1683,7 +1684,7 @@
     "id": 51434,
     "ders": "AYT FİZİK",
     "soru_no": 85,
-    "soru": "",
+    "soru": "Yerküre'nin Güneş etrafındaki periyodik hareketinin dört farklı anında Yerküre'nin yörüngesi üzerindeki konumlar şekilde K, L, M ve N ile gösterilmiştir. Ardışık konumlar arasında geçen süreler birbirlerine eşit olup K, L, M ve N konumlarında Yerküre'nin Güneş'e olan uzaklıkları sırasıyla $r_K$, $r_L$, $r_M$ ve $r_N$ arasındaki ilişki $r_L > r_K > r_M > r_N$ şeklindedir. (Şekilde Güneş merkezli eliptik yörünge üzerinde K, L, M ve N konumları ve Güneş'e olan $r_K$, $r_L$, $r_M$, $r_N$ uzaklıkları gösterilmektedir.) Güneş dışındaki diğer gök cisimlerinin Yerküre'ye etkisi ihmal edildiğine göre\n\nI. Güneş'i Yerküre'yle birleştiren çizginin K-L arasında taradığı alan, M-N arasında taradığı alandan daha büyüktür.\n\nII. L'den K'ye kadar olan süreç içerisinde Yerküre'nin Güneş'e göre açısal momentumu önce artar sonra azalır.\n\nIII. Yerküre'nin kinetik ve potansiyel enerjilerinin toplamının N'deki değeri, M'deki değerine eşittir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1692,7 +1693,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Kepler Yasaları / Açısal Momentum ve Enerji",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1703,7 +1704,7 @@
     "id": 51435,
     "ders": "AYT FİZİK",
     "soru_no": 86,
-    "soru": "",
+    "soru": "Sürtünmelerin ihmal edildiği ve yer çekim ivmesinin $10\\ \\text{m/s}^2$ olarak kabul edildiği ortamda, bir ucu tavana sabitlenmiş olan esnek yayın diğer ucuna $2\\ \\text{kg}$ kütleli noktasal bir cisim asılarak düşey doğrultuda basit harmonik hareket yapması sağlanıyor. Cismin titreşim periyodunun, basit harmonik hareket yapan $1\\ \\text{m}$ uzunluğundaki bir basit sarkacın salınım periyoduna eşit olması isteniyor.\n\nBuna göre, yayın esneklik sabiti kaç $\\text{N/m}$ olmalıdır?",
     "secenekler": {
       "A": "10",
       "B": "20",
@@ -1712,7 +1713,7 @@
       "E": "50"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Basit Harmonik Hareket",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1723,7 +1724,7 @@
     "id": 51436,
     "ders": "AYT FİZİK",
     "soru_no": 87,
-    "soru": "",
+    "soru": "Tüm sürtünmelerin ihmal edildiği bir ortamda şekildeki özdeş ve kütleleri önemsiz yayların uçlarına bağlanmış, eşit kütleli X, Y ve Z cisimleri; yayların denge konumlarından eşit miktarda çekilip serbest bırakıldıktan sonra; X ve Z cisimleri düşey doğrultuda, Y cismi ise eğik düzlem yüzeyine paralel doğrultuda basit harmonik hareket yapmaktadır. Şekilde X ve Z cisimleri düşey asılı yaylara, Y cismi ise eğik düzlem üzerindeki bir yaya bağlıdır; tüm yaylar özdeştir ve cisimlerin kütleleri eşittir.\n\nBuna göre; X, Y ve Z cisimlerinin titreşim frekansları; $f_X$, $f_Y$ ve $f_Z$ arasındaki ilişki nedir?",
     "secenekler": {
       "A": "$f_X < f_Y = f_Z$",
       "B": "$f_X = f_Y < f_Z$",
@@ -1732,7 +1733,7 @@
       "E": "$f_X < f_Y < f_Z$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Basit Harmonik Hareket",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1743,7 +1744,7 @@
     "id": 51437,
     "ders": "AYT FİZİK",
     "soru_no": 88,
-    "soru": "",
+    "soru": "Bir öğretmen sınıfta basit sarkaç ve kütle-yay sistemlerinin periyotlarını belirlemek amacıyla sürtünmelerin ihmal edildiği bir ortamda aşağıdaki deneyleri öğrencilerine yapmıştır:\n\n• Kendi tasarladığı bir basit sarkacın, küçük açısal genlikli salınımlarının periyodunu $T_B$ olarak ölçmüştür.\n\n• Bir ucu tavana bağlı esnek yayın diğer ucuna astığı kütlenin düşey doğrultudaki salınımlarının periyodunu $T_Y$ olarak ölçmüştür.\n\nÖğretmen, bu sistemlerin fiziksel özelliklerini değiştirmeden aynı deneyleri simülasyonla yeryüzü yerine ay yüzeyinde gerçekleştirseydi $T_B$ ve $T_Y$ periyotlarının değerleri ilk duruma göre nasıl değişirdi?",
     "secenekler": {
       "A": "$T_B$ artar, $T_Y$ değişmez",
       "B": "$T_B$ artar, $T_Y$ artar",
@@ -1752,7 +1753,7 @@
       "E": "$T_B$ değişmez, $T_Y$ değişmez"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Basit Harmonik Hareket",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1763,7 +1764,7 @@
     "id": 51438,
     "ders": "AYT FİZİK",
     "soru_no": 89,
-    "soru": "",
+    "soru": "Yerküre, Güneş etrafında birbirlerine uyguladıkları kütle çekim kuvveti nedeniyle belirli bir yörünge izlemektedir. Her yıl bu yörünge üzerinde Yerküre'nin Güneş'e en yakın olduğu gün 3 Ocak'tır.\n\nGüneş dışındaki diğer gök cisimlerinin etkisinin ihmal edildiği durumda;\n\nI. Yerküre'nin çizgisel hızı,\n\nII. Yerküre'nin Güneş'e göre açısal momentumu,\n\nIII. Yerküre'ye Güneş tarafından uygulanan kütle çekim kuvveti\n\nbüyüklüklerinden hangileri 3 Ocak'ta, 3 Haziran'dakinden daha büyüktür?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -1772,7 +1773,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Kütle Çekim Kuvveti",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1783,7 +1784,7 @@
     "id": 51439,
     "ders": "AYT FİZİK",
     "soru_no": 90,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1792,7 +1793,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1803,7 +1804,7 @@
     "id": 51440,
     "ders": "AYT FİZİK",
     "soru_no": 91,
-    "soru": "",
+    "soru": "Hava sürtünmesinin ihmal edildiği bir ortamda bir ipin ucuna bağlanmış noktasal bir hedef $A$ ve $C$ noktaları arasında basit harmonik hareket yapmaktadır. Hedef $A$ noktasından harekete başladığı anda bir okçu şekildeki oku yere paralel $50\\text{ m/s}$'lik sabit hızla fırlattığında ok, hedefi $100\\text{ m}$ uzaktaki $B$ noktasından ilk kez geçerken vurmaktadır. ($B$ noktası $A$ ile $C$ arasındaki denge noktasıdır.)\n\nB noktası denge noktası olduğuna göre hedefin salınım periyodu kaç saniyedir?",
     "secenekler": {
       "A": "2",
       "B": "4",
@@ -1823,7 +1824,7 @@
     "id": 51441,
     "ders": "AYT FİZİK",
     "soru_no": 92,
-    "soru": "",
+    "soru": "Kütlesi önemsiz olan şekildeki metronom çubuğu, kütlesi büyük olan uç kısmındaki noktasal sayılabilen sürgüyle birlikte her durumda basit sarkaç gibi basit harmonik hareket yapmaktadır. Sürgü ileri geri kaydırılabilir ve sürgüyle sabit nokta arasındaki uzaklık ayarlanarak çubuğun salınım periyodu değiştirilebilir. Örneğin sürgünün sabit noktaya doğru kaydırılması periyodun azalmasına neden olur. Şekildeki metronom çubuğunun üzerindeki noktalar eşit aralıklıdır. (Şekilde metronom çubuğu üzerinde sabit bir nokta ile eşit aralıklı K ve L noktaları işaretlenmiştir; sürgü K veya L noktasına yerleştirilebilmektedir.) Metronomun bulunduğu ortam değiştirilmediğine göre sürgü K noktasındayken çubuğun salınım periyodu $T_K$, L noktasındayken $T_L$ ise $T_K / T_L$ oranı kaçtır?",
     "secenekler": {
       "A": "$\\frac{1}{\\sqrt{2}}$",
       "B": "$\\frac{1}{\\sqrt{3}}$",
@@ -1843,7 +1844,7 @@
     "id": 51442,
     "ders": "AYT FİZİK",
     "soru_no": 93,
-    "soru": "",
+    "soru": "Başlangıçta ($t = 0$ anında) yan yana durmaktayken doğrusal yatay bir yolda harekete başlayan K ve L otomobillerine ait hız-zaman grafiği şekilde görülmektedir. Grafikte yatay eksen zamanı, düşey eksen hızı göstermektedir; K otomobilinin hız-zaman grafiği başlangıçta artan, sonra azalan bir eğri olup $t = 30\\text{ s}$ anında sıfıra düşmektedir. L otomobilinin hız-zaman grafiği ise sürekli artan bir doğru şeklindedir. K ve L otomobillerinin hareketi ile ilgili,\n\nI. K otomobili önce hızlanmış daha sonra yavaşlayıp durmuştur.\n\nII. K otomobili 30. saniyede başlangıç konumuna geri dönmüştür.\n\nIII. 30. saniyede L otomobili K otomobilinden daha ileridedir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1852,7 +1853,7 @@
       "E": "I ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1863,7 +1864,7 @@
     "id": 51443,
     "ders": "AYT FİZİK",
     "soru_no": 94,
-    "soru": "",
+    "soru": "Bir sarkaç şekilde gösterilen K ve N noktaları arasında basit harmonik hareket yapmaktadır. (Şekilde sarkacın yörüngesi üzerinde K, L, M ve N noktaları sırasıyla işaretlenmiştir; M noktası K ile N arasında denge konumudur.) M noktasının denge konumu olduğu bilindiğine göre sarkaç; K, L, M ve N noktalarından geçerken sahip olduğu sürat sırasıyla $v_K$, $v_L$, $v_M$ ve $v_N$ arasındaki ilişki aşağıdakilerin hangisidir?",
     "secenekler": {
       "A": "$v_N > v_M > v_L > v_K$",
       "B": "$v_K > v_L > v_M > v_N$",
@@ -1883,7 +1884,7 @@
     "id": 51444,
     "ders": "AYT FİZİK",
     "soru_no": 95,
-    "soru": "",
+    "soru": "Durgun su ile dolu bir havuzda bulunan iki balık, yüzeye yakın bir konumda suya göre hareketsiz durarak ağızlarını periyodik hareketlerle açıp kapatmakta böylece şekildeki gibi eş fazlı ve eşit genlikli dairesel su dalgaları oluşturmaktadır. Şekilde çizilen çemberler dalga tepelerini göstermektedir. (Şekilde iki balık kaynağından çıkan eş merkezli dalga tepeleri çemberleri ve su yüzeyinde A, B, C noktaları işaretlenmiştir. A noktası iki kaynağın dalga tepelerinin kesiştiği girişim çizgisi üzerinde, B noktası bir kaynağın dalga tepesi ile diğerinin dalga çukurunun kesiştiği düğüm çizgisi üzerinde, C noktası ise dalga tepelerinin kesiştiği başka bir girişim çizgisi üzerindedir.) Buna göre, su yüzeyindeki A, B ve C noktalarında yüzen hafif yem taneciklerinden hangileri oluşan dalgalardan etkilenmeden hareketsiz kalabilir?",
     "secenekler": {
       "A": "Yalnız A",
       "B": "Yalnız B",
@@ -1892,7 +1893,7 @@
       "E": "B ve C"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Dalgalarda Kırınım, Girişim ve Doppler Olayı",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1903,7 +1904,7 @@
     "id": 51445,
     "ders": "AYT FİZİK",
     "soru_no": 96,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1923,7 +1924,7 @@
     "id": 51446,
     "ders": "AYT FİZİK",
     "soru_no": 97,
-    "soru": "",
+    "soru": "Fizik laboratuvarında metallerin elektriksel olarak yüklenmesi ile ilgili deneyler yapan bir öğrenci, yarıçapları birbirinden farklı olan nötr iki demir bilyeyi, yalıtkan bir eldiven kullanarak tutmaktadır. Öğrenci, sağ elinde tuttuğu bilyeyi elektriksel olarak yükleyerek sol elindeki bilyeye dokundurur.\n\nBilyeler arasında yük transferi bittikten sonra bilyeler için;\n\nI. Üzerlerindeki net yük miktarları birbirine eşittir.\n\nII. Yüzeylerindeki elektriksel potansiyeller birbirine eşittir.\n\nIII. Aynı cins elektriksel yükle yüklenmişlerdir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1932,7 +1933,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektriksel Potansiyel",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1943,7 +1944,7 @@
     "id": 51447,
     "ders": "AYT FİZİK",
     "soru_no": 98,
-    "soru": "",
+    "soru": "Derinliği her yerinde aynı olan durgun bir göl yüzeyine özdeş taşlar iki farklı noktaya düşey doğrultuda aynı anda atılarak periyodik su dalgaları oluşturulmaktadır. Oluşan dairesel su dalgalarının yaptığı girişim deseninin üstten görünüşü şekildeki gibidir. Çemberler genişleyen desendeki dalga tepelerini temsil etmektedir. (Şekilde iki kaynaktan çıkan eş merkezli dalga tepesi çemberleri ve su yüzeyinde I, II, III numaralı noktalar işaretlenmiştir. I ve III noktaları dalga tepelerinin kesiştiği girişim çizgileri üzerinde, II noktası ise bir kaynağın dalga tepesi ile diğerinin dalga çukurunun kesiştiği düğüm çizgisi üzerindedir.) Buna göre su yüzeyinin I, II ve III numaralı noktalarındaki suların titreşim genlikleri sırasıyla $A_I$, $A_{II}$ ve $A_{III}$ ise bunlar arasındaki ilişki aşağıdakilerin hangisinde doğrudur?",
     "secenekler": {
       "A": "$A_I = A_{II} = A_{III}$",
       "B": "$A_{II} > A_I > A_{III}$",
@@ -1952,7 +1953,7 @@
       "E": "$A_{III} > A_I > A_{II}$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Dalgalarda Kırınım, Girişim ve Doppler Olayı",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1963,7 +1964,7 @@
     "id": 51448,
     "ders": "AYT FİZİK",
     "soru_no": 99,
-    "soru": "",
+    "soru": "Durgun bir ambulansın sireni, frekansı $1600\\ \\text{Hz}$ olan ses dalgaları yayıyor. Bu ambulans aynı frekansta ses dalgaları yayarken sabit hızla doğrusal bir yolda harekete başladığında Altay'dan uzaklaşmaktayken Asuman'a yaklaşmaktadır. Ahmet ise ambulansta oturmaktadır.\n\nBuna göre ambulans hareket hâlindeyken Ahmet, Asuman ve Altay'ın işittiği ses dalgalarının frekansıyla ilgili aşağıdakilerden hangisi doğru olabilir?",
     "secenekler": {
       "A": "Ahmet'in işittiği frekans $1900\\ \\text{Hz}$'dir.",
       "B": "Altay'ın işittiği frekans $1800\\ \\text{Hz}$'dir.",
@@ -1972,7 +1973,7 @@
       "E": "Altay'ın işittiği frekans $1600\\ \\text{Hz}$'dir."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Ses Dalgaları - Doppler Olayı",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1983,7 +1984,7 @@
     "id": 51449,
     "ders": "AYT FİZİK",
     "soru_no": 100,
-    "soru": "",
+    "soru": "Işığın tek yarıkta kırınımı deneyinde yarıktan geçen ışık ışınlarının ekran üzerinde, girişim olayındakine benzer aydınlık ve karanlık saçaklara sahip bir kırınım deseni oluşturduğu bilinmektedir.\n\nBuna göre ikinci bir kaynak veya ikinci bir yarık olmamasına rağmen girişim olayındakine benzer bir kırınım deseni oluşması aşağıdakilerden hangisinin bir sonucudur?",
     "secenekler": {
       "A": "Yarık üzerindeki her bir noktanın bir ışık kaynağı gibi davranması",
       "B": "Yarığın geniş olmasının daha fazla ışık geçişine izin vermesi",
@@ -1992,7 +1993,7 @@
       "E": "Gelen ışığın yarıktan sapmadan ve dağılmadan geçebilmesi"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Işığın Kırınımı",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2003,7 +2004,7 @@
     "id": 51450,
     "ders": "AYT FİZİK",
     "soru_no": 101,
-    "soru": "",
+    "soru": "Üç şeritli bir yolda birbirlerinden farklı sabit hızlarla ilerleyen bir ambulans ve dört otomobilin belirli bir andaki konumları şekilde görülmektedir. Ambulans saatte $90$ kilometre sabit hızla ilerlemektedir. Diğer araçlar; K, L, M ve N ise sırasıyla saatte $110$, $120$, $80$ ve $50$ kilometre sabit hızlarla aynı yönde ilerlemektedir. Ambulansın sireni ise sabit $900\\ \\text{Hz}$ frekansta ses dalgaları üretmektedir.\n\nŞekilde üç şeritli yol üzerinde araçların belirli bir andaki konumları verilmiştir; araçların şerit konumları ve birbirlerine göre önde/geride olma durumları görselde gösterilmektedir.\n\nBuna göre araçlar gösterilen konumdayken bir süre sonra hangi araçların sürücüleri ambulans sireninin sesini $900\\ \\text{Hz}$'ten daha yüksek bir frekansta işitebilir?",
     "secenekler": {
       "A": "K ve L",
       "B": "K ve N",
@@ -2012,7 +2013,7 @@
       "E": "L ve N"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Ses Dalgaları - Doppler Olayı",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -2023,7 +2024,7 @@
     "id": 51451,
     "ders": "AYT FİZİK",
     "soru_no": 102,
-    "soru": "",
+    "soru": "Yerküre, Güneş etrafında birbirlerine uyguladıkları kütle çekim kuvveti nedeniyle belirli bir yörünge izlemektedir. Her yıl bu yörünge üzerinde Yerküre'nin Güneş'e en yakın olduğu gün 3 Ocak'tır.\n\nGüneş dışındaki diğer gök cisimlerinin etkisinin ihmal edildiği durumda;\n\nI. Yerküre'nin çizgisel hızı,\n\nII. Yerküre'nin Güneş'e göre açısal momentumu,\n\nIII. Yerküre'ye Güneş tarafından uygulanan kütle çekim kuvveti\n\nbüyüklüklerinden hangileri 3 Ocak'ta, 3 Haziran'dakinden daha büyüktür?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -2032,7 +2033,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Kütle Çekim Kuvveti",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2043,7 +2044,7 @@
     "id": 51452,
     "ders": "AYT FİZİK",
     "soru_no": 103,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2052,7 +2053,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2063,7 +2064,7 @@
     "id": 51453,
     "ders": "AYT FİZİK",
     "soru_no": 104,
-    "soru": "",
+    "soru": "Sürtünmesiz yatay düzlemde bir ipin ucuna bağlı düzgün çembersel hareket yapan bir cam bilye ile bir yayın ucuna bağlı basit harmonik hareket yapan bir demir bilyenin hareketleri karşılaştırılmaktadır. Her iki bilye de periyodik hareket yapmaktadır.\n\nBuna göre bu iki bilyenin,\n\nI. Süratleri daima sabittir.\n\nII. İvmeleri daima hıza diktir.\n\nIII. Bir periyotluk zamanda net kuvvetin bilyeler üzerine yaptığı iş sıfırdır.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2083,7 +2084,7 @@
     "id": 51454,
     "ders": "AYT FİZİK",
     "soru_no": 105,
-    "soru": "",
+    "soru": "Bir uzay istasyonunda çalışan Elif, süpernova patlaması sonucunda uzaydaki belli bir noktadan yayılan elektromanyetik dalgaların enerji karakteristiklerini inceliyor. Bu dalgaların, atom çekirdeklerinden yayınlandığı ve elektromanyetik spektrumun en yüksek enerjili bölgesinde yer aldığı sonucuna ulaşıyor.\n\nBuna göre Elif'in incelediği elektromanyetik dalgalar aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Radyo dalgaları",
       "B": "X ışını",
@@ -2103,7 +2104,7 @@
     "id": 51455,
     "ders": "AYT FİZİK",
     "soru_no": 106,
-    "soru": "",
+    "soru": "Fizik laboratuvarında metallerin elektriksel olarak yüklenmesi ile ilgili deneyler yapan bir öğrenci, yarıçapları birbirinden farklı olan nötr iki demir bilyeyi, yalıtkan bir eldiven kullanarak tutmaktadır. Öğrenci, sağ elinde tuttuğu bilyeyi elektriksel olarak yükleyerek sol elindeki bilyeye dokundurur.\n\nBilyeler arasında yük transferi bittikten sonra bilyeler için;\n\nI. Üzerlerindeki net yük miktarları birbirine eşittir.\n\nII. Yüzeylerindeki elektriksel potansiyeller birbirine eşittir.\n\nIII. Aynı cins elektriksel yükle yüklenmişlerdir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -2112,7 +2113,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektriksel Potansiyel",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -2123,7 +2124,7 @@
     "id": 51456,
     "ders": "AYT FİZİK",
     "soru_no": 107,
-    "soru": "",
+    "soru": "Atomun yapısını açıklamak amacıyla zaman içinde üretilen bazı atom teorilerine ait bilgiler aşağıda numaralandırılarak verilmiştir.\n\nI. Atomda pozitif yüklü parçacıkların bulunduğu, çekirdek adı verilen bir yapı olduğu fikri ortaya atılmıştır.\n\nII. Bir atoma ait elektronların olası konumlarının dalga denklemi ile hesaplanabileceği fikri ortaya atılmıştır.\n\nIII. Elektronların ışıma yapmadan kesikli enerji değerlerine sahip bazı kararlı yörüngelerde dolandığı fikri ortaya atılmıştır.\n\nBu bilgilerin atom teorilerinin tarihsel gelişimine göre doğru sıralaması aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "II - I - III",
       "B": "I - II - III",
@@ -2132,7 +2133,7 @@
       "E": "III - II - I"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Atom Kavramının Tarihsel Gelişimi",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2143,7 +2144,7 @@
     "id": 51457,
     "ders": "AYT FİZİK",
     "soru_no": 108,
-    "soru": "",
+    "soru": "Temel parçacıklar ve bunlar arasındaki etkileşimleri açıklayan standart modelin öngördüğü ve keşfedilen son parçacık Higgs bozonudur. Higgs bozonu ile etkileşen parçacıkların kütle kazandığı öngörülmektedir.\n\nBu modele göre;\n\nI. foton,\n\nII. elektron,\n\nIII. yukarı kuark\n\nparçacıklarından hangileri Higgs bozonu ile etkileşir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2152,7 +2153,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Büyük Patlama ve Evrenin Oluşumu",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2163,7 +2164,7 @@
     "id": 51458,
     "ders": "AYT FİZİK",
     "soru_no": 109,
-    "soru": "",
+    "soru": "X, Y ve Z doğadaki dört temel kuvvetten üçünü temsil etmektedir. Bu kuvvetlerle ilgili aşağıdaki bilgiler verilmiştir.\n\n• Gök cisimlerinin birbirlerine uyguladığı ve bir arada kalmalarını sağlayan kuvvet X'tir.\n\n• Hidrojen atomundaki proton ve elektronun birbirlerine uyguladığı kuvvet Y'dir.\n\n• Helyum atomunun çekirdeğinde bulunan protonların birbirlerine uyguladığı ve çekirdek içinde bir arada kalmalarını sağlayan kuvvet Z'dir.\n\nBuna göre X, Y ve Z kuvvetleri ile ilgili aşağıdaki eşleştirmelerden hangisi doğru olabilir?",
     "secenekler": {
       "A": "X: Güçlü (yeğin) çekirdek kuvveti, Y: Kütle çekim kuvveti, Z: Elektromanyetik kuvvet",
       "B": "X: Güçlü (yeğin) çekirdek kuvveti, Y: Elektromanyetik kuvvet, Z: Kütle çekim kuvveti",
@@ -2172,7 +2173,7 @@
       "E": "X: Kütle çekim kuvveti, Y: Elektromanyetik kuvvet, Z: Güçlü (yeğin) çekirdek kuvveti"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Radyoaktivite",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2183,7 +2184,7 @@
     "id": 51459,
     "ders": "AYT FİZİK",
     "soru_no": 110,
-    "soru": "",
+    "soru": "Elektronik bir müzik çalarda şarkı çalındığı esnada müzik çaların ses sinyali çıkışında, farklı frekans değerlerine sahip ve üst üste binmiş çok sayıda alternatif gerilim oluşmaktadır. Böyle bir müzik çaların ses sinyali çıkışı ile hoparlör arasına A ve B uçları arası boş bırakılacak biçimde bir devre şekildeki gibi bağlanmıştır. (Şekilde müzik çaların çıkışı A ve B uçlarına, hoparlör ise A ve B uçları arasına paralel bağlanmıştır; A ve B uçları arasında boş bir bağlantı noktası bulunmaktadır.) Bu devrenin, bas sesleri oluşturan düşük frekanslı sinyallere karşı daha büyük, tiz sesleri oluşturan yüksek frekanslı sinyallere karşı daha küçük direnç oluşturarak; bas seslerin şiddetini tiz seslere göre daha yüksek oranda azaltması istenmektedir. Bunun için devrenin A ve B uçları arasına sadece bir devre elemanı bağlanacaktır. Buna göre devrenin A ve B uçları arasına; I. bobin, II. reosta, III. kondansatör devre elemanlarından hangileri bağlanabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2192,7 +2193,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Alternatif Akım",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2203,7 +2204,7 @@
     "id": 51460,
     "ders": "AYT FİZİK",
     "soru_no": 111,
-    "soru": "",
+    "soru": "Kararsız $^{214}_{83}\\text{Bi}$ çekirdeği, arka arkaya gerçekleşen iki radyoaktif bozunma sonucunda önce $^{214}_{84}\\text{Po}$ ve daha sonra da $^{210}_{82}\\text{Pb}$ çekirdeğine dönüşür.\n\n$^{214}_{83}\\text{Bi} \\xrightarrow{X_1} ^{214}_{84}\\text{Po} \\xrightarrow{X_2} ^{210}_{82}\\text{Pb}$ ifadesiyle temsil edilen bu bozunma zincirinde, $X_1$ ve $X_2$ bozunma esnasında yayınlanan parçacık ya da ışımayı göstermektedir.\n\nBuna göre $X_1$ ve $X_2$ sırasıyla aşağıdakilerin hangisinde doğru gösterilmiştir?",
     "secenekler": {
       "A": "$\\beta^-$ , $\\beta^-$",
       "B": "$\\beta^-$ , $\\alpha$",
@@ -2212,7 +2213,7 @@
       "E": "$\\alpha$ , $\\beta^-$"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Radyoaktivite",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2223,7 +2224,7 @@
     "id": 51461,
     "ders": "AYT FİZİK",
     "soru_no": 112,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2232,7 +2233,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2243,7 +2244,7 @@
     "id": 51462,
     "ders": "AYT FİZİK",
     "soru_no": 113,
-    "soru": "",
+    "soru": "Temel parçacıklar ve bunlar arasındaki etkileşimleri açıklayan standart modelin öngördüğü ve keşfedilen son parçacık Higgs bozonudur. Higgs bozonu ile etkileşen parçacıkların kütle kazandığı öngörülmektedir.\n\nBu modele göre;\n\nI. foton,\n\nII. elektron,\n\nIII. yukarı kuark\n\nparçacıklarından hangileri Higgs bozonu ile etkileşir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2252,7 +2253,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Büyük Patlama ve Evrenin Oluşumu",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2263,7 +2264,7 @@
     "id": 51463,
     "ders": "AYT FİZİK",
     "soru_no": 114,
-    "soru": "",
+    "soru": "Elektronik bir müzik çalarda şarkı çalındığı esnada müzik çaların ses sinyali çıkışında, farklı frekans değerlerine sahip ve üst üste binmiş çok sayıda alternatif gerilim oluşmaktadır. Böyle bir müzik çaların ses sinyali çıkışı ile hoparlör arasına A ve B uçları arası boş bırakılacak biçimde bir devre şekildeki gibi bağlanmıştır. (Şekilde müzik çaların çıkışı A ve B uçlarına, hoparlör ise A ve B uçları arasına paralel bağlanmıştır; A ve B uçları arasında boş bir bağlantı noktası bulunmaktadır.) Bu devrenin, bas sesleri oluşturan düşük frekanslı sinyallere karşı daha büyük, tiz sesleri oluşturan yüksek frekanslı sinyallere karşı daha küçük direnç oluşturarak; bas seslerin şiddetini tiz seslere göre daha yüksek oranda azaltması istenmektedir. Bunun için devrenin A ve B uçları arasına sadece bir devre elemanı bağlanacaktır. Buna göre devrenin A ve B uçları arasına; I. bobin, II. reosta, III. kondansatör devre elemanlarından hangileri bağlanabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2272,7 +2273,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Alternatif Akım",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2283,7 +2284,7 @@
     "id": 51464,
     "ders": "AYT FİZİK",
     "soru_no": 115,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2292,7 +2293,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -2303,7 +2304,7 @@
     "id": 51465,
     "ders": "AYT FİZİK",
     "soru_no": 116,
-    "soru": "",
+    "soru": "Dalga boyu en küçük $4000\\ \\text{Å}$, en büyük $7000\\ \\text{Å}$ olacak şekilde değişen ışığın kullanıldığı bir fotoelektrik olay düzeneğinde, fotoelektronların oluşabilmesi için eşik enerjisi en fazla kaç eV olan metal kullanılabilir? ($hc = 12400\\ \\text{eV} \\cdot \\text{Å}$)",
     "secenekler": {
       "A": "4,20",
       "B": "3,10",
@@ -2312,7 +2313,7 @@
       "E": "1,80"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Fotoelektrik Olayı",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2323,7 +2324,7 @@
     "id": 51466,
     "ders": "AYT FİZİK",
     "soru_no": 117,
-    "soru": "",
+    "soru": "Tüm dış etkilerden yalıtılmış havasız bir ortamda ve birbirlerinden yeterince uzakta olan özdeş iki elektroskobun yaprakları arasındaki açılar birbirine eşit ve $30°$ dir. Bu elektroskopların elektriksel yüklerinin cinsini belirlemek için topuzlarına mor ötesi ışık yayan bir fener tutulmuş ve yaprakların hareketi gözlemlenmiştir. Elektroskoplardan birisinin yaprakları biraz kapanırken diğerinin yapraklarında herhangi bir değişiklik gözlemlenmemiştir. Ayrıca mor ötesi ışıktaki fotonların enerjisinin, elektroskopların yapıldığı metalin eşik enerjisinden biraz büyük olduğu bilinmektedir.\n\nBuna göre yaprakları biraz kapanan ve değişmeyen elektroskopların elektriksel yüklerinin cinsi ile ilgili aşağıdakilerden hangisi doğru olabilir?",
     "secenekler": {
       "A": "Biraz kapanan: Pozitif — Değişmeyen: Negatif",
       "B": "Biraz kapanan: Negatif — Değişmeyen: Pozitif",
@@ -2332,7 +2333,7 @@
       "E": "Biraz kapanan: Pozitif — Değişmeyen: Nötr"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Fotoelektrik Olayı",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2343,7 +2344,7 @@
     "id": 51467,
     "ders": "AYT FİZİK",
     "soru_no": 118,
-    "soru": "",
+    "soru": "Araştırma laboratuvarında çalışan Melisa, laboratuvarda bulduğu bir metalin eşik enerjisini ölçmek istiyor. Bunun için metal yüzeyine gönderdiği fotonların frekansını ($f$) artırarak çıkan elektronların maksimum kinetik enerjisini ($E_k$) ölçüyor ve daha sonra $E_k$'nin $f$'ye bağlı grafiğini aşağıdaki gibi elde ediyor. Grafikte düşey eksende $E_k$, yatay eksende $f$ bulunmaktadır. Grafik, yatay ekseni $f_0$ noktasında kesen ve pozitif eğimli bir doğrudur. Doğru üzerinde yatay eksende K noktası, düşey eksende L noktası ve doğru üzerinde bir N noktası işaretlenmiştir. Grafikteki bilgiler dışında herhangi bir fiziksel sabite ihtiyaç duymadan Melisa'nın metalin eşik enerjisini belirleyebilmesi için grafikteki K, L ve N noktalarına karşılık gelen sayısal değerlerden hangilerini bilmesi yeterlidir?",
     "secenekler": {
       "A": "Yalnız K",
       "B": "Yalnız L",
@@ -2352,7 +2353,7 @@
       "E": "K, L ve N"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Fotoelektrik Olay",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -2363,7 +2364,7 @@
     "id": 51468,
     "ders": "AYT FİZİK",
     "soru_no": 119,
-    "soru": "",
+    "soru": "Eşik enerjisi $2{,}5 \\text{ eV}$ olan bir metalin kullanıldığı fotoelektrik olay düzeneğine $4000 \\text{ Å}$ dalga boylu ışık gönderiliyor. Bu düzeneğin bağlı olduğu devreden akım geçmediğine göre\n\nI. Kullanılan ışığın enerjisi metal yüzeyden fotoelektron sökmeye yetmemiştir.\n\nII. Devrede oluşan fotoelektronları durdurmak için ters bağlı bir üreteç bulunmaktadır.\n\nIII. Dalga boyu $4100 \\text{ Å}$ yapılırsa devreden akım geçmeye başlar.\n\nyargılarından hangileri doğru olabilir?\n\n($h$ Planck sabiti, $c$ ışık hızı olmak üzere $hc = 12400 \\text{ eV}\\cdot\\text{Å}$)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2372,7 +2373,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Fotoelektrik Olay",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2383,7 +2384,7 @@
     "id": 51469,
     "ders": "AYT FİZİK",
     "soru_no": 120,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2403,7 +2404,7 @@
     "id": 51470,
     "ders": "AYT FİZİK",
     "soru_no": 121,
-    "soru": "",
+    "soru": "Sağlık, savunma sanayi ve diğer bazı alanlarda kullanılan termal kamera, PET ve sonar görüntüleme cihazlarından elde edilen görüntülerin fiziksel olarak oluşma prensipleri karışık olarak aşağıda verilmiştir:\n\nI. Elektronların antiparçacıklarıyla birleşmesi sonucu yayılan ışınlar dedektörler yardımıyla sayılarak, görüntü oluşturulur.\n\nII. Bir hedefe çarparak geri yansıyan ses dalgaları dedektörler yardımıyla algılanarak, hedefin görüntüsü oluşturulur.\n\nIII. Bir cisimden yayılan kızılötesi ışınlar dedektörler yardımıyla algılanarak, cismin görüntüsü oluşturulur.\n\nBuna göre, görüntünün oluşma prensibi ile görüntüleme cihazı eşleştirmesi aşağıdaki seçeneklerin hangisinde doğru olarak verilmiştir?",
     "secenekler": {
       "A": "I: Termal kamera, II: Sonar, III: PET",
       "B": "I: Termal kamera, II: PET, III: Sonar",
@@ -2412,7 +2413,7 @@
       "E": "I: PET, II: Sonar, III: Termal kamera"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Görüntüleme Teknolojileri",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2423,7 +2424,7 @@
     "id": 51471,
     "ders": "AYT FİZİK",
     "soru_no": 122,
-    "soru": "",
+    "soru": "Batur, biri sağ diğeri sol elinde bulunan $1\\text{ kg}$ kütleli bir top ile $1\\text{ g}$ kütleli bir kuş tüyünü hava direncinin ihmal edildiği bir ortamda, yerden $5\\text{ m}$ yükseklikten ilk hızsız olarak aynı anda serbest bırakmıştır. Bu cisimlere ait\n\nI. hareket süresince etki eden net kuvvet,\n\nII. hareketin ivmesi,\n\nIII. yere düşme süresi\n\nniceliklerinden hangilerinin birbirine eşit olması beklenir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2432,7 +2433,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bir Boyutta Sabit İvmeli Hareket",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2443,7 +2444,7 @@
     "id": 51472,
     "ders": "AYT FİZİK",
     "soru_no": 123,
-    "soru": "",
+    "soru": "Bazı görüntüleme cihazları, görüntülenecek cisim üzerine gönderilen dalgaların yansıması, saçılması ya da soğurulması ilkesiyle çalışmaktadır.\n\nBuna göre\n\n• röntgen,\n\n• ultrason,\n\n• tomografi,\n\n• sonar,\n\n• termal kamera\n\ngibi cihazların görüntü oluştururken kullandığı ses dalgaları ve elektromanyetik dalgalarla ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?",
     "secenekler": {
       "A": "Ses dalgaları: Röntgen — Elektromanyetik dalgalar: Sonar",
       "B": "Ses dalgaları: Ultrason — Elektromanyetik dalgalar: Tomografi",
@@ -2463,7 +2464,7 @@
     "id": 51473,
     "ders": "AYT FİZİK",
     "soru_no": 124,
-    "soru": "",
+    "soru": "Günlük hayatta çok çeşitli alanlarda kullanılan aşağıdaki görüntüleme cihazlarının hangisinde görüntü oluşturulurken mekanik dalga kullanılır?",
     "secenekler": {
       "A": "Röntgen",
       "B": "Tomografi",
@@ -2483,7 +2484,7 @@
     "id": 51474,
     "ders": "AYT FİZİK",
     "soru_no": 125,
-    "soru": "",
+    "soru": "Sürtünmelerin önemsenmediği ve üstten görünüşü şekildeki gibi olan yatay bir zeminde duran bir koliyi, Ahmet elleriyle ileri doğru iterken Ali de bir ip yardımıyla kendisine doğru çekmektedir. (Şekilde üstten görünüşte koli ortadadır. Ahmet kolinin bir tarafında, Ali ise karşı tarafında ip ile çekmektedir. Koli üzerinde I, II ve III yönleri işaretlenmiştir.) Ahmet ve Ali aynı anda kuvvet uygulamaya başlarsa koli; şekildeki I, II ve III yönlerinden hangilerine doğru harekete geçebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2503,7 +2504,7 @@
     "id": 51475,
     "ders": "AYT FİZİK",
     "soru_no": 126,
-    "soru": "",
+    "soru": "Yerküre, Güneş etrafında birbirlerine uyguladıkları kütle çekim kuvveti nedeniyle belirli bir yörünge izlemektedir. Her yıl bu yörünge üzerinde Yerküre'nin Güneş'e en yakın olduğu gün 3 Ocak'tır.\n\nGüneş dışındaki diğer gök cisimlerinin etkisinin ihmal edildiği durumda;\n\nI. Yerküre'nin çizgisel hızı,\n\nII. Yerküre'nin Güneş'e göre açısal momentumu,\n\nIII. Yerküre'ye Güneş tarafından uygulanan kütle çekim kuvveti\n\nbüyüklüklerinden hangileri 3 Ocak'ta, 3 Haziran'dakinden daha büyüktür?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -2512,7 +2513,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kütle Çekim Kuvveti",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,

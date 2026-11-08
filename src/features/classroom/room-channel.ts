@@ -37,6 +37,7 @@ class RoomChannel {
   private channelName: ClassroomChannelName | '' = '';
   private handlers: Set<MessageHandler> = new Set();
   private storageListener: ((e: StorageEvent) => void) | null = null;
+  private onlineListener: (() => void) | null = null;
   private seenMessages: Map<string, number> = new Map();
 
   connect(roomId: string, onMessage: MessageHandler): void {
@@ -53,17 +54,22 @@ class RoomChannel {
       };
     }
 
-    // Farklı pencereler / iframe'ler için tarayıcı depolama yedek köprüsü
     this.storageListener = (e: StorageEvent) => {
       if (e.key === `sync_${this.channelName}` && e.newValue) {
         try {
-          const parsed = JSON.parse(e.newValue) as RoomMessage;
-          this.notifyHandlers(parsed);
+          this.notifyHandlers(JSON.parse(e.newValue) as RoomMessage);
         } catch {}
       }
     };
     if (typeof window !== 'undefined') {
       window.addEventListener('storage', this.storageListener);
+      this.onlineListener = () => {
+        if (!this.ws || this.ws.readyState !== WebSocket.OPEN) {
+          this.clearReconnectTimer();
+          this.connectRealtimeSocket();
+        }
+      };
+      window.addEventListener('online', this.onlineListener);
     }
 
     this.connectRealtimeSocket();
@@ -73,9 +79,7 @@ class RoomChannel {
     this.markSeen(msg);
 
     if (this.channel) {
-      try {
-        this.channel.postMessage(msg);
-      } catch {}
+      try { this.channel.postMessage(msg); } catch {}
     }
 
     if (this.channelName) {
@@ -88,6 +92,7 @@ class RoomChannel {
 
   disconnect(): void {
     this.clearReconnectTimer();
+    this.wsPendingQueue = [];
     if (this.channel) {
       this.channel.close();
       this.channel = null;
@@ -96,9 +101,14 @@ class RoomChannel {
       window.removeEventListener('storage', this.storageListener);
       this.storageListener = null;
     }
+    if (this.onlineListener && typeof window !== 'undefined') {
+      window.removeEventListener('online', this.onlineListener);
+      this.onlineListener = null;
+    }
     this.disconnectRealtimeSocket();
     this.handlers.clear();
     this.seenMessages.clear();
+    this.channelName = '';
   }
 
   private connectRealtimeSocket(): void {
@@ -124,11 +134,7 @@ class RoomChannel {
         this.ws.send(JSON.stringify(joinFrame));
         this.wsJoined = true;
 
-        while (this.wsPendingQueue.length > 0) {
-          const pending = this.wsPendingQueue.shift();
-          if (pending) this.sendOverRealtimeSocket(pending);
-        }
-
+        this.flushPendingQueue();
         this.startWsHeartbeat();
       };
 
@@ -142,16 +148,35 @@ class RoomChannel {
         } catch {}
       };
 
-      this.ws.onclose = () => {
-        this.handleWsDrop();
-      };
-
-      this.ws.onerror = () => {
-        this.handleWsDrop();
-      };
+      this.ws.onclose = () => this.handleWsDrop();
+      this.ws.onerror = () => this.handleWsDrop();
     } catch {
       this.handleWsDrop();
     }
+  }
+
+  private flushPendingQueue(): void {
+    if (!this.ws || this.ws.readyState !== WebSocket.OPEN || !this.wsJoined) return;
+    while (this.wsPendingQueue.length > 0) {
+      const pending = this.wsPendingQueue.shift();
+      if (pending) this.sendOverRealtimeSocket(pending);
+    }
+  }
+
+  private enqueuePendingMessage(msg: RoomMessage): void {
+    if (msg.type === 'STUDENT_HEARTBEAT' || msg.type === 'ROOM_SYNC') {
+      const existingIdx = this.wsPendingQueue.findIndex(
+        (m) => m.type === msg.type && m.senderId === msg.senderId
+      );
+      if (existingIdx !== -1) {
+        this.wsPendingQueue[existingIdx] = msg;
+        return;
+      }
+    }
+    if (this.wsPendingQueue.length >= 40) {
+      this.wsPendingQueue.shift();
+    }
+    this.wsPendingQueue.push(msg);
   }
 
   private handleWsDrop(): void {
@@ -165,10 +190,8 @@ class RoomChannel {
     if (this.reconnectTimer || !this.channelName) return;
     this.reconnectTimer = setTimeout(() => {
       this.reconnectTimer = null;
-      if (this.channelName) {
-        this.connectRealtimeSocket();
-      }
-    }, 2500);
+      if (this.channelName) this.connectRealtimeSocket();
+    }, 2000);
   }
 
   private clearReconnectTimer(): void {
@@ -195,28 +218,28 @@ class RoomChannel {
   }
 
   private sendOverRealtimeSocket(msg: RoomMessage): void {
-    if (!this.ws) return;
-    if (this.ws.readyState === WebSocket.CONNECTING || !this.wsJoined) {
-      if (this.wsPendingQueue.length < 30) {
-        this.wsPendingQueue.push(msg);
+    if (!this.channelName) return;
+
+    if (!this.ws || this.ws.readyState !== WebSocket.OPEN || !this.wsJoined) {
+      this.enqueuePendingMessage(msg);
+      if (!this.ws && !this.isConnecting) {
+        this.scheduleReconnect();
       }
       return;
     }
-    if (this.ws.readyState !== WebSocket.OPEN) return;
 
     try {
       const frame = {
         topic: `realtime:${this.channelName}`,
         event: 'broadcast',
-        payload: {
-          type: 'broadcast',
-          event: 'room_msg',
-          payload: msg,
-        },
+        payload: { type: 'broadcast', event: 'room_msg', payload: msg },
         ref: String(this.wsRefCounter++),
       };
       this.ws.send(JSON.stringify(frame));
-    } catch {}
+    } catch {
+      this.enqueuePendingMessage(msg);
+      this.handleWsDrop();
+    }
   }
 
   private disconnectRealtimeSocket(): void {
@@ -237,7 +260,8 @@ class RoomChannel {
   }
 
   private makeMessageFingerprint(msg: RoomMessage): string {
-    return `${msg.senderId}:${msg.type}:${msg.timestamp}`;
+    const extra = msg.payload?.questionId ?? msg.payload?.feedId ?? msg.payload?.studentId ?? msg.payload?.text ?? '';
+    return `${msg.senderId}:${msg.type}:${msg.timestamp}:${extra}`;
   }
 
   private markSeen(msg: RoomMessage): boolean {
@@ -253,9 +277,7 @@ class RoomChannel {
 
   private notifyHandlers(msg: RoomMessage): void {
     if (!msg || typeof msg.type !== 'string' || this.markSeen(msg)) return;
-    for (const h of this.handlers) {
-      h(msg);
-    }
+    for (const h of this.handlers) h(msg);
   }
 }
 

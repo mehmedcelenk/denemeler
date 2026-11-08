@@ -9,6 +9,7 @@
 - `npm run build`: kontrolleri çalıştırıp `dist/` üret.
 - `npm run test:e2e`: build sonrası tarayıcı akışlarını kontrol et.
 - `npm run data:build`: Python kaynaklarından soru verilerini yeniden üret. Yalnızca veri güncellemesi isteniyorsa çalıştır.
+- `npm run db:sync`: Yerel soru ve kavram verilerini Supabase veritabanı ile senkronize et.
 
 ## Değişiklik sınırları
 - Bir özellik `src/features/<özellik>/` altında yaşar. Saf ortak fonksiyonlar `src/shared/`, veri yükleme ve sözleşmeler `src/data/` içindedir.

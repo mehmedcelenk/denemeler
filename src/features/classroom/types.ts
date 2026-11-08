@@ -61,6 +61,7 @@ export interface RoomMessagePayload {
   studentName?: string;
   text?: string;
   durationMs?: number;
+  awayDurationMs?: number;
 }
 
 export interface RoomMessage {

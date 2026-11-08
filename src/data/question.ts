@@ -42,11 +42,22 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
+function normalizePostgrestRecord(rec: Record<string, unknown>): void {
+  for (const [k, v] of Object.entries(rec)) {
+    if (v === null) {
+      delete rec[k];
+    }
+  }
+}
+
 /** JSON tipi çalışma anında bilinmez; hatalı veri state'e girmeden reddedilir. */
 export function parseQuestions(value: unknown): Question[] {
   if (!Array.isArray(value)) throw new Error('Soru verisi bir liste olmalı.');
   const seen = new Set<number>();
   for (const [index, question] of value.entries()) {
+    if (isRecord(question)) {
+      normalizePostgrestRecord(question);
+    }
     const requiredChoices = ['A', 'B', 'C', 'D'] as const;
     if (!isRecord(question) || !Number.isSafeInteger(question.id)
       || typeof question.ders !== 'string' || typeof question.soru !== 'string'

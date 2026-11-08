@@ -1,3 +1,5 @@
+import { escapeHtml } from '../../shared/escape.ts';
+
 let toastContainer: HTMLElement | null = null;
 
 function ensureToastContainer(): HTMLElement {
@@ -29,7 +31,6 @@ export function showRoomToast(title: string, message: string, icon: string = 'ðŸ
 
   container.appendChild(toast);
 
-  // Vibrate if supported
   if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
     try {
       navigator.vibrate([80, 40, 80]);
@@ -42,12 +43,4 @@ export function showRoomToast(title: string, message: string, icon: string = 'ðŸ
       toast.remove();
     }, 280);
   }, 4500);
-}
-
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
 }

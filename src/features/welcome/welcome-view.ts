@@ -1,4 +1,5 @@
 import type { AppState } from '../../app/state-types.ts';
+import { updateAuthUiState } from './auth-modal.ts';
 
 export type ProgramMode = AppState['programMode'];
 
@@ -54,8 +55,30 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
           <input id="welcomeRoomId" type="text" maxlength="24" autocomplete="off" autocapitalize="characters" placeholder="Oda adı" aria-label="Oda adı">
           <button type="button" class="welcome-room-submit" data-action="welcome-join-room" aria-label="Odaya katıl">→</button>
         </div>
+        <div class="welcome-auth-container">
+          <button type="button" class="welcome-auth-btn" id="welcomeAuthTrigger" data-action="welcome-open-auth">
+            <span class="auth-status-dot" aria-hidden="true"></span>
+            <span class="auth-status-label">Giriş Yap & Eşitle</span>
+          </button>
+        </div>
       </div>
       <p class="welcome-form-error" id="welcomeFormError" role="alert" aria-live="polite"></p>
+    </div>
+
+    <div class="welcome-dialog-backdrop" id="welcomeAuthDialog" hidden>
+      <section class="welcome-name-dialog welcome-auth-dialog" role="dialog" aria-modal="true" aria-labelledby="authDialogTitle">
+        <button type="button" class="welcome-dialog-close" data-action="welcome-cancel-auth" aria-label="Kapat">×</button>
+        <h2 id="authDialogTitle">Hesabına Giriş Yap</h2>
+        <p id="authDialogNotice">İlerlemeni buluta kaydet ve cihazların arasında senkronize et.</p>
+        <div id="authNameRow" hidden>
+          <input id="authNameInput" type="text" maxlength="40" autocomplete="name" placeholder="Adınız (isteğe bağlı)" aria-label="Adınız">
+        </div>
+        <input id="authEmailInput" type="email" autocomplete="email" placeholder="E-posta adresiniz" aria-label="E-posta">
+        <input id="authPasswordInput" type="password" autocomplete="current-password" placeholder="Şifreniz" aria-label="Şifre">
+        <p class="welcome-name-error" id="authDialogError" role="alert" aria-live="polite"></p>
+        <button type="button" class="welcome-name-confirm" id="btnAuthSubmit" data-action="welcome-submit-auth">Giriş Yap →</button>
+        <button type="button" class="welcome-auth-toggle-btn" id="btnAuthToggleMode" data-action="welcome-toggle-auth-mode">Hesabın yok mu? Kayıt Ol</button>
+      </section>
     </div>
 
     <div class="welcome-dialog-backdrop" id="welcomeNameDialog" hidden>
@@ -72,6 +95,7 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
 
   setWelcomeProgram(options.programMode);
   updateResumeAction(options.canResume);
+  updateAuthUiState();
 }
 
 export function showWelcomePortal(): void {

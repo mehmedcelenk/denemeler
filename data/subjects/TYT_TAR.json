@@ -3,7 +3,7 @@
     "id": 52838,
     "ders": "TYT TARİH",
     "soru_no": 1,
-    "soru": "",
+    "soru": "Ammianus, \"Hunlar piyade olarak savaşmaya hiç alışkın değillerdi. Şaşılacak kadar uzak mesafelere attıkları ve demir kadar sert ve öldürücü sivri kemikten uçlu oklarını atmada gösterdikleri maharete hiç kimse erişemezdi... Hunlar iyi savaşçılar olup yay ve kement kullanmakta eşsizdirler.\" demiştir.\n\nYalnız bu bilgiye göre Hunlarla ilgili olarak;\n\nI. orduda onlu sistemi oluşturdukları,\n\nII. savaş aletlerini etkin kullandıkları,\n\nIII. savaşlarda hilal taktiğini uyguladıkları\n\nifadelerinden hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -12,7 +12,7 @@
       "E": "I ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2018",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -23,7 +23,7 @@
     "id": 52839,
     "ders": "TYT TARİH",
     "soru_no": 2,
-    "soru": "",
+    "soru": "Asya Hun Devleti'nin dağılmasının ardından Hunlar, batıya doğru yayılmaya başlamış ve Karadeniz'in kuzeyinde bulunan Germen kavimlerini batıya doğru itmişlerdir. Kavimler Göçü adı verilen bu süreçte Hunlar Avrupa siyasetinde etkin hâle gelirken ikiye ayrılan Roma İmparatorluğu önemli sorunlarla karşı karşıya kalmıştır.\n\nBuna göre aşağıdakilerden hangisi Kavimler Göçü'nün sonuçlarından biri olarak gösterilemez?",
     "secenekler": {
       "A": "Türk kültürü Avrupa'da yayılmıştır.",
       "B": "Avrupa'nın etnik yapısı değişmiştir.",
@@ -32,7 +32,7 @@
       "E": "Avrupa'da siyasi dengeler değişmiştir."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2019",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -43,7 +43,7 @@
     "id": 52840,
     "ders": "TYT TARİH",
     "soru_no": 3,
-    "soru": "",
+    "soru": "Doğu-batı ticaret yolları üzerinde bulunan Uygurlar farklı inanç ve kültürlerden etkilenmişlerdir. Çin'den Budizmi, İran'dan Maniheizmi alan Uygurlar, Akdeniz Havzası'ndan Suriyeli rahipler ve Soğdlar aracılığıyla da Hristiyanlığı, Helenistik edebiyatı ve sanatı öğrenmişlerdir.\n\nBuna göre Uygurlar ile ilgili aşağıdakilerden hangisine ulaşılamaz?",
     "secenekler": {
       "A": "Geniş bir coğrafya ile ilişki kurduklarına",
       "B": "Farklı dinleri benimsediklerine",
@@ -52,7 +52,7 @@
       "E": "Hâkim hayat tarzlarının göçebelik olduğuna"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2020",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -63,7 +63,7 @@
     "id": 52841,
     "ders": "TYT TARİH",
     "soru_no": 4,
-    "soru": "",
+    "soru": "Doğu Roma İmparatorluğu'yla Avrupa Hunları arasında 434 yılında yapılan Margos Antlaşması'nın,\n\n• Doğu Roma bundan sonra Hunlara bağlı kavimlerle antlaşmalar yapmayacak,\n\n• Doğu Roma, Hunlardan kaçanlara sığınma hakkı vermeyecek,\n\n• Ticari münasebetler yine belirli sınır kasabalarında devam edecek,\n\n• Doğu Roma'nın ödediği yıllık vergi iki katına çıkarılacak.\n\nmaddeleri dikkate alındığında aşağıdakilerden hangisine ulaşılamaz?",
     "secenekler": {
       "A": "Doğu Roma'nın, Avrupa Hunlarının siyasi üstünlüğünü kabul ettiğine",
       "B": "İki devlet arasındaki ekonomik ilişkilerin sürdürüleceğine",
@@ -72,7 +72,7 @@
       "E": "Akdeniz ticaretinin Avrupa Hunlarının kontrolüne girdiğine"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk ve Orta Çağlarda Türk Dünyası",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -143,7 +143,7 @@
     "id": 52845,
     "ders": "TYT TARİH",
     "soru_no": 8,
-    "soru": "",
+    "soru": "Ferhat Paşa Antlaşması'ndan sonra Safevilerin, ham ipeği Anadolu üzerinden geçirmeden Avrupa'ya ihraç etmeleri, Osmanlı ekonomisine zarar vermiştir. Bunun üzerine Osmanlı Devleti karşı önlem olarak İran'ın ihtiyacı olan başta gümüş olmak üzere kıymetli madenlerin İran'a ihracatını engellemiştir. Ayrıca Safeviler, Osmanlıların dışta Habsburglarla mücadelesini ve içte Celâli İsyanları ile uğraşmasını fırsat bilerek Şirvan, Azerbaycan ve Gürcistan'ı Osmanlı'dan geri almıştır. Anadolu'da devlet otoritesini yeniden kuran Sadrazam Kuyucu Murat Paşa'nın, Safeviler üzerine yürümesiyle Şah Abbas; Osmanlılardan barış istemiş ve sonuçta iki devlet arasında 1612 yılında Nasuh Paşa Antlaşması imzalanmıştır.\n\nBuna göre aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Osmanlı Devleti'nin birden fazla sorunla başa çıkmak zorunda kaldığı",
       "B": "Safevilerin, ticari olarak Osmanlıları zor duruma düşürmek istediği",
@@ -152,7 +152,7 @@
       "E": "Safevilerin, Osmanlı Devleti'ne karşı Habsburglarla ittifak yaptığı"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Değişen Dünya Dengeleri Karşısında Osmanlı Siyaseti (1595-1774)",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -163,7 +163,7 @@
     "id": 52846,
     "ders": "TYT TARİH",
     "soru_no": 9,
-    "soru": "",
+    "soru": "Tanzimat Dönemi aydınlarına göre; Balkanlardaki isyanların sona ermesi için Osmanlıcılık düşüncesinde birleşilmesi ve Batı tarzında yenilikler yapılması gerekliydi.\n\nAşağıdakilerden hangisi bu doğrultuda gerçekleşmiştir?",
     "secenekler": {
       "A": "Sened-i İttifak'ın imzalanması",
       "B": "Meşrutiyetin ilan edilmesi",
@@ -172,7 +172,7 @@
       "E": "Yeniçeri Ocağı'nın kaldırılması"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Uluslararası İlişkilerde Denge Stratejisi (1774-1914)",
     "yil": "2020",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -183,7 +183,7 @@
     "id": 52847,
     "ders": "TYT TARİH",
     "soru_no": 10,
-    "soru": "",
+    "soru": "Attila, 447 yılında Doğu Roma'nın barış şartlarına uymaması üzerine II. Balkan Seferi'ne çıkmış ve Doğu Roma ile Anatolios Antlaşması'nı imzalamıştır. Bu antlaşmaya göre Doğu Roma, Hunlara savaş tazminatı ödeyecek ve önceden ödediği vergi üç katına çıkarılacak, Hun sınır şehri Niş'te pazar kurulacak ve Doğu Roma'nın asker bulundurabileceği alanlar kısıtlanacaktır.\n\nBuna göre\n\nI. antlaşma sonrasında Roma'nın ikiye ayrıldığı,\n\nII. Hunların ekonomik açıdan kazanımlar elde ettiği,\n\nIII. Doğu Roma üzerinde Hunların, üstünlüğünü devam ettirdiği\n\nifadelerinden hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -192,7 +192,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk Türk Devletleri",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -443,7 +443,7 @@
     "id": 52860,
     "ders": "TYT TARİH",
     "soru_no": 23,
-    "soru": "",
+    "soru": "X. yüzyılda Turfan'a gelen Çin elçisi, Uygurlar hakkında şu ifadelerde bulunmuştur: \"Onların devletinin içinde fakir insan azdır. Yiyeceği olmayanlara da devlet tarafından yardım edilir. Birçokları yüz yaşına kadar yaşar. Olgunluk çağına erişmeden ölenlere pek rastlanmaz.\"\n\nBu bilgiye göre Uygurlarla ilgili aşağıdaki yargılardan hangisine ulaşılamaz?",
     "secenekler": {
       "A": "Orta Asya'da egemenlik kurduklarına",
       "B": "Sosyal devlet anlayışını benimsediklerine",
@@ -452,7 +452,7 @@
       "E": "Toplumun refah seviyesinin yüksek olduğuna"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk Türk Devletleri",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -463,7 +463,7 @@
     "id": 52861,
     "ders": "TYT TARİH",
     "soru_no": 24,
-    "soru": "",
+    "soru": "Asya Hun Devleti hükümdarı Mete Han, 26 kavmi tek bayrak altında toplamıştır. İkinci Göktürk Devleti zamanında da Kapgan Kağan, Orta Asya'daki tüm Türk boylarını bir bayrak altında toplayarak gücüne güç katmıştır. Uygur Kağanı Moyen-Çor ise Hunlarda ve Göktürklerde olduğu gibi öncelikle Orta Asya'daki boyları kendine bağlamıştır.\n\nBuna göre söz konusu devletlerle ilgili\n\nI. teşkilatçı bir merkezî yapı oluşturdukları,\n\nII. benzer bir hâkimiyet anlayışına sahip oldukları,\n\nIII. ülke sınırlarını genişlettikleri\n\nçıkarımlarından hangileri yapılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -472,7 +472,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk Türk Devletleri",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -483,7 +483,7 @@
     "id": 52862,
     "ders": "TYT TARİH",
     "soru_no": 25,
-    "soru": "",
+    "soru": "Attila, 447 yılında Doğu Roma'nın barış şartlarına uymaması üzerine II. Balkan Seferi'ne çıkmış ve Doğu Roma ile Anatolios Antlaşması'nı imzalamıştır. Bu antlaşmaya göre Doğu Roma, Hunlara savaş tazminatı ödeyecek ve önceden ödediği vergi üç katına çıkarılacak, Hun sınır şehri Niş'te pazar kurulacak ve Doğu Roma'nın asker bulundurabileceği alanlar kısıtlanacaktır.\n\nBuna göre\n\nI. antlaşma sonrasında Roma'nın ikiye ayrıldığı,\n\nII. Hunların ekonomik açıdan kazanımlar elde ettiği,\n\nIII. Doğu Roma üzerinde Hunların, üstünlüğünü devam ettirdiği\n\nifadelerinden hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -492,7 +492,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk Türk Devletleri",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -503,7 +503,7 @@
     "id": 52863,
     "ders": "TYT TARİH",
     "soru_no": 26,
-    "soru": "",
+    "soru": "Töre; âdet, gelenek ve ahlaki değerlerden beslenerek ortaya çıkmış ve gelişmiştir. Orta Asya'daki konargöçer yaşam tarzının etkisiyle oluşan töre, sadece bu coğrafyayla sınırlı kalmamış, çağlar boyu farklı bölgelerde kurulan Türk devletlerinde de etkili olmuştur. Gelişmeye açık olan törenin devamlılık kazanmasında kağanlar tarafından konulan kurallar ve kurultaylarda alınan kararlar etkili olmuştur. Getirilen kuralların adalete uygun olmasına dikkat edilmiştir. Kağanlar da dâhil olmak üzere herkesin töreye uyması zorunlu tutulmuştur.\n\nBuna göre ilk Türk devletlerinde töre ile ilgili aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Zaman içinde değişmeyen kurallar bütünü olduğu",
       "B": "Süreklilik gösteren bir unsur olarak kabul edildiği",
@@ -512,7 +512,7 @@
       "E": "Toplum hayatındaki kültürel kaynaklara dayandığı"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "İlk Türk Devletleri",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -523,7 +523,7 @@
     "id": 52864,
     "ders": "TYT TARİH",
     "soru_no": 27,
-    "soru": "",
+    "soru": "Bozkır kültürü özü itibarıyla diğer göçebe kültürlerden farklılık göstermektedir. Örneğin çöl göçebeliğinin ana unsuru deve iken bozkır konargöçerliğinin ana unsuru attır. Atlı kültür; kuvvet, hareket ve sürat üzerine kurulmuştur. Bozkır toplulukları savaşçı niteliklerinin de etkisiyle geniş coğrafyalarda hâkimiyet kurabilmişlerdir. Sürülerinin otlatılmasına imkân veren geniş ve verimli otlaklar bu kültürün gelişmesine katkıda bulunmuştur.\n\nBuna göre\n\nI. coğrafi koşulların göçebe kültürü etkilediği,\n\nII. atın ait olduğu kültür çevresine dinamizm ve güç kattığı,\n\nIII. bozkır göçebelerinin kültürel etkileşime kapalı olduğu\n\nifadelerinden hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -532,7 +532,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "İslamiyet Öncesi Türk Tarihi",
     "yil": "2026",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -543,7 +543,7 @@
     "id": 52865,
     "ders": "TYT TARİH",
     "soru_no": 28,
-    "soru": "",
+    "soru": "Gazneli hükümdarı Sultan Mahmut, bir gün mezâlim divanında iken; bir tacir, Şehzade Mesut'un kendisinden altmış bin dinarlık kumaş aldığından ancak parasını ödemediğinden şikâyet eder. Tacirin, hakkını aramak istediğini dile getirmesi üzerine Sultan Mahmut, taciri haklı bulur ve alacağının hemen ödenmesini emreder.\n\nGazneli Devleti'nde yaşanan bu durumla ilgili olarak aşağıdakilerden hangisi söylenebilir?",
     "secenekler": {
       "A": "Dava açmanın sultanın iznine bağlı olduğu",
       "B": "Mezâlim divanının Gaznelilere özgü bir kurum olduğu",
@@ -552,7 +552,7 @@
       "E": "Ticari konuların İslam hukukunun dışında bulunduğu"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Türklerin İslamiyet'i Kabulü ve İlk Türk İslam Devletleri",
     "yil": "2018",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -563,7 +563,7 @@
     "id": 52866,
     "ders": "TYT TARİH",
     "soru_no": 29,
-    "soru": "",
+    "soru": "Gazneli Mahmut, Abbasi halifesini Büveyhoğullarının baskısından kurtarmış ve bu hizmetine karşılık olarak Abbasi halifesinden Sultan ünvanını almıştır.\n\nBu bilgiyle aşağıdakilerden hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Gazneli Mahmut'un İslam dünyasının önemli bir siyasi gücü olduğuna",
       "B": "Abbasi halifesinin siyasi yetkilerini Gazneli Mahmut'a bıraktığına",
@@ -572,7 +572,7 @@
       "E": "Gazneli Mahmut'un İslam dünyasında siyasi birliği sağladığına"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Türklerin İslamiyet'i Kabulü ve İlk Türk İslam Devletleri",
     "yil": "2019",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -583,7 +583,7 @@
     "id": 52867,
     "ders": "TYT TARİH",
     "soru_no": 30,
-    "soru": "",
+    "soru": "Malazgirt Zaferi öncesinde Alp Arslan, Bizans İmparatoru Diyojen'e elçi göndererek barış teklifinde bulunmuştur. Selçukluların savaşmaktan çekindiğini düşünen Diyojen: \"Ben üstün ve kudretli durumuma çok para ve çaba harcayarak eriştim. Barış ancak Selçuklu başkenti Rey'de olur. ... Biz İsfahan'da kışlayacağız, atlarımız ise Hemedan'da.\" demiştir. Buna karşılık Türk elçisi ise: \"Hayvanlarımız Hemedan'da kışlayabilir fakat sizin nerede kışlayacağınızı bilemem.\" şeklinde cevap vermiştir.\n\nBu parçadan hareketle aşağıdakilerden hangisine ulaşılamaz?",
     "secenekler": {
       "A": "Selçuklu Devleti'nin Anadolu'ya doğru genişlediğine",
       "B": "Bizans'ın İslam şehirlerine sahip olmak istediğine",
@@ -592,7 +592,7 @@
       "E": "Selçuklu Türklerinin Bizans ile savaşı göze aldığına"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Türklerin İslamiyet'i Kabulü ve İlk Türk İslam Devletleri",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -603,7 +603,7 @@
     "id": 52868,
     "ders": "TYT TARİH",
     "soru_no": 31,
-    "soru": "",
+    "soru": "Türklerin Müslümanlığı kabul etmesi önemli bir tarihsel olgudur. Bu sürecin başlangıç yılları Hz. Muhammed Dönemi'ne kadar uzanmaktadır. Bazı yeni araştırmalar, sahabe arasında birçok Türk'ün de bulunduğunu ortaya koymuştur.\n\nBu bilgiyle Türklerin İslamlaşma süreciyle ilgili;\n\nI. İslam'ın ilk yıllarından itibaren başladığı,\n\nII. Hz. Muhammed'i gören Türklerin bulunduğu,\n\nIII. İslamlaşmanın kısa zamanda tamamlandığı\n\nifadelerinden hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -623,7 +623,7 @@
     "id": 52869,
     "ders": "TYT TARİH",
     "soru_no": 32,
-    "soru": "",
+    "soru": "Tarihçi Beyhakî eserinde Gazneli Sultan Mesud Dönemi'nde Gaznelilerin en önemli bölgesi olan Horasan'ın; Nesâ, Serahs ve Dandanakan savaşlarıyla birlikte Selçukluların eline geçtiğini ifade ettiği tarihsel sürece ilişkin bilgilere yer vermiştir.\n\nBeyhakî'nin eserinde yer alan bu bilgiler aşağıdakilerden hangisinin aydınlatılmasında kaynak olarak kullanılabilir?",
     "secenekler": {
       "A": "Selçukluların cihat faaliyetlerinin",
       "B": "Hindistan'da İslamiyet'in yayılmaya başlamasının",
@@ -643,7 +643,7 @@
     "id": 52870,
     "ders": "TYT TARİH",
     "soru_no": 33,
-    "soru": "",
+    "soru": "Selçuklu hükümdarı Alp Arslan'ın ölümünden sonra oğlu Melikşah tahta geçti. Melikşah, hâkimiyetini tanımayan ve taht mücadelesine girişen amcası Kavurd Bey'i yenilgiye uğrattı. Karahanlılar ve Gaznelilerle barış yapan Melikşah daha sonra Mısır'daki Fâtımi halifesine karşı sefer düzenledi ve bu devleti baskı altına aldı. Sonraki dönemde Bağdat'a giden Melikşah'a, Abbasi halifesi tarafından doğunun ve batının hükümdarlığını simgeleyen iki kılıç kuşatıldı.\n\nBu bilgiler de dikkate alındığında Melikşah Dönemi Selçukluları ile ilgili aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Veraset sisteminin yönetimde çatışmalara yol açtığı",
       "B": "Doğu sınırlarının güvence altına alındığı",
@@ -663,7 +663,7 @@
     "id": 52871,
     "ders": "TYT TARİH",
     "soru_no": 34,
-    "soru": "",
+    "soru": "Türk-İslam devletlerinde kendilerine bir bölgenin idaresi verilen hanedan üyeleri melik olarak adlandırılırdı. Meliklerin vezirleri, memurları ve asayişi sağlamak için askerî kuvvetleri vardı. Ayrıca halife, sultan ve kendi adlarına hutbe okuturlar, nevbet çaldırırlar ve hükümdarın izniyle para bastırırlardı. Sultanın otoritesini tanırlar ve dış ilişkilerini hükümdar tarafından belirlenen siyaset çerçevesinde yürütürlerdi.\n\nBuna göre Türk-İslam devletlerindeki meliklerle ilgili aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Merkezdekine benzer bir yönetim örgütüne sahiplerdi.",
       "B": "İdari ve siyasi güçlerini gösteren alametleri bulunurdu.",
@@ -683,7 +683,7 @@
     "id": 52872,
     "ders": "TYT TARİH",
     "soru_no": 35,
-    "soru": "",
+    "soru": "Anadolu Selçuklu Devleti, 8 Mart 1220'de Venedik ile dostluk ve ticaret anlaşması yapmıştır. Buna göre Selçuklu topraklarında Venediklilerin kendi aralarında veya diğer yabancılarla olan anlaşmazlıklara, oluşturulacak bir mahkeme heyeti tarafından bakılmasına izin verilmiş ancak hırsızlık ve adam öldürme gibi suçlarda Selçuklu mahkemelerinin yetkili olduğuna karar verilmiştir.\n\nBu bilgiyle;\n\nI. Hristiyanların tek temsilcisinin Venedikliler olduğu,\n\nII. Venedik'e Selçuklu ülkesinde ayrıcalıklar tanındığı,\n\nIII. Selçuklu sultanının ticareti canlandırmak istediği\n\nyargılarından hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -692,7 +692,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Yerleşme ve Devletleşme Sürecinde Selçuklu Türkiyesi",
     "yil": "2020",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -703,7 +703,7 @@
     "id": 52873,
     "ders": "TYT TARİH",
     "soru_no": 36,
-    "soru": "",
+    "soru": "I. Alâeddin Keykubad'ın Moğollara karşı birlikte hareket etme teklifini reddeden, Ahlat'ı kuşatarak Anadolu için bir tehdit oluşturan ve Yassıçemen Savaşı'nda Türkiye Selçukluları tarafından mağlup edilen devlet aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Karakoyunlular",
       "B": "Gazneliler",
@@ -712,7 +712,7 @@
       "E": "Harzemşahlar"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Yerleşme ve Devletleşme Sürecinde Selçuklu Türkiyesi",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -723,7 +723,7 @@
     "id": 52874,
     "ders": "TYT TARİH",
     "soru_no": 37,
-    "soru": "",
+    "soru": "1340'larda Osmanoğullarının egemenlik alanını gösteren bu haritaya göre aşağıdakilerden hangisi söylenemez? (Haritada Osmanoğullarının egemenlik alanı, Anadolu'da Söğüt-Domaniç çevresi ile Bursa ve çevresi olarak gösterilmekte; Anadolu'da çeşitli beyliklerin varlığı, Selanik ve Kuzey Ege adalarının Bizans hâkimiyetinde olduğu görülmektedir.)",
     "secenekler": {
       "A": "Anadolu'da Beylikler Dönemi'nin devam ettiği",
       "B": "Selanik'in, Bizans hâkimiyetinde bulunduğu",
@@ -732,7 +732,7 @@
       "E": "Kuzey Ege'deki bazı adaların Bizans'a ait olduğu"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Beylikten Devlete Osmanlı Siyaseti (1302-1453)",
     "yil": "2018",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -743,7 +743,7 @@
     "id": 52875,
     "ders": "TYT TARİH",
     "soru_no": 38,
-    "soru": "",
+    "soru": "Osmanlı Beyliği'nin kurucusu olan Osman Gazi bir boy beyidir. Özellikle XIII. yüzyıl başlarındaki Moğol istilasından kaçan çok sayıda Oğuz boyu, Anadolu'nun farklı bölgelerine dağılmışlardır. Ertuğrul Gazi'ye bağlı olan boylar da Anadolu Selçukluları tarafından Bizans'a sınır olan Söğüt ve Domaniç bölgesine gönderilmiştir.\n\nBu bilgiden hareketle aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Moğol istilası, Anadolu'daki siyasi düzeni bozmuştur.",
       "B": "Osmanlı Beyliği, Kuzeybatı Anadolu'da kurulmuştur.",
@@ -752,7 +752,7 @@
       "E": "Moğollar, Anadolu'nun uç bölgelerinde kalıcı egemenlik kurmuştur."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Beylikten Devlete Osmanlı Siyaseti (1302-1453)",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -763,7 +763,7 @@
     "id": 52876,
     "ders": "TYT TARİH",
     "soru_no": 39,
-    "soru": "",
+    "soru": "Kütahya-Eskişehir Muharebeleri'nden sonra İngiltere Başbakanı 16 Ağustos 1921'de Avam Kamarasında yaptığı konuşmada şu ifadeleri kullanmıştır: \"Türk ayaklanmasını bastırmak için Anadolu'nun dağlık bölgelerine kadar İngiliz orduları gönderilemeyeceğine göre İngiltere'nin önünde tek bir seçenek vardır, o da her iki tarafı sonuna kadar çarpıştırmaktır.\"\n\nİngiltere Başbakanı'nın bu konuşmasından\n\nI. Anadolu'daki ulusal direniş hareketinin isyan olarak görüldüğü,\n\nII. İtilaf Devletleri arasında görüş birliğinin yeniden sağlandığı,\n\nIII. İngiltere'nin çıkarları için Türk-Yunan savaşının devam ettirilmek istendiği\n\nçıkarımlarından hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -772,7 +772,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kurtuluş Savaşı",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -783,7 +783,7 @@
     "id": 52877,
     "ders": "TYT TARİH",
     "soru_no": 40,
-    "soru": "",
+    "soru": "Lozan Barış Konferansı'na katılacak olan Türk heyetine hükümet tarafından verilen 14 maddelik talimatnamenin Batı Trakya ile ilgili bölümünde \"Misakımillî maddesi uygulanacaktır.\" ifadesine yer verilmiştir.\n\nSöz konusu talimatnamedeki bu hükme uyan Türk heyeti, Lozan'daki görüşmeler sırasında Batı Trakya ile ilgili aşağıdakilerden hangisini Türk tezi olarak savunmuştur?",
     "secenekler": {
       "A": "Tamirat bedeli karşılığında Türk topraklarına katılmasını",
       "B": "Yönetiminin büyük devletlerin denetimine bırakılmasını",
@@ -792,7 +792,7 @@
       "E": "Bölgenin geleceği için halk oylaması yapılmasını"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Lozan Barış Konferansı",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -803,7 +803,7 @@
     "id": 52878,
     "ders": "TYT TARİH",
     "soru_no": 41,
-    "soru": "",
+    "soru": "Osmanlı Hükûmeti tarafından Karadeniz bölgesinde asayişi sağlamak amacıyla 9. Ordu Müfettişi olarak Anadolu'ya gönderilen Mustafa Kemal Paşa, Havza'da \"İzmir'in ve maalesef bunu takip eden Manisa'nın işgali gelecekteki tehlikeyi daha açık göstermektedir. Ülke bütünlüğümüzün korunması için miting ve toplantıların daha canlı olarak yapılması ve sürdürülmesi lazımdır. Hayatımıza ve millî bağımsızlığımıza zarar veren işgal ve ilhak gibi olaylar, bütün milletin içini kan ağlatmaktadır.\" şeklinde bir açıklama yapmıştır.\n\nMustafa Kemal Paşa'nın bu açıklamasıyla ilgili aşağıdaki çıkarımlardan hangisi yapılabilir?",
     "secenekler": {
       "A": "Yunan ordusunun işgalini Batı Anadolu ile sınırlı gördüğü",
       "B": "Manda ve himayeyi ülke bütünlüğü için çözüm olarak önerdiği",
@@ -812,7 +812,7 @@
       "E": "Osmanlı Hükûmeti'nin verdiği görevin dışında bir harekete yöneldiği"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kurtuluş Savaşı Hazırlık Dönemi",
     "yil": "2026",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -823,7 +823,7 @@
     "id": 52879,
     "ders": "TYT TARİH",
     "soru_no": 42,
-    "soru": "",
+    "soru": "20 Ocak 1921'de TBMM'de Teşkilat-ı Esasiye Kanunu adıyla kabul edilen anayasanın 1. maddesi \"Hâkimiyet kayıtsız şartsız milletindir. İdare usulü halkın geleceğini bizzat ve bilfiil idare etmesi esasına dayanır.\" şeklinde düzenlenmiştir.\n\n1921 Teşkilat-ı Esasiye Kanunu'nun bu maddesi ile\n\nI. ülkede hukuk birliğinin sağlandığı,\n\nII. egemenliğin kaynağının değiştirildiği,\n\nIII. kişi hak ve özgürlüklerinin düzenlendiği\n\nyargılarından hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -832,7 +832,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "1921 Teşkilat-ı Esasiye Kanunu",
     "yil": "2026",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -843,7 +843,7 @@
     "id": 52880,
     "ders": "TYT TARİH",
     "soru_no": 43,
-    "soru": "",
+    "soru": "II. Meşrutiyet Dönemi'nde İttihat ve Terakki Cemiyeti, toplumsal bütünlüğü sağlamak için ortak bir eğitim sistemine geçmek amacıyla çalışmalar yapmıştır.\n\nII. Meşrutiyet Dönemi'nde sonuç alınamayan bu girişim Cumhuriyet Dönemi'ndeki hangi düzenleme ile başarıya ulaşmıştır?",
     "secenekler": {
       "A": "Tevhid-i Tedrisat Kanunu'nun kabul edilmesi",
       "B": "Üniversite reformunun yapılması",
@@ -852,7 +852,7 @@
       "E": "Türk Tarih Kurumunun kurulması"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Atatürkçülük ve Türk İnkılabı",
     "yil": "2018",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -863,7 +863,7 @@
     "id": 52881,
     "ders": "TYT TARİH",
     "soru_no": 44,
-    "soru": "",
+    "soru": "Atatürk, \"Bize milliyetçi derler, fakat biz öyle bir milliyetçiyiz ki, bizimle iş birliği eden bütün milletlere hürmet ve riayet ederiz. Bizim milliyetçiliğimiz bencil ve mağrurane milliyetçilik değildir.\" demiştir.\n\nBuna göre Atatürk milliyetçiliği,\n\nI. Başka milletlerin düşmanlığına dayanmaz.\n\nII. İnsan ve millet onuruna değer verir.\n\nIII. Türk milletini üstün tutar.\n\nyargılarından hangilerini bünyesinde barındırır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -872,7 +872,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Atatürkçülük ve Türk İnkılabı",
     "yil": "2019",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -883,7 +883,7 @@
     "id": 52882,
     "ders": "TYT TARİH",
     "soru_no": 45,
-    "soru": "",
+    "soru": "Kütahya-Eskişehir Muharebeleri'nden sonra İngiltere Başbakanı 16 Ağustos 1921'de Avam Kamarasında yaptığı konuşmada şu ifadeleri kullanmıştır: \"Türk ayaklanmasını bastırmak için Anadolu'nun dağlık bölgelerine kadar İngiliz orduları gönderilemeyeceğine göre İngiltere'nin önünde tek bir seçenek vardır, o da her iki tarafı sonuna kadar çarpıştırmaktır.\"\n\nİngiltere Başbakanı'nın bu konuşmasından\n\nI. Anadolu'daki ulusal direniş hareketinin isyan olarak görüldüğü,\n\nII. İtilaf Devletleri arasında görüş birliğinin yeniden sağlandığı,\n\nIII. İngiltere'nin çıkarları için Türk-Yunan savaşının devam ettirilmek istendiği\n\nçıkarımlarından hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -892,7 +892,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kurtuluş Savaşı",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": false,

@@ -382,11 +382,11 @@
     "soru_no": 2,
     "soru": "Aşağıdaki fillerden hangisi muzari formdadır?",
     "secenekler": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "كَتَبَ (Ketabe)",
+      "B": "جَلَسَ (Celese)",
+      "C": "قَرَأَ (Karae)",
+      "D": "ذَهَبَ (Zehebe)",
+      "E": "يَذْهَبُ (Yezhebu)"
     },
     "dogru_cevap": "E",
     "ana_konu": "Arapçada Fiiller ve Aksâm-ı Seb'a",
@@ -414,13 +414,13 @@
     "yil": "1. Sınıf Güz Alıştırmaları",
     "donem": "1.2",
     "soru_no": 3,
-    "soru": "Yukarıdaki ifadeye verilebilecek karşılık aşağıdakilerin hangisinde vardır?",
+    "soru": "مَرْحَبًا أَحْمَد، كَيْفَ حَالُكَ؟ (Merhaba Ahmet, nasılsın?)\n\nYukarıdaki ifadeye verilebilecek karşılık aşağıdakilerin hangisinde vardır?",
     "secenekler": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "بِخَيْرٍ، شُكْرًا لَكَ (İyiyim, teşekkür ederim)",
+      "B": "صَبَاحُ الخَيْرِ (Günaydın)",
+      "C": "مَعَ السَّلَامَةِ (Hoşça kal)",
+      "D": "أَهْلًا وَسَهْلًا (Hoş geldiniz)",
+      "E": "إِلَى اللِّقَاءِ (Görüşmek üzere)"
     },
     "dogru_cevap": "A",
     "ana_konu": "Arapçada Fiiller ve Aksâm-ı Seb'a",
@@ -620,11 +620,11 @@
     "soru_no": 9,
     "soru": "Aşağıdaki fillerden hangisi muzari formdadır?",
     "secenekler": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "كَتَبَ (Ketabe)",
+      "B": "جَلَسَ (Celese)",
+      "C": "قَرَأَ (Karae)",
+      "D": "ذَهَبَ (Zehebe)",
+      "E": "يَذْهَبُ (Yezhebu)"
     },
     "dogru_cevap": "E",
     "ana_konu": "Arapçada Fiiller ve Aksâm-ı Seb'a",
@@ -652,13 +652,13 @@
     "yil": "1. Sınıf Güz Alıştırmaları",
     "donem": "1.2",
     "soru_no": 10,
-    "soru": "Yukarıdaki ifadeye verilebilecek karşılık aşağıdakilerin hangisinde vardır?",
+    "soru": "مَرْحَبًا أَحْمَد، كَيْفَ حَالُكَ؟ (Merhaba Ahmet, nasılsın?)\n\nYukarıdaki ifadeye verilebilecek karşılık aşağıdakilerin hangisinde vardır?",
     "secenekler": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "بِخَيْرٍ، شُكْرًا لَكَ (İyiyim, teşekkür ederim)",
+      "B": "صَبَاحُ الخَيْرِ (Günaydın)",
+      "C": "مَعَ السَّلَامَةِ (Hoşça kal)",
+      "D": "أَهْلًا وَسَهْلًا (Hoş geldiniz)",
+      "E": "إِلَى اللِّقَاءِ (Görüşmek üzere)"
     },
     "dogru_cevap": "A",
     "ana_konu": "Arapçada Fiiller ve Aksâm-ı Seb'a",
@@ -1436,11 +1436,11 @@
     "soru_no": 3,
     "soru": "Aşağıdaki cümlelerden hangisi haber-mubteda ilişkisi açısından diğerlerinden farklıdır?",
     "secenekler": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "فِي البَيْتِ رَجُلٌ",
+      "B": "الكِتَابُ عَلَى الطَّاوِلَةِ",
+      "C": "عَلَى المَكْتَبِ قَلَمٌ",
+      "D": "فِي الحَدِيقَةِ شَجَرَةٌ",
+      "E": "أَمَامَ المَسْجِدِ سَيَّارَةٌ"
     },
     "dogru_cevap": "B",
     "ana_konu": "Arapçada İsim Cümlesi ve Harf-i Cerler",
@@ -1606,11 +1606,11 @@
     "soru_no": 8,
     "soru": "Aşağıdaki cümlelerden hangisi haber-mubteda ilişkisi açısından diğerlerinden farklıdır?",
     "secenekler": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "فِي البَيْتِ رَجُلٌ",
+      "B": "الكِتَابُ عَلَى الطَّاوِلَةِ",
+      "C": "عَلَى المَكْتَبِ قَلَمٌ",
+      "D": "فِي الحَدِيقَةِ شَجَرَةٌ",
+      "E": "أَمَامَ المَسْجِدِ سَيَّارَةٌ"
     },
     "dogru_cevap": "B",
     "ana_konu": "Arapçada İsim Cümlesi ve Harf-i Cerler",

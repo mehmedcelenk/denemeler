@@ -303,7 +303,7 @@
     "id": 51720,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 16,
-    "soru": "",
+    "soru": "Aşağıdaki tabloda bazı kavramlar ve tanımları verilmiştir.\n\n| Kavram | Tanım |\n|---|---|\n| Farz | Yapılması kesin olarak emredilen; yerine getirilmesi sevaba, özürsüz olarak terki günaha, inkârı ise küfre sebep olan davranışlardır. |\n| Sünnet | Hz. Muhammed'in söz, davranış ve onaylarıdır. |\n| İcma | Yapılması dinen hoş karşılanmayan fakat kesin ve açık delillerle de yasaklanmayan eylemlerdir. |\n| Mübah | Mükellefin yapıp yapmamakta özgür bırakıldığı fiillerdir. |\n| Mekruh | Hz. Muhammed'in vefatından sonra herhangi bir asırda müçtehitlerin bir meselenin dinî hükmü üzerinde ittifak etmeleridir. |\n\nYukarıda verilen kavram-tanım eşleştirmelerinin doğru olabilmesi için hangi kavramların birbiriyle yer değiştirmesi gerekir?",
     "secenekler": {
       "A": "Farz ve icma",
       "B": "Farz ve mübah",
@@ -323,7 +323,7 @@
     "id": 51721,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 17,
-    "soru": "",
+    "soru": "Allah; ibadetlerle ilgili temel kuralları Kur'an-ı Kerim'de, ibadetlerin uygulanış şekillerini de Hz. Muhammed'in aracılığıyla insanlara bildirmiştir. Kişilerin ibadetler üzerinde değişiklik yapması veya ibadet olmayan bir davranışı ibadet sayması; dinen uygun olmamasına rağmen bilgisizlik, kültür etkileşimi, insanların eksik ve yanlış inanışları gibi sebeplerle dinin özünde olmayan bazı uygulamaları ortaya çıkarmakta ve bunlar ibadet olarak kabul edilmektedir.\n\nBu parçada bahsedilen kavram aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Bidat",
       "B": "Mekruh",
@@ -343,7 +343,7 @@
     "id": 51722,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 18,
-    "soru": "",
+    "soru": "İslam dininde ibadetlerin yapısı ve uygulanışına dair bazı temel ilkeler vardır. Bu temel ilkeler Allah tarafından belirlenmiş ancak ibadetlerin nasıl yapılacağı çoğunlukla Hz. Muhammed'in rehberliğine ve uygulamasına bırakılmıştır. Bu nedenle bir kimse kendi bakış açısına göre herhangi bir ibadet biçimi ortaya koyamaz ve farklı uygulama biçimleri geliştiremez.\n\nBu parçada ibadetlerin taşıması gereken ilkelerin hangisinden söz edilmiştir?",
     "secenekler": {
       "A": "İstekli yapılıyor olması",
       "B": "Toplumu birleştirici olması",
@@ -363,7 +363,7 @@
     "id": 51723,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 19,
-    "soru": "",
+    "soru": "Hz. Muhammed, söz ve davranışlarının yanı sıra toplumsal alanda gerçekleştirdiği uygulamalarıyla da Müslümanlara rehberlik etmiştir. Örneğin vefatına yakın bir zamanda o; İslam ordusunun başına zekâsına ve kabiliyetine güvendiği, yaklaşık on sekiz yaşında olan Üsame bin Zeyd'i komutan olarak atamıştır. Müslümanlar içerisinde ondan yaşça daha olgun kimseler bulunmasına rağmen Hz. Muhammed'in bu tercihi, bilinçli bir çabanın ürünüdür ve inananlar için birtakım mesajlar içermektedir.\n\nHz. Muhammed'in bu tutumundan hareketle aşağıdakilerin hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Kendisinden sonra kimin halife olacağına dair işaretler bırakmıştır.",
       "B": "Gençlere değer vermiş ve ehil olanlara önemli sorumluluklar yüklemiştir.",
@@ -372,7 +372,7 @@
       "E": "İslam topraklarının kendi döneminde genişlemesi için büyük uğraş vermiştir."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Bazı Genç Sahabiler",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -383,7 +383,7 @@
     "id": 51724,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 20,
-    "soru": "",
+    "soru": "\"... Şayet onlara karşı kırıcı ve sert olsaydın, doğrusu senden koparlardı. Artık onları bağışla ve affedilmeleri için dua et. Ve toplumu ilgilendiren her konuda onlarla müşavere et; sonra bir hareket tarzına karar verince de Allah'a güven. Zira Allah, kendisine dayanıp güvenenleri sever.\" (Al-i İmran, 3:159)\n\nBu ayette aşağıdakilerin hangisine değinilmemiştir?",
     "secenekler": {
       "A": "Nezaketli davranmak",
       "B": "Tevekkül bilinciyle hareket etmek",
@@ -392,7 +392,7 @@
       "E": "Emanete riayet etmek"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kur'an'dan Mesajlar: Al-i İmran Suresi 159. Ayet",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -403,7 +403,7 @@
     "id": 51725,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 21,
-    "soru": "",
+    "soru": "Kur'an-ı Kerim'in başlangıç ve bitiş sayfalarında, satır ve sütun kenarlarında, metnin içinde ve dışında kalan zemin boşluklarında çeşitli teknik ve üsluplarla süslemeler yapılmıştır. Bu kapsamda en yaygın örnek altın tozu ve doğal boyalarla yapılan çiçek ve yaprak desenleri şeklindeki süslemelerdir. Bu süslemelerdeki motiflerde, simetri ve renklerin ahengi yansıtılmaya çalışılmakta ve bu şekilde başta Kur'an olmak üzere çeşitli yazma eserler süslenmektedir.\n\nBu parçada bahsedilen sanat aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Hat",
       "B": "Minyatür",
@@ -412,7 +412,7 @@
       "E": "Çini"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Din, Kültür ve Sanat",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -423,7 +423,7 @@
     "id": 51726,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 22,
-    "soru": "",
+    "soru": "Bir proje kapsamında yurt dışından ülkemizi ziyaret eden öğrenciler din kültürü ve ahlak bilgisi öğretmenleri ile birlikte bir şehir gezisi yapmışlardır. Gezi esnasında dikkatlerini çeken şeyleri aşağıdaki şekilde sormuşlardır:\n\n• Camilerde bulunan kubbeler hangi amaçla yapılmıştır?\n\n• Cami içerisindeki estetik yazılar ne anlama gelmektedir?\n\n• Müzede karşılaştığımız eski tarihli Mesnevi isimli kitapta nelerden bahsedilmektedir?\n\n• Bazı vakitlerde camilerden duyulan nağmeli ses nedir?\n\nÖğrencilerin bu soruları İslam kültür unsurlarından hangisi kapsamında değerlendirilemez?",
     "secenekler": {
       "A": "Hat",
       "B": "Mimari",
@@ -443,7 +443,7 @@
     "id": 51727,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 23,
-    "soru": "",
+    "soru": "İslam dininde, özellikle çaba göstererek elde edilen kazancın değerli olduğunu ve hiç kimsenin çabasının zayi edilmemesi gerektiğini belirten birçok ayet ve hadis bulunmaktadır.\n\nAşağıdakilerden hangisi bunlara örnek verilemez?",
     "secenekler": {
       "A": "\"Bilsin ki insan için kendi çalışmasından başka bir şey yoktur. Şüphesiz onun çalışması ileride görülecektir. Sonra çalışmasının karşılığı kendisine tastamam verilecektir.\" (Necm, 53:39-41)",
       "B": "\"Kişi kendi elinin emeğinden daha temiz bir kazanç elde etmemiştir.\" (Hadis-i şerif)",
@@ -463,7 +463,7 @@
     "id": 51728,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 24,
-    "soru": "",
+    "soru": "Kur'an-ı Kerim'de; Müslümanın her türlü aşırılıktan uzak, ölçülü, dengeli bir yol, inanç ve yaşam biçimini benimsemesi gerektiği vurgulanmaktadır. Hz. Muhammed zamanında yaşanan bir olay da bu duruma örnek verilebilir: Sahabelerden birinin; çok sevap kazanmak için sürekli namaz kıldığı, bir diğerinin ise sürekli oruç tutmak üzere yemin ettiği bilgisi Hz. Muhammed'e ulaşır. O, bu durumdan hiç memnun olmaz ve söz konusu sahabelerin yanına giderek \"Ben Allah'tan en çok korkanınızım. Ama ben bazen namaz kılar bazen dinlenirim, bazen oruç tutar bazen de yerim.\" der ve onların da aşırıya gitmekten uzak durmalarını ister.\n\nBu parçada Hz. Muhammed'in eleştirdiği tutum aşağıdaki kavramlardan hangisiyle ifade edilir?",
     "secenekler": {
       "A": "Fitne",
       "B": "Haset",
@@ -472,7 +472,7 @@
       "E": "Taassup"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Tutum ve Davranışlarda Ölçülü Olmak",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -483,7 +483,7 @@
     "id": 51729,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 25,
-    "soru": "",
+    "soru": "Kur'an-ı Kerim'de inananların kardeş olduğu belirtilmiş ve toplumsal birliği bozacak davranışlara karşı uyarılarda bulunulmuştur. Bu kapsamda yerilen davranışlardan biri de kişilerin mahremiyetlerini ihlal etmek, gizli ve özel hâllerini araştırmaktır. Kur'an-ı Kerim'de \"Ey iman edenler!.. Birbirinizin kusurlarını ve gizli hâllerini araştırmayın...\" (Hucurat, 49:12) ayetiyle bu davranış kınanmıştır.\n\nBu parçada söz edilen davranış aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Tecessüs",
       "B": "Suizan",
@@ -492,7 +492,7 @@
       "E": "İftira"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "İslam Ahlakında Yerilen Bazı Davranışlar",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -503,7 +503,7 @@
     "id": 51730,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 26,
-    "soru": "",
+    "soru": "Lise öğrencisi Safa, tesadüfen açtığı bir televizyon kanalında \"İslam'da İmamet\" konusunun tartışıldığını görür ve merakla programı izlemeye başlar. Programdaki konuşmacılardan biri, imameti bir inanç esası kabul ettiğini söyler. Ayrıca, Hz. Ali'nin, Hz. Muhammed'den sonra ilk imam (yönetici) olması gerektiğini, bunun ayet ve hadislerden de çıkarılabileceğini ve imametin Hz. Ali'nin soyundan gelenlerin hakkı olduğunu dile getirir.\n\nBu parçadaki konuşmacının bahsettiği mezhep aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Hanbelilik",
       "B": "Maturidilik",
@@ -512,7 +512,7 @@
       "E": "Malikilik"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "İslam Düşüncesindeki Fıkhi Yorumlar",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -523,7 +523,7 @@
     "id": 51731,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 27,
-    "soru": "",
+    "soru": "Hicri II. ve III. yüzyıllar İslam hukuku gelişimi açısından önemli bir dönemdir. Abbasilerin hükümdarlığı dönemine denk gelen bu süreçte önemli âlimler yetişmiştir. Bunlardan biri ehli rey ve ehli hadisin birikimini özümsemiş ve ardından Mısır'da kendisine ait görüşleri açıklamıştır. Adına nispet edilen fıkhi mezhebi kuran bu âlim, İslam hukuk metodolojisinde ilk eser olarak kabul edilen er-Risale isimli kitabı yazmıştır. Ülkemizde de mensupları bulunan bu mezhep imamının görüşleri günümüzde de geçerliliğini korumaktadır.\n\nBu parçada anlatılan âlim aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Ebu Hanife",
       "B": "Şafii",
@@ -532,7 +532,7 @@
       "E": "Maturidi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "İslam Düşüncesindeki Fıkhi Yorumlar",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -543,7 +543,7 @@
     "id": 51732,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 28,
-    "soru": "",
+    "soru": "\"...İnsanlardan, 'Ey Rabbimiz! Bize (vereceğini) bu dünyada ver.' diyenler vardır. Bunların ahirette bir nasibi yoktur. Onlardan, 'Rabbimiz! Bize dünyada da, ahirette de iyilik ver ve bizi ateş azabından koru.' diyenler de vardır. İşte onlara kazandıklarından bir nasip vardır. Allah, hesabı pek çabuk görendir.\" (Bakara, 2:200-202)\n\nBu ayetlerde aşağıdakilerden hangisi vurgulanmaktadır?",
     "secenekler": {
       "A": "Ahiret inancı, insanı ölçülü olmaya yönlendirir.",
       "B": "Allah, dünyayı isteyene dünyayı; ahireti isteyene ahireti verir.",
@@ -563,7 +563,7 @@
     "id": 51733,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 29,
-    "soru": "",
+    "soru": "\"... Dünya hayatı, gökten indirdiğimiz bir su gibidir ki, bu su sayesinde yeryüzünün bitkisi (önce gelişip) birbirine karışmış, arkasından rüzgârın savurduğu çer çöp hâline gelmiştir ...\" (Kehf, 18:45)\n\nBu ayette aşağıdakilerden hangisi vurgulanmaktadır?",
     "secenekler": {
       "A": "Dünyanın geçiciliği",
       "B": "Allah'ın rahmetinin genişliği",
@@ -583,7 +583,7 @@
     "id": 51734,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 30,
-    "soru": "",
+    "soru": "İnsan, yaşadığı hayatı anlamlandırmaya çalışan bir varlıktır. Onun bu anlam arayışına cevap veren İslam dini, insanın varlıkların en üstünü olduğunu; varoluşun amaçsız olmadığını vurgulamaktadır. Kur'an-ı Kerim'deki pek çok ayet de insana yaşadığı hayatın ve kâinatın gereksiz olmadığını hatırlatmaktadır.\n\nAşağıdaki ayetlerden hangisi bu kapsamda değerlendirilemez?",
     "secenekler": {
       "A": "\"İnsan, kendisinin başıboş bırakılacağını mı zanneder?\" (Kıyame, 75:36)",
       "B": "\"(Resulüm!) Sen af yolunu tut, iyiliği emret, cahillerden yüz çevir.\" (Araf, 7:199)",
@@ -603,7 +603,7 @@
     "id": 51735,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 31,
-    "soru": "",
+    "soru": "Daha doğmadan önce babasını, altı yaşında annesini kaybederek yetim ve öksüz olmanın getirdiği sıkıntılarla karşılaşan ve zor şartlarda yetişen Hz. Muhammed, karşılaştığı zor durumlarda bile haktan uzaklaşmamıştır. İnsanları İslam'a davet ederken haksızlıklara ve zulümlere maruz kalmış, hatta Taif şehrinde taşlanmıştır. Uhud Savaşı'nda mücadele ederken yaralanmış ve dişi kırılmış ancak davasından geri adım atmamıştır. Bütün bu yaşadıklarına rağmen güçlü bir konuma geldikten sonra da intikam alma yoluna gitmemiş ve her daim adaletli davranmıştır.\n\nBu parçada Hz. Muhammed'in aşağıdaki özelliklerinden hangisine değinilmemiştir?",
     "secenekler": {
       "A": "İleri görüşlülük",
       "B": "Doğruluk",
@@ -612,7 +612,7 @@
       "E": "Kararlılık"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Hz. Muhammed'in Şahsiyeti",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -623,7 +623,7 @@
     "id": 51736,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 32,
-    "soru": "",
+    "soru": "Hz. Muhammed, sahabelerin ibadetleri uygulamasında onlara örnek olmuş ve Kur'an-ı Kerim'de temel esasları verilen hususları onlara açıklamıştır. Örneğin namazın farz kılınmasından sonra nasıl eda edileceğini soran sahabeye \"Ben namazı nasıl kılıyorsam siz de öyle kılın.\" buyurmuştur. Sadece ibadetlerin uygulanmasına yönelik konularda değil toplumda adalet ve barışın sağlanması için de çeşitli kurallar koymuş, bazı uygulamaları sonlandırmıştır. Örneğin Medine'ye gelen erzakın tamamını satın alan ve bu durumdan fazla kazanç elde etmeyi isteyen bir kişiye bu erzakı istiflemesini yasaklamıştır.\n\nBu parçada Hz. Muhammed'le ilgili vurgulanan husus aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Tebliğ ettiklerini uygulamanın kişiyi Allah'a yaklaştırdığı",
       "B": "Tebliğinin hem bireysel hem toplumsal alanı kapsadığı",
@@ -632,7 +632,7 @@
       "E": "İbadetlerin uygulamasında rehberliğinin zorunlu olduğu"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Hz. Muhammed'in Şahsiyeti",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -643,7 +643,7 @@
     "id": 51737,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 33,
-    "soru": "",
+    "soru": "Daha doğmadan önce babasını, altı yaşında annesini kaybederek yetim ve öksüz olmanın getirdiği sıkıntılarla karşılaşan ve zor şartlarda yetişen Hz. Muhammed, karşılaştığı zor durumlarda bile haktan uzaklaşmamıştır. İnsanları İslam'a davet ederken haksızlıklara ve zulümlere maruz kalmış, hatta Taif şehrinde taşlanmıştır. Uhud Savaşı'nda mücadele ederken yaralanmış ve dişi kırılmış ancak davasından geri adım atmamıştır. Bütün bu yaşadıklarına rağmen güçlü bir konuma geldikten sonra da intikam alma yoluna gitmemiş ve her daim adaletli davranmıştır.\n\nBu parçada Hz. Muhammed'in aşağıdaki özelliklerinden hangisine değinilmemiştir?",
     "secenekler": {
       "A": "İleri görüşlülük",
       "B": "Doğruluk",
@@ -652,7 +652,7 @@
       "E": "Kararlılık"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Hz. Muhammed'in Şahsiyeti",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -663,7 +663,7 @@
     "id": 51738,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 34,
-    "soru": "",
+    "soru": "\"Andolsun, Allah'ın Resulünde sizin için; Allah'a ve ahiret gününe kavuşmayı uman, Allah'ı çok zikreden kimseler için güzel bir örnek vardır.\" (Ahzab, 33:21)\n\nayetinde, Hz. Muhammed'in dikkat çekilen yönü aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Temsil",
       "B": "Tebyin",
@@ -672,7 +672,7 @@
       "E": "Tefekkür"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Hz. Muhammed'in Peygamberlik Yönü",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -683,7 +683,7 @@
     "id": 51739,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 35,
-    "soru": "",
+    "soru": "Hz. Muhammed peygamber olarak seçildiği için kendisine birtakım görev ve sorumluluklar yüklenmiştir. Bunlardan biri Allah'ın izni ve bilgisi dâhilinde hükümler koymasıdır. Konulan bu hükümlere Müslümanlar uymakla yükümlüdür. Nitekim Kur'an'ı Kerim'de yer alan \"Allah ve Resulü bir iş hakkında hüküm verdikleri zaman, hiçbir mümin erkek ve kadın için kendi işleri konusunda tercih kullanma hakları yoktur. Kim Allah'a ve Resulüne karşı gelirse, şüphesiz ki o apaçık bir şekilde sapmıştır.\" (Ahzab, 33:36) ayeti bu hususa işaret etmektedir.\n\nBu parçada Hz. Muhammed'in ön plana çıkan yönü aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Tebliğ",
       "B": "Tebyin",
@@ -692,7 +692,7 @@
       "E": "Tasdik"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Hz. Muhammed'in Peygamberlik Yönü",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -703,7 +703,7 @@
     "id": 51740,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 36,
-    "soru": "",
+    "soru": "Sünnet çeşitleriyle ilgili olarak Hz. Muhammed'in;\n\nI. herhangi bir mesele hakkında yaptığı açıklamalara,\n\nII. davranış ve uygulamalarıyla ilgili sahabenin nakletmiş olduğu haberlere,\n\nIII. sahabe tarafından söylenen bir sözü ya da işlenen bir fiili onaylamasına\n\nverilen isimler aşağıdakilerin hangisinde doğru sıralanmıştır?",
     "secenekler": {
       "A": "I: Sözlü, II: Fiilî, III: Takrirî",
       "B": "I: Takrirî, II: Fiilî, III: Sözlü",
@@ -712,7 +712,7 @@
       "E": "I: Takrirî, II: Sözlü, III: Fiilî"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Hz. Muhammed'e Bağlılık ve İtaat",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -723,7 +723,7 @@
     "id": 51741,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 37,
-    "soru": "",
+    "soru": "Akif, babasının namaz kıldıktan sonra şu duayı yaptığını duyar: \"Rahman ve Rahim olan Allah'ın adıyla! Rabbim beni, senin yoluna, dosdoğru yola ilet. Sana iman edip emirlerine uyan, yasaklarından ve sana karşı gelmekten sakınan kullarından eyle. İbadetlerimi riyadan uzak, sadece senin rızanı gözeterek yapmamı ve seni görüyormuş gibi yaşamayı nasip eyle.\"\n\nBu parçada verilen duadan aşağıdaki kavramlardan hangisi çıkarılamaz?",
     "secenekler": {
       "A": "İhsan",
       "B": "Sırat-ı müstakim",
@@ -732,7 +732,7 @@
       "E": "Takva"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Dosdoğru Yol: Sıratımüstakim",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -743,7 +743,7 @@
     "id": 51742,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 38,
-    "soru": "",
+    "soru": "Din kültürü ve ahlak bilgisi dersinde öğretmen, \"salih amel\" kavramını öğrencilerine anlatmıştır. Bu kavramın içerisine giren davranışlardan bir kısmının herkes tarafından yapılması istenen farz ibadetler olduğunu, diğer kısmının ise herkesin yerine getirmek zorunda olmadığı ancak İslam dininin teşvik ettiği davranışlar olduğunu vurgulamıştır. Daha sonra herkes tarafından yapılması zorunlu olmayan salih amellere örnekler vermiştir.\n\nAşağıdakilerden hangisi öğretmenin verdiği bu örneklerden biri olamaz?",
     "secenekler": {
       "A": "İnsanlık için faydalı bir alet icat etmek",
       "B": "Yol yaptırmak",
@@ -752,7 +752,7 @@
       "E": "Okul yapımına yardım etmek"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "İyi, Doğru Ve Güzel Davranış: Salih Amel",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -763,7 +763,7 @@
     "id": 51743,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 39,
-    "soru": "",
+    "soru": "Teizm; tek bir Tanrı'nın varlığını, şuurlu ve iradeli bir varlık olduğunu kabul eder. Tanrı'nın âlemi var ettiğine, vahiy göndererek insanlarla iletişime geçtiğine, âleme ve insana daima müdahil olduğuna vurgu yapar. Başka bir ifadeyle teizm, Tanrı'nın mutlak kudret sahibi olduğuna, her şeyi bildiğine, gördüğüne, duyduğuna ve takdir ettiğine inanır. Nitekim teist düşünceye göre Tanrı, değerin kaynağı ve koruyucusudur; insanın kendisine ibadet ve itaat etmesini ister. Bunlar, teizmi diğer Tanrı anlayışlarından ayıran temel özelliklerdir.\n\nBu parçadan hareketle teizmle ilgili aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Tanrı yarattıklarını yeniden diriltip hesaba çekecektir.",
       "B": "Tanrı'nın âlemle ilişkisi her an devam etmektedir.",
@@ -772,7 +772,7 @@
       "E": "Tanrı, üstün niteliklere sahiptir."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "İnançla İlgili Felsefi Yaklaşımlar",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -783,7 +783,7 @@
     "id": 51744,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 40,
-    "soru": "",
+    "soru": "Yahudilik ile ilgili proje ödevi hazırlamak isteyen bir öğrenci cumartesi günü bu dinin ibadet mekânına gider. İçeriye girdiğinde cemaatin de orada olduğunu fark eder. O dine mensup kişilerin dinlenme ve ibadet günü olduğunu anlar. Ayinin bitmesini beklerken bu mekânı inceleme fırsatı bulur. Ayinde bulunan erkeklerin, üzerinde altı köşeli yıldız bulunan bir şapka taktığını görür. Ayrıca yedi kollu bir şamdanda mumların yandığını fark eder.\n\nBu parçada Yahudilikle ilgili aşağıdakilerin hangisinden söz edilmemiştir?",
     "secenekler": {
       "A": "Şabat",
       "B": "Kipa",
@@ -792,7 +792,7 @@
       "E": "Tora"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Yahudilik",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -803,7 +803,7 @@
     "id": 51745,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 41,
-    "soru": "",
+    "soru": "Hristiyanlık inancında Baba, Oğul ve Kutsal Ruh'tan meydana gelen üçlü bir anlayış mevcuttur. Baba, mutlak güç sahibi olan tanrıdır. Oğul, tanrının oğlu olarak kabul edilen Hz. İsa'dır. Kutsal Ruh ise ruhları idare eden tanrı gücüdür. Bu üç unsurdan Baba yaratıcı, Oğul kurtarıcı, Kutsal Ruh ise tasdik edicidir. Hristiyanlar bu inancı şöyle ifade eder: Baba'dan (ve Oğul'dan) gelen, yaşam veren Rabb'e, Kutsal Ruh'a iman ediyoruz. Baba ve Oğul'la birlikte ona da tapınıp onu yüceltiyoruz.\n\nBu parçada anlatılan inanç aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Vaftiz",
       "B": "Paskalya",
@@ -812,7 +812,7 @@
       "E": "Konfirmasyon"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Hristiyanlık",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -823,7 +823,7 @@
     "id": 51746,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 42,
-    "soru": "",
+    "soru": "Hz. Muhammed hicretten sonra Medine'de ilk iş olarak Mescid-i Nebî'yi inşa ettirmiştir. Bu mescidin bitişiğinde yer alan suffe denilen bölümde eğitim öğretim faaliyeti sürdürülmüştür. Suffede başlayan bu faaliyet, Hz. Muhammed'in vefatından sonra daha çok cami merkezli olarak devam etmiştir. Buralarda Kuran-ı Kerim, tefsir, hadis, fıkıh, siyer gibi dinî ilimler okutulmuş ve bu dersler ders halkası şeklinde yürütülmüştür. Eğitim öğretim faaliyetleri daha sonra darü'l-hadis, darü'l-kurra ve medreselerde de gerçekleştirilmiştir.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Hicretten sonra eğitimde kurumsallaşma süreci başlamıştır.",
       "B": "Yeni eğitim merkezlerinin açılmasıyla camiler sadece ibadet mekânı olarak kullanılmıştır.",
@@ -832,7 +832,7 @@
       "E": "Ders halkaları eğitim seviyelerine göre oluşturulmuştur."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "İslam Medeniyetinde Bilim ve Düşüncenin Gelişimi",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -843,7 +843,7 @@
     "id": 51747,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 43,
-    "soru": "",
+    "soru": "İslam kültür ve medeniyetinin gelişip zenginleşmesinde çeviri faaliyetlerinin önemli payı olmuştur. Bu faaliyetlerin sistemli bir şekilde yürütülmesi için Abbasiler Dönemi'nde ciddi adımlar atılmış ve Bağdat'ta bir merkez kurulmuştur. Burada çeşitli dillerde kaleme alınmış pek çok eserin çevirisi yapılarak zengin bir kütüphane oluşturulmuştur. İlmî tartışmaların da yapıldığı bu merkez, Orta Çağ'da ilimler akademisi niteliğinde hizmet vermiştir.\n\nBu parçada bahsedilen kurum aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Nizamiye Medresesi",
       "B": "Daru'l-hadis",
@@ -852,7 +852,7 @@
       "E": "Beytü'l-hikme"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "İslam Medeniyetinde Öne Çıkan Eğitim Kurumları",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -863,7 +863,7 @@
     "id": 51748,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 44,
-    "soru": "",
+    "soru": "Rasathanelerle ilgili aşağıdakilerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Medreselerin ayrılmaz bir parçası kabul edilmiştir.",
       "B": "Sistemli hâle gelmesinde ve süreklilik kazanmasında Müslümanlar önemli rol oynamıştır.",
@@ -872,7 +872,7 @@
       "E": "Dinî ve bilimsel gerekçelerle inşa edilmiştir."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "İslam Medeniyetinde Öne Çıkan Eğitim Kurumları",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -883,7 +883,7 @@
     "id": 51749,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 45,
-    "soru": "",
+    "soru": "Camiler İslam kültür ve medeniyetinin ilk dönemlerinde ibadet amacının yanı sıra eğitim öğretim faaliyetleri için de kullanılmıştır. Ders halkaları oluşturularak yapılan bu faaliyetler, artan nüfusun etkisiyle camilere sığmamaya başlamış; farklı eğitim mekânlarının ortaya çıkmasını sağlamıştır. Bu mekânların bazılarında günümüzde ilkokula karşılık gelen okuma yazma öğretimi yapılırken bir kısmında yükseköğretim düzeyinde eğitim faaliyetleri gerçekleştirilmiştir. Ayrıca özel olarak Kur'an-ı Kerim, kıraat ve hafızlık eğitimi veren müesseseler kurulmuştur.\n\nBu parçada\n\nI. medrese,\n\nII. küttap,\n\nIII. darülkurra\n\nkurumlarının hangilerinden söz edilmiştir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -892,7 +892,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "İslam Medeniyetinde Öne Çıkan Eğitim Kurumları",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -903,7 +903,7 @@
     "id": 51750,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 46,
-    "soru": "",
+    "soru": "İslam dininin inanç esaslarını; ayet, hadis ve akıl ışığında açıklayan, yorumlayan, ispat eden ve başka din mensuplarından gelebilecek eleştirilere karşı savunan ilim dalı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Tefsir",
       "B": "Kelam",
@@ -912,7 +912,7 @@
       "E": "Fıkıh"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Müslümanların Bilim Alanında Yaptığı Öncü ve Özgün Çalışmalar",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -923,7 +923,7 @@
     "id": 51751,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 47,
-    "soru": "",
+    "soru": "Mahallesindeki camide bulunan kitaplığı inceleyen bir kişi burada sırasıyla şu eserlerin bulunduğunu gözlemlemiştir: Ayetlerin açıklamaları ve yorumlarının yer aldığı Elmalılı Hamdi Yazır'ın Hak Dini Kuran Dili adlı eseri, Hz. Muhammed'in sözlerinin bulunduğu Buhari'nin Sahih'ini, ağırlıklı olarak ibadet ve sosyal hayatla ilgili konuların bulunduğu Diyanet İşleri Başkanlığı tarafından hazırlanan İslam İlmihali'ni ve inanç konularının tartışıldığı Maturidi'nin Kitabu't-Tevhid'ini görmüştür.\n\nBu kitaplıkta aşağıdaki İslami ilimlerin hangisiyle ilgili bir eser bulunmamaktadır?",
     "secenekler": {
       "A": "Hadis",
       "B": "Tasavvuf",
@@ -943,7 +943,7 @@
     "id": 51752,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 48,
-    "soru": "",
+    "soru": "Müslüman âlimler, Kur'an-ı Kerim'in ve Hz. Muhammed'in bilime teşvik mesajlarının rehberliğinde hem din bilimlerinde hem de pozitif ilimlerde önemli çalışmalar yapmıştır. Bu âlimlerden biri, matematik alanında yaptığı çalışmalarla öne çıkmıştır. Logaritmayı geliştirmiş, sıfırlı ondalık sayıyı bulmuştur. Yaptığı çalışmalarla cebir ilminin kurucusu kabul edilmiştir.\n\nBu parçada bahsedilen âlim aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Harizmi",
       "B": "Farabi",
@@ -963,7 +963,7 @@
     "id": 51753,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 49,
-    "soru": "",
+    "soru": "Sınır boylarında İslam'ın ilk dönemlerinden itibaren güvenliği tesis etmek ve yeni fetihlere hazırlık yapmak amacıyla saldırılara karşı korunaklı yapılar inşa edilmiştir. Buralara savaş için gerekli teçhizat ve belli sayıda asker yerleştirilmiştir. Sınır boylarında inşa edilen bu yapılar sınırların genişlemesiyle birlikte iç bölgelerde kalmış, bunların bir kısmı kervansaray olarak hizmet vermiş, birçoğu da tekke ve zaviyeye dönüşerek ilim ve zikir yapılan merkezler hâline gelmiştir. Selçuklulardan itibaren Anadolu ve Balkanlar'a da yayılan bu yapılar sayesinde İslam'ın yayılması hız kazanmıştır.\n\nBu parçada bahsedilen kurum aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Dergâh",
       "B": "Suffe",
@@ -983,7 +983,7 @@
     "id": 51754,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 50,
-    "soru": "",
+    "soru": "Ahilik teşkilatının kurulmasında fütüvvet anlayışının önemli bir etkisi vardır. Abbasiler tarafından sistematik hâle getirilen ve Anadolu Selçukluları tarafından da sürdürülen bu teşkilatın beylikler döneminde pek çok alanda önemli hizmetleri olmuştur.\n\nAşağıdakilerden hangisi bu hizmetler arasında yer almaz?",
     "secenekler": {
       "A": "Anadolu'da İslamiyet'in yayılması",
       "B": "Göçebe Türklerin yerleşik hayata geçmesi",
@@ -1003,7 +1003,7 @@
     "id": 51755,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 51,
-    "soru": "",
+    "soru": "Hz. Muhammed; ibadetlere verdiği önemin yanında Allah'a bağlılığıyla örnek olan, sade ve mütevazı bir hayat yaşayan, zaman zaman toplumdan uzaklaşarak tefekküre dalan, ahlaki erdemleri yaşamaya ve yaşatmaya çalışan bir kişidir. İslam kültüründe onun bu yönünü öne çıkaran ve İslam'ın ahlak esasları üzerinde yoğunlaşan bir yorum biçimi, düşünce sistemi ortaya çıkmıştır. Zaman içerisinde sistematik bir yapıya kavuşan bu düşünce sistemi, İslam dininin temel ilkeleri doğrultusunda nefsi arındırmayı, üstün bir ahlaka sahip olmayı ve ibadetleri samimiyetle yapmayı gaye edinmiştir.\n\nBu parçada bahsedilen düşünce sistemi aşağıdaki kavramlardan hangisiyle ifade edilmektedir?",
     "secenekler": {
       "A": "Fıkıh",
       "B": "Tefsir",
@@ -1012,7 +1012,7 @@
       "E": "Hadis"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Tasavvufi Düşüncenin Oluşumu",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1023,7 +1023,7 @@
     "id": 51756,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 52,
-    "soru": "",
+    "soru": "İslam düşüncesindeki yorum biçimlerinden biri de ahlakla ilgili konular üzerinde yoğunlaşan tasavvufi yorumlardır. Bu yorum biçimlerinin birincil hedefi, İslam dininin kurucu ilkelerine dayanarak ahlakı güzelleştirmek ve bireyi manevi eğitimden geçirmektir. Bu yorumlar dinin ahlakla ilgili esasları üzerinde durur ve insanları Allah'a gönülden bağlanmaya özendirerek onları manevi yönden eğitmeyi ve olgunlaştırmayı amaçlar.\n\nAşağıdakilerden hangisi bu parçada bahsedilen tasavvufi yorumlara örnek gösterilemez?",
     "secenekler": {
       "A": "Ahilik",
       "B": "Bektaşilik",
@@ -1032,7 +1032,7 @@
       "E": "Yesevilik"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Kültürümüzde Etkin Olan Tasavvufi Yorumlar",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1043,7 +1043,7 @@
     "id": 51757,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 53,
-    "soru": "",
+    "soru": "Din kültürü ve ahlak bilgisi dersinde öğretmen, kültürümüzde etkili olan tasavvufi yorumlardan biri hakkında şu bilgileri vermektedir: Bu gelenekte nefis terbiyesi ve sema önemli bir yer tutar. Sema, insanın Hakk'a yönelmesini ve manevi yolculuğunu temsil eder. Burada asıl maksat, bireyin benlik duygusunu yenerek aşkın varlığa ulaşması ve onun rızasına ermesidir. Dolayısıyla bu tasavvufi oluşuma intikal eden kimse nefsini terbiye ettikten sonra kabiliyetine göre sema ayinlerinde görev alır, böylece manevi ve ahlaki açıdan kendisini yüceltmeye çalışır.\n\nÖğretmenin, uygulamaları hakkında bilgi verdiği tasavvufi yorum aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Kadirilik",
       "B": "Nakşibendilik",
@@ -1052,7 +1052,7 @@
       "E": "Mevlevilik"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kültürümüzde Etkin Olan Tasavvufi Yorumlar",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1063,7 +1063,7 @@
     "id": 51758,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 54,
-    "soru": "",
+    "soru": "Din İşleri Yüksek Kurulu, 12.07.2017 tarihinde yayımladığı fetvasının bir bölümünde organ nakli yapılabilmesi için şu şartları belirlemiştir:\n\n• Hastanın hayatını veya hayati bir uzvunu kurtarmak için bundan başka çaresinin olmadığı, mesleki ehliyet ve dürüstlüğüne güvenilen uzman doktorlar tarafından tespit edilmelidir.\n\n• Organ ve dokusu alınan kişinin bu işlem yapıldığı zaman ölmüş olması, eğer organ canlı bir insandan alınacaksa bu organın temel bir hayati fonksiyonu devre dışı bırakmaması gerekmektedir.\n\n• Alınacak organ veya doku karşılığında hiçbir şekilde ücret alınmamalıdır.\n\n• Tedavisi yapılacak hastanın bu nakle razı olması ve bu işlemlerin devlet kontrolünde yapılması gereklidir.\n\nFetvanın bu bölümüyle ilgili aşağıdakilerden hangisi söylenemez?",
     "secenekler": {
       "A": "Zaruratıdiniye göz önünde bulundurulmuştur.",
       "B": "Organ naklinde bulunan ve tedavi olan bireylerin hakları merkeze alınmıştır.",
@@ -1072,7 +1072,7 @@
       "E": "Güncel bir ihtiyaç, dinin temel kuralları göz önünde bulundurularak açıklanmıştır."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Dinî Meselelerin Çözümünde Temel İlke ve Yöntemler",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1083,7 +1083,7 @@
     "id": 51759,
     "ders": "AYT DİN KÜLTÜRÜ",
     "soru_no": 55,
-    "soru": "",
+    "soru": "Yazılım mühendisi olan Mihriban, işleri sebebiyle sık sık yurt dışına çıkmakta ve orada gittiği restoranların menülerinde kendi ülkesinde tüketilmeyen hayvanların etlerinin bulunduğu yemekleri görmektedir. Birçok Müslüman arkadaşı gibi kendisi de bu etlerin helal ya da haram olduğunu bilmediği için zorlanmakta, bu problemi yaşayan birçok kişiye fayda sağlaması için bir yazılım geliştirmeyi düşünmektedir. Yazılıma kaynaklık etmesi için de Müslüman âlimlerin hüküm vermede kullandıkları temel kaynaklardan yararlanmak istemektedir.\n\nBuna göre Mihriban'ın, tasarladığı yazılımda aşağıdaki kaynaklardan hangisini kullanması beklenmez?",
     "secenekler": {
       "A": "Benzer konularda âlimlerin kıyas yaparak çıkardıkları hükümleri",
       "B": "Diğer kutsal kitaplarda yer alan hüküm ve uygulamaları",
@@ -1092,7 +1092,7 @@
       "E": "Kur'an-ı Kerim'de yer alan ayetleri"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Dinî Meselelerin Çözümünde Temel İlke ve Yöntemler",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,

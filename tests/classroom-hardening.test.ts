@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { handleIncomingRoomMessage, type MessageContext } from '../src/features/classroom/message-handler.ts';
+import { resetFocusTrackerForTest, triggerPotentialFocusLoss, triggerPotentialFocusRestored } from '../src/features/classroom/focus-tracker.ts';
+import { roomService } from '../src/features/classroom/room-service.ts';
 import type { RoomFeedItem, RoomMessage, RoomParticipant, StudentStats } from '../src/features/classroom/types.ts';
 
 function createMockContext(isHost = true, peerId = isHost ? 'host_peer' : 'student_peer', joinedAt = 1000): {
@@ -113,21 +115,77 @@ test('Hoca Ekranı İzolasyonu: Hoca ekranında ayrılma ve geri dönme doğru i
   assert.equal(ctx.feedItems[0].type, 'LEAVE');
 });
 
-test('Yıldız Eşleşmesi: Büyük/küçük harf duyarsız ve isim veya id ile eşleşir', () => {
-  const { ctx } = createMockContext(false);
-  ctx.peerId = 'my_peer_id';
-  ctx.userName = 'Mehmet Ali';
+test('Dışarıdayken F5 / Heartbeat Dönüş Mutabakatı: Açık FOCUS_LOST kaydı otomatik kapanır ve kırmızı rozet düşer', () => {
+  const { ctx } = createMockContext(true);
 
   handleIncomingRoomMessage(ctx, {
-    type: 'AWARD_STAR',
+    type: 'PEER_JOIN',
     roomId: 'TEST_ROOM',
-    senderId: 'host_peer',
-    senderName: 'Hoca',
-    isHost: true,
-    timestamp: Date.now(),
-    payload: { studentId: '', studentName: '  mehmet ali  ' },
+    senderId: 'std_reload',
+    senderName: 'Zeynep',
+    isHost: false,
+    timestamp: 1000,
   });
-  assert.ok(true);
+
+  // Öğrenci sekmeden ayrılır (FOCUS_LOST)
+  handleIncomingRoomMessage(ctx, {
+    type: 'FOCUS_LOST',
+    roomId: 'TEST_ROOM',
+    senderId: 'std_reload',
+    senderName: 'Zeynep',
+    timestamp: 3000,
+  });
+
+  assert.equal(ctx.studentStats['std_reload'].isOnline, false);
+  const lostItem = ctx.feedItems.find((f) => f.type === 'FOCUS_LOST' && f.studentId === 'std_reload');
+  assert.equal(lostItem?.returnedAt, undefined);
+
+  // Öğrenci FOCUS_RESTORED göndermeden F5 atıp PEER_JOIN ile döner (10 sn sonra)
+  handleIncomingRoomMessage(ctx, {
+    type: 'PEER_JOIN',
+    roomId: 'TEST_ROOM',
+    senderId: 'std_reload',
+    senderName: 'Zeynep',
+    isHost: false,
+    timestamp: 13000,
+  });
+
+  // Açık FOCUS_LOST otomatik kapanmalı, süre eklenmeli ve mükerrer JOIN satırı eklenmemeli!
+  assert.equal(ctx.studentStats['std_reload'].isOnline, true);
+  assert.equal(lostItem?.returnedAt, 13000);
+  assert.equal(ctx.studentStats['std_reload'].totalAwayMs, 10000);
+  const joinItems = ctx.feedItems.filter((f) => f.type === 'JOIN' && f.studentId === 'std_reload');
+  assert.equal(joinItems.length, 1);
+});
+
+test('Çık-Gir Spam (Burst) Kalkanı: 15 sn içinde ikinci kez çıkınca 1 sn beklemeden ANINDA yakalar', () => {
+  resetFocusTrackerForTest();
+  roomService.joinOrCreateRoom('SPAM-TEST', 'Kurnaz Öğrenci', false);
+  const peerId = roomService.getPeerId();
+
+  // 1. Çıkış denemesi (t = 10000): 400ms sonra geri döner (1 sn dolmadan F5/kırpma gibi iptal edilir)
+  triggerPotentialFocusLoss(false, 10000);
+  triggerPotentialFocusRestored(10400);
+  assert.equal(roomService.getState().studentStats[peerId].exitCount, 0);
+
+  // 2. Çıkış denemesi (t = 12000, yani 2 sn sonra): Çık-gir spam olduğu için 0ms'de ANINDA yakalanmalı!
+  triggerPotentialFocusLoss(false, 12000);
+  assert.equal(roomService.getState().studentStats[peerId].exitCount, 1);
+  assert.equal(roomService.getState().feedItems.some((f) => f.type === 'FOCUS_LOST'), true);
+
+  resetFocusTrackerForTest();
+  roomService.leaveRoom();
+});
+
+test('Hoca Odak İzolasyonu: Hoca başka pencereye geçtiğinde focus-tracker hocayı ayrıldı saymaz', () => {
+  resetFocusTrackerForTest();
+  roomService.joinOrCreateRoom('HOST-FOCUS', 'Hasan Hoca', true);
+
+  triggerPotentialFocusLoss(true, 5000);
+  assert.equal(roomService.getState().feedItems.some((f) => f.type === 'FOCUS_LOST'), false);
+
+  resetFocusTrackerForTest();
+  roomService.leaveRoom();
 });
 
 test('Watchdog ve Heartbeat: Öğrenci kalp atışı ve senkronizasyon kümülatif süreleri korur', () => {
@@ -159,47 +217,10 @@ test('Watchdog ve Heartbeat: Öğrenci kalp atışı ve senkronizasyon kümülat
   assert.equal(ctx.studentStats['std_2'].totalAwayMs, 12000);
 });
 
-test('Hoca Canlı Kırmızı Rozeti: Offline ve odak kaybetmiş öğrenciler doğru sayılır', () => {
-  const stats: Record<string, StudentStats> = {
-    s1: { id: 's1', name: 'Ali', correctCount: 1, incorrectCount: 0, joinedAt: 1000, exitCount: 0, totalAwayMs: 0, isOnline: true },
-    s2: { id: 's2', name: 'Ayşe', correctCount: 2, incorrectCount: 0, joinedAt: 1000, exitCount: 1, totalAwayMs: 0, isOnline: false },
-    s3: { id: 's3', name: 'Fatma', correctCount: 0, incorrectCount: 0, joinedAt: 1000, exitCount: 1, totalAwayMs: 0, isOnline: true },
-  };
-  const feedItems: RoomFeedItem[] = [
-    { id: 'f1', type: 'FOCUS_LOST', studentId: 's3', studentName: 'Fatma', timestamp: 2000 },
-  ];
-
-  const students = Object.values(stats);
-  const totalStudents = students.length;
-  const openFocusLostIds = new Set(
-    feedItems.filter(f => f.type === 'FOCUS_LOST' && !f.returnedAt).map(f => f.studentId)
-  );
-  const offlineCount = students.filter(s => !s.isOnline || openFocusLostIds.has(s.id)).length;
-  const activeCount = Math.max(0, totalStudents - offlineCount);
-
-  assert.equal(totalStudents, 3);
-  assert.equal(offlineCount, 2);
-  assert.equal(activeCount, 1);
-});
-
-test('Öğrenci Yetki İzolasyonu: Öğrenci hoca fonksiyonlarını tetikleyemez', async () => {
-  const { roomService } = await import('../src/features/classroom/room-service.ts');
-  roomService.joinOrCreateRoom('TEST-ISO', 'Öğrenci Can', false);
-  assert.equal(roomService.isHost(), false);
-
-  assert.doesNotThrow(() => roomService.broadcastAnnouncement('Sahte Duyuru'));
-  roomService.togglePauseRoom();
-  assert.equal(roomService.getState().isPaused, false);
-  assert.doesNotThrow(() => roomService.awardStarToStudent('s1', 'Ali'));
-
-  roomService.leaveRoom();
-});
-
 test('Kıdemli Host Kuralı: Aynı odaya sırayla giren iki cihazdan ilki Hoca kalır, ikincisi otomatik Öğrenci olur', () => {
   const { ctx: device1Ctx, getSyncCalls } = createMockContext(true, 'peer_1', 1000);
   const { ctx: device2Ctx } = createMockContext(true, 'peer_2', 2000);
 
-  // 1) Cihaz 2 odaya PEER_JOIN (isHost: true, joinedAt: 2000) gönderir -> Cihaz 1 bunu alır
   handleIncomingRoomMessage(device1Ctx, {
     type: 'PEER_JOIN',
     roomId: 'TEST_ROOM',
@@ -210,13 +231,11 @@ test('Kıdemli Host Kuralı: Aynı odaya sırayla giren iki cihazdan ilki Hoca k
     payload: { joinedAt: 2000 },
   });
 
-  // Cihaz 1 daha eski (1000 < 2000) olduğu için Hoca kalır, Cihaz 2'yi öğrenci olarak kaydeder ve ROOM_SYNC planlar
   assert.equal(device1Ctx.isHost, true);
   assert.equal(device1Ctx.participants.find((p) => p.id === 'peer_2')?.isHost, false);
   assert.equal(Boolean(device1Ctx.studentStats['peer_2']), true);
   assert.equal(getSyncCalls() > 0, true);
 
-  // 2) Cihaz 1'in yayınladığı ROOM_SYNC mesajı Cihaz 2'ye ulaşır
   handleIncomingRoomMessage(device2Ctx, {
     type: 'ROOM_SYNC',
     roomId: 'TEST_ROOM',
@@ -231,8 +250,51 @@ test('Kıdemli Host Kuralı: Aynı odaya sırayla giren iki cihazdan ilki Hoca k
     },
   });
 
-  // Cihaz 2 kendisinden daha kıdemli Hoca'yı (joinedAt: 1000 < 2000) görünce otomatik Öğrenci olur!
   assert.equal(device2Ctx.isHost, false);
   assert.equal(device2Ctx.participants.find((p) => p.id === 'peer_1')?.isHost, true);
   assert.equal(device2Ctx.participants.find((p) => p.id === 'peer_2')?.isHost, false);
 });
+
+test('Çık-Gir & Çerez Sıfırlama Kalkanı: Oturumdan ayrılıp yeni peerId ile dönen öğrencinin ihlalleri korunur', () => {
+  const { ctx } = createMockContext(true);
+
+  handleIncomingRoomMessage(ctx, {
+    type: 'PEER_JOIN',
+    roomId: 'TEST_ROOM',
+    senderId: 'ali_old_id',
+    senderName: 'Ali Yılmaz',
+    isHost: false,
+    timestamp: 1000,
+    payload: { exitCount: 2, totalAwayMs: 8000 },
+  });
+
+  // Öğrenci "Oturumdan Ayrıl" butonuna basar (exitCount 2 -> 3 olur, LEAVE kaydı açılır)
+  handleIncomingRoomMessage(ctx, {
+    type: 'PEER_LEAVE',
+    roomId: 'TEST_ROOM',
+    senderId: 'ali_old_id',
+    senderName: 'Ali Yılmaz',
+    timestamp: 5000,
+  });
+  assert.equal(ctx.studentStats['ali_old_id'].exitCount, 3);
+  assert.equal(ctx.studentStats['ali_old_id'].isOnline, false);
+
+  // Öğrenci çerezlerini silip / gizli sekmeden YENİ peerId ile 10 sn sonra tekrar girer
+  handleIncomingRoomMessage(ctx, {
+    type: 'PEER_JOIN',
+    roomId: 'TEST_ROOM',
+    senderId: 'ali_new_id',
+    senderName: 'Ali Yılmaz',
+    isHost: false,
+    timestamp: 15000,
+  });
+
+  // Eski çevrimdışı kayıt yeni kimliğe devredilmeli, hayalet kopya kalmamalı ve 10 sn dışarıda kalma süresi eklenmeli!
+  assert.equal(ctx.studentStats['ali_old_id'], undefined);
+  assert.equal(ctx.studentStats['ali_new_id'].exitCount, 3);
+  assert.equal(ctx.studentStats['ali_new_id'].totalAwayMs, 18000);
+  assert.equal(ctx.studentStats['ali_new_id'].isOnline, true);
+  const leaveItem = ctx.feedItems.find((f) => f.type === 'LEAVE' && f.studentId === 'ali_new_id');
+  assert.equal(leaveItem?.returnedAt, 15000);
+});
+

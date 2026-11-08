@@ -21,6 +21,7 @@ export const StorageKeys = {
   ELIMINATED_CHOICES: 'aol_eliminated_choices',
   ELIMINATED_WRONG_CHOICES: 'aol_eliminated_wrong_choices',
   AI_EXPLANATIONS: 'aol_ai_explanations',
+  AUTH_SESSION: 'aol_auth_session',
 } as const;
 
 type FixedStorageKey = typeof StorageKeys[keyof typeof StorageKeys];

@@ -563,7 +563,7 @@
     "id": 51504,
     "ders": "AYT KİMYA",
     "soru_no": 29,
-    "soru": "",
+    "soru": "$X^{2+}$ iyonu ile ilgili bazı bilgiler aşağıda verilmiştir.\n\n• Soy gaz elektron dizilimine sahiptir.\n\n• Elektron dizilimindeki en büyük baş kuantum sayısı (n) 3'tür.\n\nBuna göre X atomuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "Açısal momentum kuantum sayısı ($\\ell$) 0 olan orbitallerde toplam 10 elektron vardır.",
       "B": "Değerlik elektronlarının baş kuantum sayısı (n) 3'tür.",
@@ -583,7 +583,7 @@
     "id": 51505,
     "ders": "AYT KİMYA",
     "soru_no": 30,
-    "soru": "",
+    "soru": "Temel hâldeki bir atomda baş kuantum sayısı (n) 3 ve açısal momentum kuantum sayısı ($\\ell$) 1 olan en fazla kaç elektron bulunur?",
     "secenekler": {
       "A": "2",
       "B": "3",
@@ -603,7 +603,7 @@
     "id": 51506,
     "ders": "AYT KİMYA",
     "soru_no": 31,
-    "soru": "",
+    "soru": "X ve Y element atomlarından oluşan iyonlarla ilgili aşağıdaki bilgiler verilmektedir.\n\n• $X^{3+}$ iyonunda manyetik kuantum sayısı ($m_\\ell$) 0 olan toplam 8 elektron vardır.\n\n• $Y^-$ iyonunda açısal momentum kuantum sayısı ($\\ell$) 1 olan toplam 12 elektron vardır.\n\nBuna göre X ve Y element atomları aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "X: $_{12}$Mg, Y: $_{14}$Si",
       "B": "X: $_{15}$P, Y: $_{17}$Cl",
@@ -623,7 +623,7 @@
     "id": 51507,
     "ders": "AYT KİMYA",
     "soru_no": 32,
-    "soru": "",
+    "soru": "Temel hâldeki $_{24}$Cr atomuyla ilgili\n\nI. Manyetik kuantum sayısı ($m_\\ell$) 0 olan toplam 12 elektron vardır.\n\nII. Açısal momentum kuantum sayısı ($\\ell$) 1 olan toplam 12 elektron vardır.\n\nIII. Baş kuantum sayısı (n) 4 olan toplam 2 elektron vardır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -643,7 +643,7 @@
     "id": 51508,
     "ders": "AYT KİMYA",
     "soru_no": 33,
-    "soru": "",
+    "soru": "Sıcaklığı 300 K, basıncı P ve yoğunluğu $d_1$ olan belirli miktarda ideal gazın basıncı yarıya düşürülüp sıcaklığı 600 K'ye çıkarıldığında yoğunluğu $d_2$ olmaktadır.\n\nBuna göre $d_1$ ve $d_2$ arasındaki bağıntı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$d_1 = 0,5d_2$",
       "B": "$d_1 = d_2$",
@@ -663,7 +663,7 @@
     "id": 51509,
     "ders": "AYT KİMYA",
     "soru_no": 34,
-    "soru": "",
+    "soru": "$\\text{Pb(N}_3\\text{)}_2(\\text{k}) \\rightarrow \\text{Pb(k)} + 3\\text{N}_2(\\text{g})$\n\ntepkimesine göre 582 g $\\text{Pb(N}_3\\text{)}_2$ nin tamamının bozunmasıyla açığa çıkan $\\text{N}_2$ gazının 273 K sıcaklık ve 3 atm basınçtaki hacmi kaç litredir?\n\n($\\text{Pb(N}_3\\text{)}_2 = 291 \\text{ g/mol, } R = \\frac{22,4}{273} \\text{ L atm mol}^{-1} \\text{ K}^{-1},$ $\\text{N}_2$ nin ideal gaz olarak davrandığı varsayılacaktır.)",
     "secenekler": {
       "A": "67,2",
       "B": "44,8",
@@ -683,7 +683,7 @@
     "id": 51510,
     "ders": "AYT KİMYA",
     "soru_no": 35,
-    "soru": "",
+    "soru": "Sabit sıcaklık ve basınçta, eşit kütlede alınan $\\text{CH}_4$ ve $\\text{SO}_2$ gazlarıyla ilgili,\n\nI. $\\text{SO}_2$ nin hacmi $\\text{CH}_4$ ün hacminin 2 katıdır.\n\nII. $\\text{CH}_4$ ün difüzyon hızı $\\text{SO}_2$ nin difüzyon hızının 2 katıdır.\n\nIII. $\\text{SO}_2$ nin ortalama kinetik enerjisi $\\text{CH}_4$ ünkinden daha yüksektir.\n\nyargılarından hangileri doğrudur?\n\n($\\text{CH}_4 = 16 \\text{ g/mol, } \\text{SO}_2 = 64 \\text{ g/mol, gazların ideal olduğu varsayılacaktır.}$)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -703,7 +703,7 @@
     "id": 51511,
     "ders": "AYT KİMYA",
     "soru_no": 36,
-    "soru": "",
+    "soru": "Aynı şartlarda, He gazının difüzyon hızı $\\text{XO}_2$ gazının difüzyon hızının 4 katıdır.\n\nBuna göre, X elementinin mol kütlesi kaç g/mol'dür? (He = 4 g/mol, O = 16 g/mol; gazların ideal gaz olarak davrandığı varsayılacaktır.)",
     "secenekler": {
       "A": "8",
       "B": "12",
@@ -723,7 +723,7 @@
     "id": 51512,
     "ders": "AYT KİMYA",
     "soru_no": 37,
-    "soru": "",
+    "soru": "Sabit sıcaklık ve basınçta, eşit kütlede alınan $\\text{CH}_4$ ve $\\text{SO}_2$ gazlarıyla ilgili,\n\nI. $\\text{SO}_2$ nin hacmi $\\text{CH}_4$ ün hacminin 2 katıdır.\n\nII. $\\text{CH}_4$ ün difüzyon hızı $\\text{SO}_2$ nin difüzyon hızının 2 katıdır.\n\nIII. $\\text{SO}_2$ nin ortalama kinetik enerjisi $\\text{CH}_4$ ünkinden daha yüksektir.\n\nyargılarından hangileri doğrudur?\n\n($\\text{CH}_4 = 16 \\text{ g/mol, } \\text{SO}_2 = 64 \\text{ g/mol, gazların ideal olduğu varsayılacaktır.}$)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -743,7 +743,7 @@
     "id": 51513,
     "ders": "AYT KİMYA",
     "soru_no": 38,
-    "soru": "",
+    "soru": "Gazların difüzyon hızlarını karşılaştırmak amacıyla yapılan bir deneyde X balonu X gazıyla, Y balonu ise Y gazıyla dolduruluyor. Daha sonra aynı sıcaklık ve basınçtaki gazlarla dolu X ve Y balonları aşağıdaki gibi 40 cm'lik bir cam boruyla bağlanıyor. Balonların muslukları aynı anda açılıyor ve gazlar ok ile gösterilen yerde karşılaşıyor.\n\n(Şekilde X balonu borunun bir ucunda, Y balonu diğer ucunda olup 40 cm'lik cam boruyla bağlıdır. Gazlar Y balonundan 8 cm uzaklıkta karşılaşmaktadır.)\n\nGazlar, Y balonundan 8 cm uzaklıkta karşılaştığına göre deneyde kullanılan X ve Y gazları aşağıdakilerden hangisi olabilir?\n\n($H_2 = 2$ g/mol, He = 4 g/mol, $CH_4 = 16$ g/mol, $O_2 = 32$ g/mol, $SO_2 = 64$ g/mol)",
     "secenekler": {
       "A": "$CH_4$ ve $SO_2$",
       "B": "$H_2$ ve $CH_4$",
@@ -763,7 +763,7 @@
     "id": 51514,
     "ders": "AYT KİMYA",
     "soru_no": 39,
-    "soru": "",
+    "soru": "Difüzyon hızlarını belirlemek amacıyla yapılan bir deneyde sıcaklıkları ve basınçları aynı olan $CH_4$ ve He gazları bir cam borunun uçlarından aynı anda bırakılıyor. Gazların bir dakikada aldıkları yollar ayrı ayrı ölçülüyor.\n\nBuna göre $CH_4$ gazının aldığı yolun He gazının aldığı yola oranı kaçtır?\n\n(He = 4 g/mol, $CH_4 = 16$ g/mol)",
     "secenekler": {
       "A": "$\\frac{1}{4}$",
       "B": "$\\frac{1}{3}$",
@@ -783,7 +783,7 @@
     "id": 51515,
     "ders": "AYT KİMYA",
     "soru_no": 40,
-    "soru": "",
+    "soru": "Potasyum klorat ($KClO_3$) katısı ısıtıldığında potasyum klorür ($KCl$) katısına ve oksijen gazına ($O_2$) dönüşüyor. Açığa çıkan $O_2$ gazı aşağıdaki düzenekte gösterildiği gibi 25 °C'de su üzerinde toplanıyor. Düzenekte $KClO_3$ katısının ısıtıldığı bir kap, açığa çıkan gazın bir boru ile su dolu bir şişeye aktarıldığı ve gazın su üzerinde biriktiği görülmektedir. Şişede su ve üzerinde toplanan gaz ($O_2$ ve $H_2O$ buharı) bulunmaktadır. Buna göre su üzerinde toplanan $O_2$ gazının kısmi basıncını hesaplamak için, I. su üzerinde toplanan gazın 25 °C'deki toplam basıncı, II. 25 °C'de suyun buhar basıncı, III. su üzerinde toplanan gazın 25 °C'deki toplam hacmi bilgilerinden hangileri gereklidir? ($O_2$ gazının su ile tepkimeye girmediği ve suda çözünmediği; gazların ideal gaz olarak davrandığı varsayılacaktır.)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -792,7 +792,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Gaz Karışımları",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -803,7 +803,7 @@
     "id": 51516,
     "ders": "AYT KİMYA",
     "soru_no": 41,
-    "soru": "",
+    "soru": "Aşağıda gösterildiği gibi ayrı kaplarda bulunan $H_2$ ve He gazları musluklar açılarak sabit sıcaklıkta karıştırılıyor. Düzenekte birinci kapta 1 L hacimde 1 atm basınçlı $H_2$ gazı, ikinci kapta 1 L hacimde 1 atm basınçlı He gazı ve aralarında vakumlu 2 L hacimli boş bir kap bulunmaktadır. Musluklar açıldığında gazlar bu kaplar arasında karışmaktadır. Buna göre, gaz karışımının toplam basıncı kaç atmosferdir? (Toplam hacim yanında musluk hacimlerinin ihmal edilebilir olduğu ve gazların ideal gaz olarak davrandığı varsayılacaktır.)",
     "secenekler": {
       "A": "0,10",
       "B": "0,20",
@@ -812,7 +812,7 @@
       "E": "1,00"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Gaz Karışımları",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -823,7 +823,7 @@
     "id": 51517,
     "ders": "AYT KİMYA",
     "soru_no": 42,
-    "soru": "",
+    "soru": "Bir tuzun sulu çözeltisine bir miktar daha su ilave edildiğinde aşağıdaki özelliklerden hangisi değişmez?",
     "secenekler": {
       "A": "Çözünenin mol sayısı",
       "B": "Çözücünün mol sayısı",
@@ -832,7 +832,7 @@
       "E": "Çözünenin derişimi"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Derişim Birimleri",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -843,7 +843,7 @@
     "id": 51518,
     "ders": "AYT KİMYA",
     "soru_no": 43,
-    "soru": "",
+    "soru": "1 atm basınçta 1 molal sulu $C_6H_{12}O_6$ çözeltisinin kaynamaya başladığı sıcaklık $(100+a)\\ ^\\circ C$'dir. Buna göre aynı şartlarda 0,5 molal sulu $Al(NO_3)_3$ çözeltisinin kaynamaya başladığı sıcaklık kaç $^\\circ C$'dir? ($C_6H_{12}O_6$ katısının suda moleküler olarak, $Al(NO_3)_3$ katısının ise tamamen iyonlarına ayrışarak çözündüğü varsayılacaktır.)",
     "secenekler": {
       "A": "$100+a$",
       "B": "$100+2a$",
@@ -852,7 +852,7 @@
       "E": "$100+5a$"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Çözeltilerin Koligatif Özellikleri",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -863,7 +863,7 @@
     "id": 51519,
     "ders": "AYT KİMYA",
     "soru_no": 44,
-    "soru": "",
+    "soru": "Temel hâldeki bir atomun, enerji seviyesi en yüksek orbitalinde 1 elektron vardır. Bu elektronun baş kuantum sayısı (n) 3 ve açısal momentum kuantum sayısı ($\\ell$) 0'dır. Bu atomdaki elektronlarla ilgili, I. s orbitallerinde toplam 5 elektron bulunur. II. En yüksek enerjili elektronun manyetik kuantum sayısı ($m_{\\ell}$) +1'dir. III. Açısal momentum kuantum sayısı ($\\ell$) 1 olan toplam 6 elektron vardır. ifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -872,7 +872,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Kuantum Modeli",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -883,7 +883,7 @@
     "id": 51520,
     "ders": "AYT KİMYA",
     "soru_no": 45,
-    "soru": "",
+    "soru": "$KNO_3$ katısının farklı sıcaklıklarda sudaki çözünürlük değerleri aşağıdaki tabloda verilmiştir.\n\n| Sıcaklık ($^\\circ C$) | Çözünürlük (g $KNO_3$/100 g su) |\n|---|---|\n| 18 | 30 |\n| 58 | 110 |\n\n18 $^\\circ C$'de 45 g $KNO_3$ katısı tamamen çözünerek doygun sulu çözelti hazırlanıyor. Bu çözeltiye 50 g daha su ilave edildikten sonra çözeltinin sıcaklığı 58 $^\\circ C$'ye yükseltiliyor. Buna göre 58 $^\\circ C$'de çözeltinin tekrar doygun hâle getirilebilmesi için en az kaç gram daha $KNO_3$ katısı ilave edilmelidir?",
     "secenekler": {
       "A": "220",
       "B": "200",
@@ -892,7 +892,7 @@
       "E": "75"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Çözünürlük",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -903,7 +903,7 @@
     "id": 51521,
     "ders": "AYT KİMYA",
     "soru_no": 46,
-    "soru": "",
+    "soru": "$HBr(g)$ için standart oluşum entalpisi $-36$ kJ/mol ve $H_2O(s)$ için standart oluşum entalpisi $-286$ kJ/mol'dür. Buna göre,\n\n$$4HBr(g) + O_2(g) \\rightarrow 2H_2O(s) + Br_2(s)$$\n\ntepkimesinin standart entalpi değişimi kaç kJ'dir?",
     "secenekler": {
       "A": "$-428$",
       "B": "$-250$",
@@ -912,7 +912,7 @@
       "E": "716"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Tepkimelerde Isı Değişimi",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -923,7 +923,7 @@
     "id": 51522,
     "ders": "AYT KİMYA",
     "soru_no": 47,
-    "soru": "",
+    "soru": "Aşağıda bazı tepkimelerin standart entalpi değişimleri verilmiştir.\n\n$C(k) + \\frac{1}{2}O_2(g) \\rightarrow CO(g) \\quad \\Delta H^\\circ = -110,5 \\text{ kJ/mol}$\n\n$CO_2(g) \\rightarrow \\frac{1}{2}O_2(g) + CO(g) \\quad \\Delta H^\\circ = +283 \\text{ kJ/mol}$\n\nBuna göre, $CO_2(g)$'nin standart oluşum entalpisi kaç kJ/mol'dür?",
     "secenekler": {
       "A": "$+393,5$",
       "B": "$+172,5$",
@@ -932,7 +932,7 @@
       "E": "$-393,5$"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Oluşum Entalpisi",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -943,7 +943,7 @@
     "id": 51523,
     "ders": "AYT KİMYA",
     "soru_no": 48,
-    "soru": "",
+    "soru": "Temel hâldeki bir atomun, enerji seviyesi en yüksek orbitalinde 1 elektron vardır. Bu elektronun baş kuantum sayısı (n) 3 ve açısal momentum kuantum sayısı ($\\ell$) 0'dır. Bu atomdaki elektronlarla ilgili, I. s orbitallerinde toplam 5 elektron bulunur. II. En yüksek enerjili elektronun manyetik kuantum sayısı ($m_{\\ell}$) +1'dir. III. Açısal momentum kuantum sayısı ($\\ell$) 1 olan toplam 6 elektron vardır. ifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -952,7 +952,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Kuantum Modeli",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -963,7 +963,7 @@
     "id": 51524,
     "ders": "AYT KİMYA",
     "soru_no": 49,
-    "soru": "",
+    "soru": "Sabit sıcaklık ve basınçta, eşit kütlede alınan $\\text{CH}_4$ ve $\\text{SO}_2$ gazlarıyla ilgili,\n\nI. $\\text{SO}_2$ nin hacmi $\\text{CH}_4$ ün hacminin 2 katıdır.\n\nII. $\\text{CH}_4$ ün difüzyon hızı $\\text{SO}_2$ nin difüzyon hızının 2 katıdır.\n\nIII. $\\text{SO}_2$ nin ortalama kinetik enerjisi $\\text{CH}_4$ ünkinden daha yüksektir.\n\nyargılarından hangileri doğrudur?\n\n($\\text{CH}_4 = 16 \\text{ g/mol, } \\text{SO}_2 = 64 \\text{ g/mol, gazların ideal olduğu varsayılacaktır.}$)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -983,7 +983,7 @@
     "id": 51525,
     "ders": "AYT KİMYA",
     "soru_no": 50,
-    "soru": "",
+    "soru": "$C_2H_2(g)$, $C(k)$ ve $H_2(g)$'nin birer mollerinin yanma tepkimelerinin standart entalpi değişimleri aşağıda verilmiştir.\n\n$C_2H_2(g) + \\frac{5}{2}O_2(g) \\rightarrow 2CO_2(g) + H_2O(s) \\quad \\Delta H^\\circ = -1300 \\text{ kJ}$\n\n$C(k) + O_2(g) \\rightarrow CO_2(g) \\quad \\Delta H^\\circ = -394 \\text{ kJ}$\n\n$H_2(g) + \\frac{1}{2}O_2(g) \\rightarrow H_2O(s) \\quad \\Delta H^\\circ = -286 \\text{ kJ}$\n\nBuna göre,\n\n$2C(k) + H_2(g) \\rightarrow C_2H_2(g)$\n\ntepkimesinin standart entalpi değişimi kaç kilojouledür?",
     "secenekler": {
       "A": "$-1980$",
       "B": "$-1122$",
@@ -992,7 +992,7 @@
       "E": "$620$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Tepkime Isılarının Toplanabilirliği",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1003,7 +1003,7 @@
     "id": 51526,
     "ders": "AYT KİMYA",
     "soru_no": 51,
-    "soru": "",
+    "soru": "$NO_2$ ve $N_2O_4$ gazlarının standart oluşum entalpileri sırasıyla aşağıda verilmiştir.\n\n$\\frac{1}{2}N_2(g) + O_2(g) \\rightarrow NO_2(g) \\qquad \\Delta H^\\circ = 33,2 \\text{ kJ/mol}$\n\n$N_2(g) + 2O_2(g) \\rightarrow N_2O_4(g) \\qquad \\Delta H^\\circ = 11,1 \\text{ kJ/mol}$\n\nBuna göre\n\n$2NO_2(g) \\rightarrow N_2O_4(g)$\n\ntepkimesi için standart entalpi değişimi kaç kJ'dir?",
     "secenekler": {
       "A": "$-55,3$",
       "B": "$-22,1$",
@@ -1012,7 +1012,7 @@
       "E": "$44,2$"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Tepkimelerde Enerji",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1023,7 +1023,7 @@
     "id": 51527,
     "ders": "AYT KİMYA",
     "soru_no": 52,
-    "soru": "",
+    "soru": "Aşağıda bazı tepkimeler ve bu tepkimeler için standart entalpi değişimleri verilmiştir.\n\n$C(k) + O_2(g) \\rightarrow CO_2(g) \\qquad \\Delta H^\\circ = -393,5 \\text{ kJ/mol}$\n\n$H_2(g) + \\frac{1}{2}O_2(g) \\rightarrow H_2O(s) \\qquad \\Delta H^\\circ = -285,8 \\text{ kJ/mol}$\n\n$C(k) + 2H_2(g) \\rightarrow CH_4(g) \\qquad \\Delta H^\\circ = -74,8 \\text{ kJ/mol}$\n\nBuna göre,\n\n$CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(s)$\n\ntepkimesinin standart entalpi değişimi kaç kJ/mol'dür?",
     "secenekler": {
       "A": "$-998,0$",
       "B": "$-890,3$",
@@ -1032,7 +1032,7 @@
       "E": "$+890,3$"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Tepkimelerde Enerji",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1043,7 +1043,7 @@
     "id": 51528,
     "ders": "AYT KİMYA",
     "soru_no": 53,
-    "soru": "",
+    "soru": "Bazı tepkimelerin belirli sıcaklık ve basınçtaki standart entalpi değişim değerleri aşağıda verilmiştir.\n\n$H_2(g) + O_2(g) \\rightarrow H_2O_2(s) \\qquad \\Delta H^\\circ = -188 \\text{ kJ/mol}$\n\n$H_2(g) + \\frac{1}{2}O_2(g) \\rightarrow H_2O(s) \\qquad \\Delta H^\\circ = -286 \\text{ kJ/mol}$\n\nBuna göre çalışılan sıcaklık ve basınçta $0,5$ mol $H_2O_2(s)$'den $H_2O(s)$'nun oluşmasına ilişkin tepkimenin entalpi değişim değeri kaç kJ'dir?",
     "secenekler": {
       "A": "$-143$",
       "B": "$-98$",
@@ -1052,7 +1052,7 @@
       "E": "$+98$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Tepkimelerde Enerji",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1063,7 +1063,7 @@
     "id": 51529,
     "ders": "AYT KİMYA",
     "soru_no": 54,
-    "soru": "",
+    "soru": "$2N_2O(g) \\rightarrow 2N_2(g) + O_2(g)$\n\ntepkimesi başladıktan $150$ s sonra ortamda $0,0030$ mol/L $O_2$ oluşmaktadır.\n\nBuna göre, $N_2O$'nun ortalama tükenme hızı kaç $\\text{mol} \\cdot L^{-1} \\cdot s^{-1}$ dir?",
     "secenekler": {
       "A": "$4,0 \\times 10^{-4}$",
       "B": "$2,0 \\times 10^{-4}$",
@@ -1072,7 +1072,7 @@
       "E": "$4,0 \\times 10^{-6}$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Tepkime Hızları",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1083,7 +1083,7 @@
     "id": 51530,
     "ders": "AYT KİMYA",
     "soru_no": 55,
-    "soru": "",
+    "soru": "$A + B \\rightarrow C$ tepkimesi için A ve B'nin farklı başlangıç derişimlerinde elde edilen tepkime başlangıç hızları tabloda verilmiştir.\n\n| Deney | [A] (mol/L) | [B] (mol/L) | Başlangıç hızı (mol/L·s) |\n|---|---|---|---|\n| 1 | 0,2 | 0,3 | $3,0 \\times 10^{-5}$ |\n| 2 | 0,2 | 0,6 | $6,0 \\times 10^{-5}$ |\n| 3 | 0,4 | 0,3 | $12,0 \\times 10^{-5}$ |\n\nBuna göre, tepkimenin hız ifadesi aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$k[A][B]$",
       "B": "$k[B]$",
@@ -1092,7 +1092,7 @@
       "E": "$k[A]^2[B]$"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Tepkime Hızını Etkileyen Faktörler",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1103,7 +1103,7 @@
     "id": 51531,
     "ders": "AYT KİMYA",
     "soru_no": 56,
-    "soru": "",
+    "soru": "Sabit sıcaklık ve basınçta, eşit kütlede alınan $\\text{CH}_4$ ve $\\text{SO}_2$ gazlarıyla ilgili,\n\nI. $\\text{SO}_2$ nin hacmi $\\text{CH}_4$ ün hacminin 2 katıdır.\n\nII. $\\text{CH}_4$ ün difüzyon hızı $\\text{SO}_2$ nin difüzyon hızının 2 katıdır.\n\nIII. $\\text{SO}_2$ nin ortalama kinetik enerjisi $\\text{CH}_4$ ünkinden daha yüksektir.\n\nyargılarından hangileri doğrudur?\n\n($\\text{CH}_4 = 16 \\text{ g/mol, } \\text{SO}_2 = 64 \\text{ g/mol, gazların ideal olduğu varsayılacaktır.}$)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1123,7 +1123,7 @@
     "id": 51532,
     "ders": "AYT KİMYA",
     "soru_no": 57,
-    "soru": "",
+    "soru": "Belirli bir sıcaklıkta gerçekleşen\n\n$KClO_3(k) \\rightarrow KCl(k) + \\frac{3}{2}O_2(g)$\n\ntepkimesinde tepkimeye giren taneciklerin kinetik enerjilerinin dağılımı ve tepkimenin eşik enerjisi ($E_1$) şekilde gösterilmiştir. Grafikte yatay eksen kinetik enerji, düşey eksen tanecik sayısı olup dağılım eğrisi üzerinde $E_1$ ve $E_2$ eşik enerji değerleri işaretlenmiştir ($E_2 < E_1$).\n\nBu tepkimeyi hızlandırmak amacıyla eşik enerjisini $E_1$'den $E_2$'ye düşürecek şekilde bir müdahale yapılıyor.\n\nBuna göre, yapılan müdahaleyle ilgili aşağıdaki ifadelerden hangisi doğrudur?\n\n(Grafik ölçeksiz çizilmiştir.)",
     "secenekler": {
       "A": "Tepkimeye giren maddenin temas yüzeyi artırılmıştır.",
       "B": "Tepkime ortamına katalizör ilave edilmiştir.",
@@ -1132,7 +1132,7 @@
       "E": "Tepkimeye giren madde daha hızlı karıştırılmıştır."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Tepkime Hızını Etkileyen Faktörler",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1143,7 +1143,7 @@
     "id": 51533,
     "ders": "AYT KİMYA",
     "soru_no": 58,
-    "soru": "",
+    "soru": "$H_2(g)$ ve $ICl(g)$ arasındaki tepkimenin hız ifadesini belirlemek amacıyla sabit sıcaklıkta yapılan deneylerden elde edilen sonuçlar aşağıda verilmiştir.\n\n• $H_2(g)$'nin derişimi sabit tutulup $ICl(g)$'nin derişimi 2 katına çıkarıldığında tepkime hızı 2 katına çıkıyor.\n\n• $ICl(g)$'nin derişimi sabit tutulup $H_2(g)$'nin derişimi 3 katına çıkarıldığında tepkime hızı 3 katına çıkıyor.\n\nBuna göre tepkimenin hız ifadesi aşağıdakilerden hangisidir?\n\n(k, tepkime hız sabitidir.)",
     "secenekler": {
       "A": "$k [H_2] [ICl]$",
       "B": "$k [H_2]^2 [ICl]$",
@@ -1152,7 +1152,7 @@
       "E": "$k [H_2]^2 [ICl]^3$"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Tepkimelerde Hız",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1163,7 +1163,7 @@
     "id": 51534,
     "ders": "AYT KİMYA",
     "soru_no": 59,
-    "soru": "",
+    "soru": "Aşağıdaki tepkimeler için 25 °C'deki denge sabitleri $K_2$ ve $K_3$ olarak verilmiştir.\n\n$CO(g) + H_2O(g) \\rightleftharpoons CO_2(g) + H_2(g) \\quad K_2$\n\n$CO(g) + 2H_2(g) \\rightleftharpoons CH_3OH(g) \\quad K_3$\n\nBuna göre,\n\n$CO_2(g) + 3H_2(g) \\rightleftharpoons CH_3OH(g) + H_2O(g) \\quad K_1$\n\ntepkimesinin 25 °C'deki denge sabiti ($K_1$) aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$K_1 = \\frac{K_3}{K_2}$",
       "B": "$K_1 = \\frac{K_2}{K_3}$",
@@ -1172,7 +1172,7 @@
       "E": "$K_1 = \\frac{2K_2}{K_3}$"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Denge",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1183,7 +1183,7 @@
     "id": 51535,
     "ders": "AYT KİMYA",
     "soru_no": 60,
-    "soru": "",
+    "soru": "Sabit hacimli kapalı bir kaba belirli sıcaklıkta 1 mol $CO(g)$ ve 1 mol $H_2O(g)$ konuluyor ve başlangıçtaki toplam basınç 2 atm olarak ölçülüyor. Daha sonra $CO$ ve $H_2O$ arasında aşağıdaki denge tepkimesi gerçekleşiyor.\n\n$CO(g) + H_2O(g) \\rightleftharpoons CO_2(g) + H_2(g) \\quad K_c = 1,00$\n\nÇalışılan sıcaklıkta bu denge tepkimesiyle ilgili aşağıdakilerden hangisi doğrudur?\n\n(Gazların ideal gaz olarak davrandığı varsayılacaktır.)",
     "secenekler": {
       "A": "Denge anındaki toplam basınç 2 atm'dir.",
       "B": "Denge anında $H_2$ nin kısmi basıncı $CO$'nunkinden küçüktür.",
@@ -1192,7 +1192,7 @@
       "E": "Ortama inert gaz ilave edildiğinde $CO_2$ gazının kısmi basıncı artar."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Denge",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1203,7 +1203,7 @@
     "id": 51536,
     "ders": "AYT KİMYA",
     "soru_no": 61,
-    "soru": "",
+    "soru": "Belirli bir sıcaklıkta sabit hacimli kapalı bir kapta 2,5 atm basınçtaki $CO$ gazının yeterli miktarda $Ni$ katısıyla tepkimesi aşağıdaki gibidir.\n\n$Ni(k) + 4CO(g) \\rightleftharpoons Ni(CO)_4(g)$\n\nTepkime dengeye ulaştığında toplam gaz basıncı 1 atm olduğuna göre tepkimenin çalışılan sıcaklıkta kısmi basınçlar cinsinden denge sabiti ($K_p$) kaçtır?",
     "secenekler": {
       "A": "10",
       "B": "8",
@@ -1212,7 +1212,7 @@
       "E": "2"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Denge",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1223,7 +1223,7 @@
     "id": 51537,
     "ders": "AYT KİMYA",
     "soru_no": 62,
-    "soru": "",
+    "soru": "25 °C'de sabit hacimli kapalı bir kapta gerçekleşen, $2\\text{NO(g)} + \\text{O}_2\\text{(g)} \\rightleftharpoons 2\\text{NO}_2\\text{(g)}$ denge tepkimesindeki türlerin derişiminin zamanla değişim grafiği aşağıda verilmiştir. Grafikte derişim (mol/L) düşey eksende, zaman (s) yatay eksende olup $t_1$, $t_2$ ve $t_3$ anları işaretlenmiştir. Başlangıçta $[\\text{NO}]$ ve $[\\text{O}_2]$ azalarak, $[\\text{NO}_2]$ artarak $t_1$ anında dengeye ulaşır; $t_1$ ile $t_2$ arasında derişimler sabit kalır. $t_2$ anında $[\\text{NO}_2]$ aniden artar, $[\\text{NO}]$ ve $[\\text{O}_2]$ aniden azalır; ardından $t_2$ ile $t_3$ arasında derişimler yeniden değişerek $t_3$ anında yeni dengeye ulaşır. Buna göre, aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "$t_1 - t_2$ zaman aralığında tepkime dengede değildir.",
       "B": "$t_2$ anında tepkime kabına dışarıdan $\\text{NO}_2$ gazı ilave edilmiştir.",
@@ -1232,7 +1232,7 @@
       "E": "$t_3$ anından sonra ileri ve geri yöndeki tepkime hızları eşit olur."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Dengeyi Etkileyen Faktörler",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1243,7 +1243,7 @@
     "id": 51538,
     "ders": "AYT KİMYA",
     "soru_no": 63,
-    "soru": "",
+    "soru": "Kütlesi ve sürtünmesi ihmal edilen pistonla kapatılmış bir kapta $4\\text{HCl(g)} + \\text{O}_2\\text{(g)} \\rightleftharpoons 2\\text{H}_2\\text{O(g)} + 2\\text{Cl}_2\\text{(g)}$ $\\Delta H^\\circ = -114{,}4 \\text{ kJ}$ tepkimesi dengeye ulaşıyor. Dengedeki bu tepkimeyle ilgili aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "Sabit sıcaklıkta piston sıkıştırılarak kabın hacmi azaltıldığında $\\text{Cl}_2$ miktarı azalır.",
       "B": "Sabit hacimde sıcaklık artırıldığında HCl miktarı artar.",
@@ -1252,7 +1252,7 @@
       "E": "Sabit hacim ve sıcaklıkta ortamdan bir miktar $\\text{H}_2\\text{O}$ uzaklaştırıldığında $\\text{O}_2$ miktarı artar."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Dengeyi Etkileyen Faktörler",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1263,7 +1263,7 @@
     "id": 51539,
     "ders": "AYT KİMYA",
     "soru_no": 64,
-    "soru": "",
+    "soru": "Sabit sıcaklıkta sürtünmesiz hareketli bir pistonla kapatılmış kapta dengede bulunan aşağıdaki tepkimelerin hangisinde hacim değişimi denge durumunu etkiler?",
     "secenekler": {
       "A": "$\\text{CO}_2\\text{(g)} + \\text{H}_2\\text{(g)} \\rightleftharpoons \\text{CO(g)} + \\text{H}_2\\text{O(g)}$",
       "B": "$\\text{N}_2\\text{(g)} + \\text{O}_2\\text{(g)} \\rightleftharpoons 2\\text{NO(g)}$",
@@ -1272,7 +1272,7 @@
       "E": "$\\text{PCl}_5\\text{(g)} \\rightleftharpoons \\text{PCl}_3\\text{(g)} + \\text{Cl}_2\\text{(g)}$"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Dengeyi Etkileyen Faktörler",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1283,7 +1283,7 @@
     "id": 51540,
     "ders": "AYT KİMYA",
     "soru_no": 65,
-    "soru": "",
+    "soru": "Sabit hacimli kapalı kapta bir miktar $CaCO_3$ katısı ısıtılıyor ve belirli bir sıcaklıkta aşağıdaki tepkimeye göre dengeye ulaşılıyor.\n\n$$CaCO_3(k) \\rightleftharpoons CaO(k) + CO_2(g) \\qquad \\Delta H^\\circ > 0$$\n\nBuna göre denge durumunda\n\nI. sisteme aynı sıcaklıkta inert gaz ilave edilmesi,\n\nII. sisteme bir miktar daha $CaCO_3$ katısı ilave edilmesi,\n\nIII. sistemin sıcaklığının artırılması\n\nişlemlerinden hangileri uygulandığında oluşan $CaO(k)$ miktarı artar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1292,7 +1292,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Denge",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1303,7 +1303,7 @@
     "id": 51541,
     "ders": "AYT KİMYA",
     "soru_no": 66,
-    "soru": "",
+    "soru": "$200 \\text{ mL } B(OH)_2$ kuvvetli bazının sulu çözeltisi $0,2 \\text{ M } HCl$ çözeltisiyle titre ediliyor.\n\nTitrasyonda dönüm noktasına ulaşmak için $100 \\text{ mL } HCl$ çözeltisi harcandığına göre $B(OH)_2$ nin molar derişimi kaçtır?",
     "secenekler": {
       "A": "0,05",
       "B": "0,10",
@@ -1312,7 +1312,7 @@
       "E": "0,30"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Sulu Çözelti Dengeleri",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1323,7 +1323,7 @@
     "id": 51542,
     "ders": "AYT KİMYA",
     "soru_no": 67,
-    "soru": "",
+    "soru": "Monoprotik bir kuvvetli asidin $50 \\text{ mL}$'lik sulu çözeltisi, $0,1 \\text{ M } NaOH$ sulu çözeltisiyle titre ediliyor. $25 \\, ^\\circ C$'de yapılan titrasyon deneyinde aşağıdaki veriler elde ediliyor.\n\n| Eklenen NaOH çözeltisi hacmi (mL) | pH |\n|---|---|\n| 0 | 1,30 |\n| 10 | 1,60 |\n| 20 | 2,15 |\n| 22 | 2,38 |\n| 24 | 2,87 |\n| 25 | 7,00 |\n| 26 | 11,12 |\n| 28 | 11,58 |\n| 30 | 11,80 |\n| 40 | 12,22 |\n| 50 | 12,40 |\n\nBuna göre, aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "Deneyde kullanılan asit çözeltisinin derişimi $0,05 \\text{ M}$'dir.",
       "B": "Eşdeğerlik noktasındaki çözelti buharlaştırılırsa bazik tuz elde edilir.",
@@ -1332,7 +1332,7 @@
       "E": "Eşdeğerlik noktasından sonra $pOH$ değeri $7$'den büyüktür."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Sulu Çözelti Dengeleri",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1343,7 +1343,7 @@
     "id": 51543,
     "ders": "AYT KİMYA",
     "soru_no": 68,
-    "soru": "",
+    "soru": "Sabit sıcaklık ve basınçta, eşit kütlede alınan $\\text{CH}_4$ ve $\\text{SO}_2$ gazlarıyla ilgili,\n\nI. $\\text{SO}_2$ nin hacmi $\\text{CH}_4$ ün hacminin 2 katıdır.\n\nII. $\\text{CH}_4$ ün difüzyon hızı $\\text{SO}_2$ nin difüzyon hızının 2 katıdır.\n\nIII. $\\text{SO}_2$ nin ortalama kinetik enerjisi $\\text{CH}_4$ ünkinden daha yüksektir.\n\nyargılarından hangileri doğrudur?\n\n($\\text{CH}_4 = 16 \\text{ g/mol, } \\text{SO}_2 = 64 \\text{ g/mol, gazların ideal olduğu varsayılacaktır.}$)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1363,7 +1363,7 @@
     "id": 51544,
     "ders": "AYT KİMYA",
     "soru_no": 69,
-    "soru": "",
+    "soru": "25 °C'de bir monoprotik asidin 0,1 M'lik sulu çözeltisi, 0,1 M NaOH sulu çözeltisi ile titre ediliyor ve aşağıdaki titrasyon eğrisi elde ediliyor. Titrasyon eğrisinde dikey eksende pH değerleri (1,0 ve 7,0 işaretli), yatay eksende 0,1 M NaOH hacmi (mL) yer almakta olup eğri, 25,0 mL NaOH hacminde pH 7,0 değerinden geçmektedir. Bu deney ve titrasyon eğrisiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Bu deneyde titre edilen asit bir kuvvetli asittir.",
       "B": "Titre edilen çözeltinin başlangıç hacmi 50 mL'dir.",
@@ -1372,7 +1372,7 @@
       "E": "25 mL NaOH çözeltisi ilave edildiğinde ortamda asit tükenmiştir."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Asit-Baz Titrasyonu",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1383,7 +1383,7 @@
     "id": 51545,
     "ders": "AYT KİMYA",
     "soru_no": 70,
-    "soru": "",
+    "soru": "Potasyum klorat ($KClO_3$) katısı ısıtıldığında potasyum klorür ($KCl$) katısına ve oksijen gazına ($O_2$) dönüşüyor. Açığa çıkan $O_2$ gazı aşağıdaki düzenekte gösterildiği gibi 25 °C'de su üzerinde toplanıyor. Düzenekte $KClO_3$ katısının ısıtıldığı bir kap, açığa çıkan gazın bir boru ile su dolu bir şişeye aktarıldığı ve gazın su üzerinde biriktiği görülmektedir. Şişede su ve üzerinde toplanan gaz ($O_2$ ve $H_2O$ buharı) bulunmaktadır. Buna göre su üzerinde toplanan $O_2$ gazının kısmi basıncını hesaplamak için, I. su üzerinde toplanan gazın 25 °C'deki toplam basıncı, II. 25 °C'de suyun buhar basıncı, III. su üzerinde toplanan gazın 25 °C'deki toplam hacmi bilgilerinden hangileri gereklidir? ($O_2$ gazının su ile tepkimeye girmediği ve suda çözünmediği; gazların ideal gaz olarak davrandığı varsayılacaktır.)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1392,7 +1392,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Gaz Karışımları",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1403,7 +1403,7 @@
     "id": 51546,
     "ders": "AYT KİMYA",
     "soru_no": 71,
-    "soru": "",
+    "soru": "FeS katısının sudaki çözünürlük dengesi ve bu dengeye ait 25 °C'deki çözünürlük çarpımı ($K_{çç}$) değeri aşağıda verilmiştir.\n\n$$\\text{FeS(k)} \\rightleftharpoons \\text{Fe}^{2+}(\\text{suda}) + \\text{S}^{2-}(\\text{suda}) \\quad K_{çç} = 6,0 \\times 10^{-19}$$\n\nBuna göre FeS katısının aynı sıcaklıkta;\n\nI. 1 L 0,1 M $\\text{Na}_2\\text{S}$ sulu çözeltisi,\n\nII. 1 L saf su,\n\nIII. 1 L 0,1 M $\\text{Fe(NO}_3\\text{)}_2$ sulu çözeltisi\n\niçindeki çözünürlüğünün doğru sıralanışı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "I > II > III",
       "B": "I > III > II",
@@ -1423,7 +1423,7 @@
     "id": 51547,
     "ders": "AYT KİMYA",
     "soru_no": 72,
-    "soru": "",
+    "soru": "25 °C'de 0,1 M HCl sulu çözeltisinin pH değeri 1 iken 0,1 M HF sulu çözeltisinin pH değeri 2,1'dir.\n\nBuna göre HCl ve HF asitleriyle ilgili,\n\nI. HCl'nin sudaki iyonlaşma oranı HF'ninkinden daha fazladır.\n\nII. HF sulu çözeltisi, HCl'ye göre daha kuvvetli asittir.\n\nIII. HF sulu çözeltisindeki $\\text{H}^+$ derişimi 0,1 M'dir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1443,7 +1443,7 @@
     "id": 51548,
     "ders": "AYT KİMYA",
     "soru_no": 73,
-    "soru": "",
+    "soru": "Belirli bir sıcaklıkta 8,5 g $\\text{NH}_3$ gazı suda çözülerek 1 L çözelti hazırlanıyor.\n\nÇalışılan sıcaklıkta $\\text{NH}_3$ suda %0,02 oranında iyonlaştığına göre çözeltinin pH değeri kaçtır?\n($\\text{NH}_3$ = 17 g/mol; çalışılan sıcaklıkta $K_{su} = 1 \\times 10^{-14}$)",
     "secenekler": {
       "A": "4",
       "B": "6",
@@ -1463,7 +1463,7 @@
     "id": 51549,
     "ders": "AYT KİMYA",
     "soru_no": 74,
-    "soru": "",
+    "soru": "Sabit hacimli kapalı kapta bir miktar $CaCO_3$ katısı ısıtılıyor ve belirli bir sıcaklıkta aşağıdaki tepkimeye göre dengeye ulaşılıyor.\n\n$$CaCO_3(k) \\rightleftharpoons CaO(k) + CO_2(g) \\qquad \\Delta H^\\circ > 0$$\n\nBuna göre denge durumunda\n\nI. sisteme aynı sıcaklıkta inert gaz ilave edilmesi,\n\nII. sisteme bir miktar daha $CaCO_3$ katısı ilave edilmesi,\n\nIII. sistemin sıcaklığının artırılması\n\nişlemlerinden hangileri uygulandığında oluşan $CaO(k)$ miktarı artar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1472,7 +1472,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Denge",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1483,7 +1483,7 @@
     "id": 51550,
     "ders": "AYT KİMYA",
     "soru_no": 75,
-    "soru": "",
+    "soru": "Belirli bir sıcaklıkta derişimi 0,1 M olan bir zayıf monoprotik asidin (HA) sulu çözeltisinin pH değeri 4'tür.\n\nBu asidin aynı sıcaklıktaki ayrışma denge sabiti ($K_a$) kaçtır? (Denge durumunda HA derişiminin 0,1 M olduğu ve sudan gelen $H^+$ iyonu derişiminin ihmal edildiği varsayılacaktır.)",
     "secenekler": {
       "A": "$1 \\times 10^{-4}$",
       "B": "$1 \\times 10^{-5}$",
@@ -1503,7 +1503,7 @@
     "id": 51551,
     "ders": "AYT KİMYA",
     "soru_no": 76,
-    "soru": "",
+    "soru": "Temel hâldeki bir atomun, enerji seviyesi en yüksek orbitalinde 1 elektron vardır. Bu elektronun baş kuantum sayısı (n) 3 ve açısal momentum kuantum sayısı ($\\ell$) 0'dır. Bu atomdaki elektronlarla ilgili, I. s orbitallerinde toplam 5 elektron bulunur. II. En yüksek enerjili elektronun manyetik kuantum sayısı ($m_{\\ell}$) +1'dir. III. Açısal momentum kuantum sayısı ($\\ell$) 1 olan toplam 6 elektron vardır. ifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1512,7 +1512,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Kuantum Modeli",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1523,7 +1523,7 @@
     "id": 51552,
     "ders": "AYT KİMYA",
     "soru_no": 77,
-    "soru": "",
+    "soru": "Şekildeki galvanik hücrede B(k) katısının kütlesi zamanla artıyor.\n\nŞekilde bir galvanik hücre görülmektedir: Bir voltmetreye bağlı iki elektrot vardır. Sol yarı hücrede 1 M $A^+$(suda) çözeltisi içinde A(k) elektrodu, sağ yarı hücrede 1 M $B^+$(suda) çözeltisi içinde B(k) elektrodu bulunmaktadır. İki yarı hücre bir tuz köprüsü ile birbirine bağlanmıştır.\n\nBu hücreyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "secenekler": {
       "A": "B(k) elektrodu katottur.",
       "B": "Hücre tepkimesi istemlidir.",
@@ -1543,7 +1543,7 @@
     "id": 51553,
     "ders": "AYT KİMYA",
     "soru_no": 78,
-    "soru": "",
+    "soru": "Aşağıda bir galvanik hücre şekli verilmiştir. Şekilde tuz köprüsü (KNO$_3$ suda) ile birbirine bağlanmış iki yarı hücre görülmektedir: A yarı hücresinde Mg elektrot, B yarı hücresinde Ag elektrot bulunmaktadır; elektrotlar arasına bir voltmetre (V) bağlanmıştır. Net tepkimesi $2\\text{Ag}^{+}(\\text{suda}) + \\text{Mg}(k) \\rightarrow 2\\text{Ag}(k) + \\text{Mg}^{2+}(\\text{suda})$ olan bu galvanik hücreyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "secenekler": {
       "A": "B yarı hücresinde Ag$^+$ iyonlarını içeren çözelti vardır.",
       "B": "Tuz köprüsündeki NO$_3^-$ iyonları A yarı hücresine geçer.",
@@ -1563,7 +1563,7 @@
     "id": 51554,
     "ders": "AYT KİMYA",
     "soru_no": 79,
-    "soru": "",
+    "soru": "Standart şartlarda Al(NO$_3$)$_3$ çözeltisine daldırılmış Al metali ve Sn(NO$_3$)$_2$ çözeltisine daldırılmış Sn metalinden oluşan iki yarı hücre tuz köprüsüyle birleştirilerek bir elektrokimyasal hücre oluşturuluyor. Kendiliğinden olan elektrokimyasal hücre tepkimesi sonucu Al elektrodun kütlesinin azaldığı ve Sn elektrodun kütlesinin arttığı gözleniyor. Bu elektrokimyasal hücreyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "Çözeltideki Sn$^{2+}$ iyonları indirgenmiştir.",
       "B": "Al elektrot, katot olarak adlandırılır.",
@@ -1583,7 +1583,7 @@
     "id": 51555,
     "ders": "AYT KİMYA",
     "soru_no": 80,
-    "soru": "",
+    "soru": "İstemli bir kimyasal tepkimenin gerçekleştiği elektrokimyasal hücrenin şematik gösterimi aşağıdaki gibidir. $\\text{Sn}(k)\\,|\\,\\text{SnCl}_2(\\text{suda})\\,||\\,\\text{AgNO}_3(\\text{suda})\\,|\\,\\text{Ag}(k)$ Bu elektrokimyasal hücre çalışır durumdayken aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "Sn/SnCl$_2$ yarı hücresine, tuz köprüsünden anyon gelir.",
       "B": "Ag elektrodun kütlesi zamanla azalır.",
@@ -1603,7 +1603,7 @@
     "id": 51556,
     "ders": "AYT KİMYA",
     "soru_no": 81,
-    "soru": "",
+    "soru": "$Cu^{2+}(\\text{suda}) + Pb(k) \\rightarrow Pb^{2+}(\\text{suda}) + Cu(k)$\n\n25 °C'deki bu hücre tepkimesinde $[Cu^{2+}] = 0,1$ mol/L ve $[Pb^{2+}] = 0,001$ mol/L'dir.\n\nBuna göre hücre potansiyeli kaç volttur?\n\n(Nernst eşitliğinde logaritmik terimin katsayısı $0,059/n$ olarak alınacaktır. Burada $n$, tepkimede aktarılan elektron sayısıdır.)\n\n$Cu^{2+}(\\text{suda}) + 2e^{-} \\rightarrow Cu(k) \\quad E^{\\circ} = +0,334\\text{ V}$\n\n$Pb^{2+}(\\text{suda}) + 2e^{-} \\rightarrow Pb(k) \\quad E^{\\circ} = -0,126\\text{ V}$",
     "secenekler": {
       "A": "0,519",
       "B": "0,501",
@@ -1612,7 +1612,7 @@
       "E": "0,401"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektrot Potansiyelleri",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1623,7 +1623,7 @@
     "id": 51557,
     "ders": "AYT KİMYA",
     "soru_no": 82,
-    "soru": "",
+    "soru": "Sabit sıcaklık ve basınçta, eşit kütlede alınan $\\text{CH}_4$ ve $\\text{SO}_2$ gazlarıyla ilgili,\n\nI. $\\text{SO}_2$ nin hacmi $\\text{CH}_4$ ün hacminin 2 katıdır.\n\nII. $\\text{CH}_4$ ün difüzyon hızı $\\text{SO}_2$ nin difüzyon hızının 2 katıdır.\n\nIII. $\\text{SO}_2$ nin ortalama kinetik enerjisi $\\text{CH}_4$ ünkinden daha yüksektir.\n\nyargılarından hangileri doğrudur?\n\n($\\text{CH}_4 = 16 \\text{ g/mol, } \\text{SO}_2 = 64 \\text{ g/mol, gazların ideal olduğu varsayılacaktır.}$)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1643,7 +1643,7 @@
     "id": 51558,
     "ders": "AYT KİMYA",
     "soru_no": 83,
-    "soru": "",
+    "soru": "25 °C'de Ag elektrot daldırılmış 0,01 M $Ag^{+}$ sulu çözeltisi ile Cu elektrot daldırılmış 0,01 M $Cu^{2+}$ çözeltisinden oluşan iki yarı hücre, tuz köprüsüyle birleştirilerek bir elektrokimyasal hücre oluşturuluyor. Elektrokimyasal hücre çalıştıktan sonra Cu elektrodun kütlesinin azaldığı ve hücre potansiyelinin \"P\" volt olduğu gözleniyor.\n\nBu elektrokimyasal hücreyle ilgili,\n\nI. Cu elektrot anot olarak davranmıştır.\n\nII. $Cu^{2+}$ derişimi 1 M yapılırsa hücre potansiyeli $(P - 0,059)$ V olur.\n\nIII. Her iki katyon çözeltisinin derişimi 10 kat artırılırsa hücre potansiyeli değişmez.\n\nifadelerinden hangileri doğrudur?\n\n(25 °C'de Nernst eşitliğinde logaritmik terimin katsayısı $0,059/n$ alınacaktır; $n$ hücre tepkimesinde aktarılan elektron sayısıdır.)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1652,7 +1652,7 @@
       "E": "I ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektrot Potansiyelleri",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1663,7 +1663,7 @@
     "id": 51559,
     "ders": "AYT KİMYA",
     "soru_no": 84,
-    "soru": "",
+    "soru": "İstemli olduğu bilinen bir elektrokimyasal hücre tepkimesinin şematik gösterimi aşağıda verilmiştir.\n\n$X(k) \\mid X^{2+}(\\text{suda}) \\parallel Y^{2+}(\\text{suda}) \\mid Y(k)$\n\nBu elektrokimyasal hücrenin Cd ve Zn metallerinden hazırlandığı bilindiğine göre,\n\nI. $X(k)$ metali Zn'dir.\n\nII. $Cd(k)$ miktarı zamanla azalır.\n\nIII. Standart hücre potansiyeli $+1,166$ V'dir.\n\nifadelerinden hangileri doğrudur?\n\n$Cd^{2+}(\\text{suda}) + 2e^{-} \\rightarrow Cd(k) \\quad E^{\\circ} = -0,403\\text{ V}$\n\n$Zn^{2+}(\\text{suda}) + 2e^{-} \\rightarrow Zn(k) \\quad E^{\\circ} = -0,763\\text{ V}$",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1672,7 +1672,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektrot Potansiyelleri",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1683,7 +1683,7 @@
     "id": 51560,
     "ders": "AYT KİMYA",
     "soru_no": 85,
-    "soru": "",
+    "soru": "25 °C'de 0,1 M $LiNO_3$ çözeltisine daldırılmış Li elektrot ve 0,1 M $Pb(NO_3)_2$ çözeltisine daldırılmış Pb elektrottan oluşan iki yarı hücre, tuz köprüsüyle birleştirilerek oluşturulan elektrokimyasal hücrenin hücre potansiyeli E olarak ölçülüyor.\n\nBuna göre ölçülen hücre potansiyelinin (E), standart hücre potansiyeli ($E^\\circ$) cinsinden değeri aşağıdakilerden hangisidir?\n\n($Li^+(suda) + e^- \\rightarrow Li(k) \\quad E^\\circ = -3,05\\,V$\n\n$Pb^{2+}(suda) + 2e^- \\rightarrow Pb(k) \\quad E^\\circ = -0,13\\,V$\n\n25 °C'de Nernst eşitliğinde logaritmik terimin katsayısı $\\frac{0,059}{n}$ olarak alınacaktır; burada n tepkimede aktarılan elektron sayısıdır.)",
     "secenekler": {
       "A": "$E^\\circ - 0,0295$",
       "B": "$E^\\circ + 0,0295$",
@@ -1703,7 +1703,7 @@
     "id": 51561,
     "ders": "AYT KİMYA",
     "soru_no": 86,
-    "soru": "",
+    "soru": "Şematik gösterimi aşağıdaki gibi olan galvanik hücrenin 25 °C'deki $E_{hücre}$ değeri 0 V'dir.\n\n$H_2(g, 1\\,atm) \\mid H^+(suda, 1\\,M) \\parallel Y^+(suda, x\\,M) \\mid Y(k)$\n\nBuna göre $Y^+(suda)$ derişimi kaç molardır?\n\n($Y^+(suda) + e^- \\rightarrow Y(k) \\quad E^\\circ = -0,059\\,V$,\n\n$2H^+(suda) + 2e^- \\rightarrow H_2(g) \\quad E^\\circ = 0,0\\,V$\n\n25 °C'de Nernst eşitliğinde logaritmik terimin katsayısı $\\frac{0,059}{n}$ alınacaktır; n, hücre tepkimesinde aktarılan elektron sayısıdır.)",
     "secenekler": {
       "A": "0,01",
       "B": "0,1",
@@ -1723,7 +1723,7 @@
     "id": 51562,
     "ders": "AYT KİMYA",
     "soru_no": 87,
-    "soru": "",
+    "soru": "Bir elektrokimyasal hücrenin şematik gösterimi aşağıdaki gibidir.\n\n$Cd(k) \\mid Cd^{2+}(suda, 1\\,M) \\parallel Ag^+(suda, 1\\,M) \\mid Ag(k)$\n\nStandart koşullarda hazırlanan bu elektrokimyasal hücreyle ilgili aşağıdaki ifadelerden hangisi doğrudur?\n\n($Ag^+(suda) + e^- \\rightarrow Ag(k) \\quad E^\\circ = 0,799\\,V$\n\n$Cd^{2+}(suda) + 2e^- \\rightarrow Cd(k) \\quad E^\\circ = -0,402\\,V$)",
     "secenekler": {
       "A": "$2Ag(k) + Cd^{2+}(suda) \\rightarrow 2Ag^+(suda) + Cd(k)$ tepkimesi istemsizdir.",
       "B": "Hücre potansiyeli 0,397 V'dir.",
@@ -1743,7 +1743,7 @@
     "id": 51563,
     "ders": "AYT KİMYA",
     "soru_no": 88,
-    "soru": "",
+    "soru": "$KNO_3(suda)$ içeren tuz köprüsü kullanılarak oluşturulan bir elektrokimyasal hücrenin şematik gösterimi aşağıda verilmiştir.\n\n$Fe(k) \\mid Fe^{2+}(suda, 1\\,M) \\parallel Fe^{3+}(suda, 1\\,M),\\, Fe^{2+}(suda, 1\\,M) \\mid Pt(k)$\n\nBu elektrokimyasal hücreyle ilgili 25 °C'de aşağıdakilerden hangisi doğrudur?\n\n($Fe^{2+}(suda) + 2e^- \\rightarrow Fe(k) \\quad E^\\circ = -0,440\\,V$\n\n$Fe^{3+}(suda) + e^- \\rightarrow Fe^{2+}(suda) \\quad E^\\circ = -0,771\\,V$)",
     "secenekler": {
       "A": "Sol yarı hücredeki $Fe^{2+}(suda)$ derişimi zamanla azalır.",
       "B": "Anot yarı hücresinde zamanla $K^+(suda)$ derişimi artar.",
@@ -1763,7 +1763,7 @@
     "id": 51564,
     "ders": "AYT KİMYA",
     "soru_no": 89,
-    "soru": "",
+    "soru": "25 °C'de 0,1 M HCl sulu çözeltisinin pH değeri 1 iken 0,1 M HF sulu çözeltisinin pH değeri 2,1'dir.\n\nBuna göre HCl ve HF asitleriyle ilgili,\n\nI. HCl'nin sudaki iyonlaşma oranı HF'ninkinden daha fazladır.\n\nII. HF sulu çözeltisi, HCl'ye göre daha kuvvetli asittir.\n\nIII. HF sulu çözeltisindeki $\\text{H}^+$ derişimi 0,1 M'dir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1783,7 +1783,7 @@
     "id": 51565,
     "ders": "AYT KİMYA",
     "soru_no": 90,
-    "soru": "",
+    "soru": "Sadece C, H ve O içerdiği bilinen 46 gram bileşik, $O_2(g)$ ile tamamen yandığında normal şartlar altında 44,8 L $CO_2(g)$ ve 54 g $H_2O(s)$ oluşuyor. Buna göre bileşiğin basit formülü aşağıdakilerden hangisidir? (H = 1 g/mol, C = 12 g/mol, O = 16 g/mol)",
     "secenekler": {
       "A": "$CH_4O$",
       "B": "$C_2H_6O$",
@@ -1792,7 +1792,7 @@
       "E": "$C_4H_6O$"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Organik ve Anorganik Bileşikler - Basit Formül ve Molekül Formülü",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1803,7 +1803,7 @@
     "id": 51566,
     "ders": "AYT KİMYA",
     "soru_no": 91,
-    "soru": "",
+    "soru": "Aşağıda formülü verilen bileşiklerden hangisi anorganik bileşik olarak sınıflandırılır?",
     "secenekler": {
       "A": "$CH_3COOH$",
       "B": "$NH_4HCO_3$",
@@ -1812,7 +1812,7 @@
       "E": "$CH_3NH_2$"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Organik ve Anorganik Bileşikler",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1823,7 +1823,7 @@
     "id": 51567,
     "ders": "AYT KİMYA",
     "soru_no": 92,
-    "soru": "",
+    "soru": "Sabit hacimli kapalı bir kapta $N_2O_5(g)$'in bozunmasına ilişkin aşağıda verilen tepkime birinci derecedendir.\n\n$2N_2O_5(g) \\rightarrow 4NO_2(g) + O_2(g)$\n\nSabit sıcaklıkta gerçekleşen bu tepkimeyle ilgili\n\nI. $N_2O_5(g)$'in tükenme hızı, $NO_2(g)$'nin oluşma hızına eşittir.\n\nII. $O_2(g)$'nin oluşma hızı tepkime hızına eşittir.\n\nIII. Tepkime ilerledikçe hız sabitinin değeri azalır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1843,7 +1843,7 @@
     "id": 51568,
     "ders": "AYT KİMYA",
     "soru_no": 93,
-    "soru": "",
+    "soru": "Aşağıda karbonun bazı allotroplarının özellikleri verilmiştir:\n\nX: Her karbon atomunun $sp^3$ hibitleşmesi yaptığı, karbonun allotropları arasında en fazla sertliğe sahip olan doğal bir maddedir.\n\nY: Karbon atomlarından oluşan altıgen halkaların tabakalar hâlinde dizildiği, elektriği ileten ve yumuşak yapıdaki doğal bir maddedir.\n\nZ: Karbon atomlarının oluşturduğu beşgen ve altıgen halkalardan meydana gelen yapay bir maddedir.\n\nBuna göre karbonun X, Y ve Z allotropları aşağıdakilerin hangisinde doğru verilmiştir?",
     "secenekler": {
       "A": "X: Elmas, Y: Grafit, Z: Fulleren",
       "B": "X: Grafit, Y: Elmas, Z: Fulleren",
@@ -1852,7 +1852,7 @@
       "E": "X: Fulleren, Y: Grafit, Z: Elmas"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Karbonun Allotropları",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1863,7 +1863,7 @@
     "id": 51569,
     "ders": "AYT KİMYA",
     "soru_no": 94,
-    "soru": "",
+    "soru": "Bir organik bileşik olan asetilenin (etinin) çizgi bağ formülü aşağıda verilmiştir.\n\n$H - C \\equiv C - H$\n\nAsetilende atomlar arası bağların oluşumuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?\n\n($_{1}H, _{6}C$)",
     "secenekler": {
       "A": "Hidrojen atomları $sp$ hibitleşmesi yapmıştır.",
       "B": "Karbon atomları $sp^2$ hibitleşmesi yapmıştır.",
@@ -1872,7 +1872,7 @@
       "E": "Karbon ve hidrojen atomları arasındaki bağ, $\\pi$ (pi) bağıdır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Hibritleşme ve Bağ Oluşumu",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1883,7 +1883,7 @@
     "id": 51570,
     "ders": "AYT KİMYA",
     "soru_no": 95,
-    "soru": "",
+    "soru": "Aşağıda yapı formülü verilen molekülde $sp$, $sp^2$ ve $sp^3$ hibitleşmesi yapan karbon atomlarının sayıları aşağıdakilerin hangisinde doğru olarak verilmiştir?\n\nMolekülün yapısı: Birbirine bağlı karbon atomları zinciri ve halkalar içeren bir hidrokarbon. Yapıda $HC \\equiv C$ üçlü bağı, $C=C$ çift bağları ve $CH_3$, $CH_2$, $CH$ grupları bulunmaktadır. Görselde toplam 9 karbon atomu yer almakta olup bunların bir kısmı üçlü bağda ($sp$), bir kısmı çift bağda ($sp^2$), bir kısmı ise tek bağlı doymuş yapıda ($sp^3$) hibitleşmiştir.",
     "secenekler": {
       "A": "$sp$: 3, $sp^2$: 4, $sp^3$: 2",
       "B": "$sp$: 4, $sp^2$: 2, $sp^3$: 3",
@@ -1892,7 +1892,7 @@
       "E": "$sp$: 3, $sp^2$: 3, $sp^3$: 3"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Hibritleşme Türleri",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1903,7 +1903,7 @@
     "id": 51571,
     "ders": "AYT KİMYA",
     "soru_no": 96,
-    "soru": "",
+    "soru": "Metan molekülüyle ilgili aşağıdaki ifadelerden hangisi doğrudur? ($_1H$, $_6C$)",
     "secenekler": {
       "A": "Bağ açıları $90^\\circ$ dir.",
       "B": "$\\pi$ ($\\pi$) bağı içermektedir.",
@@ -1912,7 +1912,7 @@
       "E": "Molekül geometrisi kare düzlemdir."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Bağlar",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1923,7 +1923,7 @@
     "id": 51572,
     "ders": "AYT KİMYA",
     "soru_no": 97,
-    "soru": "",
+    "soru": "Sabit hacimli kapalı bir kapta $N_2O_5(g)$'in bozunmasına ilişkin aşağıda verilen tepkime birinci derecedendir.\n\n$2N_2O_5(g) \\rightarrow 4NO_2(g) + O_2(g)$\n\nSabit sıcaklıkta gerçekleşen bu tepkimeyle ilgili\n\nI. $N_2O_5(g)$'in tükenme hızı, $NO_2(g)$'nin oluşma hızına eşittir.\n\nII. $O_2(g)$'nin oluşma hızı tepkime hızına eşittir.\n\nIII. Tepkime ilerledikçe hız sabitinin değeri azalır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1943,7 +1943,7 @@
     "id": 51573,
     "ders": "AYT KİMYA",
     "soru_no": 98,
-    "soru": "",
+    "soru": "Bir molekülün açık formülü aşağıda verilmiştir.\n\n[Görselde dört karbon atomu ve sekiz hidrojen atomundan oluşan bir molekülün açık formülü yer almaktadır. Karbon atomları bir zincir halinde bağlanmış, hidrojen atomları karbonlara bağlanmıştır.]\n\nBu moleküldeki bağlarla ilgili örtüşen orbitaller ve bunların oluşturduğu toplam sigma bağı sayısı eşleştirmelerinden hangisi doğrudur? ($_1H$, $_6C$)",
     "secenekler": {
       "A": "$s - sp^3$ : 8",
       "B": "$sp^2 - sp^2$ : 1",
@@ -1952,7 +1952,7 @@
       "E": "$sp^3 - sp^3$ : 2"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Bağlar",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1963,7 +1963,7 @@
     "id": 51574,
     "ders": "AYT KİMYA",
     "soru_no": 99,
-    "soru": "",
+    "soru": "Bir molekülün açık formülü aşağıda verilmiştir.\n\n[Görselde on karbon atomu ve on hidrojen atomundan oluşan bir molekülün açık formülü yer almaktadır. Karbon atomları bir zincir halinde bağlanmış, hidrojen atomları karbonlara bağlanmıştır.]\n\nDeğerlik bağ kuramına göre bu molekülle ilgili aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "$sp^2$ hibritleşmesi yapan karbon atomlarının sayısı 2'dir.",
       "B": "$sp^3$ hibritleşmesi yapan karbon atomlarının sayısı 8'dir.",
@@ -1972,7 +1972,7 @@
       "E": "Moleküldeki toplam sigma bağlarının sayısı 16'dır."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Bağlar",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -1983,7 +1983,7 @@
     "id": 51575,
     "ders": "AYT KİMYA",
     "soru_no": 100,
-    "soru": "",
+    "soru": "[Görselde bir siklopenten halkası üzerinde bir klor atomu ve bir metil ($CH_3$) grubu bulunmaktadır. Klor atomu ve metil grubu halkadaki karbon atomlarına bağlanmıştır.]\n\nYukarıdaki bileşiğin IUPAC adı hangisinde doğru olarak verilmiştir?",
     "secenekler": {
       "A": "4-Metil-3-klorosiklopenten",
       "B": "2-Kloro-3-metilsiklopenten",
@@ -1992,7 +1992,7 @@
       "E": "Klorometilsiklopenten"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Hidrokarbonlar",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -2003,7 +2003,7 @@
     "id": 51576,
     "ders": "AYT KİMYA",
     "soru_no": 101,
-    "soru": "",
+    "soru": "$\\text{CH}_3 - \\underset{\\text{CH}_3}{\\overset{\\text{CH}_3}{\\text{CH}}} - \\text{CH}_2 - \\text{CH}_3$ bileşiği için aşağıdaki ifadelerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Kaynama noktası n-pentana göre daha yüksektir.",
       "B": "2-Metilbütan şeklinde adlandırılabilir.",
@@ -2023,7 +2023,7 @@
     "id": 51577,
     "ders": "AYT KİMYA",
     "soru_no": 102,
-    "soru": "",
+    "soru": "Sabit hacimli kapalı bir kapta $N_2O_5(g)$'in bozunmasına ilişkin aşağıda verilen tepkime birinci derecedendir.\n\n$2N_2O_5(g) \\rightarrow 4NO_2(g) + O_2(g)$\n\nSabit sıcaklıkta gerçekleşen bu tepkimeyle ilgili\n\nI. $N_2O_5(g)$'in tükenme hızı, $NO_2(g)$'nin oluşma hızına eşittir.\n\nII. $O_2(g)$'nin oluşma hızı tepkime hızına eşittir.\n\nIII. Tepkime ilerledikçe hız sabitinin değeri azalır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2043,7 +2043,7 @@
     "id": 51578,
     "ders": "AYT KİMYA",
     "soru_no": 103,
-    "soru": "",
+    "soru": "Sabit hacimli kapalı kapta bir miktar $CaCO_3$ katısı ısıtılıyor ve belirli bir sıcaklıkta aşağıdaki tepkimeye göre dengeye ulaşılıyor.\n\n$$CaCO_3(k) \\rightleftharpoons CaO(k) + CO_2(g) \\qquad \\Delta H^\\circ > 0$$\n\nBuna göre denge durumunda\n\nI. sisteme aynı sıcaklıkta inert gaz ilave edilmesi,\n\nII. sisteme bir miktar daha $CaCO_3$ katısı ilave edilmesi,\n\nIII. sistemin sıcaklığının artırılması\n\nişlemlerinden hangileri uygulandığında oluşan $CaO(k)$ miktarı artar?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2052,7 +2052,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Denge",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -2063,7 +2063,7 @@
     "id": 51579,
     "ders": "AYT KİMYA",
     "soru_no": 104,
-    "soru": "",
+    "soru": "Sabit hacimli kapalı bir kapta $N_2O_5(g)$'in bozunmasına ilişkin aşağıda verilen tepkime birinci derecedendir.\n\n$2N_2O_5(g) \\rightarrow 4NO_2(g) + O_2(g)$\n\nSabit sıcaklıkta gerçekleşen bu tepkimeyle ilgili\n\nI. $N_2O_5(g)$'in tükenme hızı, $NO_2(g)$'nin oluşma hızına eşittir.\n\nII. $O_2(g)$'nin oluşma hızı tepkime hızına eşittir.\n\nIII. Tepkime ilerledikçe hız sabitinin değeri azalır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2083,7 +2083,7 @@
     "id": 51580,
     "ders": "AYT KİMYA",
     "soru_no": 105,
-    "soru": "",
+    "soru": "Etan molekülünde bir karbondaki bir hidrojen yerine etil, diğer karbondaki bir hidrojen yerine izopropil grubu bağlanarak yeni bir alkan bileşiği elde ediliyor.\n\nBu bileşiğin IUPAC adı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "2,3-Dimetilpentan",
       "B": "1-Etil-2-izopropiletan",
@@ -2092,7 +2092,7 @@
       "E": "2-Metilheksan"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Organik Bileşikler - Alkanlar",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2103,7 +2103,7 @@
     "id": 51581,
     "ders": "AYT KİMYA",
     "soru_no": 106,
-    "soru": "",
+    "soru": "Aşağıda bir organik bileşiğin açık formülü verilmiştir.\n\n$H_3C-CH_2-C(CH_3)=C(CH_3)-CH_3$ (2,3-dimetil-2-penten)\n\nBu bileşikle ilgili aşağıdakilerden hangisi yanlıştır?",
     "secenekler": {
       "A": "HCl ile tepkimesinden oluşan ürün alkil halojenür olarak sınıflandırılır.",
       "B": "Doymamış hidrokarbon olarak sınıflandırılır.",
@@ -2112,7 +2112,7 @@
       "E": "Su katılması sonucu alkol oluşur."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Organik Bileşikler - Alkenler",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -2123,7 +2123,7 @@
     "id": 51582,
     "ders": "AYT KİMYA",
     "soru_no": 107,
-    "soru": "",
+    "soru": "Asetilene ($C_2H_2$) uygun şartlarda su katılması tepkimesi sonucu oluşan kararlı ürün hangi organik bileşik sınıfında yer alır?",
     "secenekler": {
       "A": "Alkol",
       "B": "Karboksilik asit",
@@ -2132,7 +2132,7 @@
       "E": "Keton"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Organik Bileşikler - Aldehit ve Ketonlar",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2143,7 +2143,7 @@
     "id": 51583,
     "ders": "AYT KİMYA",
     "soru_no": 108,
-    "soru": "",
+    "soru": "Aşağıdaki bileşiklerden hangisinin fonksiyonel grubu karşısında yanlış verilmiştir?",
     "secenekler": {
       "A": "$CH_3CH_2NH_2$ — ($-NH_2$)",
       "B": "$CH_3CH_2CHO$ — ($-CHO$)",
@@ -2152,7 +2152,7 @@
       "E": "$CH_3CH_2CN$ — ($-CN$)"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Fonksiyonel Gruplar",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2163,7 +2163,7 @@
     "id": 51584,
     "ders": "AYT KİMYA",
     "soru_no": 109,
-    "soru": "",
+    "soru": "Aşağıdaki bileşiklerden hangisi ikincil (sekonder) alkol olarak sınıflandırılır?\n\nA) Benzen halkasına bağlı $-CH_2OH$ (benzil alkol, birincil alkol)\nB) Benzen halkasına bağlı $-C(CH_3)_2OH$ (tersiyer alkol)\nC) Benzen halkasına bağlı $-CH(OH)CH_3$ (1-feniletanol, ikincil alkol)\nD) Benzen halkasına bağlı $-CH_2CH_2OH$ (2-feniletanol, birincil alkol)\nE) Benzen halkasına bağlı $-CH_3$ ve $-OH$ (fenol)",
     "secenekler": {
       "A": "Benzil alkol ($C_6H_5-CH_2OH$)",
       "B": "2-Fenil-2-propanol ($C_6H_5-C(CH_3)_2OH$)",
@@ -2172,7 +2172,7 @@
       "E": "Fenol ($C_6H_5OH$)"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Alkoller - Eterler",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": true,
@@ -2183,7 +2183,7 @@
     "id": 51585,
     "ders": "AYT KİMYA",
     "soru_no": 110,
-    "soru": "",
+    "soru": "Dietil eter ve 1-Bütanol ile ilgili\n\nI. 1-Bütanolün normal kaynama noktası, dietil eterin normal kaynama noktasından daha düşüktür.\n\nII. Dietil eter molekülleri arasında hidrojen bağları bulunur.\n\nIII. İki bileşik birbirinin yapı izomeridir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2192,7 +2192,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Alkol ve Eterler",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2203,7 +2203,7 @@
     "id": 51586,
     "ders": "AYT KİMYA",
     "soru_no": 111,
-    "soru": "",
+    "soru": "Potasyum klorat ($KClO_3$) katısı ısıtıldığında potasyum klorür ($KCl$) katısına ve oksijen gazına ($O_2$) dönüşüyor. Açığa çıkan $O_2$ gazı aşağıdaki düzenekte gösterildiği gibi 25 °C'de su üzerinde toplanıyor. Düzenekte $KClO_3$ katısının ısıtıldığı bir kap, açığa çıkan gazın bir boru ile su dolu bir şişeye aktarıldığı ve gazın su üzerinde biriktiği görülmektedir. Şişede su ve üzerinde toplanan gaz ($O_2$ ve $H_2O$ buharı) bulunmaktadır. Buna göre su üzerinde toplanan $O_2$ gazının kısmi basıncını hesaplamak için, I. su üzerinde toplanan gazın 25 °C'deki toplam basıncı, II. 25 °C'de suyun buhar basıncı, III. su üzerinde toplanan gazın 25 °C'deki toplam hacmi bilgilerinden hangileri gereklidir? ($O_2$ gazının su ile tepkimeye girmediği ve suda çözünmediği; gazların ideal gaz olarak davrandığı varsayılacaktır.)",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -2212,7 +2212,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Gaz Karışımları",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2223,7 +2223,7 @@
     "id": 51587,
     "ders": "AYT KİMYA",
     "soru_no": 112,
-    "soru": "",
+    "soru": "Temel hâldeki $_{24}$Cr atomuyla ilgili\n\nI. Manyetik kuantum sayısı ($m_\\ell$) 0 olan toplam 12 elektron vardır.\n\nII. Açısal momentum kuantum sayısı ($\\ell$) 1 olan toplam 12 elektron vardır.\n\nIII. Baş kuantum sayısı (n) 4 olan toplam 2 elektron vardır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -2243,7 +2243,7 @@
     "id": 51588,
     "ders": "AYT KİMYA",
     "soru_no": 113,
-    "soru": "",
+    "soru": "Görselde verilen yapı: bir karbon atomuna çift bağla bağlı bir oksijen ($=O$), tek bağla bağlı bir $\\text{CH}_3$ grubu ve tek bağla bağlı —Y ile gösterilen bir grup bağlanmıştır; yani yapı $\\text{CH}_3-\\text{C}(=O)-\\text{Y}$ şeklindedir.\n\nbileşiğinin adı metil etanoat olduğuna göre —Y ile gösterilen yerde aşağıdakilerden hangisi olmalıdır?",
     "secenekler": {
       "A": "$-\\text{H}$",
       "B": "$-\\text{OH}$",
@@ -2252,7 +2252,7 @@
       "E": "$-\\text{CH}_3$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Esterler",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": true,

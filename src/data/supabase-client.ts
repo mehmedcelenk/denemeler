@@ -57,6 +57,19 @@ export function isSupabaseAvailable(): boolean {
   return getSupabaseConfig() !== null;
 }
 
+export function normalizePostgrestQuestions(data: unknown): unknown {
+  if (!Array.isArray(data)) return data;
+  return data.map((item) => {
+    if (typeof item !== 'object' || item === null || Array.isArray(item)) return item;
+    const copy = { ...(item as Record<string, unknown>) };
+    if (typeof copy.puan === 'string' && copy.puan.trim() !== '') {
+      const num = Number(copy.puan);
+      if (Number.isFinite(num)) copy.puan = num;
+    }
+    return copy;
+  });
+}
+
 export async function fetchQuestionsFromSupabase(
   subject: SubjectId | string,
   timeoutMs = 5000
@@ -86,7 +99,7 @@ export async function fetchQuestionsFromSupabase(
     }
 
     const data: unknown = await response.json();
-    return parseQuestions(data);
+    return parseQuestions(normalizePostgrestQuestions(data));
   } finally {
     clearTimeout(timeoutId);
   }

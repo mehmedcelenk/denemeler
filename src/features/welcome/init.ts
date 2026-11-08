@@ -5,6 +5,13 @@ import type { SubjectId } from '../../data/question.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 import { roomService } from '../classroom/room-service.ts';
 import {
+  showAuthModal,
+  hideAuthModal,
+  toggleAuthMode,
+  submitAuth,
+  handleSignOut,
+} from './auth-modal.ts';
+import {
   focusRoomInput,
   getDialogUserName,
   getWelcomeRoomId,
@@ -195,6 +202,11 @@ function bindWelcomeInputs(): void {
     if (event.key === 'Enter') void confirmUserName();
     if (event.key === 'Escape') cancelUserName();
   });
+  const passInput = document.getElementById('authPasswordInput');
+  passInput?.addEventListener('keydown', event => {
+    if (event.key === 'Enter') void submitAuth();
+    if (event.key === 'Escape') hideAuthModal();
+  });
 }
 
 export function initWelcome(
@@ -224,6 +236,14 @@ export function initWelcome(
     'welcome-join-room': () => joinRoom(),
     'welcome-confirm-name': () => confirmUserName(),
     'welcome-cancel-name': () => cancelUserName(),
+    'welcome-open-auth': () => showAuthModal('signin'),
+    'welcome-cancel-auth': () => hideAuthModal(),
+    'welcome-submit-auth': () => void submitAuth(),
+    'welcome-toggle-auth-mode': () => toggleAuthMode(),
+    'welcome-signout': (_element, event) => {
+      event?.stopPropagation();
+      void handleSignOut();
+    },
     'welcome-home': () => returnHome(),
     'welcome-resume': () => resumeSavedSession(),
   });

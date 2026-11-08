@@ -3,12 +3,14 @@ import { handleVisibilityChangeForWakeLock } from './wake-lock.ts';
 
 let isListening = false;
 let isCurrentlyLost = false;
-let pollIntervalTimer: ReturnType<typeof setInterval> | null = null;
 let graceTimer: ReturnType<typeof setTimeout> | null = null;
 let focusLostStartTimestamp: number = 0;
+let lastFocusEventTimestamp: number = 0;
 
-// Sayfa yenileme (F5/Reload) anındaki anlık kopmalarda hemen ayrıldı paniği yaratmamak için 1 sn tolerans
+// Tekil F5 / Reload anındaki anlık kırpmada yanlış alarm vermemek için 1 sn tolerans
 const RELOAD_GRACE_PERIOD_MS = 1000;
+// Çık-gir spam (15 sn içinde tekrarlanan odak kaybı) tespitinde tolerans 0 ms olur!
+const SPAM_BURST_WINDOW_MS = 15000;
 
 export function initFocusTracker(): void {
   if (isListening || typeof document === 'undefined') return;
@@ -32,15 +34,22 @@ export function initFocusTracker(): void {
       triggerPotentialFocusRestored();
     });
 
-    // Mola bittiğinde öğrenci dışarıdaysa anında yakala
+    window.addEventListener('pagehide', () => {
+      roomService.handlePageUnload(Date.now());
+    });
+
+    window.addEventListener('beforeunload', () => {
+      roomService.handlePageUnload(Date.now());
+    });
+
     roomService.onResume(() => {
       checkFocusAfterResume();
     });
 
     // Mobil ve tabletlerde split-screen / floating window kontrolü (her 1.5 sn yoklama)
-    pollIntervalTimer = setInterval(() => {
+    setInterval(() => {
       const state = roomService.getState();
-      if (!state.roomId || state.isPaused) return;
+      if (!state.roomId || state.isPaused || state.isHost) return;
 
       const isUnfocused = typeof document.hasFocus === 'function' ? !document.hasFocus() : false;
       if ((document.hidden || isUnfocused) && !isCurrentlyLost && !graceTimer) {
@@ -60,20 +69,29 @@ export function checkFocusAfterResume(): void {
   }
 }
 
-function triggerPotentialFocusLoss(immediate: boolean = false): void {
+export function triggerPotentialFocusLoss(immediate: boolean = false, now: number = Date.now()): void {
   const state = roomService.getState();
-  if (!state.roomId || state.isPaused || isCurrentlyLost) return;
+  if (!state.roomId || state.isPaused || state.isHost || isCurrentlyLost) return;
 
-  const lostAt = Date.now();
+  roomService.markAwayStarted(now);
 
-  if (immediate) {
-    confirmFocusLoss(lostAt);
+  // Son 15 sn içinde zaten odak kaybı denendiyse (çık-gir spam), 1 sn beklemeden ANINDA yakala!
+  const isRapidSpam = lastFocusEventTimestamp > 0 && (now - lastFocusEventTimestamp) < SPAM_BURST_WINDOW_MS;
+  lastFocusEventTimestamp = now;
+
+  if (immediate || isRapidSpam) {
+    if (graceTimer) {
+      clearTimeout(graceTimer);
+      graceTimer = null;
+    }
+    focusLostStartTimestamp = now;
+    confirmFocusLoss(now);
     return;
   }
 
   if (graceTimer) return;
 
-  focusLostStartTimestamp = lostAt;
+  focusLostStartTimestamp = now;
   graceTimer = setTimeout(() => {
     graceTimer = null;
     confirmFocusLoss(focusLostStartTimestamp);
@@ -82,26 +100,33 @@ function triggerPotentialFocusLoss(immediate: boolean = false): void {
 
 function confirmFocusLoss(lostAt: number): void {
   const state = roomService.getState();
-  if (!state.roomId || state.isPaused || isCurrentlyLost) return;
+  if (!state.roomId || state.isPaused || state.isHost || isCurrentlyLost) return;
 
   isCurrentlyLost = true;
   roomService.notifyFocusLost(lostAt);
 }
 
-function triggerPotentialFocusRestored(): void {
-  // Eğer reload / 1 sn içinde geri döndüyse alarmı iptal et
+export function triggerPotentialFocusRestored(now: number = Date.now()): void {
   if (graceTimer) {
     clearTimeout(graceTimer);
     graceTimer = null;
+    roomService.clearAwayStarted();
     return;
   }
 
   if (!isCurrentlyLost) return;
   isCurrentlyLost = false;
 
-  const restoredAt = Date.now();
-  const awayDurationMs = focusLostStartTimestamp > 0 ? Math.max(0, restoredAt - focusLostStartTimestamp) : 0;
+  const awayDurationMs = focusLostStartTimestamp > 0 ? Math.max(0, now - focusLostStartTimestamp) : 0;
   focusLostStartTimestamp = 0;
 
-  roomService.notifyFocusRestored(awayDurationMs, restoredAt);
+  roomService.notifyFocusRestored(awayDurationMs, now);
+}
+
+export function resetFocusTrackerForTest(): void {
+  if (graceTimer) clearTimeout(graceTimer);
+  graceTimer = null;
+  isCurrentlyLost = false;
+  focusLostStartTimestamp = 0;
+  lastFocusEventTimestamp = 0;
 }

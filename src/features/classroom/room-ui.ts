@@ -1,10 +1,9 @@
-import { updateTeacherFeed, updateTeacherStats } from './teacher-view.ts';
+import { markStudentStarred, updateTeacherFeed, updateTeacherStats } from './teacher-view.ts';
 import { registerActions } from '../../app/actions.ts';
-import { roomService } from './room-service.ts';
-import type { RoomState } from './types.ts';
+import { escapeHtml } from '../../shared/escape.ts';
+import { roomService, type RoomState } from './room-service.ts';
 import { initFocusTracker } from './focus-tracker.ts';
 import { calculateStudentRank } from './ranking.ts';
-import { openRoomModal, closeRoomModal, handleJoinClick, handleCreateClick } from './room-modal.ts';
 import { initRoomAnswerEvents } from './room-answer-events.ts';
 import { initClassroomCardHook } from './card-hook.ts';
 
@@ -26,6 +25,14 @@ export function initRoomFeature(): void {
   roomService.subscribe((state) => {
     if (typeof document !== 'undefined') {
       document.body.classList.toggle('in-room', !!state.roomId);
+    }
+    if (!state.roomId) {
+      closeTeacherDrawer();
+      closeStudentDrawer();
+    } else if (state.isHost) {
+      closeStudentDrawer();
+    } else {
+      closeTeacherDrawer();
     }
     updateTopRoomPill(state);
     updatePauseOverlay(state);
@@ -58,10 +65,6 @@ function scheduleHeavyListRender(): void {
   }, Math.max(20, 120 - elapsed));
 }
 
-function escapeHtml(text: string): string {
-  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
 function updateTopRoomPill(state: RoomState): void {
   const pill = document.getElementById('topRoomPill');
   if (!pill) return;
@@ -75,13 +78,13 @@ function updateTopRoomPill(state: RoomState): void {
   if (state.isHost) {
     const students = Object.values(state.studentStats);
     const totalStudents = students.length;
-    const openFocusLostIds = new Set(
+    const openExitIds = new Set(
       state.feedItems
-        .filter((f) => f.type === 'FOCUS_LOST' && !f.returnedAt)
+        .filter((f) => (f.type === 'FOCUS_LOST' || f.type === 'LEAVE') && !f.returnedAt)
         .map((f) => f.studentId)
     );
     const offlineCount = students.filter(
-      (s) => !s.isOnline || openFocusLostIds.has(s.id)
+      (s) => !s.isOnline || openExitIds.has(s.id)
     ).length;
     const activeCount = Math.max(0, totalStudents - offlineCount);
 
@@ -165,13 +168,28 @@ function handleTabSwitch(tabName: string): void {
   }
 }
 
+function submitBroadcastAnnouncement(): void {
+  if (!roomService.isHost()) return;
+  const input = document.getElementById('inputBroadcastMsg') as HTMLInputElement | null;
+  const text = input?.value.trim();
+  if (!input || !text) return;
+  roomService.broadcastAnnouncement(text);
+  input.value = '';
+  const btn = document.querySelector<HTMLButtonElement>('[data-action="send-broadcast-message"]');
+  if (btn) {
+    const prev = btn.textContent;
+    btn.textContent = '✓ Gönderildi';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = prev;
+      btn.disabled = false;
+    }, 1200);
+  }
+}
+
 function setupRoomEvents(): void {
   if (typeof document === 'undefined') return;
   registerActions({
-    'open-room-modal': () => openRoomModal(),
-    'close-room-modal': () => closeRoomModal(),
-    'submit-room-join': () => handleJoinClick(),
-    'submit-room-create': () => handleCreateClick(),
     'toggle-teacher-drawer': () => toggleRoomDrawer(),
     'close-teacher-drawer': () => closeTeacherDrawer(),
     'close-student-drawer': () => closeStudentDrawer(),
@@ -186,23 +204,17 @@ function setupRoomEvents(): void {
     },
     'award-star': el => {
       if (!roomService.isHost() || !(el instanceof HTMLButtonElement) || !(el.dataset.id || el.dataset.name)) return;
-      const originalText = el.textContent;
+      const studentId = el.dataset.id || '';
+      const studentName = el.dataset.name || '';
+      markStudentStarred(studentId || studentName, 1400);
       el.textContent = '⭐ Gönderildi';
       el.disabled = true;
       setTimeout(() => {
-        el.textContent = originalText;
-        el.disabled = false;
-      }, 1200);
-      roomService.awardStarToStudent(el.dataset.id || '', el.dataset.name || '');
+        updateTeacherStats(roomService.getState());
+      }, 1450);
+      roomService.awardStarToStudent(studentId, studentName);
     },
-    'send-broadcast-message': () => {
-      if (!roomService.isHost()) return;
-      const input = document.getElementById('inputBroadcastMsg') as HTMLInputElement | null;
-      if (input && input.value.trim()) {
-        roomService.broadcastAnnouncement(input.value.trim());
-        input.value = '';
-      }
-    },
+    'send-broadcast-message': () => submitBroadcastAnnouncement(),
     'toggle-pause-room': () => {
       if (!roomService.isHost()) return;
       roomService.togglePauseRoom();
@@ -222,9 +234,17 @@ function setupRoomEvents(): void {
       document.querySelector<HTMLElement>('[data-action="welcome-home"]')?.click();
     },
   });
+
+  const broadcastInput = document.getElementById('inputBroadcastMsg');
+  broadcastInput?.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      submitBroadcastAnnouncement();
+    }
+  });
+
   document.addEventListener('click', event => {
     if (!(event.target instanceof HTMLElement)) return;
-    if (event.target.id === 'roomModalOverlay') closeRoomModal();
     if (event.target.id === 'teacherDrawerOverlay') closeTeacherDrawer();
     if (event.target.id === 'studentDrawerOverlay') closeStudentDrawer();
   });

@@ -1,28 +1,13 @@
-import type { RoomMessagePayload, RoomMessageType, StudentStats } from '../types.ts';
+import type { RoomMessageType } from '../types.ts';
 import type { RoomMessageHandler } from './context.ts';
 import { showRoomToast } from '../toast.ts';
 import { addFeedItem } from './feed.ts';
-
-function isOlderPeer(aJoinedAt: number, aId: string, bJoinedAt: number, bId: string): boolean {
-  if (aJoinedAt !== bJoinedAt) return aJoinedAt < bJoinedAt;
-  return aId.localeCompare(bId) < 0;
-}
-
-function mergePayloadStats(target: StudentStats, payload?: RoomMessagePayload): void {
-  if (!payload) return;
-  if (typeof payload.correctCount === 'number' && Number.isFinite(payload.correctCount) && payload.correctCount >= 0) {
-    target.correctCount = Math.max(target.correctCount, payload.correctCount);
-  }
-  if (typeof payload.incorrectCount === 'number' && Number.isFinite(payload.incorrectCount) && payload.incorrectCount >= 0) {
-    target.incorrectCount = Math.max(target.incorrectCount, payload.incorrectCount);
-  }
-  if (typeof payload.exitCount === 'number' && Number.isFinite(payload.exitCount) && payload.exitCount >= 0) {
-    target.exitCount = Math.max(target.exitCount, payload.exitCount);
-  }
-  if (typeof payload.totalAwayMs === 'number' && Number.isFinite(payload.totalAwayMs) && payload.totalAwayMs >= 0) {
-    target.totalAwayMs = Math.max(target.totalAwayMs, payload.totalAwayMs);
-  }
-}
+import {
+  isOlderPeer,
+  mergeOfflineStudentBySameName,
+  mergePayloadStats,
+  reconcileStudentReturn,
+} from './helpers.ts';
 
 export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHandler>> = {
   PEER_JOIN: (ctx, incoming) => {
@@ -37,12 +22,10 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
         const myPeer = ctx.participants.find((p) => p.id === ctx.peerId);
         const myJoinedAt = myPeer?.joinedAt ?? timestamp;
         if (isOlderPeer(theirJoinedAt, senderId, myJoinedAt, ctx.peerId)) {
-          // Karşıdaki Host benden daha eski -> kendimi öğrenciye düşür, onu tek Host yap
           ctx.demoteToStudent();
           for (const p of ctx.participants) p.isHost = false;
           allowedAsHost = true;
         } else {
-          // Ben daha eski Host'um -> yeni geleni öğrenci yap
           allowedAsHost = false;
         }
       } else {
@@ -56,6 +39,9 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
       }
     }
 
+    const wasAlreadyKnownStudent = Boolean(ctx.studentStats[senderId])
+      || (!allowedAsHost && mergeOfflineStudentBySameName(ctx, senderId, senderName, timestamp));
+
     if (!existingPeer) {
       ctx.participants.push({
         id: senderId,
@@ -65,6 +51,7 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
         lastSeenAt: timestamp,
       });
     } else {
+      existingPeer.name = senderName;
       existingPeer.isHost = allowedAsHost;
       existingPeer.joinedAt = Math.min(existingPeer.joinedAt, theirJoinedAt);
       existingPeer.lastSeenAt = timestamp;
@@ -87,18 +74,24 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
         };
       }
       mergePayloadStats(ctx.studentStats[senderId], msg.payload);
-    }
 
-    addFeedItem(ctx.feedItems, {
-      id: `${timestamp}_${senderId}_join`,
-      type: 'JOIN',
-      studentId: senderId,
-      studentName: senderName,
-      timestamp,
-    });
-
-    if (ctx.isHost && !allowedAsHost) {
-      showRoomToast('Katılım', `${senderName} katıldı.`, '🟢');
+      if (wasAlreadyKnownStudent) {
+        reconcileStudentReturn(ctx, senderId, senderName, timestamp, msg.payload);
+      } else {
+        addFeedItem(ctx.feedItems, {
+          id: `${timestamp}_${senderId}_join`,
+          type: 'JOIN',
+          studentId: senderId,
+          studentName: senderName,
+          timestamp,
+        });
+        if (ctx.isHost) {
+          showRoomToast('Katılım', `${senderName} katıldı.`, '🟢');
+        }
+        if ((msg.payload?.awayDurationMs ?? 0) > 0) {
+          reconcileStudentReturn(ctx, senderId, senderName, timestamp, msg.payload);
+        }
+      }
     }
 
     const hasAnyHost = ctx.participants.some((p) => p.isHost);
@@ -115,6 +108,7 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
       ? (msg.payload?.joinedAt ?? timestamp)
       : (existingPeer?.joinedAt ?? timestamp);
 
+    let changed = false;
     if (!existingPeer) {
       ctx.participants.push({
         id: senderId,
@@ -123,6 +117,7 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
         joinedAt: theirJoinedAt,
         lastSeenAt: timestamp,
       });
+      changed = true;
     }
     const targetPeer = ctx.participants.find((p) => p.id === senderId);
     if (!targetPeer?.isHost) {
@@ -138,10 +133,18 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
           lastSeenAt: timestamp,
           isOnline: true,
         };
+        changed = true;
       }
-      mergePayloadStats(ctx.studentStats[senderId], msg.payload);
+      if (mergePayloadStats(ctx.studentStats[senderId], msg.payload)) {
+        changed = true;
+      }
+      if (reconcileStudentReturn(ctx, senderId, senderName, timestamp, msg.payload)) {
+        changed = true;
+      }
     }
-    ctx.notify();
+    if (changed) {
+      ctx.notify();
+    }
   },
 
   PEER_LEAVE: (ctx, incoming) => {
@@ -153,14 +156,26 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
       stats.isOnline = false;
       stats.exitCount = (stats.exitCount || 0) + 1;
     }
-    addFeedItem(ctx.feedItems, { id: `${timestamp}_${senderId}_leave`, type: 'LEAVE', studentId: senderId, studentName: senderName, timestamp });
     if (ctx.isHost) {
-      showRoomToast('Ayrıldı', `${senderName} ayrıldı.`, '⚪');
+      const openExit = ctx.feedItems.find(
+        (f) => (f.type === 'FOCUS_LOST' || f.type === 'LEAVE') && f.studentId === senderId && !f.returnedAt
+      );
+      if (!openExit) {
+        addFeedItem(ctx.feedItems, {
+          id: `${timestamp}_${senderId}_leave`,
+          type: 'LEAVE',
+          studentId: senderId,
+          studentName: senderName,
+          timestamp,
+        });
+        showRoomToast('Ayrıldı', `${senderName} ayrıldı.`, '⚪');
+      }
     }
     ctx.notify();
   },
 
   FOCUS_LOST: (ctx, incoming) => {
+    if (!ctx.isHost) return;
     const { senderId, senderName, timestamp } = incoming;
     const openLost = ctx.feedItems.find(
       (f) => f.type === 'FOCUS_LOST' && f.studentId === senderId && !f.returnedAt
@@ -169,7 +184,9 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
     const stats = ctx.studentStats[senderId];
     if (stats) {
       stats.isOnline = false;
-      stats.exitCount = (stats.exitCount || 0) + 1;
+      if (!openLost) {
+        stats.exitCount = (stats.exitCount || 0) + 1;
+      }
     }
 
     if (!openLost) {
@@ -180,41 +197,25 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
         studentName: senderName,
         timestamp,
       });
-      if (ctx.isHost) {
-        showRoomToast('Ayrıldı', `${senderName} uygulamadan ayrıldı.`, '⚪');
-      }
+      showRoomToast('Ayrıldı', `${senderName} uygulamadan ayrıldı.`, '⚪');
       ctx.notify();
     }
   },
 
   FOCUS_RESTORED: (ctx, incoming) => {
+    if (!ctx.isHost) return;
     const { msg, senderId, senderName, timestamp } = incoming;
-    const lastLost = ctx.feedItems.find(
-      (f) => f.type === 'FOCUS_LOST' && f.studentId === senderId && !f.returnedAt
-    );
-    const durationMs = Number.isFinite(msg.payload?.durationMs) && (msg.payload?.durationMs ?? 0) > 0
-      ? (msg.payload?.durationMs ?? 0)
-      : (lastLost ? Math.max(0, timestamp - lastLost.timestamp) : 0);
-
     const stats = ctx.studentStats[senderId];
     if (stats) {
-      stats.isOnline = true;
-      if (durationMs > 0) {
-        stats.totalAwayMs = (stats.totalAwayMs || 0) + durationMs;
-      }
+      mergePayloadStats(stats, msg.payload);
     }
-
-    if (lastLost) {
-      lastLost.returnedAt = timestamp;
-      if (ctx.isHost) {
-        const sec = Math.round(durationMs / 1000);
-        showRoomToast('Yeniden Katıldı', `${senderName} geri döndü (${sec} sn).`, '🟢');
-      }
+    if (reconcileStudentReturn(ctx, senderId, senderName, timestamp, msg.payload)) {
       ctx.notify();
     }
   },
 
   HELP_CALL: (ctx, incoming) => {
+    if (!ctx.isHost) return;
     const { senderId, senderName, timestamp } = incoming;
     const openHelp = ctx.feedItems.find(
       (f) => f.type === 'HELP_CALL' && f.studentId === senderId && !f.resolved
@@ -228,9 +229,7 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
         timestamp,
         resolved: false,
       });
-      if (ctx.isHost) {
-        showRoomToast('Yardım Çağrısı', `${senderName} el kaldırdı! ✋`, '✋');
-      }
+      showRoomToast('Yardım Çağrısı', `${senderName} el kaldırdı! ✋`, '✋');
       ctx.notify();
     }
   },
@@ -252,6 +251,7 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
     }
 
     const currentStats = ctx.studentStats[senderId];
+    reconcileStudentReturn(ctx, senderId, senderName, timestamp, msg.payload);
 
     if (
       msg.payload &&

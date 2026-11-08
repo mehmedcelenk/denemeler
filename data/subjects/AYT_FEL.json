@@ -903,7 +903,7 @@
     "id": 52361,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 46,
-    "soru": "",
+    "soru": "Çok uzak bir diyarda kimsenin yaklaşmaya cesaret edemediği bir Kara Orman varmış. Ormanın yakınında yaşayan köylüler arasında ormanın tepesinde üç kollu bir devin yaşadığına ve rüzgârlı günlerde gürültülü bir şekilde konuştuğuna dair hikâyeler anlatılırmış. Günlerden bir gün şiddetli bir fırtına kopmuş ve devin sesi o kadar çok çıkmaya başlamış ki evlerden duyulur olmuş. Çocuklarının çok korktuğunu gören köylüler, köy meydanında toplanmışlar ve bu işe bir çözüm bulmak için Kara Orman'ın yolunu tutmuşlar. Ormanın zirvesine yaklaştıklarında bir de ne görsünler, devasa bir rüzgâr türbini.\n\nBu hikâyeden \"nelik, gerçeklik ve kimlik\" kavramlarına sırasıyla aşağıdakilerden hangisi örnek verilebilir?",
     "secenekler": {
       "A": "Üç kollu dev, Kara Orman'daki rüzgâr türbini, rüzgâr türbini",
       "B": "Rüzgâr türbini, Kara Orman'daki rüzgâr türbini, üç kollu dev",
@@ -912,7 +912,7 @@
       "E": "Kara Orman'daki rüzgâr türbini, üç kollu dev, rüzgâr türbini"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Nelik, Gerçeklik, Kimlik-İçlem ve Kaplam",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -923,7 +923,7 @@
     "id": 52362,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 47,
-    "soru": "",
+    "soru": "Aşağıdakilerin hangisinde, kavram çeşitlerine uygun örnekler doğru verilmiştir?\n\n| | Kolektif | Olumsuz | Soyut |\n|---|---|---|---|\n| A) | Doğa | Yerli | Erdem |\n| B) | Tenisçi | Güvensiz | Kitap |\n| C) | Takım | Bulutlu | Toprak |\n| D) | Üniversite | Kararsız | Bardak |\n| E) | Sendika | Kaygısız | Kötülük |",
     "secenekler": {
       "A": "Doğa - Yerli - Erdem",
       "B": "Tenisçi - Güvensiz - Kitap",
@@ -932,7 +932,7 @@
       "E": "Sendika - Kaygısız - Kötülük"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kavram Çeşitleri",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -943,7 +943,7 @@
     "id": 52363,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 48,
-    "soru": "",
+    "soru": "Varlıkların, sahip olması zorunluluk gerektirmeyen ancak yine de sahip oldukları ve başka varlıklarda da görülebilen bazı özellikleri vardır. Örneğin \"düşünmek\" insan için onu diğer canlılardan ayırmaya yarayan zorunlu bir özelliktir. Oysa \"koşmak\" veya \"yüzmek\" hem diğer canlılarda görülebilen hem de bunları yapamasak da yine insan olmaya devam edeceğimiz özelliklerdir.\n\nBu parçada aşağıdaki \"beş tümel\"den hangisi vurgulanmaktadır?",
     "secenekler": {
       "A": "Cins",
       "B": "Tür",
@@ -952,7 +952,7 @@
       "E": "İlinti"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Beş Tümel",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -963,7 +963,7 @@
     "id": 52364,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 49,
-    "soru": "",
+    "soru": "Felsefenin gelişiminde onu çok farklı şekillerde algılayan ve kullanan birçok medeniyetin katkısı olmuştur. Kuşkusuz bunlar arasında en büyük pay Antik Yunan medeniyetine aittir. Diğer medeniyetlerde genellikle felsefe, halkın dinî gereksinimlerini besleyen ve zaman zaman da pratik bilgiler sağlayan bir özelliğe sahip olmuştur. Antik Yunan'da ise akıl yoluyla elde edilmiş, temellendirilmiş bilgiler bir birlik içinde derlenip sistemleştirilmiştir. Bu anlamda onlar, doğruya ve bilgiye sadece doğrunun ve bilginin kendisi için yönelerek bilinen felsefenin temellerini atmışlardır.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Felsefe, rasyonel ve sistematik olduğunda felsefe olmuştur.",
       "B": "Felsefe pratik amaçlarla kullanılmamalıdır.",
@@ -983,7 +983,7 @@
     "id": 52365,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 50,
-    "soru": "",
+    "soru": "Hemen hemen herkesin felsefi problemler üzerine düşündüğü zamanlar olmuştur. Zihnimizin bedenimiz olmadan var olup olmayacağını veya yaşadığımız her şeyin bir rüya olup olmadığını kim merak etmemiştir? Felsefi sorular son derece ilginçtir ancak hiç de kolay değildir. Onları, daha önce aynı sorunları ele almış başka insanların görüşlerinden faydalanmadan sadece kendi kendimize düşünmeye çalışmak yıldırıcı bir uğraştır. Bu biraz başka dağcıların deneyimlerinden yararlanmadan ve herhangi bir ekipman kullanmadan düz bir kayaya tırmanmak gibidir. Böyle bir girişimde yerden birkaç metre sonra bu kayaya \"yapışıp kalma\" ihtimalimiz hayli fazladır.\n\nBu parçada felsefi düşüncenin hangi özellikleri üzerinde durulmaktadır?",
     "secenekler": {
       "A": "Refleksif olma - Evrensel olma",
       "B": "Sorgulayıcı olma - Yığılımlı olma",
@@ -1003,7 +1003,7 @@
     "id": 52366,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 51,
-    "soru": "",
+    "soru": "Nietzsche, “Filozoflar, kendilerine verilen kavramları, yalnızca onları temizleyip cilalamak üzere kabullenmekle yetinmemeli, onları üretmek, yaratmak, ortaya koymakla işe başlamalı ve insanları bu kavramlara başvurmaya ikna etmelidir.” sözleriyle kendisinden önceki felsefe yapma biçimlerini de ciddi anlamda sorgular. Ona göre kavramlar koşulsuz güvenilecek mucizevi varlıklar değildir. Bir filozofun yapması gereken şey, kavramlar konusunda güvenin yerine güvensizliği koymaktır.\n\nNietzsche'nin bu düşünceleri dikkate alındığında aşağıdakilerden hangisi bir filozoftan beklenebilecek bir yaklaşımdır?",
     "secenekler": {
       "A": "Hakikatin yapısını keşfetmeye çalışmalıdır.",
       "B": "Kullandığı bütün kavramları kendisi yaratmalıdır.",
@@ -1012,7 +1012,7 @@
       "E": "Belirsiz kavramları netleştirmelidir."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Felsefenin Doğası ve İşlevi",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1023,7 +1023,7 @@
     "id": 52367,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 52,
-    "soru": "",
+    "soru": "I. Bireyin çocukluğunda yaşadığı travmatik olayların, yetişkinliğinde yaşadığı fobilerle ilişkisi var mıdır?\nII. Bir iş yerinde çalışanlar arasındaki çatışmalar, çalışanların iş yerine bağlılıklarını olumsuz yönde etkiler mi?\nIII. Yeni doğmuş maymunların bir süre fiziksel temastan yoksun kalması maymunların yetişkinlikteki tepkilerini etkiler mi?\n\nYukarıdaki sorulardan hangileri, psikoloji biliminin konusu kapsamındadır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1043,7 +1043,7 @@
     "id": 52368,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 53,
-    "soru": "",
+    "soru": "Sosyolojiyle uğraşmak sıradan bir bilgi edinme sürecinden ibaret değildir. Sosyoloji olaylara daha geniş bir açıdan bakmamıza ve kendimizi gündelik hayatın sıradanlığından uzaklaştırmamıza olanak verir. Anladığımızı veya bildiğimizi zannettiğimiz şeyleri sosyoloji aracılığıyla yeniden inceleyebiliriz. Sosyolojinin amacı sahip olduğumuz bilgileri \"düzeltmek\" veya yanlış bildiklerimizin yerine sorgulanamaz doğrular koymak değildir. Sosyolojik düşünmek, bugüne kadar tartışmasız kabul edilen doğruları eleştirme, kesin olduğu iddia edilen görüşleri çözümleme ve sorgulama alışkanlığı kazanılmasını sağlar.\n\nBu parçadan sosyolojik düşünmeyle ilgili aşağıdaki yargıların hangisine ulaşılamaz?",
     "secenekler": {
       "A": "İnsanların aşina olduğu durumlara eleştirel gözle yeniden bakmaya yarar.",
       "B": "Gündelik hayatta bireyler tarafından yinelenen davranışları sorgular.",
@@ -1063,7 +1063,7 @@
     "id": 52369,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 54,
-    "soru": "",
+    "soru": "Felsefi düşünüş, kişinin doğru olduğunu varsaydığı gerçeklere ve nicedir destekleyip onun için sarsılmaz gerçekler hâline gelen düşüncelere kuşkuyla baktığı an başlar. Nitekim Sokrates de insanlar ulu orta adalet üstüne konuşuyorken onlara yaklaşıp alçak sesle: “Nedir o sözünü ettiğiniz şey?” diyordu. “Hayat ve ölüm sorunlarını sana böyle kolayca çözümleyiveren, o soyut sözlerin anlamını söyler misin bana? Onur, erdem, ahlak, yurtseverlik dediğin nedir? ‘Kendim’ dediğin nedir?” diye sorarak varsayılan doğrulara yönelik bir irdeleme yürütmekteydi.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Doğru bilgiye ulaşmak için zihnin akılcı ve sistemli olması gerekir.",
       "B": "Hakikate ulaşmanın en iyi yolu genel kabulleri reddetmektir.",
@@ -1072,7 +1072,7 @@
       "E": "Felsefe, mutlak kavramlara ulaşana kadar sorgulamayı sürdürür."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Felsefi Düşüncenin Özellikleri",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1083,7 +1083,7 @@
     "id": 52370,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 55,
-    "soru": "",
+    "soru": "Bir araştırmacı, televizyonda şiddet sahneleri izlemenin çocuklarda vurma, tekmeleme gibi saldırgan davranışları artırdığını düşünmektedir. Bu düşüncesini doğrulamak amacıyla tasarladığı deneyde araştırmacı, bir grup çocuğu bir deney odasına alır. Burada çocukların yarısı şiddet içerikli sahnelerin bulunduğu, diğer yarısı ise şiddet içerikli olmayan sahnelerin bulunduğu birer kısa film izler. Filmin ardından araştırmacı, her iki gruptaki çocukların deney odasında bulunan bir oyuncak bebeğe kaç kez vurduklarını gözlemler.\n\nBu araştırmada bağımlı değişken aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Çocuğun araştırmacıyla olan etkileşimi",
       "B": "Çocuğun deney odasında geçirdiği zaman",
@@ -1092,7 +1092,7 @@
       "E": "Çocuğun ne kadar süre televizyon izlediği"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Psikoloji Araştırmalarında Uygulanan Yöntem ve Teknikler",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1103,7 +1103,7 @@
     "id": 52371,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 56,
-    "soru": "",
+    "soru": "Birey olarak hepimiz toplumun bir parçası olduğumuzdan toplumsal sorunların dışında yer almamız mümkün gözükmemektedir. Dolayısıyla göçün neden ve sonuçlarıyla ilgili hemen herkesin bir fikri olabilir. Örneğin Anadolu'dan İstanbul'a taşınan biri göç etmesinin nedenini kendi deneyimlerinden hareketle işsizlik olarak belirtebilir. Oysa ki göç sadece işsizlikle açıklanabilecek bir sosyal olgu değildir. Bu nedenle sosyolojinin bireysel kanıların ötesine geçen bir kavrayışla toplumu incelediğini söylemek mümkündür.\n\nBu parçada sosyolojiyle ilgili aşağıdakilerden hangisi vurgulanmaktadır?",
     "secenekler": {
       "A": "Bilimsel yöntemler dışında elde edilen verilere itibar etmez.",
       "B": "Toplumsal olayları tek tek ele alarak genellemelerden kaçınır.",
@@ -1123,7 +1123,7 @@
     "id": 52372,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 57,
-    "soru": "",
+    "soru": "Yazarlar; eserlerinde karakterlerini, onların duygu durumlarını ya da yaşanan olayları betimlerken etkileyici olmak için birlikte kullanılması uygun olmayan zıt anlamlı sözcükleri bir arada kullanarak oksimoron oluşturur. Oysa dikkatli bir okuyucu mantıksal ilkelere ve tanımlama kurallarına aykırı olan bu ifadeleri hemen fark edebilir. Örneğin \"İlerlemiş yaşına rağmen sapasağlam olan yetmişlik bir delikanlı, sonsuzluğun sınırında hiç kimsenin duymadığı ama derinden hissettiği sessiz çığlıklarıyla etrafına seslenir, ne var ki kimse bu adamı ne tanır ne görür ne de işitir.\" ifadesi birden fazla oksimoron içermektedir.\n\nBu durumda oksimoron, mantıkta\n\nI. özdeşlik,\n\nII. çelişmezlik,\n\nIII. üçüncü hâlin imkânsızlığı,\n\nIV. yeter-sebep\n\nakıl ilkelerinden hangilerine aykırıdır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1143,7 +1143,7 @@
     "id": 52373,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 58,
-    "soru": "",
+    "soru": "Felsefe, konusu \"her şey\" olan bir disiplindir. Bilimler; doğa, devlet, dil, tarih gibi kendi belirli ve sınırlı alanlarını incelemeyi görevleri olarak bilirlerken felsefe belirli bir bilimin yoğunlaşmış ve sınırlanmış düşüncelerini alarak daha geniş bir bağlam içinde yeniden değerlendirir ve bütünlük içindeki yerine oturtur. Böylece felsefe, bilimler arasındaki ortaklıkları bulup çıkarır ve bunun yanında, bilimlerin vardığı sonuçları ilişkilendirip geniş bir açı içinde birleştirerek bütünlük içinde bir dünya görüşü oluşturur. Bu nedenle felsefenin, varoluşu bütünlüğü içinde kavraması ve araştırması onu diğer alanlardan ayrı bir yere koyar.\n\nBu parçada felsefenin hangi özelliği vurgulanmaktadır?",
     "secenekler": {
       "A": "Eleştirel olma",
       "B": "Sistemli olma",
@@ -1163,7 +1163,7 @@
     "id": 52374,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 59,
-    "soru": "",
+    "soru": "Psikoloji araştırmalarında kullanılan deneysel yöntemle ilgili aşağıdaki bilgilerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Sebep-sonuç ilişkisini ortaya koymayı hedefler.",
       "B": "Değişkenler arasındaki ilişkinin düzeyini ve yönünü belirlemeyi amaçlar.",
@@ -1172,7 +1172,7 @@
       "E": "Deneyde etkisi araştırılan değişken, bağımsız değişkendir."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Psikoloji Araştırmalarında Uygulanan Yöntem ve Teknikler",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1183,7 +1183,7 @@
     "id": 52375,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 60,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi özdeşlik ilkesine uygun bir örnektir?",
     "secenekler": {
       "A": "Tek yumurta ikizi olan Ali ve Veli'yi kimse birbirinden ayıramıyor.",
       "B": "Ünlü markanın çantasını öyle taklit etmişler ki sahibi gelse ayırt edemez.",
@@ -1203,7 +1203,7 @@
     "id": 52376,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 61,
-    "soru": "",
+    "soru": "Bir felsefe öğretmeni çalıştığı okulda boş bir sınıfı felsefe öğreniminde kullanılacak materyaller ile düzenlemek ister. Öğrencilerine \"Dersi daha iyi anlayabilmeniz için bu odanın içinde belirli bir kritere göre dört ayrı bölüm oluşturalım ve filozofların isim kartlarını uygun oldukları bölümlere yerleştirelim.\" der. Buna göre sınıfta oluşturulan bölümler ve filozof isim kartları aşağıdaki gibidir:\n\n1. Bölüm: Thales, Anaksimenes, Parmenides\n\n2. Bölüm: Aquinalı Thomas, Ockhamlı William, İbn Rüşd\n\n3. Bölüm: Descartes, Spinoza, Hobbes\n\n4. Bölüm: Sartre, Karl Popper, Edmund Husserl\n\nBu bölümlerde yer alan filozoflar aşağıdakilerden hangisine göre yerleştirilmiştir?",
     "secenekler": {
       "A": "Yaşadıkları coğrafyaya",
       "B": "Önem derecelerine",
@@ -1223,7 +1223,7 @@
     "id": 52377,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 62,
-    "soru": "",
+    "soru": "Özdeşlik, çelişmezlik, üçüncü hâlin imkânsızlığı ve yeter-sebep ilkeleri mantıkta temel akıl ilkeleri olarak kabul edilir.\n\nBuna göre aşağıdakilerden hangisi bu ilkelere uygun bir örnek değildir?",
     "secenekler": {
       "A": "Ya mutlusundur ya da değilsindir.",
       "B": "Elma elmadır, armut da armut.",
@@ -1243,7 +1243,7 @@
     "id": 52378,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 63,
-    "soru": "",
+    "soru": "Elif ve Kadir arasında geçen bir tartışma şu diyalogla sonlanır:\n\nElif: Tamam tamam, sen haklısın.\n\nKadir: Haklı olduğumu söylediğine göre bu tartışmanın galibi ben oldum.\n\nElif: Doğruyu söylemek gerekirse tartışma biçimin yüzünden haklısın demeye mecbur kaldım.\n\nKadir: Nasıl tartışıyormuşum ki ben?\n\nElif: İlk olarak konuyu yeterince bilmediğimi söyledin sonra seçtiğim sözcüklere takıldın. Ben sinirlenmeye başlayınca da beni öfkeli biri olmakla suçladın ve en sonunda da hiçbir gerekçe sunmadan fikrimin doğru olmadığını iddia ettin. Haklı olmak senin için bu kadar önemliyse fikirlerimi argümanlarla geçersiz kılmaya çalışman daha doğru olmaz mı?\n\nBu diyalogda Kadir, tartışma esnasında aşağıdaki yöntemlerden hangisine başvurmamıştır?",
     "secenekler": {
       "A": "Ana fikri çürütme",
       "B": "Görüşü yalanlama",
@@ -1252,7 +1252,7 @@
       "E": "Yaftalama yapma"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Düşünme ve Dil İlişkisi",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1263,7 +1263,7 @@
     "id": 52379,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 64,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi tümdengelime dayalı bir akıl yürütme biçimi değildir?",
     "secenekler": {
       "A": "Tüm A'lar B'dir, X bir A'dır. O hâlde X bir B'dir.",
       "B": "Şimdiye kadar çalıştığım tüm okul müdürleri erkekti. O hâlde bütün okul müdürleri erkektir.",
@@ -1283,7 +1283,7 @@
     "id": 52380,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 65,
-    "soru": "",
+    "soru": "Determinist evren modelinde gerçeklik, nedenin sonuç üzerindeki istisnasız etkisiyle ifade edilir. Yani eğer başlangıç koşulları ve fizik yasaları hakkında yeterli bilgiye sahipseniz bilardo masasında, topa vurmadan önce, topların birbirlerine hangi kuvvetle çarpacağını, topların hareket yönlerini ve masanın neresinde duracağını öngörebilirsiniz. Bilginiz yeterli ise sizin için masada hiçbir belirsizlik yoktur. Burada belirsizlik, sizin gerçekliği kuşatan ve belirleyen tüm koşulları bilmeniz veya bilmemeniz arasındaki farktan doğmaktadır.\n\nBu parçada söz edilen belirsizliğin nedeni aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Ön kabullerin ispatlanamazlığı",
       "B": "Epistemik eksiklik",
@@ -1292,7 +1292,7 @@
       "E": "Kuramsal hatalar"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Bilgi Felsefesinin Konusu ve Bilginin İmkânı Problemi",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1303,7 +1303,7 @@
     "id": 52381,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 66,
-    "soru": "",
+    "soru": "Bazı insanlar, kişisel bilgi dağarcığını yalnızca kendi deneyimleriyle oluştururlar ve bunların gerçeklikle uyuşup uyuşmadığını sınamakla pek ilgilenmezler. Bu insanlar herhangi bir yargıyı doğru saymak için başka ölçütleri dikkate alırlar: İlk olarak, karşılarına çıkan yeni yargının önceden sahip olduklarıyla çelişip çelişmediğine bakarlar. Çelişmiyorsa, bu yargıyı benimsemenin işlerini kolaylaştırıp kolaylaştırmayacağını anlamaya çalışırlar. Bunu da başarıyorsa, içinde yaşadıkları toplumun buna karşı çıkıp çıkmayacağını kontrol ederler. Bu ölçütlerin sıralaması zaman zaman değişse de, doğru sayılan yargı kümesinin büyük kısmı işte böyle oluşur.\n\nBu parçada sözü edilen insanlar bilgilerini oluştururken sırasıyla aşağıdaki ölçütlerden hangilerine başvurmaktadır?",
     "secenekler": {
       "A": "Uygunluk - Tutarlılık - Yarar",
       "B": "Apaçıklık - Tümel uzlaşım - Yarar",
@@ -1323,7 +1323,7 @@
     "id": 52382,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 67,
-    "soru": "",
+    "soru": "Bilgi ve enformasyon kavramları genellikle eş anlamlı olarak kullanılsa da bu kullanım oldukça yanıltıcıdır. Enformasyon, insan bilgisine temel oluşturan bilişsel bir ham maddeye işaret ederken bilgi ise \"bilmek\" fiilinin işaret ettiği üzere bir eylemin ürünü olan zihinsel bir durumdur. Örneğin herhangi bir konu hakkında kitaplardan, İnternet'ten veya kişilerden enformasyon parçaları elde edebiliriz ama bunların gerçekliğin taşıyıcısı olup olmadığını veya başka enformasyonlarla nasıl ilişkilendirilebileceği türünden soruları yanıtlamadan, yani kişi çoklu bir zihinsel işleyiş sürecinin aktif öznesi olmadan, bu enformasyonlara bilgi diyemeyiz.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Enformasyon pratik, bilgi ise kuramsal bir etkinliktir.",
       "B": "Doğruluk değerine sahip enformasyon, bilgi olarak adlandırılır.",
@@ -1343,7 +1343,7 @@
     "id": 52383,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 68,
-    "soru": "",
+    "soru": "Alışma ve duyarlılaşma kavramlarıyla ilgili;\n\nI. Alışma ve duyarlılaşmadaki ortak unsur uyarıcıların tekrarıdır.\n\nII. Alışmada uyarıcıya verilen tepki artarken duyarlılaşmada azalır.\n\nIII. Duyarlılaşma hâlinde kişi, ilgili uyarıcıya karşı daha hassas hâle gelir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1352,7 +1352,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Psikolojinin Temel Süreçleri - Uyarılmanın Davranışlara Etkisi: Alışma ve Duyarlılaşma",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1363,7 +1363,7 @@
     "id": 52384,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 69,
-    "soru": "",
+    "soru": "Nesneler, insanlara göründüğü gibidir. Yani insanlar nesneleri nasıl algılıyorsa öyledir. Nesnelerin farklı göründüğü iki insandan biri, diğerini algısında yanıldığına ikna edemez. Çünkü bir şeyin bir insana görünme biçimi o insan için o şeyin bir var olma biçimini ifade eder. Bu demektir ki bir insan için kırmızı renkte olan bir nesne, renk körü başka bir insan için yeşil renkte olabilir. Yani nesne kırmızı iken yeşil görünüyor değildir; renk körü için nesne bizatihi yeşil bir nesnedir ve hiç kimsenin bu insana nesnenin yeşil olmadığını söyleme hakkı yoktur.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Doğruluk algı durumlarına göre değişir.",
       "B": "Varlık bilinemeyeceği için doğru diye bir şey yoktur.",
@@ -1372,7 +1372,7 @@
       "E": "Bilgimizin temelinde herkes için geçerli olan doğrular vardır."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bilgi Felsefesi",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1383,7 +1383,7 @@
     "id": 52385,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 70,
-    "soru": "",
+    "soru": "Çok sayıda bilgisayarın bulunduğu çalışma odasında ani bir elektrik kesintisi sonucu bütün bilgisayarlar aynı anda kapanır. Bu odada çalışan personel bilgisayarların ne kadar yüksek sesle çalıştığını o anda fark eder.\n\nBuna göre personelin elektrik kesintisinden önce bilgisayarların ne kadar yüksek sesle çalıştığının farkında olmaması aşağıdaki kavramlardan hangisiyle açıklanabilir?",
     "secenekler": {
       "A": "Alışma",
       "B": "Duyarlılaşma",
@@ -1392,7 +1392,7 @@
       "E": "Ayırt etme"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Psikolojinin Temel Süreçleri - Uyarılmanın Davranışlara Etkisi: Alışma ve Duyarlılaşma",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1403,7 +1403,7 @@
     "id": 52386,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 71,
-    "soru": "",
+    "soru": "\"Ne yapmam gerekir?\" sorusu, \"Kendimi hangi hikâye ya da hikâyelerin bir parçası olarak görüyorum?\" sorusunun cevabına bağlıdır. Yani topluma, bize verilmiş karakterle ve bize biçilmiş rollerle katılırız. Birinin oğlu veya kızıyım, bir başkasının yeğeni veya amcası, bu veya şu şehrin yurttaşıyım, bir kabileye veya ulusa aitim. Buna göre benim için iyi olan, bu rolleri taşıyan için de iyi olmak zorundadır. Böyle biri olarak ailemin, şehrimin, kabilemin ve ulusumun geçmişinden çeşitli borçluluklar, meşru beklentiler ve yükümlülükler alırım.\n\nBu parçada aşağıdaki sorulardan hangisine cevap aranmaktadır?",
     "secenekler": {
       "A": "Bizi biz yapan karakterimiz mi, yoksa bireysel kararlarımız mı?",
       "B": "Davranışları doğru yapan mutlak olana uygunluk mudur?",
@@ -1412,7 +1412,7 @@
       "E": "Davranışlarımızın temelinde aslında ne vardır?"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplumsal Statü, Rol, Saygınlık",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1423,7 +1423,7 @@
     "id": 52387,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 72,
-    "soru": "",
+    "soru": "Newton olmasaydı veya bilimle ilgilenmeseydi Evrensel Çekim Kanunu hep sır olarak mı kalacaktı veya elbet birisi bu kanunu keşfedecek miydi? Örneğin gazların hacim ve sıcaklık ilişkisiyle ilgili yasalar J. Charles ve ondan daha sonra gelen J. Gay-Lussac tarafından birbirinden bağımsız olarak bulundu. Bu nedenle yasalar Charles veya Gay-Lussac kanunları olarak ifade edilir. Oysa Mimar Sinan Selimiye'yi tasarlayıp yapmasaydı, bu eser hiç olmayacaktı. İşte felsefi eserler de sanat eserleri gibidir. Eğer Hobbes, Leviathan adlı eserini yazmasaydı, bu eseri bir başkası yazamayacaktı.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Felsefeyi, bilim ve sanattan farklı kılan, hayatı sorgulamasıdır.",
       "B": "Bilim evreni keşfeder, sanat ise evrendeki güzelliklerin peşindedir.",
@@ -1432,7 +1432,7 @@
       "E": "Sanat ve felsefe, duygu temelinde gerçekleştirilen etkinliklerdir."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Bilimin Değeri-Bilim Felsefe İlişkisi-Bilim ve Hayat İlişkisi",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1443,7 +1443,7 @@
     "id": 52388,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 73,
-    "soru": "",
+    "soru": "Algı, büyük oranda algılayanın kendisinden kaynaklanan özelliklerden etkilenir. Algılayan kişinin kişilik özellikleri, içinde bulunduğu ortam/çevre, tutumları, deneyimleri ve ihtiyaçları/güdüleri uyaranları nasıl algılayacağını etkiler.\n\nAşağıdakilerin hangisinde algıyı etkileyen faktöre doğru örnek verilmemiştir?",
     "secenekler": {
       "A": "Kişilik özellikleri - Kaygılı bir yapıya sahip birinin bütün yüksek sesleri tehlike olarak algılaması",
       "B": "Ortam/Çevre - Beyaz önlüklü birinin hastanede doktor, okulda öğretmen olarak algılanması",
@@ -1452,7 +1452,7 @@
       "E": "İhtiyaçlar/Güdüler - Bir insanın karnı açken önünden geçtiği fırından gelen ekmek kokusunu alırken karnı tokken bu kokuyu fark etmemesi"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Algıyı Etkileyen Faktörler - Duyum ve Algı Arasındaki Farklar",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1463,7 +1463,7 @@
     "id": 52389,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 74,
-    "soru": "",
+    "soru": "Bizi yüksek statü arayışına yönelten karşı konulmaz isteklerin neler olduğu konusunda yaygın birtakım yargılar vardır. İlk akla gelenler para, ün ve itibar edinme hırsıdır. Alain de Botton, Statü Endişesi adlı kitabında bu arayışın asıl sebebinin sevilme ihtiyacı olduğunu söyler. Seviliyorsak eğer varlığımızın farkına varılır, görüşlerimiz dinlenir, başarısızlıklarımıza hoşgörüyle bakılır, ihtiyaçlarımız karşılanır. Böylece ilgi odağı olan bizler kabul görmenin hazzını yaşar, yaşamın keyfine varırız. Statümüzden dolayı sevgi gösterenlerin beklentileri farklı olabilir ama yine de sevilen kişi başkalarının iyi niyetli ve sevgi dolu bakışları altında korunuyor olmanın huzurunu duyar.\n\nBu parçaya göre statü arayışında aşağıdakilerden hangisi amaçlanmaktadır?",
     "secenekler": {
       "A": "Bulunulan statünün prestijini artırmak",
       "B": "Doğuştan gelen statüleri değiştirmek",
@@ -1472,7 +1472,7 @@
       "E": "Sahip olunan statüler arasından anahtar statü belirlemek"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplumsal Statü, Rol, Saygınlık",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1483,7 +1483,7 @@
     "id": 52390,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 75,
-    "soru": "",
+    "soru": "Zeki'nin okulda hangi kulübü seçebileceğiyle ilgili sınıf arkadaşları arasında şöyle bir konuşma geçer:\n\nMelisa: Beren, Harun ve Ali okulumuza bu sene nakil yoluyla gelen öğrenciler. Hepsi de kütüphanecilik kulübünü seçti. Zeki de nakil yoluyla geldiğine göre o da kütüphanecilik kulübünü seçecektir. Böylece okulumuza bu yıl nakil yoluyla gelen tüm öğrenciler kütüphanecilik kulübüne katılmış olacak.\n\nHande: Zeki'nin en yakın arkadaşı mahalleden tanıdığı Uğur değil mi? Her ikisi de fotoğraf çekmeyi çok seviyor. Uğur fotoğrafçılık kulübünde olduğuna göre Zeki de kesin fotoğrafçılık kulübünü seçecektir.\n\nAkın: Lütfen yapmayın arkadaşlar! Tüm Karadenizliler doğayı çok sever. Zeki de Karadenizli olduğuna göre doğa kulübünü seçecektir.\n\nBu konuşmada Melisa, Hande ve Akın'ın kullandığı akıl yürütme türü sırasıyla aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Tümevarım - analoji - tümdengelim",
       "B": "Analoji - tümdengelim - tümevarım",
@@ -1503,7 +1503,7 @@
     "id": 52391,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 76,
-    "soru": "",
+    "soru": "Belirlenimcilik (determinizm), evrende meydana gelen bütün olayların daha önce gerçekleşmiş başka olayların sonuçları olduğunu, dolayısıyla olaylar arasında neden sonuç bağıntısı bulunduğunu savunur. Bu bakımdan gelecekte ortaya çıkacak olaylar, geçmişte ortaya çıkan olayların kesinliği ve değiştirilemezliği oranında kesin ve değiştirilemezdir. William James'in \"demirden evren\" dediği tam da böyle bir evrendir. Evrendeki her şey olması gerektiği gibi olur. Her sonuç, zorunlu ve değiştirilemez olan nedene bağlıdır.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "İnsan demirden evrende özgür iradeye sahip olmadığından eylemlerinden sorumlu tutulamaz.",
       "B": "İnsanın hiçbir eylemi özgür seçimlerinin sonuçlarından bağımsız değildir.",
@@ -1512,7 +1512,7 @@
       "E": "İnsan eylemleri nedensellik dışında olduğu için kişiye seçim sorumluluğu yükler."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Ahlak Felsefesinde Özgürlük ve Sorumluluk",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1523,7 +1523,7 @@
     "id": 52392,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 77,
-    "soru": "",
+    "soru": "Uzun süredir aktif olarak araç kullanan bir şoför biraz ileride trafik lambasını fark eder ve kırmızı ışığın yandığını görerek yavaşlar. Trafik lambasının ışığı kırmızıdan sarıya döner ancak sonrasında yeşil ışık yanmaz. Şoför trafik lambasının bozuk olduğunu anlar ve geçiş hakkının kendisinde olduğunu bilerek yoluna devam eder.\n\nTrafik lambasının bozuk olmasına rağmen şoförün sıradaki ışığın yeşil olacağını bilmesi, aşağıdaki algı prensiplerinden hangisine örnektir?",
     "secenekler": {
       "A": "Şekil-zemin ilişkisi",
       "B": "Tamamlama",
@@ -1532,7 +1532,7 @@
       "E": "Süreklilik"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Algıyı Etkileyen Faktörler - Algı Prensipleri",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1543,7 +1543,7 @@
     "id": 52393,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 78,
-    "soru": "",
+    "soru": "Geleneksel toplumlarda fiziksel etkileşim yoluyla kişi hakkında edinilen bilgilere dayanarak tanımlanabilen statü, modern toplumlarda artan nüfusun etkisiyle ilk elden tanımlanması zorlaşan bir kavram hâline gelmiştir. Yaşam tarzıyla veya yaşam tarzının nasıl ifade edildiğiyle ilgili statü sembolleri, bireylerin toplumsal konumunu başkalarının gözünde şekillendirmede etkilidir. Ayrıca sosyologlar, verilmiş ve kazanılmış statü arasında ayrım yaparlar. Verilmiş statü, genellikle değiştirilemeyen fiziksel faktörlere dayanırken kazanılmış statüyü bireyler kendi çabalarıyla elde ederler.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Modern toplumlarda, kazanılmış statüyle birlikte başkalarının görüşlerine verilen önemin de arttığı gözlenir.",
       "B": "Statünün yüz yüze etkileşim yoluyla tanımlanması, bireyleri kendi konumları üzerine düşünmeye zorlar.",
@@ -1563,7 +1563,7 @@
     "id": 52394,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 79,
-    "soru": "",
+    "soru": "Murat: Hatırlıyor musun Hasan? İlkokul öğretmenimiz, \"Elma ile armudu karıştırmayın!\" derdi. Bunun mecazen ne anlama geldiğini bilirdik. Ama şimdi düşünüyorum da elmayı ve armudu birbirlerinden nasıl ayırt edeceğimizi nereden biliyoruz?\n\nHasan: Haklısın mesela kiraza daha çok benzeyen küçücük elma var veya rengiyle daha çok armuda benzeyen sarı elmalar var. Bunlar ilk bakışta birbirine hiç benzemiyor ama hepsine de elma diyoruz. Bu nasıl oluyor?\n\nMurat: Bence şöyle oluyor: Elmaları birbirinden farklı yapan tüm nitelikleri bir kenara bıraktığımızda örneğin kırmızıyı ve sarıyı veya tatlıyı ve ekşiyi onlardan çıkardığımızda elma dediğimiz şeye ulaşıyoruz. Zaten bunu yaptığımızda elmayı hem armuttan hem de diğer meyvelerden ayırmış oluyoruz.\n\nBu diyalog, kavramların oluşum süreciyle ilgili aşağıdakilerden hangisine örnek oluşturur?",
     "secenekler": {
       "A": "Nelik ve gerçeklik",
       "B": "Soyutlama ve genelleme",
@@ -1583,7 +1583,7 @@
     "id": 52395,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 80,
-    "soru": "",
+    "soru": "Mutluluk erdemli olmanın bir ödülü değil erdemin ta kendisidir. Dünyevi isteklerimizi bastırdığımız için mutluluktan haz almayız; tersine, ondan haz aldığımız için dünyevi isteklerimizi bastırabiliriz.\n\nSpinoza'nın Etika adlı eserinden alınan bu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Erdemli olma çabasının hedefi mutluluktur.",
       "B": "Erdemli olmak için hazların bastırılması gerekir.",
@@ -1592,7 +1592,7 @@
       "E": "Mutluluk hak edilen bir şeydir."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Ahlak Felsefesinde İyilik ve Mutluluk İlişkisi",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1603,7 +1603,7 @@
     "id": 52396,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 81,
-    "soru": "",
+    "soru": "Birinci sınıf öğrencisi Ceyhun, yazı yazmaktan hoşlanmadığı için öğretmeninin verdiği yazma ödevlerini yaparken çok sıkılıyor ve çoğu zaman ödevlerini tamamlayamıyordu. Bunu fark eden öğretmen, Ceyhun'un eksiksiz tamamladığı her ödevi için defterine bir mutlu yüz çıkartması; tamamlayamadığı her ödev için ise bir üzgün yüz çıkartması yapıştırır. Ailesi;\n\nI. Ceyhun beş mutlu yüz çıkartması topladığında, hafta sonu bilgisayarda oyun oynama süresini otuz dakika uzatır.\n\nII. Ceyhun'un defterinde beş üzgün yüz çıkartması olduğunda, hafta sonu bilgisayarda oyun oynama süresini otuz dakika kısaltır.\n\nCeyhun'un ödev yapma davranışını artırmak için yapılan bu uygulamalar, aşağıdaki kavramlardan sırasıyla hangisine örnektir?",
     "secenekler": {
       "A": "I: Olumsuz pekiştirme, II: Ceza",
       "B": "I: Olumlu pekiştirme, II: Ceza",
@@ -1612,7 +1612,7 @@
       "E": "I: Olumlu pekiştirme, II: Söndürme"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Güdülenmeyi Ortaya Çıkaran Faktörler - Güdülenmiş Davranışın Özellikleri",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1623,7 +1623,7 @@
     "id": 52397,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 82,
-    "soru": "",
+    "soru": "Marcel Proust'un Kayıp Zamanın İzinde adlı romanında anlatıcı, aristokrat arkadaşı Marki'yle akşam yemeği için sözleştiği pahalı restorandan içeri girer. Marki henüz ortalıkta görünmemektedir. Garsonlar, anlatıcımızın kılık kıyafetini süzüp ünvansız adını da duyunca içeri bir \"hiç\"in girdiğine kanaat getirir. Onu bir masaya oturtur ama önüne bir bardak su bile koymazlar. Derken kapıda Marki belirir, arkadaşının yanına gelir, sırtını şöyle bir sıvazlamasıyla garsonların gözünde anlatıcının konumu birden değişiverir. Restoranın müdürü anlatıcının önünde saygıyla eğilir, menüyü getirir ve gösterişli hareketlerle anlatıcımızın kılığına övgüler düzer. Anlatıcı ekmek istemeye görsün, müdür \"Hemen, sayın Baron!\" diye haykırır. Baron olmadığını söyleyen anlatıcıya \"Ah! Affedersiniz Kontum.\" diye cevap verir. Anlatıcı okurlara \"Bir kez daha itiraz etseydim markiliğe terfi edecektim!\" diye dert yanar.\n\nBu parçada anlatıcının yakındığı durum aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Statülere uygun olmayan rollerin belirlenerek kesinleştirilmesi",
       "B": "Birden fazla toplumsal rolün, rol çatışmasına neden olması",
@@ -1643,7 +1643,7 @@
     "id": 52398,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 83,
-    "soru": "",
+    "soru": "İbn Sina, evrenin zaman içinde ve yoktan yaratıldığı görüşüne karşı çıkarak evrenin ezelî olduğunu ve Tanrı'nın kendi özünü düşünmesi sonucu Tanrı'dan zorunlu bir şekilde taşarak ortaya çıktığını söyler. Bu ezelî yaratım kavramı ile hem Yunan düşüncesindeki maddenin ezelîliği görüşünü hem de İslam'da evrenin Tanrı'nın eseri olduğu anlayışını korumak ister. Gazali ise İbn Sina gibi düşünüldüğünde Tanrı'nın hakiki anlamda evrenin faili veya fail nedeni olduğunu söyleyemeyeceğimizi ileri sürer çünkü bu görüşte bir eserin nedeninden zorunlu olarak çıkması vardır, bir karar ya da irade ile meydana gelmesi yoktur. Oysa Gazali'ye göre Tanrı, evreni özgür iradesi ile yaratmıştır.\n\nBu parçada İbn Sina ile Gazali'nin hangi konudaki fikir ayrılığı vurgulanmaktadır?",
     "secenekler": {
       "A": "Tanrı'nın bilgisinin kapsamı",
       "B": "Evrenin ortaya çıkışı",
@@ -1652,7 +1652,7 @@
       "E": "Felsefe-din ilişkisi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Din Felsefesinin Konusu ve Soruları",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1663,7 +1663,7 @@
     "id": 52399,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 84,
-    "soru": "",
+    "soru": "Psikolojide tanımlanan \"güdü\" ve \"dürtü\" kavramlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Açlık, susuzluk gibi fizyolojik kökenli güdülere dürtü denir.",
       "B": "Sosyal güdüler, yaşantılar sonucunda öğrenilir.",
@@ -1672,7 +1672,7 @@
       "E": "Her güdü aynı zamanda bir dürtüdür."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Güdü ve Dürtü Kavramları",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1683,7 +1683,7 @@
     "id": 52400,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 85,
-    "soru": "",
+    "soru": "Grupların veya toplumların yararlı, cazip, istenilen ve beğenilen olarak benimsedikleri ve kullandıkları kültürel olarak belirlenmiş standartları vardır. Bu standartlar adeta sosyal yaşamın anahtarlarıdır. Kültürel olarak belirlenen kolektif fikirler, toplum olmaktan kaynaklı paylaşılan ortak bazı amaçları kapsar. Buna göre toplumdan topluma farklılık gösteren ve bir kültürü diğerinden ayıran en önemli özellik kültürde nelerin istenilir ve uygun olduğu hakkındaki kolektif onaylamalardır. Örneğin ataerkil sistemde; gençlerin aile rızası olmadan evlenmeleri ya da gencin aile büyüklerinin yanında bacak bacak üstüne atarak oturması hoş karşılanmazken eve gelen konukların ağırlanması ve memnun edilmesi beklenen bir durumdur.\n\nBu parça aşağıdaki kavramlardan hangisine örnek oluşturur?",
     "secenekler": {
       "A": "Toplumsal sapma",
       "B": "Toplumsal değer",
@@ -1703,7 +1703,7 @@
     "id": 52401,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 86,
-    "soru": "",
+    "soru": "İphigeneia Aulis adlı tragedyada Menelaos, Truva seferi komutanı olan ağabeyi Agamemnon ile bir tartışmasında ona şunları söyler: \"Ben bir şefi veya bir komutanı soyu ya da kraliyet ailesine mensubiyeti nedeniyle bir ülkenin başına getirme fikrinin bütünüyle karşısındayım. Bir devletin ordusunu kumanda edebilmek için akıl ya da siyasi yetenek gerekir. Buna sahip olan her adam baş olmaya layıktır.\"\n\nBu parça siyaset felsefesinin aşağıdaki sorularından hangisi ile ilişkilendirilebilir?",
     "secenekler": {
       "A": "Sivil toplumun anlamı nedir?",
       "B": "Devlet nasıl ortaya çıkmıştır?",
@@ -1712,7 +1712,7 @@
       "E": "Birey devlet ilişkisi nasıl olmalıdır?"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Siyaset Felsefesinin Konusu ve Problemleri",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1723,7 +1723,7 @@
     "id": 52402,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 87,
-    "soru": "",
+    "soru": "İçsel güdülenme dışsal güdülenmenin aksine, bir davranışı dışarıdan herhangi bir zorlama veya ödül olmaksızın kişinin kendi inanışını ve beklentilerini tatmin ettiği için yapma durumudur.\n\nBuna göre aşağıdakilerden hangisi \"içsel güdülenme\"ye örnektir?",
     "secenekler": {
       "A": "Bir üniversite öğrencisinin, harçlığını kazanmak için kalabalık sokaklarda gitar çalması",
       "B": "Bir çocuğun, yiyeceği şekeri hayal ederek yemeğini hızlıca bitirmeye çalışması",
@@ -1732,7 +1732,7 @@
       "E": "Bir bankacının, yeterince çabalarsa alabileceğine inandığı terfi için haftanın üç günü fazla mesai yapması"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "İçsel ve Dışsal Güdülenme",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1743,7 +1743,7 @@
     "id": 52403,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 88,
-    "soru": "",
+    "soru": "Sosyalleşme aracılığıyla öğrenilen değerler ve normlar, insanların toplum hâlinde ve bir düzen içinde nasıl yaşayacaklarını bilmelerini sağlayan sosyal kuralları oluştururlar. Ancak değerlerin ve normların bilinmesi insanların onlara zorunlu olarak uyacağı anlamına gelmez. Bu nedenle resmî ve resmî olmayan kurumlar, bireylerin bu kurallara uymalarını sağlamak adına bir takım yaptırımlar uygular. Böylece toplumsal düzen için tehdit olarak görülen sapmanın ve suçun önlenmesi amaçlanır.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Norm ve değerlerin etkisinin zayıflaması toplumsal çözülmeye neden olur.",
       "B": "Toplumsal kontrol, toplumdaki norm ve değerlere uyulmasını sağlar.",
@@ -1763,7 +1763,7 @@
     "id": 52404,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 89,
-    "soru": "",
+    "soru": "Umberto Eco sanat dilinin özelliği nedeniyle hiçbir sanat yapıtının gerçekte \"kapalı\" olamayacağını; her yapıtın belli bir görüşün ötesinde, sayısız olası \"okuma\" ya da \"yorumlama\"ya yatkınlık gösterdiğini söyler. Resimden şiire, müzikten yazına dek her sanat yapıtı, sayısız çoklukta tadıma açık bir nesnedir; kendi başına tükenmek bilmeyen bir deney kaynağıdır. Eğer bir sanat yapıtı, süjenin gözünde anlamlı olabiliyorsa, bu da aynı biçimde, onun daha önceki deneylerinden gelen ve sanat yapıtının sunmuş olduğu niteliklerle eriyip kaynaşabilen değerlerin ve anlamların varlığı sayesindedir.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Sanat yapıtının yetkinliği, temsil ettiği düşünceyi yansıttığı oranda artar.",
       "B": "Sanat yapıtının esas anlamı onu yaratan sanatçının zihnindedir.",
@@ -1783,7 +1783,7 @@
     "id": 52405,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 90,
-    "soru": "",
+    "soru": "Platon insan için “İki ayaklı ve tüysüz bir canlıdır.” diye bir tanım getirip bununla büyük bir övgü toplayınca Diogenes bir horoz bulup tüylerini yoldu ve okula getirip “İşte Platon’un insanı!” diye gösterdi.\n\nBu kısa hikâyede Diogenes’in Platon’un insan tanımına yönelik eleştirisi aşağıdakilerden hangisiyle ifade edilebilir?",
     "secenekler": {
       "A": "Tanımda kısır döngü bulunmamalıdır.",
       "B": "İlgili tüm fertler tanımın içinde, dâhil olmayanlar da dışarıda bırakılmalıdır.",
@@ -1792,7 +1792,7 @@
       "E": "Bir şey kendisinden daha açık olmayan başka bir şey ile tanımlanmamalıdır."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Tanım",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1803,7 +1803,7 @@
     "id": 52406,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 91,
-    "soru": "",
+    "soru": "Biri size Eyfel Kulesi'nin güzel olup olmadığını sorduğunda, yalnızca durup bakılsın diye yapılmış bir şey veya işe yaramaz bir metal yığını olduğunu söyleyebilirsiniz. Fakat bunlar, sorulan sorunun cevabı değildir. Çünkü bir şeyin güzel olup olmadığı sorulduğunda, nesnenin bizde bir hoşlanma duygusu yaratıp yaratmadığı öğrenilmek istenir, yoksa nesnenin var olmasının gerekliliği değil.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Objenin estetik değerini onun yapılış amacı belirler.",
       "B": "Estetik haz duygusunun kaynağı objenin nesnel varoluşudur.",
@@ -1823,7 +1823,7 @@
     "id": 52407,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 92,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi klasik mantıkta bileşik önerme olarak kabul edilemez?",
     "secenekler": {
       "A": "Ali gelirse tüm aile çok sevinir.",
       "B": "Ali ya bugün ya da yarın gelecek.",
@@ -1832,7 +1832,7 @@
       "E": "Ali insanları sevdiği kadar onlara saygı da gösterir."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Önerme ve Çeşitleri",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1843,7 +1843,7 @@
     "id": 52408,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 93,
-    "soru": "",
+    "soru": "Yapay zekâ uygulamasına \"İçinde felsefe, hakikat ve sevgi kavramlarını barındıran bir şiir yazar mısın?\" komutu verildiğinde şu şiiri yazdı:\n\nDüşlerin gizemli derinliğinde,\nFelsefenin izlerini bulur insan.\nHakikati kendi içinde ararken yürek,\nSevgi bir umut ışığı gibi parlar her an.\n\nAynı komut hiç değiştirilmeden tekrar verildiğinde ise şu şiir ortaya çıktı:\n\nKaranlıklar içinde hakikat arayışı,\nFelsefenin ışığında yol alır insan.\nSevgi varoluşun en derin gerçeği,\nFelsefeyle buluşur, sevgiyle tamamlanır insan.\n\nAynı komut hiç değiştirilmeden ne kadar verilirse verilsin, yapay zekânın her defasında farklı bir şiir yazmayı başardığı görüldü. Ortaya çıkan eserler de okuyanların çoğunun beğenisini kazanmayı başardı.\n\nBu şiirler birer sanat eseri olarak kabul edilirse bir sanat eserinin taşıması gereken aşağıdaki özelliklerden hangisi tartışmaya açılmış olur?",
     "secenekler": {
       "A": "Estetik değer taşıması",
       "B": "Alımlayıcı tarafından beğenilmesi",
@@ -1863,7 +1863,7 @@
     "id": 52409,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 94,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi önerme değildir?",
     "secenekler": {
       "A": "Güneş Dünya'yı ısıtır.",
       "B": "Keşke hava hep güneşli olsa.",
@@ -1872,7 +1872,7 @@
       "E": "Güneş ışınları Dünya'ya 8 dakikada ulaşır."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Önerme ve Çeşitleri",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1883,7 +1883,7 @@
     "id": 52410,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 95,
-    "soru": "",
+    "soru": "Tolstoy, estetik üzerine görüşlerini Sanat Nedir? adlı eserinde ortaya koyarken şu örneği verir: \"Çocuk, kurtla karşılaştığı anda kapıldığı korkuyu karşısındaki kişinin gözlerinde canlandırabilmek için ormanın nasıl olduğunu, ormanda neşeyle nasıl dolaşmaya çıktığını, sonra kurdu nasıl gördüğünü, kurdun hareketlerini, kurtla arasındaki uzaklığı gibi detayları ayrıntılarıyla anlatırken kurt karşısında kapıldığı korkuyu yeniden yaşar ve bu korkuyu dinleyen kişiye de aynı şekilde yaşatabilirse çocuğun burada yaptığı şey sanatın ta kendisidir.\"\n\nBuna göre Tolstoy'un sanat için aşağıdakilerden hangisini söylemesi beklenir?",
     "secenekler": {
       "A": "Gerçekliği daha estetik bir şekilde göstermenin aracıdır.",
       "B": "Estetik hazzı birincil amaç edinen öznel bir faaliyettir.",
@@ -1903,7 +1903,7 @@
     "id": 52411,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 96,
-    "soru": "",
+    "soru": "I. ?\n\nII. Hava soğuktur.\n\nIII. O hâlde gökyüzü güneşli değildir.\n\nBu çıkarımın geçerli olabilmesi için “?” ile belirtilen yere aşağıdaki önermelerden hangisi getirilmelidir?",
     "secenekler": {
       "A": "Hava soğuk ise gökyüzü güneşlidir.",
       "B": "Gökyüzü güneşli değil ise hava soğuktur.",
@@ -1912,7 +1912,7 @@
       "E": "Gökyüzü güneşli ise hava soğuk değildir."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Çıkarım",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1923,7 +1923,7 @@
     "id": 52412,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 97,
-    "soru": "",
+    "soru": "Felsefe tarihinin en kötümser filozoflarından biri olan Schopenhauer'a göre dünyanın temelinde kör, amaçsız bir isteme vardır. Her istek bir gereksinimden ve eksiklikten doğar, buna göre de acıdan doğar. Doyurulan her istek, yerini anında bir yenisine bırakır. Fakat ulaşılan istek nesnelerinin hiçbiri, kalıcı bir doyum sağlamaz. Onlar yalnızca gelip geçici bir hoşnutluk sağlar. Bu nedenle yaşam, özü itibariyle acıdır. Ona göre bu acıdan kurtulmanın geçici de olsa bir yolu vardır ve bu yol, sanatsal deneyimdir.\n\nSchopenhauer'a göre sanatın böyle bir işlev görmesinin nedeni aşağıdakilerden hangisi olabilir?",
     "secenekler": {
       "A": "Gerçekliği aynen yansıtarak insanın acıya alışmasını sağlaması",
       "B": "Toplumsal dayanışmayı güçlendirdiğinden acıyı toplumsal hafızadan kalıcı olarak silmesi",
@@ -1932,7 +1932,7 @@
       "E": "Bireysel arzuları askıya alarak bireyin istemesinin buyruğundan geçici olarak kurtulmasını sağlaması"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Felsefi Metin Analizi",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1943,7 +1943,7 @@
     "id": 52413,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 98,
-    "soru": "",
+    "soru": "Şiddetli bir baş ağrısı yaşayan Yonca, ağrı kesici alır ve baş ağrısı kısa sürede hafifler. Yonca, o günden sonra şiddetli baş ağrısı çektiği her zaman ağrı kesici alarak baş ağrısından kurtulmaya çalışır.\n\nYonca'nın ağrı kesici alarak baş ağrısından kurtulması, aşağıdaki öğrenme kavramlarından hangisine örnektir?",
     "secenekler": {
       "A": "Sönme",
       "B": "Genelleme",
@@ -1952,7 +1952,7 @@
       "E": "Kendiliğinden geri gelme"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Öğrenme, Bellek, Düşünme",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1963,7 +1963,7 @@
     "id": 52414,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 99,
-    "soru": "",
+    "soru": "Klasik mantıkta ters döndürme, bir önermenin niteliğini ve doğruluk değerini değiştirmeden öznesinin karşıt hâlini yüklem, yükleminin karşıt hâlini özne yapma işlemidir.\n\nBuna göre \"Bütün martılar kuştur.\" önermesinin ters döndürmesi aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Bazı kuş olmayanlar martı olmayandır.",
       "B": "Hiçbir kuş martı değildir.",
@@ -1972,7 +1972,7 @@
       "E": "Bütün kuşlar martıdır."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Mantık",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -1983,7 +1983,7 @@
     "id": 52415,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 100,
-    "soru": "",
+    "soru": "Her düşünsel dönemin var olana bakışında, birbirine benzer ve farklı yönler bulunabilir. Bir dönemi anlayabilmenin yolu, onu diğer dönemlerden benzersiz kılan yönleriyle ele almak ve önceki dönemlerin bakış açılarından neleri aldığını tespit etmekten geçer. Örneğin Orta Çağ'da Antik Çağ'a göre \"yeni\" olan nedir? Dahası Orta Çağ, sonraki dönemler için neler hazırlamıştır? Bu doğrultuda E. Gilson; Batı'nın, Orta Çağ'ı inkâr ettiğinde aslında kendini ve tarihini inkâr ettiğini söyleyerek dönemlerin birbirinden bağımsız ele alınamayacağını ifade eder.\n\nBuna göre düşünce tarihindeki dönemlerle ilgili olarak aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Bir dönemi tüm yönleriyle betimlemek mümkün değildir.",
       "B": "Dönemler arasındaki sınırlar net bir şekilde belirlenmiştir.",
@@ -1992,7 +1992,7 @@
       "E": "Dönemler süreklilik ve farklılaşmayı birlikte içerir."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Felsefi Metin Analizi",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2003,7 +2003,7 @@
     "id": 52416,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 101,
-    "soru": "",
+    "soru": "Korkuların deneyimler sonucu nasıl öğrenildiğini anlamak için beyaz farelerden ve beyaz tavşanlardan korkmayan bir grup çocuk üzerinde bir araştırma yapılmıştır. Küçük çocukların yüksek sesli uyaranlardan kendiliğinden korktuğu bilinmektedir. Öncelikle, çocuklara beyaz fare gösterilirken aniden yüksek sesli bir uyaran verilmiştir. Bu eşleştirme bir süre tekrarlandıktan sonra çocuklar yüksek sesli uyaran olmadan da beyaz fareyi tek başına gördüklerinde korkmuşlardır. Ardından çocuklara beyaz tavşan tek başına gösterilmiş ve çocuklar beyaz tavşanı görünce de korkmuşlardır.\n\nBuna göre çocukların beyaz farelerden ve beyaz tavşanlardan korkmaya başlaması sırasıyla aşağıdakilerden hangisine örnektir?",
     "secenekler": {
       "A": "Edimsel koşullanma yoluyla öğrenme - Olumsuz pekiştirme",
       "B": "Klasik koşullanma yoluyla öğrenme - Kendiliğinden geri gelme",
@@ -2012,7 +2012,7 @@
       "E": "Edimsel koşullanma yoluyla öğrenme - Olumlu pekiştirme"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Öğrenme, Bellek, Düşünme",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2023,7 +2023,7 @@
     "id": 52417,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 102,
-    "soru": "",
+    "soru": "Doktorluğun insanlara özgü bir meslek olduğunu \"Tüm doktorlar insandır.\" şeklinde ifade edebiliriz. Sadece bu bilgiden \"Bazı insanlar doktordur.\" önermesine kolaylıkla akıl yürüterek ulaşabiliriz. Benzer şekilde \"Hiçbir doktor bitki olmadığına göre hiçbir bitki de doktor olamaz.\" diyebiliriz.\n\nBu parçadaki akıl yürütme aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Tümdengelim",
       "B": "Tümevarım",
@@ -2032,7 +2032,7 @@
       "E": "Analoji"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Mantık",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2043,7 +2043,7 @@
     "id": 52418,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 103,
-    "soru": "",
+    "soru": "Sokrates'e göre insanlar doğaları gereği mutlu olmayı ister. Dünyada insanı mutlu kılan ne varsa o şey özce iyi bir şey olduğuna göre insanların mutsuzluğa neden olan kötüyü istemeleri olanaksızdır. Buna karşın insanların sık sık kötü, zararlı ve değersiz bir şeyin peşine düştükleri olur ancak bu durum yalnızca onların bilgisizliklerinden kaynaklanmaktadır. Yani insan kötü bir eylemde bulunduysa o eylemin iyi olduğunu zannettiği için yapmıştır.\n\nBu parçadan Sokrates'in ahlak anlayışıyla ilgili aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Ahlaki davranışlar, edinilen alışkanlıkların ürünüdür.",
       "B": "Bilgi insanın ahlaklı ve erdemli olmasını sağlar.",
@@ -2063,7 +2063,7 @@
     "id": 52419,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 104,
-    "soru": "",
+    "soru": "Lise öğrencisi Özgür;\n\nI. Beş aylık küçük kardeşi uykusundan uyanıp ağlamaya başladığında annesinin yaptığı gibi kardeşinin başını okşayarak yeniden uyumasını sağlar.\n\nII. Çözmekte zorlandığı bir fizik problemiyle bir süre uğraştıktan sonra çözüm yolunu aniden bulur.\n\nÖzgür'ün birinci ve ikinci durumdaki öğrenme biçimi, aşağıdaki öğrenme türlerinden sırasıyla hangisine örnektir?",
     "secenekler": {
       "A": "I. Kavrayarak (Sezgisel) - II. Örtük (Gizil)",
       "B": "I. Model alarak - II. Kavrayarak (Sezgisel)",
@@ -2072,7 +2072,7 @@
       "E": "I. Örtük (Gizil) - II. Kavrayarak (Sezgisel)"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Öğrenme, Bellek, Düşünme",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2083,7 +2083,7 @@
     "id": 52420,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 105,
-    "soru": "",
+    "soru": "Gündelik yaşam içinde her birimiz ailede, okulda, sokakta veya iş yerinde tanıdık, tanımadık çeşitli insanlarla karşılaşır ve etkileşimde bulunuruz. Örneğin bir öğrencinin sabahleyin sınıfındaki öğrencilerle birincilik için yarışması, öğlen kantinden bir şeyler satın alırken kantinciyle satıcı-müşteri ilişkisi kurması, öğleden sonra bilim kulübündekilerle ortak bir çalışma yapması ve okul içinde uyulması gereken kurallara uygun davranması farklı etkileşim tiplerine örnek verilebilir.\n\nBu parçada aşağıdaki etkileşim tiplerinden hangisine örnek verilmemiştir?",
     "secenekler": {
       "A": "İş birliği",
       "B": "Rekabet",
@@ -2103,7 +2103,7 @@
     "id": 52421,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 106,
-    "soru": "",
+    "soru": "Aşağıdaki akıl yürütmelerden hangisi geçerli bir kıyas örneğidir?",
     "secenekler": {
       "A": "Bazı insanlar mutludur. Bazı insanlar da neşelidir. O hâlde bazı insanlar hem neşeli hem mutludur.",
       "B": "Bazı meyveler tatlıdır. Bazı meyveler ekşidir. O hâlde hiçbir meyve acı değildir.",
@@ -2112,7 +2112,7 @@
       "E": "Bazı çiçekler papatyadır. Bütün papatyalar beyazdır. O hâlde bazı çiçekler beyazdır."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Mantık",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2123,7 +2123,7 @@
     "id": 52422,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 107,
-    "soru": "",
+    "soru": "Nasıl ki duyusal algı konusunda insanın bireysel algısı doğrunun tek ölçüsü ise aynı şekilde insan; hakikatin, ahlaki iyinin ve adaletin de ölçüsüdür. Güzel veya çirkin, iyi veya kötü, adil veya adaletsiz olan bir şey, onu bu şekilde gören insan için öyledir. Bu konularda bireyden bireye olduğu gibi toplumdan topluma da bir bilgelik farkı yoktur. Bu yüzden ahlaki ilkeler de ne ilahi bir otoritenin değişmez buyruğudur ne de herkes için geçerlidir. Onlar sadece ve sadece toplumsal uzlaşının ürünüdür ve bu iradenin değişmesine paralel olarak da değişirler.\n\nBu parçadaki görüşleriyle Protagoras'ın aşağıdaki sorulardan hangisini tartıştığı söylenebilir?",
     "secenekler": {
       "A": "Evrensel bir ahlak yasasından bahsedilebilir mi?",
       "B": "Ahlaki eylemlerin bir amacı var mıdır?",
@@ -2143,7 +2143,7 @@
     "id": 52423,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 108,
-    "soru": "",
+    "soru": "Reklam müzikleri hazırlanırken dikkatle üzerinde durulan bazı noktalar vardır. Ritim, müzik ve sözlerin uyumu öyle olmalıdır ki bireyler dikkatle dinlemeseler bile farkında olmadan markayı öğrenmeli, gerektiğinde de hatırlayabilmelidir.\n\nBuna göre reklam müziği hazırlanırken aşağıdaki öğrenme türlerinden hangisi gerçekleştirilmeye çalışılmaktadır?",
     "secenekler": {
       "A": "Klasik koşullanma yoluyla öğrenme",
       "B": "Edimsel koşullanma yoluyla öğrenme",
@@ -2152,7 +2152,7 @@
       "E": "Psikomotor öğrenme"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Öğrenme, Bellek, Düşünme",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2163,7 +2163,7 @@
     "id": 52424,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 109,
-    "soru": "",
+    "soru": "Kast sistemi, bireylerin toplumsal konumunun yaşam boyu belirli olduğu bir toplumsal düzendir. Bu sistemde her birey ailesinin ait olduğu kastın içinde doğar ve yaşamı boyunca da bu kastta kalır. Bundan dolayı kast toplumlarında, kesin olarak belirlenmiş olan farklı toplumsal seviyeler birbirine kapalıdır.\n\nBu parçadan kast sistemiyle ilgili aşağıdaki yargıların hangisine ulaşılamaz?",
     "secenekler": {
       "A": "Kastlar arasındaki ayrımları belirleyen unsurlar değişken değildir.",
       "B": "Bireylerin kastlar arasında toplumsal hareketliliği mümkün değildir.",
@@ -2183,7 +2183,7 @@
     "id": 52425,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 110,
-    "soru": "",
+    "soru": "J. L. Austin, dilin görevleriyle ilgili görüşlerini Söz Edimleri Teorisi'nde açıklar. Bu teoriye göre bazen bir şey söylemek, aynı zamanda bir şey yapmaktır. Örneğin, nikah salonunda gelin veya damat \"Evet, bu kişiyi eş olarak kabul ediyorum.\" dediğinde hem bir şey söylüyor hem de evlenme işlemini gerçekleştiriyordur.\n\nBu parçada dilin görevlerinden hangileri vurgulanmaktadır?",
     "secenekler": {
       "A": "Bildirme ve Eylemsel",
       "B": "Belirtme ve Törensel",
@@ -2192,7 +2192,7 @@
       "E": "Eylemsel ve Törensel"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Mantık ve Dil",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2203,7 +2203,7 @@
     "id": 52426,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 111,
-    "soru": "",
+    "soru": "Ben, yavaş ve dürtülmesi gereken bir atı andıran toplumu yerinden oynatmak için gönderilmiş bir at sineğiyim. Sizi her gün her yerde dürtüyor, uyarıyor, rahatsız ediyor ve ardınızı bırakmıyorum. Benim gibi bir at sineğini bir daha kolay kolay bulamazsınız. Ama belki de uykusundan birden uyandırılan biri gibi canınız sıkılarak, çok düşünmeden, benden kolayca kurtulabileceğiniz sanısına kapılabilirsiniz. Tanrı size acıyıp benim yerime başka bir at sineği gönderinceye kadar yaşamınızın geri kalan bölümünde yine uykuya dalarsınız.\n\n**Sokrates'in Savunması** adlı eserden alınan bu parçada Sokrates, hangi özelliğini vurgulamak için at sineği benzetmesine başvurmaktadır?",
     "secenekler": {
       "A": "Eleştirel ve sorgulayıcı olma",
       "B": "Rasyonel ve tutarlı çıkarımlar yapma",
@@ -2212,7 +2212,7 @@
       "E": "Toplumsal kuralları benimseme ve uygulama"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Platon ve Aristoteles'in Varlık, Bilgi ve Değer Anlayışı",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2223,7 +2223,7 @@
     "id": 52427,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 112,
-    "soru": "",
+    "soru": "Bir fizik öğretmeni öğrencileri öğrenmeye teşvik edeceğine inandığından onları zorlayacak seviyede örnek sorular kullanır. Öğrenciler bu soruları çözmede başarısız olur. Matematik öğretmeni ise öğrencilerin başarabildiklerini gördükçe motive olacaklarına inandığından temel düzeyde örnek sorular kullanır. Dönem sonunda bu iki öğretmenden ders alan öğrencilere fizik ve matematik bilgilerini ölçen birer sınava girerlerse ne kadar başarılı olacaklarını düşündükleri sorulur. Öğrencilerin tamamı matematik sınavında dersteki performanslarına benzer düzeyde başarılı olacaklarını söylerken fizik sınavında başarılı olamayacaklarını belirtir.\n\nÖğrencilerin fizik sınavında başarılı olamayacaklarını belirtmesi, öğrenmeyi etkileyen aşağıdaki faktörlerden hangisiyle açıklanabilir?",
     "secenekler": {
       "A": "Öğrenmede transfer",
       "B": "Öğrenilmiş çaresizlik",
@@ -2232,7 +2232,7 @@
       "E": "Türe özgü hazır olma"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Öğrenmeyi Etkileyen Faktörler ve Öğrenme Stratejileri",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2243,7 +2243,7 @@
     "id": 52428,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 113,
-    "soru": "",
+    "soru": "Toplumsal değişmeyi anlamlı bir biçimde yorumlayabilmek için değişmenin gözlenebileceği çeşitli genel görünümleri anlamamız gerekir. Tüm değişmeler geçicidir. Toplumsal değişme, insanların biyolojik yaşlanma sürecine benzemez; toplum veya kültür ne yorulur ne de güçten düşer. Davranış örüntülerinin yenilenmesi veya terk edilmesi belirli bir sürece bağlıdır.\n\nBu parçada toplumsal değişmenin hangi unsurla olan ilişkisi vurgulanmaktadır?",
     "secenekler": {
       "A": "Ekonomi",
       "B": "Çevre",
@@ -2263,7 +2263,7 @@
     "id": 52429,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 114,
-    "soru": "",
+    "soru": "Barış, Can ile konuşurken ortak arkadaşları olan Ali'nin nasıl olduğunu sorar. Can \"Nasıl olsun işte, onu biliyorsun hayatı işinden ibaret.\" diye cevap verir. Can'ın bu cevabı birçok anlama gelebilir.\n\nCan'ın bu cevabı vermesindeki olası amaçlardan hangisi dilin duygusal bir tepkiyi veya tavrı ifade etme görevi olan \"belirtme\" içinde değerlendirilebilir?",
     "secenekler": {
       "A": "Ali'nin içinde bulunduğu durum hakkında bilgi vermek",
       "B": "Barış'ın Ali ile görüşmesini engellemek",
@@ -2283,7 +2283,7 @@
     "id": 52430,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 115,
-    "soru": "",
+    "soru": "Hareket ediyormuş gibi görünen bir aslan heykeline bakan Ayşe, hayranlıkla \"Ne güzel! Kim yaptı acaba bunu?\" der. Sonra merakı daha da artarak \"Heykeltraş hareket eden bir aslan biçimini buna nasıl verdi?\", \"Peki bunu yapmaktaki amacı neydi?\", \"Bu heykeli yaparken hangi malzemeyi kullandı?\" sorularını peşpeşe sorar. Orada bulunan heykeltraş, Ayşe'nin yanına yaklaşıp \"Gördüğüm kadarıyla Aristoteles'in varlık anlayışını gayet iyi kavramışsınız.\" der. Ayşe'nin hayranlığına bir de şaşkınlık ifadesi eklenir.\n\n**Bu parçada heykeltraş, Ayşe'nin sorularından hareketle Aristoteles'in hangi düşüncesine gönderme yapmaktadır?**",
     "secenekler": {
       "A": "Felsefenin başlangıcının hayret olduğu görüşüne",
       "B": "Davranışlarda orta olma ilkesine",
@@ -2292,7 +2292,7 @@
       "E": "Dört neden görüşüne"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Platon ve Aristoteles'in Varlık, Bilgi ve Değer Anlayışı",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2303,7 +2303,7 @@
     "id": 52431,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 116,
-    "soru": "",
+    "soru": "Bir bilgiyi hatırlamak istediğimizde; bilgiyle ilgili ne kadar çok ipucu varsa, bilgiyi hatırlamamız o kadar kolay olur.\n\nBuna göre bir sınavda yer alan;\n\nI. Bilimsel psikolojinin kurucusu aşağıdakilerden hangisidir?\nA) W. Wundt  B) W. James  C) J. B. Watson\n\nII. Bilimsel psikolojinin kurucusu ..... olarak kabul edilir.\n\nIII. Bilimsel psikolojinin kurucusu kimdir? Yazınız.\n\nsoru tiplerinden hangilerinde, istenen bilgi bellekten daha kolay çağrılır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2312,7 +2312,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Bellek ve Bellek Türleri",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2323,7 +2323,7 @@
     "id": 52432,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 117,
-    "soru": "",
+    "soru": "Sanayi öncesi toplumlarda ev ve çalışma hayatı iç içeydi. Üretim, zaten içinde yaşanılan çiftlik veya atölyelerde yapılıyordu. Ancak sanayileşmeyle birlikte büyük çaplı üretim alanları, fabrikalar ve ofisler yaygınlaştı; evde iş yapanların sayısı hızlı bir biçimde azaldı. Son dönemdeki teknolojik gelişmeler ise birçok iş alanının uzaktan yapılabilmesine olanak sağlayarak evden çalışma örneklerini yeniden çoğalttı. Covid-19 salgınının insanları evde kalmaya mecbur etmesi iş yaşamındaki bu dönüşümü hızlandırarak gelecekteki çalışma deneyimlerini de etkileyecek köklü değişimlere neden oldu.\n\nBu parçadan toplumsal değişimle ilgili aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Toplumsal gelişmeyi sağlayan, toplumların sahip olduğu kültürel değerlerdir.",
       "B": "Toplumsal yaşam ile ekonomik koşullar arasında karşılıklı etkileşim vardır.",
@@ -2343,7 +2343,7 @@
     "id": 52433,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 118,
-    "soru": "",
+    "soru": "$((p \\Rightarrow q) \\lor (r \\land p)) \\Leftrightarrow \\sim ((q \\Rightarrow \\sim r) \\land r)$\n\nbileşik önermesinin ana eklemi aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$\\Rightarrow$",
       "B": "$\\land$",
@@ -2363,7 +2363,7 @@
     "id": 52434,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 119,
-    "soru": "",
+    "soru": "Bu dünyadaki en iyi şeyin mutluluk olduğu konusunda insanlar uzlaşmış gibi görünmekteyken mutluluğun ne olduğu veya nasıl elde edileceği konusunda tam bir fikir birliğinden söz etmek mümkün değildir. Aristoteles'e göre de mutluluk, insan için en iyi şeydir. Herhangi bir şeyin iyi olabilmesi için de özünün gerektirdiği işi doğru yapması gerekir. Peki \"İnsanın işi nedir?\". Marangozun, ayakkabıcının belli işleri ve yaptıkları vardır da, insanın bir işi yok mudur? Bu iş yaşamak olsa bitkiler de yaşıyor, besleniyor, büyüyor ve çoğalıyor. Duyumsama ise hayvanlarda da olan bir özellik. O hâlde insana bir tek düşünerek eylemde bulunmasını sağlayan akıl kalıyor.\n\nAristoteles'in bu düşüncelerine göre insan nasıl mutlu olur?",
     "secenekler": {
       "A": "Arzularını gerçekleştirdiğinde",
       "B": "Diğer insanlara faydalı olduğunda",
@@ -2372,7 +2372,7 @@
       "E": "Doğayla uyumlu yaşadığında"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Aristoteles ve Mutluluk",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2383,7 +2383,7 @@
     "id": 52435,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 120,
-    "soru": "",
+    "soru": "Bir şirkette müdür yardımcısı olarak çalışan Nejat Bey terfi almış ve müdür olmuştur. Buna rağmen evrak imzalarken ünvanını müdür yardımcısı olarak yazmaya bir süre daha devam etmiştir.\n\nBu durum aşağıdakilerden hangisine örnektir?",
     "secenekler": {
       "A": "İleriye doğru ket vurma",
       "B": "Geriye doğru ket vurma",
@@ -2392,7 +2392,7 @@
       "E": "Olumsuz pekiştirme"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Bellek ve Bellek Türleri",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2403,7 +2403,7 @@
     "id": 52436,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 121,
-    "soru": "",
+    "soru": "Toplumsal değişme; toplumsal yapı, kurum, toplumsal ilişkiler ağı, davranış kalıpları, toplumsal norm ve değerlerin zaman içinde geçirdiği dönüşümler olarak açıklanabilir. Yönü ve boyutu ne olursa olsun tüm toplumlarda görüldüğünden hiçbir toplumsal grup değişimden kaçamaz. Ancak toplumların değişmesine yol açan faktörler değişkenlik gösterebilir. Örneğin bazı toplumlarda hızlı nüfus artışı, yaşlılık oranının yükselmesi ve özellikle göçlerden kaynaklı toplumsal hareketlilikler toplumsal değişmeyi etkilemektedir. Özellikle Avrupa ülkelerinde yaşlı nüfus oranının artmasının toplumsal anlamda bir krize neden olduğu iddia edilmektedir. Yaşlı nüfus, çocuk sahibi olamayacağından nüfusun yenilenmesi gerçekleşmemekte ve sonuç olarak üretime katılacak nüfus azalmakta, çalışan nüfusa bağımlı nüfus oranı ise artmaktadır.\n\nBu parçada toplumsal değişmeyi etkileyen hangi faktör vurgulanmaktadır?",
     "secenekler": {
       "A": "Fiziki çevre",
       "B": "Kültürel unsurlar",
@@ -2412,7 +2412,7 @@
       "E": "Modernleşme"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplumsal Değişme ve Kültür",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2423,7 +2423,7 @@
     "id": 52437,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 122,
-    "soru": "",
+    "soru": "\"Ali evden çıktı.\" önermesi $p$, \"Ali okuldadır.\" önermesi de $q$ ile sembolleştirilirse \"Ali evden çıktı ama okulda değil.\" önermesi aşağıdakilerden hangisiyle sembolleştirilir?",
     "secenekler": {
       "A": "$p \\Rightarrow \\sim q$",
       "B": "$p \\Leftrightarrow \\sim q$",
@@ -2443,7 +2443,7 @@
     "id": 52438,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 123,
-    "soru": "",
+    "soru": "Yapılabilecek bütün üçgen tanımları, üçgenin özünü verir. Bu tanımlar üçgenin varlığı konusunda bize bir bilgi vermez; hatta üçgenin var olmasını zorunlu kılmaz. O hâlde bir şeyin özü sadece \"Bu nedir?\" sorusunun cevabıdır. Farabi'ye göre de şeyler özünde varlıklarını barındırmaz. Kendisine varlık veren bir varlık olmadıkça her öz, sadece bir kavram olarak kalır ve gerçekleşmez. Dolayısıyla evren, insan, ağaç ve benzeri bütün özler varlığını sonradan elde etmiş varlıklardır. Bu durumda onları varlığa getiren; özünde var olmayı içeren, yani var olmaması düşünülemeyen başka bir varlık olmalıdır. Biricik olan bu varlık da var olmak için başka bir varlığa ihtiyaç duymayan Tanrı'dır.\n\nFarabi'nin varlık anlayışını yansıtan bu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Form kazanmadıkça madde var olamaz.",
       "B": "Şeyler, özlerini gerçekleştirdiğinde varlığa gelir.",
@@ -2452,7 +2452,7 @@
       "E": "Varlıklar, tek bir gerçekliğin görünüşleridir."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Farabi'nin Varlık Anlayışı",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2463,7 +2463,7 @@
     "id": 52439,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 124,
-    "soru": "",
+    "soru": "Kültürel gecikme; hızlı sosyal değişmelere bağlı olarak ortaya çıkan, toplumsal sistemde maddi ve maddi olmayan kültürün karşılıklı ilişkisindeki uyumsuzluk olarak tanımlanabilir. Diğer bir deyişle maddi kültürde meydana gelen değişikliklerin, maddi olmayan kültür tarafından eş zamanlı olarak takip edilememesi ya da bu iki kültürün birbiriyle uyum sağlayamaması yüzünden aralarında bir boşluk oluşması durumudur. Özellikle teknolojik gelişmelerin toplumsal sistemdeki hızlı etkisi; hukuk, gelenek, görenek, toplumsal bilinç gibi kültürel ögelerce gecikmeli olarak kabul edilebilir ve bu durum bir boşluk doğmasına neden olur.\n\nBuna göre aşağıdakilerden hangisi kültürel gecikme kavramına örnek olarak verilebilir?",
     "secenekler": {
       "A": "İnternetten yapılan yeni bir tür dolandırıcılığın yasal düzenleme eksikliğinden ötürü cezasız kalması",
       "B": "Ülkemizde geleneksel geniş aile tipinden çekirdek aile tipine geçişin gecikmesi",
@@ -2472,7 +2472,7 @@
       "E": "Büyük kentlerdeki bazı düğünlerin düğün salonları yerine evlerde yapılması"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplumsal Değişme ve Kültür",
     "yil": "2024",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2483,7 +2483,7 @@
     "id": 52440,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 125,
-    "soru": "",
+    "soru": "Önermeler mantığı tanımlarına göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Öncülleri birbiri ile tutarsız olan bütün çıkarımlar geçerlidir.",
       "B": "Her geçerli önerme aynı zamanda tutarlı bir önermedir.",
@@ -2503,7 +2503,7 @@
     "id": 52441,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 126,
-    "soru": "",
+    "soru": "Kerem: Birçok hayvanın nesli tükeniyor. Belki bin yıl sonra hiç leopar kalmayacak hatta leopar sözcüğü bile yok olacak.\n\nÇınar: Bence hiç leopar kalmasa da leopar sözcüğünü kullanmaya devam edeceğiz. Dinozorlar yok oldu, mamutların da nesli tükendi ama baksana ben hâlâ onlardan bahsedebiliyorum. Eğer dinozor kavramı zihninde bulunmasaydı \"Dinozor diye bir şey yoktur.\" dediğimde beni anlayamazdın ama ne dediğimi anlıyorsun değil mi?\n\nKerem: Elbette anlıyorum yani sana göre şeylerin kendileri var olmasa da kavramları var, öyle mi?\n\nÇınar: Evet, ----.\n\nBu diyalogda boş bırakılan yere aşağıdakilerden hangisi getirilirse Çınar'ın kavram realizmini benimsediği söylenebilir?",
     "secenekler": {
       "A": "tümel kavramlar tek tek nesnelerin içinde varlık gösterir",
       "B": "tümel kavramlar bizim, nesnelere vermiş olduğumuz adlardır",
@@ -2512,7 +2512,7 @@
       "E": "tümel kavramlar nesneden önce gelmez, nesnelerden edinilir"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Varlık Felsefesi",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2523,7 +2523,7 @@
     "id": 52442,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 127,
-    "soru": "",
+    "soru": "Bugün, geçmişle kıyaslandığında çok daha kapsamlı ve yıkıcı olabilen ve her birimizin karşılaşma olasılığı son derece yüksek risklerle dolu bir dünyada yaşıyoruz. Söz konusu risklerin önemli bir bölümü, insanoğlunun modernleşme çabasının ya da kapitalist sistemde daha çok kâr elde etme hırsının bir sonucu olarak karşımıza çıkmaktadır. Modernleşmeyle birlikte ortaya çıkan teknolojik araçlar, her geçen gün doğanın daha fazla kirlenmesine neden olmaktadır. İklim değişiklikleri ve küresel ısınmanın bizi hangi tehlikelerle yüz yüze bırakacağı konusunda belirgin bir tahminimiz de bulunmamaktadır.\n\nBu parçada modernleşmenin ortaya çıkardığı olumsuzluklardan hangisine değinilmemiştir?",
     "secenekler": {
       "A": "Modern yaşam koşulları, insanlığı tehdit eden yeni riskler doğurmuştur.",
       "B": "Modernlik, gelecekteki olası tehlikelere ilişkin belirsizliklerin kaynağıdır.",
@@ -2532,7 +2532,7 @@
       "E": "Modern kapitalist sistemde sınırsız kazanç peşinde koşma büyük riskler yaratmaktadır."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Modernleşme ve Küreselleşme",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2543,7 +2543,7 @@
     "id": 52443,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 128,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi \"Ali egzersiz yapmazsa sağlıklı yaşamaz.\" önermesinin değillenmiş hâlidir?",
     "secenekler": {
       "A": "Ali egzersiz yapmazsa sağlıklı yaşar.",
       "B": "Ali egzersiz yaparsa sağlıklı yaşar.",
@@ -2563,7 +2563,7 @@
     "id": 52444,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 129,
-    "soru": "",
+    "soru": "Descartes, Felsefenin İlkeleri adlı eserinde: \"Gerçeği arayanın yaşamında bir kez tüm şeylerden gücü yettiği ölçüde kuşku duyması gerekir.\" ve \"Bu nedenle kendilerinden kuşku duyulan tüm şeylere yanlış gözüyle bakmak da yararlı olur.\" der. Böylelikle o, en ufak bir kuşku içeren her şeyin yanlış kabul edildiği bir başlangıç noktası belirler. Bu, hiçbir konuda kesin ve doğru bilgi diye bir şeyin olmadığını öne süren İlk Çağ kuşkucularının yaklaşımından farklıdır.\n\nBuna göre Descartes'ı İlk Çağ kuşkucularından ayıran özelliği aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Duyu deneyiminden kuşku duymuyor olması",
       "B": "Kuşkuyu doğru bilgiye ulaşmak için bir yöntem olarak kullanması",
@@ -2572,7 +2572,7 @@
       "E": "Bilgi edinmede aklın tek başına yetersiz olduğunu öne sürmesi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "15-17. Yüzyıl Felsefesi",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2583,7 +2583,7 @@
     "id": 52445,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 130,
-    "soru": "",
+    "soru": "\"Yorgunluk Toplumu\" kavramı modern toplumun bireyler üzerindeki aşırı performans baskısını ve tükenmişliği ifade eder. Böyle bir toplumda bireyler dışsal bir otorite yerine kendilerini \"Yapabilirsin!\", \"Daha iyisini yap!\" gibi içselleştirilmiş sloganlarla motive etmeye ve sürekli daha iyi olmaya zorlar. Bir ofis çalışanının sabah erken kalkıp spor yapması, iş yerinde proje geliştirmek için fazla mesaiye kalması, akşam sosyal medyada motive edici içerikler izlemesi ve kişisel gelişim kurslarına katılması bu duruma örnek verilebilir. Modernleşme sürecinde özgürce seçimlerde bulunduğunu zannederken bir performans öznesi hâline gelen birey, aslında kendisinin ötekisi olmakta ve kendini tüketmektedir.\n\nBu parçadan modernleşmeye ilişkin aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Modernleşme, toplum kesimlerini farklı açılardan etkileyebilir.",
       "B": "Birey modernleşmeyi kendi amaçlarına göre içselleştirebilir.",
@@ -2592,7 +2592,7 @@
       "E": "Modernleşme, bireyin kendine yabancılaşmasına yol açabilir."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Modernleşme ve Küreselleşme",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2603,7 +2603,7 @@
     "id": 52446,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 131,
-    "soru": "",
+    "soru": "\"$p$ - doğru\", \"$q$ - doğru\" ve \"$r$ - yanlış\" değerlerini aldığında $[(p \\lor \\sim q) \\land (p \\Rightarrow r)]$ önermesi doğru değerini almaktadır.\n\nBuna göre \"?\" işareti ile gösterilen yere aşağıdakilerden hangisi getirilmelidir?",
     "secenekler": {
       "A": "$\\Rightarrow$",
       "B": "$\\Leftrightarrow$",
@@ -2623,7 +2623,7 @@
     "id": 52447,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 132,
-    "soru": "",
+    "soru": "Toplumun devamı ve istikrarı onu oluşturan birey ve grupların bir arada yaşamasına ve ortak hedeflere yönelmesine bağlıdır. Örneğin bir ülkeden başka bir ülkeye göç eden halkların burada karşılıklı evlilik, komşuluk ve ticaret yapmaları ile hızlı bir şekilde göç ettikleri ülkenin dilini öğrenmeleri o ülkenin millî kimliğini benimsemelerine etki etmiştir.\n\nBu parçada vurgulanan kavram aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Toplumsal gelişme",
       "B": "Toplumsal ilişki",
@@ -2632,7 +2632,7 @@
       "E": "Toplumsal değişme"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Sosyoloji",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2643,7 +2643,7 @@
     "id": 52448,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 133,
-    "soru": "",
+    "soru": "$(p \\lor \\sim q) \\Rightarrow r$ önermesinin eş değeri aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$(\\sim p \\lor \\sim q) \\lor r$",
       "B": "$(\\sim p \\land q) \\lor r$",
@@ -2652,7 +2652,7 @@
       "E": "$(p \\Rightarrow \\sim q) \\land r$"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Tutarlılık, Geçerlilik, Eşdeğerlik Denetlemesi",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2663,7 +2663,7 @@
     "id": 52449,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 134,
-    "soru": "",
+    "soru": "Bir genç neye ilgi duyduğu, kariyeriyle ilgili nasıl kararlar vereceği, ileride nasıl biri olmak istediği gibi farklı konularda çok fazla sorunun cevabını aramakla meşguldür. Bu süreçte ev içinde anne babasıyla daha az zaman geçirmekte, fikirlerini anne babasıyla paylaşmaktansa arkadaşlarıyla paylaşarak onların görüşlerini değerli bulmaktadır.\n\nBu genç, Erikson'un Psikososyal Kuramı'nın aşağıdaki dönemlerinden hangisinin çatışmasını yaşamaktadır?",
     "secenekler": {
       "A": "Özerkliğe karşı kuşku ve utanç",
       "B": "Girişimciliğe karşı suçluluk",
@@ -2672,7 +2672,7 @@
       "E": "Yakınlığa karşı yalıtılmışlık"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Psikoloji - Erikson'un Psikososyal Kuramı",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2683,7 +2683,7 @@
     "id": 52450,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 135,
-    "soru": "",
+    "soru": "Bazı kavramlara örnek oluşturabilecek durumlar şu şekildedir:\n\n• Bir banka müdürünün eğitim amacıyla uzun süre yurt dışına çıkması\n\n• Bir öğretmenin doktorasını tamamlayıp üniversitede öğretim üyesi olması\n\n• Sanayileşmeyle birlikte şehirde yaşayan nüfusun artması\n\n• Yeni uzmanlık alanlarının ortaya çıkmasıyla birlikte orta sınıfın güç kazanması\n\nBu parçada aşağıdaki kavramların hangisine örnek verilmemiştir?",
     "secenekler": {
       "A": "Toplumsal tabakalaşma",
       "B": "Kentleşme",
@@ -2692,7 +2692,7 @@
       "E": "Toplumsal bütünleşme"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Sosyoloji",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2703,7 +2703,7 @@
     "id": 52451,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 136,
-    "soru": "",
+    "soru": "Bütün yorumlamaları doğru değeri alan önermeye totoloji denir.\n\nBuna göre aşağıdaki önermelerden hangisi bir totolojidir?",
     "secenekler": {
       "A": "$\\sim p \\land p$",
       "B": "$\\sim p \\lor p$",
@@ -2712,7 +2712,7 @@
       "E": "$\\sim\\sim p \\land p$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Tutarlılık, Geçerlilik, Eşdeğerlik Denetlemesi",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2723,7 +2723,7 @@
     "id": 52452,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 137,
-    "soru": "",
+    "soru": "Rönesans ile birlikte Orta Çağ'ın erekselci bilim anlayışı, yerini olgu ve olayları nedensel bir bakış açısıyla daha iyi açıklayan ve geleceği kestirmede daha başarılı olan yeni bilim anlayışına bıraktı. Orta Çağ'da bilim, kilisenin hizmetindeydi ve bir açıklamanın doğruluğunu, geçerliliğini saptamak onun Platon ve Aristoteles'in Hristiyanlıkça benimsenmiş düşüncelerine uygunluğunu araştırmaktan geçmekteydi. Dolayısıyla eski bilimin yıkılması; düşüncede söz konusu yetkelerin bir doğruluk ölçütü olmaktan çıkmasına ve dogmaların terk edilerek düşünsel özgürlüğün filizlenmesine yol açtı. Modern bilim anlayışıyla birlikte açıklamaların doğruluğu yeni bir ölçüte göre saptanıyordu: Ussallık.\n\nBuna göre aşağıdakilerden hangisi modern bilim anlayışıyla birlikte bilimsel bilginin temel kaynağı hâline gelmiştir?",
     "secenekler": {
       "A": "Mutlak doğrular",
       "B": "Otoritelerin görüşleri",
@@ -2732,7 +2732,7 @@
       "E": "Ontolojik normlar"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Bilim Felsefesi",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2743,7 +2743,7 @@
     "id": 52453,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 138,
-    "soru": "",
+    "soru": "Aşağıdakilerin hangisinde yaklaşma-yaklaşma çatışması yaşanmıştır?",
     "secenekler": {
       "A": "Canı dondurma isteyen Merve'nin kilo almaktan çekindiği için dondurma yemekten vazgeçmesi",
       "B": "Yeni bir televizyon almak isteyen Banu'nun istediği ürünün mağazada indirimde olmasına sevinmesi",
@@ -2752,7 +2752,7 @@
       "E": "Riskli bir ameliyat ile ciddi yan etkileri olan ilaç tedavisi arasında kalan bir hastanın ameliyatı tercih etmesi"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Psikoloji - Stres ve Savunma Mekanizmaları",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2763,7 +2763,7 @@
     "id": 52454,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 139,
-    "soru": "",
+    "soru": "Her toplum, onu diğer toplumlardan ayıran belli ortak imge ve temsillere sahiptir. Bu imgeler toplumun üyelerine değerli idealler olarak aktarılır ve bunlarla duygusal bağlar kurmaları sağlanır. Toplumsal aidiyet duygusunun gelişimi ve ortak bir kimliğin oluşumu bu bağlar üzerinden gerçekleşir. Böylece ortak imgeler toplumun üyelerini kaynaştıran ve birlikteliği sağlayan bir çimento vazifesi görür.\n\nBu parçaya göre ortak imgelerin toplumsal işlevi aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Toplumsal dayanışma",
       "B": "Toplumsal tabakalaşma",
@@ -2772,7 +2772,7 @@
       "E": "Toplumsal kontrol"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Sosyoloji",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2783,7 +2783,7 @@
     "id": 52455,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 140,
-    "soru": "",
+    "soru": "Birden fazla önermenin birbiriyle tutarlı olması, bu önermeleri birlikte doğru kılan ortak doğrulayıcı yorumun bulunmasıyla mümkündür.\n\nBuna göre bir arada tutarsız olan,\n\nI. Ali evdedir veya iş yerindedir.\n\nII. Ali evde değildir.\n\nIII. Ali iş yerinde değildir.\n\nönermelerinde aşağıdaki değişikliklerden hangisi yapılırsa önermeler birbirleri ile tutarlı hâle gelir?",
     "secenekler": {
       "A": "I. önerme \"Ali hem evdedir, hem iş yerindedir.\" olursa",
       "B": "I. önerme \"Ali evde değildir ama iş yerindedir.\" olursa",
@@ -2792,7 +2792,7 @@
       "E": "III. önerme \"Ali evde olmadığı için iş yerinde değildir.\" olursa"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Tutarlılık, Geçerlilik, Eşdeğerlik Denetlemesi",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2803,7 +2803,7 @@
     "id": 52456,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 141,
-    "soru": "",
+    "soru": "Kant'ın amacı, metafizikte de bilimlerdeki gibi bilgilerin elde edilip edilemeyeceğini göstermektir. Bunun için önce bilginin oluşumunu açıklamaya çalışır. O, aklın kullanımını teorik ve pratik olarak ikiye ayırır. Teorik aklın sınırları içindeki doğa bilgimizin temelinde şekilsiz bir sıvıya benzeyen duyu verileri bulunur. Bu duyu verileri, anlama yetimizde önceden hazır olarak bulunan (apriori) ve bir kap gibi iş gören kategorilere yerleştirilerek bilgi hâline getirilir. Teorik akıl; ruh, tanrı vb. ideler üzerinde düşünmeye başladığındaysa çelişkilere düşer. Çünkü bu ideler duyularla algılanamadığından kategorilerle de biçimlendirilemez. Artık duyular üstüyle ilgili olan pratik aklın alanına girilmiş demektir.\n\nBu parçadan aşağıdaki yargıların hangisi çıkarılamaz?",
     "secenekler": {
       "A": "Metafizik bilgi ancak teorik akıl vasıtasıyla elde edilebilir.",
       "B": "Bilginin oluşum sürecinde zihin ve duyum birlikte çalışır.",
@@ -2812,7 +2812,7 @@
       "E": "Doğa ile ilgili bilgilerimizin temelinde duyu verilerinin kategorilerle işlenmesi vardır."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "18-19. Yüzyıl Felsefesi",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2823,7 +2823,7 @@
     "id": 52457,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 142,
-    "soru": "",
+    "soru": "Kişiler bazen rahatsız edici buldukları, hoşa gitmeyen veya tehdit edici içerikli duygu ve düşüncelerini başkalarına yöneltirler. Bu durum, kişinin benliğini kaygıdan koruyan savunma mekanizmaları içinde yer alır ve yansıtma olarak adlandırılır.\n\nBuna göre aşağıdakilerden hangisi \"yansıtma\"ya örnektir?",
     "secenekler": {
       "A": "Bir kişinin eşine yalan söylediği için yoğun suçluluk ve utanç duygusu yaşaması",
       "B": "Arkadaşına karşı sevgi dolu hisler besleyen birinin arkadaşının kendisinden hoşlanmadığını düşünmesi",
@@ -2832,7 +2832,7 @@
       "E": "Hangi işi seçeceğine bir türlü karar veremeyen birinin psikolojik destek almaya karar vermesi"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Psikoloji - Savunma Mekanizmaları (Yansıtma)",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2843,7 +2843,7 @@
     "id": 52458,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 143,
-    "soru": "",
+    "soru": "2025 yılında Oxford Sözlüğü'nün yılın sözü olarak seçtiği \"öfke yemi\", çevrim içi içeriklerin kullanıcıların öfke ve tepkisel davranışlarını bilinçli olarak tetiklemek üzere yapılandırıldığı bir iletişim stratejisini ifade eder. Öfke yemi barındıran içerikler genellikle normatif beklentileri aşındırıp duyguları metalaştırarak sosyal medya etkileşimi ve internet trafiğini artırmayı amaçlar. Öfke yemleri, dijital platformların algoritmik düzenlemeleriyle birleşerek bireylerin duygu denetleme süreçlerini etkisi altına alır. Kullanıcıların dikkatini olumsuz duygular üzerine çekip kamusal söylemi daha tepkisel hâle getirerek sosyal ilişkilerde toplumsal kutuplaşmayı derinleştirir.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Topluma zarar veren kavramların farkındalığı toplumsal bütünleşmeyi olumlu yönde etkiler.",
       "B": "Her birey, kültürünün normatif yapısını içselleştirme sürecinde toplumla çatışma yaşar.",
@@ -2852,7 +2852,7 @@
       "E": "Sosyal medyanın denetimsizliği toplumsal alanda bireyselliğin artmasına yol açar."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Sosyoloji",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2863,7 +2863,7 @@
     "id": 52459,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 144,
-    "soru": "",
+    "soru": "I. Bir önerme, doğru ve yanlış dışında başka bir değer daha alabilir.\n\nII. Bütün tümel önermeler geçersizdir.\n\nIII. Geçerlilik denetimi yapılamaz.\n\nIV. Bir önermenin doğruluk değeri, olasılık olarak ifade edilebilir.\n\nYukarıdaki ifadelerden hangileri çok değerli mantığın özelliklerindendir?",
     "secenekler": {
       "A": "I ve II",
       "B": "I ve III",
@@ -2872,7 +2872,7 @@
       "E": "II ve IV"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Çok Değerli Mantık",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2883,7 +2883,7 @@
     "id": 52460,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 145,
-    "soru": "",
+    "soru": "Kant'a göre eylemin yalnızca kendisine bakıp ahlaki olup olmadığını çıkarmak mümkün değildir. Örneğin Ahmet ve Mehmet adında iki manav düşünelim. Ahmet'in hayattaki esas gayesi zenginleşmektir. Bu nedenle müşterilerine hakkaniyetli davrandığına dair bir izlenim oluşturursa uzun vadede daha çok para kazanacağını düşünür. Dolayısıyla müşterilerine her zaman para üstü vermek için titiz davranır. Mehmet ise müşterilerini dolandırmanın ahlaken yanlış olacağına hükmetmiştir. Bu karar onun her zaman doğru para üstü verme davranışını benimsemesine yol açmıştır. Böyle davrandığında çok para kazanıp kazanmayacağı da umrunda değildir. Dışarıdan bakıldığında bu iki manavın \"doğru para üstü verme\" eylemleri birbirinden farksız görünebilir. Oysa Kant açısından ahlaki olan Mehmet'in eylemidir.\n\nBu parçaya göre Kant'ta bir eylemin ahlaki olması temel olarak neye bağlıdır?",
     "secenekler": {
       "A": "Mutluluk sağlamasına",
       "B": "Ölçülü olmasına",
@@ -2903,7 +2903,7 @@
     "id": 52461,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 146,
-    "soru": "",
+    "soru": "I. Bireyin çocukluğunda yaşadığı travmatik olayların, yetişkinliğinde yaşadığı fobilerle ilişkisi var mıdır?\nII. Bir iş yerinde çalışanlar arasındaki çatışmalar, çalışanların iş yerine bağlılıklarını olumsuz yönde etkiler mi?\nIII. Yeni doğmuş maymunların bir süre fiziksel temastan yoksun kalması maymunların yetişkinlikteki tepkilerini etkiler mi?\n\nYukarıdaki sorulardan hangileri, psikoloji biliminin konusu kapsamındadır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -2923,7 +2923,7 @@
     "id": 52462,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 147,
-    "soru": "",
+    "soru": "Diyelim ki okullarda öğretildiği şekliyle, suyun $100\\,^{\\circ}\\mathrm{C}$'de kaynadığının bilimsel bir yasa olduğuna inanıyoruz. Sayısı ne kadar çok olursa olsun doğrulayıcı durumlar bu yasayı tam olarak kanıtlamaya yetmez; çünkü yasanın geçerli olmadığı durumların bir araştırması henüz yapılmamıştır. Yasanın geçerli olmadığı durumların araştırılması, örneğin suyun kaynama derecesinin kapalı kaplarda ve deniz seviyesinden yüksek yerlerde daha farklı olduğunun gözlemlenmesi, yasanın \"Su deniz seviyesinde ve açık havada $100\\,^{\\circ}\\mathrm{C}$'de kaynar.\" şeklinde yeniden düzenlenmesine yol açacaktır. Bu şekilde bir yasanın geçerli olmadığı durumların araştırılması aslında yasanın hakikate daha çok yaklaştırılması anlamına gelecektir.\n\nBu parçada bilimsel bir yasanın denetlenmesiyle ilgili aşağıdakilerden hangisi vurgulanmaktadır?",
     "secenekler": {
       "A": "Dolaylı doğrulanabilir olması",
       "B": "Doğrudan doğrulanabilir olması",
@@ -2943,7 +2943,7 @@
     "id": 52463,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 148,
-    "soru": "",
+    "soru": "Çoğu zaman bir insanın dışardan görünümü bedeni de dâhil olmak üzere onun sahip olduğu kültürü ve hayatı algılama biçimini yansıtır. Kimi zaman giydiği bir kıyafetten, jest ve mimiklerinden veya yürüyüşünden hatta sadece gülüşünden bile bir insanın hangi kültürde yetiştiğini, hangi dine mensup olduğunu, hangi siyasi görüşe sahip olduğunu hatta hangi takımı tuttuğunu anlayabiliriz.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Kültür, üyelerinin fiziksel ve zihinsel dünyalarına gözlenebilir anlamlar yükler.",
       "B": "Kültür, giyim kuşam beğenilerini yönlendiren moda üzerinden kendini gösterir.",
@@ -2952,7 +2952,7 @@
       "E": "İnsan, içinde doğduğu kültürü kendi düşünceleriyle yeniden üretir."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplum ve Kültür - Kültürün Anlamı ve İşlevleri",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2963,7 +2963,7 @@
     "id": 52464,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 149,
-    "soru": "",
+    "soru": "Nietzsche'nin \"güç istenci\" anlayışı oldukça farklı şekillerde yorumlanmış hatta bu yorumların bazıları onu suçlayacak bir noktaya dahi ulaşmıştır. \"Güç istenci\"nin, insanın diğer insanlar üzerinde egemenlik kurma isteği olarak yorumlanışına karşı Nietzsche'nin çağdaş yorumcularından Deleuze, kavrama açıklık getirmek amacıyla şunları söyler: \"İstencin gücü istemesi, gücü bir erek olarak arzulaması ve ardı sıra gitmesi demek olmadığı gibi, gücün, istencin dürtüsü olması demek de değil. Gücün iradesi özünde yaratıcı ve donandırıcıdır: Bir şeye iç geçirmez, aramaz, arzulamaz ve özellikle de gücü arzulamaz. Verir: Güç, istençte 'verici erdem' olarak vardır; istenç, güç vasıtasıyla bizzat anlam ve değer donatıcıdır.\"\n\nBuna göre \"güç istenci\" için aşağıdakilerden hangisi söylenebilir?",
     "secenekler": {
       "A": "İnsanın ihtiyaçları tarafından belirlenir.",
       "B": "İnsanın yeni değerler oluşturabilmesini sağlar.",
@@ -2972,7 +2972,7 @@
       "E": "İnsanların mutluluğunu amaçlar."
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Felsefe Tarihi / Nietzsche",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -2983,7 +2983,7 @@
     "id": 52465,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 150,
-    "soru": "",
+    "soru": "Modern teknoloji, bilgiyi tarihte hiç olmadığı kadar erişilebilir kıldı ancak bu durum toplumun genelinde beklendiği gibi entelektüel bir sıçramaya neden olmadı. Aksine bireyler devasa bir veri akışı içinde boğulurken karmaşık fikirleri sentezleme, derinlemesine analiz etme ve özgün düşünce üretme yetilerini yitirmeye başladı. Bu süreçte popüler kültür; bireylere sorgulama gerektirmeyen, hızlı tüketilen ve standartlaştırılmış içerikler sunarak söz konusu zihinsel gerilemeyi derinleştirdi. Böylece yüksek teknoloji kullanan ancak düşünsel düzlemde birbirine benzeyen, eleştiri yeteneği zayıf ve yönlendirilmeye açık bir \"kitle toplumu\" yapısı ortaya çıkmaya başladı. Burada asıl sorun ise maddi araçların mükemmelleşmesine karşın insanın bu araçları kullanacak muhakeme kapasitesinin sığlaşmasıdır.\n\nBu parçada aşağıdaki kavramlardan hangisi vurgulanmaktadır?",
     "secenekler": {
       "A": "Toplumsal çözülme",
       "B": "Toplumsal bütünleşme",
@@ -2992,7 +2992,7 @@
       "E": "Kültürel gecikme"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplum ve Kültür - Kültürün Anlamı ve İşlevleri",
     "yil": "2026",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3003,7 +3003,7 @@
     "id": 52466,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 151,
-    "soru": "",
+    "soru": "Bilimsel devrim dönemlerinde, olağan bilimsel gelenek değiştiği zaman, bilim insanı çevresini algılamayı yeni baştan öğrenmek zorundadır yani tanıdığı koşullar içinde yeni kalıplar görmeyi öğrenmesi gerekmektedir. Bunu yaptıktan sonra araştırma dünyası birçok noktada eskiden yaşadığı dünyayla bağdaşmayan ölçüler taşıyacaktır. Farklı paradigmaların içinde gelişen ekollerin her zaman birbirlerine biraz ters düşen amaçlar benimsemelerinin bir başka nedeni de budur.\n\nThomas Kuhn'un bu parçada öne sürdüğü bilim anlayışının temel savı aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "Bilim, paradigmaların değişmesi yoluyla sıçramalar ve kopuşlar sergiler.",
       "B": "Bilim, ilk teoriden son teoriye kadar paradigmatik devamlılık sergiler.",
@@ -3012,7 +3012,7 @@
       "E": "Bilim, bilim insanlarının çalışmaları sonucunda ortaya çıkan ürünlerin paradigmatik bütünüdür."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Bilim Felsefesi / Kuhn",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3023,7 +3023,7 @@
     "id": 52467,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 152,
-    "soru": "",
+    "soru": "Uzak coğrafyalarda farklı dinlere mensup, başka dilleri konuşan ve çok değişik yaşam biçimleri olan milyarlarca insan var. Yalnız başka ülkelerde değil, aynı şehirde hatta oturduğumuz apartmanda bile bizden farklı giyinen, konuşan ve bizimkinden farklı davranışlara sahip insanları görebiliriz. \"Burada değil, orada doğmuş olsaydım.\" diye düşünmek, bizim kendi kültürümüzü anlamlı ve değerli bulduğumuz ölçüde başkalarının da kendi kültürlerini anlamlı ve değerli bulduklarını fark etmemizi sağlar.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Başka kültürleri tanıma sürecinde kendi kültür ögelerini benimsemek doğaldır.",
       "B": "Çeşitli yaşam biçimleriyle empati kurmak, kültürel farklılıkları anlamayı kolaylaştırır.",
@@ -3032,7 +3032,7 @@
       "E": "Farklı yaşam biçimlerine sahip bireyler, içinde yaşadıkları baskın kültüre uyum sağlar."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplumsal Kültürün Önemi",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3043,7 +3043,7 @@
     "id": 52468,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 153,
-    "soru": "",
+    "soru": "H. G. Gadamer'e göre hermeneutik, tarihin ve kültürün bütünü hakkında konuşmanın olanağı olarak \"anlamın anlamı\" üzerine düşünmeyi ifade etmektedir. Bu düşünmeyi gerçekleştiren özne; düşünmesini belirleyen koşullardan bağımsız değildir, öznenin tarihi ve kültürü anlamasını sağlayacak araçlar olan dilsel eserler ve metinler de aynı koşullar içinde şekillenmektedir. Dolayısıyla hermeneutik, öznenin sahip olduğu anlam oluşturma araçlarının ve kendisine nüfuz edilecek kültürle tarihin bir arada ele alınmasını gerektirmektedir.\n\nBu parçadan hermeneutikle ilgili aşağıdaki yargıların hangisine ulaşılamaz?",
     "secenekler": {
       "A": "Öznenin düşünsel süreçlerini dikkate alır.",
       "B": "Yazılı kültür ürünlerini anlamın kaynağı olarak görür.",
@@ -3052,7 +3052,7 @@
       "E": "Tarih üzerine refleksiyonda bulunma olanağı sağlar."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Hermeneutik",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3063,7 +3063,7 @@
     "id": 52469,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 154,
-    "soru": "",
+    "soru": "İnsanlığın ilk dönemlerinden bu yana var olan aileyle ilgilenen birçok sosyolog, ailenin evrensel tek bir modeli olamayacağını belirtir. Aile kurumu zaman içinde ve kültürlere göre farklılık gösterir. Örneğin İngiltere'de Viktorya Dönemi'ndeki aile içi ilişkilerde günümüzde kabul edilemez katı kurallara dayalı fiziksel cezalandırmalar, kadının ev ortamına kapatılması ve çocukların çalıştırılması söz konusuyken bugün birçok toplumda aile içi ilişkiler daha demokratikleşmiştir. Günümüzde dünya genelinde farklı toplumlarda geniş aile, çekirdek aile, tek ebeveynli aile gibi çeşitli aile türleri tanımlanmaktadır.\n\nBu parçada \"aile kurumu\"nun hangi özelliği vurgulanmaktadır?",
     "secenekler": {
       "A": "Yetişkin üyelerin çocuklarının bakımından sorumlu olduğu",
       "B": "Zaman içinde diğer toplumsal kurumlarla ilişkisinin zayıfladığı",
@@ -3072,7 +3072,7 @@
       "E": "Tarihsel süreç içinde değişim geçirse de varlığını koruduğu"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplumsal Kurumlar - Aile Kurumu ve Evlilik",
     "yil": "2018",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3083,7 +3083,7 @@
     "id": 52470,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 155,
-    "soru": "",
+    "soru": "\"İnsanın sıkıntılı olduğu durumlarda zaman sanki duruyor, hiç geçmiyor.\" diyen Can'a, öğretmeni \"Zaman her durumda aynıdır; anlar, saniyeler, dakikalar, saatlerden vb. oluşur. On dakika her durumda 'on dakika'dır.\" şeklinde yanıt verir. Buna karşılık Can \"Ama bu dersteki on dakika benim için bir ömür gibi!\" der.\n\nBu parçadaki öğretmen, zamanın her durumda aynı olduğunu savunarak Bergson'un felsefesindeki hangi görüşe karşı çıkmaktadır?",
     "secenekler": {
       "A": "Yaşam ve zaman bir ilk atılımla başlar.",
       "B": "İnsan bilincinin dışındaki şeyler süre geçirmezler.",
@@ -3092,7 +3092,7 @@
       "E": "Mekânda süre yoktur, sadece zamandaşlıklar vardır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Bergson ve Zaman",
     "yil": "2021",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3103,7 +3103,7 @@
     "id": 52471,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 156,
-    "soru": "",
+    "soru": "Geleneksel toplumlarda bireyin toplumsal konumunu belirleyen en temel unsur ailedir. Ancak modern toplumlarda toplumsal konum sadece aileden devralınmaz. Ailenin içinde bulunduğu sosyal çevre ile toplumsal sınıf, bireyin toplumsallaşma kalıplarını etkiler. Çocuklar, anne babalarının yanı sıra yaşadıkları mahalle veya topluluk içindeki kişilerin de davranış biçimlerinden etkilenirler.\n\nBu parçada aşağıdakilerden hangisine vurgu yapılmaktadır?",
     "secenekler": {
       "A": "Toplumsal bir kurum olarak aile, her toplumda aynı işleve sahiptir.",
       "B": "Ailenin toplumsal konumu, içinde bulunduğu sosyal çevreyle ilgilidir.",
@@ -3112,7 +3112,7 @@
       "E": "Modern toplumlarda aile ilişkileri geleneksel toplumlara göre daha yoğundur."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Sosyoloji",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3123,7 +3123,7 @@
     "id": 52472,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 157,
-    "soru": "",
+    "soru": "Nicolai Hartmann, modern felsefeyle başlayan özne merkezli varlık anlayışına karşı çıkarak \"yeni ontoloji\" adını verdiği öğretisini ortaya koyar. Ona göre insanın kendisini dünyanın merkezine koyarak varlıklara yaklaştığı eski ontolojilerin en büyük yanılgısı, varlığa dolayımlı bakarak var olanların nesnelliğini gözden kaçırmalarıdır. Hartmann; insana dünyanın merkezi değil, yalnızca bir parçası olarak yaklaşıldığında nesnelerin varlığının insana bağlı olmadığının anlaşılacağını ileri sürer. O, sadece bu yolla varlığa ve bilgiye dair çözülemez görünen sorunların üstesinden gelinebileceği düşüncesindedir.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Metafizik problemlerle uğraşmaktan vazgeçmek gerekir.",
       "B": "Varlık ve bilgi sorunlarına aynı perspektiften yaklaşılmamalıdır.",
@@ -3132,7 +3132,7 @@
       "E": "Dünyaya yönelimimiz daima subjektif olmak zorundadır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Yeni Ontoloji",
     "yil": "2022",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3143,7 +3143,7 @@
     "id": 52473,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 158,
-    "soru": "",
+    "soru": "Sanayileşmenin gerçekleştiği toplumlarda tarım toplumunun yerini sanayi toplumu almaya başlamış ve böylece kırdan kente göçler artmıştır. Bu durumu gözlemleyen kimi sosyologlar, daha çok kırsal alanda yaygın ve işlevsel olan geniş aile tipinden zamanla çekirdek aileye doğru doğal bir geçişin yaşanacağı öngörüsünde bulunmuştu. Ancak özellikle günümüz kentlerinde anne ve babanın çalıştığı, büyükanne ile büyükbabanın ise torunlara bakmak için çocuklarının yanına taşındığı ailelere de sıkça rastlanmaktadır.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Aile tiplerinin varlığı toplumdaki işlevlerinin devam etmesine bağlıdır.",
       "B": "Sanayileşme çalışma saatlerindeki artışla birlikte aile içi iletişimi azaltmıştır.",
@@ -3152,7 +3152,7 @@
       "E": "Sanayileşmeyle ortaya çıkan çekirdek aile gelecekte ortadan kalkacaktır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Sosyoloji",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3163,7 +3163,7 @@
     "id": 52474,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 159,
-    "soru": "",
+    "soru": "Nurettin Topçu, Batı felsefesinin yöntem ve kavramlarını kullanmasına rağmen meselelere kendi ahlaki ve kültürel problemlerimiz açısından yaklaşmıştır. \"İsyan ahlakı\" olarak adlandırdığı felsefesinde onun amacı; kendi buhranlarımız karşısında geçmişe övgüler düzmek ya da ağıt yakmaktan daha çok, görev bilinciyle evrensel standartlarda, bugün yaşayan insanımız için yepyeni bir dünya kurma idealini harekete geçirmektir. Bu bağlamda Topçu'ya göre insandan başlayarak tabiatla ve hatta kâinatla dost olup yeni bir dünya görüşü ve toplum düzeni kurmak temel hedef olmalıdır.\n\nBuna göre aşağıdakilerden hangisi \"isyan ahlakı\"nın bir özelliği olarak gösterilemez?",
     "secenekler": {
       "A": "Evrensel olması",
       "B": "Toplumun beklentilerini karşılaması",
@@ -3172,7 +3172,7 @@
       "E": "Yenilikçi olması"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Ahlak Felsefesi",
     "yil": "2023",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3183,7 +3183,7 @@
     "id": 52475,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 160,
-    "soru": "",
+    "soru": "Son yıllarda İngiltere'de oy kullananların sayısı azalmakta, daha az insan seçimlerde aday olmakta ve siyasi partilere katılmaktadır. Çoğu insan yaşadığı bölgede veya genel olarak ülkede karar mekanizması üzerinde etkisi olduğuna inanmamakta ve seçilmiş temsilcilerle çok az iletişime geçmektedir. İçinde yaşadıkları topluluklarda gönüllü işlere katılanların sayısında da ciddi bir düşüş yaşanmaktadır. Örneğin, 2009'da İngiltere'de yapılan bir araştırmada, nüfusun yarısından fazlasının, bir milletvekiliyle ya da belediye meclis üyesiyle iletişime geçmek veya siyasi bir mitinge gitmek gibi hiçbir siyasi aktiviteye katılmadığı tespit edilmiştir.\n\nBu parçada aşağıdaki kavramlardan hangisinin eksikliğinden bahsedilmektedir?",
     "secenekler": {
       "A": "Katılımcı demokrasi",
       "B": "Hümanizm",
@@ -3192,7 +3192,7 @@
       "E": "Temsilî demokrasi"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Siyasal Yönetim Biçimleri",
     "yil": "2019",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3203,7 +3203,7 @@
     "id": 52476,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 161,
-    "soru": "",
+    "soru": "Aklın karşısına tutkuyu, bilmenin karşısına kişisel deneyimi koyan Kierkegaard, felsefe tarihinde alışılmadık bir hakikat anlatısına imza atmış, aklın egemenliğini sarsan yaklaşımıyla varoluşçuluğun öncülerinden olmuştur. Ona göre evrensel ahlak yasaları ve onlarla ilgili kuramsal fikirler, hakikatin kavranması bağlamında kişiye ışık tutamaz. Hakikatin kendisi olan Tanrı'ya ulaşmanın biricik yolu imandır. İman ise aklı aşan, anlatılamaz ve öğretilemez bir yaşamsal güç olması dolayısıyla biricik bir ruhsal durumdur. Düşüncenin içinde değil ötesinde konumlanan imanın, bir bulunuşa ve olmaya işaret etmesi onu dile gelmez ve paylaşılamaz kılmaktadır.\n\nBuna göre Kierkegaard'ın varoluşçuluğuyla ilgili aşağıdakilerden hangisi söylenebilir?",
     "secenekler": {
       "A": "İnsanın kuramsal bir açıdan irdelenmesini amaçlar.",
       "B": "İnsana sadece imanı olan bir varlık gözüyle bakar.",
@@ -3212,7 +3212,7 @@
       "E": "İnsanın mutlak hakikate sorgulayarak ulaşabileceğini söyler."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Varoluşçuluk",
     "yil": "2025",
     "sinav_adi": "AYT",
     "sekilli": false,
@@ -3223,7 +3223,7 @@
     "id": 52477,
     "ders": "AYT FELSEFE GRUBU",
     "soru_no": 162,
-    "soru": "",
+    "soru": "Benim engelim konuşamamam, engelliliğim ise benimle nasıl iletişim kuracağını öğrenmek için insanların zaman ayıramaması ya da buna zahmet etmemesi gerçeğidir. Benim engelim yürüyememem, engelliliğim ise belediyenin engelliye uygun kaldırım ve yol yapmaması, toplu taşıma araçlarını engellilerin biniş ve inişine uygun hâle getirmemesidir.\n\nBu parçadan aşağıdaki yargıların hangisine ulaşılabilir?",
     "secenekler": {
       "A": "Engellilere her alanda pozitif ayrımcılık uygulanmalıdır.",
       "B": "Engellilerin temel sorunu sosyal engellemelerdir.",
@@ -3232,7 +3232,7 @@
       "E": "Engellilerin sağlık hizmetleri ücretsiz olmalıdır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Toplumsal Engeller",
     "yil": "2020",
     "sinav_adi": "AYT",
     "sekilli": false,

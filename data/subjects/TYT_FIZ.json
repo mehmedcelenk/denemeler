@@ -163,7 +163,7 @@
     "id": 53383,
     "ders": "TYT FİZİK",
     "soru_no": 9,
-    "soru": "",
+    "soru": "Futbol sahasının etrafında antrenman yapan üç atletizm öğrencisi antrenman sırasında aşağıda anlatıldığı gibi koşuyor. (Şekilde K ve L noktaları ile 1 ve 2 yönleri gösterilmiştir: K ve L noktaları saha çevresinde iki nokta; 1 yönü K'dan L'ye doğru, 2 yönü ise L'den K'ya doğru olan yönlerdir.)\n\n• Hakan: K noktasından 1 yönünde koşarak L noktasında duruyor.\n\n• Murat: K noktasından 2 yönünde koşarak L noktasında duruyor.\n\n• Selin: L noktasından 1 yönünde koşarak K noktasında duruyor.\n\nHakan, Murat ve Selin'in yer değiştirmeleri sırasıyla $\\Delta \\vec{X}_H$, $\\Delta \\vec{X}_M$ ve $\\Delta \\vec{X}_S$ arasındaki ilişki aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$\\Delta \\vec{X}_H = \\Delta \\vec{X}_M = \\Delta \\vec{X}_S$",
       "B": "$\\Delta \\vec{X}_H = \\Delta \\vec{X}_M = -\\Delta \\vec{X}_S$",
@@ -172,7 +172,7 @@
       "E": "$\\Delta \\vec{X}_H = 2\\Delta \\vec{X}_M = -2\\Delta \\vec{X}_S$"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Hareket - Yer Değiştirme",
     "yil": "2026",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -183,7 +183,7 @@
     "id": 53384,
     "ders": "TYT FİZİK",
     "soru_no": 10,
-    "soru": "",
+    "soru": "Freni bozulmuş olan bir otomobil, yatay düz bir yolda hareket ederken kütlesi kendi kütlesinden çok küçük olan bir çöp kovasına çarpmıştır. Bu sırada kaldırımda otobüs bekleyen Ahmet, Burçin ve Cevdet olaya tanık olmuş ve otomobil ile kovanın birbirlerine temas etmekte oldukları çok kısa süren çarpışma süreciyle ilgili aşağıdaki yorumları yapmışlardır.\n\n• Ahmet: Otomobilin kovaya uyguladığı kuvvet, kovanın otomobile uyguladığından büyüktür.\n\n• Burçin: Kovanın ivmesi, otomobilinkinden büyüktür.\n\n• Cevdet: Kovanın hızı, otomobilinkinden daha büyük değişim göstermiştir.\n\nBuna göre; Ahmet, Burçin ve Cevdet'in yorumlarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız Ahmet",
       "B": "Yalnız Burçin",
@@ -192,7 +192,7 @@
       "E": "Burçin ve Cevdet"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kuvvet - Newton'un Hareket Yasaları",
     "yil": "2020",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -303,7 +303,7 @@
     "id": 53390,
     "ders": "TYT FİZİK",
     "soru_no": 16,
-    "soru": "",
+    "soru": "Süsleme sanatlarından biri olan ebru, ebru teknesinde yer alan yoğunlaştırılmış su üzerinde yüzen toprak ve toz boyalarla resim ve desen oluşturma sanatıdır. Çiçeği kırmızı ve gövdesi yeşil renkli olan şekildeki gibi bir lale resmi oluşturmak amacıyla kullanılması planlanan su ve boyaların kütle-hacim grafiği aşağıda verilmiştir.\n\nGörselde bir lale resmi (kırmızı çiçek, yeşil gövde) ve su ile boyaların kütle-hacim grafiği verilmiştir. Grafikte A suyu, B suyu ve boyaların kütle-hacim doğruları yer almaktadır; boyaların özkütlesi suların özkütlesinden küçüktür ve boyalar su üzerinde yüzebilmektedir.\n\nŞekildeki lale resmini oluşturabilmek için ebru teknesinde\n\nI. Yalnızca A suyu kullanılabilir.\n\nII. Yalnızca B suyu kullanılabilir.\n\nIII. A ve B sularından elde edilen bir karışım kullanılabilir.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -323,7 +323,7 @@
     "id": 53391,
     "ders": "TYT FİZİK",
     "soru_no": 17,
-    "soru": "",
+    "soru": "Melike, marketten aldığı elmayı yıkamak için bir kaba bir miktar su doldurup elmayı içerisinde bırakıyor. Daha sonra elmanın bulunduğu kaptaki suya aynı sıcaklıkta bir miktar sirke döktüğünde kap tabanında batmış hâlde bulunan elma şekildeki gibi yüzmeye başlıyor.\n\nGörselde iki durum verilmiştir: Birinci kapta elma su içinde kap tabanında batmış hâlde, ikinci kapta ise sirkeli su içinde elma yüzer hâlde görülmektedir.\n\nSirke ile elma arasındaki etkileşim ihmal edildiğine göre\n\nI. Sirkeli suyun özkütlesi suyun özkütlesinden daha büyüktür.\n\nII. Suyun özkütlesi elmanın özkütlesinden daha büyüktür.\n\nIII. Sirkeli suyun özkütlesi elmanın özkütlesinden daha büyüktür.\n\nyargılarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -343,7 +343,7 @@
     "id": 53392,
     "ders": "TYT FİZİK",
     "soru_no": 18,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -363,7 +363,7 @@
     "id": 53393,
     "ders": "TYT FİZİK",
     "soru_no": 19,
-    "soru": "",
+    "soru": "Otoyolda hareket eden bir otomobilin 30 saniye boyunca yaptığı toplam yer değiştirmenin büyüklüğü ile bu sürede aldığı toplam yolun birbirine eşit olduğu gözlenmiştir.\n\nBuna göre otomobil 30 saniye boyunca,\n\nI. Sabit hızla hareket etmiştir.\n\nII. Sürekli aynı yönde gitmiştir.\n\nIII. Doğrusal bir yolda hareket etmiştir.\n\nyargılarından hangileri kesinlikle doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -383,7 +383,7 @@
     "id": 53394,
     "ders": "TYT FİZİK",
     "soru_no": 20,
-    "soru": "",
+    "soru": "Ali kolundaki akıllı saat sayesinde günlük adım sayısını ölçebilmektedir. Saat 08.00'de evinin dış kapısından çıkıp akşam 16.00'da evinin dış kapısındaki aynı noktaya geri dönen Ali bu zaman aralığında toplam 10.000 adım attığını tespit ediyor.\n\nAli'nin bir adımı ortalama 80 cm olduğuna göre belirtilen saatler arasındaki ortalama hızının büyüklüğü kaç km/h'tir?",
     "secenekler": {
       "A": "0",
       "B": "2",
@@ -403,7 +403,7 @@
     "id": 53395,
     "ders": "TYT FİZİK",
     "soru_no": 21,
-    "soru": "",
+    "soru": "Ahmet ve Canan bir koltuğa şekildeki gibi sola doğru sırasıyla $25\\text{ N}$ ve $10\\text{ N}$'lik kuvvetleri birlikte uygulamaktadır. Bu esnada koltuk ve yatay yüzey arasında $5\\text{ N}$'lik kinetik sürtünme kuvveti oluşmaktadır. Buna göre hareket esnasında koltuğa etkiyen net kuvvetin büyüklüğü ve yönü aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$10\\text{ N}$ - Sol",
       "B": "$30\\text{ N}$ - Sol",
@@ -412,7 +412,7 @@
       "E": "$40\\text{ N}$ - Sağ"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Newton'ın Hareket Yasaları",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -423,7 +423,7 @@
     "id": 53396,
     "ders": "TYT FİZİK",
     "soru_no": 22,
-    "soru": "",
+    "soru": "Hareket hâlindeki bir otomobil, tren ve uçağın sahip oldukları hızlar ve bu araçlara hareketleri süresince etki eden net kuvvetlerin büyüklükleri ile ilgili bilgiler aşağıda belirtildiği gibidir:\n• Sabit $100\\text{ km/h}$ hız ile hareket eden otomobile etki eden net kuvvetin büyüklüğü $F_1$ dir.\n• Hızı, durgun hâlden $200\\text{ km/h}$'e yükselen trene etki eden net kuvvetin büyüklüğü $F_2$ dir.\n• Pist boyunca sabit $250\\text{ km/h}$ hız ile hareket eden uçağa etki eden net kuvvetin büyüklüğü $F_3$ tür.\nBuna göre $F_1$, $F_2$ ve $F_3$ net kuvvetlerinin büyüklükleri arasındaki ilişki aşağıdakilerin hangisinde doğru olarak verilmiştir?",
     "secenekler": {
       "A": "$F_3 > F_1 = F_2$",
       "B": "$F_3 > F_2 > F_1$",
@@ -432,7 +432,7 @@
       "E": "$F_1 = F_2 = F_3$"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Newton'ın Hareket Yasaları",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -443,7 +443,7 @@
     "id": 53397,
     "ders": "TYT FİZİK",
     "soru_no": 23,
-    "soru": "",
+    "soru": "Bir öğretmen, kütlesi $1\\text{ kg}$ olan kitabı sınıfta, yatay bir masa üzerine hareketsiz duracak şekilde bırakmıştır. Öğrencilerine kitap, masa ve Yerküre'nin birbirlerine uyguladıkları kuvvetler hakkında düşüncelerini sormuştur. Kitaba veya masaya başka bir kuvvet etki etmediğine göre aşağıdaki öğrenci ifadelerinden hangisi yukarıda verilen bilgilerden çıkarılamaz? (Yer çekimi ivmesini $g=10\\text{ m/s}^2$ alınız.)",
     "secenekler": {
       "A": "Kitabın Yerküre'ye uyguladığı kuvvet $10\\text{ N}$'dir.",
       "B": "Yerküre'nin kitaba uyguladığı kuvvet $10\\text{ N}$'dir.",
@@ -452,7 +452,7 @@
       "E": "Yerküre'nin masaya uyguladığı kuvvet $10\\text{ N}$'dir."
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Newton'ın Hareket Yasaları",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -463,7 +463,7 @@
     "id": 53398,
     "ders": "TYT FİZİK",
     "soru_no": 24,
-    "soru": "",
+    "soru": "Farklı malzemeden yapılmış $m$, $2m$ ve $4m$ kütleli K, L ve M blokları yatay olarak ayrı ayrı uygulanan aynı $F$ kuvvetinin etkisi altında yatay beton zemin üzerinde hareketsiz durmaktadır. Bloklar ile beton zemin arasındaki statik sürtünme katsayısının K bloğu için $1$, L bloğu için $0{,}5$ ve M bloğu için ise $0{,}8$ olduğu bilinmektedir. $F$ kuvvetine rağmen hareket etmeyen K, L ve M blokları ile yüzey arasında oluşan statik sürtünme kuvvetleri $f_K$, $f_L$ ve $f_M$ lerin büyüklük sıralaması aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$f_K = f_L = f_M$",
       "B": "$f_K > f_L > f_M$",
@@ -472,7 +472,7 @@
       "E": "$f_K = f_L > f_M$"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Sürtünme Kuvveti",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -483,7 +483,7 @@
     "id": 53399,
     "ders": "TYT FİZİK",
     "soru_no": 25,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -503,7 +503,7 @@
     "id": 53400,
     "ders": "TYT FİZİK",
     "soru_no": 26,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -523,7 +523,7 @@
     "id": 53401,
     "ders": "TYT FİZİK",
     "soru_no": 27,
-    "soru": "",
+    "soru": "Aşağıdaki tabloda çeşitli maddelerin ısı iletim katsayıları verilmektedir.\n\n| Madde | Isı iletim katsayısı ($\\text{W/m}\\cdot{}^\\circ\\text{C}$) |\n|---|---|\n| Çelik | 40 |\n| Tahta | 0,1 |\n| Cam | 0,8 |\n| Hava | 0,023 |\n| Poliüretan | 0,024 |\n\nMaddelerin ısı iletim katsayıları dikkate alınarak yapılan;\n\nI. elimizin yanmaması için bir tencere sapının çelik yerine poliüretan malzemeden yapılması,\n\nII. pencerelerin ısı yalıtımı için tek parça kalın bir cam yerine aynı kalınlıkta olacak şekilde arasında hava olan iki ince camdan imal edilmesi,\n\nIII. oturduğumuz yeri soğuk hissetmememiz için soğuk coğrafyada açık havada yer alan bir bankın tahta yerine çelikten yapılması\n\nseçimlerinin hangileri amacına uygun olarak yapılmıştır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -532,7 +532,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Enerji İletim Yolları ve Enerji İletim Hızı",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -543,7 +543,7 @@
     "id": 53402,
     "ders": "TYT FİZİK",
     "soru_no": 28,
-    "soru": "",
+    "soru": "Sıcaklığı $5\\ ^\\circ\\text{C}$ olan bir odada uzun bir süre kalmış ve boyutları birbirinin aynı olan K ve L metal plakalarını eline alan Ayşe, K'nin L'den daha soğuk olduğunu hissetmiştir.\n\nBuna göre aynı ortamda bulunan bu plakaların üzerine özdeş ve el derisi ile benzer ısıl özelliklere sahip birer küçük buz parçası koyulduğunda;\n\n• üzerindeki buzun, diğerine göre daha çabuk eriyeceği plaka,\n\n• buzun bu plaka üzerinde diğerine göre daha çabuk erimesinin nedeni\n\naşağıdakilerin hangisinde bir arada doğru olarak verilmiştir?",
     "secenekler": {
       "A": "Plaka: K — Nedeni: K'nin ısı iletim katsayısı L'ninkinden daha büyüktür.",
       "B": "Plaka: K — Nedeni: L'nin sıcaklığı K'ninkinden daha büyüktür.",
@@ -552,7 +552,7 @@
       "E": "Plaka: L — Nedeni: L'nin sıcaklığı K'ninkinden daha büyüktür."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Isı ve Sıcaklık",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -563,7 +563,7 @@
     "id": 53403,
     "ders": "TYT FİZİK",
     "soru_no": 29,
-    "soru": "",
+    "soru": "Günlük hayatta karşılaşılabilecek;\n\nI. yağmur damlasının küresel şekil alma eğilimi,\n\nII. bazı böceklerin göllerdeki suyun yüzeyinde rahatça yürüyebilmeleri,\n\nIII. bir yüzeye pipetle bırakılan farklı cins sıvı damlalarının farklı şekiller alması\n\nolaylarından hangileri yüzey geriliminin bir sonucudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -572,7 +572,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Madde ve Özellikleri",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -583,7 +583,7 @@
     "id": 53404,
     "ders": "TYT FİZİK",
     "soru_no": 30,
-    "soru": "",
+    "soru": "Aşağıdaki tabloda çeşitli maddelerin ısı iletim katsayıları verilmektedir.\n\n| Madde | Isı iletim katsayısı ($\\text{W/m}\\cdot{}^\\circ\\text{C}$) |\n|---|---|\n| Çelik | 40 |\n| Tahta | 0,1 |\n| Cam | 0,8 |\n| Hava | 0,023 |\n| Poliüretan | 0,024 |\n\nMaddelerin ısı iletim katsayıları dikkate alınarak yapılan;\n\nI. elimizin yanmaması için bir tencere sapının çelik yerine poliüretan malzemeden yapılması,\n\nII. pencerelerin ısı yalıtımı için tek parça kalın bir cam yerine aynı kalınlıkta olacak şekilde arasında hava olan iki ince camdan imal edilmesi,\n\nIII. oturduğumuz yeri soğuk hissetmememiz için soğuk coğrafyada açık havada yer alan bir bankın tahta yerine çelikten yapılması\n\nseçimlerinin hangileri amacına uygun olarak yapılmıştır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -592,7 +592,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Enerji İletim Yolları ve Enerji İletim Hızı",
     "yil": "2019",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -603,7 +603,7 @@
     "id": 53405,
     "ders": "TYT FİZİK",
     "soru_no": 31,
-    "soru": "",
+    "soru": "Erhan'ın annesi, bir cam şişenin içini kaynamış su ile çalkaladıktan hemen sonra, ağız kısmına şişirilmemiş balonu Şekil 1'deki gibi bağlayarak Erhan'ın oynaması için masanın üzerine bırakmıştır. Erhan, birkaç dakika sonra balonun cam şişenin içine geçerek Şekil 2'deki gibi içeri doğru şiştiğini görür.\n\nErhan daha sonra cam şişeyi içinde buzlu su bulunan bir kovaya, içine su girmeyecek şekilde yerleştirirse balonun son hâliyle ilgili aşağıdakilerden hangisi doğru olur?",
     "secenekler": {
       "A": "Şişenin içinde daha fazla şişer.",
       "B": "Şişenin içinde biraz söner.",
@@ -623,7 +623,7 @@
     "id": 53406,
     "ders": "TYT FİZİK",
     "soru_no": 32,
-    "soru": "",
+    "soru": "Elektriksel olarak nötr olmadığı bilinen K, L ve M iletken küreleri ayrı ayrı birbirlerine yaklaştırılıyor. Küreler arası elektriksel etkileşmelerden dolayı K küresinin L küresini ittiği, L küresinin ise M küresini çektiği gözleniyor.\n\nBuna göre, kürelerin yüklerinin cinsleri ile ilgili aşağıdakilerden hangisi doğru olabilir?",
     "secenekler": {
       "A": "K küresi: Pozitif, L küresi: Pozitif, M küresi: Pozitif",
       "B": "K küresi: Negatif, L küresi: Negatif, M küresi: Negatif",
@@ -643,7 +643,7 @@
     "id": 53407,
     "ders": "TYT FİZİK",
     "soru_no": 33,
-    "soru": "",
+    "soru": "Başlangıçta elektriksel olarak nötr olduğu bilinen Ayşe, Ezgi ve Seda; öğretmenlerinin vermiş olduğu ödev gereğince kendilerini elektrik yüklü hâle getirmek için aşağıdaki işlemleri yapmışlardır.\n\n• Ayşe: Halı üzerinde ayaklarını sürtüp halıdan elektron alarak yürümüştür.\n\n• Ezgi: Çalışmakta olan Van de Graff jeneratörüne bir süre dokunmuş ve elektron kaybederek saçları havaya kalkmıştır.\n\n• Seda: Kazağını hızlı bir şekilde çıkarırken elektronların kazağa geçmesi sonucu kolundaki tüyler diken diken olmuştur.\n\nBuna göre hangi öğrenciler yaptıkları işlemlerden hemen sonra negatif yüklü hâle gelmiştir?",
     "secenekler": {
       "A": "Yalnız Ayşe",
       "B": "Yalnız Ezgi",
@@ -663,7 +663,7 @@
     "id": 53408,
     "ders": "TYT FİZİK",
     "soru_no": 34,
-    "soru": "",
+    "soru": "İnsanlar, ihtiyaçlarına cevap verecek şekilde eşyaları geliştirirken özkütlesi daha büyük veya daha küçük olan malzemeleri tercih edebilir.\n\nBuna göre;\n\nI. dört kişilik yemek masasının altı kişilik daha büyük bir masayla değiştirilmesi,\n\nII. çiçek vazosunun rüzgârdan savrulmaması için daha ağır ama aynı boyut ve biçimde olan başka bir vazoyla değiştirilmesi,\n\nIII. hafif bir tatlı kaşığının daha ağır bir kaşıkla değiştirilmesi\n\neylemlerinden hangileri kesinlikle özkütlesi daha büyük yeni bir eşya yapımını gerektirir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -683,7 +683,7 @@
     "id": 53409,
     "ders": "TYT FİZİK",
     "soru_no": 35,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -703,7 +703,7 @@
     "id": 53410,
     "ders": "TYT FİZİK",
     "soru_no": 36,
-    "soru": "",
+    "soru": "Bir odadaki çalışma masasının yüzeyinde ortalama 750 candela'lık aydınlanma şiddeti;\n\nI. 75 watt'lık akkor filamanlı,\n\nII. 13 watt'lık LED,\n\nIII. 40 watt'lık floresan\n\nampullerinden herhangi biri ile tek başına sağlanabilmektedir.\n\nBu ampuller eşit süre çalıştırıldıklarında akkor filamanlı, LED ve floresan ampullerin harcadıkları elektrik enerjileri sırasıyla $E_I$, $E_{II}$ ve $E_{III}$ ise bunlar arasındaki ilişki aşağıdakilerin hangisinde doğrudur?",
     "secenekler": {
       "A": "$E_I = E_{II} = E_{III}$",
       "B": "$E_I > E_{III} > E_{II}$",
@@ -712,7 +712,7 @@
       "E": "$E_{III} > E_{II} > E_I$"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektrik Devreleri",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -723,7 +723,7 @@
     "id": 53411,
     "ders": "TYT FİZİK",
     "soru_no": 37,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -743,7 +743,7 @@
     "id": 53412,
     "ders": "TYT FİZİK",
     "soru_no": 38,
-    "soru": "",
+    "soru": "Ayşenur, laboratuvarda bulunan K, L, M, N ve P ampullerini Şekil 1'deki gibi bağladığında toplam 3 tane ampulün ışık verdiğini fark ediyor. Daha sonra aynı ampulleri Şekil 2'deki gibi bağladığında ise toplamda yine 3 tane ampulün ışık verdiğini gözlemliyor.\n\nŞekil 1: Beş ampulün (K, L, M, N, P) bir pil ve bağlantı telleriyle oluşturduğu devre şeması.\n\nŞekil 2: Aynı beş ampulün (K, L, M, N, P) farklı bir bağlantı düzeniyle oluşturduğu devre şeması.\n\nAyşenur'un kullanmış olduğu ampullerden yalnızca bir tanesinin bozuk olduğu bilindiğine göre bozuk olan ampul aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "K",
       "B": "L",
@@ -763,7 +763,7 @@
     "id": 53413,
     "ders": "TYT FİZİK",
     "soru_no": 39,
-    "soru": "",
+    "soru": "Aşağıdaki tabloda şehir gerilimi ile çalışan K, L ve M elektrikli ev aletlerinin güçleri ve günlük ortalama çalıştırılma süreleri verilmiştir.\n\n| Elektrikli ev aleti | Güç (Watt) | Günlük ortalama çalıştırılma süresi (Saat) |\n|---|---|---|\n| K | 1500 | 0,2 |\n| L | 80 | 7 |\n| M | 100 | 6 |\n\nBu ev aletleri, fişleri doğrudan şehir şebekesine bağlı olan prizlere takılarak kullanıldığında bir ayda harcadıkları ortalama elektrik enerjileri ($E_K$, $E_L$ ve $E_M$) arasındaki ilişki aşağıdakilerden hangisinde doğru olarak verilmiştir?",
     "secenekler": {
       "A": "$E_K > E_M > E_L$",
       "B": "$E_M > E_L > E_K$",
@@ -783,7 +783,7 @@
     "id": 53414,
     "ders": "TYT FİZİK",
     "soru_no": 40,
-    "soru": "",
+    "soru": "İç direnci ihmal edilen bir pil, anahtar ile özdeş K, L, M, N, P ve R ampullerini bağlayarak şekildeki elektrik devresini kuran öğrenci ilk gözleminde anahtarın ucunu 1 numaralı noktaya temas ettirip ampullerin parlaklığını gözlemliyor. İkinci gözleminde ise anahtarın ucunu 2 numaralı noktaya temas ettirip ampullerin parlaklığını gözlemliyor.\n\nŞekil: İç direnci ihmal edilen bir pil, bir anahtar ve özdeş K, L, M, N, P, R ampullerinden oluşan elektrik devresi şeması. Anahtarın ucu 1 ve 2 numaralı noktalara temas ettirilebilmektedir.\n\nBuna göre öğrencinin yaptığı gözlemlerde hangi ampullerin parlaklığı her iki gözlem için de değişmeden aynı kalır?",
     "secenekler": {
       "A": "Yalnız K",
       "B": "Yalnız R",
@@ -803,7 +803,7 @@
     "id": 53415,
     "ders": "TYT FİZİK",
     "soru_no": 41,
-    "soru": "",
+    "soru": "A, B ve C iletken tellerinin uçları arasındaki potansiyel farklar ve üzerlerinden geçen akımı gösteren grafik aşağıdaki gibidir. Bu teller kesilmeden ve şekilleri değiştirilmeden kendileri ile aynı harfi taşıyan A, B ve C ampullerinin yapımında flaman olarak kullanılmıştır. Bu ampuller, iç direnci önemsiz bir üreteç ve bağlantı kabloları ile şekildeki elektrik devresi kurulmuştur.\n\nGrafikte yatay eksende akım ($I$), düşey eksende potansiyel fark ($V$) yer almaktadır. A, B ve C tellerinin $V$-$I$ grafikleri orijinden geçen doğrular olup eğimleri (dirençleri) sırasıyla $R_A$, $R_B$, $R_C$ olacak şekilde farklıdır. Devrede A, B ve C ampulleri birbirine seri bağlanmıştır.\n\nA, B ve C ampullerinin sırasıyla, uçları arasındaki $V_A$, $V_B$, $V_C$ potansiyel farkları ve $P_A$, $P_B$, $P_C$ birim zamanda harcadıkları elektrik enerjileri arasındaki ilişki aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$V_A > V_B > V_C$ ve $P_A > P_B > P_C$",
       "B": "$V_A > V_B > V_C$ ve $P_A < P_B < P_C$",
@@ -812,7 +812,7 @@
       "E": "$V_A = V_B = V_C$ ve $P_A < P_B < P_C$"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Elektrik Akımı ve Devreler",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -823,7 +823,7 @@
     "id": 53416,
     "ders": "TYT FİZİK",
     "soru_no": 42,
-    "soru": "",
+    "soru": "Günlük hayatta karşılaşılabilecek;\n\nI. yağmur damlasının küresel şekil alma eğilimi,\n\nII. bazı böceklerin göllerdeki suyun yüzeyinde rahatça yürüyebilmeleri,\n\nIII. bir yüzeye pipetle bırakılan farklı cins sıvı damlalarının farklı şekiller alması\n\nolaylarından hangileri yüzey geriliminin bir sonucudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -832,7 +832,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Madde ve Özellikleri",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -843,7 +843,7 @@
     "id": 53417,
     "ders": "TYT FİZİK",
     "soru_no": 43,
-    "soru": "",
+    "soru": "$M$ kütleli, homojen ve suda çözünmeyen katı bir cisim şekildeki gibi yüzüyor. Suyun içerisine bir miktar tuz atılıp tuzun çözünmesi bekleniyor. Sıcaklığın sabit olduğu bilindiğine göre, tuz çözündüğünde cismin batan kısmının hacmi ile cisme etkiyen kaldırma kuvveti ilk duruma göre nasıl değişir?",
     "secenekler": {
       "A": "Cismin batan kısmının hacmi: Azalır — Cisme etkiyen kaldırma kuvveti: Değişmez",
       "B": "Cismin batan kısmının hacmi: Artar — Cisme etkiyen kaldırma kuvveti: Azalır",
@@ -863,7 +863,7 @@
     "id": 53418,
     "ders": "TYT FİZİK",
     "soru_no": 44,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -883,7 +883,7 @@
     "id": 53419,
     "ders": "TYT FİZİK",
     "soru_no": 45,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -903,7 +903,7 @@
     "id": 53420,
     "ders": "TYT FİZİK",
     "soru_no": 46,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -923,7 +923,7 @@
     "id": 53421,
     "ders": "TYT FİZİK",
     "soru_no": 47,
-    "soru": "",
+    "soru": "Bir ucu duvara sabitlenmiş bir ipin serbest ucu belirli bir kuvvetle gerilerek aşağı yukarı hareket ettirildiğinde ip üzerinde frekansı $f_1$ ve hızı $v_1$ olan Şekil 1'deki dalga oluşturulmuştur. İpin gerilimini değiştirmeden serbest uç daha hızlı hareket ettirildiğinde ise frekansı $f_2$ ve hızı $v_2$ olan Şekil 2'deki dalga oluşturulmuştur. Her iki şekildeki bölmeler eşit uzunlukta olduğuna göre aşağıdakilerin hangisinde $f_1 - f_2$ ve $v_1 - v_2$ arasındaki ilişkiler doğru olarak verilmiştir?",
     "secenekler": {
       "A": "$v_1 = v_2$ ; $f_1 < f_2$",
       "B": "$v_1 > v_2$ ; $f_1 < f_2$",
@@ -943,7 +943,7 @@
     "id": 53422,
     "ders": "TYT FİZİK",
     "soru_no": 48,
-    "soru": "",
+    "soru": "İçinde 7 cm derinliğinde su bulunan bir dalga leğenine su yüzeyi durgunken damlalık ile belli bir yükseklikten ve eşit zaman aralıklarında birer damla su damlatılarak çembersel su dalgaları oluşturulmaktadır. Dalga leğenindeki belli sabit bir noktadaki suyun yüksekliğinin zamana bağlı değişim grafiği şekildeki gibi çizilmiştir. Bu deney, damlalık daha yüksekten su damlatacak ancak diğer tüm koşullar aynı kalacak biçimde tekrarlanırsa oluşan dalganın genliği ve periyodu ile ilgili aşağıdakilerden hangisi birlikte doğru olabilir?",
     "secenekler": {
       "A": "Genlik: 3 cm ; Periyot: 2 s",
       "B": "Genlik: 2 cm ; Periyot: 2 s",
@@ -963,7 +963,7 @@
     "id": 53423,
     "ders": "TYT FİZİK",
     "soru_no": 49,
-    "soru": "",
+    "soru": "Yeterince uzun ve gergin ideal bir yay üzerinde oluşturulan bir dalganın $t$ anındaki görüntüsü ile dalganın $x$ doğrultulu ilerleme yönü şekildeki gibidir. Şekilde yay üzerinde $K$, $L$ ve $M$ noktaları işaretlenmiştir; dalga $+x$ yönünde ilerlemektedir. Buna göre yay üzerinde bulunan $K$, $L$ ve $M$ noktalarının titreşim yönleri aşağıdakilerin hangisinde doğru verilmiştir?",
     "secenekler": {
       "A": "$K$: $y$, $L$: $-y$, $M$: $y$",
       "B": "$K$: $-y$, $L$: $y$, $M$: $-y$",
@@ -972,7 +972,7 @@
       "E": "$K$: $-y$, $L$: $-y$, $M$: $-y$"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Yay Dalgası",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -983,7 +983,7 @@
     "id": 53424,
     "ders": "TYT FİZİK",
     "soru_no": 50,
-    "soru": "",
+    "soru": "Bir gözlem sırasında açık denizde oluşan dalgaların, kıyıya yaklaşırken şekildeki gibi art arda gelen dalgaların dalga cephelerinin sıklaştığı gözlemlenmektedir. Şekildeki çizgiler, aynı kaynaktan çıkan su dalgalarının dalga cephelerini temsil etmektedir; açık deniz bölgesinde dalga cepheleri arası geniş, kıyıya yakın bölgede ise dardır. Buna göre dalga cephelerinin sıklaştığı kıyıya yakın bölgedeki dalgaların; I. dalga boyu, II. frekans, III. sürat niceliklerinden hangileri şekildeki açık deniz bölgesindekine göre daha küçüktür?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -992,7 +992,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Su Dalgası",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1003,7 +1003,7 @@
     "id": 53425,
     "ders": "TYT FİZİK",
     "soru_no": 51,
-    "soru": "",
+    "soru": "İnsanlar, ihtiyaçlarına cevap verecek şekilde eşyaları geliştirirken özkütlesi daha büyük veya daha küçük olan malzemeleri tercih edebilir.\n\nBuna göre;\n\nI. dört kişilik yemek masasının altı kişilik daha büyük bir masayla değiştirilmesi,\n\nII. çiçek vazosunun rüzgârdan savrulmaması için daha ağır ama aynı boyut ve biçimde olan başka bir vazoyla değiştirilmesi,\n\nIII. hafif bir tatlı kaşığının daha ağır bir kaşıkla değiştirilmesi\n\neylemlerinden hangileri kesinlikle özkütlesi daha büyük yeni bir eşya yapımını gerektirir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1023,7 +1023,7 @@
     "id": 53426,
     "ders": "TYT FİZİK",
     "soru_no": 52,
-    "soru": "",
+    "soru": "Aşağıdaki tabloda çeşitli maddelerin ısı iletim katsayıları verilmektedir.\n\n| Madde | Isı iletim katsayısı ($\\text{W/m}\\cdot{}^\\circ\\text{C}$) |\n|---|---|\n| Çelik | 40 |\n| Tahta | 0,1 |\n| Cam | 0,8 |\n| Hava | 0,023 |\n| Poliüretan | 0,024 |\n\nMaddelerin ısı iletim katsayıları dikkate alınarak yapılan;\n\nI. elimizin yanmaması için bir tencere sapının çelik yerine poliüretan malzemeden yapılması,\n\nII. pencerelerin ısı yalıtımı için tek parça kalın bir cam yerine aynı kalınlıkta olacak şekilde arasında hava olan iki ince camdan imal edilmesi,\n\nIII. oturduğumuz yeri soğuk hissetmememiz için soğuk coğrafyada açık havada yer alan bir bankın tahta yerine çelikten yapılması\n\nseçimlerinin hangileri amacına uygun olarak yapılmıştır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1032,7 +1032,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Enerji İletim Yolları ve Enerji İletim Hızı",
     "yil": "2018",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -1043,7 +1043,7 @@
     "id": 53427,
     "ders": "TYT FİZİK",
     "soru_no": 53,
-    "soru": "",
+    "soru": "İnsanlar, ihtiyaçlarına cevap verecek şekilde eşyaları geliştirirken özkütlesi daha büyük veya daha küçük olan malzemeleri tercih edebilir.\n\nBuna göre;\n\nI. dört kişilik yemek masasının altı kişilik daha büyük bir masayla değiştirilmesi,\n\nII. çiçek vazosunun rüzgârdan savrulmaması için daha ağır ama aynı boyut ve biçimde olan başka bir vazoyla değiştirilmesi,\n\nIII. hafif bir tatlı kaşığının daha ağır bir kaşıkla değiştirilmesi\n\neylemlerinden hangileri kesinlikle özkütlesi daha büyük yeni bir eşya yapımını gerektirir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1063,7 +1063,7 @@
     "id": 53428,
     "ders": "TYT FİZİK",
     "soru_no": 54,
-    "soru": "",
+    "soru": "Işık şiddeti $I$ olan noktasal bir kaynak şekildeki gibi saydam küresel bir abajurun merkezine yerleştirilmiştir. Bu düzenlemede, K noktasının aydınlanma şiddeti $E$, abajur yüzeyinden geçen toplam ışık akısı $\\Phi$ olmaktadır. (Şekilde: Saydam küresel abajurun merkezinde noktasal ışık kaynağı bulunmaktadır. Abajur bir zincirle asılmıştır. Abajurun altında, dışında bir K noktası işaretlenmiştir.) Bu düzenlemede sırasıyla; 1. işlem: Saydam küresel abajur çıkarılıp aynı malzemeden yapılmış daha küçük yarıçaplı başka bir saydam abajur takma, 2. işlem: Yeni abajurun tüm yüzeyini yarı saydam olacak biçimde boyama, 3. işlem: Abajurun zincirini kısaltma işlemleri yapılıyor. Buna göre yapılan işlemler sonucunda ışık şiddeti ($I$), aydınlanma şiddeti ($E$) ve ışık akısı ($\\Phi$) niceliklerindeki değişikliklerle ilgili aşağıdakilerden hangisi doğrudur?",
     "secenekler": {
       "A": "1. işlem sonunda abajur yüzeyinden geçen toplam ışık akısı ($\\Phi$) artar.",
       "B": "1. işlem sonunda noktasal kaynağın ışık şiddeti ($I$) azalır.",
@@ -1083,7 +1083,7 @@
     "id": 53429,
     "ders": "TYT FİZİK",
     "soru_no": 55,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1103,7 +1103,7 @@
     "id": 53430,
     "ders": "TYT FİZİK",
     "soru_no": 56,
-    "soru": "",
+    "soru": "Bir alışveriş merkezinde doğrultuları şekildeki gibi birbirine paralel K ve L yürüyen merdivenleri bulunmaktadır. Ali ve arkasında bulunan başka bir kişi K merdiveni ile yukarı doğru çıkmaktadır. Bu sırada Ali, üzerinde bulunan L merdiveninin düzlem ayna görevi gören yansıtıcı alt yüzeyine doğru bakmaktadır.\n\nAli noktasal kabul edilen gözleri ile L merdiveninin yansıtıcı yüzeyine bakarak önce arkasından gelen kişiyi ve daha sonra da kendisini görebilmesi için sırasıyla şekildeki yönlerden hangilerine doğru bakmalıdır?",
     "secenekler": {
       "A": "I ve II",
       "B": "II ve III",
@@ -1112,7 +1112,7 @@
       "E": "II ve IV"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Düzlem Ayna",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1123,7 +1123,7 @@
     "id": 53431,
     "ders": "TYT FİZİK",
     "soru_no": 57,
-    "soru": "",
+    "soru": "Aşağıdaki tabloda çeşitli maddelerin ısı iletim katsayıları verilmektedir.\n\n| Madde | Isı iletim katsayısı ($\\text{W/m}\\cdot{}^\\circ\\text{C}$) |\n|---|---|\n| Çelik | 40 |\n| Tahta | 0,1 |\n| Cam | 0,8 |\n| Hava | 0,023 |\n| Poliüretan | 0,024 |\n\nMaddelerin ısı iletim katsayıları dikkate alınarak yapılan;\n\nI. elimizin yanmaması için bir tencere sapının çelik yerine poliüretan malzemeden yapılması,\n\nII. pencerelerin ısı yalıtımı için tek parça kalın bir cam yerine aynı kalınlıkta olacak şekilde arasında hava olan iki ince camdan imal edilmesi,\n\nIII. oturduğumuz yeri soğuk hissetmememiz için soğuk coğrafyada açık havada yer alan bir bankın tahta yerine çelikten yapılması\n\nseçimlerinin hangileri amacına uygun olarak yapılmıştır?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -1132,7 +1132,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Enerji İletim Yolları ve Enerji İletim Hızı",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1143,7 +1143,7 @@
     "id": 53432,
     "ders": "TYT FİZİK",
     "soru_no": 58,
-    "soru": "",
+    "soru": "Yeni keşfedilmiş bir gezegende şekildeki gibi bir balonla yerden yüksekte atmosferik ölçümler yapılması planlanıyor. Atmosfer sıcaklığının sabit olduğu kabul edilen bu gezegende bulunan A, B, C ve D gazlarının sabit sıcaklık ve basınçtaki kütle-hacim grafiği aşağıdaki gibidir. Bu gezegenin atmosferi A, B, C veya D gazlarından oluşabileceği gibi balon da bu gazlarla doldurulabilir.\n\nGrafikte sabit sıcaklık ve basınçta gazların kütle-hacim ilişkisi doğrusal olup, doğruların eğimi gazın özkütlesini verir. Grafikte eğimler büyükten küçüğe doğru sırasıyla A, B, C ve D gazlarına aittir (yani özkütle sıralaması $d_A > d_B > d_C > d_D$ şeklindedir).\n\nBalonun ve üzerindeki ölçüm cihazlarının ağırlığı ihmal edildiğine göre;\n\nI. Atmosfer: A, Balon: B ve D karışımı\n\nII. Atmosfer: B, Balon: A\n\nIII. Atmosfer: C ve D karışımı, Balon: C\n\ndurumlarından hangilerinde balon yerden havalanarak atmosferik ölçümler yapabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1163,7 +1163,7 @@
     "id": 53433,
     "ders": "TYT FİZİK",
     "soru_no": 59,
-    "soru": "",
+    "soru": "I ışık ışınının K ortamından L ve M ortamlarına geçişi Şekil I ve Şekil II'de verilmiştir. Buna göre I ışık ışını L ortamından M ortamına geçerken; şekillerindeki yollardan hangilerini izleyebilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "I ve IV",
@@ -1172,7 +1172,7 @@
       "E": "II, III ve IV"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kırılma",
     "yil": "2018",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1183,7 +1183,7 @@
     "id": 53434,
     "ders": "TYT FİZİK",
     "soru_no": 60,
-    "soru": "",
+    "soru": "Dalış eğitmeni Burak, eğitim teknesinde şekildeki gibi ayakta durmaktadır. Öğrencisi Mert ise dibi rahatlıkla görülen bir denizin içinde şekildeki gibi durgundur. Burak, B noktasından; Mert, M noktasından birbirlerine bakmaktadır. Deniz suyunun kırılma indisinin havanınkinden büyük olduğu bilindiğine göre Burak'ın ve Mert'in birbirlerini gördükleri konumlar ile ilgili aşağıdakilerden hangisi doğru olabilir?",
     "secenekler": {
       "A": "Burak'ın Mert'i gördüğü konum: M'nin aşağısı — Mert'in Burak'ı gördüğü konum: B'nin aşağısı",
       "B": "Burak'ın Mert'i gördüğü konum: M'nin bulunduğu konum — Mert'in Burak'ı gördüğü konum: B'nin aşağısı",
@@ -1192,7 +1192,7 @@
       "E": "Burak'ın Mert'i gördüğü konum: M'nin yukarısı — Mert'in Burak'ı gördüğü konum: B'nin yukarısı"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Kırılma",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1203,7 +1203,7 @@
     "id": 53435,
     "ders": "TYT FİZİK",
     "soru_no": 61,
-    "soru": "",
+    "soru": "Penceresi açık olan odada bir merceğin odak noktasına beyaz düz bir kâğıt konulduğunda dışarıdaki bir ağacın net görüntüsü kâğıdın üzerinde şekildeki gibi oluşmaktadır. Kâğıt ile K noktası ve K, L, M, N noktaları arası uzaklıklar şekildeki gibi birbirlerine eşit ve merceğin odak uzaklığı ($f$) kadardır. Şekildeki mercekle özdeş olan II. bir merceği ve şekildeki beyaz kâğıdı K, L, M ve N noktalarından uygun olanlara yerleştirerek kâğıt üzerinde ağacın düz, önceki ile aynı büyüklükte ve net bir görüntüsünün elde edilmesi istenmektedir. Buna göre, şekildeki merceğin konumunun sabit kalması koşuluyla II. mercek ve kâğıt şekildeki noktalardan hangilerine yerleştirilmelidir?",
     "secenekler": {
       "A": "II. mercek: K, kâğıt: L",
       "B": "II. mercek: K, kâğıt: M",
@@ -1212,7 +1212,7 @@
       "E": "II. mercek: M, kâğıt: N"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Mercekler",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1223,7 +1223,7 @@
     "id": 53436,
     "ders": "TYT FİZİK",
     "soru_no": 62,
-    "soru": "",
+    "soru": "Aşağıdaki şekilde asal eksenleri çakışık çukur ayna, yakınsak mercek ve $S$ ışık kaynağından oluşan bir düzenek görülmektedir. Aynanın odak noktasında bulunan ışık kaynağından yayılan tek renkli kırmızı ışık, önce aynadan yansıyıp daha sonra mercekte kırılarak asal eksen üzerindeki $K$ noktasında toplanacak şekilde bir yol izlemektedir. Bu sistemde aynanın odak noktasında bulunan ışık kaynağından tek renkli mavi ışık yayılsaydı ışık aynadan yansıyıp mercekten geçtikten sonra asal eksenin neresinde toplanacak şekilde kırılırdı?",
     "secenekler": {
       "A": "$F$ noktasında",
       "B": "$T$ noktasında",
@@ -1232,7 +1232,7 @@
       "E": "$F$ - $T$ noktaları arasında"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Mercekler",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1243,7 +1243,7 @@
     "id": 53437,
     "ders": "TYT FİZİK",
     "soru_no": 63,
-    "soru": "",
+    "soru": "Onur, ağaç kütüklerini kullanarak lokantasını işaret eden ve arka fonu siyah olan Şekil I'deki gibi bir tabela yapıyor. Bu tabelanın lokantanın önünden geçen araç sürücüleri tarafından karanlıkta daha iyi fark edilebilmesi için kütüklerle oluşturduğu harfleri boyamaya karar veriyor.\n\nŞekil I'de arka fonu siyah olan bir tabela üzerinde ağaç kütüklerinden oluşturulmuş harfler bulunmaktadır.\n\nOnur'un kullanabileceği değişik boya seçenekleri içerisindeki bütün boyalar; Şekil II'deki C (cyan), Mg (magenta) ve S (sarı) renk veya bunların karışımlarından oluşmaktadır. Otomobil farlarının ise Şekil II'deki K (kırmızı), Y (yeşil) ve M (mavi) renkli ışıkların farklı oranlarda birleşiminden oluşan sarı renkli bir ışık yaydığı varsayılmaktadır.\n\nŞekil II'de solda boyanın renkleri olarak C (cyan), Mg (magenta) ve S (sarı) renk çemberi; sağda ışığın renkleri olarak K (kırmızı), Y (yeşil) ve M (mavi) renk çemberi gösterilmektedir.\n\nVerilen bilgilere göre; sarı ışık yayan otomobil farlarıyla aydınlatılan tabela, aşağıdaki renklerden hangisiyle boyanırsa diğer renklerle boyandığı durumlara göre fark edilmesi daha zor olur?",
     "secenekler": {
       "A": "Mavi",
       "B": "Sarı",
@@ -1252,7 +1252,7 @@
       "E": "Cyan"
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Renk",
     "yil": "2019",
     "sinav_adi": "TYT",
     "sekilli": true,

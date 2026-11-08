@@ -7,8 +7,11 @@ import {
   fetchQuestionsWithFallback,
   fetchLocalSubjectJson,
   fetchAiExplanationFromSupabase,
+  normalizePostgrestQuestions,
 } from '../src/data/supabase-client.ts';
 import type { Question } from '../src/data/question.ts';
+import { parseQuestions } from '../src/data/question.ts';
+import { parseScopedConcepts } from '../src/data/textbook.ts';
 
 const dummyQuestion: Question = {
   id: 99999,
@@ -153,4 +156,33 @@ test('fetchAiExplanationFromSupabase: soru kimliği için AI açıklamasını d�
     setSupabaseConfigOverride(null);
     globalThis.fetch = originalFetch;
   }
+});
+
+test('parseQuestions ve parseScopedConcepts: PostgREST null ve string numeric alanlarını güvenle normalize eder', () => {
+  const rawPostgrestQuestions = [
+    {
+      id: 101,
+      subject: 'KLM',
+      ders: 'KELAM – 1',
+      soru: 'PostgREST test sorusu?',
+      secenekler: { A: 'A', B: 'B', C: 'C', D: 'D' },
+      dogru_cevap: 'A',
+      puan: '0.20',
+      sinav_adi: null,
+      sinav_kodu: null,
+      ipucu: null,
+      zorluk: null,
+      alt_konu: null,
+      soru_xray: null,
+      secenekler_xray: null,
+      dogru_nedeni: null,
+    },
+  ];
+
+  const parsed = parseQuestions(normalizePostgrestQuestions(rawPostgrestQuestions));
+  assert.equal(parsed.length, 1);
+  assert.equal(parsed[0].id, 101);
+  assert.equal(parsed[0].puan, 0.2);
+  assert.equal(parsed[0].ipucu, undefined);
+  assert.equal(parsed[0].alt_konu, undefined);
 });

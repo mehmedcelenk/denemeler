@@ -523,7 +523,7 @@
     "id": 53464,
     "ders": "TYT KİMYA",
     "soru_no": 27,
-    "soru": "",
+    "soru": "$^{20}_{10}X$, $^{21}_{10}Y$ ve $^{22}_{11}Z$ element atomlarıyla ilgili,\n\nI. X ve Y aynı elementin izotop atomlarıdır.\n\nII. Z element atomunun elektron ve nötron sayıları eşittir.\n\nIII. Y ve Z element atomlarının nötron sayıları eşittir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -532,7 +532,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Yapısı",
     "yil": "2019",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -543,7 +543,7 @@
     "id": 53465,
     "ders": "TYT KİMYA",
     "soru_no": 28,
-    "soru": "",
+    "soru": "$^{20}_{10}X$, $^{21}_{10}Y$ ve $^{22}_{11}Z$ element atomlarıyla ilgili,\n\nI. X ve Y aynı elementin izotop atomlarıdır.\n\nII. Z element atomunun elektron ve nötron sayıları eşittir.\n\nIII. Y ve Z element atomlarının nötron sayıları eşittir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -552,7 +552,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Yapısı",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -563,7 +563,7 @@
     "id": 53466,
     "ders": "TYT KİMYA",
     "soru_no": 29,
-    "soru": "",
+    "soru": "X, Y ve Z element atomlarının atom ve kütle numaraları ile ilgili bilgiler aşağıdaki tabloda verilmiştir.\n\n| Element atomu | Atom numarası | Kütle numarası |\n|---|---|---|\n| X | 11 | 23 |\n| Y | 12 | 24 |\n| Z | 12 | 25 |\n\nBuna göre X, Y ve Z element atomlarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "X ve Y element atomları birbirinin izotonudur.",
       "B": "Y ve Z element atomları birbirinin izobarıdır.",
@@ -572,7 +572,7 @@
       "E": "X ve Y element atomları izoelektroniktir."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Yapısı",
     "yil": "2026",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -583,7 +583,7 @@
     "id": 53467,
     "ders": "TYT KİMYA",
     "soru_no": 30,
-    "soru": "",
+    "soru": "$_4Be$, $_6C$, $_9F$ elementleriyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "C elementi metal olarak sınıflandırılır.",
       "B": "Birinci iyonlaşma enerjisi en küçük olan element F'dir.",
@@ -592,7 +592,7 @@
       "E": "C'nin elektronegatifliği, F'nin elektronegatifliğinden daha büyüktür."
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Periyodik Sistem",
     "yil": "2018",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -603,7 +603,7 @@
     "id": 53468,
     "ders": "TYT KİMYA",
     "soru_no": 31,
-    "soru": "",
+    "soru": "Periyodik sistemde aynı periyotta bulunan X ve Y elementleriyle ilgili aşağıdaki bilgiler veriliyor.\n\n• X elementi: Parlak görünümlü olup oda sıcaklığında ısıyı ve elektriği çok iyi iletir.\n\n• Y elementi: Oda sıcaklığında gaz hâldedir ve hiçbir elementle tepkimeye girmez.\n\nBu elementlerle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "X elementinin atom numarası Y elementininkinden büyüktür.",
       "B": "Y elementinin atom yarıçapı X elementininkinden küçüktür.",
@@ -623,7 +623,7 @@
     "id": 53469,
     "ders": "TYT KİMYA",
     "soru_no": 32,
-    "soru": "",
+    "soru": "Çekirdek için kırmızı ve elektronlar için mavi renk kullanılarak bir elementin nötr atomunun katman elektron dağılımı aşağıda modellenmiştir. Modelde çekirdek kırmızı, elektronlar mavi renkle gösterilmiş olup elektronlar katmanlara dağılmıştır.\n\nBu elementle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "Atom numarası 14'tür.",
       "B": "Yarı metal olarak sınıflandırılır.",
@@ -643,7 +643,7 @@
     "id": 53470,
     "ders": "TYT KİMYA",
     "soru_no": 33,
-    "soru": "",
+    "soru": "He, N ve Mg elementlerinin periyodik sistemdeki yerleri aşağıda gösterilmiştir. Periyodik sistemde He 1. periyodun 18. (8A) grubunda, N 2. periyodun 15. (5A) grubunda, Mg ise 3. periyodun 2. (2A) grubunda yer alır.\n\nTemel hâldeki bu atomların en dış katmanlarında bulunan elektron sayıları arasındaki ilişki aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "$He = N > Mg$",
       "B": "$Mg > N > He$",
@@ -663,7 +663,7 @@
     "id": 53471,
     "ders": "TYT KİMYA",
     "soru_no": 34,
-    "soru": "",
+    "soru": "Aşağıda bazı element atomlarının temel hâldeki katman elektron dağılımı verilmiştir.\n\nCa: $2e^- \\, 8e^- \\, 8e^- \\, 2e^-$\n\nLi: $2e^- \\, 1e^-$\n\nF: $2e^- \\, 7e^-$\n\nMg: $2e^- \\, 8e^- \\, 2e^-$\n\nAr: $2e^- \\, 8e^- \\, 8e^-$\n\nBu elementlerin periyodik sistemdeki yerleriyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "F elementi 2A (2. grup) grubundadır.",
       "B": "Li elementi 3. periyottadır.",
@@ -683,7 +683,7 @@
     "id": 53472,
     "ders": "TYT KİMYA",
     "soru_no": 35,
-    "soru": "",
+    "soru": "$_4X$, $_{12}Y$ ve $_{19}Z$ elementleri ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "X ve Y elementleri periyodik sistemde aynı periyotta bulunur.",
       "B": "X ve Z element atomlarının değerlik elektron sayıları eşittir.",
@@ -703,7 +703,7 @@
     "id": 53473,
     "ders": "TYT KİMYA",
     "soru_no": 36,
-    "soru": "",
+    "soru": "$NaCl$, $HCl$, $Cl_2$ maddelerindeki atom veya iyonlar arası bağ türleri aşağıdakilerin hangisinde doğru olarak verilmiştir? ($_1H$, $_{11}Na$, $_{17}Cl$)",
     "secenekler": {
       "A": "$NaCl$: iyonik, $HCl$: polar kovalent, $Cl_2$: apolar kovalent",
       "B": "$NaCl$: polar kovalent, $HCl$: polar kovalent, $Cl_2$: apolar kovalent",
@@ -723,7 +723,7 @@
     "id": 53474,
     "ders": "TYT KİMYA",
     "soru_no": 37,
-    "soru": "",
+    "soru": "Aşağıda verilen madde ve maddedeki kimyasal türler arasındaki etkileşim sınıfı eşleştirmelerinden hangisi doğrudur? ($_1H$, $_6C$, $_8O$, $_9F$, $_{11}Na$, $_{20}Ca$)",
     "secenekler": {
       "A": "$CaF_2$ — İyonik bağ",
       "B": "$HF$ — İyonik bağ",
@@ -743,7 +743,7 @@
     "id": 53475,
     "ders": "TYT KİMYA",
     "soru_no": 38,
-    "soru": "",
+    "soru": "Metalik bağın nasıl oluştuğuyla ilgili olarak ortaya atılan elektron denizi modeli, metallerin bazı özelliklerinin açıklanmasında kullanılabilir.\n\nBuna göre metallerin;\n\nI. elektriği iletmesi,\n\nII. tel ve levha hâline getirilebilmesi,\n\nIII. ametallerle tepkimeye girmesi\n\nözelliklerinden hangileri elektron denizi modeliyle açıklanabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -763,7 +763,7 @@
     "id": 53476,
     "ders": "TYT KİMYA",
     "soru_no": 39,
-    "soru": "",
+    "soru": "K ve L maddelerinin tanecikleri arasındaki etkileşimlerle ilgili bilgiler aşağıda verilmiştir.\n\n* K'nin tanecikleri arasında sadece indüklenmiş dipol-indüklenmiş dipol etkileşimi vardır.\n* L'nin tanecikleri arasında dipol-dipol etkileşimi vardır.\n\nBuna göre K ve L maddeleri aşağıdakilerden hangisi olabilir?\n\n($_{1}H, _{6}C, _{8}O, _{9}F, _{10}Ne$)",
     "secenekler": {
       "A": "K: $\\text{CH}_4$, L: $\\text{F}_2$",
       "B": "K: $\\text{H}_2$, L: $\\text{O}_2$",
@@ -772,7 +772,7 @@
       "E": "K: $\\text{HF}$, L: $\\text{Ne}$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Tanecikler Arası Etkileşimler",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -783,7 +783,7 @@
     "id": 53477,
     "ders": "TYT KİMYA",
     "soru_no": 40,
-    "soru": "",
+    "soru": "Kimyasal formülü $X_2$, $Y_2$, $XY$ ve $X_2Z$ olan maddelerin kendi molekülleri arasındaki bazı zayıf etkileşim türleri ve normal kaynama noktaları aşağıda verilmiştir.\n\n| Madde | Zayıf etkileşim türü | Normal kaynama noktası (°C) |\n| :--- | :--- | :--- |\n| $X_2$ | London kuvvetleri | -252 |\n| $Y_2$ | London kuvvetleri | -34 |\n| $XY$ | Dipol - dipol etkileşimleri | -85 |\n| $X_2Z$ | Hidrojen bağı | 100 |\n\nBu maddelerin H, O ve Cl elementlerinden oluştuğu bilindiğine göre X, Y ve Z aşağıdakilerin hangisinde doğru verilmiştir?\n\n($_{1}H, _{8}O, _{17}Cl$)",
     "secenekler": {
       "A": "X: Cl, Y: H, Z: O",
       "B": "X: O, Y: H, Z: Cl",
@@ -792,7 +792,7 @@
       "E": "X: H, Y: O, Z: Cl"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Tanecikler Arası Etkileşimler",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -803,7 +803,7 @@
     "id": 53478,
     "ders": "TYT KİMYA",
     "soru_no": 41,
-    "soru": "",
+    "soru": "$^{20}_{10}X$, $^{21}_{10}Y$ ve $^{22}_{11}Z$ element atomlarıyla ilgili,\n\nI. X ve Y aynı elementin izotop atomlarıdır.\n\nII. Z element atomunun elektron ve nötron sayıları eşittir.\n\nIII. Y ve Z element atomlarının nötron sayıları eşittir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -812,7 +812,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Yapısı",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -823,7 +823,7 @@
     "id": 53479,
     "ders": "TYT KİMYA",
     "soru_no": 42,
-    "soru": "",
+    "soru": "$^{20}_{10}X$, $^{21}_{10}Y$ ve $^{22}_{11}Z$ element atomlarıyla ilgili,\n\nI. X ve Y aynı elementin izotop atomlarıdır.\n\nII. Z element atomunun elektron ve nötron sayıları eşittir.\n\nIII. Y ve Z element atomlarının nötron sayıları eşittir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -832,7 +832,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Yapısı",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -843,7 +843,7 @@
     "id": 53480,
     "ders": "TYT KİMYA",
     "soru_no": 43,
-    "soru": "",
+    "soru": "Sıvı hâldeki etanol ile ilgili\n\nI. Açık bir kapta her sıcaklıkta buharlaşır.\n\nII. Aynı koşullarda farklı yüzey alanına sahip eşit kütleli iki etanol örneğinin buharlaşma hızları aynıdır.\n\nIII. Etanolün denge buhar basıncı, içinde bulunduğu kabın hacmine bağlıdır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -863,7 +863,7 @@
     "id": 53481,
     "ders": "TYT KİMYA",
     "soru_no": 44,
-    "soru": "",
+    "soru": "Yapılan bir deneyde havası boşaltılmış ve manometre bağlanmış kapalı kaba bir miktar saf su konuluyor. Zamanla sıvı su miktarı azalırken manometre ile ölçülen basınç artıyor. Sabit sıcaklıkta yeterince beklendiğinde sıvı su miktarının ve manometre ile ölçülen basıncın değişmeden kaldığı görülüyor ve bu basınç değeri ($P_1$) kaydediliyor. Daha sonra bu deney aynı sabit sıcaklıkta saf su miktarı iki katına çıkarılarak tekrarlanıyor ve basınç değeri ($P_2$) kaydediliyor.\n\nBuna göre\n\nI. Su miktarı iki katına çıktığında buharlaşma hızı artar.\n\nII. $P_2 > P_1$ dir.\n\nIII. $P_1$ ve $P_2$ değerleri suyun denge buhar basıncıdır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -872,7 +872,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Sıvılar",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -883,7 +883,7 @@
     "id": 53482,
     "ders": "TYT KİMYA",
     "soru_no": 45,
-    "soru": "",
+    "soru": "$^{20}_{10}X$, $^{21}_{10}Y$ ve $^{22}_{11}Z$ element atomlarıyla ilgili,\n\nI. X ve Y aynı elementin izotop atomlarıdır.\n\nII. Z element atomunun elektron ve nötron sayıları eşittir.\n\nIII. Y ve Z element atomlarının nötron sayıları eşittir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -892,7 +892,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Yapısı",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -903,7 +903,7 @@
     "id": 53483,
     "ders": "TYT KİMYA",
     "soru_no": 46,
-    "soru": "",
+    "soru": "Üç ayrı kapta bulunan $H_2$ gazlarıyla ilgili bilgiler aşağıda verilmiştir.\n\nA kabı: Normal şartlarda $1,12 \\text{ L}$ $H_2$ gazı içerir.\n\nB kabı: $1 \\text{ g}$ $H_2$ molekülü içerir.\n\nC kabı: $1,5 \\times 10^{22}$ tane $H_2$ molekülü içerir.\n\nBu kaplardaki $H_2$ gazlarının mol sayıları sırasıyla $n_A$, $n_B$ ve $n_C$ olduğuna göre $n_A$, $n_B$ ve $n_C$ arasındaki ilişki aşağıdakilerden hangisidir?\n\n($H = 1 \\text{ g/mol}$, Avogadro sayısı ($N_A$) = $6 \\times 10^{23}$; $H_2$ gazının ideal gaz olarak davrandığı varsayılacaktır.)",
     "secenekler": {
       "A": "$n_A > n_B > n_C$",
       "B": "$n_A = n_B > n_C$",
@@ -912,7 +912,7 @@
       "E": "$n_B > n_A > n_C$"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Mol Kavramı",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -923,7 +923,7 @@
     "id": 53484,
     "ders": "TYT KİMYA",
     "soru_no": 47,
-    "soru": "",
+    "soru": "Aşağıdaki çizelgede bazı gaz örneklerine ait bilgiler ve bu gazlardaki oksijen atomu sayıları K, L ve M harfleriyle temsil edilecek şekilde verilmiştir.\n\n| Gaz miktarı | Oksijen atomu sayısı |\n| :--- | :---: |\n| $22 \\text{ g}$ $N_2O$ gazı | K |\n| Normal şartlar altında $5,6 \\text{ L}$ CO gazı | L |\n| $3,01 \\times 10^{23}$ tane $SO_2$ molekülü içeren $SO_2$ gazı | M |\n\nBuna göre K, L ve M arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?\n\n(Gazların ideal gaz olarak davrandığı varsayılacaktır. $N_2O = 44 \\text{ g/mol}$, Avogadro sayısı ($N_A$) = $6,02 \\times 10^{23}$)",
     "secenekler": {
       "A": "$K > L > M$",
       "B": "$K > M > L$",
@@ -932,7 +932,7 @@
       "E": "$M > L > K$"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Mol Kavramı",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -943,7 +943,7 @@
     "id": 53485,
     "ders": "TYT KİMYA",
     "soru_no": 48,
-    "soru": "",
+    "soru": "Fosfor triklorür, aşağıdaki tepkimeye göre beyaz fosfor ve klor gazından elde edilebilir.\n\n$$P_4(k) + 6Cl_2(g) \\rightarrow 4PCl_3(g)$$\n\nBuna göre $12,4 \\text{ g}$ $P_4$ katısı ve $21,3 \\text{ g}$ $Cl_2$ gazının tepkimesinden en fazla kaç mol $PCl_3$ elde edilir?\n\n($Cl_2 = 71 \\text{ g/mol}$, $P_4 = 124 \\text{ g/mol}$)",
     "secenekler": {
       "A": "$0,05$",
       "B": "$0,1$",
@@ -952,7 +952,7 @@
       "E": "$0,4$"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Kimyasal Tepkimelerde Hesaplamalar",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -963,7 +963,7 @@
     "id": 53486,
     "ders": "TYT KİMYA",
     "soru_no": 49,
-    "soru": "",
+    "soru": "72 g $H_2O$'nun aşağıdaki tepkimeye göre ayrışması sonucunda $H_2$ ve $O_2$ gazlarından oluşan karışımın normal şartlardaki hacmi 67,2 L'dir.\n\n$$2H_2O(s) \\rightarrow 2H_2(g) + O_2(g)$$\n\nBu tepkimeyle ilgili aşağıdakilerden hangisi doğrudur?\n\n($H_2O = 18$ g/mol; gazların ideal gaz olarak davrandığı ve 1 mol gazın normal şartlarda 22,4 L olduğu varsayılacaktır.)",
     "secenekler": {
       "A": "Tepkime %50 verimle gerçekleşmiştir.",
       "B": "4 mol $H_2(g)$ oluşmuştur.",
@@ -983,7 +983,7 @@
     "id": 53487,
     "ders": "TYT KİMYA",
     "soru_no": 50,
-    "soru": "",
+    "soru": "Alüminyum katısı ve oksijen gazı arasında aşağıdaki tepkime gerçekleşmektedir.\n\n$$4Al(k) + 3O_2(g) \\rightarrow 2Al_2O_3(k)$$\n\nBu tepkime\n\nI. 2 mol $Al(k)$ ve 9 mol $O_2(g)$\n\nII. 8 mol $Al(k)$ ve 6 mol $O_2(g)$\n\nIII. 9 mol $Al(k)$ ve 4,5 mol $O_2(g)$\n\nkullanılarak aynı şartlarda gerçekleştirildiğinde elde edilen $Al_2O_3$ kütleleri arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?",
     "secenekler": {
       "A": "I > II > III",
       "B": "I > III > II",
@@ -1003,7 +1003,7 @@
     "id": 53488,
     "ders": "TYT KİMYA",
     "soru_no": 51,
-    "soru": "",
+    "soru": "Metalik bağın nasıl oluştuğuyla ilgili olarak ortaya atılan elektron denizi modeli, metallerin bazı özelliklerinin açıklanmasında kullanılabilir.\n\nBuna göre metallerin;\n\nI. elektriği iletmesi,\n\nII. tel ve levha hâline getirilebilmesi,\n\nIII. ametallerle tepkimeye girmesi\n\nözelliklerinden hangileri elektron denizi modeliyle açıklanabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1023,7 +1023,7 @@
     "id": 53489,
     "ders": "TYT KİMYA",
     "soru_no": 52,
-    "soru": "",
+    "soru": "25 °C'de aşağıdaki gibi üç farklı doymamış $KNO_3$ çözeltisi hazırlanıyor.\n\nI. çözelti: 100 g saf su ve 25 g $KNO_3$ katısı\n\nII. çözelti: 75 g saf su ve 25 g $KNO_3$ katısı\n\nIII. çözelti: 180 g saf su ve 20 g $KNO_3$ katısı\n\nBu çözeltilerin $KNO_3$ açısından en derişikten en seyreltik olana doğru sıralaması aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "I - II - III",
       "B": "II - I - III",
@@ -1043,7 +1043,7 @@
     "id": 53490,
     "ders": "TYT KİMYA",
     "soru_no": 53,
-    "soru": "",
+    "soru": "$0\\ ^\\circ\\text{C}$'de 100 g saf suda en fazla 34 g NaCl tuzu çözünebilmektedir. $0\\ ^\\circ\\text{C}$'de bileşenleri aşağıda verilen üç farklı karışım hazırlanıyor.\n\nX karışımı: 100 g saf su ve 20 g NaCl tuzu\n\nY karışımı: 100 g saf su ve 34 g NaCl tuzu\n\nZ karışımı: 100 g saf su ve 40 g NaCl tuzu\n\nBu karışımların 1 atm dış basınçta donmaya başlama sıcaklıkları ($T_X$, $T_Y$ ve $T_Z$) arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?",
     "secenekler": {
       "A": "$T_X > T_Y > T_Z$",
       "B": "$T_X > T_Y = T_Z$",
@@ -1063,7 +1063,7 @@
     "id": 53491,
     "ders": "TYT KİMYA",
     "soru_no": 54,
-    "soru": "",
+    "soru": "Bir deneyde üç ayrı kaba 1000'er gram saf su konuluyor. Bu kaplardan birincisine 1 mol NaCl, ikincisine 1 mol sakkaroz ve üçüncüsüne 1 mol $MgCl_2$ ilave edilip aşağıdaki gibi A, B ve C çözeltileri hazırlanıyor. Hazırlanan çözeltiler dış basıncın 1 atm olduğu ortamda ısıtılıyor ve çözeltilerin kaynamaya başladığı sıcaklıklar ($T_A$, $T_B$ ve $T_C$) ölçülüyor.\n\nŞekilde üç kap gösterilmektedir: A kabında 1000 g saf su içine 1 mol NaCl, B kabında 1000 g saf su içine 1 mol sakkaroz, C kabında 1000 g saf su içine 1 mol $MgCl_2$ ilave edilmiştir.\n\nBuna göre ölçülen $T_A$, $T_B$ ve $T_C$ sıcaklıkları arasındaki ilişki aşağıdakilerin hangisinde doğru olarak verilmiştir?\n\n(NaCl ve $MgCl_2$ tuzlarının suda tamamen iyonlarına ayrışarak çözündüğü, sakkarozun ise moleküler olarak çözündüğü varsayılacaktır.)",
     "secenekler": {
       "A": "$T_A = T_B = T_C$",
       "B": "$T_A > T_B > T_C$",
@@ -1083,7 +1083,7 @@
     "id": 53492,
     "ders": "TYT KİMYA",
     "soru_no": 55,
-    "soru": "",
+    "soru": "Hacimce %20 etanol içeren 120 mL sulu etanol çözeltisiyle ilgili,\n\nI. 20 mL etanole toplam hacim 120 mL olacak şekilde su eklenerek hazırlanmıştır.\n\nII. Çözelti hazırlanırken 76 mL su kullanılmıştır.\n\nIII. Çözelti hacmi 200 mL oluncaya kadar su eklendiğinde etanol derişimi hacimce %12 olur.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız II",
       "B": "Yalnız III",
@@ -1103,7 +1103,7 @@
     "id": 53493,
     "ders": "TYT KİMYA",
     "soru_no": 56,
-    "soru": "",
+    "soru": "Belirli bir sıcaklıkta, 80 gram tuz ile 120 gram su karıştırılıyor. Daha fazla çözünme olmayıncaya kadar beklendiğinde tuzun 40 gramının, kabın dibinde çözünmeden kaldığı gözlemleniyor.\n\nBuna göre çözeltide tuzun kütlece yüzde derişimi kaçtır?\n\n(Suyun buharlaşmadığı varsayılacaktır.)",
     "secenekler": {
       "A": "20",
       "B": "25",
@@ -1123,7 +1123,7 @@
     "id": 53494,
     "ders": "TYT KİMYA",
     "soru_no": 57,
-    "soru": "",
+    "soru": "$^{20}_{10}X$, $^{21}_{10}Y$ ve $^{22}_{11}Z$ element atomlarıyla ilgili,\n\nI. X ve Y aynı elementin izotop atomlarıdır.\n\nII. Z element atomunun elektron ve nötron sayıları eşittir.\n\nIII. Y ve Z element atomlarının nötron sayıları eşittir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1132,7 +1132,7 @@
       "E": "I, II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Atomun Yapısı",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1143,7 +1143,7 @@
     "id": 53495,
     "ders": "TYT KİMYA",
     "soru_no": 58,
-    "soru": "",
+    "soru": "Asit çözeltilerinin K, L ve M metallerine etkisinin araştırıldığı bir deneyde aşağıdaki veriler elde edilmiştir.\n\n| Metal | HCl sulu çözeltisi | $HNO_3$ sulu çözeltisi |\n|---|---|---|\n| K | Tepkime yok | Tepkime yok |\n| L | Gaz çıkışı | Gaz çıkışı |\n| M | Tepkime yok | Gaz çıkışı |\n\nBuna göre, metallerin en aktif olandan en az aktif olana doğru sıralaması aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "K - L - M",
       "B": "K - M - L",
@@ -1152,7 +1152,7 @@
       "E": "M - K - L"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Asitlerin ve Bazların Tepkimeleri",
     "yil": "2019",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -1163,7 +1163,7 @@
     "id": 53496,
     "ders": "TYT KİMYA",
     "soru_no": 59,
-    "soru": "",
+    "soru": "Laboratuvarda, içerisinde derişik hidroklorik asit ve derişik nitrik asit çözeltisi oldukları bilinen ancak üzerinde etiketleri olmayan iki şişe bulunmaktadır.\n\nBu şişeleri içerdikleri asitler açısından doğru şekilde etiketlemek için aşağıdakilerden hangisinin yapılması uygundur?",
     "secenekler": {
       "A": "Çinko metali üzerindeki etkilerini incelemek",
       "B": "Kireç taşı üzerindeki etkilerini incelemek",
@@ -1172,7 +1172,7 @@
       "E": "Sodyum hidroksit üzerindeki etkilerini incelemek"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Asitlerin ve Bazların Tepkimeleri",
     "yil": "2020",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -1183,7 +1183,7 @@
     "id": 53497,
     "ders": "TYT KİMYA",
     "soru_no": 60,
-    "soru": "",
+    "soru": "1 mol $H_2SO_4$ içeren sulu çözelti ile 2 mol KOH içeren sulu çözelti karıştırılarak tepkime gerçekleştiriliyor.\n\nBu tepkimeyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "Nötralleşme tepkimesi olarak sınıflandırılır.",
       "B": "Tepkime sonucunda $H_2$ gazı açığa çıkar.",
@@ -1192,7 +1192,7 @@
       "E": "Tepkime sonucunda 2 mol $K_2SO_4$ tuzu oluşur."
     },
     "dogru_cevap": "A",
-    "ana_konu": "Genel",
+    "ana_konu": "Asitlerin ve Bazların Tepkimeleri",
     "yil": "2020",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -1203,7 +1203,7 @@
     "id": 53498,
     "ders": "TYT KİMYA",
     "soru_no": 61,
-    "soru": "",
+    "soru": "X ve Y bileşiklerinin sulu çözeltileriyle ilgili aşağıdaki bilgiler verilmektedir:\n\n• X'in sulu çözeltisi amfoter özellik gösteren çinko (Zn) ile tepkimeye girdiğinde hidrojen gazı açığa çıkar.\n• Y'nin sulu çözeltisi yarı soy metal olan bakır (Cu) ile tepkimeye girdiğinde gaz açığa çıkar.\n• X ile Y tepkimeye girdiğinde tuz ve su oluşur.\n\nBuna göre X ve Y bileşikleri aşağıdakilerden hangisi olabilir?",
     "secenekler": {
       "A": "X: HCl, Y: NaOH",
       "B": "X: NaOH, Y: HCl",
@@ -1212,7 +1212,7 @@
       "E": "X: NaOH, Y: $HNO_3$"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Asitlerin ve Bazların Tepkimeleri",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": true,

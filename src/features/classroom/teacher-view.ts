@@ -1,4 +1,12 @@
+import { escapeHtml } from '../../shared/escape.ts';
 import type { RoomFeedItem, RoomState, StudentStats } from './types.ts';
+
+const starredUntilByStudent = new Map<string, number>();
+
+export function markStudentStarred(studentKey: string, durationMs: number = 1400): void {
+  if (!studentKey) return;
+  starredUntilByStudent.set(studentKey, Date.now() + durationMs);
+}
 
 export function updateTeacherFeed(state: RoomState): void {
   const listEl = document.getElementById('teacherExitLogsList');
@@ -24,10 +32,6 @@ function renderFeedRow(item: RoomFeedItem): string {
       rowClass = 'row-success';
       break;
     case 'LEAVE':
-      icon = '⚪';
-      statusText = 'ayrıldı';
-      rowClass = 'row-danger';
-      break;
     case 'FOCUS_LOST':
       if (item.returnedAt) {
         icon = '🔄';
@@ -45,7 +49,7 @@ function renderFeedRow(item: RoomFeedItem): string {
       statusText = 'hoca çağırdı!';
       rowClass = 'row-warning';
       if (!item.resolved) {
-        actionBtn = `<button type="button" class="btn-resolve-help" data-action="resolve-help" data-id="${item.id}" data-student-id="${item.studentId}" data-name="${escapeHtml(item.studentName)}" title="Gidildi / Tamamlandı">Tamam ✓</button>`;
+        actionBtn = `<button type="button" class="btn-resolve-help" data-action="resolve-help" data-id="${escapeHtml(item.id)}" data-student-id="${escapeHtml(item.studentId)}" data-name="${escapeHtml(item.studentName)}" title="Gidildi / Tamamlandı">Tamam ✓</button>`;
       } else {
         statusText = 'hoca ilgilendi ✓';
         rowClass = 'row-success';
@@ -53,7 +57,7 @@ function renderFeedRow(item: RoomFeedItem): string {
       break;
   }
 
-  return `<div class="exit-log-row ${rowClass}" id="feed_${item.id}">
+  return `<div class="exit-log-row ${rowClass}" id="feed_${escapeHtml(item.id)}">
     <span class="exit-log-bullet">${icon}</span>
     <span class="exit-log-name">${escapeHtml(item.studentName)}</span>
     <span class="exit-log-status">${statusText}</span>
@@ -72,12 +76,13 @@ export function updateTeacherStats(state: RoomState): void {
     return;
   }
 
-  listEl.innerHTML = statsList.map((s) => renderStudentStatRow(s)).join('');
+  const now = Date.now();
+  listEl.innerHTML = statsList.map((s) => renderStudentStatRow(s, now)).join('');
 }
 
-function renderStudentStatRow(s: StudentStats): string {
+function renderStudentStatRow(s: StudentStats, now: number): string {
   const totalSolved = s.correctCount + s.incorrectCount;
-  const elapsedMinutes = Math.max(0.2, (Date.now() - s.joinedAt) / 60000);
+  const elapsedMinutes = Math.max(0.2, (now - s.joinedAt) / 60000);
   const pace = totalSolved > 0 ? (elapsedMinutes / totalSolved).toFixed(1) : '-';
 
   const exitCount = s.exitCount || 0;
@@ -88,6 +93,9 @@ function renderStudentStatRow(s: StudentStats): string {
     : `<span class="stat-clean" style="color:#10b981;" title="Hiç ayrılmadı">🛡️ 0 ihlal</span>`;
 
   const onlineDot = s.isOnline !== false ? '🟢' : '⚪ (Ayrıldı)';
+  const isStarred = (starredUntilByStudent.get(s.id) ?? 0) > now;
+  const starBtnLabel = isStarred ? '⭐ Gönderildi' : '⭐';
+  const starDisabledAttr = isStarred ? ' disabled' : '';
 
   return `<div class="student-stat-row">
     <div style="display:flex; flex-direction:column; gap:2px;">
@@ -98,7 +106,7 @@ function renderStudentStatRow(s: StudentStats): string {
       <span class="stat-correct" title="Doğru Sayısı">🟢 ${s.correctCount}</span>
       <span class="stat-incorrect" title="Yanlış Sayısı">🔴 ${s.incorrectCount}</span>
       <span class="stat-pace" title="Soru Başına Ortalama Süre">⏱️ ${pace} dk</span>
-      <button type="button" class="btn-star-student" data-action="award-star" data-id="${s.id}" data-name="${escapeHtml(s.name)}" title="Öğrenciye Yıldız Gönder">⭐</button>
+      <button type="button" class="btn-star-student" data-action="award-star" data-id="${escapeHtml(s.id)}" data-name="${escapeHtml(s.name)}" title="Öğrenciye Yıldız Gönder"${starDisabledAttr}>${starBtnLabel}</button>
     </div>
   </div>`;
 }
@@ -106,12 +114,4 @@ function renderStudentStatRow(s: StudentStats): string {
 function formatTime(timestamp: number): string {
   const d = new Date(timestamp);
   return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}:${String(d.getSeconds()).padStart(2, '0')}`;
-}
-
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
 }

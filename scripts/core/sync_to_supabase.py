@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AÖL Dijital Kitapçık — Supabase Toplu Senkronizasyon Betiği
-Yereldeki JSON verilerini (sorular, kavramlar, AI açıklamaları) Supabase veritabanına aktarır.
+Yereldeki JSON verilerini (sorular, kavramlar, dersler, AI açıklamaları) Supabase veritabanına aktarır.
 
 Kullanım:
     python3 scripts/core/sync_to_supabase.py --dry-run
@@ -24,24 +24,6 @@ DATA_DIR = os.path.join(ROOT_DIR, 'data')
 SUBJECTS_DIR = os.path.join(DATA_DIR, 'subjects')
 CONCEPTS_DIR = os.path.join(DATA_DIR, 'concepts')
 AI_EXP_DIR = os.path.join(DATA_DIR, 'ai_explanations')
-
-SUBJECT_KEYWORDS = [
-    ('COĞRAFYA', 'COG'), ('TÜRK DİLİ', 'TDE'), ('EDEBİYAT', 'TDE'),
-    ('MATEMATİK', 'MAT'), ('İNKILAP', 'INK'), ('TARİH', 'TAR'),
-    ('KİMYA', 'KIM'), ('FİZİK', 'FIZ'), ('BİYOLOJİ', 'BIO'),
-    ('FELSEFE', 'FEL'), ('DİN KÜLTÜRÜ', 'DIN'), ('SAĞLIK', 'SAG'),
-    ('İNGİLİZCE', 'ING'), ('KELAM', 'KLM'), ('HADİS', 'AOF_HADIS'),
-    ('İSLAM TARİHİ', 'AOF_ITAR'), ('AHLAK', 'AOF_AHLAK'),
-    ('İBADET', 'AOF_IBADET'), ('İNANÇ', 'AOF_INANC')
-]
-
-
-def get_subject_code_from_ders(ders: str) -> Optional[str]:
-    d = ders.upper()
-    for kw, code in SUBJECT_KEYWORDS:
-        if kw in d:
-            return code
-    return None
 
 
 def load_env_vars() -> Dict[str, str]:
@@ -117,6 +99,41 @@ class SupabaseSyncer:
         return (success, failed)
 
 
+def prepare_subjects() -> List[Dict[str, Any]]:
+    manifest_path = os.path.join(ROOT_DIR, 'src/data/generated/subjectManifest.json')
+    if not os.path.exists(manifest_path):
+        return []
+    with open(manifest_path, 'r', encoding='utf-8') as f:
+        manifest = json.load(f)
+
+    subjects = []
+    for sid, meta in sorted(manifest.items()):
+        if sid.startswith('TYT_'): program = 'TYT'
+        elif sid.startswith('AYT_'): program = 'AYT'
+        elif sid == 'YDT_ING': program = 'YDT'
+        elif sid.startswith('AOF_'): program = 'AOF'
+        elif sid.startswith('ILM_'): program = 'ILMIHAL'
+        elif sid.startswith('GIR_'): program = 'GIRISIMCILIK'
+        else: program = 'AOIHL'
+
+        if any(w in sid for w in ['MAT', 'FIZ', 'KIM', 'BIO']): cat = 'sayisal'
+        elif any(w in sid for w in ['HADIS', 'ITAR', 'AHLAK', 'IBADET', 'INANC', 'ARAPCA', 'KLM', 'ILM']): cat = 'ilahiyat'
+        elif any(w in sid for w in ['DIN', 'SAG', 'ING', 'GIR']): cat = 'kultur'
+        else: cat = 'sozel'
+
+        subjects.append({
+            'id': sid,
+            'name': sid,
+            'short_name': sid,
+            'program': program,
+            'category': cat,
+            'kredi': 1 if program in ('TYT', 'AYT', 'YDT') else 2,
+            'question_count': meta.get('questionCount', 0),
+            'course_count': meta.get('courseCount', 1)
+        })
+    return subjects
+
+
 def prepare_questions(subjects: Optional[List[str]] = None) -> List[Dict[str, Any]]:
     questions: List[Dict[str, Any]] = []
     for filepath in sorted(glob.glob(os.path.join(SUBJECTS_DIR, '*.json'))):
@@ -131,21 +148,23 @@ def prepare_questions(subjects: Optional[List[str]] = None) -> List[Dict[str, An
             continue
 
         for q in data:
-            if not q.get('id') or not q.get('ders') or not q.get('soru') or not isinstance(q.get('secenekler'), dict):
+            if not q.get('id') or not q.get('ders') or not str(q.get('soru', '')).strip() or not isinstance(q.get('secenekler'), dict):
                 continue
             questions.append({
                 'id': int(q['id']),
                 'subject': subj,
                 'ders': str(q['ders']).strip(),
-                'ders_kodu': int(q['ders_kodu']) if q.get('ders_kodu') is not None else None,
+                'ders_kodu': int(q['ders_kodu']) if q.get('ders_kodu') is not None and str(q.get('ders_kodu')).isdigit() else None,
                 'soru_no': int(q['soru_no']) if q.get('soru_no') is not None else None,
-                'soru': str(q['soru']),
+                'soru': str(q['soru']).strip(),
                 'secenekler': q['secenekler'],
                 'dogru_cevap': str(q['dogru_cevap']).strip(),
                 'ana_konu': q.get('ana_konu'),
                 'alt_konu': q.get('alt_konu'),
                 'yil': str(q['yil']) if q.get('yil') is not None else None,
                 'donem': str(q['donem']) if q.get('donem') is not None else None,
+                'sinav_kodu': str(q['sinav_kodu']) if q.get('sinav_kodu') is not None else None,
+                'sinav_adi': str(q['sinav_adi']) if q.get('sinav_adi') is not None else None,
                 'puan': float(q['puan']) if q.get('puan') is not None else None,
                 'kredi': int(q['kredi']) if q.get('kredi') is not None else None,
                 'sinav_soru_sayisi': int(q['sinav_soru_sayisi']) if q.get('sinav_soru_sayisi') is not None else None,
@@ -165,10 +184,6 @@ def prepare_concepts() -> List[Dict[str, Any]]:
     concepts: List[Dict[str, Any]] = []
     seen_ids = set()
     for filepath in sorted(glob.glob(os.path.join(CONCEPTS_DIR, '*_concepts.json'))):
-        base = os.path.basename(filepath).replace('_concepts.json', '')
-        parts = base.split('_')
-        subject = parts[0]
-        donem_hint = int(parts[1]) if len(parts) > 1 and parts[1].isdigit() else 1
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 items = json.load(f)
@@ -177,42 +192,26 @@ def prepare_concepts() -> List[Dict[str, Any]]:
             continue
 
         for item in items:
-            raw_id, term = item.get('id'), item.get('term')
-            if not raw_id or not term:
+            cid = item.get('id')
+            if not cid or cid in seen_ids:
                 continue
-            donemler = item.get('donemler', [donem_hint])
-            sayfa_by_donem = item.get('sayfa_by_donem', {})
-            tanim_by_donem = item.get('tanim_by_donem', {})
-
-            for d in donemler:
-                d_int = int(d)
-                scoped_id = raw_id if len(donemler) == 1 else f'{raw_id}_d{d_int}'
-                if scoped_id in seen_ids:
-                    for ex in concepts:
-                        if ex['id'] == scoped_id:
-                            ex['tanim'] = tanim_by_donem.get(str(d), item.get('tanim', ex['tanim']))
-                            ex['sayfa'] = sayfa_by_donem.get(str(d), item.get('sayfa', ex['sayfa']))
-                    continue
-
-                seen_ids.add(scoped_id)
-                tanim = tanim_by_donem.get(str(d), item.get('tanim', ''))
-                sayfa = sayfa_by_donem.get(str(d), item.get('sayfa'))
-                concepts.append({
-                    'id': scoped_id,
-                    'base_id': raw_id,
-                    'term': str(term).strip(),
-                    'subject': subject,
-                    'ders': f'{subject} – {d_int}',
-                    'ders_kodu': item.get('ders_kodu'),
-                    'donem': d_int,
-                    'unite_no': item.get('unite_no'),
-                    'sayfa': int(sayfa) if sayfa is not None else None,
-                    'tanim': str(tanim),
-                    'baglam_farki': item.get('baglam_farki'),
-                    'sinav_ipucu': item.get('sinav_ipucu'),
-                    'pattern': item.get('pattern'),
-                    'aliases': item.get('aliases', [])
-                })
+            seen_ids.add(cid)
+            concepts.append({
+                'id': cid,
+                'base_id': item.get('base_id', cid),
+                'term': str(item.get('term', '')).strip(),
+                'subject': item.get('subject', 'GENEL'),
+                'ders': str(item.get('ders', '')).strip(),
+                'ders_kodu': item.get('ders_kodu'),
+                'donem': int(item.get('donem', 1)),
+                'unite_no': item.get('unite_no'),
+                'sayfa': item.get('sayfa'),
+                'tanim': str(item.get('tanim', '')).strip(),
+                'baglam_farki': item.get('baglam_farki'),
+                'sinav_ipucu': item.get('sinav_ipucu'),
+                'pattern': item.get('pattern'),
+                'aliases': item.get('aliases', [])
+            })
     return concepts
 
 
@@ -252,7 +251,7 @@ def prepare_question_concepts(questions: List[Dict[str, Any]], concepts: List[Di
 
     for q in questions:
         qid = q['id']
-        subj = get_subject_code_from_ders(q.get('ders', ''))
+        subj = q.get('subject')
         compiled = patterns_by_subj.get(subj, []) if subj else []
         if not compiled:
             continue
@@ -277,7 +276,7 @@ def prepare_question_concepts(questions: List[Dict[str, Any]], concepts: List[Di
 def main():
     parser = argparse.ArgumentParser(description='AÖL Kitapçık Supabase Toplu Veri Senkronizasyonu')
     parser.add_argument('--dry-run', action='store_true', help='Veritabanına yazmadan sadece kontrol yapar.')
-    parser.add_argument('--table', default='all', choices=['all', 'questions', 'concepts', 'ai_explanations', 'question_concepts'],
+    parser.add_argument('--table', default='all', choices=['all', 'subjects', 'questions', 'concepts', 'ai_explanations', 'question_concepts'],
                         help='Aktarılacak tabloyu seçin (varsayılan: all).')
     parser.add_argument('--subjects', default=None, help='Ders kodları filtresi (örn: KLM,DIN,MAT).')
     parser.add_argument('--batch-size', type=int, default=200, help='PostgREST paket boyutu (varsayılan: 200).')
@@ -300,6 +299,11 @@ def main():
     print('=' * 60)
 
     syncer = SupabaseSyncer(url=sb_url or 'http://localhost', key=sb_key or 'dummy', batch_size=args.batch_size, dry_run=args.dry_run)
+
+    if args.table in ('all', 'subjects'):
+        subjects_data = prepare_subjects()
+        print(f'📦 Ders Kataloğu: {len(subjects_data)} kayıt hazırlandı.')
+        syncer.sync_table('subjects', subjects_data)
 
     concepts_data = []
     if args.table in ('all', 'concepts', 'question_concepts'):

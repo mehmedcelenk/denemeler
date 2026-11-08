@@ -283,7 +283,7 @@
     "id": 53513,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 15,
-    "soru": "",
+    "soru": "İnsanda, bir karaciğer hücresi çekirdeğinde;\n\nI. gen,\n\nII. nükleotit,\n\nIII. kromozom\n\nsayılarının en az olandan en çok olana doğru sıralaması aşağıdakilerden hangisidir?",
     "secenekler": {
       "A": "I – II – III",
       "B": "I – III – II",
@@ -303,7 +303,7 @@
     "id": 53514,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 16,
-    "soru": "",
+    "soru": "Selüloz, kitin ve nişasta ile ilgili;\n\nI. polimer yapıda olma,\n\nII. yapısında azot bulundurma,\n\nIII. dehidrasyon süreci ile oluşma,\n\nIV. hayvan hücrelerinde depo edilebilme\n\nözelliklerinden hangileri ortaktır?",
     "secenekler": {
       "A": "I ve III",
       "B": "I ve IV",
@@ -323,7 +323,7 @@
     "id": 53515,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 17,
-    "soru": "",
+    "soru": "Aşağıdaki organik moleküllerden hangisi bir polimer değildir?",
     "secenekler": {
       "A": "Glikojen",
       "B": "Kitin",
@@ -343,7 +343,7 @@
     "id": 53516,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 18,
-    "soru": "",
+    "soru": "Amino asitlerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Bazı amino asitler insan vücudunda üretilemediği için besinlerle alınmalıdır.",
       "B": "Amino asitlerin farklılığı, yapılarında bulunan radikal gruplardan kaynaklanmaktadır.",
@@ -363,7 +363,7 @@
     "id": 53517,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 19,
-    "soru": "",
+    "soru": "Aşağıda bir hayvan ve bitki hücresi şematize edilmiştir.\n\nGörselde solda \"Hayvan hücresi\" (yuvarlak, belirgin hücre duvarı olmayan, küçük ve çok sayıda koful içeren), sağda \"Bitki hücresi\" (köşeli, kalın hücre duvarına sahip, büyük merkezî koful içeren) şematik olarak gösterilmiştir.\n\nBu hücreler karşılaştırıldığında aşağıdakilerin hangisi açısından aralarında farklılık olmadığı görülür?",
     "secenekler": {
       "A": "Hücre duvarının varlığı",
       "B": "Hücre bölünmesinde sitokinezin gerçekleşme şekli",
@@ -383,7 +383,7 @@
     "id": 53518,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 20,
-    "soru": "",
+    "soru": "Hücre zarı ile ilgili,\n\nI. Zar yapısında yer alan fosfolipitler hareket hâlindedir.\n\nII. Zar yapısındaki glikoprotein ve glikolipit moleküllerinin dağılımı, tüm canlıların hücre zarlarında aynıdır.\n\nIII. Zar yapısında yer alan taşıyıcı proteinler, bütün moleküllerin zardan geçişinde görev alır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -403,7 +403,7 @@
     "id": 53519,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 21,
-    "soru": "",
+    "soru": "Tipik bir bitki ve hayvan hücresi karşılaştırıldığında aşağıdakilerden hangisi ortak değildir?",
     "secenekler": {
       "A": "Enerji kullanarak hücre içine molekül alma",
       "B": "Oksijen kullanarak enerji üretimi gerçekleştiren organellere sahip olma",
@@ -423,7 +423,7 @@
     "id": 53520,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 22,
-    "soru": "",
+    "soru": "Hücre zarı ile ilgili,\n\nI. Zar yapısında yer alan fosfolipitler hareket hâlindedir.\n\nII. Zar yapısındaki glikoprotein ve glikolipit moleküllerinin dağılımı, tüm canlıların hücre zarlarında aynıdır.\n\nIII. Zar yapısında yer alan taşıyıcı proteinler, bütün moleküllerin zardan geçişinde görev alır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -443,7 +443,7 @@
     "id": 53521,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 23,
-    "soru": "",
+    "soru": "Trigliseritler ile ilgili,\n\nI. Bir molekül trigliserit oluşurken bir molekül su açığa çıkar.\n\nII. Bir gliserol ile üç yağ asitinin esterleşmesi sonucu bir trigliserit molekülü oluşur.\n\nIII. İnsanlar, sentezledikleri trigliseritlerin yapısındaki yağ asitlerinin bir kısmını besinlerle dışarıdan almak zorundadır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -452,7 +452,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "B",
-    "ana_konu": "Genel",
+    "ana_konu": "Canlıların Yapısında Bulunan Temel Bileşikler",
     "yil": "2024",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -463,7 +463,7 @@
     "id": 53522,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 24,
-    "soru": "",
+    "soru": "Aşağıda hücre zarından bir kesit şematize edilmiştir. Şekilde hücre zarı yapısında numaralanmış beş kısım gösterilmiştir: I numaralı kısım zarın dış yüzeyinde karbonhidrat zincirine bağlı protein (glikoprotein), II numaralı kısım fosfolipit tabakası içine gömülü kolesterol, III numaralı kısım zardan madde geçişini sağlayan taşıyıcı protein, IV numaralı kısım zardan iyon geçişini sağlayan kanal proteini, V numaralı kısım ise zar yüzeyinde serbest halde bulunan bir yapı olarak betimlenmiştir.\n\nŞekildeki numaralanmış kısımlarla ilgili aşağıdakilerden hangisi yanlıştır?",
     "secenekler": {
       "A": "I, glikoprotein olup hücreye özgüllük kazandırır.",
       "B": "II, kolesterol olup hücre zarına dayanıklılık kazandırır.",
@@ -483,7 +483,7 @@
     "id": 53523,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 25,
-    "soru": "",
+    "soru": "Böbrek yetmezliği olan bazı hastaların kanı, diyaliz olarak bilinen bir yöntemle yarı geçirgen bir zardan geçirilerek zararlı maddelerden temizlenir.\n\nBu yöntemin temeli aşağıdaki madde taşıma yöntemlerinden hangisine dayanır?",
     "secenekler": {
       "A": "Difüzyon",
       "B": "Pinositoz",
@@ -503,7 +503,7 @@
     "id": 53524,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 26,
-    "soru": "",
+    "soru": "Aşağıdaki özelliklerden hangisine sahip olması bir canlının ökaryotik olduğunu kanıtlar?",
     "secenekler": {
       "A": "Halkasal DNA'ya sahip olması",
       "B": "Hücre duvarına sahip olması",
@@ -523,7 +523,7 @@
     "id": 53525,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 27,
-    "soru": "",
+    "soru": "Linnaeus'nin canlıların sınıflandırılmasıyla ilgili geliştirmiş olduğu sistem, sonradan bazı değişiklikler yapılmış olsa da günümüzde hâlâ kullanılmaktadır.\n\nGünümüzde kullanılan bu sınıflandırma sistemiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Bu sistem bir hiyerarşik sınıflandırma sistemidir.",
       "B": "Bir üst sınıflandırma basamağında yer alan canlı grupları altta yer alanlara göre daha genel ortak özellikler taşırlar.",
@@ -543,7 +543,7 @@
     "id": 53526,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 28,
-    "soru": "",
+    "soru": "Aynı cinse ait iki hayvan türü için aşağıdaki ifadelerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Bu türler aynı aile içerisinde yer alır.",
       "B": "Bu türlerin kromozom sayıları kesinlikle aynıdır.",
@@ -563,7 +563,7 @@
     "id": 53527,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 29,
-    "soru": "",
+    "soru": "Canlıların sınıflandırılmasında en üst kategoriden alt kategorilere doğru gidildikçe aşağıdakilerden hangisinin görülmesi beklenmez?",
     "secenekler": {
       "A": "Taksonlar arasındaki ortak özellikler azalır.",
       "B": "Taksonlar arasındaki akrabalık derecesi artar.",
@@ -583,7 +583,7 @@
     "id": 53528,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 30,
-    "soru": "",
+    "soru": "Bakterilerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "secenekler": {
       "A": "Bazı bakterilerde endositoz görülebilir.",
       "B": "Bazı bakteriler K vitamini sentezleyebilir.",
@@ -603,7 +603,7 @@
     "id": 53529,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 31,
-    "soru": "",
+    "soru": "Soğan kökü hücrelerinde hücre bölünmesi incelenirken aşağıdaki olaylardan hangisiyle karşılaşılmaz?",
     "secenekler": {
       "A": "Çekirdek zarının parçalanması",
       "B": "Kromatin ipliklerin kısalıp kalınlaşması",
@@ -623,7 +623,7 @@
     "id": 53530,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 32,
-    "soru": "",
+    "soru": "Aşağıdaki şekilde bal arılarında üreme süreci gösterilmiştir. Şekilde kraliçe arı (2n) mayoz bölünme ile yumurtalar (n) oluşturur. Döllenmiş yumurtalar (2n) arı sütü ile beslenirse kraliçe arı, polen ile beslenirse işçi arı olur. Döllenmemiş yumurtalar (n) ise partenogenez ile erkek arıyı oluşturur. Şekilde K olayı, N olayı, L hücresi ve M hücresi ile gösterilen yerler aşağıdakilerin hangisinde doğru olarak verilmiştir?",
     "secenekler": {
       "A": "K olayı: Mayoz, N olayı: Rejenerasyon, L hücresi: Sperm, M hücresi: Zigot",
       "B": "K olayı: Mitoz, N olayı: Rejenerasyon, L hücresi: Sperm, M hücresi: Birincil oosit",
@@ -643,7 +643,7 @@
     "id": 53531,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 33,
-    "soru": "",
+    "soru": "Bir biyoloji öğretmeni, tamamlandığında 2 yavru hücre oluşan bir hücre döngüsünün evrelerini öğrencilerinden modellemelerini istemiştir. Aşağıda bir öğrencinin hazırladığı model verilmiştir.\n\nBuna göre öğrencinin hazırladığı modelle ilgili aşağıdakilerden hangisi söylenmez?",
     "secenekler": {
       "A": "Hücre bölünmesi tipi olarak mitoz örnek verilmiştir.",
       "B": "Bölünen hücrenin kromozom sayısı $2n=8$'dir.",
@@ -663,7 +663,7 @@
     "id": 53532,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 34,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisi eşeysiz üreme ile gerçekleşmez?",
     "secenekler": {
       "A": "Laktik asit bakterilerinin çoğalması",
       "B": "Kara yosunlarında sporla yeni bireylerin oluşması",
@@ -683,7 +683,7 @@
     "id": 53533,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 35,
-    "soru": "",
+    "soru": "Bir bitki hücresindeki mitozla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "secenekler": {
       "A": "Profaz evresinde DNA replikasyonu gerçekleşir.",
       "B": "Profaz evresinde bir çift sentrozom oluşur.",
@@ -703,7 +703,7 @@
     "id": 53534,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 36,
-    "soru": "",
+    "soru": "K ve L grafiklerinde hücre bölünmeleri sırasındaki DNA miktarlarının evrelere göre değişimi verilmiştir. K grafiğinde DNA miktarı interfazda $2X$'ten $4X$'e çıkmakta, bölünme evreleri sonunda tekrar $2X$'e dönmektedir. L grafiğinde ise DNA miktarı interfazda $2X$'ten $4X$'e çıkmakta, bölünme evreleri sonunda $X$'e kadar düşmektedir. Buna göre aşağıdaki çıkarımlardan hangisi yapılamaz?",
     "secenekler": {
       "A": "L grafiği, üreme hücrelerinin oluşumu sürecindeki DNA miktarı değişimini göstermektedir.",
       "B": "K grafiğinden yararlanılarak ilgili hücrenin kromozom sayısı tespit edilebilir.",
@@ -723,7 +723,7 @@
     "id": 53535,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 37,
-    "soru": "",
+    "soru": "Meyve sineklerinde eşey kromozomları dişilerde $XX$, erkeklerde $XY$'dir. Göz renginden sorumlu gen, $X$ kromozomu üzerinde yer alır. Kırmızı göz renginden sorumlu alel ($R$), beyaz göz renginden sorumlu alele ($r$) baskındır. Laboratuvarda yapılan bir deneyde kırmızı gözlü bir dişi, beyaz gözlü bir erkekle çaprazlanarak $F_1$ dölü (kırmızı gözlü erkek ve dişi, beyaz gözlü erkek ve dişi bireyler) elde edilmiştir. Deneyin ikinci aşamasında ise $F_1$ dölünden alınan kırmızı gözlü erkek ve dişi birey çaprazlanarak $F_2$ dölü elde edilmiştir. Bu deneye göre, I. $F_1$ dölündeki beyaz gözlü erkek ve dişi bireylerin oranı yaklaşık olarak birbirine eşittir. II. $F_2$ dölünde beyaz gözlü bireylerin ortaya çıkması beklenmez. III. $F_2$ dölünde göz rengi fenotipinin cinsiyetler arasında dağılım oranı bakımından farklılığın olması beklenir. yargılarından hangilerine ulaşılabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -743,7 +743,7 @@
     "id": 53536,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 38,
-    "soru": "",
+    "soru": "Renk körlüğü X kromozomu üzerindeki çekinik bir alel tarafından kalıtılan bir hastalıktır.\n\nYukarıdaki soyağacında \"?\" ile gösterilen bireyin renk körü olma olasılığı kaçtır?",
     "secenekler": {
       "A": "$1$",
       "B": "$\\frac{3}{4}$",
@@ -763,7 +763,7 @@
     "id": 53537,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 39,
-    "soru": "",
+    "soru": "Popülasyonda görülme sıklığı yüksek olan kalıtsal bir hastalığın kalıtım şeklini belirlemek isteyen bir araştırmacı, bu hastalığın görüldüğü bir ailenin soyağacını aşağıdaki gibi çiziyor.\n\nBu hastalığın kalıtım şekliyle ilgili,\n\nI. Hastalığın sadece erkek bireylerde ortaya çıkması, Y'ye bağlı çekinik alel ile kalıtıldığına işaret etmektedir.\n\nII. Bu hastalık kesinlikle otozomal baskın alel ile kalıtılmaktadır.\n\nIII. Soyağacında hasta dişi birey bulunmamasına karşın bu hastalığa X'e bağlı çekinik alel yol açıyor olabilir.\n\nyorumlarından hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -783,7 +783,7 @@
     "id": 53538,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 40,
-    "soru": "",
+    "soru": "Aşağıdaki soyağacında bir özelliğin bir ailedeki kalıtımı verilmiştir.\n\nSoyağacında; özelliği göstermeyen erkek, özelliği gösteren erkek, özelliği göstermeyen dişi ve özelliği gösteren dişi bireyler sembollerle gösterilmiştir.\n\nBuna göre bu özelliğin kalıtımı ile ilgili,\n\nI. X kromozomundaki baskın bir alel ile kalıtılıyor olabilir.\n\nII. X kromozomundaki çekinik bir alel ile kalıtılıyor olabilir.\n\nIII. Otozomal baskın olarak kalıtılıyor olabilir.\n\nIV. Otozomal çekinik olarak kalıtılıyor olabilir.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -803,7 +803,7 @@
     "id": 53539,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 41,
-    "soru": "",
+    "soru": "Aşağıdaki soyağacında X kromozomu üzerindeki çekinik bir alel tarafından kalıtılan özelliğin bir ailedeki kalıtım seyri verilmiştir.\n\nSoyağacında 1, 2, 3, 4 ve 5 numaralı bireyler; dişi ve erkek sembolleriyle gösterilmiştir.\n\nSoyağacında sadece 3 numaralı birey bu özelliği fenotipinde gösterdiğine göre özelliğin kalıtımı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "secenekler": {
       "A": "1 numaralı bireyin genotipinde bu özellikten sorumlu alel bulunur.",
       "B": "2 numaralı bireyin genotipinde bu özellikten sorumlu alel bulunmaz.",
@@ -823,7 +823,7 @@
     "id": 53540,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 42,
-    "soru": "",
+    "soru": "İnsanlarda bazı karakterlerin kalıtımı, geni taşıyan ebeveynlerin ve bu ebeveynlerden doğacak olan çocukların cinsiyetine bağlıdır. Aşağıda bu şekilde kalıtılan renk körlüğü hastalığının bir ailedeki seyri gösterilmiştir.\n\nŞemada anne ve baba, sağlıklı erkek çocuk, renk körü erkek çocuk, renk körü kız çocuk ve taşıyıcı kız çocuk yer almaktadır. Anne ve babanın fenotipi bilinmemektedir.\n\nAnne ve babanın fenotipinin bilinmediği bu kalıtım şemasına göre aşağıdakilerden hangisi söylenmez?",
     "secenekler": {
       "A": "Anne ve babanın genotipinde renk körlüğünden sorumlu alel bulunmaktadır.",
       "B": "Bu çiftin kız ve erkek çocuklarının renk körü olma olasılığı eşittir.",
@@ -843,7 +843,7 @@
     "id": 53541,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 43,
-    "soru": "",
+    "soru": "Hemofili, X kromozomu üzerindeki çekinik bir alel tarafından kalıtılan bir hastalıktır. Aşağıda bu hastalığın bir ailedeki kalıtımı gösterilmiştir.\n\nŞemada sağlıklı dişi, hasta dişi, sağlıklı erkek ve hasta erkek bireyler ile 1 ve 2 numaralı bireyler yer almaktadır.\n\nBuna göre 1 ve 2 numaralı bireylerin evliliğinden doğacak çocuğun hemofili olma olasılığı kaçtır?",
     "secenekler": {
       "A": "$\\frac{1}{16}$",
       "B": "$\\frac{1}{8}$",
@@ -863,7 +863,7 @@
     "id": 53542,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 44,
-    "soru": "",
+    "soru": "Aşağıdaki soyağacında otozomal çekinik bir özelliğin bir ailedeki kalıtımı verilmiştir. Soyağacında özelliği göstermeyen erkek birey, özelliği gösteren erkek birey, özelliği göstermeyen dişi birey ve özelliği gösteren dişi birey sembolleriyle gösterilen bireyler 1, 2, 3, 4, 5 ve 6 numaralarıyla numaralandırılmıştır. Buna göre\n\nI. 1 numaralı bireyin genotipinde bu özellikten sorumlu alel bulunur.\n\nII. 3 ve 4 numaralı bireylerin bu evliliğinden doğabilecek tüm çocukların genotipleri heterozigot olur.\n\nIII. 5 ve 6 numaralı bireylerin bu evliliğinden doğabilecek tüm çocukların genotiplerinde bu özellikten sorumlu alel bulunur.\n\nifadelerinden hangileri kesinlikle doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -883,7 +883,7 @@
     "id": 53543,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 45,
-    "soru": "",
+    "soru": "Aşağıdaki soyağacında bir hastalığın bir ailedeki kalıtımı verilmiştir. Soyağacında sağlıklı erkek, hasta erkek, sağlıklı dişi ve hasta dişi bireyler sembolleriyle gösterilmiştir. Bu hastalıkla ilgili\n\nI. Otozomal çekinik olarak kalıtılmaktadır.\n\nII. Otozomal baskın olarak kalıtılmaktadır.\n\nIII. X kromozomundaki çekinik bir alelle kalıtılmaktadır.\n\nifadelerinden hangileri doğru olabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız III",
@@ -903,7 +903,7 @@
     "id": 53544,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 46,
-    "soru": "",
+    "soru": "Canlıların yedikleri besinlerle aldıkları bazı zehirli maddeler, vücutta parçalanmaz ve değişik dokularda birikir. Alt trofik basamaklarda biriken bu maddeler besin zinciri yoluyla üst basamaklara aktarılır ve üst trofik basamaklarda daha yoğun hâle gelir. Bu olaya *biyolojik birikim* denir.\n\nBuna göre, bir göl ekosistemine karışan bir zehirli maddenin aynı besin zincirinde yer alan aşağıdaki canlılardan hangisinin dokusunda *biyolojik birikim* daha fazla olur?",
     "secenekler": {
       "A": "Fitoplankton",
       "B": "Zooplankton",
@@ -912,7 +912,7 @@
       "E": "Balık kartalı"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Ekosistem Ekolojisi",
     "yil": "2019",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -923,7 +923,7 @@
     "id": 53545,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 47,
-    "soru": "",
+    "soru": "Aşağıdaki şekilde bir denizel ekosistemde görülen küçük bir besin ağı verilmiştir.\n\n[Şekil Betimi: Besin ağı şemasında Fitoplankton üretici olarak en altta yer alır. Fitoplankton'dan Zooplankton'a ok gider. Zooplankton'dan hem Denizanası'na hem de Balık larvası'na ok gider. Balık larvası'ndan hem Denizanası'na hem de Şeritli levrek'e ok gider. Denizanası'ndan Şeritli levrek'e ok gider.]\n\nŞekildeki besin ağı ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
     "secenekler": {
       "A": "Şeritli levrek, üçüncül tüketici basamağında yer alır.",
       "B": "Bu besin ağında birden fazla besin zinciri yer almaktadır.",
@@ -932,7 +932,7 @@
       "E": "Bu besin ağında dört trofik düzey yer alır."
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Ekosistem Ekolojisi",
     "yil": "2021",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -943,7 +943,7 @@
     "id": 53546,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 48,
-    "soru": "",
+    "soru": "Trigliseritler ile ilgili,\n\nI. Bir molekül trigliserit oluşurken bir molekül su açığa çıkar.\n\nII. Bir gliserol ile üç yağ asitinin esterleşmesi sonucu bir trigliserit molekülü oluşur.\n\nIII. İnsanlar, sentezledikleri trigliseritlerin yapısındaki yağ asitlerinin bir kısmını besinlerle dışarıdan almak zorundadır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -952,7 +952,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "D",
-    "ana_konu": "Genel",
+    "ana_konu": "Canlıların Yapısında Bulunan Temel Bileşikler",
     "yil": "2023",
     "sinav_adi": "TYT",
     "sekilli": true,
@@ -963,7 +963,7 @@
     "id": 53547,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 49,
-    "soru": "",
+    "soru": "Şekilde farklı besin zincirlerinin bir araya gelerek oluşturduğu bir besin ağı verilmiştir.\n\nBesin ağında K ve L ototrof organizmalar olup; K'dan X ve M'ye, L'den N ve Y'ye doğru beslenme ilişkileri bulunmaktadır. M ve N türleri hem X hem de Y ile beslenmekte, P türü ise M ve N ile beslenmektedir.\n\nBu besin ağı ile ilgili aşağıdakilerden hangisi söylenmez?",
     "secenekler": {
       "A": "Hem K hem de L ototrof organizmalardır.",
       "B": "Birden fazla herbivor tür vardır.",
@@ -983,7 +983,7 @@
     "id": 53548,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 50,
-    "soru": "",
+    "soru": "Aşağıdaki soyağacında otozomal çekinik bir özelliğin bir ailedeki kalıtımı verilmiştir. Soyağacında özelliği göstermeyen erkek birey, özelliği gösteren erkek birey, özelliği göstermeyen dişi birey ve özelliği gösteren dişi birey sembolleriyle gösterilen bireyler 1, 2, 3, 4, 5 ve 6 numaralarıyla numaralandırılmıştır. Buna göre\n\nI. 1 numaralı bireyin genotipinde bu özellikten sorumlu alel bulunur.\n\nII. 3 ve 4 numaralı bireylerin bu evliliğinden doğabilecek tüm çocukların genotipleri heterozigot olur.\n\nIII. 5 ve 6 numaralı bireylerin bu evliliğinden doğabilecek tüm çocukların genotiplerinde bu özellikten sorumlu alel bulunur.\n\nifadelerinden hangileri kesinlikle doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1003,7 +1003,7 @@
     "id": 53549,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 51,
-    "soru": "",
+    "soru": "Sürdürülebilir kalkınma, insan toplumlarının uzun süreli refahını sağlamak için onları destekleyen ekosistemlerin korunması gerektiğini öngören bir yaklaşımdır.\n\nSürdürülebilirliği sağlamak için,\n\nI. Kişi başına düşen ekolojik ayak izi artırılmalıdır.\n\nII. Biyoçeşitlilik kayıpları azaltılmalıdır.\n\nIII. Doğadaki bitkisel ve hayvansal kaynaklar kullanılırken bunların popülasyon büyüklükleri dikkate alınmalıdır.\n\nyargılarından hangileri uygulanabilir?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1012,7 +1012,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Ekoloji",
     "yil": "2022",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -1023,7 +1023,7 @@
     "id": 53550,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 52,
-    "soru": "",
+    "soru": "Aşağıdakilerden hangisinin, biyolojik çeşitliliğin korunmasına katkı sağlaması beklenmez?",
     "secenekler": {
       "A": "Tarım ilaçlarının kullanımının azaltılmasının",
       "B": "Kontrolsüz avcılığın yasaklanmasının",
@@ -1032,7 +1032,7 @@
       "E": "Sazlık ve bataklık alanların kurutulmasının"
     },
     "dogru_cevap": "E",
-    "ana_konu": "Genel",
+    "ana_konu": "Ekoloji",
     "yil": "2025",
     "sinav_adi": "TYT",
     "sekilli": false,
@@ -1043,7 +1043,7 @@
     "id": 53551,
     "ders": "TYT BİYOLOJİ",
     "soru_no": 53,
-    "soru": "",
+    "soru": "Trigliseritler ile ilgili,\n\nI. Bir molekül trigliserit oluşurken bir molekül su açığa çıkar.\n\nII. Bir gliserol ile üç yağ asitinin esterleşmesi sonucu bir trigliserit molekülü oluşur.\n\nIII. İnsanlar, sentezledikleri trigliseritlerin yapısındaki yağ asitlerinin bir kısmını besinlerle dışarıdan almak zorundadır.\n\nifadelerinden hangileri doğrudur?",
     "secenekler": {
       "A": "Yalnız I",
       "B": "Yalnız II",
@@ -1052,7 +1052,7 @@
       "E": "II ve III"
     },
     "dogru_cevap": "C",
-    "ana_konu": "Genel",
+    "ana_konu": "Canlıların Yapısında Bulunan Temel Bileşikler",
     "yil": "2026",
     "sinav_adi": "TYT",
     "sekilli": false,

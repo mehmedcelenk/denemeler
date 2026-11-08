@@ -1,15 +1,28 @@
 import { INITIAL_ROOM_STATE } from './initial-state.ts';
-import type { RoomMessage, RoomMessagePayload, RoomMessageType, RoomState, StudentStats } from './types.ts';
+import type { RoomFeedItem, RoomMessage, RoomMessagePayload, RoomMessageType, RoomState, StudentStats } from './types.ts';
 import { roomChannel } from './room-channel.ts';
-import { addFeedItem, handleIncomingRoomMessage } from './message-handler.ts';
-import { clearRoomSession, loadRoomSession, persistCurrentRoomSession, saveRoomSession } from './session-store.ts';
+import { handleIncomingRoomMessage } from './message-handler.ts';
+import { buildRestoredSessionPlan, clearRoomSession, consumeArchivedRoomJoin, persistAwayStartIfUnset, persistCurrentRoomSession } from './session-store.ts';
 import { releaseScreenWakeLock, requestScreenWakeLock } from './wake-lock.ts';
 import { checkOfflineStudents } from './offline-students.ts';
-import { demoteHostToStudent } from './demote.ts';
-import { applyRevokeStudentAnswer, applyStudentAnswer, buildMyStatsPayload, createInitialStudentStats } from './student-progress.ts';
+import {
+  applyFocusLostState,
+  applyFocusRestoredState,
+  applyHelpCallState,
+  applyResolveHelpState,
+  applyRevokeStudentAnswer,
+  applyStudentAnswer,
+  buildMyStatsPayload,
+  createInitialStudentStats,
+  demoteHostToStudent,
+} from './student-progress.ts';
+
+export type { RoomState } from './types.ts';
 
 type Listener = (state: RoomState) => void;
 type ResumeCallback = () => void;
+
+const HEARTBEAT_INTERVAL_MS = 4000;
 
 class RoomService {
   private peerId: string = Math.random().toString(36).substring(2, 9);
@@ -45,18 +58,27 @@ class RoomService {
     asHost: boolean,
     savedPeerId?: string,
     savedJoinedAt?: number,
-    savedStats?: StudentStats
+    savedStats?: StudentStats,
+    awayDurationMs?: number,
+    savedHostStats?: Record<string, StudentStats>,
+    savedHostFeed?: RoomFeedItem[]
   ): void {
     const cleanRoom = roomId.trim().toUpperCase();
     const cleanName = userName.trim();
     if (!cleanRoom || !cleanName) return;
 
     this.leaveRoom();
-    if (savedPeerId) this.peerId = savedPeerId;
-
     const now = Date.now();
-    const joinedAt = Number.isFinite(savedJoinedAt) && (savedJoinedAt ?? 0) > 0 ? (savedJoinedAt as number) : now;
-    const myStudentStats = createInitialStudentStats(this.peerId, cleanName, joinedAt, now, savedStats);
+    const archived = !savedPeerId && !savedStats ? consumeArchivedRoomJoin(cleanRoom, cleanName, now) : null;
+    if (savedPeerId) this.peerId = savedPeerId;
+    else if (archived) this.peerId = archived.peerId;
+
+    const joinedAt = Number.isFinite(savedJoinedAt) && (savedJoinedAt ?? 0) > 0 ? (savedJoinedAt as number) : (archived?.joinedAt ?? now);
+    const effectiveAwayMs = awayDurationMs ?? archived?.awayDurationMs;
+    const myStudentStats = createInitialStudentStats(this.peerId, cleanName, joinedAt, now, savedStats ?? archived?.stats);
+    const initialFeed: RoomFeedItem[] = asHost && Array.isArray(savedHostFeed) && savedHostFeed.length > 0
+      ? savedHostFeed
+      : [{ id: `${now}_${this.peerId}`, type: 'JOIN', studentId: this.peerId, studentName: cleanName, timestamp: now }];
 
     this.state = {
       roomId: cleanRoom,
@@ -64,27 +86,46 @@ class RoomService {
       isHost: asHost,
       isPaused: false,
       participants: [{ id: this.peerId, name: cleanName, isHost: asHost, joinedAt, lastSeenAt: now }],
-      feedItems: [{ id: `${now}_${this.peerId}`, type: 'JOIN', studentId: this.peerId, studentName: cleanName, timestamp: now }],
-      studentStats: asHost ? {} : { [this.peerId]: myStudentStats },
+      feedItems: initialFeed,
+      studentStats: asHost ? (savedHostStats ?? {}) : { [this.peerId]: myStudentStats },
       helpRequested: false,
     };
 
-    saveRoomSession({ peerId: this.peerId, roomId: cleanRoom, userName: cleanName, isHost: asHost, joinedAt, timestamp: now, myStats: this.state.studentStats[this.peerId] });
+    persistCurrentRoomSession(this.state, this.peerId, null);
     roomChannel.connect(cleanRoom, (msg) => this.handleIncoming(msg));
     requestScreenWakeLock().catch(() => {});
-    this.emit('PEER_JOIN', buildMyStatsPayload(this.state, this.peerId, joinedAt), now);
+    this.emit('PEER_JOIN', buildMyStatsPayload(this.state, this.peerId, joinedAt, effectiveAwayMs), now);
     this.notify();
     this.startHeartbeat();
   }
 
   restoreSessionIfActive(): boolean {
-    const data = loadRoomSession();
-    if (data && data.roomId && data.userName && data.peerId) {
-      const joinedAt = Number.isFinite(data.joinedAt) && data.joinedAt > 0 ? data.joinedAt : data.timestamp;
-      this.joinOrCreateRoom(data.roomId, data.userName, !!data.isHost, data.peerId, joinedAt, data.myStats);
-      return true;
-    }
-    return false;
+    const plan = buildRestoredSessionPlan();
+    if (!plan) return false;
+    this.joinOrCreateRoom(
+      plan.roomId,
+      plan.userName,
+      plan.isHost,
+      plan.peerId,
+      plan.joinedAt,
+      plan.restoredStats,
+      plan.awayDurationMs,
+      plan.hostStudentStats,
+      plan.hostFeedItems
+    );
+    return true;
+  }
+
+  markAwayStarted(timestamp = Date.now()): void {
+    persistAwayStartIfUnset(this.state, this.peerId, timestamp);
+  }
+
+  clearAwayStarted(): void {
+    persistCurrentRoomSession(this.state, this.peerId, null);
+  }
+
+  handlePageUnload(timestamp = Date.now()): void {
+    persistAwayStartIfUnset(this.state, this.peerId, timestamp);
   }
 
   leaveRoom(): void {
@@ -93,7 +134,7 @@ class RoomService {
     this.emit('PEER_LEAVE');
     this.stopHeartbeat();
     this.clearSyncDebounce();
-    clearRoomSession();
+    clearRoomSession(this.state, this.peerId);
     roomChannel.disconnect();
     this.resetState();
     this.notify();
@@ -128,67 +169,34 @@ class RoomService {
     demoteHostToStudent(this.state, this.peerId);
     const myPeer = this.state.participants.find((p) => p.id === this.peerId);
     const joinedAt = myPeer?.joinedAt ?? Date.now();
-    this.emit('PEER_JOIN', buildMyStatsPayload(this.state, this.peerId, joinedAt));
-    const stats = this.state.studentStats[this.peerId];
-    if (stats) {
-      this.emit('STUDENT_ANSWER_LOG', {
-        correctCount: stats.correctCount,
-        incorrectCount: stats.incorrectCount,
-        exitCount: stats.exitCount,
-        totalAwayMs: stats.totalAwayMs,
-      });
-    }
+    this.emit('STUDENT_HEARTBEAT', buildMyStatsPayload(this.state, this.peerId, joinedAt));
     this.notify();
   }
 
   callTeacherHelp(): void {
-    if (!this.state.roomId || this.state.helpRequested) return;
-    this.state.helpRequested = true;
     const now = Date.now();
-    addFeedItem(this.state.feedItems, { id: `${now}_${this.peerId}_help`, type: 'HELP_CALL', studentId: this.peerId, studentName: this.state.userName, timestamp: now });
+    if (!applyHelpCallState(this.state, this.peerId, now)) return;
     this.notify();
     this.emit('HELP_CALL', undefined, now);
   }
 
   resolveTeacherHelp(feedId: string, studentIdOrName: string): void {
-    if (!this.state.roomId) return;
-    const item = this.state.feedItems.find((f) => f.id === feedId);
-    if (item) { item.resolved = true; this.notify(); }
-    if (studentIdOrName === this.peerId || studentIdOrName === this.state.userName) {
-      this.state.helpRequested = false;
-      this.notify();
-    }
+    if (!applyResolveHelpState(this.state, this.peerId, feedId, studentIdOrName)) return;
+    this.notify();
     this.emit('HELP_RESOLVED', { feedId, studentId: studentIdOrName, studentName: studentIdOrName });
   }
 
   notifyFocusLost(timestamp = Date.now()): void {
-    if (!this.state.roomId || this.state.isPaused) return;
-    const openLost = this.state.feedItems.find((f) => f.type === 'FOCUS_LOST' && f.studentId === this.peerId && !f.returnedAt);
-    if (openLost) return;
-
-    const stats = this.state.studentStats[this.peerId];
-    if (stats) {
-      stats.exitCount = (stats.exitCount || 0) + 1;
-      persistCurrentRoomSession(this.state, this.peerId);
-    }
-
-    addFeedItem(this.state.feedItems, { id: `${timestamp}_${this.peerId}_lost`, type: 'FOCUS_LOST', studentId: this.peerId, studentName: this.state.userName, timestamp });
+    if (!applyFocusLostState(this.state, this.peerId, timestamp)) return;
     this.notify();
     this.emit('FOCUS_LOST', undefined, timestamp);
   }
 
   notifyFocusRestored(durationMs: number = 0, timestamp = Date.now()): void {
-    if (!this.state.roomId || this.state.isPaused) return;
-    const lastLost = this.state.feedItems.find((f) => f.type === 'FOCUS_LOST' && f.studentId === this.peerId && !f.returnedAt);
-    if (lastLost) lastLost.returnedAt = timestamp;
-
-    const stats = this.state.studentStats[this.peerId];
-    if (stats && durationMs > 0) {
-      stats.totalAwayMs = (stats.totalAwayMs || 0) + durationMs;
-      persistCurrentRoomSession(this.state, this.peerId);
-    }
+    const payload = applyFocusRestoredState(this.state, this.peerId, durationMs, timestamp);
+    if (!payload) return;
     this.notify();
-    this.emit('FOCUS_RESTORED', { durationMs }, timestamp);
+    this.emit('FOCUS_RESTORED', payload, timestamp);
   }
 
   logStudentAnswer(questionId: number, isCorrect: boolean): void {
@@ -262,7 +270,7 @@ class RoomService {
         const myPeer = this.state.participants.find((p) => p.id === this.peerId);
         this.emit('STUDENT_HEARTBEAT', buildMyStatsPayload(this.state, this.peerId, myPeer?.joinedAt ?? now), now);
       }
-    }, 8000);
+    }, HEARTBEAT_INTERVAL_MS);
   }
 
   private stopHeartbeat(): void {
@@ -279,6 +287,9 @@ class RoomService {
   }
 
   private notify(): void {
+    if (this.state.roomId && this.state.isHost) {
+      persistCurrentRoomSession(this.state, this.peerId);
+    }
     for (const listener of this.listeners) listener(this.state);
   }
 }

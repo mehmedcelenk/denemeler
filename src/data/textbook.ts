@@ -70,12 +70,23 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
+function normalizeConceptRecord(rec: Record<string, unknown>): void {
+  for (const [k, v] of Object.entries(rec)) {
+    if (v === null) {
+      delete rec[k];
+    }
+  }
+}
+
 export function parseScopedConcepts(value: unknown): ScopedConceptEntry[] {
   if (!Array.isArray(value)) {
     throw new Error('Istılah verisi bir dizi olmalı.');
   }
   const seen = new Set<string>();
   for (const [idx, item] of value.entries()) {
+    if (isRecord(item)) {
+      normalizeConceptRecord(item);
+    }
     if (
       !isRecord(item) ||
       typeof item.id !== 'string' ||
