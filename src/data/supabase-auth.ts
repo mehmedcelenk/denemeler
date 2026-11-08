@@ -85,13 +85,49 @@ export async function signUpWithEmail(
 
     const json = (await res.json()) as Record<string, unknown>;
     if (!res.ok) {
-      const msg = typeof json.msg === 'string' ? json.msg : (typeof json.error_description === 'string' ? json.error_description : 'Kayıt başarısız.');
-      return { data: null, error: msg };
+      const raw = typeof json.msg === 'string' ? json.msg : (typeof json.error_description === 'string' ? json.error_description : 'Kayıt başarısız.');
+      let trMsg = raw;
+      if (raw.includes('already registered')) {
+        trMsg = 'Bu e-posta ile zaten kayıtlı bir hesap var.';
+      } else if (raw.includes('Password should be at least')) {
+        trMsg = 'Şifre en az 6 karakter olmalıdır.';
+      }
+      return { data: null, error: trMsg };
     }
     const session = parseSessionFromGoTrue(json);
     return { data: session, error: null };
   } catch (err) {
     return { data: null, error: err instanceof Error ? err.message : 'Ağ hatası.' };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+export async function checkUsernameAvailable(
+  username: string,
+  timeoutMs = 5000
+): Promise<boolean> {
+  const clean = username.trim().toLowerCase();
+  if (clean.length < 3) return false;
+
+  const config = getSupabaseConfig();
+  if (!config) return true;
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(`${config.url}/rest/v1/rpc/is_username_available`, {
+      method: 'POST',
+      headers: {
+        apikey: config.anonKey,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ check_username: clean }),
+      signal: controller.signal,
+    });
+    return res.ok ? Boolean(await res.json()) : true;
+  } catch {
+    return true;
   } finally {
     clearTimeout(timer);
   }
@@ -110,17 +146,12 @@ export async function signInWithEmail(
     try {
       const rpcRes = await fetch(`${config.url}/rest/v1/rpc/find_email_by_identifier`, {
         method: 'POST',
-        headers: {
-          apikey: config.anonKey,
-          'Content-Type': 'application/json',
-        },
+        headers: { apikey: config.anonKey, 'Content-Type': 'application/json' },
         body: JSON.stringify({ identifier: targetEmail }),
       });
       if (rpcRes.ok) {
         const found = await rpcRes.json();
-        if (typeof found === 'string' && found.includes('@')) {
-          targetEmail = found;
-        }
+        if (typeof found === 'string' && found.includes('@')) targetEmail = found;
       }
     } catch {}
   }

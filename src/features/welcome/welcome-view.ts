@@ -75,6 +75,9 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
         </div>
         <input id="authEmailInput" type="text" autocomplete="username email" placeholder="Kullanıcı adı veya E-posta" aria-label="Kullanıcı adı veya E-posta">
         <input id="authPasswordInput" type="password" autocomplete="current-password" placeholder="Şifreniz" aria-label="Şifre">
+        <div id="authPasswordConfirmRow" hidden>
+          <input id="authPasswordConfirmInput" type="password" autocomplete="new-password" placeholder="Şifrenizi Tekrar Girin" aria-label="Şifre Tekrarı">
+        </div>
         <p class="welcome-name-error" id="authDialogError" role="alert" aria-live="polite"></p>
         <button type="button" class="welcome-name-confirm" id="btnAuthSubmit" data-action="welcome-submit-auth">Giriş Yap →</button>
         <button type="button" class="welcome-auth-toggle-btn" id="btnAuthToggleMode" data-action="welcome-toggle-auth-mode">Hesabın yok mu? Kayıt Ol</button>

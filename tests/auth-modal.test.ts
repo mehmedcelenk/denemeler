@@ -76,3 +76,12 @@ test('requireAuth: oturum açıkken doğrudan eylemi çalıştırır, kapalıyke
     assert.equal(calledAfterSignOut, false);
   });
 });
+
+test('auth-modal: checkUsernameAvailable kısa veya geçersiz kullanıcı adını doğrudan reddeder', async () => {
+  const { checkUsernameAvailable } = await import('../src/data/supabase-auth.ts');
+  const shortResult = await checkUsernameAvailable('ab');
+  assert.equal(shortResult, false);
+
+  const emptyResult = await checkUsernameAvailable('   ');
+  assert.equal(emptyResult, false);
+});

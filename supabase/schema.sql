@@ -105,18 +105,7 @@ CREATE TABLE IF NOT EXISTS question_concepts (
 );
 
 -- ------------------------------------------------------------------------------
--- 5. YAPAY ZEKA ÖĞRETMEN AÇIKLAMALARI (ai_explanations)
--- ------------------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS ai_explanations (
-    question_id INTEGER PRIMARY KEY REFERENCES questions(id) ON DELETE CASCADE,
-    query TEXT NOT NULL DEFAULT 'Bu soruyu adım adım açıklar mısın?',
-    reply TEXT NOT NULL,                              -- 4 adımlı pedagojik çözüm Markdown metni
-    model TEXT NOT NULL DEFAULT 'deepseek-v4.1-flash',-- EVREN / Yerel model adı
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
--- ------------------------------------------------------------------------------
--- 6. SEMANTİK VEKTÖRLER (question_embeddings) [EVREN Entegrasyonu]
+-- 5. SEMANTİK VEKTÖRLER (question_embeddings) [EVREN Entegrasyonu]
 -- ------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS question_embeddings (
     question_id INTEGER PRIMARY KEY REFERENCES questions(id) ON DELETE CASCADE,
@@ -126,10 +115,11 @@ CREATE TABLE IF NOT EXISTS question_embeddings (
 );
 
 -- ------------------------------------------------------------------------------
--- 7. KULLANICI PROFİLLERİ (user_profiles) [Supabase Auth Entegre]
+-- 6. KULLANICI PROFİLLERİ (user_profiles) [Supabase Auth Entegre]
 -- ------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS user_profiles (
     id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
+    username TEXT UNIQUE,
     display_name TEXT NOT NULL DEFAULT '',
     program_mode TEXT NOT NULL DEFAULT 'AOIHL',
     water_streak INTEGER NOT NULL DEFAULT 0,
@@ -139,7 +129,7 @@ CREATE TABLE IF NOT EXISTS user_profiles (
 );
 
 -- ------------------------------------------------------------------------------
--- 8. KULLANICI İLERLEMESİ VE CEVAPLARI (user_progress) [Supabase Auth Entegre]
+-- 7. KULLANICI İLERLEMESİ VE CEVAPLARI (user_progress) [Supabase Auth Entegre]
 -- ------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS user_progress (
     user_id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
@@ -160,7 +150,6 @@ CREATE INDEX IF NOT EXISTS idx_questions_ders_kodu ON questions(ders_kodu);
 CREATE INDEX IF NOT EXISTS idx_questions_yil_donem ON questions(yil, donem);
 CREATE INDEX IF NOT EXISTS idx_questions_sinav_adi ON questions(sinav_adi);
 CREATE INDEX IF NOT EXISTS idx_questions_ana_konu ON questions(ana_konu);
-CREATE INDEX IF NOT EXISTS idx_questions_zorluk ON questions(zorluk);
 CREATE INDEX IF NOT EXISTS idx_questions_sekilli ON questions(sekilli) WHERE sekilli = true;
 CREATE INDEX IF NOT EXISTS idx_questions_soru_trgm ON questions USING gin (soru gin_trgm_ops);
 
@@ -171,7 +160,7 @@ CREATE INDEX IF NOT EXISTS idx_concepts_term ON concepts(term);
 CREATE INDEX IF NOT EXISTS idx_concepts_tanim_trgm ON concepts USING gin (tanim gin_trgm_ops);
 
 CREATE INDEX IF NOT EXISTS idx_qc_concept ON question_concepts(concept_id);
-CREATE INDEX IF NOT EXISTS idx_ai_explanations_model ON ai_explanations(model);
+CREATE INDEX IF NOT EXISTS idx_user_profiles_username ON user_profiles(username);
 
 -- Not: pgvector HNSW indeksi 2000 boyut sınırına sahiptir. 4096-boyutlu TR-TEB embedding'leri
 -- 10.000 soru altında tam doğruluklu (exact cosine) sıralama ile <5ms sürede taranır.
@@ -208,18 +197,78 @@ CREATE TRIGGER set_user_progress_timestamp
     FOR EACH ROW EXECUTE FUNCTION trigger_set_timestamp();
 
 -- ------------------------------------------------------------------------------
+-- KULLANICI ADI & AUTH FONKSİYONLARI (RPC)
+-- ------------------------------------------------------------------------------
+CREATE OR REPLACE FUNCTION public.is_username_available(check_username TEXT)
+RETURNS BOOLEAN AS $$
+DECLARE
+    clean_name TEXT;
+BEGIN
+    clean_name := LOWER(TRIM(COALESCE(check_username, '')));
+    IF clean_name = '' OR LENGTH(clean_name) < 3 THEN
+        RETURN FALSE;
+    END IF;
+    RETURN NOT EXISTS (
+        SELECT 1 FROM public.user_profiles WHERE LOWER(username) = clean_name
+    );
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = public;
+
+GRANT EXECUTE ON FUNCTION public.is_username_available(TEXT) TO anon, authenticated, service_role;
+
+CREATE OR REPLACE FUNCTION public.find_email_by_identifier(identifier TEXT)
+RETURNS TEXT AS $$
+DECLARE
+  v_email TEXT;
+BEGIN
+  IF identifier LIKE '%@%' THEN
+    RETURN identifier;
+  END IF;
+
+  SELECT u.email INTO v_email
+  FROM auth.users u
+  JOIN public.user_profiles p ON p.id = u.id
+  WHERE LOWER(p.username) = LOWER(TRIM(identifier))
+  LIMIT 1;
+
+  RETURN v_email;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = public;
+
+GRANT EXECUTE ON FUNCTION public.find_email_by_identifier(TEXT) TO anon, authenticated, service_role;
+
+-- ------------------------------------------------------------------------------
 -- YENİ KULLANICI OTOMATİK PROFİL TETİKLEYİCİSİ (Trigger)
 -- ------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER AS $$
+DECLARE
+  v_username TEXT;
 BEGIN
-    INSERT INTO public.user_profiles (id, display_name)
-    VALUES (NEW.id, COALESCE(NEW.raw_user_meta_data->>'display_name', ''));
+  v_username := LOWER(TRIM(COALESCE(NEW.raw_user_meta_data->>'username', '')));
+  IF v_username = '' OR LENGTH(v_username) < 3 THEN
+    RAISE EXCEPTION 'Kullanıcı adı zorunludur ve en az 3 karakter olmalıdır.';
+  END IF;
 
-    INSERT INTO public.user_progress (user_id)
-    VALUES (NEW.id);
+  IF EXISTS (SELECT 1 FROM public.user_profiles WHERE LOWER(username) = v_username) THEN
+    RAISE EXCEPTION 'Bu kullanıcı adı zaten kullanımda.';
+  END IF;
 
-    RETURN NEW;
+  INSERT INTO public.user_profiles (id, username, display_name)
+  VALUES (
+    NEW.id,
+    v_username,
+    COALESCE(NEW.raw_user_meta_data->>'display_name', v_username)
+  )
+  ON CONFLICT (id) DO UPDATE SET
+    username = EXCLUDED.username,
+    display_name = EXCLUDED.display_name;
+
+  INSERT INTO public.user_progress (user_id)
+  VALUES (NEW.id)
+  ON CONFLICT (user_id) DO NOTHING;
+
+  RETURN NEW;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = public;
 
@@ -235,7 +284,6 @@ ALTER TABLE questions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE subjects ENABLE ROW LEVEL SECURITY;
 ALTER TABLE concepts ENABLE ROW LEVEL SECURITY;
 ALTER TABLE question_concepts ENABLE ROW LEVEL SECURITY;
-ALTER TABLE ai_explanations ENABLE ROW LEVEL SECURITY;
 ALTER TABLE question_embeddings ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_profiles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_progress ENABLE ROW LEVEL SECURITY;
@@ -262,12 +310,6 @@ CREATE POLICY "Public read concepts"
 DROP POLICY IF EXISTS "Public read question_concepts" ON question_concepts;
 CREATE POLICY "Public read question_concepts" 
     ON question_concepts FOR SELECT 
-    TO anon, authenticated 
-    USING (true);
-
-DROP POLICY IF EXISTS "Public read ai_explanations" ON ai_explanations;
-CREATE POLICY "Public read ai_explanations" 
-    ON ai_explanations FOR SELECT 
     TO anon, authenticated 
     USING (true);
 
@@ -338,12 +380,6 @@ CREATE POLICY "Service role write concepts"
 DROP POLICY IF EXISTS "Service role write question_concepts" ON question_concepts;
 CREATE POLICY "Service role write question_concepts" 
     ON question_concepts FOR ALL 
-    TO service_role 
-    USING (true) WITH CHECK (true);
-
-DROP POLICY IF EXISTS "Service role write ai_explanations" ON ai_explanations;
-CREATE POLICY "Service role write ai_explanations" 
-    ON ai_explanations FOR ALL 
     TO service_role 
     USING (true) WITH CHECK (true);
 
