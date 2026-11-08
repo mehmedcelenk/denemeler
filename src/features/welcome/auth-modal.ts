@@ -43,55 +43,72 @@ export function requireAuth(onAuthenticated: () => void, promptMessage?: string)
 
 let authMode: 'signin' | 'signup' = 'signin';
 
-export function showAuthModal(mode: 'signin' | 'signup' = 'signin', notice = ''): void {
+export function setAuthMode(mode: 'signin' | 'signup'): void {
   authMode = mode;
   if (typeof document === 'undefined') return;
-  const dialog = document.getElementById('welcomeAuthDialog');
-  if (!dialog) return;
-  dialog.hidden = false;
 
+  const btnSignin = document.getElementById('btnTabSignin');
+  const btnSignup = document.getElementById('btnTabSignup');
+  const userInput = document.getElementById('authUsernameInput') as HTMLInputElement | null;
   const emailInput = document.getElementById('authEmailInput') as HTMLInputElement | null;
   const passInput = document.getElementById('authPasswordInput') as HTMLInputElement | null;
-  const title = document.getElementById('authDialogTitle');
+  const passConfirmInput = document.getElementById('authPasswordConfirmInput') as HTMLInputElement | null;
   const submitBtn = document.getElementById('btnAuthSubmit');
-  const toggleBtn = document.getElementById('btnAuthToggleMode');
-  const noticeEl = document.getElementById('authDialogNotice');
+  const noticeEl = document.getElementById('authNoticeText');
   const errorEl = document.getElementById('authDialogError');
-  const nameRow = document.getElementById('authNameRow');
-  const passConfirmRow = document.getElementById('authPasswordConfirmRow');
 
-  if (noticeEl) noticeEl.textContent = notice;
   if (errorEl) errorEl.textContent = '';
 
   if (mode === 'signin') {
-    if (title) title.textContent = 'Hesabına Giriş Yap';
-    if (submitBtn) submitBtn.textContent = 'Giriş Yap →';
-    if (toggleBtn) toggleBtn.textContent = 'Hesabın yok mu? Kayıt Ol';
-    if (nameRow) nameRow.hidden = true;
-    if (passConfirmRow) passConfirmRow.hidden = true;
+    btnSignin?.classList.add('is-active');
+    btnSignin?.setAttribute('aria-selected', 'true');
+    btnSignup?.classList.remove('is-active');
+    btnSignup?.setAttribute('aria-selected', 'false');
+
+    if (userInput) userInput.hidden = true;
+    if (passConfirmInput) passConfirmInput.hidden = true;
     if (emailInput) emailInput.placeholder = 'Kullanıcı adı veya E-posta';
     if (passInput) passInput.placeholder = 'Şifreniz';
+    if (submitBtn) submitBtn.textContent = 'Giriş Yap →';
+    if (noticeEl) noticeEl.textContent = 'Derslere ve sorulara erişmek için giriş yapın.';
     requestAnimationFrame(() => emailInput?.focus());
   } else {
-    if (title) title.textContent = 'Yeni Hesap Oluştur';
-    if (submitBtn) submitBtn.textContent = 'Kayıt Ol →';
-    if (toggleBtn) toggleBtn.textContent = 'Zaten hesabın var mı? Giriş Yap';
-    if (nameRow) nameRow.hidden = false;
-    if (passConfirmRow) passConfirmRow.hidden = false;
-    if (emailInput) emailInput.placeholder = 'E-posta adresiniz (örn: ali@mail.com)';
+    btnSignup?.classList.add('is-active');
+    btnSignup?.setAttribute('aria-selected', 'true');
+    btnSignin?.classList.remove('is-active');
+    btnSignin?.setAttribute('aria-selected', 'false');
+
+    if (userInput) userInput.hidden = false;
+    if (passConfirmInput) passConfirmInput.hidden = false;
+    if (emailInput) emailInput.placeholder = 'E-posta adresiniz (örn: emin@mail.com)';
     if (passInput) passInput.placeholder = 'Şifreniz (en az 6 karakter)';
-    requestAnimationFrame(() => document.getElementById('authUsernameInput')?.focus());
+    if (submitBtn) submitBtn.textContent = 'Kayıt Ol →';
+    if (noticeEl) noticeEl.textContent = 'Yeni bir hesap oluşturup hemen başlayın.';
+    requestAnimationFrame(() => userInput?.focus());
   }
 }
 
-export function hideAuthModal(): void {
+export function showAuthModal(mode: 'signin' | 'signup' = 'signin', notice = ''): void {
+  setAuthMode(mode);
   if (typeof document === 'undefined') return;
-  const dialog = document.getElementById('welcomeAuthDialog');
-  if (dialog) dialog.hidden = true;
+  if (notice) {
+    const noticeEl = document.getElementById('authNoticeText');
+    if (noticeEl) noticeEl.textContent = notice;
+  }
+  const portal = document.getElementById('welcomePortal');
+  if (portal) {
+    portal.hidden = false;
+    portal.setAttribute('aria-hidden', 'false');
+  }
+  document.body.classList.add('welcome-active');
+}
+
+export function hideAuthModal(): void {
+  if (!isAuthenticated()) return;
 }
 
 export function toggleAuthMode(): void {
-  showAuthModal(authMode === 'signin' ? 'signup' : 'signin');
+  setAuthMode(authMode === 'signin' ? 'signup' : 'signin');
 }
 
 export async function submitAuth(): Promise<void> {
@@ -201,6 +218,12 @@ export async function handleSignOut(): Promise<void> {
   }
   saveActiveSession(null);
   updateAuthUiState();
+  const portal = document.getElementById('welcomePortal');
+  if (portal) {
+    portal.hidden = false;
+    portal.setAttribute('aria-hidden', 'false');
+  }
+  document.body.classList.add('welcome-active');
 }
 
 export async function syncCloudProgress(): Promise<void> {
@@ -229,22 +252,19 @@ export async function syncCloudProgress(): Promise<void> {
 export function updateAuthUiState(): void {
   if (typeof document === 'undefined') return;
   const session = getActiveSession();
-  const authBtn = document.getElementById('welcomeAuthTrigger');
-  if (!authBtn) return;
+  const authSection = document.getElementById('welcomeAuthSection');
+  const mainSection = document.getElementById('welcomeMainSection');
+  const userDisplay = document.getElementById('authUserNameDisplay');
 
   if (session) {
-    const name = session.user.displayName || session.user.email || 'Kullanıcı';
-    authBtn.innerHTML = `
-      <span class="auth-status-dot is-online" aria-hidden="true"></span>
-      <span class="auth-status-name">${name}</span>
-      <span class="auth-status-action" data-action="welcome-signout" title="Çıkış Yap">Çıkış</span>
-    `;
-    authBtn.classList.add('is-authenticated');
+    if (authSection) authSection.hidden = true;
+    if (mainSection) mainSection.hidden = false;
+    if (userDisplay) {
+      userDisplay.textContent = session.user.username || session.user.displayName || session.user.email || 'Kullanıcı';
+    }
   } else {
-    authBtn.innerHTML = `
-      <span class="auth-status-dot" aria-hidden="true"></span>
-      <span class="auth-status-label">Giriş Yap & Eşitle</span>
-    `;
-    authBtn.classList.remove('is-authenticated');
+    if (authSection) authSection.hidden = false;
+    if (mainSection) mainSection.hidden = true;
+    setAuthMode('signin');
   }
 }

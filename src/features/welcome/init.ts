@@ -8,8 +8,10 @@ import {
   showAuthModal,
   hideAuthModal,
   toggleAuthMode,
+  setAuthMode,
   submitAuth,
   handleSignOut,
+  isAuthenticated,
 } from './auth-modal.ts';
 import {
   focusRoomInput,
@@ -80,6 +82,10 @@ async function runWelcomeTransition(action: () => Promise<void>): Promise<void> 
 }
 
 async function startSinglePlayer(): Promise<void> {
+  if (!isAuthenticated()) {
+    showWelcomePortal();
+    return;
+  }
   await runWelcomeTransition(async () => {
     if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
     dependencies.setUnifiedMode('all');
@@ -89,6 +95,10 @@ async function startSinglePlayer(): Promise<void> {
 }
 
 async function startRematch(): Promise<void> {
+  if (!isAuthenticated()) {
+    showWelcomePortal();
+    return;
+  }
   await runWelcomeTransition(async () => {
     if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
     dependencies.setUnifiedMode('rematch');
@@ -97,6 +107,10 @@ async function startRematch(): Promise<void> {
 }
 
 async function connectToRoom(roomId: string, userName: string): Promise<void> {
+  if (!isAuthenticated()) {
+    showWelcomePortal();
+    return;
+  }
   await runWelcomeTransition(async () => {
     if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
     dependencies.setUnifiedMode('all');
@@ -107,6 +121,10 @@ async function connectToRoom(roomId: string, userName: string): Promise<void> {
 }
 
 async function joinRoom(): Promise<void> {
+  if (!isAuthenticated()) {
+    showWelcomePortal();
+    return;
+  }
   const roomId = getWelcomeRoomId();
   if (!roomId) {
     showWelcomeError('Katılmak istediğin oda adını yaz.');
@@ -164,6 +182,10 @@ export interface WelcomeOptions {
 export { hideWelcomePortal, showWelcomePortal } from './welcome-view.ts';
 
 export async function resumeSavedSession(): Promise<void> {
+  if (!isAuthenticated()) {
+    showWelcomePortal();
+    return;
+  }
   const snapshot = dependencies.getSavedSession();
   const subject = snapshot?.subject ?? DEFAULT_SUBJECTS[state.programMode];
 
@@ -202,10 +224,10 @@ function bindWelcomeInputs(): void {
     if (event.key === 'Enter') void confirmUserName();
     if (event.key === 'Escape') cancelUserName();
   });
-  const passInput = document.getElementById('authPasswordInput');
-  passInput?.addEventListener('keydown', event => {
-    if (event.key === 'Enter') void submitAuth();
-    if (event.key === 'Escape') hideAuthModal();
+  ['authEmailInput', 'authPasswordInput', 'authPasswordConfirmInput', 'authUsernameInput'].forEach(id => {
+    document.getElementById(id)?.addEventListener('keydown', event => {
+      if (event.key === 'Enter') void submitAuth();
+    });
   });
 }
 
@@ -236,7 +258,9 @@ export function initWelcome(
     'welcome-join-room': () => joinRoom(),
     'welcome-confirm-name': () => confirmUserName(),
     'welcome-cancel-name': () => cancelUserName(),
-    'welcome-open-auth': () => showAuthModal('signin'),
+    'welcome-set-auth-signin': () => setAuthMode('signin'),
+    'welcome-set-auth-signup': () => setAuthMode('signup'),
+    'welcome-open-auth': () => setAuthMode('signin'),
     'welcome-cancel-auth': () => hideAuthModal(),
     'welcome-submit-auth': () => void submitAuth(),
     'welcome-toggle-auth-mode': () => toggleAuthMode(),
@@ -248,10 +272,10 @@ export function initWelcome(
     'welcome-resume': () => resumeSavedSession(),
   });
 
-  if (roomService.getState().roomId || options.autoShow === false) {
+  if (!isAuthenticated() || (!roomService.getState().roomId && options.autoShow !== false)) {
+    showWelcomePortal();
+  } else {
     hideWelcomePortal();
     void resumeSavedSession();
-  } else {
-    showWelcomePortal();
   }
 }
