@@ -11,12 +11,15 @@ kavram baloncukları giydirir ve subjectManifest.json'ı günceller.
 import html
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-from scripts.enrichment.parse_itar_practice_questions import load_all_practice_questions
-
 ROOT_DIR = Path(__file__).resolve().parents[2]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from scripts.enrichment.parse_itar_practice_questions import load_all_practice_questions
 CONCEPTS_PATH = ROOT_DIR / "data" / "concepts" / "AOF_ITAR_concepts.json"
 ITAR_JSON_PATH = ROOT_DIR / "data" / "subjects" / "AOF_ITAR.json"
 MANIFEST_PATH = ROOT_DIR / "src" / "data" / "generated" / "subjectManifest.json"

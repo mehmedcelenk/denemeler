@@ -1,6 +1,9 @@
 export type StateEventType =
   | 'booklet:updated'
   | 'booklet:refresh'
+  | 'booklet:refresh-hooks'
+  | 'booklet:ensure-question'
+  | 'booklet:rendered'
   | 'drawer:close'
   | 'drawer:topics-refresh'
   | 'filter:updated'

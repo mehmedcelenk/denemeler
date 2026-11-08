@@ -1,4 +1,5 @@
 import { state, notifyStateChange } from '../../app/state.ts';
+import { getCardActionElements, getQuestionCards } from '../booklet/card-query.ts';
 import { toggleStarQuestion, addToRematch, saveLibraryToStorage } from './library-model.ts';
 
 export function toggleStarQuestionUI(questionId: number, event?: Event): void {
@@ -11,11 +12,13 @@ export function toggleStarQuestionUI(questionId: number, event?: Event): void {
   if (typeof document === 'undefined') return;
 
   const isStarred = state.starredQuestionIds.has(questionId);
-  document.querySelectorAll(`#btnStar_${questionId}`).forEach(btn => {
-    btn.classList.toggle('is-starred', isStarred);
-    const label = isStarred ? 'Kaydı Kaldır' : 'Soruyu Kaydet';
-    btn.setAttribute('title', label);
-    btn.setAttribute('aria-label', label);
+  const label = isStarred ? 'Kaydı Kaldır' : 'Soruyu Kaydet';
+  getQuestionCards(questionId).forEach(card => {
+    getCardActionElements(card, 'toggle-star-question').forEach(btn => {
+      btn.classList.toggle('is-starred', isStarred);
+      btn.setAttribute('title', label);
+      btn.setAttribute('aria-label', label);
+    });
   });
 
   const starredCountEl = document.getElementById('libStarredCount');
@@ -29,10 +32,8 @@ export function handleRematchDontKnow(questionId: number): void {
   saveLibraryToStorage();
   notifyStateChange('answer:reveal', { questionId });
 
-  if (typeof document === 'undefined') return;
-  const qContainer = document.getElementById(`bq_${questionId}`);
-  if (qContainer) {
-    qContainer.classList.add('rematch-acknowledged');
-  }
+  getQuestionCards(questionId).forEach(card => {
+    card.classList.add('rematch-acknowledged');
+  });
 }
 

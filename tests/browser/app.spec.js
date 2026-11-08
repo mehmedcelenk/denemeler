@@ -74,7 +74,8 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   page.on('pageerror', error => errors.push(error.message));
   await openSinglePlayer(page);
   const option = page.locator('.optical-choice-row').first();
-  const optionId = await option.getAttribute('id');
+  const optionQid = await option.getAttribute('data-qid');
+  const optionLetter = await option.getAttribute('data-letter');
   await page.locator('.booklet-question').first().evaluate(card => { card.dataset.openedAt = String(Date.now()); });
   await option.click();
   await expect(page.locator('#answerRateWarning')).toContainText('Yakalandın.');
@@ -90,7 +91,7 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator('#activeExplanationBubble')).toBeVisible();
   await page.reload();
   await enterSinglePlayer(page);
-  await expect(page.locator(`[id="${optionId}"]`)).toHaveClass(/marked/);
+  await expect(page.locator(`.booklet-question[data-qid="${optionQid}"] .optical-choice-row[data-letter="${optionLetter}"]`)).toHaveClass(/marked/);
   await page.locator('#btnMasterConsole').click();
   await expect(page.locator('[data-action="open-pdf-dialog"]')).toContainText('PDF / Yazdır');
   await page.locator('#btnMasterConsole').click();
@@ -100,12 +101,12 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator('#drawerTopicList')).toBeVisible();
   await page.locator('#btnSubjectDropdownTrigger').click();
   await page.locator('.dropdown-menu-item').filter({ hasText: 'İngilizce' }).click();
-  await expect(page.locator('[id^="btnMeal_"]').first()).toBeAttached();
+  await expect(page.locator('[data-action="toggle-question-meal"]').first()).toBeAttached();
   await page.locator('#btnLoadAllTopics').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
   await page.locator('[data-action="toggle-question-features"]').first().click();
-  await expect(page.locator('[id^="btnMeal_"]').first()).toBeVisible();
-  const mealBtn = page.locator('[id^="btnMeal_"]').first();
+  await expect(page.locator('[data-action="toggle-question-meal"]').first()).toBeVisible();
+  const mealBtn = page.locator('[data-action="toggle-question-meal"]').first();
   await mealBtn.click();
   await expect(page.locator('.booklet-question.has-interlinear').first()).toBeVisible();
   await expect(page.locator('ruby.interlinear-word').first()).toBeVisible();
@@ -113,18 +114,18 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator('.booklet-question.has-interlinear')).toHaveCount(0);
 
   // Ses butonu geçici olarak devre dışı bırakıldı, TR çeviri butonu kontrol ediliyor
-  await expect(page.locator('[id^="btnTransTR_"]').first()).toBeVisible();
-  const translate = page.locator('[id^="btnTransTR_"]').first();
+  const translate = page.locator('[data-action="toggle-question-translation"][data-lang="tr"]').first();
+  await expect(translate).toBeVisible();
 
   await translate.click();
   await page.locator('#topCenterBadge').click();
   await page.locator('#btnSubjectDropdownTrigger').click();
   await page.locator('.dropdown-menu-item').filter({ hasText: 'Türk Dili' }).click();
-  await expect(page.locator('[id^="btnMeal_"]')).toHaveCount(0);
+  await expect(page.locator('[data-action="toggle-question-meal"]')).toHaveCount(0);
   await page.locator('#btnLoadAllTopics').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
   await page.locator('[data-action="toggle-question-features"]').first().click();
-  await page.locator('[id^="btnEliminateWrong_"]').first().click();
+  await page.locator('[data-action="eliminate-wrong-choice"]').first().click();
   await expect(page.locator('.optical-choice-row.marked-incorrect').first()).toBeVisible();
   await page.locator('#btnMasterConsole').click();
   await page.locator('[data-action="cycle-theme-mode"]').click();
@@ -294,7 +295,4 @@ test('feature bar sayfa açılışında kapalıdır ve tek tıkla açılıp tek 
   await expect(firstDrawer).not.toHaveClass(/is-expanded/);
   await expect(toggleBtn.locator('.features-toggle-icon')).toHaveText('›');
 });
-
-
-
 

@@ -1,5 +1,5 @@
 import { registerActions } from '../../app/actions.ts';
-import { state, store } from '../../app/state.ts';
+import { notifyStateChange, state, store } from '../../app/state.ts';
 import { readString, writeString } from '../../app/storage.ts';
 import type { SubjectId } from '../../data/question.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
@@ -24,6 +24,8 @@ import {
 const DEFAULT_SUBJECTS: Readonly<Record<ProgramMode, SubjectId>> = {
   AOIHL: 'TDE',
   AOF: 'AOF_HADIS',
+  ILMIHAL: 'ILM_TEMIZLIK',
+  GIRISIMCILIK: 'GIR_TEMEL',
   TYT: 'TYT_TURKCE',
   AYT: 'AYT_MAT',
   YDT: 'YDT_ING',
@@ -164,10 +166,11 @@ export async function resumeSavedSession(): Promise<void> {
     dependencies.dismissResumeBanner();
     hideWelcomePortal();
     requestAnimationFrame(() => {
-      const question = snapshot?.questionId === undefined
-        ? document.querySelector<HTMLElement>('.booklet-question')
-        : document.getElementById(`bq_${snapshot.questionId}`);
-      question?.scrollIntoView({
+      if (snapshot?.questionId !== undefined) {
+        notifyStateChange('booklet:ensure-question', { qid: snapshot.questionId, scroll: true });
+        return;
+      }
+      document.querySelector<HTMLElement>('.booklet-question')?.scrollIntoView({
         behavior: 'smooth',
         block: 'center',
       });
@@ -210,9 +213,11 @@ export function initWelcome(
   registerActions({
     'welcome-set-program': element => {
       const mode = element.dataset.program;
-      if (mode !== 'AOIHL' && mode !== 'AOF' && mode !== 'TYT' && mode !== 'AYT' && mode !== 'YDT') return;
-      store.setProgramMode(mode);
-      setWelcomeProgram(mode);
+      const validModes: readonly ProgramMode[] = ['AOIHL', 'AOF', 'ILMIHAL', 'GIRISIMCILIK', 'TYT', 'AYT', 'YDT'];
+      if (!mode || !validModes.includes(mode as ProgramMode)) return;
+      const programMode = mode as ProgramMode;
+      store.setProgramMode(programMode);
+      setWelcomeProgram(programMode);
     },
     'welcome-start-rematch': () => startRematch(),
     'welcome-start-single': () => startSinglePlayer(),

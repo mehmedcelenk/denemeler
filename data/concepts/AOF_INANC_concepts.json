@@ -1,93 +1,433 @@
 [
   {
-    "id": "inanc_iman",
-    "term": "İman",
+    "id": "inanc_din_tanimi",
+    "term": "Din (İlâhî Kanun)",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 1,
-    "tanim": "Sözlükte güvenmek, tasdik etmek demektir. Dini terim olarak Hz. Peygamber’in Allah’tan getirdiği kesin esasları kalpten tasdik edip kabul etmektir.",
-    "sifre": "Sözlük: Güven/tasdik. Dini tanım: Kalp ile tasdik + dil ile ikrar.",
-    "pattern": "\\biman\\b|\\bîmân\\b|\\bimandır\\b"
+    "tanim": "Sözlükte borç, itaat, ceza, mükâfat, teslimiyet ve hesap demektir. Terim olarak akıl sahibi insanları kendi hür irade ve tercihleriyle bizzat hayırlı olan şeylere sevk eden, dünyada ve âhirette saadete ulaştıran ilâhî kanundur.",
+    "sifre": "Akıl sahiplerini hür iradeleriyle iki cihan mutluluğuna ulaştıran ilâhî kanun.",
+    "pattern": "\\bdin\\b|\\bdinin tanımı\\b|\\bdinî kanun\\b"
   },
   {
-    "id": "inanc_icmali_iman",
-    "term": "İcmâlî İman",
+    "id": "inanc_deyn_koku",
+    "term": "Deyn Kökü",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 1,
-    "tanim": "İnanılması gereken şeylere toptan, ana hatlarıyla ve özet olarak inanmaktır (Kelime-i Şehadet/Tevhid gibi).",
-    "sifre": "Toptan / özet inanma = İcmâlî İman.",
-    "pattern": "\\bicmâlî iman\\b|\\bicmali iman\\b|\\bicmali\\b"
+    "tanim": "Arapça din kelimesinin türediği köktür. Borç, yükümlülük, itaat, karşılık ve ceza/mükâfat anlamlarına gelir. Kişinin kendisini var eden Yüce Yaratıcı'ya duyduğu minnet ve kulluk borcunu ifade eder.",
+    "sifre": "Din kelimesinin sözlük kökü; borç, karşılık ve mutlak itaat.",
+    "pattern": "\\bdeyn\\b|\\bdeyn kök\\w*"
   },
   {
-    "id": "inanc_tafsili_iman",
-    "term": "Tafsîlî İman",
+    "id": "inanc_hak_batil_din",
+    "term": "Hak Din ve Bâtıl Din",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 1,
-    "tanim": "İnanç esaslarına ve dini hükümlere tek tek, ayrıntılı ve delilleriyle birlikte inanmaktır.",
-    "sifre": "Ayrıntılı / tek tek inanma = Tafsîlî İman.",
-    "pattern": "\\btafsîlî iman\\b|\\btafsili iman\\b|\\btafsili\\b"
+    "tanim": "Hak Din: Allah tarafından peygamberler aracılığıyla tebliğ edilen, aslı bozulmamış tevhid dinidir. Bâtıl Din: İnsanların uydurduğu veya vahye dayanmayan, putperestlik ve şirk içeren inanç sistemleridir.",
+    "sifre": "Vahye dayalı ilahi sistem = Hak din; Vahye dayanmayan insan ürünü = Bâtıl din.",
+    "pattern": "\\bhak din\\b|\\bbâtıl din\\b|\\bbatil din\\b"
   },
   {
-    "id": "inanc_taklidi_iman",
-    "term": "Taklîdî İman",
+    "id": "inanc_muharref_din",
+    "term": "Muharref Din",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 1,
-    "tanim": "Delillere dayanmadan, ana-baba veya çevreden görerek edinilen imandır. Geçerlidir fakat şüpheye açıktır.",
-    "sifre": "Delilsiz çevre/anne-baba taklidi = Taklîdî İman.",
-    "pattern": "\\btaklîdî iman\\b|\\btaklidi iman\\b"
+    "tanim": "Aslı ilâhî vahye dayanmakla birlikte zaman içinde insanlar tarafından metni veya inanç esasları tahrif edilip değiştirilmiş dinlerdir (Yahudilik ve Hristiyanlık gibi).",
+    "sifre": "Aslı ilahi vahiy olup sonradan tahrif edilmiş dinler.",
+    "pattern": "\\bmuharref din\\w*|\\btahrif edilmiş din\\w*"
   },
   {
-    "id": "inanc_tahkiki_iman",
-    "term": "Tahkîkî İman",
+    "id": "inanc_semavi_beseri_dinler",
+    "term": "Semâvî ve Beşerî Dinler",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 1,
-    "tanim": "Bilgiye, akli ve nakli delillere, araştırmaya ve derin tefekküre dayanan sarsılmaz imandır.",
-    "sifre": "Delil + araştırma + sarsılmaz şuur = Tahkîkî İman.",
-    "pattern": "\\btahkîkî iman\\b|\\btahkiki iman\\b"
+    "tanim": "Semâvî Dinler: Kaynağı vahiy ve peygamber olan ilâhî dinlerdir. Beşerî Dinler: İnsan aklı, gelenek veya felsefi kabullere dayanan vahiy dışı dinlerdir.",
+    "sifre": "Vahiy kaynaklı = Semâvî; İnsan aklı ve toplum kaynaklı = Beşerî din.",
+    "pattern": "\\bsemâvî din\\w*|\\bsemavi din\\w*|\\bbeşerî din\\w*|\\bbeseri din\\w*"
   },
   {
-    "id": "inanc_tevhid",
-    "term": "Tevhid",
+    "id": "inanc_ehli_kitap",
+    "term": "Ehl-i Kitap",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Kendilerine Allah tarafından kutsal kitap indirilmiş olan peygamberlerin ümmetleridir. İslâm ıstılahında özellikle Yahudiler ve Hristiyanlar için kullanılır.",
+    "sifre": "Kendilerine ilahi kitap verilmiş olan Yahudi ve Hristiyanlar.",
+    "pattern": "\\behl-i kitap\\b|\\behlikitap\\b|\\bkitap ehli\\b"
+  },
+  {
+    "id": "inanc_kitabi_supheli",
+    "term": "Kitabı Şüpheli Dinler",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Asıllarının vahyedilmiş bir kitaba dayanıp dayanmadığı kesin olarak bilinmeyen, Ehl-i Kitap muamelesi kısmen uygulanan dinlerdir (Mecûsîler ve Maniheistler).",
+    "sifre": "İlahi kitaplarının varlığı kesin bilinmeyen Mecûsîlik ve Maniheizm.",
+    "pattern": "\\bkitabı şüpheli\\w*|\\bmecûsî\\w*|\\bmecusi\\w*|\\bmaniheis\\w*"
+  },
+  {
+    "id": "inanc_akide",
+    "term": "Akīde (Akāid)",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Arapça 'a-k-d' (düğümlemek, sağlam bağlamak) kökünden gelir. Gönülden kesin olarak bağlanılan, kalpte şüpheye yer bırakmayacak biçimde düğümlenip benimsenen temel inanç ilkeleridir (Çoğulu: Akāid).",
+    "sifre": "Gönülden düğümlenen ve şüphesiz kabul edilen inanç esasları.",
+    "pattern": "\\bakīde\\b|\\bakide\\b|\\bakāid\\b|\\bakaid\\b"
+  },
+  {
+    "id": "inanc_iman_tanimi",
+    "term": "İman (Tasdik ve İkrar)",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Sözlükte güven vermek, tasdik etmek ve doğrulamaktır. Dinde Hz. Peygamber’in Allah’tan getirdiği kesin esasları kalpten tasdik edip dil ile ikrar etmektir. İmanın asıl mahalli ve rüknü kalbin tasdikidir.",
+    "sifre": "Kalp ile tasdik + dil ile ikrar; asıl rüknü kalbin tasdikidir.",
+    "pattern": "\\biman\\b|\\bîmân\\b|\\btasdik ve ikrar\\b"
+  },
+  {
+    "id": "inanc_kalbin_tasdiki",
+    "term": "Kalbin Tasdiki",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "İmanın temel ve vazgeçilmez asıl rüknüdür. Dinin getirdiği hakikatleri kişinin kalben şüphesiz onaylaması, kabullenmesi ve teslim olmasıdır. Kalpte tasdik yoksa dil ile ikrar münafıklıktır.",
+    "sifre": "İmanın asıl ve vazgeçilmez rüknü; kalben onaylama ve teslimiyet.",
+    "pattern": "\\bkalbin tasdik\\w*|\\btasdik\\b"
+  },
+  {
+    "id": "inanc_dilin_ikrari",
+    "term": "Dilin İkrarı",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Kalpte bulunan imanın dil ile açıkça söylenmesi ve beyan edilmesidir. Çoğu Ehl-i Sünnet âlimine göre dünyevi ahkâmın (cenaze, evlilik, miras) uygulanabilmesi için ikrar bir şarttır.",
+    "sifre": "Kalpteki imanın lisan ile söylenmesi; dünyevi hükümlerin şartı.",
+    "pattern": "\\bdilin ikrar\\w*|\\bikrar\\b"
+  },
+  {
+    "id": "inanc_mumenun_bih",
+    "term": "Mü'menü'n-bih",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Kendisine inanılması farz kılınan inanç konularının tamamıdır. Allah'a, meleklere, kitaplara, peygamberlere, âhiret gününe ve kadere iman ilkelerini kapsar.",
+    "sifre": "İnanılması farz ve zorunlu olan inanç konularının bütünü.",
+    "pattern": "\\bmü'menü'n-bih\\b|\\bmümenün bih\\b|\\bmumenun bih\\b"
+  },
+  {
+    "id": "inanc_icmali_tafsili",
+    "term": "İcmâlî ve Tafsîlî İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "İcmâlî İman: İnanılması gereken şeylere toptan ve özet olarak inanmaktır (Kelime-i Şehadet). Tafsîlî İman: İnanç esaslarına, peygamberlere, meleklere, kitaplara ve âhirete tek tek, ayrıntılı ve delilleriyle inanmaktır.",
+    "sifre": "Toptan/özet inanış = İcmâlî İman; Ayrıntılı/tek tek inanış = Tafsîlî İman.",
+    "pattern": "\\bicmâlî iman\\b|\\bicmali iman\\b|\\btafsîlî iman\\b|\\btafsili iman\\b"
+  },
+  {
+    "id": "inanc_taklidi_tahkiki",
+    "term": "Taklîdî ve Tahkîkî İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Taklîdî İman: Delillere dayanmadan ana-baba ve çevreden görerek benimsenen imandır (Sahibine mukallit denir). Tahkîkî İman: Akıl, araştırma, tefekkür ve delillere dayanan, şüphelere karşı sarsılmaz imandır (Sahibine muhakkik denir).",
+    "sifre": "Çevreyi taklit = Taklîdî İman (mukallit); Akıl ve delille araştırma = Tahkîkî İman (muhakkik).",
+    "pattern": "\\btaklîdî iman\\b|\\btaklidi iman\\b|\\btahkîkî iman\\b|\\btahkiki iman\\b|\\bmukallit\\b|\\bmuhakkik\\b"
+  },
+  {
+    "id": "inanc_imanda_istisna",
+    "term": "İmanda İstisna",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Kişinin 'İnşâallah müminim' demesidir. Mâtürîdîler ve Hanefîler imanda kesinlik gerektiği ve şüphe taşımaması için bunu caiz görmezler ('Hakikaten müminim' denmelidir). Eş'arîler ise akıbet ve son nefes endişesiyle caiz görürler.",
+    "sifre": "İnşâallah müminim demek; Mâtürîdî'de caiz değildir (kesinlik şart), Eş'arî'de caizdir.",
+    "pattern": "\\bimanda istisna\\b|\\binşâallah müminim\\b|\\binşallah müminim\\b"
+  },
+  {
+    "id": "inanc_yes_halinde_iman",
+    "term": "Ye's Halinde İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Kişinin ölüm anında, hayattan ümidini kestiği (ye's) ve âhiret azabını gördüğü esnada getirdiği imandır (Firavun örneği). İrade ve ihtiyar kalktığı için bu iman dinde makbul sayılmaz.",
+    "sifre": "Ölüm ve azap anındaki ümitsizlik imanı; irade kalktığı için makbul değildir.",
+    "pattern": "\\bye's halinde iman\\b|\\bye's anı\\b|\\byeis halinde iman\\b|\\biman-ı ye's\\b"
+  },
+  {
+    "id": "inanc_bilgi_kaynaklari",
+    "term": "İslâm Bilgi Kaynakları",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "İslam kelamcılarına göre kesin bilgi veren üç temel kaynak: Selim Akıl (akl-ı selîm), Doğru Haber (haber-i sâdık: mütevâtir haber ve peygamber haberi) ve Sağlam Duyulardır (havâss-ı selîme: beş duyu).",
+    "sifre": "Kelamda kesin bilgi kaynakları: Akl-ı selîm + Haber-i sâdık + Havâss-ı selîme.",
+    "pattern": "\\bhavâss-ı selîme\\b|\\bhavass-ı selime\\b|\\bhaber-i sâdık\\b|\\bhaber-i sadık\\b|\\bakl-ı selîm\\b|\\baklı selim\\b"
+  },
+  {
+    "id": "inanc_iman_amel_iliskisi",
+    "term": "İman-Amel İlişkisi",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "Ehl-i Sünnet’e göre amel imanın zorunlu bir parçası (cüz’ü) değildir; ibadeti terk eden dinden çıkmaz, günahkâr (fâsık) olur. Hâriciyye ve Mu'tezile’ye göre ise amel imanın bir parçasıdır; büyük günah işleyen dinden çıkar.",
+    "sifre": "Ehl-i Sünnet: Amel imanın parçası değildir; Haricilik/Mutezile: Amel imandandır.",
+    "pattern": "\\biman-amel\\b|\\biman amel ilişkisi\\b|\\bamel imandan\\b"
+  },
+  {
+    "id": "inanc_iman_islam_ayrimi",
+    "term": "İman ve İslâm Ayrımı",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 1,
+    "tanim": "İmam Mâtürîdî ve cumhura göre dinde iman ile İslâm özdeş ve birdir; mümin olan Müslim, Müslim olan mümindir. Bazı kelamcılara göre ise iman kalbî tasdik, İslâm ise boyun eğme ve zâhirî teslimiyettir.",
+    "sifre": "Mâtürîdî'ye göre iman ve İslam aynıdır; genel ıstılahta iman içsel/tasdik, İslam teslimiyettir.",
+    "pattern": "\\biman ve islâm\\b|\\biman ve islam\\b|\\bmümin ve müslim\\b"
+  },
+  {
+    "id": "inanc_islam_koku",
+    "term": "İslâm (Silm ve Selm)",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 2,
-    "tanim": "Allah’ın zâtında, sıfatlarında, fiillerinde ve mabud oluşunda tek, eşsiz ve benzersiz olduğuna inanmaktır.",
-    "sifre": "Birleme + şirkten uzaklaşma = Tevhid (Lâ ilâhe illallâh).",
-    "pattern": "\\btevhid\\b|\\btevhîd\\b|\\btevhit\\b"
+    "tanim": "Arapça silm veya selm kökünden gelir. Kurtuluşa ermek, boyun eğmek, teslim olmak, barış yapmak ve inkıyad demektir. Terim olarak Hz. Peygamber’in tebliğ ettiği ilâhî hükümleri içtenlikle benimseyip Allah'a tam teslim olmaktır.",
+    "sifre": "Silm/selm kökünden; hakka teslimiyet, boyun eğme ve esenlik dini.",
+    "pattern": "\\bsilm\\b|\\bselm\\b|\\binkıyad\\b|\\bteslimiyet\\b"
   },
   {
-    "id": "inanc_zati_sifatlar",
-    "term": "Zâtî Sıfatlar",
+    "id": "inanc_hukumler_tasnifi",
+    "term": "Dinî Hükümler Tasnifi",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "İslamî hükümler üç ana dala ayrılır: 1. İtikâdî (Aslî) Hükümler: İnanç esasları. 2. Amelî (Fer'î) Hükümler: İbadetler, muâmelât (hukukî/sosyal ilişkiler) ve ukûbât (cezalar). 3. Ahlâkî Hükümler: Kalp temizliği ve faziletli davranışlar.",
+    "sifre": "İslâm hükümleri üç ana daldır: İtikâdî (inanç), Amelî (ibadet-muamelat-ukubat) ve Ahlâkî hükümler.",
+    "pattern": "\\bitikâdî hüküm\\w*|\\bitikadi hüküm\\w*|\\bamelî hüküm\\w*|\\bameli hüküm\\w*|\\bahlâkî hüküm\\w*|\\bahlaki hüküm\\w*"
+  },
+  {
+    "id": "inanc_tecezzie_etmezlik",
+    "term": "Tecezzî Kabul Etmezlik",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "İnanç esaslarının bölünmezliği ilkesidir. İman esasları bir bütündür; birine inanıp diğerini inkâr eden kimse bütünü inkâr etmiş sayılır ve mümin olamaz.",
+    "sifre": "İnanç esasları bölünme ve parçalanma kabul etmez; hepsi bir bütündür.",
+    "pattern": "\\btecezzî\\b|\\btejezzi\\b|\\bbölünmezlik ilkesi\\b|\\bparçalanma kabul etmez\\b"
+  },
+  {
+    "id": "inanc_degismezlik_sabite",
+    "term": "Lâ Yeteğayyer (Değişmezlik)",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "İslam inanç esaslarının zamana, mekâna, toplumlara ve şahıslara göre asla değişmemesi, ezeli ve ebedî birer hakikat olarak sabit kalması özelliğidir.",
+    "sifre": "İnanç esasları zamana ve yere göre değişmez; sabittir.",
+    "pattern": "\\blâ yeteğayyer\\b|\\bla yetegayyer\\b|\\bdeğişmezlik ilkesi\\b|\\bsabit kalırlar\\b"
+  },
+  {
+    "id": "inanc_mumin_tanimi",
+    "term": "Mü'min",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Allah’a, Hz. Peygamber’e ve onun haber verdiği kesin inanç esaslarına kalpten inanıp tasdik eden kimsedir.",
+    "sifre": "İman esaslarını kalben tasdik edip teslim olan kişi.",
+    "pattern": "\\bmü'min\\b|\\bmumin\\b|\\bmüminler\\b"
+  },
+  {
+    "id": "inanc_kafir_kufur",
+    "term": "Kâfir ve Küfür",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Küfür sözlükte örtmek, gizlemek demektir. Terim olarak İslam inanç esaslarından birini, birkaçını veya tamamını inkâr eden ya da dinde kesin kabul edilen bir hükmü reddeden kişiye kâfir denir.",
+    "sifre": "Hakkı örtmek ve dinin kesin bir hükmünü inkâr etmek.",
+    "pattern": "\\bkâfir\\b|\\bkafir\\b|\\bküfür\\b"
+  },
+  {
+    "id": "inanc_munafik_nifak",
+    "term": "Münâfık ve Nifak",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Kalben inanmadığı ve inkâr ettiği halde diliyle müslüman olduğunu söyleyerek kendini inançlı gösteren iki yüzlü kimsedir. Kur'an'da cehennemin en derin yerinde (derk-i esfel) olacakları bildirilmiştir.",
+    "sifre": "Kalbi inkâr içinde olup diliyle inandım diyen iki yüzlü kimse.",
+    "pattern": "\\bmünâfık\\b|\\bmunafık\\b|\\bnifak\\b|\\bderk-i esfel\\b"
+  },
+  {
+    "id": "inanc_musrik_sirk",
+    "term": "Müşrik ve Şirk",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Allah’ın zâtında, sıfatlarında veya mâbud oluşunda O’na ortak koşan, Allah'a yaklaştırıcı aracılar (putlar, heykeller) edinen kimsedir. Şirk tevhidin zıddıdır ve en büyük zulüm sayılmıştır.",
+    "sifre": "Allah'a zatında, sıfatlarında veya ibadette ortak koşmak.",
+    "pattern": "\\bmüşrik\\b|\\bmusrik\\b|\\bşirk\\b"
+  },
+  {
+    "id": "inanc_fasik_fisk",
+    "term": "Fâsık ve Fısk",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Sözlükte yoldan çıkmak demektir. Dinde Allah'ın emir ve yasaklarına itaatsizlik eden, inandığı halde büyük günah işleyen veya küçük günahlarda ısrar eden kimsedir. Ehl-i Sünnet'e göre dinden çıkmaz.",
+    "sifre": "İnandığı halde emirlere uymayan ve büyük günah işleyen günahkâr mümin.",
+    "pattern": "\\bfâsık\\b|\\bfasık\\b|\\bfısk\\b"
+  },
+  {
+    "id": "inanc_murtekibi_kebire",
+    "term": "Mürtekib-i Kebîre (Büyük Günah)",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Büyük günah işleyen kimsenin durumudur. Ehl-i Sünnet’e göre mümin kalır, durumu Allah'a kalmıştır. Hâricîlere göre kâfir olur. Mu'tezile’ye göre ne mümin ne kâfirdir; el-Menzile beyne'l-menzileteyn'dedir.",
+    "sifre": "Büyük günah işleyen; Ehl-i Sünnet'e göre günahkâr mümin, Haricilere göre kâfir, Mu'tezile'ye göre ikisi arasıdır.",
+    "pattern": "\\bmürtekib-i kebîre\\b|\\bmurtekib-i kebire\\b|\\bbüyük günah işleyen\\b|\\bel-menzile beyne'l-menzileteyn\\b"
+  },
+  {
+    "id": "inanc_tekfir_ehli_kible",
+    "term": "Tekfir ve Ehl-i Kıble",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Tekfir, bir Müslümanı küfürle suçlamaktır. Ehl-i Sünnet kuralı: 'Ehl-i kıble tekfir edilemez.' Yani kıbleye yönelen, kelime-i tevhidi söyleyen hiçbir mümin işlediği günah sebebiyle kâfir ilan edilemez.",
+    "sifre": "Kıbleye yönelen mümin işlediği günah sebebiyle dinden çıkarılamaz ve tekfir edilemez.",
+    "pattern": "\\btekfir\\b|\\behl-i kıble\\b|\\behlikıble\\b|\\bkıble ehli\\b"
+  },
+  {
+    "id": "inanc_murted_irtidad",
+    "term": "Mürted (İrtidâd)",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 2,
+    "tanim": "Müslüman olduktan sonra kendi iradesiyle İslâm dinini terk edip başka bir dine geçen veya dinsizliği seçen kişidir. Bu fiile irtidâd denir.",
+    "sifre": "Kişinin Müslüman olduktan sonra İslâm dininden dönmesi.",
+    "pattern": "\\bmürted\\b|\\bmurted\\b|\\birtidâd\\b|\\birtidad\\b"
+  },
+  {
+    "id": "inanc_isbati_vacip",
+    "term": "İsbât-ı Vâcip",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 3,
-    "tanim": "Sadece Allah’ın zâtına mahsus olan, yaratıklara verilmesi mümkün olmayan altı sıfattır: Vücûd, Kıdem, Bekâ, Vahdâniyyet, Muhâlefetün li’l-Havâdis, Kıyâm bi-Nefsihî.",
-    "sifre": "Vücud, Kıdem, Beka, Vahdaniyyet, Muhalefetün lil-havadis, Kıyâm bi-nefsihi = 6 Zâtî Sıfat.",
-    "pattern": "zâtî sıfatlar|zati sıfatlar|zâtî sıfat"
+    "tanim": "Varlığı zorunlu (vâcip) olan Yüce Allah’ın varlığını ve birliğini akli ve naklî delillerle ortaya koyma, kanıtlama faaliyetine kelam ilminde verilen addır.",
+    "sifre": "Varlığı zorunlu olan Allah'ın varlığını delillerle ispatlama faaliyeti.",
+    "pattern": "\\bisbât-ı vâcip\\b|\\bisbat-ı vacip\\b|\\bisbât-ı vâcib\\b|\\bisbatı vacip\\b"
+  },
+  {
+    "id": "inanc_gayba_iman",
+    "term": "Gayba İman",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Duyularla idrak edilemeyen, gözle görülemeyen fakat akıl ve peygamber haberiyle kesin bilinen Allah’a ve ruhanî hakikatlere kayıtsız şartsız inanmaktır.",
+    "sifre": "Duyu organlarıyla algılanamayan ilahi hakikatlere şüphesiz inanmak.",
+    "pattern": "\\bgayba iman\\b|\\bgayb âlemi\\b|\\bgayb\\b"
+  },
+  {
+    "id": "inanc_fitrat_delili",
+    "term": "Fıtrat Delili",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Her insanın doğuştan Yüce bir Yaratıcı'ya inanma, sığınma ve bağlanma duygusuna ve potansiyeline sahip olduğunu savunan delildir ('Her doğan çocuk fıtrat üzere doğar' hadisi).",
+    "sifre": "İnsanın yaratılışında var olan doğuştan inanma ve yaratıcıyı arama duygusu.",
+    "pattern": "\\bfıtrat delili\\b|\\bfıtrat\\b|\\bfitrat\\b"
+  },
+  {
+    "id": "inanc_hudus_delili",
+    "term": "Hudûs Delili",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Evrenin değişken ve sonradan yaratılmış (hâdis) olduğu, her hâdisin mutlaka bir başlatıcı ve yaratıcıya (muhdis) muhtaç olduğu öncülünden hareketle Allah’ın varlığını ispatlayan kozmolojik delildir.",
+    "sifre": "Âlem hâdistir (sonradan olmadır); her hâdis bir muhdise (yaratıcıya) muhtaçtır.",
+    "pattern": "\\bhudûs\\b|\\bhudus\\b|\\bhâdis\\b|\\bmuhdis\\b"
+  },
+  {
+    "id": "inanc_imkan_delili",
+    "term": "İmkân Delili",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "İslam filozoflarının geliştirdiği delildir. Varlıklar ikiye ayrılır: Zorunlu varlık (Vâcibü'l-vücûd) ve zorunsuz varlık (mümkün). Evrendeki varlıklar yokluğu da varlığı da eşit derecede mümkün olan varlıklardır; onların var olabilmesi için zorunlu bir Yaratıcı'ya (Allah) muhtaçtırlar.",
+    "sifre": "Varlıkların var olması da yok olması da mümkündür; bu imkân Vâcibü'l-Vücûd'a dayanır.",
+    "pattern": "\\bimkân delili\\b|\\bimkan delili\\b|\\bvâcibü'l-vücûd\\b|\\bvacibul vucud\\b|\\bmümkün varlık\\b"
+  },
+  {
+    "id": "inanc_gaye_nizam_delili",
+    "term": "Gaye ve Nizam Delili (Teleolojik Delil)",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Kâinattaki mükemmel ahenk, şaşmaz düzen ve canlıların yaşamını gözeten amaçlılıktan hareketle bu düzenin sonsuz ilim ve hikmet sahibi bir Yaratıcı (Allah) tarafından kurulduğunu kanıtlayan delildir (İnâyet ve İhtirâ delilleri).",
+    "sifre": "Evrendeki mükemmel ölçü, düzen ve faydalılık ilim ve kudret sahibi yaratıcıyı gösterir.",
+    "pattern": "\\bgaye ve nizam\\b|\\bteleolojik delil\\b|\\binâyet ve ihtirâ\\b|\\binayet delili\\b"
+  },
+  {
+    "id": "inanc_tevhid_ilkesi",
+    "term": "Tevhid İlkesi",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Allah'ın zâtında, sıfatlarında, fiillerinde ve ibadete layık tek varlık oluşunda bir ve benzersiz olduğuna, hiçbir ortağı ve yardımcısı bulunmadığına inanmaktır. İslam dininin temel direğidir.",
+    "sifre": "Allah'ın birliği; zâtında, sıfatlarında ve hâkimiyetinde eşi ve benzeri olmaması.",
+    "pattern": "\\btevhid\\b|\\btevhid inancı\\b|\\blâ ilâhe illallah\\b"
+  },
+  {
+    "id": "inanc_esmai_husna",
+    "term": "Esmâ-i Hüsnâ",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "En güzel isimler demektir. Yüce Allah’ın yetkinlik, cemal ve celal vasıflarını bildiren isimleridir (Hadis-i şerifte 99 isim olarak bildirilmiştir).",
+    "sifre": "Allah'ın en güzel isimleri; zâtî, kâinata ve insana yönelik tecellileri bildirir.",
+    "pattern": "\\besmâ-i hüsnâ\\b|\\besmai hüsna\\b|\\besmaül hüsna\\b|\\besmâü'l-hüsnâ\\b"
+  },
+  {
+    "id": "inanc_selbi_sifatlar",
+    "term": "Selbî (Tenzîhî) Sıfatlar",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Allah’ın şanına layık olmayan, yaratılmışlık ve acziyet ifade eden olumsuz vasıfları O'ndan uzaklaştıran sıfatlardır: Vücûd, Kıdem, Bekā, Vahdâniyet, Muhâlefetün li'l-havâdis, Kıyâm bi-nefsihî.",
+    "sifre": "Allah'ı acziyet ve yaratılmışlık kusurlarından arındıran 6 zâtî sıfat.",
+    "pattern": "\\bselbî sıfat\\w*|\\bselbi sifat\\w*|\\btenzihî sıfat\\w*|\\btenzihi sifat\\w*"
   },
   {
     "id": "inanc_subuti_sifatlar",
-    "term": "Subûtî Sıfatlar",
+    "term": "Sübûtî Sıfatlar",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 3,
-    "tanim": "Varlığı zorunlu olan ve benzerleri sınırlı olarak yaratıklarda da tecelli eden kemal sıfatlarıdır: Hayat, İlim, Semî’, Basar, İrâde, Kudret, Kelâm, Tekvîn (8 sıfat).",
-    "sifre": "Hayat, İlim, Semi, Basar, İrade, Kudret, Kelam, Tekvin = 8 Subûtî Sıfat.",
-    "pattern": "subûtî sıfatlar|subuti sıfatlar|subûtî sıfat"
+    "tanim": "Allah’ın zâtına nispet edilen, mutlak kemâl ve yetkinlik ifade eden ezelî sıfatlardır: Hayat, İlim, Semî', Basar, İrâde, Kudret, Kelâm ve Tekvîn (8 adet).",
+    "sifre": "Allah'ın varlığına nispet edilen 8 mutlak kemâl sıfatı.",
+    "pattern": "\\bsübûtî sıfat\\w*|\\bsubuti sifat\\w*"
   },
   {
-    "id": "inanc_muhalefetun_lilhavadis",
-    "term": "Muhâlefetün li’l-Havâdis",
+    "id": "inanc_tekvin_mefhumu",
+    "term": "Tekvîn Sıfatı",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 3,
-    "tanim": "Allah’ın sonradan yaratılan varlıklara hiçbir şekilde benzememesidir.",
-    "sifre": "Yaratılmışlara benzememek = Muhâlefetün li’l-Havâdis (Zâtî sıfat).",
-    "pattern": "muhâlefetün li[’\\']l-havâdis|muhalefetün lil-havadis|muhalefetun lil havadis"
+    "tanim": "Yoktan var etmek, yaratmak, meydana getirmek ve şekil vermek demektir. Mâtürîdî mezhebine göre müstakil bir ezelî sübûtî sıfattır; Eş'arî mezhebine göre ise kudret ve irade sıfatlarının kâinata teallukundan doğan fiilî bir sıfattır.",
+    "sifre": "Yoktan var etme ve yaratma sıfatı; Mâtürîdî'de müstakil sübûtî sıfattır.",
+    "pattern": "\\btekvîn\\b|\\btekvin\\b"
+  },
+  {
+    "id": "inanc_muhalefetun_lil_havadis",
+    "term": "Muhâlefetün li'l-Havâdis",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 3,
+    "tanim": "Allah’ın sonradan yaratılmış hiçbir mahlûka, cisme, zamana ve mekâna benzememesidir. İhlas ve Şûrâ suresinde belirtilen mutlak tenzih esasıdır.",
+    "sifre": "Allah'ın sonradan yaratılan hiçbir varlığa benzememesi sıfatı.",
+    "pattern": "\\bmuhâlefetün li'l-havâdis\\b|\\bmuhalefetün lil-havadis\\b|\\bmuhalefetün lil havadis\\b"
   },
   {
     "id": "inanc_kiyam_bi_nefsihi",
@@ -95,19 +435,59 @@
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 3,
-    "tanim": "Allah’ın varlığının kendinden olması, var olmak ve varlığını sürdürmek için hiçbir şeye, zamana veya mekana muhtaç olmamasıdır.",
-    "sifre": "Hiçbir şeye muhtaç olmamak, kendi kendine var olmak = Kıyâm bi-Nefsihî (Zâtî sıfat).",
-    "pattern": "kıyâm bi-nefsihî|kiyam bi-nefsihi|kıyam bi nefsihi"
+    "tanim": "Allah’ın varlığının kendinden olması, var olmak ve varlığını sürdürmek için başka hiçbir varlığa, mekâna veya nedene muhtaç olmamasıdır.",
+    "sifre": "Allah'ın varlığının kendinden olması; hiçbir şeye muhtaç olmaması.",
+    "pattern": "\\bkıyâm bi-nefsihî\\b|\\bkiyam bi-nefsihi\\b|\\bkıyam binefsihi\\b"
   },
   {
-    "id": "inanc_melekler",
-    "term": "Meleklere İman",
+    "id": "inanc_meleklerin_mahiyeti",
+    "term": "Meleklerin Mahiyeti",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 4,
-    "tanim": "Nurdan yaratılmış, cinsiyetleri olmayan, yiyip içmeyen, günah işlemeyen ve daima Allah’a itaat eden nurani varlıklara inanmaktır.",
-    "sifre": "Nurdan yaratılma + cinsiyetsizlik + günahsız itaat = Melekler.",
-    "pattern": "\\bmelekler\\b|\\bmeleklere iman\\b|\\bcebrâil\\b|\\bmîkâil\\b|\\bisrâfîl\\b|\\bazrâil\\b"
+    "tanim": "Sözlükte elçilik, kuvvet ve tasarruf anlamlarına gelen melekler, Allah tarafından nurdan yaratılmış, latîf, erkeklik ve dişilikleri bulunmayan, yemeyen, içmeyen, evlenmeyen ve Allah’a asla isyan etmeyen masum ruhanî varlıklardır.",
+    "sifre": "Nurdan yaratılan, günahsız, yemez-içmez, cinsiyetsiz itaatkâr elçi varlıklar.",
+    "pattern": "\\bmeleklerin mahiyeti\\b|\\bmelekler\\b|\\bmelek\\b"
+  },
+  {
+    "id": "inanc_latif_kesif",
+    "term": "Latîf ve Kesîf Varlıklar",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Kesîf Varlıklar: Maddî, yoğun, gözle görülen ve duyularla algılanan cisimlerdir. Latîf Varlıklar: Şeffaf, nuranî veya ruhanî olup normal insan gözüyle görülemeyen varlıklardır (melekler, cinler).",
+    "sifre": "Görünen yoğun maddeler = Kesîf; Görünmeyen nurani/ruhani varlıklar = Latîf.",
+    "pattern": "\\blatîf varlık\\w*|\\blatif varlık\\w*|\\bkesîf varlık\\w*|\\bkesif varlık\\w*"
+  },
+  {
+    "id": "inanc_cebrail_ruhul_kudus",
+    "term": "Cebrâil (Rûhu'l-Kudüs)",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Vahiy meleğidir. Allah'ın emir, yasak ve kitaplarını peygamberlere ulaştırmakla görevlidir. Kur'an'da Rûhu'l-Kudüs (kutsal ruh), Rûhu'l-Emîn (güvenilir ruh) ve Nâmûs-ı Ekber olarak adlandırılır.",
+    "sifre": "Peygamberlere vahiy getiren baş melek; Rûhu'l-Kudüs ve Rûhu'l-Emîn.",
+    "pattern": "\\bcebrâil\\b|\\bcebrail\\b|\\brûhu'l-kudüs\\b|\\bruhul kudüs\\b|\\brûhu'l-emîn\\b|\\bruhul emin\\b"
+  },
+  {
+    "id": "inanc_dort_buyuk_melek",
+    "term": "Dört Büyük Melek",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Cebrâil (vahiy meleği), Mîkâil (tabiat olayları ve rızıkları sevk eden), İsrâfil (kıyamet ve dirilişte Sûr'a üfleyen) ve Azrâil'dir (Melekü'l-Mevt: canlıların ecelleri geldiğinde ruhlarını kabzeden melek).",
+    "sifre": "Cebrâil (vahiy), Mîkâil (tabiat/rızık), İsrâfil (Sûr), Azrâil (ölüm).",
+    "pattern": "\\bmîkâil\\b|\\bmikail\\b|\\bisrâfil\\b|\\bisrafil\\b|\\bazrâil\\b|\\bazrail\\b|\\bmelekü'l-mevt\\b"
+  },
+  {
+    "id": "inanc_hamelei_ars",
+    "term": "Hamele-i Arş ve Mukarrabûn",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Hamele-i Arş: Yüce Arş'ı taşıyan meleklerdir. Mukarrabûn (Kerûbiyyûn / İlliyyûn): Allah'a manen en yakın mertebede bulunan, sürekli tesbih ve ibadet halinde olan üstün melek topluluğudur.",
+    "sifre": "Arş'ı taşıyan melekler (Hamele-i Arş) ve Allah'a en yakın melekler (Mukarrabûn).",
+    "pattern": "\\bhamele-i arş\\b|\\bhamele-i ars\\b|\\bmukarrabûn\\b|\\bmukarrabun\\b|\\bkerûbiyyûn\\b|\\billiyyûn\\b"
   },
   {
     "id": "inanc_kiramen_katibin",
@@ -115,18 +495,148 @@
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 4,
-    "tanim": "İnsanın sağında ve solunda bulunup sevap ve günahlarını yazan değerli yazıcı meleklerdir.",
-    "sifre": "Amelleri yazan melekler = Kirâmen Kâtibîn.",
-    "pattern": "kirâmen kâtibîn|kiramen katibin"
+    "tanim": "Değerli yazıcılar demektir. İnsanın sağında ve solunda bulunarak onun yaptığı bütün iyi ve kötü amelleri, söz ve davranışları eksiksiz kaydedip amel defterini oluşturan meleklerdir.",
+    "sifre": "İnsanın sevap ve günahlarını kaydeden amel defteri yazıcı melekleri.",
+    "pattern": "\\bkirâmen kâtibîn\\b|\\bkiramen katibin\\b|\\byazıcı melek\\w*"
   },
   {
-    "id": "inanc_vahiy",
+    "id": "inanc_hafaza_muakkibat",
+    "term": "Hafaza ve Muakkibât Melekleri",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "İnsanları başlarına gelebilecek kaza, bela ve görünmez musibetlerden Allah’ın izniyle korumakla görevli muhafız meleklerdir. Kur'an'da ardı ardına gelen anlamında 'muakkibât' diye anılırlar.",
+    "sifre": "İnsanları kazalardan ve musibetlerden koruyan gözetici muhafız melekler.",
+    "pattern": "\\bhafaza melek\\w*|\\bhafaza\\b|\\bmuakkibât\\b|\\bmuakkibat\\b"
+  },
+  {
+    "id": "inanc_munker_nekir",
+    "term": "Münker ve Nekir",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Ölümden sonra kabirde (berzah âlemi) insana Rabbini, dinini ve peygamberini sorarak sorgulayan iki sorgu meleğidir. Sözlük anlamı bilinmeyen, alışılmadık suret demektir.",
+    "sifre": "Kabirde ölüyü 'Rabbin kim, dinin ne, peygamberin kim' diye sorgulayan melekler.",
+    "pattern": "\\bmünker ve nekir\\b|\\bmünker-nekir\\b|\\bmunker ve nekir\\b|\\bsorgu melek\\w*"
+  },
+  {
+    "id": "inanc_ridvan_malik_zebani",
+    "term": "Rıdvân, Mâlik ve Zebânîler",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Rıdvân: Cennetin kapısında bekleyen ve cennetlikleri karşılayan meleklerin başıdır. Mâlik: Cehennemin baş bekçisidir. Zebânîler: Cehennemde inkârcılara ve azap ehline cezalarını uygulamakla görevli sert ve kuvvetli meleklerdir.",
+    "sifre": "Cennet baş bekçisi = Rıdvân; Cehennem baş bekçisi = Mâlik; Cehennem azap melekleri = Zebânîler.",
+    "pattern": "\\brıdvân\\b|\\bridvan\\b|\\bmâlik\\b|\\bmalik\\b|\\bzebânî\\w*|\\bzebani\\w*"
+  },
+  {
+    "id": "inanc_cinler_mahiyeti",
+    "term": "Cinler ve Mahiyeti",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Sözlükte gizli, örtülü anlamına gelir. Dumansız ve kavurucu yalın bir ateşten (mâric) yaratılmış, insanlar gibi irade ve sorumluluk sahibi (mükellef), inananı ve inkârcısı bulunan latîf varlıklardır.",
+    "sifre": "Dumansız yalın ateşten yaratılan, irade sahibi ve görünmeyen mükellef varlıklar.",
+    "pattern": "\\bcinler\\b|\\bcin\\b|\\bmâric\\b|\\bmaric\\b"
+  },
+  {
+    "id": "inanc_seytan_iblis",
+    "term": "İblis ve Şeytan",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 4,
+    "tanim": "Aslı cinlerden olup kibirlenerek Hz. Âdem’e secde emrine karşı gelen, Allah'ın rahmetinden kovulan (İblis) ve kıyamete kadar insanları doğru yoldan saptırmaya, vesvese vermeye çalışan varlıktır.",
+    "sifre": "Kibirlenip secde etmeyen, rahmetten kovulup insanlara vesvese veren varlık.",
+    "pattern": "\\bşeytan\\b|\\bseytan\\b|\\biblis\\b"
+  },
+  {
+    "id": "inanc_vahiy_tanimi",
     "term": "Vahiy",
     "subject": "AOF_INANC",
     "ders": "İSLAM İNANÇ ESASLARI",
     "unite_no": 5,
-    "tanim": "Allah’ın peygamberlerine dilediği emir ve hükümleri gizli ve süratli bir yolla bildirmesidir.",
-    "sifre": "Gizli ve süratli bildiri = Vahiy.",
-    "pattern": "\\bvahiy\\b|\\bvahiydir\\b|\\bvahye\\b"
+    "tanim": "Sözlükte gizli ve süratli bir şekilde bildirmek, işaret etmek, fısıldamak ve ilham etmektir. Terim olarak Allah’ın, emir, yasak ve hakikatleri seçtiği peygamberlerine alışılagelmiş yolların dışında gizlice bildirmesidir.",
+    "sifre": "Allah'ın muradını peygamberlerine gizli ve süratli şekilde bildirmesi.",
+    "pattern": "\\bvahiy\\b|\\bvahy\\b"
+  },
+  {
+    "id": "inanc_vahiy_sekilleri",
+    "term": "Vahyin Geliş Şekilleri",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "Şûrâ suresi 51. âyete göre vahiy üç yolla gelir: 1. Doğrudan ilham veya Rüyâ-yı Sâdıka ile kalbe ilka. 2. Perde arkasından hitap (Hz. Musa'ya Tûr dağında olduğu gibi). 3. Elçi melek (Cebrâil) vasıtasıyla (insan suretinde veya kendi asli suretinde).",
+    "sifre": "Vahyin üç yolu: Doğrudan kalbe ilham/rüya, perde arkasından kelam, Cebrail vasıtasıyla.",
+    "pattern": "\\bvahyin geliş şekilleri\\b|\\brüyâ-yı sâdıka\\b|\\bruyayı sadıka\\b|\\bperde arkasından\\b"
+  },
+  {
+    "id": "inanc_suhuf_kavrami",
+    "term": "Suhuf (Sayfalar)",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "Sahife kelimesinin çoğuludur. Dört büyük kitaptan önce bazı peygamberlere indirilen küçük hacimli ilâhî risalelerdir. Rivayete göre toplam 100 sayfadır: Hz. Şît (50), Hz. İdris (30), Hz. İbrahim (10), Hz. Musa (Tevrat öncesi 10).",
+    "sifre": "Dört büyük kitaptan önceki küçük risaleler; Şît 50, İdris 30, İbrahim 10, Musa 10 sayfa.",
+    "pattern": "\\bsuhuf\\b|\\bsuhûf\\b|\\bsahifeler\\b|\\byüz sayfa\\b|\\b100 sayfa\\b"
+  },
+  {
+    "id": "inanc_tevrat_tanah",
+    "term": "Tevrat ve Tanah",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "Tevrat (Torah), sözlükte kanun ve şeriat anlamına gelir ve Hz. Musa'ya indirilmiştir. Yahudilerin kutsal metni Tanah'ın ilk beş bölümüdür: Tekvin (Yaratılış), Hurûc (Çıkış), Levililer (Kurban/İbadet), Sayılar (A'dât), Tesniye (On Emir). Hristiyanlarca Eski Ahid (Old Testament) olarak adlandırılır.",
+    "sifre": "Hz. Musa'ya indirilen kanun kitabı; Tanah'ın ilk 5 bölümü (Tekvin, Hurûc, Levililer, Sayılar, Tesniye).",
+    "pattern": "\\btevrat\\b|\\btorah\\b|\\btanah\\b|\\beski ahid\\b|\\bold testament\\b|\\btekvin\\b|\\bhurûc\\b|\\blevililer\\b|\\btesniye\\b"
+  },
+  {
+    "id": "inanc_zebur_kitabi",
+    "term": "Zebûr",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "Sözlükte yazılı metin ve kitap anlamına gelir. Allah tarafından Hz. Dâvûd'a indirilmiştir. Şer'î hükümlerden ziyade ilâhî övgüler, yakarışlar, dualar, hikmetli sözler ve öğütler içerir (Mezmurlar).",
+    "sifre": "Hz. Dâvûd'a indirilen dua, ilahi ve hikmet içerikli kutsal kitap.",
+    "pattern": "\\bzebûr\\b|\\bzebur\\b|\\bmezmurlar\\b"
+  },
+  {
+    "id": "inanc_incil_ve_kanonik",
+    "term": "İncil ve Dört İncil",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "Sözlükte müjde anlamına gelir. Hz. İsa'ya vahyolunmuştur. Hristiyanlarca Yeni Ahid (New Testament) olarak kabul edilen kilisece onaylanmış 4 kanonik İncil: Matta, Markos, Luka (Sinoptik İnciller) ve Yuhanna'dır.",
+    "sifre": "Hz. İsa'ya indirilen müjde kitabı; kanonik 4 İncil: Matta, Markos, Luka (Sinoptikler) ve Yuhanna.",
+    "pattern": "\\bincil\\b|\\byeni ahid\\b|\\bnew testament\\b|\\bmatta\\b|\\bmarkos\\b|\\bluka\\b|\\byuhanna\\b|\\bsinoptik\\b"
+  },
+  {
+    "id": "inanc_kuran_cemi_istinsah",
+    "term": "Kur'an'ın Cem'i ve İstinsahı",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "Cem (Toplama): Yemâme savaşında hafız sahâbîlerin şehit düşmesi üzerine Hz. Ebû Bekir döneminde Zeyd b. Sâbit başkanlığında Kur'an sayfaları tek bir Mushaf haline getirildi. İstinsah (Çoğaltma): Hz. Osman döneminde kıraat ihtilaflarını önlemek için ana Mushaf çoğaltılıp İslam merkezlerine dağıtıldı.",
+    "sifre": "Toplanması (Cem) = Hz. Ebû Bekir ve Zeyd b. Sâbit; Çoğaltılması (İstinsah) = Hz. Osman.",
+    "pattern": "\\bcem'i\\b|\\bcemi\\b|\\bistinsah\\b|\\bzeyd b\\. sâbit\\b|\\bzeyd bin sabit\\b|\\bmushaf\\b"
+  },
+  {
+    "id": "inanc_icaz_ve_tahaddi",
+    "term": "İ'câzü'l-Kur'ân ve Tahaddî",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "İ'câz: Kur’ân’ın edebî üslubu, nazmı, gaybî haberleri ve muhtevasıyla insanların benzerini getirmekten aciz kaldığı ebedî bir mucize olmasıdır. Tahaddî: Kur’an’ın inkârcılara 'Onun benzeri bir sûre getirin' diyerek açıkça meydan okumasıdır.",
+    "sifre": "Kur'an'ın benzeri yapılamaz ebedî mucizeliği (İ'câz) ve inkârcılara meydan okuması (Tahaddî).",
+    "pattern": "\\bi'câz\\b|\\bicaz\\b|\\bi'câzü'l-kur'ân\\b|\\btahaddî\\b|\\btahaddi\\b|\\bmeydan okuma\\b"
+  },
+  {
+    "id": "inanc_tahrif_kavrami",
+    "term": "Tahrîf",
+    "subject": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "unite_no": 5,
+    "tanim": "Bir sözün, metnin veya inancın harflerini, kelimelerini yerinden oynatarak değiştirmek veya lafzını koruyup kasten yanlış yorumlamak suretiyle ilâhî kitabın aslını bozmaktır. Kur'an haricindeki eski kutsal kitaplar tahrife uğramıştır.",
+    "sifre": "İlahi metnin kelimelerini veya anlamını bilerek değiştirip aslını bozmak.",
+    "pattern": "\\btahrîf\\b|\\btahrif\\b|\\btahrif edil\\w*"
   }
 ]

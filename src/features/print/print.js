@@ -22,9 +22,7 @@ export function executePdfPrint() {
   const printWithInterlinear = Boolean(chkInterlinear && chkInterlinear.checked);
   closePdfDialog();
 
-  if (printWithInterlinear) {
-    notifyStateChange('print:before');
-  }
+  notifyStateChange('print:before', { interlinear: printWithInterlinear });
 
   const strips = document.querySelectorAll('.page-bottom-answer-strip');
   if (loc === 'bottom') {
@@ -73,8 +71,6 @@ export function executePdfPrint() {
   setTimeout(() => {
     const sep = document.getElementById('separateAnswerPage');
     if (sep) sep.remove();
-    if (printWithInterlinear) {
-      notifyStateChange('print:after');
-    }
+    notifyStateChange('print:after', { interlinear: printWithInterlinear });
   }, 1000);
 }

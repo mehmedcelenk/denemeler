@@ -3,12 +3,14 @@
     "q_num": 1,
     "stem": "Aşağıdaki cümleyle eşleşen görsel hangisidir?",
     "secenekler": {
-      "A": "",
-      "B": "",
-      "C": ""
+      "A": "[Görsel A]",
+      "B": "[Görsel B]",
+      "C": "[Görsel C]",
+      "D": "[Görsel D]",
+      "E": "[Görsel E]"
     },
     "ans": "C",
-    "solution": ""
+    "solution": "Doğru cevap C şıkkıdır."
   },
   {
     "q_num": 2,

@@ -1,4 +1,11 @@
 import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
+import {
+  getActiveQuestionCard,
+  getCardActionElements,
+  getCardAnswerBanner,
+  getCardChoiceRow,
+  getQuestionCards,
+} from '../booklet/card-query.ts';
 import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from './explanation.ts';
 import { saveChoicesToStorage, loadSavedChoices } from './storage.ts';
 import { canMarkAnswer } from './rate-limit.ts';
@@ -6,73 +13,67 @@ import type { Choice } from '../../data/question.ts';
 
 export { saveChoicesToStorage, loadSavedChoices };
 
-/** Soru için geçici seçilen (taslak) şık */
-const pendingSelections: Record<number, Choice> = {};
-
 /** Optik şık baloncuğuna tıklama eylemini yönetir. */
-export function handleSelectOpticalBubble(qid: number, letter: Choice): void {
+export function handleSelectOpticalBubble(qid: number, letter: Choice, sourceEl?: HTMLElement | null): void {
   const targetQ = state.allData.find(x => x.id === qid);
   if (targetQ && targetQ.sekilli) return; // Görselli/şekilli soru pasif, tıklanamaz
-  if (!canMarkAnswer(qid)) return;
+  if (!canMarkAnswer(qid, sourceEl)) return;
 
   const alreadySubmitted = state.userMarkedChoices[qid];
 
   // 1. Zaten nihai cevap verilmişse ve aynı şıkka tıklandıysa: Cevabı iptal et / sil
   if (alreadySubmitted === letter) {
     store.removeUserMarkedChoice(qid);
-    delete pendingSelections[qid];
+    store.clearPendingChoice(qid);
     saveChoicesToStorage();
     notifyStateChange('answer:revoked', { qid });
-    if (typeof document !== 'undefined') {
-      document.querySelectorAll<HTMLElement>(`[data-qid="${qid}"]`).forEach(card => {
-        card.dataset.userMark = '';
-      });
+    getQuestionCards(qid).forEach(card => {
+      card.dataset.userMark = '';
+      delete card.dataset.userStatus;
       (['A', 'B', 'C', 'D', 'E'] as Choice[]).forEach(l => {
-        document.querySelectorAll(`#opt_${qid}_${l}`).forEach(row => {
-          row.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
-        });
+        getCardChoiceRow(card, l)?.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
       });
-      document.querySelectorAll(`#banner_${qid}`).forEach(bannerEl => {
-        (bannerEl as HTMLElement).style.display = 'none';
-      });
-    }
+      const bannerEl = getCardAnswerBanner(card);
+      if (bannerEl && !state.revealedAnswers.has(qid)) {
+        bannerEl.style.display = 'none';
+      }
+    });
     hideAnswerExplanationBubble();
     return;
   }
 
   // 2. Henüz nihai cevap verilmemişse veya başka bir şık seçilmek isteniyorsa:
-  const pending = pendingSelections[qid];
+  const pending = state.pendingMarkedChoices[qid];
 
   if (pending === letter) {
     // İkinci kez aynı şıkka tıklandı -> Nihai olarak cevapla (confirm)
-    delete pendingSelections[qid];
-    applyFinalChoice(qid, letter);
+    store.clearPendingChoice(qid);
+    applyFinalChoice(qid, letter, sourceEl);
   } else {
     // İlk tıklama (veya farklı bir şıkka geçiş) -> Sadece moda göre seçili göster (marked)
-    pendingSelections[qid] = letter;
-    if (typeof document !== 'undefined') {
-      document.querySelectorAll<HTMLElement>(`[data-qid="${qid}"]`).forEach(card => {
-        card.dataset.userMark = letter;
-      });
+    store.setPendingChoice(qid, letter);
+    getQuestionCards(qid).forEach(card => {
+      card.dataset.userMark = letter;
+      delete card.dataset.userStatus;
       (['A', 'B', 'C', 'D', 'E'] as Choice[]).forEach(l => {
-        document.querySelectorAll(`#opt_${qid}_${l}`).forEach(row => {
-          row.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
-          if (l === letter) {
-            row.classList.add('marked');
-          }
-        });
-      });
-      document.querySelectorAll<HTMLElement>(`#banner_${qid}`).forEach(bannerEl => {
-        if (!state.revealedAnswers.has(qid)) {
-          bannerEl.style.display = 'none';
+        const row = getCardChoiceRow(card, l);
+        if (!row) return;
+        row.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
+        if (l === letter) {
+          row.classList.add('marked');
         }
       });
-    }
+      const bannerEl = getCardAnswerBanner(card);
+      if (bannerEl && !state.revealedAnswers.has(qid)) {
+        bannerEl.style.display = 'none';
+      }
+    });
   }
 }
 
 /** Nihai cevabı işler ve UI'yi günceller */
-function applyFinalChoice(qid: number, choice: Choice): void {
+function applyFinalChoice(qid: number, choice: Choice, sourceEl?: HTMLElement | null): void {
+  store.clearPendingChoice(qid);
   store.setUserMarkedChoice(qid, choice);
   saveChoicesToStorage();
 
@@ -84,10 +85,10 @@ function applyFinalChoice(qid: number, choice: Choice): void {
     notifyStateChange('answer:marked', { qid, choice, isCorrect });
   }
 
-  updateQuestionMarkUI(qid, choice);
+  updateQuestionMarkUI(qid, choice, sourceEl);
 }
 
-export function updateQuestionMarkUI(questionId: number, choice: Choice): void {
+export function updateQuestionMarkUI(questionId: number, choice: Choice, sourceEl?: HTMLElement | null): void {
   if (typeof document === 'undefined') return;
 
   const q = state.bookletQuestions.find(item => item.id === questionId)
@@ -95,22 +96,17 @@ export function updateQuestionMarkUI(questionId: number, choice: Choice): void {
   const correctChoice = q ? q.dogru_cevap : null;
   const isCorrect = (correctChoice && choice === correctChoice);
 
-  document.querySelectorAll<HTMLElement>(`[data-qid="${questionId}"]`).forEach(card => {
+  getQuestionCards(questionId).forEach(card => {
     card.dataset.userMark = choice;
     card.dataset.userStatus = isCorrect ? 'correct' : 'incorrect';
-  });
 
-  (['A', 'B', 'C', 'D', 'E'] as Choice[]).forEach(letter => {
-    document.querySelectorAll(`#opt_${questionId}_${letter}`).forEach(row => {
+    (['A', 'B', 'C', 'D', 'E'] as Choice[]).forEach(letter => {
+      const row = getCardChoiceRow(card, letter);
+      if (!row) return;
       row.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
 
       if (letter === choice) {
-        row.classList.add('marked');
-        if (isCorrect) {
-          row.classList.add('marked-correct');
-        } else {
-          row.classList.add('marked-incorrect');
-        }
+        row.classList.add('marked', isCorrect ? 'marked-correct' : 'marked-incorrect');
       } else if (!isCorrect && letter === correctChoice) {
         row.classList.add('revealed-correct');
       }
@@ -119,17 +115,17 @@ export function updateQuestionMarkUI(questionId: number, choice: Choice): void {
 
   // Doğru da yapılsa yanlış da yapılsa doğru şıkkın üzerine açıklama toast'ı aç
   if (q && q.dogru_nedeni) {
-    const targetOpt = document.querySelector<HTMLElement>(`#opt_${questionId}_${correctChoice}`)
-      || document.querySelector<HTMLElement>(`#opt_${questionId}_${choice}`);
+    const activeCard = getActiveQuestionCard(questionId, sourceEl);
+    const targetOpt = activeCard
+      ? ((correctChoice && getCardChoiceRow(activeCard, correctChoice)) || getCardChoiceRow(activeCard, choice))
+      : null;
     showAnswerExplanationBubble(questionId, targetOpt);
   }
 }
 
 /** Tüm işaretlemeleri temizler. */
 export function clearAllMarks(): void {
-  for (const key of Object.keys(pendingSelections)) {
-    delete pendingSelections[Number(key)];
-  }
+  store.clearAllPendingChoices();
   store.clearAllEliminatedWrongChoices();
   const hasDom = typeof document !== 'undefined';
   if (hasDom) {
@@ -164,7 +160,7 @@ export function clearAllMarks(): void {
 }
 
 /** Tek bir sorunun doğru cevabını gösterir veya gizler. */
-export function toggleSingleAnswerReveal(qid: number): void {
+export function toggleSingleAnswerReveal(qid: number, sourceEl?: HTMLElement | null): void {
   const q = state.allData.find(item => item.id === qid);
   if (q && q.sekilli) return;
 
@@ -176,26 +172,22 @@ export function toggleSingleAnswerReveal(qid: number): void {
 
   const correctLetter = q ? q.dogru_cevap : null;
 
-  document.querySelectorAll<HTMLElement>(`[data-qid="${qid}"]`).forEach(card => {
+  getQuestionCards(qid).forEach(card => {
     card.dataset.revealed = isNowRevealed ? 'true' : 'false';
-  });
-
-  document.querySelectorAll(`#btnEye_${qid}`).forEach(eyeBtn => {
-    eyeBtn.classList.toggle('revealed', isNowRevealed);
-  });
-  document.querySelectorAll(`#banner_${qid}`).forEach(bannerEl => {
-    (bannerEl as HTMLElement).style.display = isNowRevealed ? 'flex' : 'none';
-  });
-
-  if (correctLetter) {
-    document.querySelectorAll(`#opt_${qid}_${correctLetter}`).forEach(correctRow => {
-      correctRow.classList.toggle('revealed-correct', isNowRevealed);
+    getCardActionElements(card, 'toggle-answer-reveal').forEach(eyeBtn => {
+      eyeBtn.classList.toggle('revealed', isNowRevealed);
     });
-
-    if (!wasRevealed && q && q.dogru_nedeni) {
-      const targetOpt = document.querySelector(`#opt_${qid}_${correctLetter}`) as HTMLElement | null;
-      if (targetOpt) showAnswerExplanationBubble(qid, targetOpt);
+    const bannerEl = getCardAnswerBanner(card);
+    if (bannerEl) bannerEl.style.display = isNowRevealed ? 'flex' : 'none';
+    if (correctLetter) {
+      getCardChoiceRow(card, correctLetter)?.classList.toggle('revealed-correct', isNowRevealed);
     }
+  });
+
+  if (correctLetter && !wasRevealed && q && q.dogru_nedeni) {
+    const activeCard = getActiveQuestionCard(qid, sourceEl);
+    const targetOpt = activeCard ? getCardChoiceRow(activeCard, correctLetter) : null;
+    if (targetOpt) showAnswerExplanationBubble(qid, targetOpt);
   }
 }
 
@@ -203,11 +195,13 @@ export function toggleSingleAnswerReveal(qid: number): void {
 export function toggleSingleHint(qid: number): void {
   const isNowRevealed = store.toggleHintReveal(qid);
 
-  document.querySelectorAll(`#btnCompass_${qid}`).forEach(compassBtn => {
-    compassBtn.classList.toggle('hint-revealed', isNowRevealed);
-  });
-  document.querySelectorAll(`#hint_${qid}`).forEach(hintEl => {
-    (hintEl as HTMLElement).style.display = isNowRevealed ? 'flex' : 'none';
+  getQuestionCards(qid).forEach(card => {
+    getCardActionElements(card, 'toggle-question-hint').forEach(compassBtn => {
+      compassBtn.classList.toggle('hint-revealed', isNowRevealed);
+    });
+    card.querySelectorAll<HTMLElement>('[data-role="question-hint"]').forEach(hintEl => {
+      hintEl.style.display = isNowRevealed ? 'flex' : 'none';
+    });
   });
 }
 

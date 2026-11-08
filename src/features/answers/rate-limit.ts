@@ -1,5 +1,6 @@
 import { readString, remove, writeString } from '../../app/storage.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
+import { getActiveQuestionCard } from '../booklet/card-query.ts';
 
 const MIN_READ_MS = 1000; // Soru ekrana geldikten sonra minimum insan algı eşiği (1 saniye)
 const MIN_QUESTION_GAP_MS = 600; // Farklı sorular arasındaki seri spam eşiği (0.6 saniye)
@@ -55,7 +56,7 @@ function applyPenalty(now: number): void {
   showLockNotice(nextLockUntil);
 }
 
-export function canMarkAnswer(qid: number): boolean {
+export function canMarkAnswer(qid: number, sourceEl?: Element | null): boolean {
   if (typeof document === 'undefined') return true;
   const now = Date.now();
   const lockUntil = getLockUntil();
@@ -66,7 +67,7 @@ export function canMarkAnswer(qid: number): boolean {
   if (lockUntil) remove(StorageKeys.ANSWER_LOCK_UNTIL);
   if (displayedLockUntil) clearLockNotice();
 
-  const card = document.getElementById(`bq_${qid}`);
+  const card = getActiveQuestionCard(qid, sourceEl);
   const openedAt = Number(card?.dataset.openedAt ?? 0);
 
   // 1. Soru kartı ekranda henüz MIN_READ_MS kadar durmadıysa (okumadan çok hızlı tıklama)

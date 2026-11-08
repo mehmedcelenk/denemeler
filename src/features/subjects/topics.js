@@ -1,6 +1,7 @@
 import { getAggregatedTopics } from './topic-model.js';
 import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
-import { getCondensedCourseCode, matchesSubject, AOIHL_SUBJECTS, AOF_SUBJECTS } from '../../data/subjects.js';
+import { getCondensedCourseCode, matchesSubject } from '../../data/subjects.js';
+import { getProgramSubjectList } from './selection-model.ts';
 import { getExamPeriodsForSelection, renderExamPeriodsHtml, selectExamPeriodFromDrawer } from './exam-periods.ts';
 import { renderTopicsTreeHtml } from './topics-tree.ts';
 
@@ -128,7 +129,7 @@ export function renderDrawerTopics() {
     return;
   }
 
-  const currentList = state.programMode === 'AOF' ? AOF_SUBJECTS : AOIHL_SUBJECTS;
+  const currentList = getProgramSubjectList();
   const activeSubjectList = currentList.filter(s => {
     for (const c of state.selectedCourses) {
       if (matchesSubject({ ders: c }, s.id)) return true;

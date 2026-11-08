@@ -247,3 +247,14 @@ body.dark-mode .q-soon-banner {
 .booklet-zoom-indicator:hover {
   background: color-mix(in srgb, var(--brand-accent) 12%, var(--paper-bg)); border-color: var(--brand-accent);
 }
+
+.booklet-load-sentinel {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+  cursor: pointer;
+}

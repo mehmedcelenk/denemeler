@@ -21,8 +21,8 @@ test('eklenti başlangıçları olmadan çekirdek kart üretir ve cevap kaydeder
 
   const html = renderQuestionCardHtml(question, 1);
   assert.match(html, /Which answer is correct\?/);
-  assert.doesNotMatch(html, /btnMeal_|btnSpeech_/);
-  assert.doesNotMatch(html, /btnEye_/);
+  assert.doesNotMatch(html, /toggle-question-meal|btnSpeech_/);
+  assert.doesNotMatch(html, /toggle-answer-reveal/);
 
   handleSelectOpticalBubble(question.id, 'B');
   handleSelectOpticalBubble(question.id, 'B');

@@ -8,6 +8,8 @@ kaynaklar/yks/
 scripts/scratch/
 
 # Python derleme ve önbellek
+data/evren_cache/
+archive/
 .venv/
 venv/
 __pycache__/

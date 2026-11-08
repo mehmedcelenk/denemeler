@@ -19,7 +19,8 @@ export const AOF_SUBJECTS = [
   { id: 'AOF_ITAR', name: 'İlk Dönem İslam Tarihi', shortName: 'İslam Tarihi', icon: '🏛️', cat: 'ilahiyat', kredi: 2 },
   { id: 'AOF_AHLAK', name: 'İslam Ahlak Esasları', shortName: 'Ahlak Esasları', icon: '🌸', cat: 'ilahiyat', kredi: 2 },
   { id: 'AOF_IBADET', name: 'İslam İbadet Esasları', shortName: 'İbadet Esasları', icon: '🕌', cat: 'ilahiyat', kredi: 2 },
-  { id: 'AOF_INANC', name: 'İslam İnanç Esasları', shortName: 'İnanç Esasları', icon: '✨', cat: 'ilahiyat', kredi: 2 }
+  { id: 'AOF_INANC', name: 'İslam İnanç Esasları', shortName: 'İnanç Esasları', icon: '✨', cat: 'ilahiyat', kredi: 2 },
+  { id: 'AOF_ARAPCA', name: 'Arapça I', shortName: 'Arapça I', icon: '📖', cat: 'ilahiyat', kredi: 2 }
 ];
 
 export const TYT_SUBJECTS = [
@@ -76,9 +77,28 @@ export const YDT_SUBJECTS = [
   { id: 'YDT_ING', name: 'YDT İngilizce', shortName: 'İNGİLİZCE', icon: '🌐', cat: 'kultur', kredi: 1 }
 ];
 
+export const ILMIHAL_SUBJECTS = [
+  { id: 'ILM_TEMIZLIK', name: 'Temizlik Soruları', shortName: 'Temizlik', icon: '🧼', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_NAMAZ', name: 'Namaz Soruları', shortName: 'Namaz', icon: '🕌', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_CUMA', name: 'Cuma ve Hutbe Soruları', shortName: 'Cuma', icon: '👥', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_CENAZE', name: 'Cenaze Soruları', shortName: 'Cenaze', icon: '🤲', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_ORUC', name: 'Oruç Soruları', shortName: 'Oruç', icon: '🌙', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_ZEKAT', name: 'Zekât Soruları', shortName: 'Zekât', icon: '💰', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_HAC', name: 'Hac ve Umre Soruları', shortName: 'Hac', icon: '🕋', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_HAC_FIKHI', name: 'Hac Fıkhı Soruları', shortName: 'Hac Fıkhı', icon: '📜', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_KURBAN', name: 'Kurban ve Yemin Soruları', shortName: 'Kurban', icon: '🐑', cat: 'ilahiyat', kredi: 2 },
+  { id: 'ILM_DENEME', name: 'Genel Deneme Sınavı', shortName: 'Deneme', icon: '📝', cat: 'ilahiyat', kredi: 2 }
+];
+
+export const GIRISIMCILIK_SUBJECTS = [
+  { id: 'GIR_TEMEL', name: 'Girişimcilik Soruları', shortName: 'Girişimcilik', icon: '💡', cat: 'kultur', kredi: 2 }
+];
+
 export const SUBJECTS = [
   ...AOIHL_SUBJECTS,
   ...AOF_SUBJECTS,
+  ...ILMIHAL_SUBJECTS,
+  ...GIRISIMCILIK_SUBJECTS,
   ...TYT_SUBJECTS,
   ...AYT_ALL_SUBJECTS,
   ...YDT_SUBJECTS
@@ -135,6 +155,22 @@ export function matchesSubject(q, subj) {
   if (subj === 'AOF_AHLAK') return d.includes('AHLAK');
   if (subj === 'AOF_IBADET') return d.includes('İBADET');
   if (subj === 'AOF_INANC') return d.includes('İNANÇ');
+  if (subj === 'AOF_ARAPCA') return d.includes('ARAPÇA');
+
+  // İLMİHAL
+  if (subj === 'ILM_TEMIZLIK') return d.includes('TEMİZLİK');
+  if (subj === 'ILM_NAMAZ') return d.includes('NAMAZ');
+  if (subj === 'ILM_CUMA') return d.includes('CUMA');
+  if (subj === 'ILM_CENAZE') return d.includes('CENAZE');
+  if (subj === 'ILM_ORUC') return d.includes('ORUÇ');
+  if (subj === 'ILM_ZEKAT') return d.includes('ZEKÂT') || d.includes('ZEKAT');
+  if (subj === 'ILM_HAC') return d.includes('HAC') && !d.includes('FIKHI');
+  if (subj === 'ILM_HAC_FIKHI') return d.includes('HAC FIKHI');
+  if (subj === 'ILM_KURBAN') return d.includes('KURBAN') || d.includes('YEMİN');
+  if (subj === 'ILM_DENEME') return d.includes('DENEME');
+
+  // GİRİŞİMCİLİK
+  if (subj === 'GIR_TEMEL') return d.includes('GİRİŞİMCİLİK') || d.includes('GİRİŞİM');
   return true;
 }
 
@@ -144,6 +180,7 @@ export function getShortCourseName(c) {
           .replace('İSLAM AHLAK ESASLARI', 'AHLÂK')
           .replace('İSLAM İBADET ESASLARI', 'İBADET')
           .replace('İSLAM İNANÇ ESASLARI', 'İNANÇ')
+          .replace('ARAPÇA I', 'ARAPÇA')
           .replace('AYT TÜRK DİLİ VE EDEBİYATI', 'AYT EDB')
           .replace('TÜRK DİLİ VE EDEBİYATI', 'TDE')
           .replace('TÜRK DİLİ VE ED.', 'TDE')
@@ -171,14 +208,18 @@ export function getCondensedCourseCode(coursesSet, subjId) {
     'FIZ': 'FİZ', 'KIM': 'KİM', 'BIO': 'BİY', 'FEL': 'FEL',
     'DIN': 'DİN', 'ING': 'İNG', 'INK': 'İNK', 'SAG': 'SAĞ', 'KLM': 'KLM',
     'AOF_HADIS': 'HADİS', 'AOF_ITAR': 'İS.TAR', 'AOF_AHLAK': 'AHLÂK',
-    'AOF_IBADET': 'İBADET', 'AOF_INANC': 'İNANÇ',
+    'AOF_IBADET': 'İBADET', 'AOF_INANC': 'İNANÇ', 'AOF_ARAPCA': 'ARAPÇA',
     'TYT_TURKCE': 'TYT TÜRKÇE', 'TYT_MAT': 'TYT MAT', 'TYT_TAR': 'TYT TAR',
     'TYT_COG': 'TYT COĞ', 'TYT_FEL': 'TYT FEL', 'TYT_DIN': 'TYT DİN',
     'TYT_FIZ': 'TYT FİZ', 'TYT_KIM': 'TYT KİM', 'TYT_BIO': 'TYT BİY',
     'AYT_MAT': 'AYT MAT', 'AYT_FIZ': 'AYT FİZ', 'AYT_KIM': 'AYT KİM',
     'AYT_BIO': 'AYT BİY', 'AYT_EDB': 'AYT EDB', 'AYT_TAR1': 'AYT TAR-1',
     'AYT_COG1': 'AYT COĞ-1', 'AYT_TAR2': 'AYT TAR-2', 'AYT_COG2': 'AYT COĞ-2',
-    'AYT_FEL': 'AYT FEL', 'AYT_DIN': 'AYT DİN', 'YDT_ING': 'YDT İNG'
+    'AYT_FEL': 'AYT FEL', 'AYT_DIN': 'AYT DİN', 'YDT_ING': 'YDT İNG',
+    'ILM_TEMIZLIK': 'TEMİZLİK', 'ILM_NAMAZ': 'NAMAZ', 'ILM_CUMA': 'CUMA',
+    'ILM_CENAZE': 'CENAZE', 'ILM_ORUC': 'ORUÇ', 'ILM_ZEKAT': 'ZEKÂT',
+    'ILM_HAC': 'HAC', 'ILM_HAC_FIKHI': 'HAC FIKHI', 'ILM_KURBAN': 'KURBAN',
+    'ILM_DENEME': 'DENEME', 'GIR_TEMEL': 'GİR'
   };
 
   const prefix = prefixMap[subjId] || subjId;

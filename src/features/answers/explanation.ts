@@ -1,5 +1,6 @@
 import { escapeHtml } from '../../shared/escape.ts';
-import { state } from '../../app/state.ts';
+import { onStateChange, state } from '../../app/state.ts';
+import { getActiveQuestionCard, getCardChoiceRow } from '../booklet/card-query.ts';
 
 let activeExplanationEl: HTMLElement | null = null;
 let activeExplanationTimeout: ReturnType<typeof setTimeout> | null = null;
@@ -16,17 +17,19 @@ export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement 
     || state.allData.find(item => item.id === qid);
   if (!q || !q.dogru_nedeni) return;
 
+  const activeCard = getActiveQuestionCard(qid, targetEl);
+
   // Hedef element: Şık satırı verilmişse içindeki optik harf dairesini (.optical-bubble) seç
   let el: HTMLElement | null = targetEl || null;
   if (el && !el.classList.contains('optical-bubble')) {
     el = el.querySelector<HTMLElement>('.optical-bubble') || el;
   }
-  if (!el && q.dogru_cevap) {
-    el = document.querySelector<HTMLElement>(`#opt_${qid}_${q.dogru_cevap} .optical-bubble`)
-      || document.querySelector<HTMLElement>(`#opt_${qid}_${q.dogru_cevap}`);
+  if (!el && q.dogru_cevap && activeCard) {
+    const correctRow = getCardChoiceRow(activeCard, q.dogru_cevap);
+    el = correctRow?.querySelector<HTMLElement>('.optical-bubble') || correctRow;
   }
   if (!el) {
-    el = document.querySelector<HTMLElement>(`#bq_${qid}`);
+    el = activeCard;
   }
   if (!el) return;
 
@@ -57,7 +60,7 @@ export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement 
 
   // Yatay Kapsayıcı Sınırları (Sütun ve Soru Kartı Düzeyinde Taşma Önleme):
   const questionCard = el.closest<HTMLElement>('.booklet-question');
-  const pageContainer = el.closest<HTMLElement>('.booklet-page') || document.body;
+  const pageContainer = el.closest<HTMLElement>('.booklet-page, .board-question-stage') || document.body;
 
   // Sınır olarak soru kartı veya sayfa sütun genişliğini baz al
   const containerRect = questionCard
@@ -124,10 +127,13 @@ if (typeof document !== 'undefined') {
       activeExplanationEl &&
       !target.closest('.answer-explanation-bubble') &&
       !target.closest('.optical-choice-row') &&
-      !target.closest('[id^="btnEye_"]') &&
+      !target.closest('[data-action="toggle-answer-reveal"]') &&
       !target.closest('.btn-conf-opt')
     ) {
       hideAnswerExplanationBubble();
     }
   });
 }
+
+onStateChange('board:render-question', () => hideAnswerExplanationBubble(), -5);
+onStateChange('booklet:ensure-question', () => hideAnswerExplanationBubble(), -5);

@@ -3,6 +3,7 @@ import { loadAllSubjectData } from '../../data/questions.js';
 import { SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
 import { trNormalize } from '../../shared/search.ts';
 import { escapeHtml } from '../../shared/escape.ts';
+import { getBookletCard } from '../booklet/card-query.ts';
 
 export function highlightKeyword(text, term) {
   if (!text || !term) return escapeHtml(text || '');
@@ -232,9 +233,9 @@ export function loadSingleSearchQuestion(qid) {
   notifyStateChange('booklet:updated', { targetQid: qid });
 
   setTimeout(() => {
-    const card = document.getElementById(`bq_${qid}`);
+    notifyStateChange('booklet:ensure-question', { qid, scroll: true });
+    const card = getBookletCard(qid);
     if (card) {
-      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       card.style.outline = '3px solid var(--brand-accent)';
       setTimeout(() => { card.style.outline = 'none'; }, 2500);
     }

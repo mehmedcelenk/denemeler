@@ -143,13 +143,19 @@ class EvrenClient:
             "model": model,
             "image": f"data:{mime};base64,{b64_img}",
         }
-        for attempt in range(3):
-            resp = requests.post(
-                f"{self.base_url}/ocr",
-                headers=self._headers(),
-                data=json.dumps(payload).encode("utf-8"),
-                timeout=self.timeout,
-            )
+        for attempt in range(5):
+            try:
+                resp = requests.post(
+                    f"{self.base_url}/ocr",
+                    headers=self._headers(),
+                    data=json.dumps(payload).encode("utf-8"),
+                    timeout=self.timeout,
+                )
+            except (requests.exceptions.Timeout, requests.exceptions.RequestException):
+                if attempt == 4:
+                    raise
+                time.sleep(3.0 * (attempt + 1))
+                continue
             self._record_headers(resp)
             if resp.status_code == 429:
                 wait_sec = int(resp.headers.get("Retry-After", "10"))
@@ -166,7 +172,7 @@ class EvrenClient:
                     or json.dumps(data, ensure_ascii=False)
                 ).strip()
             return str(data).strip()
-        raise RuntimeError("EVREN /v1/ocr hız sınırı nedeniyle tamamlanamadı.")
+        raise RuntimeError("EVREN /v1/ocr hız sınırı veya bağlantı hatası nedeniyle tamamlanamadı.")
 
     def chat_completion(
         self,

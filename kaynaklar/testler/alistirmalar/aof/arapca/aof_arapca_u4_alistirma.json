@@ -57,10 +57,12 @@
     "secenekler": {
       "A": "i. gâib ii. muhâtab iii. muhataba iv. mutekelim v. gâibe",
       "B": "i. mutekelim ii. muhâtab iii. muhataba iv. gâibe v. gâib",
-      "C": "i. mutekelim ii. muhataba iii. muhâtab iv. gâib v. gâibe"
+      "C": "i. mutekelim ii. muhataba iii. muhâtab iv. gâib v. gâibe",
+      "D": "i. gâibe ii. gâib iii. muhataba iv. muhâtab v. mutekelim",
+      "E": "i. gâib ii. gâibe iii. muhâtab iv. muhataba v. mutekelim"
     },
     "ans": "E",
-    "solution": ""
+    "solution": "Doğru cevap E şıkkıdır."
   },
   {
     "q_num": 6,

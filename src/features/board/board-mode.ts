@@ -1,8 +1,7 @@
-import { state, notifyStateChange } from '../../app/state.ts';
+import { state, store, notifyStateChange } from '../../app/state.ts';
 import { updateCanvasTransform, renderBoardQuestion } from './board-view.ts';
 import { setBookletCanvasScale } from '../appearance/preferences.ts';
 
-let activeBoardQuestionId: number | null = null;
 let panX = 0;
 let panY = 0;
 let pinchStartDist = 0;
@@ -27,15 +26,15 @@ export function openBoardFocusMode(questionId: number, event?: Event): void {
   if (!overlay) return;
 
   // Tahta bu soru için zaten açıksa buton aç/kapa gibi çalışır (kazara çift tıklama koruması closeBoardFocusMode içinde)
-  if (overlay.style.display === 'flex' && activeBoardQuestionId === questionId) {
+  if (overlay.style.display === 'flex' && state.activeBoardQuestionId === questionId) {
     closeBoardFocusMode();
     return;
   }
 
   lastBoardOpenedTime = Date.now();
-  activeBoardQuestionId = questionId;
+  store.setActiveBoardQuestionId(questionId);
   resetBoardPan();
-  renderBoardQuestion(activeBoardQuestionId);
+  renderBoardQuestion(questionId);
 
   overlay.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -61,11 +60,11 @@ export function closeBoardFocusMode(): void {
   isDragging = false;
   isSpacePressed = false;
 
-  if (activeBoardQuestionId) {
-    const el = document.getElementById(`bq_${activeBoardQuestionId}`);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const closingQid = state.activeBoardQuestionId;
+  store.setActiveBoardQuestionId(null);
+  if (closingQid) {
+    notifyStateChange('booklet:ensure-question', { qid: closingQid, scroll: true });
   }
-  activeBoardQuestionId = null;
 }
 
 export function resetBoardPan(): void {
@@ -80,16 +79,18 @@ export function handleBoardOverlayClick(_event?: MouseEvent): void {
 
 export function navigateBoardQuestion(delta: number): void {
   const questions = state.bookletQuestions.length > 0 ? state.bookletQuestions : state.allData;
-  if (questions.length === 0 || !activeBoardQuestionId) return;
+  const currentQid = state.activeBoardQuestionId;
+  if (questions.length === 0 || !currentQid) return;
 
-  const currentIdx = questions.findIndex(q => q.id === activeBoardQuestionId);
+  const currentIdx = questions.findIndex(q => q.id === currentQid);
   if (currentIdx === -1) return;
 
   const nextIdx = currentIdx + delta;
   if (nextIdx >= 0 && nextIdx < questions.length) {
-    activeBoardQuestionId = questions[nextIdx].id;
+    const nextQid = questions[nextIdx].id;
+    store.setActiveBoardQuestionId(nextQid);
     resetBoardPan();
-    renderBoardQuestion(activeBoardQuestionId);
+    renderBoardQuestion(nextQid);
   }
 }
 
@@ -262,8 +263,8 @@ function handleBoardKeydown(e: KeyboardEvent): void {
     navigateBoardQuestion(-1);
   } else if (e.key === 'ArrowRight') {
     navigateBoardQuestion(1);
-  } else if (e.key.toLowerCase() === 'c' && activeBoardQuestionId) {
-    notifyStateChange('answer:reveal', { questionId: activeBoardQuestionId });
+  } else if (e.key.toLowerCase() === 'c' && state.activeBoardQuestionId) {
+    notifyStateChange('answer:reveal', { questionId: state.activeBoardQuestionId });
   }
 }
 

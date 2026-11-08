@@ -30,9 +30,9 @@ const englishCardHook: CardHook = {
     if (!isEnglishQuestion(q)) return '';
     const mealActive = isQuestionMealActive(q.id);
     const arabicButton = q.soru_ar
-      ? `<button class="btn-companion-icon btn-text-badge" id="btnTransAR_${q.id}" data-action="toggle-question-translation" data-lang="ar" data-qid="${q.id}" title="Soruyu Arapça'ya Çevir">AR</button>`
+      ? `<button class="btn-companion-icon btn-text-badge" data-action="toggle-question-translation" data-lang="ar" data-qid="${q.id}" title="Soruyu Arapça'ya Çevir">AR</button>`
       : '';
-    return `<button class="btn-companion-icon btn-text-badge ${mealActive ? 'active' : ''}" id="btnMeal_${q.id}" data-action="toggle-question-meal" data-qid="${q.id}" title="${mealActive ? 'Kelime Mealini Kapat' : 'Kelime Meali (Alt Çeviri) Aç/Kapat'}">ML</button><button class="btn-companion-icon btn-text-badge" id="btnTransTR_${q.id}" data-action="toggle-question-translation" data-lang="tr" data-qid="${q.id}" title="Soruyu Türkçe'ye Çevir">TR</button>${arabicButton}`;
+    return `<button class="btn-companion-icon btn-text-badge ${mealActive ? 'active' : ''}" data-action="toggle-question-meal" data-qid="${q.id}" title="${mealActive ? 'Kelime Mealini Kapat' : 'Kelime Meali (Alt Çeviri) Aç/Kapat'}">ML</button><button class="btn-companion-icon btn-text-badge" data-action="toggle-question-translation" data-lang="tr" data-qid="${q.id}" title="Soruyu Türkçe'ye Çevir">TR</button>${arabicButton}`;
   },
 };
 
@@ -41,6 +41,12 @@ export function initEnglish(): void {
   initialized = true;
   initEnglishActions();
   registerCardHook(englishCardHook);
-  onStateChange('print:before', () => applyInterlinearToBooklet(true));
-  onStateChange('print:after', () => applyInterlinearToBooklet(false));
+  onStateChange('print:before', (payload) => {
+    const p = (payload && typeof payload === 'object') ? payload as { interlinear?: boolean } : undefined;
+    if (p?.interlinear !== false) applyInterlinearToBooklet(true);
+  });
+  onStateChange('print:after', (payload) => {
+    const p = (payload && typeof payload === 'object') ? payload as { interlinear?: boolean } : undefined;
+    if (p?.interlinear !== false) applyInterlinearToBooklet(false);
+  });
 }

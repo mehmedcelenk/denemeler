@@ -27,12 +27,18 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
       <header class="welcome-header">
         <p class="welcome-bismillah" lang="ar" dir="rtl">بسم الله</p>
         <h1>CENKS</h1>
-        <div class="welcome-program-toggle" role="group" aria-label="Program seçimi">
-          <button type="button" data-action="welcome-set-program" data-program="AOIHL" aria-pressed="false">AOİHL</button>
-          <button type="button" data-action="welcome-set-program" data-program="AOF" aria-pressed="false">AÖF</button>
-          <button type="button" data-action="welcome-set-program" data-program="TYT" aria-pressed="false">TYT</button>
-          <button type="button" data-action="welcome-set-program" data-program="AYT" aria-pressed="false">AYT</button>
-          <button type="button" data-action="welcome-set-program" data-program="YDT" aria-pressed="false">YDT</button>
+        <div class="welcome-program-groups">
+          <div class="welcome-program-toggle" role="group" aria-label="Sınav programları">
+            <button type="button" data-action="welcome-set-program" data-program="AOIHL" aria-pressed="false">AOİHL</button>
+            <button type="button" data-action="welcome-set-program" data-program="AOF" aria-pressed="false">AÖF</button>
+            <button type="button" data-action="welcome-set-program" data-program="TYT" aria-pressed="false">TYT</button>
+            <button type="button" data-action="welcome-set-program" data-program="AYT" aria-pressed="false">AYT</button>
+            <button type="button" data-action="welcome-set-program" data-program="YDT" aria-pressed="false">YDT</button>
+          </div>
+          <div class="welcome-program-toggle welcome-program-toggle--secondary" role="group" aria-label="Tematik alanlar">
+            <button type="button" data-action="welcome-set-program" data-program="ILMIHAL" aria-pressed="false">İlmihal</button>
+            <button type="button" data-action="welcome-set-program" data-program="GIRISIMCILIK" aria-pressed="false">Girişimcilik</button>
+          </div>
         </div>
       </header>
 

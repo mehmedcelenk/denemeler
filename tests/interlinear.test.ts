@@ -79,7 +79,8 @@ test('isEnglishQuestion: ders adına göre İngilizceyi tespit eder', () => {
 
 test('renderCardHeader: İngilizce sorusunda ML (Meal) butonunu üretir', () => {
   const headerHtml = renderCardHeader(mockEngQuestion, 1, false);
-  assert.ok(headerHtml.includes('id="btnMeal_8881"'), 'ML butonu üretilmeli');
+  assert.ok(headerHtml.includes('data-action="toggle-question-meal"'), 'ML butonu üretilmeli');
+  assert.ok(headerHtml.includes('data-qid="8881"'), 'ML butonu soru kimliğini taşımalı');
   assert.ok(headerHtml.includes('ML</button>'), 'ML metni yer almalı');
 });
 

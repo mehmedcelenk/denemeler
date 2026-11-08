@@ -21,7 +21,7 @@ export interface AiExplanationEntry { readonly query: string; readonly reply: st
 export interface AppState {
   readonly allData: readonly Question[];
   readonly currentSubject: SubjectId | null;
-  readonly programMode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT';
+  readonly programMode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK';
   readonly selectedCourses: ReadonlySet<string>;
   readonly courseFilterMode: 'AND' | 'OR';
   readonly selectedTopicKeys: ReadonlySet<string>;
@@ -31,6 +31,9 @@ export interface AppState {
   readonly contentViewMode: ContentViewMode;
   readonly activeSearchFilter: string;
   readonly userMarkedChoices: Readonly<Record<number, Choice>>;
+  readonly pendingMarkedChoices: Readonly<Record<number, Choice>>;
+  readonly activeBoardQuestionId: number | null;
+  readonly activeMealQuestionIds: ReadonlySet<number>;
   readonly revealedAnswers: ReadonlySet<number>;
   readonly revealedHints: ReadonlySet<number>;
   readonly currentColumnCount: number;
@@ -53,7 +56,7 @@ export interface AppState {
 export interface MutableAppState {
   allData: Question[];
   currentSubject: SubjectId | null;
-  programMode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT';
+  programMode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK';
   selectedCourses: Set<string>;
   courseFilterMode: 'AND' | 'OR';
   selectedTopicKeys: Set<string>;
@@ -63,6 +66,9 @@ export interface MutableAppState {
   contentViewMode: ContentViewMode;
   activeSearchFilter: string;
   userMarkedChoices: Record<number, Choice>;
+  pendingMarkedChoices: Record<number, Choice>;
+  activeBoardQuestionId: number | null;
+  activeMealQuestionIds: Set<number>;
   revealedAnswers: Set<number>;
   revealedHints: Set<number>;
   currentColumnCount: number;

@@ -6,14 +6,16 @@ test('Welcome portal 5 program butonunu içerir ve TYT/AYT/YDT akışını doğr
 
   await expect(page.locator('#welcomePortal')).toBeVisible();
 
-  // 5 program seçeneğinin varlığını doğrula
+  // 7 program seçeneğinin varlığını doğrula (Sınavlar: 5, Tematik: 2)
   const programs = page.locator('#welcomePortal [data-action="welcome-set-program"]');
-  await expect(programs).toHaveCount(5);
+  await expect(programs).toHaveCount(7);
   await expect(page.locator('#welcomePortal [data-program="AOIHL"]')).toHaveText('AOİHL');
   await expect(page.locator('#welcomePortal [data-program="AOF"]')).toHaveText('AÖF');
   await expect(page.locator('#welcomePortal [data-program="TYT"]')).toHaveText('TYT');
   await expect(page.locator('#welcomePortal [data-program="AYT"]')).toHaveText('AYT');
   await expect(page.locator('#welcomePortal [data-program="YDT"]')).toHaveText('YDT');
+  await expect(page.locator('#welcomePortal [data-program="ILMIHAL"]')).toHaveText('İlmihal');
+  await expect(page.locator('#welcomePortal [data-program="GIRISIMCILIK"]')).toHaveText('Girişimcilik');
 
   // TYT Seçimi
   await page.locator('#welcomePortal [data-program="TYT"]').click();

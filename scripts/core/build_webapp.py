@@ -129,7 +129,7 @@ def main():
                     for item in json.load(f_sub):
                         if 'id' in item:
                             extras = {
-                                k: item[k] for k in ['soru', 'soru_tr', 'soru_ar', 'soru_xray', 'dogru_nedeni'] if k in item
+                                k: item[k] for k in ['soru', 'soru_tr', 'soru_ar', 'soru_xray', 'secenekler_xray', 'dogru_nedeni'] if k in item
                             }
                             if extras:
                                 existing_extra_fields.setdefault(item['id'], {}).update(extras)
@@ -239,6 +239,9 @@ def main():
             from aof_parser import extract_all_aof_courses
         aof_data = extract_all_aof_courses()
         for aof_code, aof_questions in aof_data.items():
+            for q in aof_questions:
+                if q['id'] in existing_extra_fields:
+                    q.update(existing_extra_fields[q['id']])
             data_by_subject[aof_code] = aof_questions
     except Exception as e:
         print("Warning: Failed to extract AÖF questions:", e)
@@ -253,6 +256,20 @@ def main():
             'questionCount': len(subject_questions),
             'courseCount': len({q['ders'] for q in subject_questions})
         }
+
+    # data/subjects içindeki diğer mevcut dersleri de (YKS vb.) manifeste dahil et
+    for f in sorted(data_dir.glob("*.json")):
+        sid = f.stem
+        if sid not in subject_manifest:
+            try:
+                qs = json.loads(f.read_text(encoding="utf-8"))
+                if isinstance(qs, list) and qs:
+                    subject_manifest[sid] = {
+                        'questionCount': len(qs),
+                        'courseCount': len({q['ders'] for q in qs if isinstance(q, dict) and 'ders' in q}) or 1
+                    }
+            except Exception:
+                pass
 
     generated_dir = Path('src/data/generated')
     generated_dir.mkdir(parents=True, exist_ok=True)

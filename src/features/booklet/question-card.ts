@@ -1,4 +1,4 @@
-import { state, onStateChange } from '../../app/state.ts';
+import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { getShortCourseName } from '../../data/subjects.js';
 import { getQuestionDifficulty } from '../../shared/difficulty.ts';
 import { isEnglishQuestion } from '../../shared/english-utils.ts';
@@ -32,20 +32,20 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
   const hasGrammarXray = Boolean(q.soru_xray && (q.soru_xray.includes('xray-vag') || q.soru_xray.includes('xray-junction') || q.soru_xray.includes('pos-word') || q.soru_xray.includes('sound-')));
   const showGrammarToggles = isTde || hasGrammarXray;
   const grammarTogglesHtml = showGrammarToggles ? `
-    <button class="btn-companion-icon btn-text-badge btn-xray-syntax active" id="btnXraySyntax_${q.id}" data-action="toggle-xray-syntax" data-qid="${q.id}" title="Özne / Yüklem (Cümle Ögeleri) Aç/Kapat">ÖZ</button>
-    <button class="btn-companion-icon btn-text-badge btn-xray-pos active" id="btnXrayPos_${q.id}" data-action="toggle-xray-pos" data-qid="${q.id}" title="Sıfat / Zamir / Zarf (Sözcük Türleri) Aç/Kapat">SF</button>
-    <button class="btn-companion-icon btn-text-badge btn-xray-sound active" id="btnXraySound_${q.id}" data-action="toggle-xray-sound" data-qid="${q.id}" title="Ses Olayları (Düşme, Benzeşme, Yumuşama) Aç/Kapat">ÜN</button>
+    <button class="btn-companion-icon btn-text-badge btn-xray-syntax active" data-action="toggle-xray-syntax" data-qid="${q.id}" title="Özne / Yüklem (Cümle Ögeleri) Aç/Kapat">ÖZ</button>
+    <button class="btn-companion-icon btn-text-badge btn-xray-pos active" data-action="toggle-xray-pos" data-qid="${q.id}" title="Sıfat / Zamir / Zarf (Sözcük Türleri) Aç/Kapat">SF</button>
+    <button class="btn-companion-icon btn-text-badge btn-xray-sound active" data-action="toggle-xray-sound" data-qid="${q.id}" title="Ses Olayları (Düşme, Benzeşme, Yumuşama) Aç/Kapat">ÜN</button>
   ` : '';
 
   const isEliminatedWrong = Boolean(state.eliminatedWrongChoices && state.eliminatedWrongChoices[q.id]);
   const eliminateWrongBtnHtml = isPassive ? '' : `
-    <button class="btn-companion-icon btn-eliminate-wrong ${isEliminatedWrong ? 'active' : ''}" id="btnEliminateWrong_${q.id}" data-action="eliminate-wrong-choice" data-qid="${q.id}" title="${isEliminatedWrong ? 'Elenen Yanlış Şıkkı Geri Al' : 'Bir Yanlış Şıkkı Ele'}">
+    <button class="btn-companion-icon btn-eliminate-wrong ${isEliminatedWrong ? 'active' : ''}" data-action="eliminate-wrong-choice" data-qid="${q.id}" title="${isEliminatedWrong ? 'Elenen Yanlış Şıkkı Geri Al' : 'Bir Yanlış Şıkkı Ele'}">
       ${svgEliminate}
     </button>
   `;
 
   const boardBtnHtml = `
-    <button class="btn-companion-icon btn-board-mode" id="btnBoard_${q.id}" data-action="open-board-focus" data-qid="${q.id}" title="Akıllı Tahta Modu">
+    <button class="btn-companion-icon btn-board-mode" data-action="open-board-focus" data-qid="${q.id}" title="Akıllı Tahta Modu">
       ${svgBoard}
     </button>
   `;
@@ -53,13 +53,13 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
   const isStarred = Boolean(state.starredQuestionIds && state.starredQuestionIds.has(q.id));
   const saveButtonLabel = isStarred ? 'Kaydı Kaldır' : 'Soruyu Kaydet';
   const starBtnHtml = `
-    <button class="btn-companion-icon btn-star-action ${isStarred ? 'is-starred' : ''}" id="btnStar_${q.id}" data-action="toggle-star-question" data-qid="${q.id}" title="${saveButtonLabel}" aria-label="${saveButtonLabel}">
+    <button class="btn-companion-icon btn-star-action ${isStarred ? 'is-starred' : ''}" data-action="toggle-star-question" data-qid="${q.id}" title="${saveButtonLabel}" aria-label="${saveButtonLabel}">
       ${svgBookmark}
     </button>
   `;
 
   const copyBtnHtml = `
-    <button class="btn-companion-icon btn-copy-question" id="btnCopy_${q.id}" data-action="copy-question-text" data-qid="${q.id}" title="Soruyu Kopyala">
+    <button class="btn-companion-icon btn-copy-question" data-action="copy-question-text" data-qid="${q.id}" title="Soruyu Kopyala">
       ${svgCopy}
     </button>
   `;
@@ -71,7 +71,7 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
   return `
     <div class="q-top-row">
       <div class="q-header-meta">
-        <span class="q-number" id="qnum_${q.id}">
+        <span class="q-number" data-role="qnum">
           ${globalIdx}.
         </span>
         ${soonBadge}
@@ -83,7 +83,7 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
         <span class="features-toggle-icon">${isExpanded ? '‹' : '›'}</span>
       </button>
       <div class="${isExpanded ? 'q-features-drawer is-expanded' : 'q-features-drawer'}">
-        ${toolbarExtraHtml}
+        <span class="q-toolbar-extras" data-role="toolbar-extras">${toolbarExtraHtml}</span>
         ${grammarTogglesHtml}
         ${eliminateWrongBtnHtml}
         ${starBtnHtml}
@@ -103,6 +103,10 @@ export function renderCardSourceTag(q: Question): string {
   }
   if (q.yil === 'AÖF Alıştırma Soruları') {
     const label = `${shortCourse} • ${q.donem || 'Alıştırma'}`;
+    return `<div class="q-source-tag" title="Sınav: ${escapeHtml(label)}">${escapeHtml(label)}</div>`;
+  }
+  if (state.programMode === 'ILMIHAL' || (q.sinav_adi && q.sinav_adi.includes('İlmihal'))) {
+    const label = `${shortCourse} • Soru ${q.soru_no || ''}`;
     return `<div class="q-source-tag" title="Sınav: ${escapeHtml(label)}">${escapeHtml(label)}</div>`;
   }
   const isYks = ['TYT', 'AYT', 'YDT'].includes(state.programMode) || ['TYT', 'AYT', 'YDT'].includes(q.sinav_adi || '');
@@ -143,6 +147,7 @@ export function renderSoonBanner(isPassive: boolean): string {
 /** Soru için optik şık kartlarını ve durum sınıflarını üretir. */
 export function renderCardOptions(q: Question, isPassive: boolean): string {
   const userMark = state.userMarkedChoices[q.id];
+  const pendingMark = !userMark ? state.pendingMarkedChoices[q.id] : undefined;
   const isRevealed = state.revealedAnswers.has(q.id);
   const isMath = (state.currentSubject === 'MAT') || Boolean(q.ders && q.ders.includes('MATEMATİK'));
   const isRematchOrMistakes = (state.bookletFilterMode === 'incorrect' || (state.isLibraryMode && state.libraryTab === 'rematch'));
@@ -155,6 +160,7 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
   availableChoices.forEach(letter => {
     const optText = (q.secenekler && q.secenekler[letter]) || '';
     const isMarked = (userMark === letter);
+    const isPending = (pendingMark === letter);
     const isCorrect = (q.dogru_cevap === letter);
     const isUserCorrect = (userMark === q.dogru_cevap);
 
@@ -173,11 +179,13 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
       if (!isRematchOrMistakes) {
         rowClass += isUserCorrect ? ' marked-correct' : ' marked-incorrect';
       }
+    } else if (isPending) {
+      rowClass += ' marked';
     } else if (isRevealed && isCorrect) {
       rowClass += ' revealed-correct';
     }
 
-    const clickHandler = isPassive ? '' : `onclick="handleSelectOpticalBubble(${q.id}, '${letter}')"`;
+    const actionAttrs = isPassive ? '' : `data-action="select-optical-choice" data-qid="${q.id}" data-letter="${letter}"`;
     const optXray = q.secenekler_xray?.[letter];
     const baseOptContent = isEnglishQuestion(q)
       ? optText
@@ -187,7 +195,7 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
       : applyStemHooks(q, baseOptContent);
 
     optHtml += `
-      <div class="${rowClass}" id="opt_${q.id}_${letter}" data-letter="${letter}" ${clickHandler}>
+      <div class="${rowClass}" data-letter="${letter}" ${actionAttrs}>
         <div class="optical-bubble" data-qid="${q.id}" data-letter="${letter}" title="Basılı tut: Şıkkı ele / geri al">${letter}</div>
         <div class="choice-text-content">${renderedOptContent}</div>
       </div>
@@ -198,7 +206,7 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
 }
 
 /** Soru kartının AI soru kutusu ve cevap anahtarı afişlerini üretir. */
-export function renderCardBanners(q: Question, isPassive: boolean): string {
+export function renderCardBanners(q: Question, _isPassive: boolean): string {
   const userMark = state.userMarkedChoices[q.id];
   const isRevealed = state.revealedAnswers.has(q.id);
   const isRematchOrMistakes = (state.bookletFilterMode === 'incorrect' || (state.isLibraryMode && state.libraryTab === 'rematch'));
@@ -210,7 +218,7 @@ export function renderCardBanners(q: Question, isPassive: boolean): string {
     : escapeHtml(q.alt_konu || q.ana_konu || '');
 
   return `
-    <div class="single-answer-banner" id="banner_${q.id}" style="display:${bannerDisplay};">
+    <div class="single-answer-banner" data-role="answer-banner" style="display:${bannerDisplay};">
       <span>Doğru Cevap: <strong style="color:var(--brand-accent); font-size:13px;">${q.dogru_cevap}</strong></span>
       <span style="opacity:0.85; font-size:10.5px;">${topicLabel}</span>
     </div>
@@ -225,16 +233,18 @@ export function renderQuestionCardHtml(q: Question, globalIdx: number): string {
   if (stemHtml.includes('class="interlinear-word"')) {
     questionClass += ' has-interlinear';
   }
-  const userMark = state.userMarkedChoices[q.id] || '';
+  const userMark = state.userMarkedChoices[q.id] || state.pendingMarkedChoices[q.id] || '';
   const isRevealed = state.revealedAnswers.has(q.id);
-  const statusAttr = userMark ? `data-user-status="${userMark === q.dogru_cevap ? 'correct' : 'incorrect'}"` : '';
+  const statusAttr = state.userMarkedChoices[q.id]
+    ? `data-user-status="${state.userMarkedChoices[q.id] === q.dogru_cevap ? 'correct' : 'incorrect'}"`
+    : '';
   const openedAt = Date.now();
 
   return `
-    <div class="${questionClass}" id="bq_${q.id}" data-qid="${q.id}" data-opened-at="${openedAt}" data-correct="${q.dogru_cevap}" data-user-mark="${userMark}" data-revealed="${isRevealed ? 'true' : 'false'}" ${statusAttr}>
+    <div class="${questionClass}" data-qid="${q.id}" data-opened-at="${openedAt}" data-correct="${q.dogru_cevap}" data-user-mark="${userMark}" data-revealed="${isRevealed ? 'true' : 'false'}" ${statusAttr}>
       ${renderCardHeader(q, globalIdx, isPassive)}
       ${renderSoonBanner(isPassive)}
-      <div class="q-stem-text" id="stem_${q.id}">${stemHtml}</div>
+      <div class="q-stem-text" data-role="stem">${stemHtml}</div>
       <div class="q-optical-options">
         ${renderCardOptions(q, isPassive)}
       </div>
@@ -251,5 +261,18 @@ onStateChange('board:render-question', (payload) => {
     const q = payload.q as Question;
     const currentNum = (payload as { currentNum?: number }).currentNum || 1;
     stage.innerHTML = renderQuestionCardHtml(q, currentNum);
+    const cards = Array.from(stage.querySelectorAll<HTMLElement>('.booklet-question'));
+    if (cards.length > 0) notifyStateChange('booklet:rendered', { cards });
   }
+});
+
+onStateChange('booklet:refresh-hooks', () => {
+  if (typeof document === 'undefined') return;
+  document.querySelectorAll<HTMLElement>('.booklet-question[data-qid]').forEach(card => {
+    const qid = Number(card.dataset.qid);
+    const slot = card.querySelector<HTMLElement>('[data-role="toolbar-extras"]');
+    if (!slot || Number.isNaN(qid)) return;
+    const q = state.bookletQuestions.find(item => item.id === qid) || state.allData.find(item => item.id === qid);
+    if (q) slot.innerHTML = renderToolbarExtraHooks(q);
+  });
 });

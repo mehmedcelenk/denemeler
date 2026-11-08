@@ -1,202 +1,302 @@
 [
   {
     "id": "arapca_munfasil_zamir",
-    "term": "Munfasıl Zamir",
-    "subject": "AOF_ARAPCA1",
+    "term": "Munfasıl Zamir (Ayrık Özne Zamiri)",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
     "unite_no": 1,
-    "tanim": "Tek başına bağımsız olarak yazılabilen ve cümlede merfû (özne) konumunda bulunan ayrık kişi zamirleridir.",
-    "sifre": "Ayrık özne zamiri = Munfasıl zamir (Hüve, hiye, ente, enti, ene, nahnu).",
-    "pattern": "\\bmunfasıl\\b|\\bayrık özne zamir\\b|\\bmerfû munfasıl\\b"
+    "tanim": "Kelimeye bitişmeyen, tek başına bağımsız yazılabilen ve cümlede merfû (özne) konumunda bulunan şahıs zamirleridir: Hüve, hiye, hümâ, hüm, hünne, ente, enti, entümâ, entüm, entünne, ene, nahnu.",
+    "sifre": "Bağımsız yazılan merfû özne zamirleri (Hüve, hiye, ente, enti, ene, nahnu).",
+    "pattern": "\\bmunfasıl zamir\\w*|\\bayrık özne zamir\\w*|\\bmunfasil zamir\\w*"
   },
   {
-    "id": "arapca_muttasil_zamir",
-    "term": "Muttasıl Zamir",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 2,
-    "tanim": "Tek başına kullanılamayan, fiil veya isimlerin sonuna bitişen, nesne veya tamlayan olan bitişik zamirlerdir.",
-    "sifre": "İsme bitişirse iyelik (tamlayan), fiile bitişirse nesne (mefûl) = Muttasıl zamir.",
-    "pattern": "\\bmuttasıl\\b|\\bbitişik zamir\\b|\\bmansûb muttasıl\\b"
-  },
-  {
-    "id": "arapca_merfu",
-    "term": "Merfû",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 3,
-    "tanim": "Cümlede özne (fâil veya mübtedâ/haber) konumunda olan ve ref alâmeti (damme, elif, vâv) taşıyan kelimedir.",
-    "sifre": "Özne konumu + Ref alâmeti (ötre / damme / elif / vâv) = Merfû.",
-    "pattern": "\\bmerfû\\b|\\bmerfu\\b|\\bref alâmeti\\b"
-  },
-  {
-    "id": "arapca_mansub",
-    "term": "Mansûb",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 3,
-    "tanim": "Cümlede nesne (mef‘ûl) veya hal konumunda olan ve nasb alâmeti (fetha, ye, kesra) taşıyan kelimedir.",
-    "sifre": "Nesne konumu + Nasb alâmeti (üstün / fetha / ye) = Mansûb.",
-    "pattern": "\\bmansûb\\b|\\bmansub\\b|\\bnasb alâmeti\\b"
-  },
-  {
-    "id": "arapca_mecrur",
-    "term": "Mecrûr",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 3,
-    "tanim": "Harf-i cerden sonra gelen veya isim tamlamasında tamlayan olan ve cer alâmeti (kesra, ye) taşıyan kelimedir.",
-    "sifre": "Harf-i cerden sonra / tamlayan + Cer alâmeti (esre / kesra / ye) = Mecrûr.",
-    "pattern": "\\bmecrûr\\b|\\bmecrur\\b|\\bcer alâmeti\\b"
-  },
-  {
-    "id": "arapca_fail",
-    "term": "Fâ‘il",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 4,
-    "tanim": "Fiil cümlesinde fiilden sonra gelen, eylemi gerçekleştiren ve daima merfû olan öznedir.",
-    "sifre": "Fiilden sonra gelen merfû özne = Fâil. Asla fiilden önce gelmez.",
-    "pattern": "\\bfâ‘il\\b|\\bfâil\\b|\\bfail\\b"
-  },
-  {
-    "id": "arapca_meful",
-    "term": "Mef‘ûl (Mef‘ûlun Bih)",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 4,
-    "tanim": "Fiil cümlesinde eylemden etkilenen ve daima mansûb halde bulunan düz tümleç/nesnedir.",
-    "sifre": "Fiil cümlesindeki mansûb nesne = Mefûl.",
-    "pattern": "\\bmef‘ûl\\b|\\bmefûl\\b|\\bmef‘ûlun bih\\b|\\bmeful\\b"
-  },
-  {
-    "id": "arapca_mubteda",
-    "term": "Mübtedâ",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 5,
-    "tanim": "İsim cümlesinin başında yer alan, hakkında bilgi verilen ve daima merfû olan ana öznedir.",
-    "sifre": "İsim cümlesinin başındaki merfû özne = Mübtedâ (Genellikle marife/belirli).",
-    "pattern": "\\bmübtedâ\\b|\\bmübteda\\b|\\bmubteda\\b"
-  },
-  {
-    "id": "arapca_haber",
-    "term": "Haber",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 5,
-    "tanim": "İsim cümlesinde mübtedâyı tamamlayan, onun durumunu veya hükmünü bildiren ve merfû olan ögedir.",
-    "sifre": "Mübtedânın hükmünü bildiren merfû öge = Haber (Genellikle nekra/belirsiz).",
-    "pattern": "\\bhaber\\b|\\bhaberi\\b"
-  },
-  {
-    "id": "arapca_irab",
-    "term": "İ‘râb",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 3,
-    "tanim": "Kelimelerin cümle içindeki görevlerine göre son harflerinin hareke veya harf değiştirmesi olgusudur.",
-    "sifre": "Cümledeki göreve göre son hareke/harf değişimi = İ‘râb.",
-    "pattern": "\\bi‘râb\\b|\\bi‘rab\\b|\\birab\\b|\\birâb\\b"
-  },
-  {
-    "id": "arapca_mazi",
-    "term": "Mâzî Fiil",
-    "subject": "AOF_ARAPCA1",
+    "id": "arapca_muzekker_eril",
+    "term": "Müzekker (Eril İsim)",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
     "unite_no": 1,
-    "tanim": "Geçmişte yapılmış ve tamamlanmış eylemleri bildiren di’li geçmiş zaman kipi fiilidir.",
-    "sifre": "Geçmiş zaman = Mâzî fiil (Ketebe = yazdı).",
-    "pattern": "\\bmâzî\\b|\\bmazi fiil\\b|\\bmâzî fiil\\b"
+    "tanim": "Arapçada erkek varlıklara işaret eden veya yapısında dişillik (müenneslik) alâmeti taşımayan isimlerdir (Örn: racul, tâlib, kitâb, kalb).",
+    "sifre": "Erkek şahıslara veya müenneslik eki taşımayan kelimelere verilen ad.",
+    "pattern": "\\bmüzekker\\b|\\bmuzekker\\b|\\beril isim\\w*"
   },
   {
-    "id": "arapca_muzari",
-    "term": "Muzâri Fiil",
-    "subject": "AOF_ARAPCA1",
+    "id": "arapca_muennes_disil",
+    "term": "Müennes (Dişil İsim)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 1,
+    "tanim": "Arapçada dişi varlıklara işaret eden veya bünyesinde dişillik alâmeti (tâ-i merbûta: ة, elif-i memdûde: ء veya elif-i maksûra: ى) taşıyan isimlerdir.",
+    "sifre": "Dişil varlıklar veya sonunda tâ-i merbûta (ة) gibi dişillik alameti taşıyan kelimeler.",
+    "pattern": "\\bmüennes\\b|\\bmuennes\\b|\\bdişil isim\\w*"
+  },
+  {
+    "id": "arapca_semai_muennes",
+    "term": "Semâî Müennes",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 1,
+    "tanim": "Görünüşte herhangi bir dişillik eki (tâ-i merbûta) taşımadığı halde Araplardan işitildiği üzere dişil kabul edilen isimlerdir (Örn: şems/güneş, nefs, harb/savaş, dâr/ev, arz/yer, çift organlar: ayn/göz, yed/el, ricl/ayak).",
+    "sifre": "Ek almadığı halde Araplardan işitilerek dişil sayılan isimler (şems, harb, arz, çift organlar).",
+    "pattern": "\\bsemâî müennes\\b|\\bsemai muennes\\b|\\bsemai müennes\\b"
+  },
+  {
+    "id": "arapca_tai_merbuta",
+    "term": "Tâ-i Merbûta (Yuvarlak Te)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 1,
+    "tanim": "İsimlerin sonuna gelerek o kelimeyi dişil (müennes) yapan yuvarlak 'ة' harfidir. Durulduğunda 'he' (h), geçildiğinde 'te' (t) olarak seslendirilir.",
+    "sifre": "Kelimeyi dişil yapan yuvarlak 'ة' harfi.",
+    "pattern": "\\btâ-i merbûta\\b|\\btai merbuta\\b|\\byuvarlak te\\b"
+  },
+  {
+    "id": "arapca_mutekellim",
+    "term": "Mütekellim (1. Şahıs Konuşan)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 1,
+    "tanim": "Arapçada söz söyleyen birinci şahıstır (Ene: Ben, Nahnu: Biz). Mütekellim zamirlerinde erkeklik ve dişilik ayrımı yoktur; hem eril hem dişil için ortaktır.",
+    "sifre": "Konuşan 1. şahıs (Ene/Nahnu); cinsiyet ayrımı olmaksızın ortaktır.",
+    "pattern": "\\bmütekellim\\b|\\bmutekellim\\b|\\bbirinci şahıs zamir\\w*"
+  },
+  {
+    "id": "arapca_aksami_seba",
+    "term": "Aksâm-ı Seb‘a (Yedi Fiil Grubu)",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
     "unite_no": 2,
-    "tanim": "Şimdiki veya geniş zamanda yapılan eylemleri bildiren, başına muzâraat harfi alan fiildir.",
-    "sifre": "Şimdiki / geniş zaman = Muzâri fiil (Yektübü = yazıyor/yazar).",
-    "pattern": "\\bmuzâri\\b|\\bmuzari\\b|\\bmuzâri fiil\\b"
-  },
-  {
-    "id": "arapca_harfi_cer",
-    "term": "Harf-i Cer",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 5,
-    "tanim": "Sadece isimlerin önüne gelerek o ismi mecrûr yapan ve durum (hal) anlamı katan edatlardır.",
-    "sifre": "İsmi mecrûr yapan edat = Harf-i cer (min, ilâ, ‘an, ‘alâ, fî, bi, li, ke).",
-    "pattern": "\\bharf-i cer\\b|\\bharfi cer\\b|\\bharficer\\b"
-  },
-  {
-    "id": "arapca_sulasi",
-    "term": "Sülâsî Fiil",
-    "subject": "AOF_ARAPCA1",
-    "ders": "ARAPÇA I",
-    "unite_no": 2,
-    "tanim": "Arapçada üç asıl harften oluşan kök fiillerdir (Aksâm-ı seb‘a sınıflamasının temelidir).",
-    "sifre": "3 kök harfli fiil = Sülâsî fiil (Fâ, Ayn, Lâm).",
-    "pattern": "\\bsülâsî\\b|\\bsülasi\\b|\\bsülâsi\\b"
+    "tanim": "Sülâsî (üç harfli) fiillerin kök harflerinde illetli harf (vav, ya, elif) ve hemze/şedde bulunup bulunmamasına göre ayrıldığı 7 kategoridir: Sâlim, Mehmuz, Muda''af, Misâl, Ecvef, Nâkıs ve Lefîf.",
+    "sifre": "Sülâsî fiillerin yapılarına göre ayrıldığı 7 grup: Sâlim, Mehmûz, Muda''af, Misâl, Ecvef, Nâkıs, Lefîf.",
+    "pattern": "\\baksâm-ı seb‘a\\b|\\baksamı seba\\b|\\byedi grup fiil\\b"
   },
   {
     "id": "arapca_sahih_fiil",
     "term": "Sahîh Fiil",
-    "subject": "AOF_ARAPCA1",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
     "unite_no": 2,
-    "tanim": "Kök harflerinde illetli harf (vâv, yâ, elif) bulunmayan fiillerdir (Sâlim, Mudaaf, Mehmûz).",
-    "sifre": "İlletsiz kök = Sahîh fiil.",
-    "pattern": "\\bsahîh fiil\\b|\\bsahih fiil\\b|\\bsâlim fiil\\b|\\bmehmûz\\b|\\bmudâaf\\b"
+    "tanim": "Kök harflerinde illet harfi (Elif, Vâv, Yâ) bulunmayan fiillerdir. Üçe ayrılır: Sâlim (hemze ve şedde yok), Mehmûz (hemzeli), Muda''af (şeddeli/aynı iki harf).",
+    "sifre": "Kök harflerinde illetli harf bulunmayan fiiller (Sâlim, Mehmûz, Muda''af).",
+    "pattern": "\\bsahîh fiil\\w*|\\bsahih fiil\\w*"
+  },
+  {
+    "id": "arapca_salim_fiil",
+    "term": "Sâlim Fiil",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 2,
+    "tanim": "Kök harflerinde hem illet harfi, hem hemze, hem de şedde bulunmayan tertemiz sahîh fiillerdir (Örn: ketebe/yazdı, c规范ele/oturdu, fehime/anladı).",
+    "sifre": "İllet harfi, hemze ve şedde içermeyen saf fiil (ketebe, şeribe, fehime).",
+    "pattern": "\\bsâlim fiil\\w*|\\bsalim fiil\\w*"
+  },
+  {
+    "id": "arapca_mehmuz_fiil",
+    "term": "Mehmûz Fiil",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 2,
+    "tanim": "Kök harflerinden birinde hemze (ء) bulunan sahîh fiildir: Başında olursa mehmûzü'l-fâ (ekele), ortasında mehmûzü'l-ayn (seele), sonunda mehmûzü'l-lâm (karee).",
+    "sifre": "Kök harflerinden biri hemze olan fiil (ekele, seele, karee).",
+    "pattern": "\\bmehmûz fiil\\w*|\\bmehmuz fiil\\w*|\\bmehmûz\\b|\\bmehmuz\\b"
+  },
+  {
+    "id": "arapca_mudaaf_fiil",
+    "term": "Muda‘‘af Fiil",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 2,
+    "tanim": "İkinci ve üçüncü kök harfleri aynı cinsten olan ve şeddelenerek okunan fiillerdir (Örn: medde/uzattı, ferre/kaçtı, zanne/sandı).",
+    "sifre": "İkinci ve üçüncü harfi aynı olup şeddelenen fiil (medde, ferre, merre).",
+    "pattern": "\\bmuda‘‘af fiil\\w*|\\bmudaaf fiil\\w*|\\bmuzaaf fiil\\w*"
   },
   {
     "id": "arapca_mutell_fiil",
-    "term": "Mu‘tell Fiil",
-    "subject": "AOF_ARAPCA1",
+    "term": "Mu‘tell Fiil (Misâl, Ecvef, Nâkıs, Lefîf)",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
     "unite_no": 2,
-    "tanim": "Kök harflerinden en az biri illetli harf (vâv, yâ, elif) olan fiillerdir (Misâl, Ecvef, Nâkıs, Lefîf).",
-    "sifre": "İlletli kök = Mu‘tell fiil (Misâl, Ecvef, Nâkıs, Lefîf).",
-    "pattern": "\\bmu‘tell\\b|\\bmutell\\b|\\becvef\\b|\\bnâkıs\\b|\\bmisâl fiil\\b|\\blefîf\\b"
+    "tanim": "Kök harflerinde en az bir illet harfi (vav, ya) bulunan fiildir. Misâl: İlk harfi illetli (vecede). Ecvef: Orta harfi illetli (kāle, bâa). Nâkıs: Son harfi illetli (deâ, ramey). Lefîf: İki kök harfi illetli (veka, raveye).",
+    "sifre": "İlletli fiiller: İlk harf = Misâl; orta harf = Ecvef; son harf = Nâkıs; iki harf = Lefîf.",
+    "pattern": "\\bmu‘tell fiil\\w*|\\bmutell fiil\\w*|\\bmisâl fiil\\w*|\\bmisal fiil\\w*|\\becvef fiil\\w*|\\becvef\\b|\\bnâkıs fiil\\w*|\\bnakıs fiil\\w*|\\blefîf fiil\\w*|\\blefif fiil\\w*"
   },
   {
-    "id": "arapca_tesniye",
-    "term": "Tesniye (İkil)",
-    "subject": "AOF_ARAPCA1",
+    "id": "arapca_mazi_fiil",
+    "term": "Mâzî Fiil",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 2,
+    "tanim": "Geçmişte yapılmış ve tamamlanmış bir eylemi anlatan fiildir (di'li geçmiş zaman). 3. şahıs eril tekil (hüve) formu fiilin kök ve yalın halidir (Örn: ketebe).",
+    "sifre": "Geçmiş zaman fiili; yalın hali 3. şahıs eril tekildir (ketebe).",
+    "pattern": "\\bmâzî fiil\\w*|\\bmazi fiil\\w*|\\bmâzî\\b|\\bmazi\\b"
+  },
+  {
+    "id": "arapca_irab_kavrami",
+    "term": "İ‘râb",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
     "unite_no": 3,
-    "tanim": "İki varlığı gösteren, merfû halde -âni, mansûb ve mecrûr halde -eyni eki alan isim formudur.",
-    "sifre": "İkil = Tesniye (-âni merfû, -eyni mansûb/mecrûr). Ref alâmeti elif, nasb/cer alâmeti ye.",
-    "pattern": "\\btesniye\\b|\\bikil\\b"
+    "tanim": "Kelimelerin cümle içindeki gramer görevlerine (özne, nesne, tamlayan) göre son harflerinin aldığı hareke (damme, fetha, kesra) veya harf değişimleridir.",
+    "sifre": "Cümledeki göreve göre kelime sonundaki hareke veya harf değişimi.",
+    "pattern": "\\bi‘râb\\b|\\bi‘rab\\b|\\birâb\\b|\\birab\\b"
   },
   {
-    "id": "arapca_cemi",
-    "term": "Cem‘ (Çoğul)",
-    "subject": "AOF_ARAPCA1",
+    "id": "arapca_merfu_hali",
+    "term": "Merfû (Ref Durumu)",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
     "unite_no": 3,
-    "tanim": "İkiden fazla varlığı bildiren çoğul formudur (Cem‘-i Müzekker Sâlim, Cem‘-i Müennes Sâlim, Cem‘-i Teksîr).",
-    "sifre": "Çoğul = Cem‘ (-ûne/-îne: müzekker; -ât: müennes; teksîr: kırık/düzensiz çoğul).",
-    "pattern": "\\bcem‘\\b|\\bcemi\\b|\\bcem-i müzekker\\b|\\bcem-i müennes\\b|\\bteksîr\\b|\\bkırık çoğul\\b"
+    "tanim": "Cümlede özne (fâil veya mübtedâ/haber) konumunda bulunan kelimenin halidir. Asıl ref alâmeti damme (ötre); tesniyede elif (âni); cem-i müzekker sâlimde vâv'dır (ûne).",
+    "sifre": "Özne konumu ve ref hali; alâmetleri damme, elif (ikilde) ve vâv (çoğulda).",
+    "pattern": "\\bmerfû\\b|\\bmerfu\\b|\\bref alâmeti\\b|\\bref alameti\\b"
   },
   {
-    "id": "arapca_muennes",
-    "term": "Müennes",
-    "subject": "AOF_ARAPCA1",
+    "id": "arapca_mansub_hali",
+    "term": "Mansûb (Nasb Durumu)",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
-    "unite_no": 1,
-    "tanim": "Dişil varlıkları gösteren veya sonundaki kapalı te (tâ el-marbûta) vb. dişilik alameti taşıyan kelimelerdir.",
-    "sifre": "Dişil kelime = Müennes (Hakiki veya semâî).",
-    "pattern": "\\bmüennes\\b|\\bmuennes\\b|\\bsemâî müennes\\b"
+    "unite_no": 3,
+    "tanim": "Cümlede nesne (mef‘ûlun bih) veya hal konumunda bulunan kelimenin halidir. Asıl nasb alâmeti fetha (üstün); tesniye ve çoğulda yâ (eyni / îne); cem-i müennes sâlimde kesradır.",
+    "sifre": "Nesne konumu ve nasb hali; alâmetleri fetha, yâ ve cem-i müenneste kesra.",
+    "pattern": "\\bmansûb\\b|\\bmansub\\b|\\bnasb alâmeti\\b|\\bnasb alameti\\b"
   },
   {
-    "id": "arapca_muzekker",
-    "term": "Müzekker",
-    "subject": "AOF_ARAPCA1",
+    "id": "arapca_mecrur_hali",
+    "term": "Mecrûr (Cer Durumu)",
+    "subject": "AOF_ARAPCA",
     "ders": "ARAPÇA I",
-    "unite_no": 1,
-    "tanim": "Eril varlıkları gösteren ve dişilik alameti taşımayan kelimelerdir.",
-    "sifre": "Eril kelime = Müzekker.",
-    "pattern": "\\bmüzekker\\b|\\bmuzekker\\b"
+    "unite_no": 3,
+    "tanim": "Harf-i cerden sonra gelen (mecrûr isim) veya isim tamlamasında tamlayan (muzâfun ileyh) olan kelimenin halidir. Asıl cer alâmeti kesra (esre); ikil ve çoğullarda yâ'dır.",
+    "sifre": "Harf-i cerden sonra veya tamlayan durumundaki mecrûr kelime; alâmeti kesra veya yâ.",
+    "pattern": "\\bmecrûr\\b|\\bmecrur\\b|\\bcer alâmeti\\b|\\bcer alameti\\b"
+  },
+  {
+    "id": "arapca_tesniye_ikil",
+    "term": "Tesniye (İkil İsim)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 3,
+    "tanim": "İki varlığı gösteren isimdir. Tekil kelimenin sonuna ref halinde '-âni' (انِ), nasb ve cer halinde '-eyni' (يْنِ) eki getirilerek yapılır (Örn: kitâbâni / kitâbeyni).",
+    "sifre": "İki varlığı gösteren isim; refte '-âni', nasb ve cerde '-eyni' eki alır.",
+    "pattern": "\\btesniye\\b|\\bikil isim\\w*|\\bikil\\b"
+  },
+  {
+    "id": "arapca_cemi_turleri",
+    "term": "Cemi Türleri (Müzekker Sâlim, Müennes Sâlim, Mükesser)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 3,
+    "tanim": "Üç ve daha fazla varlığı gösterir. Cem-i Müzekker Sâlim: Sonu '-ûne/-îne' ile biten düzenli eril çoğul. Cem-i Müennes Sâlim: Sonu '-ât' ile biten düzenli dişil çoğul. Cem-i Mükesser (Kırık Çoğul): Tekil kelimenin iç yapısı kırılarak/bozularak yapılan kuralsız çoğuldur (kitâb -> kütüb, veled -> evlâd).",
+    "sifre": "Eril düzenli = Müzekker sâlim (-ûne/-îne); Dişil düzenli = Müennes sâlim (-ât); Kuralsız = Kırık çoğul (mükesser).",
+    "pattern": "\\bcem-i müzekker sâlim\\b|\\bcemi muzekker salim\\b|\\bcem-i müennes sâlim\\b|\\bcemi muennes salim\\b|\\bcem-i mükesser\\b|\\bkırık çoğul\\b"
+  },
+  {
+    "id": "arapca_fiil_cumlesi",
+    "term": "Fiil Cümlesi",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 4,
+    "tanim": "Bir fiil ile başlayan cümleye denir. Temel diziliş sırası: Fiil + Fâ‘il (Özne) + Mef‘ûlun Bih (Nesne) şeklindedir.",
+    "sifre": "Fiille başlayan cümle; dizilişi: Fiil + Fâil (merfû) + Mef'ûl (mansûb).",
+    "pattern": "\\bfiil cümlesi\\b|\\bfiil cümleleri\\b"
+  },
+  {
+    "id": "arapca_fail_ozne",
+    "term": "Fâ‘il (Özne)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 4,
+    "tanim": "Fiil cümlesinde fiilden sonra gelen, eylemi gerçekleştiren ve dâima MERFÛ olan öznedir. Asla fiilden önce gelmez (fiilden önce gelirse cümle isim cümlesi olur ve mübtedâ adını alır).",
+    "sifre": "Fiilden sonra gelen dâima merfû olan özne; asla fiilin önüne geçmez.",
+    "pattern": "\\bfâ‘il\\b|\\bfâil\\b|\\bfail\\b"
+  },
+  {
+    "id": "arapca_mefulun_bih",
+    "term": "Mef‘ûlun Bih (Düz Tümleç/Nesne)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 4,
+    "tanim": "Fiil cümlesinde fâilin yaptığı işten doğrudan etkilenen ve dâima MANSÛB olan nesnedir (Türkçedeki -i hali veya eksiz nesne).",
+    "sifre": "Fâilin eyleminden etkilenen dâima mansûb olan nesne.",
+    "pattern": "\\bmef‘ûlun bih\\b|\\bmefulu bih\\b|\\bmef‘ûl\\b|\\bmefûl\\b|\\bmeful\\b"
+  },
+  {
+    "id": "arapca_fiil_fail_uyumu",
+    "term": "Fiil-Fâil Uyumu",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 4,
+    "tanim": "1. Fâil açık (zâhir) bir isim olduğunda, fâil ister ikil ister çoğul olsun cümlenin başındaki fiil dâima TEKİL gelir. 2. Fiil ile fâil cinsiyet (müzekkerlik/müenneslik) bakımından birbirine uymak zorundadır.",
+    "sifre": "Fâil açık isimse fiil başta daima tekil gelir; cinsiyette (erillik-dişillik) tam uyarlar.",
+    "pattern": "\\bfiil-fâil uyumu\\b|\\bfiil fail uyumu\\b|\\bfiil ile fâil\\b"
+  },
+  {
+    "id": "arapca_akilsiz_cogul_kurali",
+    "term": "Gayr-i Âkıl Çoğul Kuralı",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 4,
+    "tanim": "Arapçada insan dışındaki varlıkların (hayvanlar, bitkiler, cansız varlıklar) çoğulları gramer bakımından TEKİL-MÜENNES (müfred müennes) kabul edilir. Fiilleri, sıfatları ve zamirleri tekil dişil gelir.",
+    "sifre": "İnsan dışı akılsız çoğullar tekil müennes (müfred dişil) muamelesi görür.",
+    "pattern": "\\bgayr-i âkıl\\b|\\bgayri akıl\\b|\\bakılsız çoğul\\w*|\\bmüfred müennes hükmünde\\b"
+  },
+  {
+    "id": "arapca_isim_cumlesi",
+    "term": "İsim Cümlesi",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 5,
+    "tanim": "Bir isimle başlayan cümledir. İki temel ögeden oluşur: Mübtedâ (hakkında bilgi verilen özne) ve Haber (mübtedâ hakkında bilgi veren yüklem). Her iki öge de kural olarak MERFÛDUR.",
+    "sifre": "İsimle başlayan cümle; Mübtedâ (özne, merfû) + Haber (yüklem, merfû).",
+    "pattern": "\\bisim cümlesi\\b|\\bisim cümleleri\\b"
+  },
+  {
+    "id": "arapca_mubteda_ozne",
+    "term": "Mübtedâ",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 5,
+    "tanim": "İsim cümlesinin başında yer alan, hakkında haber ve bilgi verilen, kural olarak mârife (belirli) ve dâima MERFÛ olan ana öznedir.",
+    "sifre": "İsim cümlesinin başındaki belirli (marife) ve merfû olan ana özne.",
+    "pattern": "\\bmübtedâ\\b|\\bmübteda\\b|\\bmubteda\\b"
+  },
+  {
+    "id": "arapca_haber_yuklem",
+    "term": "Haber (Yüklem)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 5,
+    "tanim": "İsim cümlesinde mübtedânın durumunu, niteliğini veya eylemini bildiren, kural olarak nekra (belirsiz) ve MERFÛ olan ögedir. Cinsiyet ve sayıda mübtedâya uyar.",
+    "sifre": "Mübtedânın durumunu bildiren merfû öge; sayı ve cinsiyette mübtedâya uyar.",
+    "pattern": "\\bhaber\\b|\\bhaberi\\b|\\byüklem\\b"
+  },
+  {
+    "id": "arapca_harfi_cerler",
+    "term": "Harf-i Cerler",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 5,
+    "tanim": "Sadece isimlerin başına gelen ve peşinden gelen ismi MECRÛR (kesralı) yapan edatlardır: Min (-den/-dan), İlâ (-e/-a yönelme), An (-den, hakkında), Alâ (üzerinde), Fî (-de/-da içinde), Li (için, -e ait), Bi (ile), Ke (gibi), Hattâ (-e kadar).",
+    "sifre": "İsmi mecrûr yapan edatlar: Min, ilâ, an, alâ, fî, li, bi, ke.",
+    "pattern": "\\bharf-i cer\\w*|\\bharfi cer\\w*|\\bcer harfleri\\b"
+  },
+  {
+    "id": "arapca_sibhi_cumle",
+    "term": "Şibh-i Cümle (Cümlemsi)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 5,
+    "tanim": "Harf-i cer ile mecrûrundan (câr-mecrûr) veya bir yer/zaman zarfı ile tamlananından oluşan öbektir. İsim cümlesinde haber olarak gelebilir (Örn: el-Kitâbu ale'l-mektebi / Kitap masanın üzerindedir).",
+    "sifre": "Harf-i cer + mecrur isim veya zarf öbeğinden oluşan haber türü (câr-mecrûr).",
+    "pattern": "\\bşibh-i cümle\\b|\\bsibhi cumle\\b|\\bcâr-mecrûr\\b|\\bcar mecrur\\b"
+  },
+  {
+    "id": "arapca_marife_nekra",
+    "term": "Mâ‘rife ve Nekra (Belirlilik)",
+    "subject": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "unite_no": 5,
+    "tanim": "Mâ‘rife: Belirli, bilinen bir varlığı gösteren isimdir (Elif-lam / 'el-' takısı alan isimler, özel isimler, zamirler, işaret isimleri). Nekra: Belirsiz herhangi bir varlığı gösteren, tenvin alan isimdir.",
+    "sifre": "Belirli isim = Mâ‘rife (el- takılı, zamir, özel isim); belirsiz isim = Nekra (tenvinli).",
+    "pattern": "\\bmâ‘rife\\b|\\bmarife\\b|\\bnekra\\b|\\belif-lâm takısı\\b|\\btenvin\\b"
   }
 ]

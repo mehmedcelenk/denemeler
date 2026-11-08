@@ -17,8 +17,9 @@ test('cevabı göster gözü yalnızca oda kurucusuna çizilir', () => {
   initClassroomCardHook();
   const roomState = roomService.getState();
   roomState.isHost = false;
-  assert.doesNotMatch(renderCardHeader(question, 1, false), /btnEye_/);
+  assert.doesNotMatch(renderCardHeader(question, 1, false), /data-action="toggle-answer-reveal"/);
   roomState.isHost = true;
-  assert.match(renderCardHeader(question, 1, false), /btnEye_77101/);
+  const hostHeader = renderCardHeader(question, 1, false);
+  assert.match(hostHeader, /data-action="toggle-answer-reveal"[^>]*data-qid="77101"/);
   roomState.isHost = false;
 });

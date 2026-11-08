@@ -1,13 +1,45 @@
 import { state, onStateChange } from '../../app/state.ts';
 import { getCondensedCourseCode } from '../../data/subjects.js';
 import { escapeHtml } from '../../shared/escape.ts';
-import { renderQuestionCardHtml } from './question-card.ts';
+import {
+  disconnectBookletPagination,
+  ensureQuestionRendered,
+  mountPaginatedBooklet,
+  renderAllRemainingQuestions,
+} from './pagination.ts';
+
+function syncBookletLayoutClasses() {
+  if (typeof document === 'undefined') return;
+  const cols = state.currentColumnCount || 2;
+  const container = document.getElementById('bookletPagesContainer');
+  if (container) {
+    container.classList.remove('wide-3', 'wide-4');
+    if (cols === 3) container.classList.add('wide-3');
+    if (cols === 4) container.classList.add('wide-4');
+  }
+  document.querySelectorAll('.page-columns-body').forEach(el => {
+    el.classList.remove('cols-1', 'cols-2', 'cols-3', 'cols-4');
+    el.classList.add(`cols-${cols}`);
+  });
+}
 
 if (typeof document !== 'undefined') {
-  document.addEventListener('booklet:layoutchange', () => renderBookletPages());
-  onStateChange('booklet:refresh', () => renderBookletPages());
-  onStateChange('booklet:updated', () => renderBookletPages());
+  document.addEventListener('booklet:layoutchange', () => syncBookletLayoutClasses());
 }
+
+onStateChange('print:before', () => {
+  renderAllRemainingQuestions();
+}, -10);
+
+onStateChange('booklet:ensure-question', (payload) => {
+  if (!payload || typeof payload !== 'object' || !('qid' in payload)) return;
+  const qid = Number(payload.qid);
+  if (Number.isNaN(qid)) return;
+  const card = ensureQuestionRendered(qid);
+  if (card && 'scroll' in payload && payload.scroll) {
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+});
 
 function getBookletHeaderMeta(programMode, selectedCoursesSize, selectedTopicKeys) {
   let institution = 'T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM LİSESİ';
@@ -22,6 +54,14 @@ function getBookletHeaderMeta(programMode, selectedCoursesSize, selectedTopicKey
     institution = 'ANADOLU ÜNİVERSİTESİ • AÇIKÖĞRETİM FAKÜLTESİ';
     defaultTitle = 'AÖF ÇIKMIŞ SINAV SORULARI';
     footerName = 'AÖF İLAHİYAT REHBERİ';
+  } else if (programMode === 'ILMIHAL') {
+    institution = 'DİYANET İŞLERİ BAŞKANLIĞI • EĞİTİM MERKEZİ';
+    defaultTitle = 'İLMİHAL ÇALIŞMA SORULARI';
+    footerName = 'CENKS İLMİHAL REHBERİ';
+  } else if (programMode === 'GIRISIMCILIK') {
+    institution = 'T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM LİSESİ';
+    defaultTitle = 'GİRİŞİMCİLİK ÇALIŞMA SORULARI';
+    footerName = 'CENKS GİRİŞİMCİLİK REHBERİ';
   } else if (['TYT', 'AYT', 'YDT'].includes(programMode)) {
     institution = 'ÖSYM • YÜKSEKÖĞRETİM KURUMLARI SINAVI';
     defaultTitle = `${programMode} ÇIKMIŞ SINAV SORULARI`;
@@ -34,10 +74,12 @@ function getBookletHeaderMeta(programMode, selectedCoursesSize, selectedTopicKey
   return { institution, examTitle, footerName };
 }
 
-export function renderBookletPages(_targetQuestionId = null) {
+export function renderBookletPages(targetQuestionId = null) {
   if (typeof document === 'undefined') return;
   const container = document.getElementById('bookletPagesContainer');
   if (!container) return;
+
+  disconnectBookletPagination();
 
   if (state.contentViewMode === 'notes') {
     container.innerHTML = `
@@ -84,12 +126,10 @@ export function renderBookletPages(_targetQuestionId = null) {
   const badgeCode = getCondensedCourseCode(state.selectedCourses, state.currentSubject);
   const headerMeta = getBookletHeaderMeta(state.programMode, state.selectedCourses.size, state.selectedTopicKeys);
 
-  let questionsHtml = '';
   let miniKeyHtml = '';
 
   state.bookletQuestions.forEach((q, idx) => {
     const num = idx + 1;
-    questionsHtml += renderQuestionCardHtml(q, num);
     if (q.sekilli) {
       miniKeyHtml += `
         <div class="mini-key-cell" style="opacity:0.55;" title="Şekilli Soru - Yakında">
@@ -119,9 +159,8 @@ export function renderBookletPages(_targetQuestionId = null) {
         </div>
       </div>
 
-      <div class="page-columns-body ${columnClass}" id="bookletQuestionBody_1">
-        ${questionsHtml}
-      </div>
+      <div class="page-columns-body ${columnClass}" id="bookletQuestionBody_1"></div>
+      <div class="booklet-load-sentinel" id="bookletLoadSentinel"></div>
 
       <div>
         <div class="page-bottom-answer-strip" id="pageBottomKey_1">
@@ -139,4 +178,10 @@ export function renderBookletPages(_targetQuestionId = null) {
       </div>
     </div>
   `;
+
+  const bodyEl = document.getElementById('bookletQuestionBody_1');
+  const sentinelEl = document.getElementById('bookletLoadSentinel');
+  if (bodyEl) {
+    mountPaginatedBooklet(state.bookletQuestions, bodyEl, sentinelEl, targetQuestionId);
+  }
 }

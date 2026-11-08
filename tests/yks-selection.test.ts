@@ -4,14 +4,15 @@ import { store } from '../src/app/state.ts';
 import { getProgramSubjectList } from '../src/features/subjects/selection-model.ts';
 import { renderSubjectRowsHtml } from '../src/features/subjects/subject-rows.ts';
 import { matchesSubject } from '../src/data/subjects.js';
-import { choices } from '../src/data/question.ts';
+import { choices, parseQuestions } from '../src/data/question.ts';
+import { readFileSync } from 'node:fs';
 
 test('YKS ve AÖL/AÖF program ders listeleri doğru döner', () => {
   const aoihl = getProgramSubjectList('AOIHL');
   assert.equal(aoihl.length, 13);
 
   const aof = getProgramSubjectList('AOF');
-  assert.equal(aof.length, 5);
+  assert.equal(aof.length, 6);
 
   const tyt = getProgramSubjectList('TYT');
   assert.equal(tyt.length, 9);
@@ -64,5 +65,26 @@ test('YKS soruları doğru branşlarla eşleşir ve AÖL ile karışmaz', () => 
 
 test('5 seçenekli soru yapısı A-E sözleşmesini karşılar', () => {
   assert.deepEqual(choices, ['A', 'B', 'C', 'D', 'E']);
+});
+
+test('AYT_MAT.json 349 sorunun tamamını, eksiksiz soru köklerini ve KaTeX şemasını içerir', () => {
+  const raw = JSON.parse(readFileSync('data/subjects/AYT_MAT.json', 'utf8'));
+  const questions = parseQuestions(raw);
+  assert.equal(questions.length, 349);
+  assert.equal(questions[0].id, 51001);
+  assert.equal(questions[0].soru_no, 1);
+  assert.ok(questions[0].soru.startsWith('x, y ve z birbirinden farklı birer asal sayı olmak üzere,'));
+  assert.ok(questions[0].soru.includes('$x(z - y) = 18$'));
+  assert.equal(questions[0].dogru_cevap, 'B');
+  assert.equal(questions[0].donem, undefined);
+
+  for (let i = 0; i < questions.length; i++) {
+    const q = questions[i];
+    assert.equal(q.soru_no, i + 1);
+    assert.equal(q.ders, 'AYT MATEMATİK');
+    assert.equal(q.sinav_adi, 'AYT');
+    assert.equal(q.donem, undefined);
+    assert.ok(q.secenekler.E && q.secenekler.E.length > 0, `Soru ${q.soru_no} E şıkkı boş olamaz`);
+  }
 });
 

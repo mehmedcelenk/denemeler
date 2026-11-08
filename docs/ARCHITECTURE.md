@@ -31,7 +31,8 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Konu gruplama/kesişim | `src/features/subjects/topic-model.js` |
 | Konu listesi | `src/features/subjects/topics.js` |
 | Kitapçığa hangi sorular girecek? | `src/features/booklet/selection.js` |
-| Soru kartı, şıklar, sayfalama ve eklenti kancaları | `src/features/booklet/render.js`, `question-card.ts` & `card-hooks.ts` |
+| Soru kartı, şıklar, sayfalama ve eklenti kancaları | `src/features/booklet/render.js`, `pagination.ts`, `question-card.ts`, `card-query.ts` & `card-hooks.ts` |
+| Metin vurgulama (fosfor) ve şık eleme | `src/features/annotations/highlighter.ts`, `highlight-store.ts` & `eliminate-choice.ts` |
 | Soru Özellik Çubuğu & Şık Eleme | `src/features/booklet/features-bar.ts` |
 | Cevap işaretleme/geri alma | `src/features/answers/marking.ts` |
 | Cevap ve ipucu gösterme | `src/features/answers/marking.ts` |

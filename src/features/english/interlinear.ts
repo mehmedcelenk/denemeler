@@ -1,14 +1,17 @@
-import { state } from '../../app/state.ts';
+import { state, store, notifyStateChange } from '../../app/state.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 import { isEnglishQuestion } from '../../shared/english-utils.ts';
-import type { Question } from '../../data/question.ts';
+import {
+  getBookletCard,
+  getCardActionElements,
+  getCardChoiceText,
+  getCardStem,
+  getQuestionCards,
+} from '../booklet/card-query.ts';
 import { MEB_VOCAB_DICT, CONTRACTIONS_BREAKDOWN, enrichEnglishVocab } from './vocabulary.js';
 
-/** Aktif olarak kelime meali açık olan soruların kimlikleri (modüle özel geçici durum) */
-const activeMealQuestionIds = new Set<number>();
-
 export function isQuestionMealActive(qid: number | string): boolean {
-  return activeMealQuestionIds.has(Number(qid));
+  return state.activeMealQuestionIds.has(Number(qid));
 }
 
 /** Kelime anlamını sadeleştirir (parantez içi açıklamaları ve çoklu alternatifleri kısaltır). */
@@ -90,55 +93,35 @@ export function toggleQuestionMeal(qId: number | string, event?: Event): void {
   const q = state.bookletQuestions.find(item => item.id === id) || state.allData.find(item => item.id === id);
   if (!q) return;
 
-  const isCurrentlyActive = activeMealQuestionIds.has(id);
-  const targetCards = document.querySelectorAll<HTMLElement>(`[data-qid="${id}"]`);
+  const isCurrentlyActive = state.activeMealQuestionIds.has(id);
+  const targetCards = getQuestionCards(id);
   if (targetCards.length === 0) return;
 
-  if (isCurrentlyActive) {
-    activeMealQuestionIds.delete(id);
-    targetCards.forEach(card => {
-      card.classList.remove('has-interlinear');
-      const stem = card.querySelector<HTMLElement>(`#stem_${id}`);
-      if (stem) {
-        stem.innerHTML = enrichEnglishVocab(q.soru_xray || q.soru);
+  const enableMeal = !isCurrentlyActive;
+  store.setQuestionMealActive(id, enableMeal);
+
+  targetCards.forEach(card => {
+    card.classList.toggle('has-interlinear', enableMeal);
+    const stem = getCardStem(card);
+    if (stem) {
+      const rawHtml = q.soru_xray || q.soru;
+      stem.innerHTML = enableMeal ? renderInterlinearText(rawHtml) : enrichEnglishVocab(rawHtml);
+    }
+    (['A', 'B', 'C', 'D', 'E'] as const).forEach(letter => {
+      const optChoice = q.secenekler[letter];
+      if (!optChoice) return;
+      const textContent = getCardChoiceText(card, letter);
+      if (textContent) {
+        textContent.innerHTML = enableMeal ? renderInterlinearText(optChoice) : enrichEnglishVocab(optChoice);
       }
-      ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
-        const optChoice = (q.secenekler as Record<string, string>)[letter];
-        if (optChoice) {
-          const textContent = card.querySelector(`#opt_${id}_${letter} .choice-text-content`);
-          if (textContent) {
-            textContent.innerHTML = enrichEnglishVocab(optChoice);
-          }
-        }
-      });
     });
-    document.querySelectorAll<HTMLElement>(`#btnMeal_${id}`).forEach(btn => {
-      btn.classList.remove('active');
-      btn.setAttribute('title', 'Kelime Meali (Alt Çeviri) Aç');
+    getCardActionElements(card, 'toggle-question-meal').forEach(btn => {
+      btn.classList.toggle('active', enableMeal);
+      btn.setAttribute('title', enableMeal ? 'Kelime Mealini Kapat' : 'Kelime Meali (Alt Çeviri) Aç');
     });
-  } else {
-    activeMealQuestionIds.add(id);
-    targetCards.forEach(card => {
-      card.classList.add('has-interlinear');
-      const stem = card.querySelector<HTMLElement>(`#stem_${id}`);
-      if (stem) {
-        stem.innerHTML = renderInterlinearText(q.soru_xray || q.soru);
-      }
-      ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
-        const optChoice = (q.secenekler as Record<string, string>)[letter];
-        if (optChoice) {
-          const textContent = card.querySelector(`#opt_${id}_${letter} .choice-text-content`);
-          if (textContent) {
-            textContent.innerHTML = renderInterlinearText(optChoice);
-          }
-        }
-      });
-    });
-    document.querySelectorAll<HTMLElement>(`#btnMeal_${id}`).forEach(btn => {
-      btn.classList.add('active');
-      btn.setAttribute('title', 'Kelime Mealini Kapat');
-    });
-  }
+  });
+
+  notifyStateChange('booklet:rendered', { cards: targetCards });
 }
 
 /**
@@ -151,42 +134,45 @@ export function applyInterlinearToBooklet(enabled: boolean): void {
     container.classList.toggle('print-interlinear', enabled);
   }
 
+  const updatedCards: HTMLElement[] = [];
   state.bookletQuestions.forEach(q => {
     if (!isEnglishQuestion(q)) return;
-    const card = document.getElementById(`bq_${q.id}`);
-    const stem = document.getElementById(`stem_${q.id}`);
+    const card = getBookletCard(q.id);
     if (!card) return;
+    const stem = getCardStem(card);
 
     if (enabled) {
       card.classList.add('has-interlinear');
       if (stem) {
         stem.innerHTML = renderInterlinearText(q.soru_xray || q.soru);
       }
-      ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
-        const optChoice = (q.secenekler as Record<string, string>)[letter];
-        if (optChoice) {
-          const textContent = card.querySelector(`#opt_${q.id}_${letter} .choice-text-content`);
-          if (textContent) {
-            textContent.innerHTML = renderInterlinearText(optChoice);
-          }
+      (['A', 'B', 'C', 'D', 'E'] as const).forEach(letter => {
+        const optChoice = q.secenekler[letter];
+        if (!optChoice) return;
+        const textContent = getCardChoiceText(card, letter);
+        if (textContent) {
+          textContent.innerHTML = renderInterlinearText(optChoice);
         }
       });
-    } else {
-      if (!activeMealQuestionIds.has(q.id)) {
-        card.classList.remove('has-interlinear');
-        if (stem) {
-          stem.innerHTML = enrichEnglishVocab(q.soru_xray || q.soru);
-        }
-        ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
-          const optChoice = (q.secenekler as Record<string, string>)[letter];
-          if (optChoice) {
-            const textContent = card.querySelector(`#opt_${q.id}_${letter} .choice-text-content`);
-            if (textContent) {
-              textContent.innerHTML = enrichEnglishVocab(optChoice);
-            }
-          }
-        });
+      updatedCards.push(card);
+    } else if (!state.activeMealQuestionIds.has(q.id)) {
+      card.classList.remove('has-interlinear');
+      if (stem) {
+        stem.innerHTML = enrichEnglishVocab(q.soru_xray || q.soru);
       }
+      (['A', 'B', 'C', 'D', 'E'] as const).forEach(letter => {
+        const optChoice = q.secenekler[letter];
+        if (!optChoice) return;
+        const textContent = getCardChoiceText(card, letter);
+        if (textContent) {
+          textContent.innerHTML = enrichEnglishVocab(optChoice);
+        }
+      });
+      updatedCards.push(card);
     }
   });
+
+  if (updatedCards.length > 0) {
+    notifyStateChange('booklet:rendered', { cards: updatedCards });
+  }
 }

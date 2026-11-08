@@ -1,63 +1,313 @@
 [
   {
-    "id": "ibadet_kavrami",
-    "term": "İbadet",
+    "id": "ibadet_tanimi",
+    "term": "İbadet (Kulluk ve İtaat)",
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
     "unite_no": 1,
-    "tanim": "Sözlükte boyun eğmek, itaat etmek ve kulluk yapmak demektir. Dinde ise mükellefin Allah’a saygı ve sevgisini göstermek için O’nun emirlerini yerine getirmesidir.",
-    "sifre": "Sözlük: Boyun eğme/kulluk. Terim: Sevgi ve saygıyla Allah’ın emrini yerine getirme.",
-    "pattern": "\\bibadet\\b|\\bibâdet\\b|\\bibadettir\\b"
+    "tanim": "Sözlükte boyun eğmek, itaat etmek, tevazu göstermek ve kulluk yapmak demektir. Terim olarak mükellefin Allah’a olan sevgi, saygı ve bağlılığını göstermek üzere O'nun emirlerini yerine getirmesi ve yasaklarından kaçınmasıdır. Üç boyutu vardır: Zikir, Fikir ve Şükür.",
+    "sifre": "Allah'a gönülden boyun eğme, saygı ve itaat; zikir, fikir ve şükür boyutları vardır.",
+    "pattern": "\\bibadet\\b|\\bibâdet\\b|\\bkulluk\\b"
   },
   {
-    "id": "ibadet_efali_mukellefin",
-    "term": "Ef’âl-i Mükellefîn",
+    "id": "ibadet_taat_kurbet",
+    "term": "Tâat ve Kurbet",
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
     "unite_no": 1,
-    "tanim": "Dinen yükümlü (mükellef) insanın davranışlarının dini hükümleridir (Farz, Vacip, Sünnet, Müstehap, Mübah, Mekruh, Haram).",
-    "sifre": "Mükellefin fiilleri ve 8 dini hüküm = Ef’âl-i Mükellefîn.",
-    "pattern": "ef’âl-i mükellefîn|efali mükellefin|mükellef"
+    "tanim": "Tâat: Allah ve Resulünün emirlerini istekle benimseyip yerine getirmektir. Kurbet: İnsanı manevî olarak Allah’a yaklaştıran, rızasını kazandıran her hayırlı ve güzel amele denir.",
+    "sifre": "Emre itaat = Tâat; Allah'a manen yaklaştıran her hayırlı amel = Kurbet.",
+    "pattern": "\\btâat\\b|\\btaat\\b|\\bkurbet\\b"
   },
   {
-    "id": "ibadet_taharet",
+    "id": "ibadet_taabbudi",
+    "term": "Taabbudî (Gayr-i Makūlü'l-Ma'nâ)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Hikmeti ve gayesi akılla tam olarak kavranamayan, içtihada ve kıyasa kapalı, sırf Allah ve Resulü emrettiği için şekline aynen uyularak yerine getirilen ibadet hükümleridir (Örn: Namazın rekat sayıları, hac menâsiki).",
+    "sifre": "Akılla değiştirilemeyen, sırf emredildiği şekliyle yapılan ibadet yapısı.",
+    "pattern": "\\btaabbudî\\b|\\btaabbudi\\b|\\bgayr-i makūl\\b|\\btaabbüd\\b"
+  },
+  {
+    "id": "ibadet_mukellef_ve_ehliyet",
+    "term": "Mükellef ve Ehliyet (Vücûb ve Edâ)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İNADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Dinen yükümlü sayılabilmek için akıl bâliğ olmak şarttır. Vücûb ehliyeti kişinin haklara ve borçlara sahip olma ehliyetidir (cenin ve çocukluk dönemi). Edâ ehliyeti ise kişinin bizzat dinî ve hukukî fiilleri yapabilme ve sorumlu tutulma ehliyetidir (âkıl ve bâliğ olma).",
+    "sifre": "Hak sahibi olma = Vücûb ehliyeti; bizzat sorumlu olup yerine getirebilme = Edâ ehliyeti.",
+    "pattern": "\\bmükellef\\b|\\bvücûb ehliyeti\\b|\\bvucub ehliyeti\\b|\\bedâ ehliyeti\\b|\\beda ehliyeti\\b"
+  },
+  {
+    "id": "ibadet_bedeni_mali_tasnif",
+    "term": "Bedenî, Mâlî ve Hem Bedenî Hem Mâlî İbadetler",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Bedenî İbadetler: Bizzat organlarla yapılan (namaz, oruç). Mâlî İbadetler: Mal varlığı ile yapılan (zekât, sadaka, kurban). Hem Bedenî Hem Mâlî İbadetler: Hem fiziksel sıhhat hem de servet gerektiren ibadetlerdir (Hac).",
+    "sifre": "Bedenî (namaz, oruç), Mâlî (zekât), Hem bedenî hem mâlî (hac).",
+    "pattern": "\\bbedenî ibadet\\w*|\\bbedeni ibadet\\w*|\\bmâlî ibadet\\w*|\\bmali ibadet\\w*"
+  },
+  {
+    "id": "ibadet_ayni_ve_kifai",
+    "term": "Aynî ve Kifâî İbadetler",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Aynî İbadet: Her bir mükellefin bizzat yapması farz olan ibadetlerdir (5 vakit namaz, Ramazan orucu). Kifâî İbadet: Bir grup Müslümanın yapmasıyla diğerlerinden sorumluluğun kalktığı ibadetlerdir (Cenaze namazı).",
+    "sifre": "Herkesin bizzat yapması şart = Aynî; bir grubun yapmasıyla düşen = Kifâî.",
+    "pattern": "\\baynî ibadet\\w*|\\bayni ibadet\\w*|\\bkifâî ibadet\\w*|\\bkifai ibadet\\w*"
+  },
+  {
+    "id": "ibadet_mukayyed_mutlak",
+    "term": "Mukayyed ve Mutlak İbadetler",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Mukayyed İbadet: Yerine getirilmesi için dinin belirli bir vakit tayin ettiği ibadetlerdir (5 vakit namaz, Ramazan orucu, hac). Mutlak İbadet: Belirli bir vakitle sınırlandırılmamış, her zaman yapılabilen ibadetlerdir (nafile sadaka, zikir, kaza namazları).",
+    "sifre": "Vakte bağlı ibadet = Mukayyed; vakitle sınırlı olmayan = Mutlak.",
+    "pattern": "\\bmukayyed ibadet\\w*|\\bmutlak ibadet\\w*"
+  },
+  {
+    "id": "ibadet_farz_ve_vacip",
+    "term": "Farz ve Vâcip",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Farz: Sübûtu ve delaleti kesin delille (âyet ve mütevâtir sünnet) emredilen hükümdür; inkâr eden dinden çıkar. Vâcip (Hanefîlere özgü): Zannî delille (haber-i vâhid) emredilen kesin hükümdür; inkâr eden küfre girmez ama fâsık olur (Vitir, kurban, bayram namazı). Diğer üç mezhepte farz ile vacip eş anlamlıdır.",
+    "sifre": "Kesin delilli emir = Farz; Hanefî'de zannî delille sabit bağlayıcı emir = Vâcip.",
+    "pattern": "\\bfarz\\b|\\bvâcip\\b|\\bvacip\\b"
+  },
+  {
+    "id": "ibadet_sunnet_cesitleri",
+    "term": "Sünnet Çeşitleri",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Sünnet-i Müekkede: Hz. Peygamber’in devamlı işleyip nadiren terk ettiği kuvvetli sünnetlerdir (sabah, öğle namazı sünnetleri). Sünnet-i Gayr-i Müekkede (Müstehap/Mendup): Bazen yapıp bazen terk ettiği sünnetlerdir (ikindi ve yatsının ilk sünnetleri). Sünnet-i Zevâid: Peygamberimizin beşerî alışkanlıklarıdır.",
+    "sifre": "Devamlı yapılan = Müekkede; bazen yapılan = Gayr-i müekkede (müstehap).",
+    "pattern": "\\bsünnet-i müekkede\\b|\\bsünneti müekkede\\b|\\bgayr-i müekkede\\b|\\bmüstehap\\b|\\bmendup\\b|\\bzevâid\\b"
+  },
+  {
+    "id": "ibadet_mekruh_ve_haram",
+    "term": "Mekruh ve Haram",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Tenzihen Mekruh: Helale yakın, dinin hoş görmediği hafif çirkin fiillerdir. Tahrimen Mekruh: Harama yakın, vâcibin zıddı olan ve cezayı gerektiren fiillerdir. Haram: Dinen kesin delille yasaklanan fiillerdir (Li-zâtihî haram: aslen haram olan domuz eti, zina; Li-gayrihî haram: sonradan bir sebeple haram kılınan gasbedilmiş mal).",
+    "sifre": "Tenzihen mekruh (helale yakın), Tahrimen mekruh (harama yakın), Haram (kesin yasak).",
+    "pattern": "\\btenzîhen mekruh\\b|\\btenzihen mekruh\\b|\\btahrîmen mekruh\\b|\\btahrimen mekruh\\b|\\bharâm\\b|\\bharam\\b|\\bli-zâtihî\\b|\\bli-gayrihî\\b"
+  },
+  {
+    "id": "ibadet_eda_kaza_iade",
+    "term": "Edâ, Kazâ ve İâde",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Edâ: İbadeti şer'an belirlenen meşru vaktinde tam olarak yerine getirmektir. Kazâ: Vaktinde yapılmayan veya yapılamayan bir ibadeti vakti çıktıktan sonra yapmaktır. İâde: Bozuk veya eksik yapılan bir ibadeti vaktinde yeniden kılmaktır.",
+    "sifre": "Vaktinde yapmak = Edâ; vaktinden sonra yapmak = Kazâ; kusur sebebiyle yeniden yapmak = İâde.",
+    "pattern": "\\bedâ\\b|\\beda\\b|\\bkazâ\\b|\\bkaza\\b|\\biâde\\b|\\biade\\b"
+  },
+  {
+    "id": "ibadet_azimet_ruhsat",
+    "term": "Azîmet ve Ruhsat",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 1,
+    "tanim": "Azîmet: Normal durumlarda herkes için geçerli olan ağır ve asıl dinî hükümlerdir. Ruhsat: Hastalık, yolculuk veya zaruret gibi mazeretler sebebiyle kullara tanınan kolaylaştırıcı geçici hükümlerdir (seferde namazı kısaltmak, hasta için teyemmüm).",
+    "sifre": "Asıl bağlayıcı kural = Azîmet; mazeret sebebiyle tanınan kolaylık = Ruhsat.",
+    "pattern": "\\bazîmet\\b|\\bazimet\\b|\\bruhsat\\b"
+  },
+  {
+    "id": "ibadet_taharet_kavrami",
     "term": "Tahâret (Temizlik)",
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
     "unite_no": 2,
-    "tanim": "Maddi pisliklerden (necaset) ve hükmi kirlilikten (hades: abdestsizlik ve cünüplük) temizlenmektir.",
-    "sifre": "Necasetten taharet (maddi) + Hadesten taharet (hükmi: abdest/gusül) = Tahâret.",
-    "pattern": "\\btahâret\\b|\\btaharet\\b|\\bhades\\b|\\bnecaset\\b"
+    "tanim": "Sözlükte temizlenmek, arınmak demektir. Fıkıhta hem maddî pisliklerden (necasetten taharet) hem de ibadete engel sayılan hükmî kirlilikten (hadesten taharet) temizlenmektir.",
+    "sifre": "İbadetlerin sıhhati için maddî ve hükmî kirlilikten arınma şartı.",
+    "pattern": "\\btahâret\\b|\\btaharet\\b|\\bnecasetten taharet\\b|\\bhadesten taharet\\b"
   },
   {
-    "id": "ibadet_teyemmum",
+    "id": "ibadet_hades_asgar_ekber",
+    "term": "Hades (Hades-i Asgar ve Hades-i Ekber)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "İnsanın vücudunda var sayılan ve ibadete engel olan manevî/hükmî kirlilik durumudur. Hades-i Asgar: Abdesti bozan hallerdir; abdest alarak giderilir. Hades-i Ekber: Cünüplük, hayız ve nifas halleridir; gusül abdesti alınarak giderilir.",
+    "sifre": "Abdest gerektiren hafif kirlilik = Hades-i Asgar; gusül gerektiren büyük kirlilik = Hades-i Ekber.",
+    "pattern": "\\bhades\\b|\\bhades-i asgar\\b|\\bhadesi asgar\\b|\\bhades-i ekber\\b|\\bhadesi ekber\\b"
+  },
+  {
+    "id": "ibadet_necaset_galiza_hafife",
+    "term": "Necâset (Galîza ve Hafîfe)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "Maddî pisliklerdir. Necâset-i Galîza (Ağır pislik): İdrar, dışkı, şarap, kan gibi kesin delille sabit pisliklerdir; katı ise 1 dirhem (yaklaşık 3 gr), sıvı ise el ayası kadar miktarı namaza engeldir. Necâset-i Hafîfe (Hafif pislik): At, koyun idrarı gibi; bulaştığı uzuv veya elbisenin dörtte birinden az ise namaza engel olmaz.",
+    "sifre": "Ağır pislik = Necâset-i Galîza (avuç içi/dirhem sınırı); hafif pislik = Necâset-i Hafîfe (1/4 uzuv sınırı).",
+    "pattern": "\\bnecâset\\b|\\bnecaset\\b|\\bgalîza\\b|\\bgaliza\\b|\\bhafîfe\\b|\\bhafife\\b|\\bnecâset-i galîza\\b"
+  },
+  {
+    "id": "ibadet_su_turleri",
+    "term": "Su Türleri (Mutlak, Mukayyed, Müsta'mel)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "Mutlak Su: Doğal halini koruyan, katkısız sulardır (yağmur, kuyu, deniz suyu); hem hadesi hem necaseti temizler. Mukayyed Su: İçine başka madde katılarak adı değişen sulardır (gül suyu, çorba, meyve suyu); necaseti temizler ama hadesi (abdesti) gidermez. Mâ-i Müsta'mel: Abdest veya gusülde kullanılmış sudur; necaseti temizler fakat ikinci kez abdest alınamaz.",
+    "sifre": "Doğal temiz su = Mutlak su; adı değişmiş su = Mukayyed su; kullanılmış abdest suyu = Mâ-i Müsta'mel.",
+    "pattern": "\\bmutlak su\\b|\\bmukayyed su\\b|\\bmâ-i müsta'mel\\b|\\bmai mustamel\\b|\\bkullanılmış su\\b"
+  },
+  {
+    "id": "ibadet_abdest_ve_farzlari",
+    "term": "Abdest ve 4 Farzı",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "Mâide suresi 6. âyetinde belirtilen abdestin 4 farzı: 1. Yüzü bir kere yıkamak. 2. Kolları dirseklerle birlikte yıkamak. 3. Başın en az dörtte birini ıslak elle meshetmek. 4. Ayakları topuklarla birlikte yıkamak.",
+    "sifre": "Abdestin 4 farzı: Yüzü yıkamak, elleri dirseklerle yıkamak, başı meshetmek, ayakları topuklarla yıkamak.",
+    "pattern": "\\babdest\\b|\\babdestin farz\\w*|\\bmeshetmek\\b"
+  },
+  {
+    "id": "ibadet_gusul_ve_farzlari",
+    "term": "Gusül (Boy Abdesti)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "Cünüplük, hayız ve nifas gibi hades-i ekber hallerinden arınmak için bütün vücudu yıkamaktır. Hanefî mezhebinde guslün 3 farzı vardır: 1. Ağza bolca su verip çalkalamak (mazmaza). 2. Burna genze kadar su çekmek (istinşâk). 3. Bütün vücudu kuru yer kalmayacak şekilde yıkamak.",
+    "sifre": "Guslün 3 farzı: Ağza su vermek (mazmaza), burna su çekmek (istinşâk) ve bütün vücudu yıkamak.",
+    "pattern": "\\bgusül\\b|\\bgusul\\b|\\bboy abdesti\\b|\\bmazmaza\\b|\\bistinşâk\\b|\\bistinşak\\b"
+  },
+  {
+    "id": "ibadet_teyemmum_hukmu",
     "term": "Teyemmüm",
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
     "unite_no": 2,
-    "tanim": "Su bulunmadığında veya suyu kullanma imkanı olmadığında temiz toprak veya toprak cinsinden bir maddeyle yapılan hükmi temizliktir.",
-    "sifre": "Su yokluğu veya hastalık + Temiz toprak + Niyet = Teyemmüm.",
+    "tanim": "Su bulunamadığında veya hastalık/zaruret sebebiyle su kullanılamadığında niyet ederek temiz toprak veya toprak cinsinden bir maddeye iki vuruş yapıp; birincisiyle yüzü, ikincisiyle kolları meshetmektir.",
+    "sifre": "Su bulunmadığında temiz toprak cinsine iki vuruşla yüzü ve kolları meshetmek.",
     "pattern": "\\bteyemmüm\\b|\\bteyemmum\\b"
   },
   {
-    "id": "ibadet_namaz_sartlari",
-    "term": "Namazın Şartları (Dışındakiler)",
+    "id": "ibadet_mestler_uzerine_mesh",
+    "term": "Mestler Üzerine Mesh",
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
-    "unite_no": 3,
-    "tanim": "Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbâl-i kıble, Vakit, Niyet.",
-    "sifre": "6 Dış Şart: Hadesten taharet, Necasetten taharet, Setr-i avret, İstikbal-i kıble, Vakit, Niyet.",
-    "pattern": "namazın şartları|namazın farzları|setr-i avret|istikbâl-i kıble"
+    "unite_no": 2,
+    "tanim": "Abdestli olarak giyilen ayağı topuklarıyla örten mestlerin üzerine ıslak elle meshetmektir. Süresi mukim (yerleşik) olan kimse için 24 saat (1 gün 1 gece), seferî (yolcu) olan kimse için 72 saattir (3 gün 3 gece). Süre abdestin ilk bozulduğu andan itibaren başlar.",
+    "sifre": "Mest süresi: Mukim için 24 saat (1 gün); Seferî için 72 saat (3 gün 3 gece).",
+    "pattern": "\\bmest\\b|\\bmestler üzerine mesh\\b|\\bmest süresi\\b"
   },
   {
-    "id": "ibadet_namaz_rukunleri",
-    "term": "Namazın Rükünleri (İçindekiler)",
+    "id": "ibadet_cebireye_mesh",
+    "term": "Cebîre Üzerine Mesh",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "Kırık, çıkık veya yara sebebiyle sarılan sargı (cebîre) üzerine ıslak elle yapılan meshtir. Abdestli takılma şartı aranmaz ve yara iyileşinceye kadar belirli bir zaman sınırı olmaksızın geçerlidir.",
+    "sifre": "Kırık/yara sargısı üzerine mesh; süre sınırı yoktur, iyileşinceye kadar devam eder.",
+    "pattern": "\\bcebîre\\b|\\bcebire\\b|\\bsargı üzerine mesh\\b"
+  },
+  {
+    "id": "ibadet_hayiz_nifas_istihaze",
+    "term": "Hayız, Nifâs ve İstihâze",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 2,
+    "tanim": "Hayız: Kadınların periyodik aybaşı kanıdır (Hanefî'de en az 3 gün, en çok 10 gün). Nifâs: Doğum sonrası loğusalık kanıdır (en çok 40 gündür; alt sınırı yoktur). Bu sürelerde namaz kılınmaz ve oruç tutulmaz (namazlar kaza edilmez, oruçlar kaza edilir). İstihâze: Özür kanıdır; abdesti bozar ancak namaz ve oruca engel teşkil etmez.",
+    "sifre": "Hayız (3-10 gün) ve nifas (en çok 40 gün); namaz düşer, oruç kaza edilir. İstihâze özür kanıdır, ibadete engel değildir.",
+    "pattern": "\\bhayız\\b|\\bhayiz\\b|\\bnifâs\\b|\\bnifas\\b|\\bistihâze\\b|\\bistihaze\\b|\\bözür kanı\\b"
+  },
+  {
+    "id": "ibadet_salat_tanimi",
+    "term": "Salât (Namaz)",
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
     "unite_no": 3,
-    "tanim": "İftitah tekbiri, Kıyam, Kıraat, Rükû, Sücûd, Ka’de-i ahîre (Son oturuş).",
-    "sifre": "6 İç Rükün: İftitah tekbiri, Kıyam, Kıraat, Rükû, Secde, Ka’de-i ahîre.",
-    "pattern": "namazın rükünleri|iftitah tekbiri|kıyam|kıraat|rükû|ka’de-i ahîre"
+    "tanim": "Sözlükte dua etmek, hayır dilemek, rahmet ve tebrik anlamına gelir. Terim olarak tekbirle başlayıp selamla sona eren, belirli rükün ve hareketlerden oluşan en kapsamlı bedenî ibadettir.",
+    "sifre": "Sözlükte dua ve rahmet; iftitah tekbiriyle başlayıp selamla biten rükünlü ibadet.",
+    "pattern": "\\bsalât\\b|\\bsalat\\b|\\bnamaz\\b"
+  },
+  {
+    "id": "ibadet_fecr_vakitleri",
+    "term": "Fecr-i Kâzib ve Fecr-i Sâdık",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "Fecr-i Kâzib (Yalancı fecir): Gökyüzünde dikey beliren geçici aydınlıktır; bununla sabah vakti girmez, yatsı çıkmaz. Fecr-i Sâdık (Gerçek fecir): Ufukta yatay olarak yayılan beyazlıktır; sabah namazı ve oruç (imsak) vakti bununla başlar.",
+    "sifre": "Dikey geçici aydınlık = Fecr-i Kâzib; ufka yayılan gerçek aydınlık = Fecr-i Sâdık (imsak ve sabah vakti).",
+    "pattern": "\\bfecr-i sâdık\\b|\\bfecr-i sadık\\b|\\bfecr-i kâzib\\b|\\bfecri kazib\\b|\\bimsak vakti\\b"
+  },
+  {
+    "id": "ibadet_kerahet_vakitleri",
+    "term": "Kerahet Vakitleri",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "Namaz kılınması tahrimen veya tenzihen mekruh olan vakitlerdir. Üç vakitte hiçbir namaz (farz, kaza, nafile) kılınmaz: Güneş doğarken, tam tepedeyken (istivâ/zeval), güneş batarken (sadece o günün ikindi farzı kılınabilir). Ayrıca sabah ve ikindi namazından sonra nafile kılmak mekruhtur.",
+    "sifre": "Hiçbir namazın kılınmadığı 3 vakit: Güneş doğarken, tam tepedeyken (zeval) ve batarken.",
+    "pattern": "\\bkerahet vakit\\w*|\\bistivâ vakti\\b|\\bzeval vakti\\b"
+  },
+  {
+    "id": "ibadet_ezan_ve_kamet",
+    "term": "Ezan ve Kāmet",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "Ezan: Farz namazların vaktinin girdiğini bildiren ve cemaate davet eden sünnet-i müekkededir. Kāmet: Farz namaza başlamadan önce camide okunan ve 'Kad kâmeti's-salâh' cümlesini içeren sünnettir.",
+    "sifre": "Namaz vaktini bildiren davet = Ezan; farza kalkarken okunan çağrı = Kāmet.",
+    "pattern": "\\bezân\\b|\\bezan\\b|\\bkāmet\\b|\\bkamet\\b"
+  },
+  {
+    "id": "ibadet_namazin_sartlari_dis",
+    "term": "Namazın Şartları (Dışındaki 6 Farz)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "Namaza başlamadan önce yapılması gereken 6 şart: 1. Hadesten tahâret (abdest/gusül). 2. Necâsetten tahâret (beden, elbise ve yer temizliği). 3. Setr-i avret (avret yerlerini örtmek). 4. İstikbâl-i kıble (Kâbe'ye yönelmek). 5. Vakit (vaktin girmesi). 6. Niyet (kılınacak namazı belirlemek).",
+    "sifre": "Namazın dışındaki 6 şartı: Hadesten taharet, necasetten taharet, setr-i avret, istikbal-i kıble, vakit, niyet.",
+    "pattern": "\\bsetr-i avret\\b|\\bistikbâl-i kıble\\b|\\bistikbali kıble\\b|\\bnamazın şartları\\b"
+  },
+  {
+    "id": "ibadet_namazin_rukunleri_ic",
+    "term": "Namazın Rükünleri (İçindeki 6 Farz)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "Namazın bizzat varlığını oluşturan 6 rükün: 1. İftitah Tekbiri (Tahrîme ile başlamak). 2. Kıyâm (ayakta durmak). 3. Kırâat (Kur'an okumak). 4. Rükû (eğilmek). 5. Sücûd (alın ve burnu yere koyup secde etmek). 6. Ka'de-i Ahîre (son oturuşta teşehhüd miktarı beklemek).",
+    "sifre": "Namazın içindeki 6 rüknü: İftitah tekbiri, kıyam, kıraat, rükû, secde, son oturuş (ka'de-i ahîre).",
+    "pattern": "\\bnamazın rükünleri\\b|\\biftitah tekbiri\\b|\\btahrîme\\b|\\bkıyâm\\b|\\bkiyam\\b|\\bkırâat\\b|\\bkiraat\\b|\\brükû\\b|\\bruku\\b|\\bsücûd\\b|\\bsecde\\b|\\bka'de-i ahîre\\b|\\bkade-i ahire\\b"
+  },
+  {
+    "id": "ibadet_tadil_i_erkan",
+    "term": "Ta'dîl-i Erkân",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "Namazın rükünlerini (özellikle rükû, secde, kavme ve celse) acele etmeden, eklemler tam yerine oturacak ve vücut sükûnet bulacak şekilde yerine getirmektir. Ebû Yûsuf ve diğer mezheplere göre farz; Ebû Hanîfe ve İmam Muhammed'e göre vaciptir.",
+    "sifre": "Rükû, secde, kavme ve celsede sükûnet bulup rükünlerin hakkını vermek.",
+    "pattern": "\\bta'dîl-i erkân\\b|\\btadili erkan\\b|\\btadil-i erkan\\b|\\bkavme\\b|\\bcelse\\b"
+  },
+  {
+    "id": "ibadet_namazin_vacipleri",
+    "term": "Namazın Vâcipleri",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 3,
+    "tanim": "Namazda yapılması gerekli olan, unutularak terk edildiğinde sehiv secdesi ile telafi edilen hükümlerdir: Fatiha sûresini okumak, Fatiha'ya sûre veya âyet eklemek (zamm-ı sûre), ka'de-i ûlâda (ilk oturuş) oturmak ve et-Tahiyyâtü okumak, vitirde kunut dualarını okumak, bayram tekbirleri.",
+    "sifre": "Fatiha, zamm-ı sure, ilk oturuşta tahiyyat, vitirde kunut; terki sehiv secdesi gerektirir.",
+    "pattern": "\\bnamazın vâcipleri\\b|\\bnamazın vacipleri\\b|\\bzamm-ı sûre\\b|\\bzammı sure\\b|\\bka'de-i ûlâ\\b|\\bkade-i ula\\b|\\bkunut\\b"
+  },
+  {
+    "id": "ibadet_imamet_ve_cemaat",
+    "term": "İmâmet (Müdrik, Lâhik, Mesbûk)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 4,
+    "tanim": "İmama uyarak cemaatle kılınan namazdaki hallerdir. Müdrik: Namazı baştan sona imamla kılan kimse. Lâhik: İmamla başlayıp uyku veya abdest bozulması gibi sebeple bazı rekatları kaçıran kimse. Mesbûk: İmama birinci rekatın rükûundan sonra yetişen kimsedir; imam selam verince kalkıp kılamadığı rekatları kaza eder.",
+    "sifre": "Namazı tam kılan = Müdrik; sonradan yetişen = Mesbûk; başlayıp arada kaçıran = Lâhik.",
+    "pattern": "\\bmüdrik\\b|\\bmudrik\\b|\\blâhik\\b|\\blahik\\b|\\bmesbûk\\b|\\bmesbuk\\b|\\bimâmet\\b|\\bimamet\\b"
   },
   {
     "id": "ibadet_sehiv_secdesi",
@@ -65,28 +315,138 @@
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
     "unite_no": 4,
-    "tanim": "Namazda bir vacibin sehven (yanılarak) geciktirilmesi veya terk edilmesi, ya da bir farzın geciktirilmesi durumunda yapılan telafi secdesidir.",
-    "sifre": "Vacibin terki/gecikmesi + Farzın gecikmesi = Sehiv Secdesi (Farz terk edilirse namaz bozulur!).",
-    "pattern": "sehiv secdesi|yanılma secdesi"
+    "tanim": "Namazda yanılarak (sehven) veya unutarak vâciplerden birini terk etmek, geciktirmek ya da bir farzı geciktirmek durumunda namazın sonunda yapılan iki secde ve selâmdır.",
+    "sifre": "Yanılarak vacibi terk/tehir veya farzı tehir edince namaz sonunda yapılan telafi secdesi.",
+    "pattern": "\\bsehiv secdesi\\b|\\byanılma secdesi\\b"
   },
   {
-    "id": "ibadet_oruc",
-    "term": "Oruç (Savm)",
+    "id": "ibadet_tilavet_secdesi",
+    "term": "Tilâvet Secdesi",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 4,
+    "tanim": "Kur’ân-ı Kerîm’de geçen 14 secde âyetinden birini okuyan veya işiten mükellefin yapması gereken tek secdelik vacip ibadettir.",
+    "sifre": "Kur'an'daki 14 secde ayetini okuyunca veya dinleyince yapılan tek secde.",
+    "pattern": "\\btilâvet secdesi\\b|\\btilavet secdesi\\b|\\bsecde âyeti\\b"
+  },
+  {
+    "id": "ibadet_seferilik_ve_kasr",
+    "term": "Seferîlik ve Kasr-ı Salât",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 4,
+    "tanim": "Yaklaşık 90 km (18 fersah/3 günlük yol) mesafeye en az 15 gün kalmamak niyetiyle yola çıkan kimse seferî olur. Dört rekatlı farz namazları iki rekat olarak kısaltıp kılar (Kasr-ı salât). Hanefî mezhebinde bu kısaltma bir ruhsat değil, azîmet derecesinde vâciptir.",
+    "sifre": "En az 90 km yolculukta 4 rekatlı farzları 2 rekat kılmak (Kasr-ı salât).",
+    "pattern": "\\bseferî\\b|\\bseferi\\b|\\bseferîlik\\b|\\bkasr-ı salât\\b|\\bkasr\\b|\\bnamazı kısaltmak\\b"
+  },
+  {
+    "id": "ibadet_cem_i_salat",
+    "term": "Cem'-i Salât (Takdîm ve Te'hîr)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 4,
+    "tanim": "İki namazı aynı vakitte birleştirmektir. Cem'-i Takdîm: İkincisini birincinin vaktinde öne alarak kılmak (Öğle ile İkindi). Cem'-i Te'hîr: Birincisini geciktirip ikincisinin vaktinde kılmak (Akşam ile Yatsı). Hanefî mezhebine göre bu birleştirme sadece Hac esnasında Arafat ve Müzdelife'de caizdir.",
+    "sifre": "Öğle-ikindi veya akşam-yatsıyı birleştirmek; Hanefî'de yalnız hacda Arafat ve Müzdelife'de meşrudur.",
+    "pattern": "\\bcem'-i salât\\b|\\bcem-i salat\\b|\\bcem'-i takdîm\\b|\\bcem'-i te'hîr\\b|\\bnamazları birleştirmek\\b"
+  },
+  {
+    "id": "ibadet_vatan_turleri",
+    "term": "Vatan Türleri (Aslî, İkāmet, Süknâ)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 4,
+    "tanim": "Vatan-ı Aslî: Kişinin doğup büyüdüğü veya sürekli yerleşip aile kurduğu vatanıdır. Vatan-ı İkāmet: 15 günden fazla kalmaya niyet edilen yerdir (seferilik biter, mukim olunur). Vatan-ı Süknâ: 15 günden az kalınan yerdir (seferilik devam eder).",
+    "sifre": "Sürekli yerleşim = Vatan-ı Aslî; 15 günden çok kalınan = Vatan-ı İkāmet; 15 günden az = Vatan-ı Süknâ.",
+    "pattern": "\\bvatan-ı aslî\\b|\\bvatanı asli\\b|\\bvatan-ı ikāmet\\b|\\bvatanı ikamet\\b|\\bvatan-ı süknâ\\b|\\bvatanı sükna\\b"
+  },
+  {
+    "id": "ibadet_cuma_ve_zuhr_i_ahir",
+    "term": "Cuma Namazı ve Zuhr-i Âhir",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 4,
+    "tanim": "Cuma namazı hür, mukim, sıhhati yerinde erkeklere farz-ı ayındır; hutbe farzdır. Zuhr-i Âhir: Birden fazla camide Cuma kılınmasının geçerliliği konusundaki fıkhî ihtilafa binaen Cuma namazından sonra kılınan ve 'üzerimde kalan son öğle namazı' niyetini taşıyan 4 rekatlık ihtiyâti namazdır.",
+    "sifre": "Cuma namazının sıhhati konusundaki şüpheyi gidermek için kılınan son öğle namazı.",
+    "pattern": "\\bcuma namazı\\b|\\bzuhr-i âhir\\b|\\bzuhri ahir\\b|\\bhutbe\\b"
+  },
+  {
+    "id": "ibadet_cenaze_ve_nafileler",
+    "term": "Cenaze Namazı ve Nafile Namazlar",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 4,
+    "tanim": "Cenaze Namazı: Vefat eden Müslüman için yapılan, rükûsu ve secdesi olmayan, 4 tekbir ve duadan ibaret farz-ı kifâye namazdır. Nafileler: Teheccüd (gece), Duhâ/Kuşluk, Evvâbîn (akşam sonrası), Tahiyyetü'l-Mescid (camiye girince kılınan) ve İstihâre namazlarıdır.",
+    "sifre": "Rükûsuz ve secdesiz farz-ı kifâye dua namazı = Cenaze; sevap amaçlı nafileler (Teheccüd, Kuşluk, Evvâbîn).",
+    "pattern": "\\bcenaze namazı\\b|\\bteheccüd\\b|\\bteheccud\\b|\\bduhâ\\b|\\bkuşluk namazı\\b|\\bevvâbîn\\b|\\btahiyyetü'l-mescid\\b"
+  },
+  {
+    "id": "ibadet_savm_tanimi",
+    "term": "Savm (Oruç)",
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
     "unite_no": 5,
-    "tanim": "Fecr-i sadıktan (tan yerinin ağarmasından) akşam güneş batıncaya kadar niyet ederek yeme, içme ve cinsel ilişkiden uzak durmaktır.",
-    "sifre": "İmsak vaktinden iftara kadar yeme, içme ve cinsellikten uzak durma = Oruç.",
-    "pattern": "\\boruç\\b|\\borucun\\b|\\bsavm\\b|\\bimsak\\b|\\biftar\\b"
+    "tanim": "Sözlükte bir şeyden kendini alıkoymak, engellemek, imsak etmek demektir. Terim olarak mükellefin niyet ederek tan yerinin ağarmasından (fecr-i sâdık) güneşin batışına kadar yeme, içme ve cinsel ilişkiden nefsini alıkoymasıdır.",
+    "sifre": "Fecr-i sâdıktan akşam güneş batıncaya kadar yeme-içme ve şehevî arzulardan uzak durmak.",
+    "pattern": "\\bsavm\\b|\\boruç\\b|\\boruc\\b"
   },
   {
-    "id": "ibadet_itikaf",
-    "term": "İ’tikâf",
+    "id": "ibadet_oruc_cesitleri",
+    "term": "Oruç Çeşitleri",
     "subject": "AOF_IBADET",
     "ders": "İSLAM İBADET ESASLARI",
     "unite_no": 5,
-    "tanim": "Bir mescidde ibadet niyetiyle belirli bir süre kalarak dünyevi meşgalelerden uzaklaşmaktır (Ramazan’ın son 10 gününde sünnet-i müekkededir).",
-    "sifre": "Camiye kapanıp ibadete çekilme = İ’tikâf.",
-    "pattern": "\\bi’tikâf\\b|\\bitikaf\\b"
+    "tanim": "Farz: Ramazan orucu ve kazası. Vâcip: Adak (nezir) orucu ve bozulan nafilenin kazası. Nâfile (Müstehap): Aşûre, Pazartesi-Perşembe, Eyyâm-ı Bîz (her hicri ayın 13, 14, 15. günleri) ve Şevval ayı 6 gün orucu. Mekruh: Yalnız Cuma tutmak, Visâl orucu (iftar etmeksizin ardı ardına tutmak); Bayram günleri oruç tutmak tahrimen mekruhtur.",
+    "sifre": "Farz (Ramazan), Vâcip (adak), Nâfile (Eyyâm-ı bîz, Şevval 6 gün), Mekruh (Bayram günleri, Visâl).",
+    "pattern": "\\boruç çeşitleri\\b|\\badak orucu\\b|\\bnezir orucu\\b|\\beyyâm-ı bîz\\b|\\beyyam-ı biz\\b|\\bşevval orucu\\b|\\bvisâl orucu\\b|\\bvisal orucu\\b"
+  },
+  {
+    "id": "ibadet_imsak_ve_iftar",
+    "term": "İmsak ve İftar",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 5,
+    "tanim": "İmsak: Oruca başlama vaktidir; fecr-i sâdıkın (ikinci şafak) belirmesiyle başlar. İftar: Orucun bittiği ve açıldığı vakittir; güneşin tamamen batmasıyla (akşam namazı vakti) başlar.",
+    "sifre": "Oruca başlama vakti = İmsak (fecr-i sâdık); orucu açma vakti = İftar (güneşin batışı).",
+    "pattern": "\\bimsak\\b|\\biftar\\b"
+  },
+  {
+    "id": "ibadet_kaza_ve_keffaret",
+    "term": "Kaza ve Keffâret-i Savm",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 5,
+    "tanim": "Kaza: Mazeretle veya kazaen bozulan orucun yerine gününe gün bir gün oruç tutmaktır. Keffâret: Ramazan orucunu meşru mazeret olmaksızın bilerek, kasten yemek, içmek veya cinsi münasebetle bozan kimsenin sırasıyla bir köle azat etmesi, gücü yetmezse aralıksız 60 gün oruç tutması, buna da gücü yetmezse 60 fakiri sabah-akşam doyurmasıdır.",
+    "sifre": "Gününe gün tutmak = Kaza; bilerek bozmanın cezası = Keffâret (aralıksız 60 gün oruç).",
+    "pattern": "\\bkeffâret\\b|\\bkeffaret\\b|\\bkeffâret-i savm\\b|\\b60 gün oruç\\b|\\borucun kazası\\b"
+  },
+  {
+    "id": "ibadet_fidye_ve_fitre",
+    "term": "Fidye ve Sadaka-i Fıtr (Fitre)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 5,
+    "tanim": "Fidye: İhtiyarlık veya iyileşme ümidi olmayan müzmin hastalık sebebiyle oruç tutamayan kimsenin her bir gün için bir fakiri doyuracak miktarda ödediği meblağdır. Sadaka-i Fıtr (Fitre): Ramazan ayına kavuşup temel ihtiyaçları dışında nisap miktarı mala sahip Müslümanın bayram namazından önce vermesi vâcip olan can sadakasıdır.",
+    "sifre": "Tutulamayan oruç bedeli = Fidye; Ramazan bayramına yetişen varlıklı müminin can sadakası = Fitre.",
+    "pattern": "\\bfidye\\b|\\bsadaka-i fıtr\\b|\\bsadaka-i fıtır\\b|\\bfitre\\b"
+  },
+  {
+    "id": "ibadet_itikaf_sunneti",
+    "term": "İ'tikâf",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 5,
+    "tanim": "Sözlükte bir şeye bağlanmak, bir yerde kalmak demektir. Terim olarak ibadet ve zikir niyetiyle cemaatle namaz kılınan bir mescitte dünyevi işlerden uzak durarak belirli bir süre kalmaktır. Ramazan'ın son on gününde yapılması sünnet-i müekkededir.",
+    "sifre": "İbadet ve tefekkür niyetiyle mescitte inzivaya çekilmek; Ramazan son 10 gün sünnettir.",
+    "pattern": "\\bi'tikâf\\b|\\bi'tikaf\\b|\\bitikaf\\b"
+  },
+  {
+    "id": "ibadet_kurban_udhiyye",
+    "term": "Kurban (Udhiyye)",
+    "subject": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "unite_no": 5,
+    "tanim": "Sözlükte yaklaşmak demektir. Dinen zengin sayılan mükellefin Allah'a yaklaşmak niyetiyle Kurban Bayramı'nın ilk üç gününde (Eyyâm-ı nahr) kurbanlık şartlarını taşıyan bir hayvanı usulüne uygun olarak kesmesidir. Hanefî mezhebinde vaciptir.",
+    "sifre": "Kurban bayramı günlerinde Allah'a yakınlaşmak için kesilen hayvan (Udhiyye); Hanefî'de vâciptir.",
+    "pattern": "\\bkurban\\b|\\budhiyye\\b|\\beyyâm-ı nahr\\b|\\beyyam-ı nahr\\b"
   }
 ]

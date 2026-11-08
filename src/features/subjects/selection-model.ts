@@ -2,6 +2,8 @@ import { state } from '../../app/state.ts';
 import {
   AOIHL_SUBJECTS,
   AOF_SUBJECTS,
+  ILMIHAL_SUBJECTS,
+  GIRISIMCILIK_SUBJECTS,
   TYT_SUBJECTS,
   AYT_ALL_SUBJECTS,
   YDT_SUBJECTS,
@@ -10,6 +12,8 @@ import {
 
 export function getProgramSubjectList(programMode = state.programMode) {
   if (programMode === 'AOF') return AOF_SUBJECTS;
+  if (programMode === 'ILMIHAL') return ILMIHAL_SUBJECTS;
+  if (programMode === 'GIRISIMCILIK') return GIRISIMCILIK_SUBJECTS;
   if (programMode === 'TYT') return TYT_SUBJECTS;
   if (programMode === 'AYT') return AYT_ALL_SUBJECTS;
   if (programMode === 'YDT') return YDT_SUBJECTS;

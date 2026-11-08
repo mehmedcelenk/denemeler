@@ -8,7 +8,7 @@ const hostRevealHook: CardHook = {
   toolbar(q) {
     const canReveal = roomService.isHost();
     if (!canReveal || q.sekilli) return '';
-    return `<button class="btn-companion-icon" id="btnEye_${q.id}" data-action="toggle-answer-reveal" data-qid="${q.id}" title="Cevabı Göster / Gizle">${svgEye}</button>`;
+    return `<button class="btn-companion-icon" data-action="toggle-answer-reveal" data-qid="${q.id}" title="Cevabı Göster / Gizle">${svgEye}</button>`;
   },
 };
 
@@ -22,6 +22,6 @@ export function initClassroomCardHook(): void {
   roomService.subscribe(state => {
     if (state.isHost === previous) return;
     previous = state.isHost;
-    notifyStateChange('booklet:refresh');
+    notifyStateChange('booklet:refresh-hooks');
   });
 }

@@ -17,6 +17,7 @@
 - Döngüsel import ekleme. `shared` katmanı `features` veya `app` katmanına bağımlı olamaz.
 - Paylaşılan state yalnızca `src/app/state.ts` içinde tanımlanır. Geçici, özelliğe özel durum ilgili modülde kalır. Yeni global değişken ekleme.
 - `src/app/events.js` mevcut inline HTML olayları için uyumluluk sınırıdır. Yeni arayüz olaylarında `addEventListener` kullan. Mevcut inline fonksiyonların isimlerini değiştirirken bu dosyayı da güncelle.
+- Soru kartı içindeki alt elemanlara tekil HTML `id` (`bq_`, `stem_`, `opt_`, `banner_`, `qnum_`, `btn*_`, `formulaBanner_`) verme ve `document.getElementById` ile erişme; kitapçık ve Akıllı Tahta aynı anda aynı soruyu çizebildiğinden `src/features/booklet/card-query.ts` veya `[data-qid]` / `[data-role]` / `[data-action]` kapsamlaması kullan.
 - `index.html` uygulama kabuğudur. Buraya script/style blokları veya veri gömme.
 - `scripts/build_webapp.py` yalnızca `data/subjects/` ve `src/data/generated/` üretir; arayüz kaynaklarını üretmez.
 - Üretilen veriyi elle düzeltmek yerine veri üretim kaynağını bul. Kullanıcının mevcut JSON değişikliklerini koru.

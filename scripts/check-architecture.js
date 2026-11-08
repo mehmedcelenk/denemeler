@@ -14,6 +14,43 @@ const PLUGINS = new Set([
   'classroom', 'gamification', 'library', 'english',
   'tde', 'formulas', 'board', 'print', 'prayer', 'annotations', 'search',
 ]);
+const CARD_ID_PREFIX = '(?:bq|stem|opt|banner|qnum|btnMeal|btnTransTR|btnTransAR|btnXraySyntax|btnXrayPos|btnXraySound|btnXray|btnEliminateWrong|btnBoard|btnStar|btnCopy|btnEye|btnFormula|btnCompass|btnTrap|formulaBanner|hint|trap)_';
+const CARD_ID_ATTR_OR_SELECTOR_RE = new RegExp(`(?:\\bid\\s*=\\s*["']?|#)${CARD_ID_PREFIX}`);
+const CARD_ID_GET_RE = new RegExp(`^${CARD_ID_PREFIX}`);
+
+function getLiteralText(node) {
+  if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) return node.text;
+  if (ts.isTemplateExpression(node)) return node.head.text;
+  if (ts.isTemplateHead(node) || ts.isTemplateMiddle(node) || ts.isTemplateTail(node)) return node.text;
+  return null;
+}
+
+function hasForbiddenCardId(ast) {
+  let found = false;
+  function visit(node) {
+    if (found) return;
+    const text = getLiteralText(node);
+    if (text && CARD_ID_ATTR_OR_SELECTOR_RE.test(text)) {
+      found = true;
+      return;
+    }
+    if (
+      ts.isCallExpression(node)
+      && ts.isPropertyAccessExpression(node.expression)
+      && node.expression.name.text === 'getElementById'
+      && node.arguments.length > 0
+    ) {
+      const argText = getLiteralText(node.arguments[0]);
+      if (argText && CARD_ID_GET_RE.test(argText)) {
+        found = true;
+        return;
+      }
+    }
+    ts.forEachChild(node, visit);
+  }
+  visit(ast);
+  return found;
+}
 
 function hasAolStringLiteral(ast) {
   let found = false;
@@ -75,6 +112,11 @@ function scan(dir) {
     // Kural 8: Kalıcı depolama anahtarlarının tek kaynağı
     if (file !== storageKeysPath && hasAolStringLiteral(ast)) {
       errors.push(`🗝️ [Depolama Anahtarı] ${relFile}: 'aol_' literali yalnızca src/shared/storage-keys.ts içinde tanımlanabilir.`);
+    }
+
+    // Kural 11: Tekil Kart ID Yasağı (kitapçık + akıllı tahta çakışmasını önlemek için)
+    if (file.startsWith(root + path.sep) && hasForbiddenCardId(ast)) {
+      errors.push(`🆔 [Tekil Kart ID] ${relFile}: Soru kartı içindeki elemanlara bq_/stem_/opt_/btn*_ gibi ID veya getElementById verilemez; card-query.ts veya data-* öznitelikleri kullanın.`);
     }
 
     for (const node of ast.statements) {

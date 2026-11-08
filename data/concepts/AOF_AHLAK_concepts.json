@@ -1,62 +1,342 @@
 [
   {
-    "id": "ahlak_kavrami",
-    "term": "Ahlâk",
+    "id": "ahlak_hulk_kavrami",
+    "term": "Hulk ve Ahlâk",
     "subject": "AOF_AHLAK",
     "ders": "İSLAM AHLAK ESASLARI",
     "unite_no": 1,
-    "tanim": "Sözlükte seciyye, tabiat, huy, karakter demektir. Terim olarak nefiste yerleşmiş, düşünmeksizin fiillerin kolayca çıkmasını sağlayan manevi melekedir.",
-    "sifre": "Seciyye / huy / fıtrat + Kolayca ve düşünmeksizin yapılan fiiller = Ahlâk.",
-    "pattern": "\\bahlâk\\b|\\bahlak\\b|\\bhulk\\b|\\bseciyye\\b"
+    "tanim": "Hulk; seciyye, tabiat, mizaç ve huy demektir. Ahlâk ise hulk kelimesinin çoğuludur. Terim olarak insanın nefsinde yerleşen, fiillerin zorlama ve tereddüt olmaksızın kendiliğinden kolayca ortaya çıkmasını sağlayan manevî meleke ve davranış düzenidir.",
+    "sifre": "İnsanın nefsinde yerleşip fiillerin kolayca ve tereddütsüz doğmasını sağlayan meleke ve davranış düzeni.",
+    "pattern": "\\bhulk\\b|\\bahlâk\\b|\\bahlak\\b"
   },
   {
-    "id": "ahlak_kaynaklari",
-    "term": "İslâm Ahlâkının Kaynakları",
+    "id": "ahlak_meleke_kavrami",
+    "term": "Meleke",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 1,
+    "tanim": "Nefiste sürekli tekrarlanan davranışlar sonucunda kökleşen, alışkanlık haline gelen ve artık düşünmeye ihtiyaç kalmadan fiilin kendiliğinden sâdır olmasını sağlayan kalıcı yatkınlıktır.",
+    "sifre": "Ruh ve nefiste kökleşip düşünmeksizin fiil doğuran kalıcı kabiliyet ve alışkanlık.",
+    "pattern": "\\bmeleke\\b|\\bmelekeler\\b|\\bkökleşmiş huy\\b"
+  },
+  {
+    "id": "ahlak_husn_i_hulk",
+    "term": "Hüsn-i Hulk ve Sû-i Hulk",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 1,
+    "tanim": "Hüsn-i Hulk: Dinin ve akl-ı selîmin övdüğü, adalete, edebe ve fazilete dayanan güzel ahlaktır. Sû-i Hulk: Dinin ve aklın yerdiği, kötülük, hırs ve rezilet içeren çirkin ahlaktır.",
+    "sifre": "Güzel ve faziletli ahlak = Hüsn-i Hulk; kötü ve yerilen ahlak = Sû-i Hulk.",
+    "pattern": "\\bhüsn-i hulk\\b|\\bhüsnü'l-hulk\\b|\\bhusnu'l-hulk\\b|\\bsû-i hulk\\b|\\bsui hulk\\b|\\bgüzel ahlak\\b|\\bgüzel ahlâk\\b"
+  },
+  {
+    "id": "ahlak_din_ahlak_iliskisi",
+    "term": "Din ve Ahlâk İlişkisi",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 1,
+    "tanim": "Din 'akıl sahiplerini hüsn-i ihtiyarlarıyla bizzat hayırlara sevk eden ilâhî kanun' iken, ahlâk bu kanunun hayata geçmiş davranış düzenidir. Latince kökeni 'religio' (bağ) ile de uyumlu olarak insanı yaratıcısına bağlar.",
+    "sifre": "Din hayatın ilahi nizamı, ahlak ise bu nizamın yaşanarak kazanılan davranış düzenidir.",
+    "pattern": "\\bdin ve ahlâk\\b|\\bdin ve ahlak\\b|\\breligio\\b"
+  },
+  {
+    "id": "ahlak_fitrat_ve_saadet",
+    "term": "Fıtrat ve Saadet Gayesi",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 1,
+    "tanim": "İslam ahlak felsefesinde ahlakın nihai gayesi dünya ve âhiret mutluluğudur (saadet-i dâreyn). İnsan fıtratı iyiliği kabul etmeye elverişli olarak yaratılmıştır; eğitimle faziletler kazanılır.",
+    "sifre": "İslam ahlakının en yüksek hedefi iki cihan mutluluğudur (saadet).",
+    "pattern": "\\bsaadet gayesi\\b|\\bsaadet-i dâreyn\\b|\\ben yüksek iyi\\b|\\ben yüksek gaye\\b"
+  },
+  {
+    "id": "ahlak_tevatur_ahlak",
+    "term": "Ahlâkî Tevâtür",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 1,
+    "tanim": "İslam ahlakının sadece kitaplardaki teorik metinlerle değil, Hz. Peygamber’in ve sahâbenin hayatında bilfiil yaşanarak, katılımcı gözlem (müşahede) ve amelî tevatür yoluyla nesilden nesile aktarılmasıdır.",
+    "sifre": "Ahlakın yaşanarak ve görerek nesiller boyu tevatürle aktarılması.",
+    "pattern": "\\btevatür\\b|\\btevâtür\\b|\\bahlâkî tevatür\\b|\\bmüşahede yoluyla\\b"
+  },
+  {
+    "id": "ahlak_usve_i_hasene",
+    "term": "Üsve-i Hasene",
     "subject": "AOF_AHLAK",
     "ders": "İSLAM AHLAK ESASLARI",
     "unite_no": 2,
-    "tanim": "Kur’an-ı Kerim ve Hz. Peygamber’in sünnetidir; akıl ve vicdan ise bu kaynakları kavrayan ve onaylayan melekelerdir.",
-    "sifre": "Temel iki kaynak: Kur’an ve Sünnet.",
-    "pattern": "ahlâkın kaynakları|ahlakın kaynakları"
+    "tanim": "En güzel ve kusursuz örnek demektir. Ahzâb suresi 21. âyette Hz. Peygamber’in şahsında tecelli eden ahlakî mükemmellik ve bütün Müslümanlar için takip edilmesi gereken en yüce örneklik modelidir.",
+    "sifre": "Hz. Peygamber'in temsil ettiği en güzel ahlakî örneklik modeli.",
+    "pattern": "\\büsve-i hasene\\b|\\busve-i hasene\\b|\\ben güzel örnek\\b"
   },
   {
-    "id": "ahlak_husun_kubuh",
-    "term": "Hüsn ve Kubuh",
+    "id": "ahlak_edebul_mufred",
+    "term": "Buhârî: el-Edebü'l-Müfred",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "İmam Buhârî’nin sadece ahlâk, anne-baba hakkı, sıla-i rahim, komşuluk, edep ve görgü kurallarına dair hadisleri topladığı müstakil hadis klasiğidir.",
+    "sifre": "İmam Buhârî'nin ahlak ve görgü hadislerini topladığı eseri.",
+    "pattern": "\\bel-edebü'l-müfred\\b|\\bel-edebul mufred\\b|\\bedebü'l-müfred\\b"
+  },
+  {
+    "id": "ahlak_kitabuz_zuhd",
+    "term": "Abdullah b. Mübârek: Kitâbü'z-Zühd",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "Abdullah b. el-Mübârek ve Ahmed b. Hanbel tarafından telif edilen, dünyevileşmeye karşı zühd, vera', rekâik ve kalp inceliğine dair hadisleri toplayan erken dönem ahlak eseridir.",
+    "sifre": "Abdullah b. Mübarek ve Ahmed b. Hanbel'in zühd ve ahlak hadisleri eseri.",
+    "pattern": "\\bkitâbü'z-zühd\\b|\\bkitabüz-zühd\\b|\\bkitabuz zühd\\b"
+  },
+  {
+    "id": "ahlak_edebud_dunya",
+    "term": "Mâverdî: Edebü'd-Dünyâ ve'd-Dîn",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "Büyük fıkıhçı ve ahlakçı Mâverdî’nin din ve dünya dengesini, bireysel erdemleri ve toplumsal nizamı sistematik olarak ele aldığı klasik şaheserdir.",
+    "sifre": "Mâverdî'nin din-dünya dengesini kuran meşhur ahlak kitabı.",
+    "pattern": "\\bedebü'd-dünyâ ve'd-dîn\\b|\\bedebud-dünya\\b|\\bmâverdî\\b|\\bmaverdi\\b"
+  },
+  {
+    "id": "ahlak_adabul_bahs",
+    "term": "Âdâbü'l-Bahs ve Edebü'l-Kazâ",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "Âdâbü'l-bahs ve'l-münâzara: Tartışma, münazara ve ilmî araştırma ahlakıdır. Edebü'l-kazâ: Hâkimlik, yargılama ve muhakeme hukukunun ahlaki ilkeleridir. Osmanlı'da medreselerde çok geniş okutulmuştur.",
+    "sifre": "Tartışma ahlakı (Âdâbü'l-bahs) ve yargılama/hâkimlik ahlakı (Edebü'l-kazâ).",
+    "pattern": "\\bâdâbü'l-bahs\\b|\\badabul bahs\\b|\\bedebü'l-kazâ\\b|\\bedebul kaza\\b"
+  },
+  {
+    "id": "ahlak_tasavvuf_klasikleri",
+    "term": "Tasavvufî Ahlâk Klasikleri",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "Hâris el-Muhâsibî: er-Riâye li-Hukûkıllâh (nefis murakabesi); Serrâc: el-Lüma'; Ebû Tâlib el-Mekkî: Kūtu'l-Kulûb; Kuşeyrî: er-Risâle; Hücvîrî: Keşfü'l-Mahcûb; Gazzâlî: İhyâu Ulûmi'd-Dîn; Sühreverdî: Avârifü'l-Meârif; Mevlânâ: Mesnevî.",
+    "sifre": "Tasavvuf büyüklerinin nefis terbiyesi ve ahlak klasikleri (Riâye, Kūtu'l-Kulûb, Risâle, İhyâ, Mesnevî).",
+    "pattern": "\\ber-riâye\\b|\\ber-riaye\\b|\\bkūtu'l-kulûb\\b|\\bkutul kulub\\b|\\bel-lüma'\\b|\\bel-luma\\b|\\bavârifü'l-meârif\\b|\\bi̇hyâ\\b|\\bihyâ\\b|\\bihyau ulumid-din\\b"
+  },
+  {
+    "id": "ahlak_kindi_ve_razi",
+    "term": "Kindî ve Ebû Bekir er-Râzî",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "Kindî: Risâle fi'l-Hîle li-Def'i'l-Ahzân (Üzüntüyü yenme yolları) adlı eseriyle felsefi ahlakın öncüsüdür. Ebû Bekir er-Râzî: et-Tıbbü'r-Rûhânî (Ruh Hekimliği) eseriyle nefis hastalıklarının tedavisini incelemiştir.",
+    "sifre": "Kindî (Def'u'l-ahzân - üzüntüyü giderme) ve Râzî (et-Tıbbü'r-Rûhânî - ruh hekimliği).",
+    "pattern": "\\bkindî\\b|\\bkindi\\b|\\bdef'i'l-ahzân\\b|\\bdef'ul ahzan\\b|\\bet-tıbbü'r-rûhânî\\b|\\bettibbur ruhani\\b"
+  },
+  {
+    "id": "ahlak_farabi_ve_ibn_miskeveyh",
+    "term": "Fârâbî ve İbn Miskeveyh",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "Fârâbî: Tahsîlü's-Saâde ve Fusûlü'l-Medenî ile mutluluk ve siyaset ahlakını temellendirdi. İbn Miskeveyh: Tehzîbü'l-Ahlâk eseriyle İslâm ahlak felsefesini ilk kez müstakil ve sistematik bir disiplin haline getiren kurucudur.",
+    "sifre": "Fârâbî (Tahsîlü's-saâde) ve İbn Miskeveyh (Tehzîbü'l-Ahlâk - ahlak felsefesinin kurucusu).",
+    "pattern": "\\bfârâbî\\b|\\bfarabi\\b|\\btahsîlü's-saâde\\b|\\btahsilus saade\\b|\\btehzîbü'l-ahlâk\\b|\\btehzibul ahlak\\b|\\bibn miskeveyh\\b"
+  },
+  {
+    "id": "ahlak_tusi_ve_kinalizade",
+    "term": "Nasîrüddin et-Tûsî ve Kınalızâde Ali Efendi",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 2,
+    "tanim": "Tûsî: Farsça Ahlâk-ı Nâsırî’yi yazdı. Kınalızâde Ali Efendi: Osmanlı'nın ilk Türkçe ahlak kitabı olan Ahlâk-ı Alâî’yi telif etti. Eser üç kısımdan oluşur: Ahlak-ı Ferdî (bireysel), Ahlak-ı Âile (ev idaresi) ve Ahlak-ı Siyâsî (devlet yönetimi).",
+    "sifre": "Tûsî (Ahlâk-ı Nâsırî) ve Kınalızâde (Ahlâk-ı Alâî: ferdî ahlak, aile idaresi, siyaset).",
+    "pattern": "\\bahlâk-ı nâsırî\\b|\\bahlak-ı nasıri\\b|\\bahlâk-ı alâî\\b|\\bahlak-ı alai\\b|\\bkınalızâde\\b|\\bkınalızade\\b|\\bnasîrüddin et-tûsî\\b"
+  },
+  {
+    "id": "ahlak_kuralci_deontoloji",
+    "term": "Kuralcı (Deontolojik) Ahlâk Teorisi",
     "subject": "AOF_AHLAK",
     "ders": "İSLAM AHLAK ESASLARI",
     "unite_no": 3,
-    "tanim": "Bir fiilin ahlaken iyi (hüsn / güzel) veya kötü (kubuh / çirkin) olmasıdır. Eş’arîlere göre vahiy belirler; Mu’tezile’ye göre akıl da idrak edebilir.",
-    "sifre": "İyilik (Hüsn) + Kötülük (Kubuh) = Hüsn ve Kubuh meselesi.",
-    "pattern": "hüsn ve kubuh|husun ve kubuh|hüsn|kubuh"
+    "tanim": "Bir eylemin ahlaki değerini doğuracağı sonuçlara göre değil, kendisinde taşıdığı ilke, vazife ve ödeve uygunluğuna göre belirleyen teoridir (Kant'ın ödev ahlakı). Eylemin kendisi sırf doğru ve ödev olduğu için yapılmalıdır.",
+    "sifre": "Sonuca değil, eylemin ilkeye ve ödeve uygunluğuna bakan ahlak teorisi (Deontoloji).",
+    "pattern": "\\bkuralcı\\b|\\bdeontolojik\\b|\\bdeontoloji\\b|\\bödev ahlakı\\b|\\bodev ahlaki\\b"
   },
   {
-    "id": "ahlak_dort_temel_erdem",
-    "term": "Dört Temel Fazilet (Erdem)",
+    "id": "ahlak_karakterci_teleoloji",
+    "term": "Karakterci (Teleolojik / Aretaik) Ahlâk Teorisi",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 3,
+    "tanim": "Kurallardan ziyade failin erdemli bir karaktere ve melekeye sahip olmasını ve eylemin gayesini (saadet ve mutluluk) merkeze alan erdem ahlakıdır (Aristoteles, İbn Miskeveyh, Fârâbî).",
+    "sifre": "Erdemli karaktere ve nihai saadet gayesine odaklanan teori (Teleolojik/Aretaik ahlak).",
+    "pattern": "\\bkarakterci\\b|\\bteleolojik\\b|\\baretaik\\b|\\berdem ahlakı\\b"
+  },
+  {
+    "id": "ahlak_faydacilik_ve_hazcilik",
+    "term": "Faydacılık (Utilitarianism) ve Hazcılık (Hedonizm)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 3,
+    "tanim": "Hazcılık (Hedonizm): Hayatın nihai amacının bedensel veya zihinsel haz olduğunu savunan görüştür. Faydacılık (Yararcılık): 'En çok sayıda insana en yüksek fayda ve mutluluğu sağlayan eylem iyidir' diyen sonuçsalcı teoridir (Bentham, J.S. Mill).",
+    "sifre": "Hazzı amaç edinen = Hedonizm; toplumun en yüksek faydasını amaç edinen = Faydacılık.",
+    "pattern": "\\bfaydacılık\\b|\\bfaydacilik\\b|\\butilitarianism\\b|\\bhazcılık\\b|\\bhedonizm\\b"
+  },
+  {
+    "id": "ahlak_husun_kubuh_meselesi",
+    "term": "Hüsün ve Kubuh (İyi ve Kötü)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 3,
+    "tanim": "Hüsün: Güzel ve iyi olan fiiller; Kubuh: Çirkin ve kötü olan fiillerdir. Kelam ve fıkıh usulünde bir şeyin ahlaken iyi veya kötü oluşunun akılla mı yoksa sadece vahiyle mi bilineceği meselesidir.",
+    "sifre": "İyi (hüsün) ve kötü (kubuh) fiillerin ontolojik mahiyeti ve bilgi kaynağı.",
+    "pattern": "\\bhüsün\\b|\\bkubuh\\b|\\bhüsün ve kubuh\\b|\\bhüsün-kubuh\\b|\\bhusun-kubuh\\b"
+  },
+  {
+    "id": "ahlak_nassi_ve_mutezili_ekol",
+    "term": "Nassî ve Mu'tezilî Hüsün-Kubuh",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 3,
+    "tanim": "Nassî Ekol (Selef): İyi ve kötü tamamen ilahi nassa bağlıdır, akıl bağımsız tayin edemez. Mu'tezile (Akılcı): İyi ve kötü eşyanın zâtında mevcuttur (zâtîdir); akıl vahiy gelmese dahi bir fiilin iyi veya kötü olduğunu bilebilir ve insan bundan sorumludur.",
+    "sifre": "Nassî ekol: Yalnız vahiy belirler; Mu'tezile: İyi-kötü eşyanın zatındadır, akıl vahiy olmadan da bilir.",
+    "pattern": "\\bnassî ekol\\b|\\bnassi ekol\\b|\\bmu'tezilî ekol\\b|\\bmutezile ekolü\\b"
+  },
+  {
+    "id": "ahlak_esari_ve_maturidi_ekol",
+    "term": "Eş'arî ve Mâtürîdî Hüsün-Kubuh",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 3,
+    "tanim": "Eş'arî: Fiillerin kendinde iyi veya kötülük yoktur; Allah emrettiği için iyi, yasakladığı için kötüdür. Vahiy olmadan akıl iyiyi ve kötüyü bilemez. Mâtürîdî: Fiillerin zâtında iyilik ve kötülük vardır ve akıl bunu kavrayabilir; ancak dinî mükellefiyet ve uhrevî mükafat/ceza ancak vahiy ve peygamber tebliğiyle gerçekleşir.",
+    "sifre": "Eş'arî: Emredildiği için iyi, yasaklandığı için kötüdür; Mâtürîdî: Zatında iyidir akıl kavrar, ama sevap/ceza vahiyledir.",
+    "pattern": "\\beş'arî ekol\\b|\\beşari ekol\\b|\\bmâtürîdî ekol\\b|\\bmaturidi ekolü\\b"
+  },
+  {
+    "id": "ahlak_irade_ve_ihtiyar",
+    "term": "İrâde ve İhtiyâr",
     "subject": "AOF_AHLAK",
     "ders": "İSLAM AHLAK ESASLARI",
     "unite_no": 4,
-    "tanim": "İslam ahlak felsefesinde nefsin üç gücünün dengelenmesiyle oluşan dört ana erdemdir: Hikmet (akıl gücü dengesi), Şecaat (öfke gücü dengesi), İffet (şehvet gücü dengesi) ve bunların birleşimi olan Adalet.",
-    "sifre": "Hikmet + Şecaat + İffet + Adalet = 4 Ana Fazilet.",
-    "pattern": "hikmet, şecaat|şecaat|iffet|faziletler|temel erdemler"
+    "tanim": "İrâde: İnsanın birden fazla seçenek arasından birini seçme ve yönelme gücüdür. İhtiyâr: İki veya daha çok seçenek arasından hayırlı, iyi ve üstün olanı hür iradesiyle tercih etmektir. Bir eylemin ahlaki sayılabilmesi için ihtiyar şarttır.",
+    "sifre": "Seçme kabiliyeti = İrade; hayırlı ve iyi olanı hür iradeyle tercih etmek = İhtiyâr.",
+    "pattern": "\\birâde\\b|\\birade\\b|\\bihtiyâr\\b|\\bihtiyar\\b"
   },
   {
-    "id": "ahlak_ihlas",
-    "term": "İhlâs",
+    "id": "ahlak_niyet_ve_kasit",
+    "term": "Niyet ve Kasstatus",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 4,
+    "tanim": "Niyet: Bir fiili sırf Allah rızası ve ahlaki bir gaye ile yapmayı kalben kararlaştırmaktır ('Ameller ancak niyetlere göredir' hadisi). Dış görünüşü hayır olan bir eylem kötü niyetle işlenirse ahlaki değerini kaybeder.",
+    "sifre": "Eylemin değerini ve istikametini belirleyen kalbî yöneliş ve kast.",
+    "pattern": "\\bniyet\\b|\\bniyetler\\b|\\bkasstatus\\b|\\bkast\\b"
+  },
+  {
+    "id": "ahlak_mukellefiyet_ve_mesuliyet",
+    "term": "Mükellefiyet ve Mesuliyet (Sorumluluk)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 4,
+    "tanim": "Akıl ve hür irade sahibi her insanın kendi yapıp ettiklerinin sonuçlarına katlanması ve dünyada ve âhirette Allah'a hesap vermesidir. İrade ve hürriyetin olmadığı yerde (baskı, ikrah, delilik, uyku) ahlaki sorumluluk doğmaz.",
+    "sifre": "Hür iradeyle yapılan fiillerin sonuçlarını üstlenme ve hesap verme bilinci.",
+    "pattern": "\\bmükellefiyet\\b|\\bmesuliyet\\b|\\bsorumluluk\\b"
+  },
+  {
+    "id": "ahlak_vicdan_ve_levvame",
+    "term": "Vicdan ve Nefs-i Levvâme",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 4,
+    "tanim": "Vicdan, insanda doğuştan var olan ahlaki seziş ve iç denetim mekanizmasıdır. Kur'an'da Kıyâme suresinde geçen 'Nefs-i Levvâme', sahibini işlediği kusurlardan ötürü kınayan, hesaba çeken ve pişmanlığa sevk eden uyanık vicdandır.",
+    "sifre": "Kişiyi kötülükten alıkoyan iç denetim mekanizması ve kendini kınayan nefis (Nefs-i Levvâme).",
+    "pattern": "\\bvicdan\\b|\\bnefs-i levvâme\\b|\\bnefsi levvame\\b|\\blevvâme\\b"
+  },
+  {
+    "id": "ahlak_vazife_ve_odev",
+    "term": "Vazife ve Ahlâkî Norm",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 4,
+    "tanim": "İnsanın Allah'a, kendisine, ailesine, toplumuna ve tabiata karşı yerine getirmekle yükümlü olduğu görevlerdir. Norm ise bu görevlerin davranış kalıbına dönüşmüş ilke ve kurallarıdır.",
+    "sifre": "İnsanın yerine getirmekle yükümlü olduğu dinî ve ahlakî görevler bütünü.",
+    "pattern": "\\bvazife\\b|\\bahlâkî norm\\b|\\bahlaki norm\\b|\\bödev\\b"
+  },
+  {
+    "id": "ahlak_itidal_altin_orta",
+    "term": "İ'tidâl (Vasat / Altın Orta)",
     "subject": "AOF_AHLAK",
     "ders": "İSLAM AHLAK ESASLARI",
     "unite_no": 5,
-    "tanim": "Tüm amelleri, ibadetleri ve ahlaki davranışları sadece ve sadece Allah rızası için yapmak, riya ve gösterişten arındırmaktır.",
-    "sifre": "Yalnızca Allah rızası için amel = İhlâs (Zıttı: Riya).",
-    "pattern": "\\bihlâs\\b|\\bihlas\\b|\\briyâ\\b|\\briya\\b"
+    "tanim": "Her türlü aşırılıktan (ifrat) ve yetersizlikten (tefrit) uzak durarak orta yolu (vasat) bulmaktır. İslam ahlak felsefesinde her fazilet iki aşırı reziletin tam ortasındaki dengedir.",
+    "sifre": "İfrat ve tefritin ortasındaki dengeli yol; faziletin temel ölçüsü.",
+    "pattern": "\\bi'tidâl\\b|\\bitidâl\\b|\\bitidal\\b|\\baltın orta\\b|\\borta yol\\b|\\bifrat ve tefrit\\b"
   },
   {
-    "id": "ahlak_tevazu",
-    "term": "Tevâzu",
+    "id": "ahlak_hikmet_fazileti",
+    "term": "Hikmet (Cerbeze ve Humuk)",
     "subject": "AOF_AHLAK",
     "ders": "İSLAM AHLAK ESASLARI",
     "unite_no": 5,
-    "tanim": "Alçak gönüllü olmak, hakkı kabul etmek ve insanlara karşı kibir ve üstünlük taslamamaktır.",
-    "sifre": "Alçak gönüllülük = Tevâzu (Zıttı: Kibir).",
-    "pattern": "\\btevâzu\\b|\\btevazu\\b|\\bkibir\\b"
+    "tanim": "Kuvve-i Akliyyenin (düşünme gücü) dengeli hali olan fazilettir; hakkı bâtıldan, doğruyu yanlıştan ayırt etmektir. İfratı Cerbeze (kurnazlık, hilekârlık, demagoji); tefriti ise Humuktur (ahmaklık, bönlük, anlayışsızlık).",
+    "sifre": "Akıl gücünün erdemi = Hikmet; ifratı = Cerbeze (kurnazlık/hile), tefriti = Humuk (ahmaklık).",
+    "pattern": "\\bhikmet\\b|\\bcerbeze\\b|\\bhumuk\\b|\\bkuvve-i akliyye\\b"
+  },
+  {
+    "id": "ahlak_secaat_fazileti",
+    "term": "Şecâat (Tehevvür ve Cübn)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 5,
+    "tanim": "Kuvve-i Gazabiyyenin (öfke ve savunma gücü) dengeli hali olan yiğitlik ve cesaret erdemidir. İfratı Tehevvür (delice atılganlık, gözü karalık, saldırganlık); tefriti ise Cübndür (korkaklık, yılgınlık, pısırıklık).",
+    "sifre": "Öfke gücünün erdemi = Şecâat (cesaret); ifratı = Tehevvür (saldırganlık), tefriti = Cübn (korkaklık).",
+    "pattern": "\\bşecâat\\b|\\bsecaat\\b|\\btehevvür\\b|\\btehevvur\\b|\\bcübn\\b|\\bcubn\\b|\\bkuvve-i gazabiyye\\b"
+  },
+  {
+    "id": "ahlak_iffet_fazileti",
+    "term": "İffet (Fücûr ve Humûd)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 5,
+    "tanim": "Kuvve-i Şeheviyyenin (arzu ve şehvet gücü) aklın ve dinin kontrolünde dengelenmesiyle oluşan ölçülülük ve haya erdemidir. İfratı Fücûr (azgınlık, doyumsuzluk, ahlaksızlık); tefriti ise Humûddur (hissizlik, istek ve şehvetin tamamen sönmesi).",
+    "sifre": "Arzu gücünün erdemi = İffet; ifratı = Fücûr (azgınlık/doyumsuzluk), tefriti = Humûd (isteksizlik/hissizlik).",
+    "pattern": "\\biffet\\b|\\bfücûr\\b|\\bfucur\\b|\\bhumûd\\b|\\bhumud\\b|\\bkuvve-i şeheviyye\\b"
+  },
+  {
+    "id": "ahlak_adalet_fazileti",
+    "term": "Adâlet (Zulüm ve Cevr)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 5,
+    "tanim": "Hikmet, şecâat ve iffet faziletlerinin tam bir uyum ve ahenk içinde bulunmasıyla ortaya çıkan en üstün ana erdemdir. Her hak sahibine hakkını vermek ve her şeyi layık olduğu yere koymaktır. Zıddı Zulüm ve Cevrdir.",
+    "sifre": "Üç temel gücün dengelenmesiyle doğan en üstün erdem; zıddı zulüm ve cevrdir.",
+    "pattern": "\\badâlet\\b|\\badalet\\b|\\bzulüm\\b|\\bzulum\\b|\\bcevr\\b"
+  },
+  {
+    "id": "ahlak_ihlas_ve_riya",
+    "term": "İhlâs ve Riyâ (Süm'a)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 5,
+    "tanim": "İhlâs: Bütün amel ve ibadetleri sırf Allah rızası için katıksız ve samimiyetle yapmaktır. Riyâ: İbadet veya hayırları insanlara gösteriş olsun, takdir etsinler diye yapmaktır (küçük şirk). Süm'a ise yaptığı iyiliği başkalarına duyurma hevesidir.",
+    "sifre": "Sırf Allah rızası için samimiyet = İhlâs; gösteriş = Riyâ; övgü için duyurmak = Süm'a.",
+    "pattern": "\\bihlâs\\b|\\bihlas\\b|\\briyâ\\b|\\briya\\b|\\bsüm'a\\b|\\bsum'a\\b"
+  },
+  {
+    "id": "ahlak_tevazu_ve_kibir",
+    "term": "Tevâzu ve Kibir (Ucb)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 5,
+    "tanim": "Tevâzu: Kendini başkalarından üstün görmemek, alçakgönüllü olmaktır. Kibir: Kendini büyük görüp hakkı inkâr etmek ve insanları hor/küçük görmektir. Ucb: Başkalarını hesaba katmadan kendi amellerini ve meziyetlerini beğenip kendine hayran olmaktır.",
+    "sifre": "Alçakgönüllülük = Tevâzu; kendini üstün görüp başkasını hor görmek = Kibir; ameline güvenip kendini beğenmek = Ucb.",
+    "pattern": "\\btevâzu\\b|\\btevazu\\b|\\bkibir\\b|\\bucb\\b"
+  },
+  {
+    "id": "ahlak_comertlik_ve_buhl",
+    "term": "Cömertlik (Sehâvet / Îsâr) ve Buhl (Cimrilik)",
+    "subject": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "unite_no": 5,
+    "tanim": "Sehâvet: Malını hak yolunda ve muhtaçlara gönül hoşluğuyla harcamaktır. Îsâr: Kendisi muhtaç olduğu halde başkasını nefsine tercih ederek ona vermektir (cömertliğin zirvesi). Buhl: Malı saklayıp hak sahiplerine vermekten kaçınmaktır (cimrilik).",
+    "sifre": "Gönül hoşluğuyla vermek = Sehâvet; muhtaçken başkasını kendine tercih etmek = Îsâr; cimrilik = Buhl.",
+    "pattern": "\\bsehâvet\\b|\\bsehavet\\b|\\bîsâr\\b|\\bisar\\b|\\bcömertlik\\b|\\bbuhl\\b|\\bcimrilik\\b"
   }
 ]

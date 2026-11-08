@@ -1,3 +1,20 @@
+import { onStateChange } from '../../app/state.ts';
+import type { Choice } from '../../data/question.ts';
+import { getCardChoiceText, getCardStem, getQuestionCards } from '../booklet/card-query.ts';
+import {
+  addHighlightRecord,
+  captureHighlightRecord,
+  getHighlightsForQuestion,
+  removeHighlightRecord,
+  resolveHighlightRange,
+  wrapRangeWithMark,
+  type HighlightColor,
+  type HighlightRecord,
+  type HighlightTarget,
+} from './highlight-store.ts';
+
+export type { HighlightColor };
+
 let actionBubble: HTMLElement | null = null;
 let currentRange: Range | null = null;
 
@@ -9,7 +26,72 @@ function removeActionBubble(): void {
   currentRange = null;
 }
 
-export type HighlightColor = 'yellow' | 'red';
+interface SlotContext {
+  readonly qid: number;
+  readonly target: HighlightTarget;
+  readonly slotEl: HTMLElement;
+}
+
+function getSlotContext(containerNode: Node): SlotContext | null {
+  const el = (containerNode.nodeType === Node.ELEMENT_NODE
+    ? containerNode
+    : containerNode.parentElement) as HTMLElement | null;
+  if (!el) return null;
+
+  const card = el.closest<HTMLElement>('.booklet-question[data-qid]');
+  const qid = card?.dataset.qid ? Number(card.dataset.qid) : NaN;
+  if (!card || Number.isNaN(qid)) return null;
+
+  const stemEl = el.closest<HTMLElement>('.q-stem-text');
+  if (stemEl && card.contains(stemEl)) {
+    return { qid, target: 'stem', slotEl: stemEl };
+  }
+
+  const choiceTextEl = el.closest<HTMLElement>('.choice-text-content');
+  const letter = choiceTextEl?.closest<HTMLElement>('.optical-choice-row')?.dataset.letter as Choice | undefined;
+  if (choiceTextEl && letter && card.contains(choiceTextEl)) {
+    return { qid, target: letter, slotEl: choiceTextEl };
+  }
+
+  return null;
+}
+
+function applyRecordToSlot(slotEl: HTMLElement, record: HighlightRecord): void {
+  if (slotEl.querySelector(`mark.user-highlight[data-hl-id="${record.id}"]`)) return;
+  try {
+    const range = resolveHighlightRange(slotEl, record);
+    if (range) wrapRangeWithMark(range, record.color, record.id);
+  } catch (err) {
+    console.warn('[Highlighter] Vurgu geri yüklenemedi:', err);
+  }
+}
+
+export function restoreHighlightsOnCards(cards: readonly HTMLElement[]): void {
+  for (const card of cards) {
+    const qid = card.dataset.qid ? Number(card.dataset.qid) : NaN;
+    if (Number.isNaN(qid)) continue;
+
+    const records = getHighlightsForQuestion(qid);
+    if (records.length === 0) continue;
+
+    for (const record of records) {
+      const slotEl = record.target === 'stem'
+        ? getCardStem(card)
+        : getCardChoiceText(card, record.target);
+      if (slotEl) applyRecordToSlot(slotEl, record);
+    }
+  }
+}
+
+function unwrapMarkElement(mark: HTMLElement): void {
+  const parent = mark.parentNode;
+  if (!parent) return;
+  while (mark.firstChild) {
+    parent.insertBefore(mark.firstChild, mark);
+  }
+  parent.removeChild(mark);
+  parent.normalize();
+}
 
 /** Seçili alana fosfor uygular */
 export function applyHighlightToSelection(color: HighlightColor = 'yellow'): void {
@@ -29,15 +111,22 @@ export function applyHighlightToSelection(color: HighlightColor = 'yellow'): voi
     return;
   }
 
-  try {
-    const mark = document.createElement('mark');
-    mark.className = `user-highlight hl-${color}`;
-    mark.title = 'Vurguyu kaldırmak için tıkla';
+  const slotCtx = getSlotContext(container);
+  let savedRecord: HighlightRecord | null = null;
+  if (slotCtx) {
+    savedRecord = captureHighlightRecord(range, slotCtx.slotEl, slotCtx.qid, slotCtx.target, color);
+  }
 
-    // Surround or extract content into mark
-    const content = range.extractContents();
-    mark.appendChild(content);
-    range.insertNode(mark);
+  try {
+    const hlId = savedRecord ? savedRecord.id : `hl_local_${Date.now().toString(36)}`;
+    wrapRangeWithMark(range, color, hlId);
+    if (savedRecord) {
+      addHighlightRecord(savedRecord);
+      const siblingCards = getQuestionCards(savedRecord.qid).filter(
+        c => !c.contains(slotCtx?.slotEl ?? null),
+      );
+      restoreHighlightsOnCards(siblingCards);
+    }
   } catch (err) {
     console.warn('[Highlighter] Metin sarmalanamadı:', err);
   }
@@ -56,15 +145,18 @@ function handleHighlightClick(e: MouseEvent): void {
   e.preventDefault();
   e.stopPropagation();
 
-  // Mark etiketini kaldırıp içindeki düğümleri ebeveynine taşı
-  const parent = target.parentNode;
-  if (!parent) return;
+  const hlId = target.dataset.hlId;
+  const qidStr = target.closest<HTMLElement>('.booklet-question[data-qid]')?.dataset.qid;
+  const qid = qidStr ? Number(qidStr) : NaN;
 
-  while (target.firstChild) {
-    parent.insertBefore(target.firstChild, target);
+  unwrapMarkElement(target);
+
+  if (hlId && !Number.isNaN(qid)) {
+    removeHighlightRecord(qid, hlId);
+    getQuestionCards(qid).forEach(card => {
+      card.querySelectorAll<HTMLElement>(`mark.user-highlight[data-hl-id="${hlId}"]`).forEach(unwrapMarkElement);
+    });
   }
-  parent.removeChild(target);
-  parent.normalize();
 }
 
 /** Seçim yapıldığında mini butonları konumlandırır */
@@ -176,4 +268,10 @@ export function initTextHighlighter(): void {
       removeActionBubble();
     }
   }, { passive: true });
+
+  onStateChange('booklet:rendered', payload => {
+    if (!payload || typeof payload !== 'object' || !('cards' in payload)) return;
+    const cards = Array.isArray(payload.cards) ? payload.cards : [];
+    restoreHighlightsOnCards(cards.filter((el): el is HTMLElement => el instanceof HTMLElement));
+  });
 }

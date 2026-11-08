@@ -1,0 +1,275 @@
+[
+  {
+    "id": 60732,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 1,
+    "soru": "“Geçmiş veya şimdiki zamana ait bir iş üzerine bilerek yalan yere yemin etmektir. Bu yemin, sahibini günaha daldırdığı için bu adı almıştır. Kefareti yoktur, tevbe gerekir.” Bu tarifte bahsedilen yemin çeşidi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Yemin-i Gamûs",
+      "B": "Yemin-i Münakide",
+      "C": "Yemin-i Lağv",
+      "D": "Hiçbiri"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Keffaret, Fidye ve Iskat",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60733,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 2,
+    "soru": "Verilen yemin çeşitlerinin kavramlarıyla eşleştirilmesi aşağıdakilerden hangisinde sırasıyla doğru olarak verilmiştir? Yeminler 3 çeşittir; 1-) Yanlışlıkla doğru olduğu sanılarak yapılan yemindir 2-) Mümkün olan ve geleceğe ait bir şey hakkında yapılan yemindir 3-) Geçmiş zamanda yapılmış veya yapılmamış bir iş hakkında bile bile, kasten ve yalan yere yapılan yemindir.",
+    "secenekler": {
+      "A": "Gamus yemini- Mün’akid yemin- Lağv yemini",
+      "B": "Lağv yemini- Mün’akid yemin- Gamus yemini",
+      "C": "Lağv yemini- Gamus yemini- Mün’akid yemin",
+      "D": "Mün’akid yemin- Lağv yemini- Gamus yemini"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Yemin Çeşitleri ve Keffareti",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60734,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 3,
+    "soru": "Zıhar yemini yapan bir kimsenin kefaret olarak aşağıdakilerden hangisini yapması gerekmez?",
+    "secenekler": {
+      "A": "Köle azad etmek",
+      "B": "Aralıksız olarak iki ay oruç tutmak",
+      "C": "On fakiri doyurmak",
+      "D": "Altmış fakiri doyurmak"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Keffaret, Fidye ve Iskat",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60735,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 4,
+    "soru": "Bayram günleriyle ilgili olarak aşağıdakilerden hangisi tüm mezheplere göre doğrudur?",
+    "secenekler": {
+      "A": "Bayram namazını cemaatle kılma zorunluluğu yoktur münferit olarak da kılınabilir.",
+      "B": "Hutbe okunmadan kılınan bayram namazı sahîh değildir.",
+      "C": "Bayram namazının vakti bayramın birinci günüdür. Birinci gün kılınamayan namaz artık kılınamaz.",
+      "D": "Teşrîk tekbîri kurban bayramının arefe günü ikindi namazıyla başlayıp 4. Gün sabah namazıyla sona eren farzlardan sonra okunan tekbîrlere verilen özel isimdir."
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Kurban ve Yemin Esasları",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60736,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 5,
+    "soru": "Aşağıda verilen bilgilerden hangisi doğrudur?",
+    "secenekler": {
+      "A": "Seferî bir kimse teşrîk tekbîri getirmekle mükellef değildir.",
+      "B": "Hanbelî’lere göre bayram namazları farz- ı ayn’dır.",
+      "C": "Seferî bir kimse bayram namazlarıyla mükellef değildir.",
+      "D": "Terâvîh namazı, gayr-i müekked bir sünnettir."
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Kurban ve Yemin Esasları",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60737,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 6,
+    "soru": "Aşağıdakilerden hangisi Bayram namazının sıhhat şartlarından değildir?",
+    "secenekler": {
+      "A": "Hutbe",
+      "B": "Camii",
+      "C": "Cemaat",
+      "D": "Vakit"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Kurban ve Yemin Esasları",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60738,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 7,
+    "soru": "Teşrik tekbirlerini cemaatle kılındığı zaman vacip, münferiden kıldığı zaman gerekli görmeyen İslam alimi kimdir?",
+    "secenekler": {
+      "A": "Ebu Hanife",
+      "B": "Ebu Yusuf",
+      "C": "İmamı Muhammed",
+      "D": "Şafii"
+    },
+    "dogru_cevap": "A",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Cemaatle Namaz",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60739,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 8,
+    "soru": "Hangi mezhebe göre, kadınlar da bayram namazı kılmakla yükümlüdürler?",
+    "secenekler": {
+      "A": "Hanefi",
+      "B": "Şafii",
+      "C": "Maliki",
+      "D": "Hanbeli"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Kurban ve Yemin Esasları",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60740,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 9,
+    "soru": "Hanefilere göre, bayram namazı hutbesinin hükmü nedir?",
+    "secenekler": {
+      "A": "Farz",
+      "B": "Vacip",
+      "C": "Sünnet",
+      "D": "Müstehab"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Cuma ve Hutbe",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60741,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 10,
+    "soru": "Teşrik tekbirleri aşağıdaki mezheplerde hükümleri verilmiştir. Hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Hanefi:Vacip",
+      "B": "Şafii:Sünnet",
+      "C": "Maliki:Vacip",
+      "D": "Hanbeli:Sünnet"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Kurban ve Teşrik",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60742,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 11,
+    "soru": "Teşrik tekbirleri unutulmuşsa ne zaman kaza edilir?",
+    "secenekler": {
+      "A": "Her zaman",
+      "B": "Teşrik günlerinde kılınan herhangi bir namazda",
+      "C": "Teşrik günlerinde kazâya kalan namaz, yine o günlerde kazâ edilirse teşrik tekbirlerini de kazâ etmek gerekir.",
+      "D": "Teşrik günlerinin son namazında"
+    },
+    "dogru_cevap": "C",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Kaza Namazları",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60743,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 12,
+    "soru": "Aşağıdaki seçeneklerden hangisi kurban kesme yükümlülüğü için aranan şartlardan değildir?",
+    "secenekler": {
+      "A": "Müslüman olmak",
+      "B": "Mukim olmak",
+      "C": "Akil- baliğ olmak",
+      "D": "Nisab miktarının üzerinden bir kameri yıl geçmesi"
+    },
+    "dogru_cevap": "D",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Kurban ve Teşrik",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  },
+  {
+    "id": 60744,
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "soru_no": 13,
+    "soru": "Aşağıdakilerden hangisi, hayvanı kesen kimsede bulunması gereken bir nitelik değildir?",
+    "secenekler": {
+      "A": "Akıl sahibi olması",
+      "B": "Erkek olması",
+      "C": "Müslüman veya ehl-i kitap olması",
+      "D": "Allah adına kesmesi"
+    },
+    "dogru_cevap": "B",
+    "ana_konu": "Kurban ve Yemin",
+    "alt_konu": "Hayvanların Zekâtı",
+    "yil": "2024",
+    "donem": "1",
+    "sinav_adi": "İlmihal Çalışma Soruları",
+    "kredi": 2,
+    "puan": 1,
+    "sekilli": false
+  }
+]

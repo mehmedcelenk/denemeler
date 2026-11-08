@@ -50,8 +50,7 @@ export async function resumeLastSession(): Promise<void> {
     notifyStateChange('subject:select', { subject: snapshot.subject });
     if (snapshot.questionId && typeof document !== 'undefined') {
       setTimeout(() => {
-        const el = document.getElementById(`bq_${snapshot.questionId}`);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        notifyStateChange('booklet:ensure-question', { qid: snapshot.questionId, scroll: true });
       }, 300);
     }
   }

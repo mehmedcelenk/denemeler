@@ -1,6 +1,7 @@
-import { state, store, notifyStateChange } from '../../app/state.ts';
+import { state, store } from '../../app/state.ts';
 import type { Choice } from '../../data/question.ts';
 import { getExamPeriodKey } from '../subjects/exam-periods.ts';
+import { getCardActionElements, getCardChoiceRow, getQuestionCards } from './card-query.ts';
 
 /**
  * Tek bir sorunun özellik çubuğunu açar / kapatır.
@@ -9,10 +10,9 @@ export function toggleQuestionFeatures(qId: number | string): void {
   const id = Number(qId);
   if (isNaN(id)) return;
   const isNowExpanded = store.toggleQuestionExpanded(id);
-  if (typeof document === 'undefined') return;
 
   // Hem kitapçıktaki hem tuvaldeki (akıllı tahta) ilgili kartları senkron güncelle
-  document.querySelectorAll<HTMLElement>(`[data-qid="${id}"]`).forEach(card => {
+  getQuestionCards(id).forEach(card => {
     const drawer = card.querySelector('.q-features-drawer');
     const icon = card.querySelector('.btn-features-toggle .features-toggle-icon');
     if (drawer) drawer.classList.toggle('is-expanded', isNowExpanded);
@@ -63,14 +63,15 @@ export function eliminateOneWrongChoice(qId: number | string, event?: Event): vo
   if (currentEliminated) {
     store.removeEliminatedWrongChoice(id);
     if (hasDom) {
-      document.querySelectorAll<HTMLElement>(`#opt_${id}_${currentEliminated}`).forEach(row => {
-        if (state.userMarkedChoices[id] !== currentEliminated) {
+      getQuestionCards(id).forEach(card => {
+        const row = getCardChoiceRow(card, currentEliminated);
+        if (row && state.userMarkedChoices[id] !== currentEliminated) {
           row.classList.remove('marked-incorrect');
         }
-      });
-      document.querySelectorAll<HTMLElement>(`#btnEliminateWrong_${id}`).forEach(btn => {
-        btn.classList.remove('active');
-        btn.setAttribute('title', 'Bir Yanlış Şıkkı Ele');
+        getCardActionElements(card, 'eliminate-wrong-choice').forEach(btn => {
+          btn.classList.remove('active');
+          btn.setAttribute('title', 'Bir Yanlış Şıkkı Ele');
+        });
       });
     }
     return;
@@ -92,12 +93,12 @@ export function eliminateOneWrongChoice(qId: number | string, event?: Event): vo
   store.setEliminatedWrongChoice(id, choiceToEliminate);
 
   if (hasDom) {
-    document.querySelectorAll<HTMLElement>(`#opt_${id}_${choiceToEliminate}`).forEach(row => {
-      row.classList.add('marked-incorrect');
-    });
-    document.querySelectorAll<HTMLElement>(`#btnEliminateWrong_${id}`).forEach(btn => {
-      btn.classList.add('active');
-      btn.setAttribute('title', `Elenen Yanlış Şık: ${choiceToEliminate} (Geri almak için tıkla)`);
+    getQuestionCards(id).forEach(card => {
+      getCardChoiceRow(card, choiceToEliminate)?.classList.add('marked-incorrect');
+      getCardActionElements(card, 'eliminate-wrong-choice').forEach(btn => {
+        btn.classList.add('active');
+        btn.setAttribute('title', `Elenen Yanlış Şık: ${choiceToEliminate} (Geri almak için tıkla)`);
+      });
     });
   }
 }
@@ -146,8 +147,8 @@ export async function copyQuestionText(qId: number | string, event?: Event): Pro
     }
   }
 
-  if (typeof document !== 'undefined') {
-    document.querySelectorAll<HTMLElement>(`#btnCopy_${id}`).forEach(btn => {
+  getQuestionCards(id).forEach(card => {
+    getCardActionElements(card, 'copy-question-text').forEach(btn => {
       const originalTitle = btn.getAttribute('title') || 'Soruyu Kopyala';
       btn.classList.add('copied');
       btn.setAttribute('title', success ? 'Kopyalandı! ✓' : 'Kopyalanamadı');
@@ -156,7 +157,7 @@ export async function copyQuestionText(qId: number | string, event?: Event): Pro
         btn.setAttribute('title', originalTitle);
       }, 1600);
     });
-  }
+  });
 
   return success;
 }
@@ -173,15 +174,17 @@ export function toggleGrammarLayer(qId: number | string, layer: 'syntax' | 'pos'
   if (isNaN(id) || typeof document === 'undefined') return;
 
   const className = `hide-${layer}`;
+  const action = layer === 'syntax' ? 'toggle-xray-syntax' : layer === 'pos' ? 'toggle-xray-pos' : 'toggle-xray-sound';
   let isNowHidden = false;
 
-  document.querySelectorAll<HTMLElement>(`[data-qid="${id}"]`).forEach(card => {
+  const cards = getQuestionCards(id);
+  cards.forEach(card => {
     isNowHidden = card.classList.toggle(className);
   });
-
-  const btnId = layer === 'syntax' ? `btnXraySyntax_${id}` : layer === 'pos' ? `btnXrayPos_${id}` : `btnXraySound_${id}`;
-  document.querySelectorAll<HTMLElement>(`#${btnId}`).forEach(btn => {
-    btn.classList.toggle('active', !isNowHidden);
+  cards.forEach(card => {
+    getCardActionElements(card, action).forEach(btn => {
+      btn.classList.toggle('active', !isNowHidden);
+    });
   });
 }
 

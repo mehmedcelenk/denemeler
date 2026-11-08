@@ -132,3 +132,22 @@ test('data katmanı app katmanını import edemez', async () => {
   assert.equal(result.status, 1, result.output);
   assert.match(result.output, /data katmanı app katmanına bağımlı olamaz/);
 });
+
+test('soru kartı içi elemanlara tekil ID veya getElementById kullanımı reddedilir', async () => {
+  const rejectedTemplate = await checkFixture({
+    'src/features/booklet/card.ts': 'export const html = `<div id="stem_${1}"></div>`;\n',
+  });
+  assert.equal(rejectedTemplate.status, 1, rejectedTemplate.output);
+  assert.match(rejectedTemplate.output, /\[Tekil Kart ID\] src\/features\/booklet\/card\.ts/);
+
+  const rejectedDom = await checkFixture({
+    'src/features/answers/mark.ts': 'export const el = document.getElementById(`opt_${1}_A`);\n',
+  });
+  assert.equal(rejectedDom.status, 1, rejectedDom.output);
+  assert.match(rejectedDom.output, /\[Tekil Kart ID\] src\/features\/answers\/mark\.ts/);
+
+  const allowed = await checkFixture({
+    'src/features/booklet/card.ts': 'export const html = `<div data-role="stem"></div>`;\nexport const el = document.querySelector(`[data-qid="${1}"] [data-role="stem"]`);\n',
+  });
+  assert.equal(allowed.status, 0, allowed.output);
+});

@@ -1,5 +1,6 @@
-import { state, store } from '../../app/state.ts';
+import { store } from '../../app/state.ts';
 import type { Choice } from '../../data/question.ts';
+import { getCardChoiceRow, getQuestionCards } from '../booklet/card-query.ts';
 
 let longPressTimer: ReturnType<typeof setTimeout> | null = null;
 let longPressTriggered = false;
@@ -11,16 +12,10 @@ let startY = 0;
 export function toggleEliminateChoice(qid: number, letter: Choice): boolean {
   const isNowEliminated = store.toggleEliminatedChoice(qid, letter);
   
-  if (typeof document !== 'undefined') {
-    const rows = document.querySelectorAll<HTMLElement>(`#opt_${qid}_${letter}`);
-    rows.forEach(row => {
-      if (isNowEliminated) {
-        row.classList.add('eliminated');
-      } else {
-        row.classList.remove('eliminated');
-      }
-    });
-  }
+  getQuestionCards(qid).forEach(card => {
+    const row = getCardChoiceRow(card, letter);
+    row?.classList.toggle('eliminated', isNowEliminated);
+  });
 
   // Dokunmatik cihazlarda minik haptic titreşim
   if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {

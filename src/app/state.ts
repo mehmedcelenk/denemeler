@@ -21,6 +21,9 @@ const _state: MutableAppState = {
   contentViewMode: 'questions',
   activeSearchFilter: '',
   userMarkedChoices: {},
+  pendingMarkedChoices: {},
+  activeBoardQuestionId: null,
+  activeMealQuestionIds: new Set(),
   revealedAnswers: new Set(),
   revealedHints: new Set(),
   currentColumnCount: 2,
@@ -46,7 +49,7 @@ export const state: AppState = _state;
 
 /** Micro-Store: State mutasyonlarını tek merkezden yönetir ve kalıcı depolarla eşitler. */
 export const store = {
-  setProgramMode(mode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT'): void { _state.programMode = mode; },
+  setProgramMode(mode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK'): void { _state.programMode = mode; },
   setCurrentSubject(subject: SubjectId | null): void { _state.currentSubject = subject; },
   setSelectedCourses(courses: Iterable<string>): void { _state.selectedCourses = new Set(courses); },
   addSelectedCourse(course: string): void { _state.selectedCourses.add(course); },
@@ -83,6 +86,26 @@ export const store = {
     _state.userMarkedChoices = { ...choices };
     if (persist) storage.writeJson(StorageKeys.USER_CHOICES, _state.userMarkedChoices);
   },
+  setPendingChoice(qid: number, choice: Choice): void { _state.pendingMarkedChoices[qid] = choice; },
+  clearPendingChoice(qid: number): void { delete _state.pendingMarkedChoices[qid]; },
+  clearAllPendingChoices(): void { _state.pendingMarkedChoices = {}; },
+  setActiveBoardQuestionId(qid: number | null): void { _state.activeBoardQuestionId = qid; },
+  setQuestionMealActive(qid: number, active: boolean): void {
+    if (active) {
+      _state.activeMealQuestionIds.add(qid);
+    } else {
+      _state.activeMealQuestionIds.delete(qid);
+    }
+  },
+  toggleQuestionMealActive(qid: number): boolean {
+    if (_state.activeMealQuestionIds.has(qid)) {
+      _state.activeMealQuestionIds.delete(qid);
+      return false;
+    }
+    _state.activeMealQuestionIds.add(qid);
+    return true;
+  },
+  clearActiveQuestionMeals(): void { _state.activeMealQuestionIds.clear(); },
   toggleEliminatedChoice(qid: number, choice: Choice, persist = true): boolean {
     const list = _state.eliminatedChoices[qid] || [];
     const idx = list.indexOf(choice);

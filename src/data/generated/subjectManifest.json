@@ -56,7 +56,7 @@
     "courseCount": 1
   },
   "AOF_ITAR": {
-    "questionCount": 152,
+    "questionCount": 129,
     "courseCount": 1
   },
   "AOF_AHLAK": {
@@ -71,88 +71,136 @@
     "questionCount": 159,
     "courseCount": 1
   },
-  "TYT_TURKCE": {
-    "questionCount": 357,
-    "courseCount": 1
-  },
-  "TYT_TAR": {
-    "questionCount": 43,
-    "courseCount": 1
-  },
-  "TYT_COG": {
-    "questionCount": 41,
-    "courseCount": 1
-  },
-  "TYT_FEL": {
-    "questionCount": 70,
-    "courseCount": 1
-  },
-  "TYT_MAT": {
-    "questionCount": 311,
-    "courseCount": 1
-  },
-  "TYT_FIZ": {
-    "questionCount": 52,
-    "courseCount": 1
-  },
-  "TYT_KIM": {
-    "questionCount": 52,
-    "courseCount": 1
-  },
-  "TYT_BIO": {
-    "questionCount": 51,
-    "courseCount": 1
-  },
-  "TYT_DIN": {
-    "questionCount": 41,
-    "courseCount": 1
-  },
-  "AYT_MAT": {
-    "questionCount": 273,
-    "courseCount": 1
-  },
-  "AYT_FIZ": {
-    "questionCount": 108,
-    "courseCount": 1
-  },
-  "AYT_KIM": {
-    "questionCount": 94,
+  "AOF_ARAPCA": {
+    "questionCount": 50,
     "courseCount": 1
   },
   "AYT_BIO": {
-    "questionCount": 109,
-    "courseCount": 1
-  },
-  "AYT_EDB": {
-    "questionCount": 214,
-    "courseCount": 1
-  },
-  "AYT_TAR1": {
-    "questionCount": 69,
+    "questionCount": 116,
     "courseCount": 1
   },
   "AYT_COG1": {
-    "questionCount": 51,
-    "courseCount": 1
-  },
-  "AYT_TAR2": {
-    "questionCount": 76,
+    "questionCount": 54,
     "courseCount": 1
   },
   "AYT_COG2": {
-    "questionCount": 97,
-    "courseCount": 1
-  },
-  "AYT_FEL": {
-    "questionCount": 26,
+    "questionCount": 99,
     "courseCount": 1
   },
   "AYT_DIN": {
-    "questionCount": 46,
+    "questionCount": 55,
+    "courseCount": 1
+  },
+  "AYT_EDB": {
+    "questionCount": 215,
+    "courseCount": 1
+  },
+  "AYT_FEL": {
+    "questionCount": 162,
+    "courseCount": 1
+  },
+  "AYT_FIZ": {
+    "questionCount": 126,
+    "courseCount": 1
+  },
+  "AYT_KIM": {
+    "questionCount": 113,
+    "courseCount": 1
+  },
+  "AYT_MAT": {
+    "questionCount": 349,
+    "courseCount": 1
+  },
+  "AYT_TAR1": {
+    "questionCount": 89,
+    "courseCount": 1
+  },
+  "AYT_TAR2": {
+    "questionCount": 99,
+    "courseCount": 1
+  },
+  "GIR_TEMEL": {
+    "questionCount": 22,
+    "courseCount": 2
+  },
+  "ILM_CENAZE": {
+    "questionCount": 35,
+    "courseCount": 1
+  },
+  "ILM_CUMA": {
+    "questionCount": 38,
+    "courseCount": 1
+  },
+  "ILM_DENEME": {
+    "questionCount": 60,
+    "courseCount": 1
+  },
+  "ILM_HAC": {
+    "questionCount": 84,
+    "courseCount": 1
+  },
+  "ILM_HAC_FIKHI": {
+    "questionCount": 177,
+    "courseCount": 5
+  },
+  "ILM_KURBAN": {
+    "questionCount": 13,
+    "courseCount": 1
+  },
+  "ILM_NAMAZ": {
+    "questionCount": 130,
+    "courseCount": 1
+  },
+  "ILM_ORUC": {
+    "questionCount": 30,
+    "courseCount": 1
+  },
+  "ILM_TEMIZLIK": {
+    "questionCount": 73,
+    "courseCount": 1
+  },
+  "ILM_ZEKAT": {
+    "questionCount": 164,
+    "courseCount": 2
+  },
+  "TYT_BIO": {
+    "questionCount": 53,
+    "courseCount": 1
+  },
+  "TYT_COG": {
+    "questionCount": 45,
+    "courseCount": 1
+  },
+  "TYT_DIN": {
+    "questionCount": 42,
+    "courseCount": 1
+  },
+  "TYT_FEL": {
+    "questionCount": 88,
+    "courseCount": 1
+  },
+  "TYT_FIZ": {
+    "questionCount": 63,
+    "courseCount": 1
+  },
+  "TYT_KIM": {
+    "questionCount": 61,
+    "courseCount": 1
+  },
+  "TYT_MAT": {
+    "questionCount": 359,
+    "courseCount": 1
+  },
+  "TYT_TAR": {
+    "questionCount": 45,
+    "courseCount": 1
+  },
+  "TYT_TURKCE": {
+    "questionCount": 360,
     "courseCount": 1
   },
   "YDT_ING": {
-    "questionCount": 629,
+    "questionCount": 720,
     "courseCount": 1
   }
 }
