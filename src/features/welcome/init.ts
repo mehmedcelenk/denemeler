@@ -12,6 +12,8 @@ import {
   submitAuth,
   handleSignOut,
   isAuthenticated,
+  getActiveSession,
+  syncCloudProgress,
 } from './auth-modal.ts';
 import {
   focusRoomInput,
@@ -81,28 +83,16 @@ async function runWelcomeTransition(action: () => Promise<void>): Promise<void> 
   }
 }
 
-async function startSinglePlayer(): Promise<void> {
+async function startMode(mode: 'all' | 'rematch', openDrawer = false): Promise<void> {
   if (!isAuthenticated()) {
     showWelcomePortal();
     return;
   }
   await runWelcomeTransition(async () => {
     if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
-    dependencies.setUnifiedMode('all');
+    dependencies.setUnifiedMode(mode);
     hideWelcomePortal();
-    dependencies.openSubjectDrawer();
-  });
-}
-
-async function startRematch(): Promise<void> {
-  if (!isAuthenticated()) {
-    showWelcomePortal();
-    return;
-  }
-  await runWelcomeTransition(async () => {
-    if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
-    dependencies.setUnifiedMode('rematch');
-    hideWelcomePortal();
+    if (openDrawer) dependencies.openSubjectDrawer();
   });
 }
 
@@ -132,9 +122,14 @@ async function joinRoom(): Promise<void> {
     return;
   }
 
-  const savedName = readString(StorageKeys.USER_NAME)?.trim();
-  if (savedName) {
-    await connectToRoom(roomId, savedName);
+  const session = getActiveSession();
+  const userName = session?.user.username?.trim()
+    || session?.user.displayName?.trim()
+    || readString(StorageKeys.USER_NAME)?.trim();
+
+  if (userName) {
+    writeString(StorageKeys.USER_NAME, userName);
+    await connectToRoom(roomId, userName);
     return;
   }
 
@@ -194,7 +189,8 @@ export async function resumeSavedSession(): Promise<void> {
     dependencies.setUnifiedMode('all');
     dependencies.dismissResumeBanner();
     hideWelcomePortal();
-    requestAnimationFrame(() => {
+    const scheduleFrame = typeof requestAnimationFrame === 'function' ? requestAnimationFrame : (fn: () => void) => setTimeout(fn, 0);
+    scheduleFrame(() => {
       if (snapshot?.questionId !== undefined) {
         notifyStateChange('booklet:ensure-question', { qid: snapshot.questionId, scroll: true });
         return;
@@ -253,8 +249,8 @@ export function initWelcome(
       store.setProgramMode(programMode);
       setWelcomeProgram(programMode);
     },
-    'welcome-start-rematch': () => startRematch(),
-    'welcome-start-single': () => startSinglePlayer(),
+    'welcome-start-rematch': () => startMode('rematch'),
+    'welcome-start-single': () => startMode('all', true),
     'welcome-join-room': () => joinRoom(),
     'welcome-confirm-name': () => confirmUserName(),
     'welcome-cancel-name': () => cancelUserName(),
@@ -266,7 +262,11 @@ export function initWelcome(
     'welcome-toggle-auth-mode': () => toggleAuthMode(),
     'welcome-signout': (_element, event) => {
       event?.stopPropagation();
-      void handleSignOut();
+      pendingRoomId = null;
+      hideNameDialog();
+      void handleSignOut().then(() => {
+        updateResumeAction(false);
+      });
     },
     'welcome-home': () => returnHome(),
     'welcome-resume': () => resumeSavedSession(),
@@ -278,4 +278,5 @@ export function initWelcome(
     hideWelcomePortal();
     void resumeSavedSession();
   }
+  if (isAuthenticated()) void syncCloudProgress();
 }

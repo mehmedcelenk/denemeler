@@ -9,9 +9,10 @@ import {
 import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from './explanation.ts';
 import { saveChoicesToStorage, loadSavedChoices } from './storage.ts';
 import { canMarkAnswer } from './rate-limit.ts';
+import { scheduleCloudSync } from '../welcome/auth-modal.ts';
 import type { Choice } from '../../data/question.ts';
 
-export { saveChoicesToStorage, loadSavedChoices };
+export { saveChoicesToStorage, loadSavedChoices, scheduleCloudSync };
 
 /** Optik şık baloncuğuna tıklama eylemini yönetir. */
 export function handleSelectOpticalBubble(qid: number, letter: Choice, sourceEl?: HTMLElement | null): void {
@@ -26,6 +27,7 @@ export function handleSelectOpticalBubble(qid: number, letter: Choice, sourceEl?
     store.removeUserMarkedChoice(qid);
     store.clearPendingChoice(qid);
     saveChoicesToStorage();
+    scheduleCloudSync();
     notifyStateChange('answer:revoked', { qid });
     getQuestionCards(qid).forEach(card => {
       card.dataset.userMark = '';
@@ -76,6 +78,7 @@ function applyFinalChoice(qid: number, choice: Choice, sourceEl?: HTMLElement | 
   store.clearPendingChoice(qid);
   store.setUserMarkedChoice(qid, choice);
   saveChoicesToStorage();
+  scheduleCloudSync();
 
   const q = state.bookletQuestions.find(item => item.id === qid)
     || state.allData.find(item => item.id === qid);
@@ -146,6 +149,7 @@ export function clearAllMarks(): void {
 
   store.clearAllUserMarkedChoices();
   saveChoicesToStorage();
+  scheduleCloudSync();
 
   if (hasDom) {
     document.querySelectorAll<HTMLElement>('.booklet-question').forEach(card => {

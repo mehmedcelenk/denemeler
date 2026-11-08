@@ -138,13 +138,13 @@ export function setWelcomeProgram(mode: ProgramMode): void {
 }
 
 export function getWelcomeRoomId(): string {
-  const input = document.getElementById('welcomeRoomId');
-  return input instanceof HTMLInputElement ? input.value.trim().toLocaleUpperCase('tr-TR') : '';
+  const input = document.getElementById('welcomeRoomId') as HTMLInputElement | null;
+  return input && typeof input.value === 'string' ? input.value.trim().toLocaleUpperCase('tr-TR') : '';
 }
 
 export function getDialogUserName(): string {
-  const input = document.getElementById('welcomeNameInput');
-  return input instanceof HTMLInputElement ? input.value.trim() : '';
+  const input = document.getElementById('welcomeNameInput') as HTMLInputElement | null;
+  return input && typeof input.value === 'string' ? input.value.trim() : '';
 }
 
 export function showNameDialog(): void {
@@ -181,8 +181,8 @@ export function showNameError(message = ''): void {
 }
 
 export function updateResumeAction(canResume: boolean): void {
-  const button = document.getElementById('btnResumeLastSession');
-  if (!(button instanceof HTMLButtonElement)) return;
+  const button = document.getElementById('btnResumeLastSession') as HTMLButtonElement | null;
+  if (!button) return;
   button.title = canResume ? 'Son çalıştığın soruya dön' : 'Yeni derse başla';
 }
 

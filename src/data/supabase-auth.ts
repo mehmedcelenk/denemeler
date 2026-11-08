@@ -43,12 +43,49 @@ function parseSessionFromGoTrue(raw: Record<string, unknown>): AuthSession | nul
   if (typeof raw.access_token !== 'string' || !raw.user || typeof raw.user !== 'object') {
     return null;
   }
+  const expiresAt = typeof raw.expires_at === 'number'
+    ? raw.expires_at
+    : (typeof raw.expires_in === 'number' ? Math.floor(Date.now() / 1000) + raw.expires_in : undefined);
   return {
     accessToken: raw.access_token,
     refreshToken: typeof raw.refresh_token === 'string' ? raw.refresh_token : '',
     user: parseUserFromGoTrue(raw.user as Record<string, unknown>),
-    expiresAt: typeof raw.expires_at === 'number' ? raw.expires_at : undefined,
+    expiresAt,
   };
+}
+
+async function postAuthToken(
+  endpoint: string,
+  body: Record<string, unknown>,
+  timeoutMs = 6000
+): Promise<AuthResponse<AuthSession>> {
+  const config = getSupabaseConfig();
+  if (!config) return { data: null, error: 'Supabase yapılandırılmamış.' };
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { apikey: config.anonKey, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
+
+    const json = (await res.json()) as Record<string, unknown>;
+    if (!res.ok) {
+      const msg = typeof json.error_description === 'string'
+        ? json.error_description
+        : (typeof json.msg === 'string' ? json.msg : 'İşlem başarısız.');
+      return { data: null, error: msg };
+    }
+    return { data: parseSessionFromGoTrue(json), error: null };
+  } catch (err) {
+    return { data: null, error: err instanceof Error ? err.message : 'Ağ hatası.' };
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 export async function signUpWithEmail(
@@ -61,55 +98,21 @@ export async function signUpWithEmail(
   const config = getSupabaseConfig();
   if (!config) return { data: null, error: 'Supabase yapılandırılmamış.' };
 
-  const endpoint = `${config.url}/auth/v1/signup`;
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-
-  try {
-    const res = await fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        apikey: config.anonKey,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email,
-        password,
-        data: {
-          username: username || '',
-          display_name: displayName || username || '',
-        },
-      }),
-      signal: controller.signal,
-    });
-
-    const json = (await res.json()) as Record<string, unknown>;
-    if (!res.ok) {
-      const raw = typeof json.msg === 'string' ? json.msg : (typeof json.error_description === 'string' ? json.error_description : 'Kayıt başarısız.');
-      let trMsg = raw;
-      if (raw.includes('already registered')) {
-        trMsg = 'Bu e-posta ile zaten kayıtlı bir hesap var.';
-      } else if (raw.includes('Password should be at least')) {
-        trMsg = 'Şifre en az 6 karakter olmalıdır.';
-      }
-      return { data: null, error: trMsg };
-    }
-    const session = parseSessionFromGoTrue(json);
-    return { data: session, error: null };
-  } catch (err) {
-    return { data: null, error: err instanceof Error ? err.message : 'Ağ hatası.' };
-  } finally {
-    clearTimeout(timer);
+  const res = await postAuthToken(
+    `${config.url}/auth/v1/signup`,
+    { email, password, data: { username: username || '', display_name: displayName || username || '' } },
+    timeoutMs
+  );
+  if (res.error) {
+    if (res.error.includes('already registered')) return { data: null, error: 'Bu e-posta ile zaten kayıtlı bir hesap var.' };
+    if (res.error.includes('Password should be at least')) return { data: null, error: 'Şifre en az 6 karakter olmalıdır.' };
   }
+  return res;
 }
 
-export async function checkUsernameAvailable(
-  username: string,
-  timeoutMs = 5000
-): Promise<boolean> {
+export async function checkUsernameAvailable(username: string, timeoutMs = 5000): Promise<boolean> {
   const clean = username.trim().toLowerCase();
   if (clean.length < 3) return false;
-
   const config = getSupabaseConfig();
   if (!config) return true;
 
@@ -118,10 +121,7 @@ export async function checkUsernameAvailable(
   try {
     const res = await fetch(`${config.url}/rest/v1/rpc/is_username_available`, {
       method: 'POST',
-      headers: {
-        apikey: config.anonKey,
-        'Content-Type': 'application/json',
-      },
+      headers: { apikey: config.anonKey, 'Content-Type': 'application/json' },
       body: JSON.stringify({ check_username: clean }),
       signal: controller.signal,
     });
@@ -156,53 +156,37 @@ export async function signInWithEmail(
     } catch {}
   }
 
-  const endpoint = `${config.url}/auth/v1/token?grant_type=password`;
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-
-  try {
-    const res = await fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        apikey: config.anonKey,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email: targetEmail, password }),
-      signal: controller.signal,
-    });
-
-    const json = (await res.json()) as Record<string, unknown>;
-    if (!res.ok) {
-      const msg = typeof json.error_description === 'string' ? json.error_description : (typeof json.msg === 'string' ? json.msg : 'Giriş başarısız.');
-      return { data: null, error: msg };
-    }
-    const session = parseSessionFromGoTrue(json);
-    return { data: session, error: null };
-  } catch (err) {
-    return { data: null, error: err instanceof Error ? err.message : 'Ağ hatası.' };
-  } finally {
-    clearTimeout(timer);
-  }
+  return postAuthToken(
+    `${config.url}/auth/v1/token?grant_type=password`,
+    { email: targetEmail, password },
+    timeoutMs
+  );
 }
 
-export async function signOutFromSupabase(
-  accessToken: string,
-  timeoutMs = 4000
-): Promise<void> {
+export async function refreshTokenUsingSupabase(
+  refreshToken: string,
+  timeoutMs = 6000
+): Promise<AuthResponse<AuthSession>> {
+  const config = getSupabaseConfig();
+  if (!config) return { data: null, error: 'Supabase yapılandırılmamış.' };
+  if (!refreshToken?.trim()) return { data: null, error: 'Yenileme jetonu (refresh token) eksik.' };
+
+  return postAuthToken(
+    `${config.url}/auth/v1/token?grant_type=refresh_token`,
+    { refresh_token: refreshToken.trim() },
+    timeoutMs
+  );
+}
+
+export async function signOutFromSupabase(accessToken: string, timeoutMs = 4000): Promise<void> {
   const config = getSupabaseConfig();
   if (!config || !accessToken) return;
-
-  const endpoint = `${config.url}/auth/v1/logout`;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
-
   try {
-    await fetch(endpoint, {
+    await fetch(`${config.url}/auth/v1/logout`, {
       method: 'POST',
-      headers: {
-        apikey: config.anonKey,
-        Authorization: `Bearer ${accessToken}`,
-      },
+      headers: { apikey: config.anonKey, Authorization: `Bearer ${accessToken}` },
       signal: controller.signal,
     });
   } catch {} finally {
@@ -218,22 +202,20 @@ export async function saveUserProgressToSupabase(
   const config = getSupabaseConfig();
   if (!config || !session?.accessToken || !session?.user?.id) return false;
 
-  const endpoint = `${config.url}/rest/v1/user_progress`;
+  const row = {
+    user_id: session.user.id,
+    choices: progress.choices ?? {},
+    starred: progress.starred ?? [],
+    rematch: progress.rematch ?? [],
+    eliminated_choices: progress.eliminatedChoices ?? {},
+    last_session: progress.lastSession ?? null,
+    updated_at: new Date().toISOString(),
+  };
+
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
-
   try {
-    const row = {
-      user_id: session.user.id,
-      choices: progress.choices ?? {},
-      starred: progress.starred ?? [],
-      rematch: progress.rematch ?? [],
-      eliminated_choices: progress.eliminatedChoices ?? {},
-      last_session: progress.lastSession ?? null,
-      updated_at: new Date().toISOString(),
-    };
-
-    const res = await fetch(endpoint, {
+    const res = await fetch(`${config.url}/rest/v1/user_progress`, {
       method: 'POST',
       headers: {
         apikey: config.anonKey,
@@ -262,28 +244,28 @@ export async function fetchUserProgressFromSupabase(
   const endpoint = `${config.url}/rest/v1/user_progress?user_id=eq.${encodeURIComponent(session.user.id)}&limit=1`;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
-
   try {
     const res = await fetch(endpoint, {
       method: 'GET',
-      headers: {
-        apikey: config.anonKey,
-        Authorization: `Bearer ${session.accessToken}`,
-        Accept: 'application/json',
-      },
+      headers: { apikey: config.anonKey, Authorization: `Bearer ${session.accessToken}`, Accept: 'application/json' },
       signal: controller.signal,
     });
     if (!res.ok) return null;
     const json: unknown = await res.json();
-    if (Array.isArray(json) && json.length > 0 && typeof json[0] === 'object' && json[0] !== null) {
-      const row = json[0] as Record<string, unknown>;
-      return {
-        choices: (row.choices as Record<string, string>) ?? {},
-        starred: (row.starred as number[]) ?? [],
-        rematch: (row.rematch as number[]) ?? [],
-        eliminatedChoices: (row.eliminated_choices as Record<string, string[]>) ?? {},
-        lastSession: (row.last_session as Record<string, unknown>) ?? undefined,
-      };
+    if (Array.isArray(json)) {
+      if (json.length === 0) {
+        return { choices: {}, starred: [], rematch: [], eliminatedChoices: {} };
+      }
+      if (json[0] && typeof json[0] === 'object') {
+        const row = json[0] as Record<string, unknown>;
+        return {
+          choices: (row.choices as Record<string, string>) ?? {},
+          starred: (row.starred as number[]) ?? [],
+          rematch: (row.rematch as number[]) ?? [],
+          eliminatedChoices: (row.eliminated_choices as Record<string, string[]>) ?? {},
+          lastSession: (row.last_session as Record<string, unknown>) ?? undefined,
+        };
+      }
     }
     return null;
   } catch {
