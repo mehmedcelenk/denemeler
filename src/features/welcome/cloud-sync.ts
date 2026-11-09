@@ -33,19 +33,31 @@ export function isAuthenticated(): boolean {
   return getActiveSession() !== null;
 }
 
+let refreshPromise: Promise<AuthSession | null> | null = null;
+
 export async function ensureFreshSession(): Promise<AuthSession | null> {
-  const session = getActiveSession();
-  if (!session) return null;
-  const now = Math.floor(Date.now() / 1000);
-  if (session.expiresAt && session.expiresAt - now < 60 && session.refreshToken) {
-    const refreshed = await refreshTokenUsingSupabase(session.refreshToken);
-    if (refreshed.data) {
-      saveActiveSession(refreshed.data);
-      return refreshed.data;
+  if (refreshPromise) return refreshPromise;
+  refreshPromise = (async () => {
+    const session = getActiveSession();
+    if (!session) return null;
+    const now = Math.floor(Date.now() / 1000);
+    if (session.expiresAt && session.expiresAt - now < 60 && session.refreshToken) {
+      const refreshed = await refreshTokenUsingSupabase(session.refreshToken);
+      if (refreshed.data) {
+        saveActiveSession(refreshed.data);
+        return refreshed.data;
+      }
+      if (session.expiresAt <= now) {
+        saveActiveSession(null);
+        notifyStateChange('auth:expired');
+        return null;
+      }
     }
-    if (session.expiresAt <= now) return null;
-  }
-  return session;
+    return session;
+  })().finally(() => {
+    refreshPromise = null;
+  });
+  return refreshPromise;
 }
 
 let syncTimer: ReturnType<typeof setTimeout> | null = null;
@@ -57,21 +69,37 @@ export function cancelCloudSync(): void {
   }
 }
 
+let isSaving = false;
+let hasPendingSave = false;
+
 export async function saveCloudProgress(): Promise<boolean> {
-  const session = await ensureFreshSession();
-  if (!session) return false;
-  const localData: UserProgressData = {
-    choices: state.userMarkedChoices,
-    starred: Array.from(state.starredQuestionIds),
-    rematch: Array.from(state.rematchQuestionIds),
-    eliminatedChoices: state.eliminatedChoices as unknown as Record<string, string[]>,
-    lastSession: readJson<Record<string, unknown> | null>(
-      StorageKeys.RESUME_STATE,
-      (v): v is Record<string, unknown> => typeof v === 'object' && v !== null,
-      null
-    ) ?? undefined,
-  };
-  return saveUserProgressToSupabase(session, localData);
+  if (isSaving) {
+    hasPendingSave = true;
+    return false;
+  }
+  isSaving = true;
+  try {
+    const session = await ensureFreshSession();
+    if (!session) return false;
+    const localData: UserProgressData = {
+      choices: state.userMarkedChoices,
+      starred: Array.from(state.starredQuestionIds),
+      rematch: Array.from(state.rematchQuestionIds),
+      eliminatedChoices: state.eliminatedChoices as unknown as Record<string, string[]>,
+      lastSession: readJson<Record<string, unknown> | null>(
+        StorageKeys.RESUME_STATE,
+        (v): v is Record<string, unknown> => typeof v === 'object' && v !== null,
+        null
+      ) ?? undefined,
+    };
+    return await saveUserProgressToSupabase(session, localData);
+  } finally {
+    isSaving = false;
+    if (hasPendingSave) {
+      hasPendingSave = false;
+      void saveCloudProgress();
+    }
+  }
 }
 
 export function scheduleCloudSync(delayMs = 1200): void {

@@ -84,12 +84,16 @@ export function toggleAuthMode(): void {
   setAuthMode(authMode === 'signin' ? 'signup' : 'signin');
 }
 
+let isSubmitting = false;
+
 export async function submitAuth(): Promise<void> {
+  if (isSubmitting) return;
   const emailInput = document.getElementById('authEmailInput') as HTMLInputElement | null;
   const passInput = document.getElementById('authPasswordInput') as HTMLInputElement | null;
   const userInput = document.getElementById('authUsernameInput') as HTMLInputElement | null;
   const passConfirmInput = document.getElementById('authPasswordConfirmInput') as HTMLInputElement | null;
   const errorEl = document.getElementById('authDialogError');
+  const noticeEl = document.getElementById('authNoticeText');
   const submitBtn = document.getElementById('btnAuthSubmit') as HTMLButtonElement | null;
 
   const identifier = emailInput?.value.trim() || '';
@@ -130,6 +134,7 @@ export async function submitAuth(): Promise<void> {
     return showError('Lütfen kullanıcı adı/e-posta ve şifrenizi girin.');
   }
 
+  isSubmitting = true;
   if (submitBtn) {
     submitBtn.disabled = true;
     submitBtn.textContent = 'İşleniyor...';
@@ -141,8 +146,18 @@ export async function submitAuth(): Promise<void> {
       ? await signInWithEmail(identifier, password)
       : await signUpWithEmail(identifier, password, username.toLowerCase(), username);
 
-    if (res.error || !res.data) {
-      if (errorEl) errorEl.textContent = res.error || 'İşlem başarısız.';
+    if (res.error) {
+      if (errorEl) errorEl.textContent = res.error;
+      return;
+    }
+
+    if (!res.data) {
+      if (authMode === 'signup') {
+        setAuthMode('signin');
+        if (noticeEl) noticeEl.textContent = 'Kaydınız oluşturuldu! Lütfen e-postanızı onaylayıp giriş yapın.';
+      } else if (errorEl) {
+        errorEl.textContent = 'Giriş yapılamadı. Lütfen bilgilerinizi kontrol edin.';
+      }
       return;
     }
 
@@ -157,6 +172,7 @@ export async function submitAuth(): Promise<void> {
     updateAuthUiState();
     await syncCloudProgress();
   } finally {
+    isSubmitting = false;
     if (submitBtn) {
       submitBtn.disabled = false;
       submitBtn.textContent = authMode === 'signin' ? 'Giriş Yap →' : 'Kayıt Ol →';

@@ -154,6 +154,9 @@ export async function signInWithEmail(
         if (typeof found === 'string' && found.includes('@')) targetEmail = found;
       }
     } catch {}
+    if (!targetEmail.includes('@')) {
+      return { data: null, error: 'Kullanıcı adı veya şifre hatalı.' };
+    }
   }
 
   return postAuthToken(
