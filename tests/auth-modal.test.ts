@@ -122,7 +122,7 @@ test('syncCloudProgress: cloud.choices yerel cevaplarla birleştirilir ve veri k
       assert.equal(state.userMarkedChoices[101], 'A');
       assert.equal(state.userMarkedChoices[102], 'C');
       assert.equal(state.userMarkedChoices[103], 'D');
-      assert.ok(state.starredQuestionIds.has(101));
+      assert.equal(state.starredQuestionIds.has(101), false);
       assert.ok(state.starredQuestionIds.has(103));
       assert.ok(state.rematchQuestionIds.has(105));
 

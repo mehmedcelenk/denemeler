@@ -93,7 +93,12 @@ if (typeof window !== 'undefined') {
 }
 
 export async function handleSignOut(): Promise<void> {
-  cancelCloudSync();
+  if (syncTimer) {
+    cancelCloudSync();
+    await saveCloudProgress();
+  } else {
+    cancelCloudSync();
+  }
   const session = getActiveSession();
   if (session?.accessToken) {
     await signOutFromSupabase(session.accessToken);
@@ -136,6 +141,11 @@ export async function syncCloudProgress(): Promise<void> {
   const session = await ensureFreshSession();
   if (!session) return;
 
+  if (syncTimer) {
+    cancelCloudSync();
+    await saveCloudProgress();
+  }
+
   const cloud = await fetchUserProgressFromSupabase(session);
   if (!cloud) return;
 
@@ -145,11 +155,15 @@ export async function syncCloudProgress(): Promise<void> {
   }
   if (cloud.starred && cloud.starred.length > 0) {
     const valid = cloud.starred.filter(Number.isSafeInteger);
-    store.setStarredQuestionIds(new Set([...state.starredQuestionIds, ...valid]));
+    if (state.starredQuestionIds.size === 0) {
+      store.setStarredQuestionIds(new Set(valid));
+    }
   }
   if (cloud.rematch && cloud.rematch.length > 0) {
     const valid = cloud.rematch.filter(Number.isSafeInteger);
-    store.setRematchQuestionIds(new Set([...state.rematchQuestionIds, ...valid]));
+    if (state.rematchQuestionIds.size === 0) {
+      store.setRematchQuestionIds(new Set(valid));
+    }
   }
   if (cloud.eliminatedChoices && typeof cloud.eliminatedChoices === 'object') {
     const finalElim: Record<number, Choice[]> = {};
@@ -166,6 +180,20 @@ export async function syncCloudProgress(): Promise<void> {
   }
   if (cloud.lastSession && typeof cloud.lastSession === 'object' && !readJson(StorageKeys.RESUME_STATE, (v): v is Record<string, unknown> => typeof v === 'object' && v !== null, null)) {
     writeJson(StorageKeys.RESUME_STATE, cloud.lastSession);
+  }
+
+  if (typeof document !== 'undefined') {
+    const hasResume = Boolean(readJson(
+      StorageKeys.RESUME_STATE,
+      (v): v is Record<string, unknown> => typeof v === 'object' && v !== null,
+      null
+    ));
+    if (hasResume) {
+      const welcomeBtn = document.getElementById('btnWelcomeResume');
+      if (welcomeBtn) welcomeBtn.style.display = 'flex';
+      const consoleBtn = document.getElementById('btnResumeLastSession');
+      if (consoleBtn) consoleBtn.title = 'Son çalıştığın soruya dön';
+    }
   }
 
   notifyStateChange('booklet:refresh');

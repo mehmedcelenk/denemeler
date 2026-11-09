@@ -125,6 +125,15 @@ button.welcome-action-row:hover {
   box-shadow: 0 12px 34px rgba(15, 23, 42, 0.12);
 }
 
+button.welcome-action-resume {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(99, 102, 241, 0.04));
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+button.welcome-action-resume:hover {
+  border-color: var(--brand-accent);
+}
+
 .welcome-action-icon {
   width: 24px;
   height: 24px;

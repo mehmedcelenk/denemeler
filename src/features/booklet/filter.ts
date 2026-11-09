@@ -101,7 +101,7 @@ export function getFilterCounts(): { rematch: number; starred: number } {
   const dataset = state.allData;
   dataset.forEach((q: Question) => {
     if (state.currentSubject && !matchesSubject(q, state.currentSubject)) return;
-    if (state.currentSubject && !state.selectedCourses.has(q.ders)) return;
+    if (state.currentSubject && state.selectedCourses.size > 0 && !state.selectedCourses.has(q.ders)) return;
 
     const userMark = state.userMarkedChoices[q.id];
     const isWrong = Boolean(userMark && userMark !== q.dogru_cevap);

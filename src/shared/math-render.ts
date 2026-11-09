@@ -23,24 +23,31 @@ export function renderMathFormula(latex: string, displayMode = false): string {
 export function renderMathText(rawText: string): string {
   if (!rawText) return '';
 
-  // 1. $...$ veya \(...\) blokları varsa KaTeX ile render et
+  const mathPlaceholders: string[] = [];
   let text = rawText;
 
   // Çift dolar ($$...$$) veya \[...\] - display mode
   text = text.replace(/\$\$([\s\S]+?)\$\$|\\\[([\s\S]+?)\\\]/g, (_match, g1, g2) => {
     const math = g1 || g2;
-    return renderMathFormula(math.trim(), true);
+    const rendered = renderMathFormula(math.trim(), true);
+    const idx = mathPlaceholders.length;
+    mathPlaceholders.push(rendered);
+    return `___MATH_TOKEN_${idx}___`;
   });
 
   // Tek dolar ($...$) veya \(...\) - inline mode
   text = text.replace(/\$([^\$\n]+?)\$|\\\(([\s\S]+?)\\\)/g, (_match, g1, g2) => {
     const math = g1 || g2;
-    return renderMathFormula(math.trim(), false);
+    const rendered = renderMathFormula(math.trim(), false);
+    const idx = mathPlaceholders.length;
+    mathPlaceholders.push(rendered);
+    return `___MATH_TOKEN_${idx}___`;
   });
 
-  // Eğer zaten KaTeX span'leri içeriyorsa geri kalan metni işle
-  if (text.includes('class="katex"')) {
-    return text;
+  if (mathPlaceholders.length > 0) {
+    let safe = escapeHtml(text);
+    safe = applyCommonMathPatterns(safe);
+    return safe.replace(/___MATH_TOKEN_(\d+)___/g, (_, idx) => mathPlaceholders[Number(idx)]);
   }
 
   // Özel matematiksel sembol ve gösterimleri zenginleştir (örn: x² + 6x + 10 = 0, √12, Δ)
@@ -64,19 +71,30 @@ export function renderMathWithXray(rawText: string, xrayHtml?: string): string {
 
 function enrichPreEscapedMathSegment(escapedSegment: string): string {
   if (!escapedSegment) return '';
+  const mathPlaceholders: string[] = [];
   let text = escapedSegment;
 
   text = text.replace(/\$\$([\s\S]+?)\$\$|\\\[([\s\S]+?)\\\]/g, (_m, g1, g2) => {
     const math = (g1 || g2).replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-    return renderMathFormula(math.trim(), true);
+    const rendered = renderMathFormula(math.trim(), true);
+    const idx = mathPlaceholders.length;
+    mathPlaceholders.push(rendered);
+    return `___MATH_TOKEN_${idx}___`;
   });
 
   text = text.replace(/\$([^\$\n]+?)\$|\\\(([\s\S]+?)\\\)/g, (_m, g1, g2) => {
     const math = (g1 || g2).replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-    return renderMathFormula(math.trim(), false);
+    const rendered = renderMathFormula(math.trim(), false);
+    const idx = mathPlaceholders.length;
+    mathPlaceholders.push(rendered);
+    return `___MATH_TOKEN_${idx}___`;
   });
 
-  return applyCommonMathPatterns(text);
+  let out = applyCommonMathPatterns(text);
+  if (mathPlaceholders.length > 0) {
+    out = out.replace(/___MATH_TOKEN_(\d+)___/g, (_, idx) => mathPlaceholders[Number(idx)]);
+  }
+  return out;
 }
 
 /**

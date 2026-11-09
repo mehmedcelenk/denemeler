@@ -149,12 +149,18 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
 
   PEER_LEAVE: (ctx, incoming) => {
     const { senderId, senderName, timestamp } = incoming;
+    const leavingPeer = ctx.participants.find((p) => p.id === senderId);
+    const wasHost = (leavingPeer?.isHost ?? false) || Boolean(incoming.isSenderHost) || Boolean(incoming.existingPeer?.isHost);
+
     const idx = ctx.participants.findIndex((p) => p.id === senderId);
     if (idx !== -1) ctx.participants.splice(idx, 1);
     const stats = ctx.studentStats[senderId];
     if (stats) {
       stats.isOnline = false;
       stats.exitCount = (stats.exitCount || 0) + 1;
+    }
+    if (wasHost && !ctx.isHost) {
+      ctx.setPaused(false);
     }
     if (ctx.isHost) {
       const openExit = ctx.feedItems.find(

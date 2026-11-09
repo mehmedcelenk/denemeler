@@ -1,7 +1,6 @@
 import { state, onStateChange, notifyStateChange } from '../../app/state.ts';
 import { getShortCourseName } from '../../data/subjects.js';
 import { getQuestionDifficulty } from '../../shared/difficulty.ts';
-import { isEnglishQuestion } from '../../shared/english-utils.ts';
 import { renderMathWithXray } from '../../shared/math-render.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 import type { Question, Choice } from '../../data/question.ts';
@@ -125,11 +124,10 @@ export function renderCardSourceTag(q: Question): string {
 /** Soru kökünü dersin türüne göre zenginleştirir. */
 export function renderCardStem(q: Question): string {
   const isMath = (state.currentSubject === 'MAT') || Boolean(q.ders && q.ders.includes('MATEMATİK'));
+  const hasFormula = isMath || Boolean(q.soru && q.soru.includes('$'));
 
-  if (isMath) return renderMathWithXray(q.soru, q.soru_xray).trim();
-  const baseHtml = isEnglishQuestion(q)
-    ? (q.soru_xray || q.soru)
-    : (q.soru_xray || escapeHtml(q.soru));
+  if (hasFormula) return renderMathWithXray(q.soru, q.soru_xray).trim();
+  const baseHtml = q.soru_xray || escapeHtml(q.soru);
   return applyStemHooks(q, baseHtml).trim();
 }
 
@@ -150,6 +148,7 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
   const pendingMark = !userMark ? state.pendingMarkedChoices[q.id] : undefined;
   const isRevealed = state.revealedAnswers.has(q.id);
   const isMath = (state.currentSubject === 'MAT') || Boolean(q.ders && q.ders.includes('MATEMATİK'));
+  const hasFormula = isMath || Boolean(q.soru && q.soru.includes('$'));
   const isRematchOrMistakes = (state.bookletFilterMode === 'incorrect' || (state.isLibraryMode && state.libraryTab === 'rematch'));
 
   const availableChoices: Choice[] = (q.secenekler && q.secenekler['E'])
@@ -187,10 +186,8 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
 
     const actionAttrs = isPassive ? '' : `data-action="select-optical-choice" data-qid="${q.id}" data-letter="${letter}"`;
     const optXray = q.secenekler_xray?.[letter];
-    const baseOptContent = isEnglishQuestion(q)
-      ? optText
-      : (optXray || escapeHtml(optText));
-    const renderedOptContent = isMath
+    const baseOptContent = optXray || escapeHtml(optText);
+    const renderedOptContent = (hasFormula || optText.includes('$'))
       ? renderMathWithXray(optText, optXray)
       : applyStemHooks(q, baseOptContent);
 

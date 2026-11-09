@@ -1,6 +1,7 @@
 import { store } from '../../app/state.ts';
 import type { Choice } from '../../data/question.ts';
 import { getCardChoiceRow, getQuestionCards } from '../booklet/card-query.ts';
+import { scheduleCloudSync } from '../welcome/cloud-sync.ts';
 
 let longPressTimer: ReturnType<typeof setTimeout> | null = null;
 let longPressTriggered = false;
@@ -23,6 +24,8 @@ export function toggleEliminateChoice(qid: number, letter: Choice): boolean {
       navigator.vibrate(isNowEliminated ? 35 : 20);
     } catch {}
   }
+
+  scheduleCloudSync();
 
   return isNowEliminated;
 }

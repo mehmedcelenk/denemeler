@@ -11,6 +11,9 @@ interface WelcomeViewOptions {
 const studyIcon = `
   <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
 `;
+const resumeIcon = `
+  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+`;
 const usersIcon = `
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
 `;
@@ -64,6 +67,11 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
         </div>
 
         <div class="welcome-actions">
+          <button type="button" class="welcome-action-row welcome-action-resume" data-action="welcome-resume" id="btnWelcomeResume" style="display: ${options.canResume ? 'flex' : 'none'};">
+            <span class="welcome-action-icon">${resumeIcon}</span>
+            <span class="welcome-action-label">Son Çalıştığına Dön</span>
+            <span class="welcome-action-arrow" aria-hidden="true">→</span>
+          </button>
           <button type="button" class="welcome-action-row" data-action="welcome-start-single">
             <span class="welcome-action-icon">${studyIcon}</span>
             <span class="welcome-action-label">Soru Çöz</span>
@@ -181,9 +189,14 @@ export function showNameError(message = ''): void {
 }
 
 export function updateResumeAction(canResume: boolean): void {
-  const button = document.getElementById('btnResumeLastSession') as HTMLButtonElement | null;
-  if (!button) return;
-  button.title = canResume ? 'Son çalıştığın soruya dön' : 'Yeni derse başla';
+  const consoleBtn = document.getElementById('btnResumeLastSession') as HTMLButtonElement | null;
+  if (consoleBtn) {
+    consoleBtn.title = canResume ? 'Son çalıştığın soruya dön' : 'Yeni derse başla';
+  }
+  const welcomeBtn = document.getElementById('btnWelcomeResume') as HTMLButtonElement | null;
+  if (welcomeBtn) {
+    welcomeBtn.style.display = canResume ? 'flex' : 'none';
+  }
 }
 
 export function focusRoomInput(): void {
