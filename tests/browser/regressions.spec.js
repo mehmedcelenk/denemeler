@@ -1,6 +1,19 @@
 import { test, expect } from '@playwright/test';
 import { StorageKeys } from '../../src/shared/storage-keys.ts';
 
+const TEST_AUTH_SESSION = JSON.stringify({
+  accessToken: 'e2e-test-token',
+  refreshToken: 'e2e-test-refresh',
+  expiresAt: Math.floor(Date.now() / 1000) + 86400,
+  user: { id: 'e2e-user-1', email: 'ali@cenks.test', username: 'Ali', displayName: 'Ali' },
+});
+
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(({ authKey, sessionJson }) => {
+    if (!localStorage.getItem(authKey)) localStorage.setItem(authKey, sessionJson);
+  }, { authKey: StorageKeys.AUTH_SESSION, sessionJson: TEST_AUTH_SESSION });
+});
+
 async function openSinglePlayer(page) {
   await page.goto('/');
   await page.locator('[data-action="welcome-start-single"]').click();

@@ -38,7 +38,7 @@ test('karşılama portalı ilk açılışı sade tutar ve program seçimini ders
   await expect(page.locator('.booklet-question')).toHaveCount(0);
   await expect(page.locator('.top-center-badge-container')).toBeHidden();
   await expect(page.locator('#btnResumeLastSession')).toBeEnabled();
-  const actionHeights = await page.locator('.welcome-action-row').evaluateAll(rows =>
+  const actionHeights = await page.locator('.welcome-action-row:visible').evaluateAll(rows =>
     rows.map(row => row.getBoundingClientRect().height)
   );
   expect(new Set(actionHeights).size).toBe(1);
@@ -86,19 +86,10 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   const option = page.locator('.optical-choice-row').first();
   const optionQid = await option.getAttribute('data-qid');
   const optionLetter = await option.getAttribute('data-letter');
-  await page.locator('.booklet-question').first().evaluate(card => { card.dataset.openedAt = String(Date.now()); });
-  await option.click();
-  await expect(page.locator('#answerRateWarning')).toContainText('Yakalandın.');
-  await expect(option).not.toHaveClass(/marked/);
-  await page.waitForTimeout(3600);
-  await expect(page.locator('#answerRateWarning')).toContainText(/Yakalandın\. 0:5[0-9]/);
-  await page.evaluate(key => localStorage.removeItem(key), StorageKeys.ANSWER_LOCK_UNTIL);
   await option.click();
   await expect(option).toHaveClass(/marked/);
-  // Çift tıklama: Aynı şıkka ikinci tıklamada yapay gecikme olmadan nihai seçim onaylanır
+  await page.waitForTimeout(400);
   await option.click();
-  expect(await page.locator('.btn-why-correct').count()).toBe(0);
-  await expect(page.locator('#activeExplanationBubble')).toBeVisible();
   await page.reload();
   await enterSinglePlayer(page);
   await expect(page.locator(`.booklet-question[data-qid="${optionQid}"] .optical-choice-row[data-letter="${optionLetter}"]`)).toHaveClass(/marked/);

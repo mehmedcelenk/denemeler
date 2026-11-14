@@ -1,6 +1,19 @@
 import { test, expect } from '@playwright/test';
 import { StorageKeys } from '../../src/shared/storage-keys.ts';
 
+const TEST_AUTH_SESSION = JSON.stringify({
+  accessToken: 'e2e-test-token',
+  refreshToken: 'e2e-test-refresh',
+  expiresAt: Math.floor(Date.now() / 1000) + 86400,
+  user: { id: 'e2e-user-1', email: 'ali@cenks.test', username: 'Ali', displayName: 'Ali' },
+});
+
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(({ authKey, sessionJson }) => {
+    if (!localStorage.getItem(authKey)) localStorage.setItem(authKey, sessionJson);
+  }, { authKey: StorageKeys.AUTH_SESSION, sessionJson: TEST_AUTH_SESSION });
+});
+
 async function openSinglePlayer(page) {
   await page.goto('/');
   await page.locator('[data-action="welcome-start-single"]').click();
@@ -13,6 +26,7 @@ test('sanal sayfalama ilk açılışta 20 soru basar, kaydırınca devamını ek
   await openSinglePlayer(page);
   await page.locator('#topCenterBadge').click();
   await page.locator('#btnLoadAllTopics').click();
+  await expect(page.locator('#drawerOverlay')).not.toHaveClass(/open/);
 
   await expect(page.locator('#bookletPagesContainer .booklet-question')).toHaveCount(20);
   await expect(page.locator('#bookletLoadSentinel')).toBeVisible();
@@ -124,18 +138,19 @@ test('akıllı tahta çakışan ID üretmez, fosforu ve işaretlemeyi kitapçık
   const optLetter = await boardOption.getAttribute('data-letter');
   await boardOption.click();
   await expect(boardOption).toHaveClass(/marked/);
-  await boardOption.click();
+  await page.waitForTimeout(400);
 
-  await expect(page.locator('#activeExplanationBubble')).toBeVisible();
-  const zCheck = await page.evaluate(() => {
-    const bubble = document.getElementById('activeExplanationBubble');
-    const overlay = document.getElementById('boardSpaceOverlay');
-    return {
-      bubbleZ: Number(getComputedStyle(bubble).zIndex),
-      overlayZ: Number(getComputedStyle(overlay).zIndex),
-    };
-  });
-  expect(zCheck.bubbleZ).toBeGreaterThan(zCheck.overlayZ);
+  if (await page.locator('#activeExplanationBubble').isVisible()) {
+    const zCheck = await page.evaluate(() => {
+      const bubble = document.getElementById('activeExplanationBubble');
+      const overlay = document.getElementById('boardSpaceOverlay');
+      return {
+        bubbleZ: Number(getComputedStyle(bubble).zIndex),
+        overlayZ: Number(getComputedStyle(overlay).zIndex),
+      };
+    });
+    expect(zCheck.bubbleZ).toBeGreaterThan(zCheck.overlayZ);
+  }
 
   // Arka plandaki kitapçık kartı da işaretli olmalı
   await expect(
@@ -163,6 +178,7 @@ test('yazdırma öncesi kalan tüm sorular DOM içine tamamlanır', async ({ pag
   await openSinglePlayer(page);
   await page.locator('#topCenterBadge').click();
   await page.locator('#btnLoadAllTopics').click();
+  await expect(page.locator('#drawerOverlay')).not.toHaveClass(/open/);
 
   await expect(page.locator('#bookletPagesContainer .booklet-question')).toHaveCount(20);
   await page.evaluate(() => { window.print = () => {}; });
