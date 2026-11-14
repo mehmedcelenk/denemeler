@@ -61,7 +61,8 @@ class RoomService {
     savedStats?: StudentStats,
     awayDurationMs?: number,
     savedHostStats?: Record<string, StudentStats>,
-    savedHostFeed?: RoomFeedItem[]
+    savedHostFeed?: RoomFeedItem[],
+    savedIsPaused?: boolean
   ): void {
     const cleanRoom = roomId.trim().toUpperCase();
     const cleanName = userName.trim();
@@ -73,21 +74,22 @@ class RoomService {
     if (savedPeerId) this.peerId = savedPeerId;
     else if (archived) this.peerId = archived.peerId;
 
+    const effectiveHost = archived ? false : asHost;
     const joinedAt = Number.isFinite(savedJoinedAt) && (savedJoinedAt ?? 0) > 0 ? (savedJoinedAt as number) : (archived?.joinedAt ?? now);
     const effectiveAwayMs = awayDurationMs ?? archived?.awayDurationMs;
     const myStudentStats = createInitialStudentStats(this.peerId, cleanName, joinedAt, now, savedStats ?? archived?.stats);
-    const initialFeed: RoomFeedItem[] = asHost && Array.isArray(savedHostFeed) && savedHostFeed.length > 0
+    const initialFeed: RoomFeedItem[] = effectiveHost && Array.isArray(savedHostFeed) && savedHostFeed.length > 0
       ? savedHostFeed
       : [{ id: `${now}_${this.peerId}`, type: 'JOIN', studentId: this.peerId, studentName: cleanName, timestamp: now }];
 
     this.state = {
       roomId: cleanRoom,
       userName: cleanName,
-      isHost: asHost,
-      isPaused: false,
-      participants: [{ id: this.peerId, name: cleanName, isHost: asHost, joinedAt, lastSeenAt: now }],
+      isHost: effectiveHost,
+      isPaused: effectiveHost ? Boolean(savedIsPaused) : false,
+      participants: [{ id: this.peerId, name: cleanName, isHost: effectiveHost, joinedAt, lastSeenAt: now }],
       feedItems: initialFeed,
-      studentStats: asHost ? (savedHostStats ?? {}) : { [this.peerId]: myStudentStats },
+      studentStats: effectiveHost ? (savedHostStats ?? {}) : { [this.peerId]: myStudentStats },
       helpRequested: false,
     };
 
@@ -103,30 +105,15 @@ class RoomService {
     const plan = buildRestoredSessionPlan();
     if (!plan) return false;
     this.joinOrCreateRoom(
-      plan.roomId,
-      plan.userName,
-      plan.isHost,
-      plan.peerId,
-      plan.joinedAt,
-      plan.restoredStats,
-      plan.awayDurationMs,
-      plan.hostStudentStats,
-      plan.hostFeedItems
+      plan.roomId, plan.userName, plan.isHost, plan.peerId, plan.joinedAt,
+      plan.restoredStats, plan.awayDurationMs, plan.hostStudentStats, plan.hostFeedItems, plan.isPaused
     );
     return true;
   }
 
-  markAwayStarted(timestamp = Date.now()): void {
-    persistAwayStartIfUnset(this.state, this.peerId, timestamp);
-  }
-
-  clearAwayStarted(): void {
-    persistCurrentRoomSession(this.state, this.peerId, null);
-  }
-
-  handlePageUnload(timestamp = Date.now()): void {
-    persistAwayStartIfUnset(this.state, this.peerId, timestamp);
-  }
+  markAwayStarted(timestamp = Date.now()): void { persistAwayStartIfUnset(this.state, this.peerId, timestamp); }
+  clearAwayStarted(): void { persistCurrentRoomSession(this.state, this.peerId, null); }
+  handlePageUnload(timestamp = Date.now()): void { persistAwayStartIfUnset(this.state, this.peerId, timestamp); }
 
   leaveRoom(): void {
     if (!this.state.roomId) return;
@@ -136,6 +123,7 @@ class RoomService {
     this.clearSyncDebounce();
     clearRoomSession(this.state, this.peerId);
     roomChannel.disconnect();
+    this.peerId = Math.random().toString(36).substring(2, 9);
     this.resetState();
     this.notify();
   }
@@ -145,6 +133,7 @@ class RoomService {
     this.state.isPaused = !this.state.isPaused;
     this.notify();
     this.emit('ROOM_PAUSE', { isPaused: this.state.isPaused });
+    this.scheduleSyncBroadcast();
   }
 
   closeRoomGlobally(): void {

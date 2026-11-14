@@ -20,9 +20,8 @@ let panX = 0;
 let panY = 0;
 let pinchStartDist = 0;
 let pinchStartScale = 1.0;
-let pinchStartCenter = { x: 0, y: 0 };
-let pinchStartPan = { x: 0, y: 0 };
-let lastTapTime = 0;
+let pinchLastCenter = { x: 0, y: 0 };
+let zoomRafId = 0;
 
 function notifyBookletLayoutChange() {
   document.dispatchEvent(new Event('booklet:layoutchange'));
@@ -89,19 +88,21 @@ export function toggleTheme() {
 }
 
 /* ==================== ZOOM & CANVAS ==================== */
-function updateContainerTransform() {
+function updateContainerTransform(animate = false) {
   const container = document.getElementById('bookletPagesContainer');
   if (!container) return;
 
-  if (Math.abs(state.canvasZoomScale - 1.0) < 0.02 && Math.abs(panX) < 1 && Math.abs(panY) < 1) {
+  container.style.transition = animate ? 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)' : 'none';
+  const isDefault = Math.abs(state.canvasZoomScale - 1.0) < 0.02 && Math.abs(panX) < 1 && Math.abs(panY) < 1;
+  if (isDefault) {
     container.style.transform = '';
   } else {
-    container.style.transform = `translate(${Math.round(panX)}px, ${Math.round(panY)}px) scale(${state.canvasZoomScale})`;
+    container.style.transform = `translate3d(${panX.toFixed(2)}px, ${panY.toFixed(2)}px, 0) scale(${state.canvasZoomScale.toFixed(4)})`;
   }
 
   const indicator = document.getElementById('bookletZoomIndicator');
   if (indicator) {
-    if (Math.abs(state.canvasZoomScale - 1.0) < 0.02 && Math.abs(panX) < 1 && Math.abs(panY) < 1) {
+    if (isDefault) {
       indicator.classList.remove('active');
     } else {
       indicator.classList.add('active');
@@ -113,16 +114,28 @@ function updateContainerTransform() {
   }
 }
 
+function scheduleContainerTransformUpdate() {
+  if (zoomRafId) return;
+  if (typeof requestAnimationFrame === 'undefined') {
+    updateContainerTransform(false);
+    return;
+  }
+  zoomRafId = requestAnimationFrame(() => {
+    zoomRafId = 0;
+    updateContainerTransform(false);
+  });
+}
+
 export function resetBookletCanvasZoom() {
   store.setCanvasZoomScale(1.0);
   panX = 0;
   panY = 0;
-  updateContainerTransform();
+  updateContainerTransform(true);
 }
 
 export function setBookletCanvasScale(scale: number) {
   store.setCanvasZoomScale(scale);
-  updateContainerTransform();
+  scheduleContainerTransformUpdate();
 }
 
 export function initBookletCanvasZoom() {
@@ -131,21 +144,21 @@ export function initBookletCanvasZoom() {
 
   window.addEventListener('wheel', (e) => {
     if (!e.ctrlKey && !e.metaKey) return;
-    const target = e.target as HTMLElement;
-    if (!container.contains(target) && target !== container) return;
+    if (state.activeBoardQuestionId !== null) return;
+    const target = e.target as HTMLElement | null;
+    if (!target || (!container.contains(target) && target !== container)) return;
 
     e.preventDefault();
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
     const delta = -e.deltaY * 0.002;
     const newScale = Math.min(2.5, Math.max(0.85, state.canvasZoomScale + delta));
     if (Math.abs(newScale - state.canvasZoomScale) < 0.001) return;
 
+    const rect = container.getBoundingClientRect();
     const scaleRatio = newScale / state.canvasZoomScale;
-    panX = mouseX - scaleRatio * (mouseX - panX);
-    panY = mouseY - scaleRatio * (mouseY - panY);
+    panX += (e.clientX - rect.left) * (1 - scaleRatio);
+    panY += (e.clientY - rect.top) * (1 - scaleRatio);
     store.setCanvasZoomScale(newScale);
-    updateContainerTransform();
+    scheduleContainerTransformUpdate();
   }, { passive: false });
 
   container.addEventListener('touchstart', (e) => {
@@ -154,17 +167,9 @@ export function initBookletCanvasZoom() {
       const p2 = e.touches[1];
       pinchStartDist = Math.hypot(p1.clientX - p2.clientX, p1.clientY - p2.clientY);
       pinchStartScale = state.canvasZoomScale;
-      pinchStartCenter = { x: (p1.clientX + p2.clientX) / 2, y: (p1.clientY + p2.clientY) / 2 };
-      pinchStartPan = { x: panX, y: panY };
-    } else if (e.touches.length === 1) {
-      const now = Date.now();
-      if (now - lastTapTime < 300) {
-        e.preventDefault();
-        resetBookletCanvasZoom();
-      }
-      lastTapTime = now;
+      pinchLastCenter = { x: (p1.clientX + p2.clientX) / 2, y: (p1.clientY + p2.clientY) / 2 };
     }
-  }, { passive: false });
+  }, { passive: true });
 
   container.addEventListener('touchmove', (e) => {
     if (e.touches.length === 2 && pinchStartDist > 0) {
@@ -172,20 +177,23 @@ export function initBookletCanvasZoom() {
       const p1 = e.touches[0];
       const p2 = e.touches[1];
       const dist = Math.hypot(p1.clientX - p2.clientX, p1.clientY - p2.clientY);
-      const ratio = dist / pinchStartDist;
-      const targetScale = Math.min(2.5, Math.max(0.85, pinchStartScale * ratio));
-
+      const targetScale = Math.min(2.5, Math.max(0.85, pinchStartScale * (dist / pinchStartDist)));
       const currentCenter = { x: (p1.clientX + p2.clientX) / 2, y: (p1.clientY + p2.clientY) / 2 };
-      const panDx = currentCenter.x - pinchStartCenter.x;
-      const panDy = currentCenter.y - pinchStartCenter.y;
 
-      const scaleRatio = targetScale / pinchStartScale;
-      panX = pinchStartCenter.x - scaleRatio * (pinchStartCenter.x - pinchStartPan.x) + panDx;
-      panY = pinchStartCenter.y - scaleRatio * (pinchStartCenter.y - pinchStartPan.y) + panDy;
+      const rect = container.getBoundingClientRect();
+      const scaleRatio = targetScale / state.canvasZoomScale;
+      panX += (currentCenter.x - rect.left) * (1 - scaleRatio) + (currentCenter.x - pinchLastCenter.x);
+      panY += (currentCenter.y - rect.top) * (1 - scaleRatio) + (currentCenter.y - pinchLastCenter.y);
+      pinchLastCenter = currentCenter;
+
       store.setCanvasZoomScale(targetScale);
-      updateContainerTransform();
+      scheduleContainerTransformUpdate();
     }
   }, { passive: false });
+
+  container.addEventListener('touchend', (e) => {
+    if (e.touches.length < 2) pinchStartDist = 0;
+  }, { passive: true });
 }
 
 /* ==================== SÜTUN & FONT AYARLARI ==================== */

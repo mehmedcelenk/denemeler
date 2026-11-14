@@ -1,14 +1,66 @@
 {
-  "AOF_AHLAK": {
-    "questionCount": 142,
-    "courseCount": 1
+  "DIN": {
+    "questionCount": 616,
+    "courseCount": 8
   },
-  "AOF_ARAPCA": {
-    "questionCount": 50,
-    "courseCount": 1
+  "FEL": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "TAR": {
+    "questionCount": 492,
+    "courseCount": 6
+  },
+  "COG": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "ING": {
+    "questionCount": 656,
+    "courseCount": 8
+  },
+  "SAG": {
+    "questionCount": 164,
+    "courseCount": 2
+  },
+  "FIZ": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "KIM": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "BIO": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "TDE": {
+    "questionCount": 656,
+    "courseCount": 8
+  },
+  "MAT": {
+    "questionCount": 328,
+    "courseCount": 4
+  },
+  "INK": {
+    "questionCount": 164,
+    "courseCount": 2
+  },
+  "KLM": {
+    "questionCount": 164,
+    "courseCount": 2
   },
   "AOF_HADIS": {
     "questionCount": 115,
+    "courseCount": 1
+  },
+  "AOF_ITAR": {
+    "questionCount": 129,
+    "courseCount": 1
+  },
+  "AOF_AHLAK": {
+    "questionCount": 142,
     "courseCount": 1
   },
   "AOF_IBADET": {
@@ -19,8 +71,32 @@
     "questionCount": 159,
     "courseCount": 1
   },
-  "AOF_ITAR": {
-    "questionCount": 129,
+  "AOO_TURKCE": {
+    "questionCount": 372,
+    "courseCount": 4
+  },
+  "AOO_MAT": {
+    "questionCount": 372,
+    "courseCount": 4
+  },
+  "AOO_FEN": {
+    "questionCount": 372,
+    "courseCount": 4
+  },
+  "AOO_SOS": {
+    "questionCount": 372,
+    "courseCount": 4
+  },
+  "AOO_ING": {
+    "questionCount": 372,
+    "courseCount": 4
+  },
+  "AOO_DIN": {
+    "questionCount": 372,
+    "courseCount": 4
+  },
+  "AOF_ARAPCA": {
+    "questionCount": 50,
     "courseCount": 1
   },
   "AYT_BIO": {
@@ -67,26 +143,6 @@
     "questionCount": 99,
     "courseCount": 1
   },
-  "BIO": {
-    "questionCount": 328,
-    "courseCount": 4
-  },
-  "COG": {
-    "questionCount": 328,
-    "courseCount": 4
-  },
-  "DIN": {
-    "questionCount": 616,
-    "courseCount": 8
-  },
-  "FEL": {
-    "questionCount": 328,
-    "courseCount": 4
-  },
-  "FIZ": {
-    "questionCount": 328,
-    "courseCount": 4
-  },
   "GIR_TEMEL": {
     "questionCount": 22,
     "courseCount": 2
@@ -130,38 +186,6 @@
   "ILM_ZEKAT": {
     "questionCount": 164,
     "courseCount": 2
-  },
-  "ING": {
-    "questionCount": 656,
-    "courseCount": 8
-  },
-  "INK": {
-    "questionCount": 164,
-    "courseCount": 2
-  },
-  "KIM": {
-    "questionCount": 328,
-    "courseCount": 4
-  },
-  "KLM": {
-    "questionCount": 164,
-    "courseCount": 2
-  },
-  "MAT": {
-    "questionCount": 328,
-    "courseCount": 4
-  },
-  "SAG": {
-    "questionCount": 164,
-    "courseCount": 2
-  },
-  "TAR": {
-    "questionCount": 492,
-    "courseCount": 6
-  },
-  "TDE": {
-    "questionCount": 656,
-    "courseCount": 8
   },
   "TYT_BIO": {
     "questionCount": 53,

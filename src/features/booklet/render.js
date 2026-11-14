@@ -50,6 +50,10 @@ function getBookletHeaderMeta(programMode, selectedCoursesSize, selectedTopicKey
     institution = 'T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM İMAM HATİP LİSESİ';
     defaultTitle = 'DÖNEM ÇIKMIŞ SINAV SORULARI';
     footerName = 'AÖİHL KESİŞİM REHBERİ';
+  } else if (programMode === 'AOO') {
+    institution = 'T.C. MİLLÎ EĞİTİM BAKANLIĞI • AÇIK ÖĞRETİM ORTAOKULU';
+    defaultTitle = 'AÖO ÇIKMIŞ SINAV SORULARI';
+    footerName = 'CENKS AÖO REHBERİ';
   } else if (programMode === 'AOF') {
     institution = 'ANADOLU ÜNİVERSİTESİ • AÇIKÖĞRETİM FAKÜLTESİ';
     defaultTitle = 'AÖF ÇIKMIŞ SINAV SORULARI';

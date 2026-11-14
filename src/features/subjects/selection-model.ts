@@ -1,6 +1,7 @@
 import { state } from '../../app/state.ts';
 import {
   AOIHL_SUBJECTS,
+  AOO_SUBJECTS,
   AOF_SUBJECTS,
   ILMIHAL_SUBJECTS,
   GIRISIMCILIK_SUBJECTS,
@@ -11,6 +12,7 @@ import {
 } from '../../data/subjects.js';
 
 export function getProgramSubjectList(programMode = state.programMode) {
+  if (programMode === 'AOO') return AOO_SUBJECTS;
   if (programMode === 'AOF') return AOF_SUBJECTS;
   if (programMode === 'ILMIHAL') return ILMIHAL_SUBJECTS;
   if (programMode === 'GIRISIMCILIK') return GIRISIMCILIK_SUBJECTS;

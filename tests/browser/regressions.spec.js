@@ -144,4 +144,22 @@ test('ders yükleme hatasında önceki kitapçık korunur ve yeniden denenebilir
   expect(errors).toEqual([]);
 });
 
+test('feature bar sayfa açılışında kapalıdır ve tek tıkla açılıp tek tıkla kapanır', async ({ page }) => {
+  await openSinglePlayer(page);
+
+  const openDrawers = await page.locator('.q-features-drawer.is-expanded').count();
+  expect(openDrawers).toBe(0);
+
+  const toggleBtn = page.locator('.btn-features-toggle').first();
+  const firstDrawer = page.locator('.q-features-drawer').first();
+
+  await toggleBtn.click();
+  await expect(firstDrawer).toHaveClass(/is-expanded/);
+  await expect(toggleBtn.locator('.features-toggle-icon')).toHaveText('‹');
+
+  await toggleBtn.click();
+  await expect(firstDrawer).not.toHaveClass(/is-expanded/);
+  await expect(toggleBtn.locator('.features-toggle-icon')).toHaveText('›');
+});
+
 

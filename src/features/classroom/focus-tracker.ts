@@ -72,6 +72,8 @@ export function checkFocusAfterResume(): void {
 export function triggerPotentialFocusLoss(immediate: boolean = false, now: number = Date.now()): void {
   const state = roomService.getState();
   if (!state.roomId || state.isPaused || state.isHost || isCurrentlyLost) return;
+  // Aynı odak kaybı geçişinde (blur + visibilitychange arka arkaya tetiklendiğinde) graceTimer'ı bozma
+  if (graceTimer && !immediate) return;
 
   roomService.markAwayStarted(now);
 
@@ -88,8 +90,6 @@ export function triggerPotentialFocusLoss(immediate: boolean = false, now: numbe
     confirmFocusLoss(now);
     return;
   }
-
-  if (graceTimer) return;
 
   focusLostStartTimestamp = now;
   graceTimer = setTimeout(() => {

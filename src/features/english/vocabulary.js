@@ -1,6 +1,6 @@
 import { escapeHtml } from '../../shared/escape.ts';
 import { formatConceptBubbleHtml } from '../../shared/math-render.ts';
-import { getGrammarColor, getPosColor, extractGrammarLabels, renderJunctionFraction } from './grammar-bubble.ts';
+import { getGrammarColor, extractGrammarLabels, renderJunctionFraction } from './grammar-bubble.ts';
 
 export const MEB_TRAPS_DICT = {};
 
@@ -85,6 +85,13 @@ export function showVocabBubble(el, event) {
   const noteText = el.getAttribute('data-note') || '';
   if (!trText && !arText) return;
 
+  if (el.classList.contains('xray-junction')) return;
+  const isSoundOff = Boolean(el.closest('.hide-sound'));
+  if (el.classList.contains('sound-word') && isSoundOff) return;
+  if (el.classList.contains('pos-word') && !el.classList.contains('concept-word')) {
+    if (!el.classList.contains('has-sound') || isSoundOff) return;
+  }
+
   const existingBubble = document.getElementById('activeVocabBubble');
   if (existingBubble) existingBubble.remove();
   if (activeVocabWordEl) activeVocabWordEl.classList.remove('vocab-active');
@@ -122,16 +129,11 @@ export function showVocabBubble(el, event) {
   const grammarLabels = extractGrammarLabels(el, trText, noteText);
 
   if (grammarLabels) {
+    if (!grammarLabels.soundLabel) return;
     bubble.classList.add('vocab-bubble-compact');
-    const items = [];
-    if (grammarLabels.posLabel) {
-      const posColor = getPosColor(el);
-      items.push(`<span class="vocab-grammar-pos" style="color:${posColor};">${escapeHtml(grammarLabels.posLabel)}</span>`);
-    }
-    if (grammarLabels.soundLabel) {
-      items.push(`<span class="vocab-grammar-sound" style="color:var(--pos-edat);">${escapeHtml(grammarLabels.soundLabel)}</span>`);
-    }
-    mainContent = `<div class="vocab-grammar-row">${items.join('<span class="vocab-grammar-sep">•</span>')}</div>`;
+    bubble.style.borderColor = 'var(--pos-edat)';
+    bubble.style.setProperty('--vocab-bubble-accent', 'var(--pos-edat)');
+    mainContent = `<div class="vocab-grammar-row"><span class="vocab-grammar-sound" style="color:var(--pos-edat);">${escapeHtml(grammarLabels.soundLabel)}</span></div>`;
     subContent = '';
   } else if (isJunction && junctionData) {
     mainContent = junctionData.html;

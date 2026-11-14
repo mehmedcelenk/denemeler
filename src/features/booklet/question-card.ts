@@ -5,6 +5,7 @@ import { renderMathWithXray } from '../../shared/math-render.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 import type { Question, Choice } from '../../data/question.ts';
 import { renderQuestionStatBadge } from './card-stat-badge.ts';
+import { svgXraySoundOn, svgXraySoundOff } from './features-bar.ts';
 import {
   applyStemHooks,
   renderHeaderExtraHooks,
@@ -31,10 +32,14 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
 
   const hasGrammarXray = Boolean(q.soru_xray && (q.soru_xray.includes('xray-vag') || q.soru_xray.includes('xray-junction') || q.soru_xray.includes('pos-word') || q.soru_xray.includes('sound-')));
   const showGrammarToggles = isTde || hasGrammarXray;
+  const soundEnabled = state.isXraySoundEnabled !== false;
+  const soundTitle = soundEnabled
+    ? 'Ses Olayları (Ünlü/Ünsüz) Açık — Tüm sorularda kapatmak için tıkla'
+    : 'Ses Olayları (Ünlü/Ünsüz) Kapalı — Tüm sorularda açmak için tıkla';
   const grammarTogglesHtml = showGrammarToggles ? `
-    <button class="btn-companion-icon btn-text-badge btn-xray-syntax active" data-action="toggle-xray-syntax" data-qid="${q.id}" title="Özne / Yüklem (Cümle Ögeleri) Aç/Kapat">ÖZ</button>
-    <button class="btn-companion-icon btn-text-badge btn-xray-pos active" data-action="toggle-xray-pos" data-qid="${q.id}" title="Sıfat / Zamir / Zarf (Sözcük Türleri) Aç/Kapat">SF</button>
-    <button class="btn-companion-icon btn-text-badge btn-xray-sound active" data-action="toggle-xray-sound" data-qid="${q.id}" title="Ses Olayları (Düşme, Benzeşme, Yumuşama) Aç/Kapat">ÜN</button>
+    <button class="btn-companion-icon btn-xray-sound ${soundEnabled ? 'active' : ''}" data-action="toggle-xray-sound" data-qid="${q.id}" title="${soundTitle}">
+      ${soundEnabled ? svgXraySoundOn : svgXraySoundOff}
+    </button>
   ` : '';
 
   const isEliminatedWrong = Boolean(state.eliminatedWrongChoices && state.eliminatedWrongChoices[q.id]);
@@ -231,6 +236,9 @@ export function renderQuestionCardHtml(q: Question, globalIdx: number): string {
   let questionClass = isPassive ? 'booklet-question is-passive-question' : 'booklet-question';
   if (stemHtml.includes('class="interlinear-word"')) {
     questionClass += ' has-interlinear';
+  }
+  if (state.isXraySoundEnabled === false) {
+    questionClass += ' hide-sound';
   }
   const userMark = state.userMarkedChoices[q.id] || state.pendingMarkedChoices[q.id] || '';
   const isRevealed = state.revealedAnswers.has(q.id);

@@ -19,15 +19,8 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
     let allowedAsHost = false;
     if (msg.isHost) {
       if (ctx.isHost) {
-        const myPeer = ctx.participants.find((p) => p.id === ctx.peerId);
-        const myJoinedAt = myPeer?.joinedAt ?? timestamp;
-        if (isOlderPeer(theirJoinedAt, senderId, myJoinedAt, ctx.peerId)) {
-          ctx.demoteToStudent();
-          for (const p of ctx.participants) p.isHost = false;
-          allowedAsHost = true;
-        } else {
-          allowedAsHost = false;
-        }
+        // Odada zaten aktif bir Hoca varken sonradan gelen PEER_JOIN (saat farkı / arşivli joinedAt olsa dahi) hocayı düşüremez
+        allowedAsHost = false;
       } else {
         const currentHost = ctx.participants.find((p) => p.isHost);
         if (!currentHost) {

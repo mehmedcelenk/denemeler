@@ -55,6 +55,7 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
         <div class="welcome-program-groups">
           <div class="welcome-program-toggle" role="group" aria-label="Sınav programları">
             <button type="button" data-action="welcome-set-program" data-program="AOIHL" aria-pressed="false">AOİHL</button>
+            <button type="button" data-action="welcome-set-program" data-program="AOO" aria-pressed="false">AÖO</button>
             <button type="button" data-action="welcome-set-program" data-program="AOF" aria-pressed="false">AÖF</button>
             <button type="button" data-action="welcome-set-program" data-program="TYT" aria-pressed="false">TYT</button>
             <button type="button" data-action="welcome-set-program" data-program="AYT" aria-pressed="false">AYT</button>

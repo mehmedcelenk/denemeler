@@ -35,6 +35,7 @@ import {
 
 const DEFAULT_SUBJECTS: Readonly<Record<ProgramMode, SubjectId>> = {
   AOIHL: 'TDE',
+  AOO: 'AOO_TURKCE',
   AOF: 'AOF_HADIS',
   ILMIHAL: 'ILM_TEMIZLIK',
   GIRISIMCILIK: 'GIR_TEMEL',
@@ -244,7 +245,7 @@ export function initWelcome(
   registerActions({
     'welcome-set-program': element => {
       const mode = element.dataset.program;
-      const validModes: readonly ProgramMode[] = ['AOIHL', 'AOF', 'ILMIHAL', 'GIRISIMCILIK', 'TYT', 'AYT', 'YDT'];
+      const validModes: readonly ProgramMode[] = ['AOIHL', 'AOO', 'AOF', 'ILMIHAL', 'GIRISIMCILIK', 'TYT', 'AYT', 'YDT'];
       if (!mode || !validModes.includes(mode as ProgramMode)) return;
       const programMode = mode as ProgramMode;
       store.setProgramMode(programMode);
@@ -275,10 +276,14 @@ export function initWelcome(
 
   if (!isAuthenticated() || (!roomService.getState().roomId && options.autoShow !== false)) {
     showWelcomePortal();
+    if (isAuthenticated()) {
+      void syncCloudProgress().then(() => updateResumeAction(hasSavedSession()));
+    }
   } else {
     hideWelcomePortal();
-    void resumeSavedSession();
+    void syncCloudProgress().finally(() => {
+      void resumeSavedSession();
+    });
   }
   void refreshInstitutionStats();
-  if (isAuthenticated()) void syncCloudProgress();
 }

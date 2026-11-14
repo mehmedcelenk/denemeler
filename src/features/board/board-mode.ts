@@ -1,17 +1,19 @@
 import { state, store, notifyStateChange } from '../../app/state.ts';
-import { updateCanvasTransform, renderBoardQuestion } from './board-view.ts';
-import { setBookletCanvasScale } from '../appearance/preferences.ts';
+import { computeBoardFocalZoom, renderBoardQuestion, scheduleBoardTransform, updateCanvasTransform } from './board-view.ts';
 
 let panX = 0;
 let panY = 0;
+let boardScale = 1;
 let pinchStartDist = 0;
 let pinchStartScale = 1;
+let pinchLastCenter = { x: 0, y: 0 };
 let isDragging = false;
 let isSpacePressed = false;
 let dragStartX = 0;
 let dragStartY = 0;
 let initialPanX = 0;
 let initialPanY = 0;
+let activePointerId: number | null = null;
 
 let lastBoardOpenedTime = 0;
 
@@ -70,7 +72,8 @@ export function closeBoardFocusMode(): void {
 export function resetBoardPan(): void {
   panX = 0;
   panY = 0;
-  updateCanvasTransform(panX, panY, true);
+  boardScale = 1;
+  updateCanvasTransform(panX, panY, true, boardScale);
 }
 
 export function handleBoardOverlayClick(_event?: MouseEvent): void {
@@ -146,6 +149,7 @@ function handleBoardPointerDown(e: PointerEvent): void {
 
   // Boş tuval alanı VEYA Space tuşu basılı iken: Sonsuz tuval kaydırması başlar
   isDragging = true;
+  activePointerId = e.pointerId;
   dragStartX = e.clientX;
   dragStartY = e.clientY;
   initialPanX = panX;
@@ -168,60 +172,58 @@ function handleBoardPointerDown(e: PointerEvent): void {
 }
 
 function handleBoardPointerMove(e: PointerEvent): void {
-  if (!isDragging) return;
-  const dx = e.clientX - dragStartX;
-  const dy = e.clientY - dragStartY;
-  panX = initialPanX + dx;
-  panY = initialPanY + dy;
-  updateCanvasTransform(panX, panY, false);
+  if (!isDragging || pinchStartDist > 0) return;
+  panX = initialPanX + (e.clientX - dragStartX);
+  panY = initialPanY + (e.clientY - dragStartY);
+  scheduleBoardTransform(panX, panY, boardScale);
 }
 
 function handleBoardPointerUp(e: PointerEvent): void {
   if (!isDragging) return;
   isDragging = false;
+  activePointerId = null;
 
   const overlay = document.getElementById('boardSpaceOverlay');
   if (overlay) {
     overlay.classList.remove('is-dragging');
-    try {
-      overlay.releasePointerCapture(e.pointerId);
-    } catch {
-      // Yok say
-    }
-    if (!isSpacePressed) {
-      overlay.classList.remove('is-space-panning');
-    }
+    try { overlay.releasePointerCapture(e.pointerId); } catch {}
+    if (!isSpacePressed) overlay.classList.remove('is-space-panning');
   }
 }
 
 function handleBoardWheel(e: WheelEvent): void {
-  const isZoomGesture = e.ctrlKey || e.metaKey;
-
-  if (isZoomGesture) {
-    e.preventDefault();
-    setBookletCanvasScale(state.canvasZoomScale - e.deltaY * 0.002);
-    updateCanvasTransform(panX, panY, false);
+  e.preventDefault();
+  if (e.ctrlKey || e.metaKey) {
+    const next = computeBoardFocalZoom(panX, panY, boardScale, boardScale - e.deltaY * 0.002, e.clientX, e.clientY);
+    panX = next.panX;
+    panY = next.panY;
+    boardScale = next.scale;
+    scheduleBoardTransform(panX, panY, boardScale);
     return;
   }
 
-  e.preventDefault();
   panX -= e.deltaX;
   panY -= e.deltaY;
-  updateCanvasTransform(panX, panY, false);
-
+  scheduleBoardTransform(panX, panY, boardScale);
   const hint = document.getElementById('boardPanHint');
-  if (hint) {
-    hint.style.opacity = '0';
-  }
+  if (hint) hint.style.opacity = '0';
 }
 
 function handleBoardTouchStart(e: TouchEvent): void {
   if (e.touches.length !== 2) return;
   const [first, second] = Array.from(e.touches);
   pinchStartDist = Math.hypot(first.clientX - second.clientX, first.clientY - second.clientY);
-  pinchStartScale = state.canvasZoomScale;
+  pinchStartScale = boardScale;
+  pinchLastCenter = { x: (first.clientX + second.clientX) / 2, y: (first.clientY + second.clientY) / 2 };
   isDragging = false;
-  document.getElementById('boardSpaceOverlay')?.classList.remove('is-dragging');
+  const overlay = document.getElementById('boardSpaceOverlay');
+  if (overlay) {
+    overlay.classList.remove('is-dragging');
+    if (activePointerId !== null) {
+      try { overlay.releasePointerCapture(activePointerId); } catch {}
+      activePointerId = null;
+    }
+  }
 }
 
 function handleBoardTouchMove(e: TouchEvent): void {
@@ -229,8 +231,16 @@ function handleBoardTouchMove(e: TouchEvent): void {
   e.preventDefault();
   const [first, second] = Array.from(e.touches);
   const distance = Math.hypot(first.clientX - second.clientX, first.clientY - second.clientY);
-  setBookletCanvasScale(pinchStartScale * distance / pinchStartDist);
-  updateCanvasTransform(panX, panY, false);
+  const currentCenter = { x: (first.clientX + second.clientX) / 2, y: (first.clientY + second.clientY) / 2 };
+  const targetScale = pinchStartScale * (distance / pinchStartDist);
+  const dx = currentCenter.x - pinchLastCenter.x;
+  const dy = currentCenter.y - pinchLastCenter.y;
+  const next = computeBoardFocalZoom(panX, panY, boardScale, targetScale, currentCenter.x, currentCenter.y, dx, dy);
+  pinchLastCenter = currentCenter;
+  panX = next.panX;
+  panY = next.panY;
+  boardScale = next.scale;
+  scheduleBoardTransform(panX, panY, boardScale);
 }
 
 function handleBoardTouchEnd(e: TouchEvent): void {
@@ -240,52 +250,35 @@ function handleBoardTouchEnd(e: TouchEvent): void {
 function handleBoardKeydown(e: KeyboardEvent): void {
   if (e.code === 'Space') {
     const target = e.target as HTMLElement | null;
-    const isInput = target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable);
-    if (!isInput) {
-      e.preventDefault();
-      if (!isSpacePressed) {
-        isSpacePressed = true;
-        const overlay = document.getElementById('boardSpaceOverlay');
-        if (overlay) overlay.classList.add('is-space-panning');
-      }
+    if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) return;
+    e.preventDefault();
+    if (!isSpacePressed) {
+      isSpacePressed = true;
+      document.getElementById('boardSpaceOverlay')?.classList.add('is-space-panning');
     }
     return;
   }
 
-  if (e.key === '0') {
-    resetBoardPan();
-    return;
-  }
-
-  if (e.key === 'Escape') {
-    closeBoardFocusMode();
-  } else if (e.key === 'ArrowLeft') {
-    navigateBoardQuestion(-1);
-  } else if (e.key === 'ArrowRight') {
-    navigateBoardQuestion(1);
-  } else if (e.key.toLowerCase() === 'c' && state.activeBoardQuestionId) {
+  if (e.key === '0') resetBoardPan();
+  else if (e.key === 'Escape') closeBoardFocusMode();
+  else if (e.key === 'ArrowLeft') navigateBoardQuestion(-1);
+  else if (e.key === 'ArrowRight') navigateBoardQuestion(1);
+  else if (e.key.toLowerCase() === 'c' && state.activeBoardQuestionId) {
     notifyStateChange('answer:reveal', { questionId: state.activeBoardQuestionId });
   }
 }
 
 function handleBoardKeyup(e: KeyboardEvent): void {
-  if (e.code === 'Space') {
-    isSpacePressed = false;
-    const overlay = document.getElementById('boardSpaceOverlay');
-    if (overlay) {
-      overlay.classList.remove('is-space-panning');
-      if (!isDragging) {
-        overlay.classList.remove('is-dragging');
-      }
-    }
-  }
+  if (e.code !== 'Space') return;
+  isSpacePressed = false;
+  const overlay = document.getElementById('boardSpaceOverlay');
+  if (!overlay) return;
+  overlay.classList.remove('is-space-panning');
+  if (!isDragging) overlay.classList.remove('is-dragging');
 }
 
 function handleWindowBlur(): void {
   isSpacePressed = false;
   isDragging = false;
-  const overlay = document.getElementById('boardSpaceOverlay');
-  if (overlay) {
-    overlay.classList.remove('is-space-panning', 'is-dragging');
-  }
+  document.getElementById('boardSpaceOverlay')?.classList.remove('is-space-panning', 'is-dragging');
 }

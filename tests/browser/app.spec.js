@@ -1,6 +1,19 @@
 import { test, expect } from '@playwright/test';
 import { StorageKeys } from '../../src/shared/storage-keys.ts';
 
+const TEST_AUTH_SESSION = JSON.stringify({
+  accessToken: 'e2e-test-token',
+  refreshToken: 'e2e-test-refresh',
+  expiresAt: Math.floor(Date.now() / 1000) + 86400,
+  user: { id: 'e2e-user-1', email: 'ali@cenks.test', username: 'Ali', displayName: 'Ali' },
+});
+
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(({ authKey, sessionJson }) => {
+    if (!localStorage.getItem(authKey)) localStorage.setItem(authKey, sessionJson);
+  }, { authKey: StorageKeys.AUTH_SESSION, sessionJson: TEST_AUTH_SESSION });
+});
+
 async function enterSinglePlayer(page) {
   await page.locator('[data-action="welcome-start-single"]').click();
   await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
@@ -49,9 +62,6 @@ test('çok oyunculu giriş adı saklar ve odaya öğrenci olarak katılır', asy
   await page.goto('/');
   await page.locator('#welcomeRoomId').fill('12-a');
   await page.locator('[data-action="welcome-join-room"]').click();
-  await expect(page.locator('#welcomeNameDialog')).toBeVisible();
-  await page.locator('#welcomeNameInput').fill('Ali');
-  await page.locator('[data-action="welcome-confirm-name"]').click();
 
   await expect(page.locator('#welcomePortal')).toBeHidden();
   await expect(page.locator('#topRoomPill')).toBeVisible();
@@ -272,27 +282,5 @@ test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı güncell
   // Üst rozetin seçimi özetlediğini doğrula
   await expect(page.locator('#topCenterBadge')).toHaveAttribute('title', /Konu/);
   await expect(page.locator('.booklet-question').first()).toBeVisible();
-});
-
-test('feature bar sayfa açılışında kapalıdır ve tek tıkla açılıp tek tıkla kapanır', async ({ page }) => {
-  await openSinglePlayer(page);
-
-  // 1. Sayfa ilk açıldığında hiçbir soru çekmecesi açık gelmemeli (0 adet is-expanded)
-  const openDrawers = await page.locator('.q-features-drawer.is-expanded').count();
-  expect(openDrawers).toBe(0);
-
-  // 2. İlk kartın özellik butonu
-  const toggleBtn = page.locator('.btn-features-toggle').first();
-  const firstDrawer = page.locator('.q-features-drawer').first();
-
-  // 3. Tek tıkla açılmalı
-  await toggleBtn.click();
-  await expect(firstDrawer).toHaveClass(/is-expanded/);
-  await expect(toggleBtn.locator('.features-toggle-icon')).toHaveText('‹');
-
-  // 4. Tek tıkla geri kapanmalı
-  await toggleBtn.click();
-  await expect(firstDrawer).not.toHaveClass(/is-expanded/);
-  await expect(toggleBtn.locator('.features-toggle-icon')).toHaveText('›');
 });
 

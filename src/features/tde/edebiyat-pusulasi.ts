@@ -39,62 +39,77 @@ export function getEntityFacts(key: string): { title: string; type: 'eser' | 'ya
   return null;
 }
 
+function escapeRegExp(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+interface CompiledDictPattern {
+  key: string;
+  code: string;
+  regex: RegExp;
+}
+
+function compileDictPatterns(dict: Record<string, unknown>): {
+  patterns: CompiledDictPattern[];
+  byCode: Map<string, string>;
+} {
+  const byCode = new Map<string, string>();
+  const patterns = Object.keys(dict)
+    .sort((a, b) => b.length - a.length)
+    .map(key => {
+      const code = key.replace(/[\s\-']/g, '_');
+      byCode.set(code, key);
+      const regex = new RegExp(`(?<![a-zA-ZçğıöşüÇĞİÖŞÜ])(${escapeRegExp(key)})(?![a-zA-ZçğıöşüÇĞİÖŞÜ])`, 'gi');
+      return { key, code, regex };
+    });
+  return { patterns, byCode };
+}
+
+const COMPILED_ESER = compileDictPatterns(MEB_ESER_DICT);
+const COMPILED_YAZAR = compileDictPatterns(MEB_YAZAR_DICT);
+const COMPILED_DIVAN = compileDictPatterns(MEB_DIVAN_GLOSAR);
+
 export function enrichTdeContent(rawText: string): string {
   if (!rawText) return '';
-
-  const sortedEserKeys = Object.keys(MEB_ESER_DICT).sort((a, b) => b.length - a.length);
-  const sortedYazarKeys = Object.keys(MEB_YAZAR_DICT).sort((a, b) => b.length - a.length);
-  const sortedDivanKeys = Object.keys(MEB_DIVAN_GLOSAR).sort((a, b) => b.length - a.length);
 
   let enriched = rawText;
 
   // 1. Eserler (Örn: "Mai ve Siyah", "Kutadgu Bilig")
-  sortedEserKeys.forEach(key => {
-    const regex = new RegExp(`(?<![a-zA-ZçğıöşüÇĞİÖŞÜ])(${escapeRegExp(key)})(?![a-zA-ZçğıöşüÇĞİÖŞÜ])`, 'gi');
-    enriched = enriched.replace(regex, (m) => `___ESER_${key.replace(/[\s\-']/g, '_')}___${m}___ENDESER___`);
-  });
+  for (const { code, regex } of COMPILED_ESER.patterns) {
+    enriched = enriched.replace(regex, m => `___ESER_${code}___${m}___ENDESER___`);
+  }
 
   // 2. Yazarlar (Örn: "Halit Ziya Uşaklıgil", "Namık Kemal")
-  sortedYazarKeys.forEach(key => {
-    const regex = new RegExp(`(?<![a-zA-ZçğıöşüÇĞİÖŞÜ])(${escapeRegExp(key)})(?![a-zA-ZçğıöşüÇĞİÖŞÜ])`, 'gi');
-    enriched = enriched.replace(regex, (m) => {
-      if (m.includes('___ESER_')) return m;
-      return `___YAZAR_${key.replace(/[\s\-']/g, '_')}___${m}___ENDYAZAR___`;
-    });
-  });
+  for (const { code, regex } of COMPILED_YAZAR.patterns) {
+    enriched = enriched.replace(regex, m => (m.includes('___ESER_') ? m : `___YAZAR_${code}___${m}___ENDYAZAR___`));
+  }
 
   // 3. Divan ve Tanzimat Glosarı (Örn: "giryan", "tahassür")
-  sortedDivanKeys.forEach(key => {
-    const regex = new RegExp(`(?<![a-zA-ZçğıöşüÇĞİÖŞÜ])(${escapeRegExp(key)})(?![a-zA-ZçğıöşüÇĞİÖŞÜ])`, 'gi');
-    enriched = enriched.replace(regex, (m) => {
-      if (m.includes('___ESER_') || m.includes('___YAZAR_')) return m;
-      return `___DIVAN_${key.replace(/[\s\-']/g, '_')}___${m}___ENDDIVAN___`;
-    });
-  });
+  for (const { code, regex } of COMPILED_DIVAN.patterns) {
+    enriched = enriched.replace(regex, m =>
+      m.includes('___ESER_') || m.includes('___YAZAR_') ? m : `___DIVAN_${code}___${m}___ENDDIVAN___`
+    );
+  }
 
-  enriched = enriched.replace(/___ESER_(.+?)___(.*?)___ENDESER___/g, (_match, code, text) => {
-    const foundKey = sortedEserKeys.find(k => k.replace(/[\s\-']/g, '_') === code);
+  enriched = enriched.replace(/___ESER_(.+?)___(.*?)___ENDESER___/g, (_match, code: string, text: string) => {
+    const foundKey = COMPILED_ESER.byCode.get(code);
     if (!foundKey) return text;
     return `<span class="edeb-entity-badge is-eser" data-key="${escapeHtml(foundKey)}" data-kind="eser" onclick="showEdebiKimlikKarti(this, event)">${text}</span>`;
   });
 
-  enriched = enriched.replace(/___YAZAR_(.+?)___(.*?)___ENDYAZAR___/g, (_match, code, text) => {
-    const foundKey = sortedYazarKeys.find(k => k.replace(/[\s\-']/g, '_') === code);
+  enriched = enriched.replace(/___YAZAR_(.+?)___(.*?)___ENDYAZAR___/g, (_match, code: string, text: string) => {
+    const foundKey = COMPILED_YAZAR.byCode.get(code);
     if (!foundKey) return text;
     return `<span class="edeb-entity-badge is-yazar" data-key="${escapeHtml(foundKey)}" data-kind="yazar" onclick="showEdebiKimlikKarti(this, event)">${text}</span>`;
   });
 
-  enriched = enriched.replace(/___DIVAN_(.+?)___(.*?)___ENDDIVAN___/g, (_match, code, text) => {
-    const foundKey = sortedDivanKeys.find(k => k.replace(/[\s\-']/g, '_') === code);
+  enriched = enriched.replace(/___DIVAN_(.+?)___(.*?)___ENDDIVAN___/g, (_match, code: string, text: string) => {
+    const foundKey = COMPILED_DIVAN.byCode.get(code);
     if (!foundKey) return text;
     return `<span class="divan-vocab-badge" data-divan-key="${escapeHtml(foundKey)}" onclick="showDivanBubble(this, event)">${text}</span>`;
   });
 
   return enriched;
-}
-
-function escapeRegExp(str: string): string {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 export function showEdebiKimlikKarti(el: HTMLElement, event: Event): void {

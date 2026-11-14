@@ -112,11 +112,12 @@ def prepare_subjects() -> List[Dict[str, Any]]:
         elif sid.startswith('AYT_'): program = 'AYT'
         elif sid == 'YDT_ING': program = 'YDT'
         elif sid.startswith('AOF_'): program = 'AOF'
+        elif sid.startswith('AOO_'): program = 'AOO'
         elif sid.startswith('ILM_'): program = 'ILMIHAL'
         elif sid.startswith('GIR_'): program = 'GIRISIMCILIK'
         else: program = 'AOIHL'
 
-        if any(w in sid for w in ['MAT', 'FIZ', 'KIM', 'BIO']): cat = 'sayisal'
+        if any(w in sid for w in ['MAT', 'FIZ', 'KIM', 'BIO', 'FEN']): cat = 'sayisal'
         elif any(w in sid for w in ['HADIS', 'ITAR', 'AHLAK', 'IBADET', 'INANC', 'ARAPCA', 'KLM', 'ILM']): cat = 'ilahiyat'
         elif any(w in sid for w in ['DIN', 'SAG', 'ING', 'GIR']): cat = 'kultur'
         else: cat = 'sozel'

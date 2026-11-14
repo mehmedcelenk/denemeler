@@ -27,7 +27,7 @@ export interface AiExplanationEntry { readonly query: string; readonly reply: st
 export interface AppState {
   readonly allData: readonly Question[];
   readonly currentSubject: SubjectId | null;
-  readonly programMode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK';
+  readonly programMode: 'AOIHL' | 'AOO' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK';
   readonly selectedCourses: ReadonlySet<string>;
   readonly courseFilterMode: 'AND' | 'OR';
   readonly selectedTopicKeys: ReadonlySet<string>;
@@ -61,11 +61,12 @@ export interface AppState {
   readonly institutionStats: Readonly<Record<number, InstitutionQuestionStat>>;
   readonly roomQuestionStats: Readonly<Record<number, RoomQuestionStat>>;
   readonly isRoomActive: boolean;
+  readonly isXraySoundEnabled: boolean;
 }
 export interface MutableAppState {
   allData: Question[];
   currentSubject: SubjectId | null;
-  programMode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK';
+  programMode: 'AOIHL' | 'AOO' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK';
   selectedCourses: Set<string>;
   courseFilterMode: 'AND' | 'OR';
   selectedTopicKeys: Set<string>;
@@ -99,4 +100,5 @@ export interface MutableAppState {
   institutionStats: Record<number, InstitutionQuestionStat>;
   roomQuestionStats: Record<number, RoomQuestionStat>;
   isRoomActive: boolean;
+  isXraySoundEnabled: boolean;
 }

@@ -45,6 +45,7 @@ const _state: MutableAppState = {
   institutionStats: {},
   roomQuestionStats: {},
   isRoomActive: false,
+  isXraySoundEnabled: true,
 };
 
 /** Dışarıya açılan salt-okunur (Compile-Time Zırhlı) durum nesnesi */
@@ -52,7 +53,7 @@ export const state: AppState = _state;
 
 /** Micro-Store: State mutasyonlarını tek merkezden yönetir ve kalıcı depolarla eşitler. */
 export const store = {
-  setProgramMode(mode: 'AOIHL' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK'): void { _state.programMode = mode; },
+  setProgramMode(mode: 'AOIHL' | 'AOO' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK'): void { _state.programMode = mode; },
   setCurrentSubject(subject: SubjectId | null): void { _state.currentSubject = subject; },
   setSelectedCourses(courses: Iterable<string>): void { _state.selectedCourses = new Set(courses); },
   addSelectedCourse(course: string): void { _state.selectedCourses.add(course); },
@@ -263,4 +264,6 @@ export const store = {
   setInstitutionStats(stats: Record<number, InstitutionQuestionStat>): void { _state.institutionStats = { ...stats }; },
   setRoomQuestionStats(stats: Record<number, RoomQuestionStat>): void { _state.roomQuestionStats = { ...stats }; },
   setIsRoomActive(isActive: boolean): void { _state.isRoomActive = isActive; },
+  setXraySoundEnabled(enabled: boolean): void { _state.isXraySoundEnabled = enabled; },
+  toggleXraySound(): boolean { _state.isXraySoundEnabled = !_state.isXraySoundEnabled; return _state.isXraySoundEnabled; },
 };

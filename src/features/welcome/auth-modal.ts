@@ -1,4 +1,5 @@
 import { writeString } from '../../app/storage.ts';
+import { onStateChange } from '../../app/state.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 import {
   signInWithEmail,
@@ -194,3 +195,7 @@ export function updateAuthUiState(): void {
   }
   if (!session) setAuthMode('signin');
 }
+
+onStateChange('auth:expired', () => {
+  updateAuthUiState();
+});

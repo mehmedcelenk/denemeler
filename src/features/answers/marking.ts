@@ -28,7 +28,6 @@ export function handleSelectOpticalBubble(qid: number, letter: Choice, sourceEl?
   if (alreadySubmitted === letter) {
     store.removeUserMarkedChoice(qid);
     store.clearPendingChoice(qid);
-    saveChoicesToStorage();
     scheduleCloudSync();
     notifyStateChange('answer:revoked', { qid });
     getQuestionCards(qid).forEach(card => {
@@ -79,7 +78,6 @@ export function handleSelectOpticalBubble(qid: number, letter: Choice, sourceEl?
 function applyFinalChoice(qid: number, choice: Choice, sourceEl?: HTMLElement | null): void {
   store.clearPendingChoice(qid);
   store.setUserMarkedChoice(qid, choice);
-  saveChoicesToStorage();
   scheduleCloudSync();
 
   const q = state.bookletQuestions.find(item => item.id === qid)
@@ -150,7 +148,6 @@ export function clearAllMarks(): void {
   }
 
   store.clearAllUserMarkedChoices();
-  saveChoicesToStorage();
   scheduleCloudSync();
 
   if (hasDom) {

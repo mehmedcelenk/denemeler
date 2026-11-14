@@ -9,6 +9,7 @@ export interface StoredSession {
   roomId: string;
   userName: string;
   isHost: boolean;
+  isPaused?: boolean;
   joinedAt: number;
   timestamp: number;
   myStats?: StudentStats;
@@ -24,6 +25,7 @@ export interface RestoredSessionPlan {
   roomId: string;
   userName: string;
   isHost: boolean;
+  isPaused?: boolean;
   joinedAt: number;
   restoredStats?: StudentStats;
   awayDurationMs: number;
@@ -108,8 +110,12 @@ export function persistCurrentRoomSession(
   awayStartedAt?: number | null
 ): void {
   if (!state.roomId) return;
-  const myPeer = state.participants.find((p) => p.id === peerId);
   const existing = loadRoomSession();
+  // Aynı tarayıcıda başka bir sekmede Hoca oturumu açıkken öğrenci sekmesi Hoca kaydını ezmesin
+  if (!state.isHost && existing && existing.roomId === state.roomId && existing.isHost && existing.peerId !== peerId) {
+    return;
+  }
+  const myPeer = state.participants.find((p) => p.id === peerId);
   const joinedAt = myPeer?.joinedAt ?? existing?.joinedAt ?? Date.now();
   const resolvedAway = awayStartedAt === null
     ? undefined
@@ -120,6 +126,7 @@ export function persistCurrentRoomSession(
     roomId: state.roomId,
     userName: state.userName,
     isHost: state.isHost,
+    isPaused: state.isHost ? state.isPaused : undefined,
     joinedAt,
     timestamp: Date.now(),
     myStats: state.isHost ? undefined : state.studentStats[peerId],
@@ -138,6 +145,13 @@ export function persistAwayStartIfUnset(state: RoomState, peerId: string, timest
 export function buildRestoredSessionPlan(now = Date.now()): RestoredSessionPlan | null {
   const data = loadRoomSession();
   if (!data || !data.roomId || !data.userName || !data.peerId) return null;
+
+  // 12 saatten eski oturumları bayat kabul et ve geri yükleme
+  const SESSION_MAX_AGE_MS = 12 * 60 * 60 * 1000;
+  if (data.timestamp && (now - data.timestamp) > SESSION_MAX_AGE_MS) {
+    clearRoomSession();
+    return null;
+  }
 
   const joinedAt = Number.isFinite(data.joinedAt) && data.joinedAt > 0 ? data.joinedAt : data.timestamp;
   let restoredStats = data.myStats;
@@ -166,6 +180,7 @@ export function buildRestoredSessionPlan(now = Date.now()): RestoredSessionPlan 
     roomId: data.roomId,
     userName: data.userName,
     isHost: !!data.isHost,
+    isPaused: data.isHost ? !!data.isPaused : false,
     joinedAt,
     restoredStats,
     awayDurationMs,

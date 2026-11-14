@@ -107,10 +107,11 @@ function updateTopRoomPill(state: RoomState): void {
     ).length;
     const activeCount = Math.max(0, totalStudents - offlineCount);
 
+    const pauseTag = state.isPaused ? ' • ⏸️ Mola' : '';
     if (offlineCount > 0) {
-      textEl.innerHTML = `${safeRoomId} • 👥 ${activeCount} <span class="room-pill-offline">🔴 ${offlineCount}</span>`;
+      textEl.innerHTML = `${safeRoomId}${pauseTag} • 👥 ${activeCount} <span class="room-pill-offline">🔴 ${offlineCount}</span>`;
     } else {
-      textEl.innerHTML = `${safeRoomId} • 👥 ${totalStudents}`;
+      textEl.innerHTML = `${safeRoomId}${pauseTag} • 👥 ${totalStudents}`;
     }
   } else {
     textEl.innerHTML = `${safeRoomId} • 👥 ${state.participants.length}`;

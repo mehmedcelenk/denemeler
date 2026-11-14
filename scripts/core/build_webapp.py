@@ -246,6 +246,21 @@ def main():
     except Exception as e:
         print("Warning: Failed to extract AÖF questions:", e)
 
+    # AÖO (Açık Öğretim Ortaokulu) sorularını da ekle
+    try:
+        try:
+            from scripts.core.aoo_parser import extract_all_aoo_courses
+        except ModuleNotFoundError:
+            from aoo_parser import extract_all_aoo_courses
+        aoo_data = extract_all_aoo_courses()
+        for aoo_code, aoo_questions in aoo_data.items():
+            for q in aoo_questions:
+                if q['id'] in existing_extra_fields:
+                    q.update(existing_extra_fields[q['id']])
+            data_by_subject[aoo_code] = aoo_questions
+    except Exception as e:
+        print("Warning: Failed to extract AÖO questions:", e)
+
     data_dir = Path('data/subjects')
     data_dir.mkdir(parents=True, exist_ok=True)
     subject_manifest = {}

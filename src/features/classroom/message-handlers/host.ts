@@ -16,8 +16,9 @@ export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHan
         const myPeer = ctx.participants.find((p) => p.id === ctx.peerId);
         const myJoinedAt = myPeer?.joinedAt ?? timestamp;
         const theirJoinedAt = Number.isFinite(incomingHost.joinedAt) ? incomingHost.joinedAt : timestamp;
+        const isEstablishedTeacher = ctx.isPaused || Object.keys(ctx.studentStats).length > 0;
 
-        if (isOlderPeer(theirJoinedAt, incomingHost.id, myJoinedAt, ctx.peerId)) {
+        if (!isEstablishedTeacher && isOlderPeer(theirJoinedAt, incomingHost.id, myJoinedAt, ctx.peerId)) {
           ctx.demoteToStudent();
           for (const p of ctx.participants) {
             p.isHost = p.id === incomingHost.id;

@@ -6,56 +6,27 @@
   margin: 0;
 }
 
-/* Cümle Ögesi Ayrım Çizgisi (Kavşak) */
+/* Cümle Ögesi Ayrım Çizgisi (Kavşak) — Kullanıcıya Kapalı */
 .xray-junction {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 4px;
-  padding: 0 2px;
-  cursor: pointer;
-  user-select: none;
-  border-radius: 3px;
-  vertical-align: baseline;
-  transition: all 0.15s ease;
-  background: transparent;
-}
-.xray-junction:hover {
-  background: rgba(255, 255, 255, 0.18);
-  transform: scale(1.15);
+  display: none !important;
 }
 .xray-j-code {
   display: none !important;
 }
-.xray-pipe {
-  color: #ffffff !important;
-  font-weight: 800;
-  font-size: 1.05em;
-  opacity: 1;
-  transition: all 0.15s ease;
-  line-height: 1;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.7), 0 0 2px rgba(0, 0, 0, 0.4);
-}
-body.dark-mode .xray-pipe {
-  text-shadow: none;
-}
-.xray-junction:hover .xray-pipe {
-  color: #ffffff !important;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
-}
 
-/* Tıklanabilir Sözcük Türleri: Sadece altı çizili (Fosforsuz) */
+/* Sözcük Türleri (Sıfat/Zamir/Zarf): Veri korunur, kullanıcıya alt çizgiler kapalıdır */
 .pos-word {
-  cursor: pointer;
-  transition: all 0.15s ease;
+  cursor: default;
   border-radius: 2px;
   background-color: transparent !important;
+  border-bottom: none !important;
   padding: 0;
   margin: 0;
 }
 .pos-word.concept-word,
 .concept-word .pos-word,
 .concept-word {
+  cursor: pointer;
   border-bottom: none !important;
   text-decoration: none !important;
 }
@@ -67,17 +38,6 @@ body.dark-mode {
   --pos-adj: #60a5fa; --pos-pron: #c084fc; --pos-adv: #fbbf24; --pos-verbal: #34d399;
   --pos-edat: #fb7185; --pos-conj: #2dd4bf; --pos-noun: #fb923c; --pos-tamlama: #818cf8;
 }
-
-.pos-word.pos-adj { border-bottom: 2px solid var(--pos-adj); }
-.pos-word.pos-pron { border-bottom: 2px dotted var(--pos-pron); }
-.pos-word.pos-adv { border-bottom: 2px solid var(--pos-adv); }
-.pos-word.pos-verbal { border-bottom: 2px solid var(--pos-verbal); }
-.pos-word.pos-edat { border-bottom: 2px dashed var(--pos-edat); }
-.pos-word.pos-conj { border-bottom: 2px dotted var(--pos-conj); }
-.pos-word.pos-noun { border-bottom: 2px solid var(--pos-noun); }
-.pos-word.pos-tamlama { border-bottom: 2px dashed var(--pos-tamlama); }
-.pos-word:hover { background-color: rgba(0, 0, 0, 0.05) !important; }
-body.dark-mode .pos-word:hover { background-color: rgba(255, 255, 255, 0.08) !important; }
 .pos-tag { display: none !important; }
 
 /* Ses Olayları: Alt Çizgisiz, Sevimli Mini İkon / Emojicikli Mikro Rozet */
@@ -117,11 +77,14 @@ body.dark-mode .pos-word.has-sound:hover { background-color: rgba(225, 29, 72, 0
 .booklet-question.hide-pos .pos-word { border-bottom: none !important; }
 .booklet-question.hide-sound .sound-word::after,
 .booklet-question.hide-sound .pos-word.has-sound::after { display: none !important; }
+.booklet-question.hide-sound .sound-word,
+.booklet-question.hide-sound .pos-word.has-sound:not(.concept-word) {
+  cursor: default !important;
+  background-color: transparent !important;
+}
 
-/* Test Butonları Renkleri */
-.btn-companion-icon.btn-text-badge.btn-xray-syntax.active { background: #2563eb !important; border-color: #2563eb !important; color: #fff !important; }
-.btn-companion-icon.btn-text-badge.btn-xray-pos.active { background: #7c3aed !important; border-color: #7c3aed !important; color: #fff !important; }
-.btn-companion-icon.btn-text-badge.btn-xray-sound.active { background: #e11d48 !important; border-color: #e11d48 !important; color: #fff !important; }
+/* Ses Olayları Butonu Rengi */
+.btn-companion-icon.btn-xray-sound.active { background: #e11d48 !important; border-color: #e11d48 !important; color: #fff !important; }
 
 .xray-speaker {
   font-weight: 700;

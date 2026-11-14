@@ -162,29 +162,34 @@ export async function copyQuestionText(qId: number | string, event?: Event): Pro
   return success;
 }
 
+export const svgXraySoundOn = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2"/></svg>`;
+export const svgXraySoundOff = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2" opacity="0.45"/><line x1="2" x2="22" y1="2" y2="22"/></svg>`;
+
 /**
- * Test: Türkçe dil bilgisi röntgen katmanlarını (syntax, pos, sound) bağımsız açar / kapatır.
+ * Ses olayları (ünlü/ünsüz) katmanını tüm sorularda global olarak açar / kapatır.
  */
-export function toggleGrammarLayer(qId: number | string, layer: 'syntax' | 'pos' | 'sound', event?: Event): void {
+export function toggleGrammarLayer(_qId?: number | string, layer: 'syntax' | 'pos' | 'sound' = 'sound', event?: Event): void {
   if (event) {
     event.stopPropagation();
     event.preventDefault();
   }
-  const id = Number(qId);
-  if (isNaN(id) || typeof document === 'undefined') return;
+  if (layer !== 'sound') return;
 
-  const className = `hide-${layer}`;
-  const action = layer === 'syntax' ? 'toggle-xray-syntax' : layer === 'pos' ? 'toggle-xray-pos' : 'toggle-xray-sound';
-  let isNowHidden = false;
+  const isEnabled = store.toggleXraySound();
+  if (typeof document === 'undefined') return;
 
-  const cards = getQuestionCards(id);
-  cards.forEach(card => {
-    isNowHidden = card.classList.toggle(className);
+  document.querySelectorAll<HTMLElement>('.booklet-question').forEach(card => {
+    card.classList.toggle('hide-sound', !isEnabled);
   });
-  cards.forEach(card => {
-    getCardActionElements(card, action).forEach(btn => {
-      btn.classList.toggle('active', !isNowHidden);
-    });
+  document.querySelectorAll<HTMLElement>('[data-action="toggle-xray-sound"]').forEach(btn => {
+    btn.classList.toggle('active', isEnabled);
+    btn.innerHTML = isEnabled ? svgXraySoundOn : svgXraySoundOff;
+    btn.setAttribute(
+      'title',
+      isEnabled
+        ? 'Ses Olayları (Ünlü/Ünsüz) Açık — Tüm sorularda kapatmak için tıkla'
+        : 'Ses Olayları (Ünlü/Ünsüz) Kapalı — Tüm sorularda açmak için tıkla'
+    );
   });
 }
 

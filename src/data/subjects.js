@@ -14,6 +14,15 @@ export const AOIHL_SUBJECTS = [
   { id: 'KLM', name: 'Kelam', shortName: 'KLM', icon: '📖', cat: 'ilahiyat', kredi: 2 }
 ];
 
+export const AOO_SUBJECTS = [
+  { id: 'AOO_TURKCE', name: 'Türkçe', shortName: 'TÜRKÇE', icon: '📚', cat: 'sozel', kredi: 6 },
+  { id: 'AOO_MAT', name: 'Matematik', shortName: 'MAT', icon: '📐', cat: 'sayisal', kredi: 5 },
+  { id: 'AOO_FEN', name: 'Fen Bilimleri', shortName: 'FEN', icon: '🔬', cat: 'sayisal', kredi: 4 },
+  { id: 'AOO_SOS', name: 'Sosyal Bilgiler & İnkılap', shortName: 'SOS/İNK', icon: '🌍', cat: 'sozel', kredi: 3 },
+  { id: 'AOO_DIN', name: 'Din Kültürü', shortName: 'DİN', icon: '🧎', cat: 'kultur', kredi: 2 },
+  { id: 'AOO_ING', name: 'İngilizce', shortName: 'İNG', icon: '🌐', cat: 'kultur', kredi: 3 }
+];
+
 export const AOF_SUBJECTS = [
   { id: 'AOF_HADIS', name: 'Hadis Tarihi ve Usulü', shortName: 'Hadis Tarihi', icon: '📜', cat: 'ilahiyat', kredi: 2 },
   { id: 'AOF_ITAR', name: 'İlk Dönem İslam Tarihi', shortName: 'İslam Tarihi', icon: '🏛️', cat: 'ilahiyat', kredi: 2 },
@@ -96,6 +105,7 @@ export const GIRISIMCILIK_SUBJECTS = [
 
 export const SUBJECTS = [
   ...AOIHL_SUBJECTS,
+  ...AOO_SUBJECTS,
   ...AOF_SUBJECTS,
   ...ILMIHAL_SUBJECTS,
   ...GIRISIMCILIK_SUBJECTS,
@@ -107,6 +117,19 @@ export const SUBJECTS = [
 export function matchesSubject(q, subj) {
   if (!q || !q.ders) return false;
   const d = q.ders;
+
+  // AÖO (Açık Öğretim Ortaokulu) eşleşmeleri
+  if (subj.startsWith('AOO_')) {
+    if (!d.startsWith('AÖO ')) return false;
+    if (subj === 'AOO_TURKCE') return d.includes('TÜRKÇE');
+    if (subj === 'AOO_MAT') return d.includes('MATEMATİK');
+    if (subj === 'AOO_FEN') return d.includes('FEN BİLİMLERİ');
+    if (subj === 'AOO_SOS') return d.includes('SOSYAL BİLGİLER') || d.includes('İNKILAP');
+    if (subj === 'AOO_DIN') return d.includes('DİN KÜLTÜRÜ') || d.includes('DİN KÜL');
+    if (subj === 'AOO_ING') return d.includes('İNGİLİZCE');
+    return false;
+  }
+  if (d.startsWith('AÖO ')) return false;
 
   // YKS branş eşleşmeleri
   if (subj === 'TYT_TURKCE') return d === 'TYT TÜRKÇE';
@@ -175,7 +198,8 @@ export function matchesSubject(q, subj) {
 }
 
 export function getShortCourseName(c) {
-  return c.replace('HADİS TARİHİ VE USÜLÜ', 'HADİS')
+  return c.replace(/^AÖO\s+/, '')
+          .replace('HADİS TARİHİ VE USÜLÜ', 'HADİS')
           .replace('İLK DÖNEM İSLAM TARİHİ', 'İSLÂM TARİHİ')
           .replace('İSLAM AHLAK ESASLARI', 'AHLÂK')
           .replace('İSLAM İBADET ESASLARI', 'İBADET')
@@ -185,6 +209,8 @@ export function getShortCourseName(c) {
           .replace('TÜRK DİLİ VE EDEBİYATI', 'TDE')
           .replace('TÜRK DİLİ VE ED.', 'TDE')
           .replace('T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK', 'İNK')
+          .replace('SOSYAL BİLGİLER', 'SOS')
+          .replace('FEN BİLİMLERİ', 'FEN')
           .replace('SAĞLIK BİLGİSİ VE TRAFİK KÜLTÜRÜ', 'SAĞ')
           .replace('DİN KÜLTÜRÜ VE AHLAK BİLGİSİ', 'DİN')
           .replace('İNGİLİZCE', 'İNG')
@@ -207,6 +233,8 @@ export function getCondensedCourseCode(coursesSet, subjId) {
     'MAT': 'MAT', 'TDE': 'TDE', 'TAR': 'TAR', 'COG': 'COĞ',
     'FIZ': 'FİZ', 'KIM': 'KİM', 'BIO': 'BİY', 'FEL': 'FEL',
     'DIN': 'DİN', 'ING': 'İNG', 'INK': 'İNK', 'SAG': 'SAĞ', 'KLM': 'KLM',
+    'AOO_TURKCE': 'TÜRKÇE', 'AOO_MAT': 'MAT', 'AOO_FEN': 'FEN',
+    'AOO_SOS': 'SOS', 'AOO_DIN': 'DİN', 'AOO_ING': 'İNG',
     'AOF_HADIS': 'HADİS', 'AOF_ITAR': 'İS.TAR', 'AOF_AHLAK': 'AHLÂK',
     'AOF_IBADET': 'İBADET', 'AOF_INANC': 'İNANÇ', 'AOF_ARAPCA': 'ARAPÇA',
     'TYT_TURKCE': 'TYT TÜRKÇE', 'TYT_MAT': 'TYT MAT', 'TYT_TAR': 'TYT TAR',
