@@ -18,9 +18,11 @@ export { saveChoicesToStorage, loadSavedChoices, scheduleCloudSync };
 export function handleSelectOpticalBubble(qid: number, letter: Choice, sourceEl?: HTMLElement | null): void {
   const targetQ = state.allData.find(x => x.id === qid);
   if (targetQ && targetQ.sekilli) return; // Görselli/şekilli soru pasif, tıklanamaz
+  if (state.revealedAnswers.has(qid)) return; // Cevap anahtarı açıkken işaretleme yapılamaz
   if (!canMarkAnswer(qid, sourceEl)) return;
 
   const alreadySubmitted = state.userMarkedChoices[qid];
+  if (alreadySubmitted && alreadySubmitted !== letter) return; // Nihai cevap verildikten sonra başka şıkka çevrilemez
 
   // 1. Zaten nihai cevap verilmişse ve aynı şıkka tıklandıysa: Cevabı iptal et / sil
   if (alreadySubmitted === letter) {

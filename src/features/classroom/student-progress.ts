@@ -110,6 +110,7 @@ export function buildMyStatsPayload(
     exitCount: stats.exitCount,
     totalAwayMs: stats.totalAwayMs,
     awayDurationMs: awayDurationMs && awayDurationMs > 0 ? awayDurationMs : undefined,
+    answers: stats.answers ? { ...stats.answers } : undefined,
   };
 }
 
@@ -157,16 +158,13 @@ export function applyStudentAnswer(
 ): RoomMessagePayload | null {
   if (!state.roomId || state.isHost) return null;
   const prev = answeredQuestions.get(questionId);
-  if (prev === isCorrect) return null;
+  if (prev === false || prev === isCorrect) return null;
 
   const stats = state.studentStats[peerId];
   if (stats) {
     if (prev === undefined) {
       if (isCorrect) stats.correctCount++;
       else stats.incorrectCount++;
-    } else if (prev === false && isCorrect) {
-      stats.incorrectCount = Math.max(0, stats.incorrectCount - 1);
-      stats.correctCount++;
     } else if (prev === true && !isCorrect) {
       stats.correctCount = Math.max(0, stats.correctCount - 1);
       stats.incorrectCount++;
@@ -196,7 +194,7 @@ export function applyRevokeStudentAnswer(
 ): RoomMessagePayload | null {
   if (!state.roomId || state.isHost) return null;
   const prev = answeredQuestions.get(questionId);
-  if (prev === undefined) return null;
+  if (prev === undefined || prev === false) return null;
 
   const stats = state.studentStats[peerId];
   if (stats) {

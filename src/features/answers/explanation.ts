@@ -6,6 +6,16 @@ let activeExplanationEl: HTMLElement | null = null;
 let activeExplanationTimeout: ReturnType<typeof setTimeout> | null = null;
 let activeTargetEl: HTMLElement | null = null;
 
+export function hasGenuineExplanation(text?: string | null): boolean {
+  if (!text) return false;
+  const trimmed = text.trim();
+  if (!trimmed) return false;
+  if (trimmed.includes('konusuna göre; doğru yanıt') && trimmed.includes('seçeneğindeki')) {
+    return false;
+  }
+  return true;
+}
+
 /**
  * Sorunun doğru şıkkına veya hedeflenen elemente sivri uçlu açıklama baloncuğu açar.
  * İngilizce vocab-bubble mantığıyla %100 birebir aynı çalışır.
@@ -15,7 +25,7 @@ export function showAnswerExplanationBubble(qid: number, targetEl?: HTMLElement 
 
   const q = state.bookletQuestions.find(item => item.id === qid)
     || state.allData.find(item => item.id === qid);
-  if (!q || !q.dogru_nedeni) return;
+  if (!q || !q.dogru_nedeni || !hasGenuineExplanation(q.dogru_nedeni)) return;
 
   const activeCard = getActiveQuestionCard(qid, targetEl);
 

@@ -279,13 +279,14 @@ export const studentMessageHandlers: Partial<Record<RoomMessageType, RoomMessage
       mergePayloadStats(currentStats, {
         exitCount: msg.payload.exitCount,
         totalAwayMs: msg.payload.totalAwayMs,
+        answers: msg.payload.answers,
+        questionId: msg.payload.questionId,
+        isCorrect: msg.payload.isCorrect,
       });
     } else if (msg.payload && typeof msg.payload.isCorrect === 'boolean') {
-      if (msg.payload.isCorrect) {
-        currentStats.correctCount++;
-      } else {
-        currentStats.incorrectCount++;
-      }
+      if (msg.payload.isCorrect) currentStats.correctCount++;
+      else currentStats.incorrectCount++;
+      mergePayloadStats(currentStats, { questionId: msg.payload.questionId, isCorrect: msg.payload.isCorrect, answers: msg.payload.answers });
     }
     ctx.notify();
   },

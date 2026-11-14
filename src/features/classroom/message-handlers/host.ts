@@ -114,11 +114,15 @@ export const hostMessageHandlers: Partial<Record<RoomMessageType, RoomMessageHan
             totalAwayMs: incomingAwayMs,
             lastSeenAt: Number.isFinite(stats?.lastSeenAt) ? stats.lastSeenAt : Date.now(),
             isOnline: stats?.isOnline ?? true,
+            answers: stats?.answers && typeof stats.answers === 'object' ? { ...stats.answers } : undefined,
           };
         } else {
           existing.name = (stats?.name || existing.name).slice(0, 60);
           existing.exitCount = Math.max(existing.exitCount, incomingExits);
           existing.totalAwayMs = Math.max(existing.totalAwayMs, incomingAwayMs);
+          if (stats?.answers && typeof stats.answers === 'object') {
+            existing.answers = { ...(existing.answers || {}), ...stats.answers };
+          }
           if (id !== ctx.peerId) {
             existing.correctCount = Math.max(existing.correctCount, incomingCorrect);
             existing.incorrectCount = Math.max(existing.incorrectCount, incomingIncorrect);

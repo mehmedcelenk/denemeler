@@ -100,3 +100,76 @@ test('filterQuestionsByMode (room): odadaki hatalı soruları sıralar', () => {
   assert.equal(filtered[0].id, 2); // 7 yanlış
   assert.equal(filtered[1].id, 1); // 4 yanlış
 });
+
+import { hasGenuineExplanation } from '../src/features/answers/explanation.ts';
+import { roomService } from '../src/features/classroom/room-service.ts';
+import { handleIncomingRoomMessage } from '../src/features/classroom/message-handler.ts';
+import type { MessageContext } from '../src/features/classroom/message-handler.ts';
+
+test('hasGenuineExplanation: otomatik şablonu ve boş metni reddeder, gerçek açıklamayı kabul eder', () => {
+  assert.equal(hasGenuineExplanation(null), false);
+  assert.equal(hasGenuineExplanation('   '), false);
+  assert.equal(
+    hasGenuineExplanation("MEB Tarih 1 Ders Kitabı (Sayfa 18) 'Tarih Bilimi' konusuna göre; doğru yanıt B seçeneğindeki 'Olay' ifadesidir."),
+    false
+  );
+  assert.equal(
+    hasGenuineExplanation('Çünkü: Tanzimat döneminde Batılı anlamda ilk edebi ürünler verilmiştir.'),
+    true
+  );
+});
+
+test('İlk Karar Kilidi: yanlış yapılan soru sonradan doğruya çevrilerek puan kazandırmaz', () => {
+  roomService.joinOrCreateRoom('LOCK-1', 'Öğrenci', false);
+  const peerId = roomService.getPeerId();
+
+  roomService.logStudentAnswer(501, false);
+  assert.equal(roomService.getState().studentStats[peerId].incorrectCount, 1);
+  assert.equal(roomService.getState().studentStats[peerId].correctCount, 0);
+
+  // Cevabı silmeye veya doğruya çevirmeye çalışsa bile yanlış olarak kilitli kalır
+  roomService.revokeStudentAnswer(501);
+  roomService.logStudentAnswer(501, true);
+  assert.equal(roomService.getState().studentStats[peerId].incorrectCount, 1);
+  assert.equal(roomService.getState().studentStats[peerId].correctCount, 0);
+  assert.equal(roomService.getState().studentStats[peerId].answers?.[501], false);
+
+  roomService.leaveRoom();
+});
+
+test('STUDENT_ANSWER_LOG: öğrencinin answers haritası hocanın ekranına canlı aktarılır', () => {
+  const ctx: MessageContext = {
+    peerId: 'host-1',
+    roomId: 'SYNC-1',
+    userName: 'Hoca',
+    isHost: true,
+    isPaused: false,
+    participants: [{ id: 'host-1', name: 'Hoca', isHost: true, joinedAt: 100 }],
+    feedItems: [],
+    studentStats: {},
+    helpRequested: false,
+    setHelpRequested: () => {},
+    setPaused: () => {},
+    demoteToStudent: () => {},
+    leaveRoom: () => {},
+    scheduleSyncBroadcast: () => {},
+    notify: () => {},
+  };
+
+  handleIncomingRoomMessage(ctx, {
+    type: 'STUDENT_ANSWER_LOG',
+    roomId: 'SYNC-1',
+    senderId: 'stu-1',
+    senderName: 'Ali',
+    timestamp: 200,
+    payload: {
+      questionId: 777,
+      isCorrect: false,
+      correctCount: 0,
+      incorrectCount: 1,
+      answers: { 777: false },
+    },
+  });
+
+  assert.equal(ctx.studentStats['stu-1']?.answers?.[777], false);
+});
