@@ -172,3 +172,22 @@
   border-color: var(--brand-accent);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
 }
+
+.topic-error-badge {
+  font-size: 10px;
+  font-weight: 750;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  user-select: none;
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+body.dark-mode .topic-error-badge {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.35);
+}
+

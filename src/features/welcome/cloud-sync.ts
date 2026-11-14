@@ -3,6 +3,7 @@ import { StorageKeys } from '../../shared/storage-keys.ts';
 import { choices, type Choice } from '../../data/question.ts';
 import { parseSavedChoicesValue } from '../../shared/saved-choices.ts';
 import type { AuthSession, UserProgressData } from '../../data/supabase-auth.ts';
+import { fetchInstitutionQuestionStats } from '../../data/institution-stats.ts';
 import {
   signOutFromSupabase,
   fetchUserProgressFromSupabase,
@@ -69,6 +70,17 @@ export function cancelCloudSync(): void {
   }
 }
 
+export async function refreshInstitutionStats(): Promise<void> {
+  try {
+    const stats = await fetchInstitutionQuestionStats();
+    if (stats) {
+      store.setInstitutionStats(stats);
+      notifyStateChange('filter:updated');
+      notifyStateChange('drawer:topics-refresh');
+    }
+  } catch {}
+}
+
 let isSaving = false;
 let hasPendingSave = false;
 
@@ -92,7 +104,9 @@ export async function saveCloudProgress(): Promise<boolean> {
         null
       ) ?? undefined,
     };
-    return await saveUserProgressToSupabase(session, localData);
+    const ok = await saveUserProgressToSupabase(session, localData);
+    if (ok) void refreshInstitutionStats();
+    return ok;
   } finally {
     isSaving = false;
     if (hasPendingSave) {
@@ -225,5 +239,6 @@ export async function syncCloudProgress(): Promise<void> {
   }
 
   notifyStateChange('booklet:refresh');
+  void refreshInstitutionStats();
   await saveCloudProgress();
 }

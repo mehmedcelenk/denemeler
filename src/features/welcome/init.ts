@@ -14,6 +14,7 @@ import {
   isAuthenticated,
   getActiveSession,
   syncCloudProgress,
+  refreshInstitutionStats,
 } from './auth-modal.ts';
 import {
   focusRoomInput,
@@ -278,5 +279,6 @@ export function initWelcome(
     hideWelcomePortal();
     void resumeSavedSession();
   }
+  void refreshInstitutionStats();
   if (isAuthenticated()) void syncCloudProgress();
 }

@@ -388,3 +388,44 @@ CREATE POLICY "Service role write question_embeddings"
     ON question_embeddings FOR ALL 
     TO service_role 
     USING (true) WITH CHECK (true);
+
+-- ------------------------------------------------------------------------------
+-- 8. KURUM SORU İSTATİSTİKLERİ FONKSİYONU (RPC - Anonim Özet)
+-- ------------------------------------------------------------------------------
+CREATE OR REPLACE FUNCTION public.get_institution_question_stats()
+RETURNS TABLE (
+    question_id INTEGER,
+    total_count INTEGER,
+    choice_counts JSONB
+) AS $$
+BEGIN
+    RETURN QUERY
+    WITH raw_answers AS (
+        SELECT
+            (kv.key)::INTEGER AS qid,
+            kv.value AS choice
+        FROM public.user_progress up,
+        LATERAL jsonb_each_text(up.choices) AS kv(key, value)
+        WHERE jsonb_typeof(up.choices) = 'object'
+          AND kv.key ~ '^[0-9]+$'
+          AND kv.value IN ('A', 'B', 'C', 'D', 'E')
+    ),
+    per_choice AS (
+        SELECT
+            ra.qid,
+            ra.choice,
+            COUNT(*)::INTEGER AS cnt
+        FROM raw_answers ra
+        GROUP BY ra.qid, ra.choice
+    )
+    SELECT
+        pc.qid AS question_id,
+        SUM(pc.cnt)::INTEGER AS total_count,
+        jsonb_object_agg(pc.choice, pc.cnt) AS choice_counts
+    FROM per_choice pc
+    GROUP BY pc.qid;
+END;
+$$ LANGUAGE plpgsql STABLE SECURITY DEFINER SET search_path = public;
+
+GRANT EXECUTE ON FUNCTION public.get_institution_question_stats() TO anon, authenticated, service_role;
+

@@ -9,6 +9,20 @@ export interface AggregatedTopic {
   courses: Record<string, number>;
   avg_per_exam?: number;
   period_count?: number;
+  instWrong?: number;
+  instTotal?: number;
+  roomWrong?: number;
+  roomTotal?: number;
+}
+
+function renderTopicStatBadge(t: AggregatedTopic): string {
+  if (t.roomWrong && t.roomWrong > 0) {
+    return `<span class="topic-error-badge room" title="Oda Hatası: ${t.roomWrong}">👥 ${t.roomWrong}Y</span>`;
+  }
+  if (t.instWrong && t.instWrong > 0) {
+    return `<span class="topic-error-badge inst" title="Kurum Hatası: ${t.instWrong}">🔥 ${t.instWrong}Y</span>`;
+  }
+  return '';
 }
 
 export interface SubjectFolderInfo {
@@ -64,6 +78,7 @@ export function renderTopicsTreeHtml(
               <span class="tree-checkbox ${isSelected ? 'checked' : ''}" aria-hidden="true">${isSelected ? '✓' : ''}</span>
               <span class="drawer-topic-name">${escapeHtml(t.alt_konu || t.ana_konu || 'Genel')}</span>
               <span class="drawer-topic-count-num">${t.count} soru</span>
+              ${renderTopicStatBadge(t)}
             </div>
           `;
         }).join('');
@@ -105,6 +120,7 @@ export function renderTopicsTreeHtml(
           <span class="tree-checkbox ${isSelected ? 'checked' : ''}" aria-hidden="true">${isSelected ? '✓' : ''}</span>
           <span class="drawer-topic-name">${topicLabelHtml}</span>
           <span class="drawer-topic-count-num">${t.count} soru</span>
+          ${renderTopicStatBadge(t)}
         </div>
       `;
     });

@@ -131,6 +131,7 @@ export function createInitialStudentStats(
       totalAwayMs: Math.max(0, savedStats.totalAwayMs || 0),
       lastSeenAt: now,
       isOnline: true,
+      answers: savedStats.answers ? { ...savedStats.answers } : {},
     };
   }
   return {
@@ -143,6 +144,7 @@ export function createInitialStudentStats(
     totalAwayMs: 0,
     lastSeenAt: now,
     isOnline: true,
+    answers: {},
   };
 }
 
@@ -169,6 +171,8 @@ export function applyStudentAnswer(
       stats.correctCount = Math.max(0, stats.correctCount - 1);
       stats.incorrectCount++;
     }
+    stats.answers = stats.answers || {};
+    stats.answers[questionId] = isCorrect;
     persistCurrentRoomSession(state, peerId);
   }
 
@@ -180,6 +184,7 @@ export function applyStudentAnswer(
     incorrectCount: stats?.incorrectCount ?? 0,
     exitCount: stats?.exitCount ?? 0,
     totalAwayMs: stats?.totalAwayMs ?? 0,
+    answers: stats?.answers ? { ...stats.answers } : undefined,
   };
 }
 
@@ -197,6 +202,7 @@ export function applyRevokeStudentAnswer(
   if (stats) {
     if (prev === true) stats.correctCount = Math.max(0, stats.correctCount - 1);
     else stats.incorrectCount = Math.max(0, stats.incorrectCount - 1);
+    if (stats.answers) delete stats.answers[questionId];
     persistCurrentRoomSession(state, peerId);
   }
 
@@ -207,5 +213,6 @@ export function applyRevokeStudentAnswer(
     incorrectCount: stats?.incorrectCount ?? 0,
     exitCount: stats?.exitCount ?? 0,
     totalAwayMs: stats?.totalAwayMs ?? 0,
+    answers: stats?.answers ? { ...stats.answers } : undefined,
   };
 }

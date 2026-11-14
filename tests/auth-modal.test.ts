@@ -112,8 +112,11 @@ test('syncCloudProgress: cloud.choices yerel cevaplarla birleştirilir ve veri k
           }]), { status: 200 });
         }
         if (init?.method === 'POST') {
-          savedPayload = JSON.parse(String(init.body)) as Record<string, unknown>;
-          return new Response('', { status: 201 });
+          if (url.includes('/rest/v1/user_progress')) {
+            savedPayload = JSON.parse(String(init.body)) as Record<string, unknown>;
+            return new Response('', { status: 201 });
+          }
+          return new Response('[]', { status: 200 });
         }
         return new Response('', { status: 404 });
       };

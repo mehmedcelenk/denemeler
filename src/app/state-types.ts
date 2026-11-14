@@ -1,8 +1,14 @@
 import type { Choice, Question, SubjectId } from '../data/question.ts';
 import type { BookletFilterMode } from '../shared/question-filter.ts';
-export type { Choice, Question, SubjectId, BookletFilterMode };
+import type { InstitutionQuestionStat } from '../data/institution-stats.ts';
+export type { Choice, Question, SubjectId, BookletFilterMode, InstitutionQuestionStat };
 export type LibraryTab = 'starred' | 'rematch';
 export type ContentViewMode = 'questions' | 'notes';
+
+export interface RoomQuestionStat {
+  readonly correct: number;
+  readonly wrong: number;
+}
 
 export interface AnswerMarkedPayload {
   readonly qid: number;
@@ -52,6 +58,9 @@ export interface AppState {
   readonly pendingAiQuestions: ReadonlySet<number>;
   readonly ttsVoiceGender: 'female' | 'male';
   readonly ttsVoiceEngine: 1 | 2 | 3;
+  readonly institutionStats: Readonly<Record<number, InstitutionQuestionStat>>;
+  readonly roomQuestionStats: Readonly<Record<number, RoomQuestionStat>>;
+  readonly isRoomActive: boolean;
 }
 export interface MutableAppState {
   allData: Question[];
@@ -87,4 +96,7 @@ export interface MutableAppState {
   pendingAiQuestions: Set<number>;
   ttsVoiceGender: 'female' | 'male';
   ttsVoiceEngine: 1 | 2 | 3;
+  institutionStats: Record<number, InstitutionQuestionStat>;
+  roomQuestionStats: Record<number, RoomQuestionStat>;
+  isRoomActive: boolean;
 }

@@ -4,6 +4,7 @@ import { getQuestionDifficulty } from '../../shared/difficulty.ts';
 import { renderMathWithXray } from '../../shared/math-render.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 import type { Question, Choice } from '../../data/question.ts';
+import { renderQuestionStatBadge } from './card-stat-badge.ts';
 import {
   applyStemHooks,
   renderHeaderExtraHooks,
@@ -76,6 +77,7 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
         ${soonBadge}
         ${headerExtraHtml}
         ${diffBadgeHtml}
+        ${renderQuestionStatBadge(q)}
         <span class="q-point-pill" title="Kredi: ${krediStr}">${pointsStr} Puan</span>
       </div>
       <button class="btn-features-toggle" data-action="toggle-question-features" data-qid="${q.id}" title="Özellik Çubuğu">

@@ -1,6 +1,7 @@
 import { getTopicKey } from '../../shared/topic.ts';
 import { state } from '../../app/state.ts';
 import { matchesSubject } from '../../data/subjects.js';
+import { getQuestionInstitutionMetrics, getQuestionRoomMetrics } from '../../shared/question-filter.ts';
 
 export function getAggregatedTopics() {
   if (!state.currentSubject) return [];
@@ -22,10 +23,28 @@ export function getAggregatedTopics() {
     const ak = q.ana_konu || 'Genel';
     const key = getTopicKey(q);
     if (!map[key]) {
-      map[key] = { key: key, alt_konu: sub, ana_konu: ak, count: 0, courses: {} };
+      map[key] = {
+        key: key,
+        alt_konu: sub,
+        ana_konu: ak,
+        count: 0,
+        courses: {},
+        instWrong: 0,
+        instTotal: 0,
+        roomWrong: 0,
+        roomTotal: 0,
+      };
     }
     map[key].count++;
     map[key].courses[q.ders] = (map[key].courses[q.ders] || 0) + 1;
+
+    const inst = getQuestionInstitutionMetrics(q, state.institutionStats[q.id]);
+    map[key].instWrong += inst.wrong;
+    map[key].instTotal += inst.total;
+
+    const rm = getQuestionRoomMetrics(state.roomQuestionStats[q.id]);
+    map[key].roomWrong += rm.wrong;
+    map[key].roomTotal += rm.total;
   });
 
   const periodCount = Math.max(1, examPeriods.size);

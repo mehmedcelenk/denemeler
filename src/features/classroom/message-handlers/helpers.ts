@@ -40,6 +40,19 @@ export function mergePayloadStats(target: StudentStats, payload?: RoomMessagePay
       changed = true;
     }
   }
+  if (payload.answers && typeof payload.answers === 'object') {
+    target.answers = { ...(target.answers || {}), ...payload.answers };
+    changed = true;
+  } else if (typeof payload.questionId === 'number') {
+    target.answers = target.answers || {};
+    if (typeof payload.isCorrect === 'boolean') {
+      target.answers[payload.questionId] = payload.isCorrect;
+      changed = true;
+    } else {
+      delete target.answers[payload.questionId];
+      changed = true;
+    }
+  }
   return changed;
 }
 

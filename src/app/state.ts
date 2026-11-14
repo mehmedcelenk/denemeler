@@ -4,7 +4,7 @@ import { StorageKeys } from '../shared/storage-keys.ts';
 import * as storage from './storage.ts';
 
 export type * from './state-types.ts';
-import type { AppState, MutableAppState, LibraryTab, ContentViewMode, AiExplanationEntry, AiExplanationMessage } from './state-types.ts';
+import type { AppState, MutableAppState, LibraryTab, ContentViewMode, AiExplanationEntry, AiExplanationMessage, InstitutionQuestionStat, RoomQuestionStat } from './state-types.ts';
 export { onStateChange, notifyStateChange } from './state-events.ts';
 export type { StateEventType } from './state-events.ts';
 
@@ -42,6 +42,9 @@ const _state: MutableAppState = {
   pendingAiQuestions: new Set(),
   ttsVoiceGender: 'female',
   ttsVoiceEngine: 1,
+  institutionStats: {},
+  roomQuestionStats: {},
+  isRoomActive: false,
 };
 
 /** Dışarıya açılan salt-okunur (Compile-Time Zırhlı) durum nesnesi */
@@ -257,4 +260,7 @@ export const store = {
     _state.ttsVoiceEngine = engine;
     if (persist) storage.writeString(StorageKeys.TTS_ENGINE, String(engine));
   },
+  setInstitutionStats(stats: Record<number, InstitutionQuestionStat>): void { _state.institutionStats = { ...stats }; },
+  setRoomQuestionStats(stats: Record<number, RoomQuestionStat>): void { _state.roomQuestionStats = { ...stats }; },
+  setIsRoomActive(isActive: boolean): void { _state.isRoomActive = isActive; },
 };

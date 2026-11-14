@@ -17,7 +17,9 @@ export function updateBookletQuestions() {
       state.bookletFilterMode,
       state.userMarkedChoices,
       state.rematchQuestionIds,
-      state.starredQuestionIds
+      state.starredQuestionIds,
+      state.institutionStats,
+      state.roomQuestionStats
     ));
     updateTopBadge();
     renderBookletPages();
@@ -61,7 +63,9 @@ export function updateBookletQuestions() {
     state.bookletFilterMode,
     state.userMarkedChoices,
     state.rematchQuestionIds,
-    state.starredQuestionIds
+    state.starredQuestionIds,
+    state.institutionStats,
+    state.roomQuestionStats
   ));
 
   updateTopBadge();

@@ -20,6 +20,7 @@ export interface StudentStats {
   totalAwayMs: number;
   lastSeenAt?: number;
   isOnline?: boolean;
+  answers?: Record<number, boolean>;
 }
 
 export interface RoomParticipant {
@@ -62,6 +63,7 @@ export interface RoomMessagePayload {
   text?: string;
   durationMs?: number;
   awayDurationMs?: number;
+  answers?: Record<number, boolean>;
 }
 
 export interface RoomMessage {

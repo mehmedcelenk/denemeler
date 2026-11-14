@@ -1,6 +1,7 @@
 import { markStudentStarred, updateTeacherFeed, updateTeacherStats } from './teacher-view.ts';
 import { registerActions } from '../../app/actions.ts';
 import { escapeHtml } from '../../shared/escape.ts';
+import { store, notifyStateChange } from '../../app/state.ts';
 import { roomService, type RoomState } from './room-service.ts';
 import { initFocusTracker } from './focus-tracker.ts';
 import { calculateStudentRank } from './ranking.ts';
@@ -26,6 +27,24 @@ export function initRoomFeature(): void {
     if (typeof document !== 'undefined') {
       document.body.classList.toggle('in-room', !!state.roomId);
     }
+    const isRoomActive = Boolean(state.roomId);
+    store.setIsRoomActive(isRoomActive);
+    const roomQStats: Record<number, { correct: number; wrong: number }> = {};
+    if (isRoomActive) {
+      for (const s of Object.values(state.studentStats)) {
+        if (s.answers) {
+          for (const [qidStr, isCorrect] of Object.entries(s.answers)) {
+            const qid = Number(qidStr);
+            if (!roomQStats[qid]) roomQStats[qid] = { correct: 0, wrong: 0 };
+            if (isCorrect) roomQStats[qid].correct++;
+            else roomQStats[qid].wrong++;
+          }
+        }
+      }
+    }
+    store.setRoomQuestionStats(roomQStats);
+    notifyStateChange('filter:updated');
+
     if (!state.roomId) {
       closeTeacherDrawer();
       closeStudentDrawer();

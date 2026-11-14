@@ -1,10 +1,11 @@
 import { state, store, notifyStateChange, onStateChange, BookletFilterMode } from '../../app/state.ts';
 import { matchesSubject } from '../../data/subjects.js';
 import { Question } from '../../data/question.ts';
+import { getQuestionInstitutionMetrics, getQuestionRoomMetrics } from '../../shared/question-filter.ts';
 import { updateBookletQuestions } from './selection.js';
 import { renderBookletPages } from './render.js';
 
-export type UnifiedMode = 'all' | 'rematch' | 'starred' | 'notes';
+export type UnifiedMode = 'all' | 'rematch' | 'starred' | 'notes' | 'institution' | 'room';
 
 const MODE_META: Record<UnifiedMode, { label: string; icon: string; title: string }> = {
   all: {
@@ -21,6 +22,16 @@ const MODE_META: Record<UnifiedMode, { label: string; icon: string; title: strin
     label: 'Kayıtlı',
     title: 'Kaydedilen Sorular',
     icon: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>`
+  },
+  institution: {
+    label: 'Kurum',
+    title: 'Kurum Yanlışları (En Çok Hata Yapılanlar)',
+    icon: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`
+  },
+  room: {
+    label: 'Oda',
+    title: 'Oda Yanlışları (Canlı Sınıf Hataları)',
+    icon: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`
   },
   notes: {
     label: 'Notlar',
@@ -94,9 +105,11 @@ export function setBookletFilter(mode: BookletFilterMode): void {
   updateBookletQuestions();
 }
 
-export function getFilterCounts(): { rematch: number; starred: number } {
+export function getFilterCounts(): { rematch: number; starred: number; institution: number; room: number } {
   let rematch = 0;
   let starred = 0;
+  let institution = 0;
+  let room = 0;
 
   const dataset = state.allData;
   dataset.forEach((q: Question) => {
@@ -108,9 +121,15 @@ export function getFilterCounts(): { rematch: number; starred: number } {
     const inQueue = state.rematchQuestionIds.has(q.id);
     if (isWrong || inQueue) rematch++;
     if (state.starredQuestionIds.has(q.id)) starred++;
+
+    const inst = getQuestionInstitutionMetrics(q, state.institutionStats[q.id]);
+    if (inst.wrong > 0) institution++;
+
+    const rm = getQuestionRoomMetrics(state.roomQuestionStats[q.id]);
+    if (rm.wrong > 0) room++;
   });
 
-  return { rematch, starred };
+  return { rematch, starred, institution, room };
 }
 
 export function updateUnifiedToggleUI(): void {
@@ -119,11 +138,22 @@ export function updateUnifiedToggleUI(): void {
   const counts = getFilterCounts();
 
   const currentView = state.contentViewMode || 'questions';
-  const currentFilter = state.bookletFilterMode || 'all';
+  let currentFilter = state.bookletFilterMode || 'all';
+
+  if (!state.isRoomActive && currentFilter === 'room') {
+    store.setBookletFilterMode('all');
+    currentFilter = 'all';
+  }
 
   const activeMode: UnifiedMode = (currentView === 'notes')
     ? 'notes'
-    : (currentFilter === 'rematch' ? 'rematch' : (currentFilter === 'starred' ? 'starred' : 'all'));
+    : (currentFilter === 'rematch'
+      ? 'rematch'
+      : (currentFilter === 'starred'
+        ? 'starred'
+        : (currentFilter === 'institution'
+          ? 'institution'
+          : (currentFilter === 'room' ? 'room' : 'all'))));
 
   const rematchBadge = counts.rematch > 0
     ? `<span class="filter-count-badge">${counts.rematch}</span>`
@@ -133,8 +163,27 @@ export function updateUnifiedToggleUI(): void {
     ? `<span class="filter-count-badge">${counts.starred}</span>`
     : '';
 
+  const instBadge = counts.institution > 0
+    ? `<span class="filter-count-badge">${counts.institution}</span>`
+    : '';
+
+  const roomBadge = counts.room > 0
+    ? `<span class="filter-count-badge">${counts.room}</span>`
+    : '';
+
   const activeMeta = MODE_META[activeMode];
-  const activeBadge = activeMode === 'rematch' ? rematchBadge : (activeMode === 'starred' ? starredBadge : '');
+  let activeBadge = '';
+  if (activeMode === 'rematch') activeBadge = rematchBadge;
+  else if (activeMode === 'starred') activeBadge = starredBadge;
+  else if (activeMode === 'institution') activeBadge = instBadge;
+  else if (activeMode === 'room') activeBadge = roomBadge;
+
+  const roomItemHtml = state.isRoomActive ? `
+        <button class="unified-dropdown-item ${activeMode === 'room' ? 'is-selected' : ''}" id="btnUnifiedRoom" data-action="set-unified-mode" data-mode="room" role="menuitem">
+          ${MODE_META.room.icon}
+          <span class="top-unified-label">Oda</span>
+          ${roomBadge}
+        </button>` : '';
 
   if (pill) {
     pill.innerHTML = `
@@ -154,6 +203,12 @@ export function updateUnifiedToggleUI(): void {
           <span class="top-unified-label">Rövanş</span>
           ${rematchBadge}
         </button>
+        <button class="unified-dropdown-item ${activeMode === 'institution' ? 'is-selected' : ''}" id="btnUnifiedInstitution" data-action="set-unified-mode" data-mode="institution" role="menuitem">
+          ${MODE_META.institution.icon}
+          <span class="top-unified-label">Kurum</span>
+          ${instBadge}
+        </button>
+        ${roomItemHtml}
         <button class="unified-dropdown-item ${activeMode === 'starred' ? 'is-selected' : ''}" id="btnUnifiedStarred" data-action="set-unified-mode" data-mode="starred" role="menuitem">
           ${MODE_META.starred.icon}
           <span class="top-unified-label">Kayıtlı</span>
