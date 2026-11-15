@@ -51,13 +51,13 @@ def extract_mm_nodes_by_page(pdf_path: str) -> dict:
     if xml_start < 0:
         return {}
     root = lxml.etree.fromstring(raw[xml_start:])
+    all_fonts = {f.get('id'): f.get('family', '').split('+')[-1] for f in root.xpath('//fontspec')}
     by_page = {}
-    for page in root.xpath('//page'):
-        pno = int(page.get('number', 0))
-        fonts = {f.get('id'): f.get('family', '').split('+')[-1] for f in page.xpath('.//fontspec')}
+    for p_idx, page in enumerate(root.xpath('//page')):
+        pno = 2 + p_idx
         nodes = []
         for t in page.xpath('.//text'):
-            fam = fonts.get(t.get('font'), '')
+            fam = all_fonts.get(t.get('font'), '')
             if fam in MM_CHAR_MAP:
                 txt = ''.join(t.itertext()).strip()
                 if txt:
@@ -96,7 +96,7 @@ def apply_mm_fixes_to_word(w: dict, mm_nodes: list) -> bool:
 def process_column_words(words: list) -> list:
     if not words:
         return []
-    words.sort(key=lambda w: (round((w['ymin'] + w['ymax']) / 4.0), w['xmin']))
+    words.sort(key=lambda w: ((w['ymin'] + w['ymax']) / 2.0, w['xmin']))
 
     # 1. Coalesce split decimals (e.g. '0', ',', '76' -> '0,76') and touching coefficients ('3', 'x' -> '3x')
     merged = []
@@ -105,12 +105,12 @@ def process_column_words(words: list) -> list:
         w = dict(words[i])
         while i + 1 < len(words):
             nxt = words[i + 1]
-            same_y = abs(w['ymin'] - nxt['ymin']) < 2.2 and abs(w['ymax'] - nxt['ymax']) < 2.2
+            same_y = abs(w['ymin'] - nxt['ymin']) < 2.5 and abs(w['ymax'] - nxt['ymax']) < 2.5
             gap = nxt['xmin'] - w['xmax']
             if same_y and -1.5 <= gap <= 2.2:
                 if i + 2 < len(words) and nxt['text'] == ',':
                     w3 = words[i + 2]
-                    if abs(w['ymin'] - w3['ymin']) < 2.2 and -1.5 <= (w3['xmin'] - nxt['xmax']) <= 2.4:
+                    if abs(w['ymin'] - w3['ymin']) < 2.5 and -1.5 <= (w3['xmin'] - nxt['xmax']) <= 2.4:
                         if w['text'].lstrip('-+(').isdigit() and w3['text'].rstrip(')').isdigit():
                             w['text'] = f"{w['text']},{w3['text']}"
                             w['xmax'] = w3['xmax']
@@ -126,29 +126,7 @@ def process_column_words(words: list) -> list:
         i += 1
     words = merged
 
-    # 2. Merge superscripts/exponents right after base token
-    sup_merged = []
-    used = [False] * len(words)
-    for idx, w in enumerate(words):
-        if used[idx]:
-            continue
-        cur = dict(w)
-        for j in range(len(words)):
-            if idx == j or used[j]:
-                continue
-            w2 = words[j]
-            dx = w2['xmin'] - cur['xmax']
-            h1 = cur['ymax'] - cur['ymin']
-            h2 = w2['ymax'] - w2['ymin']
-            if -1.8 <= dx <= 3.6 and h2 < h1 * 0.87 and w2['ymax'] < cur['ymax'] - 1.5 and abs(w2['ymin'] - cur['ymin']) < 7.5:
-                if re.match(r'^[\-+0-9abxymn]+$', w2['text']) and not cur['text'].endswith('.'):
-                    cur['text'] += w2['text'].translate(SUPERSCRIPTS)
-                    cur['xmax'] = max(cur['xmax'], w2['xmax'])
-                    used[j] = True
-        sup_merged.append(cur)
-    words = sup_merged
-
-    # 3. Merge vertically stacked fractions (N / D)
+    # 2. Merge vertically stacked fractions (N / D)
     used_f = [False] * len(words)
     frac_merged = []
     for idx, w1 in enumerate(words):
@@ -169,16 +147,9 @@ def process_column_words(words: list) -> list:
                     ov = min(w1['xmax'], w2['xmax']) - max(w1['xmin'], w2['xmin'])
                     min_w = min(w1_w, w2_w)
                     if ov > max(0.4, min_w * 0.35):
-                        yc1 = (w1['ymin'] + w1['ymax']) / 2.0
-                        yc2 = (w2['ymin'] + w2['ymax']) / 2.0
-                        has_mid = any(
-                            k != idx and k != j and (yc1 + 2.0 <= (words[k]['ymin'] + words[k]['ymax']) / 2.0 <= yc2 - 2.0)
-                            for k in range(len(words))
-                        )
-                        if dy <= 11.8 or has_mid:
-                            if dy < best_dy:
-                                best_dy = dy
-                                best_j = j
+                        if dy < best_dy:
+                            best_dy = dy
+                            best_j = j
             if best_j >= 0:
                 w2 = words[best_j]
                 used_f[best_j] = True
@@ -203,7 +174,7 @@ def group_words_into_lines(words: list) -> list:
     lines = []
     for w in sorted_w:
         yc = (w['ymin'] + w['ymax']) / 2.0
-        if lines and abs(yc - lines[-1]['yc']) <= 4.2:
+        if lines and abs(yc - lines[-1]['yc']) <= 4.5:
             lines[-1]['words'].append(w)
             lines[-1]['xmin'] = min(lines[-1]['xmin'], w['xmin'])
             lines[-1]['xmax'] = max(lines[-1]['xmax'], w['xmax'])
@@ -220,8 +191,38 @@ def group_words_into_lines(words: list) -> list:
                 'yc': yc,
                 'words': [w],
             })
+
     for ln in lines:
         ln['words'].sort(key=lambda w: w['xmin'])
+        merged_line = []
+        i = 0
+        w_list = ln['words']
+        while i < len(w_list):
+            w = dict(w_list[i])
+            if i + 1 < len(w_list):
+                nxt = w_list[i + 1]
+                gap = nxt['xmin'] - w['xmax']
+                h1 = w['ymax'] - w['ymin']
+                h2 = nxt['ymax'] - nxt['ymin']
+                can_have_exp = (
+                    re.search(r'(?:\d+|cm|mm|km|dm|m|[xyabk]|\))$', w['text'])
+                    and not w['text'].endswith('.')
+                )
+                is_exp = (
+                    can_have_exp
+                    and -1.5 <= gap <= 3.8
+                    and h2 < h1 * 0.88
+                    and nxt['ymax'] < w['ymax'] - 1.2
+                    and re.match(r'^(?:-?\d+|[abxymn])$', nxt['text'])
+                )
+                if is_exp:
+                    w['text'] += nxt['text'].translate(SUPERSCRIPTS)
+                    w['xmax'] = nxt['xmax']
+                    i += 1
+            merged_line.append(w)
+            i += 1
+        ln['words'] = merged_line
+
         parts = []
         for idx, w in enumerate(ln['words']):
             if idx > 0:

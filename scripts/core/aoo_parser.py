@@ -157,9 +157,15 @@ def parse_aoo_pdf(pdf_path: str, year_str: str, donem_no: str, current_id: int):
                 if new_words and new_words[0]['text'].startswith(f'{q_num}.'):
                     new_words[0] = dict(new_words[0], text=new_words[0]['text'][len(f'{q_num}.'):].strip())
                 first_ln = dict(ln, words=new_words, text=rest)
+                valid_pending = [
+                    pln for pln in pending_lines
+                    if pln.get('col') == ln['col'] and pln.get('page') == ln['page']
+                    and not re.match(r'^(?:\d+\s*(?:birim|cm|mm|birimküp)\s*)+$', pln['text'].strip())
+                    and not bool(re.match(r'^[A-ZÇĞİÖŞÜ\s]{1,5}$', pln['text'].strip()))
+                ]
                 curr_q = {
                     'num': q_num,
-                    'lines': pending_lines + ([first_ln] if rest else []),
+                    'lines': valid_pending + ([first_ln] if rest else []),
                     'seen_d': False,
                     'done_options': False,
                     'last_ymax': ln['ymax'],
@@ -172,14 +178,16 @@ def parse_aoo_pdf(pdf_path: str, year_str: str, donem_no: str, current_id: int):
 
         if curr_q is not None:
             if curr_q.get('done_options'):
-                pending_lines.append(ln)
+                if ln['page'] == curr_q['page'] and ln['col'] == curr_q['col']:
+                    pending_lines.append(ln)
                 continue
             if curr_q.get('seen_d'):
                 same_col = ln['page'] == curr_q['page'] and ln['col'] == curr_q['col']
                 gap = ln['ymin'] - curr_q['last_ymax']
                 if not same_col or gap > 18.0:
                     curr_q['done_options'] = True
-                    pending_lines.append(ln)
+                    if same_col:
+                        pending_lines.append(ln)
                     continue
             curr_q['lines'].append(ln)
             curr_q['last_ymax'] = max(curr_q['last_ymax'], ln['ymax'])

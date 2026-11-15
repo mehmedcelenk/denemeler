@@ -139,6 +139,17 @@ VISUAL_PATTERNS = [
     r'\btabloda\s+(?:verilen|gösterilen|belirtilen|yer\s+alan|numaralan)\b',
     r'\b(?:verilen|yukarıdaki|aşağıdaki|yandaki)\s+tablo\b',
     r'\bin\s+the\s+picture\b',
+    r'\bdinamometre\b',
+    r'\belektrik\s+devresi\b',
+    r'\bdevre\s+elemanları\b',
+    r'\bakış\s+şeması\b',
+    r'\b(?:daire|sütun|nokta)\s+grafiği\b',
+    r'\bolasılık\s+spektrum\w*\b',
+    r'\babaküs\b',
+    r'\bsembolü\s+ile\s+gösterilen\b',
+    r'\bışık\s+ışınının\s+yansıması\b',
+    r'\[Görsel',
+    r'\[Sembol\]',
 ]
 
 EXCLUDE_VISUAL_PATTERNS = [
@@ -147,7 +158,7 @@ EXCLUDE_VISUAL_PATTERNS = [
     r'\b(?:bu|o|şu|iyi|doğru|sağlıklı|hızlı|bilinçli|olacak|düzenli|farklı|aynı|belirli\s+bir|bir)\s+şekilde\b',
 ]
 
-VERTEX_NOISE_RE = re.compile(r'^(?:[A-HJ-UW-ZÇĞİÖŞÜ](?:\s+[A-HJ-UW-ZÇĞİÖŞÜ])*|(?:\d+\s*birim\s*)+)$')
+VERTEX_NOISE_RE = re.compile(r'^(?:[A-HJ-UW-ZÇĞİÖŞÜ](?:\s+[A-HJ-UW-ZÇĞİÖŞÜ])*|(?:\d+\s*(?:birim|cm|mm|birimküp)\s*)+)$')
 
 
 def is_visual_question(stem: str, has_all_options: bool, forced_visual: bool = False) -> bool:
@@ -174,7 +185,7 @@ def extract_stem_and_options_2d(q_lines: list):
                 markers[opt_char] = w
 
     if len(markers) == 4:
-        opt_top_yc = min((m['ymin'] + m['ymax']) / 2.0 for m in markers.values()) - 5.5
+        opt_top_yc = min((m['ymin'] + m['ymax']) / 2.0 for m in markers.values()) - 11.0
         stem_lines = []
         had_vertex_noise = False
         for ln in q_lines:
@@ -202,15 +213,19 @@ def extract_stem_and_options_2d(q_lines: list):
             m_info[k] = {
                 'xmin': m['xmin'] - 6.0,
                 'xmax': min(right_bounds) if right_bounds else 999.0,
-                'ymin': myc - 5.5,
-                'ymax': min(bot_bounds) if bot_bounds else 999.0,
+                'ymin': myc - 11.0,
+                'ymax': min(bot_bounds) if bot_bounds else (myc + 24.0),
                 'myc': myc,
                 'mx': m['xmin'],
             }
 
+        max_marker_yc = max(b['myc'] for b in m_info.values())
         for w in all_words:
             wyc = (w['ymin'] + w['ymax']) / 2.0
             if wyc < opt_top_yc:
+                continue
+            if wyc > max_marker_yc + 26.0:
+                had_vertex_noise = True
                 continue
             wt = w['text']
             matched_marker = False
@@ -244,13 +259,34 @@ def extract_stem_and_options_2d(q_lines: list):
             lns = group_words_into_lines(opt_words[k])
             raw_opt = '\n'.join(l['text'] for l in lns).strip()
             clean_opt = ' '.join(dehyphenate(raw_opt).split())
-            if not clean_opt:
+            clean_opt = re.sub(r'^\s*<\s*', '', clean_opt)
+            clean_opt = re.sub(r'\s*<\s*$', '', clean_opt)
+            clean_opt = re.sub(r'^\s*1\s*<\s*([^<]+)\s*<\s*([^<]+)\s*3\s*$', r'1 1/3 < \1 < \2', clean_opt)
+            clean_opt = re.sub(r'^\s*([^<]+)\s*<\s*1\s*<\s*([^<]+)\s*3\s*$', r'\1 < 1 1/3 < \2', clean_opt)
+            clean_opt = ' '.join(clean_opt.split())
+            is_vis = (
+                not clean_opt
+                or bool(re.match(r'^[\s+\-–—_|]+$', clean_opt))
+                or bool(re.match(r'^\d+\s+\d+(?:\s+\d+)*$', clean_opt))
+                or bool(re.match(r'^(?:I|II|III|IV)\.?$', clean_opt))
+                or ('İmkânsız' in clean_opt and 'Kesin' in clean_opt)
+            )
+            if is_vis:
                 has_all = False
                 opts[k] = f'[Görsel Seçenek {k}]'
             else:
                 opts[k] = clean_opt
 
-        stem_text = dehyphenate('\n'.join(stem_lines)) or 'Görsel soru.'
+        if not has_all:
+            if sum(1 for v in opts.values() if v.startswith('[Görsel')) >= 2:
+                for k in ('A', 'B', 'C', 'D'):
+                    opts[k] = f'[Görsel Seçenek {k}]'
+
+        raw_stem = '\n'.join(stem_lines)
+        raw_stem = re.sub(r'[“"][ \t]*[”"]', '“[Sembol]”', raw_stem)
+        if '“[Sembol]”' in raw_stem:
+            had_vertex_noise = True
+        stem_text = dehyphenate(raw_stem) or 'Görsel soru.'
         return stem_text, opts, has_all, had_vertex_noise
 
     stem_lines = [ln['text'].strip() for ln in q_lines if not VERTEX_NOISE_RE.match(ln['text'].strip())]
