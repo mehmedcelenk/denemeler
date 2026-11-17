@@ -1,4 +1,4 @@
-export type FeedEventType = 'JOIN' | 'LEAVE' | 'FOCUS_LOST' | 'HELP_CALL';
+export type FeedEventType = 'JOIN' | 'LEAVE' | 'AWAY' | 'RETURN' | 'OFFLINE' | 'ONLINE';
 
 export interface RoomFeedItem {
   id: string;
@@ -6,8 +6,6 @@ export interface RoomFeedItem {
   studentId: string;
   studentName: string;
   timestamp: number;
-  returnedAt?: number;
-  resolved?: boolean;
 }
 
 export interface StudentStats {
@@ -16,73 +14,23 @@ export interface StudentStats {
   correctCount: number;
   incorrectCount: number;
   joinedAt: number;
-  exitCount: number;
-  totalAwayMs: number;
-  lastSeenAt?: number;
-  isOnline?: boolean;
-  answers?: Record<number, boolean>;
+  lastSeenAt: number;
+  isOnline: boolean;
+  visible: boolean;
+  answers: Record<number, boolean>;
 }
 
-export interface RoomParticipant {
-  id: string;
-  name: string;
-  isHost: boolean;
-  joinedAt: number;
-  lastSeenAt?: number;
-}
-
-export type RoomMessageType =
-  | 'PEER_JOIN'
-  | 'PEER_LEAVE'
-  | 'FOCUS_LOST'
-  | 'FOCUS_RESTORED'
-  | 'HELP_CALL'
-  | 'HELP_RESOLVED'
-  | 'ROOM_SYNC'
-  | 'STUDENT_ANSWER_LOG'
-  | 'ROOM_PAUSE'
-  | 'ROOM_CLOSE'
-  | 'AWARD_STAR'
-  | 'BROADCAST_ANNOUNCEMENT'
-  | 'STUDENT_HEARTBEAT';
-
-export interface RoomMessagePayload {
-  participants?: RoomParticipant[];
-  studentStats?: Record<string, StudentStats>;
-  isPaused?: boolean;
-  isCorrect?: boolean;
-  questionId?: number;
-  correctCount?: number;
-  incorrectCount?: number;
-  exitCount?: number;
-  totalAwayMs?: number;
-  joinedAt?: number;
-  feedId?: string;
-  studentId?: string;
-  studentName?: string;
-  text?: string;
-  durationMs?: number;
-  awayDurationMs?: number;
-  answers?: Record<number, boolean>;
-}
-
-export interface RoomMessage {
-  type: RoomMessageType;
-  roomId: string;
-  senderId: string;
-  senderName: string;
-  isHost?: boolean;
-  timestamp: number;
-  payload?: RoomMessagePayload;
-}
+export type RoomConnection = 'idle' | 'connecting' | 'connected' | 'reconnecting' | 'error';
 
 export interface RoomState {
   roomId: string | null;
+  roomName: string;
   userName: string;
   isHost: boolean;
-  isPaused: boolean;
-  participants: RoomParticipant[];
-  feedItems: RoomFeedItem[];
+  connection: RoomConnection;
+  error: string | null;
+  participantCount: number;
   studentStats: Record<string, StudentStats>;
-  helpRequested: boolean;
+  feedItems: RoomFeedItem[];
+  announcement: { id: string; text: string } | null;
 }

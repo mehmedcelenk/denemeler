@@ -4,7 +4,8 @@ const fixedKeys = new Set<string>(Object.values(StorageKeys));
 const classroomSyncPrefix = `sync_${StorageKeys.CLASSROOM_CHANNEL_PREFIX}`;
 
 function isSupportedKey(key: string): key is StorageKey {
-  return fixedKeys.has(key) || key.startsWith(classroomSyncPrefix);
+  return fixedKeys.has(key) || key.startsWith(classroomSyncPrefix)
+    || key.startsWith(StorageKeys.CLASSROOM_PENDING_PREFIX);
 }
 
 function getStorage(): Storage | null {
@@ -61,4 +62,28 @@ export function remove(key: StorageKey): void {
   try {
     getStorage()?.removeItem(key);
   } catch {}
+}
+
+/** Sekmeye ait oda bağlantısı; ortak kullanıcı verisini değiştirmez. */
+export function readSessionJson<T>(key: StorageKey, isValid: (value: unknown) => value is T): T | null {
+  if (!isSupportedKey(key)) return null;
+  try {
+    const raw = typeof sessionStorage === 'undefined' ? null : sessionStorage.getItem(key);
+    const value: unknown = raw ? JSON.parse(raw) : null;
+    return isValid(value) ? value : null;
+  } catch { return null; }
+}
+
+export function writeSessionJson(key: StorageKey, value: unknown): boolean {
+  if (!isSupportedKey(key)) return false;
+  try {
+    if (typeof sessionStorage === 'undefined') return false;
+    sessionStorage.setItem(key, JSON.stringify(value));
+    return true;
+  } catch { return false; }
+}
+
+export function removeSession(key: StorageKey): void {
+  if (!isSupportedKey(key)) return;
+  try { if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem(key); } catch {}
 }

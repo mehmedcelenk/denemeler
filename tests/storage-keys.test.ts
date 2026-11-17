@@ -17,6 +17,8 @@ test('StorageKeys tarayıcıda kullanılan tam anahtar değerlerini korur', () =
     USER_NAME: 'aol_user_name',
     CLASSROOM_SESSION: 'aol_classroom_session',
     CLASSROOM_CHANNEL_PREFIX: 'aol_room_',
+    CLASSROOM_TAB: 'aol_classroom_tab_v2',
+    CLASSROOM_PENDING_PREFIX: 'aol_classroom_pending_v2:',
     TTS_GENDER: 'aol_tts_gender',
     TTS_ENGINE: 'aol_tts_engine',
     ELIMINATED_CHOICES: 'aol_eliminated_choices',

@@ -45,7 +45,7 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Tema, vurgu rengi, sütun/zoom | `src/features/appearance/` |
 | Yazdırma/PDF | `src/features/print/print.js` |
 | Ezan sayacı | `src/features/prayer/prayer.js` |
-| Sınıf oturumu & odak takibi | `src/features/classroom/room-service.ts`, `message-handlers/`, `offline-students.ts` & `teacher-view.ts` |
+| Sınıf oturumu & görünürlük takibi | `src/features/classroom/room-service.ts`, `focus-tracker.ts`, `teacher-view.ts`; RPC istemcisi `src/data/classroom.ts`, şema `supabase/migrations/` |
 | Tahta görünümü & etkileşimleri | `src/features/board/board-mode.ts` & `board-view.ts` |
 | CSS | `src/styles/` altında ilgili özellik dosyası; büyük stil girişleri sıralı `@import` ile bileşen parçalarını yükler |
 

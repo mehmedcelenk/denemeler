@@ -13,8 +13,6 @@ import { canMarkAnswer } from '../src/features/answers/rate-limit.ts';
 import { renderMathText } from '../src/shared/math-render.ts';
 import { renderCardStem, renderCardOptions } from '../src/features/booklet/question-card.ts';
 import { getFilterCounts } from '../src/features/booklet/filter.ts';
-import { studentMessageHandlers } from '../src/features/classroom/message-handlers/student.ts';
-import type { MessageContext } from '../src/features/classroom/message-handlers/context.ts';
 import { setSupabaseConfigOverride } from '../src/data/supabase-client.ts';
 import type { AuthSession } from '../src/data/supabase-auth.ts';
 import type { Question } from '../src/data/question.ts';
@@ -196,37 +194,6 @@ test('Kırmızı Alarm 2: 1 dakikalık false-positive ban kalktı, sadece 300ms 
   }
 });
 
-test('Kırmızı Alarm 3: Hoca ayrıldığında (PEER_LEAVE) öğrenci mola perdesi otomatik açılır', () => {
-  let pausedValue = true;
-  const mockCtx: Partial<MessageContext> = {
-    peerId: 'student-1',
-    isHost: false,
-    isPaused: true,
-    participants: [
-      { id: 'teacher-host', name: 'Hoca', isHost: true, joinedAt: 100, lastSeenAt: 200 },
-      { id: 'student-1', name: 'Öğrenci', isHost: false, joinedAt: 150, lastSeenAt: 200 },
-    ],
-    studentStats: {},
-    feedItems: [],
-    setPaused: (val: boolean) => { pausedValue = val; },
-    notify: () => {},
-  };
-
-  const handler = studentMessageHandlers.PEER_LEAVE;
-  assert.ok(handler);
-
-  // Hoca ayrılıyor
-  handler(mockCtx as MessageContext, {
-    senderId: 'teacher-host',
-    senderName: 'Hoca',
-    timestamp: 300,
-    msg: { type: 'PEER_LEAVE', senderId: 'teacher-host', senderName: 'Hoca', isHost: true, timestamp: 300 },
-    existingPeer: mockCtx.participants![0],
-    isSenderHost: true,
-  });
-
-  assert.equal(pausedValue, false, 'Hoca ayrılınca setPaused(false) çağrılmalı');
-});
 
 test('Kırmızı Alarm 5: KaTeX XSS koruması, satır sonları (\n -> <br>) ve Fizik/Kimya formülleri', () => {
   // 1. XSS ve satır sonu testi

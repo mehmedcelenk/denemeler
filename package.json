@@ -15,7 +15,7 @@
     "book:build": "python3 scripts/core/pdf_to_book.py",
     "typecheck": "tsc --noEmit && tsc --project tsconfig.functions.json",
     "test:e2e": "playwright test",
-    "test:chaos": "node --import tsx scripts/core/evren-classroom-chaos.ts",
+    "test:chaos": "node --import tsx scripts/core/classroom-load.ts",
     "validate:tarih": "python3 scripts/taxonomy/validate_tarih_taxonomy.py --check-map-only"
   },
   "devDependencies": {

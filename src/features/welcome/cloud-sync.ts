@@ -23,6 +23,10 @@ export function getActiveSession(): AuthSession | null {
 }
 
 export function saveActiveSession(session: AuthSession | null): void {
+  const previous = getActiveSession();
+  if (previous && previous.user.id !== session?.user.id) {
+    notifyStateChange('auth:signout', previous);
+  }
   if (session) {
     writeJson(StorageKeys.AUTH_SESSION, session);
   } else {
@@ -44,16 +48,19 @@ export async function ensureFreshSession(): Promise<AuthSession | null> {
     const now = Math.floor(Date.now() / 1000);
     if (session.expiresAt && session.expiresAt - now < 60 && session.refreshToken) {
       const refreshed = await refreshTokenUsingSupabase(session.refreshToken);
+      if (getActiveSession()?.refreshToken !== session.refreshToken) return null;
       if (refreshed.data) {
         saveActiveSession(refreshed.data);
         return refreshed.data;
       }
-      if (session.expiresAt <= now) {
+      if (refreshed.invalidRefreshToken) {
         saveActiveSession(null);
         notifyStateChange('auth:expired');
         return null;
       }
+      if (session.expiresAt <= now) return null;
     }
+    if (session.expiresAt && session.expiresAt <= now) return null;
     return session;
   })().finally(() => {
     refreshPromise = null;
@@ -135,6 +142,7 @@ if (typeof window !== 'undefined') {
 }
 
 export async function handleSignOut(): Promise<void> {
+  notifyStateChange('auth:signout', getActiveSession());
   if (syncTimer) {
     cancelCloudSync();
     await saveCloudProgress();
@@ -148,7 +156,6 @@ export async function handleSignOut(): Promise<void> {
   saveActiveSession(null);
   writeString(StorageKeys.USER_NAME, '');
   writeString(StorageKeys.RESUME_STATE, '');
-  writeString(StorageKeys.CLASSROOM_SESSION, '');
   writeString(StorageKeys.ANSWER_LOCK_UNTIL, '');
 
   store.setUserMarkedChoices({});

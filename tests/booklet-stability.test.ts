@@ -6,6 +6,7 @@ import { renderQuestionCardHtml } from '../src/features/booklet/question-card.ts
 import { BOOKLET_CHUNK_SIZE } from '../src/features/booklet/pagination.ts';
 import { initClassroomCardHook } from '../src/features/classroom/card-hook.ts';
 import { roomService } from '../src/features/classroom/room-service.ts';
+import { withClassroom } from './fixtures/classroom.ts';
 import { isQuestionMealActive } from '../src/features/english/interlinear.ts';
 import '../src/features/booklet/selection.js';
 import '../src/features/booklet/render.js';
@@ -135,27 +136,26 @@ test('booklet:refresh ve booklet:updated çift render üretmez; layoutchange tam
   }
 });
 
-test('oda kurucu yetkisi değiştiğinde tüm kitapçığı değil yalnızca kanca alanlarını yeniler', () => {
-  initClassroomCardHook();
-
-  let hookRefreshCount = 0;
-  let fullRefreshCount = 0;
-  const unsubHook = onStateChange('booklet:refresh-hooks', () => { hookRefreshCount += 1; });
-  const unsubFull = onStateChange('booklet:refresh', () => { fullRefreshCount += 1; }, -100);
-
-  try {
-    roomService.joinOrCreateRoom('ROOM9', 'Hoca', true);
-    assert.equal(hookRefreshCount, 1, 'Host olunca yalnızca kanca yenilemesi tetiklenmeli');
-    assert.equal(fullRefreshCount, 0, 'Host değişiminde tam booklet:refresh tetiklenmemeli');
-
-    roomService.leaveRoom();
-    assert.equal(hookRefreshCount, 2, 'Odadan çıkınca yalnızca kanca yenilemesi tetiklenmeli');
-    assert.equal(fullRefreshCount, 0, 'Odadan çıkışta da tam booklet:refresh tetiklenmemeli');
-  } finally {
-    unsubHook();
-    unsubFull();
-    roomService.leaveRoom();
-  }
+test('sunucudan gelen oda kurucu yetkisi yalnızca kart kancalarını yeniler', async () => {
+  await withClassroom(async fixture => {
+    initClassroomCardHook();
+    fixture.snapshot.hostId = fixture.auth.user.id;
+    let hookRefreshCount = 0;
+    let fullRefreshCount = 0;
+    const unsubHook = onStateChange('booklet:refresh-hooks', () => { hookRefreshCount += 1; });
+    const unsubFull = onStateChange('booklet:refresh', () => { fullRefreshCount += 1; }, -100);
+    try {
+      await roomService.joinOrCreateRoom('ROOM9');
+      assert.equal(hookRefreshCount, 1, 'Sunucu host rolünü onayladığında kanca yenilenmeli');
+      assert.equal(fullRefreshCount, 0, 'Host değişiminde kitapçık yeniden çizilmemeli');
+      await roomService.leaveRoom();
+      assert.equal(hookRefreshCount, 2, 'Ayrılınca host kancası kaldırılmalı');
+      assert.equal(fullRefreshCount, 0);
+    } finally {
+      unsubHook();
+      unsubFull();
+    }
+  });
 });
 
 test('activeMealQuestionIds merkezi state üzerinde tutulur ve meal durumu sorgulanabilir', () => {

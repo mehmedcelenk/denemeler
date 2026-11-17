@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import type { Question } from '../src/data/question.ts';
 import { initClassroomCardHook } from '../src/features/classroom/card-hook.ts';
 import { roomService } from '../src/features/classroom/room-service.ts';
+import { withClassroom } from './fixtures/classroom.ts';
 import { renderCardHeader } from '../src/features/booklet/question-card.ts';
 
 const question: Question = {
@@ -13,13 +14,17 @@ const question: Question = {
   dogru_cevap: 'A',
 };
 
-test('cevabı göster gözü yalnızca oda kurucusuna çizilir', () => {
-  initClassroomCardHook();
-  const roomState = roomService.getState();
-  roomState.isHost = false;
-  assert.doesNotMatch(renderCardHeader(question, 1, false), /data-action="toggle-answer-reveal"/);
-  roomState.isHost = true;
-  const hostHeader = renderCardHeader(question, 1, false);
-  assert.match(hostHeader, /data-action="toggle-answer-reveal"[^>]*data-qid="77101"/);
-  roomState.isHost = false;
+test('cevabı göster gözü yalnızca sunucunun oda kurucusu dediği kullanıcıya çizilir', async () => {
+  await withClassroom(async fixture => {
+    initClassroomCardHook();
+    assert.doesNotMatch(renderCardHeader(question, 1, false), /data-action="toggle-answer-reveal"/);
+    fixture.snapshot.hostId = fixture.auth.user.id;
+    await roomService.joinOrCreateRoom('HOOK');
+    assert.match(renderCardHeader(question, 1, false), /data-action="toggle-answer-reveal"[^>]*data-qid="77101"/);
+    await roomService.leaveRoom();
+    assert.doesNotMatch(renderCardHeader(question, 1, false), /data-action="toggle-answer-reveal"/);
+    fixture.snapshot.hostId = 'another-host';
+    await roomService.joinOrCreateRoom('HOOK');
+    assert.doesNotMatch(renderCardHeader(question, 1, false), /data-action="toggle-answer-reveal"/);
+  });
 });

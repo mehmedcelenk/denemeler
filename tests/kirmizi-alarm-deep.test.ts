@@ -12,8 +12,6 @@ import {
   updateResumeAction,
 } from '../src/features/welcome/welcome-view.ts';
 import { renderMathWithXray } from '../src/shared/math-render.ts';
-import { studentMessageHandlers } from '../src/features/classroom/message-handlers/student.ts';
-import type { MessageContext } from '../src/features/classroom/message-handlers/context.ts';
 import { setSupabaseConfigOverride } from '../src/data/supabase-client.ts';
 import type { AuthSession } from '../src/data/supabase-auth.ts';
 
@@ -136,33 +134,6 @@ test('Deep 3: renderMathWithXray KaTeX HTML i applyCommonMathPatterns bozulması
   assert.ok(!result.includes('___MATH_TOKEN_'), 'Tüm yer tutucular KaTeX HTML ile değiştirilmeli');
 });
 
-test('Deep 4: PEER_LEAVE participants içinde leavingPeer bulunmasa bile isSenderHost=true ise mola perdesini kapatır', () => {
-  let pausedValue = true;
-  const mockCtx: Partial<MessageContext> = {
-    peerId: 'student-99',
-    isHost: false,
-    isPaused: true,
-    participants: [], // Host listede bulunmuyor (ör. geçici bağlantı veya yarış durumu)
-    studentStats: {},
-    feedItems: [],
-    setPaused: (val: boolean) => { pausedValue = val; },
-    notify: () => {},
-  };
-
-  const handler = studentMessageHandlers.PEER_LEAVE;
-  assert.ok(handler);
-
-  handler(mockCtx as MessageContext, {
-    senderId: 'ghost-host',
-    senderName: 'Hoca',
-    timestamp: 500,
-    msg: { type: 'PEER_LEAVE', senderId: 'ghost-host', senderName: 'Hoca', isHost: true, timestamp: 500 },
-    existingPeer: undefined,
-    isSenderHost: true,
-  });
-
-  assert.equal(pausedValue, false, 'isSenderHost=true olduğunda mola perdesi otomatik kapanmalı');
-});
 
 test('Deep 5: initLibrary booklet:refresh olayında rövanş rozetini senkronize eder', () => {
   let badgeDisplay = 'none';

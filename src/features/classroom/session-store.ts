@@ -1,190 +1,52 @@
-import { readJson, remove, writeJson } from '../../app/storage.ts';
-import { StorageKeys } from '../../shared/storage-keys.ts';
-import type { RoomFeedItem, RoomState, StudentStats } from './types.ts';
+import { readJson, writeJson, readSessionJson, writeSessionJson, removeSession } from '../../app/storage.ts';
+import { StorageKeys, type ClassroomPendingKey } from '../../shared/storage-keys.ts';
 
-const RELOAD_TOLERANCE_MS = 2500;
-
-export interface StoredSession {
-  peerId: string;
+export interface RoomSession {
+  userId: string;
   roomId: string;
-  userName: string;
-  isHost: boolean;
-  isPaused?: boolean;
-  joinedAt: number;
-  timestamp: number;
-  myStats?: StudentStats;
-  awayStartedAt?: number;
-  leftRoomId?: string;
-  leftAt?: number;
-  hostStudentStats?: Record<string, StudentStats>;
-  hostFeedItems?: RoomFeedItem[];
+  roomName: string;
+  connectionId: string;
+  sequence: number;
 }
+export interface PendingAnswer { value: boolean | null; revision: number }
+export type PendingAnswers = Record<string, PendingAnswer>;
 
-export interface RestoredSessionPlan {
-  peerId: string;
-  roomId: string;
-  userName: string;
-  isHost: boolean;
-  isPaused?: boolean;
-  joinedAt: number;
-  restoredStats?: StudentStats;
-  awayDurationMs: number;
-  hostStudentStats?: Record<string, StudentStats>;
-  hostFeedItems?: RoomFeedItem[];
-}
-
-function isStoredSession(value: unknown): value is StoredSession | null {
+function isRoomSession(value: unknown): value is RoomSession {
   if (!value || typeof value !== 'object') return false;
-  const record = value as Record<string, unknown>;
-  return (
-    typeof record.peerId === 'string' &&
-    typeof record.roomId === 'string' &&
-    typeof record.userName === 'string' &&
-    typeof record.isHost === 'boolean' &&
-    typeof record.timestamp === 'number'
-  );
+  const v = value as Record<string, unknown>;
+  return ['userId', 'roomId', 'roomName', 'connectionId'].every(k => typeof v[k] === 'string' && v[k] !== '')
+    && Number.isSafeInteger(v.sequence) && Number(v.sequence) >= 0;
 }
 
-function readRawStoredSession(): StoredSession | null {
-  return readJson<StoredSession | null>(StorageKeys.CLASSROOM_SESSION, isStoredSession, null);
+export function loadRoomSession(userId: string): RoomSession | null {
+  const saved = readSessionJson(StorageKeys.CLASSROOM_TAB, isRoomSession);
+  return saved?.userId === userId ? saved : null;
 }
 
-export function saveRoomSession(session: StoredSession): void {
-  writeJson(StorageKeys.CLASSROOM_SESSION, session);
+export function saveRoomSession(session: RoomSession): boolean {
+  return writeSessionJson(StorageKeys.CLASSROOM_TAB, session);
 }
 
-export function loadRoomSession(): StoredSession | null {
-  const session = readRawStoredSession();
-  if (!session || !session.roomId) return null;
-  return session;
+export function clearRoomSession(): void { removeSession(StorageKeys.CLASSROOM_TAB); }
+
+function pendingKey(userId: string, roomId: string): ClassroomPendingKey {
+  return `${StorageKeys.CLASSROOM_PENDING_PREFIX}${encodeURIComponent(userId)}:${encodeURIComponent(roomId)}`;
 }
 
-export function clearRoomSession(state?: RoomState, peerId?: string): void {
-  if (state && state.roomId && !state.isHost && peerId) {
-    const now = Date.now();
-    const currentStats = state.studentStats[peerId];
-    saveRoomSession({
-      peerId,
-      roomId: '',
-      leftRoomId: state.roomId,
-      leftAt: now,
-      userName: state.userName,
-      isHost: false,
-      joinedAt: currentStats?.joinedAt ?? now,
-      timestamp: now,
-      myStats: currentStats,
-    });
-    return;
-  }
-  remove(StorageKeys.CLASSROOM_SESSION);
-}
-
-export function consumeArchivedRoomJoin(
-  targetRoomId: string,
-  userName: string,
-  now = Date.now()
-): { peerId: string; joinedAt: number; stats: StudentStats; awayDurationMs: number } | null {
-  const raw = readRawStoredSession();
-  if (!raw || raw.roomId || !raw.leftRoomId || raw.leftRoomId !== targetRoomId || !raw.myStats) {
-    return null;
-  }
-  const awayDurationMs = raw.leftAt && raw.leftAt > 0 ? Math.max(0, now - raw.leftAt) : 0;
-  const joinedAt = Number.isFinite(raw.joinedAt) && raw.joinedAt > 0 ? raw.joinedAt : now;
-  const stats: StudentStats = {
-    id: raw.peerId,
-    name: userName,
-    correctCount: Math.max(0, raw.myStats.correctCount || 0),
-    incorrectCount: Math.max(0, raw.myStats.incorrectCount || 0),
-    joinedAt,
-    exitCount: Math.max(0, raw.myStats.exitCount || 0) + 1,
-    totalAwayMs: Math.max(0, raw.myStats.totalAwayMs || 0) + awayDurationMs,
-    lastSeenAt: now,
-    isOnline: true,
-  };
-  return { peerId: raw.peerId, joinedAt, stats, awayDurationMs };
-}
-
-export function persistCurrentRoomSession(
-  state: RoomState,
-  peerId: string,
-  awayStartedAt?: number | null
-): void {
-  if (!state.roomId) return;
-  const existing = loadRoomSession();
-  // Aynı tarayıcıda başka bir sekmede Hoca oturumu açıkken öğrenci sekmesi Hoca kaydını ezmesin
-  if (!state.isHost && existing && existing.roomId === state.roomId && existing.isHost && existing.peerId !== peerId) {
-    return;
-  }
-  const myPeer = state.participants.find((p) => p.id === peerId);
-  const joinedAt = myPeer?.joinedAt ?? existing?.joinedAt ?? Date.now();
-  const resolvedAway = awayStartedAt === null
-    ? undefined
-    : (awayStartedAt ?? existing?.awayStartedAt);
-
-  saveRoomSession({
-    peerId,
-    roomId: state.roomId,
-    userName: state.userName,
-    isHost: state.isHost,
-    isPaused: state.isHost ? state.isPaused : undefined,
-    joinedAt,
-    timestamp: Date.now(),
-    myStats: state.isHost ? undefined : state.studentStats[peerId],
-    awayStartedAt: state.isHost ? undefined : resolvedAway,
-    hostStudentStats: state.isHost ? state.studentStats : undefined,
-    hostFeedItems: state.isHost ? state.feedItems.slice(0, 100) : undefined,
+function isPending(value: unknown): value is PendingAnswers {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
+  return Object.entries(value).every(([id, entry]) => {
+    if (!/^[1-9]\d*$/.test(id) || !Number.isSafeInteger(Number(id)) || !entry || typeof entry !== 'object') return false;
+    const p = entry as Record<string, unknown>;
+    return (typeof p.value === 'boolean' || p.value === null)
+      && Number.isSafeInteger(p.revision) && Number(p.revision) >= 0;
   });
 }
 
-export function persistAwayStartIfUnset(state: RoomState, peerId: string, timestamp: number): void {
-  if (!state.roomId || state.isHost || state.isPaused) return;
-  if (loadRoomSession()?.awayStartedAt) return;
-  persistCurrentRoomSession(state, peerId, timestamp);
+export function loadPendingAnswers(userId: string, roomId: string): PendingAnswers {
+  return readJson(pendingKey(userId, roomId), isPending, {});
 }
 
-export function buildRestoredSessionPlan(now = Date.now()): RestoredSessionPlan | null {
-  const data = loadRoomSession();
-  if (!data || !data.roomId || !data.userName || !data.peerId) return null;
-
-  // 12 saatten eski oturumları bayat kabul et ve geri yükleme
-  const SESSION_MAX_AGE_MS = 12 * 60 * 60 * 1000;
-  if (data.timestamp && (now - data.timestamp) > SESSION_MAX_AGE_MS) {
-    clearRoomSession();
-    return null;
-  }
-
-  const joinedAt = Number.isFinite(data.joinedAt) && data.joinedAt > 0 ? data.joinedAt : data.timestamp;
-  let restoredStats = data.myStats;
-  let awayDurationMs = 0;
-
-  if (!data.isHost && typeof data.awayStartedAt === 'number' && data.awayStartedAt > 0) {
-    const elapsed = Math.max(0, now - data.awayStartedAt);
-    if (elapsed > RELOAD_TOLERANCE_MS) {
-      awayDurationMs = elapsed;
-      restoredStats = {
-        id: data.peerId,
-        name: data.userName,
-        correctCount: Math.max(0, restoredStats?.correctCount || 0),
-        incorrectCount: Math.max(0, restoredStats?.incorrectCount || 0),
-        joinedAt,
-        exitCount: Math.max(0, restoredStats?.exitCount || 0) + 1,
-        totalAwayMs: Math.max(0, restoredStats?.totalAwayMs || 0) + elapsed,
-        lastSeenAt: now,
-        isOnline: true,
-      };
-    }
-  }
-
-  return {
-    peerId: data.peerId,
-    roomId: data.roomId,
-    userName: data.userName,
-    isHost: !!data.isHost,
-    isPaused: data.isHost ? !!data.isPaused : false,
-    joinedAt,
-    restoredStats,
-    awayDurationMs,
-    hostStudentStats: data.hostStudentStats,
-    hostFeedItems: data.hostFeedItems,
-  };
+export function savePendingAnswers(userId: string, roomId: string, pending: PendingAnswers): boolean {
+  return writeJson(pendingKey(userId, roomId), pending);
 }

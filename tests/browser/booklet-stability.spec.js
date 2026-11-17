@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { isolateRemoteData } from './fixtures/network.js';
 import { StorageKeys } from '../../src/shared/storage-keys.ts';
 
 const TEST_AUTH_SESSION = JSON.stringify({
@@ -9,6 +10,7 @@ const TEST_AUTH_SESSION = JSON.stringify({
 });
 
 test.beforeEach(async ({ page }) => {
+  await isolateRemoteData(page);
   await page.addInitScript(({ authKey, sessionJson }) => {
     if (!localStorage.getItem(authKey)) localStorage.setItem(authKey, sessionJson);
   }, { authKey: StorageKeys.AUTH_SESSION, sessionJson: TEST_AUTH_SESSION });
@@ -75,6 +77,8 @@ test('düzen değişimi fosforlamayı silmez ve meal + çeviri dönüşünde mea
   await page.locator('#topCenterBadge').click();
   await page.locator('#btnSubjectDropdownTrigger').click();
   await page.locator('.dropdown-menu-item').filter({ hasText: 'İngilizce' }).click();
+  // Subject selection loads asynchronously; do not act on the previous booklet.
+  await expect(page.locator('#badgeMainText')).toContainText('İngilizce');
   await page.locator('#btnLoadAllTopics').click();
 
   const engCard = page.locator('#bookletPagesContainer .booklet-question').first();

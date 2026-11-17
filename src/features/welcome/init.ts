@@ -1,11 +1,10 @@
 import { registerActions } from '../../app/actions.ts';
 import { notifyStateChange, state, store } from '../../app/state.ts';
-import { readString, writeString } from '../../app/storage.ts';
+import { writeString } from '../../app/storage.ts';
 import type { SubjectId } from '../../data/question.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 import { roomService } from '../classroom/room-service.ts';
 import {
-  showAuthModal,
   hideAuthModal,
   toggleAuthMode,
   setAuthMode,
@@ -18,15 +17,11 @@ import {
 } from './auth-modal.ts';
 import {
   focusRoomInput,
-  getDialogUserName,
   getWelcomeRoomId,
   hideWelcomePortal,
-  hideNameDialog,
   renderWelcomePortal,
   setWelcomeBusy,
   setWelcomeProgram,
-  showNameDialog,
-  showNameError,
   showWelcomeError,
   showWelcomePortal,
   updateResumeAction,
@@ -55,14 +50,14 @@ export interface WelcomeDependencies {
   readonly closeSubjectDrawer: () => void;
   readonly dismissResumeBanner: () => void;
   readonly getSavedSession: () => WelcomeSession | null;
-  readonly joinRoom: (roomId: string, userName: string) => void;
+  readonly joinRoom: (roomId: string, userName: string) => Promise<void>;
   readonly loadSubject: (subject: string) => Promise<boolean>;
   readonly openSubjectDrawer: () => void;
   readonly setUnifiedMode: (mode: 'all' | 'rematch') => void;
 }
 
 let dependencies: WelcomeDependencies;
-let pendingRoomId: string | null = null;
+let transitionPending = false;
 
 function hasSavedSession(): boolean {
   return dependencies.getSavedSession() !== null;
@@ -72,15 +67,20 @@ async function loadProgramSubject(): Promise<boolean> {
   return dependencies.loadSubject(DEFAULT_SUBJECTS[state.programMode]);
 }
 
-async function runWelcomeTransition(action: () => Promise<void>): Promise<void> {
+async function runWelcomeTransition(action: () => Promise<void>, roomAction = false): Promise<void> {
+  if (transitionPending) return;
+  transitionPending = true;
   setWelcomeBusy(true);
   showWelcomeError();
   try {
     await action();
   } catch (error) {
     console.error('[Welcome]', error);
-    showWelcomeError('Ders yüklenemedi. Bağlantını kontrol edip yeniden dene.');
+    showWelcomeError(roomAction && error instanceof Error
+      ? error.message
+      : 'Ders yüklenemedi. Bağlantını kontrol edip yeniden dene.');
   } finally {
+    transitionPending = false;
     setWelcomeBusy(false);
   }
 }
@@ -91,7 +91,7 @@ async function startMode(mode: 'all' | 'rematch', openDrawer = false): Promise<v
     return;
   }
   await runWelcomeTransition(async () => {
-    if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
+    if (!await loadProgramSubject()) throw new Error('Ders yüklenemedi. Bağlantını kontrol edip yeniden dene.');
     dependencies.setUnifiedMode(mode);
     hideWelcomePortal();
     if (openDrawer) dependencies.openSubjectDrawer();
@@ -104,12 +104,11 @@ async function connectToRoom(roomId: string, userName: string): Promise<void> {
     return;
   }
   await runWelcomeTransition(async () => {
-    if (!await loadProgramSubject()) throw new Error('Default subject could not be loaded.');
+    if (!await loadProgramSubject()) throw new Error('Ders yüklenemedi. Bağlantını kontrol edip yeniden dene.');
     dependencies.setUnifiedMode('all');
-    dependencies.joinRoom(roomId, userName);
-    pendingRoomId = null;
+    await dependencies.joinRoom(roomId, userName);
     hideWelcomePortal();
-  });
+  }, true);
 }
 
 async function joinRoom(): Promise<void> {
@@ -127,47 +126,15 @@ async function joinRoom(): Promise<void> {
   const session = getActiveSession();
   const userName = session?.user.username?.trim()
     || session?.user.displayName?.trim()
-    || readString(StorageKeys.USER_NAME)?.trim();
-
-  if (userName) {
-    writeString(StorageKeys.USER_NAME, userName);
-    await connectToRoom(roomId, userName);
-    return;
-  }
-
-  pendingRoomId = roomId;
-  showNameDialog();
-}
-
-async function confirmUserName(): Promise<void> {
-  const userName = getDialogUserName();
-  if (!userName) {
-    showNameError('Devam etmek için adınızı yazın.');
-    document.getElementById('welcomeNameInput')?.focus();
-    return;
-  }
-  if (!pendingRoomId) {
-    hideNameDialog();
-    return;
-  }
-
+    || 'Katılımcı';
   writeString(StorageKeys.USER_NAME, userName);
-  hideNameDialog();
-  await connectToRoom(pendingRoomId, userName);
-}
-
-function cancelUserName(): void {
-  pendingRoomId = null;
-  hideNameDialog();
-  focusRoomInput();
+  await connectToRoom(roomId, userName);
 }
 
 function returnHome(): void {
   dependencies.closeSubjectDrawer();
   dependencies.dismissResumeBanner();
   updateResumeAction(hasSavedSession());
-  pendingRoomId = null;
-  hideNameDialog();
   showWelcomeError();
   showWelcomePortal();
 }
@@ -207,20 +174,9 @@ export async function resumeSavedSession(): Promise<void> {
 
 function bindWelcomeInputs(): void {
   const roomInput = document.getElementById('welcomeRoomId');
-  roomInput?.addEventListener('input', () => {
-    if (roomInput instanceof HTMLInputElement) {
-      roomInput.value = roomInput.value.toLocaleUpperCase('tr-TR');
-    }
-    showWelcomeError();
-  });
+  roomInput?.addEventListener('input', () => showWelcomeError());
   roomInput?.addEventListener('keydown', event => {
     if (event.key === 'Enter') void joinRoom();
-  });
-  const nameInput = document.getElementById('welcomeNameInput');
-  nameInput?.addEventListener('input', () => showNameError());
-  nameInput?.addEventListener('keydown', event => {
-    if (event.key === 'Enter') void confirmUserName();
-    if (event.key === 'Escape') cancelUserName();
   });
   ['authEmailInput', 'authPasswordInput', 'authPasswordConfirmInput', 'authUsernameInput'].forEach(id => {
     document.getElementById(id)?.addEventListener('keydown', event => {
@@ -254,8 +210,6 @@ export function initWelcome(
     'welcome-start-rematch': () => startMode('rematch'),
     'welcome-start-single': () => startMode('all', true),
     'welcome-join-room': () => joinRoom(),
-    'welcome-confirm-name': () => confirmUserName(),
-    'welcome-cancel-name': () => cancelUserName(),
     'welcome-set-auth-signin': () => setAuthMode('signin'),
     'welcome-set-auth-signup': () => setAuthMode('signup'),
     'welcome-open-auth': () => setAuthMode('signin'),
@@ -264,11 +218,11 @@ export function initWelcome(
     'welcome-toggle-auth-mode': () => toggleAuthMode(),
     'welcome-signout': (_element, event) => {
       event?.stopPropagation();
-      pendingRoomId = null;
-      hideNameDialog();
-      void handleSignOut().then(() => {
+      return runWelcomeTransition(async () => {
+        await roomService.leaveRoom();
+        await handleSignOut();
         updateResumeAction(false);
-      });
+      }, true);
     },
     'welcome-home': () => returnHome(),
     'welcome-resume': () => resumeSavedSession(),

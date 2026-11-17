@@ -267,76 +267,49 @@
   <!-- ========================================================= -->
   <!-- 6. SINIF OTURUMU & AYRILANLAR PANELLERİ                  -->
   <!-- ========================================================= -->
-  <!-- Hoca Paneli: Akış & Durum Tablosu & Ayrıl Butonu -->
   <div class="teacher-drawer-overlay" id="teacherDrawerOverlay" style="display:none;">
-    <div class="teacher-drawer-card">
+    <section class="teacher-drawer-card" aria-label="Öğretmen oda paneli">
       <div class="teacher-drawer-header">
-        <div class="teacher-drawer-tabs">
-          <button type="button" class="btn-drawer-tab active" data-action="switch-room-tab" data-tab="feed">Akış</button>
-          <button type="button" class="btn-drawer-tab" data-action="switch-room-tab" data-tab="stats">Durum</button>
+        <div class="teacher-drawer-tabs" role="tablist" aria-label="Sınıf görünümü">
+          <button type="button" class="btn-drawer-tab active" data-action="switch-room-tab" data-tab="feed" role="tab" aria-selected="true">Akış</button>
+          <button type="button" class="btn-drawer-tab" data-action="switch-room-tab" data-tab="stats" role="tab" aria-selected="false">Katılımcılar</button>
         </div>
-        <button class="btn-room-close" data-action="close-teacher-drawer" title="Kapat">✕</button>
+        <button class="btn-room-close" data-action="close-teacher-drawer" aria-label="Paneli kapat">✕</button>
       </div>
-
-      <!-- 1. Akış Sekmesi (Gelenler, Gidenler, El Kaldıranlar) -->
+      <p class="room-connection-status" data-role="room-connection" role="status">Bağlanılıyor…</p>
+      <p class="room-error" data-role="room-error" role="alert"></p>
       <div class="room-tab-content" id="roomTabContentFeed">
-        <div class="exit-log-list" id="teacherExitLogsList">
-          <div class="exit-log-empty">Henüz bir hareket yok.</div>
-        </div>
+        <div class="exit-log-list" id="teacherExitLogsList"></div>
       </div>
-
-      <!-- 2. Durum Sekmesi (Öğrenci Başına Doğru/Yanlış ve Soru Başına Süre) -->
       <div class="room-tab-content" id="roomTabContentStats" style="display:none;">
-        <div class="room-stats-list" id="teacherStatsList">
-          <div class="exit-log-empty">Henüz soru çözen öğrenci yok.</div>
-        </div>
-        <!-- Toplu Duyuru / Mesaj Formu -->
-        <div class="room-announcement-box">
-          <input type="text" id="inputBroadcastMsg" class="room-form-input" placeholder="Sınıfa duyuru gönder..." autocomplete="off">
-          <button type="button" class="btn-send-announcement" data-action="send-broadcast-message">Gönder</button>
-        </div>
+        <div class="room-stats-list" id="teacherStatsList"></div>
       </div>
-
-      <!-- Hoca 3'lü Buton Grubu: Durdur, Ayrıl, Sonlandır -->
+      <p class="room-announcement" data-role="room-announcement"></p>
+      <div class="room-announcement-box">
+        <input type="text" id="inputBroadcastMsg" class="room-form-input" maxlength="280" placeholder="Sınıfa duyuru gönder…" aria-label="Sınıf duyurusu" autocomplete="off">
+        <button type="button" class="btn-send-announcement" data-action="send-broadcast-message">Gönder</button>
+      </div>
       <div class="drawer-bottom-actions teacher-action-group">
-        <button type="button" class="btn-room-ctrl btn-pause-room" id="btnTogglePauseRoom" data-action="toggle-pause-room">⏸️ Durdur</button>
         <button type="button" class="btn-room-ctrl btn-leave-room" data-action="leave-current-room">Ayrıl</button>
-        <button type="button" class="btn-room-ctrl btn-close-room" data-action="close-room-globally">Sonlandır</button>
+        <button type="button" class="btn-room-ctrl btn-close-room" data-action="close-room-globally">Odayı bitir</button>
       </div>
-    </div>
+    </section>
   </div>
 
-  <!-- Öğrenci Paneli: Sıralama, Hoca Çağırma & Oturumdan Ayrılma -->
   <div class="student-drawer-overlay" id="studentDrawerOverlay" style="display:none;">
-    <div class="student-drawer-card">
+    <section class="student-drawer-card" aria-label="Katılımcı oda paneli">
       <div class="student-drawer-header">
         <span class="student-drawer-title" id="studentDrawerTitle">Sınıf Oturumu</span>
-        <button class="btn-room-close" data-action="close-student-drawer" title="Kapat">✕</button>
+        <button class="btn-room-close" data-action="close-student-drawer" aria-label="Paneli kapat">✕</button>
       </div>
       <div class="student-drawer-body">
-        <!-- Akıllı Sıralama Kartı -->
-        <div class="student-rank-badge" id="studentRankBadge">
-          <span class="rank-trophy">🏆</span>
-          <span class="rank-text" id="studentRankText">Hesaplanıyor...</span>
-        </div>
-        <button type="button" class="btn-call-teacher" id="btnCallTeacher" data-action="call-teacher-help" title="Hoca Çağır" aria-label="Hoca Çağır">
-          <span class="call-icon" style="font-size:22px; line-height:1;">✋</span>
-        </button>
-        <button type="button" class="btn-leave-room" data-action="leave-current-room">
-          Oturumdan Ayrıl
-        </button>
+        <p class="room-connection-status" data-role="room-connection" role="status">Bağlanılıyor…</p>
+        <p class="room-error" data-role="room-error" role="alert"></p>
+        <p id="studentRoomSummary"></p>
+        <p class="room-announcement" data-role="room-announcement"></p>
+        <button type="button" class="btn-leave-room" data-action="leave-current-room">Odadan ayrıl</button>
       </div>
-    </div>
-  </div>
-
-  <!-- Oturum Duraklatıldı (Pause / Mola) Perdesi -->
-  <div class="room-pause-overlay" id="roomPauseOverlay" style="display:none;">
-    <div class="room-pause-card">
-      <div class="pause-big-icon">⏸️</div>
-      <div class="pause-main-title">Oturum Duraklatıldı</div>
-      <div class="pause-sub-title">Mola veya dinleme modu aktif.</div>
-      <button type="button" class="room-pause-leave-btn" data-action="leave-current-room">Odadan Ayrıl</button>
-    </div>
+    </section>
   </div>
 
   <!-- ========================================================= -->

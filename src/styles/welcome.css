@@ -7,8 +7,7 @@
   padding: calc(28px + var(--safe-top)) 18px calc(96px + var(--safe-bottom));
 }
 
-.welcome-portal[hidden],
-.welcome-dialog-backdrop[hidden] {
+.welcome-portal[hidden] {
   display: none;
 }
 
@@ -185,23 +184,22 @@ button.welcome-action-resume:hover {
   text-transform: uppercase;
 }
 
-.welcome-multiplayer-row input:focus,
-.welcome-name-dialog input:focus {
+.welcome-multiplayer-row input:focus {
   border-color: var(--brand-accent);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-accent) 15%, transparent);
 }
 
 .welcome-room-submit {
-  width: 38px;
+  width: 44px;
   height: 38px;
   display: grid;
-  flex: 0 0 38px;
+  flex: 0 0 44px;
   place-items: center;
   border: 0;
   border-radius: 10px;
   background: var(--brand-accent);
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 800;
   cursor: pointer;
 }

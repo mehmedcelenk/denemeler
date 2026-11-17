@@ -231,3 +231,50 @@ test('auth-hardening: token süresi dolduğunda çözülen sorular asla silinmez
     setSupabaseConfigOverride(null);
   }
 }));
+
+test('auth-hardening: süresi dolmuş oturum ağ hatasında saklanır ve tekrar denenebilir', () => withStorage(async () => {
+  setSupabaseConfigOverride({ url: 'https://mock.supabase.co', anonKey: 'mock-key' });
+  const originalFetch = globalThis.fetch;
+  const session = {
+    accessToken: 'expired', refreshToken: 'still-valid',
+    expiresAt: Math.floor(Date.now() / 1000) - 10, user: { id: 'u1' },
+  };
+  saveActiveSession(session);
+  try {
+    globalThis.fetch = async () => { throw new TypeError('offline'); };
+    assert.equal(await ensureFreshSession(), null);
+    assert.equal(getActiveSession()?.refreshToken, 'still-valid');
+    globalThis.fetch = async () => new Response(JSON.stringify({
+      access_token: 'new', refresh_token: 'new-refresh', expires_in: 3600, user: { id: 'u1' },
+    }), { status: 200 });
+    assert.equal((await ensureFreshSession())?.accessToken, 'new');
+  } finally {
+    globalThis.fetch = originalFetch;
+    saveActiveSession(null);
+    setSupabaseConfigOverride(null);
+  }
+}));
+
+test('auth-hardening: geciken yenileme çıkış yapılmış oturumu geri getirmez', () => withStorage(async () => {
+  setSupabaseConfigOverride({ url: 'https://mock.supabase.co', anonKey: 'mock-key' });
+  const originalFetch = globalThis.fetch;
+  let release: (() => void) | undefined;
+  const wait = new Promise<void>(resolve => { release = resolve; });
+  globalThis.fetch = async () => {
+    await wait;
+    return new Response(JSON.stringify({
+      access_token: 'new', refresh_token: 'new-refresh', expires_in: 3600, user: { id: 'u1' },
+    }), { status: 200 });
+  };
+  saveActiveSession({ accessToken: 'expired', refreshToken: 'old', expiresAt: 1, user: { id: 'u1' } });
+  try {
+    const refreshing = ensureFreshSession();
+    saveActiveSession(null);
+    release?.();
+    assert.equal(await refreshing, null);
+    assert.equal(getActiveSession(), null);
+  } finally {
+    globalThis.fetch = originalFetch;
+    setSupabaseConfigOverride(null);
+  }
+}));

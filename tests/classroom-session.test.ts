@@ -1,242 +1,163 @@
-import { registerClassroomNetworkTest } from './scenarios/classroom-network.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { roomService } from '../src/features/classroom/room-service.ts';
-import { handleIncomingRoomMessage } from '../src/features/classroom/message-handler.ts';
-import { calculateStudentRank } from '../src/features/classroom/ranking.ts';
-import type { RoomFeedItem, RoomParticipant, StudentStats } from '../src/features/classroom/types.ts';
+import { RoomService } from '../src/features/classroom/room-service.ts';
+import { loadPendingAnswers, loadRoomSession } from '../src/features/classroom/session-store.ts';
+import { saveActiveSession } from '../src/features/welcome/cloud-sync.ts';
+import { withClassroom } from './fixtures/classroom.ts';
 
-test('roomService: Oda oluşturma ve katılımcı durumu', () => {
-  roomService.joinOrCreateRoom('12-A', 'Hasan Hoca', true);
-  const state = roomService.getState();
+test('oda rolü yalnız sunucu yanıtından gelir; cevap tekrarları ve silme idempotenttir', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  try {
+    await service.joinOrCreateRoom('12-A');
+    assert.equal(service.isHost(), false);
+    assert.equal(service.getPeerId(), f.auth.user.id);
+    assert.equal(f.requests[0].args.isHost, undefined);
+    service.logStudentAnswer(101, false);
+    service.logStudentAnswer(101, false);
+    await service.refresh();
+    assert.equal(service.getState().studentStats[f.auth.user.id].incorrectCount, 1);
+    service.revokeStudentAnswer(101);
+    await service.refresh();
+    assert.equal(service.getState().studentStats[f.auth.user.id].incorrectCount, 0);
+    assert.deepEqual(f.snapshot.members[0].answers, {});
+  } finally { service.disconnect(); }
+}));
 
-  assert.equal(state.roomId, '12-A');
-  assert.equal(state.userName, 'Hasan Hoca');
-  assert.equal(state.isHost, true);
-  assert.equal(state.participants.length, 1);
-  assert.equal(state.participants[0].name, 'Hasan Hoca');
+test('offline cevaplar oda ve hesaba bağlı saklanır, yeniden bağlanınca gönderilir', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  try {
+    await service.joinOrCreateRoom('12-A');
+    f.offline = true;
+    service.logStudentAnswer(9, true);
+    await service.refresh();
+    assert.equal(service.getState().connection, 'reconnecting');
+    assert.equal(loadPendingAnswers(f.auth.user.id, f.snapshot.roomId)['9'].value, true);
+    assert.deepEqual(loadPendingAnswers('another-user', f.snapshot.roomId), {});
+    assert.deepEqual(loadPendingAnswers(f.auth.user.id, 'another-room'), {});
+    f.offline = false;
+    await service.refresh();
+    assert.equal(service.getState().studentStats[f.auth.user.id].correctCount, 1);
+    assert.deepEqual(loadPendingAnswers(f.auth.user.id, f.snapshot.roomId), {});
+  } finally { service.disconnect(); }
+}));
 
-  roomService.leaveRoom();
-  const leftState = roomService.getState();
-  assert.equal(leftState.roomId, null);
-  assert.equal(leftState.participants.length, 0);
-});
+test('HTTP isteği sırasında gelen yeni cevap değişikliği eski onayla silinmez', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  try {
+    await service.joinOrCreateRoom('12-A');
+    service.logStudentAnswer(9, true);
+    let release!: () => void;
+    f.holdUpdate = new Promise<void>(resolve => { release = resolve; });
+    const updating = service.refresh();
+    await new Promise(resolve => setImmediate(resolve));
+    service.revokeStudentAnswer(9);
+    release();
+    await updating;
+    assert.equal(loadPendingAnswers(f.auth.user.id, f.snapshot.roomId)['9'].value, null);
+    await service.refresh();
+    assert.deepEqual(f.snapshot.members[0].answers, {});
+  } finally { service.disconnect(); }
+}));
 
-test('roomService: Akış olayları (feedItems) ve el kaldırma kaydı', () => {
-  roomService.joinOrCreateRoom('FEN-101', 'Zeynep Hoca', true);
-  
-  // Odak kaybı bildirimi
-  roomService.notifyFocusLost();
-  let state = roomService.getState();
-  assert.equal(state.feedItems.some(f => f.type === 'FOCUS_LOST'), true);
+test('yenileme sunucudan aynı oda/bağlantıyı doğrular, eski kayda host yetkisi vermez', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  const restored = new RoomService(false);
+  try {
+    await service.joinOrCreateRoom('12-A');
+    const saved = loadRoomSession(f.auth.user.id)!;
+    assert.equal(await restored.restoreSessionIfActive(), true);
+    const join = f.requests.filter(r => r.name === 'join_or_create_room').at(-1)!;
+    assert.equal(join.args.p_room_id, f.snapshot.roomId);
+    assert.equal(join.args.p_connection_id, saved.connectionId);
+    assert.equal(restored.isHost(), false);
+    assert.equal(loadRoomSession('other'), null);
+  } finally { service.disconnect(); restored.disconnect(); }
+}));
 
-  // Geri dönme bildirimi: ayrılma kaydına returnedAt eklenir
-  roomService.notifyFocusRestored();
-  state = roomService.getState();
-  const lostItem = state.feedItems.find(f => f.type === 'FOCUS_LOST');
-  assert.equal(typeof lostItem?.returnedAt, 'number');
+test('arka plandaki heartbeat görünürlüğü true yapmaz; istekler üst üste binmez', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  try {
+    await service.joinOrCreateRoom('12-A');
+    service.setVisibility(false);
+    await service.refresh();
+    await Promise.all([service.refresh(), service.refresh(), service.refresh()]);
+    const updates = f.requests.filter(r => r.name === 'update_room_member');
+    assert.equal(updates.length, 2);
+    assert.ok(updates.every(r => r.args.p_visible === false));
+    assert.equal(service.getState().studentStats[f.auth.user.id].visible, false);
+  } finally { service.disconnect(); }
+}));
 
-  // Hoca çağırma bildirimi
-  roomService.callTeacherHelp();
-  state = roomService.getState();
-  assert.equal(state.helpRequested, true);
-  assert.equal(state.feedItems.some(f => f.type === 'HELP_CALL'), true);
+test('yüzden fazla yeni olayda öğretmen sayfaları sırayla alır ve son 100 kayıt korunur', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  f.snapshot.hostId = f.auth.user.id;
+  try {
+    await service.joinOrCreateRoom('12-A');
+    f.snapshot.events = Array.from({ length: 120 }, (_, i) => ({ id: String(i + 1),
+      type: 'AWAY' as const, userId: `student-${i}`, name: 'Öğrenci', at: i + 1 }));
+    await service.refresh();
+    assert.equal(service.getState().feedItems.length, 100);
+    await service.refresh();
+    const updates = f.requests.filter(r => r.name === 'update_room_member');
+    assert.equal(updates[0].args.p_after_event, '0');
+    assert.equal(updates[1].args.p_after_event, '100');
+    assert.equal(service.getState().feedItems.length, 100);
+    assert.equal(service.getState().feedItems[0].id, '21');
+    assert.equal(service.getState().feedItems.at(-1)?.id, '120');
+    await service.refresh();
+    assert.equal(service.getState().feedItems.length, 100);
+  } finally { service.disconnect(); }
+}));
 
-  // Hoca çağrıyı çözer
-  const helpItem = state.feedItems.find(f => f.type === 'HELP_CALL');
-  if (helpItem) {
-    roomService.resolveTeacherHelp(helpItem.id, 'Zeynep Hoca');
-    state = roomService.getState();
-    assert.equal(state.helpRequested, false);
-    assert.equal(helpItem.resolved, true);
-  }
+test('çıkıştan sonra gelen eski yanıt odayı geri açmaz', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  await service.joinOrCreateRoom('12-A');
+  let release!: () => void;
+  f.holdUpdate = new Promise<void>(resolve => { release = resolve; });
+  const updating = service.refresh();
+  await new Promise(resolve => setImmediate(resolve));
+  service.disconnect();
+  release();
+  await updating;
+  assert.equal(service.getState().roomId, null);
+}));
 
-  roomService.leaveRoom();
-});
+test('giriş sırasında hesap değişirse gecikmiş sunucu yanıtı başarılı sayılmaz', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  let release!: () => void;
+  f.holdJoin = new Promise<void>(resolve => { release = resolve; });
+  const joining = service.joinOrCreateRoom('12-A');
+  await new Promise(resolve => setImmediate(resolve));
+  service.disconnect();
+  release();
+  await assert.rejects(joining, /iptal edildi/);
+  assert.equal(service.getState().roomId, null);
+}));
 
-test('roomService: Duraklatma (Pause) modu durumu günceller', () => {
-  roomService.joinOrCreateRoom('FIZ-1', 'Ahmet Hoca', true);
-  assert.equal(roomService.getState().isPaused, false);
+test('hesap değişince eski hesaba ait oda otomatik yüklenmez', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  try {
+    await service.joinOrCreateRoom('12-A');
+    saveActiveSession({ ...f.auth, user: { id: 'other' } });
+    const other = new RoomService(false);
+    assert.equal(await other.restoreSessionIfActive(), false);
+    other.disconnect();
+  } finally { service.disconnect(); }
+}));
 
-  roomService.togglePauseRoom();
-  assert.equal(roomService.getState().isPaused, true);
-
-  roomService.togglePauseRoom();
-  assert.equal(roomService.getState().isPaused, false);
-
-  roomService.leaveRoom();
-});
-
-test('calculateStudentRank: Öğrenci sıralamasını doğru hesaplar', () => {
-  const now = Date.now();
-  const stats = {
-    p1: { id: 'p1', name: 'Ali', correctCount: 10, incorrectCount: 1, joinedAt: now - 60000 },
-    p2: { id: 'p2', name: 'Ayşe', correctCount: 15, incorrectCount: 0, joinedAt: now - 60000 },
-    p3: { id: 'p3', name: 'Mehmet', correctCount: 5, incorrectCount: 5, joinedAt: now - 60000 },
-  };
-
-  const ayseRank = calculateStudentRank('Ayşe', stats);
-  assert.equal(ayseRank.rank, 1);
-  assert.equal(ayseRank.total, 3);
-
-  const aliRank = calculateStudentRank('Ali', stats);
-  assert.equal(aliRank.rank, 2);
-
-  const mehmetRank = calculateStudentRank('Mehmet', stats);
-  assert.equal(mehmetRank.rank, 3);
-});
-
-test('100 Kişilik Sınıf Ölçeklenebilirlik Testi: N x N mesaj patlamasını önler ve mükerrer bildirimleri birleştirir', () => {
-  const now = Date.now();
-  const hostParticipants: RoomParticipant[] = [
-    { id: 'host-1', name: 'Kemal Hoca', isHost: true, joinedAt: now - 10000 },
-  ];
-  const hostFeed: RoomFeedItem[] = [];
-  const hostStats: Record<string, StudentStats> = {
-    'host-1': { id: 'host-1', name: 'Kemal Hoca', correctCount: 0, incorrectCount: 0, joinedAt: now - 10000 },
-  };
-  let hostSyncScheduleCount = 0;
-
-  const hostCtx = {
-    peerId: 'host-1',
-    roomId: 'MEGA-100',
-    userName: 'Kemal Hoca',
-    isHost: true,
-    isPaused: false,
-    participants: hostParticipants,
-    feedItems: hostFeed,
-    studentStats: hostStats,
-    helpRequested: false,
-    setHelpRequested: () => {},
-    setPaused: () => {},
-    demoteToStudent: () => {},
-    leaveRoom: () => {},
-    scheduleSyncBroadcast: () => {
-      hostSyncScheduleCount++;
-    },
-    notify: () => {},
-  };
-
-  // Sıradan bir öğrencinin bağlamı (Odada hoca varken öğrenci PEER_JOIN'e ROOM_SYNC dönmemeli)
-  let studentSyncScheduleCount = 0;
-  const studentCtx = {
-    ...hostCtx,
-    peerId: 'stu-1',
-    userName: 'Öğrenci 1',
-    isHost: false,
-    scheduleSyncBroadcast: () => {
-      studentSyncScheduleCount++;
-    },
-  };
-
-  // 100 öğrenci odaya katılır ve her biri soru çözer
-  for (let i = 1; i <= 100; i++) {
-    const stuId = `stu-${i}`;
-    const stuName = `Öğrenci ${i}`;
-    const joinMsg = {
-      type: 'PEER_JOIN' as const,
-      roomId: 'MEGA-100',
-      senderId: stuId,
-      senderName: stuName,
-      isHost: false,
-      timestamp: now + i,
-    };
-
-    handleIncomingRoomMessage(hostCtx, joinMsg);
-    if (i > 1) {
-      handleIncomingRoomMessage(studentCtx, joinMsg);
-    }
-
-    // Her öğrenci i adet doğru cevap gönderir
-    for (let q = 0; q < (i % 10) + 1; q++) {
-      handleIncomingRoomMessage(hostCtx, {
-        type: 'STUDENT_ANSWER_LOG',
-        roomId: 'MEGA-100',
-        senderId: stuId,
-        senderName: stuName,
-        timestamp: now + i + q,
-        payload: { isCorrect: true },
-      });
-    }
-  }
-
-  // 1 Hoca + 100 Öğrenci = 101 Katılımcı
-  assert.equal(hostParticipants.length, 101);
-  assert.equal(Object.keys(hostStats).length, 101);
-
-  // Öğrenci düğümü odada Hoca varken ASLA ROOM_SYNC tetiklememeli (0 olmalı)
-  assert.equal(studentSyncScheduleCount, 0);
-  assert.equal(hostSyncScheduleCount, 100);
-
-  // Feed listesi 100 eleman sınırını (cap) aşmamalı
-  assert.equal(hostFeed.length, 100);
-
-  // Aynı öğrenci arka arkaya 5 kez odak kaybetse bile açık odak kaybı varken yalnızca 1 satır eklenmeli
-  for (let k = 0; k < 5; k++) {
-    handleIncomingRoomMessage(hostCtx, {
-      type: 'FOCUS_LOST',
-      roomId: 'MEGA-100',
-      senderId: 'stu-50',
-      senderName: 'Öğrenci 50',
-      timestamp: now + 5000 + k,
-    });
-  }
-  const stu50LostItems = hostFeed.filter((f) => f.type === 'FOCUS_LOST' && f.studentName === 'Öğrenci 50');
-  assert.equal(stu50LostItems.length, 1);
-});
-
-test('Anti-Exploit Testi: Aynı soruyu silip tekrar işaretlemek sonsuz puan kazandırmaz', () => {
-  roomService.joinOrCreateRoom('MATH-1', 'Zeki Öğrenci', false);
-
-  // 1. soru doğru cevaplanır
-  roomService.logStudentAnswer(101, true);
-  let state = roomService.getState();
-  const peerId = roomService.getPeerId();
-  assert.equal(state.studentStats[peerId].correctCount, 1);
-
-  // Öğrenci aynı soruyu tekrar işaretlerse (mükerrer tıklama) sayı artmaz
-  roomService.logStudentAnswer(101, true);
-  state = roomService.getState();
-  assert.equal(state.studentStats[peerId].correctCount, 1);
-
-  // Öğrenci cevabı siler (revoke)
-  roomService.revokeStudentAnswer(101);
-  state = roomService.getState();
-  assert.equal(state.studentStats[peerId].correctCount, 0);
-
-  // Tekrar işaretlerse sadece 1 olur (toplam 2 olmaz)
-  roomService.logStudentAnswer(101, true);
-  state = roomService.getState();
-  assert.equal(state.studentStats[peerId].correctCount, 1);
-
-  roomService.leaveRoom();
-});
-
-test('Hoca İzolasyonu Testi: Hoca (isHost: true) öğrenci sıralamasına ve Durum tablosuna dahil edilmez', () => {
-  roomService.joinOrCreateRoom('SINIF-A', 'Müdür Bey', true);
-  const state = roomService.getState();
-  const hostPeerId = roomService.getPeerId();
-
-  // Hoca studentStats içinde bulunmamalıdır
-  assert.equal(state.studentStats[hostPeerId], undefined);
-  assert.equal(Object.keys(state.studentStats).length, 0);
-
-  roomService.leaveRoom();
-});
-
-test('İkiz İsim ("İki Ali") Testi: Aynı isimli iki öğrenci peerId ile doğru ayrışır', () => {
-  const now = Date.now();
-  const stats: Record<string, StudentStats> = {
-    'stu-ali-1': { id: 'stu-ali-1', name: 'Ali', correctCount: 10, incorrectCount: 0, joinedAt: now },
-    'stu-ali-2': { id: 'stu-ali-2', name: 'Ali', correctCount: 2, incorrectCount: 5, joinedAt: now },
-  };
-
-  const rank1 = calculateStudentRank('stu-ali-1', stats);
-  const rank2 = calculateStudentRank('stu-ali-2', stats);
-
-  assert.equal(rank1.rank, 1);
-  assert.equal(rank2.rank, 2);
-  assert.equal(rank1.total, 2);
-});
-
-registerClassroomNetworkTest();
+test('cihaz depolaması başarısız ve bağlantı yoksa gönderilmemiş cevaplarla çıkış reddedilir', () => withClassroom(async f => {
+  const service = new RoomService(false);
+  try {
+    await service.joinOrCreateRoom('12-A');
+    const original = globalThis.localStorage;
+    Object.defineProperty(globalThis, 'localStorage', { configurable: true, value: {
+      getItem: original.getItem.bind(original), removeItem: original.removeItem.bind(original),
+      setItem: () => { throw new Error('full'); },
+    } });
+    f.offline = true;
+    service.logStudentAnswer(1, true);
+    await assert.rejects(service.leaveRoom(), /kaydedilemedi/);
+    assert.equal(service.getState().roomId, f.snapshot.roomId);
+    Object.defineProperty(globalThis, 'localStorage', { configurable: true, value: original });
+  } finally { service.disconnect(); }
+}));

@@ -205,6 +205,7 @@ export default defineConfig(({ mode }) => {
         html = html.replace('./dist/assets/styles.css', './assets/styles.css')
                    .replace('./dist/assets/app.js', './assets/app.js');
         writeFileSync(`${root}dist/index.html`, html, 'utf8');
+        writeFileSync(`${root}dist/200.html`, html, 'utf8');
       }
     },
   }],

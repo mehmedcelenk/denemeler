@@ -80,9 +80,9 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
           </button>
           <div class="welcome-action-row welcome-multiplayer-row">
             <span class="welcome-action-icon">${usersIcon}</span>
-            <label class="welcome-multiplayer-label" for="welcomeRoomId">Çevrim İçi:</label>
-            <input id="welcomeRoomId" type="text" maxlength="24" autocomplete="off" autocapitalize="characters" placeholder="Oda adı" aria-label="Oda adı">
-            <button type="button" class="welcome-room-submit" data-action="welcome-join-room" aria-label="Odaya katıl">→</button>
+            <label class="welcome-multiplayer-label" for="welcomeRoomId">Oda adı:</label>
+            <input id="welcomeRoomId" type="text" maxlength="24" autocomplete="off" placeholder="Oda adı" aria-label="Oda adı">
+            <button type="button" class="welcome-room-submit" data-action="welcome-join-room" aria-label="Odaya gir">Gir</button>
           </div>
           <div class="welcome-auth-container">
             <div class="welcome-auth-btn is-authenticated" id="welcomeAuthTrigger">
@@ -97,16 +97,6 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
       <p class="welcome-form-error" id="welcomeFormError" role="alert" aria-live="polite"></p>
     </div>
 
-    <div class="welcome-dialog-backdrop" id="welcomeNameDialog" hidden>
-      <section class="welcome-name-dialog" role="dialog" aria-modal="true" aria-labelledby="welcomeNameTitle">
-        <button type="button" class="welcome-dialog-close" data-action="welcome-cancel-name" aria-label="Kapat">×</button>
-        <h2 id="welcomeNameTitle">Oyundaki adınız nedir?</h2>
-        <p>Bu adı sonraki odalarda otomatik kullanacağız.</p>
-        <input id="welcomeNameInput" type="text" maxlength="40" autocomplete="name" placeholder="Adınız" aria-label="Oyundaki adınız">
-        <p class="welcome-name-error" id="welcomeNameError" role="alert" aria-live="polite"></p>
-        <button type="button" class="welcome-name-confirm" data-action="welcome-confirm-name">Devam Et →</button>
-      </section>
-    </div>
   `;
 
   setWelcomeProgram(options.programMode);
@@ -131,7 +121,6 @@ export function hideWelcomePortal(): void {
   }
   const portal = getPortal();
   if (!portal) return;
-  hideNameDialog();
   portal.hidden = true;
   portal.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('welcome-active');
@@ -148,25 +137,7 @@ export function setWelcomeProgram(mode: ProgramMode): void {
 
 export function getWelcomeRoomId(): string {
   const input = document.getElementById('welcomeRoomId') as HTMLInputElement | null;
-  return input && typeof input.value === 'string' ? input.value.trim().toLocaleUpperCase('tr-TR') : '';
-}
-
-export function getDialogUserName(): string {
-  const input = document.getElementById('welcomeNameInput') as HTMLInputElement | null;
   return input && typeof input.value === 'string' ? input.value.trim() : '';
-}
-
-export function showNameDialog(): void {
-  const dialog = document.getElementById('welcomeNameDialog');
-  if (!dialog) return;
-  dialog.hidden = false;
-  showNameError();
-  requestAnimationFrame(() => document.getElementById('welcomeNameInput')?.focus());
-}
-
-export function hideNameDialog(): void {
-  const dialog = document.getElementById('welcomeNameDialog');
-  if (dialog) dialog.hidden = true;
 }
 
 export function setWelcomeBusy(isBusy: boolean): void {
@@ -181,11 +152,6 @@ export function setWelcomeBusy(isBusy: boolean): void {
 
 export function showWelcomeError(message = ''): void {
   const error = document.getElementById('welcomeFormError');
-  if (error) error.textContent = message;
-}
-
-export function showNameError(message = ''): void {
-  const error = document.getElementById('welcomeNameError');
   if (error) error.textContent = message;
 }
 

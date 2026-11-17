@@ -15,7 +15,8 @@ export type StateEventType =
   | 'print:after'
   | 'view-mode:updated'
   | 'board:render-question'
-  | 'auth:expired';
+  | 'auth:expired'
+  | 'auth:signout';
 
 type StateListener = (payload?: unknown) => void;
 

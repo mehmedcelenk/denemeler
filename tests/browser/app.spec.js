@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { isolateRemoteData } from './fixtures/network.js';
 import { StorageKeys } from '../../src/shared/storage-keys.ts';
 
 const TEST_AUTH_SESSION = JSON.stringify({
@@ -9,6 +10,7 @@ const TEST_AUTH_SESSION = JSON.stringify({
 });
 
 test.beforeEach(async ({ page }) => {
+  await isolateRemoteData(page);
   await page.addInitScript(({ authKey, sessionJson }) => {
     if (!localStorage.getItem(authKey)) localStorage.setItem(authKey, sessionJson);
   }, { authKey: StorageKeys.AUTH_SESSION, sessionJson: TEST_AUTH_SESSION });
@@ -58,26 +60,7 @@ test('karşılama portalı ilk açılışı sade tutar ve program seçimini ders
   await expect(page.locator('.top-center-badge-container')).toBeHidden();
 });
 
-test('çok oyunculu giriş adı saklar ve odaya öğrenci olarak katılır', async ({ page }) => {
-  await page.goto('/');
-  await page.locator('#welcomeRoomId').fill('12-a');
-  await page.locator('[data-action="welcome-join-room"]').click();
-
-  await expect(page.locator('#welcomePortal')).toBeHidden();
-  await expect(page.locator('#topRoomPill')).toBeVisible();
-  await expect(page.locator('#topRoomPill')).toContainText('12-A');
-  await expect.poll(() => page.evaluate(
-    key => localStorage.getItem(key),
-    StorageKeys.USER_NAME
-  )).toBe('Ali');
-
-  await page.locator('#btnMasterConsole').click();
-  await page.locator('.console-nav-leave-room').click();
-  await page.locator('#welcomeRoomId').fill('13-b');
-  await page.locator('[data-action="welcome-join-room"]').click();
-  await expect(page.locator('#welcomeNameDialog')).toBeHidden();
-  await expect(page.locator('#topRoomPill')).toContainText('13-B');
-});
+// Classroom roles and cross-context behaviour are covered in classroom.spec.js.
 
 test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', async ({ page }) => {
   const errors = [];

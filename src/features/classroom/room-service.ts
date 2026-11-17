@@ -1,286 +1,292 @@
-import { INITIAL_ROOM_STATE } from './initial-state.ts';
-import type { RoomFeedItem, RoomMessage, RoomMessagePayload, RoomMessageType, RoomState, StudentStats } from './types.ts';
-import { roomChannel } from './room-channel.ts';
-import { handleIncomingRoomMessage } from './message-handler.ts';
-import { buildRestoredSessionPlan, clearRoomSession, consumeArchivedRoomJoin, persistAwayStartIfUnset, persistCurrentRoomSession } from './session-store.ts';
-import { releaseScreenWakeLock, requestScreenWakeLock } from './wake-lock.ts';
-import { checkOfflineStudents } from './offline-students.ts';
-import {
-  applyFocusLostState,
-  applyFocusRestoredState,
-  applyHelpCallState,
-  applyResolveHelpState,
-  applyRevokeStudentAnswer,
-  applyStudentAnswer,
-  buildMyStatsPayload,
-  createInitialStudentStats,
-  demoteHostToStudent,
-} from './student-progress.ts';
-
+import { onStateChange } from '../../app/state.ts';
+import { classroomRpc, fetchRoomSnapshot, ClassroomError, type RoomSnapshot, type ClassroomRpc } from '../../data/classroom.ts';
+import type { AuthSession } from '../../data/supabase-auth.ts';
+import { ensureFreshSession, getActiveSession } from '../welcome/cloud-sync.ts';
+import { clearRoomSession, loadPendingAnswers, loadRoomSession, savePendingAnswers, saveRoomSession,
+  type PendingAnswers, type RoomSession } from './session-store.ts';
+import { acknowledgeAnswers, emptyRoomState, snapshotToState, roomEventLabels } from './room-model.ts';
+import { showRoomToast } from './toast.ts';
+import type { RoomState } from './types.ts';
+import { claimClassroomTab } from './tab-lock.ts';
 export type { RoomState } from './types.ts';
 
-type Listener = (state: RoomState) => void;
-type ResumeCallback = () => void;
+export class RoomService {
+  private state = emptyRoomState();
+  private session: RoomSession | null = null;
+  private pending: PendingAnswers = {};
+  private listeners = new Set<(state: RoomState) => void>();
+  private timer: ReturnType<typeof setTimeout> | null = null;
+  private flight: Promise<void> | null = null;
+  private controller: AbortController | null = null;
+  private generation = 0;
+  private failures = 0;
+  private revision = 0;
+  private visible = true;
+  private dirtyVisibility = false;
+  private eventCursor = 0n;
+  private eventBacklog = false;
+  private announcementId = '';
+  private releaseTab: (() => void) | null = null;
+  private storageFailed = false;
 
-const HEARTBEAT_INTERVAL_MS = 4000;
-
-class RoomService {
-  private peerId: string = Math.random().toString(36).substring(2, 9);
-  private state: RoomState = { ...INITIAL_ROOM_STATE };
-  private listeners: Set<Listener> = new Set();
-  private resumeListeners: Set<ResumeCallback> = new Set();
-  private heartbeatTimer: ReturnType<typeof setInterval> | null = null;
-  private syncDebounceTimer: ReturnType<typeof setTimeout> | null = null;
-  private answeredQuestions: Map<number, boolean> = new Map();
-
-  constructor() {
-    this.resetState();
-  }
-
-  getPeerId(): string { return this.peerId; }
+  constructor(private readonly autoPoll = true) {}
   getState(): RoomState { return this.state; }
+  getPeerId(): string { return this.session?.userId ?? ''; }
   isHost(): boolean { return this.state.isHost; }
-
-  subscribe(listener: Listener): () => void {
+  subscribe(listener: (state: RoomState) => void): () => void {
     this.listeners.add(listener);
     listener(this.state);
-    return () => this.listeners.delete(listener);
+    return () => { this.listeners.delete(listener); };
   }
 
-  onResume(callback: ResumeCallback): () => void {
-    this.resumeListeners.add(callback);
-    return () => this.resumeListeners.delete(callback);
+  async joinOrCreateRoom(name: string, _userName?: string): Promise<void> {
+    await this.join(name);
   }
 
-  joinOrCreateRoom(
-    roomId: string,
-    userName: string,
-    asHost: boolean,
-    savedPeerId?: string,
-    savedJoinedAt?: number,
-    savedStats?: StudentStats,
-    awayDurationMs?: number,
-    savedHostStats?: Record<string, StudentStats>,
-    savedHostFeed?: RoomFeedItem[],
-    savedIsPaused?: boolean
-  ): void {
-    const cleanRoom = roomId.trim().toUpperCase();
-    const cleanName = userName.trim();
-    if (!cleanRoom || !cleanName) return;
-
-    this.leaveRoom();
-    const now = Date.now();
-    const archived = !savedPeerId && !savedStats ? consumeArchivedRoomJoin(cleanRoom, cleanName, now) : null;
-    if (savedPeerId) this.peerId = savedPeerId;
-    else if (archived) this.peerId = archived.peerId;
-
-    const effectiveHost = archived ? false : asHost;
-    const joinedAt = Number.isFinite(savedJoinedAt) && (savedJoinedAt ?? 0) > 0 ? (savedJoinedAt as number) : (archived?.joinedAt ?? now);
-    const effectiveAwayMs = awayDurationMs ?? archived?.awayDurationMs;
-    const myStudentStats = createInitialStudentStats(this.peerId, cleanName, joinedAt, now, savedStats ?? archived?.stats);
-    const initialFeed: RoomFeedItem[] = effectiveHost && Array.isArray(savedHostFeed) && savedHostFeed.length > 0
-      ? savedHostFeed
-      : [{ id: `${now}_${this.peerId}`, type: 'JOIN', studentId: this.peerId, studentName: cleanName, timestamp: now }];
-
-    this.state = {
-      roomId: cleanRoom,
-      userName: cleanName,
-      isHost: effectiveHost,
-      isPaused: effectiveHost ? Boolean(savedIsPaused) : false,
-      participants: [{ id: this.peerId, name: cleanName, isHost: effectiveHost, joinedAt, lastSeenAt: now }],
-      feedItems: initialFeed,
-      studentStats: effectiveHost ? (savedHostStats ?? {}) : { [this.peerId]: myStudentStats },
-      helpRequested: false,
-    };
-
-    persistCurrentRoomSession(this.state, this.peerId, null);
-    roomChannel.connect(cleanRoom, (msg) => this.handleIncoming(msg));
-    requestScreenWakeLock().catch(() => {});
-    this.emit('PEER_JOIN', buildMyStatsPayload(this.state, this.peerId, joinedAt, effectiveAwayMs), now);
+  private async join(name: string, saved?: RoomSession): Promise<void> {
+    while (this.flight) await this.flight;
+    if (this.session) await this.leaveRoom();
+    const generation = ++this.generation;
+    this.state = { ...emptyRoomState(), connection: 'connecting' };
     this.notify();
-    this.startHeartbeat();
-  }
-
-  restoreSessionIfActive(): boolean {
-    const plan = buildRestoredSessionPlan();
-    if (!plan) return false;
-    this.joinOrCreateRoom(
-      plan.roomId, plan.userName, plan.isHost, plan.peerId, plan.joinedAt,
-      plan.restoredStats, plan.awayDurationMs, plan.hostStudentStats, plan.hostFeedItems, plan.isPaused
-    );
-    return true;
-  }
-
-  markAwayStarted(timestamp = Date.now()): void { persistAwayStartIfUnset(this.state, this.peerId, timestamp); }
-  clearAwayStarted(): void { persistCurrentRoomSession(this.state, this.peerId, null); }
-  handlePageUnload(timestamp = Date.now()): void { persistAwayStartIfUnset(this.state, this.peerId, timestamp); }
-
-  leaveRoom(): void {
-    if (!this.state.roomId) return;
-    releaseScreenWakeLock().catch(() => {});
-    this.emit('PEER_LEAVE');
-    this.stopHeartbeat();
-    this.clearSyncDebounce();
-    clearRoomSession(this.state, this.peerId);
-    roomChannel.disconnect();
-    this.peerId = Math.random().toString(36).substring(2, 9);
-    this.resetState();
-    this.notify();
-  }
-
-  togglePauseRoom(): void {
-    if (!this.state.roomId || !this.state.isHost) return;
-    this.state.isPaused = !this.state.isPaused;
-    this.notify();
-    this.emit('ROOM_PAUSE', { isPaused: this.state.isPaused });
-    this.scheduleSyncBroadcast();
-  }
-
-  closeRoomGlobally(): void {
-    if (!this.state.roomId || !this.state.isHost) return;
-    this.emit('ROOM_CLOSE');
-    this.leaveRoom();
-  }
-
-  awardStarToStudent(studentId: string, studentName: string): void {
-    if (!this.state.roomId || !this.state.isHost) return;
-    this.emit('AWARD_STAR', { studentId: studentId.trim(), studentName: studentName.trim() });
-  }
-
-  broadcastAnnouncement(text: string): void {
-    const cleanText = text.trim();
-    if (!this.state.roomId || !this.state.isHost || !cleanText) return;
-    this.emit('BROADCAST_ANNOUNCEMENT', { text: cleanText });
-  }
-
-  demoteToStudent(): void {
-    if (!this.state.isHost) return;
-    demoteHostToStudent(this.state, this.peerId);
-    const myPeer = this.state.participants.find((p) => p.id === this.peerId);
-    const joinedAt = myPeer?.joinedAt ?? Date.now();
-    this.emit('STUDENT_HEARTBEAT', buildMyStatsPayload(this.state, this.peerId, joinedAt));
-    this.notify();
-  }
-
-  callTeacherHelp(): void {
-    const now = Date.now();
-    if (!applyHelpCallState(this.state, this.peerId, now)) return;
-    this.notify();
-    this.emit('HELP_CALL', undefined, now);
-  }
-
-  resolveTeacherHelp(feedId: string, studentIdOrName: string): void {
-    if (!applyResolveHelpState(this.state, this.peerId, feedId, studentIdOrName)) return;
-    this.notify();
-    this.emit('HELP_RESOLVED', { feedId, studentId: studentIdOrName, studentName: studentIdOrName });
-  }
-
-  notifyFocusLost(timestamp = Date.now()): void {
-    if (!applyFocusLostState(this.state, this.peerId, timestamp)) return;
-    this.notify();
-    this.emit('FOCUS_LOST', undefined, timestamp);
-  }
-
-  notifyFocusRestored(durationMs: number = 0, timestamp = Date.now()): void {
-    const payload = applyFocusRestoredState(this.state, this.peerId, durationMs, timestamp);
-    if (!payload) return;
-    this.notify();
-    this.emit('FOCUS_RESTORED', payload, timestamp);
-  }
-
-  logStudentAnswer(questionId: number, isCorrect: boolean): void {
-    const payload = applyStudentAnswer(this.state, this.peerId, this.answeredQuestions, questionId, isCorrect);
-    if (!payload) return;
-    this.notify();
-    this.emit('STUDENT_ANSWER_LOG', payload);
-  }
-
-  revokeStudentAnswer(questionId: number): void {
-    const payload = applyRevokeStudentAnswer(this.state, this.peerId, this.answeredQuestions, questionId);
-    if (!payload) return;
-    this.notify();
-    this.emit('STUDENT_ANSWER_LOG', payload);
-  }
-
-  private emit(type: RoomMessageType, payload?: RoomMessagePayload, timestamp = Date.now()): void {
-    if (!this.state.roomId) return;
-    roomChannel.send({ type, roomId: this.state.roomId, senderId: this.peerId, senderName: this.state.userName, isHost: this.state.isHost, timestamp, payload });
-  }
-
-  private scheduleSyncBroadcast(): void {
-    if (this.syncDebounceTimer) return;
-    this.syncDebounceTimer = setTimeout(() => {
-      this.syncDebounceTimer = null;
-      this.broadcastRoomSync();
-    }, 150);
-  }
-
-  private broadcastRoomSync(): void {
-    this.emit('ROOM_SYNC', { participants: this.state.participants, studentStats: this.state.studentStats, isPaused: this.state.isPaused });
-  }
-
-  private handleIncoming(msg: RoomMessage): void {
-    handleIncomingRoomMessage(
-      {
-        peerId: this.peerId,
-        roomId: this.state.roomId,
-        userName: this.state.userName,
-        isHost: this.state.isHost,
-        isPaused: this.state.isPaused,
-        participants: this.state.participants,
-        feedItems: this.state.feedItems,
-        studentStats: this.state.studentStats,
-        helpRequested: this.state.helpRequested,
-        setHelpRequested: (val: boolean) => { this.state.helpRequested = val; this.notify(); },
-        setPaused: (val: boolean) => {
-          const wasPaused = this.state.isPaused;
-          this.state.isPaused = val;
-          this.notify();
-          if (wasPaused && !val) { for (const cb of this.resumeListeners) cb(); }
-        },
-        demoteToStudent: () => this.demoteToStudent(),
-        leaveRoom: () => this.leaveRoom(),
-        scheduleSyncBroadcast: () => this.scheduleSyncBroadcast(),
-        notify: () => this.notify(),
-      },
-      msg
-    );
-  }
-
-  private startHeartbeat(): void {
-    this.stopHeartbeat();
-    this.heartbeatTimer = setInterval(() => {
-      if (!this.state.roomId) return;
-      const now = Date.now();
-      if (this.state.isHost) {
-        if (checkOfflineStudents(this.state, now)) this.notify();
-        this.broadcastRoomSync();
-      } else {
-        const myPeer = this.state.participants.find((p) => p.id === this.peerId);
-        this.emit('STUDENT_HEARTBEAT', buildMyStatsPayload(this.state, this.peerId, myPeer?.joinedAt ?? now), now);
+    let releaseTab: (() => void) | undefined;
+    try {
+      const auth = await ensureFreshSession();
+      if (!auth || generation !== this.generation) throw new Error('Odaya girmek için oturum açın.');
+      const lock = await claimClassroomTab(auth.user.id);
+      releaseTab = lock.release;
+      if (generation !== this.generation || getActiveSession()?.user.id !== auth.user.id) {
+        throw new Error('Oturum değişti; odaya giriş iptal edildi.');
       }
-    }, HEARTBEAT_INTERVAL_MS);
-  }
-
-  private stopHeartbeat(): void {
-    if (this.heartbeatTimer) { clearInterval(this.heartbeatTimer); this.heartbeatTimer = null; }
-  }
-
-  private clearSyncDebounce(): void {
-    if (this.syncDebounceTimer) { clearTimeout(this.syncDebounceTimer); this.syncDebounceTimer = null; }
-  }
-
-  private resetState(): void {
-    this.answeredQuestions.clear();
-    this.state = { ...INITIAL_ROOM_STATE, participants: [], feedItems: [], studentStats: {} };
-  }
-
-  private notify(): void {
-    if (this.state.roomId && this.state.isHost) {
-      persistCurrentRoomSession(this.state, this.peerId);
+      const connectionId = (lock.canResume && saved?.connectionId) || crypto.randomUUID();
+      this.visible = typeof document === 'undefined' || !document.hidden;
+      this.controller = new AbortController();
+      const snapshot = await fetchRoomSnapshot(auth, 'join_or_create_room', {
+        p_name: name, p_connection_id: connectionId, p_visible: this.visible,
+        p_room_id: saved?.roomId ?? null,
+      }, { signal: this.controller.signal });
+      if (generation !== this.generation || getActiveSession()?.user.id !== auth.user.id) {
+        void classroomRpc(auth, 'leave_room', { p_room_id: snapshot.roomId, p_connection_id: connectionId }).catch(() => {});
+        throw new Error('Oturum değişti; odaya giriş iptal edildi.');
+      }
+      if (snapshot.closed) throw new ClassroomError('ROOM_CLOSED', 'Bu oda sonlandırılmış.');
+      this.session = { userId: auth.user.id, connectionId, roomId: snapshot.roomId,
+        roomName: snapshot.roomName, sequence: snapshot.sequence };
+      this.releaseTab = releaseTab;
+      this.pending = loadPendingAnswers(auth.user.id, snapshot.roomId);
+      this.revision = Math.max(0, ...Object.values(this.pending).map(p => p.revision));
+      saveRoomSession(this.session);
+      this.applySnapshot(snapshot, true);
+      this.schedule(Object.keys(this.pending).length ? 0 : undefined);
+    } catch (error) {
+      releaseTab?.();
+      if (generation !== this.generation) throw error;
+      this.state = { ...emptyRoomState(), connection: 'error', error: this.errorText(error) };
+      this.notify();
+      throw error;
     }
-    for (const listener of this.listeners) listener(this.state);
   }
+
+  async restoreSessionIfActive(): Promise<boolean> {
+    const userId = getActiveSession()?.user.id;
+    if (!userId) return false;
+    const saved = loadRoomSession(userId);
+    if (!saved) return false;
+    try { await this.join(saved.roomName, saved); return Boolean(this.session); }
+    catch (error) {
+      if (error instanceof ClassroomError && ['ROOM_CLOSED', 'CONNECTION_REPLACED', 'FORBIDDEN'].includes(error.code)) {
+        clearRoomSession();
+      }
+      return false;
+    }
+  }
+
+  refresh(keepalive = false): Promise<void> {
+    if (this.flight) return this.flight;
+    if (!this.session) return Promise.resolve();
+    this.stopTimer();
+    const generation = this.generation;
+    this.flight = this.poll(keepalive).finally(() => {
+      this.flight = null;
+      if (generation === this.generation) this.schedule(this.dirtyVisibility || this.eventBacklog ? 0 : undefined);
+    });
+    return this.flight;
+  }
+
+  private async poll(keepalive: boolean): Promise<void> {
+    const session = this.session;
+    if (!session) return;
+    const generation = this.generation;
+    try {
+      const auth = await ensureFreshSession();
+      if (generation !== this.generation) return;
+      if (!auth || auth.user.id !== session.userId) throw new Error('Oturum doğrulanamadı; bağlantı tekrar denenecek.');
+      const sent = { ...this.pending };
+      const visible = this.visible;
+      this.dirtyVisibility = false;
+      session.sequence++;
+      saveRoomSession(session);
+      this.controller = new AbortController();
+      const snapshot = await fetchRoomSnapshot(auth, 'update_room_member', {
+        ...this.args(session), p_sequence: session.sequence, p_visible: visible,
+        p_after_event: this.state.isHost ? this.eventCursor.toString() : null,
+        p_answers: Object.fromEntries(Object.entries(sent).map(([id, p]) => [id, p.value])),
+      }, { signal: this.controller.signal, keepalive });
+      if (generation !== this.generation || getActiveSession()?.user.id !== session.userId) return;
+      if (snapshot.closed) {
+        this.disconnect();
+        showRoomToast('Oda sonlandırıldı', 'Bireysel çalışmaya devam edebilirsiniz.');
+        return;
+      }
+      this.pending = acknowledgeAnswers(this.pending, sent);
+      this.persistPending();
+      this.failures = 0;
+      this.eventBacklog = this.state.isHost && snapshot.events.length === 100;
+      this.applySnapshot(snapshot);
+    } catch (error) {
+      if (generation !== this.generation) return;
+      this.failures++;
+      this.eventBacklog = false;
+      this.dirtyVisibility = false;
+      const fatal = error instanceof ClassroomError &&
+        ['ROOM_CLOSED', 'CONNECTION_REPLACED', 'FORBIDDEN', 'AUTH_REQUIRED'].includes(error.code);
+      if (fatal) this.disconnect();
+      this.state = { ...this.state, connection: fatal ? 'error' : 'reconnecting', error: this.errorText(error) };
+      this.notify();
+    }
+  }
+
+  setVisibility(visible: boolean): void {
+    if (!this.session || this.visible === visible) return;
+    this.visible = visible;
+    this.dirtyVisibility = true;
+    void this.refresh(!visible);
+  }
+
+  logStudentAnswer(questionId: number, isCorrect: boolean): void { this.recordAnswer(questionId, isCorrect); }
+  revokeStudentAnswer(questionId: number): void { this.recordAnswer(questionId, null); }
+  private recordAnswer(questionId: number, value: boolean | null): void {
+    if (!this.session || this.state.isHost || !Number.isSafeInteger(questionId) || questionId < 1) return;
+    this.pending[String(questionId)] = { value, revision: ++this.revision };
+    this.persistPending();
+    this.schedule(150);
+  }
+
+  async broadcastAnnouncement(text: string): Promise<void> {
+    if (!this.state.isHost || !text.trim() || text.trim().length > 280) throw new Error('Duyuru 1–280 karakter olmalıdır.');
+    await this.command('publish_room_announcement', { p_text: text.trim() });
+  }
+  async closeRoomGlobally(): Promise<void> {
+    if (!this.state.isHost) throw new Error('Yalnızca öğretmen odayı bitirebilir.');
+    await this.command('close_classroom_room');
+    this.disconnect();
+  }
+  private async command(name: ClassroomRpc, extra: Record<string, unknown> = {}): Promise<void> {
+    while (this.flight) await this.flight;
+    this.stopTimer();
+    const session = this.session;
+    if (!session) throw new Error('Aktif oda bulunamadı.');
+    const generation = this.generation;
+    this.flight = (async () => {
+      const auth = await ensureFreshSession();
+      if (!auth || auth.user.id !== session.userId || generation !== this.generation) throw new Error('Oturum açmanız gerekiyor.');
+      await classroomRpc(auth, name, { ...this.args(session), ...extra });
+    })();
+    try { await this.flight; }
+    finally { this.flight = null; if (generation === this.generation) this.schedule(0); }
+  }
+
+  async leaveRoom(): Promise<void> {
+    await this.refresh();
+    const session = this.session;
+    const auth = getActiveSession();
+    if (Object.keys(this.pending).length && this.storageFailed) {
+      throw new Error('Cevaplar kaydedilemedi. Bağlantıyı düzeltip tekrar deneyin.');
+    }
+    if (Object.keys(this.pending).length) showRoomToast('Gönderilemeyen cevaplar', 'Cevaplar bu cihazda saklandı; aynı odaya dönünce tekrar gönderilecek.');
+    this.disconnect();
+    if (session && auth?.user.id === session.userId) {
+      try { await classroomRpc(auth, 'leave_room', this.args(session), { keepalive: true }); }
+      catch { showRoomToast('Bağlantı yok', 'Ayrılma sunucuda bağlantı zaman aşımıyla görünecek.'); }
+    }
+  }
+
+  disconnect(auth?: AuthSession): void {
+    const session = this.session;
+    this.generation++;
+    this.stopTimer();
+    this.controller?.abort();
+    this.releaseTab?.();
+    this.releaseTab = null;
+    this.session = null;
+    this.pending = {};
+    this.failures = 0;
+    this.dirtyVisibility = false;
+    this.eventCursor = 0n;
+    this.eventBacklog = false;
+    this.announcementId = '';
+    this.storageFailed = false;
+    clearRoomSession();
+    this.state = emptyRoomState();
+    this.notify();
+    if (auth && session?.userId === auth.user.id) {
+      void classroomRpc(auth, 'leave_room', this.args(session), { keepalive: true }).catch(() => {});
+    }
+  }
+
+  private applySnapshot(snapshot: RoomSnapshot, initial = false): void {
+    if (!this.session) return;
+    const previousFeed = this.state.feedItems;
+    this.state = snapshotToState(snapshot, this.session.userId);
+    if (!initial && this.state.isHost) {
+      const combined = new Map([...previousFeed, ...this.state.feedItems].map(item => [item.id, item]));
+      this.state.feedItems = Array.from(combined.values()).slice(-100);
+    }
+    if (this.storageFailed) this.state.error = 'Cihazda kayıt yapılamadı. Bu sayfayı kapatmadan bağlantınızı kontrol edin.';
+    for (const event of snapshot.events) {
+      const id = BigInt(event.id);
+      if (!initial && id > this.eventCursor && this.state.isHost && event.userId !== snapshot.hostId) {
+        showRoomToast(roomEventLabels[event.type], event.name);
+      }
+      if (id > this.eventCursor) this.eventCursor = id;
+    }
+    const announcement = snapshot.announcement;
+    if (!initial && announcement && announcement.id !== this.announcementId && !this.state.isHost) {
+      showRoomToast('Öğretmen duyurusu', announcement.text);
+    }
+    this.announcementId = announcement?.id ?? '';
+    this.notify();
+  }
+  private args(session: RoomSession): Record<string, unknown> {
+    return { p_room_id: session.roomId, p_connection_id: session.connectionId };
+  }
+  private persistPending(): void {
+    if (!this.session) return;
+    this.storageFailed = !savePendingAnswers(this.session.userId, this.session.roomId, this.pending);
+    if (this.storageFailed) {
+      this.state.error = 'Cihazda kayıt yapılamadı. Bu sayfayı kapatmadan bağlantınızı kontrol edin.';
+      this.notify();
+    }
+  }
+  private errorText(error: unknown): string { return error instanceof Error ? error.message : 'Sınıf bağlantısı kurulamadı.'; }
+  private stopTimer(): void { if (this.timer) clearTimeout(this.timer); this.timer = null; }
+  private schedule(delay?: number): void {
+    this.stopTimer();
+    if (!this.autoPoll || !this.session) return;
+    const base = this.state.isHost ? 2000 : 5000;
+    this.timer = setTimeout(() => { void this.refresh(); }, delay ?? Math.min(30000, base * 2 ** this.failures));
+  }
+  private notify(): void { for (const listener of this.listeners) listener(this.state); }
 }
 
 export const roomService = new RoomService();
+onStateChange('auth:signout', payload => {
+  const auth = payload && typeof payload === 'object' && 'accessToken' in payload ? payload as AuthSession : undefined;
+  roomService.disconnect(auth);
+});
+if (typeof window !== 'undefined') {
+  window.addEventListener('online', () => { void roomService.refresh(); });
+  window.addEventListener('storage', () => {
+    if (roomService.getPeerId() && roomService.getPeerId() !== getActiveSession()?.user.id) roomService.disconnect();
+  });
+}

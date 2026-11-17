@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { isolateRemoteData } from './fixtures/network.js';
 import { StorageKeys } from '../../src/shared/storage-keys.ts';
 
 const TEST_AUTH_SESSION = JSON.stringify({
@@ -9,6 +10,7 @@ const TEST_AUTH_SESSION = JSON.stringify({
 });
 
 test.beforeEach(async ({ page }) => {
+  await isolateRemoteData(page);
   await page.addInitScript(({ authKey, sessionJson }) => {
     if (!localStorage.getItem(authKey)) localStorage.setItem(authKey, sessionJson);
   }, { authKey: StorageKeys.AUTH_SESSION, sessionJson: TEST_AUTH_SESSION });

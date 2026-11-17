@@ -25,6 +25,7 @@ export interface UserProgressData {
 export interface AuthResponse<T> {
   data: T | null;
   error: string | null;
+  invalidRefreshToken?: boolean;
 }
 
 function parseUserFromGoTrue(raw: Record<string, unknown>): AuthUser {
@@ -78,7 +79,11 @@ async function postAuthToken(
       const msg = typeof json.error_description === 'string'
         ? json.error_description
         : (typeof json.msg === 'string' ? json.msg : 'İşlem başarısız.');
-      return { data: null, error: msg };
+      const code = typeof json.error_code === 'string' ? json.error_code : json.error;
+      const invalidRefreshToken = endpoint.includes('grant_type=refresh_token') && res.status === 400 &&
+        (code === 'refresh_token_not_found' || code === 'refresh_token_already_used' ||
+          code === 'invalid_grant' || json.error_description === 'invalid_grant');
+      return { data: null, error: msg, invalidRefreshToken };
     }
     return { data: parseSessionFromGoTrue(json), error: null };
   } catch (err) {

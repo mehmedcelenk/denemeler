@@ -199,7 +199,7 @@ test('handleSignOut: oturum kapatıldığında cevaplar, yıldızlar, oturum ve 
       assert.deepEqual(state.eliminatedWrongChoices, {});
       assert.equal(readString(StorageKeys.USER_NAME), '');
       assert.equal(readString(StorageKeys.RESUME_STATE), '');
-      assert.equal(readString(StorageKeys.CLASSROOM_SESSION), '');
+      assert.equal(readString(StorageKeys.CLASSROOM_SESSION), 'room-session-1'); // Eski oda kaydı geçişte korunur.
       assert.equal(state.waterStreak, 0);
       assert.deepEqual(state.aiExplanations, {});
     } finally {

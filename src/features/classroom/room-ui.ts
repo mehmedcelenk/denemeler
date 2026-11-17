@@ -1,166 +1,107 @@
-import { markStudentStarred, updateTeacherFeed, updateTeacherStats } from './teacher-view.ts';
+import { updateTeacherFeed, updateTeacherStats } from './teacher-view.ts';
 import { registerActions } from '../../app/actions.ts';
-import { escapeHtml } from '../../shared/escape.ts';
 import { store, notifyStateChange } from '../../app/state.ts';
-import { roomService, type RoomState } from './room-service.ts';
+import { roomService } from './room-service.ts';
+import type { RoomState } from './types.ts';
 import { initFocusTracker } from './focus-tracker.ts';
-import { calculateStudentRank } from './ranking.ts';
 import { initRoomAnswerEvents } from './room-answer-events.ts';
 import { initClassroomCardHook } from './card-hook.ts';
 
-let isInitialized = false;
-let renderScheduled = false;
-let lastHeavyRenderAt = 0;
-let trailingRenderTimer: ReturnType<typeof setTimeout> | null = null;
+let initialized = false;
+let lastMetrics = '';
+let actionError = '';
 
 export function initRoomFeature(): void {
   initRoomAnswerEvents();
   initClassroomCardHook();
-  if (isInitialized || typeof document === 'undefined') return;
-  isInitialized = true;
-
+  if (initialized || typeof document === 'undefined') return;
+  initialized = true;
   initFocusTracker();
   setupRoomEvents();
-  roomService.restoreSessionIfActive();
-
-  roomService.subscribe((state) => {
-    if (typeof document !== 'undefined') {
-      document.body.classList.toggle('in-room', !!state.roomId);
-    }
-    const isRoomActive = Boolean(state.roomId);
-    store.setIsRoomActive(isRoomActive);
-    const roomQStats: Record<number, { correct: number; wrong: number }> = {};
-    if (isRoomActive) {
-      for (const s of Object.values(state.studentStats)) {
-        if (s.answers) {
-          for (const [qidStr, isCorrect] of Object.entries(s.answers)) {
-            const qid = Number(qidStr);
-            if (!roomQStats[qid]) roomQStats[qid] = { correct: 0, wrong: 0 };
-            if (isCorrect) roomQStats[qid].correct++;
-            else roomQStats[qid].wrong++;
-          }
-        }
-      }
-    }
-    store.setRoomQuestionStats(roomQStats);
-    notifyStateChange('filter:updated');
-
-    if (!state.roomId) {
-      closeTeacherDrawer();
-      closeStudentDrawer();
-    } else if (state.isHost) {
-      closeStudentDrawer();
-    } else {
-      closeTeacherDrawer();
-    }
-    updateTopRoomPill(state);
-    updatePauseOverlay(state);
-    updateStudentDrawer(state);
-    scheduleHeavyListRender();
-  });
+  roomService.subscribe(renderRoom);
 }
 
-function scheduleHeavyListRender(): void {
-  const now = Date.now();
-  const elapsed = now - lastHeavyRenderAt;
-
-  if (elapsed >= 120 && !renderScheduled) {
-    lastHeavyRenderAt = now;
-    const current = roomService.getState();
-    updateTeacherFeed(current);
-    updateTeacherStats(current);
-    return;
+function renderRoom(state: RoomState): void {
+  document.body.classList.toggle('in-room', Boolean(state.roomId));
+  const roomStats: Record<number, { correct: number; wrong: number }> = {};
+  if (state.roomId && state.isHost) {
+    for (const student of Object.values(state.studentStats)) {
+      for (const [questionId, correct] of Object.entries(student.answers)) {
+        const id = Number(questionId);
+        const stat = roomStats[id] ?? { correct: 0, wrong: 0 };
+        if (correct) stat.correct++;
+        else stat.wrong++;
+        roomStats[id] = stat;
+      }
+    }
   }
-
-  if (trailingRenderTimer) return;
-  renderScheduled = true;
-  trailingRenderTimer = setTimeout(() => {
-    trailingRenderTimer = null;
-    renderScheduled = false;
-    lastHeavyRenderAt = Date.now();
-    const latest = roomService.getState();
-    updateTeacherFeed(latest);
-    updateTeacherStats(latest);
-  }, Math.max(20, 120 - elapsed));
+  const metrics = JSON.stringify([state.roomId, roomStats]);
+  if (metrics !== lastMetrics) {
+    lastMetrics = metrics;
+    store.setIsRoomActive(Boolean(state.roomId));
+    store.setRoomQuestionStats(roomStats);
+    notifyStateChange('filter:updated');
+  }
+  if (!state.roomId || !state.isHost) closeTeacherDrawer();
+  if (!state.roomId || state.isHost) closeStudentDrawer();
+  updateTopRoomPill(state);
+  renderStatus(state);
+  updateStudentDrawer(state);
+  updateTeacherFeed(state);
+  updateTeacherStats(state);
 }
 
 function updateTopRoomPill(state: RoomState): void {
   const pill = document.getElementById('topRoomPill');
   if (!pill) return;
-  pill.style.display = state.roomId ? 'inline-flex' : 'none';
-  if (!state.roomId) return;
-  const textEl = pill.querySelector('.room-pill-text');
-  if (!textEl) return;
-
-  const safeRoomId = escapeHtml(state.roomId);
-
-  if (state.isHost) {
-    const students = Object.values(state.studentStats);
-    const totalStudents = students.length;
-    const openExitIds = new Set(
-      state.feedItems
-        .filter((f) => (f.type === 'FOCUS_LOST' || f.type === 'LEAVE') && !f.returnedAt)
-        .map((f) => f.studentId)
-    );
-    const offlineCount = students.filter(
-      (s) => !s.isOnline || openExitIds.has(s.id)
-    ).length;
-    const activeCount = Math.max(0, totalStudents - offlineCount);
-
-    const pauseTag = state.isPaused ? ' • ⏸️ Mola' : '';
-    if (offlineCount > 0) {
-      textEl.innerHTML = `${safeRoomId}${pauseTag} • 👥 ${activeCount} <span class="room-pill-offline">🔴 ${offlineCount}</span>`;
-    } else {
-      textEl.innerHTML = `${safeRoomId}${pauseTag} • 👥 ${totalStudents}`;
-    }
-  } else {
-    textEl.innerHTML = `${safeRoomId} • 👥 ${state.participants.length}`;
+  pill.style.display = state.roomId || state.error ? 'inline-flex' : 'none';
+  pill.title = state.error || 'Sınıf oturumu';
+  pill.dataset.connection = state.connection;
+  pill.dataset.role = state.isHost ? 'host' : 'participant';
+  const text = pill.querySelector('.room-pill-text');
+  if (text) {
+    const role = state.isHost ? 'Öğretmen' : 'Katılımcı';
+    const pending = state.connection === 'connected' ? '' : ' • Bağlantı bekleniyor';
+    text.textContent = state.roomId
+      ? `${state.roomName} • ${role} • ${state.participantCount} kişi${pending}`
+      : state.error || '';
   }
 }
 
-function updatePauseOverlay(state: RoomState): void {
-  const overlay = document.getElementById('roomPauseOverlay');
-  if (overlay) {
-    overlay.style.display = state.roomId && state.isPaused && !state.isHost ? 'flex' : 'none';
-  }
-  const btnPause = document.getElementById('btnTogglePauseRoom');
-  if (btnPause) {
-    btnPause.textContent = state.isPaused ? '▶️ Devam Et' : '⏸️ Durdur';
-  }
+function renderStatus(state: RoomState): void {
+  const labels: Record<RoomState['connection'], string> = {
+    idle: 'Oda bağlantısı kapalı',
+    connecting: 'Odaya bağlanılıyor…',
+    connected: 'Bağlı',
+    reconnecting: 'Bağlantı bekleniyor; kayıtlar bu cihazda korunuyor.',
+    error: 'Oda bağlantısı kurulamadı.',
+  };
+  document.querySelectorAll<HTMLElement>('[data-role="room-connection"]').forEach(el => {
+    el.textContent = labels[state.connection];
+  });
+  document.querySelectorAll<HTMLElement>('[data-role="room-error"]').forEach(el => {
+    el.textContent = actionError || state.error || '';
+  });
+  document.querySelectorAll<HTMLElement>('[data-role="room-announcement"]').forEach(el => {
+    el.textContent = state.announcement?.text || 'Henüz duyuru yok.';
+  });
 }
 
 function updateStudentDrawer(state: RoomState): void {
-  const titleEl = document.getElementById('studentDrawerTitle');
-  if (titleEl && state.roomId) {
-    titleEl.textContent = `${state.roomId} • ${state.userName}`;
-  }
-
-  const rankTextEl = document.getElementById('studentRankText');
-  if (rankTextEl && state.roomId) {
-    const { rank, total } = calculateStudentRank(roomService.getPeerId(), state.studentStats);
-    rankTextEl.textContent = `Sıralaman: ${rank}. / ${total} kişi`;
-  }
-
-  const btnCall = document.getElementById('btnCallTeacher');
-  if (btnCall) {
-    if (state.helpRequested) {
-      btnCall.classList.add('called');
-      btnCall.title = 'Hoca Çağrıldı (Hoca gelince sıfırlanır)';
-    } else {
-      btnCall.classList.remove('called');
-      btnCall.title = 'Hoca Çağır';
-    }
+  const title = document.getElementById('studentDrawerTitle');
+  if (title) title.textContent = `${state.roomName} • ${state.userName}`;
+  const summary = document.getElementById('studentRoomSummary');
+  const self = state.studentStats[roomService.getPeerId()];
+  if (summary) {
+    summary.textContent = `${state.participantCount} kişi • ${self?.correctCount ?? 0} doğru • ${self?.incorrectCount ?? 0} yanlış`;
   }
 }
 
 export function toggleRoomDrawer(): void {
   const state = roomService.getState();
   if (!state.roomId) return;
-
-  const targetId = state.isHost ? 'teacherDrawerOverlay' : 'studentDrawerOverlay';
-  const drawer = document.getElementById(targetId);
-  if (!drawer) return;
-  drawer.style.display = drawer.style.display === 'flex' ? 'none' : 'flex';
+  const drawer = document.getElementById(state.isHost ? 'teacherDrawerOverlay' : 'studentDrawerOverlay');
+  if (drawer) drawer.style.display = drawer.style.display === 'flex' ? 'none' : 'flex';
 }
 
 export function closeTeacherDrawer(): void {
@@ -173,96 +114,65 @@ export function closeStudentDrawer(): void {
   if (drawer) drawer.style.display = 'none';
 }
 
-function handleTabSwitch(tabName: string): void {
-  const feedContent = document.getElementById('roomTabContentFeed');
-  const statsContent = document.getElementById('roomTabContentStats');
-  const tabButtons = document.querySelectorAll('.btn-drawer-tab');
-
-  tabButtons.forEach((btn) => {
-    btn.classList.toggle('active', (btn as HTMLElement).dataset.tab === tabName);
-  });
-
-  if (feedContent && statsContent) {
-    feedContent.style.display = tabName === 'feed' ? 'block' : 'none';
-    statsContent.style.display = tabName === 'stats' ? 'block' : 'none';
+function switchTab(tab: string): void {
+  for (const name of ['feed', 'stats']) {
+    const content = document.getElementById(name === 'feed' ? 'roomTabContentFeed' : 'roomTabContentStats');
+    if (content) content.style.display = name === tab ? 'block' : 'none';
+    document.querySelectorAll<HTMLElement>(`[data-action="switch-room-tab"][data-tab="${name}"]`).forEach(el => {
+      el.classList.toggle('active', name === tab);
+      el.setAttribute('aria-selected', String(name === tab));
+    });
   }
 }
 
-function submitBroadcastAnnouncement(): void {
-  if (!roomService.isHost()) return;
+async function runRoomAction(element: HTMLElement | null, action: () => Promise<void>): Promise<void> {
+  const button = element instanceof HTMLButtonElement ? element : null;
+  if (button?.disabled) return;
+  if (button) button.disabled = true;
+  actionError = '';
+  renderStatus(roomService.getState());
+  try {
+    await action();
+  } catch (error) {
+    actionError = error instanceof Error ? error.message : 'İşlem tamamlanamadı. Yeniden deneyin.';
+  } finally {
+    if (button) button.disabled = false;
+    renderStatus(roomService.getState());
+  }
+}
+
+async function sendAnnouncement(button: HTMLElement | null): Promise<void> {
   const input = document.getElementById('inputBroadcastMsg') as HTMLInputElement | null;
   const text = input?.value.trim();
-  if (!input || !text) return;
-  roomService.broadcastAnnouncement(text);
-  input.value = '';
-  const btn = document.querySelector<HTMLButtonElement>('[data-action="send-broadcast-message"]');
-  if (btn) {
-    const prev = btn.textContent;
-    btn.textContent = '✓ Gönderildi';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = prev;
-      btn.disabled = false;
-    }, 1200);
-  }
+  if (!input || !text || !roomService.isHost()) return;
+  await runRoomAction(button, async () => {
+    await roomService.broadcastAnnouncement(text);
+    input.value = '';
+  });
 }
 
 function setupRoomEvents(): void {
-  if (typeof document === 'undefined') return;
   registerActions({
     'toggle-teacher-drawer': () => toggleRoomDrawer(),
     'close-teacher-drawer': () => closeTeacherDrawer(),
     'close-student-drawer': () => closeStudentDrawer(),
-    'switch-room-tab': el => {
-      if (el.dataset.tab) handleTabSwitch(el.dataset.tab);
+    'switch-room-tab': el => switchTab(el.dataset.tab || 'feed'),
+    'send-broadcast-message': el => sendAnnouncement(el),
+    'close-room-globally': el => {
+      if (!roomService.isHost() || !confirm('Odayı herkes için bitirmek istiyor musunuz?')) return;
+      return runRoomAction(el, () => roomService.closeRoomGlobally());
     },
-    'call-teacher-help': () => roomService.callTeacherHelp(),
-    'resolve-help': el => {
-      if (el.dataset.id && (el.dataset.studentId || el.dataset.name)) {
-        roomService.resolveTeacherHelp(el.dataset.id, el.dataset.studentId || el.dataset.name || '');
-      }
-    },
-    'award-star': el => {
-      if (!roomService.isHost() || !(el instanceof HTMLButtonElement) || !(el.dataset.id || el.dataset.name)) return;
-      const studentId = el.dataset.id || '';
-      const studentName = el.dataset.name || '';
-      markStudentStarred(studentId || studentName, 1400);
-      el.textContent = '⭐ Gönderildi';
-      el.disabled = true;
-      setTimeout(() => {
-        updateTeacherStats(roomService.getState());
-      }, 1450);
-      roomService.awardStarToStudent(studentId, studentName);
-    },
-    'send-broadcast-message': () => submitBroadcastAnnouncement(),
-    'toggle-pause-room': () => {
-      if (!roomService.isHost()) return;
-      roomService.togglePauseRoom();
-    },
-    'close-room-globally': () => {
-      if (!roomService.isHost()) return;
-      if (confirm('Tüm sınıf için oturumu sonlandırmak istediğinize emin misiniz?')) {
-        roomService.closeRoomGlobally();
-        closeTeacherDrawer();
-      }
-    },
-    'leave-current-room': () => {
-      roomService.leaveRoom();
-      closeTeacherDrawer();
-      closeStudentDrawer();
+    'leave-current-room': el => runRoomAction(el, async () => {
+      await roomService.leaveRoom();
       document.getElementById('consoleMenuPopup')?.classList.remove('open');
       document.querySelector<HTMLElement>('[data-action="welcome-home"]')?.click();
-    },
+    }),
   });
-
-  const broadcastInput = document.getElementById('inputBroadcastMsg');
-  broadcastInput?.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-      event.preventDefault();
-      submitBroadcastAnnouncement();
-    }
+  document.getElementById('inputBroadcastMsg')?.addEventListener('keydown', event => {
+    if (event.key !== 'Enter') return;
+    event.preventDefault();
+    void sendAnnouncement(document.querySelector('[data-action="send-broadcast-message"]'));
   });
-
   document.addEventListener('click', event => {
     if (!(event.target instanceof HTMLElement)) return;
     if (event.target.id === 'teacherDrawerOverlay') closeTeacherDrawer();
