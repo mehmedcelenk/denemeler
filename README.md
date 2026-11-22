@@ -25,7 +25,7 @@ Tarayıcı testleri Linux'ta `/usr/bin/google-chrome` varsa onu kullanır. Yoksa
 
 ## Yayın
 
-Statik hosting'e **yalnızca `dist/` klasörünü** yayınla. `npm run deploy:surge` üretim çıktısını `soruanlatim.surge.sh` adresine gönderir. Build, Surge yönlendirmesi için `200.html` dosyasını güncel uygulama kabuğundan oluşturur. Kaynak kök dizinini yayınlamak geliştirme kaynaklarını yayınlar ve doğru üretim akışı değildir.
+Statik hosting'e **yalnızca `dist/` klasörünü** yayınla. `npm run deploy:surge` üretim çıktısını `anlatansorular.surge.sh` adresine gönderir. Build, Surge yönlendirmesi için `200.html` dosyasını güncel uygulama kabuğundan oluşturur. Kaynak kök dizinini yayınlamak geliştirme kaynaklarını yayınlar ve doğru üretim akışı değildir.
 
 Yeni alan adı ayrı bir tarayıcı kökenidir: eski adresteki yerel oturum, misafir ilerlemesi ve cihaz tercihleri yeni adrese otomatik taşınmaz. Hesaplı ilerleme yalnızca daha önce buluta eşitlenmişse aynı hesapla girişte geri yüklenebilir.
 

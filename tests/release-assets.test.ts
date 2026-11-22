@@ -37,3 +37,19 @@ test('yayın kontrolü eski dosyalar eksik veya değişmişse yayını durdurur'
     await assert.rejects(checkPreviousAssets(next, 'https://example.test/'), /HTTP 503/);
   } finally { globalThis.fetch = originalFetch; rmSync(dir, { recursive: true, force: true }); }
 });
+
+test('ilk yayın desteği yalnızca canlı alan 404 ve CENKS_INITIAL_DEPLOY açıksa izin verir', async () => {
+  const dir = mkdtempSync(join(tmpdir(), 'cenks-release-init-'));
+  const next = join(dir, 'next');
+  const originalFetch = globalThis.fetch;
+  try {
+    mkdirSync(join(next, 'assets'), { recursive: true });
+    writeFileSync(join(next, 'assets/app-new.js'), 'new');
+    globalThis.fetch = async () => new Response('not found', { status: 404 });
+    await assert.rejects(checkPreviousAssets(next, 'https://example.test/'), /CENKS_INITIAL_DEPLOY/);
+    await checkPreviousAssets(next, 'https://example.test/', undefined, true);
+    globalThis.fetch = async input => String(input).endsWith('release-assets.json')
+      ? new Response('not found', { status: 404 }) : new Response('<html>live</html>', { status: 200 });
+    await assert.rejects(checkPreviousAssets(next, 'https://example.test/', undefined, true), /CENKS_PREVIOUS_DIST/);
+  } finally { globalThis.fetch = originalFetch; rmSync(dir, { recursive: true, force: true }); }
+});
