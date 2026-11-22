@@ -42,7 +42,7 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Cevap ve ipucu gösterme | `src/features/answers/marking.ts` |
 | Cevapların kalıcı kaydı | `src/features/answers/storage.ts` |
 | Seri ve kombo bildirimleri | `src/features/gamification/combo-toast.ts` & `src/shared/combo.ts` |
-| Üst HUD maskot rozeti & profil seçimi | `src/features/mascot/init.ts`, `mascot-companion.ts`, `src/shared/mascot-types.ts`, `src/shared/mascot-svgs.ts`, `src/shared/mascot-lines.ts`, `src/data/mascot-profile.ts` & `src/styles/mascot.css` |
+| Maskot & Robokuş (HUD rozeti, 2D animasyon, tüneme & uçuş) | `src/features/mascot/init.ts`, `mascot-companion.ts`, `mascot-bird.ts`, `mascot-bird-scroll.ts`, `mascot-bird-flight.ts`, `mascot-bird-perch.ts`, `mascot-bird-dom.ts`, `src/shared/mascot-*.ts` & `src/styles/mascot*.css` |
 | Kelime balonu | `src/features/english/vocabulary.js` |
 | Kelime meali (satır arası çeviri) | `src/features/english/interlinear.ts` |
 | Çeviri/röntgen/tuzak açıklaması | `src/features/english/translations.js` |

@@ -1,4 +1,4 @@
-import type { ActiveMascotId, MascotMood } from './mascot-types.ts';
+import type { AnyMascotId, MascotMood } from './mascot-types.ts';
 
 export type TalkMood = Exclude<MascotMood, 'idle'>;
 
@@ -8,62 +8,78 @@ interface MascotPersonality {
 }
 
 /**
- * Üst HUD maskot rozeti için kısa Clash Royale tarzı emote replikleri.
+ * Maskotların kendine has kısa yansıma sesleri (konuşma balonu içeriği).
  * Saf veri modülüdür; DOM veya ağ çağrısı yapmaz.
  */
-const PERSONALITIES: Readonly<Record<ActiveMascotId, MascotPersonality>> = {
+const PERSONALITIES: Readonly<Record<AnyMascotId, MascotPersonality>> = {
   cat: {
     talkChance: { welcome: 0.85, correct: 0.78, wrong: 0.72 },
     lines: {
-      welcome: ['Miyav. Hazırım.', 'Mırrr, başla.'],
-      correct: ['Mırrr, temiz!', 'Miyav! İşte bu.', 'Pati gibi oturdu.', 'Refleks jilet.'],
-      wrong: ['Mıııv?! Tuzakmış.', 'Pati kaydı.', 'O şık bait’ti.'],
+      welcome: ['Miyav.', 'Mırrr...'],
+      correct: ['Mırrr!', 'Miyav!', 'Pırrr!'],
+      wrong: ['Mıııv?!', 'Fısss!', 'Miv...'],
     },
   },
   dog: {
     talkChance: { welcome: 0.85, correct: 0.8, wrong: 0.72 },
     lines: {
-      welcome: ['Hav! Hazırım!', 'Hadi başlayalım!'],
-      correct: ['Hav hav! İsabet!', 'Hav! GG!', 'İşte kombo!'],
-      wrong: ['Hav?! Ters köşe!', 'Fren tutmadı!', 'Sonraki bizim!'],
+      welcome: ['Hav!', 'Hav hav!'],
+      correct: ['Hav hav!', 'Haaav!', 'Vuuuf!'],
+      wrong: ['Hav?!', 'Hırrr...', 'Vıyk...'],
     },
   },
   fish: {
     talkChance: { welcome: 0.85, correct: 0.82, wrong: 0.72 },
     lines: {
-      welcome: ['Sonar açık.', 'Akıntı bizden yana.'],
-      correct: ['Torpido isabet!', 'Tam isabet!', 'Deniz temiz.'],
-      wrong: ['Akıntı terse vurdu.', 'Sonar şaştı.', 'Tuzak yemmiş.'],
+      welcome: ['Blup.', 'Blup blup.'],
+      correct: ['Blup blup!', 'Şılap!', 'Fıış!'],
+      wrong: ['Blup?!', 'Gluk...', 'Bloooup...'],
     },
   },
   bird: {
     talkChance: { welcome: 0.85, correct: 0.82, wrong: 0.72 },
     lines: {
-      welcome: ['Gıt gıt gıdak! Uçtum valla!', 'Gıdak, buradayım!'],
-      correct: ['Bıdak! Doğru çıktı!', 'Gıt gıt! Süper!', 'Uçan tavuk şovu!'],
-      wrong: ['Gıdak?! Yanlış yem!', 'Tüylerim kabardı!', 'Bi daha gagalayalım.'],
+      welcome: ['Gıt gıt gıdak!', 'Bıdaak!'],
+      correct: ['Bıdaak bıdaak!', 'Gıt gıt gıdaaak!', 'Gıdak!'],
+      wrong: ['Gıdak?!', 'Bıdak?!', 'Gııııt...'],
     },
   },
   owl: {
     talkChance: { welcome: 0.85, correct: 0.82, wrong: 0.72 },
     lines: {
-      welcome: ['Huu... gece görüşü açık.', 'Analiz başlıyor.'],
-      correct: ['Bilge hamle!', 'Huu! Kusursuz mantık.', 'Tam isabet.'],
-      wrong: ['Huu? Tuzak şıkmış.', 'Tekrar tarayalım.', 'Detayı kaçırma.'],
+      welcome: ['Biiip.', 'Vzzz-tık.'],
+      correct: ['Bip-bip!', 'Tıng!', 'Vzzz-bip!'],
+      wrong: ['Bzzzt!', 'Krrt...', 'Dıııt!'],
+    },
+  },
+  drone: {
+    talkChance: { welcome: 0.85, correct: 0.82, wrong: 0.72 },
+    lines: {
+      welcome: ['Vzzzz...', 'Fırrr...'],
+      correct: ['Vzzzt-bip!', 'Fııırr!', 'Bip-biiip!'],
+      wrong: ['Bzzzt?!', 'Vrrr-krrt...', 'Dıııt!'],
     },
   },
   raven: {
     talkChance: { welcome: 0.85, correct: 0.82, wrong: 0.72 },
     lines: {
-      welcome: ['Gak. Seni izliyorum.', 'Sakin ve net.'],
-      correct: ['Gak. Bunu önceden gördüm.', 'Akıllıca.', 'Tertemiz hamle.'],
-      wrong: ['Gak... tuzakmış.', 'Acele etme, tekrar oku.', 'Detayı kaçırdın.'],
+      welcome: ['Gak.', 'Gaaak.'],
+      correct: ['Gak gak!', 'Gaaak!', 'Krak!'],
+      wrong: ['Gak?!', 'Gaaak...', 'Krrr...'],
+    },
+  },
+  none: {
+    talkChance: { welcome: 0, correct: 0, wrong: 0 },
+    lines: {
+      welcome: [],
+      correct: [],
+      wrong: [],
     },
   },
 };
 
 export function pickMascotQuip(
-  mascotId: ActiveMascotId,
+  mascotId: AnyMascotId,
   mood: TalkMood,
   chanceRoll = Math.random(),
   indexRoll = Math.random(),

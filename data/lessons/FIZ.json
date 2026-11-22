@@ -1,0 +1,1520 @@
+[
+  {
+    "questionId": 199,
+    "subject": "FIZ",
+    "title": "Fiziğin Çalışma Alanlarını Ayıralım",
+    "explanation": "En basit haliyle fizik bilimi; maddenin, enerjinin ve bunlar arasındaki etkileşimlerin peşine düşer. Yani evrende gördüğümüz her şeyin \"nasıl çalıştığını\", kurallarını ve matematiksel düzenini araştıran bir daldır. İşin sırrı şurada: Eğer olay cansız maddelerle, kuvvetle, ışıkla veya enerjiyle ilgiliyse orada fizik vardır 🚀.\n\nŞimdi seçeneklere beraber bakalım. Cisimlerin nasıl hareket ettiği tamamen kuvvet ve hızla ilgilidir, yani fiziğin temelidir ⚡. Atomun yapısı ise maddenin en küçük yapı taşını incelediği için yine fiziğin ilgi alanına girer ⚛️. Ancak işin içine canlıların hücre yapıları girdiği an, rotamız fizikten çıkıp biyolojiye döner. Çoğu kişi hücreyi sadece kimyasal sanıp karıştırabilir ama hücrenin kendisi canlılığın temeliyken, fizik daha çok cansız dünyanın yasalarına odaklanır. Bu yüzden sadece I ve II doğrudur, cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "fizik bilimi",
+        "definition": "Maddeyi, enerjiyi ve bunların birbirleriyle olan ilişkilerini inceleyen temel bilim dalıdır.",
+        "example": "Bir topun yere düşme hızıyla ilgilenmek.",
+        "emoji": "🔭"
+      },
+      {
+        "term": "hücre yapıları",
+        "definition": "Canlı organizmaları oluşturan en küçük yapı birimidir ve biyolojinin konusudur.",
+        "example": "Bitki hücresi ile hayvan hücresi arasındaki farklar.",
+        "emoji": "🌿"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 200,
+    "subject": "FIZ",
+    "title": "Her Şeyi Kapsayan En Büyük Kavram: Evren",
+    "explanation": "Fiziğe giriş yaparken ilk bilmemiz gereken şey, çalıştığımız alanın sınırlarını belirlemektir. Olayın özü şu: Etrafımızdaki her şeyi, yani dokunabildiğimiz maddeleri, gördüğümüz ışığı, ısıyı ve gökyüzündeki tüm galaksileri tek bir torbaya doldurduğunuzu hayal edin. İşte bu devasa torbanın adı Evren'dir. Yani sadece Dünya değil, bildiğimiz ve henüz keşfetmediğimiz her şeyin toplamıdır 🌌.\n\nSoruda bizden \"bütün\" gök cisimlerini, maddenin ve enerjinin tamamını istiyor. Burada dikkat etmen gereken nokta, parça ile bütünü karıştırmamak. Mesela gezegen ve yıldız dediğimiz şeyler bu büyük resmin içindeki küçük parçalardır; kütle ise sadece maddenin miktarıdır. Hepsinin toplamı olduğu için cevabımız doğrudan A şıkkı olur. Çoğu kişi sadece gökyüzüne odaklandığı için şıkları karıştırabiliyor ama anahtar kelimemiz olan \"bütün\" ifadesi bizi direkt en geniş kapsama götürür 🎯.",
+    "concepts": [
+      {
+        "term": "Evren",
+        "definition": "Var olan her şeyi, tüm maddeyi, enerjiyi ve uzayı içine alan sonsuz boşluktur.",
+        "example": "Samanyolu Galaksisi evrenin küçük bir parçasıdır.",
+        "emoji": "🌍"
+      },
+      {
+        "term": "madde",
+        "definition": "Kütlesi olan ve boşlukta yer kaplayan her şeye denir.",
+        "example": "Bir taş parçası veya soluduğumuz hava maddedir.",
+        "emoji": "🧱"
+      },
+      {
+        "term": "enerji",
+        "definition": "İş yapabilme yeteneğidir; ışık, ısı veya hareket şeklinde karşımıza çıkabilir.",
+        "example": "Güneş'ten gelen ısı enerjisi.",
+        "emoji": "⚡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 202,
+    "subject": "FIZ",
+    "title": "Silindirin Hacmi ve Litre Hesabı",
+    "explanation": "Buradaki ana mevzu hacim hesaplamak. Hacim dediğimiz şey aslında bir nesnenin uzayda kapladığı yerdir ve uzunluk biriminden türediği için buna türetilmiş büyüklük diyoruz. Silindir gibi kaplarda işin sırrı önce tabandaki yuvarlağın alanını bulup, sonra bunu yüksekliğe yaymaktır. Burada $\\pi$ sayısı yaklaşık 3 kabul edilmiş, yani dairenin alanını bulurken yarıçapın karesini 3 ile çarpacağız 🎯.\n\nHadi adım adım çözelim: Önce taban alanını buluyoruz; yarıçapımız 4 olduğu için karesini alırız ($4 \\times 4 = 16$), bunu $\\pi$ yani 3 ile çarptığımızda $16 \\times 3 = 48 \\text{ m}^2$ çıkar. Şimdi bu alanı 5 metre yükseklikle çarparsak tüm kabın hacmini buluruz: $48 \\times 5 = 240 \\text{ m}^3$. Ama dikkat, kap sadece yarısına kadar dolu! Bu yüzden sonucu hemen ikiye bölüyoruz: $240 / 2 = 120 \\text{ m}^3$ olur ⚡. Son aşamada ise metreküpü litreye çevirmemiz lazım; her $1 \\text{ m}^3$ için 1000 litre eklediğimizden $120 \\times 1000 = 120.000$ litreyi buluruz. Bunu da matematik dilinde $12 \\times 10^4$ şeklinde yazarız ki cevap C şıkkıdır. Çoğu kişi burada ya kabın yarım olduğunu unutup direkt tamamını hesaplar ya da 1000 ile çarpmayı atlar, sen buna kanma 👀.",
+    "concepts": [
+      {
+        "term": "türetilmiş büyüklük",
+        "definition": "Birden fazla temel büyüklüğün (metre, saniye, kilogram gibi) birleşmesiyle oluşan ölçümlerdir.",
+        "example": "Hacim (metreküp), hız (m/s) veya kuvvet (Newton).",
+        "emoji": "🛠️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 203,
+    "subject": "FIZ",
+    "title": "Taşan Suyla Hacim Bulma Mantığı",
+    "explanation": "Bir cismin boşlukta kapladığı yere hacim diyoruz. Eğer elimizde düzgün bir şekli olmayan (yamuk yumuk) bir taş varsa, bunun boyutunu cetvelle ölçemeyiz. İşte burada imdadımıza taşırma yöntemi yetişiyor 💧. Olayın sırrı şu: Tamamen dolu bir kaba bir cisim attığında, cisim içeri girerken kendi hacmi kadar suyu dışarı iter. Yani taşan suyun miktarı, aslında içeri giren taşın kendi hacmine eşittir.\n\nSoruda kabın içinde $400 \\text{ cm}^3$ su olduğunu söylüyor ama en önemli detay kabın \"tam dolu\" olmasıdır 🎯. Kap zaten ağzına kadar dolu olduğu için, içine giren taş sadece kendi alanı kadar yer açmak ister ve $125 \\text{ cm}^3$ suyu dışarı atar. Burada çoğu kişi $400$'den $125$'i çıkarmaya veya ikisini toplamaya çalışarak hata yapar; ancak başlangıçtaki su miktarının hiçbir önemi yoktur, biz sadece taşan kısma bakarız. Bu yüzden taşın hacmi direkt olarak taşan su miktarı olan $125 \\text{ cm}^3$ olur. Doğru cevap B şıkkıdır 🪨.",
+    "concepts": [
+      {
+        "term": "hacim",
+        "definition": "Bir maddenin uzayda kapladığı toplam yerdir.",
+        "example": "Bir kutunun içine sığan toplam hava veya su miktarı.",
+        "emoji": "📦"
+      },
+      {
+        "term": "taşırma yöntemi",
+        "definition": "Geometrik şekli belli olmayan cisimlerin hacmini, onları suya batırıp taşırdıkları sıvı miktarıyla ölçme yoludur.",
+        "example": "Bir yüzüğü su dolu bardağa atıp taşan suyu başka bir kapta toplamak.",
+        "emoji": "🧪"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 205,
+    "subject": "FIZ",
+    "title": "Sabit Özkütleyi Yakalamak 🎯",
+    "explanation": "Bir maddenin özkütlesi, aslında onun \"kimliği\" gibidir. Maddenin miktarı artsa da azalsa da, yani kütlesi ve hacmi değişse bile, aynı madde olduğu sürece özkütlesi asla değişmez. Formülümüz çok basit: özkütle ($d$), kütlenin ($m$) hacme ($V$) bölünmesiyle bulunur, yani $d = m/V$ ⚡️\n\nTabloya baktığımızda işin sırrını hemen çözeriz. İlk durumda kütleyi hacme bölüyoruz: $21 \\div 3 = 7$ çıkar. İkinci durumda yine bölme yapıyoruz: $42 \\div 6 = 7$ olur. Son durumda ise $84 \\div 12 = 7$ sonucuna ulaşıyoruz. Gördüğün gibi hacim büyüse de bizim sonucumuz hep 7'de çakılı kaldı. Grafikte bir değer hiç değişmiyorsa, bu bize dümdüz yatay bir çizgi verir 🎯. Çoğu kişi kütle arttığı için özkütlenin de artacağını sanıp yanılır ama biz sonucu hep 7 bulduğumuz için cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "özkütle",
+        "definition": "Bir maddenin birim hacmindeki kütle miktarıdır, maddenin cinsine bağlıdır.",
+        "example": "Demirin özkütlesi sabittir, ister küçük bir çivi olsun ister dev bir blok.",
+        "emoji": "🧪"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 209,
+    "subject": "FIZ",
+    "title": "Durana Kadar Geçen Süreyi Bulalım",
+    "explanation": "Hızlanan veya yavaşlayan bir cismin aldığı yolu bulmanın en kestirme yolu Ortalama Hız kavramıdır. Eğer cisim düzenli bir şekilde yavaşlıyorsa, tüm yol boyunca sanki hep aynı hızla gitmiş gibi düşünmek için başlangıç hızıyla bitiş hızının tam ortasındaki değeri alırız. Yani karmaşık formüllere girmeden, ilk ve son hızın aritmetik ortalamasını bulup yolu buna böldüğümüzde zamanı şak diye buluruz ⚡.\n\nSoruya gelirsek; cisim $14\\text{ m/s}$ ile başlıyor ve durduğu için son hızı $0\\text{ m/s}$ oluyor. Hemen ortalamayı alalım: $(14 + 0)$ işlemini yapıp ikiye böldüğümüzde Ortalama Hız $7\\text{ m/s}$ çıkar. Toplam yolumuz $42\\text{ m}$ olduğuna göre, zamanı bulmak için $42$'yi $7$'ye böleriz: $42 \\div 7 = 6$ saniye sonucuna ulaşırız 🎯. Doğru cevap D şıkkıdır. Burada çoğu kişi sadece ilk hıza ($14$'e) bölme hatasına düşer ama cisim sürekli yavaşladığı için mutlaka ortalama hızı kullanmalıyız 👀.",
+    "concepts": [
+      {
+        "term": "Ortalama Hız",
+        "definition": "Düzenli değişen hızlarda, başlangıç ve bitiş hızlarının toplamının yarısıdır.",
+        "example": "$10\\text{ m/s}$'den $0$'a düşen aracın ortalama hızı $5\\text{ m/s}$ olur.",
+        "emoji": "🚀"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 749,
+    "subject": "FIZ",
+    "title": "Bir Yükü Kaldırmak İçin Yapılan İş",
+    "explanation": "Fizikte bir şeyi sadece itmek ya da taşımak yetmez; gerçek anlamda iş yapmış sayılmak için o nesneyi belli bir yol boyunca hareket ettirmemiz gerekir. Buradaki kilit mantık şudur: Eğer bir cismi yukarı kaldırıyorsak, yaptığımız iş aslında o cismin ağırlığını yüksekliğiyle çarpmaktan ibarettir. Yani formülümüz çok basit: $\\text{İş} = \\text{Ağırlık} \\times \\text{Yükseklik}$. Bu enerji birimine de Joule diyoruz ⚡.\n\nHadi şimdi adım adım hesaplayalım: Öncelikle elimizde kütle var ama bize kuvvet yani ağırlık lazım. Bunun için kütleyi yerçekimiyle çarpıyoruz: $60 \\text{ kg} \\times 10 \\text{ N/kg} = 600 \\text{ Newton}$ olur. Şimdi bulduğumuz bu ağırlığı yükseklikle çarpacağız: $600 \\times 0,5$ işlemi karşımıza çıkıyor. Bir sayıyı $0,5$ ile çarpmak demek, o sayının yarısını almak demektir; dolayısıyla $600$'ün yarısı olan $300 \\text{ Joule}$ sonucuna ulaşıyoruz 🎯. Çoğu kişi yerçekimiyle çarpmayı unutup direkt $60 \\times 0,5$ yaparak yanılır, buna dikkat ettiğimiz sürece hata yapmayız. Doğru cevap C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "İş",
+        "definition": "Bir kuvvetin etkisiyle bir cismin kuvvet doğrultusunda hareket ettirilmesidir.",
+        "example": "Yerdeki kutuyu masanın üzerine kaldırmak fiziksel bir iştir.",
+        "emoji": "💪"
+      },
+      {
+        "term": "Ağırlık",
+        "definition": "Kütlenin yerçekimi ivmesiyle çarpılması sonucu oluşan kuvvettir.",
+        "example": "$70 \\text{ kg}$ olan birinin dünyadaki ağırlığı yaklaşık $700 \\text{ Newton}$'dur.",
+        "emoji": "⚖️"
+      },
+      {
+        "term": "Joule",
+        "definition": "Enerji ve iş birimidir; kısaca J harfiyle gösterilir.",
+        "example": "Küçük bir ampulün saniyede harcadığı enerji Joule ile ölçülür.",
+        "emoji": "🔋"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 750,
+    "subject": "FIZ",
+    "title": "Güç Nedir, Birimi Hangisidir?",
+    "explanation": "Fizikte her şeyin bir etiketi vardır, biz buna birim diyoruz. Mesela uzunluk dediğimizde aklımıza 'metre' gelir. Güç ise aslında 'bir işin ne kadar hızlı yapıldığıdır'. Yani aynı ağırlıktaki iki kutudan birini 1 saniyede kaldıran kişi, 10 saniyede kaldıran kişiden daha güçlüdür. Burada işin sırrı hızda; enerjiyi ne kadar sürede tükettiğine bakıyoruz ⚡️.\n\nŞıklara baktığımızda kuvvetin etiketi Newton, enerjinin ya da yapılan işin etiketi ise Joule'dür. Birçok kişi Joule ile Watt'ı birbirine karıştırıp yanılır ama Joule sadece miktarı, Watt ise hızı yani gücü temsil eder. Elektrikteki gerilim için kullandığımız Volt ise tamamen başka bir mevzudur. Bu yüzden, bir işin yapılma hızını yani gücü ölçen birim Watt'tır 🎯. Doğru cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "güç",
+        "definition": "Bir işin ne kadar kısa sürede yapıldığını belirten fiziksel büyüklüktür.",
+        "example": "Aynı yolu çıkan iki araçtan daha hızlı varanın motor gücü daha fazladır.",
+        "emoji": "🚀"
+      },
+      {
+        "term": "birim",
+        "definition": "Ölçülen bir büyüklüğün standart olarak kabul edilen adı veya sembolüdür.",
+        "example": "Süt için 'litre', mesafe için 'kilometre' kullanılması gibi.",
+        "emoji": "🏷️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 751,
+    "subject": "FIZ",
+    "title": "Yer Çekimi Potansiyel Enerjisinin Mantığı",
+    "explanation": "Olayın mantığı aslında çok basit: Potansiyel enerji, bir cismin yüksekliği sayesinde sahip olduğu \"hazır bekleyen\" enerjidir. Şöyle düşün; elinde ağır bir taş varken onu ne kadar yukarı kaldırırsan, bıraktığında o kadar sert düşer. Yani bu enerji; cismin ne kadar ağır olduğuna, ne kadar yükseğe çıktığına ve bulunduğu yerdeki yer çekimine bağlıdır. 💡\n\nŞimdi seçeneklere baktığımızda formüldeki tüm parçaları görüyoruz: Kütle (cismin ağırlığı), yükseklik ve yer çekim ivmesi direkt etkileyicidir. Ancak cismin rengini değiştirmek, yani taşı kırmızıdan maviye boyamak onun düşüş hızını ya da çarpma gücünü asla değiştirmez. Bu yüzden cevap D şıkkıdır. 🎯 Çoğu kişi bazen formüllere çok odaklanıp basit mantığı kaçırabiliyor ama burada sadece fiziksel etkileşime bakman yeterli. 🔑",
+    "concepts": [
+      {
+        "term": "Potansiyel Enerji",
+        "definition": "Bir cismin konumu veya durumu nedeniyle sahip olduğu depolanmış enerji türüdür.",
+        "example": "Gerilmiş bir yay veya yüksekte duran bir kitap.",
+        "emoji": "🔋"
+      },
+      {
+        "term": "Kütle",
+        "definition": "Bir cismin sahip olduğu madde miktarıdır, genellikle kilogram (kg) ile ölçülür.",
+        "example": "5 kg'lık bir karpuzun kütlesi 5'tir.",
+        "emoji": "⚖️"
+      },
+      {
+        "term": "Yer çekim ivmesi",
+        "definition": "Dünya'nın cisimleri kendine doğru çektiği hızlanma oranıdır.",
+        "example": "Dünya'da ortalama $9,8 \\text{ m/s}^2$ civarındadır.",
+        "emoji": "🌍"
+      },
+      {
+        "term": "Yükseklik",
+        "definition": "Bir nesnenin referans alınan bir noktaya (genelde yere) olan dik uzaklığıdır.",
+        "example": "Masanın üzerindeki kitabın yerden 80 cm yüksekte olması.",
+        "emoji": "📏"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 752,
+    "subject": "FIZ",
+    "title": "Yaylarda Depolanan Enerji Hesabı",
+    "explanation": "Olayın mantığı aslında çok basit: Bir yayı sıkıştırdığında veya gerdiğinde, ona verdiğin enerji yayın içinde hapsolur. Biz buna esneklik potansiyel enerjisi diyoruz 💡. Bu enerjiyi bulmak için yayın sertliğini (yay sabiti) ve ne kadar hareket ettirdiğimizi (sıkıştırma miktarı) kullanıyoruz. Formülümüz $\\frac{1}{2} k x^{2}$ şeklindedir; yani yay sabitini, sıkıştırmanın karesiyle çarpıp sonucun yarısını alacağız.\n\nŞimdi adım adım çözelim: İlk işimiz santimetreyi metreye çevirmek çünkü fizik formülleri standart olarak metre ister; $50$ cm'yi $100$'e bölerek $0,5$ m yaparız. Sonra bu değerin karesini alırız, yani $0,5 \\cdot 0,5 = 0,25$ olur ⚡. Şimdi yay sabiti olan $100$ ile bu sonucu çarparsak $100 \\cdot 0,25 = 25$ elde ederiz. En son aşamada ise formüldeki $\\frac{1}{2}$ katsayısından dolayı bu sonucu ikiye böleriz: $25 \\div 2 = 12,5$ J çıkar ve doğru cevap C şıkkıdır. Çoğu kişi burada uzunluk birimini metreye çevirmeyi unutup direkt $50$ üzerinden işlem yaparak çok büyük hatalı sonuçlar buluyor, sakın sen de düşme 🎯.",
+    "concepts": [
+      {
+        "term": "esneklik potansiyel enerjisi",
+        "definition": "Sıkıştırılmış veya gerilmiş bir yayın sahip olduğu depolanmış enerji türüdür.",
+        "example": "Kurulmuş bir oyuncak arabanın yayında bekleyen enerji.",
+        "emoji": "🔋"
+      },
+      {
+        "term": "yay sabiti",
+        "definition": "Yayın ne kadar sert olduğunu belirten katsayıdır; sayı büyüdükçe yay daha zor sıkışır.",
+        "example": "Kalem yayı yumuşaktır (küçük $k$), araba amortisörü serttir (büyük $k$).",
+        "emoji": "⚙️"
+      },
+      {
+        "term": "sıkıştırma miktarı",
+        "definition": "Yayın dengedeki konumundan ne kadar itildiği veya çekildiği mesafedir.",
+        "example": "Bir yayı $10$ cm içeri itmek.",
+        "emoji": "📏"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 753,
+    "subject": "FIZ",
+    "title": "Isı Akışının Altın Kuralı 🌡️",
+    "explanation": "Isı mevzusunda işin sırrı tek bir altın kuralda gizli: Isı, her zaman sıcak olan maddeden soğuk olan maddeye doğru akar. Bunu tıpkı yüksekten aşağı akan bir su gibi düşünebilirsin; enerji hep yüksek seviyeden (sıcak) düşük seviyeye (soğuk) geçer. Yani eğer ısı A'dan B'ye gidiyorsa, A kesinlikle daha sıcaktır ⚡.\n\nŞimdi seçeneklere beraber bakalım. Madem ısı A'dan çıkıp B'ye giriyor, o zaman A madde ısı verdiği için sıcaklığı düşmeli, B madde ise ısı aldığı için sıcaklığı yükselmeli. Ama D şıkkında bize tam tersini söylüyor; \"A artıyor, B azalıyor\" diyor ki bu fizik kurallarına tamamen aykırı, yani kesinlikle yanlış 🎯. Bu arada çoğu kişi kütle ya da öz ısıya takılıp vakit kaybeder ama unutma; maddenin ne kadar ağır olduğu veya cinsinin ne olduğu ısının hangi yöne akacağını değiştirmez, sadece sıcaklık farkına bakılır. Doğru cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "Sıcaklık",
+        "definition": "Bir maddenin moleküllerinin ortalama hareket enerjisinin bir göstergesidir.",
+        "example": "Termometrede okunan 37 derece değeri.",
+        "emoji": "🌡️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 754,
+    "subject": "FIZ",
+    "title": "Santigrat'tan Kelvin'e Geçiş",
+    "explanation": "Günlük hayatta kullandığımız santigrat derece aslında sadece bir ölçektir. Bilim insanları ise hesaplamaları kolaylaştırmak için başlangıç noktası 'mutlak sıfır' olan Kelvin sıcaklık ölçeği sistemini kullanırlar. Bu iki sistem arasındaki fark sabittir; yani santigrat cinsinden bildiğimiz bir değeri Kelvin'e çevirmek için tek yapmamız gereken üzerine 273 eklemektir 🌡️.\n\nElimizde $10 ^\\circ\\text{C}$ var. Hemen öğrendiğimiz yöntemi uygulayalım: Santigrat değere 273 eklediğimizde Kelvin sonucunu buluruz. İşlemimiz şöyle olur: $10 + 273 = 283\\text{ K}$. Çoğu kişi burada yanlışlıkla çıkarma yapıp sonucu küçültmeye çalışarak tuzağa düşer ama biz ekleme yaparak doğru cevaba, yani B şıkkına rahatça ulaşıyoruz 🎯.",
+    "concepts": [
+      {
+        "term": "sıcaklık ölçeği",
+        "definition": "Bir maddenin sıcaklığını ölçmek için kullanılan standart cetvel veya sistemdir.",
+        "example": "Derecenin hem Santigrat hem de Kelvin olarak okunması.",
+        "emoji": "📏"
+      },
+      {
+        "term": "Kelvin sıcaklık ölçeği",
+        "definition": "Bilimde kullanılan, atomların hareketinin tamamen durduğu varsayılan mutlak sıfırı başlangıç alan sistemdir.",
+        "example": "$0\\text{ K}$, evrendeki en düşük teorik sıcaklıktır.",
+        "emoji": "❄️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 755,
+    "subject": "FIZ",
+    "title": "Grafikte Eğimin Sırrı: Isı Sığası",
+    "explanation": "Grafik sorularında işin sırrı şudur: Sana hangi eksende ne verildiğine bakıp onları birbirine bölmelisin. Burada dik eksende ısı miktarı ($Q$), yatay eksende ise sıcaklık değişimi ($\\Delta T$) var. Yani bizden istenen eğim, aslında $Q$ değerini $\\Delta T$ değerine bölmemizdir 🎯.\n\nŞimdi beraber adım adım gidelim: Temel ısı formülümüz $Q = m \\cdot c \\cdot \\Delta T$ şeklindedir. Formülde gördüğün $m \\cdot c$ kısmı, yani kütle ile öz ısının çarpımı, fizik dilinde ısı sığası denilen $C$ harfiyle gösterilir. Bu durumda formülümüz $Q = C \\cdot \\Delta T$ halini alır. Eğim bulmak için $Q$'yu $\\Delta T$'ye böldüğümüzde elimizde sadece $C$ kalır ⚡. Bu yüzden cevap B şıkkıdır. Çoğu kişi burada sadece maddenin cinsine bağlı olan öz ısıyı düşünerek yanılır ama kütle de işin içine girdiğinde karşımıza çıkan şey artık ısı sığasıdır 👀.",
+    "concepts": [
+      {
+        "term": "sıcaklık değişimi",
+        "definition": "Bir maddenin son sıcaklığı ile ilk sıcaklığı arasındaki farktır, $\\Delta T$ ile gösterilir.",
+        "example": "20 dereceden 50 dereceye çıkan suyun sıcaklık değişimi $50-20=30$ derecedir.",
+        "emoji": "🌡️"
+      },
+      {
+        "term": "ısı sığası",
+        "definition": "Bir maddenin sıcaklığını 1 derece artırmak için gereken toplam ısı miktarıdır ($C = m \\cdot c$).",
+        "example": "Bir bardak suyla bir tencere suyun aynı maddeden olmasına rağmen ısı sığaları farklıdır çünkü kütleleri farklıdır.",
+        "emoji": "🔥"
+      },
+      {
+        "term": "eğim",
+        "definition": "Koordinat sisteminde dikeydeki değişim miktarının yataydaki değişim miktarına oranıdır.",
+        "example": "Yukarı doğru dikleşen bir çizginin eğimi daha büyüktür.",
+        "emoji": "📈"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 756,
+    "subject": "FIZ",
+    "title": "Isının Boşluktaki Yolculuğu: Işıma",
+    "explanation": "Isı, sıcak yerlerden soğuk yerlere doğru kaçmak ister ama bunu yaparken farklı yollar kullanır. Bazı yollar için mutlaka arada bir köprü yani maddesel ortam gerekir; mesela bir kaşığın ucunu ısıttığında ısının sapına çıkması için metalin kendisine (katıya) ihtiyaç vardır 🌡️. Ancak bazı enerji türleri o kadar güçlüdür ki, arada hava, su ya da herhangi bir madde olmasına hiç gerek duymazlar; boşlukta bile yol alabilirler.\n\nSoruda bizden özellikle \"maddesel ortama ihtiyaç duymayan\" yolu istiyor. İletim katılarla olur, konveksiyon ise sıvı ve gazların dönme hareketiyle gerçekleşir; yani ikisi de bir maddeye muhtaçtır. Oysa ışıma, tıpkı güneşten gelen ışıklar gibi enerjiyi elektromanyetik dalgalarla taşır ve uzaydaki sonsuz boşluğu rahatça geçer ☀️. Bu yüzden cevap C şıkkıdır. Burada çoğu kişi havanın görünmez olduğu için bir ortam olmadığını sanıp yanılır, ama unutma ki hava da aslında bir maddedir 🚀.",
+    "concepts": [
+      {
+        "term": "Işıma",
+        "definition": "Isının maddeye ihtiyaç duymadan, dalgalar halinde yayılmasıdır.",
+        "example": "Güneş'in Dünya'yı ısıtması.",
+        "emoji": "☀️"
+      },
+      {
+        "term": "İletim",
+        "definition": "Isının, maddenin tanecikleri aracılığıyla dokunma yoluyla aktarılmasıdır.",
+        "example": "Sıcak çaya konulan metal kaşığın ısınması.",
+        "emoji": "🥄"
+      },
+      {
+        "term": "Konveksiyon",
+        "definition": "Isının, sıvı veya gazlardaki akışkan hareketlenmeyle taşınmasıdır.",
+        "example": "Tenceredeki suyun ısınarak yukarı çıkması.",
+        "emoji": "♨️"
+      },
+      {
+        "term": "maddesel ortam",
+        "definition": "Katı, sıvı veya gaz halindeki tüm fiziksel yapılar.",
+        "example": "Hava, su, cam veya demir birer maddesel ortamdır.",
+        "emoji": "🧱"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 757,
+    "subject": "FIZ",
+    "title": "Enerji Kaynakları: Bitmeyenler ve Tükenenler",
+    "explanation": "Olay aslında çok basit: Eğer kullandığımız şey doğada sürekli var olmaya devam ediyorsa buna yenilenebilir enerji diyoruz. Mesela güneş her sabah yeniden doğuyor, rüzgar hep esiyor; bunları kullansak da bitmiyorlar ☀️. Ama bazı kaynaklar vardır ki, yerin altında belli bir miktar bulunur ve biz onları kullandıkça azalırlar. Bunlar tekrar oluşmak için milyonlarca yıla ihtiyaç duyduğu için bunlara yenilenemez enerji kaynakları denir.\n\nŞimdi seçeneklere beraber bakalım. Güneş, rüzgar ve jeotermal (yer ısısı) doğanın bize sunduğu ve asla tükenmeyecek hediyelerdir, yani hepsi yenilenebilir. Ancak nükleer enerji, yer altından çıkarılan uranyum gibi madenlerin parçalanmasıyla elde edilir. Maden bittiğinde enerji de biter, yani kendi kendine yenilenmez 🔋. Bu yüzden doğru cevap B şıkkıdır. Çoğu kişi nükleer enerjiyi 'temiz' olduğu için yenilenebilir sanıp yanılır ama işin sırrı kaynağın bitip bitmediğine bakmaktır 🎯.",
+    "concepts": [
+      {
+        "term": "yenilenebilir enerji",
+        "definition": "Doğal süreçlerle kısa sürede kendini yenileyebilen, tükenme riski olmayan enerji türüdür.",
+        "example": "Güneş panelleriyle elektrik üretmek",
+        "emoji": "♻️"
+      },
+      {
+        "term": "yenilenemez enerji kaynakları",
+        "definition": "Dünyadaki rezervi sınırlı olan ve tüketildiğinde insan ömrüyle kıyaslanamayacak kadar uzun sürede oluşan kaynaklardır.",
+        "example": "Kömür, petrol veya uranyum kullanımı",
+        "emoji": "⚠️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 758,
+    "subject": "FIZ",
+    "title": "Elektroskopta Yüklerin Hareket Mantığı",
+    "explanation": "Olayın sırrı aslında çok basit: Elektroskop dediğimiz alet, içindeki metaller sayesinde yükleri hızla ileten bir dedektördür. Metal bir cisim nötr olduğunda içinde hem artı (+) hem eksi (-) yükler dengeli şekilde bulunur ancak burada sadece eksi yüklü elektronlar yer değiştirebilir; artılar oldukları yere çivilenmiş gibidir. Eğer dışarıdan yüklü bir çubuğu yaklaştırırsanız, dokunmasanız bile içerideki yükleri iter veya çeker ⚡️.\n\nSorumuzda negatif (-) yüklü bir çubuk yaklaştırılmış. Bu negatif çubuk, elektroskobun tepesindeki eksi yükleri korkutup aşağıya, yani yapraklara doğru iter. Böylece topuz kısmı daha pozitif olurken, yapraklar fazladan gelen eksi yüklerle dolar. Yaprakların ikisi de aynı anda negatif yüklendiği için birbirlerini iterler ve kollarını açarlar 🎯. Çoğu kişi burada tüm aletin yükünün değiştiğini sanıp yanılır ama aslında sadece yükler yukarıdan aşağıya kaymıştır. Bu yüzden cevap A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "nötr",
+        "definition": "Bir maddenin içindeki pozitif ve negatif yüklerin sayısı birbirine eşit olduğu için toplamda yüksüz görünmesi durumu.",
+        "example": "Henüz hiçbir şeye sürtülmemiş plastik bir cetvel nötrdür.",
+        "emoji": "⚖️"
+      },
+      {
+        "term": "elektron",
+        "definition": "Atomlarda hareket edebilen, negatif (-) elektrik yüküne sahip çok küçük parçacıklar.",
+        "example": "Pillerden akan elektrik aslında elektronların hareketidir.",
+        "emoji": "⚛️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 759,
+    "subject": "FIZ",
+    "title": "Şimşeklerin Gizemi: Elektrik Nasıl Akar?",
+    "explanation": "Aslında olay çok basit: Elektrik dediğimiz şey, atomlardaki küçük yüklerin bir yerden başka bir yere taşınmasıdır. Atomun merkezinde ağır abi dediğimiz protonlar ve nötronlar bulunur; bunlar çekirdek denen bölgeye hapsolmuştur ve asla yerlerinden kıpırdamazlar. Ancak atomun dış katmanlarında dönüp duran, çok hafif ve hareketli elektronlar vardır. İşte elektriğin tüm sırrı bu gezgin elektronlarda saklıdır; onlar kolayca yer değiştirip akış sağlayabilirler ⚡️.\n\nŞimşek ve yıldırım oluşurken de bulutlar ile yer arasında devasa bir elektrik boşalması olur. Bu akış sırasında çekirdekteki protonlar veya nötronlar yerinden çıkıp uçamadığına göre, tek başına yolculuk yapabilen tek parçacık olan elektronlar hızla akar. Bu yüzden cevap A şıkkıdır. Çoğu kişi atomdaki tüm parçaların hareket ettiğini sanarak yanılır ama sadece elektronlar böyle uzun yolculuklara çıkabilir 🎯.",
+    "concepts": [
+      {
+        "term": "elektron",
+        "definition": "Atomun çekirdeği etrafında dolanan, negatif (-) yüklü ve çok hareketli olan en küçük parçacıktır.",
+        "example": "Bir pilden lambaya giden elektrik akımını sağlayan şeyler elektronlardır.",
+        "emoji": "🏃‍♂️"
+      },
+      {
+        "term": "çekirdek",
+        "definition": "Atomun merkezinde bulunan, proton ve nötronlardan oluşan, yoğun ve sabit bölgedir.",
+        "example": "Atomun güneş sistemi gibi düşünürsek, çekirdek tam ortadaki güneştir ve yerinden oynamaz.",
+        "emoji": "🔘"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 760,
+    "subject": "FIZ",
+    "title": "Akım Şiddetini Kavrayalım!",
+    "explanation": "Aslında olay çok basit: Akım dediğimiz şey, bir telden belirli bir sürede ne kadar elektrik yükünün geçtiğidir. Bunu bir su borusundan akan suya benzetebilirsin; borudan bir saniyede ne kadar su geçiyorsa, orada o kadar \"akış\" vardır 💡. İşte fizikte buna akım şiddeti diyoruz ve bunu hesaplamak için toplam yük miktarına ($q$), geçen toplam süreyi ($t$) böleriz. Yani formülümüz $I = \\frac{q}{t}$ şeklindedir.\n\nSoruda bizden akımın matematiksel bağıntısını istiyor. Yukarıdaki mantığımıza göre, elimizdeki toplam yükü ($q$), süreye ($t$) böldüğümüzde sonucu buluruz ⚡. Burada dikkat etmen gereken en önemli nokta, çoğu kişinin yaptığı gibi çarpma işlemi yapmak değil, mutlaka bölme işlemi kullanmaktır çünkü \"birim zamanda» ifadesi bize her zaman bölmeyi hatırlatmalı. Bu durumda doğru cevap B seçeneğidir (Not: Seçeneklerdeki yazım hatasına rağmen fiziksel karşılığı $I = \\frac{q}{t}$ işlemidir) 🎯.",
+    "concepts": [
+      {
+        "term": "akım şiddeti",
+        "definition": "Bir iletkenin kesitinden birim zamanda geçen toplam elektrik yükü miktarıdır.",
+        "example": "Bir kablodan saniyede 2 Coulomb yük geçiyorsa, akım şiddeti 2 Amper'dir.",
+        "emoji": "⚡"
+      },
+      {
+        "term": "toplam yük",
+        "definition": "İletkende hareket eden elektronların taşıdığı toplam elektriksel miktardır ve genellikle 'q' ile gösterilir.",
+        "example": "Pil tarafından sağlanan toplam enerji paketleri gibi düşünülebilir.",
+        "emoji": "🔋"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 761,
+    "subject": "FIZ",
+    "title": "Elektrikte Isı Enerjisi Hesaplama",
+    "explanation": "Bir telden elektrik geçtiğinde, elektronlar dirençle karşılaştığı için sürtünme olur ve tel ısınır; tıpkı elektrikli ısıtıcılarda olduğu gibi. İşin sırrı şu üçlüye bakmakta: Geçen akımın miktarı, telin zorluk derecesi yani direnci ve bu işlemin ne kadar sürdüğü. Burada dikkat etmemiz gereken en önemli şey, akımın etkisinin çok güçlü olması nedeniyle formülde akımın karesini ($\\text{akımın karesi}$) almamız gerektiğidir 💡.\n\nHemen hesaplayalım: Önce akım olan 2 Amper'in karesini alırız, yani $2 \\times 2 = 4$ yapar. Şimdi bulduğumuz bu 4 değerini, direnç olan 0,1 ile çarpıyoruz; $4 \\times 0,1$ işlemi bize 0,4 sonucunu verir. Son adımda ise bu sonucu 10 saniyelik süreyle çarpıyoruz: $0,4 \\times 10$ yaptığımızda virgül bir sağa kayar ve karşımıza 4 Joule cevabı çıkar ⚡. Birçok kişi burada akımın karesini almayı unutup direkt 2 ile çarptığı için A şıkkına düşer ama doğru cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "akımın karesi",
+        "definition": "Akım şiddeti değerinin kendisiyle çarpılmasıyla elde edilen değerdir.",
+        "example": "Akım 3 Amper ise karesi $3 \\times 3 = 9$'dur.",
+        "emoji": "🎯"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 764,
+    "subject": "FIZ",
+    "title": "Ampul Parlaklığı ve Pil Bağlantıları",
+    "explanation": "Bir ampulün ne kadar parlak yanacağı, ona gelen elektriksel \"itme gücüne\", yani voltaja bağlıdır. Voltaj ne kadar yüksekse, ampule o kadar güçlü bir akım akar ve lamba daha kuvvetli ışık verir ⚡. İşin sırrı şu: Pilleri uç uca eklediğimizde güçlerini birleştirip toplam voltajı artırabiliriz, ama yan yana dizdiğimizde sadece dayanıklılığı artırmış oluruz.\n\nPillere baktığımızda; paralel bağlantı yaptığımızda voltaj hiç artmaz, hep tek bir pil varmış gibi davranır. Eğer pilleri seri bağlantı şeklinde, yani hepsinin artı ucunu diğerinin eksi ucuna gelecek şekilde dizersek voltajlar toplanır ve en yüksek itme gücü oluşur. Ancak pillerden biri ters dönerse, o pil diğerlerine karşı savaşır ve onları birbirini yok etmeye zorlar; çoğu kişi tüm seri bağlamaların aynı olduğunu sanıp burada yanılır 💡. Bu yüzden üç pili de aynı yönde, düz şekilde arka arkaya dizdiğimiz B şıkkı bize en yüksek voltajı sağlar ve ampulü en parlak hale getirir.",
+    "concepts": [
+      {
+        "term": "voltaj",
+        "definition": "Elektrik devrelerinde elektronları iten elektriksel potansiyel farktır; bir nevi elektrik basıncıdır.",
+        "example": "1.5V'luk bir kalem pilin sağladığı enerji miktarı.",
+        "emoji": "🔋"
+      },
+      {
+        "term": "paralel bağlantı",
+        "definition": "Pillerin artı uçlarının hepsinin ortak bir noktaya, eksi uçlarının da başka bir ortak noktaya bağlanmasıdır; voltaj değişmez.",
+        "example": "Kumanda içine pillerin yan yana değil de aynı kutuplar üst üste gelecek şekilde takılması durumu.",
+        "emoji": "↔️"
+      },
+      {
+        "term": "seri bağlantı",
+        "definition": "Pillerin artı ve eksi uçlarının zincirleme şekilde birbirine eklenmesidir; voltajlar toplanır.",
+        "example": "El fenerlerinde pillerin arka arkaya dizilmesi.",
+        "emoji": "⛓️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 765,
+    "subject": "FIZ",
+    "title": "Enerji ve Güç Arasındaki Fark nedir?",
+    "explanation": "Fizikte ne zaman \"birim zamanda\" diye bir ifade görseniz, orada aslında bir hızdan veya oranlamadan bahsediliyor demektir. Yani toplam harcanan enerjiyi, geçen süreye bölüyoruz. İşte enerjinin zamana bölünmüş haline biz günlük dilde ve fizikte güç diyoruz. Basitçe şöyle düşünün: Toplam harcadığınız enerji cebinizdeki paradır, elektriksel güç ise bu parayı ne kadar hızlı harcadığınızdır ⚡️.\n\nSoruda bizden \"birim zamanda harcanan enerji\" isteniyor, yani formülümüz $\\text{Güç} = \\frac{\\text{Enerji}}{\\text{Zaman}}$ şeklinde çalışıyor. Bu durumda karşımıza çıkan kavram elektriksel güç olur. Bunun dünyaca kabul görmüş ölçü birimi ise watt birimidir 🎯. Çoğu kişi burada potansiyel enerji ile karıştırıp Joule şıkkına yönelebiliyor ama unutmayın; Joule toplam miktardır, Watt ise harcanma hızıdır. Bu yüzden doğru cevabımız C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "birim zamanda",
+        "definition": "Bir olayın gerçekleşme hızını bulmak için yapılan, toplam miktarın zamana bölünmesi işlemi.",
+        "example": "Saatte 100 km hız yapmak, mesafeyi birim zamana (saate) bölmektir.",
+        "emoji": "⏱️"
+      },
+      {
+        "term": "elektriksel güç",
+        "definition": "Bir elektrikli cihazın bir saniyede tükettiği veya ürettiği enerji miktarı.",
+        "example": "60 Watt'lık bir ampulün saniyede 60 Joule enerji harcaması.",
+        "emoji": "🔌"
+      },
+      {
+        "term": "watt",
+        "definition": "Gücün standart birimidir; 1 saniyede 1 Joule enerji harcandığında ortaya çıkan gücü temsil eder.",
+        "example": "Bir saç kurutma makinesinin üzerinde yazan 2000 W ifadesi.",
+        "emoji": "💡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 766,
+    "subject": "FIZ",
+    "title": "Katılarda Basınç Mantığı",
+    "explanation": "Olayın özü aslında çok basit: Basınç, belli bir yüzeye ne kadar güçlü bastırdığımızla ilgilidir. Bunu şöyle düşünün; ayağınıza ince topuklu bir ayakkabı giydiğinizde yere daha çok batarsınız çünkü tüm ağırlığınız küçücük bir noktaya biner 💡. İşte biz buna Basınç diyoruz. Formülü ise $\\text{Basınç} = \\frac{\\text{Kuvvet}}{\\text{Yüzey Alanı}}$ şeklindedir. Yani yukarıdaki sayı (kuvvet/ağırlık) arttıkça basınç artar, aşağıdaki sayı (temas alanı) arttıkça basınç azalır.\n\nŞimdi şıklara beraber bakalım. Katı bir cisim masanın üzerinde duruyorsa, aşağı doğru iten güç onun ağırlığıdır; yani basınç kuvveti ağırlığa eşittir (A doğru). Ağırlık arttıkça baskı da artacağı için burada bir Doğru Orantı vardır (B doğru). Eğer temasa değen alan genişlerse, aynı ağırlık daha geniş bir yere yayılır ve etkisini kaybeder; buna da Ters Orantı denir (C doğru) 🎯. Ancak D şıkkında alan büyüdükçe basıncın artacağı söylenmiş; halbuki alan büyürse basınç azalır. Çoğu kişi burada 'alan büyüyor, demek ki etkisi artıyor' diye düşünüp yanılır ama gerçekte yük dağıldığı için basınç düşer. Bu yüzden yanlış olan seçenek D şıkkıdır 👟.",
+    "concepts": [
+      {
+        "term": "Basınç",
+        "definition": "Birim yüzeye dik olarak etki eden kuvvet miktarıdır.",
+        "example": "Toplu iğnenin ucunun sivri olması sayesinde kolayca batması.",
+        "emoji": "📍"
+      },
+      {
+        "term": "Doğru Orantı",
+        "definition": "İki değişkenin aynı yönde değişmesidir; biri artarken diğerinin de artmasıdır.",
+        "example": "Marketten aldığınız elma sayısı arttıkça ödediğiniz paranın artması.",
+        "emoji": "📈"
+      },
+      {
+        "term": "Ters Orantı",
+        "definition": "İki değişkenin zıt yönde değişmesidir; biri artarken diğerinin azalmasıdır.",
+        "example": "Hızlandığınızda varış sürenizin kısalması.",
+        "emoji": "📉"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 767,
+    "subject": "FIZ",
+    "title": "Basınç Artırmanın En Kolay Yolu 🔪",
+    "explanation": "Olayın mantığı aslında çok basit: Elimizdeki gücü ne kadar dar bir alana toplarsak, karşı tarafı o kadar kolay delip geçeriz ya da keseriz. Buna fizik dilinde basınç diyoruz. Eğer bastırdığımız yüzey alanı küçülürse basınç artar; yani uç sivrileştikçe etkisi güçlenir. Tam tersine, yüzeyi genişletirsek ağırlığımız yayılır ve basınç azalır 💡.\n\nSeçeneklere baktığımızda; traktör lastikleri, kar ayakkabıları ve tank paletleri hep yere basan yüzey alanını genişleterek batmayı engellemeye, yani basıncı azaltmaya çalışır. Ama bizden istenen basıncı artırmak. Bıçak ise ağzı çok ince olduğu için tüm gücü küçücük bir çizgiye odaklar ve yüksek bir basınç oluşturarak ekmeği tereyağı gibi kesmemizi sağlar 🎯. Çoğu kişi sadece 'güç uygulamayı' düşünür ama işin sırrı gücü ne kadar küçük bir noktaya topladığınızdadır. Bu yüzden doğru cevap C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "basınç",
+        "definition": "Birim yüzeye dik olarak uygulanan kuvvettir; basitçe 'bastırma etkisidir'.",
+        "example": "Topuğuna basan bir kadının, düz tabanlı ayakkabı giyen birinden daha fazla iz bırakması.",
+        "emoji": "⚡"
+      },
+      {
+        "term": "yüzey alanı",
+        "definition": "Bir cismin başka bir yüzeyle temas ettiği bölgenin toplam büyüklüğüdür.",
+        "example": "Bir iğnenin ucunun çok küçük, arkasının ise daha geniş olması.",
+        "emoji": "📏"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 769,
+    "subject": "FIZ",
+    "title": "Su Kiminle Daha Çok İlgileniyor?",
+    "explanation": "Bu işin sırrı aslında çok basit: Bir cismi ne kadar çok suya batırırsan, su onu o kadar güçlü yukarı iter. Yani kaldırma kuvveti dediğimiz şey, cismin ağırlığıyla ya da cinsiyete değil, sadece suda kapladığı yere yani batan hacim miktarına bakar. Su, kendi alanını daha çok işgal eden cisme \"buradan çık!\" diyerek daha büyük bir güç uygular 🌊.\n\nŞimdi resme baktığımızda tüm cisimlerin toplam boyutlarının aynı olduğunu ama farklı derinliklerde olduklarını görüyoruz. Cismin kaç parçası suyun altında kaldıysa, o kadar çok kaldırma kuvveti oluşur 🎯. K, L, M ve N arasından en çok parçası suyun altında kalan (yani en derine inen) cisim L olduğu için, ona etki eden kaldırma kuvveti de en büyüktür. Doğru cevap B şıkkıdır. Çoğu kişi burada cismin yüzüp yüzmediğine takılıp yanılır; oysa tek bakman gereken yer, su çizgisinin altında kalan parçaların sayısıdır 🚀.",
+    "concepts": [
+      {
+        "term": "Kaldırma Kuvveti",
+        "definition": "Sıvıların, içine bırakılan cisimleri yukarı doğru itme isteğidir.",
+        "example": "Havuzda kendimizi olduğumuzdan daha hafif hissetmemizi sağlayan kuvvettir.",
+        "emoji": "🎈"
+      },
+      {
+        "term": "Batan Hacim",
+        "definition": "Bir cismin toplam boyutunun sadece sıvı seviyesinin altında kalan kısmıdır.",
+        "example": "Bir buz küpünün yarısı suyun dışındaysa, diğer yarısı onun batan hacmidir.",
+        "emoji": "🧊"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 770,
+    "subject": "FIZ",
+    "title": "Basınç Ölçer Araçlar ve Mantığı",
+    "explanation": "Olay aslında çok basit: Bazı cihazlar, gazların veya sıvıların yaptığı 'itme gücünü', yani basıncı kullanarak çalışır. Eğer bir alet hava ya da gaz tarafından itilip bükülüyorsa veya bir sıvıyı yukarı kaldırıyorsa, o artık bir basınç ölçerdir 🎯. Mesela dışarıdaki havanın ağırlığını ölçmekten tutun, kapalı bir tüpteki gazın baskısını görmeye kadar hepsi aynı mantıkla işler.\n\nŞimdi şıklara beraber bakalım. Barometre, dışarıdaki açık hava basıncını ölçer. Manometre, kapalı kaptaki gaz basıncına bakar. Altimetre ise şöyle çalışır: Yukarı çıktıkça hava basıncı düştüğü için, bu azalmayı takip ederek yüksekliği hesaplar 🚀. Ancak Kronometre tamamen farklıdır; basınçla değil, zamanın akışıyla ilgilenir. Çoğu kişi tüm cihazlar '-metre' ile bittiği için hepsinin benzer olduğunu sanıp yanılır ama cevap kesinlikle D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "Barometre",
+        "definition": "Atmosferdeki, yani açık havadaki basıncı ölçen araçtır.",
+        "example": "Havanın durumunu takip edip yağmur yağacağını tahmin etmek için kullanılır.",
+        "emoji": "☁️"
+      },
+      {
+        "term": "Manometre",
+        "definition": "Kapalı bir kap içerisindeki gazın yaptığı basıncı ölçen düzenektir.",
+        "example": "Bir tüpün veya lastiğin içindeki hava basıncını ölçmek gibi.",
+        "emoji": "🎈"
+      },
+      {
+        "term": "Altimetre",
+        "definition": "Hava basıncındaki değişimi kullanarak deniz seviyesinden yüksekliği bulan araçtır.",
+        "example": "Pilotların uçuş sırasında hangi yükseklikte olduklarını görmesini sağlar.",
+        "emoji": "🏔️"
+      },
+      {
+        "term": "Kronometre",
+        "definition": "Belirli bir zaman aralığını hassas şekilde ölçen saat türüdür.",
+        "example": "Koşu yarışlarında sporcuların kaç saniyede bitirdiğini ölçmek.",
+        "emoji": "⏱️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 771,
+    "subject": "FIZ",
+    "title": "Yaylarda Atma Yansıması ve İletilmesi",
+    "explanation": "Bak şimdi, olay aslında çok basit: Bir yayın ucunda başka bir yay varsa, gelen atma buraya çarptığında hem geri döner (yansıma) hem de diğer yaya geçer (iletim). Burada bilmen gereken altın kural şu; frekans dediğimiz şey dalganın \"kalp atışıdır\" ve sadece kaynağa bağlıdır, yani yol boyunca asla değişmez 🎯. Hız ise tamamen üzerinden geçtiği malzemeye bağlıdır; malzeme aynıysa hız da aynıdır.\n\nŞimdi maddelere bakalım: I. maddede gelen ve yansıyan atma ikisi de aynı kalın yayda olduğu için hızları aslında aynıdır, burada çoğu kişi yanılıp hızı farklı sanıyor. II. maddede dediğim gibi, frekans kaynağın imzası gibidir, yansırken de iletilirken de asla değişmez ✔️. III. maddede ise gelen enerji, sanki ikiye bölünüyor gibi düşün; bir kısmı geri dönerken bir kısmı karşıya geçer, yani enerji paylaşılır ⚡. Bu yüzden doğru cevap C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "frekans",
+        "definition": "Bir dalganın saniyedeki titreşim sayısıdır ve sadece dalgayı oluşturan kaynağa bağlıdır.",
+        "example": "Ses tellerimiz belli bir frekansta titrer ve bu ses hava veya su fark etmeksizin aynı frekansta yayılır.",
+        "emoji": "🎵"
+      },
+      {
+        "term": "yansıma",
+        "definition": "Bir dalganın farklı özelliklere sahip bir ortama çarptığında tekrar eski ortama geri dönmesidir.",
+        "example": "Işığın aynaya çarpıp geri gelmesi gibi, yayın ucundaki atmanın geri dönmesi.",
+        "emoji": "↩️"
+      },
+      {
+        "term": "iletim",
+        "definition": "Gelen dalganın bir kısmının sınırı geçip yeni ortama aktarılmasıdır.",
+        "example": "Kalın yaydaki hareketin ince yaya geçerek orada devam etmesi.",
+        "emoji": "➡️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 773,
+    "subject": "FIZ",
+    "title": "Dalgaların Hızı Neye Bağlıdır?",
+    "explanation": "Olayın özü şu: Dalgalar kendi başlarına gitmezler, mutlaka bir malzeme üzerinden (yani bir ortamdan) ilerlerler. Bu dalganın ne kadar hızlı gideceğini belirleyen tek şey, üzerinde gittiği yolun yani ortamın fiziksel özellikleridir. Şöyle düşün; asfalt yolda farklı, çamurlu yolda farklı hızla gidersin. İşte dalgalar için de durum aynıdır; hava ısınırsa, su derinleşirse ya da kullandığın yay kalınlaşırsa, dalganın hızı da buna bağlı olarak değişir ⚡.\n\nŞimdi şıklara baktığımızda; sıcaklık, basınç, suyun derinliği veya yayın ağırlığı dediğimiz her şey aslında ortamın fiziksel özellikleridır. Dolayısıyla bunlar değiştiğinde hızın sabit kalması imkansızdır. Tüm bu durumu tek bir çatıda toplayan ve \"madem yol değişiyor, hız da değişir\" diyen doğru cevap D şıkkıdır 🎯. Burada çoğu kişi frekansı veya genliği hızla karıştırıp yanılır ama unutma, hıza sadece ortam karar verir 👀.",
+    "concepts": [
+      {
+        "term": "ortamın fiziksel özellikleri",
+        "definition": "Dalganın içinden geçtiği maddenin sıcaklığı, yoğunluğu, derinliği veya gerginliği gibi yapısal durumlarıdır.",
+        "example": "Suyun derin olması veya havanın çok sıcak olması.",
+        "emoji": "🌡️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 774,
+    "subject": "FIZ",
+    "title": "Boyuna ve Enine Dalgaları Şipşak Ayırma",
+    "explanation": "Olayın mantığı aslında çok basit: Enerji nereye gidiyor, ortamdaki maddeler nasıl sallanıyor? Eğer maddeler enerjinin gittiği yöne dik, yani yukarı-aşağı veya sağa-sola sallanıyorsa buna enine dalga diyoruz. Ama maddeler tıpkı bir akordeon gibi ileri-geri, yani enerjiyle aynı doğrultuda itilip çekiliyorsa buna da boyuna dalga denir. İşin sırrı, hareketin \"dik\" mi yoksa \"paralel\" mi olduğunda saklı 💡.\n\nŞimdi şıklara bakalım: Işık gibi elektromanyetik dalgalar hep yanlardan sallanarak ilerleyen enine dalgalardır. Su dalgalarında yüzey aşağı-yukarı hareket ettiği için onlar da enine kabul edilir. Deprem ise hem itmeli (boyuna) hem de sallantılı (enine) dalgalardan oluştuğu için \"sadece」 boyuna diyemeyiz. Ancak ses, hava moleküllerini birbirine çarptırarak, onları ileri geri iterek ilerler; yani tamamen paralel hareket eder 🎯. Bu yüzden cevap A şıkkıdır. Çoğu kişi deprem dalgalarının sadece tek tip olduğunu sanıp D'ye düşer ama deprem karma bir yapıdadır.",
+    "concepts": [
+      {
+        "term": "boyuna dalga",
+        "definition": "Ortamdaki taneciklerin, dalganın yayılma yönüyle aynı doğrultuda (paralel) titreştiği dalga türüdür.",
+        "example": "Havadaki ses dalgaları",
+        "emoji": "🔊"
+      },
+      {
+        "term": "enine dalga",
+        "definition": "Ortamdaki taneciklerin, dalganın yayılma yönüne dik olarak titreştiği dalga türüdür.",
+        "example": "Gerilmiş bir ipteki dalgalanmalar",
+        "emoji": "〰️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 775,
+    "subject": "FIZ",
+    "title": "Ses Dalgalarında Grafik Okuma Rehberi",
+    "explanation": "Ses dalgası grafiklerinde işin sırrı sadece üç noktaya odaklanmakta: Tepelerin yüksekliği bize sesin gücünü yani genliği verir. İki tepe arası mesafe ise dalga boyudur. Eğer dalgalar birbirine çok yakınsa ve aynı uzunluğa çok sayıda dalga sığmışsa, orada frekans yüksektir ⚡️.\n\nŞimdi beraber bakalım: Grafikte merkezden yukarıya en çok uzanan dalga K olduğu için genlik en büyüktür, yani II doğru. Kareleri saydığımızda aynı boşlukta en çok tekrar eden, yani en sıkışık duran dalga L olduğundan frekans da onda en büyüktür, bu yüzden I doğru 🎯. M dalgasının iki tepesi arasındaki mesafe en geniş olmadığı için III yanlıştır. Buradaki en büyük tuzak, dalganın boyu uzadıkça frekansın da artacağını sanmaktır; aslında dalga boyu arttıkça frekans azalır. Bu durumda doğru şık B oluyor.",
+    "concepts": [
+      {
+        "term": "genlik",
+        "definition": "Dalganın denge noktasından aldığı maksimum uzaklıktır; seslerde şiddeti (volümü) belirler.",
+        "example": "Bağırdığımızda dalganın tepeleri yükselir, yani genlik artar.",
+        "emoji": "🔊"
+      },
+      {
+        "term": "dalga boyu",
+        "definition": "Birbirini takip eden iki tepe veya iki çukur arasındaki yatay mesafedir.",
+        "example": "Geniş aralıklı dalgalarda dalga boyu büyüktür.",
+        "emoji": "📏"
+      },
+      {
+        "term": "frekans",
+        "definition": "Birim zamanda üretilen dalga sayısıdır; sesin ince veya kalın çıkmasını sağlar.",
+        "example": "Sıkışık dalgalar yüksek frekanstır ve daha ince bir ses verir.",
+        "emoji": "🎼"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 776,
+    "subject": "FIZ",
+    "title": "Işık Şiddeti Neye Bağlıdır?",
+    "explanation": "Olayı şöyle düşün: Elinde bir fener var ve karşıdaki duvara tutuyorsun. Duvarın ne kadar parlak göründüğü, yani aydınlanma şiddeti aslında sadece üç şeye bakar: Fenerin ne kadar güçlü olduğu, duvara ne kadar yakın olduğun ve feneri hangi açıyla tuttuğun. Eğer feneri daha güçlü bir modelle değiştirirsen ya da duvara iyice yaklaşırsan ışık artar; ama yan tutarsan ışık dağılacağı için azalır 🔦.\n\nŞıklara baktığımızda; uzaklık (A), kaynağın gücü (B) ve geliş açısı (D) az önce saydığımız temel faktörlerdir. Ancak yer çekimi ivmesi dediğimiz şey cisimleri yere çeken kuvvettir ve ışık fotonlarının bir yüzeye çarpma miktarını değiştirmez. Yani ayda da olsan dünyada da olsan aynı lamba aynı mesafeden aynı ışığı verir 🎯. Bu yüzden cevap C şıkkıdır. Çoğu kişi 'yer çekimi her şeyi etkiler' diye düşünüp burada yanılır, ama ışık buna bakmaz.",
+    "concepts": [
+      {
+        "term": "aydınlanma şiddeti",
+        "definition": "Birim yüzeye düşen ışık akısının miktarıdır; kısaca bir yerin ne kadar aydınlık olduğudur.",
+        "example": "Gece lambasına yaklaştığında masanın üzerinin daha parlak görünmesi.",
+        "emoji": "💡"
+      },
+      {
+        "term": "yer çekimi ivmesi",
+        "definition": "Kütlesi olan cisimlerin birbirini çekmesi sonucu oluşan hızlanmadır, tamamen mekanik bir olaydır.",
+        "example": "Elindeki kalemi bıraktığında yere düşmesini sağlayan kuvvet.",
+        "emoji": "🌍"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 777,
+    "subject": "FIZ",
+    "title": "Işık Akısı: Küre Büyüse de Işık Değişmez!",
+    "explanation": "Olayın özü şu: Bir ampulün ne kadar güçlü olduğu onun ışık şiddeti ile belirlenir. Bu ampulden çevreye yayılan tüm ışık çizgilerinin toplamına ise ışık akısı diyoruz. Yani ışık akısı, sadece kaynağın kendisine bağlıdır; ampulü ister küçük bir kutuya, ister devasa bir stadyuma koyun, ampul aynıysa dışarı saldığı toplam ışık miktarı asla değişmez 💡.\n\nBuradaki üç farklı kürede de ışık şiddeti aynı yani hep $I$ olarak verilmiş. Kürelerin yarıçaplarının $r, 2r$ veya $3r$ olması, sadece ışığın dağıldığı alanı değiştirir ama ampulden çıkan toplam ışık miktarını etkilemez. Kaynaklar aynı olduğu için hepsinin ışık akısı birbirine eşittir ve cevap D şıkkıdır. Çoğu kişi \"küre büyüdükçe alan artıyor, o zaman akı da artar\" diye düşünerek yanılır; ancak biz burada birim alandaki parlaklığı değil, toplam ışık paketini hesaplıyoruz 🎯.",
+    "concepts": [
+      {
+        "term": "ışık şiddeti",
+        "definition": "Bir ışık kaynağının birim zamanda yaydığı ışık gücüdür; yani lambanın markasıyla gelen kapasitesidir.",
+        "example": "100 watt'lık bir ampul, 40 watt'lığa göre daha yüksek ışık şiddetine sahiptir.",
+        "emoji": "☀️"
+      },
+      {
+        "term": "ışık akısı",
+        "definition": "Kaynağın her yöne yaydığı toplam ışık miktarıdır ve formülü $\\Phi = 4\\pi I$ şeklindedir.",
+        "example": "Lambanın etrafını hangi boyutta kaplarsanız kaplayın, toplam çıkan ışık miktarı sabit kalır.",
+        "emoji": "📦"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 778,
+    "subject": "FIZ",
+    "title": "Işığı Yakalamak: Işık Akısı Nedir?",
+    "explanation": "Olayın özü aslında çok basit: Bir ampulden çıkan tüm ışıklara değil, sadece senin belirlediğin bir yüzeye \"çarpan\" ışık miktarına bakıyoruz. Bunu şöyle düşün; musluktan akan suyun tamamı ışık şiddetiyse, elini altına tuttuğunda avucuna dolan su miktarı ışık akısıdır. Yani ışık akısı, kaynağından çıkıp belirli bir bölgeye ulaşmayı başaran toplam ışın sayısıdır 🔦.\n\nSoruda bizden istenen şey, yüzey üzerine \"düşen\" ışın miktarı olduğu için cevap direkt ışık akısı olur. Burada çoğu kişi aydınlanma şiddeti ile karıştırır ancak aydınlanma, o yüzeyin ne kadar parlak göründüğüyle ilgilidir; bizim aradığımız ise sadece gelen ışınların toplam sayısıdır 🎯. Bu yüzden doğru şık A seçeneğidir.",
+    "concepts": [
+      {
+        "term": "ışık akısı",
+        "definition": "Bir ışık kaynağından çıkan ve belirli bir yüzeye çarpan toplam ışın miktarıdır.",
+        "example": "El fenerini duvara tuttuğunda duvardaki aydınlık bölgeye çarpan tüm ışınlar.",
+        "emoji": "🌊"
+      },
+      {
+        "term": "ışık şiddeti",
+        "definition": "Işık kaynağının birim zamanda her yöne yaydığı toplam ışık miktarı, yani kaynağın kendi gücüdür.",
+        "example": "10 Watt'lık ampulle 100 Watt'lık ampulün güç farkı.",
+        "emoji": "🌟"
+      },
+      {
+        "term": "aydınlanma şiddeti",
+        "definition": "Birim yüzeye düşen ışık akısı miktarıdır; yani yüzeyin ne kadar güçlü aydınlandığını gösterir.",
+        "example": "Kağıdı lambaya yaklaştırdığında daha parlak görünmesi.",
+        "emoji": "💡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 779,
+    "subject": "FIZ",
+    "title": "Işığın Yansıma Açısını Şıp Diye Bulmak",
+    "explanation": "Işığın yansımasında işin sırrı, yüzeye dik olarak çizdiğimiz hayali bir çizgi olan Normal hattıdır 💡. Fizikte 'gelme açısı' veya 'yansıma açısı' denildiğinde, asla yüzeyle yapılan açı değil, her zaman bu Normal çizgisiyle yapılan açı kastedilir. Yani biz aslında hep o görünmez dik çizginin yanında ne kadar boşluk kaldığına bakarız.\n\nSoruda bize ışının yüzeyle $30^{\\circ}$ yaptığı söylenmiş ama bizim hesap için Normal'e ihtiyacımız var. Normal yüzeye tam dik indiği için orada toplam $90^{\\circ}$'lik bir alan vardır; bu yüzden $90^{\\circ}$'den elimizdeki $30^{\\circ}$'yi çıkardığımızda gelme açısının $60^{\\circ}$ olduğunu buluruz 🎯. Yansıma kanunu ise çok nettir: ışık hangi açıyla geldiyse aynı açıyla geri döner. Dolayısıyla yansıma açımız da $60^{\\circ}$ olur ve cevap C şıkkıdır. Çoğu kişi burada sadece sorudaki rakamı görüp direkt $30^{\\circ}$ işaretleme hatasına düşer, sakın sen de bu tuzağa kapılma 👀.",
+    "concepts": [
+      {
+        "term": "Normal",
+        "definition": "Yansıtıcı yüzeye tam dik (90 derece) olarak çizilen hayali yardımcı çizgi.",
+        "example": "Bir aynanın tam ortasından yukarı doğru çıkan dik çizgi.",
+        "emoji": "📏"
+      },
+      {
+        "term": "gelme açısı",
+        "definition": "Gelen ışın ile Normal çizgisi arasında kalan açı.",
+        "example": "Işın Normal'den 40 derece sapmışsa gelme açısı 40 derecedir.",
+        "emoji": "📉"
+      },
+      {
+        "term": "yansıma kanunu",
+        "definition": "Işığın geliş açısı ile yansıma açısının birbirine tıpatıp eşit olması kuralı.",
+        "example": "60 dereceyle gelen ışın, yine 60 dereceyle yansır.",
+        "emoji": "🔄"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 781,
+    "subject": "FIZ",
+    "title": "Renklerin Gizemi: Neden Siyah Görünür?",
+    "explanation": "Aslında olay çok basit: Bir cisim hangi renkse, sadece o rengi sevip geri yansıtır, diğer tüm renkleri ise sünger gibi emer yani soğurur. Mesela beyaz ışık dediğimiz şey aslında tüm renklerin paket halidir; içine kırmızı, mavi, yeşil hepsi vardır 🌈. Eğer bir kitap beyaz ışık altında yeşil görünüyorsa, bu kitabın \"Ben sadece yeşili yansıtırım, geri kalan her şeyi yutarım\" dediği anlamına gelir.\n\nŞimdi işin püf noktasına gelelim: Biz bu yeşil kitaba sadece kırmızı ışık tutarsak ne olur? Kitap yine eski alışkanlığıyla sadece yeşili yansıtmak ister ama ortalıkta hiç yeşil ışık yoktur, sadece kırmızı vardır. Kitap, kırmızı rengi zaten sevmediği için onu da hemen soğurma yoluyla yutar ⚡. Gözümüze geri dönecek hiçbir ışık kalmadığında ise biz orayı karanlık, yani siyah görürüz. Birçok kişi kitabın renginin değişmeyeceğini sanıp \"Yeşil\" şıkkına düşer ama cevap kesinlikle D şıkkıdır 🎯.",
+    "concepts": [
+      {
+        "term": "beyaz ışık",
+        "definition": "Tüm görünür renklerin bir arada bulunduğu karma ışık türüdür.",
+        "example": "Güneşten gelen doğal ışık beyaz ışıktır.",
+        "emoji": "☀️"
+      },
+      {
+        "term": "yansıtır",
+        "definition": "Işığın bir yüzeye çarpıp geri dönmesi, yani aynadaki gibi geri püskürtülmesidir.",
+        "example": "Ayna ışığı neredeyse tamamen yansıtır.",
+        "emoji": "🪞"
+      },
+      {
+        "term": "soğurma",
+        "definition": "Işığın madde tarafından tutulması ve ısıya dönüşerek yok olmasıdır.",
+        "example": "Siyah bir tişörtün güneşte daha çok ısınması, ışığı soğurduğunu gösterir.",
+        "emoji": "🧽"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1717,
+    "subject": "FIZ",
+    "title": "Fiziğin Alt Dalları: İşin Püf Noktası",
+    "explanation": "Fizik evrendeki her şeyi incelediği için konu çok geniştir; bu yüzden işleri kolaylaştırmak adına fiziği belli başlı bölümlere ayırmışlar. Buna fiziğin alt dalı diyoruz. Buradaki en önemli taktik şu: Soruda hangi anahtar kelimeyi görüyorsan cevaba oradan gidersin. Mesela ışık diyorsa optik, ısı diyorsa termodinamik, hareket diyorsa mekanik, \"yük\", \"akım\" veya \"elektron\" diyorsa direkt elektriğe odaklanmalısın ⚡️.\n\nSoruya baktığımızda karşımıza proton, elektron ve özellikle elektrik yükleri kelimeleri çıkıyor. Bu üçü de bize doğrudan elektriksel etkileşimleri hatırlattığı için cevap B şıkkındaki Elektrik olur 🎯. Çoğu kişi burada atom kelimesini görünce kafasını karıştırıp başka yere gidebilir ama buradaki asıl olay atomun kendisi değil, onun içindeki yüklerin birbirini itmesi veya çekmesidir.",
+    "concepts": [
+      {
+        "term": "fiziğin alt dalı",
+        "definition": "Fiziğin kapsamı çok geniş olduğu için konuların daha rahat incelenmesini sağlayan özel çalışma alanlarıdır.",
+        "example": "Optik sadece ışıkla ilgilenirken, Mekanik kuvvet ve hareketle ilgilenir.",
+        "emoji": "🔍"
+      },
+      {
+        "term": "elektrik yükleri",
+        "definition": "Maddelerin atom yapısında bulunan, artı (+) veya eksi (-) işaretle gösterilen elektriksel özelliklerdir.",
+        "example": "Elektronların negatif (-), protonların pozitif (+) yüklü olması.",
+        "emoji": "🔋"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1718,
+    "subject": "FIZ",
+    "title": "Temel ve Türetilmiş Büyüklüklerin Mantığı",
+    "explanation": "Fiziğin dünyasında bazı şeyler \"alfabe\" gibidir, yani onları oluşturmak için başka bir şeye ihtiyaç duymazsın; bunlara temel büyüklükler diyoruz. Diğer her şey ise bu alfabelerin birleşmesiyle oluşan kelimeler gibidir, onlara da türetilmiş büyüklükler denir. İşin sırrı şu: Eğer bir şeyi ölçmek için sadece tek bir araç (cetvel, saat gibi) yetiyorsa temele yakınızdır ama işin içine çarpma, bölme gibi işlemler giriyorsa o artık türetilmiştir 💡. Bunları karıştırmamak için hepimiz \"KISAMAL\" (Kütle, Işık şiddeti, Sıcaklık, Akım şiddeti, Madde miktarı, Uzunluk, Zaman) kısaltmasını kullanırız.\n\nŞimdi şıklara bakalım. A şıkkındaki uzunluk, hem KISAMAL listemizde yer alan hem de tek başına ölçebildiğimiz bir temel büyüklüktür 🎯. Ancak hacim dediğimizde uzunluğu üç kez çarpmamız gerekir, basınç ve kuvvet ise kütle ve hız gibi farklı şeylerin birleşimiyle ortaya çıkar; yani bunlar türetilmiştir. Çoğu kişi hacmi günlük hayatta çok kullandığı için temel sanıp yanılır, ama hesaplama gerekiyorsa o kesinlikle türetilmiştir. Bu yüzden doğru cevabımız A şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "temel büyüklükler",
+        "definition": "Tanımlanması için başka hiçbir büyüklüğe ihtiyaç duyulmayan, standart kabul edilen ölçümlerdir.",
+        "example": "Zaman (saniye ile ölçülür)",
+        "emoji": "🔑"
+      },
+      {
+        "term": "türetilmiş büyüklükler",
+        "definition": "Birden fazla temel büyüklüğün çarpılması veya bölünmesiyle elde edilen büyüklüklerdir.",
+        "example": "Hız (yolun zamana bölünmesiyle bulunur)",
+        "emoji": "⚙️"
+      },
+      {
+        "term": "uzunluk",
+        "definition": "İki nokta arasındaki mesafeyi belirten temel fiziksel büyüklüktür.",
+        "example": "Bir masanın boyunun 1 metre olması",
+        "emoji": "📏"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1719,
+    "subject": "FIZ",
+    "title": "Skaler ve Vektörel Büyüklüklerin Mantığı",
+    "explanation": "Fizikte olaylar ikiye ayrılır: Bazı şeyleri söylemek için sadece miktar (sayı ve birim) yeterlidir, bazıları içinse mutlaka 'hangi yöne?' sorusunu cevaplamak gerekir. Eğer bir şeyi tarif ederken yön belirtmenize gerek yoksa buna skaler büyüklük diyoruz; ama yön olmazsa ifade eksik kalıyorsa buna da vektörel büyüklük denir. İşin sırrı, cevabın yanına 'doğuya doğru' veya 'yukarıya doğru' eklediğinizde anlamlı olup olmadığına bakmakta 🎯.\n\nŞimdi şıklara beraber bakalım. Mesela kuvvet uygularsanız nesneyi belli bir yöne itersiniz, ivme hızı hangi yönde değiştirdiğinizi söyler, hız ise nereye gittiğinizi belirtir; yani bunlar yön isteyen vektörel büyüklüklerdir. Ancak özkütle dediğimizde maddenin yoğunluğunu kastederiz; örneğin suyun yoğunluğu $1\\text{ g/cm}^3$'tür deriz ve kimse 'hangi yöne doğru yoğun?' diye sormaz çünkü bunun bir yönü yoktur 💡. Bu yüzden doğru cevap D şıkkıdır. Çoğu kişi hız ile sürati karıştırdığı için burada takılır ama hız her zaman yön içeren bir vektördür 👀.",
+    "concepts": [
+      {
+        "term": "skaler büyüklük",
+        "definition": "Sadece sayı ve birimle ifade edilen, yönü olmayan fiziksel niceliklerdir.",
+        "example": "Sıcaklığın $25^{\\circ}\\text{C}$ olması veya kütlenin $5\\text{ kg}$ olması.",
+        "emoji": "⚖️"
+      },
+      {
+        "term": "vektörel büyüklük",
+        "definition": "Tam olarak anlaşılması için sayı ve birimin yanında mutlaka yön bilgisinin de verilmesi gereken niceliklerdir.",
+        "example": "Arabanın kuzeye doğru $90\\text{ km/h}$ hızla gitmesi.",
+        "emoji": "➡️"
+      },
+      {
+        "term": "özkütle",
+        "definition": "Bir maddenin birim hacmindeki kütle miktarıdır; yönü olmayan bir değerdir.",
+        "example": "Demirin özkütlesinin sudan daha fazla olması.",
+        "emoji": "🧪"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1720,
+    "subject": "FIZ",
+    "title": "Hacim Dönüştürme: Desimetreküp ve Litre",
+    "explanation": "Hacim dediğimiz şey aslında bir maddenin boşlukta kapladığı yerdir. Fizikte bazen bu alanı kutu gibi düşünerek $\\text{dm}^3$ (desimetreküp) ile, bazen de şişe gibi düşünerek Litre ile ölçeriz. İşin sırrı şu: Bu iki birim aslında birbirinin tıpatıp aynısıdır; sadece isimleri farklıdır. Yani $1 \\text{ dm}^3$ gördüğün her yere gönül rahatlığıyla $1 \\text{ Litre}$ yazabilirsin. 💡\n\nElimizde $10 \\text{ dm}^3$ su var. Az önce öğrendiğimiz altın kuralı uygularsak, $1 \\text{ dm}^3 = 1 \\text{ L}$ olduğu için buradaki rakamı hiç değiştirmeden sadece birimin adını değiştiriyoruz: $10 \\text{ dm}^3 = 10 \\text{ L}$ olur. Doğru cevap C şıkkıdır. Çoğu kişi \"desi\" kelimesini görünce kafası karışıp sayıyla 10'u çarpmaya veya bölmeye çalışır ama hacimde bu ikisi bire bir eşittir, sakın işlem yaparak sonucu bozma! 🎯",
+    "concepts": [
+      {
+        "term": "hacim",
+        "definition": "Bir maddenin uzayda kapladığı toplam alan.",
+        "example": "Bir sürahinin içine doldurduğun suyun kapladığı yer.",
+        "emoji": "📦"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1721,
+    "subject": "FIZ",
+    "title": "Özkütlenin Gizemi: Miktar Değişince Ne Olur?",
+    "explanation": "İşin sırrı şu: özkütle dediğimiz şey aslında bir maddenin \"kimlik kartı\" gibidir. Maddenin miktarı ister bir damla olsun ister koca bir kova, eğer madde değişmiyorsa özkütlesi de asla değişmez. Formüldeki $d = \\frac{m}{V}$ ifadesi bize şunu söyler: Kütleyi ($m$) hacme ($V$) böldüğümüzde çıkan sonuç sadece o maddeye özeldir 💡.\n\nŞimdi sorumuza bakalım; bardağın yarısını döktüğümüzde elimizdeki suyun kütlesi yarıya iner, ama kapladığı alan yani hacmi de aynı oranda yarıya iner. Pay da payda da aynı oranda $(\\frac{1}{2})$ küçüldüğü için birbirlerini dengelerler ve sonuçta bölme işleminin sonucu sabit kalır. Yani başlangıçta $1 \\text{ g/cm}^3$ olan özkütle, su hala su olduğu için yine $1 \\text{ g/cm}^3$ olur ve cevap C şıkkıdır. Çoğu kişi burada \"miktar azaldıysa özkütle de azalır\" diye düşünerek tuzağa düşer ama madde aynı kaldığı sürece rakam değişmez 🎯.",
+    "concepts": [
+      {
+        "term": "özkütle",
+        "definition": "Bir maddenin birim hacmindeki kütlesidir; maddenin cinsine bağlı olan ve miktarla değişmeyen karakteristik özelliğidir.",
+        "example": "Demirin özkütlesi sabittir; ister küçük bir çivi olsun ister dev bir kiriş, özkütlesi hep aynıdır.",
+        "emoji": "🔑"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1722,
+    "subject": "FIZ",
+    "title": "Su Damlaları Neden Yapışır?",
+    "explanation": "Olayın sırrı aslında çok basit: Moleküller ya kendi arkadaşlarıyla takılırlar ya da yabancılarla. Eğer aynı türdeki moleküller (mesela su ile su) birbirini tutup kenetleniyorsa buna kohezyon diyoruz. Ama eğer farklı türdeki iki madde (mesela su ile cam) birbirine tutunup yapışıyorsa, işte orada devreye adezyon giriyor 🤝. Yani \"yapışma\" kelimesini gördüğün an aklına hemen farklı türlerin aşkı gelmeli.\n\nSorumuza dönersek; elimizde su var ama yapıştığı şeyler yaprak veya cam. Su ile cam farklı maddeler olduğu için burada gerçekleşen çekim kuvveti direkt adezyondur 🎯. Bu yüzden doğru cevap B şıkkıdır. Çoğu kişi burada damlanın yuvarlak şekline bakıp yüzey gerilimiyle karıştırır ancak bizden istenen şey damlanın şekli değil, başka bir yüzeye nasıl tutunduğudur 👀.",
+    "concepts": [
+      {
+        "term": "adezyon",
+        "definition": "Birbirinden farklı iki maddenin molekülleri arasındaki çekim kuvveti, yani yapışmadır.",
+        "example": "Yağmur damlasının cama asılı kalması",
+        "emoji": "💧"
+      },
+      {
+        "term": "kohezyon",
+        "definition": "Aynı türdeki moleküllerin birbirini çekip bir arada tutma isteğidir.",
+        "example": "Suyun küresel damlalar oluşturması",
+        "emoji": "⚪"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1723,
+    "subject": "FIZ",
+    "title": "Yüzey Gerilimi Nedir, Nasıl Değişir?",
+    "explanation": "Olayın mantığı aslında çok basit: Sıvıların yüzeyi, sanki görünmez esnek bir çarşafla kaplı gibidir. Bu durum, aynı türdeki moleküllerin birbirini sıkıca tutmasıyla oluşur. Buna yüzey gerilimi diyoruz 💧. Ama her sıvının molekül gücü aynı değildir; mesela cıva ile alkolün birbirini tutma kapasitesi farklı olduğu için tüm maddelerin yüzey gerilimi asla eşit olmaz.\n\nŞimdi seçeneklere bakalım. Isı arttığında moleküller daha hızlı hareket edip birbirinden uzaklaşır, yani o \"çarşaf\" gevşer; bu yüzden sıcaklık yüzey gerilimini kesinlikle değiştirir 🌡️. Suya tuz eklediğimizde ise tuz molekülleri suyla güçlü bağlar kurarak yüzeyi daha da sağlamlaştırır, yani yüzey gerilimi artar 🧂. Çoğu kişi burada sabunla tuzu karıştırıp yanılır; sabun gerilimi azaltırken tuz artırır. Bu durumda II ve III doğru olduğundan cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "yüzey gerilimi",
+        "definition": "Sıvı yüzeyindeki moleküllerin birbirini çekerek yüzeyi mümkün olduğunca küçük tutmaya çalışmasıdır.",
+        "example": "Suyun üzerine bırakılan ataşın batmaması.",
+        "emoji": "💧"
+      },
+      {
+        "term": "sıcaklık",
+        "definition": "Moleküllerin ortalama kinetik enerjisinin bir ölçüsüdür; arttıkça moleküler bağlar zayıflar.",
+        "example": "Kaynar suyun yüzey geriliminin soğuk suya göre daha düşük olması.",
+        "emoji": "🌡️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1724,
+    "subject": "FIZ",
+    "title": "Yer Değiştirme Mantığıyla Kolayca Çöz",
+    "explanation": "Günlük hayatta 'ne kadar yol gittin?' dediğimizde tüm adımlarımızı toplarız ama fizikte yer değiştirme farklıdır. Yer değiştirme, başladığın nokta ile bitirdiğin nokta arasındaki en kısa düz çizgidir; yani sadece 'nereden nereye geldin?' sorusuna cevap verir. Bu yüzden yer değiştirme, yönü olan bir vektörel büyüklük olarak kabul edilir 📍.\n\nŞimdi Ahmet'in durumuna bakalım. Ahmet önce doğuya doğru 100 metre gitmiş. Sonra tam ters yöne, yani batıya doğru 80 metre geri dönmüş. Yönler zıt olduğu için bu iki rakamı toplamıyoruz, aksine ilk gittiği yoldan geri döndüğü kısmı çıkarıyoruz ↔️. İşlemimiz şöyle oluyor: $100 - 80 = 20$ metre. Çoğu kişi burada rakamları toplayıp 180 cevabına gider ancak bu sadece yürütülen toplam yoldur, yer değiştirme değildir. Doğru cevabımız C şıkkıdır 🎯.",
+    "concepts": [
+      {
+        "term": "yer değiştirme",
+        "definition": "Bir hareketlinin ilk konumu ile son konumu arasındaki en kısa mesafe ve yönüdür.",
+        "example": "Evden çıkıp markete gidip tekrar eve dönerseniz, yer değiştirmeniz sıfırdır.",
+        "emoji": "🚩"
+      },
+      {
+        "term": "vektörel büyüklük",
+        "definition": "Sadece sayısal değerle değil, aynı zamanda yönle ifade edilen fiziksel niceliklerdir.",
+        "example": "Kuvvet veya hız gibi büyüklüklerin hangi yöne doğru olduğunu söylememiz gerekir.",
+        "emoji": "➡️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1725,
+    "subject": "FIZ",
+    "title": "Süratin Mantığıyla Kolayca Çöz",
+    "explanation": "Sürat dediğimiz şey aslında çok basittir; bir aracın ne kadar yolu, ne kadar sürede gittiğine bakar. Burada işin sırrı şu: Araç nerede durdu, nerede hızlandı diye düşünmene gerek yok. Sadece başladığı anki konumuna ve vardığı son noktaya bakıp toplam mesafeyi toplam zamana bölmelisin 🎯.\n\nTabloya baktığımızda, bisikletçi 0. saniyede 0 metredeyken, 30. saniyeye geldiğinde 30 metreye ulaşmış. Yani toplam alınan yol için $30 - 0 = 30$ metre işlemini yaparız. Aynı şekilde toplam süre de başlangıçtan sona kadar $30 - 0 = 30$ saniye geçmiş olur. Şimdi bu iki değeri birbirine oranlayalım: $\\frac{30 \\text{ metre}}{30 \\text{ saniye}} = 1$ m/s sonucuna ulaşırız ⚡. Doğru cevap A şıkkıdır. Genelde öğrenciler tablodaki her satırı tek tek hesaplayıp toplama hatasına düşer ama sadece uç noktalara bakmak seni doğrudan sonuca götürür 👀.",
+    "concepts": [
+      {
+        "term": "toplam alınan yol",
+        "definition": "Hareketlinin izlediği yörüngedeki tüm mesafelerin toplamıdır.",
+        "example": "Evden markete 50m gidip geri dönen biri toplam 100m yol almış olur.",
+        "emoji": "📏"
+      },
+      {
+        "term": "toplam süre",
+        "definition": "Harekete başlandığı an ile hareketin bittiği an arasındaki zaman farkıdır.",
+        "example": "Saat 10:00'da çıkıp 10:30'da varan birinin toplam süresi 30 dakikadır.",
+        "emoji": "⏱️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 1726,
+    "subject": "FIZ",
+    "title": "Dokunarak mı, Uzaktan mı? Kuvvet Türleri",
+    "explanation": "Olayın sırrı aslında çok basit: Bazı şeyler birbirini hareket ettirmek için mutlaka dokunmak zorundadır, bazıları ise uzaktan \"sihirli\" bir şekilde etkileyebilir 💡. Eğer iki şey birbirine değiyorsa buna Temas Gerektiren Kuvvetler diyoruz (kapıyı itmek gibi). Ama eğer arada boşluk varken bir çekme veya itme oluyorsa, işte buna Temas Gerektirmeyen Kuvvetler denir. Yerçekimi ya da mıknatısların gücü bunun en güzel örneğidir.\n\nŞimdi şıklara beraber bakalım: Hamuru yoğururken elimiz hamura değer, paket lastiğini çekerken parmağımız ona dokunur, futbolcu topa ayağıyla vurunca yine fiziksel bir temas olur; yani bunlar hep temas gerektiriyor 🎯. Ancak mıknatıs, demir tozlarına henüz dokunmadan onları kendine doğru çekmeye başlar. Aradaki boşluğa rağmen işe yaradığı için cevap B şıkkıdır. Burada çoğu kişi mıknatısın sonunda demire değdiğini düşünüp yanılabilir ama önemli olan kuvvetin uzaktan başlayabilmesidir 👀.",
+    "concepts": [
+      {
+        "term": "Temas Gerektiren Kuvvetler",
+        "definition": "Etkisini göstermek için iki nesnenin birbirine fiziksel olarak dokunması gereken kuvvetlerdir.",
+        "example": "Yerleri süpürmek veya bir arabayı itmek.",
+        "emoji": "🤝"
+      },
+      {
+        "term": "Temas Gerektirmeyen Kuvvetler",
+        "definition": "Nesneler arasında fiziksel bir dokunma olmadan, belirli bir mesafeden etki eden kuvvetlerdir.",
+        "example": "Dünyanın bizi yere doğru çekmesi (yerçekimi).",
+        "emoji": "🧲"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2267,
+    "subject": "FIZ",
+    "title": "Enerjinin Temeli: Joule Nedir?",
+    "explanation": "Fizikte bir şeye 'iş yaptım' diyebilmemiz için iki şart var: Bir şeyi itmeli veya çekmelisin (kuvvet uygulamalısın) ve o şey gerçekten yol almalı. İşte fiziksel iş dediğimiz olay, uyguladığın kuvvet ile gittiğin yolun çarpımıyla bulunur. Bu çarpımın sonucunda ortaya çıkan enerji birimine ise joule (J) diyoruz. Yani kısacası Joule, kuvvet ile mesafenin el ele tutuşmuş halidir 💡.\n\nŞimdi seçeneklere beraber bakalım. Formülümüz kuvvet $\\times$ yol şeklinde olduğu için, birimleri de aynı şekilde yan yana getiriyoruz: Kuvvetin birimi olan Newton (N) ile yolun birimi olan metre (m) değerlerini çarptığımızda karşımıza $N \\cdot m$ ifadesi çıkar. Buradaki nokta $(\\cdot)$ işareti sadece çarpma anlamına gelir. Böylece $N \\cdot m$ bize doğrudan joule'ü verir 🎯. Çoğu kişi birimleri birbirine karıştırıp bölme işlemi yapmaya çalışır ama iş hesabında her zaman çarpıyoruz. Bu yüzden doğru cevap A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "fiziksel iş",
+        "definition": "Bir kuvvete maruz kalan cismin, kuvvet doğrultusunda yol alması durumudur.",
+        "example": "Yerdeki ağır bir koliyi iterek karşı duvara götürmek.",
+        "emoji": "📦"
+      },
+      {
+        "term": "Newton (N)",
+        "definition": "Fizikte kuvveti ölçmek için kullandığımız standart birimdir.",
+        "example": "Bir kapıyı açmak için uyguladığın itme gücü.",
+        "emoji": "💪"
+      },
+      {
+        "term": "metre (m)",
+        "definition": "Uzunluk veya gidilen yolu ölçmek için kullanılan temel birimdir.",
+        "example": "Okul bahçesinin bir ucundan diğer ucuna yürümek.",
+        "emoji": "📏"
+      },
+      {
+        "term": "joule (J)",
+        "definition": "İş ve enerjinin ölçü birimidir; 1 Newton kuvvetle 1 metre yol alındığında yapılan işe denir.",
+        "example": "Küçük bir elmayı yerden masanın üzerine kaldırmak.",
+        "emoji": "⚡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2268,
+    "subject": "FIZ",
+    "title": "Potansiyel Enerjide En Az Kim?",
+    "explanation": "Potansiyel enerji dediğimiz şey, aslında bir nesnenin yerden yüksekte olması sayesinde kazandığı \"depolanmış\" enerjidir. Bu enerjiyi belirleyen iki ana kilit nokta vardır: Nesnenin ne kadar ağır olduğu (kütlesi) ve ne kadar yüksekte olduğu. Formülü basitçe şudur: Kütle $\\times$ Yer Çekimi $\\times$ Yükseklik ⚡. Yani eğer yükseklik aynıysa, kim daha hafifse onun enerjisi o kadar az olur.\n\nSoruya baktığımızda tüm topların aynı $h$ yüksekliğinde olduğunu görüyoruz, yani yükseklik hepsinde eşit 👀. Yer çekimi de dünya üzerinde her yerde aynıdır. O halde işin sırrı sadece kütlelere bakmakta. Topların kütleleri $3m, m, 2m$ ve $6m$ olarak verilmiş. Burada çoğu kişinin gözden kaçırdığı nokta şurası: Yanında sayı yazmayan $m$ harfi aslında $1m$ demektir. Sayıları karşılaştırdığımızda $1 < 2 < 3 < 6$ olduğu için en küçük kütle $m$ (yani L topu) olur. Kütlesi en küçük olanın yer çekimi potansiyel enerjisi de en az çıkacağı için doğru cevap B şıkkıdır 🎯.",
+    "concepts": [
+      {
+        "term": "Potansiyel enerji",
+        "definition": "Bir cismin konumu veya durumu nedeniyle sahip olduğu depolanmış enerjidir.",
+        "example": "Masanın üzerindeki bir kitabın yere düşmeden önceki enerjisi.",
+        "emoji": "🔋"
+      },
+      {
+        "term": "Kütle",
+        "definition": "Bir cismin sahip olduğu madde miktarıdır ve genellikle '$m$' harfiyle gösterilir.",
+        "example": "Bir topun $2kg$ veya $m$ kadar ağırlıkta olması.",
+        "emoji": "⚖️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2269,
+    "subject": "FIZ",
+    "title": "Ampullerde Verim Hesabı: Işık mı Isı mı?",
+    "explanation": "Enerji verimliliği dediğimiz şey aslında çok basit: Harcadığımız toplam enerjinin ne kadarı gerçekten işimize yaradı? 💡 Bir cihazdan ne bekliyorsak o bizim 'faydalı enerjimizdir'. Mesela bir ampulden ısınmayı değil, etrafı aydınlatmayı yani ışığı bekleriz. Bu yüzden hesap yaparken sadece ışık enerjisini dikkate alırız, geri kalan her şeyi (ısı gibi) çöpe atarız.\n\nŞimdi beraber hesaplayalım: Toplamda $80 \\text{ J}$ enerji verilmiş, bunun sadece $20 \\text{ J}$ kısmı ışığa dönüşmüş. İşlemi yapmak için faydalı olanı toplama bölüyoruz: $\\frac{20}{80}$. Burada önce sadeleştirme yapalım; hem üstteki 20'yi hem alttaki 80'i 20'ye bölersek karşımıza $\\frac{1}{4}$ oranı çıkar. Bu oranı yüzdeye çevirmek için 100 ile çarptığımızda $100 \\div 4 = 25$ sonucuna ulaşırız, yani cevap %25'tir ve doğru şık B olur. 🎯 Birçok kişi rakamı daha büyük diye ısı enerjisi olan 60 üzerinden işlem yaparak yanılır ama unutma, ampul ısıtıcı değil, aydınlatıcıdır!",
+    "concepts": [
+      {
+        "term": "enerji verimliliği",
+        "definition": "Kullanılan toplam enerjinin ne kadarının istenen amaca hizmet ettiğini gösteren oran.",
+        "example": "Bir motorun elektrik enerjisinin %90'ını harekete dönüştürmesi.",
+        "emoji": "⚡"
+      },
+      {
+        "term": "sadeleştirme",
+        "definition": "Bir kesrin pay ve paydasını ortak bir bölenle bölerek sayıları küçültme işlemidir.",
+        "example": "$\\frac{20}{80}$ kesrini 20 ile sadeleştirip $\\frac{1}{4}$ yapmak.",
+        "emoji": "✂️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2270,
+    "subject": "FIZ",
+    "title": "Fosil Yakıtları Ayırt Etmenin En Kolay Yolu",
+    "explanation": "Bak şimdi, işin özü şu: fosil yakıtlar dediğimiz şeyler, aslında milyonlarca yıl önce yaşamış bitki ve hayvanların yer altında kalıp yüksek ısı ve basınçla değişime uğramış halidir. Yani bunları \"antik çağlardan kalan kalıntılar\" gibi düşünebilirsin. Bu kaynaklar bittiğinde tekrar oluşması için yine milyonlarca yıl gerekir, bu yüzden bunlara yenilenemez enerji diyoruz 💡.\n\nSeçeneklere baktığımızda petrol, kömür ve doğalgaz tamamen bu süreçle oluşan organik kalıntılardır; yani hepsi gerçek birer fosildir. Ancak rüzgâr, sadece havanın hareketinden dolayı ortaya çıkan bir güçtür ve herhangi bir canlının kalıntısıyla ilgisi yoktur. Hava estiği sürece orada olduğu için buna yenilenebilir enerji diyoruz ⚡. Çoğu kişi tüm doğal kaynakları aynı sanıp yanılır ama rüzgârın geçmişte yaşayan bir canlıyla bağı olmadığı için cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "fosil yakıtlar",
+        "definition": "Milyonlarca yıl önce ölen canlıların yer altında taşlaşarak enerji deposuna dönüşmüş hali.",
+        "example": "Yer altından çıkarılan kömür veya petrol.",
+        "emoji": "🛢️"
+      },
+      {
+        "term": "yenilenebilir enerji",
+        "definition": "Doğa tarafından sürekli tazelenen ve tükenmeyen enerji türleri.",
+        "example": "Güneş panelleri veya rüzgâr gülleri.",
+        "emoji": "♻️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2271,
+    "subject": "FIZ",
+    "title": "Isı mı, Sıcaklık mı? Karıştırmama Rehberi",
+    "explanation": "Günlük hayatta \"havanın ısısı\" deriz ama fizikte bu çok büyük bir hatadır. Olay aslında şu: Sıcaklık, bir maddenin ne kadar sıcak olduğunu gösteren bir ölçüdür (bir nevi termometre değeridir). Isı ise bir maddeden diğerine akan enerjinin kendisidir. ⚡ Yani derece (°C) görüyorsan orada kesinlikle sıcaklık vardır; eğer Joule (J) veya Kalori görüyorsan orada ısıdan bahsediliyordur.\n\nŞimdi seçeneklere bakalım. A ve C şıklarında \"ısı\" denilip yanına \"°C\" yazılmış; bu yanlış çünkü derece ısı birimi değildir. D şıkkında ise \"sıcaklık\" denilip yanına \"J」 verilmiş; bu da tam tersi bir hata. Sadece B şıkkında, sıcaklığı artırmak için gereken \"enerji miktarı\"ndan bahsedilmiş ve birim olarak \"J\" kullanılmış; işte bu tam olarak ısının tanımıdır. 🎯 Çoğu kişi günlük dile alışık olduğu için A veya C şıkkına kayıp hata yapar, sen sakın düşme. Doğru cevap B.",
+    "concepts": [
+      {
+        "term": "sıcaklık",
+        "definition": "Bir maddenin moleküllerinin ortalama hareket hızının bir göstergesidir, termometre ile ölçülür.",
+        "example": "Vücut ateşinin 37°C olması.",
+        "emoji": "🌡️"
+      },
+      {
+        "term": "ısı",
+        "definition": "Sıcaklık farkı nedeniyle yüksek sıcaklıktan düşük sıcaklığa doğru akan enerji türüdür.",
+        "example": "Kaynar suyun bardağa aktarılmasıyla bardağın ısınması.",
+        "emoji": "🔥"
+      },
+      {
+        "term": "Joule (J)",
+        "definition": "Enerjinin ve ısının standart bilimsel ölçü birimidir.",
+        "example": "Bir lambanın 1 saniyede harcadığı elektrik enerjisinin Joule ile ölçülmesi.",
+        "emoji": "🔋"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2272,
+    "subject": "FIZ",
+    "title": "Celsius'tan Kelvin'e Kolayca Geçiş",
+    "explanation": "Sıcaklığı ölçmek için farklı \"diller\" yani ölçekler kullanılır. Günlük hayatta kullandığımız Celsius ölçeği suyun donmasını $0^{\\circ}\\text{C}$ kabul ederken, bilim insanlarının kullandığı Kelvin ölçeği evrendeki en soğuk noktayı (mutlak sıfırı) baz alır. Bu iki ölçek arasındaki tek fark, başlangıç noktalarının kaymış olmasıdır; Kelvin her zaman Celsius'tan $273$ derece daha yukarıdan başlar. Yani elimizdeki Celsius değerini Kelvin'e çevirmek için tek yapmamız gereken üzerine $273$ eklemektir 🌡️.\n\nElimizde $47^{\\circ}\\text{C}$ değeri var. Bunu Kelvin'e çevirmek için hemen toplama işlemini yapalım: $47 + 273$. İşlemi adım adım çözersek; önce birlikleri topluyoruz $7 + 3 = 10$ (sıfırı yazdık, elde var $1$), sonra onlukları topluyoruz $4 + 7 = 11$ ve eldeki $1$'i ekleyince $12$ oluyor (ikiyi yazdık, yine elde var $1$), en son yüzlük kısmındaki $2$'ye eldeki $1$'i eklediğimizde sonuç $320$ çıkıyor 🎯. Doğru cevap C şıkkıdır. Çoğu kişi burada toplamak yerine yanlışlıkla çıkarma işlemi yaparak hata yapar, ama Kelvin'in her zaman daha büyük bir sayı olduğunu hatırlarsan bu tuzağa düşmezsin 🔑.",
+    "concepts": [
+      {
+        "term": "Celsius ölçeği",
+        "definition": "Suyun donma noktasını $0$, kaynama noktasını $100$ derece kabul eden yaygın sıcaklık birimidir.",
+        "example": "$25^{\\circ}\\text{C}$ oda sıcaklığını ifade eder.",
+        "emoji": "🌡️"
+      },
+      {
+        "term": "Kelvin ölçeği",
+        "definition": "Mutlak sıfır noktasını başlangıç alan ve bilimsel hesaplamalarda kullanılan sıcaklık birimidir.",
+        "example": "$298\\text{ K}$ yaklaşık olarak oda sıcaklığına denk gelir.",
+        "emoji": "❄️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2273,
+    "subject": "FIZ",
+    "title": "Hangi Madde Daha Çabuk Isınır?",
+    "explanation": "Buradaki işin sırrı öz ısı kavramında yatıyor. Öz ısıyı, bir maddenin sıcaklığını değiştirmeye karşı gösterdiği \"inatçılık\" gibi düşünebilirsin. Öz ısı değeri ne kadar yüksekse, madde o kadar inatçıdır ve sıcaklığını artırmak için daha çok enerji ister. Yani düşük öz ısı, kolayca ısınmak ve hızlıca soğumak demektir 💡.\n\nSoruya baktığımızda tüm maddelerin ağırlıkları (kütlesi) aynı ve hepsine verdiğimiz ısı miktarı da eşit. Bu durumda sadece öz ısı değerleri fark yaratır. Tablodaki rakamlara göz attığımızda en küçük değerin $0,03$ ile N maddesine ait olduğunu görüyoruz. En az \"inatçı\" olan yani öz ısı değeri en düşük olan madde, aldığı ısıyı hemen sıcaklık artışına çevirip resmen uçuşa geçer 🚀. Bu yüzden sıcaklığı en fazla artan madde N olur ve cevap D şıkkıdır. Genelde çoğu kişi rakamı büyük olanın daha çok ısındığını sanıp yanılır ama aslında tam tersi çalışır 🎯.",
+    "concepts": [
+      {
+        "term": "öz ısı",
+        "definition": "Bir maddenin 1 gramının sıcaklığını 1 derece artırmak için gereken ısı miktarıdır.",
+        "example": "Suyun öz ısısı yüksektir, bu yüzden geç ısınır ve geç soğur.",
+        "emoji": "🌡️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2274,
+    "subject": "FIZ",
+    "title": "Karışımlarda Isıl Denge Mantığı",
+    "explanation": "Olayın mantığı aslında çok basit: Elimizde biri sıcak diğeri daha soğuk iki sıvı var. Bunları karıştırdığımızda, sıcak olan sıvı ısı kaybedip soğurken, soğuk olan sıvı ısı alıp ısınır. Sonunda ikisi de ortak bir noktada buluşur ki biz buna denge sıcaklığı diyoruz. Yani sonuç, asla en soğuktan daha soğuk veya en sıcaktan daha sıcak olamaz; mutlaka bu iki değerin arasında bir yerde olur 🌡️.\n\nElimizdeki değerlere baktığımızda sıvılardan biri $20^{\\circ}\\text{C}$, diğeri ise $30^{\\circ}\\text{C}$. Bu durumda oluşacak yeni sıcaklığın $20$'den büyük, $30$'dan küçük olması şart. Şıkları incelediğimizde 15 sayısı çok düşük, 32 ve 50 ise çok yüksek kalıyor. Aralıktaki tek seçenek olan 25 cevabı bizi doğrudan B şıkkına götürüyor 🎯. Çoğu kişi burada hemen sayıları toplayıp ikiye bölmeye çalışır ama miktarlar farklıysa sonuç tam ortada çıkmayabilir; işin sırrı sadece iki değer arasındaki herhangi bir sayıyı seçmektir ⚡.",
+    "concepts": [
+      {
+        "term": "denge sıcaklığı",
+        "definition": "Isı alışverişi yapan maddelerin sıcaklıklarının eşitlendiği ve sabitlendiği son durumdur.",
+        "example": "Sıcak çayın içine soğuk süt ekleyince oluşan ılık hal.",
+        "emoji": "🤝"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2275,
+    "subject": "FIZ",
+    "title": "Fiziğin Alt Dalları: Duran Elektrik Nedir?",
+    "explanation": "Fizik çok geniş bir alan olduğu için işleri kolaylaştırmak adına konuları parçalara ayırmıştır. Bu bölümlerin isimleri aslında bize neyi incelediklerini fısıldar. Mesela başında \"elektro\" varsa orada mutlaka elektrikle ilgili bir şeyler vardır; sonunda \"statik」 varsa da orada bir durma, hareketsizlik durumu söz konusudur. Yani olay tamamen kelime avcılığına bakıyor 💡.\n\nSoruda bizden istenen şey hem \"elektrik yükleri\" hem de bunların \"durgun\" olması. Önce elektrik kısmını halledelim, bu bizi direkt elektro- ile başlayan şıklara yönlendirir. Sonra yanına \"durgun\" yani hareket etmeyen anlamındaki statik kelimesini eklediğimizde karşımıza Elektrostatik çıkar. Isıyla ilgilenen Termodinamik veya hareketle uğraşan Mekanik burada bizi yanıltmasın; çoğu kişi elektriği görünce hemen genel elektrik dersine odaklanır ama buradaki kilit nokta yüklerin hareket etmemesidir 🎯. Bu yüzden doğru cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "Elektrostatik",
+        "definition": "Durağan elektrik yüklerini ve bunlar arasındaki itme-çekme etkilerini inceleyen fizik dalıdır.",
+        "example": "Plastik bir tarağı saça sürünce küçük kağıt parçalarını çekmesi.",
+        "emoji": "⚡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2276,
+    "subject": "FIZ",
+    "title": "Elektrik Yüklerinin Temel Mantığı",
+    "explanation": "İşin özü şu: Maddelerin içinde protonlar (+) ve elektronlar (-) vardır. Eğer bunlar eşitse cisim nötrdür; ama biri diğerinden fazlaysa cisim yüklü hale gelir. Burada bilmen gereken en altın kural, yüklü cisimlerin asla boş durmadığıdır; ya birbirlerini iterler ya da çekerler. Yani iki yüklü cisim yan yana geldiğinde mutlaka bir elektrikle kuvvet oluşur ⚡️.\n\nŞimdi şıklara beraber bakalım. Elektron alışverişi dediğimiz olay sadece eksi yüklü elektronların bir yerden bir yere gitmesidir (B şıkkı doğru). Doğada sadece artı ve eksi olmak üzere iki cins yük bulunur (C şıkkı doğru). Nötr cisimlerde artılar ve eksiler birbirini sıfırladığı için dışarıya net bir etki vermezler (D şıkkı doğru). Ancak A şıkkında \"kuvvet uygulamaz\" diyor; işte hata burada! Çünkü yüklü cisimler birbirini ya iter ya çeker, yani kesinlikle kuvvet uygularlar 🎯. Çoğu kişi nötr olmayı tamamen yüksüz olmakla karıştırır ama aslında orada yükler vardır, sadece dengededirler. Bu yüzden yanlış olan ifade A seçeneğidir.",
+    "concepts": [
+      {
+        "term": "elektrikle kuvvet",
+        "definition": "Yüklü iki cismin birbirini itmesi veya çekmesi sonucu oluşan etkileşim.",
+        "example": "Saçımızı plastik tarağa sürttüğümüzde saç tellerinin taranınca yukarı kalkması.",
+        "emoji": "🧲"
+      },
+      {
+        "term": "elektron alışverişi",
+        "definition": "Bir maddenin başka bir maddeye eksi (-) yüklü parçacıklar vermesi veya ondan alması.",
+        "example": "Yün kumaşın plastikten elektron koparmasıyla plastiğin eksi yüklenmesi.",
+        "emoji": "🔄"
+      },
+      {
+        "term": "nötr",
+        "definition": "Pozitif ve negatif yük miktarlarının birbirine eşit olduğu, net yükün sıfır olduğu durum.",
+        "example": "Henüz sürtünmemiş, herhangi bir yükle etkileşime girmemiş temiz bir cam çubuk.",
+        "emoji": "⚖️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2277,
+    "subject": "FIZ",
+    "title": "Elektriksel Kuvvet ve Uzaklık İlişkisi",
+    "explanation": "Buradaki işin sırrı, iki yük arasındaki elektriksel kuvvetin uzaklıkla olan ilişkisinde yatıyor. Elektrik yüklü parçacıklar birbirinden uzaklaştıkça birbirlerini daha az çeker veya iterler ama bu azalma düz bir şekilde olmaz; uzaklığın karesiyle ters orantılıdır. Yani mesafe arttığında kuvvet sadece azalmaz, mesafenin karesi kadar sert bir şekilde düşer ⚡️.\n\nŞimdi adım adım hesaplayalım: İlk durumda uzaklığımız $d$ iken kuvvetimiz $F$ idi. Yeni durumda uzaklığı 3 katına çıkardık, yani yeni mesafemiz $3d$ oldu. Formülün altında kare olduğu için bu 3 rakamının karesini alırız: $3^2 = 3 \\times 3 = 9$ yapar. Mesafe payda kısmında (altta) olduğu için, kuvvetimiz başlangıçtakinin 9 katı azalır, yani $\\frac{F}{9}$ olur 🎯. Çoğu kişi burada karesini almayı unutup sonucu direkt $\\frac{F}{3}$ sanarak yanılır, sakın buna düşme! Doğru cevap C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "elektriksel kuvvet",
+        "definition": "İki elektrik yüklü cismin birbirini itmesi veya çekmesiyle oluşan kuvvettir.",
+        "example": "Haliç'te saçların statik elektrikle havaya kalkması.",
+        "emoji": "🔋"
+      },
+      {
+        "term": "ters orantılı",
+        "definition": "Bir değişken artarken diğerinin aynı oranda azalması durumudur.",
+        "example": "Araç hızı arttıkça varış süresinin kısalması.",
+        "emoji": "📉"
+      },
+      {
+        "term": "karesi",
+        "definition": "Bir sayının kendisiyle çarpılmasıyla elde edilen değerdir.",
+        "example": "$5$'nin karesi $5 \\times 5 = 25$'tir.",
+        "emoji": "🔢"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2278,
+    "subject": "FIZ",
+    "title": "Akım Şiddeti ve Birimi Nedir?",
+    "explanation": "Elektrik dediğimiz olay aslında elektronların bir tel boyunca akıp gitmesidir. Tıpkı bir borudan akan su gibi düşün; belli bir noktadan saniyede ne kadar elektrik geçtiğine biz akım şiddeti diyoruz. Dünyadaki tüm bilim insanları, karışıklık olmasın diye bu akış hızını ölçmek için ortak bir isim belirlemişlerdir ⚡️.\n\nBuradaki kilit nokta, hangi ismin hangi işe yaradığını bilmektir. Mesela yükün miktarına Coulomb, elektriği iten güce Volt, akıma karşı çıkan zorluğa ise Ohm denir. Bizden istenen sadece 'akış hızı' yani akım şiddeti olduğu için cevabımız Amper olur 🎯. Çoğu kişi yük miktarını belirten Coulomb ile akımın birimi olan Amperi birbirine karıştırır ama şunu unutma: Coulomb toplam yükü, Amper ise o yükün akış hızını temsil eder. Doğru cevap A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "akım şiddeti",
+        "definition": "Bir iletkenin kesitinden birim zamanda geçen elektrik yükü miktarıdır.",
+        "example": "Musluktan akan suyun debisi gibi, telden geçen elektron sayısıdır.",
+        "emoji": "🌊"
+      },
+      {
+        "term": "Amper",
+        "definition": "Elektrik akım şiddetini ölçmek için kullanılan standart birimdir.",
+        "example": "Bir cihazın üzerinde '2A' yazıyorsa, o cihaz 2 Amper akım çekiyor demektir.",
+        "emoji": "🔋"
+      },
+      {
+        "term": "Coulomb",
+        "definition": "Elektrik yükünün temel birimidir; akış değil, toplam yük miktarını gösterir.",
+        "example": "Bir balonun sürtünmeyle kazandığı toplam yük miktarı Coulomb ile ifade edilir.",
+        "emoji": "🎈"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2279,
+    "subject": "FIZ",
+    "title": "Devrede Direnç Ayarlamak: Reosta Nedir?",
+    "explanation": "Elektrik akımını, bir borudan akan suya benzetebilirsin. Borunun bazı yerlerinde daralmalar olur ve suyun geçişi zorlaşır; işte fizikte buna direnç diyoruz. Eğer biz bu zorluğu isteğimize göre artırmak ya da azaltmak istersek, yani yolu bazen daraltıp bazen genişletmek istersek ayarlanabilir bir parçaya ihtiyaç duyarız 💡.\n\nŞıklara baktığımızda pil devrenin motorudur, enerjiyi verir. Ampermetre ve voltmetre ise sadece 'bakıcı' gibidir; biri akımı, diğeri gerilimi ölçer ama devrenin yapısını asla değiştirmezler. İşin sırrı şurada: Devredeki direnci elle kontrol edip değiştirmemize yarayan o özel ayarlı parçaya reosta denir 🎯. Genelde üzerinde kaydıran bir düğmesi olur. Çoğu kişi ölçü aletleriyle karıştırır ama unutma, metre ile bitenler sadece ölçer, reosta ise yönetir. Bu yüzden doğru cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "direnç",
+        "definition": "Elektrik akımının geçişine karşı gösterilen zorluğa denir.",
+        "example": "İnce bir telin kalın bir tele göre daha fazla direnç göstermesi.",
+        "emoji": "🚧"
+      },
+      {
+        "term": "reosta",
+        "definition": "Devredeki direnç miktarını ihtiyaca göre değiştirebilen ayarlı dirençtir.",
+        "example": "Bir lambanın parlaklığını ayarlamak için kullanılan döner düğmeler.",
+        "emoji": "🎚️"
+      },
+      {
+        "term": "ampermetre",
+        "definition": "Devreden geçen elektrik akımının şiddetini ölçen araçtır.",
+        "example": "Devreye seri bağlanan ve 'kaç amper akıyor' diye bakan cihaz.",
+        "emoji": "📏"
+      },
+      {
+        "term": "voltmetre",
+        "definition": "İki nokta arasındaki potansiyel farkı (gerilimi) ölçen araçtır.",
+        "example": "Pilin kaç volt olduğunu anlamak için uçlarına dokundurulan cihaz.",
+        "emoji": "⚡"
+      },
+      {
+        "term": "pil",
+        "definition": "Kimyasal enerjiyi elektrik enerjisine çeviren güç kaynağıdır.",
+        "example": "Kumandaların içine takılan kalem piller.",
+        "emoji": "🔋"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2280,
+    "subject": "FIZ",
+    "title": "Telin Kalınlığı ve Direnç İlişkisi",
+    "explanation": "Elektrik akımını akan bir suya ya da trafikteki arabalara benzetebilirsin. Tel ne kadar kalın olursa, elektrik o kadar rahat akar; yani önüne çıkan engel azalır. İşte biz buna direncin azalması diyoruz 💡. İşin sırrı şu: Telin kalınlığını (kesit alanını) iki katına çıkarırsan, direnç yarıya iner. Burada tellerin boyu değişmiyor, sadece yan yana gelip daha geniş bir yol oluşturuyorlar.\n\nElimizde her biri $6 \\Omega$ olan iki aynı tel var. Bu telleri üst üste koyduğumuzda, aslında telin kalınlığını 2 katına çıkarmış olduk ⚡. Ters orantı kuralına göre, kalınlık 2 kat arttığı için mevcut direnci hemen ikiye bölüyoruz: $6 \\div 2 = 3 \\Omega$ olur. Doğru cevap D şıkkıdır. Çoğu kişi burada telleri uç uca eklenmiş sanıp dirençleri toplayarak $12 \\Omega$ bulur ama dikkat et, teller üst üste geldiğinde yol genişlediği için direnç düşer 🎯.",
+    "concepts": [
+      {
+        "term": "direnç",
+        "definition": "Elektrik akımının geçişine karşı gösterilen zorluktur.",
+        "example": "İnce bir tel, kalın bir tele göre daha yüksek dirence sahiptir.",
+        "emoji": "🚧"
+      },
+      {
+        "term": "ters orantı",
+        "definition": "Bir özellik artarken diğerinin aynı oranda azalması durumudur.",
+        "example": "Hızın artarsa, varış sürenin kısalmasıyla ters orantılıdır.",
+        "emoji": "📉"
+      },
+      {
+        "term": "kesit alanı",
+        "definition": "Telin kalınlığı, yani teli dik kestiğimizde ortaya çıkan yüzeydir.",
+        "example": "Kalın bir kablonun kesit alanı, ince bir kablodan daha büyüktür.",
+        "emoji": "📏"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2281,
+    "subject": "FIZ",
+    "title": "Elektriğin Temeli: Ohm Kanunuyla Direnç Bulma",
+    "explanation": "Elektriği bir su borusuna benzetebilirsin; pil suyu iten pompa (gerilim), akan su ise akımdır. Borunun dar olduğu yerler ise akışa zorluk çıkaran dirençtir. İşin sırrı şu üçlü ilişkide: Gerilim, akım ile direncin çarpımına eşittir, yani $V = I \\cdot R$. Burada $V$ voltajı (itme gücünü), $I$ akımın şiddetini, $R$ ise engelleme gücü olan direnci temsil eder ⚡.\n\nElimizde gerilim $V = 20$ V ve akım $I = 4$ A var. Bizden direnci ($R$) bulmamız isteniyor. Formülümüz $20 = 4 \\cdot R$ şeklinde olur. Matematikte yan yana çarpım durumunda olan bir sayı karşı tarafa geçerken bölmeye dönüşür; bu yüzden 20'yi 4'e bölmemiz gerekir 🎯. $20 \\div 4$ işlemini yaptığımızda sonuç 5 çıkar. Çoğu kişi burada yanlışlıkla sayıları çarpıp sonucu 80 bulabiliyor, sakın buna düşme! Doğru cevap A şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "gerilim",
+        "definition": "Elektrik yüklerini hareket ettiren itme gücüdür, birimi Volttur (V).",
+        "example": "Pilin üzerindeki 1.5V veya 9V yazıları.",
+        "emoji": "🔋"
+      },
+      {
+        "term": "akım",
+        "definition": "İletken üzerinden birim zamanda geçen elektrik yük miktarıdır, birimi Amperdir (A).",
+        "example": "Kablodan akan elektrik akış hızı.",
+        "emoji": "🌊"
+      },
+      {
+        "term": "direnç",
+        "definition": "Maddelerin elektrik akımına karşı gösterdiği zorluktur, birimi $\\Omega$ (Ohm)'dur.",
+        "example": "Ampulün telinin elektriğe karşı zorluk çıkarması.",
+        "emoji": "🚧"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2284,
+    "subject": "FIZ",
+    "title": "Mıknatısların Sevdiği Maddeler",
+    "explanation": "Olayın sırrı şu: Dünyadaki her madde mıknatısa yapışmaz. Sadece bazı özel metaller vardır ki bunlar mıknatısları çok sever ve onlara güçlüce tutunurlar. Biz bu 'mıknatıs seven' maddelere ferromanyetik maddeler diyoruz. Yani elinizde bir mıknatıs varsa, karşısına rastgele bir şey değil, sadece bu özel gruptan bir madde geldiğinde çekim gerçekleşir 🧲.\n\nŞimdi seçeneklere beraber bakalım. Demir, nikel ve kobalt dediğimiz üçlü, bu grubun en popüler üyeleridir ve mıknatıs tarafından hemen çekilirler. Ancak plastik bir metal değildir ve manyetik özellik taşımaz; yani mıknatıs ona karşı tamamen kayıtsız kalır 🎯. Bu yüzden cevap D şıkkıdır. Burada çoğu kişinin düştüğü tuzak ise 'her metal mıknatısa yapışır' sanmaktır; oysa altın veya alüminyum gibi birçok metal aslında mıknatıs tarafından çekilmez, sadece yukarıdaki üçlü gibi özel olanlar çekilir.",
+    "concepts": [
+      {
+        "term": "ferromanyetik maddeler",
+        "definition": "Mıknatıslar tarafından kuvvetlice çekilen ve kendisi de mıknatıslanabilen özel maddelerdir.",
+        "example": "Buzdolabı kapısındaki süslerin demir levhaya yapışması.",
+        "emoji": "⚡"
+      },
+      {
+        "term": "mıknatıs",
+        "definition": "Etrafında manyetik alan oluşturarak belirli maddeleri çekme özelliğine sahip nesnedir.",
+        "example": "Pusula iğnesinin kuzeyi göstermesi.",
+        "emoji": "🧭"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2285,
+    "subject": "FIZ",
+    "title": "Katı Basıncının Mantığı: Kim Neyi Etkiler?",
+    "explanation": "Basınç dediğimiz olay, aslında bir yüzeye uygulanan dik kuvvettir. Katılar için işin sırrı şurada: Cismin ağırlığı ne kadar fazlaysa yere o kadar güçlü bastırır, yani basınç artar. Ama aynı ağırlıktaki bir cismi geniş bir zemine yayarsan, yük dağılacağı için basınç azalır. Bunu şöyle düşün; topuklu ayakkabıyla kumda yürümek zordur çünkü tüm ağırlık küçücük bir noktaya biner ⚡️.\n\nŞimdi maddelere bakalım: I. maddede ağırlık arttıkça basınç da arttığı için buna doğru orantılı deriz, yani doğru. II. maddede yüzey alanı genişledikçe basınç azaldığı için buna ters orantılı denir, bu da doğru. III. maddedeki yerden yükseklik ise katı basıncını etkilemez; sadece sıvıların derinliği önemlidir, çoğu kişi burada sıvılarla karıştırıp yanılır 👀. Bu yüzden cevap C şıkkıdır 🎯.",
+    "concepts": [
+      {
+        "term": "basınç",
+        "definition": "Birim yüzeye dik olarak uygulanan kuvvet miktarıdır.",
+        "example": "Bir iğnenin ucunun sivri olması sayesinde kumaşa kolayca girmesi.",
+        "emoji": "📍"
+      },
+      {
+        "term": "doğru orantılı",
+        "definition": "İki değişkenin aynı yönde değişmesi durumudur; biri artarsa diğeri de artar.",
+        "example": "Çalışma süresi arttıkça öğrenilen bilgi miktarının artması.",
+        "emoji": "📈"
+      },
+      {
+        "term": "ters orantılı",
+        "definition": "İki değişkenin zıt yönlerde değişmesi durumudur; biri artarken diğeri azalır.",
+        "example": "Hız arttıkça varış süresinin kısalması.",
+        "emoji": "📉"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2287,
+    "subject": "FIZ",
+    "title": "Kapalı Kaplarda Basınç Ölçümü",
+    "explanation": "Aslında olay çok basit; gazlar nerede olduklarına göre farklı isimler alır. Eğer gaz tüm dünyayı saran atmosferdeyse buna açık hava basıncı diyoruz, ama bir tüpün veya balonun içine hapsetmişsek buna kapalı kapta gaz basıncı deniyor. İşin sırrı şu: Dışarıdaki devasa havayı mı ölçeceğiz yoksa küçük bir kabın içindekini mi? Buna göre kullandığımız alet değişir ⚡️.\n\nŞimdi seçeneklere bakalım. Gökyüzündeki açık havayı ölçmek için barometre kullanılırken, bizim sorumuzda özellikle \"kapalı kap\" vurgusu yapılmış. İşte bu durumda devreye manometre giriyor; yani sadece kapalı ortamlardaki gaz basıncı için tasarlanmış özel bir araçtır 🎯. Birçok kişi barometre ile manometreyi birbirine karıştırıp yanlış şıkka yönelir ancak \"kapalı」 kelimesini gördüğümüz an cevap B şıkkı olur.",
+    "concepts": [
+      {
+        "term": "gaz basıncı",
+        "definition": "Gaz moleküllerinin bulundukları kabın çeperlerine sürekli çarpmasıyla oluşan kuvvettir.",
+        "example": "Şişirilmiş bir balonun gergin olması",
+        "emoji": "🎈"
+      },
+      {
+        "term": "barometre",
+        "definition": "Dünyamızı saran atmosferin, yani açık havanın basıncını ölçen cihazdır.",
+        "example": "Meteorolojide hava durumunu tahmin etmek için kullanımı",
+        "emoji": "☁️"
+      },
+      {
+        "term": "manometre",
+        "definition": "Tüp, balon veya depo gibi kapalı kapların içindeki gazın basıncını ölçen cihazdır.",
+        "example": "Araba lastiğinin havasını kontrol eden pompa saati",
+        "emoji": "⚙️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 2290,
+    "subject": "FIZ",
+    "title": "Periyot ve Frekans İlişkisini Kavrayalım",
+    "explanation": "Olayın sırrı aslında çok basit: Periyot, bir dalganın oluşması için geçen süredir; frekans ise bir saniyede kaç tane dalga oluştuğudur. Yani biri 'zaman', diğeri 'adet' ölçer ve birbirlerinin tam tersidirler 🎯. Bu yüzden ikisini çarptığımızda sonuç her zaman 1 çıkar. Formülümüz olan $T \\cdot f = 1$ ifadesindeki $T$ periyodu, $f$ ise frekansı temsil eder.\n\nŞimdi elimizdeki bilgilere bakalım. Soruda bize frekansın yani $f$'nin 3 olduğunu söylemiş. İlk adımda formülde $f$ gördüğümüz yere 3 yazıyoruz: $T \\cdot 3 = 1$ oluyor. Amacımız yalnız başına $T$'yi bulmak olduğu için, yanındaki 3'ü karşı tarafa gönderiyoruz. Burada altın kural şudur: Çarpım durumundaki bir sayı, eşitliğin diğer tarafına geçerken bölme işlemine dönüşür ⚡. Böylece $T = \\frac{1}{3}$ sonucuna ulaşıyoruz. Çoğu kişi burada panikleyip 3 ile 1'i çarpmaya çalışarak sonucu 3 bulabiliyor ama biz bölme yaptığımız için cevap A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "periyot",
+        "definition": "Bir tam dalganın oluşması için geçen süreye denir.",
+        "example": "Bir salıncağın bir kez gidip gelmesi 2 saniye sürüyorsa periyot 2'dir.",
+        "emoji": "⏱️"
+      },
+      {
+        "term": "frekans",
+        "definition": "Birim zamanda (genellikle 1 saniyede) oluşan dalga sayısıdır.",
+        "example": "Bir ipi salladığında 1 saniyede 5 dalga oluşuyorsa frekans 5'tir.",
+        "emoji": "🌊"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  }
+]

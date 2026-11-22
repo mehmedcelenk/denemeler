@@ -85,12 +85,17 @@ export function getWelcomePerch(
   return { ...getBottomBarPerch(barRatio, species), inView: false, kind: 'bar' };
 }
 
-export function getQnumPerch(qnumEl: HTMLElement, _species: BirdMascotId = 'bird'): { x: number; y: number; inView: boolean } {
+export function getQnumPerch(
+  qnumEl: HTMLElement,
+  _species: BirdMascotId = 'bird',
+  clampToScreen = false,
+): { x: number; y: number; inView: boolean } {
   const r = qnumEl.getBoundingClientRect();
   const vw = window.innerWidth || 420;
   const vh = window.innerHeight || 800;
   const numCenterX = r.left + Math.min(r.width, 28) / 2;
-  const y = clamp(r.top - BIRD_H + 8, 4, vh - BIRD_H - 12);
+  const naturalY = r.top - BIRD_H + 8;
+  const y = clampToScreen ? clamp(naturalY, 4, vh - BIRD_H - 12) : naturalY;
   return {
     x: Math.round(clamp(numCenterX - BIRD_W / 2, 4, vw - BIRD_W - 4)),
     y: Math.round(y),
@@ -134,6 +139,10 @@ export function getBubblePerch(
   };
 }
 
+export function isQuestionSolved(card: HTMLElement): boolean {
+  return Boolean(card.querySelector('.optical-choice-row.marked, .optical-choice-row.marked-correct, .optical-choice-row.marked-incorrect'));
+}
+
 export function findNextQuestionQnum(): HTMLElement | null {
   if (typeof document === 'undefined') return null;
   const board = document.getElementById('boardSpaceOverlay');
@@ -150,13 +159,21 @@ export function findNextQuestionQnum(): HTMLElement | null {
       return qnum && rect ? { card, qnum, rect } : null;
     })
     .filter((item): item is { card: HTMLElement; qnum: HTMLElement; rect: DOMRect } =>
-      Boolean(item && item.rect.width > 0 && item.rect.height > 0 && item.rect.top >= 52 && item.rect.bottom <= vh - 82),
+      Boolean(item && item.rect.width > 0 && item.rect.height > 0 && item.rect.top >= 52 && item.rect.bottom <= vh - 60),
     )
     .sort((a, b) => a.rect.top - b.rect.top);
 
   if (!visible.length) return null;
-  const nextUnsolved = visible.find(({ card }) => !card.querySelector('.optical-choice-row.marked'));
+  const nextUnsolved = visible.find(({ card }) => !isQuestionSolved(card));
   return nextUnsolved ? nextUnsolved.qnum : null;
+}
+
+export function getScrollArrivalEntry(targetX: number, scrollDir: 'down' | 'up'): { x: number; y: number } {
+  const vw = typeof window !== 'undefined' ? window.innerWidth : 420;
+  const vh = typeof window !== 'undefined' ? window.innerHeight : 800;
+  const entryX = clamp(targetX + (Math.random() - 0.5) * 120, 20, vw - BIRD_W - 20);
+  const entryY = scrollDir === 'down' ? -BIRD_H - 35 : vh + 35;
+  return { x: Math.round(entryX), y: Math.round(entryY) };
 }
 
 export function resolveScreenTarget(

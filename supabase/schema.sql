@@ -144,7 +144,7 @@ CREATE TABLE IF NOT EXISTS user_profiles (
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
 
-    CONSTRAINT chk_user_profiles_mascot_id CHECK (mascot_id IN ('cat', 'dog', 'fish', 'bird', 'owl', 'raven', 'none'))
+    CONSTRAINT chk_user_profiles_mascot_id CHECK (mascot_id IN ('cat', 'dog', 'fish', 'bird', 'owl', 'raven', 'drone', 'none'))
 );
 
 -- ------------------------------------------------------------------------------

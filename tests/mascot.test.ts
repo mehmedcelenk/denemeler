@@ -17,24 +17,30 @@ import {
 } from '../src/data/mascot-profile.ts';
 import { setSupabaseConfigOverride } from '../src/data/supabase-client.ts';
 
-test('mascot-types: tüm maskot ve 3D kuş seçeneklerini doğrular, eski değeri kediye çevirir', () => {
+test('mascot-types: tüm maskot ve 3D kuş seçeneklerini doğrular, eski değeri tavuğa çevirir', () => {
   assert.deepEqual(
     MASCOT_OPTIONS.map(o => o.id),
-    ['cat', 'dog', 'fish', 'owl', 'raven', 'bird', 'none'],
+    ['bird', 'owl', 'drone', 'raven', 'none'],
   );
-  assert.equal(DEFAULT_MASCOT_ID, 'cat');
-  for (const id of ['cat', 'dog', 'fish', 'owl', 'raven', 'bird', 'none'] as const) {
+  assert.equal(DEFAULT_MASCOT_ID, 'bird');
+  for (const id of ['bird', 'owl', 'drone', 'raven', 'none'] as const) {
     assert.equal(isMascotId(id), true);
   }
   assert.equal(isMascotId('eyes'), false);
+  assert.equal(isMascotId('cat'), false);
+  assert.equal(isMascotId('dog'), false);
+  assert.equal(isMascotId('fish'), false);
   assert.equal(isActiveMascotId('owl'), true);
   assert.equal(isActiveMascotId('none'), false);
   assert.equal(normalizeMascotId('owl'), 'owl');
-  assert.equal(normalizeMascotId('eyes'), 'cat');
+  assert.equal(normalizeMascotId('cat'), 'bird');
+  assert.equal(normalizeMascotId('dog'), 'bird');
+  assert.equal(normalizeMascotId('fish'), 'bird');
+  assert.equal(normalizeMascotId('eyes'), 'bird');
 });
 
 test('mascot-svgs: tüm aktif maskotların beklenen SVG sınıflarını içerir', () => {
-  const activeIds: ActiveMascotId[] = ['cat', 'dog', 'fish', 'bird', 'owl', 'raven'];
+  const activeIds: ActiveMascotId[] = ['bird', 'owl', 'raven', 'drone'];
   for (const id of activeIds) {
     const svg = renderActiveMascotSvg(id);
     assert.ok(svg.includes('<svg'), `${id}: svg etiketi olmalı`);
@@ -46,17 +52,15 @@ test('mascot-svgs: tüm aktif maskotların beklenen SVG sınıflarını içerir'
     assert.ok(!svg.includes('<script'), `${id}: güvensiz script olmamalı`);
   }
 
-  assert.ok(renderActiveMascotSvg('cat').includes('mc-cat-head'));
-  assert.ok(renderActiveMascotSvg('dog').includes('mc-dog-collar'));
-  assert.ok(renderActiveMascotSvg('fish').includes('mc-fish-visor'));
   assert.ok(renderActiveMascotSvg('bird').includes('rb-wing-front'));
   assert.ok(renderActiveMascotSvg('owl').includes('mc-svg-owl'));
   assert.ok(renderActiveMascotSvg('raven').includes('mc-svg-raven'));
+  assert.ok(renderActiveMascotSvg('drone').includes('rb-rotor'));
   assert.ok(renderMascotOptionSvg('none').includes('mc-svg-none'));
 });
 
 test('mascot-lines: bazen konuşur bazen sessiz kalır', () => {
-  for (const id of ['cat', 'dog', 'fish', 'bird', 'owl', 'raven'] as const) {
+  for (const id of ['cat', 'dog', 'fish', 'bird', 'owl', 'raven', 'drone'] as const) {
     const line = pickMascotQuip(id, 'correct', 0.05, 0.2);
     assert.ok(typeof line === 'string' && line.length > 0);
     assert.equal(pickMascotQuip(id, 'correct', 0.99, 0.2), null);
@@ -74,7 +78,7 @@ test('mascot-profile: Supabase user_profiles.mascot_id okuma ve yazma isteklerin
     const method = init?.method || 'GET';
     requests.push({ url, method, body: init?.body ? String(init.body) : undefined });
     if (method === 'GET') {
-      return new Response(JSON.stringify([{ mascot_id: 'dog' }]), {
+      return new Response(JSON.stringify([{ mascot_id: 'owl' }]), {
         status: 200,
         headers: { 'Content-Type': 'application/json' },
       });
@@ -85,13 +89,13 @@ test('mascot-profile: Supabase user_profiles.mascot_id okuma ve yazma isteklerin
   try {
     const session = { accessToken: 'tok', refreshToken: 'ref', user: { id: 'u-123' } };
     const fetched = await fetchUserMascotFromSupabase(session);
-    assert.equal(fetched, 'dog');
+    assert.equal(fetched, 'owl');
     assert.ok(requests[0].url.includes('/rest/v1/user_profiles?id=eq.u-123&select=mascot_id&limit=1'));
 
-    const saved = await saveUserMascotToSupabase(session, 'cat');
+    const saved = await saveUserMascotToSupabase(session, 'drone');
     assert.equal(saved, true);
     assert.equal(requests[1].method, 'PATCH');
-    assert.deepEqual(JSON.parse(requests[1].body || '{}'), { mascot_id: 'cat' });
+    assert.deepEqual(JSON.parse(requests[1].body || '{}'), { mascot_id: 'drone' });
   } finally {
     globalThis.fetch = originalFetch;
     setSupabaseConfigOverride(null);

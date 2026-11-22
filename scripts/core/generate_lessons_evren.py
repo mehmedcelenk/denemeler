@@ -39,6 +39,11 @@ SYSTEM_PROMPT = """Sen vakti çok kısıtlı 15–17 yaşındaki AÖL / AÖİHL 
 PARETO (80/20) VE SIFIRDAN ÖĞRETİM FELSEFESİ:
 - Bir ünitenin tamamını anlatma; o konudaki sınav sorularının %80'ini çözdüren en kritik %20'lik temel mantığı yakala ve berrakça öğret.
 - Okuyucu konuyu HİÇ BİLMİYOR olsa bile yabancı tek bir sembol (⇒, ∨, ', ∩, ∪ vb.) veya teknik terim havada kalmamalı; soruda geçen her sembolü/terimi gündelik dille açıkla.
+- SIFIR ÖN BİLGİ — HİÇBİR ARA BASAMAĞI ATLAMA: Soruyu çözmek için gereken TÜM ön-koşul alt-konuları ve temel işlemleri (ör. eksi×eksi=artı işaret kuralı, kesirle tam sayı çarpma, payda eşitleme, üslü sayı kuralı, ek-kök ayrımı, kronoloji bağı vb.) tespit et; "öğrenci bunu zaten biliyordur" diyerek HİÇBİR ara adımı atlama:
+  ❌ "(-1/27)·(-81) işlemi bizi doğrudan 3 sonucuna götürür" veya "Ardından 81'i 27'ye böldüğümüzde sonuç 3 çıkar" (işaret kuralı ve/veya kesirle tam sayı çarpma atlanmış!)
+  ✅ "Önce işaretlere bakalım: eksi ile eksinin çarpımı her zaman artı (+) yapar. Sonra kesirle tam sayıyı çarparken tam sayının altına gizli 1 koyup üstleri üstlerle, altları altlarla çarparız: $\\\\frac{1}{27} \\\\cdot \\\\frac{81}{1} = \\\\frac{81}{27}$; 81'i 27'ye bölünce sonuç 3 çıkar."
+- ÖN-KOŞUL ENVANTERİ (`prerequisites`) ZORUNLUDUR: `explanation` yazmaya başlamadan önce, bu soruyu çözmek için gereken TÜM temel bilgileri ve ara işlemleri (ana konu + gizli alt-beceriler: kesirle tam sayı çarpma, eksi×eksi=artı işaret kuralı, payda eşitleme, sadeleştirme, üslü sayı kuralı, ek-kök, kronoloji vb. — 2, 3, 4 veya 5 madde olabilir) JSON içindeki `prerequisites` dizisine tek tek çıkar.
+- Ardından `explanation` içinde, `prerequisites` listesinde saydığın HER BİR MADDEYİ istisnasız olarak, nasıl ve neden yapıldığını 1 kısa cümleyle göstererek anlat. Tek bir ara işlemi bile "ardından böleriz / doğrudan sonuca gider" diye atlama!
 - Okuyucu çok bilgiyle boğulmasın; EN AZ 1 SOMUT MANTIĞI zihnine kilitleyip "meğer bu kadar basitmiş" diyerek çıksın.
 
 DOĞAL TÜRKÇE VE EMOJİ KURALLARI (ÇOK ÖNEMLİ):
@@ -53,11 +58,11 @@ DOĞAL TÜRKÇE VE EMOJİ KURALLARI (ÇOK ÖNEMLİ):
    - Ağır üniversite notasyonu (ör. `(mod 3)`) ve "ödev" kelimesi YASAK.
 2. KONUŞMA ARALARINDA EMOJİ KULLANIMI:
    - Metin kuru bir duvar gibi durmasın; konuşmanın doğal akışı içinde 2–3 tane yerinde, abartısız emoji kullan (ör. 💡, ⚡, 🎯, 👀, 🔑). Her cümleye yığma, nefes aldıracak yerlere serpiştir.
-3. İKİ KISA PARAGRAF ANLATIM (`explanation` — toplam ~80–140 kelime):
+3. İKİ-ÜÇ KISA PARAGRAF ANLATIM (`explanation` — toplam ~110–210 kelime):
    - **1. Paragraf (Pareto Çekirdeği — Sıfırdan Öğret):** Sorunun sayılarına/şıklarına dalmadan önce o konunun %80 soruyu açan temel mantığını ve yabancı sembol/terimleri gündelik, duru bir Türkçeyle sıfırdan öğret.
-   - **2. Paragraf (Soruya Uygulama + Cümle İçi Tuzak):** Öğrettiğin o tek mantığı bu soruya sade adımlarla uygula, doğru şık harfini (`A/B/C/D/E`) açıkça belirt ve öğrencinin en sık düşeceği çeldirici tuzağı ayrı başlık açmadan cümlenin doğal akışı içinde 1 kısa cümleyle göster.
-4. METİN İÇİ KAVRAMLAR (`concepts`, 1–3 adet):
-   - Sadece gerçekten açıklamaya değer 1–3 kilit kavram seç.
+   - **2. (ve gerekirse 3.) Paragraf (Adım Adım Uygulama + Ön-Koşullar + Cümle İçi Tuzak):** Öğrettiğin o mantığı soruya uygularken `prerequisites` listesindeki HER ara işlemin ve alt-becerinin mantığını tek tek göstererek ilerle, hiçbir adımı "biliyordur" diye atlama; doğru şık harfini (`A/B/C/D/E`) açıkça belirt ve öğrencinin en sık düşeceği çeldirici tuzağı ayrı başlık açmadan cümlenin doğal akışı içinde 1 kısa cümleyle göster.
+4. METİN İÇİ KAVRAMLAR (`concepts`, 1–5 adet):
+   - Ana kavramları ve soruda gereken kritik alt-becerileri kapsayan 1–5 kilit kavram seç.
    - ZORUNLU: Her kavramın `term` değeri `explanation` metni içinde BİREBİR geçmelidir (arayüz onu tıklanabilir baloncuk yapar).
    - Tanımı kitaptan kopyalama; 1–2 cümlelik kendi sıcak, duru Türkçe tanımını ve kısa bir örneğini yaz.
 5. DOĞRULUK VE KATEX:
@@ -67,7 +72,11 @@ DOĞAL TÜRKÇE VE EMOJİ KURALLARI (ÇOK ÖNEMLİ):
 SADECE GEÇERLİ TEK BİR JSON NESNESİ DÖNDÜR:
 {
   "title": "Kısa, akıcı Türkçe başlık (en fazla 55 karakter)",
-  "explanation": "1. paragraf (doğal Türkçe + yerinde 1-2 emoji): Pareto çekirdeğini sıfırdan anlat.\\n\\n2. paragraf (doğal Türkçe + yerinde 1 emoji): Soruya uygulama, doğru şık harfi ve cümle içi 1 kısa tuzak uyarısı.",
+  "prerequisites": [
+    "Bu soruyu çözmek için gereken 1. temel kural/işlem",
+    "2. temel kural/işlem (ör. kesirle tam sayı çarpma, işaret kuralı, payda eşitleme, ek-kök ayrımı vb.)"
+  ],
+  "explanation": "1. paragraf (doğal Türkçe + yerinde 1-2 emoji): Pareto çekirdeğini sıfırdan anlat.\\n\\n2. (ve gerekirse 3.) paragraf (doğal Türkçe + yerinde 1 emoji): prerequisites listesindeki HER ara işlem/alt-beceriyi atlamadan soruya uygulama, doğru şık harfi ve cümle içi 1 kısa tuzak uyarısı.",
   "concepts": [
     {
       "term": "explanation içinde aynen geçen kilit kavram",
@@ -79,7 +88,7 @@ SADECE GEÇERLİ TEK BİR JSON NESNESİ DÖNDÜR:
 }"""
 
 AUDIT_PROMPT = """Sen titiz bir Türk eğitim editörüsün. Verilen anlatımı şu 5 ölçüte göre denetle:
-1. `pareto_zero_prereq`: Konuyu hiç bilmeyen 9. sınıf öğrencisi yabancı sembol/terim havada kalmadan, %80 soruyu açan öz mantığı 1. paragrafta gerçekten kavrıyor mu?
+1. `pareto_zero_prereq`: Konuyu hiç bilmeyen 9. sınıf öğrencisi yabancı sembol/terim havada kalmadan %80 soruyu açan öz mantığı kavrıyor mu VE çözümdeki hiçbir ara işlem veya alt-konu (işaret kuralı, kesir çarpma, payda eşitleme, üs kuralı, ek-kök ayrımı vb.) "öğrenci biliyordur" diye atlanmadan sıfırdan gösterilmiş mi?
 2. `natural_turkish`: Dil akıcı ve doğal Türkiye Türkçesi mi? ("temsil eder", "almamız gerektiğini söyler", "tüm problemi çözmek için" gibi Google Translate çevirisi kokan yapay cümleler varsa false)
 3. `tone_and_emoji`: Ne çocuksu ne soğuk, samimi ve sade mi; metin içinde abartısız 1–3 yerinde emoji var mı?
 4. `trap_natural`: 2. paragraf doğru şık harfini açıkça belirtip çeldirici tuzağa cümle içinde doğalca değinmiş mi?
@@ -152,8 +161,9 @@ def build_user_prompt(q: Dict[str, Any], retry_feedback: str = "") -> str:
     if retry_feedback:
         parts.append(f"\n⚠️ ÖNCEKİ DENEME ELEŞTİRİSİ (MUTLAKA DÜZELT): {retry_feedback}")
     parts.append(
-        "\nLütfen çeviri kokmayan, doğal Türkiye Türkçesiyle, konuşma aralarında 2–3 yerinde emoji kullanarak, "
-        "Pareto (80/20) öz mantığını sıfırdan öğreten 2 kısa paragraflı ve metin içi 1–3 kavramlı JSON üret."
+        "\nLütfen önce sorunun gerektirdiği TÜM ön-koşul alt-becerileri 'prerequisites' listesine çıkar, "
+        "sonra bu listedeki HER BİR adımı 'biliyordur' diye atlamadan, çeviri kokmayan doğal Türkiye Türkçesiyle, "
+        "konuşma aralarında 2–3 yerinde emoji kullanarak 2–3 kısa paragrafta ve metin içi 1–5 kavramla JSON olarak üret."
     )
     return "\n".join(parts)
 
@@ -205,6 +215,12 @@ def validate_and_normalize(
     if len(title) > 70:
         raise ValueError(f"title çok uzun ({len(title)} karakter)")
 
+    raw_prereqs = raw.get("prerequisites")
+    if not isinstance(raw_prereqs, list) or not any(
+        isinstance(item, str) and item.strip() for item in raw_prereqs
+    ):
+        raise ValueError("prerequisites boş olmayan liste ve en az 1 ön-koşul adımı içermeli")
+
     explanation = req_str(raw.get("explanation"), "explanation")
     lower_exp = explanation.replace("I", "ı").replace("İ", "i").lower()
     for opener in DRY_OPENERS:
@@ -252,7 +268,7 @@ def validate_and_normalize(
         "subject": subject,
         "title": title,
         "explanation": explanation,
-        "concepts": concepts[:3],
+        "concepts": concepts[:5],
         "model": model,
         "version": CURRENT_VERSION,
     }
@@ -380,7 +396,7 @@ def main() -> None:
 
         out_path = LESSONS_DIR / f"{subject}.json"
         existing: Dict[int, Dict[str, Any]] = {}
-        if out_path.exists() and not args.overwrite:
+        if out_path.exists():
             try:
                 for item in json.loads(out_path.read_text(encoding="utf-8")):
                     if (
@@ -402,7 +418,7 @@ def main() -> None:
                     work_queue.put((seq, seq, subject, q, 0, ""))
                     subj_todo += 1
                     total_todo += 1
-            elif qid not in existing:
+            elif args.overwrite or qid not in existing:
                 seq += 1
                 work_queue.put((seq, seq, subject, q, 0, ""))
                 subj_todo += 1
@@ -438,7 +454,7 @@ def main() -> None:
         )
 
     def worker(worker_id: int, model: str) -> None:
-        client = EvrenClient(timeout=75)
+        client = EvrenClient(timeout=110)
         client._terms_verified = True  # noqa: SLF001
         while not stop_event.is_set():
             try:

@@ -1,52 +1,9 @@
 import { renderRoboBirdSvg } from '../../shared/mascot-bird-svg.ts';
 import { pickMascotQuip, type TalkMood } from '../../shared/mascot-lines.ts';
 import type { BirdMascotId } from '../../shared/mascot-types.ts';
-import type { Bird3DController, Bird3DState } from './mascot-bird-3d.ts';
-import { loadRoboBird3D } from './mascot-bird-flight.ts';
 import { BIRD_ID, detectBirdScreen } from './mascot-bird-perch.ts';
 
-export interface Bird3DHost {
-  ensure: (root: HTMLElement, species: BirdMascotId, isActive: () => boolean, initial: Partial<Bird3DState>) => void;
-  setState: (patch: Partial<Bird3DState>) => void;
-  hasActive: () => boolean;
-  destroy: (root: HTMLElement | null) => void;
-}
-
-export function createBird3DHost(): Bird3DHost {
-  let ctrl: Bird3DController | null = null;
-  let loading = false;
-  let latestSpecies: BirdMascotId = 'bird';
-
-  return {
-    ensure(root, species, isActive, initial) {
-      latestSpecies = species;
-      if (ctrl) { ctrl.setSpecies(species); return; }
-      if (loading) return;
-      const stage = root.querySelector<HTMLElement>('.mascot-bird-stage');
-      if (!stage) return;
-      loading = true;
-      void loadRoboBird3D(stage, species).then((loaded) => {
-        loading = false;
-        if (!loaded || !isActive() || !root.isConnected) { loaded?.destroy(); return; }
-        ctrl = loaded;
-        ctrl.setSpecies(latestSpecies);
-        root.classList.add('is-3d');
-        root.dataset.render = '3d';
-        ctrl.setState(initial);
-      });
-    },
-    setState(patch) { ctrl?.setState(patch); },
-    hasActive() { return ctrl !== null; },
-    destroy(root) {
-      ctrl?.destroy();
-      ctrl = null;
-      loading = false;
-      root?.classList.remove('is-3d');
-    },
-  };
-}
-
-export function createBirdDom(onTap: () => void): { root: HTMLElement; bubble: HTMLElement } {
+export function createBirdDom(onTap: () => void, initialSpecies: BirdMascotId = 'bird'): { root: HTMLElement; bubble: HTMLElement } {
   document.getElementById(BIRD_ID)?.remove();
   const root = document.createElement('div');
   root.id = BIRD_ID;
@@ -55,6 +12,7 @@ export function createBirdDom(onTap: () => void): { root: HTMLElement; bubble: H
   root.dataset.state = 'bar';
   root.dataset.facing = 'right';
   root.dataset.mood = 'idle';
+  root.dataset.species = initialSpecies;
   root.hidden = true;
 
   const bubble = document.createElement('span');
@@ -66,7 +24,7 @@ export function createBirdDom(onTap: () => void): { root: HTMLElement; bubble: H
   btn.type = 'button';
   btn.className = 'mascot-bird-btn';
   btn.setAttribute('aria-label', 'Robokuş maskotu');
-  btn.innerHTML = `<span class="mascot-bird-stage">${renderRoboBirdSvg()}</span>`;
+  btn.innerHTML = `<span class="mascot-bird-stage">${renderRoboBirdSvg(initialSpecies)}</span>`;
   btn.addEventListener('click', onTap);
 
   root.appendChild(bubble);
@@ -87,7 +45,6 @@ export function createBirdExpression(
   getBubble: () => HTMLElement | null,
   canAct: () => boolean,
   getSpecies: () => BirdMascotId,
-  onQuirkChange?: (patch: { facing?: 'left' | 'right'; quirk?: '' | 'ruffle' | 'tilt' }) => void,
 ): BirdExpressionController {
   let bubbleTimer: ReturnType<typeof setTimeout> | null = null;
   let quirkTimer: ReturnType<typeof setTimeout> | null = null;
@@ -116,7 +73,6 @@ export function createBirdExpression(
     if (quirkClearTimer !== null) { clearTimeout(quirkClearTimer); quirkClearTimer = null; }
     const root = getRoot();
     if (root) delete root.dataset.quirk;
-    onQuirkChange?.({ quirk: '' });
   }
 
   function scheduleQuirk(): void {
@@ -130,19 +86,15 @@ export function createBirdExpression(
       if (!cur || cur.hidden || !canAct() || detectBirdScreen() === 'profile') { scheduleQuirk(); return; }
       const roll = Math.random();
       if (roll < 0.42) {
-        const nextFacing = cur.dataset.facing === 'left' ? 'right' : 'left';
-        cur.dataset.facing = nextFacing;
-        onQuirkChange?.({ facing: nextFacing });
+        cur.dataset.facing = cur.dataset.facing === 'left' ? 'right' : 'left';
         scheduleQuirk();
         return;
       }
       const quirk = roll < 0.72 ? 'ruffle' : 'tilt';
       cur.dataset.quirk = quirk;
-      onQuirkChange?.({ quirk });
       quirkClearTimer = setTimeout(() => {
         quirkClearTimer = null;
         if (cur) delete cur.dataset.quirk;
-        onQuirkChange?.({ quirk: '' });
         scheduleQuirk();
       }, quirk === 'ruffle' ? 520 : 820);
     }, waitMs);

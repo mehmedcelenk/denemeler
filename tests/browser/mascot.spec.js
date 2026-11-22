@@ -52,7 +52,7 @@ test('misafir modunda maskot rozeti ve profildeki maskot seçici görünmez', as
 });
 
 test('giriş yapmış kullanıcı profilde maskot seçer, soru ekranında üst yuvarlak rozette tepki alır ve gizleyebilir', async ({ context, page }) => {
-  const { mascotPatches } = await setupSignedInRoutes(context, 'cat');
+  const { mascotPatches } = await setupSignedInRoutes(context, 'bird');
   await page.setViewportSize({ width: 420, height: 860 });
   await page.goto('/');
 
@@ -60,27 +60,26 @@ test('giriş yapmış kullanıcı profilde maskot seçer, soru ekranında üst y
   await page.fill('#authPasswordInput', 'secret123');
   await page.locator('#btnAuthSubmit').click();
 
-  const companion = page.locator('.top-center-badge-container #mascotCompanion');
-  await expect(companion).toHaveAttribute('data-mascot', 'cat');
+  const bird = page.locator('#mascotBird');
+  await expect(bird).toBeVisible();
+  await expect(bird).toHaveAttribute('data-species', 'bird');
 
-  // Profil ekranından Köpek seçildiğinde Supabase PATCH gönderilir
+  // Profil ekranından RoboBaykuş seçildiğinde Supabase PATCH gönderilir
   await page.locator('#btnMasterConsole').click();
   await page.locator('#btnOpenProfileScreen').click();
   await expect(page.locator('[data-role="profile-mascot-section"]')).toBeVisible();
-  await expect(page.locator('.ps-mascot-card')).toHaveCount(7);
-  await page.locator('.ps-mascot-card[data-mascot="dog"]').click();
+  await expect(page.locator('.ps-mascot-card')).toHaveCount(5);
+  await page.locator('.ps-mascot-card[data-mascot="owl"]').click();
 
-  await expect(companion).toHaveAttribute('data-mascot', 'dog');
-  await expect(page.locator('.ps-mascot-card[data-mascot="dog"]')).toHaveAttribute('aria-pressed', 'true');
-  await expect.poll(() => mascotPatches.at(-1)).toBe('dog');
+  await expect(bird).toHaveAttribute('data-species', 'owl');
+  await expect(page.locator('.ps-mascot-card[data-mascot="owl"]')).toHaveAttribute('aria-pressed', 'true');
+  await expect.poll(() => mascotPatches.at(-1)).toBe('owl');
 
-  // Soru ekranında üst yuvarlak rozet görünür, tıklanınca ve cevapta tepki verir
+  // Soru ekranında Robokuş görünür ve soru numarasına konar
   await page.locator('#btnCloseProfileScreen').click();
   await page.locator('[data-action="bottom-nav-questions"]').click();
-  await expect(companion).toBeVisible();
-
-  await companion.locator('.mascot-handle').click();
-  await expect(companion).toHaveAttribute('data-mood', 'welcome');
+  await expect(bird).toBeVisible();
+  await expect(bird).toHaveAttribute('data-state', 'question');
 
   const firstQuestion = page.locator('.booklet-question').first();
   await expect(firstQuestion).toBeVisible();
@@ -88,52 +87,36 @@ test('giriş yapmış kullanıcı profilde maskot seçer, soru ekranında üst y
   await firstChoice.click();
   await page.waitForTimeout(350);
   await firstChoice.click();
-  await expect(companion).toHaveAttribute('data-mood', /^(correct|wrong)$/);
 
-  // Akıllı Tahtada üst HUD rozeti görünmeye devam eder; ana sayfaya dönünce tahta kapanır
+  // Akıllı Tahtada uçan maskot görünmeye devam eder; ana sayfaya dönünce tahta kapanır
   await firstQuestion.locator('[data-action="toggle-question-features"]').click();
   await firstQuestion.locator('[data-action="open-board-focus"]').click();
   await expect(page.locator('#boardSpaceOverlay')).toBeVisible();
-  await expect(companion).toBeVisible();
+  await expect(bird).toBeVisible();
 
   await page.locator('[data-action="welcome-home"]').click();
   await expect(page.locator('#boardSpaceOverlay')).toBeHidden();
 
-  // Profilden Hamsi seçilince yuvarlak lumboz rozetine geçer
+  // Profilden Drone seçilince rotorlu drone maskotuna geçer
   await page.locator('#btnMasterConsole').click();
   await page.locator('#btnOpenProfileScreen').click();
-  await page.locator('.ps-mascot-card[data-mascot="fish"]').click();
-  await expect(companion).toHaveAttribute('data-mascot', 'fish');
-  await expect.poll(() => mascotPatches.at(-1)).toBe('fish');
+  await page.locator('.ps-mascot-card[data-mascot="drone"]').click();
+  await expect(bird).toHaveAttribute('data-species', 'drone');
+  await expect(bird.locator('.mc-svg-drone .rb-rotor')).toHaveCount(2);
+  await expect.poll(() => mascotPatches.at(-1)).toBe('drone');
 
-  // Profilden Robokuş seçilince ana sayfada görünür; soru ekranında alt bara uçar, soruya tıklanınca soru numarasına konar
+  // Profilden Karga seçilince kargaya geçer
+  await page.locator('.ps-mascot-card[data-mascot="raven"]').click();
+  await expect(bird).toHaveAttribute('data-species', 'raven');
+  await expect.poll(() => mascotPatches.at(-1)).toBe('raven');
+
+  // Profilden Tavuk seçilince tavuğa döner
   await page.locator('.ps-mascot-card[data-mascot="bird"]').click();
+  await expect(bird).toHaveAttribute('data-species', 'bird');
   await expect.poll(() => mascotPatches.at(-1)).toBe('bird');
-  await page.locator('#btnCloseProfileScreen').click();
 
-  const bird = page.locator('#mascotBird');
-  await expect(bird).toBeVisible();
-  await expect(bird).toHaveAttribute('data-state', 'welcome');
-  await expect(bird.locator('canvas.mascot-bird-canvas')).toBeVisible();
-
-  await page.locator('[data-action="bottom-nav-questions"]').click();
-  await expect(bird).toBeVisible();
-  await expect(bird).toHaveAttribute('data-state', 'question');
-
-  const qCard = page.locator('.booklet-question').first();
-  await qCard.locator('.question-stem, .optical-choice-row').first().click();
-  await expect(bird).toHaveAttribute('data-state', 'question');
-
-  // Profilden RoboBaykuş seçilince 3D kuş türü güncellenir
-  await page.locator('#btnMasterConsole').click();
-  await page.locator('#btnOpenProfileScreen').click();
-  await page.locator('.ps-mascot-card[data-mascot="owl"]').click();
-  await expect(bird).toHaveAttribute('data-species', 'owl');
-  await expect.poll(() => mascotPatches.at(-1)).toBe('owl');
-
-  // Profilden "Gizle" seçilince hem üst rozet hem Robokuş gizlenir
+  // Profilden "Gizle" seçilince maskot gizlenir
   await page.locator('.ps-mascot-card[data-mascot="none"]').click();
-  await expect(companion).toBeHidden();
   await expect(bird).toBeHidden();
   await expect.poll(() => mascotPatches.at(-1)).toBe('none');
 });

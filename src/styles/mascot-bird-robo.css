@@ -1,0 +1,69 @@
+/* ========================================================= */
+/* ROBOT MASKOTLAR — RoboBaykuş & Drone                      */
+/* Ortak: tema rengi parlaması, vizör/kamera ruh hali, zırh   */
+/* ========================================================= */
+
+:is(.mc-svg-owl, .mc-svg-drone) .rb-glow-stroke { stroke: var(--brand-accent, #38bdf8); }
+:is(.mc-svg-owl, .mc-svg-drone) .rb-glow-fill { fill: var(--brand-accent, #38bdf8); }
+
+/* Doğru: vizör/lens yeşil yanar; yanlış: amber yanar */
+:is(.mc-svg-owl, .mc-svg-drone) :is(.mc-happy, .mc-wrong) { stroke: none; }
+:is(.mc-svg-owl, .mc-svg-drone) .mc-happy { fill: #34d399; filter: drop-shadow(0 0 2.5px rgba(52, 211, 153, 0.9)); }
+:is(.mc-svg-owl, .mc-svg-drone) .mc-wrong { fill: #f59e0b; filter: drop-shadow(0 0 2.5px rgba(245, 158, 11, 0.9)); }
+.mascot-bird:is([data-species="owl"], [data-species="drone"]):is([data-mood="correct"], [data-mood="wrong"]) .mc-eye { animation: none; opacity: 0; transform: none; }
+
+/* Zırhlı gövde: zıplama yerine kontrollü onay hareketi */
+.mascot-bird:is([data-species="owl"], [data-species="drone"])[data-mood="correct"] .rb-root { animation: rbRoboNod 0.5s cubic-bezier(0.3, 1.2, 0.4, 1); }
+.mascot-bird:is([data-species="owl"], [data-species="drone"]) .mascot-bird-btn { filter: drop-shadow(0 8px 12px rgba(2, 6, 23, 0.45)); }
+
+/* --- RoboBaykuş: vizör tarama ışığı ve kısa titreşim --- */
+.mc-svg-owl .rb-pupil { animation: rbVisorScan 4.2s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
+.mc-svg-owl .mc-eye { animation: rbVisorFlicker 6.4s steps(1, end) infinite; }
+
+/* --- Drone: konarken rotor durur, uçarken döner; nefes yerine sabit duruş --- */
+.mascot-bird:where([data-species="drone"]) .rb-root { animation: none; }
+.mc-svg-drone .rb-rotor { transform-box: fill-box; transform-origin: center; }
+.mc-svg-drone .rb-rotor-disc { opacity: 0; transition: opacity 0.2s ease; }
+.mc-svg-drone .rb-led { animation: rbLedBlink 1.6s steps(1, end) infinite; }
+.mascot-bird[data-flying="true"] .mc-svg-drone .rb-rotor { animation: rbRotorSpin 0.07s linear infinite; }
+.mascot-bird[data-flying="true"] .mc-svg-drone .rb-rotor-disc { opacity: 1; }
+.mascot-bird[data-flying="true"] .mc-svg-drone .rb-talons { transform: translateY(-3px); }
+.mascot-bird[data-species="drone"][data-flying="true"] .rb-root { animation: rbDroneHover 0.9s ease-in-out infinite; }
+.mascot-bird[data-species="drone"]:is([data-mood="welcome"], [data-mood="correct"]) .rb-rotor { animation: rbRotorSpin 0.09s linear 8; }
+
+@keyframes rbRoboNod {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  40% { transform: translateY(-4px) rotate(-3deg); }
+}
+
+@keyframes rbVisorScan {
+  0%, 12%, 100% { transform: translateX(0); }
+  44%, 58% { transform: translateX(-11px); }
+}
+
+@keyframes rbVisorFlicker {
+  0%, 95.5%, 100% { opacity: 1; }
+  96% { opacity: 0.35; }
+  97% { opacity: 1; }
+  97.6% { opacity: 0.5; }
+}
+
+/* Yandan görülen iki kanatlı pervanenin görünür boyu |cos θ| ile değişir */
+@keyframes rbRotorSpin {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(0.12); }
+}
+
+@keyframes rbLedBlink {
+  0%, 60% { opacity: 1; }
+  61%, 100% { opacity: 0.15; }
+}
+
+@keyframes rbDroneHover {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-1.6px) rotate(0.6deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mc-svg-drone .rb-rotor, .mc-svg-drone .rb-led { animation: none !important; }
+}

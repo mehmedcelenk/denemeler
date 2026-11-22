@@ -1,5 +1,27 @@
 [
   {
+    "questionId": 2566,
+    "subject": "MAT",
+    "title": "Sayıların Tersi ve Basit Çarpma Mantığı",
+    "explanation": "Matematikte 'ters' demek aslında çok basit iki şeydir: Eğer toplama işlemine göre ters isteniyorsa sayının sadece işaretini değiştiriyoruz (artıysa eksi, eksiyse artı yapıyoruz). Eğer çarpma işlemine göre ters isteniyorsa sayıyı takla attırıyoruz; yani $\\frac{a}{b}$ olan sayı $\\frac{b}{a}$ oluyor. Sayımız tam sayıysa altında gizli bir 1 olduğunu düşünürüz 💡.\n\nŞimdi adım adım gidelim: $-27$ sayısının çarpma işlemine göre tersini bulmak için onu $\\frac{-27}{1}$ şeklinde düşünüp takla attırıyoruz, böylece $-\\frac{1}{27}$ elde ediyoruz. $81$ sayısının toplama işlemine göre tersi ise sadece işaretini değiştirip $-81$ yapmaktır. Şimdi bu ikisini çarpalım: Önce işaretlere bakıyoruz, eksi ile eksinin çarpımı her zaman artı (+) yapar. Sonra $-\\frac{1}{27}$ ile $-81$'i çarparken $81$'in altına gizli bir $1$ koyup üstleri üstlerle, altları altlarla çarptığımızda $\\frac{1 \\cdot 81}{27 \\cdot 1} = \\frac{81}{27}$ olur. En sonda $81$'i $27$'ye böldüğümüzde sonuç $3$ çıkar 🎯. Birçok kişi çarpma tersini alırken işareti de değiştirmeye çalışıp hata yapıyor ama dikkat edin, çarpma tersinde işaret asla değişmez. Doğru cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "toplama işlemine göre ters",
+        "definition": "Bir sayının işaretinin tam zıttı olan sayıdır.",
+        "example": "5'in tersi -5, -10'un tersi 10'dur.",
+        "emoji": "🔄"
+      },
+      {
+        "term": "çarpma işlemine göre ters",
+        "definition": "Bir sayının pay ve paydasının yer değiştirmesiyle oluşan halidir; işaret aynı kalır.",
+        "example": "4'ün (yani 4/1'in) tersi 1/4'tür.",
+        "emoji": "🙃"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
     "questionId": 518,
     "subject": "MAT",
     "title": "Oran-Orantıda \"k\" Katı Mantığı",
@@ -1020,28 +1042,6 @@
         "definition": "Bir grubun tamamının, başka bir grubun içinde yer alması durumudur.",
         "example": "Tüm kedilerin aynı zamanda birer memeli olması gibi.",
         "emoji": "📦"
-      }
-    ],
-    "model": "gemma-4-31b",
-    "version": 6
-  },
-  {
-    "questionId": 2566,
-    "subject": "MAT",
-    "title": "Ters Sayıları Anlamak: Takla Attırma ve İşaret Değiştirme",
-    "explanation": "İşin sırrı şu iki farkı anlamakta: Toplama işlemine göre ters dediğimizde sadece sayının işaretini değiştiriyoruz; artıyı eksi, eksiyi artı yapıyoruz. Çarpma işlemine göre ters dediğimizde ise sayının işaretine hiç dokunmadan sayıyı takla attırıyoruz 🎯. Yani sayı tam sayıysa altına gizli bir 1 koyup yerlerini değiştiriyoruz; mesela 5'in toplamadaki tersi $-5$, çarpmadaki tersi ise $\\frac{1}{5}$ olur.\n\nŞimdi soruya uygulayalım: $-27$'nin çarpma işlemine göre tersi, işaret değişmeden takla atınca $-\\frac{1}{27}$ olur. $81$'in toplama işlemine göre tersi ise sadece işaret değiştirip $-81$ olur ⚡. Bu ikisini çarptığımızda $(-\\frac{1}{27}) \\cdot (-81)$ işlemi bizi doğrudan 3 sonucuna götürür, doğru cevap D şıkkıdır. Birçok kişi çarpma tersini alırken yanlışlıkla işaret değiştirmeye çalışarak hata yapıyor, buna dikkat edin.",
-    "concepts": [
-      {
-        "term": "Toplama işlemine göre ters",
-        "definition": "Bir sayının sadece işaretinin tam tersine dönüştürülmüş halidir.",
-        "example": "$10$ sayısının tersi $-10$, $-4$ sayısının tersi $+4$'tür.",
-        "emoji": "🔄"
-      },
-      {
-        "term": "Çarpma işlemine göre ters",
-        "definition": "Sayının işaretini koruyarak, pay ve paydasının yer değiştirmiş (takla atmış) halidir.",
-        "example": "$2$ sayısının tersi $\\frac{1}{2}$, $-\\frac{3}{4}$ sayısının tersi $-\\frac{4}{3}$'tür.",
-        "emoji": "🙃"
       }
     ],
     "model": "gemma-4-31b",

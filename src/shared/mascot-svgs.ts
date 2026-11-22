@@ -1,4 +1,4 @@
-import type { ActiveMascotId, MascotId } from './mascot-types.ts';
+import type { ActiveMascotId, AnyMascotId, MascotId } from './mascot-types.ts';
 import { renderRoboBirdSvg } from './mascot-bird-svg.ts';
 
 /**
@@ -107,17 +107,19 @@ const HIDDEN_SVG = `
   </svg>
 `;
 
-const ACTIVE_SVG_MAP: Readonly<Record<ActiveMascotId, string>> = {
+const ACTIVE_SVG_MAP: Readonly<Record<AnyMascotId, string>> = {
   cat: CAT_SVG,
   dog: DOG_SVG,
   fish: FISH_SVG,
   bird: renderRoboBirdSvg('bird'),
   owl: renderRoboBirdSvg('owl'),
   raven: renderRoboBirdSvg('raven'),
+  drone: renderRoboBirdSvg('drone'),
+  none: HIDDEN_SVG,
 };
 
 export function renderActiveMascotSvg(id: ActiveMascotId): string {
-  return ACTIVE_SVG_MAP[id] ?? CAT_SVG;
+  return ACTIVE_SVG_MAP[id] ?? renderRoboBirdSvg('bird');
 }
 
 export function renderMascotOptionSvg(id: MascotId): string {

@@ -12,20 +12,6 @@ import {
 } from './mascot-bird-perch.ts';
 
 import type { BirdMascotId } from '../../shared/mascot-types.ts';
-import type { Bird3DController } from './mascot-bird-3d.ts';
-
-export async function loadRoboBird3D(
-  stage: HTMLElement,
-  species: BirdMascotId,
-): Promise<Bird3DController | null> {
-  try {
-    const { mountRoboBird3D } = await import('./mascot-bird-3d.ts');
-    return stage.isConnected ? mountRoboBird3D(stage, species) : null;
-  } catch (err) {
-    console.warn('[mascot-bird-3d] WebGL yüklenemedi, SVG yedeği kullanılıyor:', err);
-    return null;
-  }
-}
 
 export interface FlightState {
   startX: number;
@@ -111,13 +97,14 @@ export function createFlightState(
   const dist = Math.hypot(dx, dy);
   const isRaven = species === 'raven';
   const isChicken = species === 'bird';
-  const speedMul = isRaven ? 1.32 : isChicken ? 1.08 : 1;
-  const hasBurst = Math.random() < (isChicken ? 0.9 : 0.72);
+  const isDrone = species === 'drone';
+  const speedMul = isRaven ? 1.32 : isChicken ? 1.08 : isDrone ? 0.82 : 1;
+  const hasBurst = !isDrone && Math.random() < (isChicken ? 0.9 : 0.72);
   return {
     startX,
     startY,
     ctrlOffsetX: clamp(-dx * (0.1 + Math.random() * 0.14) + (Math.random() - 0.5) * (isChicken ? 120 : 85), -115, 115),
-    arcLift: clamp(dist * (isRaven ? 0.36 : 0.26 + Math.random() * 0.16), 55, 190),
+    arcLift: isDrone ? clamp(dist * 0.14, 30, 110) : clamp(dist * (isRaven ? 0.36 : 0.26 + Math.random() * 0.16), 55, 190),
     endX,
     endY,
     startTime: now,
@@ -158,11 +145,17 @@ export function updateFlightTarget(
 }
 
 export function evaluateFlightFrame(flight: FlightState, now: number): FlightFrame {
-  const rawT = clamp((now - flight.startTime) / flight.durationMs, 0, 1);
+  const elapsed = now - flight.startTime;
+  const rawT = clamp(elapsed / flight.durationMs, 0, 1);
 
-  const baseT = easeInOutCubic(rawT);
-  const burstWindow = Math.exp(-Math.pow((rawT - flight.burstPhase) / 0.18, 2));
-  const t = clamp(baseT + flight.burstAmp * burstWindow * Math.sin(Math.PI * rawT), 0, 1);
+  // Aerodinamik kalkış ivmesi, sabit süzülme ve yumuşak konma frenlemesi
+  const baseT = rawT < 0.22
+    ? Math.pow(rawT / 0.22, 1.45) * 0.18
+    : rawT < 0.78
+      ? 0.18 + ((rawT - 0.22) / 0.56) * 0.64
+      : 0.82 + (1 - Math.pow(1 - (rawT - 0.78) / 0.22, 2.2)) * 0.18;
+
+  const t = clamp(baseT, 0, 1);
   const inv = 1 - t;
 
   const ctrlX = (flight.startX + flight.endX) / 2 + flight.ctrlOffsetX;
@@ -172,12 +165,34 @@ export function evaluateFlightFrame(flight: FlightState, now: number): FlightFra
     ctrlY = guard.bottom + 26;
   }
 
-  const liftCurve = Math.sin(Math.PI * rawT);
-  const bobAmp = flight.species === 'bird' ? 10.5 : flight.species === 'raven' ? 3.5 : 5.5;
-  const flapBob = -Math.abs(Math.sin(rawT * flight.wingBeats * Math.PI)) * bobAmp * liftCurve;
-  const goofyX = flight.species === 'bird' ? Math.sin(rawT * 18) * 7 * liftCurve : 0;
-  const x = inv * inv * flight.startX + 2 * inv * t * ctrlX + t * t * flight.endX + goofyX;
-  const y = inv * inv * flight.startY + 2 * inv * t * ctrlY + t * t * flight.endY + flapBob;
+  // Türe özel biyomekanik kanat çırpış ve süzülme dalgası
+  const liftEnvelope = Math.sin(Math.PI * rawT);
+  let undulation = 0;
+  let lateralWobble = 0;
+
+  if (flight.species === 'bird') {
+    // Tavuk: Yüksek frekanslı asimetrik Fourier dalgası ve komik yalpalama
+    const flapPhase = rawT * flight.wingBeats * 2 * Math.PI;
+    undulation = (-Math.abs(Math.sin(flapPhase)) * 8.5 + Math.sin(flapPhase * 2) * 2.2) * liftEnvelope;
+    lateralWobble = Math.sin(flapPhase * 0.65) * 4.2 * liftEnvelope;
+  } else if (flight.species === 'raven') {
+    // Karga: Başta güçlü çırpış, ortada pürüzsüz termal süzülme (thermal glide)
+    const isGliding = rawT > 0.28 && rawT < 0.74;
+    if (isGliding) {
+      undulation = -liftEnvelope * 2.4;
+    } else {
+      const flapPhase = rawT * flight.wingBeats * 2 * Math.PI;
+      undulation = -Math.abs(Math.sin(flapPhase)) * 4.2 * liftEnvelope;
+    }
+  } else if (flight.species === 'drone') {
+    // Drone: kanat yok; rotor itkisiyle düz hat, yalnızca hafif hover titreşimi
+    undulation = -Math.sin(rawT * Math.PI * 6) * 1.2 * liftEnvelope;
+  } else {
+    undulation = -Math.sin(rawT * flight.wingBeats * Math.PI) * 2.6 * liftEnvelope;
+  }
+
+  const x = inv * inv * flight.startX + 2 * inv * t * ctrlX + t * t * flight.endX + lateralWobble;
+  const y = inv * inv * flight.startY + 2 * inv * t * ctrlY + t * t * flight.endY + undulation;
 
   const vx = x - flight.prevX;
   const vy = y - flight.prevY;
@@ -185,9 +200,15 @@ export function evaluateFlightFrame(flight: FlightState, now: number): FlightFra
   flight.prevY = y;
 
   const dir = flight.endX < flight.startX ? -1 : 1;
-  const velocityPitch = Math.atan2(vy, Math.max(2, Math.abs(vx))) * (180 / Math.PI);
-  const bankDeg = clamp(dir * velocityPitch * 0.45 + dir * burstWindow * 8, -22, 22);
-  const scale = 1 + liftCurve * 0.22 + burstWindow * 0.06;
+  const velocityPitch = Math.atan2(vy, Math.max(1.8, Math.abs(vx))) * (180 / Math.PI);
+
+  // İnişte aerodinamik frenleme (landing flare: burnu kaldırıp ayakları açma)
+  const flareDeg = rawT > 0.82 ? Math.sin(((rawT - 0.82) / 0.18) * Math.PI) * 16 : 0;
+  const bankDeg = clamp(dir * (velocityPitch * 0.52 - flareDeg), -26, 26);
+
+  // Hıza bağlı aerodinamik esneme (squash & stretch)
+  const speed = Math.hypot(vx, vy);
+  const scale = 1 + liftEnvelope * 0.12 + Math.min(0.06, speed * 0.003);
 
   return { x, y, scale, bankDeg, progress: rawT, done: rawT >= 1 };
 }

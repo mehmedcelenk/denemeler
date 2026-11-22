@@ -61,7 +61,7 @@ function maybeShowBubble(mood: TalkMood): void {
 }
 
 function firePortholeTorpedo(): void {
-  if (!frameEl || renderedMascot !== 'fish') return;
+  if (!frameEl || (renderedMascot as string) !== 'fish') return;
   frameEl.querySelectorAll('.mascot-porthole-bolt').forEach(el => el.remove());
   const bolt = document.createElement('span');
   bolt.className = 'mascot-porthole-bolt';

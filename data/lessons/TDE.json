@@ -8018,6 +8018,28 @@
     "version": 6
   },
   {
+    "questionId": 7136,
+    "subject": "TDE",
+    "title": "Necip Fazıl'ın Eserlerini Ayırt Etme",
+    "explanation": "Necip Fazıl Kısakürek denince aklımıza ilk gelen şey, insanın iç dünyasını, ruhsal sancıları ve dini sorgulamaları anlattığı mistik şiir tarzıdır. Bu adam sadece şiir yazmadı, aynı zamanda toplumun sorunlarını sahneye taşıyan güçlü tiyatro oyunları da kaleme aldı. İşin sırrı şu: Eğer eserin ismi derin bir manevi arayış, sonsuzluk ya da toplumsal bir çatışmayı çağrıştırıyorsa, yüksek ihtimalle onun kaleminden çıkmıştır ✍️.\n\nŞimdi seçeneklere baktığımızda; \"Örümcek Ağı\" ve \"Reis Bey\" onun meşhur tiyatro oyunlarıdır, \"Sonsuzluk Kervanı\" ise yine ruhani temasını sürdürdüğü şiir kitaplarından biridir. Ancak \"Paydos\" adlı eser ona değil, Cevat Fehmi Başkut'a aittir. Çoğu kişi benzer dönem yazarları olduğu için bu iki ismi karıştırabiliyor ama Paydos'un tarzı Necip Fazıl'ın ruh dünyasına uymaz 🎯. Bu yüzden doğru cevap C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "mistik şiir",
+        "definition": "Dünya ötesi gerçeklikleri, ruhun yücelişini ve gizemli manevi konuları işleyen şiir türüdür.",
+        "example": "Kaldırımlar şiirindeki yalnızlık ve ruh hali buna örnektir.",
+        "emoji": "✨"
+      },
+      {
+        "term": "tiyatro oyunları",
+        "definition": "Sahnelenmek amacıyla yazılmış, diyaloglara dayalı edebi eserlerdir.",
+        "example": "Reis Bey, toplumsal mesajlar veren bir tiyatro eseridir.",
+        "emoji": "🎭"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
     "questionId": 7517,
     "subject": "TDE",
     "title": "Parçada Olmayanı Bulma Taktiği",
@@ -9844,6 +9866,22 @@
     "version": 6
   },
   {
+    "questionId": 8892,
+    "subject": "TDE",
+    "title": "Kelimeyi Yapıştıralım mı, Ayıralım mı?",
+    "explanation": "Türkçede iki kelime yan yana geldiğinde eğer ortaya tamamen yeni, bambaşka bir anlam çıkıyorsa onları bitişik yazarız. Ama kelimeler hâlâ kendi orijinal anlamlarını koruyorlarsa onları birbirinden uzak tutuyoruz, yani ayrı yazıyoruz 🎯. İşin sırrı şu: Kelimenin anlamı gerçekten değişmiş mi yoksa sadece birbirini mi tanımlıyor? Eğer sadece tanımlıyorsa (mesela kitabın başında yer alan söz gibi), onları yapıştırmaya gerek yok.\n\nŞimdi bu mantığı şıklarda tek tek uygulayalım. A şıkkındaki \"varolduğu\" ifadesinde \"var olmak\" bir yardımcı fiil yapısıdır ve herhangi bir ses düşmesi olmadığı için ayrı yazılmalıydı. C şıkkında gördüğümüz \"gözardı\" kelimesi de aslında \"göz」ve「ardı\" şeklinde ayrı yazılır. D şıkkındaki \"kamu oyunu\" kısmı ise en büyük tuzak; halkın ortak görüşü demek olan \"kamuoyu\" tek bir kelimedir ve bitişik yazılır, aksi halde sanki devlet adına bir oyun oynanıyormuş gibi olur 👀. B şıkkındaki \"ön söz\" ise TDK'ye göre ayrı yazılan bir kelime grubudur ve cümlede başka bir hata yok. Doğru cevabımız B 🔑.",
+    "concepts": [
+      {
+        "term": "yardımcı fiil",
+        "definition": "Tek başına anlamı zayıf olan ancak isimlerle birleşip onları eylem haline getiren fiillerdir (etmek, olmak gibi).",
+        "example": "Yardım etmek, mutlu olmak",
+        "emoji": "⚙️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
     "questionId": 8893,
     "subject": "TDE",
     "title": "Noktalama İşaretlerinin 'Yasak Bölgesi'",
@@ -11224,6 +11262,40 @@
     "version": 6
   },
   {
+    "questionId": 10258,
+    "subject": "TDE",
+    "title": "I. Yeni (Garip) Şiir Anlayışı",
+    "explanation": "İşin sırrı şu: I. Yeni (diğer adıyla Garip) şairleri, şiiri süslü püslü kalıplardan kurtarıp sokağa indiren ekiptir. Şairaneliğe, ağır sözlere ve kurallara karşı çıkıp; tıpkı bizim günlük hayatta konuştuğumuz gibi sade, doğal ve hatta bazen komik bir dil kullanmışlardır. Amaçları, yüksek sınıfların değil, sokaktaki adamın derdini anlatmaktı 💡.\n\nŞimdi maddelere beraber bakalım: İlk cümlede bahsedilen sıradan insan, yergi ve doğal söyleyiş tam olarak Garip'lerin tarzıdır, yani burası Doğru (D). İkinci maddedeki gerçeküstücülük (sürrealizm) etkisi de bu grubun gelişim sürecinde yer aldığı için Doğru (D) kabul edilir. Üçüncü madde ise tamamen yanlıştır çünkü onlar seçkinlere değil, halka hitap ettiler; \"sanat için sanat\" yerine yaşamın kendisini yazdılar, yani burası Yanlış (Y). Sıralamamız D-D-Y olduğu için cevap D şıkkıdır. Çoğu kişi modern oldukları için onları seçkinci sanıp üçüncü maddeye kanabiliyor, aman dikkat 🎯.",
+    "concepts": [
+      {
+        "term": "I. Yeni",
+        "definition": "Kuralları yıkan, ölçü ve uyak kullanmayan, günlük dili şiire taşıyan edebi topluluktur.",
+        "example": "Orhan Veli'nin basit ve yalın şiirleri buna en iyi örnektir.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "yergi",
+        "definition": "Bir kişinin veya durumun kusurlarını eleştirmek amacıyla yapılan iğneleyici konuşmadır.",
+        "example": "Toplumdaki adaletsizlikleri mizahi bir dille eleştirmek.",
+        "emoji": "🧐"
+      },
+      {
+        "term": "gerçeküstücülük (sürrealizm)",
+        "definition": "Mantık sınırlarını zorlayan, bilinçaltının ve rüyaların etkisinde olan sanat akımıdır.",
+        "example": "Gerçeğin ötesinde, alışılmadık imgelerle dolu tasvirler yapmak.",
+        "emoji": "☁️"
+      },
+      {
+        "term": "sanat için sanat",
+        "definition": "Sanatın herhangi bir toplumsal fayda gütmeden, sadece estetik güzellik için yapılmasıdır.",
+        "example": "Halkın sorunlarını görmezden gelip sadece biçimsel mükemmelliğe odaklanmak.",
+        "emoji": "🎨"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
     "questionId": 10259,
     "subject": "TDE",
     "title": "Bilgi Avcılığı: Olumsuz Soru Kökleri",
@@ -11398,6 +11470,1332 @@
         "definition": "Bir topluluğu coşturmak, bilgilendirmek veya bir fikre inandırmak için yapılan ciddi konuşma.",
         "example": "Atatürk'ün Gençliğe Hitabesi en güçlü söylev örneklerinden biridir.",
         "emoji": "📜"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10268,
+    "subject": "TDE",
+    "title": "Trajedi ve Komedi Farkı",
+    "explanation": "Tiyatronun bu iki dev ismi aslında birbirinin zıttıdır. İşin sırrı şu: Trajedi tamamen ağır, ciddi ve hüzünlüdür; amacı izleyiciyi ağlatmak ya da derin düşüncelere sevk etmektir. Komedi ise hayatın komik yanlarını, insanların hatalarını güldürerek eleştirir 🎭. Yani biri gözyaşı döktürür, diğeri kahkahalar attırır.\n\nŞimdi seçeneklere bakalım. Öncelikle trajedi ve komedinin amacına baktığımızda; trajedinin acıklı, komedinin ise gülünç olduğu için D şıkkı doğrudur. Dil konusuna gelirsek, soyluların olduğu trajedide dil çok kibardır ama halkın olduğu komedide günlük, hatta bazen kaba sözler duyabiliriz; yani C şıkkı da doğrudur. Üç birlik kuralı dediğimiz şey ise oyunun tek mekanda, tek bir günde ve tek bir olay örgüsüyle geçmesidir ki klasik formda ikisi de buna uymaya çalışır, dolayısıyla B şıkkı da geçerlidir. Ancak A şıkkında \"ikisinde de kahramanlar sıradan kişidir\" deniyor. İşte burası yanlış çünkü trajedi sadece krallar, tanrılar ve soylular üzerinden yürür 👑. Çoğu kişi günümüz oyunlarıyla karıştırdığı için burada yanılabilir ama klasik ayrımda trajedi asla sıradan insanı sahneye çıkarmaz. Doğru cevap A.",
+    "concepts": [
+      {
+        "term": "Trajedi",
+        "definition": "Konusu ciddi, dili ağır ve kahramanları genellikle yüksek sınıftan (kral, tanrı) olan acıklı tiyatro türüdür.",
+        "example": "Bir kralın yaşadığı büyük yıkımın anlatıldığı oyunlar.",
+        "emoji": "😢"
+      },
+      {
+        "term": "Komedi",
+        "definition": "Günlük hayattaki saçmalıkları ve insan kusurlarını güldürerek gösteren tiyatro türüdür.",
+        "example": "Cimri bir adamın başına gelen komik olaylar.",
+        "emoji": "😂"
+      },
+      {
+        "term": "Üç birlik kuralı",
+        "definition": "Oyunun zaman, mekan ve olay bakımından tek bir merkezde toplanmasıdır.",
+        "example": "Oyunun sabah başlayıp akşam bitmesi ve hep aynı evde geçmesi.",
+        "emoji": "⏳"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10269,
+    "subject": "TDE",
+    "title": "Romanlarda Oyunbaz Yaklaşım: Postmodernizm",
+    "explanation": "Edebiyatta bazı yazarlar artık klasik hikaye anlatmaktan sıkılmışlar ve \"Kuralları yıkalım, okuru şaşırtalım\" demişler. İşte bu kafaya Postmodernizm diyoruz. Bu tarzda olaylar düz bir çizgide ilerlemez; yazar aniden araya girip \"Aslında şu an bu sahneyi ben uyduruyorum\" diyebilir ya da başka ünlü kitaplardan parçalar ödünç alabilir. Yani işin özü, geleneksel roman yapısını bozup yerine daha karmaşık ve oyunbaz bir düzen kurmaktır 💡.\n\nSoruda bize verilen ipuçlarını takip edelim: Öncelikle tarihlerin 1960 sonrası başlayıp 1980'lerde yaygınlaştığını görüyoruz. Hemen ardından Üst Kurmaca (yazanın yazdığıyla dalga geçmesi) ve Metinler Arasılık (başka metinlerle bağ kurma) gibi anahtar kelimeler geliyor. Klasik olay örgüsünün değiştiği vurgulandığına göre, karşımızdaki cevap kesinlikle B şıkkıdır 🎯. Burada çoğu kişi toplumcu gerçekçilikle karıştırabilir ama unutmayın; toplumcu gerçekçiler hayatın zorluklarını anlatır, postmodernistler ise kitabın kendisiyle oynar.",
+    "concepts": [
+      {
+        "term": "Postmodernizm",
+        "definition": "Klasik sanat ve edebiyat kurallarını reddeden, deneye ve oyuna dayalı modern sonrası yaklaşım.",
+        "example": "Bir romanda olayların sondan başa anlatılması veya yazarın karakterle tartışması.",
+        "emoji": "🎨"
+      },
+      {
+        "term": "Üst Kurmaca",
+        "definition": "Yazarın, yazdığı eserin bir kurgu olduğunu okura hatırlatması ve anlatım sürecini sergilemesidir.",
+        "example": "Kitabın ortasında yazarın 'Burada karakteri öldürmeli miyim?' diye düşüncelere dalması.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "Metinler Arasılık",
+        "definition": "Bir metnin, daha önce yazılmış başka metinlerden izler taşıması veya onlara gönderme yapmasıdır.",
+        "example": "Modern bir romanda aniden bir Mevlana şiirinden bölümlerin yer alması.",
+        "emoji": "📚"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10270,
+    "subject": "TDE",
+    "title": "Konuşmalarda Noktalama İşaretlerini Yakalamak",
+    "explanation": "Diyaloglarda noktalama işaretleri sadece kurallar bütünü değil, aslında karşımızdaki kişinin hangi ruh haliyle konuştuğunu bize anlatan ipuçlarıdır. Mesela birine kızıyorsak ünlem, sözümüz ansızın yarıda kaldıysa üç nokta kullanırız. Virgülü ise genellikle nefes aldığımız, söze giriş yaptığımız veya benzer ifadeleri sıraladığımız yerlerde devreye sokarız 🎯.\n\nSoruya baktığımızda \"Yo yooo\" diyerek söze başladığı için buraya bir virgül (,) koyarak girişi yapıyoruz. \"Kurtaramayacaksın\" ifadesi net bir uyarı ve tehdit içerdiği için sonuna ünlem (!) yakışır. Karşı taraf \"kanıt olmadığını\" deyip cümleyi bitirmeden sustuğu için orada bir eksiklik var, yani üç nokta (...) gerekir. Son kısımda ise iki soru peş peşe geliyor; ilk soruyu ikinciye bağlayıp akışı bozmamak için virgül (,) kullandık, en sondaki ana soruya ise tabii ki soru işareti (?) koyduk ⚡. Çoğu kişi her soru kelimesi gördüğü yere hemen soru işareti koymaya çalışıp yanılır ama burada cümlelerin birbirine bağlanma şekline dikkat etmek lazım. Bu durumda doğru cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "virgül",
+        "definition": "Cümle içinde nefes alınan yerleri belirten veya sıralı ögeleri ayıran işaret.",
+        "example": "Evet, ben de seninle geliyorum.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "ünlem",
+        "definition": "Sevinç, korku, şaşma veya uyarı gibi güçlü duyguları belirten işaret.",
+        "example": "Dur, oraya gitme!",
+        "emoji": "❗"
+      },
+      {
+        "term": "üç nokta",
+        "definition": "Anlatımın eksik bırakıldığı veya cümlenin tamamlanmadığı yerlerde kullanılan işaret.",
+        "example": "Keşke yanımda olsaydın...",
+        "emoji": "💬"
+      },
+      {
+        "term": "soru işareti",
+        "definition": "Soru anlamı taşıyan cümlelerin sonuna konulan işaret.",
+        "example": "Bugün okula gidecek misin?",
+        "emoji": "❓"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10271,
+    "subject": "TDE",
+    "title": "Kelime Yazımları: Bitişik mi, Ayrı mı?",
+    "explanation": "Türkçede bazı kelimeler anlamca kaynaştığı için bitişik, bazıları ise anlamlarını korudukları için ayrı yazılır. Özellikle miktar veya kimliği tam belli olmayan belgisiz zamirlerde işler biraz karışabiliyor ama kilit nokta şu: \"her\" kelimesiyle başlayanlar genellikle ayrı yazılırken, \"hiç\" ve \"birkaç\" gibi kalıplaşmış yapılar bitişik yazılır 💡.\n\nŞimdi seçeneklere beraber bakalım: A şıkkında \"her biri\" ifadesi kural通り ayrı yazılmış, yani tertemiz ve doğru. B şıkkındaki \"hiç biri\" yanlıştır çünkü bu kelime her zaman bitişik yani \"hiçbiri\" şeklinde yazılır. C şıkkındaki \"biran\" ifadesi, kısa bir süreyi kastettiği için \"bir an\" şeklinde ayrı olmalıydı. D şıkkındaki \"bir kaç\" ise sayıca azlığı belirttiği için bitişik yani \"birkaç\" şeklinde yazılmalıdır 🎯. Çoğu kişi \"her biri\" ayrıysa \"hiç biri\" de ayrıdır diye düşünerek B şıkkına düşer ama Türkçenin cilvesi buradadır. Doğru cevap A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "belgisiz zamir",
+        "definition": "Hangi varlığın veya kişinin kastedildiği kesin olarak belirtilmeyen kelimelerdir.",
+        "example": "Bazıları gelmedi, herkes burada.",
+        "emoji": "👤"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10272,
+    "subject": "TDE",
+    "title": "Deyimlerin Mantığı ve Paragraf Uyumu",
+    "explanation": "Buradaki işin sırrı, deyimlerin kelime kelime değil, verdiği genel mesajla anlaşılmasıdır. Deyim dediğimiz şeyler, günlük hayatta bir durumu daha etkili anlatmak için kullandığımız kalıplaşmış sözlerdir 💡. Bu tarz sorularda önce hikayedeki ana duyguyu yakalamalıyız: Kişi çok para harcamış ama karşılığında kötü bir hizmet almış.\n\nŞimdi şıklara beraber bakalım. Hikaye boyunca 'pahalı malzeme' ve 'yüklüce harcama' deniyor; yani adam cömertçe para harcamış, bu da bize paraya kıymak ve para dökmek deyimlerini verir. Ancak yüksek ücret ödemesine rağmen çatının yine akması, tam olarak parasıyla rezil olmak durumudur 🎯. Olayda kişinin cebinde hiç parası kalmadığına veya borca girdiğine dair bir bilgi yok, sadece harcadığını biliyoruz. Dolayısıyla paraya sıkışmak deyimi bu tabloya uymaz. Çoğu kişi 'çok harcadıysa parası bitmiştir' diye düşünüp yanılabilir ama biz sadece metne sadık kalmalıyız. Doğru cevap D şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "deyim",
+        "definition": "Bir durumu anlatmak için kullanılan, genellikle gerçek anlamından uzaklaşmış kalıplaşmış söz grubu.",
+        "example": "Gözden düşmek (Değerini kaybetmek)",
+        "emoji": "📖"
+      },
+      {
+        "term": "paraya kıymak",
+        "definition": "Bir şey almak için yüklü miktarda parayı göze alıp harcamak.",
+        "example": "Yeni bilgisayar için tüm birikimine kıydı.",
+        "emoji": "💰"
+      },
+      {
+        "term": "para dökmek",
+        "definition": "Savurganca veya çok fazla para harcamak.",
+        "example": "Düğün hazırlıkları için ortalığa para döktüler.",
+        "emoji": "💸"
+      },
+      {
+        "term": "parasıyla rezil olmak",
+        "definition": "Bir hizmete çok para ödeyip karşılığında çok kötü bir sonuç almak.",
+        "example": "En pahalı otelde kaldık ama oda kirliydi, resmen parasıyla rezil olduk.",
+        "emoji": "🤦‍♂️"
+      },
+      {
+        "term": "paraya sıkışmak",
+        "definition": "Aniden nakit paraya ihtiyaç duymak veya parasız kalmak.",
+        "example": "Ay sonuna doğru paraya sıkıştığım için arkadaşımdan borç aldım.",
+        "emoji": "📉"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10273,
+    "subject": "TDE",
+    "title": "Paragraf Dizilimi: Düşünce Akışını Yakalamak",
+    "explanation": "Paragraf sorularında işin sırrı, ipuçlarını takip ederek zincir kurmaktır. İlk adımımız, başında hiçbir yönlendirme olmayan, konuya tertemiz giriş yapan giriş cümlesini bulmak. Eğer bir cümle \"oysa, ama, bu yüzden, nitekim\" gibi kelimelerle başlıyorsa ya da \"bu olay」 şeklinde bir şeye gönderme yapıyorsa, o kesinlikle ilk cümle olamaz çünkü öncesinde bahsedilmiş bir şey vardır 🎯.\n\nŞimdi elimizdeki cümlelere bakalım: III. cümle hiçbir yere bağlanmıyor, direkt konuyu (bebeklik dönemi) tanıtıyor; yani başlangıç noktamız burası. Hemen ardından gelen II. cümle \"Oysa\" diyerek yetişkinlerin yanlış fikrini ortaya koyuyor. I. cümle ise \"Hâlbuki bu durum... bir yanılgıdır\" diyerek, II. cümlede anlatılan durumu bir hatayla eşleştiriyor. En sonda ise IV. cümle \"bu yanılgıdan kurtarır\" diyerek, I. cümlede bahsettiğimiz hatayı çözen final vuruşunu yapıyor ⚡. Zincirimiz şöyle oluştu: III $\\rightarrow$ II $\\rightarrow$ I $\\rightarrow$ IV. Bu durumda baştan ikinci cümlemiz II oluyor, cevap B şıkkı. Çoğu kişi I ve II'deki zıtlık kelimelerini karıştırıp yerlerini değiştirebilir, ancak \"bu durum\" ifadesinin II. cümledeki yetişkin görüşüne işaret ettiğine dikkat etmek gerekir 👀.",
+    "concepts": [
+      {
+        "term": "giriş cümlesi",
+        "definition": "Kendinden önce herhangi bir bilgiye ihtiyaç duymayan, konuyu başlatan bağımsız cümledir.",
+        "example": "\"Kitap okumak insanı geliştirir.\" (Direkt giriş yapar)",
+        "emoji": "🚀"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10274,
+    "subject": "TDE",
+    "title": "Hayat Tecrübesinin Kitaba Dönüşmesi",
+    "explanation": "Buradaki kilit nokta aslında edebiyattan ziyade dikkatle okumak. Bazı yazarlar hayatlarında gördüklerini, yaşadıklarını veya hissettiklerini ham madde olarak kullanıp kağıda dökerler. Yani gerçek hayatla kitabın içeriği arasında doğrudan bir köprü kurarlar. Biz buna kısaca yaşadıkları olayları eserlerine yansıtmışlardır demekle açıklıyoruz 🎯.\n\nŞimdi beraber bakalım: İlk metinde Vonnegut savaşta ölümden dönmüş ve bu korkunç anısını bir kitaba dönüştürmüş. İkinci metinde Orhan Kemal fabrikalarda, tarlalarda çalışmış ve bu ortamı romanında anlatmış. İkisinde de süreç aynı: Önce bir olay yaşandı, sonra o olay kitaba girdi. Bu yüzden cevap C şıkkıdır. Çoğu kişi A şıkkına kayabilir ama dikkat edin; yazarlar yaşadıkları 'her' şeyi değil, sadece bazı etkileyici anıları kitaba taşırlar; tüm günlerini günlük tutar gibi yazmazlar ⚡️.",
+    "concepts": [
+      {
+        "term": "yaşadıkları olayları eserlerine yansıtmışlardır",
+        "definition": "Bir sanatçının kendi hayat tecrübelerini, anılarını veya gözlemlerini olduğu gibi ya da değiştirerek eserinde kullanmasıdır.",
+        "example": "Savaş görmüş bir askerin, savaştaki duygularını anlatan bir roman yazması.",
+        "emoji": "✍️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10275,
+    "subject": "TDE",
+    "title": "Kelimelerin Cümle İçindeki Gizli Anlamı 🔍",
+    "explanation": "Sözcüklerin tek başına sabit bir anlamı vardır ama cümleye girdikleri an renk değiştirirler. Buna bağlamsal anlam diyoruz. İşin sırrı şu: Kelimeyi görmezden gelip yerine parantez içindeki açıklamayı oku; eğer cümle hala aynı şeyi anlatıyorsa cevap doğrudur, ama anlam tamamen başka yere kayıyorsa orada bir yanlışlık vardır 💡.\n\nSeçeneklerde \"rehber\", \"direnç\" ve \"tutunmak\" kelimeleri, cümledeki olay örgüsüne cuk oturuyor. Ancak D şıkkına baktığımızda, kişinin geçmiş hatalarıyla bir dönüşüm yaşadığını görüyoruz. Hatalardan ders çıkarmak genellikle insanı olgunlaştırır ve geliştirir 🎯. Fakat parantez içinde \"benliğini kaybetmek, bozulmak」 denilerek olumsuz bir anlam verilmiş. Kişi gelişimini anlatırken kendini kaybettiğini söylemez; çoğu kişi burada dönüşüm kelimesini gördüğü an her türlü değişimin buna girdiğini sanıp yanılır ama buradaki yön olumludur. Bu yüzden cevap D.",
+    "concepts": [
+      {
+        "term": "bağlamsal anlam",
+        "definition": "Bir kelimenin sözlük anlamından ziyade, içinde bulunduğu cümlenin gelişine göre kazandığı özel anlam.",
+        "example": "\"Yüreğim yanıyor\" derken gerçekten ateşten yanmamak, üzülmek kastıdır.",
+        "emoji": "🔑"
+      },
+      {
+        "term": "dönüşüm",
+        "definition": "Bir durumdan başka bir duruma geçme, evrilme veya değişme süreci.",
+        "example": "Tırtılın kelebeğe dönüşmesi fiziksel bir değişimdir.",
+        "emoji": "🦋"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10276,
+    "subject": "TDE",
+    "title": "Parçada Anlatım Tekniklerini Ayırt Etme",
+    "explanation": "Bir metinde yazarın ne yaptığını anlamanın sırrı, cümlenin amacına bakmaktır. Eğer yazar sadece gördüğü bir durumu ortaya koyuyorsa buna tespit diyoruz. Ancak tanımlama bambaşka bir şeydir; orada sanki sözlükten bir madde okuyormuşuz gibi \"X şudur\" şeklinde net bir cevap görmemiz gerekir. Sayılar, yüzdeler veya bilimsel araştırmalar devreye girdiğinde ise artık yazar iddiasını kanıtlama yoluna gitmiştir. En sonunda da \"şöyle yapmalıyız\" dediği an, karşımızda bir çözüm önerisi vardır 🎯.\n\nŞimdi cümlelere bakalım: I. cümlede günümüz insanının hareketsiz olduğu söylenmiş, yani mevcut bir durum belirlenmiş; bu bir tesittir. II. cümlede ise hareketsizliğin sağlığı nasıl etkilediği anlatılmış ama \"Hareketsiz yaşam şudur」 diyerek bir tanımlama yapılmamış; çoğu kişi burada açıklama yapılmasını tanımlamayla karıştırıp yanılır ⚡. III. cümlede \"yarım milyon kişi\" ve \"%34\" gibi rakamlar verilerek durum kanıtlanmış. IV. cümlede ise \"her yarım saatte bir ayağa kalkmak gerekiyor\" denilerek bize bir çıkış yolu sunulmuş. Bu durumda yanlış olan seçenek B şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "tespit",
+        "definition": "Var olan bir durumu, gözleme dayalı olarak belirleyip ortaya koymaktır.",
+        "example": "Sınıftaki öğrencilerin çoğu kitap okumayı seviyor.",
+        "emoji": "🔍"
+      },
+      {
+        "term": "tanımlama",
+        "definition": "\"Bu nedir?\" sorusunun cevabıdır; nesne veya kavramın ne olduğunu kesin olarak açıklar.",
+        "example": "Roman, yaşanmış ya da yaşanabilecek olayların genişçe anlatıldığı yazı türüdür.",
+        "emoji": "📖"
+      },
+      {
+        "term": "kanıtlama yolu",
+        "definition": "Söylenen bir fikrin doğruluğunu ispatlamak için sayısal veriler, belgeler veya deneyler kullanmaktır.",
+        "example": "Yapılan araştırmalara göre ülkenin %60'ı ormanlarla kaplıdır.",
+        "emoji": "📊"
+      },
+      {
+        "term": "çözüm önerisi",
+        "definition": "Ortaya konulan bir sorunu ortadan kaldırmak için sunulan tavsiye veya yöntemdir.",
+        "example": "Trafik sorununu çözmek için toplu taşıma araçlarının sayısı artırılmalıdır.",
+        "emoji": "💡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10787,
+    "subject": "TDE",
+    "title": "Anlam Yakınlığını Şipşak Bulma",
+    "explanation": "Buradaki işin sırrı, cümlelerde aynı kelimelerin geçmesi değil, aynı mesajın verilmesidir. Bazı cümleler bize 'geçmişe bakarsan geleceği anlarsın' derken bazıları 'geçmişle geleceğin alakası yok' diyebilir. Bizim amacımız, farklı kelimeler kullansa bile aslında aynı şeyi söyleyen ikiliyi bulmak. Yani anlam yakınlığı dediğimiz şey, iki farklı yolun aynı kapıya çıkması gibidir 🎯.\n\nŞimdi beraber inceleyelim: I. cümlede 'kâhin' kelimesi mecaz kullanılmış; yani geçmişi bilirsen geleceği tahmin edersin diyor. IV. cümlede ise 'geriye bakmak', 'ileriyi görmek' şeklinde benzer bir mantık kurulmuş; yine geçmişten faydalanmayı öneriyor. Bu ikisi tamamen aynı kafada. Ama II. cümle 'planlayamazsınız' diyerek buna karşı çıkıyor, III. cümle ise geçmişle geleceği birbirinden ayırıp sadece geleceğe odaklanmamızı söylüyor. Birçok kişi III. cümlede hem geçmiş hem gelecek geçtiği için ona kanabilir ama orada bir yardımlaşma yok, kesin bir ayrım var ⚡. Dolayısıyla cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "anlam yakınlığı",
+        "definition": "Farklı kelimelerle kurulmuş olsa da temelde aynı düşünceyi savunan cümlelerin durumu.",
+        "example": "\"Kitap okumak ufku açar\" ile \"Okuyan insan dünyayı daha geniş görür\" cümleleri arasındaki ilişki.",
+        "emoji": "🤝"
+      },
+      {
+        "term": "mecaz",
+        "definition": "Bir kelimenin gerçek anlamından tamamen uzaklaşıp yeni bir anlam kazanması.",
+        "example": "Geleceğin kâhini demek, gerçekten fal bakmak değil, önceden kestirmek anlamındadır.",
+        "emoji": "🔮"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10788,
+    "subject": "TDE",
+    "title": "Kağıt Üzerinde Kalmak Ne Demektir?",
+    "explanation": "Olayın özü şu: Bazı söz öbekleri olduğu gibi değil, bize başka bir durumu anlatmak için kullanılır. Mesela kâğıt üzerinde kalmak dediğimizde, gerçekten bir kağıdın üstünde duran bir nesneden bahsetmeyiz. Bu ifade; bir planın, kararın veya sözün verilip yazılmasına rağmen, gerçek hayatta hiçbir şekilde uygulanmaması, yani sadece yazıdan ibaret kalması demektir 🎯.\n\nŞimdi cümlelere baktığımızda; birinci cümle geçmişteki işlerden, ikinci cümle tartışmalardan bahsediyor. Ancak üçüncü cümlede \"kararlar aldık ama hiçbirini hayata geçiremedik\" diyor. İşte buradaki hayata geçirememe durumu, alınan kararların sadece yazılı kaldığını, uygulamaya dökülmediğini anlatır; yani tam olarak kâğıt üzerinde kalmak demektir 🔑. Çoğu kişi sadece \"sorun yaşamak\" kısmına odaklanıp B şıkkına kayabiliyor ama asıl mesele kararın alınması ve yapılmamasıdır. Doğru cevap C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "kâğıt üzerinde kalmak",
+        "definition": "Planlanan veya kararlaştırılan bir şeyin uygulamaya konulmaması, gerçekleşmemesi.",
+        "example": "Yeni yasalar çıktı ama çoğu hala kâğıt üzerinde kaldı.",
+        "emoji": "📝"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10790,
+    "subject": "TDE",
+    "title": "Edebiyat ve Diğer Bilimler İlişkisi 🌍",
+    "explanation": "Edebiyat aslında tek başına değildir; bazen tarihten, bazen psikolojiden, bazen de başka bilimlerden beslenir. İşin sırrı, metnin içine gizlenmiş 'anahtar kelimeleri' bulmakta. Eğer şiirde savaşlar, eski tarihler veya padişahlar varsa Tarih; insan ruhu ve duygular varsa Psikoloji; toplum kuralları ve halk grupları varsa Sosyoloji; ancak ülkeler, şehirler, dağlar veya denizler gibi yer bildiren sözcükler varsa orada kesinlikle Coğrafya vardır. 🎯\n\nŞimdi elimizdeki dizelere bakalım. Burada \"Afganistan\" ve \"Çin\" şeklinde iki tane ülke ismi, \"Prag\" ve \"Dresden\" şeklinde ise iki tane ünlü şehir ismi geçiyor. Hepsi dünyanın farklı köşelerindeki konumları işaret ettiği için, edebiyat burada doğrudan coğrafya bilimiyle el ele vermiş durumda. Dolayısıyla doğru cevabımız C şıkkıdır. Bazıları şehir isimlerini görünce \"burası tarihi yerlerdir\" diye düşünüp Tarih şıkkına yönelebiliyor ama biz burada olaylara değil, tamamen mekanlara baktığımız için odağımız coğrafyadır. ⚡",
+    "concepts": [
+      {
+        "term": "coğrafya",
+        "definition": "Yeryüzünü, insanların yaşadığı yerleri, iklimi ve çevre özelliklerini inceleyen bilim.",
+        "example": "Bir şiirde Anadolu'nun platolarından bahsedilmesi coğrafya ile ilişkilidir.",
+        "emoji": "🗺️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10791,
+    "subject": "TDE",
+    "title": "Paragrafta Doğru Bilgi Avcılığı",
+    "explanation": "Bu tarz sorularda işin sırrı, dışarıdan hiçbir bilgi getirmeden sadece kağıtta ne yazıyorsa ona inanmaktır. Yani senin Matrakçı Nasuh hakkında başka şeyler bilmen önemli değil; sadece metindeki cümleleri dedektif gibi inceleyip seçeneklerle eşleştirmelisin. Burada bizden istenen, verilen yargıların metinde karşılığının olup olmadığını bulmak 🎯.\n\nŞimdi beraber kontrol edelim: İlk maddede 'kültürel özellikler' diyor ama metinde toplumun kültüründen değil, sadece bir kişiden bahsediyor, yani bu yanlış. İkinci maddede eserlerin neler anlattığına, yani eserlerin içeriğinden bahsedilmiş mi diye bakıyoruz; evet, Irak seferindeki konaklama yerlerini çizdiği yazıyor, bu doğru. Üçüncü maddede 'özgün bir resim tekniği' diyor; metindeki 'kendine has üslubu vardır' ve 'kuş bakışı ama karşıdan görmüş gibi çizer' ifadesi tam olarak buna karşılık gelir, bu da doğru 🔑. Dördüncü maddede ise çalıştığı 'bilim alanlarına' değindiği söylenmiş. İşte çoğu kişinin düştüğü tuzak burası: Metinde onun 'bilim insanı' olduğu yazıyor ama hangi bilimle uğraştığı (matematik mi, astronomi mi?) asla söylenmiyor. Dolayısıyla II ve III doğru olduğundan cevap C şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "eserlerin içeriği",
+        "definition": "Bir kitabın, tablonun veya sanat eserinin içinde neyin anlatıldığı veya nelerin tasvir edildiği.",
+        "example": "Kitabın konusu savaşlarsa, içeriğinde askerler ve cepheler olur.",
+        "emoji": "📖"
+      },
+      {
+        "term": "özgün bir resim tekniği",
+        "definition": "Başkalarına benzemeyen, kişiye özel geliştirilmiş çizim yöntemi.",
+        "example": "Herkes yandan çizerken birinin hem tepeden hem karşıdan çizmesi özgünlüktür.",
+        "emoji": "🎨"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10792,
+    "subject": "TDE",
+    "title": "Noktalama İşaretlerini Şipşak Çöz!",
+    "explanation": "Buradaki işin sırrı, kimin konuştuğunu belli etmek ve birbirine bağlı uzun cümleleri birbirine karıştırmamakta. Konuşma içeren cümlelerde önce kişiyi belirtip virgül koyarız, ardından yeni satıra geçmesek bile konuşmayı başlatmak için konuşma çizgisi kullanırız. Seslendiğimiz kişilerden sonra ise mutlaka küçük bir es vermek için virgül gerekir 💡.\n\nŞimdi adım adım uygulayalım: \"Karahisarlı\" burada özne olduğu için yanına virgül (,) koyuyoruz. Hemen ardından söz başladığı için konuşma çizgisi (―) getiriyoruz. \"Vira çocuklar\" kısmında çocuklara seslenildiği için buraya yine virgül (,) gelir. Söz bittiği için \"dedi\" ifadesinden sonra noktayı (.) basıp geçiyoruz. En sonda iki ayrı olay var ama ikinci cümlede (\"rüzgârsız, dingin\") zaten virgüller olduğu için, iki ana grubu birbirinden ayırmak adına noktalı virgül (;) kullanmalıyız 🎯. Çoğu kişi sondaki boşluğa refleksle virgül koyup elenir, dikkat! Doğru cevap A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "virgül",
+        "definition": "Cümlede özneyi belirtmek veya hitaplardan sonra kısa bir ara vermek için kullanılır.",
+        "example": "Ali, bugün okula gitmedi.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "konuşma çizgisi",
+        "definition": "Metinlerde karşılıklı konuşmaları başlatırken kullanılan düz çizgidir.",
+        "example": "― Merhaba, nasılsın?",
+        "emoji": "💬"
+      },
+      {
+        "term": "noktalı virgül",
+        "definition": "Kendi içinde virgül bulunan grupları veya cümleleri birbirinden ayırmak için kullanılır.",
+        "example": "Pazardan elma, armut aldım; eve gidince onları yıkadım.",
+        "emoji": "⚡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10793,
+    "subject": "TDE",
+    "title": "Yazım Yanlışlarını Yakalamanın Pratik Yolu",
+    "explanation": "Türkçede işin sırrı şurada: Eğer bir özel ismin yanında onun ne olduğunu belirten bir tür ismi varsa (mesela hangi nehir olduğu belliyse), o tür ismi de artık özel ismin bir parçası olur ve büyük harfle başlar. Ayrıca, miktar olarak kesin olmayan, 'az çok' anlamı katan bazı kelimeler vardır ki bunlar asla ayrı yazılmaz, birbirine yapışık olur 🎯.\n\nŞimdi cümlelere beraber bakalım: I ve II. cümlelerde her şey yolunda. Ancak III. cümlede \"Volga nehri\" yazılmış; burada bahsedilen herhangi bir nehir değil, belli bir nehir olduğu için \"Nehri\" şeklinde büyük harfle başlamalıydı ⚡. IV. cümlede ise \"bir kaç“ ifadesini görüyoruz. Burada sayısal olarak '1 tane'den bahsetmiyor, 'bazı kişiler' anlamında bir belirsizlik var; bu yüzden bu kelimeyi ayırmadan \"birkaç\" şeklinde bitişik yazmalıydık. Çoğu kişi burada 'bir' kelimesini sayı sanıp ayırma hatasına düşer ama dikkatli olmak lazım. Bu durumda yanlışlar III ve IV olduğundan cevap D şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "belirsizlik",
+        "definition": "Bir şeyin miktarının veya kim olduğunun tam olarak kestirilememesi durumudur.",
+        "example": "Bazıları, birçok, birkaç",
+        "emoji": "❓"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10794,
+    "subject": "TDE",
+    "title": "Paragrafta Anlam ve Yorum Analizi",
+    "explanation": "Bu tarz sorularda olay tamamen bir 'eşleştirme oyunu'. Metindeki her cümleyi okurken kendimize şunu soruyoruz: 'Burada sadece bir durum mu anlatılıyor (tespit), bir hedef mi var (amaç), yoksa bir kurtuluş yolu mu gösteriliyor (çözüm)?' Eğer seçeneklerdeki ifade, cümledeki anlamla birebir örtüşüyorsa o şık doğrudur. İşin sırrı, kelimelerin sözlük anlamlarını değil, cümle içindeki görevlerini yakalamakta 🎯.\n\nŞimdi beraber bakalım: I. cümlede iklim değişikliği ve toprak kaybı gibi sorunlar olduğu söylenmiş, yani bir tespit yapılmış (A gitti). II. cümlede teknolojilere geçişin sebebi 'kaynakları korumak' olarak verilmiş, bu da bize amacı gösteriyor (B gitti). III. cümlede ise sensör kullanımıyla israfın engellenebileceği söylenmiş, yani net bir çözüm önerisi sunulmuş (C gitti). IV. cümlede ise gıda üretiminin bugünkü adımlara bağlı olduğu vurgulanıyor; yani 'başarabiliriz ama şartımız şu' diyor. Burada henüz gerçekleşmemiş bir şey hakkında kötü bir hüküm vermek, yani ön yargı yoktur ⚡. Çoğu kişi buradaki uyarıyı karamsarlık sanıp yanılır ama cevap kesinlikle D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "tespit",
+        "definition": "Var olan bir durumu gözlemleyip belirleme işidir.",
+        "example": "Havanın bugün çok soğuk olduğunu söylemek bir tespittir.",
+        "emoji": "🔍"
+      },
+      {
+        "term": "amaç",
+        "definition": "Bir eylemi gerçekleştirirken ulaşılmak istenen hedeftir.",
+        "example": "Sınavı kazanmak için ders çalışmakta amaç, sınavı kazanmaktır.",
+        "emoji": "🎯"
+      },
+      {
+        "term": "çözüm önerisi",
+        "definition": "Ortadaki bir problemi ortadan kaldırmak için sunulan yöntemdir.",
+        "example": "Trafik sorununa metro hattı yapılmasını teklif etmek bir çözüm önerisidir.",
+        "emoji": "💡"
+      },
+      {
+        "term": "ön yargı",
+        "definition": "Bir kişi veya durum hakkında önceden edinilmiş, kanıtsız olumlu ya da olumsuz görüştür.",
+        "example": "Hiç tanımadığı birinin sadece kıyafetine bakarak kaba biri olduğunu düşünmek.",
+        "emoji": "🚩"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10795,
+    "subject": "TDE",
+    "title": "Yazarın Sözlerinden Anlam Çıkarma",
+    "explanation": "Bu tarz sorularda işin sırrı, şıklardaki anahtar kelimeleri metnin içinde avlamaktır. Yazar burada bize \"ne anlattığım değil, nasıl anlattığım önemli\" diyor. Yani içeriğe değil, dil ve anlatım dediğimiz üsluba odaklanıyor 🎯. Eğer bir yazar \"şu kelimeyi seçeyim, şöyle söyleyeyim ki daha etkileyici olsun\" diyorsa, önceliği dile vermiş demektir.\n\nŞimdi beraber eşleştirelim: \"Sözcüklerin seçimi」 ifadesi bizi direkt dil ve anlatıma (A şıkkı) götürür. \"Dize, hikâye, köşe yazısı」 demesi farklı türlerde yazdığını kanıtlar (D şıkkı). Mekânın neresi olduğunun önemsiz olması, orayı sadece bir araç olarak gördüğünü gösterir (C şıkkı). Ancak yazar sadece \"başarılı olmak için nasıl söylemeliyim\" diye düşünüyor; yani herkesin yaptığı bir arayış içinde. Kendine has, dünyada tek olan özel bir yöntemi veya kendine özgü bir anlatım tekniği olduğunu iddia etmiyor 🔑. Çoğu kişi \"etkileyici olmak istemeyi\", \"kendine özgü bir tekniği olmakla」 karıştırıp yanılır ama ikisi farklı şeyler. Bu yüzden cevap B.",
+    "concepts": [
+      {
+        "term": "dil ve anlatım",
+        "definition": "Bir yazarın duygularını veya olayları aktarırken kullandığı kelimeler ve kurduğu cümlelerin tarzıdır.",
+        "example": "Sade bir dil mi yoksa süslü, ağır bir dil mi kullandığına bakmak.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "farklı türlerde",
+        "definition": "Yazarın sadece roman değil; şiir, deneme veya makale gibi değişik edebi formatlarda eserler üretmesidir.",
+        "example": "Hem şiir kitapları hem de tiyatro oyunları yazan bir sanatçı.",
+        "emoji": "📚"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 10796,
+    "subject": "TDE",
+    "title": "Parça Tamamlama: Mantığı Yakala!",
+    "explanation": "Bu tarz sorularda işin sırrı, yazarın kurduğu köprüyü takip etmekte. Eğer yazar \"olay şu değildir\" diyorsa, boşluğa mutlaka \"aslında şudur\" şeklinde bir açıklama getirmelidir. Yani metindeki karşıtlığı yakaladığında cevap kendiliğinden çıkar. Burada da yazar; yasaların, kuralların ve ezbere bilgilerin yetersiz olduğunu, asıl önemli olanın kişinin iç dünyası yani değerlerini benimsemesi olduğunu söylüyor 💡.\n\nŞimdi seçeneklere bakalım: Metin boyunca \"kurallara itaat」 yerine \"vicdana ve erdeme\" vurgu yapıldığı için, birinci yargıdaki \"itaat ederek düzeni koruma\" fikri metnin ruhuna tamamen aykırı. Ancak ikinci yargıda geçen vicdanın sesi ve üçüncü yargıdaki erdemli davranışların bir yaşam biçimi olması, yazarın bahsettiği içselleştirme mantığıyla tam örtüşüyor 🎯. Birçok kişi birinci şıkta \"sosyal düzen\" kelimesini görünce yanılıp ona yönelebiliyor ama dikkat edin; yazar düzeni kurallarla değil, karakterle sağlamak istiyor. Bu yüzden doğru cevap D şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "metnin ruhu",
+        "definition": "Yazarın kullandığı dil, ton ve savunduğu genel bakış açısının oluşturduğu bütünlük.",
+        "example": "Eleştirel bir tonda yazılmış bir metnin ruhu, çözüm önerilerini de sorgulayıcı kılar.",
+        "emoji": "✨"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11197,
+    "subject": "TDE",
+    "title": "Alıntılarda Tırnak ve Noktalama Tuzağı",
+    "explanation": "İşin sırrı aslında çok basit: Birinin ağzından çıkan sözü hiç değiştirmeden, olduğu gibi yazıya döktüğümüzde buna alıntı cümle diyoruz ve bu sözleri \"tırnak işareti\" içine alırız. Burada altın kural şudur; eğer alıntı yaptığımız kişinin sözünde bir heyecan, soru veya bitiş varsa (yani ünlem, soru işareti veya nokta varsa), bu işaretler mutlaka tırnağın içinde kalmalıdır. Yani kapıyı kapatmadan önce eşyaları içeri koymuş olmalıyız 🎯.\n\nŞimdi seçeneklere bakalım. I, II ve III. cümlelerde genel kurallara uygun bir gidişat var. Ancak IV. cümlede bir emir/istek durumu var: \"...gerçekten okuyun!\". Buradaki ünlem işareti, söylenen sözün bir parçası olduğu için tırnağın hemen solunda, yani içeride bitmeliydi. Çoğu kişi burada ünlemi dışarı koyma veya tırnaktan sonra fazladan virgül ekleme hatasına düşer; ancak kural net, işaret içeride biter, tırnak kapanır ve ardından gelen \"derim\" kısmı tertemiz devam eder 🔑. Bu yüzden yanlış kullanım IV. cümlededir, cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "alıntı cümle",
+        "definition": "Başka birinin söylediği sözün, hiçbir kelimesine dokunmadan aynen aktarılmasıdır.",
+        "example": "Annem \"Eve erken gel!\" dedi.",
+        "emoji": "💬"
+      },
+      {
+        "term": "tırnak işareti",
+        "definition": "Alıntı sözleri veya vurgulanmak istenen özel ifadeleri belirlemek için kullanılan \" \" şeklindeki işaretlerdir.",
+        "example": "\"İstiklal Marşı\" milli marşımızdır.",
+        "emoji": "✍️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11198,
+    "subject": "TDE",
+    "title": "Hatırlatmaların Gücü: Telmih Sanatı",
+    "explanation": "Şiirlerde bazen şair, sayfalarca hikaye anlatmak yerine herkesin bildiği ünlü bir ismi veya olayı söyleyip geçer. Biz buna telmih diyoruz. Yani aslında \"Bak, ben burada şu meşhur olayı kastettim, sen zaten biliyorsun\" diyerek okuyucuya küçük bir göz kırpması yapıyor 🎯. Eğer şiirde karşınıza Hz. Yusuf, Kerem ile Aslı ya da Nuh Tufanı gibi herkesin duyduğu isimler çıkıyorsa, orada yüksek ihtimalle bu anımsatma işi dönüyordur.\n\nŞimdi elimizdeki dizelere bakalım. Burada \"Ferhad ile Mecnûn\" isimleri geçiyor. Bu iki isim rastgele seçilmiş kişiler değil; aşkları uğruna acılar çekmiş, tüm dünyanın tanıdığı efsanevi aşıklardır 🔑. Şair onları anarak bize onların hüzünlü hikayelerini hatırlatıyor. İşte bu yüzden cevap B şıkkıdır. Çoğu kişi bunu başka sanatlarla karıştırabiliyor ama burada herhangi bir benzetme yapılmadığı, sadece isimler üzerinden eski bir hikaye çağrıştırıldığı için tek kilit nokta bu hatırlatmadır.",
+    "concepts": [
+      {
+        "term": "telmih",
+        "definition": "Şiirde herkesçe bilinen gerçek veya hayali bir olaya, kişiye veya duruma işaret ederek onu hatırlatma sanatıdır.",
+        "example": "\"Gökyüzünde bir yıldız var, sanki bana Yusuf'un kuyusunu hatırlatıyor.\" cümlesindeki Yusuf vurgusu.",
+        "emoji": "💡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11199,
+    "subject": "TDE",
+    "title": "Yazım Yanlışlarını Yakalamanın Püf Noktaları",
+    "explanation": "Türkçede yazım kurallarının çoğu aslında kelimenin yeni bir anlam kazanıp kazanmadığıyla ilgilidir. Eğer iki kelime birleşip artık bambaşka tek bir şeyi karşılıyorsa buna birleşik sözcük diyoruz ve bunları bitişik yazıyoruz. Bazı kelimelerde ise ek gelince kelimenin içindeki bir ünlü harf düşer; biz buna da ünlü düşmesi diyoruz. İşin sırrı, kulağa hoş gelen değil, kurala uygun olanı bulmakta 🎯.\n\nŞimdi seçeneklere bakalım: \"Bisküvi\" kelimesi sözlükteki haliyle tamamen doğrudur. Ancak \"yapım evleri\", belli bir işin yapıldığı yeri belirttiği için birleşik sözcük şeklinde bitişik yazılmalıydı. \"Yan yana\" ifadesi ise her zaman ayrı yazılır, asla birleştirilmez. En sonda gördüğümüz \"genizi\" kelimesinde ise sahiplik eki geldiğinde ortaya çıkan ünlü düşmesi kuralı uygulanmalı ve \"genzini\" şeklinde yazılmalıydı. Çoğu kişi okurken kelimeleri olduğu gibi kabul ettiği için buradaki hataları gözden kaçırabiliyor ⚡. Doğru cevap A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "birleşik sözcük",
+        "definition": "En az iki kelimenin bir araya gelerek yeni veya ortak bir anlam oluşturduğu kelimelerdir.",
+        "example": "Hanımeli, bilgisayar",
+        "emoji": "🔗"
+      },
+      {
+        "term": "ünlü düşmesi",
+        "definition": "İkinci hecesinde dar ünlü bulunan bazı kelimelere ünlüyle başlayan bir ek geldiğinde, o orta hecedeki ünlünün kaybolmasıdır.",
+        "example": "Burun $\\rightarrow$ Burnu, Akıl $\\rightarrow$ Aklı",
+        "emoji": "📉"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11200,
+    "subject": "TDE",
+    "title": "Cumhuriyet Hikâyesi: Kim, Ne Zaman Yazdı?",
+    "explanation": "Hikâye konusundaki soruların püf noktası, olayların sırasını ve kullanılan terimleri doğru anlamaktır. Mesela telif eser demek, yazarın başka bir dilden çeviri yapmayıp konuyu tamamen kendi hayal gücüyle sıfırdan yazması demektir. Cumhuriyet döneminde ise önce milli kimlik ve köy hayatı ön plandayken, şehirleşme ve fabrikalar gibi konular daha çok ileriki yıllarda, yani toplum değiştikçe karşımıza çıkmıştır 💡.\n\nŞimdi maddelere bakalım: İlk maddede Ahmet Mithat Efendi'nin telif eser yazdığı söyleniyor; evet, kendisi bu işin öncüsüdür, yani Doğru (D). İkinci maddede erken Cumhuriyet yıllarında köyden kente göçten bahsedilmiş. İşte çoğu kişi tam burada düşer; çünkü göç ve sanayileşme sancıları esas olarak 1950'lerden sonra yoğunlaşmıştır, bu yüzden bu bilgi Yanlış (Y). Üçüncü maddedeki Orhan Kemal ve Tarık Buğra gibi isimler gerçekten de II. Dünya Savaşı sonrasının güçlü kalemleridir, burası da Doğru (D) 🎯. Sıralamamız D-Y-D şeklinde oluştuğu için cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "telif eser",
+        "definition": "Bir yazarın başka bir yerden kopyalamadan veya çevirmeden, kendi özgün düşünceleriyle oluşturduğu çalışma.",
+        "example": "Ahmet Mithat Efendi'nin çeviri yerine kendi hikâyelerini yazması.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "köyden kente göç",
+        "definition": "Halkın iş imkanları nedeniyle köyleri bırakıp şehirlere taşınmasıyla oluşan toplumsal değişim süreci.",
+        "example": "1950 sonrası romanlarda işlenen gecekondulaşma sorunları.",
+        "emoji": "🏙️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11201,
+    "subject": "TDE",
+    "title": "Paragrafta Kesin Yargı Yakalama",
+    "explanation": "Bu tarz sorularda işin sırrı, kendi kafamızdan hiçbir şey eklemeden sadece metnin bize verdiği \"kanıtları\" aramaktır. \"Kesinlikle söylenebilir\" demek, \"metinden başka hiçbir yere bakmadan, herkesin aynı sonucu çıkaracağı net bilgi nedir?\" demektir. Yani bizce öyle olabilir ama metinde yazmıyorsa o şık yanlıştır 🎯.\n\nŞimdi metne bakalım: Sanatçının sergisinde resimler, heykeller ve bir video çalışması olduğu açıkça yazıyor. Üç farklı türden eser olması, serginin sanatın tek bir alanıyla ilgili olmadığını kanıtlar, yani cevap C şıkkıdır ⚡. Çoğu kişi B şıkkındaki \"ilk sergisi\" kısmına kanıp \"hiç açmadı\" diye düşünür; ancak metin, bunun Türkiye'ye döndükten sonraki ilk sergisi olduğunu söylüyor, hayatındaki ilk sergi olduğunu değil. Bu küçük fark sizi hataya düşürmesin 👀.",
+    "concepts": [
+      {
+        "term": "Kesinlikle söylenebilir",
+        "definition": "Yazarın metinde açıkça belirttiği, kişisel yorum veya tahmin içermeyen, kanıtlanabilir yargı.",
+        "example": "\"Hava yağmurlu\" diyen bir metin için \"yerler ıslanmıştır\" kesin bir yargıdır.",
+        "emoji": "🔑"
+      },
+      {
+        "term": "sanatın tek bir alanıyla ilgili olmadığı",
+        "definition": "Bir çalışmanın birden fazla disiplini (örneğin hem müzik hem resim) bir arada sunması durumu.",
+        "example": "Hem şiirlerin hem tabloların olduğu bir kitap tek bir alanla sınırlı değildir.",
+        "emoji": "🎨"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11202,
+    "subject": "TDE",
+    "title": "Deyimlerin Gizli Anlamlarını Yakalamak",
+    "explanation": "Türkçede bazı kelime grupları vardır ki bunları tek tek okursanız anlamı kaçırırsınız; işte biz bunlara deyim diyoruz. Bu yapıların sırrı, kelimelerin gerçek anlamından tamamen kopup yeni ve kalıplaşmış bir anlam kazanmasıdır. Yani \"ağırlık\" derken fiziksel bir yükten değil, yapılan işin hızından bahsediyoruz 🎯.\n\nSoruda kişinin amacı \"daha çok dinlemek\". Daha fazla vakit geçirebilmek için de yaptığı işi bilerek yavaşlatıyor, yani süreci uzatıyor. Burada asıl olay, işi özenle yapmak değil, sadece zaman kazanmak için geciktirmektir. Çoğu kişi bunu \"dikkatli yapmak」 ile karıştırıp D şıkkına düşebilir ama buradaki anahtar kelime \"daha çok dinlemek\" olduğu için cevap net bir şekilde A şıkkıdır ⚡.",
+    "concepts": [
+      {
+        "term": "deyim",
+        "definition": "En az iki kelimenin birleşip gerçek anlamlarının dışında yeni bir anlam oluşturduğu kalıplaşmış sözler.",
+        "example": "\"Gözden düşmek\" (Değerini kaybetmek)",
+        "emoji": "💡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11203,
+    "subject": "TDE",
+    "title": "Kim Yazdı? Biyografi mi, Otobiyografi mi?",
+    "explanation": "Yaşam öyküsü anlatırken karşımıza iki ana yol çıkar: Ya biri senin hakkında yazar ya da sen kendi hayatını kaleme alırsın. İşin sırrı kelimenin başındaki \"oto\" ekinde; bu ek Yunancada \"kendi\" demektir. Yani eğer yazıdaki kişi \"ben yaptım, ben gittim」 diyorsa buna otobiyografi, başka biri hakkında \"yaptı, gitti\" diye anlatıyorsa buna biyografi diyoruz ✍️.\n\nMetne baktığımızda \"doğdum\", \"okudum\", \"gittim\" gibi kelimelerin sonundaki \"-m\" ekleri, anlatıcının bizzat kendisi olduğunu bize hemen fısıldıyor 🔍. Kişi kendi doğumundan okuluna ve kariyerine kadar tüm sürecini \"ben\" diliyle aktardığı için cevap D şıkkı olan otobiyografi olur. Birçok kişi metnin ciddi tonuna bakıp bunu denemeyle karıştırabiliyor ancak buradaki kilit nokta içeriğin konusu değil, kimin tarafından anlatıldığıdır 🎯.",
+    "concepts": [
+      {
+        "term": "otobiyografi",
+        "definition": "Kişinin kendi yaşam öyküsünü bizzat kendisinin yazdığı yazı türüdür.",
+        "example": "Atatürk'ün kendi ağzından yazdığı anı benzeri hayat hikayeleri.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "biyografi",
+        "definition": "Tanınmış bir kişinin hayatının, başka bir yazar tarafından araştırılarak anlatılmasıdır.",
+        "example": "Bir tarihçinin, Fatih Sultan Mehmet'in hayatını yazması.",
+        "emoji": "📚"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11204,
+    "subject": "TDE",
+    "title": "Parçada Anlam: Yazılı Olmayana Kanma!",
+    "explanation": "Bu tarz sorularda işin sırrı, kendi bildiklerimizi veya tahminlerimizi tamamen bir kenara bırakıp sadece metnin içine hapsolmaktır. Yani \"metinde yazmıyorsa yok demektir\" mantığıyla hareket ederiz. Cevaba ulaşmak için seçeneklerdeki anahtar kelimeleri metinde aradığımız bir gözlem süreci yürütürüz. Eğer metinde buna dair net bir ipucu yoksa, o şık bizim için elenmiş olur 🎯.\n\nŞimdi beraber bakalım: Funda Hanım'ın yüzlere baktığını, duyguları analiz ettiğini görmemiz onun gözlemci biri olduğunu kanıtlar (A şıkkı). Seyahatin insanı geliştirdiğini ve anlayışlı yaptığını bizzat kendisi söylüyor (C ve D şıkları). Ancak çoğu kişinin düştüğü tuzak burası: Metinde \"hikâye koleksiyonerliği\" yaptığı yazıyor ama bu hikâyeleri yazıya döktüğüne, kitap haline getirdiğine ya da yazdığına dair tek bir kelime bile geçmiyor. Koleksiyon yapmak onları toplamak ve saklamaktır, yazmak ise bambaşka bir iştir 🔑. Bu yüzden cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "gözlem süreci",
+        "definition": "Bir olay veya durumu dikkatle izleyip detaylarını fark etme işi.",
+        "example": "Havaalanındaki insanların yüz ifadesine bakarak ruh halini anlamaya çalışmak.",
+        "emoji": "👀"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11205,
+    "subject": "TDE",
+    "title": "Paragrafta Doğru Yorumlama Teknikleri",
+    "explanation": "Paragraf sorularında en büyük tuzak, bizim genel kültür bilgilerimizle cevap vermektir. Yani \"plastikler dünyayı kirletir\" bilgisini bildiğimiz için, metinde plastik geçtiği anda orada kirlilikten bahsedildiğini varsayarız. Oysa bizden istenen, dışarıdan bilgi katmak değil, sadece metnin içinde yazanı görmektir. Eğer metin sadece rakamlardan oluşuyorsa buna sayısal veri denir; kirliliğin nasıl olduğu, hangi hayvanlara zarar verdiği anlatılmıyorsa orada kirlilikten bahsedilmiş olmaz 💡.\n\nŞimdi seçeneklere bakalım: I. cümlede sadece 5 milyar ton ve %9 gibi rakamlar var, yani karşımızda net bir sayısal veri var ama kirliliğin detayları yok; çoğu kişi plastiği görünce otomatikman kirliliği düşünür ve buraya kanar. II. cümlede plastiklerin tekrar çöpe gitmesi verimsizliği, III. cümlede birçok kez dönüştürülmesi avantajı, IV. cümlede ise aşılması gereken zorluklar olması geliştirilme ihtiyacını gösterir 🎯. Bu yüzden söylenemeyecek olan şık A seçeneğidir 🔑.",
+    "concepts": [
+      {
+        "term": "sayısal veri",
+        "definition": "Bir durumu anlatmak için kullanılan rakamlar, yüzdeler veya ölçümlerdir.",
+        "example": "Halkın %60'ının bu karara katılması bir sayısal veridir.",
+        "emoji": "📊"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11206,
+    "subject": "TDE",
+    "title": "Paragrafta Yakın Anlamı Bulma Mantığı",
+    "explanation": "Buradaki olay aslında çok basit: Bir şeyin neden olmadığını bulmak. Eğer bir cümle \"şu yüzden olmaz\" diyorsa orada bir sebep-sonuç ilişkisi vardır. İşin sırrı, cümledeki anahtar kelimeleri belirleyip onları seçeneklerde başka hangi kelimelerle karşıladığımıza bakmakta. Mesela \"akıl\" demek, kurallar ve mantık demektir; \"akıl dışı\" ise bu kurallara uymayan, yani mantık sınırlarını aşan şeyler anlamına gelir 💡.\n\nŞimdi elimizdeki cümleye bakalım: \"Tanım yapılamaz\" (Sonuç) $\\Rightarrow$ \"Çünkü tanım akıl işidir ama şiir akıl dışıdır\" (Sebep). Yani şiir, aklın kurallarına uymadığı için onu tanımlayamayız. Seçeneklerdeki C şıkkında \"mantık kalıplarına sığmamak\", bizim cümlemizdeki \"akıl dışı olma\" durumuyla aynı kapıya çıkıyor. Yine \"tarif edilmesi zor」 ifadesi, \"tanımın yapılamaması\" ile örtüşüyor 🎯. Çoğu kişi A şıkkındaki \"özgürlük\" kelimesine kanıp yanılabilir ancak orijinal cümlede özgürlükten hiç bahsedilmediği için direkt eliyoruz. Doğru cevap C.",
+    "concepts": [
+      {
+        "term": "sebep-sonuç ilişkisi",
+        "definition": "Bir eylemin gerçekleşmesine yol açan neden ile ortaya çıkan sonucun birbirine bağlanmasıdır.",
+        "example": "Kar yağdığı için (sebep) okullar tatil oldu (sonuç).",
+        "emoji": "🔗"
+      },
+      {
+        "term": "akıl dışı",
+        "definition": "Mantık kurallarıyla açıklanamayan, rasyonel olmayan durumlar için kullanılır.",
+        "example": "Bazı soyut duyguların akıl dışı olması, onları daha etkileyici kılar.",
+        "emoji": "🌀"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11207,
+    "subject": "TDE",
+    "title": "Kelime Avı: Benzer Anlamlı Deyimleri Bulma",
+    "explanation": "Buradaki olay aslında tiyatroyla ilgili değil, tamamen kelimelerin ruhunu anlamakla alakalı. İşin sırrı şu: Bazı söz grupları vardır ki onları kelime kelime okursanız yanılırsınız; bunlar deyimlerdir. Deyimler, bize durumu resmetmek için kullanılan renkli ifadelerdir ve çoğu zaman gerçekte yapılmayan ama hissedilen bir şeyi anlatırlar. 💡\n\nŞimdi elimizdeki seçenekleri tek tek inceleyelim. I numaralı \"acısını içine gömmek\" ifadesi, kişinin üzüntüsünü kimseye belli etmemesi demektir. II numaralı ifade sadece salonun kalabalık olduğunu söylüyor. III numaralı \"bağrına taş basmak\" ise yine çok büyük bir acıya rağmen sabredip sessiz kalmak anlamına gelir. Bakıyoruz ki hem I hem de III, acıyı gizlemek ve katlanmak üzerine kurulu; yani anlamca aynı doğrultudalar. 🎯 IV numara ise sadece imkansızlıktan bahsediyor. Çoğu kişi tüm metin hüzünlü olduğu için hepsini birbirine yakın sanabilir ama bizden istenen spesifik olarak aynı anlamı veren ikiliyi bulmak. Bu yüzden cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "deyim",
+        "definition": "Genellikle gerçek anlamından uzaklaşmış, kalıplaşmış ve toplumsal ortak hafızaya yerleşmiş söz öbekleridir.",
+        "example": "\"Burnundan kıl aldırmamak\" (çok kibirli olmak)",
+        "emoji": "🔑"
+      },
+      {
+        "term": "anlamca aynı doğrultu",
+        "definition": "Farklı kelimeler kullanılsa bile, anlatılmak istenen ana duygunun veya durumun birebir örtüşmesidir.",
+        "example": "\"Gözden düşmek\" ile \"Değerini kaybetmek\" ifadelerinin benzerliği",
+        "emoji": "🔄"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11208,
+    "subject": "TDE",
+    "title": "Paragrafta Olumsuz Soru Avcılığı",
+    "explanation": "Bu tarz sorularda işin sırrı, doğruyu değil yanlışı aramaktır. 'Hangisine değinilmemiştir?' denildiğinde aslında bize şunu diyorlar: 'Şıklardan üçü metinde yazıyor, biri ise uydurma ya da metne göre fazla iddialı; hadi onu bul!' Yani biz burada bir eleme oyunu oynuyoruz; metinde gördüğümüz her şıkkı tek tek çiziyoruz, geriye kalan tek seçenek bizim cevabımız oluyor. 🎯\n\nŞimdi beraber tarama yöntemini uygulayalım: B şıkkındaki 'ticari faaliyetleri düzenleme' ifadesini, metindeki 'idari işlerini düzenlemiş' kısmında görüyoruz; bunu eliyoruz. D şıkkındaki 'toplumsal hayat' meselesini, 'dayanışma ve kardeşlik' sözlerinden anlıyoruz; bunu da eliyoruz. C şıkkındaki 'uzun yıllar var olduğu' bilgisini ise, kuruluş aşamasından başlayıp daha sonra loncalara dönüştüğü sürecinden çıkarıyoruz; bu da gitti. Geriye A şıkkı kaldı. Metinde Osmanlı'nın dünya devleti olduğundan bahsediyor ama 'dünya ticaretine hâkim olduğu' şeklinde net bir ifade yok. Çoğu kişi 'dünya devleti' ifadesini görünce otomatik olarak ticareti de kapsadığını düşünerek buraya düşer ancak metinde yazmayan hiçbir şeyi kendi kafamızdan ekleyemeyiz. ⚡ Cevabımız A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "tarama yöntemi",
+        "definition": "Seçeneklerdeki ipuçlarını metin içinde hızlıca arayıp bularak karşılaştırma işlemi.",
+        "example": "Şıktaki 'ekonomi' kelimesini metinde arayıp bulmak.",
+        "emoji": "👀"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11209,
+    "subject": "TDE",
+    "title": "Paragrafta Ana Düşünceyi Şipşak Bulmak",
+    "explanation": "Bir parçanın ana düşüncesini bulurken işin sırrı, metnin üzerine kocaman bir şemsiye germektir. Yani öyle bir cümle aramalıyız ki, yazıdaki tüm küçük örnekler o şemsiyenin altında toplansın. Eğer yazar 'bazıları şöyle der, bazıları böyle der' diye farklı örnekler sıralıyorsa, aslında bize şunu demek istiyordur: 'Bak dostum, bu olay kişiden kişiye değişiyor.' İşte biz buna ana düşünce diyoruz 🎯.\n\nŞimdi bu mantığı soruya uygulayalım. Yazıda 'kimine göre zenginlik', 'kimine göre bir tabak çilek' veya 'okunan bir kitabı bitirmek' gibi birbirinden çok farklı örnekler verilmiş. Tüm bu detaylar, mutluluğun herkese göre farklı olduğunu ve küçücük şeylerde saklandığını kanıtlayan yardımcı düşüncelerdir. Dolayısıyla hepsini kapsayan en geniş yargı, mutluluğun kişiden kişiye değişen ve ayrıntılarda gizli olan bir kavram olduğu yönündeki C şıkkıdır 💡. Çoğu kişi sadece ilk cümledeki 'zenginlik' kısmına takılıp A şıkkına yönelebilir ama unutma; tek bir örnek asla ana düşünce olmaz, sadece detayı verir ⚡.",
+    "concepts": [
+      {
+        "term": "ana düşünce",
+        "definition": "Yazarın okura vermek istediği temel mesaj, yazının özeti niteliğindeki genel yargı.",
+        "example": "Bir yazıda hem sporun hem sağlıklı beslenmenin faydaları anlatılıyorsa, ana düşünce 'Sağlıklı yaşam için disiplin gerekir' olabilir.",
+        "emoji": "🔑"
+      },
+      {
+        "term": "yardımcı düşünceler",
+        "definition": "Ana düşünceyi destekleyen, onu açıklayan veya kanıtlayan yan fikirler ve örneklerdir.",
+        "example": "'Kitap okumanın faydaları' ana fikrini desteklemek için verilen 'kelime hazinesini geliştirir' cümlesi bir yardımcı düşüncedir.",
+        "emoji": "📌"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11210,
+    "subject": "TDE",
+    "title": "Noktalama İşaretlerinin Pratik Mantığı",
+    "explanation": "Olayın sırrı şu: Noktalama işaretlerini birer trafik levhası gibi düşün. Eğer birisi konuşmaya başlayacaksa, okuyucuya \"dikkat, şimdi söz başlıyor\" demek için iki nokta (:) kullanılır. Virgül (,) ise ya nefes aldırmak için ya da cümlenin başındaki kişiyi (özneyi) belli edip karıştırmamak için konur. Ünlem (!) ise sadece korkunca değil, bir konuda ısrar edildiğinde veya güçlü bir uyarı yapıldığında devreye girer 💡.\n\nŞimdi adım adım boşluklara bakalım: İlk boşlukta \"fısıldadı\" denmiş, hemen ardından konuşma başladığı için buraya iki nokta (:) gelir. İkinci boşlukta \"Pusu mu, kim?\" derken hızlıca arka arkaya sorular sorulduğu için araya virgül (,) koyarak akışı sağlarız. Üçüncü boşlukta \"hele göç bir dursun\" ifadesi güçlü bir istek ve şart belirttiği için buraya ünlem (!) cuk oturur. Son boşlukta ise \"Osman Bey\" cümlenin işi yapan kişisi yani öznesi olduğu için onu belirginleştirmek adına virgül (,) kullanıyoruz 🎯. Çoğu kişi ikinci boşluğa hemen soru işareti koymak ister ama cümlenin devamında \"kim?\" sorusu geldiği için orada virgülle bağlamak daha doğrudur. Doğru cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "iki nokta (:)",
+        "definition": "Kendisinden sonra açıklama yapılacak veya birinin konuşması başlayacak olan yerlere konulan işaret.",
+        "example": "Annem içeri girdi ve şöyle dedi: Yemek hazır!",
+        "emoji": "📢"
+      },
+      {
+        "term": "virgül (,)",
+        "definition": "Birbirine bağlı kelimeleri ayırmak veya cümlenin başında işi yapan kişiyi (özneyi) vurgulamak için kullanılır.",
+        "example": "Ali, bugün okula gitmedi.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "ünlem (!)",
+        "definition": "Sevinç, korku, şaşma gibi duyguların yanı sıra güçlü istek ve uyarı bildiren cümlelerin sonuna konur.",
+        "example": "Dur, sakın oraya gitme!",
+        "emoji": "❗"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11211,
+    "subject": "TDE",
+    "title": "Parçada Düşünceyi Geliştirme Yolları ✍️",
+    "explanation": "Olayın sırrı aslında çok basit: Yazar, okuyucuyu ikna etmek için bazı taktikler kullanır. Eğer \"X şudur\" diyerek bir şeyin ne olduğunu açıklıyorsa tanımlama yapmış olur. Konuştuğu konuya destek olsun diye ünlü birinin ismini ve sözünü getiriyorsa buna tanık gösterme diyoruz. İki durumu kıyaslayıp farklarını söylüyorsa karşılaştırma yapıyor demektir. Somut şeyler sıralayıp \"mesela şunlar vardır\" diyorsa da örneklendirme yoluna gitmiştir 💡.\n\nŞimdi elimizdeki metne beraber bakalım. İlk cümlede \"Sanat, bir olgudur\" diyerek sanatın ne olduğunu açıkladığı için tanımlama var. Hemen ardından Thomas Munro'nun sözüne yer vererek tanık gösterme yapmış. Ayrıca sanatın insanı hem farklı kıldığını hem de ortak noktada topladığını söyleyerek iki durumu karşılaştırma yöntemiyle vermiş. Ancak metnin hiçbir yerinde \"resim, müzik, heykel gibi\" somut türler sıralamadığı için örneklendirme yoktur 🎯. Çoğu kişi sanatın özelliklerini anlatmayı örnek vermekle karıştırır ama gerçek örnekler için net nesne veya isimler görmemiz gerekir. Bu yüzden doğru cevabımız C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "tanımlama",
+        "definition": "Bir kavramın ne olduğunun \"bu nedir?\" sorusuyla belirlendiği anlatım yolu.",
+        "example": "\"Kitap, zihnimizi açan bir penceredir.\"",
+        "emoji": "📖"
+      },
+      {
+        "term": "tanık gösterme",
+        "definition": "Savunulan görüşü kanıtlamak için o konuda uzman birinin sözünü paylaşmak.",
+        "example": "Atatürk'ün \"Hayatta en hakiki mürşit ilimdir.\" sözünü paylaşmak.",
+        "emoji": "🗣️"
+      },
+      {
+        "term": "karşılaştırma",
+        "definition": "İki kavram veya durum arasındaki benzerlik ya da farkların ortaya konması.",
+        "example": "\"Roman, öyküden daha uzun hacimlidir.\"",
+        "emoji": "⚖️"
+      },
+      {
+        "term": "örneklendirme",
+        "definition": "Anlatılanları daha anlaşılır kılmak için somut örnekler verme işi.",
+        "example": "\"Türkiye'de birçok şehir vardır; örneğin Ankara, İstanbul, İzmir.\"",
+        "emoji": "📍"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11212,
+    "subject": "TDE",
+    "title": "Necip Fazıl'ın Eserlerini Kolayca Ayırt Etme",
+    "explanation": "Bu tarz sorularda tüm kitapları ezberlemek yerine işin sırrını kavramak lazım. Necip Fazıl Kısakürek denince aklına hep metafizik, din, ruh dünyası ve insanın içsel çatışmaları gelmeli. Eğer bir eser ismi sana aşırı derecede \"bayrak, vatan, cephe\" gibi saf milli duygular hatırlatıyorsa, orada bir durup düşünmelisin çünkü Necip Fazıl da bunları yazar ama bazı eserler başka isimlerle özleşmiştir 🎯.\n\nŞimdi seçeneklere beraber bakalım: \"Çöle İnen Nur\", \"Tohum\" ve özellikle psikolojik derinliği olan \"Bir Adam Yaratmak」 eserlerinin üçü de Necip Fazıl'ın kaleminden çıkmıştır. Ancak \"Bir Bayrak Rüzgâr Bekliyor」 şiiri, edebiyatımızda \"Bayrak Şairi」 olarak bildiğimiz Arif Nihat Asya'ya aittir. Birçok kişi vatansever içerikli olduğu için bunu Necip Fazıl'la karıştırıp yanlışa düşebilir ama cevap net bir şekilde D şıkkıdır 🔑.",
+    "concepts": [
+      {
+        "term": "Necip Fazıl Kısakürek",
+        "definition": "Mistik şiirleri ve fikir yazılarıyla tanınan, insan ruhunu ve inanç meselelerini işleyen güçlü bir kalem.",
+        "example": "\"Çile」 adlı şiir kitabı onun en meşhur eseridir.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "Arif Nihat Asya",
+        "definition": "Özellikle bayrak ve vatan sevgisini işlediği şiirleriyle tanınan şair.",
+        "example": "\"Bayrak」 şiiriyle hafızalara kazınmıştır.",
+        "emoji": "🚩"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11213,
+    "subject": "TDE",
+    "title": "Büyük Harflerin Yazım Mantığı",
+    "explanation": "Türkçede yazımın anahtarı aslında çok basit: Eğer bahsettiğimiz şey dünyada tekse, özel bir ismi varsa (Özel İsim) büyük harfle başlarız; ama herkes için geçerli, genel bir kavramdan bahsediyorsak (Cins İsim) küçük harfle devam ederiz. Kurumlara gelen ekler hariç, kurum ve bina isimlerinin her kelimesini büyük başlatmak zorundayız 🎯.\n\nŞimdi beraber bakalım: I numaranın olduğu \"Milliyetçisi\" kelimesi bir ideolojiyi/özelliği belirttiği için küçük yazılmalıydı. II numaradaki \"Hükûmet konağı\", belirli bir resmi binayı kastettiği için \"Konağı\" kısmı da büyük olmalıydı. III numarada ise kelimenin ortasına rakam girmiş, zaten yazım hatalı görünüyor. Ama IV numaradaki \"milletin\" kelimesi tamamen genel bir kavramdır, yani bir cins isimdir ve küçük yazılması tamamen doğrudur ⚡️. Çoğu kişi Atatürk ile ilgili olduğu için her kelimenin büyük olması gerektiğini sanıp yanılır, ancak dil bilgisi kuralları kişiye göre değişmez, sadece kelimenin türüne bakar. Doğru cevap D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "Özel İsim",
+        "definition": "Dünyada tek olan, benzerlerinden ayrılan varlıklara verilen isimlerdir.",
+        "example": "Ankara, Mustafa Kemal Atatürk, Türkiye",
+        "emoji": "🌍"
+      },
+      {
+        "term": "Cins İsim",
+        "definition": "Aynı türden olan birçok varlığı ortaklaşa karşılayan genel isimlerdir.",
+        "example": "kitap, ağaç, millet, kalem",
+        "emoji": "📚"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11214,
+    "subject": "TDE",
+    "title": "Kafiye mi Redif mi? Karıştırmadan Çöz!",
+    "explanation": "Şiirde satır sonlarındaki benzerliklerin hepsi kafiye değildir. İşin sırrı şu: Eğer kelimenin sonunda anlamı ve görevi tamamen aynı olan ekler veya kelimeler tekrar ediyorsa buna redif diyoruz. Redifi ayıklayıp attıktan sonra geriye kalan kökteki ses benzerliklerine ise kafiye diyoruz. Yani önce 'aynı görevdeki parçaları' buduyoruz, artan kısımda kaç ses benziyor ona bakıyoruz 🎯.\n\nŞimdi hemen şiire bakalım: \"göçer bir gün\" ve \"biçer bir gün\" ifadelerinde, \"-er bir gün\" kısımları hem yazılış hem de anlam olarak tıpatıp aynı olduğu için bunları direkt redif olarak ayırıyoruz. Şimdi elimizde sadece \"göç-\" ve \"biç-\" kökleri kaldı. Bu iki kelimede ortak olan tek ses \"ç\" harfidir. Sadece bir ses benzediği için burada yarım kafiye vardır 🔑. Çoğu kişi redifi ayırmadan tüm benzer sesleri sayıp zengin kafiye sanarak yanılır, sakın buna düşme! Doğru cevap A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "redif",
+        "definition": "Kafiyeden sonra gelen, aynı anlamdaki eklerin veya kelimelerin tekrarıdır.",
+        "example": "Gel-di / Gül-dü sözündeki '-dü' ekleri rediftir.",
+        "emoji": "♻️"
+      },
+      {
+        "term": "kafiye",
+        "definition": "Dize sonlarındaki köklerde bulunan ses benzerliğidir.",
+        "example": "\"Yol\" ve \"Kol\" kelimelerindeki \"-ol\" sesleri kafiyedir.",
+        "emoji": "🎶"
+      },
+      {
+        "term": "yarım kafiye",
+        "definition": "Sadece tek bir ünsüz harfin benzer olmasıyla oluşan kafiye türüdür.",
+        "example": "\"At\" ve \"Kat\" kelimelerindeki \"t\" sesi yarım kafiyedir.",
+        "emoji": "🌓"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11215,
+    "subject": "TDE",
+    "title": "Paragraf Tamamlama: Mantık Zincirini Kur!",
+    "explanation": "Paragraf tamamlama sorularında olay tamamen bir yapboz parçası bulmak gibidir. İşin sırrı, boşluktan hemen önceki kelimelere odaklanıp orada kurulan mantık zincirini takip etmektir. Burada yazar bize Metristepe'nin \"en hâkim konumda\" olduğunu söylüyor. Yani burası öyle yüksek ki, etrafa baktığınızda her şeyi yukarıdan görüyorsunuz 🎯.\n\nŞimdi adım adım gidelim: İlk cümlede yerin stratejik olduğu söylenmiş, ikinci cümlede ise bunun sebebi \"coğrafyaya en hâkim yükselti\" olması olarak açıklanmış. Eğer bir zirvedeysek ve aşağıdaki şehirlere bakıyorsak, o şehirler fiziksel olarak bizden daha aşağıdadır. İşte bu yüzden, her yeri yukarıdan görmeyi anlatan \"ayaklarınızın altındadır\" ifadesi cuk oturuyor ⛰️. Bazıları \"başınızı döndürüyor\" şıkkına kayıp yanılabilir ama burada vurgulanan şey yükseklik hissi değil, bölgeyi yukarıdan kontrol edebilme gücüdür. Bu mantıkla doğru cevap B şıkkıdır 🔑.",
+    "concepts": [
+      {
+        "term": "Hâkim Konum",
+        "definition": "Etrafındaki alanı genişçe görebilen, kontrol edebilecek yükseklikteki yer.",
+        "example": "Kalelerin genellikle şehrin en yüksek tepelerine kurulması.",
+        "emoji": "🏰"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11216,
+    "subject": "TDE",
+    "title": "Karacaoğlan'ı Tanıyalım: Tarih Hatası",
+    "explanation": "Halk edebiyatında aşkı, doğayı ve gurbeti en saf haliyle anlatan isim Karacaoğlan'dır. Onun yazdıkları Âşık tarzı şiir denilen, saz eşliğinde söylenen samimi eserlerdir. Buradaki kilit nokta şu: Karacaoğlan, Anadolu'nun erken dönem şairi değildir; çok daha sonra, yani 1600'lü yılların olduğu 17. yüzyılda yaşamıştır 🎯.\n\nCümlelere baktığımızda; birinci cümle genel bir doğrudur. İkinci cümlede ise Karacaoğlan'ın 13. yüzyılda yaşadığı söylenmiş. İşte hata burada patlak veriyor çünkü kendisi 17. yüzyıl şairidir; arada koca 400 yıl fark var! Üçüncü cümledeki temalar ve dördüncü cümledeki Koşma nazım şekli ile Güzelleme türü tamamen onun tarzıyla örtüşüyor ⚡. Birçok kişi onu Yunus Emre gibi eski dönem şairleriyle karıştırdığı için tarihe dikkat etmek gerekir. Doğru cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "Âşık tarzı şiir",
+        "definition": "Genellikle saz eşliğinde söylenen, hece ölçüsüyle yazılmış, halkın içinden çıkan ozanların şiirleridir.",
+        "example": "Karacaoğlan'ın doğa ve aşk dolu şiirleri buna örnektir.",
+        "emoji": "🎶"
+      },
+      {
+        "term": "Koşma",
+        "definition": "Halk edebiyatının en yaygın kullanılan, genellikle 11'li hece ölçüsüyle yazılan şiir biçimidir.",
+        "example": "Sevda üzerine yazılan çoğu halk şiiri koşma şeklindedir.",
+        "emoji": "📝"
+      },
+      {
+        "term": "Güzelleme",
+        "definition": "Bir kişinin güzelliğini ya da doğanın güzelliklerini öven koşma türüdür.",
+        "example": "Sevgilinin gözlerine veya boyuna dair yazılan övgüler güzellemedir.",
+        "emoji": "🌸"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11217,
+    "subject": "TDE",
+    "title": "Altı Çizili Sözlerin Gizli Mantığı",
+    "explanation": "Bir cümlede \"kelimelere sığdıramamak\" ifadesini gördüğünde, orada fiziksel bir kutudan veya yerden bahsedilmediğini hemen anlamalısın. Buradaki olay tamamen mecaz anlam üzerine kurulu; yani kişinin hissettiği duygunun o kadar yoğun, ağır veya karmaşık olmasıdır ki, dünyadaki hiçbir kelime o duyguyu tam olarak anlatmaya yetmez. İşin sırrı, \"sığamamak\" kelimesini \"ifade edememek」 veya \"yetersiz kalmak\" şeklinde okumaktır 💡.\n\nŞimdi bunu şıklara uygulayalım: Şairin yaşadığı \"yalnızlık\", aslında o anki genel ruh hâlidir. Kelimelere sığdıramaması ise, anlatmaya çalışırken kelimelerin yetersiz kalması demektir. A şıkkında geçen \"ruh hâlini anlatmakta yetersiz kalıyordum\" ifadesi, bizim bu mantığımızla birebir örtüşüyor 🎯. Bazıları bunu gizlilikle karıştırıp B şıkkına gidebilir ama dikkat et; burada sorun gizlemek değil, anlatmaya gücünün yetmemesidir. Bu yüzden cevabımız A şıkkıdır.",
+    "concepts": [
+      {
+        "term": "mecaz anlam",
+        "definition": "Bir sözcüğün gerçekten uzaklaşarak kazandığı yeni ve soyut anlamdır.",
+        "example": "\"Bu haberle dünyam yıkıldı\" derken gerçekten dünyanın parçalanmadığını, çok üzüldüğümüzü kastederiz.",
+        "emoji": "🌟"
+      },
+      {
+        "term": "ruh hâli",
+        "definition": "Kişinin belli bir andaki psikolojik durumu, hissettikleri ve duygusal atmosferidir.",
+        "example": "Sınavdan önce yaşanan heyecan veya yalnızken hissedilen hüzün birer ruh hâlidir.",
+        "emoji": "🎭"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11218,
+    "subject": "TDE",
+    "title": "Parçada Akışı Bozan Cümleyi Yakalamak",
+    "explanation": "Olay aslında çok basit: Bir paragraf, birbirine kenetlenmiş halkalar gibidir. Eğer bir cümle gelip bu zincirin ortasında bambaşka bir konuya selam verirse, orada düşüncenin akışı bozulmuş demektir. İşin sırrı, tüm cümlelerin aynı 'merkeze' hizmet edip etmediğine bakmakta. Burada merkezimiz, şiirin ne olduğunun belirlenmesi, yani şiire yapılan tanımlardır 🎯.\n\nŞimdi beraber inceleyelim: İlk beş cümle boyunca sürekli 'şiir nedir?', 'tanımı zordur', 'şu şöyle tanımlanmış' diye gidiyoruz. Yani tamamen tanımlama üzerine konuşuyoruz. Ancak VI. cümleye geldiğimizde, aniden şiirin toplumdaki görevinden, yani toplumsal bellekten bahsediliyor. Konu 'tanım yapmak' iken birdenbire 'toplum üzerindeki etkisine' zıpladığımız için zincir burada kopuyor ⚡. Çoğu kişi şiirle ilgili olduğu için bu cümleyi normal karşılar ama biz sadece 'tanıma' odaklandığımız için cevap D şıkkıdır. 👀",
+    "concepts": [
+      {
+        "term": "düşüncenin akışı",
+        "definition": "Bir metindeki cümlelerin, ana konudan sapmadan mantıklı bir sıra ile birbirini takip etmesidir.",
+        "example": "Elmanın renginden, tadına ve faydalarına sırayla bahsetmek akışı korumaktır.",
+        "emoji": "🔗"
+      },
+      {
+        "term": "tanımlama",
+        "definition": "Bir kavramın ne olduğunu, genel özelliklerini belirterek açıklama işidir.",
+        "example": "'Kitap, bilgi kaynağıdır' demek bir tanımlamadır.",
+        "emoji": "📖"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11219,
+    "subject": "TDE",
+    "title": "Millî Edebiyat'ın Şifresi: Halkın Dili!",
+    "explanation": "Olayın özü şu: Millî Edebiyat döneminde şairler 'saray dilini' bırakıp 'halkın yanına' indiler. Yani öyle süslü, anlaşılması zor Arapça-Farsça kelimeler yerine herkesin konuştuğu Sade Türkçe tercih edildi. Temalar ise hep aynıydı: Vatan sevgisi, millet ve ortak tarih ⚡️. Eğer okuduğunuz şiir size günlük konuşma dilini hatırlatıyor ve içinde 'vatan', 'millet' gibi kelimeler geçiyorsa, orada Millî Edebiyat vardır.\n\nŞimdi seçeneklere baktığımızda; A, B ve D şıkları tertemiz bir Türkçe ile yazılmış, vatan ve kahramanlık temalarını işleyen Hece Ölçüsü şiirleridir. Ancak C şıkkında \"tercüman-ı lisan\" veya \"takrir\" gibi günümüzde kullanmadığımız, oldukça ağır Osmanlıca kelimeler görüyoruz. Ayrıca bu dizelerin ritmi, halkın doğal konuşması değil, katı kuralları olan Aruz Ölçüsü ile kurulmuş. Çoğu kişi sadece konuya bakıp yanılabilir ama buradaki kilit nokta dilin ağırlığıdır 🎯. Dolayısıyla bu şiir Millî Edebiyat ruhuna tamamen aykırı olduğu için cevap C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "Sade Türkçe",
+        "definition": "Halkın günlük yaşamda kullandığı, yabancı etkilerden arındırılmış yalın dil.",
+        "example": "\"Vatan vatan diye dolaştım\" ifadesi sade bir Türkçedir.",
+        "emoji": "🔑"
+      },
+      {
+        "term": "Hece Ölçüsü",
+        "definition": "Şiirin mısralarındaki hece sayılarının eşitliğine dayanan, milli ölçümüzdür.",
+        "example": "Ez-gi koy-dum (4 hece) şeklinde sayarak bulduğumuz ritim.",
+        "emoji": "📏"
+      },
+      {
+        "term": "Aruz Ölçüsü",
+        "definition": "Hece sayısı yerine hecelerin uzunluğuna ve kısalığına dayanan, Divan edebiyatı geleneğinden gelen ölçüdür.",
+        "example": "C şıkkındaki kalıplı ve ağır yapıdaki ritim.",
+        "emoji": "📜"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11220,
+    "subject": "TDE",
+    "title": "Cümle Ögelerinde Diziliş Yakalamaca",
+    "explanation": "Bir cümlenin öge dizilişini bulmak aslında bir dedektiflik oyunu gibidir. İşin sırrı her zaman yüklemden başlamaktır. Önce işi yapanı yani özneyi, sonra işin nasıl yapıldığını anlatan zarf tümlecini, ardından nereye veya kime yönelik olduğunu söyleyen dolaylı tümleci buluruz. Burada en kritik nokta, birbirine bağlı kelimeleri asla birbirinden koparmamaktır; mesela \"genç akrabam\" ifadesini ikiye bölmez, tek bir blok olarak alırız 🎯.\n\nŞimdi beraber bakalım: I. cümlede \"oturdu\" yüklemimiz. Kim oturdu? \"Pek çabuk şöhret kazanmış olan genç akrabam\" (Özne). Nasıl oturdu? \"teklifsizce\" (Zarf Tümleci). Nereye oturdu? \"yanıma\" (Dolaylı Tümleç). Yani sıralama: Özne $\\rightarrow$ Zarf T. $\\rightarrow$ Dolaylı T. $\\rightarrow$ Yüklem şeklinde. IV. cümleye baktığımızda da \"sordu\" yüklem, \"doktor\" özne, \"edasını değiştirerek\" zarf tümleci ve \"bana\" dolaylı tümleçtir. Aynı dizilişe sahip oldukları için cevap B şıkkıdır ⚡. Çoğu kişi burada \"Sağ taraftaki kanepelerde oturanları selamlayan doktor\" kısmını uzun olduğu için parçalamaya çalışır ama burası tek bir özne grubudur, dikkat etmelisin 👀.",
+    "concepts": [
+      {
+        "term": "Özne",
+        "definition": "Cümlede bildirilen işi yapan veya yargıya konu olan varlıktır.",
+        "example": "\"Ali kitap okuyor\" cümlesinde Ali öznedir.",
+        "emoji": "👤"
+      },
+      {
+        "term": "Zarf Tümleci",
+        "definition": "Yüklemin zamanını, tarzını veya miktarını belirten ögedir.",
+        "example": "\"Hızlıca koştu\" derken hızlıca kısmı zarf tümlecidir.",
+        "emoji": "🏃"
+      },
+      {
+        "term": "Dolaylı Tümleç",
+        "definition": "Yükleme sorulan 'nereye, nerede, nereden, kime, kimde, kimden' sorularına cevap veren ögedir.",
+        "example": "\"Eve gitti\" cümlesinde eve kısmı dolaylı tümleçtir.",
+        "emoji": "📍"
+      },
+      {
+        "term": "Yüklem",
+        "definition": "Cümlenin temel direğidir; işi, oluşu veya durumu bildiren yargı merkezidir.",
+        "example": "\"Okula geldi\" cümlesinde geldi yüklemdir.",
+        "emoji": "⚓"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11221,
+    "subject": "TDE",
+    "title": "Metnin Dili ve Anlam Özellikleri",
+    "explanation": "Buradaki olay aslında çok basit: Elimizdeki yazı bir edebiyat parçası değil, resmen bir ekonomi ders kitabından kopmuş gibi duruyor. Eğer bir yazı bize bir şeyler öğretiyor, bilgi veriyor ve süslemeden, net bir şekilde konuşuyorsa orada dilin göndergesel işlevi vardır; yani amaç sadece bilgi aktarmaktır 💡. Bu tarz yazılara da öğretici metin diyoruz çünkü duygulara değil, gerçeklere odaklanır.\n\nŞimdi seçeneklere beraber bakalım. Yazıda \"kaynak\", \"ihtiyaç\" ve \"tüketim\" gibi kelimeler var; bunlar hep gerçek anlamlarıyla, yani sözlükteki ilk anlamlarıyla kullanılmış. Hiçbir kelime hayali ya da benzetmeli bir mecaz anlam kazanmamış 🎯. Yazı bize ekonominin temel mantığını anlatarak bizi bu sistemin gerçekliği konusunda ikna etmeye çalışıyor ve tamamen bilgi vermeye yönelik olduğu için göndergesel işlevde. Çoğu kişi \"mutluluk\" kelimesini görünce metni duygusal sanıp yanılabilir ama burada mutluluk sadece ekonomik bir varsayım olarak geçiyor. Dolayısıyla yanlış olan şık C şıkkıdır.",
+    "concepts": [
+      {
+        "term": "dilin göndergesel işlevi",
+        "definition": "Dilin herhangi bir duygu katmadan, sadece bilgi vermek veya bir durumu açıklamak için kullanılmasıdır.",
+        "example": "\"Türkiye'nin başkenti Ankara'dır.\" cümlesi tamamen bilgi verdiği için göndergeseldir.",
+        "emoji": "📢"
+      },
+      {
+        "term": "mecaz anlam",
+        "definition": "Bir kelimenin gerçek anlamından tamamen uzaklaşıp kazandığı yeni ve soyut anlamdır.",
+        "example": "\"Bu olayda parmağı var.\" derken gerçekten fiziksel bir parmaktan değil, etkiden bahsedilir.",
+        "emoji": "🎭"
+      },
+      {
+        "term": "öğretici metin",
+        "definition": "Okura bilgi vermeyi, bir şeyi açıklamayı veya kanıtlamayı amaçlayan, nesnel dilli yazılardır.",
+        "example": "Ansiklopediler, makaleler veya ders kitapları buna örnektir.",
+        "emoji": "📖"
+      },
+      {
+        "term": "ikna etme",
+        "definition": "Karşıdaki kişiyi belirli bir görüşe inandırmak veya bir davranışa yöneltmek için yapılan uğraştır.",
+        "example": "Bir reklam filminin ürünü size aldırmaya çalışması bir ikna çabasıdır.",
+        "emoji": "🤝"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11222,
+    "subject": "TDE",
+    "title": "Paragrafta Bilgi Avcılığı: Hangisi Yok?",
+    "explanation": "Bu tarz soruların işin sırrı tüm metni defalarca okumak değil, seçeneklerdeki ipuçlarını metinde avlamaktır. Yani önce şıklara bakıp orada gördüğün 'sel', 'zaman' veya 'yer' gibi anahtar kelime tarama yöntemini kullanarak metne dönmelisin. Eğer soru 'değinilmemiştir' diyorsa, metinde bulduğun her şeyi elemen gerekir; sonda kalan tek şık senin cevabındır 🎯.\n\nŞimdi beraber uygulayalım: B şıkkındaki 'kuraklık ve sel' kelimelerini metnin ortasında hemen görüyoruz, bunu eliyoruz. C şıkkındaki 'zaman' ve 'güçlük' ifadesini, sondaki 'ne zaman gerçekleşeceğinin... tahmin edilmesi hayli zordur' kısmıyla eşleştirip onu da siliyoruz. D şıkkı için metne baktığımızda Kuzey Amerika, Avrupa ve Japonya gibi birçok yer ismi geçtiğini görüyoruz, bu da gitti. Geriye A şıkkı kaldı; metinde Rossby dalgalarından bahsediyor ama bunlar jet akımlarının 'başka bir adı' değil, sadece oluşturduğu 'kıvrımların' adıdır. Çoğu kişi işte tam burada yanılır ve Rossby'yi başka bir isim sanır ⚡. Doğru cevap A.",
+    "concepts": [
+      {
+        "term": "anahtar kelime tarama",
+        "definition": "Soruda istenen bilginin metindeki karşılığını hızlıca bulmak için kullanılan spesifik sözcüklere odaklanma yöntemi.",
+        "example": "'Sel' kelimesini arayıp metinde aynı kelimeyi bulmak.",
+        "emoji": "🔍"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11223,
+    "subject": "TDE",
+    "title": "Dilin Canlılığı ve Sözcük Değişimi",
+    "explanation": "Bu tarz sorularda işin sırrı, yazarın kullandığı imgeyi yani hayali resmi gerçek hayata tercüme etmekte. Burada yazar \"benzetme\" yaparak dili bir ağaca benzetiyor. Ağaçlar kışın yapraklarını döker ama baharda daha taze yapraklar açarlar; yani ağaç ölmez, aksine kendini günceller ve yaşamaya devam eder. Dil de tıpkı böyledir; bazı kelimeler eskir ve unutulur, yerine yeni kelimeler gelir 🌿.\n\nŞimdi bu mantığı şıklara uygulayalım. Öncelikle yaprakların dökülmesi bir yıkım değil, tazelenmedir; bu yüzden yapının bozulduğunu söyleyen A şıkkını hemen eliyoruz. Metinde yöresel farklardan ya da başka dillerden hiç bahsedilmediği için B ve D şıklarıyla da işimiz yok. Yaprakların dökülüp tazelenmesi demek, dilin tıpkı canlı bir organizma gibi yaşadığını ve kendini yenilediğini gösterir 🎯. Bu durumda cevap net bir şekilde C şıkkıdır. Çoğu kişi \"değişim\" kelimesini görünce bunu olumsuz bir şey sanıp yanılabilir ama buradaki anahtar kelimemiz \"tazelenmek\", yani yenilenmektir.",
+    "concepts": [
+      {
+        "term": "benzetme",
+        "definition": "Aralarında ortak özellik bulunan iki şeyden zayıf olanı güçlü olana benzeterek anlatma sanatıdır.",
+        "example": "Adam aslan gibi cesurdur. (Cesaret özelliği üzerinden adam aslana benzetilmiş)",
+        "emoji": "🦁"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11224,
+    "subject": "TDE",
+    "title": "Birleşik Kelimeler ve Bititşik Yazım Mantığı",
+    "explanation": "Türkçede bazı kelimeler yan yana geldiğinde yeni bir anlam kazanır ya da birbirine yardım eder. İşin püf noktası şu: Eğer iki fiil birleşip bize 'hızlıca yapmak' veya 'kolayca halletmek' gibi bir anlam veriyorsa, bunlar artık ayrılmaz bir ikili olur ve bitişik yazılırlar. Özellikle '-ivermek' ekiyle yapılan işlerin jet hızıyla gerçekleştiğini anladığınız anda onları hemen birbirine yapıştırmanız gerekir ⚡️.\n\nŞıklarda neler olduğuna beraber bakalım. A seçeneğinde \"açı verdi\" denmiş ama burada çiçeğin bir açı oluşturması değil, hızlıca açılması kastediliyor. Yani burada bir tezlik fiili var, bu yüzden kelimeyi \"açıverdi\" şeklinde bitişik yazmalıydık; doğru cevap A şıkkı 🎯. Diğerlerine bakarsak; \"açıkgöz\" bir kişilik özelliği olduğu için bitişik, \"cızbız\" ses taklidi olduğu için bitişik, \"deve kuşu\" ise hayvan ismi olduğu için ayrı yazılır. Çoğu kişi burada \"açı vermek\" deyimini düşünerek kelimeyi ayrı sanıp hata yapar, ama cümlenin anlamına odaklanmak hayat kurtarır 👀.",
+    "concepts": [
+      {
+        "term": "tezlik fiili",
+        "definition": "Bir işin çok çabuk, aniden veya kolayca yapıldığını bildiren, '-iver' ekiyle kurulan fiildir.",
+        "example": "Geliver, koşuver, yazıver",
+        "emoji": "🚀"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11225,
+    "subject": "TDE",
+    "title": "Noktalama İşaretlerinde Pratik Mantık",
+    "explanation": "Noktalamanın sırrı aslında çok basit: Kimden bahsediyoruz, neyi açıklıyoruz ve nerede duruyoruz? Eğer cümlede işi yapan kişiyi (yani özneyi) belirginleştirmek istiyorsak hemen yanına virgül koyarız. Eğer \"şunu söyledi\", \"şu gerçeği hatırlattı\" gibi bir ifade varsa, arkasından bir açıklama geleceği için iki nokta kullanılır 🎯. En sonda ise yargımız bittiği için bildiğimiz noktayı basıp geçeriz.\n\nŞimdi beraber uygulayalım: İlk boşlukta \"Fuat Sezgin\" bizim özne olduğumuz için buraya virgül (,) gelir. \"Şu gerçeği hatırlatmıştı\" ifadesi bize bir açıklama yapılacağını fısıldadığı için ikinci boşluğa iki nokta (:) koyuyoruz ⚡. Yeni başlayan kısımda \"Müslüman bilim insanları\" yine işi yapan kişiler olduğu için onları ayırmak adına tekrar virgül (,) kullanırız. Cümlenin en sonunda ise sözümüz bittiği için nokta (.) ile kapatıyoruz. Çoğu kişi burada özne sonrası virgülü unutup şaşırabiliyor ama kilit nokta kimin yaptığını ayırmaktır. Cevabımız B şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "özne",
+        "definition": "Cümlede yüklemin bildirdiği işi yapan veya durumu yaşayan kişi ya da varlıktır.",
+        "example": "\"Ali kitap okuyor.\" cümlesinde okuma işini yapan Ali'dir.",
+        "emoji": "👤"
+      },
+      {
+        "term": "virgül",
+        "definition": "Anlam karışıklığını önlemek veya uzun cümlelerde özneyi belli etmek için kullanılan işaret.",
+        "example": "\"Ahmet, bugün okula gitmedi.\"",
+        "emoji": "✍️"
+      },
+      {
+        "term": "iki nokta",
+        "definition": "Kendisinden sonra bir açıklama yapılacağını veya bir örnek verileceğini gösteren işaret.",
+        "example": "\"En sevdiğim renk şudur: Mavi.\"",
+        "emoji": "🔍"
+      },
+      {
+        "term": "nokta",
+        "definition": "Tamamlanmış, yargısı bitmiş cümlelerin sonuna konulan işaret.",
+        "example": "\"Hava bugün çok güzel.\"",
+        "emoji": "🏁"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11226,
+    "subject": "TDE",
+    "title": "Eserlerden Yazara Gitme Sanatı",
+    "explanation": "Bu tarz sorularda tüm metni okuyup boğulmak yerine 'parmak izlerine' yani ayırt edici ipuçlarına odaklanmalısın. İşin sırrı, yazarın sadece ne yazdığında değil, nasıl yazdığında gizli. Eğer bir metinde hem toplumun gerçek sorunlarından bahsediliyor hem de geleneksel halk kültürüyle (meddah gibi) harmanlanmış espriler varsa, orada modernle geleneği birleştiren bir kalem vardır 🎯.\n\nŞimdi elimizdeki ipuçlarını tek tek takip edelim: Öncelikle metinde geçen 'üslup', yani yazarın kendine has anlatım biçimi nükte dolu ve şiveliymiş. Ardından gelen 'meddah' ifadesi bize geleneksel anlatıcılığı kullandığını fısıldıyor. Ama asıl bitirici vuruşu eser isimleri yapıyor; özellikle 'Keşanlı Ali Destanı' edebiyatımızın en meşhur epik tiyatro örneğidir ve direkt Haldun Taner'e aittir ⚡️. Çoğu kişi diğer seçeneklerdeki ünlü isimlere kapılıp yanılabilir ama kitap isimleri asla yalan söylemez. Bu yüzden cevabımız D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "üslup",
+        "definition": "Bir yazarın dili kullanış biçimi, anlatım tarzı ve kendine has sesi.",
+        "example": "Bazı yazarlar süslü bir dil kullanırken bazıları çok sade bir üslup tercih eder.",
+        "emoji": "✍️"
+      },
+      {
+        "term": "meddah",
+        "definition": "Tek başına sahneye çıkıp farklı karakterleri taklit ederek hikaye anlatan geleneksel sanatçı.",
+        "example": "Meddahlar eski İstanbul sokaklarında insanları güldürürken düşündürürdü.",
+        "emoji": "🎭"
+      },
+      {
+        "term": "Keşanlı Ali Destanı",
+        "definition": "Haldun Taner tarafından yazılan, toplumsal eleştiri içeren ünlü epik tiyatro oyunu.",
+        "example": "Türk tiyatrosunda epik türün en başarılı örneği kabul edilir.",
+        "emoji": "📚"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11227,
+    "subject": "TDE",
+    "title": "Kelime Avı: Söz Gruplarının Gizli Anlamları",
+    "explanation": "Okuduğumuz metinlerde bazı kelimeler sözlükteki ilk anlamlarının dışına çıkar; biz buna mecaz anlam diyoruz. İşin sırrı şu: Eğer bir ifade günlük hayatta imkansız veya çok abartılı görünüyorsa (mesela bir insanın fiziksel olarak 'çökmesi'), orada aslında başka bir duygu veya durum anlatılıyordur 🎯. Bu tarz ifadeleri çözerken kelimelere tek tek takılmak yerine, ifadenin bize hissettirdiği genel tabloya bakmalıyız.\n\nŞimdi elimizdeki ifadelere beraber bakalım: 'Arasına düşmek', gerçekten yere kapaklanmak değil, beklenmedik şekilde bir grubun içine girmektir; yani A şıkkıyla tam örtüşüyor. 'Çökmüş ihtiyar' derken adamın yere yıkıldığını değil, yaşlılıktan dolayı gücünü kaybettiğini anlarız, bu da C şıkkıdır. 'Aynı yolun yolcusu olmak' ise sadece aynı kaldırımda yürümek değil, kaderlerinin veya amaçlarının benzer olmasıdır ki bu da D şıkkına karşılık gelir ⚡. Geriye kalan B şıkkı ise sadece 'fiziksel olarak aynı yerde olma' durumunu anlatıyor ama bizim metnimizdeki derin manaları karşılamıyor. Çoğu kişi 'aynı yol' ifadesini görüp hemen B şıkkındaki 'aynı yer' kısmına kanarak hata yapar, sakın buna düşme!",
+    "concepts": [
+      {
+        "term": "mecaz anlam",
+        "definition": "Bir kelimenin gerçek anlamından tamamen uzaklaşarak kazandığı yeni ve soyut anlam.",
+        "example": "'Bu haberle dünyam başıma yıkıldı' dediğinde gerçekten dünya üzerine düşmez, sadece çok üzülmüştür.",
+        "emoji": "🌟"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11228,
+    "subject": "TDE",
+    "title": "Divan Edebiyatı'nın Biyografi Kitapları: Tezkireler",
+    "explanation": "Divan edebiyatında tezkire dediğimiz şey, aslında bugünkü biyografi kitaplarının eski versiyonudur. İşin özü şu: O dönemin yazarları, şairlerin hayatlarını, şiirlerini ve özelliklerini derleyip kitap haline getirmişlerdir. Ancak bunlar modern tarih kitapları gibi sadece gerçekleri değil, yazanın kendi duygularını da içeren özel eserlerdir 📚.\n\nŞimdi beraber metne bakalım: \"Edebiyat tarihi için malzeme olabilir\" ifadesi, bu kitapların günümüze ışık tuttuğunu yani edebiyat tarihine kaynaklık ettiğini kanıtlar (III). Ayrıca \"kendi yorumlarıyla aktararak\" kısmı, yazarların işin içine kendi kişisel görüşlerini kattığını netçe gösteriyor (II) 🎯. Fakat metnin hiçbir yerinde sürecin \"zorlu\", \"güç」 veya \"yıpratıcı\" olduğuna dair bir kelime geçmiyor; sadece nasıl yapıldığı anlatılıyor. Dolayısıyla I. yargıya ulaşamayız. Bu durumda cevabımız II ve III'ün olduğu D şıkkıdır. En büyük tuzak, süreci okurken \"vay be, ne zahmetli iş\" diye düşünüp I. öncüle atlamak olur; ama biz sadece metinde yazana bakmalıyız 👀.",
+    "concepts": [
+      {
+        "term": "tezkire",
+        "definition": "Divan edebiyatında şairlerin hayatlarının ve eserlerinin anlatıldığı biyografik eserler.",
+        "example": "Sehi Bey'in yazdığı ilk tezkireler buna örnektir.",
+        "emoji": "📖"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11229,
+    "subject": "TDE",
+    "title": "Ek Olan '-ki' ve Büyük Tuzak: Bugünki mi, Bugünkü mü?",
+    "explanation": "Olayın sırrı aslında çok basit: Eğer 'ki' sözcüğü kelimeye bitişik yazılıyorsa, genellikle ya aitlik bildiriyordur ya da kelimeyi bir sıfata dönüştürüyordur. Biz buna sıfat yapan -ki diyoruz. Bu ek, kelimenin sonundaki ünlü harfe ayak uydurmak zorundadır; yani ünlü uyumu kuralına tabidir. Kelime kalın bir ünlüyle biterse '-ki' olur, ince bir ünlüyle biterse '-kü' şekline dönüşür 🎯.\n\nŞimdi şıklara beraber bakalım. A, B ve D seçeneklerinde 'de' ve 'ki' kullanımıyla ilgili hiçbir sorun yok. Ancak C seçeneğinde 'bugünki' ifadesi dikkatimizi çekiyor. Burada 'gün' kelimesindeki 'ü' harfi ince bir ünlüdür. Dolayısıyla yanına gelen ek de ona uymalı ve 'bugünkü' şeklinde yazılmalıydı ✍️. Birçok kişi günlük konuşmada bunu yanlış söylediği için sınavda da gözden kaçırabiliyor ama kural net: İnce ünlü varsa ek '-kü' olur. Doğru cevap C şıkkıdır 👀.",
+    "concepts": [
+      {
+        "term": "sıfat yapan -ki",
+        "definition": "Bir ismin önüne gelip onu belirten, hangi veya kim olduğunu söyleyen ektir. Genellikle bitişik yazılır.",
+        "example": "Masadaki kitap (Hangi kitap? Masadaki)",
+        "emoji": "💡"
+      },
+      {
+        "term": "ünlü uyumu",
+        "definition": "Türkçe kelimelerde ünlülerin kalınlıkla veya incelikle birbirine uyması durumudur.",
+        "example": "Gün-cü (ince), Yol-cu (kalın)",
+        "emoji": "⚙️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11230,
+    "subject": "TDE",
+    "title": "Noktalama İşaretlerini Şipşak Çöz!",
+    "explanation": "Noktalama işaretlerinde işin sırrı, işaretin cümleye kattığı 'duyguya' bakmaktır. Mesela, eğer cümle \"Bak şimdi anlatıyorum\" veya \"Şunlar şunlardır\" deyip bir açıklama başlatıyorsa orada mutlaka iki nokta (:) olur. Benzer şekilde, art arda sıralanan benzer şeyler varsa onları virgülle (,) ayırıp nefes alırız. Soru sorulan yerde ise zaten tanıdığımız soru işareti (?) devreye girer 🎯.\n\nŞimdi beraber yerleştirelim: İlk boşlukta \"irdelememiz gerekir\" diyerek bir açıklama başlatıyor, hemen iki nokta (:) koyuyoruz. \"Hangi şiir anlayışına」 kısmında benzer bir sorgulama devam ettiği için buraya virgül (,) geliyor. Peş peşe iki tane soru sorulduğu için üçüncü ve dördüncü boşluklara soru işareti (?) koymalıyız ⚡️. Son olarak, cümlenin başındaki \"Hayır\" cevabından sonra bir duraksama olduğu için virgül (,) ile bitiriyoruz. Doğru cevap C şıkkı. Çoğu kişi ilk boşluğa noktalı virgül koyarak yanılır ama hatırlatayım; açıklama geliyorsa kral iki noktadır 👀.",
+    "concepts": [
+      {
+        "term": "iki nokta (:)",
+        "definition": "Kendisinden sonra açıklama yapılacak veya örnek verilecek cümlelerin sonuna konan işarettir.",
+        "example": "Pazardan şunları aldım: elma, armut, muz.",
+        "emoji": "💡"
+      },
+      {
+        "term": "virgül (,)",
+        "definition": "Birbiri ardınca sıralanan eş görevli kelimelerin veya hitap/onay sözlerinin arasına konur.",
+        "example": "Kitabı okudum, anladım ve beğendim.",
+        "emoji": "📍"
+      },
+      {
+        "term": "soru işareti (?)",
+        "definition": "Soru anlamı taşıyan cümlelerin sonuna getirilerek soru olduğunu belli eden işarettir.",
+        "example": "Bugün okula gidecek misin?",
+        "emoji": "❓"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11231,
+    "subject": "TDE",
+    "title": "Paragraf Dizme Mantığı: Zincir Kurmak",
+    "explanation": "Anlamlı bir metin kurmak aslında bir zincir oluşturmak gibidir. İşin sırrı, hiçbir yere bağlanmayan, yani başında \"bu, şöyle, ancak\" gibi önceki cümleyi işaret eden kelimeler olmayan o ilk kapıyı bulmaktır. Buna giriş cümlesi diyoruz. Giriş cümlesi genellikle konuyu genel hatlarıyla tanıtır ve okuyucuyu içeri davet eder 💡\n\nElimizdeki cümlelere baktığımızda; I, III ve V numaralı cümlelerin başında \"bu katmanlar\", \"bu höyükler\", \"...ise\" gibi ifadeler var. Bunlar bize \"benim benden önce bir cümlem olmalı\" diyor. Ama II numaralı cümle tertemiz bir başlangıç yapıyor ve bize Çatalhöyük'ü tanıtıyor. Şehri tanıttıktan sonra artık detaylara, yani şehrin parçalarına geçeriz. IV numaralı cümle, şehri bölümlere ayırıp \"Doğu Höyüğü\"nden bahsettiği için hemen II'nin peşine gelir 🎯 Burada çoğu kişi tüm cümleleri tek tek dizmeye çalışırken vakit kaybeder; oysa sadece girişi bulup ardından gelen ilk halkayı yakalamak yeterlidir. Dolayısıyla baştan ikinci cümlemiz IV olur. Cevabımız D şıkkıdır.",
+    "concepts": [
+      {
+        "term": "giriş cümlesi",
+        "definition": "Metnin başında yer alan, kendisinden önce başka bir cümle varmış izlenimi vermeyen bağımsız cümledir.",
+        "example": "\"İstanbul, tarihin en eski şehirlerinden biridir.\" (Başkasına ihtiyaç duymaz)",
+        "emoji": "🔑"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11232,
+    "subject": "TDE",
+    "title": "Söz Sanatlarını Şipşak Ayıklama Rehberi",
+    "explanation": "Aslında edebiyat sanatları dediğimiz şey, dili daha renkli kullanma sanatıdır. Eğer yazar bize bir yeri öyle detaylı anlatıyorsa ki biz orayı gözümüzde canlandırabiliyorsak buna betimleyici ögeler diyoruz. Bir şeyi başka bir şeye benzetiyorsa genellikle \"gibi\" kelimesini görürüz; buna benzetme denir. Cansız bir varlığa \"heyecanlandı\", \"bekledi\" gibi sadece insanlara özgü duygular yüklüyorsa orada kişileştirme vardır. Karşılaştırma ise en kolayıdır; mutlaka iki şeyden bahsedilir ve biri diğerinden \"daha」 iyi, \"en」 güzel şeklinde kıyaslanır 🎨.\n\nMetne baktığımızda \"kanarya sarısı duvar kağıdı\" ifadesiyle ortam resmedildiği için betimleyici ögeler mevcut. Perdelerin \"yelken gibi\" şişmesi net bir benzetme örneği. Saatle ilgili kullanılan \"sabırsızlıkla beklemek\" kısmı ise tamamen kişileştirme çünkü saatler sabırsızlanamaz ⚡. Ancak metnin hiçbir yerinde iki şeyi birbirleriyle kıyaslayan \"daha, en, kadar\" gibi ifadeler yok. Çoğu kişi betimleme yapılırken birçok eşyanın sayılmasını karşılaştırma sanarak yanılır ama burada sadece tanıtım var. Doğru cevap C şıkkıdır 🎯.",
+    "concepts": [
+      {
+        "term": "betimleyici ögeler",
+        "definition": "Bir yeri veya varlığı, okuyan kişinin zihninde fotoğraf gibi canlandıracak şekilde nitelikleriyle anlatmak.",
+        "example": "Koyu mavi, yırtık pırtık eski bir ceket.",
+        "emoji": "🖼️"
+      },
+      {
+        "term": "benzetme",
+        "definition": "Aralarında ortak bir özellik bulunan iki şeyden zayıf olanı güçlü olana benzetmektir.",
+        "example": "Pamuk gibi yumuşak eller.",
+        "emoji": "👯"
+      },
+      {
+        "term": "kişileştirme",
+        "definition": "İnsan dışındaki varlıklara, sanki bir insanmış gibi duygu ve davranışlar yükleme işidir.",
+        "example": "Bulutlar bugün çok üzgün görünüyor.",
+        "emoji": "🎭"
+      },
+      {
+        "term": "karşılaştırma",
+        "definition": "İki varlık veya kavram arasındaki benzerlik ya da farkları ortaya koymaktır.",
+        "example": "Ali, sınıfın en çalışkan öğrencisidir.",
+        "emoji": "⚖️"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11234,
+    "subject": "TDE",
+    "title": "Paragrafta Cümle Analizi: Tespit mi, Ön Yargı mı?",
+    "explanation": "Bu tip sorularda işin sırrı, cümledeki anahtar kelimeleri yakalamaktır. Bir durumda gözleme dayalı bir gerçek söyleniyorsa buna tespit, henüz yaşanmamış bir şey hakkında peşin hüküm veriliyorsa ön yargı denir. Eğer bir şeyin olması başka bir şarta bağlıysa orada bir koşul vardır; birine yol gösteriliyor veya öneride bulunuluyorsa da karşımızda bir tavsiye vardır 🎯.\n\nŞimdi beraber bakalım: I. cümlede şehir hayatının bizi hareketsiz bıraktığına dair bir tespit yapılmış. II. cümlede ise hareketsizliğin eklem ağrısına yol açtığı söyleniyor; bu tıbbi bir gerçek olduğu için asla bir ön yargı değildir, aksine yine bir tespittir. III. cümlede \"edinirsek\" kelimesiyle sağlık, alışkanlık kazanma şartına yani bir koşul bağlandığı görülüyor. IV. cümlede ise \"hâline getirmeliyiz\" ifadesiyle bize net bir tavsiye veriliyor ⚡. Çoğu kişi II. cümleyi genel bir ifade olduğu için ön yargıyla karıştırabilir ama burada kişisel bir peşin hüküm yok, sadece sebep-sonuç ilişkisi var. Bu yüzden cevap B şıkkıdır.",
+    "concepts": [
+      {
+        "term": "tespit",
+        "definition": "Bir durumun, gerçeğin veya özelliğin gözlem yoluyla belirlenip ortaya konmasıdır.",
+        "example": "Havanın bugün çok soğuk olduğu bir tespittir.",
+        "emoji": "🔍"
+      },
+      {
+        "term": "ön yargı",
+        "definition": "Bir kimse veya bir şey hakkında, önceden edinilmiş, genellikle olumsuz olan peşin karar.",
+        "example": "Bu kitap kesinlikle sıkıcıdır demek bir ön yargıdır.",
+        "emoji": "🚫"
+      },
+      {
+        "term": "koşul",
+        "definition": "Bir olayın gerçekleşmesinin başka bir durumun gerçekleşmesine bağlı olmasıdır.",
+        "example": "Düzenli çalışırsan başarılı olursun cümlesindeki başarı, çalışmaya bağlıdır.",
+        "emoji": "🔗"
+      },
+      {
+        "term": "tavsiye",
+        "definition": "Birine yapması veya yapmaması konusunda verilen uygun görülen öneridir.",
+        "example": "Kitap okuma alışkanlığı edinmelisin sözü bir tavsiyedir.",
+        "emoji": "💡"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11235,
+    "subject": "TDE",
+    "title": "Karşılıklı Konuşmalar: Diyalog Tekniği",
+    "explanation": "Hikâyelerde iki veya daha fazla kişinin karşı karşıya gelip konuşmasına biz **diyalog** diyoruz. İşin sırrı şu: Eğer karakterler birbirine cevap veriyor ve bunları dışarıdan duyabileceğimiz şekilde seslendiriyorlarsa orada gerçek bir sohbet vardır. Özellikle satır başlarında gördüğümüz o uzun çizgiler (—), bize \"dikkat, şu an bir karakter ağzını açtı ve konuşuyor\" mesajını veren en net ipucudur 🎯.\n\nMetne baktığımızda önce mühendisin \"Oğlum sen kimsin?\" diye sorduğunu, hemen altında ise delikanlının buna cevap verdiğini görüyoruz. Yani karşımızda tipik bir soru-cevap trafiği var. Satır başlarındaki çizgileri takip ederek karakterlerin birbirleriyle gerçekten konuştuğunu kolayca anlarız; bu yüzden doğru cevap A şıkkıdır. Çoğu kişi karakterin durumuyla ilgilenip bunu **iç monolog** sanarak yanılabilir ancak burada olay zihinde değil, yüksek sesle dışarıda gerçekleşiyor ⚡.",
+    "concepts": [
+      {
+        "term": "diyalog",
+        "definition": "En az iki kişi arasında geçen, karşılıklı ve sesli konuşma.",
+        "example": "Ali'nin 'Nereye gidiyorsun?' sorusuna Veli'nin 'Okula' cevabını vermesi.",
+        "emoji": "💬"
+      },
+      {
+        "term": "iç monolog",
+        "definition": "Karakterin dışarıya ses çıkarmadan, sadece kendi zihninden geçirdiği konuşmalar.",
+        "example": "'Acaba beni seviyor mu?' diye kendi kendine düşünmesi.",
+        "emoji": "🧠"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 11236,
+    "subject": "TDE",
+    "title": "Fecr-i Ati'yi Şipşak Tanıma Rehberi",
+    "explanation": "Edebiyat sorularında her dönemin kendine has 'şifre kelimeleri' vardır. Eğer karşınıza 'beyanname' (yani grubun hedeflerini yazdığı resmi duyuru) ifadesi çıkıyorsa ve yanında 'Sanat şahsi ve muhteremdir' (Sanat kişiseldir ve saygı duyulmalıdır) sloganı varsa, orada başka kimseyi aramayın; cevap kesinlikle Fecriati edebiyatıdır 📜. Buradaki kilit nokta, sanatın toplumun sorunlarıyla uğraşmaması, sadece sanatçının ruh dünyasını anlatmasıdır.\n\nŞimdi sorumuza bakalım: Metinde hem 1909 yılından bahsedilmiş hem de meşhur 'Sanat şahsi ve muhteremdir' sözü verilmiş. Ayrıca beyanname yayınladıkları ve Ahmet Haşim'in başında olduğu özellikle vurgulanmış 🎨. Birçok kişi bu grubu, benzer şekilde bireyselliği savunan Servet-i Fünun ile karıştırıp yanılır ama beyanname detayı bizi doğrudan D şıkkına götürür. Ortak bir yol bulamayıp kısa sürede dağılmaları da bu topluluğun karakteristik özelliğidir 🎯.",
+    "concepts": [
+      {
+        "term": "beyanname",
+        "definition": "Bir topluluğun dünya görüşünü, sanat anlayışını ve hedeflerini halka ilan ettiği yazı.",
+        "example": "Fecr-i Ati üyelerinin 1909'da yayınladığı bildiri bir beyannamedir.",
+        "emoji": "📢"
+      },
+      {
+        "term": "Sanat şahsi ve muhteremdir",
+        "definition": "Sanatın toplum için değil, sanatçının kendi duyguları için yapılması ve buna saygı duyulması gerektiğini savunan ilke.",
+        "example": "Toplumun dertlerini anlatmak yerine sadece kendi hüzünlerini yazan bir şair bu ilkeyi benimsemiştir.",
+        "emoji": "✨"
+      },
+      {
+        "term": "Fecriati edebiyatı",
+        "definition": "Servet-i Fünun'un izinden giden ancak daha bireysel ve kapalı bir anlatım tercih eden kısa ömürlü edebi grup.",
+        "example": "Ahmet Haşim'in şiirlerinde gördüğümüz melankoli bu dönemin tipik örneğidir.",
+        "emoji": "🌙"
       }
     ],
     "model": "gemma-4-31b",
