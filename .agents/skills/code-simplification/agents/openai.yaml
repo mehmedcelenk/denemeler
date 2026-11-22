@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Simplification"
+  short_description: "Project-specific code simplification"
+  default_prompt: "Use $code-simplification for the requested work in this repository."

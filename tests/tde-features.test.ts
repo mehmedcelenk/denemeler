@@ -50,7 +50,6 @@ test('renderCardStem TDE sorusunda soru_xray varsa öncelikle onu kullanır', as
 
 test('renderCardHeader: ÖZ ve SF kaldırılmıştır, ses olayları Lucide ikonuyla varsayılan açık ve globaldir', async () => {
   const { renderCardHeader, renderQuestionCardHtml } = await import('../src/features/booklet/question-card.ts');
-  const { svgXraySoundOn, svgXraySoundOff } = await import('../src/features/booklet/features-bar.ts');
   const { state, store } = await import('../src/app/state.ts');
   state.isFeaturesExpanded = false;
   state.expandedQuestionIds.clear();
@@ -66,20 +65,19 @@ test('renderCardHeader: ÖZ ve SF kaldırılmıştır, ses olayları Lucide ikon
   };
 
   const headerHtml = renderCardHeader(dummyQ, 1, false);
+  const onCardHtml = renderQuestionCardHtml(dummyQ, 1);
   assert.ok(!headerHtml.includes('q-features-drawer is-expanded'), 'Çekmece varsayılan olarak kapalı olmalı');
   assert.ok(headerHtml.includes('class="q-features-drawer"'), 'Kapalı q-features-drawer sınıfı bulunmalı');
   assert.ok(headerHtml.includes('features-toggle-icon">›<'), 'Açma oku › olmalı');
   assert.ok(!headerHtml.includes('btn-xray-syntax'), 'ÖZ butonu kullanıcıya kapalı olmalı');
   assert.ok(!headerHtml.includes('btn-xray-pos'), 'SF butonu kullanıcıya kapalı olmalı');
-  assert.ok(headerHtml.includes('btn-xray-sound active'), 'Ses olayları butonu varsayılan aktif olmalı');
-  assert.ok(headerHtml.includes(svgXraySoundOn), 'Açık durumda Lucide ses dalgası ikonu olmalı');
+  assert.ok(!headerHtml.includes('btn-copy-question'), 'Kopyalama butonu özellik çubuğundan kaldırılmış olmalı');
+  assert.ok(!headerHtml.includes('btn-xray-sound'), 'Ses olayları butonu kart başlığından kaldırılmış olmalı (genel ayar)');
+  assert.ok(!onCardHtml.includes('hide-sound'), 'Açık durumda kart hide-sound sınıfı içermemeli');
 
-  // Kapatıldığında tüm sorularda global olarak kapanır ve ikon değişir
+  // Kapatıldığında tüm sorularda global olarak kapanır
   store.toggleXraySound();
-  const offHeaderHtml = renderCardHeader(dummyQ, 1, false);
   const offCardHtml = renderQuestionCardHtml(dummyQ, 1);
-  assert.ok(!offHeaderHtml.includes('btn-xray-sound active'), 'Kapalı durumda active sınıfı kalkmalı');
-  assert.ok(offHeaderHtml.includes(svgXraySoundOff), 'Kapalı durumda üstü çizili Lucide ikonu olmalı');
   assert.ok(offCardHtml.includes('hide-sound'), 'Kart hide-sound sınıfı almalı');
   store.setXraySoundEnabled(true);
 });

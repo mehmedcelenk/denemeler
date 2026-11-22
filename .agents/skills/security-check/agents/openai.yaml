@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Check"
+  short_description: "Project-specific security check"
+  default_prompt: "Use $security-check for the requested work in this repository."

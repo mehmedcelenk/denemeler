@@ -209,7 +209,6 @@ test('auth-hardening: token süresi dolduğunda çözülen sorular asla silinmez
     return new Response(JSON.stringify({}), { status: 200 });
   };
 
-  store.setUserMarkedChoices({ 1: 'A', 2: 'B', 3: 'C' });
   const expiredSession = {
     accessToken: 'expired-token',
     refreshToken: 'dead-refresh',
@@ -217,11 +216,14 @@ test('auth-hardening: token süresi dolduğunda çözülen sorular asla silinmez
     user: { id: 'u1', email: 'test@mail.com', username: 'testuser' },
   };
   saveActiveSession(expiredSession);
+  store.setUserMarkedChoices({ 1: 'A', 2: 'B', 3: 'C' });
 
   try {
     const session = await ensureFreshSession();
     assert.equal(session, null);
     assert.equal(getActiveSession(), null, 'Oturum anahtarı temizlenmeli');
+    assert.deepEqual(state.userMarkedChoices, {}, 'Kapalı oturum hesap cevaplarını göstermez');
+    saveActiveSession({ ...expiredSession, expiresAt: Math.floor(Date.now() / 1000) + 3600 });
     assert.equal(state.userMarkedChoices[1], 'A', 'Kullanıcının 1. sorusu SİLİNMEMELİ');
     assert.equal(state.userMarkedChoices[2], 'B', 'Kullanıcının 2. sorusu SİLİNMEMELİ');
     assert.equal(state.userMarkedChoices[3], 'C', 'Kullanıcının 3. sorusu SİLİNMEMELİ');

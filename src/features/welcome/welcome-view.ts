@@ -1,22 +1,26 @@
+import { canStudyLocally } from './study-session.ts';
 import type { AppState } from '../../app/state-types.ts';
-import { updateAuthUiState, isAuthenticated } from './auth-modal.ts';
+import type { SubjectId } from '../../data/question.ts';
+import { updateAuthUiState } from './auth-modal.ts';
+import { renderArenaReport } from './arena-report.ts';
 
 export type ProgramMode = AppState['programMode'];
+
+export const DEFAULT_SUBJECTS: Readonly<Record<ProgramMode, SubjectId>> = {
+  AOIHL: 'TDE',
+  AOO: 'AOO_TURKCE',
+  AOF: 'AOF_HADIS',
+  ILMIHAL: 'ILM_TEMIZLIK',
+  GIRISIMCILIK: 'GIR_TEMEL',
+  TYT: 'TYT_TURKCE',
+  AYT: 'AYT_MAT',
+  YDT: 'YDT_ING',
+};
 
 interface WelcomeViewOptions {
   readonly programMode: ProgramMode;
   readonly canResume: boolean;
 }
-
-const studyIcon = `
-  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
-`;
-const resumeIcon = `
-  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-`;
-const usersIcon = `
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-`;
 
 function getPortal(): HTMLElement | null {
   return document.getElementById('welcomePortal');
@@ -30,12 +34,12 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
     <div class="welcome-card">
       <header class="welcome-header">
         <p class="welcome-bismillah" lang="ar" dir="rtl">بسم الله</p>
-        <h1>CENKS</h1>
+        <h1>anlatansorular.com</h1>
       </header>
 
       <!-- GİRİŞ / KAYIT BÖLÜMÜ (Giriş yapılmamışken direkt ekranda görünür) -->
       <section class="welcome-auth-section" id="welcomeAuthSection" aria-label="Kullanıcı Girişi">
-        <p class="welcome-auth-lead" id="authNoticeText">Derslere ve sorulara erişmek için giriş yapın.</p>
+        <p class="welcome-auth-lead" id="authNoticeText">Hesabınla giriş yap veya misafir olarak çalış.</p>
         <div class="welcome-auth-tabs" role="tablist">
           <button type="button" class="welcome-auth-tab is-active" id="btnTabSignin" data-action="welcome-set-auth-signin" role="tab" aria-selected="true">Giriş Yap</button>
           <button type="button" class="welcome-auth-tab" id="btnTabSignup" data-action="welcome-set-auth-signup" role="tab" aria-selected="false">Kayıt Ol</button>
@@ -48,50 +52,13 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
           <p class="welcome-name-error" id="authDialogError" role="alert" aria-live="polite"></p>
           <button type="button" class="welcome-name-confirm" id="btnAuthSubmit" data-action="welcome-submit-auth">Giriş Yap →</button>
         </div>
+        <button type="button" class="welcome-action-row" data-action="welcome-enter-guest">Misafir Olarak Devam Et</button>
       </section>
 
-      <!-- ANA SEÇİM BÖLÜMÜ (Sadece giriş yapılmışken görünür) -->
-      <section class="welcome-main-section" id="welcomeMainSection" aria-label="Ders ve Mod Seçimi" hidden>
-        <div class="welcome-program-groups">
-          <div class="welcome-program-toggle" role="group" aria-label="Sınav programları">
-            <button type="button" data-action="welcome-set-program" data-program="AOIHL" aria-pressed="false">AOİHL</button>
-            <button type="button" data-action="welcome-set-program" data-program="AOO" aria-pressed="false">AÖO</button>
-            <button type="button" data-action="welcome-set-program" data-program="AOF" aria-pressed="false">AÖF</button>
-            <button type="button" data-action="welcome-set-program" data-program="TYT" aria-pressed="false">TYT</button>
-            <button type="button" data-action="welcome-set-program" data-program="AYT" aria-pressed="false">AYT</button>
-            <button type="button" data-action="welcome-set-program" data-program="YDT" aria-pressed="false">YDT</button>
-          </div>
-          <div class="welcome-program-toggle welcome-program-toggle--secondary" role="group" aria-label="Tematik alanlar">
-            <button type="button" data-action="welcome-set-program" data-program="ILMIHAL" aria-pressed="false">İlmihal</button>
-            <button type="button" data-action="welcome-set-program" data-program="GIRISIMCILIK" aria-pressed="false">Girişimcilik</button>
-          </div>
-        </div>
-
-        <div class="welcome-actions">
-          <button type="button" class="welcome-action-row welcome-action-resume" data-action="welcome-resume" id="btnWelcomeResume" style="display: ${options.canResume ? 'flex' : 'none'};">
-            <span class="welcome-action-icon">${resumeIcon}</span>
-            <span class="welcome-action-label">Son Çalıştığına Dön</span>
-            <span class="welcome-action-arrow" aria-hidden="true">→</span>
-          </button>
-          <button type="button" class="welcome-action-row" data-action="welcome-start-single">
-            <span class="welcome-action-icon">${studyIcon}</span>
-            <span class="welcome-action-label">Soru Çöz</span>
-            <span class="welcome-action-arrow" aria-hidden="true">→</span>
-          </button>
-          <div class="welcome-action-row welcome-multiplayer-row">
-            <span class="welcome-action-icon">${usersIcon}</span>
-            <label class="welcome-multiplayer-label" for="welcomeRoomId">Oda adı:</label>
-            <input id="welcomeRoomId" type="text" maxlength="24" autocomplete="off" placeholder="Oda adı" aria-label="Oda adı">
-            <button type="button" class="welcome-room-submit" data-action="welcome-join-room" aria-label="Odaya gir">Gir</button>
-          </div>
-          <div class="welcome-auth-container">
-            <div class="welcome-auth-btn is-authenticated" id="welcomeAuthTrigger">
-              <span class="auth-status-dot is-online" aria-hidden="true"></span>
-              <span class="auth-status-name" id="authUserNameDisplay">Kullanıcı</span>
-              <span class="auth-status-action" data-action="welcome-signout" title="Çıkış Yap">Çıkış</span>
-            </div>
-          </div>
-        </div>
+      <!-- Bireysel erişim: gerçek hesap veya yerel misafir -->
+      <section class="welcome-main-section" id="welcomeMainSection" aria-label="Hızlı Başlat" hidden>
+        <div class="welcome-arena-report" id="welcomeArenaReport"></div>
+        <div class="welcome-arena-subjects" id="welcomeArenaSubjects"></div>
       </section>
 
       <p class="welcome-form-error" id="welcomeFormError" role="alert" aria-live="polite"></p>
@@ -102,6 +69,33 @@ export function renderWelcomePortal(options: WelcomeViewOptions): void {
   setWelcomeProgram(options.programMode);
   updateResumeAction(options.canResume);
   updateAuthUiState();
+  renderArenaReport();
+}
+
+export function closeProfileMenu(): void {
+  document.getElementById('consoleMenuPopup')?.classList.remove('open');
+  document.getElementById('btnMasterConsole')?.setAttribute('aria-expanded', 'false');
+}
+
+export function openTeamInput(): void {
+  closeProfileMenu();
+  const modal = document.getElementById('teamQuickModal');
+  if (modal) modal.hidden = false;
+  showWelcomeError();
+  focusRoomInput();
+}
+
+export function resetTeamInput(force = false): void {
+  const modal = document.getElementById('teamQuickModal');
+  if (modal && (force || !modal.hidden)) {
+    modal.hidden = true;
+  }
+  const err = document.getElementById('teamQuickError');
+  if (err) err.textContent = '';
+}
+
+export function updateWelcomeActiveRoom(roomId: string | null, _roomName: string, _participantCount: number): void {
+  if (roomId) resetTeamInput(true);
 }
 
 export function showWelcomePortal(): void {
@@ -111,11 +105,15 @@ export function showWelcomePortal(): void {
   portal.setAttribute('aria-hidden', 'false');
   document.body.classList.add('welcome-active');
   document.getElementById('consoleMenuPopup')?.classList.remove('open');
+  document.getElementById('btnMasterConsole')?.setAttribute('aria-expanded', 'false');
+  closeProfileMenu();
+  resetTeamInput();
+  renderArenaReport();
   window.scrollTo({ top: 0, behavior: 'auto' });
 }
 
 export function hideWelcomePortal(): void {
-  if (!isAuthenticated()) {
+  if (!canStudyLocally()) {
     showWelcomePortal();
     return;
   }
@@ -125,10 +123,12 @@ export function hideWelcomePortal(): void {
   portal.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('welcome-active');
   document.getElementById('consoleMenuPopup')?.classList.remove('open');
+  document.getElementById('btnMasterConsole')?.setAttribute('aria-expanded', 'false');
+  closeProfileMenu();
 }
 
 export function setWelcomeProgram(mode: ProgramMode): void {
-  document.querySelectorAll<HTMLButtonElement>('#welcomePortal [data-program]').forEach(button => {
+  document.querySelectorAll<HTMLButtonElement>('[data-program]').forEach(button => {
     const isActive = button.dataset.program === mode;
     button.classList.toggle('active', isActive);
     button.setAttribute('aria-pressed', String(isActive));
@@ -153,16 +153,15 @@ export function setWelcomeBusy(isBusy: boolean): void {
 export function showWelcomeError(message = ''): void {
   const error = document.getElementById('welcomeFormError');
   if (error) error.textContent = message;
+  const teamError = document.getElementById('teamQuickError');
+  if (teamError) teamError.textContent = message;
 }
 
 export function updateResumeAction(canResume: boolean): void {
   const consoleBtn = document.getElementById('btnResumeLastSession') as HTMLButtonElement | null;
   if (consoleBtn) {
+    consoleBtn.hidden = !canResume;
     consoleBtn.title = canResume ? 'Son çalıştığın soruya dön' : 'Yeni derse başla';
-  }
-  const welcomeBtn = document.getElementById('btnWelcomeResume') as HTMLButtonElement | null;
-  if (welcomeBtn) {
-    welcomeBtn.style.display = canResume ? 'flex' : 'none';
   }
 }
 

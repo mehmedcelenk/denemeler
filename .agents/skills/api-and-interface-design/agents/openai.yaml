@@ -1,0 +1,4 @@
+interface:
+  display_name: "Api And Interface Design"
+  short_description: "Project-specific api and interface design"
+  default_prompt: "Use $api-and-interface-design for the requested work in this repository."

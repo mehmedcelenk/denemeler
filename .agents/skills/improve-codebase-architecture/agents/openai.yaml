@@ -1,0 +1,4 @@
+interface:
+  display_name: "Improve Codebase Architecture"
+  short_description: "Project-specific improve codebase architecture"
+  default_prompt: "Use $improve-codebase-architecture for the requested work in this repository."

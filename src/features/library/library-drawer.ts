@@ -1,14 +1,17 @@
 import { state, store, notifyStateChange, type LibraryTab } from '../../app/state.ts';
+import { isCurrentStudy } from '../../app/study-context.ts';
 import { loadSubjectData } from '../../data/questions.js';
 import { SUBJECTS } from '../../data/subjects.js';
 import { toggleConsoleMenu } from '../appearance/preferences.ts';
 
 export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void> {
+  if (!isCurrentStudy()) return;
   const popup = document.getElementById('consoleMenuPopup');
   if (popup && popup.classList.contains('active')) {
     toggleConsoleMenu();
   }
 
+  const generation = state.studyGeneration;
   store.setLibraryMode(true, tab);
 
   notifyStateChange('filter:updated');
@@ -40,9 +43,11 @@ export async function openLibraryView(tab: LibraryTab = 'rematch'): Promise<void
     try {
       const questions = await loadSubjectData(subject.id);
       store.appendQuestions(questions);
+      if (!isCurrentStudy(generation)) return;
     } catch {}
   }
 
+  if (!isCurrentStudy(generation)) return;
   const selectedQuestions = state.allData.filter(q => targetIds.has(q.id));
   store.setBookletQuestions(selectedQuestions);
 

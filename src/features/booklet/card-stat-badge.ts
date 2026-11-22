@@ -21,9 +21,9 @@ export function renderQuestionStatBadge(q: Question): string {
 
   if (instMetrics.total > 0) {
     if (instMetrics.wrong > 0) {
-      html += `<span class="q-stat-badge q-stat-badge-inst has-error" title="Kurum İstatistiği: ${instMetrics.wrong} Yanlış, ${instMetrics.correct} Doğru (%${instMetrics.wrongRate} Hata)">🔥 Kurum: 🔴 ${instMetrics.wrong}Y · 🟢 ${instMetrics.correct}D (%${instMetrics.wrongRate})</span>`;
+      html += `<span class="q-stat-badge q-stat-badge-inst has-error" title="Kurs İstatistiği: ${instMetrics.wrong} Yanlış, ${instMetrics.correct} Doğru (%${instMetrics.wrongRate} Hata)">🔥 Kurs: 🔴 ${instMetrics.wrong}Y · 🟢 ${instMetrics.correct}D (%${instMetrics.wrongRate})</span>`;
     } else {
-      html += `<span class="q-stat-badge q-stat-badge-inst all-correct" title="Kurum İstatistiği: ${instMetrics.correct} Doğru (0 Hata)">🔥 Kurum: 🟢 ${instMetrics.correct}D</span>`;
+      html += `<span class="q-stat-badge q-stat-badge-inst all-correct" title="Kurs İstatistiği: ${instMetrics.correct} Doğru (0 Hata)">🔥 Kurs: 🟢 ${instMetrics.correct}D</span>`;
     }
   }
 

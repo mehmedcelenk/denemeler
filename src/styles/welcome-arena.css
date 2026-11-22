@@ -1,0 +1,213 @@
+.welcome-arena-report {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.arena-report {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.arena-section-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--paper-text-muted);
+}
+
+/* Genel Başarı — Çerçevesiz Editoryal Başlık */
+.arena-total {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.arena-total-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.arena-total-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.arena-strip.is-setup {
+  border-left-color: var(--brand-accent);
+}
+
+.arena-course-credit {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.arena-other-note {
+  margin: 6px 0 0;
+  font-size: 11.5px;
+  color: var(--paper-text-muted);
+}
+
+.arena-total-sub {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.arena-total-pct {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--paper-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.arena-total-pct.is-locked {
+  color: var(--paper-text-muted);
+}
+
+.arena-total-line {
+  width: 100%;
+  height: 3px;
+  background: color-mix(in srgb, var(--paper-border) 65%, transparent);
+  overflow: hidden;
+}
+
+.arena-total-line-fill {
+  display: block;
+  height: 100%;
+  background: var(--brand-accent);
+  transition: width 0.25s ease;
+}
+
+.arena-total-line.is-calibrating .arena-total-line-fill {
+  background: var(--paper-text-muted);
+  opacity: 0.55;
+}
+
+/* Rövanş Meydanı — Tek Odak Şeridi (Sol Çizgi Vurgulu, Kutusuz) */
+.arena-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2px 0 2px 14px;
+  border-left: 3px solid var(--paper-border);
+}
+
+.arena-strip.is-active {
+  border-left-color: var(--danger-accent);
+}
+
+.arena-strip.is-clean {
+  border-left-color: var(--success-accent);
+}
+
+.arena-strip-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.arena-strip-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--paper-text);
+}
+
+.arena-strip-count {
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--paper-text-muted);
+}
+
+.arena-strip.is-active .arena-strip-count {
+  color: var(--danger-accent);
+}
+
+.arena-strip.is-clean .arena-strip-count {
+  color: var(--success-accent);
+}
+
+.arena-strip-desc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--paper-text-muted);
+}
+
+.arena-strip-desc strong {
+  color: var(--paper-text);
+  font-weight: 700;
+}
+
+.arena-track {
+  width: 100%;
+  height: 4px;
+  background: color-mix(in srgb, var(--danger-accent) 16%, transparent);
+  overflow: hidden;
+}
+
+.arena-track-fill {
+  display: block;
+  height: 100%;
+  background: var(--danger-accent);
+}
+
+.arena-cta-btn {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--danger-accent);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.14s ease, opacity 0.14s ease;
+}
+
+.arena-cta-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.arena-cta-btn:focus-visible {
+  outline: 2px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+.console-nav-room-panel,
+body.in-room-session .console-nav-team-trigger {
+  display: none !important;
+}
+
+body.in-room-session .console-nav-room-panel {
+  display: flex !important;
+}
+
+.console-nav-action[hidden] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arena-total-line-fill,
+  .arena-cta-btn {
+    transition: none;
+  }
+}

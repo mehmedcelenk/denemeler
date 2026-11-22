@@ -272,24 +272,47 @@ def main():
             'courseCount': len({q['ders'] for q in subject_questions})
         }
 
-    # data/subjects içindeki diğer mevcut dersleri de (YKS vb.) manifeste dahil et
+    course_catalog = []
     for f in sorted(data_dir.glob("*.json")):
         sid = f.stem
+        try:
+            qs = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if not isinstance(qs, list) or not qs:
+            continue
         if sid not in subject_manifest:
-            try:
-                qs = json.loads(f.read_text(encoding="utf-8"))
-                if isinstance(qs, list) and qs:
-                    subject_manifest[sid] = {
-                        'questionCount': len(qs),
-                        'courseCount': len({q['ders'] for q in qs if isinstance(q, dict) and 'ders' in q}) or 1
-                    }
-            except Exception:
-                pass
+            subject_manifest[sid] = {
+                'questionCount': len(qs),
+                'courseCount': len({q['ders'] for q in qs if isinstance(q, dict) and 'ders' in q}) or 1
+            }
+        by_ders = {}
+        for q in qs:
+            if not isinstance(q, dict) or 'ders' not in q:
+                continue
+            d = q['ders']
+            if d not in by_ders:
+                by_ders[d] = {'count': 0, 'kredi': q.get('kredi') or 2}
+            by_ders[d]['count'] += 1
+        for ders, meta in sorted(by_ders.items(), key=lambda item: (int(re.search(r'[–-]\s*(\d+)\s*$', item[0]).group(1)) if re.search(r'[–-]\s*(\d+)\s*$', item[0]) else 0, item[0])):
+            m = re.search(r'[–-]\s*(\d+)\s*$', ders)
+            short = re.sub(r'^AÖO\s+', '', ders)
+            for src_t, dst_t in [('TÜRK DİLİ VE EDEBİYATI', 'TDE'), ('T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK', 'İNK'), ('SAĞLIK BİLGİSİ VE TRAFİK KÜLTÜRÜ', 'SAĞ'), ('DİN KÜLTÜRÜ VE AHLAK BİLGİSİ', 'DİN'), ('MATEMATİK', 'MAT'), ('COĞRAFYA', 'COĞ'), ('İNGİLİZCE', 'İNG'), ('BİYOLOJİ', 'BİY'), ('FELSEFE', 'FEL'), ('TARİH', 'TAR'), ('KİMYA', 'KİM'), ('FİZİK', 'FİZ')]:
+                short = short.replace(src_t, dst_t)
+            course_catalog.append({
+                'subjectId': sid,
+                'ders': ders,
+                'shortName': re.sub(r'\s*[–-]\s*', '-', short).strip(),
+                'termOrder': int(m.group(1)) if m else None,
+                'kredi': int(meta['kredi']),
+                'questionCount': meta['count'],
+            })
 
     generated_dir = Path('src/data/generated')
     generated_dir.mkdir(parents=True, exist_ok=True)
     for name, value in {
         'subjectManifest': subject_manifest,
+        'courseCatalog': course_catalog,
         'vocab_dict': MEB_VOCAB_DICT,
     }.items():
         (generated_dir / f'{name}.json').write_text(

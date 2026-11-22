@@ -9,11 +9,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 90,
-    "tanim": "**1453'te İstanbul'u fethederek Orta Çağ'ı kapatıp Yeni Çağ'ı açan** ve Karadeniz'i adeta bir **Türk gölüne** çeviren dahi padişah; tıpkı bir satranç ustası gibi hem karada hem denizde hamle üstüne hamle yapmıştır.\n💡 Sınıf Şifresi: **'Fatih' = fetih + çağ kapatan**; Trabzon, Sinop, Kırım, Bosna, Mora → **Karadeniz Türk gölü**.",
+    "tanim": "**1453'te İstanbul'u fethederek Orta Çağ'ı kapatıp Yeni Çağ'ı açan** ve Karadeniz'i adeta bir **Türk gölüne** çeviren dahi padişah; tıpkı bir satranç ustası gibi hem karada hem denizde hamle üstüne hamle yapmıştır.\n💡 Hile: Sınıf Şifresi: **'Fatih' = fetih + çağ kapatan**; Trabzon, Sinop, Kırım, Bosna, Mora → **Karadeniz Türk gölü**.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Fatih$|^II\\\\\\\\. Mehmet$|^II\\\\\\\\. Mehmed$|\\\\\\\\bfatih sultan mehmet\\\\\\\\b|\\\\\\\\bfatih sultan mehmed\\\\\\\\b|\\\\\\\\bfatih ünvanı\\\\\\\\b|\\\\\\\\bfatih unvanı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bFatih\\b|\\bII\\. Mehmet\\b|\\bII\\. Mehmed\\b|\\bfatih sultan mehmet\\b|\\bfatih sultan mehmed\\b|\\bfatih ünvanı\\b|\\bfatih unvanı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Fatih$|^II\\. Mehmet$|^II\\. Mehmed$"
   },
   {
     "id": "tar4_istanbulun_fethi_sonuclari",
@@ -25,10 +26,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 92,
-    "tanim": "Bizans yıkıldı, **şahi toplar feodaliteyi (derebeyliği) Avrupa'da çatlattı**, İpek ve Boğazlar ticareti Osmanlı'ya geçti; İtalya'ya kaçan bilginler ise **Rönesans'ı ateşleyen kıvılcım** oldu.\n💡 Sınav Şifresi: **'Top → feodalite çöküşü'**, **'bilgin kaçışı → Rönesans'**, **'Boğazlar + İpek → Osmanlı'** üçlüsünü ezberle.",
+    "tanim": "Bizans yıkıldı, **şahi toplar feodaliteyi (derebeyliği) Avrupa'da çatlattı**, İpek ve Boğazlar ticareti Osmanlı'ya geçti; İtalya'ya kaçan bilginler ise **Rönesans'ı ateşleyen kıvılcım** oldu.\n💡 Hile: **'Top → feodalite çöküşü'**, **'bilgin kaçışı → Rönesans'**, **'Boğazlar + İpek → Osmanlı'** üçlüsünü ezberle.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "istanbul’un fethi|istanbul'un fethi|büyük toplar ile en güçlü surların",
+    "pattern": "\\bistanbul’un fethi\\b|\\bistanbul'un fethi\\b|\\bbüyük toplar ile en güçlü surların\\b",
     "aliases": []
   },
   {
@@ -41,10 +42,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 102,
-    "tanim": "Yavuz'un **Dulkadiroğulları Beyliği'ne son verdiği** savaş; böylece Anadolu Türk siyasi birliği **kesin ve tam olarak** tamamlandı, tıpkı bir yapbozun son parçasının yerine oturması gibi.\n💡 Sınav Şifresi: **'Turnadağ = son beylik = Anadolu birliği TAMAM'**; 'kesin' kelimesi görürsen Turnadağ.",
+    "tanim": "Yavuz'un **Dulkadiroğulları Beyliği'ne son verdiği** savaş; böylece Anadolu Türk siyasi birliği **kesin ve tam olarak** tamamlandı, tıpkı bir yapbozun son parçasının yerine oturması gibi.\n💡 Hile: **'Turnadağ = son beylik = Anadolu birliği TAMAM'**; 'kesin' kelimesi görürsen Turnadağ.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "turnadağ savaşı|turnadağ|dulkadiroğulları|anadolu türk siyasi birliğinin kesin",
+    "pattern": "\\bturnadağ savaşı\\b|\\bturnadağ\\b|\\bdulkadiroğulları\\b|\\banadolu türk siyasi birliğinin kesin\\b",
     "aliases": []
   },
   {
@@ -57,10 +58,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 104,
-    "tanim": "Yavuz'un Mısır Seferi'nde **Memlûkleri yıktığı** iki zafer (1516-1517); Suriye, Filistin, Mısır, Hicaz Osmanlı'ya katıldı, **halifelik ve Kutsal Emanetler** İstanbul'a taşındı, Baharat Yolu denetim altına alındı.\n💡 Sınav Şifresi: **'Mercidabık = Suriye kapısı', 'Ridaniye = Mısır + halifelik'**; halifelik sorusunun cevabı hep Yavuz-Mısır.",
+    "tanim": "Yavuz'un Mısır Seferi'nde **Memlûkleri yıktığı** iki zafer (1516-1517); Suriye, Filistin, Mısır, Hicaz Osmanlı'ya katıldı, **halifelik ve Kutsal Emanetler** İstanbul'a taşındı, Baharat Yolu denetim altına alındı.\n💡 Hile: **'Mercidabık = Suriye kapısı', 'Ridaniye = Mısır + halifelik'**; halifelik sorusunun cevabı hep Yavuz-Mısır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "mercidabık|ridaniye|memlûk devleti|suriye, filistin, mısır ve hicaz",
+    "pattern": "\\bmercidabık\\b|\\bridaniye\\b|\\bmemlûk devleti\\b|\\bsuriye, filistin, mısır ve hicaz\\b",
     "aliases": []
   },
   {
@@ -73,10 +74,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 110,
-    "tanim": "**Barbaros Hayreddin Paşa'nın** Andrea Doria komutasındaki Haçlı donanmasını bozguna uğrattığı (1538) ve Akdeniz'i **kesin olarak Türk gölü** yapan büyük zafer; bugün hâlâ **Donanma Günü** olarak kutlanır.\n💡 Sınav Şifresi: **'Preveze = Barbaros = Akdeniz Türk gölü'**; 'kesin' + 'Barbaros' kelimeleri bir aradaysa Preveze.",
+    "tanim": "**Barbaros Hayreddin Paşa'nın** Andrea Doria komutasındaki Haçlı donanmasını bozguna uğrattığı (1538) ve Akdeniz'i **kesin olarak Türk gölü** yapan büyük zafer; bugün hâlâ **Donanma Günü** olarak kutlanır.\n💡 Hile: **'Preveze = Barbaros = Akdeniz Türk gölü'**; 'kesin' + 'Barbaros' kelimeleri bir aradaysa Preveze.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "preveze deniz savaşı|preveze deniz zaferi|preveze|barbaros hayreddin",
+    "pattern": "\\bpreveze deniz savaşı\\b|\\bpreveze deniz zaferi\\b|\\bpreveze\\b|\\bbarbaros hayreddin\\b",
     "aliases": []
   },
   {
@@ -89,10 +90,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 114,
-    "tanim": "Kıbrıs'ın fethine misilleme olarak Haçlıların **Osmanlı donanmasını İnebahtı Körfezi'nde yaktığı** ağır mağlubiyet (1571); yalnızca **Kılıç Ali Paşa** filosunu kurtarmayı başarmıştır.\n💡 Sınav Şifresi: **'İnebahtı = MAĞLUBİYET + Kılıç Ali Paşa kurtardı'**; 'donanma yakıldı' ifadesi görürsen İnebahtı.",
+    "tanim": "Kıbrıs'ın fethine misilleme olarak Haçlıların **Osmanlı donanmasını İnebahtı Körfezi'nde yaktığı** ağır mağlubiyet (1571); yalnızca **Kılıç Ali Paşa** filosunu kurtarmayı başarmıştır.\n💡 Hile: **'İnebahtı = MAĞLUBİYET + Kılıç Ali Paşa kurtardı'**; 'donanma yakıldı' ifadesi görürsen İnebahtı.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "inebahtı deniz muharebesi|inebahtı deniz savaşı|inebahtı",
+    "pattern": "\\binebahtı deniz muharebesi\\b|\\binebahtı deniz savaşı\\b|\\binebahtı\\b",
     "aliases": []
   },
   {
@@ -105,10 +106,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 120,
-    "tanim": "Macellan Filipinler'de ölünce seyahati tamamlayıp **Dünya'nın yuvarlaklığını fiilen kanıtlayan** denizci **Del Kano**'dur; tıpkı bir bayrak yarışında son koşucunun ipi göğüslemesi gibi.\n💡 Sınav Şifresi: **'Macellan başladı, Del Kano bitirdi'**; 'Dünya yuvarlak' sorusunun cevabı Del Kano.",
+    "tanim": "Macellan Filipinler'de ölünce seyahati tamamlayıp **Dünya'nın yuvarlaklığını fiilen kanıtlayan** denizci **Del Kano**'dur; tıpkı bir bayrak yarışında son koşucunun ipi göğüslemesi gibi.\n💡 Hile: **'Macellan başladı, Del Kano bitirdi'**; 'Dünya yuvarlak' sorusunun cevabı Del Kano.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "del kano|macellan ile birlikte|macellan|del cano",
+    "pattern": "\\bdel kano\\b|\\bmacellan ile birlikte\\b|\\bmacellan\\b|\\bdel cano\\b",
     "aliases": []
   },
   {
@@ -121,11 +122,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 130,
-    "tanim": "Fatih'in yaptırdığı **yönetim merkezi Topkapı Sarayı'nda** padişahın ailesinin ve cariyelerin yaşadığı, **yüksek terbiye aldığı özel bölüm**; adeta sarayın 'iç bahçesi' gibidir.\n💡 Sınav Şifresi: **'Harem = aile + cariye + terbiye'**, **'Topkapı = Fatih + yönetim merkezi'**; harem sorusu hep 'özel yaşam alanı' der.",
+    "tanim": "Fatih'in yaptırdığı **yönetim merkezi Topkapı Sarayı'nda** padişahın ailesinin ve cariyelerin yaşadığı, **yüksek terbiye aldığı özel bölüm**; adeta sarayın 'iç bahçesi' gibidir.\n💡 Hile: **'Harem = aile + cariye + terbiye'**, **'Topkapı = Fatih + yönetim merkezi'**; harem sorusu hep 'özel yaşam alanı' der.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Harem$|\\\\\\\\btopkapı sarayı’ndaki “harem”\\\\\\\\b|\\\\\\\\bharem bölümü\\\\\\\\b|\\\\\\\\bharem\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bHarem\\b|\\btopkapı sarayı’ndaki “harem”\\b|\\bharem bölümü\\b|\\bharem\\b",
+    "aliases": [],
+    "option_only_pattern": "^Harem$"
   },
   {
     "id": "tar4_enderun_mektebi",
@@ -137,11 +139,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 132,
-    "tanim": "Saray içindeki **iç okul**; devşirme sisteminden gelen üstün yetenekli çocukların **devlet adamı, vezir, komutan ve sanatçı** olarak yetiştirildiği elit eğitim kurumu; Osmanlı'nın 'yetenek akademisi' gibidir.\n💡 Sınav Şifresi: **'Enderun = iç okul + devşirme + elit yetiştirme'**; 'saray içi okul' ifadesi görürsen Enderun.",
+    "tanim": "Saray içindeki **iç okul**; devşirme sisteminden gelen üstün yetenekli çocukların **devlet adamı, vezir, komutan ve sanatçı** olarak yetiştirildiği elit eğitim kurumu; Osmanlı'nın 'yetenek akademisi' gibidir.\n💡 Hile: **'Enderun = iç okul + devşirme + elit yetiştirme'**; 'saray içi okul' ifadesi görürsen Enderun.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Enderun Mektebi$|^Enderun$|\\\\\\\\benderun mektebi\\\\\\\\b|\\\\\\\\benderun\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bEnderun Mektebi\\b|\\bEnderun\\b|\\benderun mektebi\\b|\\benderun\\b",
+    "aliases": [],
+    "option_only_pattern": "^Enderun Mektebi$|^Enderun$"
   },
   {
     "id": "tar4_reisulkuttab",
@@ -153,11 +156,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 136,
-    "tanim": "Divan'da **kâtiplerin başı** iken zamanla devletler arası yazışmaları yürüten ve **Osmanlı'nın Hariciye (Dışişleri) Bakanı** hâline gelen bürokrat; bugünün 'dışişleri müsteşarı' gibi düşünülebilir.\n💡 Sınav Şifresi: **'Reisülküttâb = kâtiplerin başı → dışişleri'**; 'yazışma + dış ilişki' kelimeleri bir aradaysa Reisülküttâb.",
+    "tanim": "Divan'da **kâtiplerin başı** iken zamanla devletler arası yazışmaları yürüten ve **Osmanlı'nın Hariciye (Dışişleri) Bakanı** hâline gelen bürokrat; bugünün 'dışişleri müsteşarı' gibi düşünülebilir.\n💡 Hile: **'Reisülküttâb = kâtiplerin başı → dışişleri'**; 'yazışma + dış ilişki' kelimeleri bir aradaysa Reisülküttâb.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Reisülküttâb$|^Reisülküttab$|\\\\\\\\breisülküttâb\\\\\\\\b|\\\\\\\\breisülküttab\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bReisülküttâb\\b|\\bReisülküttab\\b|\\breisülküttâb\\b|\\breisülküttab\\b",
+    "aliases": [],
+    "option_only_pattern": "^Reisülküttâb$|^Reisülküttab$"
   },
   {
     "id": "tar4_sadrazam",
@@ -169,11 +173,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 134,
-    "tanim": "Padişahtan sonra **devletin en yetkili kişisi**; padişahın **mutlak vekili ve mührünün taşıyıcısı**, ordu başında sefere çıktığında **'Serdar-ı Ekrem'** unvanını alan hükümet başkanı.\n💡 Sınav Şifresi: **'Sadrazam = mühür + vekil + Serdar-ı Ekrem'**; 'padişah mührü' ifadesi görürsen Sadrazam.",
+    "tanim": "Padişahtan sonra **devletin en yetkili kişisi**; padişahın **mutlak vekili ve mührünün taşıyıcısı**, ordu başında sefere çıktığında **'Serdar-ı Ekrem'** unvanını alan hükümet başkanı.\n💡 Hile: **'Sadrazam = mühür + vekil + Serdar-ı Ekrem'**; 'padişah mührü' ifadesi görürsen Sadrazam.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Sadrazam$|^Veziriazam$|\\\\\\\\bsadrazam\\\\\\\\b|\\\\\\\\bveziriazam\\\\\\\\b|\\\\\\\\bserdar-ı ekrem\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bSadrazam\\b|\\bVeziriazam\\b|\\bsadrazam\\b|\\bveziriazam\\b|\\bserdar-ı ekrem\\b",
+    "aliases": [],
+    "option_only_pattern": "^Sadrazam$|^Veziriazam$"
   },
   {
     "id": "tar4_kazasker",
@@ -185,11 +190,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 135,
-    "tanim": "Divan'da **adalet ve eğitim işlerine bakan**, taşradaki **kadı ve müderrislerin atama-görevden alma** işlemlerini yürüten **ilmiye sınıfı reisi**; bugünün 'adalet + eğitim bakanı' karışımı gibidir.\n💡 Sınav Şifresi: **'Kazasker = kadı + müderris atama + ilmiye reisi'**; 'adalet ve eğitim' kelimeleri bir aradaysa Kazasker.",
+    "tanim": "Divan'da **adalet ve eğitim işlerine bakan**, taşradaki **kadı ve müderrislerin atama-görevden alma** işlemlerini yürüten **ilmiye sınıfı reisi**; bugünün 'adalet + eğitim bakanı' karışımı gibidir.\n💡 Hile: **'Kazasker = kadı + müderris atama + ilmiye reisi'**; 'adalet ve eğitim' kelimeleri bir aradaysa Kazasker.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Kazasker$|\\\\\\\\bkazasker\\\\\\\\b|\\\\\\\\bkadıasker\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bKazasker\\b|\\bkazasker\\b|\\bkadıasker\\b",
+    "aliases": [],
+    "option_only_pattern": "^Kazasker$"
   },
   {
     "id": "tar4_defterdar",
@@ -201,11 +207,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 135,
-    "tanim": "Osmanlı'nın **maliye bakanı** gibi düşün: bütçeyi hazırlayan, gelir-gideri kaydeden ve hazineyi yöneten en üst düzey maliye bürokratıdır (bugünün Hazine ve Maliye Bakanı + Merkez Bankası başkanı karışımı).\n💡 Sınav Şifresi: **\"Bütçe + hazine + gelir-gider kaydı\"** üçlüsünü görüyorsan cevap Defterdar; Nişancı ile karıştırma, o tuğra çeker.",
+    "tanim": "Osmanlı'nın **maliye bakanı** gibi düşün: bütçeyi hazırlayan, gelir-gideri kaydeden ve hazineyi yöneten en üst düzey maliye bürokratıdır (bugünün Hazine ve Maliye Bakanı + Merkez Bankası başkanı karışımı).\n💡 Hile: **\"Bütçe + hazine + gelir-gider kaydı\"** üçlüsünü görüyorsan cevap Defterdar; Nişancı ile karıştırma, o tuğra çeker.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Defterdar$|\\\\\\\\bdefterdar\\\\\\\\b|\\\\\\\\bhazineyi ilgilendiren konularda\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDefterdar\\b|\\bdefterdar\\b|\\bhazineyi ilgilendiren konularda\\b",
+    "aliases": [],
+    "option_only_pattern": "^Defterdar$"
   },
   {
     "id": "tar4_nisanci",
@@ -217,11 +224,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 136,
-    "tanim": "Devletin **noter + tapu kadastro müdürü** gibi çalışır: ferman ve beratlara padişahın **tuğrasını** çeker, fethedilen toprakların **tahririni** yapıp tımar defterlerini tutar.\n💡 Sınav Şifresi: **\"Tuğra çekmek\"** ve **\"tahrir/tımar defteri\"** anahtar kelimeleri → Nişancı. Defterdar maliye, Nişancı yazı-tuğra-kayıt işi.",
+    "tanim": "Devletin **noter + tapu kadastro müdürü** gibi çalışır: ferman ve beratlara padişahın **tuğrasını** çeker, fethedilen toprakların **tahririni** yapıp tımar defterlerini tutar.\n💡 Hile: **\"Tuğra çekmek\"** ve **\"tahrir/tımar defteri\"** anahtar kelimeleri → Nişancı. Defterdar maliye, Nişancı yazı-tuğra-kayıt işi.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Nişancı$|\\\\\\\\bnişancı\\\\\\\\b|\\\\\\\\btuğra çeken\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bNişancı\\b|\\bnişancı\\b|\\btuğra çeken\\b",
+    "aliases": [],
+    "option_only_pattern": "^Nişancı$"
   },
   {
     "id": "tar4_dirlik_topraklari",
@@ -233,10 +241,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 145,
-    "tanim": "Geliri devlet görevlilerine **maaş yerine** tahsis edilen mirî topraklardır; büyükten küçüğe **Has (100 bin akçe üstü – hanedan/vezirler) → Zeamet (20-100 bin – orta kademe) → Tımar (3-20 bin – askerler)** şeklinde üç kademedir. Öşrî toprak ise mülk arazidir, dirlik değildir.\n💡 Sınav Şifresi: Akçe sıralaması **\"Has > Zeamet > Tımar\"**; en üst Has, en alt Tımar. \"Mülk arazi\" denince dirlik değil **Öşür**.",
+    "tanim": "Geliri devlet görevlilerine **maaş yerine** tahsis edilen mirî topraklardır; büyükten küçüğe **Has (100 bin akçe üstü – hanedan/vezirler) → Zeamet (20-100 bin – orta kademe) → Tımar (3-20 bin – askerler)** şeklinde üç kademedir. Öşrî toprak ise mülk arazidir, dirlik değildir.\n💡 Hile: Akçe sıralaması **\"Has > Zeamet > Tımar\"**; en üst Has, en alt Tımar. \"Mülk arazi\" denince dirlik değil **Öşür**.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "dirlik toprakları[a-zçğıöşü]*|has, zeamet|dirlik arazisi",
+    "pattern": "\\bdirlik toprakları[a-zçğıöşü]*|\\bhas, zeamet\\b|\\bdirlik arazisi\\b",
     "aliases": []
   },
   {
@@ -249,11 +257,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 150,
-    "tanim": "Osmanlı şehirlerindeki esnafın **Ahilik geleneğinden** gelen meslek örgütüdür: **çırak → kalfa → usta** yetiştirir, üretimi ve **narhı (fiyatı)** denetler.\n💡 Sınav Şifresi: **\"Çırak-kalfa-usta\"** ve **\"narh\"** kelimeleri → Lonca. Ahilik'in şehirli-esnaf versiyonu olarak kodla.",
+    "tanim": "Osmanlı şehirlerindeki esnafın **Ahilik geleneğinden** gelen meslek örgütüdür: **çırak → kalfa → usta** yetiştirir, üretimi ve **narhı (fiyatı)** denetler.\n💡 Hile: **\"Çırak-kalfa-usta\"** ve **\"narh\"** kelimeleri → Lonca. Ahilik'in şehirli-esnaf versiyonu olarak kodla.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Lonca Teşkilatı$|^Lonca$|\\\\\\\\blonca teşkilatı\\\\\\\\b|\\\\\\\\blonca\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bLonca Teşkilatı\\b|\\bLonca\\b|\\blonca teşkilatı\\b|\\blonca\\b",
+    "aliases": [],
+    "option_only_pattern": "^Lonca Teşkilatı$|^Lonca$"
   },
   {
     "id": "tar4_millet_kavrami",
@@ -265,10 +274,28 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 155,
-    "tanim": "Osmanlı toplumu **ırk veya dil** esasına göre değil, **din ve mezhep** aidiyetine göre cemaatlere (Müslümanlar, Ortodoks, Ermeni, Yahudi) ayrılarak yönetilirdi; bu hoşgörü sistemi her cemaate kendi dini ve hukuki işlerinde özerklik tanırdı.\n💡 Sınav Şifresi: **\"Din/mezhep esası\"** → Millet Sistemi. \"Irk/dil esası\" şıkkı tuzaktır, Osmanlı'da millet = din demektir.",
+    "tanim": "Osmanlı toplumu **ırk veya dil** esasına göre değil, **din ve mezhep** aidiyetine göre cemaatlere (Müslümanlar, Ortodoks, Ermeni, Yahudi) ayrılarak yönetilirdi; bu hoşgörü sistemi her cemaate kendi dini ve hukuki işlerinde özerklik tanırdı.\n💡 Hile: **\"Din/mezhep esası\"** → Millet Sistemi. \"Irk/dil esası\" şıkkı tuzaktır, Osmanlı'da millet = din demektir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Millet$|\\\\\\\\bosmanlı millet sistemi\\\\\\\\b|\\\\\\\\bmillet sistemi\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bMillet\\b|\\bosmanlı millet sistemi\\b|\\bmillet sistemi\\b",
+    "aliases": [],
+    "option_only_pattern": "^Millet$"
+  },
+  {
+    "id": "tar_cagdas_olaylar",
+    "base_id": "tar_cagdas_olaylar",
+    "term": "Fransız İhtilali ve Sanayi İnkılabı",
+    "subject": "TAR",
+    "ders": "TAR – 4",
+    "ders_kodu": null,
+    "donem": 4,
+    "unite_no": null,
+    "sayfa": 80,
+    "tanim": "Fransız İhtilali (1789) milliyetçilik ve hürriyet akımını yaydı; Sanayi İnkılabı ise buhar gücü, hammadde ve sömürgecilik yarışını doğurdu.\n💡 Hile: Çok uluslu imparatorlukları (Osmanlı) parçalayan isyanlar = **Fransız İhtilali (Milliyetçilik)**. El tezgahlarını batıran seri üretim = **Sanayi İnkılabı**.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bfransız\\s+ihtilali\\b|\\bsanayi\\s+inkılabı\\b|\\bsanayi\\s+devrimi\\b|\\bFransız İhtilali\\b|\\bSanayi İnkılabı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Fransız İhtilali$|^Sanayi İnkılabı$"
   }
 ]

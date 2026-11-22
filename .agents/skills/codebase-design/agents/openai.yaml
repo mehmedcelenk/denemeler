@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codebase Design"
+  short_description: "Project-specific codebase design"
+  default_prompt: "Use $codebase-design for the requested work in this repository."

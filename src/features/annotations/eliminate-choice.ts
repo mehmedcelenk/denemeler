@@ -1,7 +1,7 @@
-import { store } from '../../app/state.ts';
+import { state, store, onStateChange } from '../../app/state.ts';
 import type { Choice } from '../../data/question.ts';
 import { getCardChoiceRow, getQuestionCards } from '../booklet/card-query.ts';
-import { scheduleCloudSync } from '../welcome/cloud-sync.ts';
+import { isCurrentStudy, scheduleCloudSync } from '../../app/study-context.ts';
 
 let longPressTimer: ReturnType<typeof setTimeout> | null = null;
 let longPressTriggered = false;
@@ -11,6 +11,7 @@ let startY = 0;
 
 /** Şıkkı elenmiş veya aktif durumuna geçirir */
 export function toggleEliminateChoice(qid: number, letter: Choice): boolean {
+  if (!isCurrentStudy()) return false;
   const isNowEliminated = store.toggleEliminatedChoice(qid, letter);
   
   getQuestionCards(qid).forEach(card => {
@@ -45,8 +46,10 @@ function handlePointerDown(e: PointerEvent): void {
 
   clearTimer();
 
+  const generation = state.studyGeneration;
   // 450ms basılı tutulursa uzun basma say
   longPressTimer = setTimeout(() => {
+    if (!isCurrentStudy(generation)) return;
     longPressTriggered = true;
     const qid = Number(qidStr);
     toggleEliminateChoice(qid, letter);
@@ -107,3 +110,5 @@ export function initChoiceElimination(): void {
   // Normal click'in bubbling aşamasından önce yakalamak için capture: true
   document.addEventListener('click', handleClickCapture, true);
 }
+
+onStateChange('study:changed', () => { clearTimer(); activeBubble = null; });

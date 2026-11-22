@@ -40,4 +40,15 @@ export function initAppearance(): void {
       if (el.dataset.color) setAccentColor(el.dataset.color);
     },
   });
+  if (typeof document !== 'undefined') {
+    document.addEventListener('click', event => {
+      if (!(event.target instanceof Element) || event.target.closest('.floating-console-container')) return;
+      if (document.getElementById('consoleMenuPopup')?.classList.contains('open')) toggleConsoleMenu();
+    });
+    window.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && document.getElementById('consoleMenuPopup')?.classList.contains('open')) {
+        toggleConsoleMenu();
+      }
+    });
+  }
 }

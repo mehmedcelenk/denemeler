@@ -3,6 +3,7 @@ import type { Choice } from '../../data/question.ts';
 import { getCardChoiceText, getCardStem, getQuestionCards } from '../booklet/card-query.ts';
 import {
   addHighlightRecord,
+  clearAllHighlightRecords,
   captureHighlightRecord,
   getHighlightsForQuestion,
   removeHighlightRecord,
@@ -254,6 +255,10 @@ let isInitialized = false;
 export function initTextHighlighter(): void {
   if (isInitialized || typeof document === 'undefined') return;
   isInitialized = true;
+  onStateChange('study:changed', () => {
+    removeActionBubble();
+    clearAllHighlightRecords();
+  });
 
   document.addEventListener('selectionchange', () => {
     // Mobil klavye/scroll debounce

@@ -23,7 +23,7 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 DATA_DIR = os.path.join(ROOT_DIR, 'data')
 SUBJECTS_DIR = os.path.join(DATA_DIR, 'subjects')
 CONCEPTS_DIR = os.path.join(DATA_DIR, 'concepts')
-AI_EXP_DIR = os.path.join(DATA_DIR, 'ai_explanations')
+LESSONS_DIR = os.path.join(DATA_DIR, 'lessons')
 
 
 def load_env_vars() -> Dict[str, str]:
@@ -214,25 +214,35 @@ def prepare_concepts() -> List[Dict[str, Any]]:
     return concepts
 
 
-def prepare_ai_explanations() -> List[Dict[str, Any]]:
-    explanations: List[Dict[str, Any]] = []
-    for filepath in sorted(glob.glob(os.path.join(AI_EXP_DIR, '*.json'))):
+def prepare_question_lessons(subjects: Optional[List[str]] = None) -> List[Dict[str, Any]]:
+    lessons: List[Dict[str, Any]] = []
+    if not os.path.isdir(LESSONS_DIR):
+        return lessons
+    for filepath in sorted(glob.glob(os.path.join(LESSONS_DIR, '*.json'))):
+        subj = os.path.splitext(os.path.basename(filepath))[0].upper()
+        if subjects and subj not in subjects:
+            continue
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 data = json.load(f)
         except Exception as e:
             print(f'⚠️ {filepath} okunamadı: {e}')
             continue
-
-        for qid_str, exp in data.items():
-            if qid_str.isdigit() and isinstance(exp, dict) and exp.get('reply'):
-                explanations.append({
-                    'question_id': int(qid_str),
-                    'query': exp.get('query', 'Bu soruyu adım adım açıklar mısın?'),
-                    'reply': exp['reply'],
-                    'model': exp.get('model', 'deepseek-v4.1-flash')
+        if not isinstance(data, list):
+            continue
+        for item in data:
+            if not isinstance(item, dict):
+                continue
+            qid = item.get('questionId')
+            if isinstance(qid, int) and qid > 0:
+                lessons.append({
+                    'question_id': qid,
+                    'subject': str(item.get('subject') or subj),
+                    'payload': item,
+                    'model': item.get('model'),
+                    'version': int(item.get('version') or 1),
                 })
-    return explanations
+    return lessons
 
 
 def prepare_question_concepts(questions: List[Dict[str, Any]], concepts: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -275,7 +285,7 @@ def prepare_question_concepts(questions: List[Dict[str, Any]], concepts: List[Di
 def main():
     parser = argparse.ArgumentParser(description='AÖL Kitapçık Supabase Toplu Veri Senkronizasyonu')
     parser.add_argument('--dry-run', action='store_true', help='Veritabanına yazmadan sadece kontrol yapar.')
-    parser.add_argument('--table', default='all', choices=['all', 'subjects', 'questions', 'concepts', 'question_concepts'],
+    parser.add_argument('--table', default='all', choices=['all', 'subjects', 'questions', 'concepts', 'question_concepts', 'question_lessons'],
                         help='Aktarılacak tabloyu seçin (varsayılan: all).')
     parser.add_argument('--subjects', default=None, help='Ders kodları filtresi (örn: KLM,DIN,MAT).')
     parser.add_argument('--batch-size', type=int, default=200, help='PostgREST paket boyutu (varsayılan: 200).')
@@ -324,6 +334,14 @@ def main():
         links_data = prepare_question_concepts(questions_data, concepts_data)
         print(f'📦 Soru-Kavram İlişkileri: {len(links_data)} eşleşme hazırlandı.')
         syncer.sync_table('question_concepts', links_data)
+
+    if args.table in ('all', 'question_lessons'):
+        lessons_data = prepare_question_lessons(subjects=subjects)
+        if lessons_data:
+            print(f'📦 Hoca Anlatımları: {len(lessons_data)} kayıt hazırlandı.')
+            syncer.sync_table('question_lessons', lessons_data)
+        elif args.table == 'question_lessons':
+            print('📦 Hoca Anlatımları: 0 kayıt bulundu (data/lessons/*.json).')
 
     print('\n✅ Senkronizasyon işlemi başarıyla tamamlandı!')
 

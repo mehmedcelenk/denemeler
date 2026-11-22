@@ -9,10 +9,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 14,
-    "tanim": "İnsanlık nüfusu üç büyük sıçrama yaşadı: **Paleolitik'te alet** (yırtıcıya karşı hayatta kalma), **Neolitik'te tarım** (yerleşik hayat ve besin deposu) ve **Sanayi Devrimi'nde tıp/hijyen** (ölümlerin azalması). Tıpkı bir oyunun seviye atlaması gibi: önce savunma, sonra üretim, en son sağlık kilidi açıldı.\n💡 Sınav Şifresi: Sıçramaların sırası **Alet → Tarım → Sanayi**; üçüncüsünün anahtarı **ölüm oranının düşmesi**dir (doğum değil!).",
+    "tanim": "İnsanlık nüfusu üç büyük sıçrama yaşadı: **Paleolitik'te alet** (yırtıcıya karşı hayatta kalma), **Neolitik'te tarım** (yerleşik hayat ve besin deposu) ve **Sanayi Devrimi'nde tıp/hijyen** (ölümlerin azalması). Tıpkı bir oyunun seviye atlaması gibi: önce savunma, sonra üretim, en son sağlık kilidi açıldı.\n💡 Hile: Sıçramaların sırası **Alet → Tarım → Sanayi**; üçüncüsünün anahtarı **ölüm oranının düşmesi**dir (doğum değil!).",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "dünya nüfusunda sıçrama|üçüncü sıçrama dönemi|nüfus artış hızındaki üçüncü sıçrama|sanayi devrimi|paleolitik çağ'da avcılık|neolitik",
+    "pattern": "\\bdünya nüfusunda sıçrama\\b|\\büçüncü sıçrama dönemi\\b|\\bnüfus artış hızındaki üçüncü sıçrama\\b|\\bsanayi devrimi\\b|\\bpaleolitik çağ'da avcılık\\b|\\bneolitik\\b",
     "aliases": []
   },
   {
@@ -25,10 +25,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 22,
-    "tanim": "Nüfus yaş gruplarına ayrılır: **0-14 genç**, **15-64 çalışma çağı**, **65+ yaşlı**; aritmetik yoğunluk ise **Toplam Nüfus / Yüz Ölçümü** ile bulunur. Yüz ölçümü sabitken nüfus artarsa yoğunluk da **kesinlikle artar** — tıpkı aynı odaya daha çok kişi sığdırmak gibi.\n💡 Sınav Şifresi: Formül **Nüfus ÷ Alan**; 'aritmetik' kelimesi geçiyorsa **alan sabit, nüfus artınca yoğunluk artar** kodlamasını unutma.",
+    "tanim": "Nüfus yaş gruplarına ayrılır: **0-14 genç**, **15-64 çalışma çağı**, **65+ yaşlı**; aritmetik yoğunluk ise **Toplam Nüfus / Yüz Ölçümü** ile bulunur. Yüz ölçümü sabitken nüfus artarsa yoğunluk da **kesinlikle artar** — tıpkı aynı odaya daha çok kişi sığdırmak gibi.\n💡 Hile: Formül **Nüfus ÷ Alan**; 'aritmetik' kelimesi geçiyorsa **alan sabit, nüfus artınca yoğunluk artar** kodlamasını unutma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "0-14 yaş arasındaki|aritmetik nüfus yoğunluğunun|nüfusun yapısıyla ilgili|çalışma çağındaki nüfus",
+    "pattern": "\\b0-14 yaş arasındaki\\b|\\baritmetik nüfus yoğunluğunun\\b|\\bnüfusun yapısıyla ilgili\\b|\\bçalışma çağındaki nüfus\\b",
     "aliases": []
   },
   {
@@ -41,10 +41,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 36,
-    "tanim": "İç göçü iki yönlü düşün: kırda **itici** (makineleşmeyle işsizlik, mirasla arazi bölünmesi, erozyon), kentte **çekici** (iş, eğitim, sağlık, modern yaşam) faktörler vardır. Bu, köydeki 'kapıyı kapatıp' şehirdeki 'açık kapıya' koşmak gibidir.\n💡 Sınav Şifresi: **İtici = kırın sorunları** (işsizlik, erozyon, miras), **Çekici = kentin cazibesi** (iş, eğitim, sağlık). Soruda 'kaynak' mı 'hedef' mi diye bak!",
+    "tanim": "İç göçü iki yönlü düşün: kırda **itici** (makineleşmeyle işsizlik, mirasla arazi bölünmesi, erozyon), kentte **çekici** (iş, eğitim, sağlık, modern yaşam) faktörler vardır. Bu, köydeki 'kapıyı kapatıp' şehirdeki 'açık kapıya' koşmak gibidir.\n💡 Hile: **İtici = kırın sorunları** (işsizlik, erozyon, miras), **Çekici = kentin cazibesi** (iş, eğitim, sağlık). Soruda 'kaynak' mı 'hedef' mi diye bak!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "1980 sonrası \\\\\\\\(5\\\\\\\\. dönem\\\\\\\\)|1927-1950 arası \\\\\\\\(2\\\\\\\\. dönem\\\\\\\\)|iç göçe neden olan çekici faktör|iç göçe neden olan|göçe neden olan",
+    "pattern": "\\b1980 sonrası \\(5\\. dönem\\)|\\b1927-1950 arası \\(2\\. dönem\\)|\\biç göçe neden olan çekici faktör\\b|\\biç göçe neden olan\\b|\\bgöçe neden olan\\b",
     "aliases": []
   },
   {
@@ -57,10 +57,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 58,
-    "tanim": "**Doğadan/topraktan ham madde çıkarma** işidir: tarım, hayvancılık, ormancılık, madencilik, balıkçılık. Az gelişmiş ülkelerde çalışan nüfusun büyük kısmı buradadır — tıpkı Anadolu'nun 'toprak ana' kültürü gibi.\n💡 Sınav Şifresi: Anahtar kelime **'ham madde / doğadan elde etme'**; fabrika yok, işleme yok, sadece **toprak ve doğa**.",
+    "tanim": "**Doğadan/topraktan ham madde çıkarma** işidir: tarım, hayvancılık, ormancılık, madencilik, balıkçılık. Az gelişmiş ülkelerde çalışan nüfusun büyük kısmı buradadır — tıpkı Anadolu'nun 'toprak ana' kültürü gibi.\n💡 Hile: Anahtar kelime **'ham madde / doğadan elde etme'**; fabrika yok, işleme yok, sadece **toprak ve doğa**.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "birincil sektör[a-zçğıöşü]*|birincil ekonomik faaliyet|ziraat ve hayvancılıkla",
+    "pattern": "\\bbirincil sektör[a-zçğıöşü]*|\\bbirincil ekonomik faaliyet\\b|\\bziraat ve hayvancılıkla\\b",
     "aliases": []
   },
   {
@@ -73,10 +73,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 60,
-    "tanim": "Birincilden gelen ham/yarı işlenmiş maddeyi **fabrikada mamul maddeye** dönüştürmektir: otomobil, tekstil, petrokimya, inşaat, enerji. Ham maddenin 'mutfaktan geçip yemeğe dönüşmesi' gibi.\n💡 Sınav Şifresi: Anahtar kelime **'fabrika / imalat / işleme'**; ürün artık **mamul** olur, doğadan çıkmaz.",
+    "tanim": "Birincilden gelen ham/yarı işlenmiş maddeyi **fabrikada mamul maddeye** dönüştürmektir: otomobil, tekstil, petrokimya, inşaat, enerji. Ham maddenin 'mutfaktan geçip yemeğe dönüşmesi' gibi.\n💡 Hile: Anahtar kelime **'fabrika / imalat / işleme'**; ürün artık **mamul** olur, doğadan çıkmaz.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ikincil ekonomik faaliyet[a-zçğıöşü]*|ikincil sektör|sanayi sektörü",
+    "pattern": "\\bikincil ekonomik faaliyet[a-zçğıöşü]*|\\bikincil sektör\\b|\\bsanayi sektörü\\b",
     "aliases": []
   },
   {
@@ -89,10 +89,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 62,
-    "tanim": "**Üçüncül** hizmettir (eğitim, sağlık, ulaşım, bankacılık); **dördüncül** bilgi işidir (yazılım, Ar-Ge, grafik); **beşincil** ise üst düzey karar vericidir (CEO, stratejist, yönlendirici bilim insanı). Sırasıyla: hizmet → bilgi → karar.\n💡 Sınav Şifresi: **3 = hizmet**, **4 = bilgi/yazılım/Ar-Ge**, **5 = karar verici/CEO**. 'Yazılım' görürsen 4, 'CEO' görürsen 5 de!",
+    "tanim": "**Üçüncül** hizmettir (eğitim, sağlık, ulaşım, bankacılık); **dördüncül** bilgi işidir (yazılım, Ar-Ge, grafik); **beşincil** ise üst düzey karar vericidir (CEO, stratejist, yönlendirici bilim insanı). Sırasıyla: hizmet → bilgi → karar.\n💡 Hile: **3 = hizmet**, **4 = bilgi/yazılım/Ar-Ge**, **5 = karar verici/CEO**. 'Yazılım' görürsen 4, 'CEO' görürsen 5 de!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "üçüncül sektör|dördüncül sektör|beşincil sektör|beşincil|hizmet sektörü",
+    "pattern": "\\büçüncül sektör\\b|\\bdördüncül sektör\\b|\\bbeşincil sektör\\b|\\bbeşincil\\b|\\bhizmet sektörü\\b",
     "aliases": []
   },
   {
@@ -105,10 +105,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 88,
-    "tanim": "Küresel ticaretin 'kilit kapıları': **Cebelitarık** (Akdeniz-Atlas), **Babülmendep** (Kızıldeniz-Hint), **Hürmüz** (Basra petrolü), **Malakka** (Güneydoğu Asya-Pasifik), **Süveyş** (Akdeniz-Kızıldeniz), **Panama** (Atlas-Pasifik), **Dover** (İngiltere-Fransa). Her biri bir kıtanın 'anahtar deliği' gibidir.\n💡 Sınav Şifresi: **Hürmüz = petrol**, **Süveyş = Mısır**, **Panama = Atlas-Pasifik**, **Malakka = Uzak Doğu**. Boğazı ülkeyle eşleştir!",
+    "tanim": "Küresel ticaretin 'kilit kapıları': **Cebelitarık** (Akdeniz-Atlas), **Babülmendep** (Kızıldeniz-Hint), **Hürmüz** (Basra petrolü), **Malakka** (Güneydoğu Asya-Pasifik), **Süveyş** (Akdeniz-Kızıldeniz), **Panama** (Atlas-Pasifik), **Dover** (İngiltere-Fransa). Her biri bir kıtanın 'anahtar deliği' gibidir.\n💡 Hile: **Hürmüz = petrol**, **Süveyş = Mısır**, **Panama = Atlas-Pasifik**, **Malakka = Uzak Doğu**. Boğazı ülkeyle eşleştir!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "cebelitarık boğazı|dover boğazı|hürmüz boğazı|babülmendep|süveyş kanalı|panama kanalı|malakka boğazı",
+    "pattern": "\\bcebelitarık boğazı\\b|\\bdover boğazı\\b|\\bhürmüz boğazı\\b|\\bbabülmendep\\b|\\bsüveyş kanalı\\b|\\bpanama kanalı\\b|\\bmalakka boğazı\\b",
     "aliases": []
   },
   {
@@ -121,10 +121,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 96,
-    "tanim": "**Deniz yolu** en çok yükü en ucuza taşır; **hava yolu** en son gelişen ama en hızlı büyüyen sistemdir; **demir yolu** karada kitle taşımacılığında ekonomiktir. Yani: deniz 'kamyon', hava 'jet', demir 'toplu taşıma' gibi.\n💡 Sınav Şifresi: **En ucuz/en çok yük = deniz**, **en hızlı gelişen = hava**, **karada kitle = demir yolu**. 'Maliyet' görürsen deniz, 'hız' görürsen hava!",
+    "tanim": "**Deniz yolu** en çok yükü en ucuza taşır; **hava yolu** en son gelişen ama en hızlı büyüyen sistemdir; **demir yolu** karada kitle taşımacılığında ekonomiktir. Yani: deniz 'kamyon', hava 'jet', demir 'toplu taşıma' gibi.\n💡 Hile: **En ucuz/en çok yük = deniz**, **en hızlı gelişen = hava**, **karada kitle = demir yolu**. 'Maliyet' görürsen deniz, 'hız' görürsen hava!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hava yolu|ulaşım sistemleri|deniz yolu taşımacılığı|demir yolları",
+    "pattern": "\\bhava yolu\\b|\\bulaşım sistemleri\\b|\\bdeniz yolu taşımacılığı\\b|\\bdemir yolları\\b",
     "aliases": []
   },
   {
@@ -137,10 +137,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 128,
-    "tanim": "**Tsunami** deniz tabanındaki şiddetli tektonik deprem/volkanizmayla oluşur (Büyük Okyanus ve Akdeniz kıyıları riskli); **selde** dere yatakları imara açılmamalı, doğal drenaj korunmalı; **deprem sonrası** elektrik, gaz ve su vanaları kapatılmalıdır.\n💡 Sınav Şifresi: **Tsunami = deniz tabanı depremi**, **Sel = dere yatağı imarı**, **Deprem sonrası = vanaları kapat**. Üç önlemi karıştırma!",
+    "tanim": "**Tsunami** deniz tabanındaki şiddetli tektonik deprem/volkanizmayla oluşur (Büyük Okyanus ve Akdeniz kıyıları riskli); **selde** dere yatakları imara açılmamalı, doğal drenaj korunmalı; **deprem sonrası** elektrik, gaz ve su vanaları kapatılmalıdır.\n💡 Hile: **Tsunami = deniz tabanı depremi**, **Sel = dere yatağı imarı**, **Deprem sonrası = vanaları kapat**. Üç önlemi karıştırma!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "\\\\\\\\btsunami\\\\\\\\b|sel ve taşkın|orman yangını|depremin hemen sonrasında|dirençli şehirler",
+    "pattern": "\\btsunami\\b|\\bsel ve taşkın\\b|\\borman yangını\\b|\\bdepremin hemen sonrasında\\b|\\bdirençli şehirler\\b",
     "aliases": []
   },
   {
@@ -153,10 +153,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 154,
-    "tanim": "**TÜRKSOY**, altı bağımsız Türk devletinin (Azerbaycan, Kazakistan, Kırgızistan, Özbekistan, Türkmenistan, Türkiye) kurduğu **ilk kültür iş birliği teşkilatıdır**; ortak eserler **Orhun Yazıtları** ve **Dîvânu Lugâti't-Türk**, **Tac Mahal** ise Hindistan'daki Türk-İslam mimarisinin şaheseridir.\n💡 Sınav Şifresi: **TÜRKSOY = 6 devlet + kültür**, **Tac Mahal = Hindistan** (Türkiye'de değil!). 'İlk kültür teşkilatı' ifadesi TÜRKSOY'un imzasıdır.",
+    "tanim": "**TÜRKSOY**, altı bağımsız Türk devletinin (Azerbaycan, Kazakistan, Kırgızistan, Özbekistan, Türkmenistan, Türkiye) kurduğu **ilk kültür iş birliği teşkilatıdır**; ortak eserler **Orhun Yazıtları** ve **Dîvânu Lugâti't-Türk**, **Tac Mahal** ise Hindistan'daki Türk-İslam mimarisinin şaheseridir.\n💡 Hile: **TÜRKSOY = 6 devlet + kültür**, **Tac Mahal = Hindistan** (Türkiye'de değil!). 'İlk kültür teşkilatı' ifadesi TÜRKSOY'un imzasıdır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "türksoy|uluslararası türk kültürü teşkilatı|türk dünyası|orhun yazıtları|tac mahal|konargöçer türk kültürü",
+    "pattern": "\\btürksoy\\b|\\buluslararası türk kültürü teşkilatı\\b|\\btürk dünyası\\b|\\borhun yazıtları\\b|\\btac mahal\\b|\\bkonargöçer türk kültürü\\b",
     "aliases": []
   }
 ]

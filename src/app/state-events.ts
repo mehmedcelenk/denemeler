@@ -5,6 +5,7 @@ export type StateEventType =
   | 'booklet:ensure-question'
   | 'booklet:rendered'
   | 'drawer:close'
+  | 'subjects:drawer-opened'
   | 'drawer:topics-refresh'
   | 'filter:updated'
   | 'subject:select'
@@ -15,6 +16,11 @@ export type StateEventType =
   | 'print:after'
   | 'view-mode:updated'
   | 'board:render-question'
+  | 'welcome:home'
+  | 'mascot:changed'
+  | 'study:changed'
+  | 'study:reconcile'
+  | 'progress:changed'
   | 'auth:expired'
   | 'auth:signout';
 

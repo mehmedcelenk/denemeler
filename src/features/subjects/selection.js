@@ -1,4 +1,5 @@
 import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
+import { isCurrentStudy } from '../../app/study-context.ts';
 import { loadSubjectData } from '../../data/questions.js';
 import { matchesSubject } from '../../data/subjects.js';
 import { updateCourseModeToggleVisibility, setCourseFilterMode } from './filters.ts';
@@ -12,6 +13,7 @@ export { getActiveSubjects } from './selection-model.ts';
 export { toggleSubjectDropdown } from './dropdown.ts';
 
 let selectionVersion = 0;
+onStateChange('study:changed', () => { selectionVersion++; });
 
 export async function setProgramMode(mode) {
   store.setProgramMode(mode);
@@ -21,10 +23,11 @@ export async function setProgramMode(mode) {
   await setSubject(targetSubj);
 }
 
-export async function setSubject(subj) {
+export async function setSubject(subj, preferredCourses) {
   const version = ++selectionVersion;
   try {
     const questions = await loadSubjectData(subj);
+    if (!isCurrentStudy()) return false;
     store.appendQuestions(questions);
   } catch (error) {
     if (version !== selectionVersion) return false;
@@ -47,8 +50,13 @@ export async function setSubject(subj) {
 
   const isYks = state.programMode === 'TYT' || state.programMode === 'AYT' || state.programMode === 'YDT';
   const courses = getSubjectCourses(subj);
+  const validPreferred = Array.isArray(preferredCourses)
+    ? preferredCourses.filter(c => courses.includes(c))
+    : [];
 
-  if (courses.length > 0) {
+  if (validPreferred.length > 0) {
+    store.setSelectedCourses(validPreferred);
+  } else if (courses.length > 0) {
     store.setSelectedCourses(isYks ? courses : [courses[0]]);
   } else {
     store.clearSelectedCourses();
@@ -75,6 +83,7 @@ export async function addSubjectRow(subjId) {
   const version = ++selectionVersion;
   try {
     const questions = await loadSubjectData(targetId);
+    if (!isCurrentStudy()) return false;
     store.appendQuestions(questions);
   } catch (error) {
     if (version !== selectionVersion) return false;
@@ -118,6 +127,7 @@ export async function switchRowSubject(oldSubjId, newSubjId) {
   const version = ++selectionVersion;
   try {
     const questions = await loadSubjectData(newSubjId);
+    if (!isCurrentStudy()) return;
     store.appendQuestions(questions);
   } catch (error) {
     if (version !== selectionVersion) return;

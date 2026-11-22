@@ -196,18 +196,18 @@ class EvrenClient:
         if response_format:
             payload["response_format"] = response_format
 
-        for attempt in range(5):
+        for attempt in range(3):
             try:
                 resp = requests.post(
                     f"{self.base_url}/chat/completions",
                     headers=self._headers(),
                     data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-                    timeout=self.timeout,
+                    timeout=(15, self.timeout),
                 )
-            except requests.exceptions.Timeout:
-                if attempt == 4:
+            except (requests.exceptions.Timeout, requests.exceptions.RequestException):
+                if attempt == 2:
                     raise
-                time.sleep(4.0 * (attempt + 1))
+                time.sleep(3.0 * (attempt + 1))
                 continue
             self._record_headers(resp)
             if resp.status_code == 429:

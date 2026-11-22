@@ -1,6 +1,14 @@
-import { onStateChange } from '../../app/state.ts';
+import { onStateChange, state } from '../../app/state.ts';
 import { renderDrawerCourses } from './selection.js';
 import { renderDrawerTopics } from './topics.js';
+
+export function syncDrawerProgramButtons(mode: string = state.programMode): void {
+  document.querySelectorAll<HTMLButtonElement>('[data-program]').forEach(button => {
+    const isActive = button.dataset.program === mode;
+    button.classList.toggle('active', isActive);
+    button.setAttribute('aria-pressed', String(isActive));
+  });
+}
 
 export function closeSubjectDrawer(): void {
   const overlay = document.getElementById('drawerOverlay');
@@ -20,6 +28,7 @@ export { setCourseFilterMode, updateCourseModeToggleVisibility };
 export function openSubjectDrawer(): void {
   const overlay = document.getElementById('drawerOverlay');
   if (overlay) overlay.classList.add('open');
+  syncDrawerProgramButtons();
   updateCourseModeToggleVisibility();
 
   const normalContainer = document.getElementById('drawerNormalSelectorContainer');

@@ -3,6 +3,7 @@ import type { Question } from '../data/question.ts';
 export type BookletFilterMode =
   | 'all'
   | 'rematch'
+  | 'review'
   | 'starred'
   | 'incorrect'
   | 'unanswered'
@@ -55,6 +56,14 @@ export function filterQuestionsByMode(
       const isIncorrect = Boolean(choice && choice !== q.dogru_cevap);
       const isQueued = Boolean(rematchIds && rematchIds.has(q.id));
       return isIncorrect || isQueued;
+    });
+  }
+  if (mode === 'review') {
+    return questions.filter(q => {
+      const choice = userChoices[q.id];
+      const isCorrect = Boolean(choice && choice === q.dogru_cevap);
+      const isQueued = Boolean(rematchIds && rematchIds.has(q.id));
+      return isCorrect && !isQueued;
     });
   }
   if (mode === 'starred') {

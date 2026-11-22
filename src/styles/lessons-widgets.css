@@ -1,0 +1,44 @@
+/* ========================================================= */
+/* HOCA ANLATIMI — EZBER KARTI                               */
+/* ========================================================= */
+
+.lesson-ezber-card {
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, #f59e0b 45%, var(--paper-border));
+  background: color-mix(in srgb, #f59e0b 8%, var(--paper-bg));
+}
+
+.lesson-ezber-card .lesson-section-kicker {
+  color: #b45309;
+  margin-bottom: 5px;
+}
+
+.lesson-ezber-box {
+  margin: 0;
+  padding: 8px 11px;
+  border-radius: 9px;
+  border-left: 3.5px solid #f59e0b;
+  background: var(--paper-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.lesson-ezber-line {
+  display: block;
+  font-size: 14.2px;
+  font-weight: 750;
+  line-height: 1.48;
+  color: var(--paper-text);
+  letter-spacing: -0.1px;
+}
+
+body.dark-mode .lesson-ezber-card .lesson-section-kicker {
+  color: #fbbf24;
+}
+
+@media (max-width: 720px) {
+  .lesson-ezber-line {
+    font-size: 13.8px;
+  }
+}

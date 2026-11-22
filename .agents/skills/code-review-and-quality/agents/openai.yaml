@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review And Quality"
+  short_description: "Project-specific code review and quality"
+  default_prompt: "Use $code-review-and-quality for the requested work in this repository."

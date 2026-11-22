@@ -107,6 +107,15 @@ test('çekirdek özellikler eklenti modüllerini doğrudan import edemez', async
   assert.equal(allowed.status, 0, allowed.output);
 });
 
+test('cevap çekirdeği karşılama özelliğine bağımlı olamaz', async () => {
+  const result = await checkFixture({
+    'src/features/answers/example.ts': "import '../welcome/auth-modal.ts';",
+    'src/features/welcome/auth-modal.ts': 'export {};',
+  });
+  assert.equal(result.status, 1, result.output);
+  assert.match(result.output, /\[Jenga İzolasyonu\].*welcome/);
+});
+
 test('app eklenti importları yalnızca bootstrap içinde kabul edilir', async () => {
   const plugin = 'export const search = true;\n';
   const source = "import { search } from '../features/search/init.ts';\nexport { search };\n";
@@ -131,6 +140,34 @@ test('data katmanı app katmanını import edemez', async () => {
   });
   assert.equal(result.status, 1, result.output);
   assert.match(result.output, /data katmanı app katmanına bağımlı olamaz/);
+});
+
+test('yeniden dışa aktarma ve dinamik import bağımlılık kurallarına tabidir', async () => {
+  for (const source of ["export * from '../classroom/plugin.ts';", "export const load = () => import('../classroom/plugin.ts');"]) {
+    const result = await checkFixture({
+      'src/features/answers/example.ts': source,
+      'src/features/classroom/plugin.ts': 'export const plugin = true;',
+    });
+    assert.equal(result.status, 1, result.output);
+    assert.match(result.output, /\[Jenga İzolasyonu\]/);
+  }
+  const missing = await checkFixture({ 'src/example.ts': "export * from './missing.ts';" });
+  assert.equal(missing.status, 1, missing.output);
+  assert.match(missing.output, /\[Eksik Import\]/);
+  const cycle = await checkFixture({
+    'src/a.ts': "export * from './b.ts';",
+    'src/b.ts': "import './a.ts';",
+  });
+  assert.equal(cycle.status, 1, cycle.output);
+  assert.match(cycle.output, /\[Döngüsel Bağımlılık\]/);
+});
+
+test('sessionStorage kapı dışında reddedilir, yorumlar ihlal sayılmaz', async () => {
+  const rejected = await checkFixture({ 'src/example.ts': "export const x = window.sessionStorage.getItem('key');" });
+  assert.equal(rejected.status, 1, rejected.output);
+  assert.match(rejected.output, /\[Kalıcılık Kapısı\]/);
+  const allowed = await checkFixture({ 'src/example.ts': '// sessionStorage yalnızca depolama kapısında kullanılır\nexport const x = 1;' });
+  assert.equal(allowed.status, 0, allowed.output);
 });
 
 test('soru kartı içi elemanlara tekil ID veya getElementById kullanımı reddedilir', async () => {

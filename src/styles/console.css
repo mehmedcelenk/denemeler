@@ -65,14 +65,6 @@ body.dark-mode .btn-square-console {
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-.console-btn-text {
-  display: block;
-  font-size: 11px;
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: 0.5px;
-}
-
 /* Hızlı Araçlar Çubuğu (Geri Al, Sıfırla, Zoom, Tam Ekran Yan Yana) */
 .console-tools-bar,
 .console-tools-grid {

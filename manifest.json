@@ -1,11 +1,11 @@
 {
-  "name": "Cenks — Dijital Sınav Kitapçığı",
-  "short_name": "Cenks",
-  "description": "Cenks — Dijital Sınav ve Soru Kitapçığı (AÖL, AÖF, YKS)",
+  "name": "ANLATAN SORULAR — Dijital Sınav Kitapçığı",
+  "short_name": "ANLATAN SORULAR",
+  "description": "ANLATAN SORULAR — Dijital Sınav ve Soru Kitapçığı (AÖL, AÖF, YKS)",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#ffffff",
+  "background_color": "#0f172a",
   "theme_color": "#0284c7",
   "icons": [
     {

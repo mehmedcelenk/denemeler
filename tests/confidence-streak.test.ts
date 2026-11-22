@@ -15,19 +15,20 @@ initLibrary();
 test('addStreakPoints ve resetOrDeductStreak puanları doğru günceller', () => {
   store.setWaterStreak(0, false);
   addStreakPoints(3);
-  assert.equal(state.waterStreak, 3, 'Damla serisi 3 olmalı');
+  assert.equal(state.waterStreak, 3, 'Yıldız sayısı 3 olmalı');
 
   resetOrDeductStreak(1);
-  assert.equal(state.waterStreak, 2, 'Düşüş sonrası seri 2 olmalı');
+  assert.equal(state.waterStreak, 2, 'Düşüş sonrası sayı 2 olmalı');
 
   resetOrDeductStreak(10);
-  assert.equal(state.waterStreak, 0, 'Seri 0 altına inmemeli');
+  assert.equal(state.waterStreak, 0, 'Sayı 0 altına inmemeli');
 });
 
-test('handleSelectOpticalBubble: İlk tıklama taslak bırakır, ikinci tıklama onaylar ve doğru cevapta seri artar', () => {
+test('handleSelectOpticalBubble: İlk tıklama taslak bırakır, ikinci tıklama onaylar ve kredi kadar yıldız ekler', () => {
   const dummyQ: Question = {
     id: 88881,
     ders: 'MATEMATİK – 1',
+    kredi: 6,
     soru: 'Test sorusu',
     secenekler: { A: '1', B: '2', C: '3', D: '4' },
     dogru_cevap: 'B',
@@ -35,23 +36,25 @@ test('handleSelectOpticalBubble: İlk tıklama taslak bırakır, ikinci tıklama
   store.setAllData([dummyQ]);
   store.setBookletQuestions([dummyQ]);
   store.clearAllUserMarkedChoices(false);
+  store.setRematchQuestionIds([], false);
   store.setWaterStreak(0, false);
 
   // 1. Tıklama: henüz nihai işaretleme kaydedilmez
   handleSelectOpticalBubble(88881, 'B');
   assert.equal(state.userMarkedChoices[88881], undefined, 'İlk tıklamada nihai cevap verilmemeli');
-  assert.equal(state.waterStreak, 0, 'İlk tıklamada seri değişmemeli');
+  assert.equal(state.waterStreak, 0, 'İlk tıklamada yıldız değişmemeli');
 
-  // 2. Tıklama: aynı şıkka tekrar tıklandığında cevap onaylanır
+  // 2. Tıklama: aynı şıkka tekrar tıklandığında cevap onaylanır (MAT = 6 kredi -> +6 yıldız)
   handleSelectOpticalBubble(88881, 'B');
   assert.equal(state.userMarkedChoices[88881], 'B', 'Şık B olarak nihai işaretlenmeli');
-  assert.equal(state.waterStreak, 1, 'Doğru cevap damla serisini artırmalı');
+  assert.equal(state.waterStreak, 6, 'MAT (6 kredi) doğru cevabı 6 yıldız eklemeli');
 });
 
-test('handleSelectOpticalBubble: Yanlış cevap verildiğinde soru Rövanş sepetine eklenir', () => {
+test('handleSelectOpticalBubble: Yanlış cevapta yıldız düşmez ve soru Rövanş sepetine eklenir', () => {
   const dummyQ: Question = {
     id: 88882,
     ders: 'İNGİLİZCE – 1',
+    kredi: 4,
     soru: 'Guess question',
     secenekler: { A: 'Apple', B: 'Banana', C: 'Orange', D: 'Peach' },
     dogru_cevap: 'C',
@@ -62,11 +65,32 @@ test('handleSelectOpticalBubble: Yanlış cevap verildiğinde soru Rövanş sepe
   store.setRematchQuestionIds([], false);
   store.setWaterStreak(5, false);
 
-  // Yanlış şık olan A şıkkına 2 kez tıkla
   handleSelectOpticalBubble(88882, 'A');
   handleSelectOpticalBubble(88882, 'A');
 
   assert.equal(state.userMarkedChoices[88882], 'A', 'A şıkkı işaretlenmeli');
   assert.ok(state.rematchQuestionIds.has(88882), 'Yanlış bilinen soru Rövanşlara alınmalı');
-  assert.equal(state.waterStreak, 4, 'Yanlış cevap seri puanını düşürmeli');
+  assert.equal(state.waterStreak, 5, 'Yanlış cevap yıldız düşürmemeli');
+});
+
+test('Rövanş sepetindeki soru doğru bilindiğinde kredinin %50 yıldızını verir', () => {
+  const dummyQ: Question = {
+    id: 88883,
+    ders: 'MATEMATİK – 2',
+    kredi: 6,
+    soru: 'Rematch sorusu',
+    secenekler: { A: '1', B: '2', C: '3', D: '4' },
+    dogru_cevap: 'D',
+  };
+  store.setAllData([dummyQ]);
+  store.setBookletQuestions([dummyQ]);
+  store.clearAllUserMarkedChoices(false);
+  store.setRematchQuestionIds([88883], false);
+  store.setWaterStreak(10, false);
+
+  handleSelectOpticalBubble(88883, 'D');
+  handleSelectOpticalBubble(88883, 'D');
+
+  assert.equal(state.waterStreak, 13, 'Rövanşta 6 kredilik MAT sorusu %50 (+3) yıldız vermeli');
+  assert.equal(state.rematchQuestionIds.has(88883), false, 'Rövanş çözüldüğünde sepetten çıkmalı');
 });

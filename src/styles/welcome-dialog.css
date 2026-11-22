@@ -144,6 +144,19 @@
   gap: 12px;
 }
 
+.welcome-auth-fields[hidden] { display: none; }
+
+.welcome-auth-btn {
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.auth-status-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .welcome-auth-fields input {
   width: 100%;
   height: 46px;

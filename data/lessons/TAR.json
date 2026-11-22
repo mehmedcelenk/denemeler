@@ -1,0 +1,40 @@
+[
+  {
+    "questionId": 562,
+    "subject": "TAR",
+    "title": "Anadolu'da Yazının Başlangıcı ve Kültepe",
+    "explanation": "Bak şimdi, tarihte altın kural şudur: Yazı yoksa \"tarih\" yoktur, sadece öncesi vardır. Anadolu'nun tarih sahnesine çıkış biletini onlara Mezopotamya'dan gelen ticaret kolonileri verdi. Özellikle Asurluların kurduğu bu ticaret merkezlerinde kullandıkları çivi yazılı tabletler sayesinde Anadolu'da yazılı dönem başlamış oldu 🎯. Bu işin ana merkezi ise Kayseri civarındaki Kültepe'dir.\n\nSorumuz bizden doğrudan Asur tabletlerinin nerede bulunduğunu istediği için cevap hemen Kültepe yani A şıkkı oluyor 🔑. Burada çoğu kişi Çatalhöyük gibi isimleri görünce şaşırıyor ancak dikkat et; Çatalhöyük çok eskidir ama orada yazı değil, duvar resimleri vardı.",
+    "concepts": [
+      {
+        "term": "ticaret kolonileri",
+        "definition": "Yabancı tüccarların başka bir bölgede kurduğu küçük ticaret yerleşimleri.",
+        "example": "Asurluların Anadolu'da kurduğu ticaret noktaları.",
+        "emoji": "💼"
+      },
+      {
+        "term": "tabletler",
+        "definition": "Kağıt icat edilmeden önce üzerine yazı yazılan pişmiş kil levhalar.",
+        "example": "Kültepe'de bulunan ticari kayıtlar.",
+        "emoji": "📜"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  },
+  {
+    "questionId": 563,
+    "subject": "TAR",
+    "title": "Takvimlerin Mantığı ve Miladi Takvim",
+    "explanation": "Zamanı ölçmek için farklı yöntemler var ama sınavların favorisi güneş ve ay yılı ayrımıdır. Ay yılına dayananlar sürekli kayarken, güneş yılına dayanan sistemler mevsimlerle uyumludur. Dünyanın ortak dili haline gelen ve Hz. İsa'nın doğumunu başlangıç sayan güneş yılı esaslı sisteme Miladi Takvim diyoruz. 🌍 Modern dünyaya ayak uydurmak ve ticareti kolaylaştırmak için dünya genelinde bu sistem standart kabul edildi.\n\nCumhuriyet döneminde, yani 1 Ocak 1926'da biz de uluslararası ilişkilerimizi düzeltmek için bu evrensel sisteme geçtik. Dolayısıyla cevabımız A şıkkıdır. 🎯 Genelde öğrenciler bunu Osmanlı'daki mali işler için kullanılan Rumi takvimle karıştırır ancak günümüzdeki resmi tarihler hep Miladi üzerinden yürür.",
+    "concepts": [
+      {
+        "term": "Miladi Takvim",
+        "definition": "Güneş yılı esasına dayanan ve bugün tüm dünyada ortak olarak kullanılan takvim sistemi.",
+        "example": "$2024$ yılı şeklinde ifade ettiğimiz zaman dilimi Miladi takvime göredir.",
+        "emoji": "📅"
+      }
+    ],
+    "model": "gemma-4-31b",
+    "version": 6
+  }
+]

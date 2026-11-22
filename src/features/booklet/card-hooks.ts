@@ -4,6 +4,7 @@ export interface CardHook {
   stem?(q: Question, html: string): string;
   header?(q: Question): string;
   toolbar?(q: Question): string;
+  below?(q: Question): string;
 }
 
 const hooks: CardHook[] = [];
@@ -29,6 +30,13 @@ export function renderHeaderExtraHooks(q: Question): string {
 export function renderToolbarExtraHooks(q: Question): string {
   return hooks
     .map(hook => hook.toolbar?.(q) ?? '')
+    .filter(Boolean)
+    .join('');
+}
+
+export function renderBelowExtraHooks(q: Question): string {
+  return hooks
+    .map(hook => hook.below?.(q) ?? '')
     .filter(Boolean)
     .join('');
 }

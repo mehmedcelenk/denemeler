@@ -11,6 +11,7 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Başlangıç akışı | `src/app/bootstrap.js` |
 | Karşılama portalı ve giriş akışları | `src/features/welcome/init.ts`, `welcome-view.ts` & `src/styles/welcome.css` |
 | `data-action` kaydı ve olay delegasyonu | `src/app/actions.ts`, `src/app/events.js` & özelliklerin `init.ts` modülleri |
+| Çalışma ekranı alt gezinme çubuğu | `index.html` & `src/styles/bottom-nav.css`; eylemler ilgili `welcome`, `subjects`, `booklet`, `classroom` ve `appearance` modüllerinde |
 | Paylaşılan durum, tipler ve olay omurgası | `src/app/state.ts`, `state-types.ts` & `state-events.ts` |
 | Kalıcı depolamanın merkezi kapısı | `src/app/storage.ts`; anahtar sözlüğü: `src/shared/storage-keys.ts` |
 | Soru veri biçimi/doğrulama | `src/data/question.ts` |
@@ -21,6 +22,7 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | MEB Kitap İndirme & Dönem Markdown Dilimleme | `scripts/core/download_all_courses.py` & `scripts/core/organize_course_folders.py` |
 | Hassas Kavram & Formül Katalogları | `scripts/core/*_precise_catalog.py` & `data/concepts/` |
 | JSON yükleme & Supabase Hibrit Fallback | `src/data/questions.js` & `src/data/supabase-client.ts` |
+| Misafir/hesap çalışma sahipliği ve yerel veri ayrımı | `src/features/welcome/study-session.ts`, `src/app/state.ts`, `src/app/storage.ts`; sözleşme: [GUEST_SESSION.md](GUEST_SESSION.md) |
 | Supabase Auth, Oturum & Bulut İlerleme Eşitleme | `src/data/supabase-auth.ts` & `src/features/welcome/auth-modal.ts` |
 | Supabase DDL Şeması & Toplu Aktarım | `supabase/schema.sql` & `scripts/core/sync_to_supabase.py` |
 | Ders adları/kodları | `src/data/subjects.js` |
@@ -35,10 +37,12 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 | Soru kartı, şıklar, sayfalama ve eklenti kancaları | `src/features/booklet/render.js`, `pagination.ts`, `question-card.ts`, `card-query.ts` & `card-hooks.ts` |
 | Metin vurgulama (fosfor) ve şık eleme | `src/features/annotations/highlighter.ts`, `highlight-store.ts` & `eliminate-choice.ts` |
 | Soru Özellik Çubuğu & Şık Eleme | `src/features/booklet/features-bar.ts` |
+| Hocadan Öğren (EVREN Ön-Üretilmiş Anlatım) | `src/features/lessons/init.ts`, `lesson-panel.ts`, `lesson-view.ts`, `lesson-bubble.ts`, `rich-text.ts`, `src/data/lesson.ts`, `src/styles/lessons*.css` & `scripts/core/generate_lessons_evren.py` |
 | Cevap işaretleme/geri alma | `src/features/answers/marking.ts` |
 | Cevap ve ipucu gösterme | `src/features/answers/marking.ts` |
 | Cevapların kalıcı kaydı | `src/features/answers/storage.ts` |
 | Seri ve kombo bildirimleri | `src/features/gamification/combo-toast.ts` & `src/shared/combo.ts` |
+| Üst HUD maskot rozeti & profil seçimi | `src/features/mascot/init.ts`, `mascot-companion.ts`, `src/shared/mascot-types.ts`, `src/shared/mascot-svgs.ts`, `src/shared/mascot-lines.ts`, `src/data/mascot-profile.ts` & `src/styles/mascot.css` |
 | Kelime balonu | `src/features/english/vocabulary.js` |
 | Kelime meali (satır arası çeviri) | `src/features/english/interlinear.ts` |
 | Çeviri/röntgen/tuzak açıklaması | `src/features/english/translations.js` |
@@ -55,6 +59,8 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 Başlangıçta kayıtlı tercihler okunur, ilk dersin JSON'u yüklenip doğrulanır ve kitapçık çizilir. `src/data/questions.js` yalnızca doğrulanmış soruları döndürür; çağıran uygulama/özellik modülü bunları `store.appendQuestions` ile state'e ekler. Diğer ders verileri ihtiyaç oldukça yüklenir. Tekrarlanan eşzamanlı yüklemeler aynı promise'i kullanır.
 
 Çekirdek özellikler (`answers`, `booklet`, `subjects`, `appearance`) silinebilir eklentileri doğrudan import etmez. Cevap yan etkileri `app/state-events.ts` olaylarıyla, soru kartı uzantıları `booklet/card-hooks.ts` kancalarıyla bağlanır; eklentiler kayıtlarını `app/bootstrap.js` içindeki kendi `init*` fonksiyonlarında yapar. Ortak değişkenlerin tek kaynağı `app/state.ts` dosyasıdır. Kalıcılık işlemleri yalnızca `app/storage.ts` üzerinden yürür; `shared` saf yardımcıları uygulamayı başlatmaz ve DOM'a bağlı değildir.
+
+`app/study-context.ts`, kullanıcı eyleminden veya gecikmiş sonuçtan önce çalışma sahibini olay yoluyla uzlaştırır; işlem nesli değişmişse eski eylemi reddeder. İlerleme eşitleme isteği de olay üzerinden karşılama özelliğine iletilir; cevap çekirdeği bu özelliği import etmez.
 
 Python akışı:
 
@@ -74,7 +80,7 @@ Arayüz kodu Python içinde tutulmaz. Veri güncellemesi HTML/CSS/JS dosyaların
 
 - ESLint: JavaScript'teki tanımsız/değersiz değişkenler ve temel hatalar.
 - TypeScript strict: `.ts` dosyalarındaki veri sözleşmeleri; mevcut `.js` dosyalarının tamamı için garanti değildir.
-- Mimari kontrol: eksik import, döngüsel import, katman/Jenga izolasyonu ihlali, 300 satır sınırı, HTML'ye gömülü JS/CSS. Satır sınırı `src/`, `functions/`, `edge/`, testler, bakım betikleri ve kök yapılandırma kaynakları için geçerlidir.
+- Mimari kontrol: import, yeniden dışa aktarma ve sabit yollu dinamik importlarda eksik veya döngüsel bağımlılık, katman/Jenga izolasyonu ihlali, `localStorage` ve `sessionStorage` için merkezi kapı, 300 satır sınırı ve HTML'ye gömülü JS/CSS. Satır sınırı `src/`, `functions/`, `edge/`, testler, bakım betikleri ve kök yapılandırma kaynakları için geçerlidir.
 - Veri testleri: tüm ders JSON'larının yapısı, benzersiz soru kimlikleri, manifest sayıları, hatalı verinin reddi ve Türkçe arama.
 - Tarayıcı testleri: gerçek üretim çıktısında ders/arama, cevap kaydı ve geri alma, İngilizce araçları, görünüm ve mobil açılış.
 
@@ -85,3 +91,11 @@ Arayüz kodu Python içinde tutulmaz. Veri güncellemesi HTML/CSS/JS dosyaların
 Kitapçık render fonksiyonu halen HTML şablonu üretir. Yeni bir kart türü veya daha karmaşık bölüm eklenirse ayrı renderer'a çıkar. React ihtiyacı ileride değerlendirilirken veri sözleşmeleri ve saf yardımcılar yeniden kullanılabilir.
 
 Bu düzen AI değişikliklerini kontrol edilebilir hale getirir; otomatik kontroller her olası davranış hatasını tespit etmez. Özellikle fiziksel yazdırma ayrıca kullanıcı cihazında kontrol gerektirir.
+
+## Yayın ve tarayıcı önbelleği
+
+`npm run dev`, HTML girişindeki üretim işaretçilerini `src/main.js` ve `src/styles/index.css` kaynaklarına yönlendirir. Böylece geliştirme önizlemesi eski `dist/assets/app.js` veya `styles.css` dosyalarına bağlı kalmaz. `npm run preview` ise üretilen `dist/` çıktısını sunar.
+
+Üretim HTML dosyaları, Vite'ın o derlemede ürettiği içerik özetli JavaScript ve CSS dosyalarına işaret eder. `emptyOutDir: false`, aynı `dist/` üzerinde ardışık derlemelerde eski varlıkları korur; yayın öncesinde `dist/` temizlenmemeli ve farklı bir makineden yayınlanacaksa önce önceki yayın çıktısındaki `assets/` dosyaları taşınmalıdır. Aksi halde eski sekmelerin sonradan istediği parçalar sunucuda bulunmayabilir. `sw.js` bildirim işlevini korur; güncelleme sırasında açık sayfayı yenilemez.
+
+`npm run deploy:surge` yayından önce canlı `release-assets.json` kaydındaki bütün eski varlıkların yerel `dist/assets/` içinde aynı içerikle bulunduğunu doğrular; eksiklik, bozuk kayıt veya bağlantı hatasında yayını durdurur. Manifesti olmayan ilk eski yayında, eksiksiz eski yayın çıktısı `CENKS_PREVIOUS_DIST` ile belirtilir; HTML'in canlı sürümle eşleşmesi ve eski varlıkların yeni çıktıda bulunması zorunludur. Bu kaynak, daha eski açık sekmeler için de korunması gereken tüm önceki `assets/` dosyalarını içermelidir.

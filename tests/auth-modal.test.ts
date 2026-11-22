@@ -165,7 +165,7 @@ test('syncCloudProgress: ağ/sunucu hatasında buluttaki veriyi ezmez ve save ç
   });
 });
 
-test('handleSignOut: oturum kapatıldığında cevaplar, yıldızlar, oturum ve kullanıcı adı tamamen temizlenir', async () => {
+test('handleSignOut: çıkışta görünür çalışma temizlenir, hesap verisi tekrar girişte korunur', async () => {
   await withStorage(async () => {
     setSupabaseConfigOverride({ url: 'https://mock.supabase.co', anonKey: 'key-123' });
     saveActiveSession(mockSession);
@@ -175,7 +175,6 @@ test('handleSignOut: oturum kapatıldığında cevaplar, yıldızlar, oturum ve 
     store.setEliminatedChoices({ 201: ['C', 'D'] });
     store.setEliminatedWrongChoices({ 201: 'C' });
     store.setWaterStreak(10);
-    store.setAiExplanations({ 201: { query: 'soru', reply: 'yanit', updatedAt: 123 } });
     writeJson(StorageKeys.RESUME_STATE, { subject: 'TDE' });
     writeString(StorageKeys.CLASSROOM_SESSION, 'room-session-1');
 
@@ -198,10 +197,14 @@ test('handleSignOut: oturum kapatıldığında cevaplar, yıldızlar, oturum ve 
       assert.deepEqual(state.eliminatedChoices, {});
       assert.deepEqual(state.eliminatedWrongChoices, {});
       assert.equal(readString(StorageKeys.USER_NAME), '');
-      assert.equal(readString(StorageKeys.RESUME_STATE), '');
+      assert.equal(readString(StorageKeys.RESUME_STATE), null);
       assert.equal(readString(StorageKeys.CLASSROOM_SESSION), 'room-session-1'); // Eski oda kaydı geçişte korunur.
       assert.equal(state.waterStreak, 0);
-      assert.deepEqual(state.aiExplanations, {});
+      saveActiveSession(mockSession);
+      assert.deepEqual(state.userMarkedChoices, { 201: 'B', 202: 'A' });
+      assert.deepEqual([...state.starredQuestionIds], [201]);
+      assert.deepEqual([...state.rematchQuestionIds], [202]);
+      assert.equal(JSON.parse(readString(StorageKeys.RESUME_STATE) || '{}').subject, 'TDE');
     } finally {
       globalThis.fetch = originalFetch;
       setSupabaseConfigOverride(null);

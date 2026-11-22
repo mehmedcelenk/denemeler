@@ -81,7 +81,6 @@ test('welcome: oda onayını bekler; reddedilen girişte portal açık kalır', 
     const roomInput = element('welcomeRoomId');
     roomInput.value = '  Oda-99  ';
     assert.equal(portal.innerHTML.includes('welcomeNameDialog'), false);
-    assert.ok(portal.innerHTML.includes('>Gir</button>'));
     assert.equal(clickJoin(), true);
     await settle();
     assert.equal(portal.hidden, false, 'Sunucudan yanıt gelmeden giriş ekranı kapanmamalı');

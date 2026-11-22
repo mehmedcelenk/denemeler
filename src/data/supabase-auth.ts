@@ -1,4 +1,6 @@
 import { getSupabaseConfig } from './supabase-client.ts';
+import { parseProgressRow, type UserProgressData } from './progress-validation.ts';
+export type { UserProgressData } from './progress-validation.ts';
 
 export interface AuthUser {
   id: string;
@@ -12,14 +14,6 @@ export interface AuthSession {
   refreshToken: string;
   user: AuthUser;
   expiresAt?: number;
-}
-
-export interface UserProgressData {
-  choices?: Record<string, string>;
-  starred?: number[];
-  rematch?: number[];
-  eliminatedChoices?: Record<string, string[]>;
-  lastSession?: Record<string, unknown>;
 }
 
 export interface AuthResponse<T> {
@@ -202,15 +196,24 @@ export async function signOutFromSupabase(accessToken: string, timeoutMs = 4000)
   }
 }
 
+let remoteResponsibleColumnMissing = false;
+let remoteStarsColumnMissing = false;
+
+export function resetResponsibleColumnFallbackForTest(): void {
+  remoteResponsibleColumnMissing = false;
+  remoteStarsColumnMissing = false;
+}
+
 export async function saveUserProgressToSupabase(
   session: AuthSession,
   progress: UserProgressData,
-  timeoutMs = 5000
+  timeoutMs = 5000,
+  signal?: AbortSignal
 ): Promise<boolean> {
   const config = getSupabaseConfig();
   if (!config || !session?.accessToken || !session?.user?.id) return false;
 
-  const row = {
+  const baseRow: Record<string, unknown> = {
     user_id: session.user.id,
     choices: progress.choices ?? {},
     starred: progress.starred ?? [],
@@ -219,22 +222,40 @@ export async function saveUserProgressToSupabase(
     last_session: progress.lastSession ?? null,
     updated_at: new Date().toISOString(),
   };
+  if (!remoteResponsibleColumnMissing) baseRow.responsible_courses = progress.responsibleCourses ?? {};
+  if (!remoteStarsColumnMissing) baseRow.stars = progress.stars ?? 0;
 
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
+  const reqSignal = signal ? AbortSignal.any([signal, controller.signal]) : controller.signal;
+  const postRow = (payload: Record<string, unknown>) => fetch(`${config.url}/rest/v1/user_progress`, {
+    method: 'POST',
+    headers: {
+      apikey: config.anonKey,
+      Authorization: `Bearer ${session.accessToken}`,
+      'Content-Type': 'application/json',
+      Prefer: 'resolution=merge-duplicates,return=minimal',
+    },
+    body: JSON.stringify(payload),
+    signal: reqSignal,
+  });
+
   try {
-    const res = await fetch(`${config.url}/rest/v1/user_progress`, {
-      method: 'POST',
-      headers: {
-        apikey: config.anonKey,
-        Authorization: `Bearer ${session.accessToken}`,
-        'Content-Type': 'application/json',
-        Prefer: 'resolution=merge-duplicates,return=minimal',
-      },
-      body: JSON.stringify(row),
-      signal: controller.signal,
-    });
-    return res.ok;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const res = await postRow(baseRow);
+      if (res.ok) return true;
+      if (res.status !== 400) return false;
+      const errText = await res.text().catch(() => '');
+      let dropped = false;
+      if (!remoteResponsibleColumnMissing && errText.includes('responsible_courses')) {
+        remoteResponsibleColumnMissing = true; delete baseRow.responsible_courses; dropped = true;
+      }
+      if (!remoteStarsColumnMissing && errText.includes('stars')) {
+        remoteStarsColumnMissing = true; delete baseRow.stars; dropped = true;
+      }
+      if (!dropped) return false;
+    }
+    return false;
   } catch {
     return false;
   } finally {
@@ -244,7 +265,8 @@ export async function saveUserProgressToSupabase(
 
 export async function fetchUserProgressFromSupabase(
   session: AuthSession,
-  timeoutMs = 5000
+  timeoutMs = 5000,
+  signal?: AbortSignal
 ): Promise<UserProgressData | null> {
   const config = getSupabaseConfig();
   if (!config || !session?.accessToken || !session?.user?.id) return null;
@@ -256,7 +278,7 @@ export async function fetchUserProgressFromSupabase(
     const res = await fetch(endpoint, {
       method: 'GET',
       headers: { apikey: config.anonKey, Authorization: `Bearer ${session.accessToken}`, Accept: 'application/json' },
-      signal: controller.signal,
+      signal: signal ? AbortSignal.any([signal, controller.signal]) : controller.signal,
     });
     if (!res.ok) return null;
     const json: unknown = await res.json();
@@ -264,16 +286,7 @@ export async function fetchUserProgressFromSupabase(
       if (json.length === 0) {
         return { choices: {}, starred: [], rematch: [], eliminatedChoices: {} };
       }
-      if (json[0] && typeof json[0] === 'object') {
-        const row = json[0] as Record<string, unknown>;
-        return {
-          choices: (row.choices as Record<string, string>) ?? {},
-          starred: (row.starred as number[]) ?? [],
-          rematch: (row.rematch as number[]) ?? [],
-          eliminatedChoices: (row.eliminated_choices as Record<string, string[]>) ?? {},
-          lastSession: (row.last_session as Record<string, unknown>) ?? undefined,
-        };
-      }
+      return parseProgressRow(json[0]);
     }
     return null;
   } catch {

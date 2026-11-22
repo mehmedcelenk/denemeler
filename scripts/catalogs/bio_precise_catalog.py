@@ -1,261 +1,173 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""MEB Biyoloji (1–4) Dönem Bazlı Atomik, Sıfırdan Öğreten ve Sınav Şifreli Kavram Katalogu."""
+"""MEB BIO Yüksek Hassasiyetli Kanonik Kavram ve Terim Sözlüğü."""
 
 from typing import Any, Dict, List
 
 PRECISE_BIO_CONCEPTS: List[Dict[str, Any]] = [
-    # ==========================================
-    # BİYO 1: YAŞAM BİLİMİ BİYOLOJİ (ATOMİK)
-    # ==========================================
     {
-        "id": "bio_homeostazi_ve_adaptasyon",
-        "term": "Homeostazi (İç Denge) ve Adaptasyon",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 18},
-        "tanim_by_donem": {
-            1: (
-                "Dış hava çok sıcak veya çok soğuk olsa da vücudumuzun tıpkı **akıllı bir klima (termostat)** gibi iç sıcaklığını $36,5\\,^\\circ\\text{C}$'de sabit tutmasına **Homeostazi**; devenin hörgücünde yağ depolaması gibi kalıtsal uyumlara ise **Adaptasyon** denir.\n"
-                "💡 Sınav Şifresi: Terleme, titreme ve boşaltım doğrudan **homeostaziyi (kararlı iç dengeyi)** korumak içindir; tüm canlılarda ortaktır!"
-            ),
-        },
-        "pattern": r"homeostazi[a-zçğıöşü]*|adaptasyon[a-zçğıöşü]*|kararlı iç denge",
+        "id": 'bio_homeostazi_ve_adaptasyon',
+        "term": 'Homeostazi (İç Denge) ve Adaptasyon',
+        "sayfa": 18,
+        "tanim": "Dış hava çok sıcak veya çok soğuk olsa da vücudumuzun tıpkı **akıllı bir klima (termostat)** gibi iç sıcaklığını $36,5\\,^\\circ\\text{C}$'de sabit tutmasına **Homeostazi**; devenin hörgücünde yağ depolaması gibi kalıtsal uyumlara ise **Adaptasyon** denir.\n💡 Hile: Terleme, titreme ve boşaltım doğrudan **homeostaziyi (kararlı iç dengeyi)** korumak içindir; tüm canlılarda ortaktır!",
+        "pattern": '\\bhomeostazi[a-zçğıöşü]*|\\badaptasyon[a-zçğıöşü]*|\\bkararlı iç denge\\b',
     },
     {
-        "id": "bio_metabolizma_anabolizma_katabolizma",
-        "term": "Metabolizma: Anabolizma (Yapım) ve Katabolizma (Yıkım)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 20},
-        "tanim_by_donem": {
-            1: (
-                "Küçük Lego parçalarını birleştirip büyük bina inşa etmeye **Anabolizma (Özümleme / Dehidrasyon)**; büyük besinleri parçalayıp yıkmaya ise **Katabolizma (Yadımlama / Hidroliz)** denir.\n"
-                "💡 Sınav Şifresi: **A**nabolizma = **A**nne yapar (Fotosentez, protein sentezi; gençlerde $A > K$); **K**atabolizma = **K**ırar/Yıkar (Solunum, sindirim; yaşlılarda $K > A$)."
-            ),
-        },
-        "pattern": r"tüm canlılarda ortaktır|canlıların ortak|anabolizma|katabolizma|metabolizma[a-zçğıöşü]*|bazal metabolizma|dehidrasyon|hidroliz|inorganik[a-zçğıöşü]*",
+        "id": 'bio_metabolizma_anabolizma_katabolizma',
+        "term": 'Metabolizma: Anabolizma (Yapım) ve Katabolizma (Yıkım)',
+        "sayfa": 20,
+        "tanim": 'Küçük Lego parçalarını birleştirip büyük bina inşa etmeye **Anabolizma (Özümleme / Dehidrasyon)**; büyük besinleri parçalayıp yıkmaya ise **Katabolizma (Yadımlama / Hidroliz)** denir.\n💡 Hile: **A**nabolizma = **A**nne yapar (Fotosentez, protein sentezi; gençlerde $A > K$); **K**atabolizma = **K**ırar/Yıkar (Solunum, sindirim; yaşlılarda $K > A$).',
+        "pattern": '\\btüm canlılarda ortaktır\\b|\\bcanlıların ortak\\b|\\banabolizma\\b|\\bkatabolizma\\b|\\bmetabolizma[a-zçğıöşü]*|\\bbazal metabolizma\\b|\\bdehidrasyon\\b|\\bhidroliz\\b|\\binorganik[a-zçğıöşü]*',
     },
     {
-        "id": "bio_karbonhidratlar",
-        "term": "Karbonhidratlar (Glikoz, Nişasta, Glikojen, Selüloz, Kitin)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 28},
-        "tanim_by_donem": {
-            1: (
-                "Vücudun **ilk sırada kullandığı acil yakıttır** (Glikozit bağı taşırlar). Tek şekerliler **Monosakkarit** (Glikoz, Fruktoz, Galaktoz, $5\\text{C}$ Riboz/Deoksiriboz); çok şekerliler **Polisakkarit**'tir.\n"
-                "💡 Sınav Şifresi: Bitkisel depo **Nişasta**; Hayvan, mantar ve bakteri deposu **Glikojen**; Bitki duvarı **Selüloz**; Böcek iskeleti ve mantar duvarı ise yapısında **Azot ($\\text{N}$)** bulunduran **Kitin**'dir!"
-            ),
-        },
-        "pattern": r"monosakkarit[a-zçğıöşü]*|disakkarit[a-zçğıöşü]*|polisakkarit[a-zçğıöşü]*|glikoz[a-zçğıöşü]*|fruktoz|galaktoz|maltoz|sükroz|sakkaroz|laktoz|nişasta[a-zçğıöşü]*|glikojen[a-zçğıöşü]*|selüloz[a-zçğıöşü]*|\bkitin[a-zçğıöşü]*|karbonhidrat[a-zçğıöşü]*",
+        "id": 'bio_karbonhidratlar',
+        "term": 'Karbonhidratlar (Glikoz, Nişasta, Glikojen, Selüloz, Kitin)',
+        "sayfa": 28,
+        "tanim": "Vücudun **ilk sırada kullandığı acil yakıttır** (Glikozit bağı taşırlar). Tek şekerliler **Monosakkarit** (Glikoz, Fruktoz, Galaktoz, $5\\text{C}$ Riboz/Deoksiriboz); çok şekerliler **Polisakkarit**'tir.\n💡 Hile: Bitkisel depo **Nişasta**; Hayvan, mantar ve bakteri deposu **Glikojen**; Bitki duvarı **Selüloz**; Böcek iskeleti ve mantar duvarı ise yapısında **Azot ($\\text{N}$)** bulunduran **Kitin**'dir!",
+        "pattern": '\\bmonosakkarit[a-zçğıöşü]*|\\bdisakkarit[a-zçğıöşü]*|\\bpolisakkarit[a-zçğıöşü]*|\\bglikoz[a-zçğıöşü]*|\\bfruktoz\\b|\\bgalaktoz\\b|\\bmaltoz\\b|\\bsükroz\\b|\\bsakkaroz\\b|\\blaktoz\\b|\\bnişasta[a-zçğıöşü]*|\\bglikojen[a-zçğıöşü]*|\\bselüloz[a-zçğıöşü]*|\\bkitin[a-zçğıöşü]*|\\bkarbonhidrat[a-zçğıöşü]*',
     },
     {
-        "id": "bio_lipitler_ve_proteinler",
-        "term": "Lipitler (Yağlar) ve Proteinler",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 34},
-        "tanim_by_donem": {
-            1: (
-                "**Lipitler** (Ester bağı: Trigliserit, hücre zarındaki çift katlı **Fosfolipit**, hormon yapan **Steroit**) en çok enerji veren yedek depodur; **Proteinler** ise **Amino asitlerin** **Peptit bağı** ile dizilmesiyle oluşan vücudun ana inşaat malzemesidir.\n"
-                "💡 Sınav Şifresi: Açlıkta kullanım sırası **Karbonhidrat $\\to$ Yağ $\\to$ Protein (KAP)**; $1$ gramının verdiği enerji sırası ise **Yağ $>$ Protein $>$ Karbonhidrat**'tır!"
-            ),
-        },
-        "pattern": r"fosfolipit[a-zçğıöşü]*|trigliserit|steroit[a-zçğıöşü]*|kolesterol|peptit bağ[a-zçğıöşü]*|amino asit[a-zçğıöşü]*|protein[a-zçğıöşü]*|hemoglobin|fibrinojen|antikor|lipi[td][a-zçğıöşü]*",
+        "id": 'bio_lipitler_ve_proteinler',
+        "term": 'Lipitler (Yağlar) ve Proteinler',
+        "sayfa": 34,
+        "tanim": "**Lipitler** (Ester bağı: Trigliserit, hücre zarındaki çift katlı **Fosfolipit**, hormon yapan **Steroit**) en çok enerji veren yedek depodur; **Proteinler** ise **Amino asitlerin** **Peptit bağı** ile dizilmesiyle oluşan vücudun ana inşaat malzemesidir.\n💡 Hile: Açlıkta kullanım sırası **Karbonhidrat $\\to$ Yağ $\\to$ Protein (KAP)**; $1$ gramının verdiği enerji sırası ise **Yağ $>$ Protein $>$ Karbonhidrat**'tır!",
+        "pattern": '\\bfosfolipit[a-zçğıöşü]*|\\btrigliserit\\b|\\bsteroit[a-zçğıöşü]*|\\bkolesterol\\b|\\bpeptit bağ[a-zçğıöşü]*|\\bamino asit[a-zçğıöşü]*|\\bprotein[a-zçğıöşü]*|\\bhemoglobin\\b|\\bfibrinojen\\b|\\bantikor\\b|\\blipi[td][a-zçğıöşü]*',
     },
     {
-        "id": "bio_vitaminler",
-        "term": "Vitaminler (Suda ve Yağda Çözünenler)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 42},
-        "tanim_by_donem": {
-            1: (
-                "Sindirilmeden hücre zarından doğrudan geçen, **asla enerji vermeyen** ama vücut çarklarının (enzimlerin **koenzim** kısmının) dönmesini sağlayan düzenleyicilerdir.\n"
-                "💡 Sınav Şifresi: **A, D, E, K** yağda çözünür ve karaciğerde depolanır; **B ve C** suda çözünür, fazlası idrarla atılır (**A** eksikliği Gece Körlüğü, **D** Raşitizm, **C** Skorbüt, **K** Kanın pıhtılaşmaması)."
-            ),
-        },
-        "pattern": r"vitamin[a-zçğıöşü]*|skorbüt|raşitizm|gece körlüğü|obezite|insülin direnci",
+        "id": 'bio_vitaminler',
+        "term": 'Vitaminler (Suda ve Yağda Çözünenler)',
+        "sayfa": 42,
+        "tanim": 'Sindirilmeden hücre zarından doğrudan geçen, **asla enerji vermeyen** ama vücut çarklarının (enzimlerin **koenzim** kısmının) dönmesini sağlayan düzenleyicilerdir.\n💡 Hile: **A, D, E, K** yağda çözünür ve karaciğerde depolanır; **B ve C** suda çözünür, fazlası idrarla atılır (**A** eksikliği Gece Körlüğü, **D** Raşitizm, **C** Skorbüt, **K** Kanın pıhtılaşmaması).',
+        "pattern": '\\bvitamin[a-zçğıöşü]*|\\bskorbüt\\b|\\braşitizm\\b|\\bgece körlüğü\\b|\\bobezite\\b|\\binsülin direnci\\b',
     },
     {
-        "id": "bio_enzimler",
-        "term": "Enzimler (Biyolojik Katalizörler)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 46},
-        "tanim_by_donem": {
-            1: (
-                "Normalde yıllar sürecek biyokimyasal tepkimeleri **aktivasyon enerjisini düşürerek** saniyeler içinde gerçekleştiren ve tepkimeden hiç harcanmadan çıkan **uzman çilingirlerdir** (Substrata **anahtar-kilit** uyumuyla bağlanır).\n"
-                "💡 Sınav Şifresi: Bileşik enzim = **Apoenzim (Protein kısım)** + **Koenzim (Vitamin)** veya **Kofaktör (Mineral)**. Su oranı $\\%15$'in altına düşerse enzimler **çalışamaz** (reçel ve kurutulmuş gıdaların bozulmama sırrı!)."
-            ),
-        },
-        "pattern": r"enzim[a-zçğıöşü]*|aktivasyon enerjisi|substrat[a-zçğıöşü]*|apoenzim|koenzim|kofaktör",
+        "id": 'bio_enzimler',
+        "term": 'Enzimler (Biyolojik Katalizörler)',
+        "sayfa": 46,
+        "tanim": "Normalde yıllar sürecek biyokimyasal tepkimeleri **aktivasyon enerjisini düşürerek** saniyeler içinde gerçekleştiren ve tepkimeden hiç harcanmadan çıkan **uzman çilingirlerdir** (Substrata **anahtar-kilit** uyumuyla bağlanır).\n💡 Hile: Bileşik enzim = **Apoenzim (Protein kısım)** + **Koenzim (Vitamin)** veya **Kofaktör (Mineral)**. Su oranı $\\%15$'in altına düşerse enzimler **çalışamaz** (reçel ve kurutulmuş gıdaların bozulmama sırrı!).",
+        "pattern": '\\benzim[a-zçğıöşü]*|\\baktivasyon enerjisi\\b|\\bsubstrat[a-zçğıöşü]*|\\bapoenzim\\b|\\bkoenzim\\b|\\bkofaktör\\b',
     },
     {
-        "id": "bio_dna_rna_atp",
-        "term": "DNA, RNA ve ATP (Nükleik Asitler ve Enerji)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 52},
-        "tanim_by_donem": {
-            1: (
-                "**DNA** hücrenin çift iplikli **ana veri merkezi (Hard Disk)** (Aziz Sancar DNA onarımını çözmüştür); **RNA** protein üretimindeki tek iplikli **kurye** ($\\text{mRNA}$ şifre taşır, $\\text{tRNA}$ amino asit taşır, $\\text{rRNA}$ ribozomdadır); **ATP** ise hücrenin anlık nakit parasıdır.\n"
-                "💡 Sınav Şifresi: **DNA'nın özel bazı Timin ($\\text{T}$)**, **RNA'nın özel bazı Urasil ($\\text{U}$)**'dir! **ATP depolanamaz** ve bir hücreden diğerine **aktarılamaz**."
-            ),
-        },
-        "pattern": r"nükleik asit[a-zçğıöşü]*|nükleotit[a-zçğıöşü]*|deoksiriboz|\bdna\b|\brna\b|mrna|trna|rrna|timin|urasil|\batp\b|fosforilasyon",
-    },
-
-    # ==========================================
-    # BİYO 1: HÜCRE VE ORGANELLER (ATOMİK: RİBOZOM != MİTOKONDRİ != LİZOZOM)
-    # ==========================================
-    {
-        "id": "bio_ribozom_ve_sentrozom",
-        "term": "Ribozom ve Sentrozom (Zarsız Organeller)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 66},
-        "tanim_by_donem": {
-            1: (
-                "**Ribozom** en basit bakteriden insana kadar **tüm canlılarda ortak bulunan**, amino asitleri dikip **protein üreten** zarsız dokuma tezgahıdır; **Sentrozom** ise hayvan hücrelerinde bölünme sırasında iğ ipliklerini oluşturur.\n"
-                "💡 Sınav Şifresi: **Ribozom** ve **Sentrozom** **zarsızdır**! Ribozom çalışırken amino asitleri birleştirip su çıkardığı için hücrenin turgor basıncını artırır."
-            ),
-        },
-        "pattern": r"ribozom[a-zçğıöşü]*|sentrozom[a-zçğıöşü]*|prokaryot[a-zçğıöşü]*|ökaryot[a-zçğıöşü]*",
+        "id": 'bio_dna_rna_atp',
+        "term": 'DNA, RNA ve ATP (Nükleik Asitler ve Enerji)',
+        "sayfa": 52,
+        "tanim": "**DNA** hücrenin çift iplikli **ana veri merkezi (Hard Disk)** (Aziz Sancar DNA onarımını çözmüştür); **RNA** protein üretimindeki tek iplikli **kurye** ($\\text{mRNA}$ şifre taşır, $\\text{tRNA}$ amino asit taşır, $\\text{rRNA}$ ribozomdadır); **ATP** ise hücrenin anlık nakit parasıdır.\n💡 Hile: **DNA'nın özel bazı Timin ($\\text{T}$)**, **RNA'nın özel bazı Urasil ($\\text{U}$)**'dir! **ATP depolanamaz** ve bir hücreden diğerine **aktarılamaz**.",
+        "pattern": '\\bnükleik asit[a-zçğıöşü]*|\\bnükleotit[a-zçğıöşü]*|\\bdeoksiriboz\\b|\\bdna\\b|\\brna\\b|\\bmrna\\b|\\btrna\\b|\\brrna\\b|\\btimin\\b|\\burasil\\b|\\batp\\b|\\bfosforilasyon\\b',
     },
     {
-        "id": "bio_mitokondri_ve_kloroplast",
-        "term": "Mitokondri ve Kloroplast (Çift Zarlı Enerji Organelleri)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 70},
-        "tanim_by_donem": {
-            1: (
-                "**Mitokondri** besinleri oksijenle yakıp $\\text{ATP}$ üreten hücrenin **enerji santrali**; **Kloroplast** ise Güneş ışığıyla su ve $\\text{CO}_2$'den besin üreten bitkilerin **yeşil güneş panelidir** (Domatese kırmızı rengi **Kromoplast**, patateste nişasta depolamayı renksiz **Lökoplast** yapar).\n"
-                "💡 Sınav Şifresi: **Mitokondri** ve **Plastitler (Kloroplast)** **çift zarlıdır**; kendilerine ait özel **DNA, RNA ve Ribozomları** vardır!"
-            ),
-        },
-        "pattern": r"mitokondri[a-zçğıöşü]*|kloroplast[a-zçğıöşü]*|kromoplast[a-zçğıöşü]*|lökoplast[a-zçğıöşü]*|plasti[dt][a-zçğıöşü]*",
+        "id": 'bio_ribozom_ve_sentrozom',
+        "term": 'Ribozom ve Sentrozom (Zarsız Organeller)',
+        "sayfa": 66,
+        "tanim": '**Ribozom** en basit bakteriden insana kadar **tüm canlılarda ortak bulunan**, amino asitleri dikip **protein üreten** zarsız dokuma tezgahıdır; **Sentrozom** ise hayvan hücrelerinde bölünme sırasında iğ ipliklerini oluşturur.\n💡 Hile: **Ribozom** ve **Sentrozom** **zarsızdır**! Ribozom çalışırken amino asitleri birleştirip su çıkardığı için hücrenin turgor basıncını artırır.',
+        "pattern": '\\bribozom[a-zçğıöşü]*|\\bsentrozom[a-zçğıöşü]*|\\bprokaryot[a-zçğıöşü]*|\\bökaryot[a-zçğıöşü]*',
     },
     {
-        "id": "bio_golgi_lizozom_koful",
-        "term": "Golgi, Lizozom, Endoplazmik Retikulum ve Koful (Tek Zarlılar)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 68},
-        "tanim_by_donem": {
-            1: (
-                "**Endoplazmik Retikulum** hücre içi kargo yolları; **Golgi** ter, süt, tükürük paketleyen **kargo paketleme merkezi**; **Lizozom** ise mikropları ve yaşlı organelleri parçalayan **geri dönüşüm/sindirim ekibidir**.\n"
-                "💡 Sınav Şifresi: Lizozom patlarsa hücre kendi kendini sindirir (**Otoliz**); gelişmiş bitki hücrelerinde lizozom **yoktur**! Tatlı su amipinde fazla suyu dışarı pompalayan koful **Kontraktil Koful**'dur."
-            ),
-        },
-        "pattern": r"golgi[a-zçğıöşü]*|lizozom[a-zçğıöşü]*|koful[a-zçğıöşü]*|endoplazmik|otoliz",
+        "id": 'bio_mitokondri_ve_kloroplast',
+        "term": 'Mitokondri ve Kloroplast (Çift Zarlı Enerji Organelleri)',
+        "sayfa": 70,
+        "tanim": "**Mitokondri** besinleri oksijenle yakıp $\\text{ATP}$ üreten hücrenin **enerji santrali**; **Kloroplast** ise Güneş ışığıyla su ve $\\text{CO}_2$'den besin üreten bitkilerin **yeşil güneş panelidir** (Domatese kırmızı rengi **Kromoplast**, patateste nişasta depolamayı renksiz **Lökoplast** yapar).\n💡 Hile: **Mitokondri** ve **Plastitler (Kloroplast)** **çift zarlıdır**; kendilerine ait özel **DNA, RNA ve Ribozomları** vardır!",
+        "pattern": '\\bmitokondri[a-zçğıöşü]*|\\bkloroplast[a-zçğıöşü]*|\\bkromoplast[a-zçğıöşü]*|\\blökoplast[a-zçğıöşü]*|\\bplasti[dt][a-zçğıöşü]*',
     },
     {
-        "id": "bio_madde_gecisleri_ozmoz",
-        "term": "Hücre Zarından Madde Geçişleri (Difüzyon, Ozmoz, Plazmoliz, Aktif Taşıma)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 78},
-        "tanim_by_donem": {
-            1: (
-                "Suyun yarı geçirgen zardan geçişine **Ozmoz** denir ($\text{ATP}$ harcanmaz). Salatalığa tuz döküldüğünde yani **Hipertonik (çok yoğun)** ortama konduğunda su kaybedip büzülmesine **Plazmoliz**; saf suya (**Hipotonik** ortama) konduğunda su alıp şişmesine **Deplazmoliz / Turgor** denir.\n"
-                "💡 Sınav Şifresi: **Pasif Taşıma (Difüzyon & Ozmoz)** canlı ve cansız ortamda $\\text{ATP}$ harcanmadan olur; **Aktif Taşıma, Endositoz (Fagositoz/Pinositoz) ve Ekzositoz** ise **yalnız canlı hücrelerde $\\text{ATP}$ harcanarak** gerçekleşir!"
-            ),
-        },
-        "pattern": r"hücre zar[a-zçğıöşü]*|difüzyon[a-zçğıöşü]*|ozmoz[a-zçğıöşü]*|hipertonik[a-zçğıöşü]*|hipotonik[a-zçğıöşü]*|izotonik[a-zçğıöşü]*|plazmoliz[a-zçğıöşü]*|deplazmoliz|turgor[a-zçğıöşü]*|osmotik basınç|aktif taşıma|endositoz|fagositoz|pinositoz|ekzositoz|su kaybederek küçül",
-    },
-
-    # ==========================================
-    # BİYO 2: SINIFLANDIRMA VE CANLI ÂLEMLERİ (ATOMİK)
-    # ==========================================
-    {
-        "id": "bio_siniflandirma_ve_ikili_ad",
-        "term": "Sınıflandırma (Taksonomi) ve İkili Adlandırma",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 88},
-        "tanim_by_donem": {
-            2: (
-                "Dış görünüşe ve **analog** (görevdaş: sinek kanadı - kuş kanadı) organa bakan **Ampirik (Yapay)**; köken, $\\text{DNA}$ ve **homolog** (kökteş: insan kolu - balina yüzgeci) organa bakan **Filogenetik (Doğal)** sınıflandırmadır.\n"
-                "💡 Sınav Şifresi: Küçükten büyüğe: **Tür $\\to$ Cins $\\to$ Familya $\\to$ Takım $\\to$ Sınıf $\\to$ Şube $\\to$ Âlem** (*Türkiye Cumhuriyeti Futbol Takımı Sahada Şut Attı*). İkili adlandırmada (*Pinus nigra*) akrabalığı **1. kelime (Cins adı)** belirler!"
-            ),
-        },
-        "pattern": r"sınıflandırma[a-zçğıöşü]*|ampirik|filogenetik|homolog organ|analog organ|ikili adlandırma[a-zçğıöşü]*|\btür[a-zçğıöşü]*|\bcins\b|familya|\btakım[a-zçğıöşü]*|\bşube\b",
+        "id": 'bio_golgi_lizozom_koful',
+        "term": 'Golgi, Lizozom, Endoplazmik Retikulum ve Koful (Tek Zarlılar)',
+        "sayfa": 68,
+        "tanim": "**Endoplazmik Retikulum** hücre içi kargo yolları; **Golgi** ter, süt, tükürük paketleyen **kargo paketleme merkezi**; **Lizozom** ise mikropları ve yaşlı organelleri parçalayan **geri dönüşüm/sindirim ekibidir**.\n💡 Hile: Lizozom patlarsa hücre kendi kendini sindirir (**Otoliz**); gelişmiş bitki hücrelerinde lizozom **yoktur**! Tatlı su amipinde fazla suyu dışarı pompalayan koful **Kontraktil Koful**'dur.",
+        "pattern": '\\bgolgi[a-zçğıöşü]*|\\blizozom[a-zçğıöşü]*|\\bkoful[a-zçğıöşü]*|\\bendoplazmik\\b|\\botoliz\\b',
     },
     {
-        "id": "bio_alemler_ve_virusler",
-        "term": "Canlı Âlemleri (Bakteri, Arke, Protista, Mantar, Hayvan) ve Virüsler",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 102},
-        "tanim_by_donem": {
-            2: (
-                "**Bakteriler ve Arkeler** çekirdeksizdir (**Prokaryot**); **Mantarlar** bitki değildir (fotosentez yapmaz, hücre duvarı **kitin**, deposu **glikojendir**). **Omurgalılar** içinde yalnız **Kuşlar ve Memeliler** sıcakkanlıdır (sabit vücut sıcaklıklı).\n"
-                "💡 Sınav Şifresi: **Virüsler** hücresel değildir, antibiyotikten etkilenmez, **DNA ve RNA'yı asla bir arada bulundurmaz**, yalnız canlı hücre içinde çoğalan zorunlu parazittir!"
-            ),
-        },
-        "pattern": r"bakteri[a-zçğıöşü]*|arke[a-zçğıöşü]*|protist[a-zçğıöşü]*|amip|öglena|paramesyum|mantar[a-zçğıöşü]*|omurgasız[a-zçğıöşü]*|omurgalı[a-zçğıöşü]*|sölenter[a-zçğıöşü]*|sünger[a-zçğıöşü]*|eklem\s*bacaklı[a-zçğıöşü]*|memeli[a-zçğıöşü]*|sürüngen[a-zçğıöşü]*|kuşlar\b|virüs[a-zçğıöşü]*|bakteriyofaj",
-    },
-
-    # ==========================================
-    # BİYO 3: HÜCRE BÖLÜNMELERİ VE KALITIM (ATOMİK)
-    # ==========================================
-    {
-        "id": "bio_mitoz_ve_eseysiz_ureme",
-        "term": "Mitoz Bölünme ve Eşeysiz Üreme Türleri",
-        "donemler": [3],
-        "sayfa_by_donem": {3: 16},
-        "tanim_by_donem": {
-            3: (
-                "**Mitoz** tıpkı **fotokopi makinesi** gibi ana hücrenin genetik kopyası olan $2$ yeni hücre üretir (kromozom sayısı değişmez!). Evreleri: **İP-MAT** (*İnterfaz $\\to$ Profaz, Metafaz, Anafaz, Telofaz*).\n"
-                "💡 Sınav Şifresi: Eşeysiz üreme türleri: Bakteride **Bölünme**, Bira mayası ve hidrada **Tomurcuklanma**, Denizyıldızı ve planaryada **Rejenerasyon**, Bal arısında döllenmeden erkek arı oluşumu **Partenogenez**, Çilek ve söğüt dalından üretim **Vejetatif** üremedir!"
-            ),
-        },
-        "pattern": r"mitoz[a-zçğıöşü]*|interfaz|profaz|metafaz|anafaz|telofaz|sitokinez|kardeş kromatit|eşeysiz üreme|tomurcuklanma|rejenerasyon|partenogenez|vejetatif|sporla üreme|doku kültürü",
+        "id": 'bio_madde_gecisleri_ozmoz',
+        "term": 'Hücre Zarından Madde Geçişleri (Difüzyon, Ozmoz, Plazmoliz, Aktif Taşıma)',
+        "sayfa": 78,
+        "tanim": 'Suyun yarı geçirgen zardan geçişine **Ozmoz** denir ($\text{ATP}$ harcanmaz). Salatalığa tuz döküldüğünde yani **Hipertonik (çok yoğun)** ortama konduğunda su kaybedip büzülmesine **Plazmoliz**; saf suya (**Hipotonik** ortama) konduğunda su alıp şişmesine **Deplazmoliz / Turgor** denir.\n💡 Hile: **Pasif Taşıma (Difüzyon & Ozmoz)** canlı ve cansız ortamda $\\text{ATP}$ harcanmadan olur; **Aktif Taşıma, Endositoz (Fagositoz/Pinositoz) ve Ekzositoz** ise **yalnız canlı hücrelerde $\\text{ATP}$ harcanarak** gerçekleşir!',
+        "pattern": '\\bhücre zar[a-zçğıöşü]*|\\bdifüzyon[a-zçğıöşü]*|\\bozmoz[a-zçğıöşü]*|\\bhipertonik[a-zçğıöşü]*|\\bhipotonik[a-zçğıöşü]*|\\bizotonik[a-zçğıöşü]*|\\bplazmoliz[a-zçğıöşü]*|\\bdeplazmoliz\\b|\\bturgor[a-zçğıöşü]*|\\bosmotik basınç\\b|\\baktif taşıma\\b|\\bendositoz\\b|\\bfagositoz\\b|\\bpinositoz\\b|\\bekzositoz\\b|\\bsu kaybederek küçül\\b',
     },
     {
-        "id": "bio_mayoz_ve_eseyli_ureme",
-        "term": "Mayoz Bölünme, Krossing-Over ve Eşeyli Üreme",
-        "donemler": [3],
-        "sayfa_by_donem": {3: 38},
-        "tanim_by_donem": {
-            3: (
-                "Yalnız $2n$ kromozomlu üreme ana hücrelerinde gerçekleşip kromozom sayısını yarıya ($n$) indiren ve birbirinden farklı **$4$ yeni hücre (gamet)** oluşturan bölünmedir.\n"
-                "💡 Sınav Şifresi: Kardeşlerin birbirine benzememesini sağlayan parça değişimi (**Krossing-Over ve Tetrat**) **Mayoz I - Profaz I** evresinde; homolog kromozomların ayrılması ise **Anafaz I**'de gerçekleşir!"
-            ),
-        },
-        "pattern": r"mayoz[a-zçğıöşü]*|krossing\s*over|tetrat|sinapsis|homolog kromozom|eşeyli üreme|döllenme|zigot",
+        "id": 'bio_siniflandirma_ve_ikili_ad',
+        "term": 'Sınıflandırma (Taksonomi) ve İkili Adlandırma',
+        "sayfa": 88,
+        "tanim": 'Dış görünüşe ve **analog** (görevdaş: sinek kanadı - kuş kanadı) organa bakan **Ampirik (Yapay)**; köken, $\\text{DNA}$ ve **homolog** (kökteş: insan kolu - balina yüzgeci) organa bakan **Filogenetik (Doğal)** sınıflandırmadır.\n💡 Hile: Küçükten büyüğe: **Tür $\\to$ Cins $\\to$ Familya $\\to$ Takım $\\to$ Sınıf $\\to$ Şube $\\to$ Âlem** (*Türkiye Cumhuriyeti Futbol Takımı Sahada Şut Attı*). İkili adlandırmada (*Pinus nigra*) akrabalığı **1. kelime (Cins adı)** belirler!',
+        "pattern": '\\bsınıflandırma[a-zçğıöşü]*|\\bampirik\\b|\\bfilogenetik\\b|\\bhomolog organ\\b|\\banalog organ\\b|\\bikili adlandırma[a-zçğıöşü]*|\\btür[a-zçğıöşü]*|\\bcins\\b|\\bfamilya\\b|\\btakım[a-zçğıöşü]*|\\bşube\\b',
     },
     {
-        "id": "bio_kalitim_ve_kan_gruplari",
-        "term": "Kalıtım İlkeleri, Kan Grupları ve Eşeye Bağlı Kalıtım",
-        "donemler": [3],
-        "sayfa_by_donem": {3: 64},
-        "tanim_by_donem": {
-            3: (
-                "Aleller aynıysa **Homozigot (Arı döl: $AA, aa$)**, farklıysa **Heterozigot (Melez: $Aa$)** denir; $n$ heterozigot karakter için **$2^n$ çeşit gamet** oluşur.\n"
-                "💡 Sınav Şifresi: **AB kan grubu Eş Baskınlığın** en ünlü örneğidir! Renk körlüğü ve hemofili **$X$ kromozomunda çekinik ($X^r$)** taşınır; **$Y$ kromozomundaki** özellik ise yalnız **babadan oğula** geçer!"
-            ),
-        },
-        "pattern": r"mendel|homozigot|heterozigot|alel[a-zçğıöşü]*|genotip|fenotip|monohibrit|dihibrit|kontrol çaprazlama[a-zçğıöşü]*|eş baskınlı[kğ][a-zçğıöşü]*|çok alellili[kğ][a-zçğıöşü]*|kan grubu|kan grupları|rh faktörü|renk körlü[ğg]ü|hemofili|eşeye bağlı|soy ağac[a-zçğıöşü]*|gonozom|otozom",
-    },
-
-    # ==========================================
-    # BİYO 4: EKOLOJİ VE ÇEVRE SORUNLARI (ATOMİK)
-    # ==========================================
-    {
-        "id": "bio_ekosistem_ve_besin_piramidi",
-        "term": "Ekosistem, Besin Piramidi ve Biyolojik Birikim",
-        "donemler": [4],
-        "sayfa_by_donem": {4: 138},
-        "tanim_by_donem": {
-            4: (
-                "Belirli bir bölgedeki **tek bir türe Popülasyon** (Toroslardaki kızılçamlar), birden çok türe **Komünite**, canlı ve cansız çevrenin tamamına **Ekosistem** denir.\n"
-                "💡 Sınav Şifresi: Besin piramidinde **aşağıdan yukarıya (Üreticiden $\\to$ Son Tüketiciye)** çıkıldıkça aktarılan enerji her basamakta $\\%10$'a düşer (azalır), birey sayısı ve toplam biyokütle **azalır**; ancak **zehirli madde (biyolojik birikim) ARTAR**!"
-            ),
-        },
-        "pattern": r"popülasyon[a-zçğıöşü]*|komünite[a-zçğıöşü]*|ekosistem[a-zçğıöşü]*|biyotik|abiyotik|ototrof|heterotrof|holozoik|ayrıştırıcı[a-zçğıöşü]*|saprofit[a-zçğıöşü]*|besin zinciri|besin piramidi|trofik düzey|biyokütle|biyolojik birikim",
+        "id": 'bio_alemler_ve_virusler',
+        "term": 'Canlı Âlemleri (Bakteri, Arke, Protista, Mantar, Hayvan) ve Virüsler',
+        "sayfa": 102,
+        "tanim": "**Bakteriler ve Arkeler** çekirdeksizdir (**Prokaryot**); **Mantarlar** bitki değildir (fotosentez yapmaz, hücre duvarı **kitin**, deposu **glikojendir**). **Omurgalılar** içinde yalnız **Kuşlar ve Memeliler** sıcakkanlıdır (sabit vücut sıcaklıklı).\n💡 Hile: **Virüsler** hücresel değildir, antibiyotikten etkilenmez, **DNA ve RNA'yı asla bir arada bulundurmaz**, yalnız canlı hücre içinde çoğalan zorunlu parazittir!",
+        "pattern": '\\bbakteri[a-zçğıöşü]*|\\barke[a-zçğıöşü]*|\\bprotist[a-zçğıöşü]*|\\bamip\\b|\\böglena\\b|\\bparamesyum\\b|\\bmantar[a-zçğıöşü]*|\\bomurgasız[a-zçğıöşü]*|\\bomurgalı[a-zçğıöşü]*|\\bsölenter[a-zçğıöşü]*|\\bsünger[a-zçğıöşü]*|\\beklem\\s*bacaklı[a-zçğıöşü]*|\\bmemeli[a-zçğıöşü]*|\\bsürüngen[a-zçğıöşü]*|\\bkuşlar\\b|\\bvirüs[a-zçğıöşü]*|\\bbakteriyofaj\\b',
     },
     {
-        "id": "bio_madde_donguleri_ve_cevre",
-        "term": "Azot Döngüsü, Ötrofikasyon ve Ayak İzleri",
-        "donemler": [4],
-        "sayfa_by_donem": {4: 168},
-        "tanim_by_donem": {
-            4: (
-                "**Azot döngüsünde** amonyağı ($\text{NH}_3$) bitkilerin kullanabileceği nitrata ($\text{NO}_3^-$) dönüştüren kemosentetik bakterilerin yaptığı olaya **Nitrifikasyon**; azotu tekrar havaya geri verene **Denitrifikasyon** denir.\n"
-                "💡 Sınav Şifresi: Göllere karışan atıklarla alglerin (yosunların) aşırı patlayıp gölü kurutmasına **Ötrofikasyon**; $\\text{SO}_2$ ve $\\text{NO}_2$ gazlarının yağmurla inmesine **Asit Yağmuru** denir."
-            ),
-        },
-        "pattern": r"azot döngüsü|karbon döngüsü|su döngüsü|nitrifikasyon|denitrifikasyon|baklagil|rhizobium|ötrofikasyon|asit yağmur[a-zçğıöşü]*|ekolojik ayak izi|karbon ayak izi|su ayak izi|biyoçeşitlili[kğ][a-zçğıöşü]*|endemik",
+        "id": 'bio_mitoz_ve_eseysiz_ureme',
+        "term": 'Mitoz Bölünme ve Eşeysiz Üreme Türleri',
+        "sayfa": 16,
+        "tanim": '**Mitoz** tıpkı **fotokopi makinesi** gibi ana hücrenin genetik kopyası olan $2$ yeni hücre üretir (kromozom sayısı değişmez!). Evreleri: **İP-MAT** (*İnterfaz $\\to$ Profaz, Metafaz, Anafaz, Telofaz*).\n💡 Hile: Eşeysiz üreme türleri: Bakteride **Bölünme**, Bira mayası ve hidrada **Tomurcuklanma**, Denizyıldızı ve planaryada **Rejenerasyon**, Bal arısında döllenmeden erkek arı oluşumu **Partenogenez**, Çilek ve söğüt dalından üretim **Vejetatif** üremedir!',
+        "pattern": '\\bmitoz[a-zçğıöşü]*|\\binterfaz\\b|\\bprofaz\\b|\\bmetafaz\\b|\\banafaz\\b|\\btelofaz\\b|\\bsitokinez\\b|\\bkardeş kromatit\\b|\\beşeysiz üreme\\b|\\btomurcuklanma\\b|\\brejenerasyon\\b|\\bpartenogenez\\b|\\bvejetatif\\b|\\bsporla üreme\\b|\\bdoku kültürü\\b',
+    },
+    {
+        "id": 'bio_mayoz_ve_eseyli_ureme',
+        "term": 'Mayoz Bölünme, Krossing-Over ve Eşeyli Üreme',
+        "sayfa": 38,
+        "tanim": "Yalnız $2n$ kromozomlu üreme ana hücrelerinde gerçekleşip kromozom sayısını yarıya ($n$) indiren ve birbirinden farklı **$4$ yeni hücre (gamet)** oluşturan bölünmedir.\n💡 Hile: Kardeşlerin birbirine benzememesini sağlayan parça değişimi (**Krossing-Over ve Tetrat**) **Mayoz I - Profaz I** evresinde; homolog kromozomların ayrılması ise **Anafaz I**'de gerçekleşir!",
+        "pattern": '\\bmayoz[a-zçğıöşü]*|\\bkrossing\\s*over\\b|\\btetrat\\b|\\bsinapsis\\b|\\bhomolog kromozom\\b|\\beşeyli üreme\\b|\\bdöllenme\\b|\\bzigot\\b',
+    },
+    {
+        "id": 'bio_kalitim_ve_kan_gruplari',
+        "term": 'Kalıtım İlkeleri, Kan Grupları ve Eşeye Bağlı Kalıtım',
+        "sayfa": 64,
+        "tanim": 'Aleller aynıysa **Homozigot (Arı döl: $AA, aa$)**, farklıysa **Heterozigot (Melez: $Aa$)** denir; $n$ heterozigot karakter için **$2^n$ çeşit gamet** oluşur.\n💡 Hile: **AB kan grubu Eş Baskınlığın** en ünlü örneğidir! Renk körlüğü ve hemofili **$X$ kromozomunda çekinik ($X^r$)** taşınır; **$Y$ kromozomundaki** özellik ise yalnız **babadan oğula** geçer!',
+        "pattern": '\\bmendel\\b|\\bhomozigot\\b|\\bheterozigot\\b|\\balel[a-zçğıöşü]*|\\bgenotip\\b|\\bfenotip\\b|\\bmonohibrit\\b|\\bdihibrit\\b|\\bkontrol çaprazlama[a-zçğıöşü]*|\\beş baskınlı[kğ][a-zçğıöşü]*|\\bçok alellili[kğ][a-zçğıöşü]*|\\bkan grubu\\b|\\bkan grupları\\b|\\brh faktörü\\b|\\brenk körlü[ğg]ü\\b|\\bhemofili\\b|\\beşeye bağlı\\b|\\bsoy ağac[a-zçğıöşü]*|\\bgonozom\\b|\\botozom\\b',
+    },
+    {
+        "id": 'bio_ekosistem_ve_besin_piramidi',
+        "term": 'Ekosistem, Besin Piramidi ve Biyolojik Birikim',
+        "sayfa": 138,
+        "tanim": "Belirli bir bölgedeki **tek bir türe Popülasyon** (Toroslardaki kızılçamlar), birden çok türe **Komünite**, canlı ve cansız çevrenin tamamına **Ekosistem** denir.\n💡 Hile: Besin piramidinde **aşağıdan yukarıya (Üreticiden $\\to$ Son Tüketiciye)** çıkıldıkça aktarılan enerji her basamakta $\\%10$'a düşer (azalır), birey sayısı ve toplam biyokütle **azalır**; ancak **zehirli madde (biyolojik birikim) ARTAR**!",
+        "pattern": '\\bpopülasyon[a-zçğıöşü]*|\\bkomünite[a-zçğıöşü]*|\\bekosistem[a-zçğıöşü]*|\\bbiyotik\\b|\\babiyotik\\b|\\bototrof\\b|\\bheterotrof\\b|\\bholozoik\\b|\\bayrıştırıcı[a-zçğıöşü]*|\\bsaprofit[a-zçğıöşü]*|\\bbesin zinciri\\b|\\bbesin piramidi\\b|\\btrofik düzey\\b|\\bbiyokütle\\b|\\bbiyolojik birikim\\b',
+    },
+    {
+        "id": 'bio_madde_donguleri_ve_cevre',
+        "term": 'Azot Döngüsü, Ötrofikasyon ve Ayak İzleri',
+        "sayfa": 168,
+        "tanim": '**Azot döngüsünde** amonyağı ($\text{NH}_3$) bitkilerin kullanabileceği nitrata ($\text{NO}_3^-$) dönüştüren kemosentetik bakterilerin yaptığı olaya **Nitrifikasyon**; azotu tekrar havaya geri verene **Denitrifikasyon** denir.\n💡 Hile: Göllere karışan atıklarla alglerin (yosunların) aşırı patlayıp gölü kurutmasına **Ötrofikasyon**; $\\text{SO}_2$ ve $\\text{NO}_2$ gazlarının yağmurla inmesine **Asit Yağmuru** denir.',
+        "pattern": '\\bazot döngüsü\\b|\\bkarbon döngüsü\\b|\\bsu döngüsü\\b|\\bnitrifikasyon\\b|\\bdenitrifikasyon\\b|\\bbaklagil\\b|\\brhizobium\\b|\\bötrofikasyon\\b|\\basit yağmur[a-zçğıöşü]*|\\bekolojik ayak izi\\b|\\bkarbon ayak izi\\b|\\bsu ayak izi\\b|\\bbiyoçeşitlili[kğ][a-zçğıöşü]*|\\bendemik\\b',
+    },
+    {
+        "id": 'bio_bakteriler_ve_arkeler',
+        "term": 'Bakteriler ve Arkeler (Prokaryotlar)',
+        "sayfa": 40,
+        "tanim": "Zarla çevrili çekirdek ve organelleri bulunmayan tek hücrelilerdir; Arkeler aşırı tuz, sıcak gibi ekstrem koşullarda yaşayabilen özel hücre duvarına sahiptir.\n💡 Hile: Çekirdek ve zarlı organel YOKSA prokaryottur. Normal her yerde yaşayan **Bakteri**; yanardağ ağzı, tuz gölü gibi cehennem koşullarında yaşayan ise **Arke**'dir.",
+        "pattern": '\\bbakteri[a-zçğıöşü]*\\b|\\barke[a-zçğıöşü]*\\b|\\bprokaryot[a-zçğıöşü]*\\b|\\bBakteriler\\b|\\bArkeler\\b|\\bBakteri\\b|\\bArke\\b',
+        "option_only_pattern": '^Bakteriler$|^Arkeler$|^Bakteri$|^Arke$',
+    },
+    {
+        "id": 'bio_protista_ve_mantar',
+        "term": 'Protistler ve Mantarlar',
+        "sayfa": 55,
+        "tanim": 'Protistler (Amip, Öglena, Paramesyum) tek veya çok hücreli ökaryotlardır; Mantarlar ise fotosentez yapmayan, hücre duvarı kitin olan heterotroflardır.\n💡 Hile: Mantar BİTKİ DEĞİLDİR! Kloroplastı yoktur, kendi besinini üretemez (heterotroftur) ve glikojen depolar (tıpkı hayvanlar gibi!).',
+        "pattern": '\\bprotist[a-zçğıöşü]*\\b|\\bmantar[a-zçğıöşü]*\\b|\\bamip\\b|\\böglena\\b|\\bparamesyum\\b|\\bProtistler\\b|\\bMantarlar\\b|\\bMantar\\b',
+        "option_only_pattern": '^Protistler$|^Mantarlar$|^Mantar$',
+    },
+    {
+        "id": 'bio_mitokondri_kloroplast',
+        "term": 'Mitokondri ve Kloroplast',
+        "sayfa": 68,
+        "tanim": 'Mitokondri oksijenli solunumla ATP üretir; Kloroplast ise ışık enerjisiyle organik besin ve oksijen üretir (çift zarlıdırlar).\n💡 Hile: İkisinin de kendine ait **DNA, RNA ve Ribozomu** vardır (kendi kendini çoğaltabilir). Mitokondri hayvan ve bitkide ortaktır; Kloroplast sadece fotosentez yapan bitki ve algdedir.',
+        "pattern": '\\bmitokondri[a-zçğıöşü]*\\b|\\bkloroplast[a-zçğıöşü]*\\b|\\bsentrozom[a-zçğıöşü]*\\b|\\bMitokondri\\b|\\bKloroplast\\b|\\bSentrozom\\b',
+        "option_only_pattern": '^Mitokondri$|^Kloroplast$|^Sentrozom$',
+    },
+    {
+        "id": 'bio_mitoz_ve_mayoz',
+        "term": 'Mitoz ve Mayoz Bölünme',
+        "sayfa": 110,
+        "tanim": "Mitoz vücut hücrelerinde görülür, kromozom sayısı değişmez (2n); Mayoz üreme ana hücrelerinde görülür, krossing-over ile çeşitlilik sağlar ve kromozom sayısı yarıya iner (n).\n💡 Hile: Krossing-over ve tetrat/sinapsis varsa KESİNLİKLE **Mayoz**'dur (çeşitlilik). Fotokopi gibi tıpatıp aynı iki hücre çıkıyorsa **Mitoz**'dur.",
+        "pattern": '\\bmitoz[a-zçğıöşü]*\\b|\\bmayoz[a-zçğıöşü]*\\b|\\bkrossing-over\\b|\\btetrat\\b|\\bMitoz\\b|\\bMayoz\\b',
+        "option_only_pattern": '^Mitoz$|^Mayoz$',
+    },
+    {
+        "id": 'bio_besin_piramidi_enerji',
+        "term": 'Besin Piramidi ve Enerji Akışı',
+        "sayfa": 140,
+        "tanim": "Üreticilerden tüketicilere doğru gidildikçe aktarılan enerji azalır (%10 kuralı), biyolojik birikim (zehir) artar ve birey sayısı azalır.\n💡 Hile: Taban (Bitki) → Tepe (Yırtıcı): Yukarı çıktıkça **Enerji AZALIR, Zehir ARTAR, Birey sayısı AZALIR**. Her basamakta enerjinin sadece %10'u bir üste geçer!",
+        "pattern": '\\bbesin\\s+piramidi\\b|\\btrofik\\s+düzey\\b|\\bbiyolojik\\s+birikim\\b|\\bbesin\\s+ağı\\b',
     },
 ]

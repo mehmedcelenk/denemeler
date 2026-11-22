@@ -7,8 +7,10 @@
   padding: calc(28px + var(--safe-top)) 18px calc(96px + var(--safe-bottom));
 }
 
-.welcome-portal[hidden] {
-  display: none;
+.welcome-portal[hidden],
+.welcome-action-row[hidden],
+.welcome-active-room[hidden] {
+  display: none !important;
 }
 
 .welcome-card {
@@ -40,7 +42,7 @@
 
 .welcome-header h1 {
   color: var(--paper-text);
-  font-size: clamp(38px, 12vw, 56px);
+  font-size: clamp(25px, 7vw, 44px);
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.065em;
@@ -251,3 +253,20 @@ body.welcome-active #bookletZoomIndicator {
     transition: none;
   }
 }
+
+.guest-study-status {
+  position: fixed;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  margin: 0;
+  padding: 5px 12px;
+  border-radius: 10px;
+  background: var(--paper-bg, white);
+  color: var(--paper-text-muted, #555);
+  font-size: 12px;
+  text-align: center;
+  pointer-events: none;
+}
+body.welcome-active .guest-study-status { display: none; }

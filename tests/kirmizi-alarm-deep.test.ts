@@ -99,25 +99,22 @@ test('Deep 2: renderWelcomePortal canResume=false ile render edilse dahi buton D
   elements.set('welcomePortal', dummyPortal);
 
   try {
-    // 1. canResume: false ile render et
+    // 1. canResume: false ile render et; ana sayfada artık tekrar eden buton yok, seçenekler menüsündeki btnResumeLastSession yönetilir
+    const resumeBtnMock = { hidden: false, title: '' } as unknown as HTMLElement;
+    elements.set('btnResumeLastSession', resumeBtnMock);
+
     renderWelcomePortal({
       programMode: 'AOIHL',
       canResume: false,
     });
 
-    // Portal HTML içinde btnWelcomeResume mutlaka yer almalı
-    assert.ok(dummyPortal.innerHTML.includes('id="btnWelcomeResume"'), 'btnWelcomeResume HTML içinde bulunmalı');
-    assert.ok(dummyPortal.innerHTML.includes('style="display: none;"'), 'canResume false iken display: none olmalı');
-
-    // 2. DOM Mock ile updateResumeAction çalıştır
-    const resumeBtnMock = { style: { display: 'none' } } as unknown as HTMLElement;
-    elements.set('btnWelcomeResume', resumeBtnMock);
+    assert.equal(resumeBtnMock.hidden, true, 'canResume false iken seçeneklerdeki devam butonu gizli olmalı');
 
     updateResumeAction(true);
-    assert.equal(resumeBtnMock.style.display, 'flex', 'updateResumeAction(true) butonu görünür yapmalı');
+    assert.equal(resumeBtnMock.hidden, false, 'updateResumeAction(true) butonu görünür yapmalı');
 
     updateResumeAction(false);
-    assert.equal(resumeBtnMock.style.display, 'none', 'updateResumeAction(false) butonu gizlemeli');
+    assert.equal(resumeBtnMock.hidden, true, 'updateResumeAction(false) butonu gizlemeli');
   } finally {
     (globalThis as unknown as { document: unknown }).document = previousDoc;
     (globalThis as unknown as { requestAnimationFrame: unknown }).requestAnimationFrame = previousRaf;

@@ -1,0 +1,275 @@
+/* ========================================================= */
+/* ÜST HUD YUVARLAK MASKOT ROZETİ (CLASH ROYALE EMOTE STİLİ) */
+/* ========================================================= */
+
+.mascot-companion,
+.ps-mascot-grid {
+  --mc-coat: var(--brand-accent);
+  --mc-coat-deep: color-mix(in srgb, var(--brand-accent) 62%, #0f172a);
+  --mc-coat-hi: color-mix(in srgb, var(--brand-accent) 32%, #ffffff);
+  --mc-stroke: color-mix(in srgb, var(--brand-accent) 28%, #0b0e14);
+  --mc-eye-glow: #ffffff;
+  --mc-pupil: #0b0e14;
+  --mc-collar: color-mix(in srgb, var(--brand-accent) 28%, #0f172a);
+  --mc-tag: #f8fafc;
+  --mc-correct: #10b981;
+  --mc-wrong: #f59e0b;
+  --mc-shadow: rgba(15, 23, 42, 0.28);
+}
+
+body.dark-mode .mascot-companion,
+body.dark-mode .ps-mascot-grid {
+  --mc-coat: var(--brand-accent);
+  --mc-coat-deep: color-mix(in srgb, var(--brand-accent) 55%, #090b10);
+  --mc-coat-hi: color-mix(in srgb, var(--brand-accent) 36%, #ffffff);
+  --mc-stroke: #090b10;
+  --mc-eye-glow: #f8fafc;
+  --mc-pupil: #090b10;
+  --mc-collar: #1e2430;
+  --mc-tag: #f8fafc;
+  --mc-correct: #34d399;
+  --mc-wrong: #fbbf24;
+  --mc-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.mascot-companion {
+  position: relative;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.mascot-companion[hidden],
+.mascot-companion[data-print-hidden="true"] {
+  display: none !important;
+}
+
+@media print {
+  .mascot-companion { display: none !important; }
+}
+
+.mascot-handle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.mascot-handle:hover {
+  transform: scale(1.06);
+}
+
+.mascot-handle:active {
+  transform: scale(0.95);
+}
+
+.mascot-handle:focus-visible {
+  outline: 2px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+.mascot-frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid color-mix(in srgb, var(--brand-accent) 60%, rgba(255, 255, 255, 0.45));
+  background:
+    radial-gradient(circle at 35% 24%, color-mix(in srgb, var(--brand-accent) 26%, rgba(255, 255, 255, 0.92)), rgba(226, 232, 240, 0.92) 75%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    0 4px 12px rgba(15, 23, 42, 0.16);
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
+}
+
+body.dark-mode .mascot-frame {
+  border-color: color-mix(in srgb, var(--brand-accent) 68%, #94a3b8);
+  background:
+    radial-gradient(circle at 36% 24%, color-mix(in srgb, var(--brand-accent) 24%, #1e293b), #0b1120 78%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.24),
+    0 5px 14px rgba(0, 0, 0, 0.48);
+}
+
+/* Hamsi için denizaltı lumbozu (porthole) cam efekti */
+.mascot-companion[data-mascot="fish"] .mascot-frame {
+  border-color: rgba(56, 189, 248, 0.72);
+  background:
+    radial-gradient(circle at 35% 22%, rgba(125, 211, 252, 0.42), transparent 52%),
+    linear-gradient(180deg, rgba(14, 116, 144, 0.88) 0%, rgba(7, 45, 72, 0.96) 100%);
+  box-shadow:
+    inset 0 1.5px 0 rgba(186, 230, 253, 0.55),
+    0 4px 14px rgba(2, 132, 199, 0.34);
+}
+
+.mascot-stage {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  transform-origin: center;
+}
+
+.mascot-companion[data-mascot="fish"] .mascot-stage {
+  width: 38px;
+  height: 38px;
+}
+
+/* Doğru cevapta Hamsi lumboz torpido atışı */
+.mascot-porthole-bolt {
+  position: absolute;
+  left: 52%;
+  top: 50%;
+  width: 16px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #38bdf8, #e0f2fe);
+  box-shadow: 0 0 8px #38bdf8;
+  pointer-events: none;
+  animation: mcPortholeBolt 0.42s cubic-bezier(0.2, 0.85, 0.3, 1) forwards;
+}
+
+/* Emote Konuşma Balonu — Rozetin hemen altında belirir */
+.mascot-bubble {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--paper-border);
+  background: var(--paper-bg);
+  color: var(--paper-text);
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.22);
+  pointer-events: none;
+  animation: mcBubbleDrop 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mascot-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: var(--paper-bg);
+  border-left: 1px solid var(--paper-border);
+  border-top: 1px solid var(--paper-border);
+  transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.mascot-bubble[hidden] { display: none !important; }
+
+/* Clash Royale Emote Tepki Durumları */
+.mascot-companion[data-mood="correct"] .mascot-frame {
+  border-color: var(--mc-correct);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.32), 0 0 18px rgba(16, 185, 129, 0.48);
+  animation: mcEmotePop 0.55s cubic-bezier(0.22, 1.4, 0.36, 1);
+}
+
+.mascot-companion[data-mood="correct"] .mascot-stage {
+  animation: mcStageHappy 0.6s ease;
+}
+
+.mascot-companion[data-mood="wrong"] .mascot-frame {
+  border-color: var(--mc-wrong);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3), 0 0 14px rgba(245, 158, 11, 0.36);
+  animation: mcEmoteShake 0.42s ease;
+}
+
+.mascot-companion[data-mood="welcome"] .mascot-frame {
+  animation: mcEmotePop 0.45s cubic-bezier(0.22, 1.3, 0.36, 1);
+}
+
+/* Ortak Portre SVG Stilleri (HUD Rozeti + Profil Seçici) */
+.mc-svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.mc-body { fill: var(--mc-coat); stroke: var(--mc-stroke); stroke-width: 1.5; stroke-linejoin: round; }
+.mc-coat { fill: var(--mc-coat); }
+.mc-coat-deep { fill: var(--mc-coat-deep); stroke: var(--mc-stroke); stroke-width: 1.3; stroke-linejoin: round; }
+.mc-coat-hi { fill: var(--mc-coat-hi); }
+.mc-visor { fill: #0b101b; stroke: var(--mc-stroke); stroke-width: 1; }
+.mc-seam { fill: none; stroke: rgba(15, 23, 42, 0.45); stroke-width: 1.1; stroke-linecap: round; }
+.mc-nose { fill: var(--mc-stroke); }
+.mc-mouth { fill: none; stroke: var(--mc-stroke); stroke-width: 1.5; stroke-linecap: round; }
+.mc-dog-collar { fill: var(--mc-collar); stroke: var(--mc-stroke); stroke-width: 1.2; stroke-linejoin: round; }
+.mc-dog-tag { fill: var(--mc-tag); stroke: var(--mc-stroke); stroke-width: 1; }
+.mc-dog-nose { fill: var(--mc-stroke); }
+.mc-eye { transform-box: fill-box; transform-origin: center; transition: transform 0.2s ease, opacity 0.18s ease; }
+.mc-eye-glow { fill: var(--mc-eye-glow); stroke: var(--mc-stroke); stroke-width: 0.9; }
+.mc-pupil { fill: var(--mc-pupil); }
+.mc-happy { fill: none; stroke: var(--mc-eye-glow); stroke-width: 2.4; stroke-linecap: round; opacity: 0; transition: opacity 0.16s ease; }
+.mc-wrong { fill: none; stroke: var(--mc-wrong); stroke-width: 2.3; stroke-linecap: round; opacity: 0; transition: opacity 0.16s ease; }
+.mc-svg-fish .mc-happy { stroke: #38bdf8; }
+
+/* Robot Hamsi SVG Paleti */
+.mc-fish-back { fill: color-mix(in srgb, var(--brand-accent) 44%, #334155); stroke: #0f172a; stroke-width: 1.2; stroke-linejoin: round; }
+.mc-fish-belly { fill: #e2e8f0; stroke: #0f172a; stroke-width: 1.1; stroke-linejoin: round; }
+.mc-fish-tail { fill: color-mix(in srgb, var(--brand-accent) 34%, #64748b); stroke: #0f172a; stroke-width: 1.1; stroke-linejoin: round; }
+.mc-fish-fin { fill: color-mix(in srgb, var(--brand-accent) 38%, #475569); stroke: #0f172a; stroke-width: 1; }
+.mc-fish-seam { fill: none; stroke: rgba(15, 23, 42, 0.52); stroke-width: 1; stroke-linecap: round; }
+.mc-fish-led { fill: none; stroke: #38bdf8; stroke-width: 1.5; stroke-linecap: round; }
+.mc-fish-visor { fill: #090d16; stroke: #38bdf8; stroke-width: 0.9; }
+.mc-fish-eye { fill: #38bdf8; }
+
+.mascot-companion[data-mood="correct"] .mc-eye { opacity: 0; }
+.mascot-companion[data-mood="correct"] .mc-happy { opacity: 1; }
+.mascot-companion[data-mood="wrong"] .mc-wrong { opacity: 1; }
+.mascot-companion[data-mood="wrong"] .mc-eye { transform: scaleY(0.72); }
+
+@keyframes mcEmotePop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+@keyframes mcStageHappy {
+  0%, 100% { transform: translateY(0) scale(1); }
+  45% { transform: translateY(-4px) scale(1.1); }
+}
+
+@keyframes mcEmoteShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3.5px); }
+  55% { transform: translateX(3.5px); }
+  80% { transform: translateX(-2px); }
+}
+
+@keyframes mcBubbleDrop {
+  from { opacity: 0; transform: translate(-50%, -4px) scale(0.94); }
+  to { opacity: 1; transform: translate(-50%, 0) scale(1); }
+}
+
+@keyframes mcPortholeBolt {
+  from { opacity: 1; transform: translate(0, -50%) scaleX(0.6); }
+  to { opacity: 0; transform: translate(22px, -50%) scaleX(1.3); }
+}
+
+@media (max-width: 640px) {
+  .mascot-handle { width: 40px; height: 40px; }
+  .mascot-frame { width: 38px; height: 38px; }
+  .mascot-stage,
+  .mascot-companion[data-mascot="fish"] .mascot-stage { width: 34px; height: 34px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-frame, .mascot-stage, .mascot-bubble, .mascot-porthole-bolt { animation: none !important; }
+}

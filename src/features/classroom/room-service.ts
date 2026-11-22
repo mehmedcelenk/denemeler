@@ -150,7 +150,10 @@ export class RoomService {
       this.dirtyVisibility = false;
       const fatal = error instanceof ClassroomError &&
         ['ROOM_CLOSED', 'CONNECTION_REPLACED', 'FORBIDDEN', 'AUTH_REQUIRED'].includes(error.code);
-      if (fatal) this.disconnect();
+      if (fatal) {
+        this.disconnect();
+        showRoomToast('Oturum bağlantısı', this.errorText(error));
+      }
       this.state = { ...this.state, connection: fatal ? 'error' : 'reconnecting', error: this.errorText(error) };
       this.notify();
     }
@@ -166,7 +169,8 @@ export class RoomService {
   logStudentAnswer(questionId: number, isCorrect: boolean): void { this.recordAnswer(questionId, isCorrect); }
   revokeStudentAnswer(questionId: number): void { this.recordAnswer(questionId, null); }
   private recordAnswer(questionId: number, value: boolean | null): void {
-    if (!this.session || this.state.isHost || !Number.isSafeInteger(questionId) || questionId < 1) return;
+    const session = this.session;
+    if (!session || getActiveSession()?.user.id !== session.userId || this.session !== session || this.state.isHost || !Number.isSafeInteger(questionId) || questionId < 1) return;
     this.pending[String(questionId)] = { value, revision: ++this.revision };
     this.persistPending();
     this.schedule(150);

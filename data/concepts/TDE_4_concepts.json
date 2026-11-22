@@ -9,10 +9,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 286,
-    "tanim": "İnsanın başından geçen (ya da geçebilecek) olayları **kişi, yer ve zaman** öğeleriyle, **serim-düğüm-çözüm** düzeninde ve **uzun soluklu** anlatan edebî türdür; tıpkı bir dizinin sezonlar boyu karakterleri, mekânı ve zamanı didik didik işlemesi gibi.\n💡 Sınav Şifresi: \"Uzun + kişi-yer-zaman ayrıntısı + serim-düğüm-çözüm\" → ROMAN; hikâyeden farkı **uzunluk, ayrıntı ve olay örgüsünün genişliği**dir.",
+    "tanim": "İnsanın başından geçen (ya da geçebilecek) olayları **kişi, yer ve zaman** öğeleriyle, **serim-düğüm-çözüm** düzeninde ve **uzun soluklu** anlatan edebî türdür; tıpkı bir dizinin sezonlar boyu karakterleri, mekânı ve zamanı didik didik işlemesi gibi.\n💡 Hile: Roman ile hikâyeyi ayıran tek şey **'uzunluk + ayrıntı'**dır — hikâye 'tek oturuşta biten film', roman 'sezonluk dizi'. Soruda **'serim-düğüm-çözüm + kişi-yer-zaman + uzun'** üçlüsünü görünce roman de; hikâyede ise bu üçlüden **'uzun'** çıkar, yerine **'kısa/tek olay'** gelir. Yani **uzunluk = romanın kimlik kartı**.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Roman$|\\\\\\\\broman türü\\\\\\\\b|\\\\\\\\bromanı\\\\\\\\b|\\\\\\\\bromanlar\\\\\\\\b|\\\\\\\\bromancılar\\\\\\\\b",
+    "pattern": "\\broman(?!ya|larca)[a-zçğıöşü]*\\b",
     "aliases": []
   },
   {
@@ -25,10 +25,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 287,
-    "tanim": "Şemsettin Sami'nin 1872'de yazdığı, **ilk yerli Türk romanı** kabul edilen eserdir; Talat ile Fitnat'ın aşkını ve **görücü usulü evliliğin** yıkıcılığını işler.\n💡 Sınav Şifresi: \"İlk yerli roman = **Taaşşuk-ı Talat ve Fitnat** (Şemsettin Sami, 1872)\" — İlkler sorusunda bu üçlüyü kodla; konu: **görücü usulü + aşk**.",
+    "tanim": "Şemsettin Sami'nin 1872'de yazdığı, **ilk yerli Türk romanı** kabul edilen eserdir; Talat ile Fitnat'ın aşkını ve **görücü usulü evliliğin** yıkıcılığını işler.\n💡 Hile: 'İlk yerli roman'ı karıştırmamak için **'Talat-Fitnat = iki isim = yerli'** diye düşün: eserin adında **iki Türkçe isim** varsa o **ilk yerli** romandır (Taaşşuk-ı Talat ve Fitnat). İntibah'ın adı ise **tek kelime Arapça** — o da **ilk edebî** roman. Yani **iki isim = yerli, tek Arapça kelime = edebî**. Yazarı da **Şemsettin Sami** (Şems = güneş, ilk aydınlanma).",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "taaşşuk-ı talat ve fitnat|taassuk-i talat ve fitnat",
+    "pattern": "\\btaaşşuk-ı talat ve fitnat\\b|\\btaassuk-i talat ve fitnat\\b",
     "aliases": []
   },
   {
@@ -41,11 +41,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 287,
-    "tanim": "Namık Kemal'in 1876'da yazdığı, **ilk edebî ve tecrübi roman** sayılan eserdir; asıl adı **Son Pişmanlık**'tır ve **Ali Bey**'in Mahpeyker'e düşüp Dilâşub'u kaybetmesini anlatır.\n💡 Sınav Şifresi: \"İlk edebî/tecrübi roman = **İntibah** (Namık Kemal)\" — Eski adı **Son Pişmanlık** şıkkı tuzaktır; doğru cevap İntibah, kahraman **Ali Bey**.",
+    "tanim": "Namık Kemal'in 1876'da yazdığı, **ilk edebî ve tecrübi roman** sayılan eserdir; asıl adı **Son Pişmanlık**'tır ve **Ali Bey**'in Mahpeyker'e düşüp Dilâşub'u kaybetmesini anlatır.\n💡 Hile: **'İntibah'** kelimesi Arapça **'uyanış'** demek — yani **ilk edebî roman = edebiyatın uyanışı**. Eski adı **'Son Pişmanlık'** ise tuzak şıkkı: soruda 'Son Pişmanlık' geçiyorsa doğru cevap yine **İntibah**'tır (sadece eski adıdır). Kahramanı da **Ali Bey** — 'Ali'yi Mahpeyker'e kaptıran adam diye kodla. Yani **İntibah = uyanış = Ali Bey'in uyanışı (ama geç uyanış!)**.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^İntibah$|\\\\\\\\bintibah romanı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bİntibah\\b|\\bintibah romanı\\b",
+    "aliases": [],
+    "option_only_pattern": "^İntibah$"
   },
   {
     "id": "tde4_cezmi",
@@ -57,11 +58,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 287,
-    "tanim": "Namık Kemal'in **Osmanlı-İran savaşlarını** anlatan, Türk edebiyatının **ilk tarihî romanı**dır; Cezmi adlı yiğit bir sipahinin hikâyesi üzerinden **vatan ve kahramanlık** duygusunu işler.\n💡 Sınav Şifresi: \"İlk tarihî roman = **Cezmi** (Namık Kemal)\" — Konu: **Osmanlı-İran savaşı** anahtar kelimesi; tema: **vatan-kahramanlık**.",
+    "tanim": "Namık Kemal'in **Osmanlı-İran savaşlarını** anlatan, Türk edebiyatının **ilk tarihî romanı**dır; Cezmi adlı yiğit bir sipahinin hikâyesi üzerinden **vatan ve kahramanlık** duygusunu işler.\n💡 Hile: **Cezmi** ismini 'Cesaret' ile eşleştir. İlk tarihî romanın kahramanı bir 'Cesur' (Cezmi) sipahidir. Düşman kim? İran. Yani: **C**ezmi = **C**esaret + **İ**ran Savaşı.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Cezmi$|\\\\\\\\bcezmi romanı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bCezmi\\b|\\bcezmi romanı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Cezmi$"
   },
   {
     "id": "tde4_esrar_i_cinayat",
@@ -73,10 +75,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 287,
-    "tanim": "Ahmet Mithat Efendi'nin 1884'te yazdığı, Türk edebiyatının **ilk polisiye romanı**dır; adı bile \"cinayetlerin sırları\" diye fısıldar ve **Osmanlı polisinin** bir cinayeti çözmesini anlatır.\n💡 Sınav Şifresi: \"İlk polisiye = **Esrâr-ı Cinâyât** (Ahmet Mithat, 1884)\" — Kod: **cinayet + sır = polisiye**; Sherlock Holmes'un Türk versiyonu gibi düşün.",
+    "tanim": "Ahmet Mithat Efendi'nin 1884'te yazdığı, Türk edebiyatının **ilk polisiye romanı**dır; adı bile \"cinayetlerin sırları\" diye fısıldar ve **Osmanlı polisinin** bir cinayeti çözmesini anlatır.\n💡 Hile: İsimdeki **'Cinayet'** kelimesi seni doğrudan **Polisiye** türüne götürür. Ahmet Mithat = Halk için yazan adam. Halk polisiye sever. Mantık: **Cinayet varsa, polisiye vardır.**",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "esrâr-ı cinâyât|esrar-ı cinayat|esrarı cinayat",
+    "pattern": "\\besrâr-ı cinâyât\\b|\\besrar-ı cinayat\\b|\\besrarı cinayat\\b",
     "aliases": []
   },
   {
@@ -89,11 +91,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 288,
-    "tanim": "Nabizade Nazım'ın **Antalya Kaş**'taki köy hayatını **realist** bir dille anlattığı, Türk edebiyatının **ilk köy romanı**dır; Karabibik'in **toprak ve kız** uğruna verdiği mücadeleyi işler.\n💡 Sınav Şifresi: \"İlk köy romanı = **Karabibik** (Nabizade Nazım)\" — Mekân: **Antalya/Kaş**, akım: **realizm**, konu: **köylünün geçim mücadelesi**.",
+    "tanim": "Nabizade Nazım'ın **Antalya Kaş**'taki köy hayatını **realist** bir dille anlattığı, Türk edebiyatının **ilk köy romanı**dır; Karabibik'in **toprak ve kız** uğruna verdiği mücadeleyi işler.\n💡 Hile: **Karabibik** = **Kara** toprak + **Bibik** (Köylü). İsimdeki 'Kara' seni toprağa, 'Bibik' seni köylüye bağlar. İlk köy romanı olduğu için akılda kalıcı: **Köy = Karabibik**.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Karabibik$|\\\\\\\\bkarabibik\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bKarabibik\\b|\\bkarabibik\\b",
+    "aliases": [],
+    "option_only_pattern": "^Karabibik$"
   },
   {
     "id": "tde4_araba_sevdasi",
@@ -105,10 +108,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 288,
-    "tanim": "Recaizade Mahmut Ekrem'in **Bihruz Bey** karakteri üzerinden **yanlış Batılılaşmayı** yeren, ilk **realist** Türk romanıdır; Bihruz'un arabalara ve Fransızca'ya özentisiyle alay eder.\n💡 Sınav Şifresi: \"Yanlış Batılılaşma + Bihruz Bey = **Araba Sevdası**\" — İlk realist roman; **alafranga züppe** tipinin simgesi, mekân **Çamlıca**.",
+    "tanim": "Recaizade Mahmut Ekrem'in **Bihruz Bey** karakteri üzerinden **yanlış Batılılaşmayı** yeren, ilk **realist** Türk romanıdır; Bihruz'un arabalara ve Fransızca'ya özentisiyle alay eder.\n💡 Hile: **Bihruz** ismini 'Bihruz' (Ruhunu kaybetmiş) gibi düşün. Araba sevdası yüzünden ruhunu kaybeden züppe. **Araba** = Batı özentisi, **Bihruz** = Bu özentinin kurbanı. İlk realist roman olduğunu hatırla: Gerçekçi bir züppe portresi.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "araba sevdası|araba sevdasi",
+    "pattern": "\\baraba sevdası\\b|\\baraba sevdasi\\b",
     "aliases": []
   },
   {
@@ -121,10 +124,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 286,
-    "tanim": "İspanyol yazar **Cervantes**'in 17. yüzyıl başında (1605-1615) yazdığı, dünya edebiyatının **ilk modern romanı** kabul edilen eserdir; yel değirmenlerine saldıran şövalye Don Kişot'un trajikomik hikâyesi.\n💡 Sınav Şifresi: \"İlk modern roman = **Don Kişot** (Cervantes, İspanyol, 1605)\" — Simge: **yel değirmenleri**; tip: **idealist-romantik kahraman**.",
+    "tanim": "İspanyol yazar **Cervantes**'in 17. yüzyıl başında (1605-1615) yazdığı, dünya edebiyatının **ilk modern romanı** kabul edilen eserdir; yel değirmenlerine saldıran şövalye Don Kişot'un trajikomik hikâyesi.\n💡 Hile: **Don Kişot** = **Don** (Bay) + **Kişot** (Kışkırtıcı). Gerçekle hayali karıştıran adam. Yel değirmenlerini dev sanması, 'Modern Roman'ın başladığı yerdir: İç dünyaya ve psikolojiye dönüş.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "don kişot|don kisot",
+    "pattern": "\\bdon kişot\\b|\\bdon kisot\\b",
     "aliases": []
   },
   {
@@ -137,11 +140,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 286,
-    "tanim": "İtalyan yazar **Boccaccio**'nun 14. yüzyılda (1353) kaleme aldığı, dünya edebiyatının **ilk hikâye derlemesi** sayılan eserdir; vebadan kaçan 10 gencin 10 gün boyunca anlattığı 100 hikâye.\n💡 Sınav Şifresi: \"İlk hikâye derlemesi = **Dekameron** (Boccaccio, İtalyan, 1353)\" — Kod: **10 gün × 10 hikâye = 100**; çerçeve hikâye tekniğinin ilk örneği.",
+    "tanim": "İtalyan yazar **Boccaccio**'nun 14. yüzyılda (1353) kaleme aldığı, dünya edebiyatının **ilk hikâye derlemesi** sayılan eserdir; vebadan kaçan 10 gencin 10 gün boyunca anlattığı 100 hikâye.\n💡 Hile: **Deka** = 10. **Dekameron** = 10 Gün. 10 Genç x 10 Gün = 100 Hikâye. Vebadan kaçıp hikâye anlatanlar. **Deka** (10) sayısını hatırla, gerisi gelir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Dekameron$|\\\\\\\\bdekameron\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDekameron\\b|\\bdekameron\\b",
+    "aliases": [],
+    "option_only_pattern": "^Dekameron$"
   },
   {
     "id": "tde4_milli_edebiyat",
@@ -153,10 +157,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 286,
-    "tanim": "**1911**'de **Genç Kalemler** dergisiyle (Ömer Seyfettin'in **Yeni Lisan** makalesiyle) başlayan; **sade dil**, **Anadolu insanı**, **millî kaynaklar** ve **Kurtuluş Savaşı**'nı işleyen edebî dönemdir.\n💡 Sınav Şifresi: \"1911 + **Genç Kalemler** + **Yeni Lisan** = Millî Edebiyat\" — Anahtar üçlü: **sade dil, Anadolu, millî kaynak**.",
+    "tanim": "**1911**'de **Genç Kalemler** dergisiyle (Ömer Seyfettin'in **Yeni Lisan** makalesiyle) başlayan; **sade dil**, **Anadolu insanı**, **millî kaynaklar** ve **Kurtuluş Savaşı**'nı işleyen edebî dönemdir.\n💡 Hile: **1911** = **1** (Bir) **9** (Dokuz) **1** (Bir) **1** (Bir). **Genç Kalemler** = Gençler yeni bir dil istiyor. **Yeni Lisan** = Sade Türkçe. Akrostiş: **G**enç **K**alemler **Y**eni **L**isan = **G**eç **K**alk **Y**az **L**azım (Sade dil için kalkıp yazmalısın).",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "millî edebiyat[a-zçğıöşü]*|milli edebiyat[a-zçğıöşü]*",
+    "pattern": "\\bmillî edebiyat[a-zçğıöşü]*|\\bmilli edebiyat[a-zçğıöşü]*",
     "aliases": []
   },
   {
@@ -169,10 +173,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 289,
-    "tanim": "Millî Edebiyat'ın öncü **kadın romancısı**; Kurtuluş Savaşı'nı **cephede bizzat** yaşayıp **Ateşten Gömlek**, **Vurun Kahpeye** ve **Türk'ün Ateşle İmtihanı**'nı kaleme almıştır.\n💡 Sınav Şifresi: \"Cephede yazan kadın romancı = **Halide Edip Adıvar**\" — Eserleri: **Ateşten Gömlek + Vurun Kahpeye + Türk'ün Ateşle İmtihanı**.",
+    "tanim": "Millî Edebiyat'ın öncü **kadın romancısı**; Kurtuluş Savaşı'nı **cephede bizzat** yaşayıp **Ateşten Gömlek**, **Vurun Kahpeye** ve **Türk'ün Ateşle İmtihanı**'nı kaleme almıştır.\n💡 Hile: **Halide** = **Hal** (Durum) **Edip** (Yazan). Savaşın halini yazan edip. Cephede bizzat bulunan tek büyük kadın romancı. Eserlerindeki 'Ateş' ve 'Vurun' kelimeleri savaşın sıcaklığını hissettirir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "halide edip adıvar|halide edip",
+    "pattern": "\\bhalide edip adıvar\\b|\\bhalide edip\\b",
     "aliases": []
   },
   {
@@ -185,10 +189,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 289,
-    "tanim": "Halide Edip Adıvar'ın **Kurtuluş Savaşı'nı cepheden** sıcağı sıcağına anlatan, Millî Mücadele'yi konu alan **ilk roman**ıdır; Ayşe, İhsan ve Peyami'nin hikâyesiyle savaşın ateşini okura taşır.\n💡 Sınav Şifresi: \"Kurtuluş Savaşı'nı **cepheden** anlatan ilk roman = **Ateşten Gömlek** (Halide Edip)\" — Simge: **ateş = savaşın acısı**; kahramanlar: **Ayşe-İhsan-Peyami**.",
+    "tanim": "Halide Edip Adıvar'ın **Kurtuluş Savaşı'nı cepheden** sıcağı sıcağına anlatan, Millî Mücadele'yi konu alan **ilk roman**ıdır; Ayşe, İhsan ve Peyami'nin hikâyesiyle savaşın ateşini okura taşır.\n💡 Hile: **Ateşten Gömlek** = Giyilemez ama giyilir. Savaşın acısı ateş gibidir, gömlek gibi bedene yapışır. İlk roman olduğu için 'Gömlek' (İlk giyilen) metaforunu kullan. Ayşe = Anadolu kadını, İhsan = Fedakâr aydın.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ateşten gömlek|atesten gomlek",
+    "pattern": "\\bateşten gömlek\\b|\\batesten gomlek\\b",
     "aliases": []
   },
   {
@@ -201,10 +205,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 289,
-    "tanim": "Halide Edip Adıvar'ın kaleminden, işgal altındaki Anadolu'da **idealist öğretmen Aliye**'nin **Kuvayımilliye** ruhunu ateşleyen destansı romanı; adeta 'Anadolu'da aydınlanma kıvılcımı' hikâyesi. Roman, **Millî Mücadele** dönemini ve cehaletle mücadeleyi işler.\n💡 Sınav Şifresi: **Halide Edip + Aliye (öğretmen) + Kuvayımilliye + işgal dönemi Anadolu** dörtlüsünü görürsen şıkkı işaretle; 'cehaletle mücadele' vurgusu ayırt edici.",
+    "tanim": "Halide Edip Adıvar'ın kaleminden, işgal altındaki Anadolu'da **idealist öğretmen Aliye**'nin **Kuvayımilliye** ruhunu ateşleyen destansı romanı; adeta 'Anadolu'da aydınlanma kıvılcımı' hikâyesi. Roman, **Millî Mücadele** dönemini ve cehaletle mücadeleyi işler.\n💡 Hile: **Vurun Kahpeye** = Cehalete ve işgalciye vur. Kahraman **Aliye** (Yüce/Üstün). Öğretmen Aliye, cehaletin (kahpe) karşısında durur. 'Vurun' emri, cehalete karşı savaş çağrısıdır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "vurun kahpeye",
+    "pattern": "\\bvurun kahpeye\\b",
     "aliases": []
   },
   {
@@ -217,10 +221,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 290,
-    "tanim": "Halide Edip Adıvar'ın **II. Abdülhamit dönemi İstanbul'u** mahalle hayatını, **Rabia**'nın imanı ile **Peregrini**'nin Batı aklını birleştirerek **Doğu-Batı sentezini** işlediği başyapıtı; sanki bir mahalle kahvesinde iki medeniyetin buluşması. Roman, **Sinekli Bakkal** mahallesinde geçer.\n💡 Sınav Şifresi: **Rabia (Doğu) + Peregrini (Batı) + Sinekli Bakkal mahallesi + Abdülhamit dönemi**; 'Doğu-Batı sentezi' anahtar kelimesi ayırt edici.",
+    "tanim": "Halide Edip Adıvar'ın **II. Abdülhamit dönemi İstanbul'u** mahalle hayatını, **Rabia**'nın imanı ile **Peregrini**'nin Batı aklını birleştirerek **Doğu-Batı sentezini** işlediği başyapıtı; sanki bir mahalle kahvesinde iki medeniyetin buluşması. Roman, **Sinekli Bakkal** mahallesinde geçer.\n💡 Hile: **Rabia** (Doğu/İman) + **Peregrini** (Batı/Akıl) = **Sinekli Bakkal**. İsimleri hatırla: Rabia (Arapça kökenli, Doğu), Peregrini (Latince kökenli, Batı). İkisinin aşkı = Doğu-Batı sentezi.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "sinekli bakkal",
+    "pattern": "\\bsinekli bakkal\\b",
     "aliases": []
   },
   {
@@ -233,11 +237,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 204,
-    "tanim": "Tek kişilik sahne ustası: yüksekçe bir yerde oturup **mendil ve sopa (baston)** ile taklitler yapan, hikâye anlatan geleneksel Türk tiyatrosu sanatçısı; adeta tek başına bir tiyatro ekibi. **Seyirlik oyun** türüdür, perde kullanılmaz.\n💡 Sınav Şifresi: **Tek kişi + mendil + sopa + taklit** = Meddah. 'Perde' veya 'tasvir' varsa Karagöz'dür, karıştırma.",
+    "tanim": "Tek kişilik sahne ustası: yüksekçe bir yerde oturup **mendil ve sopa (baston)** ile taklitler yapan, hikâye anlatan geleneksel Türk tiyatrosu sanatçısı; adeta tek başına bir tiyatro ekibi. **Seyirlik oyun** türüdür, perde kullanılmaz.\n💡 Hile: **Meddah** = **Med**ya (Ortam) + **Dah**i (Tek başına). Tek kişi, mendil ve baston. **Karagöz** = İki boyutlu gölge, **Meddah** = Üç boyutlu tek adam. 'Perde' yoksa, 'Mendil' varsa Meddah'tır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Meddah$|\\\\\\\\bmeddahlık\\\\\\\\b|\\\\\\\\bmeddahlar\\\\\\\\b|\\\\\\\\bmeddah\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bMeddah\\b|\\bmeddahlık\\b|\\bmeddahlar\\b|\\bmeddah\\b",
+    "aliases": [],
+    "option_only_pattern": "^Meddah$"
   },
   {
     "id": "tde4_karagoz",
@@ -249,11 +254,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 200,
-    "tanim": "Deriden yapılmış **tasvirlerin** ışıkla **beyaz perdeye (hayal perdesi)** yansıtıldığı gölge oyunu; günümüz sinema perdesinin Osmanlı'daki atası gibi düşün. **Hayali** tarafından oynatılır, **Karagöz ile Hacivat** iki ana tiptir.\n💡 Sınav Şifresi: **Deri tasvir + hayal perdesi + ışık + Hayali** = Karagöz. 'Tek kişi + mendil' görürsen Meddah'a git.",
+    "tanim": "Deriden yapılmış **tasvirlerin** ışıkla **beyaz perdeye (hayal perdesi)** yansıtıldığı gölge oyunu; günümüz sinema perdesinin Osmanlı'daki atası gibi düşün. **Hayali** tarafından oynatılır, **Karagöz ile Hacivat** iki ana tiptir.\n💡 Hile: **Karagöz'ü 'KARA' harfleriyle çöz:** **K**=Karanlık oda (ışık), **A**=Arkadan yansıtma (perde), **R**=Rende deri (tasvir), **A**=Adam tek başına (Hayali). Yani 'KARA' = Karagöz'ün 4 şartı. Meddah'la karıştırmamak için: Meddah'ta **mendil + sandalye + tek adam** var ama **perde ve ışık YOK** — perde yoksa Karagöz değildir, nokta.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Karagöz$|\\\\\\\\bkaragöz oyunu\\\\\\\\b|\\\\\\\\bgölge oyunu\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bKaragöz\\b|\\bkaragöz oyunu\\b|\\bgölge oyunu\\b",
+    "aliases": [],
+    "option_only_pattern": "^Karagöz$"
   },
   {
     "id": "tde4_kavuklu",
@@ -265,10 +271,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 202,
-    "tanim": "Orta oyununun **halkı temsil eden, dobra ve hazırcevap** komik başkahramanı; Karagöz'ün sahnedeki canlı versiyonu gibi. Karşısında **Pişekâr** bulunur; oyunun **cüce/komik** tipidir.\n💡 Sınav Şifresi: **Kavuklu = Karagöz'ün orta oyunundaki dengi**; 'halk tabakası + hazırcevap + Pişekâr'ın karşıtı' eşleşmesini unutma.",
+    "tanim": "Orta oyununun **halkı temsil eden, dobra ve hazırcevap** komik başkahramanı; Karagöz'ün sahnedeki canlı versiyonu gibi. Karşısında **Pişekâr** bulunur; oyunun **cüce/komik** tipidir.\n💡 Hile: **'Kavuk' kelimesinin içinde 'K' harfi = Karagöz'ün K'si** — yani Kavuklu, Karagöz'ün canlı kopyası. Pişekâr'ı da 'Pişmiş = akıllı/okumuş' diye kodla: **Pişekâr akıllı, Kavuklu halk.** İkisini asla ters çevirme: **P**işekâr = **P**rofesör (üst tabaka), **K**avuklu = **K**öylü (halk).",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Kavuklu$|\\\\\\\\bkavuklu ile\\\\\\\\b",
+    "pattern": "\\bkavuklu[a-zçğıöşü]*\\b",
     "aliases": []
   },
   {
@@ -281,10 +287,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 202,
-    "tanim": "Geleneksel Türk tiyatrosunda (Karagöz ve Orta Oyunu) **kadın kılığına giren erkek oyuncu** veya kadın tiplerinin ortak adı; dönemin 'tek kişilik kostüm değişimi' geleneği. Karagöz'de kadın tipleri de zenne olarak adlandırılır.\n💡 Sınav Şifresi: **Zenne = kadın tipi/kadın kılığındaki erkek oyuncu**. Karagöz ve Orta Oyunu'nda ortak terim olduğunu hatırla.",
+    "tanim": "Geleneksel Türk tiyatrosunda (Karagöz ve Orta Oyunu) **kadın kılığına giren erkek oyuncu** veya kadın tiplerinin ortak adı; dönemin 'tek kişilik kostüm değişimi' geleneği. Karagöz'de kadın tipleri de zenne olarak adlandırılır.\n💡 Hile: **'Zenne' kelimesini tersten oku: 'Ennez' → 'Ene' (kadın) + 'Z' (zıt cinsiyet).** Daha kolayı: **Zenne = 'Z' harfi gibi kıvrımlı = kadın silüeti**, ama oynatan **erkek**. Tek cümlelik kilit: **'Kadın görünür, erkek oynar.'** Bu cümleyi hatırla, zenne tanımını asla şaşırma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Zenne$|\\\\\\\\bzenne\\\\\\\\b",
+    "pattern": "\\bzenne[a-zçğıöşü]*\\b",
     "aliases": []
   },
   {
@@ -297,10 +303,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 201,
-    "tanim": "Karagöz veya orta oyununun **müzik eşliğinde Hacivat ya da Pişekâr'ın semai okuyarak sahneye girdiği** giriş bölümü; tıpkı bir filmin açılış jeneriği gibi. Karagöz'de **Hacivat**, orta oyununda **Pişekâr** girer.\n💡 Sınav Şifresi: **Müzik + semai + giriş + Hacivat/Pişekâr** = Mukaddime. 'Tekerleme/atışma' görürsen Muhavere'ye git.",
+    "tanim": "Karagöz veya orta oyununun **müzik eşliğinde Hacivat ya da Pişekâr'ın semai okuyarak sahneye girdiği** giriş bölümü; tıpkı bir filmin açılış jeneriği gibi. Karagöz'de **Hacivat**, orta oyununda **Pişekâr** girer.\n💡 Hile: **'Mukaddime' = 'Mukaddes Giriş'** — kutsal/açılış demek. Ama asıl hile: **MUKADDİME'nin ilk hecesi 'MU' = MÜZİK.** Müzik duyuyorsan Mukaddime'dedir. Muhavere ile karıştırma: **MUHAVERE'de 'HA' = HAsbihal (karşılıklı konuşma)** var, **MUKADDİME'de tek kişi + semai + müzik** var. Tek kişi mi konuşuyor? Mukaddime. İki kişi mi atışıyor? Muhavere.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Mukaddime$|\\\\\\\\bmukaddime bölümü\\\\\\\\b",
+    "pattern": "\\bmukaddime[a-zçğıöşü]*\\b",
     "aliases": []
   },
   {
@@ -313,10 +319,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 201,
-    "tanim": "Karagöz-Hacivat veya Kavuklu-Pişekâr'ın **karşılıklı tekerlemelerle birbirini yanlış anlayarak** atıştığı söyleşme bölümü; modern sitcom'lardaki 'yanlış anlaşılma' komedisinin kökeni. **Tekerleme** bu bölümün ayırt edici unsurudur.\n💡 Sınav Şifresi: **Tekerleme + yanlış anlama + atışma** = Muhavere. 'Asıl olay' varsa Fasıl'dır.",
+    "tanim": "Karagöz-Hacivat veya Kavuklu-Pişekâr'ın **karşılıklı tekerlemelerle birbirini yanlış anlayarak** atıştığı söyleşme bölümü; modern sitcom'lardaki 'yanlış anlaşılma' komedisinin kökeni. **Tekerleme** bu bölümün ayırt edici unsurudur.\n💡 Hile: **'Muhavere' kelimesinin içinde 'HAVERE' → 'HAberleşme' var** = karşılıklı konuşma. Ama ezber hilesi şu: **MUHAVERE = 'MUHABBET'** (sohbet). Muhabbet = iki kişi konuşuyor = Muhavere. **MUKADDİME = 'MÜZİK'** (tek kişi). İkisinin ilk iki harfi: **MU** ortak, ama **3. harf: K (müzik) vs H (hasbihal)**. K→Müzik, H→Hasbihal. Bir daha karışmaz.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Muhavere$|\\\\\\\\bmuhavere bölümü\\\\\\\\b",
+    "pattern": "\\bmuhavere[a-zçğıöşü]*\\b",
     "aliases": []
   },
   {
@@ -329,11 +335,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 201,
-    "tanim": "Karagöz, orta oyunu veya meddahta **asıl konunun ve olay örgüsünün** sergilendiği ana gövde bölümü; filmin 'gelişme' kısmı gibi. Karagöz'de **fasıl** içinde çeşitli tipler (Çelebi, Tuzsuz Deli Bekir, Zenne vb.) sahneye çıkar.\n💡 Sınav Şifresi: **Asıl olay + ana konu + tipler** = Fasıl. 'Giriş' Mukaddime, 'atışma' Muhavere, 'veda' Bitiş.",
+    "tanim": "Karagöz, orta oyunu veya meddahta **asıl konunun ve olay örgüsünün** sergilendiği ana gövde bölümü; filmin 'gelişme' kısmı gibi. Karagöz'de **fasıl** içinde çeşitli tipler (Çelebi, Tuzsuz Deli Bekir, Zenne vb.) sahneye çıkar.\n💡 Hile: **'Fasıl' = 'FASIL' (bölüm/ara)** ama asıl kod: **FASIL'ın ilk harfi 'F' = FİLM.** Filmde asıl olay nerede? **Gelişme.** Yani **Fasıl = Filmin gelişmesi = asıl olay.** Sıralama hilesi: **M**ukaddime → **M**uhavere → **F**asıl → **B**itiş = **MMFB** = '**M**üzik, **M**uhabbet, **F**ilm, **B**itiş'. Bu 4 harfi ezberle, bölüm sırasını asla şaşırma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Fasıl$|\\\\\\\\bfasıl bölümü\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bfasıl\\s+bölümü[a-zçğıöşü]*\\b",
+    "aliases": [],
+    "option_only_pattern": "^Fasıl$"
   },
   {
     "id": "tde4_bitis",
@@ -345,11 +352,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 201,
-    "tanim": "Oyuncuların seyirciden **kusurlar için af dileyip** gelecek oyunun yer ve zamanını haber vererek sahneden çekildiği son bölüm; tıpkı bir dizinin 'gelecek bölümde' fragmanı gibi. Karagöz'de **Hacivat**, orta oyununda **Pişekâr** kapanışı yapar.\n💡 Sınav Şifresi: **Af dileme + gelecek oyunun duyurusu + Hacivat/Pişekâr** = Bitiş. 'Veda + özür' anahtar kelimeleri.",
+    "tanim": "Oyuncuların seyirciden **kusurlar için af dileyip** gelecek oyunun yer ve zamanını haber vererek sahneden çekildiği son bölüm; tıpkı bir dizinin 'gelecek bölümde' fragmanı gibi. Karagöz'de **Hacivat**, orta oyununda **Pişekâr** kapanışı yapar.\n💡 Hile: **Bitiş = 'Özür + Reklam'.** Yani: **özür dile + gelecek bölümün fragmanını ver.** Dizi mantığıyla düşün: her bölüm sonunda 'gelecek hafta...' der ya — işte o Bitiş bölümü. Kapanışı kim yapar sorusuna hile: **Açılışı da kapanışı da AYNI kişi yapar** — Karagöz'de **Hacivat**, Orta Oyunu'nda **Pişekâr**. Yani 'giriş = çıkış' kuralı: **Mukaddime'de kim girdiyse Bitiş'te o çıkar.**",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Bitiş$|\\\\\\\\bbitiş bölümü\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bbitiş\\s+bölümü[a-zçğıöşü]*\\b",
+    "aliases": [],
+    "option_only_pattern": "^Bitiş$"
   },
   {
     "id": "tde4_sair_evlenmesi",
@@ -361,10 +369,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 205,
-    "tanim": "Şinasi'nin 1860'ta **Tercüman-ı Ahvâl**'de tefrika edilip yayımladığı, **Müştak Bey** üzerinden görücü usulü evliliği yeren **ilk Türk tiyatro oyunu**; Türk sahne edebiyatının 'açılış filmi'. **Batılı anlamda ilk yerli tiyatro** eseridir.\n💡 Sınav Şifresi: **Şinasi + 1860 + Müştak Bey + görücü usulü eleştirisi + ilk yerli tiyatro** = İlk Türk tiyatro eseri. 'İlk' vurgusu ayırt edici.",
+    "tanim": "Şinasi'nin 1860'ta **Tercüman-ı Ahvâl**'de tefrika edilip yayımladığı, **Müştak Bey** üzerinden görücü usulü evliliği yeren **ilk Türk tiyatro oyunu**; Türk sahne edebiyatının 'açılış filmi'. **Batılı anlamda ilk yerli tiyatro** eseridir.\n💡 Hile: **'ŞAİR EVLENMESİ' isminin içinde cevap gizli:** **ŞAİR = Şinasi** (şairin kendisi yazdı), **EVLENME = görücü usulü eleştirisi** (konu bu). Yıl hilesi: **1860 = '18-60' → '18 yaşında evlenme'** (görücü usulü yaş eleştirisi gibi düşün). Ama en sağlam kilit: **'İLK' kelimesini Şinasi'ye yapıştır** — **Şinasi = İlklerin adamı** (ilk noktalama, ilk fabl çevirisi, ilk tiyatro). Şinasi'yi görünce 'ilk' de, 'ilk' görünce Şinasi de. Otomatik eşleşme.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "şair evlenmesi|sair evlenmesi|müştak bey",
+    "pattern": "\\bşair evlenmesi\\b|\\bsair evlenmesi\\b|\\bmüştak bey\\b",
     "aliases": []
   },
   {
@@ -377,11 +385,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 215,
-    "tanim": "Akif Paşa'nın **siyasi haksızlıkları ve saray çekişmelerini** anlattığı, Tanzimat'ın **ilk siyasi hatıratı**; dönemin 'siyasi anı defteri' gibi. Eser, **Tanzimat Dönemi hatıra** türünün öncüsüdür.\n💡 Sınav Şifresi: **Akif Paşa + siyasi hatırat + ilk** üçlüsü. 'Tabsıra' kelimesi 'açıklama/aydınlatma' anlamına gelir, hatırlatıcı.",
+    "tanim": "Akif Paşa'nın **siyasi haksızlıkları ve saray çekişmelerini** anlattığı, Tanzimat'ın **ilk siyasi hatıratı**; dönemin 'siyasi anı defteri' gibi. Eser, **Tanzimat Dönemi hatıra** türünün öncüsüdür.\n💡 Hile: **'Tabsıra' kelimesinin kökü 'BASİRET' = görme/aydınlatma.** Yani **Tabsıra = 'içini dökme, aydınlatma'.** Kod: **TABSIRA = 'TAB' (tabanca gibi patlama) + 'SIRA' (sıra) → 'sırasıyla patlatan adam'** = Akif Paşa'nın siyasi hesaplaşması. Ama en pratik: **'Tabsıra' → 'TAB' harfleri 'Tanzimat'ın TA'sı + 'B' (ilk/Birinci) → Tanzimat'ın ilk siyasi hatıratı.** 'İlk siyasi hatıra' = Tabsıra, otomatik.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Tabsıra$|\\\\\\\\btabsıra\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bTabsıra\\b|\\btabsıra\\b",
+    "aliases": [],
+    "option_only_pattern": "^Tabsıra$"
   },
   {
     "id": "tde4_saray_ve_otesi",
@@ -393,10 +402,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 216,
-    "tanim": "Halit Ziya Uşaklıgil'in **Sultan Reşat'ın özel kalem müdürlüğü** görevi sırasında **Mabeyn** (saray) çevresinde gördüklerini ve yaşadıklarını anlattığı **anı** kitabıdır; sanki bir sarayın kamera arkası belgeseli gibi.\n💡 Sınav Şifresi: **Halit Ziya + Saray/Mabeyn + anı**; roman değil, hatıra türünde olduğu ayırt edici.",
+    "tanim": "Halit Ziya Uşaklıgil'in **Sultan Reşat'ın özel kalem müdürlüğü** görevi sırasında **Mabeyn** (saray) çevresinde gördüklerini ve yaşadıklarını anlattığı **anı** kitabıdır; sanki bir sarayın kamera arkası belgeseli gibi.\n💡 Hile: **'SARAY VE ÖTESİ' isminin kendisi hile:** **SARAY = Mabeyn (içerisi)**, **ÖTESİ = dışarısı.** Yani kitap 'sarayın içinden dışına' bakış. Halit Ziya'yı 'roman yazarı' diye bilirsin ama bu eser **anı** — karıştırma tuzağı burada! Kod: **'SARAY' kelimesini görünce 'HALİT ZİYA'nın ROMANI değil, ANISI' de.** Çünkü Halit Ziya'nın romanı **'Saray ve Ötesi' değil, 'Aşk-ı Memnu'dur.** Saray = anı, Aşk = roman. Bu eşleşmeyle asla şaşmazsın.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "saray ve ötesi|saray ve otesi",
+    "pattern": "\\bsaray ve ötesi\\b|\\bsaray ve otesi\\b",
     "aliases": []
   },
   {
@@ -409,10 +418,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 216,
-    "tanim": "Hüseyin Cahit Yalçın'ın **Servetifünun dönemindeki edebî tartışmaları** ve kavgaları içeriden bir tanık gibi anlattığı **hatıra** kitabıdır; tıpkı bir gazetecinin arşiv belgeleriyle dönemi aydınlatması gibi.\n💡 Sınav Şifresi: **Hüseyin Cahit + Servetifünun iç kavgaları + hatıra**; 'tanık anlatımı' anahtar kelime.",
+    "tanim": "Hüseyin Cahit Yalçın'ın **Servetifünun dönemindeki edebî tartışmaları** ve kavgaları içeriden bir tanık gibi anlattığı **hatıra** kitabıdır; tıpkı bir gazetecinin arşiv belgeleriyle dönemi aydınlatması gibi.\n💡 Hile: **'EDEBÎ HATIRALAR' ismi zaten türü söylüyor: HATIRA.** Ama asıl hile: **Hüseyin Cahit = 'CAHİT' → 'CAHİL değil, CAHİT'** yani 'bilen, tanık olan' adam. Servetifünun kavgalarını **içeriden** anlatan tek kişi. Kod cümlesi: **'Kavga varsa, tanığı Cahit'tir.'** Servetifünun + kavga + hatıra = Hüseyin Cahit Yalçın. Üçlü kilit, tek isim.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "edebî hatıralar|edebi hatiralar",
+    "pattern": "\\bedebî hatıralar\\b|\\bedebi hatiralar\\b",
     "aliases": []
   },
   {
@@ -425,10 +434,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 217,
-    "tanim": "Muallim Naci'nin **sekiz yaşına kadarki çocukluğunu** duru ve sade bir Türkçeyle anlattığı **otobiyografik anı** kitabıdır; bir çocuğun gözünden eski İstanbul fotoğraf albümü gibi.\n💡 Sınav Şifresi: **Muallim Naci + çocukluk + sade Türkçe + otobiyografik anı**; 'ilk çocukluk anısı' vurgusu ayırt edici.",
+    "tanim": "Muallim Naci'nin **sekiz yaşına kadarki çocukluğunu** duru ve sade bir Türkçeyle anlattığı **otobiyografik anı** kitabıdır; bir çocuğun gözünden eski İstanbul fotoğraf albümü gibi.\n💡 Hile: **'ÖMER'İN ÇOCUKLUĞU' isminin içinde iki cevap var:** **ÖMER = Muallim Naci'nin kendi çocukluk adı** (yani otobiyografi — kendisi yazdı), **ÇOCUKLUK = 8 yaşına kadar** (sınır bu). Kod: **'ÖMER' → 'Ö' harfi 'ÖZ' (öz yaşam) → otobiyografi.** Muallim Naci'yi 'sade Türkçe' ile eşleştir: **Naci = NACİ → 'NACİZ' (sade, yalın)** gibi düşün. Sade Türkçe + çocukluk + otobiyografi = Ömer'in Çocukluğu. Üç anahtar, tek eser.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ömer’in çocukluğu|ömer'in çocukluğu|omerin cocuklugu",
+    "pattern": "\\bömer’in çocukluğu\\b|\\bömer'in çocukluğu\\b|\\bomerin cocuklugu\\b",
     "aliases": []
   },
   {
@@ -441,10 +450,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 220,
-    "tanim": "16. yüzyıl Osmanlı denizcisi Seydi Ali Reis'in **Hindistan'dan İstanbul'a kara yoluyla dönüş yolculuğunu** anlattığı **Mir'âtü'l-Memâlik**, Türk edebiyatının **ilk gezi (seyahat) kitabı** sayılır; adeta GPS'siz bir kâşifin yol günlüğü.\n💡 Sınav Şifresi: **Seydi Ali Reis = Mir'âtü'l-Memâlik = ilk gezi kitabı**; 'denizci ama kara yolu' detayı ayırt edici.",
+    "tanim": "16. yüzyıl Osmanlı denizcisi Seydi Ali Reis'in **Hindistan'dan İstanbul'a kara yoluyla dönüş yolculuğunu** anlattığı **Mir'âtü'l-Memâlik**, Türk edebiyatının **ilk gezi (seyahat) kitabı** sayılır; adeta GPS'siz bir kâşifin yol günlüğü.\n💡 Hile: Aklına 'ilk gezi kitabı' gelince şu zıtlığı kur: **DENİZCİ ama KARA yolu** → denizci karaya çıkınca 'Mir'at'ına (aynaya) bakar gibi memleketini anlatır. 'Denizci + kara' zıtlığı = Seydi Ali Reis. Başka hiçbir seyyah bu kadar tersine iş yapmaz!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "seydi ali reis|mir'âtü'?l-memâlik|miratül memalik",
+    "pattern": "\\bseydi ali reis\\b|\\bmir'âtü'?l-memâlik\\b|\\bmiratül memalik\\b",
     "aliases": []
   },
   {
@@ -457,10 +466,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 221,
-    "tanim": "17. yüzyılda **yaklaşık 50 yıl** Osmanlı coğrafyasını gezen Evliya Çelebi, izlenimlerini **10 ciltlik Seyahatnâme**'de topladı; sanki dönemin en üretken vlog'cusu gibi.\n💡 Sınav Şifresi: **Evliya Çelebi = 10 cilt Seyahatnâme = 50 yıl gezinti**; 'en büyük Türk seyyahı' kalıbı.",
+    "tanim": "17. yüzyılda **yaklaşık 50 yıl** Osmanlı coğrafyasını gezen Evliya Çelebi, izlenimlerini **10 ciltlik Seyahatnâme**'de topladı; sanki dönemin en üretken vlog'cusu gibi.\n💡 Hile: Sayıları çarpıştır: **50 yıl gez + 10 cilt yaz = 50/10 = 5** → 'Evliya' kelimesi 5 harfli değil ama **E-V-L-İ-Y-A**... Şaka bir yana, gerçek kısayol: **50 yıl = yarım asır = 'asrın gezgini'**, **10 cilt = 'on parmağında on marifet'**. En büyük seyyah sorusunda 'en çok gezen + en çok yazan' = Evliya. Seydi Ali'yle karıştırırsan hatırla: Seydi Ali **1 kitap**, Evliya **10 kitap** → cilt sayısı büyük olan Evliya!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "evliya çelebi|seyahatnâme|seyahatname",
+    "pattern": "\\bevliya çelebi\\b|\\bseyahatnâme\\b|\\bseyahatname\\b",
     "aliases": []
   },
   {
@@ -473,10 +482,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 222,
-    "tanim": "Ahmet Haşim'in **tedavi amacıyla gittiği Almanya (Frankfurt)** izlenimlerini **sanatkârane bir üslupla** anlattığı **Frankfurt Seyahatnamesi**, geziyi estetik bir denemeye dönüştürür; bir şairin gözünden şehir fotoğrafları gibi.\n💡 Sınav Şifresi: **Ahmet Haşim + Frankfurt + tedavi + sanatkârane üslup**; 'Fecriati şairi' ayırt edici.",
+    "tanim": "Ahmet Haşim'in **tedavi amacıyla gittiği Almanya (Frankfurt)** izlenimlerini **sanatkârane bir üslupla** anlattığı **Frankfurt Seyahatnamesi**, geziyi estetik bir denemeye dönüştürür; bir şairin gözünden şehir fotoğrafları gibi.\n💡 Hile: Ahmet Haşim'in adını **'Haşim → Hasta'** diye kodla: **hasta olduğu için gitti** (tedavi), ama **şair olduğu için güzel yazdı** (sanatkârane). Yani 'hasta şairin gezi yazısı' = Frankfurt. Sınavda 'gezi + tedavi + şair' üçlüsünü görünce gözün kapalı Haşim'i işaretle; Reşat Nuri'yle karıştırma çünkü o **müfettiş**, bu **hasta**!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "frankfurt seyahatnamesi",
+    "pattern": "\\bfrankfurt seyahatnamesi\\b",
     "aliases": []
   },
   {
@@ -489,10 +498,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 223,
-    "tanim": "Reşat Nuri Güntekin'in **Maarif Müfettişliği** görevi sırasında Anadolu köy ve kasabalarını gözlemleyerek yazdığı **Anadolu Notları**, gerçekçi bir Anadolu panoraması sunar; bir müfettişin yol defteri gibi.\n💡 Sınav Şifresi: **Reşat Nuri + Maarif Müfettişi + Anadolu + gerçekçi gözlem**; 'gezi-anı' türünde olduğu ayırt edici.",
+    "tanim": "Reşat Nuri Güntekin'in **Maarif Müfettişliği** görevi sırasında Anadolu köy ve kasabalarını gözlemleyerek yazdığı **Anadolu Notları**, gerçekçi bir Anadolu panoraması sunar; bir müfettişin yol defteri gibi.\n💡 Hile: **'Reşat Nuri = Müfettiş'** bağını kur: Müfettiş **denetler**, yani **gerçekçi gözlem** yapar (hayal değil!). Ahmet Haşim'le karıştırma: Haşim **hasta** (duygusal), Reşat Nuri **müfettiş** (gerçekçi). 'Anadolu + müfettiş + gerçekçi' = Reşat Nuri. Kısaca: **Müfettiş gerçeği yazar, hasta hayali yazar.**",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "anadolu notları|anadolu notlari",
+    "pattern": "\\banadolu notları\\b|\\banadolu notlari\\b",
     "aliases": []
   },
   {
@@ -505,11 +514,13 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 225,
-    "tanim": "Haber metninin **Ne, Nerede, Ne zaman, Nasıl, Neden ve Kim** sorularına eksiksiz cevap vermesini öngören temel **gazetecilik kuralıdır**; bir dedektifin olayı çözerken sorduğu sorular gibi.\n💡 Sınav Şifresi: **5N (Ne-Nerede-Ne zaman-Nasıl-Neden) + 1K (Kim)**; 'eksiksiz cevap' vurgusu.",
+    "tanim": "Haber metninin **Ne, Nerede, Ne zaman, Nasıl, Neden ve Kim** sorularına eksiksiz cevap vermesini öngören temel **gazetecilik kuralıdır**; bir dedektifin olayı çözerken sorduğu sorular gibi.\n💡 Hile: **5N + 1K** formülünü ezberlemek yerine 'N'leri say: **Ne, Nerede, Ne zaman, Nasıl, Neden** → hepsi **N** ile başlar (5 tane N). Bir tek **Kim** **K** ile başlar (1 tane K). Yani **'N'leri say, kalan 'K'!** Sınavda '5N1K' görünce parmakla N'leri say: 5 N çıkarsa doğru, K tek kalır. Bu kadar basit!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Ne zaman\\\\\\\\?$|^Nerede\\\\\\\\?$|^Nasıl\\\\\\\\?$|^Neden\\\\\\\\?$|^Kim\\\\\\\\?$|^Ne\\\\\\\\?$|\\\\\\\\b5n1k\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\b5n1k\\b",
+    "aliases": [],
+    "option_only_pattern": "^Ne zaman\\?$|^Nerede\\?$|^Nasıl\\?$|^Neden\\?$|^Kim\\?$|^Ne\\?$",
+    "stem_context_pattern": "5n1k|haber|soru|5n1k|haber|soru"
   },
   {
     "id": "tde4_haber_yazisi",
@@ -521,11 +532,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 224,
-    "tanim": "Belli bir zaman dilimindeki olay ve gelişmeleri **tarafsızca** topluma duyurmak için yazılan **gazete/dergi** metnidir; bir aynanın olayı olduğu gibi yansıtması gibi.\n💡 Sınav Şifresi: **Tarafsızlık + güncellik + topluma duyurma + 5N1K**; 'nesnel anlatım' anahtar kelime.",
+    "tanim": "Belli bir zaman dilimindeki olay ve gelişmeleri **tarafsızca** topluma duyurmak için yazılan **gazete/dergi** metnidir; bir aynanın olayı olduğu gibi yansıtması gibi.\n💡 Hile: Haber yazısını **'ayna'** olarak düşün: ayna **yansıtır**, **yorum yapmaz**, **süslemez**. Yani **tarafsız + nesnel + güncel**. Sınavda 'haber' sorusunda 'yorum katma, süsleme, duygu' gibi kelimeler varsa **yanlış şık**; 'yansıtma, aktarma, duyurma, nesnel' varsa **doğru**. Kısaca: **Haber = ayna, makale = pencere (yorumlu bakış).**",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Haber yazısı$|\\\\\\\\bhaber yazısı[a-zçğıöşü]*|\\\\\\\\bhaber yazıları[a-zçğıöşü]*",
-    "aliases": []
+    "pattern": "\\bHaber yazısı\\b|\\bhaber yazısı[a-zçğıöşü]*|\\bhaber yazıları[a-zçğıöşü]*",
+    "aliases": [],
+    "option_only_pattern": "^Haber yazısı$"
   },
   {
     "id": "tde4_islamiyet_oncesi_edebiyat",
@@ -537,10 +549,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 158,
-    "tanim": "Türklerin İslamiyet'i kabulünden önceki **sözlü** (koşuk, sagu, sav, destan) ve **yazılı** (Köktürk, Uygur) ürünlerini kapsayan dönemdir; bir milletin henüz yeni alfabeyle tanıştığı çocukluk yılları gibi.\n💡 Sınav Şifresi: **Sözlü: koşuk-sagu-sav-destan / Yazılı: Köktürk-Uygur**; 'İslamiyet öncesi' sınırı belirleyici.",
+    "tanim": "Türklerin İslamiyet'i kabulünden önceki **sözlü** (koşuk, sagu, sav, destan) ve **yazılı** (Köktürk, Uygur) ürünlerini kapsayan dönemdir; bir milletin henüz yeni alfabeyle tanıştığı çocukluk yılları gibi.\n💡 Hile: Sözlü ürünleri **'KSSD'** kısaltmasıyla kodla: **K**oşuk, **S**agu, **S**av, **D**estan → 'KSSD' (akılda 'KıSSaD'an gelir gibi). Yazılıyı **'Kö-Uy'** diye kodla: **Kö**ktürk + **Uy**gur. Sınavda 'İslamiyet öncesi sözlü' derse KSSD'yi say, 'yazılı' derse Kö-Uy'u say. Karıştırma yok!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "islamiyet öncesi türk edebiyatı[a-zçğıöşü]*|islamiyet öncesi dönem",
+    "pattern": "\\bislamiyet öncesi türk edebiyatı[a-zçğıöşü]*|\\bislamiyet öncesi dönem\\b",
     "aliases": []
   },
   {
@@ -553,11 +565,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 260,
-    "tanim": "1896-1901 arasında **Recaizade Mahmut Ekrem** öncülüğünde **Servet-i Fünun** dergisinde toplanan, Batı etkisinde **bireyci ve lirik** bir edebiyat dönemidir; 'sanat sanat içindir' diyen bir kulüp gibi.\n💡 Sınav Şifresi: **1896-1901 + Servet-i Fünun dergisi + Recaizade + bireyci-lirik**; 'Edebiyat-ı Cedide' eş anlamlı.",
+    "tanim": "1896-1901 arasında **Recaizade Mahmut Ekrem** öncülüğünde **Servet-i Fünun** dergisinde toplanan, Batı etkisinde **bireyci ve lirik** bir edebiyat dönemidir; 'sanat sanat içindir' diyen bir kulüp gibi.\n💡 Hile: Tarihi **'96-01'** diye kodla: **96** (doğum) → **01** (ölüm) gibi düşün, yani **5 yıllık kısa bir dönem** (1896-1901). Kısa süre = **bireyci, içine kapanık, lirik** (dışarıyla pek uğraşmamış). Fecriati'yle karıştırma: Servetifünun **dergi** etrafında (Servet-i Fünun dergisi), Fecriati **bildiri** ile (manifesto). **Dergi = Servetifünun, Bildiri = Fecriati.**",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Servetifünun$|^Servet-i Fünun$|\\\\\\\\bservetifünun\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bServetifünun\\b|\\bServet-i Fünun\\b|\\bservetifünun\\b",
+    "aliases": [],
+    "option_only_pattern": "^Servetifünun$|^Servet-i Fünun$"
   },
   {
     "id": "tde4_fecriati",
@@ -569,11 +582,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 262,
-    "tanim": "1909'da **'Sanat şahsi ve muhteremdir'** bildirisiyle ortaya çıkan Fecriati, **ilk Türk edebî topluluğu** olarak Servetifünun'un devamı gibidir; bir manifestoyla sahneye çıkan genç yazarlar kulübü gibi.\n💡 Sınav Şifresi: **1909 + 'Sanat şahsi ve muhteremdir' + ilk edebî topluluk + bildiri**; 'manifesto yayımlama' ayırt edici.",
+    "tanim": "1909'da **'Sanat şahsi ve muhteremdir'** bildirisiyle ortaya çıkan Fecriati, **ilk Türk edebî topluluğu** olarak Servetifünun'un devamı gibidir; bir manifestoyla sahneye çıkan genç yazarlar kulübü gibi.\n💡 Hile: **'Fecriati = Bildiri'** bağını kur: **F**ecriati → **F**erman (bildiri) gibi düşün, **F** ile **F** eşleşsin. Servetifünun **dergi** (S-S), Fecriati **bildiri** (F-B değil ama F-F: Fecriati-Ferman). Ayrıca **'Sanat şahsi ve muhteremdir'** cümlesini **'Sanat Şahsi'** diye kısalt → **ŞŞ** → **Fecriati'nin ilk harfi F** ile karışmasın diye: **'Şahsi Sanat = Fecriati'** (çünkü bireyci sanat anlayışı). En kolayı: **1909 + bildiri + ilk topluluk = Fecriati.**",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Fecriati$|\\\\\\\\bfecriati\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bFecriati\\b|\\bfecriati\\b",
+    "aliases": [],
+    "option_only_pattern": "^Fecriati$"
   },
   {
     "id": "tde4_oguz_kagan",
@@ -585,10 +599,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 160,
-    "tanim": "Hun hükümdarı **Mete Han**'ın fetihlerini ve Türk **cihan hâkimiyeti** ülküsünü anlatan; ışıktan doğan bir bebeğin bozkırda büyüyüp cihana hükmetmesini konu alan **İslamiyet öncesi** milli destanımızdır.\n💡 Sınav Şifresi: **Mete Han + cihan hâkimiyeti + Hun** üçlüsünü görünce dur, Oğuz Kağan'dır; Göktürk veya Kırgız geçiyorsa o şık elenir.",
+    "tanim": "Hun hükümdarı **Mete Han**'ın fetihlerini ve Türk **cihan hâkimiyeti** ülküsünü anlatan; ışıktan doğan bir bebeğin bozkırda büyüyüp cihana hükmetmesini konu alan **İslamiyet öncesi** milli destanımızdır.\n💡 Hile: **'Oğuz = Mete'** bağını kur: **Oğuz Kağan** destanı = **Mete Han** (Hun). Sınavda 'Mete Han' geçiyorsa **gözün kapalı Oğuz Kağan'ı işaretle**. Diğer destanlarla karıştırma: **Bozkurt** = dişi kurt (türeme), **Ergenekon** = demir dağı eritme (Göktürk), **Oğuz Kağan** = Mete + cihan hâkimiyeti. Kısaca: **Mete = Oğuz, Kurt = Bozkurt, Demir = Ergenekon.**",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "oğuz kağan destanı|oğuz han",
+    "pattern": "\\boğuz kağan destanı\\b|\\boğuz han\\b",
     "aliases": []
   },
   {
@@ -601,11 +615,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 162,
-    "tanim": "Soykırıma uğrayan Türklerin, yaralı bir erkek çocuğu **dişi bir bozkurdun** emzirip büyütmesiyle yeniden çoğalarak tarih sahnesine dönüşünü anlatan **Göktürk** destanıdır.\n💡 Sınav Şifresi: **Dişi bozkurt + yeniden türeme** kodlaması Bozkurt Destanı'nın imzasıdır; Ergenekon'la karıştırma — orada **demir dağı eritme** vardır.",
+    "tanim": "Soykırıma uğrayan Türklerin, yaralı bir erkek çocuğu **dişi bir bozkurdun** emzirip büyütmesiyle yeniden çoğalarak tarih sahnesine dönüşünü anlatan **Göktürk** destanıdır.\n💡 Hile: **'Bozkurt = Dişi Kurt'** bağını kur: **B**ozkurt → **B**ebek (yaralı çocuk) + **D**işi kurt. Yani **B + D = Bozkurt Destanı**. Ergenekon'la karıştırma: Ergenekon'da **demir dağı eritme** var (ateş + demir), Bozkurt'ta **kurt emzirme** var (süt + kurt). Kısaca: **Kurt = Bozkurt, Demir = Ergenekon.** Sınavda 'dişi kurt' görürsen gözün kapalı Bozkurt'u işaretle!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Bozkurt Destanı$|\\\\\\\\bbozkurt destanı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bBozkurt Destanı\\b|\\bbozkurt destanı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Bozkurt Destanı$"
   },
   {
     "id": "tde4_yaradilis_destani",
@@ -617,11 +632,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 162,
-    "tanim": "Altay-Yakut Türklerinin, evrenin ve insanın yaratılışını **Tanrı Kayra Han** ile **Erlik Han** arasındaki mücadele üzerinden anlattığı, bilinen **en eski Türk destanıdır**.\n💡 Sınav Şifresi: **Kayra Han + Erlik + yaratılış** üçlüsü = Yaradılış Destanı; 'en eski' ifadesi geçen şıkta gözün kapalı işaretle.",
+    "tanim": "Altay-Yakut Türklerinin, evrenin ve insanın yaratılışını **Tanrı Kayra Han** ile **Erlik Han** arasındaki mücadele üzerinden anlattığı, bilinen **en eski Türk destanıdır**.\n💡 Hile: **'Kayra + Erlik = Yaratılış'** üçlüsünü kodla: **K**ayra (iyi tanrı) + **E**rlik (kötü tanrı) → **K+E = Yaratılış** (iyi-kötü mücadelesi = yaratılışın başlangıcı). 'En eski' ifadesini görünce **gözün kapalı Yaradılış'ı işaretle**. Diğer destanlarla karıştırma: **Oğuz = Mete**, **Bozkurt = dişi kurt**, **Ergenekon = demir dağı eritme**, **Yaradılış = Kayra + Erlik + en eski**. Kısaca: **Kayra-Erlik = Yaradılış, en eski = Yaradılış.**",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Yaradılış Destanı$|\\\\\\\\byaradılış destanı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bYaradılış Destanı\\b|\\byaradılış destanı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Yaradılış Destanı$"
   },
   {
     "id": "tde4_manas_destani",
@@ -633,11 +649,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 163,
-    "tanim": "Kırgız kahramanı **Manas**'ın bağımsızlık mücadelesini anlatan, **dünyanın en uzun** ve sözlü gelenekte yaşamaya devam eden **doğal** halk destanıdır.\n💡 Sınav Şifresi: **Kırgız + en uzun destan + Manas** kodlaması; 'en uzun' ifadesini görünce başka hiçbir şıkkı okumana gerek yok.",
+    "tanim": "Kırgız kahramanı **Manas**'ın bağımsızlık mücadelesini anlatan, **dünyanın en uzun** ve sözlü gelenekte yaşamaya devam eden **doğal** halk destanıdır.\n💡 Hile: **MANAS = MANYAK uzun.** 'Manas' kelimesinin içindeki 'MAN' hecesini 'MAN-yak uzun' diye kodla — dünyanın en uzun destanı olduğunu bir daha unutamazsın. Ayrıca **M**anas → **M**ilyonlarca dize → **M**üthiş uzun. Kırgız olduğunu da 'Kırgız atı Manas' diye düşün: at yarışı → Kırgız bozkırı. 'En uzun' görünce gözün başka şık aramasın, direkt Manas'a bas.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Manas Destanı$|\\\\\\\\bmanas destanı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bManas Destanı\\b|\\bmanas destanı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Manas Destanı$"
   },
   {
     "id": "tde4_edige_destani",
@@ -649,11 +666,12 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 163,
-    "tanim": "**Altın Orda Hanlığı**'nın 15. yüzyıldaki parçalanma sürecini ve halk kahramanı **Edige Mirza**'nın mücadelesini anlatan **Türk-Tatar** destanıdır.\n💡 Sınav Şifresi: **Altın Orda + Tatar + Edige** üçlüsü; 'parçalanma dönemi' ifadesi bu destanın ayırt edici anahtarıdır.",
+    "tanim": "**Altın Orda Hanlığı**'nın 15. yüzyıldaki parçalanma sürecini ve halk kahramanı **Edige Mirza**'nın mücadelesini anlatan **Türk-Tatar** destanıdır.\n💡 Hile: **EDİGE = 'E Dİ GE' → 'E, Dİ, GE(l) → GELİYOR parçalanma!'** Edige'yi 'Altın Orda'nın **E**n **D**ağılmış **İ**syan **GE**misi' diye kodla. Kilit formül: **Altın Orda + parçalanma = Edige**. Manas'la karıştırırsan şu ayrımı hatırla: **Manas = Kırgız + birleşme/bağımsızlık**, **Edige = Tatar + parçalanma/dağılma**. Yani biri 'toplan', diğeri 'dağıl' destanı — zıt kutuplar!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Edige Destanı$|\\\\\\\\bedige destanı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bEdige Destanı\\b|\\bedige destanı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Edige Destanı$"
   },
   {
     "id": "tde4_husrev_i_sirin",
@@ -665,10 +683,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 188,
-    "tanim": "15. yüzyıl divan şairi **Şeyhî**'nin, Sasani hükümdarı **Hüsrev** ile Ermeni prensesi **Şirin** arasındaki aşkı işlediği ünlü **mesnevisidir**.\n💡 Sınav Şifresi: **Şeyhî + Hüsrev + Şirin** üçlüsünü kilitle; Nizamî'nin aynı adlı eseriyle karıştırma — bizdeki şair **Şeyhî**'dir, ayrıca Şeyhî'nin **Harnâme**'si de ayrı sorulur.",
+    "tanim": "15. yüzyıl divan şairi **Şeyhî**'nin, Sasani hükümdarı **Hüsrev** ile Ermeni prensesi **Şirin** arasındaki aşkı işlediği ünlü **mesnevisidir**.\n💡 Hile: **ŞEYHÎ = 'ŞEYH' + 'HÎ' → 'ŞEYHİN HİKÂYESİ'.** Ama asıl tuzak Nizamî! Şöyle ayır: **Nizamî → NİZAM (düzen) → İranlı, orijinali yazan**; **Şeyhî → ŞEYH (bizim Anadolulu) → taklit/uyarlama yapan**. Yani 'orijinal Nizamî, bizimki Şeyhî'. Bir de Şeyhî'nin **Harnâme**'si (eşekname) var — 'Şeyhî'nin iki işi: bir aşk (Hüsrev-Şirin), bir eşek (Harnâme)' diye kodla, ikisini aynı soruda karıştırmazsın.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hüsrev-i şirin|husrev-i sirin",
+    "pattern": "\\bhüsrev-i şirin\\b|\\bhusrev-i sirin\\b",
     "aliases": []
   },
   {
@@ -681,10 +699,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 300,
-    "tanim": "Yüklemi **ek-fiil** (-idi, -imiş, -ise, -dir) alarak çekimlenmiş bir **isim** veya isim soylu sözcükten oluşan cümledir; yani 'eylem' değil 'durum/varlık' bildirir.\n💡 Sınav Şifresi: Yüklemin sonuna **-dir/-idi/-imiş/-ise** getirince anlam bozulmuyorsa isim cümlesidir; 'Hava çok güzel**dir**' → isim, 'Koş**tu**' → fiil.",
+    "tanim": "Yüklemi **ek-fiil** (-idi, -imiş, -ise, -dir) alarak çekimlenmiş bir **isim** veya isim soylu sözcükten oluşan cümledir; yani 'eylem' değil 'durum/varlık' bildirir.\n💡 Hile: **'EKFİİL TESTİ'** yap: Yüklemin sonuna **-dir** ekle, cümle hâlâ mantıklıysa → **isim cümlesi**. 'Hava güzel**dir**' ✓ mantıklı → isim. 'Koştu**dur**' ✗ saçma → fiil. Kısacası: **-dir eklenebiliyorsa isim, eklenemiyorsa fiil.** Bu tek test 10 saniyede biter, kip ekleriyle uğraşmana gerek yok.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "isim cümlesi|ad cümlesi",
+    "pattern": "\\bisim cümlesi\\b|\\bad cümlesi\\b",
     "aliases": []
   },
   {
@@ -697,10 +715,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 300,
-    "tanim": "Yüklemi **kip ve şahıs eki** alarak çekimlenmiş bir **eylemden** oluşan cümledir; yani iş, oluş veya hareket bildirir.\n💡 Sınav Şifresi: Yüklemde **-di, -miş, -yor, -ecek, -r** gibi kip eklerinden biri varsa fiil cümlesidir; ek-fiil (-dir/-idi) görürsen hemen isim cümlesine geç.",
+    "tanim": "Yüklemi **kip ve şahıs eki** alarak çekimlenmiş bir **eylemden** oluşan cümledir; yani iş, oluş veya hareket bildirir.\n💡 Hile: **'HAREKET VAR MI?'** sorusunu sor: Yüklem bir **iş/hareket** bildiriyorsa fiil cümlesi. Ama en hızlı yol: **-dir ekini dene, saçmalıyorsa fiildir.** 'Geldi**dir**' ✗ → fiil. Bir de şu zıt kodlamayı ezberle: **Fiil = 'yapıyorum' (eylem), İsim = 'öyleyim' (durum).** 'Koşuyorum' (yapıyorum) → fiil; 'yorgunum' (öyleyim) → isim. Bu 'yapıyorum/öyleyim' ikilisi tüm cümleleri ayırır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "fiil cümlesi|eylem cümlesi",
+    "pattern": "\\bfiil cümlesi\\b|\\beylem cümlesi\\b",
     "aliases": []
   },
   {
@@ -713,10 +731,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 301,
-    "tanim": "Türkçenin doğal söz dizimine uygun olarak **yüklemi en sonda** bulunan cümledir; 'özne + tümleç + yüklem' sırası esastır.\n💡 Sınav Şifresi: Cümleyi okurken **son kelime yüklemse** kurallıdır; 'Ali okula gitti.' → kurallı, 'Gitti Ali okula.' → devrik.",
+    "tanim": "Türkçenin doğal söz dizimine uygun olarak **yüklemi en sonda** bulunan cümledir; 'özne + tümleç + yüklem' sırası esastır.\n💡 Hile: **'SON SÖZ YÜKLEM'** kuralı — cümlenin **en son kelimesine** bak, yüklemse kurallı. Ama daha zekisi: **Kurallı = 'KURAL gibi düzenli' = yüklem SONDA (asker gibi nizami).** Devrik = 'DEVİR = döndü' → yüklem yerinden **döndü/kaçtı**. Yani yüklem yerinde duruyorsa kurallı, kaçmışsa devrik. Tek bakışta çözülür.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "kurallı cümle|düz cümle",
+    "pattern": "\\bkurallı cümle\\b|\\bdüz cümle\\b",
     "aliases": []
   },
   {
@@ -729,10 +747,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 301,
-    "tanim": "Yüklemi cümlenin **sonunda bulunmayan**; başında veya ortasında yer alarak anlatımı güçlendiren, şiirde ve günlük konuşmada sık kullanılan cümledir.\n💡 Sınav Şifresi: **Yüklem sonda değilse** devriktir; 'Gel buraya!' → devrik, 'Buraya gel!' → kurallı. Şiirde devrik cümle çoktur, bunu unutma.",
+    "tanim": "Yüklemi cümlenin **sonunda bulunmayan**; başında veya ortasında yer alarak anlatımı güçlendiren, şiirde ve günlük konuşmada sık kullanılan cümledir.\n💡 Hile: **'DEVİR = DÖNDÜ'** kelime oyunu: Yüklem **yerinden döndüyse** (sondan kaçtıysa) → **devrik**. 'Gitti Ali okula' → yüklem 'gitti' başta, yerinden döndü → devrik. Şiirle bağlantısı: **Şairler kelimelerle oynar, yüklemi döndürür** → şiir = devrik cenneti. 'Şiirde devrik çoktur' bilgisini de bu 'şair oyunbaz' imgesiyle kilitle.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "devrik cümle|devrik bir",
+    "pattern": "\\bdevrik\\s+cümle[a-zçğıöşü]*\\b|\\bdevrik\\s+bir\\b|\\böge\\s+dizilişine\\s+göre\\s+devriktir\\b",
     "aliases": []
   },
   {
@@ -745,10 +763,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 302,
-    "tanim": "Yüklemi söylenmemiş, yargısı tamamlanmamış ve sonuna **üç nokta (...)** konulan cümledir; anlam okuyucunun zihninde tamamlanır.\n💡 Sınav Şifresi: Cümle sonunda **üç nokta** görürsen 'eksiltili' de; 'Havalar ısındı, ağaçlar çiçek açtı...' gibi.",
+    "tanim": "Yüklemi söylenmemiş, yargısı tamamlanmamış ve sonuna **üç nokta (...)** konulan cümledir; anlam okuyucunun zihninde tamamlanır.\n💡 Hile: **'ÜÇ NOKTA = EKSİK'** — üç nokta zaten 'bir şey eksik, devamı var' demek değil mi? Cümlenin sonunda **...** görürsen yüklem **eksik** → **eksiltili**. Görsel kod: Üç nokta = üç nokta kadar **boşluk** = **eksik yüklem**. Bu kadar basit, başka hiçbir şeye bakma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "eksiltili cümle",
+    "pattern": "\\beksiltili cümle\\b",
     "aliases": []
   },
   {
@@ -761,10 +779,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 303,
-    "tanim": "Yüklemde bildirilen işin **yapıldığını**, eylemin gerçekleştiğini veya durumun **var olduğunu** belirten cümledir; yani yargı onaylanır.\n💡 Sınav Şifresi: Yüklemde **-ma/-me olumsuzluk eki yoksa** ve 'değil, yok' gibi olumsuzluk sözcüğü bulunmuyorsa olumludur; biçimce olumsuz ama anlamca olumlu tuzaklarına dikkat (\"Ne güzel!\" gibi).",
+    "tanim": "Yüklemde bildirilen işin **yapıldığını**, eylemin gerçekleştiğini veya durumun **var olduğunu** belirten cümledir; yani yargı onaylanır.\n💡 Hile: **'OLUMSUZLUK DEDEKTÖRÜ'** çalıştır: Cümlede **-ma/-me, -sız/-siz, yok, değil, ne...ne** var mı? **Hiçbiri yoksa → olumlu.** Ama asıl tuzak **biçimce olumsuz, anlamca olumlu**: 'Ne güzel!' (biçimce olumsuz görünür ama övgü = olumlu), 'Yok değil' (= var). Kural: **İki olumsuzluk bir araya gelirse anlam olumluya döner** — matematikte eksi × eksi = artı gibi! Soru 'anlamca' diyorsa bu tuzağa dikkat.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "olumlu cümle",
+    "pattern": "\\bolumlu\\s+cümle[a-zçğıöşü]*\\b|\\banlamına\\s+göre\\s+olumludur\\b",
     "aliases": []
   },
   {
@@ -777,10 +795,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 303,
-    "tanim": "Yüklemin bildirdiği işin, oluşun veya durumun **gerçekleşmediğini** haber veren cümledir; tıpkı navigasyonun 'yol kapalı' demesi gibi, eylem **yapılmadı** der. Olumsuzluk; **-ma/-me** eki, **-sız/-siz** eki, **yok** ve **değil** sözcükleriyle sağlanır.\n💡 Sınav Şifresi: '-ma/-me, -sız/-siz, yok, değil' unsurlarından **en az biri** varsa cümle **yapıca olumsuzdur**; 'gelmedi, parasız, yok, değil' görünce işaretle. Dikkat: 'ne...ne' bağlacı da cümleyi olumsuz yapar.",
+    "tanim": "Yüklemin bildirdiği işin, oluşun veya durumun **gerçekleşmediğini** haber veren cümledir; tıpkı navigasyonun 'yol kapalı' demesi gibi, eylem **yapılmadı** der. Olumsuzluk; **-ma/-me** eki, **-sız/-siz** eki, **yok** ve **değil** sözcükleriyle sağlanır.\n💡 Hile: **'4 SİLAH'** ezberi: **-ma/-me, -sız/-siz, yok, değil** — bu dörtlüden **biri bile** varsa cümle **yapıca olumsuzdur**. Kodlama: **'MASIZ YOK DEĞİL'** → **MA**- **SIZ**- **YOK**- **DEĞİL** (ilk harfleri birleştir: MASIZYOKDEĞİL). Bir de **'ne...ne'** bağlacı gizli 5. silah — 'Ne geldi ne gitti' → olumsuz. Bu 5 unsuru görünce direkt 'olumsuz' işaretle, gerisini düşünme.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "olumsuz cümle",
+    "pattern": "\\bolumsuz cümle\\b",
     "aliases": []
   },
   {
@@ -793,10 +811,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 304,
-    "tanim": "Yapısında **olumsuzluk unsuru** (ek, yok, değil) bulunduğu hâlde cümlenin bildirdiği yargı **olumlu** olan cümledir; tıpkı 'yok değil' diyen birinin aslında 'var' demesi gibi, **iki olumsuzluk bir olumlu** yapar.\n💡 Sınav Şifresi: 'Yok değil = var', 'gelmez değil = gelir', 'bilmiyor değilim = biliyorum' mantığı; cümlede **iki olumsuzluk** varsa anlam **olumluya** döner, yapı yine **olumsuzdur**. Soru 'anlamca' diyorsa olumlu, 'yapıca' diyorsa olumsuz işaretle.",
+    "tanim": "Yapısında **olumsuzluk unsuru** (ek, yok, değil) bulunduğu hâlde cümlenin bildirdiği yargı **olumlu** olan cümledir; tıpkı 'yok değil' diyen birinin aslında 'var' demesi gibi, **iki olumsuzluk bir olumlu** yapar.\n💡 Hile: **'MATEMATİK KURALI: (−) × (−) = (+)'** — cümlede **iki olumsuzluk** varsa anlam **olumluya döner**, ama **yapı olumsuz kalır** (çünkü olumsuzluk unsuru hâlâ orada!). En kritik ayrım: **Soru 'anlamca' diyorsa → OLUMLU işaretle; 'yapıca' diyorsa → OLUMSUZ işaretle.** Yani aynı cümle iki farklı cevap verir, soru kelimesine göre! 'Yok değil = var', 'gelmez değil = gelir', 'bilmiyor değilim = biliyorum' üçlüsünü ezberle — bu üç örnek tüm sınavda çıkar.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "anlamca olumlu,\\\\\\\\s*yapıca olumsuz[a-zçğıöşü]*|yapıca olumsuz,\\\\\\\\s*anlamca olumlu[a-zçğıöşü]*",
+    "pattern": "\\banlamca olumlu,\\s*yapıca olumsuz[a-zçğıöşü]*|\\byapıca olumsuz,\\s*anlamca olumlu[a-zçğıöşü]*",
     "aliases": []
   },
   {
@@ -809,10 +827,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 305,
-    "tanim": "Cümleler, taşıdıkları **yargı sayısına** ve bu yargıların **bağlanma biçimine** göre dörde ayrılır: **basit, birleşik, sıralı, bağlı**. Basit ve birleşik **tek yüklemli** yapılardır; sıralı ve bağlı ise **birden çok bağımsız cümleden** oluşur.\n💡 Sınav Şifresi: Önce **yüklem sayısını** say. Tek yüklem + fiilimsi/şart yoksa **basit**, fiilimsi/şart/iç cümle varsa **birleşik**. Birden çok yüklem varsa bağlayıcıya bak: virgül/noktalı virgül → **sıralı**, bağlaç (ve, ama, fakat, çünkü, ki) → **bağlı**.",
+    "tanim": "Cümleler, taşıdıkları **yargı sayısına** ve bu yargıların **bağlanma biçimine** göre dörde ayrılır: **basit, birleşik, sıralı, bağlı**. Basit ve birleşik **tek yüklemli** yapılardır; sıralı ve bağlı ise **birden çok bağımsız cümleden** oluşur.\n💡 Hile: **'YÜKLEM SAYISI = İLK ADIM'** — önce yüklemleri say. **Tek yüklem** → fiilimsi/şart/iç cümle **yoksa BASİT**, **varsa BİRLEŞİK**. **Çok yüklem** → bağlayıcıya bak: **virgül/noktalı virgül → SIRALI**, **bağlaç (ve, ama, fakat, çünkü, ki) → BAĞLI**. Kodlama: **'VİRGÜL = SIRA (sıralı), BAĞLAÇ = BAĞ (bağlı)'** — V→S, B→B harf eşleşmesi! Bir de şu zıt çifti kilitle: **Basit/Birleşik = TEK yüklem (fiilimsiyle oynar)**, **Sıralı/Bağlı = ÇOK yüklem (bağlayıcıyla oynar)**. Yani önce 'kaç yüklem?' sonra 'nasıl bağlandı?' — iki soruda biter.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "cümlelerin hangisi yapı bakımından|cümlede yapı",
+    "pattern": "^__DISABLED_META_DIRECTIVE__$",
     "aliases": []
   },
   {
@@ -825,10 +843,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 305,
-    "tanim": "İçinde **tek bir yüklem** bulunan, **fiilimsi** veya **şart kipi** gibi ikinci bir yargı taşımayan yalın cümledir; tek kişilik bir sahne gibi düşün.\n💡 Sınav Şifresi: '-an, -ası, -mış, -mak, -acak' fiilimsileri ve '-se/-sa' şartı **yoksa** ve **tek yüklem** varsa cümle **basittir**; cümlenin uzun olması veya içinde isim-fiil dışında sözcükler bulunması basitliğini bozmaz.",
+    "tanim": "İçinde **tek bir yüklem** bulunan, **fiilimsi** veya **şart kipi** gibi ikinci bir yargı taşımayan yalın cümledir; tek kişilik bir sahne gibi düşün.\n💡 Hile: Cümleyi 'Yargı Sayacı' ile tara: Fiilimsi (-an, -mış, -mak) veya şart (-se) varsa yargı sayısı 2'dir, basit DEĞİLDİR. Yargı sayısı 1 ise, cümle ne kadar uzun olursa olsun (uzun özne, uzun nesne) o cümle **BASİT**'tir. Uzunluk yanıltmasın, yargı sayısına bak!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "basit cümle",
+    "pattern": "\\bbasit cümle\\b",
     "aliases": []
   },
   {
@@ -841,10 +859,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 305,
-    "tanim": "Bir **ana cümle** ile ona bağlı **yan cümlecikten** oluşan, yani iki yargıyı tek cümlede birleştiren yapıdır. Yan cümlecik; **fiilimsi**, **şart kipi (-se/-sa)** veya **iç cümle (alıntı)** ile kurulur; filmdeki **flashback** gibi ana olaya bağlı bir yan hikâye taşır.\n💡 Sınav Şifresi: Cümlede **fiilimsi** (gelen, gidince, yapmak), **-se/-sa şartı** ya da **iç cümle (alıntı)** varsa yapı **birleşiktir**. Girişik birleşik = fiilimsili, şartlı birleşik = -se'li, ki'li birleşik = 'ki'li, iç içe birleşik = alıntılı.",
+    "tanim": "Bir **ana cümle** ile ona bağlı **yan cümlecikten** oluşan, yani iki yargıyı tek cümlede birleştiren yapıdır. Yan cümlecik; **fiilimsi**, **şart kipi (-se/-sa)** veya **iç cümle (alıntı)** ile kurulur; filmdeki **flashback** gibi ana olaya bağlı bir yan hikâye taşır.\n💡 Hile: Birleşik cümlede 'Bağlaç' ARAMA! Bağlaç varsa bağlı/sıralıdır. Birleşik cümlede yan cümlecik, ana cümleye **fiilimsi** (gelen, gidince), **şart** (-se) veya **alıntı** ile 'yapışır'. Ana cümle bağımsız, yan cümlecik bağımlıdır. 'Bağımlı yargı' varsa cevap Birleşik'tir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "birleşik cümle",
+    "pattern": "\\bbirleşik\\s+cümle[a-zçğıöşü]*\\b|\\byapısına\\s+göre\\s+birleşiktir\\b",
     "aliases": []
   },
   {
@@ -857,10 +875,10 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 306,
-    "tanim": "Anlamca birbirine bağlı **en az iki bağımsız cümlenin** virgül (,) veya noktalı virgülle (;) yan yana dizilmesiyle oluşan yapıdır; art arda gelen tren vagonları gibi, her vagon **kendi yüklemini** taşır.\n💡 Sınav Şifresi: Cümleler arasında **bağlaç değil, virgül/noktalı virgül** varsa ve her parça **kendi yüklemini** taşıyorsa yapı **sıralıdır**. Ögeleri ortak olan sıralı cümlelerde virgül, ortak ögeyi ayırır — yine de yapı sıralıdır.",
+    "tanim": "Anlamca birbirine bağlı **en az iki bağımsız cümlenin** virgül (,) veya noktalı virgülle (;) yan yana dizilmesiyle oluşan yapıdır; art arda gelen tren vagonları gibi, her vagon **kendi yüklemini** taşır.\n💡 Hile: 'Vagon Testi': Cümleleri virgülle ayır. Her parça tek başına bir cümle olabilir mi? Evet mi? Ve aralarında 've, ama, çünkü' gibi bağlaç YOK mu? O zaman **SIRALI**'dır. Bağlaç varsa Sıralı DEĞİLDİR (Bağlı olur).",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "sıralı cümle|sirali cumle",
+    "pattern": "\\bsıralı\\s+cümle[a-zçğıöşü]*\\b|\\byapısına\\s+göre\\s+sıralıdır\\b",
     "aliases": []
   },
   {
@@ -873,10 +891,108 @@
     "donem": 4,
     "unite_no": null,
     "sayfa": 307,
-    "tanim": "Birden çok **bağımsız cümlenin** 've, ama, fakat, ancak, çünkü, ki' gibi **bağlaçlarla** birbirine bağlandığı yapıdır; zincirin halkalarını bağlaçlar tutturur.\n💡 Sınav Şifresi: Cümleleri birleştiren unsur **bağlaç** (ve, ama, fakat, ancak, çünkü, ki) ise yapı **bağlıdır**; virgül varsa **sıralı**, bağlaç varsa **bağlı** — bu ayrımı kaçırma. 'ki' bağlacı hem bağlı cümle kurar hem de sıfat-fiil işlevi görebilir; bağlaç olan 'ki' ayrı yazılır.",
+    "tanim": "Birden çok **bağımsız cümlenin** 've, ama, fakat, ancak, çünkü, ki' gibi **bağlaçlarla** birbirine bağlandığı yapıdır; zincirin halkalarını bağlaçlar tutturur.\n💡 Hile: 'Zincir Halkası': Cümleler arasında **BAĞLAÇ** (ve, ama, fakat, ancak, çünkü, ki) var mı? Varsa **BAĞLI**'dır. Virgül var ama bağlaç yoksa **SIRALI**'dır. Fiilimsi/Şart varsa **BİRLEŞİK**'tir. Sadece bağlacı gör, cevabı bul.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "bağlı cümle|bagli cumle",
+    "pattern": "\\bbağlı cümle\\b|\\bbagli cumle\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde4_ahmet_hasim",
+    "base_id": "tde4_ahmet_hasim",
+    "term": "Ahmet Haşim (Akşam Şairi)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 4",
+    "ders_kodu": null,
+    "donem": 4,
+    "unite_no": null,
+    "sayfa": 273,
+    "tanim": "Fecriati topluluğunun ve Türk edebiyatında **Saf (Öz) Şiir** ile **Sembolizm / Empresyonizm** akımının en büyük şairidir; tüm şiirlerini **aruz ölçüsüyle** yazmış, hece ölçüsünü 'köylü vezni' sayarak hiç kullanmamıştır. Şiir kitapları *Göl Saatleri* ve *Piyale* ('Şiir Hakkında Bazı Mülahazalar' önsözü); düzyazıları **Frankfurt Seyahatnamesi** (gezi), *Bize Göre* ve *Gurebahane-i Laklakan*dır.\n💡 Hile: 'Haşim'in 3 Yasağı': 1. Hece ölçüsü YASAK (Sadece Aruz). 2. Hececi/Anadolu şairi YASAK (Saf Şiir/Sembolizm). 3. Roman YASAK (Sadece Şiir ve Gezi/Deneme). Bu üç yasak varsa cevap **Ahmet Haşim**'dir.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bahmet\\s+haşim[a-zçğıöşü'’]*\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde4_resat_nuri_guntekin",
+    "base_id": "tde4_resat_nuri_guntekin",
+    "term": "Reşat Nuri Güntekin",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 4",
+    "ders_kodu": null,
+    "donem": 4,
+    "unite_no": null,
+    "sayfa": 208,
+    "tanim": "Millî Edebiyat ve Cumhuriyet Dönemi'nin Anadolu'yu ve Anadolu insanını yalın, iyimser ve gözlemci bir dille anlatan usta romancısıdır. Başlıca eserleri: *Çalıkuşu* (Feride'nin Anadolu öğretmenliği), *Yaprak Dökümü* (Ali Rıza Bey), *Yeşil Gece*, *Acımak*, *Miskinler Tekkesi* (roman); **Anadolu Notları** (gezi yazısı); **Tanrı Misafiri**, *Sönmüş Yıldızlar* değil *Leyla ile Mecnun* (hikâye); *Hançer, Balıkesir Muhasebecisi* (tiyatro).\n💡 Hile: 'Çalıkuşu Feride + Yaprak Dökümü Ali Rıza + Anadolu Notları Gezi'. Bu üçlü Reşat Nuri'nin DNA'sıdır. Özellikle 'Anadolu Notları' gezi türünde sorulursa, diğer gezi yazarlarını (Falih Rıfkı, Yakup Kadri) eleyip doğrudan **Reşat Nuri**'yi işaretle.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\breşat\\s+nuri\\s+güntekin[a-zçğıöşü'’]*\\b|\\breşat\\s+nuri\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde4_abdulhak_hamit_tarhan",
+    "base_id": "tde4_abdulhak_hamit_tarhan",
+    "term": "Abdülhak Hamit Tarhan (Şair-i Âzam)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 4",
+    "ders_kodu": null,
+    "donem": 4,
+    "unite_no": null,
+    "sayfa": 244,
+    "tanim": "Tanzimat 2. Dönem'in **'Şair-i Âzam (Büyük Şair)'** unvanlı şair ve oyun yazarıdır; Divan şiiri kurallarını yıkmış, ilk pastoral şiir (*Sahra*), ilk uyaksız şiir (*Validem*) ve Türk edebiyatının en ünlü metafizik/ölüm şiiri **Makber**'i yazmıştır. Tiyatrolarını sahnelenmek için değil **okunmak için** (aruz/hece veya mensur) kaleme almıştır (*İçli Kız, Macera-yı Aşk, Sabr ü Sebat, Finten, Eşber, Nesteren*).\n💡 Hile: 'Hamit'in Tiyatro Sırrı': Tiyatroları **SAHNELENEMEZ**, sadece **OKUNUR**. Eğer soruda 'sahnelenmek için yazılmış' derse Hamit DEĞİLDİR. 'Makber' (ölüm) ve 'Sahra' (ilk pastoral) anahtar kelimeleridir. Şair-i Âzam = Abdülhak Hamit.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\babdülhak\\s+hamit\\s+tarhan[a-zçğıöşü'’]*\\b|\\biçli\\s+kız\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde4_mevlana_eserleri",
+    "base_id": "tde4_mevlana_eserleri",
+    "term": "Mevlânâ Celâleddîn-i Rûmî ve Eserleri (Mesnevi, Dîvân-ı Kebîr, Fîhi Mâfîh, Mecâlis-i Seb'a, Mektûbât)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 4",
+    "ders_kodu": null,
+    "donem": 4,
+    "unite_no": null,
+    "sayfa": 211,
+    "tanim": "13. yüzyıl Anadolu tasavvuf edebiyatının evrensel mutasavvıfı ve şairidir. Eserlerini Farsça kaleme almıştır: 25.700 beyitlik didaktik-tasavvufi başyapıtı **Mesnevi**, lirik gazel ve rubailerini topladığı **Dîvân-ı Kebîr**, sohbetlerinden oluşan **Fîhi Mâfîh**, yedi vaazını içeren **Mecâlis-i Seb'a** ve devlet büyüklerine yazdığı 147 mektuptan oluşan **Mektûbât**.\n💡 Hile: 'Mevlânâ'nın 5 Parmak Tekniği': Başparmak **Mesnevi** (Didaktik), İşaret **Divan-ı Kebir** (Lirik), Orta **Fîhi Mâfîh** (Sohbet), Yüzük **Mecâlis-i Seb'a** (Vaaz), Serçe **Mektûbât** (Mektup). Tür eşleştirmesi sorulursa bu parmakları hatırla.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bdîvân-ı\\s+kebîr\\b|\\bfîhi\\s+mâfîh\\b|\\bmecâlis-i\\s+seb[’']a\\b|\\bmektûbât\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde4_dunya_ve_tanzimat_eserleri",
+    "base_id": "tde4_dunya_ve_tanzimat_eserleri",
+    "term": "Tanzimat ve Dünya Edebiyatı Klasikleri (Monte Cristo Kontu, Robenson Cruze, Zavallı Çocuk, Tahrib-i Harabat, Vuslat)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 4",
+    "ders_kodu": null,
+    "donem": 4,
+    "unite_no": null,
+    "sayfa": 268,
+    "tanim": "Tanzimat Dönemi'nde Batı'dan yapılan ilk roman çevirileri (Yusuf Kâmil Paşa → Fénelon'dan *Telemak*; Victor Hugo'dan *Sefiller*; Daniel Defoe'dan **Robenson Cruze**; Alexandre Dumas'dan **Monte Cristo Kontu**) ile yerli tiyatro ve eleştiri klasikleridir (Namık Kemal → **Zavallı Çocuk**, **Tahrib-i Harabat**, **Takip**; Recaizade Mahmut Ekrem → **Vuslat**, **Takdir-i Elhan**).\n💡 Hile: 'İlkler ve Sahipleri': İlk çeviri roman **Telemak** (Yusuf Kamil Paşa). İlk eleştiri eseri **Tahrib-i Harabat** (Namık Kemal). İlk realist roman **Araba Sevdası** (Recaizade). Bu üç 'İlk'i ezberle, şıklar karışsa bile ilkleri bilen kazanır.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bmonte\\s+cristo\\s+kontu\\b|\\brobenson\\s+cruze\\b|\\bzavallı\\s+çocuk\\b|\\btahrib-i\\s+harabat\\b|\\bvuslat\\s*-\\s*recaiz[aâ]de\\b",
+    "aliases": [],
+    "option_only_pattern": "^Takip$",
+    "stem_context_pattern": "eleştiri|tenkit|namık\\s+kemal"
+  },
+  {
+    "id": "tde4_halide_edip_eserleri",
+    "base_id": "tde4_halide_edip_eserleri",
+    "term": "Halide Edip Adıvar Eserleri (Ateşten Gömlek, Vurun Kahpeye, Sinekli Bakkal, Akile Hanım Sokağı, Son Emel, Dağa Çıkan Kurt)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 4",
+    "ders_kodu": null,
+    "donem": 4,
+    "unite_no": null,
+    "sayfa": 206,
+    "tanim": "Millî Edebiyat ve Cumhuriyet Dönemi romancısı **Halide Edip Adıvar**'ın; Kurtuluş Savaşı'nı (*Ateşten Gömlek, Vurun Kahpeye, Dağa Çıkan Kurt*), kadın psikolojisini (*Handan, Kalp Ağrısı*) ve Doğu-Batı sentezini (*Sinekli Bakkal, Tatarcık, Akile Hanım Sokağı, Son Emel*) işlediği eserleridir (Not: *Yılanlı Kuyudan* ise Fakir Baykurt'un eseridir).\n💡 Hile: 'Halide'nin Ateşi ve Sokağı': 'Ateşten Gömlek' ve 'Vurun Kahpeye' Kurtuluş Savaşı'nın simgesidir. 'Sinekli Bakkal' Doğu-Batı sentezidir. Şıklarda **Yılanlı Kuyudan** görürsen hemen ELE! O Fakir Baykurt'a aittir. Halide Edip'in anıları: 'Mor Salkımlı Ev' ve 'Türk'ün Ateşle İmtihanı'.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bakile\\s+hanım\\s+sokağı\\b|\\bson\\s+emel\\b|\\byılanlı\\s+kuyudan\\b",
     "aliases": []
   }
 ]

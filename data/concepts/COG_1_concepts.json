@@ -9,10 +9,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 14,
-    "tanim": "Doğanın **kendi başına** yazdığı senaryoyu (yer şekilleri, iklim, sular, canlılar, haritalar) inceleyen coğrafya dalıdır; insan faktörü yoktur, sadece doğa vardır.\n💡 Sınav Şifresi: 'İnsan' kelimesi geçiyorsa fiziki değil; **Jeomorfoloji-Klimatoloji-Hidrografya-Biyocoğrafya-Kartografya** beşlisini ezberle, 'Karto'yu görünce harita aklına gelsin.",
+    "tanim": "Doğanın **kendi başına** yazdığı senaryoyu (yer şekilleri, iklim, sular, canlılar, haritalar) inceleyen coğrafya dalıdır; insan faktörü yoktur, sadece doğa vardır.\n💡 Hile: 'İnsan' kelimesi geçiyorsa fiziki değil; **Jeomorfoloji-Klimatoloji-Hidrografya-Biyocoğrafya-Kartografya** beşlisini ezberle, 'Karto'yu görünce harita aklına gelsin.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "fiziki coğrafya[a-zçğıöşü]*|biyocoğrafya|klimatoloji|jeomorfoloji|hidrografya|kartografya",
+    "pattern": "\\bfiziki coğrafya[a-zçğıöşü]*|\\bbiyocoğrafya\\b|\\bklimatoloji\\b|\\bjeomorfoloji\\b|\\bhidrografya\\b|\\bkartografya\\b",
     "aliases": []
   },
   {
@@ -25,10 +25,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 16,
-    "tanim": "İnsanın doğayla **kurduğu ilişkiyi** ve geçim kaygısını (nüfus, yerleşme, tarım, sanayi, turizm, ulaşım, ticaret) inceleyen daldır; yani 'insan ne yapıyor?' sorusunun cevabıdır.\n💡 Sınav Şifresi: İçinde **nüfus, yerleşme, ekonomi** geçen her şık beşerîdir; 'doğal ortam' vurgusu varsa fiziki coğrafyaya kayar, dikkat.",
+    "tanim": "İnsanın doğayla **kurduğu ilişkiyi** ve geçim kaygısını (nüfus, yerleşme, tarım, sanayi, turizm, ulaşım, ticaret) inceleyen daldır; yani 'insan ne yapıyor?' sorusunun cevabıdır.\n💡 Hile: İçinde **nüfus, yerleşme, ekonomi** geçen her şık beşerîdir; 'doğal ortam' vurgusu varsa fiziki coğrafyaya kayar, dikkat.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "beşerî coğrafya|beseri cografya|turizm coğrafyası|tarım coğrafyası|yerleşme coğrafyası|nüfus coğrafyası",
+    "pattern": "\\bbeşerî coğrafya\\b|\\bbeseri cografya\\b|\\bturizm coğrafyası\\b|\\btarım coğrafyası\\b|\\byerleşme coğrafyası\\b|\\bnüfus coğrafyası\\b",
     "aliases": []
   },
   {
@@ -41,10 +41,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 24,
-    "tanim": "Dünya tam yuvarlak değil, **kutuplardan basık Ekvator'dan şişkin** bir 'geoit'tir; bu yüzden Güneş ışınları Ekvator'a dik, kutuplara eğik gelir ve sıcaklık kutuplara doğru azalır.\n💡 Sınav Şifresi: **'Ekvator'dan kutuplara gidildikçe...'** diye başlayan her soruda cevap geoit sonucudur: sıcaklık ↓, tuzluluk ↓, kalıcı kar sınırı ↓, yerçekimi ↑.",
+    "tanim": "Dünya tam yuvarlak değil, **kutuplardan basık Ekvator'dan şişkin** bir 'geoit'tir; bu yüzden Güneş ışınları Ekvator'a dik, kutuplara eğik gelir ve sıcaklık kutuplara doğru azalır.\n💡 Hile: **'Ekvator'dan kutuplara gidildikçe...'** diye başlayan her soruda cevap geoit sonucudur: sıcaklık ↓, tuzluluk ↓, kalıcı kar sınırı ↓, yerçekimi ↑.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "dünyanın şeklinin küresel|dünya'nın şekli|geoit|kalıcı kar sınırı|denizlerin tuzluluk oranı",
+    "pattern": "\\bdünyanın şeklinin küresel\\b|\\bdünya'nın şekli\\b|\\bgeoit\\b|\\bkalıcı kar sınırı\\b|\\bdenizlerin tuzluluk oranı\\b",
     "aliases": []
   },
   {
@@ -57,10 +57,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 28,
-    "tanim": "Dünya'nın ekseni **23°27'** eğik olduğu için Güneş etrafında dolanırken farklı yarım küreler farklı açıyla ışın alır; işte bu yüzden **mevsimler** ve değişen gece-gündüz süreleri ortaya çıkar.\n💡 Sınav Şifresi: **Mevsimlerin tek sebebi eksen eğikliğidir**, Dünya'nın Güneş'e yaklaşması değil! 'Dönenceler ve aydınlanma çemberi' ifadesini görünce eksen eğikliği + yıllık hareket işaretle.",
+    "tanim": "Dünya'nın ekseni **23°27'** eğik olduğu için Güneş etrafında dolanırken farklı yarım küreler farklı açıyla ışın alır; işte bu yüzden **mevsimler** ve değişen gece-gündüz süreleri ortaya çıkar.\n💡 Hile: **Mevsimlerin tek sebebi eksen eğikliğidir**, Dünya'nın Güneş'e yaklaşması değil! 'Dönenceler ve aydınlanma çemberi' ifadesini görünce eksen eğikliği + yıllık hareket işaretle.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "yıl içinde gece ve gündüz sürelerinin|eksen eğikliği|yıllık hareket|mevsimlerin oluşumu|21 haziran|21 aralık|21 mart|23 eylül|ekinoks",
+    "pattern": "\\byıl içinde gece ve gündüz sürelerinin\\b|\\beksen eğikliği\\b|\\byıllık hareket\\b|\\bmevsimlerin oluşumu\\b|\\b21 haziran\\b|\\b21 aralık\\b|\\b21 mart\\b|\\b23 eylül\\b|\\bekinoks\\b",
     "aliases": []
   },
   {
@@ -73,10 +73,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 34,
-    "tanim": "Yerel saat her meridyenin kendi **gerçek** saatidir; ortak saat ise ülkenin **tek bir meridyene** göre belirlediği resmî saattir. Doğu-batı geniş ülkeler (Rusya, ABD, Kanada) çok saat dilimi kullanırken, dar ülkeler (Belçika, Hollanda) tek saatle idare eder.\n💡 Sınav Şifresi: **Genişlik = çok saat dilimi**, **darlık = tek saat**. 'Rusya-ABD-Kanada' üçlüsünü görünce 'çok ortak saat', 'Belçika-Hollanda' görünce 'tek ortak saat' kodla.",
+    "tanim": "Yerel saat her meridyenin kendi **gerçek** saatidir; ortak saat ise ülkenin **tek bir meridyene** göre belirlediği resmî saattir. Doğu-batı geniş ülkeler (Rusya, ABD, Kanada) çok saat dilimi kullanırken, dar ülkeler (Belçika, Hollanda) tek saatle idare eder.\n💡 Hile: **Genişlik = çok saat dilimi**, **darlık = tek saat**. 'Rusya-ABD-Kanada' üçlüsünü görünce 'çok ortak saat', 'Belçika-Hollanda' görünce 'tek ortak saat' kodla.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "tek ortak saat kullanan|ortak saat|yerel saat|uluslararası saat dilimi",
+    "pattern": "\\btek ortak saat kullanan\\b|\\bortak saat\\b|\\byerel saat\\b|\\buluslararası saat dilimi\\b",
     "aliases": []
   },
   {
@@ -89,10 +89,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 44,
-    "tanim": "Paydası **büyük** (1/500.000'den küçük), yani küçültme oranı fazla olan haritalardır; Dünya ve kıta gibi dev alanları gösterir ama **ayrıntıyı kaybeder**, bozulma artar.\n💡 Sınav Şifresi: **'Payda büyük = ölçek küçük = alan geniş = ayrıntı az = hata çok'** zincirini kur; 'Dünya/kıta haritası' görünce küçük ölçek işaretle.",
+    "tanim": "Paydası **büyük** (1/500.000'den küçük), yani küçültme oranı fazla olan haritalardır; Dünya ve kıta gibi dev alanları gösterir ama **ayrıntıyı kaybeder**, bozulma artar.\n💡 Hile: **'Payda büyük = ölçek küçük = alan geniş = ayrıntı az = hata çok'** zincirini kur; 'Dünya/kıta haritası' görünce küçük ölçek işaretle.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "küçük ölçekli harita[a-zçğıöşü]*|küçük ölçekli",
+    "pattern": "\\bküçük ölçekli harita[a-zçğıöşü]*|\\bküçük ölçekli\\b",
     "aliases": []
   },
   {
@@ -105,10 +105,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 42,
-    "tanim": "Paydası **küçük** (1/200.000'e kadar), küçültme oranı az olan haritalardır; ilçe ve köy gibi dar alanları **ayrıntılı** gösterir, hata oranı düşüktür (plan ve topoğrafya haritaları).\n💡 Sınav Şifresi: **'Payda küçük = ölçek büyük = alan dar = ayrıntı çok = hata az'**; 'plan, topoğrafya, kadastro' kelimeleri büyük ölçeğin parolasıdır.",
+    "tanim": "Paydası **küçük** (1/200.000'e kadar), küçültme oranı az olan haritalardır; ilçe ve köy gibi dar alanları **ayrıntılı** gösterir, hata oranı düşüktür (plan ve topoğrafya haritaları).\n💡 Hile: **'Payda küçük = ölçek büyük = alan dar = ayrıntı çok = hata az'**; 'plan, topoğrafya, kadastro' kelimeleri büyük ölçeğin parolasıdır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "büyük ölçekli harita[a-zçğıöşü]*|büyük ölçekli",
+    "pattern": "\\bbüyük ölçekli harita[a-zçğıöşü]*|\\bbüyük ölçekli\\b",
     "aliases": []
   },
   {
@@ -121,11 +121,12 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 48,
-    "tanim": "Aynı yükseltideki noktaları birleştiren **kapalı eğrilerdir**; eğriler sıklaşırsa eğim artar (falez, hızlı akarsu), seyrekleşirse eğim azalır (ova, yavaş akarsu).\n💡 Sınav Şifresi: **'Sık = sarp = hızlı', 'seyrek = düz = yavaş'**; eğrilerin 'V' yaptığı yer akarsu vadisi, iç içe kapalı halkalar zirve/çukurluk demektir.",
+    "tanim": "Aynı yükseltideki noktaları birleştiren **kapalı eğrilerdir**; eğriler sıklaşırsa eğim artar (falez, hızlı akarsu), seyrekleşirse eğim azalır (ova, yavaş akarsu).\n💡 Hile: **'Sık = sarp = hızlı', 'seyrek = düz = yavaş'**; eğrilerin 'V' yaptığı yer akarsu vadisi, iç içe kapalı halkalar zirve/çukurluk demektir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^İzohips$|\\\\\\\\bizohips[a-zçğıöşü]*\\\\\\\\b|\\\\\\\\beş yükselti eğrisi\\\\\\\\b|\\\\\\\\bfalez\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bİzohips\\b|\\bizohips[a-zçğıöşü]*\\b|\\beş yükselti eğrisi\\b|\\bfalez\\b",
+    "aliases": [],
+    "option_only_pattern": "^İzohips$"
   },
   {
     "id": "cog1_atmosfer_ve_katmanlari",
@@ -137,10 +138,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 60,
-    "tanim": "Dünya'yı saran **gaz küre**; canlıya nefes, yeryüzüne yorgan olur, zararlı ışınları süzer. Yerden yükseldikçe gaz yoğunluğu azalır: **Troposfer → Stratosfer → Mezosfer → Termosfer**.\n💡 Sınav Şifresi: **Hava olayları = Troposfer**, **ozon tabakası = Stratosfer**; 'gaz yoğunluğu azalır' ifadesi basıncın da azalacağının şifresidir.",
+    "tanim": "Dünya'yı saran **gaz küre**; canlıya nefes, yeryüzüne yorgan olur, zararlı ışınları süzer. Yerden yükseldikçe gaz yoğunluğu azalır: **Troposfer → Stratosfer → Mezosfer → Termosfer**.\n💡 Hile: **Hava olayları = Troposfer**, **ozon tabakası = Stratosfer**; 'gaz yoğunluğu azalır' ifadesi basıncın da azalacağının şifresidir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "atmosferin özellikleri[a-zçğıöşü]*|atmosferin katmanları|troposfer|stratosfer|ozonosfer",
+    "pattern": "\\batmosferin özellikleri[a-zçğıöşü]*|\\batmosferin katmanları\\b|\\btroposfer\\b|\\bstratosfer\\b|\\bozonosfer\\b",
     "aliases": []
   },
   {
@@ -153,10 +154,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 68,
-    "tanim": "Günün **güneşli geçen saat** miktarıdır; Türkiye'de bulut ve yağışın bol olduğu **Karadeniz'de en kısa**, açık gökyüzünün hüküm sürdüğü **Güneydoğu Anadolu ve Akdeniz'de en uzundur**.\n💡 Sınav Şifresi: **'Bulut çok = güneş az'**; Karadeniz'i görünce 'en kısa', Güneydoğu-Akdeniz'i görünce 'en uzun' eşleştir, tersini yapma.",
+    "tanim": "Günün **güneşli geçen saat** miktarıdır; Türkiye'de bulut ve yağışın bol olduğu **Karadeniz'de en kısa**, açık gökyüzünün hüküm sürdüğü **Güneydoğu Anadolu ve Akdeniz'de en uzundur**.\n💡 Hile: **'Bulut çok = güneş az'**; Karadeniz'i görünce 'en kısa', Güneydoğu-Akdeniz'i görünce 'en uzun' eşleştir, tersini yapma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "güneşlenme süresinin en kısa|güneşlenme süresi",
+    "pattern": "\\bgüneşlenme süresinin en kısa\\b|\\bgüneşlenme süresi\\b",
     "aliases": []
   },
   {
@@ -169,10 +170,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 76,
-    "tanim": "Atmosferdeki gazların yeryüzüne uyguladığı ağırlıktır; **sıcaklık artınca hava genleşir ve basınç düşer** (ters orantı), yerçekimi ve gaz yoğunluğu artınca basınç artar (doğru orantı).\n💡 Sınav Şifresi: **'Sıcak = hafif = alçak basınç', 'soğuk = ağır = yüksek basınç'**; 'sıcaklıkla basınç ters orantılıdır' cümlesi soruların anahtarıdır.",
+    "tanim": "Atmosferdeki gazların yeryüzüne uyguladığı ağırlıktır; **sıcaklık artınca hava genleşir ve basınç düşer** (ters orantı), yerçekimi ve gaz yoğunluğu artınca basınç artar (doğru orantı).\n💡 Hile: **'Sıcak = hafif = alçak basınç', 'soğuk = ağır = yüksek basınç'**; 'sıcaklıkla basınç ters orantılıdır' cümlesi soruların anahtarıdır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hava basıncını etkileyen|hava basıncı|basınç merkezleri|alçak basınç|yüksek basınç",
+    "pattern": "\\bhava basıncını etkileyen\\b|\\bhava basıncı\\b|\\bbasınç merkezleri\\b|\\balçak basınç\\b|\\byüksek basınç\\b",
     "aliases": []
   },
   {
@@ -185,10 +186,10 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 82,
-    "tanim": "Sürekli basınç kuşakları arasında **yıl boyu aynı yönde** esen rüzgârlardır: 30°'den Ekvator'a **Alizeler**, 30°'den 60°'ye **Batı Rüzgârları**, kutuplardan 60°'ye **Kutup Rüzgârları**.\n💡 Sınav Şifresi: **'Alize Ekvator'a, Batı 60'a, Kutup 60'a'**; orta kuşak karalarının batısına yağış bırakan rüzgâr **Batı Rüzgârları**dır, bu eşleştirme sıkça sorulur.",
+    "tanim": "Sürekli basınç kuşakları arasında **yıl boyu aynı yönde** esen rüzgârlardır: 30°'den Ekvator'a **Alizeler**, 30°'den 60°'ye **Batı Rüzgârları**, kutuplardan 60°'ye **Kutup Rüzgârları**.\n💡 Hile: **'Alize Ekvator'a, Batı 60'a, Kutup 60'a'**; orta kuşak karalarının batısına yağış bırakan rüzgâr **Batı Rüzgârları**dır, bu eşleştirme sıkça sorulur.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "sürekli rüzgârlar[a-zçğıöşü]*|alizeler|batı rüzgârları|kutup rüzgârları|alize",
+    "pattern": "\\bsürekli rüzgârlar[a-zçğıöşü]*|\\balizeler\\b|\\bbatı rüzgârları\\b|\\bkutup rüzgârları\\b|\\balize\\b",
     "aliases": []
   },
   {
@@ -201,11 +202,12 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 84,
-    "tanim": "**Meltem**, günlük ısınma farkıyla esen \"günlük\" rüzgâr (gündüz denizden karaya, gece karadan denize); **muson** ise kıta ile okyanus arasındaki yıllık farkla esen \"mevsimlik\" dev rüzgâr — tıpkı yazın serinlemek için açılan klima gibi, yaz musonu da denizden karaya nem taşıyıp bol yağış bırakır.\n💡 Sınav Şifresi: \"Günlük = Meltem, Mevsimlik = Muson\"; musonda yaz musonu = yağış, kış musonu = kuraklık.",
+    "tanim": "**Meltem**, günlük ısınma farkıyla esen \"günlük\" rüzgâr (gündüz denizden karaya, gece karadan denize); **muson** ise kıta ile okyanus arasındaki yıllık farkla esen \"mevsimlik\" dev rüzgâr — tıpkı yazın serinlemek için açılan klima gibi, yaz musonu da denizden karaya nem taşıyıp bol yağış bırakır.\n💡 Hile: \"Günlük = Meltem, Mevsimlik = Muson\"; musonda yaz musonu = yağış, kış musonu = kuraklık.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Musonlar$|^Meltemler$|\\\\\\\\bmuson rüzgârları\\\\\\\\b|\\\\\\\\bmeltem rüzgârları\\\\\\\\b|\\\\\\\\bmuson\\\\\\\\b|\\\\\\\\bmeltem\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bMusonlar\\b|\\bMeltemler\\b|\\bmuson rüzgârları\\b|\\bmeltem rüzgârları\\b|\\bmuson\\b|\\bmeltem\\b",
+    "aliases": [],
+    "option_only_pattern": "^Musonlar$|^Meltemler$"
   },
   {
     "id": "cog1_mutlak_ve_bagil_nem",
@@ -217,10 +219,44 @@
     "donem": 1,
     "unite_no": null,
     "sayfa": 92,
-    "tanim": "**Mutlak nem**, 1 m³ havadaki su buharının gramıdır (\"ne kadar su var\"); **bağıl nem** ise bu suyun havanın taşıyabileceğinin yüzdesidir (\"doygunluğa ne kadar yakın\") — tıpkı bir sürahinin içindeki su (mutlak) ile doluluk oranı (bağıl) gibi.\n💡 Sınav Şifresi: Mutlak nem = sıcaklık + kıyı (Akdeniz'de fazla); Bağıl nem = yağış ihtimali (Karadeniz'de en yüksek).",
+    "tanim": "**Mutlak nem**, 1 m³ havadaki su buharının gramıdır (\"ne kadar su var\"); **bağıl nem** ise bu suyun havanın taşıyabileceğinin yüzdesidir (\"doygunluğa ne kadar yakın\") — tıpkı bir sürahinin içindeki su (mutlak) ile doluluk oranı (bağıl) gibi.\n💡 Hile: Mutlak nem = sıcaklık + kıyı (Akdeniz'de fazla); Bağıl nem = yağış ihtimali (Karadeniz'de en yüksek).",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "mutlak nem|bağıl nem|maksimum nem|su buharının ağırlığına",
+    "pattern": "\\bmutlak nem\\b|\\bbağıl nem\\b|\\bmaksimum nem\\b|\\bsu buharının ağırlığına\\b",
     "aliases": []
+  },
+  {
+    "id": "cog_ic_ve_dis_kuvvetler",
+    "base_id": "cog_ic_ve_dis_kuvvetler",
+    "term": "Yer Şekilleri (Volkanizma, Falez, Karstik, Tombolo)",
+    "subject": "COG",
+    "ders": "COG – 1",
+    "ders_kodu": null,
+    "donem": 1,
+    "unite_no": null,
+    "sayfa": 40,
+    "tanim": "Volkanizma yer altı mağmasıyla oluşur; Karstik şekiller kalkerin erimesiyle; Falez dik kıyı uçurumu; Tombolo saplı adadır.\n💡 Hile: Kalker/kireçtaşı erimesi ve mağara/obruk = **Karstik** (Akdeniz). Dalga aşındırmasıyla uçurum = **Falez** (Karadeniz/Akdeniz). Adayı karaya bağlayan dalga kumu = **Tombolo** (Sinop, Kapıdağ).",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bvolkanizma[a-zçğıöşü]*\\b|\\bfalez[a-zçğıöşü]*\\b|\\bkarstik\\b|\\btombolo\\b|\\bkuraklık\\b|\\bVolkanizma\\b|\\bFalez\\b|\\bKuraklık\\b|\\bTombolo\\b",
+    "aliases": [],
+    "option_only_pattern": "^Volkanizma$|^Falez$|^Kuraklık$|^Tombolo$"
+  },
+  {
+    "id": "cog_iklim_ve_bitki",
+    "base_id": "cog_iklim_ve_bitki",
+    "term": "İklim Tipleri ve Biyocoğrafya",
+    "subject": "COG",
+    "ders": "COG – 1",
+    "ders_kodu": null,
+    "donem": 1,
+    "unite_no": null,
+    "sayfa": 75,
+    "tanim": "Akdeniz iklimi yazın sıcak-kurak, kışın ılık-yağışlıdır (Maki); Muson yazın aşırı yağışlıdır; Karasal iklimde sıcaklık farkı yüksektir.\n💡 Hile: 'Yazı sıcak-kurak, kışı ılık-yağışlı, bitki örtüsü zeytin/maki' = **Akdeniz İklimi**. 'Yaz yağmuruyla pirinç yetiştirilen Asya' = **Muson İklimi**.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bbiyocoğrafya[a-zçğıöşü]*\\b|\\bakdeniz\\s+iklimi\\b|\\bmuson\\s+iklimi\\b|\\bmaki[a-zçğıöşü]*\\b|\\bBiyocoğrafya\\b|\\bAkdeniz İklimi\\b|\\bMuson İklimi\\b",
+    "aliases": [],
+    "option_only_pattern": "^Biyocoğrafya$|^Akdeniz İklimi$|^Muson İklimi$"
   }
 ]

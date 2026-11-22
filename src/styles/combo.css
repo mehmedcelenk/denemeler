@@ -1,17 +1,17 @@
 /* ========================================================= */
 /* OYUNLAŞTIRMA SERİ TOAST BİLDİRİMİ (COMBO TOAST)           */
-/* Su & Toprak Temalı Palet                                  */
+/* Yıldız & 7 Sema Kozmik Paleti                             */
 /* ========================================================= */
 
 .combo-toast-container {
   position: fixed;
-  top: 58px;
+  top: calc(76px + var(--safe-top));
   left: 50%;
   transform: translateX(-50%) translateY(-20px) scale(0.92);
-  z-index: 10000;
+  z-index: 990;
   pointer-events: none;
   opacity: 0;
-  transition: all 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.34s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.28s ease;
   will-change: transform, opacity;
 }
 
@@ -23,97 +23,187 @@
 .combo-toast-inner {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 8px 18px;
+  gap: 12px;
+  padding: 12px 24px;
   border-radius: 999px;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
   border: 1.5px solid transparent;
 }
 
 .combo-toast-icon {
-  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
   line-height: 1;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+}
+
+.combo-toast-icon svg {
+  width: 1.15em;
+  height: 1.15em;
+  display: block;
 }
 
 .combo-toast-content {
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
+  gap: 2px;
+  line-height: 1.18;
 }
 
 .combo-toast-title {
   font-family: inherit;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 800;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .combo-toast-subtitle {
-  font-size: 11px;
-  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
   opacity: 0.88;
+  font-variant-numeric: tabular-nums;
 }
 
-/* 1. Su / Okyanus Temalı Seri (2'de 2 ... 5'te 5, Durdurulamıyor, Devam Ediyor) */
-.combo-toast-container.combo-water .combo-toast-inner {
-  background: linear-gradient(135deg, rgba(240, 249, 255, 0.96), rgba(224, 242, 254, 0.94));
-  border-color: #0284c7;
-  color: #0369a1;
-  box-shadow: 0 8px 26px rgba(2, 132, 199, 0.28);
-}
-body.dark-mode .combo-toast-container.combo-water .combo-toast-inner {
-  background: linear-gradient(135deg, rgba(8, 47, 73, 0.95), rgba(12, 74, 110, 0.95));
-  border-color: #38bdf8;
-  color: #e0f2fe;
-  box-shadow: 0 8px 26px rgba(2, 132, 199, 0.45);
+/* 1. Aktif Yıldız Serisi (2-5) */
+.combo-toast-container.combo-star .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.94), rgba(30, 58, 138, 0.94));
+  border-color: rgba(147, 197, 253, 0.72);
+  color: #ffffff;
+  box-shadow: 0 12px 32px rgba(30, 58, 138, 0.42), 0 0 18px rgba(96, 165, 250, 0.28);
 }
 
-/* 2. Toprağımsı / Doğal Koruma Teması ("Avans Verdi") */
-.combo-toast-container.combo-earth .combo-toast-inner {
-  background: linear-gradient(135deg, rgba(254, 252, 246, 0.96), rgba(245, 238, 222, 0.94));
-  border-color: #a16207;
-  color: #78350f;
-  box-shadow: 0 8px 26px rgba(161, 98, 7, 0.22);
+/* 2. Süpernova / Yüksek Seri (6+) */
+.combo-toast-container.combo-nova .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(49, 46, 129, 0.96), rgba(109, 40, 217, 0.95) 58%, rgba(162, 28, 175, 0.95));
+  border-color: rgba(254, 240, 138, 0.86);
+  color: #ffffff;
+  box-shadow: 0 14px 38px rgba(109, 40, 217, 0.52), 0 0 26px rgba(254, 240, 138, 0.34);
 }
-body.dark-mode .combo-toast-container.combo-earth .combo-toast-inner {
-  background: linear-gradient(135deg, rgba(41, 28, 17, 0.95), rgba(69, 44, 24, 0.95));
-  border-color: #d97706;
+
+.combo-toast-container.combo-nova .combo-toast-icon {
+  color: #fef08a;
+  filter: drop-shadow(0 0 8px rgba(254, 240, 138, 0.9));
+}
+
+/* 3. Yörünge / Avans Verdi */
+.combo-toast-container.combo-orbit .combo-toast-inner {
+  background: linear-gradient(135deg, rgba(45, 28, 14, 0.95), rgba(120, 53, 15, 0.94));
+  border-color: rgba(251, 191, 36, 0.75);
   color: #fef3c7;
-  box-shadow: 0 8px 26px rgba(217, 119, 6, 0.35);
+  box-shadow: 0 12px 30px rgba(180, 83, 9, 0.38);
 }
 
-/* 3. Seri Söndü / Sıfırlandı ("Buraya Kadar!") */
+.combo-toast-container.combo-orbit .combo-toast-icon {
+  color: #fbbf24;
+  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.65));
+}
+
+/* 4. Seri Söndü ("Buraya Kadar!") */
 .combo-toast-container.combo-broken .combo-toast-inner {
-  background: linear-gradient(135deg, rgba(248, 250, 252, 0.96), rgba(241, 245, 249, 0.94));
-  border-color: #94a3b8;
-  color: #475569;
-  box-shadow: 0 8px 24px rgba(71, 85, 105, 0.2);
-}
-body.dark-mode .combo-toast-container.combo-broken .combo-toast-inner {
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
-  border-color: #64748b;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.94), rgba(15, 23, 42, 0.95));
+  border-color: rgba(148, 163, 184, 0.55);
   color: #cbd5e1;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.45);
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.45);
 }
 
+.combo-toast-container.combo-broken .combo-toast-icon {
+  color: #94a3b8;
+  filter: none;
+}
+
+/* 5. Sema Katmanı Yükselişi (Katmanın Kendi Rengi & Görkemi) */
+.combo-toast-container.combo-tier .combo-toast-inner {
+  background: var(--sky-pill-bg, linear-gradient(135deg, #1e1b4b, #3730a3));
+  border-color: var(--sky-pill-border, rgba(254, 240, 138, 0.85));
+  color: #ffffff;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.4), var(--sky-glow, none);
+}
+
+/* Mobil */
 @media (max-width: 640px) {
   .combo-toast-container {
-    top: calc(52px + var(--safe-top));
+    top: calc(68px + var(--safe-top));
   }
   .combo-toast-inner {
-    padding: 6px 14px;
-    gap: 8px;
-  }
-  .combo-toast-title {
-    font-size: 13px;
-  }
-  .combo-toast-subtitle {
-    font-size: 10px;
+    padding: 8px 16px;
+    gap: 9px;
   }
   .combo-toast-icon {
-    font-size: 18px;
+    font-size: 19px;
+  }
+  .combo-toast-title {
+    font-size: 14px;
+  }
+  .combo-toast-subtitle {
+    font-size: 11px;
+  }
+}
+
+/* PC / Masaüstü */
+@media (min-width: 1024px) {
+  .combo-toast-container {
+    top: 84px;
+  }
+  .combo-toast-inner {
+    padding: 16px 34px;
+    gap: 15px;
+    border-width: 2px;
+  }
+  .combo-toast-icon {
+    font-size: 30px;
+  }
+  .combo-toast-title {
+    font-size: 22px;
+  }
+  .combo-toast-subtitle {
+    font-size: 14px;
+  }
+}
+
+/* Geniş Masaüstü */
+@media (min-width: 1440px) {
+  .combo-toast-container {
+    top: 94px;
+  }
+  .combo-toast-inner {
+    padding: 18px 40px;
+    gap: 18px;
+  }
+  .combo-toast-icon {
+    font-size: 36px;
+  }
+  .combo-toast-title {
+    font-size: 26px;
+  }
+  .combo-toast-subtitle {
+    font-size: 16px;
+  }
+}
+
+/* TV / Akıllı Tahta */
+@media (min-width: 1800px) {
+  .combo-toast-container {
+    top: 114px;
+  }
+  .combo-toast-inner {
+    padding: 24px 54px;
+    gap: 22px;
+    border-width: 2.5px;
+  }
+  .combo-toast-icon {
+    font-size: 48px;
+  }
+  .combo-toast-title {
+    font-size: 36px;
+  }
+  .combo-toast-subtitle {
+    font-size: 22px;
   }
 }

@@ -1,0 +1,154 @@
+/* Ders Bazlı Liste — İnce Çizgili, Kutusuz Skor Çizelgesi */
+.welcome-arena-subjects {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.welcome-arena-subjects:empty {
+  display: none;
+}
+
+.arena-subjects {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.arena-subjects-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.arena-subject-item {
+  border-bottom: 1px solid color-mix(in srgb, var(--paper-border) 55%, transparent);
+}
+
+.arena-subject-item:last-child {
+  border-bottom: 0;
+}
+
+.arena-subject-row {
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 2px;
+  border: 0;
+  background: transparent;
+  color: var(--paper-text);
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: opacity 0.14s ease, transform 0.14s ease;
+}
+
+.arena-subject-row:hover {
+  opacity: 0.8;
+  transform: translateX(2px);
+}
+
+.arena-subject-row:focus-visible {
+  outline: 2px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+.arena-subject-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.arena-subject-top {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+}
+
+.arena-subject-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arena-subject-term {
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+}
+
+.arena-subject-terms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--paper-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.arena-term-item strong {
+  color: var(--paper-text);
+  font-weight: 700;
+}
+
+.arena-subject-line {
+  width: 100%;
+  height: 2px;
+  background: color-mix(in srgb, var(--paper-border) 50%, transparent);
+  overflow: hidden;
+}
+
+.arena-subject-line-fill {
+  display: block;
+  height: 100%;
+  background: var(--brand-accent);
+}
+
+.arena-subject-row.is-strong .arena-subject-line-fill {
+  background: var(--success-accent);
+}
+
+.arena-subject-row.is-weak .arena-subject-line-fill {
+  background: var(--danger-accent);
+}
+
+.arena-subject-numbers {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.arena-subject-count {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+}
+
+.arena-subject-pct {
+  min-width: 38px;
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.arena-subject-row.is-locked .arena-subject-pct {
+  color: var(--paper-text-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arena-subject-row {
+    transition: none;
+  }
+}

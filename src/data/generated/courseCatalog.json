@@ -1,0 +1,1026 @@
+[
+  {
+    "subjectId": "AOF_AHLAK",
+    "ders": "İSLAM AHLAK ESASLARI",
+    "shortName": "AHLÂK",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 142
+  },
+  {
+    "subjectId": "AOF_ARAPCA",
+    "ders": "ARAPÇA I",
+    "shortName": "ARAPÇA",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 50
+  },
+  {
+    "subjectId": "AOF_HADIS",
+    "ders": "HADİS TARİHİ VE USÜLÜ",
+    "shortName": "HADİS",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 115
+  },
+  {
+    "subjectId": "AOF_IBADET",
+    "ders": "İSLAM İBADET ESASLARI",
+    "shortName": "İBADET",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 144
+  },
+  {
+    "subjectId": "AOF_INANC",
+    "ders": "İSLAM İNANÇ ESASLARI",
+    "shortName": "İNANÇ",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 159
+  },
+  {
+    "subjectId": "AOF_ITAR",
+    "ders": "İLK DÖNEM İSLAM TARİHİ",
+    "shortName": "İSLÂM TARİ",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 129
+  },
+  {
+    "subjectId": "AOO_DIN",
+    "ders": "AÖO DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 5",
+    "shortName": "DİN-5",
+    "termOrder": 5,
+    "kredi": 2,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_DIN",
+    "ders": "AÖO DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 6",
+    "shortName": "DİN-6",
+    "termOrder": 6,
+    "kredi": 2,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_DIN",
+    "ders": "AÖO DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 7",
+    "shortName": "DİN-7",
+    "termOrder": 7,
+    "kredi": 2,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_DIN",
+    "ders": "AÖO DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 8",
+    "shortName": "DİN-8",
+    "termOrder": 8,
+    "kredi": 2,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_FEN",
+    "ders": "AÖO FEN BİLİMLERİ – 5",
+    "shortName": "FEN-5",
+    "termOrder": 5,
+    "kredi": 4,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_FEN",
+    "ders": "AÖO FEN BİLİMLERİ – 6",
+    "shortName": "FEN-6",
+    "termOrder": 6,
+    "kredi": 4,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_FEN",
+    "ders": "AÖO FEN BİLİMLERİ – 7",
+    "shortName": "FEN-7",
+    "termOrder": 7,
+    "kredi": 4,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_FEN",
+    "ders": "AÖO FEN BİLİMLERİ – 8",
+    "shortName": "FEN-8",
+    "termOrder": 8,
+    "kredi": 4,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_ING",
+    "ders": "AÖO İNGİLİZCE – 5",
+    "shortName": "İNG-5",
+    "termOrder": 5,
+    "kredi": 3,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_ING",
+    "ders": "AÖO İNGİLİZCE – 6",
+    "shortName": "İNG-6",
+    "termOrder": 6,
+    "kredi": 3,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_ING",
+    "ders": "AÖO İNGİLİZCE – 7",
+    "shortName": "İNG-7",
+    "termOrder": 7,
+    "kredi": 3,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_ING",
+    "ders": "AÖO İNGİLİZCE – 8",
+    "shortName": "İNG-8",
+    "termOrder": 8,
+    "kredi": 3,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_MAT",
+    "ders": "AÖO MATEMATİK – 5",
+    "shortName": "MAT-5",
+    "termOrder": 5,
+    "kredi": 5,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_MAT",
+    "ders": "AÖO MATEMATİK – 6",
+    "shortName": "MAT-6",
+    "termOrder": 6,
+    "kredi": 5,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_MAT",
+    "ders": "AÖO MATEMATİK – 7",
+    "shortName": "MAT-7",
+    "termOrder": 7,
+    "kredi": 5,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_MAT",
+    "ders": "AÖO MATEMATİK – 8",
+    "shortName": "MAT-8",
+    "termOrder": 8,
+    "kredi": 5,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_SOS",
+    "ders": "AÖO SOSYAL BİLGİLER – 5",
+    "shortName": "SOS-5",
+    "termOrder": 5,
+    "kredi": 3,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_SOS",
+    "ders": "AÖO SOSYAL BİLGİLER – 6",
+    "shortName": "SOS-6",
+    "termOrder": 6,
+    "kredi": 3,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_SOS",
+    "ders": "AÖO SOSYAL BİLGİLER – 7",
+    "shortName": "SOS-7",
+    "termOrder": 7,
+    "kredi": 3,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_SOS",
+    "ders": "AÖO T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK – 8",
+    "shortName": "İNK-8",
+    "termOrder": 8,
+    "kredi": 2,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_TURKCE",
+    "ders": "AÖO TÜRKÇE – 5",
+    "shortName": "TÜRKÇE-5",
+    "termOrder": 5,
+    "kredi": 6,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_TURKCE",
+    "ders": "AÖO TÜRKÇE – 6",
+    "shortName": "TÜRKÇE-6",
+    "termOrder": 6,
+    "kredi": 6,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_TURKCE",
+    "ders": "AÖO TÜRKÇE – 7",
+    "shortName": "TÜRKÇE-7",
+    "termOrder": 7,
+    "kredi": 6,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AOO_TURKCE",
+    "ders": "AÖO TÜRKÇE – 8",
+    "shortName": "TÜRKÇE-8",
+    "termOrder": 8,
+    "kredi": 6,
+    "questionCount": 93
+  },
+  {
+    "subjectId": "AYT_BIO",
+    "ders": "AYT BİYOLOJİ",
+    "shortName": "AYT BİY",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 116
+  },
+  {
+    "subjectId": "AYT_COG1",
+    "ders": "AYT COĞRAFYA-1",
+    "shortName": "AYT COĞ-1",
+    "termOrder": 1,
+    "kredi": 1,
+    "questionCount": 54
+  },
+  {
+    "subjectId": "AYT_COG2",
+    "ders": "AYT COĞRAFYA-2",
+    "shortName": "AYT COĞ-2",
+    "termOrder": 2,
+    "kredi": 1,
+    "questionCount": 99
+  },
+  {
+    "subjectId": "AYT_DIN",
+    "ders": "AYT DİN KÜLTÜRÜ",
+    "shortName": "AYT DİN KÜLTÜRÜ",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 55
+  },
+  {
+    "subjectId": "AYT_EDB",
+    "ders": "AYT TÜRK DİLİ VE EDEBİYATI",
+    "shortName": "AYT EDB",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 215
+  },
+  {
+    "subjectId": "AYT_FEL",
+    "ders": "AYT FELSEFE GRUBU",
+    "shortName": "AYT FEL GRUBU",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 162
+  },
+  {
+    "subjectId": "AYT_FIZ",
+    "ders": "AYT FİZİK",
+    "shortName": "AYT FİZ",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 126
+  },
+  {
+    "subjectId": "AYT_KIM",
+    "ders": "AYT KİMYA",
+    "shortName": "AYT KİM",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 113
+  },
+  {
+    "subjectId": "AYT_MAT",
+    "ders": "AYT MATEMATİK",
+    "shortName": "AYT MAT",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 349
+  },
+  {
+    "subjectId": "AYT_TAR1",
+    "ders": "AYT TARİH-1",
+    "shortName": "AYT TAR-1",
+    "termOrder": 1,
+    "kredi": 1,
+    "questionCount": 89
+  },
+  {
+    "subjectId": "AYT_TAR2",
+    "ders": "AYT TARİH-2",
+    "shortName": "AYT TAR-2",
+    "termOrder": 2,
+    "kredi": 1,
+    "questionCount": 99
+  },
+  {
+    "subjectId": "BIO",
+    "ders": "BİYOLOJİ – 1",
+    "shortName": "BİY-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "BIO",
+    "ders": "BİYOLOJİ – 2",
+    "shortName": "BİY-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "BIO",
+    "ders": "BİYOLOJİ – 3",
+    "shortName": "BİY-3",
+    "termOrder": 3,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "BIO",
+    "ders": "BİYOLOJİ – 4",
+    "shortName": "BİY-4",
+    "termOrder": 4,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "COG",
+    "ders": "COĞRAFYA – 1",
+    "shortName": "COĞ-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "COG",
+    "ders": "COĞRAFYA – 2",
+    "shortName": "COĞ-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "COG",
+    "ders": "COĞRAFYA – 3",
+    "shortName": "COĞ-3",
+    "termOrder": 3,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "COG",
+    "ders": "COĞRAFYA – 4",
+    "shortName": "COĞ-4",
+    "termOrder": 4,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "DIN",
+    "ders": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 1",
+    "shortName": "DİN-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "DIN",
+    "ders": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 2",
+    "shortName": "DİN-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "DIN",
+    "ders": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 3",
+    "shortName": "DİN-3",
+    "termOrder": 3,
+    "kredi": 2,
+    "questionCount": 52
+  },
+  {
+    "subjectId": "DIN",
+    "ders": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 4",
+    "shortName": "DİN-4",
+    "termOrder": 4,
+    "kredi": 2,
+    "questionCount": 72
+  },
+  {
+    "subjectId": "DIN",
+    "ders": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 5",
+    "shortName": "DİN-5",
+    "termOrder": 5,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "DIN",
+    "ders": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 6",
+    "shortName": "DİN-6",
+    "termOrder": 6,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "DIN",
+    "ders": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 7",
+    "shortName": "DİN-7",
+    "termOrder": 7,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "DIN",
+    "ders": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ – 8",
+    "shortName": "DİN-8",
+    "termOrder": 8,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "FEL",
+    "ders": "FELSEFE – 1",
+    "shortName": "FEL-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "FEL",
+    "ders": "FELSEFE – 2",
+    "shortName": "FEL-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "FEL",
+    "ders": "FELSEFE – 3",
+    "shortName": "FEL-3",
+    "termOrder": 3,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "FEL",
+    "ders": "FELSEFE – 4",
+    "shortName": "FEL-4",
+    "termOrder": 4,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "FIZ",
+    "ders": "FİZİK – 1",
+    "shortName": "FİZ-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "FIZ",
+    "ders": "FİZİK – 2",
+    "shortName": "FİZ-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "FIZ",
+    "ders": "FİZİK – 3",
+    "shortName": "FİZ-3",
+    "termOrder": 3,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "FIZ",
+    "ders": "FİZİK – 4",
+    "shortName": "FİZ-4",
+    "termOrder": 4,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "GIR_TEMEL",
+    "ders": "GİRİŞİMCİLİK – 1",
+    "shortName": "GİRİŞİMCİLİK-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 11
+  },
+  {
+    "subjectId": "GIR_TEMEL",
+    "ders": "GİRİŞİMCİLİK – 2",
+    "shortName": "GİRİŞİMCİLİK-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 11
+  },
+  {
+    "subjectId": "ILM_CENAZE",
+    "ders": "CENAZE SORULARI",
+    "shortName": "CENAZE SORULARI",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 35
+  },
+  {
+    "subjectId": "ILM_CUMA",
+    "ders": "CUMA VE HUTBE SORULARI",
+    "shortName": "CUMA VE HUTBE SORULARI",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 38
+  },
+  {
+    "subjectId": "ILM_DENEME",
+    "ders": "GENEL DENEME SINAVI",
+    "shortName": "GENEL DENEME SINAVI",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 60
+  },
+  {
+    "subjectId": "ILM_HAC",
+    "ders": "HAC VE UMRE SORULARI",
+    "shortName": "HAC VE UMRE SORULARI",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 84
+  },
+  {
+    "subjectId": "ILM_HAC_FIKHI",
+    "ders": "HAC FIKHI - 1",
+    "shortName": "HAC FIKHI-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 45
+  },
+  {
+    "subjectId": "ILM_HAC_FIKHI",
+    "ders": "HAC FIKHI - 2",
+    "shortName": "HAC FIKHI-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 45
+  },
+  {
+    "subjectId": "ILM_HAC_FIKHI",
+    "ders": "HAC FIKHI - 3",
+    "shortName": "HAC FIKHI-3",
+    "termOrder": 3,
+    "kredi": 2,
+    "questionCount": 30
+  },
+  {
+    "subjectId": "ILM_HAC_FIKHI",
+    "ders": "HAC FIKHI - 4",
+    "shortName": "HAC FIKHI-4",
+    "termOrder": 4,
+    "kredi": 2,
+    "questionCount": 20
+  },
+  {
+    "subjectId": "ILM_HAC_FIKHI",
+    "ders": "HAC FIKHI - 5",
+    "shortName": "HAC FIKHI-5",
+    "termOrder": 5,
+    "kredi": 2,
+    "questionCount": 37
+  },
+  {
+    "subjectId": "ILM_KURBAN",
+    "ders": "KURBAN VE YEMİN SORULARI",
+    "shortName": "KURBAN VE YEMİN SORULARI",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 13
+  },
+  {
+    "subjectId": "ILM_NAMAZ",
+    "ders": "NAMAZ SORULARI",
+    "shortName": "NAMAZ SORULARI",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 130
+  },
+  {
+    "subjectId": "ILM_ORUC",
+    "ders": "ORUÇ SORULARI",
+    "shortName": "ORUÇ SORULARI",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 30
+  },
+  {
+    "subjectId": "ILM_TEMIZLIK",
+    "ders": "TEMİZLİK SORULARI",
+    "shortName": "TEMİZLİK SORULARI",
+    "termOrder": null,
+    "kredi": 2,
+    "questionCount": 73
+  },
+  {
+    "subjectId": "ILM_ZEKAT",
+    "ders": "ZEKÂT TESTİ - 1",
+    "shortName": "ZEKÂT TESTİ-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 114
+  },
+  {
+    "subjectId": "ILM_ZEKAT",
+    "ders": "ZEKÂT TESTİ - 2",
+    "shortName": "ZEKÂT TESTİ-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 50
+  },
+  {
+    "subjectId": "ING",
+    "ders": "İNGİLİZCE – 1",
+    "shortName": "İNG-1",
+    "termOrder": 1,
+    "kredi": 4,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "ING",
+    "ders": "İNGİLİZCE – 2",
+    "shortName": "İNG-2",
+    "termOrder": 2,
+    "kredi": 4,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "ING",
+    "ders": "İNGİLİZCE – 3",
+    "shortName": "İNG-3",
+    "termOrder": 3,
+    "kredi": 4,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "ING",
+    "ders": "İNGİLİZCE – 4",
+    "shortName": "İNG-4",
+    "termOrder": 4,
+    "kredi": 4,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "ING",
+    "ders": "İNGİLİZCE – 5",
+    "shortName": "İNG-5",
+    "termOrder": 5,
+    "kredi": 4,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "ING",
+    "ders": "İNGİLİZCE – 6",
+    "shortName": "İNG-6",
+    "termOrder": 6,
+    "kredi": 4,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "ING",
+    "ders": "İNGİLİZCE – 7",
+    "shortName": "İNG-7",
+    "termOrder": 7,
+    "kredi": 4,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "ING",
+    "ders": "İNGİLİZCE – 8",
+    "shortName": "İNG-8",
+    "termOrder": 8,
+    "kredi": 4,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "INK",
+    "ders": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK – 1",
+    "shortName": "İNK-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "INK",
+    "ders": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK – 2",
+    "shortName": "İNK-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "KIM",
+    "ders": "KİMYA – 1",
+    "shortName": "KİM-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "KIM",
+    "ders": "KİMYA – 2",
+    "shortName": "KİM-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "KIM",
+    "ders": "KİMYA – 3",
+    "shortName": "KİM-3",
+    "termOrder": 3,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "KIM",
+    "ders": "KİMYA – 4",
+    "shortName": "KİM-4",
+    "termOrder": 4,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "KLM",
+    "ders": "KELAM – 1",
+    "shortName": "KELAM-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "KLM",
+    "ders": "KELAM – 2",
+    "shortName": "KELAM-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "MAT",
+    "ders": "MATEMATİK – 1",
+    "shortName": "MAT-1",
+    "termOrder": 1,
+    "kredi": 6,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "MAT",
+    "ders": "MATEMATİK – 2",
+    "shortName": "MAT-2",
+    "termOrder": 2,
+    "kredi": 6,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "MAT",
+    "ders": "MATEMATİK – 3",
+    "shortName": "MAT-3",
+    "termOrder": 3,
+    "kredi": 6,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "MAT",
+    "ders": "MATEMATİK – 4",
+    "shortName": "MAT-4",
+    "termOrder": 4,
+    "kredi": 6,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "SAG",
+    "ders": "SAĞLIK BİLGİSİ VE TRAFİK KÜLTÜRÜ – 1",
+    "shortName": "SAĞ-1",
+    "termOrder": 1,
+    "kredi": 1,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "SAG",
+    "ders": "SAĞLIK BİLGİSİ VE TRAFİK KÜLTÜRÜ – 2",
+    "shortName": "SAĞ-2",
+    "termOrder": 2,
+    "kredi": 1,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TAR",
+    "ders": "TARİH – 1",
+    "shortName": "TAR-1",
+    "termOrder": 1,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TAR",
+    "ders": "TARİH – 2",
+    "shortName": "TAR-2",
+    "termOrder": 2,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TAR",
+    "ders": "TARİH – 3",
+    "shortName": "TAR-3",
+    "termOrder": 3,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TAR",
+    "ders": "TARİH – 4",
+    "shortName": "TAR-4",
+    "termOrder": 4,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TAR",
+    "ders": "TARİH – 5",
+    "shortName": "TAR-5",
+    "termOrder": 5,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TAR",
+    "ders": "TARİH – 6",
+    "shortName": "TAR-6",
+    "termOrder": 6,
+    "kredi": 2,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 1",
+    "shortName": "TDE-1",
+    "termOrder": 1,
+    "kredi": 5,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 2",
+    "shortName": "TDE-2",
+    "termOrder": 2,
+    "kredi": 5,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 3",
+    "shortName": "TDE-3",
+    "termOrder": 3,
+    "kredi": 5,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 4",
+    "shortName": "TDE-4",
+    "termOrder": 4,
+    "kredi": 5,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 5",
+    "shortName": "TDE-5",
+    "termOrder": 5,
+    "kredi": 5,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 6",
+    "shortName": "TDE-6",
+    "termOrder": 6,
+    "kredi": 5,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 7",
+    "shortName": "TDE-7",
+    "termOrder": 7,
+    "kredi": 5,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 8",
+    "shortName": "TDE-8",
+    "termOrder": 8,
+    "kredi": 5,
+    "questionCount": 82
+  },
+  {
+    "subjectId": "TYT_BIO",
+    "ders": "TYT BİYOLOJİ",
+    "shortName": "TYT BİY",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 53
+  },
+  {
+    "subjectId": "TYT_COG",
+    "ders": "TYT COĞRAFYA",
+    "shortName": "TYT COĞ",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 45
+  },
+  {
+    "subjectId": "TYT_DIN",
+    "ders": "TYT DİN KÜLTÜRÜ",
+    "shortName": "TYT DİN KÜLTÜRÜ",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 42
+  },
+  {
+    "subjectId": "TYT_FEL",
+    "ders": "TYT FELSEFE",
+    "shortName": "TYT FEL",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 88
+  },
+  {
+    "subjectId": "TYT_FIZ",
+    "ders": "TYT FİZİK",
+    "shortName": "TYT FİZ",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 63
+  },
+  {
+    "subjectId": "TYT_KIM",
+    "ders": "TYT KİMYA",
+    "shortName": "TYT KİM",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 61
+  },
+  {
+    "subjectId": "TYT_MAT",
+    "ders": "TYT MATEMATİK",
+    "shortName": "TYT MAT",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 359
+  },
+  {
+    "subjectId": "TYT_TAR",
+    "ders": "TYT TARİH",
+    "shortName": "TYT TAR",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 45
+  },
+  {
+    "subjectId": "TYT_TURKCE",
+    "ders": "TYT TÜRKÇE",
+    "shortName": "TYT TÜRKÇE",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 360
+  },
+  {
+    "subjectId": "YDT_ING",
+    "ders": "YDT İNGİLİZCE",
+    "shortName": "YDT İNG",
+    "termOrder": null,
+    "kredi": 1,
+    "questionCount": 720
+  }
+]

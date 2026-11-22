@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { isolateRemoteData } from './fixtures/network.js';
-import { StorageKeys } from '../../src/shared/storage-keys.ts';
+import { StorageKeys, progressStorageKey } from '../../src/shared/storage-keys.ts';
 
 const TEST_AUTH_SESSION = JSON.stringify({
   accessToken: 'e2e-test-token',
@@ -17,9 +17,10 @@ test.beforeEach(async ({ page }) => {
 });
 
 async function enterSinglePlayer(page) {
-  await page.locator('[data-action="welcome-start-single"]').click();
-  await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
+  await page.locator('#btnBottomQuestions').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
+  await page.locator('#topCenterBadge').click();
+  await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
   await page.locator('.btn-close-drawer[data-action="close-subject-drawer"]').click();
 }
 
@@ -33,24 +34,26 @@ test('karşılama portalı ilk açılışı sade tutar ve program seçimini ders
   await page.goto('/');
 
   await expect(page.locator('#welcomePortal')).toBeVisible();
-  await expect(page.locator('#welcomePortal h1')).toHaveText('CENKS');
+  await expect(page.locator('#welcomePortal h1')).toHaveText('anlatansorular.com');
   await expect(page.locator('.welcome-kicker')).toHaveCount(0);
   await expect(page.locator('#welcomeUserName')).toHaveCount(0);
+  await expect(page.locator('[data-action="welcome-start-single"]')).toHaveCount(0);
+  await expect(page.locator('#welcomePortal [data-program]')).toHaveCount(0);
   await expect(page.locator('#bookletPagesContainer')).toBeHidden();
   await expect(page.locator('.booklet-question')).toHaveCount(0);
   await expect(page.locator('.top-center-badge-container')).toBeHidden();
-  await expect(page.locator('#btnResumeLastSession')).toBeEnabled();
-  const actionHeights = await page.locator('.welcome-action-row:visible').evaluateAll(rows =>
-    rows.map(row => row.getBoundingClientRect().height)
-  );
-  expect(new Set(actionHeights).size).toBe(1);
+  await expect(page.locator('.bottom-navigation')).toBeVisible();
 
-  await page.locator('#welcomePortal [data-program="AOF"]').click();
-  await expect(page.locator('#welcomePortal [data-program="AOF"]')).toHaveClass(/active/);
-  await page.locator('[data-action="welcome-start-single"]').click();
+  await page.locator('#btnMasterConsole').click();
+  await page.locator('#btnOpenProfileScreen').click();
+  await page.locator('#btnProfileEditMode').click();
+  await page.locator('#profileProgramSelector [data-program="AOF"]').click();
+  await expect(page.locator('#profileProgramSelector [data-program="AOF"]')).toHaveClass(/active/);
+  await page.locator('#btnBottomQuestions').click();
+  await page.locator('#topCenterBadge').click();
   await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
   await expect(page.locator('#btnProgramAof')).toHaveCount(0);
-  await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || 'null')?.subject, StorageKeys.RESUME_STATE)).toBe('AOF_HADIS');
+  await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || 'null')?.subject, progressStorageKey(StorageKeys.RESUME_STATE, 'account:e2e-user-1'))).toBe('AOF_HADIS');
   await expect(page.locator('.top-center-badge-container')).toBeVisible();
 
   await page.locator('.btn-close-drawer[data-action="close-subject-drawer"]').click();
@@ -76,6 +79,17 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await page.reload();
   await enterSinglePlayer(page);
   await expect(page.locator(`.booklet-question[data-qid="${optionQid}"] .optical-choice-row[data-letter="${optionLetter}"]`)).toHaveClass(/marked/);
+  const savedCard = page.locator(`.booklet-question[data-qid="${optionQid}"]`);
+  await savedCard.locator(`.optical-choice-row[data-letter="${optionLetter}"]`).click();
+  await page.waitForTimeout(400);
+  const otherOption = savedCard.locator(`.optical-choice-row:not([data-letter="${optionLetter}"])`).first();
+  await otherOption.click();
+  await page.waitForTimeout(400);
+  await otherOption.click();
+  await expect(savedCard).toHaveAttribute('data-user-mark', optionLetter);
+  await page.locator('#btnUnifiedTrigger').click();
+  await expect(page.locator('#btnUnifiedInstitution')).toContainText('Kurs');
+  await page.locator('#btnUnifiedTrigger').click();
   await page.locator('#btnMasterConsole').click();
   await expect(page.locator('[data-action="open-pdf-dialog"]')).toContainText('PDF / Yazdır');
   await page.locator('#btnMasterConsole').click();
@@ -113,7 +127,7 @@ test('ders, arama, cevaplar, görünüm ve İngilizce araçları çalışır', a
   await expect(page.locator('.optical-choice-row.marked-incorrect').first()).toBeVisible();
   await page.locator('#btnMasterConsole').click();
   await page.locator('[data-action="cycle-theme-mode"]').click();
-  await expect(page.locator('body')).toHaveClass(/dark-mode/);
+  await expect(page.locator('body')).not.toHaveClass(/dark-mode/);
   for (let i = 0; i < 3; i++) {
     await page.locator('[data-action="cycle-column-count"]').click();
   }
@@ -202,7 +216,7 @@ test('çoklu branş, çoklu kademe ve çoklu konu seçimi kitapçığı güncell
   await page.locator('#topCenterBadge').click();
   await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
 
-  await expect(page.locator('.drawer-header-brand')).toHaveText('CENKS');
+  await expect(page.locator('.drawer-header-brand')).toHaveText('ANLATAN SORULAR');
   await expect(page.locator('.drawer-header #programToggleGroup')).toHaveCount(0);
 
   // TDE'de varsayılan olarak Dönemler sekmesinin ve çıkmış sınavların açıldığını doğrula

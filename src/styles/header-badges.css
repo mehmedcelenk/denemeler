@@ -1,25 +1,23 @@
 /* ========================================================= */
-/* 2. NAVBARSIZ ÜST ORTA BAŞLIK & EZAN VAKTİ HAPLARI         */
+/* 2. ÜST ORTA DERS SEÇİMİ & SAĞ ÜST YILDIZ SKORU ROZETLERİ  */
 /* ========================================================= */
 .top-center-badge-container {
   position: fixed;
   top: calc(14px + var(--safe-top));
-  left: 50%;
-  transform: translateX(-50%);
-  width: max-content;
-  max-width: calc(100vw - 16px);
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 38px;
   z-index: 1000;
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex-wrap: nowrap;
   justify-content: center;
   pointer-events: none;
   transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
 }
 
 body.fullscreen-focus-mode .top-center-badge-container {
-  transform: translateX(-50%) translateY(-130%);
+  transform: translateY(-140%);
   opacity: 0;
   pointer-events: none;
 }
@@ -109,30 +107,42 @@ body.fullscreen-focus-mode .top-center-badge-container {
   font-weight: 700;
 }
 
-/* Su Damlası Serisi Rozeti - Çerçevesiz Sade Sayı */
+/* Yıldız Skoru Rozeti (Sağ Üst) */
 .top-streak-pill {
+  position: absolute;
+  top: 4px;
+  right: 16px;
   pointer-events: auto;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  padding: 4px 6px;
+  border: 1px solid rgba(2, 132, 199, 0.22);
+  background: color-mix(in srgb, var(--paper-bg, #ffffff) 82%, var(--brand-accent, #0284c7));
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 9999px;
+  padding: 4px 11px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 5px;
   font-size: 13px;
   font-weight: 800;
   white-space: nowrap;
-  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
   color: #0284c7;
-  min-height: auto;
+  min-height: 30px;
   flex: 0 0 auto;
+  user-select: none;
 }
 
 body.dark-mode .top-streak-pill {
+  border-color: rgba(56, 189, 248, 0.28);
+  background: rgba(15, 23, 42, 0.72);
   color: #38bdf8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.top-streak-pill:not(.has-streak) {
+  opacity: 0.78;
 }
 
 .streak-icon {
@@ -142,18 +152,17 @@ body.dark-mode .top-streak-pill {
 
 .streak-count {
   font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
   font-size: 12.5px;
   font-weight: 800;
 }
 
 .top-streak-pill.streak-pulse {
-  animation: streakWaterDrop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-color: #0284c7;
-  box-shadow: 0 0 16px rgba(2, 132, 199, 0.35);
+  animation: starScorePulse 0.48s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@keyframes streakWaterDrop {
+@keyframes starScorePulse {
   0% { transform: scale(1); }
-  50% { transform: scale(1.22); }
+  50% { transform: scale(1.18); }
   100% { transform: scale(1); }
 }

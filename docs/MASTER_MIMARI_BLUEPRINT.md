@@ -13,7 +13,7 @@
 | Durum ve olaylar | Durum mutasyonları `src/app/state.ts` içindeki `store` üzerinden yapılır; tipler `state-types.ts`, olaylar `state-events.ts` içindedir. Eski tip importları yeniden dışa aktarılır. |
 | Cevap ve kart uzantıları | Eklentiler cevap olayları ve `src/features/booklet/card-hooks.ts` kancalarıyla bağlanır. `tests/jenga-core.test.ts` eklentiler başlatılmadan kart üretimini ve cevap kaydını doğrular. |
 | Arayüz eylemleri | `src/app/actions.ts` kayıtları özelliklerin `init` modüllerinde yapılır; `events.js` delegasyon ve mevcut inline olay uyumluluğu sınırıdır. |
-| Kalıcılık | Doğrudan tarayıcı depolaması yalnızca `src/app/storage.ts` içindedir. Anahtar değerleri `src/shared/storage-keys.ts` ve katı sözleşme testleriyle korunur. Kullanıcı verisi taşınmaz. |
+| Kalıcılık | Doğrudan tarayıcı depolaması yalnızca `src/app/storage.ts` içindedir. Mantıksal anahtar değerleri `src/shared/storage-keys.ts` ve katı sözleşme testleriyle korunur. Misafir/hesap çalışma verisi sahip bazlı ad alanına yönlenir; eski veriler silinmeden kopyalanır ([oturum sözleşmesi](GUEST_SESSION.md)). |
 | Veri katmanı | `src/data/questions.js` soruları döndürür; state'e ekleme çağıran tarafa aittir. Önbellek ve eşzamanlı promise paylaşımı korunur; `data → app` bağımlılığı yasaktır. |
 | Satır payı | Kaynak JS/TS/CSS dosyalarında üst sınır 300 satırdır. Mimari denetim aşımı hata sayar; sorumluluk bazlı bölme kullanılır. |
 | TTS yardımcıları | API route'u `functions/api/tts.ts`, sağlayıcı yardımcıları route dizini dışındaki `edge/tts-providers.ts` içindedir. |
@@ -21,6 +21,14 @@
 `scripts/check-architecture.js` çekirdek/eklenti ve uygulama/eklenti sınırlarını, katmanları, döngüleri, depolama kapısını ve satır sınırını denetler. `npm run check` lint, strict TypeScript, mimari kontrol ve 29 test dosyasını; `npm run build` bunların ardından üretim çıktısını doğrular. Son Faz 6 tarayıcı doğrulaması 12/12 geçmiştir; yalnızca belge değiştiren Faz 8'de E2E yeniden çalıştırılmaz.
 
 Nihai kabul: `npm run check` ve `npm run build` başarılı, mimari hata sayısı 0, 29/29 test dosyası yeşil. Mevcut tek mimari uyarı `bootstrap.js` dosyasındaki 28 doğrudan bağımlılıktır; bu, eklentilerin bağlandığı bileşim noktasıdır. Tüm eklenti kombinasyonlarının fiziksel olarak silinmesi bu kabulün test kapsamı değildir; otomatik Jenga güvencesi çekirdeğin eklenti başlangıçları olmadan çalışması ve import sınırlarıyla ölçülür.
+
+### Misafir erişimi eki — 2026-11-18
+
+`welcome/study-session.ts` bireysel çalışma hakkını gerçek hesap kimliğinden ayırır.
+Sahip ve işlem nesli merkezi state'tedir; depolama kapısı ilerlemeyi misafir/hesap
+bazında ayırır. Bulut ve oda kayıtları gerçek hesap gerektirir, geç yanıtlar işlem
+nesliyle sınırlandırılır. Eski anahtarlar korunur; geçiş ve sekmeler arası davranışın
+güncel ayrıntıları [GUEST_SESSION.md](GUEST_SESSION.md) içindedir.
 
 ---
 

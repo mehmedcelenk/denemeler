@@ -9,10 +9,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 14,
-    "tanim": "Siyasi ve fikrî tartışmalardan doğan inanç ekolleridir: **Hariciler** büyük günah işleyeni tekfir eden (kâfir sayan) katı uç; **Mürcie** ise 'İmanla beraber hiçbir günah zarar vermez' diyerek ameli tamamen erteleyen gevşek uçtur.\n💡 Sınav Şifresi: **Ehl-i Sünnet** orta yolu (itidali) temsil eder: *Büyük günah işleyen dinden çıkmaz, günahkâr mümin (fâsık) olur*!",
+    "tanim": "Siyasi ve fikrî tartışmalardan doğan inanç ekolleridir: **Hariciler** büyük günah işleyeni tekfir eden (kâfir sayan) katı uç; **Mürcie** ise 'İmanla beraber hiçbir günah zarar vermez' diyerek ameli tamamen erteleyen gevşek uçtur.\n💡 Hile: **Ehl-i Sünnet** orta yolu (itidali) temsil eder: *Büyük günah işleyen dinden çıkmaz, günahkâr mümin (fâsık) olur*!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "dinî yorum[a-zçğıöşü]*|itikadî mezhepler|haricilik|mürcie|zeydiyye|imamiyye|selefiyye|selef|iman-amel ilişkisi|büyük günah|kebîre|mürtekib-i kebire",
+    "pattern": "\\bdinî yorum[a-zçğıöşü]*|\\bitikadî mezhepler\\b|\\bharicilik\\b|\\bmürcie\\b|\\bzeydiyye\\b|\\bimamiyye\\b|\\bselefiyye\\b|\\bselef\\b|\\biman-amel ilişkisi\\b|\\bbüyük günah\\b|\\bkebîre\\b|\\bmürtekib-i kebire\\b",
     "aliases": []
   },
   {
@@ -25,10 +25,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 68,
-    "tanim": "**Deizm** Allah'ın evreni tıpkı kurulu bir saat gibi yaratıp sonra kenara çekildiğini (vahiy, peygamber ve mucize göndermediğini) iddia eder; **Agnostisizm (Bilinemezcilik)** ise Tanrı'nın varlığının veya yokluğunun bilinemeyeceğini savunur.\n💡 Sınav Şifresi: **Tanrı var ama din/peygamber yok $\\to$ Deizm**; **Bilemeyiz/Şüphe $\\to$ Agnostisizm**; **Hiçbir değer ve anlam yok $\\to$ Nihilizm**; **Yalnız madde ve deney var $\\to$ Pozitivizm/Materyalizm**!",
+    "tanim": "**Deizm** Allah'ın evreni tıpkı kurulu bir saat gibi yaratıp sonra kenara çekildiğini (vahiy, peygamber ve mucize göndermediğini) iddia eder; **Agnostisizm (Bilinemezcilik)** ise Tanrı'nın varlığının veya yokluğunun bilinemeyeceğini savunur.\n💡 Hile: **Tanrı var ama din/peygamber yok $\\to$ Deizm**; **Bilemeyiz/Şüphe $\\to$ Agnostisizm**; **Hiçbir değer ve anlam yok $\\to$ Nihilizm**; **Yalnız madde ve deney var $\\to$ Pozitivizm/Materyalizm**!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "\\bdeizm\\b|\\bagnostisizm\\b|\\bsekülerizm\\b|\\bpozitivizm\\b|\\bnihilizm\\b|kötülük problemi|reenkarnasyon",
+    "pattern": "\\bdeizm\\b|\\bagnostisizm\\b|\\bsekülerizm\\b|\\bpozitivizm\\b|\\bnihilizm\\b|\\bkötülük problemi\\b|\\breenkarnasyon\\b",
     "aliases": []
   },
   {
@@ -41,7 +41,7 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 104,
-    "tanim": "İnsanın vefatından kıyametin kopup yeniden diriltileceği güne kadar geçirdiği ara âleme **Berzah (Kabir Hayatı)**; İsrafil meleğin Sûr'a ikinci kez üflemesiyle bedenlerin yeniden diriltilmesine **Ba's** denir.\n💡 Sınav Şifresi: **Berzah** = Dünya ile ahiret arasındaki bekleme koridoru; **Ba's** = Ölümden sonra diriliş (*Ba'sü ba'de'l-mevt*).",
+    "tanim": "İnsanın vefatından kıyametin kopup yeniden diriltileceği güne kadar geçirdiği ara âleme **Berzah (Kabir Hayatı)**; İsrafil meleğin Sûr'a ikinci kez üflemesiyle bedenlerin yeniden diriltilmesine **Ba's** denir.\n💡 Hile: **Berzah** = Dünya ile ahiret arasındaki bekleme koridoru; **Ba's** = Ölümden sonra diriliş (*Ba'sü ba'de'l-mevt*).",
     "baglam_farki": null,
     "sinav_ipucu": null,
     "pattern": "\\bberzah\\b|\\bba's\\b",
@@ -57,10 +57,27 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 108,
-    "tanim": "Diriltilen insanların hesap vermek üzere toplanmasına **Haşr** (toplanılan büyük meydana **Mahşer**); amellerin tartıldığı ilahi adalet terazisine **Mizan**; cehennem üzerindeki köprüye **Sırat**; Hz. Peygamber'in müminlerin bağışlanması için Allah'tan izinle aracılık etmesine **Şefaat** denir.\n💡 Sınav Şifresi: **Haşr** = Toplanma, **Mahşer** = Meydan, **Mizan** = Terazi!",
+    "tanim": "Diriltilen insanların hesap vermek üzere toplanmasına **Haşr** (toplanılan büyük meydana **Mahşer**); amellerin tartıldığı ilahi adalet terazisine **Mizan**; cehennem üzerindeki köprüye **Sırat**; Hz. Peygamber'in müminlerin bağışlanması için Allah'tan izinle aracılık etmesine **Şefaat** denir.\n💡 Hile: **Haşr** = Toplanma, **Mahşer** = Meydan, **Mizan** = Terazi!",
     "baglam_farki": null,
     "sinav_ipucu": null,
     "pattern": "\\bhaşr\\b|\\bmahşer\\b|\\bmizan\\b|\\bsırat\\b|\\bşefaat\\b",
     "aliases": []
+  },
+  {
+    "id": "klm_cagdas_inanclar",
+    "base_id": "klm_cagdas_inanclar",
+    "term": "Çağdaş İnanç Akımları (Deizm, Ateizm, Agnostisizm, Politeizm)",
+    "subject": "KLM",
+    "ders": "KLM – 2",
+    "ders_kodu": null,
+    "donem": 2,
+    "unite_no": null,
+    "sayfa": 60,
+    "tanim": "Deizm Tanrı'yı kabul edip dini reddeder; Ateizm Tanrı'yı inkar eder; Agnostisizm bilinemezcilik; Politeizm çoktanrıcılıktır.\n💡 Hile: 'Tanrı var ama peygamber/din yok' = **Deizm**. 'Tanrı kesinlikle yok' = **Ateizm**. 'Bilinemez, şüphedeyiz' = **Agnostisizm**. 'Çok ilah var' = **Politeizm**.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bdeizm[a-zçğıöşü]*\\b|\\bateizm[a-zçğıöşü]*\\b|\\bagnostisizm[a-zçğıöşü]*\\b|\\bpoliteizm[a-zçğıöşü]*\\b|\\bteizm[a-zçğıöşü]*\\b|\\bDeizm\\b|\\bAteizm\\b|\\bAgnostisizm\\b|\\bPoliteizm\\b|\\bTeizm\\b",
+    "aliases": [],
+    "option_only_pattern": "^Deizm$|^Ateizm$|^Agnostisizm$|^Politeizm$|^Teizm$"
   }
 ]

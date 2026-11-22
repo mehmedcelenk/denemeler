@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Design Guidelines"
+  short_description: "Project-specific web design guidelines"
+  default_prompt: "Use $web-design-guidelines for the requested work in this repository."

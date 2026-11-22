@@ -1,4 +1,10 @@
-import { StorageKeys, type StorageKey } from '../shared/storage-keys.ts';
+import { StorageKeys, progressStorageKey, progressKeys, type ProgressOwner, type StorageKey } from '../shared/storage-keys.ts';
+
+// The provider reads the central store; this module owns no session state.
+let progressOwner: () => ProgressOwner = () => 'legacy';
+export function bindProgressOwner(provider: () => ProgressOwner): void { progressOwner = provider; }
+let progressReady: () => boolean = () => true;
+export function bindProgressReady(provider: () => boolean): void { progressReady = provider; }
 
 const fixedKeys = new Set<string>(Object.values(StorageKeys));
 const classroomSyncPrefix = `sync_${StorageKeys.CLASSROOM_CHANNEL_PREFIX}`;
@@ -18,8 +24,15 @@ function getStorage(): Storage | null {
 
 export function readString(key: StorageKey): string | null {
   if (!isSupportedKey(key)) return null;
+  if (progressKeys.has(key) && progressOwner() === 'locked') return null;
   try {
-    return getStorage()?.getItem(key) ?? null;
+    const target = getStorage();
+    const owner = progressOwner();
+    const value = target?.getItem(progressStorageKey(key, owner)) ?? null;
+    if (value === null && target && !progressReady() && owner.startsWith('account:')
+      && key !== StorageKeys.ANSWER_LOCK_UNTIL && progressKeys.has(key)
+      && target.getItem(StorageKeys.LEGACY_PROGRESS_OWNER) === owner.slice(8)) return target.getItem(key);
+    return value;
   } catch {
     return null;
   }
@@ -41,7 +54,8 @@ export function writeString(key: StorageKey, value: string): boolean {
   try {
     const target = getStorage();
     if (!target) return false;
-    target.setItem(key, value);
+    if (progressKeys.has(key) && (progressOwner() === 'locked' || !progressReady())) return false;
+    target.setItem(progressStorageKey(key, progressOwner()), value);
     return true;
   } catch {
     return false;
@@ -59,8 +73,9 @@ export function writeJson(key: StorageKey, value: unknown): boolean {
 
 export function remove(key: StorageKey): void {
   if (!isSupportedKey(key)) return;
+  if (progressKeys.has(key) && (progressOwner() === 'locked' || !progressReady())) return;
   try {
-    getStorage()?.removeItem(key);
+    getStorage()?.removeItem(progressStorageKey(key, progressOwner()));
   } catch {}
 }
 
@@ -86,4 +101,24 @@ export function writeSessionJson(key: StorageKey, value: unknown): boolean {
 export function removeSession(key: StorageKey): void {
   if (!isSupportedKey(key)) return;
   try { if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem(key); } catch {}
+}
+
+/** Copy once, keep legacy originals, never adopt legacy account data into guest. */
+export function migrateLegacyProgress(userId: string): boolean {
+  const target = getStorage();
+  if (!target) return false;
+  try {
+    const claimed = target.getItem(StorageKeys.LEGACY_PROGRESS_OWNER);
+    if (claimed && claimed !== userId) return true;
+    if (target.getItem(StorageKeys.LEGACY_PROGRESS_COMPLETE) === userId) return true;
+    if (!claimed) target.setItem(StorageKeys.LEGACY_PROGRESS_OWNER, userId);
+    for (const key of progressKeys) {
+      if (claimed && key === StorageKeys.ANSWER_LOCK_UNTIL) continue;
+      const destination = progressStorageKey(key, `account:${userId}`);
+      const old = target.getItem(key);
+      if (old !== null && target.getItem(destination) === null) target.setItem(destination, old);
+    }
+    target.setItem(StorageKeys.LEGACY_PROGRESS_COMPLETE, userId);
+    return true;
+  } catch { return false; }
 }

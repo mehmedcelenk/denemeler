@@ -1,0 +1,116 @@
+{
+  "reviewed_on": "2026-11-18",
+  "scope": "repository",
+  "skills": [
+    {
+      "name": "codebase-design",
+      "repository": "https://github.com/mattpocock/skills",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "path": "skills/engineering/codebase-design",
+      "stars_at_review": 327340,
+      "license": "MIT",
+      "upstream_skill_sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "repository": "https://github.com/mattpocock/skills",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "path": "skills/engineering/improve-codebase-architecture",
+      "stars_at_review": 327340,
+      "license": "MIT",
+      "upstream_skill_sha256": "35b03a3db61e0f5aa333ea59b54963e45a3d2ace6649b2ef4f9576603e2582a6",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "api-and-interface-design",
+      "repository": "https://github.com/addyosmani/agent-skills",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+      "path": "skills/api-and-interface-design",
+      "stars_at_review": 118888,
+      "license": "MIT",
+      "upstream_skill_sha256": "cc5e2166c484b2c297e8253f56e7525e5031f81d66101ca4e760ef378ea6bad0",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "code-review-and-quality",
+      "repository": "https://github.com/addyosmani/agent-skills",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+      "path": "skills/code-review-and-quality",
+      "stars_at_review": 118888,
+      "license": "MIT",
+      "upstream_skill_sha256": "5dc8f98d9d23e74676091a945b2649bb52456e34f293238ee2511281104a94c0",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "code-simplification",
+      "repository": "https://github.com/addyosmani/agent-skills",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+      "path": "skills/code-simplification",
+      "stars_at_review": 118888,
+      "license": "MIT",
+      "upstream_skill_sha256": "e13b433345e6bf425c3625442ac1b3507b371c18d7ea3e3db822da7a7f742a29",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "systematic-debugging",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "path": "skills/systematic-debugging",
+      "stars_at_review": 319887,
+      "license": "MIT",
+      "upstream_skill_sha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "verification-before-completion",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "path": "skills/verification-before-completion",
+      "stars_at_review": 319887,
+      "license": "MIT",
+      "upstream_skill_sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "project-architect",
+      "repository": "https://github.com/ersinkoc/project-architect",
+      "commit": "220653ca9a0c47f8bf3f0c2cc35f9faf688e4169",
+      "path": ".",
+      "stars_at_review": 259,
+      "license": "MIT",
+      "upstream_skill_sha256": "8e253a88a4561732512047e4fe548b5c620fca12fed6d6af8cb7e3e0de1ff497",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "security-check",
+      "repository": "https://github.com/ersinkoc/security-check",
+      "commit": "6a7d7461ab8f4e9ea823bf77c4cf05c9671a9bf6",
+      "path": ".",
+      "stars_at_review": 86,
+      "license": "MIT",
+      "upstream_skill_sha256": "1c1cf78a76a36a1293bb0d2d43ee27e939fd7b0c3c513f664ab4503099338d63",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "frontend-design",
+      "repository": "https://github.com/anthropics/skills",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "path": "skills/frontend-design",
+      "stars_at_review": 197954,
+      "license": "Apache-2.0",
+      "upstream_skill_sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    },
+    {
+      "name": "web-design-guidelines",
+      "repository": "https://github.com/vercel-labs/web-interface-guidelines",
+      "commit": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "path": ".",
+      "stars_at_review": 1223,
+      "license": "MIT",
+      "upstream_skill_sha256": "d246b026f4f29b5823a9cc857f9edf3d2507002e055e32040cadeaf3b38e0234",
+      "adaptation": "Project-specific entrypoint; original retained as UPSTREAM.md for source comparison only."
+    }
+  ]
+}

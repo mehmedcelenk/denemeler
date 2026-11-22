@@ -20,7 +20,7 @@ function renderTopicStatBadge(t: AggregatedTopic): string {
     return `<span class="topic-error-badge room" title="Oda Hatası: ${t.roomWrong}">👥 ${t.roomWrong}Y</span>`;
   }
   if (t.instWrong && t.instWrong > 0) {
-    return `<span class="topic-error-badge inst" title="Kurum Hatası: ${t.instWrong}">🔥 ${t.instWrong}Y</span>`;
+    return `<span class="topic-error-badge inst" title="Kurs Hatası: ${t.instWrong}">🔥 ${t.instWrong}Y</span>`;
   }
   return '';
 }

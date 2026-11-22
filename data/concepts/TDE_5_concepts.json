@@ -9,10 +9,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 22,
-    "tanim": "**Fotoğraf makinesi** gibi çalışan akım: yazar kendi duygularını saklar, sadece gözlediği gerçeği **nesnel** biçimde çeker. Tıpkı bir **güvenlik kamerasının** olayı yorum katmadan kaydetmesi gibi.\n💡 Sınav Şifresi: **Pozitivizm + gözlem + nesnellik + yazar silinir**. 'Kamera gerçekliği' ve 'yazar kişiliğini gizler' ifadeleri Realizmin parmak izidir.",
+    "tanim": "**Fotoğraf makinesi** gibi çalışan akım: yazar kendi duygularını saklar, sadece gözlediği gerçeği **nesnel** biçimde çeker. Tıpkı bir **güvenlik kamerasının** olayı yorum katmadan kaydetmesi gibi.\n💡 Hile: 'Kamera Gözü': Realizmde yazar **YOKTUR**, sadece kamera (gözlem) vardır. Soruda 'öznel', 'duygu', 'hayal', 'idealize' kelimeleri varsa Realizm DEĞİLDİR. 'Nesnel', 'gözlem', 'bilimsel', 'gerçekçi' varsa Realizm'dir. Yazarın müdahalesi = Realizm düşmanı.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Realizm$|\\\\\\\\brealizm akımı\\\\\\\\b|\\\\\\\\brealist\\\\\\\\b",
+    "pattern": "\\brealizm[a-zçğıöşü]*\\b|\\brealist\\b",
     "aliases": []
   },
   {
@@ -25,10 +25,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 20,
-    "tanim": "**18. yüzyıl sonunda** Klasisizme tepki olarak doğan akım: **duygu, hayal ve coşku** ön planda, iyi-kötü gibi **zıtlıklar** keskin, kural tanımaz. Tıpkı Yunus Emre'nin coşkun ilahileri gibi kalpten gelen, akıl yerine hisse teslim olan bir edebiyat.\n💡 Sınav Şifresi: **Klasisizme tepki + duygu/hayal + zıtlık (iyi-kötü) + kural tanımazlık**. 'Akıl yerine duygu' ve 'coşumculuk' anahtarı Romantizmi ele verir.",
+    "tanim": "**18. yüzyıl sonunda** Klasisizme tepki olarak doğan akım: **duygu, hayal ve coşku** ön planda, iyi-kötü gibi **zıtlıklar** keskin, kural tanımaz. Tıpkı Yunus Emre'nin coşkun ilahileri gibi kalpten gelen, akıl yerine hisse teslim olan bir edebiyat.\n💡 Hile: 'Kalp vs Akıl': Klasisizm = Akıl/Kural. Romantizm = Kalp/Kural Yok. Soruda 'kural', 'akıl', 'ideal' varsa Klasisizm; 'duygu', 'hayal', 'zıtlık', 'kural tanımaz' varsa **Romantizm**'dir. Romantizm, Klasisizmin tam tersidir (Negatif Fotoğraf gibi).",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Romantizm$|\\\\\\\\bromantizm akımı\\\\\\\\b|\\\\\\\\bromantik\\\\\\\\b",
+    "pattern": "\\bromantizm[a-zçğıöşü]*\\b|\\bromantik\\b",
     "aliases": []
   },
   {
@@ -41,10 +41,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 18,
-    "tanim": "**17. yüzyıl Fransa'sında** doğan kuralcı akım: **akıl, sağduyu ve biçim kusursuzluğu** esas; konular mitoloji ve tarihten, dil soylu ve ölçülüdür. Tıpkı bir **saray protokolü** gibi, her şeyin değişmez bir usulü vardır.\n💡 Sınav Şifresi: **Akıl + sağduyu + kuralcılık + biçim mükemmelliği + 17. yy Fransa**. 'Değişmez kurallar' ve 'ahlaki erdem' ifadeleri Klasisizmi ayırt ettirir.",
+    "tanim": "**17. yüzyıl Fransa'sında** doğan kuralcı akım: **akıl, sağduyu ve biçim kusursuzluğu** esas; konular mitoloji ve tarihten, dil soylu ve ölçülüdür. Tıpkı bir **saray protokolü** gibi, her şeyin değişmez bir usulü vardır.\n💡 Hile: Klasisizm'i asla Natüralizm'le karıştırma: **Klasisizm = 'Kural'** (K harfi Kural'ı hatırlatır) → akıl + sağduyu + değişmez kurallar + 17. yy Fransa. Sınavda 'kural', 'akıl', 'sağduyu', 'biçim mükemmelliği' kelimelerinden **ikisini** görürsen gözün kapalı Klasisizm'i işaretle; 'bilim/deneysel' kelimesi geçiyorsa o Natüralizm'dir, kay.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Klasisizm$|\\\\\\\\bklasisizm akımı\\\\\\\\b|\\\\\\\\bklasik akım\\\\\\\\b",
+    "pattern": "\\bklasisizm[a-zçğıöşü]*\\b|\\bklasik\\s+akım\\b",
     "aliases": []
   },
   {
@@ -57,10 +57,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 24,
-    "tanim": "Realizmin **bilim laboratuvarına** girmiş hâli: insanı **soyaçekim ve çevrenin** belirlediğine inanır, romanı bir **deney** gibi kurar (Zola). Tıpkı bir **genetik testin** sonucu önceden söylemesi gibi, karakterin kaderi de bellidir.\n💡 Sınav Şifresi: **Determinizm + soyaçekim + deneysel roman + Emile Zola**. 'Realizmin ileri aşaması' ve 'bilimsel' kelimeleri Natüralizmin kodudur.",
+    "tanim": "Realizmin **bilim laboratuvarına** girmiş hâli: insanı **soyaçekim ve çevrenin** belirlediğine inanır, romanı bir **deney** gibi kurar (Zola). Tıpkı bir **genetik testin** sonucu önceden söylemesi gibi, karakterin kaderi de bellidir.\n💡 Hile: **Natüralizm = 'Natur' = Doğa = Bilim** → 'doğa bilimleri' insanı yönetir. Sınavda **'soyaçekim'** veya **'deneysel roman'** kelimesini gördüğün an dur, düşünme: Natüralizm. Realizm'den farkı tek kelimede: Realizm **gözlemler**, Natüralizm **deney yapar** (laboratuvar). 'Bilim' kelimesi varsa Natüralizm, yoksa Realizm.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Natüralizm$|^Naturalizm$|\\\\\\\\bnatüralizm akımı\\\\\\\\b",
+    "pattern": "\\bnatüralizm[a-zçğıöşü]*\\b|\\bnaturalizm[a-zçğıöşü]*\\b|\\bnatüralist\\b",
     "aliases": []
   },
   {
@@ -73,10 +73,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 26,
-    "tanim": "**Freud'un psikanalizine** yaslanan akım: bilinçaltı, rüyalar ve **serbest çağrışım** esas; akıl denetimi kapatılıp **otomatik yazı** ile zihinden geçenler kâğıda dökülür (André Breton). Tıpkı sinemadaki **flashback** sahneleri gibi, bilinçaltının görüntüleri yüzeye çıkar.\n💡 Sınav Şifresi: **Freud + bilinçaltı + rüya + serbest çağrışım + otomatik yazı**. 'Gerçeküstücülük' ve 'psikanaliz' anahtarıdır.",
+    "tanim": "**Freud'un psikanalizine** yaslanan akım: bilinçaltı, rüyalar ve **serbest çağrışım** esas; akıl denetimi kapatılıp **otomatik yazı** ile zihinden geçenler kâğıda dökülür (André Breton). Tıpkı sinemadaki **flashback** sahneleri gibi, bilinçaltının görüntüleri yüzeye çıkar.\n💡 Hile: **Sürrealizm = 'Sür' = Rüya** (S ve Rüya yan yana!) → rüya + bilinçaltı + Freud. Sınavda **'rüya'** veya **'bilinçaltı'** kelimesini gördüğün an Sürrealizm. Karıştırma tuzağı: Sembolizm'de 'sembol/musiki' vardır ama **rüya yoktur**; rüya varsa kesin Sürrealizm. 'Otomatik yazı' da Sürrealizm'in parmak izidir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Sürrealizm$|^Surrealizm$|\\\\\\\\bsürrealizm akımı\\\\\\\\b",
+    "pattern": "\\bsürrealizm[a-zçğıöşü]*\\b|\\bsurrealizm[a-zçğıöşü]*\\b|\\bsürrealist\\b",
     "aliases": []
   },
   {
@@ -89,10 +89,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 26,
-    "tanim": "**I. Dünya Savaşı'nın yıkımına** öfkeyle doğan akım: her türlü estetik kuralı ve dil düzenini **reddeder** (Tzara). Tıpkı bir **siber saldırganın** tüm sistemleri çökertmesi gibi, edebiyatın kurallarını dağıtır.\n💡 Sınav Şifresi: **I. Dünya Savaşı + kuralsızlık + dil düzeni reddi + Tristan Tzara**. 'Her şeyi reddeden' ve 'kuralsızlık' ifadesi Dadaizmi ele verir.",
+    "tanim": "**I. Dünya Savaşı'nın yıkımına** öfkeyle doğan akım: her türlü estetik kuralı ve dil düzenini **reddeder** (Tzara). Tıpkı bir **siber saldırganın** tüm sistemleri çökertmesi gibi, edebiyatın kurallarını dağıtır.\n💡 Hile: **Dadaizm = 'Dada' = Bebek sesi** → bebek gibi anlamsız, kuralsız, 'da-da' diyen bir akım. Sınavda **'reddeder'** veya **'kuralsızlık'** kelimesini gördüğün an Dadaizm. Klasisizm'in tam zıttı: Klasisizm 'kural koyar', Dadaizm 'kural yıkar'. 'Her şeyi reddeden' ifadesi = Dadaizm'in imzası.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Dadaizm$|\\\\\\\\bdadaizm akımı\\\\\\\\b",
+    "pattern": "\\bdadaizm[a-zçğıöşü]*\\b|\\bdadaist\\b",
     "aliases": []
   },
   {
@@ -105,10 +105,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 28,
-    "tanim": "Şiirde **anlam kapalılığı, musiki ve melankoli** esas: duygular doğrudan değil **sembollerle** anlatılır (Ahmet Haşim, Baudelaire). Tıpkı bir **şifreli mesaj** gibi, anlamı çözmek okuyucuya kalır.\n💡 Sınav Şifresi: **Anlam kapalılığı + musiki + sembol + Ahmet Haşim/Cenap Şahabettin/Baudelaire**. 'Şiirde musiki' ve 'simgelerle anlatım' Sembolizmin şifresidir.",
+    "tanim": "Şiirde **anlam kapalılığı, musiki ve melankoli** esas: duygular doğrudan değil **sembollerle** anlatılır (Ahmet Haşim, Baudelaire). Tıpkı bir **şifreli mesaj** gibi, anlamı çözmek okuyucuya kalır.\n💡 Hile: **Sembolizm = 'Sembol' = Şifre** → şifreli şiir, anlam kapalı. Sınavda **'musiki'** kelimesini şiirde gördüğün an Sembolizm (Parnasizm'de musiki değil 'tablo/resim' vardır!). Ayrıca **'Ahmet Haşim'** = Sembolizm'in Türk bayrağı; 'Haşim' görürsen Sembolizm, 'Tevfik Fikret' görürsen Parnasizm'e kay.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Sembolizm$|\\\\\\\\bsembolizm akımı\\\\\\\\b",
+    "pattern": "\\bsembolizm[a-zçğıöşü]*\\b|\\bsembolist\\b",
     "aliases": []
   },
   {
@@ -121,10 +121,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 28,
-    "tanim": "Romantik şiire tepki: şiirde dış dünyayı **nesnel tablolar** gibi çizmek ve **biçim mükemmelliği** hedef. Tıpkı bir **fotoğraf sergisindeki** kusursuz kareler gibi, her dize cilalanmış bir tablo.\n💡 Sınav Şifresi: **Şiirde gerçekçilik + nesnel tablo + biçim mükemmelliği + romantizme tepki**. 'Şiirde realizm' ifadesi Parnasizmin kısaltmasıdır.",
+    "tanim": "Romantik şiire tepki: şiirde dış dünyayı **nesnel tablolar** gibi çizmek ve **biçim mükemmelliği** hedef. Tıpkı bir **fotoğraf sergisindeki** kusursuz kareler gibi, her dize cilalanmış bir tablo.\n💡 Hile: **Parnasizm = 'Parna' = Fotoğraf/Pano** → şiirde **resim/tablo** çizmek. Sınavda **'nesnel tablo'** veya **'şiirde realizm'** kelimesini gördüğün an Parnasizm. Sembolizm'den farkı tek kelimede: Sembolizm **'musiki'** (kulak), Parnasizm **'tablo'** (göz). Gözle ilgili kelime = Parnasizm, kulakla ilgili = Sembolizm.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Parnasizm$|\\\\\\\\bparnasizm akımı\\\\\\\\b",
+    "pattern": "\\bparnasizm[a-zçğıöşü]*\\b|\\bparnasyen\\b",
     "aliases": []
   },
   {
@@ -137,10 +137,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 45,
-    "tanim": "İnsanın **psikolojisini, yalnızlığını ve iç çatışmalarını** merkeze alan hikâye anlayışı: olay değil, **iç dünya** anlatılır. Tıpkı bir **psikolog koltuğunda** hastanın iç dünyasının çözümlenmesi gibi.\n💡 Sınav Şifresi: **Psikolojik tahlil + iç çatışma + yalnızlık + bunalım**. 'Olay değil iç dünya' ve 'psikolojik tahlil' ifadeleri bu anlayışın kodudur.",
+    "tanim": "İnsanın **psikolojisini, yalnızlığını ve iç çatışmalarını** merkeze alan hikâye anlayışı: olay değil, **iç dünya** anlatılır. Tıpkı bir **psikolog koltuğunda** hastanın iç dünyasının çözümlenmesi gibi.\n💡 Hile: **'İç' kelimesi = İç dünya** → bireyin iç dünyası. Sınavda **'psikolojik tahlil'** veya **'iç çatışma'** kelimesini gördüğün an bu şık. Toplumcu gerçekçilikle karıştırma tuzağı: Toplumcu'da **'ağa-köylü/işçi'** vardır, bireyci'de **'yalnızlık/bunalım'** vardır. 'Bunalım' kelimesi = bireyin iç dünyası, 'sınıf çatışması' = toplumcu.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "bireyin iç dünyasını esas alan|bireyin iç dünyası",
+    "pattern": "\\bbireyin iç dünyasını esas alan\\b|\\bbireyin iç dünyası\\b",
     "aliases": []
   },
   {
@@ -153,11 +153,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 48,
-    "tanim": "**Köy, kasaba ve işçi sorunlarını**, ağa-köylü çatışmasını **ideolojik ve eleştirel** bir gerçekçilikle anlatan hikâye anlayışı. Tıpkı bir **sosyal medya kampanyasının** haksızlığı ifşa etmesi gibi, edebiyat da ezilenin sesi olur.\n💡 Sınav Şifresi: **Ağa-köylü çatışması + ezilen halk + ideolojik/eleştirel gerçekçilik**. 'Toplum sorunları' ve 'işçi-köylü' anahtarı bu anlayışı ayırt ettirir.",
+    "tanim": "**Köy, kasaba ve işçi sorunlarını**, ağa-köylü çatışmasını **ideolojik ve eleştirel** bir gerçekçilikle anlatan hikâye anlayışı. Tıpkı bir **sosyal medya kampanyasının** haksızlığı ifşa etmesi gibi, edebiyat da ezilenin sesi olur.\n💡 Hile: **'Toplum' kelimesi = Toplumcu** → toplum sorunları, ezilen halk. Sınavda **'ağa-köylü'** veya **'işçi'** kelimesini gördüğün an bu şık. Bireyin iç dünyasıyla karıştırma: Toplumcu'da **'sınıf/ağa/işçi'** (dış dünya), bireyci'de **'yalnızlık/psikoloji'** (iç dünya). 'Ezilen' kelimesi = toplumcu, 'bunalım' = bireyci.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Toplumcu gerçekçi$|\\\\\\\\btoplumcu gerçekçi\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bToplumcu gerçekçi\\b|\\btoplumcu gerçekçi\\b",
+    "aliases": [],
+    "option_only_pattern": "^Toplumcu gerçekçi$"
   },
   {
     "id": "tde5_modernist_hikaye",
@@ -169,11 +170,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 52,
-    "tanim": "**Modernist hikâye**, olayları baş-son düzeninde değil, sinemadaki **flashback** gibi kırık zaman dilimleriyle anlatır; karakterin iç dünyasını, yabancılaşmasını ve 'ben kimim?' sorusunu öne çıkarır. **Postmodernist hikâye** ise buna **üstkurmaca, parodi ve metinlerarasılık** oyunlarını ekler.\n💡 Sınav Şifresi: **Olay örgüsü kırılır + zaman-mekân belirsizleşir + iç monolog/bilinç akışı** üçlüsünü görürsen modernist; 'postmodern' şıkkı varsa **üstkurmaca/parodi** eklenmişse işaretle.",
+    "tanim": "**Modernist hikâye**, olayları baş-son düzeninde değil, sinemadaki **flashback** gibi kırık zaman dilimleriyle anlatır; karakterin iç dünyasını, yabancılaşmasını ve 'ben kimim?' sorusunu öne çıkarır. **Postmodernist hikâye** ise buna **üstkurmaca, parodi ve metinlerarasılık** oyunlarını ekler.\n💡 Hile: **Modernist = 'Modern' = Kırık zaman** → flashback, bilinç akışı, iç monolog. **Postmodernist = 'Post' = Üstüne ekleme** → üstkurmaca + parodi + metinlerarasılık. Sınavda **'üstkurmaca'** veya **'parodi'** kelimesini gördüğün an Postmodernist; sadece **'bilinç akışı/iç monolog'** varsa Modernist. Kısayol: 'oyun' kelimesi = postmodern, 'yabancılaşma' = modernist.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Modernist$|\\\\\\\\bmodernist hikâye\\\\\\\\b|\\\\\\\\bmodernizm\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bModernist\\b|\\bmodernist hikâye\\b|\\bmodernizm\\b",
+    "aliases": [],
+    "option_only_pattern": "^Modernist$"
   },
   {
     "id": "tde5_milli_dini_duyarlilik",
@@ -185,10 +187,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 50,
-    "tanim": "**Millî ve dinî duyarlılık**, tıpkı Yunus Emre'nin ya da Mehmet Akif'in kaleminde olduğu gibi, Türk tarihini ve İslam ahlakını **öğretici ve yüceltici** bir dille işleyip okuyucuda bilinç uyandırmayı amaçlar.\n💡 Sınav Şifresi: **Tarihî kahramanlık + ahlaki öğüt + toplumu bilinçlendirme** varsa bu şık; 'bireyin bunalımı' veya 'biçim oyunları' geçiyorsa modernist/postmodernist şıkkına kay.",
+    "tanim": "**Millî ve dinî duyarlılık**, tıpkı Yunus Emre'nin ya da Mehmet Akif'in kaleminde olduğu gibi, Türk tarihini ve İslam ahlakını **öğretici ve yüceltici** bir dille işleyip okuyucuda bilinç uyandırmayı amaçlar.\n💡 Hile: **'Millî' + 'Dinî' = İki M** → Mehmet Akif + Millî Mücadele. Sınavda **'tarihî kahramanlık'** veya **'ahlaki öğüt'** kelimesini gördüğün an bu şık. Modernist/postmodernist tuzak: Onlarda **'biçim oyunu/üstkurmaca'** vardır, burada **'öğretici/yüceltici'** vardır. 'Bilinçlendirme' kelimesi = millî-dinî duyarlılık, 'oyun' = postmodern.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "millî ve dinî duyarlılıkları yansıtan|milli ve dini duyarlılık",
+    "pattern": "\\bmillî ve dinî duyarlılıkları yansıtan\\b|\\bmilli ve dini duyarlılık\\b",
     "aliases": []
   },
   {
@@ -201,10 +203,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 54,
-    "tanim": "Sait Faik Abasıyanık'ın 1950'de yayımladığı **'Mahalle Kahvesi'**, sıradan emekçilerin ve mahalle insanının sıcak dünyasını **durum (kesit) hikâyesi** tekniğiyle anlatır; olay örgüsü değil, anlık bir kesit, atmosfer ve izlenim ön plandadır.\n💡 Sınav Şifresi: **1950 + durum hikâyesi + sıradan insan/emekçi** üçlüsünü görürsen Sait Faik'in 'Mahalle Kahvesi'ni işaretle; 'olay hikâyesi' veya 'Maupassant tarzı' şıkkı tuzaktır.",
+    "tanim": "Sait Faik Abasıyanık'ın 1950'de yayımladığı **'Mahalle Kahvesi'**, sıradan emekçilerin ve mahalle insanının sıcak dünyasını **durum (kesit) hikâyesi** tekniğiyle anlatır; olay örgüsü değil, anlık bir kesit, atmosfer ve izlenim ön plandadır.\n💡 Hile: **'Mahalle' = Sait Faik** → Sait Faik'in tüm hikâyeleri 'mahalle/sıradan insan' kokar. Sınavda **'durum hikâyesi'** veya **'kesit'** kelimesini gördüğün an Sait Faik'i işaretle. Olay hikâyesi (Maupassant tarzı) tuzağına düşme: **'Olay' varsa Maupassant/Ömer Seyfettin**, **'kesit/atmosfer' varsa Sait Faik/Çehov tarzı**. 'Mahalle' kelimesi = Sait Faik'in parmak izi.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "mahalle kahvesi",
+    "pattern": "\\bmahalle kahvesi\\b",
     "aliases": []
   },
   {
@@ -217,10 +219,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 56,
-    "tanim": "Hikâye ve tiyatroda usta olan Haldun Taner, Türk sahnesine **epik tiyatro** ve **kabare** anlayışını getiren isimdir; 'Keşanlı Ali Destanı' (epik tiyatro), 'Gözlerimi Kaparım Vazifemi Yaparım' ve 'Sersem Kocanın Kurnaz Karısı' onun imzasıdır.\n💡 Sınav Şifresi: **Epik tiyatro + kabare + Keşanlı Ali Destanı** üçlüsü = Haldun Taner. 'Vatan yahut Silistre' (Namık Kemal) veya 'Gölge Oyunu' gibi şıklarla karıştırma.",
+    "tanim": "Hikâye ve tiyatroda usta olan Haldun Taner, Türk sahnesine **epik tiyatro** ve **kabare** anlayışını getiren isimdir; 'Keşanlı Ali Destanı' (epik tiyatro), 'Gözlerimi Kaparım Vazifemi Yaparım' ve 'Sersem Kocanın Kurnaz Karısı' onun imzasıdır.\n💡 Hile: **'Keşanlı Ali' = Haldun Taner** → 'Keşan' kelimesini gördüğün an Haldun Taner. Sınavda **'epik tiyatro'** veya **'kabare'** kelimesini gördüğün an da Haldun Taner. Namık Kemal tuzağı: **'Vatan yahut Silistre' = Namık Kemal** (vatan şairi), **'Keşanlı Ali Destanı' = Haldun Taner** (epik tiyatro). 'Destan' kelimesi Haldun Taner'de tiyatro eseri adıdır, gerçek destan değildir — bu tuzağa düşme!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "haldun taner",
+    "pattern": "\\bhaldun taner\\b",
     "aliases": []
   },
   {
@@ -233,10 +235,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 80,
-    "tanim": "Şinasi, Namık Kemal ve Ziya Paşa'nın öncülük ettiği bu dönemde şiir, **'toplum için sanat'** ilkesiyle hürriyet, vatan, adalet ve millet gibi toplumsal kavramlara yönelir; dil sadeleşmeye başlar, divan şiiri biçimleri korunur.\n💡 Sınav Şifresi: **Toplum için sanat + hürriyet/vatan/adalet + Şinasi-Namık Kemal-Ziya Paşa** = 1. Dönem. 'Sanat için sanat' görürsen hemen 2. Dönem'e geç.",
+    "tanim": "Şinasi, Namık Kemal ve Ziya Paşa'nın öncülük ettiği bu dönemde şiir, **'toplum için sanat'** ilkesiyle hürriyet, vatan, adalet ve millet gibi toplumsal kavramlara yönelir; dil sadeleşmeye başlar, divan şiiri biçimleri korunur.\n💡 Hile: **1. Dönem = 'Vatan Hürriyet' (VH) + ŞNZ (Şinasi-Namık-Ziya).** Akılda tut: 1. Dönem şairleri 'Vatan'ı kurtarmaya çalışır, 2. Dönem şairleri 'Kendini' (ölüm/aşk) sorgular. Şiirde 'Vatan' kelimesi varsa 1, 'Ölüm' varsa 2. Dönemdir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "tanzimat’?ın i\\\\\\\\. dönem şiiri|tanzimat 1\\\\\\\\. dönem",
+    "pattern": "\\btanzimat’?ın i\\. dönem şiiri\\b|\\btanzimat 1\\. dönem\\b",
     "aliases": []
   },
   {
@@ -249,10 +251,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 82,
-    "tanim": "Recaizade Mahmut Ekrem ve Abdülhak Hamit Tarhan'ın öncülüğünde şiir, **'sanat için sanat'** ilkesiyle bireysel temalara (ölüm, aşk, tabiat, metafizik) yönelir; dil yeniden ağırlaşır, biçimde yenilik arayışı belirginleşir.\n💡 Sınav Şifresi: **Sanat için sanat + ölüm/aşk/tabiat + Ekrem-Hamit** = 2. Dönem. 'Vatan/hürriyet' kelimesi geçiyorsa 1. Dönem'e dön.",
+    "tanim": "Recaizade Mahmut Ekrem ve Abdülhak Hamit Tarhan'ın öncülüğünde şiir, **'sanat için sanat'** ilkesiyle bireysel temalara (ölüm, aşk, tabiat, metafizik) yönelir; dil yeniden ağırlaşır, biçimde yenilik arayışı belirginleşir.\n💡 Hile: **2. Dönem = 'Sanat İçin Sanat' + 'Ölüm/Aşk' + Ekrem-Hamit (EH).** Hile: 1. Dönem 'Toplum' der, 2. Dönem 'Ben' der. Şiirde 'Ben' (bireysel acı, ölüm korkusu) varsa 2. Dönemdir. 'Vatan' kelimesi 2. Dönem şairlerinde neredeyse hiç yoktur.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "tanzimat’?ın ii\\\\\\\\. dönem şiiri|tanzimat 2\\\\\\\\. dönem",
+    "pattern": "\\btanzimat’?ın ii\\. dönem şiiri\\b|\\btanzimat 2\\. dönem\\b",
     "aliases": []
   },
   {
@@ -265,11 +267,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 82,
-    "tanim": "Abdülhak Hamit Tarhan, eşi Fatma Hanım'ın vefatı üzerine yazdığı **'Makber'** adlı uzun şiirde **metafizik ve varoluşsal sorgulamalara** dalar; ölümü hem derin bir acı hem de felsefi bir mesele olarak işler.\n💡 Sınav Şifresi: **Fatma Hanım'ın ölümü + metafizik sorgulama + ağıt** = Makber. 'Ölüm' temalı başka şiirlerle karıştırma; anahtar 'eşinin ölümü' ayrıntısıdır.",
+    "tanim": "Abdülhak Hamit Tarhan, eşi Fatma Hanım'ın vefatı üzerine yazdığı **'Makber'** adlı uzun şiirde **metafizik ve varoluşsal sorgulamalara** dalar; ölümü hem derin bir acı hem de felsefi bir mesele olarak işler.\n💡 Hile: **Makber = 'Fatma'nın Ölümü' + 'Nereye Gidiyoruz?' (Metafizik).** Hile: 'Makber' kelimesi Arapça 'Mezar' demektir. Şiir sadece ağlamak için değil, 'Ölüm sonrası ne var?' sorusunu sormak için yazılmıştır. Diğer ağıtlar sadece üzülür, Makber ise felsefe yapar.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Makber$|\\\\\\\\bmakber\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bMakber\\b|\\bmakber\\b",
+    "aliases": [],
+    "option_only_pattern": "^Makber$"
   },
   {
     "id": "tde5_saf_oz_siir",
@@ -281,10 +284,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 85,
-    "tanim": "Şiiri ideolojiden arındırıp **musiki, imge ve kusursuz biçim** üzerine kuran bu anlayış, şiiri estetik bir zevk aracına dönüştürür (Yahya Kemal, Ahmet Haşim, Cahit Sıtkı, Ahmet Muhip Dıranas).\n💡 Sınav Şifresi: **Musiki + imge + biçim mükemmelliği + ideolojiden arınma** = Saf/Öz Şiir. 'Toplum için sanat' veya 'memleketçilik' şıkkı tuzaktır.",
+    "tanim": "Şiiri ideolojiden arındırıp **musiki, imge ve kusursuz biçim** üzerine kuran bu anlayış, şiiri estetik bir zevk aracına dönüştürür (Yahya Kemal, Ahmet Haşim, Cahit Sıtkı, Ahmet Muhip Dıranas).\n💡 Hile: **Saf Şiir = 'Müzik + Resim + Biçim' (MRB).** Hile: Bu şairler 'Ne söylemiş?' diye değil, 'Nasıl söylemiş?' diye sorar. Şiirde siyasi slogan, toplumsal mesaj veya didaktik (öğretici) bir ton varsa Saf Şiir DEĞİLDİR. Saf şiir 'temiz' ve 'soyut'tur.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "saf \\\\\\\\(öz\\\\\\\\) şiir|saf şiir anlayışı|öz şiir",
+    "pattern": "\\bsaf \\(öz\\) şiir\\b|\\bsaf şiir anlayışı\\b|\\böz şiir\\b",
     "aliases": []
   },
   {
@@ -297,10 +300,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 86,
-    "tanim": "'Otuz Beş Yaş' şairi Cahit Sıtkı Tarancı, **ölüm, yalnızlık ve yaşama sevinci** üçgenini hece ölçüsü ve lirik bir ustalıkla saf şiir çizgisinde birleştirir; 'Memleket İsterim' şiirinde ise memleket özlemini işler.\n💡 Sınav Şifresi: **'Otuz Beş Yaş' + ölüm/yalnızlık/yaşama sevinci + hece** = Cahit Sıtkı Tarancı. 'Mistisizm' veya 'epik tiyatro' şıkkı onu değil başkasını işaret eder.",
+    "tanim": "'Otuz Beş Yaş' şairi Cahit Sıtkı Tarancı, **ölüm, yalnızlık ve yaşama sevinci** üçgenini hece ölçüsü ve lirik bir ustalıkla saf şiir çizgisinde birleştirir; 'Memleket İsterim' şiirinde ise memleket özlemini işler.\n💡 Hile: **Cahit Sıtkı = '35 Yaş Sendromu' + 'Ölüm Korkusu'.** Hile: Şiirlerinde sürekli 'Yaşım geçiyor, öleceğim' temalı bir panik havası vardır. 'Otuz Beş Yaş' dizesini gördüğün an, şairin 'Ölüm' takıntısı olduğunu bil. Hece ölçüsünü en iyi kullanan saf şairdir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "cahit sıtkı tarancı|cahit sıtkı",
+    "pattern": "\\bcahit sıtkı tarancı\\b|\\bcahit sıtkı\\b",
     "aliases": []
   },
   {
@@ -313,10 +316,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 86,
-    "tanim": "Saf şiir temsilcisi Ahmet Muhip Dıranas, 'Fahriye Abla', 'Olvido' ve 'Serenad' gibi şiirlerle **hece ölçüsüne modern bir ses ve imge zenginliği** kazandırır.\n💡 Sınav Şifresi: **Fahriye Abla + Olvido + Serenad** üçlüsü = Ahmet Muhip Dıranas. 'Otuz Beş Yaş' görürsen Cahit Sıtkı'ya geç.",
+    "tanim": "Saf şiir temsilcisi Ahmet Muhip Dıranas, 'Fahriye Abla', 'Olvido' ve 'Serenad' gibi şiirlerle **hece ölçüsüne modern bir ses ve imge zenginliği** kazandırır.\n💡 Hile: **Ahmet Muhip = 'Fahriye Abla' + 'Olvido' (Deniz/İspanya).** Hile: 'Fahriye Abla' şiirindeki 'Gün olur, alır başımı giderim' dizesi onun imzasıdır. 'Olvido' ise 'Unutmak' demektir. Bu iki isim (Fahriye ve Olvido) aklına gelirse şair Ahmet Muhip'tir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ahmet muhip dıranas|ahmet muhip diranas",
+    "pattern": "\\bahmet muhip dıranas\\b|\\bahmet muhip diranas\\b",
     "aliases": []
   },
   {
@@ -329,10 +332,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 87,
-    "tanim": "Asaf Halet Çelebi, **Doğu mistisizmi, tasavvuf ve Hint felsefesini** masalsı motiflerle özgün bir serbest şiir dilinde harmanlayan mistik şairdir ('He', 'Lâmelif', 'Sidharta').\n💡 Sınav Şifresi: **Mistisizm + tasavvuf + Hint felsefesi + serbest şiir** = Asaf Halet Çelebi. 'He' ve 'Lâmelif' şiir adları ayırt edici anahtardır.",
+    "tanim": "Asaf Halet Çelebi, **Doğu mistisizmi, tasavvuf ve Hint felsefesini** masalsı motiflerle özgün bir serbest şiir dilinde harmanlayan mistik şairdir ('He', 'Lâmelif', 'Sidharta').\n💡 Hile: **Asaf Halet = 'Hint + Tasavvuf + Serbest Ölçü'.** Hile: Diğer saf şairler (Cahit Sıtkı, Ahmet Muhip) HECE ölçüsü kullanırken, Asaf Halet Çelebi SERBEST ölçü kullanır. Şiirde 'Buda', 'Krishna', 'Mevlana' veya 'Harflerin gizemi' varsa o Asaf Halet'tir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "asaf halet çelebi|asaf halet celebi",
+    "pattern": "\\basaf halet çelebi\\b|\\basaf halet celebi\\b",
     "aliases": []
   },
   {
@@ -345,10 +348,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 88,
-    "tanim": "I. Dünya Savaşı ve Millî Mücadele döneminde **aruzdan heceye geçerek** memleket sevgisini, Anadolu'yu ve halkın yaşayışını sade Türkçeyle anlatan beş şair topluluğudur (Faruk Nafiz Çamlıbel, Enis Behiç Koryürek, Halit Fahri Ozansoy, Yusuf Ziya Ortaç, Orhan Seyfi Orhon).\n💡 Sınav Şifresi: **Beş şair + aruz→hece geçişi + memleket sevgisi + sade Türkçe** = Beş Hececiler. 'Saf şiir' veya 'Garip' şıkkı bu topluluğu değil başka akımı anlatır.",
+    "tanim": "I. Dünya Savaşı ve Millî Mücadele döneminde **aruzdan heceye geçerek** memleket sevgisini, Anadolu'yu ve halkın yaşayışını sade Türkçeyle anlatan beş şair topluluğudur (Faruk Nafiz Çamlıbel, Enis Behiç Koryürek, Halit Fahri Ozansoy, Yusuf Ziya Ortaç, Orhan Seyfi Orhon).\n💡 Hile: **Beş Hececiler = 'Aruzdan Kaçış' + 'Anadolu Manzaraları'.** Hile: Bu şairler 'Halkın dili'ni konuşur. Şiirde 'Köy', 'Çoban', 'Anadolu', 'Milli Mücadele' varsa ve ölçü HECE ise, bu Beş Hececiler'dir. Saf şiir şairleri (Cahit Sıtkı vb.) daha bireysel ve estetik odaklıdır, Beş Hececiler ise toplumsal ve millidir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hecenin beş şairi|beş hececiler",
+    "pattern": "\\bhecenin beş şairi\\b|\\bbeş hececiler\\b",
     "aliases": []
   },
   {
@@ -361,10 +364,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 89,
-    "tanim": "'Millî Şair' unvanlı Mehmet Emin Yurdakul, **'Ben bir Türk'üm, dinim, cinsim uludur'** dizesiyle Millî Edebiyat akımının öncüsü kabul edilir; sade dil ve hece ölçüsüyle millî duyguları işler.\n💡 Sınav Şifresi: **'Millî Şair' + 'Ben bir Türk'üm...' dizesi** = Mehmet Emin Yurdakul. 'Türkçülük' fikriyle birlikte anılan bu dize ayırt edici kilit noktadır.",
+    "tanim": "'Millî Şair' unvanlı Mehmet Emin Yurdakul, **'Ben bir Türk'üm, dinim, cinsim uludur'** dizesiyle Millî Edebiyat akımının öncüsü kabul edilir; sade dil ve hece ölçüsüyle millî duyguları işler.\n💡 Hile: **Mehmet Emin = 'Ben Bir Türk'üm' + 'Milli Şair'.** Hile: Bu dize, Türk edebiyatında 'Milliyetçilik' akımının manifestosudur. Şiirde 'Türk', 'Millet', 'Bayrak' kelimeleri geçiyorsa ve şair 'Milli Şair' olarak anılıyorsa, cevap Mehmet Emin Yurdakul'dur. O, Beş Hececiler'den önce gelir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "mehmet emin yurdakul",
+    "pattern": "\\bmehmet emin yurdakul\\b",
     "aliases": []
   },
   {
@@ -377,11 +380,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 110,
-    "tanim": "Sohbet (söyleşi), yazarın güncel veya edebî bir konuyu **okuyucuyla karşılıklı konuşuyormuş gibi** içten, samimi ve akıcı bir dille kaleme aldığı, kanıtlama amacı gütmeyen yazı türüdür.\n💡 Sınav Şifresi: **Karşılıklı konuşma havası + samimi/içten dil + 'sen/siz' hitabı** = Sohbet. 'Kanıtlama amacı' veya 'resmî dil' görürsen makale/deneme şıkkına geç.",
+    "tanim": "Sohbet (söyleşi), yazarın güncel veya edebî bir konuyu **okuyucuyla karşılıklı konuşuyormuş gibi** içten, samimi ve akıcı bir dille kaleme aldığı, kanıtlama amacı gütmeyen yazı türüdür.\n💡 Hile: **Sohbet = 'Sen/Biz' Dili + 'Kahve Molası' Havası.** Hile: Yazar sana 'Dinle bak' veya 'Sence de öyle değil mi?' diyorsa bu Sohbettir. Makale gibi 'Kanıtlayacağım' demez, Deneme gibi 'Düşünüyorum' demez; sadece 'Konuşuyoruz' der. Samimiyet anahtardır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Sohbet$|\\\\\\\\bsohbet türü\\\\\\\\b|\\\\\\\\bsöyleşi türü\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bsohbet\\s+türü[a-zçğıöşü]*\\b|\\bsöyleşi[a-zçğıöşü]*\\b",
+    "aliases": [],
+    "option_only_pattern": "^Sohbet$|^Söyleşi$"
   },
   {
     "id": "tde5_fikra",
@@ -393,11 +397,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 112,
-    "tanim": "Gazete ve dergilerde **güncel siyasi, toplumsal ve kültürel konuları** kanıt kaygısı gütmeden, **öznel bir bakışla** yorumlayan kısa yazı türüdür; tıpkı bir arkadaşınla sohbet eder gibi samimi, içten ve kişisel bir dille yazılır, yazarın imzasıyla (köşe yazısı) yayımlanır.\n💡 Sınav Şifresi: **Öznel + kanıt yok + güncel konu + samimi dil** dörtlüsü fıkrayı makaleden ayırır; \"köşe yazısı\" eş anlamlısıdır, yazarın adıyla yayımlanır.",
+    "tanim": "Gazete ve dergilerde **güncel siyasi, toplumsal ve kültürel konuları** kanıt kaygısı gütmeden, **öznel bir bakışla** yorumlayan kısa yazı türüdür; tıpkı bir arkadaşınla sohbet eder gibi samimi, içten ve kişisel bir dille yazılır, yazarın imzasıyla (köşe yazısı) yayımlanır.\n💡 Hile: **Fıkra = 'Güncel Olay' + 'Yorum' + 'Köşe'.** Hile: Fıkra, gazetenin 'Köşe Yazısı'dır. Makale 'Bilim' yapar, Fıkra 'Gazetecilik' yapar. Şiirde 'Bugün şunu gördüm, bence şöyle olmalı' diyorsa ve konu güncelse (siyaset, ekonomi, gündem), bu Fıkradır. Kanıt sunmaz, sadece fikrini söyler.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Fıkra$|\\\\\\\\bfıkra türü\\\\\\\\b|\\\\\\\\bköşe yazısı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bFıkra\\b|\\bfıkra türü\\b|\\bköşe yazısı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Fıkra$"
   },
   {
     "id": "tde5_makale",
@@ -409,11 +414,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 114,
-    "tanim": "Bir konuda **bilgi vermek veya bir tezi kanıtlamak** amacıyla **nesnel, bilimsel ve ciddi** bir dille yazılan, giriş-gelişme-sonuç bölümlerinden oluşan yazı türüdür; tıpkı bir bilim insanının laboratuvar raporu gibi **kanıt, belge ve tanıklamaya** dayanır.\n💡 Sınav Şifresi: **Nesnel + kanıt/belge + bilimsel dil + tez** dörtlüsü makalenin imzasıdır; fıkranın tam zıddıdır, yazarın adıyla yayımlanır.",
+    "tanim": "Bir konuda **bilgi vermek veya bir tezi kanıtlamak** amacıyla **nesnel, bilimsel ve ciddi** bir dille yazılan, giriş-gelişme-sonuç bölümlerinden oluşan yazı türüdür; tıpkı bir bilim insanının laboratuvar raporu gibi **kanıt, belge ve tanıklamaya** dayanır.\n💡 Hile: **Makale = 'Kanıt' + 'Nesnellik' + 'Tez'.** Hile: Makale 'Ben' demez, 'Bilim' der. Şiirde 'Bence', 'Sanırım', 'Güzel' gibi öznel kelimeler YOKTUR. Bunun yerine 'Görülüyor ki', 'Araştırmalar gösteriyor ki', 'Sonuç olarak' gibi kalıplar VARDIR. Makale, Fıkranın tam zıddıdır: Fıkra 'Hisseder', Makale 'Kanıtlar'.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Makale$|\\\\\\\\bmakale türü\\\\\\\\b|\\\\\\\\bmakalenin\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bMakale\\b|\\bmakale türü\\b|\\bmakalenin\\b",
+    "aliases": [],
+    "option_only_pattern": "^Makale$"
   },
   {
     "id": "tde5_ahmet_rasim",
@@ -425,10 +431,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 116,
-    "tanim": "Tanzimat'tan Cumhuriyet'e **İstanbul'un gündelik hayatını, geleneklerini, tiplerini ve eğlencelerini** sohbet ve fıkra üslubuyla renkli, mizahi bir dille ölümsüzleştiren üretken yazardır; **Şehir Mektupları, Ramazan Sohbetleri ve Muharrir Bu Ya** eserlerinin sahibidir.\n💡 Sınav Şifresi: **İstanbul + gündelik hayat + sohbet/fıkra üslubu + mizah** dörtlüsü Ahmet Rasim'i diğer yazarlardan ayırt eder; eserleri Şehir Mektupları, Ramazan Sohbetleri, Muharrir Bu Ya'dır.",
+    "tanim": "Tanzimat'tan Cumhuriyet'e **İstanbul'un gündelik hayatını, geleneklerini, tiplerini ve eğlencelerini** sohbet ve fıkra üslubuyla renkli, mizahi bir dille ölümsüzleştiren üretken yazardır; **Şehir Mektupları, Ramazan Sohbetleri ve Muharrir Bu Ya** eserlerinin sahibidir.\n💡 Hile: Ahmet Rasim'in üç eserini aklında tutmak için **\"Şehrin Ramazan'ında Muharrir\"** cümlesini kur: **Şehir** Mektupları + **Ramazan** Sohbetleri + **Muharrir** Bu Ya. Üç eserin baş harfleri **Ş-R-M** = \"Şehirde Ramazan Muharriri\" — yani zaten yazarın kendisi! İstanbul + mizah + sohbet üçlüsünü görünce gözün kapalı \"Ahmet Rasim\" de, çünkü bu üçlü başka kimsede birleşmez.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ahmet rasim",
+    "pattern": "\\bahmet rasim\\b",
     "aliases": []
   },
   {
@@ -441,10 +447,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 116,
-    "tanim": "Ahmet Rasim'in **II. Abdülhamit dönemi İstanbul'unu** sokakları, tipleri, gelenekleri ve gündelik hayatıyla **mizahi ve sohbet üslubuyla** anlattığı fıkra-mektup türündeki eseridir.\n💡 Sınav Şifresi: **İstanbul + mizah + mektup/fıkra + II. Abdülhamit dönemi** dörtlüsü Şehir Mektupları'nı işaret eder; yazarı Ahmet Rasim'dir.",
+    "tanim": "Ahmet Rasim'in **II. Abdülhamit dönemi İstanbul'unu** sokakları, tipleri, gelenekleri ve gündelik hayatıyla **mizahi ve sohbet üslubuyla** anlattığı fıkra-mektup türündeki eseridir.\n💡 Hile: Eserin adı zaten içeriğini söylüyor: **\"Şehir\"** = İstanbul'un sokakları/tipleri, **\"Mektuplar\"** = fıkra-mektup türü. Yani adı okuyunca içeriği bedavaya geliyor. Karıştırma tuzağı: \"Ramazan\" geçmiyorsa **Şehir Mektupları**, \"Ramazan\" geçiyorsa **Ramazan Sohbetleri**. Tek kelimeye bak, gerisini boş ver.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "şehir mektupları|sehir mektuplari",
+    "pattern": "\\bşehir mektupları\\b|\\bsehir mektuplari\\b",
     "aliases": []
   },
   {
@@ -457,10 +463,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 116,
-    "tanim": "Ahmet Rasim'in **eski İstanbul Ramazanlarının adetlerini, şenliklerini, eğlencelerini ve iftar sofralarını** samimi bir sohbet üslubuyla aktardığı eseridir.\n💡 Sınav Şifresi: **Ramazan + eski İstanbul adetleri + sohbet üslubu** üçlüsü bu eseri işaret eder; yazarı Ahmet Rasim'dir.",
+    "tanim": "Ahmet Rasim'in **eski İstanbul Ramazanlarının adetlerini, şenliklerini, eğlencelerini ve iftar sofralarını** samimi bir sohbet üslubuyla aktardığı eseridir.\n💡 Hile: **\"Ramazan\"** kelimesini görünce gözünü kapat, **iftar sofrası + mahya + davul** canlandır — bu tablo Ahmet Rasim'in kaleminden çıkar. Ama en zekice kısayol: Ahmet Rasim'in üç eserini **\"Şehir → Ramazan → Muharrir\"** sırasıyla ezberle (alfabetik değil, kronolojik hayat sırası: önce şehri gez, sonra Ramazan'ı yaşa, sonra yazarlığını anlat). \"Ramazan\" kelimesi tek başına bu eseri mühürler.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ramazan sohbetleri",
+    "pattern": "\\bramazan sohbetleri\\b",
     "aliases": []
   },
   {
@@ -473,10 +479,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 117,
-    "tanim": "Ahmet Rasim'in **yazarlık anılarını, basın hayatını ve dönemin edebiyat çevresiyle ilişkilerini** samimi bir sohbet üslubuyla anlattığı meşhur anı-sohbet kitabıdır.\n💡 Sınav Şifresi: **Yazarlık anıları + basın hayatı + edebiyat çevresi + anı-sohbet** dörtlüsü \"Muharrir Bu Ya\"yı işaret eder; yazarı Ahmet Rasim'dir.",
+    "tanim": "Ahmet Rasim'in **yazarlık anılarını, basın hayatını ve dönemin edebiyat çevresiyle ilişkilerini** samimi bir sohbet üslubuyla anlattığı meşhur anı-sohbet kitabıdır.\n💡 Hile: **\"Muharrir\"** kelimesi zaten **\"yazar\"** demek — yani eserin adı \"Yazar Bu Ya!\" diye bağırıyor. Yazarın kendi yazarlık anılarını anlattığı kitap olduğu adından bedava çıkıyor. Üç eseri ayırt etme şifresi: **Şehir**=gezi, **Ramazan**=gelenek, **Muharrir**=kendi hayatı/anı. \"Anı + basın + edebiyat çevresi\" üçlüsünü görünce direkt \"Muharrir Bu Ya\" damgasını vur.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "muharrir bu ya",
+    "pattern": "\\bmuharrir bu ya\\b",
     "aliases": []
   },
   {
@@ -489,10 +495,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 118,
-    "tanim": "Şevket Rado'nun **hayat sevgisi, çalışma disiplini, iyimserlik ve doğru yaşama** üzerine **radyo konuşmalarını** topladığı en meşhur sohbet kitabıdır.\n💡 Sınav Şifresi: **Radyo konuşmaları + iyimserlik + hayat sevgisi + sohbet** dörtlüsü Eşref Saat'i işaret eder; yazarı Şevket Rado'dur.",
+    "tanim": "Şevket Rado'nun **hayat sevgisi, çalışma disiplini, iyimserlik ve doğru yaşama** üzerine **radyo konuşmalarını** topladığı en meşhur sohbet kitabıdır.\n💡 Hile: **\"Eşref Saat\"** deyimi zaten Türkçede **\"en uygun, en hayırlı zaman\"** demek — yani iyimserlik ve doğru yaşama mesajı adın içinde saklı. Radyo bağlantısı için: **\"Rado\"** soyadındaki **\"Rad\"** kökü sana **\"Radyo\"**yu fısıldıyor (Rado = Radyo). Şevket Rado + radyo konuşmaları = Eşref Saat. Bu iki harf oyunuyla bir daha karıştırmazsın.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "eşref saat|esref saat",
+    "pattern": "\\beşref saat\\b|\\besref saat\\b",
     "aliases": []
   },
   {
@@ -505,10 +511,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 119,
-    "tanim": "Prof. Dr. Suut Kemal Yetkin'in **sanat, estetik ve edebiyat** konularında kaleme aldığı **deneme ve sohbet** türündeki yetkin eseridir.\n💡 Sınav Şifresi: **Sanat + estetik + edebiyat + deneme/sohbet** dörtlüsü bu eseri işaret eder; yazarı Suut Kemal Yetkin'dir.",
+    "tanim": "Prof. Dr. Suut Kemal Yetkin'in **sanat, estetik ve edebiyat** konularında kaleme aldığı **deneme ve sohbet** türündeki yetkin eseridir.\n💡 Hile: Yazarın soyadı **\"Yetkin\"** = **\"yetkin, ustaca, olgun\"** — yani sanat/estetik gibi \"yetkin\" konularda yazmış. Ad-soyad içerikle örtüşüyor: **Suut Kemal Yetkin → \"Yetkin\" estetik/edebiyat sohbetleri**. Ayrıca **\"Söyleşiler\"** kelimesi eserin adında var, türü de söyleşi/deneme — adı türünü söylüyor. Sanat + estetik + edebiyat üçlüsü = Yetkin.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "edebiyat söyleşileri|edebiyat soylesileri",
+    "pattern": "\\bedebiyat söyleşileri\\b|\\bedebiyat soylesileri\\b",
     "aliases": []
   },
   {
@@ -521,10 +527,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 120,
-    "tanim": "**Garip akımının** şairi Melih Cevdet Anday'ın **Türkçenin zenginliği, kuralları ve gelişimi** üzerine yazdığı **deneme ve konuşmalarını** bir araya getiren eseridir.\n💡 Sınav Şifresi: **Garip şairi + Türkçenin zenginliği + deneme/konuşma** üçlüsü bu eseri işaret eder; yazarı Melih Cevdet Anday'dır.",
+    "tanim": "**Garip akımının** şairi Melih Cevdet Anday'ın **Türkçenin zenginliği, kuralları ve gelişimi** üzerine yazdığı **deneme ve konuşmalarını** bir araya getiren eseridir.\n💡 Hile: **\"Dilimiz Üzerine\"** adı zaten konuyu söylüyor (dil = Türkçe). Yazarı ayırt etme tuzağı: Melih Cevdet Anday **Garip şairi** — Garip üçlüsünü hatırla: **Orhan Veli + Oktay Rifat + Melih Cevdet**. \"Garip\" deyince Melih Cevdet, \"dil\" deyince bu eser. Ayrıca Nurullah Ataç'ınki **\"Dil Üzerine Söyleşiler\"** (kısa), Melih Cevdet'inki **\"Dilimiz Üzerine Konuşmalar\"** (uzun + \"-imiz\" iyelik eki = bizim dilimiz). \"-imiz\" varsa Melih Cevdet!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "dilimiz üzerine konuşmalar|dilimiz uzerine konusmalar",
+    "pattern": "\\bdilimiz üzerine konuşmalar\\b|\\bdilimiz uzerine konusmalar\\b",
     "aliases": []
   },
   {
@@ -537,10 +543,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 120,
-    "tanim": "**Türkçenin özleşmesi** ve **deneme türünün en büyük ustası** sayılan Nurullah Ataç'ın **dille ilgili düşüncelerini** paylaştığı söyleşi kitabıdır.\n💡 Sınav Şifresi: **Dil özleşmesi + deneme ustası + söyleşi** üçlüsü bu eseri işaret eder; yazarı Nurullah Ataç'tır.",
+    "tanim": "**Türkçenin özleşmesi** ve **deneme türünün en büyük ustası** sayılan Nurullah Ataç'ın **dille ilgili düşüncelerini** paylaştığı söyleşi kitabıdır.\n💡 Hile: İki \"dil\" kitabını ayırt etme şifresi: **Ataç** soyadındaki **\"Ata\"** = **\"Ata\"** gibi köklü, öz Türkçeci — yani **dil özleşmesinin** öncüsü. Ataç = özleşme. Eser adı kısa: **\"Dil Üzerine Söyleşiler\"** (Melih Cevdet'inki \"Dil**imiz** Üzerine Konuşmalar\" — daha uzun). Kural: **kısa ad + Ataç = özleşme**, **uzun ad + Garip = Melih Cevdet**. Ataç'ı görünce \"özleşme + deneme ustası\" damgası otomatik.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "dil üzerine söyleşiler|dil uzerine soylesiler",
+    "pattern": "\\bdil üzerine söyleşiler\\b|\\bdil uzerine soylesiler\\b",
     "aliases": []
   },
   {
@@ -553,10 +559,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 90,
-    "tanim": "Bir sözü **tersini kastederek alaylı ve iğneleyici** bir anlamda kullanma sanatıdır; tıpkı \"Aferin, çok akıllısın!\" diyerek aslında \"ne kadar da aptalsın\" demek gibi. **Söylenenin zıddı kastedilir.**\n💡 Sınav Şifresi: **Tersini kastetme + alay/iğneleme** ikilisi tarizi işaret eder; söylenenin zıddı kastedilir, tevriyeden farkı alay unsurudur.",
+    "tanim": "Bir sözü **tersini kastederek alaylı ve iğneleyici** bir anlamda kullanma sanatıdır; tıpkı \"Aferin, çok akıllısın!\" diyerek aslında \"ne kadar da aptalsın\" demek gibi. **Söylenenin zıddı kastedilir.**\n💡 Hile: **Tariz = \"Ters\"** — ikisi de **T** ile başlar, ikisi de \"zıddını söyle\" demek. Aklına **\"Ters Tariz\"** tekerlemesini kazı: söylenenin **TERS**ini kastediyorsan **TARİZ**. Alay/iğneleme varsa tariz, anlam katmanı varsa tevriye. Tek harf (T→T) bir ömür boyu yeter.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Tariz$|\\\\\\\\btariz sanatı\\\\\\\\b",
+    "pattern": "\\btariz[a-zçğıöşü]*\\b|\\biğneleme\\s+sanatı\\b",
     "aliases": []
   },
   {
@@ -569,10 +575,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 91,
-    "tanim": "Birden çok anlamı olan bir sözcüğü **herkesçe bilinen yakın anlamında değil, uzak anlamını kastederek** kullanma sanatıdır; tıpkı \"Bu işte bir **tilki** var\" derken hayvandan değil kurnaz kişiden söz etmek gibi. **Amaç alay değil, anlam katmanı oluşturmaktır.**\n💡 Sınav Şifresi: **Çok anlamlı sözcük + yakın değil uzak anlam** ikilisi tevriyeyi işaret eder; tarizden farkı alay değil, anlam katmanıdır.",
+    "tanim": "Birden çok anlamı olan bir sözcüğü **herkesçe bilinen yakın anlamında değil, uzak anlamını kastederek** kullanma sanatıdır; tıpkı \"Bu işte bir **tilki** var\" derken hayvandan değil kurnaz kişiden söz etmek gibi. **Amaç alay değil, anlam katmanı oluşturmaktır.**\n💡 Hile: **Tevriye = \"Tev\"** — \"iki\" gibi düşün: **T** ile başlar ama içinde **\"evir-çevir\"** var, yani kelimeyi **evirip çevirip uzak anlamını** yakalıyorsun. En zekice kısayol: **\"Tevriye = Tilki\"** — tilki hem hayvan hem kurnaz; sen **uzak anlamı** (kurnaz) kastediyorsun, alay yok. **Tariz'de alay var, Tevriye'de katman var.** İkisini ayırt etme şifresi: **TARİZ = Ters/alay**, **TEVRİYE = Tilki/katman**. T-T tuzağına düşme, ikinci harfe bak: ta**R**iz (alay), tev**R**iye (katman) — ikisi de R'li ama biri ters biri tilki!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Tevriye$|\\\\\\\\btevriye sanatı\\\\\\\\b",
+    "pattern": "\\btevriye[a-zçğıöşü]*\\b",
     "aliases": []
   },
   {
@@ -585,10 +591,10 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 92,
-    "tanim": "Bir dize veya beyitte geçmişteki ünlü bir olayı, tarihî/kutsal bir kişiyi, bir ayeti ya da efsaneyi **tek bir kelime veya kısa ifadeyle** hatırlatıp okuyucunun zihninde o hikâyeyi canlandırma sanatıdır; tıpkı bir filmde tek bir flashback karesinin bütün geçmişi anlatması gibi. Telmih **söz sanatıdır**, anlatım tekniği değildir; hatırlatılan şey ayrıntılı anlatılırsa telmih olmaktan çıkar.\n💡 Sınav Şifresi: \"Hatırlatma\" = **kısa işaret, uzun hikâye**; ayet, efsane, tarihî kişi veya olay **tek kelimeyle ima ediliyorsa telmih**, uzun uzun anlatılıyorsa değil.",
+    "tanim": "Bir dize veya beyitte geçmişteki ünlü bir olayı, tarihî/kutsal bir kişiyi, bir ayeti ya da efsaneyi **tek bir kelime veya kısa ifadeyle** hatırlatıp okuyucunun zihninde o hikâyeyi canlandırma sanatıdır; tıpkı bir filmde tek bir flashback karesinin bütün geçmişi anlatması gibi. Telmih **söz sanatıdır**, anlatım tekniği değildir; hatırlatılan şey ayrıntılı anlatılırsa telmih olmaktan çıkar.\n💡 Hile: **Telmih = \"Tel\" (telgraf) + \"mih\"** — telgraf gibi **kısa bir işaret** gönderiyorsun, karşı taraf **uzun hikâyeyi** kendi zihninde tamamlıyor. Yani **\"kısa tel, uzun hikâye\"**. Sınav tuzağı: \"uzun uzun anlatıyorsa telmih DEĞİL\" — çünkü telgrafta destan yazılmaz, sadece **işaret** verilir. Tek kelime = telmih, paragraf = değil. Bu kadar.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Telmih$|\\\\\\\\btelmih sanatı\\\\\\\\b",
+    "pattern": "\\btelmih[a-zçğıöşü]*\\b|\\bhatırlatma\\s+sanatı[a-zçğıöşü]*\\b|\\bhatırlatma\\s*\\(telmih\\)",
     "aliases": []
   },
   {
@@ -601,11 +607,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 130,
-    "tanim": "Cümlede **işi yapan** veya **durumda olan** varlıktır; yükleme sorulan \"Kim? / Ne?\" sorusuyla bulunur, tıpkı bir filmde başrol oyuncusunun afişte en üstte yazması gibi. Özne **yalın hâldedir**, \"-i\" belirtme ekini almaz; gerçek özne (yapan) ve sözde özne (edilgen fiilde işten etkilenen) olmak üzere ikiye ayrılır.\n💡 Sınav Şifresi: Yükleme **\"Kim/Ne yapan?\"** sorusu → cevap özne; **\"-i\" eki almaz, yalın hâldedir**; edilgen fiilde \"işi yapan değil, işten etkilenen\" öznedir (sözde özne).",
+    "tanim": "Cümlede **işi yapan** veya **durumda olan** varlıktır; yükleme sorulan \"Kim? / Ne?\" sorusuyla bulunur, tıpkı bir filmde başrol oyuncusunun afişte en üstte yazması gibi. Özne **yalın hâldedir**, \"-i\" belirtme ekini almaz; gerçek özne (yapan) ve sözde özne (edilgen fiilde işten etkilenen) olmak üzere ikiye ayrılır.\n💡 Hile: Özne bulma şifresi: yükleme **\"Kim/Ne\"** sor, ama cevabın sonuna **\"-i\" ekini yapıştırmayı dene** — yapışmıyorsa özne, yapışıyorsa **nesne**! Örnek: \"Kitabı okudum\" → \"Kim okudu? Ben\" (özne), \"Neyi okudum? Kitab**ı**\" (nesne, -i aldı). **\"-i alan nesne, -i almayan özne.\"** Sözde özne tuzağı: edilgen fiilde (\"Cam kırıldı\") işi yapan yok, işten **etkilenen** öznedir — yani **\"kırılan cam\" özne ama sözde**. Kural: **edilgen fiil + işten etkilenen = sözde özne**. \"-i\" testi + edilgen testi = özne bitirildi.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Özne$|\\\\\\\\böznesi\\\\\\\\b|\\\\\\\\bözne görevinde\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bÖzne\\b|\\böznesi\\b|\\bözne görevinde\\b",
+    "aliases": [],
+    "option_only_pattern": "^Özne$"
   },
   {
     "id": "tde5_yuklem",
@@ -617,11 +624,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 130,
-    "tanim": "Cümlenin **motoru**; yargıyı zamana ve kişiye bağlayan, cümleyi cümle yapan ana ögedir — motorsuz araba nasıl gitmezse, yüklemsiz söz de cümle olmaz. **Fiil (çekimli)** veya **ek fiille çekimlenmiş isim** olabilir; cümlede tek başına bulunur, diğer ögeler ona sorularak bulunur.\n💡 Sınav Şifresi: Yüklem genelde **sonda** ve **çekimli fiil** ya da **ek fiilli isim**dir (\"-dır/-dir, -dı/-di, -mış/-miş, -sa/-se\"); \"**var mı yargı?**\" sorusunun cevabı yüklemdir.",
+    "tanim": "Cümlenin **motoru**; yargıyı zamana ve kişiye bağlayan, cümleyi cümle yapan ana ögedir — motorsuz araba nasıl gitmezse, yüklemsiz söz de cümle olmaz. **Fiil (çekimli)** veya **ek fiille çekimlenmiş isim** olabilir; cümlede tek başına bulunur, diğer ögeler ona sorularak bulunur.\n💡 Hile: Yüklem genelde **sonda** ve **çekimli fiil** ya da **ek fiilli isim**dir (\"-dır/-dir, -dı/-di, -mış/-miş, -sa/-se\"); \"**var mı yargı?**\" sorusunun cevabı yüklemdir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Yüklem$|\\\\\\\\byüklemi\\\\\\\\b|\\\\\\\\byüklem görevinde\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bYüklem\\b|\\byüklemi\\b|\\byüklem görevinde\\b",
+    "aliases": [],
+    "option_only_pattern": "^Yüklem$"
   },
   {
     "id": "tde5_belirtili_nesne",
@@ -633,11 +641,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 132,
-    "tanim": "İşten **doğrudan etkilenen** ve **-i/-ı/-u/-ü** belirtme ekini almış nesnedir; tıpkı bir kargo paketinin üzerindeki **adrese yazılmış isim** gibi, kime gideceği bellidir. Belirtme eki **-i** yanında **-ı, -u, -ü** ve kaynaştırma harfli biçimleriyle (-yi, -yı) de görülebilir.\n💡 Sınav Şifresi: Yükleme **\"Neyi/Kimi?\"** sorusu → cevap \"-i/-ı/-u/-ü\" ekliyse **belirtili**; ek yoksa belirtisiz.",
+    "tanim": "İşten **doğrudan etkilenen** ve **-i/-ı/-u/-ü** belirtme ekini almış nesnedir; tıpkı bir kargo paketinin üzerindeki **adrese yazılmış isim** gibi, kime gideceği bellidir. Belirtme eki **-i** yanında **-ı, -u, -ü** ve kaynaştırma harfli biçimleriyle (-yi, -yı) de görülebilir.\n💡 Hile: Yükleme **\"Neyi/Kimi?\"** sorusu → cevap \"-i/-ı/-u/-ü\" ekliyse **belirtili**; ek yoksa belirtisiz.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Belirtili nesne$|\\\\\\\\bbelirtili nesne\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bBelirtili nesne\\b|\\bbelirtili nesne\\b",
+    "aliases": [],
+    "option_only_pattern": "^Belirtili nesne$"
   },
   {
     "id": "tde5_belirtisiz_nesne",
@@ -649,11 +658,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 132,
-    "tanim": "İşten etkilenen ama **hâl eki almayan** yalın nesnedir; adresi yazılmamış, **kime gideceği belirsiz** bir kargo paketi gibi düşün. Belirtisiz nesne **yalın hâlde** bulunur; \"-i\" eki almaz, ancak iyelik veya çoğul eki alabilir (\"kitabımı okudum\" → belirtili; \"kitap okudum\" → belirtisiz).\n💡 Sınav Şifresi: Önce özne bulunur, sonra yükleme **\"Ne?\"** sorulur → cevap **eksiz (yalın)** ise belirtisiz nesne; \"-i\" ekliyse belirtili nesne.",
+    "tanim": "İşten etkilenen ama **hâl eki almayan** yalın nesnedir; adresi yazılmamış, **kime gideceği belirsiz** bir kargo paketi gibi düşün. Belirtisiz nesne **yalın hâlde** bulunur; \"-i\" eki almaz, ancak iyelik veya çoğul eki alabilir (\"kitabımı okudum\" → belirtili; \"kitap okudum\" → belirtisiz).\n💡 Hile: Önce özne bulunur, sonra yükleme **\"Ne?\"** sorulur → cevap **eksiz (yalın)** ise belirtisiz nesne; \"-i\" ekliyse belirtili nesne.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Belirtisiz nesne$|\\\\\\\\bbelirtisiz nesne\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bBelirtisiz nesne\\b|\\bbelirtisiz nesne\\b",
+    "aliases": [],
+    "option_only_pattern": "^Belirtisiz nesne$"
   },
   {
     "id": "tde5_dolayli_tumlec",
@@ -665,11 +675,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 134,
-    "tanim": "Yüklemi **-e, -de, -den** ekleriyle yer/yön veya **kime/neye** bakımından tamamlayan ögedir; GPS'in \"**nereye, nerede, nereden**\" demesi gibi yüklemin yol tarifini yapar. Yönelme (-e), bulunma (-de) ve ayrılma (-den) hâl eklerini alan öge dolaylı tümleçtir; **-e/-de/-den** eki alan her öge yer tamlayıcısıdır.\n💡 Sınav Şifresi: Sorular da ekle biter → **Kime/Kimde/Kimden, Neye/Neyde/Neyden, Nereye/Nerede/Nereden**; ek varsa dolaylı tümleç. Tuzak: \"aşağı/yukarı/içeri/dışarı\" **eksizse zarf**, **-e/-de/-den alırsa dolaylı tümleç**!",
+    "tanim": "Yüklemi **-e, -de, -den** ekleriyle yer/yön veya **kime/neye** bakımından tamamlayan ögedir; GPS'in \"**nereye, nerede, nereden**\" demesi gibi yüklemin yol tarifini yapar. Yönelme (-e), bulunma (-de) ve ayrılma (-den) hâl eklerini alan öge dolaylı tümleçtir; **-e/-de/-den** eki alan her öge yer tamlayıcısıdır.\n💡 Hile: Sorular da ekle biter → **Kime/Kimde/Kimden, Neye/Neyde/Neyden, Nereye/Nerede/Nereden**; ek varsa dolaylı tümleç. Tuzak: \"aşağı/yukarı/içeri/dışarı\" **eksizse zarf**, **-e/-de/-den alırsa dolaylı tümleç**!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Dolaylı tümleç$|\\\\\\\\bdolaylı tümleç\\\\\\\\b|\\\\\\\\byer tamlayıcısı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDolaylı tümleç\\b|\\bdolaylı tümleç\\b|\\byer tamlayıcısı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Dolaylı tümleç$"
   },
   {
     "id": "tde5_zarf_tumleci",
@@ -681,11 +692,12 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 136,
-    "tanim": "Yüklemi **zaman, durum, miktar, yön veya sebep** yönünden niteleyen ögedir; bir navigasyonun \"**ne zaman, nasıl, ne kadar**\" bilgisini vermesi gibi. Zarf tümleci **eksiz** kullanılır; \"-e/-de/-den\" eki alırsa dolaylı tümleç olur.\n💡 Sınav Şifresi: **Nasıl/Ne zaman/Niçin/Ne kadar/Nereye kadar** soruları → zarf tümleci. Tuzak: \"aşağı/yukarı/içeri/dışarı\" **eksizse zarf**, **-e/-de/-den alırsa dolaylı tümleç**!",
+    "tanim": "Yüklemi **zaman, durum, miktar, yön veya sebep** yönünden niteleyen ögedir; bir navigasyonun \"**ne zaman, nasıl, ne kadar**\" bilgisini vermesi gibi. Zarf tümleci **eksiz** kullanılır; \"-e/-de/-den\" eki alırsa dolaylı tümleç olur.\n💡 Hile: **Nasıl/Ne zaman/Niçin/Ne kadar/Nereye kadar** soruları → zarf tümleci. Tuzak: \"aşağı/yukarı/içeri/dışarı\" **eksizse zarf**, **-e/-de/-den alırsa dolaylı tümleç**!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Zarf tümleci$|\\\\\\\\bzarf tümleci\\\\\\\\b|\\\\\\\\bzarf tamlayıcısı\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bZarf tümleci\\b|\\bzarf tümleci\\b|\\bzarf tamlayıcısı\\b",
+    "aliases": [],
+    "option_only_pattern": "^Zarf tümleci$"
   },
   {
     "id": "tde5_ogelerine_ayirma",
@@ -697,10 +709,106 @@
     "donem": 5,
     "unite_no": null,
     "sayfa": 130,
-    "tanim": "Cümleyi **Yüklem → Özne → Nesne → Dolaylı Tümleç → Zarf Tümleci** sırasıyla, tamlama ve fiilimsileri **bölmeden** doğru sorularla parçalara ayırma işidir; bir cerrahın organları kesmeden ayırması gibi hassas bir işlemdir. Önce **yüklem** bulunur, sonra sırasıyla özne, nesne ve tümleçler sorularak belirlenir.\n💡 Sınav Şifresi: **Altın Sıra Y-Ö-N-DT-ZT**; **tamlamalar, deyimler, fiilimsiler ve ikilemeler ASLA bölünmez** — bölünürse yanlış şık!",
+    "tanim": "Cümleyi **Yüklem → Özne → Nesne → Dolaylı Tümleç → Zarf Tümleci** sırasıyla, tamlama ve fiilimsileri **bölmeden** doğru sorularla parçalara ayırma işidir; bir cerrahın organları kesmeden ayırması gibi hassas bir işlemdir. Önce **yüklem** bulunur, sonra sırasıyla özne, nesne ve tümleçler sorularak belirlenir.\n💡 Hile: **Altın Sıra Y-Ö-N-DT-ZT**; **tamlamalar, deyimler, fiilimsiler ve ikilemeler ASLA bölünmez** — bölünürse yanlış şık!",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ögelerine yanlış ayrılmıştır|cümlelerden hangisi ögelerine|ögelerine ayrıl",
+    "pattern": "^__DISABLED_META_DIRECTIVE__$",
+    "aliases": []
+  },
+  {
+    "id": "tde5_yahya_kemal_beyatli",
+    "base_id": "tde5_yahya_kemal_beyatli",
+    "term": "Yahya Kemal Beyatlı (Kendi Gök Kubbemiz, Eski Şiirin Rüzgârıyle, Aziz İstanbul)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 5",
+    "ders_kodu": null,
+    "donem": 5,
+    "unite_no": null,
+    "sayfa": 78,
+    "tanim": "Cumhuriyet ve Millî Edebiyat Dönemi'nde **Saf (Öz) Şiir** ve **Yeni Lisan / Neo-Klasisizm** anlayışının en büyük şairidir; **'Türkçe ağzımda annemin ak sütü gibidir'** diyerek konuşulan duru Türkçeyle ve (**Ok** şiiri hariç) **aruz ölçüsüyle** Osmanlı tarihini, İstanbul sevgisini ve sonsuzluk özlemini işlemiştir (*Kendi Gök Kubbemiz, Eski Şiirin Rüzgârıyle, Rubailer, Aziz İstanbul, Eğil Dağlar*).\n💡 Hile: **'Ok şiiri hariç tamamı aruz + duru İstanbul Türkçesi + Parnasizm/Saf Şiir + Kendi Gök Kubbemiz + Eski Şiirin Rüzgârıyle + Sessiz Gemi'** = **Yahya Kemal Beyatlı**.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\byahya\\s+kemal\\s+beyatlı\\b|\\byahya\\s+kemal\\b|\\bkendi\\s+gök\\s+kubbemiz\\b|\\beski\\s+şiirin\\s+rüzgârıyle\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde5_tevfik_fikret",
+    "base_id": "tde5_tevfik_fikret",
+    "term": "Tevfik Fikret (Rübâb-ı Şikeste, Halûk'un Defteri, Şermin)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 5",
+    "ders_kodu": null,
+    "donem": 5,
+    "unite_no": null,
+    "sayfa": 39,
+    "tanim": "Servetifünun (Edebiyat-ı Cedide) şiirinin öncüsüdür; **Parnasizm** akımının etkisiyle **nazmı nesre (şiiri düzyazıya) yaklaştırmış**, **müstezatı serbest müstezata** dönüştürmüş ve beyit bütünlüğünü kırarak anlamı birkaç dizeye yaymıştır (**anjambman**). Başlıca eserleri: *Rübâb-ı Şikeste*, oğlu için yazdığı didaktik şiirler **Halûk'un Defteri**, *Rübâbın Cevabı*, *Tarih-i Kadim*, *Sis* ve çocuklar için **hece ölçüsüyle** yazdığı tek kitabı **Şermin**.\n💡 Hile: **'Servetifünun + Parnasizm + nazmı nesre yaklaştırma + Rübâb-ı Şikeste + Halûk'un Defteri + Şermin (heceyle çocuk şiirleri)'** = **Tevfik Fikret**.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\btevfik\\s+fikret\\b|\\bhalûk[’']un\\s+defteri\\b|\\brübâb-ı\\s+şikeste\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde5_nabizade_nazim",
+    "base_id": "tde5_nabizade_nazim",
+    "term": "Nâbizâde Nâzım (Karabibik, Zehra)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 5",
+    "ders_kodu": null,
+    "donem": 5,
+    "unite_no": null,
+    "sayfa": 42,
+    "tanim": "Tanzimat 2. Dönem'de **Realizm ve Natüralizm** akımlarının öncüsü olan hikâye ve roman yazarıdır; Türk edebiyatının **ilk köy romanı/uzun hikâyesi** olan **Karabibik**'i (Antalya/Kaş Beymelik köyü) ve **ilk psikolojik roman denemesi / ilk natüralist-tezli roman** sayılan **Zehra**'yı (kıskançlık teması) kaleme almıştır.\n💡 Hile: **'İlk köy romanı (Karabibik) + İlk psikolojik roman denemesi (Zehra) + Natüralizm'** üçlüsü doğrudan **Nâbizâde Nâzım**'ın parmak izidir.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bn[aâ]biz[aâ]de\\s+n[aâ]zım\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde5_kemalettin_kamu_bahtiyar",
+    "base_id": "tde5_kemalettin_kamu_bahtiyar",
+    "term": "Kemalettin Kamu (Gurbet Şairi) ve Bahtiyar Vahabzade",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 5",
+    "ders_kodu": null,
+    "donem": 5,
+    "unite_no": null,
+    "sayfa": 88,
+    "tanim": "**Kemalettin Kamu**, Millî Mücadele ve Cumhuriyet Dönemi'nde memleket, vatan ve gurbet temalarını hece ölçüsüyle işleyen **'Gurbet Şairi'**dir (*Bingöl Çobanları* pastoral şiiri ve *Gurbet*). **Bahtiyar Vahabzade** ise Çağdaş Azerbaycan Türk edebiyatının en büyük **'Ana Dili ve Özgürlük Şairi'**dir (*Gülüstan* poeması).\n💡 Hile: **'Gurbet Şairi + Bingöl Çobanları'** = **Kemalettin Kamu**; **'Azerbaycan Türk edebiyatı + vatan/ana dili sevgisi'** = **Bahtiyar Vahabzade**.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\bkemalettin\\s+kamu\\b|\\bbahtiyar\\s+vahabzade\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde5_tanri_misafiri_sonmus_yildizlar_gonulden",
+    "base_id": "tde5_tanri_misafiri_sonmus_yildizlar_gonulden",
+    "term": "Cumhuriyet Dönemi Hikâye ve Şiir Eserleri (Tanrı Misafiri, Sönmüş Yıldızlar, Gönülden Gönüle)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 5",
+    "ders_kodu": null,
+    "donem": 5,
+    "unite_no": null,
+    "sayfa": 50,
+    "tanim": "Millî Edebiyat ve Cumhuriyet'in ilk yıllarında Anadolu insanını ve bireysel duyguları işleyen tanınmış eserlerdir: **Reşat Nuri Güntekin**'in *Tanrı Misafiri* ve *Sönmüş Yıldızlar* hikâye kitapları ile Beş Hececilerin lideri **Faruk Nafiz Çamlıbel**'in *Gönülden Gönüle*, *Dinle Neyden*, *Çoban Çeşmesi* ve *Han Duvarları* şiir kitapları.\n💡 Hile: **Tanrı Misafiri / Sönmüş Yıldızlar** = **Reşat Nuri Güntekin** (hikâye); **Gönülden Gönüle / Han Duvarları / Çoban Çeşmesi / Sanat** = **Faruk Nafiz Çamlıbel** (Beş Hececiler).",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\btanrı\\s+misafiri\\b|\\bsönmüş\\s+yıldızlar\\b|\\bgönülden\\s+gönüle\\b",
+    "aliases": []
+  },
+  {
+    "id": "tde5_cumle_ogeleri_dizilimi",
+    "base_id": "tde5_cumle_ogeleri_dizilimi",
+    "term": "Cümlenin Ögeleri Dizilimi (Özne / Nesne / Dolaylı Tümleç / Zarf Tümleci / Yüklem)",
+    "subject": "TDE",
+    "ders": "TÜRK DİLİ VE EDEBİYATI – 5",
+    "ders_kodu": null,
+    "donem": 5,
+    "unite_no": null,
+    "sayfa": 135,
+    "tanim": "Cümleyi ögelerine ayırırken izlenen altın sıra (**YÖN-T** kuralı): önce yargıyı bildiren **Yüklem** bulunur; yükleme **'Kim / Ne?'** sorularak **Özne**; özheden sonra **'Neyi / Kimi / Ne?'** sorularak **Nesne**; **'-e / -de / -den'** ekli **'Nereye / Nerede / Nereden / Kime?'** sorularak **Dolaylı Tümleç (Yer Tamlayıcısı)**; **'Nasıl / Ne zaman / Niçin / Ne kadar?'** sorularak **Zarf Tümleci** bulunur.\n💡 Hile: **YÖN** sırasını (**1. Yüklem → 2. Özne → 3. Nesne**) asla bozma! Önce özneyi bulmadan 'Ne?' sorarsan özne ile belirtisiz nesneyi karıştırırsın; ayrıca **isim ve sıfat tamlamaları ile deyimleri asla ortadan bölme**!",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "(?:Özne|Nesne|Belirtili nesne|Belirtisiz nesne|Dolaylı tümleç|Zarf tümleci|Yüklem)\\s*/\\s*(?:Özne|Nesne|Belirtili nesne|Belirtisiz nesne|Dolaylı tümleç|Zarf tümleci|Yüklem)(?:\\s*/\\s*(?:Özne|Nesne|Belirtili nesne|Belirtisiz nesne|Dolaylı tümleç|Zarf tümleci|Yüklem))+",
     "aliases": []
   }
 ]

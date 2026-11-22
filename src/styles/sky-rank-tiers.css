@@ -1,0 +1,261 @@
+/* 7 Sema Katmanı — Katman Bazlı Renk Paleti, Görkem & Beyaz Yıldız Puan Hapı */
+[data-sky-layer="0"] {
+  --sky-accent: #64748b;
+  --sky-accent-bright: #cbd5e1;
+  --sky-pill-bg: linear-gradient(135deg, #334155, #1e293b);
+  --sky-pill-border: rgba(148, 163, 184, 0.45);
+  --sky-glow: none;
+  --sky-card-glow: none;
+  --sky-star-glow: none;
+}
+
+[data-sky-layer="1"] {
+  --sky-accent: #0ea5e9;
+  --sky-accent-bright: #38bdf8;
+  --sky-pill-bg: linear-gradient(135deg, #075985, #0c4a6e);
+  --sky-pill-border: rgba(56, 189, 248, 0.58);
+  --sky-glow: 0 2px 10px rgba(14, 165, 233, 0.28);
+  --sky-card-glow: 0 0 28px rgba(56, 189, 248, 0.14);
+  --sky-star-glow: drop-shadow(0 0 3px rgba(255, 255, 255, 0.55));
+}
+
+[data-sky-layer="2"] {
+  --sky-accent: #3b82f6;
+  --sky-accent-bright: #60a5fa;
+  --sky-pill-bg: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  --sky-pill-border: rgba(96, 165, 250, 0.65);
+  --sky-glow: 0 2px 14px rgba(59, 130, 246, 0.38);
+  --sky-card-glow: 0 0 32px rgba(59, 130, 246, 0.18);
+  --sky-star-glow: drop-shadow(0 0 4px rgba(191, 219, 254, 0.7));
+}
+
+[data-sky-layer="3"] {
+  --sky-accent: #10b981;
+  --sky-accent-bright: #34d399;
+  --sky-pill-bg: linear-gradient(135deg, #047857, #064e3b);
+  --sky-pill-border: rgba(52, 211, 153, 0.68);
+  --sky-glow: 0 2px 16px rgba(16, 185, 129, 0.42);
+  --sky-card-glow: 0 0 36px rgba(16, 185, 129, 0.22);
+  --sky-star-glow: drop-shadow(0 0 4px rgba(167, 243, 208, 0.78));
+}
+
+[data-sky-layer="4"] {
+  --sky-accent: #a855f7;
+  --sky-accent-bright: #c084fc;
+  --sky-pill-bg: linear-gradient(135deg, #6d28d9, #4c1d95);
+  --sky-pill-border: rgba(192, 132, 252, 0.74);
+  --sky-glow: 0 2px 18px rgba(168, 85, 247, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  --sky-card-glow: 0 0 42px rgba(168, 85, 247, 0.26);
+  --sky-star-glow: drop-shadow(0 0 5px rgba(233, 213, 255, 0.85));
+}
+
+[data-sky-layer="5"] {
+  --sky-accent: #f43f5e;
+  --sky-accent-bright: #fb7185;
+  --sky-pill-bg: linear-gradient(135deg, #be123c, #881337);
+  --sky-pill-border: rgba(251, 113, 133, 0.8);
+  --sky-glow: 0 3px 20px rgba(244, 63, 94, 0.54), inset 0 1px 0 rgba(255, 255, 255, 0.24);
+  --sky-card-glow: 0 0 46px rgba(244, 63, 94, 0.3);
+  --sky-star-glow: drop-shadow(0 0 6px rgba(255, 228, 230, 0.92));
+}
+
+[data-sky-layer="6"] {
+  --sky-accent: #f59e0b;
+  --sky-accent-bright: #fbbf24;
+  --sky-pill-bg: linear-gradient(135deg, #b45309, #78350f 55%, #d97706);
+  --sky-pill-border: rgba(253, 224, 71, 0.88);
+  --sky-glow: 0 3px 22px rgba(245, 158, 11, 0.6), inset 0 1px 0 rgba(254, 243, 199, 0.35);
+  --sky-card-glow: 0 0 52px rgba(245, 158, 11, 0.34);
+  --sky-star-glow: drop-shadow(0 0 6px rgba(254, 249, 195, 0.95));
+}
+
+[data-sky-layer="7"] {
+  --sky-accent: #eab308;
+  --sky-accent-bright: #fef08a;
+  --sky-pill-bg: linear-gradient(135deg, #1e1b4b 0%, #3730a3 46%, #701a75 100%);
+  --sky-pill-border: rgba(254, 240, 138, 0.96);
+  --sky-glow: 0 0 24px rgba(254, 240, 138, 0.56), 0 0 40px rgba(129, 140, 248, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  --sky-card-glow: 0 0 60px rgba(254, 240, 138, 0.28), 0 0 90px rgba(129, 140, 248, 0.22);
+  --sky-star-glow: drop-shadow(0 0 7px rgba(255, 255, 255, 1));
+}
+
+/* Üst Çubuk Beyaz Yıldız Puan Hapı */
+#topStreakPill.top-streak-pill,
+body.dark-mode #topStreakPill.top-streak-pill {
+  background: var(--sky-pill-bg, linear-gradient(135deg, #334155, #1e293b));
+  border-color: var(--sky-pill-border, rgba(148, 163, 184, 0.45));
+  color: #ffffff;
+  box-shadow: var(--sky-glow, none);
+  opacity: 1;
+}
+
+#topStreakPill .streak-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  filter: var(--sky-star-glow, none);
+}
+
+#topStreakPill .streak-count {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+#topStreakPill[data-sky-layer="7"] {
+  animation: skyZenithAura 3.2s ease-in-out infinite;
+}
+
+.sky-rank-card[data-sky-layer] {
+  border-color: color-mix(in srgb, var(--sky-accent) 45%, var(--paper-border));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.36), var(--sky-card-glow, none);
+}
+
+.sky-rank-card[data-sky-layer="7"] .sky-card-emblem {
+  filter: drop-shadow(0 0 10px rgba(254, 240, 138, 0.62));
+}
+
+@keyframes skyZenithAura {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(254, 240, 138, 0.48), 0 0 32px rgba(129, 140, 248, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(254, 240, 138, 0.78), 0 0 46px rgba(168, 85, 247, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #topStreakPill[data-sky-layer="7"] {
+    animation: none;
+  }
+}
+
+/* Ana Sayfa Tek Satırlık Sema Derecesi Şeridi */
+.arena-sky-strip {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 2px;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--paper-border) 60%, transparent);
+  background: transparent;
+  color: var(--paper-text);
+  cursor: pointer;
+  touch-action: manipulation;
+  text-align: left;
+  transition: opacity 0.15s ease;
+}
+
+.arena-sky-strip:hover {
+  opacity: 0.88;
+}
+
+.arena-sky-strip:focus-visible,
+.ps-sky-badge:focus-visible {
+  outline: 2px solid var(--sky-accent, var(--brand-accent));
+  outline-offset: 2px;
+}
+
+.arena-sky-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arena-sky-label {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--sky-accent, var(--paper-text));
+}
+
+.arena-sky-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arena-sky-stars-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  background: var(--sky-pill-bg, #334155);
+  border: 1px solid var(--sky-pill-border, rgba(148, 163, 184, 0.4));
+  box-shadow: var(--sky-glow, none);
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.arena-sky-stars-pill .sky-star-svg {
+  color: #ffffff;
+  filter: var(--sky-star-glow, none);
+}
+
+.arena-sky-bar {
+  width: 52px;
+  height: 3.5px;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--paper-border) 65%, transparent);
+  overflow: hidden;
+}
+
+.arena-sky-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--sky-accent, var(--brand-accent));
+}
+
+/* Profil Rütbe Nişanı */
+.ps-sky-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 4px 10px;
+  border: 1px solid var(--sky-pill-border, var(--paper-border));
+  border-radius: 9999px;
+  background: var(--sky-pill-bg, #334155);
+  box-shadow: var(--sky-glow, none);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ps-sky-star-val {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding-left: 6px;
+  border-left: 1px solid rgba(255, 255, 255, 0.24);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 800;
+}
+
+.ps-sky-star-val .sky-star-svg {
+  color: #ffffff;
+  filter: var(--sky-star-glow, none);
+}
+
+/* Doğru Cevaptan Yıldızhaneye Uçuşan Beyaz Yıldız Parçacıkları */
+.flying-star-particle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10050;
+  pointer-events: none;
+  will-change: transform, opacity;
+  color: #ffffff;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 14px rgba(254, 240, 138, 0.72));
+}

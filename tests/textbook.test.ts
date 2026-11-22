@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { parseDigitalTextbook, parseScopedConcepts } from '../src/data/textbook.ts';
 
 test('parseScopedConcepts: döneme özel ıstılah kayıtlarını doğrular ve aynı dönemde tekrarı reddeder', () => {
@@ -87,5 +87,25 @@ test('parseDigitalTextbook: yapısal dijital ders kitabı şemasını doğrular'
     const realBook = parseDigitalTextbook(rawRealBook);
     assert.equal(realBook.toplam_sayfa, 106);
     assert.ok(realBook.uniteler[0].bolumler.length > 10);
+  }
+});
+
+test('Tüm branş kavram katalogları parseScopedConcepts sözleşmesine uyar ve 💡 Hile: içerir', () => {
+  const conceptFiles = readdirSync('data/concepts')
+    .filter(name => name.endsWith('_concepts.json'))
+    .sort();
+  assert.ok(conceptFiles.length >= 35, 'En az 35 kavram kataloğu bulunmalı');
+
+  for (const file of conceptFiles) {
+    const raw = JSON.parse(readFileSync(`data/concepts/${file}`, 'utf8'));
+    const parsed = parseScopedConcepts(raw);
+    assert.ok(parsed.length > 0, `${file} en az 1 kavram içermeli`);
+    for (const c of parsed) {
+      assert.ok(c.tanim.includes('💡 Hile:'), `${file} ${c.id} tanımında 💡 Hile: bulunmalı`);
+      assert.ok(!c.tanim.includes('Sınav Şifresi'), `${file} ${c.id} tanımında eski Sınav Şifresi kalmamalı`);
+      if (c.sinav_ipucu) {
+        assert.ok(!c.sinav_ipucu.includes('Sınav Şifresi'), `${file} ${c.id} sinav_ipucu alanında eski Sınav Şifresi kalmamalı`);
+      }
+    }
   }
 });

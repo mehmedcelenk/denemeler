@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import ts from 'typescript';
+import { moduleSpecifiers, usesBrowserStorage } from './architecture-ast.js';
 
 const errors = [];
 const warnings = [];
@@ -12,7 +13,7 @@ const storageGatewayPath = path.join(root, 'app', 'storage.ts');
 const CORE_FEATURES = new Set(['answers', 'booklet', 'subjects', 'appearance']);
 const PLUGINS = new Set([
   'classroom', 'gamification', 'library', 'english',
-  'tde', 'formulas', 'board', 'print', 'prayer', 'annotations', 'search',
+  'tde', 'formulas', 'board', 'print', 'prayer', 'annotations', 'search', 'lessons', 'mascot',
 ]);
 const CARD_ID_PREFIX = '(?:bq|stem|opt|banner|qnum|btnMeal|btnTransTR|btnTransAR|btnXraySyntax|btnXrayPos|btnXraySound|btnXray|btnEliminateWrong|btnBoard|btnStar|btnCopy|btnEye|btnFormula|btnCompass|btnTrap|formulaBanner|hint|trap)_';
 const CARD_ID_ATTR_OR_SELECTOR_RE = new RegExp(`(?:\\bid\\s*=\\s*["']?|#)${CARD_ID_PREFIX}`);
@@ -92,11 +93,6 @@ function scan(dir) {
     // Kural 2: Dosya boyutu üst sınırı (ERROR)
     checkSourceSize(file, source);
 
-    // Kural 9: Tarayıcı kalıcılığına yalnızca merkezi kapı erişebilir
-    if (file !== storageGatewayPath && /\blocalStorage\b/.test(source)) {
-      errors.push(`💾 [Kalıcılık Kapısı] ${relFile}: localStorage yalnızca src/app/storage.ts içinde kullanılabilir.`);
-    }
-
     if (file.endsWith('.css')) continue;
 
     // Kural 4: Shared yardımcıların saflığı (DOM/window/storage bağımlılığı olmamalı)
@@ -108,6 +104,9 @@ function scan(dir) {
 
     const ast = ts.createSourceFile(file, source, ts.ScriptTarget.Latest, true);
     const dependencies = [];
+    if (file !== storageGatewayPath && usesBrowserStorage(ast)) {
+      errors.push(`💾 [Kalıcılık Kapısı] ${relFile}: tarayıcı depolaması yalnızca src/app/storage.ts içinde kullanılabilir.`);
+    }
 
     // Kural 8: Kalıcı depolama anahtarlarının tek kaynağı
     if (file !== storageKeysPath && hasAolStringLiteral(ast)) {
@@ -119,9 +118,7 @@ function scan(dir) {
       errors.push(`🆔 [Tekil Kart ID] ${relFile}: Soru kartı içindeki elemanlara bq_/stem_/opt_/btn*_ gibi ID veya getElementById verilemez; card-query.ts veya data-* öznitelikleri kullanın.`);
     }
 
-    for (const node of ast.statements) {
-      if (!ts.isImportDeclaration(node)) continue;
-      const spec = node.moduleSpecifier.text;
+    for (const spec of moduleSpecifiers(ast)) {
       if (!spec.startsWith('.')) continue;
 
       const target = path.resolve(path.dirname(file), spec);
@@ -161,7 +158,7 @@ function scan(dir) {
           fileFeatureMatch
           && targetFeatureMatch
           && CORE_FEATURES.has(fileFeatureMatch[1])
-          && PLUGINS.has(targetFeatureMatch[1])
+          && (PLUGINS.has(targetFeatureMatch[1]) || targetFeatureMatch[1] === 'welcome')
         ) {
           errors.push(`🧩 [Jenga İzolasyonu] ${relFile} -> ${spec}: çekirdek '${fileFeatureMatch[1]}' eklenti '${targetFeatureMatch[1]}' modülünü doğrudan import edemez.`);
         }

@@ -1,4 +1,5 @@
 import { state, store, notifyStateChange } from '../../app/state.ts';
+import { isCurrentStudy } from '../../app/study-context.ts';
 import { SUBJECTS, matchesSubject } from '../../data/subjects.js';
 import { loadAllSubjectData } from '../../data/questions.js';
 import type { Question } from '../../data/question.ts';
@@ -23,7 +24,9 @@ export async function openExamModal(): Promise<void> {
     container.innerHTML = '<div style="padding:20px; text-align:center; color:var(--paper-text-muted);">Dersler yükleniyor...</div>';
   }
 
+  const generation = state.studyGeneration;
   const questions = await loadAllSubjectData();
+  if (!isCurrentStudy(generation)) return;
   store.appendQuestions(questions);
 
   // Tüm derslerin alt kademelerini bul ve varsayılan olarak seçili yap

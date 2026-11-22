@@ -46,9 +46,9 @@ export function setAccentColor(colorKey: string) {
   const btn = document.getElementById('btnConsoleColorCycle');
   const svg = btn?.querySelector('svg');
   if (svg) svg.style.color = cfg.light;
-  if (btn) {
-    btn.title = `Vurgu Rengi: ${colorKey} (Değiştirmek için tıkla)`;
-  }
+  const dot = document.getElementById('consoleAccentDot');
+  if (dot) dot.style.backgroundColor = cfg.light;
+  if (btn) btn.title = `Vurgu Rengi: ${colorKey} (Değiştirmek için tıkla)`;
 }
 
 export function initAccentColor() {
@@ -77,8 +77,7 @@ export function setThemeMode(mode: 'dark' | 'light') {
 }
 
 export function initTheme() {
-  let theme: 'dark' | 'light' = 'light';
-  if (readString(StorageKeys.THEME) === 'dark') theme = 'dark';
+  const theme: 'dark' | 'light' = readString(StorageKeys.THEME) === 'light' ? 'light' : 'dark';
   setThemeMode(theme);
 }
 
@@ -211,7 +210,8 @@ export function setColumnCount(n: number) {
   if (cycleBtn) {
     const label = cycleBtn.querySelector('span');
     if (label) label.textContent = `Sütun Düzeni: ${n}`;
-    cycleBtn.title = `Sütun Düzeni: ${n} Sütun (Artırmak için tıkla)`;
+    cycleBtn.dataset.columns = String(n);
+    cycleBtn.title = `Sütun tercihi: ${n} (Dar ekranlarda daha az sütun gösterilir)`;
   }
 
   const container = document.getElementById('bookletPagesContainer');
@@ -266,7 +266,9 @@ export function zoomOut() {
 /* ==================== KONSOL MENÜSÜ & FULLSCREEN ==================== */
 export function toggleConsoleMenu() {
   const popup = document.getElementById('consoleMenuPopup');
-  popup?.classList.toggle('open');
+  if (!popup) return;
+  const isOpen = popup.classList.toggle('open');
+  document.getElementById('btnMasterConsole')?.setAttribute('aria-expanded', String(isOpen));
 }
 
 export function toggleFullscreenFocusMode() {

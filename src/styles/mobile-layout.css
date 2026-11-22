@@ -2,10 +2,12 @@
 @media (max-width: 640px) {
   .top-center-badge-container {
     top: calc(8px + var(--safe-top));
-    gap: 6px;
-    max-width: calc(100vw - 12px);
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 40px;
   }
-  .top-center-pill { font-size: 14px; padding: 6px 14px; gap: 6px; max-width: 160px; }
+  .top-center-pill { font-size: 14px; padding: 6px 14px; gap: 6px; max-width: calc(100vw - 164px); }
   .badge-icon { font-size: 18px; }
   .badge-text { font-size: 14px; max-width: 100px; }
   .badge-caret { font-size: 11px; }
@@ -13,7 +15,9 @@
   .features-toggle-icon { font-size: 16px; }
   .top-prayer-pill { font-size: 13px; padding: 6px 10px; }
   .prayer-text { font-size: 13px; }
-  .top-streak-pill { font-size: 13px; padding: 2px 4px; border: none; background: transparent; }
+  .top-streak-pill { top: 4px; right: 10px; font-size: 13px; padding: 4px 10px; }
+  .top-room-pill { max-width: min(180px, 55vw); min-width: 0; padding: 6px 10px; }
+  .room-pill-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .streak-icon { font-size: 15px; }
   .streak-count { font-size: 13px; }
   .top-center-pill,
@@ -41,7 +45,7 @@
   /* Mobilde Floating Menüde Sütun Butonu Gizleme */
   #btnConsoleColumnCycle { display: none !important; }
   .console-tools-grid.grid-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .booklet-stream-container { padding: calc(60px + var(--safe-top)) 6px calc(90px + var(--safe-bottom)) 6px; width: 100%; max-width: 100%; box-sizing: border-box; }
+  .booklet-stream-container { padding: calc(56px + var(--safe-top)) 6px calc(90px + var(--safe-bottom)) 6px; width: 100%; max-width: 100%; box-sizing: border-box; }
   .booklet-page { width: 100% !important; max-width: 100% !important; height: auto !important; min-height: auto !important; padding: 18px 12px 14px 12px; box-sizing: border-box; }
   .page-columns-body,
   .page-columns-body[class*="cols-"] {
@@ -86,4 +90,17 @@
     font-weight: 700;
   }
   .top-center-pill .badge-caret { display: none; }
+}
+
+/* Seçim korunur; dar ekranda kartlar okunabilir genişlikte kalır. */
+@media screen and (min-width: 641px) and (max-width: 900px) {
+  .page-columns-body.cols-3,
+  .page-columns-body.cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  #btnConsoleColumnCycle[data-columns="3"] span::after,
+  #btnConsoleColumnCycle[data-columns="4"] span::after { content: ' (2 görünür)'; }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1150px) {
+  .page-columns-body.cols-4 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  #btnConsoleColumnCycle[data-columns="4"] span::after { content: ' (3 görünür)'; }
 }

@@ -115,6 +115,22 @@ CREATE TABLE IF NOT EXISTS question_embeddings (
 );
 
 -- ------------------------------------------------------------------------------
+-- 5B. ÖN-ÜRETİLMİŞ HOCA ANLATIMLARI (question_lessons) [EVREN Öğretmen Rehberi]
+-- src/data/lesson.ts QuestionLesson sözleşmesinin SQL karşılığı
+-- ------------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS question_lessons (
+    question_id INTEGER PRIMARY KEY REFERENCES questions(id) ON DELETE CASCADE,
+    subject TEXT NOT NULL,
+    payload JSONB NOT NULL,
+    model TEXT,
+    version SMALLINT NOT NULL DEFAULT 1,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+
+    CONSTRAINT chk_question_lessons_payload CHECK (jsonb_typeof(payload) = 'object')
+);
+
+-- ------------------------------------------------------------------------------
 -- 6. KULLANICI PROFİLLERİ (user_profiles) [Supabase Auth Entegre]
 -- ------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS user_profiles (
@@ -122,10 +138,13 @@ CREATE TABLE IF NOT EXISTS user_profiles (
     username TEXT UNIQUE,
     display_name TEXT NOT NULL DEFAULT '',
     program_mode TEXT NOT NULL DEFAULT 'AOIHL',
+    mascot_id TEXT NOT NULL DEFAULT 'cat',
     water_streak INTEGER NOT NULL DEFAULT 0,
     last_streak_date TEXT,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+
+    CONSTRAINT chk_user_profiles_mascot_id CHECK (mascot_id IN ('cat', 'dog', 'fish', 'bird', 'owl', 'raven', 'none'))
 );
 
 -- ------------------------------------------------------------------------------
@@ -137,8 +156,13 @@ CREATE TABLE IF NOT EXISTS user_progress (
     starred JSONB NOT NULL DEFAULT '[]'::jsonb,        -- [qid1, qid2, ...]
     rematch JSONB NOT NULL DEFAULT '[]'::jsonb,        -- [qid1, qid2, ...]
     eliminated_choices JSONB NOT NULL DEFAULT '{}'::jsonb,
+    responsible_courses JSONB NOT NULL DEFAULT '{}'::jsonb, -- { [programMode]: ["TÜRK DİLİ VE EDEBİYATI – 3", ...] }
+    stars INTEGER NOT NULL DEFAULT 0,                 -- 7 Sema Katmanı yıldız birikimi
     last_session JSONB,                               -- { subject, questionId, timestamp }
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+
+    CONSTRAINT chk_user_progress_responsible_courses_obj CHECK (jsonb_typeof(responsible_courses) = 'object'),
+    CONSTRAINT chk_user_progress_stars_nonneg CHECK (stars >= 0)
 );
 
 -- ------------------------------------------------------------------------------
@@ -160,6 +184,7 @@ CREATE INDEX IF NOT EXISTS idx_concepts_term ON concepts(term);
 CREATE INDEX IF NOT EXISTS idx_concepts_tanim_trgm ON concepts USING gin (tanim gin_trgm_ops);
 
 CREATE INDEX IF NOT EXISTS idx_qc_concept ON question_concepts(concept_id);
+CREATE INDEX IF NOT EXISTS idx_question_lessons_subject ON question_lessons(subject);
 CREATE INDEX IF NOT EXISTS idx_user_profiles_username ON user_profiles(username);
 
 -- Not: pgvector HNSW indeksi 2000 boyut sınırına sahiptir. 4096-boyutlu TR-TEB embedding'leri
@@ -194,6 +219,11 @@ CREATE TRIGGER set_user_profiles_timestamp
 DROP TRIGGER IF EXISTS set_user_progress_timestamp ON user_progress;
 CREATE TRIGGER set_user_progress_timestamp
     BEFORE UPDATE ON user_progress
+    FOR EACH ROW EXECUTE FUNCTION trigger_set_timestamp();
+
+DROP TRIGGER IF EXISTS set_question_lessons_timestamp ON question_lessons;
+CREATE TRIGGER set_question_lessons_timestamp
+    BEFORE UPDATE ON question_lessons
     FOR EACH ROW EXECUTE FUNCTION trigger_set_timestamp();
 
 -- ------------------------------------------------------------------------------
@@ -285,6 +315,7 @@ ALTER TABLE subjects ENABLE ROW LEVEL SECURITY;
 ALTER TABLE concepts ENABLE ROW LEVEL SECURITY;
 ALTER TABLE question_concepts ENABLE ROW LEVEL SECURITY;
 ALTER TABLE question_embeddings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE question_lessons ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_profiles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_progress ENABLE ROW LEVEL SECURITY;
 
@@ -317,6 +348,12 @@ DROP POLICY IF EXISTS "Public read question_embeddings" ON question_embeddings;
 CREATE POLICY "Public read question_embeddings" 
     ON question_embeddings FOR SELECT 
     TO anon, authenticated 
+    USING (true);
+
+DROP POLICY IF EXISTS "Public read question_lessons" ON question_lessons;
+CREATE POLICY "Public read question_lessons"
+    ON question_lessons FOR SELECT
+    TO anon, authenticated
     USING (true);
 
 -- 2. Kullanıcı Profil ve İlerleme Politikaları (Sadece Kendi Verisine Erişim)
@@ -387,6 +424,12 @@ DROP POLICY IF EXISTS "Service role write question_embeddings" ON question_embed
 CREATE POLICY "Service role write question_embeddings" 
     ON question_embeddings FOR ALL 
     TO service_role 
+    USING (true) WITH CHECK (true);
+
+DROP POLICY IF EXISTS "Service role write question_lessons" ON question_lessons;
+CREATE POLICY "Service role write question_lessons"
+    ON question_lessons FOR ALL
+    TO service_role
     USING (true) WITH CHECK (true);
 
 -- ------------------------------------------------------------------------------

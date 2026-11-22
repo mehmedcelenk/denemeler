@@ -1,207 +1,247 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""MEB Din Kültürü ve Ahlak Bilgisi (1–8) Dönem Bazlı Atomik ve Sınav Şifreli Kavram Katalogu."""
+"""MEB DIN Yüksek Hassasiyetli Kanonik Kavram ve Terim Sözlüğü."""
 
 from typing import Any, Dict, List
 
 PRECISE_DIN_CONCEPTS: List[Dict[str, Any]] = [
-    # ==========================================
-    # DİN 1: BİLGİ, İNANÇ VE İBADET (ATOMİK)
-    # ==========================================
     {
-        "id": "din_bilgi_kaynaklari",
+        "id": 'din_bilgi_kaynaklari',
         "term": "İslam'da Doğru Bilgi Kaynakları (Selim Akıl, Sadık Haber, Salim Duyular)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 16},
-        "tanim_by_donem": {
-            1: (
-                "İslam'da kesin bilgiye ulaştıran $3$ güvenilir kaynak vardır: **Selim Akıl** (ön yargısız sağlam akıl), **Salim Duyular** (sağlıklı beş duyu) ve **Sadık Haber** (Vahiy ile yalan üzere birleşmesi imkânsız topluluğun aktardığı **Mütevatir Haber**).\n"
-                "💡 Sınav Şifresi: Rüya, ilham, sezgi ve fal kişiyi bağlar; İslam'da **bağlayıcı dinî bilgi kaynağı DEĞİLDİR**!"
-            ),
-        },
-        "pattern": r"selim akıl|sadık haber|salim duyu[a-zçğıöşü]*|mütevatir|vahiy|bilgi ahlakı|taassup",
+        "sayfa": 16,
+        "tanim": "İslam'da kesin bilgiye ulaştıran $3$ güvenilir kaynak vardır: **Selim Akıl** (ön yargısız sağlam akıl), **Salim Duyular** (sağlıklı beş duyu) ve **Sadık Haber** (Vahiy ile yalan üzere birleşmesi imkânsız topluluğun aktardığı **Mütevatir Haber**).\n💡 Hile: Rüya, ilham, sezgi ve fal kişiyi bağlar; İslam'da **bağlayıcı dinî bilgi kaynağı DEĞİLDİR**!",
+        "pattern": '\\bselim akıl\\b|\\bsadık haber\\b|\\bsalim duyu[a-zçğıöşü]*|\\bmütevatir\\b|\\bvahiy\\b|\\bbilgi ahlakı\\b|\\btaassup\\b',
     },
     {
-        "id": "din_iman_tasdik_ikrar",
-        "term": "İman: Tasdik, İkrar, Tahkikî ve Taklidî İman",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 24},
-        "tanim_by_donem": {
-            1: (
-                "İmanın özü **kalp ile gönülden onaylamak (Tasdik)**, bunu dil ile söylemek ise **İkrar**'dır. Çevreden görerek araştırmadan inanmaya **Taklidî İman**, delilleriyle araştırıp bilinçli inanmaya **Tahkikî İman** denir.\n"
-                "💡 Sınav Şifresi: İmanın vazgeçilmez şartı (rüknü) **Kalp ile Tasdik**'tir; Taklidî iman şüphelerle sarsılabilirken **Tahkikî iman** sarsılmaz!"
-            ),
-        },
-        "pattern": r"tasdik[a-zçğıöşü]*|ikrar[a-zçğıöşü]*|taklidî iman|tahkikî iman|taklidi iman|tahkiki iman|hidayet",
+        "id": 'din_iman_tasdik_ikrar',
+        "term": 'İman: Tasdik, İkrar, Tahkikî ve Taklidî İman',
+        "sayfa": 24,
+        "tanim": "İmanın özü **kalp ile gönülden onaylamak (Tasdik)**, bunu dil ile söylemek ise **İkrar**'dır. Çevreden görerek araştırmadan inanmaya **Taklidî İman**, delilleriyle araştırıp bilinçli inanmaya **Tahkikî İman** denir.\n💡 Hile: İmanın vazgeçilmez şartı (rüknü) **Kalp ile Tasdik**'tir; Taklidî iman şüphelerle sarsılabilirken **Tahkikî iman** sarsılmaz!",
+        "pattern": '\\btasdik[a-zçğıöşü]*|\\bikrar[a-zçğıöşü]*|\\btaklidî iman\\b|\\btahkikî iman\\b|\\btaklidi iman\\b|\\btahkiki iman\\b|\\bhidayet\\b',
     },
     {
-        "id": "din_efali_mukellefin",
+        "id": 'din_efali_mukellefin',
         "term": "Ef'âl-i Mükellefîn (Farz, Vacip, Sünnet, Mübah, Mekruh, Haram)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 42},
-        "tanim_by_donem": {
-            1: (
-                "Akıllı ve ergenlik çağına ulaşmış (**Mükellef**) Müslüman'ın davranış hükümleridir:\n"
-                "• **Farz:** Kesin delille emredilenler (Namaz, oruç, zekât — *Farz-ı Ayn*; Cenaze namazı — *Farz-ı Kifaye*).\n"
-                "• **Vacip:** Farz kadar kesin olmayan delille emredilenler (**Kurban, Vitir ve Bayram namazı, Fıtır sadakası**).\n"
-                "💡 Sınav Şifresi: Hoş görülmeyene **Mekruh**, serbest olana **Mübah (Câiz)**, yalnızca Allah rızası için samimiyetle yapmaya **İhlas** (gösterişe **Riya**) denir!"
-            ),
-        },
-        "pattern": r"ef'âl-i mükellefîn|efal-i mükellefin|\bfarz[a-zçğıöşü]*|\bvacip[a-zçğıöşü]*|\bsünnet[a-zçğıöşü]*|\bmüstehap|\bmendup|\bmübah|\bmekruh|\bharam[a-zçğıöşü]*|mükellef[a-zçğıöşü]*|\bihlas\b|\briya\b|salih amel",
-    },
-
-    # ==========================================
-    # DİN 2: DEĞERLER, MEDENİYET VE SANAT (ATOMİK)
-    # ==========================================
-    {
-        "id": "din_dort_erdem",
-        "term": "Dört Temel Ahlaki Erdem (Hikmet, İffet, Şecaat, Adalet)",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 88},
-        "tanim_by_donem": {
-            2: (
-                "İslam ahlakında insan ruhunun dengesini sağlayan $4$ ana sütundur: **Hikmet** (bilgelik, doğruyu yanlıştan ayırma), **İffet** (haramdan sakınma, namus ve ölçülülük), **Şecaat** (cesaret ve yiğitlik), **Adalet** (herkese hakkını verme).\n"
-                "💡 Sınav Şifresi: Korkaklık ile saldırganlığın ortası **Şecaat**; hikmet, iffet ve şecaatin birleşiminden doğan en üst denge **Adalet**'tir!"
-            ),
-        },
-        "pattern": r"\bhikmet\b|\badalet\b|\biffet\b|\bşecaat\b|tevhit|nübüvvet",
+        "sayfa": 42,
+        "tanim": "Akıllı ve ergenlik çağına ulaşmış (**Mükellef**) Müslüman'ın davranış hükümleridir:\n• **Farz:** Kesin delille emredilenler (Namaz, oruç, zekât — *Farz-ı Ayn*; Cenaze namazı — *Farz-ı Kifaye*).\n• **Vacip:** Farz kadar kesin olmayan delille emredilenler (**Kurban, Vitir ve Bayram namazı, Fıtır sadakası**).\n💡 Hile: Hoş görülmeyene **Mekruh**, serbest olana **Mübah (Câiz)**, yalnızca Allah rızası için samimiyetle yapmaya **İhlas** (gösterişe **Riya**) denir!",
+        "pattern": "\\bef'âl-i mükellefîn\\b|\\befal-i mükellefin\\b|\\bfarz[a-zçğıöşü]*|\\bvacip[a-zçğıöşü]*|\\bsünnet[a-zçğıöşü]*|\\bmüstehap\\b|\\bmendup\\b|\\bmübah\\b|\\bmekruh\\b|\\bharam[a-zçğıöşü]*|\\bmükellef[a-zçğıöşü]*|\\bihlas\\b|\\briya\\b|\\bsalih amel\\b",
     },
     {
-        "id": "din_cami_ve_islam_sanati",
-        "term": "Cami Mimarisi, İslam Sanatları ve Klasik Eserler",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 102},
-        "tanim_by_donem": {
-            2: (
-                "Camide imamın namaz kıldırdığı kıble oyuğu **Mihrap**, Cuma/Bayram hutbesi okunan yüksek merdivenli yer **Minber**, sohbet edilen **Vaaz Kürsüsü**, avludaki abdest yeri **Şadırvan**'dır.\n"
-                "💡 Sınav Şifresi: Güzel yazı sanatı **Hüsnühat**, altınlama süsleme **Tezhip**, su üstünde boya sanatı **Ebru**'dur. Hicaz (Mekke-Medine), Kudüs ve Endülüs (Kurtuba) İslam medeniyetinin kalbidir."
-            ),
-        },
-        "pattern": r"medeniyet[a-zçğıöşü]*|mihrap|minber|şadırvan|şerefe|hüsnühat|tezhip|ebru|minyatür|kutadgu bilig|dîvân-ı hikmet|lugâti't-türk|ibn-i haldun|ezher camii|hicaz'a gitmek|\bhac\b|\bzekât\b",
+        "id": 'din_dort_erdem',
+        "term": 'Dört Temel Ahlaki Erdem (Hikmet, İffet, Şecaat, Adalet)',
+        "sayfa": 88,
+        "tanim": "İslam ahlakında insan ruhunun dengesini sağlayan $4$ ana sütundur: **Hikmet** (bilgelik, doğruyu yanlıştan ayırma), **İffet** (haramdan sakınma, namus ve ölçülülük), **Şecaat** (cesaret ve yiğitlik), **Adalet** (herkese hakkını verme).\n💡 Hile: Korkaklık ile saldırganlığın ortası **Şecaat**; hikmet, iffet ve şecaatin birleşiminden doğan en üst denge **Adalet**'tir!",
+        "pattern": '\\bhikmet\\b|\\badalet\\b|\\biffet\\b|\\bşecaat\\b|\\btevhit\\b|\\bnübüvvet\\b',
     },
-
-    # ==========================================
-    # DİN 3: ALLAH-İNSAN İLİŞKİSİ VE GENÇ SAHABİLER (ATOMİK)
-    # ==========================================
     {
-        "id": "din_esmaul_husna_ve_sifatlar",
+        "id": 'din_cami_ve_islam_sanati',
+        "term": 'Cami Mimarisi, İslam Sanatları ve Klasik Eserler',
+        "sayfa": 102,
+        "tanim": "Camide imamın namaz kıldırdığı kıble oyuğu **Mihrap**, Cuma/Bayram hutbesi okunan yüksek merdivenli yer **Minber**, sohbet edilen **Vaaz Kürsüsü**, avludaki abdest yeri **Şadırvan**'dır.\n💡 Hile: Güzel yazı sanatı **Hüsnühat**, altınlama süsleme **Tezhip**, su üstünde boya sanatı **Ebru**'dur. Hicaz (Mekke-Medine), Kudüs ve Endülüs (Kurtuba) İslam medeniyetinin kalbidir.",
+        "pattern": "\\bmedeniyet[a-zçğıöşü]*|\\bmihrap\\b|\\bminber\\b|\\bşadırvan\\b|\\bşerefe\\b|\\bhüsnühat\\b|\\btezhip\\b|\\bebru\\b|\\bminyatür\\b|\\bkutadgu bilig\\b|\\bdîvân-ı hikmet\\b|\\blugâti't-türk\\b|\\bibn-i haldun\\b|\\bezher camii\\b|\\bhicaz'a gitmek\\b|\\bhac\\b|\\bzekât\\b",
+    },
+    {
+        "id": 'din_esmaul_husna_ve_sifatlar',
         "term": "Allah'ın Sıfatları (Zâtî & Sübûtî) ve Esmâü'l-Hüsnâ",
-        "donemler": [3],
-        "sayfa_by_donem": {3: 18},
-        "tanim_by_donem": {
-            3: (
-                "Yalnız Allah'a ait olanlar **Zâtî Sıfatlar** (*Vücud, Kıdem, Beka, Vahdaniyet, Muhalefetün li'l-havâdis, Kıyam bi-nefsihî*); sınırlı bir payı insana da verilenler **Sübûtî Sıfatlar**'dır (*Hayat, İlim, Semi, Basar, İrade, Kudret, Kelam, Tekvin*).\n"
-                "💡 Sınav Şifresi: **Muhyî** (Can/hayat veren), **Bârî / Hâlık** (Yoktan yaratan), **Kayyûm** (Kâinatı ayakta tutan ve yöneten), **Rezzâk** (Rızık veren), **Tekvin** (Yaratma sıfatı)."
-            ),
-        },
-        "pattern": r"esmâü'l-hüsnâ|esmaül hüsna|zâtî sıfat[a-zçğıöşü]*|sübûtî sıfat[a-zçğıöşü]*|kayyûm|muhyî|bârî|rezzâk|kıdem|beka|kelam|vahdaniyet|tekvin|irtibat yolları[a-zçğıöşü]*|tövbe|istiğfar",
+        "sayfa": 18,
+        "tanim": "Yalnız Allah'a ait olanlar **Zâtî Sıfatlar** (*Vücud, Kıdem, Beka, Vahdaniyet, Muhalefetün li'l-havâdis, Kıyam bi-nefsihî*); sınırlı bir payı insana da verilenler **Sübûtî Sıfatlar**'dır (*Hayat, İlim, Semi, Basar, İrade, Kudret, Kelam, Tekvin*).\n💡 Hile: **Muhyî** (Can/hayat veren), **Bârî / Hâlık** (Yoktan yaratan), **Kayyûm** (Kâinatı ayakta tutan ve yöneten), **Rezzâk** (Rızık veren), **Tekvin** (Yaratma sıfatı).",
+        "pattern": "\\besmâü'l-hüsnâ\\b|\\besmaül hüsna\\b|\\bzâtî sıfat[a-zçğıöşü]*|\\bsübûtî sıfat[a-zçğıöşü]*|\\bkayyûm\\b|\\bmuhyî\\b|\\bbârî\\b|\\brezzâk\\b|\\bkıdem\\b|\\bbeka\\b|\\bkelam\\b|\\bvahdaniyet\\b|\\btekvin\\b|\\birtibat yolları[a-zçğıöşü]*|\\btövbe\\b|\\bistiğfar\\b",
     },
     {
-        "id": "din_genc_sahabiler",
+        "id": 'din_genc_sahabiler',
         "term": "Asr-ı Saadet'in Örnek Genç Sahabileri",
-        "donemler": [3],
-        "sayfa_by_donem": {3: 48},
-        "tanim_by_donem": {
-            3: (
-                "Hz. Peygamber'in gençlere verdiği değerin simgesi olan öncü sahabilerdir:\n"
-                "• **Mus'ab bin Umeyr:** Medine'ye gönderilen **ilk öğretmen (muallim)**.\n"
-                "• **Muaz bin Cebel:** Yemen'e gönderilen genç **vali ve kadı (hâkim)**.\n"
-                "• **Üsame bin Zeyd:** $18$ yaşında Bizans seferine atanan **en genç ordu komutanı**.\n"
-                "💡 Sınav Şifresi: **Erkam bin Ebi'l-Erkam** evini (*Dârü'l-Erkam*) ilk gizli İslam okuluna açan gençtir; **Cafer bin Ebi Talip** Habeşistan Kralı Necaşi huzurundaki sözcüdür!"
-            ),
-        },
-        "pattern": r"mus'ab bin umeyr|musab bin umeyr|muaz bin cebel|üsame bin zeyd|hz\. fatma|erkam|hilfü'l-fudûl|hilfulfudul",
-    },
-
-    # ==========================================
-    # DİN 4: MEZHEPLER, KADER VE SOSYAL HAYAT (ATOMİK)
-    # ==========================================
-    {
-        "id": "din_kader_kaza_tevekkul",
-        "term": "Kader, Kaza, İrade ve Tevekkül",
-        "donemler": [3, 4],
-        "sayfa_by_donem": {3: 32, 4: 22},
-        "tanim_by_donem": {
-            3: (
-                "**Kader** Allah'ın evrendeki her şeyi bir ölçü ve planla bilmesi; **Kaza** bu planın zamanı gelince gerçekleşmesidir. **Tevekkül** ise tıpkı bir öğrencinin sınava tüm gücüyle çalıştıktan veya çiftçinin tohumu ektikten sonra sonucu gönül huzuruyla Allah'a bırakmasıdır.\n"
-                "💡 Sınav Şifresi: İnsanın seçme özgürlüğüne **Cüz'î İrade** (sorumluluk kaynağı), Allah'ın sınırsız iradesine **Küllî İrade** denir!"
-            ),
-        },
-        "pattern": r"\bkader\b|\bkaza\b|tevekkül|cüz'î irade|cüzi irade|küllî irade|ecel|rızık",
+        "sayfa": 48,
+        "tanim": "Hz. Peygamber'in gençlere verdiği değerin simgesi olan öncü sahabilerdir:\n• **Mus'ab bin Umeyr:** Medine'ye gönderilen **ilk öğretmen (muallim)**.\n• **Muaz bin Cebel:** Yemen'e gönderilen genç **vali ve kadı (hâkim)**.\n• **Üsame bin Zeyd:** $18$ yaşında Bizans seferine atanan **en genç ordu komutanı**.\n💡 Hile: **Erkam bin Ebi'l-Erkam** evini (*Dârü'l-Erkam*) ilk gizli İslam okuluna açan gençtir; **Cafer bin Ebi Talip** Habeşistan Kralı Necaşi huzurundaki sözcüdür!",
+        "pattern": "\\bmus'ab bin umeyr\\b|\\bmusab bin umeyr\\b|\\bmuaz bin cebel\\b|\\büsame bin zeyd\\b|\\bhz\\. fatma\\b|\\berkam\\b|\\bhilfü'l-fudûl\\b|\\bhilfulfudul\\b",
     },
     {
-        "id": "din_mezhepler_itikadi_fikhi",
-        "term": "İslam Düşüncesinde Yorumlar (İtikadi ve Fıkhi Mezhepler)",
-        "donemler": [4],
-        "sayfa_by_donem": {4: 84},
-        "tanim_by_donem": {
-            4: (
-                "Mezhepler dinin kendisi değil, coğrafi ve kültürel farklılıklarla oluşan **dini anlama biçimleridir**.\n"
-                "• **İnanç (İtikadi) Mezhepleri:** **Mâtürîdîlik** (Ebu Mansur el-Mâtürîdî), **Eş'arîlik** ve **Şia**.\n"
-                "• **İbadet/Hukuk (Ameli-Fıkhi) Mezhepleri:** **Hanefilik** (İmam-ı Azam Ebu Hanife — *Fıkh-ı Ekber*), **Şafiilik** (İmam Şafii — *er-Risâle*), **Malikilik** (İmam Malik — *el-Muvatta*), **Hanbelilik** (Ahmed bin Hanbel — *el-Müsned*) ve **Caferilik**.\n"
-                "💡 Sınav Şifresi: **Mâtürîdîlik ve Eş'arîlik İnanç (İtikat)**; **Hanefi, Şafii, Maliki, Hanbeli ise Ameli (Fıkıh)** mezhebidir!"
-            ),
-        },
-        "pattern": r"itikadi|fıkhi|ameli|hanefilik|şafiilik|malikilik|hanbelilik|mâtürîdî|maturidi|eş'arî|eşari|caferilik|imam-ı azam|ebu hanife|imam şafii",
+        "id": 'din_kader_kaza_tevekkul_d3',
+        "term": 'Kader, Kaza, İrade ve Tevekkül',
+        "sayfa": 32,
+        "tanim": "**Kader** Allah'ın evrendeki her şeyi bir ölçü ve planla bilmesi; **Kaza** bu planın zamanı gelince gerçekleşmesidir. **Tevekkül** ise tıpkı bir öğrencinin sınava tüm gücüyle çalıştıktan veya çiftçinin tohumu ektikten sonra sonucu gönül huzuruyla Allah'a bırakmasıdır.\n💡 Hile: İnsanın seçme özgürlüğüne **Cüz'î İrade** (sorumluluk kaynağı), Allah'ın sınırsız iradesine **Küllî İrade** denir!",
+        "pattern": "\\bkader\\b|\\bkaza\\b|\\btevekkül\\b|\\bcüz'î irade\\b|\\bcüzi irade\\b|\\bküllî irade\\b|\\becel\\b|\\brızık\\b",
     },
-
-    # ==========================================
-    # DİN 5 & 6: AHİRET, HZ. MUHAMMED, BİLİM VE ANADOLU ERENLERİ (ATOMİK)
-    # ==========================================
     {
-        "id": "din_ahiret_ve_cenaze",
+        "id": 'din_kader_kaza_tevekkul_d4',
+        "term": 'Kader, Kaza, İrade ve Tevekkül',
+        "sayfa": 22,
+        "tanim": "Allah'ın ezelî ilmiyle her şeyi bir ölçü, plan ve kanuna göre takdir etmesi Kader; zamanı gelince yaratıp gerçekleştirmesi Kaza; kulun üzerine düşeni yaptıktan sonra Allah'a güvenmesi Tevekkül'dür.\n💡 Hile: Allah'ın her şeyi ölçü ve plana göre takdir etmesi Kader; vakti gelince gerçekleşmesi Kaza; kulun tedbirden sonra Allah'a güvenmesi Tevekkül'dür.",
+        "pattern": "\\bkader\\b|\\bkaza\\b|\\btevekkül\\b|\\bcüz'î irade\\b|\\bcüzi irade\\b|\\bküllî irade\\b|\\becel\\b|\\brızık\\b",
+    },
+    {
+        "id": 'din_mezhepler_itikadi_fikhi',
+        "term": 'İslam Düşüncesinde Yorumlar (İtikadi ve Fıkhi Mezhepler)',
+        "sayfa": 84,
+        "tanim": "Mezhepler dinin kendisi değil, coğrafi ve kültürel farklılıklarla oluşan **dini anlama biçimleridir**.\n• **İnanç (İtikadi) Mezhepleri:** **Mâtürîdîlik** (Ebu Mansur el-Mâtürîdî), **Eş'arîlik** ve **Şia**.\n• **İbadet/Hukuk (Ameli-Fıkhi) Mezhepleri:** **Hanefilik** (İmam-ı Azam Ebu Hanife — *Fıkh-ı Ekber*), **Şafiilik** (İmam Şafii — *er-Risâle*), **Malikilik** (İmam Malik — *el-Muvatta*), **Hanbelilik** (Ahmed bin Hanbel — *el-Müsned*) ve **Caferilik**.\n💡 Hile: **Mâtürîdîlik ve Eş'arîlik İnanç (İtikat)**; **Hanefi, Şafii, Maliki, Hanbeli ise Ameli (Fıkıh)** mezhebidir!",
+        "pattern": "\\bitikadi\\b|\\bfıkhi\\b|\\bameli\\b|\\bhanefilik\\b|\\bşafiilik\\b|\\bmalikilik\\b|\\bhanbelilik\\b|\\bmâtürîdî\\b|\\bmaturidi\\b|\\beş'arî\\b|\\beşari\\b|\\bcaferilik\\b|\\bimam-ı azam\\b|\\bebu hanife\\b|\\bimam şafii\\b",
+    },
+    {
+        "id": 'din_ahiret_ve_cenaze',
         "term": "Ahiret Hayatının Aşamaları (Berzah, Ba's, Haşr, Mizan) ve Cenaze",
-        "donemler": [5],
-        "sayfa_by_donem": {5: 16},
-        "tanim_by_donem": {
-            5: (
-                "Ölümden yeniden dirilişe kadar geçen kabir hayatına **Berzah**; İsrafil'in Sûr'a ikinci üflemesiyle dirilişe **Ba's**; toplanma meydanına **Mahşer (Haşr)**; sevap-günah terazisine **Mizan** denir.\n"
-                "💡 Sınav Şifresi: Vefat eden Müslüman'ın yıkanması (**Techiz/Gasil**), kefenlenmesi (**Tekfin**), **rükû ve secdesi olmayan** cenaze namazı (**Farz-ı Kifaye**) ve defnedilmesi (**Defin**)."
-            ),
-        },
-        "pattern": r"ahiret[a-zçğıöşü]*|berzah|ba's|haşr|mahşer|mizan|kıyamet|sûr\b|israfil|cenaze namazı|farz-ı kifaye|teçhiz|tekfin|defin|taziye|vasiyet",
+        "sayfa": 16,
+        "tanim": "Ölümden yeniden dirilişe kadar geçen kabir hayatına **Berzah**; İsrafil'in Sûr'a ikinci üflemesiyle dirilişe **Ba's**; toplanma meydanına **Mahşer (Haşr)**; sevap-günah terazisine **Mizan** denir.\n💡 Hile: Vefat eden Müslüman'ın yıkanması (**Techiz/Gasil**), kefenlenmesi (**Tekfin**), **rükû ve secdesi olmayan** cenaze namazı (**Farz-ı Kifaye**) ve defnedilmesi (**Defin**).",
+        "pattern": "\\bahiret[a-zçğıöşü]*|\\bberzah\\b|\\bba's\\b|\\bhaşr\\b|\\bmahşer\\b|\\bmizan\\b|\\bkıyamet\\b|\\bsûr\\b|\\bisrafil\\b|\\bcenaze namazı\\b|\\bfarz-ı kifaye\\b|\\bteçhiz\\b|\\btekfin\\b|\\bdefin\\b|\\btaziye\\b|\\bvasiyet\\b",
     },
     {
-        "id": "din_hz_muhammed_ve_ehlibeyt",
+        "id": 'din_hz_muhammed_ve_ehlibeyt',
         "term": "Hz. Muhammed'in Peygamberlik Yönü (Tebliğ, Tebyin, Teşri, Temsil)",
-        "donemler": [5],
-        "sayfa_by_donem": {5: 48},
-        "tanim_by_donem": {
-            5: (
-                "Hz. Peygamber'in görevleri: Vahyi eksiksiz iletmesi **Tebliğ**, kapalı ayetleri açıklaması **Tebyin**, dinî hüküm koyması **Teşri**, yaşayarak örnek olması **Temsil (Üsve-i Hasene)** ve peygamberlerin sonuncusu olması **Hâtemü'l-Enbiyâ**'dır.\n"
-                "💡 Sınav Şifresi: **Tebliğ** = İletmek, **Tebyin** = Açıklamak/Beyan etmek, **Teşri** = Hüküm koymak!"
-            ),
-        },
-        "pattern": r"hâtemü'l-enbiyâ|hatemül enbiya|üsve-i hasene|tebliğ|tebyin|teşri|ehl-i beyt|kütüb-i sitte|muhadramûn",
+        "sayfa": 48,
+        "tanim": "Hz. Peygamber'in görevleri: Vahyi eksiksiz iletmesi **Tebliğ**, kapalı ayetleri açıklaması **Tebyin**, dinî hüküm koyması **Teşri**, yaşayarak örnek olması **Temsil (Üsve-i Hasene)** ve peygamberlerin sonuncusu olması **Hâtemü'l-Enbiyâ**'dır.\n💡 Hile: **Tebliğ** = İletmek, **Tebyin** = Açıklamak/Beyan etmek, **Teşri** = Hüküm koymak!",
+        "pattern": "\\bhâtemü'l-enbiyâ\\b|\\bhatemül enbiya\\b|\\büsve-i hasene\\b|\\btebliğ\\b|\\btebyin\\b|\\bteşri\\b|\\behl-i beyt\\b|\\bkütüb-i sitte\\b|\\bmuhadramûn\\b",
     },
     {
-        "id": "din_bilim_kurumlari_ve_tasavvuf",
-        "term": "İslam Bilim Kurumları, Anadolu Erenleri ve Tasavvuf",
-        "donemler": [6, 7],
-        "sayfa_by_donem": {6: 18, 7: 42},
-        "tanim_by_donem": {
-            6: (
-                "İslam medeniyetinde Harezmi, İbn Sina ve El-Cezeri gibi âlimlerin yetiştiği tercüme ve araştırma akademisine **Beytü'l-Hikme**, uzay gözlemevine **Rasathane**, hastanelere **Darüşşifa (Bimaristan)** denir.\n"
-                "💡 Sınav Şifresi: Tasavvuf ve Alevilik-Bektaşilikte **Hoca Ahmet Yesevi** (*Dîvân-ı Hikmet*), **Hacı Bektaş Veli** (*Makâlât*), **Mevlânâ** (*Mesnevî*), **Yunus Emre** (*Risâletü'n-Nushiyye*); dede-talip ikrarına **Musahiplik (Yol Kardeşliği)**, zikir halkasına **Semah** denir."
-            ),
-        },
-        "pattern": r"beytü'l-hikme|beytülhikme|rasathane|darüşşifa|bimaristan|medrese[a-zçğıöşü]*|icazet|harezmi|ibn-i sina|el-cezeri|biruni|ali kuşçu|ulug bey|ahmet yesevi|hacı bektaş|mevlânâ|yunus emre|ahi evran|sarıkamış|musahiplik|cem\b|cemevi|semah|gülbank|hızır orucu|muharrem|aşure|nakşibendilik|kadirilik|mevlevilik",
+        "id": 'din_bilim_kurumlari_ve_tasavvuf_d6',
+        "term": 'İslam Bilim Kurumları, Anadolu Erenleri ve Tasavvuf',
+        "sayfa": 18,
+        "tanim": "İslam medeniyetinde Harezmi, İbn Sina ve El-Cezeri gibi âlimlerin yetiştiği tercüme ve araştırma akademisine **Beytü'l-Hikme**, uzay gözlemevine **Rasathane**, hastanelere **Darüşşifa (Bimaristan)** denir.\n💡 Hile: Tasavvuf ve Alevilik-Bektaşilikte **Hoca Ahmet Yesevi** (*Dîvân-ı Hikmet*), **Hacı Bektaş Veli** (*Makâlât*), **Mevlânâ** (*Mesnevî*), **Yunus Emre** (*Risâletü'n-Nushiyye*); dede-talip ikrarına **Musahiplik (Yol Kardeşliği)**, zikir halkasına **Semah** denir.",
+        "pattern": "\\bbeytü'l-hikme\\b|\\bbeytülhikme\\b|\\brasathane\\b|\\bdarüşşifa\\b|\\bbimaristan\\b|\\bmedrese[a-zçğıöşü]*|\\bicazet\\b|\\bharezmi\\b|\\bibn-i sina\\b|\\bel-cezeri\\b|\\bbiruni\\b|\\bali kuşçu\\b|\\bulug bey\\b|\\bahmet yesevi\\b|\\bhacı bektaş\\b|\\bmevlânâ\\b|\\byunus emre\\b|\\bahi evran\\b|\\bsarıkamış\\b|\\bmusahiplik\\b|\\bcem\\b|\\bcemevi\\b|\\bsemah\\b|\\bgülbank\\b|\\bhızır orucu\\b|\\bmuharrem\\b|\\başure\\b|\\bnakşibendilik\\b|\\bkadirilik\\b|\\bmevlevilik\\b",
     },
-
-    # ==========================================
-    # DİN 8: GÜNCEL DİNÎ MESELELER VE YAŞAYAN DİNLER (ATOMİK)
-    # ==========================================
     {
-        "id": "din_guncel_meseleler_ve_dinler",
-        "term": "Dinin 5 Temel Gayesi (Zarûrât-ı Dîniyye), Biyoetik ve Yaşayan Dinler",
-        "donemler": [7, 8],
-        "sayfa_by_donem": {7: 68, 8: 18},
-        "tanim_by_donem": {
-            7: (
-                "İslam'ın korumayı emrettiği **$5$ Dokunulmaz Değer (Zarûrât-ı Hamse):** **Canın, Aklın, Dinin, Neslin ve Malın korunmasıdır** (Otonazi ve intihar haramdır; hayat kurtaran organ ve kan nakli câizdir).\n"
-                "💡 Sınav Şifresi: **Hint Dinleri (Hinduizm & Budizm):** Reenkarnasyon (tenasüh/ruh göçü), Karma, Kast Sistemi ve Nirvana vardır. **Yahudilik:** Kutsal kitabı *Tanah (Tevrat)*, ibadethanesi *Sinagog (Havra)*. **Hristiyanlık:** *Teslis (Üçleme)*, *Vaftiz* ve *İncil*."
-            ),
-        },
-        "pattern": r"zarûrât-ı dîniyye|zarurat-ı diniyye|beş temel gaye|neslin korunması|aklın korunması|canın korunması|malın korunması|ötenazi|otopsi|organ nakli|helal gıda|israf|mahremiyet|hinduizm|budizm|konfüçyanizm|taoizm|yahudilik|hristiyanlık|reenkarnasyon|tenasüh|karma|kast sistemi|nirvana|tripitaka|vedalar|sinagog|havra|vaftiz|teslis",
+        "id": 'din_bilim_kurumlari_ve_tasavvuf_d7',
+        "term": 'İslam Bilim Kurumları, Anadolu Erenleri ve Tasavvuf',
+        "sayfa": 42,
+        "tanim": 'İslam Bilim Kurumları, Anadolu Erenleri ve Tasavvuf kavramı.\n💡 Hile: "Kurum" kelimesini duyduğunda gözünü kapat ve \'BİNALAR\' canlandır: Medrese (eğitim), Rasathane (gök), Darüşşifa (hastane), Beytü\'l-Hikme (çeviri/kitap). Anadolu Erenleri = Hacı Bektaş Veli (Bektaşilik), Mevlânâ (Mevlevilik), Yunus Emre (halk şiiri). Tasavvuf = \'iç temizlik\' — şıklarda \'zühd, nefis terbiyesi, aşk\' geçiyorsa tasavvuf; \'fıkıh, hadis, kelam\' geçiyorsa İslam bilim kurumu. Ters köşe kuralı: Soru \'hangisi Anadolu ereni DEĞİLDİR?\' diyorsa → Gazâlî, İbn Sînâ gibi Selçuklu/İslam âlimlerini işaretle, çünkü onlar Anadolu\'da yaşamadı.',
+        "pattern": "\\bbeytü'l-hikme\\b|\\bbeytülhikme\\b|\\brasathane\\b|\\bdarüşşifa\\b|\\bbimaristan\\b|\\bmedrese[a-zçğıöşü]*|\\bicazet\\b|\\bharezmi\\b|\\bibn-i sina\\b|\\bel-cezeri\\b|\\bbiruni\\b|\\bali kuşçu\\b|\\bulug bey\\b|\\bahmet yesevi\\b|\\bhacı bektaş\\b|\\bmevlânâ\\b|\\byunus emre\\b|\\bahi evran\\b|\\bsarıkamış\\b|\\bmusahiplik\\b|\\bcem\\b|\\bcemevi\\b|\\bsemah\\b|\\bgülbank\\b|\\bhızır orucu\\b|\\bmuharrem\\b|\\başure\\b|\\bnakşibendilik\\b|\\bkadirilik\\b|\\bmevlevilik\\b",
+    },
+    {
+        "id": 'din_guncel_meseleler_ve_dinler_d7',
+        "term": 'Dinin 5 Temel Gayesi (Zarûrât-ı Dîniyye), Biyoetik ve Yaşayan Dinler',
+        "sayfa": 68,
+        "tanim": "İslam'ın korumayı emrettiği **$5$ Dokunulmaz Değer (Zarûrât-ı Hamse):** **Canın, Aklın, Dinin, Neslin ve Malın korunmasıdır** (Otonazi ve intihar haramdır; hayat kurtaran organ ve kan nakli câizdir).\n💡 Hile: **Hint Dinleri (Hinduizm & Budizm):** Reenkarnasyon (tenasüh/ruh göçü), Karma, Kast Sistemi ve Nirvana vardır. **Yahudilik:** Kutsal kitabı *Tanah (Tevrat)*, ibadethanesi *Sinagog (Havra)*. **Hristiyanlık:** *Teslis (Üçleme)*, *Vaftiz* ve *İncil*.",
+        "pattern": '\\bzarûrât-ı dîniyye\\b|\\bzarurat-ı diniyye\\b|\\bbeş temel gaye\\b|\\bneslin korunması\\b|\\baklın korunması\\b|\\bcanın korunması\\b|\\bmalın korunması\\b|\\bötenazi\\b|\\botopsi\\b|\\borgan nakli\\b|\\bhelal gıda\\b|\\bisraf\\b|\\bmahremiyet\\b|\\bhinduizm\\b|\\bbudizm\\b|\\bkonfüçyanizm\\b|\\btaoizm\\b|\\byahudilik\\b|\\bhristiyanlık\\b|\\breenkarnasyon\\b|\\btenasüh\\b|\\bkarma\\b|\\bkast sistemi\\b|\\bnirvana\\b|\\btripitaka\\b|\\bvedalar\\b|\\bsinagog\\b|\\bhavra\\b|\\bvaftiz\\b|\\bteslis\\b',
+    },
+    {
+        "id": 'din_guncel_meseleler_ve_dinler_d8',
+        "term": 'Dinin 5 Temel Gayesi (Zarûrât-ı Dîniyye), Biyoetik ve Yaşayan Dinler',
+        "sayfa": 18,
+        "tanim": "Dinin 5 Temel Gayesi (Zarûrât-ı Dîniyye), Biyoetik ve Yaşayan Dinler kavramı.\n💡 Hile: 5 gayeyi 'DİN-İN-CAN-AKIL-MAL' şifresiyle ezberle → D(İn) = Din, İN = Nesil (neslin korunması), CAN = Can, AKIL = Akıl, MAL = Mal. Sıralama: Din > Can > Akıl > Nesil > Mal (can akıldan önce, akıl nesilden önce). Biyoetik = 'can'la ilgili tıbbi etik (kürtaj, organ nakli, ötanazi) → 5 gayeden CAN'a bağla. Yaşayan Dinler testinde: 'Yahudilik-Hristiyanlık-İslam' = İbrahimî (semavi); 'Hinduizm-Budizm' = Hint kökenli; 'Şintoizm' = Japonya; 'Sihizm' = Hindistan (tek tanrılı ama İbrahimî değil) → bu son tuzak, Sihizm'i semavi sanma!",
+        "pattern": '\\bzarûrât-ı dîniyye\\b|\\bzarurat-ı diniyye\\b|\\bbeş temel gaye\\b|\\bneslin korunması\\b|\\baklın korunması\\b|\\bcanın korunması\\b|\\bmalın korunması\\b|\\bötenazi\\b|\\botopsi\\b|\\borgan nakli\\b|\\bhelal gıda\\b|\\bisraf\\b|\\bmahremiyet\\b|\\bhinduizm\\b|\\bbudizm\\b|\\bkonfüçyanizm\\b|\\btaoizm\\b|\\byahudilik\\b|\\bhristiyanlık\\b|\\breenkarnasyon\\b|\\btenasüh\\b|\\bkarma\\b|\\bkast sistemi\\b|\\bnirvana\\b|\\btripitaka\\b|\\bvedalar\\b|\\bsinagog\\b|\\bhavra\\b|\\bvaftiz\\b|\\bteslis\\b',
+    },
+    {
+        "id": 'din_ihsan',
+        "term": 'İhsan',
+        "sayfa": 24,
+        "tanim": "Kişinin Allah'ı görüyormuş gibi ibadet etmesi ve her an O'nun gözetimi altında olduğunun bilinciyle güzel davranışlar sergilemesidir.\n💡 Hile: 'Allah'ı görüyormuşçasına yaşamak ve ibadet etmek' cümlesi doğrudan İHSAN'dır. 'Allah her an beni izliyor' kamerası devrede.",
+        "pattern": '\\bihsan[a-zçğıöşü]*\\b|\\bİhsan\\b',
+        "option_only_pattern": '^İhsan$',
+    },
+    {
+        "id": 'din_ihlas',
+        "term": 'İhlas',
+        "sayfa": 28,
+        "tanim": "İbadet ve hayırları sadece Allah rızası için yapmak, riya (gösteriş) ve menfaatten tamamen arındırmaktır.\n💡 Hile: İbadete 'gösteriş (riya), övgü veya çıkar' bulaştırmadan SADECE Allah için yapmak → İHLAS. Samimiyet testidir.",
+        "pattern": '\\bihlas[a-zçğıöşü]*\\b|\\bihlâs[a-zçğıöşü]*\\b|\\bİhlas\\b',
+        "option_only_pattern": '^İhlas$',
+    },
+    {
+        "id": 'din_takva',
+        "term": 'Takva',
+        "sayfa": 30,
+        "tanim": "Allah'ın emirlerine uyup yasaklarından sakınarak, O'nun sevgisini kaybetme korkusuyla günahlardan korunma hassasiyetidir.\n💡 Hile: Dikenli yolda eteğini toplayarak yürümek gibi günahlardan sakınma hassasiyeti → TAKVA (Müttaki).",
+        "pattern": '\\btakva[a-zçğıöşü]*\\b|\\btakvâ[a-zçğıöşü]*\\b|\\bmüttaki[a-zçğıöşü]*\\b|\\bTakva\\b',
+        "option_only_pattern": '^Takva$',
+    },
+    {
+        "id": 'din_tevazu',
+        "term": 'Tevazu',
+        "sayfa": 35,
+        "tanim": 'Kibir, böbürlenme ve gururdan uzak durarak insanlara karşı alçakgönüllü ve hoşgörülü davranma erdemidir.\n💡 Hile: Kibrin zıddı alçakgönüllülük → TEVAZU. Dağ gibi yüksek değil, toprak gibi verimli olmak.',
+        "pattern": '\\btevazu[a-zçğıöşü]*\\b|\\btevâzu[a-zçğıöşü]*\\b|\\balçakgönüllü[a-zçğıöşü]*\\b|\\bTevazu\\b',
+        "option_only_pattern": '^Tevazu$',
+    },
+    {
+        "id": 'din_iffet',
+        "term": 'İffet',
+        "sayfa": 38,
+        "tanim": "Bedeni, nefsi ve arzuları haramlardan, gayrimeşru isteklerden koruma, haya ve edep dairesinde yaşama erdemidir.\n💡 Hile: Namus, haya ve harama karşı nefsi frenleme gücü → İFFET (Hz. Yusuf'un saraydaki duruşu).",
+        "pattern": '\\biffet[a-zçğıöşü]*\\b|\\biffetli[a-zçğıöşü]*\\b|\\bİffet\\b',
+        "option_only_pattern": '^İffet$',
+    },
+    {
+        "id": 'din_teblig',
+        "term": 'Tebliğ',
+        "sayfa": 42,
+        "tanim": "Peygamberlerin Allah'tan aldıkları vahiy ve ilahi hükümleri eksiksiz ve değiştirmeden insanlara bildirmesi sıfatıdır.\n💡 Hile: Peygamberin mesajı aynen 'iletmesi / ulaştırması' → TEBLİĞ. Tebyin ise 'açıklaması'dır!",
+        "pattern": '\\btebliğ[a-zçğıöşü]*\\b|\\bteblig[a-zçğıöşü]*\\b|\\bTebliğ\\b',
+        "option_only_pattern": '^Tebliğ$',
+    },
+    {
+        "id": 'din_tebyin',
+        "term": 'Tebyin',
+        "sayfa": 45,
+        "tanim": "Peygamberin ilahi hükümleri, kapalı ayetleri ve Kur'an mesajını insanlara açıklayıp anlaşılır kılması ve detaylandırması görevidir.\n💡 Hile: Beyan etmekten gelir; ayeti 'açıklamak, detaylandırmak ve öğretmek' → TEBYİN (Tebliğ sadece iletmek, tebyin açıklamaktır).",
+        "pattern": '\\btebyin[a-zçğıöşü]*\\b|\\bTebyin\\b',
+        "option_only_pattern": '^Tebyin$',
+    },
+    {
+        "id": 'din_adalet',
+        "term": 'Adalet',
+        "sayfa": 48,
+        "tanim": "Her hak sahibine hakkını vermek, aşırılıktan uzak durup dengede olmak ve zulme asla rıza göstermemektir.\n💡 Hile: 'Her şeyi layık olduğu yere koymak ve hakkını vermek' → ADALET. Zulmün tam zıddıdır.",
+        "pattern": '\\badalet[a-zçğıöşü]*\\b|\\badil\\b|\\bAdalet\\b',
+        "option_only_pattern": '^Adalet$',
+    },
+    {
+        "id": 'din_hikmet',
+        "term": 'Hikmet',
+        "sayfa": 50,
+        "tanim": 'Varlık ve olayların derin hakikatini kavrama, ilim ve anlayışla doğru hüküm verip yerli yerince davranma yetisidir.\n💡 Hile: Bilgiyi doğru yerde, doğru zamanda ve hayra uygun uygulama dehası → HİKMET.',
+        "pattern": '\\bhikmet[a-zçğıöşü]*\\b|\\bHikmet\\b',
+        "option_only_pattern": '^Hikmet$',
+    },
+    {
+        "id": 'din_secat',
+        "term": 'Şecaat',
+        "sayfa": 52,
+        "tanim": 'Korkaklık ile körü körüne atılganlık arasındaki dengeli, ahlaki cesaret, hak uğruna dik durma yiğitliğidir.\n💡 Hile: Hak ve adalet uğruna korkusuzca durabilen ahlaki yiğitlik → ŞECAAT (Cesaret).',
+        "pattern": '\\bşecaat[a-zçğıöşü]*\\b|\\bşecâat[a-zçğıöşü]*\\b|\\bŞecaat\\b',
+        "option_only_pattern": '^Şecaat$',
+    },
+    {
+        "id": 'din_tevekkul',
+        "term": 'Tevekkül',
+        "sayfa": 18,
+        "tanim": "Bir amaca ulaşmak için gereken tüm sebepleri yerine getirip elden geleni yaptıktan sonra sonucu Allah'a bırakıp güvenmektir.\n💡 Hile: 'Önce deveni bağla, sonra Allah'a güven' formülü: Tedbir ALMADAN tevekkül tembelliktir, tedbirden SONRA güven TEVEKKÜLDÜR.",
+        "pattern": '\\btevekkül[a-zçğıöşü]*\\b|\\bTevekkül\\b',
+        "option_only_pattern": '^Tevekkül$',
+    },
+    {
+        "id": 'din_sadaka_cariye',
+        "term": 'Sadaka-i Cariye',
+        "sayfa": 62,
+        "tanim": "Kişi öldükten sonra da amel defterini açık tutan, sevabı kesintisiz devam eden kalıcı kamu hayırlarıdır (okul, çeşme, cami, faydalı ilim).\n💡 Hile: Akan çeşme gibi sevabı ölümden sonra da kesintisiz 'akmaya devam eden' kalıcı hayır → SADAKA-İ CARİYE.",
+        "pattern": '\\bsadaka-i\\s+cariye\\b|\\bsadaka-i\\s+câriye\\b|\\bkalıcı\\s+sadaka\\b|\\bSadaka-i cariye\\b|\\bSadaka-i Câriye\\b',
+        "option_only_pattern": '^Sadaka-i cariye$|^Sadaka-i Câriye$',
+    },
+    {
+        "id": 'din_zekat_ve_infak',
+        "term": 'Zekât ve İnfak',
+        "sayfa": 60,
+        "tanim": "Nisap miktarı mala sahip zenginin yılda bir kez malının kırkta birini (%2,5) vermesi farz olan ibadet Zekat; Allah yolunda yapılan her türlü maddi harcama İnfak'tır.\n💡 Hile: İNFAK genel çatı kavramdır; ZEKAT ise yılda 1 kez ve 1/40 (%2.5) oranıyla verilen FARZ mali ibadettir.",
+        "pattern": '\\bzekât[a-zçğıöşü]*\\b|\\bzekat[a-zçğıöşü]*\\b|\\binfak[a-zçğıöşü]*\\b|\\bZekât\\b|\\bZekat\\b|\\bİnfak\\b',
+        "option_only_pattern": '^Zekât$|^Zekat$|^İnfak$',
+    },
+    {
+        "id": 'din_tevhid_ve_sirk',
+        "term": 'Tevhid ve Şirk',
+        "sayfa": 12,
+        "tanim": "Allah'ın zatında, sıfatlarında ve fiillerinde bir ve tek olduğunu kabul etmek Tevhid; O'na ortak koşmak ise Şirk'tir.\n💡 Hile: 'Lâ ilâhe illallâh' = TEVHİD (Birleme). Allah'a denk veya aracı güç tanımak = ŞİRK (Ortak koşma).",
+        "pattern": '\\btevhid[a-zçğıöşü]*\\b|\\btevhit[a-zçğıöşü]*\\b|\\bşirk[a-zçğıöşü]*\\b|\\bmüşrik[a-zçğıöşü]*\\b|\\bTevhid\\b|\\bTevhit\\b|\\bŞirk\\b',
+        "option_only_pattern": '^Tevhid$|^Tevhit$|^Şirk$',
+    },
+    {
+        "id": 'din_zarurat_diniyye',
+        "term": 'Zarûrât-ı Dîniyye (5 Temel Koruma)',
+        "sayfa": 88,
+        "tanim": 'İslam hukukunun korunmasını emrettiği 5 vazgeçilmez temel insan hakkı: Can, akıl, mal, nesil ve din emniyeti.\n💡 Hile: Baş harfleri **CAM-ND**: **C**an, **A**kıl, **M**al, **N**esil, **D**in. Zararlı alışkanlıklar aklı, hırsızlık malı, zina nesli tehdit eder.',
+        "pattern": '\\bzarûrât-ı\\s+dîniyye\\b|\\bzarurat-ı\\s+diniyye\\b|\\bdinin\\s+temel\\s+gayesi\\b',
+    },
+    {
+        "id": 'din_hint_dinleri',
+        "term": 'Hint Dinleri (Hinduizm ve Budizm)',
+        "sayfa": 120,
+        "tanim": "Hinduizm Kast sistemi ve Reenkarnasyon merkezlidir; Budizm ise Siddhartha Gautama öğretisiyle Kast'ı reddedip Nirvana'ya odaklanır.\n💡 Hile: Kast sistemi ve kutsal inek = **Hinduizm**; Kast sistemini REDDEDİP 'Nirvana ve 4 Yüce Gerçek' diyen = **Budizm**.",
+        "pattern": '\\bhinduizm[a-zçğıöşü]*\\b|\\bbudizm[a-zçğıöşü]*\\b|\\bnirvana\\b|\\bkarma\\b|\\bBudizm\\b|\\bHinduizm\\b',
+        "option_only_pattern": '^Budizm$|^Hinduizm$',
     },
 ]

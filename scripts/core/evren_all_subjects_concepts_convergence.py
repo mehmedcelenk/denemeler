@@ -36,6 +36,7 @@ SUBJECTS_DIR = ROOT_DIR / "data" / "subjects"
 STATE_PATH = CONCEPTS_DIR / "all_subjects_convergence_state.json"
 
 SUBJECT_NAMES = {
+    "TDE": "Türk Dili ve Edebiyatı (MEB AÖL TDE 1-8)",
     "TAR": "Tarih (MEB AÖL Tarih 1-6)",
     "COG": "Coğrafya (MEB AÖL Coğrafya 1-4)",
     "FEL": "Felsefe (MEB AÖL Felsefe 1-4)",
@@ -68,7 +69,7 @@ GÖREVİN:
 2. Eğer `is_valid_concept: true` ise:
    - `explanation` metnini MEB müfredatına göre denetle.
    - En ufak bir bilgi hatası, anlatım bozukluğu veya zayıf ipucu varsa düzelt.
-   - Açıklama yapısı: Özlü tanım (anahtar kelimeler `**kalın**`) + alt satırda `\n💡 Sınav Şifresi: ...` (veya sayısal derslerde `\n💡 Formül / Şifre: ...`) olmalıdır.
+   - Açıklama yapısı: Özlü tanım (anahtar kelimeler `**kalın**`) + alt satırda `\\n💡 Hile: ...` (normalde çok zor olanı deha bir akılla kolaycık çözdüren zihinsel kısayol) olmalıdır.
 
 SADECE aşağıdaki JSON şemasında yanıt ver:
 ```json
@@ -133,7 +134,8 @@ def call_deepseek(
 
 
 def strip_all_tags(html_str: str) -> str:
-    return html.unescape(re.sub(r"<[^>]+>", "", html_str))
+    s = re.sub(r'<span\s+class="xray-junction"[^>]*>.*?</span>', "", html_str, flags=re.DOTALL)
+    return html.unescape(re.sub(r"<[^>]+>", "", s))
 
 
 def process_single_subject(
@@ -201,7 +203,8 @@ def process_single_subject(
             f"Denetlenecek Kavram Balonları ({len(payload)} adet):\n"
             f"{json.dumps(payload, ensure_ascii=False, indent=2)}\n\n"
             f"Lütfen her birini MEB müfredatına göre denetle; gürültülü olanları 'is_valid_concept': false yap, "
-            f"geçerli kavramların tanım ve Sınav Şifresini %99+ doğrulukla döndür."
+            f"geçerli kavramların tanımını ve '💡 Hile:' (normalde çok zor olanı deha bir akılla kolaycık çözdüren hile) "
+            f"kısmını %99+ doğrulukla döndür."
         )
         res = call_deepseek(client, SUBJECT_BUBBLE_AUDIT_PROMPT, user_prompt)
         return b_id, keys, res
@@ -228,6 +231,13 @@ def process_single_subject(
                         removed_c += 1
                     else:
                         new_exp = str(item.get("explanation") or "").strip()
+                        if subj_code == "TDE":
+                            new_exp = re.sub(
+                                r"💡\s*(?:Sınav\s+Şifresi|Şifre|İpucu|Formül\s*/\s*Şifre|Formül)\s*:",
+                                "💡 Hile:",
+                                new_exp,
+                                flags=re.IGNORECASE,
+                            )
                         if len(new_exp) >= 20:
                             if new_exp != unique_map[t_str]["explanation"]:
                                 refined_c += 1

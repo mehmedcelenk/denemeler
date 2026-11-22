@@ -1,3 +1,5 @@
+import type { ProgressOwner } from '../shared/storage-keys.ts';
+import type { MascotId } from '../shared/mascot-types.ts';
 import type { Choice, Question, SubjectId } from '../data/question.ts';
 import type { BookletFilterMode } from '../shared/question-filter.ts';
 import type { InstitutionQuestionStat } from '../data/institution-stats.ts';
@@ -14,20 +16,22 @@ export interface AnswerMarkedPayload {
   readonly qid: number;
   readonly choice: Choice;
   readonly isCorrect: boolean;
+  readonly isReview?: boolean;
 }
 
 export interface AnswerRevokedPayload {
   readonly qid: number;
 }
 
-
-export interface AiExplanationMessage { readonly query: string; readonly reply: string; readonly updatedAt: number; }
-export interface AiExplanationEntry { readonly query: string; readonly reply: string; readonly updatedAt: number; readonly history?: readonly AiExplanationMessage[]; }
-
 export interface AppState {
+  readonly progressOwner: ProgressOwner;
+  readonly progressReady: boolean;
+  readonly studyGeneration: number;
   readonly allData: readonly Question[];
   readonly currentSubject: SubjectId | null;
   readonly programMode: 'AOIHL' | 'AOO' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK';
+  readonly mascotId: MascotId;
+  readonly responsibleCourses: Readonly<Record<string, readonly string[]>>;
   readonly selectedCourses: ReadonlySet<string>;
   readonly courseFilterMode: 'AND' | 'OR';
   readonly selectedTopicKeys: ReadonlySet<string>;
@@ -54,8 +58,6 @@ export interface AppState {
   readonly expandedQuestionIds: ReadonlySet<number>;
   readonly eliminatedChoices: Readonly<Record<number, readonly Choice[]>>;
   readonly eliminatedWrongChoices: Readonly<Record<number, Choice>>;
-  readonly aiExplanations: Readonly<Record<number, AiExplanationEntry>>;
-  readonly pendingAiQuestions: ReadonlySet<number>;
   readonly ttsVoiceGender: 'female' | 'male';
   readonly ttsVoiceEngine: 1 | 2 | 3;
   readonly institutionStats: Readonly<Record<number, InstitutionQuestionStat>>;
@@ -64,9 +66,14 @@ export interface AppState {
   readonly isXraySoundEnabled: boolean;
 }
 export interface MutableAppState {
+  progressOwner: ProgressOwner;
+  progressReady: boolean;
+  studyGeneration: number;
   allData: Question[];
   currentSubject: SubjectId | null;
   programMode: 'AOIHL' | 'AOO' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK';
+  mascotId: MascotId;
+  responsibleCourses: Record<string, string[]>;
   selectedCourses: Set<string>;
   courseFilterMode: 'AND' | 'OR';
   selectedTopicKeys: Set<string>;
@@ -93,8 +100,6 @@ export interface MutableAppState {
   expandedQuestionIds: Set<number>;
   eliminatedChoices: Record<number, Choice[]>;
   eliminatedWrongChoices: Record<number, Choice>;
-  aiExplanations: Record<number, AiExplanationEntry>;
-  pendingAiQuestions: Set<number>;
   ttsVoiceGender: 'female' | 'male';
   ttsVoiceEngine: 1 | 2 | 3;
   institutionStats: Record<number, InstitutionQuestionStat>;

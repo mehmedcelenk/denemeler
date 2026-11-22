@@ -1,7 +1,8 @@
 import { defineConfig, loadEnv } from 'vite';
-import { cpSync, existsSync, createReadStream, statSync, readFileSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, createReadStream, statSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { writeAssetManifest } from './scripts/release-assets.ts';
 
 const root = fileURLToPath(new URL('.', import.meta.url));
 
@@ -28,9 +29,9 @@ export default defineConfig(({ mode }) => {
         styles: path.resolve(root, 'src/styles/index.css'),
       },
       output: {
-        entryFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name].[ext]',
+        assetFileNames: 'assets/[name]-[hash][extname]',
         manualChunks(id) {
           if (id.includes('node_modules/katex')) {
             return 'katex-vendor';
@@ -44,39 +45,17 @@ export default defineConfig(({ mode }) => {
   },
   plugins: [{
     name: 'study-assets-handler',
+    transformIndexHtml: {
+      order: 'pre',
+      handler(html, context) {
+        if (!context.server) return html;
+        return html.replace('./dist/assets/styles.css', './src/styles/index.css')
+          .replace('./dist/assets/app.js', './src/main.js');
+      },
+    },
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
         const rawUrl = (req.url || '').split('?')[0];
-        if (rawUrl === '/api/ask-ai' && req.method === 'POST') {
-          let bodyStr = '';
-          req.on('data', chunk => { bodyStr += chunk; });
-          req.on('end', async () => {
-            try {
-              const { onRequestPost } = await server.ssrLoadModule('/functions/api/ask-ai.ts');
-              const fetchReq = new Request(`http://${req.headers.host || '127.0.0.1:5173'}/api/ask-ai`, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  'Origin': `http://${req.headers.host || '127.0.0.1:5173'}`,
-                },
-                body: bodyStr,
-              });
-              const response = await onRequestPost({
-                request: fetchReq,
-                env: { GEMINI_API_KEY: process.env.GEMINI_API_KEY },
-              });
-              const resBody = await response.text();
-              res.statusCode = response.status;
-              res.setHeader('Content-Type', response.headers.get('Content-Type') || 'application/json; charset=utf-8');
-              res.end(resBody);
-            } catch (err) {
-              res.statusCode = 500;
-              res.setHeader('Content-Type', 'application/json; charset=utf-8');
-              res.end(JSON.stringify({ error: String(err) }));
-            }
-          });
-          return;
-        }
         if (rawUrl === '/api/tts') {
           try {
             const { handleTtsRequest } = await server.ssrLoadModule('/functions/api/tts.ts');
@@ -127,36 +106,6 @@ export default defineConfig(({ mode }) => {
     configurePreviewServer(server) {
       server.middlewares.use(async (req, res, next) => {
         const rawUrl = (req.url || '').split('?')[0];
-        if (rawUrl === '/api/ask-ai' && req.method === 'POST') {
-          let bodyStr = '';
-          req.on('data', chunk => { bodyStr += chunk; });
-          req.on('end', async () => {
-            try {
-              const { onRequestPost } = await import('./functions/api/ask-ai.ts');
-              const fetchReq = new Request(`http://${req.headers.host || '127.0.0.1:4173'}/api/ask-ai`, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  'Origin': `http://${req.headers.host || '127.0.0.1:4173'}`,
-                },
-                body: bodyStr,
-              });
-              const response = await onRequestPost({
-                request: fetchReq,
-                env: { GEMINI_API_KEY: process.env.GEMINI_API_KEY },
-              });
-              const resBody = await response.text();
-              res.statusCode = response.status;
-              res.setHeader('Content-Type', response.headers.get('Content-Type') || 'application/json; charset=utf-8');
-              res.end(resBody);
-            } catch (err) {
-              res.statusCode = 500;
-              res.setHeader('Content-Type', 'application/json; charset=utf-8');
-              res.end(JSON.stringify({ error: String(err) }));
-            }
-          });
-          return;
-        }
         if (rawUrl === '/api/tts') {
           try {
             const { handleTtsRequest } = await import('./functions/api/tts.ts');
@@ -188,11 +137,28 @@ export default defineConfig(({ mode }) => {
         next();
       });
     },
+    generateBundle(_options, bundle) {
+      const app = Object.values(bundle).find(item => item.type === 'chunk' && item.isEntry && item.name === 'app');
+      const styles = Object.values(bundle).find(item => item.type === 'asset' && /^assets\/styles-[^/]+\.css$/.test(item.fileName));
+      if (!app || !styles) throw new Error('Üretim JavaScript veya CSS dosyası bulunamadı.');
+      const source = readFileSync(`${root}index.html`, 'utf8');
+      if (!source.includes('./dist/assets/styles.css') || !source.includes('./dist/assets/app.js')) {
+        throw new Error('HTML giriş dosyası işaretçileri bulunamadı.');
+      }
+      const html = source.replace('./dist/assets/styles.css', `./${styles.fileName}`)
+        .replace('./dist/assets/app.js', `./${app.fileName}`);
+      this.emitFile({ type: 'asset', fileName: 'index.html', source: html });
+      this.emitFile({ type: 'asset', fileName: '200.html', source: html });
+    },
     closeBundle() {
       // Sadece çalışma anında (runtime) tarayıcının ihtiyaç duyduğu veri ve varlıkları kopyala
       if (existsSync(`${root}data/subjects`)) {
         cpSync(`${root}data/subjects`, `${root}dist/data/subjects`, { recursive: true });
       }
+      if (existsSync(`${root}data/lessons`)) {
+        cpSync(`${root}data/lessons`, `${root}dist/data/lessons`, { recursive: true });
+      }
+      writeAssetManifest(`${root}dist`);
       for (const name of ['audio', 'CNAME', 'manifest.json', 'sw.js']) {
         if (existsSync(`${root}${name}`)) {
           cpSync(`${root}${name}`, `${root}dist/${name}`, { recursive: true });
@@ -200,13 +166,7 @@ export default defineConfig(({ mode }) => {
           cpSync(`${root}archive/audio`, `${root}dist/audio`, { recursive: true });
         }
       }
-      if (existsSync(`${root}index.html`)) {
-        let html = readFileSync(`${root}index.html`, 'utf8');
-        html = html.replace('./dist/assets/styles.css', './assets/styles.css')
-                   .replace('./dist/assets/app.js', './assets/app.js');
-        writeFileSync(`${root}dist/index.html`, html, 'utf8');
-        writeFileSync(`${root}dist/200.html`, html, 'utf8');
-      }
+
     },
   }],
   };

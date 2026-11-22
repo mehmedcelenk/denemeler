@@ -5,9 +5,9 @@ import { renderMathWithXray } from '../../shared/math-render.ts';
 import { escapeHtml } from '../../shared/escape.ts';
 import type { Question, Choice } from '../../data/question.ts';
 import { renderQuestionStatBadge } from './card-stat-badge.ts';
-import { svgXraySoundOn, svgXraySoundOff } from './features-bar.ts';
 import {
   applyStemHooks,
+  renderBelowExtraHooks,
   renderHeaderExtraHooks,
   renderToolbarExtraHooks,
 } from './card-hooks.ts';
@@ -15,11 +15,9 @@ import {
 const svgBoard = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>`;
 const svgBookmark = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>`;
 const svgEliminate = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>`;
-const svgCopy = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`;
 /** Soru kartının üst başlık satırını ve araç butonlarını üretir. */
 export function renderCardHeader(q: Question, globalIdx: number, isPassive: boolean): string {
   const soonBadge = isPassive ? '<span class="q-soon-badge">🔒 Yakında</span>' : '';
-  const isTde = (state.currentSubject === 'TDE') || Boolean(q.ders && q.ders.includes('TÜRK DİLİ'));
   const headerExtraHtml = renderHeaderExtraHooks(q);
   const toolbarExtraHtml = renderToolbarExtraHooks(q);
 
@@ -29,18 +27,6 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
       ${diff.badge}
     </span>
   `;
-
-  const hasGrammarXray = Boolean(q.soru_xray && (q.soru_xray.includes('xray-vag') || q.soru_xray.includes('xray-junction') || q.soru_xray.includes('pos-word') || q.soru_xray.includes('sound-')));
-  const showGrammarToggles = isTde || hasGrammarXray;
-  const soundEnabled = state.isXraySoundEnabled !== false;
-  const soundTitle = soundEnabled
-    ? 'Ses Olayları (Ünlü/Ünsüz) Açık — Tüm sorularda kapatmak için tıkla'
-    : 'Ses Olayları (Ünlü/Ünsüz) Kapalı — Tüm sorularda açmak için tıkla';
-  const grammarTogglesHtml = showGrammarToggles ? `
-    <button class="btn-companion-icon btn-xray-sound ${soundEnabled ? 'active' : ''}" data-action="toggle-xray-sound" data-qid="${q.id}" title="${soundTitle}">
-      ${soundEnabled ? svgXraySoundOn : svgXraySoundOff}
-    </button>
-  ` : '';
 
   const isEliminatedWrong = Boolean(state.eliminatedWrongChoices && state.eliminatedWrongChoices[q.id]);
   const eliminateWrongBtnHtml = isPassive ? '' : `
@@ -60,12 +46,6 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
   const starBtnHtml = `
     <button class="btn-companion-icon btn-star-action ${isStarred ? 'is-starred' : ''}" data-action="toggle-star-question" data-qid="${q.id}" title="${saveButtonLabel}" aria-label="${saveButtonLabel}">
       ${svgBookmark}
-    </button>
-  `;
-
-  const copyBtnHtml = `
-    <button class="btn-companion-icon btn-copy-question" data-action="copy-question-text" data-qid="${q.id}" title="Soruyu Kopyala">
-      ${svgCopy}
     </button>
   `;
 
@@ -90,10 +70,8 @@ export function renderCardHeader(q: Question, globalIdx: number, isPassive: bool
       </button>
       <div class="${isExpanded ? 'q-features-drawer is-expanded' : 'q-features-drawer'}">
         <span class="q-toolbar-extras" data-role="toolbar-extras">${toolbarExtraHtml}</span>
-        ${grammarTogglesHtml}
         ${eliminateWrongBtnHtml}
         ${starBtnHtml}
-        ${copyBtnHtml}
         ${boardBtnHtml}
       </div>
     </div>
@@ -151,7 +129,8 @@ export function renderSoonBanner(isPassive: boolean): string {
 
 /** Soru için optik şık kartlarını ve durum sınıflarını üretir. */
 export function renderCardOptions(q: Question, isPassive: boolean): string {
-  const userMark = state.userMarkedChoices[q.id];
+  const isReviewMode = state.bookletFilterMode === 'review';
+  const userMark = isReviewMode ? undefined : state.userMarkedChoices[q.id];
   const pendingMark = !userMark ? state.pendingMarkedChoices[q.id] : undefined;
   const isRevealed = state.revealedAnswers.has(q.id);
   const isMath = (state.currentSubject === 'MAT') || Boolean(q.ders && q.ders.includes('MATEMATİK'));
@@ -209,9 +188,10 @@ export function renderCardOptions(q: Question, isPassive: boolean): string {
   return optHtml;
 }
 
-/** Soru kartının AI soru kutusu ve cevap anahtarı afişlerini üretir. */
+/** Soru kartının cevap anahtarı afişini üretir. */
 export function renderCardBanners(q: Question, _isPassive: boolean): string {
-  const userMark = state.userMarkedChoices[q.id];
+  const isReviewMode = state.bookletFilterMode === 'review';
+  const userMark = isReviewMode ? undefined : state.userMarkedChoices[q.id];
   const isRevealed = state.revealedAnswers.has(q.id);
   const isRematchOrMistakes = (state.bookletFilterMode === 'incorrect' || (state.isLibraryMode && state.libraryTab === 'rematch'));
   const isWrongAnswered = Boolean(userMark && userMark !== q.dogru_cevap && !isRematchOrMistakes);
@@ -240,10 +220,12 @@ export function renderQuestionCardHtml(q: Question, globalIdx: number): string {
   if (state.isXraySoundEnabled === false) {
     questionClass += ' hide-sound';
   }
-  const userMark = state.userMarkedChoices[q.id] || state.pendingMarkedChoices[q.id] || '';
+  const isReviewMode = state.bookletFilterMode === 'review';
+  const effectiveMark = isReviewMode ? undefined : state.userMarkedChoices[q.id];
+  const userMark = effectiveMark || state.pendingMarkedChoices[q.id] || '';
   const isRevealed = state.revealedAnswers.has(q.id);
-  const statusAttr = state.userMarkedChoices[q.id]
-    ? `data-user-status="${state.userMarkedChoices[q.id] === q.dogru_cevap ? 'correct' : 'incorrect'}"`
+  const statusAttr = effectiveMark
+    ? `data-user-status="${effectiveMark === q.dogru_cevap ? 'correct' : 'incorrect'}"`
     : '';
   const openedAt = Date.now();
 
@@ -257,6 +239,7 @@ export function renderQuestionCardHtml(q: Question, globalIdx: number): string {
       </div>
       ${renderCardSourceTag(q)}
       ${renderCardBanners(q, isPassive)}
+      ${renderBelowExtraHooks(q)}
     </div>
   `;
 }

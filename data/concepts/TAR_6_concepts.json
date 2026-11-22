@@ -9,10 +9,10 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 95,
-    "tanim": "Sultan Abdülmecid'in 1839'da Mustafa Reşit Paşa'ya okuttuğu bu ferman, padişahın **kendi gücünün üstünde kanun** olduğunu ilk kez kabul ettiği 'demokrasiye ilk adım' belgesidir; tıpkı bir kralın 'artık ben de kurallara uyacağım' demesi gibi.\n💡 Sınav Şifresi: **Gülhane Hatt-ı Hümayunu = 1839 = Abdülmecid + Mustafa Reşit Paşa**. Ayrıt edici: **Meclis YOK** (sadece ferman), 'kanun üstünlüğü ilk kez'.",
+    "tanim": "Sultan Abdülmecid'in 1839'da Mustafa Reşit Paşa'ya okuttuğu bu ferman, padişahın **kendi gücünün üstünde kanun** olduğunu ilk kez kabul ettiği 'demokrasiye ilk adım' belgesidir; tıpkı bir kralın 'artık ben de kurallara uyacağım' demesi gibi.\n💡 Hile: **Gülhane Hatt-ı Hümayunu = 1839 = Abdülmecid + Mustafa Reşit Paşa**. Ayrıt edici: **Meclis YOK** (sadece ferman), 'kanun üstünlüğü ilk kez'.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "tanzimat fermanı|tanzimat fermani|gülhane hatt-ı hümayunu",
+    "pattern": "\\btanzimat fermanı\\b|\\btanzimat fermani\\b|\\bgülhane hatt-ı hümayunu\\b",
     "aliases": []
   },
   {
@@ -25,11 +25,12 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 105,
-    "tanim": "1876'da II. Abdülhamid'in ilan ettiği **ilk yazılı anayasa**; halk ilk kez sandıkla yönetime katıldı, Meclis-i Mebusan (seçilen) + Meclis-i Ayan (atanan) iki kanatlı bir parlamento kuruldu.\n💡 Sınav Şifresi: **1876 = Kanun-ı Esasî = I. Meşrutiyet = II. Abdülhamid**. Kodlama: **'İlk anayasa + ilk meclis'** — Mebusan seçilir, Ayan atanır.",
+    "tanim": "1876'da II. Abdülhamid'in ilan ettiği **ilk yazılı anayasa**; halk ilk kez sandıkla yönetime katıldı, Meclis-i Mebusan (seçilen) + Meclis-i Ayan (atanan) iki kanatlı bir parlamento kuruldu.\n💡 Hile: **1876 = Kanun-ı Esasî = I. Meşrutiyet = II. Abdülhamid**. Kodlama: **'İlk anayasa + ilk meclis'** — Mebusan seçilir, Ayan atanır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Kanun-ı Esasi$|^Kanun-ı Esasî$|\\\\\\\\bkanun-ı esasi\\\\\\\\b|\\\\\\\\bkanun-i esasi\\\\\\\\b|\\\\\\\\bmeşrutiyet yönetimine\\\\\\\\b|\\\\\\\\bmeşrutiyet\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bKanun-ı Esasi\\b|\\bKanun-ı Esasî\\b|\\bkanun-ı esasi\\b|\\bkanun-i esasi\\b|\\bmeşrutiyet yönetimine\\b|\\bmeşrutiyet\\b",
+    "aliases": [],
+    "option_only_pattern": "^Kanun-ı Esasi$|^Kanun-ı Esasî$"
   },
   {
     "id": "tar6_halepa_fermani",
@@ -41,10 +42,10 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 110,
-    "tanim": "93 Harbi (1877-78 Osmanlı-Rus Savaşı) sonrası Girit Rumlarının isyanını dindirmek için 1878'de çıkarılan ferman; Girit'e **geniş özerklik + Rum vali + vergi muafiyeti** verildi, yani adeta 'yarı bağımsızlık' kapısı aralandı.\n💡 Sınav Şifresi: **Halepa = 1878 = Girit = 93 Harbi sonrası**. Anahtar: **'Rum vali atanması'** — Girit'in elden çıkışının ilk adımı.",
+    "tanim": "93 Harbi (1877-78 Osmanlı-Rus Savaşı) sonrası Girit Rumlarının isyanını dindirmek için 1878'de çıkarılan ferman; Girit'e **geniş özerklik + Rum vali + vergi muafiyeti** verildi, yani adeta 'yarı bağımsızlık' kapısı aralandı.\n💡 Hile: **Halepa = 1878 = Girit = 93 Harbi sonrası**. Anahtar: **'Rum vali atanması'** — Girit'in elden çıkışının ilk adımı.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "halepa fermanı|halepa fermani|halepa",
+    "pattern": "\\bhalepa fermanı\\b|\\bhalepa fermani\\b|\\bhalepa\\b",
     "aliases": []
   },
   {
@@ -57,10 +58,10 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 115,
-    "tanim": "Rusya'ya karşı İngiltere-Fransa ile ittifak kurulan Kırım Savaşı (1853-56) sonunda imzalanan Paris Antlaşması'yla Osmanlı **ilk kez bir Avrupa devleti sayıldı**, toprak bütünlüğü garanti altına alındı ve **ilk dış borç** İngiltere'den alındı.\n💡 Sınav Şifresi: **Kırım Savaşı = ilk dış borç + ilk telgraf + ilk demiryolu**. Paris Antlaşması = **'Osmanlı Avrupalı sayıldı'** + toprak garantisi.",
+    "tanim": "Rusya'ya karşı İngiltere-Fransa ile ittifak kurulan Kırım Savaşı (1853-56) sonunda imzalanan Paris Antlaşması'yla Osmanlı **ilk kez bir Avrupa devleti sayıldı**, toprak bütünlüğü garanti altına alındı ve **ilk dış borç** İngiltere'den alındı.\n💡 Hile: **Kırım Savaşı = ilk dış borç + ilk telgraf + ilk demiryolu**. Paris Antlaşması = **'Osmanlı Avrupalı sayıldı'** + toprak garantisi.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "kırım savaşı|paris antlaşması|paris barış antlaşması",
+    "pattern": "\\bkırım savaşı\\b|\\bparis antlaşması\\b|\\bparis barış antlaşması\\b",
     "aliases": []
   },
   {
@@ -73,10 +74,10 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 120,
-    "tanim": "19. yüzyılda gücü zayıflayan Osmanlı'nın, büyük devletlerin (İngiltere, Fransa, Rusya, Almanya) birbirleriyle çatışan çıkarlarını kullanarak ayakta kalma stratejisi; tıpkı iki kavgacı arkadaşın arasında kalıp ikisini de idare eden bir öğrenci gibi.\n💡 Sınav Şifresi: **'Büyük devletleri birbirine düşürüp hayatta kalma'**. Anahtar kelime: **çıkar çatışmasından yararlanma** — savaş değil, diplomasi.",
+    "tanim": "19. yüzyılda gücü zayıflayan Osmanlı'nın, büyük devletlerin (İngiltere, Fransa, Rusya, Almanya) birbirleriyle çatışan çıkarlarını kullanarak ayakta kalma stratejisi; tıpkı iki kavgacı arkadaşın arasında kalıp ikisini de idare eden bir öğrenci gibi.\n💡 Hile: **'Büyük devletleri birbirine düşürüp hayatta kalma'**. Anahtar kelime: **çıkar çatışmasından yararlanma** — savaş değil, diplomasi.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "denge politikası|denge siyaseti|denge stratejisi",
+    "pattern": "\\bdenge politikası\\b|\\bdenge siyaseti\\b|\\bdenge stratejisi\\b",
     "aliases": []
   },
   {
@@ -89,10 +90,10 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 122,
-    "tanim": "Avrupalıların Osmanlı'yı parçalama, topraklarını paylaşma ve Türkleri Avrupa'dan atma planlarına verilen isim; ilk kez **1815 Viyana Kongresi'nde Rus Çarı I. Aleksandr** tarafından diplomatik terim olarak kullanıldı.\n💡 Sınav Şifresi: **Şark Meselesi = 1815 Viyana Kongresi + Rus Çarı I. Aleksandr**. Anahtar: **'Osmanlı'yı parçalama projesi'** — Doğu Sorunu.",
+    "tanim": "Avrupalıların Osmanlı'yı parçalama, topraklarını paylaşma ve Türkleri Avrupa'dan atma planlarına verilen isim; ilk kez **1815 Viyana Kongresi'nde Rus Çarı I. Aleksandr** tarafından diplomatik terim olarak kullanıldı.\n💡 Hile: **Şark Meselesi = 1815 Viyana Kongresi + Rus Çarı I. Aleksandr**. Anahtar: **'Osmanlı'yı parçalama projesi'** — Doğu Sorunu.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "şark meselesi|sark meselesi|doğu sorunu",
+    "pattern": "\\bşark meselesi\\b|\\bsark meselesi\\b|\\bdoğu sorunu\\b",
     "aliases": []
   },
   {
@@ -105,10 +106,10 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 124,
-    "tanim": "Rus Çariçesi **II. Katerina** ile Avusturya İmparatoru **II. Joseph**'in gizlice hazırladığı plan; Osmanlı'yı paylaşıp **İstanbul merkezli bir Bizans (Grek) İmparatorluğu** kurmayı hedefliyordu.\n💡 Sınav Şifresi: **Katerina + Joseph = Grek Projesi = İstanbul merkezli Bizans**. Kodlama: **'İki II'li (II. Katerina + II. Joseph) → Bizans'ı diriltme'**.",
+    "tanim": "Rus Çariçesi **II. Katerina** ile Avusturya İmparatoru **II. Joseph**'in gizlice hazırladığı plan; Osmanlı'yı paylaşıp **İstanbul merkezli bir Bizans (Grek) İmparatorluğu** kurmayı hedefliyordu.\n💡 Hile: **Katerina + Joseph = Grek Projesi = İstanbul merkezli Bizans**. Kodlama: **'İki II'li (II. Katerina + II. Joseph) → Bizans'ı diriltme'**.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "yunan \\\\\\\\(grek\\\\\\\\) projesi|grek projesi|yunan projesi",
+    "pattern": "\\byunan \\(grek\\) projesi\\b|\\bgrek projesi\\b|\\byunan projesi\\b",
     "aliases": []
   },
   {
@@ -121,11 +122,12 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 130,
-    "tanim": "Genç Osmanlıların (Jön Türkler) savunduğu akım; dil, din, ırk farkı gözetmeden herkesi **eşit haklı 'Osmanlı vatandaşı'** sayarak devleti dağılmaktan kurtarma fikri — yani 'tek millet, tek bayrak' hayali.\n💡 Sınav Şifresi: **Osmanlıcılık = Genç Osmanlılar = 'eşit vatandaşlık'**. Ayrıt edici: **din/ırk farkı gözetmez** (İslamcılık ve Türkçülük'ten farkı budur).",
+    "tanim": "Genç Osmanlıların (Jön Türkler) savunduğu akım; dil, din, ırk farkı gözetmeden herkesi **eşit haklı 'Osmanlı vatandaşı'** sayarak devleti dağılmaktan kurtarma fikri — yani 'tek millet, tek bayrak' hayali.\n💡 Hile: **Osmanlıcılık = Genç Osmanlılar = 'eşit vatandaşlık'**. Ayrıt edici: **din/ırk farkı gözetmez** (İslamcılık ve Türkçülük'ten farkı budur).",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Osmanlıcılık$|\\\\\\\\bosmanlıcılık fikir akımı\\\\\\\\b|\\\\\\\\bosmanlıcılık\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bOsmanlıcılık\\b|\\bosmanlıcılık fikir akımı\\b|\\bosmanlıcılık\\b",
+    "aliases": [],
+    "option_only_pattern": "^Osmanlıcılık$"
   },
   {
     "id": "tar6_arnavutluk_bagimsizlik",
@@ -137,11 +139,12 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 135,
-    "tanim": "1912'de I. Balkan Savaşı kargaşasından yararlanıp Osmanlı'dan ayrılan **son Balkan devleti**; bu kopuşla birlikte 'herkes Osmanlı vatandaşı olur' hayali olan **Osmanlıcılık akımı tamamen çöktü**.\n💡 Sınav Şifresi: **Arnavutluk = 1912 = son ayrılan Balkan devleti = Osmanlıcılığın çöküşü**. Kodlama: **'Arnavut → Osmanlıcılığı bitirdi'**.",
+    "tanim": "1912'de I. Balkan Savaşı kargaşasından yararlanıp Osmanlı'dan ayrılan **son Balkan devleti**; bu kopuşla birlikte 'herkes Osmanlı vatandaşı olur' hayali olan **Osmanlıcılık akımı tamamen çöktü**.\n💡 Hile: **Arnavutluk = 1912 = son ayrılan Balkan devleti = Osmanlıcılığın çöküşü**. Kodlama: **'Arnavut → Osmanlıcılığı bitirdi'**.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Arnavutluk$|\\\\\\\\barnavutluk\\\\\\\\b|\\\\\\\\b1912-1913 balkan savaşlarından faydalanarak\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bArnavutluk\\b|\\barnavutluk\\b|\\b1912-1913 balkan savaşlarından faydalanarak\\b",
+    "aliases": [],
+    "option_only_pattern": "^Arnavutluk$"
   },
   {
     "id": "tar6_esham_sistemi",
@@ -153,10 +156,10 @@
     "donem": 6,
     "unite_no": null,
     "sayfa": 140,
-    "tanim": "Devletin nakit ihtiyacını karşılamak için **iç borçlanma** yoluyla çıkardığı faizli hazine tahvilleri; yani devletin kendi vatandaşından 'ileride gelirden pay vereceğim' diyerek borç alması — bugünkü **devlet tahvili**nin Osmanlı versiyonu.\n💡 Sınav Şifresi: **Esham-ı Cedide = İÇ borçlanma** (dış değil!). Kodlama: **'Esham = hisse senedi gibi, halka satılan faizli kâğıt'** — Düyun-u Umumiye'ye giden yolun başı.",
+    "tanim": "Devletin nakit ihtiyacını karşılamak için **iç borçlanma** yoluyla çıkardığı faizli hazine tahvilleri; yani devletin kendi vatandaşından 'ileride gelirden pay vereceğim' diyerek borç alması — bugünkü **devlet tahvili**nin Osmanlı versiyonu.\n💡 Hile: **Esham-ı Cedide = İÇ borçlanma** (dış değil!). Kodlama: **'Esham = hisse senedi gibi, halka satılan faizli kâğıt'** — Düyun-u Umumiye'ye giden yolun başı.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "esham-ı cedide|esham sistemi|esham",
+    "pattern": "\\besham-ı cedide\\b|\\besham sistemi\\b|\\besham\\b",
     "aliases": []
   }
 ]

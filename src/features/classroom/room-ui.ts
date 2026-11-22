@@ -52,19 +52,31 @@ function renderRoom(state: RoomState): void {
 }
 
 function updateTopRoomPill(state: RoomState): void {
+  const inRoom = Boolean(state.roomId);
+  document.body?.classList?.toggle?.('in-room-session', inRoom);
+
+  const profileBtn = document.getElementById('btnMasterConsole');
+  if (profileBtn) {
+    profileBtn.classList.toggle('is-in-room', inRoom);
+    profileBtn.title = inRoom ? `Seçenekler • Oturum: ${state.roomName}` : 'Seçenekler';
+    profileBtn.setAttribute('aria-label', inRoom ? `Seçenekler — Canlı Oturum: ${state.roomName}` : 'Seçenekler');
+  }
+
   const pill = document.getElementById('topRoomPill');
   if (!pill) return;
-  pill.style.display = state.roomId || state.error ? 'inline-flex' : 'none';
-  pill.title = state.error || 'Sınıf oturumu';
+  pill.style.display = 'none';
   pill.dataset.connection = state.connection;
   pill.dataset.role = state.isHost ? 'host' : 'participant';
   const text = pill.querySelector('.room-pill-text');
   if (text) {
     const role = state.isHost ? 'Öğretmen' : 'Katılımcı';
     const pending = state.connection === 'connected' ? '' : ' • Bağlantı bekleniyor';
+    const fullDetail = `${state.roomName} • ${role} • ${state.participantCount} kişi${pending}`;
     text.textContent = state.roomId
-      ? `${state.roomName} • ${role} • ${state.participantCount} kişi${pending}`
+      ? `${state.roomName} • ${state.participantCount} kişi`
       : state.error || '';
+    pill.title = state.error || fullDetail || 'Sınıf oturumu';
+    pill.setAttribute('aria-label', `Oturum: ${fullDetail || 'Sınıf oturumu'}`);
   }
 }
 
@@ -100,6 +112,8 @@ function updateStudentDrawer(state: RoomState): void {
 export function toggleRoomDrawer(): void {
   const state = roomService.getState();
   if (!state.roomId) return;
+  document.getElementById('consoleMenuPopup')?.classList.remove('open');
+  document.getElementById('btnMasterConsole')?.setAttribute('aria-expanded', 'false');
   const drawer = document.getElementById(state.isHost ? 'teacherDrawerOverlay' : 'studentDrawerOverlay');
   if (drawer) drawer.style.display = drawer.style.display === 'flex' ? 'none' : 'flex';
 }

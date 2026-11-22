@@ -1,0 +1,135 @@
+/* Profil Ekranı — Program & Sorumlu Ders Çipleri */
+.rp-program-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rp-program-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 36px;
+  padding: 5px 12px;
+  border: 1px solid var(--paper-border);
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--paper-text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+}
+
+.rp-program-btn:hover {
+  border-color: var(--brand-accent);
+  color: var(--brand-accent);
+}
+
+.rp-program-btn.is-active {
+  background: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #ffffff;
+}
+
+.rp-program-count {
+  font-size: 10px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  padding: 1px 5px;
+  border-radius: 9999px;
+  background: rgba(125, 125, 125, 0.18);
+}
+
+.rp-program-btn.is-active .rp-program-count {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.rp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rp-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--paper-border) 50%, transparent);
+}
+
+.rp-group:last-child {
+  border-bottom: 0;
+}
+
+.rp-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.rp-group-name {
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.rp-group-credit,
+.rp-summary {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--paper-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.rp-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rp-chip {
+  min-width: 42px;
+  min-height: 40px;
+  padding: 0 11px;
+  border: 1px solid var(--paper-border);
+  border-radius: 9px;
+  background: transparent;
+  color: var(--paper-text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+}
+
+.rp-chip.is-wide { padding: 0 14px; }
+.rp-chip:hover { border-color: var(--brand-accent); color: var(--brand-accent); }
+.rp-chip.is-selected { background: var(--brand-accent); border-color: var(--brand-accent); color: #ffffff; }
+
+.rp-clear-btn {
+  min-height: 40px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--paper-text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rp-save-btn {
+  min-height: 40px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--brand-accent);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}

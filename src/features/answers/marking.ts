@@ -1,3 +1,4 @@
+import { isCurrentStudy, scheduleCloudSync } from '../../app/study-context.ts';
 import { state, store, onStateChange, notifyStateChange } from '../../app/state.ts';
 import {
   getActiveQuestionCard,
@@ -9,43 +10,41 @@ import {
 import { showAnswerExplanationBubble, hideAnswerExplanationBubble } from './explanation.ts';
 import { saveChoicesToStorage, loadSavedChoices } from './storage.ts';
 import { canMarkAnswer } from './rate-limit.ts';
-import { scheduleCloudSync } from '../welcome/auth-modal.ts';
 import type { Choice } from '../../data/question.ts';
 
 export { saveChoicesToStorage, loadSavedChoices, scheduleCloudSync };
 
+const reviewSessionAnswered = new Map<number, Choice>();
+
+export function resetReviewSessionAnswers(): void {
+  reviewSessionAnswered.clear();
+}
+
+onStateChange('filter:updated', () => {
+  reviewSessionAnswered.clear();
+});
+
+onStateChange('study:changed', () => {
+  reviewSessionAnswered.clear();
+});
+
 /** Optik şık baloncuğuna tıklama eylemini yönetir. */
 export function handleSelectOpticalBubble(qid: number, letter: Choice, sourceEl?: HTMLElement | null): void {
+  if (!isCurrentStudy()) return;
   const targetQ = state.allData.find(x => x.id === qid);
   if (targetQ && targetQ.sekilli) return; // Görselli/şekilli soru pasif, tıklanamaz
   if (state.revealedAnswers.has(qid)) return; // Cevap anahtarı açıkken işaretleme yapılamaz
-  if (!canMarkAnswer(qid, sourceEl)) return;
-
-  const alreadySubmitted = state.userMarkedChoices[qid];
-  if (alreadySubmitted && alreadySubmitted !== letter) return; // Nihai cevap verildikten sonra başka şıkka çevrilemez
-
-  // 1. Zaten nihai cevap verilmişse ve aynı şıkka tıklandıysa: Cevabı iptal et / sil
-  if (alreadySubmitted === letter) {
-    store.removeUserMarkedChoice(qid);
-    store.clearPendingChoice(qid);
-    scheduleCloudSync();
-    notifyStateChange('answer:revoked', { qid });
-    getQuestionCards(qid).forEach(card => {
-      card.dataset.userMark = '';
-      delete card.dataset.userStatus;
-      (['A', 'B', 'C', 'D', 'E'] as Choice[]).forEach(l => {
-        getCardChoiceRow(card, l)?.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
-      });
-      const bannerEl = getCardAnswerBanner(card);
-      if (bannerEl && !state.revealedAnswers.has(qid)) {
-        bannerEl.style.display = 'none';
-      }
-    });
-    hideAnswerExplanationBubble();
+  const isReviewMode = state.bookletFilterMode === 'review';
+  // Tekrar modunda önceden doğru çözülen sorular bu oturumda bir kez yeniden sınanabilir.
+  if (isReviewMode) {
+    if (reviewSessionAnswered.has(qid)) return;
+  } else if (state.userMarkedChoices[qid]) {
+    // Onaylanan cevap kalıcıdır; aynı şık üzerinden silip yeniden cevaplama yolu yoktur.
     return;
   }
+  if (!canMarkAnswer(qid, sourceEl)) return;
 
-  // 2. Henüz nihai cevap verilmemişse veya başka bir şık seçilmek isteniyorsa:
+  // Onay öncesindeki taslak seçim değiştirilebilir.
   const pending = state.pendingMarkedChoices[qid];
 
   if (pending === letter) {
@@ -77,14 +76,28 @@ export function handleSelectOpticalBubble(qid: number, letter: Choice, sourceEl?
 /** Nihai cevabı işler ve UI'yi günceller */
 function applyFinalChoice(qid: number, choice: Choice, sourceEl?: HTMLElement | null): void {
   store.clearPendingChoice(qid);
+  const isReviewMode = state.bookletFilterMode === 'review';
+  const q = state.bookletQuestions.find(item => item.id === qid)
+    || state.allData.find(item => item.id === qid);
+  const isCorrect = Boolean(q && choice === q.dogru_cevap);
+
+  if (isReviewMode) {
+    reviewSessionAnswered.set(qid, choice);
+    if (!isCorrect) {
+      store.setUserMarkedChoice(qid, choice);
+      scheduleCloudSync();
+    }
+    if (q) {
+      notifyStateChange('answer:marked', { qid, choice, isCorrect, isReview: true });
+    }
+    updateQuestionMarkUI(qid, choice, sourceEl);
+    return;
+  }
+
   store.setUserMarkedChoice(qid, choice);
   scheduleCloudSync();
 
-  const q = state.bookletQuestions.find(item => item.id === qid)
-    || state.allData.find(item => item.id === qid);
-
   if (q) {
-    const isCorrect = (choice === q.dogru_cevap);
     notifyStateChange('answer:marked', { qid, choice, isCorrect });
   }
 
@@ -128,6 +141,7 @@ export function updateQuestionMarkUI(questionId: number, choice: Choice, sourceE
 
 /** Tüm işaretlemeleri temizler. */
 export function clearAllMarks(): void {
+  if (!isCurrentStudy()) return;
   store.clearAllPendingChoices();
   store.clearAllEliminatedWrongChoices();
   const hasDom = typeof document !== 'undefined';

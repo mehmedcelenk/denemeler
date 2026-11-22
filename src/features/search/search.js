@@ -1,4 +1,5 @@
 import { state, store, notifyStateChange } from '../../app/state.ts';
+import { isCurrentStudy } from '../../app/study-context.ts';
 import { loadAllSubjectData } from '../../data/questions.js';
 import { SUBJECTS, getShortCourseName, matchesSubject } from '../../data/subjects.js';
 import { trNormalize } from '../../shared/search.ts';
@@ -40,9 +41,10 @@ export function resetSearchState() {
 
 export async function handleDrawerSearch(val) {
   const version = ++searchVersion;
+  const generation = state.studyGeneration;
   const subject = state.currentSubject;
   const term = val.trim();
-  const isCurrent = () => version === searchVersion
+  const isCurrent = () => isCurrentStudy(generation) && version === searchVersion
     && state.currentSubject === subject && drawerSearchTerm === term;
   drawerSearchTerm = term;
   currentSearchResults = [];

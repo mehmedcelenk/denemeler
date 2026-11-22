@@ -6,7 +6,7 @@ import {
 } from '../../app/state.ts';
 import { readJson } from '../../app/storage.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
-import { scheduleCloudSync } from '../welcome/cloud-sync.ts';
+import { isCurrentStudy, scheduleCloudSync } from '../../app/study-context.ts';
 
 function isArray(value: unknown): value is unknown[] {
   return Array.isArray(value);
@@ -55,12 +55,14 @@ export function loadLibraryData(): void {
 }
 
 export function saveStarred(): void {
+  if (!isCurrentStudy()) return;
   store.setStarredQuestionIds(state.starredQuestionIds, true);
   updateLibraryBadgeUI();
   scheduleCloudSync();
 }
 
 export function saveRematch(): void {
+  if (!isCurrentStudy()) return;
   store.setRematchQuestionIds(state.rematchQuestionIds, true);
   updateLibraryBadgeUI();
   scheduleCloudSync();
@@ -72,6 +74,7 @@ export function saveLibraryToStorage(): void {
 }
 
 export function toggleStarQuestion(id: number): boolean {
+  if (!isCurrentStudy()) return false;
   const isStarred = store.toggleStarredQuestion(id, true);
   updateLibraryBadgeUI();
   scheduleCloudSync();
@@ -79,12 +82,14 @@ export function toggleStarQuestion(id: number): boolean {
 }
 
 export function addToRematch(id: number): void {
+  if (!isCurrentStudy()) return;
   store.addRematchQuestion(id, true);
   updateLibraryBadgeUI();
   scheduleCloudSync();
 }
 
 export function removeFromRematch(id: number): void {
+  if (!isCurrentStudy()) return;
   store.removeRematchQuestion(id, true);
   updateLibraryBadgeUI();
   scheduleCloudSync();

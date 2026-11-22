@@ -6,7 +6,7 @@ import {
   setSupabaseConfigOverride,
   fetchQuestionsWithFallback,
   fetchLocalSubjectJson,
-  fetchAiExplanationFromSupabase,
+  fetchQuestionLessonFromSupabase,
   normalizePostgrestQuestions,
 } from '../src/data/supabase-client.ts';
 import type { Question } from '../src/data/question.ts';
@@ -119,38 +119,50 @@ test('fetchQuestionsWithFallback: Supabase 500 hatası verdiğinde otomatik yere
   }
 });
 
-test('fetchAiExplanationFromSupabase: soru kimliği için AI açıklamasını döner veya null döner', async () => {
+test('fetchQuestionLessonFromSupabase: soru kimliği için ön-üretilmiş ders anlatımını döner veya null döner', async () => {
   setSupabaseConfigOverride({
     url: 'https://mock.supabase.co',
     anonKey: 'mock-key',
   });
 
+  const samplePayload = {
+    questionId: 474,
+    subject: 'MAT',
+    title: 'Üslü Sayılar Hızlı Özet',
+    explanation: 'Aynı tabanda çarpma yaparken üslü ifade kuralı gereği üsler toplanır; sonuç B şıkkıdır.',
+    ezber: {
+      rhyme: 'Taban birse durur saf,\nÜsler toplanır, netleşir taraf.',
+    },
+    concepts: [
+      { term: 'Üslü İfade', definition: 'Aynı sayının kendisiyle tekrarlı çarpımının kısa yazılışı.' },
+    ],
+    model: 'deepseek-v4.1-flash',
+    version: 3,
+  };
+
   const originalFetch = globalThis.fetch;
   try {
     globalThis.fetch = async (url: string | URL | Request) => {
       const urlStr = String(url);
-      if (urlStr.includes('question_id=eq.474')) {
-        return new Response(
-          JSON.stringify([
-            {
-              question_id: 474,
-              query: 'Açıklar mısın?',
-              reply: 'Pedagojik çözüm',
-              model: 'deepseek-v4.1-flash',
-            },
-          ]),
-          { status: 200 }
-        );
+      if (urlStr.includes('/rest/v1/question_lessons') && urlStr.includes('question_id=eq.474')) {
+        return new Response(JSON.stringify([{ payload: samplePayload }]), { status: 200 });
+      }
+      if (urlStr.includes('question_id=eq.475')) {
+        return new Response(JSON.stringify([{ payload: { broken: true } }]), { status: 200 });
       }
       return new Response('[]', { status: 200 });
     };
 
-    const explanation = await fetchAiExplanationFromSupabase(474);
-    assert.ok(explanation);
-    assert.equal(explanation.question_id, 474);
-    assert.equal(explanation.reply, 'Pedagojik çözüm');
+    const lesson = await fetchQuestionLessonFromSupabase(474);
+    assert.ok(lesson);
+    assert.equal(lesson.questionId, 474);
+    assert.equal(lesson.title, 'Üslü Sayılar Hızlı Özet');
+    assert.equal(lesson.concepts.length, 1);
 
-    const notFound = await fetchAiExplanationFromSupabase(999);
+    const invalid = await fetchQuestionLessonFromSupabase(475);
+    assert.equal(invalid, null);
+
+    const notFound = await fetchQuestionLessonFromSupabase(999);
     assert.equal(notFound, null);
   } finally {
     setSupabaseConfigOverride(null);

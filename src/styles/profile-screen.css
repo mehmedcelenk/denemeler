@@ -1,0 +1,257 @@
+/* Adanmış Profil Ekranı — Editoryal, Tek Sütunlu, Alt Bar Uyumlu */
+body.profile-active #welcomePortal,
+body.profile-active #bookletPagesContainer,
+body.profile-active .top-center-badge-container,
+body.profile-active #studyModeChipsBar,
+body.profile-active #resumeSessionBanner,
+body.profile-active #bookletZoomIndicator {
+  display: none !important;
+}
+
+.profile-screen {
+  width: 100%;
+  min-height: 100vh;
+  padding: calc(20px + var(--safe-top)) 16px calc(108px + var(--safe-bottom));
+  display: flex;
+  justify-content: center;
+  background: var(--ambient-bg);
+  color: var(--paper-text);
+}
+
+.profile-screen[hidden] {
+  display: none !important;
+}
+
+.ps-container {
+  width: min(560px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.ps-topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--paper-border);
+}
+
+.ps-back-btn {
+  min-height: 36px;
+  padding: 0 10px;
+  margin-left: -10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--brand-accent);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ps-back-btn:hover {
+  background: color-mix(in srgb, var(--brand-accent) 10%, transparent);
+}
+
+.ps-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ps-edit-toggle-btn {
+  margin-left: auto;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--paper-border);
+  border-radius: 9px;
+  background: transparent;
+  color: var(--brand-accent);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ps-edit-toggle-btn:hover {
+  border-color: var(--brand-accent);
+  background: color-mix(in srgb, var(--brand-accent) 10%, transparent);
+}
+
+.ps-program-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--brand-accent) 14%, transparent);
+  color: var(--brand-accent);
+  font-size: 12.5px;
+  font-weight: 800;
+}
+
+.ps-readonly-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ps-readonly-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 2px;
+  border-bottom: 1px solid color-mix(in srgb, var(--paper-border) 50%, transparent);
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.ps-readonly-item:last-child {
+  border-bottom: 0;
+}
+
+.ps-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid color-mix(in srgb, var(--paper-border) 60%, transparent);
+}
+
+.ps-courses-section {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ps-section-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--paper-text-muted);
+}
+
+.ps-identity-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+}
+
+.ps-identity-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--paper-text);
+}
+
+.ps-edit-name-btn,
+.ps-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--paper-border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--paper-text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ps-edit-name-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ps-edit-name-btn:hover,
+.ps-link-btn:hover {
+  border-color: var(--brand-accent);
+  color: var(--brand-accent);
+}
+
+#displayNameEditor:not([hidden]) ~ .ps-edit-name-btn {
+  display: none;
+}
+
+.ps-name-inline-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.ps-name-input {
+  flex: 1;
+  min-width: 140px;
+  height: 38px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--paper-text);
+  background: var(--paper-bg);
+  border: 1.5px solid var(--brand-accent);
+  border-radius: 9px;
+  outline: none;
+}
+
+.ps-name-save-btn {
+  height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--brand-accent);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ps-name-inline-wrap .welcome-name-error {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--danger-accent);
+}
+
+.ps-courses-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ps-lead {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--paper-text-muted);
+}
+
+.ps-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--paper-border);
+}
+
+.ps-container button:focus-visible {
+  outline: 2px solid var(--brand-accent);
+  outline-offset: 2px;
+}

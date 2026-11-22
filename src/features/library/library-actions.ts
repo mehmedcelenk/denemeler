@@ -1,4 +1,5 @@
 import { state, notifyStateChange } from '../../app/state.ts';
+import { isCurrentStudy } from '../../app/study-context.ts';
 import { getCardActionElements, getQuestionCards } from '../booklet/card-query.ts';
 import { toggleStarQuestion, addToRematch, saveLibraryToStorage } from './library-model.ts';
 
@@ -7,6 +8,7 @@ export function toggleStarQuestionUI(questionId: number, event?: Event): void {
     event.stopPropagation();
     event.preventDefault();
   }
+  if (!isCurrentStudy()) return;
   toggleStarQuestion(questionId);
 
   if (typeof document === 'undefined') return;
@@ -28,6 +30,7 @@ export function toggleStarQuestionUI(questionId: number, event?: Event): void {
 }
 
 export function handleRematchDontKnow(questionId: number): void {
+  if (!isCurrentStudy()) return;
   addToRematch(questionId);
   saveLibraryToStorage();
   notifyStateChange('answer:reveal', { questionId });

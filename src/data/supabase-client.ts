@@ -2,6 +2,8 @@ import type { Question, SubjectId } from './question.ts';
 import { parseQuestions } from './question.ts';
 import type { ScopedConceptEntry } from './textbook.ts';
 import { parseScopedConcepts } from './textbook.ts';
+import type { QuestionLesson } from './lesson.ts';
+import { parseQuestionLesson } from './lesson.ts';
 
 interface ImportMetaEnv {
   VITE_SUPABASE_URL?: string;
@@ -16,13 +18,6 @@ interface CustomImportMeta {
 export interface SupabaseConfig {
   url: string;
   anonKey: string;
-}
-
-export interface AiExplanationRecord {
-  question_id: number;
-  query: string;
-  reply: string;
-  model: string;
 }
 
 let activeConfigOverride: SupabaseConfig | null = null;
@@ -140,14 +135,14 @@ export async function fetchConceptsFromSupabase(
   }
 }
 
-export async function fetchAiExplanationFromSupabase(
+export async function fetchQuestionLessonFromSupabase(
   questionId: number,
   timeoutMs = 5000
-): Promise<AiExplanationRecord | null> {
+): Promise<QuestionLesson | null> {
   const config = getSupabaseConfig();
   if (!config) return null;
 
-  const endpoint = `${config.url}/rest/v1/ai_explanations?question_id=eq.${questionId}&select=question_id,query,reply,model&limit=1`;
+  const endpoint = `${config.url}/rest/v1/question_lessons?question_id=eq.${questionId}&select=payload&limit=1`;
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
 
@@ -165,7 +160,8 @@ export async function fetchAiExplanationFromSupabase(
     if (!response.ok) return null;
     const data: unknown = await response.json();
     if (Array.isArray(data) && data.length > 0 && typeof data[0] === 'object' && data[0] !== null) {
-      return data[0] as AiExplanationRecord;
+      const row = data[0] as { payload?: unknown };
+      if (row.payload !== undefined) return parseQuestionLesson(row.payload);
     }
     return null;
   } catch {

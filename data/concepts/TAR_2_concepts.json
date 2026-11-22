@@ -9,10 +9,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 125,
-    "tanim": "Türk adının geçtiği **ilk Türkçe yazılı belgeler** olup, Bilge Kağan, Kül Tigin ve Tonyukuk adına dikilmiş; devlet yönetimini anlatan birer **siyasetname** niteliğindedir. Tıpkı bir milletin hafızasını kaydeden **USB bellek** gibi, Türk tarihini geleceğe taşımışlardır.\n💡 Sınav Şifresi: **'Türk adı ilk kez'** + **'Türkçe yazılı belge'** + **'Vilhelm Thomsen 1893'te çözdü'** üçlüsü bu kavramı diğerlerinden ayırır.",
+    "tanim": "Türk adının geçtiği **ilk Türkçe yazılı belgeler** olup, Bilge Kağan, Kül Tigin ve Tonyukuk adına dikilmiş; devlet yönetimini anlatan birer **siyasetname** niteliğindedir. Tıpkı bir milletin hafızasını kaydeden **USB bellek** gibi, Türk tarihini geleceğe taşımışlardır.\n💡 Hile: **'Türk adı ilk kez'** + **'Türkçe yazılı belge'** + **'Vilhelm Thomsen 1893'te çözdü'** üçlüsü bu kavramı diğerlerinden ayırır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "orhun kitabeleri[a-zçğıöşü]*|göktürk yazıtları|orhun yazıtları|göktürk kitabeleri",
+    "pattern": "\\borhun kitabeleri[a-zçğıöşü]*|\\bgöktürk yazıtları\\b|\\borhun yazıtları\\b|\\bgöktürk kitabeleri\\b",
     "aliases": []
   },
   {
@@ -25,10 +25,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 127,
-    "tanim": "Kuraklık, otlak yetersizliği ve nüfus artışı gibi **iktisadi**; Çin-Moğol baskısı ve bağımsız yaşama arzusu gibi **siyasi** nedenlerle Orta Asya'dan dünyaya yayılan büyük göç dalgasıdır. Tıpkı bir **GPS'in rota değiştirmesi** gibi, Türkler yaşam şartları değişince yön değiştirmiştir.\n💡 Sınav Şifresi: Nedenlerde **'kuraklık + otlak + nüfus'** (iktisadi) ile **'Çin baskısı + bağımsızlık'** (siyasi) ayrımını yakala; soru 'hangi neden' diye soruyorsa bu ayrım şarttır.",
+    "tanim": "Kuraklık, otlak yetersizliği ve nüfus artışı gibi **iktisadi**; Çin-Moğol baskısı ve bağımsız yaşama arzusu gibi **siyasi** nedenlerle Orta Asya'dan dünyaya yayılan büyük göç dalgasıdır. Tıpkı bir **GPS'in rota değiştirmesi** gibi, Türkler yaşam şartları değişince yön değiştirmiştir.\n💡 Hile: Nedenlerde **'kuraklık + otlak + nüfus'** (iktisadi) ile **'Çin baskısı + bağımsızlık'** (siyasi) ayrımını yakala; soru 'hangi neden' diye soruyorsa bu ayrım şarttır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "türklerin orta asya’dan göç|orta asya'dan göç|orta asya göçleri",
+    "pattern": "\\btürklerin orta asya’dan göç\\b|\\borta asya'dan göç\\b|\\borta asya göçleri\\b",
     "aliases": []
   },
   {
@@ -41,10 +41,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 130,
-    "tanim": "Gök Tengri'nin kağana ve millete bağışladığı **iktisadi kısmet ve bereketin adil paylaşımı** ilkesidir; devlet gelirleri ve topraklar hanedan üyeleri ile boylar arasında bölüştürülür. Tıpkı bir **şirketin kâr paylaşımı (temettü)** gibi, devlet zenginliği herkese pay edilirdi.\n💡 Sınav Şifresi: **'Gök Tengri bağışı'** + **'adil paylaşım'** + **'hanedan ve boylara dağıtım'** ifadeleri Ülüş'ü işaret eder; sakın 'veraset' (tahta geçme) ile karıştırma.",
+    "tanim": "Gök Tengri'nin kağana ve millete bağışladığı **iktisadi kısmet ve bereketin adil paylaşımı** ilkesidir; devlet gelirleri ve topraklar hanedan üyeleri ile boylar arasında bölüştürülür. Tıpkı bir **şirketin kâr paylaşımı (temettü)** gibi, devlet zenginliği herkese pay edilirdi.\n💡 Hile: **'Gök Tengri bağışı'** + **'adil paylaşım'** + **'hanedan ve boylara dağıtım'** ifadeleri Ülüş'ü işaret eder; sakın 'veraset' (tahta geçme) ile karıştırma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ülüş sistemi|ülüş",
+    "pattern": "\\bülüş sistemi\\b|\\bülüş\\b",
     "aliases": []
   },
   {
@@ -57,11 +57,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 132,
-    "tanim": "I. Kök Türk yıkıldıktan sonra Çin esaretindeki Türkleri bağımsızlığa kavuşturmak için **39 arkadaşıyla Çin sarayını basan** Kürşat'ın destansı bağımsızlık hareketidir. Tıpkı bir **siber saldırı ekibinin** düşman merkezine sızması gibi, küçük bir grupla büyük bir direniş başlatmıştır.\n💡 Sınav Şifresi: **'39 arkadaş'** + **'Çin sarayı'** + **'639'** üçlüsü Kürşat İsyanı'nın kesin kodudur.",
+    "tanim": "I. Kök Türk yıkıldıktan sonra Çin esaretindeki Türkleri bağımsızlığa kavuşturmak için **39 arkadaşıyla Çin sarayını basan** Kürşat'ın destansı bağımsızlık hareketidir. Tıpkı bir **siber saldırı ekibinin** düşman merkezine sızması gibi, küçük bir grupla büyük bir direniş başlatmıştır.\n💡 Hile: **'39 arkadaş'** + **'Çin sarayı'** + **'639'** üçlüsü Kürşat İsyanı'nın kesin kodudur.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Kürşat$|^Kürşad$|\\\\\\\\bkürşat isyanı\\\\\\\\b|\\\\\\\\bkürşat\\\\\\\\b|\\\\\\\\bkürşad\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bKürşat\\b|\\bKürşad\\b|\\bkürşat isyanı\\b|\\bkürşat\\b|\\bkürşad\\b",
+    "aliases": [],
+    "option_only_pattern": "^Kürşat$|^Kürşad$"
   },
   {
     "id": "tar2_tonyukuk",
@@ -73,11 +74,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 133,
-    "tanim": "II. Kök Türk (Kutluk) Devleti'nin kurucularından, bağımsızlık mücadelesini organize eden bilge vezirdir; **'Türklerin Bismarck'ı'** olarak anılır ve **adına ilk yazıt dikilen** devlet adamıdır. Tıpkı bir **baş stratejist** gibi, devletin arkasındaki akıl olmuştur.\n💡 Sınav Şifresi: **'Türklerin Bismarck'ı'** + **'Aparam'** + **'kendi adına yazıt diktiren ilk kişi'** ifadeleri Tonyukuk'u kesin ayırt eder.",
+    "tanim": "II. Kök Türk (Kutluk) Devleti'nin kurucularından, bağımsızlık mücadelesini organize eden bilge vezirdir; **'Türklerin Bismarck'ı'** olarak anılır ve **adına ilk yazıt dikilen** devlet adamıdır. Tıpkı bir **baş stratejist** gibi, devletin arkasındaki akıl olmuştur.\n💡 Hile: **'Türklerin Bismarck'ı'** + **'Aparam'** + **'kendi adına yazıt diktiren ilk kişi'** ifadeleri Tonyukuk'u kesin ayırt eder.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Tonyukuk$|\\\\\\\\btonyukuk\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bTonyukuk\\b|\\btonyukuk\\b",
+    "aliases": [],
+    "option_only_pattern": "^Tonyukuk$"
   },
   {
     "id": "tar2_bumin_kagan",
@@ -89,11 +91,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 131,
-    "tanim": "552'de Avar egemenliğine son vererek **Ötüken merkezli I. Kök Türk Devleti'ni** kuran ve **'Türk' adını ilk kez devlet adı olarak** kullanan kurucu hakandır. Tıpkı bir **startup'ı kuran CEO** gibi, markayı (Türk adını) tescil ettirmiştir.\n💡 Sınav Şifresi: **'552'** + **'Avar egemenliğine son'** + **'Türk adını ilk kez devlet adı yapan'** üçlüsü Bumin Kağan'ın imzasıdır.",
+    "tanim": "552'de Avar egemenliğine son vererek **Ötüken merkezli I. Kök Türk Devleti'ni** kuran ve **'Türk' adını ilk kez devlet adı olarak** kullanan kurucu hakandır. Tıpkı bir **startup'ı kuran CEO** gibi, markayı (Türk adını) tescil ettirmiştir.\n💡 Hile: **'552'** + **'Avar egemenliğine son'** + **'Türk adını ilk kez devlet adı yapan'** üçlüsü Bumin Kağan'ın imzasıdır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Bumin Kağan$|\\\\\\\\bbumin kağan\\\\\\\\b|\\\\\\\\bbumin\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bBumin Kağan\\b|\\bbumin kağan\\b|\\bbumin\\b",
+    "aliases": [],
+    "option_only_pattern": "^Bumin Kağan$"
   },
   {
     "id": "tar2_mukan_kagan",
@@ -105,11 +108,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 132,
-    "tanim": "I. Kök Türk'e en parlak dönemini yaşatan; **İpek Yolu hakimiyeti** için Ak Hunlara karşı Sasanilerle, Sasanilere karşı Bizans'la **ittifak kuran** büyük kağandır. Tıpkı bir **diplomasi satrancı** oynar gibi, düşmanının düşmanıyla iş birliği yapmıştır.\n💡 Sınav Şifresi: **'İpek Yolu'** + **'Ak Hunlara karşı Sasaniler'** + **'Sasanilere karşı Bizans'** üçlü ittifak zinciri Mukan Kağan'ı işaret eder.",
+    "tanim": "I. Kök Türk'e en parlak dönemini yaşatan; **İpek Yolu hakimiyeti** için Ak Hunlara karşı Sasanilerle, Sasanilere karşı Bizans'la **ittifak kuran** büyük kağandır. Tıpkı bir **diplomasi satrancı** oynar gibi, düşmanının düşmanıyla iş birliği yapmıştır.\n💡 Hile: **'İpek Yolu'** + **'Ak Hunlara karşı Sasaniler'** + **'Sasanilere karşı Bizans'** üçlü ittifak zinciri Mukan Kağan'ı işaret eder.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Mukan Kağan$|\\\\\\\\bmukan kağan\\\\\\\\b|\\\\\\\\bmukan\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bMukan Kağan\\b|\\bmukan kağan\\b|\\bmukan\\b",
+    "aliases": [],
+    "option_only_pattern": "^Mukan Kağan$"
   },
   {
     "id": "tar2_ikili_teskilat",
@@ -121,10 +125,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 135,
-    "tanim": "Geniş toprakların yönetimini kolaylaştırmak için devletin **Doğu (asıl kağan)** ve **Batı (Yabgu)** olarak ikiye ayrılarak yönetilmesi geleneğidir. Tıpkı bir **şirketin merkez ve şube yönetimi** gibi, doğu merkez, batı ise bağlı şube konumundadır.\n💡 Sınav Şifresi: **'Doğu = asıl kağan'** + **'Batı = Yabgu'** eşleştirmesi bu kavramın kalbidir; Yabgu'nun kağana **bağlı** olduğunu unutma.",
+    "tanim": "Geniş toprakların yönetimini kolaylaştırmak için devletin **Doğu (asıl kağan)** ve **Batı (Yabgu)** olarak ikiye ayrılarak yönetilmesi geleneğidir. Tıpkı bir **şirketin merkez ve şube yönetimi** gibi, doğu merkez, batı ise bağlı şube konumundadır.\n💡 Hile: **'Doğu = asıl kağan'** + **'Batı = Yabgu'** eşleştirmesi bu kavramın kalbidir; Yabgu'nun kağana **bağlı** olduğunu unutma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "ikili teşkilat|ikili yönetim|doğu-batı",
+    "pattern": "\\bikili teşkilat\\b|\\bikili yönetim\\b|\\bdoğu-batı\\b",
     "aliases": []
   },
   {
@@ -137,10 +141,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 142,
-    "tanim": "İslamiyet öncesi Arap Yarımadası'nda **putperestlik, kan davaları ve kadın haklarının yok sayıldığı** dönemdir; **Ukaz** gibi haram aylarda kurulan panayırlarda kabileler hem ticaret yapar hem **şiir yarışmalarıyla** kültürel etkileşimde bulunurdu. Tıpkı bir **festival + ticaret fuarı** karışımı gibi, savaşın durduğu aylarda kültür ve ticaret buluşurdu.\n💡 Sınav Şifresi: **'Haram aylar'** + **'Ukaz panayırı'** + **'şiir yarışması'** üçlüsü Cahiliye panayırlarını tanımlar; 'haram ay = savaşın yasak olduğu ay' kodunu unutma.",
+    "tanim": "İslamiyet öncesi Arap Yarımadası'nda **putperestlik, kan davaları ve kadın haklarının yok sayıldığı** dönemdir; **Ukaz** gibi haram aylarda kurulan panayırlarda kabileler hem ticaret yapar hem **şiir yarışmalarıyla** kültürel etkileşimde bulunurdu. Tıpkı bir **festival + ticaret fuarı** karışımı gibi, savaşın durduğu aylarda kültür ve ticaret buluşurdu.\n💡 Hile: **'Haram aylar'** + **'Ukaz panayırı'** + **'şiir yarışması'** üçlüsü Cahiliye panayırlarını tanımlar; 'haram ay = savaşın yasak olduğu ay' kodunu unutma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hicaz bölgesinde düzenlenen panayırlar|ukaz panayırı|cahiliye dönemi",
+    "pattern": "\\bhicaz bölgesinde düzenlenen panayırlar\\b|\\bukaz panayırı\\b|\\bcahiliye dönemi\\b",
     "aliases": []
   },
   {
@@ -153,10 +157,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 140,
-    "tanim": "Asya, Afrika ve Avrupa'nın **kesişiminde** yer alan; **Mekke, Medine ve Taif** şehirlerini barındıran, İslamiyet'in doğduğu coğrafi bölgedir. Tıpkı bir **kavşak noktası** gibi, üç kıtanın ticaret ve kültür yollarını birleştirir.\n💡 Sınav Şifresi: **'Üç kıtanın kesişimi'** + **'Mekke-Medine-Taif'** üçlüsü Arap Yarımadası'nı tanımlar; Hicaz bölgesinin bu üç şehri kapsadığını unutma.",
+    "tanim": "Asya, Afrika ve Avrupa'nın **kesişiminde** yer alan; **Mekke, Medine ve Taif** şehirlerini barındıran, İslamiyet'in doğduğu coğrafi bölgedir. Tıpkı bir **kavşak noktası** gibi, üç kıtanın ticaret ve kültür yollarını birleştirir.\n💡 Hile: **'Üç kıtanın kesişimi'** + **'Mekke-Medine-Taif'** üçlüsü Arap Yarımadası'nı tanımlar; Hicaz bölgesinin bu üç şehri kapsadığını unutma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "arap yarımadası|arap yarimadasi|hicaz bölgesi",
+    "pattern": "\\barap yarımadası\\b|\\barap yarimadasi\\b|\\bhicaz bölgesi\\b",
     "aliases": []
   },
   {
@@ -169,10 +173,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 146,
-    "tanim": "Hz. Muhammed'in hicretten sonra Medine'de inşa ettiği; **ibadet, devlet işleri ve eğitim (Suffe)** merkezi olan mescittir. Kabrinin bulunduğu bölüme **'Ravza-i Mutahhara' (Cennet Bahçesi)** denir. Tıpkı bir **parlamento + üniversite + cami** kompleksi gibi, devletin kalbi burada atardı.\n💡 Sınav Şifresi: **'Suffe = eğitim'** + **'Ravza-i Mutahhara = kabir bölümü'** eşleştirmesi bu kavramın anahtarıdır; Mescid-i Nebevî'nin **çok işlevli** yapısını vurgula.",
+    "tanim": "Hz. Muhammed'in hicretten sonra Medine'de inşa ettiği; **ibadet, devlet işleri ve eğitim (Suffe)** merkezi olan mescittir. Kabrinin bulunduğu bölüme **'Ravza-i Mutahhara' (Cennet Bahçesi)** denir. Tıpkı bir **parlamento + üniversite + cami** kompleksi gibi, devletin kalbi burada atardı.\n💡 Hile: **'Suffe = eğitim'** + **'Ravza-i Mutahhara = kabir bölümü'** eşleştirmesi bu kavramın anahtarıdır; Mescid-i Nebevî'nin **çok işlevli** yapısını vurgula.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "mescid-i nebevi[a-zçğıöşü]*|ravza-i mutahhara|suffe",
+    "pattern": "\\bmescid-i nebevi[a-zçğıöşü]*|\\bravza-i mutahhara\\b|\\bsuffe\\b",
     "aliases": []
   },
   {
@@ -185,10 +189,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 150,
-    "tanim": "İlk halife dönemidir (632-634); **Ridde Savaşları** ile dinden dönenler ve sahte peygamberlerle mücadele edilmiş, **Kur'an ilk kez Mushaf hâline** getirilmiş ve Suriye fethi için Bizans'la **Ecnâdeyn Savaşı** yapılmıştır. Tıpkı bir **kurucu CEO'nun ilk icraatları** gibi, devletin temel taşlarını atmıştır.\n💡 Sınav Şifresi: **'Ridde Savaşları'** + **'Kur'an'ın Mushaf hâline getirilmesi'** + **'Ecnâdeyn'** üçlüsü Hz. Ebubekir dönemine kilitlenir; 'ilk halife' kodunu da unutma.",
+    "tanim": "İlk halife dönemidir (632-634); **Ridde Savaşları** ile dinden dönenler ve sahte peygamberlerle mücadele edilmiş, **Kur'an ilk kez Mushaf hâline** getirilmiş ve Suriye fethi için Bizans'la **Ecnâdeyn Savaşı** yapılmıştır. Tıpkı bir **kurucu CEO'nun ilk icraatları** gibi, devletin temel taşlarını atmıştır.\n💡 Hile: **'Ridde Savaşları'** + **'Kur'an'ın Mushaf hâline getirilmesi'** + **'Ecnâdeyn'** üçlüsü Hz. Ebubekir dönemine kilitlenir; 'ilk halife' kodunu da unutma.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hz\\\\\\\\. ebu bekir|hz\\\\\\\\. ebubekir|ecnâdeyn|ecnadeyn|ridde savaşları",
+    "pattern": "\\bhz\\. ebu bekir\\b|\\bhz\\. ebubekir\\b|\\becnâdeyn\\b|\\becnadeyn\\b|\\bridde savaşları\\b",
     "aliases": []
   },
   {
@@ -201,10 +205,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 152,
-    "tanim": "İslam Devleti'nin **imparatorluğa dönüştüğü** dönem: Sasani yıkıldı, Suriye-Mısır-Kudüs fethedildi; **Hicri takvim, kadılık ve Beytü'l-mal** kuruldu. Tıpkı bir devletin kurumsallaşırken kimlik kartı (takvim), mahkemesi (kadılık) ve bankası (Beytü'l-mal) açması gibi.\n💡 Sınav Şifresi: **Hicri takvim + kadılık + Beytü'l-mal = Hz. Ömer**. Sasani'nin yıkılışı (Kadisiye-Nihavend) da bu döneme ait.",
+    "tanim": "İslam Devleti'nin **imparatorluğa dönüştüğü** dönem: Sasani yıkıldı, Suriye-Mısır-Kudüs fethedildi; **Hicri takvim, kadılık ve Beytü'l-mal** kuruldu. Tıpkı bir devletin kurumsallaşırken kimlik kartı (takvim), mahkemesi (kadılık) ve bankası (Beytü'l-mal) açması gibi.\n💡 Hile: **Hicri takvim + kadılık + Beytü'l-mal = Hz. Ömer**. Sasani'nin yıkılışı (Kadisiye-Nihavend) da bu döneme ait.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hz\\\\\\\\. ömer|kadisiye|celûlâ|celula|nihavend|yermük",
+    "pattern": "\\bhz\\. ömer\\b|\\bkadisiye\\b|\\bcelûlâ\\b|\\bcelula\\b|\\bnihavend\\b|\\byermük\\b",
     "aliases": []
   },
   {
@@ -217,10 +221,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 156,
-    "tanim": "**İlk İslam donanmasının** kurulduğu (Zatü's-Savari), Kıbrıs'ın alındığı ve **Kur'an'ın çoğaltılıp eyaletlere dağıtıldığı** dönem. Kur'an'ın standart kopyalarını çoğaltıp dağıtmak, bugün bir yazılımın tüm sunuculara eşzamanlı kurulması gibidir.\n💡 Sınav Şifresi: **Donanma + Kıbrıs + Kur'an'ın çoğaltılması = Hz. Osman**. 'Zatü's-Savari' adını görürsen direkt işaretle.",
+    "tanim": "**İlk İslam donanmasının** kurulduğu (Zatü's-Savari), Kıbrıs'ın alındığı ve **Kur'an'ın çoğaltılıp eyaletlere dağıtıldığı** dönem. Kur'an'ın standart kopyalarını çoğaltıp dağıtmak, bugün bir yazılımın tüm sunuculara eşzamanlı kurulması gibidir.\n💡 Hile: **Donanma + Kıbrıs + Kur'an'ın çoğaltılması = Hz. Osman**. 'Zatü's-Savari' adını görürsen direkt işaretle.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hz\\\\\\\\. osman|kuran'ın çoğaltılması|zatü's-savari",
+    "pattern": "\\bhz\\. osman\\b|\\bkuran'ın çoğaltılması\\b|\\bzatü's-savari\\b",
     "aliases": []
   },
   {
@@ -233,10 +237,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 158,
-    "tanim": "**İç karışıklıklar dönemi**: Cemel Vakası, Sıffîn Savaşı ve Hakem Olayı yaşandı; İslam dünyasında ilk kez **Şii-Emevi-Harici** siyasi ayrılıkları doğdu. Bir ailenin miras kavgasıyla üç ayrı kola bölünmesi gibi.\n💡 Sınav Şifresi: **Cemel + Sıffîn + Hakem = Hz. Ali**. 'İlk siyasi ayrılıklar/fırkalar' ifadesi bu dönemin imzasıdır.",
+    "tanim": "**İç karışıklıklar dönemi**: Cemel Vakası, Sıffîn Savaşı ve Hakem Olayı yaşandı; İslam dünyasında ilk kez **Şii-Emevi-Harici** siyasi ayrılıkları doğdu. Bir ailenin miras kavgasıyla üç ayrı kola bölünmesi gibi.\n💡 Hile: **Cemel + Sıffîn + Hakem = Hz. Ali**. 'İlk siyasi ayrılıklar/fırkalar' ifadesi bu dönemin imzasıdır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hz\\\\\\\\. ali|sıffîn|sıffin|hakem olayı|cemel vakası",
+    "pattern": "\\bhz\\. ali\\b|\\bsıffîn\\b|\\bsıffin\\b|\\bhakem olayı\\b|\\bcemel vakası\\b",
     "aliases": []
   },
   {
@@ -249,11 +253,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 162,
-    "tanim": "**Şam merkezli**, hilafeti **saltanata** çeviren hanedan; Arap olmayan Müslümanlara **'Mevali' (ikinci sınıf)** muamelesi yaptıkları için Türklerin İslam'a girişini geciktirdiler. Kulübe üyelik aidatı gibi: Müslüman olsan da 'asil üye' değilsen tam hak alamıyorsun.\n💡 Sınav Şifresi: **Mevali = Arap olmayan Müslüman**. 'Türklerin İslam'a girişini geciktiren' ifadesi Emevileri işaret eder.",
+    "tanim": "**Şam merkezli**, hilafeti **saltanata** çeviren hanedan; Arap olmayan Müslümanlara **'Mevali' (ikinci sınıf)** muamelesi yaptıkları için Türklerin İslam'a girişini geciktirdiler. Kulübe üyelik aidatı gibi: Müslüman olsan da 'asil üye' değilsen tam hak alamıyorsun.\n💡 Hile: **Mevali = Arap olmayan Müslüman**. 'Türklerin İslam'a girişini geciktiren' ifadesi Emevileri işaret eder.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Emeviler$|\\\\\\\\bemeviler\\\\\\\\b|\\\\\\\\bmevali\\\\\\\\b|\\\\\\\\bmevâli\\\\\\\\b|\\\\\\\\bendülüs emevileri\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bEmeviler\\b|\\bemeviler\\b|\\bmevali\\b|\\bmevâli\\b|\\bendülüs emevileri\\b",
+    "aliases": [],
+    "option_only_pattern": "^Emeviler$"
   },
   {
     "id": "tar2_abbasiler_hosgoru",
@@ -265,11 +270,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 166,
-    "tanim": "**Bağdat merkezli**, Emevilerin Arap ırkçılığına son verip **ümmetçi-hoşgörülü** politika izleyen devlet; Türkler için **Avasım** sınır şehirleri ve **Samarra** askerî kenti kuruldu, **Beytü'l-Hikme** bilim merkezi açıldı. Beytü'l-Hikme, dönemin 'üniversite + kütüphane + araştırma merkezi' kompleksidir.\n💡 Sınav Şifresi: **Beytü'l-Hikme + Samarra + Avasım = Abbasiler**. 'Hoşgörü/ümmetçi politika' ayırt edici anahtardır.",
+    "tanim": "**Bağdat merkezli**, Emevilerin Arap ırkçılığına son verip **ümmetçi-hoşgörülü** politika izleyen devlet; Türkler için **Avasım** sınır şehirleri ve **Samarra** askerî kenti kuruldu, **Beytü'l-Hikme** bilim merkezi açıldı. Beytü'l-Hikme, dönemin 'üniversite + kütüphane + araştırma merkezi' kompleksidir.\n💡 Hile: **Beytü'l-Hikme + Samarra + Avasım = Abbasiler**. 'Hoşgörü/ümmetçi politika' ayırt edici anahtardır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Abbasiler$|\\\\\\\\babbasiler\\\\\\\\b|\\\\\\\\bbeytü’l hikme\\\\\\\\b|\\\\\\\\bbeytül hikme\\\\\\\\b|\\\\\\\\bavasım\\\\\\\\b|\\\\\\\\bsamarra\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bAbbasiler\\b|\\babbasiler\\b|\\bbeytü’l hikme\\b|\\bbeytül hikme\\b|\\bavasım\\b|\\bsamarra\\b",
+    "aliases": [],
+    "option_only_pattern": "^Abbasiler$"
   },
   {
     "id": "tar2_talas_savasi",
@@ -281,10 +287,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 170,
-    "tanim": "**751'de** Abbasiler ile Çinliler arasında yapılan, **Karluk Türklerinin Abbasileri desteklemesiyle** Çin'in yenildiği savaş; Türklerin **kitleler hâlinde İslam'a girişini** sağladı ve **kağıt üretimi Çin dışına** taşındı. Kağıdın yayılması, bilginin internet gibi sınırları aşmasıdır.\n💡 Sınav Şifresi: **Talas = Karluk desteği + kitlevi İslam + kağıdın yayılması**. 'Kağıt' kelimesini görürsen Talas'ı işaretle.",
+    "tanim": "**751'de** Abbasiler ile Çinliler arasında yapılan, **Karluk Türklerinin Abbasileri desteklemesiyle** Çin'in yenildiği savaş; Türklerin **kitleler hâlinde İslam'a girişini** sağladı ve **kağıt üretimi Çin dışına** taşındı. Kağıdın yayılması, bilginin internet gibi sınırları aşmasıdır.\n💡 Hile: **Talas = Karluk desteği + kitlevi İslam + kağıdın yayılması**. 'Kağıt' kelimesini görürsen Talas'ı işaretle.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "talas savaşı|talas savasi",
+    "pattern": "\\btalas savaşı\\b|\\btalas savasi\\b",
     "aliases": []
   },
   {
@@ -297,11 +303,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 164,
-    "tanim": "İlk kez **Emevi Halifesi Abdülmelik** tarafından bastırılan İslam paraları: **Dinar altın**, **dirhem gümüş**. Bugünkü 'banknot + madeni para' ikilisinin altın-gümüş versiyonu gibi düşün.\n💡 Sınav Şifresi: **Dinar = altın, Dirhem = gümüş**. 'İlk İslam parası = Abdülmelik (Emevi)' kodla.",
+    "tanim": "İlk kez **Emevi Halifesi Abdülmelik** tarafından bastırılan İslam paraları: **Dinar altın**, **dirhem gümüş**. Bugünkü 'banknot + madeni para' ikilisinin altın-gümüş versiyonu gibi düşün.\n💡 Hile: **Dinar = altın, Dirhem = gümüş**. 'İlk İslam parası = Abdülmelik (Emevi)' kodla.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Dinar$|\\\\\\\\bdinar\\\\\\\\b|\\\\\\\\bdirhem\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDinar\\b|\\bdinar\\b|\\bdirhem\\b",
+    "aliases": [],
+    "option_only_pattern": "^Dinar$"
   },
   {
     "id": "tar2_karahanlilar",
@@ -313,11 +320,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 174,
-    "tanim": "Orta Asya'da kurulan **ilk Müslüman Türk devleti** (Satuk Buğra Han İslam'ı kabul etti); **resmî dili Türkçe**, ribat-kervansaraylar, ilk posta ve hastane teşkilatı; **Kutadgu Bilig** ve **Divanü Lugati't-Türk** bu dönemde yazıldı. Türkçeyi resmî dil yapmak, devletin 'resmî dil' ayarını Türkçeye çekmesidir.\n💡 Sınav Şifresi: **İlk Müslüman Türk devleti + Türkçe resmî dil + Kutadgu Bilig = Karahanlılar**. 'İlk' kelimesi bu kavramın anahtarıdır.",
+    "tanim": "Orta Asya'da kurulan **ilk Müslüman Türk devleti** (Satuk Buğra Han İslam'ı kabul etti); **resmî dili Türkçe**, ribat-kervansaraylar, ilk posta ve hastane teşkilatı; **Kutadgu Bilig** ve **Divanü Lugati't-Türk** bu dönemde yazıldı. Türkçeyi resmî dil yapmak, devletin 'resmî dil' ayarını Türkçeye çekmesidir.\n💡 Hile: **İlk Müslüman Türk devleti + Türkçe resmî dil + Kutadgu Bilig = Karahanlılar**. 'İlk' kelimesi bu kavramın anahtarıdır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Karahanlılar$|\\\\\\\\bkarahanlılar\\\\\\\\b|\\\\\\\\bkarahanlı\\\\\\\\b|\\\\\\\\bsatuk buğra han\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bKarahanlılar\\b|\\bkarahanlılar\\b|\\bkarahanlı\\b|\\bsatuk buğra han\\b",
+    "aliases": [],
+    "option_only_pattern": "^Karahanlılar$"
   },
   {
     "id": "tar2_gazneliler",
@@ -329,11 +337,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 178,
-    "tanim": "**Alp Tigin** tarafından Gazne merkezli kurulan devlet; **Sultan Mahmut** Hindistan'a **17 sefer** düzenledi ve Abbasi halifesinden tarihte **ilk kez 'Sultan' unvanını** aldı. Bir komutanın başarılarıyla generallikten mareşalliğe yükselmesi gibi.\n💡 Sınav Şifresi: **17 sefer + ilk 'Sultan' unvanı = Gazneliler**. 'Hindistan seferleri' geçiyorsa Gazne'yi işaretle.",
+    "tanim": "**Alp Tigin** tarafından Gazne merkezli kurulan devlet; **Sultan Mahmut** Hindistan'a **17 sefer** düzenledi ve Abbasi halifesinden tarihte **ilk kez 'Sultan' unvanını** aldı. Bir komutanın başarılarıyla generallikten mareşalliğe yükselmesi gibi.\n💡 Hile: **17 sefer + ilk 'Sultan' unvanı = Gazneliler**. 'Hindistan seferleri' geçiyorsa Gazne'yi işaretle.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Gazneliler$|\\\\\\\\bgazneliler\\\\\\\\b|\\\\\\\\bgazneli mahmut\\\\\\\\b|\\\\\\\\bgazneli\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bGazneliler\\b|\\bgazneliler\\b|\\bgazneli mahmut\\b|\\bgazneli\\b",
+    "aliases": [],
+    "option_only_pattern": "^Gazneliler$"
   },
   {
     "id": "tar2_memlukler_ayncalut",
@@ -345,11 +354,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 182,
-    "tanim": "Mısır'da kurulan, **'başarılı her komutan sultan olabilir'** ilkesiyle hanedan kuralını yıkan devlet; **1260 Ayn Calut'ta Baybars** komutasında **Moğolları ilk kez** yendi. Şirkette liyakat esaslı terfi sistemi gibi: koltuk babadan oğula değil, başarıya gider.\n💡 Sınav Şifresi: **Ayn Calut = Moğolları ilk yenen + Baybars + Memlûkler**. 'Liyakat/komutan sultan olur' ifadesi Memlûk imzasıdır.",
+    "tanim": "Mısır'da kurulan, **'başarılı her komutan sultan olabilir'** ilkesiyle hanedan kuralını yıkan devlet; **1260 Ayn Calut'ta Baybars** komutasında **Moğolları ilk kez** yendi. Şirkette liyakat esaslı terfi sistemi gibi: koltuk babadan oğula değil, başarıya gider.\n💡 Hile: **Ayn Calut = Moğolları ilk yenen + Baybars + Memlûkler**. 'Liyakat/komutan sultan olur' ifadesi Memlûk imzasıdır.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Memlûkler$|^Memlukler$|\\\\\\\\bmemlûkler\\\\\\\\b|\\\\\\\\bmemlukler\\\\\\\\b|\\\\\\\\bayncalut savaşı\\\\\\\\b|\\\\\\\\bayn calut\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bMemlûkler\\b|\\bMemlukler\\b|\\bmemlûkler\\b|\\bmemlukler\\b|\\bayncalut savaşı\\b|\\bayn calut\\b",
+    "aliases": [],
+    "option_only_pattern": "^Memlûkler$|^Memlukler$"
   },
   {
     "id": "tar2_tolunogullari_ihsidiler",
@@ -361,11 +371,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 180,
-    "tanim": "Mısır'da kurulan iki Türk devleti: **Tolunoğulları** (Mısır'daki **ilk Türk devleti**, Tolunoğlu Ahmet Camii) ve **İhşidiler/Akşitler** (**Hicaz ile Mekke-Medine'ye hâkim olan ilk Türk devleti**). İki kardeş şirketin biri Mısır'da kurulur, diğeri kutsal topraklara uzanır.\n💡 Sınav Şifresi: **Mısır'da ilk Türk devleti = Tolunoğulları; Hicaz'a hâkim ilk Türk devleti = İhşidiler**. 'İlk' sıfatlarını devletle eşleştir.",
+    "tanim": "Mısır'da kurulan iki Türk devleti: **Tolunoğulları** (Mısır'daki **ilk Türk devleti**, Tolunoğlu Ahmet Camii) ve **İhşidiler/Akşitler** (**Hicaz ile Mekke-Medine'ye hâkim olan ilk Türk devleti**). İki kardeş şirketin biri Mısır'da kurulur, diğeri kutsal topraklara uzanır.\n💡 Hile: **Mısır'da ilk Türk devleti = Tolunoğulları; Hicaz'a hâkim ilk Türk devleti = İhşidiler**. 'İlk' sıfatlarını devletle eşleştir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Tolunoğulları$|^İhşidiler$|\\\\\\\\btolunoğulları\\\\\\\\b|\\\\\\\\bihşidiler\\\\\\\\b|\\\\\\\\bakşitler\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bTolunoğulları\\b|\\bİhşidiler\\b|\\btolunoğulları\\b|\\bihşidiler\\b|\\bakşitler\\b",
+    "aliases": [],
+    "option_only_pattern": "^Tolunoğulları$|^İhşidiler$"
   },
   {
     "id": "tar2_malazgirt_savasi",
@@ -377,10 +388,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 188,
-    "tanim": "**1071'de** Sultan **Alparslan** ile Bizans İmparatoru **Romen Diyojen** arasında yapılan, Türklerin zaferiyle **Anadolu'nun kapılarını açan** ve **Türkiye tarihini başlatan** savaş. Bir binanın ana kapısını açan anahtar gibi: Anadolu'nun kilidi Malazgirt'te kırıldı.\n💡 Sınav Şifresi: **1071 + Alparslan + Romen Diyojen = Malazgirt**. 'Anadolu'nun kapıları / Türkiye tarihinin başlangıcı' ifadesi direkt bu savaşı işaret eder.",
+    "tanim": "**1071'de** Sultan **Alparslan** ile Bizans İmparatoru **Romen Diyojen** arasında yapılan, Türklerin zaferiyle **Anadolu'nun kapılarını açan** ve **Türkiye tarihini başlatan** savaş. Bir binanın ana kapısını açan anahtar gibi: Anadolu'nun kilidi Malazgirt'te kırıldı.\n💡 Hile: **1071 + Alparslan + Romen Diyojen = Malazgirt**. 'Anadolu'nun kapıları / Türkiye tarihinin başlangıcı' ifadesi direkt bu savaşı işaret eder.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "malazgirt meydan muharebesi|malazgirt savaşı|malazgirt",
+    "pattern": "\\bmalazgirt meydan muharebesi\\b|\\bmalazgirt savaşı\\b|\\bmalazgirt\\b",
     "aliases": []
   },
   {
@@ -393,10 +404,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 186,
-    "tanim": "1040'ta Tuğrul ve Çağrı Beyler komutasındaki Selçukluların Gazneli Mesut'u yendiği savaş, **Büyük Selçuklu Devleti'nin resmen kurulduğu** ve Gaznelilerin yıkılış sürecine girdiği dönüm noktasıdır — tıpkı bir start-up'ın ilk büyük yatırımcıyı yenip şirketleşmesi gibi.\n💡 Sınav Şifresi: **1040 + Dandanakan = Kuruluş**. Gazneli Mesut yenildi, Tuğrul-Çağrı kazandı; 'kuruluş' kelimesini görünce bu savaşı işaretle.",
+    "tanim": "1040'ta Tuğrul ve Çağrı Beyler komutasındaki Selçukluların Gazneli Mesut'u yendiği savaş, **Büyük Selçuklu Devleti'nin resmen kurulduğu** ve Gaznelilerin yıkılış sürecine girdiği dönüm noktasıdır — tıpkı bir start-up'ın ilk büyük yatırımcıyı yenip şirketleşmesi gibi.\n💡 Hile: **1040 + Dandanakan = Kuruluş**. Gazneli Mesut yenildi, Tuğrul-Çağrı kazandı; 'kuruluş' kelimesini görünce bu savaşı işaretle.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "dandanakan savaşı|dandanakan",
+    "pattern": "\\bdandanakan savaşı\\b|\\bdandanakan\\b",
     "aliases": []
   },
   {
@@ -409,10 +420,10 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 192,
-    "tanim": "Büyük Selçuklu Veziri **Nizamülmülk**'ün Bağdat'ta kurduğu, dönemin en büyük üniversitesi sayılan ve **İmam Gazali** gibi âlimlerin ders verdiği; Şii Fatımi ve Batıni propagandasına karşı **Sünni inancı** savunan eğitim kurumudur — adeta Selçuklu'nun 'fikri savunma kalkanı'.\n💡 Sınav Şifresi: **Nizamülmülk kurdu + İmam Gazali ders verdi + Sünni inanç + Fatımi/Batıni'ye karşı**. 'Medrese' kelimesini görünce bu üçlüyü hatırla.",
+    "tanim": "Büyük Selçuklu Veziri **Nizamülmülk**'ün Bağdat'ta kurduğu, dönemin en büyük üniversitesi sayılan ve **İmam Gazali** gibi âlimlerin ders verdiği; Şii Fatımi ve Batıni propagandasına karşı **Sünni inancı** savunan eğitim kurumudur — adeta Selçuklu'nun 'fikri savunma kalkanı'.\n💡 Hile: **Nizamülmülk kurdu + İmam Gazali ders verdi + Sünni inanç + Fatımi/Batıni'ye karşı**. 'Medrese' kelimesini görünce bu üçlüyü hatırla.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "nizamiye medreseleri|nizamiye medresesi|nizamülmülk|nizamulmulk",
+    "pattern": "\\bnizamiye medreseleri\\b|\\bnizamiye medresesi\\b|\\bnizamülmülk\\b|\\bnizamulmulk\\b",
     "aliases": []
   },
   {
@@ -425,11 +436,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 196,
-    "tanim": "Büyük Selçuklu'da **ordunun** ihtiyaç, maaş (Bistegani), kayıt ve savaşa hazırlık işlerini yürüten divandır; başkanı **Emir-i Arz**'dır — devletin 'askerî lojistik ve İK departmanı' gibi.\n💡 Sınav Şifresi: **Arz = Ordu**. Başkanı **Emir-i Arz**. 'Asker/maaş/lojistik' geçen soruda bu divanı seç.",
+    "tanim": "Büyük Selçuklu'da **ordunun** ihtiyaç, maaş (Bistegani), kayıt ve savaşa hazırlık işlerini yürüten divandır; başkanı **Emir-i Arz**'dır — devletin 'askerî lojistik ve İK departmanı' gibi.\n💡 Hile: **Arz = Ordu**. Başkanı **Emir-i Arz**. 'Asker/maaş/lojistik' geçen soruda bu divanı seç.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Divan-ı Arz$|\\\\\\\\bdivan-ı arz\\\\\\\\b|\\\\\\\\bdivan-ı ceyş\\\\\\\\b|\\\\\\\\bemir-i arz\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDivan-ı Arz\\b|\\bdivan-ı arz\\b|\\bdivan-ı ceyş\\b|\\bemir-i arz\\b",
+    "aliases": [],
+    "option_only_pattern": "^Divan-ı Arz$"
   },
   {
     "id": "tar2_divani_istifa",
@@ -441,11 +453,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 196,
-    "tanim": "Büyük Selçuklu'da devletin tüm **gelir-gider**, vergi toplama ve maliye işlerini yürüten divandır; başkanı **Müstevfi**'dir — devletin 'hazine ve muhasebe departmanı'.\n💡 Sınav Şifresi: **İstifa = Maliye**. Başkanı **Müstevfi**. 'Vergi/gelir-gider/bütçe' kelimesi geçiyorsa bu divan.",
+    "tanim": "Büyük Selçuklu'da devletin tüm **gelir-gider**, vergi toplama ve maliye işlerini yürüten divandır; başkanı **Müstevfi**'dir — devletin 'hazine ve muhasebe departmanı'.\n💡 Hile: **İstifa = Maliye**. Başkanı **Müstevfi**. 'Vergi/gelir-gider/bütçe' kelimesi geçiyorsa bu divan.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Divan-ı İstifa$|\\\\\\\\bdivan-ı istifa\\\\\\\\b|\\\\\\\\bmüstevfi\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDivan-ı İstifa\\b|\\bdivan-ı istifa\\b|\\bmüstevfi\\b",
+    "aliases": [],
+    "option_only_pattern": "^Divan-ı İstifa$"
   },
   {
     "id": "tar2_divani_insa",
@@ -457,11 +470,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 196,
-    "tanim": "Devletin iç-dış **resmî yazışmalarını** yürüten ve ferman-beratlara hükümdarın **tuğrasını** çeken divandır; başkanı **Tuğrai** veya **Münşi**'dir — devletin 'yazı işleri ve diplomasi kalemi'.\n💡 Sınav Şifresi: **İnşa = Yazışma + Tuğra**. Başkanı **Tuğrai/Münşi**. 'Ferman, berat, tuğra, diplomasi' kelimeleri bu divanı işaret eder.",
+    "tanim": "Devletin iç-dış **resmî yazışmalarını** yürüten ve ferman-beratlara hükümdarın **tuğrasını** çeken divandır; başkanı **Tuğrai** veya **Münşi**'dir — devletin 'yazı işleri ve diplomasi kalemi'.\n💡 Hile: **İnşa = Yazışma + Tuğra**. Başkanı **Tuğrai/Münşi**. 'Ferman, berat, tuğra, diplomasi' kelimeleri bu divanı işaret eder.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Divan-ı İnşa$|^Divan-ı Tuğra$|\\\\\\\\bdivan-ı inşa\\\\\\\\b|\\\\\\\\bdivan-ı tuğra\\\\\\\\b|\\\\\\\\btuğrai\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDivan-ı İnşa\\b|\\bDivan-ı Tuğra\\b|\\bdivan-ı inşa\\b|\\bdivan-ı tuğra\\b|\\btuğrai\\b",
+    "aliases": [],
+    "option_only_pattern": "^Divan-ı İnşa$|^Divan-ı Tuğra$"
   },
   {
     "id": "tar2_divani_israf",
@@ -473,11 +487,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 196,
-    "tanim": "Devletin idari ve mali işlerinin **kanunlara uygun** yürütülüp yürütülmediğini denetleyen **teftiş** divanıdır; başkanı **Müşrif**'tir — devletin 'iç denetim/kontrol birimi'.\n💡 Sınav Şifresi: **İşraf = Denetim/Teftiş**. Başkanı **Müşrif**. 'Denetim, teftiş, kontrol' kelimesi = bu divan.",
+    "tanim": "Devletin idari ve mali işlerinin **kanunlara uygun** yürütülüp yürütülmediğini denetleyen **teftiş** divanıdır; başkanı **Müşrif**'tir — devletin 'iç denetim/kontrol birimi'.\n💡 Hile: **İşraf = Denetim/Teftiş**. Başkanı **Müşrif**. 'Denetim, teftiş, kontrol' kelimesi = bu divan.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Divan-ı İşraf$|\\\\\\\\bdivan-ı işraf\\\\\\\\b|\\\\\\\\bmüşrif\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDivan-ı İşraf\\b|\\bdivan-ı işraf\\b|\\bmüşrif\\b",
+    "aliases": [],
+    "option_only_pattern": "^Divan-ı İşraf$"
   },
   {
     "id": "tar2_divani_berid",
@@ -489,11 +504,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 197,
-    "tanim": "Devlet içindeki **haberleşme, posta ve gizli istihbarat** faaliyetlerini yürüten divandır — Selçuklu'nun 'MİT + PTT'si' bir arada.\n💡 Sınav Şifresi: **Berid = Haberleşme + İstihbarat**. 'Posta, haber, gizli bilgi, istihbarat' kelimeleri bu divanı verir.",
+    "tanim": "Devlet içindeki **haberleşme, posta ve gizli istihbarat** faaliyetlerini yürüten divandır — Selçuklu'nun 'MİT + PTT'si' bir arada.\n💡 Hile: **Berid = Haberleşme + İstihbarat**. 'Posta, haber, gizli bilgi, istihbarat' kelimeleri bu divanı verir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Divan-ı Berid$|\\\\\\\\bdivan-ı berid\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bDivan-ı Berid\\b|\\bdivan-ı berid\\b",
+    "aliases": [],
+    "option_only_pattern": "^Divan-ı Berid$"
   },
   {
     "id": "tar2_selcuklu_hukuku",
@@ -505,11 +521,12 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 198,
-    "tanim": "Selçuklu'da **şeri davalara Kadı** (başı Kadıü'l-Kudat), **örfi ve devlet güvenliği** davalarına **Emir-i Dad**, **askerî davalara** ise **Kadıasker (Kadı-ı Leşker)** bakardı — üç ayrı mahkeme türü gibi.\n💡 Sınav Şifresi: **Şeri=Kadı / Örfi-Devlet=Emir-i Dad / Askerî=Kadıasker**. Üçlü eşleştirmeyi ezberle; soruda hangi dava türü geçiyorsa o görevliyi seç.",
+    "tanim": "Selçuklu'da **şeri davalara Kadı** (başı Kadıü'l-Kudat), **örfi ve devlet güvenliği** davalarına **Emir-i Dad**, **askerî davalara** ise **Kadıasker (Kadı-ı Leşker)** bakardı — üç ayrı mahkeme türü gibi.\n💡 Hile: **Şeri=Kadı / Örfi-Devlet=Emir-i Dad / Askerî=Kadıasker**. Üçlü eşleştirmeyi ezberle; soruda hangi dava türü geçiyorsa o görevliyi seç.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "^Kadı$|^Emir-i Dad$|\\\\\\\\bemir-i dad\\\\\\\\b|\\\\\\\\bşeri hukuk ile ilgili davalara\\\\\\\\b|\\\\\\\\bkadıü'l-kudat\\\\\\\\b",
-    "aliases": []
+    "pattern": "\\bKadı\\b|\\bEmir-i Dad\\b|\\bemir-i dad\\b|\\bşeri hukuk ile ilgili davalara\\b|\\bkadıü'l-kudat\\b",
+    "aliases": [],
+    "option_only_pattern": "^Kadı$|^Emir-i Dad$"
   },
   {
     "id": "tar2_hacibul_huccab",
@@ -521,10 +538,27 @@
     "donem": 2,
     "unite_no": null,
     "sayfa": 195,
-    "tanim": "Hükümdar ile halk ve divan üyeleri arasındaki **iletişimi** sağlayan, **saray protokolü ve güvenliğini** düzenleyen en yetkili saray görevlisidir — adeta 'sarayın genel sekreteri + güvenlik şefi'.\n💡 Sınav Şifresi: **Hâcibü'l-Hüccâb = Baş Hacip = Protokol + Saray Güvenliği + Hükümdarla İletişim**. 'En yetkili saray görevlisi' ifadesi bu unvanı verir.",
+    "tanim": "Hükümdar ile halk ve divan üyeleri arasındaki **iletişimi** sağlayan, **saray protokolü ve güvenliğini** düzenleyen en yetkili saray görevlisidir — adeta 'sarayın genel sekreteri + güvenlik şefi'.\n💡 Hile: **Hâcibü'l-Hüccâb = Baş Hacip = Protokol + Saray Güvenliği + Hükümdarla İletişim**. 'En yetkili saray görevlisi' ifadesi bu unvanı verir.",
     "baglam_farki": null,
     "sinav_ipucu": null,
-    "pattern": "hâcibü’l-hüccâb|hacibü'l-hüccab|hâcib|hacip",
+    "pattern": "\\bhâcibü’l-hüccâb\\b|\\bhacibü'l-hüccab\\b|\\bhâcib\\b|\\bhacip\\b",
     "aliases": []
+  },
+  {
+    "id": "tar_osmanli_kurumlari",
+    "base_id": "tar_osmanli_kurumlari",
+    "term": "Osmanlı Kurumları (Tımar, Devşirme, Divan-ı Hümayun)",
+    "subject": "TAR",
+    "ders": "TAR – 2",
+    "ders_kodu": null,
+    "donem": 2,
+    "unite_no": null,
+    "sayfa": 120,
+    "tanim": "Tımar ile hazineden para harcanmadan atlı ordu beslendi; Devşirme ile Yeniçeriler yetiştirildi; Divan-ı Hümayun en yüksek karar organıydı.\n💡 Hile: Para harcamadan atlı sipahi yetiştirme = **Tımar**. Hristiyan çocukları yetiştirip asker/sadrazam yapma = **Devşirme**. Bakanlar kurulu = **Divan-ı Hümayun**.",
+    "baglam_farki": null,
+    "sinav_ipucu": null,
+    "pattern": "\\btımar\\s+sistemi\\b|\\btımarlı\\s+sipahi[a-zçğıöşü]*\\b|\\bdevşirme\\s+sistemi\\b|\\bdivan-ı\\s+hümayun\\b|\\bTımar\\b|\\bDevşirme\\b|\\bDivan-ı Hümayun\\b",
+    "aliases": [],
+    "option_only_pattern": "^Tımar$|^Devşirme$|^Divan-ı Hümayun$"
   }
 ]

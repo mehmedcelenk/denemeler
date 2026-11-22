@@ -45,11 +45,11 @@ export function openBoardFocusMode(questionId: number, event?: Event): void {
   attachBoardListeners(overlay);
 }
 
-export function closeBoardFocusMode(): void {
+export function closeBoardFocusMode(force = false): void {
   if (typeof document === 'undefined') return;
 
   // Tahta yeni açıldıysa sentezlenmiş hayalet tıklamalarla anında kapanmasını engelle
-  if (Date.now() - lastBoardOpenedTime < 350) return;
+  if (!force && Date.now() - lastBoardOpenedTime < 350) return;
 
   const overlay = document.getElementById('boardSpaceOverlay');
   if (overlay) {

@@ -1,0 +1,181 @@
+/* ========================================================= */
+/* HOCA ANLATIMI — ANLATIM METNİ VE INLINE KAVRAM BALONCUĞU  */
+/* ========================================================= */
+
+.lesson-block {
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.lesson-section-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  color: var(--brand-accent);
+  margin-bottom: 6px;
+}
+
+.lesson-explanation-block {
+  background: transparent;
+  border: none;
+  padding: 0;
+  max-width: 65ch;
+}
+
+/* Altın oran (φ = 1.618) satır yüksekliği ve paragraf aralığı */
+.lesson-prose {
+  font-size: 15px;
+  line-height: 1.618;
+  color: var(--paper-text);
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.lesson-prose + .lesson-prose {
+  margin-top: 16px;
+}
+
+/* Öğrenmenin Küçük Bir Hilesi (Altın oran ikincil blok: ~38% görsel ağırlık) */
+.lesson-trick-card {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--brand-accent) 26%, var(--paper-border));
+  border-left: 3px solid var(--brand-accent);
+  background: color-mix(in srgb, var(--brand-accent) 6%, var(--paper-bg));
+  max-width: 65ch;
+}
+
+.lesson-trick-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand-accent);
+  margin-bottom: 6px;
+}
+
+.lesson-trick-text {
+  margin: 0;
+  font-size: 13.4px;
+  line-height: 1.618;
+  color: var(--paper-text-muted);
+}
+
+.lesson-inline-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88em;
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--brand-accent) 10%, var(--ambient-bg));
+}
+
+.lesson-math-block {
+  display: block;
+  overflow-x: auto;
+  padding: 5px 0;
+}
+
+/* Metin içi tıklanabilir kavram (soru kökündeki .concept-word ile aynı dilde) */
+button.lesson-concept-word {
+  appearance: none;
+  display: inline;
+  margin: 0;
+  border: none;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: inherit;
+  vertical-align: baseline;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Kavrama tıklanınca açılan tanım baloncuğu */
+.lesson-concept-bubble {
+  position: absolute;
+  z-index: 100020;
+  pointer-events: none;
+  background: var(--paper-bg, #ffffff);
+  color: var(--paper-text, #0f172a);
+  border: 1.5px solid var(--brand-accent);
+  box-shadow: 0 12px 30px -6px rgba(15, 23, 42, 0.26), 0 3px 10px rgba(15, 23, 42, 0.1);
+  border-radius: 11px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.48;
+  box-sizing: border-box;
+  text-align: left;
+  width: max-content;
+  max-width: min(340px, calc(100vw - 20px));
+}
+
+.lesson-concept-bubble::after {
+  content: '';
+  position: absolute;
+  left: var(--lesson-arrow-left, 50%);
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  background: var(--paper-bg, #ffffff);
+  border-right: 1.5px solid var(--brand-accent);
+  border-bottom: 1.5px solid var(--brand-accent);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.lesson-concept-bubble.is-below::after {
+  bottom: auto;
+  top: -6px;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1.5px solid var(--brand-accent);
+  border-top: 1.5px solid var(--brand-accent);
+}
+
+.lesson-bubble-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--brand-accent);
+  margin-bottom: 4px;
+}
+
+.lesson-bubble-emoji {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.lesson-bubble-def {
+  color: var(--paper-text);
+  font-weight: 500;
+}
+
+.lesson-bubble-example {
+  margin-top: 6px;
+  padding-top: 5px;
+  border-top: 1px dashed color-mix(in srgb, var(--paper-border) 85%, transparent);
+  font-size: 12.2px;
+  color: var(--paper-text-muted);
+}
+
+@media (max-width: 720px) {
+  .lesson-explanation-block {
+    padding: 0;
+  }
+
+  .lesson-prose {
+    font-size: 14.4px;
+    line-height: 1.618;
+  }
+
+  .lesson-trick-card {
+    padding: 12px 14px;
+  }
+
+  .lesson-trick-text {
+    font-size: 13px;
+    line-height: 1.618;
+  }
+}

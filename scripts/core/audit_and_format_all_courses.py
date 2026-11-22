@@ -44,6 +44,11 @@ LEGIT_TITLES = {
     "sevr barış antlaşması", "lozan barış antlaşması", "ankara antlaşması",
     "mudanya ateşkes antlaşması", "amasya genelgesi", "erzurum kongresi",
     "sivas kongresi", "misakımilli", "teşkilat-ı esasiye",
+    "kelimenin yanlış anlamda kullanılması", "sözcüğün yanlış anlamda kullanılması",
+    "kelimenin yanlış yerde kullanılması", "sözcüğün yanlış yerde kullanılması",
+    "gereksiz sözcük kullanılması", "gereksiz sözcük kullanımı",
+    "millî edebiyat zevk ve anlayışını sürdüren",
+    "dolaylı tümleç /", "zarf tümleci /",
 }
 
 
@@ -66,8 +71,9 @@ def format_bubble_newlines(raw_desc: str) -> str:
 
     desc = html.unescape(raw_desc).strip()
 
-    # 1. 💡 Sınav Şifresi / Formül / İpucu kesinlikle yeni satırda başlasın
-    desc = re.sub(r'([^\n])\s*(💡\s*(?:Sınav Şifresi|Formül|İpucu|Uyarı|Hafıza):?)', r'\1\n\2', desc)
+    # 1. 💡 Sınav Şifresi / Formül / İpucu etiketlerini 💡 Hile: olarak standardize et ve yeni satırda başlat
+    desc = re.sub(r'💡\s*(?:Sınav\s+Şifresi|Formül\s*/\s*Şifre|Formül|İpucu):?', '💡 Hile:', desc)
+    desc = re.sub(r'([^\n])\s*(💡\s*(?:Hile|Uyarı|Hafıza):?)', r'\1\n\2', desc)
 
     # 2. Tanım cümlesi ile analoji/örnek/kültürel bağ arasına satır başı (\n\n) ekle
     analogy_markers = (
@@ -171,10 +177,16 @@ def audit_and_format_course(json_path: Path) -> Dict[str, Any]:
         for opt_key, opt_html in list(sec_xray.items()):
             new_opt, o_noise, o_fmt = process_html_string(opt_html)
             if o_noise > 0 or o_fmt > 0:
-                sec_xray[opt_key] = new_opt
+                if "concept-word" not in new_opt:
+                    sec_xray.pop(opt_key, None)
+                else:
+                    sec_xray[opt_key] = new_opt
                 total_noise_removed += o_noise
                 total_bubbles_formatted += o_fmt
                 q_changed = True
+        if not sec_xray and "secenekler_xray" in q:
+            q.pop("secenekler_xray", None)
+            q_changed = True
 
         if q_changed:
             modified_qs += 1
@@ -193,7 +205,10 @@ def audit_and_format_course(json_path: Path) -> Dict[str, Any]:
 
 def main():
     print("=== TÜM DERSLER İÇİN KAVRAM DENETİMİ, GÜRÜLTÜ TEMİZLİĞİ VE NEWLINE DÜZENLEME MOTORU ===")
+    target_args = {a.strip().upper() for a in sys.argv[1:] if a.strip()}
     json_files = sorted(SUBJECTS_DIR.glob("*.json"))
+    if target_args:
+        json_files = [p for p in json_files if p.stem.upper() in target_args]
 
     total_noise = 0
     total_formatted = 0

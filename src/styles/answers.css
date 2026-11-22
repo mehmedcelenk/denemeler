@@ -3,12 +3,13 @@
   display: flex;
   align-items: center;
   gap: 0.65em;
-  padding: 0.25em 0.4em;
-  min-height: 2.2em;
-  border-radius: 6px;
+  padding: 0.35em 0.5em;
+  min-height: 2.35em;
+  border-radius: 8px;
   cursor: pointer;
   user-select: none;
   transition: background 0.12s;
+  touch-action: manipulation;
 }
 
 .optical-choice-row:hover {

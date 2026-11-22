@@ -4,52 +4,26 @@ import { choices, type Choice } from '../../data/question.ts';
 import { parseSavedChoicesValue } from '../../shared/saved-choices.ts';
 import type { AuthSession, UserProgressData } from '../../data/supabase-auth.ts';
 import { fetchInstitutionQuestionStats } from '../../data/institution-stats.ts';
-import {
-  signOutFromSupabase,
-  fetchUserProgressFromSupabase,
-  saveUserProgressToSupabase,
-  refreshTokenUsingSupabase,
-} from '../../data/supabase-auth.ts';
-import { store, state, notifyStateChange } from '../../app/state.ts';
+import { signOutFromSupabase, fetchUserProgressFromSupabase,
+  saveUserProgressToSupabase, refreshTokenUsingSupabase } from '../../data/supabase-auth.ts';
+import { store, state, notifyStateChange, onStateChange } from '../../app/state.ts';
+import { getActiveSession, saveActiveSession, isAuthenticated, isStudyGeneration } from './study-session.ts';
+import { isSessionSnapshot } from '../booklet/resume.ts';
+export { getActiveSession, saveActiveSession, isAuthenticated } from './study-session.ts';
 
-function isAuthSession(value: unknown): value is AuthSession {
-  if (typeof value !== 'object' || value === null) return false;
-  const s = value as Record<string, unknown>;
-  return typeof s.accessToken === 'string' && s.accessToken.length > 0 && typeof s.user === 'object' && s.user !== null;
-}
-
-export function getActiveSession(): AuthSession | null {
-  return readJson<AuthSession | null>(StorageKeys.AUTH_SESSION, isAuthSession, null);
-}
-
-export function saveActiveSession(session: AuthSession | null): void {
-  const previous = getActiveSession();
-  if (previous && previous.user.id !== session?.user.id) {
-    notifyStateChange('auth:signout', previous);
-  }
-  if (session) {
-    writeJson(StorageKeys.AUTH_SESSION, session);
-  } else {
-    writeString(StorageKeys.AUTH_SESSION, '');
-  }
-}
-
-export function isAuthenticated(): boolean {
-  return getActiveSession() !== null;
-}
-
-let refreshPromise: Promise<AuthSession | null> | null = null;
+let refreshFlight: { generation: number; promise: Promise<AuthSession | null> } | null = null;
 
 export async function ensureFreshSession(): Promise<AuthSession | null> {
-  if (refreshPromise) return refreshPromise;
-  refreshPromise = (async () => {
-    const session = getActiveSession();
-    if (!session) return null;
+  const session = getActiveSession();
+  if (!session) return null;
+  const generation = state.studyGeneration;
+  if (refreshFlight?.generation === generation) return refreshFlight.promise;
+  const promise = (async () => {
     const now = Math.floor(Date.now() / 1000);
     if (session.expiresAt && session.expiresAt - now < 60 && session.refreshToken) {
       const refreshed = await refreshTokenUsingSupabase(session.refreshToken);
-      if (getActiveSession()?.refreshToken !== session.refreshToken) return null;
-      if (refreshed.data) {
+      if (!isStudyGeneration(generation) || getActiveSession()?.refreshToken !== session.refreshToken) return null;
+      if (refreshed.data && refreshed.data.user.id === session.user.id) {
         saveActiveSession(refreshed.data);
         return refreshed.data;
       }
@@ -63,19 +37,25 @@ export async function ensureFreshSession(): Promise<AuthSession | null> {
     if (session.expiresAt && session.expiresAt <= now) return null;
     return session;
   })().finally(() => {
-    refreshPromise = null;
+    if (refreshFlight?.promise === promise) refreshFlight = null;
   });
-  return refreshPromise;
+  refreshFlight = { generation, promise };
+  return promise;
 }
 
 let syncTimer: ReturnType<typeof setTimeout> | null = null;
+let saveFlight: { generation: number; pending: boolean; controller: AbortController } | null = null;
 
 export function cancelCloudSync(): void {
-  if (syncTimer) {
-    clearTimeout(syncTimer);
-    syncTimer = null;
-  }
+  if (syncTimer) clearTimeout(syncTimer);
+  syncTimer = null;
 }
+
+onStateChange('study:changed', () => {
+  cancelCloudSync();
+  saveFlight?.controller.abort();
+  saveFlight = null;
+});
 
 export async function refreshInstitutionStats(): Promise<void> {
   try {
@@ -88,49 +68,54 @@ export async function refreshInstitutionStats(): Promise<void> {
   } catch {}
 }
 
-let isSaving = false;
-let hasPendingSave = false;
-
 export async function saveCloudProgress(): Promise<boolean> {
-  if (isSaving) {
-    hasPendingSave = true;
+  if (!getActiveSession() || !state.progressReady) return false;
+  const generation = state.studyGeneration;
+  if (saveFlight?.generation === generation) {
+    saveFlight.pending = true;
     return false;
   }
-  isSaving = true;
+  const flight = { generation, pending: false, controller: new AbortController() };
+  saveFlight = flight;
   try {
     const session = await ensureFreshSession();
-    if (!session) return false;
+    if (!session || !isStudyGeneration(generation)) return false;
     const localData: UserProgressData = {
-      choices: state.userMarkedChoices,
+      choices: { ...state.userMarkedChoices },
       starred: Array.from(state.starredQuestionIds),
       rematch: Array.from(state.rematchQuestionIds),
-      eliminatedChoices: state.eliminatedChoices as unknown as Record<string, string[]>,
-      lastSession: readJson<Record<string, unknown> | null>(
-        StorageKeys.RESUME_STATE,
-        (v): v is Record<string, unknown> => typeof v === 'object' && v !== null,
-        null
-      ) ?? undefined,
+      eliminatedChoices: Object.fromEntries(Object.entries(state.eliminatedChoices).map(([id, list]) => [id, [...list]])),
+      responsibleCourses: Object.fromEntries(Object.entries(state.responsibleCourses).map(([prog, list]) => [prog, [...list]])),
+      stars: state.waterStreak,
+      lastSession: readJson<Record<string, unknown> | null>(StorageKeys.RESUME_STATE,
+        (v): v is Record<string, unknown> => typeof v === 'object' && v !== null, null) ?? undefined,
     };
-    const ok = await saveUserProgressToSupabase(session, localData);
+    const ok = await saveUserProgressToSupabase(session, localData, 5000, flight.controller.signal);
+    if (!isStudyGeneration(generation)) return false;
     if (ok) void refreshInstitutionStats();
     return ok;
   } finally {
-    isSaving = false;
-    if (hasPendingSave) {
-      hasPendingSave = false;
-      void saveCloudProgress();
+    if (saveFlight === flight) {
+      saveFlight = null;
+      if (flight.pending && isStudyGeneration(generation)) void saveCloudProgress();
     }
   }
 }
 
 export function scheduleCloudSync(delayMs = 1200): void {
-  if (!isAuthenticated()) return;
+  if (!isAuthenticated() || !state.progressReady) return;
+  const generation = state.studyGeneration;
   cancelCloudSync();
   syncTimer = setTimeout(() => {
     syncTimer = null;
-    void saveCloudProgress();
+    if (isStudyGeneration(generation)) void saveCloudProgress();
   }, delayMs);
 }
+
+onStateChange('progress:changed', payload => {
+  const delay = payload && typeof payload === 'object' && 'delayMs' in payload ? payload.delayMs : undefined;
+  scheduleCloudSync(typeof delay === 'number' ? delay : undefined);
+});
 
 if (typeof window !== 'undefined') {
   window.addEventListener('visibilitychange', () => {
@@ -142,61 +127,35 @@ if (typeof window !== 'undefined') {
 }
 
 export async function handleSignOut(): Promise<void> {
-  notifyStateChange('auth:signout', getActiveSession());
+  const session = getActiveSession();
+  const generation = state.studyGeneration;
   if (syncTimer) {
     cancelCloudSync();
     await saveCloudProgress();
-  } else {
-    cancelCloudSync();
   }
-  const session = getActiveSession();
-  if (session?.accessToken) {
-    await signOutFromSupabase(session.accessToken);
-  }
+  if (!isStudyGeneration(generation)) return;
+  cancelCloudSync();
   saveActiveSession(null);
   writeString(StorageKeys.USER_NAME, '');
-  writeString(StorageKeys.RESUME_STATE, '');
-  writeString(StorageKeys.ANSWER_LOCK_UNTIL, '');
-
-  store.setUserMarkedChoices({});
-  store.clearAllPendingChoices();
-  store.clearAllEliminatedChoices();
-  store.clearAllEliminatedWrongChoices();
-  store.setStarredQuestionIds(new Set());
-  store.setRematchQuestionIds(new Set());
-  store.setAiExplanations({});
-  store.setWaterStreak(0);
-
-  if (typeof document !== 'undefined') {
-    document.querySelectorAll<HTMLElement>('.booklet-question').forEach(card => {
-      card.dataset.userMark = '';
-      delete card.dataset.userStatus;
-    });
-    document.querySelectorAll('.optical-choice-row').forEach(el => {
-      el.classList.remove('marked', 'marked-correct', 'marked-incorrect', 'revealed-correct');
-    });
-    const portal = document.getElementById('welcomePortal');
-    if (portal) {
-      portal.hidden = false;
-      portal.setAttribute('aria-hidden', 'false');
-    }
-    document.body.classList.add('welcome-active');
-  }
-
-  notifyStateChange('booklet:refresh');
+  if (session) await signOutFromSupabase(session.accessToken);
 }
 
 export async function syncCloudProgress(): Promise<void> {
+  const generation = state.studyGeneration;
   const session = await ensureFreshSession();
-  if (!session) return;
+  if (!session || !isStudyGeneration(generation)) return;
 
   if (syncTimer) {
     cancelCloudSync();
     await saveCloudProgress();
+    if (!isStudyGeneration(generation)) return;
   }
 
-  const cloud = await fetchUserProgressFromSupabase(session);
-  if (!cloud) return;
+  const controller = new AbortController();
+  const unsubscribe = onStateChange('study:changed', () => controller.abort());
+  const cloud = await fetchUserProgressFromSupabase(session, 5000, controller.signal).finally(unsubscribe);
+  if (!cloud || !isStudyGeneration(generation)) return;
+  if (cloud.lastSession && !isSessionSnapshot(cloud.lastSession)) return;
 
   if (cloud.choices) {
     const parsedCloud = parseSavedChoicesValue(cloud.choices);
@@ -226,6 +185,21 @@ export async function syncCloudProgress(): Promise<void> {
       finalElim[Number(k)] = [...v];
     }
     store.setEliminatedChoices(finalElim);
+  }
+  if (cloud.responsibleCourses && typeof cloud.responsibleCourses === 'object') {
+    const merged: Record<string, string[]> = {};
+    for (const [prog, list] of Object.entries(state.responsibleCourses)) {
+      if (list.length > 0) merged[prog] = [...list];
+    }
+    for (const [prog, list] of Object.entries(cloud.responsibleCourses)) {
+      if ((!merged[prog] || merged[prog].length === 0) && Array.isArray(list) && list.length > 0) {
+        merged[prog] = [...list];
+      }
+    }
+    store.setResponsibleCourses(merged);
+  }
+  if (typeof cloud.stars === 'number' && cloud.stars > state.waterStreak) {
+    store.setWaterStreak(cloud.stars);
   }
   if (cloud.lastSession && typeof cloud.lastSession === 'object' && !readJson(StorageKeys.RESUME_STATE, (v): v is Record<string, unknown> => typeof v === 'object' && v !== null, null)) {
     writeJson(StorageKeys.RESUME_STATE, cloud.lastSession);

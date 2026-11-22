@@ -1,17 +1,23 @@
 import type { Choice, Question, SubjectId } from '../data/question.ts';
 import type { BookletFilterMode } from '../shared/question-filter.ts';
-import { StorageKeys } from '../shared/storage-keys.ts';
+import { DEFAULT_MASCOT_ID, normalizeMascotId, type MascotId } from '../shared/mascot-types.ts';
+import { StorageKeys, type ProgressOwner } from '../shared/storage-keys.ts';
 import * as storage from './storage.ts';
 
 export type * from './state-types.ts';
-import type { AppState, MutableAppState, LibraryTab, ContentViewMode, AiExplanationEntry, AiExplanationMessage, InstitutionQuestionStat, RoomQuestionStat } from './state-types.ts';
+import type { AppState, MutableAppState, LibraryTab, ContentViewMode, InstitutionQuestionStat, RoomQuestionStat } from './state-types.ts';
 export { onStateChange, notifyStateChange } from './state-events.ts';
 export type { StateEventType } from './state-events.ts';
 
 const _state: MutableAppState = {
+  progressOwner: 'legacy',
+  progressReady: true,
+  studyGeneration: 0,
   allData: [],
   currentSubject: 'TDE',
   programMode: 'AOIHL',
+  mascotId: DEFAULT_MASCOT_ID,
+  responsibleCourses: {},
   selectedCourses: new Set(),
   courseFilterMode: 'OR',
   selectedTopicKeys: new Set(),
@@ -38,8 +44,6 @@ const _state: MutableAppState = {
   expandedQuestionIds: new Set(),
   eliminatedChoices: {},
   eliminatedWrongChoices: {},
-  aiExplanations: {},
-  pendingAiQuestions: new Set(),
   ttsVoiceGender: 'female',
   ttsVoiceEngine: 1,
   institutionStats: {},
@@ -48,12 +52,49 @@ const _state: MutableAppState = {
   isXraySoundEnabled: true,
 };
 
+storage.bindProgressOwner(() => _state.progressOwner);
+storage.bindProgressReady(() => _state.progressReady);
+
 /** Dışarıya açılan salt-okunur (Compile-Time Zırhlı) durum nesnesi */
 export const state: AppState = _state;
 
 /** Micro-Store: State mutasyonlarını tek merkezden yönetir ve kalıcı depolarla eşitler. */
 export const store = {
+  setProgressOwner(owner: ProgressOwner, ready = true): void {
+    _state.progressOwner = owner;
+    _state.progressReady = ready;
+    _state.studyGeneration++;
+    _state.pendingMarkedChoices = {};
+    _state.revealedAnswers.clear();
+    _state.revealedHints.clear();
+    _state.activeMealQuestionIds.clear();
+    _state.activeBoardQuestionId = null;
+    _state.isLibraryMode = false;
+    _state.roomQuestionStats = {};
+  },
   setProgramMode(mode: 'AOIHL' | 'AOO' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK'): void { _state.programMode = mode; },
+  setMascotId(id: MascotId, persist = true): void {
+    const clean = normalizeMascotId(id);
+    _state.mascotId = clean;
+    if (persist) storage.writeString(StorageKeys.MASCOT_ID, clean);
+  },
+  setResponsibleCourses(map: Readonly<Record<string, readonly string[]>>, persist = true): void {
+    const clean: Record<string, string[]> = {};
+    for (const [program, list] of Object.entries(map)) {
+      if (Array.isArray(list)) clean[program] = [...new Set(list.filter(c => typeof c === 'string' && c.trim().length > 0))];
+    }
+    _state.responsibleCourses = clean;
+    if (persist) storage.writeJson(StorageKeys.RESPONSIBLE_COURSES, _state.responsibleCourses);
+  },
+  setProgramResponsibleCourses(
+    mode: 'AOIHL' | 'AOO' | 'AOF' | 'TYT' | 'AYT' | 'YDT' | 'ILMIHAL' | 'GIRISIMCILIK',
+    courses: readonly string[],
+    persist = true,
+  ): void {
+    const unique = [...new Set(courses.filter(c => typeof c === 'string' && c.trim().length > 0))];
+    _state.responsibleCourses = { ..._state.responsibleCourses, [mode]: unique };
+    if (persist) storage.writeJson(StorageKeys.RESPONSIBLE_COURSES, _state.responsibleCourses);
+  },
   setCurrentSubject(subject: SubjectId | null): void { _state.currentSubject = subject; },
   setSelectedCourses(courses: Iterable<string>): void { _state.selectedCourses = new Set(courses); },
   addSelectedCourse(course: string): void { _state.selectedCourses.add(course); },
@@ -228,31 +269,6 @@ export const store = {
     }
   },
   setAllData(questions: readonly Question[]): void { _state.allData = [...questions]; },
-  setAiExplanation(qid: number, entry: AiExplanationEntry, persist = true): void {
-    _state.aiExplanations[qid] = entry;
-    if (persist) storage.writeJson(StorageKeys.AI_EXPLANATIONS, _state.aiExplanations);
-  },
-  appendAiQuestionReply(qid: number, query: string, reply: string): void {
-    const prev = _state.aiExplanations[qid];
-    const past: AiExplanationMessage[] = [];
-    if (prev?.query && prev?.reply) {
-      past.push({ query: prev.query, reply: prev.reply, updatedAt: prev.updatedAt });
-      if (prev.history && Array.isArray(prev.history)) past.push(...prev.history);
-    }
-    _state.aiExplanations[qid] = { query, reply, updatedAt: Date.now(), history: past };
-    storage.writeJson(StorageKeys.AI_EXPLANATIONS, _state.aiExplanations);
-  },
-  clearAiExplanation(qid: number, persist = true): void {
-    delete _state.aiExplanations[qid];
-    if (persist) storage.writeJson(StorageKeys.AI_EXPLANATIONS, _state.aiExplanations);
-  },
-  setAiExplanations(map: Record<number, AiExplanationEntry>, persist = true): void {
-    _state.aiExplanations = { ...map };
-    if (persist) storage.writeJson(StorageKeys.AI_EXPLANATIONS, _state.aiExplanations);
-  },
-  setPendingAiQuestion(qid: number, isPending: boolean): void {
-    if (isPending) _state.pendingAiQuestions.add(qid); else _state.pendingAiQuestions.delete(qid);
-  },
   setTtsVoiceGender(gender: 'female' | 'male', persist = true): void {
     _state.ttsVoiceGender = gender;
     if (persist) storage.writeString(StorageKeys.TTS_GENDER, gender);

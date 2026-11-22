@@ -1,0 +1,237 @@
+/* 7 Sema Katmanı — Özel İnce Çizgili Gök SVG & Yükseliş Kartı */
+.sky-rank-svg,
+.sky-star-svg {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.sky-horizon {
+  stroke: currentColor;
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  opacity: 0.42;
+}
+
+.sky-arc {
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  opacity: 0.16;
+  transition: opacity 0.2s ease, stroke 0.2s ease;
+}
+
+.sky-arc.is-active {
+  stroke: var(--sky-accent, var(--brand-accent));
+  stroke-width: 1.4;
+  opacity: 0.78;
+}
+
+.sky-arc.is-peak {
+  stroke: var(--sky-accent-bright, var(--sky-accent, var(--brand-accent)));
+  stroke-width: 1.85;
+  opacity: 1;
+  filter: drop-shadow(0 0 3px var(--sky-accent, var(--brand-accent)));
+}
+
+.sky-origin,
+.sky-zenith {
+  fill: var(--sky-accent-bright, var(--sky-accent, var(--brand-accent)));
+}
+
+.sky-origin.is-peak {
+  opacity: 0.92;
+}
+
+.sky-zenith.is-active {
+  fill: #ffffff;
+  filter: drop-shadow(0 0 5px var(--sky-accent-bright, #fef08a));
+}
+
+.sky-card-close:focus-visible {
+  outline: 2px solid var(--sky-accent, var(--brand-accent));
+  outline-offset: 2px;
+}
+
+/* 7 Katman Yükseliş Kartı (Dialog) */
+.sky-rank-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(16px + var(--safe-top)) 14px calc(16px + var(--safe-bottom));
+  background: rgba(15, 23, 42, 0.56);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.sky-rank-overlay[hidden] {
+  display: none !important;
+}
+
+.sky-rank-card {
+  width: min(360px, 100%);
+  max-height: min(84vh, 580px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  background: var(--paper-bg);
+  color: var(--paper-text);
+  border: 1px solid var(--paper-border);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.36);
+}
+
+.sky-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sky-card-hero {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sky-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sky-card-eyebrow {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--paper-text-muted);
+}
+
+.sky-card-meta h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.sky-card-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  margin-top: 2px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  background: var(--sky-pill-bg, #334155);
+  border: 1px solid var(--sky-pill-border, rgba(148, 163, 184, 0.4));
+  box-shadow: var(--sky-glow, none);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 800;
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+}
+
+.sky-card-stars .sky-star-svg {
+  color: #ffffff;
+  filter: var(--sky-star-glow, none);
+}
+
+.sky-card-close {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--paper-text-muted);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.sky-card-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sky-card-track {
+  width: 100%;
+  height: 4px;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--paper-border) 65%, transparent);
+  overflow: hidden;
+}
+
+.sky-card-fill {
+  display: block;
+  height: 100%;
+  background: var(--sky-accent, var(--brand-accent));
+}
+
+.sky-card-sub {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.sky-ladder {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sky-ladder-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--paper-text-muted);
+  opacity: 0.65;
+}
+
+.sky-ladder-item.is-reached {
+  color: var(--paper-text);
+  opacity: 1;
+}
+
+.sky-ladder-item.is-reached .sky-ladder-name {
+  color: var(--sky-accent, var(--paper-text));
+}
+
+.sky-ladder-item.is-current {
+  background: color-mix(in srgb, var(--sky-accent, var(--brand-accent)) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sky-accent, var(--brand-accent)) 36%, transparent);
+  color: var(--sky-accent, var(--brand-accent));
+}
+
+.sky-ladder-min {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.sky-card-hint {
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid color-mix(in srgb, var(--paper-border) 60%, transparent);
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--paper-text-muted);
+}

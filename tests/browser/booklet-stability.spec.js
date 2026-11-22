@@ -18,10 +18,8 @@ test.beforeEach(async ({ page }) => {
 
 async function openSinglePlayer(page) {
   await page.goto('/');
-  await page.locator('[data-action="welcome-start-single"]').click();
-  await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
+  await page.locator('#btnBottomQuestions').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
-  await page.locator('.btn-close-drawer[data-action="close-subject-drawer"]').click();
 }
 
 test('sanal sayfalama ilk açılışta 20 soru basar, kaydırınca devamını ekler', async ({ page }) => {

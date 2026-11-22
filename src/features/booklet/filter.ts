@@ -5,7 +5,7 @@ import { getQuestionInstitutionMetrics, getQuestionRoomMetrics } from '../../sha
 import { updateBookletQuestions } from './selection.js';
 import { renderBookletPages } from './render.js';
 
-export type UnifiedMode = 'all' | 'rematch' | 'starred' | 'notes' | 'institution' | 'room';
+export type UnifiedMode = 'all' | 'rematch' | 'review' | 'starred' | 'notes' | 'institution' | 'room';
 
 const MODE_META: Record<UnifiedMode, { label: string; icon: string; title: string }> = {
   all: {
@@ -18,14 +18,19 @@ const MODE_META: Record<UnifiedMode, { label: string; icon: string; title: strin
     title: 'Rövanşlar (Yanlışlar & Şüpheliler)',
     icon: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/><path d="M14.5 6.5 18 3h3v3l-3.5 3.5"/><path d="m5 14 4 4"/><path d="m7 17-3 3"/><path d="m3 19 2 2"/></svg>`
   },
+  review: {
+    label: 'Tekrar',
+    title: 'Tekrar (Doğru Çözülenleri Yeniden Dene)',
+    icon: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>`
+  },
   starred: {
     label: 'Kayıtlı',
     title: 'Kaydedilen Sorular',
     icon: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>`
   },
   institution: {
-    label: 'Kurum',
-    title: 'Kurum Yanlışları (En Çok Hata Yapılanlar)',
+    label: 'Kurs',
+    title: 'Kurs Yanlışları (En Çok Hata Yapılanlar)',
     icon: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`
   },
   room: {
@@ -47,7 +52,10 @@ export function toggleUnifiedDropdown(force?: boolean): void {
   const menu = document.getElementById('unifiedDropdownMenu');
   const trigger = document.getElementById('btnUnifiedTrigger');
   if (menu) menu.classList.toggle('is-open', isDropdownOpen);
-  if (trigger) trigger.classList.toggle('is-expanded', isDropdownOpen);
+  if (trigger) {
+    trigger.classList.toggle('is-expanded', isDropdownOpen);
+    trigger.setAttribute('aria-expanded', String(isDropdownOpen));
+  }
 }
 
 export function closeUnifiedDropdown(): void {
@@ -55,7 +63,6 @@ export function closeUnifiedDropdown(): void {
   toggleUnifiedDropdown(false);
 }
 
-// Menü dışına tıklanınca kapat
 if (typeof document !== 'undefined') {
   document.addEventListener('click', (event) => {
     if (!isDropdownOpen) return;
@@ -74,6 +81,9 @@ if (typeof document !== 'undefined') {
 
 export function setUnifiedMode(mode: UnifiedMode): void {
   closeUnifiedDropdown();
+  if (mode !== 'all' && typeof document !== 'undefined' && document.body.classList.contains('welcome-active')) {
+    notifyStateChange('subjects:drawer-opened');
+  }
   if (mode === 'notes') {
     store.setContentViewMode('notes');
     updateUnifiedToggleUI();
@@ -105,8 +115,9 @@ export function setBookletFilter(mode: BookletFilterMode): void {
   updateBookletQuestions();
 }
 
-export function getFilterCounts(): { rematch: number; starred: number; institution: number; room: number } {
+export function getFilterCounts(): { rematch: number; review: number; starred: number; institution: number; room: number } {
   let rematch = 0;
+  let review = 0;
   let starred = 0;
   let institution = 0;
   let room = 0;
@@ -118,8 +129,10 @@ export function getFilterCounts(): { rematch: number; starred: number; instituti
 
     const userMark = state.userMarkedChoices[q.id];
     const isWrong = Boolean(userMark && userMark !== q.dogru_cevap);
+    const isCorrect = Boolean(userMark && userMark === q.dogru_cevap);
     const inQueue = state.rematchQuestionIds.has(q.id);
     if (isWrong || inQueue) rematch++;
+    if (isCorrect && !inQueue) review++;
     if (state.starredQuestionIds.has(q.id)) starred++;
 
     const inst = getQuestionInstitutionMetrics(q, state.institutionStats[q.id]);
@@ -129,7 +142,7 @@ export function getFilterCounts(): { rematch: number; starred: number; instituti
     if (rm.wrong > 0) room++;
   });
 
-  return { rematch, starred, institution, room };
+  return { rematch, review, starred, institution, room };
 }
 
 export function updateUnifiedToggleUI(): void {
@@ -149,14 +162,20 @@ export function updateUnifiedToggleUI(): void {
     ? 'notes'
     : (currentFilter === 'rematch'
       ? 'rematch'
-      : (currentFilter === 'starred'
-        ? 'starred'
-        : (currentFilter === 'institution'
-          ? 'institution'
-          : (currentFilter === 'room' ? 'room' : 'all'))));
+      : (currentFilter === 'review'
+        ? 'review'
+        : (currentFilter === 'starred'
+          ? 'starred'
+          : (currentFilter === 'institution'
+            ? 'institution'
+            : (currentFilter === 'room' ? 'room' : 'all')))));
 
   const rematchBadge = counts.rematch > 0
     ? `<span class="filter-count-badge">${counts.rematch}</span>`
+    : '';
+
+  const reviewBadge = counts.review > 0
+    ? `<span class="filter-count-badge">${counts.review}</span>`
     : '';
 
   const starredBadge = counts.starred > 0
@@ -171,15 +190,21 @@ export function updateUnifiedToggleUI(): void {
     ? `<span class="filter-count-badge">${counts.room}</span>`
     : '';
 
-  const activeMeta = MODE_META[activeMode];
+  const isLibraryActive = activeMode !== 'all';
   let activeBadge = '';
   if (activeMode === 'rematch') activeBadge = rematchBadge;
+  else if (activeMode === 'review') activeBadge = reviewBadge;
   else if (activeMode === 'starred') activeBadge = starredBadge;
   else if (activeMode === 'institution') activeBadge = instBadge;
   else if (activeMode === 'room') activeBadge = roomBadge;
 
+  const questionsBtn = document.getElementById('btnBottomQuestions');
+  questionsBtn?.classList.toggle('is-active-tab', !isLibraryActive);
+
+  const KAYITLAR_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>`;
+
   const roomItemHtml = state.isRoomActive ? `
-        <button class="unified-dropdown-item ${activeMode === 'room' ? 'is-selected' : ''}" id="btnUnifiedRoom" data-action="set-unified-mode" data-mode="room" role="menuitem">
+        <button type="button" class="unified-dropdown-item ${activeMode === 'room' ? 'is-selected' : ''}" id="btnUnifiedRoom" data-action="set-unified-mode" data-mode="room" role="menuitem">
           ${MODE_META.room.icon}
           <span class="top-unified-label">Oda</span>
           ${roomBadge}
@@ -187,39 +212,46 @@ export function updateUnifiedToggleUI(): void {
 
   if (pill) {
     pill.innerHTML = `
-      <button class="btn-top-unified btn-top-unified-trigger active ${isDropdownOpen ? 'is-expanded' : ''}" id="btnUnifiedTrigger" data-action="toggle-unified-dropdown" data-mode="${activeMode}" title="${activeMeta.title} (Görünüm Değiştir)" aria-expanded="${isDropdownOpen}">
-        ${activeMeta.icon}
-        <span class="top-unified-label">${activeMeta.label}</span>
+      <button type="button" class="btn-top-unified btn-top-unified-trigger ${isLibraryActive ? 'is-active-tab active' : ''} ${isDropdownOpen ? 'is-expanded' : ''}" id="btnUnifiedTrigger" data-action="toggle-unified-dropdown" data-mode="${activeMode}" title="Kayıtlar: Rövanş, Tekrar, Kayıtlı, Kurs ve Notlar" aria-expanded="${isDropdownOpen}" aria-haspopup="menu">
+        ${KAYITLAR_ICON}
+        <span class="top-unified-label">Kayıtlar</span>
         ${activeBadge}
-        <span class="unified-trigger-caret">▾</span>
       </button>
       <div class="unified-dropdown-menu ${isDropdownOpen ? 'is-open' : ''}" id="unifiedDropdownMenu" role="menu">
-        <button class="unified-dropdown-item ${activeMode === 'all' ? 'is-selected' : ''}" id="btnUnifiedAll" data-action="set-unified-mode" data-mode="all" role="menuitem">
-          ${MODE_META.all.icon}
-          <span class="top-unified-label">Sorular</span>
-        </button>
-        <button class="unified-dropdown-item ${activeMode === 'rematch' ? 'is-selected' : ''}" id="btnUnifiedRematch" data-action="set-unified-mode" data-mode="rematch" role="menuitem">
+        <button type="button" class="unified-dropdown-item ${activeMode === 'rematch' ? 'is-selected' : ''}" id="btnUnifiedRematch" data-action="set-unified-mode" data-mode="rematch" role="menuitem">
           ${MODE_META.rematch.icon}
           <span class="top-unified-label">Rövanş</span>
           ${rematchBadge}
         </button>
-        <button class="unified-dropdown-item ${activeMode === 'institution' ? 'is-selected' : ''}" id="btnUnifiedInstitution" data-action="set-unified-mode" data-mode="institution" role="menuitem">
-          ${MODE_META.institution.icon}
-          <span class="top-unified-label">Kurum</span>
-          ${instBadge}
+        <button type="button" class="unified-dropdown-item ${activeMode === 'review' ? 'is-selected' : ''}" id="btnUnifiedReview" data-action="set-unified-mode" data-mode="review" role="menuitem">
+          ${MODE_META.review.icon}
+          <span class="top-unified-label">Tekrar</span>
+          ${reviewBadge}
         </button>
-        ${roomItemHtml}
-        <button class="unified-dropdown-item ${activeMode === 'starred' ? 'is-selected' : ''}" id="btnUnifiedStarred" data-action="set-unified-mode" data-mode="starred" role="menuitem">
+        <button type="button" class="unified-dropdown-item ${activeMode === 'starred' ? 'is-selected' : ''}" id="btnUnifiedStarred" data-action="set-unified-mode" data-mode="starred" role="menuitem">
           ${MODE_META.starred.icon}
           <span class="top-unified-label">Kayıtlı</span>
           ${starredBadge}
         </button>
-        <button class="unified-dropdown-item ${activeMode === 'notes' ? 'is-selected' : ''}" id="btnUnifiedNotes" data-action="set-unified-mode" data-mode="notes" role="menuitem">
+        <button type="button" class="unified-dropdown-item ${activeMode === 'institution' ? 'is-selected' : ''}" id="btnUnifiedInstitution" data-action="set-unified-mode" data-mode="institution" role="menuitem">
+          ${MODE_META.institution.icon}
+          <span class="top-unified-label">Kurs</span>
+          ${instBadge}
+        </button>
+        ${roomItemHtml}
+        <button type="button" class="unified-dropdown-item ${activeMode === 'notes' ? 'is-selected' : ''}" id="btnUnifiedNotes" data-action="set-unified-mode" data-mode="notes" role="menuitem">
           ${MODE_META.notes.icon}
           <span class="top-unified-label">Notlar</span>
         </button>
       </div>
     `;
+  }
+
+  const chipsBar = document.getElementById('studyModeChipsBar');
+  if (chipsBar) {
+    chipsBar.hidden = true;
+    chipsBar.innerHTML = '';
+    document.body?.classList?.remove?.('study-chips-open');
   }
 }
 

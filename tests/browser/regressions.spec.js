@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { isolateRemoteData } from './fixtures/network.js';
-import { StorageKeys } from '../../src/shared/storage-keys.ts';
+import { StorageKeys, progressStorageKey } from '../../src/shared/storage-keys.ts';
 
 const TEST_AUTH_SESSION = JSON.stringify({
   accessToken: 'e2e-test-token',
@@ -18,9 +18,7 @@ test.beforeEach(async ({ page }) => {
 
 async function openSinglePlayer(page) {
   await page.goto('/');
-  await page.locator('[data-action="welcome-start-single"]').click();
-  await expect(page.locator('#drawerOverlay')).toHaveClass(/open/);
-  await page.locator('.btn-close-drawer[data-action="close-subject-drawer"]').click();
+  await page.locator('#btnBottomQuestions').click();
   await expect(page.locator('.optical-choice-row').first()).toBeVisible();
 }
 
@@ -45,13 +43,13 @@ test('soru kaydetme yer imi ve kaydetme diliyle çalışır', async ({ page }) =
   await expect(saveButton).toHaveAttribute('title', 'Kaydı Kaldır');
   await expect.poll(() => page.evaluate(
     ({ key, id }) => JSON.parse(localStorage.getItem(key) || '[]').includes(id),
-    { key: StorageKeys.STARRED_QUESTIONS, id: questionId }
+    { key: progressStorageKey(StorageKeys.STARRED_QUESTIONS, 'account:e2e-user-1'), id: questionId }
   )).toBe(true);
 
   await page.locator('#btnUnifiedTrigger').click();
-  await expect(page.locator('#btnUnifiedStarred .top-unified-label')).toHaveText('Kayıtlı');
+  await expect(page.locator('#btnUnifiedStarred')).toContainText('Kayıtlı');
   await page.locator('#btnUnifiedStarred').click();
-  await expect(page.locator('#btnUnifiedTrigger .top-unified-label')).toHaveText('Kayıtlı');
+  await expect(page.locator('#btnUnifiedTrigger .top-unified-label')).toHaveText('Kayıtlar');
   await expect(page.locator(`.booklet-question[data-qid="${questionId}"]`)).toBeVisible();
 });
 
@@ -59,27 +57,26 @@ test('hamburger menüsü sade, etiketli ve welcome durumuna duyarlıdır', async
   await page.goto('/');
   await expect(page.locator('.welcome-bismillah')).toHaveText('بسم الله');
   await page.locator('#btnMasterConsole').click();
-  await expect(page.locator('[data-action="welcome-home"]')).toBeHidden();
+  await expect(page.locator('[data-action="welcome-home"]')).toBeVisible();
   await expect(page.locator('[data-action="cycle-column-count"]')).toBeHidden();
   await expect(page.locator('[data-action="cycle-zoom-level"]')).toBeHidden();
-  await expect(page.locator('#topPrayerPill .prayer-icon')).toHaveCount(0);
-  await expect(page.locator('#topPrayerPill')).toHaveCSS('border-top-style', 'none');
+  await expect(page.locator('#topPrayerPill')).toHaveCount(0);
+  await expect(page.locator('#btnResumeLastSession')).toBeHidden();
   for (const action of ['cycle-tts-gender', 'cycle-tts-engine', 'clear-all-marks', 'undo-clear-marks', 'toggle-fullscreen', 'open-room-modal']) {
     await expect(page.locator(`[data-action="${action}"]`)).toHaveCount(0);
   }
-  await page.locator('#btnResumeLastSession').click();
-  await expect(page.locator('#drawerOverlay')).not.toHaveClass(/open/);
+  await page.locator('#btnBottomQuestions').click();
   await expect(page.locator('.booklet-question').first()).toBeVisible();
   await page.locator('#btnMasterConsole').click();
   await expect(page.locator('[data-action="welcome-home"]')).toBeVisible();
   await expect(page.locator('[data-action="welcome-home"] svg')).toHaveCount(1);
-  await expect(page.locator('#btnResumeLastSession svg')).toHaveCount(1);
   await page.locator('[data-action="cycle-column-count"]').click();
   await page.locator('[data-action="cycle-zoom-level"]').click();
   await page.locator('[data-action="cycle-theme-mode"]').click();
   await page.locator('[data-action="cycle-accent-color"]').click();
   await expect(page.locator('#btnConsoleColorCycle svg')).toHaveCSS('color', 'rgb(5, 150, 105)');
-  const labels = ['Ana Sayfa', 'Kaldığın Yerden Devam Et', 'Sütun Düzeni: 3', 'Yazı Boyutu: 15px', 'Tema: Koyu', 'Vurgu Rengi', 'PDF / Yazdır'];
+  await expect(page.locator('#consoleMenuPopup #profileProgramSelector')).toHaveCount(0);
+  const labels = ['Profil', 'Ekip Ol', 'Sütun Düzeni: 3', 'Yazı Boyutu: 15px', 'Ses Olayları: Açık', 'Tema: Açık', 'Karakterinin Rengi', 'PDF / Yazdır', 'Çıkış Yap'];
   await expect(page.locator('.console-nav-action:visible')).toHaveText(labels);
 });
 
@@ -97,13 +94,11 @@ test('mevcut rövanş, kaldığı yer ve seri kayıtları açılışta korunur',
   await page.goto('/');
 
   await page.locator('#btnMasterConsole').click();
-  await expect(page.locator('#btnResumeLastSession')).toBeEnabled();
+  await expect(page.locator('#btnResumeLastSession')).toBeVisible();
   await page.locator('#btnResumeLastSession').click();
   await expect(page.locator('.booklet-question[data-qid="969"]')).toBeVisible();
-  await page.locator('#btnMasterConsole').click();
   await page.locator('[data-action="welcome-home"]').click();
-  await page.locator('[data-action="welcome-start-single"]').click();
-  await page.locator('.btn-close-drawer[data-action="close-subject-drawer"]').click();
+  await page.locator('#btnBottomQuestions').click();
   await page.locator('#btnUnifiedTrigger').click();
   await page.locator('#btnUnifiedRematch').click();
   await expect(page.locator('.booklet-question[data-qid="969"]')).toBeVisible();

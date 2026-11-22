@@ -16,7 +16,8 @@ test('Combo mantığı: 1. doğru sessiz, 2 ile 5 arası doğal unvanlarla ilerl
   assert.equal(s.currentStreak, 2);
   assert.equal(r2.event?.title, 'Temiz başlangıç');
   assert.equal(r2.event?.subtitle, "2'de 2");
-  assert.equal(r2.event?.badgeClass, 'combo-water');
+  assert.equal(r2.event?.badgeClass, 'combo-star');
+  assert.ok(r2.event?.icon.includes('sky-star-svg'));
 
   const r3 = evaluateCombo(s, true);
   s = r3.nextState;
@@ -35,13 +36,14 @@ test('Combo mantığı: 6 ve üzerinde Durdurulamıyor veya Maşallah der', () =
   const rUnstoppable = evaluateCombo(s5, true, () => 0.2);
   assert.equal(rUnstoppable.nextState.currentStreak, 6);
   assert.equal(rUnstoppable.event?.title, 'Durdurulamıyor');
+  assert.equal(rUnstoppable.event?.badgeClass, 'combo-nova');
 
   const rCount = evaluateCombo(s5, true, () => 0.8);
   assert.equal(rCount.nextState.currentStreak, 6);
   assert.equal(rCount.event?.title, 'Maşallah');
 });
 
-test('Combo mantığı: Serideyken yanlış yapınca kalkansız "Avans Verdi" (toprak tonu) olur', () => {
+test('Combo mantığı: Serideyken yanlış yapınca kalkansız "Avans Verdi" (yörünge tonu) olur', () => {
   const s: ComboState = { currentStreak: 4, hasGrace: false };
 
   // Yanlış cevap -> Avans Verdi
@@ -50,7 +52,7 @@ test('Combo mantığı: Serideyken yanlış yapınca kalkansız "Avans Verdi" (t
   assert.equal(r.nextState.hasGrace, true);
   assert.equal(r.event?.type, 'grace_given');
   assert.equal(r.event?.title, 'Avans Verdi', 'Kalkan emojisi olmamalı');
-  assert.equal(r.event?.badgeClass, 'combo-earth');
+  assert.equal(r.event?.badgeClass, 'combo-orbit');
 });
 
 test('Combo mantığı: "Avans Verdi" sonrasında yeni unvanlardan biriyle devam eder', () => {
@@ -73,6 +75,7 @@ test('Combo mantığı: "Avans Verdi"den sonra tekrar bilemezse "Buraya Kadar" o
   assert.equal(r.nextState.currentStreak, 0);
   assert.equal(r.nextState.hasGrace, false);
   assert.equal(r.event?.type, 'broken');
-  assert.match(r.event!.title, /Buraya Kadar/);
+  assert.equal(r.event?.title, 'Buraya Kadar!');
+  assert.ok(!r.event!.title.includes('💧'));
   assert.equal(r.event?.badgeClass, 'combo-broken');
 });

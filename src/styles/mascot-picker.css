@@ -1,0 +1,48 @@
+/* ========================================================= */
+/* PROFİL EKRANI MASKOT SEÇİCİSİ                             */
+/* ========================================================= */
+
+.ps-mascot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 8px;
+}
+
+.ps-mascot-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 76px;
+  padding: 10px 6px;
+  border: 1.5px solid var(--paper-border);
+  border-radius: 12px;
+  background: var(--paper-bg);
+  color: var(--paper-text);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.ps-mascot-card:hover {
+  border-color: var(--brand-accent);
+}
+
+.ps-mascot-card.is-selected {
+  border-color: var(--brand-accent);
+  background: color-mix(in srgb, var(--brand-accent) 12%, var(--paper-bg));
+}
+
+.ps-mascot-preview {
+  display: block;
+  width: 38px;
+  height: 38px;
+}
+
+.ps-mascot-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}

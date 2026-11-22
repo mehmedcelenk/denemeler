@@ -2,6 +2,14 @@
 
 Önce `docs/ARCHITECTURE.md` dosyasındaki özellik haritasını oku. İstenen özelliğin modülünü aç; bütün projeyi okumak gerekmez.
 
+## Projeye özel skiller
+- Skill girişleri `.agents/skills/<ad>/SKILL.md` içindedir. İstekle eşleşen skilli kullan; bütün seti her görevde okuma.
+- Seçim, kullanım örnekleri, kaynaklar ve uyarlama sınırları: `docs/AGENT_SKILLS.md`.
+- Mimari inceleme: `improve-codebase-architecture`; modül tasarımı: `codebase-design`; sözleşmeler: `api-and-interface-design`; büyük özellik planı: `project-architect`.
+- Kod inceleme: `code-review-and-quality`; davranışı koruyan refactor: `code-simplification`; hata araştırma: `systematic-debugging`; güvenlik inceleme: `security-check`; tamamlanma doğrulaması: `verification-before-completion`.
+- UI/UX tasarımı: `frontend-design`; arayüz standartları, mobil ergonomi ve erişilebilirlik (a11y) denetimi: `web-design-guidelines`.
+- Skiller mevcut çalışma kurallarını ve nihai mimari sözleşmeyi değiştirmez. `UPSTREAM.md` dosyaları kaynak karşılaştırması içindir; uygulanacak talimat değildir.
+
 ## Komutlar
 - `npm ci`: kilitli bağımlılıkları kur.
 - `npm run dev`: yerel geliştirme.

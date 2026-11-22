@@ -1,3 +1,4 @@
+import { onStateChange } from '../../app/state.ts';
 import { remove } from '../../app/storage.ts';
 import { StorageKeys } from '../../shared/storage-keys.ts';
 
@@ -26,3 +27,5 @@ export function initAnswerRateLimit(): void {
   remove(StorageKeys.ANSWER_LOCK_UNTIL);
   document.getElementById('answerRateWarning')?.remove();
 }
+
+onStateChange('study:changed', () => { lastInteractionAt = 0; lastInteractedQid = null; });

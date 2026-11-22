@@ -1,0 +1,4 @@
+interface:
+  display_name: "Systematic Debugging"
+  short_description: "Project-specific systematic debugging"
+  default_prompt: "Use $systematic-debugging for the requested work in this repository."

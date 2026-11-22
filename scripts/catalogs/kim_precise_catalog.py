@@ -1,322 +1,200 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""MEB Kimya (1–4) Dönem Bazlı Atomik, Sıfırdan Öğreten ve Sınav Şifreli Kavram Katalogu."""
+"""MEB KIM Yüksek Hassasiyetli Kanonik Kavram ve Terim Sözlüğü."""
 
 from typing import Any, Dict, List
 
 PRECISE_KIM_CONCEPTS: List[Dict[str, Any]] = [
-    # ==========================================
-    # KİM 1: KİMYA BİLİMİ (ATOMİK)
-    # ==========================================
     {
-        "id": "kim_simya",
-        "term": "Simya (Alşimi)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 14},
-        "tanim_by_donem": {
-            1: (
-                "Modern kimya öncesinde insanların değersiz metalleri altına çevirme (**felsefe taşı**) ve ölümsüzlük iksirini (**ab-ı hayat**) bulma uğraşıdır; Cabir bin Hayyan (*İmbik* ve asitlerin keşfi) ve Ebubekir er-Razi en büyük öncüleridir.\n"
-                "💡 Sınav Şifresi: Simya sınama-yanılmaya dayanır, bilim değildir! Mürekkep, cam, barut, sabun, esans simyadan kalmadır; ancak **plastik, teflon, naylon, pil ve deterjan simya döneminde YOKTUR**!"
-            ),
-        },
-        "pattern": r"simya[a-zçğıöşü]*|alşimi|felsefe taşı|imbik",
+        "id": 'kim_simya',
+        "term": 'Simya (Alşimi)',
+        "sayfa": 14,
+        "tanim": 'Modern kimya öncesinde insanların değersiz metalleri altına çevirme (**felsefe taşı**) ve ölümsüzlük iksirini (**ab-ı hayat**) bulma uğraşıdır; Cabir bin Hayyan (*İmbik* ve asitlerin keşfi) ve Ebubekir er-Razi en büyük öncüleridir.\n💡 Hile: Simya sınama-yanılmaya dayanır, bilim değildir! Mürekkep, cam, barut, sabun, esans simyadan kalmadır; ancak **plastik, teflon, naylon, pil ve deterjan simya döneminde YOKTUR**!',
+        "pattern": '\\bsimya[a-zçğıöşü]*|\\balşimi\\b|\\bfelsefe taşı\\b|\\bimbik\\b',
     },
     {
-        "id": "kim_element",
-        "term": "Element ve Semboller",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 24},
-        "tanim_by_donem": {
-            1: (
-                "Tek cins atomdan oluşan, fiziksel veya kimyasal yollarla daha basit maddelere ayrıştırılamayan en saf yapı taşıdır (Demir $\\text{Fe}$, Altın $\\text{Au}$, Bakır $\\text{Cu}$, Sodyum $\\text{Na}$, Potasyum $\\text{K}$, Kurşun $\\text{Pb}$, Cıva $\\text{Hg}$).\n"
-                "💡 Sınav Şifresi: Elementler **sembollerle** gösterilir (ilk harf daima büyük, ikinci harf küçük); saf ve homojendirler."
-            ),
-        },
-        "pattern": r"\belement[a-zçğıöşü]*",
+        "id": 'kim_element',
+        "term": 'Element ve Semboller',
+        "sayfa": 24,
+        "tanim": 'Tek cins atomdan oluşan, fiziksel veya kimyasal yollarla daha basit maddelere ayrıştırılamayan en saf yapı taşıdır (Demir $\\text{Fe}$, Altın $\\text{Au}$, Bakır $\\text{Cu}$, Sodyum $\\text{Na}$, Potasyum $\\text{K}$, Kurşun $\\text{Pb}$, Cıva $\\text{Hg}$).\n💡 Hile: Elementler **sembollerle** gösterilir (ilk harf daima büyük, ikinci harf küçük); saf ve homojendirler.',
+        "pattern": '\\belement[a-zçğıöşü]*',
     },
     {
-        "id": "kim_bilesik_ve_yaygin_adlar",
-        "term": "Bileşik ve Yaygın Bileşik Adları",
-        "donemler": [1, 2],
-        "sayfa_by_donem": {1: 26, 2: 112},
-        "tanim_by_donem": {
-            1: (
-                "Farklı elementlerin kendi özelliklerini kaybederek belirli sabit oranlarda birleşmesiyle oluşan saf maddedir (Yanıcı $\\text{H}_2$ ile yakıcı $\\text{O}_2$'den söndürücü **Su $\\text{H}_2\\text{O}$** oluşması gibi).\n"
-                "💡 Sınav Şifresi: **Tuz ruhu** ($\\text{HCl}$), **Zaç yağı** ($\\text{H}_2\\text{SO}_4$), **Kezzap** ($\\text{HNO}_3$), **Sirke asidi** ($\\text{CH}_3\\text{COOH}$), **Sud kostik** ($\\text{NaOH}$), **Potas kostik** ($\\text{KOH}$), **Sönmemiş kireç** ($\\text{CaO}$), **Sönmüş kireç** ($\\text{Ca(OH)}_2$), **Amonyak** ($\\text{NH}_3$)."
-            ),
-        },
-        "pattern": r"yaygın adı|potas kostik|sud kostik|tuz ruhu|kezzap|zaç yağı|sönmüş kireç|sönmemiş kireç|amonyak|yemek sodası|kireç taşı|\bbileşi[kğ][a-zçğıöşü]*|saf madde[a-zçğıöşü]*",
+        "id": 'kim_bilesik_ve_yaygin_adlar_d1',
+        "term": 'Bileşik ve Yaygın Bileşik Adları',
+        "sayfa": 26,
+        "tanim": "Farklı elementlerin kendi özelliklerini kaybederek belirli sabit oranlarda birleşmesiyle oluşan saf maddedir (Yanıcı $\\text{H}_2$ ile yakıcı $\\text{O}_2$'den söndürücü **Su $\\text{H}_2\\text{O}$** oluşması gibi).\n💡 Hile: **Tuz ruhu** ($\\text{HCl}$), **Zaç yağı** ($\\text{H}_2\\text{SO}_4$), **Kezzap** ($\\text{HNO}_3$), **Sirke asidi** ($\\text{CH}_3\\text{COOH}$), **Sud kostik** ($\\text{NaOH}$), **Potas kostik** ($\\text{KOH}$), **Sönmemiş kireç** ($\\text{CaO}$), **Sönmüş kireç** ($\\text{Ca(OH)}_2$), **Amonyak** ($\\text{NH}_3$).",
+        "pattern": '\\byaygın adı\\b|\\bpotas kostik\\b|\\bsud kostik\\b|\\btuz ruhu\\b|\\bkezzap\\b|\\bzaç yağı\\b|\\bsönmüş kireç\\b|\\bsönmemiş kireç\\b|\\bamonyak\\b|\\byemek sodası\\b|\\bkireç taşı\\b|\\bbileşi[kğ][a-zçğıöşü]*|\\bsaf madde[a-zçğıöşü]*',
     },
     {
-        "id": "kim_guvenlik_ve_lab",
-        "term": "Güvenlik Piktogramları ve Laboratuvar Malzemeleri",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 36},
-        "tanim_by_donem": {
-            1: (
-                "Kimyasal şişelerin üzerindeki uyarı sembolleri (**Korozif/Aşındırıcı**, **Yanıcı**, **Yakıcı**, **Radyoaktif**) ve deney kaplarıdır.\n"
-                "💡 Sınav Şifresi: Titrasyon musluklu ince boru **Büret**; zeytinyağı-su gibi sıvıları ayıran **Ayırma Hunisi**; çözelti hazırlanan ince boyunlu kap **Balon Joje**; konik dipli kap **Erlenmayer**; sıvı hacmi ölçen **Mezür (Dereceli Silindir)**."
-            ),
-        },
-        "pattern": r"piktogram[a-zçğıöşü]*|korozif|radyoaktif|balon joje|erlenmayer|büret|mezür|ayırma hunisi",
-    },
-
-    # ==========================================
-    # KİM 1: ATOM VE PERİYODİK SİSTEM (TAM ATOMİK: ATOM != ELEKTRON != PROTON)
-    # ==========================================
-    {
-        "id": "kim_atom_ve_modelleri",
-        "term": "Atom ve Atom Modelleri",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 52},
-        "tanim_by_donem": {
-            1: (
-                "Bir elementin tüm kimyasal özelliklerini taşıyan en küçük yapı taşıdır; atom modelleri sırasıyla **Dalton** (içi dolu bilardo topu) $\\to$ **Thomson** (üzümlü kek) $\\to$ **Rutherford** (çekirdekli gezegen modeli) $\\to$ **Bohr** (yörüngeli/katmanlı) $\\to$ **Modern Atom Teorisi** (elektron bulutu/orbital) şeklinde gelişmiştir.\n"
-                "💡 Sınav Şifresi: **Çekirdeği ilk keşfeden Rutherford**, elektronların belirli enerji **katmanlarında (yörüngelerde)** döndüğünü söyleyen **Bohr**'dur!"
-            ),
-        },
-        "pattern": r"atom model[a-zçğıöşü]*|dalton|thomson|rutherford|bohr|\batom\b|\batomun\b|\batomda\b|\batomlar[a-zçğıöşü]*",
+        "id": 'kim_bilesik_ve_yaygin_adlar_d2',
+        "term": 'Bileşik ve Yaygın Bileşik Adları',
+        "sayfa": 112,
+        "tanim": "Bileşik ve Yaygın Bileşik Adları kavramı.\n💡 Hile: Yaygın adları 'MUTFAK-İNŞAAT-TEMİZLİK' üçlüsüne yerleştir → Mutfak: NaCl = Yemek tuzu, NaHCO₃ = Yemek sodası, CH₃COOH = Sirke ruhu, C₆H₁₂O₆ = Üzüm şekeri. İnşaat: CaCO₃ = Kireç taşı, CaO = Sönmemiş kireç, Ca(OH)₂ = Sönmüş kireç, CaSO₄·2H₂O = Alçı taşı. Temizlik/Sağlık: NaOH = Sud kostik, KOH = Potas kostik, H₂O₂ = Oksijenli su, NH₃ = Amonyak. Ters köşe kuralı: 'Sönmemiş' = su YOK (CaO); 'Sönmüş' = su VAR (Ca(OH)₂) → 'sönmüş' kelimesinde 'ş' harfi suya benziyor, su eklenmiş demek. Formülde '·2H₂O' görürsen → kristal suyu var = alçı taşı/jips.",
+        "pattern": '\\byaygın adı\\b|\\bpotas kostik\\b|\\bsud kostik\\b|\\btuz ruhu\\b|\\bkezzap\\b|\\bzaç yağı\\b|\\bsönmüş kireç\\b|\\bsönmemiş kireç\\b|\\bamonyak\\b|\\byemek sodası\\b|\\bkireç taşı\\b|\\bbileşi[kğ][a-zçğıöşü]*|\\bsaf madde[a-zçğıöşü]*',
     },
     {
-        "id": "kim_proton_ve_atom_no",
-        "term": "Proton (p⁺) ve Atom Numarası (Z)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 60},
-        "tanim_by_donem": {
-            1: (
-                "Atomun çekirdeğinde oturan **artı ($+$) yüklü** temel taneciktir; tıpkı insanın **TC Kimlik Numarası** gibi her elementin kimliğini (hangi element olduğunu) yalnızca proton sayısı belirler.\n"
-                "💡 Formül: $\\text{Atom Numarası } (Z) = \\text{Proton Sayısı } (p^+) = \\text{Çekirdek Yükü}$."
-            ),
-        },
-        "pattern": r"proton[a-zçğıöşü]*|atom numara[a-zçğıöşü]*|çekirdek yükü",
+        "id": 'kim_guvenlik_ve_lab',
+        "term": 'Güvenlik Piktogramları ve Laboratuvar Malzemeleri',
+        "sayfa": 36,
+        "tanim": 'Kimyasal şişelerin üzerindeki uyarı sembolleri (**Korozif/Aşındırıcı**, **Yanıcı**, **Yakıcı**, **Radyoaktif**) ve deney kaplarıdır.\n💡 Hile: Titrasyon musluklu ince boru **Büret**; zeytinyağı-su gibi sıvıları ayıran **Ayırma Hunisi**; çözelti hazırlanan ince boyunlu kap **Balon Joje**; konik dipli kap **Erlenmayer**; sıvı hacmi ölçen **Mezür (Dereceli Silindir)**.',
+        "pattern": '\\bpiktogram[a-zçğıöşü]*|\\bkorozif\\b|\\bradyoaktif\\b|\\bbalon joje\\b|\\berlenmayer\\b|\\bbüret\\b|\\bmezür\\b|\\bayırma hunisi\\b',
     },
     {
-        "id": "kim_notron_ve_kutle_no",
-        "term": "Nötron (n⁰) ve Kütle Numarası (A)",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 61},
-        "tanim_by_donem": {
-            1: (
-                "Atom çekirdeğinde protonların yanına yerleşerek onların birbirini itmesini engelleyen **yüksüz ($0$)** taneciktir; proton ve nötronların toplamı atomun ağırlığını yani **Kütle Numarasını ($A$)** verir.\n"
-                "💡 Formül: $\\text{Kütle Numarası } (A) = \\text{Proton } (p) + \\text{Nötron } (n)$ (Aynı zamanda **Nükleon Sayısı** demektir)."
-            ),
-        },
-        "pattern": r"nötron[a-zçğıöşü]*|kütle numara[a-zçğıöşü]*|nükleon[a-zçğıöşü]*",
+        "id": 'kim_atom_ve_modelleri',
+        "term": 'Atom ve Atom Modelleri',
+        "sayfa": 52,
+        "tanim": "Bir elementin tüm kimyasal özelliklerini taşıyan en küçük yapı taşıdır; atom modelleri sırasıyla **Dalton** (içi dolu bilardo topu) $\\to$ **Thomson** (üzümlü kek) $\\to$ **Rutherford** (çekirdekli gezegen modeli) $\\to$ **Bohr** (yörüngeli/katmanlı) $\\to$ **Modern Atom Teorisi** (elektron bulutu/orbital) şeklinde gelişmiştir.\n💡 Hile: **Çekirdeği ilk keşfeden Rutherford**, elektronların belirli enerji **katmanlarında (yörüngelerde)** döndüğünü söyleyen **Bohr**'dur!",
+        "pattern": '\\batom model[a-zçğıöşü]*|\\bdalton\\b|\\bthomson\\b|\\brutherford\\b|\\bbohr\\b|\\batom\\b|\\batomun\\b|\\batomda\\b|\\batomlar[a-zçğıöşü]*',
     },
     {
-        "id": "kim_elektron_ve_iyon",
-        "term": "Elektron (e⁻) ve İyon Yükü",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 62},
-        "tanim_by_donem": {
-            1: (
-                "Atom çekirdeğinin etrafındaki katmanlarda ışık hızına yakın dönen **eksi ($-$) yüklü** taneciktir; atomun kimyasal bağ yapmasını ve elektrik iletkenliğini elektron alışverişi belirler.\n"
-                "💡 Formül: $\\text{Proton Sayısı } (Z) = \\text{Elektron Sayısı } (e^-) + \\text{İyon Yükü}$. Elektron **alan eksi ($-$) yüklenir (Anyon)**, elektron **veren artı ($+$) yüklenir (Katyon)**!"
-            ),
-        },
-        "pattern": r"\belektron[a-zçğıöşü]*|katman elektron|iyon yükü|katyon|anyon",
+        "id": 'kim_proton_ve_atom_no',
+        "term": 'Proton (p⁺) ve Atom Numarası (Z)',
+        "sayfa": 60,
+        "tanim": 'Atomun çekirdeğinde oturan **artı ($+$) yüklü** temel taneciktir; tıpkı insanın **TC Kimlik Numarası** gibi her elementin kimliğini (hangi element olduğunu) yalnızca proton sayısı belirler.\n💡 Hile: $\\text{Atom Numarası } (Z) = \\text{Proton Sayısı } (p^+) = \\text{Çekirdek Yükü}$.',
+        "pattern": '\\bproton[a-zçğıöşü]*|\\batom numara[a-zçğıöşü]*|\\bçekirdek yükü\\b',
     },
     {
-        "id": "kim_izotop_izoton_izobar",
-        "term": "İzotop, İzoton, İzobar ve İzoelektronik Tanecikler",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 65},
-        "tanim_by_donem": {
-            1: (
-                "Son harflerinden şifrelenen atom kardeşlikleridir:\n"
-                "• **İzotoP:** **P**roton sayısı aynı, nötronu farklı.\n"
-                "• **İzotoN:** **N**ötron sayısı aynı, protonu farklı.\n"
-                "• **İzobAr:** Kütle numarası (**A**) aynı; **İzoelektronik:** Elektron sayısı ve dizilimi aynı.\n"
-                "💡 Sınav Şifresi: Son harfe bak $\\to$ İzoto**p** (**p**roton aynı), İzoto**n** (**n**ötron aynı)!"
-            ),
-        },
-        "pattern": r"izotop[a-zçğıöşü]*|izoton[a-zçğıöşü]*|izobar[a-zçğıöşü]*|izoelektronik",
+        "id": 'kim_notron_ve_kutle_no',
+        "term": 'Nötron (n⁰) ve Kütle Numarası (A)',
+        "sayfa": 61,
+        "tanim": 'Atom çekirdeğinde protonların yanına yerleşerek onların birbirini itmesini engelleyen **yüksüz ($0$)** taneciktir; proton ve nötronların toplamı atomun ağırlığını yani **Kütle Numarasını ($A$)** verir.\n💡 Hile: $\\text{Kütle Numarası } (A) = \\text{Proton } (p) + \\text{Nötron } (n)$ (Aynı zamanda **Nükleon Sayısı** demektir).',
+        "pattern": '\\bnötron[a-zçğıöşü]*|\\bkütle numara[a-zçğıöşü]*|\\bnükleon[a-zçğıöşü]*',
     },
     {
-        "id": "kim_periyodik_ozellikler",
-        "term": "Periyodik Sistem, Gruplar ve Periyodik Özellikler",
-        "donemler": [1],
-        "sayfa_by_donem": {1: 74},
-        "tanim_by_donem": {
-            1: (
-                "Periyodik cetveldeki yatay satırlara **Periyot** (katman sayısı), dikey sütunlara **Grup** (son katmandaki elektron sayısı) denir: **1A Alkali Metaller**, **7A Halojenler**, **8A Soy Gazlar** (kararlıdır, bağ yapmaz, $\\text{He}$ son katmanında $2$ elektron olmasına rağmen $8\\text{A}$'dadır!).\n"
-                "💡 Sınav Şifresi: Soldan sağa gidildikçe **Atom Çapı küçülür** (Kardan adamın burnu!), **İyonlaşma Enerjisi** ve **Elektronegatiflik artar**."
-            ),
-        },
-        "pattern": r"iyonlaşma enerji[a-zçğıöşü]*|elektronegatifli[kğ][a-zçğıöşü]*|periyodik[a-zçğıöşü]*|alkali metal[a-zçğıöşü]*|halojen[a-zçğıöşü]*|soy gaz[a-zçğıöşü]*|atom yarıçap[a-zçğıöşü]*",
-    },
-
-    # ==========================================
-    # KİM 2: KİMYASAL TÜRLER ARASI ETKİLEŞİMLER (ATOMİK BAĞLAR)
-    # ==========================================
-    {
-        "id": "kim_lewis_oktet_dublet",
-        "term": "Lewis Nokta Yapısı, Oktet ve Dublet Kuralı",
-        "donemler": [1, 2],
-        "sayfa_by_donem": {1: 118, 2: 120},
-        "tanim_by_donem": {
-            1: (
-                "Atomun yalnızca **son katmanındaki (değerlik) elektronlarının** element sembolü etrafında noktalarla gösterilmesidir.\n"
-                "💡 Sınav Şifresi: Atomların soy gazlara benzemek için son katmanını **$2$'ye tamamlamasına Dublet** (Helyum gibi), **$8$'e tamamlamasına Oktet** kuralı denir."
-            ),
-        },
-        "pattern": r"lewis[a-zçğıöşü]*|oktet|dublet",
+        "id": 'kim_elektron_ve_iyon',
+        "term": 'Elektron (e⁻) ve İyon Yükü',
+        "sayfa": 62,
+        "tanim": 'Atom çekirdeğinin etrafındaki katmanlarda ışık hızına yakın dönen **eksi ($-$) yüklü** taneciktir; atomun kimyasal bağ yapmasını ve elektrik iletkenliğini elektron alışverişi belirler.\n💡 Hile: $\\text{Proton Sayısı } (Z) = \\text{Elektron Sayısı } (e^-) + \\text{İyon Yükü}$. Elektron **alan eksi ($-$) yüklenir (Anyon)**, elektron **veren artı ($+$) yüklenir (Katyon)**!',
+        "pattern": '\\belektron[a-zçğıöşü]*|\\bkatman elektron\\b|\\biyon yükü\\b|\\bkatyon\\b|\\banyon\\b',
     },
     {
-        "id": "kim_iyonik_ve_metalik_bag",
-        "term": "İyonik Bağ ve Metalik Bağ (Güçlü Etkileşimler)",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 128},
-        "tanim_by_donem": {
-            2: (
-                "**İyonik Bağ**, elektron veren **Metal** ile elektron alan **Ametal** arasında elektron **alışverişiyle** kurulan güçlü bağdır ($\\text{NaCl}$ yemek tuzu); **Metalik Bağ** ise saf metalleri bir arada tutan **elektron denizi** modelidir.\n"
-                "💡 Sınav Şifresi: İyonik katılar elektriği **iletmez**, suda çözündüğünde veya eritildiğinde **iletir**!"
-            ),
-        },
-        "pattern": r"iyonik bağ[a-zçğıöşü]*|metalik bağ[a-zçğıöşü]*|elektron denizi|güçlü etkileşim[a-zçğıöşü]*",
+        "id": 'kim_izotop_izoton_izobar',
+        "term": 'İzotop, İzoton, İzobar ve İzoelektronik Tanecikler',
+        "sayfa": 65,
+        "tanim": 'Son harflerinden şifrelenen atom kardeşlikleridir:\n• **İzotoP:** **P**roton sayısı aynı, nötronu farklı.\n• **İzotoN:** **N**ötron sayısı aynı, protonu farklı.\n• **İzobAr:** Kütle numarası (**A**) aynı; **İzoelektronik:** Elektron sayısı ve dizilimi aynı.\n💡 Hile: Son harfe bak $\\to$ İzoto**p** (**p**roton aynı), İzoto**n** (**n**ötron aynı)!',
+        "pattern": '\\bizotop[a-zçğıöşü]*|\\bizoton[a-zçğıöşü]*|\\bizobar[a-zçğıöşü]*|\\bizoelektronik\\b',
     },
     {
-        "id": "kim_kovalent_bag",
-        "term": "Kovalent Bağ (Polar ve Apolar)",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 134},
-        "tanim_by_donem": {
-            2: (
-                "İki **ametal** atomunun birbirinden elektron koparamayıp, elektronlarını **imece usulü ortaklaşa kullanmasıyla** kurulan güçlü kimyasal bağdır.\n"
-                "💡 Sınav Şifresi: **Aynı** cins ametaller çekişirse kutupsuz **Apolar Kovalent** ($\\text{H}_2, \\text{O}_2, \\text{N}_2$); **farklı** ametaller çekişirse kutuplu **Polar Kovalent** ($\\text{H}_2\\text{O}, \\text{HCl}, \\text{NH}_3$) bağ oluşur!"
-            ),
-        },
-        "pattern": r"kovalent bağ[a-zçğıöşü]*|\bpolar\b|\bapolar\b|kimyasal bağ[a-zçğıöşü]*",
+        "id": 'kim_periyodik_ozellikler',
+        "term": 'Periyodik Sistem, Gruplar ve Periyodik Özellikler',
+        "sayfa": 74,
+        "tanim": "Periyodik cetveldeki yatay satırlara **Periyot** (katman sayısı), dikey sütunlara **Grup** (son katmandaki elektron sayısı) denir: **1A Alkali Metaller**, **7A Halojenler**, **8A Soy Gazlar** (kararlıdır, bağ yapmaz, $\\text{He}$ son katmanında $2$ elektron olmasına rağmen $8\\text{A}$'dadır!).\n💡 Hile: Soldan sağa gidildikçe **Atom Çapı küçülür** (Kardan adamın burnu!), **İyonlaşma Enerjisi** ve **Elektronegatiflik artar**.",
+        "pattern": '\\biyonlaşma enerji[a-zçğıöşü]*|\\belektronegatifli[kğ][a-zçğıöşü]*|\\bperiyodik[a-zçğıöşü]*|\\balkali metal[a-zçğıöşü]*|\\bhalojen[a-zçğıöşü]*|\\bsoy gaz[a-zçğıöşü]*|\\batom yarıçap[a-zçğıöşü]*',
     },
     {
-        "id": "kim_hidrojen_ve_zayif_baglar",
-        "term": "Hidrojen Bağı ve Van der Waals (Zayıf Etkileşimler)",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 142},
-        "tanim_by_donem": {
-            2: (
-                "Moleküllerin kendi içindeki değil, **moleküller arasındaki** fiziksel çekim kuvvetleridir ($<40\\text{ kJ/mol}$); suyun oda sıcaklığında uçup gitmeyip sıvı kalmasını **Hidrojen Bağı** sağlar.\n"
-                "💡 Sınav Şifresi: **Hidrojen Bağı** yalnızca Hidrojenin **F, O, N (FON)** elementlerine doğrudan bağlı olduğu moleküllerde ($\\text{H}_2\\text{O}, \\text{NH}_3, \\text{HF}$) görülür ve kaynama noktasını zirveye çıkarır! Soy gazlarda ve apolar moleküllerde yalnız **London kuvveti** vardır."
-            ),
-        },
-        "pattern": r"zayıf etkileşim[a-zçğıöşü]*|hidrojen bağı|van der waals|london kuvvet[a-zçğıöşü]*|dipol-dipol|fiziksel değişim[a-zçğıöşü]*|kimyasal değişim[a-zçğıöşü]*",
-    },
-
-    # ==========================================
-    # KİM 2: MADDENİN HÂLLERİ (ATOMİK)
-    # ==========================================
-    {
-        "id": "kim_amorf_ve_kristal_katilar",
-        "term": "Amorf ve Kristal Katılar",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 162},
-        "tanim_by_donem": {
-            2: (
-                "Atomları gelişigüzel yığılmış, ısıtılınca sabit bir noktada erimeyip önce yumuşayan katılara **Amorf Katı**; belirli bir geometrik düzeni ve sabit erime noktası olanlara **Kristal Katı** denir.\n"
-                "💡 Sınav Şifresi: **Cam, plastik, lastik, tereyağı ve mum Amorf katıdır** (yumuşadıkları sıcaklığa *camsı geçiş sıcaklığı* denir); tuz, şeker, elmas, buz ve metaller ise **Kristal katıdır**!"
-            ),
-        },
-        "pattern": r"amorf[a-zçğıöşü]*|kristal katı[a-zçğıöşü]*|camsı geçiş|katıların genel",
+        "id": 'kim_lewis_oktet_dublet_d1',
+        "term": 'Lewis Nokta Yapısı, Oktet ve Dublet Kuralı',
+        "sayfa": 118,
+        "tanim": "Atomun yalnızca **son katmanındaki (değerlik) elektronlarının** element sembolü etrafında noktalarla gösterilmesidir.\n💡 Hile: Atomların soy gazlara benzemek için son katmanını **$2$'ye tamamlamasına Dublet** (Helyum gibi), **$8$'e tamamlamasına Oktet** kuralı denir.",
+        "pattern": '\\blewis[a-zçğıöşü]*|\\boktet\\b|\\bdublet\\b',
     },
     {
-        "id": "kim_viskozite_ve_buhar_basinci",
-        "term": "Viskozite, Buhar Basıncı ve Kaynama",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 170},
-        "tanim_by_donem": {
-            2: (
-                "**Viskozite** sıvının akmaya karşı gösterdiği dirençtir (buzdolabından çıkan balın zor akması yüksek viskozitedir); sıvının buhar basıncının açık hava basıncına eşitlendiği anda ise **kaynama** başlar.\n"
-                "💡 Sınav Şifresi: Sıcaklık artarsa bal akışkanlaşır yani **Viskozite azalır**, **Buhar Basıncı artar**! Dağların zirvesinde dış basınç düştüğü için su $100\\,^\\circ\\text{C}$'den **daha düşük sıcaklıkta** kaynar."
-            ),
-        },
-        "pattern": r"viskozite[a-zçğıöşü]*|buhar basıncı|kaynama nokta[a-zçğıöşü]*|bağıl nem",
+        "id": 'kim_lewis_oktet_dublet_d2',
+        "term": 'Lewis Nokta Yapısı, Oktet ve Dublet Kuralı',
+        "sayfa": 120,
+        "tanim": "Lewis Nokta Yapısı, Oktet ve Dublet Kuralı kavramı.\n💡 Hile: 'OKtet = 8 (O harfi yuvarlak, 8 gibi), DUBlet = 2 (DU = iki)'. Kural: H ve He → dublet (2'ye tamamla); diğer tüm atomlar → oktet (8'e tamamla). Lewis yapısında değerlik elektronu = grup numarasının birler basamağı (1A→1, 2A→2, 3A→3... 7A→7). Anahtar kelime dedektifliği: 'Soygaz' görürsen → zaten 8 (He için 2) elektronu var, bağ YAPMAZ. Ters köşe testi: Şıkta 'H oktet yapar' yazıyorsa → ANINDA ele, H sadece dublet yapar (2 elektron). 'Ortaklanmamış elektron çifti' = bağa katılmayan noktalar → Lewis yapısında bağ çizgisi olmayan noktaları say.",
+        "pattern": '\\blewis[a-zçğıöşü]*|\\boktet\\b|\\bdublet\\b',
     },
     {
-        "id": "kim_plazma_ve_su",
-        "term": "Plazma Hâli, Hal Değişimi ve Sert/Yumuşak Su",
-        "donemler": [2],
-        "sayfa_by_donem": {2: 184},
-        "tanim_by_donem": {
-            2: (
-                "**Plazma** yüksek sıcaklıkta iyonlaşmış gaz hâlidir (Güneş, yıldızlar, şimşek, neon/floresan lamba, mum alevi); içinde serbest elektronlar olduğu için elektriği harika iletir.\n"
-                "💡 Sınav Şifresi: İçinde bol $\\text{Ca}^{2+}$ ve $\\text{Mg}^{2+}$ iyonu bulunan kireçli suya **Sert Su** denir (sabunu köpürtmez, çaydanlıkta tortu bırakır)."
-            ),
-        },
-        "pattern": r"plazma[a-zçğıöşü]*|hâl değiştirme[a-zçğıöşü]*|süblimleşme|kırağılaşma|yoğuşma|sert su|yumuşak su|su kaynakları[a-zçğıöşü]*|sera etkisi",
-    },
-
-    # ==========================================
-    # KİM 3: KANUNLAR, MOL VE KARIŞIMLAR (ATOMİK)
-    # ==========================================
-    {
-        "id": "kim_temel_kanunlar",
-        "term": "Kimyanın Temel Kanunları (Kütlenin Korunumu, Sabit ve Katlı Oranlar)",
-        "donemler": [3],
-        "sayfa_by_donem": {3: 16},
-        "tanim_by_donem": {
-            3: (
-                "1) **Kütlenin Korunumu (Lavoisier):** Tepkimeye girenlerin toplam kütlesi çıkanlara tam eşittir.\n"
-                "2) **Sabit Oranlar (Proust):** Bileşikteki elementlerin kütle oranı değişmez.\n"
-                "3) **Katlı Oranlar (Dalton):** İki element birden fazla bileşik yapıyorsa ($\\text{CO}$ ve $\\text{CO}_2$) birinin sabit miktarına karşılık diğerinin katlı oranıdır.\n"
-                "💡 Sınav Şifresi: Katlı oran aranırken bileşiklerde **aynı iki tür element** olmalı ve **basit formülleri farklı** olmalıdır ($\\text{NO}_2$ ile $\\text{N}_2\\text{O}_4$'ün basit formülü aynı olduğu için katlı oran aranmaz!)."
-            ),
-        },
-        "pattern": r"kütlenin korunumu|sabit oranlar|katlı oranlar|lavoisier|proust",
+        "id": 'kim_iyonik_ve_metalik_bag',
+        "term": 'İyonik Bağ ve Metalik Bağ (Güçlü Etkileşimler)',
+        "sayfa": 128,
+        "tanim": '**İyonik Bağ**, elektron veren **Metal** ile elektron alan **Ametal** arasında elektron **alışverişiyle** kurulan güçlü bağdır ($\\text{NaCl}$ yemek tuzu); **Metalik Bağ** ise saf metalleri bir arada tutan **elektron denizi** modelidir.\n💡 Hile: İyonik katılar elektriği **iletmez**, suda çözündüğünde veya eritildiğinde **iletir**!',
+        "pattern": '\\biyonik bağ[a-zçğıöşü]*|\\bmetalik bağ[a-zçğıöşü]*|\\belektron denizi\\b|\\bgüçlü etkileşim[a-zçğıöşü]*',
     },
     {
-        "id": "kim_mol_ve_tepkime",
-        "term": "Mol Kavramı, Avogadro Sayısı ve Tepkime Türleri",
-        "donemler": [3],
-        "sayfa_by_donem": {3: 32},
-        "tanim_by_donem": {
-            3: (
-                "Nasıl ki '$1$ düzine = $12$ adet' demekse, kimyada da **$1\\text{ mol} = 6,02 \\times 10^{23}$ adet (Avogadro sayısı $N_A$)** tanecik demektir.\n"
-                "💡 Formül: $n = \\frac{m}{M_A} = \\frac{V}{22,4}$ (Normal koşullarda $1\\text{ mol}$ gaz **$22,4\\text{ Litre}$** hacim kaplar). $\\text{O}_2$ ile tepkimeye **Yanma**, küçüklerin birleşmesine **Sentez**, parçalanmaya **Analiz** denir."
-            ),
-        },
-        "pattern": r"\bmol[a-zçğıöşü]*|avogadro|molar kütle|yanma tepkime[a-zçğıöşü]*|sentez tepkime[a-zçğıöşü]*|analiz tepkime[a-zçğıöşü]*|çözünme-çökelme|artan madde|sınırlayıcı bileşen|yüzde verim",
+        "id": 'kim_kovalent_bag',
+        "term": 'Kovalent Bağ (Polar ve Apolar)',
+        "sayfa": 134,
+        "tanim": 'İki **ametal** atomunun birbirinden elektron koparamayıp, elektronlarını **imece usulü ortaklaşa kullanmasıyla** kurulan güçlü kimyasal bağdır.\n💡 Hile: **Aynı** cins ametaller çekişirse kutupsuz **Apolar Kovalent** ($\\text{H}_2, \\text{O}_2, \\text{N}_2$); **farklı** ametaller çekişirse kutuplu **Polar Kovalent** ($\\text{H}_2\\text{O}, \\text{HCl}, \\text{NH}_3$) bağ oluşur!',
+        "pattern": '\\bkovalent bağ[a-zçğıöşü]*|\\bpolar\\b|\\bapolar\\b|\\bkimyasal bağ[a-zçğıöşü]*',
     },
     {
-        "id": "kim_karisimlar_ve_ayirma",
-        "term": "Karışımlar (Çözelti, Emülsiyon, Süspansiyon, Kolloid) ve Ayırma",
-        "donemler": [3],
-        "sayfa_by_donem": {3: 82},
-        "tanim_by_donem": {
-            3: (
-                "Her yerinde aynı özelliği gösteren karışımlara **Homojen (Çözelti)** (tuzlu su, kolonya, hava, alaşımlar); dağılan fazı ayrılanlara **Heterojen** denir: **Süspansiyon** (Katı-Sıvı: Türk kahvesi, ayran), **Emülsiyon** (Sıvı-Sıvı: Zeytinyağı-su, süt), **Aerosol** (Sis, duman), **Kolloid** (Kan, boya).\n"
-                "💡 Formül: Kütlece $\\% = \\frac{m_{\\text{çözünen}}}{m_{\\text{çözelti}}} \\times 100$. Kaynama noktası farkıyla sıvı-sıvı çözeltileri (alkol-su, ham petrol) ayırma yöntemi **Ayrımsal Damıtma**'dır!"
-            ),
-        },
-        "pattern": r"homojen[a-zçğıöşü]*|heterojen[a-zçğıöşü]*|çözelti[a-zçğıöşü]*|süspansiyon|emülsiyon|aerosol|kolloid|kütlece yüzde|derişi[km][a-zçğıöşü]*|ayrımsal damıtma|basit damıtma|diyaliz|özkütle farkı|çözünürlü[kğ][a-zçğıöşü]*|koligatif",
-    },
-
-    # ==========================================
-    # KİM 4: ASİTLER, BAZLAR VE KİMYA HER YERDE (ATOMİK)
-    # ==========================================
-    {
-        "id": "kim_asit_baz_ph",
-        "term": "Asitler, Bazlar, pH Cetveli ve Nötralleşme",
-        "donemler": [4],
-        "sayfa_by_donem": {4: 138},
-        "tanim_by_donem": {
-            4: (
-                "Suya $\\text{H}^+$ iyonu veren, tadı ekşi olan maddeler **Asit** (limon, sirke); suya $\\text{OH}^-$ veren, tadı acı ve ele kayganlık hissi veren maddeler **Baz**'dır (sabun, çamaşır suyu, diş macunu).\n"
-                "💡 Sınav Şifresi: Turnusol kağıdını **Asit Kırmızıya**, **Baz Maviye** çevirir (**A**nne **K**ızartır, **B**aba **M**orartır)! $25\\,^\\circ\\text{C}$'de $\\text{pH} < 7$ **Asit**, $\\text{pH} = 7$ **Nötr**, $\\text{pH} > 7$ **Baz**'dır ($\\text{Asit} + \\text{Baz} \\to \\text{Tuz} + \\text{Su}$)."
-            ),
-        },
-        "pattern": r"\basit[a-zçğıöşü]*|\bbaz[a-zçğıöşü]*|\bph\b|indikatör[a-zçğıöşü]*|turnusol|nötralleşme|amfoter metal[a-zçğıöşü]*|soy metal[a-zçğıöşü]*|tuz[a-zçğıöşü]*",
+        "id": 'kim_hidrojen_ve_zayif_baglar',
+        "term": 'Hidrojen Bağı ve Van der Waals (Zayıf Etkileşimler)',
+        "sayfa": 142,
+        "tanim": 'Moleküllerin kendi içindeki değil, **moleküller arasındaki** fiziksel çekim kuvvetleridir ($<40\\text{ kJ/mol}$); suyun oda sıcaklığında uçup gitmeyip sıvı kalmasını **Hidrojen Bağı** sağlar.\n💡 Hile: **Hidrojen Bağı** yalnızca Hidrojenin **F, O, N (FON)** elementlerine doğrudan bağlı olduğu moleküllerde ($\\text{H}_2\\text{O}, \\text{NH}_3, \\text{HF}$) görülür ve kaynama noktasını zirveye çıkarır! Soy gazlarda ve apolar moleküllerde yalnız **London kuvveti** vardır.',
+        "pattern": '\\bzayıf etkileşim[a-zçğıöşü]*|\\bhidrojen bağı\\b|\\bvan der waals\\b|\\blondon kuvvet[a-zçğıöşü]*|\\bdipol-dipol\\b|\\bfiziksel değişim[a-zçğıöşü]*|\\bkimyasal değişim[a-zçğıöşü]*',
     },
     {
-        "id": "kim_temizlik_polimer_gida",
-        "term": "Sabun, Deterjan, Polimerler ve İlaç/Gıda Kimyası",
-        "donemler": [4],
-        "sayfa_by_donem": {4: 192},
-        "tanim_by_donem": {
-            4: (
-                "**Sabun** bitkisel/hayvansal yağlardan üretilen doğal temizleyicidir (sert suda köpürmez); **Deterjan** ise petrol türevlidir, sert suda bile köpürür ama çevreyi kirletir. Binlerce küçük **monomer** halkasının tren vagonu gibi birleşmesiyle oluşan dev moleküllere **Polimer** (teflon, kevlar, PVC) denir.\n"
-                "💡 Sınav Şifresi: Sabun ve deterjanın kirye yapışan **kuyruk kısmı Apolar (Hidrofob / suyu sevmeyen)**, suya tutunan **baş kısmı Polar (Hidrofil / suyu seven)** uçtur!"
-            ),
-        },
-        "pattern": r"sabun[a-zçğıöşü]*|deterjan[a-zçğıöşü]*|hidrofil|hidrofob|çamaşır suyu|kireç kaymağı|polimer[a-zçğıöşü]*|monomer|teflon|kevlar|pastörizasyon|uht\b|emülgatör|ilaç[a-zçğıöşü]*|merhem|draj[ea]",
+        "id": 'kim_amorf_ve_kristal_katilar',
+        "term": 'Amorf ve Kristal Katılar',
+        "sayfa": 162,
+        "tanim": 'Atomları gelişigüzel yığılmış, ısıtılınca sabit bir noktada erimeyip önce yumuşayan katılara **Amorf Katı**; belirli bir geometrik düzeni ve sabit erime noktası olanlara **Kristal Katı** denir.\n💡 Hile: **Cam, plastik, lastik, tereyağı ve mum Amorf katıdır** (yumuşadıkları sıcaklığa *camsı geçiş sıcaklığı* denir); tuz, şeker, elmas, buz ve metaller ise **Kristal katıdır**!',
+        "pattern": '\\bamorf[a-zçğıöşü]*|\\bkristal katı[a-zçğıöşü]*|\\bcamsı geçiş\\b|\\bkatıların genel\\b',
+    },
+    {
+        "id": 'kim_viskozite_ve_buhar_basinci',
+        "term": 'Viskozite, Buhar Basıncı ve Kaynama',
+        "sayfa": 170,
+        "tanim": "**Viskozite** sıvının akmaya karşı gösterdiği dirençtir (buzdolabından çıkan balın zor akması yüksek viskozitedir); sıvının buhar basıncının açık hava basıncına eşitlendiği anda ise **kaynama** başlar.\n💡 Hile: Sıcaklık artarsa bal akışkanlaşır yani **Viskozite azalır**, **Buhar Basıncı artar**! Dağların zirvesinde dış basınç düştüğü için su $100\\,^\\circ\\text{C}$'den **daha düşük sıcaklıkta** kaynar.",
+        "pattern": '\\bviskozite[a-zçğıöşü]*|\\bbuhar basıncı\\b|\\bkaynama nokta[a-zçğıöşü]*|\\bbağıl nem\\b',
+    },
+    {
+        "id": 'kim_plazma_ve_su',
+        "term": 'Plazma Hâli, Hal Değişimi ve Sert/Yumuşak Su',
+        "sayfa": 184,
+        "tanim": '**Plazma** yüksek sıcaklıkta iyonlaşmış gaz hâlidir (Güneş, yıldızlar, şimşek, neon/floresan lamba, mum alevi); içinde serbest elektronlar olduğu için elektriği harika iletir.\n💡 Hile: İçinde bol $\\text{Ca}^{2+}$ ve $\\text{Mg}^{2+}$ iyonu bulunan kireçli suya **Sert Su** denir (sabunu köpürtmez, çaydanlıkta tortu bırakır).',
+        "pattern": '\\bplazma[a-zçğıöşü]*|\\bhâl değiştirme[a-zçğıöşü]*|\\bsüblimleşme\\b|\\bkırağılaşma\\b|\\byoğuşma\\b|\\bsert su\\b|\\byumuşak su\\b|\\bsu kaynakları[a-zçğıöşü]*|\\bsera etkisi\\b',
+    },
+    {
+        "id": 'kim_temel_kanunlar',
+        "term": 'Kimyanın Temel Kanunları (Kütlenin Korunumu, Sabit ve Katlı Oranlar)',
+        "sayfa": 16,
+        "tanim": "1) **Kütlenin Korunumu (Lavoisier):** Tepkimeye girenlerin toplam kütlesi çıkanlara tam eşittir.\n2) **Sabit Oranlar (Proust):** Bileşikteki elementlerin kütle oranı değişmez.\n3) **Katlı Oranlar (Dalton):** İki element birden fazla bileşik yapıyorsa ($\\text{CO}$ ve $\\text{CO}_2$) birinin sabit miktarına karşılık diğerinin katlı oranıdır.\n💡 Hile: Katlı oran aranırken bileşiklerde **aynı iki tür element** olmalı ve **basit formülleri farklı** olmalıdır ($\\text{NO}_2$ ile $\\text{N}_2\\text{O}_4$'ün basit formülü aynı olduğu için katlı oran aranmaz!).",
+        "pattern": '\\bkütlenin korunumu\\b|\\bsabit oranlar\\b|\\bkatlı oranlar\\b|\\blavoisier\\b|\\bproust\\b',
+    },
+    {
+        "id": 'kim_mol_ve_tepkime',
+        "term": 'Mol Kavramı, Avogadro Sayısı ve Tepkime Türleri',
+        "sayfa": 32,
+        "tanim": "Nasıl ki '$1$ düzine = $12$ adet' demekse, kimyada da **$1\\text{ mol} = 6,02 \\times 10^{23}$ adet (Avogadro sayısı $N_A$)** tanecik demektir.\n💡 Hile: $n = \\frac{m}{M_A} = \\frac{V}{22,4}$ (Normal koşullarda $1\\text{ mol}$ gaz **$22,4\\text{ Litre}$** hacim kaplar). $\\text{O}_2$ ile tepkimeye **Yanma**, küçüklerin birleşmesine **Sentez**, parçalanmaya **Analiz** denir.",
+        "pattern": '\\bmol[a-zçğıöşü]*|\\bavogadro\\b|\\bmolar kütle\\b|\\byanma tepkime[a-zçğıöşü]*|\\bsentez tepkime[a-zçğıöşü]*|\\banaliz tepkime[a-zçğıöşü]*|\\bçözünme-çökelme\\b|\\bartan madde\\b|\\bsınırlayıcı bileşen\\b|\\byüzde verim\\b',
+    },
+    {
+        "id": 'kim_karisimlar_ve_ayirma',
+        "term": 'Karışımlar (Çözelti, Emülsiyon, Süspansiyon, Kolloid) ve Ayırma',
+        "sayfa": 82,
+        "tanim": "Her yerinde aynı özelliği gösteren karışımlara **Homojen (Çözelti)** (tuzlu su, kolonya, hava, alaşımlar); dağılan fazı ayrılanlara **Heterojen** denir: **Süspansiyon** (Katı-Sıvı: Türk kahvesi, ayran), **Emülsiyon** (Sıvı-Sıvı: Zeytinyağı-su, süt), **Aerosol** (Sis, duman), **Kolloid** (Kan, boya).\n💡 Hile: Kütlece $\\% = \\frac{m_{\\text{çözünen}}}{m_{\\text{çözelti}}} \\times 100$. Kaynama noktası farkıyla sıvı-sıvı çözeltileri (alkol-su, ham petrol) ayırma yöntemi **Ayrımsal Damıtma**'dır!",
+        "pattern": '\\bhomojen[a-zçğıöşü]*|\\bheterojen[a-zçğıöşü]*|\\bçözelti[a-zçğıöşü]*|\\bsüspansiyon\\b|\\bemülsiyon\\b|\\baerosol\\b|\\bkolloid\\b|\\bkütlece yüzde\\b|\\bderişi[km][a-zçğıöşü]*|\\bayrımsal damıtma\\b|\\bbasit damıtma\\b|\\bdiyaliz\\b|\\bözkütle farkı\\b|\\bçözünürlü[kğ][a-zçğıöşü]*|\\bkoligatif\\b',
+    },
+    {
+        "id": 'kim_asit_baz_ph',
+        "term": 'Asitler, Bazlar, pH Cetveli ve Nötralleşme',
+        "sayfa": 138,
+        "tanim": "Suya $\\text{H}^+$ iyonu veren, tadı ekşi olan maddeler **Asit** (limon, sirke); suya $\\text{OH}^-$ veren, tadı acı ve ele kayganlık hissi veren maddeler **Baz**'dır (sabun, çamaşır suyu, diş macunu).\n💡 Hile: Turnusol kağıdını **Asit Kırmızıya**, **Baz Maviye** çevirir (**A**nne **K**ızartır, **B**aba **M**orartır)! $25\\,^\\circ\\text{C}$'de $\\text{pH} < 7$ **Asit**, $\\text{pH} = 7$ **Nötr**, $\\text{pH} > 7$ **Baz**'dır ($\\text{Asit} + \\text{Baz} \\to \\text{Tuz} + \\text{Su}$).",
+        "pattern": '\\basit[a-zçğıöşü]*|\\bbaz[a-zçğıöşü]*|\\bph\\b|\\bindikatör[a-zçğıöşü]*|\\bturnusol\\b|\\bnötralleşme\\b|\\bamfoter metal[a-zçğıöşü]*|\\bsoy metal[a-zçğıöşü]*|\\btuz[a-zçğıöşü]*',
+    },
+    {
+        "id": 'kim_temizlik_polimer_gida',
+        "term": 'Sabun, Deterjan, Polimerler ve İlaç/Gıda Kimyası',
+        "sayfa": 192,
+        "tanim": '**Sabun** bitkisel/hayvansal yağlardan üretilen doğal temizleyicidir (sert suda köpürmez); **Deterjan** ise petrol türevlidir, sert suda bile köpürür ama çevreyi kirletir. Binlerce küçük **monomer** halkasının tren vagonu gibi birleşmesiyle oluşan dev moleküllere **Polimer** (teflon, kevlar, PVC) denir.\n💡 Hile: Sabun ve deterjanın kirye yapışan **kuyruk kısmı Apolar (Hidrofob / suyu sevmeyen)**, suya tutunan **baş kısmı Polar (Hidrofil / suyu seven)** uçtur!',
+        "pattern": '\\bsabun[a-zçğıöşü]*|\\bdeterjan[a-zçğıöşü]*|\\bhidrofil\\b|\\bhidrofob\\b|\\bçamaşır suyu\\b|\\bkireç kaymağı\\b|\\bpolimer[a-zçğıöşü]*|\\bmonomer\\b|\\bteflon\\b|\\bkevlar\\b|\\bpastörizasyon\\b|\\buht\\b|\\bemülgatör\\b|\\bilaç[a-zçğıöşü]*|\\bmerhem\\b|\\bdraj[ea]\\b',
+    },
+    {
+        "id": 'kim_guclu_ve_zayif_etkilesimler',
+        "term": 'Kimyasal Bağlar ve Zayıf Etkileşimler',
+        "sayfa": 45,
+        "tanim": 'Atomlar arası güçlü bağlar (İyonik, Kovalent, Metalik); moleküller arası zayıf etkileşimler ise Hidrojen bağı ve Van der Waals kuvvetleridir.\n💡 Hile: **F, O, N** atomlarına bağlı hidrojen başka bir F, O, N ile bağ kurarsa = **Hidrojen Bağı** (zayıfların en güçlüsü, kaynama noktasını fırlatır!). Apolar moleküller arasında sadece **London** kuvvetleri vardır.',
+        "pattern": '\\bhidrojen\\s+bağı[a-zçğıöşü]*\\b|\\biyon-dipol\\b|\\bdipol-dipol\\b|\\blondon\\s+kuvvetleri\\b|\\bHidrojen bağı\\b|\\bİyon-dipol etkileşimi\\b|\\bDipol-dipol etkileşimi\\b|\\bLondon kuvvetleri\\b',
+        "option_only_pattern": '^Hidrojen bağı$|^İyon-dipol etkileşimi$|^Dipol-dipol etkileşimi$|^London kuvvetleri$',
+    },
+    {
+        "id": 'kim_iyonik_ve_kovalent',
+        "term": 'İyonik ve Kovalent Bağ',
+        "sayfa": 40,
+        "tanim": 'Metal ile ametal arasında elektron alışverişiyle İyonik bağ; ametaller arasında elektron ortaklaşmasıyla Kovalent bağ oluşur.\n💡 Hile: Metal + Ametal = **İyonik** (Elektron transferi, katı halde iletmez, sıvı/çözeltide elektriği iletir). Ametal + Ametal = **Kovalent** (Elektron ortaklaşması).',
+        "pattern": '\\biyonik\\s+bağ[a-zçğıöşü]*\\b|\\bkovalent\\s+bağ[a-zçğıöşü]*\\b|\\bmetalik\\s+bağ[a-zçğıöşü]*\\b|\\bİyonik bağ\\b|\\bKovalent bağ\\b|\\bMetalik bağ\\b',
+        "option_only_pattern": '^İyonik bağ$|^Kovalent bağ$|^Metalik bağ$',
+    },
+    {
+        "id": 'kim_tepkime_turleri',
+        "term": 'Kimyasal Tepkime Türleri',
+        "sayfa": 78,
+        "tanim": 'O2 ile tepkime Yanma; maddelerin birleşmesi Sentez (A+B->AB); ayrışması Analiz (AB->A+B); asit-baz birleşimi Nötralleşmedir.\n💡 Hile: Girenlerde tek başına O2 varsa = **Yanma**. Tek büyük ürün çıkıyorsa = **Sentez**. Tek büyük madde parçalanıyorsa = **Analiz**. Dipte katı çöküyorsa = **Çözünme-Çökelme**.',
+        "pattern": '\\byanma\\s+tepkime[a-zçğıöşü]*\\b|\\bsentez\\s+tepkime[a-zçğıöşü]*\\b|\\banaliz\\s+tepkime[a-zçğıöşü]*\\b|\\bnötralleşme\\b|\\bYanma\\b|\\bSentez\\b|\\bAnaliz\\b|\\bNötralleşme\\b',
+        "option_only_pattern": '^Yanma$|^Sentez$|^Analiz$|^Nötralleşme$',
     },
 ]

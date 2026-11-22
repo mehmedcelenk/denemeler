@@ -1,0 +1,280 @@
+/* ========================================================= */
+/* 3D ROBOKUŞ — ALT BAR TÜNEME & SORU NUMARASINA UÇUŞ        */
+/* ========================================================= */
+
+.mascot-bird {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1450;
+  width: 62px;
+  height: 62px;
+  pointer-events: none;
+  perspective: 420px;
+  will-change: transform;
+}
+
+.mascot-bird[data-state="bubble"] {
+  z-index: 100030;
+}
+
+/* Profil ekranı ve baskı modunda gizlenir; ana sayfa ve soru ekranında uçar */
+body.profile-active .mascot-bird,
+.mascot-bird[hidden],
+.mascot-bird[data-print-hidden="true"] {
+  display: none !important;
+}
+
+@media print {
+  .mascot-bird { display: none !important; }
+}
+
+.mascot-bird-btn {
+  pointer-events: auto;
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 8px 14px rgba(2, 6, 23, 0.34));
+  transition: filter 0.22s ease;
+}
+
+.mascot-bird-btn:focus-visible {
+  outline: 2px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+.mascot-bird-stage {
+  display: block;
+  width: 60px;
+  height: 60px;
+  transform-style: preserve-3d;
+}
+
+.mascot-bird:not(.is-3d)[data-facing="left"] .mascot-bird-stage {
+  transform: scaleX(-1);
+}
+
+.mascot-bird-canvas {
+  display: block;
+  width: 104px;
+  height: 104px;
+  margin: -22px;
+  pointer-events: none;
+}
+
+/* Tavuk uçarken dökülen süzülen tüy parçacıkları */
+.mascot-bird-feather {
+  position: fixed;
+  z-index: 1445;
+  width: 11px;
+  height: 5px;
+  border-radius: 999px 999px 999px 2px;
+  background: linear-gradient(120deg, #ffffff 0%, #fef9c3 65%, #e2e8f0 100%);
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.22);
+  pointer-events: none;
+  animation: rbFeatherFall 1.1s ease-out forwards;
+}
+
+/* 3D Kuş Parçaları & Sakin Nefes */
+.rb-root {
+  transform-box: fill-box;
+  transform-origin: 50% 82%;
+  animation: rbIdlePerch 3.6s ease-in-out infinite;
+}
+
+.rb-head {
+  transform-box: fill-box;
+  transform-origin: 48% 72%;
+  animation: rbHeadScan 5.2s ease-in-out infinite;
+}
+
+.rb-wing-front {
+  transform-box: fill-box;
+  transform-origin: 78% 28%;
+}
+
+.rb-wing-back {
+  transform-box: fill-box;
+  transform-origin: 85% 75%;
+}
+
+.rb-talons {
+  transform-box: fill-box;
+  transform-origin: 50% 10%;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.rb-shadow {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.mc-svg-bird .mc-happy {
+  stroke: #34d399;
+  stroke-width: 2.5;
+}
+
+.mc-svg-bird .mc-wrong {
+  stroke: #fbbf24;
+  stroke-width: 2.4;
+}
+
+.mascot-bird[data-mood="correct"] .mc-eye { opacity: 0; }
+.mascot-bird[data-mood="correct"] .mc-happy { opacity: 1; }
+.mascot-bird[data-mood="wrong"] .mc-wrong { opacity: 1; }
+.mascot-bird[data-mood="wrong"] .mc-eye { transform: scaleY(0.7); }
+
+/* Uçuş Durumu: 3D Kanat Çırpma, Pençe Toplama, Gölge Küçülmesi */
+.mascot-bird[data-flying="true"] .mascot-bird-btn {
+  filter: drop-shadow(0 18px 20px rgba(2, 6, 23, 0.32));
+}
+
+.mascot-bird[data-flying="true"] .rb-root {
+  animation: rbFlightBody 0.24s ease-in-out infinite;
+}
+
+.mascot-bird[data-flying="true"] .rb-wing-front {
+  animation: rbWingFlapFront 0.19s ease-in-out infinite;
+}
+
+.mascot-bird[data-flying="true"] .rb-wing-back {
+  animation: rbWingFlapBack 0.19s ease-in-out infinite;
+}
+
+.mascot-bird[data-flying="true"] .rb-talons {
+  transform: translate(-4px, -6px) rotate(24deg) scale(0.85);
+}
+
+.mascot-bird[data-flying="true"] .rb-shadow {
+  opacity: 0.2;
+  transform: scale(0.45);
+}
+
+/* Konma (Landing) Etkisi */
+.mascot-bird[data-landing="true"] .rb-root {
+  animation: rbLandingSquash 0.28s cubic-bezier(0.22, 1.35, 0.36, 1);
+}
+
+/* Doğru / Yanlış / Karşılama 3D Tepkileri */
+.mascot-bird[data-mood="correct"] .rb-root {
+  animation: rbCorrectCheer 0.65s cubic-bezier(0.22, 1.3, 0.36, 1);
+}
+
+.mascot-bird[data-mood="correct"] .rb-wing-front {
+  animation: rbWingFlapFront 0.22s ease-in-out 2;
+}
+
+.mascot-bird[data-mood="correct"] .mascot-bird-btn {
+  filter: drop-shadow(0 0 14px rgba(52, 211, 153, 0.65));
+}
+
+.mascot-bird[data-mood="wrong"] .rb-root {
+  animation: rbWrongRuffle 0.45s ease;
+}
+
+.mascot-bird[data-mood="welcome"] .rb-root {
+  animation: rbLandingSquash 0.38s cubic-bezier(0.22, 1.3, 0.36, 1);
+}
+
+/* Canlı Tüneme Mikro-Hareketleri (tüy kabartma & meraklı kafa eğme) */
+.mascot-bird[data-quirk="ruffle"] .rb-wing-front {
+  animation: rbWingFlapFront 0.16s ease-in-out 2;
+}
+
+.mascot-bird[data-quirk="ruffle"] .rb-root {
+  animation: rbWrongRuffle 0.38s ease;
+}
+
+.mascot-bird[data-quirk="tilt"] .rb-head {
+  animation: rbCuriousTilt 0.8s ease-in-out;
+}
+
+/* Robokuş Konuşma Balonu */
+.mascot-bird-bubble {
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--paper-border);
+  background: var(--paper-bg);
+  color: var(--paper-text);
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.22);
+  pointer-events: none;
+}
+
+.mascot-bird-bubble[hidden] { display: none !important; }
+
+@keyframes rbIdlePerch {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(-1.2px) scaleY(1.015); }
+}
+
+@keyframes rbHeadScan {
+  0%, 42%, 100% { transform: rotate(0deg); }
+  50%, 66% { transform: rotate(-6deg); }
+  74%, 86% { transform: rotate(5deg); }
+}
+
+@keyframes rbFlightBody {
+  0%, 100% { transform: translateY(2px) rotate(-10deg); }
+  50% { transform: translateY(-6px) rotate(-3deg); }
+}
+
+@keyframes rbWingFlapFront {
+  0%, 100% { transform: rotate(22deg) scaleY(1); }
+  50% { transform: rotate(-72deg) scaleY(0.76); }
+}
+
+@keyframes rbWingFlapBack {
+  0%, 100% { transform: rotate(-22deg) scaleY(1); }
+  50% { transform: rotate(54deg) scaleY(0.76); }
+}
+
+@keyframes rbLandingSquash {
+  0% { transform: translateY(-5px) scale(0.95, 1.07); }
+  45% { transform: translateY(2px) scale(1.08, 0.92); }
+  100% { transform: translateY(0) scale(1, 1); }
+}
+
+@keyframes rbCorrectCheer {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  35% { transform: translateY(-9px) scale(1.08) rotate(-5deg); }
+  70% { transform: translateY(-3px) rotate(4deg); }
+}
+
+@keyframes rbWrongRuffle {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(-3px) rotate(-6deg); }
+  55% { transform: translateX(3px) rotate(6deg); }
+  80% { transform: translateX(-1.5px) rotate(-3deg); }
+}
+
+@keyframes rbCuriousTilt {
+  0%, 100% { transform: rotate(0deg); }
+  35%, 68% { transform: rotate(-16deg) translateY(-1px); }
+}
+
+@keyframes rbFeatherFall {
+  0% { opacity: 0.95; transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+  55% { opacity: 0.85; transform: translate3d(calc(var(--fx, 12px) * 0.6), 24px, 0) rotate(calc(var(--fr, 60deg) * 0.6)) scale(0.95); }
+  100% { opacity: 0; transform: translate3d(var(--fx, 12px), 52px, 0) rotate(var(--fr, 60deg)) scale(0.7); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rb-root, .rb-head, .rb-wing-front, .rb-wing-back { animation: none !important; }
+}

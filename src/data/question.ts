@@ -75,6 +75,11 @@ export function parseQuestions(value: unknown): Question[] {
       throw new Error(`${index + 1}. sorunun donem alanı geçersiz.`);
     }
     const id = question.id as number;
+    const options = question.secenekler as Record<string, unknown>;
+    const correct = options[question.dogru_cevap as string] as string;
+    if (!correct.trim() || (options.E !== undefined && typeof options.E !== 'string')) {
+      throw new Error(`${id}: seçenekler geçersiz.`);
+    }
     if (seen.has(id)) throw new Error(`Tekrarlanan soru kimliği: ${id}`);
     seen.add(id);
     for (const key of ['ana_konu', 'alt_konu', 'ipucu', 'soru_tr', 'soru_ar', 'soru_xray', 'yil', 'dogru_nedeni', 'sinav_kodu', 'sinav_adi']) {
@@ -84,6 +89,9 @@ export function parseQuestions(value: unknown): Question[] {
     }
     if (question.secenekler_xray !== undefined && !isRecord(question.secenekler_xray)) {
       throw new Error(`${id}: secenekler_xray bir nesne olmalı.`);
+    }
+    if (isRecord(question.secenekler_xray) && Object.values(question.secenekler_xray).some(value => typeof value !== 'string')) {
+      throw new Error(`${id}: secenekler_xray değerleri metin olmalı.`);
     }
 
     if (question.zorluk !== undefined && !['kek', 'orta', 'boss'].includes(question.zorluk as string)) {

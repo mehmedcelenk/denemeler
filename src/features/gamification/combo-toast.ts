@@ -49,6 +49,11 @@ export function showComboToast(event: ComboEvent): void {
   }
 
   toast.className = `combo-toast-container ${event.badgeClass}`;
+  if (typeof event.skyLayer === 'number') {
+    toast.dataset.skyLayer = String(event.skyLayer);
+  } else {
+    delete toast.dataset.skyLayer;
+  }
   toast.innerHTML = `
     <div class="combo-toast-inner">
       <div class="combo-toast-icon">${event.icon}</div>

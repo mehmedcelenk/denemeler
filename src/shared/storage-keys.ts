@@ -22,8 +22,14 @@ export const StorageKeys = {
   TTS_ENGINE: 'aol_tts_engine',
   ELIMINATED_CHOICES: 'aol_eliminated_choices',
   ELIMINATED_WRONG_CHOICES: 'aol_eliminated_wrong_choices',
-  AI_EXPLANATIONS: 'aol_ai_explanations',
   AUTH_SESSION: 'aol_auth_session',
+  RESPONSIBLE_COURSES: 'aol_responsible_courses_v1',
+  MASCOT_ID: 'aol_mascot_id_v1',
+  MASCOT_POS: 'aol_mascot_pos_v1',
+  STUDY_MODE: 'aol_study_mode_v1',
+  PROGRESS_PREFIX: 'aol_progress_v1:',
+  LEGACY_PROGRESS_OWNER: 'aol_legacy_progress_owner_v1',
+  LEGACY_PROGRESS_COMPLETE: 'aol_legacy_progress_complete_v1',
 } as const;
 
 type FixedStorageKey = typeof StorageKeys[keyof typeof StorageKeys];
@@ -31,3 +37,18 @@ export type ClassroomSyncStorageKey = `sync_${typeof StorageKeys.CLASSROOM_CHANN
 export type ClassroomPendingKey = `${typeof StorageKeys.CLASSROOM_PENDING_PREFIX}${string}`;
 export type StorageKey = FixedStorageKey | ClassroomSyncStorageKey | ClassroomPendingKey;
 
+
+export type ProgressOwner = 'legacy' | 'locked' | 'guest' | `account:${string}`;
+
+export const progressKeys: ReadonlySet<StorageKey> = new Set([
+  StorageKeys.USER_CHOICES, StorageKeys.ANSWER_LOCK_UNTIL,
+  StorageKeys.STARRED_QUESTIONS, StorageKeys.REMATCH_QUESTIONS,
+  StorageKeys.WATER_STREAK, StorageKeys.LAST_STREAK_DATE, StorageKeys.RESUME_STATE,
+  StorageKeys.ELIMINATED_CHOICES, StorageKeys.ELIMINATED_WRONG_CHOICES,
+  StorageKeys.RESPONSIBLE_COURSES, StorageKeys.MASCOT_ID,
+]);
+
+export function progressStorageKey(key: StorageKey, owner: ProgressOwner): string {
+  return owner === 'legacy' || !progressKeys.has(key)
+    ? key : `${StorageKeys.PROGRESS_PREFIX}${encodeURIComponent(owner)}:${key}`;
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Architect"
+  short_description: "Project-specific project architect"
+  default_prompt: "Use $project-architect for the requested work in this repository."

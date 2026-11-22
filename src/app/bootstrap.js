@@ -1,3 +1,4 @@
+import { initializeStudySession } from '../features/welcome/study-session.ts';
 import { state, store } from './state.ts';
 import { readString } from './storage.ts';
 import { updatePrayerCountdown } from '../features/prayer/prayer.js';
@@ -18,6 +19,8 @@ import { initBoard } from '../features/board/init.ts';
 import { initPrint } from '../features/print/init.ts';
 import { initSearch } from '../features/search/init.ts';
 import { initTde } from '../features/tde/init.ts';
+import { initLessons } from '../features/lessons/init.ts';
+import { initMascot } from '../features/mascot/init.ts';
 import { initGamification } from '../features/gamification/init.ts';
 import { loadStreak } from '../features/gamification/streak.ts';
 import { dismissResumeBanner, initResumeBanner, loadSessionSnapshot } from '../features/booklet/resume.ts';
@@ -28,6 +31,7 @@ import { closeSubjectDrawer, openSubjectDrawer } from '../features/subjects/draw
 import { setSubject } from '../features/subjects/selection.js';
 
 export async function startApp() {
+  initializeStudySession();
   initAnswers();
   initAppearance();
   initBooklet();
@@ -36,6 +40,8 @@ export async function startApp() {
   initPrint();
   initSearch();
   initTde();
+  initLessons();
+  initMascot();
   if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(() => {});
   }
