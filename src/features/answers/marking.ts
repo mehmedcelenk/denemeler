@@ -88,7 +88,7 @@ function applyFinalChoice(qid: number, choice: Choice, sourceEl?: HTMLElement | 
       scheduleCloudSync();
     }
     if (q) {
-      notifyStateChange('answer:marked', { qid, choice, isCorrect, isReview: true });
+      notifyStateChange('answer:marked', { qid, choice, isCorrect, isReview: true, sourceEl });
     }
     updateQuestionMarkUI(qid, choice, sourceEl);
     return;
@@ -98,7 +98,7 @@ function applyFinalChoice(qid: number, choice: Choice, sourceEl?: HTMLElement | 
   scheduleCloudSync();
 
   if (q) {
-    notifyStateChange('answer:marked', { qid, choice, isCorrect });
+    notifyStateChange('answer:marked', { qid, choice, isCorrect, sourceEl });
   }
 
   updateQuestionMarkUI(qid, choice, sourceEl);
@@ -162,6 +162,7 @@ export function clearAllMarks(): void {
   }
 
   store.clearAllUserMarkedChoices();
+  notifyStateChange('booklet:refresh-hooks');
   scheduleCloudSync();
 
   if (hasDom) {

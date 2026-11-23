@@ -49,6 +49,16 @@ async function openTdeBooklet(page) {
   await expect(page.locator('.booklet-question').first()).toBeVisible();
 }
 
+async function answer(card, correct = true) {
+  const right = await card.getAttribute('data-correct');
+  const row = correct
+    ? card.locator(`[data-action="select-optical-choice"][data-letter="${right}"]`)
+    : card.locator(`[data-action="select-optical-choice"]:not([data-letter="${right}"])`).first();
+  await row.click();
+  await card.page().waitForTimeout(350);
+  await row.click();
+}
+
 test('mobil görünümde Hoca Anlatımı soru altında sade inline açılır, metin içi kavram balonu çalışır', async ({ page }) => {
   const errors = [];
   page.on('pageerror', err => errors.push(err.message));
@@ -80,7 +90,11 @@ test('mobil görünümde Hoca Anlatımı soru altında sade inline açılır, me
   await targetCard.locator('[data-action="toggle-question-features"]').click();
 
   const lessonBtn = targetCard.locator('[data-action="open-question-lesson"]');
+  await expect(lessonBtn).toHaveCount(0);
+  await answer(targetCard);
   await expect(lessonBtn).toBeVisible();
+  await expect(lessonBtn).toContainText('İHÖ');
+  await expect(targetCard.locator('[data-role="lesson-inline-panel"]')).toHaveCount(0);
   await expect(lessonBtn).toHaveClass(/is-ready/);
   await lessonBtn.click();
 
@@ -119,6 +133,8 @@ test('mobil görünümde Hoca Anlatımı soru altında sade inline açılır, me
 
   // Anlatımı henüz olmayan ikinci soruda zarif inline boş durum açılmalı
   await secondCard.locator('[data-action="toggle-question-features"]').click();
+  await page.waitForTimeout(1250);
+  await answer(secondCard);
   await secondCard.locator('[data-action="open-question-lesson"]').click();
   const emptyPanel = secondCard.locator('[data-role="lesson-inline-panel"]');
   await expect(emptyPanel).toBeVisible();
@@ -138,6 +154,7 @@ test('gerçek MAT ve TDE EVREN pilot anlatımları masaüstü ve mobilde soru al
 
   const firstTdeCard = page.locator('.booklet-question:not(.is-passive-question)').first();
   await firstTdeCard.locator('[data-action="toggle-question-features"]').click();
+  await answer(firstTdeCard);
   const tdeLessonBtn = firstTdeCard.locator('[data-action="open-question-lesson"]');
   await expect(tdeLessonBtn).toHaveClass(/is-ready/, { timeout: 10000 });
   await tdeLessonBtn.click();
@@ -161,6 +178,8 @@ test('gerçek MAT ve TDE EVREN pilot anlatımları masaüstü ve mobilde soru al
   const firstMatCard = page.locator('.booklet-question[data-qid="1046"]');
   await expect(firstMatCard).toBeVisible({ timeout: 10000 });
   await firstMatCard.locator('[data-action="toggle-question-features"]').click();
+  await page.waitForTimeout(1250);
+  await answer(firstMatCard);
   const matLessonBtn = firstMatCard.locator('[data-action="open-question-lesson"]');
   await expect(matLessonBtn).toHaveClass(/is-ready/, { timeout: 10000 });
   await matLessonBtn.click();
@@ -181,4 +200,38 @@ test('gerçek MAT ve TDE EVREN pilot anlatımları masaüstü ve mobilde soru al
   await matPanel.locator('[data-lesson-close]').click();
   await expect(matPanel).toHaveCount(0);
   expect(errors).toEqual([]);
+});
+
+test('İHÖ yanlış cevapta açılır, yenilemede kapalı kalır ve cevaplar temizlenince gizlenir', async ({ page }) => {
+  await openTdeBooklet(page);
+  const card = page.locator('.booklet-question:not(.is-passive-question)').first();
+  const qid = await card.getAttribute('data-qid');
+  await card.locator('[data-action="toggle-question-features"]').click();
+  const button = card.locator('[data-action="open-question-lesson"]');
+  await expect(button).toHaveCount(0);
+  const correct = await card.getAttribute('data-correct');
+  const wrong = card.locator(`[data-action="select-optical-choice"]:not([data-letter="${correct}"])`).first();
+  await wrong.click();
+  await expect(button).toHaveCount(0);
+  await page.waitForTimeout(350);
+  await wrong.click();
+  await expect(button).toBeVisible();
+  await expect(card.locator('[data-role="lesson-inline-panel"]')).toBeVisible();
+  await page.reload();
+  await page.locator('#btnBottomQuestions').click();
+  const restored = page.locator(`.booklet-question[data-qid="${qid}"]`);
+  await restored.locator('[data-action="toggle-question-features"]').click();
+  await expect(restored.locator('[data-action="open-question-lesson"]')).toBeVisible();
+  await expect(restored.locator('[data-role="lesson-inline-panel"]')).toHaveCount(0);
+  await restored.locator('[data-action="open-question-lesson"]').click();
+  await expect(restored.locator('[data-role="lesson-inline-panel"]')).toBeVisible();
+  await page.evaluate(() => {
+    const trigger = document.createElement('button');
+    trigger.dataset.action = 'clear-all-marks';
+    document.body.append(trigger);
+    trigger.click();
+    trigger.remove();
+  });
+  await expect(restored.locator('[data-action="open-question-lesson"]')).toHaveCount(0);
+  await expect(restored.locator('[data-role="lesson-inline-panel"]')).toHaveCount(0);
 });

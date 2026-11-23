@@ -75,11 +75,11 @@ test('giriş yapmış kullanıcı profilde maskot seçer, soru ekranında üst y
   await expect(page.locator('.ps-mascot-card[data-mascot="owl"]')).toHaveAttribute('aria-pressed', 'true');
   await expect.poll(() => mascotPatches.at(-1)).toBe('owl');
 
-  // Soru ekranında Robokuş görünür ve soru numarasına konar
+  // Mobil soru ekranında Robokuş alt çubuğa konar
   await page.locator('#btnCloseProfileScreen').click();
   await page.locator('[data-action="bottom-nav-questions"]').click();
   await expect(bird).toBeVisible();
-  await expect(bird).toHaveAttribute('data-state', 'question');
+  await expect(bird).toHaveAttribute('data-state', 'bar');
 
   const firstQuestion = page.locator('.booklet-question').first();
   await expect(firstQuestion).toBeVisible();
@@ -119,4 +119,41 @@ test('giriş yapmış kullanıcı profilde maskot seçer, soru ekranında üst y
   await page.locator('.ps-mascot-card[data-mascot="none"]').click();
   await expect(bird).toBeHidden();
   await expect.poll(() => mascotPatches.at(-1)).toBe('none');
+});
+
+test('mobil dokunarak kaydırmada maskot alt çubukta sabit kalır', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+  await setupSignedInRoutes(context, 'bird');
+  const page = await context.newPage();
+  await page.goto('/');
+  await page.fill('#authEmailInput', 'ali@example.com');
+  await page.fill('#authPasswordInput', 'secret123');
+  await page.locator('#btnAuthSubmit').click();
+  await page.locator('[data-action="bottom-nav-questions"]').click();
+  const bird = page.locator('#mascotBird');
+  await expect(bird).toHaveAttribute('data-state', 'bar');
+  await expect(bird).not.toHaveAttribute('data-flying', 'true', { timeout: 10000 });
+  const before = await bird.boundingBox();
+  const cdp = await context.newCDPSession(page);
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 200, y: 700 }] });
+  for (const y of [650, 550, 450, 350, 250]) {
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 200, y }] });
+  }
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(100);
+  await page.waitForTimeout(500);
+  const after = await bird.boundingBox();
+  expect(Math.abs(after.y - before.y)).toBeLessThan(2);
+  await expect(bird).not.toHaveAttribute('data-flying', 'true');
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 200, y: 200 }] });
+  for (const y of [250, 350, 450, 550, 700]) {
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 200, y }] });
+  }
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(400);
+  await page.waitForTimeout(500);
+  const returned = await bird.boundingBox();
+  expect(Math.abs(returned.y - before.y)).toBeLessThan(2);
+  await expect(bird).not.toHaveAttribute('data-flying', 'true');
+  await context.close();
 });

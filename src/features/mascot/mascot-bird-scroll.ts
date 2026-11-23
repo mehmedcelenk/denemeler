@@ -3,11 +3,13 @@ import {
   detectBirdScreen,
   findActiveConceptBubble,
   getBubblePerch,
+  getBottomBarPerch,
   getQnumPerch,
   getScrollArrivalEntry,
   getWelcomePerch,
   isQuestionSolved,
   resolveScreenTarget,
+  useMobileBirdPerch,
   type BirdPerchState,
   type WelcomePerchKind,
 } from './mascot-bird-perch.ts';
@@ -65,6 +67,19 @@ export function createBirdScrollTracker(host: BirdScrollHost): BirdScrollTracker
     if (!host.isActive() || !host.getRootEl()) return;
     const screen = detectBirdScreen();
     if (screen === 'profile') return;
+
+    if (useMobileBirdPerch()) {
+      host.setPerchedQnum(null);
+      host.setPerchedBubble(null);
+      if (isScrolling) host.cancelFlight();
+      if (!host.isFlying()) {
+        const pos = getBottomBarPerch(host.getBarSpotRatio(), host.getSpecies());
+        const root = host.getRootEl();
+        if (root) root.dataset.state = screen === 'welcome' ? 'welcome' : 'bar';
+        host.applyTransform(pos.x, pos.y);
+      }
+      return;
+    }
 
     const bubble = findActiveConceptBubble();
     if (bubble) {
@@ -156,6 +171,7 @@ export function createBirdScrollTracker(host: BirdScrollHost): BirdScrollTracker
     scrollSettleTimer = null;
     isScrolling = false;
     if (!host.isActive() || !host.getRootEl() || detectBirdScreen() !== 'questions') return;
+    if (useMobileBirdPerch()) { syncCurrentPerch(); return; }
     const target = resolveScreenTarget('questions', host.getWelcomeSpotRatio(), host.getBarSpotRatio(), host.getSpecies());
     if (target.stateName === 'bubble') return;
 

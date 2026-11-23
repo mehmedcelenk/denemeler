@@ -8,6 +8,10 @@ export type BirdPerchState = 'welcome' | 'bar' | 'question' | 'bubble';
 export type ScreenKind = 'welcome' | 'questions' | 'profile';
 export type WelcomePerchKind = 'rematch' | 'title' | 'bar';
 
+export function useMobileBirdPerch(): boolean {
+  return window.matchMedia('(max-width: 640px)').matches;
+}
+
 export function clamp(v: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, v));
 }
@@ -182,6 +186,9 @@ export function resolveScreenTarget(
   barRatio = 0.82,
   species: BirdMascotId = 'bird',
 ): { x: number; y: number; stateName: BirdPerchState; qnumEl: HTMLElement | null; welcomeKind?: WelcomePerchKind } {
+  if (screen !== 'profile' && useMobileBirdPerch()) {
+    return { ...getBottomBarPerch(barRatio, species), stateName: screen === 'welcome' ? 'welcome' : 'bar', qnumEl: null, welcomeKind: 'bar' };
+  }
   const bubble = findActiveConceptBubble();
   if (bubble) {
     const bp = getBubblePerch(bubble, spotRatio, species);

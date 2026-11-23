@@ -13,6 +13,7 @@ import { registerCardHook, type CardHook } from '../booklet/card-hooks.ts';
 import {
   bindLessonPanelListeners,
   closeLessonPanel,
+  closeAllLessonPanelsForQuestion,
   hideLessonConceptBubble,
   isLessonPanelOpen,
   showLessonContent,
@@ -65,7 +66,7 @@ export async function openQuestionLesson(
     event.preventDefault();
   }
   const qid = Number(qidInput);
-  if (Number.isNaN(qid) || qid <= 0) return;
+  if (Number.isNaN(qid) || qid <= 0 || !state.userMarkedChoices[qid]) return;
 
   if (isLessonPanelOpen(qid, sourceEl)) {
     closeLessonPanel(qid, sourceEl);
@@ -87,7 +88,7 @@ export async function openQuestionLesson(
   if (subject && !isSubjectLessonsLoaded(subject)) {
     const loaded = await loadSubjectLessons(subject);
     if (loaded.length > 0) notifyStateChange('booklet:refresh-hooks');
-    if (openRequestSeqByQid.get(qid) !== requestId || !isLessonPanelOpen(qid, sourceEl)) return;
+    if (!state.userMarkedChoices[qid] || openRequestSeqByQid.get(qid) !== requestId || !isLessonPanelOpen(qid, sourceEl)) return;
   }
 
   let lesson = getCachedLesson(qid);
@@ -98,7 +99,7 @@ export async function openQuestionLesson(
       lesson = fromCloud;
       notifyStateChange('booklet:refresh-hooks');
     }
-    if (openRequestSeqByQid.get(qid) !== requestId || !isLessonPanelOpen(qid, sourceEl)) return;
+    if (!state.userMarkedChoices[qid] || openRequestSeqByQid.get(qid) !== requestId || !isLessonPanelOpen(qid, sourceEl)) return;
   }
 
   if (lesson) {
@@ -110,7 +111,9 @@ export async function openQuestionLesson(
 
 const lessonCardHook: CardHook = {
   toolbar(q) {
-    return renderLessonToolbarButton(q, hasCachedLesson(q.id), isLessonPanelOpen(q.id));
+    return state.userMarkedChoices[q.id]
+      ? renderLessonToolbarButton(q, hasCachedLesson(q.id), isLessonPanelOpen(q.id))
+      : '';
   },
   below(q) {
     return renderLessonInlineHost(q);
@@ -129,6 +132,22 @@ export function initLessons(): void {
     },
   });
 
+  onStateChange('answer:marked', (payload) => {
+    if (!payload || typeof payload !== 'object' || !('qid' in payload)
+      || typeof payload.qid !== 'number' || !('isCorrect' in payload)) return;
+    notifyStateChange('booklet:refresh-hooks');
+    if (payload.isCorrect === false) {
+      const source = typeof Element !== 'undefined' && 'sourceEl' in payload && payload.sourceEl instanceof Element ? payload.sourceEl : null;
+      if (!isLessonPanelOpen(payload.qid, source)) void openQuestionLesson(payload.qid, undefined, source);
+    }
+  });
+  onStateChange('booklet:refresh-hooks', () => {
+    if (typeof document === 'undefined') return;
+    document.querySelectorAll<HTMLElement>('.booklet-question[data-qid]').forEach(card => {
+      const qid = Number(card.dataset.qid);
+      if (!state.userMarkedChoices[qid]) closeAllLessonPanelsForQuestion(qid);
+    });
+  });
   onStateChange('booklet:rendered', () => {
     hideLessonConceptBubble();
     preloadLessonsForSubjects(collectVisibleSubjects());

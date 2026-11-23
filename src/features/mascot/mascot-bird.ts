@@ -6,6 +6,7 @@ import {
   detectBirdScreen,
   getQnumPerch,
   resolveScreenTarget,
+  useMobileBirdPerch,
   type BirdPerchState,
   type ScreenKind,
   type WelcomePerchKind,
@@ -160,6 +161,7 @@ function handleBodyClassChange(): void {
 
 function handleDocumentPointerDown(event: PointerEvent): void {
   if (!active || !rootEl || detectBirdScreen() !== 'questions') return;
+  if (useMobileBirdPerch()) return;
   const el = event.target instanceof Element ? event.target : null;
   if (!el || el.closest('.vocab-word, .sound-word, .lesson-concept-word, .vocab-bubble, .lesson-concept-bubble, [data-role="lesson-inline-panel"], [data-action*="lesson"]')) return;
   const qnum = el.closest<HTMLElement>('.booklet-question')?.querySelector<HTMLElement>('[data-role="qnum"]') ?? null;

@@ -7,7 +7,7 @@ const svgTeacherIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="no
 
 const ACTIVE_LEARNING_TRICK_TEXT = 'Okuyarak öğrenmek okuduğunun %5’i kadarını hatırlamanı sağlar, aktif öğrenme ise %70’e kadar. Şimdi sana aktif öğrenme yöntemlerinden küçük bir hile önereceğim; bunu uygularsan daha az çalışarak daha çok yol katetmiş olacaksın inşallah: Lütfen bana bu sorunun bir kopyasını — biraz daha kolay olabilir — kendi sınav sorun olarak hazırla. Soruyu hazırlarken zorlanabilirsin; işte bu, ağırlık kaldırırken yaşadığın zorlanma gibidir. Kaçma ve ağırlığı basmaya devam et, kazanan sen olacaksın.';
 
-/** Soru kartının özellik çubuğundaki "Hoca" butonunu üretir. */
+/** Soru kartının özellik çubuğundaki "İHÖ" butonunu üretir. */
 export function renderLessonToolbarButton(q: Question, isReady: boolean, isOpen = false): string {
   if (q.sekilli) return '';
   const readyClass = isReady ? ' is-ready' : '';
@@ -16,7 +16,7 @@ export function renderLessonToolbarButton(q: Question, isReady: boolean, isOpen 
     ? 'Hocadan Öğren — Konu Anlatımı Hazır'
     : 'Hocadan Öğren — Konu Anlatımını Aç';
   const dotHtml = isReady ? '<span class="lesson-ready-dot" aria-hidden="true"></span>' : '';
-  return `<button type="button" class="btn-companion-icon btn-lesson-guide${readyClass}${openClass}" data-action="open-question-lesson" data-qid="${q.id}" data-lesson-ready="${isReady ? 'true' : 'false'}" aria-expanded="${isOpen ? 'true' : 'false'}" title="${title}" aria-label="${title}">${svgTeacherIcon}<span class="lesson-btn-label">Hoca</span>${dotHtml}</button>`;
+  return `<button type="button" class="btn-companion-icon btn-lesson-guide${readyClass}${openClass}" data-action="open-question-lesson" data-qid="${q.id}" data-lesson-ready="${isReady ? 'true' : 'false'}" aria-expanded="${isOpen ? 'true' : 'false'}" title="${title}" aria-label="${title}">${svgTeacherIcon}<span class="lesson-btn-label">İHÖ</span>${dotHtml}</button>`;
 }
 
 /** Soru kartının hemen altında açılacak inline anlatım yuvası (tekil ID kullanmaz). */
