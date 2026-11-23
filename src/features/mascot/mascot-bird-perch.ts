@@ -186,9 +186,6 @@ export function resolveScreenTarget(
   barRatio = 0.82,
   species: BirdMascotId = 'bird',
 ): { x: number; y: number; stateName: BirdPerchState; qnumEl: HTMLElement | null; welcomeKind?: WelcomePerchKind } {
-  if (screen !== 'profile' && useMobileBirdPerch()) {
-    return { ...getBottomBarPerch(barRatio, species), stateName: screen === 'welcome' ? 'welcome' : 'bar', qnumEl: null, welcomeKind: 'bar' };
-  }
   const bubble = findActiveConceptBubble();
   if (bubble) {
     const bp = getBubblePerch(bubble, spotRatio, species);

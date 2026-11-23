@@ -17,6 +17,8 @@
   z-index: 100030;
 }
 
+.mascot-bird[data-scroll-hidden="true"] { visibility: hidden; }
+
 /* Profil ekranı ve baskı modunda gizlenir; ana sayfa ve soru ekranında uçar */
 body.profile-active .mascot-bird,
 .mascot-bird[hidden],

@@ -242,8 +242,9 @@ test('başka sekmede hesap değişimi bekleyen cevap zamanlayıcısını iptal e
   await other.goto('/');
   await expect(other.locator('#authUserNameDisplay')).toHaveText('student');
   await startStudy(page);
-  await page.clock.install();
-  await page.clock.pauseAt(new Date());
+  const clockStart = Date.now();
+  await page.clock.install({ time: clockStart });
+  await page.clock.pauseAt(clockStart + 10000);
   const option = page.locator('.optical-choice-row').first();
   const qid = await option.getAttribute('data-qid');
   const choice = await option.getAttribute('data-letter');

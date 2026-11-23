@@ -3,6 +3,7 @@ import { escapeHtml } from '../../shared/escape.ts';
 import { formatStars, getSkyRank, renderSkyIconSvg, renderWhiteStarSvg } from '../../shared/sky-rank.ts';
 import { state } from '../../app/state.ts';
 import { MASCOT_OPTIONS, type MascotId } from '../../shared/mascot-types.ts';
+import { MASCOT_ENABLED } from '../../shared/mascot-config.ts';
 import { renderMascotOptionSvg } from '../../shared/mascot-svgs.ts';
 import { extractCourseTerm } from '../../shared/study-metrics.ts';
 import type { AppState } from '../../app/state-types.ts';
@@ -109,6 +110,7 @@ function renderIdentitySection(isEditMode: boolean): string {
 }
 
 function renderMascotSection(activeMascot: MascotId): string {
+  if (!MASCOT_ENABLED) return '';
   const session = getActiveSession();
   if (isGuest() || !session) return '';
   const itemsHtml = MASCOT_OPTIONS.map(option => {

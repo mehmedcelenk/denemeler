@@ -55,6 +55,8 @@ Bu proje Vite, ES modülleri ve kademeli TypeScript kullanır. React yoktur. Mev
 
 ## Çalışma akışı
 
+Maskot MVP'de `src/shared/mascot-config.ts` içindeki `MASCOT_ENABLED` ile devre dışıdır. Bu anahtar hem başlatmayı hem profil seçicisini yönetir; kayıtlı kullanıcı tercihleri korunur.
+
 `index.html → src/main.js → olay bağlantıları → startApp()`.
 Başlangıçta kayıtlı tercihler okunur, ilk dersin JSON'u yüklenip doğrulanır ve kitapçık çizilir. `src/data/questions.js` yalnızca doğrulanmış soruları döndürür; çağıran uygulama/özellik modülü bunları `store.appendQuestions` ile state'e ekler. Diğer ders verileri ihtiyaç oldukça yüklenir. Tekrarlanan eşzamanlı yüklemeler aynı promise'i kullanır.
 

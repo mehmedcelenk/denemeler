@@ -21,6 +21,7 @@ import { initSearch } from '../features/search/init.ts';
 import { initTde } from '../features/tde/init.ts';
 import { initLessons } from '../features/lessons/init.ts';
 import { initMascot } from '../features/mascot/init.ts';
+import { MASCOT_ENABLED } from '../shared/mascot-config.ts';
 import { initGamification } from '../features/gamification/init.ts';
 import { loadStreak } from '../features/gamification/streak.ts';
 import { dismissResumeBanner, initResumeBanner, loadSessionSnapshot } from '../features/booklet/resume.ts';
@@ -41,7 +42,7 @@ export async function startApp() {
   initSearch();
   initTde();
   initLessons();
-  initMascot();
+  if (MASCOT_ENABLED) initMascot();
   if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(() => {});
   }

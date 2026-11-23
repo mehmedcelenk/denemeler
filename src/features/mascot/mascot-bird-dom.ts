@@ -105,6 +105,7 @@ export function createBirdExpression(
 
 export interface BirdObserverHandlers {
   onPointerDown: (event: PointerEvent) => void;
+  onClick: (event: MouseEvent) => void;
   onScrollOrResize: () => void;
   onBodyClassChange: () => void;
   onBubbleChange: () => void;
@@ -117,6 +118,7 @@ function isConceptBubbleNode(node: Node): boolean {
 
 export function bindBirdListeners(handlers: BirdObserverHandlers): () => void {
   document.addEventListener('pointerdown', handlers.onPointerDown, { capture: true, passive: true });
+  document.addEventListener('click', handlers.onClick, { capture: true, passive: true });
   window.addEventListener('scroll', handlers.onScrollOrResize, { capture: true, passive: true });
   window.addEventListener('resize', handlers.onScrollOrResize, { passive: true });
   let bodyObs: MutationObserver | null = null;
@@ -144,6 +146,7 @@ export function bindBirdListeners(handlers: BirdObserverHandlers): () => void {
   }
   return () => {
     document.removeEventListener('pointerdown', handlers.onPointerDown, { capture: true });
+    document.removeEventListener('click', handlers.onClick, { capture: true });
     window.removeEventListener('scroll', handlers.onScrollOrResize, { capture: true });
     window.removeEventListener('resize', handlers.onScrollOrResize);
     bodyObs?.disconnect();

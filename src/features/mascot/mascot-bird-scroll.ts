@@ -3,7 +3,6 @@ import {
   detectBirdScreen,
   findActiveConceptBubble,
   getBubblePerch,
-  getBottomBarPerch,
   getQnumPerch,
   getScrollArrivalEntry,
   getWelcomePerch,
@@ -68,18 +67,7 @@ export function createBirdScrollTracker(host: BirdScrollHost): BirdScrollTracker
     const screen = detectBirdScreen();
     if (screen === 'profile') return;
 
-    if (useMobileBirdPerch()) {
-      host.setPerchedQnum(null);
-      host.setPerchedBubble(null);
-      if (isScrolling) host.cancelFlight();
-      if (!host.isFlying()) {
-        const pos = getBottomBarPerch(host.getBarSpotRatio(), host.getSpecies());
-        const root = host.getRootEl();
-        if (root) root.dataset.state = screen === 'welcome' ? 'welcome' : 'bar';
-        host.applyTransform(pos.x, pos.y);
-      }
-      return;
-    }
+    if (useMobileBirdPerch() && isScrolling) return;
 
     const bubble = findActiveConceptBubble();
     if (bubble) {
@@ -169,9 +157,24 @@ export function createBirdScrollTracker(host: BirdScrollHost): BirdScrollTracker
 
   function settleScrollPerch(): void {
     scrollSettleTimer = null;
+    const wasScrolling = isScrolling;
     isScrolling = false;
-    if (!host.isActive() || !host.getRootEl() || detectBirdScreen() !== 'questions') return;
-    if (useMobileBirdPerch()) { syncCurrentPerch(); return; }
+    const rootEl = host.getRootEl();
+    if (!host.isActive() || !rootEl) return;
+    const screen = detectBirdScreen();
+    if (wasScrolling && useMobileBirdPerch() && screen !== 'profile') {
+      const target = resolveScreenTarget(screen, host.getWelcomeSpotRatio(), host.getBarSpotRatio(), host.getSpecies());
+      host.cancelFlight();
+      host.setPerchedQnum(target.qnumEl);
+      host.setPerchedBubble(target.stateName === 'bubble' ? findActiveConceptBubble() : null);
+      host.setWelcomeKind(target.welcomeKind ?? null);
+      rootEl.dataset.state = target.stateName;
+      host.applyTransform(target.x, target.y);
+      delete rootEl.dataset.scrollHidden;
+      return;
+    }
+    delete rootEl.dataset.scrollHidden;
+    if (screen !== 'questions') return;
     const target = resolveScreenTarget('questions', host.getWelcomeSpotRatio(), host.getBarSpotRatio(), host.getSpecies());
     if (target.stateName === 'bubble') return;
 
@@ -209,6 +212,11 @@ export function createBirdScrollTracker(host: BirdScrollHost): BirdScrollTracker
       lastScrollDir = curY > lastScrollY ? 'down' : 'up';
       lastScrollY = curY;
       isScrolling = true;
+      if (useMobileBirdPerch()) {
+        host.cancelFlight();
+        const root = host.getRootEl();
+        if (root) root.dataset.scrollHidden = 'true';
+      }
     }
     if (syncRafId === null) {
       syncRafId = requestAnimationFrame(() => {
@@ -223,6 +231,9 @@ export function createBirdScrollTracker(host: BirdScrollHost): BirdScrollTracker
   function reset(): void {
     isOffscreen = false;
     isScrolling = false;
+    const root = host.getRootEl();
+    if (root) delete root.dataset.scrollHidden;
+    lastScrollY = typeof window !== 'undefined' ? window.scrollY : 0;
     clearTimers();
   }
 

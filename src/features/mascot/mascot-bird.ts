@@ -159,9 +159,8 @@ function handleBodyClassChange(): void {
   flyInForScreen(next);
 }
 
-function handleDocumentPointerDown(event: PointerEvent): void {
+function handleQuestionInteraction(event: Event): void {
   if (!active || !rootEl || detectBirdScreen() !== 'questions') return;
-  if (useMobileBirdPerch()) return;
   const el = event.target instanceof Element ? event.target : null;
   if (!el || el.closest('.vocab-word, .sound-word, .lesson-concept-word, .vocab-bubble, .lesson-concept-bubble, [data-role="lesson-inline-panel"], [data-action*="lesson"]')) return;
   const qnum = el.closest<HTMLElement>('.booklet-question')?.querySelector<HTMLElement>('[data-role="qnum"]') ?? null;
@@ -169,6 +168,14 @@ function handleDocumentPointerDown(event: PointerEvent): void {
   perchedQnumEl = qnum;
   const pos = getQnumPerch(qnum, activeSpecies);
   flyTo(pos.x, pos.y, 'question');
+}
+
+function handleDocumentPointerDown(event: PointerEvent): void {
+  if (!useMobileBirdPerch()) handleQuestionInteraction(event);
+}
+
+function handleDocumentClick(event: MouseEvent): void {
+  if (useMobileBirdPerch()) handleQuestionInteraction(event);
 }
 
 function handleBirdTap(): void {
@@ -187,6 +194,7 @@ function ensureMounted(): boolean {
   if (!unbindListeners) {
     unbindListeners = bindBirdListeners({
       onPointerDown: handleDocumentPointerDown,
+      onClick: handleDocumentClick,
       onScrollOrResize: scrollTracker.schedulePerchSync,
       onBodyClassChange: handleBodyClassChange,
       onBubbleChange: () => { if (active) requestAnimationFrame(scrollTracker.syncCurrentPerch); },
