@@ -1,4 +1,5 @@
 import { registerActions } from '../../app/actions.ts';
+import { showSiteQr } from './site-qr.ts';
 import {
   cycleAccentColor,
   cycleColumnCount,
@@ -29,6 +30,10 @@ export function initAppearance(): void {
     'cycle-accent-color': () => cycleAccentColor(),
     'toggle-fullscreen': () => { toggleFullscreenFocusMode(); },
     'toggle-console-menu': () => toggleConsoleMenu(),
+    'open-site-qr': () => {
+      toggleConsoleMenu();
+      showSiteQr();
+    },
     'set-column-count': el => {
       if (el.dataset.cols) setColumnCount(Number(el.dataset.cols));
     },

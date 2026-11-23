@@ -76,7 +76,7 @@ test('hamburger menüsü sade, etiketli ve welcome durumuna duyarlıdır', async
   await page.locator('[data-action="cycle-accent-color"]').click();
   await expect(page.locator('#btnConsoleColorCycle svg')).toHaveCSS('color', 'rgb(5, 150, 105)');
   await expect(page.locator('#consoleMenuPopup #profileProgramSelector')).toHaveCount(0);
-  const labels = ['Profil', 'Ekip Ol', 'Sütun Düzeni: 3', 'Yazı Boyutu: 15px', 'Ses Olayları: Açık', 'Tema: Açık', 'Karakterinin Rengi', 'PDF / Yazdır', 'Çıkış Yap'];
+  const labels = ['Profil', 'Ekip Ol', 'Sütun Düzeni: 3', 'Yazı Boyutu: 15px', 'Ses Olayları: Açık', 'Tema: Açık', 'Karakterinin Rengi', 'Karekod Göster', 'PDF / Yazdır', 'Çıkış Yap'];
   await expect(page.locator('.console-nav-action:visible')).toHaveText(labels);
 });
 
